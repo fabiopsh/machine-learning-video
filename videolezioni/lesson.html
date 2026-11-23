@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videolezione — Machine Learning (654AA)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="player-body">
+  <header class="topbar">
+    <div class="topbar-left">
+      <a class="back-link" href="index.html">← Capitoli</a>
+      <div class="lesson-heading">
+        <span id="lesson-chap-tag" class="lesson-chap-tag">Cap. --</span>
+        <span id="lesson-title-bar" class="lesson-title-bar">Caricamento...</span>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="toggle-sidebar" class="icon-toggle active" title="Mostra/nascondi indice scene (S)">Indice</button>
+      <button id="toggle-subtitles" class="icon-toggle active" title="Sottotitoli sincronizzati (C)">CC</button>
+      <button id="toggle-reveal-all" class="icon-toggle" title="Mostra tutta la slide per studio statico (A)">Mostra tutto</button>
+      <button id="toggle-auto-advance" class="icon-toggle active" title="Passa automaticamente alla scena successiva">Auto-avanza</button>
+      <button id="toggle-clean" class="icon-toggle" title="Modalità pulita per presentazione o export video (Esc per uscire)">Pulita</button>
+    </div>
+  </header>
+
+  <div class="player-workspace">
+    <aside id="scene-sidebar" class="scene-sidebar">
+      <div class="sidebar-head">
+        <span>Indice delle scene</span>
+        <span id="scene-counter" class="scene-counter">Scena 1 / --</span>
+      </div>
+      <div id="scene-list" class="scene-list"></div>
+    </aside>
+
+    <main class="stage-column">
+      <div class="stage-viewport">
+        <article id="slide-frame" class="slide-frame"></article>
+      </div>
+
+      <div id="subtitle-dock" class="subtitle-dock">
+        <div id="subtitle-box" class="subtitle-box" aria-live="polite"></div>
+      </div>
+
+      <footer class="control-bar">
+        <div class="timeline-row">
+          <span id="time-readout" class="time-readout">00:00 / 00:00</span>
+          <div id="scrubber-wrap" class="scrubber-wrap" aria-label="Avanzamento scena">
+            <div id="scrubber-track" class="scrubber-track">
+              <div id="scrubber-fill" class="scrubber-fill"></div>
+              <div id="scrubber-thumb" class="scrubber-thumb"></div>
+            </div>
+          </div>
+          <span id="audio-notice" class="audio-notice"></span>
+        </div>
+
+        <div class="controls-row">
+          <div class="ctrl-group">
+            <button id="btn-prev" class="ctrl-btn" title="Scena precedente (←)">← Prec</button>
+            <button id="btn-play" class="ctrl-btn ctrl-btn-play" title="Riproduci / Pausa (Spazio)">▶ Riproduci</button>
+            <button id="btn-next" class="ctrl-btn" title="Scena successiva (→)">Succ →</button>
+            <button id="btn-replay" class="ctrl-btn" title="Riparti dall'inizio della scena">↺ Ripeti</button>
+          </div>
+
+          <div class="ctrl-group">
+            <label for="speed-select" style="font-size:0.78rem;color:var(--muted)">Velocità</label>
+            <select id="speed-select" class="speed-select" aria-label="Velocità di riproduzione">
+              <option value="0.85">0.85×</option>
+              <option value="1" selected>1.0×</option>
+              <option value="1.15">1.15×</option>
+              <option value="1.3">1.3×</option>
+              <option value="1.5">1.5×</option>
+            </select>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script type="module" src="js/player.js"></script>
+</body>
+</html>

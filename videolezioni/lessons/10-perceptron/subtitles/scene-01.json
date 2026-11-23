@@ -1,0 +1,574 @@
+{
+  "duration": 46.056,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 6.038,
+      "text": "In questo capitolo entriamo nelle reti neurali partendo dall'unità più elementare fino al Perceptron e",
+      "words": [
+        {
+          "text": "In",
+          "start": 0.05,
+          "end": 0.237
+        },
+        {
+          "text": "questo",
+          "start": 0.237,
+          "end": 0.512
+        },
+        {
+          "text": "capitolo",
+          "start": 0.512,
+          "end": 1.1
+        },
+        {
+          "text": "entriamo",
+          "start": 1.1,
+          "end": 1.575
+        },
+        {
+          "text": "nelle",
+          "start": 1.575,
+          "end": 1.8
+        },
+        {
+          "text": "reti",
+          "start": 1.8,
+          "end": 2.038
+        },
+        {
+          "text": "neurali",
+          "start": 2.038,
+          "end": 2.588
+        },
+        {
+          "text": "partendo",
+          "start": 2.925,
+          "end": 3.387
+        },
+        {
+          "text": "dall'unità",
+          "start": 3.388,
+          "end": 3.9
+        },
+        {
+          "text": "più",
+          "start": 3.9,
+          "end": 4.088
+        },
+        {
+          "text": "elementare",
+          "start": 4.088,
+          "end": 4.75
+        },
+        {
+          "text": "fino",
+          "start": 4.75,
+          "end": 5.037
+        },
+        {
+          "text": "al",
+          "start": 5.037,
+          "end": 5.137
+        },
+        {
+          "text": "Perceptron",
+          "start": 5.138,
+          "end": 5.9
+        },
+        {
+          "text": "e",
+          "start": 5.9,
+          "end": 6.038
+        }
+      ]
+    },
+    {
+      "start": 6.037,
+      "end": 12.525,
+      "text": "alle unità sigmoidali Le reti neurali si studiano con due scopi distinti modellare sistemi biologici",
+      "words": [
+        {
+          "text": "alle",
+          "start": 6.037,
+          "end": 6.212
+        },
+        {
+          "text": "unità",
+          "start": 6.213,
+          "end": 6.575
+        },
+        {
+          "text": "sigmoidali",
+          "start": 6.575,
+          "end": 7.4
+        },
+        {
+          "text": "Le",
+          "start": 7.737,
+          "end": 7.962
+        },
+        {
+          "text": "reti",
+          "start": 7.963,
+          "end": 8.2
+        },
+        {
+          "text": "neurali",
+          "start": 8.2,
+          "end": 8.775
+        },
+        {
+          "text": "si",
+          "start": 8.775,
+          "end": 8.912
+        },
+        {
+          "text": "studiano",
+          "start": 8.912,
+          "end": 9.338
+        },
+        {
+          "text": "con",
+          "start": 9.338,
+          "end": 9.525
+        },
+        {
+          "text": "due",
+          "start": 9.525,
+          "end": 9.713
+        },
+        {
+          "text": "scopi",
+          "start": 9.713,
+          "end": 10.037
+        },
+        {
+          "text": "distinti",
+          "start": 10.037,
+          "end": 10.625
+        },
+        {
+          "text": "modellare",
+          "start": 10.95,
+          "end": 11.5
+        },
+        {
+          "text": "sistemi",
+          "start": 11.5,
+          "end": 11.938
+        },
+        {
+          "text": "biologici",
+          "start": 11.938,
+          "end": 12.525
+        }
+      ]
+    },
+    {
+      "start": 12.525,
+      "end": 20.175,
+      "text": "nelle neuroscienze oppure costruire sistemi di machine learning efficaci Nel nostro corso conta il secondo obiettivo ci",
+      "words": [
+        {
+          "text": "nelle",
+          "start": 12.525,
+          "end": 12.75
+        },
+        {
+          "text": "neuroscienze",
+          "start": 12.75,
+          "end": 13.55
+        },
+        {
+          "text": "oppure",
+          "start": 13.863,
+          "end": 14.263
+        },
+        {
+          "text": "costruire",
+          "start": 14.262,
+          "end": 14.8
+        },
+        {
+          "text": "sistemi",
+          "start": 14.8,
+          "end": 15.263
+        },
+        {
+          "text": "di",
+          "start": 15.262,
+          "end": 15.35
+        },
+        {
+          "text": "machine",
+          "start": 15.35,
+          "end": 15.737
+        },
+        {
+          "text": "learning",
+          "start": 15.738,
+          "end": 16.2
+        },
+        {
+          "text": "efficaci",
+          "start": 16.2,
+          "end": 16.85
+        },
+        {
+          "text": "Nel",
+          "start": 17.188,
+          "end": 17.438
+        },
+        {
+          "text": "nostro",
+          "start": 17.438,
+          "end": 17.738
+        },
+        {
+          "text": "corso conta il",
+          "start": 17.738,
+          "end": 18.625
+        },
+        {
+          "text": "secondo",
+          "start": 18.625,
+          "end": 19.038
+        },
+        {
+          "text": "obiettivo",
+          "start": 19.038,
+          "end": 19.663
+        },
+        {
+          "text": "ci",
+          "start": 20.025,
+          "end": 20.175
+        }
+      ]
+    },
+    {
+      "start": 20.175,
+      "end": 26.75,
+      "text": "interessano le proprietà computazionali e algoritmiche Una rete neurale artificiale realizza una funzione h di",
+      "words": [
+        {
+          "text": "interessano",
+          "start": 20.175,
+          "end": 20.775
+        },
+        {
+          "text": "le",
+          "start": 20.775,
+          "end": 20.875
+        },
+        {
+          "text": "proprietà",
+          "start": 20.875,
+          "end": 21.337
+        },
+        {
+          "text": "computazionali",
+          "start": 21.337,
+          "end": 22.325
+        },
+        {
+          "text": "e",
+          "start": 22.325,
+          "end": 22.438
+        },
+        {
+          "text": "algoritmiche",
+          "start": 22.438,
+          "end": 23.188
+        },
+        {
+          "text": "Una",
+          "start": 23.525,
+          "end": 23.762
+        },
+        {
+          "text": "rete",
+          "start": 23.762,
+          "end": 24.0
+        },
+        {
+          "text": "neurale",
+          "start": 24.0,
+          "end": 24.425
+        },
+        {
+          "text": "artificiale",
+          "start": 24.425,
+          "end": 25.15
+        },
+        {
+          "text": "realizza",
+          "start": 25.15,
+          "end": 25.612
+        },
+        {
+          "text": "una",
+          "start": 25.613,
+          "end": 25.788
+        },
+        {
+          "text": "funzione",
+          "start": 25.788,
+          "end": 26.288
+        },
+        {
+          "text": "h",
+          "start": 26.288,
+          "end": 26.562
+        },
+        {
+          "text": "di",
+          "start": 26.562,
+          "end": 26.75
+        }
+      ]
+    },
+    {
+      "start": 26.75,
+      "end": 33.263,
+      "text": "x che apprende da esempi approssima funzioni arbitrarie anche non lineari degrada gradualmente in presenza",
+      "words": [
+        {
+          "text": "x",
+          "start": 26.75,
+          "end": 27.1
+        },
+        {
+          "text": "che",
+          "start": 27.1,
+          "end": 27.238
+        },
+        {
+          "text": "apprende",
+          "start": 27.238,
+          "end": 27.625
+        },
+        {
+          "text": "da",
+          "start": 27.625,
+          "end": 27.762
+        },
+        {
+          "text": "esempi",
+          "start": 27.762,
+          "end": 28.275
+        },
+        {
+          "text": "approssima",
+          "start": 28.613,
+          "end": 29.213
+        },
+        {
+          "text": "funzioni",
+          "start": 29.212,
+          "end": 29.65
+        },
+        {
+          "text": "arbitrarie",
+          "start": 29.65,
+          "end": 30.275
+        },
+        {
+          "text": "anche",
+          "start": 30.275,
+          "end": 30.55
+        },
+        {
+          "text": "non",
+          "start": 30.55,
+          "end": 30.7
+        },
+        {
+          "text": "lineari",
+          "start": 30.7,
+          "end": 31.25
+        },
+        {
+          "text": "degrada",
+          "start": 31.6,
+          "end": 32.075
+        },
+        {
+          "text": "gradualmente",
+          "start": 32.075,
+          "end": 32.713
+        },
+        {
+          "text": "in",
+          "start": 32.712,
+          "end": 32.812
+        },
+        {
+          "text": "presenza",
+          "start": 32.812,
+          "end": 33.263
+        }
+      ]
+    },
+    {
+      "start": 33.263,
+      "end": 38.075,
+      "text": "di rumore e gestisce dati sia reali che discreti Non è un singolo modello ma",
+      "words": [
+        {
+          "text": "di",
+          "start": 33.263,
+          "end": 33.363
+        },
+        {
+          "text": "rumore",
+          "start": 33.362,
+          "end": 33.812
+        },
+        {
+          "text": "e",
+          "start": 33.812,
+          "end": 33.913
+        },
+        {
+          "text": "gestisce",
+          "start": 33.913,
+          "end": 34.4
+        },
+        {
+          "text": "dati",
+          "start": 34.4,
+          "end": 34.688
+        },
+        {
+          "text": "sia",
+          "start": 34.688,
+          "end": 34.85
+        },
+        {
+          "text": "reali",
+          "start": 34.85,
+          "end": 35.212
+        },
+        {
+          "text": "che",
+          "start": 35.212,
+          "end": 35.312
+        },
+        {
+          "text": "discreti",
+          "start": 35.312,
+          "end": 35.913
+        },
+        {
+          "text": "Non",
+          "start": 36.25,
+          "end": 36.5
+        },
+        {
+          "text": "è",
+          "start": 36.5,
+          "end": 36.625
+        },
+        {
+          "text": "un",
+          "start": 36.625,
+          "end": 36.8
+        },
+        {
+          "text": "singolo",
+          "start": 36.8,
+          "end": 37.162
+        },
+        {
+          "text": "modello",
+          "start": 37.163,
+          "end": 37.688
+        },
+        {
+          "text": "ma",
+          "start": 37.938,
+          "end": 38.075
+        }
+      ]
+    },
+    {
+      "start": 38.075,
+      "end": 45.7,
+      "text": "un paradigma sub-simbolico fondato sul connessionismo comportamenti complessi emergono dall'interazione di molte unità semplici",
+      "words": [
+        {
+          "text": "un",
+          "start": 38.075,
+          "end": 38.2
+        },
+        {
+          "text": "paradigma",
+          "start": 38.2,
+          "end": 38.75
+        },
+        {
+          "text": "sub-simbolico",
+          "start": 38.75,
+          "end": 39.65
+        },
+        {
+          "text": "fondato",
+          "start": 39.65,
+          "end": 40.112
+        },
+        {
+          "text": "sul",
+          "start": 40.112,
+          "end": 40.287
+        },
+        {
+          "text": "connessionismo",
+          "start": 40.288,
+          "end": 41.175
+        },
+        {
+          "text": "comportamenti",
+          "start": 41.525,
+          "end": 42.2
+        },
+        {
+          "text": "complessi",
+          "start": 42.2,
+          "end": 42.863
+        },
+        {
+          "text": "emergono",
+          "start": 42.862,
+          "end": 43.362
+        },
+        {
+          "text": "dall'interazione",
+          "start": 43.362,
+          "end": 44.175
+        },
+        {
+          "text": "di",
+          "start": 44.175,
+          "end": 44.275
+        },
+        {
+          "text": "molte",
+          "start": 44.275,
+          "end": 44.612
+        },
+        {
+          "text": "unità",
+          "start": 44.612,
+          "end": 44.938
+        },
+        {
+          "text": "semplici",
+          "start": 44.938,
+          "end": 45.7
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "course": {
+    "code": "654AA",
+    "title": "Machine Learning",
+    "subtitle": "Videolezioni dinamiche sincronizzate dalle note del corso",
+    "university": "Università di Pisa — Laurea Magistrale",
+    "professor": "Prof. Alessio Micheli",
+    "author": "Fabio Piscitelli",
+    "academic_year": "2026/27"
+  },
+  "parts": [
+    {
+      "id": "frontmatter",
+      "label": "Introduzione",
+      "title": "Orientamento al corso"
+    },
+    {
+      "id": "parte-1",
+      "label": "Parte I",
+      "title": "Fondamenti"
+    },
+    {
+      "id": "parte-2",
+      "label": "Parte II",
+      "title": "Primi modelli"
+    },
+    {
+      "id": "parte-3",
+      "label": "Parte III",
+      "title": "Generalizzazione: teoria e stima"
+    },
+    {
+      "id": "parte-4",
+      "label": "Parte IV",
+      "title": "Reti neurali"
+    },
+    {
+      "id": "parte-5",
+      "label": "Parte V",
+      "title": "Support Vector Machines"
+    },
+    {
+      "id": "parte-6",
+      "label": "Parte VI",
+      "title": "Modelli avanzati"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "00-guida",
+      "chapter": 0,
+      "part": "frontmatter",
+      "title": "Guida alla lettura",
+      "source_tex": "note_migliorate/capitoli/00-guida.tex",
+      "summary": "Come sono strutturate le note, notazione matematica e percorso consigliato.",
+      "status": "planned"
+    },
+    {
+      "id": "01-matematica",
+      "chapter": 1,
+      "part": "parte-1",
+      "title": "Strumenti matematici",
+      "source_tex": "note_migliorate/capitoli/01-matematica.tex",
+      "summary": "Algebra lineare, norme, derivate, gradienti, probabilità e notazione vettoriale.",
+      "status": "planned"
+    },
+    {
+      "id": "02-problema",
+      "chapter": 2,
+      "part": "parte-1",
+      "title": "Il problema dell'apprendimento",
+      "source_tex": "note_migliorate/capitoli/02-problema.tex",
+      "summary": "Apprendimento supervisionato, funzioni di perdita, rischio empirico e generalizzazione.",
+      "status": "planned"
+    },
+    {
+      "id": "03-bias-induttivo",
+      "chapter": 3,
+      "part": "parte-1",
+      "title": "Spazio delle ipotesi e bias induttivo",
+      "source_tex": "note_migliorate/capitoli/03-bias-induttivo.tex",
+      "summary": "Version space, necessità del bias induttivo e compromesso espressività-generalizzazione.",
+      "status": "planned"
+    },
+    {
+      "id": "04-lineari",
+      "chapter": 4,
+      "part": "parte-2",
+      "title": "Modelli lineari",
+      "source_tex": "note_migliorate/capitoli/04-lineari.tex",
+      "summary": "Regressione lineare, minimi quadrati, LMS, discesa del gradiente e classificazione lineare.",
+      "status": "planned"
+    },
+    {
+      "id": "05-regolarizzazione",
+      "chapter": 5,
+      "part": "parte-2",
+      "title": "Overfitting e regolarizzazione",
+      "source_tex": "note_migliorate/capitoli/05-regolarizzazione.tex",
+      "summary": "Condizionamento, Tikhonov / Ridge, Lasso e controllo della complessità dei pesi.",
+      "status": "planned"
+    },
+    {
+      "id": "06-knn",
+      "chapter": 6,
+      "part": "parte-2",
+      "title": "K-nearest neighbors",
+      "source_tex": "note_migliorate/capitoli/06-knn.tex",
+      "summary": "Metodi basati su istanze, metriche, maledizione della dimensionalità e bias-varianza in k-NN.",
+      "status": "planned"
+    },
+    {
+      "id": "07-slt",
+      "chapter": 7,
+      "part": "parte-3",
+      "title": "Statistical Learning Theory",
+      "source_tex": "note_migliorate/capitoli/07-slt.tex",
+      "summary": "PAC learning, dimensione VC, disuguaglianze di concentrazione e minimizzazione del rischio strutturale.",
+      "status": "planned"
+    },
+    {
+      "id": "08-bias-varianza",
+      "chapter": 8,
+      "part": "parte-3",
+      "title": "Bias, varianza ed ensemble",
+      "source_tex": "note_migliorate/capitoli/08-bias-varianza.tex",
+      "summary": "Decomposizione dell'errore quadratico, bagging, boosting e combinazione di modelli.",
+      "status": "planned"
+    },
+    {
+      "id": "09-validazione",
+      "chapter": 9,
+      "part": "parte-3",
+      "title": "Validazione",
+      "source_tex": "note_migliorate/capitoli/09-validazione.tex",
+      "summary": "Model selection, model assessment, hold-out, k-fold cross-validation e trappole metodologiche.",
+      "status": "planned"
+    },
+    {
+      "id": "10-perceptron",
+      "chapter": 10,
+      "part": "parte-4",
+      "title": "Dal neurone al Perceptron",
+      "source_tex": "note_migliorate/capitoli/10-perceptron.tex",
+      "summary": "Neurone artificiale, reti a soglia e XOR, algoritmo del Perceptron, teorema di convergenza, confronto con LMS e unità sigmoidali.",
+      "status": "ready",
+      "scenes_count": 19,
+      "estimated_minutes": 15
+    },
+    {
+      "id": "11-mlp-backprop",
+      "chapter": 11,
+      "part": "parte-4",
+      "title": "Multi-Layer Perceptron e backpropagation",
+      "source_tex": "note_migliorate/capitoli/11-mlp-backprop.tex",
+      "summary": "Architetture feedforward, approssimazione universale, credit assignment e derivazione della backpropagation.",
+      "status": "planned"
+    },
+    {
+      "id": "12-addestramento",
+      "chapter": 12,
+      "part": "parte-4",
+      "title": "Addestrare una rete neurale",
+      "source_tex": "note_migliorate/capitoli/12-addestramento.tex",
+      "summary": "Ottimizzazione stocastica, momentum, inizializzazione, early stopping, weight decay e diagnostica.",
+      "status": "planned"
+    },
+    {
+      "id": "13-svm",
+      "chapter": 13,
+      "part": "parte-5",
+      "title": "Support Vector Machines e metodi kernel",
+      "source_tex": "note_migliorate/capitoli/13-svm.tex",
+      "summary": "Margine massimo, formulazione duale, variabili slack, kernel trick e SVR.",
+      "status": "planned"
+    },
+    {
+      "id": "14-cnn",
+      "chapter": 14,
+      "part": "parte-6",
+      "title": "Reti convoluzionali",
+      "source_tex": "note_migliorate/capitoli/14-cnn.tex",
+      "summary": "Campi recettivi locali, condivisione dei pesi, pooling e architetture convoluzionali.",
+      "status": "planned"
+    },
+    {
+      "id": "15-deep",
+      "chapter": 15,
+      "part": "parte-6",
+      "title": "Deep learning",
+      "source_tex": "note_migliorate/capitoli/15-deep.tex",
+      "summary": "Profondità e rappresentazioni gerarchiche, ReLU, normalizzazione, residui e autoencoder.",
+      "status": "planned"
+    },
+    {
+      "id": "16-randomizzate",
+      "chapter": 16,
+      "part": "parte-6",
+      "title": "Reti neurali randomizzate",
+      "source_tex": "note_migliorate/capitoli/16-randomizzate.tex",
+      "summary": "Proiezioni casuali, ELM, Reservoir Computing e reti con strati nascosti fissati.",
+      "status": "planned"
+    },
+    {
+      "id": "17-non-supervisionato",
+      "chapter": 17,
+      "part": "parte-6",
+      "title": "Apprendimento non supervisionato: K-means e SOM",
+      "source_tex": "note_migliorate/capitoli/17-non-supervisionato.tex",
+      "summary": "Clustering, algoritmo K-means, mappe auto-organizzanti di Kohonen e conservazione topologica.",
+      "status": "planned"
+    },
+    {
+      "id": "18-rnn",
+      "chapter": 18,
+      "part": "parte-6",
+      "title": "Reti neurali ricorrenti",
+      "source_tex": "note_migliorate/capitoli/18-rnn.tex",
+      "summary": "Apprendimento su sequenze, BPTT, vanishing gradient, LSTM, GRU ed Echo State Networks.",
+      "status": "planned"
+    },
+    {
+      "id": "19-grafi",
+      "chapter": 19,
+      "part": "parte-6",
+      "title": "Apprendimento su dati strutturati e grafi",
+      "source_tex": "note_migliorate/capitoli/19-grafi.tex",
+      "summary": "Reti neurali per alberi e grafi, message passing, GNN ed espressività strutturale.",
+      "status": "planned"
+    }
+  ]
+}

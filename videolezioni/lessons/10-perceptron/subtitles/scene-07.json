@@ -1,0 +1,775 @@
+{
+  "duration": 52.992,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 6.113,
+      "text": "Traducendo la decomposizione in architettura otteniamo una rete a due strati Le due unità nascoste",
+      "words": [
+        {
+          "text": "Traducendo",
+          "start": 0.05,
+          "end": 0.725
+        },
+        {
+          "text": "la",
+          "start": 0.725,
+          "end": 0.825
+        },
+        {
+          "text": "decomposizione",
+          "start": 0.825,
+          "end": 1.737
+        },
+        {
+          "text": "in",
+          "start": 1.738,
+          "end": 1.838
+        },
+        {
+          "text": "architettura",
+          "start": 1.837,
+          "end": 2.638
+        },
+        {
+          "text": "otteniamo",
+          "start": 2.638,
+          "end": 3.163
+        },
+        {
+          "text": "una",
+          "start": 3.163,
+          "end": 3.312
+        },
+        {
+          "text": "rete",
+          "start": 3.312,
+          "end": 3.625
+        },
+        {
+          "text": "a",
+          "start": 3.625,
+          "end": 3.688
+        },
+        {
+          "text": "due",
+          "start": 3.688,
+          "end": 3.925
+        },
+        {
+          "text": "strati",
+          "start": 3.925,
+          "end": 4.487
+        },
+        {
+          "text": "Le",
+          "start": 4.825,
+          "end": 5.038
+        },
+        {
+          "text": "due",
+          "start": 5.037,
+          "end": 5.225
+        },
+        {
+          "text": "unità",
+          "start": 5.225,
+          "end": 5.525
+        },
+        {
+          "text": "nascoste",
+          "start": 5.525,
+          "end": 6.113
+        }
+      ]
+    },
+    {
+      "start": 6.112,
+      "end": 12.062,
+      "text": "calcolano h uno l'AND e h due l'OR l'unità di uscita combina h uno con",
+      "words": [
+        {
+          "text": "calcolano",
+          "start": 6.112,
+          "end": 6.675
+        },
+        {
+          "text": "h",
+          "start": 6.675,
+          "end": 6.925
+        },
+        {
+          "text": "uno",
+          "start": 6.925,
+          "end": 7.325
+        },
+        {
+          "text": "l'AND",
+          "start": 7.537,
+          "end": 8.025
+        },
+        {
+          "text": "e",
+          "start": 8.238,
+          "end": 8.375
+        },
+        {
+          "text": "h",
+          "start": 8.375,
+          "end": 8.613
+        },
+        {
+          "text": "due",
+          "start": 8.613,
+          "end": 8.963
+        },
+        {
+          "text": "l'OR",
+          "start": 9.188,
+          "end": 9.6
+        },
+        {
+          "text": "l'unità",
+          "start": 10.137,
+          "end": 10.525
+        },
+        {
+          "text": "di",
+          "start": 10.525,
+          "end": 10.6
+        },
+        {
+          "text": "uscita",
+          "start": 10.6,
+          "end": 10.95
+        },
+        {
+          "text": "combina",
+          "start": 10.95,
+          "end": 11.375
+        },
+        {
+          "text": "h",
+          "start": 11.375,
+          "end": 11.588
+        },
+        {
+          "text": "uno",
+          "start": 11.588,
+          "end": 11.875
+        },
+        {
+          "text": "con",
+          "start": 11.875,
+          "end": 12.062
+        }
+      ]
+    },
+    {
+      "start": 12.062,
+      "end": 16.438,
+      "text": "peso meno uno h due con peso più uno e bias meno zero virgola cinque",
+      "words": [
+        {
+          "text": "peso",
+          "start": 12.062,
+          "end": 12.35
+        },
+        {
+          "text": "meno",
+          "start": 12.35,
+          "end": 12.6
+        },
+        {
+          "text": "uno",
+          "start": 12.6,
+          "end": 12.925
+        },
+        {
+          "text": "h",
+          "start": 13.238,
+          "end": 13.525
+        },
+        {
+          "text": "due",
+          "start": 13.525,
+          "end": 13.75
+        },
+        {
+          "text": "con",
+          "start": 13.75,
+          "end": 13.938
+        },
+        {
+          "text": "peso",
+          "start": 13.938,
+          "end": 14.238
+        },
+        {
+          "text": "più",
+          "start": 14.238,
+          "end": 14.425
+        },
+        {
+          "text": "uno",
+          "start": 14.425,
+          "end": 14.688
+        },
+        {
+          "text": "e",
+          "start": 14.688,
+          "end": 14.725
+        },
+        {
+          "text": "bias",
+          "start": 14.725,
+          "end": 15.1
+        },
+        {
+          "text": "meno",
+          "start": 15.1,
+          "end": 15.362
+        },
+        {
+          "text": "zero",
+          "start": 15.363,
+          "end": 15.65
+        },
+        {
+          "text": "virgola",
+          "start": 15.65,
+          "end": 15.975
+        },
+        {
+          "text": "cinque",
+          "start": 15.975,
+          "end": 16.438
+        }
+      ]
+    },
+    {
+      "start": 16.775,
+      "end": 23.188,
+      "text": "Guardiamo cosa accade geometricamente Nello spazio degli input i due punti positivi stanno su vertici",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 16.775,
+          "end": 17.425
+        },
+        {
+          "text": "cosa",
+          "start": 17.425,
+          "end": 17.738
+        },
+        {
+          "text": "accade",
+          "start": 17.738,
+          "end": 18.2
+        },
+        {
+          "text": "geometricamente",
+          "start": 18.2,
+          "end": 19.363
+        },
+        {
+          "text": "Nello",
+          "start": 19.7,
+          "end": 20.037
+        },
+        {
+          "text": "spazio",
+          "start": 20.038,
+          "end": 20.4
+        },
+        {
+          "text": "degli",
+          "start": 20.4,
+          "end": 20.637
+        },
+        {
+          "text": "input",
+          "start": 20.637,
+          "end": 21.05
+        },
+        {
+          "text": "i",
+          "start": 21.05,
+          "end": 21.163
+        },
+        {
+          "text": "due",
+          "start": 21.163,
+          "end": 21.35
+        },
+        {
+          "text": "punti",
+          "start": 21.35,
+          "end": 21.663
+        },
+        {
+          "text": "positivi",
+          "start": 21.663,
+          "end": 22.3
+        },
+        {
+          "text": "stanno",
+          "start": 22.3,
+          "end": 22.65
+        },
+        {
+          "text": "su",
+          "start": 22.65,
+          "end": 22.762
+        },
+        {
+          "text": "vertici",
+          "start": 22.762,
+          "end": 23.188
+        }
+      ]
+    },
+    {
+      "start": 23.188,
+      "end": 28.375,
+      "text": "opposti e nessuna retta li separa dai negativi Ma nello spazio delle unità nascoste h",
+      "words": [
+        {
+          "text": "opposti",
+          "start": 23.188,
+          "end": 23.8
+        },
+        {
+          "text": "e",
+          "start": 23.8,
+          "end": 23.913
+        },
+        {
+          "text": "nessuna",
+          "start": 23.913,
+          "end": 24.35
+        },
+        {
+          "text": "retta",
+          "start": 24.35,
+          "end": 24.663
+        },
+        {
+          "text": "li",
+          "start": 24.663,
+          "end": 24.775
+        },
+        {
+          "text": "separa",
+          "start": 24.775,
+          "end": 25.175
+        },
+        {
+          "text": "dai",
+          "start": 25.175,
+          "end": 25.3
+        },
+        {
+          "text": "negativi",
+          "start": 25.3,
+          "end": 25.925
+        },
+        {
+          "text": "Ma",
+          "start": 26.262,
+          "end": 26.462
+        },
+        {
+          "text": "nello",
+          "start": 26.462,
+          "end": 26.675
+        },
+        {
+          "text": "spazio",
+          "start": 26.675,
+          "end": 27.038
+        },
+        {
+          "text": "delle",
+          "start": 27.038,
+          "end": 27.225
+        },
+        {
+          "text": "unità",
+          "start": 27.225,
+          "end": 27.525
+        },
+        {
+          "text": "nascoste",
+          "start": 27.525,
+          "end": 28.087
+        },
+        {
+          "text": "h",
+          "start": 28.087,
+          "end": 28.375
+        }
+      ]
+    },
+    {
+      "start": 28.375,
+      "end": 34.075,
+      "text": "uno e h due entrambi gli input positivi collassano sullo stesso punto zero uno Ora",
+      "words": [
+        {
+          "text": "uno",
+          "start": 28.375,
+          "end": 28.712
+        },
+        {
+          "text": "e",
+          "start": 28.712,
+          "end": 28.787
+        },
+        {
+          "text": "h",
+          "start": 28.788,
+          "end": 29.013
+        },
+        {
+          "text": "due",
+          "start": 29.012,
+          "end": 29.325
+        },
+        {
+          "text": "entrambi",
+          "start": 29.675,
+          "end": 30.163
+        },
+        {
+          "text": "gli",
+          "start": 30.163,
+          "end": 30.288
+        },
+        {
+          "text": "input",
+          "start": 30.288,
+          "end": 30.588
+        },
+        {
+          "text": "positivi",
+          "start": 30.587,
+          "end": 31.137
+        },
+        {
+          "text": "collassano",
+          "start": 31.137,
+          "end": 31.75
+        },
+        {
+          "text": "sullo",
+          "start": 31.75,
+          "end": 31.975
+        },
+        {
+          "text": "stesso",
+          "start": 31.975,
+          "end": 32.4
+        },
+        {
+          "text": "punto",
+          "start": 32.4,
+          "end": 32.737
+        },
+        {
+          "text": "zero",
+          "start": 32.737,
+          "end": 33.05
+        },
+        {
+          "text": "uno",
+          "start": 33.05,
+          "end": 33.412
+        },
+        {
+          "text": "Ora",
+          "start": 33.75,
+          "end": 34.075
+        }
+      ]
+    },
+    {
+      "start": 34.075,
+      "end": 39.0,
+      "text": "la retta rossa h due uguale h uno più zero virgola cinque separa nettamente le",
+      "words": [
+        {
+          "text": "la",
+          "start": 34.075,
+          "end": 34.188
+        },
+        {
+          "text": "retta",
+          "start": 34.188,
+          "end": 34.462
+        },
+        {
+          "text": "rossa",
+          "start": 34.462,
+          "end": 34.875
+        },
+        {
+          "text": "h",
+          "start": 34.875,
+          "end": 35.212
+        },
+        {
+          "text": "due",
+          "start": 35.212,
+          "end": 35.462
+        },
+        {
+          "text": "uguale",
+          "start": 35.462,
+          "end": 35.975
+        },
+        {
+          "text": "h",
+          "start": 35.975,
+          "end": 36.363
+        },
+        {
+          "text": "uno",
+          "start": 36.362,
+          "end": 36.688
+        },
+        {
+          "text": "più",
+          "start": 36.688,
+          "end": 36.875
+        },
+        {
+          "text": "zero",
+          "start": 36.875,
+          "end": 37.2
+        },
+        {
+          "text": "virgola",
+          "start": 37.2,
+          "end": 37.562
+        },
+        {
+          "text": "cinque",
+          "start": 37.562,
+          "end": 37.962
+        },
+        {
+          "text": "separa",
+          "start": 37.962,
+          "end": 38.387
+        },
+        {
+          "text": "nettamente",
+          "start": 38.388,
+          "end": 38.925
+        },
+        {
+          "text": "le",
+          "start": 38.925,
+          "end": 39.0
+        }
+      ]
+    },
+    {
+      "start": 39.0,
+      "end": 45.962,
+      "text": "due classi È l'idea fondante del representation learning lo strato nascosto ri-rappresenta gli input Con",
+      "words": [
+        {
+          "text": "due",
+          "start": 39.0,
+          "end": 39.163
+        },
+        {
+          "text": "classi",
+          "start": 39.163,
+          "end": 39.688
+        },
+        {
+          "text": "È",
+          "start": 40.025,
+          "end": 40.188
+        },
+        {
+          "text": "l'idea",
+          "start": 40.188,
+          "end": 40.562
+        },
+        {
+          "text": "fondante",
+          "start": 40.562,
+          "end": 41.075
+        },
+        {
+          "text": "del",
+          "start": 41.075,
+          "end": 41.25
+        },
+        {
+          "text": "representation",
+          "start": 41.25,
+          "end": 42.087
+        },
+        {
+          "text": "learning",
+          "start": 42.087,
+          "end": 42.65
+        },
+        {
+          "text": "lo",
+          "start": 42.975,
+          "end": 43.113
+        },
+        {
+          "text": "strato",
+          "start": 43.112,
+          "end": 43.475
+        },
+        {
+          "text": "nascosto",
+          "start": 43.475,
+          "end": 44.05
+        },
+        {
+          "text": "ri-rappresenta",
+          "start": 44.05,
+          "end": 44.8
+        },
+        {
+          "text": "gli",
+          "start": 44.8,
+          "end": 44.925
+        },
+        {
+          "text": "input",
+          "start": 44.925,
+          "end": 45.387
+        },
+        {
+          "text": "Con",
+          "start": 45.725,
+          "end": 45.962
+        }
+      ]
+    },
+    {
+      "start": 45.962,
+      "end": 50.975,
+      "text": "due livelli di unità a soglia si rappresenta qualunque funzione booleana ma manca ancora un",
+      "words": [
+        {
+          "text": "due",
+          "start": 45.962,
+          "end": 46.137
+        },
+        {
+          "text": "livelli",
+          "start": 46.138,
+          "end": 46.538
+        },
+        {
+          "text": "di",
+          "start": 46.538,
+          "end": 46.638
+        },
+        {
+          "text": "unità",
+          "start": 46.638,
+          "end": 46.95
+        },
+        {
+          "text": "a",
+          "start": 46.95,
+          "end": 47.013
+        },
+        {
+          "text": "soglia",
+          "start": 47.013,
+          "end": 47.525
+        },
+        {
+          "text": "si",
+          "start": 47.525,
+          "end": 47.65
+        },
+        {
+          "text": "rappresenta",
+          "start": 47.65,
+          "end": 48.225
+        },
+        {
+          "text": "qualunque",
+          "start": 48.225,
+          "end": 48.65
+        },
+        {
+          "text": "funzione",
+          "start": 48.65,
+          "end": 49.125
+        },
+        {
+          "text": "booleana",
+          "start": 49.125,
+          "end": 49.675
+        },
+        {
+          "text": "ma",
+          "start": 50.1,
+          "end": 50.212
+        },
+        {
+          "text": "manca",
+          "start": 50.212,
+          "end": 50.512
+        },
+        {
+          "text": "ancora",
+          "start": 50.513,
+          "end": 50.85
+        },
+        {
+          "text": "un",
+          "start": 50.85,
+          "end": 50.975
+        }
+      ]
+    },
+    {
+      "start": 50.975,
+      "end": 52.65,
+      "text": "algoritmo per apprendere i pesi",
+      "words": [
+        {
+          "text": "algoritmo",
+          "start": 50.975,
+          "end": 51.575
+        },
+        {
+          "text": "per",
+          "start": 51.575,
+          "end": 51.713
+        },
+        {
+          "text": "apprendere",
+          "start": 51.712,
+          "end": 52.15
+        },
+        {
+          "text": "i",
+          "start": 52.15,
+          "end": 52.212
+        },
+        {
+          "text": "pesi",
+          "start": 52.212,
+          "end": 52.65
+        }
+      ]
+    }
+  ]
+}

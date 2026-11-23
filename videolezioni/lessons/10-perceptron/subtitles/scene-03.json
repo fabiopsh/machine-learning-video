@@ -1,0 +1,703 @@
+{
+  "duration": 43.632,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 6.413,
+      "text": "Passiamo ora al modello matematico del neurone artificiale chiamato anche unità o nodo L'unità i",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.05,
+          "end": 0.55
+        },
+        {
+          "text": "ora",
+          "start": 0.55,
+          "end": 0.775
+        },
+        {
+          "text": "al",
+          "start": 0.775,
+          "end": 0.85
+        },
+        {
+          "text": "modello",
+          "start": 0.85,
+          "end": 1.25
+        },
+        {
+          "text": "matematico",
+          "start": 1.25,
+          "end": 1.9
+        },
+        {
+          "text": "del",
+          "start": 1.9,
+          "end": 2.062
+        },
+        {
+          "text": "neurone",
+          "start": 2.062,
+          "end": 2.525
+        },
+        {
+          "text": "artificiale",
+          "start": 2.525,
+          "end": 3.263
+        },
+        {
+          "text": "chiamato",
+          "start": 3.6,
+          "end": 4.075
+        },
+        {
+          "text": "anche",
+          "start": 4.075,
+          "end": 4.375
+        },
+        {
+          "text": "unità",
+          "start": 4.375,
+          "end": 4.875
+        },
+        {
+          "text": "o",
+          "start": 4.875,
+          "end": 4.95
+        },
+        {
+          "text": "nodo",
+          "start": 4.95,
+          "end": 5.438
+        },
+        {
+          "text": "L'unità",
+          "start": 5.775,
+          "end": 6.325
+        },
+        {
+          "text": "i",
+          "start": 6.325,
+          "end": 6.413
+        }
+      ]
+    },
+    {
+      "start": 6.412,
+      "end": 10.75,
+      "text": "riceve gli ingressi x con zero uguale a uno che incorpora il bias e gli",
+      "words": [
+        {
+          "text": "riceve",
+          "start": 6.412,
+          "end": 6.825
+        },
+        {
+          "text": "gli",
+          "start": 6.825,
+          "end": 6.925
+        },
+        {
+          "text": "ingressi",
+          "start": 6.925,
+          "end": 7.4
+        },
+        {
+          "text": "x",
+          "start": 7.4,
+          "end": 7.688
+        },
+        {
+          "text": "con",
+          "start": 7.688,
+          "end": 7.912
+        },
+        {
+          "text": "zero",
+          "start": 7.912,
+          "end": 8.162
+        },
+        {
+          "text": "uguale",
+          "start": 8.162,
+          "end": 8.5
+        },
+        {
+          "text": "a",
+          "start": 8.5,
+          "end": 8.537
+        },
+        {
+          "text": "uno",
+          "start": 8.537,
+          "end": 8.9
+        },
+        {
+          "text": "che",
+          "start": 9.175,
+          "end": 9.288
+        },
+        {
+          "text": "incorpora",
+          "start": 9.287,
+          "end": 9.787
+        },
+        {
+          "text": "il",
+          "start": 9.787,
+          "end": 9.85
+        },
+        {
+          "text": "bias",
+          "start": 9.85,
+          "end": 10.3
+        },
+        {
+          "text": "e",
+          "start": 10.537,
+          "end": 10.625
+        },
+        {
+          "text": "gli",
+          "start": 10.625,
+          "end": 10.75
+        }
+      ]
+    },
+    {
+      "start": 10.75,
+      "end": 14.15,
+      "text": "input x con uno x con due fino a x con n.",
+      "words": [
+        {
+          "text": "input",
+          "start": 10.75,
+          "end": 11.037
+        },
+        {
+          "text": "x",
+          "start": 11.037,
+          "end": 11.3
+        },
+        {
+          "text": "con",
+          "start": 11.3,
+          "end": 11.463
+        },
+        {
+          "text": "uno",
+          "start": 11.463,
+          "end": 11.763
+        },
+        {
+          "text": "x",
+          "start": 12.037,
+          "end": 12.312
+        },
+        {
+          "text": "con",
+          "start": 12.312,
+          "end": 12.488
+        },
+        {
+          "text": "due",
+          "start": 12.488,
+          "end": 12.763
+        },
+        {
+          "text": "fino",
+          "start": 13.037,
+          "end": 13.275
+        },
+        {
+          "text": "a",
+          "start": 13.275,
+          "end": 13.312
+        },
+        {
+          "text": "x",
+          "start": 13.312,
+          "end": 13.588
+        },
+        {
+          "text": "con",
+          "start": 13.588,
+          "end": 13.75
+        },
+        {
+          "text": "n.",
+          "start": 13.75,
+          "end": 14.15
+        }
+      ]
+    },
+    {
+      "start": 14.488,
+      "end": 21.037,
+      "text": "Ogni connessione ha un peso libero w con i j modificato dall'apprendimento L'unità calcola prima",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 14.488,
+          "end": 14.85
+        },
+        {
+          "text": "connessione",
+          "start": 14.85,
+          "end": 15.525
+        },
+        {
+          "text": "ha",
+          "start": 15.525,
+          "end": 15.55
+        },
+        {
+          "text": "un",
+          "start": 15.55,
+          "end": 15.7
+        },
+        {
+          "text": "peso",
+          "start": 15.7,
+          "end": 16.012
+        },
+        {
+          "text": "libero",
+          "start": 16.012,
+          "end": 16.363
+        },
+        {
+          "text": "w",
+          "start": 16.363,
+          "end": 16.963
+        },
+        {
+          "text": "con",
+          "start": 16.962,
+          "end": 17.15
+        },
+        {
+          "text": "i",
+          "start": 17.15,
+          "end": 17.212
+        },
+        {
+          "text": "j",
+          "start": 17.212,
+          "end": 17.587
+        },
+        {
+          "text": "modificato",
+          "start": 17.962,
+          "end": 18.562
+        },
+        {
+          "text": "dall'apprendimento",
+          "start": 18.562,
+          "end": 19.55
+        },
+        {
+          "text": "L'unità",
+          "start": 19.887,
+          "end": 20.325
+        },
+        {
+          "text": "calcola",
+          "start": 20.325,
+          "end": 20.762
+        },
+        {
+          "text": "prima",
+          "start": 20.762,
+          "end": 21.037
+        }
+      ]
+    },
+    {
+      "start": 21.038,
+      "end": 26.587,
+      "text": "l'input netto indicato con net con i di x come somma pesata degli ingressi sommatoria",
+      "words": [
+        {
+          "text": "l'input",
+          "start": 21.038,
+          "end": 21.4
+        },
+        {
+          "text": "netto",
+          "start": 21.4,
+          "end": 21.875
+        },
+        {
+          "text": "indicato",
+          "start": 22.125,
+          "end": 22.637
+        },
+        {
+          "text": "con",
+          "start": 22.637,
+          "end": 22.8
+        },
+        {
+          "text": "net",
+          "start": 22.8,
+          "end": 23.062
+        },
+        {
+          "text": "con",
+          "start": 23.062,
+          "end": 23.25
+        },
+        {
+          "text": "i",
+          "start": 23.25,
+          "end": 23.312
+        },
+        {
+          "text": "di",
+          "start": 23.312,
+          "end": 23.462
+        },
+        {
+          "text": "x",
+          "start": 23.462,
+          "end": 23.837
+        },
+        {
+          "text": "come",
+          "start": 24.038,
+          "end": 24.238
+        },
+        {
+          "text": "somma",
+          "start": 24.238,
+          "end": 24.55
+        },
+        {
+          "text": "pesata",
+          "start": 24.55,
+          "end": 24.913
+        },
+        {
+          "text": "degli",
+          "start": 24.913,
+          "end": 25.1
+        },
+        {
+          "text": "ingressi",
+          "start": 25.1,
+          "end": 25.638
+        },
+        {
+          "text": "sommatoria",
+          "start": 25.962,
+          "end": 26.587
+        }
+      ]
+    },
+    {
+      "start": 26.587,
+      "end": 30.275,
+      "text": "su j di w con i j per x con j Applica poi una funzione",
+      "words": [
+        {
+          "text": "su",
+          "start": 26.587,
+          "end": 26.75
+        },
+        {
+          "text": "j",
+          "start": 26.75,
+          "end": 27.025
+        },
+        {
+          "text": "di",
+          "start": 27.025,
+          "end": 27.125
+        },
+        {
+          "text": "w",
+          "start": 27.125,
+          "end": 27.625
+        },
+        {
+          "text": "con",
+          "start": 27.625,
+          "end": 27.788
+        },
+        {
+          "text": "i",
+          "start": 27.788,
+          "end": 27.85
+        },
+        {
+          "text": "j",
+          "start": 27.85,
+          "end": 28.088
+        },
+        {
+          "text": "per",
+          "start": 28.087,
+          "end": 28.25
+        },
+        {
+          "text": "x",
+          "start": 28.25,
+          "end": 28.512
+        },
+        {
+          "text": "con",
+          "start": 28.512,
+          "end": 28.725
+        },
+        {
+          "text": "j",
+          "start": 28.725,
+          "end": 28.975
+        },
+        {
+          "text": "Applica",
+          "start": 28.975,
+          "end": 29.463
+        },
+        {
+          "text": "poi",
+          "start": 29.462,
+          "end": 29.712
+        },
+        {
+          "text": "una",
+          "start": 29.712,
+          "end": 29.862
+        },
+        {
+          "text": "funzione",
+          "start": 29.863,
+          "end": 30.275
+        }
+      ]
+    },
+    {
+      "start": 30.275,
+      "end": 34.513,
+      "text": "di attivazione f all'input netto per ottenere l'uscita o con i di x Attenzione alla",
+      "words": [
+        {
+          "text": "di",
+          "start": 30.275,
+          "end": 30.35
+        },
+        {
+          "text": "attivazione",
+          "start": 30.35,
+          "end": 30.888
+        },
+        {
+          "text": "f",
+          "start": 30.887,
+          "end": 31.15
+        },
+        {
+          "text": "all'input",
+          "start": 31.15,
+          "end": 31.575
+        },
+        {
+          "text": "netto",
+          "start": 31.575,
+          "end": 31.95
+        },
+        {
+          "text": "per",
+          "start": 31.95,
+          "end": 32.1
+        },
+        {
+          "text": "ottenere",
+          "start": 32.1,
+          "end": 32.475
+        },
+        {
+          "text": "l'uscita",
+          "start": 32.475,
+          "end": 33.038
+        },
+        {
+          "text": "o",
+          "start": 33.038,
+          "end": 33.138
+        },
+        {
+          "text": "con",
+          "start": 33.138,
+          "end": 33.312
+        },
+        {
+          "text": "i",
+          "start": 33.312,
+          "end": 33.375
+        },
+        {
+          "text": "di",
+          "start": 33.375,
+          "end": 33.513
+        },
+        {
+          "text": "x",
+          "start": 33.513,
+          "end": 33.775
+        },
+        {
+          "text": "Attenzione",
+          "start": 33.775,
+          "end": 34.375
+        },
+        {
+          "text": "alla",
+          "start": 34.375,
+          "end": 34.513
+        }
+      ]
+    },
+    {
+      "start": 34.513,
+      "end": 39.225,
+      "text": "notazione degli indici in w con i j il primo indice i è sempre l'unità",
+      "words": [
+        {
+          "text": "notazione",
+          "start": 34.513,
+          "end": 34.988
+        },
+        {
+          "text": "degli",
+          "start": 34.987,
+          "end": 35.188
+        },
+        {
+          "text": "indici",
+          "start": 35.188,
+          "end": 35.65
+        },
+        {
+          "text": "in",
+          "start": 36.038,
+          "end": 36.2
+        },
+        {
+          "text": "w",
+          "start": 36.2,
+          "end": 36.688
+        },
+        {
+          "text": "con",
+          "start": 36.688,
+          "end": 36.85
+        },
+        {
+          "text": "i",
+          "start": 36.85,
+          "end": 36.9
+        },
+        {
+          "text": "j",
+          "start": 36.9,
+          "end": 37.3
+        },
+        {
+          "text": "il",
+          "start": 37.538,
+          "end": 37.688
+        },
+        {
+          "text": "primo",
+          "start": 37.688,
+          "end": 37.938
+        },
+        {
+          "text": "indice",
+          "start": 37.938,
+          "end": 38.337
+        },
+        {
+          "text": "i",
+          "start": 38.337,
+          "end": 38.45
+        },
+        {
+          "text": "è",
+          "start": 38.45,
+          "end": 38.5
+        },
+        {
+          "text": "sempre",
+          "start": 38.5,
+          "end": 38.888
+        },
+        {
+          "text": "l'unità",
+          "start": 38.888,
+          "end": 39.225
+        }
+      ]
+    },
+    {
+      "start": 39.225,
+      "end": 43.275,
+      "text": "che riceve mentre j è l'ingresso o l'unità di partenza",
+      "words": [
+        {
+          "text": "che",
+          "start": 39.225,
+          "end": 39.35
+        },
+        {
+          "text": "riceve",
+          "start": 39.35,
+          "end": 39.837
+        },
+        {
+          "text": "mentre",
+          "start": 40.263,
+          "end": 40.75
+        },
+        {
+          "text": "j",
+          "start": 40.75,
+          "end": 41.15
+        },
+        {
+          "text": "è",
+          "start": 41.15,
+          "end": 41.25
+        },
+        {
+          "text": "l'ingresso",
+          "start": 41.25,
+          "end": 42.0
+        },
+        {
+          "text": "o",
+          "start": 42.0,
+          "end": 42.087
+        },
+        {
+          "text": "l'unità",
+          "start": 42.087,
+          "end": 42.475
+        },
+        {
+          "text": "di",
+          "start": 42.475,
+          "end": 42.575
+        },
+        {
+          "text": "partenza",
+          "start": 42.575,
+          "end": 43.275
+        }
+      ]
+    }
+  ]
+}

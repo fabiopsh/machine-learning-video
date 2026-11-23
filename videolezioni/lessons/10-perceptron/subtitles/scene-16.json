@@ -1,0 +1,842 @@
+{
+  "duration": 54.768,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 7.025,
+      "text": "Ecco perché introduciamo le unità sigmoidali La funzione logistica è una funzione a schiacciamento squashing",
+      "words": [
+        {
+          "text": "Ecco",
+          "start": 0.05,
+          "end": 0.537
+        },
+        {
+          "text": "perché",
+          "start": 0.537,
+          "end": 0.887
+        },
+        {
+          "text": "introduciamo",
+          "start": 0.887,
+          "end": 1.612
+        },
+        {
+          "text": "le",
+          "start": 1.613,
+          "end": 1.7
+        },
+        {
+          "text": "unità",
+          "start": 1.7,
+          "end": 2.087
+        },
+        {
+          "text": "sigmoidali",
+          "start": 2.087,
+          "end": 2.962
+        },
+        {
+          "text": "La",
+          "start": 3.3,
+          "end": 3.5
+        },
+        {
+          "text": "funzione",
+          "start": 3.5,
+          "end": 3.913
+        },
+        {
+          "text": "logistica",
+          "start": 3.913,
+          "end": 4.6
+        },
+        {
+          "text": "è",
+          "start": 4.6,
+          "end": 4.688
+        },
+        {
+          "text": "una",
+          "start": 4.688,
+          "end": 4.862
+        },
+        {
+          "text": "funzione",
+          "start": 4.862,
+          "end": 5.325
+        },
+        {
+          "text": "a",
+          "start": 5.325,
+          "end": 5.388
+        },
+        {
+          "text": "schiacciamento",
+          "start": 5.388,
+          "end": 6.15
+        },
+        {
+          "text": "squashing",
+          "start": 6.388,
+          "end": 7.025
+        }
+      ]
+    },
+    {
+      "start": 7.25,
+      "end": 11.175,
+      "text": "con valori continui tra zero e uno uno diviso uno più e alla meno a",
+      "words": [
+        {
+          "text": "con",
+          "start": 7.25,
+          "end": 7.425
+        },
+        {
+          "text": "valori",
+          "start": 7.425,
+          "end": 7.712
+        },
+        {
+          "text": "continui",
+          "start": 7.713,
+          "end": 8.213
+        },
+        {
+          "text": "tra",
+          "start": 8.213,
+          "end": 8.412
+        },
+        {
+          "text": "zero",
+          "start": 8.412,
+          "end": 8.787
+        },
+        {
+          "text": "e",
+          "start": 8.787,
+          "end": 8.825
+        },
+        {
+          "text": "uno",
+          "start": 8.825,
+          "end": 9.175
+        },
+        {
+          "text": "uno",
+          "start": 9.5,
+          "end": 9.762
+        },
+        {
+          "text": "diviso",
+          "start": 9.762,
+          "end": 10.162
+        },
+        {
+          "text": "uno",
+          "start": 10.162,
+          "end": 10.35
+        },
+        {
+          "text": "più",
+          "start": 10.35,
+          "end": 10.625
+        },
+        {
+          "text": "e",
+          "start": 10.625,
+          "end": 10.7
+        },
+        {
+          "text": "alla",
+          "start": 10.7,
+          "end": 10.862
+        },
+        {
+          "text": "meno",
+          "start": 10.863,
+          "end": 11.125
+        },
+        {
+          "text": "a",
+          "start": 11.125,
+          "end": 11.175
+        }
+      ]
+    },
+    {
+      "start": 11.175,
+      "end": 16.537,
+      "text": "x dove a è la pendenza È una versione liscia e differenziabile del gradino per",
+      "words": [
+        {
+          "text": "x",
+          "start": 11.175,
+          "end": 11.562
+        },
+        {
+          "text": "dove",
+          "start": 11.825,
+          "end": 12.137
+        },
+        {
+          "text": "a",
+          "start": 12.137,
+          "end": 12.2
+        },
+        {
+          "text": "è",
+          "start": 12.2,
+          "end": 12.287
+        },
+        {
+          "text": "la",
+          "start": 12.287,
+          "end": 12.4
+        },
+        {
+          "text": "pendenza",
+          "start": 12.4,
+          "end": 13.013
+        },
+        {
+          "text": "È",
+          "start": 13.35,
+          "end": 13.512
+        },
+        {
+          "text": "una",
+          "start": 13.512,
+          "end": 13.688
+        },
+        {
+          "text": "versione",
+          "start": 13.688,
+          "end": 14.125
+        },
+        {
+          "text": "liscia",
+          "start": 14.125,
+          "end": 14.537
+        },
+        {
+          "text": "e",
+          "start": 14.537,
+          "end": 14.588
+        },
+        {
+          "text": "differenziabile",
+          "start": 14.588,
+          "end": 15.438
+        },
+        {
+          "text": "del",
+          "start": 15.438,
+          "end": 15.575
+        },
+        {
+          "text": "gradino",
+          "start": 15.575,
+          "end": 16.075
+        },
+        {
+          "text": "per",
+          "start": 16.387,
+          "end": 16.537
+        }
+      ]
+    },
+    {
+      "start": 16.538,
+      "end": 20.988,
+      "text": "a che tende a infinito diventa una soglia netta vicino a zero è quasi lineare",
+      "words": [
+        {
+          "text": "a",
+          "start": 16.538,
+          "end": 16.6
+        },
+        {
+          "text": "che",
+          "start": 16.6,
+          "end": 16.738
+        },
+        {
+          "text": "tende",
+          "start": 16.738,
+          "end": 17.075
+        },
+        {
+          "text": "a",
+          "start": 17.075,
+          "end": 17.113
+        },
+        {
+          "text": "infinito",
+          "start": 17.113,
+          "end": 17.613
+        },
+        {
+          "text": "diventa",
+          "start": 17.613,
+          "end": 17.988
+        },
+        {
+          "text": "una",
+          "start": 17.988,
+          "end": 18.175
+        },
+        {
+          "text": "soglia",
+          "start": 18.175,
+          "end": 18.45
+        },
+        {
+          "text": "netta",
+          "start": 18.45,
+          "end": 18.825
+        },
+        {
+          "text": "vicino",
+          "start": 19.15,
+          "end": 19.537
+        },
+        {
+          "text": "a",
+          "start": 19.538,
+          "end": 19.562
+        },
+        {
+          "text": "zero",
+          "start": 19.562,
+          "end": 20.0
+        },
+        {
+          "text": "è",
+          "start": 20.0,
+          "end": 20.113
+        },
+        {
+          "text": "quasi",
+          "start": 20.113,
+          "end": 20.438
+        },
+        {
+          "text": "lineare",
+          "start": 20.438,
+          "end": 20.988
+        }
+      ]
+    },
+    {
+      "start": 21.325,
+      "end": 26.663,
+      "text": "La versione simmetrica in meno uno più uno è la tangente iperbolica due f sigma",
+      "words": [
+        {
+          "text": "La",
+          "start": 21.325,
+          "end": 21.512
+        },
+        {
+          "text": "versione",
+          "start": 21.512,
+          "end": 21.938
+        },
+        {
+          "text": "simmetrica",
+          "start": 21.938,
+          "end": 22.562
+        },
+        {
+          "text": "in",
+          "start": 22.562,
+          "end": 22.663
+        },
+        {
+          "text": "meno",
+          "start": 22.663,
+          "end": 22.9
+        },
+        {
+          "text": "uno",
+          "start": 22.9,
+          "end": 23.237
+        },
+        {
+          "text": "più",
+          "start": 23.488,
+          "end": 23.663
+        },
+        {
+          "text": "uno",
+          "start": 23.663,
+          "end": 23.975
+        },
+        {
+          "text": "è",
+          "start": 23.975,
+          "end": 24.062
+        },
+        {
+          "text": "la",
+          "start": 24.062,
+          "end": 24.163
+        },
+        {
+          "text": "tangente",
+          "start": 24.163,
+          "end": 24.588
+        },
+        {
+          "text": "iperbolica",
+          "start": 24.587,
+          "end": 25.3
+        },
+        {
+          "text": "due",
+          "start": 25.688,
+          "end": 25.962
+        },
+        {
+          "text": "f",
+          "start": 25.962,
+          "end": 26.25
+        },
+        {
+          "text": "sigma",
+          "start": 26.25,
+          "end": 26.663
+        }
+      ]
+    },
+    {
+      "start": 26.663,
+      "end": 32.15,
+      "text": "di x meno uno uguale a tangente iperbolica di a x mezzi In classificazione la",
+      "words": [
+        {
+          "text": "di",
+          "start": 26.663,
+          "end": 26.888
+        },
+        {
+          "text": "x",
+          "start": 26.887,
+          "end": 27.162
+        },
+        {
+          "text": "meno",
+          "start": 27.163,
+          "end": 27.425
+        },
+        {
+          "text": "uno",
+          "start": 27.425,
+          "end": 27.762
+        },
+        {
+          "text": "uguale",
+          "start": 28.087,
+          "end": 28.487
+        },
+        {
+          "text": "a",
+          "start": 28.488,
+          "end": 28.525
+        },
+        {
+          "text": "tangente",
+          "start": 28.525,
+          "end": 28.987
+        },
+        {
+          "text": "iperbolica",
+          "start": 28.988,
+          "end": 29.6
+        },
+        {
+          "text": "di",
+          "start": 29.6,
+          "end": 29.713
+        },
+        {
+          "text": "a",
+          "start": 29.712,
+          "end": 29.787
+        },
+        {
+          "text": "x",
+          "start": 29.788,
+          "end": 30.05
+        },
+        {
+          "text": "mezzi",
+          "start": 30.05,
+          "end": 30.525
+        },
+        {
+          "text": "In",
+          "start": 30.863,
+          "end": 31.062
+        },
+        {
+          "text": "classificazione",
+          "start": 31.062,
+          "end": 32.0
+        },
+        {
+          "text": "la",
+          "start": 32.0,
+          "end": 32.15
+        }
+      ]
+    },
+    {
+      "start": 32.15,
+      "end": 36.825,
+      "text": "soglia naturale è zero virgola cinque per la logistica e zero per la tangente iperbolica",
+      "words": [
+        {
+          "text": "soglia",
+          "start": 32.15,
+          "end": 32.45
+        },
+        {
+          "text": "naturale",
+          "start": 32.45,
+          "end": 32.988
+        },
+        {
+          "text": "è",
+          "start": 32.987,
+          "end": 33.112
+        },
+        {
+          "text": "zero",
+          "start": 33.112,
+          "end": 33.425
+        },
+        {
+          "text": "virgola",
+          "start": 33.425,
+          "end": 33.775
+        },
+        {
+          "text": "cinque",
+          "start": 33.775,
+          "end": 34.2
+        },
+        {
+          "text": "per",
+          "start": 34.2,
+          "end": 34.338
+        },
+        {
+          "text": "la",
+          "start": 34.337,
+          "end": 34.425
+        },
+        {
+          "text": "logistica",
+          "start": 34.425,
+          "end": 35.025
+        },
+        {
+          "text": "e",
+          "start": 35.025,
+          "end": 35.062
+        },
+        {
+          "text": "zero",
+          "start": 35.062,
+          "end": 35.462
+        },
+        {
+          "text": "per",
+          "start": 35.462,
+          "end": 35.6
+        },
+        {
+          "text": "la",
+          "start": 35.6,
+          "end": 35.688
+        },
+        {
+          "text": "tangente",
+          "start": 35.688,
+          "end": 36.138
+        },
+        {
+          "text": "iperbolica",
+          "start": 36.138,
+          "end": 36.825
+        }
+      ]
+    },
+    {
+      "start": 37.237,
+      "end": 41.575,
+      "text": "ma si può spostare con curve ROC o inserire una zona di rifiuto In pratica",
+      "words": [
+        {
+          "text": "ma",
+          "start": 37.237,
+          "end": 37.35
+        },
+        {
+          "text": "si",
+          "start": 37.35,
+          "end": 37.45
+        },
+        {
+          "text": "può",
+          "start": 37.45,
+          "end": 37.588
+        },
+        {
+          "text": "spostare",
+          "start": 37.587,
+          "end": 38.062
+        },
+        {
+          "text": "con",
+          "start": 38.062,
+          "end": 38.25
+        },
+        {
+          "text": "curve",
+          "start": 38.25,
+          "end": 38.55
+        },
+        {
+          "text": "ROC",
+          "start": 38.55,
+          "end": 38.875
+        },
+        {
+          "text": "o",
+          "start": 38.875,
+          "end": 38.975
+        },
+        {
+          "text": "inserire",
+          "start": 38.975,
+          "end": 39.513
+        },
+        {
+          "text": "una",
+          "start": 39.513,
+          "end": 39.675
+        },
+        {
+          "text": "zona",
+          "start": 39.675,
+          "end": 40.0
+        },
+        {
+          "text": "di",
+          "start": 40.0,
+          "end": 40.087
+        },
+        {
+          "text": "rifiuto",
+          "start": 40.087,
+          "end": 40.6
+        },
+        {
+          "text": "In",
+          "start": 40.938,
+          "end": 41.138
+        },
+        {
+          "text": "pratica",
+          "start": 41.138,
+          "end": 41.575
+        }
+      ]
+    },
+    {
+      "start": 41.575,
+      "end": 48.487,
+      "text": "esistono anche altre attivazioni le RBF gaussiane la softmax per uscite multiple i neuroni stocastici",
+      "words": [
+        {
+          "text": "esistono",
+          "start": 41.575,
+          "end": 42.025
+        },
+        {
+          "text": "anche",
+          "start": 42.025,
+          "end": 42.25
+        },
+        {
+          "text": "altre",
+          "start": 42.25,
+          "end": 42.475
+        },
+        {
+          "text": "attivazioni",
+          "start": 42.475,
+          "end": 43.15
+        },
+        {
+          "text": "le",
+          "start": 43.513,
+          "end": 43.663
+        },
+        {
+          "text": "RBF",
+          "start": 43.663,
+          "end": 44.325
+        },
+        {
+          "text": "gaussiane",
+          "start": 44.325,
+          "end": 44.988
+        },
+        {
+          "text": "la",
+          "start": 45.237,
+          "end": 45.4
+        },
+        {
+          "text": "softmax",
+          "start": 45.4,
+          "end": 46.025
+        },
+        {
+          "text": "per",
+          "start": 46.025,
+          "end": 46.15
+        },
+        {
+          "text": "uscite",
+          "start": 46.15,
+          "end": 46.487
+        },
+        {
+          "text": "multiple",
+          "start": 46.487,
+          "end": 47.037
+        },
+        {
+          "text": "i",
+          "start": 47.3,
+          "end": 47.387
+        },
+        {
+          "text": "neuroni",
+          "start": 47.388,
+          "end": 47.8
+        },
+        {
+          "text": "stocastici",
+          "start": 47.8,
+          "end": 48.487
+        }
+      ]
+    },
+    {
+      "start": 48.763,
+      "end": 53.4,
+      "text": "la ReLU massimo tra zero e x standard nel deep learning e la sua versione",
+      "words": [
+        {
+          "text": "la",
+          "start": 48.763,
+          "end": 48.938
+        },
+        {
+          "text": "ReLU",
+          "start": 48.938,
+          "end": 49.362
+        },
+        {
+          "text": "massimo",
+          "start": 49.362,
+          "end": 49.862
+        },
+        {
+          "text": "tra",
+          "start": 49.862,
+          "end": 50.05
+        },
+        {
+          "text": "zero",
+          "start": 50.05,
+          "end": 50.412
+        },
+        {
+          "text": "e",
+          "start": 50.413,
+          "end": 50.438
+        },
+        {
+          "text": "x",
+          "start": 50.438,
+          "end": 50.85
+        },
+        {
+          "text": "standard",
+          "start": 51.087,
+          "end": 51.625
+        },
+        {
+          "text": "nel",
+          "start": 51.625,
+          "end": 51.8
+        },
+        {
+          "text": "deep",
+          "start": 51.8,
+          "end": 51.975
+        },
+        {
+          "text": "learning",
+          "start": 51.975,
+          "end": 52.488
+        },
+        {
+          "text": "e",
+          "start": 52.75,
+          "end": 52.812
+        },
+        {
+          "text": "la",
+          "start": 52.812,
+          "end": 52.9
+        },
+        {
+          "text": "sua",
+          "start": 52.9,
+          "end": 53.012
+        },
+        {
+          "text": "versione",
+          "start": 53.013,
+          "end": 53.4
+        }
+      ]
+    },
+    {
+      "start": 53.4,
+      "end": 54.413,
+      "text": "liscia softplus",
+      "words": [
+        {
+          "text": "liscia",
+          "start": 53.4,
+          "end": 53.725
+        },
+        {
+          "text": "softplus",
+          "start": 53.725,
+          "end": 54.413
+        }
+      ]
+    }
+  ]
+}

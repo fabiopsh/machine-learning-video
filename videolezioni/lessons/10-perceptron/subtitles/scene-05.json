@@ -1,0 +1,673 @@
+{
+  "duration": 47.328,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 6.012,
+      "text": "Il primo modello storico di neurone proposto da McCulloch e Pitts ha due stati attivo",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.05,
+          "end": 0.275
+        },
+        {
+          "text": "primo",
+          "start": 0.275,
+          "end": 0.55
+        },
+        {
+          "text": "modello",
+          "start": 0.55,
+          "end": 0.913
+        },
+        {
+          "text": "storico",
+          "start": 0.912,
+          "end": 1.337
+        },
+        {
+          "text": "di",
+          "start": 1.337,
+          "end": 1.425
+        },
+        {
+          "text": "neurone",
+          "start": 1.425,
+          "end": 1.962
+        },
+        {
+          "text": "proposto",
+          "start": 2.175,
+          "end": 2.625
+        },
+        {
+          "text": "da",
+          "start": 2.625,
+          "end": 2.825
+        },
+        {
+          "text": "McCulloch",
+          "start": 2.825,
+          "end": 3.55
+        },
+        {
+          "text": "e",
+          "start": 3.55,
+          "end": 3.612
+        },
+        {
+          "text": "Pitts",
+          "start": 3.612,
+          "end": 4.025
+        },
+        {
+          "text": "ha",
+          "start": 4.263,
+          "end": 4.35
+        },
+        {
+          "text": "due",
+          "start": 4.35,
+          "end": 4.537
+        },
+        {
+          "text": "stati",
+          "start": 4.537,
+          "end": 5.0
+        },
+        {
+          "text": "attivo",
+          "start": 5.412,
+          "end": 6.012
+        }
+      ]
+    },
+    {
+      "start": 6.275,
+      "end": 14.637,
+      "text": "uno e non attivo zero I pesi positivi rappresentano connessioni eccitatorie quelli negativi connessioni inibitorie",
+      "words": [
+        {
+          "text": "uno",
+          "start": 6.275,
+          "end": 6.675
+        },
+        {
+          "text": "e",
+          "start": 6.912,
+          "end": 7.025
+        },
+        {
+          "text": "non",
+          "start": 7.025,
+          "end": 7.213
+        },
+        {
+          "text": "attivo",
+          "start": 7.213,
+          "end": 7.663
+        },
+        {
+          "text": "zero",
+          "start": 7.9,
+          "end": 8.363
+        },
+        {
+          "text": "I",
+          "start": 8.7,
+          "end": 8.875
+        },
+        {
+          "text": "pesi",
+          "start": 8.875,
+          "end": 9.213
+        },
+        {
+          "text": "positivi",
+          "start": 9.213,
+          "end": 9.863
+        },
+        {
+          "text": "rappresentano",
+          "start": 9.863,
+          "end": 10.588
+        },
+        {
+          "text": "connessioni",
+          "start": 10.588,
+          "end": 11.238
+        },
+        {
+          "text": "eccitatorie",
+          "start": 11.238,
+          "end": 11.963
+        },
+        {
+          "text": "quelli",
+          "start": 12.325,
+          "end": 12.625
+        },
+        {
+          "text": "negativi",
+          "start": 12.625,
+          "end": 13.175
+        },
+        {
+          "text": "connessioni",
+          "start": 13.175,
+          "end": 13.888
+        },
+        {
+          "text": "inibitorie",
+          "start": 13.887,
+          "end": 14.637
+        }
+      ]
+    },
+    {
+      "start": 14.975,
+      "end": 20.962,
+      "text": "Il neurone si attiva quando l'input netto prodotto scalare tra w e x supera zero",
+      "words": [
+        {
+          "text": "Il",
+          "start": 14.975,
+          "end": 15.2
+        },
+        {
+          "text": "neurone",
+          "start": 15.2,
+          "end": 15.75
+        },
+        {
+          "text": "si",
+          "start": 15.75,
+          "end": 15.863
+        },
+        {
+          "text": "attiva",
+          "start": 15.863,
+          "end": 16.213
+        },
+        {
+          "text": "quando",
+          "start": 16.212,
+          "end": 16.525
+        },
+        {
+          "text": "l'input",
+          "start": 16.525,
+          "end": 16.95
+        },
+        {
+          "text": "netto",
+          "start": 16.95,
+          "end": 17.412
+        },
+        {
+          "text": "prodotto",
+          "start": 17.712,
+          "end": 18.175
+        },
+        {
+          "text": "scalare",
+          "start": 18.175,
+          "end": 18.625
+        },
+        {
+          "text": "tra",
+          "start": 18.625,
+          "end": 18.825
+        },
+        {
+          "text": "w",
+          "start": 18.825,
+          "end": 19.425
+        },
+        {
+          "text": "e",
+          "start": 19.425,
+          "end": 19.488
+        },
+        {
+          "text": "x",
+          "start": 19.488,
+          "end": 19.9
+        },
+        {
+          "text": "supera",
+          "start": 20.137,
+          "end": 20.5
+        },
+        {
+          "text": "zero",
+          "start": 20.5,
+          "end": 20.962
+        }
+      ]
+    },
+    {
+      "start": 21.3,
+      "end": 27.125,
+      "text": "Con questa singola unità a soglia possiamo già costruire le porte booleane fondamentali Per l'AND",
+      "words": [
+        {
+          "text": "Con",
+          "start": 21.3,
+          "end": 21.55
+        },
+        {
+          "text": "questa",
+          "start": 21.55,
+          "end": 21.887
+        },
+        {
+          "text": "singola",
+          "start": 21.887,
+          "end": 22.262
+        },
+        {
+          "text": "unità",
+          "start": 22.262,
+          "end": 22.637
+        },
+        {
+          "text": "a",
+          "start": 22.637,
+          "end": 22.7
+        },
+        {
+          "text": "soglia",
+          "start": 22.7,
+          "end": 23.212
+        },
+        {
+          "text": "possiamo",
+          "start": 23.212,
+          "end": 23.662
+        },
+        {
+          "text": "già",
+          "start": 23.663,
+          "end": 23.838
+        },
+        {
+          "text": "costruire",
+          "start": 23.837,
+          "end": 24.45
+        },
+        {
+          "text": "le",
+          "start": 24.45,
+          "end": 24.55
+        },
+        {
+          "text": "porte",
+          "start": 24.55,
+          "end": 24.9
+        },
+        {
+          "text": "booleane",
+          "start": 24.9,
+          "end": 25.412
+        },
+        {
+          "text": "fondamentali",
+          "start": 25.413,
+          "end": 26.288
+        },
+        {
+          "text": "Per",
+          "start": 26.625,
+          "end": 26.837
+        },
+        {
+          "text": "l'AND",
+          "start": 26.837,
+          "end": 27.125
+        }
+      ]
+    },
+    {
+      "start": 27.125,
+      "end": 31.412,
+      "text": "scegliamo w uno uguale a w due uguale a uno e bias meno uno virgola",
+      "words": [
+        {
+          "text": "scegliamo",
+          "start": 27.125,
+          "end": 27.6
+        },
+        {
+          "text": "w",
+          "start": 27.6,
+          "end": 28.075
+        },
+        {
+          "text": "uno",
+          "start": 28.075,
+          "end": 28.262
+        },
+        {
+          "text": "uguale",
+          "start": 28.262,
+          "end": 28.675
+        },
+        {
+          "text": "a",
+          "start": 28.675,
+          "end": 28.738
+        },
+        {
+          "text": "w",
+          "start": 28.738,
+          "end": 29.238
+        },
+        {
+          "text": "due",
+          "start": 29.238,
+          "end": 29.463
+        },
+        {
+          "text": "uguale",
+          "start": 29.462,
+          "end": 29.862
+        },
+        {
+          "text": "a",
+          "start": 29.863,
+          "end": 29.913
+        },
+        {
+          "text": "uno",
+          "start": 29.913,
+          "end": 30.225
+        },
+        {
+          "text": "e",
+          "start": 30.225,
+          "end": 30.263
+        },
+        {
+          "text": "bias",
+          "start": 30.262,
+          "end": 30.65
+        },
+        {
+          "text": "meno",
+          "start": 30.65,
+          "end": 30.925
+        },
+        {
+          "text": "uno",
+          "start": 30.925,
+          "end": 31.075
+        },
+        {
+          "text": "virgola",
+          "start": 31.075,
+          "end": 31.412
+        }
+      ]
+    },
+    {
+      "start": 31.413,
+      "end": 36.362,
+      "text": "cinque servono entrambi gli input a uno per superare la soglia Per l'OR basta alzare",
+      "words": [
+        {
+          "text": "cinque",
+          "start": 31.413,
+          "end": 31.838
+        },
+        {
+          "text": "servono",
+          "start": 32.15,
+          "end": 32.55
+        },
+        {
+          "text": "entrambi",
+          "start": 32.55,
+          "end": 32.95
+        },
+        {
+          "text": "gli",
+          "start": 32.95,
+          "end": 33.062
+        },
+        {
+          "text": "input",
+          "start": 33.062,
+          "end": 33.337
+        },
+        {
+          "text": "a",
+          "start": 33.337,
+          "end": 33.375
+        },
+        {
+          "text": "uno",
+          "start": 33.375,
+          "end": 33.688
+        },
+        {
+          "text": "per",
+          "start": 33.688,
+          "end": 33.837
+        },
+        {
+          "text": "superare",
+          "start": 33.837,
+          "end": 34.25
+        },
+        {
+          "text": "la",
+          "start": 34.25,
+          "end": 34.337
+        },
+        {
+          "text": "soglia",
+          "start": 34.337,
+          "end": 34.8
+        },
+        {
+          "text": "Per",
+          "start": 35.138,
+          "end": 35.363
+        },
+        {
+          "text": "l'OR",
+          "start": 35.362,
+          "end": 35.55
+        },
+        {
+          "text": "basta",
+          "start": 35.55,
+          "end": 36.0
+        },
+        {
+          "text": "alzare",
+          "start": 36.0,
+          "end": 36.362
+        }
+      ]
+    },
+    {
+      "start": 36.362,
+      "end": 41.137,
+      "text": "il bias a meno zero virgola cinque è sufficiente un solo input a uno Per",
+      "words": [
+        {
+          "text": "il",
+          "start": 36.362,
+          "end": 36.438
+        },
+        {
+          "text": "bias",
+          "start": 36.438,
+          "end": 36.837
+        },
+        {
+          "text": "a",
+          "start": 36.837,
+          "end": 36.9
+        },
+        {
+          "text": "meno",
+          "start": 36.9,
+          "end": 37.188
+        },
+        {
+          "text": "zero",
+          "start": 37.188,
+          "end": 37.475
+        },
+        {
+          "text": "virgola",
+          "start": 37.475,
+          "end": 37.812
+        },
+        {
+          "text": "cinque",
+          "start": 37.812,
+          "end": 38.275
+        },
+        {
+          "text": "è",
+          "start": 38.575,
+          "end": 38.725
+        },
+        {
+          "text": "sufficiente",
+          "start": 38.725,
+          "end": 39.375
+        },
+        {
+          "text": "un",
+          "start": 39.375,
+          "end": 39.525
+        },
+        {
+          "text": "solo",
+          "start": 39.525,
+          "end": 39.812
+        },
+        {
+          "text": "input",
+          "start": 39.812,
+          "end": 40.15
+        },
+        {
+          "text": "a",
+          "start": 40.15,
+          "end": 40.2
+        },
+        {
+          "text": "uno",
+          "start": 40.2,
+          "end": 40.588
+        },
+        {
+          "text": "Per",
+          "start": 40.925,
+          "end": 41.137
+        }
+      ]
+    },
+    {
+      "start": 41.138,
+      "end": 46.2,
+      "text": "il NOT poniamo peso meno uno e bias più zero virgola cinque invertendo lo stato",
+      "words": [
+        {
+          "text": "il",
+          "start": 41.138,
+          "end": 41.238
+        },
+        {
+          "text": "NOT",
+          "start": 41.237,
+          "end": 41.65
+        },
+        {
+          "text": "poniamo",
+          "start": 41.65,
+          "end": 42.062
+        },
+        {
+          "text": "peso",
+          "start": 42.062,
+          "end": 42.413
+        },
+        {
+          "text": "meno",
+          "start": 42.413,
+          "end": 42.738
+        },
+        {
+          "text": "uno",
+          "start": 42.737,
+          "end": 43.087
+        },
+        {
+          "text": "e",
+          "start": 43.087,
+          "end": 43.163
+        },
+        {
+          "text": "bias",
+          "start": 43.163,
+          "end": 43.587
+        },
+        {
+          "text": "più",
+          "start": 43.587,
+          "end": 43.737
+        },
+        {
+          "text": "zero",
+          "start": 43.737,
+          "end": 44.037
+        },
+        {
+          "text": "virgola",
+          "start": 44.038,
+          "end": 44.375
+        },
+        {
+          "text": "cinque",
+          "start": 44.375,
+          "end": 44.837
+        },
+        {
+          "text": "invertendo",
+          "start": 45.188,
+          "end": 45.812
+        },
+        {
+          "text": "lo",
+          "start": 45.812,
+          "end": 45.9
+        },
+        {
+          "text": "stato",
+          "start": 45.9,
+          "end": 46.2
+        }
+      ]
+    },
+    {
+      "start": 46.2,
+      "end": 46.988,
+      "text": "dell'ingresso",
+      "words": [
+        {
+          "text": "dell'ingresso",
+          "start": 46.2,
+          "end": 46.988
+        }
+      ]
+    }
+  ]
+}

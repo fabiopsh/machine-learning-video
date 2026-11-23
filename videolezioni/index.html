@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Learning (654AA) — Videolezioni Dinamiche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="catalog-shell">
+    <header class="masthead">
+      <div class="masthead-meta">Corso di Machine Learning (654AA) · Università di Pisa</div>
+      <h1>Machine Learning</h1>
+      <p class="masthead-sub">Videolezioni web dinamiche sincronizzate dalle note riorganizzate del corso</p>
+      <div class="masthead-footer">
+        <span>Dal corso del Prof. Alessio Micheli · a.a. 2026/27 · Note di Fabio Piscitelli</span>
+        <span>Audio locale pre-generato · Formule KaTeX &amp; animazioni sincronizzate</span>
+      </div>
+    </header>
+
+    <div class="catalog-toolbar">
+      <div class="filter-group" role="tablist" aria-label="Filtro capitoli">
+        <button class="filter-btn active" data-filter="all">Tutti i capitoli</button>
+        <button class="filter-btn" data-filter="ready">Disponibili</button>
+        <button class="filter-btn" data-filter="planned">In preparazione</button>
+      </div>
+      <div class="progress-summary">
+        <span id="ready-count">Caricamento...</span>
+        <div class="progress-track"><div id="ready-progress" class="progress-fill" style="width: 0%"></div></div>
+      </div>
+    </div>
+
+    <div id="catalog-content"></div>
+  </main>
+
+  <script type="module" src="js/catalog.js"></script>
+</body>
+</html>

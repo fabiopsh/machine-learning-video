@@ -1,0 +1,11 @@
+# Local secrets & budget/chunk cache (never commit)
+.env
+videolezioni/.env
+videolezioni/.budget_usage.json
+videolezioni/lessons/*/audio/.chunks/
+
+# Python / OS caches
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

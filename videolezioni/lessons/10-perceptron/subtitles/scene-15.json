@@ -1,0 +1,606 @@
+{
+  "duration": 49.152,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 7.463,
+      "text": "Riassumiamo il confronto tra Perceptron e LMS in quattro punti chiave Primo l'obiettivo il Perceptron",
+      "words": [
+        {
+          "text": "Riassumiamo",
+          "start": 0.05,
+          "end": 0.738
+        },
+        {
+          "text": "il",
+          "start": 0.738,
+          "end": 0.788
+        },
+        {
+          "text": "confronto",
+          "start": 0.787,
+          "end": 1.325
+        },
+        {
+          "text": "tra",
+          "start": 1.325,
+          "end": 1.537
+        },
+        {
+          "text": "Perceptron",
+          "start": 1.538,
+          "end": 2.288
+        },
+        {
+          "text": "e",
+          "start": 2.288,
+          "end": 2.438
+        },
+        {
+          "text": "LMS",
+          "start": 2.438,
+          "end": 3.3
+        },
+        {
+          "text": "in",
+          "start": 3.3,
+          "end": 3.475
+        },
+        {
+          "text": "quattro",
+          "start": 3.475,
+          "end": 3.863
+        },
+        {
+          "text": "punti",
+          "start": 3.862,
+          "end": 4.162
+        },
+        {
+          "text": "chiave",
+          "start": 4.162,
+          "end": 4.612
+        },
+        {
+          "text": "Primo",
+          "start": 4.95,
+          "end": 5.388
+        },
+        {
+          "text": "l'obiettivo",
+          "start": 5.55,
+          "end": 6.3
+        },
+        {
+          "text": "il",
+          "start": 6.6,
+          "end": 6.762
+        },
+        {
+          "text": "Perceptron",
+          "start": 6.763,
+          "end": 7.463
+        }
+      ]
+    },
+    {
+      "start": 7.463,
+      "end": 15.4,
+      "text": "minimizza le classificazioni errate tramite il segno mentre l'LMS minimizza l'errore quadratico sull'uscita lineare Secondo",
+      "words": [
+        {
+          "text": "minimizza",
+          "start": 7.463,
+          "end": 8.0
+        },
+        {
+          "text": "le",
+          "start": 8.0,
+          "end": 8.05
+        },
+        {
+          "text": "classificazioni",
+          "start": 8.05,
+          "end": 8.863
+        },
+        {
+          "text": "errate",
+          "start": 8.863,
+          "end": 9.263
+        },
+        {
+          "text": "tramite",
+          "start": 9.262,
+          "end": 9.637
+        },
+        {
+          "text": "il",
+          "start": 9.637,
+          "end": 9.712
+        },
+        {
+          "text": "segno",
+          "start": 9.713,
+          "end": 10.175
+        },
+        {
+          "text": "mentre",
+          "start": 10.5,
+          "end": 10.9
+        },
+        {
+          "text": "l'LMS",
+          "start": 10.9,
+          "end": 11.775
+        },
+        {
+          "text": "minimizza",
+          "start": 11.775,
+          "end": 12.312
+        },
+        {
+          "text": "l'errore",
+          "start": 12.312,
+          "end": 12.675
+        },
+        {
+          "text": "quadratico",
+          "start": 12.675,
+          "end": 13.288
+        },
+        {
+          "text": "sull'uscita",
+          "start": 13.287,
+          "end": 13.862
+        },
+        {
+          "text": "lineare",
+          "start": 13.863,
+          "end": 14.4
+        },
+        {
+          "text": "Secondo",
+          "start": 14.738,
+          "end": 15.4
+        }
+      ]
+    },
+    {
+      "start": 15.562,
+      "end": 20.325,
+      "text": "sui problemi separabili il Perceptron converge in un numero finito di passi a zero errori",
+      "words": [
+        {
+          "text": "sui",
+          "start": 15.562,
+          "end": 15.775
+        },
+        {
+          "text": "problemi",
+          "start": 15.775,
+          "end": 16.188
+        },
+        {
+          "text": "separabili",
+          "start": 16.188,
+          "end": 16.812
+        },
+        {
+          "text": "il",
+          "start": 16.812,
+          "end": 16.9
+        },
+        {
+          "text": "Perceptron",
+          "start": 16.9,
+          "end": 17.637
+        },
+        {
+          "text": "converge",
+          "start": 17.637,
+          "end": 18.188
+        },
+        {
+          "text": "in",
+          "start": 18.188,
+          "end": 18.288
+        },
+        {
+          "text": "un",
+          "start": 18.288,
+          "end": 18.375
+        },
+        {
+          "text": "numero",
+          "start": 18.375,
+          "end": 18.675
+        },
+        {
+          "text": "finito",
+          "start": 18.675,
+          "end": 19.025
+        },
+        {
+          "text": "di",
+          "start": 19.025,
+          "end": 19.112
+        },
+        {
+          "text": "passi",
+          "start": 19.113,
+          "end": 19.488
+        },
+        {
+          "text": "a",
+          "start": 19.488,
+          "end": 19.55
+        },
+        {
+          "text": "zero",
+          "start": 19.55,
+          "end": 19.875
+        },
+        {
+          "text": "errori",
+          "start": 19.875,
+          "end": 20.325
+        }
+      ]
+    },
+    {
+      "start": 20.675,
+      "end": 28.588,
+      "text": "mentre l'LMS converge solo asintoticamente Terzo sui problemi non separabili il Perceptron non converge mentre",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 20.675,
+          "end": 21.1
+        },
+        {
+          "text": "l'LMS",
+          "start": 21.1,
+          "end": 22.013
+        },
+        {
+          "text": "converge",
+          "start": 22.012,
+          "end": 22.613
+        },
+        {
+          "text": "solo",
+          "start": 22.613,
+          "end": 22.963
+        },
+        {
+          "text": "asintoticamente",
+          "start": 22.962,
+          "end": 23.912
+        },
+        {
+          "text": "Terzo",
+          "start": 24.25,
+          "end": 24.8
+        },
+        {
+          "text": "sui",
+          "start": 24.975,
+          "end": 25.175
+        },
+        {
+          "text": "problemi",
+          "start": 25.175,
+          "end": 25.588
+        },
+        {
+          "text": "non",
+          "start": 25.587,
+          "end": 25.762
+        },
+        {
+          "text": "separabili",
+          "start": 25.762,
+          "end": 26.35
+        },
+        {
+          "text": "il",
+          "start": 26.35,
+          "end": 26.425
+        },
+        {
+          "text": "Perceptron",
+          "start": 26.425,
+          "end": 27.05
+        },
+        {
+          "text": "non",
+          "start": 27.05,
+          "end": 27.225
+        },
+        {
+          "text": "converge",
+          "start": 27.225,
+          "end": 27.863
+        },
+        {
+          "text": "mentre",
+          "start": 28.175,
+          "end": 28.588
+        }
+      ]
+    },
+    {
+      "start": 28.587,
+      "end": 35.163,
+      "text": "l'LMS converge comunque pur potendo commettere errori anche quando i dati sono separabili Quarto punto",
+      "words": [
+        {
+          "text": "l'LMS",
+          "start": 28.587,
+          "end": 29.387
+        },
+        {
+          "text": "converge",
+          "start": 29.387,
+          "end": 29.9
+        },
+        {
+          "text": "comunque",
+          "start": 29.9,
+          "end": 30.425
+        },
+        {
+          "text": "pur",
+          "start": 30.762,
+          "end": 31.0
+        },
+        {
+          "text": "potendo",
+          "start": 31.0,
+          "end": 31.413
+        },
+        {
+          "text": "commettere",
+          "start": 31.413,
+          "end": 31.875
+        },
+        {
+          "text": "errori",
+          "start": 31.875,
+          "end": 32.25
+        },
+        {
+          "text": "anche",
+          "start": 32.25,
+          "end": 32.525
+        },
+        {
+          "text": "quando",
+          "start": 32.525,
+          "end": 32.775
+        },
+        {
+          "text": "i",
+          "start": 32.775,
+          "end": 32.825
+        },
+        {
+          "text": "dati",
+          "start": 32.825,
+          "end": 33.138
+        },
+        {
+          "text": "sono",
+          "start": 33.138,
+          "end": 33.35
+        },
+        {
+          "text": "separabili",
+          "start": 33.35,
+          "end": 34.0
+        },
+        {
+          "text": "Quarto",
+          "start": 34.337,
+          "end": 34.7
+        },
+        {
+          "text": "punto",
+          "start": 34.7,
+          "end": 35.163
+        }
+      ]
+    },
+    {
+      "start": 35.35,
+      "end": 41.138,
+      "text": "il più decisivo il Perceptron è difficile da estendere a reti di unità mentre l'LMS",
+      "words": [
+        {
+          "text": "il",
+          "start": 35.35,
+          "end": 35.5
+        },
+        {
+          "text": "più",
+          "start": 35.5,
+          "end": 35.65
+        },
+        {
+          "text": "decisivo",
+          "start": 35.65,
+          "end": 36.262
+        },
+        {
+          "text": "il",
+          "start": 36.6,
+          "end": 36.75
+        },
+        {
+          "text": "Perceptron",
+          "start": 36.75,
+          "end": 37.438
+        },
+        {
+          "text": "è",
+          "start": 37.438,
+          "end": 37.513
+        },
+        {
+          "text": "difficile",
+          "start": 37.513,
+          "end": 38.088
+        },
+        {
+          "text": "da",
+          "start": 38.087,
+          "end": 38.188
+        },
+        {
+          "text": "estendere",
+          "start": 38.188,
+          "end": 38.688
+        },
+        {
+          "text": "a",
+          "start": 38.688,
+          "end": 38.737
+        },
+        {
+          "text": "reti",
+          "start": 38.737,
+          "end": 39.025
+        },
+        {
+          "text": "di",
+          "start": 39.025,
+          "end": 39.112
+        },
+        {
+          "text": "unità",
+          "start": 39.112,
+          "end": 39.512
+        },
+        {
+          "text": "mentre",
+          "start": 39.825,
+          "end": 40.225
+        },
+        {
+          "text": "l'LMS",
+          "start": 40.225,
+          "end": 41.138
+        }
+      ]
+    },
+    {
+      "start": 41.138,
+      "end": 46.612,
+      "text": "si estende alle reti grazie al gradiente Per costruire reti neurali profonde ci servono quindi",
+      "words": [
+        {
+          "text": "si",
+          "start": 41.138,
+          "end": 41.288
+        },
+        {
+          "text": "estende",
+          "start": 41.288,
+          "end": 41.663
+        },
+        {
+          "text": "alle",
+          "start": 41.663,
+          "end": 41.825
+        },
+        {
+          "text": "reti",
+          "start": 41.825,
+          "end": 42.138
+        },
+        {
+          "text": "grazie",
+          "start": 42.138,
+          "end": 42.538
+        },
+        {
+          "text": "al",
+          "start": 42.538,
+          "end": 42.6
+        },
+        {
+          "text": "gradiente",
+          "start": 42.6,
+          "end": 43.2
+        },
+        {
+          "text": "Per",
+          "start": 43.538,
+          "end": 43.75
+        },
+        {
+          "text": "costruire",
+          "start": 43.75,
+          "end": 44.362
+        },
+        {
+          "text": "reti",
+          "start": 44.362,
+          "end": 44.637
+        },
+        {
+          "text": "neurali",
+          "start": 44.638,
+          "end": 45.138
+        },
+        {
+          "text": "profonde",
+          "start": 45.138,
+          "end": 45.75
+        },
+        {
+          "text": "ci",
+          "start": 45.75,
+          "end": 45.913
+        },
+        {
+          "text": "servono",
+          "start": 45.913,
+          "end": 46.3
+        },
+        {
+          "text": "quindi",
+          "start": 46.3,
+          "end": 46.612
+        }
+      ]
+    },
+    {
+      "start": 46.612,
+      "end": 48.812,
+      "text": "funzioni di attivazione differenziabili",
+      "words": [
+        {
+          "text": "funzioni",
+          "start": 46.612,
+          "end": 47.15
+        },
+        {
+          "text": "di",
+          "start": 47.15,
+          "end": 47.237
+        },
+        {
+          "text": "attivazione",
+          "start": 47.237,
+          "end": 47.85
+        },
+        {
+          "text": "differenziabili",
+          "start": 47.85,
+          "end": 48.812
+        }
+      ]
+    }
+  ]
+}

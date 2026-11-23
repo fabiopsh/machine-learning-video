@@ -1,0 +1,656 @@
+{
+  "duration": 42.552,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 5.562,
+      "text": "Sappiamo però che lo XOR non è linearmente separabile nessuna singola unità a soglia può",
+      "words": [
+        {
+          "text": "Sappiamo",
+          "start": 0.05,
+          "end": 0.525
+        },
+        {
+          "text": "però",
+          "start": 0.525,
+          "end": 0.838
+        },
+        {
+          "text": "che",
+          "start": 0.838,
+          "end": 0.95
+        },
+        {
+          "text": "lo",
+          "start": 0.95,
+          "end": 1.1
+        },
+        {
+          "text": "XOR",
+          "start": 1.1,
+          "end": 1.812
+        },
+        {
+          "text": "non",
+          "start": 1.812,
+          "end": 2.013
+        },
+        {
+          "text": "è",
+          "start": 2.013,
+          "end": 2.113
+        },
+        {
+          "text": "linearmente",
+          "start": 2.112,
+          "end": 2.725
+        },
+        {
+          "text": "separabile",
+          "start": 2.725,
+          "end": 3.312
+        },
+        {
+          "text": "nessuna",
+          "start": 3.638,
+          "end": 4.15
+        },
+        {
+          "text": "singola",
+          "start": 4.15,
+          "end": 4.525
+        },
+        {
+          "text": "unità",
+          "start": 4.525,
+          "end": 4.888
+        },
+        {
+          "text": "a",
+          "start": 4.888,
+          "end": 4.95
+        },
+        {
+          "text": "soglia",
+          "start": 4.95,
+          "end": 5.413
+        },
+        {
+          "text": "può",
+          "start": 5.412,
+          "end": 5.562
+        }
+      ]
+    },
+    {
+      "start": 5.562,
+      "end": 13.5,
+      "text": "rappresentarlo La soluzione è scomporlo in funzioni linearmente separabili Definiamo due unità intermedie h uno",
+      "words": [
+        {
+          "text": "rappresentarlo",
+          "start": 5.562,
+          "end": 6.475
+        },
+        {
+          "text": "La",
+          "start": 6.812,
+          "end": 7.05
+        },
+        {
+          "text": "soluzione",
+          "start": 7.05,
+          "end": 7.725
+        },
+        {
+          "text": "è",
+          "start": 7.725,
+          "end": 7.85
+        },
+        {
+          "text": "scomporlo",
+          "start": 7.85,
+          "end": 8.475
+        },
+        {
+          "text": "in",
+          "start": 8.475,
+          "end": 8.575
+        },
+        {
+          "text": "funzioni",
+          "start": 8.575,
+          "end": 9.188
+        },
+        {
+          "text": "linearmente",
+          "start": 9.188,
+          "end": 9.925
+        },
+        {
+          "text": "separabili",
+          "start": 9.925,
+          "end": 10.625
+        },
+        {
+          "text": "Definiamo",
+          "start": 10.963,
+          "end": 11.55
+        },
+        {
+          "text": "due",
+          "start": 11.55,
+          "end": 11.763
+        },
+        {
+          "text": "unità",
+          "start": 11.762,
+          "end": 12.075
+        },
+        {
+          "text": "intermedie",
+          "start": 12.075,
+          "end": 12.712
+        },
+        {
+          "text": "h",
+          "start": 12.975,
+          "end": 13.312
+        },
+        {
+          "text": "uno",
+          "start": 13.312,
+          "end": 13.5
+        }
+      ]
+    },
+    {
+      "start": 13.5,
+      "end": 17.262,
+      "text": "calcola l'AND tra a e b mentre h due calcola l'OR tra a e b",
+      "words": [
+        {
+          "text": "calcola",
+          "start": 13.5,
+          "end": 13.9
+        },
+        {
+          "text": "l'AND",
+          "start": 13.9,
+          "end": 14.188
+        },
+        {
+          "text": "tra",
+          "start": 14.188,
+          "end": 14.438
+        },
+        {
+          "text": "a",
+          "start": 14.438,
+          "end": 14.562
+        },
+        {
+          "text": "e",
+          "start": 14.562,
+          "end": 14.625
+        },
+        {
+          "text": "b",
+          "start": 14.625,
+          "end": 14.925
+        },
+        {
+          "text": "mentre",
+          "start": 15.188,
+          "end": 15.537
+        },
+        {
+          "text": "h",
+          "start": 15.537,
+          "end": 15.787
+        },
+        {
+          "text": "due",
+          "start": 15.787,
+          "end": 15.963
+        },
+        {
+          "text": "calcola",
+          "start": 15.963,
+          "end": 16.375
+        },
+        {
+          "text": "l'OR",
+          "start": 16.375,
+          "end": 16.625
+        },
+        {
+          "text": "tra",
+          "start": 16.625,
+          "end": 16.863
+        },
+        {
+          "text": "a",
+          "start": 16.863,
+          "end": 16.975
+        },
+        {
+          "text": "e",
+          "start": 16.975,
+          "end": 17.025
+        },
+        {
+          "text": "b",
+          "start": 17.025,
+          "end": 17.262
+        }
+      ]
+    },
+    {
+      "start": 17.262,
+      "end": 22.463,
+      "text": "Mostriamo che non h uno AND h due coincide esattamente con lo XOR Per le",
+      "words": [
+        {
+          "text": "Mostriamo",
+          "start": 17.262,
+          "end": 18.312
+        },
+        {
+          "text": "che",
+          "start": 18.312,
+          "end": 18.413
+        },
+        {
+          "text": "non",
+          "start": 18.413,
+          "end": 18.55
+        },
+        {
+          "text": "h",
+          "start": 18.55,
+          "end": 18.8
+        },
+        {
+          "text": "uno",
+          "start": 18.8,
+          "end": 19.025
+        },
+        {
+          "text": "AND",
+          "start": 19.025,
+          "end": 19.137
+        },
+        {
+          "text": "h",
+          "start": 19.137,
+          "end": 19.412
+        },
+        {
+          "text": "due",
+          "start": 19.413,
+          "end": 19.625
+        },
+        {
+          "text": "coincide",
+          "start": 19.625,
+          "end": 20.163
+        },
+        {
+          "text": "esattamente",
+          "start": 20.163,
+          "end": 20.838
+        },
+        {
+          "text": "con",
+          "start": 20.837,
+          "end": 21.0
+        },
+        {
+          "text": "lo",
+          "start": 21.0,
+          "end": 21.1
+        },
+        {
+          "text": "XOR",
+          "start": 21.1,
+          "end": 21.825
+        },
+        {
+          "text": "Per",
+          "start": 22.163,
+          "end": 22.363
+        },
+        {
+          "text": "le",
+          "start": 22.363,
+          "end": 22.463
+        }
+      ]
+    },
+    {
+      "start": 22.462,
+      "end": 26.425,
+      "text": "leggi di De Morgan la negazione di a AND b equivale a non a OR",
+      "words": [
+        {
+          "text": "leggi",
+          "start": 22.462,
+          "end": 22.775
+        },
+        {
+          "text": "di",
+          "start": 22.775,
+          "end": 22.875
+        },
+        {
+          "text": "De",
+          "start": 22.875,
+          "end": 22.962
+        },
+        {
+          "text": "Morgan",
+          "start": 22.962,
+          "end": 23.5
+        },
+        {
+          "text": "la",
+          "start": 23.7,
+          "end": 23.85
+        },
+        {
+          "text": "negazione",
+          "start": 23.85,
+          "end": 24.363
+        },
+        {
+          "text": "di",
+          "start": 24.363,
+          "end": 24.562
+        },
+        {
+          "text": "a",
+          "start": 24.562,
+          "end": 24.75
+        },
+        {
+          "text": "AND",
+          "start": 24.75,
+          "end": 24.988
+        },
+        {
+          "text": "b",
+          "start": 24.988,
+          "end": 25.2
+        },
+        {
+          "text": "equivale",
+          "start": 25.2,
+          "end": 25.812
+        },
+        {
+          "text": "a",
+          "start": 25.812,
+          "end": 25.938
+        },
+        {
+          "text": "non",
+          "start": 25.938,
+          "end": 26.137
+        },
+        {
+          "text": "a",
+          "start": 26.137,
+          "end": 26.25
+        },
+        {
+          "text": "OR",
+          "start": 26.25,
+          "end": 26.425
+        }
+      ]
+    },
+    {
+      "start": 26.425,
+      "end": 31.85,
+      "text": "non b Distribuendo il prodotto logico otteniamo quattro termini Il primo termine non a AND",
+      "words": [
+        {
+          "text": "non",
+          "start": 26.425,
+          "end": 26.637
+        },
+        {
+          "text": "b",
+          "start": 26.637,
+          "end": 26.875
+        },
+        {
+          "text": "Distribuendo",
+          "start": 26.875,
+          "end": 27.575
+        },
+        {
+          "text": "il",
+          "start": 27.575,
+          "end": 27.637
+        },
+        {
+          "text": "prodotto",
+          "start": 27.637,
+          "end": 28.025
+        },
+        {
+          "text": "logico",
+          "start": 28.025,
+          "end": 28.487
+        },
+        {
+          "text": "otteniamo",
+          "start": 28.488,
+          "end": 28.975
+        },
+        {
+          "text": "quattro",
+          "start": 28.975,
+          "end": 29.312
+        },
+        {
+          "text": "termini",
+          "start": 29.312,
+          "end": 29.825
+        },
+        {
+          "text": "Il",
+          "start": 30.163,
+          "end": 30.375
+        },
+        {
+          "text": "primo",
+          "start": 30.375,
+          "end": 30.625
+        },
+        {
+          "text": "termine",
+          "start": 30.625,
+          "end": 31.137
+        },
+        {
+          "text": "non",
+          "start": 31.312,
+          "end": 31.538
+        },
+        {
+          "text": "a",
+          "start": 31.538,
+          "end": 31.675
+        },
+        {
+          "text": "AND",
+          "start": 31.675,
+          "end": 31.85
+        }
+      ]
+    },
+    {
+      "start": 31.85,
+      "end": 37.6,
+      "text": "a e l'ultimo non b AND b sono sempre falsi e si eliminano Restano esattamente",
+      "words": [
+        {
+          "text": "a",
+          "start": 31.85,
+          "end": 32.113
+        },
+        {
+          "text": "e",
+          "start": 32.362,
+          "end": 32.487
+        },
+        {
+          "text": "l'ultimo",
+          "start": 32.487,
+          "end": 33.025
+        },
+        {
+          "text": "non",
+          "start": 33.263,
+          "end": 33.55
+        },
+        {
+          "text": "b",
+          "start": 33.55,
+          "end": 33.725
+        },
+        {
+          "text": "AND",
+          "start": 33.725,
+          "end": 33.888
+        },
+        {
+          "text": "b",
+          "start": 33.888,
+          "end": 34.138
+        },
+        {
+          "text": "sono",
+          "start": 34.413,
+          "end": 34.638
+        },
+        {
+          "text": "sempre",
+          "start": 34.638,
+          "end": 34.963
+        },
+        {
+          "text": "falsi",
+          "start": 34.962,
+          "end": 35.413
+        },
+        {
+          "text": "e",
+          "start": 35.413,
+          "end": 35.462
+        },
+        {
+          "text": "si",
+          "start": 35.462,
+          "end": 35.612
+        },
+        {
+          "text": "eliminano",
+          "start": 35.612,
+          "end": 36.175
+        },
+        {
+          "text": "Restano",
+          "start": 36.513,
+          "end": 37.0
+        },
+        {
+          "text": "esattamente",
+          "start": 37.0,
+          "end": 37.6
+        }
+      ]
+    },
+    {
+      "start": 37.6,
+      "end": 42.2,
+      "text": "non a AND b oppure a AND non b cioè la definizione di XOR",
+      "words": [
+        {
+          "text": "non",
+          "start": 37.6,
+          "end": 37.763
+        },
+        {
+          "text": "a",
+          "start": 37.763,
+          "end": 37.95
+        },
+        {
+          "text": "AND",
+          "start": 37.95,
+          "end": 38.213
+        },
+        {
+          "text": "b",
+          "start": 38.212,
+          "end": 38.425
+        },
+        {
+          "text": "oppure",
+          "start": 38.425,
+          "end": 38.912
+        },
+        {
+          "text": "a",
+          "start": 38.913,
+          "end": 39.1
+        },
+        {
+          "text": "AND",
+          "start": 39.1,
+          "end": 39.375
+        },
+        {
+          "text": "non",
+          "start": 39.375,
+          "end": 39.625
+        },
+        {
+          "text": "b",
+          "start": 39.625,
+          "end": 39.837
+        },
+        {
+          "text": "cioè",
+          "start": 40.2,
+          "end": 40.488
+        },
+        {
+          "text": "la",
+          "start": 40.487,
+          "end": 40.6
+        },
+        {
+          "text": "definizione",
+          "start": 40.6,
+          "end": 41.188
+        },
+        {
+          "text": "di",
+          "start": 41.188,
+          "end": 41.425
+        },
+        {
+          "text": "XOR",
+          "start": 41.425,
+          "end": 42.2
+        }
+      ]
+    }
+  ]
+}
