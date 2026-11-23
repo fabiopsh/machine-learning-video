@@ -1,35 +1,75 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-theme="obsidian">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Machine Learning (654AA) — Videolezioni Dinamiche</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/themes.css" />
 </head>
 <body>
   <main class="catalog-shell">
-    <header class="masthead">
-      <div class="masthead-meta">Corso di Machine Learning (654AA) · Università di Pisa</div>
-      <h1>Machine Learning</h1>
-      <p class="masthead-sub">Videolezioni web dinamiche sincronizzate dalle note riorganizzate del corso</p>
-      <div class="masthead-footer">
-        <span>Dal corso del Prof. Alessio Micheli · a.a. 2026/27 · Note di Fabio Piscitelli</span>
-        <span>Audio locale pre-generato · Formule KaTeX &amp; animazioni sincronizzate</span>
+    <header class="catalog-hero">
+      <div class="hero-top-row">
+        <span class="hero-badge">UNIPI 654AA · Prof. Alessio Micheli · 2026/27</span>
+        <div id="catalog-theme-switcher"></div>
+      </div>
+
+      <div class="hero-main-grid">
+        <div>
+          <h1 class="hero-title">Machine Learning</h1>
+          <p class="hero-sub">Videolezioni interattive con formule KaTeX, grafici reali e sincronizzazione voce-slide in tempo reale dalle note di Fabio Piscitelli.</p>
+          <div class="hero-stats">
+            <span class="stat-chip"><strong id="stat-ready">--</strong> capitoli pronti</span>
+            <span class="stat-chip"><strong id="stat-scenes">--</strong> scene interattive</span>
+            <span class="stat-chip"><strong id="stat-hours">--</strong> di lezioni</span>
+            <span class="stat-chip"><strong id="stat-watched">0</strong> scene completate</span>
+          </div>
+        </div>
+
+        <a id="resume-card" class="resume-card" href="lesson.html?id=02-problema">
+          <span id="resume-kicker" class="resume-kicker">Inizia il percorso</span>
+          <h2 id="resume-title" class="resume-title">Caricamento...</h2>
+          <span id="resume-meta" class="resume-meta">Seleziona un capitolo dalla mappa o dalla griglia</span>
+          <span id="resume-cta" class="resume-cta">
+            <span>Avvia lezione</span>
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+          </span>
+        </a>
       </div>
     </header>
 
-    <div class="catalog-toolbar">
-      <div class="filter-group" role="tablist" aria-label="Filtro capitoli">
-        <button class="filter-btn active" data-filter="all">Tutti i capitoli</button>
-        <button class="filter-btn" data-filter="ready">Disponibili</button>
-        <button class="filter-btn" data-filter="planned">In preparazione</button>
+    <div class="catalog-toolbar-v2">
+      <div class="toolbar-left">
+        <div class="view-switcher" role="tablist" aria-label="Modalità di visualizzazione">
+          <button class="view-btn active" data-view="map">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>
+            <span>Mappa del Corso</span>
+          </button>
+          <button class="view-btn" data-view="bento">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            <span>Griglia Bento</span>
+          </button>
+        </div>
+        <div class="filter-group" role="tablist" aria-label="Filtro capitoli">
+          <button class="filter-btn active" data-filter="all">Tutti</button>
+          <button class="filter-btn" data-filter="ready">Disponibili</button>
+          <button class="filter-btn" data-filter="planned">In preparazione</button>
+        </div>
       </div>
-      <div class="progress-summary">
-        <span id="ready-count">Caricamento...</span>
-        <div class="progress-track"><div id="ready-progress" class="progress-fill" style="width: 0%"></div></div>
+
+      <div class="toolbar-right">
+        <div class="search-box">
+          <svg class="search-icon ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input id="catalog-search" class="search-input" type="search" placeholder="Cerca capitolo o tema (es. ROC, VC, ridge)..." aria-label="Cerca capitoli" />
+        </div>
+        <div class="progress-summary">
+          <span id="ready-count">Caricamento...</span>
+          <div class="progress-track"><div id="ready-progress" class="progress-fill" style="width: 0%"></div></div>
+        </div>
       </div>
     </div>
 
