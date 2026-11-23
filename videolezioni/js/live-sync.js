@@ -1,9 +1,10 @@
-// Real-Time Voice-to-Slide Live Sync v2
-// Fixes:
-//  1. Sequential word-by-word highlighting (NEVER parallel across wrapped 2-line sentences!)
-//  2. Strict monotonic alignment with high-precision lexical matching (zero spurious highlights)
-//  3. Automatic real-time individual KaTeX formula-term glowing synced to spoken math terms
-//  4. Smooth Spotlight focus + Click-to-Seek + SVG live stroke-draw
+// Real-Time Voice-to-Slide Live Sync v3
+// Upgrades over v2:
+//  1. Sequential MONOTONIC left-to-right formula-atom alignment (NEVER flashes all 6 copies of a symbol at once!)
+//  2. Strict SINGLE-BLOCK focus (NEVER flashes formulas inside inactive/other blocks!)
+//  3. Full KaTeX DOM support (x_p^2 -> "x2p", \frac{\partial E}{\partial w_0}, \bar{d}, \bar{x}, \Cov, \Var, 1/l, etc.)
+//  4. Exact tight MMS_FA phrase spans per math event instead of noisy 1s multi-symbol soup
+//  5. Word-by-word sequential clause highlighting + Spotlight + Click-to-Seek + reliable SVG draw
 
 const STOPWORDS = new Set([
   "di","a","da","in","con","su","per","tra","fra","il","lo","la","i","gli","le",
@@ -13,58 +14,66 @@ const STOPWORDS = new Set([
   "si","ci","vi","ne","non","piu","meno","come","dove","quando","anche","solo",
   "sono","era","sia","puo","ha","hanno","fare","fa","suo","sua","suoi","loro",
   "questo","questa","questi","queste","quello","quella","tutti","tutte","ogni",
-  "poi","ora","qui","cosi","quindi","cioe","perche","pero","es","cio","molto","ogni",
+  "poi","ora","qui","cosi","quindi","cioe","perche","pero","es","cio","molto",
   "dati","dato","modello","modelli","funzione","funzioni","esempio","esempi","caso"
 ]);
 
-const MATH_SPOKEN_PATTERNS = [
-  // Multi-word patterns checked first against the live spoken rolling window
-  { key: "w_0",     rx: /\bw\s*(?:con\s+)?zero\b|\bintercetta\b|\bbias\s+w\b/ },
-  { key: "w_1",     rx: /\bw\s*(?:con\s+)?uno\b/ },
-  { key: "w_2",     rx: /\bw\s*(?:con\s+)?due\b/ },
-  { key: "w_j",     rx: /\bw\s*(?:con\s+)?(?:j|i|k|m)\b|\bsingolo\s+peso\b/ },
-  { key: "x_p",     rx: /\bx\s*(?:con\s+)?p\b|\b(?:p|i)-?esimo\s+(?:esempio|pattern)\b/ },
-  { key: "x_1",     rx: /\bx\s*(?:con\s+)?uno\b/ },
-  { key: "x_2",     rx: /\bx\s*(?:con\s+)?due\b/ },
-  { key: "x_i",     rx: /\bx\s*(?:con\s+)?(?:i|j|k|t)\b/ },
-  { key: "d_p",     rx: /\bd\s*(?:con\s+)?(?:p|i)\b|\btarget\s+d\b/ },
-  { key: "h_bar",   rx: /\bh\s+soprassegnat[oa]\b|\bpredizione\s+media\b/ },
-  { key: "d_bar",   rx: /\bd\s+soprassegnat[oa]\b|\bmedia\s+d\b/ },
-  { key: "x_bar",   rx: /\bx\s+soprassegnat[oa]\b|\bmedia\s+x\b/ },
-  { key: "h_w",     rx: /\bh\s*(?:con\s+w\s*)?di\s+x\b|\bipotesi\s+h\b/ },
-  { key: "E_w",     rx: /\be\s+di\s+w\b|\berrore\s+(?:empirico|quadratico|medio)\b|\bsomma\s+dei\s+quadrati\b/ },
-  { key: "R_emp",   rx: /\br\s*emp\b|\brischio\s+empirico\b/ },
-  { key: "E_RMS",   rx: /\be\s*rms\b|\broot[\s-]mean[\s-]square\b/ },
-  { key: "VC",      rx: /\bvc[\s-]dimension\b|\bvc\b/ },
-  { key: "Cov",     rx: /\bcovarianza\b/ },
-  { key: "Var",     rx: /\bvarianza\b/ },
-  { key: "Bias",    rx: /\bbias(?:\s+al\s+quadrato)?\b/ },
-  { key: "sum",     rx: /\bsomma(?:toria)?\b/ },
-  { key: "int",     rx: /\bintegrale\b/ },
-  { key: "sqrt",    rx: /\bradice(?:\s+quadrata)?\b/ },
-  { key: "nabla",   rx: /\bgradiente\b|\bderivata\b/ },
-  { key: "norm",    rx: /\bnorma(?:\s+quadra|\s+al\s+quadrato)?\b/ },
-  { key: "lambda",  rx: /\blambda\b/ },
-  { key: "eta",     rx: /\beta\b|\blearning\s+rate\b/ },
-  { key: "delta",   rx: /\bdelta\b/ },
-  { key: "sigma",   rx: /\bsigma\b|\brumore\b/ },
-  { key: "theta",   rx: /\btheta\b/ },
-  { key: "eps",     rx: /\bepsilon\b|\bvc[\s-]confidence\b/ },
-  { key: "pi",      rx: /\bpi\s+greco\b/ },
-  { key: "phi",     rx: /\bphi\b|\bfunzioni\s+di\s+base\b/ },
-  { key: "sign",    rx: /\bsegno\b|\bsign\b/ },
-  { key: "X_T",     rx: /\bx\s+trasposto\b/ },
-  { key: "X_plus",  rx: /\bx\s+pi[uù]\b|\bpseudoinversa\b/ },
-  { key: "Loss",    rx: /\bloss\b|\bfunzione\s+obiettivo\b/ },
-  { key: "w_vec",   rx: /\bvettore\s+(?:dei\s+pesi\s+)?w\b|\bpesi\s+w\b|\bnuovo\s+w\b|\bw\s+nuovo\b/ }
+// Ordered longest/most-specific first so multi-word math phrases match as single crisp events!
+const SPOKEN_MATH_GRAMMAR = [
+  { key: "dE_dw0",     rx: /^derivata(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a\s+w\s*(?:con\s+)?zero$/ },
+  { key: "dE_dw1",     rx: /^derivata(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a\s+w\s*(?:con\s+)?uno$/ },
+  { key: "dE_dwj",     rx: /^derivata(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a(?:l\s+singolo\s+peso)?\s+w\s*(?:con\s+)?(?:j|i|k)$/ },
+  { key: "x_p_sq",     rx: /^x\s*(?:con\s+)?p\s+(?:al\s+quadrato|quadro)$/ },
+  { key: "w_0",        rx: /^w\s*(?:con\s+)?zero$/ },
+  { key: "w_1",        rx: /^w\s*(?:con\s+)?uno$/ },
+  { key: "w_2",        rx: /^w\s*(?:con\s+)?due$/ },
+  { key: "w_j",        rx: /^w\s*(?:con\s+)?(?:j|i|k|m|stella|nuovo)$/ },
+  { key: "x_p",        rx: /^x\s*(?:con\s+)?p$/ },
+  { key: "x_1",        rx: /^x\s*(?:con\s+)?uno$/ },
+  { key: "x_2",        rx: /^x\s*(?:con\s+)?due$/ },
+  { key: "x_i",        rx: /^x\s*(?:con\s+)?(?:i|j|k|t|zero)$/ },
+  { key: "d_p",        rx: /^d\s*(?:con\s+)?(?:p|i)$/ },
+  { key: "h_bar",      rx: /^h\s+soprassegnat[oa]$/ },
+  { key: "d_bar",      rx: /^d\s+soprassegnat[oa]$/ },
+  { key: "x_bar",      rx: /^x\s+soprassegnat[oa]$/ },
+  { key: "one_over_l", rx: /^uno\s+su\s+l$/ },
+  { key: "X_T",        rx: /^x\s+trasposto$/ },
+  { key: "X_plus",     rx: /^(?:x\s+piu|pseudoinversa)$/ },
+  { key: "R_emp",      rx: /^(?:r\s+emp|rischio\s+empirico)$/ },
+  { key: "E_RMS",      rx: /^(?:e\s+rms|root\s+mean\s+square)$/ },
+  { key: "E_w",        rx: /^e\s+di\s+w$/ },
+  { key: "h_w",        rx: /^h\s+(?:con\s+w\s+)?di\s+x$/ },
+  { key: "sum",        rx: /^(?:somma(?:\s+su\s+p|\s+di)?|sommatoria)$/ },
+  { key: "int",        rx: /^integrale$/ },
+  { key: "sqrt",       rx: /^radice(?:\s+quadrata)?$/ },
+  { key: "Cov",        rx: /^covarianza$/ },
+  { key: "Var",        rx: /^varianza$/ },
+  { key: "Bias",       rx: /^bias(?:\s+al\s+quadrato)?$/ },
+  { key: "VC",         rx: /^(?:vc|vc\s+dimension)$/ },
+  { key: "nabla",      rx: /^gradiente$/ },
+  { key: "norm",       rx: /^norma(?:\s+quadra|\s+al\s+quadrato)?$/ },
+  { key: "lambda",     rx: /^lambda$/ },
+  { key: "eta",        rx: /^(?:eta|learning\s+rate)$/ },
+  { key: "delta",      rx: /^delta(?:\s+con\s+p)?$/ },
+  { key: "sigma",      rx: /^sigma(?:\s+quadro)?$/ },
+  { key: "theta",      rx: /^theta$/ },
+  { key: "eps",        rx: /^epsilon$/ },
+  { key: "pi",         rx: /^pi\s+greco$/ },
+  { key: "phi",        rx: /^phi$/ },
+  { key: "sign",       rx: /^(?:segno|sign)$/ },
+  { key: "w_vec",      rx: /^(?:vettore\s+(?:dei\s+pesi\s+)?w|pesi\s+w)$/ }
 ];
 
 function stripAccents(s) {
   return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
+function cleanWord(raw) {
+  return stripAccents(raw).replace(/[^a-z0-9]+/g, "");
+}
+
 function normToken(raw) {
-  let t = stripAccents(raw).replace(/[^a-z0-9]+/g, "");
+  let t = cleanWord(raw);
   if (!t || t.length <= 2) return "";
   if (STOPWORDS.has(t)) return "";
   if (t.length >= 6) {
@@ -83,8 +92,42 @@ function extractTokens(text) {
   return out;
 }
 
+// Parse exact timestamped spoken math events from the MMS_FA word timeline (longest match greedy)
+function extractSpokenMathEvents(words) {
+  const events = []; // { key, start, end }
+  const cleaned = words.map((w) => cleanWord(w.raw));
+  let i = 0;
+  while (i < words.length) {
+    let matched = null;
+    // Try longest phrase first (up to 7 words)
+    const maxLen = Math.min(7, words.length - i);
+    for (let len = maxLen; len >= 1; len--) {
+      const slice = cleaned.slice(i, i + len).filter(Boolean).join(" ");
+      if (!slice) continue;
+      for (const rule of SPOKEN_MATH_GRAMMAR) {
+        if (rule.rx.test(slice)) {
+          matched = {
+            key: rule.key,
+            start: words[i].start,
+            end: words[i + len - 1].end,
+            len
+          };
+          break;
+        }
+      }
+      if (matched) break;
+    }
+    if (matched) {
+      events.push({ key: matched.key, start: matched.start, end: matched.end });
+      i += matched.len;
+    } else {
+      i += 1;
+    }
+  }
+  return events;
+}
+
 // Wrap a text-containing element into clause spans where each word is an individual <span class="vw">
-// so multi-line sentences illuminate sequentially word-by-word across lines (NEVER in parallel!).
 function wrapClausesWordByWord(el) {
   const clauses = [];
   if (!el || el.dataset.clausesWrapped) return clauses;
@@ -126,46 +169,35 @@ function wrapClausesWordByWord(el) {
     }
   };
 
-  const processInlineNode = (node, targetParent) => {
-    if (node.nodeType === Node.TEXT_NODE) {
-      appendTextWords(targetParent, node.textContent || "");
-      return;
-    }
-    if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.classList.contains("katex") || node.classList.contains("katex-display")) {
-        const wrap = document.createElement("span");
-        wrap.className = "vw vw-math";
-        wrap.appendChild(node);
-        targetParent.appendChild(wrap);
-        curWords.push(wrap);
-        return;
-      }
-      // Inline formatting (<strong>, <em>, <span>) -> recurse inside so words stay individually highlightable
-      const clone = node.cloneNode(false);
-      Array.from(node.childNodes).forEach((ch) => processInlineNode(ch, clone));
-      targetParent.appendChild(clone);
-    }
-  };
-
   for (const node of nodes) {
-    if (node.nodeType === Node.ELEMENT_NODE) {
-      const tag = node.tagName.toLowerCase();
-      if (tag === "br" || tag === "ul" || tag === "ol" || tag === "div" || tag === "table" || tag === "svg") {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const txt = node.textContent || "";
+      const chunks = txt.split(/([.;:!?](?:\s+|$)|[→⇒](?:\s+|$))/);
+      for (const ch of chunks) {
+        if (!ch) continue;
+        appendTextWords(curClause, ch);
+        if (/^[.;:!?→⇒]/.test(ch.trim())) flush();
+      }
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      if (node.tagName === "BR") {
         flush();
         fragment.appendChild(node);
-        continue;
-      }
-      processInlineNode(node, curClause);
-    } else if (node.nodeType === Node.TEXT_NODE) {
-      const text = node.textContent || "";
-      const pieces = text.split(/(?<=[.;!?·])\s+/);
-      pieces.forEach((piece, idx) => {
-        if (idx > 0) {
-          flush();
-          fragment.appendChild(document.createTextNode(" "));
+      } else if (node.classList.contains("katex") || node.classList.contains("katex-display")) {
+        curClause.appendChild(node);
+      } else if (node.tagName === "STRONG" || node.tagName === "EM" || node.tagName === "B" || node.tagName === "I") {
+        const clone = document.createElement(node.tagName.toLowerCase());
+        for (const attr of node.attributes) clone.setAttribute(attr.name, attr.value);
+        for (const child of Array.from(node.childNodes)) {
+          if (child.nodeType === Node.TEXT_NODE) {
+            appendTextWords(clone, child.textContent || "");
+          } else {
+            clone.appendChild(child);
+          }
         }
-        if (piece) appendTextWords(curClause, piece);
-      });
+        curClause.appendChild(clone);
+      } else {
+        curClause.appendChild(node);
+      }
     }
   }
   flush();
@@ -175,95 +207,132 @@ function wrapClausesWordByWord(el) {
   return clauses;
 }
 
-// Classify a rendered KaTeX DOM element into semantic math keys so individual formula pieces glow when spoken!
+// Extract ordered KaTeX formula atoms per block (strictly in visual left-to-right DOM order!)
 function indexFormulaAtoms(slideCard) {
-  const atoms = []; // { el, keys: Set<string>, block }
-  const seen = new Set();
+  const atoms = []; // { el, keys: Set<string>, block, windows: [] }
+  const covered = new Set(); // prevent child sub-elements inside an already-tagged compound atom from double-tagging
 
-  const addAtom = (el, key) => {
+  const isCovered = (el) => {
+    let cur = el.parentElement;
+    while (cur && cur !== slideCard) {
+      if (covered.has(cur)) return true;
+      cur = cur.parentElement;
+    }
+    return false;
+  };
+
+  const addAtom = (el, key, markCovered = false) => {
     if (!el || !key) return;
+    // Skip tiny step-tag badges ("Passo 1 · ∂E/∂w₀ = 0") when inside proof-step so the actual equation glows!
+    if (el.closest(".step-tag, .box-label, .slide-title, .slide-kicker, .plot-title")) return;
+    if (isCovered(el)) return;
     let rec = atoms.find((a) => a.el === el);
     if (!rec) {
       const block = el.closest(".box, .math-card, .proof-step, .acad-table, .pill-strip, .props-grid, .metrics-row, .gate-card, .plot-card") || el;
-      rec = { el, keys: new Set(), block };
+      rec = { el, keys: new Set(), block, windows: [] };
       atoms.push(rec);
     }
     rec.keys.add(key);
     el.classList.add("katex-atom");
+    if (markCovered) covered.add(el);
   };
 
   const katexRoots = slideCard.querySelectorAll(".katex-html");
   katexRoots.forEach((root) => {
-    // 1. Operators: \sum, \int, \Cov, \Var, \Bias, \sign, \nabla
-    root.querySelectorAll(".mop").forEach((el) => {
-      const txt = el.textContent.trim();
-      if (txt.includes("∑")) addAtom(el, "sum");
-      else if (txt.includes("∫")) addAtom(el, "int");
-      else if (txt === "Cov") addAtom(el, "Cov");
-      else if (txt === "Var") addAtom(el, "Var");
-      else if (txt === "Bias") addAtom(el, "Bias");
-      else if (txt === "sign") addAtom(el, "sign");
+    if (root.closest(".step-tag, .box-label, .slide-title, .slide-kicker, .plot-title")) return;
+
+    // 1. Compound fractions first: \frac{\partial E}{\partial w_0}, \frac{1}{l}
+    root.querySelectorAll(".mfrac").forEach((el) => {
+      const txt = el.textContent.replace(/\s+/g, "");
+      if (txt.includes("∂") && /w0$/i.test(txt)) addAtom(el, "dE_dw0", true);
+      else if (txt.includes("∂") && /w1$/i.test(txt)) addAtom(el, "dE_dw1", true);
+      else if (txt.includes("∂") && /w[ijk]$/i.test(txt)) addAtom(el, "dE_dwj", true);
+      else if (txt === "1l") addAtom(el, "one_over_l", true);
     });
 
-    // 2. Square roots
-    root.querySelectorAll(".sqrt").forEach((el) => addAtom(el, "sqrt"));
+    // 2. Walk elements in DOM reading order for clean left-to-right alignment
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const el = node;
+      if (isCovered(el)) continue;
 
-    // 3. Accented bars (\bar h, \bar d, \bar x)
-    root.querySelectorAll(".accent").forEach((el) => {
-      const txt = el.textContent.replace(/\s+/g, "");
-      if (txt.includes("h")) addAtom(el, "h_bar");
-      else if (txt.includes("d")) addAtom(el, "d_bar");
-      else if (txt.includes("x")) addAtom(el, "x_bar");
-    });
-
-    // 4. Compound subscript/superscript symbols (.mord containing .msupsub)
-    root.querySelectorAll(".mord").forEach((el) => {
-      if (el.closest(".msupsub")) return; // skip inner sub/sup pieces when parent covers it
-      const hasSubSup = Boolean(el.querySelector(":scope > .msupsub"));
-      const txt = el.textContent.replace(/\s+/g, "");
-
-      if (hasSubSup) {
-        if (/^w0$/i.test(txt)) addAtom(el, "w_0");
-        else if (/^w1$/i.test(txt)) addAtom(el, "w_1");
-        else if (/^w2$/i.test(txt)) addAtom(el, "w_2");
-        else if (/^w[ijkm\*]/.test(txt) || /^wnew$/i.test(txt)) addAtom(el, "w_j");
-        else if (/^xp/i.test(txt)) addAtom(el, "x_p");
-        else if (/^x1$/i.test(txt)) addAtom(el, "x_1");
-        else if (/^x2$/i.test(txt)) addAtom(el, "x_2");
-        else if (/^x[ijkt]$/i.test(txt)) addAtom(el, "x_i");
-        else if (/^d[pi]$/i.test(txt)) addAtom(el, "d_p");
-        else if (/^Remp$/i.test(txt)) addAtom(el, "R_emp");
-        else if (/^ERMS$/i.test(txt)) addAtom(el, "E_RMS");
-        else if (/^hw$/i.test(txt)) addAtom(el, "h_w");
-        else if (/^XT$/.test(txt)) addAtom(el, "X_T");
-        else if (/^X\+$/.test(txt)) addAtom(el, "X_plus");
-        else if (/^σ2$/.test(txt)) addAtom(el, "sigma");
-        else if (/^δ[pi]?$/.test(txt)) addAtom(el, "delta");
-        else if (/^θ/.test(txt)) addAtom(el, "theta");
-        else if (/^φ/.test(txt)) addAtom(el, "phi");
-        seen.add(el);
-        return;
+      // Operators: outer .mop only (skip inner .op-symbol so \sum doesn't register twice!)
+      if (el.classList.contains("mop") && !el.parentElement?.closest(".mop")) {
+        const txt = el.textContent.replace(/\s+/g, "");
+        if (txt.includes("∑")) addAtom(el, "sum", true);
+        else if (txt.includes("∫")) addAtom(el, "int", true);
+        else if (txt === "Cov") addAtom(el, "Cov", true);
+        else if (txt === "Var") addAtom(el, "Var", true);
+        else if (txt === "Bias") addAtom(el, "Bias", true);
+        else if (txt === "sign") addAtom(el, "sign", true);
+        continue;
       }
 
-      // Single-token math atoms (only leaf .mord without children .mord)
-      if (el.querySelector(".mord")) return;
-      if (txt === "λ") addAtom(el, "lambda");
-      else if (txt === "η") addAtom(el, "eta");
-      else if (txt === "δ" || txt === "Δ") addAtom(el, "delta");
-      else if (txt === "σ") addAtom(el, "sigma");
-      else if (txt === "θ") addAtom(el, "theta");
-      else if (txt === "ε" || txt === "ϵ") addAtom(el, "eps");
-      else if (txt === "π") addAtom(el, "pi");
-      else if (txt === "ϕ" || txt === "φ") addAtom(el, "phi");
-      else if (txt === "∇" || txt === "∂") addAtom(el, "nabla");
-      else if (txt === "∥") addAtom(el, "norm");
-      else if (txt === "VC") addAtom(el, "VC");
-      else if (txt === "Loss") addAtom(el, "Loss");
-      else if (txt === "E" && el.classList.contains("mathnormal")) addAtom(el, "E_w");
-      else if (txt === "w" && el.classList.contains("mathbf")) addAtom(el, "w_vec");
-    });
+      // Square roots
+      if (el.classList.contains("sqrt")) {
+        addAtom(el, "sqrt", false);
+        continue;
+      }
 
-    // 5. Explicit \htmlId spans get semantic tags from their text too
+      // Accented bars (\bar d, \bar x, \bar h)
+      if (el.classList.contains("accent") && el.classList.contains("mord")) {
+        const txt = el.textContent.replace(/\s+/g, "");
+        if (txt.includes("h")) addAtom(el, "h_bar", true);
+        else if (txt.includes("d")) addAtom(el, "d_bar", true);
+        else if (txt.includes("x")) addAtom(el, "x_bar", true);
+        continue;
+      }
+
+      // Compound subscript/superscript .mord (including x_p^2 which KaTeX orders as "x2p"!)
+      if (el.classList.contains("mord") && !el.closest(".msupsub")) {
+        const hasSubSup = Boolean(el.querySelector(":scope > .msupsub"));
+        const txt = el.textContent.replace(/\s+/g, "");
+
+        if (hasSubSup) {
+          if (/^x(?:2p|p2)$/i.test(txt)) {
+            addAtom(el, "x_p_sq", true);
+            addAtom(el, "x_p", true);
+          } else if (/^w0$/i.test(txt)) addAtom(el, "w_0", true);
+          else if (/^w1$/i.test(txt)) addAtom(el, "w_1", true);
+          else if (/^w2$/i.test(txt)) addAtom(el, "w_2", true);
+          else if (/^w[ijkm\*]$/i.test(txt) || /^wnew$/i.test(txt)) addAtom(el, "w_j", true);
+          else if (/^xp$/i.test(txt) || /^xpT$/i.test(txt)) addAtom(el, "x_p", true);
+          else if (/^x1$/i.test(txt)) addAtom(el, "x_1", true);
+          else if (/^x2$/i.test(txt)) addAtom(el, "x_2", true);
+          else if (/^x[ijkt0]$/i.test(txt) || /^xp,[ij]$/i.test(txt)) addAtom(el, "x_i", true);
+          else if (/^d[pi]$/i.test(txt)) addAtom(el, "d_p", true);
+          else if (/^Remp$/i.test(txt)) addAtom(el, "R_emp", true);
+          else if (/^ERMS$/i.test(txt)) addAtom(el, "E_RMS", true);
+          else if (/^hw$/i.test(txt)) addAtom(el, "h_w", true);
+          else if (/^XT$/.test(txt)) addAtom(el, "X_T", true);
+          else if (/^X\+$/.test(txt)) addAtom(el, "X_plus", true);
+          else if (/^σ2$/.test(txt)) addAtom(el, "sigma", true);
+          else if (/^δ[pi]?$/.test(txt)) addAtom(el, "delta", true);
+          else if (/^θ/.test(txt)) addAtom(el, "theta", true);
+          else if (/^φ/.test(txt)) addAtom(el, "phi", true);
+          continue;
+        }
+
+        // Leaf single-token symbols
+        if (!el.querySelector(".mord")) {
+          if (txt === "λ") addAtom(el, "lambda", true);
+          else if (txt === "η") addAtom(el, "eta", true);
+          else if (txt === "δ" || txt === "Δ") addAtom(el, "delta", true);
+          else if (txt === "σ") addAtom(el, "sigma", true);
+          else if (txt === "θ") addAtom(el, "theta", true);
+          else if (txt === "ε" || txt === "ϵ") addAtom(el, "eps", true);
+          else if (txt === "π") addAtom(el, "pi", true);
+          else if (txt === "ϕ" || txt === "φ") addAtom(el, "phi", true);
+          else if (txt === "∇") addAtom(el, "nabla", true);
+          else if (txt === "∥") addAtom(el, "norm", true);
+          else if (txt === "VC") addAtom(el, "VC", true);
+          else if (txt === "E" && el.classList.contains("mathnormal")) addAtom(el, "E_w", true);
+          else if (txt === "w" && el.classList.contains("mathbf")) addAtom(el, "w_vec", true);
+        }
+      }
+    }
+
     root.querySelectorAll("[id^='f-']").forEach((el) => {
       el.classList.add("katex-atom");
     });
@@ -277,10 +346,10 @@ export class LiveSyncEngine {
     this.stage = stageEl;
     this.onSeek = onSeek;
     this.enabled = true;
-    this.clauses = [];   // { el, wordEls, block, start, end }
-    this.blocks = [];    // { el, showAt, cueEnd, start, end }
-    this.atoms = [];     // { el, keys, block }
-    this.words = [];     // flattened MMS_FA word timeline
+    this.clauses = [];
+    this.blocks = [];
+    this.atoms = [];
+    this.words = [];
   }
 
   setEnabled(on) {
@@ -319,11 +388,13 @@ export class LiveSyncEngine {
 
     // 1. Collect reveal timestamps per element from cues
     const showAtMap = new Map();
+    const untilMap = new Map();
     for (const cue of scene.cues || []) {
       if (cue.action === "show") {
         this.stage.querySelectorAll(cue.target).forEach((el) => {
           const prev = showAtMap.get(el);
           if (prev === undefined || cue.at < prev) showAtMap.set(el, cue.at);
+          if (typeof cue.until === "number") untilMap.set(el, cue.until);
         });
       }
     }
@@ -340,6 +411,15 @@ export class LiveSyncEngine {
         cur = cur.parentElement;
       }
       return 0;
+    };
+
+    const getUntilAt = (el) => {
+      let cur = el;
+      while (cur && cur !== slideCard) {
+        if (untilMap.has(cur)) return untilMap.get(cur);
+        cur = cur.parentElement;
+      }
+      return null;
     };
 
     // 2. Flatten MMS_FA word-level timestamps
@@ -360,106 +440,110 @@ export class LiveSyncEngine {
     }
     const totalDur = (subtitles && subtitles.duration) || 60;
 
-    // 3. Wrap prose clauses word-by-word (NEVER touching KaTeX internals)
-    const textTargets = slideCard.querySelectorAll(".box p, .box li, .math-note, .proof-step > div, .prop-item, .acad-table tbody td");
-    const clauseCandidates = [];
-    textTargets.forEach((target) => {
-      if (target.querySelector(".katex-display") && target.textContent.replace(/\s+/g, "").length < 22) {
-        return;
-      }
-      const parentBlock = target.closest(blockSelectors) || target;
-      const wrapped = wrapClausesWordByWord(target);
-      for (const c of wrapped) {
-        const toks = extractTokens(c.el.textContent);
-        if (toks.length >= 2) {
-          clauseCandidates.push({
-            el: c.el,
-            wordEls: c.wordEls,
-            block: parentBlock,
-            showAt: getShowAt(c.el),
-            tokens: toks,
-            start: -1,
-            end: -1
-          });
-        }
-      }
-    });
+    // 3. Build Block timeline (each block owns [showAt, cueEnd])
+    const sortedShowCues = (scene.cues || [])
+      .filter((c) => c.action === "show")
+      .sort((a, b) => a.at - b.at);
 
-    // 4. Strict monotonic alignment of clauses to spoken timeline (high precision, zero random jumps!)
-    if (this.words.length > 0) {
-      const sortedShowCues = (scene.cues || [])
-        .filter((c) => c.action === "show")
-        .sort((a, b) => a.at - b.at);
-
-      let lastWordCursorByBlock = new Map();
-
-      for (const item of clauseCandidates) {
-        const tokSet = new Set(item.tokens);
-        // Restrict search window to after block reveal and before much later unrelated sections
-        const minTime = Math.max(0, item.showAt - 1.2);
-        let nextShowTime = totalDur;
-        for (const sc of sortedShowCues) {
-          if (sc.at > item.showAt + 4.0) {
-            nextShowTime = Math.min(totalDur, sc.at + 6.0);
+    for (const bEl of rawBlocks) {
+      const showAt = getShowAt(bEl);
+      const explicitUntil = getUntilAt(bEl);
+      let cueEnd = explicitUntil !== null ? explicitUntil : totalDur;
+      if (explicitUntil === null) {
+        for (const c of sortedShowCues) {
+          if (c.at > showAt + 0.4) {
+            cueEnd = c.at;
             break;
           }
         }
+      }
+      this.blocks.push({ el: bEl, showAt, cueEnd });
+    }
 
-        let startIdx = 0;
-        while (startIdx < this.words.length && this.words[startIdx].end < minTime) startIdx++;
-        const prevCursor = lastWordCursorByBlock.get(item.block);
-        if (typeof prevCursor === "number") {
-          startIdx = Math.max(startIdx, prevCursor);
+    // 4. Wrap prose clauses word-by-word & align monotonically
+    const clauseCandidates = [];
+    for (const b of this.blocks) {
+      const bEl = b.el;
+      if (bEl.classList.contains("svg-panel")) continue;
+      const textTargets = bEl.querySelectorAll("p, li, td");
+      textTargets.forEach((tEl) => {
+        if (tEl.closest(".katex")) return;
+        const wrapped = wrapClausesWordByWord(tEl);
+        for (const wObj of wrapped) {
+          const toks = extractTokens(wObj.el.textContent || "");
+          if (toks.length >= 2) {
+            clauseCandidates.push({
+              el: wObj.el,
+              wordEls: wObj.wordEls,
+              block: bEl,
+              tokens: toks,
+              showAt: b.showAt,
+              start: -1,
+              end: -1
+            });
+          }
+        }
+      });
+    }
+
+    if (this.words.length > 0 && clauseCandidates.length > 0) {
+      let monoWordCursor = 0;
+      for (const item of clauseCandidates) {
+        const cSet = new Set(item.tokens);
+        const minHits = item.tokens.length >= 4 ? 3 : 2;
+        const minRecall = 0.5;
+        const winSize = Math.min(28, Math.max(8, item.tokens.length * 3 + 4));
+
+        let startIdx = monoWordCursor;
+        while (startIdx < this.words.length && this.words[startIdx].end < item.showAt - 0.6) {
+          startIdx++;
+        }
+        if (item.showAt > 0 && startIdx > 0 && this.words[Math.min(monoWordCursor, this.words.length - 1)].start < item.showAt - 1.0) {
+          let s2 = 0;
+          while (s2 < this.words.length && this.words[s2].end < item.showAt - 0.6) s2++;
+          startIdx = Math.max(startIdx, s2);
         }
 
-        const winSize = Math.min(20, Math.max(7, Math.round(item.tokens.length * 1.9)));
         let bestScore = 0;
-        let bestI = -1;
-        let bestJ = -1;
-
+        let bestRange = null;
         for (let i = startIdx; i < this.words.length; i++) {
-          if (this.words[i].start > nextShowTime) break;
-          const endLim = Math.min(this.words.length, i + winSize);
+          const wTok = this.words[i].tok;
+          if (!wTok || !cSet.has(wTok)) continue;
           const matched = new Set();
-          let weightSum = 0;
-          let firstHit = -1;
-          let lastHit = -1;
-
+          let firstMatch = i;
+          let lastMatch = i;
+          const endLim = Math.min(this.words.length, i + winSize);
           for (let j = i; j < endLim; j++) {
-            const wt = this.words[j].tok;
-            if (wt && tokSet.has(wt) && !matched.has(wt)) {
-              matched.add(wt);
-              weightSum += (wt.length >= 6 ? 1.45 : 1.0);
-              if (firstHit === -1) firstHit = j;
-              lastHit = j;
+            const jt = this.words[j].tok;
+            if (jt && cSet.has(jt)) {
+              matched.add(jt);
+              lastMatch = j;
             }
           }
-
-          if (firstHit !== -1) {
-            const recall = matched.size / Math.max(1, tokSet.size);
-            // Require strong evidence: at least 2 content words & >= 38% recall, OR 1 long unique keyword when short
-            const strong = (matched.size >= 2 && recall >= 0.36) || (tokSet.size <= 2 && matched.size === 1 && weightSum >= 1.4);
-            if (strong) {
-              const spanPenalty = (lastHit - firstHit) * 0.03;
-              const score = weightSum * 0.8 + recall * 2.4 - spanPenalty;
-              if (score > bestScore) {
-                bestScore = score;
-                bestI = firstHit;
-                bestJ = lastHit;
-              }
+          const hits = matched.size;
+          const recall = hits / cSet.size;
+          if (hits >= minHits && recall >= minRecall) {
+            const span = Math.max(1, lastMatch - firstMatch + 1);
+            const density = hits / span;
+            const timeDist = Math.abs(this.words[firstMatch].start - item.showAt);
+            const proxBonus = item.showAt > 0 && timeDist < 22 ? 0.14 : 0;
+            const score = recall * 0.68 + Math.min(1, density * 1.4) * 0.24 + proxBonus;
+            if (score > bestScore) {
+              bestScore = score;
+              bestRange = [firstMatch, lastMatch];
             }
           }
         }
 
-        if (bestI !== -1 && bestJ !== -1) {
-          const t0 = Math.max(0, this.words[bestI].start - 0.12);
-          const t1 = Math.min(totalDur, Math.max(this.words[bestJ].end + 0.32, t0 + 1.4));
+        if (bestRange && bestScore >= 0.54) {
+          const [i0, i1] = bestRange;
+          const t0 = Math.max(0, this.words[i0].start - 0.08);
+          const t1 = Math.min(totalDur, this.words[i1].end + 0.18);
           item.start = t0;
-          item.end = t1;
-          lastWordCursorByBlock.set(item.block, Math.max(startIdx, bestI + 1));
-
+          item.end = Math.max(t0 + 0.45, t1);
+          monoWordCursor = Math.min(this.words.length - 1, i0 + 1);
           item.el.classList.add("voice-syncable");
-          item.el.title = `Clicca per saltare a ${this._fmt(t0)}`;
+          item.el.title = `Vai a ${this._fmt(t0)}`;
           item.el.addEventListener("click", (e) => {
             e.stopPropagation();
             if (typeof this.onSeek === "function") this.onSeek(t0);
@@ -470,27 +554,73 @@ export class LiveSyncEngine {
 
     this.clauses = clauseCandidates.filter((c) => c.start >= 0);
 
-    // 5. Index individual KaTeX formula terms for real-time voice-to-formula glowing!
+    // 5. Index KaTeX atoms and align them SEQUENTIALLY LEFT-TO-RIGHT per block against exact spoken math events!
     this.atoms = indexFormulaAtoms(slideCard);
+    if (this.atoms.length > 0 && this.words.length > 0) {
+      const mathEvents = extractSpokenMathEvents(this.words);
+      // Group atoms by their owning block (already in exact left-to-right DOM order)
+      const atomsByBlock = new Map();
+      for (const a of this.atoms) {
+        if (!atomsByBlock.has(a.block)) atomsByBlock.set(a.block, []);
+        atomsByBlock.get(a.block).push(a);
+      }
 
-    // 6. Build Block timeline for smooth Spotlight
-    const sortedShowCues = (scene.cues || [])
-      .filter((c) => c.action === "show")
-      .sort((a, b) => a.at - b.at);
+      for (const b of this.blocks) {
+        const bAtoms = atomsByBlock.get(b.el);
+        if (!bAtoms || bAtoms.length === 0) continue;
 
-    for (const bEl of rawBlocks) {
-      const showAt = getShowAt(bEl);
-      let cueEnd = totalDur;
-      for (const c of sortedShowCues) {
-        if (c.at > showAt + 0.4) {
-          cueEnd = c.at;
-          break;
+        // Filter spoken math events belonging to this block's time window [showAt - 0.35, cueEnd + 0.35]
+        const bEvents = mathEvents.filter(
+          (ev) => ev.end >= b.showAt - 0.35 && ev.start <= b.cueEnd + 0.35
+        );
+        if (bEvents.length === 0) continue;
+
+        // Walk monotonically left-to-right through bAtoms so repeated symbols (e.g. 6 sums) glow ONE AT A TIME in order!
+        let cursor = 0;
+        for (const ev of bEvents) {
+          let picked = -1;
+          // Prefer next occurrence forward from cursor (within generous forward lookahead of 12 atoms)
+          const lookLim = Math.min(bAtoms.length, cursor + 12);
+          for (let k = cursor; k < lookLim; k++) {
+            if (bAtoms[k].keys.has(ev.key)) {
+              picked = k;
+              break;
+            }
+          }
+          // Fallback 1: anywhere further forward in the block
+          if (picked === -1) {
+            for (let k = lookLim; k < bAtoms.length; k++) {
+              if (bAtoms[k].keys.has(ev.key)) {
+                picked = k;
+                break;
+              }
+            }
+          }
+          // Fallback 2: speaker revisited an earlier symbol in this same block -> pick nearest previous match
+          if (picked === -1) {
+            for (let k = Math.min(cursor - 1, bAtoms.length - 1); k >= 0; k--) {
+              if (bAtoms[k].keys.has(ev.key)) {
+                picked = k;
+                break;
+              }
+            }
+          }
+
+          if (picked !== -1) {
+            bAtoms[picked].windows.push({
+              start: Math.max(b.showAt, ev.start - 0.08),
+              end: ev.end + 0.24
+            });
+            // Advance cursor past picked atom only when moving forward (preserves left-to-right sweep)
+            if (picked >= cursor) {
+              cursor = picked + 1;
+            }
+          }
         }
       }
-      this.blocks.push({ el: bEl, showAt, cueEnd });
     }
 
-    // 7. Prep smooth SVG stroke-draw for continuous curve paths
+    // 6. Prep smooth SVG stroke-draw for continuous curve paths
     slideCard.querySelectorAll(".diagram-svg path[class*='svg-curve-']").forEach((p) => {
       if (p.getAttribute("stroke-dasharray") || p.classList.contains("svg-curve-ink-dash")) return;
       try {
@@ -521,7 +651,7 @@ export class LiveSyncEngine {
       return;
     }
 
-    // 2. Word-by-word sequential clause highlighting (line 1 -> THEN line 2, ZERO parallel sweep!)
+    // 2. Word-by-word sequential clause highlighting
     let bestClause = null;
     for (const c of this.clauses) {
       const isVisible = !c.block.classList.contains("cue-hidden");
@@ -554,7 +684,7 @@ export class LiveSyncEngine {
       }
     }
 
-    // 3. Determine active Spotlight block
+    // 3. Determine SINGLE active Spotlight block
     let activeBlock = null;
     const explicitHl = this.stage.querySelector(".cue-highlight");
     if (explicitHl) {
@@ -573,25 +703,14 @@ export class LiveSyncEngine {
       }
     }
 
-    // 4. REAL-TIME FORMULA-TERM GLOW: match live spoken 6-word window against KaTeX formula atoms!
-    const spokenWindow = this._getSpokenWindow(t, 0.45, 0.55);
-    const activeMathKeys = new Set();
-    if (spokenWindow) {
-      for (const pat of MATH_SPOKEN_PATTERNS) {
-        if (pat.rx.test(spokenWindow)) {
-          activeMathKeys.add(pat.key);
-        }
-      }
-    }
-
+    // 4. SEQUENTIAL MONOTONIC FORMULA-ATOM GLOW (STRICTLY inside activeBlock — single exact atom at a time!)
     for (const atom of this.atoms) {
       const visible = !atom.block.classList.contains("cue-hidden");
-      // Prefer illuminating atoms inside the currently active block (or any visible math-card/theorem)
-      const inFocus = !activeBlock || atom.block === activeBlock || atom.block.classList.contains("math-card") || atom.block.classList.contains("box-theorem");
+      const inActiveBlock = !activeBlock || atom.block === activeBlock;
       let hit = false;
-      if (visible && inFocus && activeMathKeys.size > 0) {
-        for (const k of atom.keys) {
-          if (activeMathKeys.has(k)) {
+      if (visible && inActiveBlock && atom.windows.length > 0) {
+        for (const w of atom.windows) {
+          if (t >= w.start && t <= w.end) {
             hit = true;
             break;
           }
@@ -615,19 +734,6 @@ export class LiveSyncEngine {
         b.el.classList.add("spotlight-dim");
       }
     }
-  }
-
-  _getSpokenWindow(t, lookback, lookahead) {
-    if (this.words.length === 0) return "";
-    const out = [];
-    for (const w of this.words) {
-      if (w.end >= t - lookback && w.start <= t + lookahead) {
-        out.push(w.clean);
-      } else if (w.start > t + lookahead) {
-        break;
-      }
-    }
-    return out.join(" ");
   }
 
   _fmt(sec) {

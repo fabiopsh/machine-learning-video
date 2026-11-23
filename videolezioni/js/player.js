@@ -345,9 +345,12 @@ function fitSlideScale() {
   const card = dom.stage.querySelector(".slide-card");
   if (!card) return 1;
 
+  // Freeze transitions & animations during synchronous measurement so intro-stage transform never distorts bounds
+  dom.stage.classList.add("measuring-fit");
   const wasIntro = card.classList.contains("intro-stage");
   card.classList.remove("intro-stage");
   card.style.zoom = "1";
+  void card.offsetWidth;
 
   const frameStyle = getComputedStyle(dom.stage);
   const padX = (parseFloat(frameStyle.paddingLeft) || 0) + (parseFloat(frameStyle.paddingRight) || 0);
@@ -369,17 +372,23 @@ function fitSlideScale() {
     const rect = card.getBoundingClientRect();
     if (rect.height > availH || rect.width > availW + 2) return false;
     if (card.scrollWidth > card.clientWidth + 2) return false;
-    for (const el of overflowWatchEls) {
-      if (el.scrollWidth > el.clientWidth + 3) return false;
+    if (z > 1) {
+      for (const el of overflowWatchEls) {
+        if (el.scrollWidth > el.clientWidth + 3) return false;
+      }
     }
     return true;
   };
 
-  let best = 1;
-  if (hiCap > 1.03 && fitsAt(1.03)) {
-    let lo = 1.0;
+  // Bi-directional binary search [0.52 .. hiCap]: scales UP when spacious AND DOWN on dense slides -> ZERO scrollbars EVER!
+  const minZoom = 0.52;
+  let best = minZoom;
+  if (fitsAt(hiCap)) {
+    best = hiCap;
+  } else {
+    let lo = minZoom;
     let hi = hiCap;
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 9; i++) {
       const mid = (lo + hi) / 2;
       if (fitsAt(mid)) {
         best = mid;
@@ -388,11 +397,11 @@ function fitSlideScale() {
         hi = mid;
       }
     }
-    // Keep a gentle 3% safety margin so nothing ever touches frame borders
-    best = Math.max(1, Math.floor(best * 0.97 * 100) / 100);
   }
+  // Keep a gentle 3% safety margin so nothing ever touches frame borders
+  best = Math.max(minZoom, Math.floor(best * 0.97 * 100) / 100);
 
-  card.style.zoom = best > 1.01 ? String(best) : "";
+  card.style.zoom = Math.abs(best - 1) > 0.01 ? String(best) : "";
   state.slideZoom = best;
 
   // Measure centered intro title vertical offset accounting for active zoom
@@ -408,6 +417,8 @@ function fitSlideScale() {
   }
 
   if (wasIntro) card.classList.add("intro-stage");
+  void card.offsetWidth;
+  dom.stage.classList.remove("measuring-fit");
   return best;
 }
 
@@ -619,6 +630,7 @@ async function loadScene(index, autoplay = false) {
   }
 
   liveSync.prepareScene(scene, state.subtitles);
+  fitSlideScale();
   saveSceneProgress(LESSON_ID, state.sceneIndex, false);
   updateFrame(0);
 
@@ -807,13 +819,30 @@ function setupControls() {
   }
 
   let resizeRaf = null;
-  window.addEventListener("resize", () => {
+  const scheduleFit = () => {
     if (resizeRaf) cancelAnimationFrame(resizeRaf);
     resizeRaf = requestAnimationFrame(() => {
       resizeRaf = null;
-      recalcIntroOffset();
+      fitSlideScale();
     });
-  });
+  };
+  window.addEventListener("resize", scheduleFit);
+  if (typeof ResizeObserver !== "undefined") {
+    let lastW = 0;
+    let lastH = 0;
+    const ro = new ResizeObserver((entries) => {
+      const cr = entries[0]?.contentRect;
+      if (!cr) return;
+      const w = Math.round(cr.width);
+      const h = Math.round(cr.height);
+      if (Math.abs(w - lastW) > 2 || Math.abs(h - lastH) > 2) {
+        lastW = w;
+        lastH = h;
+        scheduleFit();
+      }
+    });
+    ro.observe(dom.stage);
+  }
 
   document.addEventListener("keydown", (e) => {
     if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;
