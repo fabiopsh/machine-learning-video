@@ -4,7 +4,7 @@ Applicazione web statica per studiare il corso di **Machine Learning (654AA)** d
 
 Invece di video MP4 fissi, ogni lezione è renderizzata direttamente nel browser: slide HTML, grafici SVG su dati reali, formule matematiche KaTeX e voce narrante pre-generata si sincronizzano in tempo reale, illuminando blocchi e simboli nel momento esatto in cui vengono spiegati.
 
-**Versione online:** [fabiopsh.github.io/machine-learning-videolesson](https://fabiopsh.github.io/machine-learning-videolesson/)
+**Versione online:** [fabiopsh.github.io/machine-learning-video](https://fabiopsh.github.io/machine-learning-video/)
 
 ---
 
