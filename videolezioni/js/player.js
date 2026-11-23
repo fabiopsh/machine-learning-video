@@ -7,9 +7,53 @@ import { mountThemeSwitcher, saveSceneProgress, loadProgress } from "./theme.js"
 import { LiveSyncEngine } from "./live-sync.js";
 
 const params = new URLSearchParams(window.location.search);
-const LESSON_ID = params.get("id") || "10-perceptron";
-const INITIAL_SCENE = Math.max(0, parseInt(params.get("scene") || "0", 10) || 0);
-const LESSON_BASE = `lessons/${LESSON_ID}`;
+const rootEl = document.documentElement;
+const ASSET_ROOT = (rootEl.dataset.root || ".").replace(/\/+$/, "");
+const IS_CLEAN_PAGE = Boolean(rootEl.dataset.lessonId);
+const LESSON_ID = rootEl.dataset.lessonId || params.get("id") || "10-perceptron";
+const CATALOG_HREF = IS_CLEAN_PAGE ? `${ASSET_ROOT}/` : "index.html";
+
+function parseInitialScene() {
+  const scenaParam = params.get("scena");
+  if (scenaParam !== null) {
+    const n = parseInt(scenaParam, 10);
+    if (Number.isFinite(n) && n >= 1) return n - 1;
+  }
+  const hashMatch = /^#scena-(\d+)$/i.exec(window.location.hash || "");
+  if (hashMatch) {
+    const n = parseInt(hashMatch[1], 10);
+    if (Number.isFinite(n) && n >= 1) return n - 1;
+  }
+  const sceneParam = params.get("scene");
+  if (sceneParam !== null) {
+    const n = parseInt(sceneParam, 10);
+    if (Number.isFinite(n) && n >= 0) return n;
+  }
+  return 0;
+}
+
+const INITIAL_SCENE = parseInitialScene();
+const LESSON_BASE = `${ASSET_ROOT}/lessons/${LESSON_ID}`;
+
+function syncSceneUrl(sceneIdx) {
+  try {
+    const url = new URL(window.location.href);
+    url.hash = "";
+    url.searchParams.delete("scene");
+    url.searchParams.delete("scena");
+    if (!IS_CLEAN_PAGE) {
+      url.searchParams.set("id", LESSON_ID);
+    } else {
+      url.searchParams.delete("id");
+    }
+    if (sceneIdx > 0) {
+      url.searchParams.set("scena", String(sceneIdx + 1));
+    }
+    window.history.replaceState(null, "", url.pathname + url.search);
+  } catch {
+    // Ignore history API restrictions in non-standard contexts
+  }
+}
 
 const ICON_PLAY = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l11.02-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14z"/></svg>`;
 const ICON_PAUSE = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>`;
@@ -45,6 +89,7 @@ const dom = {
   toggleAutoAdvance: document.getElementById("toggle-auto-advance"),
   toggleClean: document.getElementById("toggle-clean"),
   toggleTheater: document.getElementById("toggle-theater"),
+  btnShare: document.getElementById("btn-share"),
   themeSwitcher: document.getElementById("player-theme-switcher"),
   audioNotice: document.getElementById("audio-notice")
 };
@@ -632,6 +677,7 @@ async function loadScene(index, autoplay = false) {
   liveSync.prepareScene(scene, state.subtitles);
   fitSlideScale();
   saveSceneProgress(LESSON_ID, state.sceneIndex, false);
+  syncSceneUrl(state.sceneIndex);
   updateFrame(0);
 
   const audioUrl = `${LESSON_BASE}/${scene.audio_file}`;
@@ -804,6 +850,47 @@ function setupControls() {
     dom.btnExitClean.addEventListener("click", () => setCleanMode(false));
   }
 
+  if (dom.btnShare) {
+    let shareResetTimer = null;
+    const flashCopied = (label) => {
+      dom.btnShare.textContent = label;
+      dom.btnShare.classList.add("active");
+      if (shareResetTimer) clearTimeout(shareResetTimer);
+      shareResetTimer = setTimeout(() => {
+        dom.btnShare.textContent = "Condividi";
+        dom.btnShare.classList.remove("active");
+      }, 1800);
+    };
+    dom.btnShare.addEventListener("click", async () => {
+      syncSceneUrl(state.sceneIndex);
+      const shareUrl = window.location.href;
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(shareUrl);
+          flashCopied("Link copiato!");
+          return;
+        }
+      } catch {
+        // Fallback below
+      }
+      const ta = document.createElement("textarea");
+      ta.value = shareUrl;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        flashCopied("Link copiato!");
+      } catch {
+        flashCopied("Copia dalla barra");
+      } finally {
+        ta.remove();
+      }
+    });
+  }
+
   // Reveal floating controls on pointer movement in Clean Mode
   document.addEventListener("pointermove", revealCleanUiTemporarily, { passive: true });
   for (const el of [dom.controlBar, dom.cleanExitBar]) {
@@ -886,7 +973,7 @@ async function initPlayer() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.lesson = await res.json();
   } catch (err) {
-    dom.stage.innerHTML = `<div class="box box-warn"><div class="box-label">Lezione non disponibile</div><p>Impossibile caricare <code>${LESSON_BASE}/lesson.json</code>. Torna al <a href="index.html" style="text-decoration:underline">catalogo</a> o avvia il server locale.</p></div>`;
+    dom.stage.innerHTML = `<div class="box box-warn"><div class="box-label">Lezione non disponibile</div><p>Impossibile caricare <code>${LESSON_BASE}/lesson.json</code>. Torna al <a href="${CATALOG_HREF}" style="text-decoration:underline">catalogo</a> o avvia il server locale.</p></div>`;
     return;
   }
 

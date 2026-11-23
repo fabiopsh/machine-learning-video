@@ -114,12 +114,14 @@ class RangeHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 def main():
     parser = argparse.ArgumentParser(description="Avvia il server locale per videolezioni/.")
     parser.add_argument("--port", type=int, default=8080, help="Porta HTTP (default: 8080)")
+    parser.add_argument("--dir", default=str(ROOT), help="Cartella radice da servire (default: videolezioni/)")
     args = parser.parse_args()
 
-    handler = functools.partial(RangeHTTPRequestHandler, directory=str(ROOT))
+    serve_dir = str(Path(args.dir).resolve())
+    handler = functools.partial(RangeHTTPRequestHandler, directory=serve_dir)
     http.server.ThreadingHTTPServer.allow_reuse_address = True
     with http.server.ThreadingHTTPServer(("127.0.0.1", args.port), handler) as httpd:
-        print(f"Videolezioni attive su http://127.0.0.1:{args.port}/ (Range 206 enabled)", flush=True)
+        print(f"Videolezioni attive su http://127.0.0.1:{args.port}/ ({serve_dir}, Range 206 enabled)", flush=True)
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:

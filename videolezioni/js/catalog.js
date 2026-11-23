@@ -4,6 +4,15 @@
 import { mountThemeSwitcher, loadProgress, chapterMiniSvg } from "./theme.js";
 
 const VIEW_KEY = "ml_videolezioni_catalog_view_v1";
+const USE_CLEAN_URLS = document.documentElement.dataset.cleanUrls === "true";
+
+function lessonUrl(id, sceneIdx = 0) {
+  const safeId = encodeURIComponent(id);
+  if (USE_CLEAN_URLS) {
+    return sceneIdx > 0 ? `${safeId}/?scena=${sceneIdx + 1}` : `${safeId}/`;
+  }
+  return sceneIdx > 0 ? `lesson.html?id=${safeId}&scena=${sceneIdx + 1}` : `lesson.html?id=${safeId}`;
+}
 
 const ICON_CHEVRON = `<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>`;
 const ICON_CHECK = `<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>`;
@@ -78,7 +87,7 @@ async function initCatalog() {
     const sceneIdx = isResuming ? (progress.lastSceneIdx || 0) : 0;
     const chapNum = String(featured.chapter).padStart(2, "0");
     const dur = featured.duration_min || featured.estimated_minutes || 10;
-    resumeCard.href = `lesson.html?id=${encodeURIComponent(featured.id)}${sceneIdx > 0 ? `&scene=${sceneIdx}` : ""}`;
+    resumeCard.href = lessonUrl(featured.id, sceneIdx);
     resumeKicker.textContent = isResuming ? `Riprendi · Cap. ${chapNum}` : `Consigliato · Cap. ${chapNum}`;
     resumeTitle.textContent = featured.title;
     resumeMeta.textContent = isResuming
@@ -153,7 +162,7 @@ async function initCatalog() {
 
         const node = document.createElement(isReady ? "a" : "div");
         node.className = `map-node ${isReady ? "ready" : "planned"}`;
-        if (isReady) node.href = `lesson.html?id=${encodeURIComponent(lesson.id)}`;
+        if (isReady) node.href = lessonUrl(lesson.id);
 
         node.innerHTML = `
           <div>
@@ -220,7 +229,7 @@ async function initCatalog() {
 
         const card = document.createElement(isReady ? "a" : "div");
         card.className = `bento-card ${isReady ? "ready" : "planned"}`;
-        if (isReady) card.href = `lesson.html?id=${encodeURIComponent(lesson.id)}`;
+        if (isReady) card.href = lessonUrl(lesson.id);
 
         card.innerHTML = `
           <div>
