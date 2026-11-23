@@ -101,6 +101,7 @@ const liveSync = new LiveSyncEngine(dom.stage, (sec) => {
   setCurrentTime(sec);
   if (!state.isPlaying) play();
 });
+dom.stage.__liveSync = liveSync;
 
 const state = {
   lesson: null,

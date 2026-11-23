@@ -299,34 +299,44 @@ body, .slide-frame, .topbar, .scene-sidebar, .control-bar, .subtitle-dock, .box,
   color: #F1F5F9;
 }
 
-/* Refined smooth fade-in / fade-out highlights (no harsh hard-edged yellow boxes!) */
-.katex-atom,
+/* Crisp single-atom formula glow (zero kerning shift, fast 110ms snap so consecutive atoms never ghost!) */
+.katex-atom {
+  border-radius: 4px;
+  transition: color 110ms ease-out, text-shadow 110ms ease-out, background-color 110ms ease-out, box-shadow 110ms ease-out;
+}
+
 .katex [id^="f-"] {
   display: inline-block;
-  border-radius: 5px;
-  padding: 0 2px;
-  transition: color 300ms ease, text-shadow 340ms ease, background-color 320ms ease, box-shadow 320ms ease, transform 280ms var(--ease-out);
+  border-radius: 6px;
+  padding: 0 3px;
+  transition: background-color 220ms ease, box-shadow 220ms ease;
 }
 
-.katex .cue-highlight,
+/* Formula-wrapper cues stay subtle so individual .math-live-glow atoms stand out crisply inside them */
+.katex [id^="f-"].cue-highlight {
+  background-color: rgba(37, 99, 235, 0.08) !important;
+  box-shadow: 0 0 0 1.5px rgba(37, 99, 235, 0.34) !important;
+}
+
+:root[data-theme="obsidian"] .katex [id^="f-"].cue-highlight {
+  background-color: rgba(56, 189, 248, 0.10) !important;
+  box-shadow: 0 0 0 1.5px rgba(56, 189, 248, 0.42) !important;
+}
+
 .katex .math-live-glow {
-  background-color: rgba(251, 191, 36, 0.16) !important;
-  box-shadow: 0 2px 0 rgba(251, 191, 36, 0.85) !important;
+  background-color: rgba(251, 191, 36, 0.24) !important;
+  box-shadow: 0 2px 0 rgba(217, 119, 6, 0.92) !important;
   color: #B45309 !important;
-  transform: translateY(-0.5px);
 }
 
-:root[data-theme="obsidian"] .katex .cue-highlight,
 :root[data-theme="obsidian"] .katex .math-live-glow {
-  background-color: rgba(251, 191, 36, 0.18) !important;
-  box-shadow: 0 2px 0 #FBBF24, 0 0 18px rgba(251, 191, 36, 0.28) !important;
+  background-color: rgba(251, 191, 36, 0.22) !important;
+  box-shadow: 0 2px 0 #FBBF24, 0 0 16px rgba(251, 191, 36, 0.32) !important;
   color: #FDE68A !important;
-  text-shadow: 0 0 12px rgba(251, 191, 36, 0.45);
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.48);
 }
 
-.katex .msupsub .cue-highlight,
 .katex .msupsub .math-live-glow {
-  padding: 0 2px;
   box-shadow: 0 1.5px 0 #FBBF24 !important;
 }
 
@@ -854,8 +864,20 @@ body.theater-mode .slide-card {
   gap: clamp(10px, 1.5vh, 16px);
 }
 
+.diagram-svg {
+  max-height: 360px;
+}
+
+.formula-col .diagram-svg {
+  max-height: 230px;
+}
+
 body.theater-mode .diagram-svg {
-  max-height: min(44vh, 380px);
+  max-height: 360px;
+}
+
+body.theater-mode .formula-col .diagram-svg {
+  max-height: 230px;
 }
 
 body.theater-mode .subtitle-dock {

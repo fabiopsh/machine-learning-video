@@ -1194,6 +1194,23 @@ body.player-body {
   border-bottom: 1.5px solid var(--ink);
 }
 
+.acad-table-compact th {
+  padding: 5px 6px;
+  white-space: nowrap;
+}
+
+.acad-table-compact td {
+  padding: 4px 6px;
+  line-height: 1.28;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.acad-table-compact th:not(:first-child),
+.acad-table-compact td:not(:first-child) {
+  text-align: right;
+}
+
 .row-key {
   background: rgba(31, 90, 158, 0.04);
 }

@@ -1,10 +1,14 @@
-// Real-Time Voice-to-Slide Live Sync v3
-// Upgrades over v2:
-//  1. Sequential MONOTONIC left-to-right formula-atom alignment (NEVER flashes all 6 copies of a symbol at once!)
-//  2. Strict SINGLE-BLOCK focus (NEVER flashes formulas inside inactive/other blocks!)
-//  3. Full KaTeX DOM support (x_p^2 -> "x2p", \frac{\partial E}{\partial w_0}, \bar{d}, \bar{x}, \Cov, \Var, 1/l, etc.)
-//  4. Exact tight MMS_FA phrase spans per math event instead of noisy 1s multi-symbol soup
-//  5. Word-by-word sequential clause highlighting + Spotlight + Click-to-Seek + reliable SVG draw
+// Real-Time Voice-to-Slide Live Sync v4
+// Upgrades over v3:
+//  1. Universal KaTeX Atomizer: indexes ALL variables, subscripts/superscripts, primes, bars, norms,
+//     operators, Greek symbols, powers, inline derivatives, integers & Italian decimals (grouped multi-span atoms).
+//  2. Full Italian Math-Speech + Number Parser: handles multi-word Italian numbers/decimals/powers/symbols
+//     while guarding against Italian prose stopwords (e, i, a, bare small integers).
+//  3. Viterbi Monotonic Sequence Aligner per block + cross-block visible fallback + table-row highlight awareness
+//     (fixes nested block mismatch and side-SVG cueEnd truncation!).
+//  4. Strict SINGLE-ATOM invariant: globally non-overlapping windows + single winning atom at every instant t
+//     (zero simultaneous multi-atom flashing!).
+//  5. Word-by-word sequential clause highlighting + Spotlight + Click-to-Seek + reliable SVG draw.
 
 const STOPWORDS = new Set([
   "di","a","da","in","con","su","per","tra","fra","il","lo","la","i","gli","le",
@@ -17,52 +21,6 @@ const STOPWORDS = new Set([
   "poi","ora","qui","cosi","quindi","cioe","perche","pero","es","cio","molto",
   "dati","dato","modello","modelli","funzione","funzioni","esempio","esempi","caso"
 ]);
-
-// Ordered longest/most-specific first so multi-word math phrases match as single crisp events!
-const SPOKEN_MATH_GRAMMAR = [
-  { key: "dE_dw0",     rx: /^derivata(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a\s+w\s*(?:con\s+)?zero$/ },
-  { key: "dE_dw1",     rx: /^derivata(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a\s+w\s*(?:con\s+)?uno$/ },
-  { key: "dE_dwj",     rx: /^derivata(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a(?:l\s+singolo\s+peso)?\s+w\s*(?:con\s+)?(?:j|i|k)$/ },
-  { key: "x_p_sq",     rx: /^x\s*(?:con\s+)?p\s+(?:al\s+quadrato|quadro)$/ },
-  { key: "w_0",        rx: /^w\s*(?:con\s+)?zero$/ },
-  { key: "w_1",        rx: /^w\s*(?:con\s+)?uno$/ },
-  { key: "w_2",        rx: /^w\s*(?:con\s+)?due$/ },
-  { key: "w_j",        rx: /^w\s*(?:con\s+)?(?:j|i|k|m|stella|nuovo)$/ },
-  { key: "x_p",        rx: /^x\s*(?:con\s+)?p$/ },
-  { key: "x_1",        rx: /^x\s*(?:con\s+)?uno$/ },
-  { key: "x_2",        rx: /^x\s*(?:con\s+)?due$/ },
-  { key: "x_i",        rx: /^x\s*(?:con\s+)?(?:i|j|k|t|zero)$/ },
-  { key: "d_p",        rx: /^d\s*(?:con\s+)?(?:p|i)$/ },
-  { key: "h_bar",      rx: /^h\s+soprassegnat[oa]$/ },
-  { key: "d_bar",      rx: /^d\s+soprassegnat[oa]$/ },
-  { key: "x_bar",      rx: /^x\s+soprassegnat[oa]$/ },
-  { key: "one_over_l", rx: /^uno\s+su\s+l$/ },
-  { key: "X_T",        rx: /^x\s+trasposto$/ },
-  { key: "X_plus",     rx: /^(?:x\s+piu|pseudoinversa)$/ },
-  { key: "R_emp",      rx: /^(?:r\s+emp|rischio\s+empirico)$/ },
-  { key: "E_RMS",      rx: /^(?:e\s+rms|root\s+mean\s+square)$/ },
-  { key: "E_w",        rx: /^e\s+di\s+w$/ },
-  { key: "h_w",        rx: /^h\s+(?:con\s+w\s+)?di\s+x$/ },
-  { key: "sum",        rx: /^(?:somma(?:\s+su\s+p|\s+di)?|sommatoria)$/ },
-  { key: "int",        rx: /^integrale$/ },
-  { key: "sqrt",       rx: /^radice(?:\s+quadrata)?$/ },
-  { key: "Cov",        rx: /^covarianza$/ },
-  { key: "Var",        rx: /^varianza$/ },
-  { key: "Bias",       rx: /^bias(?:\s+al\s+quadrato)?$/ },
-  { key: "VC",         rx: /^(?:vc|vc\s+dimension)$/ },
-  { key: "nabla",      rx: /^gradiente$/ },
-  { key: "norm",       rx: /^norma(?:\s+quadra|\s+al\s+quadrato)?$/ },
-  { key: "lambda",     rx: /^lambda$/ },
-  { key: "eta",        rx: /^(?:eta|learning\s+rate)$/ },
-  { key: "delta",      rx: /^delta(?:\s+con\s+p)?$/ },
-  { key: "sigma",      rx: /^sigma(?:\s+quadro)?$/ },
-  { key: "theta",      rx: /^theta$/ },
-  { key: "eps",        rx: /^epsilon$/ },
-  { key: "pi",         rx: /^pi\s+greco$/ },
-  { key: "phi",        rx: /^phi$/ },
-  { key: "sign",       rx: /^(?:segno|sign)$/ },
-  { key: "w_vec",      rx: /^(?:vettore\s+(?:dei\s+pesi\s+)?w|pesi\s+w)$/ }
-];
 
 function stripAccents(s) {
   return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -92,33 +50,461 @@ function extractTokens(text) {
   return out;
 }
 
-// Parse exact timestamped spoken math events from the MMS_FA word timeline (longest match greedy)
+// ---------- Italian Number Word Parser ----------
+
+const IT_UNITS = {
+  zero: 0, uno: 1, un: 1, due: 2, tre: 3, quattro: 4,
+  cinque: 5, sei: 6, sette: 7, otto: 8, nove: 9
+};
+const IT_TEENS = {
+  dieci: 10, undici: 11, dodici: 12, tredici: 13, quattordici: 14,
+  quindici: 15, sedici: 16, diciassette: 17, diciotto: 18, diciannove: 19
+};
+const IT_TENS = [
+  ["venti", 20], ["vent", 20],
+  ["trenta", 30], ["trent", 30],
+  ["quaranta", 40], ["quarant", 40],
+  ["cinquanta", 50], ["cinquant", 50],
+  ["sessanta", 60], ["sessant", 60],
+  ["settanta", 70], ["settant", 70],
+  ["ottanta", 80], ["ottant", 80],
+  ["novanta", 90], ["novant", 90]
+];
+const IT_UNIT_LIST = [
+  ["quattro", 4], ["cinque", 5], ["sette", 7], ["nove", 9],
+  ["otto", 8], ["zero", 0], ["uno", 1], ["due", 2], ["tre", 3], ["sei", 6]
+];
+const IT_TEEN_LIST = Object.entries(IT_TEENS).sort((a, b) => b[0].length - a[0].length);
+
+// Parse a single Italian integer word (e.g. "cinquantacinque" -> 55, "centodieci" -> 110, "sessantacinquemila" -> 65000)
+function parseSingleItalianInt(w) {
+  if (!w) return null;
+  if (/^\d+$/.test(w)) return parseInt(w, 10);
+  if (w in IT_UNITS) return IT_UNITS[w];
+  if (w in IT_TEENS) return IT_TEENS[w];
+  if (w === "cento") return 100;
+  if (w === "mille") return 1000;
+
+  let rem = w;
+  let total = 0;
+
+  // Handle ...mila (e.g. "sessantacinquemila", "duecentotrentatremila")
+  const milaIdx = rem.indexOf("mila");
+  if (milaIdx > 0) {
+    const mult = parseSubThousand(rem.slice(0, milaIdx));
+    if (mult === null) return null;
+    total += mult * 1000;
+    rem = rem.slice(milaIdx + 4);
+    if (!rem) return total;
+  } else if (rem.startsWith("mille")) {
+    total += 1000;
+    rem = rem.slice(5);
+    if (!rem) return total;
+  }
+
+  const sub = parseSubThousand(rem);
+  if (sub === null) return null;
+  return total + sub;
+}
+
+function parseSubThousand(s) {
+  if (!s) return 0;
+  if (s in IT_UNITS) return IT_UNITS[s];
+  if (s in IT_TEENS) return IT_TEENS[s];
+  if (s === "cento") return 100;
+
+  let rem = s;
+  let val = 0;
+
+  const cIdx = rem.indexOf("cento");
+  const cIdxShort = cIdx === -1 ? rem.indexOf("cent") : -1;
+  if (cIdx !== -1 || (cIdxShort !== -1 && /^ott/.test(rem.slice(cIdxShort + 4)))) {
+    const idx = cIdx !== -1 ? cIdx : cIdxShort;
+    const step = cIdx !== -1 ? 5 : 4;
+    const prefix = rem.slice(0, idx);
+    let hundreds = 1;
+    if (prefix) {
+      if (prefix in IT_UNITS && IT_UNITS[prefix] >= 2) hundreds = IT_UNITS[prefix];
+      else return null;
+    }
+    val += hundreds * 100;
+    rem = rem.slice(idx + step);
+    if (!rem) return val;
+  }
+
+  for (const [k, v] of IT_TEEN_LIST) {
+    if (rem === k) return val + v;
+  }
+  for (const [k, v] of IT_TENS) {
+    if (rem.startsWith(k)) {
+      val += v;
+      rem = rem.slice(k.length);
+      if (!rem) return val;
+      for (const [uk, uv] of IT_UNIT_LIST) {
+        if (rem === uk) return val + uv;
+      }
+      return null;
+    }
+  }
+  for (const [uk, uv] of IT_UNIT_LIST) {
+    if (rem === uk) return val + uv;
+  }
+  return null;
+}
+
+function canonicalNumKey(numStr) {
+  const n = Number(numStr);
+  if (!Number.isFinite(n)) return null;
+  // Normalize -0 -> 0 and strip trailing decimal zeros (0.80 -> 0.8)
+  const clean = Object.is(n, -0) ? "0" : String(n);
+  return `num:${clean}`;
+}
+
+const MATH_CONTEXT_CUES = new Set([
+  "uguale", "vale", "valgono", "pari", "diviso", "per", "piu", "meno", "alla", "elevato",
+  "su", "virgola", "punto", "da", "maggiore", "minore", "va", "risponde", "vota",
+  "input", "target", "grado", "soglia", "fattore", "classe", "classi", "valore", "valori",
+  "mezzi", "circa", "sotto", "totale", "errore", "accuratezza", "peso", "pesi",
+  "zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove", "dieci",
+  "x", "w", "d", "h", "f", "l", "n", "m", "k", "p", "e", "r", "eta", "lambda", "delta", "sigma"
+]);
+
+const PROSE_NUMBER_PREFIXES = new Set([
+  "capitolo", "capitoli", "passo", "passi", "scenario", "scenari", "punti",
+  "esempio", "esempi", "ingrediente", "ingredienti", "requisito", "requisiti",
+  "paradigma", "paradigmi", "fase", "fasi", "ragione", "ragioni", "limite", "limiti",
+  "proprieta", "tabella", "figura", "schema", "forma", "forme", "famiglia", "famiglie",
+  "domanda", "domande", "scelta", "scelte", "coppia", "coppie", "variabile", "variabili",
+  "dimensione", "dimensioni", "modalita", "regola", "regole", "loss", "caso", "casi",
+  "punto", "campione", "campioni", "istanza", "istanze", "classe", "classi"
+]);
+
+function hasMathContext(cleaned, i, len) {
+  if (i > 0 && PROSE_NUMBER_PREFIXES.has(cleaned[i - 1])) return false;
+  if (i + len < cleaned.length && PROSE_NUMBER_PREFIXES.has(cleaned[i + len])) return false;
+  for (let j = Math.max(0, i - 2); j < Math.min(cleaned.length, i + len + 2); j++) {
+    if (j >= i && j < i + len) continue;
+    if (MATH_CONTEXT_CUES.has(cleaned[j])) return true;
+  }
+  return false;
+}
+
+// Try to parse an Italian integer/decimal (optionally signed) starting at word index i
+function tryParseSpokenNumber(words, cleaned, i) {
+  let sign = 1;
+  let hasExplicitSign = false;
+  let pos = i;
+
+  if (cleaned[pos] === "meno" && pos + 1 < cleaned.length) {
+    const nextInt = parseSingleItalianInt(cleaned[pos + 1]);
+    if (nextInt !== null) {
+      sign = -1;
+      hasExplicitSign = true;
+      pos += 1;
+    }
+  } else if (cleaned[pos] === "piu" && pos + 1 < cleaned.length) {
+    const nextInt = parseSingleItalianInt(cleaned[pos + 1]);
+    if (nextInt !== null && (hasMathContext(cleaned, pos, 2) || cleaned[pos + 2] === "virgola" || cleaned[pos + 2] === "punto")) {
+      sign = 1;
+      hasExplicitSign = true;
+      pos += 1;
+    }
+  }
+
+  // Never consume standalone "un" as integer 1 unless part of "un mezzo" (handled in grammar)
+  if (cleaned[pos] === "un") return null;
+
+  let intVal = parseSingleItalianInt(cleaned[pos]);
+  if (intVal === null) return null;
+  pos += 1;
+
+  // Merge thousands word + sub-thousand word (e.g. "sessantacinquemila cinquecentotrentasei" -> 65536)
+  if (intVal >= 1000 && intVal % 1000 === 0 && pos < cleaned.length) {
+    const nextPart = parseSingleItalianInt(cleaned[pos]);
+    if (nextPart !== null && nextPart > 0 && nextPart < 1000) {
+      intVal += nextPart;
+      pos += 1;
+    }
+  }
+
+  let isDecimal = false;
+  let fracStr = "";
+
+  // Check decimal separator: "punto" (always decimal) or "virgola" (decimal if NOT followed by "<num> punto")
+  if (pos + 1 < cleaned.length && (cleaned[pos] === "punto" || cleaned[pos] === "virgola")) {
+    const sep = cleaned[pos];
+    const nextW = cleaned[pos + 1];
+    const nextIsPuntoAfter = sep === "virgola" && pos + 2 < cleaned.length && cleaned[pos + 2] === "punto";
+    if (!nextIsPuntoAfter && nextW !== "un") {
+      if (nextW === "zero" && pos + 2 < cleaned.length) {
+        const d2 = parseSingleItalianInt(cleaned[pos + 2]);
+        if (d2 !== null && d2 >= 0 && d2 < 10) {
+          isDecimal = true;
+          fracStr = `0${d2}`;
+          pos += 3;
+        } else if (sep === "punto") {
+          isDecimal = true;
+          fracStr = "0";
+          pos += 2;
+        }
+      } else {
+        const fracVal = parseSingleItalianInt(nextW);
+        if (fracVal !== null && fracVal >= 0 && fracVal < 1000) {
+          isDecimal = true;
+          fracStr = String(fracVal);
+          pos += 2;
+        }
+      }
+    }
+  }
+
+  const len = pos - i;
+  // Guard bare small integers (1..10) in prose (e.g. "due requisiti", "cinque ingredienti")
+  if (!isDecimal && !hasExplicitSign && intVal >= 1 && intVal <= 10) {
+    if (!hasMathContext(cleaned, i, len)) return null;
+  }
+
+  const numStr = isDecimal
+    ? `${sign < 0 ? "-" : ""}${intVal}.${fracStr}`
+    : `${sign < 0 ? "-" : ""}${intVal}`;
+  const primary = canonicalNumKey(numStr);
+  if (!primary) return null;
+
+  const keys = [primary];
+  if (sign < 0) {
+    const absKey = canonicalNumKey(numStr.replace(/^-/, ""));
+    if (absKey && absKey !== primary) keys.push(absKey);
+  }
+  return {
+    keys,
+    start: words[i].start,
+    end: words[pos - 1].end,
+    len,
+    specificity: (isDecimal || intVal >= 11 || hasExplicitSign) ? 10 : 7
+  };
+}
+
+// ---------- Spoken Math Grammar (longest match first) ----------
+// Note: rules match on accent-stripped lowercase `slice`; optional `rawTest(rawSlice)` checks case sensitivity.
+const SPOKEN_MATH_GRAMMAR = [
+  // 1. Derivatives & atomic fractions
+  { keys: ["dE_dw0"], rx: /^(?:derivata|derivando)(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a\s+w\s*(?:con\s+)?zero$/, spec: 11 },
+  { keys: ["dE_dw1"], rx: /^(?:derivata|derivando)(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a\s+w\s*(?:con\s+)?uno$/, spec: 11 },
+  { keys: ["dE_dwj"], rx: /^(?:derivata|derivando)(?:\s+parziale)?(?:\s+di\s+e)?\s+rispetto\s+a(?:l\s+singolo\s+peso)?\s+w\s*(?:con\s+)?(?:j|i|k)$/, spec: 11 },
+  { keys: ["frac:1/l"], rx: /^uno\s+su\s+l$/, spec: 11 },
+  { keys: ["frac:1/2"], rx: /^(?:un\s+mezzo|uno\s+su\s+due)$/, spec: 10 },
+
+  // 2. Powers & norms & dimensions
+  { keys: ["pow:2^2^n"], rx: /^due\s+(?:elevato\s+a|alla)\s+due\s+alla\s+n$/, spec: 11 },
+  { keys: ["pow:2^4"], rx: /^due\s+alla\s+quarta$/, spec: 11 },
+  { keys: ["pow:2^16"], rx: /^due\s+alla\s+sedicesima$/, spec: 11 },
+  { keys: ["pow:2^9"], rx: /^due\s+alla\s+nona$/, spec: 11 },
+  { keys: ["pow:3^n"], rx: /^tre\s+alla\s+n$/, spec: 11 },
+  { keys: ["pow:x^j"], rx: /^x\s+alla\s+j$/, spec: 11 },
+  { keys: ["pow:x^M"], rx: /^x\s+alla\s+m$/, spec: 11 },
+  { keys: ["var:x_p_sq", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:w_j_sq", "var:w_j"], rx: /^w\s*(?:con\s+)?j\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:w_sq", "var:w"], rx: /^w\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["pow:x^2", "var:x"], rx: /^x\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["norm:L1"], rx: /^(?:norma\s+)?l\s+uno$/, spec: 11 },
+  { keys: ["norm:L2"], rx: /^(?:norma\s+)?l\s+due$/, spec: 11 },
+  { keys: ["set:R^n", "set:R"], rx: /^r\s+alla\s+n$/, spec: 11 },
+  { keys: ["set:R^K", "set:R"], rx: /^r\s+alla\s+k$/, spec: 11 },
+  { keys: ["dim:lxn"], rx: /^l\s+per\s+n$/, spec: 10 },
+  { keys: ["sqrt:2", "op:sqrt"], rx: /^radice(?:\s+quadrata)?\s+di\s+due$/, spec: 11 },
+
+  // 3. Compound Delta / Negation / Subscripts / Superscripts / Primes / Bars
+  { keys: ["var:Delta_p_wj", "var:Delta_wj"], rx: /^delta\s*(?:con\s+)?p\s+w\s*(?:con\s+)?j$/, spec: 11 },
+  { keys: ["var:Delta_wj", "var:w_j"], rx: /^delta\s+w\s*(?:con\s+)?(?:j|i|k)$/, spec: 11 },
+  { keys: ["var:Delta_w", "var:w"], rx: /^delta\s+w$/, spec: 10 },
+  { keys: ["var:neg_xi", "var:x_i"], rx: /^non\s+x\s*(?:con\s+)?i$/, spec: 11 },
+  { keys: ["var:neg_x1", "var:x_1"], rx: /^non\s+x\s*(?:con\s+)?uno$/, spec: 11 },
+  { keys: ["var:x_pi", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+virgola\s+i$/, spec: 11 },
+  { keys: ["var:x_pj", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+virgola\s+j$/, spec: 11 },
+  { keys: ["var:x_p_T", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+trasposto$/, spec: 11 },
+  { keys: ["var:x_p"], rx: /^x\s*(?:con\s+)?p$/, spec: 10 },
+  { keys: ["var:x_0"], rx: /^x\s*(?:con\s+)?zero$/, spec: 10 },
+  { keys: ["var:x_1"], rx: /^x\s*(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:x_2"], rx: /^x\s*(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:x_3"], rx: /^x\s*(?:con\s+)?tre$/, spec: 10 },
+  { keys: ["var:x_4"], rx: /^x\s*(?:con\s+)?quattro$/, spec: 10 },
+  { keys: ["var:x_a"], rx: /^x\s*(?:con\s+)?a$/, spec: 10 },
+  { keys: ["var:x_b"], rx: /^x\s*(?:con\s+)?b$/, spec: 10 },
+  { keys: ["var:x_i"], rx: /^x\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:x_j"], rx: /^x\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:x_k"], rx: /^x\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:X_T", "var:x_T"], rx: /^x\s+trasposto$/, rawTest: (r) => /^X\b/.test(r), spec: 10 },
+  { keys: ["var:x_T", "var:X_T"], rx: /^x\s+trasposto$/, spec: 10 },
+  { keys: ["var:X_plus"], rx: /^(?:x\s+piu|pseudoinversa)$/, spec: 10 },
+  { keys: ["var:Sigma_plus"], rx: /^sigma\s+piu$/, spec: 10 },
+  { keys: ["var:V_T", "var:v_T"], rx: /^v\s+trasposto$/, rawTest: (r) => /^V\b/.test(r), spec: 10 },
+  { keys: ["var:v_T", "var:V_T"], rx: /^v\s+trasposto$/, spec: 10 },
+  { keys: ["var:U_T"], rx: /^u\s+trasposto$/, spec: 10 },
+  { keys: ["var:w_T"], rx: /^w\s+trasposto$/, spec: 10 },
+  { keys: ["var:w_0"], rx: /^w\s*(?:con\s+)?zero$/, spec: 10 },
+  { keys: ["var:w_1"], rx: /^w\s*(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:w_2"], rx: /^w\s*(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:w_3"], rx: /^w\s*(?:con\s+)?tre$/, spec: 10 },
+  { keys: ["var:w_i"], rx: /^w\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:w_j"], rx: /^w\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:w_k"], rx: /^w\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:w_star"], rx: /^w\s+stella$/, spec: 10 },
+  { keys: ["var:w_new"], rx: /^w\s+nuovo$/, spec: 10 },
+  { keys: ["var:d_p"], rx: /^d\s*(?:con\s+)?p$/, spec: 10 },
+  { keys: ["var:d_i"], rx: /^d\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:h_prime"], rx: /^h\s+primo$/, spec: 10 },
+  { keys: ["var:E_prime"], rx: /^e\s+primo$/, spec: 10 },
+  { keys: ["var:R_prime"], rx: /^r\s+primo$/, spec: 10 },
+  { keys: ["var:x_prime"], rx: /^x\s+primo$/, spec: 10 },
+  { keys: ["var:d_prime"], rx: /^d\s+primo$/, spec: 10 },
+  { keys: ["bar:h"], rx: /^h\s+soprassegnat[oa]$/, spec: 10 },
+  { keys: ["bar:d"], rx: /^d\s+soprassegnat[oa]$/, spec: 10 },
+  { keys: ["bar:x"], rx: /^x\s+soprassegnat[oa]$/, spec: 10 },
+  { keys: ["var:h_w"], rx: /^h\s+con\s+w$/, spec: 10 },
+  { keys: ["var:phi_k", "sym:phi"], rx: /^phi\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:phi_j", "sym:phi"], rx: /^phi\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:delta_p", "var:delta"], rx: /^delta\s*(?:con\s+)?p$/, spec: 10 },
+  { keys: ["var:E_RMS"], rx: /^(?:e\s+rms|root\s+mean\s+square)$/, spec: 10 },
+  { keys: ["var:R_emp"], rx: /^(?:r\s+emp|rischio\s+empirico)$/, spec: 10 },
+  { keys: ["var:VS"], rx: /^version\s+space$/, spec: 9 },
+  { keys: ["var:TR"], rx: /^training\s+set$/, spec: 8 },
+  { keys: ["var:P_X"], rx: /^insieme\s+delle\s+parti(?:\s+di\s+x)?$/, spec: 10 },
+
+  // 4. Operators & Relations & Greek
+  { keys: ["op:sum"], rx: /^(?:somma(?:\s+su\s+p|\s+da\s+[ijkp]\s+uguale\s+(?:zero|uno)\s+a\s+[lnmk]|\s+per\s+[ijkp]\s+da\s+(?:zero|uno)\s+a\s+[lnmk]|\s+di)?|sommatoria)$/, spec: 10 },
+  { keys: ["op:prod"], rx: /^prodotto(?:\s+delle\s+probabilita)?$/, spec: 9 },
+  { keys: ["op:int"], rx: /^integrale$/, spec: 10 },
+  { keys: ["op:sqrt"], rx: /^(?:radice(?:\s+quadrata)?|radici)$/, spec: 10 },
+  { keys: ["op:Cov"], rx: /^covarianza$/, spec: 10 },
+  { keys: ["op:Var"], rx: /^varianza$/, spec: 10 },
+  { keys: ["op:Bias"], rx: /^bias(?:\s+al\s+quadrato)?$/, spec: 9 },
+  { keys: ["op:sign"], rx: /^(?:segno|sign)$/, spec: 10 },
+  { keys: ["op:ln", "op:log"], rx: /^logaritmo\s+naturale$/, spec: 10 },
+  { keys: ["op:ln", "op:log"], rx: /^logaritm[oi]$/, spec: 9 },
+  { keys: ["op:sin"], rx: /^seno$/, spec: 10 },
+  { keys: ["op:cos"], rx: /^coseno$/, spec: 10 },
+  { keys: ["op:exp"], rx: /^esponenziale$/, spec: 10 },
+  { keys: ["op:inv"], rx: /^invers[oa]$/, spec: 10 },
+  { keys: ["op:nabla"], rx: /^(?:sub\s+)?gradiente$/, spec: 9 },
+  { keys: ["op:norm"], rx: /^norma(?:\s+quadra|\s+al\s+quadrato)?$/, spec: 10 },
+  { keys: ["op:abs"], rx: /^(?:modulo|valore\s+assoluto|valori\s+assoluti|cardinalita)$/, spec: 9 },
+  { keys: ["var:false"], rx: /^falso$/, spec: 9 },
+  { keys: ["sym:lambda"], rx: /^lambda$/, spec: 10 },
+  { keys: ["sym:eta"], rx: /^(?:eta|learning\s+rate)$/, spec: 10 },
+  { keys: ["var:delta"], rx: /^delta$/, spec: 9 },
+  { keys: ["sym:sigma_sq", "sym:sigma"], rx: /^sigma\s+quadro$/, spec: 10 },
+  { keys: ["sym:Sigma", "sym:sigma"], rx: /^sigma$/, rawTest: (r) => /^Sigma\b/.test(r), spec: 10 },
+  { keys: ["sym:sigma", "sym:Sigma"], rx: /^sigma$/, spec: 10 },
+  { keys: ["sym:theta"], rx: /^theta$/, spec: 10 },
+  { keys: ["sym:eps"], rx: /^epsilon$/, spec: 10 },
+  { keys: ["sym:pi"], rx: /^pi\s+greco$/, spec: 10 },
+  { keys: ["sym:phi"], rx: /^phi$/, spec: 10 },
+  { keys: ["sym:mu"], rx: /^mu$/, spec: 10 },
+  { keys: ["var:VC"], rx: /^(?:vc|vc\s+dimension)$/, spec: 10 },
+  { keys: ["rel:ge"], rx: /^maggiore\s+o\s+uguale$/, spec: 9 },
+  { keys: ["rel:le"], rx: /^minore\s+o\s+uguale$/, spec: 9 },
+  { keys: ["rel:gt"], rx: /^maggiore$/, spec: 8 },
+  { keys: ["rel:lt"], rx: /^minore$/, spec: 8 },
+  { keys: ["rel:neq"], rx: /^(?:diverso|non\s+nullo)$/, spec: 9 },
+  { keys: ["var:w"], rx: /^(?:vettore\s+(?:dei\s+pesi\s+)?w|pesi\s+w)$/, spec: 9 }
+];
+
+// Check if word i is sentence-initial (previous word ended with . ? ! : or i === 0)
+function isSentenceStart(words, i) {
+  if (i === 0) return true;
+  return /[.?!:]$/.test((words[i - 1].raw || "").trim());
+}
+
+// Parse exact timestamped spoken math events from MMS_FA words
 function extractSpokenMathEvents(words) {
-  const events = []; // { key, start, end }
+  const events = []; // { keys: string[], start, end, specificity }
   const cleaned = words.map((w) => cleanWord(w.raw));
+  const rawLetters = words.map((w) => (w.raw || "").replace(/[^A-Za-z0-9]+/g, ""));
+
   let i = 0;
   while (i < words.length) {
     let matched = null;
-    // Try longest phrase first (up to 7 words)
-    const maxLen = Math.min(7, words.length - i);
+
+    // 1. Try multi-word / compound grammar rules (longest first, up to 8 words)
+    const maxLen = Math.min(8, words.length - i);
     for (let len = maxLen; len >= 1; len--) {
       const slice = cleaned.slice(i, i + len).filter(Boolean).join(" ");
       if (!slice) continue;
+      const rawSlice = words.slice(i, i + len).map((w) => (w.raw || "").trim()).join(" ");
       for (const rule of SPOKEN_MATH_GRAMMAR) {
-        if (rule.rx.test(slice)) {
+        if (rule.rx.test(slice) && (!rule.rawTest || rule.rawTest(rawSlice))) {
           matched = {
-            key: rule.key,
+            keys: rule.keys,
             start: words[i].start,
             end: words[i + len - 1].end,
-            len
+            len,
+            specificity: rule.spec || 9
           };
           break;
         }
       }
       if (matched) break;
     }
+
+    // 2. Try Italian number / decimal parser (only if no grammar rule matched, e.g. avoids splitting "uno su l" or "due alla quarta")
+    if (!matched) {
+      const numMatch = tryParseSpokenNumber(words, cleaned, i);
+      if (numMatch) matched = numMatch;
+    }
+
+    // 3. Try single-letter mathematical variables (case-sensitive via rawLetters!)
+    if (!matched) {
+      const rl = rawLetters[i];
+      if (rl && rl.length === 1 && /[A-Za-z]/.test(rl)) {
+        const sentStart = isSentenceStart(words, i);
+        const nextC = cleaned[i + 1] || "";
+        const prevC = cleaned[i - 1] || "";
+        let key = null;
+
+        if ("HXLRMKUV".includes(rl)) {
+          key = `var:${rl}`;
+        } else if (rl === "E") {
+          if (!sentStart || nextC === "di" || nextC === "uguale" || prevC === "errore" || prevC === "derivata") {
+            key = "var:E";
+          }
+        } else if (rl === "I") {
+          if (!sentStart && (prevC === "lambda" || prevC === "identita" || nextC === "inverso")) {
+            key = "var:I";
+          }
+        } else if (rl === "A" || rl === "B" || rl === "C") {
+          if (!sentStart || nextC === "diventa" || nextC === "uguale") {
+            key = `var:${rl}`;
+          }
+        } else if ("xwdhflnpvjkmqt".includes(rl)) {
+          key = `var:${rl}`;
+        } else if (rl === "i") {
+          if (prevC === "da" || prevC === "per" || prevC === "componente" || prevC === "indice" || nextC === "uguale" || nextC === "da") {
+            key = "var:i";
+          }
+        }
+
+        if (key) {
+          const keys = [key];
+          if (rl === "h") keys.push("var:h_w"); // speaker often says "h di x" when formula writes h_w(x)
+          if (rl === "R") keys.push("set:R");
+          matched = {
+            keys,
+            start: words[i].start,
+            end: words[i].end,
+            len: 1,
+            specificity: 7
+          };
+        }
+      }
+    }
+
     if (matched) {
-      events.push({ key: matched.key, start: matched.start, end: matched.end });
+      events.push({
+        keys: matched.keys,
+        start: matched.start,
+        end: matched.end,
+        specificity: matched.specificity
+      });
       i += matched.len;
     } else {
       i += 1;
@@ -127,7 +513,8 @@ function extractSpokenMathEvents(words) {
   return events;
 }
 
-// Wrap a text-containing element into clause spans where each word is an individual <span class="vw">
+// ---------- Prose Clause Word-by-Word Wrapper ----------
+
 function wrapClausesWordByWord(el) {
   const clauses = [];
   if (!el || el.dataset.clausesWrapped) return clauses;
@@ -207,13 +594,59 @@ function wrapClausesWordByWord(el) {
   return clauses;
 }
 
-// Extract ordered KaTeX formula atoms per block (strictly in visual left-to-right DOM order!)
-function indexFormulaAtoms(slideCard) {
-  const atoms = []; // { el, keys: Set<string>, block, windows: [] }
-  const covered = new Set(); // prevent child sub-elements inside an already-tagged compound atom from double-tagging
+// ---------- Universal KaTeX Formula Atomizer ----------
+
+function katexText(el) {
+  return (el?.textContent || "").replace(/[\s\u200b-\u200d\ufeff]+/g, "");
+}
+
+function getMfracParts(mfracEl) {
+  // Inside KaTeX .mfrac > .vlist-t > .vlist-r > .vlist, children are stacked bottom-to-top:
+  // [denomSpan, fracLineSpan, numSpan]. Return { num, den } in true reading order!
+  const vlist =
+    mfracEl.querySelector(":scope > .vlist-t > .vlist-r > .vlist") ||
+    mfracEl.querySelector(":scope > .vlist-t > .vlist");
+  if (!vlist) return null;
+  const kids = Array.from(vlist.children).filter((c) => !c.querySelector(":scope > .frac-line"));
+  if (kids.length < 2) return null;
+  return { den: kids[0], num: kids[kids.length - 1] };
+}
+
+function isMsupsubSuperscriptOnly(mordEl) {
+  const msupsub = mordEl.querySelector(":scope > .msupsub");
+  if (!msupsub) return false;
+  // In KaTeX: .vlist-t2 means subscript (or sub+sup); plain .vlist-t without .vlist-t2 means superscript only!
+  return !msupsub.querySelector(".vlist-t2");
+}
+
+function isSimpleDigitsSpan(el) {
+  if (!el || !el.classList || !el.classList.contains("mord")) return false;
+  if (el.querySelector(".msupsub, .mfrac, .sqrt")) return false;
+  return /^\d+$/.test(katexText(el));
+}
+
+function isDecimalCommaWrapper(el) {
+  if (!el || !el.classList) return false;
+  // KaTeX renders {,} as <span class="mord"><span class="mpunct">,</span></span>
+  return el.classList.contains("mord") && katexText(el) === ",";
+}
+
+function isThinSpaceSpan(el) {
+  return Boolean(el && el.classList && el.classList.contains("mspace"));
+}
+
+function isUnarySignSpan(el) {
+  if (!el || !el.classList || !el.classList.contains("mord")) return false;
+  const t = katexText(el);
+  return t === "−" || t === "-" || t === "+";
+}
+
+function indexFormulaAtoms(slideCard, blocks) {
+  const atoms = []; // { els: Element[], keys: Set<string>, blockEl, katexRoot, isHeader, windows: [] }
+  const covered = new Set();
 
   const isCovered = (el) => {
-    let cur = el.parentElement;
+    let cur = el;
     while (cur && cur !== slideCard) {
       if (covered.has(cur)) return true;
       cur = cur.parentElement;
@@ -221,117 +654,378 @@ function indexFormulaAtoms(slideCard) {
     return false;
   };
 
-  const addAtom = (el, key, markCovered = false) => {
-    if (!el || !key) return;
-    // Skip tiny step-tag badges ("Passo 1 · ∂E/∂w₀ = 0") when inside proof-step so the actual equation glows!
-    if (el.closest(".step-tag, .box-label, .slide-title, .slide-kicker, .plot-title")) return;
-    if (isCovered(el)) return;
-    let rec = atoms.find((a) => a.el === el);
-    if (!rec) {
-      const block = el.closest(".box, .math-card, .proof-step, .acad-table, .pill-strip, .props-grid, .metrics-row, .gate-card, .plot-card") || el;
-      rec = { el, keys: new Set(), block, windows: [] };
-      atoms.push(rec);
+  // Find most specific owning block in `blocks` for an element
+  const findOwnerBlock = (el) => {
+    let best = null;
+    for (const b of blocks) {
+      if (b.el === el || b.el.contains(el)) {
+        if (!best || best.el.contains(b.el)) best = b;
+      }
     }
-    rec.keys.add(key);
-    el.classList.add("katex-atom");
-    if (markCovered) covered.add(el);
+    return best ? best.el : slideCard;
+  };
+
+  const addAtom = (elsInput, keysInput, markCovered = true, katexRoot = null) => {
+    const els = Array.isArray(elsInput) ? elsInput.filter(Boolean) : [elsInput].filter(Boolean);
+    const keys = Array.isArray(keysInput) ? keysInput.filter(Boolean) : [keysInput].filter(Boolean);
+    if (els.length === 0 || keys.length === 0) return null;
+    if (els.some((e) => isCovered(e))) return null;
+
+    const first = els[0];
+    const isHeader = Boolean(first.closest(".step-tag, .box-label, .slide-title, .slide-kicker, .plot-title"));
+    const blockEl = findOwnerBlock(first);
+    const root = katexRoot || first.closest(".katex-html") || first;
+
+    const rec = { els, keys: new Set(keys), blockEl, katexRoot: root, isHeader, windows: [] };
+    atoms.push(rec);
+    for (const e of els) {
+      e.classList.add("katex-atom");
+      if (markCovered) covered.add(e);
+    }
+    return rec;
   };
 
   const katexRoots = slideCard.querySelectorAll(".katex-html");
   katexRoots.forEach((root) => {
-    if (root.closest(".step-tag, .box-label, .slide-title, .slide-kicker, .plot-title")) return;
+    // Recursive walker that visits .mfrac numerator BEFORE denominator and detects sibling compound groups
+    // in exact human left-to-right reading order!
+    const visitChildren = (parent) => {
+      if (isCovered(parent)) return;
+      const kids = Array.from(parent.children);
+      for (let i = 0; i < kids.length; i++) {
+        const el = kids[i];
+        if (isCovered(el)) continue;
 
-    // 1. Compound fractions first: \frac{\partial E}{\partial w_0}, \frac{1}{l}
-    root.querySelectorAll(".mfrac").forEach((el) => {
-      const txt = el.textContent.replace(/\s+/g, "");
-      if (txt.includes("∂") && /w0$/i.test(txt)) addAtom(el, "dE_dw0", true);
-      else if (txt.includes("∂") && /w1$/i.test(txt)) addAtom(el, "dE_dw1", true);
-      else if (txt.includes("∂") && /w[ijk]$/i.test(txt)) addAtom(el, "dE_dwj", true);
-      else if (txt === "1l") addAtom(el, "one_over_l", true);
-    });
+        // 0. Multi-sibling compound groups (when not inside .msupsub)
+        if (!parent.closest(".msupsub") && i + 1 < kids.length) {
+          const t0 = katexText(el);
 
-    // 2. Walk elements in DOM reading order for clean left-to-right alignment
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
-    let node;
-    while ((node = walker.nextNode())) {
-      const el = node;
-      if (isCovered(el)) continue;
+          // 0a. Inline slash derivative: ∂ E / ∂ w_0 (5 consecutive children)
+          if (t0 === "∂" && i + 4 < kids.length) {
+            const t1 = katexText(kids[i + 1]);
+            const t2 = katexText(kids[i + 2]);
+            const t3 = katexText(kids[i + 3]);
+            const t4 = katexText(kids[i + 4]);
+            if (t1 === "E" && t2 === "/" && t3 === "∂") {
+              let dk = null;
+              if (/^w0$/i.test(t4)) dk = "dE_dw0";
+              else if (/^w1$/i.test(t4)) dk = "dE_dw1";
+              else if (/^w[ijk]$/i.test(t4)) dk = "dE_dwj";
+              if (dk) {
+                addAtom(kids.slice(i, i + 5), dk, true, root);
+                i += 4;
+                continue;
+              }
+            }
+          }
 
-      // Operators: outer .mop only (skip inner .op-symbol so \sum doesn't register twice!)
-      if (el.classList.contains("mop") && !el.parentElement?.closest(".mop")) {
-        const txt = el.textContent.replace(/\s+/g, "");
-        if (txt.includes("∑")) addAtom(el, "sum", true);
-        else if (txt.includes("∫")) addAtom(el, "int", true);
-        else if (txt === "Cov") addAtom(el, "Cov", true);
-        else if (txt === "Var") addAtom(el, "Var", true);
-        else if (txt === "Bias") addAtom(el, "Bias", true);
-        else if (txt === "sign") addAtom(el, "sign", true);
-        continue;
-      }
+          // 0b. \Delta w_j, \Delta_p w_j, \Delta w
+          if ((t0 === "Δ" || t0 === "Δp") && !isCovered(kids[i + 1])) {
+            const t1 = katexText(kids[i + 1]);
+            if (t0 === "Δp" && /^w[ijk]$/i.test(t1)) {
+              addAtom([el, kids[i + 1]], ["var:Delta_p_wj", "var:Delta_wj"], true, root);
+              i += 1;
+              continue;
+            }
+            if (t0 === "Δ" && /^w[ijk]$/i.test(t1)) {
+              addAtom([el, kids[i + 1]], ["var:Delta_wj", "var:w_j"], true, root);
+              i += 1;
+              continue;
+            }
+            if (t0 === "Δ" && t1 === "w") {
+              addAtom([el, kids[i + 1]], ["var:Delta_w", "var:w"], true, root);
+              i += 1;
+              continue;
+            }
+          }
 
-      // Square roots
-      if (el.classList.contains("sqrt")) {
-        addAtom(el, "sqrt", false);
-        continue;
-      }
+          // 0c. \neg x_i / \neg x_1
+          if (t0 === "¬" && !isCovered(kids[i + 1])) {
+            const t1 = katexText(kids[i + 1]);
+            if (t1 === "xi") {
+              addAtom([el, kids[i + 1]], ["var:neg_xi", "var:x_i"], true, root);
+              i += 1;
+              continue;
+            }
+            if (t1 === "x1") {
+              addAtom([el, kids[i + 1]], ["var:neg_x1", "var:x_1"], true, root);
+              i += 1;
+              continue;
+            }
+          }
 
-      // Accented bars (\bar d, \bar x, \bar h)
-      if (el.classList.contains("accent") && el.classList.contains("mord")) {
-        const txt = el.textContent.replace(/\s+/g, "");
-        if (txt.includes("h")) addAtom(el, "h_bar", true);
-        else if (txt.includes("d")) addAtom(el, "d_bar", true);
-        else if (txt.includes("x")) addAtom(el, "x_bar", true);
-        continue;
-      }
+          // 0d. Adjacent T R -> var:TR, V S -> var:VS
+          if (t0 === "T" && katexText(kids[i + 1]) === "R" && !isCovered(kids[i + 1])) {
+            addAtom([el, kids[i + 1]], "var:TR", true, root);
+            i += 1;
+            continue;
+          }
+          if (t0 === "V" && katexText(kids[i + 1]) === "S" && !isCovered(kids[i + 1])) {
+            addAtom([el, kids[i + 1]], "var:VS", true, root);
+            i += 1;
+            continue;
+          }
 
-      // Compound subscript/superscript .mord (including x_p^2 which KaTeX orders as "x2p"!)
-      if (el.classList.contains("mord") && !el.closest(".msupsub")) {
-        const hasSubSup = Boolean(el.querySelector(":scope > .msupsub"));
-        const txt = el.textContent.replace(/\s+/g, "");
+          // 0e. Unary sign + Italian decimal / thousands / integer (e.g. -4{,}9, 110{,}8, 65\,536, -2, +0{,}1)
+          let signEl = null;
+          let signNeg = false;
+          let numStart = i;
+          if (isUnarySignSpan(el) && isSimpleDigitsSpan(kids[i + 1])) {
+            signEl = el;
+            signNeg = t0 === "−" || t0 === "-";
+            numStart = i + 1;
+          }
+          if (isSimpleDigitsSpan(kids[numStart]) && !isCovered(kids[numStart])) {
+            const d0 = katexText(kids[numStart]);
+            if (
+              numStart + 2 < kids.length &&
+              isDecimalCommaWrapper(kids[numStart + 1]) &&
+              isSimpleDigitsSpan(kids[numStart + 2]) &&
+              !isCovered(kids[numStart + 2])
+            ) {
+              const d1 = katexText(kids[numStart + 2]);
+              const group = signEl
+                ? [signEl, kids[numStart], kids[numStart + 1], kids[numStart + 2]]
+                : [kids[numStart], kids[numStart + 1], kids[numStart + 2]];
+              const valStr = `${signNeg ? "-" : ""}${d0}.${d1}`;
+              const keys = [canonicalNumKey(valStr)];
+              if (signNeg) keys.push(canonicalNumKey(`${d0}.${d1}`));
+              addAtom(group, keys, true, root);
+              i = numStart + 2;
+              continue;
+            }
+            if (
+              numStart + 2 < kids.length &&
+              isThinSpaceSpan(kids[numStart + 1]) &&
+              isSimpleDigitsSpan(kids[numStart + 2]) &&
+              katexText(kids[numStart + 2]).length === 3 &&
+              !isCovered(kids[numStart + 2])
+            ) {
+              const d1 = katexText(kids[numStart + 2]);
+              const group = signEl
+                ? [signEl, kids[numStart], kids[numStart + 1], kids[numStart + 2]]
+                : [kids[numStart], kids[numStart + 1], kids[numStart + 2]];
+              const valStr = `${signNeg ? "-" : ""}${d0}${d1}`;
+              const keys = [canonicalNumKey(valStr)];
+              if (signNeg) keys.push(canonicalNumKey(`${d0}${d1}`));
+              addAtom(group, keys, true, root);
+              i = numStart + 2;
+              continue;
+            }
+            if (signEl) {
+              const valStr = `${signNeg ? "-" : ""}${d0}`;
+              const keys = [canonicalNumKey(valStr)];
+              if (signNeg) keys.push(canonicalNumKey(d0));
+              addAtom([signEl, kids[numStart]], keys, true, root);
+              i = numStart;
+              continue;
+            }
+          }
+        }
 
-        if (hasSubSup) {
-          if (/^x(?:2p|p2)$/i.test(txt)) {
-            addAtom(el, "x_p_sq", true);
-            addAtom(el, "x_p", true);
-          } else if (/^w0$/i.test(txt)) addAtom(el, "w_0", true);
-          else if (/^w1$/i.test(txt)) addAtom(el, "w_1", true);
-          else if (/^w2$/i.test(txt)) addAtom(el, "w_2", true);
-          else if (/^w[ijkm\*]$/i.test(txt) || /^wnew$/i.test(txt)) addAtom(el, "w_j", true);
-          else if (/^xp$/i.test(txt) || /^xpT$/i.test(txt)) addAtom(el, "x_p", true);
-          else if (/^x1$/i.test(txt)) addAtom(el, "x_1", true);
-          else if (/^x2$/i.test(txt)) addAtom(el, "x_2", true);
-          else if (/^x[ijkt0]$/i.test(txt) || /^xp,[ij]$/i.test(txt)) addAtom(el, "x_i", true);
-          else if (/^d[pi]$/i.test(txt)) addAtom(el, "d_p", true);
-          else if (/^Remp$/i.test(txt)) addAtom(el, "R_emp", true);
-          else if (/^ERMS$/i.test(txt)) addAtom(el, "E_RMS", true);
-          else if (/^hw$/i.test(txt)) addAtom(el, "h_w", true);
-          else if (/^XT$/.test(txt)) addAtom(el, "X_T", true);
-          else if (/^X\+$/.test(txt)) addAtom(el, "X_plus", true);
-          else if (/^σ2$/.test(txt)) addAtom(el, "sigma", true);
-          else if (/^δ[pi]?$/.test(txt)) addAtom(el, "delta", true);
-          else if (/^θ/.test(txt)) addAtom(el, "theta", true);
-          else if (/^φ/.test(txt)) addAtom(el, "phi", true);
+        // 1. Fractions (.mfrac): atomic derivatives / 1/l / 1/2, OR walk numerator BEFORE denominator!
+        if (el.classList.contains("mfrac")) {
+          const parts = getMfracParts(el);
+          if (parts) {
+            const numTxt = katexText(parts.num);
+            const denTxt = katexText(parts.den);
+            if (numTxt.startsWith("∂E") && /^∂w0$/i.test(denTxt)) {
+              addAtom(el, "dE_dw0", true, root);
+              continue;
+            }
+            if (numTxt.startsWith("∂E") && /^∂w1$/i.test(denTxt)) {
+              addAtom(el, "dE_dw1", true, root);
+              continue;
+            }
+            if (numTxt.startsWith("∂E") && /^∂w[ijk]$/i.test(denTxt)) {
+              addAtom(el, "dE_dwj", true, root);
+              continue;
+            }
+            if (numTxt === "1" && denTxt === "l") {
+              addAtom(el, "frac:1/l", true, root);
+              continue;
+            }
+            if (numTxt === "1" && denTxt === "2") {
+              addAtom(el, "frac:1/2", true, root);
+              continue;
+            }
+            // Non-atomic fraction: visit NUMERATOR first, DENOMINATOR second!
+            visitChildren(parts.num);
+            visitChildren(parts.den);
+            continue;
+          }
+        }
+
+        // 2. Outer operators (.mop)
+        if (el.classList.contains("mop") && !el.parentElement?.closest(".mop")) {
+          const txt = katexText(el);
+          if (txt.includes("∑")) { addAtom(el, "op:sum", true, root); continue; }
+          if (txt.includes("∏")) { addAtom(el, "op:prod", true, root); continue; }
+          if (txt.includes("∫")) { addAtom(el, "op:int", true, root); continue; }
+          if (txt === "Cov") { addAtom(el, "op:Cov", true, root); continue; }
+          if (txt === "Var") { addAtom(el, "op:Var", true, root); continue; }
+          if (txt === "Bias") { addAtom(el, "op:Bias", true, root); continue; }
+          if (txt === "sign") { addAtom(el, "op:sign", true, root); continue; }
+          if (txt === "ln") { addAtom(el, "op:ln", true, root); continue; }
+          if (txt === "log") { addAtom(el, ["op:log", "op:ln"], true, root); continue; }
+          if (txt === "sin") { addAtom(el, "op:sin", true, root); continue; }
+          if (txt === "cos") { addAtom(el, "op:cos", true, root); continue; }
+          if (txt === "exp") { addAtom(el, "op:exp", true, root); continue; }
+          if (/^argmin/i.test(txt)) { addAtom(el, "op:argmin", true, root); continue; }
+        }
+
+        // 3. Square roots
+        if (el.classList.contains("sqrt")) {
+          const txt = katexText(el);
+          if (txt === "√2") {
+            addAtom(el, ["sqrt:2", "op:sqrt"], true, root);
+            continue;
+          }
+          const signChild = el.querySelector(".sqrt-sign, .hide-tail") || el;
+          addAtom(signChild, "op:sqrt", false, root);
+          visitChildren(el);
           continue;
         }
 
-        // Leaf single-token symbols
-        if (!el.querySelector(".mord")) {
-          if (txt === "λ") addAtom(el, "lambda", true);
-          else if (txt === "η") addAtom(el, "eta", true);
-          else if (txt === "δ" || txt === "Δ") addAtom(el, "delta", true);
-          else if (txt === "σ") addAtom(el, "sigma", true);
-          else if (txt === "θ") addAtom(el, "theta", true);
-          else if (txt === "ε" || txt === "ϵ") addAtom(el, "eps", true);
-          else if (txt === "π") addAtom(el, "pi", true);
-          else if (txt === "ϕ" || txt === "φ") addAtom(el, "phi", true);
-          else if (txt === "∇") addAtom(el, "nabla", true);
-          else if (txt === "∥") addAtom(el, "norm", true);
-          else if (txt === "VC") addAtom(el, "VC", true);
-          else if (txt === "E" && el.classList.contains("mathnormal")) addAtom(el, "E_w", true);
-          else if (txt === "w" && el.classList.contains("mathbf")) addAtom(el, "w_vec", true);
+        // 4. Norms (∥), Absolute values (∣), Inverse superscript (^{-1}) on .mopen/.mclose
+        if (el.classList.contains("mopen") || el.classList.contains("mclose")) {
+          const txt = katexText(el);
+          if (el.classList.contains("mopen") && txt === "∥") {
+            addAtom(el, "op:norm", true, root);
+            continue;
+          }
+          if (el.classList.contains("mopen") && txt === "∣") {
+            addAtom(el, "op:abs", true, root);
+            continue;
+          }
+          if (el.classList.contains("mclose") && el.querySelector(":scope > .msupsub")) {
+            const sup = el.querySelector(":scope > .msupsub");
+            if (/^[−-]1$/.test(katexText(sup))) {
+              addAtom(sup, "op:inv", true, root);
+            }
+          }
+          continue;
+        }
+
+        // 5. Relations (.mrel)
+        if (el.classList.contains("mrel") && !el.closest(".msupsub")) {
+          const txt = katexText(el);
+          if (txt === "≥") { addAtom(el, "rel:ge", true, root); continue; }
+          if (txt === "≤") { addAtom(el, "rel:le", true, root); continue; }
+          if (txt === ">") { addAtom(el, "rel:gt", true, root); continue; }
+          if (txt === "<") { addAtom(el, "rel:lt", true, root); continue; }
+          if (txt === "≠") { addAtom(el, "rel:neq", true, root); continue; }
+          continue;
+        }
+
+        // 6. Accented bars (\bar d, \bar x, \bar h)
+        if (el.classList.contains("accent") && el.classList.contains("mord")) {
+          const txt = katexText(el);
+          if (txt.includes("h")) { addAtom(el, "bar:h", true, root); continue; }
+          if (txt.includes("d")) { addAtom(el, "bar:d", true, root); continue; }
+          if (txt.includes("x")) { addAtom(el, "bar:x", true, root); continue; }
+        }
+
+        // 7. Subscript/Superscript .mord
+        if (el.classList.contains("mord") && !el.closest(".msupsub")) {
+          const hasSubSup = Boolean(el.querySelector(":scope > .msupsub"));
+          const txt = katexText(el);
+
+          if (hasSubSup) {
+            const supOnly = isMsupsubSuperscriptOnly(el);
+            let added = null;
+            if (txt === "22n") added = addAtom(el, "pow:2^2^n", true, root);
+            else if (txt === "24") added = addAtom(el, "pow:2^4", true, root);
+            else if (txt === "216") added = addAtom(el, "pow:2^16", true, root);
+            else if (txt === "29") added = addAtom(el, "pow:2^9", true, root);
+            else if (txt === "3n") added = addAtom(el, "pow:3^n", true, root);
+            else if (txt === "32" && supOnly) added = addAtom(el, ["pow:3^2", "num:9"], true, root);
+            else if (txt === "L1") added = addAtom(el, "norm:L1", true, root);
+            else if (txt === "L2") added = addAtom(el, "norm:L2", true, root);
+            else if (txt === "Rn") added = addAtom(el, ["set:R^n", "set:R"], true, root);
+            else if (txt === "RK") added = addAtom(el, ["set:R^K", "set:R"], true, root);
+            else if (txt === "Rl×n") added = addAtom(el, ["dim:lxn", "set:R"], true, root);
+            // Primes
+            else if (txt === "h′") added = addAtom(el, "var:h_prime", true, root);
+            else if (txt === "E′") added = addAtom(el, "var:E_prime", true, root);
+            else if (txt === "R′") added = addAtom(el, "var:R_prime", true, root);
+            else if (txt === "x′") added = addAtom(el, "var:x_prime", true, root);
+            else if (txt === "d′") added = addAtom(el, "var:d_prime", true, root);
+            // Dual sub+sup
+            else if (/^x(?:2p|p2)$/i.test(txt)) added = addAtom(el, ["var:x_p_sq", "var:x_p"], true, root);
+            else if (/^x(?:Tp|pT)$/.test(txt)) added = addAtom(el, ["var:x_p_T", "var:x_p"], true, root);
+            else if (/^w(?:2j|j2)$/i.test(txt)) added = addAtom(el, ["var:w_j_sq", "var:w_j"], true, root);
+            else if (/^w(?:\*(\d)|(\d)\*)$/.test(txt)) {
+              const d = txt.replace(/\D/g, "");
+              added = addAtom(el, [`var:w_${d}`, "var:w_star"], true, root);
+            } else if (txt === "w*") added = addAtom(el, "var:w_star", true, root);
+            // Transposes & pseudoinverses
+            else if (txt === "XT") added = addAtom(el, "var:X_T", true, root);
+            else if (txt === "X+") added = addAtom(el, "var:X_plus", true, root);
+            else if (txt === "Σ+") added = addAtom(el, "var:Sigma_plus", true, root);
+            else if (txt === "VT") added = addAtom(el, "var:V_T", true, root);
+            else if (txt === "UT") added = addAtom(el, "var:U_T", true, root);
+            else if (txt === "vT") added = addAtom(el, "var:v_T", true, root);
+            else if (txt === "wT") added = addAtom(el, "var:w_T", true, root);
+            else if (txt === "xT") added = addAtom(el, "var:x_T", true, root);
+            // Powers of x and w
+            else if (txt === "x2" && supOnly) added = addAtom(el, ["pow:x^2", "var:x"], true, root);
+            else if (txt === "xj" && supOnly) added = addAtom(el, ["pow:x^j", "var:x"], true, root);
+            else if (txt === "xM" && supOnly) added = addAtom(el, ["pow:x^M", "var:x"], true, root);
+            else if (txt === "w2" && supOnly) added = addAtom(el, ["var:w_sq", "var:w"], true, root);
+            // Subscripted variables
+            else if (/^w(\d)$/.test(txt)) added = addAtom(el, `var:w_${txt[1]}`, true, root);
+            else if (txt === "wnew") added = addAtom(el, "var:w_new", true, root);
+            else if (/^w([ijkm])$/.test(txt)) added = addAtom(el, `var:w_${txt[1]}`, true, root);
+            else if (txt === "xp,i") added = addAtom(el, ["var:x_pi", "var:x_p"], true, root);
+            else if (txt === "xp,j") added = addAtom(el, ["var:x_pj", "var:x_p"], true, root);
+            else if (txt === "xp") added = addAtom(el, "var:x_p", true, root);
+            else if (/^x([0-9abijk])$/.test(txt)) added = addAtom(el, `var:x_${txt[1]}`, true, root);
+            else if (/^d([pi])$/.test(txt)) added = addAtom(el, `var:d_${txt[1]}`, true, root);
+            else if (/^hw\*?$/.test(txt)) added = addAtom(el, ["var:h_w", "var:h"], true, root);
+            else if (txt === "ERMS") added = addAtom(el, "var:E_RMS", true, root);
+            else if (txt === "ETR") added = addAtom(el, "var:E_TR", true, root);
+            else if (txt === "Remp") added = addAtom(el, "var:R_emp", true, root);
+            else if (txt.startsWith("VS")) added = addAtom(el, "var:VS", true, root);
+            else if (txt === "δp") added = addAtom(el, ["var:delta_p", "var:delta"], true, root);
+            else if (txt === "σ2") added = addAtom(el, ["sym:sigma_sq", "sym:sigma"], true, root);
+            else if (/^[φϕ]([kj])$/.test(txt)) added = addAtom(el, [`var:phi_${txt[1]}`, "sym:phi"], true, root);
+            else if (/^θ/.test(txt)) added = addAtom(el, "sym:theta", true, root);
+            if (added) continue;
+          }
+
+          // 8. Leaf single-token symbols, variables, and integers
+          if (!el.querySelector(".mord")) {
+            if (/^\d+$/.test(txt)) { addAtom(el, canonicalNumKey(txt), true, root); continue; }
+            if (txt === "λ") { addAtom(el, "sym:lambda", true, root); continue; }
+            if (txt === "η") { addAtom(el, "sym:eta", true, root); continue; }
+            if (txt === "δ" || txt === "Δ") { addAtom(el, "var:delta", true, root); continue; }
+            if (txt === "σ") { addAtom(el, "sym:sigma", true, root); continue; }
+            if (txt === "Σ") { addAtom(el, "sym:Sigma", true, root); continue; }
+            if (txt === "θ") { addAtom(el, "sym:theta", true, root); continue; }
+            if (txt === "ε" || txt === "ϵ") { addAtom(el, "sym:eps", true, root); continue; }
+            if (txt === "π") { addAtom(el, "sym:pi", true, root); continue; }
+            if (txt === "ϕ" || txt === "φ") { addAtom(el, "sym:phi", true, root); continue; }
+            if (txt === "μ") { addAtom(el, "sym:mu", true, root); continue; }
+            if (txt === "∇") { addAtom(el, "op:nabla", true, root); continue; }
+            if (txt === "VC") { addAtom(el, "var:VC", true, root); continue; }
+            if (txt === "TR") { addAtom(el, "var:TR", true, root); continue; }
+            if (txt === "VS") { addAtom(el, "var:VS", true, root); continue; }
+            if (txt === "false") { addAtom(el, "var:false", true, root); continue; }
+            if (txt === "P" && el.classList.contains("mathcal")) { addAtom(el, ["var:P_X", "var:P"], true, root); continue; }
+            if (txt === "R" && el.classList.contains("mathbb")) { addAtom(el, ["set:R", "var:R"], true, root); continue; }
+            if (/^[A-Za-z]$/.test(txt)) { addAtom(el, `var:${txt}`, true, root); continue; }
+          }
+        }
+
+        // Recurse into non-leaf structural containers (.base, .mord, .enclosing, .sizing, .vlist, [id^="f-"], etc.)
+        if (el.children.length > 0 && !el.classList.contains("msupsub")) {
+          visitChildren(el);
         }
       }
-    }
+    };
+
+    visitChildren(root);
 
     root.querySelectorAll("[id^='f-']").forEach((el) => {
       el.classList.add("katex-atom");
@@ -340,6 +1034,115 @@ function indexFormulaAtoms(slideCard) {
 
   return atoms;
 }
+
+// ---------- Viterbi Monotonic Sequence Aligner ----------
+
+function atomMatchScore(atom, ev) {
+  let base = -1;
+  for (let idx = 0; idx < ev.keys.length; idx++) {
+    if (atom.keys.has(ev.keys[idx])) {
+      // Primary key scores higher than fallback alias
+      base = (ev.specificity || 8) - idx * 2.0;
+      break;
+    }
+  }
+  if (base < 0) return -1;
+  // Prefer body equations over step-tag/box-label/slide-title when both match
+  return base + (atom.isHeader ? 0 : 1.8);
+}
+
+// Align block events to block atoms via Viterbi DP maximizing left-to-right contiguity
+function alignEventsToAtomsViterbi(bEvents, bAtoms) {
+  const N = bEvents.length;
+  const M = bAtoms.length;
+  if (N === 0 || M === 0) return [];
+
+  // Sparse candidate list per event
+  const cands = bEvents.map((ev) => {
+    const list = [];
+    for (let j = 0; j < M; j++) {
+      const sc = atomMatchScore(bAtoms[j], ev);
+      if (sc > 0) list.push({ j, emit: sc });
+    }
+    return list;
+  });
+
+  // dp[i][c] = best cumulative score ending with event i matched to cands[i][c]
+  const dp = [];
+  const prev = [];
+
+  for (let i = 0; i < N; i++) {
+    const row = new Float64Array(cands[i].length);
+    const pRow = new Int32Array(cands[i].length);
+    pRow.fill(-1);
+
+    // Find most recent previous event that had at least 1 candidate
+    let prevEvIdx = i - 1;
+    while (prevEvIdx >= 0 && cands[prevEvIdx].length === 0) prevEvIdx--;
+
+    for (let c = 0; c < cands[i].length; c++) {
+      const { j, emit } = cands[i][c];
+      if (prevEvIdx < 0) {
+        // Slight preference for starting earlier in the block
+        row[c] = emit - j * 0.04;
+      } else {
+        const dt = bEvents[i].start - bEvents[prevEvIdx].end;
+        let bestScore = -Infinity;
+        let bestPrev = -1;
+        for (let pc = 0; pc < cands[prevEvIdx].length; pc++) {
+          const pj = cands[prevEvIdx][pc].j;
+          const step = j - pj;
+          let trans = 0;
+          if (step === 1) trans = 6.5;
+          else if (step === 2) trans = 4.8;
+          else if (step >= 3 && step <= 5) trans = 2.6;
+          else if (step > 5) trans = 0.6;
+          else if (step === 0) trans = dt > 0.65 ? 0.5 : -2.5;
+          else trans = dt >= 1.25 ? 0.0 : -4.5; // allow revisit after pause, penalize mid-formula jump back
+
+          // Same KaTeX expression continuity bonus
+          if (dt < 1.8 && bAtoms[j].katexRoot === bAtoms[pj].katexRoot && step > 0) {
+            trans += 1.5;
+          }
+
+          const score = dp[prevEvIdx][pc] + emit + trans;
+          if (score > bestScore) {
+            bestScore = score;
+            bestPrev = pc;
+          }
+        }
+        row[c] = bestScore;
+        pRow[c] = bestPrev;
+      }
+    }
+    dp.push(row);
+    prev.push(pRow);
+  }
+
+  // Backtrack from last non-empty event row
+  const assigned = new Array(N).fill(-1);
+  let lastEv = N - 1;
+  while (lastEv >= 0 && cands[lastEv].length === 0) lastEv--;
+  if (lastEv < 0) return assigned;
+
+  let bestC = 0;
+  for (let c = 1; c < cands[lastEv].length; c++) {
+    if (dp[lastEv][c] > dp[lastEv][bestC]) bestC = c;
+  }
+
+  let curEv = lastEv;
+  let curC = bestC;
+  while (curEv >= 0 && curC >= 0) {
+    assigned[curEv] = cands[curEv][curC].j;
+    curC = prev[curEv][curC];
+    let pEv = curEv - 1;
+    while (pEv >= 0 && cands[pEv].length === 0) pEv--;
+    curEv = pEv;
+  }
+  return assigned;
+}
+
+// ---------- LiveSyncEngine v4 ----------
 
 export class LiveSyncEngine {
   constructor(stageEl, onSeek) {
@@ -350,6 +1153,7 @@ export class LiveSyncEngine {
     this.blocks = [];
     this.atoms = [];
     this.words = [];
+    this.activeAtom = null;
   }
 
   setEnabled(on) {
@@ -374,6 +1178,7 @@ export class LiveSyncEngine {
     this.stage.querySelectorAll(".spotlight-active, .spotlight-dim").forEach((el) => {
       el.classList.remove("spotlight-active", "spotlight-dim");
     });
+    this.activeAtom = null;
   }
 
   prepareScene(scene, subtitles) {
@@ -386,9 +1191,10 @@ export class LiveSyncEngine {
     const slideCard = this.stage.querySelector(".slide-card");
     if (!slideCard) return;
 
-    // 1. Collect reveal timestamps per element from cues
+    // 1. Collect reveal & highlight timestamps per element from cues
     const showAtMap = new Map();
     const untilMap = new Map();
+    const hlAtMap = new Map();
     for (const cue of scene.cues || []) {
       if (cue.action === "show") {
         this.stage.querySelectorAll(cue.target).forEach((el) => {
@@ -396,13 +1202,13 @@ export class LiveSyncEngine {
           if (prev === undefined || cue.at < prev) showAtMap.set(el, cue.at);
           if (typeof cue.until === "number") untilMap.set(el, cue.until);
         });
+      } else if (cue.action === "highlight") {
+        this.stage.querySelectorAll(cue.target).forEach((el) => {
+          const prev = hlAtMap.get(el);
+          if (prev === undefined || cue.at < prev) hlAtMap.set(el, cue.at);
+        });
       }
     }
-
-    const blockSelectors = ".box, .math-card, .proof-step, .svg-panel, .acad-table, .pill-strip, .props-grid, .metrics-row, .gate-card, .plot-card";
-    const rawBlocks = Array.from(slideCard.querySelectorAll(blockSelectors)).filter(
-      (el) => !el.parentElement?.closest(".box, .math-card, .proof-step, .svg-panel")
-    );
 
     const getShowAt = (el) => {
       let cur = el;
@@ -440,24 +1246,89 @@ export class LiveSyncEngine {
     }
     const totalDur = (subtitles && subtitles.duration) || 60;
 
-    // 3. Build Block timeline (each block owns [showAt, cueEnd])
-    const sortedShowCues = (scene.cues || [])
-      .filter((c) => c.action === "show")
-      .sort((a, b) => a.at - b.at);
+    // 3. Build Spotlight blocks (outermost content cards) + Math-owner blocks (includes title & highlighted table rows & li items)
+    const blockSelectors = ".box, .math-card, .proof-step, .svg-panel, .acad-table, .pill-strip, .props-grid, .metrics-row, .gate-card, .plot-card";
+    const rawBlocks = Array.from(slideCard.querySelectorAll(blockSelectors)).filter(
+      (el) => !el.parentElement?.closest(".box, .math-card, .proof-step, .svg-panel")
+    );
+
+    // Non-SVG content show timestamps (so a side SVG never truncates an active formula card or table!)
+    const contentShowTimes = rawBlocks
+      .filter((el) => !el.classList.contains("svg-panel"))
+      .map((el) => getShowAt(el))
+      .filter((t) => t > 0)
+      .sort((a, b) => a - b);
+
+    const firstShowAt = contentShowTimes.length > 0 ? contentShowTimes[0] : totalDur;
 
     for (const bEl of rawBlocks) {
       const showAt = getShowAt(bEl);
       const explicitUntil = getUntilAt(bEl);
-      let cueEnd = explicitUntil !== null ? explicitUntil : totalDur;
-      if (explicitUntil === null) {
-        for (const c of sortedShowCues) {
-          if (c.at > showAt + 0.4) {
-            cueEnd = c.at;
+      const untilAt = explicitUntil !== null ? explicitUntil : totalDur;
+      let activeEnd = untilAt;
+      if (explicitUntil === null && !bEl.classList.contains("svg-panel")) {
+        for (const t of contentShowTimes) {
+          if (t > showAt + 0.4) {
+            activeEnd = t;
             break;
           }
         }
       }
-      this.blocks.push({ el: bEl, showAt, cueEnd });
+      this.blocks.push({ el: bEl, showAt, untilAt, activeStart: showAt, activeEnd, isSpotlight: true });
+    }
+
+    // Also create fine-grained math-owner sub-blocks for:
+    //  - .slide-title containing KaTeX math
+    //  - table rows (tr) targeted by highlight cues (e.g. 02-problema/scene-07 4 loss rows)
+    //  - list items (li) targeted by show cues (e.g. closing recap slides)
+    const mathBlocks = [...this.blocks];
+    const titleEl = slideCard.querySelector(".slide-title");
+    if (titleEl && titleEl.querySelector(".katex")) {
+      mathBlocks.push({
+        el: titleEl,
+        showAt: 0,
+        untilAt: totalDur,
+        activeStart: 0,
+        activeEnd: firstShowAt,
+        isSpotlight: false
+      });
+    }
+
+    const hlRows = Array.from(slideCard.querySelectorAll("tr")).filter((tr) => hlAtMap.has(tr));
+    if (hlRows.length > 0) {
+      hlRows.sort((a, b) => hlAtMap.get(a) - hlAtMap.get(b));
+      for (let r = 0; r < hlRows.length; r++) {
+        const tr = hlRows[r];
+        const parentShow = getShowAt(tr);
+        const startHl = r === 0 ? Math.min(parentShow, hlAtMap.get(tr) - 8) : hlAtMap.get(tr);
+        const nextHl = r + 1 < hlRows.length ? hlAtMap.get(hlRows[r + 1]) : totalDur;
+        mathBlocks.push({
+          el: tr,
+          showAt: parentShow,
+          untilAt: totalDur,
+          activeStart: Math.max(parentShow, startHl - 0.5),
+          activeEnd: nextHl,
+          isSpotlight: false
+        });
+      }
+    }
+
+    const showLis = Array.from(slideCard.querySelectorAll("li")).filter((li) => showAtMap.has(li));
+    if (showLis.length > 0) {
+      showLis.sort((a, b) => showAtMap.get(a) - showAtMap.get(b));
+      for (let k = 0; k < showLis.length; k++) {
+        const li = showLis[k];
+        const sAt = showAtMap.get(li);
+        const nextAt = k + 1 < showLis.length ? showAtMap.get(showLis[k + 1]) : totalDur;
+        mathBlocks.push({
+          el: li,
+          showAt: sAt,
+          untilAt: totalDur,
+          activeStart: sAt,
+          activeEnd: nextAt,
+          isSpotlight: false
+        });
+      }
     }
 
     // 4. Wrap prose clauses word-by-word & align monotonically
@@ -477,7 +1348,7 @@ export class LiveSyncEngine {
               wordEls: wObj.wordEls,
               block: bEl,
               tokens: toks,
-              showAt: b.showAt,
+              showAt: getShowAt(tEl),
               start: -1,
               end: -1
             });
@@ -554,69 +1425,101 @@ export class LiveSyncEngine {
 
     this.clauses = clauseCandidates.filter((c) => c.start >= 0);
 
-    // 5. Index KaTeX atoms and align them SEQUENTIALLY LEFT-TO-RIGHT per block against exact spoken math events!
-    this.atoms = indexFormulaAtoms(slideCard);
+    // 5. Index ALL KaTeX atoms and align with Viterbi DP + strict global non-overlapping windows!
+    this.atoms = indexFormulaAtoms(slideCard, mathBlocks);
     if (this.atoms.length > 0 && this.words.length > 0) {
       const mathEvents = extractSpokenMathEvents(this.words);
-      // Group atoms by their owning block (already in exact left-to-right DOM order)
+
+      // Map each mathBlock element -> block metadata & atom list
+      const blockMetaByEl = new Map();
+      for (const b of mathBlocks) blockMetaByEl.set(b.el, b);
+
       const atomsByBlock = new Map();
+      const keySetByBlock = new Map();
       for (const a of this.atoms) {
-        if (!atomsByBlock.has(a.block)) atomsByBlock.set(a.block, []);
-        atomsByBlock.get(a.block).push(a);
+        if (!atomsByBlock.has(a.blockEl)) {
+          atomsByBlock.set(a.blockEl, []);
+          keySetByBlock.set(a.blockEl, new Set());
+        }
+        atomsByBlock.get(a.blockEl).push(a);
+        const ks = keySetByBlock.get(a.blockEl);
+        for (const k of a.keys) ks.add(k);
       }
 
-      for (const b of this.blocks) {
-        const bAtoms = atomsByBlock.get(b.el);
-        if (!bAtoms || bAtoms.length === 0) continue;
+      const blockHasEventKey = (bEl, ev) => {
+        const ks = keySetByBlock.get(bEl);
+        if (!ks) return false;
+        return ev.keys.some((k) => ks.has(k));
+      };
 
-        // Filter spoken math events belonging to this block's time window [showAt - 0.35, cueEnd + 0.35]
-        const bEvents = mathEvents.filter(
-          (ev) => ev.end >= b.showAt - 0.35 && ev.start <= b.cueEnd + 0.35
-        );
-        if (bEvents.length === 0) continue;
+      // Route each spoken math event ONLY to a block active at ev.start (never bleed into past rows/steps!)
+      const eventsByBlock = new Map();
+      for (const ev of mathEvents) {
+        let bestBlock = null;
+        let bestRank = -Infinity;
 
-        // Walk monotonically left-to-right through bAtoms so repeated symbols (e.g. 6 sums) glow ONE AT A TIME in order!
-        let cursor = 0;
-        for (const ev of bEvents) {
-          let picked = -1;
-          // Prefer next occurrence forward from cursor (within generous forward lookahead of 12 atoms)
-          const lookLim = Math.min(bAtoms.length, cursor + 12);
-          for (let k = cursor; k < lookLim; k++) {
-            if (bAtoms[k].keys.has(ev.key)) {
-              picked = k;
-              break;
-            }
-          }
-          // Fallback 1: anywhere further forward in the block
-          if (picked === -1) {
-            for (let k = lookLim; k < bAtoms.length; k++) {
-              if (bAtoms[k].keys.has(ev.key)) {
-                picked = k;
-                break;
-              }
-            }
-          }
-          // Fallback 2: speaker revisited an earlier symbol in this same block -> pick nearest previous match
-          if (picked === -1) {
-            for (let k = Math.min(cursor - 1, bAtoms.length - 1); k >= 0; k--) {
-              if (bAtoms[k].keys.has(ev.key)) {
-                picked = k;
-                break;
-              }
-            }
-          }
+        for (const [bEl, bAtoms] of atomsByBlock.entries()) {
+          if (bAtoms.length === 0 || !blockHasEventKey(bEl, ev)) continue;
+          const meta = blockMetaByEl.get(bEl) || { showAt: 0, untilAt: totalDur, activeStart: 0, activeEnd: totalDur };
+          if (ev.end < meta.showAt - 0.35 || ev.start > meta.untilAt + 0.15) continue;
 
-          if (picked !== -1) {
-            bAtoms[picked].windows.push({
-              start: Math.max(b.showAt, ev.start - 0.08),
-              end: ev.end + 0.24
-            });
-            // Advance cursor past picked atom only when moving forward (preserves left-to-right sweep)
-            if (picked >= cursor) {
-              cursor = picked + 1;
-            }
+          const inPrimary = ev.start >= meta.activeStart - 0.35 && ev.start <= meta.activeEnd + 0.35;
+          // Strictly require inPrimary so past table rows / proof steps / boxes never flash retroactively!
+          if (!inPrimary) continue;
+
+          const isFineRow = bEl.tagName === "TR" || bEl.tagName === "LI";
+          const isTitle = bEl.classList.contains("slide-title");
+          const isSvg = bEl.classList.contains("svg-panel");
+
+          let rank = 100;
+          if (isFineRow) rank += 35;
+          if (isTitle) rank -= 15;
+          if (isSvg) rank -= 10;
+          rank += meta.showAt * 0.05;
+
+          if (rank > bestRank) {
+            bestRank = rank;
+            bestBlock = bEl;
           }
         }
+
+        if (bestBlock) {
+          if (!eventsByBlock.has(bestBlock)) eventsByBlock.set(bestBlock, []);
+          eventsByBlock.get(bestBlock).push(ev);
+        }
+      }
+
+      // Run Viterbi DP inside each block and collect all global matches
+      const globalMatches = []; // { atom, ev, showAt }
+      for (const [bEl, bEvents] of eventsByBlock.entries()) {
+        const bAtoms = atomsByBlock.get(bEl) || [];
+        const meta = blockMetaByEl.get(bEl) || { showAt: 0 };
+        const assigned = alignEventsToAtomsViterbi(bEvents, bAtoms);
+        for (let i = 0; i < bEvents.length; i++) {
+          const atomIdx = assigned[i];
+          if (atomIdx >= 0 && bAtoms[atomIdx]) {
+            globalMatches.push({
+              atom: bAtoms[atomIdx],
+              ev: bEvents[i],
+              showAt: meta.showAt
+            });
+          }
+        }
+      }
+
+      // Sort ALL matched events chronologically and clamp windows so ZERO overlaps can occur!
+      globalMatches.sort((a, b) => a.ev.start - b.ev.start);
+      for (let i = 0; i < globalMatches.length; i++) {
+        const cur = globalMatches[i];
+        const next = i + 1 < globalMatches.length ? globalMatches[i + 1] : null;
+
+        const start = Math.max(cur.showAt, cur.ev.start - 0.05);
+        // Ensure quick 40ms MMS_FA single-letter tokens stay readable (~0.34s) unless next math event arrives sooner
+        const desiredEnd = Math.max(cur.ev.end + 0.16, start + 0.34);
+        const nextStart = next ? Math.max(next.showAt, next.ev.start - 0.05) : Infinity;
+        const end = Math.max(start + 0.06, Math.min(desiredEnd, nextStart - 0.015));
+
+        cur.atom.windows.push({ start, end });
       }
     }
 
@@ -703,20 +1606,28 @@ export class LiveSyncEngine {
       }
     }
 
-    // 4. SEQUENTIAL MONOTONIC FORMULA-ATOM GLOW (STRICTLY inside activeBlock — single exact atom at a time!)
+    // 4. STRICT SINGLE-ATOM FORMULA GLOW (at most ONE atom across entire slide at any instant t!)
+    let winnerAtom = null;
+    let winnerStart = -Infinity;
     for (const atom of this.atoms) {
-      const visible = !atom.block.classList.contains("cue-hidden");
-      const inActiveBlock = !activeBlock || atom.block === activeBlock;
-      let hit = false;
-      if (visible && inActiveBlock && atom.windows.length > 0) {
-        for (const w of atom.windows) {
-          if (t >= w.start && t <= w.end) {
-            hit = true;
-            break;
-          }
+      if (atom.windows.length === 0) continue;
+      if (atom.els[0].closest(".cue-hidden")) continue;
+      for (const w of atom.windows) {
+        if (t >= w.start && t <= w.end && w.start >= winnerStart) {
+          winnerAtom = atom;
+          winnerStart = w.start;
         }
       }
-      atom.el.classList.toggle("math-live-glow", hit);
+    }
+
+    if (winnerAtom !== this.activeAtom) {
+      if (this.activeAtom) {
+        for (const el of this.activeAtom.els) el.classList.remove("math-live-glow");
+      }
+      if (winnerAtom) {
+        for (const el of winnerAtom.els) el.classList.add("math-live-glow");
+      }
+      this.activeAtom = winnerAtom;
     }
 
     // 5. Apply gentle Spotlight to active block
