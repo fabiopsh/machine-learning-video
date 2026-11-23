@@ -33,32 +33,27 @@ videolezioni/
     └── <altri-capitoli>/         # Cartelle predisposte con audio/ e subtitles/
 ```
 
-## Generazione audio una tantum
+## Generazione audio una tantum (Batch-and-Splice + `MMS_FA`)
 
-L'audio non viene mai generato all'apertura della pagina: si produce **una sola volta** con `generate_audio.py` e rimane in locale nella cartella della lezione.
+L'audio non viene mai generato all'apertura della pagina: si produce **una sola volta** in locale.
 
-### 1. Voce neurale senza chiave API (default, consigliata subito)
-Usa `edge-tts` (`it-IT-GiuseppeMultilingualNeural`, oppure `it-IT-ElsaNeural` / `it-IT-DiegoNeural`): alta qualità, pronuncia bene anche termini inglesi ML e produce **timestamp esatti parola per parola** per sottotitoli e cues.
-
-```powershell
-python videolezioni/scripts/generate_audio.py 10-perceptron
-```
-
-### 2. Google TTS senza chiave API (`gTTS`)
-Usa il servizio Google Translate TTS senza alcuna chiave API, salvando MP3 locali e calibrando i tempi sulla durata reale:
+### Workflow consigliato — `Kore` (`gemini-3.8-flash-tts`, ~8-9 RPD per capitolo)
+Unisce 2–3 scene per chiamata API, estrae il PCM puro, separa le scene e inserisce le pause `[pause:X]` in locale con `MMS_FA` (0,00 €), tracciando il budget in `videolezioni/.budget_usage.json` (tetto globale `4.80 €`):
 
 ```powershell
-python videolezioni/scripts/generate_audio.py 10-perceptron --provider gtts --force
+# 1. Stima RPD e costo a 0 €
+python videolezioni/scripts/generate_batch.py 10-perceptron --all-missing --dry-run
+
+# 2. Genera tutte le scene mancanti in batch + taglio e allineamento word-level
+python videolezioni/scripts/generate_batch.py 10-perceptron --all-missing --max-run-eur 0.45
+
+# 3. Se modifichi solo slide/cues/highlight dopo la generazione (0 €, 0 RPD):
+python videolezioni/scripts/align_audio.py 10-perceptron
 ```
 
-### 3. Google Gemini API TTS (quando avrai una `GEMINI_API_KEY`)
-Voce espressiva Google AI Studio (`gemini-2.5-flash-preview-tts`, voce `Kore` / `Orus`):
-
-```powershell
-pip install google-genai
-$env:GEMINI_API_KEY="la-tua-chiave"
-python videolezioni/scripts/generate_audio.py 10-perceptron --provider gemini --voice Kore --force
-```
+### Alternative gratuite senza API key
+- **Edge Neural (`Elsa`)**: `python videolezioni/scripts/generate_audio.py 10-perceptron --provider edge --voice it-IT-ElsaNeural --force`
+- **Google `gTTS`**: `python videolezioni/scripts/generate_audio.py 10-perceptron --provider gtts --force`
 
 ## Comandi da tastiera nel player
 

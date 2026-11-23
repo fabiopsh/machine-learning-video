@@ -1,0 +1,831 @@
+{
+  "duration": 54.26,
+  "segments": [
+    {
+      "start": 0.88,
+      "end": 5.401,
+      "text": "Una proprietà fondamentale: le unità nascoste devono essere non lineari.",
+      "words": [
+        {
+          "text": "Una",
+          "start": 0.88,
+          "end": 1.021
+        },
+        {
+          "text": "proprietà",
+          "start": 1.061,
+          "end": 1.381
+        },
+        {
+          "text": "fondamentale:",
+          "start": 1.441,
+          "end": 2.101
+        },
+        {
+          "text": "le",
+          "start": 2.781,
+          "end": 2.861
+        },
+        {
+          "text": "unità",
+          "start": 2.921,
+          "end": 3.141
+        },
+        {
+          "text": "nascoste",
+          "start": 3.201,
+          "end": 3.721
+        },
+        {
+          "text": "devono",
+          "start": 3.921,
+          "end": 4.181
+        },
+        {
+          "text": "essere",
+          "start": 4.241,
+          "end": 4.561
+        },
+        {
+          "text": "non",
+          "start": 4.721,
+          "end": 4.881
+        },
+        {
+          "text": "lineari.",
+          "start": 4.921,
+          "end": 5.401
+        }
+      ]
+    },
+    {
+      "start": 6.201,
+      "end": 9.482,
+      "text": "Se usassimo attivazioni lineari nello strato nascosto e in uscita,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 6.201,
+          "end": 6.261
+        },
+        {
+          "text": "usassimo",
+          "start": 6.301,
+          "end": 6.682
+        },
+        {
+          "text": "attivazioni",
+          "start": 6.722,
+          "end": 7.222
+        },
+        {
+          "text": "lineari",
+          "start": 7.282,
+          "end": 7.662
+        },
+        {
+          "text": "nello",
+          "start": 7.722,
+          "end": 7.902
+        },
+        {
+          "text": "strato",
+          "start": 7.922,
+          "end": 8.182
+        },
+        {
+          "text": "nascosto",
+          "start": 8.222,
+          "end": 8.762
+        },
+        {
+          "text": "e",
+          "start": 8.822,
+          "end": 8.862
+        },
+        {
+          "text": "in",
+          "start": 8.902,
+          "end": 8.982
+        },
+        {
+          "text": "uscita,",
+          "start": 9.042,
+          "end": 9.482
+        }
+      ]
+    },
+    {
+      "start": 9.942,
+      "end": 13.903,
+      "text": "un MLP a due strati collasserebbe esattamente a una rete a un solo strato.",
+      "words": [
+        {
+          "text": "un",
+          "start": 9.942,
+          "end": 10.042
+        },
+        {
+          "text": "MLP",
+          "start": 10.162,
+          "end": 10.402
+        },
+        {
+          "text": "a",
+          "start": 10.562,
+          "end": 10.602
+        },
+        {
+          "text": "due",
+          "start": 10.622,
+          "end": 10.762
+        },
+        {
+          "text": "strati",
+          "start": 10.802,
+          "end": 11.102
+        },
+        {
+          "text": "collasserebbe",
+          "start": 11.162,
+          "end": 11.742
+        },
+        {
+          "text": "esattamente",
+          "start": 11.802,
+          "end": 12.463
+        },
+        {
+          "text": "a",
+          "start": 12.583,
+          "end": 12.623
+        },
+        {
+          "text": "una",
+          "start": 12.683,
+          "end": 12.803
+        },
+        {
+          "text": "rete",
+          "start": 12.843,
+          "end": 13.043
+        },
+        {
+          "text": "a",
+          "start": 13.103,
+          "end": 13.143
+        },
+        {
+          "text": "un",
+          "start": 13.183,
+          "end": 13.263
+        },
+        {
+          "text": "solo",
+          "start": 13.323,
+          "end": 13.523
+        },
+        {
+          "text": "strato.",
+          "start": 13.563,
+          "end": 13.903
+        }
+      ]
+    },
+    {
+      "start": 14.703,
+      "end": 16.703,
+      "text": "Verifichiamolo in due passaggi algebrici.",
+      "words": [
+        {
+          "text": "Verifichiamolo",
+          "start": 14.703,
+          "end": 15.323
+        },
+        {
+          "text": "in",
+          "start": 15.463,
+          "end": 15.543
+        },
+        {
+          "text": "due",
+          "start": 15.583,
+          "end": 15.703
+        },
+        {
+          "text": "passaggi",
+          "start": 15.743,
+          "end": 16.123
+        },
+        {
+          "text": "algebrici.",
+          "start": 16.163,
+          "end": 16.703
+        }
+      ]
+    },
+    {
+      "start": 17.523,
+      "end": 21.164,
+      "text": "Scriviamo h di x come somma su j di w con k j,",
+      "words": [
+        {
+          "text": "Scriviamo",
+          "start": 17.523,
+          "end": 17.944
+        },
+        {
+          "text": "h",
+          "start": 18.164,
+          "end": 18.204
+        },
+        {
+          "text": "di",
+          "start": 18.264,
+          "end": 18.324
+        },
+        {
+          "text": "x",
+          "start": 18.484,
+          "end": 18.524
+        },
+        {
+          "text": "come",
+          "start": 18.784,
+          "end": 18.964
+        },
+        {
+          "text": "somma",
+          "start": 19.104,
+          "end": 19.344
+        },
+        {
+          "text": "su",
+          "start": 19.424,
+          "end": 19.504
+        },
+        {
+          "text": "j",
+          "start": 19.584,
+          "end": 19.624
+        },
+        {
+          "text": "di",
+          "start": 20.024,
+          "end": 20.104
+        },
+        {
+          "text": "w",
+          "start": 20.444,
+          "end": 20.484
+        },
+        {
+          "text": "con",
+          "start": 20.624,
+          "end": 20.764
+        },
+        {
+          "text": "k",
+          "start": 20.804,
+          "end": 20.844
+        },
+        {
+          "text": "j,",
+          "start": 21.124,
+          "end": 21.164
+        }
+      ]
+    },
+    {
+      "start": 21.744,
+      "end": 24.765,
+      "text": "per la somma su i di w con j i per x con i.",
+      "words": [
+        {
+          "text": "per",
+          "start": 21.744,
+          "end": 21.864
+        },
+        {
+          "text": "la",
+          "start": 21.904,
+          "end": 21.964
+        },
+        {
+          "text": "somma",
+          "start": 22.004,
+          "end": 22.224
+        },
+        {
+          "text": "su",
+          "start": 22.304,
+          "end": 22.384
+        },
+        {
+          "text": "i",
+          "start": 22.464,
+          "end": 22.504
+        },
+        {
+          "text": "di",
+          "start": 22.744,
+          "end": 22.804
+        },
+        {
+          "text": "w",
+          "start": 23.164,
+          "end": 23.204
+        },
+        {
+          "text": "con",
+          "start": 23.384,
+          "end": 23.524
+        },
+        {
+          "text": "j",
+          "start": 23.585,
+          "end": 23.625
+        },
+        {
+          "text": "i",
+          "start": 23.785,
+          "end": 23.825
+        },
+        {
+          "text": "per",
+          "start": 24.145,
+          "end": 24.285
+        },
+        {
+          "text": "x",
+          "start": 24.425,
+          "end": 24.465
+        },
+        {
+          "text": "con",
+          "start": 24.545,
+          "end": 24.685
+        },
+        {
+          "text": "i.",
+          "start": 24.725,
+          "end": 24.765
+        }
+      ]
+    },
+    {
+      "start": 25.525,
+      "end": 28.485,
+      "text": "Scambiando l'ordine delle due sommatorie e raccogliendo x con i,",
+      "words": [
+        {
+          "text": "Scambiando",
+          "start": 25.525,
+          "end": 25.925
+        },
+        {
+          "text": "l'ordine",
+          "start": 25.965,
+          "end": 26.345
+        },
+        {
+          "text": "delle",
+          "start": 26.385,
+          "end": 26.565
+        },
+        {
+          "text": "due",
+          "start": 26.605,
+          "end": 26.725
+        },
+        {
+          "text": "sommatorie",
+          "start": 26.765,
+          "end": 27.325
+        },
+        {
+          "text": "e",
+          "start": 27.425,
+          "end": 27.465
+        },
+        {
+          "text": "raccogliendo",
+          "start": 27.505,
+          "end": 27.985
+        },
+        {
+          "text": "x",
+          "start": 28.145,
+          "end": 28.185
+        },
+        {
+          "text": "con",
+          "start": 28.265,
+          "end": 28.405
+        },
+        {
+          "text": "i,",
+          "start": 28.445,
+          "end": 28.485
+        }
+      ]
+    },
+    {
+      "start": 28.925,
+      "end": 32.846,
+      "text": "otteniamo la somma su i di un singolo coefficiente w primo con i,",
+      "words": [
+        {
+          "text": "otteniamo",
+          "start": 28.925,
+          "end": 29.286
+        },
+        {
+          "text": "la",
+          "start": 29.366,
+          "end": 29.426
+        },
+        {
+          "text": "somma",
+          "start": 29.486,
+          "end": 29.726
+        },
+        {
+          "text": "su",
+          "start": 29.806,
+          "end": 29.906
+        },
+        {
+          "text": "i",
+          "start": 29.986,
+          "end": 30.026
+        },
+        {
+          "text": "di",
+          "start": 30.186,
+          "end": 30.266
+        },
+        {
+          "text": "un",
+          "start": 30.306,
+          "end": 30.406
+        },
+        {
+          "text": "singolo",
+          "start": 30.486,
+          "end": 30.806
+        },
+        {
+          "text": "coefficiente",
+          "start": 30.846,
+          "end": 31.586
+        },
+        {
+          "text": "w",
+          "start": 31.966,
+          "end": 32.006
+        },
+        {
+          "text": "primo",
+          "start": 32.126,
+          "end": 32.526
+        },
+        {
+          "text": "con",
+          "start": 32.606,
+          "end": 32.746
+        },
+        {
+          "text": "i,",
+          "start": 32.806,
+          "end": 32.846
+        }
+      ]
+    },
+    {
+      "start": 33.226,
+      "end": 37.007,
+      "text": "uguale alla somma su j di w con k j per w con j i.",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 33.226,
+          "end": 33.546
+        },
+        {
+          "text": "alla",
+          "start": 33.586,
+          "end": 33.706
+        },
+        {
+          "text": "somma",
+          "start": 33.746,
+          "end": 33.966
+        },
+        {
+          "text": "su",
+          "start": 34.026,
+          "end": 34.106
+        },
+        {
+          "text": "j",
+          "start": 34.206,
+          "end": 34.246
+        },
+        {
+          "text": "di",
+          "start": 34.566,
+          "end": 34.646
+        },
+        {
+          "text": "w",
+          "start": 34.987,
+          "end": 35.027
+        },
+        {
+          "text": "con",
+          "start": 35.147,
+          "end": 35.287
+        },
+        {
+          "text": "k",
+          "start": 35.307,
+          "end": 35.347
+        },
+        {
+          "text": "j",
+          "start": 35.587,
+          "end": 35.627
+        },
+        {
+          "text": "per",
+          "start": 35.947,
+          "end": 36.067
+        },
+        {
+          "text": "w",
+          "start": 36.407,
+          "end": 36.447
+        },
+        {
+          "text": "con",
+          "start": 36.587,
+          "end": 36.727
+        },
+        {
+          "text": "j",
+          "start": 36.767,
+          "end": 36.807
+        },
+        {
+          "text": "i.",
+          "start": 36.967,
+          "end": 37.007
+        }
+      ]
+    },
+    {
+      "start": 37.787,
+      "end": 42.728,
+      "text": "È ancora un semplice modello lineare: la composizione di funzioni lineari resta sempre lineare.",
+      "words": [
+        {
+          "text": "È",
+          "start": 37.787,
+          "end": 37.827
+        },
+        {
+          "text": "ancora",
+          "start": 37.867,
+          "end": 38.147
+        },
+        {
+          "text": "un",
+          "start": 38.167,
+          "end": 38.247
+        },
+        {
+          "text": "semplice",
+          "start": 38.267,
+          "end": 38.647
+        },
+        {
+          "text": "modello",
+          "start": 38.687,
+          "end": 38.967
+        },
+        {
+          "text": "lineare:",
+          "start": 39.027,
+          "end": 39.487
+        },
+        {
+          "text": "la",
+          "start": 39.767,
+          "end": 39.847
+        },
+        {
+          "text": "composizione",
+          "start": 39.867,
+          "end": 40.428
+        },
+        {
+          "text": "di",
+          "start": 40.468,
+          "end": 40.528
+        },
+        {
+          "text": "funzioni",
+          "start": 40.568,
+          "end": 40.928
+        },
+        {
+          "text": "lineari",
+          "start": 40.988,
+          "end": 41.428
+        },
+        {
+          "text": "resta",
+          "start": 41.568,
+          "end": 41.828
+        },
+        {
+          "text": "sempre",
+          "start": 41.888,
+          "end": 42.228
+        },
+        {
+          "text": "lineare.",
+          "start": 42.288,
+          "end": 42.728
+        }
+      ]
+    },
+    {
+      "start": 43.608,
+      "end": 47.749,
+      "text": "La non linearità delle attivazioni è quindi indispensabile, ma ha un prezzo preciso:",
+      "words": [
+        {
+          "text": "La",
+          "start": 43.608,
+          "end": 43.668
+        },
+        {
+          "text": "non",
+          "start": 43.708,
+          "end": 43.828
+        },
+        {
+          "text": "linearità",
+          "start": 43.868,
+          "end": 44.328
+        },
+        {
+          "text": "delle",
+          "start": 44.388,
+          "end": 44.548
+        },
+        {
+          "text": "attivazioni",
+          "start": 44.588,
+          "end": 45.168
+        },
+        {
+          "text": "è",
+          "start": 45.328,
+          "end": 45.368
+        },
+        {
+          "text": "quindi",
+          "start": 45.428,
+          "end": 45.668
+        },
+        {
+          "text": "indispensabile,",
+          "start": 45.708,
+          "end": 46.509
+        },
+        {
+          "text": "ma",
+          "start": 46.749,
+          "end": 46.809
+        },
+        {
+          "text": "ha",
+          "start": 46.849,
+          "end": 46.889
+        },
+        {
+          "text": "un",
+          "start": 46.929,
+          "end": 46.989
+        },
+        {
+          "text": "prezzo",
+          "start": 47.029,
+          "end": 47.289
+        },
+        {
+          "text": "preciso:",
+          "start": 47.329,
+          "end": 47.749
+        }
+      ]
+    },
+    {
+      "start": 48.329,
+      "end": 53.49,
+      "text": "il modello diventa non lineare nei parametri e l'addestramento diventa un problema di ottimizzazione non",
+      "words": [
+        {
+          "text": "il",
+          "start": 48.329,
+          "end": 48.409
+        },
+        {
+          "text": "modello",
+          "start": 48.429,
+          "end": 48.789
+        },
+        {
+          "text": "diventa",
+          "start": 48.889,
+          "end": 49.229
+        },
+        {
+          "text": "non",
+          "start": 49.329,
+          "end": 49.489
+        },
+        {
+          "text": "lineare",
+          "start": 49.529,
+          "end": 49.889
+        },
+        {
+          "text": "nei",
+          "start": 49.949,
+          "end": 50.049
+        },
+        {
+          "text": "parametri",
+          "start": 50.069,
+          "end": 50.589
+        },
+        {
+          "text": "e",
+          "start": 50.769,
+          "end": 50.809
+        },
+        {
+          "text": "l'addestramento",
+          "start": 50.849,
+          "end": 51.449
+        },
+        {
+          "text": "diventa",
+          "start": 51.489,
+          "end": 51.81
+        },
+        {
+          "text": "un",
+          "start": 51.85,
+          "end": 51.91
+        },
+        {
+          "text": "problema",
+          "start": 51.93,
+          "end": 52.31
+        },
+        {
+          "text": "di",
+          "start": 52.35,
+          "end": 52.39
+        },
+        {
+          "text": "ottimizzazione",
+          "start": 52.43,
+          "end": 53.19
+        },
+        {
+          "text": "non",
+          "start": 53.35,
+          "end": 53.49
+        }
+      ]
+    },
+    {
+      "start": 53.53,
+      "end": 54.01,
+      "text": "convesso.",
+      "words": [
+        {
+          "text": "convesso.",
+          "start": 53.53,
+          "end": 54.01
+        }
+      ]
+    }
+  ]
+}

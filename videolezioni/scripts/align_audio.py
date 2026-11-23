@@ -161,9 +161,19 @@ def group_words_to_subtitles(words: list[dict[str, Any]], duration: float) -> di
     return {"duration": round(duration, 3), "segments": segments}
 
 
+def split_match_tokens(text: str) -> list[str]:
+    """Spezza anche su apostrofi (es. l'ingresso -> ['l', 'ingresso']) per match 100% robusto."""
+    return re.findall(r"[a-z0-9àèéìòù]+", text.lower())
+
+
 def align_cues_exact(cues: list[dict[str, Any]], words: list[dict[str, Any]], duration: float) -> tuple[int, int]:
     """Aggancia ogni cue al millisecondo esatto della sua frase `anchor`."""
-    norm_words = [normalize_match_token(w["text"]) for w in words]
+    flat_tokens: list[tuple[str, float]] = []
+    for w in words:
+        for tok in split_match_tokens(w["text"]):
+            flat_tokens.append((tok, w["start"]))
+    tok_strs = [t[0] for t in flat_tokens]
+
     matched = 0
     total_anchored = 0
 
@@ -172,21 +182,21 @@ def align_cues_exact(cues: list[dict[str, Any]], words: list[dict[str, Any]], du
         if not anchor:
             continue
         total_anchored += 1
-        a_toks = [normalize_match_token(t) for t in anchor.split() if normalize_match_token(t)]
+        a_toks = split_match_tokens(anchor)
         if not a_toks:
             continue
 
         n = len(a_toks)
         found_idx = -1
-        for i in range(len(norm_words) - n + 1):
-            if norm_words[i : i + n] == a_toks:
+        for i in range(len(tok_strs) - n + 1):
+            if tok_strs[i : i + n] == a_toks:
                 found_idx = i
                 break
 
         if found_idx >= 0:
             # Anticipo visivo di 120ms così l'occhio coglie il simbolo mentre la voce inizia
             lead = float(cue.get("lead_sec", 0.12))
-            cue["at"] = round(min(max(0.0, duration - 0.15), max(0.0, words[found_idx]["start"] - lead)), 2)
+            cue["at"] = round(min(max(0.0, duration - 0.15), max(0.0, flat_tokens[found_idx][1] - lead)), 2)
             matched += 1
 
     return matched, total_anchored

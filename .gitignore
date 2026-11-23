@@ -3,6 +3,7 @@
 videolezioni/.env
 videolezioni/.budget_usage.json
 videolezioni/lessons/*/audio/.chunks/
+videolezioni/lessons/*/audio/.batches/
 
 # Python / OS caches
 __pycache__/

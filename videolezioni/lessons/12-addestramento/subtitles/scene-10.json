@@ -1,0 +1,947 @@
+{
+  "duration": 66.573,
+  "segments": [
+    {
+      "start": 0.172,
+      "end": 5.373,
+      "text": "Lo strumento principale contro l'overfitting è la regolarizzazione di Tikhonov applicata a tutti i pesi",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 0.172,
+          "end": 0.252
+        },
+        {
+          "text": "strumento",
+          "start": 0.292,
+          "end": 0.652
+        },
+        {
+          "text": "principale",
+          "start": 0.692,
+          "end": 1.172
+        },
+        {
+          "text": "contro",
+          "start": 1.233,
+          "end": 1.493
+        },
+        {
+          "text": "l'overfitting",
+          "start": 1.553,
+          "end": 2.233
+        },
+        {
+          "text": "è",
+          "start": 2.293,
+          "end": 2.333
+        },
+        {
+          "text": "la",
+          "start": 2.353,
+          "end": 2.413
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 2.493,
+          "end": 3.413
+        },
+        {
+          "text": "di",
+          "start": 3.453,
+          "end": 3.533
+        },
+        {
+          "text": "Tikhonov",
+          "start": 3.613,
+          "end": 4.073
+        },
+        {
+          "text": "applicata",
+          "start": 4.093,
+          "end": 4.573
+        },
+        {
+          "text": "a",
+          "start": 4.633,
+          "end": 4.673
+        },
+        {
+          "text": "tutti",
+          "start": 4.753,
+          "end": 5.053
+        },
+        {
+          "text": "i",
+          "start": 5.093,
+          "end": 5.133
+        },
+        {
+          "text": "pesi",
+          "start": 5.153,
+          "end": 5.373
+        }
+      ]
+    },
+    {
+      "start": 5.413,
+      "end": 5.933,
+      "text": "della rete.",
+      "words": [
+        {
+          "text": "della",
+          "start": 5.413,
+          "end": 5.613
+        },
+        {
+          "text": "rete.",
+          "start": 5.673,
+          "end": 5.933
+        }
+      ]
+    },
+    {
+      "start": 6.533,
+      "end": 10.654,
+      "text": "Alla somma degli errori quadratici aggiungiamo lambda per la norma quadra di w.",
+      "words": [
+        {
+          "text": "Alla",
+          "start": 6.533,
+          "end": 6.693
+        },
+        {
+          "text": "somma",
+          "start": 6.753,
+          "end": 6.993
+        },
+        {
+          "text": "degli",
+          "start": 7.033,
+          "end": 7.213
+        },
+        {
+          "text": "errori",
+          "start": 7.253,
+          "end": 7.514
+        },
+        {
+          "text": "quadratici",
+          "start": 7.554,
+          "end": 8.174
+        },
+        {
+          "text": "aggiungiamo",
+          "start": 8.294,
+          "end": 8.834
+        },
+        {
+          "text": "lambda",
+          "start": 9.054,
+          "end": 9.454
+        },
+        {
+          "text": "per",
+          "start": 9.634,
+          "end": 9.734
+        },
+        {
+          "text": "la",
+          "start": 9.794,
+          "end": 9.854
+        },
+        {
+          "text": "norma",
+          "start": 9.914,
+          "end": 10.154
+        },
+        {
+          "text": "quadra",
+          "start": 10.214,
+          "end": 10.474
+        },
+        {
+          "text": "di",
+          "start": 10.514,
+          "end": 10.574
+        },
+        {
+          "text": "w.",
+          "start": 10.614,
+          "end": 10.654
+        }
+      ]
+    },
+    {
+      "start": 11.874,
+      "end": 17.515,
+      "text": "Derivando si ottiene l'effetto di weight decay: si aggiunge circa due lambda w al gradiente",
+      "words": [
+        {
+          "text": "Derivando",
+          "start": 11.874,
+          "end": 12.394
+        },
+        {
+          "text": "si",
+          "start": 12.514,
+          "end": 12.574
+        },
+        {
+          "text": "ottiene",
+          "start": 12.594,
+          "end": 12.874
+        },
+        {
+          "text": "l'effetto",
+          "start": 12.934,
+          "end": 13.354
+        },
+        {
+          "text": "di",
+          "start": 13.394,
+          "end": 13.454
+        },
+        {
+          "text": "weight",
+          "start": 13.554,
+          "end": 13.755
+        },
+        {
+          "text": "decay:",
+          "start": 13.755,
+          "end": 14.115
+        },
+        {
+          "text": "si",
+          "start": 14.575,
+          "end": 14.635
+        },
+        {
+          "text": "aggiunge",
+          "start": 14.675,
+          "end": 15.015
+        },
+        {
+          "text": "circa",
+          "start": 15.075,
+          "end": 15.355
+        },
+        {
+          "text": "due",
+          "start": 15.535,
+          "end": 15.795
+        },
+        {
+          "text": "lambda",
+          "start": 15.975,
+          "end": 16.355
+        },
+        {
+          "text": "w",
+          "start": 16.455,
+          "end": 16.495
+        },
+        {
+          "text": "al",
+          "start": 16.975,
+          "end": 17.055
+        },
+        {
+          "text": "gradiente",
+          "start": 17.075,
+          "end": 17.515
+        }
+      ]
+    },
+    {
+      "start": 17.575,
+      "end": 19.315,
+      "text": "di ogni peso, tenendo i pesi piccoli.",
+      "words": [
+        {
+          "text": "di",
+          "start": 17.575,
+          "end": 17.615
+        },
+        {
+          "text": "ogni",
+          "start": 17.675,
+          "end": 17.835
+        },
+        {
+          "text": "peso,",
+          "start": 17.895,
+          "end": 18.195
+        },
+        {
+          "text": "tenendo",
+          "start": 18.335,
+          "end": 18.615
+        },
+        {
+          "text": "i",
+          "start": 18.655,
+          "end": 18.695
+        },
+        {
+          "text": "pesi",
+          "start": 18.695,
+          "end": 18.875
+        },
+        {
+          "text": "piccoli.",
+          "start": 18.915,
+          "end": 19.315
+        }
+      ]
+    },
+    {
+      "start": 19.835,
+      "end": 23.396,
+      "text": "Il parametro lambda è piccolo, ad esempio zero virgola zero uno,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 19.835,
+          "end": 19.915
+        },
+        {
+          "text": "parametro",
+          "start": 19.956,
+          "end": 20.396
+        },
+        {
+          "text": "lambda",
+          "start": 20.456,
+          "end": 20.756
+        },
+        {
+          "text": "è",
+          "start": 20.916,
+          "end": 20.956
+        },
+        {
+          "text": "piccolo,",
+          "start": 21.056,
+          "end": 21.476
+        },
+        {
+          "text": "ad",
+          "start": 21.676,
+          "end": 21.756
+        },
+        {
+          "text": "esempio",
+          "start": 21.796,
+          "end": 22.136
+        },
+        {
+          "text": "zero",
+          "start": 22.336,
+          "end": 22.536
+        },
+        {
+          "text": "virgola",
+          "start": 22.576,
+          "end": 22.896
+        },
+        {
+          "text": "zero",
+          "start": 22.976,
+          "end": 23.156
+        },
+        {
+          "text": "uno,",
+          "start": 23.256,
+          "end": 23.396
+        }
+      ]
+    },
+    {
+      "start": 23.556,
+      "end": 25.296,
+      "text": "e si sceglie con la model selection.",
+      "words": [
+        {
+          "text": "e",
+          "start": 23.556,
+          "end": 23.596
+        },
+        {
+          "text": "si",
+          "start": 23.676,
+          "end": 23.756
+        },
+        {
+          "text": "sceglie",
+          "start": 23.816,
+          "end": 24.116
+        },
+        {
+          "text": "con",
+          "start": 24.176,
+          "end": 24.276
+        },
+        {
+          "text": "la",
+          "start": 24.316,
+          "end": 24.376
+        },
+        {
+          "text": "model",
+          "start": 24.436,
+          "end": 24.696
+        },
+        {
+          "text": "selection.",
+          "start": 24.776,
+          "end": 25.296
+        }
+      ]
+    },
+    {
+      "start": 25.976,
+      "end": 30.297,
+      "text": "Nei risultati si riporta sempre l'errore sui dati, mai la loss penalizzata.",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 25.976,
+          "end": 26.137
+        },
+        {
+          "text": "risultati",
+          "start": 26.177,
+          "end": 26.717
+        },
+        {
+          "text": "si",
+          "start": 26.877,
+          "end": 26.957
+        },
+        {
+          "text": "riporta",
+          "start": 26.997,
+          "end": 27.357
+        },
+        {
+          "text": "sempre",
+          "start": 27.477,
+          "end": 27.797
+        },
+        {
+          "text": "l'errore",
+          "start": 27.837,
+          "end": 28.197
+        },
+        {
+          "text": "sui",
+          "start": 28.277,
+          "end": 28.457
+        },
+        {
+          "text": "dati,",
+          "start": 28.497,
+          "end": 28.817
+        },
+        {
+          "text": "mai",
+          "start": 29.057,
+          "end": 29.257
+        },
+        {
+          "text": "la",
+          "start": 29.337,
+          "end": 29.397
+        },
+        {
+          "text": "loss",
+          "start": 29.437,
+          "end": 29.577
+        },
+        {
+          "text": "penalizzata.",
+          "start": 29.637,
+          "end": 30.297
+        }
+      ]
+    },
+    {
+      "start": 31.197,
+      "end": 35.458,
+      "text": "Osserva l'effetto sui dati reali delle note, con una rete da dieci unità nascoste.",
+      "words": [
+        {
+          "text": "Osserva",
+          "start": 31.197,
+          "end": 31.517
+        },
+        {
+          "text": "l'effetto",
+          "start": 31.557,
+          "end": 31.917
+        },
+        {
+          "text": "sui",
+          "start": 31.997,
+          "end": 32.157
+        },
+        {
+          "text": "dati",
+          "start": 32.197,
+          "end": 32.417
+        },
+        {
+          "text": "reali",
+          "start": 32.578,
+          "end": 32.858
+        },
+        {
+          "text": "delle",
+          "start": 32.898,
+          "end": 33.098
+        },
+        {
+          "text": "note,",
+          "start": 33.158,
+          "end": 33.438
+        },
+        {
+          "text": "con",
+          "start": 33.498,
+          "end": 33.618
+        },
+        {
+          "text": "una",
+          "start": 33.658,
+          "end": 33.778
+        },
+        {
+          "text": "rete",
+          "start": 33.818,
+          "end": 34.018
+        },
+        {
+          "text": "da",
+          "start": 34.058,
+          "end": 34.118
+        },
+        {
+          "text": "dieci",
+          "start": 34.218,
+          "end": 34.518
+        },
+        {
+          "text": "unità",
+          "start": 34.578,
+          "end": 34.818
+        },
+        {
+          "text": "nascoste.",
+          "start": 34.878,
+          "end": 35.458
+        }
+      ]
+    },
+    {
+      "start": 35.998,
+      "end": 40.639,
+      "text": "A sinistra, senza weight decay, il confine nero è frastagliato e segue il rumore,",
+      "words": [
+        {
+          "text": "A",
+          "start": 35.998,
+          "end": 36.038
+        },
+        {
+          "text": "sinistra,",
+          "start": 36.118,
+          "end": 36.638
+        },
+        {
+          "text": "senza",
+          "start": 36.838,
+          "end": 37.078
+        },
+        {
+          "text": "weight",
+          "start": 37.138,
+          "end": 37.298
+        },
+        {
+          "text": "decay,",
+          "start": 37.338,
+          "end": 37.718
+        },
+        {
+          "text": "il",
+          "start": 37.898,
+          "end": 37.978
+        },
+        {
+          "text": "confine",
+          "start": 38.038,
+          "end": 38.398
+        },
+        {
+          "text": "nero",
+          "start": 38.438,
+          "end": 38.618
+        },
+        {
+          "text": "è",
+          "start": 38.679,
+          "end": 38.719
+        },
+        {
+          "text": "frastagliato",
+          "start": 38.759,
+          "end": 39.599
+        },
+        {
+          "text": "e",
+          "start": 39.679,
+          "end": 39.719
+        },
+        {
+          "text": "segue",
+          "start": 39.799,
+          "end": 40.039
+        },
+        {
+          "text": "il",
+          "start": 40.099,
+          "end": 40.179
+        },
+        {
+          "text": "rumore,",
+          "start": 40.259,
+          "end": 40.639
+        }
+      ]
+    },
+    {
+      "start": 41.059,
+      "end": 43.799,
+      "text": "con errore di test zero virgola duecentocinquantatré.",
+      "words": [
+        {
+          "text": "con",
+          "start": 41.059,
+          "end": 41.179
+        },
+        {
+          "text": "errore",
+          "start": 41.219,
+          "end": 41.539
+        },
+        {
+          "text": "di",
+          "start": 41.659,
+          "end": 41.739
+        },
+        {
+          "text": "test",
+          "start": 41.819,
+          "end": 42.119
+        },
+        {
+          "text": "zero",
+          "start": 42.319,
+          "end": 42.539
+        },
+        {
+          "text": "virgola",
+          "start": 42.579,
+          "end": 42.859
+        },
+        {
+          "text": "duecentocinquantatré.",
+          "start": 42.879,
+          "end": 43.799
+        }
+      ]
+    },
+    {
+      "start": 44.9,
+      "end": 48.54,
+      "text": "A destra, con weight decay, il confine diventa molto più regolare,",
+      "words": [
+        {
+          "text": "A",
+          "start": 44.9,
+          "end": 44.94
+        },
+        {
+          "text": "destra,",
+          "start": 44.98,
+          "end": 45.36
+        },
+        {
+          "text": "con",
+          "start": 45.56,
+          "end": 45.68
+        },
+        {
+          "text": "weight",
+          "start": 45.72,
+          "end": 45.88
+        },
+        {
+          "text": "decay,",
+          "start": 45.88,
+          "end": 46.18
+        },
+        {
+          "text": "il",
+          "start": 46.64,
+          "end": 46.72
+        },
+        {
+          "text": "confine",
+          "start": 46.76,
+          "end": 47.06
+        },
+        {
+          "text": "diventa",
+          "start": 47.1,
+          "end": 47.44
+        },
+        {
+          "text": "molto",
+          "start": 47.56,
+          "end": 47.86
+        },
+        {
+          "text": "più",
+          "start": 47.9,
+          "end": 48.0
+        },
+        {
+          "text": "regolare,",
+          "start": 48.06,
+          "end": 48.54
+        }
+      ]
+    },
+    {
+      "start": 48.68,
+      "end": 53.961,
+      "text": "vicino al confine di Bayes tratteggiato, e l'errore di test scende a zero virgola duecentoventinove.",
+      "words": [
+        {
+          "text": "vicino",
+          "start": 48.68,
+          "end": 48.96
+        },
+        {
+          "text": "al",
+          "start": 48.98,
+          "end": 49.06
+        },
+        {
+          "text": "confine",
+          "start": 49.08,
+          "end": 49.4
+        },
+        {
+          "text": "di",
+          "start": 49.44,
+          "end": 49.5
+        },
+        {
+          "text": "Bayes",
+          "start": 49.56,
+          "end": 49.86
+        },
+        {
+          "text": "tratteggiato,",
+          "start": 49.88,
+          "end": 50.58
+        },
+        {
+          "text": "e",
+          "start": 50.94,
+          "end": 50.98
+        },
+        {
+          "text": "l'errore",
+          "start": 51.02,
+          "end": 51.381
+        },
+        {
+          "text": "di",
+          "start": 51.421,
+          "end": 51.501
+        },
+        {
+          "text": "test",
+          "start": 51.561,
+          "end": 51.861
+        },
+        {
+          "text": "scende",
+          "start": 51.981,
+          "end": 52.281
+        },
+        {
+          "text": "a",
+          "start": 52.321,
+          "end": 52.361
+        },
+        {
+          "text": "zero",
+          "start": 52.461,
+          "end": 52.661
+        },
+        {
+          "text": "virgola",
+          "start": 52.721,
+          "end": 53.021
+        },
+        {
+          "text": "duecentoventinove.",
+          "start": 53.061,
+          "end": 53.961
+        }
+      ]
+    },
+    {
+      "start": 54.801,
+      "end": 56.701,
+      "text": "Attenzione a un malinteso classico:",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 54.801,
+          "end": 55.381
+        },
+        {
+          "text": "a",
+          "start": 55.421,
+          "end": 55.461
+        },
+        {
+          "text": "un",
+          "start": 55.481,
+          "end": 55.561
+        },
+        {
+          "text": "malinteso",
+          "start": 55.601,
+          "end": 56.141
+        },
+        {
+          "text": "classico:",
+          "start": 56.201,
+          "end": 56.701
+        }
+      ]
+    },
+    {
+      "start": 57.582,
+      "end": 64.703,
+      "text": "la regolarizzazione controlla la complessità e la VC-dimension, ma non serve a stabilizzare una curva",
+      "words": [
+        {
+          "text": "la",
+          "start": 57.582,
+          "end": 57.642
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 57.762,
+          "end": 59.002
+        },
+        {
+          "text": "controlla",
+          "start": 59.282,
+          "end": 59.782
+        },
+        {
+          "text": "la",
+          "start": 59.862,
+          "end": 59.922
+        },
+        {
+          "text": "complessità",
+          "start": 59.982,
+          "end": 60.642
+        },
+        {
+          "text": "e",
+          "start": 61.142,
+          "end": 61.182
+        },
+        {
+          "text": "la",
+          "start": 61.242,
+          "end": 61.322
+        },
+        {
+          "text": "VC-dimension,",
+          "start": 61.402,
+          "end": 62.322
+        },
+        {
+          "text": "ma",
+          "start": 62.842,
+          "end": 62.902
+        },
+        {
+          "text": "non",
+          "start": 62.962,
+          "end": 63.082
+        },
+        {
+          "text": "serve",
+          "start": 63.142,
+          "end": 63.382
+        },
+        {
+          "text": "a",
+          "start": 63.422,
+          "end": 63.462
+        },
+        {
+          "text": "stabilizzare",
+          "start": 63.482,
+          "end": 64.123
+        },
+        {
+          "text": "una",
+          "start": 64.183,
+          "end": 64.303
+        },
+        {
+          "text": "curva",
+          "start": 64.383,
+          "end": 64.703
+        }
+      ]
+    },
+    {
+      "start": 64.743,
+      "end": 66.323,
+      "text": "di apprendimento oscillante.",
+      "words": [
+        {
+          "text": "di",
+          "start": 64.743,
+          "end": 64.803
+        },
+        {
+          "text": "apprendimento",
+          "start": 64.823,
+          "end": 65.483
+        },
+        {
+          "text": "oscillante.",
+          "start": 65.543,
+          "end": 66.323
+        }
+      ]
+    }
+  ]
+}

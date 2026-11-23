@@ -1,0 +1,777 @@
+{
+  "lesson_id": "12-addestramento",
+  "chapter": 12,
+  "part": "Parte IV · Reti neurali",
+  "title": "Addestrare una rete neurale",
+  "source_tex": "note_migliorate/capitoli/12-addestramento.tex",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "12.1 L'addestramento come percorso",
+      "title": "Addestrare una rete: un percorso nello spazio dei pesi",
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "tts_text": "Con la backpropagation sappiamo calcolare il gradiente di ogni peso. In questo capitolo affrontiamo tutte le scelte pratiche necessarie per addestrare davvero un Multi-Layer Perceptron. [pause:0.8] Un'interpretazione utilissima è vedere l'addestramento come un percorso nello spazio dei pesi, sulla superficie della loss. [pause:0.6] Questo percorso dipende dai dati e dal modello, ma anche da tre leve che controlliamo direttamente: il punto di partenza, cioè i pesi iniziali; la velocità di convergenza; e il punto finale, cioè la regola di arresto. Tutte queste scelte guidano la ricerca nello spazio delle ipotesi. [pause:0.9] Il modello è spesso sovra-parametrizzato e la superficie è non convessa e potenzialmente instabile: per questo contano gli iperparametri. [pause:0.7] Nelle slide le tecniche marcate con il simbolo di priorità sono pratiche essenziali da usare sempre; vanno invece evitate le regole empiriche trovate a caso in rete se non dimostrate o verificate sperimentalmente.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.1 · L'addestramento come percorso</div>\n  <h2 class=\"slide-title\">Controllare la ricerca nello spazio dei pesi</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Interpretazione chiave</div>\n    <p>La backpropagation traccia un <strong>percorso nello spazio dei pesi</strong> sulla superficie della loss: è un vero <strong>controllo della ricerca</strong> nello spazio delle ipotesi.</p>\n  </div>\n  <div id=\"s2\" class=\"flow-chain cue-hidden\">\n    <div id=\"f1\" class=\"flow-node\"><strong>Punto di partenza</strong><span>pesi iniziali \\(\\w(0)\\)</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"f2\" class=\"flow-node\"><strong>Velocità e passo</strong><span>batch, \\(\\eta\\), momentum</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"f3\" class=\"flow-node flow-node-accent\"><strong>Punto finale</strong><span>arresto e regolarizzazione</span></div>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Perché servono gli iperparametri</div>\n      <p>Modello spesso <strong>sovra-parametrizzato</strong>, ottimizzazione <strong>non convessa</strong> e potenzialmente instabile.</p>\n    </div>\n    <div class=\"box box-warn\">\n      <div class=\"box-label\">Metodo rigoroso vs regole empiriche</div>\n      <p>Le tecniche marcate <strong>(!)</strong> vanno usate sempre in pratica; evitare euristiche trovate in rete prive di fondamento o verifica sperimentale.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 14.3,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "percorso nello spazio dei pesi"
+        },
+        {
+          "at": 21.2,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "tre leve che controlliamo"
+        },
+        {
+          "at": 23.8,
+          "action": "highlight",
+          "target": "#f1",
+          "anchor": "punto di partenza"
+        },
+        {
+          "at": 27.0,
+          "action": "highlight",
+          "target": "#f2",
+          "anchor": "velocità di convergenza"
+        },
+        {
+          "at": 29.18,
+          "action": "highlight",
+          "target": "#f3",
+          "anchor": "punto finale"
+        },
+        {
+          "at": 36.81,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "spesso sovra-parametrizzato"
+        }
+      ],
+      "duration_sec": 56.6
+    },
+    {
+      "id": "scene-02",
+      "section": "12.2 Inizializzazione e minimi multipli",
+      "title": "Come inizializzare i pesi (e tre errori da evitare)",
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "tts_text": "Prima regola essenziale: inizializzare i pesi con valori casuali piccoli e vicini a zero, ad esempio tra meno zero virgola sette e più zero virgola sette per dati standardizzati. [pause:0.8] Ci sono tre errori classici da evitare assolutamente. [pause:0.5] Primo: pesi tutti nulli. Poiché i delta delle unità nascoste dipendono dai pesi verso l'uscita, resterebbero tutti a zero e la rete non imparerebbe nulla. [pause:0.6] Secondo: pesi grandi. Le sigmoidi partirebbero già saturate, con derivate quasi nulle e apprendimento lentissimo. [pause:0.6] Terzo: pesi tutti uguali. Le unità nascoste resterebbero simmetriche, riceverebbero aggiornamenti identici e calcolerebbero tutte la stessa funzione: la casualità serve a rompere la simmetria. [pause:0.9] Si può anche scalare l'intervallo in base al fan-in, cioè il numero di ingressi di un'unità. Molto usata è l'inizializzazione di Glorot e Bengio: bias a zero e pesi uniformi tra meno uno su a e più uno su a, con a uguale alla radice quadrata del fan-in, o dipendente anche dal fan-out.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.2 · Inizializzazione dei pesi</div>\n  <h2 class=\"slide-title\">Valori casuali piccoli e rottura della simmetria</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">(!) Regola di base</div>\n    <p>Inizializzare i pesi con <strong>valori casuali vicini a zero</strong>, es. in \\([-0{,}7;\\, +0{,}7]\\) con dati standardizzati.</p>\n  </div>\n  <div class=\"grid-3\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">✗ Pesi tutti nulli</div>\n      <p>I \\(\\delta_j\\) nascosti dipendono da \\(w_{kj}\\): restano <strong>zero</strong> e la rete non impara.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">✗ Pesi grandi</div>\n      <p>Le sigmoidi partono <strong>saturate</strong> (\\(f'_\\sigma \\approx 0\\)): apprendimento bloccato.</p>\n    </div>\n    <div id=\"s4\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">✗ Pesi tutti uguali</div>\n      <p>Le unità restano <strong>simmetriche</strong> e calcolano la stessa cosa: serve casualità per rompere la simmetria.</p>\n    </div>\n  </div>\n  <div id=\"s5\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Inizializzazione basata sul fan-in (Glorot &amp; Bengio)</div>\n    \\[\\text{bias} = 0, \\qquad w \\sim \\mathcal{U}\\!\\left[-\\frac{1}{a},\\; +\\frac{1}{a}\\right], \\qquad \\htmlId{f-glorot}{a = \\sqrt{\\text{fan-in}}}\\]\n    <p class=\"math-note\">Attenzione a non rimpicciolire troppo i pesi di uscita (altrimenti i \\(\\delta_j\\) partono quasi nulli). Varianti successive includono anche il fan-out.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.49,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "valori casuali piccoli"
+        },
+        {
+          "at": 15.07,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Primo: pesi tutti nulli"
+        },
+        {
+          "at": 15.07,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "Primo: pesi tutti nulli"
+        },
+        {
+          "at": 24.79,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Secondo: pesi grandi"
+        },
+        {
+          "at": 24.79,
+          "action": "highlight",
+          "target": "#s3",
+          "anchor": "Secondo: pesi grandi"
+        },
+        {
+          "at": 32.31,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Terzo: pesi tutti uguali"
+        },
+        {
+          "at": 32.31,
+          "action": "highlight",
+          "target": "#s4",
+          "anchor": "Terzo: pesi tutti uguali"
+        },
+        {
+          "at": 45.83,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "base al fan-in"
+        },
+        {
+          "at": 58.02,
+          "action": "highlight",
+          "target": "#f-glorot",
+          "anchor": "radice quadrata del fan-in"
+        }
+      ],
+      "duration_sec": 61.75
+    },
+    {
+      "id": "scene-03",
+      "section": "12.2.1 Minimi multipli",
+      "title": "Minimi locali e perché il minimo globale non è l'obiettivo",
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "tts_text": "Poiché la loss non è convessa, esistono molti minimi locali e la soluzione trovata dipende dai pesi iniziali. [pause:0.7] La pratica essenziale è provare più inizializzazioni casuali, ad esempio cinque, dieci o più trial, riportando sempre media e varianza dei risultati, oppure combinando i modelli in un comitato. [pause:0.8] Se una prova si blocca in un cattivo minimo locale, lo vediamo dall'errore alto e possiamo ripartire: spesso un buon minimo locale è del tutto sufficiente. [pause:0.9] Anzi, nel machine learning il minimo globale dell'errore empirico non è mai il vero obiettivo, per due ragioni fondamentali. [pause:0.6] Prima ragione: vogliamo minimizzare il rischio vero R, non il rischio empirico sul training; spesso il punto ottimale non ha nemmeno gradiente nullo. [pause:0.7] Seconda ragione: la rete è uno spazio di dimensione variabile. Man mano che scende verso il minimo del training diventa troppo complessa e va in overtraining: bisogna comunque fermarsi prima.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.2.1 · Minimi multipli</div>\n  <h2 class=\"slide-title\">Più inizializzazioni e perché non cerchiamo il minimo globale</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">(!) Più inizializzazioni (multi-trial)</div>\n    <p>Provare <strong>5–10 o più configurazioni iniziali casuali</strong> e riportare <strong>media e varianza</strong> dei risultati (oppure combinarli in un <strong>comitato / ensemble</strong>).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. L'obiettivo è \\(R\\), non \\(\\Remp\\)</div>\n      <p>Nel ML non cerchiamo né il minimo locale né quello globale di \\(\\Remp\\), ma il minimo del rischio vero \\(R\\) (spesso in un punto a gradiente non nullo).</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">2. Rischio di overtraining</div>\n      <p>Scendendo verso il minimo di training i pesi crescono, la <strong>VC-dimension effettiva</strong> aumenta e la rete va in overfitting: bisogna fermarsi <strong>prima</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 9.0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "provare più inizializzazioni"
+        },
+        {
+          "at": 39.21,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Prima ragione"
+        },
+        {
+          "at": 39.21,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "Prima ragione"
+        },
+        {
+          "at": 48.65,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Seconda ragione"
+        },
+        {
+          "at": 48.65,
+          "action": "highlight",
+          "target": "#s3",
+          "anchor": "Seconda ragione"
+        }
+      ],
+      "duration_sec": 60.29
+    },
+    {
+      "id": "scene-04",
+      "section": "12.3 On-line, batch e mini-batch",
+      "title": "Batch, online, mini-batch e shuffling",
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "tts_text": "Come aggiorniamo i pesi rispetto agli esempi del dataset? Esistono tre regimi. [pause:0.6] Nel batch sommiamo i gradienti delta p t per o p u su tutta l'epoca e poi aggiorniamo una sola volta: la stima del gradiente è più accurata, ma più lenta perché aspetta tutti i dati. [pause:0.7] Nell'online aggiorniamo dopo ogni singolo esempio: il gradiente è rumoroso e procede a zig-zag — è lo Stochastic Gradient Descent — ma quel rumore può aiutare a sfuggire ai minimi locali e avere un effetto regolarizzante. Regola essenziale nell'online: fare sempre shuffling, cioè mescolare l'ordine dei pattern a ogni epoca per evitare derive sistematiche. [pause:0.9] Il compromesso standard è il mini-batch: dividiamo ogni epoca in blocchi di m b esempi e aggiorniamo dopo ciascun blocco. Sfrutta la memoria e il parallelismo della GPU, ha un costo per passo indipendente dalla dimensione totale l del dataset, e permette di scalare a milioni di esempi o dati in streaming.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.3 · On-line, batch e mini-batch</div>\n  <h2 class=\"slide-title\">Tre regimi di aggiornamento e ruolo dello shuffling</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\htmlId{f-batch}{\\text{Batch: } -\\frac{\\partial E}{\\partial w_{tu}} = \\sum_{p=1}^{l}\\delta_{p,t}\\,o_{p,u}}, \\qquad \\htmlId{f-online}{\\text{Online: } -\\frac{\\partial E_p}{\\partial w_{tu}} = \\delta_{p,t}\\,o_{p,u}}\\]\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 112\" class=\"diagram-svg\" aria-label=\"Epoca divisa in 4 mini-batch\">\n      <defs>\n        <marker id=\"arr-mb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n        </marker>\n      </defs>\n      <rect x=\"40\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <rect x=\"175\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <rect x=\"310\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <rect x=\"445\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <text x=\"107\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₁</text>\n      <text x=\"242\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₂</text>\n      <text x=\"377\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₃</text>\n      <text x=\"512\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₄</text>\n      <line x1=\"175\" y1=\"38\" x2=\"175\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <line x1=\"310\" y1=\"38\" x2=\"310\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <line x1=\"445\" y1=\"38\" x2=\"445\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <line x1=\"580\" y1=\"38\" x2=\"580\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <text x=\"175\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <text x=\"310\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <text x=\"445\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <text x=\"580\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <path d=\"M 40,84 L 40,90 L 580,90 L 580,84\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.2\"/>\n      <text x=\"310\" y=\"106\" text-anchor=\"middle\" class=\"svg-caption\">un'epoca completa: tutti gli l esempi (con shuffling)</text>\n    </svg>\n  </div>\n  <div id=\"s3\" class=\"grid-3 cue-hidden\">\n    <div class=\"box box-muted\">\n      <div class=\"box-label\">Online (SGD)</div>\n      <p>Niente parallelismo, più instabile, ma il rumore aiuta a sfuggire ai minimi locali. <strong>(!) Shuffling</strong> obbligatorio.</p>\n    </div>\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Mini-batch (SGD)</div>\n      <p>Compromesso ideale: sfrutta la <strong>GPU</strong>, costo dipendente da \\(mb\\) (non da \\(l\\)), scala a milioni di esempi.</p>\n    </div>\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Batch</div>\n      <p>Stima più accurata del gradiente, ma aspetta tutti gli \\(l\\) esempi a ogni passo.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.08,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Nel batch sommiamo"
+        },
+        {
+          "at": 5.08,
+          "action": "highlight",
+          "target": "#f-batch",
+          "anchor": "Nel batch sommiamo"
+        },
+        {
+          "at": 17.06,
+          "action": "highlight",
+          "target": "#f-online",
+          "anchor": "Nell'online aggiorniamo"
+        },
+        {
+          "at": 40.45,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "compromesso standard è il mini-batch"
+        },
+        {
+          "at": 48.53,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Sfrutta la memoria"
+        }
+      ],
+      "duration_sec": 59.6
+    },
+    {
+      "id": "scene-05",
+      "section": "12.4 Il learning rate",
+      "title": "Scegliere il learning rate e leggere la curva di training",
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "tts_text": "Il learning rate eta regola l'ampiezza del passo. Nel batch possiamo usare un eta più alto; nell'online serve più piccolo per evitare instabilità. Tipicamente con LMS si esplora tra zero virgola zero uno e zero virgola cinque. [pause:0.8] Pratica essenziale: guardare sempre la curva dell'errore di training epoca per epoca. [pause:0.6] Osserva i cinque andamenti tipici nel grafico. Se eta è molto alto, la curva viola diverge. [pause:0.5] Se è molto basso, la curva verde resta quasi piatta. [pause:0.5] Se è basso, la curva blu scende troppo lentamente; se è alto, la curva arancione scende in fretta ma si blocca presto a un errore elevato. [pause:0.6] Un buon learning rate produce la curva rossa: scende rapidamente e in modo liscio. [pause:0.9] Secondo accorgimento essenziale: usare la media dei gradienti dividendo per il numero di esempi l, così il valore di eta resta confrontabile al variare della dimensione del dataset.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.4 · Il learning rate</div>\n  <h2 class=\"slide-title\">Diagnosi sulla curva di training e gradiente medio</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 390 205\" class=\"diagram-svg\" aria-label=\"Effetto del learning rate sulla curva di training\">\n        <defs>\n          <marker id=\"arr-lr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"38\" y1=\"175\" x2=\"335\" y2=\"175\" class=\"svg-axis\" marker-end=\"url(#arr-lr)\"/>\n        <line x1=\"38\" y1=\"175\" x2=\"38\" y2=\"14\" class=\"svg-axis\" marker-end=\"url(#arr-lr)\"/>\n        <text x=\"185\" y=\"196\" text-anchor=\"middle\" class=\"svg-caption\">epoche</text>\n        <text x=\"15\" y=\"96\" transform=\"rotate(-90 15 96)\" text-anchor=\"middle\" class=\"svg-caption\">errore di training</text>\n        <path id=\"c-vh\" d=\"M 38.0,106.8 L 43.5,103.1 L 49.1,99.2 L 54.6,95.1 L 60.1,90.8 L 65.6,86.3 L 71.2,81.5 L 76.7,76.4 L 82.2,71.1 L 87.8,65.5 L 93.3,59.6 L 98.8,53.3 L 104.4,46.7 L 109.9,39.8 L 115.4,32.5 L 120.9,26.2 L 126.5,26.2 L 132.0,26.2 L 137.5,26.2 L 143.1,26.2 L 148.6,26.2 L 154.1,26.2 L 159.6,26.2 L 165.2,26.2 L 170.7,26.2 L 176.2,26.2 L 181.8,26.2 L 187.3,26.2 L 192.8,26.2 L 198.4,26.2 L 203.9,26.2 L 209.4,26.2 L 214.9,26.2 L 220.5,26.2 L 226.0,26.2 L 231.5,26.2 L 237.1,26.2 L 242.6,26.2 L 248.1,26.2 L 253.6,26.2 L 259.2,26.2 L 264.7,26.2 L 270.2,26.2 L 275.8,26.2 L 281.3,26.2 L 286.8,26.2 L 292.4,26.2 L 297.9,26.2 L 303.4,26.2 L 308.9,26.2 L 314.5,26.2\" fill=\"none\" stroke=\"#6A3D9A\" stroke-width=\"2.1\"/>\n        <path id=\"c-vl\" d=\"M 38.0,57.2 L 51.8,57.7 L 65.6,58.2 L 79.5,58.7 L 93.3,59.2 L 107.1,59.7 L 120.9,60.2 L 134.8,60.7 L 148.6,61.2 L 162.4,61.7 L 176.2,62.2 L 190.1,62.7 L 203.9,63.2 L 217.7,63.6 L 231.5,64.1 L 245.4,64.6 L 259.2,65.1 L 273.0,65.6 L 286.8,66.1 L 300.6,66.6 L 314.5,67.1\" class=\"svg-curve-green\"/>\n        <path id=\"c-lo\" d=\"M 38.0,57.2 L 43.5,61.2 L 49.1,65.1 L 54.6,68.8 L 60.1,72.3 L 65.6,75.7 L 71.2,79.0 L 76.7,82.1 L 82.2,85.0 L 87.8,87.9 L 93.3,90.6 L 98.8,93.2 L 104.4,95.6 L 109.9,98.0 L 115.4,100.3 L 120.9,102.5 L 126.5,104.5 L 132.0,106.5 L 137.5,108.4 L 143.1,110.2 L 148.6,112.0 L 154.1,113.6 L 159.6,115.2 L 165.2,116.7 L 170.7,118.2 L 176.2,119.6 L 181.8,120.9 L 187.3,122.2 L 192.8,123.4 L 198.4,124.6 L 203.9,125.7 L 209.4,126.8 L 214.9,127.8 L 220.5,128.7 L 226.0,129.7 L 231.5,130.6 L 237.1,131.4 L 242.6,132.2 L 248.1,133.0 L 253.6,133.8 L 259.2,134.5 L 264.7,135.2 L 270.2,135.8 L 275.8,136.4 L 281.3,137.0 L 286.8,137.6 L 292.4,138.2 L 297.9,138.7 L 303.4,139.2 L 308.9,139.7 L 314.5,140.1\" class=\"svg-curve-blue\"/>\n        <path id=\"c-hi\" d=\"M 38.0,54.7 L 43.5,77.2 L 49.1,92.3 L 54.6,102.4 L 60.1,109.2 L 65.6,113.7 L 71.2,116.7 L 76.7,118.8 L 82.2,120.1 L 87.8,121.1 L 93.3,121.7 L 98.8,122.1 L 104.4,122.4 L 109.9,122.5 L 115.4,122.7 L 120.9,122.8 L 126.5,122.8 L 132.0,122.8 L 137.5,122.9 L 143.1,122.9 L 148.6,122.9 L 154.1,122.9 L 159.6,122.9 L 165.2,122.9 L 170.7,122.9 L 176.2,122.9 L 181.8,122.9 L 187.3,122.9 L 192.8,122.9 L 198.4,122.9 L 203.9,122.9 L 209.4,122.9 L 214.9,122.9 L 220.5,122.9 L 226.0,122.9 L 231.5,122.9 L 237.1,122.9 L 242.6,122.9 L 248.1,122.9 L 253.6,122.9 L 259.2,122.9 L 264.7,122.9 L 270.2,122.9 L 275.8,122.9 L 281.3,122.9 L 286.8,122.9 L 292.4,122.9 L 297.9,122.9 L 303.4,122.9 L 308.9,122.9 L 314.5,122.9\" class=\"svg-curve-orange\"/>\n        <path id=\"c-gd\" d=\"M 38.0,57.2 L 43.5,71.6 L 49.1,84.0 L 54.6,94.8 L 60.1,104.2 L 65.6,112.3 L 71.2,119.3 L 76.7,125.4 L 82.2,130.7 L 87.8,135.3 L 93.3,139.2 L 98.8,142.7 L 104.4,145.7 L 109.9,148.2 L 115.4,150.5 L 120.9,152.4 L 126.5,154.1 L 132.0,155.6 L 137.5,156.8 L 143.1,157.9 L 148.6,158.9 L 154.1,159.7 L 159.6,160.4 L 165.2,161.0 L 170.7,161.6 L 176.2,162.0 L 181.8,162.5 L 187.3,162.8 L 192.8,163.1 L 198.4,163.4 L 203.9,163.6 L 209.4,163.8 L 214.9,164.0 L 220.5,164.1 L 226.0,164.2 L 231.5,164.4 L 237.1,164.4 L 242.6,164.5 L 248.1,164.6 L 253.6,164.7 L 259.2,164.7 L 264.7,164.8 L 270.2,164.8 L 275.8,164.8 L 281.3,164.9 L 286.8,164.9 L 292.4,164.9 L 297.9,164.9 L 303.4,165.0 L 308.9,165.0 L 314.5,165.0\" class=\"svg-curve-red\" stroke-width=\"2.8\"/>\n        <text x=\"326\" y=\"30\" class=\"svg-legend\" fill=\"#6A3D9A\">molto alto</text>\n        <text x=\"326\" y=\"64\" class=\"svg-legend svg-green\">molto basso</text>\n        <text x=\"326\" y=\"124\" class=\"svg-legend\" fill=\"#D9822B\">alto</text>\n        <text x=\"326\" y=\"142\" class=\"svg-legend svg-blue\">basso</text>\n        <text x=\"326\" y=\"166\" class=\"svg-legend svg-red\" font-weight=\"600\">buono</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">(!) Guardare sempre la curva di apprendimento</div>\n        <p>Cercare una discesa <strong>rapida e liscia</strong>. Irregolarità indicano batch troppo piccoli o \\(\\eta\\) troppo alto (diagnosi di ottimizzazione, non ancora generalizzazione).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-primary cue-hidden\">\n        <div class=\"box-label\">(!) Usare la media dei gradienti</div>\n        <p>Dividere la somma dei gradienti per \\(l\\) (equivale a \\(\\eta / l\\)): rende \\(\\eta\\) uniforme rispetto alla dimensione del dataset. In online serve \\(\\eta\\) più piccolo di un fattore \\(1/l\\).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 16.46,
+          "action": "show",
+          "target": "#s1, #s2",
+          "anchor": "guardare sempre la curva"
+        },
+        {
+          "at": 25.48,
+          "action": "highlight",
+          "target": "#c-vh",
+          "anchor": "la curva viola diverge"
+        },
+        {
+          "at": 28.3,
+          "action": "highlight",
+          "target": "#c-vl",
+          "anchor": "la curva verde resta"
+        },
+        {
+          "at": 31.14,
+          "action": "highlight",
+          "target": "#c-lo, #c-hi",
+          "anchor": "la curva blu scende"
+        },
+        {
+          "at": 40.33,
+          "action": "highlight",
+          "target": "#c-gd",
+          "anchor": "produce la curva rossa"
+        },
+        {
+          "at": 47.39,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "media dei gradienti"
+        }
+      ],
+      "duration_sec": 56.51
+    },
+    {
+      "id": "scene-06",
+      "section": "12.4.1 Momentum",
+      "title": "Momentum: la palla pesante e Nesterov",
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "tts_text": "Una tecnica essenziale in pratica è il momentum, detto anche metodo della palla pesante. [pause:0.6] La variazione dei pesi delta w nuovo somma al passo del gradiente meno eta per il gradiente di E una frazione alfa dello spostamento precedente delta w vecchio, con alfa tra zero e uno, tipicamente tra zero virgola cinque e zero virgola nove. [pause:0.9] Questa inerzia produce tre vantaggi immediati. Accelera nei plateau piatti, dove il gradiente mantiene lo stesso segno e i passi si sommano. [pause:0.5] Smorza le oscillazioni nelle valli strette mal condizionate, dove il gradiente cambia segno e i rimbalzi si compensano: guarda nel grafico come la traiettoria rossa scende fluida rispetto allo zig-zag nero. [pause:0.6] E permette di usare learning rate più alti. [pause:0.9] Nota: nell'online o mini-batch il momentum diventa una media mobile dei gradienti stocastici passati. Infine il momentum di Nesterov applica prima lo spostamento di inerzia, calcola il gradiente nel punto intermedio, e poi aggiorna: accelera nel batch, non nel caso stocastico.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.4.1 · Momentum (!)</div>\n  <h2 class=\"slide-title\">Inerzia nella discesa e smorzamento delle oscillazioni</h2>\n  <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n    \\[\\boxed{\\;\\Delta\\w_{\\mathit{new}} = -\\eta\\,\\frac{\\partial E(\\w)}{\\partial\\w} + \\htmlId{f-mom}{\\alpha\\,\\Delta\\w_{\\mathit{old}}}, \\qquad \\w_{\\mathit{new}} = \\w + \\Delta\\w_{\\mathit{new}}\\;}\\]\n    <p class=\"math-note\">\\(0 &lt; \\alpha &lt; 1\\) (tipicamente \\(0{,}5\\text{--}0{,}9\\)). Dopo ogni passo si salva \\(\\Delta\\w_{\\mathit{old}} = \\Delta\\w_{\\mathit{new}}\\).</p>\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 380 155\" class=\"diagram-svg\" aria-label=\"Valle stretta: zig-zag senza momentum vs discesa fluida con momentum\">\n        <defs>\n          <marker id=\"arr-mk\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-mr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n        </defs>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"40\" ry=\"9\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"85\" ry=\"19\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"135\" ry=\"30\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"190\" ry=\"42\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"250\" ry=\"54\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <circle cx=\"290\" cy=\"78\" r=\"3.5\" fill=\"#1A1A1A\"/>\n        <polyline id=\"svg-zig\" points=\"32,48 56,108 90,54 118,100 152,61 180,93 214,68 242,85\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.8\" marker-end=\"url(#arr-mk)\"/>\n        <path id=\"svg-mom\" d=\"M 32,48 Q 105,86 282,78\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"2.8\" marker-end=\"url(#arr-mr)\" class=\"cue-hidden\"/>\n        <text x=\"140\" y=\"142\" text-anchor=\"middle\" class=\"svg-caption\">senza momentum: zig-zag tra le pareti</text>\n        <text x=\"175\" y=\"34\" text-anchor=\"middle\" class=\"svg-caption svg-red\">con momentum</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Tre effetti + caso stocastico</div>\n        <ul class=\"clean-list\">\n          <li><strong>Accelera nei plateau</strong> (segni concordi si sommano).</li>\n          <li><strong>Smorza oscillazioni</strong> (segni opposti si cancellano).</li>\n          <li>Consente \\(\\eta\\) più alti; in SGD fa da <strong>media mobile</strong> dei gradienti.</li>\n        </ul>\n      </div>\n      <div id=\"s4\" class=\"box box-muted cue-hidden\">\n        <div class=\"box-label\">Momentum di Nesterov</div>\n        <p>Applica prima \\(\\alpha\\Delta\\w_{\\mathit{old}}\\), valuta il gradiente nel punto intermedio e poi aggiorna: migliora nel batch, non nello SGD.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.6,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "variazione dei pesi delta w nuovo"
+        },
+        {
+          "at": 12.18,
+          "action": "highlight",
+          "target": "#f-mom",
+          "anchor": "frazione alfa dello spostamento"
+        },
+        {
+          "at": 22.08,
+          "action": "show",
+          "target": "#s2, #s3",
+          "anchor": "tre vantaggi immediati"
+        },
+        {
+          "at": 37.41,
+          "action": "show",
+          "target": "#svg-mom",
+          "anchor": "traiettoria rossa scende fluida"
+        },
+        {
+          "at": 37.41,
+          "action": "highlight",
+          "target": "#svg-mom",
+          "anchor": "traiettoria rossa scende fluida"
+        },
+        {
+          "at": 51.33,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "momentum di Nesterov"
+        }
+      ],
+      "duration_sec": 60.88
+    },
+    {
+      "id": "scene-07",
+      "section": "12.4.2 – 12.4.3 Learning rate adattivo e oltre lo SGD",
+      "title": "Decadimento di η, metodi adattivi e punti di sella",
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "tts_text": "Con il mini-batch il gradiente non va mai a zero vicino al minimo, a causa del rumore di campionamento. Un learning rate fisso va quindi evitato: si fa decrescere eta linearmente da eta zero fino a eta tau, circa l'uno per cento del valore iniziale, per poi tenerlo piccolo e costante. [pause:0.8] Gli algoritmi adattivi — AdaGrad, RMSProp e Adam — regolano automaticamente il learning rate separatamente per ogni parametro e si combinano con il momentum. Adam è molto popolare ma va comunque usato con cautela. [pause:0.9] Esistono anche metodi oltre lo SGD di base: Quickprop approssima localmente la loss con una parabola; R-prop usa solo il segno del gradiente ed è utile quando il gradiente svanisce; i metodi del secondo ordine usano l'Hessiana, spesso approssimata come in Gauss-Newton, Levenberg-Marquardt o BFGS. [pause:0.9] Attenzione però ai punti di sella: in alta dimensione sono esponenzialmente più numerosi dei minimi locali. Il metodo di Newton cerca punti a gradiente nullo e ne viene attratto, mentre la discesa del gradiente riesce empiricamente a sfuggirvi. [pause:0.8] In pratica il punto di partenza resta lo SGD con momentum e regolarizzazione: la validazione conta sempre più dell'ottimizzazione spinta sul training.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.4.2 – 12.4.3 · Learning rate variabile e secondo ordine</div>\n  <h2 class=\"slide-title\">Decadimento di \\(\\eta\\), Adam e trappola dei punti di sella</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\eta_s = \\left(1 - \\frac{s}{\\tau}\\right)\\eta_0 + \\frac{s}{\\tau}\\,\\eta_\\tau \\quad (s \\le \\tau), \\qquad \\eta_\\tau \\approx 1\\%\\,\\eta_0\\]\n    <p class=\"math-note\">In mini-batch il rumore impedisce al gradiente di annullarsi: \\(\\eta\\) va ridotto gradualmente.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Adattivi per parametro</div>\n      <p><strong>AdaGrad</strong>, <strong>RMSProp</strong>, <strong>Adam</strong> (combinati con momentum; usare con cautela).</p>\n    </div>\n    <div class=\"box box-muted\">\n      <div class=\"box-label\">Euristiche e 2° ordine</div>\n      <p><strong>Quickprop</strong> (parabola), <strong>R-prop</strong> (solo segno), <strong>Newton / Gauss-Newton / BFGS</strong> (Hessiana costosa).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Punti di sella in alta dimensione</div>\n    <p>Sono esponenzialmente più numerosi dei minimi locali. Newton è attratto dai punti a gradiente nullo; lo <strong>SGD con momentum</strong> vi sfugge empiricamente. <strong>La validazione conta più dell'ottimizzazione sul training.</strong></p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 9.28,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "decrescere eta linearmente"
+        },
+        {
+          "at": 17.82,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "algoritmi adattivi"
+        },
+        {
+          "at": 52.43,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Attenzione però ai punti di sella"
+        }
+      ],
+      "duration_sec": 76.46
+    },
+    {
+      "id": "scene-08",
+      "section": "12.5 Criteri di arresto",
+      "title": "Quando fermare l'addestramento",
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "tts_text": "Quando dobbiamo fermare la discesa del gradiente? Esistono quattro famiglie di criteri. [pause:0.6] Il criterio di base è la soglia sull'errore: fermarsi quando l'errore medio, l'errore massimo o il numero di errori scende sotto una tolleranza epsilon. È l'ideale se un esperto di dominio conosce la tolleranza dei dati, ma spesso non è nota. [pause:0.7] I criteri interni guardano invece l'ottimizzazione stessa: pesi che non cambiano più, norma del gradiente sotto epsilon, oppure errore che scende di meno dello zero virgola uno per cento in un'epoca. Siccome possono scattare troppo presto con un learning rate piccolo, si osserva la condizione per k epoche consecutive: è la cosiddetta patience. [pause:0.8] Terzo accorgimento essenziale: impostare sempre un limite massimo di sicurezza sul numero di epoche contro convergenze lente, ma senza mai usarlo come numero arbitrario di arresto fisso. [pause:0.7] Infine, un errore di training molto basso non è necessariamente il momento giusto per fermarsi: ci porta direttamente al tema dell'overfitting.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.5 · Criteri di arresto</div>\n  <h2 class=\"slide-title\">Soglie di errore, criteri interni e patience</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Soglia sull'errore (\\(&lt; \\epsilon\\))</div>\n      <p>Errore medio, errore massimo o numero di errori. Ideale solo se la tolleranza dei dati è nota a priori.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">2. Criteri interni + Patience</div>\n      <p>Pesi fermi, \\(\\norm{\\nabla E} &lt; \\epsilon\\), o calo \\(&lt; 0{,}1\\%\\)/epoca. Rischio arresto prematuro → osservare per \\(k\\) epoche (<strong>patience</strong>).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">(!) Tetto massimo di sicurezza vs numero fisso arbitrario</div>\n    <p>Fermarsi comunque dopo un numero <em>eccessivo</em> di epoche contro stalli lenti, ma <strong>mai</strong> fissare un numero arbitrario di epoche come regola di arresto.</p>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Ponte verso la generalizzazione</div>\n    <p>Scendere troppo sull'errore di training non è l'obiettivo: occorre controllare la complessità per evitare l'<strong>overfitting</strong>.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.93,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "criterio di base è la soglia"
+        },
+        {
+          "at": 20.11,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "criteri interni guardano"
+        },
+        {
+          "at": 43.69,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "limite massimo di sicurezza"
+        },
+        {
+          "at": 53.45,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "errore di training molto basso"
+        }
+      ],
+      "duration_sec": 61.13
+    },
+    {
+      "id": "scene-09",
+      "section": "12.6 Overfitting ed early stopping",
+      "title": "Come nasce l'overfitting e come funziona l'early stopping",
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "tts_text": "A differenza dell'ottimizzazione pura, nel machine learning non vogliamo il minimo globale sul training, perché di solito è in overfitting. Il nostro obiettivo è il controllo della complessità. [pause:0.7] Come nasce l'overfitting in una rete neurale? Si parte con pesi piccoli: le sigmoidi lavorano nella loro zona quasi lineare e la VC-dimension effettiva è bassa. Man mano che le epoche procedono, i pesi crescono, le unità tendono a saturare e la VC-dimension effettiva aumenta. [pause:0.9] Guarda il grafico tipico. La curva blu di training scende sempre; la curva rossa di validazione raggiunge un minimo e poi risale, entrando nella zona di overtraining. [pause:0.8] Abbiamo tre rimedi: l'early stopping, la regolarizzazione della loss e il pruning. Con l'early stopping usiamo un validation set per fermarci quando l'errore di validazione inizia a salire, usando patience e backtracking: fermarsi prima equivale a limitare la complessità effettiva della rete.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.6.1 · Overfitting ed early stopping</div>\n  <h2 class=\"slide-title\">Complessità crescente lungo le epoche ed early stopping</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 375 205\" class=\"diagram-svg\" aria-label=\"Curva di training e validazione con zona di arresto\">\n        <defs>\n          <marker id=\"arr-es\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"38\" y1=\"175\" x2=\"352\" y2=\"175\" class=\"svg-axis\" marker-end=\"url(#arr-es)\"/>\n        <line x1=\"38\" y1=\"175\" x2=\"38\" y2=\"14\" class=\"svg-axis\" marker-end=\"url(#arr-es)\"/>\n        <text x=\"195\" y=\"196\" text-anchor=\"middle\" class=\"svg-caption\">epoche</text>\n        <text x=\"15\" y=\"96\" transform=\"rotate(-90 15 96)\" text-anchor=\"middle\" class=\"svg-caption\">errore</text>\n        <path id=\"es-tr\" d=\"M 38.0,34.8 L 43.9,48.7 L 49.8,61.2 L 55.8,72.4 L 61.7,82.4 L 67.6,91.4 L 73.5,99.4 L 79.5,106.6 L 85.4,113.0 L 91.3,118.7 L 97.2,123.9 L 103.1,128.5 L 109.1,132.6 L 115.0,136.3 L 120.9,139.6 L 126.8,142.5 L 132.7,145.2 L 138.7,147.5 L 144.6,149.6 L 150.5,151.5 L 156.4,153.2 L 162.4,154.7 L 168.3,156.1 L 174.2,157.3 L 180.1,158.4 L 186.0,159.4 L 192.0,160.2 L 197.9,161.0 L 203.8,161.7 L 209.7,162.3 L 215.6,162.9 L 221.6,163.4 L 227.5,163.8 L 233.4,164.2 L 239.3,164.6 L 245.3,164.9 L 251.2,165.2 L 257.1,165.4 L 263.0,165.7 L 268.9,165.9 L 274.9,166.1 L 280.8,166.2 L 286.7,166.4 L 292.6,166.5 L 298.5,166.6 L 304.5,166.7 L 310.4,166.8 L 316.3,166.9 L 322.2,167.0 L 328.2,167.0 L 334.1,167.1\" class=\"svg-curve-blue\"/>\n        <path id=\"es-vl\" d=\"M 38.0,34.8 L 43.9,48.5 L 49.8,60.4 L 55.8,70.8 L 61.7,79.7 L 67.6,87.5 L 73.5,94.2 L 79.5,100.1 L 85.4,105.1 L 91.3,109.5 L 97.2,113.3 L 103.1,116.6 L 109.1,119.5 L 115.0,122.0 L 120.9,124.1 L 126.8,126.0 L 132.7,126.6 L 138.7,126.9 L 144.6,127.1 L 150.5,127.1 L 156.4,127.0 L 162.4,126.8 L 168.3,126.4 L 174.2,126.0 L 180.1,125.4 L 186.0,124.9 L 192.0,124.2 L 197.9,123.5 L 203.8,122.8 L 209.7,122.0 L 215.6,121.2 L 221.6,120.3 L 227.5,119.5 L 233.4,118.6 L 239.3,117.7 L 245.3,116.7 L 251.2,115.8 L 257.1,114.8 L 263.0,113.9 L 268.9,112.9 L 274.9,111.9 L 280.8,110.9 L 286.7,109.9 L 292.6,108.9 L 298.5,107.9 L 304.5,106.9 L 310.4,105.9 L 316.3,104.9 L 322.2,103.9 L 328.2,102.9 L 334.1,101.8\" class=\"svg-curve-red\"/>\n        <g id=\"es-zone\" class=\"cue-hidden\">\n          <line x1=\"129.8\" y1=\"175\" x2=\"129.8\" y2=\"108.6\" stroke=\"#6E6E6E\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n          <circle cx=\"129.8\" cy=\"108.6\" r=\"4.5\" fill=\"#C0392B\"/>\n          <text x=\"135.8\" y=\"96.6\" class=\"svg-caption\">zona in cui fermarsi</text>\n          <text x=\"285\" y=\"88\" text-anchor=\"middle\" class=\"svg-caption svg-red\">overtraining</text>\n        </g>\n        <text x=\"285\" y=\"34\" class=\"svg-legend svg-blue\">— training</text>\n        <text x=\"285\" y=\"49\" class=\"svg-legend svg-red\">— validazione</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Evoluzione della VC-dimension</div>\n        <p>Pesi piccoli → zona lineare (bassa complessità). Epoche avanzate → saturazione e non linearità (alta VC-dim).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Tre strumenti contro l'overfitting</div>\n        <ol class=\"clean-list\">\n          <li><strong>Early stopping</strong> (con validation set, patience e backtracking).</li>\n          <li><strong>Regolarizzazione</strong> nella loss (strumento principale).</li>\n          <li><strong>Pruning</strong> (rimozione di pesi o unità).</li>\n        </ol>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 11.46,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Come nasce l'overfitting"
+        },
+        {
+          "at": 29.12,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Guarda il grafico tipico"
+        },
+        {
+          "at": 35.05,
+          "action": "show",
+          "target": "#es-zone",
+          "anchor": "raggiunge un minimo e poi risale"
+        },
+        {
+          "at": 39.83,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Abbiamo tre rimedi"
+        }
+      ],
+      "duration_sec": 57.98
+    },
+    {
+      "id": "scene-10",
+      "section": "12.6.2 Regolarizzazione",
+      "title": "Weight decay sui dati reali e un malinteso frequente",
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "tts_text": "Lo strumento principale contro l'overfitting è la regolarizzazione di Tikhonov applicata a tutti i pesi della rete. [pause:0.6] Alla somma degli errori quadratici aggiungiamo lambda per la norma quadra di w. Derivando si ottiene l'effetto di weight decay: si aggiunge circa due lambda w al gradiente di ogni peso, tenendo i pesi piccoli. Il parametro lambda è piccolo, ad esempio zero virgola zero uno, e si sceglie con la model selection. Nei risultati si riporta sempre l'errore sui dati, mai la loss penalizzata. [pause:0.9] Osserva l'effetto sui dati reali delle note, con una rete da dieci unità nascoste. A sinistra, senza weight decay, il confine nero è frastagliato e segue il rumore, con errore di test zero virgola duecentocinquantatré. [pause:0.6] A destra, con weight decay, il confine diventa molto più regolare, vicino al confine di Bayes tratteggiato, e l'errore di test scende a zero virgola duecentoventinove. [pause:0.9] Attenzione a un malinteso classico: la regolarizzazione controlla la complessità e la VC-dimension, ma non serve a stabilizzare una curva di apprendimento oscillante.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.6.2 · Regolarizzazione (!)</div>\n  <h2 class=\"slide-title\">Weight decay: formula, effetto sui dati reali e ruolo</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\mathrm{Loss}(\\w) = \\sum_p \\big(d_p - o(\\x_p)\\big)^2 + \\htmlId{f-wd}{\\lambda\\,\\norm{\\w}^2}, \\qquad \\norm{\\w}^2 = \\sum_i w_i^2\\]\n    <p class=\"math-note\">Effetto <strong>weight decay</strong>: termine \\(2\\lambda w\\) nel gradiente. <strong>(!)</strong> Nei risultati riportare l'errore sui dati, non la loss.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"p-nowd\" class=\"svg-panel\" style=\"flex-direction:column;gap:4px;\">\n      <div class=\"plot-title\">Senza weight decay · test = 0,253</div>\n      <svg viewBox=\"0 0 240 208\" class=\"diagram-svg\" aria-label=\"Confine rete senza weight decay\">\n        <defs><clipPath id=\"clip-wd1\"><rect x=\"14\" y=\"16\" width=\"212\" height=\"180\"/></clipPath></defs>\n        <rect x=\"14\" y=\"16\" width=\"212\" height=\"180\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\" stroke-width=\"1\"/>\n        <g clip-path=\"url(#clip-wd1)\">\n        <circle cx=\"180.0\" cy=\"71.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.5\" cy=\"107.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"129.9\" cy=\"67.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"173.6\" cy=\"72.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"145.0\" cy=\"84.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.1\" cy=\"106.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.8\" cy=\"132.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"157.6\" cy=\"79.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"80.7\" cy=\"140.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"132.4\" cy=\"136.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"82.1\" cy=\"163.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.3\" cy=\"96.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"51.1\" cy=\"128.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.8\" cy=\"119.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.4\" cy=\"98.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.8\" cy=\"156.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.8\" cy=\"100.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.2\" cy=\"76.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.0\" cy=\"79.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"170.9\" cy=\"107.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"106.9\" cy=\"89.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.3\" cy=\"87.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.4\" cy=\"123.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"79.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.4\" cy=\"140.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.1\" cy=\"155.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.8\" cy=\"66.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"43.6\" cy=\"120.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"80.4\" cy=\"169.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"179.0\" cy=\"72.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.7\" cy=\"96.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.0\" cy=\"78.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.3\" cy=\"145.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"49.9\" cy=\"111.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.4\" cy=\"99.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.6\" cy=\"68.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.9\" cy=\"101.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"92.7\" cy=\"114.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.6\" cy=\"72.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"76.4\" cy=\"124.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.3\" cy=\"130.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"177.9\" cy=\"59.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.4\" cy=\"147.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"187.1\" cy=\"121.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"110.9\" cy=\"93.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.4\" cy=\"157.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.3\" cy=\"122.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.4\" cy=\"82.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"147.3\" cy=\"109.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"146.0\" cy=\"40.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.8\" cy=\"120.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"84.5\" cy=\"135.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"132.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.5\" cy=\"122.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"113.9\" cy=\"112.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.7\" cy=\"134.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"104.8\" cy=\"158.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.8\" cy=\"69.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.4\" cy=\"121.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"70.5\" cy=\"139.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"160.3\" cy=\"90.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"156.0\" cy=\"81.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.2\" cy=\"124.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"36.8\" cy=\"123.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"134.1\" cy=\"83.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"168.7\" cy=\"63.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"140.1\" cy=\"124.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"58.3\" cy=\"125.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.0\" cy=\"73.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.3\" cy=\"113.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"154.6\" cy=\"135.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.5\" cy=\"109.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"170.8\" cy=\"88.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"152.7\" cy=\"115.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"55.7\" cy=\"122.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.8\" cy=\"70.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"126.0\" cy=\"78.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"46.7\" cy=\"157.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.3\" cy=\"88.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.3\" cy=\"138.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.8\" cy=\"138.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"142.6\" cy=\"83.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.7\" cy=\"74.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"53.1\" cy=\"127.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"75.5\" cy=\"161.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"154.8\" cy=\"121.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.4\" cy=\"79.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.0\" cy=\"118.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"128.8\" cy=\"104.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.4\" cy=\"137.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"150.9\" cy=\"69.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"80.3\" cy=\"138.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"72.2\" cy=\"129.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"84.5\" cy=\"121.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"117.7\" cy=\"64.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.7\" cy=\"173.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"82.0\" cy=\"155.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"44.2\" cy=\"99.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"141.2\" cy=\"111.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"160.6\" cy=\"68.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"55.6\" cy=\"73.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"46.0\" cy=\"68.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"90.6\" cy=\"80.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"57.1\" cy=\"44.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"89.3\" cy=\"178.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"141.7\" cy=\"113.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"91.8\" cy=\"42.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"115.2\" cy=\"93.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"109.6\" cy=\"77.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"162.0\" cy=\"89.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"42.7\" cy=\"125.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"26.1\" cy=\"33.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"98.7\" cy=\"48.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"162.8\" cy=\"126.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"158.8\" cy=\"122.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"37.0\" cy=\"80.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"44.6\" cy=\"123.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"41.6\" cy=\"123.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"19.8\" cy=\"116.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"128.7\" cy=\"99.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"89.2\" cy=\"47.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"70.9\" cy=\"153.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"50.7\" cy=\"125.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"85.2\" cy=\"142.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"70.9\" cy=\"49.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"93.7\" cy=\"49.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"11.1\" cy=\"125.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"33.2\" cy=\"58.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"109.9\" cy=\"92.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"99.6\" cy=\"47.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"143.2\" cy=\"116.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"73.4\" cy=\"142.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"102.9\" cy=\"75.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"72.7\" cy=\"32.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"63.2\" cy=\"55.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"73.2\" cy=\"40.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"110.9\" cy=\"99.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"44.0\" cy=\"38.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"31.7\" cy=\"135.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"23.0\" cy=\"113.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"67.9\" cy=\"30.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"108.5\" cy=\"69.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"92.2\" cy=\"169.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"126.8\" cy=\"86.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"64.9\" cy=\"51.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"55.7\" cy=\"76.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"60.8\" cy=\"57.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"111.4\" cy=\"34.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"7.3\" cy=\"132.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"75.0\" cy=\"95.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"109.9\" cy=\"67.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"21.4\" cy=\"117.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"112.5\" cy=\"41.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"116.5\" cy=\"93.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"117.5\" cy=\"65.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"113.1\" cy=\"54.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"129.6\" cy=\"81.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"152.5\" cy=\"116.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"94.0\" cy=\"38.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"18.6\" cy=\"115.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"23.0\" cy=\"131.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"130.4\" cy=\"102.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"43.8\" cy=\"120.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"72.9\" cy=\"90.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"102.1\" cy=\"57.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"26.1\" cy=\"140.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"63.0\" cy=\"51.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"63.5\" cy=\"39.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"51.7\" cy=\"44.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"112.4\" cy=\"91.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"44.7\" cy=\"133.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"54.9\" cy=\"35.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"84.3\" cy=\"18.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"158.5\" cy=\"116.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"164.2\" cy=\"113.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"65.3\" cy=\"170.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"95.5\" cy=\"29.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"70.1\" cy=\"29.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"50.4\" cy=\"76.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"43.0\" cy=\"96.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"47.0\" cy=\"40.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"73.9\" cy=\"165.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"106.6\" cy=\"70.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"103.4\" cy=\"63.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"92.5\" cy=\"19.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"40.6\" cy=\"130.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"103.0\" cy=\"84.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"101.1\" cy=\"93.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"38.6\" cy=\"41.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"9.5\" cy=\"121.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"33.0\" cy=\"121.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"59.1\" cy=\"50.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"111.0\" cy=\"81.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"124.3\" cy=\"46.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"64.8\" cy=\"24.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"154.2\" cy=\"124.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"93.6\" cy=\"26.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"159.9\" cy=\"111.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"163.9\" cy=\"142.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"122.1\" cy=\"79.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/>\n        <path d=\"M 155.6,16.0 L 153.8,19.1 L 151.9,22.3 L 150.0,25.4 L 148.2,28.2 L 146.4,30.9 L 144.3,34.1 L 142.5,36.6 L 140.3,39.6 L 138.4,42.1 L 136.2,45.1 L 134.3,47.6 L 132.2,50.6 L 130.2,53.7 L 128.6,56.9 L 127.4,60.0 L 126.6,63.9 L 126.3,68.7 L 126.3,73.4 L 126.1,77.3 L 125.3,81.2 L 123.7,84.5 L 121.2,87.2 L 118.8,89.1 L 115.5,91.3 L 112.9,93.0 L 109.8,95.2 L 107.3,97.0 L 104.1,99.3 L 101.6,100.9 L 98.3,102.5 L 94.2,103.7 L 89.3,103.9 L 85.2,103.2 L 81.1,101.9 L 77.8,100.8 L 73.8,99.8 L 68.8,99.7 L 64.7,100.2 L 60.7,101.1 L 56.6,102.3 L 53.3,103.8 L 50.8,105.9 L 49.2,109.2 L 48.6,113.5 L 48.5,118.2 L 48.6,122.9 L 48.8,127.6 L 49.1,132.3 L 49.4,136.3 L 50.0,140.7 L 50.9,144.1 L 52.6,147.3 L 55.7,149.1 L 60.7,149.4 L 65.6,149.2 L 70.5,149.3 L 74.0,150.4 L 76.8,152.8 L 77.9,155.9 L 77.3,159.8 L 75.9,163.0 L 74.1,166.1 L 72.1,169.0 L 70.2,171.6 L 68.0,174.5 L 66.0,177.1 L 63.9,179.8 L 61.6,182.6 L 59.8,185.0 L 57.4,188.0 L 55.4,190.5 L 53.3,193.1 L 51.0,196.0 M 145.0,125.4 L 142.5,123.2 L 140.9,119.8 L 140.2,115.8 L 140.4,111.1 L 141.5,107.2 L 143.3,104.0 L 145.8,101.8 L 149.1,100.6 L 154.0,100.6 L 157.9,101.7 L 160.7,103.2 L 163.0,105.7 L 163.0,110.3 L 161.3,113.2 L 159.4,115.8 L 157.2,118.2 L 154.8,120.7 L 152.3,122.9 L 149.1,125.1 L 145.0,125.4\" fill=\"none\" stroke=\"#6A3D9A\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n        <path d=\"M 226.0,176.0 L 221.9,173.6 L 217.4,171.6 L 212.9,169.7 L 208.4,167.7 L 203.9,165.7 L 199.8,163.4 L 195.3,161.4 L 190.8,159.4 L 186.3,157.5 L 181.8,155.5 L 177.7,153.2 L 173.2,151.2 L 168.7,149.2 L 164.2,147.3 L 159.7,145.3 L 155.6,142.9 L 155.6,140.3 L 159.7,138.3 L 164.6,136.4 L 168.7,134.4 L 173.6,132.4 L 177.7,130.6 L 182.6,128.5 L 186.7,126.7 L 191.6,124.6 L 195.7,122.9 L 200.6,120.7 L 204.8,119.0 L 209.6,116.8 L 213.8,115.0 L 219.0,113.5 L 223.5,114.6 L 226.0,115.4 M 14.0,166.5 L 18.1,164.6 L 23.0,162.6 L 27.5,160.6 L 32.5,159.1 L 32.8,161.6 L 32.4,167.7 L 32.0,173.2 L 31.6,179.5 L 31.2,185.6 L 30.9,191.3 L 33.6,192.9 L 37.7,191.2 L 42.6,189.0 L 46.7,187.4 L 51.7,185.1 L 55.8,183.4 L 60.7,181.2 L 64.8,179.5 L 69.7,177.3 L 73.9,175.6 L 78.7,173.3 L 82.9,171.6 L 87.7,169.4 L 92.2,168.5 L 93.0,174.0 L 93.0,180.3 L 93.0,186.6 L 93.0,192.9 L 93.2,196.0 M 187.1,16.0 L 183.0,18.4 L 178.9,20.7 L 174.8,23.1 L 170.7,25.4 L 166.7,27.8 L 162.6,30.1 L 158.5,32.5 L 154.4,34.9 L 150.3,37.2 L 146.2,39.6 L 142.1,41.9 L 138.0,44.3 L 133.9,46.7 L 129.8,49.0 L 125.7,51.4 L 121.6,53.7 L 117.5,56.1 L 113.5,58.4 L 110.6,61.2 L 114.7,63.6 L 119.2,65.5 L 123.7,67.5 L 127.8,69.8 L 130.2,74.1 L 134.3,76.4 L 138.4,78.2 L 143.3,80.5 L 147.4,82.6 L 151.5,84.4 L 153.2,87.0 L 148.2,88.7 L 143.3,90.5 L 138.6,92.2 L 134.2,93.8 L 129.4,95.5 L 124.5,97.3 L 119.6,99.0 L 114.7,100.8 L 110.2,102.5 L 105.7,104.1 L 100.8,105.8 L 95.9,107.6 L 92.8,111.1 L 89.3,112.3 L 84.4,110.6 L 80.3,108.4 L 75.8,106.4 L 71.3,104.4 L 67.2,102.1 L 62.3,100.5 L 58.2,98.1 L 53.7,96.2 L 49.2,95.8 L 45.1,98.1 L 41.0,100.5 L 36.9,102.9 L 32.8,105.2 L 28.7,107.6 L 29.6,110.7 L 33.6,113.1 L 37.7,115.8 L 41.8,118.1 L 45.9,120.3 L 50.0,122.2 L 54.4,124.5 L 57.4,127.1 L 52.5,128.9 L 47.6,130.7 L 43.1,132.3 L 38.6,134.0 L 34.7,137.0 L 32.5,141.0 L 29.6,144.9 L 25.5,146.8 L 20.5,148.5 L 15.6,150.2 L 14.0,150.8 M 48.4,152.9 M 50.0,152.3 M 51.7,151.7 L 55.3,149.6 L 59.8,148.0 L 64.4,145.7 L 68.8,143.9 L 73.5,141.8 L 77.8,139.9 L 82.8,138.4 L 81.8,141.0 L 77.0,142.7 L 72.1,144.5 L 67.2,146.3 L 62.3,148.0 L 57.7,149.6 L 53.3,151.2 L 51.7,151.7 M 121.2,126.1 L 116.6,124.5 L 119.6,122.5 L 123.7,120.2 L 128.6,118.6 L 132.7,116.6 L 137.6,114.6 L 142.1,112.7 L 146.6,110.7 L 151.1,108.8 L 155.6,106.8 L 160.5,104.8 L 164.6,102.9 L 169.5,101.3 L 173.6,98.9 L 178.5,97.4 L 183.4,95.8 L 187.0,98.5 L 189.2,101.8 L 184.3,103.6 L 179.3,105.4 L 174.4,107.1 L 169.9,108.8 L 165.4,110.4 L 160.5,112.2 L 155.6,113.9 L 150.7,115.7 L 145.9,117.4 L 141.5,119.0 L 136.8,120.7 L 131.9,122.5 L 127.0,124.2 L 122.0,126.0 L 121.2,126.1\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.8\"/>\n        </g>\n      </svg>\n    </div>\n    <div id=\"p-wd\" class=\"svg-panel\" style=\"flex-direction:column;gap:4px;\">\n      <div class=\"plot-title\">Con weight decay · test = 0,229 (Bayes 0,216)</div>\n      <svg viewBox=\"0 0 240 208\" class=\"diagram-svg\" aria-label=\"Confine rete con weight decay\">\n        <defs><clipPath id=\"clip-wd2\"><rect x=\"14\" y=\"16\" width=\"212\" height=\"180\"/></clipPath></defs>\n        <rect x=\"14\" y=\"16\" width=\"212\" height=\"180\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\" stroke-width=\"1\"/>\n        <g clip-path=\"url(#clip-wd2)\">\n        <circle cx=\"180.0\" cy=\"71.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.5\" cy=\"107.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"129.9\" cy=\"67.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"173.6\" cy=\"72.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"145.0\" cy=\"84.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.1\" cy=\"106.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.8\" cy=\"132.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"157.6\" cy=\"79.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"80.7\" cy=\"140.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"132.4\" cy=\"136.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"82.1\" cy=\"163.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.3\" cy=\"96.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"51.1\" cy=\"128.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.8\" cy=\"119.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.4\" cy=\"98.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.8\" cy=\"156.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.8\" cy=\"100.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.2\" cy=\"76.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.0\" cy=\"79.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"170.9\" cy=\"107.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"106.9\" cy=\"89.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.3\" cy=\"87.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.4\" cy=\"123.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"79.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.4\" cy=\"140.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.1\" cy=\"155.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.8\" cy=\"66.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"43.6\" cy=\"120.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"80.4\" cy=\"169.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"179.0\" cy=\"72.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.7\" cy=\"96.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.0\" cy=\"78.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.3\" cy=\"145.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"49.9\" cy=\"111.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.4\" cy=\"99.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.6\" cy=\"68.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.9\" cy=\"101.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"92.7\" cy=\"114.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.6\" cy=\"72.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"76.4\" cy=\"124.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.3\" cy=\"130.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"177.9\" cy=\"59.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.4\" cy=\"147.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"187.1\" cy=\"121.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"110.9\" cy=\"93.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.4\" cy=\"157.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.3\" cy=\"122.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.4\" cy=\"82.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"147.3\" cy=\"109.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"146.0\" cy=\"40.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.8\" cy=\"120.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"84.5\" cy=\"135.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"132.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.5\" cy=\"122.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"113.9\" cy=\"112.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.7\" cy=\"134.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"104.8\" cy=\"158.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.8\" cy=\"69.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.4\" cy=\"121.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"70.5\" cy=\"139.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"160.3\" cy=\"90.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"156.0\" cy=\"81.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.2\" cy=\"124.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"36.8\" cy=\"123.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"134.1\" cy=\"83.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"168.7\" cy=\"63.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"140.1\" cy=\"124.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"58.3\" cy=\"125.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.0\" cy=\"73.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.3\" cy=\"113.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"154.6\" cy=\"135.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.5\" cy=\"109.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"170.8\" cy=\"88.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"152.7\" cy=\"115.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"55.7\" cy=\"122.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.8\" cy=\"70.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"126.0\" cy=\"78.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"46.7\" cy=\"157.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.3\" cy=\"88.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.3\" cy=\"138.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.8\" cy=\"138.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"142.6\" cy=\"83.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.7\" cy=\"74.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"53.1\" cy=\"127.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"75.5\" cy=\"161.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"154.8\" cy=\"121.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.4\" cy=\"79.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.0\" cy=\"118.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"128.8\" cy=\"104.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.4\" cy=\"137.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"150.9\" cy=\"69.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"80.3\" cy=\"138.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"72.2\" cy=\"129.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"84.5\" cy=\"121.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"117.7\" cy=\"64.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.7\" cy=\"173.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"82.0\" cy=\"155.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"44.2\" cy=\"99.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"141.2\" cy=\"111.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"160.6\" cy=\"68.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"55.6\" cy=\"73.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"46.0\" cy=\"68.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"90.6\" cy=\"80.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"57.1\" cy=\"44.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"89.3\" cy=\"178.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"141.7\" cy=\"113.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"91.8\" cy=\"42.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"115.2\" cy=\"93.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"109.6\" cy=\"77.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"162.0\" cy=\"89.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"42.7\" cy=\"125.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"26.1\" cy=\"33.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"98.7\" cy=\"48.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"162.8\" cy=\"126.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"158.8\" cy=\"122.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"37.0\" cy=\"80.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"44.6\" cy=\"123.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"41.6\" cy=\"123.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"19.8\" cy=\"116.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"128.7\" cy=\"99.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"89.2\" cy=\"47.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"70.9\" cy=\"153.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"50.7\" cy=\"125.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"85.2\" cy=\"142.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"70.9\" cy=\"49.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"93.7\" cy=\"49.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"11.1\" cy=\"125.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"33.2\" cy=\"58.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"109.9\" cy=\"92.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"99.6\" cy=\"47.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"143.2\" cy=\"116.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"73.4\" cy=\"142.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"102.9\" cy=\"75.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"72.7\" cy=\"32.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"63.2\" cy=\"55.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"73.2\" cy=\"40.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"110.9\" cy=\"99.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"44.0\" cy=\"38.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"31.7\" cy=\"135.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"23.0\" cy=\"113.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"67.9\" cy=\"30.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"108.5\" cy=\"69.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"92.2\" cy=\"169.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"126.8\" cy=\"86.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"64.9\" cy=\"51.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"55.7\" cy=\"76.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"60.8\" cy=\"57.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"111.4\" cy=\"34.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"7.3\" cy=\"132.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"75.0\" cy=\"95.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"109.9\" cy=\"67.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"21.4\" cy=\"117.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"112.5\" cy=\"41.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"116.5\" cy=\"93.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"117.5\" cy=\"65.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"113.1\" cy=\"54.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"129.6\" cy=\"81.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"152.5\" cy=\"116.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"94.0\" cy=\"38.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"18.6\" cy=\"115.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"23.0\" cy=\"131.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"130.4\" cy=\"102.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"43.8\" cy=\"120.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"72.9\" cy=\"90.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"102.1\" cy=\"57.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"26.1\" cy=\"140.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"63.0\" cy=\"51.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"63.5\" cy=\"39.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"51.7\" cy=\"44.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"112.4\" cy=\"91.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"44.7\" cy=\"133.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"54.9\" cy=\"35.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"84.3\" cy=\"18.1\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"158.5\" cy=\"116.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"164.2\" cy=\"113.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"65.3\" cy=\"170.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"95.5\" cy=\"29.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"70.1\" cy=\"29.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"50.4\" cy=\"76.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"43.0\" cy=\"96.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"47.0\" cy=\"40.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"73.9\" cy=\"165.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"106.6\" cy=\"70.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"103.4\" cy=\"63.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"92.5\" cy=\"19.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"40.6\" cy=\"130.7\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"103.0\" cy=\"84.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"101.1\" cy=\"93.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"38.6\" cy=\"41.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"9.5\" cy=\"121.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"33.0\" cy=\"121.2\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"59.1\" cy=\"50.3\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"111.0\" cy=\"81.8\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"124.3\" cy=\"46.0\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"64.8\" cy=\"24.4\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"154.2\" cy=\"124.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"93.6\" cy=\"26.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"159.9\" cy=\"111.6\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"163.9\" cy=\"142.5\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/><circle cx=\"122.1\" cy=\"79.9\" r=\"2.2\" class=\"pt-neg\" stroke-width=\"1.2\"/>\n        <path d=\"M 155.6,16.0 L 153.8,19.1 L 151.9,22.3 L 150.0,25.4 L 148.2,28.2 L 146.4,30.9 L 144.3,34.1 L 142.5,36.6 L 140.3,39.6 L 138.4,42.1 L 136.2,45.1 L 134.3,47.6 L 132.2,50.6 L 130.2,53.7 L 128.6,56.9 L 127.4,60.0 L 126.6,63.9 L 126.3,68.7 L 126.3,73.4 L 126.1,77.3 L 125.3,81.2 L 123.7,84.5 L 121.2,87.2 L 118.8,89.1 L 115.5,91.3 L 112.9,93.0 L 109.8,95.2 L 107.3,97.0 L 104.1,99.3 L 101.6,100.9 L 98.3,102.5 L 94.2,103.7 L 89.3,103.9 L 85.2,103.2 L 81.1,101.9 L 77.8,100.8 L 73.8,99.8 L 68.8,99.7 L 64.7,100.2 L 60.7,101.1 L 56.6,102.3 L 53.3,103.8 L 50.8,105.9 L 49.2,109.2 L 48.6,113.5 L 48.5,118.2 L 48.6,122.9 L 48.8,127.6 L 49.1,132.3 L 49.4,136.3 L 50.0,140.7 L 50.9,144.1 L 52.6,147.3 L 55.7,149.1 L 60.7,149.4 L 65.6,149.2 L 70.5,149.3 L 74.0,150.4 L 76.8,152.8 L 77.9,155.9 L 77.3,159.8 L 75.9,163.0 L 74.1,166.1 L 72.1,169.0 L 70.2,171.6 L 68.0,174.5 L 66.0,177.1 L 63.9,179.8 L 61.6,182.6 L 59.8,185.0 L 57.4,188.0 L 55.4,190.5 L 53.3,193.1 L 51.0,196.0 M 145.0,125.4 L 142.5,123.2 L 140.9,119.8 L 140.2,115.8 L 140.4,111.1 L 141.5,107.2 L 143.3,104.0 L 145.8,101.8 L 149.1,100.6 L 154.0,100.6 L 157.9,101.7 L 160.7,103.2 L 163.0,105.7 L 163.0,110.3 L 161.3,113.2 L 159.4,115.8 L 157.2,118.2 L 154.8,120.7 L 152.3,122.9 L 149.1,125.1 L 145.0,125.4\" fill=\"none\" stroke=\"#6A3D9A\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n        <path d=\"M 134.8,16.0 L 133.7,19.9 L 132.7,23.8 L 131.9,27.4 L 131.1,31.2 L 130.2,35.3 L 129.4,39.5 L 128.7,43.5 L 127.9,47.4 L 127.2,51.4 L 126.5,55.3 L 125.7,59.2 L 124.9,63.2 L 124.0,67.1 L 123.0,71.0 L 122.0,74.3 L 120.8,78.1 L 119.5,81.2 L 117.7,84.4 L 115.5,87.2 L 113.0,89.4 L 109.8,91.3 L 106.5,92.6 L 102.4,93.7 L 98.3,94.5 L 94.2,95.1 L 90.1,95.7 L 85.2,96.2 L 81.1,96.6 L 77.0,97.0 L 72.1,97.5 L 68.0,98.1 L 63.9,98.8 L 59.8,99.8 L 56.6,101.0 L 53.3,102.8 L 50.8,105.0 L 48.9,108.0 L 47.8,111.9 L 47.4,115.8 L 47.6,119.8 L 48.0,124.5 L 48.6,128.4 L 49.3,132.3 L 50.0,136.4 L 50.8,140.6 L 51.7,144.5 L 52.5,148.1 L 53.5,152.0 L 54.7,155.9 L 55.9,159.1 L 57.5,162.2 L 59.7,165.3 L 62.3,167.7 L 65.2,169.3 L 68.8,170.4 L 72.9,171.0 L 77.8,171.3 L 82.8,171.2 L 87.7,170.9 L 91.8,170.7 L 96.7,170.4 L 101.6,170.3 L 106.5,170.3 L 111.4,170.6 L 115.5,171.1 L 119.6,172.0 L 123.7,173.1 L 127.0,174.2 L 130.2,175.6 L 133.5,177.2 L 136.8,178.9 L 140.1,180.7 L 143.3,182.6 L 145.8,184.2 L 149.1,186.3 L 151.9,188.1 L 154.8,190.0 L 157.8,192.1 L 160.5,193.9 L 163.6,196.0 M 163.8,131.6 L 160.5,130.6 L 157.2,128.9 L 154.5,126.8 L 152.3,124.5 L 150.4,121.3 L 149.7,117.4 L 151.5,114.5 L 154.8,113.4 L 158.9,113.8 L 162.2,115.0 L 165.4,117.1 L 167.9,119.5 L 169.8,122.1 L 171.3,125.3 L 171.2,129.8 L 168.7,131.6 L 163.8,131.6\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.9\"/>\n        </g>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Non serve a stabilizzare la convergenza</div>\n    <p>La regolarizzazione controlla la <strong>complessità (VC-dimension)</strong>. Se la curva di training oscilla, il problema è altrove (\\(\\eta\\), batch size).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.37,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "regolarizzazione di Tikhonov"
+        },
+        {
+          "at": 8.93,
+          "action": "highlight",
+          "target": "#f-wd",
+          "anchor": "lambda per la norma quadra"
+        },
+        {
+          "at": 31.44,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "effetto sui dati reali"
+        },
+        {
+          "at": 35.88,
+          "action": "highlight",
+          "target": "#p-nowd",
+          "anchor": "A sinistra, senza weight decay"
+        },
+        {
+          "at": 44.78,
+          "action": "highlight",
+          "target": "#p-wd",
+          "anchor": "A destra, con weight decay"
+        },
+        {
+          "at": 54.68,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Attenzione a un malinteso"
+        }
+      ],
+      "duration_sec": 66.57
+    },
+    {
+      "id": "scene-11",
+      "section": "12.6.2 – 12.6.3 Regolarizzazione e momentum insieme",
+      "title": "Early stopping vs regolarizzazione e disaccoppiamento iperparametri",
+      "audio_file": "audio/scene-11.wav",
+      "subtitle_file": "subtitles/scene-11.json",
+      "tts_text": "Meglio early stopping o regolarizzazione? L'early stopping è empirico e sacrifica dati per il validation set; la regolarizzazione nella loss è fondata e, se lambda è ben scelto, fa seguire alla curva di validazione quella di training senza bisogno di fermarsi prima. Si possono comunque combinare. [pause:0.8] Tre dettagli pratici importanti. Il bias w con zero va in genere escluso dalla penalità, altrimenti il modello dipende da traslazioni del target. Nel mini-batch la penalità scatta più volte per epoca, quindi per confrontarla col batch andrebbe scalata per m b diviso l. Esiste inoltre il dropout, che vedremo nel deep learning. [pause:0.9] Come si combinano momentum e weight decay? Prima cosa: non moltiplicare lambda per eta, così cambiando il learning rate non si altera la regolarizzazione. [pause:0.7] Ancora meglio, per rendere indipendenti tutti e tre gli iperparametri eta, alfa e lambda, si calcola il passo con momentum solo sul gradiente dell'errore e si sottrae lambda w con t u direttamente nell'aggiornamento finale dei pesi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.6.2 – 12.6.3 · Dettagli e formula combinata</div>\n  <h2 class=\"slide-title\">Early stopping vs regolarizzazione e momentum + weight decay</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-idea\">\n      <div class=\"box-label\">Early stopping o regolarizzazione?</div>\n      <p><strong>Early stopping</strong>: empirico, sacrifica dati per il VL. <strong>Regolarizzazione</strong>: fondata, permette di fermarsi a convergenza (combinabili).</p>\n    </div>\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Dettagli pratici</div>\n      <ul class=\"clean-list\">\n        <li><strong>Bias \\(w_0\\) escluso</strong> dalla penalità (invarianza a traslazioni).</li>\n        <li>In mini-batch: scala equivalente \\(\\lambda \\cdot mb/l\\).</li>\n        <li>Altra tecnica: <strong>dropout</strong> (Cap. 15).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Separa \\(\\eta\\) da \\(\\lambda\\)</div>\n    \\[\\Delta w_{tu} = \\eta\\,\\delta_t\\,o_u - \\lambda\\,w_{tu} + \\alpha\\,\\Delta w_{tu}^{\\mathit{old}}, \\qquad w_{tu}^{\\mathit{new}} = w_{tu} + \\Delta w_{tu}\\]\n  </div>\n  <div id=\"s3\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Tre iperparametri completamente indipendenti (\\(\\eta, \\alpha, \\lambda\\))</div>\n    \\[\\Delta w_{tu} = \\htmlId{f-m1}{\\eta\\,\\delta_t\\,o_u + \\alpha\\,\\Delta w_{tu}^{\\mathit{old}}}, \\qquad w_{tu}^{\\mathit{new}} = w_{tu} + \\Delta w_{tu} - \\htmlId{f-m2}{\\lambda\\,w_{tu}}\\]\n    <p class=\"math-note\">Si divide per \\(l\\) solo il gradiente dell'errore \\(E\\), dove compare la somma sugli esempi.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Meglio early stopping"
+        },
+        {
+          "at": 38.63,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Come si combinano momentum"
+        },
+        {
+          "at": 48.83,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "rendere indipendenti tutti e tre"
+        },
+        {
+          "at": 55.45,
+          "action": "highlight",
+          "target": "#f-m1",
+          "anchor": "solo sul gradiente dell'errore"
+        },
+        {
+          "at": 57.61,
+          "action": "highlight",
+          "target": "#f-m2",
+          "anchor": "sottrae lambda w con t u"
+        }
+      ],
+      "duration_sec": 63.02
+    },
+    {
+      "id": "scene-12",
+      "section": "12.7 Numero di unità nascoste e Cascade Correlation",
+      "title": "Scelta delle unità nascoste e crescita Cascade Correlation",
+      "audio_file": "audio/scene-12.wav",
+      "subtitle_file": "subtitles/scene-12.json",
+      "tts_text": "Quante unità nascoste servono? È un problema di model selection, da risolvere insieme a lambda con la cross-validation: troppo poche danno underfitting, troppe possono dare overfitting, anche se la regolarizzazione permette reti più grandi. [pause:0.8] Oltre alla ricerca manuale esistono metodi di pruning, che riducono reti grandi, e approcci costruttivi, che partono da reti piccole e aggiungono unità. [pause:0.8] Il metodo costruttivo più celebre è il Cascade Correlation, che apprende sia i pesi sia la topologia, addestrando una sola unità alla volta. [pause:0.6] Si parte da una rete N zero senza unità nascoste. Se l'errore non basta, si aggiunge l'unità h uno: i suoi pesi in ingresso sono addestrati per massimizzare la correlazione con l'errore residuo. [pause:0.7] Poi quei pesi in ingresso vengono congelati — segnati con asterisco nel diagramma — e si riaddestra solo lo strato di uscita. [pause:0.7] Se serve si aggiungono h due, h tre e così via: ogni nuova unità riceve sia gli input sia tutte le unità nascoste precedenti, formando una cascata.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.7.1 · Approcci costruttivi: Cascade Correlation</div>\n  <h2 class=\"slide-title\">Apprendere pesi e topologia un'unità alla volta</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo — Cascade Correlation</div>\n    <ol class=\"algo-list\">\n      <li>Addestra \\(N_0\\) senza unità nascoste.</li>\n      <li id=\"cc2\">Aggiungi un'unità nascosta addestrata per <strong>massimizzare la correlazione</strong> con l'errore residuo.</li>\n      <li id=\"cc3\"><strong>Congela</strong> i suoi pesi in ingresso (\\(*\\)) e riaddestra lo strato di uscita.</li>\n      <li id=\"cc4\">Ripeti collegando ogni nuova unità a <strong>tutti gli input e a tutte le nascoste precedenti</strong> (a cascata).</li>\n    </ol>\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 690 170\" class=\"diagram-svg\" aria-label=\"Crescita a cascata da 1 a 3 unità nascoste\">\n      <defs>\n        <marker id=\"arr-cc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n      </defs>\n      <!-- Panel 1: 1 hidden -->\n      <g id=\"cc-p1\" class=\"cue-hidden\" transform=\"translate(15, 0)\">\n        <line x1=\"38\" y1=\"98\" x2=\"150\" y2=\"112\" class=\"svg-edge\" opacity=\"0.5\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"38\" y1=\"136\" x2=\"150\" y2=\"120\" class=\"svg-edge\" opacity=\"0.5\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"36\" y1=\"92\" x2=\"82\" y2=\"68\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"38\" y1=\"128\" x2=\"84\" y2=\"74\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"108\" y1=\"68\" x2=\"152\" y2=\"106\" class=\"svg-edge-accent\" marker-end=\"url(#arr-cc)\"/>\n        <circle cx=\"24\" cy=\"98\" r=\"13\" class=\"svg-node\"/><text x=\"24\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick\">x₁</text>\n        <circle cx=\"24\" cy=\"136\" r=\"13\" class=\"svg-node\"/><text x=\"24\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">x₂</text>\n        <circle cx=\"94\" cy=\"60\" r=\"14\" class=\"svg-node-fill\"/><text x=\"94\" y=\"64\" text-anchor=\"middle\" class=\"svg-tick\">h₁</text>\n        <circle cx=\"164\" cy=\"116\" r=\"14\" class=\"svg-node-fill\"/><text x=\"164\" y=\"120\" text-anchor=\"middle\" class=\"svg-tick\">o</text>\n        <text x=\"52\" y=\"75\" class=\"svg-tick svg-red\">*</text>\n        <text x=\"95\" y=\"160\" text-anchor=\"middle\" class=\"svg-caption\">1 unità nascosta</text>\n      </g>\n      <!-- Panel 2: 2 hidden -->\n      <g id=\"cc-p2\" class=\"cue-hidden\" transform=\"translate(245, 0)\">\n        <line x1=\"38\" y1=\"98\" x2=\"150\" y2=\"112\" class=\"svg-edge\" opacity=\"0.4\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"38\" y1=\"136\" x2=\"150\" y2=\"120\" class=\"svg-edge\" opacity=\"0.4\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"36\" y1=\"92\" x2=\"82\" y2=\"68\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"38\" y1=\"128\" x2=\"84\" y2=\"74\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"108\" y1=\"68\" x2=\"152\" y2=\"106\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"34\" y1=\"88\" x2=\"114\" y2=\"38\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"106\" y1=\"52\" x2=\"116\" y2=\"42\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"138\" y1=\"44\" x2=\"158\" y2=\"102\" class=\"svg-edge-accent\" marker-end=\"url(#arr-cc)\"/>\n        <circle cx=\"24\" cy=\"98\" r=\"13\" class=\"svg-node\"/><text x=\"24\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick\">x₁</text>\n        <circle cx=\"24\" cy=\"136\" r=\"13\" class=\"svg-node\"/><text x=\"24\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">x₂</text>\n        <circle cx=\"94\" cy=\"60\" r=\"14\" class=\"svg-node-fill\"/><text x=\"94\" y=\"64\" text-anchor=\"middle\" class=\"svg-tick\">h₁</text>\n        <circle cx=\"128\" cy=\"34\" r=\"14\" class=\"svg-node-fill\"/><text x=\"128\" y=\"38\" text-anchor=\"middle\" class=\"svg-tick\">h₂</text>\n        <circle cx=\"164\" cy=\"116\" r=\"14\" class=\"svg-node-fill\"/><text x=\"164\" y=\"120\" text-anchor=\"middle\" class=\"svg-tick\">o</text>\n        <text x=\"52\" y=\"75\" class=\"svg-tick svg-red\">*</text>\n        <text x=\"108\" y=\"42\" class=\"svg-tick svg-red\">*</text>\n        <text x=\"95\" y=\"160\" text-anchor=\"middle\" class=\"svg-caption\">2 unità nascoste</text>\n      </g>\n      <!-- Panel 3: 3 hidden -->\n      <g id=\"cc-p3\" class=\"cue-hidden\" transform=\"translate(475, 0)\">\n        <line x1=\"38\" y1=\"98\" x2=\"150\" y2=\"112\" class=\"svg-edge\" opacity=\"0.35\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"38\" y1=\"136\" x2=\"150\" y2=\"120\" class=\"svg-edge\" opacity=\"0.35\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"36\" y1=\"92\" x2=\"76\" y2=\"70\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"98\" y1=\"68\" x2=\"152\" y2=\"106\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"98\" y1=\"54\" x2=\"112\" y2=\"44\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"134\" y1=\"46\" x2=\"158\" y2=\"102\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"134\" y1=\"30\" x2=\"148\" y2=\"22\" class=\"svg-edge\" marker-end=\"url(#arr-cc)\"/>\n        <line x1=\"164\" y1=\"32\" x2=\"164\" y2=\"100\" class=\"svg-edge-accent\" marker-end=\"url(#arr-cc)\"/>\n        <circle cx=\"24\" cy=\"98\" r=\"13\" class=\"svg-node\"/><text x=\"24\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick\">x₁</text>\n        <circle cx=\"24\" cy=\"136\" r=\"13\" class=\"svg-node\"/><text x=\"24\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">x₂</text>\n        <circle cx=\"88\" cy=\"64\" r=\"13\" class=\"svg-node-fill\"/><text x=\"88\" y=\"68\" text-anchor=\"middle\" class=\"svg-tick\">h₁</text>\n        <circle cx=\"122\" cy=\"38\" r=\"13\" class=\"svg-node-fill\"/><text x=\"122\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">h₂</text>\n        <circle cx=\"164\" cy=\"18\" r=\"13\" class=\"svg-node-fill\"/><text x=\"164\" y=\"22\" text-anchor=\"middle\" class=\"svg-tick\">h₃</text>\n        <circle cx=\"164\" cy=\"116\" r=\"14\" class=\"svg-node-fill\"/><text x=\"164\" y=\"120\" text-anchor=\"middle\" class=\"svg-tick\">o</text>\n        <text x=\"50\" y=\"76\" class=\"svg-tick svg-red\">*</text>\n        <text x=\"140\" y=\"20\" class=\"svg-tick svg-red\">*</text>\n        <text x=\"95\" y=\"160\" text-anchor=\"middle\" class=\"svg-caption\">3 unità nascoste</text>\n      </g>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 24.44,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Cascade Correlation"
+        },
+        {
+          "at": 34.92,
+          "action": "show",
+          "target": "#s2, #cc-p1",
+          "anchor": "aggiunge l'unità h uno"
+        },
+        {
+          "at": 38.86,
+          "action": "highlight",
+          "target": "#cc2",
+          "anchor": "massimizzare la correlazione"
+        },
+        {
+          "at": 42.6,
+          "action": "highlight",
+          "target": "#cc3",
+          "anchor": "pesi in ingresso vengono congelati"
+        },
+        {
+          "at": 49.92,
+          "action": "show",
+          "target": "#cc-p2, #cc-p3",
+          "anchor": "aggiungono h due, h tre"
+        },
+        {
+          "at": 58.04,
+          "action": "highlight",
+          "target": "#cc4",
+          "anchor": "formando una cascata"
+        }
+      ],
+      "duration_sec": 59.43
+    },
+    {
+      "id": "scene-13",
+      "section": "12.7.1 Cascade Correlation",
+      "title": "Massimizzare la covarianza S e ascesa del gradiente",
+      "audio_file": "audio/scene-13.wav",
+      "subtitle_file": "subtitles/scene-13.json",
+      "tts_text": "Come viene addestrata l'unità candidata nel Cascade Correlation? L'algoritmo alterna due fasi: minimizzare l'errore totale sullo strato di uscita, e massimizzare la covarianza S tra l'uscita o con p della candidata e l'errore residuo E con p k delle uscite. [pause:0.8] La funzione obiettivo S è la somma su k del valore assoluto della somma su p di o con p meno o medio, per E con p k meno E k medio. [pause:0.8] Derivando rispetto al peso w con j della candidata, usando la derivata del valore assoluto uguale al segno di S con k, si ottiene la formula del gradiente mostrata qui sotto, che coinvolge f primo di net e l'ingresso I con p j. Poiché vogliamo massimizzare S, qui si fa ascesa del gradiente. [pause:0.9] Ogni unità inserita riduce l'errore residuo e diventa un rilevatore di feature permanente. Siccome S ha molti massimi locali, si addestra un pool di candidate in parallelo scegliendo la migliore. È un algoritmo greedy, rapido ma esposto all'overfitting senza regolarizzazione.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.7.1 · Matematica del Cascade Correlation</div>\n  <h2 class=\"slide-title\">Covarianza \\(S\\) con l'errore residuo e ascesa del gradiente</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Obiettivo da massimizzare (covarianza con \\(E_{p,k} = o_{p,k} - d_{p,k}\\))</div>\n    \\[S = \\sum_k \\left|\\sum_p \\big(o_p - \\bar o\\big)\\big(E_{p,k} - \\bar E_k\\big)\\right|\\]\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Gradiente (ascesa del gradiente)</div>\n    \\[\\frac{\\partial S}{\\partial w_j} = \\sum_k \\htmlId{f-sgn}{\\sign(S_k)} \\sum_p \\big(E_{p,k} - \\bar E_k\\big)\\,f'(\\net_{p,h})\\,I_{p,j}\\]\n    <p class=\"math-note\">Si usa \\(\\frac{d\\abs{f}}{dx} = \\sign(f)\\,\\frac{df}{dx}\\), trascurando la dipendenza delle medie da \\(o_p\\).</p>\n  </div>\n  <div id=\"s3\" class=\"props-grid cue-hidden\">\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Ogni unità diventa un <strong>rilevatore di feature permanente</strong></div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span><strong>Pool di candidate</strong>: si sceglie la migliore tra più massimi di \\(S\\)</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Algoritmo <strong>greedy</strong>: converge facilmente ma può andare in overfitting</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>In regressione si può anche sostituire \\(\\max S\\) con LMS</div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 17.9,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "funzione obiettivo S"
+        },
+        {
+          "at": 28.1,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Derivando rispetto al peso"
+        },
+        {
+          "at": 33.77,
+          "action": "highlight",
+          "target": "#f-sgn",
+          "anchor": "segno di S con k"
+        },
+        {
+          "at": 50.25,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "rilevatore di feature permanente"
+        }
+      ],
+      "duration_sec": 63.48
+    },
+    {
+      "id": "scene-14",
+      "section": "12.8 Rappresentazione di input e output",
+      "title": "Pre-processing, Softmax e Cross-Entropy",
+      "audio_file": "audio/scene-14.wav",
+      "subtitle_file": "subtitles/scene-14.json",
+      "tts_text": "Il modo in cui codifichiamo input e output ha un impatto enorme sulle prestazioni. [pause:0.6] Sugli input sono fondamentali la standardizzazione a media zero e deviazione standard uno, il rescaling tra zero e uno, e la codifica one-hot uno su K per le variabili categoriche. Attenzione ai dati mancanti: inserire zero non significa nessun ingresso se lo zero fa parte del dominio dei valori. [pause:0.9] Sulle uscite: per la regressione servono sempre unità lineari. Per la classificazione si usa un'uscita binaria o one-hot multi-classe, spesso con tangente iperbolica che converge più in fretta, usando target come zero virgola nove o meno zero virgola nove per evitare la saturazione asintotica. [pause:0.9] Per target multi-classe zero uno si usa spesso la Softmax: o con k è uguale a e elevato a net con k, diviso la somma su j di e elevato a net con j. Le uscite sommano a uno e si leggono come probabilità di classe. [pause:0.8] In alternativa all'errore quadratico, per la classificazione si usa la loss di cross-entropy, corrispondente alla stima di massima verosimiglianza.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.8 · Rappresentazione di input e output</div>\n  <h2 class=\"slide-title\">Pre-processing, Softmax e Cross-Entropy</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Input (pre-processing)</div>\n      <ul class=\"clean-list\">\n        <li><strong>Standardizzazione</strong>: \\((v - \\mu)/\\sigma\\) (media 0, dev. std 1).</li>\n        <li><strong>Rescaling</strong> in \\([0,1]\\): \\((v-\\min)/(\\max-\\min)\\).</li>\n        <li>Categorici: codifica <strong>1-of-\\(K\\)</strong> (one-hot).</li>\n        <li>Mancanti: <strong>0 non significa assenza</strong> se 0 è nel range.</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Output</div>\n      <ul class=\"clean-list\">\n        <li><strong>(!) Regressione</strong>: unità di uscita <strong>lineari</strong>.</li>\n        <li><strong>Classificazione</strong>: binaria o 1-of-\\(K\\) (vince la più alta).</li>\n        <li><strong>tanh</strong> spesso più rapida; target \\(0{,}9 / -0{,}9\\) evita saturazione asintotica.</li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Softmax (probabilità multi-classe)</div>\n      \\[o_k(\\x) = \\frac{e^{\\net_k}}{\\sum_{j=1}^{K} e^{\\net_j}}\\]\n      <p class=\"math-note\">Le uscite sommano a \\(1\\): \\(o_k(\\x) = p(\\text{classe}=k \\mid \\x)\\).</p>\n    </div>\n    <div id=\"s4\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Loss Cross-Entropy (binaria, MLE)</div>\n      \\[\\begin{gathered} -\\sum_{p=1}^{l}\\Big\\{ d_p\\log o_p \\\\ + (1-d_p)\\log(1-o_p)\\Big\\} \\end{gathered}\\]\n      <p class=\"math-note\">Con \\(o_p = \\out(\\x_p)\\) uscita probabilistica in \\((0,1)\\).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.96,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Sugli input sono fondamentali"
+        },
+        {
+          "at": 23.04,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Sulle uscite: per la regressione"
+        },
+        {
+          "at": 41.22,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "spesso la Softmax"
+        },
+        {
+          "at": 41.22,
+          "action": "highlight",
+          "target": "#s3",
+          "anchor": "spesso la Softmax"
+        },
+        {
+          "at": 58.4,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "loss di cross-entropy"
+        },
+        {
+          "at": 58.4,
+          "action": "highlight",
+          "target": "#s4",
+          "anchor": "loss di cross-entropy"
+        }
+      ],
+      "duration_sec": 63.43
+    },
+    {
+      "id": "scene-15",
+      "section": "12.9 Validazione di una rete neurale",
+      "title": "Mai fissare le epoche, early stopping in CV e scelta tra trial",
+      "audio_file": "audio/scene-15.wav",
+      "subtitle_file": "subtitles/scene-15.json",
+      "tts_text": "Nella validazione di una rete neurale ci sono tre questioni specifiche da non sbagliare. [pause:0.6] Prima regola: evitare di fermare l'addestramento a un numero fisso e arbitrario di epoche. Se è piccolo dà underfitting e favorisce learning rate alti; se è grande dà overfitting; non può valere per tutte le configurazioni e i fold della cross-validation; e non si saprebbe quale numero usare nel riaddestramento finale. [pause:0.9] Seconda questione: early stopping e K-fold cross-validation. L'early stopping fa parte della model selection e non tocca mai il test set. Nel riaddestramento finale, fare la media delle epoche sui fold è rischioso perché con più dati il punto ottimo cambia. Molto meglio prendere la media dell'errore di training al miglior punto di validazione e usarla come soglia di arresto, oppure tenere un validation set anche nel riaddestramento, oppure affidarsi a modelli ben regolarizzati. [pause:0.9] Terza questione: tra più inizializzazioni diverse, riportare sempre media e varianza; oppure usare un ensemble; se si sceglie un singolo modello serve un validation set, prendendo il migliore o la mediana, dichiarando sempre la scelta.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.9 · Validazione specifica per le reti</div>\n  <h2 class=\"slide-title\">Epoche, early stopping in CV e selezione tra inizializzazioni</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Mai fissare un numero arbitrario di epoche</div>\n    <p>Troppo piccolo → underfitting (favorisce \\(\\eta\\) alti) · Troppo grande → overfitting · Non valido per tutti i fold/configurazioni · Incerto nel riaddestramento finale.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Early stopping + K-fold CV (riaddestramento)</div>\n      <ul class=\"clean-list\">\n        <li>✗ <strong>Media delle epoche</strong> sui fold: rischiosa (con più dati cambia il numero di aggiornamenti).</li>\n        <li>✓ <strong>Media dell'errore di training</strong> al miglior punto di VL come soglia finale.</li>\n        <li>✓ Oppure VL dedicato o <strong>regolarizzazione</strong> a convergenza.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Scelta tra più inizializzazioni (da dichiarare)</div>\n      <ul class=\"clean-list\">\n        <li>Riportare <strong>media e varianza</strong> sulle prove.</li>\n        <li>Usare tutti i modelli in <strong>ensemble</strong> (media / voto).</li>\n        <li>Sceglierne uno sul <strong>VL</strong> (migliore o mediana); scartare fallimenti guardando solo il training.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 8.24,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "numero fisso e arbitrario"
+        },
+        {
+          "at": 26.64,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "early stopping e K-fold"
+        },
+        {
+          "at": 42.85,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "media dell'errore di training"
+        },
+        {
+          "at": 54.79,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terza questione"
+        }
+      ],
+      "duration_sec": 70.14
+    },
+    {
+      "id": "scene-16",
+      "section": "12.10 Pregi e difetti delle reti neurali",
+      "title": "Pregi, limiti (black box) e quando usarle",
+      "audio_file": "audio/scene-16.wav",
+      "subtitle_file": "subtitles/scene-16.json",
+      "tts_text": "Tiriamo le somme su pregi e punti critici delle reti neurali. [pause:0.6] Tra i pregi: costruiscono un'ipotesi esplicita in uno spazio continuo e differenziabile, sono approssimatori universali robusti al rumore e gestiscono dati continui e discreti. Hanno una rappresentazione distribuita compatta in matrici di pesi, tolleranza ai guasti e capacità di adattamento online, il continual learning con il relativo dilemma stabilità-plasticità. [pause:0.9] Tra i punti critici spicca il problema black box: è difficile interpretare ciò che la rete ha appreso, tema dell'explainable AI, affrontato con proiezioni interne, analisi di sensitività, Layer-wise Relevance Propagation per mappe di calore sugli input, ed estrazione di regole. Inoltre progettare l'architettura è oneroso, il risultato dipende dagli iperparametri e i dati mancanti richiedono imputazione o rimozione. [pause:0.8] Sono quindi ideali quando abbiamo input ad alta dimensione, dati rumorosi, forma della funzione sconosciuta, tempo di training non critico, ma inferenza veloce e bassa necessità di interpretabilità.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.10 · Bilancio delle reti neurali</div>\n  <h2 class=\"slide-title\">Pregi, punti critici e profilo dei task ideali</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Pregi principali</div>\n      <ul class=\"clean-list\">\n        <li><strong>Ipotesi esplicita</strong> (diversamente dal K-NN), spazio continuo e differenziabile.</li>\n        <li>Approssimatori universali, degrado graduale con rumore.</li>\n        <li><strong>Rappresentazione distribuita</strong> compatta, tolleranza ai guasti.</li>\n        <li>Adattamento online (<em>continual learning</em>, dilemma stabilità-plasticità).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Punti critici</div>\n      <ul class=\"clean-list\">\n        <li><strong>Black box</strong> → <em>Explainable AI</em> (clustering interno, sensitività, LRP, estrazione regole).</li>\n        <li>Progettazione dell'<strong>architettura</strong> e sensibilità agli iperparametri.</li>\n        <li>Non ideali con <strong>dati mancanti</strong> (imputazione / rimozione).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Quando usarle:</span>\n    <span class=\"pill\">Input alta dimensione</span>\n    <span class=\"pill\">Dati rumorosi</span>\n    <span class=\"pill\">Target sconosciuto</span>\n    <span class=\"pill pill-accent\">Inferenza veloce · leggibilità non critica</span>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.03,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Tra i pregi"
+        },
+        {
+          "at": 27.99,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Tra i punti critici"
+        },
+        {
+          "at": 55.05,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Sono quindi ideali"
+        }
+      ],
+      "duration_sec": 67.99
+    },
+    {
+      "id": "scene-17",
+      "section": "12.11 Verificare un'implementazione: il benchmark MONK",
+      "title": "Collaudare il proprio codice sul benchmark MONK",
+      "audio_file": "audio/scene-17.wav",
+      "subtitle_file": "subtitles/scene-17.json",
+      "tts_text": "Verificare se una propria implementazione di backpropagation è corretta è sorprendentemente difficile: una rete con piccoli bug spesso impara comunque qualcosa, anche se male. [pause:0.7] Il primo banco di prova classico è il benchmark MONK: tre task di classificazione binaria artificiali e veloci, con sei variabili categoriche da due, tre o quattro valori ciascuna, che in codifica one-hot diventano esattamente diciassette unità di input. I primi due task raggiungono il cento per cento facilmente; MONK tre contiene etichette rumorose e mette alla prova l'overfitting. [pause:0.9] Cinque consigli pratici per le prime prove: una sola uscita coerente con i target, non dimenticare mai la codifica one-hot, usare batch con gradiente medio, partire da due a cinque unità nascoste con pesi piccoli, e attivare lo shuffling nell'online perché gli esempi sono ordinati per classe. [pause:0.8] Ricorda: buoni risultati su MONK non garantiscono l'assenza di bug, ma risultati cattivi segnalano sicuramente un errore nel codice. Controlla la forma liscia delle curve e confronta i numeri su un esempio svolto o con una libreria affidabile.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.11 · Debug e collaudo</div>\n  <h2 class=\"slide-title\">Il benchmark MONK per verificare la backpropagation</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Struttura del benchmark MONK</div>\n      <ul class=\"clean-list\">\n        <li><strong>3 task binari</strong> piccoli (fino al 100% di accuratezza su MONK1–2).</li>\n        <li>6 variabili categoriche → <strong>codifica 1-of-\\(k\\) = 17 input</strong>.</li>\n        <li><strong>MONK3</strong> ha etichette rumorose (testa l'overfitting).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">5 consigli per le prime prove</div>\n      <ul class=\"clean-list\">\n        <li>1 uscita coerente con i target (\\(0/1\\) o \\(-1/+1\\) con tanh).</li>\n        <li><strong>Codifica one-hot</strong> (dimenticarla è l'errore più frequente).</li>\n        <li>Batch con gradiente medio; <strong>2–5 unità nascoste</strong>, pesi piccoli.</li>\n        <li><strong>Shuffling</strong> in online (gli esempi sono ordinati per classe).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Regola di debug</div>\n    <p>Buoni risultati su MONK <strong>non garantiscono</strong> correttezza; risultati cattivi indicano <strong>sicuramente</strong> un bug. Guardare la <strong>forma liscia</strong> delle curve e confrontare con un esempio svolto (con bias) o una libreria affidabile.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 11.8,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "benchmark MONK"
+        },
+        {
+          "at": 33.01,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Cinque consigli pratici"
+        },
+        {
+          "at": 53.15,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "buoni risultati su MONK"
+        }
+      ],
+      "duration_sec": 66.9
+    },
+    {
+      "id": "scene-18",
+      "section": "Sintesi e verifica",
+      "title": "Punti chiave e domande di autoverifica",
+      "audio_file": "audio/scene-18.wav",
+      "subtitle_file": "subtitles/scene-18.json",
+      "tts_text": "Chiudiamo il capitolo fissando i sei punti chiave dell'addestramento di una rete neurale. [pause:0.7] Primo: pesi iniziali piccoli e casuali per rompere la simmetria ed evitare saturazione, con più inizializzazioni riportando media e varianza. [pause:0.6] Secondo: online con shuffling e eta piccolo, batch accurato, o mini-batch come compromesso standard, usando sempre il gradiente medio. [pause:0.6] Terzo: momentum per accelerare nei plateau e smorzare le oscillazioni nelle valli strette. [pause:0.6] Quarto: la VC-dimension cresce durante il training; si contrasta l'overfitting con regolarizzazione weight decay, early stopping e pruning. [pause:0.6] Quinto: uscite lineari per la regressione, sigmoidi, tangente iperbolica o Softmax per la classificazione. [pause:0.6] Sesto: mai fissare un numero arbitrario di epoche, e gestire sempre l'early stopping all'interno della model selection.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">Capitolo 12 · Chiusura</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\">Pesi iniziali <strong>piccoli e casuali</strong>; multi-trial con media e varianza.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Online</strong> (shuffling, \\(\\eta\\) piccolo), <strong>batch</strong>, <strong>mini-batch</strong>; gradiente medio.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Momentum</strong> \\(\\Delta\\w = -\\eta\\nabla E + \\alpha\\Delta\\w_{\\mathit{old}}\\): accelera plateau, smorza oscillazioni.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Overfitting</strong>: VC-dim crescente → weight decay, early stopping, pruning.</li>\n        <li id=\"s5\" class=\"cue-hidden\">Uscite <strong>lineari</strong> (regressione); sigmoide / tanh / <strong>Softmax</strong> (classificazione).</li>\n        <li id=\"s6\" class=\"cue-hidden\">Mai numero fisso di epoche; <strong>early stopping</strong> dentro la model selection.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\" style=\"font-size:0.84rem;gap:3px;\">\n        <li>Come si inizializzano i pesi e perché?</li>\n        <li>Differenze tra online, batch e mini-batch.</li>\n        <li>Ruolo di \\(\\eta\\); cos'è il momentum e perché funziona?</li>\n        <li>Serve trovare il minimo globale? Perché?</li>\n        <li>Come nasce l'overfitting in una rete? Cos'è l'early stopping?</li>\n        <li>Scrivere weight decay + momentum. Stabilizza la convergenza?</li>\n        <li>Descrivere il Cascade Correlation.</li>\n        <li>Rappresentazione di input e output (regressione vs classificazione).</li>\n        <li>Perché non fissare le epoche? Early stopping con K-fold CV.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.82,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: pesi iniziali"
+        },
+        {
+          "at": 15.04,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: online"
+        },
+        {
+          "at": 24.56,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: momentum"
+        },
+        {
+          "at": 30.76,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: la VC-dimension"
+        },
+        {
+          "at": 40.44,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: uscite lineari"
+        },
+        {
+          "at": 48.24,
+          "action": "show",
+          "target": "#s6, #s7",
+          "anchor": "Sesto: mai fissare"
+        }
+      ],
+      "duration_sec": 55.41
+    }
+  ]
+}

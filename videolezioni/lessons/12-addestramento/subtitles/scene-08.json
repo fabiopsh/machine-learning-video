@@ -1,0 +1,887 @@
+{
+  "duration": 61.125,
+  "segments": [
+    {
+      "start": 0.206,
+      "end": 2.586,
+      "text": "Quando dobbiamo fermare la discesa del gradiente?",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 0.206,
+          "end": 0.446
+        },
+        {
+          "text": "dobbiamo",
+          "start": 0.506,
+          "end": 0.786
+        },
+        {
+          "text": "fermare",
+          "start": 0.846,
+          "end": 1.226
+        },
+        {
+          "text": "la",
+          "start": 1.366,
+          "end": 1.446
+        },
+        {
+          "text": "discesa",
+          "start": 1.486,
+          "end": 1.866
+        },
+        {
+          "text": "del",
+          "start": 1.906,
+          "end": 2.026
+        },
+        {
+          "text": "gradiente?",
+          "start": 2.046,
+          "end": 2.586
+        }
+      ]
+    },
+    {
+      "start": 3.307,
+      "end": 5.027,
+      "text": "Esistono quattro famiglie di criteri.",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 3.307,
+          "end": 3.707
+        },
+        {
+          "text": "quattro",
+          "start": 3.787,
+          "end": 4.107
+        },
+        {
+          "text": "famiglie",
+          "start": 4.147,
+          "end": 4.487
+        },
+        {
+          "text": "di",
+          "start": 4.507,
+          "end": 4.567
+        },
+        {
+          "text": "criteri.",
+          "start": 4.607,
+          "end": 5.027
+        }
+      ]
+    },
+    {
+      "start": 5.907,
+      "end": 10.048,
+      "text": "Il criterio di base è la soglia sull'errore: fermarsi quando l'errore medio,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 5.907,
+          "end": 6.007
+        },
+        {
+          "text": "criterio",
+          "start": 6.047,
+          "end": 6.427
+        },
+        {
+          "text": "di",
+          "start": 6.467,
+          "end": 6.527
+        },
+        {
+          "text": "base",
+          "start": 6.567,
+          "end": 6.827
+        },
+        {
+          "text": "è",
+          "start": 6.987,
+          "end": 7.027
+        },
+        {
+          "text": "la",
+          "start": 7.067,
+          "end": 7.127
+        },
+        {
+          "text": "soglia",
+          "start": 7.207,
+          "end": 7.467
+        },
+        {
+          "text": "sull'errore:",
+          "start": 7.507,
+          "end": 8.007
+        },
+        {
+          "text": "fermarsi",
+          "start": 8.487,
+          "end": 8.987
+        },
+        {
+          "text": "quando",
+          "start": 9.047,
+          "end": 9.287
+        },
+        {
+          "text": "l'errore",
+          "start": 9.327,
+          "end": 9.667
+        },
+        {
+          "text": "medio,",
+          "start": 9.707,
+          "end": 10.048
+        }
+      ]
+    },
+    {
+      "start": 10.188,
+      "end": 14.128,
+      "text": "l'errore massimo o il numero di errori scende sotto una tolleranza epsilon.",
+      "words": [
+        {
+          "text": "l'errore",
+          "start": 10.188,
+          "end": 10.528
+        },
+        {
+          "text": "massimo",
+          "start": 10.568,
+          "end": 10.988
+        },
+        {
+          "text": "o",
+          "start": 11.108,
+          "end": 11.148
+        },
+        {
+          "text": "il",
+          "start": 11.208,
+          "end": 11.288
+        },
+        {
+          "text": "numero",
+          "start": 11.348,
+          "end": 11.628
+        },
+        {
+          "text": "di",
+          "start": 11.668,
+          "end": 11.708
+        },
+        {
+          "text": "errori",
+          "start": 11.748,
+          "end": 12.108
+        },
+        {
+          "text": "scende",
+          "start": 12.228,
+          "end": 12.528
+        },
+        {
+          "text": "sotto",
+          "start": 12.588,
+          "end": 12.828
+        },
+        {
+          "text": "una",
+          "start": 12.848,
+          "end": 12.968
+        },
+        {
+          "text": "tolleranza",
+          "start": 13.008,
+          "end": 13.528
+        },
+        {
+          "text": "epsilon.",
+          "start": 13.668,
+          "end": 14.128
+        }
+      ]
+    },
+    {
+      "start": 14.768,
+      "end": 17.789,
+      "text": "È l'ideale se un esperto di dominio conosce la tolleranza dei dati,",
+      "words": [
+        {
+          "text": "È",
+          "start": 14.768,
+          "end": 14.808
+        },
+        {
+          "text": "l'ideale",
+          "start": 14.868,
+          "end": 15.268
+        },
+        {
+          "text": "se",
+          "start": 15.308,
+          "end": 15.368
+        },
+        {
+          "text": "un",
+          "start": 15.428,
+          "end": 15.488
+        },
+        {
+          "text": "esperto",
+          "start": 15.528,
+          "end": 15.828
+        },
+        {
+          "text": "di",
+          "start": 15.868,
+          "end": 15.928
+        },
+        {
+          "text": "dominio",
+          "start": 15.968,
+          "end": 16.308
+        },
+        {
+          "text": "conosce",
+          "start": 16.348,
+          "end": 16.689
+        },
+        {
+          "text": "la",
+          "start": 16.729,
+          "end": 16.789
+        },
+        {
+          "text": "tolleranza",
+          "start": 16.829,
+          "end": 17.289
+        },
+        {
+          "text": "dei",
+          "start": 17.349,
+          "end": 17.449
+        },
+        {
+          "text": "dati,",
+          "start": 17.489,
+          "end": 17.789
+        }
+      ]
+    },
+    {
+      "start": 18.109,
+      "end": 19.149,
+      "text": "ma spesso non è nota.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 18.109,
+          "end": 18.169
+        },
+        {
+          "text": "spesso",
+          "start": 18.229,
+          "end": 18.529
+        },
+        {
+          "text": "non",
+          "start": 18.629,
+          "end": 18.749
+        },
+        {
+          "text": "è",
+          "start": 18.789,
+          "end": 18.829
+        },
+        {
+          "text": "nota.",
+          "start": 18.889,
+          "end": 19.149
+        }
+      ]
+    },
+    {
+      "start": 20.129,
+      "end": 22.969,
+      "text": "I criteri interni guardano invece l'ottimizzazione stessa:",
+      "words": [
+        {
+          "text": "I",
+          "start": 20.129,
+          "end": 20.169
+        },
+        {
+          "text": "criteri",
+          "start": 20.229,
+          "end": 20.589
+        },
+        {
+          "text": "interni",
+          "start": 20.629,
+          "end": 21.029
+        },
+        {
+          "text": "guardano",
+          "start": 21.129,
+          "end": 21.449
+        },
+        {
+          "text": "invece",
+          "start": 21.469,
+          "end": 21.749
+        },
+        {
+          "text": "l'ottimizzazione",
+          "start": 21.809,
+          "end": 22.549
+        },
+        {
+          "text": "stessa:",
+          "start": 22.589,
+          "end": 22.969
+        }
+      ]
+    },
+    {
+      "start": 23.53,
+      "end": 24.59,
+      "text": "pesi che non cambiano più,",
+      "words": [
+        {
+          "text": "pesi",
+          "start": 23.53,
+          "end": 23.81
+        },
+        {
+          "text": "che",
+          "start": 23.87,
+          "end": 23.95
+        },
+        {
+          "text": "non",
+          "start": 23.97,
+          "end": 24.07
+        },
+        {
+          "text": "cambiano",
+          "start": 24.11,
+          "end": 24.43
+        },
+        {
+          "text": "più,",
+          "start": 24.47,
+          "end": 24.59
+        }
+      ]
+    },
+    {
+      "start": 25.17,
+      "end": 30.07,
+      "text": "norma del gradiente sotto epsilon, oppure errore che scende di meno dello zero virgola uno",
+      "words": [
+        {
+          "text": "norma",
+          "start": 25.17,
+          "end": 25.47
+        },
+        {
+          "text": "del",
+          "start": 25.53,
+          "end": 25.65
+        },
+        {
+          "text": "gradiente",
+          "start": 25.67,
+          "end": 26.13
+        },
+        {
+          "text": "sotto",
+          "start": 26.19,
+          "end": 26.43
+        },
+        {
+          "text": "epsilon,",
+          "start": 26.51,
+          "end": 26.95
+        },
+        {
+          "text": "oppure",
+          "start": 27.33,
+          "end": 27.67
+        },
+        {
+          "text": "errore",
+          "start": 27.81,
+          "end": 28.17
+        },
+        {
+          "text": "che",
+          "start": 28.21,
+          "end": 28.29
+        },
+        {
+          "text": "scende",
+          "start": 28.33,
+          "end": 28.63
+        },
+        {
+          "text": "di",
+          "start": 28.67,
+          "end": 28.75
+        },
+        {
+          "text": "meno",
+          "start": 28.81,
+          "end": 29.01
+        },
+        {
+          "text": "dello",
+          "start": 29.05,
+          "end": 29.25
+        },
+        {
+          "text": "zero",
+          "start": 29.33,
+          "end": 29.51
+        },
+        {
+          "text": "virgola",
+          "start": 29.57,
+          "end": 29.87
+        },
+        {
+          "text": "uno",
+          "start": 29.93,
+          "end": 30.07
+        }
+      ]
+    },
+    {
+      "start": 30.11,
+      "end": 31.151,
+      "text": "per cento in un'epoca.",
+      "words": [
+        {
+          "text": "per",
+          "start": 30.11,
+          "end": 30.21
+        },
+        {
+          "text": "cento",
+          "start": 30.27,
+          "end": 30.531
+        },
+        {
+          "text": "in",
+          "start": 30.591,
+          "end": 30.671
+        },
+        {
+          "text": "un'epoca.",
+          "start": 30.711,
+          "end": 31.151
+        }
+      ]
+    },
+    {
+      "start": 31.831,
+      "end": 34.931,
+      "text": "Siccome possono scattare troppo presto con un learning rate piccolo,",
+      "words": [
+        {
+          "text": "Siccome",
+          "start": 31.831,
+          "end": 32.151
+        },
+        {
+          "text": "possono",
+          "start": 32.191,
+          "end": 32.511
+        },
+        {
+          "text": "scattare",
+          "start": 32.531,
+          "end": 32.891
+        },
+        {
+          "text": "troppo",
+          "start": 32.931,
+          "end": 33.151
+        },
+        {
+          "text": "presto",
+          "start": 33.191,
+          "end": 33.531
+        },
+        {
+          "text": "con",
+          "start": 33.591,
+          "end": 33.731
+        },
+        {
+          "text": "un",
+          "start": 33.751,
+          "end": 33.831
+        },
+        {
+          "text": "learning",
+          "start": 33.871,
+          "end": 34.191
+        },
+        {
+          "text": "rate",
+          "start": 34.251,
+          "end": 34.471
+        },
+        {
+          "text": "piccolo,",
+          "start": 34.531,
+          "end": 34.931
+        }
+      ]
+    },
+    {
+      "start": 35.111,
+      "end": 39.692,
+      "text": "si osserva la condizione per k epoche consecutive: è la cosiddetta patience.",
+      "words": [
+        {
+          "text": "si",
+          "start": 35.111,
+          "end": 35.151
+        },
+        {
+          "text": "osserva",
+          "start": 35.191,
+          "end": 35.531
+        },
+        {
+          "text": "la",
+          "start": 35.591,
+          "end": 35.651
+        },
+        {
+          "text": "condizione",
+          "start": 35.691,
+          "end": 36.191
+        },
+        {
+          "text": "per",
+          "start": 36.231,
+          "end": 36.371
+        },
+        {
+          "text": "k",
+          "start": 36.471,
+          "end": 36.511
+        },
+        {
+          "text": "epoche",
+          "start": 36.851,
+          "end": 37.151
+        },
+        {
+          "text": "consecutive:",
+          "start": 37.192,
+          "end": 37.872
+        },
+        {
+          "text": "è",
+          "start": 38.312,
+          "end": 38.352
+        },
+        {
+          "text": "la",
+          "start": 38.392,
+          "end": 38.452
+        },
+        {
+          "text": "cosiddetta",
+          "start": 38.492,
+          "end": 39.032
+        },
+        {
+          "text": "patience.",
+          "start": 39.152,
+          "end": 39.692
+        }
+      ]
+    },
+    {
+      "start": 40.492,
+      "end": 46.633,
+      "text": "Terzo accorgimento essenziale: impostare sempre un limite massimo di sicurezza sul numero di epoche contro",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 40.492,
+          "end": 40.872
+        },
+        {
+          "text": "accorgimento",
+          "start": 40.912,
+          "end": 41.612
+        },
+        {
+          "text": "essenziale:",
+          "start": 41.692,
+          "end": 42.412
+        },
+        {
+          "text": "impostare",
+          "start": 42.872,
+          "end": 43.312
+        },
+        {
+          "text": "sempre",
+          "start": 43.372,
+          "end": 43.672
+        },
+        {
+          "text": "un",
+          "start": 43.712,
+          "end": 43.772
+        },
+        {
+          "text": "limite",
+          "start": 43.812,
+          "end": 44.092
+        },
+        {
+          "text": "massimo",
+          "start": 44.152,
+          "end": 44.513
+        },
+        {
+          "text": "di",
+          "start": 44.573,
+          "end": 44.633
+        },
+        {
+          "text": "sicurezza",
+          "start": 44.693,
+          "end": 45.213
+        },
+        {
+          "text": "sul",
+          "start": 45.293,
+          "end": 45.433
+        },
+        {
+          "text": "numero",
+          "start": 45.493,
+          "end": 45.753
+        },
+        {
+          "text": "di",
+          "start": 45.813,
+          "end": 45.873
+        },
+        {
+          "text": "epoche",
+          "start": 45.973,
+          "end": 46.333
+        },
+        {
+          "text": "contro",
+          "start": 46.373,
+          "end": 46.633
+        }
+      ]
+    },
+    {
+      "start": 46.753,
+      "end": 51.494,
+      "text": "convergenze lente, ma senza mai usarlo come numero arbitrario di arresto fisso.",
+      "words": [
+        {
+          "text": "convergenze",
+          "start": 46.753,
+          "end": 47.333
+        },
+        {
+          "text": "lente,",
+          "start": 47.373,
+          "end": 47.713
+        },
+        {
+          "text": "ma",
+          "start": 48.093,
+          "end": 48.133
+        },
+        {
+          "text": "senza",
+          "start": 48.333,
+          "end": 48.653
+        },
+        {
+          "text": "mai",
+          "start": 48.693,
+          "end": 48.833
+        },
+        {
+          "text": "usarlo",
+          "start": 48.873,
+          "end": 49.273
+        },
+        {
+          "text": "come",
+          "start": 49.313,
+          "end": 49.513
+        },
+        {
+          "text": "numero",
+          "start": 49.633,
+          "end": 49.933
+        },
+        {
+          "text": "arbitrario",
+          "start": 50.013,
+          "end": 50.653
+        },
+        {
+          "text": "di",
+          "start": 50.713,
+          "end": 50.753
+        },
+        {
+          "text": "arresto",
+          "start": 50.813,
+          "end": 51.134
+        },
+        {
+          "text": "fisso.",
+          "start": 51.174,
+          "end": 51.494
+        }
+      ]
+    },
+    {
+      "start": 52.494,
+      "end": 57.774,
+      "text": "Infine, un errore di training molto basso non è necessariamente il momento giusto per fermarsi:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 52.494,
+          "end": 52.954
+        },
+        {
+          "text": "un",
+          "start": 53.454,
+          "end": 53.534
+        },
+        {
+          "text": "errore",
+          "start": 53.574,
+          "end": 53.834
+        },
+        {
+          "text": "di",
+          "start": 53.894,
+          "end": 53.954
+        },
+        {
+          "text": "training",
+          "start": 53.994,
+          "end": 54.374
+        },
+        {
+          "text": "molto",
+          "start": 54.474,
+          "end": 54.754
+        },
+        {
+          "text": "basso",
+          "start": 54.794,
+          "end": 55.134
+        },
+        {
+          "text": "non",
+          "start": 55.194,
+          "end": 55.314
+        },
+        {
+          "text": "è",
+          "start": 55.334,
+          "end": 55.374
+        },
+        {
+          "text": "necessariamente",
+          "start": 55.414,
+          "end": 56.114
+        },
+        {
+          "text": "il",
+          "start": 56.154,
+          "end": 56.234
+        },
+        {
+          "text": "momento",
+          "start": 56.274,
+          "end": 56.654
+        },
+        {
+          "text": "giusto",
+          "start": 56.754,
+          "end": 57.054
+        },
+        {
+          "text": "per",
+          "start": 57.094,
+          "end": 57.194
+        },
+        {
+          "text": "fermarsi:",
+          "start": 57.254,
+          "end": 57.774
+        }
+      ]
+    },
+    {
+      "start": 58.155,
+      "end": 60.875,
+      "text": "ci porta direttamente al tema dell'overfitting.",
+      "words": [
+        {
+          "text": "ci",
+          "start": 58.155,
+          "end": 58.255
+        },
+        {
+          "text": "porta",
+          "start": 58.295,
+          "end": 58.575
+        },
+        {
+          "text": "direttamente",
+          "start": 58.715,
+          "end": 59.475
+        },
+        {
+          "text": "al",
+          "start": 59.595,
+          "end": 59.715
+        },
+        {
+          "text": "tema",
+          "start": 59.775,
+          "end": 59.995
+        },
+        {
+          "text": "dell'overfitting.",
+          "start": 60.055,
+          "end": 60.875
+        }
+      ]
+    }
+  ]
+}

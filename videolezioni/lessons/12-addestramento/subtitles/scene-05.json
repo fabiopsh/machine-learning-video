@@ -1,0 +1,811 @@
+{
+  "duration": 56.509,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.221,
+      "text": "Il learning rate eta regola l'ampiezza del passo.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "learning",
+          "start": 0.22,
+          "end": 0.58
+        },
+        {
+          "text": "rate",
+          "start": 0.64,
+          "end": 0.92
+        },
+        {
+          "text": "eta",
+          "start": 1.08,
+          "end": 1.32
+        },
+        {
+          "text": "regola",
+          "start": 1.78,
+          "end": 2.16
+        },
+        {
+          "text": "l'ampiezza",
+          "start": 2.2,
+          "end": 2.66
+        },
+        {
+          "text": "del",
+          "start": 2.7,
+          "end": 2.821
+        },
+        {
+          "text": "passo.",
+          "start": 2.881,
+          "end": 3.221
+        }
+      ]
+    },
+    {
+      "start": 3.801,
+      "end": 9.022,
+      "text": "Nel batch possiamo usare un eta più alto; nell'online serve più piccolo per evitare instabilità.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 3.801,
+          "end": 3.941
+        },
+        {
+          "text": "batch",
+          "start": 4.001,
+          "end": 4.281
+        },
+        {
+          "text": "possiamo",
+          "start": 4.461,
+          "end": 4.781
+        },
+        {
+          "text": "usare",
+          "start": 4.841,
+          "end": 5.101
+        },
+        {
+          "text": "un",
+          "start": 5.141,
+          "end": 5.221
+        },
+        {
+          "text": "eta",
+          "start": 5.281,
+          "end": 5.421
+        },
+        {
+          "text": "più",
+          "start": 5.461,
+          "end": 5.561
+        },
+        {
+          "text": "alto;",
+          "start": 5.661,
+          "end": 5.941
+        },
+        {
+          "text": "nell'online",
+          "start": 6.321,
+          "end": 6.981
+        },
+        {
+          "text": "serve",
+          "start": 7.081,
+          "end": 7.341
+        },
+        {
+          "text": "più",
+          "start": 7.381,
+          "end": 7.481
+        },
+        {
+          "text": "piccolo",
+          "start": 7.561,
+          "end": 7.941
+        },
+        {
+          "text": "per",
+          "start": 7.981,
+          "end": 8.081
+        },
+        {
+          "text": "evitare",
+          "start": 8.121,
+          "end": 8.441
+        },
+        {
+          "text": "instabilità.",
+          "start": 8.481,
+          "end": 9.022
+        }
+      ]
+    },
+    {
+      "start": 9.602,
+      "end": 14.422,
+      "text": "Tipicamente con LMS si esplora tra zero virgola zero uno e zero virgola cinque.",
+      "words": [
+        {
+          "text": "Tipicamente",
+          "start": 9.602,
+          "end": 10.182
+        },
+        {
+          "text": "con",
+          "start": 10.262,
+          "end": 10.402
+        },
+        {
+          "text": "LMS",
+          "start": 10.662,
+          "end": 11.222
+        },
+        {
+          "text": "si",
+          "start": 11.362,
+          "end": 11.422
+        },
+        {
+          "text": "esplora",
+          "start": 11.482,
+          "end": 11.862
+        },
+        {
+          "text": "tra",
+          "start": 11.942,
+          "end": 12.062
+        },
+        {
+          "text": "zero",
+          "start": 12.222,
+          "end": 12.482
+        },
+        {
+          "text": "virgola",
+          "start": 12.522,
+          "end": 12.842
+        },
+        {
+          "text": "zero",
+          "start": 12.922,
+          "end": 13.062
+        },
+        {
+          "text": "uno",
+          "start": 13.162,
+          "end": 13.302
+        },
+        {
+          "text": "e",
+          "start": 13.442,
+          "end": 13.482
+        },
+        {
+          "text": "zero",
+          "start": 13.582,
+          "end": 13.742
+        },
+        {
+          "text": "virgola",
+          "start": 13.782,
+          "end": 14.062
+        },
+        {
+          "text": "cinque.",
+          "start": 14.122,
+          "end": 14.422
+        }
+      ]
+    },
+    {
+      "start": 15.203,
+      "end": 20.343,
+      "text": "Pratica essenziale: guardare sempre la curva dell'errore di training epoca per epoca.",
+      "words": [
+        {
+          "text": "Pratica",
+          "start": 15.203,
+          "end": 15.543
+        },
+        {
+          "text": "essenziale:",
+          "start": 15.623,
+          "end": 16.243
+        },
+        {
+          "text": "guardare",
+          "start": 16.583,
+          "end": 16.983
+        },
+        {
+          "text": "sempre",
+          "start": 17.143,
+          "end": 17.563
+        },
+        {
+          "text": "la",
+          "start": 17.683,
+          "end": 17.743
+        },
+        {
+          "text": "curva",
+          "start": 17.803,
+          "end": 18.103
+        },
+        {
+          "text": "dell'errore",
+          "start": 18.163,
+          "end": 18.643
+        },
+        {
+          "text": "di",
+          "start": 18.703,
+          "end": 18.763
+        },
+        {
+          "text": "training",
+          "start": 18.803,
+          "end": 19.223
+        },
+        {
+          "text": "epoca",
+          "start": 19.403,
+          "end": 19.763
+        },
+        {
+          "text": "per",
+          "start": 19.863,
+          "end": 19.983
+        },
+        {
+          "text": "epoca.",
+          "start": 20.043,
+          "end": 20.343
+        }
+      ]
+    },
+    {
+      "start": 21.044,
+      "end": 23.224,
+      "text": "Osserva i cinque andamenti tipici nel grafico.",
+      "words": [
+        {
+          "text": "Osserva",
+          "start": 21.044,
+          "end": 21.404
+        },
+        {
+          "text": "i",
+          "start": 21.484,
+          "end": 21.524
+        },
+        {
+          "text": "cinque",
+          "start": 21.604,
+          "end": 21.864
+        },
+        {
+          "text": "andamenti",
+          "start": 21.904,
+          "end": 22.264
+        },
+        {
+          "text": "tipici",
+          "start": 22.324,
+          "end": 22.644
+        },
+        {
+          "text": "nel",
+          "start": 22.684,
+          "end": 22.804
+        },
+        {
+          "text": "grafico.",
+          "start": 22.844,
+          "end": 23.224
+        }
+      ]
+    },
+    {
+      "start": 24.064,
+      "end": 26.905,
+      "text": "Se eta è molto alto, la curva viola diverge.",
+      "words": [
+        {
+          "text": "Se",
+          "start": 24.064,
+          "end": 24.164
+        },
+        {
+          "text": "eta",
+          "start": 24.284,
+          "end": 24.504
+        },
+        {
+          "text": "è",
+          "start": 24.644,
+          "end": 24.684
+        },
+        {
+          "text": "molto",
+          "start": 24.764,
+          "end": 25.004
+        },
+        {
+          "text": "alto,",
+          "start": 25.104,
+          "end": 25.384
+        },
+        {
+          "text": "la",
+          "start": 25.604,
+          "end": 25.664
+        },
+        {
+          "text": "curva",
+          "start": 25.704,
+          "end": 25.984
+        },
+        {
+          "text": "viola",
+          "start": 26.024,
+          "end": 26.325
+        },
+        {
+          "text": "diverge.",
+          "start": 26.465,
+          "end": 26.905
+        }
+      ]
+    },
+    {
+      "start": 27.485,
+      "end": 29.925,
+      "text": "Se è molto basso, la curva verde resta quasi piatta.",
+      "words": [
+        {
+          "text": "Se",
+          "start": 27.485,
+          "end": 27.545
+        },
+        {
+          "text": "è",
+          "start": 27.605,
+          "end": 27.645
+        },
+        {
+          "text": "molto",
+          "start": 27.685,
+          "end": 27.905
+        },
+        {
+          "text": "basso,",
+          "start": 27.945,
+          "end": 28.285
+        },
+        {
+          "text": "la",
+          "start": 28.425,
+          "end": 28.505
+        },
+        {
+          "text": "curva",
+          "start": 28.545,
+          "end": 28.765
+        },
+        {
+          "text": "verde",
+          "start": 28.825,
+          "end": 29.085
+        },
+        {
+          "text": "resta",
+          "start": 29.125,
+          "end": 29.325
+        },
+        {
+          "text": "quasi",
+          "start": 29.385,
+          "end": 29.565
+        },
+        {
+          "text": "piatta.",
+          "start": 29.585,
+          "end": 29.925
+        }
+      ]
+    },
+    {
+      "start": 30.545,
+      "end": 33.306,
+      "text": "Se è basso, la curva blu scende troppo lentamente;",
+      "words": [
+        {
+          "text": "Se",
+          "start": 30.545,
+          "end": 30.625
+        },
+        {
+          "text": "è",
+          "start": 30.685,
+          "end": 30.725
+        },
+        {
+          "text": "basso,",
+          "start": 30.805,
+          "end": 31.145
+        },
+        {
+          "text": "la",
+          "start": 31.265,
+          "end": 31.325
+        },
+        {
+          "text": "curva",
+          "start": 31.385,
+          "end": 31.665
+        },
+        {
+          "text": "blu",
+          "start": 31.725,
+          "end": 31.845
+        },
+        {
+          "text": "scende",
+          "start": 32.005,
+          "end": 32.326
+        },
+        {
+          "text": "troppo",
+          "start": 32.386,
+          "end": 32.666
+        },
+        {
+          "text": "lentamente;",
+          "start": 32.706,
+          "end": 33.306
+        }
+      ]
+    },
+    {
+      "start": 33.826,
+      "end": 37.426,
+      "text": "se è alto, la curva arancione scende in fretta ma si blocca presto a un",
+      "words": [
+        {
+          "text": "se",
+          "start": 33.826,
+          "end": 33.906
+        },
+        {
+          "text": "è",
+          "start": 33.966,
+          "end": 34.006
+        },
+        {
+          "text": "alto,",
+          "start": 34.046,
+          "end": 34.346
+        },
+        {
+          "text": "la",
+          "start": 34.506,
+          "end": 34.586
+        },
+        {
+          "text": "curva",
+          "start": 34.626,
+          "end": 34.886
+        },
+        {
+          "text": "arancione",
+          "start": 34.906,
+          "end": 35.326
+        },
+        {
+          "text": "scende",
+          "start": 35.366,
+          "end": 35.666
+        },
+        {
+          "text": "in",
+          "start": 35.706,
+          "end": 35.766
+        },
+        {
+          "text": "fretta",
+          "start": 35.806,
+          "end": 36.166
+        },
+        {
+          "text": "ma",
+          "start": 36.246,
+          "end": 36.306
+        },
+        {
+          "text": "si",
+          "start": 36.426,
+          "end": 36.506
+        },
+        {
+          "text": "blocca",
+          "start": 36.586,
+          "end": 36.866
+        },
+        {
+          "text": "presto",
+          "start": 36.906,
+          "end": 37.226
+        },
+        {
+          "text": "a",
+          "start": 37.266,
+          "end": 37.306
+        },
+        {
+          "text": "un",
+          "start": 37.346,
+          "end": 37.426
+        }
+      ]
+    },
+    {
+      "start": 37.486,
+      "end": 38.207,
+      "text": "errore elevato.",
+      "words": [
+        {
+          "text": "errore",
+          "start": 37.486,
+          "end": 37.766
+        },
+        {
+          "text": "elevato.",
+          "start": 37.806,
+          "end": 38.207
+        }
+      ]
+    },
+    {
+      "start": 38.987,
+      "end": 43.667,
+      "text": "Un buon learning rate produce la curva rossa: scende rapidamente e in modo liscio.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 38.987,
+          "end": 39.087
+        },
+        {
+          "text": "buon",
+          "start": 39.167,
+          "end": 39.447
+        },
+        {
+          "text": "learning",
+          "start": 39.607,
+          "end": 39.967
+        },
+        {
+          "text": "rate",
+          "start": 40.047,
+          "end": 40.347
+        },
+        {
+          "text": "produce",
+          "start": 40.447,
+          "end": 40.827
+        },
+        {
+          "text": "la",
+          "start": 40.887,
+          "end": 40.947
+        },
+        {
+          "text": "curva",
+          "start": 40.987,
+          "end": 41.207
+        },
+        {
+          "text": "rossa:",
+          "start": 41.247,
+          "end": 41.547
+        },
+        {
+          "text": "scende",
+          "start": 41.947,
+          "end": 42.207
+        },
+        {
+          "text": "rapidamente",
+          "start": 42.247,
+          "end": 42.847
+        },
+        {
+          "text": "e",
+          "start": 43.027,
+          "end": 43.067
+        },
+        {
+          "text": "in",
+          "start": 43.107,
+          "end": 43.147
+        },
+        {
+          "text": "modo",
+          "start": 43.187,
+          "end": 43.347
+        },
+        {
+          "text": "liscio.",
+          "start": 43.387,
+          "end": 43.667
+        }
+      ]
+    },
+    {
+      "start": 44.868,
+      "end": 50.649,
+      "text": "Secondo accorgimento essenziale: usare la media dei gradienti dividendo per il numero di esempi l,",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 44.868,
+          "end": 45.288
+        },
+        {
+          "text": "accorgimento",
+          "start": 45.308,
+          "end": 45.848
+        },
+        {
+          "text": "essenziale:",
+          "start": 45.888,
+          "end": 46.468
+        },
+        {
+          "text": "usare",
+          "start": 46.968,
+          "end": 47.328
+        },
+        {
+          "text": "la",
+          "start": 47.408,
+          "end": 47.448
+        },
+        {
+          "text": "media",
+          "start": 47.508,
+          "end": 47.748
+        },
+        {
+          "text": "dei",
+          "start": 47.788,
+          "end": 47.908
+        },
+        {
+          "text": "gradienti",
+          "start": 47.948,
+          "end": 48.508
+        },
+        {
+          "text": "dividendo",
+          "start": 48.548,
+          "end": 49.008
+        },
+        {
+          "text": "per",
+          "start": 49.048,
+          "end": 49.148
+        },
+        {
+          "text": "il",
+          "start": 49.188,
+          "end": 49.268
+        },
+        {
+          "text": "numero",
+          "start": 49.308,
+          "end": 49.568
+        },
+        {
+          "text": "di",
+          "start": 49.608,
+          "end": 49.668
+        },
+        {
+          "text": "esempi",
+          "start": 49.708,
+          "end": 50.149
+        },
+        {
+          "text": "l,",
+          "start": 50.609,
+          "end": 50.649
+        }
+      ]
+    },
+    {
+      "start": 51.109,
+      "end": 55.269,
+      "text": "così il valore di eta resta confrontabile al variare della dimensione del dataset.",
+      "words": [
+        {
+          "text": "così",
+          "start": 51.109,
+          "end": 51.329
+        },
+        {
+          "text": "il",
+          "start": 51.469,
+          "end": 51.549
+        },
+        {
+          "text": "valore",
+          "start": 51.589,
+          "end": 51.849
+        },
+        {
+          "text": "di",
+          "start": 51.889,
+          "end": 51.969
+        },
+        {
+          "text": "eta",
+          "start": 52.049,
+          "end": 52.229
+        },
+        {
+          "text": "resta",
+          "start": 52.309,
+          "end": 52.529
+        },
+        {
+          "text": "confrontabile",
+          "start": 52.589,
+          "end": 53.349
+        },
+        {
+          "text": "al",
+          "start": 53.469,
+          "end": 53.569
+        },
+        {
+          "text": "variare",
+          "start": 53.589,
+          "end": 53.949
+        },
+        {
+          "text": "della",
+          "start": 53.989,
+          "end": 54.149
+        },
+        {
+          "text": "dimensione",
+          "start": 54.189,
+          "end": 54.629
+        },
+        {
+          "text": "del",
+          "start": 54.649,
+          "end": 54.769
+        },
+        {
+          "text": "dataset.",
+          "start": 54.809,
+          "end": 55.269
+        }
+      ]
+    }
+  ]
+}

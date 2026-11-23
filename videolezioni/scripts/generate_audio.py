@@ -146,22 +146,47 @@ def chunk_text_by_sentences(text: str, max_words: int = 52) -> list[str]:
     return [item["text"] for item in parse_script_chunks(text, max_words=max_words)]
 
 
-def trim_pcm_edges(pcm: bytes, sr: int = SAMPLE_RATE, pad_sec: float = 0.08, threshold: int = 260) -> bytes:
-    """Rimuove eventuale silenzio eccessivo in testa/coda di un chunk WAV 16-bit mono."""
+def extract_pcm_from_api_bytes(raw_bytes: bytes) -> tuple[bytes, int]:
+    """
+    Se Gemini restituisce un contenitore WAV completo (RIFF...WAVE + eventuali
+    metadati C2PA/IPTC in coda), estrae SOLO i frame PCM puri del subchunk `data`.
+    Se invece restituisce PCM grezzo, lo restituisce invariato.
+    """
+    import io
+
+    if len(raw_bytes) >= 12 and raw_bytes[:4] == b"RIFF" and raw_bytes[8:12] == b"WAVE":
+        with wave.open(io.BytesIO(raw_bytes), "rb") as wf:
+            sr = wf.getframerate()
+            pcm = wf.readframes(wf.getnframes())
+            return pcm, sr
+    return raw_bytes, SAMPLE_RATE
+
+
+def trim_pcm_edges(pcm: bytes, sr: int = SAMPLE_RATE, pad_sec: float = 0.06, threshold: int = 240, fade_ms: float = 12.0) -> bytes:
+    """Rimuove silenzio eccessivo in testa/coda e applica fade-in/fade-out puliti (zero click)."""
     import numpy as np
 
     if not pcm:
         return pcm
-    samples = np.frombuffer(pcm, dtype=np.int16)
+    samples = np.frombuffer(pcm, dtype=np.int16).astype(np.float32)
     if samples.size == 0:
         return pcm
     active = np.flatnonzero(np.abs(samples) > threshold)
-    if active.size == 0:
-        return pcm
-    pad = int(sr * pad_sec)
-    start = max(0, int(active[0]) - pad)
-    end = min(samples.size, int(active[-1]) + pad)
-    return samples[start:end].tobytes()
+    if active.size > 0:
+        pad = int(sr * pad_sec)
+        start = max(0, int(active[0]) - pad)
+        end = min(samples.size, int(active[-1]) + pad)
+        samples = samples[start:end].copy()
+    else:
+        samples = samples.copy()
+
+    fade_n = min(int(sr * (fade_ms / 1000.0)), samples.size // 4)
+    if fade_n > 1:
+        ramp = np.linspace(0.0, 1.0, fade_n, dtype=np.float32)
+        samples[:fade_n] *= ramp
+        samples[-fade_n:] *= ramp[::-1]
+
+    return np.clip(samples, -32768, 32767).astype(np.int16).tobytes()
 
 
 def load_budget_state() -> dict[str, Any]:
@@ -402,9 +427,10 @@ def call_gemini_chunk(
         out_tok = int(usage.get("candidatesTokenCount", 0))
 
         b64 = data["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
-        raw_pcm = base64.b64decode(b64)
-        pcm = trim_pcm_edges(raw_pcm)
-        dur = len(pcm) / float(SAMPLE_RATE * 2)
+        api_bytes = base64.b64decode(b64)
+        pure_pcm, sr_actual = extract_pcm_from_api_bytes(api_bytes)
+        pcm = trim_pcm_edges(pure_pcm, sr=sr_actual)
+        dur = len(pcm) / float(sr_actual * 2)
 
         if out_tok == 0:
             out_tok = int(dur * AUDIO_TOKENS_PER_SEC)

@@ -1,0 +1,721 @@
+{
+  "duration": 52.051,
+  "segments": [
+    {
+      "start": 0.232,
+      "end": 4.553,
+      "text": "Prima di derivare, separiamo nettamente due passi dello schema iterativo.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 0.232,
+          "end": 0.492
+        },
+        {
+          "text": "di",
+          "start": 0.552,
+          "end": 0.632
+        },
+        {
+          "text": "derivare,",
+          "start": 0.672,
+          "end": 1.132
+        },
+        {
+          "text": "separiamo",
+          "start": 1.432,
+          "end": 1.812
+        },
+        {
+          "text": "nettamente",
+          "start": 1.872,
+          "end": 2.512
+        },
+        {
+          "text": "due",
+          "start": 2.733,
+          "end": 2.913
+        },
+        {
+          "text": "passi",
+          "start": 2.973,
+          "end": 3.373
+        },
+        {
+          "text": "dello",
+          "start": 3.493,
+          "end": 3.673
+        },
+        {
+          "text": "schema",
+          "start": 3.713,
+          "end": 3.993
+        },
+        {
+          "text": "iterativo.",
+          "start": 4.033,
+          "end": 4.553
+        }
+      ]
+    },
+    {
+      "start": 5.693,
+      "end": 8.293,
+      "text": "Si inizializzano i pesi e il learning rate eta,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 5.693,
+          "end": 5.753
+        },
+        {
+          "text": "inizializzano",
+          "start": 5.813,
+          "end": 6.373
+        },
+        {
+          "text": "i",
+          "start": 6.433,
+          "end": 6.473
+        },
+        {
+          "text": "pesi",
+          "start": 6.473,
+          "end": 6.793
+        },
+        {
+          "text": "e",
+          "start": 6.953,
+          "end": 6.993
+        },
+        {
+          "text": "il",
+          "start": 7.053,
+          "end": 7.093
+        },
+        {
+          "text": "learning",
+          "start": 7.133,
+          "end": 7.493
+        },
+        {
+          "text": "rate",
+          "start": 7.593,
+          "end": 7.853
+        },
+        {
+          "text": "eta,",
+          "start": 8.053,
+          "end": 8.293
+        }
+      ]
+    },
+    {
+      "start": 8.994,
+      "end": 13.774,
+      "text": "si calcolano le uscite e l'errore totale, e si ripete fino al criterio di arresto.",
+      "words": [
+        {
+          "text": "si",
+          "start": 8.994,
+          "end": 9.074
+        },
+        {
+          "text": "calcolano",
+          "start": 9.134,
+          "end": 9.614
+        },
+        {
+          "text": "le",
+          "start": 9.654,
+          "end": 9.714
+        },
+        {
+          "text": "uscite",
+          "start": 9.774,
+          "end": 10.174
+        },
+        {
+          "text": "e",
+          "start": 10.334,
+          "end": 10.374
+        },
+        {
+          "text": "l'errore",
+          "start": 10.394,
+          "end": 10.734
+        },
+        {
+          "text": "totale,",
+          "start": 10.794,
+          "end": 11.234
+        },
+        {
+          "text": "e",
+          "start": 11.634,
+          "end": 11.674
+        },
+        {
+          "text": "si",
+          "start": 11.734,
+          "end": 11.794
+        },
+        {
+          "text": "ripete",
+          "start": 11.854,
+          "end": 12.154
+        },
+        {
+          "text": "fino",
+          "start": 12.254,
+          "end": 12.474
+        },
+        {
+          "text": "al",
+          "start": 12.514,
+          "end": 12.594
+        },
+        {
+          "text": "criterio",
+          "start": 12.634,
+          "end": 13.074
+        },
+        {
+          "text": "di",
+          "start": 13.214,
+          "end": 13.274
+        },
+        {
+          "text": "arresto.",
+          "start": 13.314,
+          "end": 13.774
+        }
+      ]
+    },
+    {
+      "start": 14.475,
+      "end": 16.335,
+      "text": "Passo uno: per ogni peso w",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 14.475,
+          "end": 14.835
+        },
+        {
+          "text": "uno:",
+          "start": 14.975,
+          "end": 15.175
+        },
+        {
+          "text": "per",
+          "start": 15.675,
+          "end": 15.775
+        },
+        {
+          "text": "ogni",
+          "start": 15.815,
+          "end": 15.955
+        },
+        {
+          "text": "peso",
+          "start": 16.035,
+          "end": 16.235
+        },
+        {
+          "text": "w",
+          "start": 16.295,
+          "end": 16.335
+        }
+      ]
+    },
+    {
+      "start": 16.995,
+      "end": 18.255,
+      "text": "si calcola delta w,",
+      "words": [
+        {
+          "text": "si",
+          "start": 16.995,
+          "end": 17.075
+        },
+        {
+          "text": "calcola",
+          "start": 17.135,
+          "end": 17.555
+        },
+        {
+          "text": "delta",
+          "start": 17.795,
+          "end": 18.175
+        },
+        {
+          "text": "w,",
+          "start": 18.215,
+          "end": 18.255
+        }
+      ]
+    },
+    {
+      "start": 19.155,
+      "end": 22.476,
+      "text": "uguale a meno la derivata parziale di E tot rispetto a w,",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 19.155,
+          "end": 19.555
+        },
+        {
+          "text": "a",
+          "start": 19.695,
+          "end": 19.735
+        },
+        {
+          "text": "meno",
+          "start": 19.855,
+          "end": 20.156
+        },
+        {
+          "text": "la",
+          "start": 20.196,
+          "end": 20.256
+        },
+        {
+          "text": "derivata",
+          "start": 20.296,
+          "end": 20.676
+        },
+        {
+          "text": "parziale",
+          "start": 20.736,
+          "end": 21.176
+        },
+        {
+          "text": "di",
+          "start": 21.216,
+          "end": 21.296
+        },
+        {
+          "text": "E",
+          "start": 21.376,
+          "end": 21.416
+        },
+        {
+          "text": "tot",
+          "start": 21.496,
+          "end": 21.756
+        },
+        {
+          "text": "rispetto",
+          "start": 21.956,
+          "end": 22.336
+        },
+        {
+          "text": "a",
+          "start": 22.396,
+          "end": 22.436
+        },
+        {
+          "text": "w,",
+          "start": 22.436,
+          "end": 22.476
+        }
+      ]
+    },
+    {
+      "start": 23.356,
+      "end": 26.157,
+      "text": "cioè la somma sui singoli esempi di delta p w.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 23.356,
+          "end": 23.536
+        },
+        {
+          "text": "la",
+          "start": 23.716,
+          "end": 23.776
+        },
+        {
+          "text": "somma",
+          "start": 23.836,
+          "end": 24.036
+        },
+        {
+          "text": "sui",
+          "start": 24.116,
+          "end": 24.256
+        },
+        {
+          "text": "singoli",
+          "start": 24.336,
+          "end": 24.756
+        },
+        {
+          "text": "esempi",
+          "start": 24.856,
+          "end": 25.316
+        },
+        {
+          "text": "di",
+          "start": 25.376,
+          "end": 25.456
+        },
+        {
+          "text": "delta",
+          "start": 25.536,
+          "end": 25.897
+        },
+        {
+          "text": "p",
+          "start": 25.977,
+          "end": 26.017
+        },
+        {
+          "text": "w.",
+          "start": 26.117,
+          "end": 26.157
+        }
+      ]
+    },
+    {
+      "start": 27.337,
+      "end": 31.117,
+      "text": "Questo calcolo del gradiente è propriamente ciò che fa la backpropagation.",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 27.337,
+          "end": 27.577
+        },
+        {
+          "text": "calcolo",
+          "start": 27.617,
+          "end": 27.957
+        },
+        {
+          "text": "del",
+          "start": 27.997,
+          "end": 28.117
+        },
+        {
+          "text": "gradiente",
+          "start": 28.177,
+          "end": 28.697
+        },
+        {
+          "text": "è",
+          "start": 28.817,
+          "end": 28.857
+        },
+        {
+          "text": "propriamente",
+          "start": 28.897,
+          "end": 29.397
+        },
+        {
+          "text": "ciò",
+          "start": 29.497,
+          "end": 29.597
+        },
+        {
+          "text": "che",
+          "start": 29.677,
+          "end": 29.757
+        },
+        {
+          "text": "fa",
+          "start": 29.877,
+          "end": 29.977
+        },
+        {
+          "text": "la",
+          "start": 30.157,
+          "end": 30.237
+        },
+        {
+          "text": "backpropagation.",
+          "start": 30.277,
+          "end": 31.117
+        }
+      ]
+    },
+    {
+      "start": 31.978,
+      "end": 37.098,
+      "text": "Passo due: si aggiornano i pesi con w nuovo uguale a w più eta per",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 31.978,
+          "end": 32.258
+        },
+        {
+          "text": "due:",
+          "start": 32.318,
+          "end": 32.518
+        },
+        {
+          "text": "si",
+          "start": 32.978,
+          "end": 33.038
+        },
+        {
+          "text": "aggiornano",
+          "start": 33.078,
+          "end": 33.458
+        },
+        {
+          "text": "i",
+          "start": 33.498,
+          "end": 33.538
+        },
+        {
+          "text": "pesi",
+          "start": 33.578,
+          "end": 33.898
+        },
+        {
+          "text": "con",
+          "start": 33.998,
+          "end": 34.158
+        },
+        {
+          "text": "w",
+          "start": 34.198,
+          "end": 34.238
+        },
+        {
+          "text": "nuovo",
+          "start": 34.718,
+          "end": 35.058
+        },
+        {
+          "text": "uguale",
+          "start": 35.198,
+          "end": 35.578
+        },
+        {
+          "text": "a",
+          "start": 35.618,
+          "end": 35.658
+        },
+        {
+          "text": "w",
+          "start": 35.698,
+          "end": 35.738
+        },
+        {
+          "text": "più",
+          "start": 35.978,
+          "end": 36.358
+        },
+        {
+          "text": "eta",
+          "start": 36.598,
+          "end": 36.858
+        },
+        {
+          "text": "per",
+          "start": 36.958,
+          "end": 37.098
+        }
+      ]
+    },
+    {
+      "start": 37.158,
+      "end": 39.759,
+      "text": "delta w, più eventuali termini aggiuntivi.",
+      "words": [
+        {
+          "text": "delta",
+          "start": 37.158,
+          "end": 37.398
+        },
+        {
+          "text": "w,",
+          "start": 37.438,
+          "end": 37.478
+        },
+        {
+          "text": "più",
+          "start": 38.239,
+          "end": 38.319
+        },
+        {
+          "text": "eventuali",
+          "start": 38.379,
+          "end": 38.819
+        },
+        {
+          "text": "termini",
+          "start": 38.859,
+          "end": 39.179
+        },
+        {
+          "text": "aggiuntivi.",
+          "start": 39.219,
+          "end": 39.759
+        }
+      ]
+    },
+    {
+      "start": 40.419,
+      "end": 44.62,
+      "text": "È la regola di aggiornamento, dove nel prossimo capitolo inseriremo varianti come momentum,",
+      "words": [
+        {
+          "text": "È",
+          "start": 40.419,
+          "end": 40.459
+        },
+        {
+          "text": "la",
+          "start": 40.499,
+          "end": 40.559
+        },
+        {
+          "text": "regola",
+          "start": 40.599,
+          "end": 40.859
+        },
+        {
+          "text": "di",
+          "start": 40.899,
+          "end": 40.959
+        },
+        {
+          "text": "aggiornamento,",
+          "start": 40.999,
+          "end": 41.719
+        },
+        {
+          "text": "dove",
+          "start": 41.779,
+          "end": 41.919
+        },
+        {
+          "text": "nel",
+          "start": 41.939,
+          "end": 42.059
+        },
+        {
+          "text": "prossimo",
+          "start": 42.099,
+          "end": 42.399
+        },
+        {
+          "text": "capitolo",
+          "start": 42.439,
+          "end": 42.799
+        },
+        {
+          "text": "inseriremo",
+          "start": 42.839,
+          "end": 43.319
+        },
+        {
+          "text": "varianti",
+          "start": 43.36,
+          "end": 43.74
+        },
+        {
+          "text": "come",
+          "start": 43.8,
+          "end": 43.98
+        },
+        {
+          "text": "momentum,",
+          "start": 44.04,
+          "end": 44.62
+        }
+      ]
+    },
+    {
+      "start": 44.94,
+      "end": 47.4,
+      "text": "weight decay, Quickprop o R-prop.",
+      "words": [
+        {
+          "text": "weight",
+          "start": 44.94,
+          "end": 45.14
+        },
+        {
+          "text": "decay,",
+          "start": 45.14,
+          "end": 45.62
+        },
+        {
+          "text": "Quickprop",
+          "start": 45.94,
+          "end": 46.54
+        },
+        {
+          "text": "o",
+          "start": 46.76,
+          "end": 46.8
+        },
+        {
+          "text": "R-prop.",
+          "start": 47.0,
+          "end": 47.4
+        }
+      ]
+    },
+    {
+      "start": 48.28,
+      "end": 51.801,
+      "text": "Passo tre: si ricalcolano le uscite e l'errore totale.",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 48.28,
+          "end": 48.58
+        },
+        {
+          "text": "tre:",
+          "start": 48.66,
+          "end": 48.78
+        },
+        {
+          "text": "si",
+          "start": 49.341,
+          "end": 49.421
+        },
+        {
+          "text": "ricalcolano",
+          "start": 49.501,
+          "end": 50.181
+        },
+        {
+          "text": "le",
+          "start": 50.241,
+          "end": 50.301
+        },
+        {
+          "text": "uscite",
+          "start": 50.341,
+          "end": 50.741
+        },
+        {
+          "text": "e",
+          "start": 50.941,
+          "end": 50.981
+        },
+        {
+          "text": "l'errore",
+          "start": 51.021,
+          "end": 51.361
+        },
+        {
+          "text": "totale.",
+          "start": 51.401,
+          "end": 51.801
+        }
+      ]
+    }
+  ]
+}

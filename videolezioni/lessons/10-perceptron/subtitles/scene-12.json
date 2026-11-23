@@ -1,835 +1,954 @@
 {
-  "duration": 50.376,
+  "duration": 60.708,
   "segments": [
     {
-      "start": 0.05,
-      "end": 5.312,
-      "text": "Nel Passo due fissiamo w di zero uguale al vettore nullo learning rate eta uguale",
+      "start": 0.908,
+      "end": 4.488,
+      "text": "Nel Passo due fissiamo w di zero uguale al vettore nullo,",
       "words": [
         {
           "text": "Nel",
-          "start": 0.05,
-          "end": 0.287
+          "start": 0.908,
+          "end": 1.028
         },
         {
           "text": "Passo",
-          "start": 0.287,
-          "end": 0.575
+          "start": 1.068,
+          "end": 1.328
         },
         {
           "text": "due",
-          "start": 0.575,
-          "end": 0.887
+          "start": 1.368,
+          "end": 1.548
         },
         {
           "text": "fissiamo",
-          "start": 0.887,
-          "end": 1.312
+          "start": 1.748,
+          "end": 2.208
         },
         {
           "text": "w",
-          "start": 1.312,
-          "end": 1.8
+          "start": 2.728,
+          "end": 2.7680000000000002
         },
         {
           "text": "di",
-          "start": 1.8,
-          "end": 1.938
+          "start": 2.848,
+          "end": 2.908
         },
         {
           "text": "zero",
-          "start": 1.938,
-          "end": 2.263
+          "start": 3.008,
+          "end": 3.228
         },
         {
           "text": "uguale",
-          "start": 2.263,
-          "end": 2.638
+          "start": 3.388,
+          "end": 3.688
         },
         {
           "text": "al",
-          "start": 2.638,
-          "end": 2.725
+          "start": 3.708,
+          "end": 3.768
         },
         {
           "text": "vettore",
-          "start": 2.725,
-          "end": 3.087
+          "start": 3.788,
+          "end": 4.108
         },
         {
-          "text": "nullo",
-          "start": 3.087,
-          "end": 3.475
-        },
+          "text": "nullo,",
+          "start": 4.168,
+          "end": 4.488
+        }
+      ]
+    },
+    {
+      "start": 4.948,
+      "end": 10.029,
+      "text": "learning rate eta uguale a uno, e definiamo beta come il massimo della norma quadra",
+      "words": [
         {
           "text": "learning",
-          "start": 3.837,
-          "end": 4.35
+          "start": 4.948,
+          "end": 5.289
         },
         {
           "text": "rate",
-          "start": 4.35,
-          "end": 4.762
+          "start": 5.329,
+          "end": 5.609
         },
         {
           "text": "eta",
-          "start": 4.763,
-          "end": 4.938
+          "start": 5.769,
+          "end": 5.969
         },
         {
           "text": "uguale",
-          "start": 4.938,
-          "end": 5.312
-        }
-      ]
-    },
-    {
-      "start": 5.312,
-      "end": 9.775,
-      "text": "a uno e definiamo beta come il massimo della norma quadra degli esempi Partendo da",
-      "words": [
-        {
-          "text": "a",
-          "start": 5.312,
-          "end": 5.35
+          "start": 6.149,
+          "end": 6.409
         },
         {
-          "text": "uno",
-          "start": 5.35,
-          "end": 5.75
+          "text": "a",
+          "start": 6.449,
+          "end": 6.489
+        },
+        {
+          "text": "uno,",
+          "start": 6.549,
+          "end": 6.729
         },
         {
           "text": "e",
-          "start": 5.75,
-          "end": 5.862
+          "start": 7.229,
+          "end": 7.269
         },
         {
           "text": "definiamo",
-          "start": 5.862,
-          "end": 6.312
+          "start": 7.309,
+          "end": 7.729
         },
         {
           "text": "beta",
-          "start": 6.312,
-          "end": 6.65
+          "start": 7.809,
+          "end": 8.089
         },
         {
           "text": "come",
-          "start": 6.65,
-          "end": 6.863
+          "start": 8.309,
+          "end": 8.509
         },
         {
           "text": "il",
-          "start": 6.862,
-          "end": 6.912
+          "start": 8.549,
+          "end": 8.629
         },
         {
           "text": "massimo",
-          "start": 6.912,
-          "end": 7.35
+          "start": 8.709,
+          "end": 9.129
         },
         {
           "text": "della",
-          "start": 7.35,
-          "end": 7.537
+          "start": 9.209,
+          "end": 9.369
         },
         {
           "text": "norma",
-          "start": 7.537,
-          "end": 7.85
+          "start": 9.429,
+          "end": 9.669
         },
         {
           "text": "quadra",
-          "start": 7.85,
-          "end": 8.175
-        },
+          "start": 9.729,
+          "end": 10.029
+        }
+      ]
+    },
+    {
+      "start": 10.089,
+      "end": 10.709,
+      "text": "degli esempi.",
+      "words": [
         {
           "text": "degli",
-          "start": 8.175,
-          "end": 8.375
+          "start": 10.089,
+          "end": 10.269
         },
         {
-          "text": "esempi",
-          "start": 8.375,
-          "end": 8.863
-        },
+          "text": "esempi.",
+          "start": 10.309,
+          "end": 10.709
+        }
+      ]
+    },
+    {
+      "start": 11.53,
+      "end": 14.87,
+      "text": "Partendo da zero, porre eta uguale a uno non limita la generalità:",
+      "words": [
         {
           "text": "Partendo",
-          "start": 9.2,
-          "end": 9.662
+          "start": 11.53,
+          "end": 11.93
         },
         {
           "text": "da",
-          "start": 9.662,
-          "end": 9.775
-        }
-      ]
-    },
-    {
-      "start": 9.775,
-      "end": 14.663,
-      "text": "zero porre eta uguale a uno non limita la generalità un altro eta riscala tutti",
-      "words": [
+          "start": 11.97,
+          "end": 12.03
+        },
         {
-          "text": "zero",
-          "start": 9.775,
-          "end": 10.213
+          "text": "zero,",
+          "start": 12.13,
+          "end": 12.39
         },
         {
           "text": "porre",
-          "start": 10.425,
-          "end": 10.788
+          "start": 12.51,
+          "end": 12.79
         },
         {
           "text": "eta",
-          "start": 10.787,
-          "end": 10.95
+          "start": 12.87,
+          "end": 13.01
         },
         {
           "text": "uguale",
-          "start": 10.95,
-          "end": 11.35
+          "start": 13.05,
+          "end": 13.31
         },
         {
           "text": "a",
-          "start": 11.35,
-          "end": 11.375
+          "start": 13.35,
+          "end": 13.39
         },
         {
           "text": "uno",
-          "start": 11.375,
-          "end": 11.662
+          "start": 13.41,
+          "end": 13.57
         },
         {
           "text": "non",
-          "start": 11.662,
-          "end": 11.825
+          "start": 13.65,
+          "end": 13.79
         },
         {
           "text": "limita",
-          "start": 11.825,
-          "end": 12.2
+          "start": 13.85,
+          "end": 14.19
         },
         {
           "text": "la",
-          "start": 12.2,
-          "end": 12.287
+          "start": 14.23,
+          "end": 14.29
         },
         {
-          "text": "generalità",
-          "start": 12.287,
-          "end": 12.95
-        },
+          "text": "generalità:",
+          "start": 14.33,
+          "end": 14.87
+        }
+      ]
+    },
+    {
+      "start": 15.39,
+      "end": 18.691,
+      "text": "un altro eta riscala tutti i pesi per la stessa costante positiva,",
+      "words": [
         {
           "text": "un",
-          "start": 13.3,
-          "end": 13.438
+          "start": 15.39,
+          "end": 15.47
         },
         {
           "text": "altro",
-          "start": 13.438,
-          "end": 13.75
+          "start": 15.51,
+          "end": 15.71
         },
         {
           "text": "eta",
-          "start": 13.75,
-          "end": 13.938
+          "start": 15.79,
+          "end": 15.97
         },
         {
           "text": "riscala",
-          "start": 13.938,
-          "end": 14.363
+          "start": 16.09,
+          "end": 16.47
         },
         {
           "text": "tutti",
-          "start": 14.363,
-          "end": 14.663
-        }
-      ]
-    },
-    {
-      "start": 14.662,
-      "end": 18.988,
-      "text": "i pesi per la stessa costante positiva senza mai cambiare i segni né la sequenza",
-      "words": [
+          "start": 16.57,
+          "end": 16.851
+        },
         {
           "text": "i",
-          "start": 14.662,
-          "end": 14.7
+          "start": 16.891,
+          "end": 16.931
         },
         {
           "text": "pesi",
-          "start": 14.7,
-          "end": 15.037
+          "start": 16.931,
+          "end": 17.211
         },
         {
           "text": "per",
-          "start": 15.037,
-          "end": 15.162
+          "start": 17.251,
+          "end": 17.371
         },
         {
           "text": "la",
-          "start": 15.162,
-          "end": 15.262
+          "start": 17.411,
+          "end": 17.471
         },
         {
           "text": "stessa",
-          "start": 15.262,
-          "end": 15.625
+          "start": 17.491,
+          "end": 17.751
         },
         {
           "text": "costante",
-          "start": 15.625,
-          "end": 16.1
+          "start": 17.791,
+          "end": 18.171
         },
         {
-          "text": "positiva",
-          "start": 16.1,
-          "end": 16.675
-        },
+          "text": "positiva,",
+          "start": 18.211,
+          "end": 18.691
+        }
+      ]
+    },
+    {
+      "start": 18.991,
+      "end": 21.391,
+      "text": "senza cambiare i segni né la sequenza degli errori.",
+      "words": [
         {
           "text": "senza",
-          "start": 16.962,
-          "end": 17.287
-        },
-        {
-          "text": "mai",
-          "start": 17.288,
-          "end": 17.5
+          "start": 18.991,
+          "end": 19.211
         },
         {
           "text": "cambiare",
-          "start": 17.5,
-          "end": 17.9
+          "start": 19.251,
+          "end": 19.591
         },
         {
           "text": "i",
-          "start": 17.9,
-          "end": 17.975
+          "start": 19.611,
+          "end": 19.651
         },
         {
           "text": "segni",
-          "start": 17.975,
-          "end": 18.338
+          "start": 19.671,
+          "end": 19.991
         },
         {
           "text": "né",
-          "start": 18.337,
-          "end": 18.438
+          "start": 20.151,
+          "end": 20.231
         },
         {
           "text": "la",
-          "start": 18.438,
-          "end": 18.538
+          "start": 20.311,
+          "end": 20.371
         },
         {
           "text": "sequenza",
-          "start": 18.538,
-          "end": 18.988
-        }
-      ]
-    },
-    {
-      "start": 18.988,
-      "end": 24.925,
-      "text": "degli errori Con soli esempi positivi a ogni errore sommiamo l'esempio sbagliato quindi dopo q",
-      "words": [
+          "start": 20.411,
+          "end": 20.811
+        },
         {
           "text": "degli",
-          "start": 18.988,
-          "end": 19.188
+          "start": 20.851,
+          "end": 21.031
         },
         {
-          "text": "errori",
-          "start": 19.188,
-          "end": 19.625
-        },
-        {
-          "text": "Con",
-          "start": 19.962,
-          "end": 20.225
-        },
-        {
-          "text": "soli",
-          "start": 20.225,
-          "end": 20.488
-        },
-        {
-          "text": "esempi",
-          "start": 20.488,
-          "end": 20.85
-        },
-        {
-          "text": "positivi",
-          "start": 20.85,
-          "end": 21.463
-        },
-        {
-          "text": "a",
-          "start": 21.725,
-          "end": 21.85
-        },
-        {
-          "text": "ogni",
-          "start": 21.85,
-          "end": 22.088
-        },
-        {
-          "text": "errore",
-          "start": 22.087,
-          "end": 22.462
-        },
-        {
-          "text": "sommiamo",
-          "start": 22.462,
-          "end": 22.862
-        },
-        {
-          "text": "l'esempio",
-          "start": 22.863,
-          "end": 23.238
-        },
-        {
-          "text": "sbagliato",
-          "start": 23.238,
-          "end": 23.85
-        },
-        {
-          "text": "quindi",
-          "start": 24.188,
-          "end": 24.5
-        },
-        {
-          "text": "dopo",
-          "start": 24.5,
-          "end": 24.738
-        },
-        {
-          "text": "q",
-          "start": 24.738,
-          "end": 24.925
+          "text": "errori.",
+          "start": 21.071,
+          "end": 21.391
         }
       ]
     },
     {
-      "start": 24.925,
-      "end": 28.613,
-      "text": "errori il vettore w di q è la somma dei q esempi che hanno causato",
+      "start": 22.171,
+      "end": 25.912,
+      "text": "Il caso con pesi iniziali non nulli richiede solo di adattare i due limiti.",
       "words": [
         {
-          "text": "errori",
-          "start": 24.925,
-          "end": 25.3
+          "text": "Il",
+          "start": 22.171,
+          "end": 22.251
         },
         {
-          "text": "il",
-          "start": 25.3,
-          "end": 25.363
+          "text": "caso",
+          "start": 22.311,
+          "end": 22.551
         },
         {
-          "text": "vettore",
-          "start": 25.363,
-          "end": 25.75
+          "text": "con",
+          "start": 22.591,
+          "end": 22.732
         },
         {
-          "text": "w",
-          "start": 25.75,
-          "end": 26.188
+          "text": "pesi",
+          "start": 22.812,
+          "end": 23.032
+        },
+        {
+          "text": "iniziali",
+          "start": 23.072,
+          "end": 23.472
+        },
+        {
+          "text": "non",
+          "start": 23.532,
+          "end": 23.652
+        },
+        {
+          "text": "nulli",
+          "start": 23.692,
+          "end": 23.952
+        },
+        {
+          "text": "richiede",
+          "start": 24.092,
+          "end": 24.432
+        },
+        {
+          "text": "solo",
+          "start": 24.492,
+          "end": 24.692
         },
         {
           "text": "di",
-          "start": 26.188,
-          "end": 26.275
+          "start": 24.732,
+          "end": 24.792
         },
         {
-          "text": "q",
-          "start": 26.275,
-          "end": 26.562
-        },
-        {
-          "text": "è",
-          "start": 26.562,
-          "end": 26.675
-        },
-        {
-          "text": "la",
-          "start": 26.675,
-          "end": 26.788
-        },
-        {
-          "text": "somma",
-          "start": 26.788,
-          "end": 27.1
-        },
-        {
-          "text": "dei",
-          "start": 27.1,
-          "end": 27.225
-        },
-        {
-          "text": "q",
-          "start": 27.225,
-          "end": 27.4
-        },
-        {
-          "text": "esempi",
-          "start": 27.4,
-          "end": 27.825
-        },
-        {
-          "text": "che",
-          "start": 27.825,
-          "end": 27.938
-        },
-        {
-          "text": "hanno",
-          "start": 27.938,
-          "end": 28.125
-        },
-        {
-          "text": "causato",
-          "start": 28.125,
-          "end": 28.613
-        }
-      ]
-    },
-    {
-      "start": 28.613,
-      "end": 34.337,
-      "text": "errore Ecco l'idea geniale della dimostrazione imprigionare la norma quadra di w di q tra",
-      "words": [
-        {
-          "text": "errore",
-          "start": 28.613,
-          "end": 29.088
-        },
-        {
-          "text": "Ecco",
-          "start": 29.425,
-          "end": 29.8
-        },
-        {
-          "text": "l'idea",
-          "start": 29.8,
-          "end": 30.137
-        },
-        {
-          "text": "geniale",
-          "start": 30.137,
-          "end": 30.537
-        },
-        {
-          "text": "della",
-          "start": 30.538,
-          "end": 30.738
-        },
-        {
-          "text": "dimostrazione",
-          "start": 30.738,
-          "end": 31.55
-        },
-        {
-          "text": "imprigionare",
-          "start": 31.875,
-          "end": 32.487
-        },
-        {
-          "text": "la",
-          "start": 32.487,
-          "end": 32.562
-        },
-        {
-          "text": "norma",
-          "start": 32.562,
-          "end": 32.875
-        },
-        {
-          "text": "quadra",
-          "start": 32.875,
-          "end": 33.237
-        },
-        {
-          "text": "di",
-          "start": 33.237,
-          "end": 33.337
-        },
-        {
-          "text": "w",
-          "start": 33.337,
-          "end": 33.862
-        },
-        {
-          "text": "di",
-          "start": 33.862,
-          "end": 33.962
-        },
-        {
-          "text": "q",
-          "start": 33.962,
-          "end": 34.175
-        },
-        {
-          "text": "tra",
-          "start": 34.175,
-          "end": 34.337
-        }
-      ]
-    },
-    {
-      "start": 34.337,
-      "end": 38.812,
-      "text": "un limite inferiore che cresce come q al quadrato la parabola blu e un limite",
-      "words": [
-        {
-          "text": "un",
-          "start": 34.337,
-          "end": 34.438
-        },
-        {
-          "text": "limite",
-          "start": 34.438,
-          "end": 34.775
-        },
-        {
-          "text": "inferiore",
-          "start": 34.775,
-          "end": 35.337
-        },
-        {
-          "text": "che",
-          "start": 35.337,
-          "end": 35.45
-        },
-        {
-          "text": "cresce",
-          "start": 35.45,
-          "end": 35.838
-        },
-        {
-          "text": "come",
-          "start": 35.837,
-          "end": 36.062
-        },
-        {
-          "text": "q",
-          "start": 36.062,
-          "end": 36.237
-        },
-        {
-          "text": "al",
-          "start": 36.237,
-          "end": 36.337
-        },
-        {
-          "text": "quadrato",
-          "start": 36.337,
-          "end": 36.862
-        },
-        {
-          "text": "la",
-          "start": 37.125,
-          "end": 37.288
-        },
-        {
-          "text": "parabola",
-          "start": 37.288,
-          "end": 37.675
-        },
-        {
-          "text": "blu",
-          "start": 37.675,
-          "end": 37.938
-        },
-        {
-          "text": "e",
-          "start": 38.25,
-          "end": 38.35
-        },
-        {
-          "text": "un",
-          "start": 38.35,
-          "end": 38.45
-        },
-        {
-          "text": "limite",
-          "start": 38.45,
-          "end": 38.812
-        }
-      ]
-    },
-    {
-      "start": 38.812,
-      "end": 44.337,
-      "text": "superiore che cresce linearmente come q la retta rossa Poiché una parabola supera sempre una",
-      "words": [
-        {
-          "text": "superiore",
-          "start": 38.812,
-          "end": 39.375
-        },
-        {
-          "text": "che",
-          "start": 39.375,
-          "end": 39.487
-        },
-        {
-          "text": "cresce",
-          "start": 39.487,
-          "end": 39.85
-        },
-        {
-          "text": "linearmente",
-          "start": 39.85,
-          "end": 40.5
-        },
-        {
-          "text": "come",
-          "start": 40.5,
-          "end": 40.725
-        },
-        {
-          "text": "q",
-          "start": 40.725,
-          "end": 40.962
-        },
-        {
-          "text": "la",
-          "start": 41.175,
-          "end": 41.312
-        },
-        {
-          "text": "retta",
-          "start": 41.312,
-          "end": 41.587
-        },
-        {
-          "text": "rossa",
-          "start": 41.587,
-          "end": 42.038
-        },
-        {
-          "text": "Poiché",
-          "start": 42.375,
-          "end": 42.837
-        },
-        {
-          "text": "una",
-          "start": 42.837,
-          "end": 43.038
-        },
-        {
-          "text": "parabola",
-          "start": 43.038,
-          "end": 43.462
-        },
-        {
-          "text": "supera",
-          "start": 43.462,
-          "end": 43.85
-        },
-        {
-          "text": "sempre",
-          "start": 43.85,
-          "end": 44.188
-        },
-        {
-          "text": "una",
-          "start": 44.188,
-          "end": 44.337
-        }
-      ]
-    },
-    {
-      "start": 44.337,
-      "end": 49.525,
-      "text": "retta oltre q max i due limiti diventano incompatibili gli errori sono quindi in numero",
-      "words": [
-        {
-          "text": "retta",
-          "start": 44.337,
-          "end": 44.775
-        },
-        {
-          "text": "oltre",
-          "start": 45.112,
-          "end": 45.462
-        },
-        {
-          "text": "q",
-          "start": 45.462,
-          "end": 45.612
-        },
-        {
-          "text": "max",
-          "start": 45.612,
-          "end": 46.012
+          "text": "adattare",
+          "start": 24.832,
+          "end": 25.292
         },
         {
           "text": "i",
-          "start": 46.013,
-          "end": 46.075
+          "start": 25.332,
+          "end": 25.372
         },
         {
           "text": "due",
-          "start": 46.075,
-          "end": 46.25
+          "start": 25.392,
+          "end": 25.512
         },
         {
-          "text": "limiti",
-          "start": 46.25,
-          "end": 46.638
-        },
-        {
-          "text": "diventano",
-          "start": 46.638,
-          "end": 47.075
-        },
-        {
-          "text": "incompatibili",
-          "start": 47.075,
-          "end": 47.825
-        },
-        {
-          "text": "gli",
-          "start": 48.138,
-          "end": 48.275
-        },
-        {
-          "text": "errori",
-          "start": 48.275,
-          "end": 48.675
-        },
-        {
-          "text": "sono",
-          "start": 48.675,
-          "end": 48.887
-        },
-        {
-          "text": "quindi",
-          "start": 48.888,
-          "end": 49.188
-        },
-        {
-          "text": "in",
-          "start": 49.188,
-          "end": 49.263
-        },
-        {
-          "text": "numero",
-          "start": 49.263,
-          "end": 49.525
+          "text": "limiti.",
+          "start": 25.592,
+          "end": 25.912
         }
       ]
     },
     {
-      "start": 49.525,
-      "end": 50.025,
-      "text": "finito",
+      "start": 26.752,
+      "end": 30.173,
+      "text": "Con soli esempi positivi, a ogni errore sommiamo l'esempio sbagliato:",
       "words": [
         {
-          "text": "finito",
-          "start": 49.525,
-          "end": 50.025
+          "text": "Con",
+          "start": 26.752,
+          "end": 26.892
+        },
+        {
+          "text": "soli",
+          "start": 26.972,
+          "end": 27.172
+        },
+        {
+          "text": "esempi",
+          "start": 27.212,
+          "end": 27.472
+        },
+        {
+          "text": "positivi,",
+          "start": 27.512,
+          "end": 27.952
+        },
+        {
+          "text": "a",
+          "start": 28.132,
+          "end": 28.172
+        },
+        {
+          "text": "ogni",
+          "start": 28.272,
+          "end": 28.392
+        },
+        {
+          "text": "errore",
+          "start": 28.432,
+          "end": 28.713
+        },
+        {
+          "text": "sommiamo",
+          "start": 28.793,
+          "end": 29.173
+        },
+        {
+          "text": "l'esempio",
+          "start": 29.233,
+          "end": 29.593
+        },
+        {
+          "text": "sbagliato:",
+          "start": 29.633,
+          "end": 30.173
+        }
+      ]
+    },
+    {
+      "start": 30.673,
+      "end": 34.674,
+      "text": "dopo q errori, il vettore w di q è la somma dei q esempi che",
+      "words": [
+        {
+          "text": "dopo",
+          "start": 30.673,
+          "end": 30.873
+        },
+        {
+          "text": "q",
+          "start": 30.933,
+          "end": 30.973
+        },
+        {
+          "text": "errori,",
+          "start": 31.133,
+          "end": 31.513
+        },
+        {
+          "text": "il",
+          "start": 31.933,
+          "end": 32.013
+        },
+        {
+          "text": "vettore",
+          "start": 32.033,
+          "end": 32.333
+        },
+        {
+          "text": "w",
+          "start": 32.713,
+          "end": 32.753
+        },
+        {
+          "text": "di",
+          "start": 32.813,
+          "end": 32.893
+        },
+        {
+          "text": "q",
+          "start": 32.933,
+          "end": 32.973
+        },
+        {
+          "text": "è",
+          "start": 33.193,
+          "end": 33.233
+        },
+        {
+          "text": "la",
+          "start": 33.273,
+          "end": 33.333
+        },
+        {
+          "text": "somma",
+          "start": 33.393,
+          "end": 33.613
+        },
+        {
+          "text": "dei",
+          "start": 33.653,
+          "end": 33.793
+        },
+        {
+          "text": "q",
+          "start": 33.873,
+          "end": 33.913
+        },
+        {
+          "text": "esempi",
+          "start": 34.073,
+          "end": 34.494
+        },
+        {
+          "text": "che",
+          "start": 34.594,
+          "end": 34.674
+        }
+      ]
+    },
+    {
+      "start": 34.694,
+      "end": 35.714,
+      "text": "hanno causato errore.",
+      "words": [
+        {
+          "text": "hanno",
+          "start": 34.694,
+          "end": 34.854
+        },
+        {
+          "text": "causato",
+          "start": 34.894,
+          "end": 35.294
+        },
+        {
+          "text": "errore.",
+          "start": 35.354,
+          "end": 35.714
+        }
+      ]
+    },
+    {
+      "start": 36.614,
+      "end": 38.614,
+      "text": "Ecco l'idea chiave della dimostrazione:",
+      "words": [
+        {
+          "text": "Ecco",
+          "start": 36.614,
+          "end": 36.834
+        },
+        {
+          "text": "l'idea",
+          "start": 36.954,
+          "end": 37.214
+        },
+        {
+          "text": "chiave",
+          "start": 37.274,
+          "end": 37.574
+        },
+        {
+          "text": "della",
+          "start": 37.674,
+          "end": 37.854
+        },
+        {
+          "text": "dimostrazione:",
+          "start": 37.874,
+          "end": 38.614
+        }
+      ]
+    },
+    {
+      "start": 39.214,
+      "end": 42.535,
+      "text": "imprigionare la norma quadra di w di q tra due curve.",
+      "words": [
+        {
+          "text": "imprigionare",
+          "start": 39.214,
+          "end": 39.894
+        },
+        {
+          "text": "la",
+          "start": 40.014,
+          "end": 40.094
+        },
+        {
+          "text": "norma",
+          "start": 40.134,
+          "end": 40.375
+        },
+        {
+          "text": "quadra",
+          "start": 40.435,
+          "end": 40.795
+        },
+        {
+          "text": "di",
+          "start": 40.935,
+          "end": 40.995
+        },
+        {
+          "text": "w",
+          "start": 41.335,
+          "end": 41.375
+        },
+        {
+          "text": "di",
+          "start": 41.455,
+          "end": 41.515
+        },
+        {
+          "text": "q",
+          "start": 41.555,
+          "end": 41.595
+        },
+        {
+          "text": "tra",
+          "start": 41.815,
+          "end": 41.935
+        },
+        {
+          "text": "due",
+          "start": 42.015,
+          "end": 42.155
+        },
+        {
+          "text": "curve.",
+          "start": 42.195,
+          "end": 42.535
+        }
+      ]
+    },
+    {
+      "start": 43.115,
+      "end": 45.855,
+      "text": "Un limite inferiore che cresce come q al quadrato,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 43.115,
+          "end": 43.195
+        },
+        {
+          "text": "limite",
+          "start": 43.235,
+          "end": 43.555
+        },
+        {
+          "text": "inferiore",
+          "start": 43.595,
+          "end": 44.115
+        },
+        {
+          "text": "che",
+          "start": 44.155,
+          "end": 44.255
+        },
+        {
+          "text": "cresce",
+          "start": 44.315,
+          "end": 44.675
+        },
+        {
+          "text": "come",
+          "start": 44.775,
+          "end": 44.975
+        },
+        {
+          "text": "q",
+          "start": 45.075,
+          "end": 45.115
+        },
+        {
+          "text": "al",
+          "start": 45.275,
+          "end": 45.375
+        },
+        {
+          "text": "quadrato,",
+          "start": 45.415,
+          "end": 45.855
+        }
+      ]
+    },
+    {
+      "start": 46.196,
+      "end": 46.816,
+      "text": "la parabola blu.",
+      "words": [
+        {
+          "text": "la",
+          "start": 46.196,
+          "end": 46.276
+        },
+        {
+          "text": "parabola",
+          "start": 46.316,
+          "end": 46.656
+        },
+        {
+          "text": "blu.",
+          "start": 46.696,
+          "end": 46.816
+        }
+      ]
+    },
+    {
+      "start": 47.436,
+      "end": 50.116,
+      "text": "E un limite superiore che cresce linearmente come q,",
+      "words": [
+        {
+          "text": "E",
+          "start": 47.436,
+          "end": 47.476
+        },
+        {
+          "text": "un",
+          "start": 47.516,
+          "end": 47.576
+        },
+        {
+          "text": "limite",
+          "start": 47.616,
+          "end": 47.916
+        },
+        {
+          "text": "superiore",
+          "start": 47.976,
+          "end": 48.436
+        },
+        {
+          "text": "che",
+          "start": 48.476,
+          "end": 48.556
+        },
+        {
+          "text": "cresce",
+          "start": 48.636,
+          "end": 48.956
+        },
+        {
+          "text": "linearmente",
+          "start": 49.036,
+          "end": 49.676
+        },
+        {
+          "text": "come",
+          "start": 49.796,
+          "end": 49.996
+        },
+        {
+          "text": "q,",
+          "start": 50.076,
+          "end": 50.116
+        }
+      ]
+    },
+    {
+      "start": 50.616,
+      "end": 51.356,
+      "text": "la retta rossa.",
+      "words": [
+        {
+          "text": "la",
+          "start": 50.616,
+          "end": 50.696
+        },
+        {
+          "text": "retta",
+          "start": 50.736,
+          "end": 50.976
+        },
+        {
+          "text": "rossa.",
+          "start": 51.036,
+          "end": 51.356
+        }
+      ]
+    },
+    {
+      "start": 52.137,
+      "end": 58.118,
+      "text": "Poiché una parabola supera sempre una retta, oltre q massimo i due limiti diventano incompatibili:",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 52.137,
+          "end": 52.397
+        },
+        {
+          "text": "una",
+          "start": 52.617,
+          "end": 52.757
+        },
+        {
+          "text": "parabola",
+          "start": 52.797,
+          "end": 53.197
+        },
+        {
+          "text": "supera",
+          "start": 53.277,
+          "end": 53.537
+        },
+        {
+          "text": "sempre",
+          "start": 53.657,
+          "end": 54.017
+        },
+        {
+          "text": "una",
+          "start": 54.077,
+          "end": 54.197
+        },
+        {
+          "text": "retta,",
+          "start": 54.257,
+          "end": 54.577
+        },
+        {
+          "text": "oltre",
+          "start": 54.997,
+          "end": 55.277
+        },
+        {
+          "text": "q",
+          "start": 55.397,
+          "end": 55.437
+        },
+        {
+          "text": "massimo",
+          "start": 55.637,
+          "end": 56.097
+        },
+        {
+          "text": "i",
+          "start": 56.297,
+          "end": 56.337
+        },
+        {
+          "text": "due",
+          "start": 56.397,
+          "end": 56.557
+        },
+        {
+          "text": "limiti",
+          "start": 56.597,
+          "end": 56.917
+        },
+        {
+          "text": "diventano",
+          "start": 56.957,
+          "end": 57.337
+        },
+        {
+          "text": "incompatibili:",
+          "start": 57.397,
+          "end": 58.118
+        }
+      ]
+    },
+    {
+      "start": 58.538,
+      "end": 60.458,
+      "text": "gli errori sono quindi in numero finito.",
+      "words": [
+        {
+          "text": "gli",
+          "start": 58.538,
+          "end": 58.658
+        },
+        {
+          "text": "errori",
+          "start": 58.698,
+          "end": 58.998
+        },
+        {
+          "text": "sono",
+          "start": 59.158,
+          "end": 59.338
+        },
+        {
+          "text": "quindi",
+          "start": 59.378,
+          "end": 59.638
+        },
+        {
+          "text": "in",
+          "start": 59.678,
+          "end": 59.738
+        },
+        {
+          "text": "numero",
+          "start": 59.798,
+          "end": 60.058
+        },
+        {
+          "text": "finito.",
+          "start": 60.098,
+          "end": 60.458
         }
       ]
     }

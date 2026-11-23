@@ -145,7 +145,7 @@
       "summary": "Neurone artificiale, reti a soglia e XOR, algoritmo del Perceptron, teorema di convergenza, confronto con LMS e unità sigmoidali.",
       "status": "ready",
       "scenes_count": 19,
-      "estimated_minutes": 15
+      "estimated_minutes": 17
     },
     {
       "id": "11-mlp-backprop",
@@ -154,7 +154,9 @@
       "title": "Multi-Layer Perceptron e backpropagation",
       "source_tex": "note_migliorate/capitoli/11-mlp-backprop.tex",
       "summary": "Architetture feedforward, approssimazione universale, credit assignment e derivazione della backpropagation.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 15,
+      "estimated_minutes": 16
     },
     {
       "id": "12-addestramento",
@@ -163,7 +165,9 @@
       "title": "Addestrare una rete neurale",
       "source_tex": "note_migliorate/capitoli/12-addestramento.tex",
       "summary": "Ottimizzazione stocastica, momentum, inizializzazione, early stopping, weight decay e diagnostica.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 18,
+      "estimated_minutes": 19
     },
     {
       "id": "13-svm",

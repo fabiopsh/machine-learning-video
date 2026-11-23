@@ -1,0 +1,1088 @@
+{
+  "duration": 76.465,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.641,
+      "text": "Con il mini-batch il gradiente non va mai a zero vicino al minimo,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 0.08,
+          "end": 0.24
+        },
+        {
+          "text": "il",
+          "start": 0.28,
+          "end": 0.36
+        },
+        {
+          "text": "mini-batch",
+          "start": 0.4,
+          "end": 0.9
+        },
+        {
+          "text": "il",
+          "start": 1.1,
+          "end": 1.18
+        },
+        {
+          "text": "gradiente",
+          "start": 1.24,
+          "end": 1.76
+        },
+        {
+          "text": "non",
+          "start": 1.8,
+          "end": 1.92
+        },
+        {
+          "text": "va",
+          "start": 1.98,
+          "end": 2.04
+        },
+        {
+          "text": "mai",
+          "start": 2.16,
+          "end": 2.4
+        },
+        {
+          "text": "a",
+          "start": 2.46,
+          "end": 2.5
+        },
+        {
+          "text": "zero",
+          "start": 2.6,
+          "end": 2.88
+        },
+        {
+          "text": "vicino",
+          "start": 2.92,
+          "end": 3.2
+        },
+        {
+          "text": "al",
+          "start": 3.22,
+          "end": 3.301
+        },
+        {
+          "text": "minimo,",
+          "start": 3.341,
+          "end": 3.641
+        }
+      ]
+    },
+    {
+      "start": 4.041,
+      "end": 5.801,
+      "text": "a causa del rumore di campionamento.",
+      "words": [
+        {
+          "text": "a",
+          "start": 4.041,
+          "end": 4.081
+        },
+        {
+          "text": "causa",
+          "start": 4.141,
+          "end": 4.421
+        },
+        {
+          "text": "del",
+          "start": 4.481,
+          "end": 4.601
+        },
+        {
+          "text": "rumore",
+          "start": 4.701,
+          "end": 4.981
+        },
+        {
+          "text": "di",
+          "start": 5.001,
+          "end": 5.061
+        },
+        {
+          "text": "campionamento.",
+          "start": 5.101,
+          "end": 5.801
+        }
+      ]
+    },
+    {
+      "start": 6.341,
+      "end": 11.622,
+      "text": "Un learning rate fisso va quindi evitato: si fa decrescere eta linearmente da eta zero",
+      "words": [
+        {
+          "text": "Un",
+          "start": 6.341,
+          "end": 6.421
+        },
+        {
+          "text": "learning",
+          "start": 6.481,
+          "end": 6.801
+        },
+        {
+          "text": "rate",
+          "start": 6.861,
+          "end": 7.141
+        },
+        {
+          "text": "fisso",
+          "start": 7.241,
+          "end": 7.581
+        },
+        {
+          "text": "va",
+          "start": 7.641,
+          "end": 7.701
+        },
+        {
+          "text": "quindi",
+          "start": 7.761,
+          "end": 8.021
+        },
+        {
+          "text": "evitato:",
+          "start": 8.201,
+          "end": 8.661
+        },
+        {
+          "text": "si",
+          "start": 9.161,
+          "end": 9.221
+        },
+        {
+          "text": "fa",
+          "start": 9.281,
+          "end": 9.341
+        },
+        {
+          "text": "decrescere",
+          "start": 9.401,
+          "end": 9.921
+        },
+        {
+          "text": "eta",
+          "start": 10.061,
+          "end": 10.262
+        },
+        {
+          "text": "linearmente",
+          "start": 10.322,
+          "end": 10.922
+        },
+        {
+          "text": "da",
+          "start": 10.962,
+          "end": 11.042
+        },
+        {
+          "text": "eta",
+          "start": 11.122,
+          "end": 11.282
+        },
+        {
+          "text": "zero",
+          "start": 11.402,
+          "end": 11.622
+        }
+      ]
+    },
+    {
+      "start": 11.682,
+      "end": 14.922,
+      "text": "fino a eta tau, circa l'uno per cento del valore iniziale,",
+      "words": [
+        {
+          "text": "fino",
+          "start": 11.682,
+          "end": 11.882
+        },
+        {
+          "text": "a",
+          "start": 11.922,
+          "end": 11.962
+        },
+        {
+          "text": "eta",
+          "start": 12.142,
+          "end": 12.302
+        },
+        {
+          "text": "tau,",
+          "start": 12.362,
+          "end": 12.622
+        },
+        {
+          "text": "circa",
+          "start": 13.042,
+          "end": 13.282
+        },
+        {
+          "text": "l'uno",
+          "start": 13.382,
+          "end": 13.562
+        },
+        {
+          "text": "per",
+          "start": 13.602,
+          "end": 13.722
+        },
+        {
+          "text": "cento",
+          "start": 13.742,
+          "end": 13.982
+        },
+        {
+          "text": "del",
+          "start": 14.022,
+          "end": 14.122
+        },
+        {
+          "text": "valore",
+          "start": 14.142,
+          "end": 14.402
+        },
+        {
+          "text": "iniziale,",
+          "start": 14.442,
+          "end": 14.922
+        }
+      ]
+    },
+    {
+      "start": 15.302,
+      "end": 17.023,
+      "text": "per poi tenerlo piccolo e costante.",
+      "words": [
+        {
+          "text": "per",
+          "start": 15.302,
+          "end": 15.402
+        },
+        {
+          "text": "poi",
+          "start": 15.462,
+          "end": 15.622
+        },
+        {
+          "text": "tenerlo",
+          "start": 15.662,
+          "end": 16.002
+        },
+        {
+          "text": "piccolo",
+          "start": 16.062,
+          "end": 16.382
+        },
+        {
+          "text": "e",
+          "start": 16.422,
+          "end": 16.462
+        },
+        {
+          "text": "costante.",
+          "start": 16.482,
+          "end": 17.023
+        }
+      ]
+    },
+    {
+      "start": 17.823,
+      "end": 25.164,
+      "text": "Gli algoritmi adattivi — AdaGrad, RMSProp e Adam — regolano automaticamente il learning rate separatamente",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 17.823,
+          "end": 17.923
+        },
+        {
+          "text": "algoritmi",
+          "start": 17.943,
+          "end": 18.403
+        },
+        {
+          "text": "adattivi",
+          "start": 18.443,
+          "end": 18.943
+        },
+        {
+          "text": "—",
+          "start": 18.943,
+          "end": 19.093
+        },
+        {
+          "text": "AdaGrad,",
+          "start": 19.243,
+          "end": 19.743
+        },
+        {
+          "text": "RMSProp",
+          "start": 20.283,
+          "end": 21.063
+        },
+        {
+          "text": "e",
+          "start": 21.283,
+          "end": 21.323
+        },
+        {
+          "text": "Adam",
+          "start": 21.423,
+          "end": 21.683
+        },
+        {
+          "text": "—",
+          "start": 21.683,
+          "end": 21.833
+        },
+        {
+          "text": "regolano",
+          "start": 22.223,
+          "end": 22.663
+        },
+        {
+          "text": "automaticamente",
+          "start": 22.823,
+          "end": 23.643
+        },
+        {
+          "text": "il",
+          "start": 23.703,
+          "end": 23.743
+        },
+        {
+          "text": "learning",
+          "start": 23.783,
+          "end": 24.144
+        },
+        {
+          "text": "rate",
+          "start": 24.204,
+          "end": 24.464
+        },
+        {
+          "text": "separatamente",
+          "start": 24.524,
+          "end": 25.164
+        }
+      ]
+    },
+    {
+      "start": 25.184,
+      "end": 27.564,
+      "text": "per ogni parametro e si combinano con il momentum.",
+      "words": [
+        {
+          "text": "per",
+          "start": 25.184,
+          "end": 25.284
+        },
+        {
+          "text": "ogni",
+          "start": 25.324,
+          "end": 25.464
+        },
+        {
+          "text": "parametro",
+          "start": 25.524,
+          "end": 26.004
+        },
+        {
+          "text": "e",
+          "start": 26.124,
+          "end": 26.164
+        },
+        {
+          "text": "si",
+          "start": 26.224,
+          "end": 26.304
+        },
+        {
+          "text": "combinano",
+          "start": 26.364,
+          "end": 26.784
+        },
+        {
+          "text": "con",
+          "start": 26.844,
+          "end": 26.944
+        },
+        {
+          "text": "il",
+          "start": 26.984,
+          "end": 27.064
+        },
+        {
+          "text": "momentum.",
+          "start": 27.104,
+          "end": 27.564
+        }
+      ]
+    },
+    {
+      "start": 28.504,
+      "end": 31.765,
+      "text": "Adam è molto popolare ma va comunque usato con cautela.",
+      "words": [
+        {
+          "text": "Adam",
+          "start": 28.504,
+          "end": 28.804
+        },
+        {
+          "text": "è",
+          "start": 28.964,
+          "end": 29.004
+        },
+        {
+          "text": "molto",
+          "start": 29.104,
+          "end": 29.364
+        },
+        {
+          "text": "popolare",
+          "start": 29.404,
+          "end": 29.884
+        },
+        {
+          "text": "ma",
+          "start": 30.184,
+          "end": 30.224
+        },
+        {
+          "text": "va",
+          "start": 30.284,
+          "end": 30.364
+        },
+        {
+          "text": "comunque",
+          "start": 30.424,
+          "end": 30.804
+        },
+        {
+          "text": "usato",
+          "start": 30.865,
+          "end": 31.105
+        },
+        {
+          "text": "con",
+          "start": 31.145,
+          "end": 31.265
+        },
+        {
+          "text": "cautela.",
+          "start": 31.305,
+          "end": 31.765
+        }
+      ]
+    },
+    {
+      "start": 32.585,
+      "end": 35.145,
+      "text": "Esistono anche metodi oltre lo SGD di base:",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 32.585,
+          "end": 32.945
+        },
+        {
+          "text": "anche",
+          "start": 32.985,
+          "end": 33.145
+        },
+        {
+          "text": "metodi",
+          "start": 33.185,
+          "end": 33.505
+        },
+        {
+          "text": "oltre",
+          "start": 33.665,
+          "end": 33.985
+        },
+        {
+          "text": "lo",
+          "start": 34.085,
+          "end": 34.165
+        },
+        {
+          "text": "SGD",
+          "start": 34.345,
+          "end": 34.625
+        },
+        {
+          "text": "di",
+          "start": 34.745,
+          "end": 34.805
+        },
+        {
+          "text": "base:",
+          "start": 34.865,
+          "end": 35.145
+        }
+      ]
+    },
+    {
+      "start": 35.725,
+      "end": 38.706,
+      "text": "Quickprop approssima localmente la loss con una parabola;",
+      "words": [
+        {
+          "text": "Quickprop",
+          "start": 35.725,
+          "end": 36.265
+        },
+        {
+          "text": "approssima",
+          "start": 36.485,
+          "end": 36.925
+        },
+        {
+          "text": "localmente",
+          "start": 36.985,
+          "end": 37.425
+        },
+        {
+          "text": "la",
+          "start": 37.485,
+          "end": 37.545
+        },
+        {
+          "text": "loss",
+          "start": 37.565,
+          "end": 37.846
+        },
+        {
+          "text": "con",
+          "start": 37.966,
+          "end": 38.106
+        },
+        {
+          "text": "una",
+          "start": 38.146,
+          "end": 38.246
+        },
+        {
+          "text": "parabola;",
+          "start": 38.286,
+          "end": 38.706
+        }
+      ]
+    },
+    {
+      "start": 39.366,
+      "end": 43.486,
+      "text": "R-prop usa solo il segno del gradiente ed è utile quando il gradiente svanisce;",
+      "words": [
+        {
+          "text": "R-prop",
+          "start": 39.366,
+          "end": 39.786
+        },
+        {
+          "text": "usa",
+          "start": 40.146,
+          "end": 40.306
+        },
+        {
+          "text": "solo",
+          "start": 40.366,
+          "end": 40.566
+        },
+        {
+          "text": "il",
+          "start": 40.586,
+          "end": 40.666
+        },
+        {
+          "text": "segno",
+          "start": 40.706,
+          "end": 40.906
+        },
+        {
+          "text": "del",
+          "start": 40.946,
+          "end": 41.046
+        },
+        {
+          "text": "gradiente",
+          "start": 41.086,
+          "end": 41.606
+        },
+        {
+          "text": "ed",
+          "start": 41.646,
+          "end": 41.726
+        },
+        {
+          "text": "è",
+          "start": 41.766,
+          "end": 41.806
+        },
+        {
+          "text": "utile",
+          "start": 41.866,
+          "end": 42.166
+        },
+        {
+          "text": "quando",
+          "start": 42.206,
+          "end": 42.446
+        },
+        {
+          "text": "il",
+          "start": 42.486,
+          "end": 42.546
+        },
+        {
+          "text": "gradiente",
+          "start": 42.566,
+          "end": 42.986
+        },
+        {
+          "text": "svanisce;",
+          "start": 43.026,
+          "end": 43.486
+        }
+      ]
+    },
+    {
+      "start": 44.106,
+      "end": 49.067,
+      "text": "i metodi del secondo ordine usano l'Hessiana, spesso approssimata come in Gauss-Newton,",
+      "words": [
+        {
+          "text": "i",
+          "start": 44.106,
+          "end": 44.146
+        },
+        {
+          "text": "metodi",
+          "start": 44.226,
+          "end": 44.567
+        },
+        {
+          "text": "del",
+          "start": 44.607,
+          "end": 44.747
+        },
+        {
+          "text": "secondo",
+          "start": 44.787,
+          "end": 45.127
+        },
+        {
+          "text": "ordine",
+          "start": 45.207,
+          "end": 45.507
+        },
+        {
+          "text": "usano",
+          "start": 45.667,
+          "end": 45.947
+        },
+        {
+          "text": "l'Hessiana,",
+          "start": 46.027,
+          "end": 46.527
+        },
+        {
+          "text": "spesso",
+          "start": 46.887,
+          "end": 47.147
+        },
+        {
+          "text": "approssimata",
+          "start": 47.187,
+          "end": 47.827
+        },
+        {
+          "text": "come",
+          "start": 47.907,
+          "end": 48.147
+        },
+        {
+          "text": "in",
+          "start": 48.287,
+          "end": 48.387
+        },
+        {
+          "text": "Gauss-Newton,",
+          "start": 48.447,
+          "end": 49.067
+        }
+      ]
+    },
+    {
+      "start": 49.507,
+      "end": 51.648,
+      "text": "Levenberg-Marquardt o BFGS.",
+      "words": [
+        {
+          "text": "Levenberg-Marquardt",
+          "start": 49.507,
+          "end": 50.727
+        },
+        {
+          "text": "o",
+          "start": 50.847,
+          "end": 50.887
+        },
+        {
+          "text": "BFGS.",
+          "start": 50.947,
+          "end": 51.648
+        }
+      ]
+    },
+    {
+      "start": 52.548,
+      "end": 57.828,
+      "text": "Attenzione però ai punti di sella: in alta dimensione sono esponenzialmente più numerosi dei minimi",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 52.548,
+          "end": 53.108
+        },
+        {
+          "text": "però",
+          "start": 53.148,
+          "end": 53.288
+        },
+        {
+          "text": "ai",
+          "start": 53.408,
+          "end": 53.488
+        },
+        {
+          "text": "punti",
+          "start": 53.548,
+          "end": 53.768
+        },
+        {
+          "text": "di",
+          "start": 53.808,
+          "end": 53.868
+        },
+        {
+          "text": "sella:",
+          "start": 53.928,
+          "end": 54.228
+        },
+        {
+          "text": "in",
+          "start": 54.748,
+          "end": 54.828
+        },
+        {
+          "text": "alta",
+          "start": 54.888,
+          "end": 55.088
+        },
+        {
+          "text": "dimensione",
+          "start": 55.128,
+          "end": 55.608
+        },
+        {
+          "text": "sono",
+          "start": 55.648,
+          "end": 55.808
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 55.948,
+          "end": 56.728
+        },
+        {
+          "text": "più",
+          "start": 56.788,
+          "end": 56.888
+        },
+        {
+          "text": "numerosi",
+          "start": 56.968,
+          "end": 57.388
+        },
+        {
+          "text": "dei",
+          "start": 57.448,
+          "end": 57.548
+        },
+        {
+          "text": "minimi",
+          "start": 57.568,
+          "end": 57.828
+        }
+      ]
+    },
+    {
+      "start": 57.888,
+      "end": 58.248,
+      "text": "locali.",
+      "words": [
+        {
+          "text": "locali.",
+          "start": 57.888,
+          "end": 58.248
+        }
+      ]
+    },
+    {
+      "start": 58.869,
+      "end": 62.649,
+      "text": "Il metodo di Newton cerca punti a gradiente nullo e ne viene attratto,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 58.869,
+          "end": 58.969
+        },
+        {
+          "text": "metodo",
+          "start": 59.009,
+          "end": 59.309
+        },
+        {
+          "text": "di",
+          "start": 59.369,
+          "end": 59.429
+        },
+        {
+          "text": "Newton",
+          "start": 59.489,
+          "end": 59.829
+        },
+        {
+          "text": "cerca",
+          "start": 60.069,
+          "end": 60.329
+        },
+        {
+          "text": "punti",
+          "start": 60.389,
+          "end": 60.669
+        },
+        {
+          "text": "a",
+          "start": 60.729,
+          "end": 60.769
+        },
+        {
+          "text": "gradiente",
+          "start": 60.809,
+          "end": 61.249
+        },
+        {
+          "text": "nullo",
+          "start": 61.309,
+          "end": 61.609
+        },
+        {
+          "text": "e",
+          "start": 61.749,
+          "end": 61.789
+        },
+        {
+          "text": "ne",
+          "start": 61.829,
+          "end": 61.889
+        },
+        {
+          "text": "viene",
+          "start": 61.929,
+          "end": 62.129
+        },
+        {
+          "text": "attratto,",
+          "start": 62.169,
+          "end": 62.649
+        }
+      ]
+    },
+    {
+      "start": 63.089,
+      "end": 66.65,
+      "text": "mentre la discesa del gradiente riesce empiricamente a sfuggirvi.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 63.089,
+          "end": 63.349
+        },
+        {
+          "text": "la",
+          "start": 63.409,
+          "end": 63.469
+        },
+        {
+          "text": "discesa",
+          "start": 63.509,
+          "end": 63.929
+        },
+        {
+          "text": "del",
+          "start": 63.969,
+          "end": 64.069
+        },
+        {
+          "text": "gradiente",
+          "start": 64.129,
+          "end": 64.649
+        },
+        {
+          "text": "riesce",
+          "start": 64.809,
+          "end": 65.189
+        },
+        {
+          "text": "empiricamente",
+          "start": 65.35,
+          "end": 66.03
+        },
+        {
+          "text": "a",
+          "start": 66.07,
+          "end": 66.11
+        },
+        {
+          "text": "sfuggirvi.",
+          "start": 66.13,
+          "end": 66.65
+        }
+      ]
+    },
+    {
+      "start": 67.45,
+      "end": 71.87,
+      "text": "In pratica il punto di partenza resta lo SGD con momentum e regolarizzazione:",
+      "words": [
+        {
+          "text": "In",
+          "start": 67.45,
+          "end": 67.55
+        },
+        {
+          "text": "pratica",
+          "start": 67.59,
+          "end": 67.99
+        },
+        {
+          "text": "il",
+          "start": 68.13,
+          "end": 68.21
+        },
+        {
+          "text": "punto",
+          "start": 68.25,
+          "end": 68.49
+        },
+        {
+          "text": "di",
+          "start": 68.51,
+          "end": 68.57
+        },
+        {
+          "text": "partenza",
+          "start": 68.61,
+          "end": 69.03
+        },
+        {
+          "text": "resta",
+          "start": 69.13,
+          "end": 69.35
+        },
+        {
+          "text": "lo",
+          "start": 69.43,
+          "end": 69.51
+        },
+        {
+          "text": "SGD",
+          "start": 69.67,
+          "end": 69.93
+        },
+        {
+          "text": "con",
+          "start": 70.05,
+          "end": 70.19
+        },
+        {
+          "text": "momentum",
+          "start": 70.21,
+          "end": 70.67
+        },
+        {
+          "text": "e",
+          "start": 70.85,
+          "end": 70.89
+        },
+        {
+          "text": "regolarizzazione:",
+          "start": 70.99,
+          "end": 71.87
+        }
+      ]
+    },
+    {
+      "start": 72.39,
+      "end": 75.791,
+      "text": "la validazione conta sempre più dell'ottimizzazione spinta sul training.",
+      "words": [
+        {
+          "text": "la",
+          "start": 72.39,
+          "end": 72.45
+        },
+        {
+          "text": "validazione",
+          "start": 72.491,
+          "end": 73.051
+        },
+        {
+          "text": "conta",
+          "start": 73.111,
+          "end": 73.351
+        },
+        {
+          "text": "sempre",
+          "start": 73.471,
+          "end": 73.791
+        },
+        {
+          "text": "più",
+          "start": 73.831,
+          "end": 73.931
+        },
+        {
+          "text": "dell'ottimizzazione",
+          "start": 73.971,
+          "end": 74.771
+        },
+        {
+          "text": "spinta",
+          "start": 74.831,
+          "end": 75.151
+        },
+        {
+          "text": "sul",
+          "start": 75.211,
+          "end": 75.331
+        },
+        {
+          "text": "training.",
+          "start": 75.371,
+          "end": 75.791
+        }
+      ]
+    }
+  ]
+}

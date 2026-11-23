@@ -1,0 +1,796 @@
+{
+  "duration": 56.604,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.901,
+      "text": "Con la backpropagation sappiamo calcolare il gradiente di ogni peso.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 0.08,
+          "end": 0.22
+        },
+        {
+          "text": "la",
+          "start": 0.26,
+          "end": 0.32
+        },
+        {
+          "text": "backpropagation",
+          "start": 0.4,
+          "end": 1.34
+        },
+        {
+          "text": "sappiamo",
+          "start": 1.48,
+          "end": 1.8
+        },
+        {
+          "text": "calcolare",
+          "start": 1.86,
+          "end": 2.32
+        },
+        {
+          "text": "il",
+          "start": 2.38,
+          "end": 2.44
+        },
+        {
+          "text": "gradiente",
+          "start": 2.5,
+          "end": 3.081
+        },
+        {
+          "text": "di",
+          "start": 3.141,
+          "end": 3.201
+        },
+        {
+          "text": "ogni",
+          "start": 3.281,
+          "end": 3.481
+        },
+        {
+          "text": "peso.",
+          "start": 3.561,
+          "end": 3.901
+        }
+      ]
+    },
+    {
+      "start": 4.441,
+      "end": 10.282,
+      "text": "In questo capitolo affrontiamo tutte le scelte pratiche necessarie per addestrare davvero un Multi-Layer Perceptron.",
+      "words": [
+        {
+          "text": "In",
+          "start": 4.441,
+          "end": 4.501
+        },
+        {
+          "text": "questo",
+          "start": 4.521,
+          "end": 4.721
+        },
+        {
+          "text": "capitolo",
+          "start": 4.781,
+          "end": 5.201
+        },
+        {
+          "text": "affrontiamo",
+          "start": 5.301,
+          "end": 5.781
+        },
+        {
+          "text": "tutte",
+          "start": 5.921,
+          "end": 6.221
+        },
+        {
+          "text": "le",
+          "start": 6.261,
+          "end": 6.321
+        },
+        {
+          "text": "scelte",
+          "start": 6.361,
+          "end": 6.681
+        },
+        {
+          "text": "pratiche",
+          "start": 6.741,
+          "end": 7.121
+        },
+        {
+          "text": "necessarie",
+          "start": 7.161,
+          "end": 7.701
+        },
+        {
+          "text": "per",
+          "start": 7.761,
+          "end": 7.861
+        },
+        {
+          "text": "addestrare",
+          "start": 7.881,
+          "end": 8.381
+        },
+        {
+          "text": "davvero",
+          "start": 8.441,
+          "end": 8.782
+        },
+        {
+          "text": "un",
+          "start": 8.822,
+          "end": 8.902
+        },
+        {
+          "text": "Multi-Layer",
+          "start": 8.942,
+          "end": 9.542
+        },
+        {
+          "text": "Perceptron.",
+          "start": 9.602,
+          "end": 10.282
+        }
+      ]
+    },
+    {
+      "start": 11.062,
+      "end": 16.123,
+      "text": "Un'interpretazione utilissima è vedere l'addestramento come un percorso nello spazio dei pesi,",
+      "words": [
+        {
+          "text": "Un'interpretazione",
+          "start": 11.062,
+          "end": 11.922
+        },
+        {
+          "text": "utilissima",
+          "start": 11.962,
+          "end": 12.602
+        },
+        {
+          "text": "è",
+          "start": 12.762,
+          "end": 12.802
+        },
+        {
+          "text": "vedere",
+          "start": 12.862,
+          "end": 13.102
+        },
+        {
+          "text": "l'addestramento",
+          "start": 13.142,
+          "end": 13.922
+        },
+        {
+          "text": "come",
+          "start": 14.042,
+          "end": 14.202
+        },
+        {
+          "text": "un",
+          "start": 14.282,
+          "end": 14.362
+        },
+        {
+          "text": "percorso",
+          "start": 14.422,
+          "end": 14.943
+        },
+        {
+          "text": "nello",
+          "start": 14.983,
+          "end": 15.183
+        },
+        {
+          "text": "spazio",
+          "start": 15.243,
+          "end": 15.603
+        },
+        {
+          "text": "dei",
+          "start": 15.643,
+          "end": 15.763
+        },
+        {
+          "text": "pesi,",
+          "start": 15.803,
+          "end": 16.123
+        }
+      ]
+    },
+    {
+      "start": 16.263,
+      "end": 17.543,
+      "text": "sulla superficie della loss.",
+      "words": [
+        {
+          "text": "sulla",
+          "start": 16.263,
+          "end": 16.483
+        },
+        {
+          "text": "superficie",
+          "start": 16.543,
+          "end": 17.003
+        },
+        {
+          "text": "della",
+          "start": 17.063,
+          "end": 17.223
+        },
+        {
+          "text": "loss.",
+          "start": 17.263,
+          "end": 17.543
+        }
+      ]
+    },
+    {
+      "start": 18.163,
+      "end": 22.584,
+      "text": "Questo percorso dipende dai dati e dal modello, ma anche da tre leve che controlliamo",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 18.163,
+          "end": 18.363
+        },
+        {
+          "text": "percorso",
+          "start": 18.403,
+          "end": 18.883
+        },
+        {
+          "text": "dipende",
+          "start": 18.923,
+          "end": 19.223
+        },
+        {
+          "text": "dai",
+          "start": 19.263,
+          "end": 19.383
+        },
+        {
+          "text": "dati",
+          "start": 19.423,
+          "end": 19.723
+        },
+        {
+          "text": "e",
+          "start": 19.783,
+          "end": 19.823
+        },
+        {
+          "text": "dal",
+          "start": 19.843,
+          "end": 19.963
+        },
+        {
+          "text": "modello,",
+          "start": 20.003,
+          "end": 20.403
+        },
+        {
+          "text": "ma",
+          "start": 20.784,
+          "end": 20.844
+        },
+        {
+          "text": "anche",
+          "start": 20.904,
+          "end": 21.084
+        },
+        {
+          "text": "da",
+          "start": 21.144,
+          "end": 21.204
+        },
+        {
+          "text": "tre",
+          "start": 21.324,
+          "end": 21.464
+        },
+        {
+          "text": "leve",
+          "start": 21.604,
+          "end": 21.864
+        },
+        {
+          "text": "che",
+          "start": 21.944,
+          "end": 22.024
+        },
+        {
+          "text": "controlliamo",
+          "start": 22.084,
+          "end": 22.584
+        }
+      ]
+    },
+    {
+      "start": 22.624,
+      "end": 26.465,
+      "text": "direttamente: il punto di partenza, cioè i pesi iniziali;",
+      "words": [
+        {
+          "text": "direttamente:",
+          "start": 22.624,
+          "end": 23.304
+        },
+        {
+          "text": "il",
+          "start": 23.804,
+          "end": 23.884
+        },
+        {
+          "text": "punto",
+          "start": 23.924,
+          "end": 24.144
+        },
+        {
+          "text": "di",
+          "start": 24.184,
+          "end": 24.244
+        },
+        {
+          "text": "partenza,",
+          "start": 24.264,
+          "end": 24.844
+        },
+        {
+          "text": "cioè",
+          "start": 25.244,
+          "end": 25.444
+        },
+        {
+          "text": "i",
+          "start": 25.584,
+          "end": 25.624
+        },
+        {
+          "text": "pesi",
+          "start": 25.664,
+          "end": 25.864
+        },
+        {
+          "text": "iniziali;",
+          "start": 25.904,
+          "end": 26.465
+        }
+      ]
+    },
+    {
+      "start": 26.985,
+      "end": 31.565,
+      "text": "la velocità di convergenza; e il punto finale, cioè la regola di arresto.",
+      "words": [
+        {
+          "text": "la",
+          "start": 26.985,
+          "end": 27.065
+        },
+        {
+          "text": "velocità",
+          "start": 27.125,
+          "end": 27.605
+        },
+        {
+          "text": "di",
+          "start": 27.825,
+          "end": 27.885
+        },
+        {
+          "text": "convergenza;",
+          "start": 27.945,
+          "end": 28.665
+        },
+        {
+          "text": "e",
+          "start": 29.065,
+          "end": 29.105
+        },
+        {
+          "text": "il",
+          "start": 29.165,
+          "end": 29.245
+        },
+        {
+          "text": "punto",
+          "start": 29.305,
+          "end": 29.545
+        },
+        {
+          "text": "finale,",
+          "start": 29.605,
+          "end": 29.985
+        },
+        {
+          "text": "cioè",
+          "start": 30.245,
+          "end": 30.425
+        },
+        {
+          "text": "la",
+          "start": 30.625,
+          "end": 30.705
+        },
+        {
+          "text": "regola",
+          "start": 30.745,
+          "end": 30.985
+        },
+        {
+          "text": "di",
+          "start": 31.025,
+          "end": 31.085
+        },
+        {
+          "text": "arresto.",
+          "start": 31.145,
+          "end": 31.565
+        }
+      ]
+    },
+    {
+      "start": 32.265,
+      "end": 35.326,
+      "text": "Tutte queste scelte guidano la ricerca nello spazio delle ipotesi.",
+      "words": [
+        {
+          "text": "Tutte",
+          "start": 32.265,
+          "end": 32.526
+        },
+        {
+          "text": "queste",
+          "start": 32.566,
+          "end": 32.786
+        },
+        {
+          "text": "scelte",
+          "start": 32.826,
+          "end": 33.166
+        },
+        {
+          "text": "guidano",
+          "start": 33.226,
+          "end": 33.546
+        },
+        {
+          "text": "la",
+          "start": 33.606,
+          "end": 33.646
+        },
+        {
+          "text": "ricerca",
+          "start": 33.686,
+          "end": 34.046
+        },
+        {
+          "text": "nello",
+          "start": 34.106,
+          "end": 34.266
+        },
+        {
+          "text": "spazio",
+          "start": 34.306,
+          "end": 34.606
+        },
+        {
+          "text": "delle",
+          "start": 34.646,
+          "end": 34.806
+        },
+        {
+          "text": "ipotesi.",
+          "start": 34.866,
+          "end": 35.326
+        }
+      ]
+    },
+    {
+      "start": 36.226,
+      "end": 41.667,
+      "text": "Il modello è spesso sovra-parametrizzato e la superficie è non convessa e potenzialmente instabile:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 36.226,
+          "end": 36.306
+        },
+        {
+          "text": "modello",
+          "start": 36.346,
+          "end": 36.686
+        },
+        {
+          "text": "è",
+          "start": 36.826,
+          "end": 36.866
+        },
+        {
+          "text": "spesso",
+          "start": 36.926,
+          "end": 37.246
+        },
+        {
+          "text": "sovra-parametrizzato",
+          "start": 37.326,
+          "end": 38.426
+        },
+        {
+          "text": "e",
+          "start": 38.566,
+          "end": 38.606
+        },
+        {
+          "text": "la",
+          "start": 38.687,
+          "end": 38.747
+        },
+        {
+          "text": "superficie",
+          "start": 38.807,
+          "end": 39.307
+        },
+        {
+          "text": "è",
+          "start": 39.387,
+          "end": 39.427
+        },
+        {
+          "text": "non",
+          "start": 39.527,
+          "end": 39.667
+        },
+        {
+          "text": "convessa",
+          "start": 39.727,
+          "end": 40.287
+        },
+        {
+          "text": "e",
+          "start": 40.427,
+          "end": 40.467
+        },
+        {
+          "text": "potenzialmente",
+          "start": 40.487,
+          "end": 41.127
+        },
+        {
+          "text": "instabile:",
+          "start": 41.187,
+          "end": 41.667
+        }
+      ]
+    },
+    {
+      "start": 42.067,
+      "end": 44.207,
+      "text": "per questo contano gli iperparametri.",
+      "words": [
+        {
+          "text": "per",
+          "start": 42.067,
+          "end": 42.207
+        },
+        {
+          "text": "questo",
+          "start": 42.287,
+          "end": 42.687
+        },
+        {
+          "text": "contano",
+          "start": 42.807,
+          "end": 43.227
+        },
+        {
+          "text": "gli",
+          "start": 43.267,
+          "end": 43.367
+        },
+        {
+          "text": "iperparametri.",
+          "start": 43.407,
+          "end": 44.207
+        }
+      ]
+    },
+    {
+      "start": 44.908,
+      "end": 49.808,
+      "text": "Nelle slide le tecniche marcate con il simbolo di priorità sono pratiche essenziali da usare",
+      "words": [
+        {
+          "text": "Nelle",
+          "start": 44.908,
+          "end": 45.108
+        },
+        {
+          "text": "slide",
+          "start": 45.148,
+          "end": 45.628
+        },
+        {
+          "text": "le",
+          "start": 45.808,
+          "end": 45.868
+        },
+        {
+          "text": "tecniche",
+          "start": 45.908,
+          "end": 46.288
+        },
+        {
+          "text": "marcate",
+          "start": 46.328,
+          "end": 46.648
+        },
+        {
+          "text": "con",
+          "start": 46.688,
+          "end": 46.808
+        },
+        {
+          "text": "il",
+          "start": 46.848,
+          "end": 46.948
+        },
+        {
+          "text": "simbolo",
+          "start": 47.008,
+          "end": 47.348
+        },
+        {
+          "text": "di",
+          "start": 47.368,
+          "end": 47.428
+        },
+        {
+          "text": "priorità",
+          "start": 47.468,
+          "end": 47.868
+        },
+        {
+          "text": "sono",
+          "start": 48.008,
+          "end": 48.168
+        },
+        {
+          "text": "pratiche",
+          "start": 48.188,
+          "end": 48.548
+        },
+        {
+          "text": "essenziali",
+          "start": 48.688,
+          "end": 49.348
+        },
+        {
+          "text": "da",
+          "start": 49.488,
+          "end": 49.548
+        },
+        {
+          "text": "usare",
+          "start": 49.608,
+          "end": 49.808
+        }
+      ]
+    },
+    {
+      "start": 49.868,
+      "end": 54.729,
+      "text": "sempre; vanno invece evitate le regole empiriche trovate a caso in rete se non dimostrate",
+      "words": [
+        {
+          "text": "sempre;",
+          "start": 49.868,
+          "end": 50.248
+        },
+        {
+          "text": "vanno",
+          "start": 50.849,
+          "end": 51.009
+        },
+        {
+          "text": "invece",
+          "start": 51.049,
+          "end": 51.309
+        },
+        {
+          "text": "evitate",
+          "start": 51.349,
+          "end": 51.689
+        },
+        {
+          "text": "le",
+          "start": 51.769,
+          "end": 51.829
+        },
+        {
+          "text": "regole",
+          "start": 51.869,
+          "end": 52.109
+        },
+        {
+          "text": "empiriche",
+          "start": 52.169,
+          "end": 52.629
+        },
+        {
+          "text": "trovate",
+          "start": 52.689,
+          "end": 52.969
+        },
+        {
+          "text": "a",
+          "start": 52.989,
+          "end": 53.029
+        },
+        {
+          "text": "caso",
+          "start": 53.069,
+          "end": 53.229
+        },
+        {
+          "text": "in",
+          "start": 53.289,
+          "end": 53.349
+        },
+        {
+          "text": "rete",
+          "start": 53.409,
+          "end": 53.689
+        },
+        {
+          "text": "se",
+          "start": 53.809,
+          "end": 53.889
+        },
+        {
+          "text": "non",
+          "start": 53.929,
+          "end": 54.049
+        },
+        {
+          "text": "dimostrate",
+          "start": 54.069,
+          "end": 54.729
+        }
+      ]
+    },
+    {
+      "start": 54.849,
+      "end": 56.37,
+      "text": "o verificate sperimentalmente.",
+      "words": [
+        {
+          "text": "o",
+          "start": 54.849,
+          "end": 54.889
+        },
+        {
+          "text": "verificate",
+          "start": 54.949,
+          "end": 55.469
+        },
+        {
+          "text": "sperimentalmente.",
+          "start": 55.529,
+          "end": 56.37
+        }
+      ]
+    }
+  ]
+}

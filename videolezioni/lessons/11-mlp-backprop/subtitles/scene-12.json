@@ -1,0 +1,1075 @@
+{
+  "duration": 72.03,
+  "segments": [
+    {
+      "start": 0.89,
+      "end": 4.611,
+      "text": "Riassumiamo le equazioni della backpropagation in una tabella compatta.",
+      "words": [
+        {
+          "text": "Riassumiamo",
+          "start": 0.89,
+          "end": 1.45
+        },
+        {
+          "text": "le",
+          "start": 1.51,
+          "end": 1.55
+        },
+        {
+          "text": "equazioni",
+          "start": 1.611,
+          "end": 2.071
+        },
+        {
+          "text": "della",
+          "start": 2.131,
+          "end": 2.311
+        },
+        {
+          "text": "backpropagation",
+          "start": 2.371,
+          "end": 3.231
+        },
+        {
+          "text": "in",
+          "start": 3.371,
+          "end": 3.451
+        },
+        {
+          "text": "una",
+          "start": 3.491,
+          "end": 3.631
+        },
+        {
+          "text": "tabella",
+          "start": 3.691,
+          "end": 4.031
+        },
+        {
+          "text": "compatta.",
+          "start": 4.071,
+          "end": 4.611
+        }
+      ]
+    },
+    {
+      "start": 5.411,
+      "end": 7.451,
+      "text": "La forma dell'aggiornamento è sempre identica:",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.411,
+          "end": 5.491
+        },
+        {
+          "text": "forma",
+          "start": 5.511,
+          "end": 5.731
+        },
+        {
+          "text": "dell'aggiornamento",
+          "start": 5.791,
+          "end": 6.471
+        },
+        {
+          "text": "è",
+          "start": 6.511,
+          "end": 6.551
+        },
+        {
+          "text": "sempre",
+          "start": 6.611,
+          "end": 6.891
+        },
+        {
+          "text": "identica:",
+          "start": 6.951,
+          "end": 7.451
+        }
+      ]
+    },
+    {
+      "start": 8.111,
+      "end": 12.072,
+      "text": "delta p di w con t u uguale a delta con t per o con",
+      "words": [
+        {
+          "text": "delta",
+          "start": 8.111,
+          "end": 8.351
+        },
+        {
+          "text": "p",
+          "start": 8.451,
+          "end": 8.491
+        },
+        {
+          "text": "di",
+          "start": 8.771,
+          "end": 8.831
+        },
+        {
+          "text": "w",
+          "start": 9.212,
+          "end": 9.252
+        },
+        {
+          "text": "con",
+          "start": 9.352,
+          "end": 9.492
+        },
+        {
+          "text": "t",
+          "start": 9.552,
+          "end": 9.592
+        },
+        {
+          "text": "u",
+          "start": 9.752,
+          "end": 9.792
+        },
+        {
+          "text": "uguale",
+          "start": 10.132,
+          "end": 10.492
+        },
+        {
+          "text": "a",
+          "start": 10.532,
+          "end": 10.572
+        },
+        {
+          "text": "delta",
+          "start": 10.652,
+          "end": 10.932
+        },
+        {
+          "text": "con",
+          "start": 10.992,
+          "end": 11.132
+        },
+        {
+          "text": "t",
+          "start": 11.212,
+          "end": 11.252
+        },
+        {
+          "text": "per",
+          "start": 11.592,
+          "end": 11.732
+        },
+        {
+          "text": "o",
+          "start": 11.772,
+          "end": 11.812
+        },
+        {
+          "text": "con",
+          "start": 11.892,
+          "end": 12.072
+        }
+      ]
+    },
+    {
+      "start": 12.112,
+      "end": 12.152,
+      "text": "u.",
+      "words": [
+        {
+          "text": "u.",
+          "start": 12.112,
+          "end": 12.152
+        }
+      ]
+    },
+    {
+      "start": 13.272,
+      "end": 17.773,
+      "text": "Per i pesi verso l'uscita w con k j si usa delta con k uguale",
+      "words": [
+        {
+          "text": "Per",
+          "start": 13.272,
+          "end": 13.392
+        },
+        {
+          "text": "i",
+          "start": 13.432,
+          "end": 13.472
+        },
+        {
+          "text": "pesi",
+          "start": 13.492,
+          "end": 13.712
+        },
+        {
+          "text": "verso",
+          "start": 13.752,
+          "end": 13.972
+        },
+        {
+          "text": "l'uscita",
+          "start": 14.012,
+          "end": 14.472
+        },
+        {
+          "text": "w",
+          "start": 14.652,
+          "end": 14.692
+        },
+        {
+          "text": "con",
+          "start": 15.072,
+          "end": 15.212
+        },
+        {
+          "text": "k",
+          "start": 15.252,
+          "end": 15.292
+        },
+        {
+          "text": "j",
+          "start": 15.532,
+          "end": 15.572
+        },
+        {
+          "text": "si",
+          "start": 16.012,
+          "end": 16.072
+        },
+        {
+          "text": "usa",
+          "start": 16.152,
+          "end": 16.292
+        },
+        {
+          "text": "delta",
+          "start": 16.392,
+          "end": 16.653
+        },
+        {
+          "text": "con",
+          "start": 16.713,
+          "end": 16.853
+        },
+        {
+          "text": "k",
+          "start": 16.893,
+          "end": 16.933
+        },
+        {
+          "text": "uguale",
+          "start": 17.453,
+          "end": 17.773
+        }
+      ]
+    },
+    {
+      "start": 17.813,
+      "end": 20.973,
+      "text": "a d con k meno o con k, per f primo con k.",
+      "words": [
+        {
+          "text": "a",
+          "start": 17.813,
+          "end": 17.853
+        },
+        {
+          "text": "d",
+          "start": 17.913,
+          "end": 17.953
+        },
+        {
+          "text": "con",
+          "start": 18.053,
+          "end": 18.193
+        },
+        {
+          "text": "k",
+          "start": 18.253,
+          "end": 18.293
+        },
+        {
+          "text": "meno",
+          "start": 18.653,
+          "end": 18.853
+        },
+        {
+          "text": "o",
+          "start": 18.913,
+          "end": 18.953
+        },
+        {
+          "text": "con",
+          "start": 19.013,
+          "end": 19.153
+        },
+        {
+          "text": "k,",
+          "start": 19.213,
+          "end": 19.253
+        },
+        {
+          "text": "per",
+          "start": 19.473,
+          "end": 20.193
+        },
+        {
+          "text": "f",
+          "start": 20.293,
+          "end": 20.333
+        },
+        {
+          "text": "primo",
+          "start": 20.493,
+          "end": 20.693
+        },
+        {
+          "text": "con",
+          "start": 20.753,
+          "end": 20.873
+        },
+        {
+          "text": "k.",
+          "start": 20.933,
+          "end": 20.973
+        }
+      ]
+    },
+    {
+      "start": 22.093,
+      "end": 25.974,
+      "text": "Per i pesi verso lo strato nascosto w con j i si usa delta con",
+      "words": [
+        {
+          "text": "Per",
+          "start": 22.093,
+          "end": 22.213
+        },
+        {
+          "text": "i",
+          "start": 22.233,
+          "end": 22.273
+        },
+        {
+          "text": "pesi",
+          "start": 22.293,
+          "end": 22.513
+        },
+        {
+          "text": "verso",
+          "start": 22.553,
+          "end": 22.753
+        },
+        {
+          "text": "lo",
+          "start": 22.813,
+          "end": 22.873
+        },
+        {
+          "text": "strato",
+          "start": 22.913,
+          "end": 23.173
+        },
+        {
+          "text": "nascosto",
+          "start": 23.213,
+          "end": 23.974
+        },
+        {
+          "text": "w",
+          "start": 24.234,
+          "end": 24.274
+        },
+        {
+          "text": "con",
+          "start": 24.354,
+          "end": 24.494
+        },
+        {
+          "text": "j",
+          "start": 24.554,
+          "end": 24.594
+        },
+        {
+          "text": "i",
+          "start": 24.794,
+          "end": 24.834
+        },
+        {
+          "text": "si",
+          "start": 25.134,
+          "end": 25.214
+        },
+        {
+          "text": "usa",
+          "start": 25.294,
+          "end": 25.454
+        },
+        {
+          "text": "delta",
+          "start": 25.514,
+          "end": 25.794
+        },
+        {
+          "text": "con",
+          "start": 25.854,
+          "end": 25.974
+        }
+      ]
+    },
+    {
+      "start": 26.034,
+      "end": 27.634,
+      "text": "j uguale alla somma su k",
+      "words": [
+        {
+          "text": "j",
+          "start": 26.034,
+          "end": 26.074
+        },
+        {
+          "text": "uguale",
+          "start": 26.534,
+          "end": 26.834
+        },
+        {
+          "text": "alla",
+          "start": 26.874,
+          "end": 27.014
+        },
+        {
+          "text": "somma",
+          "start": 27.074,
+          "end": 27.354
+        },
+        {
+          "text": "su",
+          "start": 27.434,
+          "end": 27.494
+        },
+        {
+          "text": "k",
+          "start": 27.594,
+          "end": 27.634
+        }
+      ]
+    },
+    {
+      "start": 28.334,
+      "end": 30.434,
+      "text": "di delta con k per w con k j,",
+      "words": [
+        {
+          "text": "di",
+          "start": 28.334,
+          "end": 28.394
+        },
+        {
+          "text": "delta",
+          "start": 28.454,
+          "end": 28.694
+        },
+        {
+          "text": "con",
+          "start": 28.754,
+          "end": 28.874
+        },
+        {
+          "text": "k",
+          "start": 28.914,
+          "end": 28.954
+        },
+        {
+          "text": "per",
+          "start": 29.274,
+          "end": 29.394
+        },
+        {
+          "text": "w",
+          "start": 29.794,
+          "end": 29.834
+        },
+        {
+          "text": "con",
+          "start": 29.914,
+          "end": 30.054
+        },
+        {
+          "text": "k",
+          "start": 30.094,
+          "end": 30.134
+        },
+        {
+          "text": "j,",
+          "start": 30.394,
+          "end": 30.434
+        }
+      ]
+    },
+    {
+      "start": 31.054,
+      "end": 32.115,
+      "text": "per f primo con j.",
+      "words": [
+        {
+          "text": "per",
+          "start": 31.054,
+          "end": 31.174
+        },
+        {
+          "text": "f",
+          "start": 31.335,
+          "end": 31.375
+        },
+        {
+          "text": "primo",
+          "start": 31.495,
+          "end": 31.755
+        },
+        {
+          "text": "con",
+          "start": 31.875,
+          "end": 32.015
+        },
+        {
+          "text": "j.",
+          "start": 32.075,
+          "end": 32.115
+        }
+      ]
+    },
+    {
+      "start": 33.075,
+      "end": 36.695,
+      "text": "La stessa formula si estende subito a qualsiasi numero di strati nascosti:",
+      "words": [
+        {
+          "text": "La",
+          "start": 33.075,
+          "end": 33.135
+        },
+        {
+          "text": "stessa",
+          "start": 33.175,
+          "end": 33.395
+        },
+        {
+          "text": "formula",
+          "start": 33.455,
+          "end": 33.835
+        },
+        {
+          "text": "si",
+          "start": 33.895,
+          "end": 33.955
+        },
+        {
+          "text": "estende",
+          "start": 33.995,
+          "end": 34.295
+        },
+        {
+          "text": "subito",
+          "start": 34.355,
+          "end": 34.655
+        },
+        {
+          "text": "a",
+          "start": 34.695,
+          "end": 34.735
+        },
+        {
+          "text": "qualsiasi",
+          "start": 34.775,
+          "end": 35.355
+        },
+        {
+          "text": "numero",
+          "start": 35.415,
+          "end": 35.675
+        },
+        {
+          "text": "di",
+          "start": 35.695,
+          "end": 35.775
+        },
+        {
+          "text": "strati",
+          "start": 35.815,
+          "end": 36.115
+        },
+        {
+          "text": "nascosti:",
+          "start": 36.175,
+          "end": 36.695
+        }
+      ]
+    },
+    {
+      "start": 37.155,
+      "end": 39.956,
+      "text": "basta sommare su tutti i successori h dell'unità j.",
+      "words": [
+        {
+          "text": "basta",
+          "start": 37.155,
+          "end": 37.375
+        },
+        {
+          "text": "sommare",
+          "start": 37.415,
+          "end": 37.795
+        },
+        {
+          "text": "su",
+          "start": 37.855,
+          "end": 37.915
+        },
+        {
+          "text": "tutti",
+          "start": 38.015,
+          "end": 38.235
+        },
+        {
+          "text": "i",
+          "start": 38.295,
+          "end": 38.335
+        },
+        {
+          "text": "successori",
+          "start": 38.375,
+          "end": 38.896
+        },
+        {
+          "text": "h",
+          "start": 39.136,
+          "end": 39.176
+        },
+        {
+          "text": "dell'unità",
+          "start": 39.356,
+          "end": 39.816
+        },
+        {
+          "text": "j.",
+          "start": 39.916,
+          "end": 39.956
+        }
+      ]
+    },
+    {
+      "start": 40.976,
+      "end": 46.817,
+      "text": "Aggiornando esempio per esempio abbiamo la versione online; sommando su tutti gli esempi la versione",
+      "words": [
+        {
+          "text": "Aggiornando",
+          "start": 40.976,
+          "end": 41.496
+        },
+        {
+          "text": "esempio",
+          "start": 41.576,
+          "end": 41.896
+        },
+        {
+          "text": "per",
+          "start": 41.936,
+          "end": 42.056
+        },
+        {
+          "text": "esempio",
+          "start": 42.096,
+          "end": 42.516
+        },
+        {
+          "text": "abbiamo",
+          "start": 42.656,
+          "end": 42.956
+        },
+        {
+          "text": "la",
+          "start": 42.996,
+          "end": 43.076
+        },
+        {
+          "text": "versione",
+          "start": 43.096,
+          "end": 43.516
+        },
+        {
+          "text": "online;",
+          "start": 43.636,
+          "end": 44.156
+        },
+        {
+          "text": "sommando",
+          "start": 44.696,
+          "end": 45.116
+        },
+        {
+          "text": "su",
+          "start": 45.196,
+          "end": 45.276
+        },
+        {
+          "text": "tutti",
+          "start": 45.376,
+          "end": 45.616
+        },
+        {
+          "text": "gli",
+          "start": 45.636,
+          "end": 45.736
+        },
+        {
+          "text": "esempi",
+          "start": 45.776,
+          "end": 46.157
+        },
+        {
+          "text": "la",
+          "start": 46.357,
+          "end": 46.437
+        },
+        {
+          "text": "versione",
+          "start": 46.457,
+          "end": 46.817
+        }
+      ]
+    },
+    {
+      "start": 46.877,
+      "end": 47.137,
+      "text": "batch.",
+      "words": [
+        {
+          "text": "batch.",
+          "start": 46.877,
+          "end": 47.137
+        }
+      ]
+    },
+    {
+      "start": 48.037,
+      "end": 51.637,
+      "text": "Il ciclo completo procede in cinque passi: fase forward,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 48.037,
+          "end": 48.117
+        },
+        {
+          "text": "ciclo",
+          "start": 48.157,
+          "end": 48.477
+        },
+        {
+          "text": "completo",
+          "start": 48.517,
+          "end": 49.037
+        },
+        {
+          "text": "procede",
+          "start": 49.137,
+          "end": 49.497
+        },
+        {
+          "text": "in",
+          "start": 49.557,
+          "end": 49.597
+        },
+        {
+          "text": "cinque",
+          "start": 49.637,
+          "end": 49.917
+        },
+        {
+          "text": "passi:",
+          "start": 49.957,
+          "end": 50.337
+        },
+        {
+          "text": "fase",
+          "start": 50.817,
+          "end": 51.077
+        },
+        {
+          "text": "forward,",
+          "start": 51.157,
+          "end": 51.637
+        }
+      ]
+    },
+    {
+      "start": 52.197,
+      "end": 56.458,
+      "text": "calcolo dei delta in uscita, fase backward verso gli strati nascosti,",
+      "words": [
+        {
+          "text": "calcolo",
+          "start": 52.197,
+          "end": 52.597
+        },
+        {
+          "text": "dei",
+          "start": 52.637,
+          "end": 52.757
+        },
+        {
+          "text": "delta",
+          "start": 52.817,
+          "end": 53.077
+        },
+        {
+          "text": "in",
+          "start": 53.117,
+          "end": 53.197
+        },
+        {
+          "text": "uscita,",
+          "start": 53.237,
+          "end": 53.638
+        },
+        {
+          "text": "fase",
+          "start": 54.178,
+          "end": 54.418
+        },
+        {
+          "text": "backward",
+          "start": 54.498,
+          "end": 54.998
+        },
+        {
+          "text": "verso",
+          "start": 55.218,
+          "end": 55.458
+        },
+        {
+          "text": "gli",
+          "start": 55.478,
+          "end": 55.598
+        },
+        {
+          "text": "strati",
+          "start": 55.638,
+          "end": 55.918
+        },
+        {
+          "text": "nascosti,",
+          "start": 55.978,
+          "end": 56.458
+        }
+      ]
+    },
+    {
+      "start": 56.998,
+      "end": 60.098,
+      "text": "aggiornamento dei pesi, e ripetizione fino all'arresto.",
+      "words": [
+        {
+          "text": "aggiornamento",
+          "start": 56.998,
+          "end": 57.598
+        },
+        {
+          "text": "dei",
+          "start": 57.638,
+          "end": 57.758
+        },
+        {
+          "text": "pesi,",
+          "start": 57.798,
+          "end": 58.098
+        },
+        {
+          "text": "e",
+          "start": 58.578,
+          "end": 58.618
+        },
+        {
+          "text": "ripetizione",
+          "start": 58.678,
+          "end": 59.278
+        },
+        {
+          "text": "fino",
+          "start": 59.338,
+          "end": 59.498
+        },
+        {
+          "text": "all'arresto.",
+          "start": 59.538,
+          "end": 60.098
+        }
+      ]
+    },
+    {
+      "start": 61.119,
+      "end": 64.059,
+      "text": "Un promemoria essenziale: non dimenticare i bias.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 61.119,
+          "end": 61.199
+        },
+        {
+          "text": "promemoria",
+          "start": 61.219,
+          "end": 61.679
+        },
+        {
+          "text": "essenziale:",
+          "start": 61.699,
+          "end": 62.299
+        },
+        {
+          "text": "non",
+          "start": 62.719,
+          "end": 62.879
+        },
+        {
+          "text": "dimenticare",
+          "start": 62.919,
+          "end": 63.499
+        },
+        {
+          "text": "i",
+          "start": 63.519,
+          "end": 63.559
+        },
+        {
+          "text": "bias.",
+          "start": 63.599,
+          "end": 64.059
+        }
+      ]
+    },
+    {
+      "start": 65.039,
+      "end": 67.479,
+      "text": "Con ingresso costante o con zero uguale a uno,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 65.039,
+          "end": 65.159
+        },
+        {
+          "text": "ingresso",
+          "start": 65.179,
+          "end": 65.519
+        },
+        {
+          "text": "costante",
+          "start": 65.559,
+          "end": 66.099
+        },
+        {
+          "text": "o",
+          "start": 66.299,
+          "end": 66.33900000000001
+        },
+        {
+          "text": "con",
+          "start": 66.419,
+          "end": 66.559
+        },
+        {
+          "text": "zero",
+          "start": 66.639,
+          "end": 66.899
+        },
+        {
+          "text": "uguale",
+          "start": 66.939,
+          "end": 67.179
+        },
+        {
+          "text": "a",
+          "start": 67.199,
+          "end": 67.239
+        },
+        {
+          "text": "uno,",
+          "start": 67.299,
+          "end": 67.479
+        }
+      ]
+    },
+    {
+      "start": 67.719,
+      "end": 71.78,
+      "text": "l'aggiornamento del bias w con t zero è semplicemente delta con t.",
+      "words": [
+        {
+          "text": "l'aggiornamento",
+          "start": 67.719,
+          "end": 68.339
+        },
+        {
+          "text": "del",
+          "start": 68.379,
+          "end": 68.48
+        },
+        {
+          "text": "bias",
+          "start": 68.54,
+          "end": 68.94
+        },
+        {
+          "text": "w",
+          "start": 69.44,
+          "end": 69.48
+        },
+        {
+          "text": "con",
+          "start": 69.6,
+          "end": 69.74
+        },
+        {
+          "text": "t",
+          "start": 69.8,
+          "end": 69.84
+        },
+        {
+          "text": "zero",
+          "start": 70.0,
+          "end": 70.26
+        },
+        {
+          "text": "è",
+          "start": 70.32,
+          "end": 70.36
+        },
+        {
+          "text": "semplicemente",
+          "start": 70.42,
+          "end": 71.08
+        },
+        {
+          "text": "delta",
+          "start": 71.24,
+          "end": 71.5
+        },
+        {
+          "text": "con",
+          "start": 71.56,
+          "end": 71.7
+        },
+        {
+          "text": "t.",
+          "start": 71.74,
+          "end": 71.78
+        }
+      ]
+    }
+  ]
+}

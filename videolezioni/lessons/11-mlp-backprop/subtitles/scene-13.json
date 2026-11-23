@@ -1,0 +1,825 @@
+{
+  "duration": 62.348,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.64,
+      "text": "Perché la backpropagation è così potente?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 0.08,
+          "end": 0.4
+        },
+        {
+          "text": "la",
+          "start": 0.52,
+          "end": 0.58
+        },
+        {
+          "text": "backpropagation",
+          "start": 0.68,
+          "end": 1.6
+        },
+        {
+          "text": "è",
+          "start": 1.64,
+          "end": 1.68
+        },
+        {
+          "text": "così",
+          "start": 1.74,
+          "end": 1.96
+        },
+        {
+          "text": "potente?",
+          "start": 2.06,
+          "end": 2.64
+        }
+      ]
+    },
+    {
+      "start": 3.16,
+      "end": 4.921,
+      "text": "Per tre proprietà strutturali.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 3.16,
+          "end": 3.3
+        },
+        {
+          "text": "tre",
+          "start": 3.501,
+          "end": 3.621
+        },
+        {
+          "text": "proprietà",
+          "start": 3.721,
+          "end": 4.161
+        },
+        {
+          "text": "strutturali.",
+          "start": 4.241,
+          "end": 4.921
+        }
+      ]
+    },
+    {
+      "start": 5.581,
+      "end": 7.361,
+      "text": "Primo, calcoli solo locali:",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 5.581,
+          "end": 5.881
+        },
+        {
+          "text": "calcoli",
+          "start": 6.261,
+          "end": 6.661
+        },
+        {
+          "text": "solo",
+          "start": 6.721,
+          "end": 6.901
+        },
+        {
+          "text": "locali:",
+          "start": 6.941,
+          "end": 7.361
+        }
+      ]
+    },
+    {
+      "start": 8.001,
+      "end": 11.342,
+      "text": "ogni unità usa solo informazioni dei propri vicini immediati,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 8.001,
+          "end": 8.221
+        },
+        {
+          "text": "unità",
+          "start": 8.281,
+          "end": 8.561
+        },
+        {
+          "text": "usa",
+          "start": 8.921,
+          "end": 9.081
+        },
+        {
+          "text": "solo",
+          "start": 9.181,
+          "end": 9.341
+        },
+        {
+          "text": "informazioni",
+          "start": 9.381,
+          "end": 9.941
+        },
+        {
+          "text": "dei",
+          "start": 9.981,
+          "end": 10.081
+        },
+        {
+          "text": "propri",
+          "start": 10.121,
+          "end": 10.381
+        },
+        {
+          "text": "vicini",
+          "start": 10.421,
+          "end": 10.722
+        },
+        {
+          "text": "immediati,",
+          "start": 10.782,
+          "end": 11.342
+        }
+      ]
+    },
+    {
+      "start": 11.702,
+      "end": 14.242,
+      "text": "come un processo di diffusione tra genitori e figli,",
+      "words": [
+        {
+          "text": "come",
+          "start": 11.702,
+          "end": 11.862
+        },
+        {
+          "text": "un",
+          "start": 11.922,
+          "end": 11.982
+        },
+        {
+          "text": "processo",
+          "start": 12.002,
+          "end": 12.382
+        },
+        {
+          "text": "di",
+          "start": 12.422,
+          "end": 12.482
+        },
+        {
+          "text": "diffusione",
+          "start": 12.522,
+          "end": 13.082
+        },
+        {
+          "text": "tra",
+          "start": 13.142,
+          "end": 13.242
+        },
+        {
+          "text": "genitori",
+          "start": 13.322,
+          "end": 13.702
+        },
+        {
+          "text": "e",
+          "start": 13.762,
+          "end": 13.802
+        },
+        {
+          "text": "figli,",
+          "start": 13.882,
+          "end": 14.242
+        }
+      ]
+    },
+    {
+      "start": 14.682,
+      "end": 18.303,
+      "text": "eppure produce un aggiornamento con effetto globale sull'intera rete.",
+      "words": [
+        {
+          "text": "eppure",
+          "start": 14.682,
+          "end": 15.022
+        },
+        {
+          "text": "produce",
+          "start": 15.062,
+          "end": 15.442
+        },
+        {
+          "text": "un",
+          "start": 15.502,
+          "end": 15.562
+        },
+        {
+          "text": "aggiornamento",
+          "start": 15.602,
+          "end": 16.182
+        },
+        {
+          "text": "con",
+          "start": 16.242,
+          "end": 16.382
+        },
+        {
+          "text": "effetto",
+          "start": 16.422,
+          "end": 16.862
+        },
+        {
+          "text": "globale",
+          "start": 16.922,
+          "end": 17.362
+        },
+        {
+          "text": "sull'intera",
+          "start": 17.402,
+          "end": 17.963
+        },
+        {
+          "text": "rete.",
+          "start": 18.023,
+          "end": 18.303
+        }
+      ]
+    },
+    {
+      "start": 19.103,
+      "end": 25.444,
+      "text": "Secondo, efficienza: grazie alla fattorizzazione, il delta con t di ogni unità si calcola una",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 19.103,
+          "end": 19.543
+        },
+        {
+          "text": "efficienza:",
+          "start": 20.023,
+          "end": 20.783
+        },
+        {
+          "text": "grazie",
+          "start": 21.363,
+          "end": 21.643
+        },
+        {
+          "text": "alla",
+          "start": 21.663,
+          "end": 21.783
+        },
+        {
+          "text": "fattorizzazione,",
+          "start": 21.803,
+          "end": 22.623
+        },
+        {
+          "text": "il",
+          "start": 22.963,
+          "end": 23.063
+        },
+        {
+          "text": "delta",
+          "start": 23.103,
+          "end": 23.383
+        },
+        {
+          "text": "con",
+          "start": 23.443,
+          "end": 23.603
+        },
+        {
+          "text": "t",
+          "start": 23.683,
+          "end": 23.723
+        },
+        {
+          "text": "di",
+          "start": 23.903,
+          "end": 23.983
+        },
+        {
+          "text": "ogni",
+          "start": 24.043,
+          "end": 24.203
+        },
+        {
+          "text": "unità",
+          "start": 24.263,
+          "end": 24.523
+        },
+        {
+          "text": "si",
+          "start": 24.763,
+          "end": 24.844
+        },
+        {
+          "text": "calcola",
+          "start": 24.884,
+          "end": 25.264
+        },
+        {
+          "text": "una",
+          "start": 25.324,
+          "end": 25.444
+        }
+      ]
+    },
+    {
+      "start": 25.504,
+      "end": 27.904,
+      "text": "sola volta e si riusa per tutti i suoi pesi.",
+      "words": [
+        {
+          "text": "sola",
+          "start": 25.504,
+          "end": 25.684
+        },
+        {
+          "text": "volta",
+          "start": 25.724,
+          "end": 26.064
+        },
+        {
+          "text": "e",
+          "start": 26.404,
+          "end": 26.444
+        },
+        {
+          "text": "si",
+          "start": 26.504,
+          "end": 26.584
+        },
+        {
+          "text": "riusa",
+          "start": 26.644,
+          "end": 26.904
+        },
+        {
+          "text": "per",
+          "start": 26.984,
+          "end": 27.104
+        },
+        {
+          "text": "tutti",
+          "start": 27.144,
+          "end": 27.344
+        },
+        {
+          "text": "i",
+          "start": 27.384,
+          "end": 27.424
+        },
+        {
+          "text": "suoi",
+          "start": 27.424,
+          "end": 27.584
+        },
+        {
+          "text": "pesi.",
+          "start": 27.624,
+          "end": 27.904
+        }
+      ]
+    },
+    {
+      "start": 28.504,
+      "end": 31.844,
+      "text": "Il costo resta lineare nel numero dei pesi anziché quadratico:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 28.504,
+          "end": 28.584
+        },
+        {
+          "text": "costo",
+          "start": 28.644,
+          "end": 28.944
+        },
+        {
+          "text": "resta",
+          "start": 29.004,
+          "end": 29.264
+        },
+        {
+          "text": "lineare",
+          "start": 29.304,
+          "end": 29.724
+        },
+        {
+          "text": "nel",
+          "start": 29.784,
+          "end": 29.884
+        },
+        {
+          "text": "numero",
+          "start": 29.924,
+          "end": 30.164
+        },
+        {
+          "text": "dei",
+          "start": 30.204,
+          "end": 30.324
+        },
+        {
+          "text": "pesi",
+          "start": 30.384,
+          "end": 30.664
+        },
+        {
+          "text": "anziché",
+          "start": 30.784,
+          "end": 31.144
+        },
+        {
+          "text": "quadratico:",
+          "start": 31.224,
+          "end": 31.844
+        }
+      ]
+    },
+    {
+      "start": 32.325,
+      "end": 37.285,
+      "text": "con un miliardo di pesi significa un miliardo di operazioni invece di dieci alla diciottesima.",
+      "words": [
+        {
+          "text": "con",
+          "start": 32.325,
+          "end": 32.445
+        },
+        {
+          "text": "un",
+          "start": 32.485,
+          "end": 32.545
+        },
+        {
+          "text": "miliardo",
+          "start": 32.585,
+          "end": 32.965
+        },
+        {
+          "text": "di",
+          "start": 33.005,
+          "end": 33.065
+        },
+        {
+          "text": "pesi",
+          "start": 33.105,
+          "end": 33.365
+        },
+        {
+          "text": "significa",
+          "start": 33.545,
+          "end": 33.965
+        },
+        {
+          "text": "un",
+          "start": 34.025,
+          "end": 34.085
+        },
+        {
+          "text": "miliardo",
+          "start": 34.125,
+          "end": 34.505
+        },
+        {
+          "text": "di",
+          "start": 34.545,
+          "end": 34.585
+        },
+        {
+          "text": "operazioni",
+          "start": 34.645,
+          "end": 35.265
+        },
+        {
+          "text": "invece",
+          "start": 35.485,
+          "end": 35.825
+        },
+        {
+          "text": "di",
+          "start": 35.885,
+          "end": 35.965
+        },
+        {
+          "text": "dieci",
+          "start": 36.065,
+          "end": 36.365
+        },
+        {
+          "text": "alla",
+          "start": 36.405,
+          "end": 36.525
+        },
+        {
+          "text": "diciottesima.",
+          "start": 36.565,
+          "end": 37.285
+        }
+      ]
+    },
+    {
+      "start": 38.305,
+      "end": 41.446,
+      "text": "Per padroneggiarla davvero conviene leggerla su tre livelli:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 38.305,
+          "end": 38.445
+        },
+        {
+          "text": "padroneggiarla",
+          "start": 38.505,
+          "end": 39.186
+        },
+        {
+          "text": "davvero",
+          "start": 39.226,
+          "end": 39.586
+        },
+        {
+          "text": "conviene",
+          "start": 39.686,
+          "end": 40.046
+        },
+        {
+          "text": "leggerla",
+          "start": 40.126,
+          "end": 40.526
+        },
+        {
+          "text": "su",
+          "start": 40.606,
+          "end": 40.686
+        },
+        {
+          "text": "tre",
+          "start": 40.806,
+          "end": 40.906
+        },
+        {
+          "text": "livelli:",
+          "start": 40.986,
+          "end": 41.446
+        }
+      ]
+    },
+    {
+      "start": 42.046,
+      "end": 47.387,
+      "text": "i singoli passaggi algebrici, il significato delle derivate parziali come variazioni locali,",
+      "words": [
+        {
+          "text": "i",
+          "start": 42.046,
+          "end": 42.086
+        },
+        {
+          "text": "singoli",
+          "start": 42.206,
+          "end": 42.646
+        },
+        {
+          "text": "passaggi",
+          "start": 42.706,
+          "end": 43.086
+        },
+        {
+          "text": "algebrici,",
+          "start": 43.126,
+          "end": 43.706
+        },
+        {
+          "text": "il",
+          "start": 44.166,
+          "end": 44.246
+        },
+        {
+          "text": "significato",
+          "start": 44.286,
+          "end": 44.846
+        },
+        {
+          "text": "delle",
+          "start": 44.886,
+          "end": 45.046
+        },
+        {
+          "text": "derivate",
+          "start": 45.086,
+          "end": 45.486
+        },
+        {
+          "text": "parziali",
+          "start": 45.526,
+          "end": 46.086
+        },
+        {
+          "text": "come",
+          "start": 46.187,
+          "end": 46.367
+        },
+        {
+          "text": "variazioni",
+          "start": 46.407,
+          "end": 46.907
+        },
+        {
+          "text": "locali,",
+          "start": 46.967,
+          "end": 47.387
+        }
+      ]
+    },
+    {
+      "start": 47.907,
+      "end": 51.207,
+      "text": "e il quadro generale della scomposizione dell'errore sulla rete.",
+      "words": [
+        {
+          "text": "e",
+          "start": 47.907,
+          "end": 47.947
+        },
+        {
+          "text": "il",
+          "start": 47.987,
+          "end": 48.067
+        },
+        {
+          "text": "quadro",
+          "start": 48.167,
+          "end": 48.487
+        },
+        {
+          "text": "generale",
+          "start": 48.547,
+          "end": 49.027
+        },
+        {
+          "text": "della",
+          "start": 49.087,
+          "end": 49.267
+        },
+        {
+          "text": "scomposizione",
+          "start": 49.307,
+          "end": 50.067
+        },
+        {
+          "text": "dell'errore",
+          "start": 50.107,
+          "end": 50.627
+        },
+        {
+          "text": "sulla",
+          "start": 50.687,
+          "end": 50.887
+        },
+        {
+          "text": "rete.",
+          "start": 50.947,
+          "end": 51.207
+        }
+      ]
+    },
+    {
+      "start": 52.087,
+      "end": 56.448,
+      "text": "Infine, una nota di terminologia: non si dice mai rete backprop.",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 52.087,
+          "end": 52.427
+        },
+        {
+          "text": "una",
+          "start": 52.587,
+          "end": 52.727
+        },
+        {
+          "text": "nota",
+          "start": 52.767,
+          "end": 53.007
+        },
+        {
+          "text": "di",
+          "start": 53.047,
+          "end": 53.127
+        },
+        {
+          "text": "terminologia:",
+          "start": 53.167,
+          "end": 53.928
+        },
+        {
+          "text": "non",
+          "start": 54.408,
+          "end": 54.528
+        },
+        {
+          "text": "si",
+          "start": 54.568,
+          "end": 54.628
+        },
+        {
+          "text": "dice",
+          "start": 54.688,
+          "end": 54.868
+        },
+        {
+          "text": "mai",
+          "start": 54.928,
+          "end": 55.128
+        },
+        {
+          "text": "rete",
+          "start": 55.388,
+          "end": 55.688
+        },
+        {
+          "text": "backprop.",
+          "start": 55.868,
+          "end": 56.448
+        }
+      ]
+    },
+    {
+      "start": 57.008,
+      "end": 61.929,
+      "text": "La rete neurale è il modello; la backpropagation è l'algoritmo di addestramento.",
+      "words": [
+        {
+          "text": "La",
+          "start": 57.008,
+          "end": 57.068
+        },
+        {
+          "text": "rete",
+          "start": 57.128,
+          "end": 57.308
+        },
+        {
+          "text": "neurale",
+          "start": 57.368,
+          "end": 57.828
+        },
+        {
+          "text": "è",
+          "start": 57.968,
+          "end": 58.008
+        },
+        {
+          "text": "il",
+          "start": 58.088,
+          "end": 58.188
+        },
+        {
+          "text": "modello;",
+          "start": 58.248,
+          "end": 58.768
+        },
+        {
+          "text": "la",
+          "start": 59.188,
+          "end": 59.248
+        },
+        {
+          "text": "backpropagation",
+          "start": 59.308,
+          "end": 60.148
+        },
+        {
+          "text": "è",
+          "start": 60.348,
+          "end": 60.389
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 60.469,
+          "end": 61.049
+        },
+        {
+          "text": "di",
+          "start": 61.109,
+          "end": 61.169
+        },
+        {
+          "text": "addestramento.",
+          "start": 61.209,
+          "end": 61.929
+        }
+      ]
+    }
+  ]
+}

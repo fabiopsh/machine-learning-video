@@ -1,0 +1,880 @@
+{
+  "duration": 59.601,
+  "segments": [
+    {
+      "start": 0.361,
+      "end": 3.222,
+      "text": "Come aggiorniamo i pesi rispetto agli esempi del dataset?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.361,
+          "end": 0.601
+        },
+        {
+          "text": "aggiorniamo",
+          "start": 0.661,
+          "end": 1.281
+        },
+        {
+          "text": "i",
+          "start": 1.341,
+          "end": 1.381
+        },
+        {
+          "text": "pesi",
+          "start": 1.421,
+          "end": 1.661
+        },
+        {
+          "text": "rispetto",
+          "start": 1.701,
+          "end": 2.061
+        },
+        {
+          "text": "agli",
+          "start": 2.081,
+          "end": 2.221
+        },
+        {
+          "text": "esempi",
+          "start": 2.241,
+          "end": 2.541
+        },
+        {
+          "text": "del",
+          "start": 2.581,
+          "end": 2.701
+        },
+        {
+          "text": "dataset?",
+          "start": 2.741,
+          "end": 3.222
+        }
+      ]
+    },
+    {
+      "start": 3.362,
+      "end": 4.542,
+      "text": "Esistono tre regimi.",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 3.362,
+          "end": 3.782
+        },
+        {
+          "text": "tre",
+          "start": 3.862,
+          "end": 4.002
+        },
+        {
+          "text": "regimi.",
+          "start": 4.122,
+          "end": 4.542
+        }
+      ]
+    },
+    {
+      "start": 5.202,
+      "end": 10.143,
+      "text": "Nel batch sommiamo i gradienti delta p t per o p u su tutta l'epoca",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 5.202,
+          "end": 5.362
+        },
+        {
+          "text": "batch",
+          "start": 5.442,
+          "end": 5.742
+        },
+        {
+          "text": "sommiamo",
+          "start": 5.942,
+          "end": 6.342
+        },
+        {
+          "text": "i",
+          "start": 6.402,
+          "end": 6.442
+        },
+        {
+          "text": "gradienti",
+          "start": 6.482,
+          "end": 7.102
+        },
+        {
+          "text": "delta",
+          "start": 7.322,
+          "end": 7.662
+        },
+        {
+          "text": "p",
+          "start": 7.742,
+          "end": 7.782
+        },
+        {
+          "text": "t",
+          "start": 7.962,
+          "end": 8.002
+        },
+        {
+          "text": "per",
+          "start": 8.402,
+          "end": 8.562
+        },
+        {
+          "text": "o",
+          "start": 8.622,
+          "end": 8.662
+        },
+        {
+          "text": "p",
+          "start": 8.782,
+          "end": 8.822
+        },
+        {
+          "text": "u",
+          "start": 8.983,
+          "end": 9.023
+        },
+        {
+          "text": "su",
+          "start": 9.343,
+          "end": 9.423
+        },
+        {
+          "text": "tutta",
+          "start": 9.503,
+          "end": 9.743
+        },
+        {
+          "text": "l'epoca",
+          "start": 9.783,
+          "end": 10.143
+        }
+      ]
+    },
+    {
+      "start": 10.483,
+      "end": 14.183,
+      "text": "e poi aggiorniamo una sola volta: la stima del gradiente è più accurata,",
+      "words": [
+        {
+          "text": "e",
+          "start": 10.483,
+          "end": 10.523
+        },
+        {
+          "text": "poi",
+          "start": 10.583,
+          "end": 10.723
+        },
+        {
+          "text": "aggiorniamo",
+          "start": 10.783,
+          "end": 11.243
+        },
+        {
+          "text": "una",
+          "start": 11.303,
+          "end": 11.403
+        },
+        {
+          "text": "sola",
+          "start": 11.463,
+          "end": 11.623
+        },
+        {
+          "text": "volta:",
+          "start": 11.663,
+          "end": 11.983
+        },
+        {
+          "text": "la",
+          "start": 12.483,
+          "end": 12.543
+        },
+        {
+          "text": "stima",
+          "start": 12.583,
+          "end": 12.783
+        },
+        {
+          "text": "del",
+          "start": 12.843,
+          "end": 12.943
+        },
+        {
+          "text": "gradiente",
+          "start": 12.983,
+          "end": 13.383
+        },
+        {
+          "text": "è",
+          "start": 13.423,
+          "end": 13.463
+        },
+        {
+          "text": "più",
+          "start": 13.503,
+          "end": 13.583
+        },
+        {
+          "text": "accurata,",
+          "start": 13.643,
+          "end": 14.183
+        }
+      ]
+    },
+    {
+      "start": 14.523,
+      "end": 16.424,
+      "text": "ma più lenta perché aspetta tutti i dati.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 14.523,
+          "end": 14.583
+        },
+        {
+          "text": "più",
+          "start": 14.663,
+          "end": 14.764
+        },
+        {
+          "text": "lenta",
+          "start": 14.864,
+          "end": 15.164
+        },
+        {
+          "text": "perché",
+          "start": 15.204,
+          "end": 15.404
+        },
+        {
+          "text": "aspetta",
+          "start": 15.444,
+          "end": 15.764
+        },
+        {
+          "text": "tutti",
+          "start": 15.804,
+          "end": 16.024
+        },
+        {
+          "text": "i",
+          "start": 16.084,
+          "end": 16.124
+        },
+        {
+          "text": "dati.",
+          "start": 16.144,
+          "end": 16.424
+        }
+      ]
+    },
+    {
+      "start": 17.184,
+      "end": 23.195,
+      "text": "Nell'online aggiorniamo dopo ogni singolo esempio: il gradiente è rumoroso e procede a zig-zag —",
+      "words": [
+        {
+          "text": "Nell'online",
+          "start": 17.184,
+          "end": 17.924
+        },
+        {
+          "text": "aggiorniamo",
+          "start": 18.044,
+          "end": 18.544
+        },
+        {
+          "text": "dopo",
+          "start": 18.624,
+          "end": 18.844
+        },
+        {
+          "text": "ogni",
+          "start": 19.004,
+          "end": 19.224
+        },
+        {
+          "text": "singolo",
+          "start": 19.324,
+          "end": 19.684
+        },
+        {
+          "text": "esempio:",
+          "start": 19.724,
+          "end": 20.144
+        },
+        {
+          "text": "il",
+          "start": 20.624,
+          "end": 20.704
+        },
+        {
+          "text": "gradiente",
+          "start": 20.725,
+          "end": 21.185
+        },
+        {
+          "text": "è",
+          "start": 21.285,
+          "end": 21.325
+        },
+        {
+          "text": "rumoroso",
+          "start": 21.405,
+          "end": 21.885
+        },
+        {
+          "text": "e",
+          "start": 21.985,
+          "end": 22.025
+        },
+        {
+          "text": "procede",
+          "start": 22.065,
+          "end": 22.385
+        },
+        {
+          "text": "a",
+          "start": 22.405,
+          "end": 22.445
+        },
+        {
+          "text": "zig-zag",
+          "start": 22.505,
+          "end": 23.045
+        },
+        {
+          "text": "—",
+          "start": 23.045,
+          "end": 23.195
+        }
+      ]
+    },
+    {
+      "start": 23.325,
+      "end": 28.106,
+      "text": "è lo Stochastic Gradient Descent — ma quel rumore può aiutare a sfuggire ai minimi",
+      "words": [
+        {
+          "text": "è",
+          "start": 23.325,
+          "end": 23.365
+        },
+        {
+          "text": "lo",
+          "start": 23.425,
+          "end": 23.505
+        },
+        {
+          "text": "Stochastic",
+          "start": 23.545,
+          "end": 24.165
+        },
+        {
+          "text": "Gradient",
+          "start": 24.285,
+          "end": 24.685
+        },
+        {
+          "text": "Descent",
+          "start": 24.685,
+          "end": 25.185
+        },
+        {
+          "text": "—",
+          "start": 25.185,
+          "end": 25.335
+        },
+        {
+          "text": "ma",
+          "start": 25.705,
+          "end": 25.765
+        },
+        {
+          "text": "quel",
+          "start": 25.865,
+          "end": 26.025
+        },
+        {
+          "text": "rumore",
+          "start": 26.105,
+          "end": 26.465
+        },
+        {
+          "text": "può",
+          "start": 26.525,
+          "end": 26.645
+        },
+        {
+          "text": "aiutare",
+          "start": 26.726,
+          "end": 27.106
+        },
+        {
+          "text": "a",
+          "start": 27.146,
+          "end": 27.186
+        },
+        {
+          "text": "sfuggire",
+          "start": 27.226,
+          "end": 27.646
+        },
+        {
+          "text": "ai",
+          "start": 27.666,
+          "end": 27.746
+        },
+        {
+          "text": "minimi",
+          "start": 27.806,
+          "end": 28.106
+        }
+      ]
+    },
+    {
+      "start": 28.186,
+      "end": 30.626,
+      "text": "locali e avere un effetto regolarizzante.",
+      "words": [
+        {
+          "text": "locali",
+          "start": 28.186,
+          "end": 28.586
+        },
+        {
+          "text": "e",
+          "start": 28.726,
+          "end": 28.766
+        },
+        {
+          "text": "avere",
+          "start": 28.826,
+          "end": 29.086
+        },
+        {
+          "text": "un",
+          "start": 29.146,
+          "end": 29.226
+        },
+        {
+          "text": "effetto",
+          "start": 29.246,
+          "end": 29.646
+        },
+        {
+          "text": "regolarizzante.",
+          "start": 29.746,
+          "end": 30.626
+        }
+      ]
+    },
+    {
+      "start": 31.446,
+      "end": 37.927,
+      "text": "Regola essenziale nell'online: fare sempre shuffling, cioè mescolare l'ordine dei pattern a ogni epoca per",
+      "words": [
+        {
+          "text": "Regola",
+          "start": 31.446,
+          "end": 31.786
+        },
+        {
+          "text": "essenziale",
+          "start": 31.866,
+          "end": 32.486
+        },
+        {
+          "text": "nell'online:",
+          "start": 32.546,
+          "end": 33.207
+        },
+        {
+          "text": "fare",
+          "start": 33.367,
+          "end": 33.567
+        },
+        {
+          "text": "sempre",
+          "start": 33.627,
+          "end": 33.927
+        },
+        {
+          "text": "shuffling,",
+          "start": 34.007,
+          "end": 34.547
+        },
+        {
+          "text": "cioè",
+          "start": 34.927,
+          "end": 35.047
+        },
+        {
+          "text": "mescolare",
+          "start": 35.127,
+          "end": 35.727
+        },
+        {
+          "text": "l'ordine",
+          "start": 35.767,
+          "end": 36.147
+        },
+        {
+          "text": "dei",
+          "start": 36.187,
+          "end": 36.307
+        },
+        {
+          "text": "pattern",
+          "start": 36.387,
+          "end": 36.827
+        },
+        {
+          "text": "a",
+          "start": 36.867,
+          "end": 36.907
+        },
+        {
+          "text": "ogni",
+          "start": 36.947,
+          "end": 37.107
+        },
+        {
+          "text": "epoca",
+          "start": 37.207,
+          "end": 37.527
+        },
+        {
+          "text": "per",
+          "start": 37.807,
+          "end": 37.927
+        }
+      ]
+    },
+    {
+      "start": 37.947,
+      "end": 39.548,
+      "text": "evitare derive sistematiche.",
+      "words": [
+        {
+          "text": "evitare",
+          "start": 37.947,
+          "end": 38.327
+        },
+        {
+          "text": "derive",
+          "start": 38.467,
+          "end": 38.768
+        },
+        {
+          "text": "sistematiche.",
+          "start": 38.848,
+          "end": 39.548
+        }
+      ]
+    },
+    {
+      "start": 40.448,
+      "end": 46.109,
+      "text": "Il compromesso standard è il mini-batch: dividiamo ogni epoca in blocchi di m b esempi",
+      "words": [
+        {
+          "text": "Il",
+          "start": 40.448,
+          "end": 40.528
+        },
+        {
+          "text": "compromesso",
+          "start": 40.568,
+          "end": 41.048
+        },
+        {
+          "text": "standard",
+          "start": 41.108,
+          "end": 41.548
+        },
+        {
+          "text": "è",
+          "start": 41.668,
+          "end": 41.708
+        },
+        {
+          "text": "il",
+          "start": 41.768,
+          "end": 41.848
+        },
+        {
+          "text": "mini-batch:",
+          "start": 41.908,
+          "end": 42.508
+        },
+        {
+          "text": "dividiamo",
+          "start": 42.888,
+          "end": 43.308
+        },
+        {
+          "text": "ogni",
+          "start": 43.508,
+          "end": 43.768
+        },
+        {
+          "text": "epoca",
+          "start": 43.888,
+          "end": 44.208
+        },
+        {
+          "text": "in",
+          "start": 44.288,
+          "end": 44.368
+        },
+        {
+          "text": "blocchi",
+          "start": 44.408,
+          "end": 44.768
+        },
+        {
+          "text": "di",
+          "start": 44.809,
+          "end": 44.889
+        },
+        {
+          "text": "m",
+          "start": 45.269,
+          "end": 45.309
+        },
+        {
+          "text": "b",
+          "start": 45.469,
+          "end": 45.509
+        },
+        {
+          "text": "esempi",
+          "start": 45.669,
+          "end": 46.109
+        }
+      ]
+    },
+    {
+      "start": 46.449,
+      "end": 48.109,
+      "text": "e aggiorniamo dopo ciascun blocco.",
+      "words": [
+        {
+          "text": "e",
+          "start": 46.449,
+          "end": 46.489
+        },
+        {
+          "text": "aggiorniamo",
+          "start": 46.529,
+          "end": 47.049
+        },
+        {
+          "text": "dopo",
+          "start": 47.229,
+          "end": 47.409
+        },
+        {
+          "text": "ciascun",
+          "start": 47.449,
+          "end": 47.749
+        },
+        {
+          "text": "blocco.",
+          "start": 47.789,
+          "end": 48.109
+        }
+      ]
+    },
+    {
+      "start": 48.649,
+      "end": 51.01,
+      "text": "Sfrutta la memoria e il parallelismo della GPU,",
+      "words": [
+        {
+          "text": "Sfrutta",
+          "start": 48.649,
+          "end": 48.969
+        },
+        {
+          "text": "la",
+          "start": 49.029,
+          "end": 49.069
+        },
+        {
+          "text": "memoria",
+          "start": 49.129,
+          "end": 49.529
+        },
+        {
+          "text": "e",
+          "start": 49.649,
+          "end": 49.689
+        },
+        {
+          "text": "il",
+          "start": 49.729,
+          "end": 49.789
+        },
+        {
+          "text": "parallelismo",
+          "start": 49.809,
+          "end": 50.409
+        },
+        {
+          "text": "della",
+          "start": 50.469,
+          "end": 50.649
+        },
+        {
+          "text": "GPU,",
+          "start": 50.689,
+          "end": 51.01
+        }
+      ]
+    },
+    {
+      "start": 51.57,
+      "end": 55.73,
+      "text": "ha un costo per passo indipendente dalla dimensione totale l del dataset,",
+      "words": [
+        {
+          "text": "ha",
+          "start": 51.57,
+          "end": 51.63
+        },
+        {
+          "text": "un",
+          "start": 51.71,
+          "end": 51.79
+        },
+        {
+          "text": "costo",
+          "start": 51.85,
+          "end": 52.19
+        },
+        {
+          "text": "per",
+          "start": 52.23,
+          "end": 52.35
+        },
+        {
+          "text": "passo",
+          "start": 52.41,
+          "end": 52.65
+        },
+        {
+          "text": "indipendente",
+          "start": 52.71,
+          "end": 53.33
+        },
+        {
+          "text": "dalla",
+          "start": 53.37,
+          "end": 53.57
+        },
+        {
+          "text": "dimensione",
+          "start": 53.59,
+          "end": 54.07
+        },
+        {
+          "text": "totale",
+          "start": 54.11,
+          "end": 54.51
+        },
+        {
+          "text": "l",
+          "start": 54.85,
+          "end": 54.89
+        },
+        {
+          "text": "del",
+          "start": 55.01,
+          "end": 55.13
+        },
+        {
+          "text": "dataset,",
+          "start": 55.19,
+          "end": 55.73
+        }
+      ]
+    },
+    {
+      "start": 56.23,
+      "end": 59.351,
+      "text": "e permette di scalare a milioni di esempi o dati in streaming.",
+      "words": [
+        {
+          "text": "e",
+          "start": 56.23,
+          "end": 56.27
+        },
+        {
+          "text": "permette",
+          "start": 56.31,
+          "end": 56.63
+        },
+        {
+          "text": "di",
+          "start": 56.67,
+          "end": 56.751
+        },
+        {
+          "text": "scalare",
+          "start": 56.791,
+          "end": 57.151
+        },
+        {
+          "text": "a",
+          "start": 57.211,
+          "end": 57.251
+        },
+        {
+          "text": "milioni",
+          "start": 57.311,
+          "end": 57.711
+        },
+        {
+          "text": "di",
+          "start": 57.771,
+          "end": 57.831
+        },
+        {
+          "text": "esempi",
+          "start": 57.871,
+          "end": 58.271
+        },
+        {
+          "text": "o",
+          "start": 58.431,
+          "end": 58.471
+        },
+        {
+          "text": "dati",
+          "start": 58.511,
+          "end": 58.771
+        },
+        {
+          "text": "in",
+          "start": 58.831,
+          "end": 58.911
+        },
+        {
+          "text": "streaming.",
+          "start": 58.931,
+          "end": 59.351
+        }
+      ]
+    }
+  ]
+}

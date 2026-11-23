@@ -1,753 +1,926 @@
 {
-  "duration": 47.064,
+  "duration": 62.249,
   "segments": [
     {
-      "start": 0.05,
-      "end": 5.4,
-      "text": "Perché la funzione a gradino blocca la discesa del gradiente Perché la sua derivata non",
+      "start": 0.08,
+      "end": 3.281,
+      "text": "Perché la funzione a gradino blocca la discesa del gradiente?",
       "words": [
         {
           "text": "Perché",
-          "start": 0.05,
-          "end": 0.438
+          "start": 0.08,
+          "end": 0.38
         },
         {
           "text": "la",
-          "start": 0.438,
-          "end": 0.55
+          "start": 0.46,
+          "end": 0.52
         },
         {
           "text": "funzione",
-          "start": 0.55,
-          "end": 1.087
+          "start": 0.56,
+          "end": 0.96
         },
         {
           "text": "a",
-          "start": 1.087,
-          "end": 1.15
+          "start": 0.98,
+          "end": 1.02
         },
         {
           "text": "gradino",
-          "start": 1.15,
-          "end": 1.662
+          "start": 1.06,
+          "end": 1.5
         },
         {
           "text": "blocca",
-          "start": 1.663,
-          "end": 2.188
+          "start": 1.62,
+          "end": 2.0
         },
         {
           "text": "la",
-          "start": 2.188,
-          "end": 2.3
+          "start": 2.06,
+          "end": 2.12
         },
         {
           "text": "discesa",
-          "start": 2.3,
-          "end": 2.787
+          "start": 2.14,
+          "end": 2.52
         },
         {
           "text": "del",
-          "start": 2.788,
-          "end": 2.925
+          "start": 2.56,
+          "end": 2.68
         },
         {
-          "text": "gradiente",
-          "start": 2.925,
-          "end": 3.625
-        },
+          "text": "gradiente?",
+          "start": 2.72,
+          "end": 3.281
+        }
+      ]
+    },
+    {
+      "start": 4.081,
+      "end": 7.941,
+      "text": "Perché la sua derivata non è definita in zero ed è nulla ovunque altrove.",
+      "words": [
         {
           "text": "Perché",
-          "start": 3.962,
-          "end": 4.35
+          "start": 4.081,
+          "end": 4.341
         },
         {
           "text": "la",
-          "start": 4.35,
-          "end": 4.475
+          "start": 4.421,
+          "end": 4.481
         },
         {
           "text": "sua",
-          "start": 4.475,
-          "end": 4.65
+          "start": 4.541,
+          "end": 4.681
         },
         {
           "text": "derivata",
-          "start": 4.65,
-          "end": 5.213
+          "start": 4.721,
+          "end": 5.181
         },
         {
           "text": "non",
-          "start": 5.213,
-          "end": 5.4
-        }
-      ]
-    },
-    {
-      "start": 5.4,
-      "end": 10.775,
-      "text": "è definita in zero ed è nulla ovunque altrove Le sigmoidi risolvono il problema con",
-      "words": [
+          "start": 5.261,
+          "end": 5.381
+        },
         {
           "text": "è",
-          "start": 5.4,
-          "end": 5.475
+          "start": 5.421,
+          "end": 5.461
         },
         {
           "text": "definita",
-          "start": 5.475,
-          "end": 5.962
+          "start": 5.501,
+          "end": 5.921
         },
         {
           "text": "in",
-          "start": 5.963,
-          "end": 6.088
+          "start": 5.961,
+          "end": 6.021
         },
         {
           "text": "zero",
-          "start": 6.088,
-          "end": 6.538
+          "start": 6.081,
+          "end": 6.381
         },
         {
           "text": "ed",
-          "start": 6.537,
-          "end": 6.7
+          "start": 6.581,
+          "end": 6.681
         },
         {
           "text": "è",
-          "start": 6.7,
-          "end": 6.737
+          "start": 6.721,
+          "end": 6.761
         },
         {
           "text": "nulla",
-          "start": 6.737,
-          "end": 7.138
+          "start": 6.861,
+          "end": 7.121
         },
         {
           "text": "ovunque",
-          "start": 7.138,
-          "end": 7.55
+          "start": 7.181,
+          "end": 7.501
         },
         {
-          "text": "altrove",
-          "start": 7.55,
-          "end": 8.1
-        },
+          "text": "altrove.",
+          "start": 7.541,
+          "end": 7.941
+        }
+      ]
+    },
+    {
+      "start": 8.741,
+      "end": 12.582,
+      "text": "Le sigmoidi risolvono il problema con una proprietà algebrica comodissima.",
+      "words": [
         {
           "text": "Le",
-          "start": 8.438,
-          "end": 8.688
+          "start": 8.741,
+          "end": 8.821
         },
         {
           "text": "sigmoidi",
-          "start": 8.688,
-          "end": 9.387
+          "start": 8.881,
+          "end": 9.401
         },
         {
           "text": "risolvono",
-          "start": 9.387,
-          "end": 9.95
+          "start": 9.461,
+          "end": 9.841
         },
         {
           "text": "il",
-          "start": 9.95,
-          "end": 10.012
+          "start": 9.881,
+          "end": 9.941
         },
         {
           "text": "problema",
-          "start": 10.012,
-          "end": 10.562
+          "start": 9.961,
+          "end": 10.302
         },
         {
           "text": "con",
-          "start": 10.562,
-          "end": 10.775
-        }
-      ]
-    },
-    {
-      "start": 10.775,
-      "end": 15.887,
-      "text": "una proprietà algebrica comodissima Derivando uno più e alla meno x elevato a meno uno",
-      "words": [
+          "start": 10.362,
+          "end": 10.482
+        },
         {
           "text": "una",
-          "start": 10.775,
-          "end": 10.95
+          "start": 10.502,
+          "end": 10.622
         },
         {
           "text": "proprietà",
-          "start": 10.95,
-          "end": 11.462
+          "start": 10.662,
+          "end": 11.062
         },
         {
           "text": "algebrica",
-          "start": 11.463,
-          "end": 12.113
+          "start": 11.162,
+          "end": 11.742
         },
         {
-          "text": "comodissima",
-          "start": 12.113,
-          "end": 12.913
+          "text": "comodissima.",
+          "start": 11.902,
+          "end": 12.582
+        }
+      ]
+    },
+    {
+      "start": 13.142,
+      "end": 17.123,
+      "text": "Scrivendo la logistica come uno più e elevato a meno x,",
+      "words": [
+        {
+          "text": "Scrivendo",
+          "start": 13.142,
+          "end": 13.542
         },
         {
-          "text": "Derivando",
-          "start": 13.25,
-          "end": 13.787
+          "text": "la",
+          "start": 13.602,
+          "end": 13.662
+        },
+        {
+          "text": "logistica",
+          "start": 13.702,
+          "end": 14.202
+        },
+        {
+          "text": "come",
+          "start": 14.262,
+          "end": 14.482
         },
         {
           "text": "uno",
-          "start": 13.787,
-          "end": 13.963
+          "start": 14.822,
+          "end": 15.142
         },
         {
           "text": "più",
-          "start": 13.963,
-          "end": 14.213
+          "start": 15.302,
+          "end": 15.482
         },
         {
           "text": "e",
-          "start": 14.213,
-          "end": 14.287
-        },
-        {
-          "text": "alla",
-          "start": 14.287,
-          "end": 14.45
-        },
-        {
-          "text": "meno",
-          "start": 14.45,
-          "end": 14.675
-        },
-        {
-          "text": "x",
-          "start": 14.675,
-          "end": 14.913
+          "start": 15.862,
+          "end": 15.902
         },
         {
           "text": "elevato",
-          "start": 14.912,
-          "end": 15.325
+          "start": 16.142,
+          "end": 16.542
         },
         {
           "text": "a",
-          "start": 15.325,
-          "end": 15.362
+          "start": 16.582,
+          "end": 16.622
         },
         {
           "text": "meno",
-          "start": 15.363,
-          "end": 15.6
+          "start": 16.663,
+          "end": 16.843
         },
         {
-          "text": "uno",
-          "start": 15.6,
-          "end": 15.887
+          "text": "x,",
+          "start": 17.083,
+          "end": 17.123
         }
       ]
     },
     {
-      "start": 15.887,
-      "end": 19.7,
-      "text": "con la regola della catena otteniamo e alla meno x diviso il quadrato di uno",
+      "start": 17.503,
+      "end": 20.723,
+      "text": "il tutto elevato a meno uno, e applicando la regola della catena,",
       "words": [
         {
-          "text": "con",
-          "start": 15.887,
-          "end": 16.012
+          "text": "il",
+          "start": 17.503,
+          "end": 17.603
+        },
+        {
+          "text": "tutto",
+          "start": 17.683,
+          "end": 17.963
+        },
+        {
+          "text": "elevato",
+          "start": 18.023,
+          "end": 18.383
+        },
+        {
+          "text": "a",
+          "start": 18.403,
+          "end": 18.443
+        },
+        {
+          "text": "meno",
+          "start": 18.483,
+          "end": 18.663
+        },
+        {
+          "text": "uno,",
+          "start": 18.783,
+          "end": 18.983
+        },
+        {
+          "text": "e",
+          "start": 19.183,
+          "end": 19.223
+        },
+        {
+          "text": "applicando",
+          "start": 19.263,
+          "end": 19.703
         },
         {
           "text": "la",
-          "start": 16.012,
-          "end": 16.1
+          "start": 19.743,
+          "end": 19.803
         },
         {
           "text": "regola",
-          "start": 16.1,
-          "end": 16.413
+          "start": 19.863,
+          "end": 20.123
         },
         {
           "text": "della",
-          "start": 16.413,
-          "end": 16.588
+          "start": 20.163,
+          "end": 20.323
         },
         {
-          "text": "catena",
-          "start": 16.587,
-          "end": 17.062
-        },
+          "text": "catena,",
+          "start": 20.343,
+          "end": 20.723
+        }
+      ]
+    },
+    {
+      "start": 21.183,
+      "end": 26.004,
+      "text": "otteniamo e alla meno x diviso il quadrato di uno più e alla meno x.",
+      "words": [
         {
           "text": "otteniamo",
-          "start": 17.375,
-          "end": 17.962
+          "start": 21.183,
+          "end": 21.943
         },
         {
           "text": "e",
-          "start": 17.962,
-          "end": 18.012
+          "start": 22.363,
+          "end": 22.403
         },
         {
           "text": "alla",
-          "start": 18.012,
-          "end": 18.162
+          "start": 22.483,
+          "end": 22.623
         },
         {
           "text": "meno",
-          "start": 18.163,
-          "end": 18.375
+          "start": 22.663,
+          "end": 22.843
         },
         {
           "text": "x",
-          "start": 18.375,
-          "end": 18.637
+          "start": 23.043,
+          "end": 23.083
         },
         {
           "text": "diviso",
-          "start": 18.637,
-          "end": 19.025
+          "start": 23.384,
+          "end": 23.704
         },
         {
           "text": "il",
-          "start": 19.025,
-          "end": 19.087
+          "start": 23.744,
+          "end": 23.804
         },
         {
           "text": "quadrato",
-          "start": 19.087,
-          "end": 19.475
+          "start": 23.844,
+          "end": 24.344
         },
         {
           "text": "di",
-          "start": 19.475,
-          "end": 19.562
+          "start": 24.424,
+          "end": 24.504
         },
         {
           "text": "uno",
-          "start": 19.562,
-          "end": 19.7
-        }
-      ]
-    },
-    {
-      "start": 19.7,
-      "end": 23.325,
-      "text": "più e alla meno x Spezzando la frazione in due fattori si scopre che f",
-      "words": [
+          "start": 24.644,
+          "end": 24.824
+        },
         {
           "text": "più",
-          "start": 19.7,
-          "end": 19.95
+          "start": 24.944,
+          "end": 25.064
         },
         {
           "text": "e",
-          "start": 19.95,
-          "end": 20.025
+          "start": 25.324,
+          "end": 25.364
         },
         {
           "text": "alla",
-          "start": 20.025,
-          "end": 20.188
+          "start": 25.424,
+          "end": 25.584
         },
         {
           "text": "meno",
-          "start": 20.188,
-          "end": 20.4
+          "start": 25.604,
+          "end": 25.784
         },
         {
-          "text": "x",
-          "start": 20.4,
-          "end": 20.787
-        },
+          "text": "x.",
+          "start": 25.964,
+          "end": 26.004
+        }
+      ]
+    },
+    {
+      "start": 26.804,
+      "end": 30.845,
+      "text": "Spezzando la frazione in due fattori, il primo è f sigma di x,",
+      "words": [
         {
           "text": "Spezzando",
-          "start": 20.788,
-          "end": 21.312
+          "start": 26.804,
+          "end": 27.284
         },
         {
           "text": "la",
-          "start": 21.312,
-          "end": 21.4
+          "start": 27.344,
+          "end": 27.384
         },
         {
           "text": "frazione",
-          "start": 21.4,
-          "end": 21.775
+          "start": 27.424,
+          "end": 27.804
         },
         {
           "text": "in",
-          "start": 21.775,
-          "end": 21.837
+          "start": 27.844,
+          "end": 27.884
         },
         {
           "text": "due",
-          "start": 21.837,
-          "end": 21.962
+          "start": 27.904,
+          "end": 28.024
         },
         {
-          "text": "fattori",
-          "start": 21.962,
-          "end": 22.425
+          "text": "fattori,",
+          "start": 28.064,
+          "end": 28.564
         },
         {
-          "text": "si",
-          "start": 22.425,
-          "end": 22.55
+          "text": "il",
+          "start": 29.044,
+          "end": 29.144
         },
-        {
-          "text": "scopre",
-          "start": 22.55,
-          "end": 22.9
-        },
-        {
-          "text": "che",
-          "start": 22.9,
-          "end": 23.037
-        },
-        {
-          "text": "f",
-          "start": 23.038,
-          "end": 23.325
-        }
-      ]
-    },
-    {
-      "start": 23.325,
-      "end": 27.838,
-      "text": "primo sigma di x vale esattamente f sigma di x per uno meno f sigma",
-      "words": [
         {
           "text": "primo",
-          "start": 23.325,
-          "end": 23.6
-        },
-        {
-          "text": "sigma",
-          "start": 23.6,
-          "end": 23.95
-        },
-        {
-          "text": "di",
-          "start": 23.95,
-          "end": 24.137
-        },
-        {
-          "text": "x",
-          "start": 24.137,
-          "end": 24.387
-        },
-        {
-          "text": "vale",
-          "start": 24.387,
-          "end": 24.775
-        },
-        {
-          "text": "esattamente",
-          "start": 24.775,
-          "end": 25.475
-        },
-        {
-          "text": "f",
-          "start": 25.475,
-          "end": 25.738
-        },
-        {
-          "text": "sigma",
-          "start": 25.738,
-          "end": 26.1
-        },
-        {
-          "text": "di",
-          "start": 26.1,
-          "end": 26.288
-        },
-        {
-          "text": "x",
-          "start": 26.288,
-          "end": 26.625
-        },
-        {
-          "text": "per",
-          "start": 26.625,
-          "end": 26.8
-        },
-        {
-          "text": "uno",
-          "start": 26.8,
-          "end": 26.963
-        },
-        {
-          "text": "meno",
-          "start": 26.962,
-          "end": 27.225
-        },
-        {
-          "text": "f",
-          "start": 27.225,
-          "end": 27.488
-        },
-        {
-          "text": "sigma",
-          "start": 27.488,
-          "end": 27.838
-        }
-      ]
-    },
-    {
-      "start": 27.837,
-      "end": 34.45,
-      "text": "di x Analogamente la derivata della tangente iperbolica è uno meno tangente iperbolica al quadrato",
-      "words": [
-        {
-          "text": "di",
-          "start": 27.837,
-          "end": 27.95
-        },
-        {
-          "text": "x",
-          "start": 27.95,
-          "end": 28.325
-        },
-        {
-          "text": "Analogamente",
-          "start": 28.663,
-          "end": 29.575
-        },
-        {
-          "text": "la",
-          "start": 29.825,
-          "end": 29.975
-        },
-        {
-          "text": "derivata",
-          "start": 29.975,
-          "end": 30.425
-        },
-        {
-          "text": "della",
-          "start": 30.425,
-          "end": 30.625
-        },
-        {
-          "text": "tangente",
-          "start": 30.625,
-          "end": 31.15
-        },
-        {
-          "text": "iperbolica",
-          "start": 31.15,
-          "end": 31.95
+          "start": 29.264,
+          "end": 29.624
         },
         {
           "text": "è",
-          "start": 31.95,
-          "end": 32.062
-        },
-        {
-          "text": "uno",
-          "start": 32.062,
-          "end": 32.275
-        },
-        {
-          "text": "meno",
-          "start": 32.275,
-          "end": 32.538
-        },
-        {
-          "text": "tangente",
-          "start": 32.538,
-          "end": 33.087
-        },
-        {
-          "text": "iperbolica",
-          "start": 33.087,
-          "end": 33.775
-        },
-        {
-          "text": "al",
-          "start": 33.775,
-          "end": 33.875
-        },
-        {
-          "text": "quadrato",
-          "start": 33.875,
-          "end": 34.45
-        }
-      ]
-    },
-    {
-      "start": 34.788,
-      "end": 41.362,
-      "text": "La derivata si calcola direttamente dall'uscita della funzione stessa Come mostra il grafico f primo",
-      "words": [
-        {
-          "text": "La",
-          "start": 34.788,
-          "end": 35.025
-        },
-        {
-          "text": "derivata",
-          "start": 35.025,
-          "end": 35.663
-        },
-        {
-          "text": "si",
-          "start": 35.663,
-          "end": 35.788
-        },
-        {
-          "text": "calcola",
-          "start": 35.788,
-          "end": 36.263
-        },
-        {
-          "text": "direttamente",
-          "start": 36.263,
-          "end": 37.0
-        },
-        {
-          "text": "dall'uscita",
-          "start": 37.0,
-          "end": 37.625
-        },
-        {
-          "text": "della",
-          "start": 37.625,
-          "end": 37.837
-        },
-        {
-          "text": "funzione",
-          "start": 37.837,
-          "end": 38.312
-        },
-        {
-          "text": "stessa",
-          "start": 38.312,
-          "end": 38.875
-        },
-        {
-          "text": "Come",
-          "start": 39.212,
-          "end": 39.475
-        },
-        {
-          "text": "mostra",
-          "start": 39.475,
-          "end": 39.812
-        },
-        {
-          "text": "il",
-          "start": 39.812,
-          "end": 39.888
-        },
-        {
-          "text": "grafico",
-          "start": 39.888,
-          "end": 40.45
+          "start": 29.844,
+          "end": 29.884
         },
         {
           "text": "f",
-          "start": 40.712,
-          "end": 41.05
+          "start": 30.145,
+          "end": 30.185
+        },
+        {
+          "text": "sigma",
+          "start": 30.305,
+          "end": 30.545
+        },
+        {
+          "text": "di",
+          "start": 30.605,
+          "end": 30.745
+        },
+        {
+          "text": "x,",
+          "start": 30.805,
+          "end": 30.845
+        }
+      ]
+    },
+    {
+      "start": 31.305,
+      "end": 33.905,
+      "text": "il secondo è uno meno f sigma di x.",
+      "words": [
+        {
+          "text": "il",
+          "start": 31.305,
+          "end": 31.405
+        },
+        {
+          "text": "secondo",
+          "start": 31.465,
+          "end": 31.905
+        },
+        {
+          "text": "è",
+          "start": 32.145,
+          "end": 32.185
+        },
+        {
+          "text": "uno",
+          "start": 32.345,
+          "end": 32.585
+        },
+        {
+          "text": "meno",
+          "start": 32.685,
+          "end": 32.965
+        },
+        {
+          "text": "f",
+          "start": 33.205,
+          "end": 33.245
+        },
+        {
+          "text": "sigma",
+          "start": 33.365,
+          "end": 33.605
+        },
+        {
+          "text": "di",
+          "start": 33.645,
+          "end": 33.805
+        },
+        {
+          "text": "x.",
+          "start": 33.865,
+          "end": 33.905
+        }
+      ]
+    },
+    {
+      "start": 34.665,
+      "end": 40.046,
+      "text": "Quindi f primo sigma di x vale esattamente f sigma di x per uno meno",
+      "words": [
+        {
+          "text": "Quindi",
+          "start": 34.665,
+          "end": 35.005
+        },
+        {
+          "text": "f",
+          "start": 35.545,
+          "end": 35.585
         },
         {
           "text": "primo",
-          "start": 41.05,
-          "end": 41.362
-        }
-      ]
-    },
-    {
-      "start": 41.362,
-      "end": 46.337,
-      "text": "raggiunge il massimo in zero dove vale zero virgola venticinque e tende a zero nelle",
-      "words": [
-        {
-          "text": "raggiunge",
-          "start": 41.362,
-          "end": 41.8
+          "start": 35.685,
+          "end": 35.905
         },
         {
-          "text": "il",
-          "start": 41.8,
-          "end": 41.862
+          "text": "sigma",
+          "start": 35.985,
+          "end": 36.225
         },
         {
-          "text": "massimo",
-          "start": 41.862,
-          "end": 42.287
+          "text": "di",
+          "start": 36.285,
+          "end": 36.345
         },
         {
-          "text": "in",
-          "start": 42.288,
-          "end": 42.388
-        },
-        {
-          "text": "zero",
-          "start": 42.388,
-          "end": 42.75
-        },
-        {
-          "text": "dove",
-          "start": 43.05,
-          "end": 43.287
+          "text": "x",
+          "start": 36.546,
+          "end": 36.586
         },
         {
           "text": "vale",
-          "start": 43.288,
-          "end": 43.575
+          "start": 36.906,
+          "end": 37.166
         },
         {
-          "text": "zero",
-          "start": 43.575,
-          "end": 43.888
+          "text": "esattamente",
+          "start": 37.246,
+          "end": 38.006
         },
         {
-          "text": "virgola",
-          "start": 43.888,
-          "end": 44.225
+          "text": "f",
+          "start": 38.346,
+          "end": 38.386
         },
         {
-          "text": "venticinque",
-          "start": 44.225,
-          "end": 44.938
+          "text": "sigma",
+          "start": 38.486,
+          "end": 38.746
         },
         {
-          "text": "e",
-          "start": 45.225,
-          "end": 45.35
+          "text": "di",
+          "start": 38.786,
+          "end": 38.946
         },
         {
-          "text": "tende",
-          "start": 45.35,
-          "end": 45.712
+          "text": "x",
+          "start": 39.026,
+          "end": 39.066
         },
         {
-          "text": "a",
-          "start": 45.712,
-          "end": 45.75
+          "text": "per",
+          "start": 39.366,
+          "end": 39.526
         },
         {
-          "text": "zero",
-          "start": 45.75,
-          "end": 46.112
+          "text": "uno",
+          "start": 39.626,
+          "end": 39.786
         },
         {
-          "text": "nelle",
-          "start": 46.112,
-          "end": 46.337
+          "text": "meno",
+          "start": 39.866,
+          "end": 40.046
         }
       ]
     },
     {
-      "start": 46.337,
-      "end": 46.725,
-      "text": "code",
+      "start": 40.266,
+      "end": 43.667,
+      "text": "f sigma di x, con un fattore a davanti per pendenza generica.",
       "words": [
         {
-          "text": "code",
-          "start": 46.337,
-          "end": 46.725
+          "text": "f",
+          "start": 40.266,
+          "end": 40.306
+        },
+        {
+          "text": "sigma",
+          "start": 40.406,
+          "end": 40.666
+        },
+        {
+          "text": "di",
+          "start": 40.706,
+          "end": 40.766
+        },
+        {
+          "text": "x,",
+          "start": 40.906,
+          "end": 40.946
+        },
+        {
+          "text": "con",
+          "start": 41.486,
+          "end": 41.606
+        },
+        {
+          "text": "un",
+          "start": 41.646,
+          "end": 41.726
+        },
+        {
+          "text": "fattore",
+          "start": 41.766,
+          "end": 42.066
+        },
+        {
+          "text": "a",
+          "start": 42.166,
+          "end": 42.206
+        },
+        {
+          "text": "davanti",
+          "start": 42.226,
+          "end": 42.626
+        },
+        {
+          "text": "per",
+          "start": 42.666,
+          "end": 42.766
+        },
+        {
+          "text": "pendenza",
+          "start": 42.806,
+          "end": 43.187
+        },
+        {
+          "text": "generica.",
+          "start": 43.247,
+          "end": 43.667
+        }
+      ]
+    },
+    {
+      "start": 44.567,
+      "end": 49.827,
+      "text": "Analogamente, la derivata della tangente iperbolica è uno meno tangente iperbolica al quadrato.",
+      "words": [
+        {
+          "text": "Analogamente,",
+          "start": 44.567,
+          "end": 45.207
+        },
+        {
+          "text": "la",
+          "start": 45.267,
+          "end": 45.327
+        },
+        {
+          "text": "derivata",
+          "start": 45.367,
+          "end": 45.747
+        },
+        {
+          "text": "della",
+          "start": 45.787,
+          "end": 45.947
+        },
+        {
+          "text": "tangente",
+          "start": 45.987,
+          "end": 46.347
+        },
+        {
+          "text": "iperbolica",
+          "start": 46.387,
+          "end": 47.047
+        },
+        {
+          "text": "è",
+          "start": 47.247,
+          "end": 47.287
+        },
+        {
+          "text": "uno",
+          "start": 47.487,
+          "end": 47.727
+        },
+        {
+          "text": "meno",
+          "start": 47.807,
+          "end": 48.087
+        },
+        {
+          "text": "tangente",
+          "start": 48.187,
+          "end": 48.687
+        },
+        {
+          "text": "iperbolica",
+          "start": 48.747,
+          "end": 49.267
+        },
+        {
+          "text": "al",
+          "start": 49.307,
+          "end": 49.347
+        },
+        {
+          "text": "quadrato.",
+          "start": 49.367,
+          "end": 49.827
+        }
+      ]
+    },
+    {
+      "start": 50.368,
+      "end": 53.428,
+      "text": "La derivata si calcola direttamente dall'uscita della funzione stessa.",
+      "words": [
+        {
+          "text": "La",
+          "start": 50.368,
+          "end": 50.428
+        },
+        {
+          "text": "derivata",
+          "start": 50.468,
+          "end": 50.848
+        },
+        {
+          "text": "si",
+          "start": 50.908,
+          "end": 50.968
+        },
+        {
+          "text": "calcola",
+          "start": 51.008,
+          "end": 51.368
+        },
+        {
+          "text": "direttamente",
+          "start": 51.448,
+          "end": 52.008
+        },
+        {
+          "text": "dall'uscita",
+          "start": 52.048,
+          "end": 52.488
+        },
+        {
+          "text": "della",
+          "start": 52.508,
+          "end": 52.648
+        },
+        {
+          "text": "funzione",
+          "start": 52.688,
+          "end": 53.008
+        },
+        {
+          "text": "stessa.",
+          "start": 53.048,
+          "end": 53.428
+        }
+      ]
+    },
+    {
+      "start": 54.228,
+      "end": 57.629,
+      "text": "Come mostra il grafico, f primo raggiunge il massimo in zero,",
+      "words": [
+        {
+          "text": "Come",
+          "start": 54.228,
+          "end": 54.408
+        },
+        {
+          "text": "mostra",
+          "start": 54.448,
+          "end": 54.708
+        },
+        {
+          "text": "il",
+          "start": 54.748,
+          "end": 54.808
+        },
+        {
+          "text": "grafico,",
+          "start": 54.828,
+          "end": 55.288
+        },
+        {
+          "text": "f",
+          "start": 55.548,
+          "end": 55.588
+        },
+        {
+          "text": "primo",
+          "start": 55.708,
+          "end": 55.988
+        },
+        {
+          "text": "raggiunge",
+          "start": 56.048,
+          "end": 56.468
+        },
+        {
+          "text": "il",
+          "start": 56.528,
+          "end": 56.588
+        },
+        {
+          "text": "massimo",
+          "start": 56.648,
+          "end": 57.089
+        },
+        {
+          "text": "in",
+          "start": 57.169,
+          "end": 57.229
+        },
+        {
+          "text": "zero,",
+          "start": 57.309,
+          "end": 57.629
+        }
+      ]
+    },
+    {
+      "start": 57.909,
+      "end": 61.589,
+      "text": "dove vale zero virgola venticinque, e tende a zero nelle code.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 57.909,
+          "end": 58.069
+        },
+        {
+          "text": "vale",
+          "start": 58.109,
+          "end": 58.329
+        },
+        {
+          "text": "zero",
+          "start": 58.489,
+          "end": 58.669
+        },
+        {
+          "text": "virgola",
+          "start": 58.709,
+          "end": 58.949
+        },
+        {
+          "text": "venticinque,",
+          "start": 58.989,
+          "end": 59.629
+        },
+        {
+          "text": "e",
+          "start": 60.069,
+          "end": 60.109
+        },
+        {
+          "text": "tende",
+          "start": 60.229,
+          "end": 60.509
+        },
+        {
+          "text": "a",
+          "start": 60.549,
+          "end": 60.589
+        },
+        {
+          "text": "zero",
+          "start": 60.669,
+          "end": 60.929
+        },
+        {
+          "text": "nelle",
+          "start": 61.069,
+          "end": 61.269
+        },
+        {
+          "text": "code.",
+          "start": 61.309,
+          "end": 61.589
         }
       ]
     }

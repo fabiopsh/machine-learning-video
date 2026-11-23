@@ -1,0 +1,924 @@
+{
+  "duration": 63.016,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.64,
+      "text": "Meglio early stopping o regolarizzazione?",
+      "words": [
+        {
+          "text": "Meglio",
+          "start": 0.08,
+          "end": 0.32
+        },
+        {
+          "text": "early",
+          "start": 0.52,
+          "end": 0.76
+        },
+        {
+          "text": "stopping",
+          "start": 0.82,
+          "end": 1.32
+        },
+        {
+          "text": "o",
+          "start": 1.44,
+          "end": 1.48
+        },
+        {
+          "text": "regolarizzazione?",
+          "start": 1.72,
+          "end": 2.64
+        }
+      ]
+    },
+    {
+      "start": 3.241,
+      "end": 7.101,
+      "text": "L'early stopping è empirico e sacrifica dati per il validation set;",
+      "words": [
+        {
+          "text": "L'early",
+          "start": 3.241,
+          "end": 3.541
+        },
+        {
+          "text": "stopping",
+          "start": 3.581,
+          "end": 4.061
+        },
+        {
+          "text": "è",
+          "start": 4.201,
+          "end": 4.241
+        },
+        {
+          "text": "empirico",
+          "start": 4.321,
+          "end": 4.901
+        },
+        {
+          "text": "e",
+          "start": 5.121,
+          "end": 5.1610000000000005
+        },
+        {
+          "text": "sacrifica",
+          "start": 5.221,
+          "end": 5.661
+        },
+        {
+          "text": "dati",
+          "start": 5.721,
+          "end": 5.961
+        },
+        {
+          "text": "per",
+          "start": 6.021,
+          "end": 6.121
+        },
+        {
+          "text": "il",
+          "start": 6.161,
+          "end": 6.221
+        },
+        {
+          "text": "validation",
+          "start": 6.261,
+          "end": 6.721
+        },
+        {
+          "text": "set;",
+          "start": 6.821,
+          "end": 7.101
+        }
+      ]
+    },
+    {
+      "start": 7.901,
+      "end": 11.662,
+      "text": "la regolarizzazione nella loss è fondata e, se lambda è ben scelto,",
+      "words": [
+        {
+          "text": "la",
+          "start": 7.901,
+          "end": 7.961
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 8.001,
+          "end": 8.721
+        },
+        {
+          "text": "nella",
+          "start": 8.761,
+          "end": 8.941
+        },
+        {
+          "text": "loss",
+          "start": 9.001,
+          "end": 9.222
+        },
+        {
+          "text": "è",
+          "start": 9.282,
+          "end": 9.322
+        },
+        {
+          "text": "fondata",
+          "start": 9.342,
+          "end": 9.862
+        },
+        {
+          "text": "e,",
+          "start": 10.162,
+          "end": 10.202
+        },
+        {
+          "text": "se",
+          "start": 10.382,
+          "end": 10.482
+        },
+        {
+          "text": "lambda",
+          "start": 10.562,
+          "end": 10.902
+        },
+        {
+          "text": "è",
+          "start": 10.962,
+          "end": 11.002
+        },
+        {
+          "text": "ben",
+          "start": 11.042,
+          "end": 11.182
+        },
+        {
+          "text": "scelto,",
+          "start": 11.242,
+          "end": 11.662
+        }
+      ]
+    },
+    {
+      "start": 11.962,
+      "end": 15.983,
+      "text": "fa seguire alla curva di validazione quella di training senza bisogno di fermarsi prima.",
+      "words": [
+        {
+          "text": "fa",
+          "start": 11.962,
+          "end": 12.042
+        },
+        {
+          "text": "seguire",
+          "start": 12.102,
+          "end": 12.382
+        },
+        {
+          "text": "alla",
+          "start": 12.402,
+          "end": 12.522
+        },
+        {
+          "text": "curva",
+          "start": 12.542,
+          "end": 12.762
+        },
+        {
+          "text": "di",
+          "start": 12.802,
+          "end": 12.862
+        },
+        {
+          "text": "validazione",
+          "start": 12.902,
+          "end": 13.502
+        },
+        {
+          "text": "quella",
+          "start": 13.562,
+          "end": 13.762
+        },
+        {
+          "text": "di",
+          "start": 13.782,
+          "end": 13.842
+        },
+        {
+          "text": "training",
+          "start": 13.902,
+          "end": 14.302
+        },
+        {
+          "text": "senza",
+          "start": 14.522,
+          "end": 14.802
+        },
+        {
+          "text": "bisogno",
+          "start": 14.842,
+          "end": 15.122
+        },
+        {
+          "text": "di",
+          "start": 15.163,
+          "end": 15.223
+        },
+        {
+          "text": "fermarsi",
+          "start": 15.283,
+          "end": 15.663
+        },
+        {
+          "text": "prima.",
+          "start": 15.703,
+          "end": 15.983
+        }
+      ]
+    },
+    {
+      "start": 16.703,
+      "end": 17.963,
+      "text": "Si possono comunque combinare.",
+      "words": [
+        {
+          "text": "Si",
+          "start": 16.703,
+          "end": 16.783
+        },
+        {
+          "text": "possono",
+          "start": 16.823,
+          "end": 17.123
+        },
+        {
+          "text": "comunque",
+          "start": 17.143,
+          "end": 17.423
+        },
+        {
+          "text": "combinare.",
+          "start": 17.483,
+          "end": 17.963
+        }
+      ]
+    },
+    {
+      "start": 18.723,
+      "end": 20.183,
+      "text": "Tre dettagli pratici importanti.",
+      "words": [
+        {
+          "text": "Tre",
+          "start": 18.723,
+          "end": 18.843
+        },
+        {
+          "text": "dettagli",
+          "start": 18.903,
+          "end": 19.223
+        },
+        {
+          "text": "pratici",
+          "start": 19.243,
+          "end": 19.583
+        },
+        {
+          "text": "importanti.",
+          "start": 19.623,
+          "end": 20.183
+        }
+      ]
+    },
+    {
+      "start": 20.783,
+      "end": 23.704,
+      "text": "Il bias w con zero va in genere escluso dalla penalità,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 20.783,
+          "end": 20.863
+        },
+        {
+          "text": "bias",
+          "start": 20.903,
+          "end": 21.203
+        },
+        {
+          "text": "w",
+          "start": 21.263,
+          "end": 21.303
+        },
+        {
+          "text": "con",
+          "start": 21.404,
+          "end": 21.524
+        },
+        {
+          "text": "zero",
+          "start": 21.584,
+          "end": 21.824
+        },
+        {
+          "text": "va",
+          "start": 21.864,
+          "end": 21.924
+        },
+        {
+          "text": "in",
+          "start": 21.984,
+          "end": 22.064
+        },
+        {
+          "text": "genere",
+          "start": 22.104,
+          "end": 22.384
+        },
+        {
+          "text": "escluso",
+          "start": 22.524,
+          "end": 23.024
+        },
+        {
+          "text": "dalla",
+          "start": 23.064,
+          "end": 23.264
+        },
+        {
+          "text": "penalità,",
+          "start": 23.304,
+          "end": 23.704
+        }
+      ]
+    },
+    {
+      "start": 24.044,
+      "end": 26.724,
+      "text": "altrimenti il modello dipende da traslazioni del target.",
+      "words": [
+        {
+          "text": "altrimenti",
+          "start": 24.044,
+          "end": 24.424
+        },
+        {
+          "text": "il",
+          "start": 24.444,
+          "end": 24.504
+        },
+        {
+          "text": "modello",
+          "start": 24.524,
+          "end": 24.804
+        },
+        {
+          "text": "dipende",
+          "start": 24.844,
+          "end": 25.184
+        },
+        {
+          "text": "da",
+          "start": 25.244,
+          "end": 25.324
+        },
+        {
+          "text": "traslazioni",
+          "start": 25.444,
+          "end": 26.064
+        },
+        {
+          "text": "del",
+          "start": 26.104,
+          "end": 26.224
+        },
+        {
+          "text": "target.",
+          "start": 26.284,
+          "end": 26.724
+        }
+      ]
+    },
+    {
+      "start": 27.505,
+      "end": 30.065,
+      "text": "Nel mini-batch la penalità scatta più volte per epoca,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 27.505,
+          "end": 27.625
+        },
+        {
+          "text": "mini-batch",
+          "start": 27.665,
+          "end": 28.085
+        },
+        {
+          "text": "la",
+          "start": 28.165,
+          "end": 28.225
+        },
+        {
+          "text": "penalità",
+          "start": 28.265,
+          "end": 28.625
+        },
+        {
+          "text": "scatta",
+          "start": 28.705,
+          "end": 29.005
+        },
+        {
+          "text": "più",
+          "start": 29.065,
+          "end": 29.185
+        },
+        {
+          "text": "volte",
+          "start": 29.265,
+          "end": 29.565
+        },
+        {
+          "text": "per",
+          "start": 29.605,
+          "end": 29.725
+        },
+        {
+          "text": "epoca,",
+          "start": 29.805,
+          "end": 30.065
+        }
+      ]
+    },
+    {
+      "start": 30.425,
+      "end": 34.466,
+      "text": "quindi per confrontarla col batch andrebbe scalata per m b diviso l.",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 30.425,
+          "end": 30.745
+        },
+        {
+          "text": "per",
+          "start": 30.805,
+          "end": 30.925
+        },
+        {
+          "text": "confrontarla",
+          "start": 30.985,
+          "end": 31.565
+        },
+        {
+          "text": "col",
+          "start": 31.585,
+          "end": 31.725
+        },
+        {
+          "text": "batch",
+          "start": 31.785,
+          "end": 32.045
+        },
+        {
+          "text": "andrebbe",
+          "start": 32.085,
+          "end": 32.405
+        },
+        {
+          "text": "scalata",
+          "start": 32.465,
+          "end": 32.945
+        },
+        {
+          "text": "per",
+          "start": 33.065,
+          "end": 33.245
+        },
+        {
+          "text": "m",
+          "start": 33.546,
+          "end": 33.586
+        },
+        {
+          "text": "b",
+          "start": 33.726,
+          "end": 33.766
+        },
+        {
+          "text": "diviso",
+          "start": 33.866,
+          "end": 34.166
+        },
+        {
+          "text": "l.",
+          "start": 34.426,
+          "end": 34.466
+        }
+      ]
+    },
+    {
+      "start": 35.186,
+      "end": 37.846,
+      "text": "Esiste inoltre il dropout, che vedremo nel deep learning.",
+      "words": [
+        {
+          "text": "Esiste",
+          "start": 35.186,
+          "end": 35.466
+        },
+        {
+          "text": "inoltre",
+          "start": 35.506,
+          "end": 35.826
+        },
+        {
+          "text": "il",
+          "start": 35.886,
+          "end": 35.946
+        },
+        {
+          "text": "dropout,",
+          "start": 35.966,
+          "end": 36.486
+        },
+        {
+          "text": "che",
+          "start": 36.606,
+          "end": 36.686
+        },
+        {
+          "text": "vedremo",
+          "start": 36.706,
+          "end": 37.006
+        },
+        {
+          "text": "nel",
+          "start": 37.066,
+          "end": 37.186
+        },
+        {
+          "text": "deep",
+          "start": 37.226,
+          "end": 37.366
+        },
+        {
+          "text": "learning.",
+          "start": 37.406,
+          "end": 37.846
+        }
+      ]
+    },
+    {
+      "start": 38.746,
+      "end": 40.907,
+      "text": "Come si combinano momentum e weight decay?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 38.746,
+          "end": 38.906
+        },
+        {
+          "text": "si",
+          "start": 38.966,
+          "end": 39.046
+        },
+        {
+          "text": "combinano",
+          "start": 39.086,
+          "end": 39.526
+        },
+        {
+          "text": "momentum",
+          "start": 39.666,
+          "end": 40.187
+        },
+        {
+          "text": "e",
+          "start": 40.227,
+          "end": 40.267
+        },
+        {
+          "text": "weight",
+          "start": 40.327,
+          "end": 40.527
+        },
+        {
+          "text": "decay?",
+          "start": 40.527,
+          "end": 40.907
+        }
+      ]
+    },
+    {
+      "start": 41.507,
+      "end": 46.128,
+      "text": "Prima cosa: non moltiplicare lambda per eta, così cambiando il learning rate non si altera",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 41.507,
+          "end": 41.747
+        },
+        {
+          "text": "cosa:",
+          "start": 41.807,
+          "end": 42.107
+        },
+        {
+          "text": "non",
+          "start": 42.427,
+          "end": 42.587
+        },
+        {
+          "text": "moltiplicare",
+          "start": 42.607,
+          "end": 43.167
+        },
+        {
+          "text": "lambda",
+          "start": 43.207,
+          "end": 43.447
+        },
+        {
+          "text": "per",
+          "start": 43.487,
+          "end": 43.607
+        },
+        {
+          "text": "eta,",
+          "start": 43.647,
+          "end": 43.847
+        },
+        {
+          "text": "così",
+          "start": 44.167,
+          "end": 44.347
+        },
+        {
+          "text": "cambiando",
+          "start": 44.387,
+          "end": 44.707
+        },
+        {
+          "text": "il",
+          "start": 44.767,
+          "end": 44.807
+        },
+        {
+          "text": "learning",
+          "start": 44.827,
+          "end": 45.127
+        },
+        {
+          "text": "rate",
+          "start": 45.167,
+          "end": 45.447
+        },
+        {
+          "text": "non",
+          "start": 45.527,
+          "end": 45.667
+        },
+        {
+          "text": "si",
+          "start": 45.727,
+          "end": 45.787
+        },
+        {
+          "text": "altera",
+          "start": 45.868,
+          "end": 46.128
+        }
+      ]
+    },
+    {
+      "start": 46.208,
+      "end": 47.208,
+      "text": "la regolarizzazione.",
+      "words": [
+        {
+          "text": "la",
+          "start": 46.208,
+          "end": 46.248
+        },
+        {
+          "text": "regolarizzazione.",
+          "start": 46.308,
+          "end": 47.208
+        }
+      ]
+    },
+    {
+      "start": 47.908,
+      "end": 52.109,
+      "text": "Ancora meglio, per rendere indipendenti tutti e tre gli iperparametri eta,",
+      "words": [
+        {
+          "text": "Ancora",
+          "start": 47.908,
+          "end": 48.228
+        },
+        {
+          "text": "meglio,",
+          "start": 48.288,
+          "end": 48.648
+        },
+        {
+          "text": "per",
+          "start": 48.788,
+          "end": 48.888
+        },
+        {
+          "text": "rendere",
+          "start": 48.948,
+          "end": 49.208
+        },
+        {
+          "text": "indipendenti",
+          "start": 49.248,
+          "end": 49.848
+        },
+        {
+          "text": "tutti",
+          "start": 49.948,
+          "end": 50.228
+        },
+        {
+          "text": "e",
+          "start": 50.268,
+          "end": 50.308
+        },
+        {
+          "text": "tre",
+          "start": 50.348,
+          "end": 50.468
+        },
+        {
+          "text": "gli",
+          "start": 50.528,
+          "end": 50.668
+        },
+        {
+          "text": "iperparametri",
+          "start": 50.728,
+          "end": 51.468
+        },
+        {
+          "text": "eta,",
+          "start": 51.868,
+          "end": 52.109
+        }
+      ]
+    },
+    {
+      "start": 52.309,
+      "end": 57.649,
+      "text": "alfa e lambda, si calcola il passo con momentum solo sul gradiente dell'errore e si",
+      "words": [
+        {
+          "text": "alfa",
+          "start": 52.309,
+          "end": 52.589
+        },
+        {
+          "text": "e",
+          "start": 52.729,
+          "end": 52.769
+        },
+        {
+          "text": "lambda,",
+          "start": 52.809,
+          "end": 53.169
+        },
+        {
+          "text": "si",
+          "start": 53.729,
+          "end": 53.789
+        },
+        {
+          "text": "calcola",
+          "start": 53.849,
+          "end": 54.209
+        },
+        {
+          "text": "il",
+          "start": 54.249,
+          "end": 54.309
+        },
+        {
+          "text": "passo",
+          "start": 54.349,
+          "end": 54.629
+        },
+        {
+          "text": "con",
+          "start": 54.689,
+          "end": 54.809
+        },
+        {
+          "text": "momentum",
+          "start": 54.869,
+          "end": 55.389
+        },
+        {
+          "text": "solo",
+          "start": 55.569,
+          "end": 55.889
+        },
+        {
+          "text": "sul",
+          "start": 55.969,
+          "end": 56.129
+        },
+        {
+          "text": "gradiente",
+          "start": 56.169,
+          "end": 56.609
+        },
+        {
+          "text": "dell'errore",
+          "start": 56.649,
+          "end": 57.269
+        },
+        {
+          "text": "e",
+          "start": 57.429,
+          "end": 57.469
+        },
+        {
+          "text": "si",
+          "start": 57.549,
+          "end": 57.649
+        }
+      ]
+    },
+    {
+      "start": 57.729,
+      "end": 62.05,
+      "text": "sottrae lambda w con t u direttamente nell'aggiornamento finale dei pesi.",
+      "words": [
+        {
+          "text": "sottrae",
+          "start": 57.729,
+          "end": 58.21
+        },
+        {
+          "text": "lambda",
+          "start": 58.37,
+          "end": 58.75
+        },
+        {
+          "text": "w",
+          "start": 58.87,
+          "end": 58.91
+        },
+        {
+          "text": "con",
+          "start": 59.03,
+          "end": 59.17
+        },
+        {
+          "text": "t",
+          "start": 59.25,
+          "end": 59.29
+        },
+        {
+          "text": "u",
+          "start": 59.47,
+          "end": 59.51
+        },
+        {
+          "text": "direttamente",
+          "start": 59.89,
+          "end": 60.55
+        },
+        {
+          "text": "nell'aggiornamento",
+          "start": 60.59,
+          "end": 61.27
+        },
+        {
+          "text": "finale",
+          "start": 61.31,
+          "end": 61.59
+        },
+        {
+          "text": "dei",
+          "start": 61.63,
+          "end": 61.73
+        },
+        {
+          "text": "pesi.",
+          "start": 61.77,
+          "end": 62.05
+        }
+      ]
+    }
+  ]
+}

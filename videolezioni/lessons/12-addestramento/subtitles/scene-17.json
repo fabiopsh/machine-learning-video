@@ -1,0 +1,971 @@
+{
+  "duration": 66.895,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.261,
+      "text": "Verificare se una propria implementazione di backpropagation è corretta è sorprendentemente difficile:",
+      "words": [
+        {
+          "text": "Verificare",
+          "start": 0.08,
+          "end": 0.62
+        },
+        {
+          "text": "se",
+          "start": 0.68,
+          "end": 0.76
+        },
+        {
+          "text": "una",
+          "start": 0.82,
+          "end": 0.92
+        },
+        {
+          "text": "propria",
+          "start": 0.98,
+          "end": 1.24
+        },
+        {
+          "text": "implementazione",
+          "start": 1.26,
+          "end": 1.98
+        },
+        {
+          "text": "di",
+          "start": 2.02,
+          "end": 2.1
+        },
+        {
+          "text": "backpropagation",
+          "start": 2.2,
+          "end": 3.041
+        },
+        {
+          "text": "è",
+          "start": 3.101,
+          "end": 3.141
+        },
+        {
+          "text": "corretta",
+          "start": 3.201,
+          "end": 3.661
+        },
+        {
+          "text": "è",
+          "start": 3.721,
+          "end": 3.761
+        },
+        {
+          "text": "sorprendentemente",
+          "start": 3.821,
+          "end": 4.681
+        },
+        {
+          "text": "difficile:",
+          "start": 4.741,
+          "end": 5.261
+        }
+      ]
+    },
+    {
+      "start": 5.821,
+      "end": 8.701,
+      "text": "una rete con piccoli bug spesso impara comunque qualcosa,",
+      "words": [
+        {
+          "text": "una",
+          "start": 5.821,
+          "end": 5.941
+        },
+        {
+          "text": "rete",
+          "start": 5.981,
+          "end": 6.181
+        },
+        {
+          "text": "con",
+          "start": 6.261,
+          "end": 6.381
+        },
+        {
+          "text": "piccoli",
+          "start": 6.441,
+          "end": 6.781
+        },
+        {
+          "text": "bug",
+          "start": 6.821,
+          "end": 7.021
+        },
+        {
+          "text": "spesso",
+          "start": 7.141,
+          "end": 7.441
+        },
+        {
+          "text": "impara",
+          "start": 7.481,
+          "end": 7.741
+        },
+        {
+          "text": "comunque",
+          "start": 7.801,
+          "end": 8.141
+        },
+        {
+          "text": "qualcosa,",
+          "start": 8.181,
+          "end": 8.701
+        }
+      ]
+    },
+    {
+      "start": 8.821,
+      "end": 9.462,
+      "text": "anche se male.",
+      "words": [
+        {
+          "text": "anche",
+          "start": 8.821,
+          "end": 9.002
+        },
+        {
+          "text": "se",
+          "start": 9.042,
+          "end": 9.122
+        },
+        {
+          "text": "male.",
+          "start": 9.222,
+          "end": 9.462
+        }
+      ]
+    },
+    {
+      "start": 10.122,
+      "end": 12.762,
+      "text": "Il primo banco di prova classico è il benchmark MONK:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 10.122,
+          "end": 10.202
+        },
+        {
+          "text": "primo",
+          "start": 10.242,
+          "end": 10.482
+        },
+        {
+          "text": "banco",
+          "start": 10.542,
+          "end": 10.782
+        },
+        {
+          "text": "di",
+          "start": 10.822,
+          "end": 10.882
+        },
+        {
+          "text": "prova",
+          "start": 10.922,
+          "end": 11.122
+        },
+        {
+          "text": "classico",
+          "start": 11.162,
+          "end": 11.622
+        },
+        {
+          "text": "è",
+          "start": 11.722,
+          "end": 11.762
+        },
+        {
+          "text": "il",
+          "start": 11.802,
+          "end": 11.882
+        },
+        {
+          "text": "benchmark",
+          "start": 11.922,
+          "end": 12.362
+        },
+        {
+          "text": "MONK:",
+          "start": 12.462,
+          "end": 12.762
+        }
+      ]
+    },
+    {
+      "start": 13.242,
+      "end": 18.443,
+      "text": "tre task di classificazione binaria artificiali e veloci, con sei variabili categoriche da due,",
+      "words": [
+        {
+          "text": "tre",
+          "start": 13.242,
+          "end": 13.362
+        },
+        {
+          "text": "task",
+          "start": 13.462,
+          "end": 13.702
+        },
+        {
+          "text": "di",
+          "start": 13.782,
+          "end": 13.842
+        },
+        {
+          "text": "classificazione",
+          "start": 13.862,
+          "end": 14.602
+        },
+        {
+          "text": "binaria",
+          "start": 14.642,
+          "end": 14.942
+        },
+        {
+          "text": "artificiali",
+          "start": 14.982,
+          "end": 15.603
+        },
+        {
+          "text": "e",
+          "start": 15.723,
+          "end": 15.763
+        },
+        {
+          "text": "veloci,",
+          "start": 15.823,
+          "end": 16.243
+        },
+        {
+          "text": "con",
+          "start": 16.623,
+          "end": 16.743
+        },
+        {
+          "text": "sei",
+          "start": 16.803,
+          "end": 16.943
+        },
+        {
+          "text": "variabili",
+          "start": 16.983,
+          "end": 17.403
+        },
+        {
+          "text": "categoriche",
+          "start": 17.443,
+          "end": 18.003
+        },
+        {
+          "text": "da",
+          "start": 18.063,
+          "end": 18.123
+        },
+        {
+          "text": "due,",
+          "start": 18.223,
+          "end": 18.443
+        }
+      ]
+    },
+    {
+      "start": 18.583,
+      "end": 24.424,
+      "text": "tre o quattro valori ciascuna, che in codifica one-hot diventano esattamente diciassette unità di input.",
+      "words": [
+        {
+          "text": "tre",
+          "start": 18.583,
+          "end": 18.723
+        },
+        {
+          "text": "o",
+          "start": 19.023,
+          "end": 19.063
+        },
+        {
+          "text": "quattro",
+          "start": 19.123,
+          "end": 19.403
+        },
+        {
+          "text": "valori",
+          "start": 19.443,
+          "end": 19.703
+        },
+        {
+          "text": "ciascuna,",
+          "start": 19.743,
+          "end": 20.203
+        },
+        {
+          "text": "che",
+          "start": 20.703,
+          "end": 20.763
+        },
+        {
+          "text": "in",
+          "start": 20.803,
+          "end": 20.863
+        },
+        {
+          "text": "codifica",
+          "start": 20.883,
+          "end": 21.304
+        },
+        {
+          "text": "one-hot",
+          "start": 21.504,
+          "end": 21.824
+        },
+        {
+          "text": "diventano",
+          "start": 22.024,
+          "end": 22.424
+        },
+        {
+          "text": "esattamente",
+          "start": 22.464,
+          "end": 23.024
+        },
+        {
+          "text": "diciassette",
+          "start": 23.084,
+          "end": 23.624
+        },
+        {
+          "text": "unità",
+          "start": 23.664,
+          "end": 23.884
+        },
+        {
+          "text": "di",
+          "start": 23.944,
+          "end": 24.004
+        },
+        {
+          "text": "input.",
+          "start": 24.084,
+          "end": 24.424
+        }
+      ]
+    },
+    {
+      "start": 25.364,
+      "end": 28.105,
+      "text": "I primi due task raggiungono il cento per cento facilmente;",
+      "words": [
+        {
+          "text": "I",
+          "start": 25.364,
+          "end": 25.404
+        },
+        {
+          "text": "primi",
+          "start": 25.444,
+          "end": 25.664
+        },
+        {
+          "text": "due",
+          "start": 25.704,
+          "end": 25.804
+        },
+        {
+          "text": "task",
+          "start": 25.824,
+          "end": 26.104
+        },
+        {
+          "text": "raggiungono",
+          "start": 26.264,
+          "end": 26.684
+        },
+        {
+          "text": "il",
+          "start": 26.724,
+          "end": 26.784
+        },
+        {
+          "text": "cento",
+          "start": 26.804,
+          "end": 27.044
+        },
+        {
+          "text": "per",
+          "start": 27.084,
+          "end": 27.164
+        },
+        {
+          "text": "cento",
+          "start": 27.224,
+          "end": 27.445
+        },
+        {
+          "text": "facilmente;",
+          "start": 27.485,
+          "end": 28.105
+        }
+      ]
+    },
+    {
+      "start": 28.645,
+      "end": 32.145,
+      "text": "MONK tre contiene etichette rumorose e mette alla prova l'overfitting.",
+      "words": [
+        {
+          "text": "MONK",
+          "start": 28.645,
+          "end": 28.845
+        },
+        {
+          "text": "tre",
+          "start": 28.925,
+          "end": 29.045
+        },
+        {
+          "text": "contiene",
+          "start": 29.225,
+          "end": 29.645
+        },
+        {
+          "text": "etichette",
+          "start": 29.685,
+          "end": 30.045
+        },
+        {
+          "text": "rumorose",
+          "start": 30.085,
+          "end": 30.565
+        },
+        {
+          "text": "e",
+          "start": 30.685,
+          "end": 30.725
+        },
+        {
+          "text": "mette",
+          "start": 30.765,
+          "end": 30.945
+        },
+        {
+          "text": "alla",
+          "start": 30.985,
+          "end": 31.105
+        },
+        {
+          "text": "prova",
+          "start": 31.145,
+          "end": 31.365
+        },
+        {
+          "text": "l'overfitting.",
+          "start": 31.445,
+          "end": 32.145
+        }
+      ]
+    },
+    {
+      "start": 33.125,
+      "end": 35.086,
+      "text": "Cinque consigli pratici per le prime prove:",
+      "words": [
+        {
+          "text": "Cinque",
+          "start": 33.125,
+          "end": 33.425
+        },
+        {
+          "text": "consigli",
+          "start": 33.465,
+          "end": 33.806
+        },
+        {
+          "text": "pratici",
+          "start": 33.846,
+          "end": 34.246
+        },
+        {
+          "text": "per",
+          "start": 34.326,
+          "end": 34.426
+        },
+        {
+          "text": "le",
+          "start": 34.466,
+          "end": 34.526
+        },
+        {
+          "text": "prime",
+          "start": 34.566,
+          "end": 34.766
+        },
+        {
+          "text": "prove:",
+          "start": 34.806,
+          "end": 35.086
+        }
+      ]
+    },
+    {
+      "start": 35.926,
+      "end": 37.866,
+      "text": "una sola uscita coerente con i target,",
+      "words": [
+        {
+          "text": "una",
+          "start": 35.926,
+          "end": 36.066
+        },
+        {
+          "text": "sola",
+          "start": 36.126,
+          "end": 36.306
+        },
+        {
+          "text": "uscita",
+          "start": 36.346,
+          "end": 36.666
+        },
+        {
+          "text": "coerente",
+          "start": 36.786,
+          "end": 37.206
+        },
+        {
+          "text": "con",
+          "start": 37.246,
+          "end": 37.366
+        },
+        {
+          "text": "i",
+          "start": 37.406,
+          "end": 37.446
+        },
+        {
+          "text": "target,",
+          "start": 37.466,
+          "end": 37.866
+        }
+      ]
+    },
+    {
+      "start": 38.426,
+      "end": 40.667,
+      "text": "non dimenticare mai la codifica one-hot,",
+      "words": [
+        {
+          "text": "non",
+          "start": 38.426,
+          "end": 38.566
+        },
+        {
+          "text": "dimenticare",
+          "start": 38.606,
+          "end": 39.166
+        },
+        {
+          "text": "mai",
+          "start": 39.266,
+          "end": 39.526
+        },
+        {
+          "text": "la",
+          "start": 39.687,
+          "end": 39.747
+        },
+        {
+          "text": "codifica",
+          "start": 39.807,
+          "end": 40.207
+        },
+        {
+          "text": "one-hot,",
+          "start": 40.347,
+          "end": 40.667
+        }
+      ]
+    },
+    {
+      "start": 41.407,
+      "end": 43.007,
+      "text": "usare batch con gradiente medio,",
+      "words": [
+        {
+          "text": "usare",
+          "start": 41.407,
+          "end": 41.687
+        },
+        {
+          "text": "batch",
+          "start": 41.747,
+          "end": 41.967
+        },
+        {
+          "text": "con",
+          "start": 42.067,
+          "end": 42.187
+        },
+        {
+          "text": "gradiente",
+          "start": 42.227,
+          "end": 42.667
+        },
+        {
+          "text": "medio,",
+          "start": 42.707,
+          "end": 43.007
+        }
+      ]
+    },
+    {
+      "start": 43.647,
+      "end": 46.588,
+      "text": "partire da due a cinque unità nascoste con pesi piccoli,",
+      "words": [
+        {
+          "text": "partire",
+          "start": 43.647,
+          "end": 44.027
+        },
+        {
+          "text": "da",
+          "start": 44.107,
+          "end": 44.167
+        },
+        {
+          "text": "due",
+          "start": 44.287,
+          "end": 44.467
+        },
+        {
+          "text": "a",
+          "start": 44.507,
+          "end": 44.547
+        },
+        {
+          "text": "cinque",
+          "start": 44.587,
+          "end": 44.847
+        },
+        {
+          "text": "unità",
+          "start": 44.907,
+          "end": 45.127
+        },
+        {
+          "text": "nascoste",
+          "start": 45.187,
+          "end": 45.667
+        },
+        {
+          "text": "con",
+          "start": 45.727,
+          "end": 45.848
+        },
+        {
+          "text": "pesi",
+          "start": 45.908,
+          "end": 46.128
+        },
+        {
+          "text": "piccoli,",
+          "start": 46.168,
+          "end": 46.588
+        }
+      ]
+    },
+    {
+      "start": 47.088,
+      "end": 51.348,
+      "text": "e attivare lo shuffling nell'online perché gli esempi sono ordinati per classe.",
+      "words": [
+        {
+          "text": "e",
+          "start": 47.088,
+          "end": 47.128
+        },
+        {
+          "text": "attivare",
+          "start": 47.168,
+          "end": 47.588
+        },
+        {
+          "text": "lo",
+          "start": 47.648,
+          "end": 47.708
+        },
+        {
+          "text": "shuffling",
+          "start": 47.768,
+          "end": 48.228
+        },
+        {
+          "text": "nell'online",
+          "start": 48.308,
+          "end": 48.988
+        },
+        {
+          "text": "perché",
+          "start": 49.308,
+          "end": 49.508
+        },
+        {
+          "text": "gli",
+          "start": 49.528,
+          "end": 49.628
+        },
+        {
+          "text": "esempi",
+          "start": 49.648,
+          "end": 49.988
+        },
+        {
+          "text": "sono",
+          "start": 50.128,
+          "end": 50.308
+        },
+        {
+          "text": "ordinati",
+          "start": 50.348,
+          "end": 50.748
+        },
+        {
+          "text": "per",
+          "start": 50.788,
+          "end": 50.908
+        },
+        {
+          "text": "classe.",
+          "start": 50.948,
+          "end": 51.348
+        }
+      ]
+    },
+    {
+      "start": 52.409,
+      "end": 56.069,
+      "text": "Ricorda: buoni risultati su MONK non garantiscono l'assenza di bug,",
+      "words": [
+        {
+          "text": "Ricorda:",
+          "start": 52.409,
+          "end": 52.809
+        },
+        {
+          "text": "buoni",
+          "start": 53.269,
+          "end": 53.469
+        },
+        {
+          "text": "risultati",
+          "start": 53.529,
+          "end": 53.969
+        },
+        {
+          "text": "su",
+          "start": 54.029,
+          "end": 54.109
+        },
+        {
+          "text": "MONK",
+          "start": 54.189,
+          "end": 54.409
+        },
+        {
+          "text": "non",
+          "start": 54.529,
+          "end": 54.629
+        },
+        {
+          "text": "garantiscono",
+          "start": 54.669,
+          "end": 55.269
+        },
+        {
+          "text": "l'assenza",
+          "start": 55.309,
+          "end": 55.709
+        },
+        {
+          "text": "di",
+          "start": 55.749,
+          "end": 55.809
+        },
+        {
+          "text": "bug,",
+          "start": 55.849,
+          "end": 56.069
+        }
+      ]
+    },
+    {
+      "start": 56.549,
+      "end": 59.99,
+      "text": "ma risultati cattivi segnalano sicuramente un errore nel codice.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 56.549,
+          "end": 56.609
+        },
+        {
+          "text": "risultati",
+          "start": 56.669,
+          "end": 57.109
+        },
+        {
+          "text": "cattivi",
+          "start": 57.169,
+          "end": 57.609
+        },
+        {
+          "text": "segnalano",
+          "start": 57.729,
+          "end": 58.21
+        },
+        {
+          "text": "sicuramente",
+          "start": 58.33,
+          "end": 58.95
+        },
+        {
+          "text": "un",
+          "start": 58.99,
+          "end": 59.05
+        },
+        {
+          "text": "errore",
+          "start": 59.09,
+          "end": 59.35
+        },
+        {
+          "text": "nel",
+          "start": 59.41,
+          "end": 59.53
+        },
+        {
+          "text": "codice.",
+          "start": 59.59,
+          "end": 59.99
+        }
+      ]
+    },
+    {
+      "start": 60.85,
+      "end": 64.831,
+      "text": "Controlla la forma liscia delle curve e confronta i numeri su un esempio svolto o",
+      "words": [
+        {
+          "text": "Controlla",
+          "start": 60.85,
+          "end": 61.29
+        },
+        {
+          "text": "la",
+          "start": 61.35,
+          "end": 61.39
+        },
+        {
+          "text": "forma",
+          "start": 61.43,
+          "end": 61.65
+        },
+        {
+          "text": "liscia",
+          "start": 61.69,
+          "end": 61.93
+        },
+        {
+          "text": "delle",
+          "start": 61.99,
+          "end": 62.15
+        },
+        {
+          "text": "curve",
+          "start": 62.19,
+          "end": 62.51
+        },
+        {
+          "text": "e",
+          "start": 62.69,
+          "end": 62.73
+        },
+        {
+          "text": "confronta",
+          "start": 62.81,
+          "end": 63.23
+        },
+        {
+          "text": "i",
+          "start": 63.29,
+          "end": 63.33
+        },
+        {
+          "text": "numeri",
+          "start": 63.33,
+          "end": 63.63
+        },
+        {
+          "text": "su",
+          "start": 63.69,
+          "end": 63.75
+        },
+        {
+          "text": "un",
+          "start": 63.79,
+          "end": 63.85
+        },
+        {
+          "text": "esempio",
+          "start": 63.87,
+          "end": 64.211
+        },
+        {
+          "text": "svolto",
+          "start": 64.251,
+          "end": 64.651
+        },
+        {
+          "text": "o",
+          "start": 64.791,
+          "end": 64.831
+        }
+      ]
+    },
+    {
+      "start": 64.891,
+      "end": 66.191,
+      "text": "con una libreria affidabile.",
+      "words": [
+        {
+          "text": "con",
+          "start": 64.891,
+          "end": 65.031
+        },
+        {
+          "text": "una",
+          "start": 65.091,
+          "end": 65.191
+        },
+        {
+          "text": "libreria",
+          "start": 65.251,
+          "end": 65.611
+        },
+        {
+          "text": "affidabile.",
+          "start": 65.651,
+          "end": 66.191
+        }
+      ]
+    }
+  ]
+}

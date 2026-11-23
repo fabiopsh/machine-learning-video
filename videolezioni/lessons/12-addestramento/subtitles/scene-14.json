@@ -1,0 +1,984 @@
+{
+  "duration": 63.433,
+  "segments": [
+    {
+      "start": 0.374,
+      "end": 4.355,
+      "text": "Il modo in cui codifichiamo input e output ha un impatto enorme sulle prestazioni.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.374,
+          "end": 0.454
+        },
+        {
+          "text": "modo",
+          "start": 0.494,
+          "end": 0.694
+        },
+        {
+          "text": "in",
+          "start": 0.734,
+          "end": 0.794
+        },
+        {
+          "text": "cui",
+          "start": 0.814,
+          "end": 0.954
+        },
+        {
+          "text": "codifichiamo",
+          "start": 0.974,
+          "end": 1.514
+        },
+        {
+          "text": "input",
+          "start": 1.574,
+          "end": 1.874
+        },
+        {
+          "text": "e",
+          "start": 1.934,
+          "end": 1.974
+        },
+        {
+          "text": "output",
+          "start": 2.034,
+          "end": 2.394
+        },
+        {
+          "text": "ha",
+          "start": 2.454,
+          "end": 2.494
+        },
+        {
+          "text": "un",
+          "start": 2.554,
+          "end": 2.614
+        },
+        {
+          "text": "impatto",
+          "start": 2.654,
+          "end": 3.054
+        },
+        {
+          "text": "enorme",
+          "start": 3.114,
+          "end": 3.495
+        },
+        {
+          "text": "sulle",
+          "start": 3.555,
+          "end": 3.715
+        },
+        {
+          "text": "prestazioni.",
+          "start": 3.735,
+          "end": 4.355
+        }
+      ]
+    },
+    {
+      "start": 5.075,
+      "end": 9.556,
+      "text": "Sugli input sono fondamentali la standardizzazione a media zero e deviazione standard uno,",
+      "words": [
+        {
+          "text": "Sugli",
+          "start": 5.075,
+          "end": 5.255
+        },
+        {
+          "text": "input",
+          "start": 5.295,
+          "end": 5.575
+        },
+        {
+          "text": "sono",
+          "start": 5.695,
+          "end": 5.855
+        },
+        {
+          "text": "fondamentali",
+          "start": 5.895,
+          "end": 6.495
+        },
+        {
+          "text": "la",
+          "start": 6.555,
+          "end": 6.615
+        },
+        {
+          "text": "standardizzazione",
+          "start": 6.655,
+          "end": 7.475
+        },
+        {
+          "text": "a",
+          "start": 7.495,
+          "end": 7.535
+        },
+        {
+          "text": "media",
+          "start": 7.595,
+          "end": 7.855
+        },
+        {
+          "text": "zero",
+          "start": 7.955,
+          "end": 8.215
+        },
+        {
+          "text": "e",
+          "start": 8.375,
+          "end": 8.415
+        },
+        {
+          "text": "deviazione",
+          "start": 8.455,
+          "end": 8.915
+        },
+        {
+          "text": "standard",
+          "start": 8.955,
+          "end": 9.335
+        },
+        {
+          "text": "uno,",
+          "start": 9.415,
+          "end": 9.556
+        }
+      ]
+    },
+    {
+      "start": 9.956,
+      "end": 14.136,
+      "text": "il rescaling tra zero e uno, e la codifica one-hot uno su K per le",
+      "words": [
+        {
+          "text": "il",
+          "start": 9.956,
+          "end": 10.036
+        },
+        {
+          "text": "rescaling",
+          "start": 10.136,
+          "end": 10.696
+        },
+        {
+          "text": "tra",
+          "start": 10.796,
+          "end": 10.876
+        },
+        {
+          "text": "zero",
+          "start": 10.976,
+          "end": 11.156
+        },
+        {
+          "text": "e",
+          "start": 11.216,
+          "end": 11.256
+        },
+        {
+          "text": "uno,",
+          "start": 11.316,
+          "end": 11.456
+        },
+        {
+          "text": "e",
+          "start": 11.816,
+          "end": 11.856
+        },
+        {
+          "text": "la",
+          "start": 11.896,
+          "end": 11.956
+        },
+        {
+          "text": "codifica",
+          "start": 11.996,
+          "end": 12.376
+        },
+        {
+          "text": "one-hot",
+          "start": 12.516,
+          "end": 12.916
+        },
+        {
+          "text": "uno",
+          "start": 13.096,
+          "end": 13.236
+        },
+        {
+          "text": "su",
+          "start": 13.296,
+          "end": 13.376
+        },
+        {
+          "text": "K",
+          "start": 13.456,
+          "end": 13.496
+        },
+        {
+          "text": "per",
+          "start": 13.916,
+          "end": 14.036
+        },
+        {
+          "text": "le",
+          "start": 14.056,
+          "end": 14.136
+        }
+      ]
+    },
+    {
+      "start": 14.156,
+      "end": 15.176,
+      "text": "variabili categoriche.",
+      "words": [
+        {
+          "text": "variabili",
+          "start": 14.156,
+          "end": 14.556
+        },
+        {
+          "text": "categoriche.",
+          "start": 14.596,
+          "end": 15.176
+        }
+      ]
+    },
+    {
+      "start": 15.756,
+      "end": 21.157,
+      "text": "Attenzione ai dati mancanti: inserire zero non significa nessun ingresso se lo zero fa parte",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 15.756,
+          "end": 16.177
+        },
+        {
+          "text": "ai",
+          "start": 16.217,
+          "end": 16.297
+        },
+        {
+          "text": "dati",
+          "start": 16.317,
+          "end": 16.477
+        },
+        {
+          "text": "mancanti:",
+          "start": 16.517,
+          "end": 16.997
+        },
+        {
+          "text": "inserire",
+          "start": 17.317,
+          "end": 17.737
+        },
+        {
+          "text": "zero",
+          "start": 17.897,
+          "end": 18.197
+        },
+        {
+          "text": "non",
+          "start": 18.557,
+          "end": 18.697
+        },
+        {
+          "text": "significa",
+          "start": 18.757,
+          "end": 19.297
+        },
+        {
+          "text": "nessun",
+          "start": 19.357,
+          "end": 19.617
+        },
+        {
+          "text": "ingresso",
+          "start": 19.637,
+          "end": 20.077
+        },
+        {
+          "text": "se",
+          "start": 20.317,
+          "end": 20.397
+        },
+        {
+          "text": "lo",
+          "start": 20.437,
+          "end": 20.517
+        },
+        {
+          "text": "zero",
+          "start": 20.557,
+          "end": 20.717
+        },
+        {
+          "text": "fa",
+          "start": 20.777,
+          "end": 20.837
+        },
+        {
+          "text": "parte",
+          "start": 20.917,
+          "end": 21.157
+        }
+      ]
+    },
+    {
+      "start": 21.197,
+      "end": 22.258,
+      "text": "del dominio dei valori.",
+      "words": [
+        {
+          "text": "del",
+          "start": 21.197,
+          "end": 21.317
+        },
+        {
+          "text": "dominio",
+          "start": 21.377,
+          "end": 21.737
+        },
+        {
+          "text": "dei",
+          "start": 21.777,
+          "end": 21.877
+        },
+        {
+          "text": "valori.",
+          "start": 21.917,
+          "end": 22.258
+        }
+      ]
+    },
+    {
+      "start": 23.158,
+      "end": 26.118,
+      "text": "Sulle uscite: per la regressione servono sempre unità lineari.",
+      "words": [
+        {
+          "text": "Sulle",
+          "start": 23.158,
+          "end": 23.338
+        },
+        {
+          "text": "uscite:",
+          "start": 23.358,
+          "end": 23.698
+        },
+        {
+          "text": "per",
+          "start": 23.978,
+          "end": 24.078
+        },
+        {
+          "text": "la",
+          "start": 24.118,
+          "end": 24.158
+        },
+        {
+          "text": "regressione",
+          "start": 24.198,
+          "end": 24.658
+        },
+        {
+          "text": "servono",
+          "start": 24.758,
+          "end": 25.058
+        },
+        {
+          "text": "sempre",
+          "start": 25.138,
+          "end": 25.398
+        },
+        {
+          "text": "unità",
+          "start": 25.438,
+          "end": 25.638
+        },
+        {
+          "text": "lineari.",
+          "start": 25.698,
+          "end": 26.118
+        }
+      ]
+    },
+    {
+      "start": 26.578,
+      "end": 30.179,
+      "text": "Per la classificazione si usa un'uscita binaria o one-hot multi-classe,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 26.578,
+          "end": 26.678
+        },
+        {
+          "text": "la",
+          "start": 26.718,
+          "end": 26.778
+        },
+        {
+          "text": "classificazione",
+          "start": 26.818,
+          "end": 27.598
+        },
+        {
+          "text": "si",
+          "start": 27.718,
+          "end": 27.778
+        },
+        {
+          "text": "usa",
+          "start": 27.818,
+          "end": 27.958
+        },
+        {
+          "text": "un'uscita",
+          "start": 27.998,
+          "end": 28.378
+        },
+        {
+          "text": "binaria",
+          "start": 28.438,
+          "end": 28.839
+        },
+        {
+          "text": "o",
+          "start": 28.999,
+          "end": 29.039
+        },
+        {
+          "text": "one-hot",
+          "start": 29.159,
+          "end": 29.459
+        },
+        {
+          "text": "multi-classe,",
+          "start": 29.559,
+          "end": 30.179
+        }
+      ]
+    },
+    {
+      "start": 30.439,
+      "end": 32.999,
+      "text": "spesso con tangente iperbolica che converge più in fretta,",
+      "words": [
+        {
+          "text": "spesso",
+          "start": 30.439,
+          "end": 30.699
+        },
+        {
+          "text": "con",
+          "start": 30.759,
+          "end": 30.879
+        },
+        {
+          "text": "tangente",
+          "start": 30.919,
+          "end": 31.279
+        },
+        {
+          "text": "iperbolica",
+          "start": 31.339,
+          "end": 31.859
+        },
+        {
+          "text": "che",
+          "start": 31.899,
+          "end": 31.979
+        },
+        {
+          "text": "converge",
+          "start": 32.019,
+          "end": 32.399
+        },
+        {
+          "text": "più",
+          "start": 32.419,
+          "end": 32.499
+        },
+        {
+          "text": "in",
+          "start": 32.559,
+          "end": 32.599
+        },
+        {
+          "text": "fretta,",
+          "start": 32.639,
+          "end": 32.999
+        }
+      ]
+    },
+    {
+      "start": 33.359,
+      "end": 37.74,
+      "text": "usando target come zero virgola nove o meno zero virgola nove per evitare la saturazione",
+      "words": [
+        {
+          "text": "usando",
+          "start": 33.359,
+          "end": 33.619
+        },
+        {
+          "text": "target",
+          "start": 33.679,
+          "end": 33.999
+        },
+        {
+          "text": "come",
+          "start": 34.059,
+          "end": 34.239
+        },
+        {
+          "text": "zero",
+          "start": 34.419,
+          "end": 34.579
+        },
+        {
+          "text": "virgola",
+          "start": 34.619,
+          "end": 34.92
+        },
+        {
+          "text": "nove",
+          "start": 34.96,
+          "end": 35.18
+        },
+        {
+          "text": "o",
+          "start": 35.32,
+          "end": 35.36
+        },
+        {
+          "text": "meno",
+          "start": 35.52,
+          "end": 35.72
+        },
+        {
+          "text": "zero",
+          "start": 35.8,
+          "end": 35.96
+        },
+        {
+          "text": "virgola",
+          "start": 36.0,
+          "end": 36.28
+        },
+        {
+          "text": "nove",
+          "start": 36.32,
+          "end": 36.5
+        },
+        {
+          "text": "per",
+          "start": 36.56,
+          "end": 36.66
+        },
+        {
+          "text": "evitare",
+          "start": 36.72,
+          "end": 37.02
+        },
+        {
+          "text": "la",
+          "start": 37.08,
+          "end": 37.14
+        },
+        {
+          "text": "saturazione",
+          "start": 37.18,
+          "end": 37.74
+        }
+      ]
+    },
+    {
+      "start": 37.84,
+      "end": 38.5,
+      "text": "asintotica.",
+      "words": [
+        {
+          "text": "asintotica.",
+          "start": 37.84,
+          "end": 38.5
+        }
+      ]
+    },
+    {
+      "start": 39.4,
+      "end": 42.241,
+      "text": "Per target multi-classe zero uno si usa spesso la Softmax:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 39.4,
+          "end": 39.5
+        },
+        {
+          "text": "target",
+          "start": 39.54,
+          "end": 39.84
+        },
+        {
+          "text": "multi-classe",
+          "start": 39.9,
+          "end": 40.48
+        },
+        {
+          "text": "zero",
+          "start": 40.58,
+          "end": 40.74
+        },
+        {
+          "text": "uno",
+          "start": 40.82,
+          "end": 40.96
+        },
+        {
+          "text": "si",
+          "start": 41.08,
+          "end": 41.14
+        },
+        {
+          "text": "usa",
+          "start": 41.2,
+          "end": 41.3
+        },
+        {
+          "text": "spesso",
+          "start": 41.34,
+          "end": 41.601
+        },
+        {
+          "text": "la",
+          "start": 41.661,
+          "end": 41.721
+        },
+        {
+          "text": "Softmax:",
+          "start": 41.781,
+          "end": 42.241
+        }
+      ]
+    },
+    {
+      "start": 43.201,
+      "end": 46.381,
+      "text": "o con k è uguale a e elevato a net con k,",
+      "words": [
+        {
+          "text": "o",
+          "start": 43.201,
+          "end": 43.241
+        },
+        {
+          "text": "con",
+          "start": 43.381,
+          "end": 43.541
+        },
+        {
+          "text": "k",
+          "start": 43.601,
+          "end": 43.641
+        },
+        {
+          "text": "è",
+          "start": 44.261,
+          "end": 44.301
+        },
+        {
+          "text": "uguale",
+          "start": 44.341,
+          "end": 44.621
+        },
+        {
+          "text": "a",
+          "start": 44.781,
+          "end": 44.821
+        },
+        {
+          "text": "e",
+          "start": 45.061,
+          "end": 45.101
+        },
+        {
+          "text": "elevato",
+          "start": 45.321,
+          "end": 45.701
+        },
+        {
+          "text": "a",
+          "start": 45.721,
+          "end": 45.761
+        },
+        {
+          "text": "net",
+          "start": 45.821,
+          "end": 46.041
+        },
+        {
+          "text": "con",
+          "start": 46.141,
+          "end": 46.281
+        },
+        {
+          "text": "k,",
+          "start": 46.341,
+          "end": 46.381
+        }
+      ]
+    },
+    {
+      "start": 46.981,
+      "end": 49.642,
+      "text": "diviso la somma su j di e elevato a net con j.",
+      "words": [
+        {
+          "text": "diviso",
+          "start": 46.981,
+          "end": 47.281
+        },
+        {
+          "text": "la",
+          "start": 47.341,
+          "end": 47.401
+        },
+        {
+          "text": "somma",
+          "start": 47.461,
+          "end": 47.702
+        },
+        {
+          "text": "su",
+          "start": 47.802,
+          "end": 47.882
+        },
+        {
+          "text": "j",
+          "start": 47.982,
+          "end": 48.022
+        },
+        {
+          "text": "di",
+          "start": 48.282,
+          "end": 48.362
+        },
+        {
+          "text": "e",
+          "start": 48.542,
+          "end": 48.582
+        },
+        {
+          "text": "elevato",
+          "start": 48.742,
+          "end": 49.102
+        },
+        {
+          "text": "a",
+          "start": 49.122,
+          "end": 49.162
+        },
+        {
+          "text": "net",
+          "start": 49.222,
+          "end": 49.362
+        },
+        {
+          "text": "con",
+          "start": 49.422,
+          "end": 49.542
+        },
+        {
+          "text": "j.",
+          "start": 49.602,
+          "end": 49.642
+        }
+      ]
+    },
+    {
+      "start": 50.462,
+      "end": 53.822,
+      "text": "Le uscite sommano a uno e si leggono come probabilità di classe.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 50.462,
+          "end": 50.542
+        },
+        {
+          "text": "uscite",
+          "start": 50.582,
+          "end": 50.902
+        },
+        {
+          "text": "sommano",
+          "start": 51.042,
+          "end": 51.382
+        },
+        {
+          "text": "a",
+          "start": 51.422,
+          "end": 51.462
+        },
+        {
+          "text": "uno",
+          "start": 51.562,
+          "end": 51.742
+        },
+        {
+          "text": "e",
+          "start": 51.902,
+          "end": 51.942
+        },
+        {
+          "text": "si",
+          "start": 52.002,
+          "end": 52.082
+        },
+        {
+          "text": "leggono",
+          "start": 52.142,
+          "end": 52.422
+        },
+        {
+          "text": "come",
+          "start": 52.482,
+          "end": 52.642
+        },
+        {
+          "text": "probabilità",
+          "start": 52.742,
+          "end": 53.282
+        },
+        {
+          "text": "di",
+          "start": 53.342,
+          "end": 53.402
+        },
+        {
+          "text": "classe.",
+          "start": 53.422,
+          "end": 53.822
+        }
+      ]
+    },
+    {
+      "start": 54.622,
+      "end": 59.722,
+      "text": "In alternativa all'errore quadratico, per la classificazione si usa la loss di cross-entropy,",
+      "words": [
+        {
+          "text": "In",
+          "start": 54.622,
+          "end": 54.682
+        },
+        {
+          "text": "alternativa",
+          "start": 54.722,
+          "end": 55.382
+        },
+        {
+          "text": "all'errore",
+          "start": 55.422,
+          "end": 55.882
+        },
+        {
+          "text": "quadratico,",
+          "start": 55.922,
+          "end": 56.502
+        },
+        {
+          "text": "per",
+          "start": 56.702,
+          "end": 56.822
+        },
+        {
+          "text": "la",
+          "start": 56.862,
+          "end": 56.922
+        },
+        {
+          "text": "classificazione",
+          "start": 56.982,
+          "end": 57.782
+        },
+        {
+          "text": "si",
+          "start": 57.862,
+          "end": 57.942
+        },
+        {
+          "text": "usa",
+          "start": 58.022,
+          "end": 58.202
+        },
+        {
+          "text": "la",
+          "start": 58.302,
+          "end": 58.362
+        },
+        {
+          "text": "loss",
+          "start": 58.522,
+          "end": 58.762
+        },
+        {
+          "text": "di",
+          "start": 58.842,
+          "end": 58.922
+        },
+        {
+          "text": "cross-entropy,",
+          "start": 58.982,
+          "end": 59.722
+        }
+      ]
+    },
+    {
+      "start": 60.122,
+      "end": 63.183,
+      "text": "corrispondente alla stima di massima verosimiglianza.",
+      "words": [
+        {
+          "text": "corrispondente",
+          "start": 60.122,
+          "end": 60.823
+        },
+        {
+          "text": "alla",
+          "start": 60.883,
+          "end": 61.063
+        },
+        {
+          "text": "stima",
+          "start": 61.163,
+          "end": 61.503
+        },
+        {
+          "text": "di",
+          "start": 61.583,
+          "end": 61.663
+        },
+        {
+          "text": "massima",
+          "start": 61.703,
+          "end": 62.143
+        },
+        {
+          "text": "verosimiglianza.",
+          "start": 62.283,
+          "end": 63.183
+        }
+      ]
+    }
+  ]
+}

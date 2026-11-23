@@ -1,0 +1,1224 @@
+{
+  "duration": 70.924,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.461,
+      "text": "Deriviamo ora il gradiente per un peso generico w con t u,",
+      "words": [
+        {
+          "text": "Deriviamo",
+          "start": 0.08,
+          "end": 0.56
+        },
+        {
+          "text": "ora",
+          "start": 0.66,
+          "end": 0.82
+        },
+        {
+          "text": "il",
+          "start": 0.86,
+          "end": 0.92
+        },
+        {
+          "text": "gradiente",
+          "start": 0.96,
+          "end": 1.48
+        },
+        {
+          "text": "per",
+          "start": 1.54,
+          "end": 1.64
+        },
+        {
+          "text": "un",
+          "start": 1.68,
+          "end": 1.74
+        },
+        {
+          "text": "peso",
+          "start": 1.78,
+          "end": 2.0
+        },
+        {
+          "text": "generico",
+          "start": 2.04,
+          "end": 2.56
+        },
+        {
+          "text": "w",
+          "start": 2.84,
+          "end": 2.88
+        },
+        {
+          "text": "con",
+          "start": 3.0,
+          "end": 3.161
+        },
+        {
+          "text": "t",
+          "start": 3.241,
+          "end": 3.281
+        },
+        {
+          "text": "u,",
+          "start": 3.421,
+          "end": 3.461
+        }
+      ]
+    },
+    {
+      "start": 3.961,
+      "end": 5.061,
+      "text": "che porta all'unità t",
+      "words": [
+        {
+          "text": "che",
+          "start": 3.961,
+          "end": 4.041
+        },
+        {
+          "text": "porta",
+          "start": 4.121,
+          "end": 4.381
+        },
+        {
+          "text": "all'unità",
+          "start": 4.441,
+          "end": 4.841
+        },
+        {
+          "text": "t",
+          "start": 5.021,
+          "end": 5.061
+        }
+      ]
+    },
+    {
+      "start": 5.621,
+      "end": 7.441,
+      "text": "l'ingresso proveniente dall'unità u.",
+      "words": [
+        {
+          "text": "l'ingresso",
+          "start": 5.621,
+          "end": 6.081
+        },
+        {
+          "text": "proveniente",
+          "start": 6.121,
+          "end": 6.641
+        },
+        {
+          "text": "dall'unità",
+          "start": 6.701,
+          "end": 7.161
+        },
+        {
+          "text": "u.",
+          "start": 7.401,
+          "end": 7.441
+        }
+      ]
+    },
+    {
+      "start": 8.261,
+      "end": 10.842,
+      "text": "Vogliamo calcolare delta p di w con t u,",
+      "words": [
+        {
+          "text": "Vogliamo",
+          "start": 8.261,
+          "end": 8.561
+        },
+        {
+          "text": "calcolare",
+          "start": 8.621,
+          "end": 9.221
+        },
+        {
+          "text": "delta",
+          "start": 9.421,
+          "end": 9.762
+        },
+        {
+          "text": "p",
+          "start": 9.842,
+          "end": 9.882
+        },
+        {
+          "text": "di",
+          "start": 10.122,
+          "end": 10.202
+        },
+        {
+          "text": "w",
+          "start": 10.282,
+          "end": 10.322
+        },
+        {
+          "text": "con",
+          "start": 10.422,
+          "end": 10.582
+        },
+        {
+          "text": "t",
+          "start": 10.622,
+          "end": 10.662
+        },
+        {
+          "text": "u,",
+          "start": 10.802,
+          "end": 10.842
+        }
+      ]
+    },
+    {
+      "start": 11.302,
+      "end": 15.562,
+      "text": "cioè meno la derivata parziale di E con p rispetto a w con t u.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 11.302,
+          "end": 11.502
+        },
+        {
+          "text": "meno",
+          "start": 12.042,
+          "end": 12.262
+        },
+        {
+          "text": "la",
+          "start": 12.322,
+          "end": 12.382
+        },
+        {
+          "text": "derivata",
+          "start": 12.422,
+          "end": 12.842
+        },
+        {
+          "text": "parziale",
+          "start": 12.882,
+          "end": 13.362
+        },
+        {
+          "text": "di",
+          "start": 13.402,
+          "end": 13.462
+        },
+        {
+          "text": "E",
+          "start": 13.642,
+          "end": 13.682
+        },
+        {
+          "text": "con",
+          "start": 13.762,
+          "end": 13.922
+        },
+        {
+          "text": "p",
+          "start": 14.002,
+          "end": 14.042
+        },
+        {
+          "text": "rispetto",
+          "start": 14.422,
+          "end": 14.842
+        },
+        {
+          "text": "a",
+          "start": 14.882,
+          "end": 14.922
+        },
+        {
+          "text": "w",
+          "start": 14.982,
+          "end": 15.022
+        },
+        {
+          "text": "con",
+          "start": 15.142,
+          "end": 15.282
+        },
+        {
+          "text": "t",
+          "start": 15.342,
+          "end": 15.382
+        },
+        {
+          "text": "u.",
+          "start": 15.522,
+          "end": 15.562
+        }
+      ]
+    },
+    {
+      "start": 16.403,
+      "end": 20.423,
+      "text": "Applichiamo la regola della catena passando per l'input netto net con t.",
+      "words": [
+        {
+          "text": "Applichiamo",
+          "start": 16.403,
+          "end": 16.843
+        },
+        {
+          "text": "la",
+          "start": 16.903,
+          "end": 16.963
+        },
+        {
+          "text": "regola",
+          "start": 17.003,
+          "end": 17.263
+        },
+        {
+          "text": "della",
+          "start": 17.303,
+          "end": 17.483
+        },
+        {
+          "text": "catena",
+          "start": 17.523,
+          "end": 17.923
+        },
+        {
+          "text": "passando",
+          "start": 18.063,
+          "end": 18.483
+        },
+        {
+          "text": "per",
+          "start": 18.523,
+          "end": 18.643
+        },
+        {
+          "text": "l'input",
+          "start": 18.683,
+          "end": 19.043
+        },
+        {
+          "text": "netto",
+          "start": 19.163,
+          "end": 19.523
+        },
+        {
+          "text": "net",
+          "start": 19.843,
+          "end": 20.043
+        },
+        {
+          "text": "con",
+          "start": 20.143,
+          "end": 20.303
+        },
+        {
+          "text": "t.",
+          "start": 20.383,
+          "end": 20.423
+        }
+      ]
+    },
+    {
+      "start": 21.083,
+      "end": 22.203,
+      "text": "Otteniamo due fattori.",
+      "words": [
+        {
+          "text": "Otteniamo",
+          "start": 21.083,
+          "end": 21.483
+        },
+        {
+          "text": "due",
+          "start": 21.543,
+          "end": 21.683
+        },
+        {
+          "text": "fattori.",
+          "start": 21.743,
+          "end": 22.203
+        }
+      ]
+    },
+    {
+      "start": 22.824,
+      "end": 26.504,
+      "text": "Il primo fattore è meno la derivata di E con p rispetto a net con",
+      "words": [
+        {
+          "text": "Il",
+          "start": 22.824,
+          "end": 22.904
+        },
+        {
+          "text": "primo",
+          "start": 22.924,
+          "end": 23.144
+        },
+        {
+          "text": "fattore",
+          "start": 23.184,
+          "end": 23.604
+        },
+        {
+          "text": "è",
+          "start": 23.764,
+          "end": 23.804
+        },
+        {
+          "text": "meno",
+          "start": 24.044,
+          "end": 24.244
+        },
+        {
+          "text": "la",
+          "start": 24.304,
+          "end": 24.364
+        },
+        {
+          "text": "derivata",
+          "start": 24.404,
+          "end": 24.804
+        },
+        {
+          "text": "di",
+          "start": 24.864,
+          "end": 24.924
+        },
+        {
+          "text": "E",
+          "start": 24.964,
+          "end": 25.004
+        },
+        {
+          "text": "con",
+          "start": 25.044,
+          "end": 25.204
+        },
+        {
+          "text": "p",
+          "start": 25.284,
+          "end": 25.324
+        },
+        {
+          "text": "rispetto",
+          "start": 25.624,
+          "end": 26.044
+        },
+        {
+          "text": "a",
+          "start": 26.064,
+          "end": 26.104
+        },
+        {
+          "text": "net",
+          "start": 26.144,
+          "end": 26.284
+        },
+        {
+          "text": "con",
+          "start": 26.364,
+          "end": 26.504
+        }
+      ]
+    },
+    {
+      "start": 26.584,
+      "end": 28.484,
+      "text": "t, che chiamiamo delta con t:",
+      "words": [
+        {
+          "text": "t,",
+          "start": 26.584,
+          "end": 26.624
+        },
+        {
+          "text": "che",
+          "start": 27.124,
+          "end": 27.204
+        },
+        {
+          "text": "chiamiamo",
+          "start": 27.244,
+          "end": 27.624
+        },
+        {
+          "text": "delta",
+          "start": 27.864,
+          "end": 28.184
+        },
+        {
+          "text": "con",
+          "start": 28.224,
+          "end": 28.384
+        },
+        {
+          "text": "t:",
+          "start": 28.444,
+          "end": 28.484
+        }
+      ]
+    },
+    {
+      "start": 29.105,
+      "end": 30.765,
+      "text": "è il segnale di errore dell'unità t.",
+      "words": [
+        {
+          "text": "è",
+          "start": 29.105,
+          "end": 29.145
+        },
+        {
+          "text": "il",
+          "start": 29.185,
+          "end": 29.245
+        },
+        {
+          "text": "segnale",
+          "start": 29.285,
+          "end": 29.625
+        },
+        {
+          "text": "di",
+          "start": 29.665,
+          "end": 29.705
+        },
+        {
+          "text": "errore",
+          "start": 29.745,
+          "end": 30.065
+        },
+        {
+          "text": "dell'unità",
+          "start": 30.125,
+          "end": 30.565
+        },
+        {
+          "text": "t.",
+          "start": 30.725,
+          "end": 30.765
+        }
+      ]
+    },
+    {
+      "start": 31.665,
+      "end": 35.245,
+      "text": "Il secondo fattore è la derivata di net con t rispetto a w con t",
+      "words": [
+        {
+          "text": "Il",
+          "start": 31.665,
+          "end": 31.745
+        },
+        {
+          "text": "secondo",
+          "start": 31.785,
+          "end": 32.065
+        },
+        {
+          "text": "fattore",
+          "start": 32.085,
+          "end": 32.485
+        },
+        {
+          "text": "è",
+          "start": 32.645,
+          "end": 32.685
+        },
+        {
+          "text": "la",
+          "start": 32.805,
+          "end": 32.865
+        },
+        {
+          "text": "derivata",
+          "start": 32.905,
+          "end": 33.365
+        },
+        {
+          "text": "di",
+          "start": 33.425,
+          "end": 33.485
+        },
+        {
+          "text": "net",
+          "start": 33.525,
+          "end": 33.685
+        },
+        {
+          "text": "con",
+          "start": 33.745,
+          "end": 33.885
+        },
+        {
+          "text": "t",
+          "start": 33.945,
+          "end": 33.985
+        },
+        {
+          "text": "rispetto",
+          "start": 34.225,
+          "end": 34.625
+        },
+        {
+          "text": "a",
+          "start": 34.665,
+          "end": 34.705
+        },
+        {
+          "text": "w",
+          "start": 34.805,
+          "end": 34.845
+        },
+        {
+          "text": "con",
+          "start": 34.985,
+          "end": 35.145
+        },
+        {
+          "text": "t",
+          "start": 35.205,
+          "end": 35.245
+        }
+      ]
+    },
+    {
+      "start": 35.385,
+      "end": 35.425,
+      "text": "u.",
+      "words": [
+        {
+          "text": "u.",
+          "start": 35.385,
+          "end": 35.425
+        }
+      ]
+    },
+    {
+      "start": 36.206,
+      "end": 40.266,
+      "text": "Poiché net con t è la somma su s di w con t s per",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 36.206,
+          "end": 36.486
+        },
+        {
+          "text": "net",
+          "start": 36.686,
+          "end": 36.866
+        },
+        {
+          "text": "con",
+          "start": 36.946,
+          "end": 37.106
+        },
+        {
+          "text": "t",
+          "start": 37.166,
+          "end": 37.206
+        },
+        {
+          "text": "è",
+          "start": 37.646,
+          "end": 37.686
+        },
+        {
+          "text": "la",
+          "start": 37.746,
+          "end": 37.806
+        },
+        {
+          "text": "somma",
+          "start": 37.866,
+          "end": 38.126
+        },
+        {
+          "text": "su",
+          "start": 38.206,
+          "end": 38.286
+        },
+        {
+          "text": "s",
+          "start": 38.606,
+          "end": 38.646
+        },
+        {
+          "text": "di",
+          "start": 38.866,
+          "end": 38.946
+        },
+        {
+          "text": "w",
+          "start": 39.066,
+          "end": 39.106
+        },
+        {
+          "text": "con",
+          "start": 39.266,
+          "end": 39.406
+        },
+        {
+          "text": "t",
+          "start": 39.466,
+          "end": 39.506
+        },
+        {
+          "text": "s",
+          "start": 39.886,
+          "end": 39.926
+        },
+        {
+          "text": "per",
+          "start": 40.126,
+          "end": 40.266
+        }
+      ]
+    },
+    {
+      "start": 40.446,
+      "end": 44.787,
+      "text": "o con s, tutti i termini sono costanti rispetto a w con t u tranne",
+      "words": [
+        {
+          "text": "o",
+          "start": 40.446,
+          "end": 40.486
+        },
+        {
+          "text": "con",
+          "start": 40.566,
+          "end": 40.706
+        },
+        {
+          "text": "s,",
+          "start": 40.966,
+          "end": 41.006
+        },
+        {
+          "text": "tutti",
+          "start": 41.666,
+          "end": 41.926
+        },
+        {
+          "text": "i",
+          "start": 41.966,
+          "end": 42.006
+        },
+        {
+          "text": "termini",
+          "start": 42.026,
+          "end": 42.367
+        },
+        {
+          "text": "sono",
+          "start": 42.407,
+          "end": 42.567
+        },
+        {
+          "text": "costanti",
+          "start": 42.607,
+          "end": 43.067
+        },
+        {
+          "text": "rispetto",
+          "start": 43.127,
+          "end": 43.487
+        },
+        {
+          "text": "a",
+          "start": 43.507,
+          "end": 43.547
+        },
+        {
+          "text": "w",
+          "start": 43.607,
+          "end": 43.647
+        },
+        {
+          "text": "con",
+          "start": 43.727,
+          "end": 43.867
+        },
+        {
+          "text": "t",
+          "start": 43.927,
+          "end": 43.967
+        },
+        {
+          "text": "u",
+          "start": 44.087,
+          "end": 44.127
+        },
+        {
+          "text": "tranne",
+          "start": 44.507,
+          "end": 44.787
+        }
+      ]
+    },
+    {
+      "start": 44.827,
+      "end": 46.267,
+      "text": "quello con s uguale a u:",
+      "words": [
+        {
+          "text": "quello",
+          "start": 44.827,
+          "end": 45.067
+        },
+        {
+          "text": "con",
+          "start": 45.107,
+          "end": 45.267
+        },
+        {
+          "text": "s",
+          "start": 45.507,
+          "end": 45.547
+        },
+        {
+          "text": "uguale",
+          "start": 45.827,
+          "end": 46.107
+        },
+        {
+          "text": "a",
+          "start": 46.147,
+          "end": 46.187
+        },
+        {
+          "text": "u:",
+          "start": 46.227,
+          "end": 46.267
+        }
+      ]
+    },
+    {
+      "start": 46.847,
+      "end": 49.108,
+      "text": "la derivata vale esattamente o con u.",
+      "words": [
+        {
+          "text": "la",
+          "start": 46.847,
+          "end": 46.927
+        },
+        {
+          "text": "derivata",
+          "start": 46.967,
+          "end": 47.387
+        },
+        {
+          "text": "vale",
+          "start": 47.487,
+          "end": 47.627
+        },
+        {
+          "text": "esattamente",
+          "start": 47.667,
+          "end": 48.267
+        },
+        {
+          "text": "o",
+          "start": 48.628,
+          "end": 48.668
+        },
+        {
+          "text": "con",
+          "start": 48.828,
+          "end": 49.008
+        },
+        {
+          "text": "u.",
+          "start": 49.068,
+          "end": 49.108
+        }
+      ]
+    },
+    {
+      "start": 49.828,
+      "end": 53.728,
+      "text": "Quindi delta p di w con t u è semplicemente delta con t per o",
+      "words": [
+        {
+          "text": "Quindi",
+          "start": 49.828,
+          "end": 50.108
+        },
+        {
+          "text": "delta",
+          "start": 50.228,
+          "end": 50.468
+        },
+        {
+          "text": "p",
+          "start": 50.548,
+          "end": 50.588
+        },
+        {
+          "text": "di",
+          "start": 50.848,
+          "end": 50.908
+        },
+        {
+          "text": "w",
+          "start": 50.968,
+          "end": 51.008
+        },
+        {
+          "text": "con",
+          "start": 51.088,
+          "end": 51.248
+        },
+        {
+          "text": "t",
+          "start": 51.288,
+          "end": 51.328
+        },
+        {
+          "text": "u",
+          "start": 51.448,
+          "end": 51.488
+        },
+        {
+          "text": "è",
+          "start": 51.708,
+          "end": 51.748
+        },
+        {
+          "text": "semplicemente",
+          "start": 51.828,
+          "end": 52.468
+        },
+        {
+          "text": "delta",
+          "start": 52.568,
+          "end": 52.828
+        },
+        {
+          "text": "con",
+          "start": 52.868,
+          "end": 53.008
+        },
+        {
+          "text": "t",
+          "start": 53.068,
+          "end": 53.108
+        },
+        {
+          "text": "per",
+          "start": 53.408,
+          "end": 53.548
+        },
+        {
+          "text": "o",
+          "start": 53.688,
+          "end": 53.728
+        }
+      ]
+    },
+    {
+      "start": 53.808,
+      "end": 54.068,
+      "text": "con u.",
+      "words": [
+        {
+          "text": "con",
+          "start": 53.808,
+          "end": 53.988
+        },
+        {
+          "text": "u.",
+          "start": 54.028,
+          "end": 54.068
+        }
+      ]
+    },
+    {
+      "start": 55.068,
+      "end": 59.749,
+      "text": "Espandendo ora delta con t attraverso o con t uguale a f con t di",
+      "words": [
+        {
+          "text": "Espandendo",
+          "start": 55.068,
+          "end": 55.589
+        },
+        {
+          "text": "ora",
+          "start": 55.649,
+          "end": 55.789
+        },
+        {
+          "text": "delta",
+          "start": 55.849,
+          "end": 56.109
+        },
+        {
+          "text": "con",
+          "start": 56.169,
+          "end": 56.309
+        },
+        {
+          "text": "t",
+          "start": 56.389,
+          "end": 56.429
+        },
+        {
+          "text": "attraverso",
+          "start": 56.849,
+          "end": 57.369
+        },
+        {
+          "text": "o",
+          "start": 57.549,
+          "end": 57.589
+        },
+        {
+          "text": "con",
+          "start": 57.649,
+          "end": 57.829
+        },
+        {
+          "text": "t",
+          "start": 57.909,
+          "end": 57.949
+        },
+        {
+          "text": "uguale",
+          "start": 58.229,
+          "end": 58.589
+        },
+        {
+          "text": "a",
+          "start": 58.669,
+          "end": 58.709
+        },
+        {
+          "text": "f",
+          "start": 59.049,
+          "end": 59.089
+        },
+        {
+          "text": "con",
+          "start": 59.209,
+          "end": 59.349
+        },
+        {
+          "text": "t",
+          "start": 59.409,
+          "end": 59.449
+        },
+        {
+          "text": "di",
+          "start": 59.689,
+          "end": 59.749
+        }
+      ]
+    },
+    {
+      "start": 59.809,
+      "end": 64.11,
+      "text": "net con t, otteniamo meno la derivata di E con p rispetto a o con",
+      "words": [
+        {
+          "text": "net",
+          "start": 59.809,
+          "end": 59.949
+        },
+        {
+          "text": "con",
+          "start": 60.009,
+          "end": 60.169
+        },
+        {
+          "text": "t,",
+          "start": 60.229,
+          "end": 60.269
+        },
+        {
+          "text": "otteniamo",
+          "start": 60.989,
+          "end": 61.449
+        },
+        {
+          "text": "meno",
+          "start": 61.569,
+          "end": 61.81
+        },
+        {
+          "text": "la",
+          "start": 61.85,
+          "end": 61.91
+        },
+        {
+          "text": "derivata",
+          "start": 61.97,
+          "end": 62.39
+        },
+        {
+          "text": "di",
+          "start": 62.45,
+          "end": 62.49
+        },
+        {
+          "text": "E",
+          "start": 62.55,
+          "end": 62.59
+        },
+        {
+          "text": "con",
+          "start": 62.63,
+          "end": 62.77
+        },
+        {
+          "text": "p",
+          "start": 62.85,
+          "end": 62.89
+        },
+        {
+          "text": "rispetto",
+          "start": 63.23,
+          "end": 63.67
+        },
+        {
+          "text": "a",
+          "start": 63.73,
+          "end": 63.77
+        },
+        {
+          "text": "o",
+          "start": 63.83,
+          "end": 63.87
+        },
+        {
+          "text": "con",
+          "start": 63.95,
+          "end": 64.11
+        }
+      ]
+    },
+    {
+      "start": 64.19,
+      "end": 66.97000000000001,
+      "text": "t, per f primo con t di net con t.",
+      "words": [
+        {
+          "text": "t,",
+          "start": 64.19,
+          "end": 64.23
+        },
+        {
+          "text": "per",
+          "start": 64.85,
+          "end": 65.03
+        },
+        {
+          "text": "f",
+          "start": 65.33,
+          "end": 65.37
+        },
+        {
+          "text": "primo",
+          "start": 65.47,
+          "end": 65.69
+        },
+        {
+          "text": "con",
+          "start": 65.75,
+          "end": 65.89
+        },
+        {
+          "text": "t",
+          "start": 65.97,
+          "end": 66.01
+        },
+        {
+          "text": "di",
+          "start": 66.33,
+          "end": 66.41
+        },
+        {
+          "text": "net",
+          "start": 66.47,
+          "end": 66.65
+        },
+        {
+          "text": "con",
+          "start": 66.71,
+          "end": 66.87
+        },
+        {
+          "text": "t.",
+          "start": 66.93,
+          "end": 66.97000000000001
+        }
+      ]
+    },
+    {
+      "start": 67.79,
+      "end": 70.511,
+      "text": "Resta da calcolare solo quel primo fattore in due casi.",
+      "words": [
+        {
+          "text": "Resta",
+          "start": 67.79,
+          "end": 68.01
+        },
+        {
+          "text": "da",
+          "start": 68.05,
+          "end": 68.111
+        },
+        {
+          "text": "calcolare",
+          "start": 68.151,
+          "end": 68.571
+        },
+        {
+          "text": "solo",
+          "start": 68.671,
+          "end": 68.851
+        },
+        {
+          "text": "quel",
+          "start": 68.891,
+          "end": 69.051
+        },
+        {
+          "text": "primo",
+          "start": 69.091,
+          "end": 69.291
+        },
+        {
+          "text": "fattore",
+          "start": 69.351,
+          "end": 69.751
+        },
+        {
+          "text": "in",
+          "start": 69.891,
+          "end": 69.971
+        },
+        {
+          "text": "due",
+          "start": 69.991,
+          "end": 70.131
+        },
+        {
+          "text": "casi.",
+          "start": 70.191,
+          "end": 70.511
+        }
+      ]
+    }
+  ]
+}

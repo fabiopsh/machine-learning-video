@@ -1,0 +1,958 @@
+{
+  "duration": 60.918,
+  "segments": [
+    {
+      "start": 1.059,
+      "end": 6.92,
+      "text": "Per scrivere la backpropagation in modo pulito, conviene adottare una notazione uniforme valida per qualsiasi",
+      "words": [
+        {
+          "text": "Per",
+          "start": 1.059,
+          "end": 1.179
+        },
+        {
+          "text": "scrivere",
+          "start": 1.219,
+          "end": 1.599
+        },
+        {
+          "text": "la",
+          "start": 1.659,
+          "end": 1.719
+        },
+        {
+          "text": "backpropagation",
+          "start": 1.759,
+          "end": 2.579
+        },
+        {
+          "text": "in",
+          "start": 2.639,
+          "end": 2.699
+        },
+        {
+          "text": "modo",
+          "start": 2.719,
+          "end": 2.899
+        },
+        {
+          "text": "pulito,",
+          "start": 2.939,
+          "end": 3.299
+        },
+        {
+          "text": "conviene",
+          "start": 3.619,
+          "end": 3.979
+        },
+        {
+          "text": "adottare",
+          "start": 4.019,
+          "end": 4.479
+        },
+        {
+          "text": "una",
+          "start": 4.579,
+          "end": 4.719
+        },
+        {
+          "text": "notazione",
+          "start": 4.779,
+          "end": 5.319
+        },
+        {
+          "text": "uniforme",
+          "start": 5.359,
+          "end": 5.84
+        },
+        {
+          "text": "valida",
+          "start": 5.92,
+          "end": 6.22
+        },
+        {
+          "text": "per",
+          "start": 6.28,
+          "end": 6.4
+        },
+        {
+          "text": "qualsiasi",
+          "start": 6.44,
+          "end": 6.92
+        }
+      ]
+    },
+    {
+      "start": 6.98,
+      "end": 9.6,
+      "text": "unità t, sia nascosta j sia di uscita k.",
+      "words": [
+        {
+          "text": "unità",
+          "start": 6.98,
+          "end": 7.24
+        },
+        {
+          "text": "t,",
+          "start": 7.36,
+          "end": 7.4
+        },
+        {
+          "text": "sia",
+          "start": 7.88,
+          "end": 8.02
+        },
+        {
+          "text": "nascosta",
+          "start": 8.08,
+          "end": 8.5
+        },
+        {
+          "text": "j",
+          "start": 8.56,
+          "end": 8.6
+        },
+        {
+          "text": "sia",
+          "start": 8.94,
+          "end": 9.08
+        },
+        {
+          "text": "di",
+          "start": 9.12,
+          "end": 9.18
+        },
+        {
+          "text": "uscita",
+          "start": 9.22,
+          "end": 9.52
+        },
+        {
+          "text": "k.",
+          "start": 9.56,
+          "end": 9.6
+        }
+      ]
+    },
+    {
+      "start": 10.66,
+      "end": 13.161,
+      "text": "Indichiamo con u una generica unità sorgente.",
+      "words": [
+        {
+          "text": "Indichiamo",
+          "start": 10.66,
+          "end": 11.1
+        },
+        {
+          "text": "con",
+          "start": 11.16,
+          "end": 11.34
+        },
+        {
+          "text": "u",
+          "start": 11.38,
+          "end": 11.42
+        },
+        {
+          "text": "una",
+          "start": 11.62,
+          "end": 11.78
+        },
+        {
+          "text": "generica",
+          "start": 11.86,
+          "end": 12.281
+        },
+        {
+          "text": "unità",
+          "start": 12.341,
+          "end": 12.561
+        },
+        {
+          "text": "sorgente.",
+          "start": 12.641,
+          "end": 13.161
+        }
+      ]
+    },
+    {
+      "start": 13.881,
+      "end": 17.541,
+      "text": "L'input netto di t è la somma su u di w con t u per",
+      "words": [
+        {
+          "text": "L'input",
+          "start": 13.881,
+          "end": 14.221
+        },
+        {
+          "text": "netto",
+          "start": 14.321,
+          "end": 14.561
+        },
+        {
+          "text": "di",
+          "start": 14.601,
+          "end": 14.681
+        },
+        {
+          "text": "t",
+          "start": 14.781,
+          "end": 14.821
+        },
+        {
+          "text": "è",
+          "start": 15.141,
+          "end": 15.181
+        },
+        {
+          "text": "la",
+          "start": 15.241,
+          "end": 15.301
+        },
+        {
+          "text": "somma",
+          "start": 15.381,
+          "end": 15.641
+        },
+        {
+          "text": "su",
+          "start": 15.761,
+          "end": 15.861
+        },
+        {
+          "text": "u",
+          "start": 15.921,
+          "end": 15.961
+        },
+        {
+          "text": "di",
+          "start": 16.141,
+          "end": 16.221
+        },
+        {
+          "text": "w",
+          "start": 16.641,
+          "end": 16.681
+        },
+        {
+          "text": "con",
+          "start": 16.821,
+          "end": 16.981
+        },
+        {
+          "text": "t",
+          "start": 17.021,
+          "end": 17.061
+        },
+        {
+          "text": "u",
+          "start": 17.181,
+          "end": 17.221
+        },
+        {
+          "text": "per",
+          "start": 17.381,
+          "end": 17.541
+        }
+      ]
+    },
+    {
+      "start": 17.581,
+      "end": 21.422,
+      "text": "o con u, e la sua uscita è f con t di net con t.",
+      "words": [
+        {
+          "text": "o",
+          "start": 17.581,
+          "end": 17.621
+        },
+        {
+          "text": "con",
+          "start": 17.761,
+          "end": 17.921
+        },
+        {
+          "text": "u,",
+          "start": 17.981,
+          "end": 18.021
+        },
+        {
+          "text": "e",
+          "start": 18.581,
+          "end": 18.621
+        },
+        {
+          "text": "la",
+          "start": 18.681,
+          "end": 18.742
+        },
+        {
+          "text": "sua",
+          "start": 18.802,
+          "end": 18.882
+        },
+        {
+          "text": "uscita",
+          "start": 18.942,
+          "end": 19.342
+        },
+        {
+          "text": "è",
+          "start": 19.522,
+          "end": 19.562
+        },
+        {
+          "text": "f",
+          "start": 19.882,
+          "end": 19.922
+        },
+        {
+          "text": "con",
+          "start": 20.042,
+          "end": 20.182
+        },
+        {
+          "text": "t",
+          "start": 20.262,
+          "end": 20.302
+        },
+        {
+          "text": "di",
+          "start": 20.622,
+          "end": 20.702
+        },
+        {
+          "text": "net",
+          "start": 20.822,
+          "end": 21.042
+        },
+        {
+          "text": "con",
+          "start": 21.162,
+          "end": 21.322
+        },
+        {
+          "text": "t.",
+          "start": 21.382,
+          "end": 21.422
+        }
+      ]
+    },
+    {
+      "start": 22.382,
+      "end": 26.243,
+      "text": "Il trucco è usare lo stesso simbolo o sia per gli ingressi sia per le",
+      "words": [
+        {
+          "text": "Il",
+          "start": 22.382,
+          "end": 22.482
+        },
+        {
+          "text": "trucco",
+          "start": 22.522,
+          "end": 22.822
+        },
+        {
+          "text": "è",
+          "start": 22.962,
+          "end": 23.002
+        },
+        {
+          "text": "usare",
+          "start": 23.062,
+          "end": 23.302
+        },
+        {
+          "text": "lo",
+          "start": 23.362,
+          "end": 23.442
+        },
+        {
+          "text": "stesso",
+          "start": 23.482,
+          "end": 23.782
+        },
+        {
+          "text": "simbolo",
+          "start": 23.842,
+          "end": 24.282
+        },
+        {
+          "text": "o",
+          "start": 24.482,
+          "end": 24.522
+        },
+        {
+          "text": "sia",
+          "start": 24.862,
+          "end": 25.002
+        },
+        {
+          "text": "per",
+          "start": 25.042,
+          "end": 25.162
+        },
+        {
+          "text": "gli",
+          "start": 25.162,
+          "end": 25.242
+        },
+        {
+          "text": "ingressi",
+          "start": 25.263,
+          "end": 25.743
+        },
+        {
+          "text": "sia",
+          "start": 25.843,
+          "end": 25.983
+        },
+        {
+          "text": "per",
+          "start": 26.043,
+          "end": 26.143
+        },
+        {
+          "text": "le",
+          "start": 26.183,
+          "end": 26.243
+        }
+      ]
+    },
+    {
+      "start": 26.283,
+      "end": 27.123,
+      "text": "uscite delle unità.",
+      "words": [
+        {
+          "text": "uscite",
+          "start": 26.283,
+          "end": 26.603
+        },
+        {
+          "text": "delle",
+          "start": 26.643,
+          "end": 26.823
+        },
+        {
+          "text": "unità.",
+          "start": 26.863,
+          "end": 27.123
+        }
+      ]
+    },
+    {
+      "start": 27.763,
+      "end": 31.783,
+      "text": "Così per i pesi w con j i l'ingresso è o con i uguale a",
+      "words": [
+        {
+          "text": "Così",
+          "start": 27.763,
+          "end": 27.983
+        },
+        {
+          "text": "per",
+          "start": 28.143,
+          "end": 28.283
+        },
+        {
+          "text": "i",
+          "start": 28.323,
+          "end": 28.363
+        },
+        {
+          "text": "pesi",
+          "start": 28.383,
+          "end": 28.623
+        },
+        {
+          "text": "w",
+          "start": 29.063,
+          "end": 29.103
+        },
+        {
+          "text": "con",
+          "start": 29.223,
+          "end": 29.363
+        },
+        {
+          "text": "j",
+          "start": 29.403,
+          "end": 29.443
+        },
+        {
+          "text": "i",
+          "start": 29.623,
+          "end": 29.663
+        },
+        {
+          "text": "l'ingresso",
+          "start": 29.963,
+          "end": 30.463
+        },
+        {
+          "text": "è",
+          "start": 30.643,
+          "end": 30.683
+        },
+        {
+          "text": "o",
+          "start": 30.783,
+          "end": 30.823
+        },
+        {
+          "text": "con",
+          "start": 30.943,
+          "end": 31.103
+        },
+        {
+          "text": "i",
+          "start": 31.163,
+          "end": 31.203
+        },
+        {
+          "text": "uguale",
+          "start": 31.383,
+          "end": 31.703
+        },
+        {
+          "text": "a",
+          "start": 31.743,
+          "end": 31.783
+        }
+      ]
+    },
+    {
+      "start": 31.904,
+      "end": 35.564,
+      "text": "x con i; per i pesi w con k j l'ingresso è o con j;",
+      "words": [
+        {
+          "text": "x",
+          "start": 31.904,
+          "end": 31.944
+        },
+        {
+          "text": "con",
+          "start": 32.024,
+          "end": 32.164
+        },
+        {
+          "text": "i;",
+          "start": 32.204,
+          "end": 32.244
+        },
+        {
+          "text": "per",
+          "start": 32.704,
+          "end": 32.804
+        },
+        {
+          "text": "i",
+          "start": 32.844,
+          "end": 32.884
+        },
+        {
+          "text": "pesi",
+          "start": 32.904,
+          "end": 33.124
+        },
+        {
+          "text": "w",
+          "start": 33.524,
+          "end": 33.564
+        },
+        {
+          "text": "con",
+          "start": 33.704,
+          "end": 33.844
+        },
+        {
+          "text": "k",
+          "start": 33.904,
+          "end": 33.944
+        },
+        {
+          "text": "j",
+          "start": 34.184,
+          "end": 34.224
+        },
+        {
+          "text": "l'ingresso",
+          "start": 34.624,
+          "end": 35.064
+        },
+        {
+          "text": "è",
+          "start": 35.124,
+          "end": 35.164
+        },
+        {
+          "text": "o",
+          "start": 35.224,
+          "end": 35.264
+        },
+        {
+          "text": "con",
+          "start": 35.324,
+          "end": 35.464
+        },
+        {
+          "text": "j;",
+          "start": 35.524,
+          "end": 35.564
+        }
+      ]
+    },
+    {
+      "start": 36.184,
+      "end": 40.125,
+      "text": "e il bias w con t zero entra con o con zero uguale a uno.",
+      "words": [
+        {
+          "text": "e",
+          "start": 36.184,
+          "end": 36.224
+        },
+        {
+          "text": "il",
+          "start": 36.284,
+          "end": 36.364
+        },
+        {
+          "text": "bias",
+          "start": 36.424,
+          "end": 36.784
+        },
+        {
+          "text": "w",
+          "start": 37.224,
+          "end": 37.264
+        },
+        {
+          "text": "con",
+          "start": 37.364,
+          "end": 37.504
+        },
+        {
+          "text": "t",
+          "start": 37.544,
+          "end": 37.584
+        },
+        {
+          "text": "zero",
+          "start": 37.744,
+          "end": 38.024
+        },
+        {
+          "text": "entra",
+          "start": 38.244,
+          "end": 38.485
+        },
+        {
+          "text": "con",
+          "start": 38.585,
+          "end": 38.745
+        },
+        {
+          "text": "o",
+          "start": 38.805,
+          "end": 38.845
+        },
+        {
+          "text": "con",
+          "start": 38.905,
+          "end": 39.065
+        },
+        {
+          "text": "zero",
+          "start": 39.145,
+          "end": 39.385
+        },
+        {
+          "text": "uguale",
+          "start": 39.505,
+          "end": 39.825
+        },
+        {
+          "text": "a",
+          "start": 39.865,
+          "end": 39.905
+        },
+        {
+          "text": "uno.",
+          "start": 39.965,
+          "end": 40.125
+        }
+      ]
+    },
+    {
+      "start": 41.185,
+      "end": 48.106,
+      "text": "L'elaborazione feedforward procede in un'unica direzione, dall'input all'uscita: prima si carica il pattern x,",
+      "words": [
+        {
+          "text": "L'elaborazione",
+          "start": 41.185,
+          "end": 41.845
+        },
+        {
+          "text": "feedforward",
+          "start": 41.945,
+          "end": 42.685
+        },
+        {
+          "text": "procede",
+          "start": 42.825,
+          "end": 43.205
+        },
+        {
+          "text": "in",
+          "start": 43.265,
+          "end": 43.345
+        },
+        {
+          "text": "un'unica",
+          "start": 43.385,
+          "end": 43.745
+        },
+        {
+          "text": "direzione,",
+          "start": 43.785,
+          "end": 44.365
+        },
+        {
+          "text": "dall'input",
+          "start": 44.725,
+          "end": 45.306
+        },
+        {
+          "text": "all'uscita:",
+          "start": 45.446,
+          "end": 46.006
+        },
+        {
+          "text": "prima",
+          "start": 46.546,
+          "end": 46.786
+        },
+        {
+          "text": "si",
+          "start": 46.846,
+          "end": 46.926
+        },
+        {
+          "text": "carica",
+          "start": 46.986,
+          "end": 47.266
+        },
+        {
+          "text": "il",
+          "start": 47.306,
+          "end": 47.386
+        },
+        {
+          "text": "pattern",
+          "start": 47.406,
+          "end": 47.786
+        },
+        {
+          "text": "x,",
+          "start": 48.066,
+          "end": 48.106
+        }
+      ]
+    },
+    {
+      "start": 48.626,
+      "end": 51.427,
+      "text": "poi si calcolano gli strati nascosti uno dopo l'altro,",
+      "words": [
+        {
+          "text": "poi",
+          "start": 48.626,
+          "end": 48.826
+        },
+        {
+          "text": "si",
+          "start": 48.866,
+          "end": 48.946
+        },
+        {
+          "text": "calcolano",
+          "start": 49.006,
+          "end": 49.446
+        },
+        {
+          "text": "gli",
+          "start": 49.466,
+          "end": 49.586
+        },
+        {
+          "text": "strati",
+          "start": 49.646,
+          "end": 49.886
+        },
+        {
+          "text": "nascosti",
+          "start": 49.946,
+          "end": 50.446
+        },
+        {
+          "text": "uno",
+          "start": 50.606,
+          "end": 50.786
+        },
+        {
+          "text": "dopo",
+          "start": 50.826,
+          "end": 51.026
+        },
+        {
+          "text": "l'altro,",
+          "start": 51.066,
+          "end": 51.427
+        }
+      ]
+    },
+    {
+      "start": 51.847,
+      "end": 55.747,
+      "text": "poi lo strato di uscita h di x, e infine l'errore in uscita.",
+      "words": [
+        {
+          "text": "poi",
+          "start": 51.847,
+          "end": 51.987
+        },
+        {
+          "text": "lo",
+          "start": 52.027,
+          "end": 52.107
+        },
+        {
+          "text": "strato",
+          "start": 52.147,
+          "end": 52.427
+        },
+        {
+          "text": "di",
+          "start": 52.447,
+          "end": 52.507
+        },
+        {
+          "text": "uscita",
+          "start": 52.567,
+          "end": 52.967
+        },
+        {
+          "text": "h",
+          "start": 53.307,
+          "end": 53.347
+        },
+        {
+          "text": "di",
+          "start": 53.407,
+          "end": 53.487
+        },
+        {
+          "text": "x,",
+          "start": 53.687,
+          "end": 53.727
+        },
+        {
+          "text": "e",
+          "start": 54.227,
+          "end": 54.267
+        },
+        {
+          "text": "infine",
+          "start": 54.327,
+          "end": 54.727
+        },
+        {
+          "text": "l'errore",
+          "start": 54.867,
+          "end": 55.247
+        },
+        {
+          "text": "in",
+          "start": 55.247,
+          "end": 55.327
+        },
+        {
+          "text": "uscita.",
+          "start": 55.367,
+          "end": 55.747
+        }
+      ]
+    },
+    {
+      "start": 56.387,
+      "end": 60.668,
+      "text": "Le reti ricorrenti aggiungeranno invece connessioni di feedback per creare memoria.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 56.387,
+          "end": 56.447
+        },
+        {
+          "text": "reti",
+          "start": 56.487,
+          "end": 56.667
+        },
+        {
+          "text": "ricorrenti",
+          "start": 56.707,
+          "end": 57.267
+        },
+        {
+          "text": "aggiungeranno",
+          "start": 57.367,
+          "end": 57.968
+        },
+        {
+          "text": "invece",
+          "start": 58.008,
+          "end": 58.328
+        },
+        {
+          "text": "connessioni",
+          "start": 58.408,
+          "end": 58.948
+        },
+        {
+          "text": "di",
+          "start": 59.008,
+          "end": 59.088
+        },
+        {
+          "text": "feedback",
+          "start": 59.148,
+          "end": 59.548
+        },
+        {
+          "text": "per",
+          "start": 59.708,
+          "end": 59.828
+        },
+        {
+          "text": "creare",
+          "start": 59.868,
+          "end": 60.228
+        },
+        {
+          "text": "memoria.",
+          "start": 60.268,
+          "end": 60.668
+        }
+      ]
+    }
+  ]
+}

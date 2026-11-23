@@ -1,895 +1,1034 @@
 {
-  "duration": 53.88,
+  "duration": 71.479,
   "segments": [
     {
-      "start": 0.05,
-      "end": 5.487,
-      "text": "Applichiamo ora la discesa del gradiente a un'unità sigmoidale minimizzando l'errore quadratico tra d con",
+      "start": 0.06,
+      "end": 3.181,
+      "text": "Applichiamo ora la discesa del gradiente a un'unità sigmoidale,",
       "words": [
         {
           "text": "Applichiamo",
-          "start": 0.05,
-          "end": 0.663
+          "start": 0.06,
+          "end": 0.6
         },
         {
           "text": "ora",
-          "start": 0.662,
-          "end": 0.887
+          "start": 0.66,
+          "end": 0.78
         },
         {
           "text": "la",
-          "start": 0.887,
-          "end": 0.975
+          "start": 0.84,
+          "end": 0.9
         },
         {
           "text": "discesa",
-          "start": 0.975,
-          "end": 1.413
+          "start": 0.94,
+          "end": 1.3
         },
         {
           "text": "del",
-          "start": 1.413,
-          "end": 1.538
+          "start": 1.34,
+          "end": 1.461
         },
         {
           "text": "gradiente",
-          "start": 1.538,
-          "end": 2.013
+          "start": 1.501,
+          "end": 1.961
         },
         {
           "text": "a",
-          "start": 2.013,
-          "end": 2.05
+          "start": 2.081,
+          "end": 2.121
         },
         {
           "text": "un'unità",
-          "start": 2.05,
-          "end": 2.487
+          "start": 2.161,
+          "end": 2.501
         },
         {
-          "text": "sigmoidale",
-          "start": 2.487,
-          "end": 3.3
-        },
+          "text": "sigmoidale,",
+          "start": 2.581,
+          "end": 3.181
+        }
+      ]
+    },
+    {
+      "start": 3.401,
+      "end": 9.222,
+      "text": "minimizzando l'errore quadratico tra d con p e f sigma di x con p trasposto",
+      "words": [
         {
           "text": "minimizzando",
-          "start": 3.3,
-          "end": 4.0
+          "start": 3.401,
+          "end": 3.961
         },
         {
           "text": "l'errore",
-          "start": 4.0,
-          "end": 4.388
+          "start": 4.001,
+          "end": 4.341
         },
         {
           "text": "quadratico",
-          "start": 4.388,
-          "end": 4.987
+          "start": 4.401,
+          "end": 5.001
         },
         {
           "text": "tra",
-          "start": 4.987,
-          "end": 5.162
+          "start": 5.101,
+          "end": 5.221
         },
         {
           "text": "d",
-          "start": 5.162,
-          "end": 5.262
+          "start": 5.561,
+          "end": 5.601
         },
         {
           "text": "con",
-          "start": 5.263,
-          "end": 5.487
-        }
-      ]
-    },
-    {
-      "start": 5.487,
-      "end": 10.65,
-      "text": "p e f sigma di x p trasposto w Per un esempio p la regola",
-      "words": [
+          "start": 5.761,
+          "end": 5.921
+        },
         {
           "text": "p",
-          "start": 5.487,
-          "end": 5.75
+          "start": 6.021,
+          "end": 6.061
         },
         {
           "text": "e",
-          "start": 5.75,
-          "end": 5.875
+          "start": 6.481,
+          "end": 6.521
         },
         {
           "text": "f",
-          "start": 5.875,
-          "end": 6.15
+          "start": 6.781,
+          "end": 6.821
         },
         {
           "text": "sigma",
-          "start": 6.15,
-          "end": 6.588
+          "start": 6.941,
+          "end": 7.241
         },
         {
           "text": "di",
-          "start": 6.588,
-          "end": 6.9
+          "start": 7.341,
+          "end": 7.441
         },
         {
           "text": "x",
-          "start": 6.9,
-          "end": 7.225
+          "start": 7.721,
+          "end": 7.761
+        },
+        {
+          "text": "con",
+          "start": 8.062,
+          "end": 8.242
         },
         {
           "text": "p",
-          "start": 7.225,
-          "end": 7.512
+          "start": 8.362,
+          "end": 8.402
         },
         {
           "text": "trasposto",
-          "start": 7.513,
-          "end": 8.125
-        },
+          "start": 8.642,
+          "end": 9.222
+        }
+      ]
+    },
+    {
+      "start": 9.282,
+      "end": 9.322,
+      "text": "w.",
+      "words": [
         {
-          "text": "w",
-          "start": 8.125,
-          "end": 8.762
-        },
+          "text": "w.",
+          "start": 9.282,
+          "end": 9.322
+        }
+      ]
+    },
+    {
+      "start": 10.402,
+      "end": 14.542,
+      "text": "Per un esempio p, la regola della catena scompone la derivata parziale rispetto al peso",
+      "words": [
         {
           "text": "Per",
-          "start": 9.1,
-          "end": 9.3
+          "start": 10.402,
+          "end": 10.502
         },
         {
           "text": "un",
-          "start": 9.3,
-          "end": 9.388
+          "start": 10.542,
+          "end": 10.622
         },
         {
           "text": "esempio",
-          "start": 9.387,
-          "end": 9.737
+          "start": 10.642,
+          "end": 10.982
         },
         {
-          "text": "p",
-          "start": 9.738,
-          "end": 10.025
+          "text": "p,",
+          "start": 11.082,
+          "end": 11.122
         },
         {
           "text": "la",
-          "start": 10.213,
-          "end": 10.363
+          "start": 11.422,
+          "end": 11.482
         },
         {
           "text": "regola",
-          "start": 10.363,
-          "end": 10.65
-        }
-      ]
-    },
-    {
-      "start": 10.65,
-      "end": 15.012,
-      "text": "della catena scompone la derivata parziale dell'errore rispetto al peso w con j in tre",
-      "words": [
+          "start": 11.522,
+          "end": 11.782
+        },
         {
           "text": "della",
-          "start": 10.65,
-          "end": 10.838
+          "start": 11.822,
+          "end": 11.982
         },
         {
           "text": "catena",
-          "start": 10.838,
-          "end": 11.213
+          "start": 12.002,
+          "end": 12.282
         },
         {
           "text": "scompone",
-          "start": 11.213,
-          "end": 11.675
+          "start": 12.322,
+          "end": 12.742
         },
         {
           "text": "la",
-          "start": 11.675,
-          "end": 11.763
+          "start": 12.802,
+          "end": 12.862
         },
         {
           "text": "derivata",
-          "start": 11.762,
-          "end": 12.137
+          "start": 12.902,
+          "end": 13.282
         },
         {
           "text": "parziale",
-          "start": 12.137,
-          "end": 12.587
-        },
-        {
-          "text": "dell'errore",
-          "start": 12.588,
-          "end": 13.15
+          "start": 13.322,
+          "end": 13.782
         },
         {
           "text": "rispetto",
-          "start": 13.15,
-          "end": 13.513
+          "start": 13.842,
+          "end": 14.182
         },
         {
           "text": "al",
-          "start": 13.512,
-          "end": 13.587
+          "start": 14.222,
+          "end": 14.302
         },
         {
           "text": "peso",
-          "start": 13.588,
-          "end": 13.875
-        },
+          "start": 14.342,
+          "end": 14.542
+        }
+      ]
+    },
+    {
+      "start": 14.603,
+      "end": 16.403,
+      "text": "w con j in tre fattori.",
+      "words": [
         {
           "text": "w",
-          "start": 13.875,
-          "end": 14.363
+          "start": 14.603,
+          "end": 14.643
         },
         {
           "text": "con",
-          "start": 14.363,
-          "end": 14.575
+          "start": 15.023,
+          "end": 15.163
         },
         {
           "text": "j",
-          "start": 14.575,
-          "end": 14.8
+          "start": 15.223,
+          "end": 15.263
         },
         {
           "text": "in",
-          "start": 14.8,
-          "end": 14.888
+          "start": 15.623,
+          "end": 15.723
         },
         {
           "text": "tre",
-          "start": 14.887,
-          "end": 15.012
+          "start": 15.783,
+          "end": 15.883
+        },
+        {
+          "text": "fattori.",
+          "start": 15.943,
+          "end": 16.403
         }
       ]
     },
     {
-      "start": 15.012,
-      "end": 20.213,
-      "text": "fattori derivata di E rispetto all'uscita o cioè meno due per d meno o derivata",
+      "start": 16.943,
+      "end": 21.844,
+      "text": "Primo: derivata di E rispetto all'uscita o, cioè meno due per d meno o.",
       "words": [
         {
-          "text": "fattori",
-          "start": 15.012,
-          "end": 15.562
+          "text": "Primo:",
+          "start": 16.943,
+          "end": 17.223
         },
         {
           "text": "derivata",
-          "start": 15.863,
-          "end": 16.325
+          "start": 17.623,
+          "end": 18.083
         },
         {
           "text": "di",
-          "start": 16.325,
-          "end": 16.525
+          "start": 18.143,
+          "end": 18.203
         },
         {
           "text": "E",
-          "start": 16.525,
-          "end": 16.587
+          "start": 18.283,
+          "end": 18.323
         },
         {
           "text": "rispetto",
-          "start": 16.587,
-          "end": 17.012
+          "start": 18.543,
+          "end": 18.923
         },
         {
           "text": "all'uscita",
-          "start": 17.012,
-          "end": 17.575
+          "start": 18.943,
+          "end": 19.343
         },
         {
-          "text": "o",
-          "start": 17.575,
-          "end": 17.775
+          "text": "o,",
+          "start": 19.423,
+          "end": 19.463
         },
         {
           "text": "cioè",
-          "start": 17.962,
-          "end": 18.237
+          "start": 19.763,
+          "end": 19.923
         },
         {
           "text": "meno",
-          "start": 18.238,
-          "end": 18.488
+          "start": 20.163,
+          "end": 20.383
         },
         {
           "text": "due",
-          "start": 18.488,
-          "end": 18.7
+          "start": 20.463,
+          "end": 20.683
         },
         {
           "text": "per",
-          "start": 18.7,
-          "end": 18.85
+          "start": 20.883,
+          "end": 21.083
         },
         {
           "text": "d",
-          "start": 18.85,
-          "end": 18.938
+          "start": 21.324,
+          "end": 21.364
         },
         {
           "text": "meno",
-          "start": 18.938,
-          "end": 19.238
+          "start": 21.504,
+          "end": 21.704
         },
         {
-          "text": "o",
-          "start": 19.238,
-          "end": 19.45
-        },
-        {
-          "text": "derivata",
-          "start": 19.738,
-          "end": 20.213
+          "text": "o.",
+          "start": 21.804,
+          "end": 21.844
         }
       ]
     },
     {
-      "start": 20.212,
-      "end": 24.562,
-      "text": "di o rispetto al net cioè f primo sigma del net e derivata del net",
+      "start": 22.344,
+      "end": 27.724,
+      "text": "Secondo: derivata di o rispetto all'input netto, cioè f primo sigma dell'input netto.",
       "words": [
         {
+          "text": "Secondo:",
+          "start": 22.344,
+          "end": 22.784
+        },
+        {
+          "text": "derivata",
+          "start": 23.144,
+          "end": 23.584
+        },
+        {
           "text": "di",
-          "start": 20.212,
-          "end": 20.387
+          "start": 23.624,
+          "end": 23.704
         },
         {
           "text": "o",
-          "start": 20.387,
-          "end": 20.462
+          "start": 23.804,
+          "end": 23.844
         },
         {
           "text": "rispetto",
-          "start": 20.462,
-          "end": 20.862
+          "start": 24.024,
+          "end": 24.404
         },
         {
-          "text": "al",
-          "start": 20.863,
-          "end": 20.938
+          "text": "all'input",
+          "start": 24.424,
+          "end": 24.864
         },
         {
-          "text": "net",
-          "start": 20.938,
-          "end": 21.325
+          "text": "netto,",
+          "start": 24.964,
+          "end": 25.284
         },
         {
           "text": "cioè",
-          "start": 21.575,
-          "end": 21.887
+          "start": 25.504,
+          "end": 25.684
         },
         {
           "text": "f",
-          "start": 21.887,
-          "end": 22.188
+          "start": 26.044,
+          "end": 26.084
         },
         {
           "text": "primo",
-          "start": 22.188,
-          "end": 22.462
+          "start": 26.204,
+          "end": 26.444
         },
         {
           "text": "sigma",
-          "start": 22.462,
-          "end": 22.8
+          "start": 26.524,
+          "end": 26.824
         },
         {
-          "text": "del",
-          "start": 22.8,
-          "end": 22.938
+          "text": "dell'input",
+          "start": 26.904,
+          "end": 27.344
         },
         {
-          "text": "net",
-          "start": 22.938,
-          "end": 23.312
-        },
+          "text": "netto.",
+          "start": 27.424,
+          "end": 27.724
+        }
+      ]
+    },
+    {
+      "start": 28.265,
+      "end": 31.625,
+      "text": "Terzo: derivata dell'input netto rispetto a w con j,",
+      "words": [
         {
-          "text": "e",
-          "start": 23.663,
-          "end": 23.763
+          "text": "Terzo:",
+          "start": 28.265,
+          "end": 28.645
         },
         {
           "text": "derivata",
-          "start": 23.762,
-          "end": 24.15
+          "start": 29.005,
+          "end": 29.445
         },
         {
-          "text": "del",
-          "start": 24.15,
-          "end": 24.287
+          "text": "dell'input",
+          "start": 29.485,
+          "end": 29.945
         },
         {
-          "text": "net",
-          "start": 24.288,
-          "end": 24.562
-        }
-      ]
-    },
-    {
-      "start": 24.562,
-      "end": 29.9,
-      "text": "rispetto a w j che è l'ingresso x p j La regola di aggiornamento mantiene",
-      "words": [
+          "text": "netto",
+          "start": 30.025,
+          "end": 30.325
+        },
         {
           "text": "rispetto",
-          "start": 24.562,
-          "end": 25.012
+          "start": 30.385,
+          "end": 30.805
         },
         {
           "text": "a",
-          "start": 25.012,
-          "end": 25.05
+          "start": 30.825,
+          "end": 30.865
         },
         {
           "text": "w",
-          "start": 25.05,
-          "end": 25.538
+          "start": 30.945,
+          "end": 30.985
         },
         {
-          "text": "j",
-          "start": 25.538,
-          "end": 25.938
+          "text": "con",
+          "start": 31.405,
+          "end": 31.525
         },
+        {
+          "text": "j,",
+          "start": 31.585,
+          "end": 31.625
+        }
+      ]
+    },
+    {
+      "start": 32.025,
+      "end": 33.945,
+      "text": "che è l'ingresso x con p j.",
+      "words": [
         {
           "text": "che",
-          "start": 26.175,
-          "end": 26.262
+          "start": 32.025,
+          "end": 32.125
         },
         {
           "text": "è",
-          "start": 26.262,
-          "end": 26.3
+          "start": 32.205,
+          "end": 32.245
         },
         {
           "text": "l'ingresso",
-          "start": 26.3,
-          "end": 26.938
+          "start": 32.325,
+          "end": 32.905
         },
         {
           "text": "x",
-          "start": 26.938,
-          "end": 27.225
+          "start": 33.205,
+          "end": 33.245
+        },
+        {
+          "text": "con",
+          "start": 33.465,
+          "end": 33.625
         },
         {
           "text": "p",
-          "start": 27.225,
-          "end": 27.363
+          "start": 33.705,
+          "end": 33.745
         },
         {
-          "text": "j",
-          "start": 27.363,
-          "end": 27.75
-        },
-        {
-          "text": "La",
-          "start": 28.087,
-          "end": 28.325
-        },
-        {
-          "text": "regola",
-          "start": 28.325,
-          "end": 28.637
-        },
-        {
-          "text": "di",
-          "start": 28.637,
-          "end": 28.712
-        },
-        {
-          "text": "aggiornamento",
-          "start": 28.712,
-          "end": 29.45
-        },
-        {
-          "text": "mantiene",
-          "start": 29.45,
-          "end": 29.9
+          "text": "j.",
+          "start": 33.905,
+          "end": 33.945
         }
       ]
     },
     {
-      "start": 29.9,
-      "end": 35.788,
-      "text": "la stessa forma dell'LMS lineare ma con un nuovo delta d meno o moltiplicato per",
+      "start": 34.826,
+      "end": 40.206,
+      "text": "Questa derivata risponde a una domanda precisa: quanto una variazione del peso influenza la variazione",
       "words": [
         {
-          "text": "la",
-          "start": 29.9,
-          "end": 29.987
+          "text": "Questa",
+          "start": 34.826,
+          "end": 35.046
         },
         {
-          "text": "stessa",
-          "start": 29.988,
-          "end": 30.338
+          "text": "derivata",
+          "start": 35.086,
+          "end": 35.466
         },
         {
-          "text": "forma",
-          "start": 30.337,
-          "end": 30.675
-        },
-        {
-          "text": "dell'LMS",
-          "start": 30.675,
-          "end": 31.5
-        },
-        {
-          "text": "lineare",
-          "start": 31.5,
-          "end": 32.05
-        },
-        {
-          "text": "ma",
-          "start": 32.35,
-          "end": 32.5
-        },
-        {
-          "text": "con",
-          "start": 32.5,
-          "end": 32.663
-        },
-        {
-          "text": "un",
-          "start": 32.663,
-          "end": 32.75
-        },
-        {
-          "text": "nuovo",
-          "start": 32.75,
-          "end": 32.987
-        },
-        {
-          "text": "delta",
-          "start": 32.987,
-          "end": 33.462
-        },
-        {
-          "text": "d",
-          "start": 33.75,
-          "end": 33.962
-        },
-        {
-          "text": "meno",
-          "start": 33.962,
-          "end": 34.375
-        },
-        {
-          "text": "o",
-          "start": 34.375,
-          "end": 34.638
-        },
-        {
-          "text": "moltiplicato",
-          "start": 34.875,
-          "end": 35.65
-        },
-        {
-          "text": "per",
-          "start": 35.65,
-          "end": 35.788
-        }
-      ]
-    },
-    {
-      "start": 35.788,
-      "end": 41.137,
-      "text": "f primo sigma del net Notiamo un effetto fondamentale vicino a zero f primo è",
-      "words": [
-        {
-          "text": "f",
-          "start": 35.788,
-          "end": 36.062
-        },
-        {
-          "text": "primo",
-          "start": 36.062,
-          "end": 36.35
-        },
-        {
-          "text": "sigma",
-          "start": 36.35,
-          "end": 36.725
-        },
-        {
-          "text": "del",
-          "start": 36.725,
-          "end": 36.875
-        },
-        {
-          "text": "net",
-          "start": 36.875,
-          "end": 37.275
-        },
-        {
-          "text": "Notiamo",
-          "start": 37.612,
-          "end": 38.087
-        },
-        {
-          "text": "un",
-          "start": 38.087,
-          "end": 38.175
-        },
-        {
-          "text": "effetto",
-          "start": 38.175,
-          "end": 38.587
-        },
-        {
-          "text": "fondamentale",
-          "start": 38.587,
-          "end": 39.362
-        },
-        {
-          "text": "vicino",
-          "start": 39.663,
-          "end": 40.1
+          "text": "risponde",
+          "start": 35.506,
+          "end": 35.826
         },
         {
           "text": "a",
-          "start": 40.1,
-          "end": 40.15
+          "start": 35.846,
+          "end": 35.886
         },
         {
-          "text": "zero",
-          "start": 40.15,
-          "end": 40.487
+          "text": "una",
+          "start": 35.906,
+          "end": 36.006
         },
         {
-          "text": "f",
-          "start": 40.487,
-          "end": 40.737
+          "text": "domanda",
+          "start": 36.026,
+          "end": 36.306
         },
         {
-          "text": "primo",
-          "start": 40.737,
-          "end": 41.087
+          "text": "precisa:",
+          "start": 36.346,
+          "end": 36.786
         },
         {
-          "text": "è",
-          "start": 41.087,
-          "end": 41.137
-        }
-      ]
-    },
-    {
-      "start": 41.138,
-      "end": 45.425,
-      "text": "grande ma nelle zone sature f primo è quasi nullo e i pesi si muovono",
-      "words": [
-        {
-          "text": "grande",
-          "start": 41.138,
-          "end": 41.625
+          "text": "quanto",
+          "start": 37.186,
+          "end": 37.646
         },
         {
-          "text": "ma",
-          "start": 41.913,
-          "end": 42.05
+          "text": "una",
+          "start": 37.686,
+          "end": 37.806
         },
         {
-          "text": "nelle",
-          "start": 42.05,
-          "end": 42.262
+          "text": "variazione",
+          "start": 37.846,
+          "end": 38.346
         },
         {
-          "text": "zone",
-          "start": 42.263,
-          "end": 42.55
+          "text": "del",
+          "start": 38.386,
+          "end": 38.526
         },
         {
-          "text": "sature",
-          "start": 42.55,
-          "end": 42.95
+          "text": "peso",
+          "start": 38.606,
+          "end": 38.906
         },
         {
-          "text": "f",
-          "start": 42.95,
-          "end": 43.175
-        },
-        {
-          "text": "primo",
-          "start": 43.175,
-          "end": 43.525
-        },
-        {
-          "text": "è",
-          "start": 43.525,
-          "end": 43.6
-        },
-        {
-          "text": "quasi",
-          "start": 43.6,
-          "end": 43.925
-        },
-        {
-          "text": "nullo",
-          "start": 43.925,
-          "end": 44.362
-        },
-        {
-          "text": "e",
-          "start": 44.362,
-          "end": 44.425
-        },
-        {
-          "text": "i",
-          "start": 44.425,
-          "end": 44.512
-        },
-        {
-          "text": "pesi",
-          "start": 44.513,
-          "end": 44.9
-        },
-        {
-          "text": "si",
-          "start": 44.9,
-          "end": 45.038
-        },
-        {
-          "text": "muovono",
-          "start": 45.038,
-          "end": 45.425
-        }
-      ]
-    },
-    {
-      "start": 45.425,
-      "end": 51.9,
-      "text": "lentissimamente Per evitare saturazione prematura si parte da pesi piccoli d'altro canto su esempi già",
-      "words": [
-        {
-          "text": "lentissimamente",
-          "start": 45.425,
-          "end": 46.387
-        },
-        {
-          "text": "Per",
-          "start": 46.725,
-          "end": 46.913
-        },
-        {
-          "text": "evitare",
-          "start": 46.913,
-          "end": 47.312
-        },
-        {
-          "text": "saturazione",
-          "start": 47.312,
-          "end": 47.925
-        },
-        {
-          "text": "prematura",
-          "start": 47.925,
-          "end": 48.512
-        },
-        {
-          "text": "si",
-          "start": 48.513,
-          "end": 48.65
-        },
-        {
-          "text": "parte",
-          "start": 48.65,
-          "end": 48.95
-        },
-        {
-          "text": "da",
-          "start": 48.95,
-          "end": 49.075
-        },
-        {
-          "text": "pesi",
-          "start": 49.075,
-          "end": 49.35
-        },
-        {
-          "text": "piccoli",
-          "start": 49.35,
-          "end": 49.825
-        },
-        {
-          "text": "d'altro",
-          "start": 50.175,
-          "end": 50.525
-        },
-        {
-          "text": "canto",
-          "start": 50.525,
-          "end": 50.975
-        },
-        {
-          "text": "su",
-          "start": 51.163,
-          "end": 51.337
-        },
-        {
-          "text": "esempi",
-          "start": 51.337,
-          "end": 51.712
-        },
-        {
-          "text": "già",
-          "start": 51.712,
-          "end": 51.9
-        }
-      ]
-    },
-    {
-      "start": 51.9,
-      "end": 57.275,
-      "text": "classificati con decisione la correzione si annulla creando un ponte naturale tra LMS",
-      "words": [
-        {
-          "text": "classificati",
-          "start": 51.9,
-          "end": 52.637
-        },
-        {
-          "text": "con",
-          "start": 52.638,
-          "end": 52.812
-        },
-        {
-          "text": "decisione",
-          "start": 52.812,
-          "end": 53.288
+          "text": "influenza",
+          "start": 39.046,
+          "end": 39.606
         },
         {
           "text": "la",
-          "start": 53.288,
-          "end": 53.375
+          "start": 39.646,
+          "end": 39.706
         },
         {
-          "text": "correzione",
-          "start": 53.375,
-          "end": 53.95
+          "text": "variazione",
+          "start": 39.726,
+          "end": 40.206
+        }
+      ]
+    },
+    {
+      "start": 40.246,
+      "end": 40.786,
+      "text": "dell'errore.",
+      "words": [
+        {
+          "text": "dell'errore.",
+          "start": 40.246,
+          "end": 40.786
+        }
+      ]
+    },
+    {
+      "start": 41.586,
+      "end": 45.146,
+      "text": "La regola di aggiornamento mantiene la stessa forma dell'LMS lineare,",
+      "words": [
+        {
+          "text": "La",
+          "start": 41.586,
+          "end": 41.646
         },
         {
-          "text": "si",
-          "start": 53.95,
-          "end": 54.062
+          "text": "regola",
+          "start": 41.686,
+          "end": 41.946
         },
         {
-          "text": "annulla",
-          "start": 54.062,
-          "end": 54.55
+          "text": "di",
+          "start": 41.986,
+          "end": 42.046
         },
         {
-          "text": "creando",
-          "start": 54.862,
-          "end": 55.25
+          "text": "aggiornamento",
+          "start": 42.066,
+          "end": 42.586
+        },
+        {
+          "text": "mantiene",
+          "start": 42.626,
+          "end": 42.946
+        },
+        {
+          "text": "la",
+          "start": 43.006,
+          "end": 43.066
+        },
+        {
+          "text": "stessa",
+          "start": 43.106,
+          "end": 43.346
+        },
+        {
+          "text": "forma",
+          "start": 43.406,
+          "end": 43.666
+        },
+        {
+          "text": "dell'LMS",
+          "start": 43.706,
+          "end": 44.546
+        },
+        {
+          "text": "lineare,",
+          "start": 44.666,
+          "end": 45.146
+        }
+      ]
+    },
+    {
+      "start": 45.306,
+      "end": 50.827,
+      "text": "ma con un nuovo delta: d meno o, moltiplicato per f primo sigma dell'input netto.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 45.306,
+          "end": 45.366
+        },
+        {
+          "text": "con",
+          "start": 45.466,
+          "end": 45.606
         },
         {
           "text": "un",
-          "start": 55.25,
-          "end": 55.362
+          "start": 45.646,
+          "end": 45.726
+        },
+        {
+          "text": "nuovo",
+          "start": 45.766,
+          "end": 46.006
+        },
+        {
+          "text": "delta:",
+          "start": 46.066,
+          "end": 46.426
+        },
+        {
+          "text": "d",
+          "start": 46.866,
+          "end": 46.906
+        },
+        {
+          "text": "meno",
+          "start": 47.166,
+          "end": 47.366
+        },
+        {
+          "text": "o,",
+          "start": 47.466,
+          "end": 47.506
+        },
+        {
+          "text": "moltiplicato",
+          "start": 47.887,
+          "end": 48.667
+        },
+        {
+          "text": "per",
+          "start": 48.767,
+          "end": 48.927
+        },
+        {
+          "text": "f",
+          "start": 49.087,
+          "end": 49.127
+        },
+        {
+          "text": "primo",
+          "start": 49.247,
+          "end": 49.467
+        },
+        {
+          "text": "sigma",
+          "start": 49.527,
+          "end": 49.827
+        },
+        {
+          "text": "dell'input",
+          "start": 49.967,
+          "end": 50.467
+        },
+        {
+          "text": "netto.",
+          "start": 50.547,
+          "end": 50.827
+        }
+      ]
+    },
+    {
+      "start": 51.827,
+      "end": 55.468,
+      "text": "Vicino a zero f primo è grande, ma nelle zone sature f primo è quasi",
+      "words": [
+        {
+          "text": "Vicino",
+          "start": 51.827,
+          "end": 52.107
+        },
+        {
+          "text": "a",
+          "start": 52.147,
+          "end": 52.187
+        },
+        {
+          "text": "zero",
+          "start": 52.207,
+          "end": 52.367
+        },
+        {
+          "text": "f",
+          "start": 52.507,
+          "end": 52.547
+        },
+        {
+          "text": "primo",
+          "start": 52.627,
+          "end": 52.807
+        },
+        {
+          "text": "è",
+          "start": 52.867,
+          "end": 52.907
+        },
+        {
+          "text": "grande,",
+          "start": 52.947,
+          "end": 53.327
+        },
+        {
+          "text": "ma",
+          "start": 53.547,
+          "end": 53.607
+        },
+        {
+          "text": "nelle",
+          "start": 53.687,
+          "end": 53.847
+        },
+        {
+          "text": "zone",
+          "start": 53.907,
+          "end": 54.107
+        },
+        {
+          "text": "sature",
+          "start": 54.147,
+          "end": 54.547
+        },
+        {
+          "text": "f",
+          "start": 54.627,
+          "end": 54.667
+        },
+        {
+          "text": "primo",
+          "start": 54.767,
+          "end": 54.948
+        },
+        {
+          "text": "è",
+          "start": 55.008,
+          "end": 55.048
+        },
+        {
+          "text": "quasi",
+          "start": 55.148,
+          "end": 55.468
+        }
+      ]
+    },
+    {
+      "start": 55.528,
+      "end": 58.028,
+      "text": "nullo e i pesi si muovono lentissimamente.",
+      "words": [
+        {
+          "text": "nullo",
+          "start": 55.528,
+          "end": 55.848
+        },
+        {
+          "text": "e",
+          "start": 56.008,
+          "end": 56.048
+        },
+        {
+          "text": "i",
+          "start": 56.128,
+          "end": 56.168
+        },
+        {
+          "text": "pesi",
+          "start": 56.188,
+          "end": 56.448
+        },
+        {
+          "text": "si",
+          "start": 56.508,
+          "end": 56.568
+        },
+        {
+          "text": "muovono",
+          "start": 56.628,
+          "end": 56.968
+        },
+        {
+          "text": "lentissimamente.",
+          "start": 57.068,
+          "end": 58.028
+        }
+      ]
+    },
+    {
+      "start": 58.528,
+      "end": 61.388,
+      "text": "Per evitare saturazione prematura si parte da pesi piccoli.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 58.528,
+          "end": 58.628
+        },
+        {
+          "text": "evitare",
+          "start": 58.668,
+          "end": 59.008
+        },
+        {
+          "text": "saturazione",
+          "start": 59.048,
+          "end": 59.608
+        },
+        {
+          "text": "prematura",
+          "start": 59.628,
+          "end": 60.108
+        },
+        {
+          "text": "si",
+          "start": 60.248,
+          "end": 60.328
+        },
+        {
+          "text": "parte",
+          "start": 60.388,
+          "end": 60.628
+        },
+        {
+          "text": "da",
+          "start": 60.668,
+          "end": 60.728
+        },
+        {
+          "text": "pesi",
+          "start": 60.768,
+          "end": 60.968
+        },
+        {
+          "text": "piccoli.",
+          "start": 61.008,
+          "end": 61.388
+        }
+      ]
+    },
+    {
+      "start": 62.288,
+      "end": 66.988,
+      "text": "D'altro canto, su esempi già classificati con decisione la correzione si annulla,",
+      "words": [
+        {
+          "text": "D'altro",
+          "start": 62.288,
+          "end": 62.588
+        },
+        {
+          "text": "canto,",
+          "start": 62.628,
+          "end": 62.928
+        },
+        {
+          "text": "su",
+          "start": 63.148,
+          "end": 63.228
+        },
+        {
+          "text": "esempi",
+          "start": 63.308,
+          "end": 63.668
+        },
+        {
+          "text": "già",
+          "start": 63.728,
+          "end": 63.808
+        },
+        {
+          "text": "classificati",
+          "start": 63.868,
+          "end": 64.528
+        },
+        {
+          "text": "con",
+          "start": 64.568,
+          "end": 64.688
+        },
+        {
+          "text": "decisione",
+          "start": 64.748,
+          "end": 65.328
+        },
+        {
+          "text": "la",
+          "start": 65.748,
+          "end": 65.828
+        },
+        {
+          "text": "correzione",
+          "start": 65.868,
+          "end": 66.388
+        },
+        {
+          "text": "si",
+          "start": 66.448,
+          "end": 66.508
+        },
+        {
+          "text": "annulla,",
+          "start": 66.548,
+          "end": 66.988
+        }
+      ]
+    },
+    {
+      "start": 67.308,
+      "end": 71.229,
+      "text": "creando un ponte naturale tra LMS e Perceptron.",
+      "words": [
+        {
+          "text": "creando",
+          "start": 67.308,
+          "end": 67.648
+        },
+        {
+          "text": "un",
+          "start": 67.708,
+          "end": 67.788
         },
         {
           "text": "ponte",
-          "start": 55.362,
-          "end": 55.675
+          "start": 67.908,
+          "end": 68.248
         },
         {
           "text": "naturale",
-          "start": 55.675,
-          "end": 56.188
+          "start": 68.288,
+          "end": 68.769
         },
         {
           "text": "tra",
-          "start": 56.188,
-          "end": 56.438
+          "start": 68.949,
+          "end": 69.069
         },
         {
           "text": "LMS",
-          "start": 56.438,
-          "end": 57.275
+          "start": 69.509,
+          "end": 70.129
+        },
+        {
+          "text": "e",
+          "start": 70.489,
+          "end": 70.52900000000001
+        },
+        {
+          "text": "Perceptron.",
+          "start": 70.609,
+          "end": 71.229
         }
       ]
     }

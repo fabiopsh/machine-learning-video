@@ -1,0 +1,905 @@
+{
+  "duration": 60.881,
+  "segments": [
+    {
+      "start": 0.161,
+      "end": 4.962,
+      "text": "Una tecnica essenziale in pratica è il momentum, detto anche metodo della palla pesante.",
+      "words": [
+        {
+          "text": "Una",
+          "start": 0.161,
+          "end": 0.301
+        },
+        {
+          "text": "tecnica",
+          "start": 0.341,
+          "end": 0.701
+        },
+        {
+          "text": "essenziale",
+          "start": 0.741,
+          "end": 1.261
+        },
+        {
+          "text": "in",
+          "start": 1.301,
+          "end": 1.361
+        },
+        {
+          "text": "pratica",
+          "start": 1.401,
+          "end": 1.821
+        },
+        {
+          "text": "è",
+          "start": 1.981,
+          "end": 2.021
+        },
+        {
+          "text": "il",
+          "start": 2.121,
+          "end": 2.201
+        },
+        {
+          "text": "momentum,",
+          "start": 2.261,
+          "end": 2.821
+        },
+        {
+          "text": "detto",
+          "start": 3.041,
+          "end": 3.261
+        },
+        {
+          "text": "anche",
+          "start": 3.321,
+          "end": 3.541
+        },
+        {
+          "text": "metodo",
+          "start": 3.621,
+          "end": 4.001
+        },
+        {
+          "text": "della",
+          "start": 4.041,
+          "end": 4.241
+        },
+        {
+          "text": "palla",
+          "start": 4.281,
+          "end": 4.481
+        },
+        {
+          "text": "pesante.",
+          "start": 4.501,
+          "end": 4.962
+        }
+      ]
+    },
+    {
+      "start": 5.622,
+      "end": 10.823,
+      "text": "La variazione dei pesi delta w nuovo somma al passo del gradiente meno eta per",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.622,
+          "end": 5.682
+        },
+        {
+          "text": "variazione",
+          "start": 5.722,
+          "end": 6.182
+        },
+        {
+          "text": "dei",
+          "start": 6.222,
+          "end": 6.342
+        },
+        {
+          "text": "pesi",
+          "start": 6.362,
+          "end": 6.642
+        },
+        {
+          "text": "delta",
+          "start": 6.742,
+          "end": 7.002
+        },
+        {
+          "text": "w",
+          "start": 7.042,
+          "end": 7.082
+        },
+        {
+          "text": "nuovo",
+          "start": 7.582,
+          "end": 7.902
+        },
+        {
+          "text": "somma",
+          "start": 8.282,
+          "end": 8.562
+        },
+        {
+          "text": "al",
+          "start": 8.622,
+          "end": 8.702
+        },
+        {
+          "text": "passo",
+          "start": 8.782,
+          "end": 9.102
+        },
+        {
+          "text": "del",
+          "start": 9.162,
+          "end": 9.282
+        },
+        {
+          "text": "gradiente",
+          "start": 9.322,
+          "end": 9.902
+        },
+        {
+          "text": "meno",
+          "start": 10.022,
+          "end": 10.242
+        },
+        {
+          "text": "eta",
+          "start": 10.362,
+          "end": 10.582
+        },
+        {
+          "text": "per",
+          "start": 10.702,
+          "end": 10.823
+        }
+      ]
+    },
+    {
+      "start": 10.863,
+      "end": 15.883,
+      "text": "il gradiente di E una frazione alfa dello spostamento precedente delta w vecchio,",
+      "words": [
+        {
+          "text": "il",
+          "start": 10.863,
+          "end": 10.943
+        },
+        {
+          "text": "gradiente",
+          "start": 10.983,
+          "end": 11.463
+        },
+        {
+          "text": "di",
+          "start": 11.523,
+          "end": 11.603
+        },
+        {
+          "text": "E",
+          "start": 11.683,
+          "end": 11.723
+        },
+        {
+          "text": "una",
+          "start": 12.143,
+          "end": 12.263
+        },
+        {
+          "text": "frazione",
+          "start": 12.303,
+          "end": 12.723
+        },
+        {
+          "text": "alfa",
+          "start": 12.823,
+          "end": 13.103
+        },
+        {
+          "text": "dello",
+          "start": 13.203,
+          "end": 13.403
+        },
+        {
+          "text": "spostamento",
+          "start": 13.423,
+          "end": 13.903
+        },
+        {
+          "text": "precedente",
+          "start": 13.943,
+          "end": 14.503
+        },
+        {
+          "text": "delta",
+          "start": 14.883,
+          "end": 15.143
+        },
+        {
+          "text": "w",
+          "start": 15.163,
+          "end": 15.203
+        },
+        {
+          "text": "vecchio,",
+          "start": 15.563,
+          "end": 15.883
+        }
+      ]
+    },
+    {
+      "start": 16.303,
+      "end": 20.264,
+      "text": "con alfa tra zero e uno, tipicamente tra zero virgola cinque e zero virgola nove.",
+      "words": [
+        {
+          "text": "con",
+          "start": 16.303,
+          "end": 16.443
+        },
+        {
+          "text": "alfa",
+          "start": 16.503,
+          "end": 16.744
+        },
+        {
+          "text": "tra",
+          "start": 16.884,
+          "end": 16.984
+        },
+        {
+          "text": "zero",
+          "start": 17.084,
+          "end": 17.284
+        },
+        {
+          "text": "e",
+          "start": 17.344,
+          "end": 17.384
+        },
+        {
+          "text": "uno,",
+          "start": 17.444,
+          "end": 17.604
+        },
+        {
+          "text": "tipicamente",
+          "start": 17.864,
+          "end": 18.404
+        },
+        {
+          "text": "tra",
+          "start": 18.464,
+          "end": 18.564
+        },
+        {
+          "text": "zero",
+          "start": 18.644,
+          "end": 18.804
+        },
+        {
+          "text": "virgola",
+          "start": 18.824,
+          "end": 19.104
+        },
+        {
+          "text": "cinque",
+          "start": 19.164,
+          "end": 19.424
+        },
+        {
+          "text": "e",
+          "start": 19.464,
+          "end": 19.504
+        },
+        {
+          "text": "zero",
+          "start": 19.544,
+          "end": 19.684
+        },
+        {
+          "text": "virgola",
+          "start": 19.724,
+          "end": 20.004
+        },
+        {
+          "text": "nove.",
+          "start": 20.044,
+          "end": 20.264
+        }
+      ]
+    },
+    {
+      "start": 21.164,
+      "end": 23.185,
+      "text": "Questa inerzia produce tre vantaggi immediati.",
+      "words": [
+        {
+          "text": "Questa",
+          "start": 21.164,
+          "end": 21.364
+        },
+        {
+          "text": "inerzia",
+          "start": 21.404,
+          "end": 21.764
+        },
+        {
+          "text": "produce",
+          "start": 21.804,
+          "end": 22.124
+        },
+        {
+          "text": "tre",
+          "start": 22.204,
+          "end": 22.304
+        },
+        {
+          "text": "vantaggi",
+          "start": 22.384,
+          "end": 22.744
+        },
+        {
+          "text": "immediati.",
+          "start": 22.764,
+          "end": 23.185
+        }
+      ]
+    },
+    {
+      "start": 23.805,
+      "end": 28.085,
+      "text": "Accelera nei plateau piatti, dove il gradiente mantiene lo stesso segno e i passi si",
+      "words": [
+        {
+          "text": "Accelera",
+          "start": 23.805,
+          "end": 24.325
+        },
+        {
+          "text": "nei",
+          "start": 24.445,
+          "end": 24.605
+        },
+        {
+          "text": "plateau",
+          "start": 24.625,
+          "end": 24.865
+        },
+        {
+          "text": "piatti,",
+          "start": 24.925,
+          "end": 25.325
+        },
+        {
+          "text": "dove",
+          "start": 25.625,
+          "end": 25.785
+        },
+        {
+          "text": "il",
+          "start": 25.825,
+          "end": 25.865
+        },
+        {
+          "text": "gradiente",
+          "start": 25.905,
+          "end": 26.325
+        },
+        {
+          "text": "mantiene",
+          "start": 26.385,
+          "end": 26.685
+        },
+        {
+          "text": "lo",
+          "start": 26.725,
+          "end": 26.785
+        },
+        {
+          "text": "stesso",
+          "start": 26.825,
+          "end": 27.065
+        },
+        {
+          "text": "segno",
+          "start": 27.125,
+          "end": 27.425
+        },
+        {
+          "text": "e",
+          "start": 27.545,
+          "end": 27.585
+        },
+        {
+          "text": "i",
+          "start": 27.645,
+          "end": 27.685
+        },
+        {
+          "text": "passi",
+          "start": 27.725,
+          "end": 27.965
+        },
+        {
+          "text": "si",
+          "start": 28.005,
+          "end": 28.085
+        }
+      ]
+    },
+    {
+      "start": 28.145,
+      "end": 28.505,
+      "text": "sommano.",
+      "words": [
+        {
+          "text": "sommano.",
+          "start": 28.145,
+          "end": 28.505
+        }
+      ]
+    },
+    {
+      "start": 29.246,
+      "end": 34.386,
+      "text": "Smorza le oscillazioni nelle valli strette mal condizionate, dove il gradiente cambia segno e i",
+      "words": [
+        {
+          "text": "Smorza",
+          "start": 29.246,
+          "end": 29.646
+        },
+        {
+          "text": "le",
+          "start": 29.706,
+          "end": 29.766
+        },
+        {
+          "text": "oscillazioni",
+          "start": 29.806,
+          "end": 30.446
+        },
+        {
+          "text": "nelle",
+          "start": 30.506,
+          "end": 30.686
+        },
+        {
+          "text": "valli",
+          "start": 30.706,
+          "end": 30.926
+        },
+        {
+          "text": "strette",
+          "start": 30.966,
+          "end": 31.306
+        },
+        {
+          "text": "mal",
+          "start": 31.406,
+          "end": 31.526
+        },
+        {
+          "text": "condizionate,",
+          "start": 31.566,
+          "end": 32.246
+        },
+        {
+          "text": "dove",
+          "start": 32.606,
+          "end": 32.746
+        },
+        {
+          "text": "il",
+          "start": 32.786,
+          "end": 32.846
+        },
+        {
+          "text": "gradiente",
+          "start": 32.866,
+          "end": 33.346
+        },
+        {
+          "text": "cambia",
+          "start": 33.426,
+          "end": 33.686
+        },
+        {
+          "text": "segno",
+          "start": 33.746,
+          "end": 34.066
+        },
+        {
+          "text": "e",
+          "start": 34.266,
+          "end": 34.306
+        },
+        {
+          "text": "i",
+          "start": 34.346,
+          "end": 34.386
+        }
+      ]
+    },
+    {
+      "start": 34.426,
+      "end": 40.067,
+      "text": "rimbalzi si compensano: guarda nel grafico come la traiettoria rossa scende fluida rispetto allo zig-zag",
+      "words": [
+        {
+          "text": "rimbalzi",
+          "start": 34.426,
+          "end": 34.867
+        },
+        {
+          "text": "si",
+          "start": 34.907,
+          "end": 34.987
+        },
+        {
+          "text": "compensano:",
+          "start": 35.027,
+          "end": 35.607
+        },
+        {
+          "text": "guarda",
+          "start": 36.327,
+          "end": 36.607
+        },
+        {
+          "text": "nel",
+          "start": 36.647,
+          "end": 36.767
+        },
+        {
+          "text": "grafico",
+          "start": 36.807,
+          "end": 37.187
+        },
+        {
+          "text": "come",
+          "start": 37.247,
+          "end": 37.387
+        },
+        {
+          "text": "la",
+          "start": 37.427,
+          "end": 37.487
+        },
+        {
+          "text": "traiettoria",
+          "start": 37.527,
+          "end": 38.027
+        },
+        {
+          "text": "rossa",
+          "start": 38.067,
+          "end": 38.327
+        },
+        {
+          "text": "scende",
+          "start": 38.427,
+          "end": 38.727
+        },
+        {
+          "text": "fluida",
+          "start": 38.767,
+          "end": 39.127
+        },
+        {
+          "text": "rispetto",
+          "start": 39.227,
+          "end": 39.567
+        },
+        {
+          "text": "allo",
+          "start": 39.567,
+          "end": 39.707
+        },
+        {
+          "text": "zig-zag",
+          "start": 39.767,
+          "end": 40.067
+        }
+      ]
+    },
+    {
+      "start": 40.147,
+      "end": 40.367,
+      "text": "nero.",
+      "words": [
+        {
+          "text": "nero.",
+          "start": 40.147,
+          "end": 40.367
+        }
+      ]
+    },
+    {
+      "start": 41.088,
+      "end": 43.168,
+      "text": "E permette di usare learning rate più alti.",
+      "words": [
+        {
+          "text": "E",
+          "start": 41.088,
+          "end": 41.128
+        },
+        {
+          "text": "permette",
+          "start": 41.168,
+          "end": 41.528
+        },
+        {
+          "text": "di",
+          "start": 41.568,
+          "end": 41.628
+        },
+        {
+          "text": "usare",
+          "start": 41.668,
+          "end": 41.948
+        },
+        {
+          "text": "learning",
+          "start": 42.008,
+          "end": 42.348
+        },
+        {
+          "text": "rate",
+          "start": 42.428,
+          "end": 42.668
+        },
+        {
+          "text": "più",
+          "start": 42.708,
+          "end": 42.808
+        },
+        {
+          "text": "alti.",
+          "start": 42.888,
+          "end": 43.168
+        }
+      ]
+    },
+    {
+      "start": 44.168,
+      "end": 49.789,
+      "text": "Nota: nell'online o mini-batch il momentum diventa una media mobile dei gradienti stocastici passati.",
+      "words": [
+        {
+          "text": "Nota:",
+          "start": 44.168,
+          "end": 44.448
+        },
+        {
+          "text": "nell'online",
+          "start": 44.928,
+          "end": 45.468
+        },
+        {
+          "text": "o",
+          "start": 45.568,
+          "end": 45.608
+        },
+        {
+          "text": "mini-batch",
+          "start": 45.688,
+          "end": 46.168
+        },
+        {
+          "text": "il",
+          "start": 46.389,
+          "end": 46.469
+        },
+        {
+          "text": "momentum",
+          "start": 46.509,
+          "end": 46.909
+        },
+        {
+          "text": "diventa",
+          "start": 46.969,
+          "end": 47.309
+        },
+        {
+          "text": "una",
+          "start": 47.349,
+          "end": 47.469
+        },
+        {
+          "text": "media",
+          "start": 47.529,
+          "end": 47.749
+        },
+        {
+          "text": "mobile",
+          "start": 47.809,
+          "end": 48.149
+        },
+        {
+          "text": "dei",
+          "start": 48.189,
+          "end": 48.269
+        },
+        {
+          "text": "gradienti",
+          "start": 48.309,
+          "end": 48.749
+        },
+        {
+          "text": "stocastici",
+          "start": 48.789,
+          "end": 49.309
+        },
+        {
+          "text": "passati.",
+          "start": 49.349,
+          "end": 49.789
+        }
+      ]
+    },
+    {
+      "start": 50.809,
+      "end": 54.41,
+      "text": "Infine il momentum di Nesterov applica prima lo spostamento di inerzia,",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 50.809,
+          "end": 51.149
+        },
+        {
+          "text": "il",
+          "start": 51.309,
+          "end": 51.409
+        },
+        {
+          "text": "momentum",
+          "start": 51.449,
+          "end": 51.829
+        },
+        {
+          "text": "di",
+          "start": 51.869,
+          "end": 51.949
+        },
+        {
+          "text": "Nesterov",
+          "start": 51.989,
+          "end": 52.45
+        },
+        {
+          "text": "applica",
+          "start": 52.59,
+          "end": 52.93
+        },
+        {
+          "text": "prima",
+          "start": 53.03,
+          "end": 53.25
+        },
+        {
+          "text": "lo",
+          "start": 53.33,
+          "end": 53.39
+        },
+        {
+          "text": "spostamento",
+          "start": 53.41,
+          "end": 53.89
+        },
+        {
+          "text": "di",
+          "start": 53.93,
+          "end": 53.99
+        },
+        {
+          "text": "inerzia,",
+          "start": 54.01,
+          "end": 54.41
+        }
+      ]
+    },
+    {
+      "start": 54.77,
+      "end": 57.65,
+      "text": "calcola il gradiente nel punto intermedio, e poi aggiorna:",
+      "words": [
+        {
+          "text": "calcola",
+          "start": 54.77,
+          "end": 55.13
+        },
+        {
+          "text": "il",
+          "start": 55.17,
+          "end": 55.23
+        },
+        {
+          "text": "gradiente",
+          "start": 55.25,
+          "end": 55.73
+        },
+        {
+          "text": "nel",
+          "start": 55.77,
+          "end": 55.89
+        },
+        {
+          "text": "punto",
+          "start": 55.93,
+          "end": 56.15
+        },
+        {
+          "text": "intermedio,",
+          "start": 56.19,
+          "end": 56.73
+        },
+        {
+          "text": "e",
+          "start": 56.91,
+          "end": 56.95
+        },
+        {
+          "text": "poi",
+          "start": 57.01,
+          "end": 57.15
+        },
+        {
+          "text": "aggiorna:",
+          "start": 57.21,
+          "end": 57.65
+        }
+      ]
+    },
+    {
+      "start": 58.211,
+      "end": 60.631,
+      "text": "accelera nel batch, non nel caso stocastico.",
+      "words": [
+        {
+          "text": "accelera",
+          "start": 58.211,
+          "end": 58.691
+        },
+        {
+          "text": "nel",
+          "start": 58.751,
+          "end": 58.871
+        },
+        {
+          "text": "batch,",
+          "start": 58.931,
+          "end": 59.191
+        },
+        {
+          "text": "non",
+          "start": 59.451,
+          "end": 59.611
+        },
+        {
+          "text": "nel",
+          "start": 59.651,
+          "end": 59.791
+        },
+        {
+          "text": "caso",
+          "start": 59.831,
+          "end": 60.011
+        },
+        {
+          "text": "stocastico.",
+          "start": 60.071,
+          "end": 60.631
+        }
+      ]
+    }
+  ]
+}

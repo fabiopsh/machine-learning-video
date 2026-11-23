@@ -1,0 +1,771 @@
+{
+  "lesson_id": "11-mlp-backprop",
+  "chapter": 11,
+  "part": "Parte IV · Reti neurali",
+  "title": "Multi-Layer Perceptron e backpropagation",
+  "source_tex": "note_migliorate/capitoli/11-mlp-backprop.tex",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "11.1 Il Multi-Layer Perceptron",
+      "title": "Le due viste dell'MLP: rete e funzione annidata",
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "tts_text": "Componendo unità non lineari in più strati si ottiene il Multi-Layer Perceptron, in breve MLP. [pause:0.7] Un MLP si può leggere in due modi complementari. [pause:0.5] Prima vista: una rete di unità organizzate in strati. Lo strato di input, con indice i, è solo una sorgente: carica il pattern x, senza calcolare né input netto né attivazione. [pause:0.6] Lo strato nascosto, con indice j, elabora gli ingressi attraverso i pesi w con j i e li proietta in avanti. [pause:0.6] Lo strato di uscita, con indice k, riceve dai pesi w con k j e produce la risposta finale h di x. [pause:0.9] Seconda vista: una funzione flessibile fatta di composizioni annidate. Internamente ogni unità nascosta calcola f con j della somma su i di w con j i per x con i, generando l'uscita o con j. [pause:0.7] Esternamente l'unità di uscita applica f con k alla somma pesata di queste uscite nascoste. [pause:0.8] Ogni rete si caratterizza quindi per tre elementi: tipo di unità, architettura e algoritmo di apprendimento.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.1 · Il Multi-Layer Perceptron</div>\n  <h2 class=\"slide-title\">Due viste: rete di unità e funzione annidata</h2>\n  <div class=\"split-visual\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 385 215\" class=\"diagram-svg\" aria-label=\"Architettura MLP a due strati\">\n        <defs>\n          <marker id=\"arr-m1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-m1b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n        </defs>\n        <g id=\"s-edges1\" class=\"cue-hidden\"><line x1=\"56\" y1=\"42\" x2=\"156\" y2=\"22\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"42\" x2=\"156\" y2=\"72\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"42\" x2=\"156\" y2=\"122\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"42\" x2=\"156\" y2=\"172\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"96\" x2=\"156\" y2=\"22\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"96\" x2=\"156\" y2=\"72\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"96\" x2=\"156\" y2=\"122\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"96\" x2=\"156\" y2=\"172\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"150\" x2=\"156\" y2=\"22\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"150\" x2=\"156\" y2=\"72\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"150\" x2=\"156\" y2=\"122\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"56\" y1=\"150\" x2=\"156\" y2=\"172\" class=\"svg-edge\" opacity=\"0.4\"/></g>\n        <g id=\"s-edges2\" class=\"cue-hidden\"><line x1=\"192\" y1=\"22\" x2=\"292\" y2=\"64\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"192\" y1=\"22\" x2=\"292\" y2=\"128\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"192\" y1=\"72\" x2=\"292\" y2=\"64\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"192\" y1=\"72\" x2=\"292\" y2=\"128\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"192\" y1=\"122\" x2=\"292\" y2=\"64\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"192\" y1=\"122\" x2=\"292\" y2=\"128\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"192\" y1=\"172\" x2=\"292\" y2=\"64\" class=\"svg-edge\" opacity=\"0.4\"/><line x1=\"192\" y1=\"172\" x2=\"292\" y2=\"128\" class=\"svg-edge\" opacity=\"0.4\"/></g>\n        <g id=\"svg-wji\" class=\"cue-hidden\">\n          <line x1=\"56\" y1=\"42\" x2=\"156\" y2=\"22\" class=\"svg-edge-accent\" marker-end=\"url(#arr-m1b)\"/>\n          <text x=\"104\" y=\"23\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">wⱼᵢ</text>\n        </g>\n        <g id=\"svg-wkj\" class=\"cue-hidden\">\n          <line x1=\"192\" y1=\"22\" x2=\"292\" y2=\"64\" class=\"svg-edge-accent\" marker-end=\"url(#arr-m1b)\"/>\n          <text x=\"246\" y=\"34\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">wₖⱼ</text>\n        </g>\n        <g id=\"svg-in\" class=\"cue-hidden\">\n          <circle cx=\"40\" cy=\"42\" r=\"15\" class=\"svg-node\"/><text x=\"40\" y=\"47\" text-anchor=\"middle\" class=\"svg-math-sm\">x₁</text>\n          <circle cx=\"40\" cy=\"96\" r=\"15\" class=\"svg-node\"/><text x=\"40\" y=\"101\" text-anchor=\"middle\" class=\"svg-math-sm\">x₂</text>\n          <circle cx=\"40\" cy=\"150\" r=\"15\" class=\"svg-node\"/><text x=\"40\" y=\"155\" text-anchor=\"middle\" class=\"svg-math-sm\">x₃</text>\n          <text x=\"40\" y=\"202\" text-anchor=\"middle\" class=\"svg-caption\">input (i)</text>\n        </g>\n        <g id=\"svg-hid\" class=\"cue-hidden\">\n          <circle cx=\"174\" cy=\"22\" r=\"16\" class=\"svg-node-fill\"/><text x=\"174\" y=\"27\" text-anchor=\"middle\" class=\"svg-math-sm\">j₁</text>\n          <circle cx=\"174\" cy=\"72\" r=\"16\" class=\"svg-node-fill\"/><text x=\"174\" y=\"77\" text-anchor=\"middle\" class=\"svg-math-sm\">j₂</text>\n          <circle cx=\"174\" cy=\"122\" r=\"16\" class=\"svg-node-fill\"/><text x=\"174\" y=\"127\" text-anchor=\"middle\" class=\"svg-math-sm\">j₃</text>\n          <circle cx=\"174\" cy=\"172\" r=\"16\" class=\"svg-node-fill\"/><text x=\"174\" y=\"177\" text-anchor=\"middle\" class=\"svg-math-sm\">j₄</text>\n          <text x=\"174\" y=\"202\" text-anchor=\"middle\" class=\"svg-caption\">nascosto (j)</text>\n        </g>\n        <g id=\"svg-out\" class=\"cue-hidden\">\n          <circle cx=\"310\" cy=\"64\" r=\"16\" class=\"svg-node-fill\"/><text x=\"310\" y=\"69\" text-anchor=\"middle\" class=\"svg-math-sm\">k₁</text>\n          <circle cx=\"310\" cy=\"128\" r=\"16\" class=\"svg-node-fill\"/><text x=\"310\" y=\"133\" text-anchor=\"middle\" class=\"svg-math-sm\">k₂</text>\n          <line x1=\"326\" y1=\"64\" x2=\"360\" y2=\"64\" class=\"svg-edge\" marker-end=\"url(#arr-m1)\"/>\n          <line x1=\"326\" y1=\"128\" x2=\"360\" y2=\"128\" class=\"svg-edge\" marker-end=\"url(#arr-m1)\"/>\n          <text x=\"366\" y=\"68\" class=\"svg-math-sm\">o₁</text>\n          <text x=\"366\" y=\"132\" class=\"svg-math-sm\">o₂</text>\n          <text x=\"310\" y=\"202\" text-anchor=\"middle\" class=\"svg-caption\">uscita (k)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s-eq\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Funzione annidata (2 strati)</div>\n        \\[h(\\x) = \\htmlId{f-outer}{f_k\\!\\left(\\sum_j w_{kj}\\,\\underbrace{\\htmlId{f-inner}{f_j\\!\\left(\\sum_i w_{ji}\\,x_i\\right)}}_{o_j}\\right)}\\]\n        <p class=\"math-note\">Composizione di combinazioni lineari e attivazioni non lineari.</p>\n      </div>\n      <div id=\"s-tri\" class=\"pill-strip cue-hidden\">\n        <span class=\"strip-label\">Descrizione di una rete:</span>\n        <span class=\"pill\">Tipo di unità</span>\n        <span class=\"pill\">Architettura</span>\n        <span class=\"pill pill-accent\">Algoritmo di apprendimento</span>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 14.86,
+          "action": "show",
+          "target": "#svg-in",
+          "anchor": "Lo strato di input"
+        },
+        {
+          "at": 14.86,
+          "action": "highlight",
+          "target": "#svg-in",
+          "anchor": "Lo strato di input"
+        },
+        {
+          "at": 23.96,
+          "action": "show",
+          "target": "#s-edges1, #svg-wji, #svg-hid",
+          "anchor": "Lo strato nascosto"
+        },
+        {
+          "at": 27.88,
+          "action": "highlight",
+          "target": "#svg-wji, #svg-hid",
+          "anchor": "pesi w con j i"
+        },
+        {
+          "at": 32.03,
+          "action": "show",
+          "target": "#s-edges2, #svg-wkj, #svg-out",
+          "anchor": "Lo strato di uscita"
+        },
+        {
+          "at": 34.79,
+          "action": "highlight",
+          "target": "#svg-wkj, #svg-out",
+          "anchor": "pesi w con k j"
+        },
+        {
+          "at": 40.13,
+          "action": "show",
+          "target": "#s-eq",
+          "anchor": "Seconda vista"
+        },
+        {
+          "at": 45.71,
+          "action": "highlight",
+          "target": "#f-inner",
+          "anchor": "Internamente ogni unità nascosta"
+        },
+        {
+          "at": 55.55,
+          "action": "highlight",
+          "target": "#f-outer",
+          "anchor": "Esternamente l'unità di uscita"
+        },
+        {
+          "at": 63.71,
+          "action": "show",
+          "target": "#s-tri",
+          "anchor": "tre elementi"
+        }
+      ],
+      "duration_sec": 69.01
+    },
+    {
+      "id": "scene-02",
+      "section": "11.1.1 Notazione uniforme ed elaborazione feedforward",
+      "title": "Notazione uniforme e flusso feedforward",
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "tts_text": "Per scrivere la backpropagation in modo pulito, conviene adottare una notazione uniforme valida per qualsiasi unità t, sia nascosta j sia di uscita k. [pause:0.7] Indichiamo con u una generica unità sorgente. L'input netto di t è la somma su u di w con t u per o con u, e la sua uscita è f con t di net con t. [pause:0.8] Il trucco è usare lo stesso simbolo o sia per gli ingressi sia per le uscite delle unità. Così per i pesi w con j i l'ingresso è o con i uguale a x con i; per i pesi w con k j l'ingresso è o con j; e il bias w con t zero entra con o con zero uguale a uno. [pause:0.9] L'elaborazione feedforward procede in un'unica direzione, dall'input all'uscita: prima si carica il pattern x, poi si calcolano gli strati nascosti uno dopo l'altro, poi lo strato di uscita h di x, e infine l'errore in uscita. [pause:0.7] Le reti ricorrenti aggiungeranno invece connessioni di feedback per creare memoria.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.1.1 – 11.1.2 · Notazione e calcolo in avanti</div>\n  <h2 class=\"slide-title\">Notazione uniforme e flusso feedforward</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\net_{\\htmlId{f-t}{t}}(\\x) = \\sum_{\\htmlId{f-u}{u}} \\htmlId{f-wtu}{w_{tu}}\\,\\htmlId{f-ou}{o_u}, \\qquad o_t(\\x) = f_t\\big(\\net_t(\\x)\\big)\\]\n    <p class=\"math-note\">Valida per ogni unità \\(t\\) (nascosta \\(j\\) o uscita \\(k\\)) e sorgente \\(u\\) (input \\(i\\) o nascosta \\(j\\)).</p>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"c-in\" class=\"gate-card\">\n      <div class=\"gate-name\">Input → Nascosta</div>\n      <div class=\"gate-params\">\\(w_{ji}\\) con \\(o_i = x_i\\)</div>\n      <p class=\"gate-desc\">\\(o_j = f_j\\big(\\sum_i w_{ji} x_i\\big)\\)</p>\n    </div>\n    <div id=\"c-out\" class=\"gate-card\">\n      <div class=\"gate-name\">Nascosta → Uscita</div>\n      <div class=\"gate-params\">\\(w_{kj}\\) con ingresso \\(o_j\\)</div>\n      <p class=\"gate-desc\">\\(o_k = f_k\\big(\\sum_j w_{kj} o_j\\big)\\)</p>\n    </div>\n    <div id=\"c-bias\" class=\"gate-card\">\n      <div class=\"gate-name\">Bias di ogni unità</div>\n      <div class=\"gate-params\">\\(w_{t0}\\) con \\(o_0 = 1\\)</div>\n      <p class=\"gate-desc\">Trattato come un peso ordinario.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"flow-chain cue-hidden\">\n    <div id=\"ff1\" class=\"flow-node\"><strong>1. Input \\(\\x\\)</strong><span>carica pattern</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"ff2\" class=\"flow-node\"><strong>2. Nascosti</strong><span>strato per strato</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"ff3\" class=\"flow-node\"><strong>3. Uscita \\(h(\\x)\\)</strong><span>risposta rete</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"ff4\" class=\"flow-node flow-node-accent\"><strong>4. Errore \\(\\delta\\)</strong><span>confronto con \\(\\dd\\)</span></div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.66,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "notazione uniforme"
+        },
+        {
+          "at": 15.26,
+          "action": "highlight",
+          "target": "#f-u, #f-wtu, #f-ou",
+          "anchor": "somma su u di w con t u"
+        },
+        {
+          "at": 23.36,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "stesso simbolo o"
+        },
+        {
+          "at": 28.26,
+          "action": "highlight",
+          "target": "#c-in",
+          "anchor": "pesi w con j i"
+        },
+        {
+          "at": 32.78,
+          "action": "highlight",
+          "target": "#c-out",
+          "anchor": "pesi w con k j"
+        },
+        {
+          "at": 36.3,
+          "action": "highlight",
+          "target": "#c-bias",
+          "anchor": "bias w con t zero"
+        },
+        {
+          "at": 41.07,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "elaborazione feedforward"
+        },
+        {
+          "at": 46.87,
+          "action": "highlight",
+          "target": "#ff1",
+          "anchor": "carica il pattern"
+        },
+        {
+          "at": 49.53,
+          "action": "highlight",
+          "target": "#ff2",
+          "anchor": "strati nascosti"
+        },
+        {
+          "at": 52.03,
+          "action": "highlight",
+          "target": "#ff3",
+          "anchor": "strato di uscita"
+        },
+        {
+          "at": 54.21,
+          "action": "highlight",
+          "target": "#ff4",
+          "anchor": "infine l'errore"
+        }
+      ],
+      "duration_sec": 60.92
+    },
+    {
+      "id": "scene-03",
+      "section": "11.2 Perché le reti neurali sono flessibili",
+      "title": "Task e rete come espansione in basi adattiva",
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "tts_text": "Lo spazio delle ipotesi di un MLP è lo spazio continuo di tutte le funzioni ottenibili variando i pesi dell'architettura. [pause:0.6] Cambiando lo strato di uscita cambiamo task: uscite sigmoidali per la classificazione, uscite lineari per la regressione, e più uscite per regressione multipla o classificazione multi-classe, ad esempio punteggi zero virgola due, zero virgola sette e zero virgola uno su tre classi. [pause:0.9] Ma qual è il segreto della loro flessibilità? Guardiamo ogni unità nascosta come una funzione di base fi con j di x e w. [pause:0.7] In una Linear Basis Expansion classica, le basi fi con j di x sono fissate a priori e il modello resta lineare nei parametri. [pause:0.7] In una rete neurale, invece, le basi fi con j dipendono dai pesi w e si adattano ai dati durante l'addestramento. [pause:0.8] Ogni unità nascosta apprende una nuova feature non lineare che costruisce la rappresentazione interna adatta al task, catturando statistiche di ordine superiore.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.2.1 – 11.2.2 · Espansione in basi adattiva</div>\n  <h2 class=\"slide-title\">Dalla LBE fissa alle basi adattive dell'MLP</h2>\n  <div id=\"s1\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Scelta dello strato di uscita:</span>\n    <span class=\"pill\">Sigmoidale → <strong>Classificazione</strong></span>\n    <span class=\"pill\">Lineare → <strong>Regressione</strong></span>\n    <span class=\"pill pill-accent\">Multi-uscita → Multi-classe (es. \\(0{,}2;\\, 0{,}7;\\, 0{,}1\\))</span>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">LBE classica (basi fissate)</div>\n      <p>\\[h(\\x) = f\\!\\left(\\sum_j w_j\\,\\htmlId{f-lbe}{\\phi_j(\\x)}\\right)\\]</p>\n      <p>Le \\(\\phi_j\\) sono scelte <strong>a priori</strong>: modello <strong>lineare nei parametri</strong>.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Rete neurale (basi adattive)</div>\n      <p>\\[h(\\x) = f_k\\!\\left(\\sum_j w_{kj}\\,\\htmlId{f-nn}{\\phi_j(\\x, \\w)}\\right)\\]</p>\n      <p>Con \\(\\phi_j(\\x, \\w) = f_j(\\sum_i w_{ji} x_i)\\): le basi <strong>si apprendono dai dati</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea chiave — Basi adattive</div>\n    <p>Ogni unità nascosta calcola una <strong>feature derivata non lineare</strong> appresa dai dati: lo strato nascosto costruisce la <strong>rappresentazione interna</strong> estraendo statistiche di ordine superiore utili per il task.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 7.0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Cambiando lo strato di uscita"
+        },
+        {
+          "at": 33.09,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Linear Basis Expansion classica"
+        },
+        {
+          "at": 35.29,
+          "action": "highlight",
+          "target": "#f-lbe",
+          "anchor": "basi fi con j di x sono fissate"
+        },
+        {
+          "at": 41.11,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "In una rete neurale, invece"
+        },
+        {
+          "at": 43.87,
+          "action": "highlight",
+          "target": "#f-nn",
+          "anchor": "dipendono dai pesi w"
+        },
+        {
+          "at": 50.41,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "nuova feature non lineare"
+        }
+      ],
+      "duration_sec": 57.79
+    },
+    {
+      "id": "scene-04",
+      "section": "11.2.2 La rete come espansione in basi adattiva",
+      "title": "Perché le unità nascoste devono essere non lineari",
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "tts_text": "Una proprietà fondamentale: le unità nascoste devono essere non lineari. [pause:0.6] Se usassimo attivazioni lineari nello strato nascosto e in uscita, un MLP a due strati collasserebbe esattamente a una rete a un solo strato. [pause:0.8] Verifichiamolo in due passaggi algebrici. Scriviamo h di x come somma su j di w con k j, per la somma su i di w con j i per x con i. [pause:0.7] Scambiando l'ordine delle due sommatorie e raccogliendo x con i, otteniamo la somma su i di un singolo coefficiente w primo con i, uguale alla somma su j di w con k j per w con j i. [pause:0.8] È ancora un semplice modello lineare: la composizione di funzioni lineari resta sempre lineare. [pause:0.9] La non linearità delle attivazioni è quindi indispensabile, ma ha un prezzo preciso: il modello diventa non lineare nei parametri e l'addestramento diventa un problema di ottimizzazione non convesso.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.2.2 · Ruolo della non linearità</div>\n  <h2 class=\"slide-title\">Unità nascoste lineari collassano a un solo strato</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Proprietà — Necessità della non linearità</div>\n    <p>Un MLP con unità nascoste <strong>lineari</strong> equivale a una rete a <strong>un solo strato</strong>.</p>\n  </div>\n  <div class=\"proof-steps\">\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Composizione lineare</span>\n      <div>\\[h(\\x) = \\sum_j w_{kj} \\sum_i w_{ji}\\,x_i\\]</div>\n    </div>\n    <div id=\"s3\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Scambio somme</span>\n      <div>\\[h(\\x) = \\sum_i \\htmlId{f-collapse}{\\left(\\sum_j w_{kj}\\,w_{ji}\\right)} x_i = \\sum_i \\htmlId{f-wprime}{w'_i}\\,x_i, \\qquad w'_i = \\sum_j w_{kj}\\,w_{ji} \\quad \\blacksquare\\]</div>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Il prezzo della non linearità</div>\n    <p>Inserire attivazioni non lineari rende il modello <strong>non lineare nei parametri</strong>: l'addestramento diventa un problema di <strong>ottimizzazione non lineare e non convesso</strong>.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.8,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "unità nascoste devono essere non lineari"
+        },
+        {
+          "at": 17.4,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Scriviamo h di x"
+        },
+        {
+          "at": 25.4,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Scambiando l'ordine"
+        },
+        {
+          "at": 30.37,
+          "action": "highlight",
+          "target": "#f-collapse, #f-wprime",
+          "anchor": "singolo coefficiente w primo"
+        },
+        {
+          "at": 46.73,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "ha un prezzo preciso"
+        }
+      ],
+      "duration_sec": 54.26
+    },
+    {
+      "id": "scene-05",
+      "section": "11.2.3 – 11.2.5 Potere espressivo, VC-dimension e bias induttivo",
+      "title": "Approssimazione universale, VC-dimension e smoothness",
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "tts_text": "Quanto è espressivo un MLP? Il teorema di approssimazione universale afferma che una rete con un solo strato nascosto di unità logistiche e uscita lineare può approssimare arbitrariamente bene qualsiasi funzione continua su un ipercubo, purché disponga di abbastanza unità nascoste. [pause:0.9] Attenzione però: è un teorema di esistenza. Non ci dice né l'algoritmo per trovare i pesi, né quante unità servano. Inoltre esistono funzioni che con un solo strato richiederebbero un numero esponenziale di unità, mentre con più strati ne bastano molte meno. [pause:0.9] Quanto alla VC-dimension, dipende dal numero di parametri ma anche dal valore dei pesi: con pesi nulli o piccoli le sigmoidi lavorano nella zona lineare e la VC-dimension è bassa; man mano che i pesi crescono durante il training, cresce anche la VC-dimension effettiva. La rete è uno spazio delle ipotesi di dimensione variabile, principio alla base dell'early stopping. [pause:0.8] Infine, il bias induttivo della backpropagation è la smoothness: piccole variazioni dell'input producono piccole variazioni dell'uscita.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.2.3 – 11.2.5 · Teoria dell'espressività</div>\n  <h2 class=\"slide-title\">Approssimazione universale, VC-dimension e smoothness</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Approssimazione universale</div>\n    <p>Un MLP con <strong>un solo strato nascosto</strong> (logistico) e uscita lineare approssima arbitrariamente bene ogni funzione continua \\(f\\) su un ipercubo: per ogni \\(\\eps &gt; 0\\) esiste \\(h\\) con \\(\\abs{f(\\x) - h(\\x)} &lt; \\eps\\), purché con abbastanza unità nascoste.</p>\n  </div>\n  <div id=\"s2\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Teorema di esistenza</div>\n    <p>Non fornisce né l'<strong>algoritmo</strong> né il <strong>numero di unità</strong> (che con un solo strato può essere esponenziale rispetto a reti più profonde).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">VC-dimension variabile durante il training</div>\n      <ul class=\"clean-list\">\n        <li><strong>Pesi nulli / piccoli</strong>: zona lineare → VC-dim bassa.</li>\n        <li><strong>Pesi grandi</strong>: non linearità piena → VC-dim alta.</li>\n        <li>Spazio di <strong>dimensione variabile</strong> (base dell'<em>early stopping</em>).</li>\n      </ul>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Bias induttivo: Smoothness</div>\n      <p>Piccole variazioni dell'input producono <strong>piccole variazioni dell'output</strong> (funzioni localmente lisce; altrimenti generalizzare è impossibile).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.8,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "teorema di approssimazione universale"
+        },
+        {
+          "at": 18.54,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Attenzione però: è un teorema di esistenza"
+        },
+        {
+          "at": 33.87,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Quanto alla VC-dimension"
+        },
+        {
+          "at": 58.53,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "bias induttivo della backpropagation"
+        }
+      ],
+      "duration_sec": 66.86
+    },
+    {
+      "id": "scene-06",
+      "section": "11.3 Verso l'algoritmo di apprendimento",
+      "title": "Credit assignment, loading problem e idea della backprop",
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "tts_text": "Come addestriamo una rete multistrato? Il nodo centrale è il problema del credit assignment: quanta responsabilità dell'errore finale va attribuita alle singole unità nascoste? [pause:0.7] Per le unità di uscita conosciamo il target desiderato e misuriamo subito l'errore. Per le unità nascoste, invece, non sappiamo quale dovrebbe essere la loro uscita: il segnale d'errore non è direttamente misurabile. [pause:0.8] Inoltre il cosiddetto loading problem — cioè trovare pesi consistenti con un insieme di esempi su una rete data — è NP-completo: non esiste alcun algoritmo polinomiale garantito. [pause:0.8] La soluzione pratica è estendere la discesa del gradiente agli MLP, usando loss e attivazioni differenziabili per ricavare il delta di ogni unità: è la backpropagation. [pause:0.7] Essa è semplice grazie alla composizione, usa solo calcoli locali preservando la modularità, ed è efficiente: costa un numero di operazioni lineare nel numero dei pesi, invece che quadratico, grazie alla fattorizzazione dei delta.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.3 · Verso l'algoritmo di apprendimento</div>\n  <h2 class=\"slide-title\">Credit assignment, loading problem e idea della backpropagation</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Il problema del Credit Assignment</div>\n      <p>In uscita il target \\(\\dd\\) è noto; per le <strong>unità nascoste</strong> non si conosce l'uscita desiderata: l'errore non è direttamente misurabile.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Definizione — Loading problem</div>\n      <p>Trovare pesi consistenti con gli esempi su una rete fissata è <strong>NP-completo</strong>. La backprop addestra in tempi pratici ma senza garanzia di ottimalità globale.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"props-grid cue-hidden\">\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Richiede <strong>loss e attivazioni differenziabili</strong></div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Semplice grazie alla <strong>forma composizionale</strong></div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Usa solo <strong>quantità locali</strong> (modulare)</div>\n    <div id=\"p-eff\" class=\"prop-item\"><span class=\"prop-dot\"></span><strong>Efficiente</strong>: \\(O(\\#W)\\) anziché \\(O(\\#W^2)\\)</div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.19,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "problema del credit assignment"
+        },
+        {
+          "at": 25.85,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "loading problem"
+        },
+        {
+          "at": 38.21,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "estendere la discesa del gradiente"
+        },
+        {
+          "at": 57.32,
+          "action": "highlight",
+          "target": "#p-eff",
+          "anchor": "lineare nel numero dei pesi"
+        }
+      ],
+      "duration_sec": 62.87
+    },
+    {
+      "id": "scene-07",
+      "section": "11.4.1 La backpropagation: il problema",
+      "title": "Errore totale, Generalized Delta Rule e superficie non convessa",
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "tts_text": "Impostiamo la derivazione della backpropagation. Nota importante per lo studio: questa derivazione non va imparata a memoria, ma saputa rifare per qualsiasi loss, attivazione o architettura. [pause:0.8] Consideriamo un MLP completamente connesso con indici i per l'input, j per lo strato nascosto e k per le K unità di uscita. [pause:0.6] L'errore totale E tot è la somma su tutti gli esempi p dell'errore E con p. E con p è un mezzo della somma su k da uno a K di d con k meno o con k al quadrato. Il fattore un mezzo serve solo a cancellare il due quando deriviamo. [pause:0.9] Il problema della backpropagation — la regola delta generalizzata — consiste nel calcolare la derivata parziale di E tot rispetto a ogni singolo peso w della rete. [pause:0.8] A differenza dei modelli lineari, la superficie dell'errore nello spazio dei pesi non è convessa: presenta più minimi locali, e il punto di arrivo della discesa dipende dal punto di partenza.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.1 · Impostazione della backpropagation</div>\n  <h2 class=\"slide-title\">Errore totale e superficie non convessa</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        \\[E_{\\mathrm{tot}} = \\sum_p E_p, \\qquad E_p = \\htmlId{f-half}{\\frac{1}{2}}\\sum_{k=1}^{K} (d_k - o_k)^2\\]\n        <p class=\"math-note\">Indice \\(p\\) omesso nel seguito; il fattore \\(\\tfrac{1}{2}\\) semplifica la derivata.</p>\n      </div>\n      <div id=\"s2\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione — Generalized Delta Rule</div>\n        <p>Calcolare per ogni peso \\(w\\) della rete \\(\\partial E_{\\mathrm{tot}} / \\partial w\\), stimando il contributo delle unità nascoste all'errore in uscita.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Attenzione — Come studiare la derivazione</div>\n        <p>Saperla <strong>rifare</strong> (non memorizzare), così da adattarla a loss, attivazioni o architetture diverse.</p>\n      </div>\n    </div>\n    <div id=\"s4\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 390 215\" class=\"diagram-svg\" aria-label=\"Superficie d'errore non convessa con più minimi locali\">\n        <line x1=\"30\" y1=\"182\" x2=\"372\" y2=\"182\" class=\"svg-axis\"/>\n        <line x1=\"35\" y1=\"186\" x2=\"35\" y2=\"16\" class=\"svg-axis\"/>\n        <path d=\"M 35.0,11.5 L 37.7,13.6 L 40.5,15.8 L 43.2,18.1 L 46.0,20.4 L 48.8,22.8 L 51.5,25.3 L 54.2,28.0 L 57.0,30.8 L 59.8,33.8 L 62.5,37.0 L 65.2,40.5 L 68.0,44.1 L 70.8,48.0 L 73.5,52.1 L 76.2,56.5 L 79.0,61.0 L 81.8,65.8 L 84.5,70.7 L 87.2,75.8 L 90.0,80.9 L 92.8,86.1 L 95.5,91.1 L 98.2,96.0 L 101.0,100.7 L 103.8,105.1 L 106.5,109.1 L 109.2,112.7 L 112.0,115.7 L 114.8,118.2 L 117.5,120.1 L 120.3,121.4 L 123.0,122.0 L 125.7,122.0 L 128.5,121.4 L 131.2,120.3 L 134.0,118.7 L 136.8,116.7 L 139.5,114.4 L 142.2,111.8 L 145.0,109.1 L 147.8,106.5 L 150.5,103.8 L 153.2,101.4 L 156.0,99.2 L 158.8,97.3 L 161.5,95.9 L 164.2,94.9 L 167.0,94.3 L 169.8,94.3 L 172.5,94.7 L 175.2,95.6 L 178.0,96.9 L 180.8,98.6 L 183.5,100.6 L 186.2,102.7 L 189.0,105.1 L 191.8,107.4 L 194.5,109.8 L 197.2,112.1 L 200.0,114.3 L 202.8,116.3 L 205.5,118.3 L 208.2,120.1 L 211.0,121.8 L 213.8,123.5 L 216.5,125.2 L 219.2,127.0 L 222.0,128.9 L 224.8,130.9 L 227.5,133.1 L 230.2,135.4 L 233.0,137.8 L 235.7,140.4 L 238.5,142.9 L 241.2,145.4 L 244.0,147.6 L 246.8,149.7 L 249.5,151.3 L 252.2,152.4 L 255.0,153.0 L 257.8,152.9 L 260.5,152.1 L 263.2,150.6 L 266.0,148.3 L 268.8,145.3 L 271.5,141.6 L 274.2,137.3 L 277.0,132.4 L 279.8,127.0 L 282.5,121.2 L 285.2,115.2 L 288.0,109.0 L 290.8,102.7 L 293.5,96.4 L 296.2,90.3 L 299.0,84.3 L 301.7,78.5 L 304.5,73.0 L 307.2,67.9 L 310.0,63.0 L 312.8,58.5 L 315.5,54.4 L 318.2,50.5 L 321.0,47.0 L 323.8,43.7 L 326.5,40.7 L 329.2,37.9 L 332.0,35.3 L 334.8,32.9 L 337.5,30.6 L 340.2,28.4 L 343.0,26.3 L 345.8,24.3 L 348.5,22.3 L 351.2,20.4 L 354.0,18.4 L 356.8,16.5 L 359.5,14.6 L 362.2,12.7 L 365.0,10.8\" class=\"svg-curve-blue\"/>\n        <circle cx=\"120.5\" cy=\"117.5\" r=\"4.5\" fill=\"#D9822B\"/>\n        <text x=\"120.5\" y=\"106\" text-anchor=\"middle\" class=\"svg-caption\">minimo locale</text>\n        <circle cx=\"261.0\" cy=\"144.5\" r=\"5\" fill=\"#C0392B\"/>\n        <text x=\"261.0\" y=\"165\" text-anchor=\"middle\" class=\"svg-caption svg-red\">minimo più profondo</text>\n        <text x=\"200\" y=\"203\" text-anchor=\"middle\" class=\"svg-caption\">spazio dei pesi w</text>\n        <text x=\"16\" y=\"100\" transform=\"rotate(-90 16 100)\" text-anchor=\"middle\" class=\"svg-caption\">E(w)</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 6.2,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "non va imparata a memoria"
+        },
+        {
+          "at": 23.36,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "errore totale E tot"
+        },
+        {
+          "at": 38.85,
+          "action": "highlight",
+          "target": "#f-half",
+          "anchor": "fattore un mezzo"
+        },
+        {
+          "at": 44.93,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "regola delta generalizzata"
+        },
+        {
+          "at": 55.67,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "superficie dell'errore"
+        }
+      ],
+      "duration_sec": 64.8
+    },
+    {
+      "id": "scene-08",
+      "section": "11.4.1 La backpropagation: il problema",
+      "title": "Distinguere calcolo del gradiente e regola di aggiornamento",
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "tts_text": "Prima di derivare, separiamo nettamente due passi dello schema iterativo. [pause:0.6] Si inizializzano i pesi e il learning rate eta, si calcolano le uscite e l'errore totale, e si ripete fino al criterio di arresto. [pause:0.7] Passo uno: per ogni peso w si calcola delta w, uguale a meno la derivata parziale di E tot rispetto a w, cioè la somma sui singoli esempi di delta p w. Questo calcolo del gradiente è propriamente ciò che fa la backpropagation. [pause:0.9] Passo due: si aggiornano i pesi con w nuovo uguale a w più eta per delta w, più eventuali termini aggiuntivi. È la regola di aggiornamento, dove nel prossimo capitolo inseriremo varianti come momentum, weight decay, Quickprop o R-prop. [pause:0.7] Passo tre: si ricalcolano le uscite e l'errore totale.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.1 · Schema iterativo</div>\n  <h2 class=\"slide-title\">Backpropagation (gradiente) contro regola di aggiornamento</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo — Backpropagation (schema iterativo)</div>\n    <p style=\"margin-bottom:8px;\">Inizializzare \\(\\w\\) e \\(\\eta\\); calcolare uscite ed \\(E_{\\mathrm{tot}}\\). Finché \\(E_{\\mathrm{tot}} &gt; \\epsilon\\) (o altro criterio di arresto):</p>\n    <ol class=\"algo-list\">\n      <li id=\"a1\"><strong>Passo 1 (calcolo del gradiente — Backpropagation)</strong>: \\(\\Delta w = -\\dfrac{\\partial E_{\\mathrm{tot}}}{\\partial w} = \\sum_p \\Delta_p w\\)</li>\n      <li id=\"a2\"><strong>Passo 2 (regola di aggiornamento)</strong>: \\(w_{\\mathit{new}} = w + \\eta\\,\\Delta w\\ (+\\text{ momentum, weight decay, ecc.})\\)</li>\n      <li id=\"a3\"><strong>Passo 3</strong>: ricalcolare tutte le uscite ed \\(E_{\\mathrm{tot}}\\).</li>\n    </ol>\n  </div>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    \\[\\Delta w = -\\frac{\\partial E_{\\mathrm{tot}}}{\\partial w} = -\\sum_p \\frac{\\partial E_p}{\\partial w} \\;\\overset{\\mathrm{def}}{=}\\; \\sum_p \\htmlId{f-dpw}{\\Delta_p w}\\]\n    <p class=\"math-note\">Per linearità della derivata, basta sapere calcolare \\(\\Delta_p w\\) per un singolo esempio \\(p\\).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.69,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "inizializzano i pesi"
+        },
+        {
+          "at": 14.36,
+          "action": "highlight",
+          "target": "#a1",
+          "anchor": "Passo uno: per ogni peso"
+        },
+        {
+          "at": 23.72,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "somma sui singoli esempi"
+        },
+        {
+          "at": 27.5,
+          "action": "highlight",
+          "target": "#f-dpw",
+          "anchor": "calcolo del gradiente"
+        },
+        {
+          "at": 31.86,
+          "action": "highlight",
+          "target": "#a2",
+          "anchor": "Passo due: si aggiornano"
+        },
+        {
+          "at": 48.16,
+          "action": "highlight",
+          "target": "#a3",
+          "anchor": "Passo tre: si ricalcolano"
+        }
+      ],
+      "duration_sec": 52.05
+    },
+    {
+      "id": "scene-09",
+      "section": "11.4.2 La derivazione",
+      "title": "Gradiente per un peso generico",
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "tts_text": "Deriviamo ora il gradiente per un peso generico w con t u, che porta all'unità t l'ingresso proveniente dall'unità u. [pause:0.7] Vogliamo calcolare delta p di w con t u, cioè meno la derivata parziale di E con p rispetto a w con t u. [pause:0.6] Applichiamo la regola della catena passando per l'input netto net con t. Otteniamo due fattori. [pause:0.6] Il primo fattore è meno la derivata di E con p rispetto a net con t, che chiamiamo delta con t: è il segnale di errore dell'unità t. [pause:0.7] Il secondo fattore è la derivata di net con t rispetto a w con t u. Poiché net con t è la somma su s di w con t s per o con s, tutti i termini sono costanti rispetto a w con t u tranne quello con s uguale a u: la derivata vale esattamente o con u. [pause:0.8] Quindi delta p di w con t u è semplicemente delta con t per o con u. [pause:0.8] Espandendo ora delta con t attraverso o con t uguale a f con t di net con t, otteniamo meno la derivata di E con p rispetto a o con t, per f primo con t di net con t. Resta da calcolare solo quel primo fattore in due casi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.2 · Derivazione — Passo comune</div>\n  <h2 class=\"slide-title\">Il gradiente per un peso generico \\(w_{\\htmlId{f-h-t}{t}\\htmlId{f-h-u}{u}}\\)</h2>\n  <div class=\"proof-steps\">\n    <div id=\"s1\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">Regola della catena via \\(\\net_t\\)</span>\n      <div>\n        \\[\\Delta_p w_{tu} = -\\frac{\\partial E_p}{\\partial w_{tu}} = \\underbrace{\\htmlId{f-dt}{-\\frac{\\partial E_p}{\\partial \\net_t}}}_{\\delta_t} \\cdot \\underbrace{\\htmlId{f-ou}{\\frac{\\partial \\net_t}{\\partial w_{tu}}}}_{o_u} = \\htmlId{f-prod}{\\delta_t\\,o_u}\\]\n        <p class=\"math-note\">Poiché \\(\\net_t = \\sum_s w_{ts}\\,o_s\\), solo il termine \\(s = u\\) dipende da \\(w_{tu}\\), quindi \\(\\partial\\net_t / \\partial w_{tu} = o_u\\).</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Espansione di \\(\\delta_t\\)</span>\n      <div>\n        \\[\\delta_t = -\\frac{\\partial E_p}{\\partial \\net_t} = \\htmlId{f-deo}{-\\frac{\\partial E_p}{\\partial o_t}} \\cdot \\htmlId{f-fp}{\\frac{\\partial o_t}{\\partial \\net_t}} = \\htmlId{f-deo2}{-\\frac{\\partial E_p}{\\partial o_t}} \\cdot \\htmlId{f-fp2}{f'_t(\\net_t)}\\]\n        <p class=\"math-note\">Resta da calcolare \\(-\\partial E_p / \\partial o_t\\) separando due casi: <strong>uscita (\\(t=k\\))</strong> e <strong>nascosta (\\(t=j\\))</strong>.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.66,
+          "action": "highlight",
+          "target": "#f-h-t, #f-h-u",
+          "anchor": "peso generico w con t u"
+        },
+        {
+          "at": 16.88,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "regola della catena passando per"
+        },
+        {
+          "at": 22.7,
+          "action": "highlight",
+          "target": "#f-dt",
+          "anchor": "Il primo fattore è meno"
+        },
+        {
+          "at": 31.54,
+          "action": "highlight",
+          "target": "#f-ou",
+          "anchor": "Il secondo fattore è la derivata"
+        },
+        {
+          "at": 51.71,
+          "action": "highlight",
+          "target": "#f-prod",
+          "anchor": "semplicemente delta con t per o con u"
+        },
+        {
+          "at": 54.95,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Espandendo ora delta con t"
+        },
+        {
+          "at": 61.45,
+          "action": "highlight",
+          "target": "#f-deo, #f-deo2",
+          "anchor": "meno la derivata di E con p rispetto a o"
+        },
+        {
+          "at": 65.21,
+          "action": "highlight",
+          "target": "#f-fp, #f-fp2",
+          "anchor": "f primo con t di net con t"
+        }
+      ],
+      "duration_sec": 70.92
+    },
+    {
+      "id": "scene-10",
+      "section": "11.4.2 La derivazione",
+      "title": "Caso 1: delta per un'unità di uscita (t = k)",
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "tts_text": "Iniziamo dal Caso uno: l'unità t è un'unità di uscita k. [pause:0.6] Qui l'uscita o con k compare direttamente nella formula dell'errore E con p, uguale a un mezzo della somma su r da uno a K di d con r meno o con r al quadrato. [pause:0.7] Derivando rispetto a o con k, tutti i termini con r diverso da k hanno derivata nulla: sopravvive solo il termine r uguale a k. [pause:0.6] La derivata vale un mezzo per due, per d con k meno o con k, per meno uno; con il segno meno davanti, i due segni meno e il fattore due si cancellano, lasciando esattamente d con k meno o con k. [pause:0.9] Sostituendo nella formula di delta otteniamo: delta con k uguale a d con k meno o con k, per f primo con k di net con k. [pause:0.7] È esattamente il delta della singola unità sigmoidale visto nel capitolo precedente: in uscita l'errore è direttamente misurabile perché conosciamo il target d con k.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.2 · Derivazione — Caso 1</div>\n  <h2 class=\"slide-title\">Unità di uscita (\\(t = k\\)): errore direttamente misurabile</h2>\n  <div class=\"proof-steps\">\n    <div id=\"s1\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">Derivata diretta su \\(E_p\\)</span>\n      <div>\n        \\[\\begin{aligned} -\\frac{\\partial E_p}{\\partial o_k} &= -\\frac{\\partial}{\\partial o_k}\\left(\\frac{1}{2}\\sum_{r=1}^{K}(d_r - o_r)^2\\right) \\\\ &= -\\frac{1}{2}\\cdot 2\\,(d_k - o_k)\\cdot(-1) = \\htmlId{f-dkok}{(d_k - o_k)} \\end{aligned}\\]\n        <p class=\"math-note\">Nella somma sopravvive solo il termine con \\(r = k\\).</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Delta di uscita</span>\n      <div>\n        \\[\\boxed{\\;\\htmlId{f-deltak}{\\delta_k = (d_k - o_k)\\,f'_k(\\net_k)}\\;}\\]\n        <p class=\"math-note\">Coincide con il delta della singola unità sigmoidale (Capitolo 10): qui il target \\(d_k\\) è noto.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.39,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "l'uscita o con k compare direttamente"
+        },
+        {
+          "at": 35.61,
+          "action": "highlight",
+          "target": "#f-dkok",
+          "anchor": "lasciando esattamente d con k meno o con k"
+        },
+        {
+          "at": 39.19,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Sostituendo nella formula di delta"
+        },
+        {
+          "at": 41.79,
+          "action": "highlight",
+          "target": "#f-deltak",
+          "anchor": "delta con k uguale a d con k"
+        }
+      ],
+      "duration_sec": 58.59
+    },
+    {
+      "id": "scene-11",
+      "section": "11.4.2 La derivazione",
+      "title": "Caso 2: unità nascosta (t = j) e retropropagazione",
+      "audio_file": "audio/scene-11.wav",
+      "subtitle_file": "subtitles/scene-11.json",
+      "tts_text": "Veniamo al cuore dell'algoritmo: il Caso due, un'unità nascosta j. [pause:0.6] L'unità j non ha target e la sua uscita o con j non compare direttamente in E con p. Tuttavia o con j influenza E con p attraverso tutte le unità di uscita k a cui è collegata, perché ogni net con k dipende da o con j. [pause:0.8] Applichiamo quindi la regola della catena multivariata sommando su tutte le k da uno a K: meno la derivata di E con p rispetto a net con k, moltiplicata per la derivata di net con k rispetto a o con j. [pause:0.8] Ecco il passaggio decisivo: il primo fattore è già stato calcolato ed è proprio delta con k. [pause:0.5] Il secondo fattore, derivata di net con k rispetto a o con j, è esattamente il peso w con k j. [pause:0.8] Otteniamo così la formula del delta nascosto: delta con j è la somma su k di delta con k per w con k j, il tutto moltiplicato per f primo con j di net con j. [pause:0.9] Guarda il diagramma: i delta risalgono la rete all'indietro lungo gli stessi pesi w con k j usati in avanti. Questo risolve il credit assignment.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.2 · Derivazione — Caso 2 (il punto cruciale)</div>\n  <h2 class=\"slide-title\">Unità nascosta (\\(t = j\\)): retropropagazione dei delta</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        \\[-\\frac{\\partial E_p}{\\partial o_j} = \\sum_{k=1}^{K} \\underbrace{\\htmlId{f-dk2}{-\\frac{\\partial E_p}{\\partial \\net_k}}}_{\\delta_k} \\cdot \\underbrace{\\htmlId{f-wkj2}{\\frac{\\partial \\net_k}{\\partial o_j}}}_{w_{kj}} = \\sum_{k=1}^{K} \\delta_k\\,w_{kj}\\]\n      </div>\n      <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n        \\[\\boxed{\\;\\htmlId{f-deltaj}{\\delta_j = \\left(\\sum_{k=1}^{K} \\delta_k\\,w_{kj}\\right) f'_j(\\net_j)}\\;}\\]\n        <p class=\"math-note\">La «colpa» di \\(j\\) è la somma delle colpe \\(\\delta_k\\) pesata da quanto \\(j\\) contribuisce via \\(w_{kj}\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 390 225\" class=\"diagram-svg\" aria-label=\"Retropropagazione dei delta dalle uscite all'unità nascosta j\">\n        <defs>\n          <marker id=\"arr-bp\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-bpr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n        </defs>\n        <circle cx=\"32\" cy=\"115\" r=\"15\" class=\"svg-node\"/><text x=\"32\" y=\"120\" text-anchor=\"middle\" class=\"svg-math-sm\">i</text>\n        <line x1=\"47\" y1=\"115\" x2=\"104\" y2=\"115\" class=\"svg-edge\" marker-end=\"url(#arr-bp)\"/>\n        <text x=\"76\" y=\"106\" text-anchor=\"middle\" class=\"svg-weight\">wⱼᵢ</text>\n        <circle id=\"svg-j\" cx=\"124\" cy=\"115\" r=\"18\" class=\"svg-node-fill\"/><text x=\"124\" y=\"120\" text-anchor=\"middle\" class=\"svg-math-sm\">j</text>\n        <g id=\"svg-fw\">\n          <line x1=\"142\" y1=\"108\" x2=\"258\" y2=\"48\" class=\"svg-edge\" marker-end=\"url(#arr-bp)\"/>\n          <line x1=\"142\" y1=\"115\" x2=\"258\" y2=\"115\" class=\"svg-edge\" marker-end=\"url(#arr-bp)\"/>\n          <line x1=\"142\" y1=\"122\" x2=\"258\" y2=\"182\" class=\"svg-edge\" marker-end=\"url(#arr-bp)\"/>\n          <text x=\"206\" y=\"65\" class=\"svg-weight\">wₖ₁ⱼ</text>\n          <text x=\"206\" y=\"108\" class=\"svg-weight\">wₖ₂ⱼ</text>\n          <text x=\"206\" y=\"168\" class=\"svg-weight\">wₖ₃ⱼ</text>\n        </g>\n        <g id=\"svg-ks\">\n          <circle cx=\"278\" cy=\"44\" r=\"17\" class=\"svg-node-fill\"/><text x=\"278\" y=\"49\" text-anchor=\"middle\" class=\"svg-math-sm\">k₁</text>\n          <circle cx=\"278\" cy=\"115\" r=\"17\" class=\"svg-node-fill\"/><text x=\"278\" y=\"120\" text-anchor=\"middle\" class=\"svg-math-sm\">k₂</text>\n          <circle cx=\"278\" cy=\"186\" r=\"17\" class=\"svg-node-fill\"/><text x=\"278\" y=\"191\" text-anchor=\"middle\" class=\"svg-math-sm\">k₃</text>\n          <text x=\"303\" y=\"48\" class=\"svg-tick\">oₖ₁ vs dₖ₁</text>\n          <text x=\"303\" y=\"119\" class=\"svg-tick\">oₖ₂ vs dₖ₂</text>\n          <text x=\"303\" y=\"190\" class=\"svg-tick\">oₖ₃ vs dₖ₃</text>\n          <text x=\"255\" y=\"66\" class=\"svg-tick svg-red\">δₖ₁</text>\n          <text x=\"255\" y=\"137\" class=\"svg-tick svg-red\">δₖ₂</text>\n          <text x=\"255\" y=\"208\" class=\"svg-tick svg-red\">δₖ₃</text>\n        </g>\n        <g id=\"svg-back\" class=\"cue-hidden\">\n          <path d=\"M 262,24 Q 192,2 128,94\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"2.4\" stroke-dasharray=\"6 4\" marker-end=\"url(#arr-bpr)\"/>\n          <text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption svg-red\">retropropagazione dei δₖ</text>\n          <text x=\"124\" y=\"156\" text-anchor=\"middle\" class=\"svg-math-sm svg-red\">δⱼ</text>\n        </g>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.36,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "unità nascosta j"
+        },
+        {
+          "at": 14.28,
+          "action": "highlight",
+          "target": "#svg-fw, #svg-ks",
+          "anchor": "attraverso tutte le unità di uscita"
+        },
+        {
+          "at": 23.52,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "regola della catena multivariata"
+        },
+        {
+          "at": 41.39,
+          "action": "highlight",
+          "target": "#f-dk2",
+          "anchor": "già stato calcolato"
+        },
+        {
+          "at": 49.17,
+          "action": "highlight",
+          "target": "#f-wkj2, #svg-fw",
+          "anchor": "esattamente il peso w con k j"
+        },
+        {
+          "at": 53.55,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "formula del delta nascosto"
+        },
+        {
+          "at": 55.57,
+          "action": "highlight",
+          "target": "#f-deltaj",
+          "anchor": "delta con j è la somma"
+        },
+        {
+          "at": 67.77,
+          "action": "show",
+          "target": "#svg-back",
+          "anchor": "risalgono la rete all'indietro"
+        },
+        {
+          "at": 67.77,
+          "action": "highlight",
+          "target": "#svg-back, #svg-j",
+          "anchor": "risalgono la rete all'indietro"
+        }
+      ],
+      "duration_sec": 76.2
+    },
+    {
+      "id": "scene-12",
+      "section": "11.4.3 Sintesi delle formule",
+      "title": "Tabella riassuntiva, più strati, ciclo completo e bias",
+      "audio_file": "audio/scene-12.wav",
+      "subtitle_file": "subtitles/scene-12.json",
+      "tts_text": "Riassumiamo le equazioni della backpropagation in una tabella compatta. La forma dell'aggiornamento è sempre identica: delta p di w con t u uguale a delta con t per o con u. [pause:0.6] Per i pesi verso l'uscita w con k j si usa delta con k uguale a d con k meno o con k, per f primo con k. Per i pesi verso lo strato nascosto w con j i si usa delta con j uguale alla somma su k di delta con k per w con k j, per f primo con j. [pause:0.8] La stessa formula si estende subito a qualsiasi numero di strati nascosti: basta sommare su tutti i successori h dell'unità j. Aggiornando esempio per esempio abbiamo la versione online; sommando su tutti gli esempi la versione batch. [pause:0.8] Il ciclo completo procede in cinque passi: fase forward, calcolo dei delta in uscita, fase backward verso gli strati nascosti, aggiornamento dei pesi, e ripetizione fino all'arresto. [pause:0.8] Un promemoria essenziale: non dimenticare i bias. Con ingresso costante o con zero uguale a uno, l'aggiornamento del bias w con t zero è semplicemente delta con t.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.3 · Sintesi e algoritmo completo</div>\n  <h2 class=\"slide-title\">Equazioni, generalizzazione multistrato e bias</h2>\n  <table id=\"s1\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Peso</th><th>Gradiente locale \\(\\Delta_p w_{tu} = \\delta_t\\,o_u\\)</th><th>Segnale d'errore \\(\\delta_t\\)</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"r-out\"><td>\\(w_{kj}\\) (nascosta → uscita)</td><td>\\(\\Delta_p w_{kj} = \\delta_k\\,o_j\\)</td><td>\\(\\delta_k = (d_k - o_k)\\,f'_k(\\net_k)\\)</td></tr>\n      <tr id=\"r-hid\"><td>\\(w_{ji}\\) (input → nascosta)</td><td>\\(\\Delta_p w_{ji} = \\delta_j\\,o_i\\)</td><td>\\(\\delta_j = \\big(\\sum_k \\delta_k\\,w_{kj}\\big)\\,f'_j(\\net_j)\\)</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Generalizzazione a più strati nascosti</div>\n    \\[\\delta_j = \\left(\\sum_{h \\in \\mathrm{successori}(j)} \\delta_h\\,w_{hj}\\right) f'_j(\\net_j)\\]\n    \\[w_{tu}^{\\mathit{new}} = w_{tu} + \\eta\\,\\delta_t\\,o_u\\]\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Ciclo di addestramento completo</div>\n      <ol class=\"algo-list\">\n        <li><strong>Forward</strong>: calcola le uscite strato per strato.</li>\n        <li>Calcola errori e \\(\\delta_k\\) in uscita.</li>\n        <li><strong>Backward</strong>: propaga i \\(\\delta\\) verso gli strati nascosti.</li>\n        <li>Aggiorna i pesi (online o batch) e ripeti fino all'arresto.</li>\n      </ol>\n    </div>\n    <div id=\"s4\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Attenzione — Non dimenticare i bias</div>\n      <p>Anche i bias \\(w_{t0}\\) si aggiornano con la stessa regola: poiché \\(o_0 = 1\\), vale \\(\\htmlId{f-bias}{\\Delta w_{t0} = \\delta_t \\cdot 1}\\).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.77,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Riassumiamo le equazioni"
+        },
+        {
+          "at": 13.37,
+          "action": "highlight",
+          "target": "#r-out",
+          "anchor": "pesi verso l'uscita"
+        },
+        {
+          "at": 22.17,
+          "action": "highlight",
+          "target": "#r-hid",
+          "anchor": "pesi verso lo strato nascosto"
+        },
+        {
+          "at": 34.66,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "qualsiasi numero di strati nascosti"
+        },
+        {
+          "at": 48.04,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "ciclo completo procede"
+        },
+        {
+          "at": 62.6,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "non dimenticare i bias"
+        },
+        {
+          "at": 70.3,
+          "action": "highlight",
+          "target": "#f-bias",
+          "anchor": "semplicemente delta con t"
+        }
+      ],
+      "duration_sec": 72.03
+    },
+    {
+      "id": "scene-13",
+      "section": "11.4.4 Proprietà e interpretazione",
+      "title": "Località, efficienza lineare e tre livelli di lettura",
+      "audio_file": "audio/scene-13.wav",
+      "subtitle_file": "subtitles/scene-13.json",
+      "tts_text": "Perché la backpropagation è così potente? Per tre proprietà strutturali. [pause:0.6] Primo, calcoli solo locali: ogni unità usa solo informazioni dei propri vicini immediati, come un processo di diffusione tra genitori e figli, eppure produce un aggiornamento con effetto globale sull'intera rete. [pause:0.7] Secondo, efficienza: grazie alla fattorizzazione, il delta con t di ogni unità si calcola una sola volta e si riusa per tutti i suoi pesi. Il costo resta lineare nel numero dei pesi anziché quadratico: con un miliardo di pesi significa un miliardo di operazioni invece di dieci alla diciottesima. [pause:0.9] Per padroneggiarla davvero conviene leggerla su tre livelli: i singoli passaggi algebrici, il significato delle derivate parziali come variazioni locali, e il quadro generale della scomposizione dell'errore sulla rete. [pause:0.8] Infine, una nota di terminologia: non si dice mai rete backprop. La rete neurale è il modello; la backpropagation è l'algoritmo di addestramento.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.4 · Proprietà e interpretazione</div>\n  <h2 class=\"slide-title\">Calcoli locali, costo \\(O(\\#W)\\) e terminologia</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Località e diffusione</div>\n      <p>Ogni unità usa solo dati locali dei vicini (genitori/figli), ma l'aggiornamento di ogni \\(w_{tu}\\) ha un <strong>effetto globale</strong> sull'errore.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Fattorizzazione dei delta: \\(O(\\#W)\\)</div>\n      <p>\\(\\delta_t\\) si calcola <strong>una sola volta</strong> e si riusa per tutti i pesi \\(w_{tu}\\). Con \\(10^9\\) pesi: \\(10^9\\) operazioni invece di \\(10^{18}\\).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Tre livelli di lettura</div>\n    <p><strong>1.</strong> I singoli passaggi matematici · <strong>2.</strong> Le derivate parziali come variazioni locali · <strong>3.</strong> Il quadro generale: scomporre l'errore <em>sulla rete</em>.</p>\n  </div>\n  <div id=\"s4\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Terminologia</div>\n    <p>Non si dice «rete backprop»: la <strong>rete neurale</strong> è il modello, la <strong>backpropagation</strong> è l'algoritmo di addestramento basato sul gradiente.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.46,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo, calcoli solo locali"
+        },
+        {
+          "at": 18.98,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo, efficienza"
+        },
+        {
+          "at": 32.37,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "un miliardo di pesi"
+        },
+        {
+          "at": 40.69,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "tre livelli"
+        },
+        {
+          "at": 52.65,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "nota di terminologia"
+        }
+      ],
+      "duration_sec": 62.35
+    },
+    {
+      "id": "scene-14",
+      "section": "11.4.4 Esempio numerico",
+      "title": "Un passo completo di backpropagation con numeri",
+      "audio_file": "audio/scene-14.wav",
+      "subtitle_file": "subtitles/scene-14.json",
+      "tts_text": "Fissiamo tutto con un esempio numerico completo, senza bias. [pause:0.5] Abbiamo un ingresso x uguale a uno, un'unità nascosta sigmoidale j con peso w con j i uguale a zero virgola cinque, e un'unità di uscita lineare k con peso w con k j uguale a uno. Il target d è uno e il learning rate eta è zero virgola uno. [pause:0.9] Fase forward. L'input netto di j è zero virgola cinque; la sigmoide di zero virgola cinque vale circa zero virgola seicentoventidue. L'unità k è lineare con peso uno, quindi l'uscita o con k vale zero virgola seicentoventidue. [pause:0.9] Fase backward. In uscita la derivata dell'identità è uno, quindi delta con k è uno meno zero virgola seicentoventidue, uguale a zero virgola trecentosettantotto. [pause:0.7] Retropropagando su j: delta con j è delta con k per w con k j, moltiplicato per o con j per uno meno o con j, che dà circa zero virgola zero ottantanove. [pause:0.9] Aggiornamenti finali: delta w con k j vale circa zero virgola zero duecentotrentacinque, e delta w con j i vale circa zero virgola zero zero ottantanove. Entrambi i pesi crescono, spingendo l'uscita verso il target.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.4 · Esempio svolto</div>\n  <h2 class=\"slide-title\">Un passo di backpropagation con numeri reali</h2>\n  <div class=\"svg-panel svg-panel-wide\">\n    <svg viewBox=\"0 0 680 118\" class=\"diagram-svg\" aria-label=\"Esempio numerico di rete a 3 nodi\">\n      <defs>\n        <marker id=\"arr-ex\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n        <marker id=\"arr-exr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n        </marker>\n      </defs>\n      <g id=\"ex-net\">\n        <circle cx=\"70\" cy=\"56\" r=\"22\" class=\"svg-node\"/><text x=\"70\" y=\"61\" text-anchor=\"middle\" class=\"svg-math-sm\">x = 1</text>\n        <line id=\"ex-e1\" x1=\"92\" y1=\"56\" x2=\"236\" y2=\"56\" class=\"svg-edge\" marker-end=\"url(#arr-ex)\"/>\n        <text x=\"164\" y=\"46\" text-anchor=\"middle\" class=\"svg-math-sm\">wⱼᵢ = 0,5</text>\n        <circle id=\"ex-j\" cx=\"262\" cy=\"56\" r=\"24\" class=\"svg-node-fill\"/><text x=\"262\" y=\"61\" text-anchor=\"middle\" class=\"svg-math-sm\">j (σ)</text>\n        <line id=\"ex-e2\" x1=\"286\" y1=\"56\" x2=\"430\" y2=\"56\" class=\"svg-edge\" marker-end=\"url(#arr-ex)\"/>\n        <text x=\"358\" y=\"46\" text-anchor=\"middle\" class=\"svg-math-sm\">wₖⱼ = 1</text>\n        <circle id=\"ex-k\" cx=\"456\" cy=\"56\" r=\"24\" class=\"svg-node-fill\"/><text x=\"456\" y=\"61\" text-anchor=\"middle\" class=\"svg-math-sm\">k (lin)</text>\n        <line x1=\"480\" y1=\"56\" x2=\"544\" y2=\"56\" class=\"svg-edge\" marker-end=\"url(#arr-ex)\"/>\n        <text x=\"554\" y=\"51\" class=\"svg-math-sm\">oₖ = 0,622</text>\n        <text x=\"554\" y=\"70\" class=\"svg-caption\">d = 1 · η = 0,1</text>\n      </g>\n      <g id=\"ex-back\" class=\"cue-hidden\">\n        <path d=\"M 442,84 Q 358,112 276,84\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"2\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-exr)\"/>\n        <text x=\"456\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick svg-red\">δₖ = 0,378</text>\n        <text x=\"262\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick svg-red\">δⱼ ≈ 0,089</text>\n      </g>\n    </svg>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Fase Forward</div>\n      <p>\\(\\net_j = 0{,}5 \\implies o_j = \\sigma(0{,}5) \\approx 0{,}622\\)</p>\n      <p>\\(o_k = 1 \\cdot 0{,}622 = 0{,}622\\)</p>\n    </div>\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">2. Fase Backward (delta)</div>\n      <p>\\(\\htmlId{f-ex-dk}{\\delta_k = (1 - 0{,}622)\\cdot 1 = 0{,}378}\\)</p>\n      <p>\\(\\htmlId{f-ex-dj}{\\delta_j = 0{,}378 \\cdot 1 \\cdot 0{,}622(1 - 0{,}622) \\approx 0{,}089}\\)</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"math-card math-card-accent cue-hidden\">\n    \\[\\Delta w_{kj} = 0{,}1 \\cdot 0{,}378 \\cdot 0{,}622 \\approx \\mathbf{0{,}0235}, \\qquad \\Delta w_{ji} = 0{,}1 \\cdot 0{,}089 \\cdot 1 \\approx \\mathbf{0{,}0089}\\]\n    <p class=\"math-note\">Entrambi i pesi aumentano, facendo salire l'uscita \\(o_k\\) verso il target \\(d = 1\\).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 23.6,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Fase forward"
+        },
+        {
+          "at": 25.22,
+          "action": "highlight",
+          "target": "#ex-j, #ex-k",
+          "anchor": "L'input netto di j"
+        },
+        {
+          "at": 40.17,
+          "action": "show",
+          "target": "#s2, #ex-back",
+          "anchor": "Fase backward"
+        },
+        {
+          "at": 44.91,
+          "action": "highlight",
+          "target": "#f-ex-dk, #ex-k",
+          "anchor": "delta con k è uno meno"
+        },
+        {
+          "at": 51.91,
+          "action": "highlight",
+          "target": "#f-ex-dj, #ex-j",
+          "anchor": "Retropropagando su j"
+        },
+        {
+          "at": 64.31,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Aggiornamenti finali"
+        },
+        {
+          "at": 75.69,
+          "action": "highlight",
+          "target": "#ex-e2, #ex-e1",
+          "anchor": "Entrambi i pesi crescono"
+        }
+      ],
+      "duration_sec": 79.7
+    },
+    {
+      "id": "scene-15",
+      "section": "Sintesi e verifica",
+      "title": "Punti chiave e domande di autoverifica",
+      "audio_file": "audio/scene-15.wav",
+      "subtitle_file": "subtitles/scene-15.json",
+      "tts_text": "Chiudiamo il capitolo fissando i quattro punti chiave. [pause:0.7] Primo: l'MLP compone strati non lineari ed equivale a una Linear Basis Expansion con funzioni di base fi con j adattive, apprese dai dati. [pause:0.6] Secondo: le unità nascoste devono essere non lineari, altrimenti il modello collassa a lineare; un solo strato nascosto basta come approssimatore universale, ma è solo un teorema di esistenza. [pause:0.7] Terzo: la VC-dimension cresce insieme ai pesi durante l'addestramento, rendendo la rete uno spazio delle ipotesi di dimensione variabile. [pause:0.7] Quarto: la backpropagation calcola il gradiente per ogni peso con costo lineare nel numero dei pesi, propagando all'indietro i delta dall'uscita alle unità nascoste. Nel prossimo capitolo vedremo tutte le scelte pratiche necessarie per addestrare davvero una rete neurale.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">Capitolo 11 · Chiusura</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>MLP</strong>: \\(h(\\x) = f_k\\big(\\sum_j w_{kj} f_j(\\sum_i w_{ji} x_i)\\big)\\); LBE con basi \\(\\phi_j(\\x,\\w)\\) adattive.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Non linearità</strong>: nascoste lineari \\(\\Rightarrow\\) lineare. 1 strato nascosto = approssimatore universale (esistenza).</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>VC-dimension</strong>: dipende anche dal valore dei pesi (spazio a dimensione variabile).</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Backprop</strong>: \\(\\Delta_p w_{tu} = \\delta_t o_u\\), \\(\\delta_k = (d_k-o_k)f'_k\\), \\(\\delta_j = (\\sum_k \\delta_k w_{kj})f'_j\\); costo \\(O(\\#W)\\).</li>\n      </ul>\n    </div>\n    <div id=\"s5\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Perché le unità nascoste devono essere non lineari?</li>\n        <li>In che senso una rete neurale è una LBE adattiva?</li>\n        <li>Enunciare il teorema di approssimazione universale e i suoi limiti.</li>\n        <li>Cos'è il credit assignment? E il loading problem?</li>\n        <li>Derivare la backpropagation per un MLP a due strati (e con più strati o loss diversa).</li>\n        <li>Perché la backpropagation ha costo lineare nel numero dei pesi?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.64,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: l'MLP compone"
+        },
+        {
+          "at": 14.03,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: le unità nascoste"
+        },
+        {
+          "at": 26.23,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: la VC-dimension"
+        },
+        {
+          "at": 34.69,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: la backpropagation"
+        },
+        {
+          "at": 46.0,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "prossimo capitolo"
+        }
+      ],
+      "duration_sec": 51.81
+    }
+  ]
+}

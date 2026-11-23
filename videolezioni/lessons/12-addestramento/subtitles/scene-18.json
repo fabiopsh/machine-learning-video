@@ -1,0 +1,652 @@
+{
+  "duration": 55.415,
+  "segments": [
+    {
+      "start": 0.536,
+      "end": 4.737,
+      "text": "Chiudiamo il capitolo fissando i sei punti chiave dell'addestramento di una rete neurale.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.536,
+          "end": 0.856
+        },
+        {
+          "text": "il",
+          "start": 0.896,
+          "end": 0.936
+        },
+        {
+          "text": "capitolo",
+          "start": 0.976,
+          "end": 1.376
+        },
+        {
+          "text": "fissando",
+          "start": 1.516,
+          "end": 1.976
+        },
+        {
+          "text": "i",
+          "start": 2.016,
+          "end": 2.056
+        },
+        {
+          "text": "sei",
+          "start": 2.136,
+          "end": 2.316
+        },
+        {
+          "text": "punti",
+          "start": 2.376,
+          "end": 2.656
+        },
+        {
+          "text": "chiave",
+          "start": 2.716,
+          "end": 2.996
+        },
+        {
+          "text": "dell'addestramento",
+          "start": 3.056,
+          "end": 3.837
+        },
+        {
+          "text": "di",
+          "start": 3.877,
+          "end": 3.937
+        },
+        {
+          "text": "una",
+          "start": 3.957,
+          "end": 4.057
+        },
+        {
+          "text": "rete",
+          "start": 4.097,
+          "end": 4.277
+        },
+        {
+          "text": "neurale.",
+          "start": 4.337,
+          "end": 4.737
+        }
+      ]
+    },
+    {
+      "start": 5.937,
+      "end": 10.898,
+      "text": "Primo: pesi iniziali piccoli e casuali per rompere la simmetria ed evitare saturazione,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.937,
+          "end": 6.197
+        },
+        {
+          "text": "pesi",
+          "start": 6.797,
+          "end": 7.017
+        },
+        {
+          "text": "iniziali",
+          "start": 7.057,
+          "end": 7.437
+        },
+        {
+          "text": "piccoli",
+          "start": 7.477,
+          "end": 7.837
+        },
+        {
+          "text": "e",
+          "start": 7.877,
+          "end": 7.917
+        },
+        {
+          "text": "casuali",
+          "start": 7.957,
+          "end": 8.417
+        },
+        {
+          "text": "per",
+          "start": 8.477,
+          "end": 8.597
+        },
+        {
+          "text": "rompere",
+          "start": 8.637,
+          "end": 8.917
+        },
+        {
+          "text": "la",
+          "start": 8.977,
+          "end": 9.037
+        },
+        {
+          "text": "simmetria",
+          "start": 9.097,
+          "end": 9.578
+        },
+        {
+          "text": "ed",
+          "start": 9.718,
+          "end": 9.798
+        },
+        {
+          "text": "evitare",
+          "start": 9.838,
+          "end": 10.178
+        },
+        {
+          "text": "saturazione,",
+          "start": 10.238,
+          "end": 10.898
+        }
+      ]
+    },
+    {
+      "start": 11.278,
+      "end": 14.138,
+      "text": "con più inizializzazioni riportando media e varianza.",
+      "words": [
+        {
+          "text": "con",
+          "start": 11.278,
+          "end": 11.398
+        },
+        {
+          "text": "più",
+          "start": 11.438,
+          "end": 11.538
+        },
+        {
+          "text": "inizializzazioni",
+          "start": 11.638,
+          "end": 12.458
+        },
+        {
+          "text": "riportando",
+          "start": 12.538,
+          "end": 13.058
+        },
+        {
+          "text": "media",
+          "start": 13.138,
+          "end": 13.418
+        },
+        {
+          "text": "e",
+          "start": 13.578,
+          "end": 13.618
+        },
+        {
+          "text": "varianza.",
+          "start": 13.658,
+          "end": 14.138
+        }
+      ]
+    },
+    {
+      "start": 15.158,
+      "end": 17.959,
+      "text": "Secondo: online con shuffling e eta piccolo,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 15.158,
+          "end": 15.558
+        },
+        {
+          "text": "online",
+          "start": 16.159,
+          "end": 16.519
+        },
+        {
+          "text": "con",
+          "start": 16.559,
+          "end": 16.679
+        },
+        {
+          "text": "shuffling",
+          "start": 16.719,
+          "end": 17.159
+        },
+        {
+          "text": "e",
+          "start": 17.219,
+          "end": 17.259
+        },
+        {
+          "text": "eta",
+          "start": 17.319,
+          "end": 17.499
+        },
+        {
+          "text": "piccolo,",
+          "start": 17.559,
+          "end": 17.959
+        }
+      ]
+    },
+    {
+      "start": 18.619,
+      "end": 23.58,
+      "text": "batch accurato, o mini-batch come compromesso standard, usando sempre il gradiente medio.",
+      "words": [
+        {
+          "text": "batch",
+          "start": 18.619,
+          "end": 18.999
+        },
+        {
+          "text": "accurato,",
+          "start": 18.999,
+          "end": 19.519
+        },
+        {
+          "text": "o",
+          "start": 19.839,
+          "end": 19.879
+        },
+        {
+          "text": "mini-batch",
+          "start": 19.919,
+          "end": 20.379
+        },
+        {
+          "text": "come",
+          "start": 20.479,
+          "end": 20.639
+        },
+        {
+          "text": "compromesso",
+          "start": 20.699,
+          "end": 21.199
+        },
+        {
+          "text": "standard,",
+          "start": 21.259,
+          "end": 21.739
+        },
+        {
+          "text": "usando",
+          "start": 22.14,
+          "end": 22.42
+        },
+        {
+          "text": "sempre",
+          "start": 22.48,
+          "end": 22.74
+        },
+        {
+          "text": "il",
+          "start": 22.78,
+          "end": 22.82
+        },
+        {
+          "text": "gradiente",
+          "start": 22.86,
+          "end": 23.28
+        },
+        {
+          "text": "medio.",
+          "start": 23.32,
+          "end": 23.58
+        }
+      ]
+    },
+    {
+      "start": 24.68,
+      "end": 29.641,
+      "text": "Terzo: momentum per accelerare nei plateau e smorzare le oscillazioni nelle valli strette.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 24.68,
+          "end": 25.02
+        },
+        {
+          "text": "momentum",
+          "start": 25.64,
+          "end": 26.1
+        },
+        {
+          "text": "per",
+          "start": 26.12,
+          "end": 26.24
+        },
+        {
+          "text": "accelerare",
+          "start": 26.28,
+          "end": 26.8
+        },
+        {
+          "text": "nei",
+          "start": 26.86,
+          "end": 26.98
+        },
+        {
+          "text": "plateau",
+          "start": 27.02,
+          "end": 27.28
+        },
+        {
+          "text": "e",
+          "start": 27.48,
+          "end": 27.52
+        },
+        {
+          "text": "smorzare",
+          "start": 27.58,
+          "end": 28.041
+        },
+        {
+          "text": "le",
+          "start": 28.081,
+          "end": 28.121
+        },
+        {
+          "text": "oscillazioni",
+          "start": 28.161,
+          "end": 28.741
+        },
+        {
+          "text": "nelle",
+          "start": 28.781,
+          "end": 28.961
+        },
+        {
+          "text": "valli",
+          "start": 29.001,
+          "end": 29.221
+        },
+        {
+          "text": "strette.",
+          "start": 29.261,
+          "end": 29.641
+        }
+      ]
+    },
+    {
+      "start": 30.881,
+      "end": 37.402,
+      "text": "Quarto: la VC-dimension cresce durante il training; si contrasta l'overfitting con regolarizzazione weight decay,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 30.881,
+          "end": 31.221
+        },
+        {
+          "text": "la",
+          "start": 31.901,
+          "end": 31.981
+        },
+        {
+          "text": "VC-dimension",
+          "start": 32.021,
+          "end": 32.741
+        },
+        {
+          "text": "cresce",
+          "start": 32.821,
+          "end": 33.141
+        },
+        {
+          "text": "durante",
+          "start": 33.181,
+          "end": 33.501
+        },
+        {
+          "text": "il",
+          "start": 33.541,
+          "end": 33.581
+        },
+        {
+          "text": "training;",
+          "start": 33.621,
+          "end": 34.041
+        },
+        {
+          "text": "si",
+          "start": 34.502,
+          "end": 34.582
+        },
+        {
+          "text": "contrasta",
+          "start": 34.622,
+          "end": 35.042
+        },
+        {
+          "text": "l'overfitting",
+          "start": 35.122,
+          "end": 35.742
+        },
+        {
+          "text": "con",
+          "start": 35.862,
+          "end": 35.982
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 36.042,
+          "end": 36.802
+        },
+        {
+          "text": "weight",
+          "start": 36.882,
+          "end": 37.062
+        },
+        {
+          "text": "decay,",
+          "start": 37.062,
+          "end": 37.402
+        }
+      ]
+    },
+    {
+      "start": 37.702,
+      "end": 39.082,
+      "text": "early stopping e pruning.",
+      "words": [
+        {
+          "text": "early",
+          "start": 37.702,
+          "end": 37.922
+        },
+        {
+          "text": "stopping",
+          "start": 37.982,
+          "end": 38.442
+        },
+        {
+          "text": "e",
+          "start": 38.602,
+          "end": 38.642
+        },
+        {
+          "text": "pruning.",
+          "start": 38.682,
+          "end": 39.082
+        }
+      ]
+    },
+    {
+      "start": 40.563,
+      "end": 47.164,
+      "text": "Quinto: uscite lineari per la regressione, sigmoidi, tangente iperbolica o Softmax per la classificazione.",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 40.563,
+          "end": 40.883
+        },
+        {
+          "text": "uscite",
+          "start": 41.663,
+          "end": 41.963
+        },
+        {
+          "text": "lineari",
+          "start": 42.003,
+          "end": 42.363
+        },
+        {
+          "text": "per",
+          "start": 42.423,
+          "end": 42.543
+        },
+        {
+          "text": "la",
+          "start": 42.583,
+          "end": 42.643
+        },
+        {
+          "text": "regressione,",
+          "start": 42.683,
+          "end": 43.263
+        },
+        {
+          "text": "sigmoidi,",
+          "start": 43.463,
+          "end": 44.003
+        },
+        {
+          "text": "tangente",
+          "start": 44.183,
+          "end": 44.583
+        },
+        {
+          "text": "iperbolica",
+          "start": 44.623,
+          "end": 45.183
+        },
+        {
+          "text": "o",
+          "start": 45.303,
+          "end": 45.343
+        },
+        {
+          "text": "Softmax",
+          "start": 45.423,
+          "end": 45.863
+        },
+        {
+          "text": "per",
+          "start": 46.063,
+          "end": 46.163
+        },
+        {
+          "text": "la",
+          "start": 46.203,
+          "end": 46.263
+        },
+        {
+          "text": "classificazione.",
+          "start": 46.303,
+          "end": 47.164
+        }
+      ]
+    },
+    {
+      "start": 48.364,
+      "end": 54.345,
+      "text": "Sesto: mai fissare un numero arbitrario di epoche, e gestire sempre l'early stopping all'interno della",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 48.364,
+          "end": 48.704
+        },
+        {
+          "text": "mai",
+          "start": 49.424,
+          "end": 49.604
+        },
+        {
+          "text": "fissare",
+          "start": 49.664,
+          "end": 50.024
+        },
+        {
+          "text": "un",
+          "start": 50.044,
+          "end": 50.104
+        },
+        {
+          "text": "numero",
+          "start": 50.144,
+          "end": 50.384
+        },
+        {
+          "text": "arbitrario",
+          "start": 50.424,
+          "end": 50.924
+        },
+        {
+          "text": "di",
+          "start": 50.964,
+          "end": 51.024
+        },
+        {
+          "text": "epoche,",
+          "start": 51.124,
+          "end": 51.444
+        },
+        {
+          "text": "e",
+          "start": 51.804,
+          "end": 51.844
+        },
+        {
+          "text": "gestire",
+          "start": 51.884,
+          "end": 52.264
+        },
+        {
+          "text": "sempre",
+          "start": 52.364,
+          "end": 52.685
+        },
+        {
+          "text": "l'early",
+          "start": 52.765,
+          "end": 53.025
+        },
+        {
+          "text": "stopping",
+          "start": 53.085,
+          "end": 53.505
+        },
+        {
+          "text": "all'interno",
+          "start": 53.605,
+          "end": 54.125
+        },
+        {
+          "text": "della",
+          "start": 54.185,
+          "end": 54.345
+        }
+      ]
+    },
+    {
+      "start": 54.385,
+      "end": 55.165,
+      "text": "model selection.",
+      "words": [
+        {
+          "text": "model",
+          "start": 54.385,
+          "end": 54.625
+        },
+        {
+          "text": "selection.",
+          "start": 54.665,
+          "end": 55.165
+        }
+      ]
+    }
+  ]
+}

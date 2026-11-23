@@ -1,0 +1,892 @@
+{
+  "duration": 61.746,
+  "segments": [
+    {
+      "start": 0.786,
+      "end": 5.887,
+      "text": "Prima regola essenziale: inizializzare i pesi con valori casuali piccoli e vicini a zero,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 0.786,
+          "end": 1.046
+        },
+        {
+          "text": "regola",
+          "start": 1.106,
+          "end": 1.386
+        },
+        {
+          "text": "essenziale:",
+          "start": 1.446,
+          "end": 2.026
+        },
+        {
+          "text": "inizializzare",
+          "start": 2.426,
+          "end": 3.046
+        },
+        {
+          "text": "i",
+          "start": 3.106,
+          "end": 3.146
+        },
+        {
+          "text": "pesi",
+          "start": 3.146,
+          "end": 3.406
+        },
+        {
+          "text": "con",
+          "start": 3.466,
+          "end": 3.566
+        },
+        {
+          "text": "valori",
+          "start": 3.606,
+          "end": 3.886
+        },
+        {
+          "text": "casuali",
+          "start": 3.946,
+          "end": 4.386
+        },
+        {
+          "text": "piccoli",
+          "start": 4.506,
+          "end": 4.986
+        },
+        {
+          "text": "e",
+          "start": 5.086,
+          "end": 5.126
+        },
+        {
+          "text": "vicini",
+          "start": 5.166,
+          "end": 5.466
+        },
+        {
+          "text": "a",
+          "start": 5.506,
+          "end": 5.546
+        },
+        {
+          "text": "zero,",
+          "start": 5.607,
+          "end": 5.887
+        }
+      ]
+    },
+    {
+      "start": 6.387,
+      "end": 11.007,
+      "text": "ad esempio tra meno zero virgola sette e più zero virgola sette per dati standardizzati.",
+      "words": [
+        {
+          "text": "ad",
+          "start": 6.387,
+          "end": 6.467
+        },
+        {
+          "text": "esempio",
+          "start": 6.487,
+          "end": 6.827
+        },
+        {
+          "text": "tra",
+          "start": 7.047,
+          "end": 7.167
+        },
+        {
+          "text": "meno",
+          "start": 7.287,
+          "end": 7.467
+        },
+        {
+          "text": "zero",
+          "start": 7.547,
+          "end": 7.707
+        },
+        {
+          "text": "virgola",
+          "start": 7.747,
+          "end": 8.027
+        },
+        {
+          "text": "sette",
+          "start": 8.067,
+          "end": 8.387
+        },
+        {
+          "text": "e",
+          "start": 8.467,
+          "end": 8.507
+        },
+        {
+          "text": "più",
+          "start": 8.567,
+          "end": 8.667
+        },
+        {
+          "text": "zero",
+          "start": 8.767,
+          "end": 8.947
+        },
+        {
+          "text": "virgola",
+          "start": 8.987,
+          "end": 9.267
+        },
+        {
+          "text": "sette",
+          "start": 9.327,
+          "end": 9.667
+        },
+        {
+          "text": "per",
+          "start": 9.807,
+          "end": 9.927
+        },
+        {
+          "text": "dati",
+          "start": 9.987,
+          "end": 10.187
+        },
+        {
+          "text": "standardizzati.",
+          "start": 10.227,
+          "end": 11.007
+        }
+      ]
+    },
+    {
+      "start": 11.728,
+      "end": 14.528,
+      "text": "Ci sono tre errori classici da evitare assolutamente.",
+      "words": [
+        {
+          "text": "Ci",
+          "start": 11.728,
+          "end": 11.808
+        },
+        {
+          "text": "sono",
+          "start": 11.848,
+          "end": 12.028
+        },
+        {
+          "text": "tre",
+          "start": 12.128,
+          "end": 12.268
+        },
+        {
+          "text": "errori",
+          "start": 12.308,
+          "end": 12.568
+        },
+        {
+          "text": "classici",
+          "start": 12.628,
+          "end": 13.128
+        },
+        {
+          "text": "da",
+          "start": 13.168,
+          "end": 13.228
+        },
+        {
+          "text": "evitare",
+          "start": 13.268,
+          "end": 13.588
+        },
+        {
+          "text": "assolutamente.",
+          "start": 13.708,
+          "end": 14.528
+        }
+      ]
+    },
+    {
+      "start": 15.188,
+      "end": 16.928,
+      "text": "Primo: pesi tutti nulli.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 15.188,
+          "end": 15.468
+        },
+        {
+          "text": "pesi",
+          "start": 15.888,
+          "end": 16.188
+        },
+        {
+          "text": "tutti",
+          "start": 16.268,
+          "end": 16.548
+        },
+        {
+          "text": "nulli.",
+          "start": 16.628,
+          "end": 16.928
+        }
+      ]
+    },
+    {
+      "start": 17.429,
+      "end": 20.789,
+      "text": "Poiché i delta delle unità nascoste dipendono dai pesi verso l'uscita,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 17.429,
+          "end": 17.649
+        },
+        {
+          "text": "i",
+          "start": 17.729,
+          "end": 17.769
+        },
+        {
+          "text": "delta",
+          "start": 17.809,
+          "end": 18.209
+        },
+        {
+          "text": "delle",
+          "start": 18.249,
+          "end": 18.409
+        },
+        {
+          "text": "unità",
+          "start": 18.449,
+          "end": 18.629
+        },
+        {
+          "text": "nascoste",
+          "start": 18.709,
+          "end": 19.149
+        },
+        {
+          "text": "dipendono",
+          "start": 19.209,
+          "end": 19.589
+        },
+        {
+          "text": "dai",
+          "start": 19.629,
+          "end": 19.749
+        },
+        {
+          "text": "pesi",
+          "start": 19.789,
+          "end": 19.989
+        },
+        {
+          "text": "verso",
+          "start": 20.029,
+          "end": 20.249
+        },
+        {
+          "text": "l'uscita,",
+          "start": 20.289,
+          "end": 20.789
+        }
+      ]
+    },
+    {
+      "start": 21.169,
+      "end": 24.13,
+      "text": "resterebbero tutti a zero e la rete non imparerebbe nulla.",
+      "words": [
+        {
+          "text": "resterebbero",
+          "start": 21.169,
+          "end": 21.649
+        },
+        {
+          "text": "tutti",
+          "start": 21.729,
+          "end": 21.949
+        },
+        {
+          "text": "a",
+          "start": 21.989,
+          "end": 22.029
+        },
+        {
+          "text": "zero",
+          "start": 22.089,
+          "end": 22.369
+        },
+        {
+          "text": "e",
+          "start": 22.629,
+          "end": 22.669
+        },
+        {
+          "text": "la",
+          "start": 22.709,
+          "end": 22.769
+        },
+        {
+          "text": "rete",
+          "start": 22.809,
+          "end": 23.049
+        },
+        {
+          "text": "non",
+          "start": 23.169,
+          "end": 23.289
+        },
+        {
+          "text": "imparerebbe",
+          "start": 23.33,
+          "end": 23.79
+        },
+        {
+          "text": "nulla.",
+          "start": 23.85,
+          "end": 24.13
+        }
+      ]
+    },
+    {
+      "start": 24.91,
+      "end": 26.41,
+      "text": "Secondo: pesi grandi.",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 24.91,
+          "end": 25.39
+        },
+        {
+          "text": "pesi",
+          "start": 25.75,
+          "end": 25.97
+        },
+        {
+          "text": "grandi.",
+          "start": 26.03,
+          "end": 26.41
+        }
+      ]
+    },
+    {
+      "start": 26.93,
+      "end": 31.671,
+      "text": "Le sigmoidi partirebbero già saturate, con derivate quasi nulle e apprendimento lentissimo.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 26.93,
+          "end": 26.99
+        },
+        {
+          "text": "sigmoidi",
+          "start": 27.05,
+          "end": 27.51
+        },
+        {
+          "text": "partirebbero",
+          "start": 27.57,
+          "end": 28.07
+        },
+        {
+          "text": "già",
+          "start": 28.13,
+          "end": 28.19
+        },
+        {
+          "text": "saturate,",
+          "start": 28.27,
+          "end": 28.79
+        },
+        {
+          "text": "con",
+          "start": 28.91,
+          "end": 29.03
+        },
+        {
+          "text": "derivate",
+          "start": 29.07,
+          "end": 29.451
+        },
+        {
+          "text": "quasi",
+          "start": 29.511,
+          "end": 29.731
+        },
+        {
+          "text": "nulle",
+          "start": 29.791,
+          "end": 30.091
+        },
+        {
+          "text": "e",
+          "start": 30.231,
+          "end": 30.271
+        },
+        {
+          "text": "apprendimento",
+          "start": 30.311,
+          "end": 30.911
+        },
+        {
+          "text": "lentissimo.",
+          "start": 31.011,
+          "end": 31.671
+        }
+      ]
+    },
+    {
+      "start": 32.431,
+      "end": 34.311,
+      "text": "Terzo: pesi tutti uguali.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 32.431,
+          "end": 32.871
+        },
+        {
+          "text": "pesi",
+          "start": 33.231,
+          "end": 33.511
+        },
+        {
+          "text": "tutti",
+          "start": 33.611,
+          "end": 33.871
+        },
+        {
+          "text": "uguali.",
+          "start": 33.911,
+          "end": 34.311
+        }
+      ]
+    },
+    {
+      "start": 34.891,
+      "end": 40.972,
+      "text": "Le unità nascoste resterebbero simmetriche, riceverebbero aggiornamenti identici e calcolerebbero tutte la stessa funzione:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 34.891,
+          "end": 34.951
+        },
+        {
+          "text": "unità",
+          "start": 34.991,
+          "end": 35.212
+        },
+        {
+          "text": "nascoste",
+          "start": 35.272,
+          "end": 35.632
+        },
+        {
+          "text": "resterebbero",
+          "start": 35.672,
+          "end": 36.132
+        },
+        {
+          "text": "simmetriche,",
+          "start": 36.192,
+          "end": 36.772
+        },
+        {
+          "text": "riceverebbero",
+          "start": 36.992,
+          "end": 37.492
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 37.532,
+          "end": 38.052
+        },
+        {
+          "text": "identici",
+          "start": 38.092,
+          "end": 38.632
+        },
+        {
+          "text": "e",
+          "start": 38.792,
+          "end": 38.832
+        },
+        {
+          "text": "calcolerebbero",
+          "start": 38.912,
+          "end": 39.572
+        },
+        {
+          "text": "tutte",
+          "start": 39.692,
+          "end": 39.992
+        },
+        {
+          "text": "la",
+          "start": 40.032,
+          "end": 40.092
+        },
+        {
+          "text": "stessa",
+          "start": 40.132,
+          "end": 40.392
+        },
+        {
+          "text": "funzione:",
+          "start": 40.452,
+          "end": 40.972
+        }
+      ]
+    },
+    {
+      "start": 41.533,
+      "end": 43.633,
+      "text": "la casualità serve a rompere la simmetria.",
+      "words": [
+        {
+          "text": "la",
+          "start": 41.533,
+          "end": 41.593
+        },
+        {
+          "text": "casualità",
+          "start": 41.653,
+          "end": 42.113
+        },
+        {
+          "text": "serve",
+          "start": 42.273,
+          "end": 42.513
+        },
+        {
+          "text": "a",
+          "start": 42.553,
+          "end": 42.593
+        },
+        {
+          "text": "rompere",
+          "start": 42.653,
+          "end": 42.953
+        },
+        {
+          "text": "la",
+          "start": 43.013,
+          "end": 43.073
+        },
+        {
+          "text": "simmetria.",
+          "start": 43.113,
+          "end": 43.633
+        }
+      ]
+    },
+    {
+      "start": 44.533,
+      "end": 46.653,
+      "text": "Si può anche scalare l'intervallo in base al fan-in,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 44.533,
+          "end": 44.613
+        },
+        {
+          "text": "può",
+          "start": 44.633,
+          "end": 44.733
+        },
+        {
+          "text": "anche",
+          "start": 44.793,
+          "end": 44.953
+        },
+        {
+          "text": "scalare",
+          "start": 44.993,
+          "end": 45.313
+        },
+        {
+          "text": "l'intervallo",
+          "start": 45.353,
+          "end": 45.833
+        },
+        {
+          "text": "in",
+          "start": 45.853,
+          "end": 45.913
+        },
+        {
+          "text": "base",
+          "start": 45.953,
+          "end": 46.133
+        },
+        {
+          "text": "al",
+          "start": 46.193,
+          "end": 46.253
+        },
+        {
+          "text": "fan-in,",
+          "start": 46.313,
+          "end": 46.653
+        }
+      ]
+    },
+    {
+      "start": 46.973,
+      "end": 48.634,
+      "text": "cioè il numero di ingressi di un'unità.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 46.973,
+          "end": 47.134
+        },
+        {
+          "text": "il",
+          "start": 47.194,
+          "end": 47.234
+        },
+        {
+          "text": "numero",
+          "start": 47.294,
+          "end": 47.534
+        },
+        {
+          "text": "di",
+          "start": 47.594,
+          "end": 47.634
+        },
+        {
+          "text": "ingressi",
+          "start": 47.674,
+          "end": 48.114
+        },
+        {
+          "text": "di",
+          "start": 48.154,
+          "end": 48.214
+        },
+        {
+          "text": "un'unità.",
+          "start": 48.254,
+          "end": 48.634
+        }
+      ]
+    },
+    {
+      "start": 49.334,
+      "end": 54.535,
+      "text": "Molto usata è l'inizializzazione di Glorot e Bengio: bias a zero e pesi uniformi tra",
+      "words": [
+        {
+          "text": "Molto",
+          "start": 49.334,
+          "end": 49.554
+        },
+        {
+          "text": "usata",
+          "start": 49.594,
+          "end": 49.894
+        },
+        {
+          "text": "è",
+          "start": 50.014,
+          "end": 50.054
+        },
+        {
+          "text": "l'inizializzazione",
+          "start": 50.134,
+          "end": 50.994
+        },
+        {
+          "text": "di",
+          "start": 51.054,
+          "end": 51.114
+        },
+        {
+          "text": "Glorot",
+          "start": 51.174,
+          "end": 51.534
+        },
+        {
+          "text": "e",
+          "start": 51.574,
+          "end": 51.614
+        },
+        {
+          "text": "Bengio:",
+          "start": 51.654,
+          "end": 51.974
+        },
+        {
+          "text": "bias",
+          "start": 52.414,
+          "end": 52.814
+        },
+        {
+          "text": "a",
+          "start": 52.934,
+          "end": 52.974
+        },
+        {
+          "text": "zero",
+          "start": 53.055,
+          "end": 53.335
+        },
+        {
+          "text": "e",
+          "start": 53.515,
+          "end": 53.555
+        },
+        {
+          "text": "pesi",
+          "start": 53.615,
+          "end": 53.815
+        },
+        {
+          "text": "uniformi",
+          "start": 53.895,
+          "end": 54.355
+        },
+        {
+          "text": "tra",
+          "start": 54.415,
+          "end": 54.535
+        }
+      ]
+    },
+    {
+      "start": 54.955,
+      "end": 56.835,
+      "text": "meno uno su a e più uno su a,",
+      "words": [
+        {
+          "text": "meno",
+          "start": 54.955,
+          "end": 55.215
+        },
+        {
+          "text": "uno",
+          "start": 55.315,
+          "end": 55.455
+        },
+        {
+          "text": "su",
+          "start": 55.515,
+          "end": 55.595
+        },
+        {
+          "text": "a",
+          "start": 55.675,
+          "end": 55.715
+        },
+        {
+          "text": "e",
+          "start": 56.075,
+          "end": 56.115
+        },
+        {
+          "text": "più",
+          "start": 56.195,
+          "end": 56.315
+        },
+        {
+          "text": "uno",
+          "start": 56.415,
+          "end": 56.555
+        },
+        {
+          "text": "su",
+          "start": 56.615,
+          "end": 56.695
+        },
+        {
+          "text": "a,",
+          "start": 56.795,
+          "end": 56.835
+        }
+      ]
+    },
+    {
+      "start": 57.155,
+      "end": 61.496,
+      "text": "con a uguale alla radice quadrata del fan-in, o dipendente anche dal fan-out.",
+      "words": [
+        {
+          "text": "con",
+          "start": 57.155,
+          "end": 57.295
+        },
+        {
+          "text": "a",
+          "start": 57.355,
+          "end": 57.395
+        },
+        {
+          "text": "uguale",
+          "start": 57.635,
+          "end": 57.915
+        },
+        {
+          "text": "alla",
+          "start": 57.955,
+          "end": 58.075
+        },
+        {
+          "text": "radice",
+          "start": 58.135,
+          "end": 58.435
+        },
+        {
+          "text": "quadrata",
+          "start": 58.475,
+          "end": 58.915
+        },
+        {
+          "text": "del",
+          "start": 58.956,
+          "end": 59.096
+        },
+        {
+          "text": "fan-in,",
+          "start": 59.156,
+          "end": 59.516
+        },
+        {
+          "text": "o",
+          "start": 59.996,
+          "end": 60.036
+        },
+        {
+          "text": "dipendente",
+          "start": 60.076,
+          "end": 60.556
+        },
+        {
+          "text": "anche",
+          "start": 60.636,
+          "end": 60.836
+        },
+        {
+          "text": "dal",
+          "start": 60.876,
+          "end": 60.996
+        },
+        {
+          "text": "fan-out.",
+          "start": 61.056,
+          "end": 61.496
+        }
+      ]
+    }
+  ]
+}

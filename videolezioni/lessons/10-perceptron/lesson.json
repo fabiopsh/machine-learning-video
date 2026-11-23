@@ -5,11 +5,9 @@
   "title": "Dal neurone al Perceptron",
   "source_tex": "note_migliorate/capitoli/10-perceptron.tex",
   "voice_config": {
-    "provider": "edge",
-    "model": "edge-neural-tts",
-    "voice_name": "it-IT-GiuseppeMultilingualNeural",
-    "google_fallback_model": "gemini-2.5-flash-preview-tts",
-    "google_fallback_voice": "Kore",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
     "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
   },
   "scenes": [
@@ -17,802 +15,1138 @@
       "id": "scene-01",
       "section": "10.1 Le reti neurali come strumento di ML",
       "title": "Reti neurali: obiettivi e paradigma",
-      "audio_file": "audio/scene-01.mp3",
+      "audio_file": "audio/scene-01.wav",
       "subtitle_file": "subtitles/scene-01.json",
-      "tts_text": "In questo capitolo entriamo nelle reti neurali, partendo dall'unità più elementare fino al Perceptron e alle unità sigmoidali. Le reti neurali si studiano con due scopi distinti: modellare sistemi biologici nelle neuroscienze, oppure costruire sistemi di machine learning efficaci. Nel nostro corso conta il secondo obiettivo: ci interessano le proprietà computazionali e algoritmiche. Una rete neurale artificiale realizza una funzione h di x che apprende da esempi, approssima funzioni arbitrarie anche non lineari, gestisce rumore e dati incompleti con degradazione graduale, e tratta dati sia reali che discreti. Non è un singolo modello, ma un paradigma sub-simbolico fondato sul connessionismo: comportamenti complessi emergono dall'interazione di molte unità semplici.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.1 · Le reti neurali come strumento di ML</div>\n  <h2 class=\"slide-title\">Due obiettivi, un paradigma sub-simbolico</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">1. Neuroscienze</div>\n      <p>Modellare sistemi biologici e processi cognitivi: conta il <strong>realismo biologico</strong>.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Machine Learning (focus del corso)</div>\n      <p>Costruire modelli \\(h(\\x)\\) efficaci: contano le <strong>proprietà computazionali e algoritmiche</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"props-grid cue-hidden\">\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Apprendono da esempi</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span><strong>Approssimatori universali</strong> (anche non lineari)</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Rumore e dati incompleti: <strong>degradazione graduale</strong></div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Dati reali o discreti, regressione e classificazione</div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Connessionismo</div>\n    <p>Non un singolo modello, ma un <strong>paradigma sub-simbolico</strong>: comportamenti complessi <em>emergono</em> dall'interazione di molte unità computazionali semplici interconnesse.</p>\n  </div>\n</div>\n",
+      "tts_text": "In questo capitolo entriamo nelle reti neurali, partendo dall'unità più elementare fino al Perceptron e alle unità sigmoidali. [pause:0.8] Le reti neurali si studiano con due scopi ben distinti. Il primo è modellare sistemi biologici nelle neuroscienze, dove conta il realismo biologico. [pause:0.6] Il secondo è costruire sistemi di machine learning efficaci. Nel nostro corso conta questo secondo aspetto: guardiamo alle proprietà computazionali e algoritmiche. [pause:0.9] Una rete neurale artificiale realizza una funzione h di x che apprende da esempi, approssima funzioni arbitrarie anche non lineari, gestisce rumore e dati incompleti con degradazione graduale, e tratta dati sia reali che discreti. [pause:0.9] Non è quindi un singolo modello, ma un intero paradigma sub-simbolico fondato sul connessionismo: comportamenti complessi emergono dall'interazione di molte unità semplici.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.1 · Le reti neurali come strumento di ML</div>\n  <h2 class=\"slide-title\">Due obiettivi, un paradigma sub-simbolico</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">1. Neuroscienze</div>\n      <p>Modellare sistemi biologici e processi cognitivi: conta il <strong>realismo biologico</strong>.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Machine Learning (focus del corso)</div>\n      <p>Costruire modelli \\(h(\\x)\\) efficaci: contano le <strong>proprietà computazionali e algoritmiche</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"props-grid cue-hidden\">\n    <div id=\"p1\" class=\"prop-item\"><span class=\"prop-dot\"></span>Apprendono da esempi</div>\n    <div id=\"p2\" class=\"prop-item\"><span class=\"prop-dot\"></span><strong>Approssimatori universali</strong> (anche non lineari)</div>\n    <div id=\"p3\" class=\"prop-item\"><span class=\"prop-dot\"></span>Rumore e dati incompleti: <strong>degradazione graduale</strong></div>\n    <div id=\"p4\" class=\"prop-item\"><span class=\"prop-dot\"></span>Dati reali o discreti, regressione e classificazione</div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Connessionismo</div>\n    <p>Non un singolo modello, ma un <strong>paradigma sub-simbolico</strong>: comportamenti complessi <em>emergono</em> dall'interazione di molte unità computazionali semplici interconnesse.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 10.8,
+          "at": 11.08,
           "action": "show",
           "target": "#s1",
           "anchor": "modellare sistemi biologici"
         },
         {
-          "at": 14.11,
+          "at": 16.54,
           "action": "show",
           "target": "#s2",
           "anchor": "costruire sistemi di machine learning"
         },
         {
-          "at": 20.73,
+          "at": 22.5,
           "action": "highlight",
           "target": "#s2",
           "anchor": "proprietà computazionali"
         },
         {
-          "at": 25.0,
+          "at": 27.11,
           "action": "show",
           "target": "#s3",
           "anchor": "realizza una funzione"
         },
         {
-          "at": 38.05,
+          "at": 30.8,
+          "action": "highlight",
+          "target": "#p2",
+          "anchor": "approssima funzioni arbitrarie"
+        },
+        {
+          "at": 33.79,
+          "action": "highlight",
+          "target": "#p3",
+          "anchor": "gestisce rumore"
+        },
+        {
+          "at": 42.53,
           "action": "show",
           "target": "#s4",
           "anchor": "paradigma sub-simbolico"
         }
       ],
-      "duration_sec": 46.06
+      "duration_sec": 49.75
     },
     {
       "id": "scene-02",
       "section": "10.1.1 L'ispirazione biologica",
       "title": "Ispirazione biologica e regola di Hebb",
-      "audio_file": "audio/scene-02.mp3",
+      "audio_file": "audio/scene-02.wav",
       "subtitle_file": "subtitles/scene-02.json",
-      "tts_text": "L'ispirazione nasce da un fatto sorprendente sul cervello umano: contiene oltre dieci miliardi di neuroni, ciascuno con decine di migliaia di connessioni. Ogni neurone impiega circa un millisecondo a rispondere, eppure riconosciamo un'immagine in un decimo di secondo, cioè in al massimo cento passi seriali. Il segreto è una computazione massicciamente parallela. I segnali entrano dai dendriti, modificano il potenziale e, superata una soglia, scatenano uno spike che viaggia lungo l'assone fino alle sinapsi, eccitatorie o inibitorie. La forza sinaptica cambia con l'apprendimento: è la plasticità, che nel modello artificiale diventa un peso. Secondo l'apprendimento hebbiano, quando gli input del neurone e le uscite correlate si ripetono, la sinapsi si rafforza e i pesi si avvicinano agli input.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.1.1 · L'ispirazione biologica</div>\n  <h2 class=\"slide-title\">Parallelismo massiccio e plasticità sinaptica</h2>\n  <div id=\"s1\" class=\"metrics-row cue-hidden\">\n    <div class=\"metric\"><div class=\"metric-val\">\\(&gt; 10^{10}\\)</div><div class=\"metric-lbl\">neuroni</div></div>\n    <div class=\"metric\"><div class=\"metric-val\">\\(10^4\\text{--}10^5\\)</div><div class=\"metric-lbl\">sinapsi / neurone</div></div>\n    <div class=\"metric\"><div class=\"metric-val\">\\(\\approx 1\\text{ ms}\\)</div><div class=\"metric-lbl\">tempo di risposta</div></div>\n    <div class=\"metric metric-accent\"><div class=\"metric-val\">\\(\\approx 0{,}1\\text{ s}\\)</div><div class=\"metric-lbl\">riconoscimento (\\(\\le 100\\) passi)</div></div>\n  </div>\n  <div id=\"s2\" class=\"flow-chain cue-hidden\">\n    <div class=\"flow-node\"><strong>Dendriti</strong><span>ricevono segnali</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div class=\"flow-node\"><strong>Soglia → Spike</strong><span>impulso elettrico</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div class=\"flow-node\"><strong>Assone</strong><span>propagazione</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"s3\" class=\"flow-node flow-node-accent\"><strong>Sinapsi → Peso</strong><span>eccitatoria / inibitoria</span></div>\n  </div>\n  <div id=\"s4\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Apprendimento hebbiano</div>\n    <p>Una sinapsi si rafforza quando gli input del neurone e le uscite correlate si ripetono. Lo stimolo rinforza la sinapsi, quindi <strong>i pesi si avvicinano agli input</strong>.</p>\n  </div>\n</div>\n",
+      "tts_text": "L'ispirazione nasce da un fatto sorprendente sul cervello umano. [pause:0.5] Contiene oltre dieci miliardi di neuroni, ciascuno con decine di migliaia di connessioni. Un singolo neurone impiega circa un millisecondo a rispondere, eppure riconosciamo un'immagine in un decimo di secondo, cioè in al massimo cento passi seriali. [pause:0.8] Il segreto è una computazione massicciamente parallela. [pause:0.9] I segnali entrano dai dendriti e modificano il potenziale. Superata una soglia, il neurone emette uno spike che viaggia lungo l'assone fino alle sinapsi, eccitatorie o inibitorie. [pause:0.7] La forza di una sinapsi cambia con l'apprendimento: è la plasticità, che nel modello artificiale diventa un peso. [pause:0.9] Secondo la regola di apprendimento hebbiano, quando gli input del neurone e le uscite correlate si ripetono, la sinapsi si rafforza e i pesi si avvicinano agli input.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.1.1 · L'ispirazione biologica</div>\n  <h2 class=\"slide-title\">Parallelismo massiccio e plasticità sinaptica</h2>\n  <div id=\"s1\" class=\"metrics-row cue-hidden\">\n    <div id=\"m1\" class=\"metric\"><div class=\"metric-val\">\\(&gt; 10^{10}\\)</div><div class=\"metric-lbl\">neuroni</div></div>\n    <div id=\"m2\" class=\"metric\"><div class=\"metric-val\">\\(10^4\\text{--}10^5\\)</div><div class=\"metric-lbl\">sinapsi / neurone</div></div>\n    <div id=\"m3\" class=\"metric\"><div class=\"metric-val\">\\(\\approx 1\\text{ ms}\\)</div><div class=\"metric-lbl\">risposta neurone</div></div>\n    <div id=\"m4\" class=\"metric metric-accent\"><div class=\"metric-val\">\\(\\approx 0{,}1\\text{ s}\\)</div><div class=\"metric-lbl\">riconoscimento (\\(\\le 100\\) passi)</div></div>\n  </div>\n  <div id=\"s2\" class=\"flow-chain cue-hidden\">\n    <div id=\"n1\" class=\"flow-node\"><strong>Dendriti</strong><span>ricevono segnali</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"n2\" class=\"flow-node\"><strong>Soglia → Spike</strong><span>impulso elettrico</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"n3\" class=\"flow-node\"><strong>Assone</strong><span>propagazione</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"n4\" class=\"flow-node flow-node-accent\"><strong>Sinapsi → Peso</strong><span>eccitatoria / inibitoria</span></div>\n  </div>\n  <div id=\"s4\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Apprendimento hebbiano</div>\n    <p>Una sinapsi si rafforza quando gli input del neurone e le uscite correlate si ripetono. Lo stimolo rinforza la sinapsi, quindi <strong>i pesi si avvicinano agli input</strong>.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.31,
+          "at": 4.28,
           "action": "show",
           "target": "#s1",
-          "anchor": "dieci miliardi di neuroni"
+          "anchor": "oltre dieci miliardi"
         },
         {
-          "at": 22.53,
+          "at": 13.92,
+          "action": "highlight",
+          "target": "#m4",
+          "anchor": "un decimo di secondo"
+        },
+        {
+          "at": 22.49,
           "action": "show",
           "target": "#s2",
           "anchor": "entrano dai dendriti"
         },
         {
-          "at": 37.85,
+          "at": 22.49,
           "action": "highlight",
-          "target": "#s3",
+          "target": "#n1",
+          "anchor": "entrano dai dendriti"
+        },
+        {
+          "at": 25.29,
+          "action": "highlight",
+          "target": "#n2",
+          "anchor": "Superata una soglia"
+        },
+        {
+          "at": 28.37,
+          "action": "highlight",
+          "target": "#n3",
+          "anchor": "lungo l'assone"
+        },
+        {
+          "at": 29.05,
+          "action": "highlight",
+          "target": "#n4",
+          "anchor": "fino alle sinapsi"
+        },
+        {
+          "at": 37.11,
+          "action": "highlight",
+          "target": "#n4",
           "anchor": "diventa un peso"
         },
         {
-          "at": 39.49,
+          "at": 39.83,
           "action": "show",
           "target": "#s4",
           "anchor": "apprendimento hebbiano"
         }
       ],
-      "duration_sec": 46.39
+      "duration_sec": 48.22
     },
     {
       "id": "scene-03",
       "section": "10.2 Il neurone artificiale",
       "title": "Il modello matematico dell'unità",
-      "audio_file": "audio/scene-03.mp3",
+      "audio_file": "audio/scene-03.wav",
       "subtitle_file": "subtitles/scene-03.json",
-      "tts_text": "Passiamo ora al modello matematico del neurone artificiale, chiamato anche unità o nodo. L'unità i riceve gli ingressi: x con zero uguale a uno, che incorpora il bias, seguito dagli input x con uno, x con due, fino a x con n. Ogni connessione ha un peso libero w con i j, modificato dall'apprendimento. L'unità calcola prima l'input netto, indicato con net con i di x, come somma pesata degli ingressi: sommatoria su j di w con i j per x con j. Applica poi una funzione di attivazione f all'input netto per ottenere l'uscita o con i di x. Attenzione alla notazione degli indici: in w con i j, il primo indice i è sempre l'unità che riceve, mentre j è l'ingresso di partenza. Alcune fonti e librerie usano la convenzione opposta.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.2 · Il neurone artificiale</div>\n  <h2 class=\"slide-title\">Somma pesata e funzione di attivazione</h2>\n  <div class=\"split-visual\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 430 220\" class=\"diagram-svg\" aria-label=\"Schema del neurone artificiale\">\n        <defs>\n          <marker id=\"arr-ink\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-blu\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n        </defs>\n        <g id=\"s1\" class=\"cue-hidden\">\n          <text x=\"58\" y=\"34\" text-anchor=\"end\" class=\"svg-math\">x₀ = 1</text>\n          <text x=\"58\" y=\"76\" text-anchor=\"end\" class=\"svg-math\">x₁</text>\n          <text x=\"58\" y=\"118\" text-anchor=\"end\" class=\"svg-math\">x₂</text>\n          <text x=\"52\" y=\"152\" text-anchor=\"end\" class=\"svg-muted\">⋮</text>\n          <text x=\"58\" y=\"184\" text-anchor=\"end\" class=\"svg-math\">xₙ</text>\n        </g>\n        <g id=\"s2\" class=\"cue-hidden\">\n          <line x1=\"68\" y1=\"30\" x2=\"176\" y2=\"92\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <line x1=\"68\" y1=\"72\" x2=\"173\" y2=\"101\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <line x1=\"68\" y1=\"114\" x2=\"173\" y2=\"109\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <line x1=\"68\" y1=\"180\" x2=\"176\" y2=\"124\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <text x=\"122\" y=\"50\" class=\"svg-weight\">wᵢ₀</text>\n          <text x=\"116\" y=\"81\" class=\"svg-weight\">wᵢ₁</text>\n          <text x=\"116\" y=\"108\" class=\"svg-weight\">wᵢ₂</text>\n          <text x=\"124\" y=\"164\" class=\"svg-weight\">wᵢₙ</text>\n        </g>\n        <g id=\"s3\" class=\"cue-hidden\">\n          <circle cx=\"212\" cy=\"108\" r=\"35\" class=\"svg-neuron-main\"/>\n          <line x1=\"212\" y1=\"73\" x2=\"212\" y2=\"143\" stroke=\"#1A1A1A\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/>\n          <text x=\"195\" y=\"114\" text-anchor=\"middle\" class=\"svg-symbol\">Σ</text>\n          <text x=\"229\" y=\"114\" text-anchor=\"middle\" class=\"svg-symbol svg-blue\">f</text>\n          <text x=\"212\" y=\"164\" text-anchor=\"middle\" class=\"svg-caption\">netᵢ = Σⱼ wᵢⱼ xⱼ</text>\n        </g>\n        <g id=\"s4\" class=\"cue-hidden\">\n          <line x1=\"247\" y1=\"108\" x2=\"326\" y2=\"108\" class=\"svg-edge-accent\" marker-end=\"url(#arr-blu)\"/>\n          <text x=\"336\" y=\"113\" class=\"svg-math svg-blue\">oᵢ = f(netᵢ)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s5\" class=\"math-card cue-hidden\">\n        \\[\\htmlId{f-net}{\\net_i(\\x) = \\sum_{j=0}^{n} w_{ij}\\,x_j} \\qquad \\htmlId{f-out}{o_i(\\x) = f\\big(\\net_i(\\x)\\big)}\\]\n        <p class=\"math-note\">Il bias \\(w_{i0}\\) è incluso fissando \\(x_0 = 1\\).</p>\n      </div>\n      <div id=\"s6\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Attenzione — Notazione dei pesi</div>\n        <p>\\(w_{ij}\\) è il peso <strong>dell'unità \\(i\\)</strong>, cioè della connessione <strong>da \\(j\\) verso \\(i\\)</strong>. Il primo indice è l'unità che riceve.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Passiamo ora al modello matematico del neurone artificiale, chiamato anche unità o nodo. [pause:0.7] L'unità i riceve una serie di ingressi: x con uno, x con due, fino a x con n. [pause:0.5] A questi aggiungiamo l'ingresso costante x con zero uguale a uno, che serve a incorporare il bias direttamente nella somma. [pause:0.8] Ogni connessione porta un peso libero, indicato con w, i, j, che viene modificato durante l'apprendimento. [pause:0.9] Osserva la formula a destra passo per passo. [pause:0.4] L'unità calcola prima l'input netto, net con i di x: è la somma pesata di tutti i prodotti w, i, j per x con j. [pause:0.9] Poi applica una funzione di attivazione f a questo input netto, ottenendo l'uscita finale o con i di x. [pause:1.0] Fai molta attenzione alla convenzione sugli indici del peso w, i, j. [pause:0.5] Il primo indice, i, è sempre l'unità che riceve il segnale. [pause:0.6] Il secondo indice, j, è l'ingresso da cui la connessione parte. Alcune librerie usano la convenzione opposta.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.2 · Il neurone artificiale</div>\n  <h2 class=\"slide-title\">Somma pesata, attivazione e convenzione sugli indici</h2>\n  <div class=\"split-visual\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 430 220\" class=\"diagram-svg\" aria-label=\"Schema del neurone artificiale\">\n        <defs>\n          <marker id=\"arr-ink\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-blu\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n        </defs>\n        <g id=\"s-in\" class=\"cue-hidden\">\n          <g id=\"svg-xs\">\n            <text x=\"58\" y=\"76\" text-anchor=\"end\" class=\"svg-math\">x₁</text>\n            <text x=\"58\" y=\"118\" text-anchor=\"end\" class=\"svg-math\">x₂</text>\n            <text x=\"52\" y=\"152\" text-anchor=\"end\" class=\"svg-muted\">⋮</text>\n            <text x=\"58\" y=\"184\" text-anchor=\"end\" class=\"svg-math\">xₙ</text>\n          </g>\n        </g>\n        <g id=\"s-bias\" class=\"cue-hidden\">\n          <text id=\"svg-x0\" x=\"58\" y=\"34\" text-anchor=\"end\" class=\"svg-math\">x₀ = 1</text>\n          <line x1=\"68\" y1=\"30\" x2=\"176\" y2=\"92\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <text x=\"122\" y=\"50\" class=\"svg-weight\">wᵢ₀</text>\n        </g>\n        <g id=\"s-weights\" class=\"cue-hidden\">\n          <line x1=\"68\" y1=\"72\" x2=\"173\" y2=\"101\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <line x1=\"68\" y1=\"114\" x2=\"173\" y2=\"109\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <line x1=\"68\" y1=\"180\" x2=\"176\" y2=\"124\" class=\"svg-edge\" marker-end=\"url(#arr-ink)\"/>\n          <text x=\"116\" y=\"81\" class=\"svg-weight\">wᵢ₁</text>\n          <text x=\"116\" y=\"108\" class=\"svg-weight\">wᵢ₂</text>\n          <text x=\"124\" y=\"164\" class=\"svg-weight\">wᵢₙ</text>\n        </g>\n        <g id=\"s-neuron\" class=\"cue-hidden\">\n          <circle id=\"svg-node-i\" cx=\"212\" cy=\"108\" r=\"35\" class=\"svg-neuron-main\"/>\n          <line x1=\"212\" y1=\"73\" x2=\"212\" y2=\"143\" stroke=\"#1A1A1A\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/>\n          <g id=\"svg-sum\">\n            <text x=\"195\" y=\"114\" text-anchor=\"middle\" class=\"svg-symbol\">Σ</text>\n            <text x=\"212\" y=\"166\" text-anchor=\"middle\" class=\"svg-caption\">netᵢ = Σⱼ wᵢⱼ xⱼ</text>\n          </g>\n          <text id=\"svg-act\" x=\"229\" y=\"114\" text-anchor=\"middle\" class=\"svg-symbol svg-blue\">f</text>\n          <text x=\"212\" y=\"64\" text-anchor=\"middle\" class=\"svg-caption\">unità i</text>\n        </g>\n        <g id=\"s-out\" class=\"cue-hidden\">\n          <line x1=\"247\" y1=\"108\" x2=\"326\" y2=\"108\" class=\"svg-edge-accent\" marker-end=\"url(#arr-blu)\"/>\n          <text x=\"336\" y=\"113\" class=\"svg-math svg-blue\">oᵢ = f(netᵢ)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s-eq\" class=\"math-card cue-hidden\">\n        \\[\\htmlId{f-net}{\\net_i(\\x)} = \\htmlId{f-sum}{\\sum_{j=0}^{n} \\htmlId{f-wij}{w_{\\htmlId{f-i}{i}\\htmlId{f-j}{j}}}\\,x_j}\\]\n        \\[\\htmlId{f-out}{o_i(\\x)} = \\htmlId{f-act}{f}\\big(\\net_i(\\x)\\big)\\]\n        <p id=\"s-bias-note\" class=\"math-note\">Il bias \\(w_{i0}\\) è incluso fissando \\(x_0 = 1\\).</p>\n      </div>\n      <div id=\"s-warn\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Attenzione — Notazione dei pesi \\(w_{\\htmlId{w-i}{i}\\htmlId{w-j}{j}}\\)</div>\n        <p>Connessione <strong>dall'ingresso \\(\\htmlId{w-j2}{j}\\)</strong> verso <strong>l'unità \\(\\htmlId{w-i2}{i}\\)</strong>: il primo indice è sempre chi riceve.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.26,
+          "at": 7.52,
           "action": "show",
-          "target": "#s1",
-          "anchor": "riceve gli ingressi"
+          "target": "#s-in",
+          "anchor": "riceve una serie di ingressi"
         },
         {
-          "at": 14.34,
+          "at": 15.14,
           "action": "show",
-          "target": "#s2",
-          "anchor": "Ogni connessione ha un peso"
+          "target": "#s-bias",
+          "anchor": "ingresso costante x con zero"
         },
         {
-          "at": 20.18,
+          "at": 15.14,
+          "action": "highlight",
+          "target": "#s-bias",
+          "anchor": "ingresso costante x con zero"
+        },
+        {
+          "at": 23.32,
           "action": "show",
-          "target": "#s3",
+          "target": "#s-weights",
+          "anchor": "Ogni connessione porta un peso"
+        },
+        {
+          "at": 23.32,
+          "action": "highlight",
+          "target": "#s-weights",
+          "anchor": "Ogni connessione porta un peso"
+        },
+        {
+          "at": 31.26,
+          "action": "show",
+          "target": "#s-neuron, #s-eq",
+          "anchor": "Osserva la formula a destra"
+        },
+        {
+          "at": 35.22,
+          "action": "highlight",
+          "target": "#f-net, #svg-sum",
           "anchor": "calcola prima l'input netto"
         },
         {
-          "at": 20.18,
-          "action": "show",
-          "target": "#s5",
-          "anchor": "calcola prima l'input netto"
-        },
-        {
-          "at": 24.09,
+          "at": 39.92,
           "action": "highlight",
-          "target": "#f-net",
-          "anchor": "somma pesata degli ingressi"
+          "target": "#f-sum, #svg-sum",
+          "anchor": "somma pesata di tutti i prodotti"
         },
         {
-          "at": 29.71,
+          "at": 46.16,
           "action": "show",
-          "target": "#s4",
-          "anchor": "funzione di attivazione"
+          "target": "#s-out",
+          "anchor": "applica una funzione di attivazione"
         },
         {
-          "at": 31.95,
+          "at": 46.85,
           "action": "highlight",
-          "target": "#f-out",
-          "anchor": "ottenere l'uscita"
+          "target": "#f-act, #svg-act",
+          "anchor": "funzione di attivazione f"
         },
         {
-          "at": 33.62,
+          "at": 51.35,
+          "action": "highlight",
+          "target": "#f-out, #s-out",
+          "anchor": "uscita finale o con i"
+        },
+        {
+          "at": 54.79,
           "action": "show",
-          "target": "#s6",
-          "anchor": "Attenzione alla notazione"
+          "target": "#s-warn",
+          "anchor": "Fai molta attenzione alla convenzione"
+        },
+        {
+          "at": 57.73,
+          "action": "highlight",
+          "target": "#f-wij",
+          "anchor": "peso w, i, j"
+        },
+        {
+          "at": 60.31,
+          "action": "highlight",
+          "target": "#f-i, #w-i, #w-i2, #svg-node-i",
+          "anchor": "Il primo indice, i"
+        },
+        {
+          "at": 65.65,
+          "action": "highlight",
+          "target": "#f-j, #w-j, #w-j2, #svg-xs",
+          "anchor": "Il secondo indice, j"
         }
       ],
-      "duration_sec": 43.63
+      "duration_sec": 72.49
     },
     {
       "id": "scene-04",
       "section": "10.2 Il neurone artificiale",
       "title": "Tre funzioni di attivazione classiche",
-      "audio_file": "audio/scene-04.mp3",
+      "audio_file": "audio/scene-04.wav",
       "subtitle_file": "subtitles/scene-04.json",
-      "tts_text": "La scelta della funzione di attivazione f definisce il comportamento dell'unità. Tre funzioni classiche guidano tutto questo capitolo. La prima è la funzione lineare, cioè l'identità: l'uscita coincide con la somma pesata degli ingressi ed è alla base dei modelli lineari. La seconda è la funzione a soglia, o a gradino: restituisce più uno sopra lo zero e meno uno sotto lo zero, dando vita al Perceptron, cioè l'unità a soglia lineare. La terza è la funzione logistica, o sigmoide: una curva continua, liscia e differenziabile compresa tra zero e uno, che studieremo nell'ultima parte del capitolo.",
+      "tts_text": "La scelta della funzione di attivazione f definisce il comportamento dell'unità. Tre funzioni classiche guidano tutto questo capitolo. [pause:0.8] La prima è la funzione lineare, cioè l'identità: l'uscita coincide con la somma pesata degli ingressi ed è alla base dei modelli lineari. [pause:0.8] La seconda è la funzione a soglia, o a gradino. Restituisce più uno sopra lo zero e meno uno sotto lo zero, dando vita al Perceptron, cioè l'unità a soglia lineare. [pause:0.8] La terza è la funzione logistica, o sigmoide: una curva continua, liscia e differenziabile compresa tra zero e uno, che studieremo nell'ultima parte del capitolo.",
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.2 · Funzioni di attivazione</div>\n  <h2 class=\"slide-title\">Tre attivazioni classiche a confronto</h2>\n  <div class=\"grid-3\">\n    <div id=\"s1\" class=\"plot-card cue-hidden\">\n      <div class=\"plot-title\">Lineare (identità)</div>\n      <svg viewBox=\"0 0 180 135\" class=\"diagram-svg\">\n        <line x1=\"20\" y1=\"65\" x2=\"165\" y2=\"65\" class=\"svg-axis\"/>\n        <line x1=\"90\" y1=\"120\" x2=\"90\" y2=\"12\" class=\"svg-axis\"/>\n        <line x1=\"30\" y1=\"115\" x2=\"150\" y2=\"15\" class=\"svg-curve-blue\"/>\n        <text x=\"160\" y=\"78\" class=\"svg-tick\">net</text>\n        <text x=\"95\" y=\"78\" class=\"svg-tick\">0</text>\n      </svg>\n      <div class=\"plot-eq\">\\(h(\\x) = \\sum_i w_i x_i\\)</div>\n    </div>\n    <div id=\"s2\" class=\"plot-card cue-hidden\">\n      <div class=\"plot-title\">A soglia (Perceptron / LTU)</div>\n      <svg viewBox=\"0 0 180 135\" class=\"diagram-svg\">\n        <line x1=\"20\" y1=\"65\" x2=\"165\" y2=\"65\" class=\"svg-axis\"/>\n        <line x1=\"90\" y1=\"120\" x2=\"90\" y2=\"12\" class=\"svg-axis\"/>\n        <path d=\"M 22,105 L 90,105 L 90,25 L 158,25\" class=\"svg-curve-blue\"/>\n        <text x=\"77\" y=\"29\" class=\"svg-tick\">+1</text>\n        <text x=\"74\" y=\"109\" class=\"svg-tick\">-1</text>\n        <text x=\"160\" y=\"78\" class=\"svg-tick\">net</text>\n      </svg>\n      <div class=\"plot-eq\">\\(o = \\sign(\\net)\\)</div>\n    </div>\n    <div id=\"s3\" class=\"plot-card cue-hidden\">\n      <div class=\"plot-title\">Logistica (sigmoide)</div>\n      <svg viewBox=\"0 0 180 135\" class=\"diagram-svg\">\n        <line x1=\"20\" y1=\"110\" x2=\"165\" y2=\"110\" class=\"svg-axis\"/>\n        <line x1=\"90\" y1=\"120\" x2=\"90\" y2=\"12\" class=\"svg-axis\"/>\n        <line x1=\"86\" y1=\"65\" x2=\"94\" y2=\"65\" class=\"svg-axis\"/>\n        <line x1=\"86\" y1=\"20\" x2=\"94\" y2=\"20\" class=\"svg-axis\"/>\n        <path d=\"M 20.0,108.4 L 24.4,107.9 L 28.8,107.4 L 33.1,106.6 L 37.5,105.7 L 41.9,104.6 L 46.2,103.2 L 50.6,101.4 L 55.0,99.3 L 59.4,96.7 L 63.8,93.6 L 68.1,90.0 L 72.5,85.8 L 76.9,81.1 L 81.2,76.0 L 85.6,70.6 L 90.0,65.0 L 94.4,59.4 L 98.8,54.0 L 103.1,48.9 L 107.5,44.2 L 111.9,40.0 L 116.2,36.4 L 120.6,33.3 L 125.0,30.7 L 129.4,28.6 L 133.8,26.8 L 138.1,25.4 L 142.5,24.3 L 146.9,23.4 L 151.2,22.6 L 155.6,22.1 L 160.0,21.6\" class=\"svg-curve-blue\"/>\n        <text x=\"72\" y=\"24\" class=\"svg-tick\">1</text>\n        <text x=\"64\" y=\"69\" class=\"svg-tick\">0,5</text>\n        <text x=\"160\" y=\"123\" class=\"svg-tick\">net</text>\n      </svg>\n      <div class=\"plot-eq\">\\(f_\\sigma(x) = \\frac{1}{1+e^{-ax}}\\)</div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 8.36,
+          "at": 8.04,
           "action": "show",
           "target": "#s1",
           "anchor": "La prima è la funzione lineare"
         },
         {
-          "at": 8.36,
+          "at": 8.04,
           "action": "highlight",
           "target": "#s1",
           "anchor": "La prima è la funzione lineare"
         },
         {
-          "at": 18.59,
+          "at": 16.04,
           "action": "show",
           "target": "#s2",
           "anchor": "La seconda è la funzione a soglia"
         },
         {
-          "at": 18.59,
+          "at": 16.04,
           "action": "highlight",
           "target": "#s2",
           "anchor": "La seconda è la funzione a soglia"
         },
         {
-          "at": 28.83,
+          "at": 26.18,
           "action": "show",
           "target": "#s3",
           "anchor": "La terza è la funzione logistica"
         },
         {
-          "at": 28.83,
+          "at": 26.18,
           "action": "highlight",
           "target": "#s3",
           "anchor": "La terza è la funzione logistica"
         }
       ],
-      "duration_sec": 39.48
+      "duration_sec": 35.19
     },
     {
       "id": "scene-05",
       "section": "10.3 Reti di unità a soglia e funzioni booleane",
       "title": "McCulloch-Pitts e le porte AND, OR, NOT",
-      "audio_file": "audio/scene-05.mp3",
+      "audio_file": "audio/scene-05.wav",
       "subtitle_file": "subtitles/scene-05.json",
-      "tts_text": "Il primo modello storico di neurone, proposto da McCulloch e Pitts, ha due stati: attivo, uno, e non attivo, zero. I pesi positivi rappresentano connessioni eccitatorie, quelli negativi connessioni inibitorie. Il neurone si attiva quando l'input netto, prodotto scalare tra w e x, supera zero, altrimenti restituisce zero oppure meno uno. Con questa singola unità a soglia costruiamo già le porte booleane fondamentali. Per l'AND scegliamo w uno e w due uguali a uno, e bias meno uno virgola cinque: servono entrambi gli input a uno per superare la soglia. Per l'OR basta alzare il bias a meno zero virgola cinque: è sufficiente un solo input a uno. Per il NOT poniamo peso meno uno e bias più zero virgola cinque, invertendo lo stato dell'ingresso.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3 · Reti di unità a soglia e funzioni booleane</div>\n  <h2 class=\"slide-title\">Una singola unità a soglia realizza AND, OR, NOT</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\net = \\w\\T\\x = \\sum_{i=0}^{n} w_i x_i, \\qquad o = \\begin{cases} 1 & \\text{se } \\net > 0 \\\\ 0\\text{ (o }-1\\text{)} & \\text{altrimenti} \\end{cases}\\]\n    <p class=\"math-note\">Sinapsi <strong>eccitatorie</strong> (\\(w &gt; 0\\)) · Sinapsi <strong>inibitorie</strong> (\\(w &lt; 0\\)).</p>\n  </div>\n  <div class=\"grid-3\">\n    <div id=\"s2\" class=\"gate-card cue-hidden\">\n      <div class=\"gate-name\">AND</div>\n      <div class=\"gate-params\">\\(w_1 = w_2 = 1\\)<br/>\\(w_0 = -1{,}5\\)</div>\n      <p class=\"gate-desc\">Servono <strong>entrambi</strong> gli input a \\(1\\) per superare \\(1{,}5\\).</p>\n    </div>\n    <div id=\"s3\" class=\"gate-card cue-hidden\">\n      <div class=\"gate-name\">OR</div>\n      <div class=\"gate-params\">\\(w_1 = w_2 = 1\\)<br/>\\(w_0 = -0{,}5\\)</div>\n      <p class=\"gate-desc\">Basta <strong>un solo</strong> input a \\(1\\) affinché \\(\\net &gt; 0\\).</p>\n    </div>\n    <div id=\"s4\" class=\"gate-card cue-hidden\">\n      <div class=\"gate-name\">NOT</div>\n      <div class=\"gate-params\">\\(w_1 = -1\\)<br/>\\(w_0 = +0{,}5\\)</div>\n      <p class=\"gate-desc\">Se \\(x_1=0 \\Rightarrow \\net=0{,}5\\); se \\(x_1=1 \\Rightarrow \\net=-0{,}5\\).</p>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Il primo modello storico di neurone, proposto da McCulloch e Pitts, ha due soli stati: attivo, uno, e non attivo, zero. [pause:0.6] I pesi positivi rappresentano connessioni eccitatorie, quelli negativi connessioni inibitorie. Il neurone si attiva quando l'input netto, prodotto scalare tra w e x, supera zero, altrimenti restituisce zero oppure meno uno. [pause:0.9] Con una singola unità a soglia possiamo già costruire le porte booleane fondamentali. [pause:0.6] Per l'AND scegliamo w uno e w due uguali a uno, con bias meno uno virgola cinque: servono entrambi gli input a uno per superare la soglia. [pause:0.8] Per l'OR basta alzare il bias a meno zero virgola cinque: è sufficiente un solo input a uno. [pause:0.8] Per il NOT poniamo peso meno uno e bias più zero virgola cinque, invertendo così lo stato dell'ingresso.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3 · Reti di unità a soglia e funzioni booleane</div>\n  <h2 class=\"slide-title\">Una singola unità a soglia realizza AND, OR, NOT</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\htmlId{f-net5}{\\net = \\w\\T\\x = \\sum_{i=0}^{n} w_i x_i}, \\qquad \\htmlId{f-step5}{o = \\begin{cases} 1 & \\text{se } \\net > 0 \\\\ 0\\text{ (o }-1\\text{)} & \\text{altrimenti} \\end{cases}}\\]\n    <p id=\"s1-note\" class=\"math-note\">Sinapsi <strong>eccitatorie</strong> (\\(w &gt; 0\\)) · Sinapsi <strong>inibitorie</strong> (\\(w &lt; 0\\)).</p>\n  </div>\n  <div class=\"grid-3\">\n    <div id=\"s2\" class=\"gate-card cue-hidden\">\n      <div class=\"gate-name\">AND</div>\n      <div class=\"gate-params\">\\(w_1 = w_2 = 1\\)<br/>\\(\\htmlId{g-and-b}{w_0 = -1{,}5}\\)</div>\n      <p class=\"gate-desc\">Servono <strong>entrambi</strong> gli input a \\(1\\) per superare \\(1{,}5\\).</p>\n    </div>\n    <div id=\"s3\" class=\"gate-card cue-hidden\">\n      <div class=\"gate-name\">OR</div>\n      <div class=\"gate-params\">\\(w_1 = w_2 = 1\\)<br/>\\(\\htmlId{g-or-b}{w_0 = -0{,}5}\\)</div>\n      <p class=\"gate-desc\">Basta <strong>un solo</strong> input a \\(1\\) affinché \\(\\net &gt; 0\\).</p>\n    </div>\n    <div id=\"s4\" class=\"gate-card cue-hidden\">\n      <div class=\"gate-name\">NOT</div>\n      <div class=\"gate-params\">\\(\\htmlId{g-not-w}{w_1 = -1}\\)<br/>\\(w_0 = +0{,}5\\)</div>\n      <p class=\"gate-desc\">Se \\(x_1=0 \\Rightarrow \\net=0{,}5\\); se \\(x_1=1 \\Rightarrow \\net=-0{,}5\\).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 2.68,
+          "at": 2.69,
           "action": "show",
           "target": "#s1",
           "anchor": "McCulloch e Pitts"
         },
         {
-          "at": 26.48,
+          "at": 9.32,
+          "action": "highlight",
+          "target": "#s1-note",
+          "anchor": "connessioni eccitatorie"
+        },
+        {
+          "at": 15.76,
+          "action": "highlight",
+          "target": "#f-net5",
+          "anchor": "prodotto scalare tra w e x"
+        },
+        {
+          "at": 17.94,
+          "action": "highlight",
+          "target": "#f-step5",
+          "anchor": "supera zero"
+        },
+        {
+          "at": 26.92,
           "action": "show",
           "target": "#s2",
           "anchor": "Per l'AND scegliamo"
         },
         {
-          "at": 26.48,
+          "at": 30.92,
           "action": "highlight",
-          "target": "#s2",
-          "anchor": "Per l'AND scegliamo"
+          "target": "#s2, #g-and-b",
+          "anchor": "bias meno uno virgola cinque"
         },
         {
-          "at": 34.99,
+          "at": 36.86,
           "action": "show",
           "target": "#s3",
           "anchor": "Per l'OR basta"
         },
         {
-          "at": 34.99,
+          "at": 38.76,
           "action": "highlight",
-          "target": "#s3",
-          "anchor": "Per l'OR basta"
+          "target": "#s3, #g-or-b",
+          "anchor": "meno zero virgola cinque"
         },
         {
-          "at": 40.77,
+          "at": 42.94,
           "action": "show",
           "target": "#s4",
           "anchor": "Per il NOT poniamo"
         },
         {
-          "at": 40.77,
+          "at": 44.04,
           "action": "highlight",
-          "target": "#s4",
-          "anchor": "Per il NOT poniamo"
+          "target": "#s4, #g-not-w",
+          "anchor": "peso meno uno"
         }
       ],
-      "duration_sec": 47.33
+      "duration_sec": 49.32
     },
     {
       "id": "scene-06",
       "section": "10.3.1 Lo XOR con due strati",
       "title": "Decomposizione algebrica dello XOR",
-      "audio_file": "audio/scene-06.mp3",
+      "audio_file": "audio/scene-06.wav",
       "subtitle_file": "subtitles/scene-06.json",
-      "tts_text": "Sappiamo però che lo XOR non è linearmente separabile: nessuna singola unità a soglia può rappresentarlo. La soluzione è scomporlo in funzioni linearmente separabili. Definiamo due unità intermedie: h uno calcola l'AND tra a e b, mentre h due calcola l'OR tra a e b. Mostriamo che non h uno, AND h due, coincide esattamente con lo XOR. Per le leggi di De Morgan, la negazione di a AND b equivale a non a OR non b. Distribuendo il prodotto logico otteniamo quattro termini. Il primo termine, non a AND a, e l'ultimo, non b AND b, sono sempre falsi e si eliminano. Restano esattamente non a AND b oppure a AND non b, cioè la definizione di XOR.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3.1 · Lo XOR con due strati</div>\n  <h2 class=\"slide-title\">Scomporre lo XOR in funzioni separabili</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Proprietà — XOR come composizione di AND e OR</div>\n    <p>Posti \\(a = x_1\\), \\(b = x_2\\), \\(h_1 = a \\wedge b\\) (AND) e \\(h_2 = a \\vee b\\) (OR), vale \\(\\bar h_1 \\wedge h_2 = a \\oplus b\\).</p>\n  </div>\n  <div class=\"proof-steps\">\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">De Morgan</span>\n      \\[\\bar h_1 = \\overline{a \\wedge b} = \\bar a \\vee \\bar b\\]\n    </div>\n    <div id=\"s3\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Distributività</span>\n      \\[\\bar h_1 \\wedge h_2 = (\\bar a \\vee \\bar b) \\wedge (a \\vee b) = \\htmlId{f-false1}{(\\bar a \\wedge a)} \\vee (\\bar a \\wedge b) \\vee (\\bar b \\wedge a) \\vee \\htmlId{f-false2}{(\\bar b \\wedge b)}\\]\n    </div>\n    <div id=\"s4\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Risultato</span>\n      \\[\\bar h_1 \\wedge h_2 = (\\bar a \\wedge b) \\vee (a \\wedge \\bar b) = a \\oplus b \\qquad \\blacksquare\\]\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Sappiamo però che lo XOR non è linearmente separabile: nessuna singola unità a soglia può rappresentarlo. [pause:0.7] La soluzione è scomporlo in funzioni linearmente separabili. Definiamo due unità intermedie: h uno calcola l'AND tra a e b, mentre h due calcola l'OR tra a e b. [pause:0.8] Mostriamo che non h uno, AND h due, coincide esattamente con lo XOR. [pause:0.8] Per le leggi di De Morgan, la negazione di a AND b equivale a non a OR non b. [pause:0.8] Distribuendo il prodotto logico otteniamo quattro termini. [pause:0.5] Il primo termine, non a AND a, e l'ultimo, non b AND b, sono sempre falsi e si eliminano. [pause:0.8] Restano esattamente non a AND b oppure a AND non b, cioè la definizione di XOR.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3.1 · Lo XOR con due strati</div>\n  <h2 class=\"slide-title\">Scomporre lo XOR in funzioni separabili</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Proprietà — XOR come composizione di AND e OR</div>\n    <p>Posti \\(a = x_1\\), \\(b = x_2\\), \\(\\htmlId{f-h1}{h_1 = a \\wedge b}\\) (AND) e \\(\\htmlId{f-h2}{h_2 = a \\vee b}\\) (OR), vale \\(\\htmlId{f-xor}{\\bar h_1 \\wedge h_2 = a \\oplus b}\\).</p>\n  </div>\n  <div class=\"proof-steps\">\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">De Morgan</span>\n      <div>\\[\\bar h_1 = \\overline{a \\wedge b} = \\htmlId{f-dm}{\\bar a \\vee \\bar b}\\]</div>\n    </div>\n    <div id=\"s3\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Distributività</span>\n      <div>\\[\\bar h_1 \\wedge h_2 = (\\bar a \\vee \\bar b) \\wedge (a \\vee b) = \\htmlId{f-false1}{(\\bar a \\wedge a)} \\vee (\\bar a \\wedge b) \\vee (\\bar b \\wedge a) \\vee \\htmlId{f-false2}{(\\bar b \\wedge b)}\\]</div>\n    </div>\n    <div id=\"s4\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Risultato</span>\n      <div>\\[\\bar h_1 \\wedge h_2 = (\\bar a \\wedge b) \\vee (a \\wedge \\bar b) = a \\oplus b \\qquad \\blacksquare\\]</div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 7.7,
+          "at": 7.32,
           "action": "show",
           "target": "#s1",
           "anchor": "scomporlo in funzioni"
         },
         {
-          "at": 22.31,
+          "at": 12.5,
+          "action": "highlight",
+          "target": "#f-h1",
+          "anchor": "h uno calcola l'AND"
+        },
+        {
+          "at": 15.46,
+          "action": "highlight",
+          "target": "#f-h2",
+          "anchor": "h due calcola l'OR"
+        },
+        {
+          "at": 18.78,
+          "action": "highlight",
+          "target": "#f-xor",
+          "anchor": "non h uno, AND h due"
+        },
+        {
+          "at": 23.58,
           "action": "show",
           "target": "#s2",
           "anchor": "leggi di De Morgan"
         },
         {
-          "at": 26.73,
+          "at": 26.98,
+          "action": "highlight",
+          "target": "#f-dm",
+          "anchor": "non a OR non b"
+        },
+        {
+          "at": 29.22,
           "action": "show",
           "target": "#s3",
           "anchor": "Distribuendo il prodotto logico"
         },
         {
-          "at": 30.01,
+          "at": 32.36,
           "action": "highlight",
           "target": "#f-false1",
           "anchor": "Il primo termine"
         },
         {
-          "at": 34.49,
+          "at": 36.43,
           "action": "highlight",
-          "target": "#f-false2",
-          "anchor": "sempre falsi"
+          "target": "#f-false1, #f-false2",
+          "anchor": "sono sempre falsi"
         },
         {
-          "at": 36.36,
+          "at": 38.83,
           "action": "show",
           "target": "#s4",
           "anchor": "Restano esattamente"
         }
       ],
-      "duration_sec": 42.55
+      "duration_sec": 46.16
     },
     {
       "id": "scene-07",
       "section": "10.3.1 Lo XOR con due strati",
       "title": "Ri-rappresentazione nello strato nascosto",
-      "audio_file": "audio/scene-07.mp3",
+      "audio_file": "audio/scene-07.wav",
       "subtitle_file": "subtitles/scene-07.json",
-      "tts_text": "Traducendo la decomposizione in architettura otteniamo una rete a due strati. Le due unità nascoste calcolano h uno, l'AND, e h due, l'OR. L'unità di uscita combina h uno con peso meno uno, h due con peso più uno e bias meno zero virgola cinque. Guardiamo cosa accade geometricamente. Nello spazio degli input i due punti positivi stanno su vertici opposti e nessuna retta li separa dai negativi. Ma nello spazio delle unità nascoste h uno e h due, entrambi gli input positivi collassano sullo stesso punto, di coordinate zero, uno. Ora la retta rossa h due uguale a h uno più zero virgola cinque separa nettamente le due classi. È l'idea fondante del representation learning: lo strato nascosto ri-rappresenta gli input. Con due livelli di unità a soglia si rappresenta qualunque funzione booleana, ma manca ancora un algoritmo per apprendere i pesi.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3.1 · Geometria dello strato nascosto</div>\n  <h2 class=\"slide-title\">Come due strati separano lo XOR</h2>\n  <div class=\"svg-panel svg-panel-wide\">\n    <svg viewBox=\"0 0 720 205\" class=\"diagram-svg\" aria-label=\"Rete XOR a due strati e cambio di spazio\">\n      <defs>\n        <marker id=\"arr-xor\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n      </defs>\n      <!-- Left: 2-layer network -->\n      <g id=\"s1\" class=\"cue-hidden\">\n        <line x1=\"48\" y1=\"62\" x2=\"128\" y2=\"62\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"48\" y1=\"62\" x2=\"128\" y2=\"142\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"48\" y1=\"142\" x2=\"128\" y2=\"62\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"48\" y1=\"142\" x2=\"128\" y2=\"142\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"164\" y1=\"62\" x2=\"232\" y2=\"96\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"164\" y1=\"142\" x2=\"232\" y2=\"108\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <circle cx=\"32\" cy=\"62\" r=\"16\" class=\"svg-node\"/><text x=\"32\" y=\"67\" text-anchor=\"middle\" class=\"svg-math-sm\">x₁</text>\n        <circle cx=\"32\" cy=\"142\" r=\"16\" class=\"svg-node\"/><text x=\"32\" y=\"147\" text-anchor=\"middle\" class=\"svg-math-sm\">x₂</text>\n        <circle cx=\"146\" cy=\"62\" r=\"18\" class=\"svg-node-fill\"/><text x=\"146\" y=\"67\" text-anchor=\"middle\" class=\"svg-math-sm\">h₁</text>\n        <circle cx=\"146\" cy=\"142\" r=\"18\" class=\"svg-node-fill\"/><text x=\"146\" y=\"147\" text-anchor=\"middle\" class=\"svg-math-sm\">h₂</text>\n        <circle cx=\"250\" cy=\"102\" r=\"18\" class=\"svg-node-fill\"/><text x=\"250\" y=\"107\" text-anchor=\"middle\" class=\"svg-math-sm\">o</text>\n        <text x=\"86\" y=\"54\" class=\"svg-tick\">1</text>\n        <text x=\"74\" y=\"84\" class=\"svg-tick\">1</text>\n        <text x=\"74\" y=\"128\" class=\"svg-tick\">1</text>\n        <text x=\"86\" y=\"156\" class=\"svg-tick\">1</text>\n        <text x=\"196\" y=\"72\" class=\"svg-tick svg-red\">-1</text>\n        <text x=\"196\" y=\"138\" class=\"svg-tick svg-blue\">+1</text>\n        <text x=\"146\" y=\"34\" text-anchor=\"middle\" class=\"svg-caption\">AND, w₀=-1,5</text>\n        <text x=\"146\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">OR, w₀=-0,5</text>\n        <text x=\"250\" y=\"76\" text-anchor=\"middle\" class=\"svg-caption\">w₀=-0,5</text>\n      </g>\n      <!-- Middle: Input space -->\n      <g id=\"s2\" class=\"cue-hidden\" transform=\"translate(310, 20)\">\n        <line x1=\"15\" y1=\"140\" x2=\"155\" y2=\"140\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"35\" y1=\"160\" x2=\"35\" y2=\"18\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <text x=\"160\" y=\"144\" class=\"svg-math-sm\">x₁</text>\n        <text x=\"35\" y=\"12\" text-anchor=\"middle\" class=\"svg-math-sm\">x₂</text>\n        <circle cx=\"35\" cy=\"140\" r=\"6\" class=\"pt-neg\"/>\n        <circle cx=\"125\" cy=\"140\" r=\"6\" class=\"pt-pos\"/>\n        <circle cx=\"35\" cy=\"50\" r=\"6\" class=\"pt-pos\"/>\n        <circle cx=\"125\" cy=\"50\" r=\"6\" class=\"pt-neg\"/>\n        <text x=\"85\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">spazio degli input</text>\n      </g>\n      <!-- Right: Hidden space -->\n      <g id=\"s3\" class=\"cue-hidden\" transform=\"translate(520, 20)\">\n        <line x1=\"15\" y1=\"140\" x2=\"155\" y2=\"140\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"35\" y1=\"160\" x2=\"35\" y2=\"18\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <text x=\"160\" y=\"144\" class=\"svg-math-sm\">h₁</text>\n        <text x=\"35\" y=\"12\" text-anchor=\"middle\" class=\"svg-math-sm\">h₂</text>\n        <circle cx=\"35\" cy=\"140\" r=\"6\" class=\"pt-neg\"/>\n        <circle cx=\"35\" cy=\"50\" r=\"7\" class=\"pt-pos\"/>\n        <text x=\"47\" y=\"47\" class=\"svg-tick svg-blue\">×2</text>\n        <circle cx=\"125\" cy=\"50\" r=\"6\" class=\"pt-neg\"/>\n        <line id=\"s4\" x1=\"18\" y1=\"112\" x2=\"115\" y2=\"15\" class=\"svg-curve-red cue-hidden\"/>\n        <text x=\"85\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">spazio nascosto</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s5\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea chiave — Ri-rappresentazione interna</div>\n    <p>Lo strato nascosto trasforma gli input in una rappresentazione linearmente separabile. <strong>Due livelli</strong> bastano per ogni funzione booleana; nelle reti neurali questi pesi non si fissano a mano ma <strong>si apprendono</strong> (<em>representation learning</em>).</p>\n  </div>\n</div>\n",
+      "tts_text": "Traducendo la decomposizione in architettura otteniamo una rete a due strati. [pause:0.6] Le due unità nascoste calcolano h uno, l'AND, e h due, l'OR. [pause:0.5] L'unità di uscita combina h uno con peso meno uno, h due con peso più uno e bias meno zero virgola cinque. [pause:0.9] Guardiamo cosa accade geometricamente. Nello spazio degli input i due punti positivi stanno su vertici opposti e nessuna retta li separa dai negativi. [pause:0.8] Ma nello spazio delle unità nascoste h uno e h due, entrambi gli input positivi collassano sullo stesso punto, di coordinate zero, uno. [pause:0.8] Ora la retta rossa h due uguale a h uno più zero virgola cinque separa nettamente le due classi. [pause:0.9] È l'idea fondante del representation learning: lo strato nascosto ri-rappresenta gli input. Con due livelli di unità a soglia si rappresenta qualunque funzione booleana, ma manca ancora un algoritmo per apprendere i pesi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3.1 · Geometria dello strato nascosto</div>\n  <h2 class=\"slide-title\">Come due strati separano lo XOR</h2>\n  <div class=\"svg-panel svg-panel-wide\">\n    <svg viewBox=\"0 0 720 205\" class=\"diagram-svg\" aria-label=\"Rete XOR a due strati e cambio di spazio\">\n      <defs>\n        <marker id=\"arr-xor\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n      </defs>\n      <g id=\"s1\" class=\"cue-hidden\">\n        <line x1=\"48\" y1=\"62\" x2=\"128\" y2=\"62\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"48\" y1=\"62\" x2=\"128\" y2=\"142\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"48\" y1=\"142\" x2=\"128\" y2=\"62\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"48\" y1=\"142\" x2=\"128\" y2=\"142\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n        <g id=\"xor-out-edges\">\n          <line x1=\"164\" y1=\"62\" x2=\"232\" y2=\"96\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n          <line x1=\"164\" y1=\"142\" x2=\"232\" y2=\"108\" class=\"svg-edge\" marker-end=\"url(#arr-xor)\"/>\n          <text x=\"196\" y=\"72\" class=\"svg-tick svg-red\">-1</text>\n          <text x=\"196\" y=\"138\" class=\"svg-tick svg-blue\">+1</text>\n          <circle cx=\"250\" cy=\"102\" r=\"18\" class=\"svg-node-fill\"/><text x=\"250\" y=\"107\" text-anchor=\"middle\" class=\"svg-math-sm\">o</text>\n          <text x=\"250\" y=\"76\" text-anchor=\"middle\" class=\"svg-caption\">w₀=-0,5</text>\n        </g>\n        <circle cx=\"32\" cy=\"62\" r=\"16\" class=\"svg-node\"/><text x=\"32\" y=\"67\" text-anchor=\"middle\" class=\"svg-math-sm\">x₁</text>\n        <circle cx=\"32\" cy=\"142\" r=\"16\" class=\"svg-node\"/><text x=\"32\" y=\"147\" text-anchor=\"middle\" class=\"svg-math-sm\">x₂</text>\n        <g id=\"xor-hidden\">\n          <circle cx=\"146\" cy=\"62\" r=\"18\" class=\"svg-node-fill\"/><text x=\"146\" y=\"67\" text-anchor=\"middle\" class=\"svg-math-sm\">h₁</text>\n          <circle cx=\"146\" cy=\"142\" r=\"18\" class=\"svg-node-fill\"/><text x=\"146\" y=\"147\" text-anchor=\"middle\" class=\"svg-math-sm\">h₂</text>\n          <text x=\"146\" y=\"34\" text-anchor=\"middle\" class=\"svg-caption\">AND, w₀=-1,5</text>\n          <text x=\"146\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">OR, w₀=-0,5</text>\n        </g>\n        <text x=\"86\" y=\"54\" class=\"svg-tick\">1</text>\n        <text x=\"74\" y=\"84\" class=\"svg-tick\">1</text>\n        <text x=\"74\" y=\"128\" class=\"svg-tick\">1</text>\n        <text x=\"86\" y=\"156\" class=\"svg-tick\">1</text>\n      </g>\n      <g id=\"s2\" class=\"cue-hidden\" transform=\"translate(310, 20)\">\n        <line x1=\"15\" y1=\"140\" x2=\"155\" y2=\"140\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"35\" y1=\"160\" x2=\"35\" y2=\"18\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <text x=\"160\" y=\"144\" class=\"svg-math-sm\">x₁</text>\n        <text x=\"35\" y=\"12\" text-anchor=\"middle\" class=\"svg-math-sm\">x₂</text>\n        <circle cx=\"35\" cy=\"140\" r=\"6\" class=\"pt-neg\"/>\n        <circle cx=\"125\" cy=\"140\" r=\"6\" class=\"pt-pos\"/>\n        <circle cx=\"35\" cy=\"50\" r=\"6\" class=\"pt-pos\"/>\n        <circle cx=\"125\" cy=\"50\" r=\"6\" class=\"pt-neg\"/>\n        <text x=\"85\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">spazio degli input</text>\n      </g>\n      <g id=\"s3\" class=\"cue-hidden\" transform=\"translate(520, 20)\">\n        <line x1=\"15\" y1=\"140\" x2=\"155\" y2=\"140\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <line x1=\"35\" y1=\"160\" x2=\"35\" y2=\"18\" class=\"svg-axis\" marker-end=\"url(#arr-xor)\"/>\n        <text x=\"160\" y=\"144\" class=\"svg-math-sm\">h₁</text>\n        <text x=\"35\" y=\"12\" text-anchor=\"middle\" class=\"svg-math-sm\">h₂</text>\n        <circle cx=\"35\" cy=\"140\" r=\"6\" class=\"pt-neg\"/>\n        <g id=\"xor-double\">\n          <circle cx=\"35\" cy=\"50\" r=\"7\" class=\"pt-pos\"/>\n          <text x=\"47\" y=\"47\" class=\"svg-tick svg-blue\">×2</text>\n        </g>\n        <circle cx=\"125\" cy=\"50\" r=\"6\" class=\"pt-neg\"/>\n        <line id=\"s4\" x1=\"18\" y1=\"112\" x2=\"115\" y2=\"15\" class=\"svg-curve-red cue-hidden\"/>\n        <text x=\"85\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">spazio nascosto</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s5\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea chiave — Ri-rappresentazione interna</div>\n    <p>Lo strato nascosto trasforma gli input in una rappresentazione linearmente separabile. <strong>Due livelli</strong> bastano per ogni funzione booleana; nelle reti neurali questi pesi non si fissano a mano ma <strong>si apprendono</strong> (<em>representation learning</em>).</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.16,
+          "at": 3.34,
           "action": "show",
           "target": "#s1",
           "anchor": "rete a due strati"
         },
         {
-          "at": 19.55,
+          "at": 5.04,
+          "action": "highlight",
+          "target": "#xor-hidden",
+          "anchor": "due unità nascoste"
+        },
+        {
+          "at": 10.82,
+          "action": "highlight",
+          "target": "#xor-out-edges",
+          "anchor": "unità di uscita combina"
+        },
+        {
+          "at": 22.62,
           "action": "show",
           "target": "#s2",
           "anchor": "Nello spazio degli input"
         },
         {
-          "at": 26.53,
+          "at": 30.02,
           "action": "show",
           "target": "#s3",
           "anchor": "spazio delle unità nascoste"
         },
         {
-          "at": 33.93,
+          "at": 35.33,
+          "action": "highlight",
+          "target": "#xor-double",
+          "anchor": "collassano sullo stesso punto"
+        },
+        {
+          "at": 40.47,
           "action": "show",
           "target": "#s4",
           "anchor": "la retta rossa"
         },
         {
-          "at": 41.1,
+          "at": 40.47,
+          "action": "highlight",
+          "target": "#s4",
+          "anchor": "la retta rossa"
+        },
+        {
+          "at": 49.65,
           "action": "show",
           "target": "#s5",
           "anchor": "representation learning"
         }
       ],
-      "duration_sec": 52.99
+      "duration_sec": 62.26
     },
     {
       "id": "scene-08",
       "section": "10.4 Apprendere con una singola unità",
       "title": "Due famiglie: Adaline contro Perceptron",
-      "audio_file": "audio/scene-08.mp3",
+      "audio_file": "audio/scene-08.wav",
       "subtitle_file": "subtitles/scene-08.json",
-      "tts_text": "Finora i pesi delle unità erano fissati a mano. Come li apprendiamo dai dati, partendo da una singola unità? Esistono due grandi famiglie di metodi. La prima è Adaline, Adaptive Linear Neuron: durante l'addestramento l'unità resta lineare e si usa l'algoritmo LMS, in forma diretta o con discesa del gradiente. Serve per regressione e, aggiungendo una soglia in uscita, per classificazione; soprattutto, è l'approccio che si estenderà ai Multi-Layer Perceptron. La seconda famiglia è il Perceptron vero e proprio: durante l'addestramento l'unità è già non lineare con soglia e serve solo per la classificazione. Per costruire un classificatore lineare abbiamo quindi tre algoritmi: LMS diretto, LMS a gradiente e l'algoritmo del Perceptron.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4 · Apprendere con una singola unità</div>\n  <h2 class=\"slide-title\">Due approcci all'addestramento</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Adaline (Adaptive Linear Neuron)</div>\n      <ul class=\"clean-list\">\n        <li>Durante il training l'unità è <strong>lineare</strong>.</li>\n        <li>Usa <strong>LMS</strong> (forma diretta o discesa del gradiente).</li>\n        <li>Regressione e, con soglia a valle, classificazione.</li>\n        <li><strong>Si estende agli MLP</strong> (reti multistrato).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Perceptron</div>\n      <ul class=\"clean-list\">\n        <li>Durante il training l'unità è <strong>non lineare</strong> (con soglia).</li>\n        <li>Usa la regola on-line del Perceptron.</li>\n        <li><strong>Solo classificazione</strong> binaria.</li>\n        <li>Garanzia finita di convergenza su dati separabili.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Classificatori lineari visti fin qui:</span>\n    <span class=\"pill\">LMS diretto</span>\n    <span class=\"pill\">LMS a gradiente</span>\n    <span class=\"pill pill-accent\">Algoritmo del Perceptron</span>\n    <span class=\"pill pill-muted\">→ poi SVM</span>\n  </div>\n</div>\n",
+      "tts_text": "Finora i pesi delle unità erano fissati a mano. Come li apprendiamo dai dati, partendo da una singola unità? [pause:0.7] Esistono due grandi famiglie di metodi. [pause:0.5] La prima è Adaline, Adaptive Linear Neuron: durante l'addestramento l'unità resta lineare e si usa l'algoritmo LMS, in forma diretta o con discesa del gradiente. Serve per regressione e, aggiungendo una soglia in uscita, per classificazione. Soprattutto, è l'approccio che si estenderà ai Multi-Layer Perceptron. [pause:0.9] La seconda famiglia è il Perceptron vero e proprio: durante l'addestramento l'unità è già non lineare con soglia e serve solo per la classificazione. [pause:0.8] Per costruire un classificatore lineare abbiamo quindi tre algoritmi: LMS diretto, LMS a gradiente e l'algoritmo del Perceptron.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4 · Apprendere con una singola unità</div>\n  <h2 class=\"slide-title\">Due approcci all'addestramento</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Adaline (Adaptive Linear Neuron)</div>\n      <ul class=\"clean-list\">\n        <li>Durante il training l'unità è <strong>lineare</strong>.</li>\n        <li>Usa <strong>LMS</strong> (forma diretta o discesa del gradiente).</li>\n        <li>Regressione e, con soglia a valle, classificazione.</li>\n        <li><strong>Si estende agli MLP</strong> (reti multistrato).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Perceptron</div>\n      <ul class=\"clean-list\">\n        <li>Durante il training l'unità è <strong>non lineare</strong> (con soglia).</li>\n        <li>Usa la regola online del Perceptron.</li>\n        <li><strong>Solo classificazione</strong> binaria.</li>\n        <li>Garanzia finita di convergenza su dati separabili.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Classificatori lineari visti fin qui:</span>\n    <span class=\"pill\">LMS diretto</span>\n    <span class=\"pill\">LMS a gradiente</span>\n    <span class=\"pill pill-accent\">Algoritmo del Perceptron</span>\n    <span class=\"pill pill-muted\">→ poi SVM</span>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 10.14,
+          "at": 9.33,
           "action": "show",
           "target": "#s1",
           "anchor": "La prima è Adaline"
         },
         {
-          "at": 30.48,
+          "at": 9.33,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "La prima è Adaline"
+        },
+        {
+          "at": 31.0,
           "action": "show",
           "target": "#s2",
           "anchor": "La seconda famiglia è il Perceptron"
         },
         {
-          "at": 41.48,
+          "at": 31.0,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "La seconda famiglia è il Perceptron"
+        },
+        {
+          "at": 43.7,
           "action": "show",
           "target": "#s3",
           "anchor": "tre algoritmi"
         }
       ],
-      "duration_sec": 47.88
+      "duration_sec": 50.35
     },
     {
       "id": "scene-09",
       "section": "10.4.1 L'algoritmo del Perceptron",
-      "title": "L'algoritmo on-line del Perceptron",
-      "audio_file": "audio/scene-09.mp3",
+      "title": "L'algoritmo online del Perceptron",
+      "audio_file": "audio/scene-09.wav",
       "subtitle_file": "subtitles/scene-09.json",
-      "tts_text": "L'algoritmo del Perceptron è online e mira a minimizzare il numero di esempi classificati male, cercando un vettore di pesi w tale che il segno di w trasposto x coincida con il target d, che vale più uno oppure meno uno. Si inizializzano i pesi a zero o a piccoli valori casuali e si fissa un learning rate eta tra zero e uno. Si scorrono gli esempi uno alla volta finché un'intera epoca passa senza errori. Se l'uscita coincide con d, i pesi non cambiano. Se invece c'è un errore, si aggiorna w aggiungendo eta per d per x. Attenzione al caso sul confine, w trasposto x uguale a zero: per convenzione si conta sempre come errore, cioè serve d per w trasposto x strettamente positivo. La stessa regola si riscrive anche come w più un mezzo eta, per la differenza tra d e l'uscita, per x.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4.1 · L'algoritmo del Perceptron</div>\n  <h2 class=\"slide-title\">Perceptron Learning Algorithm (on-line)</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo</div>\n    <ol class=\"algo-list\">\n      <li id=\"a1\">Inizializzare \\(\\w\\) (a \\(\\vv 0\\) o piccoli valori casuali); scegliere \\(\\eta \\in (0, 1)\\).</li>\n      <li id=\"a2\">Ripetere finché un'epoca intera passa <strong>senza errori</strong>, per ogni \\((\\x, d)\\) con \\(d \\in \\{+1, -1\\}\\):\n        <ul>\n          <li>calcolare \\(\\out = \\sign(\\w\\T\\x)\\);</li>\n          <li id=\"a3\">se \\(\\out = d\\), <strong>non modificare</strong> i pesi;</li>\n          <li id=\"a4\">se \\(\\out \\neq d\\), aggiornare \\(\\w_{\\mathit{new}} = \\w + \\eta\\,d\\,\\x\\).</li>\n        </ul>\n      </li>\n    </ol>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Attenzione — Caso \\(\\w\\T\\x = 0\\)</div>\n      <p>Un punto <em>sul</em> confine conta <strong>sempre come errore</strong>: classificazione corretta solo se \\(d\\,\\w\\T\\x &gt; 0\\).</p>\n    </div>\n    <div id=\"s3\" class=\"math-card cue-hidden\">\n      \\[\\w_{\\mathit{new}} = \\w + \\tfrac{1}{2}\\eta\\,\\htmlId{f-diff}{(d - \\out)}\\,\\x\\]\n      <p class=\"math-note\">\\(d - \\out = 0\\) se corretto, \\(\\pm 2\\) se sbagliato (con \\(\\out = \\sign(\\w\\T\\x)\\), diverso dall'LMS).</p>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "L'algoritmo del Perceptron è online e minimizza il numero di esempi classificati male, cercando un vettore di pesi w tale che il segno di w trasposto x coincida con il target d, che vale più uno oppure meno uno. [pause:0.8] Passo uno: si inizializzano i pesi a zero o a piccoli valori casuali e si fissa un learning rate eta tra zero e uno. [pause:0.6] Passo due: si scorrono gli esempi uno alla volta finché un'intera epoca passa senza errori. Se l'uscita coincide con d, i pesi non cambiano. [pause:0.5] Se invece c'è un errore, si aggiorna w aggiungendo eta per d per x. [pause:0.9] Attenzione al caso sul confine, quando w trasposto x è uguale a zero: per convenzione si conta sempre come errore. Un esempio è classificato bene solo se d per w trasposto x è strettamente positivo. [pause:0.9] La stessa regola si riscrive anche come w più un mezzo eta, per la differenza tra d e l'uscita, per x.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4.1 · L'algoritmo del Perceptron</div>\n  <h2 class=\"slide-title\">Perceptron Learning Algorithm (online)</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo</div>\n    <ol class=\"algo-list\">\n      <li id=\"a1\">Inizializzare \\(\\w\\) (a \\(\\vv 0\\) o piccoli valori casuali); scegliere \\(\\eta \\in (0, 1)\\).</li>\n      <li id=\"a2\">Ripetere finché un'epoca intera passa <strong>senza errori</strong>, per ogni \\((\\x, d)\\) con \\(d \\in \\{+1, -1\\}\\):\n        <ul>\n          <li>calcolare \\(\\out = \\sign(\\w\\T\\x)\\);</li>\n          <li id=\"a3\">se \\(\\out = d\\), <strong>non modificare</strong> i pesi;</li>\n          <li id=\"a4\">se \\(\\out \\neq d\\), aggiornare \\(\\htmlId{f-upd}{\\w_{\\mathit{new}} = \\w + \\eta\\,d\\,\\x}\\).</li>\n        </ul>\n      </li>\n    </ol>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Attenzione — Caso \\(\\w\\T\\x = 0\\)</div>\n      <p>Un punto <em>sul</em> confine conta <strong>sempre come errore</strong>: classificazione corretta solo se \\(\\htmlId{f-strict}{d\\,\\w\\T\\x &gt; 0}\\).</p>\n    </div>\n    <div id=\"s3\" class=\"math-card cue-hidden\">\n      \\[\\w_{\\mathit{new}} = \\w + \\tfrac{1}{2}\\eta\\,\\htmlId{f-diff}{(d - \\out)}\\,\\x\\]\n      <p class=\"math-note\">\\(d - \\out = 0\\) se corretto, \\(\\pm 2\\) se sbagliato (con \\(\\out = \\sign(\\w\\T\\x)\\), diverso dall'LMS).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 13.01,
+          "at": 13.16,
           "action": "show",
           "target": "#s1",
-          "anchor": "inizializzano i pesi"
+          "anchor": "Passo uno: si inizializzano"
         },
         {
-          "at": 13.01,
+          "at": 13.16,
           "action": "highlight",
           "target": "#a1",
-          "anchor": "inizializzano i pesi"
+          "anchor": "Passo uno: si inizializzano"
         },
         {
-          "at": 23.27,
+          "at": 20.98,
           "action": "highlight",
           "target": "#a2",
-          "anchor": "intera epoca passa senza errori"
+          "anchor": "Passo due: si scorrono"
         },
         {
-          "at": 26.38,
+          "at": 27.58,
           "action": "highlight",
           "target": "#a3",
-          "anchor": "pesi non cambiano"
+          "anchor": "i pesi non cambiano"
         },
         {
-          "at": 29.31,
+          "at": 30.29,
           "action": "highlight",
-          "target": "#a4",
+          "target": "#a4, #f-upd",
           "anchor": "si aggiorna w aggiungendo"
         },
         {
-          "at": 32.01,
+          "at": 34.31,
           "action": "show",
           "target": "#s2",
           "anchor": "Attenzione al caso sul confine"
         },
         {
-          "at": 42.94,
+          "at": 44.37,
+          "action": "highlight",
+          "target": "#f-strict",
+          "anchor": "strettamente positivo"
+        },
+        {
+          "at": 46.45,
           "action": "show",
           "target": "#s3",
           "anchor": "stessa regola si riscrive"
+        },
+        {
+          "at": 50.21,
+          "action": "highlight",
+          "target": "#f-diff",
+          "anchor": "differenza tra d e l'uscita"
         }
       ],
-      "duration_sec": 48.5
+      "duration_sec": 52.99
     },
     {
       "id": "scene-10",
       "section": "10.4.1 L'algoritmo del Perceptron",
       "title": "Geometria dell'aggiornamento e due letture",
-      "audio_file": "audio/scene-10.mp3",
+      "audio_file": "audio/scene-10.wav",
       "subtitle_file": "subtitles/scene-10.json",
-      "tts_text": "Vediamo il significato geometrico dell'aggiornamento. Il vettore dei pesi w punta sempre verso il semipiano positivo, perpendicolare al confine lineare. Supponiamo che l'esempio p uno abbia target più uno, ma si trovi dal lato sbagliato del confine rosso. Sommando il vettore eta per d per x a w, il nuovo vettore dei pesi ruota verso p uno e il nuovo confine blu ora lo classifica correttamente. Se invece un esempio negativo fosse classificato male, w verrebbe allontanato da esso. La regola ha due letture: come somma di eta per d per x è apprendimento hebbiano. Riscritta con delta uguale a d meno l'uscita, assorbendo il fattore un mezzo nel learning rate, è una delta rule di correzione dell'errore: la modifica di un peso è proporzionale al prodotto tra errore e ingresso. Qui delta è subito misurabile, cosa che non varrà più negli strati nascosti.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4.1 · Interpretazione geometrica</div>\n  <h2 class=\"slide-title\">Rotazione del confine e due letture della regola</h2>\n  <div class=\"split-visual\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 270\" class=\"diagram-svg\" aria-label=\"Geometria dell'aggiornamento del Perceptron\">\n        <defs>\n          <marker id=\"arr-red\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n          <marker id=\"arr-b2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n          <marker id=\"arr-i2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <!-- Axes centered at (150, 175) -->\n        <line x1=\"25\" y1=\"175\" x2=\"335\" y2=\"175\" class=\"svg-axis\"/>\n        <line x1=\"150\" y1=\"255\" x2=\"150\" y2=\"18\" class=\"svg-axis\"/>\n        <!-- Before: boundary & w -->\n        <g id=\"s1\" class=\"cue-hidden\">\n          <line x1=\"118\" y1=\"45\" x2=\"178\" y2=\"255\" class=\"svg-bound-red\"/>\n          <text x=\"124\" y=\"36\" class=\"svg-caption svg-red\">confine prima</text>\n          <line x1=\"150\" y1=\"175\" x2=\"262\" y2=\"147\" class=\"svg-vec-red\" marker-end=\"url(#arr-red)\"/>\n          <text x=\"272\" y=\"154\" class=\"svg-math svg-red\">w</text>\n        </g>\n        <!-- Misclassified point p1 -->\n        <g id=\"s2\" class=\"cue-hidden\">\n          <line x1=\"150\" y1=\"175\" x2=\"115\" y2=\"63\" stroke=\"#9A9A9A\" stroke-width=\"1.3\"/>\n          <circle cx=\"115\" cy=\"63\" r=\"5\" fill=\"#1A1A1A\"/>\n          <text x=\"104\" y=\"54\" text-anchor=\"end\" class=\"svg-math-sm\">p₁ (d = +1)</text>\n        </g>\n        <!-- Correction vector + w_new + new boundary -->\n        <g id=\"s3\" class=\"cue-hidden\">\n          <line x1=\"262\" y1=\"147\" x2=\"241\" y2=\"80\" class=\"svg-vec-ink\" marker-end=\"url(#arr-i2)\"/>\n          <text x=\"260\" y=\"114\" class=\"svg-math-sm\">η d x</text>\n          <line x1=\"150\" y1=\"175\" x2=\"241\" y2=\"80\" class=\"svg-vec-blue\" marker-end=\"url(#arr-b2)\"/>\n          <text x=\"246\" y=\"68\" class=\"svg-math svg-blue\">wₙₑw</text>\n          <line x1=\"40\" y1=\"70\" x2=\"242\" y2=\"260\" class=\"svg-bound-blue\"/>\n          <text x=\"248\" y=\"254\" class=\"svg-caption svg-blue\">confine dopo</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s4\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Lettura 1 — Hebbiana</div>\n        <p>\\(\\w_{\\mathit{new}} = \\w + \\eta\\,d\\,\\x\\): il vettore dei pesi si muove verso \\(\\x\\) (se \\(d=+1\\)) o si allontana (se \\(d=-1\\)).</p>\n      </div>\n      <div id=\"s5\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Lettura 2 — Delta rule</div>\n        <p>\\(\\w_{\\mathit{new}} = \\w + \\eta'\\,\\delta\\,\\x\\) con \\(\\delta = d - \\out\\): correzione proporzionale a <strong>errore × ingresso</strong>. Qui \\(\\delta\\) è direttamente misurabile.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Vediamo il significato geometrico dell'aggiornamento. [pause:0.5] Il vettore dei pesi w punta sempre verso il semipiano positivo, perpendicolare al confine lineare rosso. [pause:0.7] Supponiamo che l'esempio p uno abbia target più uno, ma si trovi dal lato sbagliato del confine. [pause:0.7] Sommando il vettore eta per d per x a w, il nuovo vettore dei pesi ruota verso p uno e il nuovo confine blu ora lo classifica correttamente. Se invece un esempio negativo fosse classificato male, w verrebbe allontanato da esso. [pause:0.9] La regola ha due letture. Come somma di eta per d per x è apprendimento hebbiano. [pause:0.7] Riscritta con delta uguale a d meno l'uscita, assorbendo il fattore un mezzo nel learning rate, è una delta rule di correzione dell'errore: la modifica di un peso è proporzionale al prodotto tra errore e ingresso. Qui delta è subito misurabile, cosa che non varrà più negli strati nascosti.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4.1 · Interpretazione geometrica</div>\n  <h2 class=\"slide-title\">Rotazione del confine e due letture della regola</h2>\n  <div class=\"split-visual\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 270\" class=\"diagram-svg\" aria-label=\"Geometria dell'aggiornamento del Perceptron\">\n        <defs>\n          <marker id=\"arr-red\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n          <marker id=\"arr-b2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n          <marker id=\"arr-i2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"25\" y1=\"175\" x2=\"335\" y2=\"175\" class=\"svg-axis\"/>\n        <line x1=\"150\" y1=\"255\" x2=\"150\" y2=\"18\" class=\"svg-axis\"/>\n        <g id=\"s1\" class=\"cue-hidden\">\n          <line x1=\"118\" y1=\"45\" x2=\"178\" y2=\"255\" class=\"svg-bound-red\"/>\n          <text x=\"124\" y=\"36\" class=\"svg-caption svg-red\">confine prima</text>\n          <line x1=\"150\" y1=\"175\" x2=\"262\" y2=\"147\" class=\"svg-vec-red\" marker-end=\"url(#arr-red)\"/>\n          <text x=\"272\" y=\"154\" class=\"svg-math svg-red\">w</text>\n        </g>\n        <g id=\"s2\" class=\"cue-hidden\">\n          <line x1=\"150\" y1=\"175\" x2=\"115\" y2=\"63\" stroke=\"#9A9A9A\" stroke-width=\"1.3\"/>\n          <circle cx=\"115\" cy=\"63\" r=\"5\" fill=\"#1A1A1A\"/>\n          <text x=\"104\" y=\"54\" text-anchor=\"end\" class=\"svg-math-sm\">p₁ (d = +1)</text>\n        </g>\n        <g id=\"s3-corr\" class=\"cue-hidden\">\n          <line x1=\"262\" y1=\"147\" x2=\"241\" y2=\"80\" class=\"svg-vec-ink\" marker-end=\"url(#arr-i2)\"/>\n          <text x=\"260\" y=\"114\" class=\"svg-math-sm\">η d x</text>\n        </g>\n        <g id=\"s3-new\" class=\"cue-hidden\">\n          <line x1=\"150\" y1=\"175\" x2=\"241\" y2=\"80\" class=\"svg-vec-blue\" marker-end=\"url(#arr-b2)\"/>\n          <text x=\"246\" y=\"68\" class=\"svg-math svg-blue\">wₙₑw</text>\n          <line x1=\"40\" y1=\"70\" x2=\"242\" y2=\"260\" class=\"svg-bound-blue\"/>\n          <text x=\"248\" y=\"254\" class=\"svg-caption svg-blue\">confine dopo</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s4\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Lettura 1 — Hebbiana</div>\n        <p>\\(\\htmlId{f-hebb}{\\w_{\\mathit{new}} = \\w + \\eta\\,d\\,\\x}\\): il vettore dei pesi si muove verso \\(\\x\\) (se \\(d=+1\\)) o si allontana (se \\(d=-1\\)).</p>\n      </div>\n      <div id=\"s5\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Lettura 2 — Delta rule</div>\n        <p>\\(\\w_{\\mathit{new}} = \\w + \\eta'\\,\\htmlId{f-delta10}{\\delta}\\,\\x\\) con \\(\\delta = d - \\out\\), \\(\\eta' = \\eta/2\\): correzione proporzionale a <strong>errore × ingresso</strong>. Qui \\(\\delta\\) è direttamente misurabile.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.83,
+          "at": 4.0,
           "action": "show",
           "target": "#s1",
           "anchor": "vettore dei pesi w punta"
         },
         {
-          "at": 10.7,
+          "at": 10.86,
           "action": "show",
           "target": "#s2",
           "anchor": "esempio p uno abbia target"
         },
         {
-          "at": 16.59,
-          "action": "show",
-          "target": "#s3",
-          "anchor": "Sommando il vettore"
+          "at": 10.86,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "esempio p uno abbia target"
         },
         {
-          "at": 34.08,
+          "at": 15.36,
+          "action": "show",
+          "target": "#s3-corr",
+          "anchor": "Sommando il vettore eta"
+        },
+        {
+          "at": 15.36,
+          "action": "highlight",
+          "target": "#s3-corr",
+          "anchor": "Sommando il vettore eta"
+        },
+        {
+          "at": 18.34,
+          "action": "show",
+          "target": "#s3-new",
+          "anchor": "il nuovo vettore dei pesi ruota"
+        },
+        {
+          "at": 32.75,
           "action": "show",
           "target": "#s4",
           "anchor": "apprendimento hebbiano"
         },
         {
-          "at": 37.89,
+          "at": 32.75,
+          "action": "highlight",
+          "target": "#f-hebb",
+          "anchor": "apprendimento hebbiano"
+        },
+        {
+          "at": 34.51,
           "action": "show",
           "target": "#s5",
+          "anchor": "Riscritta con delta uguale"
+        },
+        {
+          "at": 40.07,
+          "action": "highlight",
+          "target": "#f-delta10",
           "anchor": "delta rule"
         }
       ],
-      "duration_sec": 45.31
+      "duration_sec": 50.42
     },
     {
       "id": "scene-11",
       "section": "10.5 Il teorema di convergenza del Perceptron",
       "title": "Teorema di convergenza: enunciato e Passo 1",
-      "audio_file": "audio/scene-11.mp3",
+      "audio_file": "audio/scene-11.wav",
       "subtitle_file": "subtitles/scene-11.json",
-      "tts_text": "Il Perceptron rappresenta confini lineari, ma riesce sempre a impararli? La risposta è data dal teorema di convergenza del Perceptron. Se il problema è linearmente separabile, l'algoritmo converge in un numero finito di passi classificando bene tutti gli esempi, da qualunque punto di partenza, anche se la soluzione finale non è unica. Se il problema non è separabile, invece, l'algoritmo può entrare in cicli senza stabilizzarsi. Cominciamo la dimostrazione dal Passo uno: ridurci a esempi tutti positivi. Esiste una soluzione w stella con margine minimo alfa strettamente positivo. Se definiamo x primo con i, uguale a d con i per x con i, ribaltando gli esempi negativi, poiché d con i al quadrato vale uno, sia la condizione di soluzione sia la condizione di errore e l'aggiornamento dei pesi restano identici. Basta quindi dimostrare il teorema con soli esempi positivi.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Teorema di convergenza del Perceptron</div>\n  <h2 class=\"slide-title\">Enunciato e riduzione a soli esempi positivi</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Convergenza del Perceptron</div>\n    <p>Se il problema è <strong>linearmente separabile</strong>, l'algoritmo converge in un <strong>numero finito di passi</strong> classificando bene tutti gli esempi (qualunque sia \\(\\w(0)\\); soluzione non unica). Se non è separabile, può sviluppare <strong>cicli</strong>.</p>\n  </div>\n  <div id=\"s2\" class=\"proof-steps cue-hidden\">\n    <div class=\"proof-step\">\n      <span class=\"step-tag\">Passo 1</span>\n      <div>\n        <p>Esiste \\(\\w^*\\) tale che \\(\\htmlId{f-alpha}{d_i\\,(\\w^*\\x_i) \\ge \\alpha}\\), con \\(\\alpha = \\min_i d_i\\,(\\w^*\\x_i) &gt; 0\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Ribaltamento</span>\n      <div>\n        <p>Poniamo \\(\\x'_i = d_i \\x_i\\). Poiché \\(d_i^2 = 1\\), \\(\\w^*\\) risolve \\((\\x_i, d_i)\\) se e solo se risolve \\((\\x'_i, +1)\\).</p>\n        <p class=\"math-note\">Errore: \\(d_i(\\w\\x_i) \\le 0 \\iff \\w\\x'_i \\le 0\\). Aggiornamento: \\(\\w + \\eta d_i\\x_i = \\w + \\eta \\x'_i\\).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Il Perceptron rappresenta confini lineari, ma riesce sempre a impararli? La risposta è il teorema di convergenza del Perceptron. [pause:0.7] Se il problema è linearmente separabile, l'algoritmo converge in un numero finito di passi classificando bene tutti gli esempi, da qualunque punto di partenza, anche se la soluzione finale non è unica. Se il problema non è separabile, invece, l'algoritmo può entrare in cicli senza stabilizzarsi. [pause:1.0] Cominciamo la dimostrazione dal Passo uno: ridurci a esempi tutti positivi. [pause:0.5] Poiché il problema è separabile, esiste una soluzione w stella con margine minimo alfa strettamente positivo. [pause:0.7] Definiamo ora x primo con i, uguale a d con i per x con i, ribaltando gli esempi negativi. Poiché d con i al quadrato vale uno, sia la condizione di soluzione, sia la condizione di errore, sia l'aggiornamento dei pesi restano identici. [pause:0.6] Basta quindi dimostrare il teorema con soli esempi positivi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Teorema di convergenza del Perceptron</div>\n  <h2 class=\"slide-title\">Enunciato e riduzione a soli esempi positivi</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Convergenza del Perceptron</div>\n    <p>Se il problema è <strong>linearmente separabile</strong>, l'algoritmo converge in un <strong>numero finito di passi</strong> classificando bene tutti gli esempi (qualunque sia \\(\\w(0)\\); soluzione non unica). Se non è separabile, può sviluppare <strong>cicli</strong>.</p>\n  </div>\n  <div id=\"s2\" class=\"proof-steps cue-hidden\">\n    <div class=\"proof-step\">\n      <span class=\"step-tag\">Passo 1 · Margine</span>\n      <div>\n        <p>Esiste \\(\\w^*\\) tale che \\(\\htmlId{f-alpha}{d_i\\,(\\w^*\\x_i) \\ge \\alpha}\\), con \\(\\alpha = \\min_i d_i\\,(\\w^*\\x_i) &gt; 0\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Ribaltamento</span>\n      <div>\n        <p>Poniamo \\(\\htmlId{f-xprime}{\\x'_i = d_i \\x_i}\\). Poiché \\(\\htmlId{f-d2}{d_i^2 = 1}\\), \\(\\w^*\\) risolve \\((\\x_i, d_i)\\) se e solo se risolve \\((\\x'_i, +1)\\).</p>\n        <p id=\"s3-eq\" class=\"math-note\">Errore: \\(d_i(\\w\\x_i) \\le 0 \\iff \\w\\x'_i \\le 0\\). Aggiornamento: \\(\\w + \\eta d_i\\x_i = \\w + \\eta \\x'_i\\).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.39,
+          "at": 6.1,
           "action": "show",
           "target": "#s1",
           "anchor": "teorema di convergenza"
         },
         {
-          "at": 26.83,
+          "at": 26.72,
           "action": "show",
           "target": "#s2",
           "anchor": "Cominciamo la dimostrazione dal Passo uno"
         },
         {
-          "at": 34.35,
+          "at": 35.51,
           "action": "highlight",
           "target": "#f-alpha",
           "anchor": "margine minimo alfa"
         },
         {
-          "at": 37.41,
+          "at": 38.57,
           "action": "show",
           "target": "#s3",
-          "anchor": "definiamo x primo"
+          "anchor": "Definiamo ora x primo"
+        },
+        {
+          "at": 39.57,
+          "action": "highlight",
+          "target": "#f-xprime",
+          "anchor": "x primo con i"
+        },
+        {
+          "at": 45.25,
+          "action": "highlight",
+          "target": "#f-d2",
+          "anchor": "d con i al quadrato vale uno"
+        },
+        {
+          "at": 49.31,
+          "action": "highlight",
+          "target": "#s3-eq",
+          "anchor": "condizione di errore"
         }
       ],
-      "duration_sec": 52.56
+      "duration_sec": 56.56
     },
     {
       "id": "scene-12",
       "section": "10.5 Il teorema di convergenza del Perceptron",
       "title": "Passo 2 e l'idea dei due limiti",
-      "audio_file": "audio/scene-12.mp3",
+      "audio_file": "audio/scene-12.wav",
       "subtitle_file": "subtitles/scene-12.json",
-      "tts_text": "Nel Passo due fissiamo w di zero uguale al vettore nullo, learning rate eta uguale a uno e definiamo beta come il massimo della norma quadra degli esempi. Partendo da zero, porre eta uguale a uno non limita la generalità: un altro eta riscala tutti i pesi per la stessa costante positiva, senza cambiare i segni né la sequenza degli errori. Il caso con pesi iniziali non nulli richiede solo di adattare i due limiti. Con soli esempi positivi, a ogni errore sommiamo l'esempio sbagliato, quindi dopo q errori il vettore w di q è la somma dei q esempi che hanno causato errore. Ecco l'idea chiave della dimostrazione: imprigionare la norma quadra di w di q tra un limite inferiore che cresce come q al quadrato, la parabola blu, e un limite superiore che cresce linearmente come q, la retta rossa. Poiché una parabola supera sempre una retta, oltre q massimo i due limiti diventano incompatibili: gli errori sono quindi in numero finito.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Teorema di convergenza — Strategia</div>\n  <h2 class=\"slide-title\">Passo 2 e scontro tra crescita quadratica e lineare</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Passo 2 — Assunzioni</div>\n        \\[\\w(0) = \\vv 0, \\quad \\eta = 1, \\quad \\beta = \\max_i \\norm{\\x_i}^2\\]\n        <p class=\"math-note\">Con \\(\\w(0)=\\vv 0\\), \\(\\eta &gt; 0\\) riscala soltanto tutti i pesi senza cambiare i segni.</p>\n      </div>\n      <div id=\"s2\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Pesi dopo \\(q\\) errori</div>\n        \\[\\w(q) = \\sum_{j=1}^{q} \\x_{i_j}\\]\n        <p class=\"math-note\">\\(i_j\\) è l'indice del \\(j\\)-esimo esempio classificato male.</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 365 215\" class=\"diagram-svg\" aria-label=\"Limite inferiore quadratico e limite superiore lineare\">\n        <defs>\n          <marker id=\"arr-c\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"55\" y1=\"180\" x2=\"348\" y2=\"180\" class=\"svg-axis\" marker-end=\"url(#arr-c)\"/>\n        <line x1=\"55\" y1=\"180\" x2=\"55\" y2=\"16\" class=\"svg-axis\" marker-end=\"url(#arr-c)\"/>\n        <text x=\"200\" y=\"206\" text-anchor=\"middle\" class=\"svg-caption\">numero di errori q</text>\n        <text x=\"16\" y=\"102\" transform=\"rotate(-90 16 102)\" text-anchor=\"middle\" class=\"svg-caption\">‖w(q)‖²</text>\n        <path id=\"s4\" d=\"M 55.0,180.0 L 64.8,179.8 L 74.7,179.2 L 84.5,178.3 L 94.3,176.9 L 104.1,175.2 L 114.0,173.0 L 123.8,170.5 L 133.6,167.6 L 143.4,164.3 L 153.3,160.6 L 163.1,156.6 L 172.9,152.1 L 182.8,147.3 L 192.6,142.0 L 202.4,136.4 L 212.2,130.4 L 222.1,124.0 L 231.9,117.2 L 241.7,110.1 L 251.6,102.5 L 261.4,94.6 L 271.2,86.2 L 281.0,77.5 L 290.9,68.4 L 300.7,58.9 L 310.5,49.0 L 320.3,38.8 L 330.2,28.1\" class=\"svg-curve-blue cue-hidden\"/>\n        <text id=\"s4t\" x=\"280\" y=\"34\" class=\"svg-math-sm svg-blue cue-hidden\">(qα)² / ‖w*‖²</text>\n        <path id=\"s5\" d=\"M 55.0,180.0 L 330.2,71.5\" class=\"svg-curve-red cue-hidden\"/>\n        <text id=\"s5t\" x=\"308\" y=\"64\" class=\"svg-math-sm svg-red cue-hidden\">qβ</text>\n        <g id=\"s6\" class=\"cue-hidden\">\n          <line x1=\"251.6\" y1=\"102.5\" x2=\"251.6\" y2=\"180\" stroke=\"#6E6E6E\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n          <circle cx=\"251.6\" cy=\"102.5\" r=\"4.5\" fill=\"#1A1A1A\"/>\n          <text x=\"251.6\" y=\"194\" text-anchor=\"middle\" class=\"svg-math-sm\">qₘₐₓ</text>\n        </g>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Nel Passo due fissiamo w di zero uguale al vettore nullo, learning rate eta uguale a uno, e definiamo beta come il massimo della norma quadra degli esempi. [pause:0.8] Partendo da zero, porre eta uguale a uno non limita la generalità: un altro eta riscala tutti i pesi per la stessa costante positiva, senza cambiare i segni né la sequenza degli errori. Il caso con pesi iniziali non nulli richiede solo di adattare i due limiti. [pause:0.9] Con soli esempi positivi, a ogni errore sommiamo l'esempio sbagliato: dopo q errori, il vettore w di q è la somma dei q esempi che hanno causato errore. [pause:0.9] Ecco l'idea chiave della dimostrazione: imprigionare la norma quadra di w di q tra due curve. [pause:0.5] Un limite inferiore che cresce come q al quadrato, la parabola blu. [pause:0.6] E un limite superiore che cresce linearmente come q, la retta rossa. [pause:0.7] Poiché una parabola supera sempre una retta, oltre q massimo i due limiti diventano incompatibili: gli errori sono quindi in numero finito.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Teorema di convergenza — Strategia</div>\n  <h2 class=\"slide-title\">Passo 2 e scontro tra crescita quadratica e lineare</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Passo 2 — Assunzioni</div>\n        \\[\\htmlId{f-w0}{\\w(0) = \\vv 0}, \\quad \\htmlId{f-eta}{\\eta = 1}, \\quad \\htmlId{f-beta}{\\beta = \\max_i \\norm{\\x_i}^2}\\]\n        <p class=\"math-note\">Con \\(\\w(0)=\\vv 0\\), \\(\\eta &gt; 0\\) riscala soltanto tutti i pesi senza cambiare i segni.</p>\n      </div>\n      <div id=\"s2\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Pesi dopo \\(q\\) errori</div>\n        \\[\\htmlId{f-wq}{\\w(q) = \\sum_{j=1}^{q} \\x_{i_j}}\\]\n        <p class=\"math-note\">\\(i_j\\) è l'indice del \\(j\\)-esimo esempio classificato male.</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 365 215\" class=\"diagram-svg\" aria-label=\"Limite inferiore quadratico e limite superiore lineare\">\n        <defs>\n          <marker id=\"arr-c\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"55\" y1=\"180\" x2=\"348\" y2=\"180\" class=\"svg-axis\" marker-end=\"url(#arr-c)\"/>\n        <line x1=\"55\" y1=\"180\" x2=\"55\" y2=\"16\" class=\"svg-axis\" marker-end=\"url(#arr-c)\"/>\n        <text x=\"200\" y=\"206\" text-anchor=\"middle\" class=\"svg-caption\">numero di errori q</text>\n        <text x=\"16\" y=\"102\" transform=\"rotate(-90 16 102)\" text-anchor=\"middle\" class=\"svg-caption\">‖w(q)‖²</text>\n        <path id=\"s4\" d=\"M 55.0,180.0 L 64.8,179.8 L 74.7,179.2 L 84.5,178.3 L 94.3,176.9 L 104.1,175.2 L 114.0,173.0 L 123.8,170.5 L 133.6,167.6 L 143.4,164.3 L 153.3,160.6 L 163.1,156.6 L 172.9,152.1 L 182.8,147.3 L 192.6,142.0 L 202.4,136.4 L 212.2,130.4 L 222.1,124.0 L 231.9,117.2 L 241.7,110.1 L 251.6,102.5 L 261.4,94.6 L 271.2,86.2 L 281.0,77.5 L 290.9,68.4 L 300.7,58.9 L 310.5,49.0 L 320.3,38.8 L 330.2,28.1\" class=\"svg-curve-blue cue-hidden\"/>\n        <text id=\"s4t\" x=\"280\" y=\"34\" class=\"svg-math-sm svg-blue cue-hidden\">(qα)² / ‖w*‖²</text>\n        <path id=\"s5\" d=\"M 55.0,180.0 L 330.2,71.5\" class=\"svg-curve-red cue-hidden\"/>\n        <text id=\"s5t\" x=\"308\" y=\"64\" class=\"svg-math-sm svg-red cue-hidden\">qβ</text>\n        <g id=\"s6\" class=\"cue-hidden\">\n          <line x1=\"251.6\" y1=\"102.5\" x2=\"251.6\" y2=\"180\" stroke=\"#6E6E6E\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n          <circle cx=\"251.6\" cy=\"102.5\" r=\"4.5\" fill=\"#1A1A1A\"/>\n          <text x=\"251.6\" y=\"194\" text-anchor=\"middle\" class=\"svg-math-sm\">qₘₐₓ</text>\n        </g>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 0.0,
+          "at": 0.79,
           "action": "show",
           "target": "#s1",
           "anchor": "Nel Passo due fissiamo"
         },
         {
-          "at": 24.35,
+          "at": 2.61,
+          "action": "highlight",
+          "target": "#f-w0",
+          "anchor": "w di zero uguale al vettore nullo"
+        },
+        {
+          "at": 5.65,
+          "action": "highlight",
+          "target": "#f-eta",
+          "anchor": "eta uguale a uno"
+        },
+        {
+          "at": 7.19,
+          "action": "highlight",
+          "target": "#f-beta",
+          "anchor": "definiamo beta come il massimo"
+        },
+        {
+          "at": 30.55,
           "action": "show",
           "target": "#s2",
           "anchor": "dopo q errori"
         },
         {
-          "at": 29.78,
+          "at": 31.91,
+          "action": "highlight",
+          "target": "#f-wq",
+          "anchor": "vettore w di q"
+        },
+        {
+          "at": 36.83,
           "action": "show",
           "target": "#s3",
           "anchor": "idea chiave della dimostrazione"
         },
         {
-          "at": 34.29,
+          "at": 43.12,
           "action": "show",
-          "target": "#s4",
+          "target": "#s4, #s4t",
           "anchor": "limite inferiore che cresce come q al quadrato"
         },
         {
-          "at": 34.29,
+          "at": 47.5,
           "action": "show",
-          "target": "#s4t",
-          "anchor": "limite inferiore che cresce come q al quadrato"
-        },
-        {
-          "at": 38.3,
-          "action": "show",
-          "target": "#s5",
+          "target": "#s5, #s5t",
           "anchor": "limite superiore che cresce linearmente"
         },
         {
-          "at": 38.3,
+          "at": 54.88,
           "action": "show",
-          "target": "#s5t",
-          "anchor": "limite superiore che cresce linearmente"
+          "target": "#s6",
+          "anchor": "oltre q massimo"
         },
         {
-          "at": 44.96,
-          "action": "show",
+          "at": 54.88,
+          "action": "highlight",
           "target": "#s6",
           "anchor": "oltre q massimo"
         }
       ],
-      "duration_sec": 50.38
+      "duration_sec": 60.71
     },
     {
       "id": "scene-13",
       "section": "10.5 Il teorema di convergenza del Perceptron",
       "title": "Dimostrazione: Passi 3, 4 e 5 e significato del bound",
-      "audio_file": "audio/scene-13.mp3",
+      "audio_file": "audio/scene-13.wav",
       "subtitle_file": "subtitles/scene-13.json",
-      "tts_text": "Ricaviamo ora i due limiti. Nel Passo tre, moltiplicando w stella per w di q, ogni termine vale almeno alfa, quindi il prodotto scalare è almeno q per alfa. Applicando la disuguaglianza di Cauchy-Schwarz otteniamo il limite inferiore: la norma quadra di w di q è maggiore o uguale al quadrato di q per alfa, diviso la norma quadra di w stella. Nel Passo quattro sviluppiamo il quadrato della norma di w al passo q meno uno, più l'esempio sbagliato al passo q. Poiché quell'esempio era classificato male, il doppio prodotto centrale è minore o uguale a zero e possiamo eliminarlo, ottenendo per induzione norma quadra di w di q minore o uguale a q per beta. Nel Passo cinque combiniamo le due disuguaglianze: q è limitato da beta per la norma quadra di w stella, diviso alfa al quadrato. Dopo l'ultimo errore l'algoritmo compie un'epoca senza errori e si ferma. Più le classi sono vicine all'iperpiano, più alfa è piccolo e più passi servono: è il concetto di margine che ritroveremo nelle SVM.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Teorema di convergenza — Dimostrazione</div>\n  <h2 class=\"slide-title\">Limite inferiore, limite superiore e bound finale</h2>\n  <div class=\"proof-steps\">\n    <div id=\"s1\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">Passo 3 · Limite inf.</span>\n      <div>\n        \\[\\begin{aligned} \\w^*\\w(q) &= \\sum_{j=1}^{q}\\w^*\\x_{i_j} \\ge q\\alpha \\\\ \\text{Cauchy-Schwarz} &\\implies \\htmlId{f-low}{\\norm{\\w(q)}^2 \\ge \\frac{(q\\alpha)^2}{\\norm{\\w^*}^2}} \\end{aligned}\\]\n      </div>\n    </div>\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-red\">Passo 4 · Limite sup.</span>\n      <div>\n        \\[\\begin{aligned} \\norm{\\w(q)}^2 &= \\norm{\\w(q-1)}^2 + \\htmlId{f-cross}{2\\,\\w(q-1)\\,\\x_{i_q}} + \\norm{\\x_{i_q}}^2 \\\\ &\\le \\norm{\\w(q-1)}^2 + \\norm{\\x_{i_q}}^2 \\implies \\htmlId{f-high}{\\norm{\\w(q)}^2 \\le q\\,\\beta} \\end{aligned}\\]\n        <p class=\"math-note\">Poiché \\(\\x_{i_q}\\) è un errore, \\(\\w(q-1)\\,\\x_{i_q} \\le 0\\) (anche sul confine!).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Passo 5 · Conclusione</span>\n      <div>\n        \\[q\\,\\beta \\ge \\norm{\\w(q)}^2 \\ge \\frac{(q\\alpha)^2}{\\norm{\\w^*}^2} \\quad\\Longrightarrow\\quad \\htmlId{f-bound}{\\boxed{\\;q \\le \\frac{\\beta\\,\\norm{\\w^*}^2}{\\alpha^2}\\;}}\\]\n      </div>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Interpretazione del bound</div>\n    <p>Gli errori crescono con \\(\\beta\\) (ampiezza degli input) e decrescono con \\(\\alpha^2\\) (<strong>margine</strong> della soluzione \\(\\w^*\\)). Classi vicine al confine richiedono più passi — preludio alle <strong>SVM</strong>.</p>\n  </div>\n</div>\n",
+      "tts_text": "Ricaviamo ora i due limiti passo per passo. [pause:0.6] Nel Passo tre moltiplichiamo w stella per w di q: ogni termine vale almeno alfa, quindi il prodotto scalare è almeno q per alfa. [pause:0.6] Applicando la disuguaglianza di Cauchy-Schwarz otteniamo il limite inferiore: la norma quadra di w di q è maggiore o uguale al quadrato di q per alfa, diviso la norma quadra di w stella. [pause:1.0] Nel Passo quattro sviluppiamo il quadrato della norma di w al passo q meno uno, più l'esempio sbagliato al passo q. [pause:0.6] Poiché quell'esempio era classificato male, il doppio prodotto centrale è minore o uguale a zero e possiamo eliminarlo. Iterando fino a w di zero, otteniamo la norma quadra di w di q minore o uguale a q per beta. [pause:1.0] Nel Passo cinque combiniamo i due limiti: q è limitato da beta per la norma quadra di w stella, diviso alfa al quadrato. Dopo l'ultimo errore l'algoritmo compie un'epoca senza errori e si ferma. [pause:0.9] Il bound ha un significato chiarissimo: più le classi sono vicine all'iperpiano, più alfa è piccolo e più passi servono. È il concetto di margine che ritroveremo nelle SVM.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Teorema di convergenza — Dimostrazione</div>\n  <h2 class=\"slide-title\">Limite inferiore, limite superiore e bound finale</h2>\n  <div class=\"proof-steps\">\n    <div id=\"s1\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">Passo 3 · Limite inf.</span>\n      <div>\n        \\[\\begin{aligned} \\htmlId{f-dot}{\\w^*\\w(q) = \\sum_{j=1}^{q}\\w^*\\x_{i_j} \\ge q\\alpha} \\\\ \\text{Cauchy-Schwarz} &\\implies \\htmlId{f-low}{\\norm{\\w(q)}^2 \\ge \\frac{(q\\alpha)^2}{\\norm{\\w^*}^2}} \\end{aligned}\\]\n      </div>\n    </div>\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-red\">Passo 4 · Limite sup.</span>\n      <div>\n        \\[\\begin{aligned} \\norm{\\w(q)}^2 &= \\norm{\\w(q-1)}^2 + \\htmlId{f-cross}{2\\,\\w(q-1)\\,\\x_{i_q}} + \\norm{\\x_{i_q}}^2 \\\\ &\\le \\norm{\\w(q-1)}^2 + \\norm{\\x_{i_q}}^2 \\implies \\htmlId{f-high}{\\norm{\\w(q)}^2 \\le q\\,\\beta} \\end{aligned}\\]\n        <p class=\"math-note\">Poiché \\(\\x_{i_q}\\) è un errore, \\(\\w(q-1)\\,\\x_{i_q} \\le 0\\) (anche sul confine).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Passo 5 · Conclusione</span>\n      <div>\n        \\[q\\,\\beta \\ge \\norm{\\w(q)}^2 \\ge \\frac{(q\\alpha)^2}{\\norm{\\w^*}^2} \\quad\\Longrightarrow\\quad \\boxed{\\;q \\le \\frac{\\htmlId{f-b-beta}{\\beta}\\,\\norm{\\w^*}^2}{\\htmlId{f-b-alpha}{\\alpha^2}}\\;}\\]\n      </div>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Interpretazione del bound</div>\n    <p>Gli errori crescono con \\(\\beta\\) (ampiezza degli input) e decrescono con \\(\\alpha^2\\) (<strong>margine</strong> della soluzione \\(\\w^*\\)). Classi vicine al confine richiedono più passi — preludio alle <strong>SVM</strong>.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 2.06,
+          "at": 2.92,
           "action": "show",
           "target": "#s1",
           "anchor": "Nel Passo tre"
         },
         {
-          "at": 12.54,
+          "at": 3.72,
+          "action": "highlight",
+          "target": "#f-dot",
+          "anchor": "moltiplichiamo w stella"
+        },
+        {
+          "at": 13.02,
           "action": "highlight",
           "target": "#f-low",
           "anchor": "Cauchy-Schwarz"
         },
         {
-          "at": 22.05,
+          "at": 23.42,
           "action": "show",
           "target": "#s2",
           "anchor": "Nel Passo quattro"
         },
         {
-          "at": 29.58,
+          "at": 33.87,
           "action": "highlight",
           "target": "#f-cross",
           "anchor": "doppio prodotto centrale"
         },
         {
-          "at": 36.18,
+          "at": 42.65,
           "action": "highlight",
           "target": "#f-high",
           "anchor": "minore o uguale a q per beta"
         },
         {
-          "at": 38.25,
+          "at": 45.29,
           "action": "show",
           "target": "#s3",
           "anchor": "Nel Passo cinque"
         },
         {
-          "at": 41.31,
+          "at": 48.11,
           "action": "highlight",
-          "target": "#f-bound",
-          "anchor": "q è limitato da beta"
+          "target": "#f-b-beta",
+          "anchor": "limitato da beta"
         },
         {
-          "at": 46.21,
+          "at": 51.25,
+          "action": "highlight",
+          "target": "#f-b-alpha",
+          "anchor": "diviso alfa al quadrato"
+        },
+        {
+          "at": 57.97,
           "action": "show",
           "target": "#s4",
-          "anchor": "Più le classi sono vicine"
+          "anchor": "Il bound ha un significato"
+        },
+        {
+          "at": 62.19,
+          "action": "highlight",
+          "target": "#f-b-alpha",
+          "anchor": "più alfa è piccolo"
         }
       ],
-      "duration_sec": 54.46
+      "duration_sec": 67.64
     },
     {
       "id": "scene-14",
       "section": "10.6 Perceptron contro LMS",
       "title": "Perché l'LMS può sbagliare su dati separabili",
-      "audio_file": "audio/scene-14.mp3",
+      "audio_file": "audio/scene-14.wav",
       "subtitle_file": "subtitles/scene-14.json",
-      "tts_text": "Confrontiamo ora il Perceptron con l'LMS. Le due regole di aggiornamento hanno la stessa forma, ma nell'LMS il segnale delta usa l'uscita lineare w trasposto x, mentre nel Perceptron usa l'uscita con soglia, cioè il segno. Questa differenza ha una conseguenza sorprendente: l'LMS può classificare male anche problemi perfettamente separabili. Guarda il grafico sui dati reali delle note. C'è un gruppo di punti positivi blu molto lontano dal confine. Anche se sono già classificati bene, il loro w trasposto x è molto più grande di uno e genera un enorme errore quadratico, che tira la retta arancione dell'LMS causando quattro errori di classificazione. Il Perceptron invece non tocca gli esempi già corretti: entrambe le sue rette separano perfettamente le due classi.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.6 · Perceptron contro LMS</div>\n  <h2 class=\"slide-title\">L'LMS è attirato dai punti lontani già corretti</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        \\[\\w_{\\mathit{new}} = \\w + \\eta\\,\\delta\\,\\x\\]\n        <ul class=\"clean-list\">\n          <li><strong>LMS</strong>: \\(\\delta = d - \\w\\T\\x\\) (senza soglia)</li>\n          <li><strong>Perceptron</strong>: \\(\\delta = d - \\sign(\\w\\T\\x)\\) (con soglia)</li>\n        </ul>\n      </div>\n      <div id=\"s2\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Conseguenza chiave</div>\n        <p>L'LMS minimizza l'errore quadratico e modifica i pesi <strong>anche su esempi già classificati bene</strong> se \\(\\w\\T\\x \\gg 1\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 390 235\" class=\"diagram-svg\" aria-label=\"Confronto LMS e Perceptron su dati separabili\">\n        <rect x=\"30\" y=\"20\" width=\"340\" height=\"195\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\" stroke-width=\"1\"/>\n        <circle cx=\"118.8\" cy=\"186.6\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"86.0\" cy=\"178.0\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"76.7\" cy=\"185.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"90.2\" cy=\"175.2\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"71.6\" cy=\"169.9\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"85.1\" cy=\"180.6\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"101.9\" cy=\"176.2\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"104.8\" cy=\"180.5\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"89.7\" cy=\"179.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"76.1\" cy=\"171.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"79.1\" cy=\"193.2\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"118.8\" cy=\"183.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"73.5\" cy=\"165.7\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"85.4\" cy=\"172.7\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"78.4\" cy=\"184.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"66.4\" cy=\"199.0\" r=\"3.4\" class=\"pt-neg\"/>\n        <circle cx=\"128.9\" cy=\"148.2\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"161.3\" cy=\"140.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"115.0\" cy=\"146.7\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"129.3\" cy=\"145.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"115.5\" cy=\"144.5\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"141.3\" cy=\"132.7\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"142.4\" cy=\"142.1\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"117.1\" cy=\"126.7\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"111.2\" cy=\"136.9\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"133.4\" cy=\"154.4\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"128.8\" cy=\"152.6\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"143.3\" cy=\"147.6\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"158.8\" cy=\"162.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"138.0\" cy=\"154.5\" r=\"3.4\" class=\"pt-pos\"/>\n        <g id=\"s4\">\n          <ellipse cx=\"308\" cy=\"54\" rx=\"34\" ry=\"26\" fill=\"rgba(217,130,43,0.12)\" stroke=\"#D9822B\" stroke-dasharray=\"4 3\" stroke-width=\"1.2\" class=\"cluster-ring\"/>\n          <circle cx=\"322.4\" cy=\"71.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"304.5\" cy=\"48.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"286.3\" cy=\"40.4\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"312.9\" cy=\"40.2\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"325.3\" cy=\"60.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"297.2\" cy=\"52.4\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"322.0\" cy=\"41.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"298.6\" cy=\"56.5\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"297.2\" cy=\"56.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"306.2\" cy=\"51.7\" r=\"3.4\" class=\"pt-pos\"/>\n        </g>\n        <g id=\"s5\" class=\"cue-hidden\">\n          <line x1=\"30\" y1=\"171.4\" x2=\"370\" y2=\"104.2\" class=\"svg-curve-orange\"/>\n        </g>\n        <g id=\"s6\" class=\"cue-hidden\">\n          <line x1=\"30\" y1=\"149.9\" x2=\"328.2\" y2=\"215\" class=\"svg-curve-ink\"/>\n          <line x1=\"30\" y1=\"127.8\" x2=\"208.5\" y2=\"215\" class=\"svg-curve-ink-dash\"/>\n        </g>\n        <!-- Legend -->\n        <g transform=\"translate(40, 28)\">\n          <rect x=\"0\" y=\"0\" width=\"128\" height=\"62\" fill=\"rgba(255,255,255,0.92)\" stroke=\"#DDDDDD\" rx=\"3\"/>\n          <circle cx=\"12\" cy=\"12\" r=\"3.4\" class=\"pt-pos\"/><text x=\"22\" y=\"15\" class=\"svg-legend\">classe +1</text>\n          <circle cx=\"12\" cy=\"26\" r=\"3.4\" class=\"pt-neg\"/><text x=\"22\" y=\"29\" class=\"svg-legend\">classe -1</text>\n          <line x1=\"6\" y1=\"40\" x2=\"18\" y2=\"40\" class=\"svg-curve-orange\"/><text x=\"22\" y=\"43\" class=\"svg-legend\">LMS (4 errori)</text>\n          <line x1=\"6\" y1=\"53\" x2=\"18\" y2=\"53\" class=\"svg-curve-ink\"/><text x=\"22\" y=\"56\" class=\"svg-legend\">Perceptron (0 errori)</text>\n        </g>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Confrontiamo ora il Perceptron con l'LMS. [pause:0.5] Le due regole di aggiornamento hanno la stessa forma, ma nell'LMS il segnale delta usa l'uscita lineare w trasposto x, mentre nel Perceptron usa l'uscita con soglia, cioè il segno. [pause:0.9] Questa differenza ha una conseguenza sorprendente: l'LMS può classificare male anche problemi perfettamente separabili. [pause:0.8] Guarda il grafico sui dati reali delle note. [pause:0.5] In alto a destra c'è un gruppo di punti positivi blu molto lontano dal confine. Anche se sono già classificati bene, il loro w trasposto x è molto maggiore di uno e genera un enorme errore quadratico. [pause:0.7] Quell'errore tira verso l'alto la retta arancione dell'LMS, causando quattro errori di classificazione. [pause:0.8] Il Perceptron invece non tocca gli esempi già corretti: entrambe le sue rette nere separano perfettamente le due classi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.6 · Perceptron contro LMS</div>\n  <h2 class=\"slide-title\">L'LMS è attirato dai punti lontani già corretti</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        \\[\\w_{\\mathit{new}} = \\w + \\eta\\,\\delta\\,\\x\\]\n        <ul class=\"clean-list\">\n          <li id=\"l-lms\"><strong>LMS</strong>: \\(\\delta = d - \\w\\T\\x\\) (senza soglia)</li>\n          <li id=\"l-perc\"><strong>Perceptron</strong>: \\(\\delta = d - \\sign(\\w\\T\\x)\\) (con soglia)</li>\n        </ul>\n      </div>\n      <div id=\"s2\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Conseguenza chiave</div>\n        <p>L'LMS minimizza l'errore quadratico e modifica i pesi <strong>anche su esempi già classificati bene</strong> se \\(\\w\\T\\x \\gg 1\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 390 235\" class=\"diagram-svg\" aria-label=\"Confronto LMS e Perceptron su dati separabili\">\n        <rect x=\"30\" y=\"20\" width=\"340\" height=\"195\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\" stroke-width=\"1\"/>\n        <circle cx=\"118.8\" cy=\"186.6\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"86.0\" cy=\"178.0\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"76.7\" cy=\"185.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"90.2\" cy=\"175.2\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"71.6\" cy=\"169.9\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"85.1\" cy=\"180.6\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"101.9\" cy=\"176.2\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"104.8\" cy=\"180.5\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"89.7\" cy=\"179.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"76.1\" cy=\"171.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"79.1\" cy=\"193.2\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"118.8\" cy=\"183.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"73.5\" cy=\"165.7\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"85.4\" cy=\"172.7\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"78.4\" cy=\"184.3\" r=\"3.4\" class=\"pt-neg\"/><circle cx=\"66.4\" cy=\"199.0\" r=\"3.4\" class=\"pt-neg\"/>\n        <circle cx=\"128.9\" cy=\"148.2\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"161.3\" cy=\"140.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"115.0\" cy=\"146.7\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"129.3\" cy=\"145.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"115.5\" cy=\"144.5\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"141.3\" cy=\"132.7\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"142.4\" cy=\"142.1\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"117.1\" cy=\"126.7\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"111.2\" cy=\"136.9\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"133.4\" cy=\"154.4\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"128.8\" cy=\"152.6\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"143.3\" cy=\"147.6\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"158.8\" cy=\"162.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"138.0\" cy=\"154.5\" r=\"3.4\" class=\"pt-pos\"/>\n        <g id=\"s4\">\n          <ellipse cx=\"308\" cy=\"54\" rx=\"34\" ry=\"26\" fill=\"rgba(217,130,43,0.12)\" stroke=\"#D9822B\" stroke-dasharray=\"4 3\" stroke-width=\"1.2\"/>\n          <circle cx=\"322.4\" cy=\"71.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"304.5\" cy=\"48.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"286.3\" cy=\"40.4\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"312.9\" cy=\"40.2\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"325.3\" cy=\"60.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"297.2\" cy=\"52.4\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"322.0\" cy=\"41.8\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"298.6\" cy=\"56.5\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"297.2\" cy=\"56.3\" r=\"3.4\" class=\"pt-pos\"/><circle cx=\"306.2\" cy=\"51.7\" r=\"3.4\" class=\"pt-pos\"/>\n        </g>\n        <g id=\"s5\" class=\"cue-hidden\">\n          <line x1=\"30\" y1=\"171.4\" x2=\"370\" y2=\"104.2\" class=\"svg-curve-orange\"/>\n        </g>\n        <g id=\"s6\" class=\"cue-hidden\">\n          <line x1=\"30\" y1=\"149.9\" x2=\"328.2\" y2=\"215\" class=\"svg-curve-ink\"/>\n          <line x1=\"30\" y1=\"127.8\" x2=\"208.5\" y2=\"215\" class=\"svg-curve-ink-dash\"/>\n        </g>\n        <g transform=\"translate(40, 28)\">\n          <rect x=\"0\" y=\"0\" width=\"128\" height=\"62\" fill=\"rgba(255,255,255,0.92)\" stroke=\"#DDDDDD\" rx=\"3\"/>\n          <circle cx=\"12\" cy=\"12\" r=\"3.4\" class=\"pt-pos\"/><text x=\"22\" y=\"15\" class=\"svg-legend\">classe +1</text>\n          <circle cx=\"12\" cy=\"26\" r=\"3.4\" class=\"pt-neg\"/><text x=\"22\" y=\"29\" class=\"svg-legend\">classe -1</text>\n          <line x1=\"6\" y1=\"40\" x2=\"18\" y2=\"40\" class=\"svg-curve-orange\"/><text x=\"22\" y=\"43\" class=\"svg-legend\">LMS (4 errori)</text>\n          <line x1=\"6\" y1=\"53\" x2=\"18\" y2=\"53\" class=\"svg-curve-ink\"/><text x=\"22\" y=\"56\" class=\"svg-legend\">Perceptron (0 errori)</text>\n        </g>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.25,
+          "at": 4.19,
           "action": "show",
           "target": "#s1",
           "anchor": "Le due regole di aggiornamento"
         },
         {
-          "at": 18.81,
+          "at": 6.89,
+          "action": "highlight",
+          "target": "#l-lms",
+          "anchor": "nell'LMS il segnale delta"
+        },
+        {
+          "at": 12.13,
+          "action": "highlight",
+          "target": "#l-perc",
+          "anchor": "nel Perceptron usa l'uscita"
+        },
+        {
+          "at": 19.96,
           "action": "show",
           "target": "#s2",
           "anchor": "classificare male anche problemi"
         },
         {
-          "at": 22.39,
+          "at": 23.56,
           "action": "show",
           "target": "#s3",
           "anchor": "Guarda il grafico"
         },
         {
-          "at": 25.88,
+          "at": 27.06,
           "action": "highlight",
           "target": "#s4",
           "anchor": "gruppo di punti positivi blu"
         },
         {
-          "at": 37.05,
+          "at": 38.42,
           "action": "show",
           "target": "#s5",
-          "anchor": "tira la retta arancione"
+          "anchor": "tira verso l'alto la retta arancione"
         },
         {
-          "at": 41.85,
+          "at": 38.42,
+          "action": "highlight",
+          "target": "#s5",
+          "anchor": "tira verso l'alto la retta arancione"
+        },
+        {
+          "at": 44.34,
           "action": "show",
           "target": "#s6",
           "anchor": "Il Perceptron invece"
         }
       ],
-      "duration_sec": 49.08
+      "duration_sec": 50.95
     },
     {
       "id": "scene-15",
       "section": "10.6 Perceptron contro LMS",
       "title": "Tabella comparativa e svolta verso il gradiente",
-      "audio_file": "audio/scene-15.mp3",
+      "audio_file": "audio/scene-15.wav",
       "subtitle_file": "subtitles/scene-15.json",
-      "tts_text": "Riassumiamo il confronto tra Perceptron e LMS in quattro punti chiave. Primo, l'obiettivo: il Perceptron minimizza le classificazioni errate tramite il segno, mentre l'LMS minimizza l'errore quadratico sull'uscita lineare. Secondo, sui problemi separabili il Perceptron converge in un numero finito di passi a zero errori, mentre l'LMS converge solo asintoticamente. Terzo, sui problemi non separabili il Perceptron non converge, mentre l'LMS converge comunque, pur potendo commettere errori anche quando i dati sono separabili. Quarto punto, il più decisivo: il Perceptron è difficile da estendere a reti di unità, mentre l'LMS si estende alle reti grazie al gradiente. Per costruire reti neurali multistrato ci servono quindi funzioni di attivazione differenziabili.",
+      "tts_text": "Riassumiamo il confronto tra Perceptron e LMS in quattro punti chiave. [pause:0.7] Primo, l'obiettivo: il Perceptron minimizza le classificazioni errate tramite il segno, mentre l'LMS minimizza l'errore quadratico sull'uscita lineare. [pause:0.7] Secondo, sui problemi separabili il Perceptron converge in un numero finito di passi a zero errori, mentre l'LMS converge solo asintoticamente. [pause:0.7] Terzo, sui problemi non separabili il Perceptron non converge, mentre l'LMS converge comunque, pur potendo commettere errori anche su dati separabili. [pause:0.8] Quarto punto, il più decisivo: il Perceptron è difficile da estendere a reti di unità, mentre l'LMS si estende alle reti grazie al gradiente. [pause:0.9] Per costruire reti neurali multistrato ci servono quindi funzioni di attivazione differenziabili.",
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.6 · Sintesi del confronto</div>\n  <h2 class=\"slide-title\">Perceptron e LMS a confronto</h2>\n  <table class=\"acad-table\">\n    <thead>\n      <tr>\n        <th>Criterio</th>\n        <th>Perceptron</th>\n        <th>LMS</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr id=\"s1\" class=\"cue-hidden\">\n        <td><strong>Obiettivo</strong></td>\n        <td>Minimizza gli errori di classificazione (\\(\\out = \\sign(\\w\\T\\x)\\))</td>\n        <td>Minimizza \\(E(\\w)\\) con uscita lineare (\\(\\out = \\w\\T\\x\\))</td>\n      </tr>\n      <tr id=\"s2\" class=\"cue-hidden\">\n        <td><strong>Dati separabili</strong></td>\n        <td>Converge sempre in <strong>passi finiti</strong> a zero errori</td>\n        <td>Convergenza <strong>asintotica</strong> (può comunque sbagliare)</td>\n      </tr>\n      <tr id=\"s3\" class=\"cue-hidden\">\n        <td><strong>Dati non separabili</strong></td>\n        <td>Non converge (possibili cicli)</td>\n        <td>Converge comunque al minimo quadratico</td>\n      </tr>\n      <tr id=\"s4\" class=\"cue-hidden row-key\">\n        <td><strong>Reti multistrato</strong></td>\n        <td>Difficile da estendere a reti di unità</td>\n        <td><strong>Estendibile alle reti</strong> con la discesa del gradiente</td>\n      </tr>\n    </tbody>\n  </table>\n  <div id=\"s5\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Svolta decisiva</div>\n    <p>Per addestrare reti con più strati serve un approccio basato sul <strong>gradiente</strong>, che richiede funzioni di attivazione <strong>differenziabili</strong>.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.8,
+          "at": 5.04,
           "action": "show",
           "target": "#s1",
           "anchor": "Primo, l'obiettivo"
         },
         {
-          "at": 14.59,
+          "at": 5.04,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "Primo, l'obiettivo"
+        },
+        {
+          "at": 14.78,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo, sui problemi separabili"
         },
         {
-          "at": 24.1,
+          "at": 14.78,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "Secondo, sui problemi separabili"
+        },
+        {
+          "at": 24.0,
           "action": "show",
           "target": "#s3",
           "anchor": "Terzo, sui problemi non separabili"
         },
         {
-          "at": 34.19,
+          "at": 24.0,
+          "action": "highlight",
+          "target": "#s3",
+          "anchor": "Terzo, sui problemi non separabili"
+        },
+        {
+          "at": 33.65,
           "action": "show",
           "target": "#s4",
           "anchor": "Quarto punto, il più decisivo"
         },
         {
-          "at": 34.19,
+          "at": 33.65,
           "action": "highlight",
           "target": "#s4",
           "anchor": "Quarto punto, il più decisivo"
         },
         {
-          "at": 46.46,
+          "at": 45.71,
           "action": "show",
           "target": "#s5",
           "anchor": "funzioni di attivazione differenziabili"
         }
       ],
-      "duration_sec": 49.15
+      "duration_sec": 48.34
     },
     {
       "id": "scene-16",
       "section": "10.7 Unità sigmoidali",
       "title": "Sigmoide logistica, tangente iperbolica e altre attivazioni",
-      "audio_file": "audio/scene-16.mp3",
+      "audio_file": "audio/scene-16.wav",
       "subtitle_file": "subtitles/scene-16.json",
-      "tts_text": "Ecco perché introduciamo le unità sigmoidali. La funzione logistica è una funzione a schiacciamento, squashing, con valori continui tra zero e uno: uno diviso uno più e elevato a meno a x, dove a è la pendenza. È una versione liscia e differenziabile del gradino: per a che tende a zero diventa una retta quasi piatta, per a che tende a infinito diventa una soglia netta, e vicino a zero è quasi lineare. La versione simmetrica tra meno uno e più uno è la tangente iperbolica: due f sigma di x meno uno, uguale alla tangente iperbolica di a x mezzi. In classificazione la soglia naturale è zero virgola cinque per la logistica e zero per la tangente iperbolica, ma si può spostare con curve ROC o inserire una zona di rifiuto. In pratica esistono anche altre attivazioni: le RBF gaussiane, la softmax per uscite multiple, i neuroni stocastici, la ReLU massimo tra zero e x, scelta standard nei modelli profondi, e la sua versione liscia softplus.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7 · Unità sigmoidali</div>\n  <h2 class=\"slide-title\">Logistica, tangente iperbolica e famiglia delle attivazioni</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div class=\"math-card\">\n      <div class=\"step-tag-inline\">Sigmoide logistica in \\((0,1)\\)</div>\n      \\[f_\\sigma(x) = \\frac{1}{1 + e^{-ax}}\\]\n    </div>\n    <div class=\"math-card\">\n      <div class=\"step-tag-inline\">Tangente iperbolica in \\((-1, +1)\\)</div>\n      \\[f_{\\mathit{symm}}(x) = 2f_\\sigma(x) - 1 = \\tanh\\!\\left(\\frac{ax}{2}\\right)\\]\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 305 188\" class=\"diagram-svg\" aria-label=\"Logistica per diverse pendenze\">\n        <line x1=\"25\" y1=\"165\" x2=\"292\" y2=\"165\" class=\"svg-axis\"/>\n        <line x1=\"160\" y1=\"175\" x2=\"160\" y2=\"15\" class=\"svg-axis\"/>\n        <line x1=\"155\" y1=\"95\" x2=\"165\" y2=\"95\" class=\"svg-axis\"/>\n        <line x1=\"155\" y1=\"25\" x2=\"165\" y2=\"25\" class=\"svg-axis\"/>\n        <path d=\"M 35.0,162.5 L 41.2,161.9 L 47.5,161.3 L 53.7,160.5 L 60.0,159.5 L 66.2,158.4 L 72.5,157.0 L 78.8,155.3 L 85.0,153.4 L 91.2,151.0 L 97.5,148.3 L 103.8,145.1 L 110.0,141.5 L 116.2,137.3 L 122.5,132.6 L 128.8,127.3 L 135.0,121.6 L 141.2,115.4 L 147.5,108.8 L 153.8,102.0 L 160.0,95.0 L 166.2,88.0 L 172.5,81.2 L 178.8,74.6 L 185.0,68.4 L 191.2,62.7 L 197.5,57.4 L 203.8,52.7 L 210.0,48.5 L 216.2,44.9 L 222.5,41.7 L 228.8,39.0 L 235.0,36.6 L 241.2,34.7 L 247.5,33.0 L 253.8,31.6 L 260.0,30.5 L 266.2,29.5 L 272.5,28.7 L 278.8,28.1 L 285.0,27.5\" class=\"svg-curve-green\"/>\n        <path d=\"M 35.0,165.0 L 41.2,164.9 L 47.5,164.9 L 53.7,164.8 L 60.0,164.8 L 66.2,164.7 L 72.5,164.5 L 78.8,164.2 L 85.0,163.9 L 91.2,163.3 L 97.5,162.5 L 103.8,161.3 L 110.0,159.5 L 116.2,157.0 L 122.5,153.4 L 128.8,148.3 L 135.0,141.5 L 141.2,132.6 L 147.5,121.6 L 153.8,108.8 L 160.0,95.0 L 166.2,81.2 L 172.5,68.4 L 178.8,57.4 L 185.0,48.5 L 191.2,41.7 L 197.5,36.6 L 203.8,33.0 L 210.0,30.5 L 216.2,28.7 L 222.5,27.5 L 228.8,26.7 L 235.0,26.1 L 241.2,25.8 L 247.5,25.5 L 253.8,25.3 L 260.0,25.2 L 266.2,25.2 L 272.5,25.1 L 278.8,25.1 L 285.0,25.0\" class=\"svg-curve-red\"/>\n        <path d=\"M 35.0,165.0 L 41.2,165.0 L 47.5,165.0 L 53.7,165.0 L 60.0,165.0 L 66.2,165.0 L 72.5,165.0 L 78.8,165.0 L 85.0,165.0 L 91.2,165.0 L 97.5,165.0 L 103.8,164.9 L 110.0,164.8 L 116.2,164.5 L 122.5,163.9 L 128.8,162.5 L 135.0,159.5 L 141.2,153.4 L 147.5,141.5 L 153.8,121.6 L 160.0,95.0 L 166.2,68.4 L 172.5,48.5 L 178.8,36.6 L 185.0,30.5 L 191.2,27.5 L 197.5,26.1 L 203.8,25.5 L 210.0,25.2 L 216.2,25.1 L 222.5,25.0 L 228.8,25.0 L 235.0,25.0 L 241.2,25.0 L 247.5,25.0 L 253.8,25.0 L 260.0,25.0 L 266.2,25.0 L 272.5,25.0 L 278.8,25.0 L 285.0,25.0\" class=\"svg-curve-blue\"/>\n        <text x=\"142\" y=\"29\" class=\"svg-tick\">1</text>\n        <text x=\"134\" y=\"99\" class=\"svg-tick\">0,5</text>\n        <text x=\"36\" y=\"34\" class=\"svg-legend svg-green\">— a = 0,5</text>\n        <text x=\"36\" y=\"49\" class=\"svg-legend svg-red\">— a = 1</text>\n        <text x=\"36\" y=\"64\" class=\"svg-legend svg-blue\">— a = 2</text>\n        <text x=\"160\" y=\"183\" text-anchor=\"middle\" class=\"svg-caption\">Logistica (pendenza a)</text>\n      </svg>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 305 188\" class=\"diagram-svg\" aria-label=\"Tangente iperbolica\">\n        <line x1=\"25\" y1=\"95\" x2=\"292\" y2=\"95\" class=\"svg-axis\"/>\n        <line x1=\"160\" y1=\"175\" x2=\"160\" y2=\"15\" class=\"svg-axis\"/>\n        <path d=\"M 35.0,165.0 L 41.2,164.9 L 47.5,164.9 L 53.7,164.8 L 60.0,164.8 L 66.2,164.7 L 72.5,164.5 L 78.8,164.2 L 85.0,163.9 L 91.2,163.3 L 97.5,162.5 L 103.8,161.3 L 110.0,159.5 L 116.2,157.0 L 122.5,153.4 L 128.8,148.3 L 135.0,141.5 L 141.2,132.6 L 147.5,121.6 L 153.8,108.8 L 160.0,95.0 L 166.2,81.2 L 172.5,68.4 L 178.8,57.4 L 185.0,48.5 L 191.2,41.7 L 197.5,36.6 L 203.8,33.0 L 210.0,30.5 L 216.2,28.7 L 222.5,27.5 L 228.8,26.7 L 235.0,26.1 L 241.2,25.8 L 247.5,25.5 L 253.8,25.3 L 260.0,25.2 L 266.2,25.2 L 272.5,25.1 L 278.8,25.1 L 285.0,25.0\" class=\"svg-curve-blue\"/>\n        <text x=\"138\" y=\"29\" class=\"svg-tick\">+1</text>\n        <text x=\"138\" y=\"169\" class=\"svg-tick\">-1</text>\n        <text x=\"160\" y=\"183\" text-anchor=\"middle\" class=\"svg-caption\">Tangente iperbolica tanh(x/2)</text>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Altre attivazioni:</span>\n    <span class=\"pill\">RBF \\(e^{-ax^2}\\)</span>\n    <span class=\"pill\">Softmax</span>\n    <span class=\"pill\">Stocastici</span>\n    <span class=\"pill pill-accent\">ReLU \\(\\max(0,x)\\)</span>\n    <span class=\"pill\">Softplus \\(\\ln(1+e^x)\\)</span>\n  </div>\n</div>\n",
+      "tts_text": "Ecco perché introduciamo le unità sigmoidali. [pause:0.5] La funzione logistica è una funzione a schiacciamento, squashing, con valori continui tra zero e uno: uno diviso uno più e elevato a meno a x, dove a è la pendenza. [pause:0.8] È una versione liscia e differenziabile del gradino. Per a che tende a zero diventa una retta quasi piatta, per a che tende a infinito diventa una soglia netta, e vicino a zero resta quasi lineare. [pause:0.9] La versione simmetrica tra meno uno e più uno è la tangente iperbolica: due f sigma di x meno uno, uguale alla tangente iperbolica di a x mezzi. [pause:0.9] In classificazione la soglia naturale è zero virgola cinque per la logistica e zero per la tangente iperbolica, ma si può spostare con curve ROC o inserire una zona di rifiuto. [pause:0.8] In pratica esistono anche altre attivazioni: le RBF gaussiane, la softmax per uscite multiple, i neuroni stocastici, la ReLU massimo tra zero e x, scelta standard nei modelli profondi, e la sua versione liscia softplus.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7 · Unità sigmoidali</div>\n  <h2 class=\"slide-title\">Logistica, tangente iperbolica e famiglia delle attivazioni</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"eq-log\" class=\"math-card\">\n      <div class=\"step-tag-inline\">Sigmoide logistica in \\((0,1)\\)</div>\n      \\[f_\\sigma(x) = \\frac{1}{1 + e^{-\\htmlId{f-slope}{a}x}}\\]\n    </div>\n    <div id=\"eq-tanh\" class=\"math-card\">\n      <div class=\"step-tag-inline\">Tangente iperbolica in \\((-1, +1)\\)</div>\n      \\[f_{\\mathit{symm}}(x) = 2f_\\sigma(x) - 1 = \\tanh\\!\\left(\\frac{ax}{2}\\right)\\]\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 305 188\" class=\"diagram-svg\" aria-label=\"Logistica per diverse pendenze\">\n        <line x1=\"25\" y1=\"165\" x2=\"292\" y2=\"165\" class=\"svg-axis\"/>\n        <line x1=\"160\" y1=\"175\" x2=\"160\" y2=\"15\" class=\"svg-axis\"/>\n        <line x1=\"155\" y1=\"95\" x2=\"165\" y2=\"95\" class=\"svg-axis\"/>\n        <line x1=\"155\" y1=\"25\" x2=\"165\" y2=\"25\" class=\"svg-axis\"/>\n        <path id=\"c-a05\" d=\"M 35.0,162.5 L 41.2,161.9 L 47.5,161.3 L 53.7,160.5 L 60.0,159.5 L 66.2,158.4 L 72.5,157.0 L 78.8,155.3 L 85.0,153.4 L 91.2,151.0 L 97.5,148.3 L 103.8,145.1 L 110.0,141.5 L 116.2,137.3 L 122.5,132.6 L 128.8,127.3 L 135.0,121.6 L 141.2,115.4 L 147.5,108.8 L 153.8,102.0 L 160.0,95.0 L 166.2,88.0 L 172.5,81.2 L 178.8,74.6 L 185.0,68.4 L 191.2,62.7 L 197.5,57.4 L 203.8,52.7 L 210.0,48.5 L 216.2,44.9 L 222.5,41.7 L 228.8,39.0 L 235.0,36.6 L 241.2,34.7 L 247.5,33.0 L 253.8,31.6 L 260.0,30.5 L 266.2,29.5 L 272.5,28.7 L 278.8,28.1 L 285.0,27.5\" class=\"svg-curve-green\"/>\n        <path id=\"c-a10\" d=\"M 35.0,165.0 L 41.2,164.9 L 47.5,164.9 L 53.7,164.8 L 60.0,164.8 L 66.2,164.7 L 72.5,164.5 L 78.8,164.2 L 85.0,163.9 L 91.2,163.3 L 97.5,162.5 L 103.8,161.3 L 110.0,159.5 L 116.2,157.0 L 122.5,153.4 L 128.8,148.3 L 135.0,141.5 L 141.2,132.6 L 147.5,121.6 L 153.8,108.8 L 160.0,95.0 L 166.2,81.2 L 172.5,68.4 L 178.8,57.4 L 185.0,48.5 L 191.2,41.7 L 197.5,36.6 L 203.8,33.0 L 210.0,30.5 L 216.2,28.7 L 222.5,27.5 L 228.8,26.7 L 235.0,26.1 L 241.2,25.8 L 247.5,25.5 L 253.8,25.3 L 260.0,25.2 L 266.2,25.2 L 272.5,25.1 L 278.8,25.1 L 285.0,25.0\" class=\"svg-curve-red\"/>\n        <path id=\"c-a20\" d=\"M 35.0,165.0 L 41.2,165.0 L 47.5,165.0 L 53.7,165.0 L 60.0,165.0 L 66.2,165.0 L 72.5,165.0 L 78.8,165.0 L 85.0,165.0 L 91.2,165.0 L 97.5,165.0 L 103.8,164.9 L 110.0,164.8 L 116.2,164.5 L 122.5,163.9 L 128.8,162.5 L 135.0,159.5 L 141.2,153.4 L 147.5,141.5 L 153.8,121.6 L 160.0,95.0 L 166.2,68.4 L 172.5,48.5 L 178.8,36.6 L 185.0,30.5 L 191.2,27.5 L 197.5,26.1 L 203.8,25.5 L 210.0,25.2 L 216.2,25.1 L 222.5,25.0 L 228.8,25.0 L 235.0,25.0 L 241.2,25.0 L 247.5,25.0 L 253.8,25.0 L 260.0,25.0 L 266.2,25.0 L 272.5,25.0 L 278.8,25.0 L 285.0,25.0\" class=\"svg-curve-blue\"/>\n        <text x=\"142\" y=\"29\" class=\"svg-tick\">1</text>\n        <text x=\"134\" y=\"99\" class=\"svg-tick\">0,5</text>\n        <text x=\"36\" y=\"34\" class=\"svg-legend svg-green\">— a = 0,5</text>\n        <text x=\"36\" y=\"49\" class=\"svg-legend svg-red\">— a = 1</text>\n        <text x=\"36\" y=\"64\" class=\"svg-legend svg-blue\">— a = 2</text>\n        <text x=\"160\" y=\"183\" text-anchor=\"middle\" class=\"svg-caption\">Logistica (pendenza a)</text>\n      </svg>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 305 188\" class=\"diagram-svg\" aria-label=\"Tangente iperbolica\">\n        <line x1=\"25\" y1=\"95\" x2=\"292\" y2=\"95\" class=\"svg-axis\"/>\n        <line x1=\"160\" y1=\"175\" x2=\"160\" y2=\"15\" class=\"svg-axis\"/>\n        <path d=\"M 35.0,165.0 L 41.2,164.9 L 47.5,164.9 L 53.7,164.8 L 60.0,164.8 L 66.2,164.7 L 72.5,164.5 L 78.8,164.2 L 85.0,163.9 L 91.2,163.3 L 97.5,162.5 L 103.8,161.3 L 110.0,159.5 L 116.2,157.0 L 122.5,153.4 L 128.8,148.3 L 135.0,141.5 L 141.2,132.6 L 147.5,121.6 L 153.8,108.8 L 160.0,95.0 L 166.2,81.2 L 172.5,68.4 L 178.8,57.4 L 185.0,48.5 L 191.2,41.7 L 197.5,36.6 L 203.8,33.0 L 210.0,30.5 L 216.2,28.7 L 222.5,27.5 L 228.8,26.7 L 235.0,26.1 L 241.2,25.8 L 247.5,25.5 L 253.8,25.3 L 260.0,25.2 L 266.2,25.2 L 272.5,25.1 L 278.8,25.1 L 285.0,25.0\" class=\"svg-curve-blue\"/>\n        <text x=\"138\" y=\"29\" class=\"svg-tick\">+1</text>\n        <text x=\"138\" y=\"169\" class=\"svg-tick\">-1</text>\n        <text x=\"160\" y=\"183\" text-anchor=\"middle\" class=\"svg-caption\">Tangente iperbolica tanh(x/2)</text>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Altre attivazioni:</span>\n    <span class=\"pill\">RBF \\(e^{-ax^2}\\)</span>\n    <span class=\"pill\">Softmax</span>\n    <span class=\"pill\">Stocastici</span>\n    <span id=\"p-relu\" class=\"pill pill-accent\">ReLU \\(\\max(0,x)\\)</span>\n    <span class=\"pill\">Softplus \\(\\ln(1+e^x)\\)</span>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.15,
+          "at": 3.87,
           "action": "show",
           "target": "#s1",
           "anchor": "La funzione logistica"
         },
         {
-          "at": 13.54,
+          "at": 12.75,
+          "action": "highlight",
+          "target": "#f-slope",
+          "anchor": "dove a è la pendenza"
+        },
+        {
+          "at": 15.17,
           "action": "show",
           "target": "#s2",
           "anchor": "versione liscia e differenziabile"
         },
         {
-          "at": 24.01,
+          "at": 18.05,
+          "action": "highlight",
+          "target": "#c-a05",
+          "anchor": "per a che tende a zero"
+        },
+        {
+          "at": 21.27,
+          "action": "highlight",
+          "target": "#c-a20",
+          "anchor": "per a che tende a infinito"
+        },
+        {
+          "at": 26.87,
           "action": "show",
           "target": "#s3",
+          "anchor": "versione simmetrica"
+        },
+        {
+          "at": 29.39,
+          "action": "highlight",
+          "target": "#eq-tanh, #s3",
           "anchor": "tangente iperbolica"
         },
         {
-          "at": 42.1,
+          "at": 47.6,
           "action": "show",
           "target": "#s4",
           "anchor": "altre attivazioni"
+        },
+        {
+          "at": 54.46,
+          "action": "highlight",
+          "target": "#p-relu",
+          "anchor": "la ReLU massimo tra zero e x"
         }
       ],
-      "duration_sec": 54.77
+      "duration_sec": 61.25
     },
     {
       "id": "scene-17",
       "section": "10.7.1 Derivate",
       "title": "La derivata elegante della sigmoide",
-      "audio_file": "audio/scene-17.mp3",
+      "audio_file": "audio/scene-17.wav",
       "subtitle_file": "subtitles/scene-17.json",
-      "tts_text": "Perché la funzione a gradino blocca la discesa del gradiente? Perché la sua derivata non è definita in zero ed è nulla ovunque altrove. Le sigmoidi risolvono il problema con una proprietà algebrica comodissima. Scrivendo la logistica come uno più e elevato a meno x, il tutto elevato a meno uno, e applicando la regola della catena, otteniamo e alla meno x diviso il quadrato di uno più e alla meno x. Spezzando la frazione in due fattori si scopre che f primo sigma di x vale esattamente f sigma di x per uno meno f sigma di x, con un fattore a davanti per pendenza generica. Analogamente, la derivata della tangente iperbolica è uno meno tangente iperbolica al quadrato. La derivata si calcola direttamente dall'uscita della funzione stessa. Come mostra il grafico, f primo raggiunge il massimo in zero, dove vale zero virgola venticinque, e tende a zero nelle code.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7.1 · Derivate delle attivazioni</div>\n  <h2 class=\"slide-title\">La derivata si esprime tramite la funzione stessa</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Derivazione (per \\(a=1\\))</div>\n        \\[f'_\\sigma(x) = \\frac{e^{-x}}{(1+e^{-x})^2} = \\htmlId{f-d1}{\\frac{1}{1+e^{-x}}} \\cdot \\htmlId{f-d2}{\\frac{e^{-x}}{1+e^{-x}}}\\]\n      </div>\n      <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n        \\[\\boxed{\\;\\frac{df_\\sigma}{dx} = f_\\sigma(x)\\big(1 - f_\\sigma(x)\\big), \\qquad \\frac{d\\tanh(x)}{dx} = 1 - \\tanh^2(x)\\;}\\]\n        <p class=\"math-note\">Con pendenza \\(a\\) generica: \\(f'_\\sigma(x) = a\\,f_\\sigma(x)(1 - f_\\sigma(x))\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 385 200\" class=\"diagram-svg\" aria-label=\"Logistica, derivata prima e derivata seconda\">\n        <line x1=\"45\" y1=\"155.6\" x2=\"365\" y2=\"155.6\" class=\"svg-axis\"/>\n        <line x1=\"200\" y1=\"180\" x2=\"200\" y2=\"16\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"123.3\" x2=\"204\" y2=\"123.3\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"91.0\" x2=\"204\" y2=\"91.0\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"26.5\" x2=\"204\" y2=\"26.5\" class=\"svg-axis\"/>\n        <path d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.1 L 60.5,155.0 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.3 L 86.3,154.1 L 91.5,153.7 L 96.7,153.3 L 101.8,152.8 L 107.0,152.2 L 112.2,151.5 L 117.3,150.6 L 122.5,149.5 L 127.7,148.2 L 132.8,146.7 L 138.0,144.9 L 143.2,142.7 L 148.3,140.2 L 153.5,137.3 L 158.7,133.9 L 163.8,130.1 L 169.0,125.7 L 174.2,120.9 L 179.3,115.6 L 184.5,109.9 L 189.7,103.8 L 194.8,97.5 L 200.0,91.0 L 205.2,84.6 L 210.3,78.3 L 215.5,72.2 L 220.7,66.5 L 225.8,61.2 L 231.0,56.4 L 236.2,52.0 L 241.3,48.2 L 246.5,44.8 L 251.7,41.9 L 256.8,39.3 L 262.0,37.2 L 267.2,35.4 L 272.3,33.9 L 277.5,32.6 L 282.7,31.5 L 287.8,30.6 L 293.0,29.9 L 298.2,29.3 L 303.3,28.8 L 308.5,28.4 L 313.7,28.0 L 318.8,27.7 L 324.0,27.5 L 329.2,27.3 L 334.3,27.2 L 339.5,27.0 L 344.7,26.9 L 349.8,26.8 L 355.0,26.8\" class=\"svg-curve-ink\"/>\n        <path id=\"s4\" d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.2 L 60.5,155.0 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.4 L 86.3,154.1 L 91.5,153.7 L 96.7,153.3 L 101.8,152.9 L 107.0,152.3 L 112.2,151.6 L 117.3,150.8 L 122.5,149.8 L 127.7,148.6 L 132.8,147.3 L 138.0,145.8 L 143.2,144.0 L 148.3,142.1 L 153.5,139.9 L 158.7,137.6 L 163.8,135.1 L 169.0,132.6 L 174.2,130.2 L 179.3,128.0 L 184.5,126.1 L 189.7,124.6 L 194.8,123.7 L 200.0,123.3 L 205.2,123.7 L 210.3,124.6 L 215.5,126.1 L 220.7,128.0 L 225.8,130.2 L 231.0,132.6 L 236.2,135.1 L 241.3,137.6 L 246.5,139.9 L 251.7,142.1 L 256.8,144.0 L 262.0,145.8 L 267.2,147.3 L 272.3,148.6 L 277.5,149.8 L 282.7,150.8 L 287.8,151.6 L 293.0,152.3 L 298.2,152.9 L 303.3,153.3 L 308.5,153.7 L 313.7,154.1 L 318.8,154.4 L 324.0,154.6 L 329.2,154.8 L 334.3,154.9 L 339.5,155.0 L 344.7,155.2 L 349.8,155.2 L 355.0,155.3\" class=\"svg-curve-red\"/>\n        <path d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.2 L 60.5,155.1 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.4 L 86.3,154.1 L 91.5,153.8 L 96.7,153.4 L 101.8,153.0 L 107.0,152.5 L 112.2,151.8 L 117.3,151.1 L 122.5,150.3 L 127.7,149.4 L 132.8,148.5 L 138.0,147.4 L 143.2,146.3 L 148.3,145.3 L 153.5,144.4 L 158.7,143.6 L 163.8,143.2 L 169.0,143.3 L 174.2,143.9 L 179.3,145.1 L 184.5,147.0 L 189.7,149.5 L 194.8,152.4 L 200.0,155.6 L 205.2,158.8 L 210.3,161.8 L 215.5,164.2 L 220.7,166.1 L 225.8,167.4 L 231.0,168.0 L 236.2,168.0 L 241.3,167.6 L 246.5,166.9 L 251.7,166.0 L 256.8,164.9 L 262.0,163.8 L 267.2,162.8 L 272.3,161.8 L 277.5,160.9 L 282.7,160.1 L 287.8,159.4 L 293.0,158.8 L 298.2,158.3 L 303.3,157.8 L 308.5,157.4 L 313.7,157.1 L 318.8,156.9 L 324.0,156.7 L 329.2,156.5 L 334.3,156.3 L 339.5,156.2 L 344.7,156.1 L 349.8,156.0 L 355.0,155.9\" class=\"svg-curve-green\"/>\n        <circle cx=\"200\" cy=\"123.3\" r=\"4\" fill=\"#C0392B\"/>\n        <text x=\"188\" y=\"30\" text-anchor=\"end\" class=\"svg-tick\">1</text>\n        <text x=\"188\" y=\"94\" text-anchor=\"end\" class=\"svg-tick\">0,5</text>\n        <text x=\"188\" y=\"127\" text-anchor=\"end\" class=\"svg-tick svg-red\">0,25</text>\n        <text x=\"295\" y=\"42\" class=\"svg-legend\">— fσ</text>\n        <text x=\"295\" y=\"57\" class=\"svg-legend svg-red\">— f'σ (max 0,25)</text>\n        <text x=\"295\" y=\"72\" class=\"svg-legend svg-green\">— f''σ</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Perché la funzione a gradino blocca la discesa del gradiente? Perché la sua derivata non è definita in zero ed è nulla ovunque altrove. [pause:0.8] Le sigmoidi risolvono il problema con una proprietà algebrica comodissima. [pause:0.5] Scrivendo la logistica come uno più e elevato a meno x, il tutto elevato a meno uno, e applicando la regola della catena, otteniamo e alla meno x diviso il quadrato di uno più e alla meno x. [pause:0.8] Spezzando la frazione in due fattori, il primo è f sigma di x, il secondo è uno meno f sigma di x. [pause:0.7] Quindi f primo sigma di x vale esattamente f sigma di x per uno meno f sigma di x, con un fattore a davanti per pendenza generica. [pause:0.9] Analogamente, la derivata della tangente iperbolica è uno meno tangente iperbolica al quadrato. La derivata si calcola direttamente dall'uscita della funzione stessa. [pause:0.8] Come mostra il grafico, f primo raggiunge il massimo in zero, dove vale zero virgola venticinque, e tende a zero nelle code.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7.1 · Derivate delle attivazioni</div>\n  <h2 class=\"slide-title\">La derivata si esprime tramite la funzione stessa</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Derivazione (per \\(a=1\\))</div>\n        \\[f'_\\sigma(x) = \\frac{e^{-x}}{(1+e^{-x})^2} = \\htmlId{f-d1}{\\frac{1}{1+e^{-x}}} \\cdot \\htmlId{f-d2}{\\frac{e^{-x}}{1+e^{-x}}}\\]\n      </div>\n      <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n        \\[\\boxed{\\;\\htmlId{f-sigd}{\\frac{df_\\sigma}{dx} = f_\\sigma(x)\\big(1 - f_\\sigma(x)\\big)}, \\qquad \\htmlId{f-tanhd}{\\frac{d\\tanh(x)}{dx} = 1 - \\tanh^2(x)}\\;}\\]\n        <p class=\"math-note\">Con pendenza \\(a\\) generica: \\(f'_\\sigma(x) = a\\,f_\\sigma(x)(1 - f_\\sigma(x))\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 385 200\" class=\"diagram-svg\" aria-label=\"Logistica, derivata prima e derivata seconda\">\n        <line x1=\"45\" y1=\"155.6\" x2=\"365\" y2=\"155.6\" class=\"svg-axis\"/>\n        <line x1=\"200\" y1=\"180\" x2=\"200\" y2=\"16\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"123.3\" x2=\"204\" y2=\"123.3\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"91.0\" x2=\"204\" y2=\"91.0\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"26.5\" x2=\"204\" y2=\"26.5\" class=\"svg-axis\"/>\n        <path d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.1 L 60.5,155.0 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.3 L 86.3,154.1 L 91.5,153.7 L 96.7,153.3 L 101.8,152.8 L 107.0,152.2 L 112.2,151.5 L 117.3,150.6 L 122.5,149.5 L 127.7,148.2 L 132.8,146.7 L 138.0,144.9 L 143.2,142.7 L 148.3,140.2 L 153.5,137.3 L 158.7,133.9 L 163.8,130.1 L 169.0,125.7 L 174.2,120.9 L 179.3,115.6 L 184.5,109.9 L 189.7,103.8 L 194.8,97.5 L 200.0,91.0 L 205.2,84.6 L 210.3,78.3 L 215.5,72.2 L 220.7,66.5 L 225.8,61.2 L 231.0,56.4 L 236.2,52.0 L 241.3,48.2 L 246.5,44.8 L 251.7,41.9 L 256.8,39.3 L 262.0,37.2 L 267.2,35.4 L 272.3,33.9 L 277.5,32.6 L 282.7,31.5 L 287.8,30.6 L 293.0,29.9 L 298.2,29.3 L 303.3,28.8 L 308.5,28.4 L 313.7,28.0 L 318.8,27.7 L 324.0,27.5 L 329.2,27.3 L 334.3,27.2 L 339.5,27.0 L 344.7,26.9 L 349.8,26.8 L 355.0,26.8\" class=\"svg-curve-ink\"/>\n        <path id=\"s4\" d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.2 L 60.5,155.0 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.4 L 86.3,154.1 L 91.5,153.7 L 96.7,153.3 L 101.8,152.9 L 107.0,152.3 L 112.2,151.6 L 117.3,150.8 L 122.5,149.8 L 127.7,148.6 L 132.8,147.3 L 138.0,145.8 L 143.2,144.0 L 148.3,142.1 L 153.5,139.9 L 158.7,137.6 L 163.8,135.1 L 169.0,132.6 L 174.2,130.2 L 179.3,128.0 L 184.5,126.1 L 189.7,124.6 L 194.8,123.7 L 200.0,123.3 L 205.2,123.7 L 210.3,124.6 L 215.5,126.1 L 220.7,128.0 L 225.8,130.2 L 231.0,132.6 L 236.2,135.1 L 241.3,137.6 L 246.5,139.9 L 251.7,142.1 L 256.8,144.0 L 262.0,145.8 L 267.2,147.3 L 272.3,148.6 L 277.5,149.8 L 282.7,150.8 L 287.8,151.6 L 293.0,152.3 L 298.2,152.9 L 303.3,153.3 L 308.5,153.7 L 313.7,154.1 L 318.8,154.4 L 324.0,154.6 L 329.2,154.8 L 334.3,154.9 L 339.5,155.0 L 344.7,155.2 L 349.8,155.2 L 355.0,155.3\" class=\"svg-curve-red\"/>\n        <path d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.2 L 60.5,155.1 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.4 L 86.3,154.1 L 91.5,153.8 L 96.7,153.4 L 101.8,153.0 L 107.0,152.5 L 112.2,151.8 L 117.3,151.1 L 122.5,150.3 L 127.7,149.4 L 132.8,148.5 L 138.0,147.4 L 143.2,146.3 L 148.3,145.3 L 153.5,144.4 L 158.7,143.6 L 163.8,143.2 L 169.0,143.3 L 174.2,143.9 L 179.3,145.1 L 184.5,147.0 L 189.7,149.5 L 194.8,152.4 L 200.0,155.6 L 205.2,158.8 L 210.3,161.8 L 215.5,164.2 L 220.7,166.1 L 225.8,167.4 L 231.0,168.0 L 236.2,168.0 L 241.3,167.6 L 246.5,166.9 L 251.7,166.0 L 256.8,164.9 L 262.0,163.8 L 267.2,162.8 L 272.3,161.8 L 277.5,160.9 L 282.7,160.1 L 287.8,159.4 L 293.0,158.8 L 298.2,158.3 L 303.3,157.8 L 308.5,157.4 L 313.7,157.1 L 318.8,156.9 L 324.0,156.7 L 329.2,156.5 L 334.3,156.3 L 339.5,156.2 L 344.7,156.1 L 349.8,156.0 L 355.0,155.9\" class=\"svg-curve-green\"/>\n        <circle id=\"s4-pk\" cx=\"200\" cy=\"123.3\" r=\"4.5\" fill=\"#C0392B\"/>\n        <text x=\"188\" y=\"30\" text-anchor=\"end\" class=\"svg-tick\">1</text>\n        <text x=\"188\" y=\"94\" text-anchor=\"end\" class=\"svg-tick\">0,5</text>\n        <text x=\"188\" y=\"127\" text-anchor=\"end\" class=\"svg-tick svg-red\">0,25</text>\n        <text x=\"295\" y=\"42\" class=\"svg-legend\">— fσ</text>\n        <text x=\"295\" y=\"57\" class=\"svg-legend svg-red\">— f'σ (max 0,25)</text>\n        <text x=\"295\" y=\"72\" class=\"svg-legend svg-green\">— f''σ</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 13.1,
+          "at": 13.02,
           "action": "show",
           "target": "#s1",
           "anchor": "Scrivendo la logistica"
         },
         {
-          "at": 20.64,
+          "at": 28.92,
           "action": "highlight",
           "target": "#f-d1",
-          "anchor": "Spezzando la frazione"
+          "anchor": "il primo è f sigma"
         },
         {
-          "at": 25.33,
+          "at": 31.18,
           "action": "highlight",
           "target": "#f-d2",
-          "anchor": "f sigma di x per uno meno"
+          "anchor": "il secondo è uno meno"
         },
         {
-          "at": 22.89,
+          "at": 34.55,
           "action": "show",
           "target": "#s2",
-          "anchor": "f primo sigma di x vale"
+          "anchor": "Quindi f primo sigma"
         },
         {
-          "at": 39.06,
+          "at": 34.55,
+          "action": "highlight",
+          "target": "#f-sigd",
+          "anchor": "Quindi f primo sigma"
+        },
+        {
+          "at": 45.25,
+          "action": "highlight",
+          "target": "#f-tanhd",
+          "anchor": "derivata della tangente iperbolica"
+        },
+        {
+          "at": 54.11,
           "action": "show",
           "target": "#s3",
           "anchor": "Come mostra il grafico"
         },
         {
-          "at": 41.71,
+          "at": 56.53,
           "action": "highlight",
-          "target": "#s4",
+          "target": "#s4, #s4-pk",
           "anchor": "massimo in zero"
         }
       ],
-      "duration_sec": 47.06
+      "duration_sec": 62.25
     },
     {
       "id": "scene-18",
       "section": "10.7.2 LMS con un'unità sigmoidale",
       "title": "Gradiente sull'unità sigmoidale e saturazione",
-      "audio_file": "audio/scene-18.mp3",
+      "audio_file": "audio/scene-18.wav",
       "subtitle_file": "subtitles/scene-18.json",
-      "tts_text": "Applichiamo ora la discesa del gradiente a un'unità sigmoidale minimizzando l'errore quadratico tra d con p e f sigma di x con p trasposto w. Per un esempio p, la regola della catena scompone la derivata parziale dell'errore rispetto al peso w con j in tre fattori: derivata di E rispetto all'uscita o, cioè meno due per d meno o; derivata di o rispetto all'input netto, cioè f primo sigma dell'input netto; e derivata dell'input netto rispetto a w con j, che è l'ingresso x con p j. Questa derivata risponde a una domanda precisa: quanto una variazione del peso influenza la variazione dell'errore. La regola di aggiornamento mantiene la stessa forma dell'LMS lineare, ma con un nuovo delta: d meno o, moltiplicato per f primo sigma dell'input netto. Vicino a zero f primo è grande, ma nelle zone sature f primo è quasi nullo e i pesi si muovono lentissimamente. Per evitare saturazione prematura si parte da pesi piccoli; d'altro canto, su esempi già classificati con decisione la correzione si annulla, creando un ponte naturale tra LMS e Perceptron.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7.2 · LMS con unità sigmoidale</div>\n  <h2 class=\"slide-title\">Regola della catena, nuovo delta e saturazione</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[E(\\w) = \\sum_{p=1}^{l}\\big(d_p - f_\\sigma(\\x_p\\T\\w)\\big)^2\\]\n    \\[\\frac{\\partial E_p}{\\partial w_j} = \\htmlId{f-c1}{\\frac{\\partial E_p}{\\partial o_p}} \\cdot \\htmlId{f-c2}{\\frac{\\partial o_p}{\\partial \\net_p}} \\cdot \\htmlId{f-c3}{\\frac{\\partial \\net_p}{\\partial w_j}} = \\htmlId{f-v1}{-2\\,(d_p - o_p)} \\cdot \\htmlId{f-v2}{f'_\\sigma(\\net_p)} \\cdot \\htmlId{f-v3}{x_{p,j}}\\]\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    \\[\\boxed{\\;\\w_{\\mathit{new}} = \\w + \\eta\\,\\delta_p\\,\\x_p, \\qquad \\delta_p = \\big(d_p - o(\\x_p)\\big)\\,f'_\\sigma\\big(\\net(\\x_p)\\big)\\;}\\]\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Saturazione prematura</div>\n      <p>Se \\(f_\\sigma \\approx 0\\) o \\(1\\), allora \\(f'_\\sigma \\approx 0\\) e l'apprendimento si blocca. Rimedio: <strong>iniziare con pesi piccoli</strong> (zona quasi lineare vicino a \\(0\\)).</p>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Ponte tra LMS e Perceptron</div>\n      <p>Sugli esempi corretti «con decisione» (uscita satura vicina al target), \\(f'_\\sigma \\approx 0\\) annulla la correzione — proprio come nel <strong>Perceptron</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "tts_text": "Applichiamo ora la discesa del gradiente a un'unità sigmoidale, minimizzando l'errore quadratico tra d con p e f sigma di x con p trasposto w. [pause:0.8] Per un esempio p, la regola della catena scompone la derivata parziale rispetto al peso w con j in tre fattori. [pause:0.6] Primo: derivata di E rispetto all'uscita o, cioè meno due per d meno o. [pause:0.5] Secondo: derivata di o rispetto all'input netto, cioè f primo sigma dell'input netto. [pause:0.5] Terzo: derivata dell'input netto rispetto a w con j, che è l'ingresso x con p j. [pause:0.9] Questa derivata risponde a una domanda precisa: quanto una variazione del peso influenza la variazione dell'errore. [pause:0.8] La regola di aggiornamento mantiene la stessa forma dell'LMS lineare, ma con un nuovo delta: d meno o, moltiplicato per f primo sigma dell'input netto. [pause:1.0] Vicino a zero f primo è grande, ma nelle zone sature f primo è quasi nullo e i pesi si muovono lentissimamente. Per evitare saturazione prematura si parte da pesi piccoli. [pause:0.9] D'altro canto, su esempi già classificati con decisione la correzione si annulla, creando un ponte naturale tra LMS e Perceptron.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7.2 · LMS con unità sigmoidale</div>\n  <h2 class=\"slide-title\">Regola della catena, nuovo delta e saturazione</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\htmlId{f-err}{E(\\w) = \\sum_{p=1}^{l}\\big(d_p - f_\\sigma(\\x_p\\T\\w)\\big)^2}\\]\n    \\[\\frac{\\partial E_p}{\\partial w_j} = \\htmlId{f-c1}{\\frac{\\partial E_p}{\\partial o_p}} \\cdot \\htmlId{f-c2}{\\frac{\\partial o_p}{\\partial \\net_p}} \\cdot \\htmlId{f-c3}{\\frac{\\partial \\net_p}{\\partial w_j}} = \\htmlId{f-v1}{-2\\,(d_p - o_p)} \\cdot \\htmlId{f-v2}{f'_\\sigma(\\net_p)} \\cdot \\htmlId{f-v3}{x_{p,j}}\\]\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    \\[\\boxed{\\;\\w_{\\mathit{new}} = \\w + \\eta\\,\\delta_p\\,\\x_p, \\qquad \\htmlId{f-deltap}{\\delta_p = \\big(d_p - o(\\x_p)\\big)\\,f'_\\sigma\\big(\\net(\\x_p)\\big)}\\;}\\]\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Saturazione prematura</div>\n      <p>Se \\(f_\\sigma \\approx 0\\) o \\(1\\), allora \\(f'_\\sigma \\approx 0\\) e l'apprendimento si blocca. Rimedio: <strong>iniziare con pesi piccoli</strong> (zona quasi lineare vicino a \\(0\\)).</p>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Ponte tra LMS e Perceptron</div>\n      <p>Sugli esempi corretti «con decisione» (uscita satura vicina al target), \\(f'_\\sigma \\approx 0\\) annulla la correzione — proprio come nel <strong>Perceptron</strong>.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "at": 0.82,
@@ -821,109 +1155,103 @@
           "anchor": "discesa del gradiente"
         },
         {
-          "at": 15.71,
+          "at": 3.88,
           "action": "highlight",
-          "target": "#f-c1",
-          "anchor": "derivata di E rispetto all'uscita"
+          "target": "#f-err",
+          "anchor": "errore quadratico"
         },
         {
-          "at": 18.09,
+          "at": 16.82,
           "action": "highlight",
-          "target": "#f-v1",
-          "anchor": "meno due per d meno o"
+          "target": "#f-c1, #f-v1",
+          "anchor": "Primo: derivata di E"
         },
         {
-          "at": 19.59,
+          "at": 22.22,
           "action": "highlight",
-          "target": "#f-c2",
-          "anchor": "derivata di o rispetto all'input netto"
+          "target": "#f-c2, #f-v2",
+          "anchor": "Secondo: derivata di o"
         },
         {
-          "at": 21.74,
+          "at": 28.14,
           "action": "highlight",
-          "target": "#f-v2",
-          "anchor": "f primo sigma dell'input netto"
+          "target": "#f-c3, #f-v3",
+          "anchor": "Terzo: derivata dell'input netto"
         },
         {
-          "at": 23.61,
-          "action": "highlight",
-          "target": "#f-c3",
-          "anchor": "derivata dell'input netto rispetto a w con j"
-        },
-        {
-          "at": 24.92,
-          "action": "highlight",
-          "target": "#f-v3",
-          "anchor": "ingresso x con p j"
-        },
-        {
-          "at": 28.18,
+          "at": 41.57,
           "action": "show",
           "target": "#s2",
           "anchor": "regola di aggiornamento mantiene"
         },
         {
-          "at": 42.11,
-          "action": "show",
-          "target": "#s3",
-          "anchor": "zone sature"
+          "at": 45.53,
+          "action": "highlight",
+          "target": "#f-deltap",
+          "anchor": "un nuovo delta"
         },
         {
-          "at": 51.63,
+          "at": 51.71,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Vicino a zero f primo"
+        },
+        {
+          "at": 67.79,
           "action": "show",
           "target": "#s4",
           "anchor": "ponte naturale tra LMS e Perceptron"
         }
       ],
-      "duration_sec": 53.88
+      "duration_sec": 71.48
     },
     {
       "id": "scene-19",
       "section": "Sintesi e verifica",
       "title": "Punti chiave e domande di autoverifica",
-      "audio_file": "audio/scene-19.mp3",
+      "audio_file": "audio/scene-19.wav",
       "subtitle_file": "subtitles/scene-19.json",
-      "tts_text": "Chiudiamo il capitolo fissando i cinque punti essenziali. Primo: il neurone calcola f della somma pesata degli input, dove w con i j va da j verso i. Secondo: una singola unità a soglia rappresenta AND, OR e NOT, mentre lo XOR richiede due strati grazie alla ri-rappresentazione nello strato nascosto. Terzo: il Perceptron aggiorna i pesi solo sugli errori e converge in al più beta per la norma quadra di w stella, diviso alfa al quadrato, se i dati sono separabili. Quarto: l'LMS può sbagliare su problemi separabili, ma si estende alle reti col gradiente. Quinto: la sigmoide ha derivata f sigma per uno meno f sigma e porta alla delta rule differenziabile, base del prossimo capitolo su Multi-Layer Perceptron e backpropagation.",
+      "tts_text": "Chiudiamo il capitolo fissando i cinque punti essenziali. [pause:0.7] Primo: il neurone calcola f della somma pesata degli input, dove w con i j va da j verso i. [pause:0.6] Secondo: una singola unità a soglia rappresenta AND, OR e NOT, mentre lo XOR richiede due strati grazie alla ri-rappresentazione nello strato nascosto. [pause:0.7] Terzo: il Perceptron aggiorna i pesi solo sugli errori e converge in al più beta per la norma quadra di w stella, diviso alfa al quadrato, se i dati sono separabili. [pause:0.7] Quarto: l'LMS può sbagliare su problemi separabili, ma si estende alle reti col gradiente. [pause:0.7] Quinto: la sigmoide ha derivata f sigma per uno meno f sigma e porta alla delta rule differenziabile, base del prossimo capitolo su Multi-Layer Perceptron e backpropagation.",
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">Capitolo 10 · Chiusura</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Neurone</strong>: \\(o = f(\\sum_j w_j x_j)\\); \\(w_{ij}\\) va da \\(j\\) a \\(i\\).</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Reti a soglia</strong>: AND, OR, NOT in 1 strato; XOR in <strong>2 strati</strong> (ri-rappresentazione).</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Perceptron</strong>: \\(\\w \\leftarrow \\w + \\eta d\\x\\) solo sugli errori; converge in \\(\\le \\beta\\norm{\\w^*}^2/\\alpha^2\\) passi se separabile.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>LMS</strong>: può sbagliare su separabili, ma si estende alle reti via gradiente.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Sigmoide</strong>: \\(f'_\\sigma = f_\\sigma(1-f_\\sigma)\\) e \\(\\delta = (d-o)f'_\\sigma(\\net)\\).</li>\n      </ul>\n    </div>\n    <div id=\"s6\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Descrivere il neurone artificiale e le attivazioni classiche.</li>\n        <li>Come si rappresentano AND, OR, NOT? Come si risolve lo XOR?</li>\n        <li>Scrivere l'algoritmo di apprendimento del Perceptron.</li>\n        <li>Enunciare e dimostrare il teorema di convergenza.</li>\n        <li>Perché l'LMS può sbagliare su problemi separabili?</li>\n        <li>Derivare la regola di aggiornamento per un'unità sigmoidale.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.6,
+          "at": 3.32,
           "action": "show",
           "target": "#s1",
           "anchor": "Primo: il neurone"
         },
         {
-          "at": 10.41,
+          "at": 10.6,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: una singola unità"
         },
         {
-          "at": 20.58,
+          "at": 22.05,
           "action": "show",
           "target": "#s3",
           "anchor": "Terzo: il Perceptron"
         },
         {
-          "at": 30.35,
+          "at": 33.85,
           "action": "show",
           "target": "#s4",
           "anchor": "Quarto: l'LMS"
         },
         {
-          "at": 36.51,
+          "at": 40.78,
           "action": "show",
           "target": "#s5",
           "anchor": "Quinto: la sigmoide"
         },
         {
-          "at": 42.94,
+          "at": 49.16,
           "action": "show",
           "target": "#s6",
           "anchor": "prossimo capitolo"
         }
       ],
-      "duration_sec": 46.94
+      "duration_sec": 53.19
     }
   ]
 }

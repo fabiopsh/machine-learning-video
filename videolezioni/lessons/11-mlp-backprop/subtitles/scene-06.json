@@ -1,0 +1,828 @@
+{
+  "duration": 62.868,
+  "segments": [
+    {
+      "start": 0.508,
+      "end": 2.629,
+      "text": "Come addestriamo una rete multistrato?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.508,
+          "end": 0.688
+        },
+        {
+          "text": "addestriamo",
+          "start": 0.748,
+          "end": 1.388
+        },
+        {
+          "text": "una",
+          "start": 1.468,
+          "end": 1.589
+        },
+        {
+          "text": "rete",
+          "start": 1.649,
+          "end": 1.869
+        },
+        {
+          "text": "multistrato?",
+          "start": 1.909,
+          "end": 2.629
+        }
+      ]
+    },
+    {
+      "start": 3.329,
+      "end": 5.889,
+      "text": "Il nodo centrale è il problema del credit assignment:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 3.329,
+          "end": 3.409
+        },
+        {
+          "text": "nodo",
+          "start": 3.429,
+          "end": 3.609
+        },
+        {
+          "text": "centrale",
+          "start": 3.649,
+          "end": 4.109
+        },
+        {
+          "text": "è",
+          "start": 4.169,
+          "end": 4.209
+        },
+        {
+          "text": "il",
+          "start": 4.229,
+          "end": 4.289
+        },
+        {
+          "text": "problema",
+          "start": 4.309,
+          "end": 4.649
+        },
+        {
+          "text": "del",
+          "start": 4.689,
+          "end": 4.829
+        },
+        {
+          "text": "credit",
+          "start": 4.869,
+          "end": 5.209
+        },
+        {
+          "text": "assignment:",
+          "start": 5.249,
+          "end": 5.889
+        }
+      ]
+    },
+    {
+      "start": 6.349,
+      "end": 10.81,
+      "text": "quanta responsabilità dell'errore finale va attribuita alle singole unità nascoste?",
+      "words": [
+        {
+          "text": "quanta",
+          "start": 6.349,
+          "end": 6.629
+        },
+        {
+          "text": "responsabilità",
+          "start": 6.649,
+          "end": 7.329
+        },
+        {
+          "text": "dell'errore",
+          "start": 7.389,
+          "end": 7.869
+        },
+        {
+          "text": "finale",
+          "start": 7.909,
+          "end": 8.33
+        },
+        {
+          "text": "va",
+          "start": 8.49,
+          "end": 8.55
+        },
+        {
+          "text": "attribuita",
+          "start": 8.61,
+          "end": 9.13
+        },
+        {
+          "text": "alle",
+          "start": 9.17,
+          "end": 9.33
+        },
+        {
+          "text": "singole",
+          "start": 9.45,
+          "end": 9.87
+        },
+        {
+          "text": "unità",
+          "start": 9.95,
+          "end": 10.19
+        },
+        {
+          "text": "nascoste?",
+          "start": 10.25,
+          "end": 10.81
+        }
+      ]
+    },
+    {
+      "start": 11.47,
+      "end": 16.211,
+      "text": "Per le unità di uscita conosciamo il target desiderato e misuriamo subito l'errore.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 11.47,
+          "end": 11.57
+        },
+        {
+          "text": "le",
+          "start": 11.63,
+          "end": 11.69
+        },
+        {
+          "text": "unità",
+          "start": 11.75,
+          "end": 11.99
+        },
+        {
+          "text": "di",
+          "start": 12.05,
+          "end": 12.11
+        },
+        {
+          "text": "uscita",
+          "start": 12.15,
+          "end": 12.47
+        },
+        {
+          "text": "conosciamo",
+          "start": 12.59,
+          "end": 13.07
+        },
+        {
+          "text": "il",
+          "start": 13.13,
+          "end": 13.17
+        },
+        {
+          "text": "target",
+          "start": 13.23,
+          "end": 13.59
+        },
+        {
+          "text": "desiderato",
+          "start": 13.71,
+          "end": 14.35
+        },
+        {
+          "text": "e",
+          "start": 14.831,
+          "end": 14.871
+        },
+        {
+          "text": "misuriamo",
+          "start": 14.971,
+          "end": 15.411
+        },
+        {
+          "text": "subito",
+          "start": 15.491,
+          "end": 15.771
+        },
+        {
+          "text": "l'errore.",
+          "start": 15.811,
+          "end": 16.211
+        }
+      ]
+    },
+    {
+      "start": 16.791,
+      "end": 20.932,
+      "text": "Per le unità nascoste, invece, non sappiamo quale dovrebbe essere la loro uscita:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 16.791,
+          "end": 16.911
+        },
+        {
+          "text": "le",
+          "start": 16.951,
+          "end": 17.011
+        },
+        {
+          "text": "unità",
+          "start": 17.051,
+          "end": 17.271
+        },
+        {
+          "text": "nascoste,",
+          "start": 17.331,
+          "end": 17.751
+        },
+        {
+          "text": "invece,",
+          "start": 17.791,
+          "end": 18.071
+        },
+        {
+          "text": "non",
+          "start": 18.151,
+          "end": 18.271
+        },
+        {
+          "text": "sappiamo",
+          "start": 18.311,
+          "end": 18.731
+        },
+        {
+          "text": "quale",
+          "start": 18.791,
+          "end": 18.991
+        },
+        {
+          "text": "dovrebbe",
+          "start": 19.111,
+          "end": 19.611
+        },
+        {
+          "text": "essere",
+          "start": 19.731,
+          "end": 20.091
+        },
+        {
+          "text": "la",
+          "start": 20.151,
+          "end": 20.211
+        },
+        {
+          "text": "loro",
+          "start": 20.271,
+          "end": 20.451
+        },
+        {
+          "text": "uscita:",
+          "start": 20.511,
+          "end": 20.932
+        }
+      ]
+    },
+    {
+      "start": 21.432,
+      "end": 23.972,
+      "text": "il segnale d'errore non è direttamente misurabile.",
+      "words": [
+        {
+          "text": "il",
+          "start": 21.432,
+          "end": 21.512
+        },
+        {
+          "text": "segnale",
+          "start": 21.572,
+          "end": 21.892
+        },
+        {
+          "text": "d'errore",
+          "start": 21.912,
+          "end": 22.292
+        },
+        {
+          "text": "non",
+          "start": 22.492,
+          "end": 22.652
+        },
+        {
+          "text": "è",
+          "start": 22.692,
+          "end": 22.732
+        },
+        {
+          "text": "direttamente",
+          "start": 22.772,
+          "end": 23.352
+        },
+        {
+          "text": "misurabile.",
+          "start": 23.392,
+          "end": 23.972
+        }
+      ]
+    },
+    {
+      "start": 24.772,
+      "end": 30.313,
+      "text": "Inoltre il cosiddetto loading problem — cioè trovare pesi consistenti con un insieme di esempi",
+      "words": [
+        {
+          "text": "Inoltre",
+          "start": 24.772,
+          "end": 25.152
+        },
+        {
+          "text": "il",
+          "start": 25.192,
+          "end": 25.252
+        },
+        {
+          "text": "cosiddetto",
+          "start": 25.292,
+          "end": 25.772
+        },
+        {
+          "text": "loading",
+          "start": 25.972,
+          "end": 26.352
+        },
+        {
+          "text": "problem",
+          "start": 26.412,
+          "end": 26.892
+        },
+        {
+          "text": "—",
+          "start": 26.892,
+          "end": 27.042
+        },
+        {
+          "text": "cioè",
+          "start": 27.312,
+          "end": 27.452
+        },
+        {
+          "text": "trovare",
+          "start": 27.532,
+          "end": 27.833
+        },
+        {
+          "text": "pesi",
+          "start": 27.893,
+          "end": 28.113
+        },
+        {
+          "text": "consistenti",
+          "start": 28.173,
+          "end": 28.993
+        },
+        {
+          "text": "con",
+          "start": 29.053,
+          "end": 29.193
+        },
+        {
+          "text": "un",
+          "start": 29.233,
+          "end": 29.313
+        },
+        {
+          "text": "insieme",
+          "start": 29.353,
+          "end": 29.713
+        },
+        {
+          "text": "di",
+          "start": 29.773,
+          "end": 29.813
+        },
+        {
+          "text": "esempi",
+          "start": 29.853,
+          "end": 30.313
+        }
+      ]
+    },
+    {
+      "start": 30.373,
+      "end": 36.514,
+      "text": "su una rete data — è NP-completo: non esiste alcun algoritmo polinomiale garantito.",
+      "words": [
+        {
+          "text": "su",
+          "start": 30.373,
+          "end": 30.433
+        },
+        {
+          "text": "una",
+          "start": 30.513,
+          "end": 30.633
+        },
+        {
+          "text": "rete",
+          "start": 30.673,
+          "end": 30.873
+        },
+        {
+          "text": "data",
+          "start": 30.933,
+          "end": 31.253
+        },
+        {
+          "text": "—",
+          "start": 31.253,
+          "end": 31.403
+        },
+        {
+          "text": "è",
+          "start": 31.633,
+          "end": 31.673
+        },
+        {
+          "text": "NP-completo:",
+          "start": 32.053,
+          "end": 32.993
+        },
+        {
+          "text": "non",
+          "start": 33.453,
+          "end": 33.593
+        },
+        {
+          "text": "esiste",
+          "start": 33.633,
+          "end": 33.913
+        },
+        {
+          "text": "alcun",
+          "start": 33.994,
+          "end": 34.394
+        },
+        {
+          "text": "algoritmo",
+          "start": 34.454,
+          "end": 35.014
+        },
+        {
+          "text": "polinomiale",
+          "start": 35.114,
+          "end": 35.874
+        },
+        {
+          "text": "garantito.",
+          "start": 35.934,
+          "end": 36.514
+        }
+      ]
+    },
+    {
+      "start": 37.314,
+      "end": 40.555,
+      "text": "La soluzione pratica è estendere la discesa del gradiente agli MLP,",
+      "words": [
+        {
+          "text": "La",
+          "start": 37.314,
+          "end": 37.374
+        },
+        {
+          "text": "soluzione",
+          "start": 37.434,
+          "end": 37.834
+        },
+        {
+          "text": "pratica",
+          "start": 37.874,
+          "end": 38.234
+        },
+        {
+          "text": "è",
+          "start": 38.274,
+          "end": 38.314
+        },
+        {
+          "text": "estendere",
+          "start": 38.334,
+          "end": 38.754
+        },
+        {
+          "text": "la",
+          "start": 38.814,
+          "end": 38.874
+        },
+        {
+          "text": "discesa",
+          "start": 38.914,
+          "end": 39.274
+        },
+        {
+          "text": "del",
+          "start": 39.314,
+          "end": 39.434
+        },
+        {
+          "text": "gradiente",
+          "start": 39.454,
+          "end": 39.954
+        },
+        {
+          "text": "agli",
+          "start": 39.994,
+          "end": 40.134
+        },
+        {
+          "text": "MLP,",
+          "start": 40.234,
+          "end": 40.555
+        }
+      ]
+    },
+    {
+      "start": 41.075,
+      "end": 45.635,
+      "text": "usando loss e attivazioni differenziabili per ricavare il delta di ogni unità:",
+      "words": [
+        {
+          "text": "usando",
+          "start": 41.075,
+          "end": 41.375
+        },
+        {
+          "text": "loss",
+          "start": 41.475,
+          "end": 41.775
+        },
+        {
+          "text": "e",
+          "start": 42.095,
+          "end": 42.135
+        },
+        {
+          "text": "attivazioni",
+          "start": 42.195,
+          "end": 42.775
+        },
+        {
+          "text": "differenziabili",
+          "start": 42.815,
+          "end": 43.675
+        },
+        {
+          "text": "per",
+          "start": 44.015,
+          "end": 44.135
+        },
+        {
+          "text": "ricavare",
+          "start": 44.175,
+          "end": 44.535
+        },
+        {
+          "text": "il",
+          "start": 44.575,
+          "end": 44.635
+        },
+        {
+          "text": "delta",
+          "start": 44.695,
+          "end": 44.975
+        },
+        {
+          "text": "di",
+          "start": 45.035,
+          "end": 45.095
+        },
+        {
+          "text": "ogni",
+          "start": 45.155,
+          "end": 45.295
+        },
+        {
+          "text": "unità:",
+          "start": 45.355,
+          "end": 45.635
+        }
+      ]
+    },
+    {
+      "start": 46.295,
+      "end": 47.356,
+      "text": "è la backpropagation.",
+      "words": [
+        {
+          "text": "è",
+          "start": 46.295,
+          "end": 46.335
+        },
+        {
+          "text": "la",
+          "start": 46.375,
+          "end": 46.455
+        },
+        {
+          "text": "backpropagation.",
+          "start": 46.495,
+          "end": 47.356
+        }
+      ]
+    },
+    {
+      "start": 48.056,
+      "end": 53.897,
+      "text": "Essa è semplice grazie alla composizione, usa solo calcoli locali preservando la modularità,",
+      "words": [
+        {
+          "text": "Essa",
+          "start": 48.056,
+          "end": 48.336
+        },
+        {
+          "text": "è",
+          "start": 48.396,
+          "end": 48.436
+        },
+        {
+          "text": "semplice",
+          "start": 48.516,
+          "end": 49.016
+        },
+        {
+          "text": "grazie",
+          "start": 49.116,
+          "end": 49.416
+        },
+        {
+          "text": "alla",
+          "start": 49.456,
+          "end": 49.596
+        },
+        {
+          "text": "composizione,",
+          "start": 49.636,
+          "end": 50.456
+        },
+        {
+          "text": "usa",
+          "start": 50.896,
+          "end": 51.076
+        },
+        {
+          "text": "solo",
+          "start": 51.216,
+          "end": 51.436
+        },
+        {
+          "text": "calcoli",
+          "start": 51.496,
+          "end": 51.896
+        },
+        {
+          "text": "locali",
+          "start": 51.956,
+          "end": 52.396
+        },
+        {
+          "text": "preservando",
+          "start": 52.556,
+          "end": 53.116
+        },
+        {
+          "text": "la",
+          "start": 53.156,
+          "end": 53.236
+        },
+        {
+          "text": "modularità,",
+          "start": 53.317,
+          "end": 53.897
+        }
+      ]
+    },
+    {
+      "start": 54.397,
+      "end": 58.997,
+      "text": "ed è efficiente: costa un numero di operazioni lineare nel numero dei pesi,",
+      "words": [
+        {
+          "text": "ed",
+          "start": 54.397,
+          "end": 54.517
+        },
+        {
+          "text": "è",
+          "start": 54.577,
+          "end": 54.617
+        },
+        {
+          "text": "efficiente:",
+          "start": 54.797,
+          "end": 55.437
+        },
+        {
+          "text": "costa",
+          "start": 56.037,
+          "end": 56.317
+        },
+        {
+          "text": "un",
+          "start": 56.357,
+          "end": 56.437
+        },
+        {
+          "text": "numero",
+          "start": 56.477,
+          "end": 56.717
+        },
+        {
+          "text": "di",
+          "start": 56.757,
+          "end": 56.797
+        },
+        {
+          "text": "operazioni",
+          "start": 56.857,
+          "end": 57.337
+        },
+        {
+          "text": "lineare",
+          "start": 57.437,
+          "end": 57.957
+        },
+        {
+          "text": "nel",
+          "start": 58.037,
+          "end": 58.157
+        },
+        {
+          "text": "numero",
+          "start": 58.217,
+          "end": 58.477
+        },
+        {
+          "text": "dei",
+          "start": 58.517,
+          "end": 58.657
+        },
+        {
+          "text": "pesi,",
+          "start": 58.697,
+          "end": 58.997
+        }
+      ]
+    },
+    {
+      "start": 59.297,
+      "end": 62.618,
+      "text": "invece che quadratico, grazie alla fattorizzazione dei delta.",
+      "words": [
+        {
+          "text": "invece",
+          "start": 59.297,
+          "end": 59.617
+        },
+        {
+          "text": "che",
+          "start": 59.657,
+          "end": 59.737
+        },
+        {
+          "text": "quadratico,",
+          "start": 59.798,
+          "end": 60.378
+        },
+        {
+          "text": "grazie",
+          "start": 60.718,
+          "end": 61.058
+        },
+        {
+          "text": "alla",
+          "start": 61.098,
+          "end": 61.258
+        },
+        {
+          "text": "fattorizzazione",
+          "start": 61.318,
+          "end": 62.078
+        },
+        {
+          "text": "dei",
+          "start": 62.138,
+          "end": 62.258
+        },
+        {
+          "text": "delta.",
+          "start": 62.298,
+          "end": 62.618
+        }
+      ]
+    }
+  ]
+}

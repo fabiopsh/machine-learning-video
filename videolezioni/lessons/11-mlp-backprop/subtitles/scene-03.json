@@ -1,0 +1,882 @@
+{
+  "duration": 57.79,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.241,
+      "text": "Lo spazio delle ipotesi di un MLP è lo spazio continuo di tutte le funzioni",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 0.08,
+          "end": 0.14
+        },
+        {
+          "text": "spazio",
+          "start": 0.2,
+          "end": 0.56
+        },
+        {
+          "text": "delle",
+          "start": 0.58,
+          "end": 0.74
+        },
+        {
+          "text": "ipotesi",
+          "start": 0.8,
+          "end": 1.26
+        },
+        {
+          "text": "di",
+          "start": 1.32,
+          "end": 1.38
+        },
+        {
+          "text": "un",
+          "start": 1.42,
+          "end": 1.5
+        },
+        {
+          "text": "MLP",
+          "start": 1.62,
+          "end": 1.88
+        },
+        {
+          "text": "è",
+          "start": 2.2,
+          "end": 2.24
+        },
+        {
+          "text": "lo",
+          "start": 2.28,
+          "end": 2.36
+        },
+        {
+          "text": "spazio",
+          "start": 2.4,
+          "end": 2.741
+        },
+        {
+          "text": "continuo",
+          "start": 2.781,
+          "end": 3.261
+        },
+        {
+          "text": "di",
+          "start": 3.321,
+          "end": 3.381
+        },
+        {
+          "text": "tutte",
+          "start": 3.461,
+          "end": 3.701
+        },
+        {
+          "text": "le",
+          "start": 3.741,
+          "end": 3.801
+        },
+        {
+          "text": "funzioni",
+          "start": 3.841,
+          "end": 4.241
+        }
+      ]
+    },
+    {
+      "start": 4.281,
+      "end": 6.381,
+      "text": "ottenibili variando i pesi dell'architettura.",
+      "words": [
+        {
+          "text": "ottenibili",
+          "start": 4.281,
+          "end": 4.821
+        },
+        {
+          "text": "variando",
+          "start": 4.881,
+          "end": 5.241
+        },
+        {
+          "text": "i",
+          "start": 5.281,
+          "end": 5.321
+        },
+        {
+          "text": "pesi",
+          "start": 5.341,
+          "end": 5.561
+        },
+        {
+          "text": "dell'architettura.",
+          "start": 5.601,
+          "end": 6.381
+        }
+      ]
+    },
+    {
+      "start": 7.121,
+      "end": 9.242,
+      "text": "Cambiando lo strato di uscita cambiamo task:",
+      "words": [
+        {
+          "text": "Cambiando",
+          "start": 7.121,
+          "end": 7.501
+        },
+        {
+          "text": "lo",
+          "start": 7.561,
+          "end": 7.621
+        },
+        {
+          "text": "strato",
+          "start": 7.661,
+          "end": 7.941
+        },
+        {
+          "text": "di",
+          "start": 7.981,
+          "end": 8.021
+        },
+        {
+          "text": "uscita",
+          "start": 8.061,
+          "end": 8.442
+        },
+        {
+          "text": "cambiamo",
+          "start": 8.582,
+          "end": 8.902
+        },
+        {
+          "text": "task:",
+          "start": 8.962,
+          "end": 9.242
+        }
+      ]
+    },
+    {
+      "start": 9.802,
+      "end": 14.383,
+      "text": "uscite sigmoidali per la classificazione, uscite lineari per la regressione,",
+      "words": [
+        {
+          "text": "uscite",
+          "start": 9.802,
+          "end": 10.162
+        },
+        {
+          "text": "sigmoidali",
+          "start": 10.222,
+          "end": 10.862
+        },
+        {
+          "text": "per",
+          "start": 10.942,
+          "end": 11.042
+        },
+        {
+          "text": "la",
+          "start": 11.082,
+          "end": 11.142
+        },
+        {
+          "text": "classificazione,",
+          "start": 11.182,
+          "end": 12.022
+        },
+        {
+          "text": "uscite",
+          "start": 12.462,
+          "end": 12.842
+        },
+        {
+          "text": "lineari",
+          "start": 12.882,
+          "end": 13.362
+        },
+        {
+          "text": "per",
+          "start": 13.442,
+          "end": 13.562
+        },
+        {
+          "text": "la",
+          "start": 13.622,
+          "end": 13.682
+        },
+        {
+          "text": "regressione,",
+          "start": 13.743,
+          "end": 14.383
+        }
+      ]
+    },
+    {
+      "start": 14.903,
+      "end": 18.243,
+      "text": "e più uscite per regressione multipla o classificazione multi-classe,",
+      "words": [
+        {
+          "text": "e",
+          "start": 14.903,
+          "end": 14.943
+        },
+        {
+          "text": "più",
+          "start": 15.023,
+          "end": 15.123
+        },
+        {
+          "text": "uscite",
+          "start": 15.183,
+          "end": 15.543
+        },
+        {
+          "text": "per",
+          "start": 15.563,
+          "end": 15.663
+        },
+        {
+          "text": "regressione",
+          "start": 15.703,
+          "end": 16.123
+        },
+        {
+          "text": "multipla",
+          "start": 16.163,
+          "end": 16.623
+        },
+        {
+          "text": "o",
+          "start": 16.763,
+          "end": 16.803
+        },
+        {
+          "text": "classificazione",
+          "start": 16.863,
+          "end": 17.563
+        },
+        {
+          "text": "multi-classe,",
+          "start": 17.603,
+          "end": 18.243
+        }
+      ]
+    },
+    {
+      "start": 18.743,
+      "end": 22.744,
+      "text": "ad esempio punteggi zero virgola due, zero virgola sette e zero virgola uno su tre",
+      "words": [
+        {
+          "text": "ad",
+          "start": 18.743,
+          "end": 18.843
+        },
+        {
+          "text": "esempio",
+          "start": 18.863,
+          "end": 19.163
+        },
+        {
+          "text": "punteggi",
+          "start": 19.203,
+          "end": 19.604
+        },
+        {
+          "text": "zero",
+          "start": 19.704,
+          "end": 19.844
+        },
+        {
+          "text": "virgola",
+          "start": 19.884,
+          "end": 20.184
+        },
+        {
+          "text": "due,",
+          "start": 20.244,
+          "end": 20.424
+        },
+        {
+          "text": "zero",
+          "start": 20.564,
+          "end": 20.704
+        },
+        {
+          "text": "virgola",
+          "start": 20.744,
+          "end": 21.004
+        },
+        {
+          "text": "sette",
+          "start": 21.064,
+          "end": 21.384
+        },
+        {
+          "text": "e",
+          "start": 21.504,
+          "end": 21.544
+        },
+        {
+          "text": "zero",
+          "start": 21.604,
+          "end": 21.744
+        },
+        {
+          "text": "virgola",
+          "start": 21.784,
+          "end": 22.064
+        },
+        {
+          "text": "uno",
+          "start": 22.144,
+          "end": 22.304
+        },
+        {
+          "text": "su",
+          "start": 22.464,
+          "end": 22.544
+        },
+        {
+          "text": "tre",
+          "start": 22.624,
+          "end": 22.744
+        }
+      ]
+    },
+    {
+      "start": 22.804,
+      "end": 23.184,
+      "text": "classi.",
+      "words": [
+        {
+          "text": "classi.",
+          "start": 22.804,
+          "end": 23.184
+        }
+      ]
+    },
+    {
+      "start": 24.084,
+      "end": 26.265,
+      "text": "Ma qual è il segreto della loro flessibilità?",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 24.084,
+          "end": 24.144
+        },
+        {
+          "text": "qual",
+          "start": 24.324,
+          "end": 24.504
+        },
+        {
+          "text": "è",
+          "start": 24.544,
+          "end": 24.584
+        },
+        {
+          "text": "il",
+          "start": 24.624,
+          "end": 24.684
+        },
+        {
+          "text": "segreto",
+          "start": 24.724,
+          "end": 25.105
+        },
+        {
+          "text": "della",
+          "start": 25.145,
+          "end": 25.325
+        },
+        {
+          "text": "loro",
+          "start": 25.385,
+          "end": 25.565
+        },
+        {
+          "text": "flessibilità?",
+          "start": 25.625,
+          "end": 26.265
+        }
+      ]
+    },
+    {
+      "start": 27.065,
+      "end": 31.566,
+      "text": "Guardiamo ogni unità nascosta come una funzione di base fi con j di x e",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 27.065,
+          "end": 27.485
+        },
+        {
+          "text": "ogni",
+          "start": 27.705,
+          "end": 27.945
+        },
+        {
+          "text": "unità",
+          "start": 28.005,
+          "end": 28.225
+        },
+        {
+          "text": "nascosta",
+          "start": 28.285,
+          "end": 28.825
+        },
+        {
+          "text": "come",
+          "start": 28.925,
+          "end": 29.085
+        },
+        {
+          "text": "una",
+          "start": 29.145,
+          "end": 29.225
+        },
+        {
+          "text": "funzione",
+          "start": 29.285,
+          "end": 29.625
+        },
+        {
+          "text": "di",
+          "start": 29.665,
+          "end": 29.725
+        },
+        {
+          "text": "base",
+          "start": 29.765,
+          "end": 30.045
+        },
+        {
+          "text": "fi",
+          "start": 30.145,
+          "end": 30.225
+        },
+        {
+          "text": "con",
+          "start": 30.285,
+          "end": 30.445
+        },
+        {
+          "text": "j",
+          "start": 30.525,
+          "end": 30.565
+        },
+        {
+          "text": "di",
+          "start": 30.946,
+          "end": 31.006
+        },
+        {
+          "text": "x",
+          "start": 31.226,
+          "end": 31.266
+        },
+        {
+          "text": "e",
+          "start": 31.526,
+          "end": 31.566
+        }
+      ]
+    },
+    {
+      "start": 31.926,
+      "end": 31.966,
+      "text": "w.",
+      "words": [
+        {
+          "text": "w.",
+          "start": 31.926,
+          "end": 31.966
+        }
+      ]
+    },
+    {
+      "start": 32.866,
+      "end": 37.647,
+      "text": "In una Linear Basis Expansion classica, le basi fi con j di x sono fissate",
+      "words": [
+        {
+          "text": "In",
+          "start": 32.866,
+          "end": 32.946
+        },
+        {
+          "text": "una",
+          "start": 32.986,
+          "end": 33.106
+        },
+        {
+          "text": "Linear",
+          "start": 33.206,
+          "end": 33.546
+        },
+        {
+          "text": "Basis",
+          "start": 33.586,
+          "end": 33.906
+        },
+        {
+          "text": "Expansion",
+          "start": 33.946,
+          "end": 34.506
+        },
+        {
+          "text": "classica,",
+          "start": 34.586,
+          "end": 35.126
+        },
+        {
+          "text": "le",
+          "start": 35.286,
+          "end": 35.366
+        },
+        {
+          "text": "basi",
+          "start": 35.406,
+          "end": 35.606
+        },
+        {
+          "text": "fi",
+          "start": 35.706,
+          "end": 35.786
+        },
+        {
+          "text": "con",
+          "start": 35.846,
+          "end": 36.006
+        },
+        {
+          "text": "j",
+          "start": 36.066,
+          "end": 36.106
+        },
+        {
+          "text": "di",
+          "start": 36.447,
+          "end": 36.507
+        },
+        {
+          "text": "x",
+          "start": 36.727,
+          "end": 36.767
+        },
+        {
+          "text": "sono",
+          "start": 37.087,
+          "end": 37.247
+        },
+        {
+          "text": "fissate",
+          "start": 37.287,
+          "end": 37.647
+        }
+      ]
+    },
+    {
+      "start": 37.687,
+      "end": 40.587,
+      "text": "a priori e il modello resta lineare nei parametri.",
+      "words": [
+        {
+          "text": "a",
+          "start": 37.687,
+          "end": 37.727
+        },
+        {
+          "text": "priori",
+          "start": 37.747,
+          "end": 38.127
+        },
+        {
+          "text": "e",
+          "start": 38.567,
+          "end": 38.607
+        },
+        {
+          "text": "il",
+          "start": 38.647,
+          "end": 38.707
+        },
+        {
+          "text": "modello",
+          "start": 38.747,
+          "end": 39.087
+        },
+        {
+          "text": "resta",
+          "start": 39.147,
+          "end": 39.387
+        },
+        {
+          "text": "lineare",
+          "start": 39.447,
+          "end": 39.867
+        },
+        {
+          "text": "nei",
+          "start": 39.927,
+          "end": 40.027
+        },
+        {
+          "text": "parametri.",
+          "start": 40.067,
+          "end": 40.587
+        }
+      ]
+    },
+    {
+      "start": 41.227,
+      "end": 45.808,
+      "text": "In una rete neurale, invece, le basi fi con j dipendono dai pesi w e",
+      "words": [
+        {
+          "text": "In",
+          "start": 41.227,
+          "end": 41.307
+        },
+        {
+          "text": "una",
+          "start": 41.327,
+          "end": 41.447
+        },
+        {
+          "text": "rete",
+          "start": 41.487,
+          "end": 41.687
+        },
+        {
+          "text": "neurale,",
+          "start": 41.727,
+          "end": 42.168
+        },
+        {
+          "text": "invece,",
+          "start": 42.228,
+          "end": 42.628
+        },
+        {
+          "text": "le",
+          "start": 42.808,
+          "end": 42.888
+        },
+        {
+          "text": "basi",
+          "start": 42.928,
+          "end": 43.128
+        },
+        {
+          "text": "fi",
+          "start": 43.208,
+          "end": 43.288
+        },
+        {
+          "text": "con",
+          "start": 43.368,
+          "end": 43.508
+        },
+        {
+          "text": "j",
+          "start": 43.568,
+          "end": 43.608
+        },
+        {
+          "text": "dipendono",
+          "start": 43.988,
+          "end": 44.428
+        },
+        {
+          "text": "dai",
+          "start": 44.468,
+          "end": 44.588
+        },
+        {
+          "text": "pesi",
+          "start": 44.628,
+          "end": 44.848
+        },
+        {
+          "text": "w",
+          "start": 45.208,
+          "end": 45.248
+        },
+        {
+          "text": "e",
+          "start": 45.768,
+          "end": 45.808
+        }
+      ]
+    },
+    {
+      "start": 45.868,
+      "end": 47.929,
+      "text": "si adattano ai dati durante l'addestramento.",
+      "words": [
+        {
+          "text": "si",
+          "start": 45.868,
+          "end": 45.928
+        },
+        {
+          "text": "adattano",
+          "start": 45.968,
+          "end": 46.348
+        },
+        {
+          "text": "ai",
+          "start": 46.388,
+          "end": 46.448
+        },
+        {
+          "text": "dati",
+          "start": 46.488,
+          "end": 46.748
+        },
+        {
+          "text": "durante",
+          "start": 46.828,
+          "end": 47.148
+        },
+        {
+          "text": "l'addestramento.",
+          "start": 47.188,
+          "end": 47.929
+        }
+      ]
+    },
+    {
+      "start": 48.709,
+      "end": 54.57,
+      "text": "Ogni unità nascosta apprende una nuova feature non lineare che costruisce la rappresentazione interna adatta",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 48.709,
+          "end": 48.909
+        },
+        {
+          "text": "unità",
+          "start": 48.969,
+          "end": 49.209
+        },
+        {
+          "text": "nascosta",
+          "start": 49.269,
+          "end": 49.809
+        },
+        {
+          "text": "apprende",
+          "start": 49.969,
+          "end": 50.309
+        },
+        {
+          "text": "una",
+          "start": 50.349,
+          "end": 50.469
+        },
+        {
+          "text": "nuova",
+          "start": 50.529,
+          "end": 50.749
+        },
+        {
+          "text": "feature",
+          "start": 50.829,
+          "end": 51.209
+        },
+        {
+          "text": "non",
+          "start": 51.249,
+          "end": 51.389
+        },
+        {
+          "text": "lineare",
+          "start": 51.429,
+          "end": 51.929
+        },
+        {
+          "text": "che",
+          "start": 52.249,
+          "end": 52.329
+        },
+        {
+          "text": "costruisce",
+          "start": 52.369,
+          "end": 52.849
+        },
+        {
+          "text": "la",
+          "start": 52.889,
+          "end": 52.949
+        },
+        {
+          "text": "rappresentazione",
+          "start": 52.989,
+          "end": 53.67
+        },
+        {
+          "text": "interna",
+          "start": 53.73,
+          "end": 54.13
+        },
+        {
+          "text": "adatta",
+          "start": 54.25,
+          "end": 54.57
+        }
+      ]
+    },
+    {
+      "start": 54.59,
+      "end": 57.61,
+      "text": "al task, catturando statistiche di ordine superiore.",
+      "words": [
+        {
+          "text": "al",
+          "start": 54.59,
+          "end": 54.67
+        },
+        {
+          "text": "task,",
+          "start": 54.71,
+          "end": 55.01
+        },
+        {
+          "text": "catturando",
+          "start": 55.39,
+          "end": 55.87
+        },
+        {
+          "text": "statistiche",
+          "start": 55.93,
+          "end": 56.51
+        },
+        {
+          "text": "di",
+          "start": 56.63,
+          "end": 56.71
+        },
+        {
+          "text": "ordine",
+          "start": 56.77,
+          "end": 57.07
+        },
+        {
+          "text": "superiore.",
+          "start": 57.13,
+          "end": 57.61
+        }
+      ]
+    }
+  ]
+}

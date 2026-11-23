@@ -1,0 +1,937 @@
+{
+  "duration": 69.012,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.021,
+      "text": "Componendo unità non lineari in più strati si ottiene il Multi-Layer Perceptron,",
+      "words": [
+        {
+          "text": "Componendo",
+          "start": 0.08,
+          "end": 0.66
+        },
+        {
+          "text": "unità",
+          "start": 0.74,
+          "end": 1.0
+        },
+        {
+          "text": "non",
+          "start": 1.22,
+          "end": 1.38
+        },
+        {
+          "text": "lineari",
+          "start": 1.42,
+          "end": 1.96
+        },
+        {
+          "text": "in",
+          "start": 2.02,
+          "end": 2.06
+        },
+        {
+          "text": "più",
+          "start": 2.1,
+          "end": 2.2
+        },
+        {
+          "text": "strati",
+          "start": 2.28,
+          "end": 2.66
+        },
+        {
+          "text": "si",
+          "start": 2.8,
+          "end": 2.86
+        },
+        {
+          "text": "ottiene",
+          "start": 2.92,
+          "end": 3.301
+        },
+        {
+          "text": "il",
+          "start": 3.441,
+          "end": 3.541
+        },
+        {
+          "text": "Multi-Layer",
+          "start": 3.641,
+          "end": 4.341
+        },
+        {
+          "text": "Perceptron,",
+          "start": 4.401,
+          "end": 5.021
+        }
+      ]
+    },
+    {
+      "start": 5.261,
+      "end": 6.541,
+      "text": "in breve MLP.",
+      "words": [
+        {
+          "text": "in",
+          "start": 5.261,
+          "end": 5.341
+        },
+        {
+          "text": "breve",
+          "start": 5.381,
+          "end": 5.701
+        },
+        {
+          "text": "MLP.",
+          "start": 6.041,
+          "end": 6.541
+        }
+      ]
+    },
+    {
+      "start": 7.401,
+      "end": 10.502,
+      "text": "Un MLP si può leggere in due modi complementari.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 7.401,
+          "end": 7.501
+        },
+        {
+          "text": "MLP",
+          "start": 7.621,
+          "end": 8.081
+        },
+        {
+          "text": "si",
+          "start": 8.381,
+          "end": 8.461
+        },
+        {
+          "text": "può",
+          "start": 8.521,
+          "end": 8.601
+        },
+        {
+          "text": "leggere",
+          "start": 8.661,
+          "end": 9.001
+        },
+        {
+          "text": "in",
+          "start": 9.041,
+          "end": 9.101
+        },
+        {
+          "text": "due",
+          "start": 9.181,
+          "end": 9.381
+        },
+        {
+          "text": "modi",
+          "start": 9.441,
+          "end": 9.661
+        },
+        {
+          "text": "complementari.",
+          "start": 9.722,
+          "end": 10.502
+        }
+      ]
+    },
+    {
+      "start": 11.082,
+      "end": 14.302,
+      "text": "Prima vista: una rete di unità organizzate in strati.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 11.082,
+          "end": 11.302
+        },
+        {
+          "text": "vista:",
+          "start": 11.362,
+          "end": 11.642
+        },
+        {
+          "text": "una",
+          "start": 12.122,
+          "end": 12.262
+        },
+        {
+          "text": "rete",
+          "start": 12.322,
+          "end": 12.562
+        },
+        {
+          "text": "di",
+          "start": 12.602,
+          "end": 12.662
+        },
+        {
+          "text": "unità",
+          "start": 12.722,
+          "end": 12.982
+        },
+        {
+          "text": "organizzate",
+          "start": 13.162,
+          "end": 13.782
+        },
+        {
+          "text": "in",
+          "start": 13.822,
+          "end": 13.882
+        },
+        {
+          "text": "strati.",
+          "start": 13.922,
+          "end": 14.302
+        }
+      ]
+    },
+    {
+      "start": 14.982,
+      "end": 18.343,
+      "text": "Lo strato di input, con indice i, è solo una sorgente:",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 14.982,
+          "end": 15.042
+        },
+        {
+          "text": "strato",
+          "start": 15.102,
+          "end": 15.402
+        },
+        {
+          "text": "di",
+          "start": 15.442,
+          "end": 15.502
+        },
+        {
+          "text": "input,",
+          "start": 15.582,
+          "end": 15.942
+        },
+        {
+          "text": "con",
+          "start": 16.182,
+          "end": 16.323
+        },
+        {
+          "text": "indice",
+          "start": 16.383,
+          "end": 16.703
+        },
+        {
+          "text": "i,",
+          "start": 16.803,
+          "end": 16.843
+        },
+        {
+          "text": "è",
+          "start": 17.283,
+          "end": 17.323
+        },
+        {
+          "text": "solo",
+          "start": 17.403,
+          "end": 17.603
+        },
+        {
+          "text": "una",
+          "start": 17.643,
+          "end": 17.743
+        },
+        {
+          "text": "sorgente:",
+          "start": 17.783,
+          "end": 18.343
+        }
+      ]
+    },
+    {
+      "start": 18.723,
+      "end": 23.264,
+      "text": "carica il pattern x, senza calcolare né input netto né attivazione.",
+      "words": [
+        {
+          "text": "carica",
+          "start": 18.723,
+          "end": 19.063
+        },
+        {
+          "text": "il",
+          "start": 19.103,
+          "end": 19.183
+        },
+        {
+          "text": "pattern",
+          "start": 19.223,
+          "end": 19.583
+        },
+        {
+          "text": "x,",
+          "start": 19.883,
+          "end": 19.923
+        },
+        {
+          "text": "senza",
+          "start": 20.283,
+          "end": 20.523
+        },
+        {
+          "text": "calcolare",
+          "start": 20.583,
+          "end": 21.163
+        },
+        {
+          "text": "né",
+          "start": 21.303,
+          "end": 21.403
+        },
+        {
+          "text": "input",
+          "start": 21.543,
+          "end": 21.883
+        },
+        {
+          "text": "netto",
+          "start": 21.983,
+          "end": 22.303
+        },
+        {
+          "text": "né",
+          "start": 22.443,
+          "end": 22.523
+        },
+        {
+          "text": "attivazione.",
+          "start": 22.583,
+          "end": 23.264
+        }
+      ]
+    },
+    {
+      "start": 24.084,
+      "end": 25.744,
+      "text": "Lo strato nascosto, con indice j,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 24.084,
+          "end": 24.144
+        },
+        {
+          "text": "strato",
+          "start": 24.184,
+          "end": 24.444
+        },
+        {
+          "text": "nascosto,",
+          "start": 24.504,
+          "end": 25.064
+        },
+        {
+          "text": "con",
+          "start": 25.124,
+          "end": 25.244
+        },
+        {
+          "text": "indice",
+          "start": 25.324,
+          "end": 25.604
+        },
+        {
+          "text": "j,",
+          "start": 25.704,
+          "end": 25.744
+        }
+      ]
+    },
+    {
+      "start": 26.344,
+      "end": 31.205,
+      "text": "elabora gli ingressi attraverso i pesi w con j i e li proietta in avanti.",
+      "words": [
+        {
+          "text": "elabora",
+          "start": 26.344,
+          "end": 26.744
+        },
+        {
+          "text": "gli",
+          "start": 26.804,
+          "end": 26.904
+        },
+        {
+          "text": "ingressi",
+          "start": 26.944,
+          "end": 27.364
+        },
+        {
+          "text": "attraverso",
+          "start": 27.404,
+          "end": 27.904
+        },
+        {
+          "text": "i",
+          "start": 27.944,
+          "end": 27.984
+        },
+        {
+          "text": "pesi",
+          "start": 28.004,
+          "end": 28.284
+        },
+        {
+          "text": "w",
+          "start": 28.824,
+          "end": 28.864
+        },
+        {
+          "text": "con",
+          "start": 29.044,
+          "end": 29.184
+        },
+        {
+          "text": "j",
+          "start": 29.265,
+          "end": 29.305
+        },
+        {
+          "text": "i",
+          "start": 29.705,
+          "end": 29.745
+        },
+        {
+          "text": "e",
+          "start": 30.085,
+          "end": 30.125
+        },
+        {
+          "text": "li",
+          "start": 30.165,
+          "end": 30.245
+        },
+        {
+          "text": "proietta",
+          "start": 30.285,
+          "end": 30.665
+        },
+        {
+          "text": "in",
+          "start": 30.725,
+          "end": 30.785
+        },
+        {
+          "text": "avanti.",
+          "start": 30.805,
+          "end": 31.205
+        }
+      ]
+    },
+    {
+      "start": 32.145,
+      "end": 33.745,
+      "text": "Lo strato di uscita, con indice k,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 32.145,
+          "end": 32.225
+        },
+        {
+          "text": "strato",
+          "start": 32.265,
+          "end": 32.525
+        },
+        {
+          "text": "di",
+          "start": 32.565,
+          "end": 32.625
+        },
+        {
+          "text": "uscita,",
+          "start": 32.665,
+          "end": 33.065
+        },
+        {
+          "text": "con",
+          "start": 33.165,
+          "end": 33.285
+        },
+        {
+          "text": "indice",
+          "start": 33.345,
+          "end": 33.645
+        },
+        {
+          "text": "k,",
+          "start": 33.705,
+          "end": 33.745
+        }
+      ]
+    },
+    {
+      "start": 34.385,
+      "end": 39.346,
+      "text": "riceve dai pesi w con k j e produce la risposta finale h di x.",
+      "words": [
+        {
+          "text": "riceve",
+          "start": 34.385,
+          "end": 34.705
+        },
+        {
+          "text": "dai",
+          "start": 34.745,
+          "end": 34.865
+        },
+        {
+          "text": "pesi",
+          "start": 34.905,
+          "end": 35.165
+        },
+        {
+          "text": "w",
+          "start": 35.726,
+          "end": 35.766
+        },
+        {
+          "text": "con",
+          "start": 35.926,
+          "end": 36.066
+        },
+        {
+          "text": "k",
+          "start": 36.146,
+          "end": 36.186
+        },
+        {
+          "text": "j",
+          "start": 36.486,
+          "end": 36.526
+        },
+        {
+          "text": "e",
+          "start": 37.026,
+          "end": 37.066
+        },
+        {
+          "text": "produce",
+          "start": 37.126,
+          "end": 37.506
+        },
+        {
+          "text": "la",
+          "start": 37.546,
+          "end": 37.606
+        },
+        {
+          "text": "risposta",
+          "start": 37.646,
+          "end": 38.046
+        },
+        {
+          "text": "finale",
+          "start": 38.106,
+          "end": 38.506
+        },
+        {
+          "text": "h",
+          "start": 38.926,
+          "end": 38.966
+        },
+        {
+          "text": "di",
+          "start": 39.026,
+          "end": 39.206
+        },
+        {
+          "text": "x.",
+          "start": 39.306,
+          "end": 39.346
+        }
+      ]
+    },
+    {
+      "start": 40.246,
+      "end": 45.047,
+      "text": "Seconda vista: una funzione flessibile fatta di composizioni annidate.",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 40.246,
+          "end": 40.566
+        },
+        {
+          "text": "vista:",
+          "start": 40.606,
+          "end": 40.906
+        },
+        {
+          "text": "una",
+          "start": 41.446,
+          "end": 41.606
+        },
+        {
+          "text": "funzione",
+          "start": 41.686,
+          "end": 42.126
+        },
+        {
+          "text": "flessibile",
+          "start": 42.227,
+          "end": 42.887
+        },
+        {
+          "text": "fatta",
+          "start": 43.067,
+          "end": 43.367
+        },
+        {
+          "text": "di",
+          "start": 43.407,
+          "end": 43.487
+        },
+        {
+          "text": "composizioni",
+          "start": 43.587,
+          "end": 44.387
+        },
+        {
+          "text": "annidate.",
+          "start": 44.507,
+          "end": 45.047
+        }
+      ]
+    },
+    {
+      "start": 45.827,
+      "end": 51.588,
+      "text": "Internamente ogni unità nascosta calcola f con j della somma su i di w con",
+      "words": [
+        {
+          "text": "Internamente",
+          "start": 45.827,
+          "end": 46.527
+        },
+        {
+          "text": "ogni",
+          "start": 46.687,
+          "end": 46.907
+        },
+        {
+          "text": "unità",
+          "start": 46.987,
+          "end": 47.227
+        },
+        {
+          "text": "nascosta",
+          "start": 47.307,
+          "end": 47.827
+        },
+        {
+          "text": "calcola",
+          "start": 47.967,
+          "end": 48.387
+        },
+        {
+          "text": "f",
+          "start": 48.728,
+          "end": 48.768
+        },
+        {
+          "text": "con",
+          "start": 48.908,
+          "end": 49.048
+        },
+        {
+          "text": "j",
+          "start": 49.108,
+          "end": 49.148
+        },
+        {
+          "text": "della",
+          "start": 49.668,
+          "end": 49.848
+        },
+        {
+          "text": "somma",
+          "start": 49.908,
+          "end": 50.168
+        },
+        {
+          "text": "su",
+          "start": 50.268,
+          "end": 50.368
+        },
+        {
+          "text": "i",
+          "start": 50.448,
+          "end": 50.488
+        },
+        {
+          "text": "di",
+          "start": 50.688,
+          "end": 50.768
+        },
+        {
+          "text": "w",
+          "start": 51.248,
+          "end": 51.288
+        },
+        {
+          "text": "con",
+          "start": 51.428,
+          "end": 51.588
+        }
+      ]
+    },
+    {
+      "start": 51.628,
+      "end": 54.748,
+      "text": "j i per x con i, generando l'uscita o con j.",
+      "words": [
+        {
+          "text": "j",
+          "start": 51.628,
+          "end": 51.668
+        },
+        {
+          "text": "i",
+          "start": 51.868,
+          "end": 51.908
+        },
+        {
+          "text": "per",
+          "start": 52.068,
+          "end": 52.188
+        },
+        {
+          "text": "x",
+          "start": 52.308,
+          "end": 52.348
+        },
+        {
+          "text": "con",
+          "start": 52.448,
+          "end": 52.588
+        },
+        {
+          "text": "i,",
+          "start": 52.648,
+          "end": 52.688
+        },
+        {
+          "text": "generando",
+          "start": 53.108,
+          "end": 53.588
+        },
+        {
+          "text": "l'uscita",
+          "start": 53.628,
+          "end": 54.088
+        },
+        {
+          "text": "o",
+          "start": 54.268,
+          "end": 54.308
+        },
+        {
+          "text": "con",
+          "start": 54.488,
+          "end": 54.648
+        },
+        {
+          "text": "j.",
+          "start": 54.708,
+          "end": 54.748
+        }
+      ]
+    },
+    {
+      "start": 55.669,
+      "end": 61.069,
+      "text": "Esternamente l'unità di uscita applica f con k alla somma pesata di queste uscite nascoste.",
+      "words": [
+        {
+          "text": "Esternamente",
+          "start": 55.669,
+          "end": 56.369
+        },
+        {
+          "text": "l'unità",
+          "start": 56.509,
+          "end": 56.809
+        },
+        {
+          "text": "di",
+          "start": 56.889,
+          "end": 56.949
+        },
+        {
+          "text": "uscita",
+          "start": 56.989,
+          "end": 57.369
+        },
+        {
+          "text": "applica",
+          "start": 57.429,
+          "end": 57.749
+        },
+        {
+          "text": "f",
+          "start": 58.149,
+          "end": 58.189
+        },
+        {
+          "text": "con",
+          "start": 58.289,
+          "end": 58.429
+        },
+        {
+          "text": "k",
+          "start": 58.509,
+          "end": 58.549
+        },
+        {
+          "text": "alla",
+          "start": 58.969,
+          "end": 59.129
+        },
+        {
+          "text": "somma",
+          "start": 59.169,
+          "end": 59.369
+        },
+        {
+          "text": "pesata",
+          "start": 59.429,
+          "end": 59.769
+        },
+        {
+          "text": "di",
+          "start": 59.809,
+          "end": 59.869
+        },
+        {
+          "text": "queste",
+          "start": 59.909,
+          "end": 60.169
+        },
+        {
+          "text": "uscite",
+          "start": 60.209,
+          "end": 60.489
+        },
+        {
+          "text": "nascoste.",
+          "start": 60.549,
+          "end": 61.069
+        }
+      ]
+    },
+    {
+      "start": 61.95,
+      "end": 65.67,
+      "text": "Ogni rete si caratterizza quindi per tre elementi: tipo di unità,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 61.95,
+          "end": 62.13
+        },
+        {
+          "text": "rete",
+          "start": 62.19,
+          "end": 62.41
+        },
+        {
+          "text": "si",
+          "start": 62.49,
+          "end": 62.57
+        },
+        {
+          "text": "caratterizza",
+          "start": 62.61,
+          "end": 63.17
+        },
+        {
+          "text": "quindi",
+          "start": 63.25,
+          "end": 63.53
+        },
+        {
+          "text": "per",
+          "start": 63.61,
+          "end": 63.75
+        },
+        {
+          "text": "tre",
+          "start": 63.83,
+          "end": 63.95
+        },
+        {
+          "text": "elementi:",
+          "start": 64.03,
+          "end": 64.51
+        },
+        {
+          "text": "tipo",
+          "start": 65.05,
+          "end": 65.27
+        },
+        {
+          "text": "di",
+          "start": 65.31,
+          "end": 65.37
+        },
+        {
+          "text": "unità,",
+          "start": 65.43,
+          "end": 65.67
+        }
+      ]
+    },
+    {
+      "start": 66.21,
+      "end": 68.631,
+      "text": "architettura e algoritmo di apprendimento.",
+      "words": [
+        {
+          "text": "architettura",
+          "start": 66.21,
+          "end": 66.91
+        },
+        {
+          "text": "e",
+          "start": 67.19,
+          "end": 67.23
+        },
+        {
+          "text": "algoritmo",
+          "start": 67.29,
+          "end": 67.83
+        },
+        {
+          "text": "di",
+          "start": 67.89,
+          "end": 67.93
+        },
+        {
+          "text": "apprendimento.",
+          "start": 67.97,
+          "end": 68.631
+        }
+      ]
+    }
+  ]
+}

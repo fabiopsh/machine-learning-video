@@ -1,726 +1,821 @@
 {
-  "duration": 52.56,
+  "duration": 56.561,
   "segments": [
     {
-      "start": 0.05,
-      "end": 6.537,
-      "text": "Il Perceptron rappresenta confini lineari ma riesce sempre a impararli La risposta è data dal",
+      "start": 0.08,
+      "end": 4.481,
+      "text": "Il Perceptron rappresenta confini lineari, ma riesce sempre a impararli?",
       "words": [
         {
           "text": "Il",
-          "start": 0.05,
-          "end": 0.275
+          "start": 0.08,
+          "end": 0.18
         },
         {
           "text": "Perceptron",
-          "start": 0.275,
-          "end": 1.038
+          "start": 0.22,
+          "end": 0.82
         },
         {
           "text": "rappresenta",
-          "start": 1.038,
-          "end": 1.7
+          "start": 0.94,
+          "end": 1.42
         },
         {
           "text": "confini",
-          "start": 1.7,
-          "end": 2.163
+          "start": 1.48,
+          "end": 1.88
         },
         {
-          "text": "lineari",
-          "start": 2.163,
-          "end": 2.725
+          "text": "lineari,",
+          "start": 1.96,
+          "end": 2.46
         },
         {
           "text": "ma",
-          "start": 3.075,
-          "end": 3.2
+          "start": 2.981,
+          "end": 3.041
         },
         {
           "text": "riesce",
-          "start": 3.2,
-          "end": 3.575
+          "start": 3.101,
+          "end": 3.441
         },
         {
           "text": "sempre",
-          "start": 3.575,
-          "end": 3.925
+          "start": 3.541,
+          "end": 3.841
         },
         {
           "text": "a",
-          "start": 3.925,
-          "end": 3.95
+          "start": 3.861,
+          "end": 3.9010000000000002
         },
         {
-          "text": "impararli",
-          "start": 3.95,
-          "end": 4.638
-        },
+          "text": "impararli?",
+          "start": 3.901,
+          "end": 4.481
+        }
+      ]
+    },
+    {
+      "start": 5.261,
+      "end": 8.221,
+      "text": "La risposta è il teorema di convergenza del Perceptron.",
+      "words": [
         {
           "text": "La",
-          "start": 4.975,
-          "end": 5.2
+          "start": 5.261,
+          "end": 5.321
         },
         {
           "text": "risposta",
-          "start": 5.2,
-          "end": 5.913
+          "start": 5.381,
+          "end": 5.861
         },
         {
           "text": "è",
-          "start": 5.912,
-          "end": 6.037
+          "start": 6.021,
+          "end": 6.061
         },
         {
-          "text": "data",
-          "start": 6.037,
-          "end": 6.35
+          "text": "il",
+          "start": 6.101,
+          "end": 6.181
         },
-        {
-          "text": "dal",
-          "start": 6.35,
-          "end": 6.537
-        }
-      ]
-    },
-    {
-      "start": 6.537,
-      "end": 13.125,
-      "text": "teorema di convergenza del Perceptron Se il problema è linearmente separabile l'algoritmo converge in un",
-      "words": [
         {
           "text": "teorema",
-          "start": 6.537,
-          "end": 7.0
+          "start": 6.221,
+          "end": 6.601
         },
         {
           "text": "di",
-          "start": 7.0,
-          "end": 7.1
+          "start": 6.641,
+          "end": 6.721
         },
         {
           "text": "convergenza",
-          "start": 7.1,
-          "end": 7.912
+          "start": 6.761,
+          "end": 7.401
         },
         {
           "text": "del",
-          "start": 7.912,
-          "end": 8.1
+          "start": 7.441,
+          "end": 7.561
         },
         {
-          "text": "Perceptron",
-          "start": 8.1,
-          "end": 8.963
-        },
+          "text": "Perceptron.",
+          "start": 7.601,
+          "end": 8.221
+        }
+      ]
+    },
+    {
+      "start": 9.142,
+      "end": 15.083,
+      "text": "Se il problema è linearmente separabile, l'algoritmo converge in un numero finito di passi classificando",
+      "words": [
         {
           "text": "Se",
-          "start": 9.3,
-          "end": 9.513
+          "start": 9.142,
+          "end": 9.222
         },
         {
           "text": "il",
-          "start": 9.512,
-          "end": 9.6
+          "start": 9.262,
+          "end": 9.322
         },
         {
           "text": "problema",
-          "start": 9.6,
-          "end": 10.125
+          "start": 9.342,
+          "end": 9.762
         },
         {
           "text": "è",
-          "start": 10.125,
-          "end": 10.213
+          "start": 9.942,
+          "end": 9.982
         },
         {
           "text": "linearmente",
-          "start": 10.213,
-          "end": 10.85
+          "start": 10.062,
+          "end": 10.582
         },
         {
-          "text": "separabile",
-          "start": 10.85,
-          "end": 11.475
+          "text": "separabile,",
+          "start": 10.642,
+          "end": 11.222
         },
         {
           "text": "l'algoritmo",
-          "start": 11.762,
-          "end": 12.438
+          "start": 11.402,
+          "end": 11.942
         },
         {
           "text": "converge",
-          "start": 12.438,
-          "end": 12.95
+          "start": 12.002,
+          "end": 12.482
         },
         {
           "text": "in",
-          "start": 12.95,
-          "end": 13.05
+          "start": 12.542,
+          "end": 12.602
         },
         {
           "text": "un",
-          "start": 13.05,
-          "end": 13.125
-        }
-      ]
-    },
-    {
-      "start": 13.125,
-      "end": 18.637,
-      "text": "numero finito di passi classificando bene tutti gli esempi da qualunque punto di partenza anche",
-      "words": [
+          "start": 12.662,
+          "end": 12.722
+        },
         {
           "text": "numero",
-          "start": 13.125,
-          "end": 13.4
+          "start": 12.802,
+          "end": 13.102
         },
         {
           "text": "finito",
-          "start": 13.4,
-          "end": 13.738
+          "start": 13.162,
+          "end": 13.482
         },
         {
           "text": "di",
-          "start": 13.738,
-          "end": 13.838
+          "start": 13.522,
+          "end": 13.582
         },
         {
           "text": "passi",
-          "start": 13.838,
-          "end": 14.238
+          "start": 13.642,
+          "end": 14.042
         },
         {
           "text": "classificando",
-          "start": 14.238,
-          "end": 14.95
-        },
+          "start": 14.442,
+          "end": 15.083
+        }
+      ]
+    },
+    {
+      "start": 15.163,
+      "end": 18.043,
+      "text": "bene tutti gli esempi, da qualunque punto di partenza,",
+      "words": [
         {
           "text": "bene",
-          "start": 14.95,
-          "end": 15.25
+          "start": 15.163,
+          "end": 15.383
         },
         {
           "text": "tutti",
-          "start": 15.25,
-          "end": 15.588
+          "start": 15.523,
+          "end": 15.823
         },
         {
           "text": "gli",
-          "start": 15.588,
-          "end": 15.688
+          "start": 15.843,
+          "end": 15.943
         },
         {
-          "text": "esempi",
-          "start": 15.688,
-          "end": 16.15
+          "text": "esempi,",
+          "start": 15.963,
+          "end": 16.383
         },
         {
           "text": "da",
-          "start": 16.462,
-          "end": 16.612
+          "start": 16.663,
+          "end": 16.743
         },
         {
           "text": "qualunque",
-          "start": 16.613,
-          "end": 17.0
+          "start": 16.803,
+          "end": 17.143
         },
         {
           "text": "punto",
-          "start": 17.0,
-          "end": 17.288
+          "start": 17.163,
+          "end": 17.383
         },
         {
           "text": "di",
-          "start": 17.288,
-          "end": 17.375
+          "start": 17.423,
+          "end": 17.463
         },
         {
-          "text": "partenza",
-          "start": 17.375,
-          "end": 18.012
-        },
-        {
-          "text": "anche",
-          "start": 18.3,
-          "end": 18.637
+          "text": "partenza,",
+          "start": 17.523,
+          "end": 18.043
         }
       ]
     },
     {
-      "start": 18.637,
-      "end": 24.4,
-      "text": "se la soluzione finale non è unica Se il problema non è separabile invece l'algoritmo",
+      "start": 18.503,
+      "end": 20.364,
+      "text": "anche se la soluzione finale non è unica.",
       "words": [
         {
+          "text": "anche",
+          "start": 18.503,
+          "end": 18.703
+        },
+        {
           "text": "se",
-          "start": 18.637,
-          "end": 18.738
+          "start": 18.763,
+          "end": 18.823
         },
         {
           "text": "la",
-          "start": 18.738,
-          "end": 18.838
+          "start": 18.883,
+          "end": 18.943
         },
         {
           "text": "soluzione",
-          "start": 18.837,
-          "end": 19.312
+          "start": 18.963,
+          "end": 19.363
         },
         {
           "text": "finale",
-          "start": 19.312,
-          "end": 19.725
+          "start": 19.403,
+          "end": 19.743
         },
         {
           "text": "non",
-          "start": 19.725,
-          "end": 19.875
+          "start": 19.803,
+          "end": 19.923
         },
         {
           "text": "è",
-          "start": 19.875,
-          "end": 19.95
+          "start": 19.963,
+          "end": 20.003
         },
         {
-          "text": "unica",
-          "start": 19.95,
-          "end": 20.45
-        },
+          "text": "unica.",
+          "start": 20.063,
+          "end": 20.364
+        }
+      ]
+    },
+    {
+      "start": 21.124,
+      "end": 25.844,
+      "text": "Se il problema non è separabile, invece, l'algoritmo può entrare in cicli senza stabilizzarsi.",
+      "words": [
         {
           "text": "Se",
-          "start": 20.788,
-          "end": 21.0
+          "start": 21.124,
+          "end": 21.184
         },
         {
           "text": "il",
-          "start": 21.0,
-          "end": 21.1
+          "start": 21.204,
+          "end": 21.264
         },
         {
           "text": "problema",
-          "start": 21.1,
-          "end": 21.55
+          "start": 21.284,
+          "end": 21.624
         },
         {
           "text": "non",
-          "start": 21.55,
-          "end": 21.713
+          "start": 21.724,
+          "end": 21.844
         },
         {
           "text": "è",
-          "start": 21.712,
-          "end": 21.8
+          "start": 21.884,
+          "end": 21.924
         },
         {
-          "text": "separabile",
-          "start": 21.8,
-          "end": 22.5
+          "text": "separabile,",
+          "start": 21.964,
+          "end": 22.484
         },
         {
-          "text": "invece",
-          "start": 22.8,
-          "end": 23.375
+          "text": "invece,",
+          "start": 22.524,
+          "end": 22.784
         },
         {
           "text": "l'algoritmo",
-          "start": 23.663,
-          "end": 24.4
-        }
-      ]
-    },
-    {
-      "start": 24.4,
-      "end": 30.65,
-      "text": "può entrare in cicli senza stabilizzarsi Cominciamo la dimostrazione dal Passo uno ridurci a esempi",
-      "words": [
+          "start": 22.824,
+          "end": 23.364
+        },
         {
           "text": "può",
-          "start": 24.4,
-          "end": 24.55
+          "start": 23.444,
+          "end": 23.544
         },
         {
           "text": "entrare",
-          "start": 24.55,
-          "end": 24.9
+          "start": 23.624,
+          "end": 23.944
         },
         {
           "text": "in",
-          "start": 24.9,
-          "end": 25.012
+          "start": 24.004,
+          "end": 24.084
         },
         {
           "text": "cicli",
-          "start": 25.012,
-          "end": 25.4
+          "start": 24.144,
+          "end": 24.524
         },
         {
           "text": "senza",
-          "start": 25.4,
-          "end": 25.737
+          "start": 24.684,
+          "end": 24.964
         },
         {
-          "text": "stabilizzarsi",
-          "start": 25.738,
-          "end": 26.637
-        },
+          "text": "stabilizzarsi.",
+          "start": 25.024,
+          "end": 25.844
+        }
+      ]
+    },
+    {
+      "start": 26.844,
+      "end": 31.184,
+      "text": "Cominciamo la dimostrazione dal Passo uno: ridurci a esempi tutti positivi.",
+      "words": [
         {
           "text": "Cominciamo",
-          "start": 26.975,
-          "end": 27.6
+          "start": 26.844,
+          "end": 27.304
         },
         {
           "text": "la",
-          "start": 27.6,
-          "end": 27.688
+          "start": 27.364,
+          "end": 27.424
         },
         {
           "text": "dimostrazione",
-          "start": 27.688,
-          "end": 28.438
+          "start": 27.444,
+          "end": 28.084
         },
         {
           "text": "dal",
-          "start": 28.438,
-          "end": 28.6
+          "start": 28.204,
+          "end": 28.344
         },
         {
           "text": "Passo",
-          "start": 28.6,
-          "end": 28.95
+          "start": 28.384,
+          "end": 28.684
         },
         {
-          "text": "uno",
-          "start": 28.95,
-          "end": 29.25
+          "text": "uno:",
+          "start": 28.804,
+          "end": 28.964
         },
         {
           "text": "ridurci",
-          "start": 29.575,
-          "end": 30.062
+          "start": 29.364,
+          "end": 29.804
         },
         {
           "text": "a",
-          "start": 30.062,
-          "end": 30.188
+          "start": 29.924,
+          "end": 29.964
         },
         {
           "text": "esempi",
-          "start": 30.188,
-          "end": 30.65
-        }
-      ]
-    },
-    {
-      "start": 30.65,
-      "end": 38.087,
-      "text": "tutti positivi Esiste una soluzione w stella con margine minimo alfa strettamente positivo Se definiamo",
-      "words": [
+          "start": 30.044,
+          "end": 30.364
+        },
         {
           "text": "tutti",
-          "start": 30.65,
-          "end": 31.0
+          "start": 30.444,
+          "end": 30.664
         },
         {
-          "text": "positivi",
-          "start": 31.0,
-          "end": 31.65
-        },
-        {
-          "text": "Esiste",
-          "start": 31.988,
-          "end": 32.513
-        },
-        {
-          "text": "una",
-          "start": 32.513,
-          "end": 32.688
-        },
-        {
-          "text": "soluzione",
-          "start": 32.688,
-          "end": 33.237
-        },
-        {
-          "text": "w",
-          "start": 33.237,
-          "end": 33.762
-        },
-        {
-          "text": "stella",
-          "start": 33.763,
-          "end": 34.275
-        },
-        {
-          "text": "con",
-          "start": 34.275,
-          "end": 34.5
-        },
-        {
-          "text": "margine",
-          "start": 34.5,
-          "end": 34.938
-        },
-        {
-          "text": "minimo",
-          "start": 34.938,
-          "end": 35.337
-        },
-        {
-          "text": "alfa",
-          "start": 35.337,
-          "end": 35.737
-        },
-        {
-          "text": "strettamente",
-          "start": 35.737,
-          "end": 36.387
-        },
-        {
-          "text": "positivo",
-          "start": 36.388,
-          "end": 37.038
-        },
-        {
-          "text": "Se",
-          "start": 37.375,
-          "end": 37.562
-        },
-        {
-          "text": "definiamo",
-          "start": 37.562,
-          "end": 38.087
+          "text": "positivi.",
+          "start": 30.724,
+          "end": 31.184
         }
       ]
     },
     {
-      "start": 38.087,
-      "end": 41.55,
-      "text": "x primo con i uguale a d con i per x con i ribaltando gli",
+      "start": 31.964,
+      "end": 37.405,
+      "text": "Poiché il problema è separabile, esiste una soluzione w stella con margine minimo alfa strettamente",
       "words": [
         {
-          "text": "x",
-          "start": 38.087,
-          "end": 38.362
-        },
-        {
-          "text": "primo",
-          "start": 38.362,
-          "end": 38.737
-        },
-        {
-          "text": "con",
-          "start": 38.737,
-          "end": 38.9
-        },
-        {
-          "text": "i",
-          "start": 38.9,
-          "end": 38.95
-        },
-        {
-          "text": "uguale",
-          "start": 38.95,
-          "end": 39.312
-        },
-        {
-          "text": "a",
-          "start": 39.312,
-          "end": 39.375
-        },
-        {
-          "text": "d",
-          "start": 39.375,
-          "end": 39.55
-        },
-        {
-          "text": "con",
-          "start": 39.55,
-          "end": 39.737
-        },
-        {
-          "text": "i",
-          "start": 39.737,
-          "end": 39.812
-        },
-        {
-          "text": "per",
-          "start": 39.812,
-          "end": 39.962
-        },
-        {
-          "text": "x",
-          "start": 39.962,
-          "end": 40.25
-        },
-        {
-          "text": "con",
-          "start": 40.25,
-          "end": 40.425
-        },
-        {
-          "text": "i",
-          "start": 40.425,
-          "end": 40.575
-        },
-        {
-          "text": "ribaltando",
-          "start": 40.9,
-          "end": 41.462
-        },
-        {
-          "text": "gli",
-          "start": 41.462,
-          "end": 41.55
-        }
-      ]
-    },
-    {
-      "start": 41.55,
-      "end": 46.463,
-      "text": "esempi negativi sia la condizione di soluzione sia la condizione di errore e l'aggiornamento dei",
-      "words": [
-        {
-          "text": "esempi",
-          "start": 41.55,
-          "end": 41.887
-        },
-        {
-          "text": "negativi",
-          "start": 41.888,
-          "end": 42.438
-        },
-        {
-          "text": "sia",
-          "start": 42.737,
-          "end": 42.938
-        },
-        {
-          "text": "la",
-          "start": 42.938,
-          "end": 43.025
-        },
-        {
-          "text": "condizione",
-          "start": 43.025,
-          "end": 43.538
-        },
-        {
-          "text": "di",
-          "start": 43.538,
-          "end": 43.65
-        },
-        {
-          "text": "soluzione",
-          "start": 43.65,
-          "end": 44.262
-        },
-        {
-          "text": "sia",
-          "start": 44.263,
-          "end": 44.438
-        },
-        {
-          "text": "la",
-          "start": 44.438,
-          "end": 44.513
-        },
-        {
-          "text": "condizione",
-          "start": 44.513,
-          "end": 45.05
-        },
-        {
-          "text": "di",
-          "start": 45.05,
-          "end": 45.175
-        },
-        {
-          "text": "errore",
-          "start": 45.175,
-          "end": 45.6
-        },
-        {
-          "text": "e",
-          "start": 45.6,
-          "end": 45.638
-        },
-        {
-          "text": "l'aggiornamento",
-          "start": 45.638,
-          "end": 46.325
-        },
-        {
-          "text": "dei",
-          "start": 46.325,
-          "end": 46.463
-        }
-      ]
-    },
-    {
-      "start": 46.462,
-      "end": 52.212,
-      "text": "pesi restano identici Basta quindi dimostrare il teorema con soli esempi positivi",
-      "words": [
-        {
-          "text": "pesi",
-          "start": 46.462,
-          "end": 46.837
-        },
-        {
-          "text": "restano",
-          "start": 46.837,
-          "end": 47.212
-        },
-        {
-          "text": "identici",
-          "start": 47.212,
-          "end": 48.05
-        },
-        {
-          "text": "Basta",
-          "start": 48.388,
-          "end": 48.975
-        },
-        {
-          "text": "quindi",
-          "start": 48.975,
-          "end": 49.325
-        },
-        {
-          "text": "dimostrare",
-          "start": 49.325,
-          "end": 49.925
+          "text": "Poiché",
+          "start": 31.964,
+          "end": 32.184
         },
         {
           "text": "il",
-          "start": 49.925,
-          "end": 50.012
+          "start": 32.224,
+          "end": 32.285
         },
         {
-          "text": "teorema",
-          "start": 50.013,
-          "end": 50.562
+          "text": "problema",
+          "start": 32.305,
+          "end": 32.625
+        },
+        {
+          "text": "è",
+          "start": 32.665,
+          "end": 32.705
+        },
+        {
+          "text": "separabile,",
+          "start": 32.725,
+          "end": 33.185
+        },
+        {
+          "text": "esiste",
+          "start": 33.245,
+          "end": 33.565
+        },
+        {
+          "text": "una",
+          "start": 33.625,
+          "end": 33.745
+        },
+        {
+          "text": "soluzione",
+          "start": 33.805,
+          "end": 34.325
+        },
+        {
+          "text": "w",
+          "start": 34.785,
+          "end": 34.825
+        },
+        {
+          "text": "stella",
+          "start": 34.925,
+          "end": 35.285
         },
         {
           "text": "con",
-          "start": 50.562,
-          "end": 50.825
+          "start": 35.425,
+          "end": 35.565
         },
         {
-          "text": "soli",
-          "start": 50.825,
-          "end": 51.15
+          "text": "margine",
+          "start": 35.625,
+          "end": 36.045
+        },
+        {
+          "text": "minimo",
+          "start": 36.085,
+          "end": 36.385
+        },
+        {
+          "text": "alfa",
+          "start": 36.505,
+          "end": 36.765
+        },
+        {
+          "text": "strettamente",
+          "start": 36.845,
+          "end": 37.405
+        }
+      ]
+    },
+    {
+      "start": 37.425,
+      "end": 37.905,
+      "text": "positivo.",
+      "words": [
+        {
+          "text": "positivo.",
+          "start": 37.425,
+          "end": 37.905
+        }
+      ]
+    },
+    {
+      "start": 38.686,
+      "end": 42.526,
+      "text": "Definiamo ora x primo con i, uguale a d con i per x con i,",
+      "words": [
+        {
+          "text": "Definiamo",
+          "start": 38.686,
+          "end": 39.126
+        },
+        {
+          "text": "ora",
+          "start": 39.206,
+          "end": 39.346
+        },
+        {
+          "text": "x",
+          "start": 39.686,
+          "end": 39.726
+        },
+        {
+          "text": "primo",
+          "start": 39.866,
+          "end": 40.206
+        },
+        {
+          "text": "con",
+          "start": 40.346,
+          "end": 40.526
+        },
+        {
+          "text": "i,",
+          "start": 40.566,
+          "end": 40.606
+        },
+        {
+          "text": "uguale",
+          "start": 40.986,
+          "end": 41.326
+        },
+        {
+          "text": "a",
+          "start": 41.346,
+          "end": 41.386
+        },
+        {
+          "text": "d",
+          "start": 41.466,
+          "end": 41.506
+        },
+        {
+          "text": "con",
+          "start": 41.606,
+          "end": 41.746
+        },
+        {
+          "text": "i",
+          "start": 41.786,
+          "end": 41.826
+        },
+        {
+          "text": "per",
+          "start": 41.986,
+          "end": 42.126
+        },
+        {
+          "text": "x",
+          "start": 42.206,
+          "end": 42.246
+        },
+        {
+          "text": "con",
+          "start": 42.326,
+          "end": 42.446
+        },
+        {
+          "text": "i,",
+          "start": 42.486,
+          "end": 42.526
+        }
+      ]
+    },
+    {
+      "start": 43.026,
+      "end": 44.347,
+      "text": "ribaltando gli esempi negativi.",
+      "words": [
+        {
+          "text": "ribaltando",
+          "start": 43.026,
+          "end": 43.486
+        },
+        {
+          "text": "gli",
+          "start": 43.506,
+          "end": 43.586
         },
         {
           "text": "esempi",
-          "start": 51.15,
-          "end": 51.55
+          "start": 43.606,
+          "end": 43.866
         },
         {
-          "text": "positivi",
-          "start": 51.55,
-          "end": 52.212
+          "text": "negativi.",
+          "start": 43.906,
+          "end": 44.347
+        }
+      ]
+    },
+    {
+      "start": 44.967,
+      "end": 48.927,
+      "text": "Poiché d con i al quadrato vale uno, sia la condizione di soluzione,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 44.967,
+          "end": 45.227
+        },
+        {
+          "text": "d",
+          "start": 45.367,
+          "end": 45.407
+        },
+        {
+          "text": "con",
+          "start": 45.547,
+          "end": 45.727
+        },
+        {
+          "text": "i",
+          "start": 45.767,
+          "end": 45.807
+        },
+        {
+          "text": "al",
+          "start": 45.967,
+          "end": 46.067
+        },
+        {
+          "text": "quadrato",
+          "start": 46.107,
+          "end": 46.507
+        },
+        {
+          "text": "vale",
+          "start": 46.567,
+          "end": 46.767
+        },
+        {
+          "text": "uno,",
+          "start": 46.887,
+          "end": 47.067
+        },
+        {
+          "text": "sia",
+          "start": 47.447,
+          "end": 47.587
+        },
+        {
+          "text": "la",
+          "start": 47.627,
+          "end": 47.687
+        },
+        {
+          "text": "condizione",
+          "start": 47.707,
+          "end": 48.147
+        },
+        {
+          "text": "di",
+          "start": 48.187,
+          "end": 48.247
+        },
+        {
+          "text": "soluzione,",
+          "start": 48.287,
+          "end": 48.927
+        }
+      ]
+    },
+    {
+      "start": 49.187,
+      "end": 52.828,
+      "text": "sia la condizione di errore, sia l'aggiornamento dei pesi restano identici.",
+      "words": [
+        {
+          "text": "sia",
+          "start": 49.187,
+          "end": 49.307
+        },
+        {
+          "text": "la",
+          "start": 49.347,
+          "end": 49.387
+        },
+        {
+          "text": "condizione",
+          "start": 49.427,
+          "end": 49.847
+        },
+        {
+          "text": "di",
+          "start": 49.888,
+          "end": 49.948
+        },
+        {
+          "text": "errore,",
+          "start": 50.008,
+          "end": 50.408
+        },
+        {
+          "text": "sia",
+          "start": 50.688,
+          "end": 50.808
+        },
+        {
+          "text": "l'aggiornamento",
+          "start": 50.848,
+          "end": 51.468
+        },
+        {
+          "text": "dei",
+          "start": 51.508,
+          "end": 51.608
+        },
+        {
+          "text": "pesi",
+          "start": 51.648,
+          "end": 51.868
+        },
+        {
+          "text": "restano",
+          "start": 51.948,
+          "end": 52.248
+        },
+        {
+          "text": "identici.",
+          "start": 52.288,
+          "end": 52.828
+        }
+      ]
+    },
+    {
+      "start": 53.428,
+      "end": 56.389,
+      "text": "Basta quindi dimostrare il teorema con soli esempi positivi.",
+      "words": [
+        {
+          "text": "Basta",
+          "start": 53.428,
+          "end": 53.648
+        },
+        {
+          "text": "quindi",
+          "start": 53.708,
+          "end": 53.908
+        },
+        {
+          "text": "dimostrare",
+          "start": 53.948,
+          "end": 54.448
+        },
+        {
+          "text": "il",
+          "start": 54.488,
+          "end": 54.548
+        },
+        {
+          "text": "teorema",
+          "start": 54.568,
+          "end": 54.928
+        },
+        {
+          "text": "con",
+          "start": 55.068,
+          "end": 55.208
+        },
+        {
+          "text": "soli",
+          "start": 55.308,
+          "end": 55.528
+        },
+        {
+          "text": "esempi",
+          "start": 55.568,
+          "end": 55.869
+        },
+        {
+          "text": "positivi.",
+          "start": 55.929,
+          "end": 56.389
         }
       ]
     }

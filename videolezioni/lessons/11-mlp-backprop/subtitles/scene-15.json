@@ -1,0 +1,670 @@
+{
+  "duration": 51.81,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.061,
+      "text": "Chiudiamo il capitolo fissando i quattro punti chiave.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "il",
+          "start": 0.54,
+          "end": 0.6
+        },
+        {
+          "text": "capitolo",
+          "start": 0.62,
+          "end": 1.06
+        },
+        {
+          "text": "fissando",
+          "start": 1.201,
+          "end": 1.721
+        },
+        {
+          "text": "i",
+          "start": 1.901,
+          "end": 1.941
+        },
+        {
+          "text": "quattro",
+          "start": 2.021,
+          "end": 2.381
+        },
+        {
+          "text": "punti",
+          "start": 2.421,
+          "end": 2.681
+        },
+        {
+          "text": "chiave.",
+          "start": 2.741,
+          "end": 3.061
+        }
+      ]
+    },
+    {
+      "start": 3.761,
+      "end": 9.964,
+      "text": "Primo: l'MLP compone strati non lineari ed equivale a una Linear Basis Expansion con funzioni",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 3.761,
+          "end": 4.042
+        },
+        {
+          "text": "l'MLP",
+          "start": 4.602,
+          "end": 5.062
+        },
+        {
+          "text": "compone",
+          "start": 5.342,
+          "end": 5.762
+        },
+        {
+          "text": "strati",
+          "start": 5.842,
+          "end": 6.182
+        },
+        {
+          "text": "non",
+          "start": 6.282,
+          "end": 6.442
+        },
+        {
+          "text": "lineari",
+          "start": 6.482,
+          "end": 6.963
+        },
+        {
+          "text": "ed",
+          "start": 7.103,
+          "end": 7.183
+        },
+        {
+          "text": "equivale",
+          "start": 7.223,
+          "end": 7.623
+        },
+        {
+          "text": "a",
+          "start": 7.683,
+          "end": 7.723
+        },
+        {
+          "text": "una",
+          "start": 7.763,
+          "end": 7.903
+        },
+        {
+          "text": "Linear",
+          "start": 8.043,
+          "end": 8.363
+        },
+        {
+          "text": "Basis",
+          "start": 8.423,
+          "end": 8.743
+        },
+        {
+          "text": "Expansion",
+          "start": 8.803,
+          "end": 9.384
+        },
+        {
+          "text": "con",
+          "start": 9.464,
+          "end": 9.584
+        },
+        {
+          "text": "funzioni",
+          "start": 9.624,
+          "end": 9.964
+        }
+      ]
+    },
+    {
+      "start": 10.004,
+      "end": 13.405,
+      "text": "di base fi con j adattive, apprese dai dati.",
+      "words": [
+        {
+          "text": "di",
+          "start": 10.004,
+          "end": 10.064
+        },
+        {
+          "text": "base",
+          "start": 10.124,
+          "end": 10.424
+        },
+        {
+          "text": "fi",
+          "start": 10.844,
+          "end": 10.944
+        },
+        {
+          "text": "con",
+          "start": 11.044,
+          "end": 11.204
+        },
+        {
+          "text": "j",
+          "start": 11.304,
+          "end": 11.344
+        },
+        {
+          "text": "adattive,",
+          "start": 11.724,
+          "end": 12.285
+        },
+        {
+          "text": "apprese",
+          "start": 12.625,
+          "end": 12.945
+        },
+        {
+          "text": "dai",
+          "start": 12.985,
+          "end": 13.125
+        },
+        {
+          "text": "dati.",
+          "start": 13.145,
+          "end": 13.405
+        }
+      ]
+    },
+    {
+      "start": 14.145,
+      "end": 19.668,
+      "text": "Secondo: le unità nascoste devono essere non lineari, altrimenti il modello collassa a lineare;",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 14.145,
+          "end": 14.566
+        },
+        {
+          "text": "le",
+          "start": 14.906,
+          "end": 14.966
+        },
+        {
+          "text": "unità",
+          "start": 15.026,
+          "end": 15.246
+        },
+        {
+          "text": "nascoste",
+          "start": 15.306,
+          "end": 15.706
+        },
+        {
+          "text": "devono",
+          "start": 15.746,
+          "end": 15.986
+        },
+        {
+          "text": "essere",
+          "start": 16.046,
+          "end": 16.326
+        },
+        {
+          "text": "non",
+          "start": 16.586,
+          "end": 16.786
+        },
+        {
+          "text": "lineari,",
+          "start": 16.866,
+          "end": 17.387
+        },
+        {
+          "text": "altrimenti",
+          "start": 17.527,
+          "end": 17.987
+        },
+        {
+          "text": "il",
+          "start": 18.027,
+          "end": 18.067
+        },
+        {
+          "text": "modello",
+          "start": 18.107,
+          "end": 18.427
+        },
+        {
+          "text": "collassa",
+          "start": 18.487,
+          "end": 18.927
+        },
+        {
+          "text": "a",
+          "start": 19.067,
+          "end": 19.107
+        },
+        {
+          "text": "lineare;",
+          "start": 19.207,
+          "end": 19.668
+        }
+      ]
+    },
+    {
+      "start": 20.208,
+      "end": 25.47,
+      "text": "un solo strato nascosto basta come approssimatore universale, ma è solo un teorema di esistenza.",
+      "words": [
+        {
+          "text": "un",
+          "start": 20.208,
+          "end": 20.288
+        },
+        {
+          "text": "solo",
+          "start": 20.328,
+          "end": 20.528
+        },
+        {
+          "text": "strato",
+          "start": 20.568,
+          "end": 20.848
+        },
+        {
+          "text": "nascosto",
+          "start": 20.888,
+          "end": 21.308
+        },
+        {
+          "text": "basta",
+          "start": 21.388,
+          "end": 21.728
+        },
+        {
+          "text": "come",
+          "start": 21.848,
+          "end": 22.028
+        },
+        {
+          "text": "approssimatore",
+          "start": 22.068,
+          "end": 22.709
+        },
+        {
+          "text": "universale,",
+          "start": 22.769,
+          "end": 23.349
+        },
+        {
+          "text": "ma",
+          "start": 23.709,
+          "end": 23.789
+        },
+        {
+          "text": "è",
+          "start": 23.869,
+          "end": 23.909
+        },
+        {
+          "text": "solo",
+          "start": 23.989,
+          "end": 24.189
+        },
+        {
+          "text": "un",
+          "start": 24.249,
+          "end": 24.309
+        },
+        {
+          "text": "teorema",
+          "start": 24.369,
+          "end": 24.73
+        },
+        {
+          "text": "di",
+          "start": 24.79,
+          "end": 24.85
+        },
+        {
+          "text": "esistenza.",
+          "start": 24.89,
+          "end": 25.47
+        }
+      ]
+    },
+    {
+      "start": 26.35,
+      "end": 30.632,
+      "text": "Terzo: la VC-dimension cresce insieme ai pesi durante l'addestramento,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 26.35,
+          "end": 26.71
+        },
+        {
+          "text": "la",
+          "start": 26.93,
+          "end": 27.01
+        },
+        {
+          "text": "VC-dimension",
+          "start": 27.11,
+          "end": 28.011
+        },
+        {
+          "text": "cresce",
+          "start": 28.151,
+          "end": 28.551
+        },
+        {
+          "text": "insieme",
+          "start": 28.591,
+          "end": 28.891
+        },
+        {
+          "text": "ai",
+          "start": 28.911,
+          "end": 28.991
+        },
+        {
+          "text": "pesi",
+          "start": 29.031,
+          "end": 29.331
+        },
+        {
+          "text": "durante",
+          "start": 29.451,
+          "end": 29.831
+        },
+        {
+          "text": "l'addestramento,",
+          "start": 29.851,
+          "end": 30.632
+        }
+      ]
+    },
+    {
+      "start": 30.972,
+      "end": 34.173,
+      "text": "rendendo la rete uno spazio delle ipotesi di dimensione variabile.",
+      "words": [
+        {
+          "text": "rendendo",
+          "start": 30.972,
+          "end": 31.312
+        },
+        {
+          "text": "la",
+          "start": 31.352,
+          "end": 31.412
+        },
+        {
+          "text": "rete",
+          "start": 31.452,
+          "end": 31.632
+        },
+        {
+          "text": "uno",
+          "start": 31.672,
+          "end": 31.792
+        },
+        {
+          "text": "spazio",
+          "start": 31.832,
+          "end": 32.212
+        },
+        {
+          "text": "delle",
+          "start": 32.252,
+          "end": 32.432
+        },
+        {
+          "text": "ipotesi",
+          "start": 32.493,
+          "end": 32.933
+        },
+        {
+          "text": "di",
+          "start": 33.093,
+          "end": 33.173
+        },
+        {
+          "text": "dimensione",
+          "start": 33.233,
+          "end": 33.673
+        },
+        {
+          "text": "variabile.",
+          "start": 33.693,
+          "end": 34.173
+        }
+      ]
+    },
+    {
+      "start": 34.813,
+      "end": 40.676,
+      "text": "Quarto: la backpropagation calcola il gradiente per ogni peso con costo lineare nel numero dei",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 34.813,
+          "end": 35.214
+        },
+        {
+          "text": "la",
+          "start": 35.634,
+          "end": 35.694
+        },
+        {
+          "text": "backpropagation",
+          "start": 35.754,
+          "end": 36.574
+        },
+        {
+          "text": "calcola",
+          "start": 36.734,
+          "end": 37.114
+        },
+        {
+          "text": "il",
+          "start": 37.174,
+          "end": 37.234
+        },
+        {
+          "text": "gradiente",
+          "start": 37.274,
+          "end": 37.875
+        },
+        {
+          "text": "per",
+          "start": 37.915,
+          "end": 38.015
+        },
+        {
+          "text": "ogni",
+          "start": 38.075,
+          "end": 38.255
+        },
+        {
+          "text": "peso",
+          "start": 38.295,
+          "end": 38.595
+        },
+        {
+          "text": "con",
+          "start": 38.735,
+          "end": 38.915
+        },
+        {
+          "text": "costo",
+          "start": 38.995,
+          "end": 39.355
+        },
+        {
+          "text": "lineare",
+          "start": 39.415,
+          "end": 39.915
+        },
+        {
+          "text": "nel",
+          "start": 40.075,
+          "end": 40.195
+        },
+        {
+          "text": "numero",
+          "start": 40.256,
+          "end": 40.516
+        },
+        {
+          "text": "dei",
+          "start": 40.556,
+          "end": 40.676
+        }
+      ]
+    },
+    {
+      "start": 40.716,
+      "end": 45.398,
+      "text": "pesi, propagando all'indietro i delta dall'uscita alle unità nascoste.",
+      "words": [
+        {
+          "text": "pesi,",
+          "start": 40.716,
+          "end": 40.996
+        },
+        {
+          "text": "propagando",
+          "start": 41.436,
+          "end": 41.936
+        },
+        {
+          "text": "all'indietro",
+          "start": 41.976,
+          "end": 42.496
+        },
+        {
+          "text": "i",
+          "start": 42.897,
+          "end": 42.937
+        },
+        {
+          "text": "delta",
+          "start": 42.977,
+          "end": 43.377
+        },
+        {
+          "text": "dall'uscita",
+          "start": 43.537,
+          "end": 44.137
+        },
+        {
+          "text": "alle",
+          "start": 44.417,
+          "end": 44.597
+        },
+        {
+          "text": "unità",
+          "start": 44.637,
+          "end": 44.837
+        },
+        {
+          "text": "nascoste.",
+          "start": 44.917,
+          "end": 45.398
+        }
+      ]
+    },
+    {
+      "start": 45.958,
+      "end": 51.56,
+      "text": "Nel prossimo capitolo vedremo tutte le scelte pratiche necessarie per addestrare davvero una rete neurale.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 45.958,
+          "end": 46.078
+        },
+        {
+          "text": "prossimo",
+          "start": 46.118,
+          "end": 46.438
+        },
+        {
+          "text": "capitolo",
+          "start": 46.498,
+          "end": 46.898
+        },
+        {
+          "text": "vedremo",
+          "start": 46.938,
+          "end": 47.238
+        },
+        {
+          "text": "tutte",
+          "start": 47.398,
+          "end": 47.658
+        },
+        {
+          "text": "le",
+          "start": 47.698,
+          "end": 47.758
+        },
+        {
+          "text": "scelte",
+          "start": 47.778,
+          "end": 48.079
+        },
+        {
+          "text": "pratiche",
+          "start": 48.099,
+          "end": 48.459
+        },
+        {
+          "text": "necessarie",
+          "start": 48.499,
+          "end": 49.119
+        },
+        {
+          "text": "per",
+          "start": 49.439,
+          "end": 49.559
+        },
+        {
+          "text": "addestrare",
+          "start": 49.599,
+          "end": 50.139
+        },
+        {
+          "text": "davvero",
+          "start": 50.199,
+          "end": 50.559
+        },
+        {
+          "text": "una",
+          "start": 50.76,
+          "end": 50.9
+        },
+        {
+          "text": "rete",
+          "start": 50.94,
+          "end": 51.12
+        },
+        {
+          "text": "neurale.",
+          "start": 51.16,
+          "end": 51.56
+        }
+      ]
+    }
+  ]
+}
