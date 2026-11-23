@@ -1,0 +1,905 @@
+{
+  "duration": 65.48,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.541,
+      "text": "L'esperimento con lambda basso suggerisce un'idea potente:",
+      "words": [
+        {
+          "text": "L'esperimento",
+          "start": 0.08,
+          "end": 0.68
+        },
+        {
+          "text": "con",
+          "start": 0.74,
+          "end": 0.92
+        },
+        {
+          "text": "lambda",
+          "start": 1.0,
+          "end": 1.36
+        },
+        {
+          "text": "basso",
+          "start": 1.44,
+          "end": 1.86
+        },
+        {
+          "text": "suggerisce",
+          "start": 1.96,
+          "end": 2.5
+        },
+        {
+          "text": "un'idea",
+          "start": 2.56,
+          "end": 2.92
+        },
+        {
+          "text": "potente:",
+          "start": 2.98,
+          "end": 3.541
+        }
+      ]
+    },
+    {
+      "start": 4.121,
+      "end": 9.281,
+      "text": "se modelli ad alta varianza e basso bias sbagliano singolarmente ma sono corretti in media,",
+      "words": [
+        {
+          "text": "se",
+          "start": 4.121,
+          "end": 4.201
+        },
+        {
+          "text": "modelli",
+          "start": 4.261,
+          "end": 4.601
+        },
+        {
+          "text": "ad",
+          "start": 4.641,
+          "end": 4.721
+        },
+        {
+          "text": "alta",
+          "start": 4.761,
+          "end": 4.961
+        },
+        {
+          "text": "varianza",
+          "start": 5.001,
+          "end": 5.581
+        },
+        {
+          "text": "e",
+          "start": 5.621,
+          "end": 5.6610000000000005
+        },
+        {
+          "text": "basso",
+          "start": 5.721,
+          "end": 6.001
+        },
+        {
+          "text": "bias",
+          "start": 6.061,
+          "end": 6.481
+        },
+        {
+          "text": "sbagliano",
+          "start": 6.621,
+          "end": 7.161
+        },
+        {
+          "text": "singolarmente",
+          "start": 7.221,
+          "end": 7.981
+        },
+        {
+          "text": "ma",
+          "start": 8.001,
+          "end": 8.061
+        },
+        {
+          "text": "sono",
+          "start": 8.121,
+          "end": 8.301
+        },
+        {
+          "text": "corretti",
+          "start": 8.361,
+          "end": 8.801
+        },
+        {
+          "text": "in",
+          "start": 8.841,
+          "end": 8.901
+        },
+        {
+          "text": "media,",
+          "start": 8.941,
+          "end": 9.281
+        }
+      ]
+    },
+    {
+      "start": 9.662,
+      "end": 11.602,
+      "text": "possiamo combinarli in un ensemble.",
+      "words": [
+        {
+          "text": "possiamo",
+          "start": 9.662,
+          "end": 9.962
+        },
+        {
+          "text": "combinarli",
+          "start": 10.002,
+          "end": 10.602
+        },
+        {
+          "text": "in",
+          "start": 10.722,
+          "end": 10.802
+        },
+        {
+          "text": "un",
+          "start": 10.842,
+          "end": 10.922
+        },
+        {
+          "text": "ensemble.",
+          "start": 10.962,
+          "end": 11.602
+        }
+      ]
+    },
+    {
+      "start": 12.302,
+      "end": 14.922,
+      "text": "In regressione si fa la media semplice delle K uscite;",
+      "words": [
+        {
+          "text": "In",
+          "start": 12.302,
+          "end": 12.382
+        },
+        {
+          "text": "regressione",
+          "start": 12.422,
+          "end": 12.882
+        },
+        {
+          "text": "si",
+          "start": 12.922,
+          "end": 13.002
+        },
+        {
+          "text": "fa",
+          "start": 13.042,
+          "end": 13.102
+        },
+        {
+          "text": "la",
+          "start": 13.162,
+          "end": 13.202
+        },
+        {
+          "text": "media",
+          "start": 13.242,
+          "end": 13.422
+        },
+        {
+          "text": "semplice",
+          "start": 13.482,
+          "end": 13.922
+        },
+        {
+          "text": "delle",
+          "start": 13.962,
+          "end": 14.142
+        },
+        {
+          "text": "K",
+          "start": 14.182,
+          "end": 14.222
+        },
+        {
+          "text": "uscite;",
+          "start": 14.502,
+          "end": 14.922
+        }
+      ]
+    },
+    {
+      "start": 15.302,
+      "end": 19.623,
+      "text": "in classificazione si usa il voto di maggioranza tra classificatori diversificati;",
+      "words": [
+        {
+          "text": "in",
+          "start": 15.302,
+          "end": 15.402
+        },
+        {
+          "text": "classificazione",
+          "start": 15.442,
+          "end": 16.282
+        },
+        {
+          "text": "si",
+          "start": 16.343,
+          "end": 16.403
+        },
+        {
+          "text": "usa",
+          "start": 16.463,
+          "end": 16.603
+        },
+        {
+          "text": "il",
+          "start": 16.683,
+          "end": 16.743
+        },
+        {
+          "text": "voto",
+          "start": 16.783,
+          "end": 17.023
+        },
+        {
+          "text": "di",
+          "start": 17.063,
+          "end": 17.123
+        },
+        {
+          "text": "maggioranza",
+          "start": 17.163,
+          "end": 17.763
+        },
+        {
+          "text": "tra",
+          "start": 17.843,
+          "end": 17.923
+        },
+        {
+          "text": "classificatori",
+          "start": 18.043,
+          "end": 18.763
+        },
+        {
+          "text": "diversificati;",
+          "start": 18.823,
+          "end": 19.623
+        }
+      ]
+    },
+    {
+      "start": 20.123,
+      "end": 23.564,
+      "text": "nello stacking il combinatore è un altro modello di machine learning.",
+      "words": [
+        {
+          "text": "nello",
+          "start": 20.123,
+          "end": 20.283
+        },
+        {
+          "text": "stacking",
+          "start": 20.343,
+          "end": 20.863
+        },
+        {
+          "text": "il",
+          "start": 21.023,
+          "end": 21.103
+        },
+        {
+          "text": "combinatore",
+          "start": 21.183,
+          "end": 21.783
+        },
+        {
+          "text": "è",
+          "start": 21.903,
+          "end": 21.943
+        },
+        {
+          "text": "un",
+          "start": 22.003,
+          "end": 22.083
+        },
+        {
+          "text": "altro",
+          "start": 22.123,
+          "end": 22.323
+        },
+        {
+          "text": "modello",
+          "start": 22.363,
+          "end": 22.683
+        },
+        {
+          "text": "di",
+          "start": 22.703,
+          "end": 22.763
+        },
+        {
+          "text": "machine",
+          "start": 22.803,
+          "end": 23.124
+        },
+        {
+          "text": "learning.",
+          "start": 23.144,
+          "end": 23.564
+        }
+      ]
+    },
+    {
+      "start": 24.524,
+      "end": 28.504,
+      "text": "Vale un teorema fondamentale, conseguenza della disuguaglianza di Jensen:",
+      "words": [
+        {
+          "text": "Vale",
+          "start": 24.524,
+          "end": 24.764
+        },
+        {
+          "text": "un",
+          "start": 24.804,
+          "end": 24.884
+        },
+        {
+          "text": "teorema",
+          "start": 24.924,
+          "end": 25.244
+        },
+        {
+          "text": "fondamentale,",
+          "start": 25.304,
+          "end": 26.104
+        },
+        {
+          "text": "conseguenza",
+          "start": 26.364,
+          "end": 26.864
+        },
+        {
+          "text": "della",
+          "start": 26.904,
+          "end": 27.084
+        },
+        {
+          "text": "disuguaglianza",
+          "start": 27.124,
+          "end": 27.824
+        },
+        {
+          "text": "di",
+          "start": 27.884,
+          "end": 27.944
+        },
+        {
+          "text": "Jensen:",
+          "start": 28.024,
+          "end": 28.504
+        }
+      ]
+    },
+    {
+      "start": 29.124,
+      "end": 34.285,
+      "text": "per una loss convessa come l'errore quadratico, l'errore del comitato è sempre minore o uguale",
+      "words": [
+        {
+          "text": "per",
+          "start": 29.124,
+          "end": 29.244
+        },
+        {
+          "text": "una",
+          "start": 29.284,
+          "end": 29.404
+        },
+        {
+          "text": "loss",
+          "start": 29.464,
+          "end": 29.645
+        },
+        {
+          "text": "convessa",
+          "start": 29.705,
+          "end": 30.205
+        },
+        {
+          "text": "come",
+          "start": 30.265,
+          "end": 30.425
+        },
+        {
+          "text": "l'errore",
+          "start": 30.485,
+          "end": 30.825
+        },
+        {
+          "text": "quadratico,",
+          "start": 30.865,
+          "end": 31.465
+        },
+        {
+          "text": "l'errore",
+          "start": 31.885,
+          "end": 32.305
+        },
+        {
+          "text": "del",
+          "start": 32.345,
+          "end": 32.465
+        },
+        {
+          "text": "comitato",
+          "start": 32.505,
+          "end": 32.925
+        },
+        {
+          "text": "è",
+          "start": 32.985,
+          "end": 33.025
+        },
+        {
+          "text": "sempre",
+          "start": 33.085,
+          "end": 33.405
+        },
+        {
+          "text": "minore",
+          "start": 33.505,
+          "end": 33.945
+        },
+        {
+          "text": "o",
+          "start": 33.945,
+          "end": 33.985
+        },
+        {
+          "text": "uguale",
+          "start": 33.985,
+          "end": 34.285
+        }
+      ]
+    },
+    {
+      "start": 34.305,
+      "end": 36.266,
+      "text": "alla media degli errori dei singoli membri.",
+      "words": [
+        {
+          "text": "alla",
+          "start": 34.305,
+          "end": 34.465
+        },
+        {
+          "text": "media",
+          "start": 34.505,
+          "end": 34.765
+        },
+        {
+          "text": "degli",
+          "start": 34.825,
+          "end": 34.985
+        },
+        {
+          "text": "errori",
+          "start": 35.025,
+          "end": 35.325
+        },
+        {
+          "text": "dei",
+          "start": 35.365,
+          "end": 35.485
+        },
+        {
+          "text": "singoli",
+          "start": 35.525,
+          "end": 35.885
+        },
+        {
+          "text": "membri.",
+          "start": 35.925,
+          "end": 36.266
+        }
+      ]
+    },
+    {
+      "start": 37.086,
+      "end": 41.266,
+      "text": "Ad esempio, con target cinque e due modelli che predicono sei e quattro,",
+      "words": [
+        {
+          "text": "Ad",
+          "start": 37.086,
+          "end": 37.166
+        },
+        {
+          "text": "esempio,",
+          "start": 37.186,
+          "end": 37.586
+        },
+        {
+          "text": "con",
+          "start": 37.726,
+          "end": 37.866
+        },
+        {
+          "text": "target",
+          "start": 37.926,
+          "end": 38.266
+        },
+        {
+          "text": "cinque",
+          "start": 38.386,
+          "end": 38.886
+        },
+        {
+          "text": "e",
+          "start": 39.046,
+          "end": 39.086
+        },
+        {
+          "text": "due",
+          "start": 39.166,
+          "end": 39.286
+        },
+        {
+          "text": "modelli",
+          "start": 39.346,
+          "end": 39.666
+        },
+        {
+          "text": "che",
+          "start": 39.706,
+          "end": 39.786
+        },
+        {
+          "text": "predicono",
+          "start": 39.826,
+          "end": 40.266
+        },
+        {
+          "text": "sei",
+          "start": 40.466,
+          "end": 40.666
+        },
+        {
+          "text": "e",
+          "start": 40.746,
+          "end": 40.786
+        },
+        {
+          "text": "quattro,",
+          "start": 40.846,
+          "end": 41.266
+        }
+      ]
+    },
+    {
+      "start": 41.626,
+      "end": 46.187,
+      "text": "la media degli errori è uno, mentre il comitato predice esattamente cinque con errore zero.",
+      "words": [
+        {
+          "text": "la",
+          "start": 41.626,
+          "end": 41.706
+        },
+        {
+          "text": "media",
+          "start": 41.746,
+          "end": 41.966
+        },
+        {
+          "text": "degli",
+          "start": 42.006,
+          "end": 42.166
+        },
+        {
+          "text": "errori",
+          "start": 42.206,
+          "end": 42.466
+        },
+        {
+          "text": "è",
+          "start": 42.526,
+          "end": 42.566
+        },
+        {
+          "text": "uno,",
+          "start": 42.666,
+          "end": 42.827
+        },
+        {
+          "text": "mentre",
+          "start": 43.167,
+          "end": 43.407
+        },
+        {
+          "text": "il",
+          "start": 43.427,
+          "end": 43.487
+        },
+        {
+          "text": "comitato",
+          "start": 43.507,
+          "end": 43.907
+        },
+        {
+          "text": "predice",
+          "start": 43.947,
+          "end": 44.267
+        },
+        {
+          "text": "esattamente",
+          "start": 44.327,
+          "end": 44.847
+        },
+        {
+          "text": "cinque",
+          "start": 44.887,
+          "end": 45.287
+        },
+        {
+          "text": "con",
+          "start": 45.387,
+          "end": 45.527
+        },
+        {
+          "text": "errore",
+          "start": 45.567,
+          "end": 45.847
+        },
+        {
+          "text": "zero.",
+          "start": 45.927,
+          "end": 46.187
+        }
+      ]
+    },
+    {
+      "start": 47.147,
+      "end": 54.028,
+      "text": "Il bagging — bootstrap aggregating — realizza questa idea addestrando K modelli su sottoinsiemi ottenuti",
+      "words": [
+        {
+          "text": "Il",
+          "start": 47.147,
+          "end": 47.247
+        },
+        {
+          "text": "bagging",
+          "start": 47.307,
+          "end": 47.807
+        },
+        {
+          "text": "—",
+          "start": 47.807,
+          "end": 47.957
+        },
+        {
+          "text": "bootstrap",
+          "start": 48.067,
+          "end": 48.607
+        },
+        {
+          "text": "aggregating",
+          "start": 48.767,
+          "end": 49.508
+        },
+        {
+          "text": "—",
+          "start": 49.508,
+          "end": 49.658
+        },
+        {
+          "text": "realizza",
+          "start": 49.748,
+          "end": 50.088
+        },
+        {
+          "text": "questa",
+          "start": 50.128,
+          "end": 50.348
+        },
+        {
+          "text": "idea",
+          "start": 50.408,
+          "end": 50.668
+        },
+        {
+          "text": "addestrando",
+          "start": 50.908,
+          "end": 51.488
+        },
+        {
+          "text": "K",
+          "start": 51.588,
+          "end": 51.628
+        },
+        {
+          "text": "modelli",
+          "start": 51.928,
+          "end": 52.308
+        },
+        {
+          "text": "su",
+          "start": 52.408,
+          "end": 52.488
+        },
+        {
+          "text": "sottoinsiemi",
+          "start": 52.628,
+          "end": 53.468
+        },
+        {
+          "text": "ottenuti",
+          "start": 53.608,
+          "end": 54.028
+        }
+      ]
+    },
+    {
+      "start": 54.068,
+      "end": 58.349,
+      "text": "per ricampionamento bootstrap con reinserimento e combinandone le risposte.",
+      "words": [
+        {
+          "text": "per",
+          "start": 54.068,
+          "end": 54.188
+        },
+        {
+          "text": "ricampionamento",
+          "start": 54.228,
+          "end": 54.908
+        },
+        {
+          "text": "bootstrap",
+          "start": 54.948,
+          "end": 55.368
+        },
+        {
+          "text": "con",
+          "start": 55.508,
+          "end": 55.668
+        },
+        {
+          "text": "reinserimento",
+          "start": 55.708,
+          "end": 56.489
+        },
+        {
+          "text": "e",
+          "start": 56.889,
+          "end": 56.929
+        },
+        {
+          "text": "combinandone",
+          "start": 57.009,
+          "end": 57.629
+        },
+        {
+          "text": "le",
+          "start": 57.709,
+          "end": 57.749
+        },
+        {
+          "text": "risposte.",
+          "start": 57.809,
+          "end": 58.349
+        }
+      ]
+    },
+    {
+      "start": 59.189,
+      "end": 63.97,
+      "text": "Mediare riduce la varianza senza aumentare il bias e tende anche ad ampliare il margine",
+      "words": [
+        {
+          "text": "Mediare",
+          "start": 59.189,
+          "end": 59.549
+        },
+        {
+          "text": "riduce",
+          "start": 59.669,
+          "end": 60.009
+        },
+        {
+          "text": "la",
+          "start": 60.049,
+          "end": 60.109
+        },
+        {
+          "text": "varianza",
+          "start": 60.129,
+          "end": 60.629
+        },
+        {
+          "text": "senza",
+          "start": 60.769,
+          "end": 61.009
+        },
+        {
+          "text": "aumentare",
+          "start": 61.029,
+          "end": 61.449
+        },
+        {
+          "text": "il",
+          "start": 61.489,
+          "end": 61.549
+        },
+        {
+          "text": "bias",
+          "start": 61.589,
+          "end": 61.989
+        },
+        {
+          "text": "e",
+          "start": 62.269,
+          "end": 62.309
+        },
+        {
+          "text": "tende",
+          "start": 62.349,
+          "end": 62.59
+        },
+        {
+          "text": "anche",
+          "start": 62.67,
+          "end": 62.87
+        },
+        {
+          "text": "ad",
+          "start": 62.89,
+          "end": 62.95
+        },
+        {
+          "text": "ampliare",
+          "start": 62.99,
+          "end": 63.45
+        },
+        {
+          "text": "il",
+          "start": 63.49,
+          "end": 63.55
+        },
+        {
+          "text": "margine",
+          "start": 63.59,
+          "end": 63.97
+        }
+      ]
+    },
+    {
+      "start": 64.01,
+      "end": 64.81,
+      "text": "di separazione.",
+      "words": [
+        {
+          "text": "di",
+          "start": 64.01,
+          "end": 64.07
+        },
+        {
+          "text": "separazione.",
+          "start": 64.11,
+          "end": 64.81
+        }
+      ]
+    }
+  ]
+}

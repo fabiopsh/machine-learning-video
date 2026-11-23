@@ -1,0 +1,1401 @@
+{
+  "duration": 102.75,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.701,
+      "text": "Nella regressione stimiamo una funzione a valori reali da campioni rumorosi x virgola f di",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 0.08,
+          "end": 0.32
+        },
+        {
+          "text": "regressione",
+          "start": 0.38,
+          "end": 0.94
+        },
+        {
+          "text": "stimiamo",
+          "start": 1.04,
+          "end": 1.46
+        },
+        {
+          "text": "una",
+          "start": 1.52,
+          "end": 1.64
+        },
+        {
+          "text": "funzione",
+          "start": 1.7,
+          "end": 2.12
+        },
+        {
+          "text": "a",
+          "start": 2.18,
+          "end": 2.22
+        },
+        {
+          "text": "valori",
+          "start": 2.28,
+          "end": 2.581
+        },
+        {
+          "text": "reali",
+          "start": 2.641,
+          "end": 2.961
+        },
+        {
+          "text": "da",
+          "start": 3.041,
+          "end": 3.101
+        },
+        {
+          "text": "campioni",
+          "start": 3.181,
+          "end": 3.561
+        },
+        {
+          "text": "rumorosi",
+          "start": 3.621,
+          "end": 4.161
+        },
+        {
+          "text": "x",
+          "start": 4.501,
+          "end": 4.541
+        },
+        {
+          "text": "virgola",
+          "start": 4.861,
+          "end": 5.221
+        },
+        {
+          "text": "f",
+          "start": 5.381,
+          "end": 5.421
+        },
+        {
+          "text": "di",
+          "start": 5.541,
+          "end": 5.701
+        }
+      ]
+    },
+    {
+      "start": 5.761,
+      "end": 8.662,
+      "text": "x più rumore — una forma di curve fitting.",
+      "words": [
+        {
+          "text": "x",
+          "start": 5.761,
+          "end": 5.801
+        },
+        {
+          "text": "più",
+          "start": 6.061,
+          "end": 6.161
+        },
+        {
+          "text": "rumore",
+          "start": 6.221,
+          "end": 6.581
+        },
+        {
+          "text": "—",
+          "start": 6.581,
+          "end": 6.731
+        },
+        {
+          "text": "una",
+          "start": 7.181,
+          "end": 7.321
+        },
+        {
+          "text": "forma",
+          "start": 7.361,
+          "end": 7.642
+        },
+        {
+          "text": "di",
+          "start": 7.702,
+          "end": 7.782
+        },
+        {
+          "text": "curve",
+          "start": 7.882,
+          "end": 8.162
+        },
+        {
+          "text": "fitting.",
+          "start": 8.222,
+          "end": 8.662
+        }
+      ]
+    },
+    {
+      "start": 9.262,
+      "end": 12.202,
+      "text": "Guarda l'esempio a destra sui cinque punti vicino alla retta due x:",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 9.262,
+          "end": 9.502
+        },
+        {
+          "text": "l'esempio",
+          "start": 9.542,
+          "end": 9.882
+        },
+        {
+          "text": "a",
+          "start": 9.902,
+          "end": 9.942
+        },
+        {
+          "text": "destra",
+          "start": 9.982,
+          "end": 10.322
+        },
+        {
+          "text": "sui",
+          "start": 10.362,
+          "end": 10.482
+        },
+        {
+          "text": "cinque",
+          "start": 10.522,
+          "end": 10.782
+        },
+        {
+          "text": "punti",
+          "start": 10.822,
+          "end": 11.082
+        },
+        {
+          "text": "vicino",
+          "start": 11.142,
+          "end": 11.442
+        },
+        {
+          "text": "alla",
+          "start": 11.442,
+          "end": 11.562
+        },
+        {
+          "text": "retta",
+          "start": 11.602,
+          "end": 11.822
+        },
+        {
+          "text": "due",
+          "start": 11.862,
+          "end": 11.982
+        },
+        {
+          "text": "x:",
+          "start": 12.162,
+          "end": 12.202
+        }
+      ]
+    },
+    {
+      "start": 12.863,
+      "end": 15.463,
+      "text": "uno virgola due punto uno; due virgola tre punto nove;",
+      "words": [
+        {
+          "text": "uno",
+          "start": 12.863,
+          "end": 13.023
+        },
+        {
+          "text": "virgola",
+          "start": 13.063,
+          "end": 13.363
+        },
+        {
+          "text": "due",
+          "start": 13.403,
+          "end": 13.523
+        },
+        {
+          "text": "punto",
+          "start": 13.563,
+          "end": 13.823
+        },
+        {
+          "text": "uno;",
+          "start": 13.923,
+          "end": 14.103
+        },
+        {
+          "text": "due",
+          "start": 14.243,
+          "end": 14.383
+        },
+        {
+          "text": "virgola",
+          "start": 14.423,
+          "end": 14.703
+        },
+        {
+          "text": "tre",
+          "start": 14.763,
+          "end": 14.863
+        },
+        {
+          "text": "punto",
+          "start": 14.923,
+          "end": 15.143
+        },
+        {
+          "text": "nove;",
+          "start": 15.203,
+          "end": 15.463
+        }
+      ]
+    },
+    {
+      "start": 15.823,
+      "end": 18.744,
+      "text": "tre virgola sei punto uno; quattro virgola otto punto quattro;",
+      "words": [
+        {
+          "text": "tre",
+          "start": 15.823,
+          "end": 15.943
+        },
+        {
+          "text": "virgola",
+          "start": 16.003,
+          "end": 16.303
+        },
+        {
+          "text": "sei",
+          "start": 16.343,
+          "end": 16.463
+        },
+        {
+          "text": "punto",
+          "start": 16.503,
+          "end": 16.763
+        },
+        {
+          "text": "uno;",
+          "start": 16.883,
+          "end": 17.063
+        },
+        {
+          "text": "quattro",
+          "start": 17.183,
+          "end": 17.463
+        },
+        {
+          "text": "virgola",
+          "start": 17.503,
+          "end": 17.784
+        },
+        {
+          "text": "otto",
+          "start": 17.864,
+          "end": 18.024
+        },
+        {
+          "text": "punto",
+          "start": 18.064,
+          "end": 18.304
+        },
+        {
+          "text": "quattro;",
+          "start": 18.364,
+          "end": 18.744
+        }
+      ]
+    },
+    {
+      "start": 18.884,
+      "end": 20.324,
+      "text": "cinque virgola nove punto otto.",
+      "words": [
+        {
+          "text": "cinque",
+          "start": 18.884,
+          "end": 19.144
+        },
+        {
+          "text": "virgola",
+          "start": 19.204,
+          "end": 19.484
+        },
+        {
+          "text": "nove",
+          "start": 19.524,
+          "end": 19.704
+        },
+        {
+          "text": "punto",
+          "start": 19.784,
+          "end": 20.004
+        },
+        {
+          "text": "otto.",
+          "start": 20.084,
+          "end": 20.324
+        }
+      ]
+    },
+    {
+      "start": 21.244,
+      "end": 24.085,
+      "text": "A occhio pensiamo subito a f di x uguale due x,",
+      "words": [
+        {
+          "text": "A",
+          "start": 21.244,
+          "end": 21.284
+        },
+        {
+          "text": "occhio",
+          "start": 21.344,
+          "end": 21.584
+        },
+        {
+          "text": "pensiamo",
+          "start": 21.624,
+          "end": 21.964
+        },
+        {
+          "text": "subito",
+          "start": 22.024,
+          "end": 22.304
+        },
+        {
+          "text": "a",
+          "start": 22.384,
+          "end": 22.424
+        },
+        {
+          "text": "f",
+          "start": 22.464,
+          "end": 22.504
+        },
+        {
+          "text": "di",
+          "start": 22.925,
+          "end": 22.985
+        },
+        {
+          "text": "x",
+          "start": 23.125,
+          "end": 23.165
+        },
+        {
+          "text": "uguale",
+          "start": 23.425,
+          "end": 23.725
+        },
+        {
+          "text": "due",
+          "start": 23.765,
+          "end": 23.865
+        },
+        {
+          "text": "x,",
+          "start": 24.045,
+          "end": 24.085
+        }
+      ]
+    },
+    {
+      "start": 24.705,
+      "end": 28.946,
+      "text": "ma tra le infinite curve compatibili con i punti quale deve scegliere una macchina?",
+      "words": [
+        {
+          "text": "ma",
+          "start": 24.705,
+          "end": 24.765
+        },
+        {
+          "text": "tra",
+          "start": 24.865,
+          "end": 24.965
+        },
+        {
+          "text": "le",
+          "start": 25.045,
+          "end": 25.105
+        },
+        {
+          "text": "infinite",
+          "start": 25.185,
+          "end": 25.665
+        },
+        {
+          "text": "curve",
+          "start": 25.705,
+          "end": 25.965
+        },
+        {
+          "text": "compatibili",
+          "start": 26.025,
+          "end": 26.565
+        },
+        {
+          "text": "con",
+          "start": 26.605,
+          "end": 26.725
+        },
+        {
+          "text": "i",
+          "start": 26.765,
+          "end": 26.805
+        },
+        {
+          "text": "punti",
+          "start": 26.825,
+          "end": 27.185
+        },
+        {
+          "text": "quale",
+          "start": 27.405,
+          "end": 27.645
+        },
+        {
+          "text": "deve",
+          "start": 27.685,
+          "end": 27.865
+        },
+        {
+          "text": "scegliere",
+          "start": 27.925,
+          "end": 28.346
+        },
+        {
+          "text": "una",
+          "start": 28.386,
+          "end": 28.486
+        },
+        {
+          "text": "macchina?",
+          "start": 28.526,
+          "end": 28.946
+        }
+      ]
+    },
+    {
+      "start": 30.046,
+      "end": 33.867,
+      "text": "Il polinomio blu di grado quattro passa esattamente per tutti e cinque i punti,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 30.046,
+          "end": 30.126
+        },
+        {
+          "text": "polinomio",
+          "start": 30.186,
+          "end": 30.686
+        },
+        {
+          "text": "blu",
+          "start": 30.746,
+          "end": 30.866
+        },
+        {
+          "text": "di",
+          "start": 30.946,
+          "end": 31.026
+        },
+        {
+          "text": "grado",
+          "start": 31.066,
+          "end": 31.286
+        },
+        {
+          "text": "quattro",
+          "start": 31.346,
+          "end": 31.686
+        },
+        {
+          "text": "passa",
+          "start": 31.746,
+          "end": 31.986
+        },
+        {
+          "text": "esattamente",
+          "start": 32.046,
+          "end": 32.646
+        },
+        {
+          "text": "per",
+          "start": 32.686,
+          "end": 32.806
+        },
+        {
+          "text": "tutti",
+          "start": 32.866,
+          "end": 33.066
+        },
+        {
+          "text": "e",
+          "start": 33.106,
+          "end": 33.146
+        },
+        {
+          "text": "cinque",
+          "start": 33.187,
+          "end": 33.467
+        },
+        {
+          "text": "i",
+          "start": 33.507,
+          "end": 33.547
+        },
+        {
+          "text": "punti,",
+          "start": 33.527,
+          "end": 33.867
+        }
+      ]
+    },
+    {
+      "start": 34.307,
+      "end": 36.487,
+      "text": "ma fuori dall'intervallo diverge bruscamente;",
+      "words": [
+        {
+          "text": "ma",
+          "start": 34.307,
+          "end": 34.367
+        },
+        {
+          "text": "fuori",
+          "start": 34.447,
+          "end": 34.647
+        },
+        {
+          "text": "dall'intervallo",
+          "start": 34.667,
+          "end": 35.327
+        },
+        {
+          "text": "diverge",
+          "start": 35.427,
+          "end": 35.807
+        },
+        {
+          "text": "bruscamente;",
+          "start": 35.827,
+          "end": 36.487
+        }
+      ]
+    },
+    {
+      "start": 37.147,
+      "end": 41.048,
+      "text": "la retta rossa e la parabola verde commettono piccoli errori ma restano regolari.",
+      "words": [
+        {
+          "text": "la",
+          "start": 37.147,
+          "end": 37.207
+        },
+        {
+          "text": "retta",
+          "start": 37.247,
+          "end": 37.447
+        },
+        {
+          "text": "rossa",
+          "start": 37.487,
+          "end": 37.767
+        },
+        {
+          "text": "e",
+          "start": 37.807,
+          "end": 37.847
+        },
+        {
+          "text": "la",
+          "start": 37.867,
+          "end": 37.927
+        },
+        {
+          "text": "parabola",
+          "start": 37.967,
+          "end": 38.287
+        },
+        {
+          "text": "verde",
+          "start": 38.328,
+          "end": 38.608
+        },
+        {
+          "text": "commettono",
+          "start": 38.648,
+          "end": 39.068
+        },
+        {
+          "text": "piccoli",
+          "start": 39.128,
+          "end": 39.468
+        },
+        {
+          "text": "errori",
+          "start": 39.528,
+          "end": 39.888
+        },
+        {
+          "text": "ma",
+          "start": 40.008,
+          "end": 40.068
+        },
+        {
+          "text": "restano",
+          "start": 40.148,
+          "end": 40.508
+        },
+        {
+          "text": "regolari.",
+          "start": 40.568,
+          "end": 41.048
+        }
+      ]
+    },
+    {
+      "start": 41.628,
+      "end": 44.449,
+      "text": "Questo dilemma è il cuore della generalizzazione.",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 41.628,
+          "end": 41.888
+        },
+        {
+          "text": "dilemma",
+          "start": 41.928,
+          "end": 42.328
+        },
+        {
+          "text": "è",
+          "start": 42.508,
+          "end": 42.548
+        },
+        {
+          "text": "il",
+          "start": 42.648,
+          "end": 42.728
+        },
+        {
+          "text": "cuore",
+          "start": 42.808,
+          "end": 43.128
+        },
+        {
+          "text": "della",
+          "start": 43.208,
+          "end": 43.428
+        },
+        {
+          "text": "generalizzazione.",
+          "start": 43.489,
+          "end": 44.449
+        }
+      ]
+    },
+    {
+      "start": 45.349,
+      "end": 49.97,
+      "text": "Oltre a supervisionato e non supervisionato esistono tre paradigmi moderni essenziali.",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 45.349,
+          "end": 45.589
+        },
+        {
+          "text": "a",
+          "start": 45.649,
+          "end": 45.689
+        },
+        {
+          "text": "supervisionato",
+          "start": 45.729,
+          "end": 46.469
+        },
+        {
+          "text": "e",
+          "start": 46.529,
+          "end": 46.569
+        },
+        {
+          "text": "non",
+          "start": 46.629,
+          "end": 46.749
+        },
+        {
+          "text": "supervisionato",
+          "start": 46.809,
+          "end": 47.569
+        },
+        {
+          "text": "esistono",
+          "start": 47.709,
+          "end": 48.129
+        },
+        {
+          "text": "tre",
+          "start": 48.209,
+          "end": 48.329
+        },
+        {
+          "text": "paradigmi",
+          "start": 48.389,
+          "end": 48.87
+        },
+        {
+          "text": "moderni",
+          "start": 48.93,
+          "end": 49.29
+        },
+        {
+          "text": "essenziali.",
+          "start": 49.33,
+          "end": 49.97
+        }
+      ]
+    },
+    {
+      "start": 50.63,
+      "end": 55.551,
+      "text": "Il semi-supervised learning combina pochi esempi etichettati e molti non etichettati.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 50.63,
+          "end": 50.75
+        },
+        {
+          "text": "semi-supervised",
+          "start": 50.85,
+          "end": 51.67
+        },
+        {
+          "text": "learning",
+          "start": 51.73,
+          "end": 52.15
+        },
+        {
+          "text": "combina",
+          "start": 52.35,
+          "end": 52.73
+        },
+        {
+          "text": "pochi",
+          "start": 52.85,
+          "end": 53.07
+        },
+        {
+          "text": "esempi",
+          "start": 53.11,
+          "end": 53.41
+        },
+        {
+          "text": "etichettati",
+          "start": 53.45,
+          "end": 54.091
+        },
+        {
+          "text": "e",
+          "start": 54.271,
+          "end": 54.311
+        },
+        {
+          "text": "molti",
+          "start": 54.411,
+          "end": 54.711
+        },
+        {
+          "text": "non",
+          "start": 54.751,
+          "end": 54.871
+        },
+        {
+          "text": "etichettati.",
+          "start": 54.911,
+          "end": 55.551
+        }
+      ]
+    },
+    {
+      "start": 56.151,
+      "end": 63.072,
+      "text": "Il self-supervised learning è apprendimento supervisionato in cui le etichette si generano automaticamente dalla struttura",
+      "words": [
+        {
+          "text": "Il",
+          "start": 56.151,
+          "end": 56.271
+        },
+        {
+          "text": "self-supervised",
+          "start": 56.351,
+          "end": 57.191
+        },
+        {
+          "text": "learning",
+          "start": 57.291,
+          "end": 57.711
+        },
+        {
+          "text": "è",
+          "start": 58.211,
+          "end": 58.251
+        },
+        {
+          "text": "apprendimento",
+          "start": 58.311,
+          "end": 58.911
+        },
+        {
+          "text": "supervisionato",
+          "start": 58.971,
+          "end": 59.672
+        },
+        {
+          "text": "in",
+          "start": 59.732,
+          "end": 59.792
+        },
+        {
+          "text": "cui",
+          "start": 59.832,
+          "end": 60.012
+        },
+        {
+          "text": "le",
+          "start": 60.052,
+          "end": 60.112
+        },
+        {
+          "text": "etichette",
+          "start": 60.152,
+          "end": 60.572
+        },
+        {
+          "text": "si",
+          "start": 60.632,
+          "end": 60.712
+        },
+        {
+          "text": "generano",
+          "start": 60.752,
+          "end": 61.212
+        },
+        {
+          "text": "automaticamente",
+          "start": 61.352,
+          "end": 62.252
+        },
+        {
+          "text": "dalla",
+          "start": 62.352,
+          "end": 62.592
+        },
+        {
+          "text": "struttura",
+          "start": 62.652,
+          "end": 63.072
+        }
+      ]
+    },
+    {
+      "start": 63.132,
+      "end": 65.793,
+      "text": "stessa dei dati, senza etichettatura manuale:",
+      "words": [
+        {
+          "text": "stessa",
+          "start": 63.132,
+          "end": 63.412
+        },
+        {
+          "text": "dei",
+          "start": 63.472,
+          "end": 63.592
+        },
+        {
+          "text": "dati,",
+          "start": 63.612,
+          "end": 63.932
+        },
+        {
+          "text": "senza",
+          "start": 64.433,
+          "end": 64.713
+        },
+        {
+          "text": "etichettatura",
+          "start": 64.753,
+          "end": 65.313
+        },
+        {
+          "text": "manuale:",
+          "start": 65.353,
+          "end": 65.793
+        }
+      ]
+    },
+    {
+      "start": 66.473,
+      "end": 72.854,
+      "text": "il modello viene pre-addestrato su enormi moli di dati non etichettati per imparare rappresentazioni generali,",
+      "words": [
+        {
+          "text": "il",
+          "start": 66.473,
+          "end": 66.573
+        },
+        {
+          "text": "modello",
+          "start": 66.613,
+          "end": 66.933
+        },
+        {
+          "text": "viene",
+          "start": 66.953,
+          "end": 67.173
+        },
+        {
+          "text": "pre-addestrato",
+          "start": 67.233,
+          "end": 68.013
+        },
+        {
+          "text": "su",
+          "start": 68.113,
+          "end": 68.213
+        },
+        {
+          "text": "enormi",
+          "start": 68.313,
+          "end": 68.673
+        },
+        {
+          "text": "moli",
+          "start": 68.753,
+          "end": 69.013
+        },
+        {
+          "text": "di",
+          "start": 69.053,
+          "end": 69.113
+        },
+        {
+          "text": "dati",
+          "start": 69.173,
+          "end": 69.454
+        },
+        {
+          "text": "non",
+          "start": 69.554,
+          "end": 69.694
+        },
+        {
+          "text": "etichettati",
+          "start": 69.754,
+          "end": 70.454
+        },
+        {
+          "text": "per",
+          "start": 70.914,
+          "end": 71.034
+        },
+        {
+          "text": "imparare",
+          "start": 71.074,
+          "end": 71.454
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 71.554,
+          "end": 72.314
+        },
+        {
+          "text": "generali,",
+          "start": 72.374,
+          "end": 72.854
+        }
+      ]
+    },
+    {
+      "start": 73.014,
+      "end": 76.315,
+      "text": "poi adattate ai task specifici tramite fine-tuning.",
+      "words": [
+        {
+          "text": "poi",
+          "start": 73.014,
+          "end": 73.194
+        },
+        {
+          "text": "adattate",
+          "start": 73.254,
+          "end": 73.794
+        },
+        {
+          "text": "ai",
+          "start": 74.174,
+          "end": 74.274
+        },
+        {
+          "text": "task",
+          "start": 74.314,
+          "end": 74.554
+        },
+        {
+          "text": "specifici",
+          "start": 74.655,
+          "end": 75.195
+        },
+        {
+          "text": "tramite",
+          "start": 75.255,
+          "end": 75.615
+        },
+        {
+          "text": "fine-tuning.",
+          "start": 75.675,
+          "end": 76.315
+        }
+      ]
+    },
+    {
+      "start": 77.215,
+      "end": 82.546,
+      "text": "Alla base dei grandi modelli linguistici ci sono la predizione autoregressiva della parola successiva —",
+      "words": [
+        {
+          "text": "Alla",
+          "start": 77.215,
+          "end": 77.395
+        },
+        {
+          "text": "base",
+          "start": 77.435,
+          "end": 77.675
+        },
+        {
+          "text": "dei",
+          "start": 77.735,
+          "end": 77.855
+        },
+        {
+          "text": "grandi",
+          "start": 77.875,
+          "end": 78.135
+        },
+        {
+          "text": "modelli",
+          "start": 78.175,
+          "end": 78.475
+        },
+        {
+          "text": "linguistici",
+          "start": 78.515,
+          "end": 79.095
+        },
+        {
+          "text": "ci",
+          "start": 79.155,
+          "end": 79.235
+        },
+        {
+          "text": "sono",
+          "start": 79.275,
+          "end": 79.475
+        },
+        {
+          "text": "la",
+          "start": 79.515,
+          "end": 79.575
+        },
+        {
+          "text": "predizione",
+          "start": 79.615,
+          "end": 80.176
+        },
+        {
+          "text": "autoregressiva",
+          "start": 80.356,
+          "end": 81.196
+        },
+        {
+          "text": "della",
+          "start": 81.256,
+          "end": 81.436
+        },
+        {
+          "text": "parola",
+          "start": 81.476,
+          "end": 81.736
+        },
+        {
+          "text": "successiva",
+          "start": 81.796,
+          "end": 82.396
+        },
+        {
+          "text": "—",
+          "start": 82.396,
+          "end": 82.546
+        }
+      ]
+    },
+    {
+      "start": 82.796,
+      "end": 86.837,
+      "text": "famiglia GPT — e la ricostruzione di parole mascherate — BERT;",
+      "words": [
+        {
+          "text": "famiglia",
+          "start": 82.796,
+          "end": 83.156
+        },
+        {
+          "text": "GPT",
+          "start": 83.236,
+          "end": 83.556
+        },
+        {
+          "text": "—",
+          "start": 83.556,
+          "end": 83.706
+        },
+        {
+          "text": "e",
+          "start": 84.196,
+          "end": 84.236
+        },
+        {
+          "text": "la",
+          "start": 84.316,
+          "end": 84.376
+        },
+        {
+          "text": "ricostruzione",
+          "start": 84.416,
+          "end": 85.117
+        },
+        {
+          "text": "di",
+          "start": 85.157,
+          "end": 85.237
+        },
+        {
+          "text": "parole",
+          "start": 85.277,
+          "end": 85.557
+        },
+        {
+          "text": "mascherate",
+          "start": 85.597,
+          "end": 86.137
+        },
+        {
+          "text": "—",
+          "start": 86.137,
+          "end": 86.287
+        },
+        {
+          "text": "BERT;",
+          "start": 86.537,
+          "end": 86.837
+        }
+      ]
+    },
+    {
+      "start": 87.657,
+      "end": 92.058,
+      "text": "per le immagini i masked autoencoder ricostruiscono porzioni nascoste.",
+      "words": [
+        {
+          "text": "per",
+          "start": 87.657,
+          "end": 87.777
+        },
+        {
+          "text": "le",
+          "start": 87.817,
+          "end": 87.897
+        },
+        {
+          "text": "immagini",
+          "start": 87.937,
+          "end": 88.397
+        },
+        {
+          "text": "i",
+          "start": 88.597,
+          "end": 88.637
+        },
+        {
+          "text": "masked",
+          "start": 88.737,
+          "end": 89.097
+        },
+        {
+          "text": "autoencoder",
+          "start": 89.297,
+          "end": 90.078
+        },
+        {
+          "text": "ricostruiscono",
+          "start": 90.278,
+          "end": 90.978
+        },
+        {
+          "text": "porzioni",
+          "start": 91.078,
+          "end": 91.478
+        },
+        {
+          "text": "nascoste.",
+          "start": 91.538,
+          "end": 92.058
+        }
+      ]
+    },
+    {
+      "start": 92.698,
+      "end": 99.319,
+      "text": "Infine il reinforcement learning apprende una politica di decision-making guidato da un critico e dal",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 92.698,
+          "end": 93.198
+        },
+        {
+          "text": "il",
+          "start": 93.358,
+          "end": 93.458
+        },
+        {
+          "text": "reinforcement",
+          "start": 93.518,
+          "end": 94.158
+        },
+        {
+          "text": "learning",
+          "start": 94.258,
+          "end": 94.638
+        },
+        {
+          "text": "apprende",
+          "start": 95.139,
+          "end": 95.519
+        },
+        {
+          "text": "una",
+          "start": 95.599,
+          "end": 95.719
+        },
+        {
+          "text": "politica",
+          "start": 95.779,
+          "end": 96.239
+        },
+        {
+          "text": "di",
+          "start": 96.299,
+          "end": 96.359
+        },
+        {
+          "text": "decision-making",
+          "start": 96.439,
+          "end": 97.339
+        },
+        {
+          "text": "guidato",
+          "start": 97.719,
+          "end": 98.099
+        },
+        {
+          "text": "da",
+          "start": 98.179,
+          "end": 98.239
+        },
+        {
+          "text": "un",
+          "start": 98.299,
+          "end": 98.379
+        },
+        {
+          "text": "critico",
+          "start": 98.419,
+          "end": 98.879
+        },
+        {
+          "text": "e",
+          "start": 99.079,
+          "end": 99.119
+        },
+        {
+          "text": "dal",
+          "start": 99.159,
+          "end": 99.319
+        }
+      ]
+    },
+    {
+      "start": 99.379,
+      "end": 102.5,
+      "text": "feedback dell'ambiente, senza esempi passo per passo.",
+      "words": [
+        {
+          "text": "feedback",
+          "start": 99.379,
+          "end": 99.739
+        },
+        {
+          "text": "dell'ambiente,",
+          "start": 99.819,
+          "end": 100.54
+        },
+        {
+          "text": "senza",
+          "start": 100.96,
+          "end": 101.24
+        },
+        {
+          "text": "esempi",
+          "start": 101.3,
+          "end": 101.64
+        },
+        {
+          "text": "passo",
+          "start": 101.7,
+          "end": 101.96
+        },
+        {
+          "text": "per",
+          "start": 102.0,
+          "end": 102.1
+        },
+        {
+          "text": "passo.",
+          "start": 102.16,
+          "end": 102.5
+        }
+      ]
+    }
+  ]
+}

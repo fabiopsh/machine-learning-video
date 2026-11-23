@@ -1,0 +1,929 @@
+{
+  "duration": 66.784,
+  "segments": [
+    {
+      "start": 0.823,
+      "end": 5.464,
+      "text": "Vediamo su dati reali cosa accade variando il parametro di regolarizzazione lambda nella loss di",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.823,
+          "end": 1.103
+        },
+        {
+          "text": "su",
+          "start": 1.183,
+          "end": 1.263
+        },
+        {
+          "text": "dati",
+          "start": 1.323,
+          "end": 1.523
+        },
+        {
+          "text": "reali",
+          "start": 1.583,
+          "end": 1.843
+        },
+        {
+          "text": "cosa",
+          "start": 1.903,
+          "end": 2.103
+        },
+        {
+          "text": "accade",
+          "start": 2.143,
+          "end": 2.443
+        },
+        {
+          "text": "variando",
+          "start": 2.483,
+          "end": 2.803
+        },
+        {
+          "text": "il",
+          "start": 2.843,
+          "end": 2.904
+        },
+        {
+          "text": "parametro",
+          "start": 2.924,
+          "end": 3.364
+        },
+        {
+          "text": "di",
+          "start": 3.424,
+          "end": 3.484
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 3.544,
+          "end": 4.364
+        },
+        {
+          "text": "lambda",
+          "start": 4.464,
+          "end": 4.844
+        },
+        {
+          "text": "nella",
+          "start": 4.964,
+          "end": 5.164
+        },
+        {
+          "text": "loss",
+          "start": 5.204,
+          "end": 5.344
+        },
+        {
+          "text": "di",
+          "start": 5.384,
+          "end": 5.464
+        }
+      ]
+    },
+    {
+      "start": 5.504,
+      "end": 5.964,
+      "text": "Tikhonov.",
+      "words": [
+        {
+          "text": "Tikhonov.",
+          "start": 5.504,
+          "end": 5.964
+        }
+      ]
+    },
+    {
+      "start": 6.684,
+      "end": 11.605,
+      "text": "Estraiamo venticinque dataset rumorosi dalla sinusoide verde seno di due pi greco x",
+      "words": [
+        {
+          "text": "Estraiamo",
+          "start": 6.684,
+          "end": 7.184
+        },
+        {
+          "text": "venticinque",
+          "start": 7.264,
+          "end": 7.844
+        },
+        {
+          "text": "dataset",
+          "start": 7.884,
+          "end": 8.284
+        },
+        {
+          "text": "rumorosi",
+          "start": 8.404,
+          "end": 8.824
+        },
+        {
+          "text": "dalla",
+          "start": 8.864,
+          "end": 9.045
+        },
+        {
+          "text": "sinusoide",
+          "start": 9.085,
+          "end": 9.645
+        },
+        {
+          "text": "verde",
+          "start": 9.685,
+          "end": 10.045
+        },
+        {
+          "text": "seno",
+          "start": 10.265,
+          "end": 10.505
+        },
+        {
+          "text": "di",
+          "start": 10.565,
+          "end": 10.625
+        },
+        {
+          "text": "due",
+          "start": 10.685,
+          "end": 10.825
+        },
+        {
+          "text": "pi",
+          "start": 10.865,
+          "end": 10.965
+        },
+        {
+          "text": "greco",
+          "start": 11.005,
+          "end": 11.345
+        },
+        {
+          "text": "x",
+          "start": 11.565,
+          "end": 11.605
+        }
+      ]
+    },
+    {
+      "start": 12.225,
+      "end": 15.446,
+      "text": "e addestriamo su ciascuno un modello con ventiquattro basi gaussiane.",
+      "words": [
+        {
+          "text": "e",
+          "start": 12.225,
+          "end": 12.265
+        },
+        {
+          "text": "addestriamo",
+          "start": 12.305,
+          "end": 12.805
+        },
+        {
+          "text": "su",
+          "start": 12.865,
+          "end": 12.925
+        },
+        {
+          "text": "ciascuno",
+          "start": 13.005,
+          "end": 13.385
+        },
+        {
+          "text": "un",
+          "start": 13.405,
+          "end": 13.465
+        },
+        {
+          "text": "modello",
+          "start": 13.485,
+          "end": 13.805
+        },
+        {
+          "text": "con",
+          "start": 13.865,
+          "end": 13.985
+        },
+        {
+          "text": "ventiquattro",
+          "start": 14.045,
+          "end": 14.605
+        },
+        {
+          "text": "basi",
+          "start": 14.645,
+          "end": 14.845
+        },
+        {
+          "text": "gaussiane.",
+          "start": 14.905,
+          "end": 15.446
+        }
+      ]
+    },
+    {
+      "start": 16.246,
+      "end": 19.906,
+      "text": "In alto, con lambda alto, il modello è sovra-regolarizzato:",
+      "words": [
+        {
+          "text": "In",
+          "start": 16.246,
+          "end": 16.346
+        },
+        {
+          "text": "alto,",
+          "start": 16.406,
+          "end": 16.706
+        },
+        {
+          "text": "con",
+          "start": 16.906,
+          "end": 17.046
+        },
+        {
+          "text": "lambda",
+          "start": 17.086,
+          "end": 17.386
+        },
+        {
+          "text": "alto,",
+          "start": 17.506,
+          "end": 17.806
+        },
+        {
+          "text": "il",
+          "start": 18.266,
+          "end": 18.326
+        },
+        {
+          "text": "modello",
+          "start": 18.366,
+          "end": 18.666
+        },
+        {
+          "text": "è",
+          "start": 18.706,
+          "end": 18.746
+        },
+        {
+          "text": "sovra-regolarizzato:",
+          "start": 18.806,
+          "end": 19.906
+        }
+      ]
+    },
+    {
+      "start": 20.566,
+      "end": 23.607,
+      "text": "le curve apprese sui vari dataset sono quasi uguali tra loro,",
+      "words": [
+        {
+          "text": "le",
+          "start": 20.566,
+          "end": 20.626
+        },
+        {
+          "text": "curve",
+          "start": 20.666,
+          "end": 20.906
+        },
+        {
+          "text": "apprese",
+          "start": 20.946,
+          "end": 21.266
+        },
+        {
+          "text": "sui",
+          "start": 21.327,
+          "end": 21.447
+        },
+        {
+          "text": "vari",
+          "start": 21.467,
+          "end": 21.647
+        },
+        {
+          "text": "dataset",
+          "start": 21.687,
+          "end": 22.227
+        },
+        {
+          "text": "sono",
+          "start": 22.367,
+          "end": 22.547
+        },
+        {
+          "text": "quasi",
+          "start": 22.587,
+          "end": 22.787
+        },
+        {
+          "text": "uguali",
+          "start": 22.827,
+          "end": 23.107
+        },
+        {
+          "text": "tra",
+          "start": 23.147,
+          "end": 23.247
+        },
+        {
+          "text": "loro,",
+          "start": 23.347,
+          "end": 23.607
+        }
+      ]
+    },
+    {
+      "start": 23.807,
+      "end": 28.628,
+      "text": "quindi bassa varianza, ma la loro media rossa è molto lontana dalla sinusoide verde,",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 23.807,
+          "end": 24.087
+        },
+        {
+          "text": "bassa",
+          "start": 24.227,
+          "end": 24.467
+        },
+        {
+          "text": "varianza,",
+          "start": 24.507,
+          "end": 25.007
+        },
+        {
+          "text": "ma",
+          "start": 25.647,
+          "end": 25.707
+        },
+        {
+          "text": "la",
+          "start": 25.767,
+          "end": 25.827
+        },
+        {
+          "text": "loro",
+          "start": 25.887,
+          "end": 26.087
+        },
+        {
+          "text": "media",
+          "start": 26.127,
+          "end": 26.367
+        },
+        {
+          "text": "rossa",
+          "start": 26.407,
+          "end": 26.707
+        },
+        {
+          "text": "è",
+          "start": 26.847,
+          "end": 26.887
+        },
+        {
+          "text": "molto",
+          "start": 26.927,
+          "end": 27.127
+        },
+        {
+          "text": "lontana",
+          "start": 27.167,
+          "end": 27.488
+        },
+        {
+          "text": "dalla",
+          "start": 27.528,
+          "end": 27.688
+        },
+        {
+          "text": "sinusoide",
+          "start": 27.728,
+          "end": 28.248
+        },
+        {
+          "text": "verde,",
+          "start": 28.288,
+          "end": 28.628
+        }
+      ]
+    },
+    {
+      "start": 28.868,
+      "end": 30.048,
+      "text": "cioè alto bias.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 28.868,
+          "end": 29.048
+        },
+        {
+          "text": "alto",
+          "start": 29.328,
+          "end": 29.568
+        },
+        {
+          "text": "bias.",
+          "start": 29.608,
+          "end": 30.048
+        }
+      ]
+    },
+    {
+      "start": 30.948,
+      "end": 34.889,
+      "text": "In basso, con lambda molto basso, il modello è sotto-regolarizzato:",
+      "words": [
+        {
+          "text": "In",
+          "start": 30.948,
+          "end": 31.028
+        },
+        {
+          "text": "basso,",
+          "start": 31.088,
+          "end": 31.468
+        },
+        {
+          "text": "con",
+          "start": 31.628,
+          "end": 31.768
+        },
+        {
+          "text": "lambda",
+          "start": 31.808,
+          "end": 32.128
+        },
+        {
+          "text": "molto",
+          "start": 32.248,
+          "end": 32.568
+        },
+        {
+          "text": "basso,",
+          "start": 32.628,
+          "end": 33.028
+        },
+        {
+          "text": "il",
+          "start": 33.228,
+          "end": 33.308
+        },
+        {
+          "text": "modello",
+          "start": 33.348,
+          "end": 33.629
+        },
+        {
+          "text": "è",
+          "start": 33.689,
+          "end": 33.729
+        },
+        {
+          "text": "sotto-regolarizzato:",
+          "start": 33.789,
+          "end": 34.889
+        }
+      ]
+    },
+    {
+      "start": 35.509,
+      "end": 38.689,
+      "text": "ogni singola curva oscilla moltissimo da un dataset all'altro,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 35.509,
+          "end": 35.669
+        },
+        {
+          "text": "singola",
+          "start": 35.729,
+          "end": 36.029
+        },
+        {
+          "text": "curva",
+          "start": 36.089,
+          "end": 36.329
+        },
+        {
+          "text": "oscilla",
+          "start": 36.369,
+          "end": 36.689
+        },
+        {
+          "text": "moltissimo",
+          "start": 36.769,
+          "end": 37.409
+        },
+        {
+          "text": "da",
+          "start": 37.509,
+          "end": 37.569
+        },
+        {
+          "text": "un",
+          "start": 37.609,
+          "end": 37.689
+        },
+        {
+          "text": "dataset",
+          "start": 37.709,
+          "end": 38.169
+        },
+        {
+          "text": "all'altro,",
+          "start": 38.229,
+          "end": 38.689
+        }
+      ]
+    },
+    {
+      "start": 38.989,
+      "end": 44.01,
+      "text": "quindi alta varianza, ma la loro media rossa coincide quasi perfettamente con la funzione vera,",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 38.989,
+          "end": 39.209
+        },
+        {
+          "text": "alta",
+          "start": 39.369,
+          "end": 39.59
+        },
+        {
+          "text": "varianza,",
+          "start": 39.63,
+          "end": 40.15
+        },
+        {
+          "text": "ma",
+          "start": 40.75,
+          "end": 40.81
+        },
+        {
+          "text": "la",
+          "start": 40.87,
+          "end": 40.93
+        },
+        {
+          "text": "loro",
+          "start": 40.99,
+          "end": 41.17
+        },
+        {
+          "text": "media",
+          "start": 41.21,
+          "end": 41.45
+        },
+        {
+          "text": "rossa",
+          "start": 41.49,
+          "end": 41.75
+        },
+        {
+          "text": "coincide",
+          "start": 41.81,
+          "end": 42.21
+        },
+        {
+          "text": "quasi",
+          "start": 42.27,
+          "end": 42.47
+        },
+        {
+          "text": "perfettamente",
+          "start": 42.51,
+          "end": 43.11
+        },
+        {
+          "text": "con",
+          "start": 43.15,
+          "end": 43.25
+        },
+        {
+          "text": "la",
+          "start": 43.27,
+          "end": 43.33
+        },
+        {
+          "text": "funzione",
+          "start": 43.35,
+          "end": 43.71
+        },
+        {
+          "text": "vera,",
+          "start": 43.75,
+          "end": 44.01
+        }
+      ]
+    },
+    {
+      "start": 44.29,
+      "end": 45.41,
+      "text": "cioè basso bias.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 44.29,
+          "end": 44.45
+        },
+        {
+          "text": "basso",
+          "start": 44.67,
+          "end": 44.93
+        },
+        {
+          "text": "bias.",
+          "start": 44.97,
+          "end": 45.41
+        }
+      ]
+    },
+    {
+      "start": 46.231,
+      "end": 49.371,
+      "text": "Guarda ora il grafico del trade-off stimato su cento dataset:",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 46.231,
+          "end": 46.451
+        },
+        {
+          "text": "ora",
+          "start": 46.511,
+          "end": 46.631
+        },
+        {
+          "text": "il",
+          "start": 46.691,
+          "end": 46.751
+        },
+        {
+          "text": "grafico",
+          "start": 46.791,
+          "end": 47.131
+        },
+        {
+          "text": "del",
+          "start": 47.191,
+          "end": 47.311
+        },
+        {
+          "text": "trade-off",
+          "start": 47.371,
+          "end": 47.831
+        },
+        {
+          "text": "stimato",
+          "start": 47.971,
+          "end": 48.331
+        },
+        {
+          "text": "su",
+          "start": 48.371,
+          "end": 48.451
+        },
+        {
+          "text": "cento",
+          "start": 48.531,
+          "end": 48.811
+        },
+        {
+          "text": "dataset:",
+          "start": 48.851,
+          "end": 49.371
+        }
+      ]
+    },
+    {
+      "start": 49.871,
+      "end": 53.112,
+      "text": "attenzione, qui la complessità cresce verso sinistra.",
+      "words": [
+        {
+          "text": "attenzione,",
+          "start": 49.871,
+          "end": 50.491
+        },
+        {
+          "text": "qui",
+          "start": 51.051,
+          "end": 51.171
+        },
+        {
+          "text": "la",
+          "start": 51.231,
+          "end": 51.291
+        },
+        {
+          "text": "complessità",
+          "start": 51.331,
+          "end": 51.812
+        },
+        {
+          "text": "cresce",
+          "start": 51.912,
+          "end": 52.212
+        },
+        {
+          "text": "verso",
+          "start": 52.312,
+          "end": 52.592
+        },
+        {
+          "text": "sinistra.",
+          "start": 52.652,
+          "end": 53.112
+        }
+      ]
+    },
+    {
+      "start": 53.912,
+      "end": 59.073,
+      "text": "Il minimo della somma bias quadro più varianza coincide con il minimo dell'errore di test",
+      "words": [
+        {
+          "text": "Il",
+          "start": 53.912,
+          "end": 53.992
+        },
+        {
+          "text": "minimo",
+          "start": 54.052,
+          "end": 54.352
+        },
+        {
+          "text": "della",
+          "start": 54.452,
+          "end": 54.652
+        },
+        {
+          "text": "somma",
+          "start": 54.712,
+          "end": 54.972
+        },
+        {
+          "text": "bias",
+          "start": 55.192,
+          "end": 55.592
+        },
+        {
+          "text": "quadro",
+          "start": 55.692,
+          "end": 56.052
+        },
+        {
+          "text": "più",
+          "start": 56.112,
+          "end": 56.232
+        },
+        {
+          "text": "varianza",
+          "start": 56.292,
+          "end": 56.812
+        },
+        {
+          "text": "coincide",
+          "start": 56.972,
+          "end": 57.512
+        },
+        {
+          "text": "con",
+          "start": 57.552,
+          "end": 57.672
+        },
+        {
+          "text": "il",
+          "start": 57.712,
+          "end": 57.793
+        },
+        {
+          "text": "minimo",
+          "start": 57.833,
+          "end": 58.093
+        },
+        {
+          "text": "dell'errore",
+          "start": 58.153,
+          "end": 58.633
+        },
+        {
+          "text": "di",
+          "start": 58.713,
+          "end": 58.773
+        },
+        {
+          "text": "test",
+          "start": 58.853,
+          "end": 59.073
+        }
+      ]
+    },
+    {
+      "start": 59.193,
+      "end": 61.993,
+      "text": "reale, e chiarisce il legame diretto con la SLT:",
+      "words": [
+        {
+          "text": "reale,",
+          "start": 59.193,
+          "end": 59.513
+        },
+        {
+          "text": "e",
+          "start": 60.013,
+          "end": 60.053
+        },
+        {
+          "text": "chiarisce",
+          "start": 60.093,
+          "end": 60.453
+        },
+        {
+          "text": "il",
+          "start": 60.493,
+          "end": 60.533
+        },
+        {
+          "text": "legame",
+          "start": 60.553,
+          "end": 60.833
+        },
+        {
+          "text": "diretto",
+          "start": 60.873,
+          "end": 61.213
+        },
+        {
+          "text": "con",
+          "start": 61.253,
+          "end": 61.353
+        },
+        {
+          "text": "la",
+          "start": 61.393,
+          "end": 61.453
+        },
+        {
+          "text": "SLT:",
+          "start": 61.593,
+          "end": 61.993
+        }
+      ]
+    },
+    {
+      "start": 62.653,
+      "end": 66.534,
+      "text": "bias corrisponde a underfitting, varianza a overfitting.",
+      "words": [
+        {
+          "text": "bias",
+          "start": 62.653,
+          "end": 63.053
+        },
+        {
+          "text": "corrisponde",
+          "start": 63.273,
+          "end": 63.793
+        },
+        {
+          "text": "a",
+          "start": 63.854,
+          "end": 63.894
+        },
+        {
+          "text": "underfitting,",
+          "start": 63.894,
+          "end": 64.574
+        },
+        {
+          "text": "varianza",
+          "start": 65.034,
+          "end": 65.514
+        },
+        {
+          "text": "a",
+          "start": 65.814,
+          "end": 65.854
+        },
+        {
+          "text": "overfitting.",
+          "start": 65.894,
+          "end": 66.534
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1282 @@
+{
+  "duration": 80.848,
+  "segments": [
+    {
+      "start": 0.168,
+      "end": 3.968,
+      "text": "Visualizziamo underfitting e overfitting con un caso di studio classico:",
+      "words": [
+        {
+          "text": "Visualizziamo",
+          "start": 0.168,
+          "end": 0.788
+        },
+        {
+          "text": "underfitting",
+          "start": 0.948,
+          "end": 1.628
+        },
+        {
+          "text": "e",
+          "start": 1.668,
+          "end": 1.708
+        },
+        {
+          "text": "overfitting",
+          "start": 1.728,
+          "end": 2.328
+        },
+        {
+          "text": "con",
+          "start": 2.448,
+          "end": 2.588
+        },
+        {
+          "text": "un",
+          "start": 2.648,
+          "end": 2.728
+        },
+        {
+          "text": "caso",
+          "start": 2.768,
+          "end": 3.028
+        },
+        {
+          "text": "di",
+          "start": 3.068,
+          "end": 3.128
+        },
+        {
+          "text": "studio",
+          "start": 3.168,
+          "end": 3.408
+        },
+        {
+          "text": "classico:",
+          "start": 3.448,
+          "end": 3.968
+        }
+      ]
+    },
+    {
+      "start": 4.348,
+      "end": 5.608,
+      "text": "il fitting polinomiale.",
+      "words": [
+        {
+          "text": "il",
+          "start": 4.348,
+          "end": 4.428
+        },
+        {
+          "text": "fitting",
+          "start": 4.528,
+          "end": 4.908
+        },
+        {
+          "text": "polinomiale.",
+          "start": 4.988,
+          "end": 5.608
+        }
+      ]
+    },
+    {
+      "start": 6.048,
+      "end": 8.469,
+      "text": "Lo spazio delle ipotesi sono i polinomi di grado M,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 6.048,
+          "end": 6.108
+        },
+        {
+          "text": "spazio",
+          "start": 6.128,
+          "end": 6.428
+        },
+        {
+          "text": "delle",
+          "start": 6.468,
+          "end": 6.628
+        },
+        {
+          "text": "ipotesi",
+          "start": 6.668,
+          "end": 7.048
+        },
+        {
+          "text": "sono",
+          "start": 7.088,
+          "end": 7.249
+        },
+        {
+          "text": "i",
+          "start": 7.309,
+          "end": 7.349
+        },
+        {
+          "text": "polinomi",
+          "start": 7.389,
+          "end": 7.789
+        },
+        {
+          "text": "di",
+          "start": 7.849,
+          "end": 7.889
+        },
+        {
+          "text": "grado",
+          "start": 7.929,
+          "end": 8.169
+        },
+        {
+          "text": "M,",
+          "start": 8.429,
+          "end": 8.469
+        }
+      ]
+    },
+    {
+      "start": 8.649,
+      "end": 13.569,
+      "text": "cioè una Linear Basis Expansion con funzioni di base phi con j di x uguale",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 8.649,
+          "end": 8.829
+        },
+        {
+          "text": "una",
+          "start": 8.929,
+          "end": 9.069
+        },
+        {
+          "text": "Linear",
+          "start": 9.209,
+          "end": 9.609
+        },
+        {
+          "text": "Basis",
+          "start": 9.689,
+          "end": 10.009
+        },
+        {
+          "text": "Expansion",
+          "start": 10.069,
+          "end": 10.649
+        },
+        {
+          "text": "con",
+          "start": 10.769,
+          "end": 10.909
+        },
+        {
+          "text": "funzioni",
+          "start": 10.949,
+          "end": 11.329
+        },
+        {
+          "text": "di",
+          "start": 11.369,
+          "end": 11.429
+        },
+        {
+          "text": "base",
+          "start": 11.469,
+          "end": 11.769
+        },
+        {
+          "text": "phi",
+          "start": 12.109,
+          "end": 12.189
+        },
+        {
+          "text": "con",
+          "start": 12.289,
+          "end": 12.429
+        },
+        {
+          "text": "j",
+          "start": 12.489,
+          "end": 12.529
+        },
+        {
+          "text": "di",
+          "start": 12.709,
+          "end": 12.769
+        },
+        {
+          "text": "x",
+          "start": 12.969,
+          "end": 13.009
+        },
+        {
+          "text": "uguale",
+          "start": 13.269,
+          "end": 13.569
+        }
+      ]
+    },
+    {
+      "start": 13.849,
+      "end": 18.33,
+      "text": "x alla j: h con w di x uguale somma da j uguale zero a",
+      "words": [
+        {
+          "text": "x",
+          "start": 13.849,
+          "end": 13.889
+        },
+        {
+          "text": "alla",
+          "start": 14.129,
+          "end": 14.289
+        },
+        {
+          "text": "j:",
+          "start": 14.349,
+          "end": 14.389
+        },
+        {
+          "text": "h",
+          "start": 15.25,
+          "end": 15.29
+        },
+        {
+          "text": "con",
+          "start": 15.35,
+          "end": 15.47
+        },
+        {
+          "text": "w",
+          "start": 15.51,
+          "end": 15.55
+        },
+        {
+          "text": "di",
+          "start": 15.91,
+          "end": 15.97
+        },
+        {
+          "text": "x",
+          "start": 16.13,
+          "end": 16.17
+        },
+        {
+          "text": "uguale",
+          "start": 16.53,
+          "end": 16.85
+        },
+        {
+          "text": "somma",
+          "start": 16.95,
+          "end": 17.25
+        },
+        {
+          "text": "da",
+          "start": 17.31,
+          "end": 17.39
+        },
+        {
+          "text": "j",
+          "start": 17.49,
+          "end": 17.53
+        },
+        {
+          "text": "uguale",
+          "start": 17.71,
+          "end": 17.95
+        },
+        {
+          "text": "zero",
+          "start": 18.03,
+          "end": 18.25
+        },
+        {
+          "text": "a",
+          "start": 18.29,
+          "end": 18.33
+        }
+      ]
+    },
+    {
+      "start": 18.51,
+      "end": 22.851,
+      "text": "M di w con j x alla j, la cui complessità cresce con il grado",
+      "words": [
+        {
+          "text": "M",
+          "start": 18.51,
+          "end": 18.55
+        },
+        {
+          "text": "di",
+          "start": 18.77,
+          "end": 18.87
+        },
+        {
+          "text": "w",
+          "start": 18.91,
+          "end": 18.95
+        },
+        {
+          "text": "con",
+          "start": 19.35,
+          "end": 19.49
+        },
+        {
+          "text": "j",
+          "start": 19.53,
+          "end": 19.57
+        },
+        {
+          "text": "x",
+          "start": 20.05,
+          "end": 20.09
+        },
+        {
+          "text": "alla",
+          "start": 20.29,
+          "end": 20.43
+        },
+        {
+          "text": "j,",
+          "start": 20.49,
+          "end": 20.53
+        },
+        {
+          "text": "la",
+          "start": 21.03,
+          "end": 21.11
+        },
+        {
+          "text": "cui",
+          "start": 21.13,
+          "end": 21.25
+        },
+        {
+          "text": "complessità",
+          "start": 21.27,
+          "end": 21.81
+        },
+        {
+          "text": "cresce",
+          "start": 22.01,
+          "end": 22.35
+        },
+        {
+          "text": "con",
+          "start": 22.39,
+          "end": 22.49
+        },
+        {
+          "text": "il",
+          "start": 22.53,
+          "end": 22.61
+        },
+        {
+          "text": "grado",
+          "start": 22.63,
+          "end": 22.851
+        }
+      ]
+    },
+    {
+      "start": 23.071,
+      "end": 23.111,
+      "text": "M.",
+      "words": [
+        {
+          "text": "M.",
+          "start": 23.071,
+          "end": 23.111
+        }
+      ]
+    },
+    {
+      "start": 23.911,
+      "end": 27.051,
+      "text": "La funzione target verde è seno di due pi greco x,",
+      "words": [
+        {
+          "text": "La",
+          "start": 23.911,
+          "end": 23.971
+        },
+        {
+          "text": "funzione",
+          "start": 24.011,
+          "end": 24.371
+        },
+        {
+          "text": "target",
+          "start": 24.411,
+          "end": 24.771
+        },
+        {
+          "text": "verde",
+          "start": 24.851,
+          "end": 25.231
+        },
+        {
+          "text": "è",
+          "start": 25.411,
+          "end": 25.451
+        },
+        {
+          "text": "seno",
+          "start": 25.611,
+          "end": 25.931
+        },
+        {
+          "text": "di",
+          "start": 26.031,
+          "end": 26.111
+        },
+        {
+          "text": "due",
+          "start": 26.211,
+          "end": 26.371
+        },
+        {
+          "text": "pi",
+          "start": 26.411,
+          "end": 26.491
+        },
+        {
+          "text": "greco",
+          "start": 26.551,
+          "end": 26.831
+        },
+        {
+          "text": "x,",
+          "start": 27.011,
+          "end": 27.051
+        }
+      ]
+    },
+    {
+      "start": 27.571,
+      "end": 32.332,
+      "text": "e osserviamo soltanto l uguale dieci campioni blu i cui target includono rumore gaussiano.",
+      "words": [
+        {
+          "text": "e",
+          "start": 27.571,
+          "end": 27.611
+        },
+        {
+          "text": "osserviamo",
+          "start": 27.631,
+          "end": 28.011
+        },
+        {
+          "text": "soltanto",
+          "start": 28.071,
+          "end": 28.491
+        },
+        {
+          "text": "l",
+          "start": 28.711,
+          "end": 28.751
+        },
+        {
+          "text": "uguale",
+          "start": 28.791,
+          "end": 29.051
+        },
+        {
+          "text": "dieci",
+          "start": 29.091,
+          "end": 29.351
+        },
+        {
+          "text": "campioni",
+          "start": 29.411,
+          "end": 29.771
+        },
+        {
+          "text": "blu",
+          "start": 29.811,
+          "end": 29.931
+        },
+        {
+          "text": "i",
+          "start": 30.231,
+          "end": 30.271
+        },
+        {
+          "text": "cui",
+          "start": 30.311,
+          "end": 30.431
+        },
+        {
+          "text": "target",
+          "start": 30.471,
+          "end": 30.832
+        },
+        {
+          "text": "includono",
+          "start": 30.892,
+          "end": 31.292
+        },
+        {
+          "text": "rumore",
+          "start": 31.432,
+          "end": 31.732
+        },
+        {
+          "text": "gaussiano.",
+          "start": 31.792,
+          "end": 32.332
+        }
+      ]
+    },
+    {
+      "start": 32.872,
+      "end": 38.032,
+      "text": "È un task artificiale e unidimensionale, scelto appositamente perché possiamo vedere la curva vera.",
+      "words": [
+        {
+          "text": "È",
+          "start": 32.872,
+          "end": 32.912
+        },
+        {
+          "text": "un",
+          "start": 32.952,
+          "end": 33.032
+        },
+        {
+          "text": "task",
+          "start": 33.092,
+          "end": 33.312
+        },
+        {
+          "text": "artificiale",
+          "start": 33.412,
+          "end": 34.052
+        },
+        {
+          "text": "e",
+          "start": 34.212,
+          "end": 34.252
+        },
+        {
+          "text": "unidimensionale,",
+          "start": 34.352,
+          "end": 35.252
+        },
+        {
+          "text": "scelto",
+          "start": 35.312,
+          "end": 35.592
+        },
+        {
+          "text": "appositamente",
+          "start": 35.632,
+          "end": 36.292
+        },
+        {
+          "text": "perché",
+          "start": 36.312,
+          "end": 36.532
+        },
+        {
+          "text": "possiamo",
+          "start": 36.592,
+          "end": 36.952
+        },
+        {
+          "text": "vedere",
+          "start": 37.012,
+          "end": 37.292
+        },
+        {
+          "text": "la",
+          "start": 37.332,
+          "end": 37.392
+        },
+        {
+          "text": "curva",
+          "start": 37.452,
+          "end": 37.732
+        },
+        {
+          "text": "vera.",
+          "start": 37.772,
+          "end": 38.032
+        }
+      ]
+    },
+    {
+      "start": 38.513,
+      "end": 42.473,
+      "text": "Troviamo i pesi con le equazioni normali ai minimi quadrati sulle potenze di x.",
+      "words": [
+        {
+          "text": "Troviamo",
+          "start": 38.513,
+          "end": 38.833
+        },
+        {
+          "text": "i",
+          "start": 38.913,
+          "end": 38.953
+        },
+        {
+          "text": "pesi",
+          "start": 38.993,
+          "end": 39.273
+        },
+        {
+          "text": "con",
+          "start": 39.333,
+          "end": 39.433
+        },
+        {
+          "text": "le",
+          "start": 39.473,
+          "end": 39.533
+        },
+        {
+          "text": "equazioni",
+          "start": 39.573,
+          "end": 39.993
+        },
+        {
+          "text": "normali",
+          "start": 40.033,
+          "end": 40.453
+        },
+        {
+          "text": "ai",
+          "start": 40.573,
+          "end": 40.673
+        },
+        {
+          "text": "minimi",
+          "start": 40.713,
+          "end": 40.973
+        },
+        {
+          "text": "quadrati",
+          "start": 41.033,
+          "end": 41.473
+        },
+        {
+          "text": "sulle",
+          "start": 41.573,
+          "end": 41.773
+        },
+        {
+          "text": "potenze",
+          "start": 41.813,
+          "end": 42.173
+        },
+        {
+          "text": "di",
+          "start": 42.213,
+          "end": 42.253
+        },
+        {
+          "text": "x.",
+          "start": 42.433,
+          "end": 42.473
+        }
+      ]
+    },
+    {
+      "start": 43.273,
+      "end": 47.734,
+      "text": "Con M uguale a zero — una semplice costante — e con M uguale a",
+      "words": [
+        {
+          "text": "Con",
+          "start": 43.273,
+          "end": 43.433
+        },
+        {
+          "text": "M",
+          "start": 43.753,
+          "end": 43.793
+        },
+        {
+          "text": "uguale",
+          "start": 43.953,
+          "end": 44.313
+        },
+        {
+          "text": "a",
+          "start": 44.353,
+          "end": 44.393
+        },
+        {
+          "text": "zero",
+          "start": 44.473,
+          "end": 44.773
+        },
+        {
+          "text": "—",
+          "start": 44.773,
+          "end": 44.923
+        },
+        {
+          "text": "una",
+          "start": 45.033,
+          "end": 45.153
+        },
+        {
+          "text": "semplice",
+          "start": 45.193,
+          "end": 45.653
+        },
+        {
+          "text": "costante",
+          "start": 45.713,
+          "end": 46.354
+        },
+        {
+          "text": "—",
+          "start": 46.354,
+          "end": 46.504
+        },
+        {
+          "text": "e",
+          "start": 46.674,
+          "end": 46.714
+        },
+        {
+          "text": "con",
+          "start": 46.814,
+          "end": 46.974
+        },
+        {
+          "text": "M",
+          "start": 47.134,
+          "end": 47.174
+        },
+        {
+          "text": "uguale",
+          "start": 47.374,
+          "end": 47.654
+        },
+        {
+          "text": "a",
+          "start": 47.694,
+          "end": 47.734
+        }
+      ]
+    },
+    {
+      "start": 47.834,
+      "end": 52.454,
+      "text": "uno — una retta — il modello è troppo rigido e non riesce minimamente a",
+      "words": [
+        {
+          "text": "uno",
+          "start": 47.834,
+          "end": 48.034
+        },
+        {
+          "text": "—",
+          "start": 48.034,
+          "end": 48.184
+        },
+        {
+          "text": "una",
+          "start": 48.274,
+          "end": 48.414
+        },
+        {
+          "text": "retta",
+          "start": 48.454,
+          "end": 48.834
+        },
+        {
+          "text": "—",
+          "start": 48.834,
+          "end": 48.984
+        },
+        {
+          "text": "il",
+          "start": 49.334,
+          "end": 49.434
+        },
+        {
+          "text": "modello",
+          "start": 49.474,
+          "end": 49.834
+        },
+        {
+          "text": "è",
+          "start": 49.874,
+          "end": 49.914
+        },
+        {
+          "text": "troppo",
+          "start": 49.974,
+          "end": 50.234
+        },
+        {
+          "text": "rigido",
+          "start": 50.294,
+          "end": 50.674
+        },
+        {
+          "text": "e",
+          "start": 51.014,
+          "end": 51.054
+        },
+        {
+          "text": "non",
+          "start": 51.094,
+          "end": 51.194
+        },
+        {
+          "text": "riesce",
+          "start": 51.234,
+          "end": 51.574
+        },
+        {
+          "text": "minimamente",
+          "start": 51.694,
+          "end": 52.374
+        },
+        {
+          "text": "a",
+          "start": 52.414,
+          "end": 52.454
+        }
+      ]
+    },
+    {
+      "start": 52.514,
+      "end": 55.015,
+      "text": "seguire la sinusoide: è underfitting.",
+      "words": [
+        {
+          "text": "seguire",
+          "start": 52.514,
+          "end": 52.894
+        },
+        {
+          "text": "la",
+          "start": 52.954,
+          "end": 53.014
+        },
+        {
+          "text": "sinusoide:",
+          "start": 53.074,
+          "end": 53.654
+        },
+        {
+          "text": "è",
+          "start": 54.015,
+          "end": 54.055
+        },
+        {
+          "text": "underfitting.",
+          "start": 54.255,
+          "end": 55.015
+        }
+      ]
+    },
+    {
+      "start": 55.715,
+      "end": 58.635,
+      "text": "Con M uguale a tre la flessibilità in più è ben spesa:",
+      "words": [
+        {
+          "text": "Con",
+          "start": 55.715,
+          "end": 55.855
+        },
+        {
+          "text": "M",
+          "start": 56.015,
+          "end": 56.055
+        },
+        {
+          "text": "uguale",
+          "start": 56.155,
+          "end": 56.395
+        },
+        {
+          "text": "a",
+          "start": 56.435,
+          "end": 56.475
+        },
+        {
+          "text": "tre",
+          "start": 56.515,
+          "end": 56.635
+        },
+        {
+          "text": "la",
+          "start": 56.795,
+          "end": 56.855
+        },
+        {
+          "text": "flessibilità",
+          "start": 56.895,
+          "end": 57.515
+        },
+        {
+          "text": "in",
+          "start": 57.635,
+          "end": 57.715
+        },
+        {
+          "text": "più",
+          "start": 57.775,
+          "end": 57.895
+        },
+        {
+          "text": "è",
+          "start": 57.995,
+          "end": 58.035
+        },
+        {
+          "text": "ben",
+          "start": 58.075,
+          "end": 58.215
+        },
+        {
+          "text": "spesa:",
+          "start": 58.275,
+          "end": 58.635
+        }
+      ]
+    },
+    {
+      "start": 58.955,
+      "end": 62.236,
+      "text": "la curva rossa approssima in modo molto fedele la funzione vera.",
+      "words": [
+        {
+          "text": "la",
+          "start": 58.955,
+          "end": 59.015
+        },
+        {
+          "text": "curva",
+          "start": 59.055,
+          "end": 59.295
+        },
+        {
+          "text": "rossa",
+          "start": 59.335,
+          "end": 59.555
+        },
+        {
+          "text": "approssima",
+          "start": 59.575,
+          "end": 59.995
+        },
+        {
+          "text": "in",
+          "start": 60.055,
+          "end": 60.095
+        },
+        {
+          "text": "modo",
+          "start": 60.135,
+          "end": 60.355
+        },
+        {
+          "text": "molto",
+          "start": 60.455,
+          "end": 60.795
+        },
+        {
+          "text": "fedele",
+          "start": 60.835,
+          "end": 61.235
+        },
+        {
+          "text": "la",
+          "start": 61.395,
+          "end": 61.455
+        },
+        {
+          "text": "funzione",
+          "start": 61.495,
+          "end": 61.916
+        },
+        {
+          "text": "vera.",
+          "start": 61.976,
+          "end": 62.236
+        }
+      ]
+    },
+    {
+      "start": 62.936,
+      "end": 67.476,
+      "text": "Con M uguale a nove abbiamo dieci parametri liberi per dieci punti:",
+      "words": [
+        {
+          "text": "Con",
+          "start": 62.936,
+          "end": 63.076
+        },
+        {
+          "text": "M",
+          "start": 63.256,
+          "end": 63.296
+        },
+        {
+          "text": "uguale",
+          "start": 63.436,
+          "end": 63.756
+        },
+        {
+          "text": "a",
+          "start": 63.796,
+          "end": 63.836
+        },
+        {
+          "text": "nove",
+          "start": 63.896,
+          "end": 64.216
+        },
+        {
+          "text": "abbiamo",
+          "start": 64.556,
+          "end": 64.836
+        },
+        {
+          "text": "dieci",
+          "start": 64.976,
+          "end": 65.396
+        },
+        {
+          "text": "parametri",
+          "start": 65.456,
+          "end": 65.936
+        },
+        {
+          "text": "liberi",
+          "start": 65.996,
+          "end": 66.316
+        },
+        {
+          "text": "per",
+          "start": 66.436,
+          "end": 66.576
+        },
+        {
+          "text": "dieci",
+          "start": 66.696,
+          "end": 67.036
+        },
+        {
+          "text": "punti:",
+          "start": 67.096,
+          "end": 67.476
+        }
+      ]
+    },
+    {
+      "start": 67.916,
+      "end": 72.677,
+      "text": "il polinomio passa esattamente per ogni singolo campione con errore di training nullo,",
+      "words": [
+        {
+          "text": "il",
+          "start": 67.916,
+          "end": 67.996
+        },
+        {
+          "text": "polinomio",
+          "start": 68.036,
+          "end": 68.476
+        },
+        {
+          "text": "passa",
+          "start": 68.536,
+          "end": 68.796
+        },
+        {
+          "text": "esattamente",
+          "start": 68.976,
+          "end": 69.697
+        },
+        {
+          "text": "per",
+          "start": 69.737,
+          "end": 69.857
+        },
+        {
+          "text": "ogni",
+          "start": 69.877,
+          "end": 70.057
+        },
+        {
+          "text": "singolo",
+          "start": 70.177,
+          "end": 70.577
+        },
+        {
+          "text": "campione",
+          "start": 70.617,
+          "end": 71.057
+        },
+        {
+          "text": "con",
+          "start": 71.177,
+          "end": 71.317
+        },
+        {
+          "text": "errore",
+          "start": 71.377,
+          "end": 71.657
+        },
+        {
+          "text": "di",
+          "start": 71.697,
+          "end": 71.757
+        },
+        {
+          "text": "training",
+          "start": 71.817,
+          "end": 72.217
+        },
+        {
+          "text": "nullo,",
+          "start": 72.317,
+          "end": 72.677
+        }
+      ]
+    },
+    {
+      "start": 73.137,
+      "end": 76.217,
+      "text": "ma oscilla violentemente negli intervalli tra un punto e l'altro.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 73.137,
+          "end": 73.197
+        },
+        {
+          "text": "oscilla",
+          "start": 73.257,
+          "end": 73.557
+        },
+        {
+          "text": "violentemente",
+          "start": 73.637,
+          "end": 74.357
+        },
+        {
+          "text": "negli",
+          "start": 74.397,
+          "end": 74.577
+        },
+        {
+          "text": "intervalli",
+          "start": 74.617,
+          "end": 75.137
+        },
+        {
+          "text": "tra",
+          "start": 75.177,
+          "end": 75.277
+        },
+        {
+          "text": "un",
+          "start": 75.337,
+          "end": 75.37700000000001
+        },
+        {
+          "text": "punto",
+          "start": 75.417,
+          "end": 75.677
+        },
+        {
+          "text": "e",
+          "start": 75.717,
+          "end": 75.757
+        },
+        {
+          "text": "l'altro.",
+          "start": 75.797,
+          "end": 76.217
+        }
+      ]
+    },
+    {
+      "start": 76.657,
+      "end": 79.298,
+      "text": "Il modello è troppo complesso e impara il rumore:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 76.657,
+          "end": 76.737
+        },
+        {
+          "text": "modello",
+          "start": 76.757,
+          "end": 77.077
+        },
+        {
+          "text": "è",
+          "start": 77.118,
+          "end": 77.158
+        },
+        {
+          "text": "troppo",
+          "start": 77.238,
+          "end": 77.518
+        },
+        {
+          "text": "complesso",
+          "start": 77.578,
+          "end": 78.158
+        },
+        {
+          "text": "e",
+          "start": 78.298,
+          "end": 78.33800000000001
+        },
+        {
+          "text": "impara",
+          "start": 78.398,
+          "end": 78.718
+        },
+        {
+          "text": "il",
+          "start": 78.778,
+          "end": 78.838
+        },
+        {
+          "text": "rumore:",
+          "start": 78.918,
+          "end": 79.298
+        }
+      ]
+    },
+    {
+      "start": 79.798,
+      "end": 80.598,
+      "text": "è l'overfitting.",
+      "words": [
+        {
+          "text": "è",
+          "start": 79.798,
+          "end": 79.83800000000001
+        },
+        {
+          "text": "l'overfitting.",
+          "start": 79.898,
+          "end": 80.598
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "lesson_id": "03-bias-induttivo",
+  "chapter": 3,
+  "part": "Parte I · Fondamenti",
+  "title": "Spazio delle ipotesi e bias induttivo",
+  "source_tex": "note_migliorate/capitoli/03-bias-induttivo.tex",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "3.1 Un problema mal posto",
+      "title": "Problema inverso mal posto e definizione di bias induttivo",
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "tts_text": "Inferire una funzione generale a partire da un numero finito di esempi è un problema inverso mal posto: può violare esistenza, unicità o stabilità. Soprattutto la soluzione non è unica, e senza assunzioni gli esempi noti non dicono assolutamente nulla sui casi non ancora visti. [pause:0.8] Per questo ogni modello restringe il campo e si studia ponendosi due domande in ordine: primo, cosa si può rappresentare nello spazio delle ipotesi H? Perché una funzione fuori da H non potrà mai essere appresa. Secondo, cosa si può effettivamente apprendere? [pause:0.9] L'insieme delle assunzioni fatte sulla funzione target per poter generalizzare si chiama bias induttivo. Può assumere due forme, spesso combinate: il language bias, che vincola il modello limitando quali ipotesi H può esprimere; e il search bias, che vincola l'algoritmo di apprendimento tramite le preferenze della sua strategia di ricerca dentro H.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.1 · Un problema mal posto</div>\n  <h2 class=\"slide-title\">Perché servono assunzioni: il bias induttivo</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Problema inverso mal posto</div>\n    <p>Da dati finiti possono mancare <strong>esistenza</strong>, <strong>unicità</strong> o <strong>stabilità</strong>. Due domande per ogni modello: <strong>(1)</strong> cosa può <em>rappresentare</em> \\(H\\)? <strong>(2)</strong> cosa può <em>apprendere</em> l'algoritmo?</p>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Bias induttivo</div>\n    <p>L'insieme delle <strong>assunzioni sulla funzione target</strong> necessarie per generalizzare oltre gli esempi osservati.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Language bias</div>\n      <p>Vincoli sul <strong>modello</strong>: restringe quali ipotesi lo spazio \\(H\\) può esprimere.</p>\n    </div>\n    <div class=\"box box-idea\">\n      <div class=\"box-label\">Search bias</div>\n      <p>Preferenze dell'<strong>algoritmo</strong>: guida la strategia di ricerca all'interno di \\(H\\).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.78,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "problema inverso mal posto"
+        },
+        {
+          "at": 35.57,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "si chiama bias induttivo"
+        },
+        {
+          "at": 39.99,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "il language bias"
+        }
+      ],
+      "duration_sec": 51.83
+    },
+    {
+      "id": "scene-02",
+      "section": "3.2 Imparare una funzione booleana",
+      "title": "Spazio delle funzioni booleane e lookup table",
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "tts_text": "Vediamo il ruolo del bias in concreto imparando un concetto, cioè una funzione booleana d uguale f di x uno, x due, x tre, x quattro, dai sette esempi nella tabella a sinistra. [pause:0.7] Quante funzioni booleane possibili esistono su quattro variabili binarie? Le combinazioni di input distinte sono due alla quarta, cioè sedici. A ciascuna possiamo assegnare zero oppure uno, quindi le funzioni possibili sono due alla sedicesima: sessantacinquemila cinquecentotrentasei. [pause:0.8] Dopo aver osservato sette esempi, le nove istanze rimanenti possono avere qualsiasi output: restano ancora due alla nona, cioè cinquecentododici funzioni perfettamente compatibili con i dati. In generale, con n variabili binarie la cardinalità di H è doppiamente esponenziale: due elevato a due alla n. [pause:0.8] Un modello che usa l'intero spazio è una semplice lookup table, un rote learner: memorizza gli esempi visti e non sa rispondere su nessuna istanza nuova. Nessun bias induttivo significa nessuna generalizzazione.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.2 · Imparare un concetto booleano</div>\n  <h2 class=\"slide-title\">\\(2^{2^n}\\) funzioni possibili e la lookup table</h2>\n  <div class=\"split-visual\">\n    <table id=\"s1\" class=\"acad-table cue-hidden\" style=\"font-size:0.84rem;\">\n      <thead><tr><th>Es.</th><th>\\(x_1\\)</th><th>\\(x_2\\)</th><th>\\(x_3\\)</th><th>\\(x_4\\)</th><th>\\(d\\)</th></tr></thead>\n      <tbody>\n        <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>\n        <tr><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>\n        <tr><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td><strong>1</strong></td></tr>\n        <tr><td>4</td><td>1</td><td>0</td><td>0</td><td>1</td><td><strong>1</strong></td></tr>\n        <tr><td>5</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>\n        <tr><td>6</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>\n        <tr><td>7</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>\n      </tbody>\n    </table>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Cardinalità di tutte le funzioni booleane</div>\n        \\[\\htmlId{f-bool}{\\abs{H} = 2^{\\#\\text{istanze}} = 2^{2^n}}\\]\n        <p class=\"math-note\">Per \\(n=4\\): \\(2^4 = 16\\) istanze → \\(2^{16} = 65\\,536\\) funzioni. Dopo 7 esempi ne restano \\(2^9 = 512\\) compatibili.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Lookup table (rote learner)</div>\n        <p>Memorizza gli esempi e non risponde sui casi nuovi: <strong>nessun bias induttivo ⇒ nessuna generalizzazione</strong>.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 8.48,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "sette esempi nella tabella"
+        },
+        {
+          "at": 15.58,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "combinazioni di input distinte"
+        },
+        {
+          "at": 44.41,
+          "action": "highlight",
+          "target": "#f-bool",
+          "anchor": "due elevato a due alla n"
+        },
+        {
+          "at": 48.51,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "semplice lookup table"
+        }
+      ],
+      "duration_sec": 58.54
+    },
+    {
+      "id": "scene-03",
+      "section": "3.3 Restringere lo spazio: le regole congiuntive",
+      "title": "Language bias: regole congiuntive e Version Space",
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "tts_text": "Proviamo allora a introdurre un language bias, restringendo H alle sole regole congiuntive, cioè AND di letterali come x uno e x due, oppure non x uno e x due. [pause:0.7] Quante ipotesi semanticamente distinte contiene questo spazio ridotto? Esattamente tre alla n più uno. La dimostrazione è immediata: in una congiunzione ciascuna delle n variabili può apparire positiva, apparire negata, oppure non comparire affatto — tre scelte indipendenti, quindi tre alla n congiunzioni. Tutte le congiunzioni contraddittorie con x i e non x i valgono sempre falso, che conta come una sola ipotesi aggiuntiva: totale tre alla n più uno. Con n uguale a quattro si crolla da sessantacinquemila cinquecentotrentasei a sole ottantadue ipotesi. [pause:0.9] Definiamo un'ipotesi consistente se coincide con il target su tutti gli esempi del training set, e chiamiamo version space l'insieme di tutte le ipotesi di H consistenti con i dati. [pause:0.7] In questo spazio ridotto il version space si calcola facilmente, ma attenzione al prezzo del language bias: se la funzione target è una disgiunzione come x uno oppure x due, non sta in H e non può essere rappresentata.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.3 · Language bias su H discreto</div>\n  <h2 class=\"slide-title\">Regole congiuntive (\\(3^n + 1\\)) e Version Space</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Proprietà — Numero di regole congiuntive</div>\n    <p>Con \\(n\\) variabili binarie le congiunzioni semanticamente distinte sono \\(\\htmlId{f-3n}{3^n + 1}\\):</p>\n    <p class=\"math-note\">Ogni variabile ha 3 scelte (\\(x_i\\), \\(\\neg x_i\\), assente) \\(\\Rightarrow 3^n\\); più 1 sola ipotesi \\(\\mathit{false}\\) (tutte le contraddizioni). Per \\(n=4\\): da \\(65\\,536\\) a <strong>82</strong> ipotesi.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Definizione — Consistenza &amp; Version Space</div>\n      <p>\\(h\\) è <strong>consistente</strong> se \\(h(\\x) = d(\\x)\\) per ogni esempio in \\(TR\\). Il <strong>version space</strong> \\(VS_{H,TR}\\) è il sottoinsieme di \\(H\\) delle ipotesi consistenti con tutti i dati.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Rischio del language bias troppo forte</div>\n      <p>Se il concetto target non è una congiunzione (es. \\(x_1 \\vee x_2\\)), sta <strong>fuori da \\(H\\)</strong> e non può mai essere rappresentato né appreso.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 17.22,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Esattamente tre alla n più uno"
+        },
+        {
+          "at": 18.02,
+          "action": "highlight",
+          "target": "#f-3n",
+          "anchor": "tre alla n più uno"
+        },
+        {
+          "at": 52.13,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "ipotesi consistente"
+        },
+        {
+          "at": 68.4,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "prezzo del language bias"
+        }
+      ],
+      "duration_sec": 77.73
+    },
+    {
+      "id": "scene-04",
+      "section": "3.4 L'unbiased learner",
+      "title": "Teorema: un learner senza bias non può generalizzare",
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "tts_text": "Per non escludere mai il target, potremmo provare l'estremo opposto: un unbiased learner il cui spazio H contiene ogni funzione possibile, cioè l'insieme delle parti di X. Già con dieci variabili binarie sono due alla milleventiquattro, circa dieci alla trecentotto ipotesi. Ma riesce a generalizzare? [pause:0.7] No. Dimostriamo il teorema fondamentale: con un unbiased learner le uniche istanze classificate in modo non ambiguo dal version space sono gli esempi di training stessi. [pause:0.7] Prendiamo una qualunque istanza x con i non presente nel training set e una qualsiasi ipotesi h nel version space. Costruiamo la funzione h primo identica ad h ovunque, tranne proprio su x con i, dove inverte l'output. [pause:0.6] Poiché H contiene tutte le funzioni possibili, anche h primo appartiene ad H. E poiché x con i non è nel training set, h e h primo coincidono su tutti gli esempi di training: quindi anche h primo sta nel version space. [pause:0.6] Questa corrispondenza accoppia ogni ipotesi che risponde uno su x con i con una gemella che risponde zero: esattamente metà vota uno e metà vota zero. [pause:0.8] Nell'esempio a una variabile, dato zero va in zero, nel version space restano h uguale x e h uguale zero, che su x uguale uno sono in perfetto disaccordo. Il bias induttivo non è un dettaglio di efficienza: è matematicamente necessario per generalizzare.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.4 · Teorema dell'unbiased learner</div>\n  <h2 class=\"slide-title\">Un learner senza bias non può generalizzare</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Futilità dell'apprendimento senza bias (\\(H = \\mathcal{P}(X)\\))</div>\n    <p>Le uniche istanze classificate in modo non ambiguo dal version space sono gli <strong>esempi di training stessi</strong> (lookup table).</p>\n  </div>\n  <div class=\"proof-steps\">\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Passi 1–2 · Funzione gemella \\(h'\\)</span>\n      <div>Data \\(x_i \\notin TR\\) e \\(h \\in VS\\), definiamo \\(\\htmlId{f-hp}{h'}\\) identica ad \\(h\\) ovunque tranne \\(h'(x_i) \\neq h(x_i)\\). Poiché \\(H = \\mathcal{P}(X)\\), \\(h' \\in H\\).</div>\n    </div>\n    <div id=\"s3\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Passi 3–4 · Accoppiamento 50% / 50%</span>\n      <div>\\(h\\) e \\(h'\\) coincidono su tutto \\(TR \\implies \\htmlId{f-vs}{h' \\in VS}\\). Ogni \\(h\\) che vota \\(1\\) su \\(x_i\\) si accoppia con \\(h'\\) che vota \\(0\\): pareggio esatto \\(\\blacksquare\\)</div>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Esempio (\\(n=1\\))</div>\n    <p>\\(H = \\{x, \\neg x, 0, 1\\}\\), \\(TR = \\{0 \\mapsto 0\\} \\implies VS = \\{x, 0\\}\\). Sul test \\(x=1\\): \\(x \\mapsto 1\\) e \\(0 \\mapsto 0\\), impossibile decidere!</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 21.76,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Dimostriamo il teorema fondamentale"
+        },
+        {
+          "at": 41.37,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Costruiamo la funzione h primo"
+        },
+        {
+          "at": 41.98,
+          "action": "highlight",
+          "target": "#f-hp",
+          "anchor": "funzione h primo identica"
+        },
+        {
+          "at": 62.45,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "anche h primo sta nel version space"
+        },
+        {
+          "at": 63.19,
+          "action": "highlight",
+          "target": "#f-vs",
+          "anchor": "sta nel version space"
+        },
+        {
+          "at": 76.55,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "esempio a una variabile"
+        }
+      ],
+      "duration_sec": 94.95
+    },
+    {
+      "id": "scene-05",
+      "section": "3.5 – 3.6 Equivalenza deduttiva e ML moderno",
+      "title": "Sistemi induttivi, sistemi deduttivi e preferenza per il search bias",
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "tts_text": "Esiste una caratterizzazione molto elegante del bias induttivo: ogni sistema induttivo che apprende usando lo spazio H è equivalente a un sistema deduttivo, cioè a un dimostratore di teoremi. [pause:0.7] Guarda lo schema: in alto il sistema induttivo riceve esempi di training e nuova istanza e produce una classificazione. In basso il dimostratore di teoremi riceve gli stessi esempi e la stessa istanza, più il bias induttivo come assioma esplicito aggiuntivo, e produce la medesima uscita. Il bias induttivo è quindi esattamente l'insieme di assunzioni che rende logicamente deducibile la risposta del learner. [pause:0.9] Come ci si comporta nel Machine Learning moderno: language bias o search bias? In genere si preferisce il search bias: si scelgono modelli molto espressivi e approssimatori universali — come reti neurali o alberi di decisione — per non escludere a priori la funzione target da H, affidando il bias induttivo a una ricerca incompleta che privilegia certe soluzioni più semplici o regolari rispetto ad altre.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.5 – 3.6 · Equivalenza deduttiva e ML moderno</div>\n  <h2 class=\"slide-title\">Sistema induttivo ≈ deduttivo + bias; preferenza per il search bias</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 650 156\" class=\"diagram-svg\" aria-label=\"Equivalenza sistema induttivo e deduttivo\">\n      <defs>\n        <marker id=\"arr-id\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n      </defs>\n      <!-- Induttivo -->\n      <text x=\"155\" y=\"24\" text-anchor=\"end\" class=\"svg-tick\">esempi di training</text>\n      <text x=\"155\" y=\"48\" text-anchor=\"end\" class=\"svg-tick\">nuova istanza</text>\n      <line x1=\"164\" y1=\"20\" x2=\"218\" y2=\"20\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <line x1=\"164\" y1=\"44\" x2=\"218\" y2=\"44\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <rect x=\"222\" y=\"8\" width=\"215\" height=\"48\" rx=\"4\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <text x=\"330\" y=\"28\" text-anchor=\"middle\" class=\"svg-math-sm\">Sistema induttivo</text>\n      <text x=\"330\" y=\"45\" text-anchor=\"middle\" class=\"svg-caption\">algoritmo su spazio H</text>\n      <line x1=\"437\" y1=\"32\" x2=\"495\" y2=\"32\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <text x=\"504\" y=\"36\" class=\"svg-tick\">classificazione / «non so»</text>\n      <!-- Deduttivo -->\n      <text x=\"155\" y=\"96\" text-anchor=\"end\" class=\"svg-tick\">esempi di training</text>\n      <text x=\"155\" y=\"118\" text-anchor=\"end\" class=\"svg-tick\">nuova istanza</text>\n      <text x=\"155\" y=\"140\" text-anchor=\"end\" class=\"svg-tick svg-blue\" font-weight=\"700\">+ bias induttivo</text>\n      <line x1=\"164\" y1=\"92\" x2=\"218\" y2=\"92\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <line x1=\"164\" y1=\"114\" x2=\"218\" y2=\"114\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <line x1=\"164\" y1=\"136\" x2=\"218\" y2=\"136\" stroke=\"#1F5A9E\" stroke-width=\"1.8\" marker-end=\"url(#arr-id)\"/>\n      <rect x=\"222\" y=\"82\" width=\"215\" height=\"64\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/>\n      <text x=\"330\" y=\"110\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">Sistema deduttivo</text>\n      <text x=\"330\" y=\"128\" text-anchor=\"middle\" class=\"svg-caption\">dimostratore di teoremi</text>\n      <line x1=\"437\" y1=\"114\" x2=\"495\" y2=\"114\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <text x=\"504\" y=\"118\" class=\"svg-tick\">stessa classificazione</text>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Nel ML moderno: preferenza per il search bias</div>\n    <p>Spazi \\(H\\) <strong>molto espressivi</strong> (reti neurali, alberi: approssimazione universale, senza escludere \\(f\\) a priori) + <strong>ricerca incompleta</strong> che privilegia le ipotesi migliori.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 13.36,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Guarda lo schema"
+        },
+        {
+          "at": 46.87,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "In genere si preferisce il search bias"
+        }
+      ],
+      "duration_sec": 66.62
+    },
+    {
+      "id": "scene-06",
+      "section": "Sintesi e verifica",
+      "title": "Punti chiave e domande di verifica (Bias induttivo)",
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "tts_text": "Fissiamo i quattro punti chiave di questo capitolo. [pause:0.6] Primo: su n input binari esistono due alla due alla n funzioni booleane e solo tre alla n più uno regole congiuntive. [pause:0.6] Secondo: il version space raccoglie tutte le ipotesi di H consistenti con gli esempi di training. [pause:0.6] Terzo: un unbiased learner non classifica nessuna istanza nuova e degenera in una lookup table — il bias induttivo è indispensabile per generalizzare. [pause:0.6] Quarto: ogni approccio di Machine Learning ha un bias induttivo; il ML moderno preferisce spazi H espressivi e search bias. Nel prossimo capitolo passeremo ai primi modelli con spazio continuo: i modelli lineari.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">Capitolo 3 · Chiusura</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\">Funzioni booleane: \\(2^{2^n}\\); regole congiuntive: \\(3^n + 1\\).</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Version space</strong>: ipotesi di \\(H\\) consistenti con tutti i dati.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Unbiased learner</strong> = lookup table: senza bias nessuna generalizzazione.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Language bias</strong> vs <strong>search bias</strong>: il ML moderno preferisce \\(H\\) espressivi + search bias.</li>\n      </ul>\n    </div>\n    <div id=\"s5\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Cos'è il bias induttivo? Differenza tra language bias e search bias.</li>\n        <li>Dimostrare che un unbiased learner non può generalizzare.</li>\n        <li>Quante ipotesi con \\(n\\) input binari senza vincoli? E con regole congiuntive?</li>\n        <li>Che cos'è il version space?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.94,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: su n input binari"
+        },
+        {
+          "at": 12.39,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: il version space"
+        },
+        {
+          "at": 19.53,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: un unbiased learner"
+        },
+        {
+          "at": 30.65,
+          "action": "show",
+          "target": "#s4, #s5",
+          "anchor": "Quarto: ogni approccio"
+        }
+      ],
+      "duration_sec": 46.11
+    }
+  ]
+}

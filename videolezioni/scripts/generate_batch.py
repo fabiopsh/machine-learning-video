@@ -152,8 +152,8 @@ def call_gemini_batch_wav(
             f"STOP BUDGET RUN: spesi {run_spent_eur[0]:.3f}€, limite --max-run-eur={max_run_eur:.2f}€."
         )
 
-    # Cap stretto ma sicuro: ~2.1 parole/sec * 1.32 margine + 150 tok (evita runaway lunghi)
-    max_output_tokens = int((words / 2.05) * AUDIO_TOKENS_PER_SEC * 1.32) + 180
+    # Cap stretto ma sicuro: ~2.1 parole/sec * 1.30 margine + 150 tok, mai oltre 8192
+    max_output_tokens = min(8192, int((words / 2.10) * AUDIO_TOKENS_PER_SEC * 1.30) + 150)
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     payload = {
         "contents": [{"role": "user", "parts": [{"text": batch_text}]}],

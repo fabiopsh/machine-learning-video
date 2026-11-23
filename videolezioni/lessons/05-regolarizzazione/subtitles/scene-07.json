@@ -1,0 +1,1156 @@
+{
+  "duration": 78.475,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.74,
+      "text": "Come governa il compromesso il parametro lambda?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.08,
+          "end": 0.3
+        },
+        {
+          "text": "governa",
+          "start": 0.38,
+          "end": 0.8
+        },
+        {
+          "text": "il",
+          "start": 0.84,
+          "end": 0.9
+        },
+        {
+          "text": "compromesso",
+          "start": 0.94,
+          "end": 1.58
+        },
+        {
+          "text": "il",
+          "start": 1.72,
+          "end": 1.8
+        },
+        {
+          "text": "parametro",
+          "start": 1.86,
+          "end": 2.32
+        },
+        {
+          "text": "lambda?",
+          "start": 2.38,
+          "end": 2.74
+        }
+      ]
+    },
+    {
+      "start": 3.42,
+      "end": 8.561,
+      "text": "Con lambda piccolo domina il termine d'errore e il modello resta complesso con pesi grandi",
+      "words": [
+        {
+          "text": "Con",
+          "start": 3.42,
+          "end": 3.56
+        },
+        {
+          "text": "lambda",
+          "start": 3.62,
+          "end": 3.88
+        },
+        {
+          "text": "piccolo",
+          "start": 3.94,
+          "end": 4.32
+        },
+        {
+          "text": "domina",
+          "start": 4.601,
+          "end": 4.961
+        },
+        {
+          "text": "il",
+          "start": 5.041,
+          "end": 5.101
+        },
+        {
+          "text": "termine",
+          "start": 5.161,
+          "end": 5.541
+        },
+        {
+          "text": "d'errore",
+          "start": 5.601,
+          "end": 6.081
+        },
+        {
+          "text": "e",
+          "start": 6.241,
+          "end": 6.281
+        },
+        {
+          "text": "il",
+          "start": 6.341,
+          "end": 6.421
+        },
+        {
+          "text": "modello",
+          "start": 6.461,
+          "end": 6.801
+        },
+        {
+          "text": "resta",
+          "start": 6.841,
+          "end": 7.061
+        },
+        {
+          "text": "complesso",
+          "start": 7.121,
+          "end": 7.701
+        },
+        {
+          "text": "con",
+          "start": 7.781,
+          "end": 7.881
+        },
+        {
+          "text": "pesi",
+          "start": 7.921,
+          "end": 8.121
+        },
+        {
+          "text": "grandi",
+          "start": 8.181,
+          "end": 8.561
+        }
+      ]
+    },
+    {
+      "start": 8.721,
+      "end": 9.981,
+      "text": "e rischio di overfitting;",
+      "words": [
+        {
+          "text": "e",
+          "start": 8.721,
+          "end": 8.761
+        },
+        {
+          "text": "rischio",
+          "start": 8.821,
+          "end": 9.121
+        },
+        {
+          "text": "di",
+          "start": 9.181,
+          "end": 9.221
+        },
+        {
+          "text": "overfitting;",
+          "start": 9.261,
+          "end": 9.981
+        }
+      ]
+    },
+    {
+      "start": 10.761,
+      "end": 14.842,
+      "text": "con lambda grande domina la penalità, schiacciando i pesi verso l'underfitting.",
+      "words": [
+        {
+          "text": "con",
+          "start": 10.761,
+          "end": 10.901
+        },
+        {
+          "text": "lambda",
+          "start": 10.941,
+          "end": 11.181
+        },
+        {
+          "text": "grande",
+          "start": 11.241,
+          "end": 11.581
+        },
+        {
+          "text": "domina",
+          "start": 11.701,
+          "end": 12.001
+        },
+        {
+          "text": "la",
+          "start": 12.061,
+          "end": 12.121
+        },
+        {
+          "text": "penalità,",
+          "start": 12.161,
+          "end": 12.581
+        },
+        {
+          "text": "schiacciando",
+          "start": 12.721,
+          "end": 13.221
+        },
+        {
+          "text": "i",
+          "start": 13.261,
+          "end": 13.301
+        },
+        {
+          "text": "pesi",
+          "start": 13.321,
+          "end": 13.561
+        },
+        {
+          "text": "verso",
+          "start": 13.601,
+          "end": 13.881
+        },
+        {
+          "text": "l'underfitting.",
+          "start": 14.081,
+          "end": 14.842
+        }
+      ]
+    },
+    {
+      "start": 16.142,
+      "end": 19.222,
+      "text": "La stessa penalità si applica tale e quale alle reti neurali:",
+      "words": [
+        {
+          "text": "La",
+          "start": 16.142,
+          "end": 16.222
+        },
+        {
+          "text": "stessa",
+          "start": 16.262,
+          "end": 16.522
+        },
+        {
+          "text": "penalità",
+          "start": 16.562,
+          "end": 16.962
+        },
+        {
+          "text": "si",
+          "start": 17.062,
+          "end": 17.122
+        },
+        {
+          "text": "applica",
+          "start": 17.182,
+          "end": 17.482
+        },
+        {
+          "text": "tale",
+          "start": 17.642,
+          "end": 17.862
+        },
+        {
+          "text": "e",
+          "start": 17.882,
+          "end": 17.922
+        },
+        {
+          "text": "quale",
+          "start": 17.922,
+          "end": 18.222
+        },
+        {
+          "text": "alle",
+          "start": 18.302,
+          "end": 18.482
+        },
+        {
+          "text": "reti",
+          "start": 18.542,
+          "end": 18.742
+        },
+        {
+          "text": "neurali:",
+          "start": 18.782,
+          "end": 19.222
+        }
+      ]
+    },
+    {
+      "start": 19.782,
+      "end": 23.262,
+      "text": "spingere i pesi verso valori piccoli riduce la VC-dimension,",
+      "words": [
+        {
+          "text": "spingere",
+          "start": 19.782,
+          "end": 20.162
+        },
+        {
+          "text": "i",
+          "start": 20.202,
+          "end": 20.242
+        },
+        {
+          "text": "pesi",
+          "start": 20.242,
+          "end": 20.522
+        },
+        {
+          "text": "verso",
+          "start": 20.582,
+          "end": 20.822
+        },
+        {
+          "text": "valori",
+          "start": 20.862,
+          "end": 21.122
+        },
+        {
+          "text": "piccoli",
+          "start": 21.162,
+          "end": 21.502
+        },
+        {
+          "text": "riduce",
+          "start": 21.722,
+          "end": 22.122
+        },
+        {
+          "text": "la",
+          "start": 22.242,
+          "end": 22.322
+        },
+        {
+          "text": "VC-dimension,",
+          "start": 22.382,
+          "end": 23.262
+        }
+      ]
+    },
+    {
+      "start": 23.602,
+      "end": 25.823,
+      "text": "controllando la complessità con un solo parametro.",
+      "words": [
+        {
+          "text": "controllando",
+          "start": 23.602,
+          "end": 24.123
+        },
+        {
+          "text": "la",
+          "start": 24.163,
+          "end": 24.223
+        },
+        {
+          "text": "complessità",
+          "start": 24.283,
+          "end": 24.803
+        },
+        {
+          "text": "con",
+          "start": 24.923,
+          "end": 25.043
+        },
+        {
+          "text": "un",
+          "start": 25.083,
+          "end": 25.143
+        },
+        {
+          "text": "solo",
+          "start": 25.183,
+          "end": 25.363
+        },
+        {
+          "text": "parametro.",
+          "start": 25.383,
+          "end": 25.823
+        }
+      ]
+    },
+    {
+      "start": 26.683,
+      "end": 29.963,
+      "text": "Vediamo l'effetto sul polinomio di grado nove sui nostri dieci punti.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 26.683,
+          "end": 26.983
+        },
+        {
+          "text": "l'effetto",
+          "start": 27.023,
+          "end": 27.403
+        },
+        {
+          "text": "sul",
+          "start": 27.443,
+          "end": 27.603
+        },
+        {
+          "text": "polinomio",
+          "start": 27.643,
+          "end": 28.103
+        },
+        {
+          "text": "di",
+          "start": 28.143,
+          "end": 28.183
+        },
+        {
+          "text": "grado",
+          "start": 28.223,
+          "end": 28.443
+        },
+        {
+          "text": "nove",
+          "start": 28.503,
+          "end": 28.703
+        },
+        {
+          "text": "sui",
+          "start": 28.803,
+          "end": 28.943
+        },
+        {
+          "text": "nostri",
+          "start": 29.003,
+          "end": 29.283
+        },
+        {
+          "text": "dieci",
+          "start": 29.323,
+          "end": 29.563
+        },
+        {
+          "text": "punti.",
+          "start": 29.623,
+          "end": 29.963
+        }
+      ]
+    },
+    {
+      "start": 30.583,
+      "end": 34.664,
+      "text": "Con logaritmo di lambda uguale a meno diciotto — cioè circa uno virgola cinque per",
+      "words": [
+        {
+          "text": "Con",
+          "start": 30.583,
+          "end": 30.743
+        },
+        {
+          "text": "logaritmo",
+          "start": 30.903,
+          "end": 31.383
+        },
+        {
+          "text": "di",
+          "start": 31.443,
+          "end": 31.503
+        },
+        {
+          "text": "lambda",
+          "start": 31.543,
+          "end": 31.883
+        },
+        {
+          "text": "uguale",
+          "start": 31.923,
+          "end": 32.123
+        },
+        {
+          "text": "a",
+          "start": 32.143,
+          "end": 32.183
+        },
+        {
+          "text": "meno",
+          "start": 32.203,
+          "end": 32.343
+        },
+        {
+          "text": "diciotto",
+          "start": 32.383,
+          "end": 32.823
+        },
+        {
+          "text": "—",
+          "start": 32.823,
+          "end": 32.973
+        },
+        {
+          "text": "cioè",
+          "start": 32.963,
+          "end": 33.103
+        },
+        {
+          "text": "circa",
+          "start": 33.303,
+          "end": 33.604
+        },
+        {
+          "text": "uno",
+          "start": 33.744,
+          "end": 33.884
+        },
+        {
+          "text": "virgola",
+          "start": 33.924,
+          "end": 34.204
+        },
+        {
+          "text": "cinque",
+          "start": 34.264,
+          "end": 34.544
+        },
+        {
+          "text": "per",
+          "start": 34.564,
+          "end": 34.664
+        }
+      ]
+    },
+    {
+      "start": 34.724,
+      "end": 39.004,
+      "text": "dieci alla meno otto — la curva rossa è liscia e segue bene la sinusoide:",
+      "words": [
+        {
+          "text": "dieci",
+          "start": 34.724,
+          "end": 34.944
+        },
+        {
+          "text": "alla",
+          "start": 34.984,
+          "end": 35.084
+        },
+        {
+          "text": "meno",
+          "start": 35.104,
+          "end": 35.244
+        },
+        {
+          "text": "otto",
+          "start": 35.344,
+          "end": 35.604
+        },
+        {
+          "text": "—",
+          "start": 35.604,
+          "end": 35.754
+        },
+        {
+          "text": "la",
+          "start": 36.164,
+          "end": 36.224
+        },
+        {
+          "text": "curva",
+          "start": 36.264,
+          "end": 36.524
+        },
+        {
+          "text": "rossa",
+          "start": 36.584,
+          "end": 36.904
+        },
+        {
+          "text": "è",
+          "start": 37.064,
+          "end": 37.104
+        },
+        {
+          "text": "liscia",
+          "start": 37.204,
+          "end": 37.544
+        },
+        {
+          "text": "e",
+          "start": 37.704,
+          "end": 37.744
+        },
+        {
+          "text": "segue",
+          "start": 37.824,
+          "end": 38.064
+        },
+        {
+          "text": "bene",
+          "start": 38.104,
+          "end": 38.284
+        },
+        {
+          "text": "la",
+          "start": 38.324,
+          "end": 38.384
+        },
+        {
+          "text": "sinusoide:",
+          "start": 38.424,
+          "end": 39.004
+        }
+      ]
+    },
+    {
+      "start": 39.544,
+      "end": 43.345,
+      "text": "peggiore sul training rispetto a lambda zero, ma molto migliore sul test.",
+      "words": [
+        {
+          "text": "peggiore",
+          "start": 39.544,
+          "end": 39.884
+        },
+        {
+          "text": "sul",
+          "start": 39.944,
+          "end": 40.064
+        },
+        {
+          "text": "training",
+          "start": 40.104,
+          "end": 40.424
+        },
+        {
+          "text": "rispetto",
+          "start": 40.484,
+          "end": 40.804
+        },
+        {
+          "text": "a",
+          "start": 40.824,
+          "end": 40.864
+        },
+        {
+          "text": "lambda",
+          "start": 40.904,
+          "end": 41.204
+        },
+        {
+          "text": "zero,",
+          "start": 41.564,
+          "end": 41.804
+        },
+        {
+          "text": "ma",
+          "start": 41.964,
+          "end": 42.044
+        },
+        {
+          "text": "molto",
+          "start": 42.184,
+          "end": 42.504
+        },
+        {
+          "text": "migliore",
+          "start": 42.544,
+          "end": 42.844
+        },
+        {
+          "text": "sul",
+          "start": 42.884,
+          "end": 43.025
+        },
+        {
+          "text": "test.",
+          "start": 43.065,
+          "end": 43.345
+        }
+      ]
+    },
+    {
+      "start": 44.245,
+      "end": 47.245,
+      "text": "Con logaritmo di lambda uguale a zero, cioè lambda uguale a uno,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 44.245,
+          "end": 44.385
+        },
+        {
+          "text": "logaritmo",
+          "start": 44.525,
+          "end": 45.045
+        },
+        {
+          "text": "di",
+          "start": 45.085,
+          "end": 45.145
+        },
+        {
+          "text": "lambda",
+          "start": 45.185,
+          "end": 45.465
+        },
+        {
+          "text": "uguale",
+          "start": 45.505,
+          "end": 45.685
+        },
+        {
+          "text": "a",
+          "start": 45.685,
+          "end": 45.725
+        },
+        {
+          "text": "zero,",
+          "start": 45.805,
+          "end": 46.065
+        },
+        {
+          "text": "cioè",
+          "start": 46.125,
+          "end": 46.265
+        },
+        {
+          "text": "lambda",
+          "start": 46.325,
+          "end": 46.645
+        },
+        {
+          "text": "uguale",
+          "start": 46.745,
+          "end": 46.965
+        },
+        {
+          "text": "a",
+          "start": 46.985,
+          "end": 47.025
+        },
+        {
+          "text": "uno,",
+          "start": 47.085,
+          "end": 47.245
+        }
+      ]
+    },
+    {
+      "start": 47.945,
+      "end": 50.045,
+      "text": "la curva si appiattisce in underfitting.",
+      "words": [
+        {
+          "text": "la",
+          "start": 47.945,
+          "end": 48.005
+        },
+        {
+          "text": "curva",
+          "start": 48.085,
+          "end": 48.405
+        },
+        {
+          "text": "si",
+          "start": 48.525,
+          "end": 48.565
+        },
+        {
+          "text": "appiattisce",
+          "start": 48.605,
+          "end": 49.125
+        },
+        {
+          "text": "in",
+          "start": 49.225,
+          "end": 49.325
+        },
+        {
+          "text": "underfitting.",
+          "start": 49.365,
+          "end": 50.045
+        }
+      ]
+    },
+    {
+      "start": 51.185,
+      "end": 56.706,
+      "text": "Il grafico E RMS in basso mostra tutto il profilo continuo al variare di logaritmo",
+      "words": [
+        {
+          "text": "Il",
+          "start": 51.185,
+          "end": 51.265
+        },
+        {
+          "text": "grafico",
+          "start": 51.305,
+          "end": 51.705
+        },
+        {
+          "text": "E",
+          "start": 51.925,
+          "end": 51.965
+        },
+        {
+          "text": "RMS",
+          "start": 52.285,
+          "end": 52.886
+        },
+        {
+          "text": "in",
+          "start": 53.046,
+          "end": 53.106
+        },
+        {
+          "text": "basso",
+          "start": 53.146,
+          "end": 53.526
+        },
+        {
+          "text": "mostra",
+          "start": 53.746,
+          "end": 54.046
+        },
+        {
+          "text": "tutto",
+          "start": 54.166,
+          "end": 54.426
+        },
+        {
+          "text": "il",
+          "start": 54.446,
+          "end": 54.486
+        },
+        {
+          "text": "profilo",
+          "start": 54.526,
+          "end": 54.846
+        },
+        {
+          "text": "continuo",
+          "start": 54.886,
+          "end": 55.306
+        },
+        {
+          "text": "al",
+          "start": 55.626,
+          "end": 55.726
+        },
+        {
+          "text": "variare",
+          "start": 55.766,
+          "end": 56.106
+        },
+        {
+          "text": "di",
+          "start": 56.166,
+          "end": 56.206
+        },
+        {
+          "text": "logaritmo",
+          "start": 56.246,
+          "end": 56.706
+        }
+      ]
+    },
+    {
+      "start": 56.766,
+      "end": 61.726,
+      "text": "di lambda: overfitting a sinistra, underfitting a destra, buon compromesso al centro.",
+      "words": [
+        {
+          "text": "di",
+          "start": 56.766,
+          "end": 56.826
+        },
+        {
+          "text": "lambda:",
+          "start": 56.866,
+          "end": 57.186
+        },
+        {
+          "text": "overfitting",
+          "start": 57.826,
+          "end": 58.486
+        },
+        {
+          "text": "a",
+          "start": 58.526,
+          "end": 58.566
+        },
+        {
+          "text": "sinistra,",
+          "start": 58.586,
+          "end": 58.986
+        },
+        {
+          "text": "underfitting",
+          "start": 59.226,
+          "end": 59.846
+        },
+        {
+          "text": "a",
+          "start": 59.886,
+          "end": 59.926
+        },
+        {
+          "text": "destra,",
+          "start": 59.966,
+          "end": 60.286
+        },
+        {
+          "text": "buon",
+          "start": 60.546,
+          "end": 60.706
+        },
+        {
+          "text": "compromesso",
+          "start": 60.766,
+          "end": 61.246
+        },
+        {
+          "text": "al",
+          "start": 61.286,
+          "end": 61.366
+        },
+        {
+          "text": "centro.",
+          "start": 61.386,
+          "end": 61.726
+        }
+      ]
+    },
+    {
+      "start": 62.487,
+      "end": 66.787,
+      "text": "E guarda la tabella dei coefficienti a destra: rispetto ai pesi milionari del caso senza",
+      "words": [
+        {
+          "text": "E",
+          "start": 62.487,
+          "end": 62.527
+        },
+        {
+          "text": "guarda",
+          "start": 62.567,
+          "end": 62.807
+        },
+        {
+          "text": "la",
+          "start": 62.867,
+          "end": 62.907
+        },
+        {
+          "text": "tabella",
+          "start": 62.927,
+          "end": 63.207
+        },
+        {
+          "text": "dei",
+          "start": 63.247,
+          "end": 63.347
+        },
+        {
+          "text": "coefficienti",
+          "start": 63.387,
+          "end": 63.907
+        },
+        {
+          "text": "a",
+          "start": 63.947,
+          "end": 63.987
+        },
+        {
+          "text": "destra:",
+          "start": 64.027,
+          "end": 64.387
+        },
+        {
+          "text": "rispetto",
+          "start": 64.767,
+          "end": 65.087
+        },
+        {
+          "text": "ai",
+          "start": 65.127,
+          "end": 65.207
+        },
+        {
+          "text": "pesi",
+          "start": 65.227,
+          "end": 65.447
+        },
+        {
+          "text": "milionari",
+          "start": 65.487,
+          "end": 66.027
+        },
+        {
+          "text": "del",
+          "start": 66.067,
+          "end": 66.207
+        },
+        {
+          "text": "caso",
+          "start": 66.247,
+          "end": 66.487
+        },
+        {
+          "text": "senza",
+          "start": 66.547,
+          "end": 66.787
+        }
+      ]
+    },
+    {
+      "start": 66.847,
+      "end": 72.56800000000001,
+      "text": "regolarizzazione, con logaritmo di lambda uguale a meno diciotto i coefficienti restano domati sotto i",
+      "words": [
+        {
+          "text": "regolarizzazione,",
+          "start": 66.847,
+          "end": 67.727
+        },
+        {
+          "text": "con",
+          "start": 68.207,
+          "end": 68.307
+        },
+        {
+          "text": "logaritmo",
+          "start": 68.327,
+          "end": 68.787
+        },
+        {
+          "text": "di",
+          "start": 68.827,
+          "end": 68.887
+        },
+        {
+          "text": "lambda",
+          "start": 68.947,
+          "end": 69.227
+        },
+        {
+          "text": "uguale",
+          "start": 69.267,
+          "end": 69.487
+        },
+        {
+          "text": "a",
+          "start": 69.607,
+          "end": 69.647
+        },
+        {
+          "text": "meno",
+          "start": 69.747,
+          "end": 69.967
+        },
+        {
+          "text": "diciotto",
+          "start": 70.007,
+          "end": 70.487
+        },
+        {
+          "text": "i",
+          "start": 70.627,
+          "end": 70.667
+        },
+        {
+          "text": "coefficienti",
+          "start": 70.707,
+          "end": 71.227
+        },
+        {
+          "text": "restano",
+          "start": 71.287,
+          "end": 71.607
+        },
+        {
+          "text": "domati",
+          "start": 71.667,
+          "end": 72.068
+        },
+        {
+          "text": "sotto",
+          "start": 72.248,
+          "end": 72.508
+        },
+        {
+          "text": "i",
+          "start": 72.528,
+          "end": 72.56800000000001
+        }
+      ]
+    },
+    {
+      "start": 72.588,
+      "end": 77.968,
+      "text": "duecentosessantadue, e con lambda uguale a uno scendono tutti sotto zero virgola quarantacinque.",
+      "words": [
+        {
+          "text": "duecentosessantadue,",
+          "start": 72.588,
+          "end": 73.628
+        },
+        {
+          "text": "e",
+          "start": 74.248,
+          "end": 74.28800000000001
+        },
+        {
+          "text": "con",
+          "start": 74.348,
+          "end": 74.448
+        },
+        {
+          "text": "lambda",
+          "start": 74.508,
+          "end": 74.808
+        },
+        {
+          "text": "uguale",
+          "start": 74.848,
+          "end": 75.048
+        },
+        {
+          "text": "a",
+          "start": 75.088,
+          "end": 75.128
+        },
+        {
+          "text": "uno",
+          "start": 75.168,
+          "end": 75.308
+        },
+        {
+          "text": "scendono",
+          "start": 75.468,
+          "end": 75.848
+        },
+        {
+          "text": "tutti",
+          "start": 75.948,
+          "end": 76.288
+        },
+        {
+          "text": "sotto",
+          "start": 76.428,
+          "end": 76.668
+        },
+        {
+          "text": "zero",
+          "start": 76.768,
+          "end": 76.928
+        },
+        {
+          "text": "virgola",
+          "start": 76.968,
+          "end": 77.248
+        },
+        {
+          "text": "quarantacinque.",
+          "start": 77.268,
+          "end": 77.968
+        }
+      ]
+    }
+  ]
+}

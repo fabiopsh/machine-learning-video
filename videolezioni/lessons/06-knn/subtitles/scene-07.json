@@ -1,0 +1,1090 @@
+{
+  "duration": 76.61,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.341,
+      "text": "Chiudiamo con le scelte di progetto del K-NN e il ponte verso la seconda metà",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.08,
+          "end": 0.52
+        },
+        {
+          "text": "con",
+          "start": 0.58,
+          "end": 0.68
+        },
+        {
+          "text": "le",
+          "start": 0.72,
+          "end": 0.78
+        },
+        {
+          "text": "scelte",
+          "start": 0.8,
+          "end": 1.08
+        },
+        {
+          "text": "di",
+          "start": 1.12,
+          "end": 1.18
+        },
+        {
+          "text": "progetto",
+          "start": 1.22,
+          "end": 1.62
+        },
+        {
+          "text": "del",
+          "start": 1.64,
+          "end": 1.76
+        },
+        {
+          "text": "K-NN",
+          "start": 1.8,
+          "end": 2.501
+        },
+        {
+          "text": "e",
+          "start": 2.701,
+          "end": 2.741
+        },
+        {
+          "text": "il",
+          "start": 2.801,
+          "end": 2.861
+        },
+        {
+          "text": "ponte",
+          "start": 2.921,
+          "end": 3.241
+        },
+        {
+          "text": "verso",
+          "start": 3.301,
+          "end": 3.541
+        },
+        {
+          "text": "la",
+          "start": 3.581,
+          "end": 3.661
+        },
+        {
+          "text": "seconda",
+          "start": 3.701,
+          "end": 4.101
+        },
+        {
+          "text": "metà",
+          "start": 4.141,
+          "end": 4.341
+        }
+      ]
+    },
+    {
+      "start": 4.401,
+      "end": 4.941,
+      "text": "del corso.",
+      "words": [
+        {
+          "text": "del",
+          "start": 4.401,
+          "end": 4.521
+        },
+        {
+          "text": "corso.",
+          "start": 4.581,
+          "end": 4.941
+        }
+      ]
+    },
+    {
+      "start": 5.581,
+      "end": 9.122,
+      "text": "Quando si progetta un sistema K-NN le tre leve critiche sono:",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 5.581,
+          "end": 5.802
+        },
+        {
+          "text": "si",
+          "start": 5.842,
+          "end": 5.922
+        },
+        {
+          "text": "progetta",
+          "start": 5.962,
+          "end": 6.282
+        },
+        {
+          "text": "un",
+          "start": 6.322,
+          "end": 6.402
+        },
+        {
+          "text": "sistema",
+          "start": 6.422,
+          "end": 6.782
+        },
+        {
+          "text": "K-NN",
+          "start": 6.882,
+          "end": 7.542
+        },
+        {
+          "text": "le",
+          "start": 7.702,
+          "end": 7.762
+        },
+        {
+          "text": "tre",
+          "start": 7.822,
+          "end": 7.942
+        },
+        {
+          "text": "leve",
+          "start": 8.042,
+          "end": 8.242
+        },
+        {
+          "text": "critiche",
+          "start": 8.322,
+          "end": 8.742
+        },
+        {
+          "text": "sono:",
+          "start": 8.842,
+          "end": 9.122
+        }
+      ]
+    },
+    {
+      "start": 9.603,
+      "end": 14.524,
+      "text": "la scelta della metrica — euclidea, Hamming, Manhattan o pesata sulle feature,",
+      "words": [
+        {
+          "text": "la",
+          "start": 9.603,
+          "end": 9.683
+        },
+        {
+          "text": "scelta",
+          "start": 9.703,
+          "end": 10.003
+        },
+        {
+          "text": "della",
+          "start": 10.043,
+          "end": 10.203
+        },
+        {
+          "text": "metrica",
+          "start": 10.243,
+          "end": 10.683
+        },
+        {
+          "text": "—",
+          "start": 10.683,
+          "end": 10.833
+        },
+        {
+          "text": "euclidea,",
+          "start": 11.063,
+          "end": 11.723
+        },
+        {
+          "text": "Hamming,",
+          "start": 12.003,
+          "end": 12.443
+        },
+        {
+          "text": "Manhattan",
+          "start": 12.623,
+          "end": 13.163
+        },
+        {
+          "text": "o",
+          "start": 13.363,
+          "end": 13.403
+        },
+        {
+          "text": "pesata",
+          "start": 13.484,
+          "end": 13.844
+        },
+        {
+          "text": "sulle",
+          "start": 13.904,
+          "end": 14.084
+        },
+        {
+          "text": "feature,",
+          "start": 14.124,
+          "end": 14.524
+        }
+      ]
+    },
+    {
+      "start": 14.664,
+      "end": 16.284,
+      "text": "spesso vera chiave del successo;",
+      "words": [
+        {
+          "text": "spesso",
+          "start": 14.664,
+          "end": 14.964
+        },
+        {
+          "text": "vera",
+          "start": 15.064,
+          "end": 15.244
+        },
+        {
+          "text": "chiave",
+          "start": 15.304,
+          "end": 15.544
+        },
+        {
+          "text": "del",
+          "start": 15.584,
+          "end": 15.704
+        },
+        {
+          "text": "successo;",
+          "start": 15.744,
+          "end": 16.284
+        }
+      ]
+    },
+    {
+      "start": 16.904,
+      "end": 20.145,
+      "text": "la scelta di k per bilanciare underfitting e overfitting;",
+      "words": [
+        {
+          "text": "la",
+          "start": 16.904,
+          "end": 16.964
+        },
+        {
+          "text": "scelta",
+          "start": 16.984,
+          "end": 17.265
+        },
+        {
+          "text": "di",
+          "start": 17.325,
+          "end": 17.385
+        },
+        {
+          "text": "k",
+          "start": 17.445,
+          "end": 17.485
+        },
+        {
+          "text": "per",
+          "start": 18.005,
+          "end": 18.125
+        },
+        {
+          "text": "bilanciare",
+          "start": 18.165,
+          "end": 18.645
+        },
+        {
+          "text": "underfitting",
+          "start": 18.705,
+          "end": 19.365
+        },
+        {
+          "text": "e",
+          "start": 19.425,
+          "end": 19.465
+        },
+        {
+          "text": "overfitting;",
+          "start": 19.485,
+          "end": 20.145
+        }
+      ]
+    },
+    {
+      "start": 20.805,
+      "end": 25.467,
+      "text": "e la selezione di un sottoinsieme dei dati, ad esempio estraendo prototipi tramite clustering,",
+      "words": [
+        {
+          "text": "e",
+          "start": 20.805,
+          "end": 20.845
+        },
+        {
+          "text": "la",
+          "start": 20.905,
+          "end": 20.965
+        },
+        {
+          "text": "selezione",
+          "start": 21.026,
+          "end": 21.446
+        },
+        {
+          "text": "di",
+          "start": 21.466,
+          "end": 21.526
+        },
+        {
+          "text": "un",
+          "start": 21.546,
+          "end": 21.606
+        },
+        {
+          "text": "sottoinsieme",
+          "start": 21.646,
+          "end": 22.226
+        },
+        {
+          "text": "dei",
+          "start": 22.266,
+          "end": 22.386
+        },
+        {
+          "text": "dati,",
+          "start": 22.406,
+          "end": 22.706
+        },
+        {
+          "text": "ad",
+          "start": 22.906,
+          "end": 22.986
+        },
+        {
+          "text": "esempio",
+          "start": 23.026,
+          "end": 23.346
+        },
+        {
+          "text": "estraendo",
+          "start": 23.386,
+          "end": 23.786
+        },
+        {
+          "text": "prototipi",
+          "start": 23.866,
+          "end": 24.466
+        },
+        {
+          "text": "tramite",
+          "start": 24.546,
+          "end": 24.867
+        },
+        {
+          "text": "clustering,",
+          "start": 24.927,
+          "end": 25.467
+        }
+      ]
+    },
+    {
+      "start": 25.767,
+      "end": 27.327,
+      "text": "insieme alla selezione delle feature.",
+      "words": [
+        {
+          "text": "insieme",
+          "start": 25.767,
+          "end": 26.027
+        },
+        {
+          "text": "alla",
+          "start": 26.147,
+          "end": 26.307
+        },
+        {
+          "text": "selezione",
+          "start": 26.367,
+          "end": 26.767
+        },
+        {
+          "text": "delle",
+          "start": 26.807,
+          "end": 26.947
+        },
+        {
+          "text": "feature.",
+          "start": 26.987,
+          "end": 27.327
+        }
+      ]
+    },
+    {
+      "start": 27.967,
+      "end": 31.428,
+      "text": "Da questa famiglia nascono estensioni locali come kernel smoothers,",
+      "words": [
+        {
+          "text": "Da",
+          "start": 27.967,
+          "end": 28.027
+        },
+        {
+          "text": "questa",
+          "start": 28.087,
+          "end": 28.307
+        },
+        {
+          "text": "famiglia",
+          "start": 28.347,
+          "end": 28.688
+        },
+        {
+          "text": "nascono",
+          "start": 28.748,
+          "end": 29.068
+        },
+        {
+          "text": "estensioni",
+          "start": 29.208,
+          "end": 29.708
+        },
+        {
+          "text": "locali",
+          "start": 29.768,
+          "end": 30.108
+        },
+        {
+          "text": "come",
+          "start": 30.148,
+          "end": 30.328
+        },
+        {
+          "text": "kernel",
+          "start": 30.488,
+          "end": 30.848
+        },
+        {
+          "text": "smoothers,",
+          "start": 30.908,
+          "end": 31.428
+        }
+      ]
+    },
+    {
+      "start": 31.648,
+      "end": 36.129,
+      "text": "regressione lineare locale, metodi a prototipi e case-based reasoning.",
+      "words": [
+        {
+          "text": "regressione",
+          "start": 31.648,
+          "end": 32.148
+        },
+        {
+          "text": "lineare",
+          "start": 32.228,
+          "end": 32.609
+        },
+        {
+          "text": "locale,",
+          "start": 32.649,
+          "end": 33.089
+        },
+        {
+          "text": "metodi",
+          "start": 33.529,
+          "end": 33.889
+        },
+        {
+          "text": "a",
+          "start": 33.949,
+          "end": 33.989
+        },
+        {
+          "text": "prototipi",
+          "start": 34.029,
+          "end": 34.609
+        },
+        {
+          "text": "e",
+          "start": 34.789,
+          "end": 34.829
+        },
+        {
+          "text": "case-based",
+          "start": 34.969,
+          "end": 35.589
+        },
+        {
+          "text": "reasoning.",
+          "start": 35.649,
+          "end": 36.129
+        }
+      ]
+    },
+    {
+      "start": 37.15,
+      "end": 38.63,
+      "text": "Cosa manca però al K-NN?",
+      "words": [
+        {
+          "text": "Cosa",
+          "start": 37.15,
+          "end": 37.37
+        },
+        {
+          "text": "manca",
+          "start": 37.41,
+          "end": 37.67
+        },
+        {
+          "text": "però",
+          "start": 37.73,
+          "end": 37.87
+        },
+        {
+          "text": "al",
+          "start": 37.93,
+          "end": 37.97
+        },
+        {
+          "text": "K-NN?",
+          "start": 38.01,
+          "end": 38.63
+        }
+      ]
+    },
+    {
+      "start": 39.21,
+      "end": 44.592,
+      "text": "Non costruisce un vero modello compatto: non estrae regolarità generali né permette di dimenticare gli",
+      "words": [
+        {
+          "text": "Non",
+          "start": 39.21,
+          "end": 39.35
+        },
+        {
+          "text": "costruisce",
+          "start": 39.39,
+          "end": 39.87
+        },
+        {
+          "text": "un",
+          "start": 39.89,
+          "end": 39.95
+        },
+        {
+          "text": "vero",
+          "start": 39.99,
+          "end": 40.13
+        },
+        {
+          "text": "modello",
+          "start": 40.17,
+          "end": 40.471
+        },
+        {
+          "text": "compatto:",
+          "start": 40.511,
+          "end": 41.011
+        },
+        {
+          "text": "non",
+          "start": 41.351,
+          "end": 41.491
+        },
+        {
+          "text": "estrae",
+          "start": 41.531,
+          "end": 41.871
+        },
+        {
+          "text": "regolarità",
+          "start": 41.971,
+          "end": 42.471
+        },
+        {
+          "text": "generali",
+          "start": 42.551,
+          "end": 43.071
+        },
+        {
+          "text": "né",
+          "start": 43.211,
+          "end": 43.291
+        },
+        {
+          "text": "permette",
+          "start": 43.371,
+          "end": 43.771
+        },
+        {
+          "text": "di",
+          "start": 43.811,
+          "end": 43.891
+        },
+        {
+          "text": "dimenticare",
+          "start": 43.931,
+          "end": 44.492
+        },
+        {
+          "text": "gli",
+          "start": 44.512,
+          "end": 44.592
+        }
+      ]
+    },
+    {
+      "start": 44.612,
+      "end": 45.892,
+      "text": "esempi dopo l'apprendimento.",
+      "words": [
+        {
+          "text": "esempi",
+          "start": 44.612,
+          "end": 44.952
+        },
+        {
+          "text": "dopo",
+          "start": 44.992,
+          "end": 45.152
+        },
+        {
+          "text": "l'apprendimento.",
+          "start": 45.172,
+          "end": 45.892
+        }
+      ]
+    },
+    {
+      "start": 46.672,
+      "end": 52.194,
+      "text": "L'obiettivo dei capitoli successivi saranno modelli compatti come la LTU — tutta la conoscenza in",
+      "words": [
+        {
+          "text": "L'obiettivo",
+          "start": 46.672,
+          "end": 47.132
+        },
+        {
+          "text": "dei",
+          "start": 47.172,
+          "end": 47.272
+        },
+        {
+          "text": "capitoli",
+          "start": 47.292,
+          "end": 47.652
+        },
+        {
+          "text": "successivi",
+          "start": 47.712,
+          "end": 48.193
+        },
+        {
+          "text": "saranno",
+          "start": 48.253,
+          "end": 48.573
+        },
+        {
+          "text": "modelli",
+          "start": 48.633,
+          "end": 48.973
+        },
+        {
+          "text": "compatti",
+          "start": 49.033,
+          "end": 49.653
+        },
+        {
+          "text": "come",
+          "start": 49.733,
+          "end": 49.933
+        },
+        {
+          "text": "la",
+          "start": 49.993,
+          "end": 50.073
+        },
+        {
+          "text": "LTU",
+          "start": 50.353,
+          "end": 50.713
+        },
+        {
+          "text": "—",
+          "start": 50.713,
+          "end": 50.863
+        },
+        {
+          "text": "tutta",
+          "start": 51.193,
+          "end": 51.453
+        },
+        {
+          "text": "la",
+          "start": 51.493,
+          "end": 51.553
+        },
+        {
+          "text": "conoscenza",
+          "start": 51.593,
+          "end": 52.094
+        },
+        {
+          "text": "in",
+          "start": 52.134,
+          "end": 52.194
+        }
+      ]
+    },
+    {
+      "start": 52.234,
+      "end": 57.735,
+      "text": "pochi parametri — ma flessibili come il K-NN e con controllo rigoroso della complessità:",
+      "words": [
+        {
+          "text": "pochi",
+          "start": 52.234,
+          "end": 52.434
+        },
+        {
+          "text": "parametri",
+          "start": 52.474,
+          "end": 52.994
+        },
+        {
+          "text": "—",
+          "start": 52.994,
+          "end": 53.144
+        },
+        {
+          "text": "ma",
+          "start": 53.434,
+          "end": 53.494
+        },
+        {
+          "text": "flessibili",
+          "start": 53.614,
+          "end": 54.274
+        },
+        {
+          "text": "come",
+          "start": 54.334,
+          "end": 54.494
+        },
+        {
+          "text": "il",
+          "start": 54.534,
+          "end": 54.594
+        },
+        {
+          "text": "K-NN",
+          "start": 54.634,
+          "end": 55.334
+        },
+        {
+          "text": "e",
+          "start": 55.535,
+          "end": 55.575
+        },
+        {
+          "text": "con",
+          "start": 55.635,
+          "end": 55.795
+        },
+        {
+          "text": "controllo",
+          "start": 55.855,
+          "end": 56.295
+        },
+        {
+          "text": "rigoroso",
+          "start": 56.415,
+          "end": 56.915
+        },
+        {
+          "text": "della",
+          "start": 57.015,
+          "end": 57.175
+        },
+        {
+          "text": "complessità:",
+          "start": 57.215,
+          "end": 57.735
+        }
+      ]
+    },
+    {
+      "start": 58.295,
+      "end": 60.656,
+      "text": "le reti neurali e le Support Vector Machines.",
+      "words": [
+        {
+          "text": "le",
+          "start": 58.295,
+          "end": 58.355
+        },
+        {
+          "text": "reti",
+          "start": 58.415,
+          "end": 58.595
+        },
+        {
+          "text": "neurali",
+          "start": 58.635,
+          "end": 59.035
+        },
+        {
+          "text": "e",
+          "start": 59.215,
+          "end": 59.255
+        },
+        {
+          "text": "le",
+          "start": 59.275,
+          "end": 59.356
+        },
+        {
+          "text": "Support",
+          "start": 59.396,
+          "end": 59.776
+        },
+        {
+          "text": "Vector",
+          "start": 59.836,
+          "end": 60.156
+        },
+        {
+          "text": "Machines.",
+          "start": 60.196,
+          "end": 60.656
+        }
+      ]
+    },
+    {
+      "start": 61.456,
+      "end": 66.497,
+      "text": "Ricorda i quattro punti chiave: K-NN è lazy, locale e basato sulla memoria;",
+      "words": [
+        {
+          "text": "Ricorda",
+          "start": 61.456,
+          "end": 61.776
+        },
+        {
+          "text": "i",
+          "start": 61.816,
+          "end": 61.856
+        },
+        {
+          "text": "quattro",
+          "start": 61.856,
+          "end": 62.116
+        },
+        {
+          "text": "punti",
+          "start": 62.156,
+          "end": 62.376
+        },
+        {
+          "text": "chiave:",
+          "start": 62.416,
+          "end": 62.716
+        },
+        {
+          "text": "K-NN",
+          "start": 63.076,
+          "end": 63.677
+        },
+        {
+          "text": "è",
+          "start": 63.937,
+          "end": 63.977
+        },
+        {
+          "text": "lazy,",
+          "start": 64.057,
+          "end": 64.377
+        },
+        {
+          "text": "locale",
+          "start": 64.777,
+          "end": 65.197
+        },
+        {
+          "text": "e",
+          "start": 65.437,
+          "end": 65.477
+        },
+        {
+          "text": "basato",
+          "start": 65.537,
+          "end": 65.857
+        },
+        {
+          "text": "sulla",
+          "start": 65.917,
+          "end": 66.097
+        },
+        {
+          "text": "memoria;",
+          "start": 66.117,
+          "end": 66.497
+        }
+      ]
+    },
+    {
+      "start": 67.037,
+      "end": 70.778,
+      "text": "ha circa l su k parametri effettivi con errore di test a U;",
+      "words": [
+        {
+          "text": "ha",
+          "start": 67.037,
+          "end": 67.078
+        },
+        {
+          "text": "circa",
+          "start": 67.158,
+          "end": 67.458
+        },
+        {
+          "text": "l",
+          "start": 67.778,
+          "end": 67.81800000000001
+        },
+        {
+          "text": "su",
+          "start": 67.918,
+          "end": 67.978
+        },
+        {
+          "text": "k",
+          "start": 68.058,
+          "end": 68.09800000000001
+        },
+        {
+          "text": "parametri",
+          "start": 68.358,
+          "end": 68.818
+        },
+        {
+          "text": "effettivi",
+          "start": 68.858,
+          "end": 69.398
+        },
+        {
+          "text": "con",
+          "start": 69.498,
+          "end": 69.638
+        },
+        {
+          "text": "errore",
+          "start": 69.698,
+          "end": 69.978
+        },
+        {
+          "text": "di",
+          "start": 70.018,
+          "end": 70.098
+        },
+        {
+          "text": "test",
+          "start": 70.138,
+          "end": 70.398
+        },
+        {
+          "text": "a",
+          "start": 70.618,
+          "end": 70.658
+        },
+        {
+          "text": "U;",
+          "start": 70.738,
+          "end": 70.778
+        }
+      ]
+    },
+    {
+      "start": 71.419,
+      "end": 74.84,
+      "text": "approssima il classificatore di Bayes; e dipende da metrica,",
+      "words": [
+        {
+          "text": "approssima",
+          "start": 71.419,
+          "end": 71.939
+        },
+        {
+          "text": "il",
+          "start": 71.999,
+          "end": 72.059
+        },
+        {
+          "text": "classificatore",
+          "start": 72.079,
+          "end": 72.799
+        },
+        {
+          "text": "di",
+          "start": 72.839,
+          "end": 72.899
+        },
+        {
+          "text": "Bayes;",
+          "start": 72.959,
+          "end": 73.359
+        },
+        {
+          "text": "e",
+          "start": 73.739,
+          "end": 73.77900000000001
+        },
+        {
+          "text": "dipende",
+          "start": 73.839,
+          "end": 74.219
+        },
+        {
+          "text": "da",
+          "start": 74.259,
+          "end": 74.319
+        },
+        {
+          "text": "metrica,",
+          "start": 74.379,
+          "end": 74.84
+        }
+      ]
+    },
+    {
+      "start": 75.04,
+      "end": 76.36,
+      "text": "scala e dimensionalità.",
+      "words": [
+        {
+          "text": "scala",
+          "start": 75.04,
+          "end": 75.36
+        },
+        {
+          "text": "e",
+          "start": 75.58,
+          "end": 75.62
+        },
+        {
+          "text": "dimensionalità.",
+          "start": 75.66,
+          "end": 76.36
+        }
+      ]
+    }
+  ]
+}

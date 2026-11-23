@@ -1,0 +1,1254 @@
+{
+  "duration": 85.268,
+  "segments": [
+    {
+      "start": 0.428,
+      "end": 5.789,
+      "text": "Poiché il 1-NN è sensibilissimo al rumore, estendiamo l'idea ai k vicini più prossimi,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 0.428,
+          "end": 0.728
+        },
+        {
+          "text": "il",
+          "start": 0.828,
+          "end": 0.928
+        },
+        {
+          "text": "1-NN",
+          "start": 1.348,
+          "end": 1.628
+        },
+        {
+          "text": "è",
+          "start": 1.728,
+          "end": 1.768
+        },
+        {
+          "text": "sensibilissimo",
+          "start": 1.828,
+          "end": 2.568
+        },
+        {
+          "text": "al",
+          "start": 2.608,
+          "end": 2.668
+        },
+        {
+          "text": "rumore,",
+          "start": 2.708,
+          "end": 3.108
+        },
+        {
+          "text": "estendiamo",
+          "start": 3.448,
+          "end": 3.888
+        },
+        {
+          "text": "l'idea",
+          "start": 3.928,
+          "end": 4.209
+        },
+        {
+          "text": "ai",
+          "start": 4.249,
+          "end": 4.369
+        },
+        {
+          "text": "k",
+          "start": 4.429,
+          "end": 4.469
+        },
+        {
+          "text": "vicini",
+          "start": 4.809,
+          "end": 5.109
+        },
+        {
+          "text": "più",
+          "start": 5.169,
+          "end": 5.249
+        },
+        {
+          "text": "prossimi,",
+          "start": 5.309,
+          "end": 5.789
+        }
+      ]
+    },
+    {
+      "start": 6.089,
+      "end": 10.009,
+      "text": "l'insieme N con k di x, calcolando la media dei loro target:",
+      "words": [
+        {
+          "text": "l'insieme",
+          "start": 6.089,
+          "end": 6.569
+        },
+        {
+          "text": "N",
+          "start": 6.849,
+          "end": 6.889
+        },
+        {
+          "text": "con",
+          "start": 6.989,
+          "end": 7.149
+        },
+        {
+          "text": "k",
+          "start": 7.209,
+          "end": 7.249
+        },
+        {
+          "text": "di",
+          "start": 7.529,
+          "end": 7.589
+        },
+        {
+          "text": "x,",
+          "start": 7.789,
+          "end": 7.829
+        },
+        {
+          "text": "calcolando",
+          "start": 8.289,
+          "end": 8.749
+        },
+        {
+          "text": "la",
+          "start": 8.789,
+          "end": 8.849
+        },
+        {
+          "text": "media",
+          "start": 8.869,
+          "end": 9.089
+        },
+        {
+          "text": "dei",
+          "start": 9.149,
+          "end": 9.269
+        },
+        {
+          "text": "loro",
+          "start": 9.329,
+          "end": 9.509
+        },
+        {
+          "text": "target:",
+          "start": 9.549,
+          "end": 10.009
+        }
+      ]
+    },
+    {
+      "start": 10.609,
+      "end": 14.89,
+      "text": "avg con k di x uguale uno su k per la somma di d con",
+      "words": [
+        {
+          "text": "avg",
+          "start": 10.609,
+          "end": 10.889
+        },
+        {
+          "text": "con",
+          "start": 11.109,
+          "end": 11.249
+        },
+        {
+          "text": "k",
+          "start": 11.309,
+          "end": 11.349
+        },
+        {
+          "text": "di",
+          "start": 11.609,
+          "end": 11.669
+        },
+        {
+          "text": "x",
+          "start": 11.829,
+          "end": 11.869
+        },
+        {
+          "text": "uguale",
+          "start": 12.209,
+          "end": 12.65
+        },
+        {
+          "text": "uno",
+          "start": 12.89,
+          "end": 13.07
+        },
+        {
+          "text": "su",
+          "start": 13.15,
+          "end": 13.23
+        },
+        {
+          "text": "k",
+          "start": 13.33,
+          "end": 13.37
+        },
+        {
+          "text": "per",
+          "start": 13.83,
+          "end": 13.95
+        },
+        {
+          "text": "la",
+          "start": 14.01,
+          "end": 14.07
+        },
+        {
+          "text": "somma",
+          "start": 14.13,
+          "end": 14.39
+        },
+        {
+          "text": "di",
+          "start": 14.45,
+          "end": 14.53
+        },
+        {
+          "text": "d",
+          "start": 14.59,
+          "end": 14.63
+        },
+        {
+          "text": "con",
+          "start": 14.73,
+          "end": 14.89
+        }
+      ]
+    },
+    {
+      "start": 14.93,
+      "end": 17.61,
+      "text": "i per x con i in N con k di x.",
+      "words": [
+        {
+          "text": "i",
+          "start": 14.93,
+          "end": 14.97
+        },
+        {
+          "text": "per",
+          "start": 15.27,
+          "end": 15.43
+        },
+        {
+          "text": "x",
+          "start": 15.71,
+          "end": 15.75
+        },
+        {
+          "text": "con",
+          "start": 15.89,
+          "end": 16.07
+        },
+        {
+          "text": "i",
+          "start": 16.11,
+          "end": 16.15
+        },
+        {
+          "text": "in",
+          "start": 16.39,
+          "end": 16.49
+        },
+        {
+          "text": "N",
+          "start": 16.69,
+          "end": 16.73
+        },
+        {
+          "text": "con",
+          "start": 16.85,
+          "end": 16.99
+        },
+        {
+          "text": "k",
+          "start": 17.05,
+          "end": 17.09
+        },
+        {
+          "text": "di",
+          "start": 17.33,
+          "end": 17.51
+        },
+        {
+          "text": "x.",
+          "start": 17.57,
+          "end": 17.61
+        }
+      ]
+    },
+    {
+      "start": 18.29,
+      "end": 22.011,
+      "text": "In classificazione binaria con target zero uno vale il voto a maggioranza:",
+      "words": [
+        {
+          "text": "In",
+          "start": 18.29,
+          "end": 18.37
+        },
+        {
+          "text": "classificazione",
+          "start": 18.41,
+          "end": 19.11
+        },
+        {
+          "text": "binaria",
+          "start": 19.15,
+          "end": 19.51
+        },
+        {
+          "text": "con",
+          "start": 19.57,
+          "end": 19.69
+        },
+        {
+          "text": "target",
+          "start": 19.75,
+          "end": 20.07
+        },
+        {
+          "text": "zero",
+          "start": 20.21,
+          "end": 20.41
+        },
+        {
+          "text": "uno",
+          "start": 20.51,
+          "end": 20.67
+        },
+        {
+          "text": "vale",
+          "start": 20.83,
+          "end": 20.99
+        },
+        {
+          "text": "il",
+          "start": 21.03,
+          "end": 21.091
+        },
+        {
+          "text": "voto",
+          "start": 21.131,
+          "end": 21.311
+        },
+        {
+          "text": "a",
+          "start": 21.351,
+          "end": 21.391
+        },
+        {
+          "text": "maggioranza:",
+          "start": 21.431,
+          "end": 22.011
+        }
+      ]
+    },
+    {
+      "start": 22.311,
+      "end": 26.431,
+      "text": "restituiamo uno se avg con k di x è maggiore di zero virgola cinque,",
+      "words": [
+        {
+          "text": "restituiamo",
+          "start": 22.311,
+          "end": 22.831
+        },
+        {
+          "text": "uno",
+          "start": 23.011,
+          "end": 23.231
+        },
+        {
+          "text": "se",
+          "start": 23.371,
+          "end": 23.451
+        },
+        {
+          "text": "avg",
+          "start": 23.491,
+          "end": 23.751
+        },
+        {
+          "text": "con",
+          "start": 23.891,
+          "end": 24.031
+        },
+        {
+          "text": "k",
+          "start": 24.071,
+          "end": 24.111
+        },
+        {
+          "text": "di",
+          "start": 24.311,
+          "end": 24.471
+        },
+        {
+          "text": "x",
+          "start": 24.531,
+          "end": 24.571
+        },
+        {
+          "text": "è",
+          "start": 24.831,
+          "end": 24.871
+        },
+        {
+          "text": "maggiore",
+          "start": 24.951,
+          "end": 25.291
+        },
+        {
+          "text": "di",
+          "start": 25.351,
+          "end": 25.411
+        },
+        {
+          "text": "zero",
+          "start": 25.511,
+          "end": 25.691
+        },
+        {
+          "text": "virgola",
+          "start": 25.731,
+          "end": 26.031
+        },
+        {
+          "text": "cinque,",
+          "start": 26.091,
+          "end": 26.431
+        }
+      ]
+    },
+    {
+      "start": 26.791,
+      "end": 27.651,
+      "text": "zero altrimenti.",
+      "words": [
+        {
+          "text": "zero",
+          "start": 26.791,
+          "end": 27.011
+        },
+        {
+          "text": "altrimenti.",
+          "start": 27.071,
+          "end": 27.651
+        }
+      ]
+    },
+    {
+      "start": 28.191,
+      "end": 31.632,
+      "text": "In regressione si usa direttamente la media dei target dei k vicini.",
+      "words": [
+        {
+          "text": "In",
+          "start": 28.191,
+          "end": 28.291
+        },
+        {
+          "text": "regressione",
+          "start": 28.351,
+          "end": 28.951
+        },
+        {
+          "text": "si",
+          "start": 29.071,
+          "end": 29.111
+        },
+        {
+          "text": "usa",
+          "start": 29.151,
+          "end": 29.291
+        },
+        {
+          "text": "direttamente",
+          "start": 29.331,
+          "end": 29.852
+        },
+        {
+          "text": "la",
+          "start": 29.892,
+          "end": 29.952
+        },
+        {
+          "text": "media",
+          "start": 29.992,
+          "end": 30.192
+        },
+        {
+          "text": "dei",
+          "start": 30.232,
+          "end": 30.332
+        },
+        {
+          "text": "target",
+          "start": 30.372,
+          "end": 30.732
+        },
+        {
+          "text": "dei",
+          "start": 30.812,
+          "end": 30.932
+        },
+        {
+          "text": "k",
+          "start": 30.972,
+          "end": 31.012
+        },
+        {
+          "text": "vicini.",
+          "start": 31.232,
+          "end": 31.632
+        }
+      ]
+    },
+    {
+      "start": 32.332,
+      "end": 35.212,
+      "text": "Guarda l'esempio a destra sul punto di query x con q:",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 32.332,
+          "end": 32.592
+        },
+        {
+          "text": "l'esempio",
+          "start": 32.632,
+          "end": 33.032
+        },
+        {
+          "text": "a",
+          "start": 33.092,
+          "end": 33.132
+        },
+        {
+          "text": "destra",
+          "start": 33.192,
+          "end": 33.552
+        },
+        {
+          "text": "sul",
+          "start": 33.612,
+          "end": 33.752
+        },
+        {
+          "text": "punto",
+          "start": 33.792,
+          "end": 34.012
+        },
+        {
+          "text": "di",
+          "start": 34.072,
+          "end": 34.132
+        },
+        {
+          "text": "query",
+          "start": 34.172,
+          "end": 34.432
+        },
+        {
+          "text": "x",
+          "start": 34.692,
+          "end": 34.732
+        },
+        {
+          "text": "con",
+          "start": 34.952,
+          "end": 35.112
+        },
+        {
+          "text": "q:",
+          "start": 35.172,
+          "end": 35.212
+        }
+      ]
+    },
+    {
+      "start": 35.812,
+      "end": 37.872,
+      "text": "il suo vicino più prossimo è un punto più,",
+      "words": [
+        {
+          "text": "il",
+          "start": 35.812,
+          "end": 35.912
+        },
+        {
+          "text": "suo",
+          "start": 35.972,
+          "end": 36.072
+        },
+        {
+          "text": "vicino",
+          "start": 36.132,
+          "end": 36.392
+        },
+        {
+          "text": "più",
+          "start": 36.432,
+          "end": 36.512
+        },
+        {
+          "text": "prossimo",
+          "start": 36.572,
+          "end": 36.992
+        },
+        {
+          "text": "è",
+          "start": 37.112,
+          "end": 37.152
+        },
+        {
+          "text": "un",
+          "start": 37.212,
+          "end": 37.292
+        },
+        {
+          "text": "punto",
+          "start": 37.332,
+          "end": 37.612
+        },
+        {
+          "text": "più,",
+          "start": 37.712,
+          "end": 37.872
+        }
+      ]
+    },
+    {
+      "start": 38.172,
+      "end": 40.273,
+      "text": "quindi il 1-NN risponde più;",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 38.172,
+          "end": 38.433
+        },
+        {
+          "text": "il",
+          "start": 38.573,
+          "end": 38.693
+        },
+        {
+          "text": "1-NN",
+          "start": 39.093,
+          "end": 39.433
+        },
+        {
+          "text": "risponde",
+          "start": 39.653,
+          "end": 40.073
+        },
+        {
+          "text": "più;",
+          "start": 40.153,
+          "end": 40.273
+        }
+      ]
+    },
+    {
+      "start": 40.933,
+      "end": 47.874,
+      "text": "ma allargando lo sguardo al cerchio tratteggiato dei cinque vicini prevalgono quattro meno contro un",
+      "words": [
+        {
+          "text": "ma",
+          "start": 40.933,
+          "end": 41.013
+        },
+        {
+          "text": "allargando",
+          "start": 41.113,
+          "end": 41.793
+        },
+        {
+          "text": "lo",
+          "start": 41.853,
+          "end": 41.913
+        },
+        {
+          "text": "sguardo",
+          "start": 41.973,
+          "end": 42.453
+        },
+        {
+          "text": "al",
+          "start": 42.513,
+          "end": 42.593
+        },
+        {
+          "text": "cerchio",
+          "start": 42.633,
+          "end": 42.933
+        },
+        {
+          "text": "tratteggiato",
+          "start": 42.993,
+          "end": 43.613
+        },
+        {
+          "text": "dei",
+          "start": 43.693,
+          "end": 43.833
+        },
+        {
+          "text": "cinque",
+          "start": 43.953,
+          "end": 44.453
+        },
+        {
+          "text": "vicini",
+          "start": 44.513,
+          "end": 45.033
+        },
+        {
+          "text": "prevalgono",
+          "start": 45.573,
+          "end": 46.153
+        },
+        {
+          "text": "quattro",
+          "start": 46.273,
+          "end": 46.713
+        },
+        {
+          "text": "meno",
+          "start": 46.773,
+          "end": 47.094
+        },
+        {
+          "text": "contro",
+          "start": 47.354,
+          "end": 47.674
+        },
+        {
+          "text": "un",
+          "start": 47.774,
+          "end": 47.874
+        }
+      ]
+    },
+    {
+      "start": 47.974,
+      "end": 49.414,
+      "text": "solo più, quindi il",
+      "words": [
+        {
+          "text": "solo",
+          "start": 47.974,
+          "end": 48.234
+        },
+        {
+          "text": "più,",
+          "start": 48.294,
+          "end": 48.434
+        },
+        {
+          "text": "quindi",
+          "start": 48.974,
+          "end": 49.274
+        },
+        {
+          "text": "il",
+          "start": 49.334,
+          "end": 49.414
+        }
+      ]
+    },
+    {
+      "start": 50.174,
+      "end": 52.054,
+      "text": "5-NN risponde meno.",
+      "words": [
+        {
+          "text": "5-NN",
+          "start": 50.174,
+          "end": 50.574
+        },
+        {
+          "text": "risponde",
+          "start": 50.934,
+          "end": 51.434
+        },
+        {
+          "text": "meno.",
+          "start": 51.754,
+          "end": 52.054
+        }
+      ]
+    },
+    {
+      "start": 52.754,
+      "end": 55.134,
+      "text": "Aumentare k liscia la decisione.",
+      "words": [
+        {
+          "text": "Aumentare",
+          "start": 52.754,
+          "end": 53.214
+        },
+        {
+          "text": "k",
+          "start": 53.254,
+          "end": 53.294
+        },
+        {
+          "text": "liscia",
+          "start": 54.054,
+          "end": 54.394
+        },
+        {
+          "text": "la",
+          "start": 54.474,
+          "end": 54.534
+        },
+        {
+          "text": "decisione.",
+          "start": 54.554,
+          "end": 55.134
+        }
+      ]
+    },
+    {
+      "start": 56.115,
+      "end": 57.975,
+      "text": "Vediamo anche le due varianti principali:",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 56.115,
+          "end": 56.395
+        },
+        {
+          "text": "anche",
+          "start": 56.455,
+          "end": 56.635
+        },
+        {
+          "text": "le",
+          "start": 56.675,
+          "end": 56.735
+        },
+        {
+          "text": "due",
+          "start": 56.755,
+          "end": 56.895
+        },
+        {
+          "text": "varianti",
+          "start": 56.935,
+          "end": 57.315
+        },
+        {
+          "text": "principali:",
+          "start": 57.375,
+          "end": 57.975
+        }
+      ]
+    },
+    {
+      "start": 58.635,
+      "end": 64.916,
+      "text": "nel caso multi-classe si restituisce la classe v più frequente contando con la funzione indicatrice",
+      "words": [
+        {
+          "text": "nel",
+          "start": 58.635,
+          "end": 58.755
+        },
+        {
+          "text": "caso",
+          "start": 58.815,
+          "end": 59.055
+        },
+        {
+          "text": "multi-classe",
+          "start": 59.175,
+          "end": 60.175
+        },
+        {
+          "text": "si",
+          "start": 60.635,
+          "end": 60.715
+        },
+        {
+          "text": "restituisce",
+          "start": 60.775,
+          "end": 61.295
+        },
+        {
+          "text": "la",
+          "start": 61.335,
+          "end": 61.395
+        },
+        {
+          "text": "classe",
+          "start": 61.415,
+          "end": 61.755
+        },
+        {
+          "text": "v",
+          "start": 61.895,
+          "end": 61.935
+        },
+        {
+          "text": "più",
+          "start": 62.075,
+          "end": 62.195
+        },
+        {
+          "text": "frequente",
+          "start": 62.255,
+          "end": 62.775
+        },
+        {
+          "text": "contando",
+          "start": 63.095,
+          "end": 63.575
+        },
+        {
+          "text": "con",
+          "start": 63.635,
+          "end": 63.715
+        },
+        {
+          "text": "la",
+          "start": 63.755,
+          "end": 63.815
+        },
+        {
+          "text": "funzione",
+          "start": 63.855,
+          "end": 64.216
+        },
+        {
+          "text": "indicatrice",
+          "start": 64.256,
+          "end": 64.916
+        }
+      ]
+    },
+    {
+      "start": 65.356,
+      "end": 67.71600000000001,
+      "text": "uno di v virgola d con i;",
+      "words": [
+        {
+          "text": "uno",
+          "start": 65.356,
+          "end": 65.596
+        },
+        {
+          "text": "di",
+          "start": 65.876,
+          "end": 65.956
+        },
+        {
+          "text": "v",
+          "start": 66.036,
+          "end": 66.07600000000001
+        },
+        {
+          "text": "virgola",
+          "start": 66.496,
+          "end": 66.856
+        },
+        {
+          "text": "d",
+          "start": 67.176,
+          "end": 67.21600000000001
+        },
+        {
+          "text": "con",
+          "start": 67.436,
+          "end": 67.616
+        },
+        {
+          "text": "i;",
+          "start": 67.676,
+          "end": 67.71600000000001
+        }
+      ]
+    },
+    {
+      "start": 68.736,
+      "end": 74.43700000000001,
+      "text": "nella variante a distanza pesata ogni voto viene diviso per la distanza al quadrato d",
+      "words": [
+        {
+          "text": "nella",
+          "start": 68.736,
+          "end": 68.916
+        },
+        {
+          "text": "variante",
+          "start": 68.956,
+          "end": 69.376
+        },
+        {
+          "text": "a",
+          "start": 69.456,
+          "end": 69.49600000000001
+        },
+        {
+          "text": "distanza",
+          "start": 69.596,
+          "end": 70.296
+        },
+        {
+          "text": "pesata",
+          "start": 70.356,
+          "end": 70.856
+        },
+        {
+          "text": "ogni",
+          "start": 71.316,
+          "end": 71.496
+        },
+        {
+          "text": "voto",
+          "start": 71.536,
+          "end": 71.756
+        },
+        {
+          "text": "viene",
+          "start": 71.796,
+          "end": 72.056
+        },
+        {
+          "text": "diviso",
+          "start": 72.176,
+          "end": 72.617
+        },
+        {
+          "text": "per",
+          "start": 72.657,
+          "end": 72.777
+        },
+        {
+          "text": "la",
+          "start": 72.797,
+          "end": 72.877
+        },
+        {
+          "text": "distanza",
+          "start": 72.917,
+          "end": 73.317
+        },
+        {
+          "text": "al",
+          "start": 73.337,
+          "end": 73.397
+        },
+        {
+          "text": "quadrato",
+          "start": 73.437,
+          "end": 73.917
+        },
+        {
+          "text": "d",
+          "start": 74.397,
+          "end": 74.43700000000001
+        }
+      ]
+    },
+    {
+      "start": 74.817,
+      "end": 79.717,
+      "text": "di x virgola x con i al quadrato, così i vicini più prossimi contano di",
+      "words": [
+        {
+          "text": "di",
+          "start": 74.817,
+          "end": 74.917
+        },
+        {
+          "text": "x",
+          "start": 75.237,
+          "end": 75.277
+        },
+        {
+          "text": "virgola",
+          "start": 75.477,
+          "end": 75.837
+        },
+        {
+          "text": "x",
+          "start": 76.137,
+          "end": 76.177
+        },
+        {
+          "text": "con",
+          "start": 76.257,
+          "end": 76.437
+        },
+        {
+          "text": "i",
+          "start": 76.477,
+          "end": 76.51700000000001
+        },
+        {
+          "text": "al",
+          "start": 76.597,
+          "end": 76.677
+        },
+        {
+          "text": "quadrato,",
+          "start": 76.717,
+          "end": 77.177
+        },
+        {
+          "text": "così",
+          "start": 77.677,
+          "end": 77.877
+        },
+        {
+          "text": "i",
+          "start": 77.977,
+          "end": 78.01700000000001
+        },
+        {
+          "text": "vicini",
+          "start": 78.037,
+          "end": 78.337
+        },
+        {
+          "text": "più",
+          "start": 78.397,
+          "end": 78.497
+        },
+        {
+          "text": "prossimi",
+          "start": 78.577,
+          "end": 79.057
+        },
+        {
+          "text": "contano",
+          "start": 79.257,
+          "end": 79.617
+        },
+        {
+          "text": "di",
+          "start": 79.657,
+          "end": 79.717
+        }
+      ]
+    },
+    {
+      "start": 79.777,
+      "end": 84.418,
+      "text": "più — e se la distanza è zero per qualche esempio si restituisce direttamente il",
+      "words": [
+        {
+          "text": "più",
+          "start": 79.777,
+          "end": 79.897
+        },
+        {
+          "text": "—",
+          "start": 79.897,
+          "end": 80.047
+        },
+        {
+          "text": "e",
+          "start": 80.657,
+          "end": 80.697
+        },
+        {
+          "text": "se",
+          "start": 80.737,
+          "end": 80.837
+        },
+        {
+          "text": "la",
+          "start": 80.877,
+          "end": 80.937
+        },
+        {
+          "text": "distanza",
+          "start": 80.977,
+          "end": 81.338
+        },
+        {
+          "text": "è",
+          "start": 81.378,
+          "end": 81.418
+        },
+        {
+          "text": "zero",
+          "start": 81.478,
+          "end": 81.758
+        },
+        {
+          "text": "per",
+          "start": 81.798,
+          "end": 81.898
+        },
+        {
+          "text": "qualche",
+          "start": 81.938,
+          "end": 82.158
+        },
+        {
+          "text": "esempio",
+          "start": 82.178,
+          "end": 82.598
+        },
+        {
+          "text": "si",
+          "start": 82.998,
+          "end": 83.078
+        },
+        {
+          "text": "restituisce",
+          "start": 83.138,
+          "end": 83.658
+        },
+        {
+          "text": "direttamente",
+          "start": 83.718,
+          "end": 84.338
+        },
+        {
+          "text": "il",
+          "start": 84.358,
+          "end": 84.418
+        }
+      ]
+    },
+    {
+      "start": 84.458,
+      "end": 85.018,
+      "text": "suo target.",
+      "words": [
+        {
+          "text": "suo",
+          "start": 84.458,
+          "end": 84.558
+        },
+        {
+          "text": "target.",
+          "start": 84.598,
+          "end": 85.018
+        }
+      ]
+    }
+  ]
+}

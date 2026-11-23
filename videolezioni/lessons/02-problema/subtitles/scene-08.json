@@ -1,0 +1,1289 @@
+{
+  "duration": 95.311,
+  "segments": [
+    {
+      "start": 0.612,
+      "end": 4.412,
+      "text": "Chiudiamo con il concetto fondamentale del corso: la generalizzazione.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.612,
+          "end": 0.992
+        },
+        {
+          "text": "con",
+          "start": 1.092,
+          "end": 1.212
+        },
+        {
+          "text": "il",
+          "start": 1.252,
+          "end": 1.312
+        },
+        {
+          "text": "concetto",
+          "start": 1.352,
+          "end": 1.752
+        },
+        {
+          "text": "fondamentale",
+          "start": 1.792,
+          "end": 2.452
+        },
+        {
+          "text": "del",
+          "start": 2.472,
+          "end": 2.592
+        },
+        {
+          "text": "corso:",
+          "start": 2.672,
+          "end": 3.032
+        },
+        {
+          "text": "la",
+          "start": 3.252,
+          "end": 3.332
+        },
+        {
+          "text": "generalizzazione.",
+          "start": 3.412,
+          "end": 4.412
+        }
+      ]
+    },
+    {
+      "start": 5.072,
+      "end": 8.553,
+      "text": "Distinguiamo sempre due fasi: la fase di training, o fitting,",
+      "words": [
+        {
+          "text": "Distinguiamo",
+          "start": 5.072,
+          "end": 5.572
+        },
+        {
+          "text": "sempre",
+          "start": 5.652,
+          "end": 5.952
+        },
+        {
+          "text": "due",
+          "start": 5.992,
+          "end": 6.092
+        },
+        {
+          "text": "fasi:",
+          "start": 6.152,
+          "end": 6.432
+        },
+        {
+          "text": "la",
+          "start": 6.892,
+          "end": 6.952
+        },
+        {
+          "text": "fase",
+          "start": 6.992,
+          "end": 7.212
+        },
+        {
+          "text": "di",
+          "start": 7.272,
+          "end": 7.332
+        },
+        {
+          "text": "training,",
+          "start": 7.392,
+          "end": 7.812
+        },
+        {
+          "text": "o",
+          "start": 7.972,
+          "end": 8.012
+        },
+        {
+          "text": "fitting,",
+          "start": 8.112,
+          "end": 8.553
+        }
+      ]
+    },
+    {
+      "start": 8.933,
+      "end": 12.313,
+      "text": "in cui si costruisce il modello dai dati noti più il bias induttivo;",
+      "words": [
+        {
+          "text": "in",
+          "start": 8.933,
+          "end": 8.993
+        },
+        {
+          "text": "cui",
+          "start": 9.033,
+          "end": 9.133
+        },
+        {
+          "text": "si",
+          "start": 9.173,
+          "end": 9.233
+        },
+        {
+          "text": "costruisce",
+          "start": 9.273,
+          "end": 9.733
+        },
+        {
+          "text": "il",
+          "start": 9.773,
+          "end": 9.813
+        },
+        {
+          "text": "modello",
+          "start": 9.853,
+          "end": 10.233
+        },
+        {
+          "text": "dai",
+          "start": 10.273,
+          "end": 10.393
+        },
+        {
+          "text": "dati",
+          "start": 10.433,
+          "end": 10.653
+        },
+        {
+          "text": "noti",
+          "start": 10.713,
+          "end": 11.013
+        },
+        {
+          "text": "più",
+          "start": 11.073,
+          "end": 11.173
+        },
+        {
+          "text": "il",
+          "start": 11.253,
+          "end": 11.313
+        },
+        {
+          "text": "bias",
+          "start": 11.353,
+          "end": 11.693
+        },
+        {
+          "text": "induttivo;",
+          "start": 11.733,
+          "end": 12.313
+        }
+      ]
+    },
+    {
+      "start": 13.033,
+      "end": 16.093,
+      "text": "e la fase predittiva o di test — deployment,",
+      "words": [
+        {
+          "text": "e",
+          "start": 13.033,
+          "end": 13.073
+        },
+        {
+          "text": "la",
+          "start": 13.133,
+          "end": 13.193
+        },
+        {
+          "text": "fase",
+          "start": 13.233,
+          "end": 13.473
+        },
+        {
+          "text": "predittiva",
+          "start": 13.533,
+          "end": 14.133
+        },
+        {
+          "text": "o",
+          "start": 14.273,
+          "end": 14.313
+        },
+        {
+          "text": "di",
+          "start": 14.373,
+          "end": 14.453
+        },
+        {
+          "text": "test",
+          "start": 14.513,
+          "end": 14.853
+        },
+        {
+          "text": "—",
+          "start": 14.853,
+          "end": 15.003
+        },
+        {
+          "text": "deployment,",
+          "start": 15.393,
+          "end": 16.093
+        }
+      ]
+    },
+    {
+      "start": 16.253,
+      "end": 21.954,
+      "text": "inferenza — in cui si valuta il modello su nuovi esempi x primo con target",
+      "words": [
+        {
+          "text": "inferenza",
+          "start": 16.253,
+          "end": 16.873
+        },
+        {
+          "text": "—",
+          "start": 16.873,
+          "end": 17.023
+        },
+        {
+          "text": "in",
+          "start": 17.373,
+          "end": 17.453
+        },
+        {
+          "text": "cui",
+          "start": 17.493,
+          "end": 17.613
+        },
+        {
+          "text": "si",
+          "start": 17.673,
+          "end": 17.733
+        },
+        {
+          "text": "valuta",
+          "start": 17.793,
+          "end": 18.133
+        },
+        {
+          "text": "il",
+          "start": 18.293,
+          "end": 18.373
+        },
+        {
+          "text": "modello",
+          "start": 18.434,
+          "end": 18.874
+        },
+        {
+          "text": "su",
+          "start": 18.974,
+          "end": 19.054
+        },
+        {
+          "text": "nuovi",
+          "start": 19.134,
+          "end": 19.374
+        },
+        {
+          "text": "esempi",
+          "start": 19.434,
+          "end": 20.074
+        },
+        {
+          "text": "x",
+          "start": 20.614,
+          "end": 20.654
+        },
+        {
+          "text": "primo",
+          "start": 20.814,
+          "end": 21.194
+        },
+        {
+          "text": "con",
+          "start": 21.334,
+          "end": 21.494
+        },
+        {
+          "text": "target",
+          "start": 21.554,
+          "end": 21.954
+        }
+      ]
+    },
+    {
+      "start": 22.214,
+      "end": 23.514,
+      "text": "d primo mai visti.",
+      "words": [
+        {
+          "text": "d",
+          "start": 22.214,
+          "end": 22.254
+        },
+        {
+          "text": "primo",
+          "start": 22.434,
+          "end": 22.794
+        },
+        {
+          "text": "mai",
+          "start": 23.014,
+          "end": 23.154
+        },
+        {
+          "text": "visti.",
+          "start": 23.194,
+          "end": 23.514
+        }
+      ]
+    },
+    {
+      "start": 24.474,
+      "end": 31.375,
+      "text": "Nel Machine Learning prestazione significa accuratezza di generalizzazione stimata su un test set hold-out:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 24.474,
+          "end": 24.614
+        },
+        {
+          "text": "Machine",
+          "start": 24.654,
+          "end": 24.954
+        },
+        {
+          "text": "Learning",
+          "start": 24.994,
+          "end": 25.374
+        },
+        {
+          "text": "prestazione",
+          "start": 25.494,
+          "end": 26.374
+        },
+        {
+          "text": "significa",
+          "start": 26.554,
+          "end": 27.074
+        },
+        {
+          "text": "accuratezza",
+          "start": 27.254,
+          "end": 27.954
+        },
+        {
+          "text": "di",
+          "start": 27.994,
+          "end": 28.074
+        },
+        {
+          "text": "generalizzazione",
+          "start": 28.134,
+          "end": 29.155
+        },
+        {
+          "text": "stimata",
+          "start": 29.595,
+          "end": 29.975
+        },
+        {
+          "text": "su",
+          "start": 30.015,
+          "end": 30.075
+        },
+        {
+          "text": "un",
+          "start": 30.135,
+          "end": 30.195
+        },
+        {
+          "text": "test",
+          "start": 30.255,
+          "end": 30.475
+        },
+        {
+          "text": "set",
+          "start": 30.595,
+          "end": 30.775
+        },
+        {
+          "text": "hold-out:",
+          "start": 30.855,
+          "end": 31.375
+        }
+      ]
+    },
+    {
+      "start": 32.355,
+      "end": 36.135,
+      "text": "usare una libreria è facile, generalizzare bene è la vera sfida.",
+      "words": [
+        {
+          "text": "usare",
+          "start": 32.355,
+          "end": 32.655
+        },
+        {
+          "text": "una",
+          "start": 32.695,
+          "end": 32.775
+        },
+        {
+          "text": "libreria",
+          "start": 32.835,
+          "end": 33.195
+        },
+        {
+          "text": "è",
+          "start": 33.255,
+          "end": 33.295
+        },
+        {
+          "text": "facile,",
+          "start": 33.335,
+          "end": 33.775
+        },
+        {
+          "text": "generalizzare",
+          "start": 34.095,
+          "end": 34.875
+        },
+        {
+          "text": "bene",
+          "start": 34.955,
+          "end": 35.255
+        },
+        {
+          "text": "è",
+          "start": 35.475,
+          "end": 35.515
+        },
+        {
+          "text": "la",
+          "start": 35.535,
+          "end": 35.595
+        },
+        {
+          "text": "vera",
+          "start": 35.635,
+          "end": 35.775
+        },
+        {
+          "text": "sfida.",
+          "start": 35.835,
+          "end": 36.135
+        }
+      ]
+    },
+    {
+      "start": 37.555,
+      "end": 42.256,
+      "text": "Lo sviluppo reale è un ciclo iterativo in sei fasi guidato dalla conoscenza a priori",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 37.555,
+          "end": 37.615
+        },
+        {
+          "text": "sviluppo",
+          "start": 37.655,
+          "end": 37.995
+        },
+        {
+          "text": "reale",
+          "start": 38.055,
+          "end": 38.435
+        },
+        {
+          "text": "è",
+          "start": 38.555,
+          "end": 38.595
+        },
+        {
+          "text": "un",
+          "start": 38.655,
+          "end": 38.715
+        },
+        {
+          "text": "ciclo",
+          "start": 38.755,
+          "end": 39.036
+        },
+        {
+          "text": "iterativo",
+          "start": 39.116,
+          "end": 39.636
+        },
+        {
+          "text": "in",
+          "start": 39.696,
+          "end": 39.776
+        },
+        {
+          "text": "sei",
+          "start": 39.836,
+          "end": 39.996
+        },
+        {
+          "text": "fasi",
+          "start": 40.036,
+          "end": 40.396
+        },
+        {
+          "text": "guidato",
+          "start": 40.596,
+          "end": 41.056
+        },
+        {
+          "text": "dalla",
+          "start": 41.096,
+          "end": 41.276
+        },
+        {
+          "text": "conoscenza",
+          "start": 41.316,
+          "end": 41.816
+        },
+        {
+          "text": "a",
+          "start": 41.876,
+          "end": 41.916
+        },
+        {
+          "text": "priori",
+          "start": 41.936,
+          "end": 42.256
+        }
+      ]
+    },
+    {
+      "start": 42.296,
+      "end": 44.036,
+      "text": "del dominio, mostrato a sinistra:",
+      "words": [
+        {
+          "text": "del",
+          "start": 42.296,
+          "end": 42.416
+        },
+        {
+          "text": "dominio,",
+          "start": 42.456,
+          "end": 42.856
+        },
+        {
+          "text": "mostrato",
+          "start": 43.096,
+          "end": 43.496
+        },
+        {
+          "text": "a",
+          "start": 43.516,
+          "end": 43.556
+        },
+        {
+          "text": "sinistra:",
+          "start": 43.596,
+          "end": 44.036
+        }
+      ]
+    },
+    {
+      "start": 44.996,
+      "end": 47.416,
+      "text": "uno, raccolta di dati grandi e rappresentativi;",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 44.996,
+          "end": 45.196
+        },
+        {
+          "text": "raccolta",
+          "start": 45.436,
+          "end": 45.916
+        },
+        {
+          "text": "di",
+          "start": 45.956,
+          "end": 46.036
+        },
+        {
+          "text": "dati",
+          "start": 46.076,
+          "end": 46.276
+        },
+        {
+          "text": "grandi",
+          "start": 46.336,
+          "end": 46.616
+        },
+        {
+          "text": "e",
+          "start": 46.616,
+          "end": 46.656
+        },
+        {
+          "text": "rappresentativi;",
+          "start": 46.676,
+          "end": 47.416
+        }
+      ]
+    },
+    {
+      "start": 47.996,
+      "end": 52.657,
+      "text": "due, rappresentazione e scelta delle feature — spesso la fase più critica per il successo",
+      "words": [
+        {
+          "text": "due,",
+          "start": 47.996,
+          "end": 48.216
+        },
+        {
+          "text": "rappresentazione",
+          "start": 48.496,
+          "end": 49.217
+        },
+        {
+          "text": "e",
+          "start": 49.257,
+          "end": 49.297
+        },
+        {
+          "text": "scelta",
+          "start": 49.317,
+          "end": 49.657
+        },
+        {
+          "text": "delle",
+          "start": 49.697,
+          "end": 49.857
+        },
+        {
+          "text": "feature",
+          "start": 49.917,
+          "end": 50.317
+        },
+        {
+          "text": "—",
+          "start": 50.317,
+          "end": 50.467
+        },
+        {
+          "text": "spesso",
+          "start": 50.717,
+          "end": 51.037
+        },
+        {
+          "text": "la",
+          "start": 51.097,
+          "end": 51.157
+        },
+        {
+          "text": "fase",
+          "start": 51.197,
+          "end": 51.417
+        },
+        {
+          "text": "più",
+          "start": 51.457,
+          "end": 51.557
+        },
+        {
+          "text": "critica",
+          "start": 51.617,
+          "end": 52.017
+        },
+        {
+          "text": "per",
+          "start": 52.057,
+          "end": 52.157
+        },
+        {
+          "text": "il",
+          "start": 52.197,
+          "end": 52.257
+        },
+        {
+          "text": "successo",
+          "start": 52.277,
+          "end": 52.657
+        }
+      ]
+    },
+    {
+      "start": 52.717,
+      "end": 56.717,
+      "text": "complessivo; tre, scelta del modello conoscendone i limiti;",
+      "words": [
+        {
+          "text": "complessivo;",
+          "start": 52.717,
+          "end": 53.297
+        },
+        {
+          "text": "tre,",
+          "start": 54.037,
+          "end": 54.217
+        },
+        {
+          "text": "scelta",
+          "start": 54.617,
+          "end": 54.957
+        },
+        {
+          "text": "del",
+          "start": 54.997,
+          "end": 55.117
+        },
+        {
+          "text": "modello",
+          "start": 55.157,
+          "end": 55.557
+        },
+        {
+          "text": "conoscendone",
+          "start": 55.637,
+          "end": 56.237
+        },
+        {
+          "text": "i",
+          "start": 56.277,
+          "end": 56.317
+        },
+        {
+          "text": "limiti;",
+          "start": 56.337,
+          "end": 56.717
+        }
+      ]
+    },
+    {
+      "start": 57.297,
+      "end": 59.137,
+      "text": "quattro, costruzione e training;",
+      "words": [
+        {
+          "text": "quattro,",
+          "start": 57.297,
+          "end": 57.757
+        },
+        {
+          "text": "costruzione",
+          "start": 57.897,
+          "end": 58.617
+        },
+        {
+          "text": "e",
+          "start": 58.637,
+          "end": 58.677
+        },
+        {
+          "text": "training;",
+          "start": 58.697,
+          "end": 59.137
+        }
+      ]
+    },
+    {
+      "start": 59.798,
+      "end": 62.558,
+      "text": "cinque, valutazione e interpretazione;",
+      "words": [
+        {
+          "text": "cinque,",
+          "start": 59.798,
+          "end": 60.258
+        },
+        {
+          "text": "valutazione",
+          "start": 60.458,
+          "end": 61.298
+        },
+        {
+          "text": "e",
+          "start": 61.438,
+          "end": 61.478
+        },
+        {
+          "text": "interpretazione;",
+          "start": 61.558,
+          "end": 62.558
+        }
+      ]
+    },
+    {
+      "start": 63.118,
+      "end": 67.118,
+      "text": "sei, deployment, con possibilità di tornare indietro alle fasi iniziali.",
+      "words": [
+        {
+          "text": "sei,",
+          "start": 63.118,
+          "end": 63.378
+        },
+        {
+          "text": "deployment,",
+          "start": 63.818,
+          "end": 64.458
+        },
+        {
+          "text": "con",
+          "start": 64.678,
+          "end": 64.798
+        },
+        {
+          "text": "possibilità",
+          "start": 64.818,
+          "end": 65.338
+        },
+        {
+          "text": "di",
+          "start": 65.398,
+          "end": 65.458
+        },
+        {
+          "text": "tornare",
+          "start": 65.498,
+          "end": 65.798
+        },
+        {
+          "text": "indietro",
+          "start": 65.838,
+          "end": 66.198
+        },
+        {
+          "text": "alle",
+          "start": 66.218,
+          "end": 66.358
+        },
+        {
+          "text": "fasi",
+          "start": 66.398,
+          "end": 66.598
+        },
+        {
+          "text": "iniziali.",
+          "start": 66.618,
+          "end": 67.118
+        }
+      ]
+    },
+    {
+      "start": 68.018,
+      "end": 73.739,
+      "text": "Attenzione infine agli errori di interpretazione: il Machine Learning non funziona con fenomeni casuali o",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 68.018,
+          "end": 68.478
+        },
+        {
+          "text": "infine",
+          "start": 68.518,
+          "end": 68.818
+        },
+        {
+          "text": "agli",
+          "start": 68.838,
+          "end": 68.978
+        },
+        {
+          "text": "errori",
+          "start": 68.998,
+          "end": 69.258
+        },
+        {
+          "text": "di",
+          "start": 69.318,
+          "end": 69.358
+        },
+        {
+          "text": "interpretazione:",
+          "start": 69.418,
+          "end": 70.379
+        },
+        {
+          "text": "il",
+          "start": 70.899,
+          "end": 70.979
+        },
+        {
+          "text": "Machine",
+          "start": 71.019,
+          "end": 71.299
+        },
+        {
+          "text": "Learning",
+          "start": 71.319,
+          "end": 71.699
+        },
+        {
+          "text": "non",
+          "start": 71.879,
+          "end": 72.039
+        },
+        {
+          "text": "funziona",
+          "start": 72.079,
+          "end": 72.499
+        },
+        {
+          "text": "con",
+          "start": 72.559,
+          "end": 72.679
+        },
+        {
+          "text": "fenomeni",
+          "start": 72.719,
+          "end": 73.119
+        },
+        {
+          "text": "casuali",
+          "start": 73.179,
+          "end": 73.659
+        },
+        {
+          "text": "o",
+          "start": 73.699,
+          "end": 73.739
+        }
+      ]
+    },
+    {
+      "start": 73.759,
+      "end": 80.1,
+      "text": "lotterie; soprattutto, la causalità non si inferisce mai dai soli dati — in Florida l'età",
+      "words": [
+        {
+          "text": "lotterie;",
+          "start": 73.759,
+          "end": 74.219
+        },
+        {
+          "text": "soprattutto,",
+          "start": 74.919,
+          "end": 75.499
+        },
+        {
+          "text": "la",
+          "start": 75.639,
+          "end": 75.719
+        },
+        {
+          "text": "causalità",
+          "start": 75.799,
+          "end": 76.399
+        },
+        {
+          "text": "non",
+          "start": 76.779,
+          "end": 76.919
+        },
+        {
+          "text": "si",
+          "start": 76.959,
+          "end": 77.019
+        },
+        {
+          "text": "inferisce",
+          "start": 77.079,
+          "end": 77.519
+        },
+        {
+          "text": "mai",
+          "start": 77.579,
+          "end": 77.819
+        },
+        {
+          "text": "dai",
+          "start": 77.899,
+          "end": 78.039
+        },
+        {
+          "text": "soli",
+          "start": 78.079,
+          "end": 78.259
+        },
+        {
+          "text": "dati",
+          "start": 78.299,
+          "end": 78.579
+        },
+        {
+          "text": "—",
+          "start": 78.579,
+          "end": 78.729
+        },
+        {
+          "text": "in",
+          "start": 79.259,
+          "end": 79.339
+        },
+        {
+          "text": "Florida",
+          "start": 79.379,
+          "end": 79.799
+        },
+        {
+          "text": "l'età",
+          "start": 79.919,
+          "end": 80.1
+        }
+      ]
+    },
+    {
+      "start": 80.14,
+      "end": 82.48,
+      "text": "media è più alta non perché il clima allunghi la vita,",
+      "words": [
+        {
+          "text": "media",
+          "start": 80.14,
+          "end": 80.38
+        },
+        {
+          "text": "è",
+          "start": 80.42,
+          "end": 80.46000000000001
+        },
+        {
+          "text": "più",
+          "start": 80.48,
+          "end": 80.58
+        },
+        {
+          "text": "alta",
+          "start": 80.7,
+          "end": 80.94
+        },
+        {
+          "text": "non",
+          "start": 81.04,
+          "end": 81.18
+        },
+        {
+          "text": "perché",
+          "start": 81.22,
+          "end": 81.42
+        },
+        {
+          "text": "il",
+          "start": 81.46,
+          "end": 81.5
+        },
+        {
+          "text": "clima",
+          "start": 81.52,
+          "end": 81.76
+        },
+        {
+          "text": "allunghi",
+          "start": 81.82,
+          "end": 82.1
+        },
+        {
+          "text": "la",
+          "start": 82.12,
+          "end": 82.18
+        },
+        {
+          "text": "vita,",
+          "start": 82.22,
+          "end": 82.48
+        }
+      ]
+    },
+    {
+      "start": 82.84,
+      "end": 84.82,
+      "text": "ma perché i pensionati vi si trasferiscono;",
+      "words": [
+        {
+          "text": "ma",
+          "start": 82.84,
+          "end": 82.9
+        },
+        {
+          "text": "perché",
+          "start": 82.96,
+          "end": 83.18
+        },
+        {
+          "text": "i",
+          "start": 83.22,
+          "end": 83.26
+        },
+        {
+          "text": "pensionati",
+          "start": 83.28,
+          "end": 83.84
+        },
+        {
+          "text": "vi",
+          "start": 83.9,
+          "end": 83.96
+        },
+        {
+          "text": "si",
+          "start": 84.02,
+          "end": 84.1
+        },
+        {
+          "text": "trasferiscono;",
+          "start": 84.14,
+          "end": 84.82
+        }
+      ]
+    },
+    {
+      "start": 85.62,
+      "end": 90.861,
+      "text": "e nel Machine Learning modelli molto potenti possono adattarsi anche a dati privi di significato,",
+      "words": [
+        {
+          "text": "e",
+          "start": 85.62,
+          "end": 85.66000000000001
+        },
+        {
+          "text": "nel",
+          "start": 85.7,
+          "end": 85.82
+        },
+        {
+          "text": "Machine",
+          "start": 85.86,
+          "end": 86.14
+        },
+        {
+          "text": "Learning",
+          "start": 86.16,
+          "end": 86.56
+        },
+        {
+          "text": "modelli",
+          "start": 86.7,
+          "end": 87.06
+        },
+        {
+          "text": "molto",
+          "start": 87.14,
+          "end": 87.4
+        },
+        {
+          "text": "potenti",
+          "start": 87.46,
+          "end": 87.98
+        },
+        {
+          "text": "possono",
+          "start": 88.16,
+          "end": 88.46
+        },
+        {
+          "text": "adattarsi",
+          "start": 88.48,
+          "end": 89.04
+        },
+        {
+          "text": "anche",
+          "start": 89.22,
+          "end": 89.46
+        },
+        {
+          "text": "a",
+          "start": 89.48,
+          "end": 89.52000000000001
+        },
+        {
+          "text": "dati",
+          "start": 89.54,
+          "end": 89.76
+        },
+        {
+          "text": "privi",
+          "start": 89.84,
+          "end": 90.06
+        },
+        {
+          "text": "di",
+          "start": 90.1,
+          "end": 90.16
+        },
+        {
+          "text": "significato,",
+          "start": 90.201,
+          "end": 90.861
+        }
+      ]
+    },
+    {
+      "start": 91.341,
+      "end": 95.061,
+      "text": "rendendo fuorvianti i risultati se la validazione non è rigorosa.",
+      "words": [
+        {
+          "text": "rendendo",
+          "start": 91.341,
+          "end": 91.681
+        },
+        {
+          "text": "fuorvianti",
+          "start": 91.781,
+          "end": 92.501
+        },
+        {
+          "text": "i",
+          "start": 92.521,
+          "end": 92.561
+        },
+        {
+          "text": "risultati",
+          "start": 92.581,
+          "end": 93.181
+        },
+        {
+          "text": "se",
+          "start": 93.321,
+          "end": 93.401
+        },
+        {
+          "text": "la",
+          "start": 93.441,
+          "end": 93.501
+        },
+        {
+          "text": "validazione",
+          "start": 93.541,
+          "end": 94.161
+        },
+        {
+          "text": "non",
+          "start": 94.341,
+          "end": 94.501
+        },
+        {
+          "text": "è",
+          "start": 94.541,
+          "end": 94.581
+        },
+        {
+          "text": "rigorosa.",
+          "start": 94.601,
+          "end": 95.061
+        }
+      ]
+    }
+  ]
+}

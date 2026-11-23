@@ -1,0 +1,1228 @@
+{
+  "duration": 85.782,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.141,
+      "text": "Il K-nearest neighbors, K-NN, rappresenta l'estremo opposto rispetto al modello lineare.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.08,
+          "end": 0.18
+        },
+        {
+          "text": "K-nearest",
+          "start": 0.3,
+          "end": 1.16
+        },
+        {
+          "text": "neighbors,",
+          "start": 1.28,
+          "end": 1.78
+        },
+        {
+          "text": "K-NN,",
+          "start": 2.06,
+          "end": 2.94
+        },
+        {
+          "text": "rappresenta",
+          "start": 3.42,
+          "end": 3.96
+        },
+        {
+          "text": "l'estremo",
+          "start": 4.02,
+          "end": 4.381
+        },
+        {
+          "text": "opposto",
+          "start": 4.401,
+          "end": 4.761
+        },
+        {
+          "text": "rispetto",
+          "start": 4.801,
+          "end": 5.141
+        },
+        {
+          "text": "al",
+          "start": 5.161,
+          "end": 5.241
+        },
+        {
+          "text": "modello",
+          "start": 5.281,
+          "end": 5.621
+        },
+        {
+          "text": "lineare.",
+          "start": 5.681,
+          "end": 6.141
+        }
+      ]
+    },
+    {
+      "start": 7.121,
+      "end": 10.801,
+      "text": "Rispetto al momento in cui avviene l'apprendimento distinguiamo due paradigmi:",
+      "words": [
+        {
+          "text": "Rispetto",
+          "start": 7.121,
+          "end": 7.441
+        },
+        {
+          "text": "al",
+          "start": 7.481,
+          "end": 7.561
+        },
+        {
+          "text": "momento",
+          "start": 7.601,
+          "end": 7.981
+        },
+        {
+          "text": "in",
+          "start": 8.021,
+          "end": 8.081
+        },
+        {
+          "text": "cui",
+          "start": 8.121,
+          "end": 8.221
+        },
+        {
+          "text": "avviene",
+          "start": 8.261,
+          "end": 8.541
+        },
+        {
+          "text": "l'apprendimento",
+          "start": 8.601,
+          "end": 9.301
+        },
+        {
+          "text": "distinguiamo",
+          "start": 9.421,
+          "end": 9.961
+        },
+        {
+          "text": "due",
+          "start": 10.041,
+          "end": 10.201
+        },
+        {
+          "text": "paradigmi:",
+          "start": 10.261,
+          "end": 10.801
+        }
+      ]
+    },
+    {
+      "start": 11.201,
+      "end": 16.482,
+      "text": "l'approccio eager — avido — che analizza subito il training set per costruire un'ipotesi globale",
+      "words": [
+        {
+          "text": "l'approccio",
+          "start": 11.201,
+          "end": 11.661
+        },
+        {
+          "text": "eager",
+          "start": 11.881,
+          "end": 12.221
+        },
+        {
+          "text": "—",
+          "start": 12.221,
+          "end": 12.371
+        },
+        {
+          "text": "avido",
+          "start": 12.622,
+          "end": 13.002
+        },
+        {
+          "text": "—",
+          "start": 13.002,
+          "end": 13.152
+        },
+        {
+          "text": "che",
+          "start": 13.442,
+          "end": 13.522
+        },
+        {
+          "text": "analizza",
+          "start": 13.562,
+          "end": 13.922
+        },
+        {
+          "text": "subito",
+          "start": 14.002,
+          "end": 14.302
+        },
+        {
+          "text": "il",
+          "start": 14.342,
+          "end": 14.402
+        },
+        {
+          "text": "training",
+          "start": 14.422,
+          "end": 14.722
+        },
+        {
+          "text": "set",
+          "start": 14.782,
+          "end": 14.982
+        },
+        {
+          "text": "per",
+          "start": 15.062,
+          "end": 15.162
+        },
+        {
+          "text": "costruire",
+          "start": 15.202,
+          "end": 15.642
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 15.682,
+          "end": 16.142
+        },
+        {
+          "text": "globale",
+          "start": 16.182,
+          "end": 16.482
+        }
+      ]
+    },
+    {
+      "start": 16.542,
+      "end": 22.303,
+      "text": "esplicita come nel modello lineare; e l'approccio lazy — pigro — che memorizza gli esempi",
+      "words": [
+        {
+          "text": "esplicita",
+          "start": 16.542,
+          "end": 17.102
+        },
+        {
+          "text": "come",
+          "start": 17.202,
+          "end": 17.362
+        },
+        {
+          "text": "nel",
+          "start": 17.402,
+          "end": 17.542
+        },
+        {
+          "text": "modello",
+          "start": 17.562,
+          "end": 17.882
+        },
+        {
+          "text": "lineare;",
+          "start": 17.942,
+          "end": 18.382
+        },
+        {
+          "text": "e",
+          "start": 18.902,
+          "end": 18.942
+        },
+        {
+          "text": "l'approccio",
+          "start": 18.982,
+          "end": 19.462
+        },
+        {
+          "text": "lazy",
+          "start": 19.582,
+          "end": 19.962
+        },
+        {
+          "text": "—",
+          "start": 19.962,
+          "end": 20.112
+        },
+        {
+          "text": "pigro",
+          "start": 20.322,
+          "end": 20.682
+        },
+        {
+          "text": "—",
+          "start": 20.682,
+          "end": 20.832
+        },
+        {
+          "text": "che",
+          "start": 21.122,
+          "end": 21.203
+        },
+        {
+          "text": "memorizza",
+          "start": 21.263,
+          "end": 21.723
+        },
+        {
+          "text": "gli",
+          "start": 21.763,
+          "end": 21.883
+        },
+        {
+          "text": "esempi",
+          "start": 21.923,
+          "end": 22.303
+        }
+      ]
+    },
+    {
+      "start": 22.363,
+      "end": 28.143,
+      "text": "e aspetta un punto di test, costruendo solo allora un'ipotesi locale ad hoc per classificare",
+      "words": [
+        {
+          "text": "e",
+          "start": 22.363,
+          "end": 22.403
+        },
+        {
+          "text": "aspetta",
+          "start": 22.423,
+          "end": 22.803
+        },
+        {
+          "text": "un",
+          "start": 22.863,
+          "end": 22.923
+        },
+        {
+          "text": "punto",
+          "start": 22.963,
+          "end": 23.223
+        },
+        {
+          "text": "di",
+          "start": 23.263,
+          "end": 23.323
+        },
+        {
+          "text": "test,",
+          "start": 23.383,
+          "end": 23.663
+        },
+        {
+          "text": "costruendo",
+          "start": 24.043,
+          "end": 24.643
+        },
+        {
+          "text": "solo",
+          "start": 24.763,
+          "end": 24.983
+        },
+        {
+          "text": "allora",
+          "start": 25.043,
+          "end": 25.403
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 25.683,
+          "end": 26.203
+        },
+        {
+          "text": "locale",
+          "start": 26.263,
+          "end": 26.603
+        },
+        {
+          "text": "ad",
+          "start": 26.803,
+          "end": 26.923
+        },
+        {
+          "text": "hoc",
+          "start": 26.963,
+          "end": 27.183
+        },
+        {
+          "text": "per",
+          "start": 27.403,
+          "end": 27.503
+        },
+        {
+          "text": "classificare",
+          "start": 27.543,
+          "end": 28.143
+        }
+      ]
+    },
+    {
+      "start": 28.183,
+      "end": 28.683,
+      "text": "quel punto.",
+      "words": [
+        {
+          "text": "quel",
+          "start": 28.183,
+          "end": 28.323
+        },
+        {
+          "text": "punto.",
+          "start": 28.363,
+          "end": 28.683
+        }
+      ]
+    },
+    {
+      "start": 29.483,
+      "end": 31.944,
+      "text": "Partiamo dall'algoritmo uno-nearest neighbor:",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 29.483,
+          "end": 29.883
+        },
+        {
+          "text": "dall'algoritmo",
+          "start": 29.943,
+          "end": 30.644
+        },
+        {
+          "text": "uno-nearest",
+          "start": 30.864,
+          "end": 31.504
+        },
+        {
+          "text": "neighbor:",
+          "start": 31.584,
+          "end": 31.944
+        }
+      ]
+    },
+    {
+      "start": 32.604,
+      "end": 37.044,
+      "text": "uno, memorizza tutti gli esempi di training x con p virgola d con p;",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 32.604,
+          "end": 32.764
+        },
+        {
+          "text": "memorizza",
+          "start": 33.244,
+          "end": 33.684
+        },
+        {
+          "text": "tutti",
+          "start": 33.764,
+          "end": 34.004
+        },
+        {
+          "text": "gli",
+          "start": 34.024,
+          "end": 34.124
+        },
+        {
+          "text": "esempi",
+          "start": 34.144,
+          "end": 34.444
+        },
+        {
+          "text": "di",
+          "start": 34.464,
+          "end": 34.524
+        },
+        {
+          "text": "training",
+          "start": 34.584,
+          "end": 34.944
+        },
+        {
+          "text": "x",
+          "start": 35.264,
+          "end": 35.304
+        },
+        {
+          "text": "con",
+          "start": 35.504,
+          "end": 35.664
+        },
+        {
+          "text": "p",
+          "start": 35.744,
+          "end": 35.784
+        },
+        {
+          "text": "virgola",
+          "start": 36.144,
+          "end": 36.524
+        },
+        {
+          "text": "d",
+          "start": 36.624,
+          "end": 36.664
+        },
+        {
+          "text": "con",
+          "start": 36.784,
+          "end": 36.944
+        },
+        {
+          "text": "p;",
+          "start": 37.004,
+          "end": 37.044
+        }
+      ]
+    },
+    {
+      "start": 37.804,
+      "end": 43.745,
+      "text": "due, dato un nuovo input x, trova l'esempio più vicino i di x uguale arg-min",
+      "words": [
+        {
+          "text": "due,",
+          "start": 37.804,
+          "end": 37.984
+        },
+        {
+          "text": "dato",
+          "start": 38.464,
+          "end": 38.665
+        },
+        {
+          "text": "un",
+          "start": 38.685,
+          "end": 38.745
+        },
+        {
+          "text": "nuovo",
+          "start": 38.785,
+          "end": 39.025
+        },
+        {
+          "text": "input",
+          "start": 39.105,
+          "end": 39.385
+        },
+        {
+          "text": "x,",
+          "start": 39.665,
+          "end": 39.705
+        },
+        {
+          "text": "trova",
+          "start": 40.185,
+          "end": 40.405
+        },
+        {
+          "text": "l'esempio",
+          "start": 40.445,
+          "end": 40.825
+        },
+        {
+          "text": "più",
+          "start": 40.865,
+          "end": 40.965
+        },
+        {
+          "text": "vicino",
+          "start": 41.025,
+          "end": 41.425
+        },
+        {
+          "text": "i",
+          "start": 41.745,
+          "end": 41.785
+        },
+        {
+          "text": "di",
+          "start": 41.865,
+          "end": 41.945
+        },
+        {
+          "text": "x",
+          "start": 42.165,
+          "end": 42.205
+        },
+        {
+          "text": "uguale",
+          "start": 42.505,
+          "end": 42.885
+        },
+        {
+          "text": "arg-min",
+          "start": 43.105,
+          "end": 43.745
+        }
+      ]
+    },
+    {
+      "start": 44.005,
+      "end": 48.166,
+      "text": "su p della distanza d tra x e x con p — ad esempio la",
+      "words": [
+        {
+          "text": "su",
+          "start": 44.005,
+          "end": 44.085
+        },
+        {
+          "text": "p",
+          "start": 44.225,
+          "end": 44.265
+        },
+        {
+          "text": "della",
+          "start": 44.565,
+          "end": 44.805
+        },
+        {
+          "text": "distanza",
+          "start": 44.865,
+          "end": 45.305
+        },
+        {
+          "text": "d",
+          "start": 45.445,
+          "end": 45.485
+        },
+        {
+          "text": "tra",
+          "start": 45.705,
+          "end": 45.825
+        },
+        {
+          "text": "x",
+          "start": 46.125,
+          "end": 46.165
+        },
+        {
+          "text": "e",
+          "start": 46.465,
+          "end": 46.505
+        },
+        {
+          "text": "x",
+          "start": 46.685,
+          "end": 46.725
+        },
+        {
+          "text": "con",
+          "start": 46.825,
+          "end": 46.985
+        },
+        {
+          "text": "p",
+          "start": 47.045,
+          "end": 47.085
+        },
+        {
+          "text": "—",
+          "start": 47.085,
+          "end": 47.235
+        },
+        {
+          "text": "ad",
+          "start": 47.626,
+          "end": 47.706
+        },
+        {
+          "text": "esempio",
+          "start": 47.726,
+          "end": 48.046
+        },
+        {
+          "text": "la",
+          "start": 48.106,
+          "end": 48.166
+        }
+      ]
+    },
+    {
+      "start": 48.206,
+      "end": 52.786,
+      "text": "distanza euclidea, radice della somma dei quadrati delle differenze componente per componente;",
+      "words": [
+        {
+          "text": "distanza",
+          "start": 48.206,
+          "end": 48.566
+        },
+        {
+          "text": "euclidea,",
+          "start": 48.606,
+          "end": 49.066
+        },
+        {
+          "text": "radice",
+          "start": 49.386,
+          "end": 49.706
+        },
+        {
+          "text": "della",
+          "start": 49.746,
+          "end": 49.886
+        },
+        {
+          "text": "somma",
+          "start": 49.926,
+          "end": 50.146
+        },
+        {
+          "text": "dei",
+          "start": 50.186,
+          "end": 50.286
+        },
+        {
+          "text": "quadrati",
+          "start": 50.306,
+          "end": 50.686
+        },
+        {
+          "text": "delle",
+          "start": 50.746,
+          "end": 50.906
+        },
+        {
+          "text": "differenze",
+          "start": 50.926,
+          "end": 51.406
+        },
+        {
+          "text": "componente",
+          "start": 51.486,
+          "end": 52.006
+        },
+        {
+          "text": "per",
+          "start": 52.046,
+          "end": 52.146
+        },
+        {
+          "text": "componente;",
+          "start": 52.186,
+          "end": 52.786
+        }
+      ]
+    },
+    {
+      "start": 53.446,
+      "end": 57.067,
+      "text": "tre, restituisci direttamente il target d con i di x.",
+      "words": [
+        {
+          "text": "tre,",
+          "start": 53.446,
+          "end": 53.566
+        },
+        {
+          "text": "restituisci",
+          "start": 54.046,
+          "end": 54.546
+        },
+        {
+          "text": "direttamente",
+          "start": 54.606,
+          "end": 55.106
+        },
+        {
+          "text": "il",
+          "start": 55.146,
+          "end": 55.206
+        },
+        {
+          "text": "target",
+          "start": 55.266,
+          "end": 55.687
+        },
+        {
+          "text": "d",
+          "start": 55.947,
+          "end": 55.987
+        },
+        {
+          "text": "con",
+          "start": 56.247,
+          "end": 56.467
+        },
+        {
+          "text": "i",
+          "start": 56.527,
+          "end": 56.567
+        },
+        {
+          "text": "di",
+          "start": 56.767,
+          "end": 56.847
+        },
+        {
+          "text": "x.",
+          "start": 57.027,
+          "end": 57.067
+        }
+      ]
+    },
+    {
+      "start": 57.967,
+      "end": 64.188,
+      "text": "Il 1-NN è estremamente flessibile: sul training set commette esattamente zero errori perché ogni punto",
+      "words": [
+        {
+          "text": "Il",
+          "start": 57.967,
+          "end": 58.067
+        },
+        {
+          "text": "1-NN",
+          "start": 58.467,
+          "end": 58.807
+        },
+        {
+          "text": "è",
+          "start": 59.007,
+          "end": 59.047
+        },
+        {
+          "text": "estremamente",
+          "start": 59.107,
+          "end": 59.627
+        },
+        {
+          "text": "flessibile:",
+          "start": 59.687,
+          "end": 60.247
+        },
+        {
+          "text": "sul",
+          "start": 60.587,
+          "end": 60.727
+        },
+        {
+          "text": "training",
+          "start": 60.767,
+          "end": 61.107
+        },
+        {
+          "text": "set",
+          "start": 61.167,
+          "end": 61.407
+        },
+        {
+          "text": "commette",
+          "start": 61.547,
+          "end": 61.867
+        },
+        {
+          "text": "esattamente",
+          "start": 61.927,
+          "end": 62.447
+        },
+        {
+          "text": "zero",
+          "start": 62.587,
+          "end": 62.827
+        },
+        {
+          "text": "errori",
+          "start": 62.887,
+          "end": 63.287
+        },
+        {
+          "text": "perché",
+          "start": 63.327,
+          "end": 63.547
+        },
+        {
+          "text": "ogni",
+          "start": 63.667,
+          "end": 63.847
+        },
+        {
+          "text": "punto",
+          "start": 63.907,
+          "end": 64.188
+        }
+      ]
+    },
+    {
+      "start": 64.228,
+      "end": 66.008,
+      "text": "è il vicino più prossimo di se stesso.",
+      "words": [
+        {
+          "text": "è",
+          "start": 64.228,
+          "end": 64.268
+        },
+        {
+          "text": "il",
+          "start": 64.288,
+          "end": 64.348
+        },
+        {
+          "text": "vicino",
+          "start": 64.388,
+          "end": 64.668
+        },
+        {
+          "text": "più",
+          "start": 64.728,
+          "end": 64.828
+        },
+        {
+          "text": "prossimo",
+          "start": 64.908,
+          "end": 65.328
+        },
+        {
+          "text": "di",
+          "start": 65.368,
+          "end": 65.428
+        },
+        {
+          "text": "se",
+          "start": 65.488,
+          "end": 65.548
+        },
+        {
+          "text": "stesso.",
+          "start": 65.628,
+          "end": 66.008
+        }
+      ]
+    },
+    {
+      "start": 66.808,
+      "end": 71.488,
+      "text": "Implicitamente usa il diagramma di Voronoi, mostrato a destra su ventidue esempi reali:",
+      "words": [
+        {
+          "text": "Implicitamente",
+          "start": 66.808,
+          "end": 67.568
+        },
+        {
+          "text": "usa",
+          "start": 67.648,
+          "end": 67.808
+        },
+        {
+          "text": "il",
+          "start": 67.848,
+          "end": 67.908
+        },
+        {
+          "text": "diagramma",
+          "start": 67.928,
+          "end": 68.348
+        },
+        {
+          "text": "di",
+          "start": 68.408,
+          "end": 68.468
+        },
+        {
+          "text": "Voronoi,",
+          "start": 68.508,
+          "end": 68.988
+        },
+        {
+          "text": "mostrato",
+          "start": 69.308,
+          "end": 69.728
+        },
+        {
+          "text": "a",
+          "start": 69.748,
+          "end": 69.78800000000001
+        },
+        {
+          "text": "destra",
+          "start": 69.848,
+          "end": 70.168
+        },
+        {
+          "text": "su",
+          "start": 70.228,
+          "end": 70.288
+        },
+        {
+          "text": "ventidue",
+          "start": 70.388,
+          "end": 70.768
+        },
+        {
+          "text": "esempi",
+          "start": 70.808,
+          "end": 71.108
+        },
+        {
+          "text": "reali:",
+          "start": 71.168,
+          "end": 71.488
+        }
+      ]
+    },
+    {
+      "start": 72.048,
+      "end": 75.46900000000001,
+      "text": "ogni cella contiene i punti dello spazio più vicini a un dato esempio che a",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 72.048,
+          "end": 72.188
+        },
+        {
+          "text": "cella",
+          "start": 72.248,
+          "end": 72.448
+        },
+        {
+          "text": "contiene",
+          "start": 72.488,
+          "end": 72.789
+        },
+        {
+          "text": "i",
+          "start": 72.829,
+          "end": 72.869
+        },
+        {
+          "text": "punti",
+          "start": 72.889,
+          "end": 73.129
+        },
+        {
+          "text": "dello",
+          "start": 73.169,
+          "end": 73.329
+        },
+        {
+          "text": "spazio",
+          "start": 73.349,
+          "end": 73.669
+        },
+        {
+          "text": "più",
+          "start": 73.729,
+          "end": 73.829
+        },
+        {
+          "text": "vicini",
+          "start": 73.889,
+          "end": 74.209
+        },
+        {
+          "text": "a",
+          "start": 74.269,
+          "end": 74.30900000000001
+        },
+        {
+          "text": "un",
+          "start": 74.349,
+          "end": 74.429
+        },
+        {
+          "text": "dato",
+          "start": 74.469,
+          "end": 74.689
+        },
+        {
+          "text": "esempio",
+          "start": 74.749,
+          "end": 75.209
+        },
+        {
+          "text": "che",
+          "start": 75.309,
+          "end": 75.389
+        },
+        {
+          "text": "a",
+          "start": 75.429,
+          "end": 75.46900000000001
+        }
+      ]
+    },
+    {
+      "start": 75.489,
+      "end": 79.029,
+      "text": "qualunque altro, i lati grigi separano celle della stessa classe,",
+      "words": [
+        {
+          "text": "qualunque",
+          "start": 75.489,
+          "end": 75.869
+        },
+        {
+          "text": "altro,",
+          "start": 75.969,
+          "end": 76.249
+        },
+        {
+          "text": "i",
+          "start": 76.769,
+          "end": 76.80900000000001
+        },
+        {
+          "text": "lati",
+          "start": 76.849,
+          "end": 77.049
+        },
+        {
+          "text": "grigi",
+          "start": 77.089,
+          "end": 77.369
+        },
+        {
+          "text": "separano",
+          "start": 77.449,
+          "end": 77.829
+        },
+        {
+          "text": "celle",
+          "start": 77.909,
+          "end": 78.109
+        },
+        {
+          "text": "della",
+          "start": 78.149,
+          "end": 78.309
+        },
+        {
+          "text": "stessa",
+          "start": 78.329,
+          "end": 78.589
+        },
+        {
+          "text": "classe,",
+          "start": 78.629,
+          "end": 79.029
+        }
+      ]
+    },
+    {
+      "start": 79.329,
+      "end": 83.83,
+      "text": "mentre i lati neri tra celle di classi diverse formano un confine di decisione non",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 79.329,
+          "end": 79.589
+        },
+        {
+          "text": "i",
+          "start": 79.629,
+          "end": 79.66900000000001
+        },
+        {
+          "text": "lati",
+          "start": 79.709,
+          "end": 79.889
+        },
+        {
+          "text": "neri",
+          "start": 79.929,
+          "end": 80.169
+        },
+        {
+          "text": "tra",
+          "start": 80.229,
+          "end": 80.329
+        },
+        {
+          "text": "celle",
+          "start": 80.409,
+          "end": 80.649
+        },
+        {
+          "text": "di",
+          "start": 80.709,
+          "end": 80.769
+        },
+        {
+          "text": "classi",
+          "start": 80.809,
+          "end": 81.069
+        },
+        {
+          "text": "diverse",
+          "start": 81.109,
+          "end": 81.59
+        },
+        {
+          "text": "formano",
+          "start": 81.89,
+          "end": 82.25
+        },
+        {
+          "text": "un",
+          "start": 82.29,
+          "end": 82.35
+        },
+        {
+          "text": "confine",
+          "start": 82.41,
+          "end": 82.87
+        },
+        {
+          "text": "di",
+          "start": 82.93,
+          "end": 82.99
+        },
+        {
+          "text": "decisione",
+          "start": 83.05,
+          "end": 83.55
+        },
+        {
+          "text": "non",
+          "start": 83.67,
+          "end": 83.83
+        }
+      ]
+    },
+    {
+      "start": 83.87,
+      "end": 85.53,
+      "text": "lineare e molto irregolare.",
+      "words": [
+        {
+          "text": "lineare",
+          "start": 83.87,
+          "end": 84.37
+        },
+        {
+          "text": "e",
+          "start": 84.53,
+          "end": 84.57000000000001
+        },
+        {
+          "text": "molto",
+          "start": 84.67,
+          "end": 84.93
+        },
+        {
+          "text": "irregolare.",
+          "start": 84.97,
+          "end": 85.53
+        }
+      ]
+    }
+  ]
+}

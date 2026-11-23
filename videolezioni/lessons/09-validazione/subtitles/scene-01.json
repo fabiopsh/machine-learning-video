@@ -1,0 +1,1373 @@
+{
+  "duration": 97.869,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.32,
+      "text": "La prestazione reale di un sistema di Machine Learning è la sua accuratezza predittiva su",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "prestazione",
+          "start": 0.2,
+          "end": 0.76
+        },
+        {
+          "text": "reale",
+          "start": 0.82,
+          "end": 1.1
+        },
+        {
+          "text": "di",
+          "start": 1.14,
+          "end": 1.2
+        },
+        {
+          "text": "un",
+          "start": 1.22,
+          "end": 1.3
+        },
+        {
+          "text": "sistema",
+          "start": 1.34,
+          "end": 1.7
+        },
+        {
+          "text": "di",
+          "start": 1.74,
+          "end": 1.8
+        },
+        {
+          "text": "Machine",
+          "start": 1.84,
+          "end": 2.18
+        },
+        {
+          "text": "Learning",
+          "start": 2.22,
+          "end": 2.6
+        },
+        {
+          "text": "è",
+          "start": 2.72,
+          "end": 2.7600000000000002
+        },
+        {
+          "text": "la",
+          "start": 2.8,
+          "end": 2.86
+        },
+        {
+          "text": "sua",
+          "start": 2.92,
+          "end": 3.06
+        },
+        {
+          "text": "accuratezza",
+          "start": 3.1,
+          "end": 3.64
+        },
+        {
+          "text": "predittiva",
+          "start": 3.68,
+          "end": 4.16
+        },
+        {
+          "text": "su",
+          "start": 4.26,
+          "end": 4.32
+        }
+      ]
+    },
+    {
+      "start": 4.38,
+      "end": 9.741,
+      "text": "dati nuovi: le prestazioni sui dati di training danno sempre una valutazione troppo ottimistica.",
+      "words": [
+        {
+          "text": "dati",
+          "start": 4.38,
+          "end": 4.601
+        },
+        {
+          "text": "nuovi:",
+          "start": 4.661,
+          "end": 4.961
+        },
+        {
+          "text": "le",
+          "start": 5.481,
+          "end": 5.541
+        },
+        {
+          "text": "prestazioni",
+          "start": 5.581,
+          "end": 6.121
+        },
+        {
+          "text": "sui",
+          "start": 6.181,
+          "end": 6.321
+        },
+        {
+          "text": "dati",
+          "start": 6.341,
+          "end": 6.541
+        },
+        {
+          "text": "di",
+          "start": 6.581,
+          "end": 6.641
+        },
+        {
+          "text": "training",
+          "start": 6.701,
+          "end": 7.061
+        },
+        {
+          "text": "danno",
+          "start": 7.181,
+          "end": 7.401
+        },
+        {
+          "text": "sempre",
+          "start": 7.521,
+          "end": 7.921
+        },
+        {
+          "text": "una",
+          "start": 8.061,
+          "end": 8.181
+        },
+        {
+          "text": "valutazione",
+          "start": 8.221,
+          "end": 8.781
+        },
+        {
+          "text": "troppo",
+          "start": 8.821,
+          "end": 9.061
+        },
+        {
+          "text": "ottimistica.",
+          "start": 9.101,
+          "end": 9.741
+        }
+      ]
+    },
+    {
+      "start": 10.681,
+      "end": 14.362,
+      "text": "All'inizio dell'addestramento o con modelli rigidi c'è troppo bias,",
+      "words": [
+        {
+          "text": "All'inizio",
+          "start": 10.681,
+          "end": 11.101
+        },
+        {
+          "text": "dell'addestramento",
+          "start": 11.161,
+          "end": 12.041
+        },
+        {
+          "text": "o",
+          "start": 12.281,
+          "end": 12.321
+        },
+        {
+          "text": "con",
+          "start": 12.501,
+          "end": 12.621
+        },
+        {
+          "text": "modelli",
+          "start": 12.661,
+          "end": 12.961
+        },
+        {
+          "text": "rigidi",
+          "start": 13.021,
+          "end": 13.341
+        },
+        {
+          "text": "c'è",
+          "start": 13.401,
+          "end": 13.501
+        },
+        {
+          "text": "troppo",
+          "start": 13.581,
+          "end": 13.821
+        },
+        {
+          "text": "bias,",
+          "start": 13.881,
+          "end": 14.362
+        }
+      ]
+    },
+    {
+      "start": 14.562,
+      "end": 20.242,
+      "text": "cioè underfitting e errore di training alto; alla fine o con modelli troppo complessi c'è",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 14.562,
+          "end": 14.702
+        },
+        {
+          "text": "underfitting",
+          "start": 14.942,
+          "end": 15.702
+        },
+        {
+          "text": "e",
+          "start": 15.902,
+          "end": 15.942
+        },
+        {
+          "text": "errore",
+          "start": 16.202,
+          "end": 16.622
+        },
+        {
+          "text": "di",
+          "start": 16.662,
+          "end": 16.722
+        },
+        {
+          "text": "training",
+          "start": 16.782,
+          "end": 17.122
+        },
+        {
+          "text": "alto;",
+          "start": 17.222,
+          "end": 17.482
+        },
+        {
+          "text": "alla",
+          "start": 18.022,
+          "end": 18.182
+        },
+        {
+          "text": "fine",
+          "start": 18.242,
+          "end": 18.522
+        },
+        {
+          "text": "o",
+          "start": 18.682,
+          "end": 18.722
+        },
+        {
+          "text": "con",
+          "start": 18.882,
+          "end": 19.002
+        },
+        {
+          "text": "modelli",
+          "start": 19.042,
+          "end": 19.322
+        },
+        {
+          "text": "troppo",
+          "start": 19.362,
+          "end": 19.582
+        },
+        {
+          "text": "complessi",
+          "start": 19.622,
+          "end": 20.102
+        },
+        {
+          "text": "c'è",
+          "start": 20.162,
+          "end": 20.242
+        }
+      ]
+    },
+    {
+      "start": 20.282,
+      "end": 24.083,
+      "text": "troppa varianza, cioè errore di training basso ma overfitting.",
+      "words": [
+        {
+          "text": "troppa",
+          "start": 20.282,
+          "end": 20.542
+        },
+        {
+          "text": "varianza,",
+          "start": 20.582,
+          "end": 21.082
+        },
+        {
+          "text": "cioè",
+          "start": 21.402,
+          "end": 21.522
+        },
+        {
+          "text": "errore",
+          "start": 21.662,
+          "end": 21.962
+        },
+        {
+          "text": "di",
+          "start": 22.022,
+          "end": 22.082
+        },
+        {
+          "text": "training",
+          "start": 22.142,
+          "end": 22.462
+        },
+        {
+          "text": "basso",
+          "start": 22.522,
+          "end": 22.902
+        },
+        {
+          "text": "ma",
+          "start": 22.982,
+          "end": 23.062
+        },
+        {
+          "text": "overfitting.",
+          "start": 23.342,
+          "end": 24.083
+        }
+      ]
+    },
+    {
+      "start": 24.703,
+      "end": 29.863,
+      "text": "Inoltre, come abbiamo visto nel capitolo precedente, a parità di complessità l'errore di test varia",
+      "words": [
+        {
+          "text": "Inoltre,",
+          "start": 24.703,
+          "end": 25.103
+        },
+        {
+          "text": "come",
+          "start": 25.183,
+          "end": 25.343
+        },
+        {
+          "text": "abbiamo",
+          "start": 25.383,
+          "end": 25.603
+        },
+        {
+          "text": "visto",
+          "start": 25.643,
+          "end": 25.843
+        },
+        {
+          "text": "nel",
+          "start": 25.903,
+          "end": 26.003
+        },
+        {
+          "text": "capitolo",
+          "start": 26.043,
+          "end": 26.423
+        },
+        {
+          "text": "precedente,",
+          "start": 26.463,
+          "end": 27.043
+        },
+        {
+          "text": "a",
+          "start": 27.383,
+          "end": 27.423
+        },
+        {
+          "text": "parità",
+          "start": 27.463,
+          "end": 27.723
+        },
+        {
+          "text": "di",
+          "start": 27.783,
+          "end": 27.843
+        },
+        {
+          "text": "complessità",
+          "start": 27.883,
+          "end": 28.423
+        },
+        {
+          "text": "l'errore",
+          "start": 28.583,
+          "end": 28.923
+        },
+        {
+          "text": "di",
+          "start": 28.983,
+          "end": 29.043
+        },
+        {
+          "text": "test",
+          "start": 29.083,
+          "end": 29.343
+        },
+        {
+          "text": "varia",
+          "start": 29.503,
+          "end": 29.863
+        }
+      ]
+    },
+    {
+      "start": 29.963,
+      "end": 31.723,
+      "text": "molto da un training set all'altro.",
+      "words": [
+        {
+          "text": "molto",
+          "start": 29.963,
+          "end": 30.303
+        },
+        {
+          "text": "da",
+          "start": 30.343,
+          "end": 30.403
+        },
+        {
+          "text": "un",
+          "start": 30.443,
+          "end": 30.503
+        },
+        {
+          "text": "training",
+          "start": 30.543,
+          "end": 30.863
+        },
+        {
+          "text": "set",
+          "start": 30.943,
+          "end": 31.143
+        },
+        {
+          "text": "all'altro.",
+          "start": 31.223,
+          "end": 31.723
+        }
+      ]
+    },
+    {
+      "start": 32.603,
+      "end": 38.804,
+      "text": "Un iperparametro theta, implicito o esplicito, regola la complessità del modello e vogliamo trovare il",
+      "words": [
+        {
+          "text": "Un",
+          "start": 32.603,
+          "end": 32.683
+        },
+        {
+          "text": "iperparametro",
+          "start": 32.723,
+          "end": 33.544
+        },
+        {
+          "text": "theta,",
+          "start": 33.784,
+          "end": 34.124
+        },
+        {
+          "text": "implicito",
+          "start": 34.324,
+          "end": 34.924
+        },
+        {
+          "text": "o",
+          "start": 35.084,
+          "end": 35.124
+        },
+        {
+          "text": "esplicito,",
+          "start": 35.204,
+          "end": 35.804
+        },
+        {
+          "text": "regola",
+          "start": 36.204,
+          "end": 36.484
+        },
+        {
+          "text": "la",
+          "start": 36.524,
+          "end": 36.584
+        },
+        {
+          "text": "complessità",
+          "start": 36.624,
+          "end": 37.084
+        },
+        {
+          "text": "del",
+          "start": 37.144,
+          "end": 37.244
+        },
+        {
+          "text": "modello",
+          "start": 37.284,
+          "end": 37.704
+        },
+        {
+          "text": "e",
+          "start": 37.844,
+          "end": 37.884
+        },
+        {
+          "text": "vogliamo",
+          "start": 38.024,
+          "end": 38.384
+        },
+        {
+          "text": "trovare",
+          "start": 38.424,
+          "end": 38.704
+        },
+        {
+          "text": "il",
+          "start": 38.744,
+          "end": 38.804
+        }
+      ]
+    },
+    {
+      "start": 38.824,
+      "end": 41.664,
+      "text": "valore di theta che minimizza l'errore di test.",
+      "words": [
+        {
+          "text": "valore",
+          "start": 38.824,
+          "end": 39.104
+        },
+        {
+          "text": "di",
+          "start": 39.144,
+          "end": 39.224
+        },
+        {
+          "text": "theta",
+          "start": 39.284,
+          "end": 39.584
+        },
+        {
+          "text": "che",
+          "start": 39.864,
+          "end": 39.964
+        },
+        {
+          "text": "minimizza",
+          "start": 40.064,
+          "end": 40.624
+        },
+        {
+          "text": "l'errore",
+          "start": 40.724,
+          "end": 41.124
+        },
+        {
+          "text": "di",
+          "start": 41.184,
+          "end": 41.264
+        },
+        {
+          "text": "test.",
+          "start": 41.344,
+          "end": 41.664
+        }
+      ]
+    },
+    {
+      "start": 42.885,
+      "end": 45.925,
+      "text": "Oltre ai metodi analitici visti nella Statistical Learning Theory,",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 42.885,
+          "end": 43.145
+        },
+        {
+          "text": "ai",
+          "start": 43.165,
+          "end": 43.225
+        },
+        {
+          "text": "metodi",
+          "start": 43.265,
+          "end": 43.585
+        },
+        {
+          "text": "analitici",
+          "start": 43.645,
+          "end": 44.165
+        },
+        {
+          "text": "visti",
+          "start": 44.225,
+          "end": 44.445
+        },
+        {
+          "text": "nella",
+          "start": 44.505,
+          "end": 44.685
+        },
+        {
+          "text": "Statistical",
+          "start": 44.745,
+          "end": 45.285
+        },
+        {
+          "text": "Learning",
+          "start": 45.305,
+          "end": 45.585
+        },
+        {
+          "text": "Theory,",
+          "start": 45.605,
+          "end": 45.925
+        }
+      ]
+    },
+    {
+      "start": 46.305,
+      "end": 49.885,
+      "text": "la validazione usa metodi empirici basati sul ricampionamento dei dati:",
+      "words": [
+        {
+          "text": "la",
+          "start": 46.305,
+          "end": 46.385
+        },
+        {
+          "text": "validazione",
+          "start": 46.405,
+          "end": 46.965
+        },
+        {
+          "text": "usa",
+          "start": 47.045,
+          "end": 47.165
+        },
+        {
+          "text": "metodi",
+          "start": 47.225,
+          "end": 47.505
+        },
+        {
+          "text": "empirici",
+          "start": 47.565,
+          "end": 48.065
+        },
+        {
+          "text": "basati",
+          "start": 48.105,
+          "end": 48.425
+        },
+        {
+          "text": "sul",
+          "start": 48.485,
+          "end": 48.605
+        },
+        {
+          "text": "ricampionamento",
+          "start": 48.645,
+          "end": 49.365
+        },
+        {
+          "text": "dei",
+          "start": 49.425,
+          "end": 49.545
+        },
+        {
+          "text": "dati:",
+          "start": 49.585,
+          "end": 49.885
+        }
+      ]
+    },
+    {
+      "start": 50.205,
+      "end": 52.145,
+      "text": "cross-validation e bootstrap.",
+      "words": [
+        {
+          "text": "cross-validation",
+          "start": 50.205,
+          "end": 51.205
+        },
+        {
+          "text": "e",
+          "start": 51.445,
+          "end": 51.485
+        },
+        {
+          "text": "bootstrap.",
+          "start": 51.565,
+          "end": 52.145
+        }
+      ]
+    },
+    {
+      "start": 53.506,
+      "end": 57.606,
+      "text": "Occorre distinguere nettamente due obiettivi diversi dopo l'addestramento sul training set.",
+      "words": [
+        {
+          "text": "Occorre",
+          "start": 53.506,
+          "end": 53.786
+        },
+        {
+          "text": "distinguere",
+          "start": 53.846,
+          "end": 54.266
+        },
+        {
+          "text": "nettamente",
+          "start": 54.346,
+          "end": 54.806
+        },
+        {
+          "text": "due",
+          "start": 54.926,
+          "end": 55.106
+        },
+        {
+          "text": "obiettivi",
+          "start": 55.146,
+          "end": 55.506
+        },
+        {
+          "text": "diversi",
+          "start": 55.546,
+          "end": 55.906
+        },
+        {
+          "text": "dopo",
+          "start": 55.966,
+          "end": 56.146
+        },
+        {
+          "text": "l'addestramento",
+          "start": 56.186,
+          "end": 56.766
+        },
+        {
+          "text": "sul",
+          "start": 56.806,
+          "end": 56.946
+        },
+        {
+          "text": "training",
+          "start": 56.986,
+          "end": 57.306
+        },
+        {
+          "text": "set.",
+          "start": 57.366,
+          "end": 57.606
+        }
+      ]
+    },
+    {
+      "start": 59.246,
+      "end": 65.037,
+      "text": "La model selection stima l'errore di generalizzazione di modelli diversi e configurazioni di iperparametri —",
+      "words": [
+        {
+          "text": "La",
+          "start": 59.246,
+          "end": 59.306
+        },
+        {
+          "text": "model",
+          "start": 59.366,
+          "end": 59.606
+        },
+        {
+          "text": "selection",
+          "start": 59.686,
+          "end": 60.166
+        },
+        {
+          "text": "stima",
+          "start": 60.546,
+          "end": 60.786
+        },
+        {
+          "text": "l'errore",
+          "start": 60.826,
+          "end": 61.166
+        },
+        {
+          "text": "di",
+          "start": 61.226,
+          "end": 61.286
+        },
+        {
+          "text": "generalizzazione",
+          "start": 61.366,
+          "end": 62.207
+        },
+        {
+          "text": "di",
+          "start": 62.267,
+          "end": 62.307
+        },
+        {
+          "text": "modelli",
+          "start": 62.347,
+          "end": 62.627
+        },
+        {
+          "text": "diversi",
+          "start": 62.667,
+          "end": 63.087
+        },
+        {
+          "text": "e",
+          "start": 63.127,
+          "end": 63.167
+        },
+        {
+          "text": "configurazioni",
+          "start": 63.207,
+          "end": 63.907
+        },
+        {
+          "text": "di",
+          "start": 63.967,
+          "end": 64.027
+        },
+        {
+          "text": "iperparametri",
+          "start": 64.087,
+          "end": 64.887
+        },
+        {
+          "text": "—",
+          "start": 64.887,
+          "end": 65.037
+        }
+      ]
+    },
+    {
+      "start": 65.227,
+      "end": 67.987,
+      "text": "come il grado del polinomio, il numero di unità nascoste,",
+      "words": [
+        {
+          "text": "come",
+          "start": 65.227,
+          "end": 65.367
+        },
+        {
+          "text": "il",
+          "start": 65.387,
+          "end": 65.447
+        },
+        {
+          "text": "grado",
+          "start": 65.487,
+          "end": 65.707
+        },
+        {
+          "text": "del",
+          "start": 65.747,
+          "end": 65.847
+        },
+        {
+          "text": "polinomio,",
+          "start": 65.907,
+          "end": 66.487
+        },
+        {
+          "text": "il",
+          "start": 66.627,
+          "end": 66.707
+        },
+        {
+          "text": "numero",
+          "start": 66.747,
+          "end": 67.007
+        },
+        {
+          "text": "di",
+          "start": 67.047,
+          "end": 67.107
+        },
+        {
+          "text": "unità",
+          "start": 67.147,
+          "end": 67.347
+        },
+        {
+          "text": "nascoste,",
+          "start": 67.407,
+          "end": 67.987
+        }
+      ]
+    },
+    {
+      "start": 68.167,
+      "end": 70.367,
+      "text": "lambda o eta — per scegliere il migliore:",
+      "words": [
+        {
+          "text": "lambda",
+          "start": 68.167,
+          "end": 68.567
+        },
+        {
+          "text": "o",
+          "start": 68.767,
+          "end": 68.807
+        },
+        {
+          "text": "eta",
+          "start": 68.927,
+          "end": 69.147
+        },
+        {
+          "text": "—",
+          "start": 69.147,
+          "end": 69.297
+        },
+        {
+          "text": "per",
+          "start": 69.287,
+          "end": 69.407
+        },
+        {
+          "text": "scegliere",
+          "start": 69.447,
+          "end": 69.787
+        },
+        {
+          "text": "il",
+          "start": 69.827,
+          "end": 69.887
+        },
+        {
+          "text": "migliore:",
+          "start": 69.907,
+          "end": 70.367
+        }
+      ]
+    },
+    {
+      "start": 70.927,
+      "end": 72.208,
+      "text": "restituisce un modello.",
+      "words": [
+        {
+          "text": "restituisce",
+          "start": 70.927,
+          "end": 71.608
+        },
+        {
+          "text": "un",
+          "start": 71.668,
+          "end": 71.748
+        },
+        {
+          "text": "modello.",
+          "start": 71.768,
+          "end": 72.208
+        }
+      ]
+    },
+    {
+      "start": 73.248,
+      "end": 77.368,
+      "text": "Il model assessment, scelto il modello finale, ne stima l'errore di predizione,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 73.248,
+          "end": 73.368
+        },
+        {
+          "text": "model",
+          "start": 73.448,
+          "end": 73.708
+        },
+        {
+          "text": "assessment,",
+          "start": 73.748,
+          "end": 74.368
+        },
+        {
+          "text": "scelto",
+          "start": 74.668,
+          "end": 74.988
+        },
+        {
+          "text": "il",
+          "start": 74.988,
+          "end": 75.028
+        },
+        {
+          "text": "modello",
+          "start": 75.048,
+          "end": 75.308
+        },
+        {
+          "text": "finale,",
+          "start": 75.348,
+          "end": 75.728
+        },
+        {
+          "text": "ne",
+          "start": 75.848,
+          "end": 75.928
+        },
+        {
+          "text": "stima",
+          "start": 75.988,
+          "end": 76.208
+        },
+        {
+          "text": "l'errore",
+          "start": 76.248,
+          "end": 76.568
+        },
+        {
+          "text": "di",
+          "start": 76.628,
+          "end": 76.688
+        },
+        {
+          "text": "predizione,",
+          "start": 76.728,
+          "end": 77.368
+        }
+      ]
+    },
+    {
+      "start": 77.468,
+      "end": 81.709,
+      "text": "cioè il rischio vero, su dati di test nuovi come misura della sua qualità:",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 77.468,
+          "end": 77.588
+        },
+        {
+          "text": "il",
+          "start": 77.728,
+          "end": 77.808
+        },
+        {
+          "text": "rischio",
+          "start": 77.868,
+          "end": 78.168
+        },
+        {
+          "text": "vero,",
+          "start": 78.228,
+          "end": 78.468
+        },
+        {
+          "text": "su",
+          "start": 78.868,
+          "end": 78.948
+        },
+        {
+          "text": "dati",
+          "start": 79.068,
+          "end": 79.368
+        },
+        {
+          "text": "di",
+          "start": 79.428,
+          "end": 79.488
+        },
+        {
+          "text": "test",
+          "start": 79.568,
+          "end": 79.788
+        },
+        {
+          "text": "nuovi",
+          "start": 79.928,
+          "end": 80.228
+        },
+        {
+          "text": "come",
+          "start": 80.328,
+          "end": 80.548
+        },
+        {
+          "text": "misura",
+          "start": 80.608,
+          "end": 80.948
+        },
+        {
+          "text": "della",
+          "start": 81.009,
+          "end": 81.169
+        },
+        {
+          "text": "sua",
+          "start": 81.209,
+          "end": 81.329
+        },
+        {
+          "text": "qualità:",
+          "start": 81.369,
+          "end": 81.709
+        }
+      ]
+    },
+    {
+      "start": 82.149,
+      "end": 83.429,
+      "text": "restituisce una stima.",
+      "words": [
+        {
+          "text": "restituisce",
+          "start": 82.149,
+          "end": 82.749
+        },
+        {
+          "text": "una",
+          "start": 82.929,
+          "end": 83.069
+        },
+        {
+          "text": "stima.",
+          "start": 83.129,
+          "end": 83.429
+        }
+      ]
+    },
+    {
+      "start": 84.689,
+      "end": 90.53,
+      "text": "La regola d'oro è inderogabile: tenere separati gli obiettivi e usare insiemi di dati disgiunti",
+      "words": [
+        {
+          "text": "La",
+          "start": 84.689,
+          "end": 84.749
+        },
+        {
+          "text": "regola",
+          "start": 84.809,
+          "end": 85.089
+        },
+        {
+          "text": "d'oro",
+          "start": 85.129,
+          "end": 85.429
+        },
+        {
+          "text": "è",
+          "start": 85.549,
+          "end": 85.58900000000001
+        },
+        {
+          "text": "inderogabile:",
+          "start": 85.869,
+          "end": 86.769
+        },
+        {
+          "text": "tenere",
+          "start": 86.949,
+          "end": 87.389
+        },
+        {
+          "text": "separati",
+          "start": 87.449,
+          "end": 87.869
+        },
+        {
+          "text": "gli",
+          "start": 87.869,
+          "end": 87.969
+        },
+        {
+          "text": "obiettivi",
+          "start": 87.989,
+          "end": 88.509
+        },
+        {
+          "text": "e",
+          "start": 88.649,
+          "end": 88.68900000000001
+        },
+        {
+          "text": "usare",
+          "start": 88.749,
+          "end": 88.989
+        },
+        {
+          "text": "insiemi",
+          "start": 89.029,
+          "end": 89.449
+        },
+        {
+          "text": "di",
+          "start": 89.509,
+          "end": 89.589
+        },
+        {
+          "text": "dati",
+          "start": 89.629,
+          "end": 89.909
+        },
+        {
+          "text": "disgiunti",
+          "start": 89.969,
+          "end": 90.53
+        }
+      ]
+    },
+    {
+      "start": 90.67,
+      "end": 91.35,
+      "text": "in ogni fase.",
+      "words": [
+        {
+          "text": "in",
+          "start": 90.67,
+          "end": 90.75
+        },
+        {
+          "text": "ogni",
+          "start": 90.79,
+          "end": 90.97
+        },
+        {
+          "text": "fase.",
+          "start": 91.05,
+          "end": 91.35
+        }
+      ]
+    },
+    {
+      "start": 92.05,
+      "end": 94.37,
+      "text": "Se il test set viene usato per scegliere il modello,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 92.05,
+          "end": 92.11
+        },
+        {
+          "text": "il",
+          "start": 92.17,
+          "end": 92.25
+        },
+        {
+          "text": "test",
+          "start": 92.27,
+          "end": 92.49
+        },
+        {
+          "text": "set",
+          "start": 92.61,
+          "end": 92.81
+        },
+        {
+          "text": "viene",
+          "start": 92.89,
+          "end": 93.07
+        },
+        {
+          "text": "usato",
+          "start": 93.09,
+          "end": 93.35
+        },
+        {
+          "text": "per",
+          "start": 93.39,
+          "end": 93.49
+        },
+        {
+          "text": "scegliere",
+          "start": 93.53,
+          "end": 93.87
+        },
+        {
+          "text": "il",
+          "start": 93.89,
+          "end": 93.95
+        },
+        {
+          "text": "modello,",
+          "start": 93.97,
+          "end": 94.37
+        }
+      ]
+    },
+    {
+      "start": 94.73,
+      "end": 97.49,
+      "text": "la stima finale diventa ottimistica e perde validità.",
+      "words": [
+        {
+          "text": "la",
+          "start": 94.73,
+          "end": 94.81
+        },
+        {
+          "text": "stima",
+          "start": 94.83,
+          "end": 95.03
+        },
+        {
+          "text": "finale",
+          "start": 95.07,
+          "end": 95.39
+        },
+        {
+          "text": "diventa",
+          "start": 95.43,
+          "end": 95.73
+        },
+        {
+          "text": "ottimistica",
+          "start": 95.77,
+          "end": 96.39
+        },
+        {
+          "text": "e",
+          "start": 96.59,
+          "end": 96.63000000000001
+        },
+        {
+          "text": "perde",
+          "start": 96.77,
+          "end": 97.03
+        },
+        {
+          "text": "validità.",
+          "start": 97.07,
+          "end": 97.49
+        }
+      ]
+    }
+  ]
+}

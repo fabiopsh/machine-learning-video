@@ -1,0 +1,1411 @@
+{
+  "duration": 98.032,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.68,
+      "text": "Approfondiamo i tre errori più pericolosi nella pratica della validazione.",
+      "words": [
+        {
+          "text": "Approfondiamo",
+          "start": 0.08,
+          "end": 0.7
+        },
+        {
+          "text": "i",
+          "start": 0.76,
+          "end": 0.8
+        },
+        {
+          "text": "tre",
+          "start": 0.84,
+          "end": 0.96
+        },
+        {
+          "text": "errori",
+          "start": 1.02,
+          "end": 1.32
+        },
+        {
+          "text": "più",
+          "start": 1.38,
+          "end": 1.48
+        },
+        {
+          "text": "pericolosi",
+          "start": 1.54,
+          "end": 2.12
+        },
+        {
+          "text": "nella",
+          "start": 2.16,
+          "end": 2.34
+        },
+        {
+          "text": "pratica",
+          "start": 2.38,
+          "end": 2.72
+        },
+        {
+          "text": "della",
+          "start": 2.76,
+          "end": 2.92
+        },
+        {
+          "text": "validazione.",
+          "start": 2.96,
+          "end": 3.68
+        }
+      ]
+    },
+    {
+      "start": 4.38,
+      "end": 8.541,
+      "text": "Primo errore: riprogettare il modello guardando il risultato sul test set,",
+      "words": [
+        {
+          "text": "Primo",
+          "start": 4.38,
+          "end": 4.601
+        },
+        {
+          "text": "errore:",
+          "start": 4.641,
+          "end": 4.961
+        },
+        {
+          "text": "riprogettare",
+          "start": 5.361,
+          "end": 6.141
+        },
+        {
+          "text": "il",
+          "start": 6.181,
+          "end": 6.241
+        },
+        {
+          "text": "modello",
+          "start": 6.281,
+          "end": 6.661
+        },
+        {
+          "text": "guardando",
+          "start": 6.701,
+          "end": 7.081
+        },
+        {
+          "text": "il",
+          "start": 7.101,
+          "end": 7.161
+        },
+        {
+          "text": "risultato",
+          "start": 7.181,
+          "end": 7.661
+        },
+        {
+          "text": "sul",
+          "start": 7.721,
+          "end": 7.861
+        },
+        {
+          "text": "test",
+          "start": 7.921,
+          "end": 8.161
+        },
+        {
+          "text": "set,",
+          "start": 8.281,
+          "end": 8.541
+        }
+      ]
+    },
+    {
+      "start": 8.821,
+      "end": 10.261,
+      "text": "a mano o in automatico.",
+      "words": [
+        {
+          "text": "a",
+          "start": 8.821,
+          "end": 8.861
+        },
+        {
+          "text": "mano",
+          "start": 8.961,
+          "end": 9.281
+        },
+        {
+          "text": "o",
+          "start": 9.401,
+          "end": 9.441
+        },
+        {
+          "text": "in",
+          "start": 9.501,
+          "end": 9.601
+        },
+        {
+          "text": "automatico.",
+          "start": 9.641,
+          "end": 10.261
+        }
+      ]
+    },
+    {
+      "start": 10.841,
+      "end": 14.942,
+      "text": "Ripetendo il ciclo sugli stessi dati il modello si adatta a quel particolare test set",
+      "words": [
+        {
+          "text": "Ripetendo",
+          "start": 10.841,
+          "end": 11.241
+        },
+        {
+          "text": "il",
+          "start": 11.281,
+          "end": 11.321
+        },
+        {
+          "text": "ciclo",
+          "start": 11.361,
+          "end": 11.661
+        },
+        {
+          "text": "sugli",
+          "start": 11.741,
+          "end": 11.961
+        },
+        {
+          "text": "stessi",
+          "start": 12.001,
+          "end": 12.281
+        },
+        {
+          "text": "dati",
+          "start": 12.341,
+          "end": 12.581
+        },
+        {
+          "text": "il",
+          "start": 12.601,
+          "end": 12.661
+        },
+        {
+          "text": "modello",
+          "start": 12.681,
+          "end": 13.001
+        },
+        {
+          "text": "si",
+          "start": 13.081,
+          "end": 13.121
+        },
+        {
+          "text": "adatta",
+          "start": 13.181,
+          "end": 13.461
+        },
+        {
+          "text": "a",
+          "start": 13.501,
+          "end": 13.541
+        },
+        {
+          "text": "quel",
+          "start": 13.561,
+          "end": 13.702
+        },
+        {
+          "text": "particolare",
+          "start": 13.722,
+          "end": 14.262
+        },
+        {
+          "text": "test",
+          "start": 14.362,
+          "end": 14.622
+        },
+        {
+          "text": "set",
+          "start": 14.722,
+          "end": 14.942
+        }
+      ]
+    },
+    {
+      "start": 15.342,
+      "end": 19.782,
+      "text": "e smettiamo di stimare il rischio — servirebbero dati completamente nuovi per un nuovo test",
+      "words": [
+        {
+          "text": "e",
+          "start": 15.342,
+          "end": 15.382
+        },
+        {
+          "text": "smettiamo",
+          "start": 15.462,
+          "end": 15.862
+        },
+        {
+          "text": "di",
+          "start": 15.902,
+          "end": 15.962
+        },
+        {
+          "text": "stimare",
+          "start": 16.022,
+          "end": 16.362
+        },
+        {
+          "text": "il",
+          "start": 16.382,
+          "end": 16.442
+        },
+        {
+          "text": "rischio",
+          "start": 16.482,
+          "end": 16.802
+        },
+        {
+          "text": "—",
+          "start": 16.802,
+          "end": 16.952
+        },
+        {
+          "text": "servirebbero",
+          "start": 17.202,
+          "end": 17.742
+        },
+        {
+          "text": "dati",
+          "start": 17.762,
+          "end": 17.982
+        },
+        {
+          "text": "completamente",
+          "start": 18.102,
+          "end": 18.722
+        },
+        {
+          "text": "nuovi",
+          "start": 18.782,
+          "end": 19.062
+        },
+        {
+          "text": "per",
+          "start": 19.122,
+          "end": 19.222
+        },
+        {
+          "text": "un",
+          "start": 19.262,
+          "end": 19.322
+        },
+        {
+          "text": "nuovo",
+          "start": 19.342,
+          "end": 19.522
+        },
+        {
+          "text": "test",
+          "start": 19.582,
+          "end": 19.782
+        }
+      ]
+    },
+    {
+      "start": 19.902,
+      "end": 20.142,
+      "text": "set.",
+      "words": [
+        {
+          "text": "set.",
+          "start": 19.902,
+          "end": 20.142
+        }
+      ]
+    },
+    {
+      "start": 21.042,
+      "end": 24.763,
+      "text": "Secondo errore: anche la cross-validation può andare in overfitting.",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 21.042,
+          "end": 21.382
+        },
+        {
+          "text": "errore:",
+          "start": 21.422,
+          "end": 21.742
+        },
+        {
+          "text": "anche",
+          "start": 22.302,
+          "end": 22.542
+        },
+        {
+          "text": "la",
+          "start": 22.582,
+          "end": 22.622
+        },
+        {
+          "text": "cross-validation",
+          "start": 22.702,
+          "end": 23.503
+        },
+        {
+          "text": "può",
+          "start": 23.563,
+          "end": 23.643
+        },
+        {
+          "text": "andare",
+          "start": 23.703,
+          "end": 23.943
+        },
+        {
+          "text": "in",
+          "start": 23.983,
+          "end": 24.043
+        },
+        {
+          "text": "overfitting.",
+          "start": 24.083,
+          "end": 24.763
+        }
+      ]
+    },
+    {
+      "start": 25.403,
+      "end": 26.683,
+      "text": "Vediamo due esempi concreti.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 25.403,
+          "end": 25.703
+        },
+        {
+          "text": "due",
+          "start": 25.763,
+          "end": 25.843
+        },
+        {
+          "text": "esempi",
+          "start": 25.883,
+          "end": 26.163
+        },
+        {
+          "text": "concreti.",
+          "start": 26.203,
+          "end": 26.683
+        }
+      ]
+    },
+    {
+      "start": 27.343,
+      "end": 32.184,
+      "text": "Con venti o trenta record e mille attributi, se proviamo mille regressioni lineari con un",
+      "words": [
+        {
+          "text": "Con",
+          "start": 27.343,
+          "end": 27.483
+        },
+        {
+          "text": "venti",
+          "start": 27.543,
+          "end": 27.823
+        },
+        {
+          "text": "o",
+          "start": 27.863,
+          "end": 27.903
+        },
+        {
+          "text": "trenta",
+          "start": 27.923,
+          "end": 28.203
+        },
+        {
+          "text": "record",
+          "start": 28.243,
+          "end": 28.663
+        },
+        {
+          "text": "e",
+          "start": 28.863,
+          "end": 28.903
+        },
+        {
+          "text": "mille",
+          "start": 28.963,
+          "end": 29.163
+        },
+        {
+          "text": "attributi,",
+          "start": 29.183,
+          "end": 29.663
+        },
+        {
+          "text": "se",
+          "start": 29.963,
+          "end": 30.043
+        },
+        {
+          "text": "proviamo",
+          "start": 30.103,
+          "end": 30.463
+        },
+        {
+          "text": "mille",
+          "start": 30.583,
+          "end": 30.823
+        },
+        {
+          "text": "regressioni",
+          "start": 30.863,
+          "end": 31.343
+        },
+        {
+          "text": "lineari",
+          "start": 31.403,
+          "end": 31.903
+        },
+        {
+          "text": "con",
+          "start": 31.943,
+          "end": 32.063
+        },
+        {
+          "text": "un",
+          "start": 32.103,
+          "end": 32.184
+        }
+      ]
+    },
+    {
+      "start": 32.204,
+      "end": 37.804,
+      "text": "attributo ciascuna, il modello migliore sembrerà ottimo sul validation set anche se il target è",
+      "words": [
+        {
+          "text": "attributo",
+          "start": 32.204,
+          "end": 32.684
+        },
+        {
+          "text": "ciascuna,",
+          "start": 32.744,
+          "end": 33.244
+        },
+        {
+          "text": "il",
+          "start": 33.644,
+          "end": 33.724
+        },
+        {
+          "text": "modello",
+          "start": 33.744,
+          "end": 34.044
+        },
+        {
+          "text": "migliore",
+          "start": 34.084,
+          "end": 34.404
+        },
+        {
+          "text": "sembrerà",
+          "start": 34.444,
+          "end": 34.804
+        },
+        {
+          "text": "ottimo",
+          "start": 35.004,
+          "end": 35.344
+        },
+        {
+          "text": "sul",
+          "start": 35.404,
+          "end": 35.524
+        },
+        {
+          "text": "validation",
+          "start": 35.564,
+          "end": 36.064
+        },
+        {
+          "text": "set",
+          "start": 36.144,
+          "end": 36.404
+        },
+        {
+          "text": "anche",
+          "start": 36.844,
+          "end": 37.024
+        },
+        {
+          "text": "se",
+          "start": 37.064,
+          "end": 37.124
+        },
+        {
+          "text": "il",
+          "start": 37.184,
+          "end": 37.244
+        },
+        {
+          "text": "target",
+          "start": 37.304,
+          "end": 37.704
+        },
+        {
+          "text": "è",
+          "start": 37.764,
+          "end": 37.804
+        }
+      ]
+    },
+    {
+      "start": 37.844,
+      "end": 38.724,
+      "text": "puramente casuale.",
+      "words": [
+        {
+          "text": "puramente",
+          "start": 37.844,
+          "end": 38.224
+        },
+        {
+          "text": "casuale.",
+          "start": 38.264,
+          "end": 38.724
+        }
+      ]
+    },
+    {
+      "start": 39.224,
+      "end": 45.125,
+      "text": "Ancora peggio: se su un target casuale selezioniamo prima le feature per massima correlazione guardando",
+      "words": [
+        {
+          "text": "Ancora",
+          "start": 39.224,
+          "end": 39.484
+        },
+        {
+          "text": "peggio:",
+          "start": 39.524,
+          "end": 39.824
+        },
+        {
+          "text": "se",
+          "start": 40.304,
+          "end": 40.384
+        },
+        {
+          "text": "su",
+          "start": 40.464,
+          "end": 40.524
+        },
+        {
+          "text": "un",
+          "start": 40.564,
+          "end": 40.644
+        },
+        {
+          "text": "target",
+          "start": 40.684,
+          "end": 41.024
+        },
+        {
+          "text": "casuale",
+          "start": 41.084,
+          "end": 41.585
+        },
+        {
+          "text": "selezioniamo",
+          "start": 41.765,
+          "end": 42.345
+        },
+        {
+          "text": "prima",
+          "start": 42.465,
+          "end": 42.725
+        },
+        {
+          "text": "le",
+          "start": 42.785,
+          "end": 42.845
+        },
+        {
+          "text": "feature",
+          "start": 42.905,
+          "end": 43.285
+        },
+        {
+          "text": "per",
+          "start": 43.325,
+          "end": 43.445
+        },
+        {
+          "text": "massima",
+          "start": 43.525,
+          "end": 43.905
+        },
+        {
+          "text": "correlazione",
+          "start": 43.965,
+          "end": 44.665
+        },
+        {
+          "text": "guardando",
+          "start": 44.725,
+          "end": 45.125
+        }
+      ]
+    },
+    {
+      "start": 45.305,
+      "end": 49.505,
+      "text": "tutti gli esempi, e poi eseguiamo una K-fold CV per il test,",
+      "words": [
+        {
+          "text": "tutti",
+          "start": 45.305,
+          "end": 45.605
+        },
+        {
+          "text": "gli",
+          "start": 45.645,
+          "end": 45.745
+        },
+        {
+          "text": "esempi,",
+          "start": 45.785,
+          "end": 46.245
+        },
+        {
+          "text": "e",
+          "start": 46.705,
+          "end": 46.745
+        },
+        {
+          "text": "poi",
+          "start": 46.925,
+          "end": 47.125
+        },
+        {
+          "text": "eseguiamo",
+          "start": 47.205,
+          "end": 47.665
+        },
+        {
+          "text": "una",
+          "start": 47.725,
+          "end": 47.865
+        },
+        {
+          "text": "K-fold",
+          "start": 48.005,
+          "end": 48.525
+        },
+        {
+          "text": "CV",
+          "start": 48.625,
+          "end": 48.805
+        },
+        {
+          "text": "per",
+          "start": 48.945,
+          "end": 49.065
+        },
+        {
+          "text": "il",
+          "start": 49.105,
+          "end": 49.165
+        },
+        {
+          "text": "test,",
+          "start": 49.225,
+          "end": 49.505
+        }
+      ]
+    },
+    {
+      "start": 50.085,
+      "end": 55.006,
+      "text": "otteniamo un errore illusorio del tre per cento invece del vero cinquanta per cento.",
+      "words": [
+        {
+          "text": "otteniamo",
+          "start": 50.085,
+          "end": 50.465
+        },
+        {
+          "text": "un",
+          "start": 50.485,
+          "end": 50.565
+        },
+        {
+          "text": "errore",
+          "start": 50.605,
+          "end": 50.886
+        },
+        {
+          "text": "illusorio",
+          "start": 51.026,
+          "end": 51.666
+        },
+        {
+          "text": "del",
+          "start": 51.726,
+          "end": 51.846
+        },
+        {
+          "text": "tre",
+          "start": 51.926,
+          "end": 52.046
+        },
+        {
+          "text": "per",
+          "start": 52.126,
+          "end": 52.246
+        },
+        {
+          "text": "cento",
+          "start": 52.326,
+          "end": 52.686
+        },
+        {
+          "text": "invece",
+          "start": 53.046,
+          "end": 53.326
+        },
+        {
+          "text": "del",
+          "start": 53.366,
+          "end": 53.466
+        },
+        {
+          "text": "vero",
+          "start": 53.506,
+          "end": 53.706
+        },
+        {
+          "text": "cinquanta",
+          "start": 53.826,
+          "end": 54.446
+        },
+        {
+          "text": "per",
+          "start": 54.486,
+          "end": 54.626
+        },
+        {
+          "text": "cento.",
+          "start": 54.686,
+          "end": 55.006
+        }
+      ]
+    },
+    {
+      "start": 55.806,
+      "end": 59.546,
+      "text": "Tre rimedi: tenere da parte un test set aggiuntivo prima di tutto;",
+      "words": [
+        {
+          "text": "Tre",
+          "start": 55.806,
+          "end": 55.946
+        },
+        {
+          "text": "rimedi:",
+          "start": 56.046,
+          "end": 56.426
+        },
+        {
+          "text": "tenere",
+          "start": 56.926,
+          "end": 57.206
+        },
+        {
+          "text": "da",
+          "start": 57.266,
+          "end": 57.326
+        },
+        {
+          "text": "parte",
+          "start": 57.386,
+          "end": 57.626
+        },
+        {
+          "text": "un",
+          "start": 57.686,
+          "end": 57.746
+        },
+        {
+          "text": "test",
+          "start": 57.786,
+          "end": 57.986
+        },
+        {
+          "text": "set",
+          "start": 58.086,
+          "end": 58.266
+        },
+        {
+          "text": "aggiuntivo",
+          "start": 58.306,
+          "end": 58.826
+        },
+        {
+          "text": "prima",
+          "start": 58.886,
+          "end": 59.086
+        },
+        {
+          "text": "di",
+          "start": 59.126,
+          "end": 59.206
+        },
+        {
+          "text": "tutto;",
+          "start": 59.246,
+          "end": 59.546
+        }
+      ]
+    },
+    {
+      "start": 59.926,
+      "end": 66.147,
+      "text": "usare CV più test o double CV; ed eseguire la feature selection rigorosamente dentro ogni",
+      "words": [
+        {
+          "text": "usare",
+          "start": 59.926,
+          "end": 60.227
+        },
+        {
+          "text": "CV",
+          "start": 60.347,
+          "end": 60.567
+        },
+        {
+          "text": "più",
+          "start": 60.787,
+          "end": 60.887
+        },
+        {
+          "text": "test",
+          "start": 61.007,
+          "end": 61.307
+        },
+        {
+          "text": "o",
+          "start": 61.467,
+          "end": 61.507
+        },
+        {
+          "text": "double",
+          "start": 61.567,
+          "end": 61.867
+        },
+        {
+          "text": "CV;",
+          "start": 61.907,
+          "end": 62.067
+        },
+        {
+          "text": "ed",
+          "start": 62.587,
+          "end": 62.687
+        },
+        {
+          "text": "eseguire",
+          "start": 62.727,
+          "end": 63.127
+        },
+        {
+          "text": "la",
+          "start": 63.187,
+          "end": 63.247
+        },
+        {
+          "text": "feature",
+          "start": 63.327,
+          "end": 63.647
+        },
+        {
+          "text": "selection",
+          "start": 63.687,
+          "end": 64.187
+        },
+        {
+          "text": "rigorosamente",
+          "start": 64.587,
+          "end": 65.387
+        },
+        {
+          "text": "dentro",
+          "start": 65.427,
+          "end": 65.707
+        },
+        {
+          "text": "ogni",
+          "start": 65.887,
+          "end": 66.147
+        }
+      ]
+    },
+    {
+      "start": 66.347,
+      "end": 70.348,
+      "text": "singolo fold, ripristinando così la stima corretta del cinquanta per cento.",
+      "words": [
+        {
+          "text": "singolo",
+          "start": 66.347,
+          "end": 66.727
+        },
+        {
+          "text": "fold,",
+          "start": 66.827,
+          "end": 67.127
+        },
+        {
+          "text": "ripristinando",
+          "start": 67.627,
+          "end": 68.207
+        },
+        {
+          "text": "così",
+          "start": 68.227,
+          "end": 68.407
+        },
+        {
+          "text": "la",
+          "start": 68.487,
+          "end": 68.547
+        },
+        {
+          "text": "stima",
+          "start": 68.607,
+          "end": 68.827
+        },
+        {
+          "text": "corretta",
+          "start": 68.867,
+          "end": 69.247
+        },
+        {
+          "text": "del",
+          "start": 69.287,
+          "end": 69.388
+        },
+        {
+          "text": "cinquanta",
+          "start": 69.428,
+          "end": 69.808
+        },
+        {
+          "text": "per",
+          "start": 69.848,
+          "end": 69.968
+        },
+        {
+          "text": "cento.",
+          "start": 70.028,
+          "end": 70.348
+        }
+      ]
+    },
+    {
+      "start": 71.148,
+      "end": 76.968,
+      "text": "Terzo errore: selezionare gli iperparametri uno alla volta in sequenza — ad esempio scegliere il",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 71.148,
+          "end": 71.408
+        },
+        {
+          "text": "errore:",
+          "start": 71.448,
+          "end": 71.768
+        },
+        {
+          "text": "selezionare",
+          "start": 72.328,
+          "end": 72.908
+        },
+        {
+          "text": "gli",
+          "start": 72.948,
+          "end": 73.048
+        },
+        {
+          "text": "iperparametri",
+          "start": 73.068,
+          "end": 73.808
+        },
+        {
+          "text": "uno",
+          "start": 74.028,
+          "end": 74.188
+        },
+        {
+          "text": "alla",
+          "start": 74.228,
+          "end": 74.368
+        },
+        {
+          "text": "volta",
+          "start": 74.388,
+          "end": 74.688
+        },
+        {
+          "text": "in",
+          "start": 74.768,
+          "end": 74.828
+        },
+        {
+          "text": "sequenza",
+          "start": 74.888,
+          "end": 75.328
+        },
+        {
+          "text": "—",
+          "start": 75.328,
+          "end": 75.478
+        },
+        {
+          "text": "ad",
+          "start": 75.808,
+          "end": 75.888
+        },
+        {
+          "text": "esempio",
+          "start": 75.928,
+          "end": 76.248
+        },
+        {
+          "text": "scegliere",
+          "start": 76.528,
+          "end": 76.868
+        },
+        {
+          "text": "il",
+          "start": 76.908,
+          "end": 76.968
+        }
+      ]
+    },
+    {
+      "start": 76.988,
+      "end": 81.989,
+      "text": "miglior eta con dieci unità e poi riusarlo con cento unità — introduce un bias",
+      "words": [
+        {
+          "text": "miglior",
+          "start": 76.988,
+          "end": 77.248
+        },
+        {
+          "text": "eta",
+          "start": 77.308,
+          "end": 77.488
+        },
+        {
+          "text": "con",
+          "start": 77.568,
+          "end": 77.728
+        },
+        {
+          "text": "dieci",
+          "start": 77.788,
+          "end": 78.048
+        },
+        {
+          "text": "unità",
+          "start": 78.108,
+          "end": 78.348
+        },
+        {
+          "text": "e",
+          "start": 78.708,
+          "end": 78.748
+        },
+        {
+          "text": "poi",
+          "start": 78.829,
+          "end": 78.969
+        },
+        {
+          "text": "riusarlo",
+          "start": 79.009,
+          "end": 79.469
+        },
+        {
+          "text": "con",
+          "start": 79.509,
+          "end": 79.649
+        },
+        {
+          "text": "cento",
+          "start": 79.729,
+          "end": 80.029
+        },
+        {
+          "text": "unità",
+          "start": 80.089,
+          "end": 80.369
+        },
+        {
+          "text": "—",
+          "start": 80.369,
+          "end": 80.519
+        },
+        {
+          "text": "introduce",
+          "start": 80.809,
+          "end": 81.309
+        },
+        {
+          "text": "un",
+          "start": 81.469,
+          "end": 81.549
+        },
+        {
+          "text": "bias",
+          "start": 81.609,
+          "end": 81.989
+        }
+      ]
+    },
+    {
+      "start": 82.089,
+      "end": 82.869,
+      "text": "legato all'ordine.",
+      "words": [
+        {
+          "text": "legato",
+          "start": 82.089,
+          "end": 82.349
+        },
+        {
+          "text": "all'ordine.",
+          "start": 82.389,
+          "end": 82.869
+        }
+      ]
+    },
+    {
+      "start": 83.429,
+      "end": 88.77,
+      "text": "Il procedimento corretto prevede prove iniziali per fissare gli intervalli ragionevoli e gli iperparametri più",
+      "words": [
+        {
+          "text": "Il",
+          "start": 83.429,
+          "end": 83.509
+        },
+        {
+          "text": "procedimento",
+          "start": 83.549,
+          "end": 84.109
+        },
+        {
+          "text": "corretto",
+          "start": 84.149,
+          "end": 84.529
+        },
+        {
+          "text": "prevede",
+          "start": 84.569,
+          "end": 84.909
+        },
+        {
+          "text": "prove",
+          "start": 84.989,
+          "end": 85.209
+        },
+        {
+          "text": "iniziali",
+          "start": 85.249,
+          "end": 85.729
+        },
+        {
+          "text": "per",
+          "start": 85.769,
+          "end": 85.889
+        },
+        {
+          "text": "fissare",
+          "start": 85.929,
+          "end": 86.289
+        },
+        {
+          "text": "gli",
+          "start": 86.329,
+          "end": 86.449
+        },
+        {
+          "text": "intervalli",
+          "start": 86.489,
+          "end": 86.949
+        },
+        {
+          "text": "ragionevoli",
+          "start": 87.009,
+          "end": 87.549
+        },
+        {
+          "text": "e",
+          "start": 87.689,
+          "end": 87.729
+        },
+        {
+          "text": "gli",
+          "start": 87.749,
+          "end": 87.849
+        },
+        {
+          "text": "iperparametri",
+          "start": 87.869,
+          "end": 88.61
+        },
+        {
+          "text": "più",
+          "start": 88.67,
+          "end": 88.77
+        }
+      ]
+    },
+    {
+      "start": 88.85,
+      "end": 95.49,
+      "text": "influenti, poi una ricerca congiunta su griglie annidate che consideri sempre tutti gli iperparametri significativi",
+      "words": [
+        {
+          "text": "influenti,",
+          "start": 88.85,
+          "end": 89.47
+        },
+        {
+          "text": "poi",
+          "start": 89.89,
+          "end": 90.09
+        },
+        {
+          "text": "una",
+          "start": 90.17,
+          "end": 90.27
+        },
+        {
+          "text": "ricerca",
+          "start": 90.33,
+          "end": 90.69
+        },
+        {
+          "text": "congiunta",
+          "start": 90.75,
+          "end": 91.21
+        },
+        {
+          "text": "su",
+          "start": 91.27,
+          "end": 91.35
+        },
+        {
+          "text": "griglie",
+          "start": 91.45,
+          "end": 91.75
+        },
+        {
+          "text": "annidate",
+          "start": 91.81,
+          "end": 92.33
+        },
+        {
+          "text": "che",
+          "start": 92.61,
+          "end": 92.69
+        },
+        {
+          "text": "consideri",
+          "start": 92.73,
+          "end": 93.21
+        },
+        {
+          "text": "sempre",
+          "start": 93.33,
+          "end": 93.67
+        },
+        {
+          "text": "tutti",
+          "start": 93.77,
+          "end": 94.05
+        },
+        {
+          "text": "gli",
+          "start": 94.07,
+          "end": 94.17
+        },
+        {
+          "text": "iperparametri",
+          "start": 94.19,
+          "end": 94.81
+        },
+        {
+          "text": "significativi",
+          "start": 94.87,
+          "end": 95.49
+        }
+      ]
+    },
+    {
+      "start": 95.53,
+      "end": 97.811,
+      "text": "insieme per catturarne gli effetti incrociati.",
+      "words": [
+        {
+          "text": "insieme",
+          "start": 95.53,
+          "end": 95.91
+        },
+        {
+          "text": "per",
+          "start": 96.13,
+          "end": 96.25
+        },
+        {
+          "text": "catturarne",
+          "start": 96.27,
+          "end": 96.79
+        },
+        {
+          "text": "gli",
+          "start": 96.81,
+          "end": 96.91
+        },
+        {
+          "text": "effetti",
+          "start": 96.95,
+          "end": 97.271
+        },
+        {
+          "text": "incrociati.",
+          "start": 97.311,
+          "end": 97.811
+        }
+      ]
+    }
+  ]
+}

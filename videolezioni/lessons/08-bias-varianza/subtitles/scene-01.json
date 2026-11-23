@@ -1,0 +1,912 @@
+{
+  "duration": 61.265,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.581,
+      "text": "La Statistical Learning Theory spiega overfitting e underfitting tramite la complessità del modello.",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "Statistical",
+          "start": 0.22,
+          "end": 0.88
+        },
+        {
+          "text": "Learning",
+          "start": 0.94,
+          "end": 1.28
+        },
+        {
+          "text": "Theory",
+          "start": 1.34,
+          "end": 1.7
+        },
+        {
+          "text": "spiega",
+          "start": 1.96,
+          "end": 2.3
+        },
+        {
+          "text": "overfitting",
+          "start": 2.46,
+          "end": 3.161
+        },
+        {
+          "text": "e",
+          "start": 3.201,
+          "end": 3.241
+        },
+        {
+          "text": "underfitting",
+          "start": 3.281,
+          "end": 3.921
+        },
+        {
+          "text": "tramite",
+          "start": 3.981,
+          "end": 4.301
+        },
+        {
+          "text": "la",
+          "start": 4.381,
+          "end": 4.441
+        },
+        {
+          "text": "complessità",
+          "start": 4.501,
+          "end": 4.981
+        },
+        {
+          "text": "del",
+          "start": 5.041,
+          "end": 5.161
+        },
+        {
+          "text": "modello.",
+          "start": 5.201,
+          "end": 5.581
+        }
+      ]
+    },
+    {
+      "start": 6.321,
+      "end": 10.042,
+      "text": "La decomposizione bias-varianza offre una prospettiva complementare:",
+      "words": [
+        {
+          "text": "La",
+          "start": 6.321,
+          "end": 6.381
+        },
+        {
+          "text": "decomposizione",
+          "start": 6.441,
+          "end": 7.141
+        },
+        {
+          "text": "bias-varianza",
+          "start": 7.221,
+          "end": 8.101
+        },
+        {
+          "text": "offre",
+          "start": 8.261,
+          "end": 8.481
+        },
+        {
+          "text": "una",
+          "start": 8.521,
+          "end": 8.641
+        },
+        {
+          "text": "prospettiva",
+          "start": 8.681,
+          "end": 9.221
+        },
+        {
+          "text": "complementare:",
+          "start": 9.301,
+          "end": 10.042
+        }
+      ]
+    },
+    {
+      "start": 10.802,
+      "end": 14.922,
+      "text": "il nostro training set è solo una delle tante possibili realizzazioni dei dati.",
+      "words": [
+        {
+          "text": "il",
+          "start": 10.802,
+          "end": 10.882
+        },
+        {
+          "text": "nostro",
+          "start": 10.942,
+          "end": 11.242
+        },
+        {
+          "text": "training",
+          "start": 11.302,
+          "end": 11.662
+        },
+        {
+          "text": "set",
+          "start": 11.722,
+          "end": 11.902
+        },
+        {
+          "text": "è",
+          "start": 12.022,
+          "end": 12.062
+        },
+        {
+          "text": "solo",
+          "start": 12.122,
+          "end": 12.322
+        },
+        {
+          "text": "una",
+          "start": 12.482,
+          "end": 12.642
+        },
+        {
+          "text": "delle",
+          "start": 12.702,
+          "end": 12.882
+        },
+        {
+          "text": "tante",
+          "start": 12.922,
+          "end": 13.162
+        },
+        {
+          "text": "possibili",
+          "start": 13.202,
+          "end": 13.662
+        },
+        {
+          "text": "realizzazioni",
+          "start": 13.762,
+          "end": 14.402
+        },
+        {
+          "text": "dei",
+          "start": 14.442,
+          "end": 14.562
+        },
+        {
+          "text": "dati.",
+          "start": 14.622,
+          "end": 14.922
+        }
+      ]
+    },
+    {
+      "start": 15.662,
+      "end": 19.183,
+      "text": "L'errore atteso in un punto x, mediato sui diversi training set,",
+      "words": [
+        {
+          "text": "L'errore",
+          "start": 15.662,
+          "end": 16.042
+        },
+        {
+          "text": "atteso",
+          "start": 16.102,
+          "end": 16.362
+        },
+        {
+          "text": "in",
+          "start": 16.402,
+          "end": 16.442
+        },
+        {
+          "text": "un",
+          "start": 16.483,
+          "end": 16.543
+        },
+        {
+          "text": "punto",
+          "start": 16.583,
+          "end": 16.843
+        },
+        {
+          "text": "x,",
+          "start": 17.043,
+          "end": 17.083
+        },
+        {
+          "text": "mediato",
+          "start": 17.483,
+          "end": 17.903
+        },
+        {
+          "text": "sui",
+          "start": 17.963,
+          "end": 18.103
+        },
+        {
+          "text": "diversi",
+          "start": 18.123,
+          "end": 18.503
+        },
+        {
+          "text": "training",
+          "start": 18.563,
+          "end": 18.923
+        },
+        {
+          "text": "set,",
+          "start": 18.983,
+          "end": 19.183
+        }
+      ]
+    },
+    {
+      "start": 19.343,
+      "end": 24.304,
+      "text": "si scompone in tre parti: il bias, cioè l'errore sistematico di un modello troppo rigido;",
+      "words": [
+        {
+          "text": "si",
+          "start": 19.343,
+          "end": 19.423
+        },
+        {
+          "text": "scompone",
+          "start": 19.483,
+          "end": 19.843
+        },
+        {
+          "text": "in",
+          "start": 19.883,
+          "end": 19.923
+        },
+        {
+          "text": "tre",
+          "start": 19.943,
+          "end": 20.063
+        },
+        {
+          "text": "parti:",
+          "start": 20.123,
+          "end": 20.483
+        },
+        {
+          "text": "il",
+          "start": 21.003,
+          "end": 21.103
+        },
+        {
+          "text": "bias,",
+          "start": 21.183,
+          "end": 21.643
+        },
+        {
+          "text": "cioè",
+          "start": 21.823,
+          "end": 21.963
+        },
+        {
+          "text": "l'errore",
+          "start": 22.003,
+          "end": 22.363
+        },
+        {
+          "text": "sistematico",
+          "start": 22.403,
+          "end": 23.023
+        },
+        {
+          "text": "di",
+          "start": 23.103,
+          "end": 23.164
+        },
+        {
+          "text": "un",
+          "start": 23.204,
+          "end": 23.284
+        },
+        {
+          "text": "modello",
+          "start": 23.304,
+          "end": 23.624
+        },
+        {
+          "text": "troppo",
+          "start": 23.684,
+          "end": 23.924
+        },
+        {
+          "text": "rigido;",
+          "start": 23.964,
+          "end": 24.304
+        }
+      ]
+    },
+    {
+      "start": 24.904,
+      "end": 28.524,
+      "text": "la varianza, cioè la variabilità della risposta al cambiare del training set;",
+      "words": [
+        {
+          "text": "la",
+          "start": 24.904,
+          "end": 24.964
+        },
+        {
+          "text": "varianza,",
+          "start": 25.004,
+          "end": 25.484
+        },
+        {
+          "text": "cioè",
+          "start": 25.544,
+          "end": 25.684
+        },
+        {
+          "text": "la",
+          "start": 25.744,
+          "end": 25.804
+        },
+        {
+          "text": "variabilità",
+          "start": 25.844,
+          "end": 26.384
+        },
+        {
+          "text": "della",
+          "start": 26.464,
+          "end": 26.644
+        },
+        {
+          "text": "risposta",
+          "start": 26.684,
+          "end": 27.104
+        },
+        {
+          "text": "al",
+          "start": 27.124,
+          "end": 27.204
+        },
+        {
+          "text": "cambiare",
+          "start": 27.244,
+          "end": 27.624
+        },
+        {
+          "text": "del",
+          "start": 27.664,
+          "end": 27.784
+        },
+        {
+          "text": "training",
+          "start": 27.844,
+          "end": 28.244
+        },
+        {
+          "text": "set;",
+          "start": 28.304,
+          "end": 28.524
+        }
+      ]
+    },
+    {
+      "start": 29.144,
+      "end": 31.585,
+      "text": "e il rumore casuale intrinseco nelle etichette.",
+      "words": [
+        {
+          "text": "e",
+          "start": 29.144,
+          "end": 29.184
+        },
+        {
+          "text": "il",
+          "start": 29.284,
+          "end": 29.384
+        },
+        {
+          "text": "rumore",
+          "start": 29.444,
+          "end": 29.724
+        },
+        {
+          "text": "casuale",
+          "start": 29.784,
+          "end": 30.145
+        },
+        {
+          "text": "intrinseco",
+          "start": 30.185,
+          "end": 30.745
+        },
+        {
+          "text": "nelle",
+          "start": 30.825,
+          "end": 31.025
+        },
+        {
+          "text": "etichette.",
+          "start": 31.085,
+          "end": 31.585
+        }
+      ]
+    },
+    {
+      "start": 32.485,
+      "end": 34.065,
+      "text": "Guarda l'esempio reale nei grafici.",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 32.485,
+          "end": 32.745
+        },
+        {
+          "text": "l'esempio",
+          "start": 32.785,
+          "end": 33.145
+        },
+        {
+          "text": "reale",
+          "start": 33.185,
+          "end": 33.425
+        },
+        {
+          "text": "nei",
+          "start": 33.465,
+          "end": 33.585
+        },
+        {
+          "text": "grafici.",
+          "start": 33.625,
+          "end": 34.065
+        }
+      ]
+    },
+    {
+      "start": 34.725,
+      "end": 36.265,
+      "text": "La curva verde è la funzione vera",
+      "words": [
+        {
+          "text": "La",
+          "start": 34.725,
+          "end": 34.785
+        },
+        {
+          "text": "curva",
+          "start": 34.845,
+          "end": 35.085
+        },
+        {
+          "text": "verde",
+          "start": 35.125,
+          "end": 35.385
+        },
+        {
+          "text": "è",
+          "start": 35.505,
+          "end": 35.545
+        },
+        {
+          "text": "la",
+          "start": 35.565,
+          "end": 35.625
+        },
+        {
+          "text": "funzione",
+          "start": 35.665,
+          "end": 36.005
+        },
+        {
+          "text": "vera",
+          "start": 36.045,
+          "end": 36.265
+        }
+      ]
+    },
+    {
+      "start": 36.826,
+      "end": 38.986,
+      "text": "x più due seno di uno virgola cinque x,",
+      "words": [
+        {
+          "text": "x",
+          "start": 36.826,
+          "end": 36.866
+        },
+        {
+          "text": "più",
+          "start": 37.146,
+          "end": 37.266
+        },
+        {
+          "text": "due",
+          "start": 37.346,
+          "end": 37.486
+        },
+        {
+          "text": "seno",
+          "start": 37.566,
+          "end": 37.786
+        },
+        {
+          "text": "di",
+          "start": 37.846,
+          "end": 37.906
+        },
+        {
+          "text": "uno",
+          "start": 37.986,
+          "end": 38.106
+        },
+        {
+          "text": "virgola",
+          "start": 38.146,
+          "end": 38.466
+        },
+        {
+          "text": "cinque",
+          "start": 38.526,
+          "end": 38.786
+        },
+        {
+          "text": "x,",
+          "start": 38.946,
+          "end": 38.986
+        }
+      ]
+    },
+    {
+      "start": 39.446,
+      "end": 40.446,
+      "text": "con rumore gaussiano.",
+      "words": [
+        {
+          "text": "con",
+          "start": 39.446,
+          "end": 39.566
+        },
+        {
+          "text": "rumore",
+          "start": 39.626,
+          "end": 39.886
+        },
+        {
+          "text": "gaussiano.",
+          "start": 39.926,
+          "end": 40.446
+        }
+      ]
+    },
+    {
+      "start": 41.166,
+      "end": 44.307,
+      "text": "A sinistra adattiamo una retta a un singolo campione di venti punti.",
+      "words": [
+        {
+          "text": "A",
+          "start": 41.166,
+          "end": 41.206
+        },
+        {
+          "text": "sinistra",
+          "start": 41.266,
+          "end": 41.626
+        },
+        {
+          "text": "adattiamo",
+          "start": 41.686,
+          "end": 42.086
+        },
+        {
+          "text": "una",
+          "start": 42.126,
+          "end": 42.246
+        },
+        {
+          "text": "retta",
+          "start": 42.286,
+          "end": 42.526
+        },
+        {
+          "text": "a",
+          "start": 42.626,
+          "end": 42.666
+        },
+        {
+          "text": "un",
+          "start": 42.726,
+          "end": 42.806
+        },
+        {
+          "text": "singolo",
+          "start": 42.846,
+          "end": 43.166
+        },
+        {
+          "text": "campione",
+          "start": 43.207,
+          "end": 43.547
+        },
+        {
+          "text": "di",
+          "start": 43.587,
+          "end": 43.647
+        },
+        {
+          "text": "venti",
+          "start": 43.687,
+          "end": 43.927
+        },
+        {
+          "text": "punti.",
+          "start": 43.967,
+          "end": 44.307
+        }
+      ]
+    },
+    {
+      "start": 44.907,
+      "end": 48.307,
+      "text": "A destra ripetiamo l'esperimento su cinquanta dataset diversi:",
+      "words": [
+        {
+          "text": "A",
+          "start": 44.907,
+          "end": 44.947
+        },
+        {
+          "text": "destra",
+          "start": 45.027,
+          "end": 45.407
+        },
+        {
+          "text": "ripetiamo",
+          "start": 45.527,
+          "end": 45.927
+        },
+        {
+          "text": "l'esperimento",
+          "start": 45.967,
+          "end": 46.487
+        },
+        {
+          "text": "su",
+          "start": 46.567,
+          "end": 46.647
+        },
+        {
+          "text": "cinquanta",
+          "start": 46.747,
+          "end": 47.287
+        },
+        {
+          "text": "dataset",
+          "start": 47.347,
+          "end": 47.767
+        },
+        {
+          "text": "diversi:",
+          "start": 47.847,
+          "end": 48.307
+        }
+      ]
+    },
+    {
+      "start": 48.907,
+      "end": 53.448,
+      "text": "otteniamo cinquanta rette grigie diverse e la loro media rossa h soprassegnato.",
+      "words": [
+        {
+          "text": "otteniamo",
+          "start": 48.907,
+          "end": 49.327
+        },
+        {
+          "text": "cinquanta",
+          "start": 49.467,
+          "end": 49.908
+        },
+        {
+          "text": "rette",
+          "start": 49.948,
+          "end": 50.168
+        },
+        {
+          "text": "grigie",
+          "start": 50.208,
+          "end": 50.468
+        },
+        {
+          "text": "diverse",
+          "start": 50.528,
+          "end": 51.008
+        },
+        {
+          "text": "e",
+          "start": 51.268,
+          "end": 51.308
+        },
+        {
+          "text": "la",
+          "start": 51.368,
+          "end": 51.428
+        },
+        {
+          "text": "loro",
+          "start": 51.488,
+          "end": 51.668
+        },
+        {
+          "text": "media",
+          "start": 51.708,
+          "end": 51.928
+        },
+        {
+          "text": "rossa",
+          "start": 51.968,
+          "end": 52.228
+        },
+        {
+          "text": "h",
+          "start": 52.628,
+          "end": 52.668
+        },
+        {
+          "text": "soprassegnato.",
+          "start": 52.748,
+          "end": 53.448
+        }
+      ]
+    },
+    {
+      "start": 54.268,
+      "end": 57.149,
+      "text": "La distanza tra la media rossa e la curva verde è il bias;",
+      "words": [
+        {
+          "text": "La",
+          "start": 54.268,
+          "end": 54.348
+        },
+        {
+          "text": "distanza",
+          "start": 54.388,
+          "end": 54.788
+        },
+        {
+          "text": "tra",
+          "start": 54.848,
+          "end": 54.928
+        },
+        {
+          "text": "la",
+          "start": 54.988,
+          "end": 55.048
+        },
+        {
+          "text": "media",
+          "start": 55.088,
+          "end": 55.268
+        },
+        {
+          "text": "rossa",
+          "start": 55.308,
+          "end": 55.528
+        },
+        {
+          "text": "e",
+          "start": 55.568,
+          "end": 55.608
+        },
+        {
+          "text": "la",
+          "start": 55.628,
+          "end": 55.668
+        },
+        {
+          "text": "curva",
+          "start": 55.708,
+          "end": 55.928
+        },
+        {
+          "text": "verde",
+          "start": 55.968,
+          "end": 56.248
+        },
+        {
+          "text": "è",
+          "start": 56.388,
+          "end": 56.428
+        },
+        {
+          "text": "il",
+          "start": 56.528,
+          "end": 56.629
+        },
+        {
+          "text": "bias;",
+          "start": 56.669,
+          "end": 57.149
+        }
+      ]
+    },
+    {
+      "start": 57.789,
+      "end": 60.849,
+      "text": "la dispersione del fascio di rette attorno alla media è la varianza.",
+      "words": [
+        {
+          "text": "la",
+          "start": 57.789,
+          "end": 57.849
+        },
+        {
+          "text": "dispersione",
+          "start": 57.909,
+          "end": 58.489
+        },
+        {
+          "text": "del",
+          "start": 58.529,
+          "end": 58.649
+        },
+        {
+          "text": "fascio",
+          "start": 58.689,
+          "end": 58.929
+        },
+        {
+          "text": "di",
+          "start": 58.969,
+          "end": 59.029
+        },
+        {
+          "text": "rette",
+          "start": 59.069,
+          "end": 59.309
+        },
+        {
+          "text": "attorno",
+          "start": 59.329,
+          "end": 59.629
+        },
+        {
+          "text": "alla",
+          "start": 59.649,
+          "end": 59.789
+        },
+        {
+          "text": "media",
+          "start": 59.809,
+          "end": 60.089
+        },
+        {
+          "text": "è",
+          "start": 60.229,
+          "end": 60.269
+        },
+        {
+          "text": "la",
+          "start": 60.309,
+          "end": 60.369
+        },
+        {
+          "text": "varianza.",
+          "start": 60.409,
+          "end": 60.849
+        }
+      ]
+    }
+  ]
+}

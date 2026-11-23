@@ -1,0 +1,1328 @@
+{
+  "duration": 93.041,
+  "segments": [
+    {
+      "start": 0.841,
+      "end": 5.462,
+      "text": "Nel mondo ideale avremmo un grande training set, un grande validation set e un grande",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 0.841,
+          "end": 0.981
+        },
+        {
+          "text": "mondo",
+          "start": 1.021,
+          "end": 1.241
+        },
+        {
+          "text": "ideale",
+          "start": 1.301,
+          "end": 1.661
+        },
+        {
+          "text": "avremmo",
+          "start": 1.781,
+          "end": 2.061
+        },
+        {
+          "text": "un",
+          "start": 2.101,
+          "end": 2.161
+        },
+        {
+          "text": "grande",
+          "start": 2.202,
+          "end": 2.502
+        },
+        {
+          "text": "training",
+          "start": 2.542,
+          "end": 2.882
+        },
+        {
+          "text": "set,",
+          "start": 2.962,
+          "end": 3.182
+        },
+        {
+          "text": "un",
+          "start": 3.402,
+          "end": 3.482
+        },
+        {
+          "text": "grande",
+          "start": 3.542,
+          "end": 3.822
+        },
+        {
+          "text": "validation",
+          "start": 3.882,
+          "end": 4.342
+        },
+        {
+          "text": "set",
+          "start": 4.422,
+          "end": 4.642
+        },
+        {
+          "text": "e",
+          "start": 4.902,
+          "end": 4.942
+        },
+        {
+          "text": "un",
+          "start": 4.982,
+          "end": 5.062
+        },
+        {
+          "text": "grande",
+          "start": 5.102,
+          "end": 5.462
+        }
+      ]
+    },
+    {
+      "start": 5.602,
+      "end": 6.982,
+      "text": "test set esterno.",
+      "words": [
+        {
+          "text": "test",
+          "start": 5.602,
+          "end": 5.842
+        },
+        {
+          "text": "set",
+          "start": 5.982,
+          "end": 6.202
+        },
+        {
+          "text": "esterno.",
+          "start": 6.402,
+          "end": 6.982
+        }
+      ]
+    },
+    {
+      "start": 7.922,
+      "end": 10.482,
+      "text": "Quando i dati sono sufficienti si usa la tecnica di base,",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 7.922,
+          "end": 8.122
+        },
+        {
+          "text": "i",
+          "start": 8.142,
+          "end": 8.182
+        },
+        {
+          "text": "dati",
+          "start": 8.182,
+          "end": 8.382
+        },
+        {
+          "text": "sono",
+          "start": 8.422,
+          "end": 8.582
+        },
+        {
+          "text": "sufficienti",
+          "start": 8.622,
+          "end": 9.222
+        },
+        {
+          "text": "si",
+          "start": 9.302,
+          "end": 9.362
+        },
+        {
+          "text": "usa",
+          "start": 9.422,
+          "end": 9.522
+        },
+        {
+          "text": "la",
+          "start": 9.582,
+          "end": 9.642
+        },
+        {
+          "text": "tecnica",
+          "start": 9.682,
+          "end": 10.002
+        },
+        {
+          "text": "di",
+          "start": 10.042,
+          "end": 10.102
+        },
+        {
+          "text": "base,",
+          "start": 10.162,
+          "end": 10.482
+        }
+      ]
+    },
+    {
+      "start": 10.762,
+      "end": 16.283,
+      "text": "l'hold-out, che divide il dataset in tre insiemi disgiunti — ad esempio cinquanta per cento",
+      "words": [
+        {
+          "text": "l'hold-out,",
+          "start": 10.762,
+          "end": 11.482
+        },
+        {
+          "text": "che",
+          "start": 11.923,
+          "end": 12.003
+        },
+        {
+          "text": "divide",
+          "start": 12.043,
+          "end": 12.283
+        },
+        {
+          "text": "il",
+          "start": 12.323,
+          "end": 12.383
+        },
+        {
+          "text": "dataset",
+          "start": 12.403,
+          "end": 12.903
+        },
+        {
+          "text": "in",
+          "start": 13.003,
+          "end": 13.063
+        },
+        {
+          "text": "tre",
+          "start": 13.103,
+          "end": 13.203
+        },
+        {
+          "text": "insiemi",
+          "start": 13.283,
+          "end": 13.663
+        },
+        {
+          "text": "disgiunti",
+          "start": 13.723,
+          "end": 14.303
+        },
+        {
+          "text": "—",
+          "start": 14.303,
+          "end": 14.453
+        },
+        {
+          "text": "ad",
+          "start": 14.623,
+          "end": 14.723
+        },
+        {
+          "text": "esempio",
+          "start": 14.743,
+          "end": 15.103
+        },
+        {
+          "text": "cinquanta",
+          "start": 15.403,
+          "end": 15.863
+        },
+        {
+          "text": "per",
+          "start": 15.903,
+          "end": 16.003
+        },
+        {
+          "text": "cento",
+          "start": 16.043,
+          "end": 16.283
+        }
+      ]
+    },
+    {
+      "start": 16.343,
+      "end": 20.363,
+      "text": "training, venticinque per cento validation e venticinque per cento test.",
+      "words": [
+        {
+          "text": "training,",
+          "start": 16.343,
+          "end": 16.723
+        },
+        {
+          "text": "venticinque",
+          "start": 17.003,
+          "end": 17.543
+        },
+        {
+          "text": "per",
+          "start": 17.583,
+          "end": 17.703
+        },
+        {
+          "text": "cento",
+          "start": 17.743,
+          "end": 17.983
+        },
+        {
+          "text": "validation",
+          "start": 18.023,
+          "end": 18.563
+        },
+        {
+          "text": "e",
+          "start": 18.943,
+          "end": 18.983
+        },
+        {
+          "text": "venticinque",
+          "start": 19.063,
+          "end": 19.603
+        },
+        {
+          "text": "per",
+          "start": 19.643,
+          "end": 19.743
+        },
+        {
+          "text": "cento",
+          "start": 19.803,
+          "end": 20.023
+        },
+        {
+          "text": "test.",
+          "start": 20.083,
+          "end": 20.363
+        }
+      ]
+    },
+    {
+      "start": 21.063,
+      "end": 26.924,
+      "text": "Il training set, TR, serve per adattare i parametri del modello minimizzando il rischio empirico",
+      "words": [
+        {
+          "text": "Il",
+          "start": 21.063,
+          "end": 21.183
+        },
+        {
+          "text": "training",
+          "start": 21.243,
+          "end": 21.664
+        },
+        {
+          "text": "set,",
+          "start": 21.784,
+          "end": 22.104
+        },
+        {
+          "text": "TR,",
+          "start": 22.284,
+          "end": 22.704
+        },
+        {
+          "text": "serve",
+          "start": 23.164,
+          "end": 23.444
+        },
+        {
+          "text": "per",
+          "start": 23.504,
+          "end": 23.624
+        },
+        {
+          "text": "adattare",
+          "start": 23.664,
+          "end": 24.084
+        },
+        {
+          "text": "i",
+          "start": 24.124,
+          "end": 24.164
+        },
+        {
+          "text": "parametri",
+          "start": 24.184,
+          "end": 24.704
+        },
+        {
+          "text": "del",
+          "start": 24.764,
+          "end": 24.884
+        },
+        {
+          "text": "modello",
+          "start": 24.924,
+          "end": 25.364
+        },
+        {
+          "text": "minimizzando",
+          "start": 25.424,
+          "end": 25.984
+        },
+        {
+          "text": "il",
+          "start": 26.024,
+          "end": 26.064
+        },
+        {
+          "text": "rischio",
+          "start": 26.104,
+          "end": 26.364
+        },
+        {
+          "text": "empirico",
+          "start": 26.404,
+          "end": 26.924
+        }
+      ]
+    },
+    {
+      "start": 27.264,
+      "end": 27.704,
+      "text": "R emp.",
+      "words": [
+        {
+          "text": "R",
+          "start": 27.264,
+          "end": 27.304
+        },
+        {
+          "text": "emp.",
+          "start": 27.324,
+          "end": 27.704
+        }
+      ]
+    },
+    {
+      "start": 28.404,
+      "end": 32.025,
+      "text": "Il validation set, VL, chiamato anche selection set,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 28.404,
+          "end": 28.504
+        },
+        {
+          "text": "validation",
+          "start": 28.524,
+          "end": 29.044
+        },
+        {
+          "text": "set,",
+          "start": 29.144,
+          "end": 29.444
+        },
+        {
+          "text": "VL,",
+          "start": 29.644,
+          "end": 30.044
+        },
+        {
+          "text": "chiamato",
+          "start": 30.204,
+          "end": 30.504
+        },
+        {
+          "text": "anche",
+          "start": 30.584,
+          "end": 30.804
+        },
+        {
+          "text": "selection",
+          "start": 31.025,
+          "end": 31.625
+        },
+        {
+          "text": "set,",
+          "start": 31.745,
+          "end": 32.025
+        }
+      ]
+    },
+    {
+      "start": 32.605,
+      "end": 37.005,
+      "text": "serve esclusivamente alla model selection tra modelli e iperparametri diversi.",
+      "words": [
+        {
+          "text": "serve",
+          "start": 32.605,
+          "end": 32.825
+        },
+        {
+          "text": "esclusivamente",
+          "start": 32.865,
+          "end": 33.525
+        },
+        {
+          "text": "alla",
+          "start": 33.545,
+          "end": 33.705
+        },
+        {
+          "text": "model",
+          "start": 33.785,
+          "end": 34.045
+        },
+        {
+          "text": "selection",
+          "start": 34.125,
+          "end": 34.665
+        },
+        {
+          "text": "tra",
+          "start": 34.865,
+          "end": 35.005
+        },
+        {
+          "text": "modelli",
+          "start": 35.085,
+          "end": 35.525
+        },
+        {
+          "text": "e",
+          "start": 35.705,
+          "end": 35.745
+        },
+        {
+          "text": "iperparametri",
+          "start": 35.825,
+          "end": 36.505
+        },
+        {
+          "text": "diversi.",
+          "start": 36.545,
+          "end": 37.005
+        }
+      ]
+    },
+    {
+      "start": 37.705,
+      "end": 42.166,
+      "text": "Insieme, TR e VL formano il development o design set,",
+      "words": [
+        {
+          "text": "Insieme,",
+          "start": 37.705,
+          "end": 38.205
+        },
+        {
+          "text": "TR",
+          "start": 38.365,
+          "end": 38.725
+        },
+        {
+          "text": "e",
+          "start": 38.845,
+          "end": 38.885
+        },
+        {
+          "text": "VL",
+          "start": 38.945,
+          "end": 39.305
+        },
+        {
+          "text": "formano",
+          "start": 39.665,
+          "end": 40.045
+        },
+        {
+          "text": "il",
+          "start": 40.105,
+          "end": 40.185
+        },
+        {
+          "text": "development",
+          "start": 40.265,
+          "end": 40.966
+        },
+        {
+          "text": "o",
+          "start": 41.166,
+          "end": 41.206
+        },
+        {
+          "text": "design",
+          "start": 41.306,
+          "end": 41.786
+        },
+        {
+          "text": "set,",
+          "start": 41.886,
+          "end": 42.166
+        }
+      ]
+    },
+    {
+      "start": 42.626,
+      "end": 44.306,
+      "text": "usato per costruire il modello finale.",
+      "words": [
+        {
+          "text": "usato",
+          "start": 42.626,
+          "end": 42.906
+        },
+        {
+          "text": "per",
+          "start": 42.946,
+          "end": 43.046
+        },
+        {
+          "text": "costruire",
+          "start": 43.086,
+          "end": 43.506
+        },
+        {
+          "text": "il",
+          "start": 43.546,
+          "end": 43.586
+        },
+        {
+          "text": "modello",
+          "start": 43.626,
+          "end": 43.906
+        },
+        {
+          "text": "finale.",
+          "start": 43.946,
+          "end": 44.306
+        }
+      ]
+    },
+    {
+      "start": 45.086,
+      "end": 48.886,
+      "text": "Il test set, TS, serve esclusivamente al model assessment,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 45.086,
+          "end": 45.186
+        },
+        {
+          "text": "test",
+          "start": 45.266,
+          "end": 45.506
+        },
+        {
+          "text": "set,",
+          "start": 45.626,
+          "end": 45.926
+        },
+        {
+          "text": "TS,",
+          "start": 46.146,
+          "end": 46.566
+        },
+        {
+          "text": "serve",
+          "start": 46.866,
+          "end": 47.106
+        },
+        {
+          "text": "esclusivamente",
+          "start": 47.146,
+          "end": 47.846
+        },
+        {
+          "text": "al",
+          "start": 47.886,
+          "end": 47.966
+        },
+        {
+          "text": "model",
+          "start": 48.026,
+          "end": 48.286
+        },
+        {
+          "text": "assessment,",
+          "start": 48.326,
+          "end": 48.886
+        }
+      ]
+    },
+    {
+      "start": 49.286,
+      "end": 52.527,
+      "text": "cioè a stimare il rischio vero R del modello finale,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 49.286,
+          "end": 49.426
+        },
+        {
+          "text": "a",
+          "start": 49.566,
+          "end": 49.606
+        },
+        {
+          "text": "stimare",
+          "start": 49.666,
+          "end": 50.026
+        },
+        {
+          "text": "il",
+          "start": 50.067,
+          "end": 50.127
+        },
+        {
+          "text": "rischio",
+          "start": 50.187,
+          "end": 50.527
+        },
+        {
+          "text": "vero",
+          "start": 50.627,
+          "end": 50.947
+        },
+        {
+          "text": "R",
+          "start": 51.427,
+          "end": 51.467
+        },
+        {
+          "text": "del",
+          "start": 51.647,
+          "end": 51.767
+        },
+        {
+          "text": "modello",
+          "start": 51.807,
+          "end": 52.107
+        },
+        {
+          "text": "finale,",
+          "start": 52.147,
+          "end": 52.527
+        }
+      ]
+    },
+    {
+      "start": 52.907,
+      "end": 56.347,
+      "text": "e non va mai usato per scegliere o regolare l'ipotesi h.",
+      "words": [
+        {
+          "text": "e",
+          "start": 52.907,
+          "end": 52.947
+        },
+        {
+          "text": "non",
+          "start": 53.007,
+          "end": 53.147
+        },
+        {
+          "text": "va",
+          "start": 53.187,
+          "end": 53.247
+        },
+        {
+          "text": "mai",
+          "start": 53.347,
+          "end": 53.487
+        },
+        {
+          "text": "usato",
+          "start": 53.567,
+          "end": 53.967
+        },
+        {
+          "text": "per",
+          "start": 54.007,
+          "end": 54.127
+        },
+        {
+          "text": "scegliere",
+          "start": 54.187,
+          "end": 54.687
+        },
+        {
+          "text": "o",
+          "start": 54.847,
+          "end": 54.887
+        },
+        {
+          "text": "regolare",
+          "start": 55.027,
+          "end": 55.527
+        },
+        {
+          "text": "l'ipotesi",
+          "start": 55.567,
+          "end": 56.047
+        },
+        {
+          "text": "h.",
+          "start": 56.307,
+          "end": 56.347
+        }
+      ]
+    },
+    {
+      "start": 57.187,
+      "end": 63.048,
+      "text": "Fissiamo due precisazioni essenziali: primo, la stima fatta sul validation set serve solo a scegliere",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 57.187,
+          "end": 57.527
+        },
+        {
+          "text": "due",
+          "start": 57.627,
+          "end": 57.747
+        },
+        {
+          "text": "precisazioni",
+          "start": 57.787,
+          "end": 58.367
+        },
+        {
+          "text": "essenziali:",
+          "start": 58.427,
+          "end": 58.987
+        },
+        {
+          "text": "primo,",
+          "start": 59.467,
+          "end": 59.728
+        },
+        {
+          "text": "la",
+          "start": 60.168,
+          "end": 60.228
+        },
+        {
+          "text": "stima",
+          "start": 60.268,
+          "end": 60.488
+        },
+        {
+          "text": "fatta",
+          "start": 60.528,
+          "end": 60.788
+        },
+        {
+          "text": "sul",
+          "start": 60.828,
+          "end": 60.968
+        },
+        {
+          "text": "validation",
+          "start": 61.008,
+          "end": 61.448
+        },
+        {
+          "text": "set",
+          "start": 61.508,
+          "end": 61.728
+        },
+        {
+          "text": "serve",
+          "start": 61.948,
+          "end": 62.188
+        },
+        {
+          "text": "solo",
+          "start": 62.248,
+          "end": 62.428
+        },
+        {
+          "text": "a",
+          "start": 62.468,
+          "end": 62.508
+        },
+        {
+          "text": "scegliere",
+          "start": 62.548,
+          "end": 63.048
+        }
+      ]
+    },
+    {
+      "start": 63.368,
+      "end": 65.148,
+      "text": "e non è una buona stima di assessment;",
+      "words": [
+        {
+          "text": "e",
+          "start": 63.368,
+          "end": 63.408
+        },
+        {
+          "text": "non",
+          "start": 63.528,
+          "end": 63.668
+        },
+        {
+          "text": "è",
+          "start": 63.708,
+          "end": 63.748
+        },
+        {
+          "text": "una",
+          "start": 63.808,
+          "end": 63.928
+        },
+        {
+          "text": "buona",
+          "start": 63.968,
+          "end": 64.168
+        },
+        {
+          "text": "stima",
+          "start": 64.228,
+          "end": 64.468
+        },
+        {
+          "text": "di",
+          "start": 64.508,
+          "end": 64.568
+        },
+        {
+          "text": "assessment;",
+          "start": 64.608,
+          "end": 65.148
+        }
+      ]
+    },
+    {
+      "start": 65.948,
+      "end": 70.659,
+      "text": "secondo, se usi i risultati del test set per riprogettare o ritoccare il modello —",
+      "words": [
+        {
+          "text": "secondo,",
+          "start": 65.948,
+          "end": 66.368
+        },
+        {
+          "text": "se",
+          "start": 66.828,
+          "end": 66.888
+        },
+        {
+          "text": "usi",
+          "start": 66.948,
+          "end": 67.088
+        },
+        {
+          "text": "i",
+          "start": 67.148,
+          "end": 67.188
+        },
+        {
+          "text": "risultati",
+          "start": 67.208,
+          "end": 67.688
+        },
+        {
+          "text": "del",
+          "start": 67.748,
+          "end": 67.868
+        },
+        {
+          "text": "test",
+          "start": 67.948,
+          "end": 68.168
+        },
+        {
+          "text": "set",
+          "start": 68.328,
+          "end": 68.608
+        },
+        {
+          "text": "per",
+          "start": 68.728,
+          "end": 68.828
+        },
+        {
+          "text": "riprogettare",
+          "start": 68.888,
+          "end": 69.449
+        },
+        {
+          "text": "o",
+          "start": 69.489,
+          "end": 69.52900000000001
+        },
+        {
+          "text": "ritoccare",
+          "start": 69.549,
+          "end": 69.969
+        },
+        {
+          "text": "il",
+          "start": 69.989,
+          "end": 70.049
+        },
+        {
+          "text": "modello",
+          "start": 70.069,
+          "end": 70.509
+        },
+        {
+          "text": "—",
+          "start": 70.509,
+          "end": 70.659
+        }
+      ]
+    },
+    {
+      "start": 70.989,
+      "end": 76.309,
+      "text": "il ciclo provo, guardo il test, cambio, riprovo — quel test set è diventato di",
+      "words": [
+        {
+          "text": "il",
+          "start": 70.989,
+          "end": 71.069
+        },
+        {
+          "text": "ciclo",
+          "start": 71.109,
+          "end": 71.429
+        },
+        {
+          "text": "provo,",
+          "start": 71.589,
+          "end": 72.009
+        },
+        {
+          "text": "guardo",
+          "start": 72.169,
+          "end": 72.449
+        },
+        {
+          "text": "il",
+          "start": 72.469,
+          "end": 72.549
+        },
+        {
+          "text": "test,",
+          "start": 72.609,
+          "end": 72.929
+        },
+        {
+          "text": "cambio,",
+          "start": 73.129,
+          "end": 73.549
+        },
+        {
+          "text": "riprovo",
+          "start": 73.689,
+          "end": 74.129
+        },
+        {
+          "text": "—",
+          "start": 74.129,
+          "end": 74.279
+        },
+        {
+          "text": "quel",
+          "start": 74.609,
+          "end": 74.809
+        },
+        {
+          "text": "test",
+          "start": 74.869,
+          "end": 75.109
+        },
+        {
+          "text": "set",
+          "start": 75.249,
+          "end": 75.489
+        },
+        {
+          "text": "è",
+          "start": 75.689,
+          "end": 75.729
+        },
+        {
+          "text": "diventato",
+          "start": 75.769,
+          "end": 76.209
+        },
+        {
+          "text": "di",
+          "start": 76.249,
+          "end": 76.309
+        }
+      ]
+    },
+    {
+      "start": 76.349,
+      "end": 77.709,
+      "text": "fatto un validation set.",
+      "words": [
+        {
+          "text": "fatto",
+          "start": 76.349,
+          "end": 76.589
+        },
+        {
+          "text": "un",
+          "start": 76.629,
+          "end": 76.709
+        },
+        {
+          "text": "validation",
+          "start": 76.769,
+          "end": 77.349
+        },
+        {
+          "text": "set.",
+          "start": 77.469,
+          "end": 77.709
+        }
+      ]
+    },
+    {
+      "start": 78.349,
+      "end": 80.43,
+      "text": "Su dati futuri non potresti fare lo stesso:",
+      "words": [
+        {
+          "text": "Su",
+          "start": 78.349,
+          "end": 78.429
+        },
+        {
+          "text": "dati",
+          "start": 78.489,
+          "end": 78.689
+        },
+        {
+          "text": "futuri",
+          "start": 78.75,
+          "end": 79.09
+        },
+        {
+          "text": "non",
+          "start": 79.25,
+          "end": 79.37
+        },
+        {
+          "text": "potresti",
+          "start": 79.39,
+          "end": 79.73
+        },
+        {
+          "text": "fare",
+          "start": 79.77,
+          "end": 79.93
+        },
+        {
+          "text": "lo",
+          "start": 79.97,
+          "end": 80.03
+        },
+        {
+          "text": "stesso:",
+          "start": 80.07,
+          "end": 80.43
+        }
+      ]
+    },
+    {
+      "start": 81.01,
+      "end": 86.05,
+      "text": "la stima diventa falsamente ottimistica, esattamente come fare un esame dopo averne già visto le",
+      "words": [
+        {
+          "text": "la",
+          "start": 81.01,
+          "end": 81.07
+        },
+        {
+          "text": "stima",
+          "start": 81.11,
+          "end": 81.31
+        },
+        {
+          "text": "diventa",
+          "start": 81.37,
+          "end": 81.63
+        },
+        {
+          "text": "falsamente",
+          "start": 81.69,
+          "end": 82.21
+        },
+        {
+          "text": "ottimistica,",
+          "start": 82.25,
+          "end": 82.93
+        },
+        {
+          "text": "esattamente",
+          "start": 83.27,
+          "end": 83.77
+        },
+        {
+          "text": "come",
+          "start": 83.81,
+          "end": 83.97
+        },
+        {
+          "text": "fare",
+          "start": 84.01,
+          "end": 84.19
+        },
+        {
+          "text": "un",
+          "start": 84.25,
+          "end": 84.33
+        },
+        {
+          "text": "esame",
+          "start": 84.37,
+          "end": 84.73
+        },
+        {
+          "text": "dopo",
+          "start": 84.87,
+          "end": 85.05
+        },
+        {
+          "text": "averne",
+          "start": 85.09,
+          "end": 85.37
+        },
+        {
+          "text": "già",
+          "start": 85.47,
+          "end": 85.59
+        },
+        {
+          "text": "visto",
+          "start": 85.69,
+          "end": 85.95
+        },
+        {
+          "text": "le",
+          "start": 85.99,
+          "end": 86.05
+        }
+      ]
+    },
+    {
+      "start": 86.09,
+      "end": 86.67,
+      "text": "soluzioni.",
+      "words": [
+        {
+          "text": "soluzioni.",
+          "start": 86.09,
+          "end": 86.67
+        }
+      ]
+    },
+    {
+      "start": 87.39,
+      "end": 90.051,
+      "text": "Da qui nasce il concetto di blind test set,",
+      "words": [
+        {
+          "text": "Da",
+          "start": 87.39,
+          "end": 87.45
+        },
+        {
+          "text": "qui",
+          "start": 87.51,
+          "end": 87.63
+        },
+        {
+          "text": "nasce",
+          "start": 87.83,
+          "end": 88.09
+        },
+        {
+          "text": "il",
+          "start": 88.13,
+          "end": 88.19
+        },
+        {
+          "text": "concetto",
+          "start": 88.21,
+          "end": 88.631
+        },
+        {
+          "text": "di",
+          "start": 88.711,
+          "end": 88.791
+        },
+        {
+          "text": "blind",
+          "start": 88.911,
+          "end": 89.291
+        },
+        {
+          "text": "test",
+          "start": 89.411,
+          "end": 89.651
+        },
+        {
+          "text": "set,",
+          "start": 89.791,
+          "end": 90.051
+        }
+      ]
+    },
+    {
+      "start": 90.311,
+      "end": 92.791,
+      "text": "o test cieco, usato nelle competizioni.",
+      "words": [
+        {
+          "text": "o",
+          "start": 90.311,
+          "end": 90.35100000000001
+        },
+        {
+          "text": "test",
+          "start": 90.431,
+          "end": 90.631
+        },
+        {
+          "text": "cieco,",
+          "start": 90.751,
+          "end": 91.051
+        },
+        {
+          "text": "usato",
+          "start": 91.471,
+          "end": 91.771
+        },
+        {
+          "text": "nelle",
+          "start": 91.831,
+          "end": 92.031
+        },
+        {
+          "text": "competizioni.",
+          "start": 92.091,
+          "end": 92.791
+        }
+      ]
+    }
+  ]
+}

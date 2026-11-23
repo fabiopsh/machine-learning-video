@@ -1,0 +1,727 @@
+{
+  "duration": 54.746,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.6610000000000005,
+      "text": "Visualizziamo il significato geometrico delle tre componenti nello spazio delle ipotesi H.",
+      "words": [
+        {
+          "text": "Visualizziamo",
+          "start": 0.08,
+          "end": 0.74
+        },
+        {
+          "text": "il",
+          "start": 0.8,
+          "end": 0.86
+        },
+        {
+          "text": "significato",
+          "start": 0.9,
+          "end": 1.5
+        },
+        {
+          "text": "geometrico",
+          "start": 1.58,
+          "end": 2.12
+        },
+        {
+          "text": "delle",
+          "start": 2.18,
+          "end": 2.36
+        },
+        {
+          "text": "tre",
+          "start": 2.42,
+          "end": 2.54
+        },
+        {
+          "text": "componenti",
+          "start": 2.62,
+          "end": 3.161
+        },
+        {
+          "text": "nello",
+          "start": 3.221,
+          "end": 3.401
+        },
+        {
+          "text": "spazio",
+          "start": 3.421,
+          "end": 3.741
+        },
+        {
+          "text": "delle",
+          "start": 3.781,
+          "end": 3.941
+        },
+        {
+          "text": "ipotesi",
+          "start": 3.981,
+          "end": 4.361
+        },
+        {
+          "text": "H.",
+          "start": 4.621,
+          "end": 4.6610000000000005
+        }
+      ]
+    },
+    {
+      "start": 5.221,
+      "end": 10.002,
+      "text": "Training set diversi producono ipotesi diverse, rappresentate dalla nuvola di punti blu:",
+      "words": [
+        {
+          "text": "Training",
+          "start": 5.221,
+          "end": 5.601
+        },
+        {
+          "text": "set",
+          "start": 5.701,
+          "end": 5.901
+        },
+        {
+          "text": "diversi",
+          "start": 5.981,
+          "end": 6.461
+        },
+        {
+          "text": "producono",
+          "start": 6.761,
+          "end": 7.161
+        },
+        {
+          "text": "ipotesi",
+          "start": 7.221,
+          "end": 7.581
+        },
+        {
+          "text": "diverse,",
+          "start": 7.641,
+          "end": 8.121
+        },
+        {
+          "text": "rappresentate",
+          "start": 8.301,
+          "end": 8.902
+        },
+        {
+          "text": "dalla",
+          "start": 8.942,
+          "end": 9.102
+        },
+        {
+          "text": "nuvola",
+          "start": 9.142,
+          "end": 9.402
+        },
+        {
+          "text": "di",
+          "start": 9.442,
+          "end": 9.502
+        },
+        {
+          "text": "punti",
+          "start": 9.542,
+          "end": 9.822
+        },
+        {
+          "text": "blu:",
+          "start": 9.862,
+          "end": 10.002
+        }
+      ]
+    },
+    {
+      "start": 10.742,
+      "end": 12.802,
+      "text": "l'ampiezza di questa nuvola è la varianza.",
+      "words": [
+        {
+          "text": "l'ampiezza",
+          "start": 10.742,
+          "end": 11.122
+        },
+        {
+          "text": "di",
+          "start": 11.182,
+          "end": 11.242
+        },
+        {
+          "text": "questa",
+          "start": 11.282,
+          "end": 11.522
+        },
+        {
+          "text": "nuvola",
+          "start": 11.582,
+          "end": 11.902
+        },
+        {
+          "text": "è",
+          "start": 12.062,
+          "end": 12.102
+        },
+        {
+          "text": "la",
+          "start": 12.162,
+          "end": 12.222
+        },
+        {
+          "text": "varianza.",
+          "start": 12.262,
+          "end": 12.802
+        }
+      ]
+    },
+    {
+      "start": 13.402,
+      "end": 17.403,
+      "text": "Il baricentro della nuvola è la predizione media h soprassegnato:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 13.402,
+          "end": 13.502
+        },
+        {
+          "text": "baricentro",
+          "start": 13.542,
+          "end": 14.082
+        },
+        {
+          "text": "della",
+          "start": 14.122,
+          "end": 14.282
+        },
+        {
+          "text": "nuvola",
+          "start": 14.322,
+          "end": 14.682
+        },
+        {
+          "text": "è",
+          "start": 14.822,
+          "end": 14.862
+        },
+        {
+          "text": "la",
+          "start": 14.942,
+          "end": 15.002
+        },
+        {
+          "text": "predizione",
+          "start": 15.042,
+          "end": 15.523
+        },
+        {
+          "text": "media",
+          "start": 15.543,
+          "end": 15.843
+        },
+        {
+          "text": "h",
+          "start": 16.383,
+          "end": 16.423
+        },
+        {
+          "text": "soprassegnato:",
+          "start": 16.643,
+          "end": 17.403
+        }
+      ]
+    },
+    {
+      "start": 18.163,
+      "end": 21.824,
+      "text": "la sua distanza dalla migliore soluzione ottenibile in H è il bias.",
+      "words": [
+        {
+          "text": "la",
+          "start": 18.163,
+          "end": 18.223
+        },
+        {
+          "text": "sua",
+          "start": 18.263,
+          "end": 18.383
+        },
+        {
+          "text": "distanza",
+          "start": 18.423,
+          "end": 18.823
+        },
+        {
+          "text": "dalla",
+          "start": 18.863,
+          "end": 19.003
+        },
+        {
+          "text": "migliore",
+          "start": 19.023,
+          "end": 19.343
+        },
+        {
+          "text": "soluzione",
+          "start": 19.383,
+          "end": 19.823
+        },
+        {
+          "text": "ottenibile",
+          "start": 19.863,
+          "end": 20.363
+        },
+        {
+          "text": "in",
+          "start": 20.423,
+          "end": 20.503
+        },
+        {
+          "text": "H",
+          "start": 20.743,
+          "end": 20.783
+        },
+        {
+          "text": "è",
+          "start": 21.164,
+          "end": 21.204
+        },
+        {
+          "text": "il",
+          "start": 21.264,
+          "end": 21.324
+        },
+        {
+          "text": "bias.",
+          "start": 21.364,
+          "end": 21.824
+        }
+      ]
+    },
+    {
+      "start": 22.664,
+      "end": 28.025,
+      "text": "Infine, anche la soluzione ottima resta distante dai target reali a causa del rumore sigma",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 22.664,
+          "end": 23.024
+        },
+        {
+          "text": "anche",
+          "start": 23.264,
+          "end": 23.464
+        },
+        {
+          "text": "la",
+          "start": 23.504,
+          "end": 23.564
+        },
+        {
+          "text": "soluzione",
+          "start": 23.604,
+          "end": 24.044
+        },
+        {
+          "text": "ottima",
+          "start": 24.124,
+          "end": 24.504
+        },
+        {
+          "text": "resta",
+          "start": 24.664,
+          "end": 24.904
+        },
+        {
+          "text": "distante",
+          "start": 24.984,
+          "end": 25.444
+        },
+        {
+          "text": "dai",
+          "start": 25.484,
+          "end": 25.604
+        },
+        {
+          "text": "target",
+          "start": 25.624,
+          "end": 25.984
+        },
+        {
+          "text": "reali",
+          "start": 26.064,
+          "end": 26.384
+        },
+        {
+          "text": "a",
+          "start": 26.724,
+          "end": 26.764
+        },
+        {
+          "text": "causa",
+          "start": 26.804,
+          "end": 27.044
+        },
+        {
+          "text": "del",
+          "start": 27.084,
+          "end": 27.204
+        },
+        {
+          "text": "rumore",
+          "start": 27.225,
+          "end": 27.505
+        },
+        {
+          "text": "sigma",
+          "start": 27.685,
+          "end": 28.025
+        }
+      ]
+    },
+    {
+      "start": 28.085,
+      "end": 30.845,
+      "text": "quadro, che è irriducibile e non dipende dal modello.",
+      "words": [
+        {
+          "text": "quadro,",
+          "start": 28.085,
+          "end": 28.445
+        },
+        {
+          "text": "che",
+          "start": 28.585,
+          "end": 28.665
+        },
+        {
+          "text": "è",
+          "start": 28.725,
+          "end": 28.765
+        },
+        {
+          "text": "irriducibile",
+          "start": 28.825,
+          "end": 29.625
+        },
+        {
+          "text": "e",
+          "start": 29.725,
+          "end": 29.765
+        },
+        {
+          "text": "non",
+          "start": 29.805,
+          "end": 29.925
+        },
+        {
+          "text": "dipende",
+          "start": 29.945,
+          "end": 30.265
+        },
+        {
+          "text": "dal",
+          "start": 30.305,
+          "end": 30.425
+        },
+        {
+          "text": "modello.",
+          "start": 30.445,
+          "end": 30.845
+        }
+      ]
+    },
+    {
+      "start": 31.785,
+      "end": 37.026,
+      "text": "L'analogia delle freccette riassume bene i quattro scenari: il centro del bersaglio è la funzione",
+      "words": [
+        {
+          "text": "L'analogia",
+          "start": 31.785,
+          "end": 32.285
+        },
+        {
+          "text": "delle",
+          "start": 32.325,
+          "end": 32.485
+        },
+        {
+          "text": "freccette",
+          "start": 32.525,
+          "end": 33.025
+        },
+        {
+          "text": "riassume",
+          "start": 33.185,
+          "end": 33.586
+        },
+        {
+          "text": "bene",
+          "start": 33.626,
+          "end": 33.806
+        },
+        {
+          "text": "i",
+          "start": 33.826,
+          "end": 33.866
+        },
+        {
+          "text": "quattro",
+          "start": 33.886,
+          "end": 34.146
+        },
+        {
+          "text": "scenari:",
+          "start": 34.186,
+          "end": 34.626
+        },
+        {
+          "text": "il",
+          "start": 35.046,
+          "end": 35.166
+        },
+        {
+          "text": "centro",
+          "start": 35.246,
+          "end": 35.626
+        },
+        {
+          "text": "del",
+          "start": 35.666,
+          "end": 35.786
+        },
+        {
+          "text": "bersaglio",
+          "start": 35.826,
+          "end": 36.386
+        },
+        {
+          "text": "è",
+          "start": 36.486,
+          "end": 36.526
+        },
+        {
+          "text": "la",
+          "start": 36.566,
+          "end": 36.606
+        },
+        {
+          "text": "funzione",
+          "start": 36.646,
+          "end": 37.026
+        }
+      ]
+    },
+    {
+      "start": 37.066,
+      "end": 41.347,
+      "text": "vera, ogni freccetta è un modello addestrato su un training set diverso.",
+      "words": [
+        {
+          "text": "vera,",
+          "start": 37.066,
+          "end": 37.326
+        },
+        {
+          "text": "ogni",
+          "start": 37.986,
+          "end": 38.166
+        },
+        {
+          "text": "freccetta",
+          "start": 38.206,
+          "end": 38.746
+        },
+        {
+          "text": "è",
+          "start": 38.906,
+          "end": 38.946
+        },
+        {
+          "text": "un",
+          "start": 39.006,
+          "end": 39.046
+        },
+        {
+          "text": "modello",
+          "start": 39.086,
+          "end": 39.346
+        },
+        {
+          "text": "addestrato",
+          "start": 39.387,
+          "end": 39.867
+        },
+        {
+          "text": "su",
+          "start": 39.927,
+          "end": 39.987
+        },
+        {
+          "text": "un",
+          "start": 40.047,
+          "end": 40.107
+        },
+        {
+          "text": "training",
+          "start": 40.147,
+          "end": 40.507
+        },
+        {
+          "text": "set",
+          "start": 40.587,
+          "end": 40.807
+        },
+        {
+          "text": "diverso.",
+          "start": 40.887,
+          "end": 41.347
+        }
+      ]
+    },
+    {
+      "start": 42.227,
+      "end": 48.148,
+      "text": "Alto bias e bassa varianza corrisponde all'underfitting: colpi raggruppati ma lontani dal centro.",
+      "words": [
+        {
+          "text": "Alto",
+          "start": 42.227,
+          "end": 42.467
+        },
+        {
+          "text": "bias",
+          "start": 42.507,
+          "end": 42.967
+        },
+        {
+          "text": "e",
+          "start": 43.147,
+          "end": 43.187
+        },
+        {
+          "text": "bassa",
+          "start": 43.267,
+          "end": 43.507
+        },
+        {
+          "text": "varianza",
+          "start": 43.547,
+          "end": 44.067
+        },
+        {
+          "text": "corrisponde",
+          "start": 44.227,
+          "end": 44.707
+        },
+        {
+          "text": "all'underfitting:",
+          "start": 44.747,
+          "end": 45.588
+        },
+        {
+          "text": "colpi",
+          "start": 45.928,
+          "end": 46.248
+        },
+        {
+          "text": "raggruppati",
+          "start": 46.308,
+          "end": 46.928
+        },
+        {
+          "text": "ma",
+          "start": 47.068,
+          "end": 47.108
+        },
+        {
+          "text": "lontani",
+          "start": 47.228,
+          "end": 47.528
+        },
+        {
+          "text": "dal",
+          "start": 47.568,
+          "end": 47.708
+        },
+        {
+          "text": "centro.",
+          "start": 47.748,
+          "end": 48.148
+        }
+      ]
+    },
+    {
+      "start": 48.868,
+      "end": 54.449,
+      "text": "Basso bias e alta varianza corrisponde all'overfitting: colpi dispersi attorno al centro.",
+      "words": [
+        {
+          "text": "Basso",
+          "start": 48.868,
+          "end": 49.128
+        },
+        {
+          "text": "bias",
+          "start": 49.188,
+          "end": 49.588
+        },
+        {
+          "text": "e",
+          "start": 49.728,
+          "end": 49.768
+        },
+        {
+          "text": "alta",
+          "start": 49.808,
+          "end": 50.008
+        },
+        {
+          "text": "varianza",
+          "start": 50.048,
+          "end": 50.508
+        },
+        {
+          "text": "corrisponde",
+          "start": 50.548,
+          "end": 51.088
+        },
+        {
+          "text": "all'overfitting:",
+          "start": 51.108,
+          "end": 51.869
+        },
+        {
+          "text": "colpi",
+          "start": 52.229,
+          "end": 52.529
+        },
+        {
+          "text": "dispersi",
+          "start": 52.609,
+          "end": 53.289
+        },
+        {
+          "text": "attorno",
+          "start": 53.509,
+          "end": 53.889
+        },
+        {
+          "text": "al",
+          "start": 53.929,
+          "end": 54.009
+        },
+        {
+          "text": "centro.",
+          "start": 54.069,
+          "end": 54.449
+        }
+      ]
+    }
+  ]
+}

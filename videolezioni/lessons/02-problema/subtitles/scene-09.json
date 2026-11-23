@@ -1,0 +1,595 @@
+{
+  "duration": 52.19,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.641,
+      "text": "Riassumiamo i quattro punti chiave del capitolo.",
+      "words": [
+        {
+          "text": "Riassumiamo",
+          "start": 0.08,
+          "end": 0.68
+        },
+        {
+          "text": "i",
+          "start": 0.78,
+          "end": 0.8200000000000001
+        },
+        {
+          "text": "quattro",
+          "start": 0.86,
+          "end": 1.201
+        },
+        {
+          "text": "punti",
+          "start": 1.241,
+          "end": 1.521
+        },
+        {
+          "text": "chiave",
+          "start": 1.581,
+          "end": 1.901
+        },
+        {
+          "text": "del",
+          "start": 1.941,
+          "end": 2.061
+        },
+        {
+          "text": "capitolo.",
+          "start": 2.121,
+          "end": 2.641
+        }
+      ]
+    },
+    {
+      "start": 3.241,
+      "end": 10.944,
+      "text": "Primo: apprendere significa inferire da esempi un'ipotesi h nello spazio H che approssimi f e",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 3.241,
+          "end": 3.601
+        },
+        {
+          "text": "apprendere",
+          "start": 3.861,
+          "end": 4.382
+        },
+        {
+          "text": "significa",
+          "start": 4.442,
+          "end": 4.942
+        },
+        {
+          "text": "inferire",
+          "start": 5.062,
+          "end": 5.762
+        },
+        {
+          "text": "da",
+          "start": 5.842,
+          "end": 5.902
+        },
+        {
+          "text": "esempi",
+          "start": 6.002,
+          "end": 6.523
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 6.703,
+          "end": 7.303
+        },
+        {
+          "text": "h",
+          "start": 7.763,
+          "end": 7.803
+        },
+        {
+          "text": "nello",
+          "start": 7.923,
+          "end": 8.123
+        },
+        {
+          "text": "spazio",
+          "start": 8.163,
+          "end": 8.503
+        },
+        {
+          "text": "H",
+          "start": 8.803,
+          "end": 8.843
+        },
+        {
+          "text": "che",
+          "start": 9.264,
+          "end": 9.344
+        },
+        {
+          "text": "approssimi",
+          "start": 9.364,
+          "end": 9.904
+        },
+        {
+          "text": "f",
+          "start": 10.344,
+          "end": 10.384
+        },
+        {
+          "text": "e",
+          "start": 10.904,
+          "end": 10.944
+        }
+      ]
+    },
+    {
+      "start": 11.024,
+      "end": 12.465,
+      "text": "generalizzi su dati nuovi.",
+      "words": [
+        {
+          "text": "generalizzi",
+          "start": 11.024,
+          "end": 11.664
+        },
+        {
+          "text": "su",
+          "start": 11.745,
+          "end": 11.825
+        },
+        {
+          "text": "dati",
+          "start": 11.905,
+          "end": 12.105
+        },
+        {
+          "text": "nuovi.",
+          "start": 12.165,
+          "end": 12.465
+        }
+      ]
+    },
+    {
+      "start": 13.185,
+      "end": 19.577,
+      "text": "Secondo: ogni sistema si scompone in dati — con notazione matriciale e codifica one-hot —",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 13.185,
+          "end": 13.625
+        },
+        {
+          "text": "ogni",
+          "start": 14.205,
+          "end": 14.386
+        },
+        {
+          "text": "sistema",
+          "start": 14.446,
+          "end": 14.806
+        },
+        {
+          "text": "si",
+          "start": 14.866,
+          "end": 14.946
+        },
+        {
+          "text": "scompone",
+          "start": 14.986,
+          "end": 15.386
+        },
+        {
+          "text": "in",
+          "start": 15.446,
+          "end": 15.506
+        },
+        {
+          "text": "dati",
+          "start": 15.566,
+          "end": 15.906
+        },
+        {
+          "text": "—",
+          "start": 15.906,
+          "end": 16.056
+        },
+        {
+          "text": "con",
+          "start": 16.386,
+          "end": 16.546
+        },
+        {
+          "text": "notazione",
+          "start": 16.606,
+          "end": 17.147
+        },
+        {
+          "text": "matriciale",
+          "start": 17.187,
+          "end": 17.807
+        },
+        {
+          "text": "e",
+          "start": 17.947,
+          "end": 17.987
+        },
+        {
+          "text": "codifica",
+          "start": 18.047,
+          "end": 18.567
+        },
+        {
+          "text": "one-hot",
+          "start": 18.907,
+          "end": 19.427
+        },
+        {
+          "text": "—",
+          "start": 19.427,
+          "end": 19.577
+        }
+      ]
+    },
+    {
+      "start": 20.048,
+      "end": 24.689,
+      "text": "task, modello, algoritmo di ricerca in H e validazione.",
+      "words": [
+        {
+          "text": "task,",
+          "start": 20.048,
+          "end": 20.448
+        },
+        {
+          "text": "modello,",
+          "start": 20.948,
+          "end": 21.468
+        },
+        {
+          "text": "algoritmo",
+          "start": 21.788,
+          "end": 22.329
+        },
+        {
+          "text": "di",
+          "start": 22.389,
+          "end": 22.449
+        },
+        {
+          "text": "ricerca",
+          "start": 22.489,
+          "end": 22.929
+        },
+        {
+          "text": "in",
+          "start": 23.129,
+          "end": 23.229
+        },
+        {
+          "text": "H",
+          "start": 23.509,
+          "end": 23.549
+        },
+        {
+          "text": "e",
+          "start": 23.869,
+          "end": 23.909
+        },
+        {
+          "text": "validazione.",
+          "start": 23.989,
+          "end": 24.689
+        }
+      ]
+    },
+    {
+      "start": 25.45,
+      "end": 30.532,
+      "text": "Terzo: le quattro loss fondamentali sono errore quadratico per la regressione,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 25.45,
+          "end": 25.85
+        },
+        {
+          "text": "le",
+          "start": 26.47,
+          "end": 26.55
+        },
+        {
+          "text": "quattro",
+          "start": 26.59,
+          "end": 26.91
+        },
+        {
+          "text": "loss",
+          "start": 26.95,
+          "end": 27.11
+        },
+        {
+          "text": "fondamentali",
+          "start": 27.17,
+          "end": 27.811
+        },
+        {
+          "text": "sono",
+          "start": 27.871,
+          "end": 28.131
+        },
+        {
+          "text": "errore",
+          "start": 28.631,
+          "end": 28.931
+        },
+        {
+          "text": "quadratico",
+          "start": 28.991,
+          "end": 29.551
+        },
+        {
+          "text": "per",
+          "start": 29.611,
+          "end": 29.731
+        },
+        {
+          "text": "la",
+          "start": 29.771,
+          "end": 29.831
+        },
+        {
+          "text": "regressione,",
+          "start": 29.871,
+          "end": 30.532
+        }
+      ]
+    },
+    {
+      "start": 31.032,
+      "end": 38.235,
+      "text": "loss zero uno per la classificazione, distorsione quadratica per il clustering e meno logaritmo naturale",
+      "words": [
+        {
+          "text": "loss",
+          "start": 31.032,
+          "end": 31.312
+        },
+        {
+          "text": "zero",
+          "start": 31.552,
+          "end": 31.772
+        },
+        {
+          "text": "uno",
+          "start": 31.872,
+          "end": 32.052
+        },
+        {
+          "text": "per",
+          "start": 32.192,
+          "end": 32.332
+        },
+        {
+          "text": "la",
+          "start": 32.372,
+          "end": 32.432
+        },
+        {
+          "text": "classificazione,",
+          "start": 32.472,
+          "end": 33.433
+        },
+        {
+          "text": "distorsione",
+          "start": 33.953,
+          "end": 34.513
+        },
+        {
+          "text": "quadratica",
+          "start": 34.553,
+          "end": 35.113
+        },
+        {
+          "text": "per",
+          "start": 35.173,
+          "end": 35.294
+        },
+        {
+          "text": "il",
+          "start": 35.314,
+          "end": 35.394
+        },
+        {
+          "text": "clustering",
+          "start": 35.474,
+          "end": 36.074
+        },
+        {
+          "text": "e",
+          "start": 36.554,
+          "end": 36.594
+        },
+        {
+          "text": "meno",
+          "start": 36.894,
+          "end": 37.134
+        },
+        {
+          "text": "logaritmo",
+          "start": 37.194,
+          "end": 37.674
+        },
+        {
+          "text": "naturale",
+          "start": 37.734,
+          "end": 38.235
+        }
+      ]
+    },
+    {
+      "start": 38.355,
+      "end": 39.555,
+      "text": "per la stima di densità.",
+      "words": [
+        {
+          "text": "per",
+          "start": 38.355,
+          "end": 38.495
+        },
+        {
+          "text": "la",
+          "start": 38.555,
+          "end": 38.615
+        },
+        {
+          "text": "stima",
+          "start": 38.675,
+          "end": 38.935
+        },
+        {
+          "text": "di",
+          "start": 38.995,
+          "end": 39.115
+        },
+        {
+          "text": "densità.",
+          "start": 39.115,
+          "end": 39.555
+        }
+      ]
+    },
+    {
+      "start": 40.235,
+      "end": 45.197,
+      "text": "Quarto: conta sempre l'errore di generalizzazione, non l'errore di training.",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 40.235,
+          "end": 40.656
+        },
+        {
+          "text": "conta",
+          "start": 41.236,
+          "end": 41.516
+        },
+        {
+          "text": "sempre",
+          "start": 41.576,
+          "end": 41.856
+        },
+        {
+          "text": "l'errore",
+          "start": 41.916,
+          "end": 42.316
+        },
+        {
+          "text": "di",
+          "start": 42.376,
+          "end": 42.456
+        },
+        {
+          "text": "generalizzazione,",
+          "start": 42.536,
+          "end": 43.557
+        },
+        {
+          "text": "non",
+          "start": 43.917,
+          "end": 44.097
+        },
+        {
+          "text": "l'errore",
+          "start": 44.157,
+          "end": 44.557
+        },
+        {
+          "text": "di",
+          "start": 44.617,
+          "end": 44.677
+        },
+        {
+          "text": "training.",
+          "start": 44.737,
+          "end": 45.197
+        }
+      ]
+    },
+    {
+      "start": 45.778,
+      "end": 51.94,
+      "text": "Nel prossimo capitolo vedremo perché senza assunzioni a priori la generalizzazione è impossibile.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 45.778,
+          "end": 45.918
+        },
+        {
+          "text": "prossimo",
+          "start": 45.958,
+          "end": 46.298
+        },
+        {
+          "text": "capitolo",
+          "start": 46.338,
+          "end": 46.758
+        },
+        {
+          "text": "vedremo",
+          "start": 46.798,
+          "end": 47.118
+        },
+        {
+          "text": "perché",
+          "start": 47.218,
+          "end": 47.598
+        },
+        {
+          "text": "senza",
+          "start": 47.818,
+          "end": 48.138
+        },
+        {
+          "text": "assunzioni",
+          "start": 48.178,
+          "end": 48.719
+        },
+        {
+          "text": "a",
+          "start": 48.779,
+          "end": 48.819
+        },
+        {
+          "text": "priori",
+          "start": 48.839,
+          "end": 49.259
+        },
+        {
+          "text": "la",
+          "start": 49.639,
+          "end": 49.699
+        },
+        {
+          "text": "generalizzazione",
+          "start": 49.779,
+          "end": 50.779
+        },
+        {
+          "text": "è",
+          "start": 51.04,
+          "end": 51.08
+        },
+        {
+          "text": "impossibile.",
+          "start": 51.18,
+          "end": 51.94
+        }
+      ]
+    }
+  ]
+}

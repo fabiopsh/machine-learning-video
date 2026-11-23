@@ -1,0 +1,1443 @@
+{
+  "duration": 95.162,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.9,
+      "text": "Approfondiamo il primo ingrediente: i dati e la loro rappresentazione.",
+      "words": [
+        {
+          "text": "Approfondiamo",
+          "start": 0.08,
+          "end": 0.68
+        },
+        {
+          "text": "il",
+          "start": 0.74,
+          "end": 0.8
+        },
+        {
+          "text": "primo",
+          "start": 0.82,
+          "end": 1.02
+        },
+        {
+          "text": "ingrediente:",
+          "start": 1.08,
+          "end": 1.72
+        },
+        {
+          "text": "i",
+          "start": 1.96,
+          "end": 2.0
+        },
+        {
+          "text": "dati",
+          "start": 2.08,
+          "end": 2.42
+        },
+        {
+          "text": "e",
+          "start": 2.62,
+          "end": 2.66
+        },
+        {
+          "text": "la",
+          "start": 2.7,
+          "end": 2.76
+        },
+        {
+          "text": "loro",
+          "start": 2.82,
+          "end": 3.0
+        },
+        {
+          "text": "rappresentazione.",
+          "start": 3.06,
+          "end": 3.9
+        }
+      ]
+    },
+    {
+      "start": 4.38,
+      "end": 9.081,
+      "text": "Nel caso piatto — attributo-valore — ogni oggetto è un vettore di dimensione fissa di",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 4.38,
+          "end": 4.5
+        },
+        {
+          "text": "caso",
+          "start": 4.54,
+          "end": 4.761
+        },
+        {
+          "text": "piatto",
+          "start": 4.821,
+          "end": 5.321
+        },
+        {
+          "text": "—",
+          "start": 5.321,
+          "end": 5.471
+        },
+        {
+          "text": "attributo-valore",
+          "start": 5.561,
+          "end": 6.461
+        },
+        {
+          "text": "—",
+          "start": 6.461,
+          "end": 6.611
+        },
+        {
+          "text": "ogni",
+          "start": 6.621,
+          "end": 6.781
+        },
+        {
+          "text": "oggetto",
+          "start": 6.821,
+          "end": 7.161
+        },
+        {
+          "text": "è",
+          "start": 7.181,
+          "end": 7.221
+        },
+        {
+          "text": "un",
+          "start": 7.261,
+          "end": 7.321
+        },
+        {
+          "text": "vettore",
+          "start": 7.361,
+          "end": 7.741
+        },
+        {
+          "text": "di",
+          "start": 7.781,
+          "end": 7.861
+        },
+        {
+          "text": "dimensione",
+          "start": 7.921,
+          "end": 8.401
+        },
+        {
+          "text": "fissa",
+          "start": 8.481,
+          "end": 8.841
+        },
+        {
+          "text": "di",
+          "start": 9.001,
+          "end": 9.081
+        }
+      ]
+    },
+    {
+      "start": 9.221,
+      "end": 13.621,
+      "text": "feature e il dataset è una matrice X di dimensione l per n:",
+      "words": [
+        {
+          "text": "feature",
+          "start": 9.221,
+          "end": 9.641
+        },
+        {
+          "text": "e",
+          "start": 10.101,
+          "end": 10.141
+        },
+        {
+          "text": "il",
+          "start": 10.281,
+          "end": 10.361
+        },
+        {
+          "text": "dataset",
+          "start": 10.401,
+          "end": 10.901
+        },
+        {
+          "text": "è",
+          "start": 11.001,
+          "end": 11.041
+        },
+        {
+          "text": "una",
+          "start": 11.081,
+          "end": 11.161
+        },
+        {
+          "text": "matrice",
+          "start": 11.201,
+          "end": 11.581
+        },
+        {
+          "text": "X",
+          "start": 11.761,
+          "end": 11.801
+        },
+        {
+          "text": "di",
+          "start": 12.021,
+          "end": 12.101
+        },
+        {
+          "text": "dimensione",
+          "start": 12.141,
+          "end": 12.601
+        },
+        {
+          "text": "l",
+          "start": 12.961,
+          "end": 13.001
+        },
+        {
+          "text": "per",
+          "start": 13.201,
+          "end": 13.341
+        },
+        {
+          "text": "n:",
+          "start": 13.581,
+          "end": 13.621
+        }
+      ]
+    },
+    {
+      "start": 14.402,
+      "end": 16.602,
+      "text": "l righe sono gli esempi, indicizzati da p;",
+      "words": [
+        {
+          "text": "l",
+          "start": 14.402,
+          "end": 14.442
+        },
+        {
+          "text": "righe",
+          "start": 14.502,
+          "end": 14.742
+        },
+        {
+          "text": "sono",
+          "start": 14.862,
+          "end": 15.022
+        },
+        {
+          "text": "gli",
+          "start": 15.042,
+          "end": 15.142
+        },
+        {
+          "text": "esempi,",
+          "start": 15.162,
+          "end": 15.582
+        },
+        {
+          "text": "indicizzati",
+          "start": 15.762,
+          "end": 16.342
+        },
+        {
+          "text": "da",
+          "start": 16.382,
+          "end": 16.442
+        },
+        {
+          "text": "p;",
+          "start": 16.562,
+          "end": 16.602
+        }
+      ]
+    },
+    {
+      "start": 17.282,
+      "end": 19.922,
+      "text": "n colonne sono le feature, indicizzate da i.",
+      "words": [
+        {
+          "text": "n",
+          "start": 17.282,
+          "end": 17.322
+        },
+        {
+          "text": "colonne",
+          "start": 17.402,
+          "end": 17.762
+        },
+        {
+          "text": "sono",
+          "start": 17.822,
+          "end": 18.002
+        },
+        {
+          "text": "le",
+          "start": 18.082,
+          "end": 18.142
+        },
+        {
+          "text": "feature,",
+          "start": 18.222,
+          "end": 18.602
+        },
+        {
+          "text": "indicizzate",
+          "start": 18.762,
+          "end": 19.382
+        },
+        {
+          "text": "da",
+          "start": 19.562,
+          "end": 19.662
+        },
+        {
+          "text": "i.",
+          "start": 19.882,
+          "end": 19.922
+        }
+      ]
+    },
+    {
+      "start": 20.542,
+      "end": 24.883,
+      "text": "Indichiamo con x con p il p-esimo pattern, con x con p virgola i la",
+      "words": [
+        {
+          "text": "Indichiamo",
+          "start": 20.542,
+          "end": 20.942
+        },
+        {
+          "text": "con",
+          "start": 21.002,
+          "end": 21.122
+        },
+        {
+          "text": "x",
+          "start": 21.302,
+          "end": 21.342
+        },
+        {
+          "text": "con",
+          "start": 21.462,
+          "end": 21.622
+        },
+        {
+          "text": "p",
+          "start": 21.702,
+          "end": 21.742
+        },
+        {
+          "text": "il",
+          "start": 21.982,
+          "end": 22.082
+        },
+        {
+          "text": "p-esimo",
+          "start": 22.122,
+          "end": 22.582
+        },
+        {
+          "text": "pattern,",
+          "start": 22.662,
+          "end": 23.183
+        },
+        {
+          "text": "con",
+          "start": 23.443,
+          "end": 23.583
+        },
+        {
+          "text": "x",
+          "start": 23.863,
+          "end": 23.903
+        },
+        {
+          "text": "con",
+          "start": 24.043,
+          "end": 24.183
+        },
+        {
+          "text": "p",
+          "start": 24.223,
+          "end": 24.263
+        },
+        {
+          "text": "virgola",
+          "start": 24.343,
+          "end": 24.663
+        },
+        {
+          "text": "i",
+          "start": 24.743,
+          "end": 24.783
+        },
+        {
+          "text": "la",
+          "start": 24.823,
+          "end": 24.883
+        }
+      ]
+    },
+    {
+      "start": 24.943,
+      "end": 28.603,
+      "text": "sua componente i, e con d con p il target desiderato.",
+      "words": [
+        {
+          "text": "sua",
+          "start": 24.943,
+          "end": 25.043
+        },
+        {
+          "text": "componente",
+          "start": 25.103,
+          "end": 25.623
+        },
+        {
+          "text": "i,",
+          "start": 25.743,
+          "end": 25.783
+        },
+        {
+          "text": "e",
+          "start": 26.243,
+          "end": 26.283
+        },
+        {
+          "text": "con",
+          "start": 26.363,
+          "end": 26.503
+        },
+        {
+          "text": "d",
+          "start": 26.603,
+          "end": 26.643
+        },
+        {
+          "text": "con",
+          "start": 26.783,
+          "end": 26.943
+        },
+        {
+          "text": "p",
+          "start": 27.003,
+          "end": 27.043
+        },
+        {
+          "text": "il",
+          "start": 27.303,
+          "end": 27.383
+        },
+        {
+          "text": "target",
+          "start": 27.483,
+          "end": 27.883
+        },
+        {
+          "text": "desiderato.",
+          "start": 28.003,
+          "end": 28.603
+        }
+      ]
+    },
+    {
+      "start": 29.103,
+      "end": 34.844,
+      "text": "Gli attributi possono essere categorici, continui o avere valori mancanti indicati con un punto interrogativo.",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 29.103,
+          "end": 29.203
+        },
+        {
+          "text": "attributi",
+          "start": 29.223,
+          "end": 29.603
+        },
+        {
+          "text": "possono",
+          "start": 29.643,
+          "end": 29.923
+        },
+        {
+          "text": "essere",
+          "start": 29.983,
+          "end": 30.223
+        },
+        {
+          "text": "categorici,",
+          "start": 30.283,
+          "end": 30.963
+        },
+        {
+          "text": "continui",
+          "start": 31.063,
+          "end": 31.663
+        },
+        {
+          "text": "o",
+          "start": 31.803,
+          "end": 31.843
+        },
+        {
+          "text": "avere",
+          "start": 31.883,
+          "end": 32.103
+        },
+        {
+          "text": "valori",
+          "start": 32.143,
+          "end": 32.404
+        },
+        {
+          "text": "mancanti",
+          "start": 32.444,
+          "end": 33.044
+        },
+        {
+          "text": "indicati",
+          "start": 33.184,
+          "end": 33.624
+        },
+        {
+          "text": "con",
+          "start": 33.664,
+          "end": 33.784
+        },
+        {
+          "text": "un",
+          "start": 33.824,
+          "end": 33.904
+        },
+        {
+          "text": "punto",
+          "start": 33.944,
+          "end": 34.164
+        },
+        {
+          "text": "interrogativo.",
+          "start": 34.204,
+          "end": 34.844
+        }
+      ]
+    },
+    {
+      "start": 35.684,
+      "end": 37.664,
+      "text": "Come codifichiamo le variabili categoriche?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 35.684,
+          "end": 35.864
+        },
+        {
+          "text": "codifichiamo",
+          "start": 35.924,
+          "end": 36.484
+        },
+        {
+          "text": "le",
+          "start": 36.524,
+          "end": 36.584
+        },
+        {
+          "text": "variabili",
+          "start": 36.604,
+          "end": 37.024
+        },
+        {
+          "text": "categoriche?",
+          "start": 37.044,
+          "end": 37.664
+        }
+      ]
+    },
+    {
+      "start": 38.164,
+      "end": 41.465,
+      "text": "Con due classi usiamo zero uno oppure meno uno più uno.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 38.164,
+          "end": 38.264
+        },
+        {
+          "text": "due",
+          "start": 38.304,
+          "end": 38.404
+        },
+        {
+          "text": "classi",
+          "start": 38.424,
+          "end": 38.724
+        },
+        {
+          "text": "usiamo",
+          "start": 38.764,
+          "end": 39.044
+        },
+        {
+          "text": "zero",
+          "start": 39.184,
+          "end": 39.404
+        },
+        {
+          "text": "uno",
+          "start": 39.504,
+          "end": 39.684
+        },
+        {
+          "text": "oppure",
+          "start": 39.924,
+          "end": 40.244
+        },
+        {
+          "text": "meno",
+          "start": 40.404,
+          "end": 40.624
+        },
+        {
+          "text": "uno",
+          "start": 40.744,
+          "end": 40.904
+        },
+        {
+          "text": "più",
+          "start": 41.044,
+          "end": 41.164
+        },
+        {
+          "text": "uno.",
+          "start": 41.284,
+          "end": 41.465
+        }
+      ]
+    },
+    {
+      "start": 42.005,
+      "end": 47.485,
+      "text": "Con più classi, numerare uno, due, tre introduce una somiglianza artificiale — la classe uno",
+      "words": [
+        {
+          "text": "Con",
+          "start": 42.005,
+          "end": 42.145
+        },
+        {
+          "text": "più",
+          "start": 42.205,
+          "end": 42.305
+        },
+        {
+          "text": "classi,",
+          "start": 42.385,
+          "end": 42.845
+        },
+        {
+          "text": "numerare",
+          "start": 43.025,
+          "end": 43.445
+        },
+        {
+          "text": "uno,",
+          "start": 43.625,
+          "end": 43.805
+        },
+        {
+          "text": "due,",
+          "start": 43.885,
+          "end": 44.065
+        },
+        {
+          "text": "tre",
+          "start": 44.145,
+          "end": 44.305
+        },
+        {
+          "text": "introduce",
+          "start": 44.685,
+          "end": 45.105
+        },
+        {
+          "text": "una",
+          "start": 45.165,
+          "end": 45.265
+        },
+        {
+          "text": "somiglianza",
+          "start": 45.305,
+          "end": 45.765
+        },
+        {
+          "text": "artificiale",
+          "start": 45.805,
+          "end": 46.405
+        },
+        {
+          "text": "—",
+          "start": 46.405,
+          "end": 46.555
+        },
+        {
+          "text": "la",
+          "start": 46.905,
+          "end": 46.965
+        },
+        {
+          "text": "classe",
+          "start": 47.005,
+          "end": 47.285
+        },
+        {
+          "text": "uno",
+          "start": 47.345,
+          "end": 47.485
+        }
+      ]
+    },
+    {
+      "start": 47.525,
+      "end": 51.446,
+      "text": "sembrerebbe più vicina alla due che alla tre — quindi va bene solo per variabili",
+      "words": [
+        {
+          "text": "sembrerebbe",
+          "start": 47.525,
+          "end": 47.985
+        },
+        {
+          "text": "più",
+          "start": 48.045,
+          "end": 48.145
+        },
+        {
+          "text": "vicina",
+          "start": 48.185,
+          "end": 48.505
+        },
+        {
+          "text": "alla",
+          "start": 48.545,
+          "end": 48.665
+        },
+        {
+          "text": "due",
+          "start": 48.705,
+          "end": 48.865
+        },
+        {
+          "text": "che",
+          "start": 49.005,
+          "end": 49.085
+        },
+        {
+          "text": "alla",
+          "start": 49.125,
+          "end": 49.265
+        },
+        {
+          "text": "tre",
+          "start": 49.305,
+          "end": 49.425
+        },
+        {
+          "text": "—",
+          "start": 49.425,
+          "end": 49.575
+        },
+        {
+          "text": "quindi",
+          "start": 49.905,
+          "end": 50.105
+        },
+        {
+          "text": "va",
+          "start": 50.145,
+          "end": 50.205
+        },
+        {
+          "text": "bene",
+          "start": 50.265,
+          "end": 50.465
+        },
+        {
+          "text": "solo",
+          "start": 50.565,
+          "end": 50.766
+        },
+        {
+          "text": "per",
+          "start": 50.806,
+          "end": 50.926
+        },
+        {
+          "text": "variabili",
+          "start": 50.986,
+          "end": 51.446
+        }
+      ]
+    },
+    {
+      "start": 51.506,
+      "end": 54.086,
+      "text": "categoriche ordinate come piccolo, medio, grande.",
+      "words": [
+        {
+          "text": "categoriche",
+          "start": 51.506,
+          "end": 52.066
+        },
+        {
+          "text": "ordinate",
+          "start": 52.106,
+          "end": 52.586
+        },
+        {
+          "text": "come",
+          "start": 52.646,
+          "end": 52.846
+        },
+        {
+          "text": "piccolo,",
+          "start": 53.026,
+          "end": 53.406
+        },
+        {
+          "text": "medio,",
+          "start": 53.446,
+          "end": 53.666
+        },
+        {
+          "text": "grande.",
+          "start": 53.706,
+          "end": 54.086
+        }
+      ]
+    },
+    {
+      "start": 55.046,
+      "end": 58.386,
+      "text": "Per simboli senza ordine si usa la codifica one-hot,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 55.046,
+          "end": 55.166
+        },
+        {
+          "text": "simboli",
+          "start": 55.226,
+          "end": 55.546
+        },
+        {
+          "text": "senza",
+          "start": 55.646,
+          "end": 55.986
+        },
+        {
+          "text": "ordine",
+          "start": 56.086,
+          "end": 56.426
+        },
+        {
+          "text": "si",
+          "start": 56.826,
+          "end": 56.906
+        },
+        {
+          "text": "usa",
+          "start": 56.966,
+          "end": 57.086
+        },
+        {
+          "text": "la",
+          "start": 57.146,
+          "end": 57.186
+        },
+        {
+          "text": "codifica",
+          "start": 57.226,
+          "end": 57.666
+        },
+        {
+          "text": "one-hot,",
+          "start": 57.866,
+          "end": 58.386
+        }
+      ]
+    },
+    {
+      "start": 58.626,
+      "end": 59.406,
+      "text": "o uno di k:",
+      "words": [
+        {
+          "text": "o",
+          "start": 58.626,
+          "end": 58.666
+        },
+        {
+          "text": "uno",
+          "start": 58.866,
+          "end": 59.066
+        },
+        {
+          "text": "di",
+          "start": 59.226,
+          "end": 59.286
+        },
+        {
+          "text": "k:",
+          "start": 59.366,
+          "end": 59.406
+        }
+      ]
+    },
+    {
+      "start": 60.347,
+      "end": 63.407,
+      "text": "A diventa uno zero zero, B zero uno zero,",
+      "words": [
+        {
+          "text": "A",
+          "start": 60.347,
+          "end": 60.387
+        },
+        {
+          "text": "diventa",
+          "start": 60.587,
+          "end": 60.967
+        },
+        {
+          "text": "uno",
+          "start": 61.167,
+          "end": 61.347
+        },
+        {
+          "text": "zero",
+          "start": 61.507,
+          "end": 61.707
+        },
+        {
+          "text": "zero,",
+          "start": 61.807,
+          "end": 62.067
+        },
+        {
+          "text": "B",
+          "start": 62.387,
+          "end": 62.427
+        },
+        {
+          "text": "zero",
+          "start": 62.707,
+          "end": 62.867
+        },
+        {
+          "text": "uno",
+          "start": 62.927,
+          "end": 63.047
+        },
+        {
+          "text": "zero,",
+          "start": 63.127,
+          "end": 63.407
+        }
+      ]
+    },
+    {
+      "start": 63.567,
+      "end": 68.607,
+      "text": "C zero zero uno — tutti i simboli risultano equidistanti a distanza radice di due,",
+      "words": [
+        {
+          "text": "C",
+          "start": 63.567,
+          "end": 63.607
+        },
+        {
+          "text": "zero",
+          "start": 63.927,
+          "end": 64.107
+        },
+        {
+          "text": "zero",
+          "start": 64.187,
+          "end": 64.347
+        },
+        {
+          "text": "uno",
+          "start": 64.427,
+          "end": 64.547
+        },
+        {
+          "text": "—",
+          "start": 64.547,
+          "end": 64.697
+        },
+        {
+          "text": "tutti",
+          "start": 65.007,
+          "end": 65.207
+        },
+        {
+          "text": "i",
+          "start": 65.247,
+          "end": 65.287
+        },
+        {
+          "text": "simboli",
+          "start": 65.307,
+          "end": 65.607
+        },
+        {
+          "text": "risultano",
+          "start": 65.667,
+          "end": 66.067
+        },
+        {
+          "text": "equidistanti",
+          "start": 66.127,
+          "end": 66.887
+        },
+        {
+          "text": "a",
+          "start": 67.047,
+          "end": 67.087
+        },
+        {
+          "text": "distanza",
+          "start": 67.127,
+          "end": 67.627
+        },
+        {
+          "text": "radice",
+          "start": 67.787,
+          "end": 68.167
+        },
+        {
+          "text": "di",
+          "start": 68.227,
+          "end": 68.307
+        },
+        {
+          "text": "due,",
+          "start": 68.367,
+          "end": 68.607
+        }
+      ]
+    },
+    {
+      "start": 68.967,
+      "end": 70.388,
+      "text": "sia in input sia in output.",
+      "words": [
+        {
+          "text": "sia",
+          "start": 68.967,
+          "end": 69.088
+        },
+        {
+          "text": "in",
+          "start": 69.128,
+          "end": 69.188
+        },
+        {
+          "text": "input",
+          "start": 69.228,
+          "end": 69.528
+        },
+        {
+          "text": "sia",
+          "start": 69.708,
+          "end": 69.828
+        },
+        {
+          "text": "in",
+          "start": 69.868,
+          "end": 69.908
+        },
+        {
+          "text": "output.",
+          "start": 69.968,
+          "end": 70.388
+        }
+      ]
+    },
+    {
+      "start": 71.188,
+      "end": 74.908,
+      "text": "Molti dati reali però non sono vettori piatti, ma dati strutturati:",
+      "words": [
+        {
+          "text": "Molti",
+          "start": 71.188,
+          "end": 71.428
+        },
+        {
+          "text": "dati",
+          "start": 71.468,
+          "end": 71.668
+        },
+        {
+          "text": "reali",
+          "start": 71.708,
+          "end": 72.008
+        },
+        {
+          "text": "però",
+          "start": 72.048,
+          "end": 72.228
+        },
+        {
+          "text": "non",
+          "start": 72.388,
+          "end": 72.528
+        },
+        {
+          "text": "sono",
+          "start": 72.608,
+          "end": 72.788
+        },
+        {
+          "text": "vettori",
+          "start": 72.828,
+          "end": 73.148
+        },
+        {
+          "text": "piatti,",
+          "start": 73.188,
+          "end": 73.568
+        },
+        {
+          "text": "ma",
+          "start": 73.808,
+          "end": 73.888
+        },
+        {
+          "text": "dati",
+          "start": 73.968,
+          "end": 74.208
+        },
+        {
+          "text": "strutturati:",
+          "start": 74.268,
+          "end": 74.908
+        }
+      ]
+    },
+    {
+      "start": 75.388,
+      "end": 79.989,
+      "text": "sequenze temporali o di DNA, molecole rappresentate come grafi di atomi e legami,",
+      "words": [
+        {
+          "text": "sequenze",
+          "start": 75.388,
+          "end": 75.768
+        },
+        {
+          "text": "temporali",
+          "start": 75.808,
+          "end": 76.248
+        },
+        {
+          "text": "o",
+          "start": 76.288,
+          "end": 76.328
+        },
+        {
+          "text": "di",
+          "start": 76.348,
+          "end": 76.408
+        },
+        {
+          "text": "DNA,",
+          "start": 76.448,
+          "end": 76.868
+        },
+        {
+          "text": "molecole",
+          "start": 77.348,
+          "end": 77.848
+        },
+        {
+          "text": "rappresentate",
+          "start": 77.908,
+          "end": 78.449
+        },
+        {
+          "text": "come",
+          "start": 78.469,
+          "end": 78.629
+        },
+        {
+          "text": "grafi",
+          "start": 78.689,
+          "end": 78.989
+        },
+        {
+          "text": "di",
+          "start": 79.049,
+          "end": 79.109
+        },
+        {
+          "text": "atomi",
+          "start": 79.209,
+          "end": 79.489
+        },
+        {
+          "text": "e",
+          "start": 79.529,
+          "end": 79.569
+        },
+        {
+          "text": "legami,",
+          "start": 79.609,
+          "end": 79.989
+        }
+      ]
+    },
+    {
+      "start": 80.449,
+      "end": 83.409,
+      "text": "e reti di pagine web con link, come vedi in basso.",
+      "words": [
+        {
+          "text": "e",
+          "start": 80.449,
+          "end": 80.489
+        },
+        {
+          "text": "reti",
+          "start": 80.609,
+          "end": 80.849
+        },
+        {
+          "text": "di",
+          "start": 80.889,
+          "end": 80.949
+        },
+        {
+          "text": "pagine",
+          "start": 81.009,
+          "end": 81.369
+        },
+        {
+          "text": "web",
+          "start": 81.469,
+          "end": 81.669
+        },
+        {
+          "text": "con",
+          "start": 81.789,
+          "end": 81.929
+        },
+        {
+          "text": "link,",
+          "start": 81.989,
+          "end": 82.269
+        },
+        {
+          "text": "come",
+          "start": 82.589,
+          "end": 82.749
+        },
+        {
+          "text": "vedi",
+          "start": 82.789,
+          "end": 82.969
+        },
+        {
+          "text": "in",
+          "start": 82.989,
+          "end": 83.02900000000001
+        },
+        {
+          "text": "basso.",
+          "start": 83.069,
+          "end": 83.409
+        }
+      ]
+    },
+    {
+      "start": 84.109,
+      "end": 87.75,
+      "text": "Infine in pre-elaborazione vanno gestiti il rumore casuale delle misure,",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 84.109,
+          "end": 84.449
+        },
+        {
+          "text": "in",
+          "start": 84.509,
+          "end": 84.549
+        },
+        {
+          "text": "pre-elaborazione",
+          "start": 84.589,
+          "end": 85.349
+        },
+        {
+          "text": "vanno",
+          "start": 85.409,
+          "end": 85.589
+        },
+        {
+          "text": "gestiti",
+          "start": 85.629,
+          "end": 86.049
+        },
+        {
+          "text": "il",
+          "start": 86.249,
+          "end": 86.329
+        },
+        {
+          "text": "rumore",
+          "start": 86.389,
+          "end": 86.689
+        },
+        {
+          "text": "casuale",
+          "start": 86.749,
+          "end": 87.129
+        },
+        {
+          "text": "delle",
+          "start": 87.169,
+          "end": 87.329
+        },
+        {
+          "text": "misure,",
+          "start": 87.369,
+          "end": 87.75
+        }
+      ]
+    },
+    {
+      "start": 88.19,
+      "end": 93.39,
+      "text": "gli outlier — valori anomali da rimuovere o trattare con metodi robusti — la scalatura",
+      "words": [
+        {
+          "text": "gli",
+          "start": 88.19,
+          "end": 88.29
+        },
+        {
+          "text": "outlier",
+          "start": 88.33,
+          "end": 88.97
+        },
+        {
+          "text": "—",
+          "start": 88.97,
+          "end": 89.12
+        },
+        {
+          "text": "valori",
+          "start": 89.27,
+          "end": 89.53
+        },
+        {
+          "text": "anomali",
+          "start": 89.57,
+          "end": 89.93
+        },
+        {
+          "text": "da",
+          "start": 89.97,
+          "end": 90.03
+        },
+        {
+          "text": "rimuovere",
+          "start": 90.07,
+          "end": 90.55
+        },
+        {
+          "text": "o",
+          "start": 90.69,
+          "end": 90.73
+        },
+        {
+          "text": "trattare",
+          "start": 90.79,
+          "end": 91.21
+        },
+        {
+          "text": "con",
+          "start": 91.25,
+          "end": 91.37
+        },
+        {
+          "text": "metodi",
+          "start": 91.43,
+          "end": 91.73
+        },
+        {
+          "text": "robusti",
+          "start": 91.79,
+          "end": 92.25
+        },
+        {
+          "text": "—",
+          "start": 92.25,
+          "end": 92.4
+        },
+        {
+          "text": "la",
+          "start": 92.75,
+          "end": 92.83
+        },
+        {
+          "text": "scalatura",
+          "start": 92.89,
+          "end": 93.39
+        }
+      ]
+    },
+    {
+      "start": 93.55,
+      "end": 94.63,
+      "text": "e la feature selection.",
+      "words": [
+        {
+          "text": "e",
+          "start": 93.55,
+          "end": 93.59
+        },
+        {
+          "text": "la",
+          "start": 93.63,
+          "end": 93.69
+        },
+        {
+          "text": "feature",
+          "start": 93.75,
+          "end": 94.07
+        },
+        {
+          "text": "selection.",
+          "start": 94.11,
+          "end": 94.63
+        }
+      ]
+    }
+  ]
+}

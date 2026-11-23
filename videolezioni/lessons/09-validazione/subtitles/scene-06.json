@@ -1,0 +1,907 @@
+{
+  "duration": 74.883,
+  "segments": [
+    {
+      "start": 0.804,
+      "end": 4.205,
+      "text": "Poiché la grid search scala male al crescere della dimensionalità,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 0.804,
+          "end": 1.044
+        },
+        {
+          "text": "la",
+          "start": 1.084,
+          "end": 1.144
+        },
+        {
+          "text": "grid",
+          "start": 1.184,
+          "end": 1.384
+        },
+        {
+          "text": "search",
+          "start": 1.504,
+          "end": 1.764
+        },
+        {
+          "text": "scala",
+          "start": 1.904,
+          "end": 2.184
+        },
+        {
+          "text": "male",
+          "start": 2.244,
+          "end": 2.504
+        },
+        {
+          "text": "al",
+          "start": 2.644,
+          "end": 2.764
+        },
+        {
+          "text": "crescere",
+          "start": 2.844,
+          "end": 3.244
+        },
+        {
+          "text": "della",
+          "start": 3.284,
+          "end": 3.464
+        },
+        {
+          "text": "dimensionalità,",
+          "start": 3.504,
+          "end": 4.205
+        }
+      ]
+    },
+    {
+      "start": 4.725,
+      "end": 9.265,
+      "text": "esistono alternative molto efficaci: la random search e la ricerca automatica,",
+      "words": [
+        {
+          "text": "esistono",
+          "start": 4.725,
+          "end": 5.085
+        },
+        {
+          "text": "alternative",
+          "start": 5.105,
+          "end": 5.645
+        },
+        {
+          "text": "molto",
+          "start": 5.725,
+          "end": 5.945
+        },
+        {
+          "text": "efficaci:",
+          "start": 5.985,
+          "end": 6.545
+        },
+        {
+          "text": "la",
+          "start": 7.025,
+          "end": 7.085
+        },
+        {
+          "text": "random",
+          "start": 7.165,
+          "end": 7.445
+        },
+        {
+          "text": "search",
+          "start": 7.525,
+          "end": 7.825
+        },
+        {
+          "text": "e",
+          "start": 8.165,
+          "end": 8.205
+        },
+        {
+          "text": "la",
+          "start": 8.245,
+          "end": 8.305
+        },
+        {
+          "text": "ricerca",
+          "start": 8.345,
+          "end": 8.665
+        },
+        {
+          "text": "automatica,",
+          "start": 8.705,
+          "end": 9.265
+        }
+      ]
+    },
+    {
+      "start": 9.345,
+      "end": 14.866,
+      "text": "come l'ottimizzazione bayesiana, gli algoritmi evolutivi e metodi come Hyperband,",
+      "words": [
+        {
+          "text": "come",
+          "start": 9.345,
+          "end": 9.525
+        },
+        {
+          "text": "l'ottimizzazione",
+          "start": 9.585,
+          "end": 10.365
+        },
+        {
+          "text": "bayesiana,",
+          "start": 10.425,
+          "end": 11.065
+        },
+        {
+          "text": "gli",
+          "start": 11.445,
+          "end": 11.545
+        },
+        {
+          "text": "algoritmi",
+          "start": 11.565,
+          "end": 12.046
+        },
+        {
+          "text": "evolutivi",
+          "start": 12.206,
+          "end": 12.846
+        },
+        {
+          "text": "e",
+          "start": 13.286,
+          "end": 13.326
+        },
+        {
+          "text": "metodi",
+          "start": 13.386,
+          "end": 13.746
+        },
+        {
+          "text": "come",
+          "start": 13.826,
+          "end": 14.026
+        },
+        {
+          "text": "Hyperband,",
+          "start": 14.186,
+          "end": 14.866
+        }
+      ]
+    },
+    {
+      "start": 15.286,
+      "end": 21.467,
+      "text": "fino all'AutoML — strumenti potenti presenti nelle librerie, ma da non usare mai acriticamente.",
+      "words": [
+        {
+          "text": "fino",
+          "start": 15.286,
+          "end": 15.486
+        },
+        {
+          "text": "all'AutoML",
+          "start": 15.546,
+          "end": 16.506
+        },
+        {
+          "text": "—",
+          "start": 16.506,
+          "end": 16.656
+        },
+        {
+          "text": "strumenti",
+          "start": 17.026,
+          "end": 17.366
+        },
+        {
+          "text": "potenti",
+          "start": 17.406,
+          "end": 17.746
+        },
+        {
+          "text": "presenti",
+          "start": 17.786,
+          "end": 18.206
+        },
+        {
+          "text": "nelle",
+          "start": 18.266,
+          "end": 18.446
+        },
+        {
+          "text": "librerie,",
+          "start": 18.506,
+          "end": 18.986
+        },
+        {
+          "text": "ma",
+          "start": 19.366,
+          "end": 19.426
+        },
+        {
+          "text": "da",
+          "start": 19.526,
+          "end": 19.586
+        },
+        {
+          "text": "non",
+          "start": 19.666,
+          "end": 19.786
+        },
+        {
+          "text": "usare",
+          "start": 19.826,
+          "end": 20.086
+        },
+        {
+          "text": "mai",
+          "start": 20.186,
+          "end": 20.447
+        },
+        {
+          "text": "acriticamente.",
+          "start": 20.687,
+          "end": 21.467
+        }
+      ]
+    },
+    {
+      "start": 22.247,
+      "end": 25.487,
+      "text": "Perché la random search funziona così sorprendentemente bene?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 22.247,
+          "end": 22.507
+        },
+        {
+          "text": "la",
+          "start": 22.547,
+          "end": 22.607
+        },
+        {
+          "text": "random",
+          "start": 22.667,
+          "end": 22.967
+        },
+        {
+          "text": "search",
+          "start": 23.067,
+          "end": 23.367
+        },
+        {
+          "text": "funziona",
+          "start": 23.487,
+          "end": 23.847
+        },
+        {
+          "text": "così",
+          "start": 23.907,
+          "end": 24.107
+        },
+        {
+          "text": "sorprendentemente",
+          "start": 24.247,
+          "end": 25.167
+        },
+        {
+          "text": "bene?",
+          "start": 25.227,
+          "end": 25.487
+        }
+      ]
+    },
+    {
+      "start": 26.147,
+      "end": 30.268,
+      "text": "Guarda i due grafici reali, entrambi con esattamente cento prove.",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 26.147,
+          "end": 26.447
+        },
+        {
+          "text": "i",
+          "start": 26.507,
+          "end": 26.547
+        },
+        {
+          "text": "due",
+          "start": 26.567,
+          "end": 26.667
+        },
+        {
+          "text": "grafici",
+          "start": 26.727,
+          "end": 27.147
+        },
+        {
+          "text": "reali,",
+          "start": 27.207,
+          "end": 27.567
+        },
+        {
+          "text": "entrambi",
+          "start": 28.007,
+          "end": 28.567
+        },
+        {
+          "text": "con",
+          "start": 28.788,
+          "end": 28.908
+        },
+        {
+          "text": "esattamente",
+          "start": 28.928,
+          "end": 29.508
+        },
+        {
+          "text": "cento",
+          "start": 29.628,
+          "end": 29.928
+        },
+        {
+          "text": "prove.",
+          "start": 29.968,
+          "end": 30.268
+        }
+      ]
+    },
+    {
+      "start": 31.188,
+      "end": 35.248,
+      "text": "Supponiamo che dei due iperparametri solo quello orizzontale conti davvero,",
+      "words": [
+        {
+          "text": "Supponiamo",
+          "start": 31.188,
+          "end": 31.588
+        },
+        {
+          "text": "che",
+          "start": 31.648,
+          "end": 31.728
+        },
+        {
+          "text": "dei",
+          "start": 31.768,
+          "end": 31.908
+        },
+        {
+          "text": "due",
+          "start": 31.968,
+          "end": 32.148
+        },
+        {
+          "text": "iperparametri",
+          "start": 32.228,
+          "end": 33.128
+        },
+        {
+          "text": "solo",
+          "start": 33.288,
+          "end": 33.448
+        },
+        {
+          "text": "quello",
+          "start": 33.468,
+          "end": 33.668
+        },
+        {
+          "text": "orizzontale",
+          "start": 33.708,
+          "end": 34.288
+        },
+        {
+          "text": "conti",
+          "start": 34.408,
+          "end": 34.748
+        },
+        {
+          "text": "davvero,",
+          "start": 34.788,
+          "end": 35.248
+        }
+      ]
+    },
+    {
+      "start": 35.548,
+      "end": 37.989,
+      "text": "mentre quello verticale sia quasi irrilevante.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 35.548,
+          "end": 35.788
+        },
+        {
+          "text": "quello",
+          "start": 35.828,
+          "end": 36.048
+        },
+        {
+          "text": "verticale",
+          "start": 36.088,
+          "end": 36.648
+        },
+        {
+          "text": "sia",
+          "start": 36.708,
+          "end": 36.828
+        },
+        {
+          "text": "quasi",
+          "start": 36.868,
+          "end": 37.109
+        },
+        {
+          "text": "irrilevante.",
+          "start": 37.269,
+          "end": 37.989
+        }
+      ]
+    },
+    {
+      "start": 38.689,
+      "end": 44.809,
+      "text": "A sinistra, la griglia dieci per dieci testa appena dieci valori distinti lungo l'asse importante,",
+      "words": [
+        {
+          "text": "A",
+          "start": 38.689,
+          "end": 38.729
+        },
+        {
+          "text": "sinistra,",
+          "start": 38.829,
+          "end": 39.369
+        },
+        {
+          "text": "la",
+          "start": 39.569,
+          "end": 39.649
+        },
+        {
+          "text": "griglia",
+          "start": 39.709,
+          "end": 40.049
+        },
+        {
+          "text": "dieci",
+          "start": 40.129,
+          "end": 40.389
+        },
+        {
+          "text": "per",
+          "start": 40.449,
+          "end": 40.569
+        },
+        {
+          "text": "dieci",
+          "start": 40.629,
+          "end": 40.989
+        },
+        {
+          "text": "testa",
+          "start": 41.229,
+          "end": 41.569
+        },
+        {
+          "text": "appena",
+          "start": 41.609,
+          "end": 41.949
+        },
+        {
+          "text": "dieci",
+          "start": 42.049,
+          "end": 42.349
+        },
+        {
+          "text": "valori",
+          "start": 42.409,
+          "end": 42.709
+        },
+        {
+          "text": "distinti",
+          "start": 42.749,
+          "end": 43.329
+        },
+        {
+          "text": "lungo",
+          "start": 43.409,
+          "end": 43.689
+        },
+        {
+          "text": "l'asse",
+          "start": 43.729,
+          "end": 44.029
+        },
+        {
+          "text": "importante,",
+          "start": 44.089,
+          "end": 44.809
+        }
+      ]
+    },
+    {
+      "start": 45.309,
+      "end": 47.15,
+      "text": "indicati dalle tacche verdi in basso:",
+      "words": [
+        {
+          "text": "indicati",
+          "start": 45.309,
+          "end": 45.79
+        },
+        {
+          "text": "dalle",
+          "start": 45.83,
+          "end": 46.05
+        },
+        {
+          "text": "tacche",
+          "start": 46.09,
+          "end": 46.35
+        },
+        {
+          "text": "verdi",
+          "start": 46.41,
+          "end": 46.65
+        },
+        {
+          "text": "in",
+          "start": 46.69,
+          "end": 46.75
+        },
+        {
+          "text": "basso:",
+          "start": 46.79,
+          "end": 47.15
+        }
+      ]
+    },
+    {
+      "start": 47.89,
+      "end": 54.731,
+      "text": "le altre novanta prove sprecano calcoli ripetendo esattamente gli stessi dieci valori mentre variano l'iperparametro",
+      "words": [
+        {
+          "text": "le",
+          "start": 47.89,
+          "end": 47.97
+        },
+        {
+          "text": "altre",
+          "start": 48.03,
+          "end": 48.25
+        },
+        {
+          "text": "novanta",
+          "start": 48.33,
+          "end": 48.67
+        },
+        {
+          "text": "prove",
+          "start": 48.73,
+          "end": 49.03
+        },
+        {
+          "text": "sprecano",
+          "start": 49.19,
+          "end": 49.65
+        },
+        {
+          "text": "calcoli",
+          "start": 49.73,
+          "end": 50.25
+        },
+        {
+          "text": "ripetendo",
+          "start": 50.43,
+          "end": 50.87
+        },
+        {
+          "text": "esattamente",
+          "start": 50.93,
+          "end": 51.51
+        },
+        {
+          "text": "gli",
+          "start": 51.55,
+          "end": 51.67
+        },
+        {
+          "text": "stessi",
+          "start": 51.71,
+          "end": 52.01
+        },
+        {
+          "text": "dieci",
+          "start": 52.07,
+          "end": 52.33
+        },
+        {
+          "text": "valori",
+          "start": 52.39,
+          "end": 52.75
+        },
+        {
+          "text": "mentre",
+          "start": 53.19,
+          "end": 53.47
+        },
+        {
+          "text": "variano",
+          "start": 53.53,
+          "end": 53.91
+        },
+        {
+          "text": "l'iperparametro",
+          "start": 53.99,
+          "end": 54.731
+        }
+      ]
+    },
+    {
+      "start": 54.771,
+      "end": 55.171,
+      "text": "inutile.",
+      "words": [
+        {
+          "text": "inutile.",
+          "start": 54.771,
+          "end": 55.171
+        }
+      ]
+    },
+    {
+      "start": 55.811,
+      "end": 61.451,
+      "text": "A destra, cento prove casuali esplorano invece cento valori distinti dell'iperparametro importante,",
+      "words": [
+        {
+          "text": "A",
+          "start": 55.811,
+          "end": 55.851
+        },
+        {
+          "text": "destra,",
+          "start": 55.931,
+          "end": 56.311
+        },
+        {
+          "text": "cento",
+          "start": 56.531,
+          "end": 56.831
+        },
+        {
+          "text": "prove",
+          "start": 56.891,
+          "end": 57.131
+        },
+        {
+          "text": "casuali",
+          "start": 57.191,
+          "end": 57.651
+        },
+        {
+          "text": "esplorano",
+          "start": 57.711,
+          "end": 58.171
+        },
+        {
+          "text": "invece",
+          "start": 58.211,
+          "end": 58.531
+        },
+        {
+          "text": "cento",
+          "start": 58.651,
+          "end": 58.971
+        },
+        {
+          "text": "valori",
+          "start": 59.011,
+          "end": 59.311
+        },
+        {
+          "text": "distinti",
+          "start": 59.351,
+          "end": 59.831
+        },
+        {
+          "text": "dell'iperparametro",
+          "start": 59.891,
+          "end": 60.771
+        },
+        {
+          "text": "importante,",
+          "start": 60.811,
+          "end": 61.451
+        }
+      ]
+    },
+    {
+      "start": 61.991,
+      "end": 66.752,
+      "text": "offrendo una risoluzione dieci volte maggiore a parità di costo computazionale.",
+      "words": [
+        {
+          "text": "offrendo",
+          "start": 61.991,
+          "end": 62.351
+        },
+        {
+          "text": "una",
+          "start": 62.412,
+          "end": 62.532
+        },
+        {
+          "text": "risoluzione",
+          "start": 62.592,
+          "end": 63.172
+        },
+        {
+          "text": "dieci",
+          "start": 63.332,
+          "end": 63.712
+        },
+        {
+          "text": "volte",
+          "start": 63.772,
+          "end": 64.052
+        },
+        {
+          "text": "maggiore",
+          "start": 64.112,
+          "end": 64.512
+        },
+        {
+          "text": "a",
+          "start": 64.952,
+          "end": 64.992
+        },
+        {
+          "text": "parità",
+          "start": 65.052,
+          "end": 65.352
+        },
+        {
+          "text": "di",
+          "start": 65.412,
+          "end": 65.492
+        },
+        {
+          "text": "costo",
+          "start": 65.552,
+          "end": 65.852
+        },
+        {
+          "text": "computazionale.",
+          "start": 65.912,
+          "end": 66.752
+        }
+      ]
+    },
+    {
+      "start": 67.392,
+      "end": 71.873,
+      "text": "In più la random search permette di fissare liberamente il budget totale di prove,",
+      "words": [
+        {
+          "text": "In",
+          "start": 67.392,
+          "end": 67.472
+        },
+        {
+          "text": "più",
+          "start": 67.512,
+          "end": 67.632
+        },
+        {
+          "text": "la",
+          "start": 67.832,
+          "end": 67.912
+        },
+        {
+          "text": "random",
+          "start": 67.972,
+          "end": 68.272
+        },
+        {
+          "text": "search",
+          "start": 68.372,
+          "end": 68.672
+        },
+        {
+          "text": "permette",
+          "start": 68.832,
+          "end": 69.212
+        },
+        {
+          "text": "di",
+          "start": 69.272,
+          "end": 69.332
+        },
+        {
+          "text": "fissare",
+          "start": 69.392,
+          "end": 69.812
+        },
+        {
+          "text": "liberamente",
+          "start": 69.952,
+          "end": 70.552
+        },
+        {
+          "text": "il",
+          "start": 70.612,
+          "end": 70.672
+        },
+        {
+          "text": "budget",
+          "start": 70.712,
+          "end": 71.033
+        },
+        {
+          "text": "totale",
+          "start": 71.133,
+          "end": 71.453
+        },
+        {
+          "text": "di",
+          "start": 71.493,
+          "end": 71.553
+        },
+        {
+          "text": "prove,",
+          "start": 71.593,
+          "end": 71.873
+        }
+      ]
+    },
+    {
+      "start": 72.313,
+      "end": 74.633,
+      "text": "indipendentemente dal numero di iperparametri.",
+      "words": [
+        {
+          "text": "indipendentemente",
+          "start": 72.313,
+          "end": 73.213
+        },
+        {
+          "text": "dal",
+          "start": 73.253,
+          "end": 73.373
+        },
+        {
+          "text": "numero",
+          "start": 73.433,
+          "end": 73.693
+        },
+        {
+          "text": "di",
+          "start": 73.753,
+          "end": 73.813
+        },
+        {
+          "text": "iperparametri.",
+          "start": 73.913,
+          "end": 74.633
+        }
+      ]
+    }
+  ]
+}

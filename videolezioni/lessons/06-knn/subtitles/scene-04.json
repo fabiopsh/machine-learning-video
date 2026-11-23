@@ -1,0 +1,1157 @@
+{
+  "duration": 86.992,
+  "segments": [
+    {
+      "start": 0.552,
+      "end": 2.713,
+      "text": "Mettiamo a confronto i due estremi studiati finora.",
+      "words": [
+        {
+          "text": "Mettiamo",
+          "start": 0.552,
+          "end": 0.832
+        },
+        {
+          "text": "a",
+          "start": 0.872,
+          "end": 0.912
+        },
+        {
+          "text": "confronto",
+          "start": 0.932,
+          "end": 1.352
+        },
+        {
+          "text": "i",
+          "start": 1.412,
+          "end": 1.452
+        },
+        {
+          "text": "due",
+          "start": 1.452,
+          "end": 1.552
+        },
+        {
+          "text": "estremi",
+          "start": 1.592,
+          "end": 1.872
+        },
+        {
+          "text": "studiati",
+          "start": 1.912,
+          "end": 2.312
+        },
+        {
+          "text": "finora.",
+          "start": 2.352,
+          "end": 2.713
+        }
+      ]
+    },
+    {
+      "start": 3.473,
+      "end": 6.673,
+      "text": "Il modello lineare è rigido, a bassa varianza, eager,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 3.473,
+          "end": 3.573
+        },
+        {
+          "text": "modello",
+          "start": 3.613,
+          "end": 3.913
+        },
+        {
+          "text": "lineare",
+          "start": 3.953,
+          "end": 4.393
+        },
+        {
+          "text": "è",
+          "start": 4.553,
+          "end": 4.593
+        },
+        {
+          "text": "rigido,",
+          "start": 4.713,
+          "end": 5.113
+        },
+        {
+          "text": "a",
+          "start": 5.253,
+          "end": 5.293
+        },
+        {
+          "text": "bassa",
+          "start": 5.333,
+          "end": 5.573
+        },
+        {
+          "text": "varianza,",
+          "start": 5.613,
+          "end": 6.133
+        },
+        {
+          "text": "eager,",
+          "start": 6.413,
+          "end": 6.673
+        }
+      ]
+    },
+    {
+      "start": 6.893,
+      "end": 10.213,
+      "text": "parametrico e compatto con soli n più uno pesi.",
+      "words": [
+        {
+          "text": "parametrico",
+          "start": 6.893,
+          "end": 7.573
+        },
+        {
+          "text": "e",
+          "start": 7.733,
+          "end": 7.773
+        },
+        {
+          "text": "compatto",
+          "start": 7.853,
+          "end": 8.453
+        },
+        {
+          "text": "con",
+          "start": 8.713,
+          "end": 8.853
+        },
+        {
+          "text": "soli",
+          "start": 8.933,
+          "end": 9.153
+        },
+        {
+          "text": "n",
+          "start": 9.453,
+          "end": 9.493
+        },
+        {
+          "text": "più",
+          "start": 9.593,
+          "end": 9.673
+        },
+        {
+          "text": "uno",
+          "start": 9.753,
+          "end": 9.873
+        },
+        {
+          "text": "pesi.",
+          "start": 9.913,
+          "end": 10.213
+        }
+      ]
+    },
+    {
+      "start": 10.993,
+      "end": 17.054,
+      "text": "Il K-NN è flessibile, ad alta varianza, lazy, instance-based e basato sulla memoria,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 10.993,
+          "end": 11.073
+        },
+        {
+          "text": "K-NN",
+          "start": 11.133,
+          "end": 11.854
+        },
+        {
+          "text": "è",
+          "start": 12.054,
+          "end": 12.094
+        },
+        {
+          "text": "flessibile,",
+          "start": 12.194,
+          "end": 12.854
+        },
+        {
+          "text": "ad",
+          "start": 13.014,
+          "end": 13.114
+        },
+        {
+          "text": "alta",
+          "start": 13.154,
+          "end": 13.354
+        },
+        {
+          "text": "varianza,",
+          "start": 13.394,
+          "end": 13.934
+        },
+        {
+          "text": "lazy,",
+          "start": 14.194,
+          "end": 14.514
+        },
+        {
+          "text": "instance-based",
+          "start": 14.834,
+          "end": 15.614
+        },
+        {
+          "text": "e",
+          "start": 15.974,
+          "end": 16.014
+        },
+        {
+          "text": "basato",
+          "start": 16.034,
+          "end": 16.354
+        },
+        {
+          "text": "sulla",
+          "start": 16.414,
+          "end": 16.594
+        },
+        {
+          "text": "memoria,",
+          "start": 16.634,
+          "end": 17.054
+        }
+      ]
+    },
+    {
+      "start": 17.334,
+      "end": 19.774,
+      "text": "con circa l su k parametri effettivi:",
+      "words": [
+        {
+          "text": "con",
+          "start": 17.334,
+          "end": 17.474
+        },
+        {
+          "text": "circa",
+          "start": 17.514,
+          "end": 17.834
+        },
+        {
+          "text": "l",
+          "start": 18.234,
+          "end": 18.274
+        },
+        {
+          "text": "su",
+          "start": 18.374,
+          "end": 18.454
+        },
+        {
+          "text": "k",
+          "start": 18.534,
+          "end": 18.574
+        },
+        {
+          "text": "parametri",
+          "start": 18.834,
+          "end": 19.234
+        },
+        {
+          "text": "effettivi:",
+          "start": 19.274,
+          "end": 19.774
+        }
+      ]
+    },
+    {
+      "start": 20.535,
+      "end": 23.995,
+      "text": "non addestra un modello globale, fa stime localmente costanti,",
+      "words": [
+        {
+          "text": "non",
+          "start": 20.535,
+          "end": 20.675
+        },
+        {
+          "text": "addestra",
+          "start": 20.715,
+          "end": 21.155
+        },
+        {
+          "text": "un",
+          "start": 21.215,
+          "end": 21.275
+        },
+        {
+          "text": "modello",
+          "start": 21.295,
+          "end": 21.615
+        },
+        {
+          "text": "globale,",
+          "start": 21.655,
+          "end": 22.095
+        },
+        {
+          "text": "fa",
+          "start": 22.315,
+          "end": 22.395
+        },
+        {
+          "text": "stime",
+          "start": 22.475,
+          "end": 22.735
+        },
+        {
+          "text": "localmente",
+          "start": 22.835,
+          "end": 23.375
+        },
+        {
+          "text": "costanti,",
+          "start": 23.435,
+          "end": 23.995
+        }
+      ]
+    },
+    {
+      "start": 24.375,
+      "end": 27.715,
+      "text": "e con k piccolo bastano pochi punti per spostare il confine.",
+      "words": [
+        {
+          "text": "e",
+          "start": 24.375,
+          "end": 24.415
+        },
+        {
+          "text": "con",
+          "start": 24.455,
+          "end": 24.595
+        },
+        {
+          "text": "k",
+          "start": 24.655,
+          "end": 24.695
+        },
+        {
+          "text": "piccolo",
+          "start": 24.955,
+          "end": 25.355
+        },
+        {
+          "text": "bastano",
+          "start": 25.435,
+          "end": 25.795
+        },
+        {
+          "text": "pochi",
+          "start": 25.895,
+          "end": 26.175
+        },
+        {
+          "text": "punti",
+          "start": 26.235,
+          "end": 26.535
+        },
+        {
+          "text": "per",
+          "start": 26.595,
+          "end": 26.695
+        },
+        {
+          "text": "spostare",
+          "start": 26.735,
+          "end": 27.135
+        },
+        {
+          "text": "il",
+          "start": 27.155,
+          "end": 27.215
+        },
+        {
+          "text": "confine.",
+          "start": 27.255,
+          "end": 27.715
+        }
+      ]
+    },
+    {
+      "start": 28.695,
+      "end": 32.876,
+      "text": "Perché allora il K-NN ottiene risultati così vicini al limite teorico?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 28.695,
+          "end": 28.975
+        },
+        {
+          "text": "allora",
+          "start": 29.035,
+          "end": 29.276
+        },
+        {
+          "text": "il",
+          "start": 29.316,
+          "end": 29.376
+        },
+        {
+          "text": "K-NN",
+          "start": 29.436,
+          "end": 30.176
+        },
+        {
+          "text": "ottiene",
+          "start": 30.396,
+          "end": 30.696
+        },
+        {
+          "text": "risultati",
+          "start": 30.756,
+          "end": 31.256
+        },
+        {
+          "text": "così",
+          "start": 31.336,
+          "end": 31.576
+        },
+        {
+          "text": "vicini",
+          "start": 31.676,
+          "end": 31.976
+        },
+        {
+          "text": "al",
+          "start": 31.996,
+          "end": 32.036
+        },
+        {
+          "text": "limite",
+          "start": 32.076,
+          "end": 32.376
+        },
+        {
+          "text": "teorico?",
+          "start": 32.416,
+          "end": 32.876
+        }
+      ]
+    },
+    {
+      "start": 33.516,
+      "end": 36.636,
+      "text": "Per capirlo definiamo il classificatore ottimo di Bayes.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 33.516,
+          "end": 33.616
+        },
+        {
+          "text": "capirlo",
+          "start": 33.656,
+          "end": 34.056
+        },
+        {
+          "text": "definiamo",
+          "start": 34.156,
+          "end": 34.576
+        },
+        {
+          "text": "il",
+          "start": 34.636,
+          "end": 34.696
+        },
+        {
+          "text": "classificatore",
+          "start": 34.736,
+          "end": 35.556
+        },
+        {
+          "text": "ottimo",
+          "start": 35.716,
+          "end": 36.076
+        },
+        {
+          "text": "di",
+          "start": 36.116,
+          "end": 36.196
+        },
+        {
+          "text": "Bayes.",
+          "start": 36.236,
+          "end": 36.636
+        }
+      ]
+    },
+    {
+      "start": 37.276,
+      "end": 40.717,
+      "text": "Se conoscessimo la distribuzione congiunta P di x e d,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 37.276,
+          "end": 37.356
+        },
+        {
+          "text": "conoscessimo",
+          "start": 37.416,
+          "end": 37.976
+        },
+        {
+          "text": "la",
+          "start": 38.036,
+          "end": 38.097
+        },
+        {
+          "text": "distribuzione",
+          "start": 38.137,
+          "end": 38.797
+        },
+        {
+          "text": "congiunta",
+          "start": 38.837,
+          "end": 39.337
+        },
+        {
+          "text": "P",
+          "start": 39.537,
+          "end": 39.577
+        },
+        {
+          "text": "di",
+          "start": 39.997,
+          "end": 40.077
+        },
+        {
+          "text": "x",
+          "start": 40.297,
+          "end": 40.337
+        },
+        {
+          "text": "e",
+          "start": 40.477,
+          "end": 40.517
+        },
+        {
+          "text": "d,",
+          "start": 40.677,
+          "end": 40.717
+        }
+      ]
+    },
+    {
+      "start": 41.677,
+      "end": 46.197,
+      "text": "la scelta ottima sarebbe assegnare a x la classe v con la massima probabilità a",
+      "words": [
+        {
+          "text": "la",
+          "start": 41.677,
+          "end": 41.757
+        },
+        {
+          "text": "scelta",
+          "start": 41.777,
+          "end": 42.097
+        },
+        {
+          "text": "ottima",
+          "start": 42.157,
+          "end": 42.457
+        },
+        {
+          "text": "sarebbe",
+          "start": 42.517,
+          "end": 42.797
+        },
+        {
+          "text": "assegnare",
+          "start": 42.817,
+          "end": 43.337
+        },
+        {
+          "text": "a",
+          "start": 43.397,
+          "end": 43.437
+        },
+        {
+          "text": "x",
+          "start": 43.617,
+          "end": 43.657
+        },
+        {
+          "text": "la",
+          "start": 44.057,
+          "end": 44.117
+        },
+        {
+          "text": "classe",
+          "start": 44.157,
+          "end": 44.477
+        },
+        {
+          "text": "v",
+          "start": 44.597,
+          "end": 44.637
+        },
+        {
+          "text": "con",
+          "start": 44.897,
+          "end": 44.997
+        },
+        {
+          "text": "la",
+          "start": 45.037,
+          "end": 45.097
+        },
+        {
+          "text": "massima",
+          "start": 45.137,
+          "end": 45.477
+        },
+        {
+          "text": "probabilità",
+          "start": 45.537,
+          "end": 46.097
+        },
+        {
+          "text": "a",
+          "start": 46.157,
+          "end": 46.197
+        }
+      ]
+    },
+    {
+      "start": 46.237,
+      "end": 48.378,
+      "text": "posteriori P di v dato x.",
+      "words": [
+        {
+          "text": "posteriori",
+          "start": 46.237,
+          "end": 46.837
+        },
+        {
+          "text": "P",
+          "start": 46.998,
+          "end": 47.038
+        },
+        {
+          "text": "di",
+          "start": 47.458,
+          "end": 47.518
+        },
+        {
+          "text": "v",
+          "start": 47.618,
+          "end": 47.658
+        },
+        {
+          "text": "dato",
+          "start": 47.898,
+          "end": 48.118
+        },
+        {
+          "text": "x.",
+          "start": 48.338,
+          "end": 48.378
+        }
+      ]
+    },
+    {
+      "start": 49.258,
+      "end": 52.058,
+      "text": "Il suo tasso d'errore, chiamato Bayes rate,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 49.258,
+          "end": 49.338
+        },
+        {
+          "text": "suo",
+          "start": 49.378,
+          "end": 49.518
+        },
+        {
+          "text": "tasso",
+          "start": 49.558,
+          "end": 49.798
+        },
+        {
+          "text": "d'errore,",
+          "start": 49.838,
+          "end": 50.338
+        },
+        {
+          "text": "chiamato",
+          "start": 50.858,
+          "end": 51.198
+        },
+        {
+          "text": "Bayes",
+          "start": 51.318,
+          "end": 51.578
+        },
+        {
+          "text": "rate,",
+          "start": 51.698,
+          "end": 52.058
+        }
+      ]
+    },
+    {
+      "start": 52.618,
+      "end": 56.579,
+      "text": "è il minimo errore teoricamente raggiungibile data la distribuzione dei dati.",
+      "words": [
+        {
+          "text": "è",
+          "start": 52.618,
+          "end": 52.658
+        },
+        {
+          "text": "il",
+          "start": 52.718,
+          "end": 52.818
+        },
+        {
+          "text": "minimo",
+          "start": 52.898,
+          "end": 53.198
+        },
+        {
+          "text": "errore",
+          "start": 53.258,
+          "end": 53.578
+        },
+        {
+          "text": "teoricamente",
+          "start": 53.658,
+          "end": 54.298
+        },
+        {
+          "text": "raggiungibile",
+          "start": 54.358,
+          "end": 55.058
+        },
+        {
+          "text": "data",
+          "start": 55.118,
+          "end": 55.338
+        },
+        {
+          "text": "la",
+          "start": 55.398,
+          "end": 55.438
+        },
+        {
+          "text": "distribuzione",
+          "start": 55.478,
+          "end": 56.119
+        },
+        {
+          "text": "dei",
+          "start": 56.159,
+          "end": 56.279
+        },
+        {
+          "text": "dati.",
+          "start": 56.299,
+          "end": 56.579
+        }
+      ]
+    },
+    {
+      "start": 57.419,
+      "end": 62.419,
+      "text": "Il K-NN approssima direttamente questa soluzione ottima grazie a due rilassamenti:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 57.419,
+          "end": 57.499
+        },
+        {
+          "text": "K-NN",
+          "start": 57.559,
+          "end": 58.359
+        },
+        {
+          "text": "approssima",
+          "start": 58.679,
+          "end": 59.119
+        },
+        {
+          "text": "direttamente",
+          "start": 59.159,
+          "end": 59.659
+        },
+        {
+          "text": "questa",
+          "start": 59.719,
+          "end": 59.979
+        },
+        {
+          "text": "soluzione",
+          "start": 60.019,
+          "end": 60.539
+        },
+        {
+          "text": "ottima",
+          "start": 60.619,
+          "end": 60.979
+        },
+        {
+          "text": "grazie",
+          "start": 61.119,
+          "end": 61.419
+        },
+        {
+          "text": "a",
+          "start": 61.439,
+          "end": 61.479
+        },
+        {
+          "text": "due",
+          "start": 61.539,
+          "end": 61.699
+        },
+        {
+          "text": "rilassamenti:",
+          "start": 61.719,
+          "end": 62.419
+        }
+      ]
+    },
+    {
+      "start": 63.079,
+      "end": 68.86,
+      "text": "uno, la probabilità condizionata in un singolo punto diventa la probabilità condizionata in un intorno",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 63.079,
+          "end": 63.259
+        },
+        {
+          "text": "la",
+          "start": 63.879,
+          "end": 63.939
+        },
+        {
+          "text": "probabilità",
+          "start": 63.999,
+          "end": 64.539
+        },
+        {
+          "text": "condizionata",
+          "start": 64.599,
+          "end": 65.26
+        },
+        {
+          "text": "in",
+          "start": 65.34,
+          "end": 65.4
+        },
+        {
+          "text": "un",
+          "start": 65.44,
+          "end": 65.52
+        },
+        {
+          "text": "singolo",
+          "start": 65.58,
+          "end": 65.92
+        },
+        {
+          "text": "punto",
+          "start": 65.96,
+          "end": 66.26
+        },
+        {
+          "text": "diventa",
+          "start": 66.3,
+          "end": 66.62
+        },
+        {
+          "text": "la",
+          "start": 66.68,
+          "end": 66.74
+        },
+        {
+          "text": "probabilità",
+          "start": 66.78,
+          "end": 67.3
+        },
+        {
+          "text": "condizionata",
+          "start": 67.38,
+          "end": 68.04
+        },
+        {
+          "text": "in",
+          "start": 68.22,
+          "end": 68.3
+        },
+        {
+          "text": "un",
+          "start": 68.34,
+          "end": 68.42
+        },
+        {
+          "text": "intorno",
+          "start": 68.46,
+          "end": 68.86
+        }
+      ]
+    },
+    {
+      "start": 68.9,
+      "end": 75.621,
+      "text": "del punto; due, le probabilità teoriche vengono stimate con le proporzioni empiriche nel campione di",
+      "words": [
+        {
+          "text": "del",
+          "start": 68.9,
+          "end": 69.0
+        },
+        {
+          "text": "punto;",
+          "start": 69.06,
+          "end": 69.4
+        },
+        {
+          "text": "due,",
+          "start": 70.0,
+          "end": 70.24
+        },
+        {
+          "text": "le",
+          "start": 70.9,
+          "end": 70.98
+        },
+        {
+          "text": "probabilità",
+          "start": 71.02,
+          "end": 71.58
+        },
+        {
+          "text": "teoriche",
+          "start": 71.66,
+          "end": 72.16
+        },
+        {
+          "text": "vengono",
+          "start": 72.48,
+          "end": 72.78
+        },
+        {
+          "text": "stimate",
+          "start": 72.84,
+          "end": 73.28
+        },
+        {
+          "text": "con",
+          "start": 73.4,
+          "end": 73.5
+        },
+        {
+          "text": "le",
+          "start": 73.54,
+          "end": 73.6
+        },
+        {
+          "text": "proporzioni",
+          "start": 73.64,
+          "end": 74.261
+        },
+        {
+          "text": "empiriche",
+          "start": 74.341,
+          "end": 74.921
+        },
+        {
+          "text": "nel",
+          "start": 74.981,
+          "end": 75.081
+        },
+        {
+          "text": "campione",
+          "start": 75.121,
+          "end": 75.521
+        },
+        {
+          "text": "di",
+          "start": 75.561,
+          "end": 75.621
+        }
+      ]
+    },
+    {
+      "start": 75.681,
+      "end": 76.101,
+      "text": "training.",
+      "words": [
+        {
+          "text": "training.",
+          "start": 75.681,
+          "end": 76.101
+        }
+      ]
+    },
+    {
+      "start": 76.921,
+      "end": 78.501,
+      "text": "Guarda il grafico reale in basso:",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 76.921,
+          "end": 77.201
+        },
+        {
+          "text": "il",
+          "start": 77.241,
+          "end": 77.301
+        },
+        {
+          "text": "grafico",
+          "start": 77.341,
+          "end": 77.701
+        },
+        {
+          "text": "reale",
+          "start": 77.741,
+          "end": 78.001
+        },
+        {
+          "text": "in",
+          "start": 78.041,
+          "end": 78.101
+        },
+        {
+          "text": "basso:",
+          "start": 78.141,
+          "end": 78.501
+        }
+      ]
+    },
+    {
+      "start": 79.061,
+      "end": 84.042,
+      "text": "il confine nero del quindici-NN segue da vicino il confine viola ottimo di Bayes,",
+      "words": [
+        {
+          "text": "il",
+          "start": 79.061,
+          "end": 79.141
+        },
+        {
+          "text": "confine",
+          "start": 79.161,
+          "end": 79.481
+        },
+        {
+          "text": "nero",
+          "start": 79.541,
+          "end": 79.721
+        },
+        {
+          "text": "del",
+          "start": 79.761,
+          "end": 79.881
+        },
+        {
+          "text": "quindici-NN",
+          "start": 79.961,
+          "end": 80.921
+        },
+        {
+          "text": "segue",
+          "start": 81.401,
+          "end": 81.661
+        },
+        {
+          "text": "da",
+          "start": 81.701,
+          "end": 81.781
+        },
+        {
+          "text": "vicino",
+          "start": 81.841,
+          "end": 82.221
+        },
+        {
+          "text": "il",
+          "start": 82.261,
+          "end": 82.321
+        },
+        {
+          "text": "confine",
+          "start": 82.361,
+          "end": 82.722
+        },
+        {
+          "text": "viola",
+          "start": 82.762,
+          "end": 83.022
+        },
+        {
+          "text": "ottimo",
+          "start": 83.182,
+          "end": 83.542
+        },
+        {
+          "text": "di",
+          "start": 83.582,
+          "end": 83.662
+        },
+        {
+          "text": "Bayes,",
+          "start": 83.702,
+          "end": 84.042
+        }
+      ]
+    },
+    {
+      "start": 84.442,
+      "end": 86.742,
+      "text": "calcolato conoscendo la densità generatrice.",
+      "words": [
+        {
+          "text": "calcolato",
+          "start": 84.442,
+          "end": 84.922
+        },
+        {
+          "text": "conoscendo",
+          "start": 84.962,
+          "end": 85.442
+        },
+        {
+          "text": "la",
+          "start": 85.502,
+          "end": 85.562
+        },
+        {
+          "text": "densità",
+          "start": 85.622,
+          "end": 86.022
+        },
+        {
+          "text": "generatrice.",
+          "start": 86.122,
+          "end": 86.742
+        }
+      ]
+    }
+  ]
+}

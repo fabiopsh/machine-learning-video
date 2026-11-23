@@ -1,0 +1,845 @@
+{
+  "duration": 58.541,
+  "segments": [
+    {
+      "start": 0.761,
+      "end": 3.701,
+      "text": "Vediamo il ruolo del bias in concreto imparando un concetto,",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.761,
+          "end": 1.061
+        },
+        {
+          "text": "il",
+          "start": 1.101,
+          "end": 1.161
+        },
+        {
+          "text": "ruolo",
+          "start": 1.181,
+          "end": 1.381
+        },
+        {
+          "text": "del",
+          "start": 1.421,
+          "end": 1.521
+        },
+        {
+          "text": "bias",
+          "start": 1.561,
+          "end": 1.861
+        },
+        {
+          "text": "in",
+          "start": 1.921,
+          "end": 2.001
+        },
+        {
+          "text": "concreto",
+          "start": 2.081,
+          "end": 2.661
+        },
+        {
+          "text": "imparando",
+          "start": 2.701,
+          "end": 3.101
+        },
+        {
+          "text": "un",
+          "start": 3.141,
+          "end": 3.201
+        },
+        {
+          "text": "concetto,",
+          "start": 3.241,
+          "end": 3.701
+        }
+      ]
+    },
+    {
+      "start": 3.821,
+      "end": 6.382,
+      "text": "cioè una funzione booleana d uguale f di x uno,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 3.821,
+          "end": 3.941
+        },
+        {
+          "text": "una",
+          "start": 4.001,
+          "end": 4.121
+        },
+        {
+          "text": "funzione",
+          "start": 4.161,
+          "end": 4.501
+        },
+        {
+          "text": "booleana",
+          "start": 4.561,
+          "end": 4.981
+        },
+        {
+          "text": "d",
+          "start": 5.101,
+          "end": 5.141
+        },
+        {
+          "text": "uguale",
+          "start": 5.401,
+          "end": 5.701
+        },
+        {
+          "text": "f",
+          "start": 5.801,
+          "end": 5.841
+        },
+        {
+          "text": "di",
+          "start": 5.921,
+          "end": 5.981
+        },
+        {
+          "text": "x",
+          "start": 6.041,
+          "end": 6.081
+        },
+        {
+          "text": "uno,",
+          "start": 6.222,
+          "end": 6.382
+        }
+      ]
+    },
+    {
+      "start": 6.502,
+      "end": 10.222,
+      "text": "x due, x tre, x quattro, dai sette esempi nella tabella a sinistra.",
+      "words": [
+        {
+          "text": "x",
+          "start": 6.502,
+          "end": 6.542
+        },
+        {
+          "text": "due,",
+          "start": 6.622,
+          "end": 6.822
+        },
+        {
+          "text": "x",
+          "start": 6.882,
+          "end": 6.922
+        },
+        {
+          "text": "tre,",
+          "start": 7.002,
+          "end": 7.142
+        },
+        {
+          "text": "x",
+          "start": 7.242,
+          "end": 7.282
+        },
+        {
+          "text": "quattro,",
+          "start": 7.382,
+          "end": 7.802
+        },
+        {
+          "text": "dai",
+          "start": 8.342,
+          "end": 8.522
+        },
+        {
+          "text": "sette",
+          "start": 8.602,
+          "end": 8.882
+        },
+        {
+          "text": "esempi",
+          "start": 8.922,
+          "end": 9.262
+        },
+        {
+          "text": "nella",
+          "start": 9.342,
+          "end": 9.502
+        },
+        {
+          "text": "tabella",
+          "start": 9.522,
+          "end": 9.822
+        },
+        {
+          "text": "a",
+          "start": 9.842,
+          "end": 9.882
+        },
+        {
+          "text": "sinistra.",
+          "start": 9.862,
+          "end": 10.222
+        }
+      ]
+    },
+    {
+      "start": 11.122,
+      "end": 14.383,
+      "text": "Quante funzioni booleane possibili esistono su quattro variabili binarie?",
+      "words": [
+        {
+          "text": "Quante",
+          "start": 11.122,
+          "end": 11.362
+        },
+        {
+          "text": "funzioni",
+          "start": 11.402,
+          "end": 11.743
+        },
+        {
+          "text": "booleane",
+          "start": 11.783,
+          "end": 12.123
+        },
+        {
+          "text": "possibili",
+          "start": 12.163,
+          "end": 12.623
+        },
+        {
+          "text": "esistono",
+          "start": 12.663,
+          "end": 13.043
+        },
+        {
+          "text": "su",
+          "start": 13.103,
+          "end": 13.163
+        },
+        {
+          "text": "quattro",
+          "start": 13.243,
+          "end": 13.523
+        },
+        {
+          "text": "variabili",
+          "start": 13.543,
+          "end": 13.943
+        },
+        {
+          "text": "binarie?",
+          "start": 13.983,
+          "end": 14.383
+        }
+      ]
+    },
+    {
+      "start": 15.583,
+      "end": 18.364,
+      "text": "Le combinazioni di input distinte sono due alla quarta,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 15.583,
+          "end": 15.663
+        },
+        {
+          "text": "combinazioni",
+          "start": 15.703,
+          "end": 16.223
+        },
+        {
+          "text": "di",
+          "start": 16.263,
+          "end": 16.303
+        },
+        {
+          "text": "input",
+          "start": 16.343,
+          "end": 16.623
+        },
+        {
+          "text": "distinte",
+          "start": 16.723,
+          "end": 17.203
+        },
+        {
+          "text": "sono",
+          "start": 17.264,
+          "end": 17.464
+        },
+        {
+          "text": "due",
+          "start": 17.644,
+          "end": 17.784
+        },
+        {
+          "text": "alla",
+          "start": 17.804,
+          "end": 17.924
+        },
+        {
+          "text": "quarta,",
+          "start": 17.984,
+          "end": 18.364
+        }
+      ]
+    },
+    {
+      "start": 18.424,
+      "end": 19.104,
+      "text": "cioè sedici.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 18.424,
+          "end": 18.564
+        },
+        {
+          "text": "sedici.",
+          "start": 18.684,
+          "end": 19.104
+        }
+      ]
+    },
+    {
+      "start": 19.504,
+      "end": 24.605,
+      "text": "A ciascuna possiamo assegnare zero oppure uno, quindi le funzioni possibili sono due alla sedicesima:",
+      "words": [
+        {
+          "text": "A",
+          "start": 19.504,
+          "end": 19.544
+        },
+        {
+          "text": "ciascuna",
+          "start": 19.584,
+          "end": 19.904
+        },
+        {
+          "text": "possiamo",
+          "start": 19.944,
+          "end": 20.224
+        },
+        {
+          "text": "assegnare",
+          "start": 20.244,
+          "end": 20.624
+        },
+        {
+          "text": "zero",
+          "start": 20.724,
+          "end": 20.964
+        },
+        {
+          "text": "oppure",
+          "start": 20.984,
+          "end": 21.264
+        },
+        {
+          "text": "uno,",
+          "start": 21.344,
+          "end": 21.504
+        },
+        {
+          "text": "quindi",
+          "start": 22.044,
+          "end": 22.224
+        },
+        {
+          "text": "le",
+          "start": 22.284,
+          "end": 22.324
+        },
+        {
+          "text": "funzioni",
+          "start": 22.364,
+          "end": 22.684
+        },
+        {
+          "text": "possibili",
+          "start": 22.724,
+          "end": 23.185
+        },
+        {
+          "text": "sono",
+          "start": 23.225,
+          "end": 23.445
+        },
+        {
+          "text": "due",
+          "start": 23.665,
+          "end": 23.825
+        },
+        {
+          "text": "alla",
+          "start": 23.845,
+          "end": 23.985
+        },
+        {
+          "text": "sedicesima:",
+          "start": 24.025,
+          "end": 24.605
+        }
+      ]
+    },
+    {
+      "start": 24.845,
+      "end": 27.145,
+      "text": "sessantacinquemila cinquecentotrentasei.",
+      "words": [
+        {
+          "text": "sessantacinquemila",
+          "start": 24.845,
+          "end": 25.925
+        },
+        {
+          "text": "cinquecentotrentasei.",
+          "start": 26.085,
+          "end": 27.145
+        }
+      ]
+    },
+    {
+      "start": 28.185,
+      "end": 32.686,
+      "text": "Dopo aver osservato sette esempi, le nove istanze rimanenti possono avere qualsiasi output:",
+      "words": [
+        {
+          "text": "Dopo",
+          "start": 28.185,
+          "end": 28.346
+        },
+        {
+          "text": "aver",
+          "start": 28.386,
+          "end": 28.506
+        },
+        {
+          "text": "osservato",
+          "start": 28.546,
+          "end": 28.906
+        },
+        {
+          "text": "sette",
+          "start": 28.966,
+          "end": 29.166
+        },
+        {
+          "text": "esempi,",
+          "start": 29.206,
+          "end": 29.686
+        },
+        {
+          "text": "le",
+          "start": 29.946,
+          "end": 30.006
+        },
+        {
+          "text": "nove",
+          "start": 30.066,
+          "end": 30.266
+        },
+        {
+          "text": "istanze",
+          "start": 30.306,
+          "end": 30.706
+        },
+        {
+          "text": "rimanenti",
+          "start": 30.746,
+          "end": 31.226
+        },
+        {
+          "text": "possono",
+          "start": 31.266,
+          "end": 31.526
+        },
+        {
+          "text": "avere",
+          "start": 31.546,
+          "end": 31.746
+        },
+        {
+          "text": "qualsiasi",
+          "start": 31.826,
+          "end": 32.226
+        },
+        {
+          "text": "output:",
+          "start": 32.326,
+          "end": 32.686
+        }
+      ]
+    },
+    {
+      "start": 33.266,
+      "end": 38.747,
+      "text": "restano ancora due alla nona, cioè cinquecentododici funzioni perfettamente compatibili con i dati.",
+      "words": [
+        {
+          "text": "restano",
+          "start": 33.266,
+          "end": 33.606
+        },
+        {
+          "text": "ancora",
+          "start": 33.646,
+          "end": 33.987
+        },
+        {
+          "text": "due",
+          "start": 34.187,
+          "end": 34.367
+        },
+        {
+          "text": "alla",
+          "start": 34.407,
+          "end": 34.567
+        },
+        {
+          "text": "nona,",
+          "start": 34.607,
+          "end": 34.907
+        },
+        {
+          "text": "cioè",
+          "start": 35.007,
+          "end": 35.127
+        },
+        {
+          "text": "cinquecentododici",
+          "start": 35.227,
+          "end": 36.087
+        },
+        {
+          "text": "funzioni",
+          "start": 36.167,
+          "end": 36.747
+        },
+        {
+          "text": "perfettamente",
+          "start": 36.867,
+          "end": 37.647
+        },
+        {
+          "text": "compatibili",
+          "start": 37.687,
+          "end": 38.227
+        },
+        {
+          "text": "con",
+          "start": 38.247,
+          "end": 38.367
+        },
+        {
+          "text": "i",
+          "start": 38.407,
+          "end": 38.447
+        },
+        {
+          "text": "dati.",
+          "start": 38.467,
+          "end": 38.747
+        }
+      ]
+    },
+    {
+      "start": 39.408,
+      "end": 44.228,
+      "text": "In generale, con n variabili binarie la cardinalità di H è doppiamente esponenziale:",
+      "words": [
+        {
+          "text": "In",
+          "start": 39.408,
+          "end": 39.488
+        },
+        {
+          "text": "generale,",
+          "start": 39.528,
+          "end": 39.988
+        },
+        {
+          "text": "con",
+          "start": 40.048,
+          "end": 40.168
+        },
+        {
+          "text": "n",
+          "start": 40.288,
+          "end": 40.328
+        },
+        {
+          "text": "variabili",
+          "start": 40.408,
+          "end": 40.808
+        },
+        {
+          "text": "binarie",
+          "start": 40.848,
+          "end": 41.288
+        },
+        {
+          "text": "la",
+          "start": 41.488,
+          "end": 41.568
+        },
+        {
+          "text": "cardinalità",
+          "start": 41.648,
+          "end": 42.228
+        },
+        {
+          "text": "di",
+          "start": 42.308,
+          "end": 42.368
+        },
+        {
+          "text": "H",
+          "start": 42.648,
+          "end": 42.688
+        },
+        {
+          "text": "è",
+          "start": 42.868,
+          "end": 42.908
+        },
+        {
+          "text": "doppiamente",
+          "start": 42.988,
+          "end": 43.488
+        },
+        {
+          "text": "esponenziale:",
+          "start": 43.528,
+          "end": 44.228
+        }
+      ]
+    },
+    {
+      "start": 44.528,
+      "end": 45.929,
+      "text": "due elevato a due alla n.",
+      "words": [
+        {
+          "text": "due",
+          "start": 44.528,
+          "end": 44.748
+        },
+        {
+          "text": "elevato",
+          "start": 44.889,
+          "end": 45.229
+        },
+        {
+          "text": "a",
+          "start": 45.269,
+          "end": 45.309
+        },
+        {
+          "text": "due",
+          "start": 45.349,
+          "end": 45.509
+        },
+        {
+          "text": "alla",
+          "start": 45.549,
+          "end": 45.689
+        },
+        {
+          "text": "n.",
+          "start": 45.889,
+          "end": 45.929
+        }
+      ]
+    },
+    {
+      "start": 47.009,
+      "end": 49.789,
+      "text": "Un modello che usa l'intero spazio è una semplice lookup table,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 47.009,
+          "end": 47.089
+        },
+        {
+          "text": "modello",
+          "start": 47.109,
+          "end": 47.409
+        },
+        {
+          "text": "che",
+          "start": 47.449,
+          "end": 47.529
+        },
+        {
+          "text": "usa",
+          "start": 47.549,
+          "end": 47.689
+        },
+        {
+          "text": "l'intero",
+          "start": 47.729,
+          "end": 48.029
+        },
+        {
+          "text": "spazio",
+          "start": 48.069,
+          "end": 48.409
+        },
+        {
+          "text": "è",
+          "start": 48.429,
+          "end": 48.469
+        },
+        {
+          "text": "una",
+          "start": 48.469,
+          "end": 48.569
+        },
+        {
+          "text": "semplice",
+          "start": 48.629,
+          "end": 49.009
+        },
+        {
+          "text": "lookup",
+          "start": 49.069,
+          "end": 49.309
+        },
+        {
+          "text": "table,",
+          "start": 49.389,
+          "end": 49.789
+        }
+      ]
+    },
+    {
+      "start": 49.989,
+      "end": 54.31,
+      "text": "un rote learner: memorizza gli esempi visti e non sa rispondere su nessuna istanza nuova.",
+      "words": [
+        {
+          "text": "un",
+          "start": 49.989,
+          "end": 50.049
+        },
+        {
+          "text": "rote",
+          "start": 50.109,
+          "end": 50.289
+        },
+        {
+          "text": "learner:",
+          "start": 50.349,
+          "end": 50.75
+        },
+        {
+          "text": "memorizza",
+          "start": 51.37,
+          "end": 51.75
+        },
+        {
+          "text": "gli",
+          "start": 51.75,
+          "end": 51.85
+        },
+        {
+          "text": "esempi",
+          "start": 51.87,
+          "end": 52.11
+        },
+        {
+          "text": "visti",
+          "start": 52.15,
+          "end": 52.43
+        },
+        {
+          "text": "e",
+          "start": 52.55,
+          "end": 52.59
+        },
+        {
+          "text": "non",
+          "start": 52.61,
+          "end": 52.73
+        },
+        {
+          "text": "sa",
+          "start": 52.75,
+          "end": 52.83
+        },
+        {
+          "text": "rispondere",
+          "start": 52.87,
+          "end": 53.29
+        },
+        {
+          "text": "su",
+          "start": 53.33,
+          "end": 53.39
+        },
+        {
+          "text": "nessuna",
+          "start": 53.45,
+          "end": 53.71
+        },
+        {
+          "text": "istanza",
+          "start": 53.75,
+          "end": 54.03
+        },
+        {
+          "text": "nuova.",
+          "start": 54.07,
+          "end": 54.31
+        }
+      ]
+    },
+    {
+      "start": 55.03,
+      "end": 58.291,
+      "text": "Nessun bias induttivo significa nessuna generalizzazione.",
+      "words": [
+        {
+          "text": "Nessun",
+          "start": 55.03,
+          "end": 55.35
+        },
+        {
+          "text": "bias",
+          "start": 55.37,
+          "end": 55.65
+        },
+        {
+          "text": "induttivo",
+          "start": 55.69,
+          "end": 56.151
+        },
+        {
+          "text": "significa",
+          "start": 56.291,
+          "end": 56.791
+        },
+        {
+          "text": "nessuna",
+          "start": 56.971,
+          "end": 57.371
+        },
+        {
+          "text": "generalizzazione.",
+          "start": 57.431,
+          "end": 58.291
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1896 @@
+{
+  "duration": 129.79,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.02,
+      "text": "Estendiamo ora il modello a input multidimensionali:",
+      "words": [
+        {
+          "text": "Estendiamo",
+          "start": 0.08,
+          "end": 0.64
+        },
+        {
+          "text": "ora",
+          "start": 0.72,
+          "end": 0.88
+        },
+        {
+          "text": "il",
+          "start": 0.92,
+          "end": 0.98
+        },
+        {
+          "text": "modello",
+          "start": 1.0,
+          "end": 1.46
+        },
+        {
+          "text": "a",
+          "start": 1.52,
+          "end": 1.56
+        },
+        {
+          "text": "input",
+          "start": 1.64,
+          "end": 1.96
+        },
+        {
+          "text": "multidimensionali:",
+          "start": 2.04,
+          "end": 3.02
+        }
+      ]
+    },
+    {
+      "start": 3.721,
+      "end": 8.441,
+      "text": "con x e w vettori colonna, il modello lineare è w trasposto x più w",
+      "words": [
+        {
+          "text": "con",
+          "start": 3.721,
+          "end": 3.841
+        },
+        {
+          "text": "x",
+          "start": 3.981,
+          "end": 4.021
+        },
+        {
+          "text": "e",
+          "start": 4.141,
+          "end": 4.181
+        },
+        {
+          "text": "w",
+          "start": 4.241,
+          "end": 4.281
+        },
+        {
+          "text": "vettori",
+          "start": 4.681,
+          "end": 5.001
+        },
+        {
+          "text": "colonna,",
+          "start": 5.041,
+          "end": 5.461
+        },
+        {
+          "text": "il",
+          "start": 5.761,
+          "end": 5.841
+        },
+        {
+          "text": "modello",
+          "start": 5.881,
+          "end": 6.201
+        },
+        {
+          "text": "lineare",
+          "start": 6.241,
+          "end": 6.681
+        },
+        {
+          "text": "è",
+          "start": 6.741,
+          "end": 6.781
+        },
+        {
+          "text": "w",
+          "start": 6.901,
+          "end": 6.941
+        },
+        {
+          "text": "trasposto",
+          "start": 7.341,
+          "end": 7.821
+        },
+        {
+          "text": "x",
+          "start": 8.001,
+          "end": 8.041
+        },
+        {
+          "text": "più",
+          "start": 8.241,
+          "end": 8.361
+        },
+        {
+          "text": "w",
+          "start": 8.401,
+          "end": 8.441
+        }
+      ]
+    },
+    {
+      "start": 8.841,
+      "end": 12.762,
+      "text": "zero, cioè w zero più la somma per i da uno a n di w",
+      "words": [
+        {
+          "text": "zero,",
+          "start": 8.841,
+          "end": 9.121
+        },
+        {
+          "text": "cioè",
+          "start": 9.622,
+          "end": 9.822
+        },
+        {
+          "text": "w",
+          "start": 9.862,
+          "end": 9.902
+        },
+        {
+          "text": "zero",
+          "start": 10.302,
+          "end": 10.522
+        },
+        {
+          "text": "più",
+          "start": 10.602,
+          "end": 10.682
+        },
+        {
+          "text": "la",
+          "start": 10.742,
+          "end": 10.802
+        },
+        {
+          "text": "somma",
+          "start": 10.862,
+          "end": 11.142
+        },
+        {
+          "text": "per",
+          "start": 11.262,
+          "end": 11.402
+        },
+        {
+          "text": "i",
+          "start": 11.442,
+          "end": 11.482
+        },
+        {
+          "text": "da",
+          "start": 11.582,
+          "end": 11.642
+        },
+        {
+          "text": "uno",
+          "start": 11.742,
+          "end": 11.862
+        },
+        {
+          "text": "a",
+          "start": 11.902,
+          "end": 11.942
+        },
+        {
+          "text": "n",
+          "start": 12.102,
+          "end": 12.142
+        },
+        {
+          "text": "di",
+          "start": 12.522,
+          "end": 12.602
+        },
+        {
+          "text": "w",
+          "start": 12.722,
+          "end": 12.762
+        }
+      ]
+    },
+    {
+      "start": 13.122,
+      "end": 16.523,
+      "text": "con i x con i, dove w zero si chiama intercetta,",
+      "words": [
+        {
+          "text": "con",
+          "start": 13.122,
+          "end": 13.242
+        },
+        {
+          "text": "i",
+          "start": 13.502,
+          "end": 13.542
+        },
+        {
+          "text": "x",
+          "start": 13.602,
+          "end": 13.642
+        },
+        {
+          "text": "con",
+          "start": 13.742,
+          "end": 13.882
+        },
+        {
+          "text": "i,",
+          "start": 13.902,
+          "end": 13.942
+        },
+        {
+          "text": "dove",
+          "start": 14.362,
+          "end": 14.522
+        },
+        {
+          "text": "w",
+          "start": 14.602,
+          "end": 14.642
+        },
+        {
+          "text": "zero",
+          "start": 15.022,
+          "end": 15.222
+        },
+        {
+          "text": "si",
+          "start": 15.282,
+          "end": 15.342
+        },
+        {
+          "text": "chiama",
+          "start": 15.382,
+          "end": 15.622
+        },
+        {
+          "text": "intercetta,",
+          "start": 15.822,
+          "end": 16.523
+        }
+      ]
+    },
+    {
+      "start": 16.863,
+      "end": 18.463,
+      "text": "soglia, bias o offset.",
+      "words": [
+        {
+          "text": "soglia,",
+          "start": 16.863,
+          "end": 17.243
+        },
+        {
+          "text": "bias",
+          "start": 17.443,
+          "end": 17.823
+        },
+        {
+          "text": "o",
+          "start": 17.983,
+          "end": 18.023
+        },
+        {
+          "text": "offset.",
+          "start": 18.063,
+          "end": 18.463
+        }
+      ]
+    },
+    {
+      "start": 19.363,
+      "end": 24.064,
+      "text": "Per comodità aggiungiamo a ogni input una componente costante x zero uguale a uno:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 19.363,
+          "end": 19.463
+        },
+        {
+          "text": "comodità",
+          "start": 19.503,
+          "end": 19.883
+        },
+        {
+          "text": "aggiungiamo",
+          "start": 20.023,
+          "end": 20.463
+        },
+        {
+          "text": "a",
+          "start": 20.523,
+          "end": 20.563
+        },
+        {
+          "text": "ogni",
+          "start": 20.643,
+          "end": 20.843
+        },
+        {
+          "text": "input",
+          "start": 20.923,
+          "end": 21.263
+        },
+        {
+          "text": "una",
+          "start": 21.483,
+          "end": 21.623
+        },
+        {
+          "text": "componente",
+          "start": 21.683,
+          "end": 22.163
+        },
+        {
+          "text": "costante",
+          "start": 22.183,
+          "end": 22.724
+        },
+        {
+          "text": "x",
+          "start": 23.004,
+          "end": 23.044
+        },
+        {
+          "text": "zero",
+          "start": 23.324,
+          "end": 23.524
+        },
+        {
+          "text": "uguale",
+          "start": 23.544,
+          "end": 23.764
+        },
+        {
+          "text": "a",
+          "start": 23.804,
+          "end": 23.844
+        },
+        {
+          "text": "uno:",
+          "start": 23.904,
+          "end": 24.064
+        }
+      ]
+    },
+    {
+      "start": 24.744,
+      "end": 26.324,
+      "text": "così il bias entra dentro w",
+      "words": [
+        {
+          "text": "così",
+          "start": 24.744,
+          "end": 24.904
+        },
+        {
+          "text": "il",
+          "start": 24.964,
+          "end": 25.044
+        },
+        {
+          "text": "bias",
+          "start": 25.104,
+          "end": 25.464
+        },
+        {
+          "text": "entra",
+          "start": 25.664,
+          "end": 25.924
+        },
+        {
+          "text": "dentro",
+          "start": 25.984,
+          "end": 26.244
+        },
+        {
+          "text": "w",
+          "start": 26.284,
+          "end": 26.324
+        }
+      ]
+    },
+    {
+      "start": 27.224,
+      "end": 31.625,
+      "text": "e l'uscita diventa un puro prodotto scalare h di x con p uguale x con",
+      "words": [
+        {
+          "text": "e",
+          "start": 27.224,
+          "end": 27.264
+        },
+        {
+          "text": "l'uscita",
+          "start": 27.284,
+          "end": 27.604
+        },
+        {
+          "text": "diventa",
+          "start": 27.644,
+          "end": 27.964
+        },
+        {
+          "text": "un",
+          "start": 28.004,
+          "end": 28.064
+        },
+        {
+          "text": "puro",
+          "start": 28.144,
+          "end": 28.424
+        },
+        {
+          "text": "prodotto",
+          "start": 28.464,
+          "end": 28.824
+        },
+        {
+          "text": "scalare",
+          "start": 28.864,
+          "end": 29.285
+        },
+        {
+          "text": "h",
+          "start": 29.625,
+          "end": 29.665
+        },
+        {
+          "text": "di",
+          "start": 29.725,
+          "end": 29.845
+        },
+        {
+          "text": "x",
+          "start": 29.885,
+          "end": 29.925
+        },
+        {
+          "text": "con",
+          "start": 30.025,
+          "end": 30.165
+        },
+        {
+          "text": "p",
+          "start": 30.225,
+          "end": 30.265
+        },
+        {
+          "text": "uguale",
+          "start": 30.785,
+          "end": 31.105
+        },
+        {
+          "text": "x",
+          "start": 31.325,
+          "end": 31.365
+        },
+        {
+          "text": "con",
+          "start": 31.485,
+          "end": 31.625
+        }
+      ]
+    },
+    {
+      "start": 31.665,
+      "end": 32.365,
+      "text": "p trasposto w.",
+      "words": [
+        {
+          "text": "p",
+          "start": 31.665,
+          "end": 31.705
+        },
+        {
+          "text": "trasposto",
+          "start": 31.805,
+          "end": 32.265
+        },
+        {
+          "text": "w.",
+          "start": 32.325,
+          "end": 32.365
+        }
+      ]
+    },
+    {
+      "start": 33.505,
+      "end": 35.185,
+      "text": "Da qui in poi il bias è incluso in w.",
+      "words": [
+        {
+          "text": "Da",
+          "start": 33.505,
+          "end": 33.565
+        },
+        {
+          "text": "qui",
+          "start": 33.645,
+          "end": 33.765
+        },
+        {
+          "text": "in",
+          "start": 33.825,
+          "end": 33.885
+        },
+        {
+          "text": "poi",
+          "start": 33.925,
+          "end": 34.105
+        },
+        {
+          "text": "il",
+          "start": 34.145,
+          "end": 34.205
+        },
+        {
+          "text": "bias",
+          "start": 34.225,
+          "end": 34.585
+        },
+        {
+          "text": "è",
+          "start": 34.645,
+          "end": 34.685
+        },
+        {
+          "text": "incluso",
+          "start": 34.705,
+          "end": 35.045
+        },
+        {
+          "text": "in",
+          "start": 35.065,
+          "end": 35.125
+        },
+        {
+          "text": "w.",
+          "start": 35.145,
+          "end": 35.185
+        }
+      ]
+    },
+    {
+      "start": 36.946,
+      "end": 42.046,
+      "text": "Organizzando gli esempi per righe nella matrice X di dimensione l per n più uno",
+      "words": [
+        {
+          "text": "Organizzando",
+          "start": 36.946,
+          "end": 37.486
+        },
+        {
+          "text": "gli",
+          "start": 37.506,
+          "end": 37.606
+        },
+        {
+          "text": "esempi",
+          "start": 37.626,
+          "end": 38.006
+        },
+        {
+          "text": "per",
+          "start": 38.166,
+          "end": 38.326
+        },
+        {
+          "text": "righe",
+          "start": 38.386,
+          "end": 38.626
+        },
+        {
+          "text": "nella",
+          "start": 38.786,
+          "end": 38.966
+        },
+        {
+          "text": "matrice",
+          "start": 39.006,
+          "end": 39.386
+        },
+        {
+          "text": "X",
+          "start": 39.726,
+          "end": 39.766
+        },
+        {
+          "text": "di",
+          "start": 40.046,
+          "end": 40.126
+        },
+        {
+          "text": "dimensione",
+          "start": 40.166,
+          "end": 40.626
+        },
+        {
+          "text": "l",
+          "start": 41.026,
+          "end": 41.066
+        },
+        {
+          "text": "per",
+          "start": 41.306,
+          "end": 41.446
+        },
+        {
+          "text": "n",
+          "start": 41.566,
+          "end": 41.606
+        },
+        {
+          "text": "più",
+          "start": 41.686,
+          "end": 41.766
+        },
+        {
+          "text": "uno",
+          "start": 41.886,
+          "end": 42.046
+        }
+      ]
+    },
+    {
+      "start": 42.447,
+      "end": 43.687,
+      "text": "e i target nel vettore d,",
+      "words": [
+        {
+          "text": "e",
+          "start": 42.447,
+          "end": 42.487
+        },
+        {
+          "text": "i",
+          "start": 42.567,
+          "end": 42.607
+        },
+        {
+          "text": "target",
+          "start": 42.647,
+          "end": 43.027
+        },
+        {
+          "text": "nel",
+          "start": 43.127,
+          "end": 43.227
+        },
+        {
+          "text": "vettore",
+          "start": 43.267,
+          "end": 43.567
+        },
+        {
+          "text": "d,",
+          "start": 43.647,
+          "end": 43.687
+        }
+      ]
+    },
+    {
+      "start": 44.327,
+      "end": 47.627,
+      "text": "l'errore quadratico è norma quadra di d meno X w.",
+      "words": [
+        {
+          "text": "l'errore",
+          "start": 44.327,
+          "end": 44.667
+        },
+        {
+          "text": "quadratico",
+          "start": 44.707,
+          "end": 45.227
+        },
+        {
+          "text": "è",
+          "start": 45.307,
+          "end": 45.347
+        },
+        {
+          "text": "norma",
+          "start": 45.747,
+          "end": 46.027
+        },
+        {
+          "text": "quadra",
+          "start": 46.087,
+          "end": 46.427
+        },
+        {
+          "text": "di",
+          "start": 46.487,
+          "end": 46.547
+        },
+        {
+          "text": "d",
+          "start": 46.847,
+          "end": 46.887
+        },
+        {
+          "text": "meno",
+          "start": 47.107,
+          "end": 47.287
+        },
+        {
+          "text": "X",
+          "start": 47.447,
+          "end": 47.487
+        },
+        {
+          "text": "w.",
+          "start": 47.587,
+          "end": 47.627
+        }
+      ]
+    },
+    {
+      "start": 49.628,
+      "end": 51.728,
+      "text": "Derivando rispetto al singolo peso w con j:",
+      "words": [
+        {
+          "text": "Derivando",
+          "start": 49.628,
+          "end": 50.028
+        },
+        {
+          "text": "rispetto",
+          "start": 50.068,
+          "end": 50.388
+        },
+        {
+          "text": "al",
+          "start": 50.408,
+          "end": 50.488
+        },
+        {
+          "text": "singolo",
+          "start": 50.548,
+          "end": 50.848
+        },
+        {
+          "text": "peso",
+          "start": 50.888,
+          "end": 51.108
+        },
+        {
+          "text": "w",
+          "start": 51.148,
+          "end": 51.188
+        },
+        {
+          "text": "con",
+          "start": 51.508,
+          "end": 51.648
+        },
+        {
+          "text": "j:",
+          "start": 51.688,
+          "end": 51.728
+        }
+      ]
+    },
+    {
+      "start": 53.508,
+      "end": 58.089,
+      "text": "dentro il prodotto scalare x p trasposto w l'unico termine che dipende da w con",
+      "words": [
+        {
+          "text": "dentro",
+          "start": 53.508,
+          "end": 53.748
+        },
+        {
+          "text": "il",
+          "start": 53.788,
+          "end": 53.848
+        },
+        {
+          "text": "prodotto",
+          "start": 53.868,
+          "end": 54.208
+        },
+        {
+          "text": "scalare",
+          "start": 54.248,
+          "end": 54.668
+        },
+        {
+          "text": "x",
+          "start": 54.988,
+          "end": 55.028
+        },
+        {
+          "text": "p",
+          "start": 55.289,
+          "end": 55.329
+        },
+        {
+          "text": "trasposto",
+          "start": 55.409,
+          "end": 55.829
+        },
+        {
+          "text": "w",
+          "start": 55.869,
+          "end": 55.909
+        },
+        {
+          "text": "l'unico",
+          "start": 56.289,
+          "end": 56.569
+        },
+        {
+          "text": "termine",
+          "start": 56.609,
+          "end": 56.949
+        },
+        {
+          "text": "che",
+          "start": 56.989,
+          "end": 57.069
+        },
+        {
+          "text": "dipende",
+          "start": 57.109,
+          "end": 57.409
+        },
+        {
+          "text": "da",
+          "start": 57.449,
+          "end": 57.509
+        },
+        {
+          "text": "w",
+          "start": 57.589,
+          "end": 57.629
+        },
+        {
+          "text": "con",
+          "start": 57.969,
+          "end": 58.089
+        }
+      ]
+    },
+    {
+      "start": 58.129,
+      "end": 60.809,
+      "text": "j è x p virgola j per w con j,",
+      "words": [
+        {
+          "text": "j",
+          "start": 58.129,
+          "end": 58.169
+        },
+        {
+          "text": "è",
+          "start": 58.389,
+          "end": 58.429
+        },
+        {
+          "text": "x",
+          "start": 58.809,
+          "end": 58.849
+        },
+        {
+          "text": "p",
+          "start": 59.209,
+          "end": 59.249
+        },
+        {
+          "text": "virgola",
+          "start": 59.429,
+          "end": 59.749
+        },
+        {
+          "text": "j",
+          "start": 59.809,
+          "end": 59.849
+        },
+        {
+          "text": "per",
+          "start": 60.049,
+          "end": 60.169
+        },
+        {
+          "text": "w",
+          "start": 60.229,
+          "end": 60.269
+        },
+        {
+          "text": "con",
+          "start": 60.589,
+          "end": 60.709
+        },
+        {
+          "text": "j,",
+          "start": 60.769,
+          "end": 60.809
+        }
+      ]
+    },
+    {
+      "start": 61.389,
+      "end": 63.31,
+      "text": "la cui derivata è x p virgola j.",
+      "words": [
+        {
+          "text": "la",
+          "start": 61.389,
+          "end": 61.449
+        },
+        {
+          "text": "cui",
+          "start": 61.489,
+          "end": 61.609
+        },
+        {
+          "text": "derivata",
+          "start": 61.63,
+          "end": 62.03
+        },
+        {
+          "text": "è",
+          "start": 62.11,
+          "end": 62.15
+        },
+        {
+          "text": "x",
+          "start": 62.49,
+          "end": 62.53
+        },
+        {
+          "text": "p",
+          "start": 62.77,
+          "end": 62.81
+        },
+        {
+          "text": "virgola",
+          "start": 62.93,
+          "end": 63.23
+        },
+        {
+          "text": "j.",
+          "start": 63.27,
+          "end": 63.31
+        }
+      ]
+    },
+    {
+      "start": 64.31,
+      "end": 67.29,
+      "text": "Otteniamo quindi derivata di E rispetto a w con j",
+      "words": [
+        {
+          "text": "Otteniamo",
+          "start": 64.31,
+          "end": 64.69
+        },
+        {
+          "text": "quindi",
+          "start": 64.75,
+          "end": 65.07
+        },
+        {
+          "text": "derivata",
+          "start": 65.31,
+          "end": 65.69
+        },
+        {
+          "text": "di",
+          "start": 65.73,
+          "end": 65.79
+        },
+        {
+          "text": "E",
+          "start": 65.85,
+          "end": 65.89
+        },
+        {
+          "text": "rispetto",
+          "start": 66.31,
+          "end": 66.63
+        },
+        {
+          "text": "a",
+          "start": 66.65,
+          "end": 66.69000000000001
+        },
+        {
+          "text": "w",
+          "start": 66.69,
+          "end": 66.73
+        },
+        {
+          "text": "con",
+          "start": 67.05,
+          "end": 67.17
+        },
+        {
+          "text": "j",
+          "start": 67.25,
+          "end": 67.29
+        }
+      ]
+    },
+    {
+      "start": 67.97,
+      "end": 72.51100000000001,
+      "text": "uguale meno due somma su p di delta con p per x p virgola j",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 67.97,
+          "end": 68.311
+        },
+        {
+          "text": "meno",
+          "start": 68.371,
+          "end": 68.571
+        },
+        {
+          "text": "due",
+          "start": 68.631,
+          "end": 68.831
+        },
+        {
+          "text": "somma",
+          "start": 69.051,
+          "end": 69.311
+        },
+        {
+          "text": "su",
+          "start": 69.371,
+          "end": 69.451
+        },
+        {
+          "text": "p",
+          "start": 69.571,
+          "end": 69.611
+        },
+        {
+          "text": "di",
+          "start": 70.011,
+          "end": 70.091
+        },
+        {
+          "text": "delta",
+          "start": 70.211,
+          "end": 70.531
+        },
+        {
+          "text": "con",
+          "start": 70.611,
+          "end": 70.771
+        },
+        {
+          "text": "p",
+          "start": 70.851,
+          "end": 70.891
+        },
+        {
+          "text": "per",
+          "start": 71.311,
+          "end": 71.451
+        },
+        {
+          "text": "x",
+          "start": 71.711,
+          "end": 71.751
+        },
+        {
+          "text": "p",
+          "start": 71.951,
+          "end": 71.991
+        },
+        {
+          "text": "virgola",
+          "start": 72.091,
+          "end": 72.411
+        },
+        {
+          "text": "j",
+          "start": 72.471,
+          "end": 72.51100000000001
+        }
+      ]
+    },
+    {
+      "start": 72.511,
+      "end": 75.412,
+      "text": "— errore sull'esempio per input del peso,",
+      "words": [
+        {
+          "text": "—",
+          "start": 72.511,
+          "end": 72.661
+        },
+        {
+          "text": "errore",
+          "start": 73.211,
+          "end": 73.511
+        },
+        {
+          "text": "sull'esempio",
+          "start": 73.571,
+          "end": 74.211
+        },
+        {
+          "text": "per",
+          "start": 74.351,
+          "end": 74.491
+        },
+        {
+          "text": "input",
+          "start": 74.531,
+          "end": 74.832
+        },
+        {
+          "text": "del",
+          "start": 74.932,
+          "end": 75.052
+        },
+        {
+          "text": "peso,",
+          "start": 75.112,
+          "end": 75.412
+        }
+      ]
+    },
+    {
+      "start": 76.072,
+      "end": 78.232,
+      "text": "la stessa struttura che tornerà nelle reti neurali.",
+      "words": [
+        {
+          "text": "la",
+          "start": 76.072,
+          "end": 76.152
+        },
+        {
+          "text": "stessa",
+          "start": 76.192,
+          "end": 76.432
+        },
+        {
+          "text": "struttura",
+          "start": 76.472,
+          "end": 76.852
+        },
+        {
+          "text": "che",
+          "start": 76.892,
+          "end": 76.952
+        },
+        {
+          "text": "tornerà",
+          "start": 76.992,
+          "end": 77.332
+        },
+        {
+          "text": "nelle",
+          "start": 77.412,
+          "end": 77.592
+        },
+        {
+          "text": "reti",
+          "start": 77.632,
+          "end": 77.812
+        },
+        {
+          "text": "neurali.",
+          "start": 77.852,
+          "end": 78.232
+        }
+      ]
+    },
+    {
+      "start": 79.432,
+      "end": 83.673,
+      "text": "In forma vettoriale il gradiente è meno due X trasposto per d meno X w.",
+      "words": [
+        {
+          "text": "In",
+          "start": 79.432,
+          "end": 79.492
+        },
+        {
+          "text": "forma",
+          "start": 79.512,
+          "end": 79.732
+        },
+        {
+          "text": "vettoriale",
+          "start": 79.772,
+          "end": 80.232
+        },
+        {
+          "text": "il",
+          "start": 80.272,
+          "end": 80.332
+        },
+        {
+          "text": "gradiente",
+          "start": 80.352,
+          "end": 80.852
+        },
+        {
+          "text": "è",
+          "start": 80.932,
+          "end": 80.97200000000001
+        },
+        {
+          "text": "meno",
+          "start": 81.173,
+          "end": 81.373
+        },
+        {
+          "text": "due",
+          "start": 81.433,
+          "end": 81.613
+        },
+        {
+          "text": "X",
+          "start": 81.933,
+          "end": 81.97300000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 82.073,
+          "end": 82.753
+        },
+        {
+          "text": "per",
+          "start": 82.833,
+          "end": 82.973
+        },
+        {
+          "text": "d",
+          "start": 83.033,
+          "end": 83.07300000000001
+        },
+        {
+          "text": "meno",
+          "start": 83.193,
+          "end": 83.353
+        },
+        {
+          "text": "X",
+          "start": 83.493,
+          "end": 83.533
+        },
+        {
+          "text": "w.",
+          "start": 83.633,
+          "end": 83.673
+        }
+      ]
+    },
+    {
+      "start": 84.853,
+      "end": 86.873,
+      "text": "Annullandolo ricaviamo le equazioni normali:",
+      "words": [
+        {
+          "text": "Annullandolo",
+          "start": 84.853,
+          "end": 85.453
+        },
+        {
+          "text": "ricaviamo",
+          "start": 85.493,
+          "end": 85.893
+        },
+        {
+          "text": "le",
+          "start": 85.933,
+          "end": 85.993
+        },
+        {
+          "text": "equazioni",
+          "start": 86.013,
+          "end": 86.393
+        },
+        {
+          "text": "normali:",
+          "start": 86.453,
+          "end": 86.873
+        }
+      ]
+    },
+    {
+      "start": 88.274,
+      "end": 91.034,
+      "text": "X trasposto X per w uguale X trasposto d.",
+      "words": [
+        {
+          "text": "X",
+          "start": 88.274,
+          "end": 88.31400000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 88.374,
+          "end": 88.854
+        },
+        {
+          "text": "X",
+          "start": 89.014,
+          "end": 89.054
+        },
+        {
+          "text": "per",
+          "start": 89.134,
+          "end": 89.234
+        },
+        {
+          "text": "w",
+          "start": 89.274,
+          "end": 89.31400000000001
+        },
+        {
+          "text": "uguale",
+          "start": 89.774,
+          "end": 90.114
+        },
+        {
+          "text": "X",
+          "start": 90.394,
+          "end": 90.43400000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 90.494,
+          "end": 90.954
+        },
+        {
+          "text": "d.",
+          "start": 90.994,
+          "end": 91.034
+        }
+      ]
+    },
+    {
+      "start": 92.154,
+      "end": 95.635,
+      "text": "Se X trasposto X è non singolare la soluzione è unica:",
+      "words": [
+        {
+          "text": "Se",
+          "start": 92.154,
+          "end": 92.234
+        },
+        {
+          "text": "X",
+          "start": 92.374,
+          "end": 92.414
+        },
+        {
+          "text": "trasposto",
+          "start": 92.514,
+          "end": 92.974
+        },
+        {
+          "text": "X",
+          "start": 93.134,
+          "end": 93.174
+        },
+        {
+          "text": "è",
+          "start": 93.414,
+          "end": 93.45400000000001
+        },
+        {
+          "text": "non",
+          "start": 93.674,
+          "end": 93.854
+        },
+        {
+          "text": "singolare",
+          "start": 93.934,
+          "end": 94.435
+        },
+        {
+          "text": "la",
+          "start": 94.535,
+          "end": 94.595
+        },
+        {
+          "text": "soluzione",
+          "start": 94.635,
+          "end": 95.075
+        },
+        {
+          "text": "è",
+          "start": 95.195,
+          "end": 95.235
+        },
+        {
+          "text": "unica:",
+          "start": 95.335,
+          "end": 95.635
+        }
+      ]
+    },
+    {
+      "start": 96.495,
+      "end": 100.275,
+      "text": "w uguale X trasposto X inverso per X trasposto d,",
+      "words": [
+        {
+          "text": "w",
+          "start": 96.495,
+          "end": 96.53500000000001
+        },
+        {
+          "text": "uguale",
+          "start": 96.535,
+          "end": 97.235
+        },
+        {
+          "text": "X",
+          "start": 97.555,
+          "end": 97.59500000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 97.675,
+          "end": 98.155
+        },
+        {
+          "text": "X",
+          "start": 98.295,
+          "end": 98.33500000000001
+        },
+        {
+          "text": "inverso",
+          "start": 98.695,
+          "end": 99.275
+        },
+        {
+          "text": "per",
+          "start": 99.355,
+          "end": 99.495
+        },
+        {
+          "text": "X",
+          "start": 99.595,
+          "end": 99.635
+        },
+        {
+          "text": "trasposto",
+          "start": 99.715,
+          "end": 100.175
+        },
+        {
+          "text": "d,",
+          "start": 100.235,
+          "end": 100.275
+        }
+      ]
+    },
+    {
+      "start": 100.435,
+      "end": 104.656,
+      "text": "cioè X più d, dove X più è la pseudoinversa di Moore-Penrose.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 100.435,
+          "end": 100.615
+        },
+        {
+          "text": "X",
+          "start": 101.096,
+          "end": 101.13600000000001
+        },
+        {
+          "text": "più",
+          "start": 101.376,
+          "end": 101.496
+        },
+        {
+          "text": "d,",
+          "start": 101.696,
+          "end": 101.736
+        },
+        {
+          "text": "dove",
+          "start": 102.156,
+          "end": 102.316
+        },
+        {
+          "text": "X",
+          "start": 102.536,
+          "end": 102.57600000000001
+        },
+        {
+          "text": "più",
+          "start": 102.676,
+          "end": 102.796
+        },
+        {
+          "text": "è",
+          "start": 102.996,
+          "end": 103.036
+        },
+        {
+          "text": "la",
+          "start": 103.076,
+          "end": 103.136
+        },
+        {
+          "text": "pseudoinversa",
+          "start": 103.176,
+          "end": 103.836
+        },
+        {
+          "text": "di",
+          "start": 103.876,
+          "end": 103.936
+        },
+        {
+          "text": "Moore-Penrose.",
+          "start": 103.976,
+          "end": 104.656
+        }
+      ]
+    },
+    {
+      "start": 105.776,
+      "end": 109.457,
+      "text": "Se X trasposto X è singolare esistono infinite soluzioni",
+      "words": [
+        {
+          "text": "Se",
+          "start": 105.776,
+          "end": 105.856
+        },
+        {
+          "text": "X",
+          "start": 106.156,
+          "end": 106.19600000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 106.276,
+          "end": 106.716
+        },
+        {
+          "text": "X",
+          "start": 106.856,
+          "end": 106.896
+        },
+        {
+          "text": "è",
+          "start": 106.996,
+          "end": 107.036
+        },
+        {
+          "text": "singolare",
+          "start": 107.156,
+          "end": 107.817
+        },
+        {
+          "text": "esistono",
+          "start": 107.977,
+          "end": 108.357
+        },
+        {
+          "text": "infinite",
+          "start": 108.417,
+          "end": 108.857
+        },
+        {
+          "text": "soluzioni",
+          "start": 108.897,
+          "end": 109.457
+        }
+      ]
+    },
+    {
+      "start": 110.017,
+      "end": 111.777,
+      "text": "e si sceglie quella a norma minima di w.",
+      "words": [
+        {
+          "text": "e",
+          "start": 110.017,
+          "end": 110.057
+        },
+        {
+          "text": "si",
+          "start": 110.097,
+          "end": 110.177
+        },
+        {
+          "text": "sceglie",
+          "start": 110.237,
+          "end": 110.497
+        },
+        {
+          "text": "quella",
+          "start": 110.537,
+          "end": 110.777
+        },
+        {
+          "text": "a",
+          "start": 110.917,
+          "end": 110.95700000000001
+        },
+        {
+          "text": "norma",
+          "start": 111.037,
+          "end": 111.277
+        },
+        {
+          "text": "minima",
+          "start": 111.337,
+          "end": 111.597
+        },
+        {
+          "text": "di",
+          "start": 111.657,
+          "end": 111.717
+        },
+        {
+          "text": "w.",
+          "start": 111.737,
+          "end": 111.777
+        }
+      ]
+    },
+    {
+      "start": 113.337,
+      "end": 116.898,
+      "text": "In pratica si calcola via decomposizione ai valori singolari SVD,",
+      "words": [
+        {
+          "text": "In",
+          "start": 113.337,
+          "end": 113.417
+        },
+        {
+          "text": "pratica",
+          "start": 113.437,
+          "end": 113.798
+        },
+        {
+          "text": "si",
+          "start": 113.858,
+          "end": 113.918
+        },
+        {
+          "text": "calcola",
+          "start": 113.958,
+          "end": 114.318
+        },
+        {
+          "text": "via",
+          "start": 114.358,
+          "end": 114.478
+        },
+        {
+          "text": "decomposizione",
+          "start": 114.518,
+          "end": 115.258
+        },
+        {
+          "text": "ai",
+          "start": 115.278,
+          "end": 115.358
+        },
+        {
+          "text": "valori",
+          "start": 115.378,
+          "end": 115.658
+        },
+        {
+          "text": "singolari",
+          "start": 115.718,
+          "end": 116.258
+        },
+        {
+          "text": "SVD,",
+          "start": 116.638,
+          "end": 116.898
+        }
+      ]
+    },
+    {
+      "start": 117.698,
+      "end": 123.43900000000001,
+      "text": "X uguale U Sigma V trasposto, da cui X più uguale V Sigma più U",
+      "words": [
+        {
+          "text": "X",
+          "start": 117.698,
+          "end": 117.738
+        },
+        {
+          "text": "uguale",
+          "start": 117.978,
+          "end": 118.318
+        },
+        {
+          "text": "U",
+          "start": 118.518,
+          "end": 118.558
+        },
+        {
+          "text": "Sigma",
+          "start": 118.858,
+          "end": 119.138
+        },
+        {
+          "text": "V",
+          "start": 119.278,
+          "end": 119.31800000000001
+        },
+        {
+          "text": "trasposto,",
+          "start": 119.398,
+          "end": 119.978
+        },
+        {
+          "text": "da",
+          "start": 120.439,
+          "end": 120.499
+        },
+        {
+          "text": "cui",
+          "start": 120.559,
+          "end": 120.739
+        },
+        {
+          "text": "X",
+          "start": 120.999,
+          "end": 121.039
+        },
+        {
+          "text": "più",
+          "start": 121.139,
+          "end": 121.279
+        },
+        {
+          "text": "uguale",
+          "start": 121.539,
+          "end": 121.899
+        },
+        {
+          "text": "V",
+          "start": 122.179,
+          "end": 122.21900000000001
+        },
+        {
+          "text": "Sigma",
+          "start": 122.559,
+          "end": 122.819
+        },
+        {
+          "text": "più",
+          "start": 122.879,
+          "end": 122.999
+        },
+        {
+          "text": "U",
+          "start": 123.399,
+          "end": 123.43900000000001
+        }
+      ]
+    },
+    {
+      "start": 123.499,
+      "end": 126.499,
+      "text": "trasposto invertendo solo i valori singolari non nulli:",
+      "words": [
+        {
+          "text": "trasposto",
+          "start": 123.499,
+          "end": 124.059
+        },
+        {
+          "text": "invertendo",
+          "start": 124.479,
+          "end": 124.939
+        },
+        {
+          "text": "solo",
+          "start": 124.999,
+          "end": 125.179
+        },
+        {
+          "text": "i",
+          "start": 125.199,
+          "end": 125.239
+        },
+        {
+          "text": "valori",
+          "start": 125.239,
+          "end": 125.499
+        },
+        {
+          "text": "singolari",
+          "start": 125.539,
+          "end": 125.959
+        },
+        {
+          "text": "non",
+          "start": 126.019,
+          "end": 126.139
+        },
+        {
+          "text": "nulli:",
+          "start": 126.179,
+          "end": 126.499
+        }
+      ]
+    },
+    {
+      "start": 127.2,
+      "end": 129.54,
+      "text": "è questo l'algoritmo diretto delle librerie numeriche.",
+      "words": [
+        {
+          "text": "è",
+          "start": 127.2,
+          "end": 127.24000000000001
+        },
+        {
+          "text": "questo",
+          "start": 127.28,
+          "end": 127.52
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 127.54,
+          "end": 128.02
+        },
+        {
+          "text": "diretto",
+          "start": 128.08,
+          "end": 128.42
+        },
+        {
+          "text": "delle",
+          "start": 128.46,
+          "end": 128.64
+        },
+        {
+          "text": "librerie",
+          "start": 128.68,
+          "end": 129.06
+        },
+        {
+          "text": "numeriche.",
+          "start": 129.08,
+          "end": 129.54
+        }
+      ]
+    }
+  ]
+}

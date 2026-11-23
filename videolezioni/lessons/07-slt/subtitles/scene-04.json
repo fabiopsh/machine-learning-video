@@ -1,0 +1,872 @@
+{
+  "duration": 63.153,
+  "segments": [
+    {
+      "start": 0.113,
+      "end": 2.694,
+      "text": "Vediamo altri esempi significativi di VC-dimension.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.113,
+          "end": 0.413
+        },
+        {
+          "text": "altri",
+          "start": 0.473,
+          "end": 0.653
+        },
+        {
+          "text": "esempi",
+          "start": 0.713,
+          "end": 0.993
+        },
+        {
+          "text": "significativi",
+          "start": 1.053,
+          "end": 1.773
+        },
+        {
+          "text": "di",
+          "start": 1.812,
+          "end": 1.873
+        },
+        {
+          "text": "VC-dimension.",
+          "start": 1.934,
+          "end": 2.694
+        }
+      ]
+    },
+    {
+      "start": 3.194,
+      "end": 7.314,
+      "text": "Soglie sulla retta reale e intervalli su R hanno VC-dimension due.",
+      "words": [
+        {
+          "text": "Soglie",
+          "start": 3.194,
+          "end": 3.514
+        },
+        {
+          "text": "sulla",
+          "start": 3.574,
+          "end": 3.774
+        },
+        {
+          "text": "retta",
+          "start": 3.814,
+          "end": 4.034
+        },
+        {
+          "text": "reale",
+          "start": 4.094,
+          "end": 4.474
+        },
+        {
+          "text": "e",
+          "start": 4.674,
+          "end": 4.714
+        },
+        {
+          "text": "intervalli",
+          "start": 4.874,
+          "end": 5.413
+        },
+        {
+          "text": "su",
+          "start": 5.454,
+          "end": 5.534
+        },
+        {
+          "text": "R",
+          "start": 5.794,
+          "end": 5.834
+        },
+        {
+          "text": "hanno",
+          "start": 6.134,
+          "end": 6.314
+        },
+        {
+          "text": "VC-dimension",
+          "start": 6.354,
+          "end": 7.034
+        },
+        {
+          "text": "due.",
+          "start": 7.114,
+          "end": 7.314
+        }
+      ]
+    },
+    {
+      "start": 7.914,
+      "end": 12.275,
+      "text": "Cerchi centrati nell'origine con il solo raggio b hanno VC-dimension uno:",
+      "words": [
+        {
+          "text": "Cerchi",
+          "start": 7.914,
+          "end": 8.234
+        },
+        {
+          "text": "centrati",
+          "start": 8.294,
+          "end": 8.715
+        },
+        {
+          "text": "nell'origine",
+          "start": 8.775,
+          "end": 9.355
+        },
+        {
+          "text": "con",
+          "start": 9.415,
+          "end": 9.535
+        },
+        {
+          "text": "il",
+          "start": 9.595,
+          "end": 9.675
+        },
+        {
+          "text": "solo",
+          "start": 9.755,
+          "end": 9.955
+        },
+        {
+          "text": "raggio",
+          "start": 9.995,
+          "end": 10.355
+        },
+        {
+          "text": "b",
+          "start": 10.635,
+          "end": 10.675
+        },
+        {
+          "text": "hanno",
+          "start": 11.115,
+          "end": 11.315
+        },
+        {
+          "text": "VC-dimension",
+          "start": 11.355,
+          "end": 12.014
+        },
+        {
+          "text": "uno:",
+          "start": 12.095,
+          "end": 12.275
+        }
+      ]
+    },
+    {
+      "start": 12.635,
+      "end": 16.476,
+      "text": "non riescono a etichettare positivo il punto più lontano e negativo il più vicino.",
+      "words": [
+        {
+          "text": "non",
+          "start": 12.635,
+          "end": 12.755
+        },
+        {
+          "text": "riescono",
+          "start": 12.775,
+          "end": 13.115
+        },
+        {
+          "text": "a",
+          "start": 13.155,
+          "end": 13.195
+        },
+        {
+          "text": "etichettare",
+          "start": 13.215,
+          "end": 13.695
+        },
+        {
+          "text": "positivo",
+          "start": 13.734,
+          "end": 14.175
+        },
+        {
+          "text": "il",
+          "start": 14.215,
+          "end": 14.295
+        },
+        {
+          "text": "punto",
+          "start": 14.315,
+          "end": 14.555
+        },
+        {
+          "text": "più",
+          "start": 14.595,
+          "end": 14.675
+        },
+        {
+          "text": "lontano",
+          "start": 14.755,
+          "end": 15.176
+        },
+        {
+          "text": "e",
+          "start": 15.316,
+          "end": 15.356
+        },
+        {
+          "text": "negativo",
+          "start": 15.416,
+          "end": 15.816
+        },
+        {
+          "text": "il",
+          "start": 15.856,
+          "end": 15.936
+        },
+        {
+          "text": "più",
+          "start": 15.936,
+          "end": 16.035
+        },
+        {
+          "text": "vicino.",
+          "start": 16.076,
+          "end": 16.476
+        }
+      ]
+    },
+    {
+      "start": 16.916,
+      "end": 19.856,
+      "text": "Se aggiungiamo un parametro k per scambiare interno ed esterno,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 16.916,
+          "end": 16.956
+        },
+        {
+          "text": "aggiungiamo",
+          "start": 16.996,
+          "end": 17.395
+        },
+        {
+          "text": "un",
+          "start": 17.436,
+          "end": 17.496
+        },
+        {
+          "text": "parametro",
+          "start": 17.516,
+          "end": 17.916
+        },
+        {
+          "text": "k",
+          "start": 17.976,
+          "end": 18.016
+        },
+        {
+          "text": "per",
+          "start": 18.316,
+          "end": 18.416
+        },
+        {
+          "text": "scambiare",
+          "start": 18.456,
+          "end": 18.856
+        },
+        {
+          "text": "interno",
+          "start": 18.916,
+          "end": 19.255
+        },
+        {
+          "text": "ed",
+          "start": 19.296,
+          "end": 19.356
+        },
+        {
+          "text": "esterno,",
+          "start": 19.395,
+          "end": 19.856
+        }
+      ]
+    },
+    {
+      "start": 20.016,
+      "end": 21.276,
+      "text": "la VC-dimension sale a due.",
+      "words": [
+        {
+          "text": "la",
+          "start": 20.016,
+          "end": 20.076
+        },
+        {
+          "text": "VC-dimension",
+          "start": 20.096,
+          "end": 20.736
+        },
+        {
+          "text": "sale",
+          "start": 20.796,
+          "end": 20.976
+        },
+        {
+          "text": "a",
+          "start": 21.016,
+          "end": 21.056
+        },
+        {
+          "text": "due.",
+          "start": 21.097,
+          "end": 21.276
+        }
+      ]
+    },
+    {
+      "start": 21.797,
+      "end": 24.577,
+      "text": "Cerchi nel piano con centro libero hanno VC-dimension tre,",
+      "words": [
+        {
+          "text": "Cerchi",
+          "start": 21.797,
+          "end": 22.056
+        },
+        {
+          "text": "nel",
+          "start": 22.117,
+          "end": 22.237
+        },
+        {
+          "text": "piano",
+          "start": 22.276,
+          "end": 22.556
+        },
+        {
+          "text": "con",
+          "start": 22.617,
+          "end": 22.737
+        },
+        {
+          "text": "centro",
+          "start": 22.797,
+          "end": 23.077
+        },
+        {
+          "text": "libero",
+          "start": 23.117,
+          "end": 23.416
+        },
+        {
+          "text": "hanno",
+          "start": 23.517,
+          "end": 23.717
+        },
+        {
+          "text": "VC-dimension",
+          "start": 23.757,
+          "end": 24.397
+        },
+        {
+          "text": "tre,",
+          "start": 24.437,
+          "end": 24.577
+        }
+      ]
+    },
+    {
+      "start": 24.897,
+      "end": 26.776,
+      "text": "sia con raggio libero che con raggio fisso.",
+      "words": [
+        {
+          "text": "sia",
+          "start": 24.897,
+          "end": 25.056
+        },
+        {
+          "text": "con",
+          "start": 25.097,
+          "end": 25.217
+        },
+        {
+          "text": "raggio",
+          "start": 25.257,
+          "end": 25.477
+        },
+        {
+          "text": "libero",
+          "start": 25.537,
+          "end": 25.817
+        },
+        {
+          "text": "che",
+          "start": 25.916,
+          "end": 25.996
+        },
+        {
+          "text": "con",
+          "start": 26.037,
+          "end": 26.157
+        },
+        {
+          "text": "raggio",
+          "start": 26.197,
+          "end": 26.397
+        },
+        {
+          "text": "fisso.",
+          "start": 26.457,
+          "end": 26.776
+        }
+      ]
+    },
+    {
+      "start": 27.677,
+      "end": 32.398,
+      "text": "Questo dimostra un fatto cruciale: la VC-dimension non coincide con il numero di parametri liberi.",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 27.677,
+          "end": 27.897
+        },
+        {
+          "text": "dimostra",
+          "start": 27.917,
+          "end": 28.258
+        },
+        {
+          "text": "un",
+          "start": 28.298,
+          "end": 28.358
+        },
+        {
+          "text": "fatto",
+          "start": 28.378,
+          "end": 28.618
+        },
+        {
+          "text": "cruciale:",
+          "start": 28.678,
+          "end": 29.198
+        },
+        {
+          "text": "la",
+          "start": 29.518,
+          "end": 29.578
+        },
+        {
+          "text": "VC-dimension",
+          "start": 29.618,
+          "end": 30.238
+        },
+        {
+          "text": "non",
+          "start": 30.298,
+          "end": 30.418
+        },
+        {
+          "text": "coincide",
+          "start": 30.458,
+          "end": 30.958
+        },
+        {
+          "text": "con",
+          "start": 30.998,
+          "end": 31.118
+        },
+        {
+          "text": "il",
+          "start": 31.158,
+          "end": 31.198
+        },
+        {
+          "text": "numero",
+          "start": 31.238,
+          "end": 31.478
+        },
+        {
+          "text": "di",
+          "start": 31.518,
+          "end": 31.578
+        },
+        {
+          "text": "parametri",
+          "start": 31.638,
+          "end": 32.038
+        },
+        {
+          "text": "liberi.",
+          "start": 32.098,
+          "end": 32.398
+        }
+      ]
+    },
+    {
+      "start": 32.998,
+      "end": 36.259,
+      "text": "Classi con lo stesso numero di parametri hanno VC-dimension diverse,",
+      "words": [
+        {
+          "text": "Classi",
+          "start": 32.998,
+          "end": 33.298
+        },
+        {
+          "text": "con",
+          "start": 33.358,
+          "end": 33.458
+        },
+        {
+          "text": "lo",
+          "start": 33.477,
+          "end": 33.538
+        },
+        {
+          "text": "stesso",
+          "start": 33.578,
+          "end": 33.878
+        },
+        {
+          "text": "numero",
+          "start": 33.918,
+          "end": 34.158
+        },
+        {
+          "text": "di",
+          "start": 34.198,
+          "end": 34.258
+        },
+        {
+          "text": "parametri",
+          "start": 34.298,
+          "end": 34.779
+        },
+        {
+          "text": "hanno",
+          "start": 34.879,
+          "end": 35.099
+        },
+        {
+          "text": "VC-dimension",
+          "start": 35.159,
+          "end": 35.799
+        },
+        {
+          "text": "diverse,",
+          "start": 35.819,
+          "end": 36.259
+        }
+      ]
+    },
+    {
+      "start": 36.619,
+      "end": 39.759,
+      "text": "e si possono aggiungere parametri ridondanti senza cambiare nulla.",
+      "words": [
+        {
+          "text": "e",
+          "start": 36.619,
+          "end": 36.659
+        },
+        {
+          "text": "si",
+          "start": 36.699,
+          "end": 36.759
+        },
+        {
+          "text": "possono",
+          "start": 36.799,
+          "end": 37.059
+        },
+        {
+          "text": "aggiungere",
+          "start": 37.099,
+          "end": 37.519
+        },
+        {
+          "text": "parametri",
+          "start": 37.559,
+          "end": 37.998
+        },
+        {
+          "text": "ridondanti",
+          "start": 38.059,
+          "end": 38.719
+        },
+        {
+          "text": "senza",
+          "start": 38.858,
+          "end": 39.079
+        },
+        {
+          "text": "cambiare",
+          "start": 39.119,
+          "end": 39.439
+        },
+        {
+          "text": "nulla.",
+          "start": 39.498,
+          "end": 39.759
+        }
+      ]
+    },
+    {
+      "start": 40.299,
+      "end": 45.5,
+      "text": "Addirittura esistono modelli con un solo parametro e VC-dimension infinita,",
+      "words": [
+        {
+          "text": "Addirittura",
+          "start": 40.299,
+          "end": 40.919
+        },
+        {
+          "text": "esistono",
+          "start": 41.04,
+          "end": 41.46
+        },
+        {
+          "text": "modelli",
+          "start": 41.5,
+          "end": 41.88
+        },
+        {
+          "text": "con",
+          "start": 41.96,
+          "end": 42.099
+        },
+        {
+          "text": "un",
+          "start": 42.16,
+          "end": 42.26
+        },
+        {
+          "text": "solo",
+          "start": 42.44,
+          "end": 42.78
+        },
+        {
+          "text": "parametro",
+          "start": 42.86,
+          "end": 43.44
+        },
+        {
+          "text": "e",
+          "start": 43.56,
+          "end": 43.6
+        },
+        {
+          "text": "VC-dimension",
+          "start": 43.68,
+          "end": 44.5
+        },
+        {
+          "text": "infinita,",
+          "start": 44.78,
+          "end": 45.5
+        }
+      ]
+    },
+    {
+      "start": 45.86,
+      "end": 48.701,
+      "text": "come il segno di seno di alfa x:",
+      "words": [
+        {
+          "text": "come",
+          "start": 45.86,
+          "end": 46.06
+        },
+        {
+          "text": "il",
+          "start": 46.239,
+          "end": 46.36
+        },
+        {
+          "text": "segno",
+          "start": 46.56,
+          "end": 47.02
+        },
+        {
+          "text": "di",
+          "start": 47.12,
+          "end": 47.22
+        },
+        {
+          "text": "seno",
+          "start": 47.381,
+          "end": 47.721
+        },
+        {
+          "text": "di",
+          "start": 47.801,
+          "end": 47.881
+        },
+        {
+          "text": "alfa",
+          "start": 48.12,
+          "end": 48.441
+        },
+        {
+          "text": "x:",
+          "start": 48.661,
+          "end": 48.701
+        }
+      ]
+    },
+    {
+      "start": 49.301,
+      "end": 54.322,
+      "text": "aumentando la frequenza alfa si frammentano insiemi arbitrariamente grandi.",
+      "words": [
+        {
+          "text": "aumentando",
+          "start": 49.301,
+          "end": 49.841
+        },
+        {
+          "text": "la",
+          "start": 49.881,
+          "end": 49.921
+        },
+        {
+          "text": "frequenza",
+          "start": 49.961,
+          "end": 50.441
+        },
+        {
+          "text": "alfa",
+          "start": 50.641,
+          "end": 50.98
+        },
+        {
+          "text": "si",
+          "start": 51.341,
+          "end": 51.421
+        },
+        {
+          "text": "frammentano",
+          "start": 51.48,
+          "end": 52.061
+        },
+        {
+          "text": "insiemi",
+          "start": 52.141,
+          "end": 52.601
+        },
+        {
+          "text": "arbitrariamente",
+          "start": 52.801,
+          "end": 53.882
+        },
+        {
+          "text": "grandi.",
+          "start": 53.922,
+          "end": 54.322
+        }
+      ]
+    },
+    {
+      "start": 54.842,
+      "end": 62.583,
+      "text": "Anche il 1-nearest neighbor ha VC-dimension infinita, perché classifica senza errori qualunque etichettatura del training",
+      "words": [
+        {
+          "text": "Anche",
+          "start": 54.842,
+          "end": 55.082
+        },
+        {
+          "text": "il",
+          "start": 55.142,
+          "end": 55.221
+        },
+        {
+          "text": "1-nearest",
+          "start": 55.842,
+          "end": 56.282
+        },
+        {
+          "text": "neighbor",
+          "start": 56.382,
+          "end": 56.802
+        },
+        {
+          "text": "ha",
+          "start": 56.942,
+          "end": 56.982
+        },
+        {
+          "text": "VC-dimension",
+          "start": 57.082,
+          "end": 57.782
+        },
+        {
+          "text": "infinita,",
+          "start": 57.822,
+          "end": 58.302
+        },
+        {
+          "text": "perché",
+          "start": 58.622,
+          "end": 58.861
+        },
+        {
+          "text": "classifica",
+          "start": 58.982,
+          "end": 59.742
+        },
+        {
+          "text": "senza",
+          "start": 59.902,
+          "end": 60.223
+        },
+        {
+          "text": "errori",
+          "start": 60.283,
+          "end": 60.643
+        },
+        {
+          "text": "qualunque",
+          "start": 60.823,
+          "end": 61.383
+        },
+        {
+          "text": "etichettatura",
+          "start": 61.423,
+          "end": 62.043
+        },
+        {
+          "text": "del",
+          "start": 62.102,
+          "end": 62.223
+        },
+        {
+          "text": "training",
+          "start": 62.263,
+          "end": 62.583
+        }
+      ]
+    },
+    {
+      "start": 62.643,
+      "end": 62.903,
+      "text": "set.",
+      "words": [
+        {
+          "text": "set.",
+          "start": 62.643,
+          "end": 62.903
+        }
+      ]
+    }
+  ]
+}

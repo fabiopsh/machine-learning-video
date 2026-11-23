@@ -1,0 +1,1321 @@
+{
+  "duration": 89.636,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.54,
+      "text": "Anche il K-NN possiede un bias induttivo preciso, spesso sottovalutato,",
+      "words": [
+        {
+          "text": "Anche",
+          "start": 0.08,
+          "end": 0.3
+        },
+        {
+          "text": "il",
+          "start": 0.34,
+          "end": 0.4
+        },
+        {
+          "text": "K-NN",
+          "start": 0.46,
+          "end": 1.04
+        },
+        {
+          "text": "possiede",
+          "start": 1.14,
+          "end": 1.52
+        },
+        {
+          "text": "un",
+          "start": 1.58,
+          "end": 1.64
+        },
+        {
+          "text": "bias",
+          "start": 1.72,
+          "end": 2.1
+        },
+        {
+          "text": "induttivo",
+          "start": 2.16,
+          "end": 2.62
+        },
+        {
+          "text": "preciso,",
+          "start": 2.66,
+          "end": 3.16
+        },
+        {
+          "text": "spesso",
+          "start": 3.44,
+          "end": 3.74
+        },
+        {
+          "text": "sottovalutato,",
+          "start": 3.8,
+          "end": 4.54
+        }
+      ]
+    },
+    {
+      "start": 4.821,
+      "end": 6.861,
+      "text": "basato su due assunzioni fondamentali.",
+      "words": [
+        {
+          "text": "basato",
+          "start": 4.821,
+          "end": 5.141
+        },
+        {
+          "text": "su",
+          "start": 5.261,
+          "end": 5.341
+        },
+        {
+          "text": "due",
+          "start": 5.421,
+          "end": 5.581
+        },
+        {
+          "text": "assunzioni",
+          "start": 5.621,
+          "end": 6.121
+        },
+        {
+          "text": "fondamentali.",
+          "start": 6.161,
+          "end": 6.861
+        }
+      ]
+    },
+    {
+      "start": 7.601,
+      "end": 11.981,
+      "text": "Prima: la metrica di distanza scelta stabilisce quali esempi siano simili,",
+      "words": [
+        {
+          "text": "Prima:",
+          "start": 7.601,
+          "end": 7.881
+        },
+        {
+          "text": "la",
+          "start": 8.361,
+          "end": 8.421
+        },
+        {
+          "text": "metrica",
+          "start": 8.461,
+          "end": 8.821
+        },
+        {
+          "text": "di",
+          "start": 8.861,
+          "end": 8.921
+        },
+        {
+          "text": "distanza",
+          "start": 8.981,
+          "end": 9.381
+        },
+        {
+          "text": "scelta",
+          "start": 9.461,
+          "end": 9.841
+        },
+        {
+          "text": "stabilisce",
+          "start": 9.901,
+          "end": 10.401
+        },
+        {
+          "text": "quali",
+          "start": 10.481,
+          "end": 10.761
+        },
+        {
+          "text": "esempi",
+          "start": 10.801,
+          "end": 11.201
+        },
+        {
+          "text": "siano",
+          "start": 11.281,
+          "end": 11.501
+        },
+        {
+          "text": "simili,",
+          "start": 11.581,
+          "end": 11.981
+        }
+      ]
+    },
+    {
+      "start": 12.321,
+      "end": 16.002,
+      "text": "assumendo che punti vicini secondo quella metrica condividano la stessa classe.",
+      "words": [
+        {
+          "text": "assumendo",
+          "start": 12.321,
+          "end": 12.741
+        },
+        {
+          "text": "che",
+          "start": 12.801,
+          "end": 12.881
+        },
+        {
+          "text": "punti",
+          "start": 12.921,
+          "end": 13.141
+        },
+        {
+          "text": "vicini",
+          "start": 13.181,
+          "end": 13.501
+        },
+        {
+          "text": "secondo",
+          "start": 13.541,
+          "end": 13.861
+        },
+        {
+          "text": "quella",
+          "start": 13.901,
+          "end": 14.101
+        },
+        {
+          "text": "metrica",
+          "start": 14.141,
+          "end": 14.542
+        },
+        {
+          "text": "condividano",
+          "start": 14.662,
+          "end": 15.202
+        },
+        {
+          "text": "la",
+          "start": 15.242,
+          "end": 15.322
+        },
+        {
+          "text": "stessa",
+          "start": 15.342,
+          "end": 15.582
+        },
+        {
+          "text": "classe.",
+          "start": 15.622,
+          "end": 16.002
+        }
+      ]
+    },
+    {
+      "start": 16.902,
+      "end": 20.802,
+      "text": "Oltre alla distanza euclidea esistono metriche ad hoc per dati simbolici,",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 16.902,
+          "end": 17.122
+        },
+        {
+          "text": "alla",
+          "start": 17.162,
+          "end": 17.282
+        },
+        {
+          "text": "distanza",
+          "start": 17.322,
+          "end": 17.662
+        },
+        {
+          "text": "euclidea",
+          "start": 17.702,
+          "end": 18.262
+        },
+        {
+          "text": "esistono",
+          "start": 18.462,
+          "end": 18.862
+        },
+        {
+          "text": "metriche",
+          "start": 18.922,
+          "end": 19.322
+        },
+        {
+          "text": "ad",
+          "start": 19.362,
+          "end": 19.442
+        },
+        {
+          "text": "hoc",
+          "start": 19.482,
+          "end": 19.682
+        },
+        {
+          "text": "per",
+          "start": 19.802,
+          "end": 19.922
+        },
+        {
+          "text": "dati",
+          "start": 19.962,
+          "end": 20.142
+        },
+        {
+          "text": "simbolici,",
+          "start": 20.182,
+          "end": 20.802
+        }
+      ]
+    },
+    {
+      "start": 21.022,
+      "end": 23.963,
+      "text": "come la distanza di Hamming tra stringhe di uguale lunghezza,",
+      "words": [
+        {
+          "text": "come",
+          "start": 21.022,
+          "end": 21.182
+        },
+        {
+          "text": "la",
+          "start": 21.362,
+          "end": 21.422
+        },
+        {
+          "text": "distanza",
+          "start": 21.462,
+          "end": 21.842
+        },
+        {
+          "text": "di",
+          "start": 21.882,
+          "end": 21.942
+        },
+        {
+          "text": "Hamming",
+          "start": 22.002,
+          "end": 22.382
+        },
+        {
+          "text": "tra",
+          "start": 22.482,
+          "end": 22.582
+        },
+        {
+          "text": "stringhe",
+          "start": 22.642,
+          "end": 22.962
+        },
+        {
+          "text": "di",
+          "start": 23.022,
+          "end": 23.062
+        },
+        {
+          "text": "uguale",
+          "start": 23.122,
+          "end": 23.382
+        },
+        {
+          "text": "lunghezza,",
+          "start": 23.442,
+          "end": 23.963
+        }
+      ]
+    },
+    {
+      "start": 24.283,
+      "end": 26.563,
+      "text": "che conta in quante posizioni differiscono.",
+      "words": [
+        {
+          "text": "che",
+          "start": 24.283,
+          "end": 24.363
+        },
+        {
+          "text": "conta",
+          "start": 24.403,
+          "end": 24.663
+        },
+        {
+          "text": "in",
+          "start": 24.843,
+          "end": 24.943
+        },
+        {
+          "text": "quante",
+          "start": 25.043,
+          "end": 25.403
+        },
+        {
+          "text": "posizioni",
+          "start": 25.443,
+          "end": 25.883
+        },
+        {
+          "text": "differiscono.",
+          "start": 25.923,
+          "end": 26.563
+        }
+      ]
+    },
+    {
+      "start": 27.443,
+      "end": 30.783,
+      "text": "Seconda: l'assunzione di località e smoothness locale.",
+      "words": [
+        {
+          "text": "Seconda:",
+          "start": 27.443,
+          "end": 27.863
+        },
+        {
+          "text": "l'assunzione",
+          "start": 28.223,
+          "end": 28.743
+        },
+        {
+          "text": "di",
+          "start": 28.783,
+          "end": 28.843
+        },
+        {
+          "text": "località",
+          "start": 28.903,
+          "end": 29.363
+        },
+        {
+          "text": "e",
+          "start": 29.543,
+          "end": 29.583
+        },
+        {
+          "text": "smoothness",
+          "start": 29.663,
+          "end": 30.263
+        },
+        {
+          "text": "locale.",
+          "start": 30.363,
+          "end": 30.783
+        }
+      ]
+    },
+    {
+      "start": 31.843,
+      "end": 34.384,
+      "text": "Da qui nasce la forte fragilità alla scala delle variabili:",
+      "words": [
+        {
+          "text": "Da",
+          "start": 31.843,
+          "end": 31.903
+        },
+        {
+          "text": "qui",
+          "start": 31.963,
+          "end": 32.063
+        },
+        {
+          "text": "nasce",
+          "start": 32.123,
+          "end": 32.343
+        },
+        {
+          "text": "la",
+          "start": 32.383,
+          "end": 32.443
+        },
+        {
+          "text": "forte",
+          "start": 32.483,
+          "end": 32.723
+        },
+        {
+          "text": "fragilità",
+          "start": 32.763,
+          "end": 33.223
+        },
+        {
+          "text": "alla",
+          "start": 33.283,
+          "end": 33.424
+        },
+        {
+          "text": "scala",
+          "start": 33.444,
+          "end": 33.664
+        },
+        {
+          "text": "delle",
+          "start": 33.704,
+          "end": 33.864
+        },
+        {
+          "text": "variabili:",
+          "start": 33.884,
+          "end": 34.384
+        }
+      ]
+    },
+    {
+      "start": 34.844,
+      "end": 39.204,
+      "text": "riscalare i dati — ad esempio a media zero e varianza unitaria — equivale a",
+      "words": [
+        {
+          "text": "riscalare",
+          "start": 34.844,
+          "end": 35.264
+        },
+        {
+          "text": "i",
+          "start": 35.304,
+          "end": 35.344
+        },
+        {
+          "text": "dati",
+          "start": 35.364,
+          "end": 35.684
+        },
+        {
+          "text": "—",
+          "start": 35.684,
+          "end": 35.834
+        },
+        {
+          "text": "ad",
+          "start": 35.744,
+          "end": 35.824
+        },
+        {
+          "text": "esempio",
+          "start": 35.864,
+          "end": 36.224
+        },
+        {
+          "text": "a",
+          "start": 36.364,
+          "end": 36.404
+        },
+        {
+          "text": "media",
+          "start": 36.504,
+          "end": 36.764
+        },
+        {
+          "text": "zero",
+          "start": 36.904,
+          "end": 37.164
+        },
+        {
+          "text": "e",
+          "start": 37.224,
+          "end": 37.264
+        },
+        {
+          "text": "varianza",
+          "start": 37.304,
+          "end": 37.704
+        },
+        {
+          "text": "unitaria",
+          "start": 37.744,
+          "end": 38.264
+        },
+        {
+          "text": "—",
+          "start": 38.264,
+          "end": 38.414
+        },
+        {
+          "text": "equivale",
+          "start": 38.764,
+          "end": 39.124
+        },
+        {
+          "text": "a",
+          "start": 39.164,
+          "end": 39.204
+        }
+      ]
+    },
+    {
+      "start": 39.244,
+      "end": 43.645,
+      "text": "cambiare metrica, e può ribaltare completamente la scelta del vicino più prossimo.",
+      "words": [
+        {
+          "text": "cambiare",
+          "start": 39.244,
+          "end": 39.584
+        },
+        {
+          "text": "metrica,",
+          "start": 39.624,
+          "end": 40.084
+        },
+        {
+          "text": "e",
+          "start": 40.324,
+          "end": 40.364
+        },
+        {
+          "text": "può",
+          "start": 40.404,
+          "end": 40.524
+        },
+        {
+          "text": "ribaltare",
+          "start": 40.664,
+          "end": 41.164
+        },
+        {
+          "text": "completamente",
+          "start": 41.244,
+          "end": 42.004
+        },
+        {
+          "text": "la",
+          "start": 42.044,
+          "end": 42.124
+        },
+        {
+          "text": "scelta",
+          "start": 42.164,
+          "end": 42.484
+        },
+        {
+          "text": "del",
+          "start": 42.524,
+          "end": 42.644
+        },
+        {
+          "text": "vicino",
+          "start": 42.664,
+          "end": 42.945
+        },
+        {
+          "text": "più",
+          "start": 43.005,
+          "end": 43.105
+        },
+        {
+          "text": "prossimo.",
+          "start": 43.165,
+          "end": 43.645
+        }
+      ]
+    },
+    {
+      "start": 44.365,
+      "end": 45.405,
+      "text": "Guarda lo schema a destra:",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 44.365,
+          "end": 44.605
+        },
+        {
+          "text": "lo",
+          "start": 44.645,
+          "end": 44.705
+        },
+        {
+          "text": "schema",
+          "start": 44.725,
+          "end": 44.945
+        },
+        {
+          "text": "a",
+          "start": 44.985,
+          "end": 45.025
+        },
+        {
+          "text": "destra:",
+          "start": 45.065,
+          "end": 45.405
+        }
+      ]
+    },
+    {
+      "start": 45.965,
+      "end": 50.645,
+      "text": "dimezzando la scala della sola coordinata x uno, il vicino più prossimo della croce x",
+      "words": [
+        {
+          "text": "dimezzando",
+          "start": 45.965,
+          "end": 46.525
+        },
+        {
+          "text": "la",
+          "start": 46.585,
+          "end": 46.645
+        },
+        {
+          "text": "scala",
+          "start": 46.685,
+          "end": 46.905
+        },
+        {
+          "text": "della",
+          "start": 46.945,
+          "end": 47.105
+        },
+        {
+          "text": "sola",
+          "start": 47.145,
+          "end": 47.305
+        },
+        {
+          "text": "coordinata",
+          "start": 47.365,
+          "end": 47.845
+        },
+        {
+          "text": "x",
+          "start": 48.005,
+          "end": 48.045
+        },
+        {
+          "text": "uno,",
+          "start": 48.225,
+          "end": 48.425
+        },
+        {
+          "text": "il",
+          "start": 48.885,
+          "end": 48.965
+        },
+        {
+          "text": "vicino",
+          "start": 49.005,
+          "end": 49.285
+        },
+        {
+          "text": "più",
+          "start": 49.345,
+          "end": 49.445
+        },
+        {
+          "text": "prossimo",
+          "start": 49.505,
+          "end": 49.905
+        },
+        {
+          "text": "della",
+          "start": 49.945,
+          "end": 50.105
+        },
+        {
+          "text": "croce",
+          "start": 50.145,
+          "end": 50.405
+        },
+        {
+          "text": "x",
+          "start": 50.605,
+          "end": 50.645
+        }
+      ]
+    },
+    {
+      "start": 50.945,
+      "end": 53.006,
+      "text": "passa dal punto nero al punto rosso.",
+      "words": [
+        {
+          "text": "passa",
+          "start": 50.945,
+          "end": 51.185
+        },
+        {
+          "text": "dal",
+          "start": 51.245,
+          "end": 51.385
+        },
+        {
+          "text": "punto",
+          "start": 51.465,
+          "end": 51.765
+        },
+        {
+          "text": "nero",
+          "start": 51.825,
+          "end": 52.065
+        },
+        {
+          "text": "al",
+          "start": 52.225,
+          "end": 52.325
+        },
+        {
+          "text": "punto",
+          "start": 52.385,
+          "end": 52.626
+        },
+        {
+          "text": "rosso.",
+          "start": 52.666,
+          "end": 53.006
+        }
+      ]
+    },
+    {
+      "start": 53.806,
+      "end": 57.246,
+      "text": "Il K-NN è sensibile persino a un pre-processing elementare.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 53.806,
+          "end": 53.886
+        },
+        {
+          "text": "K-NN",
+          "start": 53.926,
+          "end": 54.546
+        },
+        {
+          "text": "è",
+          "start": 54.666,
+          "end": 54.706
+        },
+        {
+          "text": "sensibile",
+          "start": 54.786,
+          "end": 55.306
+        },
+        {
+          "text": "persino",
+          "start": 55.346,
+          "end": 55.686
+        },
+        {
+          "text": "a",
+          "start": 55.726,
+          "end": 55.766
+        },
+        {
+          "text": "un",
+          "start": 55.806,
+          "end": 55.866
+        },
+        {
+          "text": "pre-processing",
+          "start": 55.906,
+          "end": 56.626
+        },
+        {
+          "text": "elementare.",
+          "start": 56.666,
+          "end": 57.246
+        }
+      ]
+    },
+    {
+      "start": 58.326,
+      "end": 61.686,
+      "text": "Esiste poi un pesante costo computazionale e di memoria:",
+      "words": [
+        {
+          "text": "Esiste",
+          "start": 58.326,
+          "end": 58.646
+        },
+        {
+          "text": "poi",
+          "start": 58.706,
+          "end": 58.886
+        },
+        {
+          "text": "un",
+          "start": 58.986,
+          "end": 59.066
+        },
+        {
+          "text": "pesante",
+          "start": 59.126,
+          "end": 59.566
+        },
+        {
+          "text": "costo",
+          "start": 59.606,
+          "end": 59.886
+        },
+        {
+          "text": "computazionale",
+          "start": 59.926,
+          "end": 60.806
+        },
+        {
+          "text": "e",
+          "start": 61.006,
+          "end": 61.046
+        },
+        {
+          "text": "di",
+          "start": 61.106,
+          "end": 61.166
+        },
+        {
+          "text": "memoria:",
+          "start": 61.226,
+          "end": 61.686
+        }
+      ]
+    },
+    {
+      "start": 62.147,
+      "end": 65.927,
+      "text": "essendo un metodo lazy, tutto il lavoro è spostato nella fase di predizione,",
+      "words": [
+        {
+          "text": "essendo",
+          "start": 62.147,
+          "end": 62.467
+        },
+        {
+          "text": "un",
+          "start": 62.507,
+          "end": 62.547
+        },
+        {
+          "text": "metodo",
+          "start": 62.587,
+          "end": 62.887
+        },
+        {
+          "text": "lazy,",
+          "start": 62.947,
+          "end": 63.267
+        },
+        {
+          "text": "tutto",
+          "start": 63.527,
+          "end": 63.767
+        },
+        {
+          "text": "il",
+          "start": 63.807,
+          "end": 63.867
+        },
+        {
+          "text": "lavoro",
+          "start": 63.907,
+          "end": 64.147
+        },
+        {
+          "text": "è",
+          "start": 64.187,
+          "end": 64.227
+        },
+        {
+          "text": "spostato",
+          "start": 64.227,
+          "end": 64.647
+        },
+        {
+          "text": "nella",
+          "start": 64.707,
+          "end": 64.887
+        },
+        {
+          "text": "fase",
+          "start": 64.927,
+          "end": 65.127
+        },
+        {
+          "text": "di",
+          "start": 65.167,
+          "end": 65.227
+        },
+        {
+          "text": "predizione,",
+          "start": 65.267,
+          "end": 65.927
+        }
+      ]
+    },
+    {
+      "start": 66.207,
+      "end": 70.487,
+      "text": "dove per ogni nuova query si calcolano le distanze da tutti gli l esempi memorizzati,",
+      "words": [
+        {
+          "text": "dove",
+          "start": 66.207,
+          "end": 66.387
+        },
+        {
+          "text": "per",
+          "start": 66.467,
+          "end": 66.587
+        },
+        {
+          "text": "ogni",
+          "start": 66.627,
+          "end": 66.787
+        },
+        {
+          "text": "nuova",
+          "start": 66.827,
+          "end": 67.027
+        },
+        {
+          "text": "query",
+          "start": 67.087,
+          "end": 67.367
+        },
+        {
+          "text": "si",
+          "start": 67.427,
+          "end": 67.507
+        },
+        {
+          "text": "calcolano",
+          "start": 67.547,
+          "end": 68.027
+        },
+        {
+          "text": "le",
+          "start": 68.067,
+          "end": 68.147
+        },
+        {
+          "text": "distanze",
+          "start": 68.187,
+          "end": 68.647
+        },
+        {
+          "text": "da",
+          "start": 68.687,
+          "end": 68.747
+        },
+        {
+          "text": "tutti",
+          "start": 68.807,
+          "end": 69.027
+        },
+        {
+          "text": "gli",
+          "start": 69.067,
+          "end": 69.167
+        },
+        {
+          "text": "l",
+          "start": 69.307,
+          "end": 69.34700000000001
+        },
+        {
+          "text": "esempi",
+          "start": 69.407,
+          "end": 69.727
+        },
+        {
+          "text": "memorizzati,",
+          "start": 69.787,
+          "end": 70.487
+        }
+      ]
+    },
+    {
+      "start": 70.647,
+      "end": 72.128,
+      "text": "in tempo proporzionale a l.",
+      "words": [
+        {
+          "text": "in",
+          "start": 70.647,
+          "end": 70.727
+        },
+        {
+          "text": "tempo",
+          "start": 70.787,
+          "end": 71.067
+        },
+        {
+          "text": "proporzionale",
+          "start": 71.127,
+          "end": 71.788
+        },
+        {
+          "text": "a",
+          "start": 71.828,
+          "end": 71.86800000000001
+        },
+        {
+          "text": "l.",
+          "start": 72.088,
+          "end": 72.128
+        }
+      ]
+    },
+    {
+      "start": 72.888,
+      "end": 78.328,
+      "text": "Per mitigarlo si usano strutture di indicizzazione degli esempi o algoritmi di ricerca approssimata dei",
+      "words": [
+        {
+          "text": "Per",
+          "start": 72.888,
+          "end": 73.008
+        },
+        {
+          "text": "mitigarlo",
+          "start": 73.048,
+          "end": 73.628
+        },
+        {
+          "text": "si",
+          "start": 73.788,
+          "end": 73.848
+        },
+        {
+          "text": "usano",
+          "start": 73.928,
+          "end": 74.148
+        },
+        {
+          "text": "strutture",
+          "start": 74.208,
+          "end": 74.688
+        },
+        {
+          "text": "di",
+          "start": 74.728,
+          "end": 74.788
+        },
+        {
+          "text": "indicizzazione",
+          "start": 74.828,
+          "end": 75.548
+        },
+        {
+          "text": "degli",
+          "start": 75.588,
+          "end": 75.768
+        },
+        {
+          "text": "esempi",
+          "start": 75.788,
+          "end": 76.208
+        },
+        {
+          "text": "o",
+          "start": 76.568,
+          "end": 76.608
+        },
+        {
+          "text": "algoritmi",
+          "start": 76.668,
+          "end": 77.168
+        },
+        {
+          "text": "di",
+          "start": 77.228,
+          "end": 77.288
+        },
+        {
+          "text": "ricerca",
+          "start": 77.328,
+          "end": 77.648
+        },
+        {
+          "text": "approssimata",
+          "start": 77.668,
+          "end": 78.188
+        },
+        {
+          "text": "dei",
+          "start": 78.228,
+          "end": 78.328
+        }
+      ]
+    },
+    {
+      "start": 78.368,
+      "end": 82.289,
+      "text": "vicini, che rinunciano all'esattezza assoluta in cambio di grande velocità.",
+      "words": [
+        {
+          "text": "vicini,",
+          "start": 78.368,
+          "end": 78.748
+        },
+        {
+          "text": "che",
+          "start": 79.088,
+          "end": 79.168
+        },
+        {
+          "text": "rinunciano",
+          "start": 79.208,
+          "end": 79.648
+        },
+        {
+          "text": "all'esattezza",
+          "start": 79.708,
+          "end": 80.308
+        },
+        {
+          "text": "assoluta",
+          "start": 80.348,
+          "end": 80.808
+        },
+        {
+          "text": "in",
+          "start": 80.888,
+          "end": 80.968
+        },
+        {
+          "text": "cambio",
+          "start": 81.008,
+          "end": 81.309
+        },
+        {
+          "text": "di",
+          "start": 81.369,
+          "end": 81.449
+        },
+        {
+          "text": "grande",
+          "start": 81.509,
+          "end": 81.809
+        },
+        {
+          "text": "velocità.",
+          "start": 81.849,
+          "end": 82.289
+        }
+      ]
+    },
+    {
+      "start": 83.389,
+      "end": 86.759,
+      "text": "Anche il costo in spazio è alto — va tenuto tutto il training set —",
+      "words": [
+        {
+          "text": "Anche",
+          "start": 83.389,
+          "end": 83.589
+        },
+        {
+          "text": "il",
+          "start": 83.629,
+          "end": 83.689
+        },
+        {
+          "text": "costo",
+          "start": 83.709,
+          "end": 83.949
+        },
+        {
+          "text": "in",
+          "start": 83.989,
+          "end": 84.049
+        },
+        {
+          "text": "spazio",
+          "start": 84.049,
+          "end": 84.429
+        },
+        {
+          "text": "è",
+          "start": 84.489,
+          "end": 84.52900000000001
+        },
+        {
+          "text": "alto",
+          "start": 84.589,
+          "end": 84.849
+        },
+        {
+          "text": "—",
+          "start": 84.849,
+          "end": 84.999
+        },
+        {
+          "text": "va",
+          "start": 85.229,
+          "end": 85.289
+        },
+        {
+          "text": "tenuto",
+          "start": 85.349,
+          "end": 85.629
+        },
+        {
+          "text": "tutto",
+          "start": 85.689,
+          "end": 85.889
+        },
+        {
+          "text": "il",
+          "start": 85.929,
+          "end": 85.96900000000001
+        },
+        {
+          "text": "training",
+          "start": 85.989,
+          "end": 86.289
+        },
+        {
+          "text": "set",
+          "start": 86.349,
+          "end": 86.609
+        },
+        {
+          "text": "—",
+          "start": 86.609,
+          "end": 86.759
+        }
+      ]
+    },
+    {
+      "start": 87.089,
+      "end": 89.469,
+      "text": "e l'interpretabilità resta molto scarsa.",
+      "words": [
+        {
+          "text": "e",
+          "start": 87.089,
+          "end": 87.129
+        },
+        {
+          "text": "l'interpretabilità",
+          "start": 87.289,
+          "end": 88.209
+        },
+        {
+          "text": "resta",
+          "start": 88.489,
+          "end": 88.709
+        },
+        {
+          "text": "molto",
+          "start": 88.749,
+          "end": 88.989
+        },
+        {
+          "text": "scarsa.",
+          "start": 89.049,
+          "end": 89.469
+        }
+      ]
+    }
+  ]
+}

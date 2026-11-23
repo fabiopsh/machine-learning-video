@@ -1,0 +1,662 @@
+{
+  "duration": 51.237,
+  "segments": [
+    {
+      "start": 1.361,
+      "end": 4.421,
+      "text": "Chiudiamo i modelli lineari riassumendo i cinque punti essenziali.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 1.361,
+          "end": 1.701
+        },
+        {
+          "text": "i",
+          "start": 1.741,
+          "end": 1.7810000000000001
+        },
+        {
+          "text": "modelli",
+          "start": 1.801,
+          "end": 2.101
+        },
+        {
+          "text": "lineari",
+          "start": 2.161,
+          "end": 2.581
+        },
+        {
+          "text": "riassumendo",
+          "start": 2.641,
+          "end": 3.161
+        },
+        {
+          "text": "i",
+          "start": 3.201,
+          "end": 3.241
+        },
+        {
+          "text": "cinque",
+          "start": 3.261,
+          "end": 3.521
+        },
+        {
+          "text": "punti",
+          "start": 3.561,
+          "end": 3.781
+        },
+        {
+          "text": "essenziali.",
+          "start": 3.841,
+          "end": 4.421
+        }
+      ]
+    },
+    {
+      "start": 5.201,
+      "end": 10.322,
+      "text": "Primo: nei minimi quadrati si minimizza la norma quadra di d meno X w,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.201,
+          "end": 5.461
+        },
+        {
+          "text": "nei",
+          "start": 6.181,
+          "end": 6.301
+        },
+        {
+          "text": "minimi",
+          "start": 6.341,
+          "end": 6.601
+        },
+        {
+          "text": "quadrati",
+          "start": 6.661,
+          "end": 7.102
+        },
+        {
+          "text": "si",
+          "start": 7.162,
+          "end": 7.242
+        },
+        {
+          "text": "minimizza",
+          "start": 7.302,
+          "end": 7.762
+        },
+        {
+          "text": "la",
+          "start": 7.842,
+          "end": 7.882
+        },
+        {
+          "text": "norma",
+          "start": 7.962,
+          "end": 8.202
+        },
+        {
+          "text": "quadra",
+          "start": 8.262,
+          "end": 8.602
+        },
+        {
+          "text": "di",
+          "start": 8.782,
+          "end": 8.882
+        },
+        {
+          "text": "d",
+          "start": 9.002,
+          "end": 9.042
+        },
+        {
+          "text": "meno",
+          "start": 9.362,
+          "end": 9.542
+        },
+        {
+          "text": "X",
+          "start": 9.742,
+          "end": 9.782
+        },
+        {
+          "text": "w,",
+          "start": 10.282,
+          "end": 10.322
+        }
+      ]
+    },
+    {
+      "start": 10.842,
+      "end": 14.742,
+      "text": "con gradiente meno due per la somma di delta con p per x con p",
+      "words": [
+        {
+          "text": "con",
+          "start": 10.842,
+          "end": 10.982
+        },
+        {
+          "text": "gradiente",
+          "start": 11.022,
+          "end": 11.562
+        },
+        {
+          "text": "meno",
+          "start": 11.662,
+          "end": 11.842
+        },
+        {
+          "text": "due",
+          "start": 11.922,
+          "end": 12.082
+        },
+        {
+          "text": "per",
+          "start": 12.162,
+          "end": 12.282
+        },
+        {
+          "text": "la",
+          "start": 12.322,
+          "end": 12.382
+        },
+        {
+          "text": "somma",
+          "start": 12.422,
+          "end": 12.642
+        },
+        {
+          "text": "di",
+          "start": 12.682,
+          "end": 12.762
+        },
+        {
+          "text": "delta",
+          "start": 12.802,
+          "end": 13.042
+        },
+        {
+          "text": "con",
+          "start": 13.102,
+          "end": 13.242
+        },
+        {
+          "text": "p",
+          "start": 13.302,
+          "end": 13.342
+        },
+        {
+          "text": "per",
+          "start": 13.662,
+          "end": 13.822
+        },
+        {
+          "text": "x",
+          "start": 14.122,
+          "end": 14.162
+        },
+        {
+          "text": "con",
+          "start": 14.482,
+          "end": 14.622
+        },
+        {
+          "text": "p",
+          "start": 14.702,
+          "end": 14.742
+        }
+      ]
+    },
+    {
+      "start": 14.882,
+      "end": 15.323,
+      "text": "virgola j.",
+      "words": [
+        {
+          "text": "virgola",
+          "start": 14.882,
+          "end": 15.223
+        },
+        {
+          "text": "j.",
+          "start": 15.283,
+          "end": 15.323
+        }
+      ]
+    },
+    {
+      "start": 16.763,
+      "end": 21.063,
+      "text": "Secondo: la soluzione diretta risolve le equazioni normali tramite SVD;",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 16.763,
+          "end": 17.203
+        },
+        {
+          "text": "la",
+          "start": 17.743,
+          "end": 17.803
+        },
+        {
+          "text": "soluzione",
+          "start": 17.843,
+          "end": 18.283
+        },
+        {
+          "text": "diretta",
+          "start": 18.323,
+          "end": 18.663
+        },
+        {
+          "text": "risolve",
+          "start": 18.703,
+          "end": 19.063
+        },
+        {
+          "text": "le",
+          "start": 19.103,
+          "end": 19.143
+        },
+        {
+          "text": "equazioni",
+          "start": 19.183,
+          "end": 19.623
+        },
+        {
+          "text": "normali",
+          "start": 19.683,
+          "end": 20.083
+        },
+        {
+          "text": "tramite",
+          "start": 20.123,
+          "end": 20.483
+        },
+        {
+          "text": "SVD;",
+          "start": 20.743,
+          "end": 21.063
+        }
+      ]
+    },
+    {
+      "start": 21.763,
+      "end": 26.944,
+      "text": "quella iterativa usa la discesa del gradiente — delta rule — in modalità batch o",
+      "words": [
+        {
+          "text": "quella",
+          "start": 21.763,
+          "end": 22.023
+        },
+        {
+          "text": "iterativa",
+          "start": 22.103,
+          "end": 22.643
+        },
+        {
+          "text": "usa",
+          "start": 22.763,
+          "end": 22.943
+        },
+        {
+          "text": "la",
+          "start": 23.023,
+          "end": 23.084
+        },
+        {
+          "text": "discesa",
+          "start": 23.164,
+          "end": 23.624
+        },
+        {
+          "text": "del",
+          "start": 23.684,
+          "end": 23.804
+        },
+        {
+          "text": "gradiente",
+          "start": 23.864,
+          "end": 24.484
+        },
+        {
+          "text": "—",
+          "start": 24.484,
+          "end": 24.634
+        },
+        {
+          "text": "delta",
+          "start": 24.664,
+          "end": 24.964
+        },
+        {
+          "text": "rule",
+          "start": 25.024,
+          "end": 25.324
+        },
+        {
+          "text": "—",
+          "start": 25.324,
+          "end": 25.474
+        },
+        {
+          "text": "in",
+          "start": 25.704,
+          "end": 25.784
+        },
+        {
+          "text": "modalità",
+          "start": 25.804,
+          "end": 26.204
+        },
+        {
+          "text": "batch",
+          "start": 26.364,
+          "end": 26.704
+        },
+        {
+          "text": "o",
+          "start": 26.904,
+          "end": 26.944
+        }
+      ]
+    },
+    {
+      "start": 27.044,
+      "end": 27.544,
+      "text": "on-line.",
+      "words": [
+        {
+          "text": "on-line.",
+          "start": 27.044,
+          "end": 27.544
+        }
+      ]
+    },
+    {
+      "start": 28.244,
+      "end": 34.325,
+      "text": "Terzo: in classificazione si addestra con LMS sull'uscita lineare e si predice con il segno.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 28.244,
+          "end": 28.604
+        },
+        {
+          "text": "in",
+          "start": 28.884,
+          "end": 28.964
+        },
+        {
+          "text": "classificazione",
+          "start": 29.004,
+          "end": 29.944
+        },
+        {
+          "text": "si",
+          "start": 29.984,
+          "end": 30.044
+        },
+        {
+          "text": "addestra",
+          "start": 30.084,
+          "end": 30.504
+        },
+        {
+          "text": "con",
+          "start": 30.584,
+          "end": 30.724
+        },
+        {
+          "text": "LMS",
+          "start": 30.924,
+          "end": 31.545
+        },
+        {
+          "text": "sull'uscita",
+          "start": 31.745,
+          "end": 32.305
+        },
+        {
+          "text": "lineare",
+          "start": 32.365,
+          "end": 32.845
+        },
+        {
+          "text": "e",
+          "start": 32.945,
+          "end": 32.985
+        },
+        {
+          "text": "si",
+          "start": 33.045,
+          "end": 33.125
+        },
+        {
+          "text": "predice",
+          "start": 33.185,
+          "end": 33.625
+        },
+        {
+          "text": "con",
+          "start": 33.685,
+          "end": 33.805
+        },
+        {
+          "text": "il",
+          "start": 33.845,
+          "end": 33.925
+        },
+        {
+          "text": "segno.",
+          "start": 33.985,
+          "end": 34.325
+        }
+      ]
+    },
+    {
+      "start": 34.965,
+      "end": 40.866,
+      "text": "Quarto: solo problemi linearmente separabili hanno soluzione esatta, e lo XOR non lo è.",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 34.965,
+          "end": 35.385
+        },
+        {
+          "text": "solo",
+          "start": 35.825,
+          "end": 36.125
+        },
+        {
+          "text": "problemi",
+          "start": 36.205,
+          "end": 36.645
+        },
+        {
+          "text": "linearmente",
+          "start": 36.765,
+          "end": 37.385
+        },
+        {
+          "text": "separabili",
+          "start": 37.465,
+          "end": 38.065
+        },
+        {
+          "text": "hanno",
+          "start": 38.105,
+          "end": 38.285
+        },
+        {
+          "text": "soluzione",
+          "start": 38.345,
+          "end": 38.825
+        },
+        {
+          "text": "esatta,",
+          "start": 38.885,
+          "end": 39.306
+        },
+        {
+          "text": "e",
+          "start": 39.586,
+          "end": 39.626
+        },
+        {
+          "text": "lo",
+          "start": 39.746,
+          "end": 39.826
+        },
+        {
+          "text": "XOR",
+          "start": 39.886,
+          "end": 40.226
+        },
+        {
+          "text": "non",
+          "start": 40.486,
+          "end": 40.626
+        },
+        {
+          "text": "lo",
+          "start": 40.666,
+          "end": 40.746
+        },
+        {
+          "text": "è.",
+          "start": 40.826,
+          "end": 40.866
+        }
+      ]
+    },
+    {
+      "start": 41.626,
+      "end": 47.286,
+      "text": "Quinto: l'espansione in basi lineare aumenta la flessibilità restando lineare nei parametri,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 41.626,
+          "end": 42.046
+        },
+        {
+          "text": "l'espansione",
+          "start": 42.526,
+          "end": 43.106
+        },
+        {
+          "text": "in",
+          "start": 43.146,
+          "end": 43.206
+        },
+        {
+          "text": "basi",
+          "start": 43.246,
+          "end": 43.486
+        },
+        {
+          "text": "lineare",
+          "start": 43.606,
+          "end": 44.066
+        },
+        {
+          "text": "aumenta",
+          "start": 44.206,
+          "end": 44.626
+        },
+        {
+          "text": "la",
+          "start": 44.666,
+          "end": 44.726
+        },
+        {
+          "text": "flessibilità",
+          "start": 44.746,
+          "end": 45.366
+        },
+        {
+          "text": "restando",
+          "start": 45.646,
+          "end": 46.026
+        },
+        {
+          "text": "lineare",
+          "start": 46.126,
+          "end": 46.606
+        },
+        {
+          "text": "nei",
+          "start": 46.626,
+          "end": 46.746
+        },
+        {
+          "text": "parametri,",
+          "start": 46.786,
+          "end": 47.286
+        }
+      ]
+    },
+    {
+      "start": 47.667,
+      "end": 50.987,
+      "text": "ma apre la porta all'overfitting, tema del prossimo capitolo.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 47.667,
+          "end": 47.727
+        },
+        {
+          "text": "apre",
+          "start": 47.807,
+          "end": 47.967
+        },
+        {
+          "text": "la",
+          "start": 48.047,
+          "end": 48.107
+        },
+        {
+          "text": "porta",
+          "start": 48.147,
+          "end": 48.447
+        },
+        {
+          "text": "all'overfitting,",
+          "start": 48.487,
+          "end": 49.347
+        },
+        {
+          "text": "tema",
+          "start": 49.707,
+          "end": 49.927
+        },
+        {
+          "text": "del",
+          "start": 49.987,
+          "end": 50.107
+        },
+        {
+          "text": "prossimo",
+          "start": 50.167,
+          "end": 50.527
+        },
+        {
+          "text": "capitolo.",
+          "start": 50.567,
+          "end": 50.987
+        }
+      ]
+    }
+  ]
+}

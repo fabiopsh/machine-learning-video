@@ -1,0 +1,1376 @@
+{
+  "duration": 100.612,
+  "segments": [
+    {
+      "start": 0.531,
+      "end": 4.131,
+      "text": "Chiudiamo con le misure d'errore, partendo dalla classificazione binaria.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.531,
+          "end": 0.891
+        },
+        {
+          "text": "con",
+          "start": 1.071,
+          "end": 1.171
+        },
+        {
+          "text": "le",
+          "start": 1.211,
+          "end": 1.271
+        },
+        {
+          "text": "misure",
+          "start": 1.311,
+          "end": 1.591
+        },
+        {
+          "text": "d'errore,",
+          "start": 1.631,
+          "end": 2.071
+        },
+        {
+          "text": "partendo",
+          "start": 2.351,
+          "end": 2.731
+        },
+        {
+          "text": "dalla",
+          "start": 2.771,
+          "end": 2.951
+        },
+        {
+          "text": "classificazione",
+          "start": 2.971,
+          "end": 3.711
+        },
+        {
+          "text": "binaria.",
+          "start": 3.751,
+          "end": 4.131
+        }
+      ]
+    },
+    {
+      "start": 4.671,
+      "end": 9.572,
+      "text": "Lo strumento base è la matrice di confusione, che incrocia classe reale e classe predetta",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 4.671,
+          "end": 4.731
+        },
+        {
+          "text": "strumento",
+          "start": 4.771,
+          "end": 5.131
+        },
+        {
+          "text": "base",
+          "start": 5.191,
+          "end": 5.451
+        },
+        {
+          "text": "è",
+          "start": 5.591,
+          "end": 5.631
+        },
+        {
+          "text": "la",
+          "start": 5.691,
+          "end": 5.751
+        },
+        {
+          "text": "matrice",
+          "start": 5.811,
+          "end": 6.131
+        },
+        {
+          "text": "di",
+          "start": 6.171,
+          "end": 6.231
+        },
+        {
+          "text": "confusione,",
+          "start": 6.271,
+          "end": 6.851
+        },
+        {
+          "text": "che",
+          "start": 7.151,
+          "end": 7.211
+        },
+        {
+          "text": "incrocia",
+          "start": 7.271,
+          "end": 7.671
+        },
+        {
+          "text": "classe",
+          "start": 7.751,
+          "end": 8.131
+        },
+        {
+          "text": "reale",
+          "start": 8.191,
+          "end": 8.552
+        },
+        {
+          "text": "e",
+          "start": 8.692,
+          "end": 8.732
+        },
+        {
+          "text": "classe",
+          "start": 8.792,
+          "end": 9.092
+        },
+        {
+          "text": "predetta",
+          "start": 9.132,
+          "end": 9.572
+        }
+      ]
+    },
+    {
+      "start": 9.872,
+      "end": 14.752,
+      "text": "contando quattro quantità: veri positivi TP, falsi negativi FN,",
+      "words": [
+        {
+          "text": "contando",
+          "start": 9.872,
+          "end": 10.272
+        },
+        {
+          "text": "quattro",
+          "start": 10.332,
+          "end": 10.632
+        },
+        {
+          "text": "quantità:",
+          "start": 10.672,
+          "end": 11.052
+        },
+        {
+          "text": "veri",
+          "start": 11.612,
+          "end": 11.772
+        },
+        {
+          "text": "positivi",
+          "start": 11.812,
+          "end": 12.312
+        },
+        {
+          "text": "TP,",
+          "start": 12.532,
+          "end": 12.752
+        },
+        {
+          "text": "falsi",
+          "start": 13.272,
+          "end": 13.552
+        },
+        {
+          "text": "negativi",
+          "start": 13.612,
+          "end": 14.072
+        },
+        {
+          "text": "FN,",
+          "start": 14.412,
+          "end": 14.752
+        }
+      ]
+    },
+    {
+      "start": 15.212,
+      "end": 20.353,
+      "text": "falsi positivi FP — che corrispondono ai falsi allarmi — e veri negativi TN.",
+      "words": [
+        {
+          "text": "falsi",
+          "start": 15.212,
+          "end": 15.532
+        },
+        {
+          "text": "positivi",
+          "start": 15.592,
+          "end": 16.072
+        },
+        {
+          "text": "FP",
+          "start": 16.432,
+          "end": 16.652
+        },
+        {
+          "text": "—",
+          "start": 16.652,
+          "end": 16.802
+        },
+        {
+          "text": "che",
+          "start": 16.952,
+          "end": 17.032
+        },
+        {
+          "text": "corrispondono",
+          "start": 17.092,
+          "end": 17.653
+        },
+        {
+          "text": "ai",
+          "start": 17.693,
+          "end": 17.733
+        },
+        {
+          "text": "falsi",
+          "start": 17.773,
+          "end": 18.033
+        },
+        {
+          "text": "allarmi",
+          "start": 18.073,
+          "end": 18.493
+        },
+        {
+          "text": "—",
+          "start": 18.493,
+          "end": 18.643
+        },
+        {
+          "text": "e",
+          "start": 18.913,
+          "end": 18.953
+        },
+        {
+          "text": "veri",
+          "start": 19.073,
+          "end": 19.253
+        },
+        {
+          "text": "negativi",
+          "start": 19.313,
+          "end": 19.733
+        },
+        {
+          "text": "TN.",
+          "start": 19.973,
+          "end": 20.353
+        }
+      ]
+    },
+    {
+      "start": 21.053,
+      "end": 24.433,
+      "text": "Da queste quattro celle si definiscono le quattro metriche fondamentali:",
+      "words": [
+        {
+          "text": "Da",
+          "start": 21.053,
+          "end": 21.113
+        },
+        {
+          "text": "queste",
+          "start": 21.173,
+          "end": 21.393
+        },
+        {
+          "text": "quattro",
+          "start": 21.413,
+          "end": 21.673
+        },
+        {
+          "text": "celle",
+          "start": 21.713,
+          "end": 22.013
+        },
+        {
+          "text": "si",
+          "start": 22.173,
+          "end": 22.253
+        },
+        {
+          "text": "definiscono",
+          "start": 22.293,
+          "end": 22.853
+        },
+        {
+          "text": "le",
+          "start": 22.913,
+          "end": 22.973
+        },
+        {
+          "text": "quattro",
+          "start": 23.033,
+          "end": 23.333
+        },
+        {
+          "text": "metriche",
+          "start": 23.373,
+          "end": 23.713
+        },
+        {
+          "text": "fondamentali:",
+          "start": 23.753,
+          "end": 24.433
+        }
+      ]
+    },
+    {
+      "start": 24.973,
+      "end": 27.594,
+      "text": "l'accuratezza è TP più TN sul totale;",
+      "words": [
+        {
+          "text": "l'accuratezza",
+          "start": 24.973,
+          "end": 25.613
+        },
+        {
+          "text": "è",
+          "start": 25.793,
+          "end": 25.833
+        },
+        {
+          "text": "TP",
+          "start": 25.953,
+          "end": 26.173
+        },
+        {
+          "text": "più",
+          "start": 26.434,
+          "end": 26.554
+        },
+        {
+          "text": "TN",
+          "start": 26.634,
+          "end": 26.894
+        },
+        {
+          "text": "sul",
+          "start": 27.014,
+          "end": 27.154
+        },
+        {
+          "text": "totale;",
+          "start": 27.194,
+          "end": 27.594
+        }
+      ]
+    },
+    {
+      "start": 28.194,
+      "end": 31.254,
+      "text": "la sensibilità, detta anche True Positive rate o recall,",
+      "words": [
+        {
+          "text": "la",
+          "start": 28.194,
+          "end": 28.254
+        },
+        {
+          "text": "sensibilità,",
+          "start": 28.294,
+          "end": 28.854
+        },
+        {
+          "text": "detta",
+          "start": 29.114,
+          "end": 29.294
+        },
+        {
+          "text": "anche",
+          "start": 29.334,
+          "end": 29.534
+        },
+        {
+          "text": "True",
+          "start": 29.614,
+          "end": 29.774
+        },
+        {
+          "text": "Positive",
+          "start": 29.794,
+          "end": 30.254
+        },
+        {
+          "text": "rate",
+          "start": 30.314,
+          "end": 30.594
+        },
+        {
+          "text": "o",
+          "start": 30.754,
+          "end": 30.794
+        },
+        {
+          "text": "recall,",
+          "start": 30.874,
+          "end": 31.254
+        }
+      ]
+    },
+    {
+      "start": 31.714,
+      "end": 36.415,
+      "text": "è TP su TP più FN e misura quanti veri positivi riconosciamo;",
+      "words": [
+        {
+          "text": "è",
+          "start": 31.714,
+          "end": 31.754
+        },
+        {
+          "text": "TP",
+          "start": 31.854,
+          "end": 32.114
+        },
+        {
+          "text": "su",
+          "start": 32.574,
+          "end": 32.674
+        },
+        {
+          "text": "TP",
+          "start": 32.794,
+          "end": 33.034
+        },
+        {
+          "text": "più",
+          "start": 33.174,
+          "end": 33.314
+        },
+        {
+          "text": "FN",
+          "start": 33.494,
+          "end": 33.834
+        },
+        {
+          "text": "e",
+          "start": 34.214,
+          "end": 34.254
+        },
+        {
+          "text": "misura",
+          "start": 34.294,
+          "end": 34.614
+        },
+        {
+          "text": "quanti",
+          "start": 34.754,
+          "end": 35.075
+        },
+        {
+          "text": "veri",
+          "start": 35.135,
+          "end": 35.295
+        },
+        {
+          "text": "positivi",
+          "start": 35.335,
+          "end": 35.735
+        },
+        {
+          "text": "riconosciamo;",
+          "start": 35.775,
+          "end": 36.415
+        }
+      ]
+    },
+    {
+      "start": 36.955,
+      "end": 41.415,
+      "text": "la specificità, o True Negative rate, è TN su FP più TN,",
+      "words": [
+        {
+          "text": "la",
+          "start": 36.955,
+          "end": 37.035
+        },
+        {
+          "text": "specificità,",
+          "start": 37.075,
+          "end": 37.715
+        },
+        {
+          "text": "o",
+          "start": 37.995,
+          "end": 38.035
+        },
+        {
+          "text": "True",
+          "start": 38.155,
+          "end": 38.355
+        },
+        {
+          "text": "Negative",
+          "start": 38.395,
+          "end": 38.795
+        },
+        {
+          "text": "rate,",
+          "start": 38.835,
+          "end": 39.135
+        },
+        {
+          "text": "è",
+          "start": 39.535,
+          "end": 39.575
+        },
+        {
+          "text": "TN",
+          "start": 39.695,
+          "end": 40.095
+        },
+        {
+          "text": "su",
+          "start": 40.335,
+          "end": 40.415
+        },
+        {
+          "text": "FP",
+          "start": 40.575,
+          "end": 40.755
+        },
+        {
+          "text": "più",
+          "start": 40.895,
+          "end": 40.995
+        },
+        {
+          "text": "TN,",
+          "start": 41.075,
+          "end": 41.415
+        }
+      ]
+    },
+    {
+      "start": 41.775,
+      "end": 44.016,
+      "text": "pari a uno meno il False Positive rate;",
+      "words": [
+        {
+          "text": "pari",
+          "start": 41.775,
+          "end": 41.995
+        },
+        {
+          "text": "a",
+          "start": 42.135,
+          "end": 42.175
+        },
+        {
+          "text": "uno",
+          "start": 42.295,
+          "end": 42.515
+        },
+        {
+          "text": "meno",
+          "start": 42.675,
+          "end": 42.855
+        },
+        {
+          "text": "il",
+          "start": 42.915,
+          "end": 42.975
+        },
+        {
+          "text": "False",
+          "start": 43.015,
+          "end": 43.255
+        },
+        {
+          "text": "Positive",
+          "start": 43.275,
+          "end": 43.695
+        },
+        {
+          "text": "rate;",
+          "start": 43.736,
+          "end": 44.016
+        }
+      ]
+    },
+    {
+      "start": 44.636,
+      "end": 47.776,
+      "text": "infine la precisione è TP su TP più FP,",
+      "words": [
+        {
+          "text": "infine",
+          "start": 44.636,
+          "end": 44.956
+        },
+        {
+          "text": "la",
+          "start": 45.036,
+          "end": 45.076
+        },
+        {
+          "text": "precisione",
+          "start": 45.116,
+          "end": 45.616
+        },
+        {
+          "text": "è",
+          "start": 45.756,
+          "end": 45.796
+        },
+        {
+          "text": "TP",
+          "start": 45.896,
+          "end": 46.156
+        },
+        {
+          "text": "su",
+          "start": 46.536,
+          "end": 46.636
+        },
+        {
+          "text": "TP",
+          "start": 46.736,
+          "end": 46.956
+        },
+        {
+          "text": "più",
+          "start": 47.276,
+          "end": 47.376
+        },
+        {
+          "text": "FP,",
+          "start": 47.576,
+          "end": 47.776
+        }
+      ]
+    },
+    {
+      "start": 48.176,
+      "end": 50.716,
+      "text": "cioè quanti dei predetti positivi lo sono davvero.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 48.176,
+          "end": 48.316
+        },
+        {
+          "text": "quanti",
+          "start": 48.496,
+          "end": 48.856
+        },
+        {
+          "text": "dei",
+          "start": 48.896,
+          "end": 48.996
+        },
+        {
+          "text": "predetti",
+          "start": 49.036,
+          "end": 49.396
+        },
+        {
+          "text": "positivi",
+          "start": 49.456,
+          "end": 49.916
+        },
+        {
+          "text": "lo",
+          "start": 50.056,
+          "end": 50.116
+        },
+        {
+          "text": "sono",
+          "start": 50.156,
+          "end": 50.336
+        },
+        {
+          "text": "davvero.",
+          "start": 50.356,
+          "end": 50.716
+        }
+      ]
+    },
+    {
+      "start": 51.456,
+      "end": 54.957,
+      "text": "Attenzione: l'accuratezza da sola può ingannare gravemente.",
+      "words": [
+        {
+          "text": "Attenzione:",
+          "start": 51.456,
+          "end": 52.136
+        },
+        {
+          "text": "l'accuratezza",
+          "start": 52.476,
+          "end": 53.097
+        },
+        {
+          "text": "da",
+          "start": 53.157,
+          "end": 53.217
+        },
+        {
+          "text": "sola",
+          "start": 53.297,
+          "end": 53.537
+        },
+        {
+          "text": "può",
+          "start": 53.637,
+          "end": 53.737
+        },
+        {
+          "text": "ingannare",
+          "start": 53.817,
+          "end": 54.277
+        },
+        {
+          "text": "gravemente.",
+          "start": 54.317,
+          "end": 54.957
+        }
+      ]
+    },
+    {
+      "start": 55.677,
+      "end": 59.317,
+      "text": "Su due classi bilanciate il cinquanta per cento è puro caso;",
+      "words": [
+        {
+          "text": "Su",
+          "start": 55.677,
+          "end": 55.757
+        },
+        {
+          "text": "due",
+          "start": 55.857,
+          "end": 56.017
+        },
+        {
+          "text": "classi",
+          "start": 56.057,
+          "end": 56.437
+        },
+        {
+          "text": "bilanciate",
+          "start": 56.497,
+          "end": 57.217
+        },
+        {
+          "text": "il",
+          "start": 57.577,
+          "end": 57.657
+        },
+        {
+          "text": "cinquanta",
+          "start": 57.697,
+          "end": 58.137
+        },
+        {
+          "text": "per",
+          "start": 58.177,
+          "end": 58.297
+        },
+        {
+          "text": "cento",
+          "start": 58.357,
+          "end": 58.637
+        },
+        {
+          "text": "è",
+          "start": 58.657,
+          "end": 58.697
+        },
+        {
+          "text": "puro",
+          "start": 58.757,
+          "end": 58.937
+        },
+        {
+          "text": "caso;",
+          "start": 58.997,
+          "end": 59.317
+        }
+      ]
+    },
+    {
+      "start": 59.757,
+      "end": 65.098,
+      "text": "ma con dati sbilanciati — ad esempio novantanove per cento di positivi — un classificatore",
+      "words": [
+        {
+          "text": "ma",
+          "start": 59.757,
+          "end": 59.817
+        },
+        {
+          "text": "con",
+          "start": 59.857,
+          "end": 59.977
+        },
+        {
+          "text": "dati",
+          "start": 60.017,
+          "end": 60.217
+        },
+        {
+          "text": "sbilanciati",
+          "start": 60.277,
+          "end": 61.137
+        },
+        {
+          "text": "—",
+          "start": 61.137,
+          "end": 61.287
+        },
+        {
+          "text": "ad",
+          "start": 61.398,
+          "end": 61.478
+        },
+        {
+          "text": "esempio",
+          "start": 61.518,
+          "end": 61.878
+        },
+        {
+          "text": "novantanove",
+          "start": 62.118,
+          "end": 62.618
+        },
+        {
+          "text": "per",
+          "start": 62.658,
+          "end": 62.758
+        },
+        {
+          "text": "cento",
+          "start": 62.798,
+          "end": 63.038
+        },
+        {
+          "text": "di",
+          "start": 63.078,
+          "end": 63.138
+        },
+        {
+          "text": "positivi",
+          "start": 63.178,
+          "end": 63.718
+        },
+        {
+          "text": "—",
+          "start": 63.718,
+          "end": 63.868
+        },
+        {
+          "text": "un",
+          "start": 64.278,
+          "end": 64.358
+        },
+        {
+          "text": "classificatore",
+          "start": 64.398,
+          "end": 65.098
+        }
+      ]
+    },
+    {
+      "start": 65.198,
+      "end": 71.199,
+      "text": "banale che risponde sempre positivo raggiunge il novantanove per cento di accuratezza senza aver imparato",
+      "words": [
+        {
+          "text": "banale",
+          "start": 65.198,
+          "end": 65.658
+        },
+        {
+          "text": "che",
+          "start": 65.798,
+          "end": 65.878
+        },
+        {
+          "text": "risponde",
+          "start": 65.918,
+          "end": 66.298
+        },
+        {
+          "text": "sempre",
+          "start": 66.438,
+          "end": 66.798
+        },
+        {
+          "text": "positivo",
+          "start": 66.838,
+          "end": 67.338
+        },
+        {
+          "text": "raggiunge",
+          "start": 67.478,
+          "end": 67.878
+        },
+        {
+          "text": "il",
+          "start": 67.918,
+          "end": 67.978
+        },
+        {
+          "text": "novantanove",
+          "start": 67.998,
+          "end": 68.498
+        },
+        {
+          "text": "per",
+          "start": 68.558,
+          "end": 68.658
+        },
+        {
+          "text": "cento",
+          "start": 68.718,
+          "end": 68.978
+        },
+        {
+          "text": "di",
+          "start": 69.018,
+          "end": 69.078
+        },
+        {
+          "text": "accuratezza",
+          "start": 69.118,
+          "end": 69.858
+        },
+        {
+          "text": "senza",
+          "start": 70.239,
+          "end": 70.479
+        },
+        {
+          "text": "aver",
+          "start": 70.539,
+          "end": 70.679
+        },
+        {
+          "text": "imparato",
+          "start": 70.739,
+          "end": 71.199
+        }
+      ]
+    },
+    {
+      "start": 71.399,
+      "end": 71.759,
+      "text": "nulla.",
+      "words": [
+        {
+          "text": "nulla.",
+          "start": 71.399,
+          "end": 71.759
+        }
+      ]
+    },
+    {
+      "start": 72.499,
+      "end": 77.239,
+      "text": "Per valutare un classificatore al variare della soglia di decisione si usa la curva ROC",
+      "words": [
+        {
+          "text": "Per",
+          "start": 72.499,
+          "end": 72.639
+        },
+        {
+          "text": "valutare",
+          "start": 72.679,
+          "end": 73.139
+        },
+        {
+          "text": "un",
+          "start": 73.159,
+          "end": 73.239
+        },
+        {
+          "text": "classificatore",
+          "start": 73.259,
+          "end": 74.079
+        },
+        {
+          "text": "al",
+          "start": 74.139,
+          "end": 74.219
+        },
+        {
+          "text": "variare",
+          "start": 74.259,
+          "end": 74.579
+        },
+        {
+          "text": "della",
+          "start": 74.639,
+          "end": 74.799
+        },
+        {
+          "text": "soglia",
+          "start": 74.859,
+          "end": 75.099
+        },
+        {
+          "text": "di",
+          "start": 75.139,
+          "end": 75.199
+        },
+        {
+          "text": "decisione",
+          "start": 75.239,
+          "end": 75.839
+        },
+        {
+          "text": "si",
+          "start": 76.239,
+          "end": 76.299
+        },
+        {
+          "text": "usa",
+          "start": 76.379,
+          "end": 76.539
+        },
+        {
+          "text": "la",
+          "start": 76.619,
+          "end": 76.679
+        },
+        {
+          "text": "curva",
+          "start": 76.739,
+          "end": 77.019
+        },
+        {
+          "text": "ROC",
+          "start": 77.079,
+          "end": 77.239
+        }
+      ]
+    },
+    {
+      "start": 77.599,
+      "end": 82.82,
+      "text": "a destra, che mette in grafico il True Positive rate contro il False Positive rate,",
+      "words": [
+        {
+          "text": "a",
+          "start": 77.599,
+          "end": 77.63900000000001
+        },
+        {
+          "text": "destra,",
+          "start": 77.739,
+          "end": 78.139
+        },
+        {
+          "text": "che",
+          "start": 78.459,
+          "end": 78.539
+        },
+        {
+          "text": "mette",
+          "start": 78.599,
+          "end": 78.819
+        },
+        {
+          "text": "in",
+          "start": 78.86,
+          "end": 78.94
+        },
+        {
+          "text": "grafico",
+          "start": 78.98,
+          "end": 79.44
+        },
+        {
+          "text": "il",
+          "start": 79.64,
+          "end": 79.74
+        },
+        {
+          "text": "True",
+          "start": 79.8,
+          "end": 79.98
+        },
+        {
+          "text": "Positive",
+          "start": 80.04,
+          "end": 80.46
+        },
+        {
+          "text": "rate",
+          "start": 80.52,
+          "end": 80.8
+        },
+        {
+          "text": "contro",
+          "start": 80.88,
+          "end": 81.3
+        },
+        {
+          "text": "il",
+          "start": 81.42,
+          "end": 81.52
+        },
+        {
+          "text": "False",
+          "start": 81.6,
+          "end": 81.9
+        },
+        {
+          "text": "Positive",
+          "start": 81.98,
+          "end": 82.42
+        },
+        {
+          "text": "rate,",
+          "start": 82.48,
+          "end": 82.82
+        }
+      ]
+    },
+    {
+      "start": 83.28,
+      "end": 85.06,
+      "text": "cioè uno meno la specificità.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 83.28,
+          "end": 83.46
+        },
+        {
+          "text": "uno",
+          "start": 83.7,
+          "end": 83.9
+        },
+        {
+          "text": "meno",
+          "start": 83.98,
+          "end": 84.22
+        },
+        {
+          "text": "la",
+          "start": 84.32,
+          "end": 84.38
+        },
+        {
+          "text": "specificità.",
+          "start": 84.42,
+          "end": 85.06
+        }
+      ]
+    },
+    {
+      "start": 85.84,
+      "end": 91.741,
+      "text": "La diagonale rappresenta il classificatore casuale con area sotto la curva AUC pari a zero",
+      "words": [
+        {
+          "text": "La",
+          "start": 85.84,
+          "end": 85.9
+        },
+        {
+          "text": "diagonale",
+          "start": 85.94,
+          "end": 86.48
+        },
+        {
+          "text": "rappresenta",
+          "start": 86.64,
+          "end": 87.14
+        },
+        {
+          "text": "il",
+          "start": 87.18,
+          "end": 87.24
+        },
+        {
+          "text": "classificatore",
+          "start": 87.3,
+          "end": 87.961
+        },
+        {
+          "text": "casuale",
+          "start": 88.021,
+          "end": 88.561
+        },
+        {
+          "text": "con",
+          "start": 88.661,
+          "end": 88.861
+        },
+        {
+          "text": "area",
+          "start": 88.961,
+          "end": 89.181
+        },
+        {
+          "text": "sotto",
+          "start": 89.261,
+          "end": 89.481
+        },
+        {
+          "text": "la",
+          "start": 89.521,
+          "end": 89.601
+        },
+        {
+          "text": "curva",
+          "start": 89.641,
+          "end": 89.941
+        },
+        {
+          "text": "AUC",
+          "start": 90.181,
+          "end": 90.581
+        },
+        {
+          "text": "pari",
+          "start": 90.961,
+          "end": 91.241
+        },
+        {
+          "text": "a",
+          "start": 91.421,
+          "end": 91.46100000000001
+        },
+        {
+          "text": "zero",
+          "start": 91.561,
+          "end": 91.741
+        }
+      ]
+    },
+    {
+      "start": 91.761,
+      "end": 96.622,
+      "text": "virgola cinque; più la curva sale rapidamente verso l'angolo in alto a sinistra,",
+      "words": [
+        {
+          "text": "virgola",
+          "start": 91.761,
+          "end": 92.061
+        },
+        {
+          "text": "cinque;",
+          "start": 92.121,
+          "end": 92.501
+        },
+        {
+          "text": "più",
+          "start": 93.061,
+          "end": 93.181
+        },
+        {
+          "text": "la",
+          "start": 93.261,
+          "end": 93.341
+        },
+        {
+          "text": "curva",
+          "start": 93.401,
+          "end": 93.721
+        },
+        {
+          "text": "sale",
+          "start": 93.801,
+          "end": 94.041
+        },
+        {
+          "text": "rapidamente",
+          "start": 94.141,
+          "end": 94.941
+        },
+        {
+          "text": "verso",
+          "start": 95.061,
+          "end": 95.321
+        },
+        {
+          "text": "l'angolo",
+          "start": 95.361,
+          "end": 95.681
+        },
+        {
+          "text": "in",
+          "start": 95.741,
+          "end": 95.821
+        },
+        {
+          "text": "alto",
+          "start": 95.861,
+          "end": 96.041
+        },
+        {
+          "text": "a",
+          "start": 96.061,
+          "end": 96.10100000000001
+        },
+        {
+          "text": "sinistra,",
+          "start": 96.141,
+          "end": 96.622
+        }
+      ]
+    },
+    {
+      "start": 97.002,
+      "end": 100.362,
+      "text": "più l'AUC si avvicina al valore ideale uno.",
+      "words": [
+        {
+          "text": "più",
+          "start": 97.002,
+          "end": 97.162
+        },
+        {
+          "text": "l'AUC",
+          "start": 97.342,
+          "end": 97.762
+        },
+        {
+          "text": "si",
+          "start": 98.082,
+          "end": 98.142
+        },
+        {
+          "text": "avvicina",
+          "start": 98.182,
+          "end": 98.662
+        },
+        {
+          "text": "al",
+          "start": 98.802,
+          "end": 98.902
+        },
+        {
+          "text": "valore",
+          "start": 98.942,
+          "end": 99.262
+        },
+        {
+          "text": "ideale",
+          "start": 99.342,
+          "end": 99.782
+        },
+        {
+          "text": "uno.",
+          "start": 100.162,
+          "end": 100.362
+        }
+      ]
+    }
+  ]
+}

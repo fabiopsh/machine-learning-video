@@ -1,0 +1,1550 @@
+{
+  "duration": 101.374,
+  "segments": [
+    {
+      "start": 1.013,
+      "end": 5.174,
+      "text": "Il limite più profondo del K-NN emerge quando aumenta il numero di feature n:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 1.013,
+          "end": 1.074
+        },
+        {
+          "text": "limite",
+          "start": 1.114,
+          "end": 1.414
+        },
+        {
+          "text": "più",
+          "start": 1.454,
+          "end": 1.534
+        },
+        {
+          "text": "profondo",
+          "start": 1.594,
+          "end": 1.954
+        },
+        {
+          "text": "del",
+          "start": 1.994,
+          "end": 2.114
+        },
+        {
+          "text": "K-NN",
+          "start": 2.154,
+          "end": 2.834
+        },
+        {
+          "text": "emerge",
+          "start": 3.074,
+          "end": 3.394
+        },
+        {
+          "text": "quando",
+          "start": 3.434,
+          "end": 3.654
+        },
+        {
+          "text": "aumenta",
+          "start": 3.714,
+          "end": 4.114
+        },
+        {
+          "text": "il",
+          "start": 4.134,
+          "end": 4.194
+        },
+        {
+          "text": "numero",
+          "start": 4.234,
+          "end": 4.494
+        },
+        {
+          "text": "di",
+          "start": 4.534,
+          "end": 4.594
+        },
+        {
+          "text": "feature",
+          "start": 4.634,
+          "end": 5.014
+        },
+        {
+          "text": "n:",
+          "start": 5.134,
+          "end": 5.174
+        }
+      ]
+    },
+    {
+      "start": 5.714,
+      "end": 11.815,
+      "text": "è la maledizione della dimensionalità, curse of dimensionality, che si manifesta in tre modi precisi.",
+      "words": [
+        {
+          "text": "è",
+          "start": 5.714,
+          "end": 5.7540000000000004
+        },
+        {
+          "text": "la",
+          "start": 5.854,
+          "end": 5.934
+        },
+        {
+          "text": "maledizione",
+          "start": 5.994,
+          "end": 6.714
+        },
+        {
+          "text": "della",
+          "start": 6.834,
+          "end": 7.014
+        },
+        {
+          "text": "dimensionalità,",
+          "start": 7.054,
+          "end": 7.794
+        },
+        {
+          "text": "curse",
+          "start": 8.294,
+          "end": 8.614
+        },
+        {
+          "text": "of",
+          "start": 8.754,
+          "end": 8.854
+        },
+        {
+          "text": "dimensionality,",
+          "start": 8.934,
+          "end": 9.874
+        },
+        {
+          "text": "che",
+          "start": 10.274,
+          "end": 10.354
+        },
+        {
+          "text": "si",
+          "start": 10.394,
+          "end": 10.454
+        },
+        {
+          "text": "manifesta",
+          "start": 10.514,
+          "end": 10.895
+        },
+        {
+          "text": "in",
+          "start": 10.935,
+          "end": 10.995
+        },
+        {
+          "text": "tre",
+          "start": 11.015,
+          "end": 11.115
+        },
+        {
+          "text": "modi",
+          "start": 11.175,
+          "end": 11.335
+        },
+        {
+          "text": "precisi.",
+          "start": 11.375,
+          "end": 11.815
+        }
+      ]
+    },
+    {
+      "start": 12.515,
+      "end": 17.915,
+      "text": "Prima manifestazione: in alta dimensione è difficilissimo trovare punti davvero vicini.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 12.515,
+          "end": 12.755
+        },
+        {
+          "text": "manifestazione:",
+          "start": 12.795,
+          "end": 13.595
+        },
+        {
+          "text": "in",
+          "start": 14.495,
+          "end": 14.575
+        },
+        {
+          "text": "alta",
+          "start": 14.635,
+          "end": 14.835
+        },
+        {
+          "text": "dimensione",
+          "start": 14.875,
+          "end": 15.435
+        },
+        {
+          "text": "è",
+          "start": 15.495,
+          "end": 15.535
+        },
+        {
+          "text": "difficilissimo",
+          "start": 15.635,
+          "end": 16.495
+        },
+        {
+          "text": "trovare",
+          "start": 16.555,
+          "end": 16.835
+        },
+        {
+          "text": "punti",
+          "start": 16.895,
+          "end": 17.135
+        },
+        {
+          "text": "davvero",
+          "start": 17.175,
+          "end": 17.475
+        },
+        {
+          "text": "vicini.",
+          "start": 17.495,
+          "end": 17.915
+        }
+      ]
+    },
+    {
+      "start": 18.475,
+      "end": 21.336,
+      "text": "Supponiamo dati uniformi nel cubo unitario in R alla n:",
+      "words": [
+        {
+          "text": "Supponiamo",
+          "start": 18.475,
+          "end": 18.895
+        },
+        {
+          "text": "dati",
+          "start": 18.955,
+          "end": 19.155
+        },
+        {
+          "text": "uniformi",
+          "start": 19.215,
+          "end": 19.615
+        },
+        {
+          "text": "nel",
+          "start": 19.655,
+          "end": 19.775
+        },
+        {
+          "text": "cubo",
+          "start": 19.815,
+          "end": 20.015
+        },
+        {
+          "text": "unitario",
+          "start": 20.055,
+          "end": 20.496
+        },
+        {
+          "text": "in",
+          "start": 20.556,
+          "end": 20.636
+        },
+        {
+          "text": "R",
+          "start": 20.776,
+          "end": 20.816
+        },
+        {
+          "text": "alla",
+          "start": 20.896,
+          "end": 21.056
+        },
+        {
+          "text": "n:",
+          "start": 21.296,
+          "end": 21.336
+        }
+      ]
+    },
+    {
+      "start": 21.916,
+      "end": 26.136,
+      "text": "per contenere una frazione r del volume serve un sottocubo di lato uguale a r",
+      "words": [
+        {
+          "text": "per",
+          "start": 21.916,
+          "end": 22.016
+        },
+        {
+          "text": "contenere",
+          "start": 22.056,
+          "end": 22.456
+        },
+        {
+          "text": "una",
+          "start": 22.496,
+          "end": 22.596
+        },
+        {
+          "text": "frazione",
+          "start": 22.656,
+          "end": 23.056
+        },
+        {
+          "text": "r",
+          "start": 23.236,
+          "end": 23.276
+        },
+        {
+          "text": "del",
+          "start": 23.336,
+          "end": 23.456
+        },
+        {
+          "text": "volume",
+          "start": 23.496,
+          "end": 23.856
+        },
+        {
+          "text": "serve",
+          "start": 24.016,
+          "end": 24.296
+        },
+        {
+          "text": "un",
+          "start": 24.356,
+          "end": 24.436
+        },
+        {
+          "text": "sottocubo",
+          "start": 24.516,
+          "end": 25.116
+        },
+        {
+          "text": "di",
+          "start": 25.176,
+          "end": 25.236
+        },
+        {
+          "text": "lato",
+          "start": 25.296,
+          "end": 25.476
+        },
+        {
+          "text": "uguale",
+          "start": 25.516,
+          "end": 25.796
+        },
+        {
+          "text": "a",
+          "start": 25.836,
+          "end": 25.876
+        },
+        {
+          "text": "r",
+          "start": 26.096,
+          "end": 26.136
+        }
+      ]
+    },
+    {
+      "start": 26.216,
+      "end": 27.296,
+      "text": "elevato a uno su n.",
+      "words": [
+        {
+          "text": "elevato",
+          "start": 26.216,
+          "end": 26.576
+        },
+        {
+          "text": "a",
+          "start": 26.616,
+          "end": 26.656
+        },
+        {
+          "text": "uno",
+          "start": 26.716,
+          "end": 26.856
+        },
+        {
+          "text": "su",
+          "start": 26.916,
+          "end": 26.996
+        },
+        {
+          "text": "n.",
+          "start": 27.256,
+          "end": 27.296
+        }
+      ]
+    },
+    {
+      "start": 28.576,
+      "end": 32.857,
+      "text": "Guarda il grafico a sinistra: per catturare il dieci per cento dei dati basta il",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 28.576,
+          "end": 28.836
+        },
+        {
+          "text": "il",
+          "start": 28.876,
+          "end": 28.936
+        },
+        {
+          "text": "grafico",
+          "start": 28.976,
+          "end": 29.336
+        },
+        {
+          "text": "a",
+          "start": 29.376,
+          "end": 29.416
+        },
+        {
+          "text": "sinistra:",
+          "start": 29.476,
+          "end": 29.937
+        },
+        {
+          "text": "per",
+          "start": 30.317,
+          "end": 30.437
+        },
+        {
+          "text": "catturare",
+          "start": 30.497,
+          "end": 30.937
+        },
+        {
+          "text": "il",
+          "start": 30.977,
+          "end": 31.037
+        },
+        {
+          "text": "dieci",
+          "start": 31.077,
+          "end": 31.277
+        },
+        {
+          "text": "per",
+          "start": 31.337,
+          "end": 31.457
+        },
+        {
+          "text": "cento",
+          "start": 31.517,
+          "end": 31.777
+        },
+        {
+          "text": "dei",
+          "start": 31.817,
+          "end": 31.937
+        },
+        {
+          "text": "dati",
+          "start": 31.977,
+          "end": 32.257
+        },
+        {
+          "text": "basta",
+          "start": 32.477,
+          "end": 32.737
+        },
+        {
+          "text": "il",
+          "start": 32.777,
+          "end": 32.857
+        }
+      ]
+    },
+    {
+      "start": 32.897,
+      "end": 35.697,
+      "text": "trentadue per cento di ogni coordinata in due dimensioni,",
+      "words": [
+        {
+          "text": "trentadue",
+          "start": 32.897,
+          "end": 33.337
+        },
+        {
+          "text": "per",
+          "start": 33.377,
+          "end": 33.497
+        },
+        {
+          "text": "cento",
+          "start": 33.537,
+          "end": 33.797
+        },
+        {
+          "text": "di",
+          "start": 33.857,
+          "end": 33.917
+        },
+        {
+          "text": "ogni",
+          "start": 33.997,
+          "end": 34.177
+        },
+        {
+          "text": "coordinata",
+          "start": 34.237,
+          "end": 34.837
+        },
+        {
+          "text": "in",
+          "start": 34.897,
+          "end": 34.937
+        },
+        {
+          "text": "due",
+          "start": 34.977,
+          "end": 35.077
+        },
+        {
+          "text": "dimensioni,",
+          "start": 35.117,
+          "end": 35.697
+        }
+      ]
+    },
+    {
+      "start": 36.097,
+      "end": 40.468,
+      "text": "ma serve zero virgola otto — l'ottanta per cento del range di ogni variabile —",
+      "words": [
+        {
+          "text": "ma",
+          "start": 36.097,
+          "end": 36.157
+        },
+        {
+          "text": "serve",
+          "start": 36.257,
+          "end": 36.537
+        },
+        {
+          "text": "zero",
+          "start": 36.697,
+          "end": 36.937
+        },
+        {
+          "text": "virgola",
+          "start": 36.997,
+          "end": 37.337
+        },
+        {
+          "text": "otto",
+          "start": 37.437,
+          "end": 37.677
+        },
+        {
+          "text": "—",
+          "start": 37.677,
+          "end": 37.827
+        },
+        {
+          "text": "l'ottanta",
+          "start": 38.157,
+          "end": 38.597
+        },
+        {
+          "text": "per",
+          "start": 38.617,
+          "end": 38.737
+        },
+        {
+          "text": "cento",
+          "start": 38.797,
+          "end": 39.037
+        },
+        {
+          "text": "del",
+          "start": 39.077,
+          "end": 39.177
+        },
+        {
+          "text": "range",
+          "start": 39.217,
+          "end": 39.458
+        },
+        {
+          "text": "di",
+          "start": 39.518,
+          "end": 39.558
+        },
+        {
+          "text": "ogni",
+          "start": 39.618,
+          "end": 39.758
+        },
+        {
+          "text": "variabile",
+          "start": 39.798,
+          "end": 40.318
+        },
+        {
+          "text": "—",
+          "start": 40.318,
+          "end": 40.468
+        }
+      ]
+    },
+    {
+      "start": 40.558,
+      "end": 41.498,
+      "text": "in dieci dimensioni.",
+      "words": [
+        {
+          "text": "in",
+          "start": 40.558,
+          "end": 40.638
+        },
+        {
+          "text": "dieci",
+          "start": 40.678,
+          "end": 40.918
+        },
+        {
+          "text": "dimensioni.",
+          "start": 40.978,
+          "end": 41.498
+        }
+      ]
+    },
+    {
+      "start": 42.138,
+      "end": 46.758,
+      "text": "E persino per l'uno per cento del volume in dieci dimensioni serve il sessantatré per",
+      "words": [
+        {
+          "text": "E",
+          "start": 42.138,
+          "end": 42.178
+        },
+        {
+          "text": "persino",
+          "start": 42.298,
+          "end": 42.698
+        },
+        {
+          "text": "per",
+          "start": 42.738,
+          "end": 42.858
+        },
+        {
+          "text": "l'uno",
+          "start": 42.918,
+          "end": 43.138
+        },
+        {
+          "text": "per",
+          "start": 43.178,
+          "end": 43.278
+        },
+        {
+          "text": "cento",
+          "start": 43.338,
+          "end": 43.618
+        },
+        {
+          "text": "del",
+          "start": 43.658,
+          "end": 43.778
+        },
+        {
+          "text": "volume",
+          "start": 43.818,
+          "end": 44.158
+        },
+        {
+          "text": "in",
+          "start": 44.218,
+          "end": 44.258
+        },
+        {
+          "text": "dieci",
+          "start": 44.298,
+          "end": 44.498
+        },
+        {
+          "text": "dimensioni",
+          "start": 44.538,
+          "end": 45.098
+        },
+        {
+          "text": "serve",
+          "start": 45.458,
+          "end": 45.698
+        },
+        {
+          "text": "il",
+          "start": 45.718,
+          "end": 45.798
+        },
+        {
+          "text": "sessantatré",
+          "start": 45.878,
+          "end": 46.538
+        },
+        {
+          "text": "per",
+          "start": 46.638,
+          "end": 46.758
+        }
+      ]
+    },
+    {
+      "start": 46.818,
+      "end": 49.939,
+      "text": "cento del range: l'intorno non è più locale.",
+      "words": [
+        {
+          "text": "cento",
+          "start": 46.818,
+          "end": 47.118
+        },
+        {
+          "text": "del",
+          "start": 47.158,
+          "end": 47.278
+        },
+        {
+          "text": "range:",
+          "start": 47.338,
+          "end": 47.698
+        },
+        {
+          "text": "l'intorno",
+          "start": 48.278,
+          "end": 48.879
+        },
+        {
+          "text": "non",
+          "start": 49.179,
+          "end": 49.299
+        },
+        {
+          "text": "è",
+          "start": 49.319,
+          "end": 49.359
+        },
+        {
+          "text": "più",
+          "start": 49.399,
+          "end": 49.479
+        },
+        {
+          "text": "locale.",
+          "start": 49.559,
+          "end": 49.939
+        }
+      ]
+    },
+    {
+      "start": 50.819,
+      "end": 53.339,
+      "text": "Ribaltiamo il calcolo fissando il lato a zero virgola tre:",
+      "words": [
+        {
+          "text": "Ribaltiamo",
+          "start": 50.819,
+          "end": 51.219
+        },
+        {
+          "text": "il",
+          "start": 51.259,
+          "end": 51.319
+        },
+        {
+          "text": "calcolo",
+          "start": 51.339,
+          "end": 51.719
+        },
+        {
+          "text": "fissando",
+          "start": 51.759,
+          "end": 52.139
+        },
+        {
+          "text": "il",
+          "start": 52.179,
+          "end": 52.219
+        },
+        {
+          "text": "lato",
+          "start": 52.259,
+          "end": 52.459
+        },
+        {
+          "text": "a",
+          "start": 52.499,
+          "end": 52.539
+        },
+        {
+          "text": "zero",
+          "start": 52.639,
+          "end": 52.819
+        },
+        {
+          "text": "virgola",
+          "start": 52.859,
+          "end": 53.179
+        },
+        {
+          "text": "tre:",
+          "start": 53.239,
+          "end": 53.339
+        }
+      ]
+    },
+    {
+      "start": 53.919,
+      "end": 57.039,
+      "text": "si cattura il trenta per cento dei dati in una dimensione,",
+      "words": [
+        {
+          "text": "si",
+          "start": 53.919,
+          "end": 53.979
+        },
+        {
+          "text": "cattura",
+          "start": 54.019,
+          "end": 54.359
+        },
+        {
+          "text": "il",
+          "start": 54.759,
+          "end": 54.859
+        },
+        {
+          "text": "trenta",
+          "start": 54.919,
+          "end": 55.179
+        },
+        {
+          "text": "per",
+          "start": 55.199,
+          "end": 55.299
+        },
+        {
+          "text": "cento",
+          "start": 55.339,
+          "end": 55.599
+        },
+        {
+          "text": "dei",
+          "start": 55.639,
+          "end": 55.759
+        },
+        {
+          "text": "dati",
+          "start": 55.779,
+          "end": 56.079
+        },
+        {
+          "text": "in",
+          "start": 56.219,
+          "end": 56.299
+        },
+        {
+          "text": "una",
+          "start": 56.339,
+          "end": 56.459
+        },
+        {
+          "text": "dimensione,",
+          "start": 56.499,
+          "end": 57.039
+        }
+      ]
+    },
+    {
+      "start": 57.539,
+      "end": 61.04,
+      "text": "il nove per cento in due dimensioni, il due virgola sette per cento in tre",
+      "words": [
+        {
+          "text": "il",
+          "start": 57.539,
+          "end": 57.619
+        },
+        {
+          "text": "nove",
+          "start": 57.679,
+          "end": 57.839
+        },
+        {
+          "text": "per",
+          "start": 57.879,
+          "end": 57.979
+        },
+        {
+          "text": "cento",
+          "start": 58.019,
+          "end": 58.279
+        },
+        {
+          "text": "in",
+          "start": 58.299,
+          "end": 58.359
+        },
+        {
+          "text": "due",
+          "start": 58.379,
+          "end": 58.48
+        },
+        {
+          "text": "dimensioni,",
+          "start": 58.5,
+          "end": 59.02
+        },
+        {
+          "text": "il",
+          "start": 59.42,
+          "end": 59.5
+        },
+        {
+          "text": "due",
+          "start": 59.58,
+          "end": 59.72
+        },
+        {
+          "text": "virgola",
+          "start": 59.76,
+          "end": 60.06
+        },
+        {
+          "text": "sette",
+          "start": 60.12,
+          "end": 60.34
+        },
+        {
+          "text": "per",
+          "start": 60.36,
+          "end": 60.46
+        },
+        {
+          "text": "cento",
+          "start": 60.52,
+          "end": 60.78
+        },
+        {
+          "text": "in",
+          "start": 60.82,
+          "end": 60.88
+        },
+        {
+          "text": "tre",
+          "start": 60.92,
+          "end": 61.04
+        }
+      ]
+    },
+    {
+      "start": 61.1,
+      "end": 66.02,
+      "text": "dimensioni, e appena lo zero virgola zero zero zero sei per cento in dieci dimensioni",
+      "words": [
+        {
+          "text": "dimensioni,",
+          "start": 61.1,
+          "end": 61.62
+        },
+        {
+          "text": "e",
+          "start": 61.78,
+          "end": 61.82
+        },
+        {
+          "text": "appena",
+          "start": 61.88,
+          "end": 62.2
+        },
+        {
+          "text": "lo",
+          "start": 62.28,
+          "end": 62.34
+        },
+        {
+          "text": "zero",
+          "start": 62.46,
+          "end": 62.64
+        },
+        {
+          "text": "virgola",
+          "start": 62.68,
+          "end": 63.0
+        },
+        {
+          "text": "zero",
+          "start": 63.18,
+          "end": 63.42
+        },
+        {
+          "text": "zero",
+          "start": 63.56,
+          "end": 63.78
+        },
+        {
+          "text": "zero",
+          "start": 63.88,
+          "end": 64.08
+        },
+        {
+          "text": "sei",
+          "start": 64.18,
+          "end": 64.32
+        },
+        {
+          "text": "per",
+          "start": 64.36,
+          "end": 64.48
+        },
+        {
+          "text": "cento",
+          "start": 64.54,
+          "end": 64.9
+        },
+        {
+          "text": "in",
+          "start": 65.04,
+          "end": 65.12
+        },
+        {
+          "text": "dieci",
+          "start": 65.16,
+          "end": 65.42
+        },
+        {
+          "text": "dimensioni",
+          "start": 65.46,
+          "end": 66.02
+        }
+      ]
+    },
+    {
+      "start": 66.02,
+      "end": 70.301,
+      "text": "— costringendoci a usare k piccolissimi e finendo in overfitting.",
+      "words": [
+        {
+          "text": "—",
+          "start": 66.02,
+          "end": 66.17
+        },
+        {
+          "text": "costringendoci",
+          "start": 66.5,
+          "end": 67.16
+        },
+        {
+          "text": "a",
+          "start": 67.22,
+          "end": 67.26
+        },
+        {
+          "text": "usare",
+          "start": 67.32,
+          "end": 67.6
+        },
+        {
+          "text": "k",
+          "start": 67.88,
+          "end": 67.92
+        },
+        {
+          "text": "piccolissimi",
+          "start": 68.281,
+          "end": 68.941
+        },
+        {
+          "text": "e",
+          "start": 69.081,
+          "end": 69.12100000000001
+        },
+        {
+          "text": "finendo",
+          "start": 69.201,
+          "end": 69.541
+        },
+        {
+          "text": "in",
+          "start": 69.581,
+          "end": 69.661
+        },
+        {
+          "text": "overfitting.",
+          "start": 69.681,
+          "end": 70.301
+        }
+      ]
+    },
+    {
+      "start": 71.161,
+      "end": 76.381,
+      "text": "Seconda manifestazione: la densità di campionamento scala come l elevato a uno su n.",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 71.161,
+          "end": 71.481
+        },
+        {
+          "text": "manifestazione:",
+          "start": 71.521,
+          "end": 72.261
+        },
+        {
+          "text": "la",
+          "start": 72.681,
+          "end": 72.761
+        },
+        {
+          "text": "densità",
+          "start": 72.801,
+          "end": 73.161
+        },
+        {
+          "text": "di",
+          "start": 73.221,
+          "end": 73.281
+        },
+        {
+          "text": "campionamento",
+          "start": 73.321,
+          "end": 73.921
+        },
+        {
+          "text": "scala",
+          "start": 74.021,
+          "end": 74.361
+        },
+        {
+          "text": "come",
+          "start": 74.441,
+          "end": 74.621
+        },
+        {
+          "text": "l",
+          "start": 74.941,
+          "end": 74.98100000000001
+        },
+        {
+          "text": "elevato",
+          "start": 75.061,
+          "end": 75.441
+        },
+        {
+          "text": "a",
+          "start": 75.501,
+          "end": 75.54100000000001
+        },
+        {
+          "text": "uno",
+          "start": 75.721,
+          "end": 75.901
+        },
+        {
+          "text": "su",
+          "start": 76.021,
+          "end": 76.101
+        },
+        {
+          "text": "n.",
+          "start": 76.341,
+          "end": 76.381
+        }
+      ]
+    },
+    {
+      "start": 77.081,
+      "end": 81.562,
+      "text": "Se cento punti bastano in una dimensione, per avere la stessa densità in dieci dimensioni",
+      "words": [
+        {
+          "text": "Se",
+          "start": 77.081,
+          "end": 77.141
+        },
+        {
+          "text": "cento",
+          "start": 77.221,
+          "end": 77.461
+        },
+        {
+          "text": "punti",
+          "start": 77.501,
+          "end": 77.722
+        },
+        {
+          "text": "bastano",
+          "start": 77.762,
+          "end": 78.162
+        },
+        {
+          "text": "in",
+          "start": 78.302,
+          "end": 78.382
+        },
+        {
+          "text": "una",
+          "start": 78.422,
+          "end": 78.542
+        },
+        {
+          "text": "dimensione,",
+          "start": 78.582,
+          "end": 79.142
+        },
+        {
+          "text": "per",
+          "start": 79.482,
+          "end": 79.602
+        },
+        {
+          "text": "avere",
+          "start": 79.622,
+          "end": 79.822
+        },
+        {
+          "text": "la",
+          "start": 79.862,
+          "end": 79.922
+        },
+        {
+          "text": "stessa",
+          "start": 79.962,
+          "end": 80.222
+        },
+        {
+          "text": "densità",
+          "start": 80.262,
+          "end": 80.602
+        },
+        {
+          "text": "in",
+          "start": 80.702,
+          "end": 80.782
+        },
+        {
+          "text": "dieci",
+          "start": 80.822,
+          "end": 81.042
+        },
+        {
+          "text": "dimensioni",
+          "start": 81.082,
+          "end": 81.562
+        }
+      ]
+    },
+    {
+      "start": 81.602,
+      "end": 84.542,
+      "text": "ne servirebbero cento alla decima, cioè dieci alla venti.",
+      "words": [
+        {
+          "text": "ne",
+          "start": 81.602,
+          "end": 81.662
+        },
+        {
+          "text": "servirebbero",
+          "start": 81.702,
+          "end": 82.222
+        },
+        {
+          "text": "cento",
+          "start": 82.302,
+          "end": 82.642
+        },
+        {
+          "text": "alla",
+          "start": 82.762,
+          "end": 82.942
+        },
+        {
+          "text": "decima,",
+          "start": 82.982,
+          "end": 83.342
+        },
+        {
+          "text": "cioè",
+          "start": 83.662,
+          "end": 83.782
+        },
+        {
+          "text": "dieci",
+          "start": 83.902,
+          "end": 84.122
+        },
+        {
+          "text": "alla",
+          "start": 84.142,
+          "end": 84.242
+        },
+        {
+          "text": "venti.",
+          "start": 84.262,
+          "end": 84.542
+        }
+      ]
+    },
+    {
+      "start": 85.362,
+      "end": 88.123,
+      "text": "Terza manifestazione: le feature irrilevanti.",
+      "words": [
+        {
+          "text": "Terza",
+          "start": 85.362,
+          "end": 85.642
+        },
+        {
+          "text": "manifestazione:",
+          "start": 85.682,
+          "end": 86.422
+        },
+        {
+          "text": "le",
+          "start": 86.882,
+          "end": 86.962
+        },
+        {
+          "text": "feature",
+          "start": 87.022,
+          "end": 87.343
+        },
+        {
+          "text": "irrilevanti.",
+          "start": 87.483,
+          "end": 88.123
+        }
+      ]
+    },
+    {
+      "start": 88.703,
+      "end": 91.363,
+      "text": "Se il target dipende solo da due feature su venti,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 88.703,
+          "end": 88.803
+        },
+        {
+          "text": "il",
+          "start": 88.823,
+          "end": 88.883
+        },
+        {
+          "text": "target",
+          "start": 88.943,
+          "end": 89.303
+        },
+        {
+          "text": "dipende",
+          "start": 89.403,
+          "end": 89.743
+        },
+        {
+          "text": "solo",
+          "start": 89.823,
+          "end": 90.043
+        },
+        {
+          "text": "da",
+          "start": 90.083,
+          "end": 90.163
+        },
+        {
+          "text": "due",
+          "start": 90.263,
+          "end": 90.423
+        },
+        {
+          "text": "feature",
+          "start": 90.483,
+          "end": 90.823
+        },
+        {
+          "text": "su",
+          "start": 90.843,
+          "end": 90.903
+        },
+        {
+          "text": "venti,",
+          "start": 91.003,
+          "end": 91.363
+        }
+      ]
+    },
+    {
+      "start": 91.803,
+      "end": 95.023,
+      "text": "le distanze sono dominate dalle diciotto feature irrilevanti;",
+      "words": [
+        {
+          "text": "le",
+          "start": 91.803,
+          "end": 91.863
+        },
+        {
+          "text": "distanze",
+          "start": 91.903,
+          "end": 92.323
+        },
+        {
+          "text": "sono",
+          "start": 92.383,
+          "end": 92.583
+        },
+        {
+          "text": "dominate",
+          "start": 92.623,
+          "end": 93.123
+        },
+        {
+          "text": "dalle",
+          "start": 93.163,
+          "end": 93.403
+        },
+        {
+          "text": "diciotto",
+          "start": 93.483,
+          "end": 93.943
+        },
+        {
+          "text": "feature",
+          "start": 94.003,
+          "end": 94.363
+        },
+        {
+          "text": "irrilevanti;",
+          "start": 94.363,
+          "end": 95.023
+        }
+      ]
+    },
+    {
+      "start": 95.723,
+      "end": 100.184,
+      "text": "i rimedi sono pesare gli assi — tramite una costosa model selection — oppure fare",
+      "words": [
+        {
+          "text": "i",
+          "start": 95.723,
+          "end": 95.763
+        },
+        {
+          "text": "rimedi",
+          "start": 95.803,
+          "end": 96.103
+        },
+        {
+          "text": "sono",
+          "start": 96.263,
+          "end": 96.463
+        },
+        {
+          "text": "pesare",
+          "start": 96.563,
+          "end": 96.884
+        },
+        {
+          "text": "gli",
+          "start": 96.904,
+          "end": 97.004
+        },
+        {
+          "text": "assi",
+          "start": 97.064,
+          "end": 97.364
+        },
+        {
+          "text": "—",
+          "start": 97.364,
+          "end": 97.514
+        },
+        {
+          "text": "tramite",
+          "start": 97.664,
+          "end": 97.964
+        },
+        {
+          "text": "una",
+          "start": 98.004,
+          "end": 98.124
+        },
+        {
+          "text": "costosa",
+          "start": 98.164,
+          "end": 98.544
+        },
+        {
+          "text": "model",
+          "start": 98.624,
+          "end": 98.884
+        },
+        {
+          "text": "selection",
+          "start": 98.944,
+          "end": 99.404
+        },
+        {
+          "text": "—",
+          "start": 99.404,
+          "end": 99.554
+        },
+        {
+          "text": "oppure",
+          "start": 99.624,
+          "end": 99.944
+        },
+        {
+          "text": "fare",
+          "start": 99.984,
+          "end": 100.184
+        }
+      ]
+    },
+    {
+      "start": 100.344,
+      "end": 101.124,
+      "text": "feature selection.",
+      "words": [
+        {
+          "text": "feature",
+          "start": 100.344,
+          "end": 100.644
+        },
+        {
+          "text": "selection.",
+          "start": 100.664,
+          "end": 101.124
+        }
+      ]
+    }
+  ]
+}

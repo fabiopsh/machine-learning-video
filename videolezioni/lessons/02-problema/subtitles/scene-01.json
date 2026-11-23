@@ -1,0 +1,1299 @@
+{
+  "duration": 97.364,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.381,
+      "text": "Apriamo lo studio vero e proprio del Machine Learning formulando il problema che tutto il",
+      "words": [
+        {
+          "text": "Apriamo",
+          "start": 0.08,
+          "end": 0.42
+        },
+        {
+          "text": "lo",
+          "start": 0.5,
+          "end": 0.56
+        },
+        {
+          "text": "studio",
+          "start": 0.62,
+          "end": 0.92
+        },
+        {
+          "text": "vero",
+          "start": 1.0,
+          "end": 1.24
+        },
+        {
+          "text": "e",
+          "start": 1.28,
+          "end": 1.32
+        },
+        {
+          "text": "proprio",
+          "start": 1.36,
+          "end": 1.66
+        },
+        {
+          "text": "del",
+          "start": 1.7,
+          "end": 1.8
+        },
+        {
+          "text": "Machine",
+          "start": 1.84,
+          "end": 2.16
+        },
+        {
+          "text": "Learning",
+          "start": 2.22,
+          "end": 2.64
+        },
+        {
+          "text": "formulando",
+          "start": 2.76,
+          "end": 3.24
+        },
+        {
+          "text": "il",
+          "start": 3.28,
+          "end": 3.34
+        },
+        {
+          "text": "problema",
+          "start": 3.38,
+          "end": 3.78
+        },
+        {
+          "text": "che",
+          "start": 3.84,
+          "end": 3.92
+        },
+        {
+          "text": "tutto",
+          "start": 4.02,
+          "end": 4.281
+        },
+        {
+          "text": "il",
+          "start": 4.321,
+          "end": 4.381
+        }
+      ]
+    },
+    {
+      "start": 4.421,
+      "end": 9.161,
+      "text": "corso affronta: inferire una funzione sconosciuta a partire da esempi.",
+      "words": [
+        {
+          "text": "corso",
+          "start": 4.421,
+          "end": 4.641
+        },
+        {
+          "text": "affronta:",
+          "start": 4.661,
+          "end": 5.161
+        },
+        {
+          "text": "inferire",
+          "start": 5.981,
+          "end": 6.501
+        },
+        {
+          "text": "una",
+          "start": 6.561,
+          "end": 6.661
+        },
+        {
+          "text": "funzione",
+          "start": 6.701,
+          "end": 7.081
+        },
+        {
+          "text": "sconosciuta",
+          "start": 7.141,
+          "end": 7.801
+        },
+        {
+          "text": "a",
+          "start": 8.061,
+          "end": 8.101
+        },
+        {
+          "text": "partire",
+          "start": 8.161,
+          "end": 8.541
+        },
+        {
+          "text": "da",
+          "start": 8.581,
+          "end": 8.641
+        },
+        {
+          "text": "esempi.",
+          "start": 8.721,
+          "end": 9.161
+        }
+      ]
+    },
+    {
+      "start": 9.921,
+      "end": 15.502,
+      "text": "Formalmente, il Machine Learning studia metodi per costruire — cioè inferire — dipendenze,",
+      "words": [
+        {
+          "text": "Formalmente,",
+          "start": 9.921,
+          "end": 10.621
+        },
+        {
+          "text": "il",
+          "start": 10.661,
+          "end": 10.721
+        },
+        {
+          "text": "Machine",
+          "start": 10.761,
+          "end": 11.081
+        },
+        {
+          "text": "Learning",
+          "start": 11.121,
+          "end": 11.541
+        },
+        {
+          "text": "studia",
+          "start": 11.641,
+          "end": 11.941
+        },
+        {
+          "text": "metodi",
+          "start": 11.981,
+          "end": 12.361
+        },
+        {
+          "text": "per",
+          "start": 12.441,
+          "end": 12.561
+        },
+        {
+          "text": "costruire",
+          "start": 12.601,
+          "end": 13.202
+        },
+        {
+          "text": "—",
+          "start": 13.202,
+          "end": 13.352
+        },
+        {
+          "text": "cioè",
+          "start": 13.422,
+          "end": 13.582
+        },
+        {
+          "text": "inferire",
+          "start": 13.742,
+          "end": 14.322
+        },
+        {
+          "text": "—",
+          "start": 14.322,
+          "end": 14.472
+        },
+        {
+          "text": "dipendenze,",
+          "start": 14.762,
+          "end": 15.502
+        }
+      ]
+    },
+    {
+      "start": 15.782,
+      "end": 18.882,
+      "text": "funzioni o ipotesi da esempi di dati osservati.",
+      "words": [
+        {
+          "text": "funzioni",
+          "start": 15.782,
+          "end": 16.402
+        },
+        {
+          "text": "o",
+          "start": 16.582,
+          "end": 16.622
+        },
+        {
+          "text": "ipotesi",
+          "start": 16.722,
+          "end": 17.182
+        },
+        {
+          "text": "da",
+          "start": 17.242,
+          "end": 17.302
+        },
+        {
+          "text": "esempi",
+          "start": 17.462,
+          "end": 17.882
+        },
+        {
+          "text": "di",
+          "start": 17.922,
+          "end": 18.002
+        },
+        {
+          "text": "dati",
+          "start": 18.042,
+          "end": 18.262
+        },
+        {
+          "text": "osservati.",
+          "start": 18.302,
+          "end": 18.882
+        }
+      ]
+    },
+    {
+      "start": 19.482,
+      "end": 24.163,
+      "text": "Le funzioni ottenute devono soddisfare due requisiti: adattarsi agli esempi noti,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 19.482,
+          "end": 19.542
+        },
+        {
+          "text": "funzioni",
+          "start": 19.562,
+          "end": 19.922
+        },
+        {
+          "text": "ottenute",
+          "start": 20.082,
+          "end": 20.602
+        },
+        {
+          "text": "devono",
+          "start": 20.662,
+          "end": 20.942
+        },
+        {
+          "text": "soddisfare",
+          "start": 21.002,
+          "end": 21.483
+        },
+        {
+          "text": "due",
+          "start": 21.563,
+          "end": 21.743
+        },
+        {
+          "text": "requisiti:",
+          "start": 21.763,
+          "end": 22.343
+        },
+        {
+          "text": "adattarsi",
+          "start": 22.823,
+          "end": 23.323
+        },
+        {
+          "text": "agli",
+          "start": 23.343,
+          "end": 23.483
+        },
+        {
+          "text": "esempi",
+          "start": 23.503,
+          "end": 23.803
+        },
+        {
+          "text": "noti,",
+          "start": 23.863,
+          "end": 24.163
+        }
+      ]
+    },
+    {
+      "start": 24.483,
+      "end": 30.364,
+      "text": "il fit, e soprattutto generalizzare, cioè dare risposte con accuratezza ragionevole su dati nuovi.",
+      "words": [
+        {
+          "text": "il",
+          "start": 24.483,
+          "end": 24.583
+        },
+        {
+          "text": "fit,",
+          "start": 24.663,
+          "end": 24.943
+        },
+        {
+          "text": "e",
+          "start": 25.383,
+          "end": 25.423
+        },
+        {
+          "text": "soprattutto",
+          "start": 25.483,
+          "end": 26.003
+        },
+        {
+          "text": "generalizzare,",
+          "start": 26.103,
+          "end": 26.883
+        },
+        {
+          "text": "cioè",
+          "start": 27.143,
+          "end": 27.323
+        },
+        {
+          "text": "dare",
+          "start": 27.383,
+          "end": 27.543
+        },
+        {
+          "text": "risposte",
+          "start": 27.603,
+          "end": 28.123
+        },
+        {
+          "text": "con",
+          "start": 28.183,
+          "end": 28.303
+        },
+        {
+          "text": "accuratezza",
+          "start": 28.343,
+          "end": 28.883
+        },
+        {
+          "text": "ragionevole",
+          "start": 28.943,
+          "end": 29.483
+        },
+        {
+          "text": "su",
+          "start": 29.643,
+          "end": 29.703
+        },
+        {
+          "text": "dati",
+          "start": 29.783,
+          "end": 29.983
+        },
+        {
+          "text": "nuovi.",
+          "start": 30.044,
+          "end": 30.364
+        }
+      ]
+    },
+    {
+      "start": 30.984,
+      "end": 35.464,
+      "text": "I risultati devono essere verificabili sotto criteri statistici e computazionali,",
+      "words": [
+        {
+          "text": "I",
+          "start": 30.984,
+          "end": 31.024
+        },
+        {
+          "text": "risultati",
+          "start": 31.044,
+          "end": 31.544
+        },
+        {
+          "text": "devono",
+          "start": 31.604,
+          "end": 31.864
+        },
+        {
+          "text": "essere",
+          "start": 31.924,
+          "end": 32.204
+        },
+        {
+          "text": "verificabili",
+          "start": 32.264,
+          "end": 32.924
+        },
+        {
+          "text": "sotto",
+          "start": 32.984,
+          "end": 33.224
+        },
+        {
+          "text": "criteri",
+          "start": 33.264,
+          "end": 33.624
+        },
+        {
+          "text": "statistici",
+          "start": 33.664,
+          "end": 34.324
+        },
+        {
+          "text": "e",
+          "start": 34.464,
+          "end": 34.504
+        },
+        {
+          "text": "computazionali,",
+          "start": 34.584,
+          "end": 35.464
+        }
+      ]
+    },
+    {
+      "start": 35.804,
+      "end": 38.785,
+      "text": "tenendo conto di espressività e complessità algoritmica.",
+      "words": [
+        {
+          "text": "tenendo",
+          "start": 35.804,
+          "end": 36.124
+        },
+        {
+          "text": "conto",
+          "start": 36.164,
+          "end": 36.424
+        },
+        {
+          "text": "di",
+          "start": 36.464,
+          "end": 36.504
+        },
+        {
+          "text": "espressività",
+          "start": 36.584,
+          "end": 37.184
+        },
+        {
+          "text": "e",
+          "start": 37.444,
+          "end": 37.484
+        },
+        {
+          "text": "complessità",
+          "start": 37.544,
+          "end": 38.064
+        },
+        {
+          "text": "algoritmica.",
+          "start": 38.124,
+          "end": 38.785
+        }
+      ]
+    },
+    {
+      "start": 39.545,
+      "end": 43.465,
+      "text": "Operativamente il sistema apprende dall'esperienza e costruisce un modello,",
+      "words": [
+        {
+          "text": "Operativamente",
+          "start": 39.545,
+          "end": 40.365
+        },
+        {
+          "text": "il",
+          "start": 40.505,
+          "end": 40.585
+        },
+        {
+          "text": "sistema",
+          "start": 40.625,
+          "end": 40.945
+        },
+        {
+          "text": "apprende",
+          "start": 40.985,
+          "end": 41.325
+        },
+        {
+          "text": "dall'esperienza",
+          "start": 41.385,
+          "end": 42.185
+        },
+        {
+          "text": "e",
+          "start": 42.225,
+          "end": 42.265
+        },
+        {
+          "text": "costruisce",
+          "start": 42.305,
+          "end": 42.825
+        },
+        {
+          "text": "un",
+          "start": 42.885,
+          "end": 42.945
+        },
+        {
+          "text": "modello,",
+          "start": 42.965,
+          "end": 43.465
+        }
+      ]
+    },
+    {
+      "start": 43.745,
+      "end": 44.405,
+      "text": "o ipotesi.",
+      "words": [
+        {
+          "text": "o",
+          "start": 43.745,
+          "end": 43.785
+        },
+        {
+          "text": "ipotesi.",
+          "start": 43.865,
+          "end": 44.405
+        }
+      ]
+    },
+    {
+      "start": 45.025,
+      "end": 51.226,
+      "text": "Il corso adotta la visione unificata dell'approssimazione di funzioni in spazi di funzioni — matematicamente",
+      "words": [
+        {
+          "text": "Il",
+          "start": 45.025,
+          "end": 45.085
+        },
+        {
+          "text": "corso",
+          "start": 45.125,
+          "end": 45.405
+        },
+        {
+          "text": "adotta",
+          "start": 45.485,
+          "end": 45.845
+        },
+        {
+          "text": "la",
+          "start": 45.925,
+          "end": 45.985
+        },
+        {
+          "text": "visione",
+          "start": 46.025,
+          "end": 46.345
+        },
+        {
+          "text": "unificata",
+          "start": 46.385,
+          "end": 46.925
+        },
+        {
+          "text": "dell'approssimazione",
+          "start": 46.985,
+          "end": 47.946
+        },
+        {
+          "text": "di",
+          "start": 47.986,
+          "end": 48.046
+        },
+        {
+          "text": "funzioni",
+          "start": 48.086,
+          "end": 48.586
+        },
+        {
+          "text": "in",
+          "start": 48.746,
+          "end": 48.826
+        },
+        {
+          "text": "spazi",
+          "start": 48.886,
+          "end": 49.266
+        },
+        {
+          "text": "di",
+          "start": 49.306,
+          "end": 49.386
+        },
+        {
+          "text": "funzioni",
+          "start": 49.446,
+          "end": 50.026
+        },
+        {
+          "text": "—",
+          "start": 50.026,
+          "end": 50.176
+        },
+        {
+          "text": "matematicamente",
+          "start": 50.426,
+          "end": 51.226
+        }
+      ]
+    },
+    {
+      "start": 51.326,
+      "end": 57.367,
+      "text": "spazi di Hilbert — così compiti diversi come classificazione e regressione rientrano nello stesso quadro",
+      "words": [
+        {
+          "text": "spazi",
+          "start": 51.326,
+          "end": 51.686
+        },
+        {
+          "text": "di",
+          "start": 51.726,
+          "end": 51.766
+        },
+        {
+          "text": "Hilbert",
+          "start": 51.826,
+          "end": 52.226
+        },
+        {
+          "text": "—",
+          "start": 52.226,
+          "end": 52.376
+        },
+        {
+          "text": "così",
+          "start": 52.666,
+          "end": 52.866
+        },
+        {
+          "text": "compiti",
+          "start": 53.006,
+          "end": 53.326
+        },
+        {
+          "text": "diversi",
+          "start": 53.366,
+          "end": 53.746
+        },
+        {
+          "text": "come",
+          "start": 53.806,
+          "end": 53.966
+        },
+        {
+          "text": "classificazione",
+          "start": 54.046,
+          "end": 54.886
+        },
+        {
+          "text": "e",
+          "start": 54.926,
+          "end": 54.966
+        },
+        {
+          "text": "regressione",
+          "start": 55.026,
+          "end": 55.686
+        },
+        {
+          "text": "rientrano",
+          "start": 55.987,
+          "end": 56.467
+        },
+        {
+          "text": "nello",
+          "start": 56.547,
+          "end": 56.747
+        },
+        {
+          "text": "stesso",
+          "start": 56.787,
+          "end": 57.047
+        },
+        {
+          "text": "quadro",
+          "start": 57.087,
+          "end": 57.367
+        }
+      ]
+    },
+    {
+      "start": 57.407,
+      "end": 57.907,
+      "text": "rigoroso.",
+      "words": [
+        {
+          "text": "rigoroso.",
+          "start": 57.407,
+          "end": 57.907
+        }
+      ]
+    },
+    {
+      "start": 58.687,
+      "end": 61.107,
+      "text": "Quando conviene davvero usare il Machine Learning?",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 58.687,
+          "end": 58.927
+        },
+        {
+          "text": "conviene",
+          "start": 59.007,
+          "end": 59.507
+        },
+        {
+          "text": "davvero",
+          "start": 59.547,
+          "end": 59.887
+        },
+        {
+          "text": "usare",
+          "start": 59.947,
+          "end": 60.187
+        },
+        {
+          "text": "il",
+          "start": 60.227,
+          "end": 60.287
+        },
+        {
+          "text": "Machine",
+          "start": 60.307,
+          "end": 60.627
+        },
+        {
+          "text": "Learning?",
+          "start": 60.667,
+          "end": 61.107
+        }
+      ]
+    },
+    {
+      "start": 61.627,
+      "end": 64.027,
+      "text": "Serve opportunità e consapevolezza.",
+      "words": [
+        {
+          "text": "Serve",
+          "start": 61.627,
+          "end": 61.887
+        },
+        {
+          "text": "opportunità",
+          "start": 62.067,
+          "end": 62.647
+        },
+        {
+          "text": "e",
+          "start": 63.047,
+          "end": 63.087
+        },
+        {
+          "text": "consapevolezza.",
+          "start": 63.167,
+          "end": 64.027
+        }
+      ]
+    },
+    {
+      "start": 64.508,
+      "end": 68.928,
+      "text": "È la scelta giusta quando c'è poca conoscenza a priori o la conoscenza è troppo",
+      "words": [
+        {
+          "text": "È",
+          "start": 64.508,
+          "end": 64.548
+        },
+        {
+          "text": "la",
+          "start": 64.588,
+          "end": 64.628
+        },
+        {
+          "text": "scelta",
+          "start": 64.648,
+          "end": 64.928
+        },
+        {
+          "text": "giusta",
+          "start": 64.988,
+          "end": 65.248
+        },
+        {
+          "text": "quando",
+          "start": 65.308,
+          "end": 65.608
+        },
+        {
+          "text": "c'è",
+          "start": 65.968,
+          "end": 66.088
+        },
+        {
+          "text": "poca",
+          "start": 66.168,
+          "end": 66.408
+        },
+        {
+          "text": "conoscenza",
+          "start": 66.468,
+          "end": 67.008
+        },
+        {
+          "text": "a",
+          "start": 67.068,
+          "end": 67.108
+        },
+        {
+          "text": "priori",
+          "start": 67.148,
+          "end": 67.568
+        },
+        {
+          "text": "o",
+          "start": 67.868,
+          "end": 67.908
+        },
+        {
+          "text": "la",
+          "start": 67.928,
+          "end": 67.988
+        },
+        {
+          "text": "conoscenza",
+          "start": 68.028,
+          "end": 68.528
+        },
+        {
+          "text": "è",
+          "start": 68.568,
+          "end": 68.608
+        },
+        {
+          "text": "troppo",
+          "start": 68.648,
+          "end": 68.928
+        }
+      ]
+    },
+    {
+      "start": 68.968,
+      "end": 72.248,
+      "text": "difficile da formalizzare a mano — come riconoscere volti,",
+      "words": [
+        {
+          "text": "difficile",
+          "start": 68.968,
+          "end": 69.428
+        },
+        {
+          "text": "da",
+          "start": 69.448,
+          "end": 69.508
+        },
+        {
+          "text": "formalizzare",
+          "start": 69.568,
+          "end": 70.128
+        },
+        {
+          "text": "a",
+          "start": 70.168,
+          "end": 70.20800000000001
+        },
+        {
+          "text": "mano",
+          "start": 70.248,
+          "end": 70.548
+        },
+        {
+          "text": "—",
+          "start": 70.548,
+          "end": 70.698
+        },
+        {
+          "text": "come",
+          "start": 70.888,
+          "end": 71.068
+        },
+        {
+          "text": "riconoscere",
+          "start": 71.188,
+          "end": 71.748
+        },
+        {
+          "text": "volti,",
+          "start": 71.808,
+          "end": 72.248
+        }
+      ]
+    },
+    {
+      "start": 72.428,
+      "end": 77.069,
+      "text": "parlato o prevedere la forza di legame di una molecola con una proteina — quando",
+      "words": [
+        {
+          "text": "parlato",
+          "start": 72.428,
+          "end": 72.988
+        },
+        {
+          "text": "o",
+          "start": 73.309,
+          "end": 73.349
+        },
+        {
+          "text": "prevedere",
+          "start": 73.409,
+          "end": 73.849
+        },
+        {
+          "text": "la",
+          "start": 73.889,
+          "end": 73.949
+        },
+        {
+          "text": "forza",
+          "start": 73.989,
+          "end": 74.269
+        },
+        {
+          "text": "di",
+          "start": 74.309,
+          "end": 74.369
+        },
+        {
+          "text": "legame",
+          "start": 74.409,
+          "end": 74.709
+        },
+        {
+          "text": "di",
+          "start": 74.769,
+          "end": 74.829
+        },
+        {
+          "text": "una",
+          "start": 74.869,
+          "end": 74.969
+        },
+        {
+          "text": "molecola",
+          "start": 75.029,
+          "end": 75.469
+        },
+        {
+          "text": "con",
+          "start": 75.529,
+          "end": 75.649
+        },
+        {
+          "text": "una",
+          "start": 75.689,
+          "end": 75.789
+        },
+        {
+          "text": "proteina",
+          "start": 75.829,
+          "end": 76.349
+        },
+        {
+          "text": "—",
+          "start": 76.349,
+          "end": 76.499
+        },
+        {
+          "text": "quando",
+          "start": 76.869,
+          "end": 77.069
+        }
+      ]
+    },
+    {
+      "start": 77.109,
+      "end": 83.39,
+      "text": "i dati sono incerti, rumorosi o incompleti, quando serve personalizzazione come nel filtraggio email,",
+      "words": [
+        {
+          "text": "i",
+          "start": 77.109,
+          "end": 77.149
+        },
+        {
+          "text": "dati",
+          "start": 77.169,
+          "end": 77.389
+        },
+        {
+          "text": "sono",
+          "start": 77.469,
+          "end": 77.669
+        },
+        {
+          "text": "incerti,",
+          "start": 77.709,
+          "end": 78.249
+        },
+        {
+          "text": "rumorosi",
+          "start": 78.569,
+          "end": 79.149
+        },
+        {
+          "text": "o",
+          "start": 79.209,
+          "end": 79.24900000000001
+        },
+        {
+          "text": "incompleti,",
+          "start": 79.289,
+          "end": 79.909
+        },
+        {
+          "text": "quando",
+          "start": 80.289,
+          "end": 80.489
+        },
+        {
+          "text": "serve",
+          "start": 80.529,
+          "end": 80.769
+        },
+        {
+          "text": "personalizzazione",
+          "start": 80.869,
+          "end": 81.97
+        },
+        {
+          "text": "come",
+          "start": 82.19,
+          "end": 82.35
+        },
+        {
+          "text": "nel",
+          "start": 82.41,
+          "end": 82.53
+        },
+        {
+          "text": "filtraggio",
+          "start": 82.57,
+          "end": 82.99
+        },
+        {
+          "text": "email,",
+          "start": 83.05,
+          "end": 83.39
+        }
+      ]
+    },
+    {
+      "start": 83.83,
+      "end": 86.19,
+      "text": "ed è facile raccogliere esperienza etichettata.",
+      "words": [
+        {
+          "text": "ed",
+          "start": 83.83,
+          "end": 83.91
+        },
+        {
+          "text": "è",
+          "start": 83.93,
+          "end": 83.97000000000001
+        },
+        {
+          "text": "facile",
+          "start": 84.03,
+          "end": 84.35
+        },
+        {
+          "text": "raccogliere",
+          "start": 84.41,
+          "end": 84.83
+        },
+        {
+          "text": "esperienza",
+          "start": 84.95,
+          "end": 85.45
+        },
+        {
+          "text": "etichettata.",
+          "start": 85.49,
+          "end": 86.19
+        }
+      ]
+    },
+    {
+      "start": 86.87,
+      "end": 92.491,
+      "text": "In cambio il Machine Learning richiede una fonte di esperienza rappresentativa e una certa tolleranza",
+      "words": [
+        {
+          "text": "In",
+          "start": 86.87,
+          "end": 86.95
+        },
+        {
+          "text": "cambio",
+          "start": 86.99,
+          "end": 87.31
+        },
+        {
+          "text": "il",
+          "start": 87.47,
+          "end": 87.55
+        },
+        {
+          "text": "Machine",
+          "start": 87.59,
+          "end": 87.89
+        },
+        {
+          "text": "Learning",
+          "start": 87.93,
+          "end": 88.29
+        },
+        {
+          "text": "richiede",
+          "start": 88.35,
+          "end": 88.73
+        },
+        {
+          "text": "una",
+          "start": 88.89,
+          "end": 89.03
+        },
+        {
+          "text": "fonte",
+          "start": 89.15,
+          "end": 89.45
+        },
+        {
+          "text": "di",
+          "start": 89.49,
+          "end": 89.53
+        },
+        {
+          "text": "esperienza",
+          "start": 89.57,
+          "end": 90.05
+        },
+        {
+          "text": "rappresentativa",
+          "start": 90.15,
+          "end": 91.071
+        },
+        {
+          "text": "e",
+          "start": 91.431,
+          "end": 91.471
+        },
+        {
+          "text": "una",
+          "start": 91.511,
+          "end": 91.611
+        },
+        {
+          "text": "certa",
+          "start": 91.651,
+          "end": 91.911
+        },
+        {
+          "text": "tolleranza",
+          "start": 91.991,
+          "end": 92.491
+        }
+      ]
+    },
+    {
+      "start": 92.551,
+      "end": 97.091,
+      "text": "sulla precisione: i risultati non sono mai garantiti esatti al cento per cento.",
+      "words": [
+        {
+          "text": "sulla",
+          "start": 92.551,
+          "end": 92.731
+        },
+        {
+          "text": "precisione:",
+          "start": 92.771,
+          "end": 93.391
+        },
+        {
+          "text": "i",
+          "start": 93.771,
+          "end": 93.811
+        },
+        {
+          "text": "risultati",
+          "start": 93.871,
+          "end": 94.331
+        },
+        {
+          "text": "non",
+          "start": 94.431,
+          "end": 94.551
+        },
+        {
+          "text": "sono",
+          "start": 94.611,
+          "end": 94.791
+        },
+        {
+          "text": "mai",
+          "start": 94.871,
+          "end": 95.031
+        },
+        {
+          "text": "garantiti",
+          "start": 95.091,
+          "end": 95.531
+        },
+        {
+          "text": "esatti",
+          "start": 95.591,
+          "end": 95.991
+        },
+        {
+          "text": "al",
+          "start": 96.131,
+          "end": 96.211
+        },
+        {
+          "text": "cento",
+          "start": 96.271,
+          "end": 96.511
+        },
+        {
+          "text": "per",
+          "start": 96.551,
+          "end": 96.671
+        },
+        {
+          "text": "cento.",
+          "start": 96.731,
+          "end": 97.091
+        }
+      ]
+    }
+  ]
+}

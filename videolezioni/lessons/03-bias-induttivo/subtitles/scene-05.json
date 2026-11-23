@@ -1,0 +1,900 @@
+{
+  "duration": 66.621,
+  "segments": [
+    {
+      "start": 0.343,
+      "end": 4.223,
+      "text": "Esiste una caratterizzazione molto elegante del bias induttivo:",
+      "words": [
+        {
+          "text": "Esiste",
+          "start": 0.343,
+          "end": 0.663
+        },
+        {
+          "text": "una",
+          "start": 0.723,
+          "end": 0.823
+        },
+        {
+          "text": "caratterizzazione",
+          "start": 0.863,
+          "end": 1.763
+        },
+        {
+          "text": "molto",
+          "start": 1.883,
+          "end": 2.183
+        },
+        {
+          "text": "elegante",
+          "start": 2.263,
+          "end": 2.843
+        },
+        {
+          "text": "del",
+          "start": 3.103,
+          "end": 3.243
+        },
+        {
+          "text": "bias",
+          "start": 3.283,
+          "end": 3.623
+        },
+        {
+          "text": "induttivo:",
+          "start": 3.683,
+          "end": 4.223
+        }
+      ]
+    },
+    {
+      "start": 5.183,
+      "end": 10.584,
+      "text": "ogni sistema induttivo che apprende usando lo spazio H è equivalente a un sistema deduttivo,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 5.183,
+          "end": 5.343
+        },
+        {
+          "text": "sistema",
+          "start": 5.403,
+          "end": 5.783
+        },
+        {
+          "text": "induttivo",
+          "start": 5.843,
+          "end": 6.444
+        },
+        {
+          "text": "che",
+          "start": 6.664,
+          "end": 6.744
+        },
+        {
+          "text": "apprende",
+          "start": 6.784,
+          "end": 7.084
+        },
+        {
+          "text": "usando",
+          "start": 7.124,
+          "end": 7.384
+        },
+        {
+          "text": "lo",
+          "start": 7.424,
+          "end": 7.484
+        },
+        {
+          "text": "spazio",
+          "start": 7.524,
+          "end": 7.924
+        },
+        {
+          "text": "H",
+          "start": 8.324,
+          "end": 8.364
+        },
+        {
+          "text": "è",
+          "start": 8.604,
+          "end": 8.644
+        },
+        {
+          "text": "equivalente",
+          "start": 8.704,
+          "end": 9.224
+        },
+        {
+          "text": "a",
+          "start": 9.244,
+          "end": 9.284
+        },
+        {
+          "text": "un",
+          "start": 9.324,
+          "end": 9.384
+        },
+        {
+          "text": "sistema",
+          "start": 9.424,
+          "end": 9.784
+        },
+        {
+          "text": "deduttivo,",
+          "start": 9.904,
+          "end": 10.584
+        }
+      ]
+    },
+    {
+      "start": 11.004,
+      "end": 12.784,
+      "text": "cioè a un dimostratore di teoremi.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 11.004,
+          "end": 11.164
+        },
+        {
+          "text": "a",
+          "start": 11.304,
+          "end": 11.344
+        },
+        {
+          "text": "un",
+          "start": 11.384,
+          "end": 11.444
+        },
+        {
+          "text": "dimostratore",
+          "start": 11.484,
+          "end": 12.144
+        },
+        {
+          "text": "di",
+          "start": 12.204,
+          "end": 12.264
+        },
+        {
+          "text": "teoremi.",
+          "start": 12.324,
+          "end": 12.784
+        }
+      ]
+    },
+    {
+      "start": 13.484,
+      "end": 19.185,
+      "text": "Guarda lo schema: in alto il sistema induttivo riceve esempi di training e nuova istanza",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 13.484,
+          "end": 13.724
+        },
+        {
+          "text": "lo",
+          "start": 13.764,
+          "end": 13.824
+        },
+        {
+          "text": "schema:",
+          "start": 13.864,
+          "end": 14.165
+        },
+        {
+          "text": "in",
+          "start": 14.745,
+          "end": 14.845
+        },
+        {
+          "text": "alto",
+          "start": 14.905,
+          "end": 15.205
+        },
+        {
+          "text": "il",
+          "start": 15.445,
+          "end": 15.545
+        },
+        {
+          "text": "sistema",
+          "start": 15.585,
+          "end": 15.925
+        },
+        {
+          "text": "induttivo",
+          "start": 15.965,
+          "end": 16.385
+        },
+        {
+          "text": "riceve",
+          "start": 16.425,
+          "end": 16.765
+        },
+        {
+          "text": "esempi",
+          "start": 16.905,
+          "end": 17.345
+        },
+        {
+          "text": "di",
+          "start": 17.405,
+          "end": 17.465
+        },
+        {
+          "text": "training",
+          "start": 17.505,
+          "end": 17.965
+        },
+        {
+          "text": "e",
+          "start": 18.145,
+          "end": 18.185
+        },
+        {
+          "text": "nuova",
+          "start": 18.305,
+          "end": 18.585
+        },
+        {
+          "text": "istanza",
+          "start": 18.645,
+          "end": 19.185
+        }
+      ]
+    },
+    {
+      "start": 19.645,
+      "end": 21.165,
+      "text": "e produce una classificazione.",
+      "words": [
+        {
+          "text": "e",
+          "start": 19.645,
+          "end": 19.685
+        },
+        {
+          "text": "produce",
+          "start": 19.745,
+          "end": 20.105
+        },
+        {
+          "text": "una",
+          "start": 20.145,
+          "end": 20.245
+        },
+        {
+          "text": "classificazione.",
+          "start": 20.285,
+          "end": 21.165
+        }
+      ]
+    },
+    {
+      "start": 21.905,
+      "end": 26.786,
+      "text": "In basso il dimostratore di teoremi riceve gli stessi esempi e la stessa istanza,",
+      "words": [
+        {
+          "text": "In",
+          "start": 21.905,
+          "end": 21.985
+        },
+        {
+          "text": "basso",
+          "start": 22.046,
+          "end": 22.466
+        },
+        {
+          "text": "il",
+          "start": 22.706,
+          "end": 22.786
+        },
+        {
+          "text": "dimostratore",
+          "start": 22.806,
+          "end": 23.366
+        },
+        {
+          "text": "di",
+          "start": 23.406,
+          "end": 23.486
+        },
+        {
+          "text": "teoremi",
+          "start": 23.526,
+          "end": 23.966
+        },
+        {
+          "text": "riceve",
+          "start": 24.046,
+          "end": 24.326
+        },
+        {
+          "text": "gli",
+          "start": 24.366,
+          "end": 24.526
+        },
+        {
+          "text": "stessi",
+          "start": 24.586,
+          "end": 24.946
+        },
+        {
+          "text": "esempi",
+          "start": 25.006,
+          "end": 25.466
+        },
+        {
+          "text": "e",
+          "start": 25.626,
+          "end": 25.666
+        },
+        {
+          "text": "la",
+          "start": 25.726,
+          "end": 25.806
+        },
+        {
+          "text": "stessa",
+          "start": 25.846,
+          "end": 26.206
+        },
+        {
+          "text": "istanza,",
+          "start": 26.266,
+          "end": 26.786
+        }
+      ]
+    },
+    {
+      "start": 27.226,
+      "end": 32.247,
+      "text": "più il bias induttivo come assioma esplicito aggiuntivo, e produce la medesima uscita.",
+      "words": [
+        {
+          "text": "più",
+          "start": 27.226,
+          "end": 27.326
+        },
+        {
+          "text": "il",
+          "start": 27.466,
+          "end": 27.546
+        },
+        {
+          "text": "bias",
+          "start": 27.586,
+          "end": 27.886
+        },
+        {
+          "text": "induttivo",
+          "start": 27.946,
+          "end": 28.406
+        },
+        {
+          "text": "come",
+          "start": 28.466,
+          "end": 28.626
+        },
+        {
+          "text": "assioma",
+          "start": 28.686,
+          "end": 29.066
+        },
+        {
+          "text": "esplicito",
+          "start": 29.126,
+          "end": 29.666
+        },
+        {
+          "text": "aggiuntivo,",
+          "start": 29.706,
+          "end": 30.287
+        },
+        {
+          "text": "e",
+          "start": 30.807,
+          "end": 30.847
+        },
+        {
+          "text": "produce",
+          "start": 30.927,
+          "end": 31.287
+        },
+        {
+          "text": "la",
+          "start": 31.327,
+          "end": 31.387
+        },
+        {
+          "text": "medesima",
+          "start": 31.427,
+          "end": 31.827
+        },
+        {
+          "text": "uscita.",
+          "start": 31.867,
+          "end": 32.247
+        }
+      ]
+    },
+    {
+      "start": 33.067,
+      "end": 39.828,
+      "text": "Il bias induttivo è quindi esattamente l'insieme di assunzioni che rende logicamente deducibile la risposta",
+      "words": [
+        {
+          "text": "Il",
+          "start": 33.067,
+          "end": 33.147
+        },
+        {
+          "text": "bias",
+          "start": 33.187,
+          "end": 33.507
+        },
+        {
+          "text": "induttivo",
+          "start": 33.567,
+          "end": 34.067
+        },
+        {
+          "text": "è",
+          "start": 34.187,
+          "end": 34.227
+        },
+        {
+          "text": "quindi",
+          "start": 34.287,
+          "end": 34.547
+        },
+        {
+          "text": "esattamente",
+          "start": 34.667,
+          "end": 35.427
+        },
+        {
+          "text": "l'insieme",
+          "start": 35.467,
+          "end": 35.927
+        },
+        {
+          "text": "di",
+          "start": 35.967,
+          "end": 36.027
+        },
+        {
+          "text": "assunzioni",
+          "start": 36.067,
+          "end": 36.747
+        },
+        {
+          "text": "che",
+          "start": 37.127,
+          "end": 37.207
+        },
+        {
+          "text": "rende",
+          "start": 37.267,
+          "end": 37.507
+        },
+        {
+          "text": "logicamente",
+          "start": 37.687,
+          "end": 38.348
+        },
+        {
+          "text": "deducibile",
+          "start": 38.448,
+          "end": 39.128
+        },
+        {
+          "text": "la",
+          "start": 39.288,
+          "end": 39.348
+        },
+        {
+          "text": "risposta",
+          "start": 39.408,
+          "end": 39.828
+        }
+      ]
+    },
+    {
+      "start": 39.868,
+      "end": 40.388,
+      "text": "del learner.",
+      "words": [
+        {
+          "text": "del",
+          "start": 39.868,
+          "end": 39.968
+        },
+        {
+          "text": "learner.",
+          "start": 40.008,
+          "end": 40.388
+        }
+      ]
+    },
+    {
+      "start": 41.288,
+      "end": 43.648,
+      "text": "Come ci si comporta nel Machine Learning moderno:",
+      "words": [
+        {
+          "text": "Come",
+          "start": 41.288,
+          "end": 41.488
+        },
+        {
+          "text": "ci",
+          "start": 41.548,
+          "end": 41.628
+        },
+        {
+          "text": "si",
+          "start": 41.668,
+          "end": 41.728
+        },
+        {
+          "text": "comporta",
+          "start": 41.768,
+          "end": 42.228
+        },
+        {
+          "text": "nel",
+          "start": 42.268,
+          "end": 42.388
+        },
+        {
+          "text": "Machine",
+          "start": 42.428,
+          "end": 42.748
+        },
+        {
+          "text": "Learning",
+          "start": 42.788,
+          "end": 43.128
+        },
+        {
+          "text": "moderno:",
+          "start": 43.168,
+          "end": 43.648
+        }
+      ]
+    },
+    {
+      "start": 44.268,
+      "end": 46.248,
+      "text": "language bias o search bias?",
+      "words": [
+        {
+          "text": "language",
+          "start": 44.268,
+          "end": 44.668
+        },
+        {
+          "text": "bias",
+          "start": 44.688,
+          "end": 45.108
+        },
+        {
+          "text": "o",
+          "start": 45.308,
+          "end": 45.348
+        },
+        {
+          "text": "search",
+          "start": 45.468,
+          "end": 45.748
+        },
+        {
+          "text": "bias?",
+          "start": 45.808,
+          "end": 46.248
+        }
+      ]
+    },
+    {
+      "start": 46.989,
+      "end": 53.069,
+      "text": "In genere si preferisce il search bias: si scelgono modelli molto espressivi e approssimatori universali",
+      "words": [
+        {
+          "text": "In",
+          "start": 46.989,
+          "end": 47.069
+        },
+        {
+          "text": "genere",
+          "start": 47.129,
+          "end": 47.509
+        },
+        {
+          "text": "si",
+          "start": 47.569,
+          "end": 47.629
+        },
+        {
+          "text": "preferisce",
+          "start": 47.669,
+          "end": 48.149
+        },
+        {
+          "text": "il",
+          "start": 48.209,
+          "end": 48.269
+        },
+        {
+          "text": "search",
+          "start": 48.369,
+          "end": 48.649
+        },
+        {
+          "text": "bias:",
+          "start": 48.729,
+          "end": 49.169
+        },
+        {
+          "text": "si",
+          "start": 49.609,
+          "end": 49.669
+        },
+        {
+          "text": "scelgono",
+          "start": 49.709,
+          "end": 50.069
+        },
+        {
+          "text": "modelli",
+          "start": 50.109,
+          "end": 50.429
+        },
+        {
+          "text": "molto",
+          "start": 50.529,
+          "end": 50.789
+        },
+        {
+          "text": "espressivi",
+          "start": 50.829,
+          "end": 51.449
+        },
+        {
+          "text": "e",
+          "start": 51.669,
+          "end": 51.709
+        },
+        {
+          "text": "approssimatori",
+          "start": 51.749,
+          "end": 52.369
+        },
+        {
+          "text": "universali",
+          "start": 52.409,
+          "end": 53.069
+        }
+      ]
+    },
+    {
+      "start": 53.069,
+      "end": 57.41,
+      "text": "— come reti neurali o alberi di decisione — per non escludere a priori la",
+      "words": [
+        {
+          "text": "—",
+          "start": 53.069,
+          "end": 53.219
+        },
+        {
+          "text": "come",
+          "start": 53.469,
+          "end": 53.609
+        },
+        {
+          "text": "reti",
+          "start": 53.689,
+          "end": 53.869
+        },
+        {
+          "text": "neurali",
+          "start": 53.929,
+          "end": 54.409
+        },
+        {
+          "text": "o",
+          "start": 54.549,
+          "end": 54.589
+        },
+        {
+          "text": "alberi",
+          "start": 54.65,
+          "end": 54.95
+        },
+        {
+          "text": "di",
+          "start": 55.01,
+          "end": 55.07
+        },
+        {
+          "text": "decisione",
+          "start": 55.11,
+          "end": 55.69
+        },
+        {
+          "text": "—",
+          "start": 55.69,
+          "end": 55.84
+        },
+        {
+          "text": "per",
+          "start": 56.15,
+          "end": 56.25
+        },
+        {
+          "text": "non",
+          "start": 56.29,
+          "end": 56.43
+        },
+        {
+          "text": "escludere",
+          "start": 56.47,
+          "end": 56.87
+        },
+        {
+          "text": "a",
+          "start": 56.91,
+          "end": 56.95
+        },
+        {
+          "text": "priori",
+          "start": 56.97,
+          "end": 57.29
+        },
+        {
+          "text": "la",
+          "start": 57.35,
+          "end": 57.41
+        }
+      ]
+    },
+    {
+      "start": 57.45,
+      "end": 63.371,
+      "text": "funzione target da H, affidando il bias induttivo a una ricerca incompleta che privilegia certe",
+      "words": [
+        {
+          "text": "funzione",
+          "start": 57.45,
+          "end": 57.81
+        },
+        {
+          "text": "target",
+          "start": 57.85,
+          "end": 58.23
+        },
+        {
+          "text": "da",
+          "start": 58.37,
+          "end": 58.43
+        },
+        {
+          "text": "H,",
+          "start": 58.75,
+          "end": 58.79
+        },
+        {
+          "text": "affidando",
+          "start": 59.25,
+          "end": 59.67
+        },
+        {
+          "text": "il",
+          "start": 59.71,
+          "end": 59.77
+        },
+        {
+          "text": "bias",
+          "start": 59.79,
+          "end": 60.13
+        },
+        {
+          "text": "induttivo",
+          "start": 60.27,
+          "end": 60.85
+        },
+        {
+          "text": "a",
+          "start": 61.01,
+          "end": 61.05
+        },
+        {
+          "text": "una",
+          "start": 61.11,
+          "end": 61.23
+        },
+        {
+          "text": "ricerca",
+          "start": 61.27,
+          "end": 61.63
+        },
+        {
+          "text": "incompleta",
+          "start": 61.69,
+          "end": 62.29
+        },
+        {
+          "text": "che",
+          "start": 62.41,
+          "end": 62.49
+        },
+        {
+          "text": "privilegia",
+          "start": 62.55,
+          "end": 63.071
+        },
+        {
+          "text": "certe",
+          "start": 63.131,
+          "end": 63.371
+        }
+      ]
+    },
+    {
+      "start": 63.411,
+      "end": 66.371,
+      "text": "soluzioni più semplici o regolari rispetto ad altre.",
+      "words": [
+        {
+          "text": "soluzioni",
+          "start": 63.411,
+          "end": 63.851
+        },
+        {
+          "text": "più",
+          "start": 63.891,
+          "end": 63.991
+        },
+        {
+          "text": "semplici",
+          "start": 64.111,
+          "end": 64.631
+        },
+        {
+          "text": "o",
+          "start": 64.791,
+          "end": 64.831
+        },
+        {
+          "text": "regolari",
+          "start": 64.951,
+          "end": 65.431
+        },
+        {
+          "text": "rispetto",
+          "start": 65.611,
+          "end": 65.951
+        },
+        {
+          "text": "ad",
+          "start": 65.971,
+          "end": 66.031
+        },
+        {
+          "text": "altre.",
+          "start": 66.091,
+          "end": 66.371
+        }
+      ]
+    }
+  ]
+}

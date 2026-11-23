@@ -1,0 +1,1578 @@
+{
+  "duration": 98.646,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.321,
+      "text": "Passiamo alla classificazione con modelli lineari, dove i target sono categorici — zero uno oppure",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.08,
+          "end": 0.4
+        },
+        {
+          "text": "alla",
+          "start": 0.42,
+          "end": 0.54
+        },
+        {
+          "text": "classificazione",
+          "start": 0.56,
+          "end": 1.32
+        },
+        {
+          "text": "con",
+          "start": 1.36,
+          "end": 1.46
+        },
+        {
+          "text": "modelli",
+          "start": 1.5,
+          "end": 1.8
+        },
+        {
+          "text": "lineari,",
+          "start": 1.86,
+          "end": 2.32
+        },
+        {
+          "text": "dove",
+          "start": 2.64,
+          "end": 2.8
+        },
+        {
+          "text": "i",
+          "start": 2.84,
+          "end": 2.88
+        },
+        {
+          "text": "target",
+          "start": 2.9,
+          "end": 3.26
+        },
+        {
+          "text": "sono",
+          "start": 3.36,
+          "end": 3.5
+        },
+        {
+          "text": "categorici",
+          "start": 3.56,
+          "end": 4.18
+        },
+        {
+          "text": "—",
+          "start": 4.18,
+          "end": 4.33
+        },
+        {
+          "text": "zero",
+          "start": 4.54,
+          "end": 4.72
+        },
+        {
+          "text": "uno",
+          "start": 4.82,
+          "end": 4.961
+        },
+        {
+          "text": "oppure",
+          "start": 5.021,
+          "end": 5.321
+        }
+      ]
+    },
+    {
+      "start": 5.461,
+      "end": 6.201,
+      "text": "meno uno più uno.",
+      "words": [
+        {
+          "text": "meno",
+          "start": 5.461,
+          "end": 5.601
+        },
+        {
+          "text": "uno",
+          "start": 5.681,
+          "end": 5.801
+        },
+        {
+          "text": "più",
+          "start": 5.861,
+          "end": 5.961
+        },
+        {
+          "text": "uno.",
+          "start": 6.041,
+          "end": 6.201
+        }
+      ]
+    },
+    {
+      "start": 6.841,
+      "end": 11.821,
+      "text": "L'equazione w trasposto x più w zero uguale a zero definisce l'iperpiano separatore,",
+      "words": [
+        {
+          "text": "L'equazione",
+          "start": 6.841,
+          "end": 7.281
+        },
+        {
+          "text": "w",
+          "start": 7.401,
+          "end": 7.441
+        },
+        {
+          "text": "trasposto",
+          "start": 7.781,
+          "end": 8.281
+        },
+        {
+          "text": "x",
+          "start": 8.481,
+          "end": 8.521
+        },
+        {
+          "text": "più",
+          "start": 8.741,
+          "end": 8.821
+        },
+        {
+          "text": "w",
+          "start": 8.881,
+          "end": 8.921
+        },
+        {
+          "text": "zero",
+          "start": 9.341,
+          "end": 9.601
+        },
+        {
+          "text": "uguale",
+          "start": 9.641,
+          "end": 9.841
+        },
+        {
+          "text": "a",
+          "start": 9.881,
+          "end": 9.921
+        },
+        {
+          "text": "zero",
+          "start": 9.961,
+          "end": 10.181
+        },
+        {
+          "text": "definisce",
+          "start": 10.241,
+          "end": 10.661
+        },
+        {
+          "text": "l'iperpiano",
+          "start": 10.761,
+          "end": 11.221
+        },
+        {
+          "text": "separatore,",
+          "start": 11.261,
+          "end": 11.821
+        }
+      ]
+    },
+    {
+      "start": 12.161,
+      "end": 13.661,
+      "text": "chiamato confine di decisione:",
+      "words": [
+        {
+          "text": "chiamato",
+          "start": 12.161,
+          "end": 12.481
+        },
+        {
+          "text": "confine",
+          "start": 12.521,
+          "end": 12.901
+        },
+        {
+          "text": "di",
+          "start": 12.961,
+          "end": 13.021
+        },
+        {
+          "text": "decisione:",
+          "start": 13.081,
+          "end": 13.661
+        }
+      ]
+    },
+    {
+      "start": 14.221,
+      "end": 17.982,
+      "text": "in due dimensioni è una retta, w zero più w uno x uno più w",
+      "words": [
+        {
+          "text": "in",
+          "start": 14.221,
+          "end": 14.301
+        },
+        {
+          "text": "due",
+          "start": 14.321,
+          "end": 14.421
+        },
+        {
+          "text": "dimensioni",
+          "start": 14.441,
+          "end": 14.941
+        },
+        {
+          "text": "è",
+          "start": 15.042,
+          "end": 15.082
+        },
+        {
+          "text": "una",
+          "start": 15.102,
+          "end": 15.202
+        },
+        {
+          "text": "retta,",
+          "start": 15.262,
+          "end": 15.582
+        },
+        {
+          "text": "w",
+          "start": 15.842,
+          "end": 15.882
+        },
+        {
+          "text": "zero",
+          "start": 16.262,
+          "end": 16.482
+        },
+        {
+          "text": "più",
+          "start": 16.542,
+          "end": 16.622
+        },
+        {
+          "text": "w",
+          "start": 16.682,
+          "end": 16.722
+        },
+        {
+          "text": "uno",
+          "start": 16.722,
+          "end": 17.262
+        },
+        {
+          "text": "x",
+          "start": 17.382,
+          "end": 17.422
+        },
+        {
+          "text": "uno",
+          "start": 17.562,
+          "end": 17.742
+        },
+        {
+          "text": "più",
+          "start": 17.802,
+          "end": 17.882
+        },
+        {
+          "text": "w",
+          "start": 17.942,
+          "end": 17.982
+        }
+      ]
+    },
+    {
+      "start": 18.022,
+      "end": 22.342,
+      "text": "due x due uguale a zero, che in forma esplicita si scrive x due uguale",
+      "words": [
+        {
+          "text": "due",
+          "start": 18.022,
+          "end": 18.402
+        },
+        {
+          "text": "x",
+          "start": 18.502,
+          "end": 18.542
+        },
+        {
+          "text": "due",
+          "start": 18.622,
+          "end": 18.782
+        },
+        {
+          "text": "uguale",
+          "start": 18.822,
+          "end": 19.042
+        },
+        {
+          "text": "a",
+          "start": 19.082,
+          "end": 19.122
+        },
+        {
+          "text": "zero,",
+          "start": 19.202,
+          "end": 19.482
+        },
+        {
+          "text": "che",
+          "start": 19.802,
+          "end": 19.882
+        },
+        {
+          "text": "in",
+          "start": 19.922,
+          "end": 19.962
+        },
+        {
+          "text": "forma",
+          "start": 19.982,
+          "end": 20.182
+        },
+        {
+          "text": "esplicita",
+          "start": 20.242,
+          "end": 20.762
+        },
+        {
+          "text": "si",
+          "start": 20.802,
+          "end": 20.882
+        },
+        {
+          "text": "scrive",
+          "start": 20.922,
+          "end": 21.222
+        },
+        {
+          "text": "x",
+          "start": 21.622,
+          "end": 21.662
+        },
+        {
+          "text": "due",
+          "start": 21.782,
+          "end": 21.962
+        },
+        {
+          "text": "uguale",
+          "start": 22.002,
+          "end": 22.342
+        }
+      ]
+    },
+    {
+      "start": 22.562,
+      "end": 26.623,
+      "text": "meno x uno w uno su w due meno w zero su w due.",
+      "words": [
+        {
+          "text": "meno",
+          "start": 22.562,
+          "end": 22.742
+        },
+        {
+          "text": "x",
+          "start": 22.862,
+          "end": 22.902
+        },
+        {
+          "text": "uno",
+          "start": 23.082,
+          "end": 23.262
+        },
+        {
+          "text": "w",
+          "start": 23.482,
+          "end": 23.522
+        },
+        {
+          "text": "uno",
+          "start": 23.522,
+          "end": 24.102
+        },
+        {
+          "text": "su",
+          "start": 24.162,
+          "end": 24.222
+        },
+        {
+          "text": "w",
+          "start": 24.262,
+          "end": 24.302
+        },
+        {
+          "text": "due",
+          "start": 24.362,
+          "end": 24.822
+        },
+        {
+          "text": "meno",
+          "start": 25.123,
+          "end": 25.263
+        },
+        {
+          "text": "w",
+          "start": 25.303,
+          "end": 25.343
+        },
+        {
+          "text": "zero",
+          "start": 25.703,
+          "end": 25.903
+        },
+        {
+          "text": "su",
+          "start": 25.943,
+          "end": 26.003
+        },
+        {
+          "text": "w",
+          "start": 26.043,
+          "end": 26.083
+        },
+        {
+          "text": "due.",
+          "start": 26.143,
+          "end": 26.623
+        }
+      ]
+    },
+    {
+      "start": 27.303,
+      "end": 30.003,
+      "text": "Applicando una soglia si ottiene la Linear Threshold Unit,",
+      "words": [
+        {
+          "text": "Applicando",
+          "start": 27.303,
+          "end": 27.683
+        },
+        {
+          "text": "una",
+          "start": 27.723,
+          "end": 27.843
+        },
+        {
+          "text": "soglia",
+          "start": 27.883,
+          "end": 28.183
+        },
+        {
+          "text": "si",
+          "start": 28.283,
+          "end": 28.343
+        },
+        {
+          "text": "ottiene",
+          "start": 28.363,
+          "end": 28.643
+        },
+        {
+          "text": "la",
+          "start": 28.703,
+          "end": 28.763
+        },
+        {
+          "text": "Linear",
+          "start": 28.883,
+          "end": 29.203
+        },
+        {
+          "text": "Threshold",
+          "start": 29.243,
+          "end": 29.663
+        },
+        {
+          "text": "Unit,",
+          "start": 29.743,
+          "end": 30.003
+        }
+      ]
+    },
+    {
+      "start": 30.483,
+      "end": 34.963,
+      "text": "LTU: h di x uguale segno di w trasposto x più w zero.",
+      "words": [
+        {
+          "text": "LTU:",
+          "start": 30.483,
+          "end": 30.763
+        },
+        {
+          "text": "h",
+          "start": 31.483,
+          "end": 31.523
+        },
+        {
+          "text": "di",
+          "start": 31.583,
+          "end": 31.723
+        },
+        {
+          "text": "x",
+          "start": 31.763,
+          "end": 31.803
+        },
+        {
+          "text": "uguale",
+          "start": 32.023,
+          "end": 32.323
+        },
+        {
+          "text": "segno",
+          "start": 32.463,
+          "end": 32.783
+        },
+        {
+          "text": "di",
+          "start": 32.823,
+          "end": 32.883
+        },
+        {
+          "text": "w",
+          "start": 32.943,
+          "end": 32.983
+        },
+        {
+          "text": "trasposto",
+          "start": 33.363,
+          "end": 33.803
+        },
+        {
+          "text": "x",
+          "start": 33.923,
+          "end": 33.963
+        },
+        {
+          "text": "più",
+          "start": 34.103,
+          "end": 34.183
+        },
+        {
+          "text": "w",
+          "start": 34.243,
+          "end": 34.283
+        },
+        {
+          "text": "zero.",
+          "start": 34.683,
+          "end": 34.963
+        }
+      ]
+    },
+    {
+      "start": 35.544,
+      "end": 39.824,
+      "text": "Scrivendo w trasposto x maggiore o uguale a meno w zero emerge il ruolo di",
+      "words": [
+        {
+          "text": "Scrivendo",
+          "start": 35.544,
+          "end": 35.944
+        },
+        {
+          "text": "w",
+          "start": 36.024,
+          "end": 36.064
+        },
+        {
+          "text": "trasposto",
+          "start": 36.384,
+          "end": 36.804
+        },
+        {
+          "text": "x",
+          "start": 36.944,
+          "end": 36.984
+        },
+        {
+          "text": "maggiore",
+          "start": 37.164,
+          "end": 37.464
+        },
+        {
+          "text": "o",
+          "start": 37.484,
+          "end": 37.524
+        },
+        {
+          "text": "uguale",
+          "start": 37.504,
+          "end": 37.824
+        },
+        {
+          "text": "a",
+          "start": 37.844,
+          "end": 37.884
+        },
+        {
+          "text": "meno",
+          "start": 37.944,
+          "end": 38.104
+        },
+        {
+          "text": "w",
+          "start": 38.144,
+          "end": 38.184
+        },
+        {
+          "text": "zero",
+          "start": 38.584,
+          "end": 38.804
+        },
+        {
+          "text": "emerge",
+          "start": 39.104,
+          "end": 39.404
+        },
+        {
+          "text": "il",
+          "start": 39.424,
+          "end": 39.484
+        },
+        {
+          "text": "ruolo",
+          "start": 39.504,
+          "end": 39.724
+        },
+        {
+          "text": "di",
+          "start": 39.764,
+          "end": 39.824
+        }
+      ]
+    },
+    {
+      "start": 39.864,
+      "end": 42.044,
+      "text": "meno w zero come soglia di attivazione.",
+      "words": [
+        {
+          "text": "meno",
+          "start": 39.864,
+          "end": 40.004
+        },
+        {
+          "text": "w",
+          "start": 40.044,
+          "end": 40.084
+        },
+        {
+          "text": "zero",
+          "start": 40.484,
+          "end": 40.684
+        },
+        {
+          "text": "come",
+          "start": 40.704,
+          "end": 40.864
+        },
+        {
+          "text": "soglia",
+          "start": 40.984,
+          "end": 41.244
+        },
+        {
+          "text": "di",
+          "start": 41.284,
+          "end": 41.324
+        },
+        {
+          "text": "attivazione.",
+          "start": 41.364,
+          "end": 42.044
+        }
+      ]
+    },
+    {
+      "start": 42.964,
+      "end": 48.085,
+      "text": "Fissiamo le proprietà geometriche fondamentali dell'iperpiano: se w zero è zero passa per l'origine;",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 42.964,
+          "end": 43.264
+        },
+        {
+          "text": "le",
+          "start": 43.304,
+          "end": 43.364
+        },
+        {
+          "text": "proprietà",
+          "start": 43.404,
+          "end": 43.744
+        },
+        {
+          "text": "geometriche",
+          "start": 43.804,
+          "end": 44.284
+        },
+        {
+          "text": "fondamentali",
+          "start": 44.324,
+          "end": 44.904
+        },
+        {
+          "text": "dell'iperpiano:",
+          "start": 44.944,
+          "end": 45.625
+        },
+        {
+          "text": "se",
+          "start": 46.045,
+          "end": 46.125
+        },
+        {
+          "text": "w",
+          "start": 46.165,
+          "end": 46.205
+        },
+        {
+          "text": "zero",
+          "start": 46.565,
+          "end": 46.745
+        },
+        {
+          "text": "è",
+          "start": 46.785,
+          "end": 46.825
+        },
+        {
+          "text": "zero",
+          "start": 46.885,
+          "end": 47.125
+        },
+        {
+          "text": "passa",
+          "start": 47.205,
+          "end": 47.445
+        },
+        {
+          "text": "per",
+          "start": 47.485,
+          "end": 47.585
+        },
+        {
+          "text": "l'origine;",
+          "start": 47.625,
+          "end": 48.085
+        }
+      ]
+    },
+    {
+      "start": 48.545,
+      "end": 52.585,
+      "text": "moltiplicando w e bias per una costante positiva K il confine non cambia,",
+      "words": [
+        {
+          "text": "moltiplicando",
+          "start": 48.545,
+          "end": 49.085
+        },
+        {
+          "text": "w",
+          "start": 49.105,
+          "end": 49.145
+        },
+        {
+          "text": "e",
+          "start": 49.525,
+          "end": 49.565
+        },
+        {
+          "text": "bias",
+          "start": 49.605,
+          "end": 50.025
+        },
+        {
+          "text": "per",
+          "start": 50.125,
+          "end": 50.225
+        },
+        {
+          "text": "una",
+          "start": 50.265,
+          "end": 50.365
+        },
+        {
+          "text": "costante",
+          "start": 50.385,
+          "end": 50.725
+        },
+        {
+          "text": "positiva",
+          "start": 50.765,
+          "end": 51.165
+        },
+        {
+          "text": "K",
+          "start": 51.205,
+          "end": 51.245
+        },
+        {
+          "text": "il",
+          "start": 51.525,
+          "end": 51.585
+        },
+        {
+          "text": "confine",
+          "start": 51.625,
+          "end": 52.005
+        },
+        {
+          "text": "non",
+          "start": 52.045,
+          "end": 52.165
+        },
+        {
+          "text": "cambia,",
+          "start": 52.205,
+          "end": 52.585
+        }
+      ]
+    },
+    {
+      "start": 52.945,
+      "end": 53.865,
+      "text": "è la libertà di scala;",
+      "words": [
+        {
+          "text": "è",
+          "start": 52.945,
+          "end": 52.985
+        },
+        {
+          "text": "la",
+          "start": 53.025,
+          "end": 53.085
+        },
+        {
+          "text": "libertà",
+          "start": 53.125,
+          "end": 53.405
+        },
+        {
+          "text": "di",
+          "start": 53.445,
+          "end": 53.505
+        },
+        {
+          "text": "scala;",
+          "start": 53.545,
+          "end": 53.865
+        }
+      ]
+    },
+    {
+      "start": 54.545,
+      "end": 59.746,
+      "text": "il vettore w è sempre ortogonale all'iperpiano e punta verso la regione positiva — infatti",
+      "words": [
+        {
+          "text": "il",
+          "start": 54.545,
+          "end": 54.605
+        },
+        {
+          "text": "vettore",
+          "start": 54.645,
+          "end": 54.965
+        },
+        {
+          "text": "w",
+          "start": 55.046,
+          "end": 55.086
+        },
+        {
+          "text": "è",
+          "start": 55.506,
+          "end": 55.546
+        },
+        {
+          "text": "sempre",
+          "start": 55.586,
+          "end": 55.846
+        },
+        {
+          "text": "ortogonale",
+          "start": 55.886,
+          "end": 56.406
+        },
+        {
+          "text": "all'iperpiano",
+          "start": 56.426,
+          "end": 57.086
+        },
+        {
+          "text": "e",
+          "start": 57.446,
+          "end": 57.486
+        },
+        {
+          "text": "punta",
+          "start": 57.546,
+          "end": 57.806
+        },
+        {
+          "text": "verso",
+          "start": 57.846,
+          "end": 58.086
+        },
+        {
+          "text": "la",
+          "start": 58.146,
+          "end": 58.206
+        },
+        {
+          "text": "regione",
+          "start": 58.226,
+          "end": 58.506
+        },
+        {
+          "text": "positiva",
+          "start": 58.526,
+          "end": 59.006
+        },
+        {
+          "text": "—",
+          "start": 59.006,
+          "end": 59.156
+        },
+        {
+          "text": "infatti",
+          "start": 59.426,
+          "end": 59.746
+        }
+      ]
+    },
+    {
+      "start": 59.846,
+      "end": 62.066,
+      "text": "per due punti x a e x b sull'iperpiano,",
+      "words": [
+        {
+          "text": "per",
+          "start": 59.846,
+          "end": 59.986
+        },
+        {
+          "text": "due",
+          "start": 60.026,
+          "end": 60.146
+        },
+        {
+          "text": "punti",
+          "start": 60.166,
+          "end": 60.406
+        },
+        {
+          "text": "x",
+          "start": 60.506,
+          "end": 60.546
+        },
+        {
+          "text": "a",
+          "start": 60.706,
+          "end": 60.746
+        },
+        {
+          "text": "e",
+          "start": 60.906,
+          "end": 60.946
+        },
+        {
+          "text": "x",
+          "start": 61.066,
+          "end": 61.106
+        },
+        {
+          "text": "b",
+          "start": 61.206,
+          "end": 61.246
+        },
+        {
+          "text": "sull'iperpiano,",
+          "start": 61.366,
+          "end": 62.066
+        }
+      ]
+    },
+    {
+      "start": 62.366,
+      "end": 66.767,
+      "text": "sottraendo le due equazioni si ha w trasposto per x a meno x b uguale",
+      "words": [
+        {
+          "text": "sottraendo",
+          "start": 62.366,
+          "end": 62.746
+        },
+        {
+          "text": "le",
+          "start": 62.786,
+          "end": 62.846
+        },
+        {
+          "text": "due",
+          "start": 62.886,
+          "end": 62.986
+        },
+        {
+          "text": "equazioni",
+          "start": 63.006,
+          "end": 63.446
+        },
+        {
+          "text": "si",
+          "start": 63.526,
+          "end": 63.586
+        },
+        {
+          "text": "ha",
+          "start": 63.626,
+          "end": 63.686
+        },
+        {
+          "text": "w",
+          "start": 63.946,
+          "end": 63.986
+        },
+        {
+          "text": "trasposto",
+          "start": 64.426,
+          "end": 65.067
+        },
+        {
+          "text": "per",
+          "start": 65.307,
+          "end": 65.427
+        },
+        {
+          "text": "x",
+          "start": 65.547,
+          "end": 65.587
+        },
+        {
+          "text": "a",
+          "start": 65.747,
+          "end": 65.787
+        },
+        {
+          "text": "meno",
+          "start": 65.967,
+          "end": 66.127
+        },
+        {
+          "text": "x",
+          "start": 66.247,
+          "end": 66.287
+        },
+        {
+          "text": "b",
+          "start": 66.387,
+          "end": 66.427
+        },
+        {
+          "text": "uguale",
+          "start": 66.527,
+          "end": 66.767
+        }
+      ]
+    },
+    {
+      "start": 66.907,
+      "end": 70.827,
+      "text": "zero; infine, se esiste un iperpiano separatore ne esistono infiniti.",
+      "words": [
+        {
+          "text": "zero;",
+          "start": 66.907,
+          "end": 67.187
+        },
+        {
+          "text": "infine,",
+          "start": 67.867,
+          "end": 68.167
+        },
+        {
+          "text": "se",
+          "start": 68.247,
+          "end": 68.307
+        },
+        {
+          "text": "esiste",
+          "start": 68.347,
+          "end": 68.627
+        },
+        {
+          "text": "un",
+          "start": 68.667,
+          "end": 68.747
+        },
+        {
+          "text": "iperpiano",
+          "start": 68.767,
+          "end": 69.187
+        },
+        {
+          "text": "separatore",
+          "start": 69.227,
+          "end": 69.767
+        },
+        {
+          "text": "ne",
+          "start": 69.927,
+          "end": 69.96700000000001
+        },
+        {
+          "text": "esistono",
+          "start": 70.007,
+          "end": 70.367
+        },
+        {
+          "text": "infiniti.",
+          "start": 70.407,
+          "end": 70.827
+        }
+      ]
+    },
+    {
+      "start": 72.047,
+      "end": 73.567,
+      "text": "Due esempi applicativi concreti:",
+      "words": [
+        {
+          "text": "Due",
+          "start": 72.047,
+          "end": 72.147
+        },
+        {
+          "text": "esempi",
+          "start": 72.167,
+          "end": 72.427
+        },
+        {
+          "text": "applicativi",
+          "start": 72.447,
+          "end": 72.927
+        },
+        {
+          "text": "concreti:",
+          "start": 73.007,
+          "end": 73.567
+        }
+      ]
+    },
+    {
+      "start": 74.147,
+      "end": 79.408,
+      "text": "a destra il problema sismico — distinguere terremoti da esplosioni nucleari con confine meno quattro",
+      "words": [
+        {
+          "text": "a",
+          "start": 74.147,
+          "end": 74.18700000000001
+        },
+        {
+          "text": "destra",
+          "start": 74.227,
+          "end": 74.527
+        },
+        {
+          "text": "il",
+          "start": 74.587,
+          "end": 74.647
+        },
+        {
+          "text": "problema",
+          "start": 74.687,
+          "end": 75.007
+        },
+        {
+          "text": "sismico",
+          "start": 75.048,
+          "end": 75.468
+        },
+        {
+          "text": "—",
+          "start": 75.468,
+          "end": 75.618
+        },
+        {
+          "text": "distinguere",
+          "start": 75.868,
+          "end": 76.348
+        },
+        {
+          "text": "terremoti",
+          "start": 76.448,
+          "end": 76.968
+        },
+        {
+          "text": "da",
+          "start": 77.008,
+          "end": 77.068
+        },
+        {
+          "text": "esplosioni",
+          "start": 77.128,
+          "end": 77.548
+        },
+        {
+          "text": "nucleari",
+          "start": 77.588,
+          "end": 78.028
+        },
+        {
+          "text": "con",
+          "start": 78.088,
+          "end": 78.228
+        },
+        {
+          "text": "confine",
+          "start": 78.268,
+          "end": 78.688
+        },
+        {
+          "text": "meno",
+          "start": 78.788,
+          "end": 79.008
+        },
+        {
+          "text": "quattro",
+          "start": 79.068,
+          "end": 79.408
+        }
+      ]
+    },
+    {
+      "start": 79.448,
+      "end": 83.188,
+      "text": "virgola nove più uno virgola sette x uno meno x due uguale zero,",
+      "words": [
+        {
+          "text": "virgola",
+          "start": 79.448,
+          "end": 79.768
+        },
+        {
+          "text": "nove",
+          "start": 79.848,
+          "end": 80.088
+        },
+        {
+          "text": "più",
+          "start": 80.468,
+          "end": 80.588
+        },
+        {
+          "text": "uno",
+          "start": 80.708,
+          "end": 80.868
+        },
+        {
+          "text": "virgola",
+          "start": 80.928,
+          "end": 81.248
+        },
+        {
+          "text": "sette",
+          "start": 81.288,
+          "end": 81.528
+        },
+        {
+          "text": "x",
+          "start": 81.628,
+          "end": 81.668
+        },
+        {
+          "text": "uno",
+          "start": 81.808,
+          "end": 81.968
+        },
+        {
+          "text": "meno",
+          "start": 82.028,
+          "end": 82.188
+        },
+        {
+          "text": "x",
+          "start": 82.288,
+          "end": 82.328
+        },
+        {
+          "text": "due",
+          "start": 82.388,
+          "end": 82.528
+        },
+        {
+          "text": "uguale",
+          "start": 82.568,
+          "end": 82.788
+        },
+        {
+          "text": "zero,",
+          "start": 82.928,
+          "end": 83.188
+        }
+      ]
+    },
+    {
+      "start": 83.548,
+      "end": 88.089,
+      "text": "che classifica il punto sei virgola tre come esplosione con valore più due virgola tre;",
+      "words": [
+        {
+          "text": "che",
+          "start": 83.548,
+          "end": 83.608
+        },
+        {
+          "text": "classifica",
+          "start": 83.668,
+          "end": 84.108
+        },
+        {
+          "text": "il",
+          "start": 84.148,
+          "end": 84.208
+        },
+        {
+          "text": "punto",
+          "start": 84.248,
+          "end": 84.528
+        },
+        {
+          "text": "sei",
+          "start": 84.748,
+          "end": 84.908
+        },
+        {
+          "text": "virgola",
+          "start": 84.948,
+          "end": 85.269
+        },
+        {
+          "text": "tre",
+          "start": 85.329,
+          "end": 85.449
+        },
+        {
+          "text": "come",
+          "start": 85.749,
+          "end": 85.929
+        },
+        {
+          "text": "esplosione",
+          "start": 85.989,
+          "end": 86.649
+        },
+        {
+          "text": "con",
+          "start": 86.749,
+          "end": 86.889
+        },
+        {
+          "text": "valore",
+          "start": 86.909,
+          "end": 87.209
+        },
+        {
+          "text": "più",
+          "start": 87.269,
+          "end": 87.369
+        },
+        {
+          "text": "due",
+          "start": 87.449,
+          "end": 87.569
+        },
+        {
+          "text": "virgola",
+          "start": 87.609,
+          "end": 87.929
+        },
+        {
+          "text": "tre;",
+          "start": 87.969,
+          "end": 88.089
+        }
+      ]
+    },
+    {
+      "start": 88.689,
+      "end": 93.969,
+      "text": "e il filtro antispam bag-of-words, dove ogni peso misura quanto una parola — positiva per",
+      "words": [
+        {
+          "text": "e",
+          "start": 88.689,
+          "end": 88.729
+        },
+        {
+          "text": "il",
+          "start": 88.769,
+          "end": 88.849
+        },
+        {
+          "text": "filtro",
+          "start": 88.869,
+          "end": 89.189
+        },
+        {
+          "text": "antispam",
+          "start": 89.269,
+          "end": 89.829
+        },
+        {
+          "text": "bag-of-words,",
+          "start": 89.949,
+          "end": 90.609
+        },
+        {
+          "text": "dove",
+          "start": 90.869,
+          "end": 91.049
+        },
+        {
+          "text": "ogni",
+          "start": 91.109,
+          "end": 91.309
+        },
+        {
+          "text": "peso",
+          "start": 91.369,
+          "end": 91.609
+        },
+        {
+          "text": "misura",
+          "start": 91.649,
+          "end": 91.929
+        },
+        {
+          "text": "quanto",
+          "start": 92.049,
+          "end": 92.349
+        },
+        {
+          "text": "una",
+          "start": 92.409,
+          "end": 92.529
+        },
+        {
+          "text": "parola",
+          "start": 92.569,
+          "end": 92.949
+        },
+        {
+          "text": "—",
+          "start": 92.949,
+          "end": 93.099
+        },
+        {
+          "text": "positiva",
+          "start": 93.349,
+          "end": 93.769
+        },
+        {
+          "text": "per",
+          "start": 93.829,
+          "end": 93.969
+        }
+      ]
+    },
+    {
+      "start": 94.029,
+      "end": 98.39,
+      "text": "free money, negativa per punto edu — contribuisce a classificare una email come spam.",
+      "words": [
+        {
+          "text": "free",
+          "start": 94.029,
+          "end": 94.249
+        },
+        {
+          "text": "money,",
+          "start": 94.269,
+          "end": 94.609
+        },
+        {
+          "text": "negativa",
+          "start": 94.809,
+          "end": 95.21
+        },
+        {
+          "text": "per",
+          "start": 95.27,
+          "end": 95.39
+        },
+        {
+          "text": "punto",
+          "start": 95.43,
+          "end": 95.67
+        },
+        {
+          "text": "edu",
+          "start": 95.75,
+          "end": 95.93
+        },
+        {
+          "text": "—",
+          "start": 95.93,
+          "end": 96.08
+        },
+        {
+          "text": "contribuisce",
+          "start": 96.27,
+          "end": 96.77
+        },
+        {
+          "text": "a",
+          "start": 96.79,
+          "end": 96.83000000000001
+        },
+        {
+          "text": "classificare",
+          "start": 96.85,
+          "end": 97.43
+        },
+        {
+          "text": "una",
+          "start": 97.47,
+          "end": 97.57
+        },
+        {
+          "text": "email",
+          "start": 97.61,
+          "end": 97.85
+        },
+        {
+          "text": "come",
+          "start": 97.89,
+          "end": 98.05
+        },
+        {
+          "text": "spam.",
+          "start": 98.11,
+          "end": 98.39
+        }
+      ]
+    }
+  ]
+}

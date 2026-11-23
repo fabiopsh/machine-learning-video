@@ -1,0 +1,1304 @@
+{
+  "duration": 84.75,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.321,
+      "text": "Per confrontare modelli e dataset di dimensione diversa introduciamo il Root-Mean-Square error,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 0.08,
+          "end": 0.2
+        },
+        {
+          "text": "confrontare",
+          "start": 0.28,
+          "end": 0.9
+        },
+        {
+          "text": "modelli",
+          "start": 0.96,
+          "end": 1.24
+        },
+        {
+          "text": "e",
+          "start": 1.28,
+          "end": 1.32
+        },
+        {
+          "text": "dataset",
+          "start": 1.36,
+          "end": 1.78
+        },
+        {
+          "text": "di",
+          "start": 1.92,
+          "end": 1.98
+        },
+        {
+          "text": "dimensione",
+          "start": 2.04,
+          "end": 2.48
+        },
+        {
+          "text": "diversa",
+          "start": 2.52,
+          "end": 3.02
+        },
+        {
+          "text": "introduciamo",
+          "start": 3.26,
+          "end": 3.88
+        },
+        {
+          "text": "il",
+          "start": 3.94,
+          "end": 4.021
+        },
+        {
+          "text": "Root-Mean-Square",
+          "start": 4.081,
+          "end": 4.841
+        },
+        {
+          "text": "error,",
+          "start": 5.001,
+          "end": 5.321
+        }
+      ]
+    },
+    {
+      "start": 5.781,
+      "end": 11.101,
+      "text": "E RMS: la radice quadrata di uno su l per la somma dei quadrati degli",
+      "words": [
+        {
+          "text": "E",
+          "start": 5.781,
+          "end": 5.821
+        },
+        {
+          "text": "RMS:",
+          "start": 6.221,
+          "end": 6.801
+        },
+        {
+          "text": "la",
+          "start": 7.521,
+          "end": 7.581
+        },
+        {
+          "text": "radice",
+          "start": 7.621,
+          "end": 7.921
+        },
+        {
+          "text": "quadrata",
+          "start": 7.961,
+          "end": 8.441
+        },
+        {
+          "text": "di",
+          "start": 8.501,
+          "end": 8.601
+        },
+        {
+          "text": "uno",
+          "start": 8.821,
+          "end": 9.061
+        },
+        {
+          "text": "su",
+          "start": 9.221,
+          "end": 9.301
+        },
+        {
+          "text": "l",
+          "start": 9.601,
+          "end": 9.641
+        },
+        {
+          "text": "per",
+          "start": 9.781,
+          "end": 9.901
+        },
+        {
+          "text": "la",
+          "start": 9.961,
+          "end": 10.021
+        },
+        {
+          "text": "somma",
+          "start": 10.101,
+          "end": 10.321
+        },
+        {
+          "text": "dei",
+          "start": 10.361,
+          "end": 10.481
+        },
+        {
+          "text": "quadrati",
+          "start": 10.501,
+          "end": 10.881
+        },
+        {
+          "text": "degli",
+          "start": 10.941,
+          "end": 11.101
+        }
+      ]
+    },
+    {
+      "start": 11.141,
+      "end": 13.822,
+      "text": "errori, valutata nei pesi ottimi w stella.",
+      "words": [
+        {
+          "text": "errori,",
+          "start": 11.141,
+          "end": 11.501
+        },
+        {
+          "text": "valutata",
+          "start": 11.661,
+          "end": 12.101
+        },
+        {
+          "text": "nei",
+          "start": 12.161,
+          "end": 12.262
+        },
+        {
+          "text": "pesi",
+          "start": 12.302,
+          "end": 12.502
+        },
+        {
+          "text": "ottimi",
+          "start": 12.602,
+          "end": 12.902
+        },
+        {
+          "text": "w",
+          "start": 13.282,
+          "end": 13.322
+        },
+        {
+          "text": "stella.",
+          "start": 13.442,
+          "end": 13.822
+        }
+      ]
+    },
+    {
+      "start": 14.602,
+      "end": 17.962,
+      "text": "Dividere per l rende confrontabili dataset di taglia diversa,",
+      "words": [
+        {
+          "text": "Dividere",
+          "start": 14.602,
+          "end": 14.962
+        },
+        {
+          "text": "per",
+          "start": 15.022,
+          "end": 15.142
+        },
+        {
+          "text": "l",
+          "start": 15.342,
+          "end": 15.382
+        },
+        {
+          "text": "rende",
+          "start": 15.522,
+          "end": 15.782
+        },
+        {
+          "text": "confrontabili",
+          "start": 15.902,
+          "end": 16.582
+        },
+        {
+          "text": "dataset",
+          "start": 16.642,
+          "end": 17.082
+        },
+        {
+          "text": "di",
+          "start": 17.162,
+          "end": 17.222
+        },
+        {
+          "text": "taglia",
+          "start": 17.262,
+          "end": 17.482
+        },
+        {
+          "text": "diversa,",
+          "start": 17.522,
+          "end": 17.962
+        }
+      ]
+    },
+    {
+      "start": 18.482,
+      "end": 22.163,
+      "text": "mentre la radice riporta l'errore nella stessa unità di misura del target.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 18.482,
+          "end": 18.842
+        },
+        {
+          "text": "la",
+          "start": 18.902,
+          "end": 18.962
+        },
+        {
+          "text": "radice",
+          "start": 19.022,
+          "end": 19.362
+        },
+        {
+          "text": "riporta",
+          "start": 19.402,
+          "end": 19.762
+        },
+        {
+          "text": "l'errore",
+          "start": 19.802,
+          "end": 20.202
+        },
+        {
+          "text": "nella",
+          "start": 20.322,
+          "end": 20.523
+        },
+        {
+          "text": "stessa",
+          "start": 20.563,
+          "end": 20.823
+        },
+        {
+          "text": "unità",
+          "start": 20.863,
+          "end": 21.083
+        },
+        {
+          "text": "di",
+          "start": 21.143,
+          "end": 21.203
+        },
+        {
+          "text": "misura",
+          "start": 21.223,
+          "end": 21.523
+        },
+        {
+          "text": "del",
+          "start": 21.563,
+          "end": 21.683
+        },
+        {
+          "text": "target.",
+          "start": 21.743,
+          "end": 22.163
+        }
+      ]
+    },
+    {
+      "start": 23.103,
+      "end": 27.923,
+      "text": "Guarda il grafico reale a sinistra, valutato sui dieci punti di training e su mille",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 23.103,
+          "end": 23.383
+        },
+        {
+          "text": "il",
+          "start": 23.423,
+          "end": 23.483
+        },
+        {
+          "text": "grafico",
+          "start": 23.543,
+          "end": 23.983
+        },
+        {
+          "text": "reale",
+          "start": 24.163,
+          "end": 24.523
+        },
+        {
+          "text": "a",
+          "start": 24.643,
+          "end": 24.683
+        },
+        {
+          "text": "sinistra,",
+          "start": 24.763,
+          "end": 25.223
+        },
+        {
+          "text": "valutato",
+          "start": 25.283,
+          "end": 25.683
+        },
+        {
+          "text": "sui",
+          "start": 25.743,
+          "end": 25.903
+        },
+        {
+          "text": "dieci",
+          "start": 25.983,
+          "end": 26.263
+        },
+        {
+          "text": "punti",
+          "start": 26.323,
+          "end": 26.603
+        },
+        {
+          "text": "di",
+          "start": 26.643,
+          "end": 26.703
+        },
+        {
+          "text": "training",
+          "start": 26.763,
+          "end": 27.183
+        },
+        {
+          "text": "e",
+          "start": 27.323,
+          "end": 27.363
+        },
+        {
+          "text": "su",
+          "start": 27.443,
+          "end": 27.523
+        },
+        {
+          "text": "mille",
+          "start": 27.663,
+          "end": 27.923
+        }
+      ]
+    },
+    {
+      "start": 27.983,
+      "end": 29.864,
+      "text": "nuovi punti di test al variare di M.",
+      "words": [
+        {
+          "text": "nuovi",
+          "start": 27.983,
+          "end": 28.223
+        },
+        {
+          "text": "punti",
+          "start": 28.263,
+          "end": 28.523
+        },
+        {
+          "text": "di",
+          "start": 28.563,
+          "end": 28.624
+        },
+        {
+          "text": "test",
+          "start": 28.684,
+          "end": 28.964
+        },
+        {
+          "text": "al",
+          "start": 29.084,
+          "end": 29.164
+        },
+        {
+          "text": "variare",
+          "start": 29.204,
+          "end": 29.524
+        },
+        {
+          "text": "di",
+          "start": 29.564,
+          "end": 29.604
+        },
+        {
+          "text": "M.",
+          "start": 29.824,
+          "end": 29.864
+        }
+      ]
+    },
+    {
+      "start": 30.524,
+      "end": 33.804,
+      "text": "L'errore di training blu decresce sempre all'aumentare di M,",
+      "words": [
+        {
+          "text": "L'errore",
+          "start": 30.524,
+          "end": 30.904
+        },
+        {
+          "text": "di",
+          "start": 30.944,
+          "end": 31.024
+        },
+        {
+          "text": "training",
+          "start": 31.064,
+          "end": 31.484
+        },
+        {
+          "text": "blu",
+          "start": 31.664,
+          "end": 31.824
+        },
+        {
+          "text": "decresce",
+          "start": 32.104,
+          "end": 32.504
+        },
+        {
+          "text": "sempre",
+          "start": 32.624,
+          "end": 32.924
+        },
+        {
+          "text": "all'aumentare",
+          "start": 32.944,
+          "end": 33.444
+        },
+        {
+          "text": "di",
+          "start": 33.484,
+          "end": 33.544
+        },
+        {
+          "text": "M,",
+          "start": 33.764,
+          "end": 33.804
+        }
+      ]
+    },
+    {
+      "start": 33.924,
+      "end": 36.044,
+      "text": "fino a toccare zero per M uguale a nove.",
+      "words": [
+        {
+          "text": "fino",
+          "start": 33.924,
+          "end": 34.084
+        },
+        {
+          "text": "a",
+          "start": 34.124,
+          "end": 34.164
+        },
+        {
+          "text": "toccare",
+          "start": 34.184,
+          "end": 34.524
+        },
+        {
+          "text": "zero",
+          "start": 34.664,
+          "end": 34.924
+        },
+        {
+          "text": "per",
+          "start": 34.964,
+          "end": 35.104
+        },
+        {
+          "text": "M",
+          "start": 35.264,
+          "end": 35.304
+        },
+        {
+          "text": "uguale",
+          "start": 35.504,
+          "end": 35.764
+        },
+        {
+          "text": "a",
+          "start": 35.784,
+          "end": 35.824
+        },
+        {
+          "text": "nove.",
+          "start": 35.844,
+          "end": 36.044
+        }
+      ]
+    },
+    {
+      "start": 36.865,
+      "end": 41.585,
+      "text": "L'errore di test rosso invece scende prima da zero virgola ottanta a zero virgola trentotto,",
+      "words": [
+        {
+          "text": "L'errore",
+          "start": 36.865,
+          "end": 37.225
+        },
+        {
+          "text": "di",
+          "start": 37.245,
+          "end": 37.325
+        },
+        {
+          "text": "test",
+          "start": 37.365,
+          "end": 37.625
+        },
+        {
+          "text": "rosso",
+          "start": 37.745,
+          "end": 38.045
+        },
+        {
+          "text": "invece",
+          "start": 38.085,
+          "end": 38.385
+        },
+        {
+          "text": "scende",
+          "start": 38.425,
+          "end": 38.705
+        },
+        {
+          "text": "prima",
+          "start": 38.765,
+          "end": 39.025
+        },
+        {
+          "text": "da",
+          "start": 39.085,
+          "end": 39.145
+        },
+        {
+          "text": "zero",
+          "start": 39.285,
+          "end": 39.445
+        },
+        {
+          "text": "virgola",
+          "start": 39.485,
+          "end": 39.765
+        },
+        {
+          "text": "ottanta",
+          "start": 39.785,
+          "end": 40.225
+        },
+        {
+          "text": "a",
+          "start": 40.365,
+          "end": 40.405
+        },
+        {
+          "text": "zero",
+          "start": 40.525,
+          "end": 40.705
+        },
+        {
+          "text": "virgola",
+          "start": 40.745,
+          "end": 41.005
+        },
+        {
+          "text": "trentotto,",
+          "start": 41.045,
+          "end": 41.585
+        }
+      ]
+    },
+    {
+      "start": 42.045,
+      "end": 44.545,
+      "text": "resta stabile tra M uguale tre e M uguale otto,",
+      "words": [
+        {
+          "text": "resta",
+          "start": 42.045,
+          "end": 42.265
+        },
+        {
+          "text": "stabile",
+          "start": 42.325,
+          "end": 42.705
+        },
+        {
+          "text": "tra",
+          "start": 42.745,
+          "end": 42.825
+        },
+        {
+          "text": "M",
+          "start": 42.985,
+          "end": 43.025
+        },
+        {
+          "text": "uguale",
+          "start": 43.085,
+          "end": 43.345
+        },
+        {
+          "text": "tre",
+          "start": 43.405,
+          "end": 43.705
+        },
+        {
+          "text": "e",
+          "start": 43.805,
+          "end": 43.845
+        },
+        {
+          "text": "M",
+          "start": 43.885,
+          "end": 43.925
+        },
+        {
+          "text": "uguale",
+          "start": 43.985,
+          "end": 44.245
+        },
+        {
+          "text": "otto,",
+          "start": 44.325,
+          "end": 44.545
+        }
+      ]
+    },
+    {
+      "start": 44.625,
+      "end": 48.186,
+      "text": "e poi esplode letteralmente fuori scala per M uguale a nove:",
+      "words": [
+        {
+          "text": "e",
+          "start": 44.625,
+          "end": 44.665
+        },
+        {
+          "text": "poi",
+          "start": 44.745,
+          "end": 44.965
+        },
+        {
+          "text": "esplode",
+          "start": 45.066,
+          "end": 45.586
+        },
+        {
+          "text": "letteralmente",
+          "start": 45.646,
+          "end": 46.346
+        },
+        {
+          "text": "fuori",
+          "start": 46.406,
+          "end": 46.586
+        },
+        {
+          "text": "scala",
+          "start": 46.646,
+          "end": 47.006
+        },
+        {
+          "text": "per",
+          "start": 47.106,
+          "end": 47.246
+        },
+        {
+          "text": "M",
+          "start": 47.406,
+          "end": 47.446
+        },
+        {
+          "text": "uguale",
+          "start": 47.626,
+          "end": 47.866
+        },
+        {
+          "text": "a",
+          "start": 47.906,
+          "end": 47.946
+        },
+        {
+          "text": "nove:",
+          "start": 47.946,
+          "end": 48.186
+        }
+      ]
+    },
+    {
+      "start": 48.806,
+      "end": 51.246,
+      "text": "è la firma inconfondibile dell'overfitting.",
+      "words": [
+        {
+          "text": "è",
+          "start": 48.806,
+          "end": 48.846
+        },
+        {
+          "text": "la",
+          "start": 48.906,
+          "end": 48.966
+        },
+        {
+          "text": "firma",
+          "start": 49.026,
+          "end": 49.306
+        },
+        {
+          "text": "inconfondibile",
+          "start": 49.466,
+          "end": 50.326
+        },
+        {
+          "text": "dell'overfitting.",
+          "start": 50.366,
+          "end": 51.246
+        }
+      ]
+    },
+    {
+      "start": 52.146,
+      "end": 56.367,
+      "text": "Ancora più rivelatrice è la tabella dei coefficienti ottimi w stella a destra.",
+      "words": [
+        {
+          "text": "Ancora",
+          "start": 52.146,
+          "end": 52.486
+        },
+        {
+          "text": "più",
+          "start": 52.526,
+          "end": 52.626
+        },
+        {
+          "text": "rivelatrice",
+          "start": 52.686,
+          "end": 53.266
+        },
+        {
+          "text": "è",
+          "start": 53.387,
+          "end": 53.427
+        },
+        {
+          "text": "la",
+          "start": 53.467,
+          "end": 53.527
+        },
+        {
+          "text": "tabella",
+          "start": 53.567,
+          "end": 53.887
+        },
+        {
+          "text": "dei",
+          "start": 53.927,
+          "end": 54.027
+        },
+        {
+          "text": "coefficienti",
+          "start": 54.047,
+          "end": 54.627
+        },
+        {
+          "text": "ottimi",
+          "start": 54.687,
+          "end": 55.247
+        },
+        {
+          "text": "w",
+          "start": 55.347,
+          "end": 55.387
+        },
+        {
+          "text": "stella",
+          "start": 55.467,
+          "end": 55.807
+        },
+        {
+          "text": "a",
+          "start": 55.927,
+          "end": 55.967
+        },
+        {
+          "text": "destra.",
+          "start": 56.007,
+          "end": 56.367
+        }
+      ]
+    },
+    {
+      "start": 57.007,
+      "end": 59.047,
+      "text": "Per M uguale a tre i pesi restano moderati,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 57.007,
+          "end": 57.107
+        },
+        {
+          "text": "M",
+          "start": 57.227,
+          "end": 57.267
+        },
+        {
+          "text": "uguale",
+          "start": 57.327,
+          "end": 57.527
+        },
+        {
+          "text": "a",
+          "start": 57.527,
+          "end": 57.567
+        },
+        {
+          "text": "tre",
+          "start": 57.627,
+          "end": 57.767
+        },
+        {
+          "text": "i",
+          "start": 57.907,
+          "end": 57.947
+        },
+        {
+          "text": "pesi",
+          "start": 57.987,
+          "end": 58.207
+        },
+        {
+          "text": "restano",
+          "start": 58.287,
+          "end": 58.567
+        },
+        {
+          "text": "moderati,",
+          "start": 58.607,
+          "end": 59.047
+        }
+      ]
+    },
+    {
+      "start": 59.327,
+      "end": 60.287,
+      "text": "attorno a venticinque.",
+      "words": [
+        {
+          "text": "attorno",
+          "start": 59.327,
+          "end": 59.647
+        },
+        {
+          "text": "a",
+          "start": 59.687,
+          "end": 59.727
+        },
+        {
+          "text": "venticinque.",
+          "start": 59.727,
+          "end": 60.287
+        }
+      ]
+    },
+    {
+      "start": 60.787,
+      "end": 64.428,
+      "text": "Per M uguale a nove i coefficienti diventano enormi e di segno alterno:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 60.787,
+          "end": 60.927
+        },
+        {
+          "text": "M",
+          "start": 61.067,
+          "end": 61.107
+        },
+        {
+          "text": "uguale",
+          "start": 61.187,
+          "end": 61.427
+        },
+        {
+          "text": "a",
+          "start": 61.467,
+          "end": 61.507
+        },
+        {
+          "text": "nove",
+          "start": 61.527,
+          "end": 61.748
+        },
+        {
+          "text": "i",
+          "start": 61.788,
+          "end": 61.828
+        },
+        {
+          "text": "coefficienti",
+          "start": 61.868,
+          "end": 62.368
+        },
+        {
+          "text": "diventano",
+          "start": 62.408,
+          "end": 62.808
+        },
+        {
+          "text": "enormi",
+          "start": 62.888,
+          "end": 63.328
+        },
+        {
+          "text": "e",
+          "start": 63.468,
+          "end": 63.508
+        },
+        {
+          "text": "di",
+          "start": 63.548,
+          "end": 63.608
+        },
+        {
+          "text": "segno",
+          "start": 63.688,
+          "end": 63.928
+        },
+        {
+          "text": "alterno:",
+          "start": 63.948,
+          "end": 64.428
+        }
+      ]
+    },
+    {
+      "start": 64.828,
+      "end": 69.58800000000001,
+      "text": "da meno duecentotrentatremila fino a meno un milione e settantamila e più un milione e",
+      "words": [
+        {
+          "text": "da",
+          "start": 64.828,
+          "end": 64.888
+        },
+        {
+          "text": "meno",
+          "start": 65.008,
+          "end": 65.228
+        },
+        {
+          "text": "duecentotrentatremila",
+          "start": 65.308,
+          "end": 66.468
+        },
+        {
+          "text": "fino",
+          "start": 66.608,
+          "end": 66.788
+        },
+        {
+          "text": "a",
+          "start": 66.828,
+          "end": 66.86800000000001
+        },
+        {
+          "text": "meno",
+          "start": 66.908,
+          "end": 67.068
+        },
+        {
+          "text": "un",
+          "start": 67.108,
+          "end": 67.168
+        },
+        {
+          "text": "milione",
+          "start": 67.228,
+          "end": 67.648
+        },
+        {
+          "text": "e",
+          "start": 67.668,
+          "end": 67.70800000000001
+        },
+        {
+          "text": "settantamila",
+          "start": 67.768,
+          "end": 68.488
+        },
+        {
+          "text": "e",
+          "start": 68.608,
+          "end": 68.64800000000001
+        },
+        {
+          "text": "più",
+          "start": 68.728,
+          "end": 68.848
+        },
+        {
+          "text": "un",
+          "start": 69.048,
+          "end": 69.148
+        },
+        {
+          "text": "milione",
+          "start": 69.188,
+          "end": 69.528
+        },
+        {
+          "text": "e",
+          "start": 69.548,
+          "end": 69.58800000000001
+        }
+      ]
+    },
+    {
+      "start": 69.588,
+      "end": 70.309,
+      "text": "cinquantamila.",
+      "words": [
+        {
+          "text": "cinquantamila.",
+          "start": 69.588,
+          "end": 70.309
+        }
+      ]
+    },
+    {
+      "start": 71.029,
+      "end": 75.409,
+      "text": "Questi numeri giganteschi si cancellano a vicenda sui dieci punti di training per far passare",
+      "words": [
+        {
+          "text": "Questi",
+          "start": 71.029,
+          "end": 71.309
+        },
+        {
+          "text": "numeri",
+          "start": 71.389,
+          "end": 71.649
+        },
+        {
+          "text": "giganteschi",
+          "start": 71.709,
+          "end": 72.329
+        },
+        {
+          "text": "si",
+          "start": 72.389,
+          "end": 72.449
+        },
+        {
+          "text": "cancellano",
+          "start": 72.489,
+          "end": 72.949
+        },
+        {
+          "text": "a",
+          "start": 72.989,
+          "end": 73.02900000000001
+        },
+        {
+          "text": "vicenda",
+          "start": 73.029,
+          "end": 73.429
+        },
+        {
+          "text": "sui",
+          "start": 73.489,
+          "end": 73.629
+        },
+        {
+          "text": "dieci",
+          "start": 73.669,
+          "end": 73.909
+        },
+        {
+          "text": "punti",
+          "start": 73.949,
+          "end": 74.189
+        },
+        {
+          "text": "di",
+          "start": 74.229,
+          "end": 74.289
+        },
+        {
+          "text": "training",
+          "start": 74.329,
+          "end": 74.729
+        },
+        {
+          "text": "per",
+          "start": 74.809,
+          "end": 74.929
+        },
+        {
+          "text": "far",
+          "start": 74.949,
+          "end": 75.069
+        },
+        {
+          "text": "passare",
+          "start": 75.109,
+          "end": 75.409
+        }
+      ]
+    },
+    {
+      "start": 75.469,
+      "end": 80.09,
+      "text": "la curva esattamente lì, ma scatenano oscillazioni violente ovunque altrove.",
+      "words": [
+        {
+          "text": "la",
+          "start": 75.469,
+          "end": 75.529
+        },
+        {
+          "text": "curva",
+          "start": 75.569,
+          "end": 75.829
+        },
+        {
+          "text": "esattamente",
+          "start": 75.969,
+          "end": 76.669
+        },
+        {
+          "text": "lì,",
+          "start": 76.709,
+          "end": 76.809
+        },
+        {
+          "text": "ma",
+          "start": 77.309,
+          "end": 77.409
+        },
+        {
+          "text": "scatenano",
+          "start": 77.529,
+          "end": 78.11
+        },
+        {
+          "text": "oscillazioni",
+          "start": 78.15,
+          "end": 78.69
+        },
+        {
+          "text": "violente",
+          "start": 78.73,
+          "end": 79.17
+        },
+        {
+          "text": "ovunque",
+          "start": 79.33,
+          "end": 79.71
+        },
+        {
+          "text": "altrove.",
+          "start": 79.75,
+          "end": 80.09
+        }
+      ]
+    },
+    {
+      "start": 80.79,
+      "end": 84.57,
+      "text": "Penalizzare i pesi grandi è quindi una chiave diretta per controllare la complessità.",
+      "words": [
+        {
+          "text": "Penalizzare",
+          "start": 80.79,
+          "end": 81.35
+        },
+        {
+          "text": "i",
+          "start": 81.41,
+          "end": 81.45
+        },
+        {
+          "text": "pesi",
+          "start": 81.45,
+          "end": 81.63
+        },
+        {
+          "text": "grandi",
+          "start": 81.67,
+          "end": 81.95
+        },
+        {
+          "text": "è",
+          "start": 82.01,
+          "end": 82.05000000000001
+        },
+        {
+          "text": "quindi",
+          "start": 82.07,
+          "end": 82.35
+        },
+        {
+          "text": "una",
+          "start": 82.39,
+          "end": 82.51
+        },
+        {
+          "text": "chiave",
+          "start": 82.57,
+          "end": 82.79
+        },
+        {
+          "text": "diretta",
+          "start": 82.83,
+          "end": 83.19
+        },
+        {
+          "text": "per",
+          "start": 83.23,
+          "end": 83.35
+        },
+        {
+          "text": "controllare",
+          "start": 83.41,
+          "end": 83.91
+        },
+        {
+          "text": "la",
+          "start": 83.95,
+          "end": 84.01
+        },
+        {
+          "text": "complessità.",
+          "start": 84.05,
+          "end": 84.57
+        }
+      ]
+    }
+  ]
+}

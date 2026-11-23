@@ -1,0 +1,296 @@
+{
+  "lesson_id": "02-problema",
+  "chapter": 2,
+  "part": "Parte I · Fondamenti",
+  "title": "Il problema dell'apprendimento",
+  "source_tex": "note_migliorate/capitoli/02-problema.tex",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
+  },
+  "scenes": [
+    {
+      "section": "2.1 Apprendere funzioni da esempi",
+      "title": "Definizione di Machine Learning, spazi di funzioni e quando serve",
+      "tts_text": "Apriamo lo studio vero e proprio del Machine Learning formulando il problema che tutto il corso affronta: inferire una funzione sconosciuta a partire da esempi. [pause:0.7] Formalmente, il Machine Learning studia metodi per costruire — cioè inferire — dipendenze, funzioni o ipotesi da esempi di dati osservati. Le funzioni ottenute devono soddisfare due requisiti: adattarsi agli esempi noti, il fit, e soprattutto generalizzare, cioè dare risposte con accuratezza ragionevole su dati nuovi. I risultati devono essere verificabili sotto criteri statistici e computazionali, tenendo conto di espressività e complessità algoritmica. [pause:0.8] Operativamente il sistema apprende dall'esperienza e costruisce un modello, o ipotesi. Il corso adotta la visione unificata dell'approssimazione di funzioni in spazi di funzioni — matematicamente spazi di Hilbert — così compiti diversi come classificazione e regressione rientrano nello stesso quadro rigoroso. [pause:0.8] Quando conviene davvero usare il Machine Learning? Serve opportunità e consapevolezza. È la scelta giusta quando c'è poca conoscenza a priori o la conoscenza è troppo difficile da formalizzare a mano — come riconoscere volti, parlato o prevedere la forza di legame di una molecola con una proteina — quando i dati sono incerti, rumorosi o incompleti, quando serve personalizzazione come nel filtraggio email, ed è facile raccogliere esperienza etichettata. [pause:0.7] In cambio il Machine Learning richiede una fonte di esperienza rappresentativa e una certa tolleranza sulla precisione: i risultati non sono mai garantiti esatti al cento per cento.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.1 · Apprendere funzioni da esempi</div>\n  <h2 class=\"slide-title\">Definizione di Machine Learning e condizioni d'uso</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Machine Learning (spazi di funzioni / Hilbert)</div>\n    <p>Inferire dipendenze, funzioni o ipotesi da esempi osservati che sappiano <strong>adattarsi</strong> (<em>fit</em>) e soprattutto <strong>generalizzare</strong> su dati nuovi, con risultati <strong>verificabili</strong> (espressività + complessità algoritmica).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Quando è la scelta giusta</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li>Conoscenza a priori assente, <strong>non formalizzabile</strong> (volti, parlato) o insufficiente (molecole/proteine).</li>\n        <li>Dati <strong>incerti, rumorosi o incompleti</strong>.</li>\n        <li>Comportamento <strong>personalizzato</strong> (filtri email/web).</li>\n        <li>Facile raccogliere <strong>esperienza etichettata</strong>.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Cosa richiede in cambio</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li>Una fonte di <strong>esperienza rappresentativa</strong> per l'addestramento.</li>\n        <li><strong>Tolleranza sulla precisione</strong>: nessuna garanzia di esattezza al 100%.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 9.8,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Formalmente, il Machine Learning"
+        },
+        {
+          "at": 58.57,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Quando conviene davvero"
+        },
+        {
+          "at": 86.75,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "In cambio il Machine Learning"
+        }
+      ],
+      "id": "scene-01",
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 97.36
+    },
+    {
+      "section": "2.1 – 2.2 Esempi applicativi e i 5 ingredienti",
+      "title": "Esempio delle cifre 8×8, tabella delle funzioni e i 5 ingredienti",
+      "tts_text": "Consideriamo un esempio classico: riconoscere cifre scritte a mano, ciascuna rappresentata da un'immagine di otto per otto pixel. Scrivere a mano le regole per distinguere un tre da un otto su tutte le calligrafie è impossibile, ma raccogliere esempi etichettati è facilissimo: lasciamo quindi che il sistema apprenda un classificatore f verso le dieci classi da zero a nove. [pause:0.7] La tabella in alto mostra la varietà di funzioni che si possono inferire da un training set di coppie x virgola f di x: riconoscimento della scrittura, diagnosi medica da sintomi ed esami, riconoscimento facciale da bitmap, rilevamento di spam, fino a dati strutturati complessi come il protein folding — da sequenza di amminoacidi a coordinate tridimensionali — e il drug design, da grafo molecolare alla forza di legame con la proteasi dell'HIV. [pause:0.9] Qualunque sistema di Machine Learning predittivo si descrive attraverso cinque ingredienti fondamentali, illustrati nello schema in basso: i dati, cioè le osservazioni del mondo; il task, cioè lo scopo dell'applicazione; il modello, cioè l'ipotesi h costruita dai dati; l'algoritmo di apprendimento, che regola i parametri del modello sul problema; e la validazione, che misura la qualità del modello ottenuto.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.1 – 2.2 · Esempi e architettura del ML</div>\n  <h2 class=\"slide-title\">Esempi di funzioni da apprendere e i 5 ingredienti di un sistema ML</h2>\n  <table id=\"s1\" class=\"acad-table cue-hidden\" style=\"font-size:0.77rem;\">\n    <thead><tr><th>Problema</th><th>Input \\(x\\)</th><th>Output \\(f(x)\\)</th></tr></thead>\n    <tbody>\n      <tr><td><strong>Cifre \\(8\\times 8\\) / scrittura</strong></td><td>Immagine pixel / movimento penna</td><td>Cifra \\(0\\dots 9\\) / lettera</td></tr>\n      <tr><td><strong>Diagnosi medica / Volti / Spam</strong></td><td>Sintomi / bitmap volto / email</td><td>Malattia / nome / spam</td></tr>\n      <tr><td><strong>Protein folding</strong></td><td>Sequenza di amminoacidi (lunghezza var.)</td><td>Coordinate 3D degli atomi</td></tr>\n      <tr><td><strong>Drug design</strong></td><td>Molecola (<strong>grafo</strong> di atomi e legami)</td><td>Forza legame proteasi HIV (\\(\\R\\))</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\" style=\"padding:6px;\">\n    <svg viewBox=\"0 0 650 108\" class=\"diagram-svg\" style=\"max-height:122px;\" aria-label=\"I 5 ingredienti di un sistema di ML\">\n      <defs>\n        <marker id=\"arr-ml2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n      </defs>\n      <rect x=\"130\" y=\"4\" width=\"90\" height=\"24\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\"/><text x=\"175\" y=\"20\" text-anchor=\"middle\" class=\"svg-tick\">Task</text>\n      <rect x=\"260\" y=\"4\" width=\"130\" height=\"24\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\"/><text x=\"325\" y=\"20\" text-anchor=\"middle\" class=\"svg-tick\">Algoritmo</text>\n      <rect x=\"430\" y=\"4\" width=\"100\" height=\"24\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\"/><text x=\"480\" y=\"20\" text-anchor=\"middle\" class=\"svg-tick\">Validazione</text>\n      <rect x=\"24\" y=\"54\" width=\"145\" height=\"42\" rx=\"4\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <text x=\"96\" y=\"72\" text-anchor=\"middle\" class=\"svg-math-sm\">Dati</text>\n      <text x=\"96\" y=\"88\" text-anchor=\"middle\" class=\"svg-caption\">osservazioni X</text>\n      <rect x=\"240\" y=\"54\" width=\"170\" height=\"42\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"2\"/>\n      <text x=\"325\" y=\"72\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">Modello (ipotesi h)</text>\n      <text x=\"325\" y=\"88\" text-anchor=\"middle\" class=\"svg-caption\">costruito dai dati</text>\n      <rect x=\"480\" y=\"54\" width=\"145\" height=\"42\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-dasharray=\"4 2\"/>\n      <text x=\"552\" y=\"72\" text-anchor=\"middle\" class=\"svg-math-sm\">Predizione</text>\n      <text x=\"552\" y=\"88\" text-anchor=\"middle\" class=\"svg-caption\">h(x) su dati nuovi</text>\n      <line x1=\"169\" y1=\"75\" x2=\"236\" y2=\"75\" class=\"svg-edge\" marker-end=\"url(#arr-ml2)\"/>\n      <line x1=\"410\" y1=\"75\" x2=\"476\" y2=\"75\" class=\"svg-edge\" marker-end=\"url(#arr-ml2)\"/>\n      <line x1=\"175\" y1=\"28\" x2=\"265\" y2=\"52\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" marker-end=\"url(#arr-ml2)\"/>\n      <line x1=\"325\" y1=\"28\" x2=\"325\" y2=\"51\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" marker-end=\"url(#arr-ml2)\"/>\n      <line x1=\"480\" y1=\"28\" x2=\"385\" y2=\"52\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" marker-end=\"url(#arr-ml2)\"/>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 22.53,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "La tabella in alto mostra"
+        },
+        {
+          "at": 54.27,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "cinque ingredienti fondamentali"
+        }
+      ],
+      "id": "scene-02",
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 74.77
+    },
+    {
+      "section": "2.2.1 Dati: rappresentazione, codifica e dati strutturati",
+      "title": "Matrice X, codifica one-hot, dati strutturati, rumore e outlier",
+      "tts_text": "Approfondiamo il primo ingrediente: i dati e la loro rappresentazione. Nel caso piatto — attributo-valore — ogni oggetto è un vettore di dimensione fissa di feature e il dataset è una matrice X di dimensione l per n: l righe sono gli esempi, indicizzati da p; n colonne sono le feature, indicizzate da i. Indichiamo con x con p il p-esimo pattern, con x con p virgola i la sua componente i, e con d con p il target desiderato. Gli attributi possono essere categorici, continui o avere valori mancanti indicati con un punto interrogativo. [pause:0.8] Come codifichiamo le variabili categoriche? Con due classi usiamo zero uno oppure meno uno più uno. Con più classi, numerare uno, due, tre introduce una somiglianza artificiale — la classe uno sembrerebbe più vicina alla due che alla tre — quindi va bene solo per variabili categoriche ordinate come piccolo, medio, grande. Per simboli senza ordine si usa la codifica one-hot, o uno di k: A diventa uno zero zero, B zero uno zero, C zero zero uno — tutti i simboli risultano equidistanti a distanza radice di due, sia in input sia in output. [pause:0.8] Molti dati reali però non sono vettori piatti, ma dati strutturati: sequenze temporali o di DNA, molecole rappresentate come grafi di atomi e legami, e reti di pagine web con link, come vedi in basso. Infine in pre-elaborazione vanno gestiti il rumore casuale delle misure, gli outlier — valori anomali da rimuovere o trattare con metodi robusti — la scalatura e la feature selection.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.2.1 · Rappresentazione dei dati</div>\n  <h2 class=\"slide-title\">Notazione matriciale, one-hot, dati strutturati e rumore</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">Matrice piatta \\(X \\in \\R^{l \\times n}\\) &amp; qualità</div>\n      <p style=\"font-size:0.82rem;\">\\(\\x_p\\): esempio \\(p \\in \\{1,\\dots,l\\}\\); \\(x_{p,i}\\): feature \\(i \\in \\{1,\\dots,n\\}\\); \\(d_p\\): target; «?» = dato mancante.<br/>Gestire <strong>rumore</strong> casuale, <strong>outlier</strong> (rimozione o metodi robusti), scalatura e <strong>feature selection</strong>.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">Codifica categoriche: ordinata vs One-Hot</div>\n      <p style=\"font-size:0.82rem;\">2 classi: \\(0/1\\) o \\(-1/+1\\). Ordinate: \\(1,2,3,\\dots\\). Non ordinate: <strong>one-hot (1-of-\\(k\\))</strong>, es. \\(A=(1,0,0), B=(0,1,0), C=(0,0,1)\\) → tutti equidistanti (\\(\\sqrt{2}\\)).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"svg-panel svg-panel-wide cue-hidden\" style=\"padding:6px;\">\n    <svg viewBox=\"0 0 650 106\" class=\"diagram-svg\" style=\"max-height:112px;\" aria-label=\"Dati strutturati: sequenza, molecola grafo, pagine web\">\n      <defs>\n        <marker id=\"arr-ds\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"4.5\" markerHeight=\"4.5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n      </defs>\n      <!-- Sequenza -->\n      <circle cx=\"34\" cy=\"46\" r=\"13\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"34\" y=\"50\" text-anchor=\"middle\" class=\"svg-tick\">x₁</text>\n      <circle cx=\"80\" cy=\"46\" r=\"13\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"80\" y=\"50\" text-anchor=\"middle\" class=\"svg-tick\">x₂</text>\n      <circle cx=\"126\" cy=\"46\" r=\"13\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"126\" y=\"50\" text-anchor=\"middle\" class=\"svg-tick\">x₃</text>\n      <circle cx=\"172\" cy=\"46\" r=\"13\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"172\" y=\"50\" text-anchor=\"middle\" class=\"svg-tick\">x₄</text>\n      <line x1=\"47\" y1=\"46\" x2=\"65\" y2=\"46\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <line x1=\"93\" y1=\"46\" x2=\"111\" y2=\"46\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <line x1=\"139\" y1=\"46\" x2=\"157\" y2=\"46\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <text x=\"103\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption\">sequenza (DNA, serie)</text>\n      <!-- Molecola -->\n      <polygon points=\"325,22 350,36 350,64 325,78 300,64 300,36\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n      <line x1=\"325\" y1=\"22\" x2=\"325\" y2=\"8\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n      <line x1=\"350\" y1=\"64\" x2=\"374\" y2=\"76\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n      <circle cx=\"325\" cy=\"22\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"325\" y=\"25\" text-anchor=\"middle\" style=\"font-size:9px;\">C</text>\n      <circle cx=\"350\" cy=\"36\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"350\" y=\"39\" text-anchor=\"middle\" style=\"font-size:9px;\">C</text>\n      <circle cx=\"350\" cy=\"64\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"350\" y=\"67\" text-anchor=\"middle\" style=\"font-size:9px;\">C</text>\n      <circle cx=\"325\" cy=\"78\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"325\" y=\"81\" text-anchor=\"middle\" style=\"font-size:9px;\">C</text>\n      <circle cx=\"300\" cy=\"64\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"300\" y=\"67\" text-anchor=\"middle\" style=\"font-size:9px;\">C</text>\n      <circle cx=\"300\" cy=\"36\" r=\"7\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"300\" y=\"39\" text-anchor=\"middle\" style=\"font-size:9px;\">C</text>\n      <circle cx=\"325\" cy=\"8\" r=\"7\" fill=\"#EFEFEF\" stroke=\"#C0392B\"/><text x=\"325\" y=\"11\" text-anchor=\"middle\" style=\"font-size:9px;\">O</text>\n      <circle cx=\"374\" cy=\"76\" r=\"7\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\"/><text x=\"374\" y=\"79\" text-anchor=\"middle\" style=\"font-size:9px;\">N</text>\n      <text x=\"330\" y=\"98\" text-anchor=\"middle\" class=\"svg-caption\">molecola (grafo)</text>\n      <!-- Web graph -->\n      <circle cx=\"480\" cy=\"32\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/>\n      <circle cx=\"536\" cy=\"22\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/>\n      <circle cx=\"508\" cy=\"68\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/>\n      <circle cx=\"566\" cy=\"64\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/>\n      <circle cx=\"602\" cy=\"30\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/>\n      <line x1=\"488\" y1=\"30\" x2=\"526\" y2=\"23\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <line x1=\"532\" y1=\"30\" x2=\"513\" y2=\"60\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <line x1=\"502\" y1=\"61\" x2=\"485\" y2=\"40\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <line x1=\"542\" y1=\"29\" x2=\"561\" y2=\"56\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <line x1=\"573\" y1=\"58\" x2=\"596\" y2=\"38\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <line x1=\"594\" y1=\"28\" x2=\"546\" y2=\"23\" class=\"svg-edge\" marker-end=\"url(#arr-ds)\"/>\n      <text x=\"540\" y=\"94\" text-anchor=\"middle\" class=\"svg-caption\">pagine web e link</text>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.26,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Nel caso piatto"
+        },
+        {
+          "at": 35.8,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "codifichiamo le variabili categoriche"
+        },
+        {
+          "at": 73.85,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "dati strutturati"
+        }
+      ],
+      "id": "scene-03",
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 95.16
+    },
+    {
+      "section": "2.2.2 Task: supervisionato, non supervisionato e classificazione",
+      "title": "Supervisionato vs Non supervisionato, Clustering e Classificazione LTU",
+      "tts_text": "Il secondo ingrediente è il task, che si divide in due famiglie: task predittivi — classificazione e regressione, fuoco del corso — e task descrittivi, come cluster analysis e regole di associazione. [pause:0.7] Nell'apprendimento supervisionato disponiamo di esempi etichettati x virgola d, dove il target d è fornito da un insegnante secondo una funzione sconosciuta f, e vogliamo un'ipotesi h che generalizzi su nuovi input x primo. In statistica gli input si chiamano variabili indipendenti e gli output variabili dipendenti. Se il target è categorico parliamo di classificazione; se è numerico continuo parliamo di regressione. [pause:0.8] Nell'apprendimento non supervisionato non c'è insegnante: abbiamo solo input x non etichettati. Gli obiettivi tipici sono il clustering — partizionare i dati in gruppi simili rappresentati da centroidi, come nello schema a sinistra — la riduzione di dimensionalità e la modellazione della densità. [pause:0.8] Guardando alla classificazione: con due classi f di x è una funzione booleana e parliamo di classificazione binaria o concept learning; con più classi di problema multi-classe. Geometricamente classificare significa dividere lo spazio degli input in regioni di decisione: l'esempio base a destra è il separatore lineare nel piano, w trasposto x più w zero uguale zero, cioè la Linear Threshold Unit, LTU — una funzione indicatrice le cui partizioni si chiamano dicotomie.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.2.2 · Task predittivi e descrittivi</div>\n  <h2 class=\"slide-title\">Supervisionato vs Non supervisionato · Clustering e LTU</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">Supervisionato \\(\\langle \\x, d\\rangle\\)</div>\n      <p style=\"font-size:0.82rem;\">Target \\(d\\) da insegnante: <strong>classificazione</strong> (\\(f(\\x) \\in \\{1,\\dots,K\\}\\), binaria / concept learning o multi-classe) oppure <strong>regressione</strong> (\\(f(\\x) \\in \\R\\) o \\(\\R^K\\)).</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">Non supervisionato \\(\\langle \\x\\rangle\\)</div>\n      <p style=\"font-size:0.82rem;\">Nessun target: <strong>clustering</strong> (gruppi simili), <strong>riduzione di dimensionalità</strong>, <strong>stima di densità</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"svg-panel\" style=\"flex-direction:column;gap:2px;padding:5px;\">\n      <div class=\"plot-title\" style=\"font-size:0.78rem;\">Clustering (2 gruppi e centroidi ×)</div>\n      <svg viewBox=\"0 0 245 138\" class=\"diagram-svg\" style=\"max-height:122px;\" aria-label=\"Due cluster con ellissi e centroidi\">\n        <line x1=\"20\" y1=\"122\" x2=\"232\" y2=\"122\" class=\"svg-axis\"/>\n        <line x1=\"20\" y1=\"122\" x2=\"20\" y2=\"12\" class=\"svg-axis\"/>\n        <ellipse cx=\"76\" cy=\"78\" rx=\"40\" ry=\"30\" fill=\"rgba(31,90,158,0.08)\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n        <circle cx=\"62\" cy=\"70\" r=\"2.5\" fill=\"#1F5A9E\"/><circle cx=\"88\" cy=\"84\" r=\"2.5\" fill=\"#1F5A9E\"/><circle cx=\"70\" cy=\"92\" r=\"2.5\" fill=\"#1F5A9E\"/><circle cx=\"94\" cy=\"68\" r=\"2.5\" fill=\"#1F5A9E\"/><circle cx=\"54\" cy=\"82\" r=\"2.5\" fill=\"#1F5A9E\"/><circle cx=\"80\" cy=\"60\" r=\"2.5\" fill=\"#1F5A9E\"/>\n        <text x=\"76\" y=\"82\" text-anchor=\"middle\" class=\"svg-math-sm\">×</text>\n        <ellipse cx=\"176\" cy=\"48\" rx=\"42\" ry=\"30\" fill=\"rgba(192,57,43,0.08)\" stroke=\"#C0392B\" stroke-width=\"1.5\"/>\n        <circle cx=\"160\" cy=\"42\" r=\"2.5\" fill=\"#C0392B\"/><circle cx=\"190\" cy=\"54\" r=\"2.5\" fill=\"#C0392B\"/><circle cx=\"172\" cy=\"64\" r=\"2.5\" fill=\"#C0392B\"/><circle cx=\"196\" cy=\"36\" r=\"2.5\" fill=\"#C0392B\"/><circle cx=\"152\" cy=\"54\" r=\"2.5\" fill=\"#C0392B\"/><circle cx=\"182\" cy=\"30\" r=\"2.5\" fill=\"#C0392B\"/>\n        <text x=\"176\" y=\"52\" text-anchor=\"middle\" class=\"svg-math-sm\">×</text>\n        <text x=\"76\" y=\"118\" text-anchor=\"middle\" class=\"svg-caption\">cluster 1</text>\n        <text x=\"176\" y=\"90\" text-anchor=\"middle\" class=\"svg-caption\">cluster 2</text>\n      </svg>\n    </div>\n    <div class=\"svg-panel\" style=\"flex-direction:column;gap:2px;padding:5px;\">\n      <div class=\"plot-title\" style=\"font-size:0.78rem;\">Separatore lineare LTU: \\(\\w\\T\\x + w_0 = 0\\)</div>\n      <svg viewBox=\"0 0 245 138\" class=\"diagram-svg\" style=\"max-height:122px;\" aria-label=\"Separatore lineare nel piano con classi 1 e 0\">\n        <polygon points=\"20,12 108,12 178,122 20,122\" fill=\"#EFEFEF\"/>\n        <line x1=\"20\" y1=\"122\" x2=\"232\" y2=\"122\" class=\"svg-axis\"/>\n        <line x1=\"20\" y1=\"122\" x2=\"20\" y2=\"12\" class=\"svg-axis\"/>\n        <line x1=\"108\" y1=\"12\" x2=\"178\" y2=\"122\" stroke=\"#C0392B\" stroke-width=\"2.2\"/>\n        <text x=\"52\" y=\"96\" class=\"svg-tick\">1</text><text x=\"68\" y=\"44\" class=\"svg-tick\">1</text><text x=\"96\" y=\"76\" class=\"svg-tick\">1</text><text x=\"122\" y=\"104\" class=\"svg-tick\">1</text>\n        <text x=\"174\" y=\"44\" class=\"svg-tick\">0</text><text x=\"206\" y=\"88\" class=\"svg-tick\">0</text><text x=\"152\" y=\"28\" class=\"svg-tick\">0</text><text x=\"196\" y=\"34\" class=\"svg-tick\">0</text>\n        <text x=\"62\" y=\"22\" class=\"svg-caption\">h(x) = 1</text>\n        <text x=\"202\" y=\"22\" class=\"svg-caption\">h(x) = 0</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 13.01,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "apprendimento supervisionato"
+        },
+        {
+          "at": 39.77,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "apprendimento non supervisionato"
+        },
+        {
+          "at": 52.31,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "schema a sinistra"
+        }
+      ],
+      "id": "scene-04",
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 89.09
+    },
+    {
+      "section": "2.2.2 Regressione e altri paradigmi (Self-supervised, RL)",
+      "title": "Dilemma della regressione, semi/self-supervised (GPT, BERT) e RL",
+      "tts_text": "Nella regressione stimiamo una funzione a valori reali da campioni rumorosi x virgola f di x più rumore — una forma di curve fitting. [pause:0.6] Guarda l'esempio a destra sui cinque punti vicino alla retta due x: uno virgola due punto uno; due virgola tre punto nove; tre virgola sei punto uno; quattro virgola otto punto quattro; cinque virgola nove punto otto. A occhio pensiamo subito a f di x uguale due x, ma tra le infinite curve compatibili con i punti quale deve scegliere una macchina? Il polinomio blu di grado quattro passa esattamente per tutti e cinque i punti, ma fuori dall'intervallo diverge bruscamente; la retta rossa e la parabola verde commettono piccoli errori ma restano regolari. Questo dilemma è il cuore della generalizzazione. [pause:0.9] Oltre a supervisionato e non supervisionato esistono tre paradigmi moderni essenziali. Il semi-supervised learning combina pochi esempi etichettati e molti non etichettati. [pause:0.6] Il self-supervised learning è apprendimento supervisionato in cui le etichette si generano automaticamente dalla struttura stessa dei dati, senza etichettatura manuale: il modello viene pre-addestrato su enormi moli di dati non etichettati per imparare rappresentazioni generali, poi adattate ai task specifici tramite fine-tuning. Alla base dei grandi modelli linguistici ci sono la predizione autoregressiva della parola successiva — famiglia GPT — e la ricostruzione di parole mascherate — BERT; per le immagini i masked autoencoder ricostruiscono porzioni nascoste. [pause:0.7] Infine il reinforcement learning apprende una politica di decision-making guidato da un critico e dal feedback dell'ambiente, senza esempi passo per passo.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.2.2 · Regressione e paradigmi moderni</div>\n  <h2 class=\"slide-title\">Dilemma del curve fitting, Self-supervised (GPT/BERT) e RL</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:4px;\">\n      <div class=\"plot-title\">3 ipotesi sui 5 punti vicino a \\(2x\\)</div>\n      <svg viewBox=\"0 0 272 172\" class=\"diagram-svg\" aria-label=\"Retta, parabola e interpolante grado 4\">\n        <line x1=\"34\" y1=\"148\" x2=\"256\" y2=\"148\" class=\"svg-axis\"/>\n        <line x1=\"34\" y1=\"148\" x2=\"34\" y2=\"14\" class=\"svg-axis\"/>\n        <path d=\"M 34.0,137.6 L 39.4,134.7 L 44.7,131.9 L 50.0,129.0 L 55.4,126.2 L 60.8,123.3 L 66.1,120.5 L 71.4,117.6 L 76.8,114.8 L 82.2,111.9 L 87.5,109.1 L 92.8,106.3 L 98.2,103.4 L 103.5,100.6 L 108.9,97.7 L 114.2,94.9 L 119.6,92.0 L 125.0,89.2 L 130.3,86.3 L 135.6,83.5 L 141.0,80.6 L 146.4,77.8 L 151.7,74.9 L 157.1,72.1 L 162.4,69.3 L 167.8,66.4 L 173.1,63.6 L 178.5,60.7 L 183.8,57.9 L 189.2,55.0 L 194.5,52.2 L 199.8,49.3 L 205.2,46.5 L 210.5,43.6 L 215.9,40.8 L 221.2,38.0 L 226.6,35.1 L 232.0,32.3 L 237.3,29.4 L 242.7,26.6 L 248.0,23.7\" class=\"svg-curve-red\"/>\n        <path d=\"M 34.0,139.9 L 39.4,136.7 L 44.7,133.5 L 50.0,130.3 L 55.4,127.1 L 60.8,124.0 L 66.1,120.9 L 71.4,117.8 L 76.8,114.8 L 82.2,111.7 L 87.5,108.7 L 92.8,105.7 L 98.2,102.8 L 103.5,99.8 L 108.9,96.9 L 114.2,94.0 L 119.6,91.1 L 125.0,88.3 L 130.3,85.5 L 135.6,82.7 L 141.0,79.9 L 146.4,77.1 L 151.7,74.4 L 157.1,71.7 L 162.4,69.0 L 167.8,66.3 L 173.1,63.7 L 178.5,61.1 L 183.8,58.5 L 189.2,55.9 L 194.5,53.4 L 199.8,50.9 L 205.2,48.4 L 210.5,45.9 L 215.9,43.4 L 221.2,41.0 L 226.6,38.6 L 232.0,36.2 L 237.3,33.9 L 242.7,31.5 L 248.0,29.2\" class=\"svg-curve-green\" stroke-dasharray=\"5 3\"/>\n        <path d=\"M 34.0,135.8 L 37.4,134.1 L 40.8,132.5 L 44.2,130.9 L 47.6,129.4 L 51.0,127.8 L 54.4,126.3 L 57.8,124.8 L 61.2,123.2 L 64.6,121.7 L 68.0,120.1 L 71.4,118.6 L 74.8,116.9 L 78.2,115.3 L 81.6,113.6 L 85.0,111.9 L 88.4,110.1 L 91.8,108.3 L 95.2,106.4 L 98.6,104.5 L 102.0,102.6 L 105.4,100.6 L 108.8,98.6 L 112.2,96.5 L 115.6,94.4 L 119.1,92.3 L 122.5,90.2 L 125.9,88.0 L 129.3,85.9 L 132.7,83.7 L 136.1,81.6 L 139.5,79.4 L 142.9,77.3 L 146.3,75.2 L 149.7,73.2 L 153.1,71.2 L 156.5,69.3 L 159.9,67.5 L 163.3,65.8 L 166.7,64.1 L 170.1,62.6 L 173.5,61.3 L 176.9,60.1 L 180.3,59.0 L 183.7,58.2 L 187.1,57.6 L 190.5,57.2 L 193.9,57.0 L 197.3,57.2 L 200.7,57.6 L 204.1,58.3 L 207.5,59.4 L 210.9,60.8 L 214.3,62.6 L 217.7,64.8 L 221.1,67.5 L 224.5,70.6 L 227.9,74.2 L 231.3,78.3 L 234.7,82.9 L 238.1,88.1\" class=\"svg-curve-blue\"/>\n        <circle cx=\"57.0\" cy=\"125.1\" r=\"3.4\" fill=\"#1A1A1A\"/><circle cx=\"90.0\" cy=\"109.3\" r=\"3.4\" fill=\"#1A1A1A\"/><circle cx=\"122.9\" cy=\"89.9\" r=\"3.4\" fill=\"#1A1A1A\"/><circle cx=\"155.8\" cy=\"69.7\" r=\"3.4\" fill=\"#1A1A1A\"/><circle cx=\"188.7\" cy=\"57.4\" r=\"3.4\" fill=\"#1A1A1A\"/>\n        <text x=\"145\" y=\"166\" text-anchor=\"middle\" class=\"svg-caption\">x (dati in [1, 5])</text>\n        <text x=\"44\" y=\"28\" class=\"svg-legend svg-red\">— retta</text>\n        <text x=\"44\" y=\"42\" class=\"svg-legend svg-green\">- - grado 2</text>\n        <text x=\"44\" y=\"56\" class=\"svg-legend svg-blue\">— grado 4 (interpola)</text>\n      </svg>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Altri 3 paradigmi</div>\n      <ul class=\"clean-list\" style=\"font-size:0.83rem;\">\n        <li><strong>Semi-supervised</strong>: dati etichettati + non etichettati.</li>\n        <li><strong>Self-supervised</strong>: etichette generate dai dati → <strong>pre-addestramento + fine-tuning</strong> (<strong>GPT</strong> autoregressivo, <strong>BERT</strong> mascherato, <em>masked autoencoder</em> su immagini).</li>\n        <li><strong>Reinforcement learning</strong>: politica di <em>decision-making</em> da un critico / feedback dell'ambiente.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 9.14,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Guarda l'esempio a destra"
+        },
+        {
+          "at": 48.09,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "tre paradigmi moderni essenziali"
+        }
+      ],
+      "id": "scene-05",
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 102.75
+    },
+    {
+      "section": "2.2.3 – 2.2.4 Modello, No Free Lunch e ricerca in H",
+      "title": "Spazio H, 4 paradigmi, No Free Lunch e algoritmo come ricerca locale",
+      "tts_text": "Il terzo ingrediente è il modello, che definisce la classe di funzioni implementabili, cioè lo spazio delle ipotesi H. Fissiamo la terminologia: l'esempio di training è la coppia x virgola f di x più rumore; f è la funzione target sconosciuta; h è un'ipotesi proposta espressa in un dato linguaggio; H è l'insieme di tutte le ipotesi producibili, ad esempio h di x e w al variare di w. [pause:0.7] Le rappresentazioni possibili sono molto diverse: nei modelli lineari H è continuo e ogni w è un'ipotesi come segno di w trasposto x più w zero oppure due x più centocinquanta; nelle regole simboliche H è discreto, come se x uno è zero e x due è uno allora uno altrimenti zero; i modelli probabilistici stimano la densità congiunta p di x e d; il K-nearest neighbors memorizza i dati e media i vicini; le reti neurali approssimano relazioni non lineari complesse. [pause:0.7] In tabella vedi i quattro grandi paradigmi: simbolici a regole con H discreto — congiunzioni, alberi, grammatiche induttive, evolutivi, ILP; sub-simbolici con H continuo — regressione lineare, analisi discriminante lineare, LTU, reti neurali, metodi kernel e SVM; probabilistici generativi — modelli parametrici, Naïve Bayes, reti bayesiane, Markov, HMM; e instance-based come il K-nearest neighbors. [pause:0.8] Vale il celebre teorema No Free Lunch: non esiste un metodo universalmente migliore su tutti i problemi senza conoscenza a priori; ogni guadagno su certi problemi si paga su altri. Per questo servono più modelli e criteri critici per confrontarli: differiscono per flessibilità e strumenti di controllo della complessità. Da qui nasce il filo conduttore del corso: modelli flessibili più principi per controllarne la complessità, da cui dipende la generalizzazione. [pause:0.8] Il quarto ingrediente è l'algoritmo di apprendimento, che esegue una ricerca euristica nello spazio H — spesso locale, come nel disegno a destra — dall'ipotesi iniziale verso l'ipotesi h stella compatibile con i dati a errore minimo, adattando i parametri liberi del modello. Nelle diverse discipline si chiama inferenza in statistica, abduzione o induzione in logica, adattamento in biologia, ottimizzazione in matematica, training nelle reti neurali. Poiché H può non contenere tutto e la ricerca non può essere esaustiva, servono assunzioni: è il ruolo del bias induttivo.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.2.3 – 2.2.4 · Modello e algoritmo di apprendimento</div>\n  <h2 class=\"slide-title\">Paradigmi di \\(H\\), No Free Lunch e ricerca nello spazio delle ipotesi</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <table id=\"s1\" class=\"acad-table cue-hidden\" style=\"font-size:0.76rem;\">\n        <thead><tr><th>Paradigma</th><th>Esempi</th></tr></thead>\n        <tbody>\n          <tr><td><strong>Simbolici</strong> (\\(H\\) discr.)</td><td>Congiunzioni, alberi, ILP, evolutivi</td></tr>\n          <tr><td><strong>Sub-simbolici</strong> (\\(H\\) cont.)</td><td>Lineari, LTU, reti neurali, SVM</td></tr>\n          <tr><td><strong>Probabilistici</strong></td><td>Naïve Bayes, reti bayesiane, HMM</td></tr>\n          <tr><td><strong>Instance-based</strong></td><td>K-nearest neighbors</td></tr>\n        </tbody>\n      </table>\n      <div id=\"s2\" class=\"box box-theorem cue-hidden\" style=\"padding:8px 11px;\">\n        <div class=\"box-label\">No Free Lunch &amp; filo conduttore</div>\n        <p style=\"font-size:0.81rem;\">Nessun metodo è universalmente migliore senza conoscenza a priori → servono <strong>modelli flessibili</strong> + <strong>controllo della complessità</strong>.</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:3px;padding:6px;\">\n      <div class=\"plot-title\">Apprendimento = ricerca locale nello spazio \\(H\\)</div>\n      <svg viewBox=\"0 0 264 166\" class=\"diagram-svg\" aria-label=\"Ricerca locale nello spazio delle ipotesi H fino a h star\">\n        <defs>\n          <marker id=\"arr-rh\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"4.5\" markerHeight=\"4.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <path d=\"M 28,134 Q 112,158 214,140 Q 256,88 218,32 Q 124,8 42,38 Q 4,84 28,134 Z\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.5\"/>\n        <ellipse cx=\"192\" cy=\"76\" rx=\"34\" ry=\"26\" fill=\"rgba(192,57,43,0.1)\" stroke=\"#C0392B\" stroke-width=\"1.5\"/>\n        <text x=\"48\" y=\"42\" class=\"svg-math-sm\">H</text>\n        <text x=\"188\" y=\"34\" text-anchor=\"middle\" class=\"svg-caption svg-red\">compatibili con TR</text>\n        <line x1=\"48\" y1=\"114\" x2=\"78\" y2=\"90\" class=\"svg-edge\" marker-end=\"url(#arr-rh)\"/>\n        <line x1=\"80\" y1=\"90\" x2=\"108\" y2=\"106\" class=\"svg-edge\" marker-end=\"url(#arr-rh)\"/>\n        <line x1=\"110\" y1=\"106\" x2=\"138\" y2=\"78\" class=\"svg-edge\" marker-end=\"url(#arr-rh)\"/>\n        <line x1=\"140\" y1=\"78\" x2=\"168\" y2=\"86\" class=\"svg-edge\" marker-end=\"url(#arr-rh)\"/>\n        <line x1=\"170\" y1=\"86\" x2=\"192\" y2=\"74\" class=\"svg-edge\" marker-end=\"url(#arr-rh)\"/>\n        <circle cx=\"48\" cy=\"114\" r=\"3\" fill=\"#1A1A1A\"/>\n        <circle cx=\"194\" cy=\"73\" r=\"4\" fill=\"#C0392B\"/>\n        <text x=\"48\" y=\"130\" text-anchor=\"middle\" class=\"svg-caption\">iniziale</text>\n        <text x=\"206\" y=\"77\" class=\"svg-math-sm svg-red\">h*</text>\n        <text x=\"132\" y=\"160\" text-anchor=\"middle\" class=\"svg-caption\">inferenza · induzione · adattamento · ottimizzazione</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 63.45,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "quattro grandi paradigmi"
+        },
+        {
+          "at": 92.99,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "teorema No Free Lunch"
+        },
+        {
+          "at": 124.4,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "ricerca euristica nello spazio H"
+        }
+      ],
+      "id": "scene-06",
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 158.45
+    },
+    {
+      "section": "2.3 Funzioni di loss ed errore",
+      "title": "Le quattro funzioni di loss: MSE, 0/1, distorsione e verosimiglianza",
+      "tts_text": "Per decidere se un'approssimazione è buona misuriamo la distanza tra l'uscita h con w di x e il target d con una funzione di loss L sul singolo esempio. L'errore E di w è la media della loss sugli l esempi: serve sia come funzione obiettivo nel training sia come misura in test. Dal capitolo cinque distingueremo tra loss complessiva con penalità ed errore sui dati. [pause:0.8] Nel corso incontreremo quattro loss fondamentali, una per task. Prima, regressione: errore quadratico d con p meno h con w di x con p al quadrato, la cui media è il Mean Squared Error, MSE — la media dei quadrati dei segmenti verdi verticali tra punti e retta nel grafico a destra. [pause:0.6] Seconda, classificazione: loss zero uno, che vale zero se h di x con p coincide con d con p e uno altrimenti. La sua media è il tasso d'errore: venti errori su cento esempi danno errore del venti per cento, cioè accuratezza dell'ottanta per cento. [pause:0.6] Terza, clustering e quantizzazione vettoriale: l'obiettivo è partizionare una distribuzione sconosciuta in regioni approssimate ciascuna da un centro o prototipo; H è un insieme di vector quantizer che mappano lo spazio continuo in uno discreto e la loss è la distorsione quadratica, norma di x con p meno h di x con p al quadrato. [pause:0.6] Quarta, stima di densità parametrica nei metodi generativi, ad esempio stimare media mu e varianza sigma quadro di una normale p di x dato mu e sigma quadro: la loss è meno logaritmo naturale di h di x con p. Poiché meno la somma dei logaritmi è uguale a meno il logaritmo del prodotto delle probabilità e il logaritmo è crescente, minimizzare questa loss equivale esattamente a massimizzare la log-verosimiglianza dei dati osservati.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.3 · Funzioni di loss ed errore medio</div>\n  <h2 class=\"slide-title\">\\(E(\\w) = \\frac{1}{l}\\sum_p L(h_\\w(\\x_p), d_p)\\) e i 4 casi del corso</h2>\n  <div class=\"split-visual\">\n    <table id=\"s1\" class=\"acad-table cue-hidden\" style=\"font-size:0.80rem;\">\n      <thead><tr><th>Task</th><th>Funzione di loss \\(L\\) e significato</th></tr></thead>\n      <tbody>\n        <tr id=\"r-mse2\"><td><strong>Regressione</strong></td><td>\\((d_p - h_\\w(\\x_p))^2\\) → media = <strong>MSE</strong></td></tr>\n        <tr id=\"r-012\"><td><strong>Classificazione</strong></td><td><strong>0/1</strong> (\\(0\\) giusto, \\(1\\) errato) → 20/100 = 80% acc.</td></tr>\n        <tr id=\"r-cl2\"><td><strong>Clustering (VQ)</strong></td><td>Distorsione \\(\\norm{\\x_p - h(\\x_p)}^2\\) dal centroide</td></tr>\n        <tr id=\"r-de2\"><td><strong>Densità</strong></td><td>\\(-\\ln h(\\x_p)\\): \\(-\\sum_p \\ln h = -\\ln\\prod_p h\\) → <strong>max verosimiglianza</strong></td></tr>\n      </tbody>\n    </table>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:4px;\">\n      <div class=\"plot-title\">MSE: quadrato dei residui verticali (verde)</div>\n      <svg viewBox=\"0 0 256 164\" class=\"diagram-svg\" aria-label=\"Residui verticali per il Mean Squared Error\">\n        <line x1=\"28\" y1=\"140\" x2=\"244\" y2=\"140\" class=\"svg-axis\"/>\n        <line x1=\"28\" y1=\"140\" x2=\"28\" y2=\"14\" class=\"svg-axis\"/>\n        <path d=\"M 34.9,115.1 L 229.1,33.1\" class=\"svg-curve-blue\"/>\n        <line x1=\"55.7\" y1=\"91.2\" x2=\"55.7\" y2=\"106.3\" stroke=\"#2E7D32\" stroke-width=\"2\"/><circle cx=\"55.7\" cy=\"91.2\" r=\"3.3\" fill=\"#C0392B\"/><line x1=\"83.5\" y1=\"105.8\" x2=\"83.5\" y2=\"94.6\" stroke=\"#2E7D32\" stroke-width=\"2\"/><circle cx=\"83.5\" cy=\"105.8\" r=\"3.3\" fill=\"#C0392B\"/><line x1=\"111.2\" y1=\"66.8\" x2=\"111.2\" y2=\"82.9\" stroke=\"#2E7D32\" stroke-width=\"2\"/><circle cx=\"111.2\" cy=\"66.8\" r=\"3.3\" fill=\"#C0392B\"/><line x1=\"138.9\" y1=\"86.3\" x2=\"138.9\" y2=\"71.2\" stroke=\"#2E7D32\" stroke-width=\"2\"/><circle cx=\"138.9\" cy=\"86.3\" r=\"3.3\" fill=\"#C0392B\"/><line x1=\"166.7\" y1=\"37.5\" x2=\"166.7\" y2=\"59.5\" stroke=\"#2E7D32\" stroke-width=\"2\"/><circle cx=\"166.7\" cy=\"37.5\" r=\"3.3\" fill=\"#C0392B\"/><line x1=\"194.4\" y1=\"64.4\" x2=\"194.4\" y2=\"47.8\" stroke=\"#2E7D32\" stroke-width=\"2\"/><circle cx=\"194.4\" cy=\"64.4\" r=\"3.3\" fill=\"#C0392B\"/><line x1=\"215.2\" y1=\"27.8\" x2=\"215.2\" y2=\"39.0\" stroke=\"#2E7D32\" stroke-width=\"2\"/><circle cx=\"215.2\" cy=\"27.8\" r=\"3.3\" fill=\"#C0392B\"/>\n        <text x=\"136\" y=\"158\" text-anchor=\"middle\" class=\"svg-caption\">x</text>\n        <text x=\"155\" y=\"28\" class=\"svg-legend svg-blue\">h_w(x) = w₁x + w₀</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 25.82,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "quattro loss fondamentali"
+        },
+        {
+          "at": 28.68,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Prima, regressione"
+        },
+        {
+          "at": 36.2,
+          "action": "highlight",
+          "target": "#r-mse2",
+          "anchor": "Mean Squared Error"
+        },
+        {
+          "at": 44.48,
+          "action": "highlight",
+          "target": "#r-012",
+          "anchor": "Seconda, classificazione"
+        },
+        {
+          "at": 60.91,
+          "action": "highlight",
+          "target": "#r-cl2",
+          "anchor": "Terza, clustering"
+        },
+        {
+          "at": 82.79,
+          "action": "highlight",
+          "target": "#r-de2",
+          "anchor": "Quarta, stima di densità"
+        }
+      ],
+      "id": "scene-07",
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 109.48
+    },
+    {
+      "section": "2.4 – 2.5 Generalizzazione, ciclo di progettazione ed errori",
+      "title": "Training vs deployment, le 6 fasi del ciclo e trappola della causalità",
+      "tts_text": "Chiudiamo con il concetto fondamentale del corso: la generalizzazione. Distinguiamo sempre due fasi: la fase di training, o fitting, in cui si costruisce il modello dai dati noti più il bias induttivo; e la fase predittiva o di test — deployment, inferenza — in cui si valuta il modello su nuovi esempi x primo con target d primo mai visti. Nel Machine Learning prestazione significa accuratezza di generalizzazione stimata su un test set hold-out: usare una libreria è facile, generalizzare bene è la vera sfida. [pause:0.8] Lo sviluppo reale è un ciclo iterativo in sei fasi guidato dalla conoscenza a priori del dominio, mostrato a sinistra: uno, raccolta di dati grandi e rappresentativi; due, rappresentazione e scelta delle feature — spesso la fase più critica per il successo complessivo; tre, scelta del modello conoscendone i limiti; quattro, costruzione e training; cinque, valutazione e interpretazione; sei, deployment, con possibilità di tornare indietro alle fasi iniziali. [pause:0.9] Attenzione infine agli errori di interpretazione: il Machine Learning non funziona con fenomeni casuali o lotterie; soprattutto, la causalità non si inferisce mai dai soli dati — in Florida l'età media è più alta non perché il clima allunghi la vita, ma perché i pensionati vi si trasferiscono; e nel Machine Learning modelli molto potenti possono adattarsi anche a dati privi di significato, rendendo fuorvianti i risultati se la validazione non è rigorosa.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.4 – 2.5 · Generalizzazione, ciclo di progetto ed errori</div>\n  <h2 class=\"slide-title\">Training vs Deployment, ciclo iterativo e rischi di interpretazione</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 365 215\" class=\"diagram-svg\" aria-label=\"Ciclo di progettazione ML\">\n        <defs>\n          <marker id=\"arr-cyc2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <rect x=\"44\" y=\"8\" width=\"166\" height=\"28\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"127\" y=\"26\" text-anchor=\"middle\" class=\"svg-tick\">1. Raccolta dati</text>\n        <rect x=\"44\" y=\"48\" width=\"166\" height=\"30\" rx=\"4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><text x=\"127\" y=\"67\" text-anchor=\"middle\" class=\"svg-tick svg-blue\">2. Rappresentazione (critica!)</text>\n        <rect x=\"44\" y=\"90\" width=\"166\" height=\"28\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"127\" y=\"108\" text-anchor=\"middle\" class=\"svg-tick\">3. Scelta del modello</text>\n        <rect x=\"44\" y=\"130\" width=\"166\" height=\"28\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"127\" y=\"148\" text-anchor=\"middle\" class=\"svg-tick\">4. Training del modello</text>\n        <rect x=\"44\" y=\"170\" width=\"166\" height=\"28\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\"/><text x=\"127\" y=\"188\" text-anchor=\"middle\" class=\"svg-tick\">5. Valutazione → 6. Deploy</text>\n        <line x1=\"127\" y1=\"36\" x2=\"127\" y2=\"46\" class=\"svg-edge\" marker-end=\"url(#arr-cyc2)\"/>\n        <line x1=\"127\" y1=\"78\" x2=\"127\" y2=\"88\" class=\"svg-edge\" marker-end=\"url(#arr-cyc2)\"/>\n        <line x1=\"127\" y1=\"118\" x2=\"127\" y2=\"128\" class=\"svg-edge\" marker-end=\"url(#arr-cyc2)\"/>\n        <line x1=\"127\" y1=\"158\" x2=\"127\" y2=\"168\" class=\"svg-edge\" marker-end=\"url(#arr-cyc2)\"/>\n        <path d=\"M 44,184 L 18,184 L 18,22 L 41,22\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.4\" marker-end=\"url(#arr-cyc2)\"/>\n        <rect x=\"242\" y=\"84\" width=\"112\" height=\"44\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\" stroke-dasharray=\"4 2\"/>\n        <text x=\"298\" y=\"103\" text-anchor=\"middle\" class=\"svg-caption\">Conoscenza</text>\n        <text x=\"298\" y=\"117\" text-anchor=\"middle\" class=\"svg-caption\">a priori</text>\n        <line x1=\"242\" y1=\"95\" x2=\"213\" y2=\"66\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" marker-end=\"url(#arr-cyc2)\"/>\n        <line x1=\"242\" y1=\"106\" x2=\"213\" y2=\"104\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" marker-end=\"url(#arr-cyc2)\"/>\n        <line x1=\"242\" y1=\"118\" x2=\"213\" y2=\"142\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" marker-end=\"url(#arr-cyc2)\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-idea cue-hidden\" style=\"padding:8px 11px;\">\n        <div class=\"box-label\">2 fasi: Training vs Test / Deployment</div>\n        <p style=\"font-size:0.83rem;\"><strong>Prestazione = generalizzazione</strong> su hold-out test set mai visto (teoria: Cap. 7–8; stima: Cap. 9).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-warn cue-hidden\" style=\"padding:8px 11px;\">\n        <div class=\"box-label\">Errori di interpretazione</div>\n        <ul class=\"clean-list\" style=\"font-size:0.81rem;\">\n          <li>Niente ML su variabili scorrelate (lotterie).</li>\n          <li><strong>Causalità ≠ correlazione</strong> (età media in Florida → pensionati, non clima).</li>\n          <li>Modelli potenti si adattano al rumore; validazione debole = risultati fuorvianti.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.95,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Distinguiamo sempre due fasi"
+        },
+        {
+          "at": 38.64,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "ciclo iterativo in sei fasi"
+        },
+        {
+          "at": 68.88,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "errori di interpretazione"
+        }
+      ],
+      "id": "scene-08",
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 95.31
+    },
+    {
+      "section": "Sintesi e verifica",
+      "title": "Punti chiave e domande di verifica (Il problema dell'apprendimento)",
+      "tts_text": "Riassumiamo i quattro punti chiave del capitolo. [pause:0.6] Primo: apprendere significa inferire da esempi un'ipotesi h nello spazio H che approssimi f e generalizzi su dati nuovi. [pause:0.6] Secondo: ogni sistema si scompone in dati — con notazione matriciale e codifica one-hot — task, modello, algoritmo di ricerca in H e validazione. [pause:0.6] Terzo: le quattro loss fondamentali sono errore quadratico per la regressione, loss zero uno per la classificazione, distorsione quadratica per il clustering e meno logaritmo naturale per la stima di densità. [pause:0.6] Quarto: conta sempre l'errore di generalizzazione, non l'errore di training. Nel prossimo capitolo vedremo perché senza assunzioni a priori la generalizzazione è impossibile.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">Capitolo 2 · Chiusura</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\">Apprendere = inferire \\(h \\in H\\) che approssimi \\(f\\) e <strong>generalizzi</strong>.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>5 ingredienti</strong>: dati (one-hot, rumore), task, modello (\\(H\\)), algoritmo (ricerca), validazione.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>4 loss</strong>: quadratica (MSE), 0/1, distorsione, \\(-\\ln h(\\x)\\).</li>\n        <li id=\"s4\" class=\"cue-hidden\">Conta l'errore su <strong>dati nuovi</strong>, non sul training.</li>\n      </ul>\n    </div>\n    <div id=\"s5\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Quando è appropriato usare il ML e cosa richiede in cambio?</li>\n        <li>Classificazione vs regressione; supervisionato vs non supervisionato.</li>\n        <li>Perché \\(1,2,3,\\dots\\) può essere inadatta e cos'è la codifica one-hot?</li>\n        <li>Quali loss si usano per i 4 task principali?</li>\n        <li>Cos'è la generalizzazione e come si stima?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.12,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: apprendere significa"
+        },
+        {
+          "at": 13.07,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: ogni sistema"
+        },
+        {
+          "at": 25.33,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: le quattro loss"
+        },
+        {
+          "at": 40.12,
+          "action": "show",
+          "target": "#s4, #s5",
+          "anchor": "Quarto: conta sempre"
+        }
+      ],
+      "id": "scene-09",
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json"
+    }
+  ]
+}

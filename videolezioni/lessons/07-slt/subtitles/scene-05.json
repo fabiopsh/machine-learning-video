@@ -1,0 +1,925 @@
+{
+  "duration": 63.806,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.501,
+      "text": "Ecco il risultato centrale della Statistical Learning Theory: il VC-bound.",
+      "words": [
+        {
+          "text": "Ecco",
+          "start": 0.08,
+          "end": 0.36
+        },
+        {
+          "text": "il",
+          "start": 0.46,
+          "end": 0.52
+        },
+        {
+          "text": "risultato",
+          "start": 0.56,
+          "end": 1.04
+        },
+        {
+          "text": "centrale",
+          "start": 1.12,
+          "end": 1.62
+        },
+        {
+          "text": "della",
+          "start": 1.74,
+          "end": 1.96
+        },
+        {
+          "text": "Statistical",
+          "start": 2.08,
+          "end": 2.72
+        },
+        {
+          "text": "Learning",
+          "start": 2.74,
+          "end": 3.04
+        },
+        {
+          "text": "Theory:",
+          "start": 3.08,
+          "end": 3.341
+        },
+        {
+          "text": "il",
+          "start": 3.701,
+          "end": 3.801
+        },
+        {
+          "text": "VC-bound.",
+          "start": 3.861,
+          "end": 4.501
+        }
+      ]
+    },
+    {
+      "start": 5.101,
+      "end": 11.642,
+      "text": "Con probabilità almeno uno meno delta, per ogni ipotesi h in H con VC-dimension minore",
+      "words": [
+        {
+          "text": "Con",
+          "start": 5.101,
+          "end": 5.221
+        },
+        {
+          "text": "probabilità",
+          "start": 5.261,
+          "end": 5.801
+        },
+        {
+          "text": "almeno",
+          "start": 5.981,
+          "end": 6.321
+        },
+        {
+          "text": "uno",
+          "start": 6.501,
+          "end": 6.681
+        },
+        {
+          "text": "meno",
+          "start": 6.721,
+          "end": 6.881
+        },
+        {
+          "text": "delta,",
+          "start": 6.921,
+          "end": 7.281
+        },
+        {
+          "text": "per",
+          "start": 7.661,
+          "end": 7.781
+        },
+        {
+          "text": "ogni",
+          "start": 7.821,
+          "end": 7.961
+        },
+        {
+          "text": "ipotesi",
+          "start": 8.021,
+          "end": 8.441
+        },
+        {
+          "text": "h",
+          "start": 8.741,
+          "end": 8.781
+        },
+        {
+          "text": "in",
+          "start": 9.141,
+          "end": 9.241
+        },
+        {
+          "text": "H",
+          "start": 9.581,
+          "end": 9.621
+        },
+        {
+          "text": "con",
+          "start": 9.802,
+          "end": 9.942
+        },
+        {
+          "text": "VC-dimension",
+          "start": 10.022,
+          "end": 10.902
+        },
+        {
+          "text": "minore",
+          "start": 11.142,
+          "end": 11.642
+        }
+      ]
+    },
+    {
+      "start": 11.682,
+      "end": 12.762,
+      "text": "del numero di esempi l,",
+      "words": [
+        {
+          "text": "del",
+          "start": 11.682,
+          "end": 11.802
+        },
+        {
+          "text": "numero",
+          "start": 11.842,
+          "end": 12.062
+        },
+        {
+          "text": "di",
+          "start": 12.102,
+          "end": 12.142
+        },
+        {
+          "text": "esempi",
+          "start": 12.202,
+          "end": 12.542
+        },
+        {
+          "text": "l,",
+          "start": 12.722,
+          "end": 12.762
+        }
+      ]
+    },
+    {
+      "start": 13.502,
+      "end": 17.983,
+      "text": "vale che il rischio vero R di h è minore o uguale al rischio empirico",
+      "words": [
+        {
+          "text": "vale",
+          "start": 13.502,
+          "end": 13.702
+        },
+        {
+          "text": "che",
+          "start": 13.742,
+          "end": 13.822
+        },
+        {
+          "text": "il",
+          "start": 13.862,
+          "end": 13.922
+        },
+        {
+          "text": "rischio",
+          "start": 13.962,
+          "end": 14.282
+        },
+        {
+          "text": "vero",
+          "start": 14.382,
+          "end": 14.662
+        },
+        {
+          "text": "R",
+          "start": 15.002,
+          "end": 15.042
+        },
+        {
+          "text": "di",
+          "start": 15.122,
+          "end": 15.182
+        },
+        {
+          "text": "h",
+          "start": 15.482,
+          "end": 15.522
+        },
+        {
+          "text": "è",
+          "start": 15.982,
+          "end": 16.022
+        },
+        {
+          "text": "minore",
+          "start": 16.122,
+          "end": 16.503
+        },
+        {
+          "text": "o",
+          "start": 16.623,
+          "end": 16.663
+        },
+        {
+          "text": "uguale",
+          "start": 16.703,
+          "end": 17.023
+        },
+        {
+          "text": "al",
+          "start": 17.123,
+          "end": 17.203
+        },
+        {
+          "text": "rischio",
+          "start": 17.263,
+          "end": 17.503
+        },
+        {
+          "text": "empirico",
+          "start": 17.563,
+          "end": 17.983
+        }
+      ]
+    },
+    {
+      "start": 18.263,
+      "end": 22.283,
+      "text": "R emp di h, più un termine epsilon chiamato VC-confidence.",
+      "words": [
+        {
+          "text": "R",
+          "start": 18.263,
+          "end": 18.303
+        },
+        {
+          "text": "emp",
+          "start": 18.323,
+          "end": 18.583
+        },
+        {
+          "text": "di",
+          "start": 18.763,
+          "end": 18.843
+        },
+        {
+          "text": "h,",
+          "start": 19.103,
+          "end": 19.143
+        },
+        {
+          "text": "più",
+          "start": 19.543,
+          "end": 19.663
+        },
+        {
+          "text": "un",
+          "start": 19.783,
+          "end": 19.883
+        },
+        {
+          "text": "termine",
+          "start": 19.923,
+          "end": 20.223
+        },
+        {
+          "text": "epsilon",
+          "start": 20.303,
+          "end": 20.703
+        },
+        {
+          "text": "chiamato",
+          "start": 20.843,
+          "end": 21.203
+        },
+        {
+          "text": "VC-confidence.",
+          "start": 21.363,
+          "end": 22.283
+        }
+      ]
+    },
+    {
+      "start": 23.183,
+      "end": 28.103,
+      "text": "Per la loss zero uno, epsilon è la radice quadrata di VC per il logaritmo",
+      "words": [
+        {
+          "text": "Per",
+          "start": 23.183,
+          "end": 23.303
+        },
+        {
+          "text": "la",
+          "start": 23.343,
+          "end": 23.423
+        },
+        {
+          "text": "loss",
+          "start": 23.463,
+          "end": 23.703
+        },
+        {
+          "text": "zero",
+          "start": 23.923,
+          "end": 24.143
+        },
+        {
+          "text": "uno,",
+          "start": 24.263,
+          "end": 24.423
+        },
+        {
+          "text": "epsilon",
+          "start": 24.643,
+          "end": 25.063
+        },
+        {
+          "text": "è",
+          "start": 25.263,
+          "end": 25.303
+        },
+        {
+          "text": "la",
+          "start": 25.363,
+          "end": 25.423
+        },
+        {
+          "text": "radice",
+          "start": 25.463,
+          "end": 25.743
+        },
+        {
+          "text": "quadrata",
+          "start": 25.803,
+          "end": 26.223
+        },
+        {
+          "text": "di",
+          "start": 26.383,
+          "end": 26.463
+        },
+        {
+          "text": "VC",
+          "start": 26.603,
+          "end": 26.803
+        },
+        {
+          "text": "per",
+          "start": 27.303,
+          "end": 27.403
+        },
+        {
+          "text": "il",
+          "start": 27.443,
+          "end": 27.503
+        },
+        {
+          "text": "logaritmo",
+          "start": 27.523,
+          "end": 28.103
+        }
+      ]
+    },
+    {
+      "start": 28.283,
+      "end": 32.504,
+      "text": "di due l su VC più uno, meno il logaritmo di delta quarti,",
+      "words": [
+        {
+          "text": "di",
+          "start": 28.283,
+          "end": 28.383
+        },
+        {
+          "text": "due",
+          "start": 28.523,
+          "end": 28.703
+        },
+        {
+          "text": "l",
+          "start": 28.823,
+          "end": 28.863
+        },
+        {
+          "text": "su",
+          "start": 29.043,
+          "end": 29.123
+        },
+        {
+          "text": "VC",
+          "start": 29.183,
+          "end": 29.363
+        },
+        {
+          "text": "più",
+          "start": 29.663,
+          "end": 29.784
+        },
+        {
+          "text": "uno,",
+          "start": 29.944,
+          "end": 30.124
+        },
+        {
+          "text": "meno",
+          "start": 30.504,
+          "end": 30.724
+        },
+        {
+          "text": "il",
+          "start": 30.844,
+          "end": 30.904
+        },
+        {
+          "text": "logaritmo",
+          "start": 30.944,
+          "end": 31.464
+        },
+        {
+          "text": "di",
+          "start": 31.624,
+          "end": 31.704
+        },
+        {
+          "text": "delta",
+          "start": 31.784,
+          "end": 32.064
+        },
+        {
+          "text": "quarti,",
+          "start": 32.124,
+          "end": 32.504
+        }
+      ]
+    },
+    {
+      "start": 32.784,
+      "end": 33.964,
+      "text": "il tutto diviso l.",
+      "words": [
+        {
+          "text": "il",
+          "start": 32.784,
+          "end": 32.864
+        },
+        {
+          "text": "tutto",
+          "start": 32.924,
+          "end": 33.224
+        },
+        {
+          "text": "diviso",
+          "start": 33.404,
+          "end": 33.704
+        },
+        {
+          "text": "l.",
+          "start": 33.924,
+          "end": 33.964
+        }
+      ]
+    },
+    {
+      "start": 34.764,
+      "end": 40.025,
+      "text": "Delta rappresenta la confidenza: ad esempio con delta uguale a zero virgola zero uno il",
+      "words": [
+        {
+          "text": "Delta",
+          "start": 34.764,
+          "end": 35.144
+        },
+        {
+          "text": "rappresenta",
+          "start": 35.304,
+          "end": 35.764
+        },
+        {
+          "text": "la",
+          "start": 35.804,
+          "end": 35.864
+        },
+        {
+          "text": "confidenza:",
+          "start": 35.904,
+          "end": 36.525
+        },
+        {
+          "text": "ad",
+          "start": 36.885,
+          "end": 36.965
+        },
+        {
+          "text": "esempio",
+          "start": 37.005,
+          "end": 37.365
+        },
+        {
+          "text": "con",
+          "start": 37.445,
+          "end": 37.605
+        },
+        {
+          "text": "delta",
+          "start": 37.665,
+          "end": 38.005
+        },
+        {
+          "text": "uguale",
+          "start": 38.085,
+          "end": 38.385
+        },
+        {
+          "text": "a",
+          "start": 38.425,
+          "end": 38.465
+        },
+        {
+          "text": "zero",
+          "start": 38.545,
+          "end": 38.705
+        },
+        {
+          "text": "virgola",
+          "start": 38.745,
+          "end": 39.045
+        },
+        {
+          "text": "zero",
+          "start": 39.125,
+          "end": 39.285
+        },
+        {
+          "text": "uno",
+          "start": 39.385,
+          "end": 39.525
+        },
+        {
+          "text": "il",
+          "start": 39.925,
+          "end": 40.025
+        }
+      ]
+    },
+    {
+      "start": 40.085,
+      "end": 42.825,
+      "text": "bound vale con probabilità novantanove per cento.",
+      "words": [
+        {
+          "text": "bound",
+          "start": 40.085,
+          "end": 40.385
+        },
+        {
+          "text": "vale",
+          "start": 40.565,
+          "end": 40.785
+        },
+        {
+          "text": "con",
+          "start": 40.845,
+          "end": 40.985
+        },
+        {
+          "text": "probabilità",
+          "start": 41.025,
+          "end": 41.585
+        },
+        {
+          "text": "novantanove",
+          "start": 41.745,
+          "end": 42.265
+        },
+        {
+          "text": "per",
+          "start": 42.305,
+          "end": 42.425
+        },
+        {
+          "text": "cento.",
+          "start": 42.485,
+          "end": 42.825
+        }
+      ]
+    },
+    {
+      "start": 43.326,
+      "end": 46.466,
+      "text": "Osserva il cuore della formula: a meno di fattori logaritmici,",
+      "words": [
+        {
+          "text": "Osserva",
+          "start": 43.326,
+          "end": 43.666
+        },
+        {
+          "text": "il",
+          "start": 43.706,
+          "end": 43.766
+        },
+        {
+          "text": "cuore",
+          "start": 43.786,
+          "end": 43.986
+        },
+        {
+          "text": "della",
+          "start": 44.026,
+          "end": 44.186
+        },
+        {
+          "text": "formula:",
+          "start": 44.226,
+          "end": 44.626
+        },
+        {
+          "text": "a",
+          "start": 45.046,
+          "end": 45.086
+        },
+        {
+          "text": "meno",
+          "start": 45.146,
+          "end": 45.306
+        },
+        {
+          "text": "di",
+          "start": 45.326,
+          "end": 45.386
+        },
+        {
+          "text": "fattori",
+          "start": 45.426,
+          "end": 45.746
+        },
+        {
+          "text": "logaritmici,",
+          "start": 45.786,
+          "end": 46.466
+        }
+      ]
+    },
+    {
+      "start": 46.666,
+      "end": 50.047,
+      "text": "la VC-confidence dipende dal rapporto VC diviso l.",
+      "words": [
+        {
+          "text": "la",
+          "start": 46.666,
+          "end": 46.746
+        },
+        {
+          "text": "VC-confidence",
+          "start": 46.866,
+          "end": 47.766
+        },
+        {
+          "text": "dipende",
+          "start": 47.806,
+          "end": 48.106
+        },
+        {
+          "text": "dal",
+          "start": 48.146,
+          "end": 48.246
+        },
+        {
+          "text": "rapporto",
+          "start": 48.286,
+          "end": 48.746
+        },
+        {
+          "text": "VC",
+          "start": 48.946,
+          "end": 49.166
+        },
+        {
+          "text": "diviso",
+          "start": 49.507,
+          "end": 49.827
+        },
+        {
+          "text": "l.",
+          "start": 50.007,
+          "end": 50.047
+        }
+      ]
+    },
+    {
+      "start": 50.607,
+      "end": 54.787,
+      "text": "Cresce con la complessità VC e decresce con il numero di dati l:",
+      "words": [
+        {
+          "text": "Cresce",
+          "start": 50.607,
+          "end": 51.007
+        },
+        {
+          "text": "con",
+          "start": 51.127,
+          "end": 51.247
+        },
+        {
+          "text": "la",
+          "start": 51.287,
+          "end": 51.347
+        },
+        {
+          "text": "complessità",
+          "start": 51.367,
+          "end": 51.867
+        },
+        {
+          "text": "VC",
+          "start": 51.967,
+          "end": 52.147
+        },
+        {
+          "text": "e",
+          "start": 52.647,
+          "end": 52.687
+        },
+        {
+          "text": "decresce",
+          "start": 52.767,
+          "end": 53.287
+        },
+        {
+          "text": "con",
+          "start": 53.407,
+          "end": 53.547
+        },
+        {
+          "text": "il",
+          "start": 53.587,
+          "end": 53.667
+        },
+        {
+          "text": "numero",
+          "start": 53.707,
+          "end": 53.947
+        },
+        {
+          "text": "di",
+          "start": 53.987,
+          "end": 54.047
+        },
+        {
+          "text": "dati",
+          "start": 54.107,
+          "end": 54.387
+        },
+        {
+          "text": "l:",
+          "start": 54.747,
+          "end": 54.787
+        }
+      ]
+    },
+    {
+      "start": 55.387,
+      "end": 58.608,
+      "text": "raddoppiare gli esempi ha lo stesso effetto di dimezzare la complessità.",
+      "words": [
+        {
+          "text": "raddoppiare",
+          "start": 55.387,
+          "end": 55.787
+        },
+        {
+          "text": "gli",
+          "start": 55.807,
+          "end": 55.907
+        },
+        {
+          "text": "esempi",
+          "start": 55.927,
+          "end": 56.308
+        },
+        {
+          "text": "ha",
+          "start": 56.388,
+          "end": 56.428
+        },
+        {
+          "text": "lo",
+          "start": 56.508,
+          "end": 56.568
+        },
+        {
+          "text": "stesso",
+          "start": 56.588,
+          "end": 56.828
+        },
+        {
+          "text": "effetto",
+          "start": 56.868,
+          "end": 57.188
+        },
+        {
+          "text": "di",
+          "start": 57.228,
+          "end": 57.308
+        },
+        {
+          "text": "dimezzare",
+          "start": 57.388,
+          "end": 57.908
+        },
+        {
+          "text": "la",
+          "start": 57.968,
+          "end": 58.028
+        },
+        {
+          "text": "complessità.",
+          "start": 58.048,
+          "end": 58.608
+        }
+      ]
+    },
+    {
+      "start": 59.228,
+      "end": 63.489,
+      "text": "E soprattutto epsilon si può calcolare prima ancora di addestrare il modello.",
+      "words": [
+        {
+          "text": "E",
+          "start": 59.228,
+          "end": 59.268
+        },
+        {
+          "text": "soprattutto",
+          "start": 59.328,
+          "end": 59.888
+        },
+        {
+          "text": "epsilon",
+          "start": 60.208,
+          "end": 60.648
+        },
+        {
+          "text": "si",
+          "start": 60.788,
+          "end": 60.868
+        },
+        {
+          "text": "può",
+          "start": 60.908,
+          "end": 60.988
+        },
+        {
+          "text": "calcolare",
+          "start": 61.128,
+          "end": 61.708
+        },
+        {
+          "text": "prima",
+          "start": 61.848,
+          "end": 62.128
+        },
+        {
+          "text": "ancora",
+          "start": 62.188,
+          "end": 62.468
+        },
+        {
+          "text": "di",
+          "start": 62.508,
+          "end": 62.548
+        },
+        {
+          "text": "addestrare",
+          "start": 62.589,
+          "end": 63.029
+        },
+        {
+          "text": "il",
+          "start": 63.049,
+          "end": 63.109
+        },
+        {
+          "text": "modello.",
+          "start": 63.129,
+          "end": 63.489
+        }
+      ]
+    }
+  ]
+}

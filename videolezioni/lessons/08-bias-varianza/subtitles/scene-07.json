@@ -1,0 +1,917 @@
+{
+  "duration": 66.21,
+  "segments": [
+    {
+      "start": 0.85,
+      "end": 3.45,
+      "text": "Combinare modelli che fanno gli stessi errori non serve.",
+      "words": [
+        {
+          "text": "Combinare",
+          "start": 0.85,
+          "end": 1.27
+        },
+        {
+          "text": "modelli",
+          "start": 1.31,
+          "end": 1.65
+        },
+        {
+          "text": "che",
+          "start": 1.69,
+          "end": 1.77
+        },
+        {
+          "text": "fanno",
+          "start": 1.83,
+          "end": 2.05
+        },
+        {
+          "text": "gli",
+          "start": 2.09,
+          "end": 2.23
+        },
+        {
+          "text": "stessi",
+          "start": 2.27,
+          "end": 2.55
+        },
+        {
+          "text": "errori",
+          "start": 2.59,
+          "end": 2.87
+        },
+        {
+          "text": "non",
+          "start": 2.91,
+          "end": 3.03
+        },
+        {
+          "text": "serve.",
+          "start": 3.09,
+          "end": 3.45
+        }
+      ]
+    },
+    {
+      "start": 4.191,
+      "end": 8.511,
+      "text": "Il boosting, come AdaBoost, differenzia i modelli di proposito in due mosse:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 4.191,
+          "end": 4.291
+        },
+        {
+          "text": "boosting,",
+          "start": 4.351,
+          "end": 4.871
+        },
+        {
+          "text": "come",
+          "start": 5.031,
+          "end": 5.251
+        },
+        {
+          "text": "AdaBoost,",
+          "start": 5.411,
+          "end": 5.931
+        },
+        {
+          "text": "differenzia",
+          "start": 6.091,
+          "end": 6.611
+        },
+        {
+          "text": "i",
+          "start": 6.631,
+          "end": 6.671
+        },
+        {
+          "text": "modelli",
+          "start": 6.671,
+          "end": 7.011
+        },
+        {
+          "text": "di",
+          "start": 7.051,
+          "end": 7.111
+        },
+        {
+          "text": "proposito",
+          "start": 7.191,
+          "end": 7.771
+        },
+        {
+          "text": "in",
+          "start": 7.831,
+          "end": 7.891
+        },
+        {
+          "text": "due",
+          "start": 7.931,
+          "end": 8.091
+        },
+        {
+          "text": "mosse:",
+          "start": 8.131,
+          "end": 8.511
+        }
+      ]
+    },
+    {
+      "start": 9.151,
+      "end": 13.892,
+      "text": "li addestra in sequenza dando più peso agli esempi sbagliati dai classificatori precedenti,",
+      "words": [
+        {
+          "text": "li",
+          "start": 9.151,
+          "end": 9.211
+        },
+        {
+          "text": "addestra",
+          "start": 9.271,
+          "end": 9.631
+        },
+        {
+          "text": "in",
+          "start": 9.691,
+          "end": 9.751
+        },
+        {
+          "text": "sequenza",
+          "start": 9.791,
+          "end": 10.312
+        },
+        {
+          "text": "dando",
+          "start": 10.412,
+          "end": 10.652
+        },
+        {
+          "text": "più",
+          "start": 10.752,
+          "end": 10.872
+        },
+        {
+          "text": "peso",
+          "start": 10.992,
+          "end": 11.272
+        },
+        {
+          "text": "agli",
+          "start": 11.312,
+          "end": 11.432
+        },
+        {
+          "text": "esempi",
+          "start": 11.472,
+          "end": 11.792
+        },
+        {
+          "text": "sbagliati",
+          "start": 11.832,
+          "end": 12.332
+        },
+        {
+          "text": "dai",
+          "start": 12.372,
+          "end": 12.472
+        },
+        {
+          "text": "classificatori",
+          "start": 12.492,
+          "end": 13.172
+        },
+        {
+          "text": "precedenti,",
+          "start": 13.212,
+          "end": 13.892
+        }
+      ]
+    },
+    {
+      "start": 14.412,
+      "end": 17.273,
+      "text": "e li combina con un voto pesato che premia i più accurati.",
+      "words": [
+        {
+          "text": "e",
+          "start": 14.412,
+          "end": 14.452
+        },
+        {
+          "text": "li",
+          "start": 14.492,
+          "end": 14.552
+        },
+        {
+          "text": "combina",
+          "start": 14.592,
+          "end": 14.932
+        },
+        {
+          "text": "con",
+          "start": 14.972,
+          "end": 15.112
+        },
+        {
+          "text": "un",
+          "start": 15.152,
+          "end": 15.212
+        },
+        {
+          "text": "voto",
+          "start": 15.252,
+          "end": 15.452
+        },
+        {
+          "text": "pesato",
+          "start": 15.492,
+          "end": 15.972
+        },
+        {
+          "text": "che",
+          "start": 16.012,
+          "end": 16.092
+        },
+        {
+          "text": "premia",
+          "start": 16.132,
+          "end": 16.392
+        },
+        {
+          "text": "i",
+          "start": 16.452,
+          "end": 16.492
+        },
+        {
+          "text": "più",
+          "start": 16.532,
+          "end": 16.632
+        },
+        {
+          "text": "accurati.",
+          "start": 16.712,
+          "end": 17.273
+        }
+      ]
+    },
+    {
+      "start": 18.073,
+      "end": 21.713,
+      "text": "Usa weak learner, cioè classificatori appena migliori del caso,",
+      "words": [
+        {
+          "text": "Usa",
+          "start": 18.073,
+          "end": 18.253
+        },
+        {
+          "text": "weak",
+          "start": 18.513,
+          "end": 18.713
+        },
+        {
+          "text": "learner,",
+          "start": 18.813,
+          "end": 19.293
+        },
+        {
+          "text": "cioè",
+          "start": 19.393,
+          "end": 19.573
+        },
+        {
+          "text": "classificatori",
+          "start": 19.653,
+          "end": 20.353
+        },
+        {
+          "text": "appena",
+          "start": 20.433,
+          "end": 20.733
+        },
+        {
+          "text": "migliori",
+          "start": 20.773,
+          "end": 21.173
+        },
+        {
+          "text": "del",
+          "start": 21.213,
+          "end": 21.333
+        },
+        {
+          "text": "caso,",
+          "start": 21.393,
+          "end": 21.713
+        }
+      ]
+    },
+    {
+      "start": 22.213,
+      "end": 26.794,
+      "text": "e costruisce in modo incrementale un modello forte che riduce il bias senza far esplodere",
+      "words": [
+        {
+          "text": "e",
+          "start": 22.213,
+          "end": 22.253
+        },
+        {
+          "text": "costruisce",
+          "start": 22.293,
+          "end": 22.773
+        },
+        {
+          "text": "in",
+          "start": 22.813,
+          "end": 22.853
+        },
+        {
+          "text": "modo",
+          "start": 22.873,
+          "end": 23.053
+        },
+        {
+          "text": "incrementale",
+          "start": 23.113,
+          "end": 23.894
+        },
+        {
+          "text": "un",
+          "start": 23.954,
+          "end": 23.994
+        },
+        {
+          "text": "modello",
+          "start": 24.034,
+          "end": 24.354
+        },
+        {
+          "text": "forte",
+          "start": 24.394,
+          "end": 24.834
+        },
+        {
+          "text": "che",
+          "start": 24.874,
+          "end": 24.954
+        },
+        {
+          "text": "riduce",
+          "start": 24.994,
+          "end": 25.274
+        },
+        {
+          "text": "il",
+          "start": 25.314,
+          "end": 25.394
+        },
+        {
+          "text": "bias",
+          "start": 25.434,
+          "end": 25.814
+        },
+        {
+          "text": "senza",
+          "start": 25.954,
+          "end": 26.154
+        },
+        {
+          "text": "far",
+          "start": 26.194,
+          "end": 26.314
+        },
+        {
+          "text": "esplodere",
+          "start": 26.354,
+          "end": 26.794
+        }
+      ]
+    },
+    {
+      "start": 26.834,
+      "end": 29.354,
+      "text": "la varianza, producendo margini ampi.",
+      "words": [
+        {
+          "text": "la",
+          "start": 26.834,
+          "end": 26.894
+        },
+        {
+          "text": "varianza,",
+          "start": 26.914,
+          "end": 27.434
+        },
+        {
+          "text": "producendo",
+          "start": 27.774,
+          "end": 28.394
+        },
+        {
+          "text": "margini",
+          "start": 28.594,
+          "end": 28.974
+        },
+        {
+          "text": "ampi.",
+          "start": 29.094,
+          "end": 29.354
+        }
+      ]
+    },
+    {
+      "start": 30.275,
+      "end": 34.355,
+      "text": "Attenzione però: questa resistenza all'overfitting regge solo con poco rumore.",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 30.275,
+          "end": 30.755
+        },
+        {
+          "text": "però:",
+          "start": 30.815,
+          "end": 30.975
+        },
+        {
+          "text": "questa",
+          "start": 31.395,
+          "end": 31.635
+        },
+        {
+          "text": "resistenza",
+          "start": 31.675,
+          "end": 32.195
+        },
+        {
+          "text": "all'overfitting",
+          "start": 32.215,
+          "end": 32.895
+        },
+        {
+          "text": "regge",
+          "start": 33.015,
+          "end": 33.235
+        },
+        {
+          "text": "solo",
+          "start": 33.315,
+          "end": 33.515
+        },
+        {
+          "text": "con",
+          "start": 33.555,
+          "end": 33.695
+        },
+        {
+          "text": "poco",
+          "start": 33.735,
+          "end": 33.955
+        },
+        {
+          "text": "rumore.",
+          "start": 34.015,
+          "end": 34.355
+        }
+      ]
+    },
+    {
+      "start": 34.855,
+      "end": 39.036,
+      "text": "Sui dati rumorosi il boosting assegna pesi sempre più grandi agli errori dovuti al rumore",
+      "words": [
+        {
+          "text": "Sui",
+          "start": 34.855,
+          "end": 34.975
+        },
+        {
+          "text": "dati",
+          "start": 34.995,
+          "end": 35.175
+        },
+        {
+          "text": "rumorosi",
+          "start": 35.235,
+          "end": 35.655
+        },
+        {
+          "text": "il",
+          "start": 35.695,
+          "end": 35.755
+        },
+        {
+          "text": "boosting",
+          "start": 35.795,
+          "end": 36.155
+        },
+        {
+          "text": "assegna",
+          "start": 36.195,
+          "end": 36.515
+        },
+        {
+          "text": "pesi",
+          "start": 36.595,
+          "end": 36.856
+        },
+        {
+          "text": "sempre",
+          "start": 36.936,
+          "end": 37.216
+        },
+        {
+          "text": "più",
+          "start": 37.276,
+          "end": 37.356
+        },
+        {
+          "text": "grandi",
+          "start": 37.436,
+          "end": 37.736
+        },
+        {
+          "text": "agli",
+          "start": 37.776,
+          "end": 37.916
+        },
+        {
+          "text": "errori",
+          "start": 37.956,
+          "end": 38.216
+        },
+        {
+          "text": "dovuti",
+          "start": 38.276,
+          "end": 38.556
+        },
+        {
+          "text": "al",
+          "start": 38.596,
+          "end": 38.656
+        },
+        {
+          "text": "rumore",
+          "start": 38.696,
+          "end": 39.036
+        }
+      ]
+    },
+    {
+      "start": 39.356,
+      "end": 40.856,
+      "text": "e finisce per adattarsi a esso.",
+      "words": [
+        {
+          "text": "e",
+          "start": 39.356,
+          "end": 39.396
+        },
+        {
+          "text": "finisce",
+          "start": 39.436,
+          "end": 39.776
+        },
+        {
+          "text": "per",
+          "start": 39.816,
+          "end": 39.936
+        },
+        {
+          "text": "adattarsi",
+          "start": 39.956,
+          "end": 40.456
+        },
+        {
+          "text": "a",
+          "start": 40.516,
+          "end": 40.556
+        },
+        {
+          "text": "esso.",
+          "start": 40.616,
+          "end": 40.856
+        }
+      ]
+    },
+    {
+      "start": 41.836,
+      "end": 44.197,
+      "text": "Infine, un cenno sulla feature selection:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 41.836,
+          "end": 42.236
+        },
+        {
+          "text": "un",
+          "start": 42.376,
+          "end": 42.456
+        },
+        {
+          "text": "cenno",
+          "start": 42.516,
+          "end": 42.796
+        },
+        {
+          "text": "sulla",
+          "start": 42.876,
+          "end": 43.096
+        },
+        {
+          "text": "feature",
+          "start": 43.216,
+          "end": 43.597
+        },
+        {
+          "text": "selection:",
+          "start": 43.637,
+          "end": 44.197
+        }
+      ]
+    },
+    {
+      "start": 44.817,
+      "end": 49.737,
+      "text": "scegliere il sottoinsieme di feature più informative riduce dimensionalità e VC-dimension,",
+      "words": [
+        {
+          "text": "scegliere",
+          "start": 44.817,
+          "end": 45.177
+        },
+        {
+          "text": "il",
+          "start": 45.217,
+          "end": 45.277
+        },
+        {
+          "text": "sottoinsieme",
+          "start": 45.337,
+          "end": 45.957
+        },
+        {
+          "text": "di",
+          "start": 45.997,
+          "end": 46.077
+        },
+        {
+          "text": "feature",
+          "start": 46.137,
+          "end": 46.477
+        },
+        {
+          "text": "più",
+          "start": 46.497,
+          "end": 46.577
+        },
+        {
+          "text": "informative",
+          "start": 46.597,
+          "end": 47.217
+        },
+        {
+          "text": "riduce",
+          "start": 47.377,
+          "end": 47.737
+        },
+        {
+          "text": "dimensionalità",
+          "start": 47.797,
+          "end": 48.557
+        },
+        {
+          "text": "e",
+          "start": 48.737,
+          "end": 48.777
+        },
+        {
+          "text": "VC-dimension,",
+          "start": 48.857,
+          "end": 49.737
+        }
+      ]
+    },
+    {
+      "start": 50.038,
+      "end": 52.638,
+      "text": "filtra il rumore e migliora l'interpretabilità.",
+      "words": [
+        {
+          "text": "filtra",
+          "start": 50.038,
+          "end": 50.398
+        },
+        {
+          "text": "il",
+          "start": 50.438,
+          "end": 50.478
+        },
+        {
+          "text": "rumore",
+          "start": 50.518,
+          "end": 50.878
+        },
+        {
+          "text": "e",
+          "start": 51.138,
+          "end": 51.178
+        },
+        {
+          "text": "migliora",
+          "start": 51.218,
+          "end": 51.618
+        },
+        {
+          "text": "l'interpretabilità.",
+          "start": 51.678,
+          "end": 52.638
+        }
+      ]
+    },
+    {
+      "start": 53.338,
+      "end": 57.939,
+      "text": "Poiché provare tutti i sottoinsiemi è troppo costoso si usano ricerche euristiche,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 53.338,
+          "end": 53.618
+        },
+        {
+          "text": "provare",
+          "start": 53.678,
+          "end": 54.058
+        },
+        {
+          "text": "tutti",
+          "start": 54.138,
+          "end": 54.418
+        },
+        {
+          "text": "i",
+          "start": 54.458,
+          "end": 54.498
+        },
+        {
+          "text": "sottoinsiemi",
+          "start": 54.518,
+          "end": 55.118
+        },
+        {
+          "text": "è",
+          "start": 55.198,
+          "end": 55.238
+        },
+        {
+          "text": "troppo",
+          "start": 55.298,
+          "end": 55.578
+        },
+        {
+          "text": "costoso",
+          "start": 55.638,
+          "end": 56.198
+        },
+        {
+          "text": "si",
+          "start": 56.418,
+          "end": 56.498
+        },
+        {
+          "text": "usano",
+          "start": 56.619,
+          "end": 56.879
+        },
+        {
+          "text": "ricerche",
+          "start": 56.959,
+          "end": 57.359
+        },
+        {
+          "text": "euristiche,",
+          "start": 57.399,
+          "end": 57.939
+        }
+      ]
+    },
+    {
+      "start": 58.399,
+      "end": 61.319,
+      "text": "ma attenzione al feature subset selection bias:",
+      "words": [
+        {
+          "text": "ma",
+          "start": 58.399,
+          "end": 58.439
+        },
+        {
+          "text": "attenzione",
+          "start": 58.499,
+          "end": 59.019
+        },
+        {
+          "text": "al",
+          "start": 59.199,
+          "end": 59.339
+        },
+        {
+          "text": "feature",
+          "start": 59.459,
+          "end": 59.859
+        },
+        {
+          "text": "subset",
+          "start": 59.919,
+          "end": 60.299
+        },
+        {
+          "text": "selection",
+          "start": 60.339,
+          "end": 60.799
+        },
+        {
+          "text": "bias:",
+          "start": 60.859,
+          "end": 61.319
+        }
+      ]
+    },
+    {
+      "start": 61.879,
+      "end": 65.96,
+      "text": "non va mai fatta sull'intero dataset prima di separare il test set.",
+      "words": [
+        {
+          "text": "non",
+          "start": 61.879,
+          "end": 62.019
+        },
+        {
+          "text": "va",
+          "start": 62.059,
+          "end": 62.159
+        },
+        {
+          "text": "mai",
+          "start": 62.279,
+          "end": 62.519
+        },
+        {
+          "text": "fatta",
+          "start": 62.619,
+          "end": 62.979
+        },
+        {
+          "text": "sull'intero",
+          "start": 63.039,
+          "end": 63.7
+        },
+        {
+          "text": "dataset",
+          "start": 63.74,
+          "end": 64.28
+        },
+        {
+          "text": "prima",
+          "start": 64.42,
+          "end": 64.66
+        },
+        {
+          "text": "di",
+          "start": 64.72,
+          "end": 64.78
+        },
+        {
+          "text": "separare",
+          "start": 64.82,
+          "end": 65.24
+        },
+        {
+          "text": "il",
+          "start": 65.28,
+          "end": 65.34
+        },
+        {
+          "text": "test",
+          "start": 65.38,
+          "end": 65.62
+        },
+        {
+          "text": "set.",
+          "start": 65.74,
+          "end": 65.96
+        }
+      ]
+    }
+  ]
+}

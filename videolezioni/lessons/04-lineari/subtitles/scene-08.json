@@ -1,0 +1,1492 @@
+{
+  "duration": 101.604,
+  "segments": [
+    {
+      "start": 0.924,
+      "end": 2.924,
+      "text": "Come addestriamo un classificatore lineare?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.924,
+          "end": 1.084
+        },
+        {
+          "text": "addestriamo",
+          "start": 1.124,
+          "end": 1.644
+        },
+        {
+          "text": "un",
+          "start": 1.684,
+          "end": 1.744
+        },
+        {
+          "text": "classificatore",
+          "start": 1.764,
+          "end": 2.404
+        },
+        {
+          "text": "lineare?",
+          "start": 2.464,
+          "end": 2.924
+        }
+      ]
+    },
+    {
+      "start": 3.524,
+      "end": 8.085,
+      "text": "Usare direttamente la loss zero uno su segno di w trasposto x è impraticabile:",
+      "words": [
+        {
+          "text": "Usare",
+          "start": 3.524,
+          "end": 3.764
+        },
+        {
+          "text": "direttamente",
+          "start": 3.864,
+          "end": 4.364
+        },
+        {
+          "text": "la",
+          "start": 4.424,
+          "end": 4.464
+        },
+        {
+          "text": "loss",
+          "start": 4.504,
+          "end": 4.704
+        },
+        {
+          "text": "zero",
+          "start": 4.864,
+          "end": 5.044
+        },
+        {
+          "text": "uno",
+          "start": 5.144,
+          "end": 5.324
+        },
+        {
+          "text": "su",
+          "start": 5.444,
+          "end": 5.524
+        },
+        {
+          "text": "segno",
+          "start": 5.704,
+          "end": 6.004
+        },
+        {
+          "text": "di",
+          "start": 6.064,
+          "end": 6.124
+        },
+        {
+          "text": "w",
+          "start": 6.164,
+          "end": 6.204
+        },
+        {
+          "text": "trasposto",
+          "start": 6.525,
+          "end": 6.985
+        },
+        {
+          "text": "x",
+          "start": 7.145,
+          "end": 7.185
+        },
+        {
+          "text": "è",
+          "start": 7.305,
+          "end": 7.345
+        },
+        {
+          "text": "impraticabile:",
+          "start": 7.365,
+          "end": 8.085
+        }
+      ]
+    },
+    {
+      "start": 8.465,
+      "end": 12.005,
+      "text": "la funzione è costante a tratti, il gradiente è nullo quasi ovunque e si finisce",
+      "words": [
+        {
+          "text": "la",
+          "start": 8.465,
+          "end": 8.525
+        },
+        {
+          "text": "funzione",
+          "start": 8.565,
+          "end": 8.885
+        },
+        {
+          "text": "è",
+          "start": 8.905,
+          "end": 8.945
+        },
+        {
+          "text": "costante",
+          "start": 8.965,
+          "end": 9.325
+        },
+        {
+          "text": "a",
+          "start": 9.365,
+          "end": 9.405
+        },
+        {
+          "text": "tratti,",
+          "start": 9.445,
+          "end": 9.825
+        },
+        {
+          "text": "il",
+          "start": 10.005,
+          "end": 10.065
+        },
+        {
+          "text": "gradiente",
+          "start": 10.085,
+          "end": 10.525
+        },
+        {
+          "text": "è",
+          "start": 10.605,
+          "end": 10.645
+        },
+        {
+          "text": "nullo",
+          "start": 10.665,
+          "end": 10.905
+        },
+        {
+          "text": "quasi",
+          "start": 10.945,
+          "end": 11.145
+        },
+        {
+          "text": "ovunque",
+          "start": 11.185,
+          "end": 11.525
+        },
+        {
+          "text": "e",
+          "start": 11.545,
+          "end": 11.585
+        },
+        {
+          "text": "si",
+          "start": 11.585,
+          "end": 11.665
+        },
+        {
+          "text": "finisce",
+          "start": 11.705,
+          "end": 12.005
+        }
+      ]
+    },
+    {
+      "start": 12.045,
+      "end": 13.105,
+      "text": "in problemi combinatori.",
+      "words": [
+        {
+          "text": "in",
+          "start": 12.045,
+          "end": 12.105
+        },
+        {
+          "text": "problemi",
+          "start": 12.105,
+          "end": 12.445
+        },
+        {
+          "text": "combinatori.",
+          "start": 12.485,
+          "end": 13.105
+        }
+      ]
+    },
+    {
+      "start": 13.805,
+      "end": 16.626,
+      "text": "L'idea chiave è sostituire la loss con una funzione liscia:",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 13.805,
+          "end": 14.045
+        },
+        {
+          "text": "chiave",
+          "start": 14.085,
+          "end": 14.365
+        },
+        {
+          "text": "è",
+          "start": 14.465,
+          "end": 14.505
+        },
+        {
+          "text": "sostituire",
+          "start": 14.565,
+          "end": 15.085
+        },
+        {
+          "text": "la",
+          "start": 15.145,
+          "end": 15.205
+        },
+        {
+          "text": "loss",
+          "start": 15.245,
+          "end": 15.485
+        },
+        {
+          "text": "con",
+          "start": 15.605,
+          "end": 15.725
+        },
+        {
+          "text": "una",
+          "start": 15.745,
+          "end": 15.865
+        },
+        {
+          "text": "funzione",
+          "start": 15.905,
+          "end": 16.225
+        },
+        {
+          "text": "liscia:",
+          "start": 16.285,
+          "end": 16.626
+        }
+      ]
+    },
+    {
+      "start": 17.146,
+      "end": 21.966,
+      "text": "minimizziamo l'errore quadratico sull'uscita lineare w trasposto x, prima del segno.",
+      "words": [
+        {
+          "text": "minimizziamo",
+          "start": 17.146,
+          "end": 17.726
+        },
+        {
+          "text": "l'errore",
+          "start": 17.766,
+          "end": 18.146
+        },
+        {
+          "text": "quadratico",
+          "start": 18.186,
+          "end": 18.686
+        },
+        {
+          "text": "sull'uscita",
+          "start": 18.766,
+          "end": 19.286
+        },
+        {
+          "text": "lineare",
+          "start": 19.326,
+          "end": 19.666
+        },
+        {
+          "text": "w",
+          "start": 19.706,
+          "end": 19.746
+        },
+        {
+          "text": "trasposto",
+          "start": 20.106,
+          "end": 20.586
+        },
+        {
+          "text": "x,",
+          "start": 20.766,
+          "end": 20.806
+        },
+        {
+          "text": "prima",
+          "start": 21.166,
+          "end": 21.426
+        },
+        {
+          "text": "del",
+          "start": 21.466,
+          "end": 21.586
+        },
+        {
+          "text": "segno.",
+          "start": 21.666,
+          "end": 21.966
+        }
+      ]
+    },
+    {
+      "start": 22.586,
+      "end": 26.026,
+      "text": "Nel grafico a sinistra, per un esempio positivo d uguale a uno,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 22.586,
+          "end": 22.726
+        },
+        {
+          "text": "grafico",
+          "start": 22.786,
+          "end": 23.166
+        },
+        {
+          "text": "a",
+          "start": 23.226,
+          "end": 23.266
+        },
+        {
+          "text": "sinistra,",
+          "start": 23.326,
+          "end": 23.866
+        },
+        {
+          "text": "per",
+          "start": 24.006,
+          "end": 24.126
+        },
+        {
+          "text": "un",
+          "start": 24.146,
+          "end": 24.226
+        },
+        {
+          "text": "esempio",
+          "start": 24.266,
+          "end": 24.586
+        },
+        {
+          "text": "positivo",
+          "start": 24.626,
+          "end": 25.146
+        },
+        {
+          "text": "d",
+          "start": 25.146,
+          "end": 25.186
+        },
+        {
+          "text": "uguale",
+          "start": 25.366,
+          "end": 25.666
+        },
+        {
+          "text": "a",
+          "start": 25.706,
+          "end": 25.746
+        },
+        {
+          "text": "uno,",
+          "start": 25.826,
+          "end": 26.026
+        }
+      ]
+    },
+    {
+      "start": 26.546,
+      "end": 32.567,
+      "text": "la parabola rossa uno meno w trasposto x al quadrato spinge w trasposto x verso",
+      "words": [
+        {
+          "text": "la",
+          "start": 26.546,
+          "end": 26.627
+        },
+        {
+          "text": "parabola",
+          "start": 26.687,
+          "end": 27.027
+        },
+        {
+          "text": "rossa",
+          "start": 27.087,
+          "end": 27.387
+        },
+        {
+          "text": "uno",
+          "start": 27.647,
+          "end": 27.867
+        },
+        {
+          "text": "meno",
+          "start": 28.067,
+          "end": 28.267
+        },
+        {
+          "text": "w",
+          "start": 28.327,
+          "end": 28.367
+        },
+        {
+          "text": "trasposto",
+          "start": 28.767,
+          "end": 29.267
+        },
+        {
+          "text": "x",
+          "start": 29.447,
+          "end": 29.487
+        },
+        {
+          "text": "al",
+          "start": 29.587,
+          "end": 29.667
+        },
+        {
+          "text": "quadrato",
+          "start": 29.707,
+          "end": 30.207
+        },
+        {
+          "text": "spinge",
+          "start": 30.387,
+          "end": 30.847
+        },
+        {
+          "text": "w",
+          "start": 30.907,
+          "end": 30.947
+        },
+        {
+          "text": "trasposto",
+          "start": 31.367,
+          "end": 31.867
+        },
+        {
+          "text": "x",
+          "start": 32.047,
+          "end": 32.087
+        },
+        {
+          "text": "verso",
+          "start": 32.247,
+          "end": 32.567
+        }
+      ]
+    },
+    {
+      "start": 32.707,
+      "end": 36.728,
+      "text": "uno — dentro la zona corretta — offrendo sempre un gradiente utile.",
+      "words": [
+        {
+          "text": "uno",
+          "start": 32.707,
+          "end": 32.887
+        },
+        {
+          "text": "—",
+          "start": 32.887,
+          "end": 33.037
+        },
+        {
+          "text": "dentro",
+          "start": 33.287,
+          "end": 33.627
+        },
+        {
+          "text": "la",
+          "start": 33.687,
+          "end": 33.747
+        },
+        {
+          "text": "zona",
+          "start": 33.827,
+          "end": 34.007
+        },
+        {
+          "text": "corretta",
+          "start": 34.047,
+          "end": 34.527
+        },
+        {
+          "text": "—",
+          "start": 34.527,
+          "end": 34.677
+        },
+        {
+          "text": "offrendo",
+          "start": 35.027,
+          "end": 35.407
+        },
+        {
+          "text": "sempre",
+          "start": 35.467,
+          "end": 35.767
+        },
+        {
+          "text": "un",
+          "start": 35.807,
+          "end": 35.867
+        },
+        {
+          "text": "gradiente",
+          "start": 35.887,
+          "end": 36.327
+        },
+        {
+          "text": "utile.",
+          "start": 36.427,
+          "end": 36.728
+        }
+      ]
+    },
+    {
+      "start": 37.468,
+      "end": 41.408,
+      "text": "Così si addestra con LMS, si usa con il segno,",
+      "words": [
+        {
+          "text": "Così",
+          "start": 37.468,
+          "end": 37.688
+        },
+        {
+          "text": "si",
+          "start": 37.928,
+          "end": 37.988
+        },
+        {
+          "text": "addestra",
+          "start": 38.028,
+          "end": 38.488
+        },
+        {
+          "text": "con",
+          "start": 38.588,
+          "end": 38.788
+        },
+        {
+          "text": "LMS,",
+          "start": 39.268,
+          "end": 39.868
+        },
+        {
+          "text": "si",
+          "start": 40.228,
+          "end": 40.308
+        },
+        {
+          "text": "usa",
+          "start": 40.408,
+          "end": 40.608
+        },
+        {
+          "text": "con",
+          "start": 40.668,
+          "end": 40.808
+        },
+        {
+          "text": "il",
+          "start": 40.868,
+          "end": 40.948
+        },
+        {
+          "text": "segno,",
+          "start": 41.028,
+          "end": 41.408
+        }
+      ]
+    },
+    {
+      "start": 41.848,
+      "end": 45.448,
+      "text": "e si valuta con l'errore medio di classificazione zero uno e l'accuratezza.",
+      "words": [
+        {
+          "text": "e",
+          "start": 41.848,
+          "end": 41.888
+        },
+        {
+          "text": "si",
+          "start": 41.948,
+          "end": 42.028
+        },
+        {
+          "text": "valuta",
+          "start": 42.068,
+          "end": 42.388
+        },
+        {
+          "text": "con",
+          "start": 42.428,
+          "end": 42.528
+        },
+        {
+          "text": "l'errore",
+          "start": 42.568,
+          "end": 42.868
+        },
+        {
+          "text": "medio",
+          "start": 42.908,
+          "end": 43.128
+        },
+        {
+          "text": "di",
+          "start": 43.168,
+          "end": 43.228
+        },
+        {
+          "text": "classificazione",
+          "start": 43.268,
+          "end": 44.028
+        },
+        {
+          "text": "zero",
+          "start": 44.128,
+          "end": 44.308
+        },
+        {
+          "text": "uno",
+          "start": 44.408,
+          "end": 44.568
+        },
+        {
+          "text": "e",
+          "start": 44.688,
+          "end": 44.728
+        },
+        {
+          "text": "l'accuratezza.",
+          "start": 44.768,
+          "end": 45.448
+        }
+      ]
+    },
+    {
+      "start": 46.428,
+      "end": 50.609,
+      "text": "Guarda a destra i duecento punti reali nel piano con classi codificate zero e uno",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 46.428,
+          "end": 46.669
+        },
+        {
+          "text": "a",
+          "start": 46.709,
+          "end": 46.749
+        },
+        {
+          "text": "destra",
+          "start": 46.789,
+          "end": 47.149
+        },
+        {
+          "text": "i",
+          "start": 47.209,
+          "end": 47.249
+        },
+        {
+          "text": "duecento",
+          "start": 47.249,
+          "end": 47.629
+        },
+        {
+          "text": "punti",
+          "start": 47.669,
+          "end": 47.889
+        },
+        {
+          "text": "reali",
+          "start": 47.929,
+          "end": 48.189
+        },
+        {
+          "text": "nel",
+          "start": 48.249,
+          "end": 48.369
+        },
+        {
+          "text": "piano",
+          "start": 48.409,
+          "end": 48.729
+        },
+        {
+          "text": "con",
+          "start": 48.829,
+          "end": 48.949
+        },
+        {
+          "text": "classi",
+          "start": 49.009,
+          "end": 49.329
+        },
+        {
+          "text": "codificate",
+          "start": 49.369,
+          "end": 49.949
+        },
+        {
+          "text": "zero",
+          "start": 50.049,
+          "end": 50.269
+        },
+        {
+          "text": "e",
+          "start": 50.329,
+          "end": 50.369
+        },
+        {
+          "text": "uno",
+          "start": 50.449,
+          "end": 50.609
+        }
+      ]
+    },
+    {
+      "start": 50.769,
+      "end": 52.249,
+      "text": "e soglia zero virgola cinque:",
+      "words": [
+        {
+          "text": "e",
+          "start": 50.769,
+          "end": 50.809
+        },
+        {
+          "text": "soglia",
+          "start": 50.909,
+          "end": 51.189
+        },
+        {
+          "text": "zero",
+          "start": 51.289,
+          "end": 51.469
+        },
+        {
+          "text": "virgola",
+          "start": 51.509,
+          "end": 51.809
+        },
+        {
+          "text": "cinque:",
+          "start": 51.869,
+          "end": 52.249
+        }
+      ]
+    },
+    {
+      "start": 52.949,
+      "end": 54.969,
+      "text": "la retta LMS lascia molti errori.",
+      "words": [
+        {
+          "text": "la",
+          "start": 52.949,
+          "end": 53.029
+        },
+        {
+          "text": "retta",
+          "start": 53.069,
+          "end": 53.329
+        },
+        {
+          "text": "LMS",
+          "start": 53.489,
+          "end": 54.029
+        },
+        {
+          "text": "lascia",
+          "start": 54.169,
+          "end": 54.369
+        },
+        {
+          "text": "molti",
+          "start": 54.409,
+          "end": 54.609
+        },
+        {
+          "text": "errori.",
+          "start": 54.649,
+          "end": 54.969
+        }
+      ]
+    },
+    {
+      "start": 55.469,
+      "end": 56.549,
+      "text": "È una cattiva soluzione?",
+      "words": [
+        {
+          "text": "È",
+          "start": 55.469,
+          "end": 55.509
+        },
+        {
+          "text": "una",
+          "start": 55.529,
+          "end": 55.629
+        },
+        {
+          "text": "cattiva",
+          "start": 55.669,
+          "end": 55.969
+        },
+        {
+          "text": "soluzione?",
+          "start": 56.009,
+          "end": 56.549
+        }
+      ]
+    },
+    {
+      "start": 57.09,
+      "end": 58.57,
+      "text": "Dipende da come nascono i dati:",
+      "words": [
+        {
+          "text": "Dipende",
+          "start": 57.09,
+          "end": 57.51
+        },
+        {
+          "text": "da",
+          "start": 57.55,
+          "end": 57.61
+        },
+        {
+          "text": "come",
+          "start": 57.65,
+          "end": 57.81
+        },
+        {
+          "text": "nascono",
+          "start": 57.85,
+          "end": 58.19
+        },
+        {
+          "text": "i",
+          "start": 58.25,
+          "end": 58.29
+        },
+        {
+          "text": "dati:",
+          "start": 58.29,
+          "end": 58.57
+        }
+      ]
+    },
+    {
+      "start": 59.35,
+      "end": 63.99,
+      "text": "nello scenario uno — due gaussiane con uguale varianza — la regola lineare è quasi",
+      "words": [
+        {
+          "text": "nello",
+          "start": 59.35,
+          "end": 59.55
+        },
+        {
+          "text": "scenario",
+          "start": 59.57,
+          "end": 59.95
+        },
+        {
+          "text": "uno",
+          "start": 60.05,
+          "end": 60.25
+        },
+        {
+          "text": "—",
+          "start": 60.25,
+          "end": 60.4
+        },
+        {
+          "text": "due",
+          "start": 60.51,
+          "end": 60.67
+        },
+        {
+          "text": "gaussiane",
+          "start": 60.73,
+          "end": 61.29
+        },
+        {
+          "text": "con",
+          "start": 61.33,
+          "end": 61.45
+        },
+        {
+          "text": "uguale",
+          "start": 61.47,
+          "end": 61.69
+        },
+        {
+          "text": "varianza",
+          "start": 61.73,
+          "end": 62.25
+        },
+        {
+          "text": "—",
+          "start": 62.25,
+          "end": 62.4
+        },
+        {
+          "text": "la",
+          "start": 62.73,
+          "end": 62.79
+        },
+        {
+          "text": "regola",
+          "start": 62.85,
+          "end": 63.13
+        },
+        {
+          "text": "lineare",
+          "start": 63.17,
+          "end": 63.57
+        },
+        {
+          "text": "è",
+          "start": 63.65,
+          "end": 63.69
+        },
+        {
+          "text": "quasi",
+          "start": 63.75,
+          "end": 63.99
+        }
+      ]
+    },
+    {
+      "start": 64.09,
+      "end": 67.411,
+      "text": "ottima; nello scenario due — quello reale in figura,",
+      "words": [
+        {
+          "text": "ottima;",
+          "start": 64.09,
+          "end": 64.47
+        },
+        {
+          "text": "nello",
+          "start": 65.27,
+          "end": 65.47
+        },
+        {
+          "text": "scenario",
+          "start": 65.49,
+          "end": 65.87
+        },
+        {
+          "text": "due",
+          "start": 65.91,
+          "end": 66.13
+        },
+        {
+          "text": "—",
+          "start": 66.13,
+          "end": 66.28
+        },
+        {
+          "text": "quello",
+          "start": 66.39,
+          "end": 66.59
+        },
+        {
+          "text": "reale",
+          "start": 66.63,
+          "end": 66.871
+        },
+        {
+          "text": "in",
+          "start": 66.911,
+          "end": 66.971
+        },
+        {
+          "text": "figura,",
+          "start": 67.011,
+          "end": 67.411
+        }
+      ]
+    },
+    {
+      "start": 67.751,
+      "end": 72.21100000000001,
+      "text": "dove ogni classe è una miscela di dieci gaussiane strette — il modello lineare è",
+      "words": [
+        {
+          "text": "dove",
+          "start": 67.751,
+          "end": 67.931
+        },
+        {
+          "text": "ogni",
+          "start": 67.991,
+          "end": 68.171
+        },
+        {
+          "text": "classe",
+          "start": 68.231,
+          "end": 68.571
+        },
+        {
+          "text": "è",
+          "start": 68.591,
+          "end": 68.631
+        },
+        {
+          "text": "una",
+          "start": 68.651,
+          "end": 68.751
+        },
+        {
+          "text": "miscela",
+          "start": 68.771,
+          "end": 69.151
+        },
+        {
+          "text": "di",
+          "start": 69.191,
+          "end": 69.251
+        },
+        {
+          "text": "dieci",
+          "start": 69.311,
+          "end": 69.571
+        },
+        {
+          "text": "gaussiane",
+          "start": 69.631,
+          "end": 70.111
+        },
+        {
+          "text": "strette",
+          "start": 70.171,
+          "end": 70.611
+        },
+        {
+          "text": "—",
+          "start": 70.611,
+          "end": 70.761
+        },
+        {
+          "text": "il",
+          "start": 71.151,
+          "end": 71.231
+        },
+        {
+          "text": "modello",
+          "start": 71.271,
+          "end": 71.571
+        },
+        {
+          "text": "lineare",
+          "start": 71.611,
+          "end": 72.011
+        },
+        {
+          "text": "è",
+          "start": 72.171,
+          "end": 72.21100000000001
+        }
+      ]
+    },
+    {
+      "start": 72.331,
+      "end": 73.071,
+      "text": "troppo rigido.",
+      "words": [
+        {
+          "text": "troppo",
+          "start": 72.331,
+          "end": 72.651
+        },
+        {
+          "text": "rigido.",
+          "start": 72.711,
+          "end": 73.071
+        }
+      ]
+    },
+    {
+      "start": 74.111,
+      "end": 75.751,
+      "text": "Ricorda tre proprietà finali:",
+      "words": [
+        {
+          "text": "Ricorda",
+          "start": 74.111,
+          "end": 74.551
+        },
+        {
+          "text": "tre",
+          "start": 74.651,
+          "end": 74.771
+        },
+        {
+          "text": "proprietà",
+          "start": 74.851,
+          "end": 75.231
+        },
+        {
+          "text": "finali:",
+          "start": 75.331,
+          "end": 75.751
+        }
+      ]
+    },
+    {
+      "start": 76.391,
+      "end": 80.932,
+      "text": "i minimi quadrati coincidono con la massima verosimiglianza se gli errori sono gaussiani;",
+      "words": [
+        {
+          "text": "i",
+          "start": 76.391,
+          "end": 76.43100000000001
+        },
+        {
+          "text": "minimi",
+          "start": 76.471,
+          "end": 76.752
+        },
+        {
+          "text": "quadrati",
+          "start": 76.792,
+          "end": 77.252
+        },
+        {
+          "text": "coincidono",
+          "start": 77.332,
+          "end": 77.892
+        },
+        {
+          "text": "con",
+          "start": 77.932,
+          "end": 78.032
+        },
+        {
+          "text": "la",
+          "start": 78.072,
+          "end": 78.132
+        },
+        {
+          "text": "massima",
+          "start": 78.172,
+          "end": 78.512
+        },
+        {
+          "text": "verosimiglianza",
+          "start": 78.612,
+          "end": 79.492
+        },
+        {
+          "text": "se",
+          "start": 79.612,
+          "end": 79.692
+        },
+        {
+          "text": "gli",
+          "start": 79.712,
+          "end": 79.812
+        },
+        {
+          "text": "errori",
+          "start": 79.832,
+          "end": 80.072
+        },
+        {
+          "text": "sono",
+          "start": 80.112,
+          "end": 80.272
+        },
+        {
+          "text": "gaussiani;",
+          "start": 80.332,
+          "end": 80.932
+        }
+      ]
+    },
+    {
+      "start": 81.692,
+      "end": 85.972,
+      "text": "il language bias sono le funzioni lineari e il search bias è l'LMS;",
+      "words": [
+        {
+          "text": "il",
+          "start": 81.692,
+          "end": 81.772
+        },
+        {
+          "text": "language",
+          "start": 81.812,
+          "end": 82.152
+        },
+        {
+          "text": "bias",
+          "start": 82.192,
+          "end": 82.612
+        },
+        {
+          "text": "sono",
+          "start": 82.772,
+          "end": 82.932
+        },
+        {
+          "text": "le",
+          "start": 82.972,
+          "end": 83.052
+        },
+        {
+          "text": "funzioni",
+          "start": 83.072,
+          "end": 83.412
+        },
+        {
+          "text": "lineari",
+          "start": 83.472,
+          "end": 83.932
+        },
+        {
+          "text": "e",
+          "start": 84.112,
+          "end": 84.152
+        },
+        {
+          "text": "il",
+          "start": 84.212,
+          "end": 84.292
+        },
+        {
+          "text": "search",
+          "start": 84.352,
+          "end": 84.572
+        },
+        {
+          "text": "bias",
+          "start": 84.632,
+          "end": 84.992
+        },
+        {
+          "text": "è",
+          "start": 85.112,
+          "end": 85.152
+        },
+        {
+          "text": "l'LMS;",
+          "start": 85.232,
+          "end": 85.972
+        }
+      ]
+    },
+    {
+      "start": 86.973,
+      "end": 89.653,
+      "text": "per più di due classi si usano codifica 1-of-K,",
+      "words": [
+        {
+          "text": "per",
+          "start": 86.973,
+          "end": 87.093
+        },
+        {
+          "text": "più",
+          "start": 87.133,
+          "end": 87.233
+        },
+        {
+          "text": "di",
+          "start": 87.273,
+          "end": 87.353
+        },
+        {
+          "text": "due",
+          "start": 87.393,
+          "end": 87.513
+        },
+        {
+          "text": "classi",
+          "start": 87.533,
+          "end": 87.933
+        },
+        {
+          "text": "si",
+          "start": 88.093,
+          "end": 88.173
+        },
+        {
+          "text": "usano",
+          "start": 88.273,
+          "end": 88.533
+        },
+        {
+          "text": "codifica",
+          "start": 88.633,
+          "end": 89.113
+        },
+        {
+          "text": "1-of-K,",
+          "start": 89.473,
+          "end": 89.653
+        }
+      ]
+    },
+    {
+      "start": 90.393,
+      "end": 96.603,
+      "text": "one-vs-all con K classificatori, o all-vs-all con K per K meno uno mezzi coppie —",
+      "words": [
+        {
+          "text": "one-vs-all",
+          "start": 90.393,
+          "end": 91.133
+        },
+        {
+          "text": "con",
+          "start": 91.293,
+          "end": 91.433
+        },
+        {
+          "text": "K",
+          "start": 91.493,
+          "end": 91.533
+        },
+        {
+          "text": "classificatori,",
+          "start": 91.773,
+          "end": 92.573
+        },
+        {
+          "text": "o",
+          "start": 93.013,
+          "end": 93.05300000000001
+        },
+        {
+          "text": "all-vs-all",
+          "start": 93.273,
+          "end": 93.953
+        },
+        {
+          "text": "con",
+          "start": 94.113,
+          "end": 94.273
+        },
+        {
+          "text": "K",
+          "start": 94.333,
+          "end": 94.373
+        },
+        {
+          "text": "per",
+          "start": 94.673,
+          "end": 94.793
+        },
+        {
+          "text": "K",
+          "start": 94.853,
+          "end": 94.893
+        },
+        {
+          "text": "meno",
+          "start": 95.153,
+          "end": 95.313
+        },
+        {
+          "text": "uno",
+          "start": 95.393,
+          "end": 95.533
+        },
+        {
+          "text": "mezzi",
+          "start": 95.573,
+          "end": 95.913
+        },
+        {
+          "text": "coppie",
+          "start": 96.033,
+          "end": 96.453
+        },
+        {
+          "text": "—",
+          "start": 96.453,
+          "end": 96.603
+        }
+      ]
+    },
+    {
+      "start": 96.914,
+      "end": 101.354,
+      "text": "facendo attenzione al mascheramento — accanto a LDA e regressione logistica.",
+      "words": [
+        {
+          "text": "facendo",
+          "start": 96.914,
+          "end": 97.234
+        },
+        {
+          "text": "attenzione",
+          "start": 97.254,
+          "end": 97.654
+        },
+        {
+          "text": "al",
+          "start": 97.694,
+          "end": 97.754
+        },
+        {
+          "text": "mascheramento",
+          "start": 97.794,
+          "end": 98.474
+        },
+        {
+          "text": "—",
+          "start": 98.474,
+          "end": 98.624
+        },
+        {
+          "text": "accanto",
+          "start": 99.074,
+          "end": 99.494
+        },
+        {
+          "text": "a",
+          "start": 99.514,
+          "end": 99.554
+        },
+        {
+          "text": "LDA",
+          "start": 99.714,
+          "end": 100.034
+        },
+        {
+          "text": "e",
+          "start": 100.234,
+          "end": 100.274
+        },
+        {
+          "text": "regressione",
+          "start": 100.334,
+          "end": 100.774
+        },
+        {
+          "text": "logistica.",
+          "start": 100.814,
+          "end": 101.354
+        }
+      ]
+    }
+  ]
+}

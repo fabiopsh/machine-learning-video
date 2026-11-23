@@ -1,0 +1,1699 @@
+{
+  "duration": 113.415,
+  "segments": [
+    {
+      "start": 0.493,
+      "end": 4.494,
+      "text": "Confrontiamo ora la regolarizzazione L due con le altre forme usate in pratica.",
+      "words": [
+        {
+          "text": "Confrontiamo",
+          "start": 0.493,
+          "end": 1.013
+        },
+        {
+          "text": "ora",
+          "start": 1.093,
+          "end": 1.233
+        },
+        {
+          "text": "la",
+          "start": 1.373,
+          "end": 1.433
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 1.473,
+          "end": 2.253
+        },
+        {
+          "text": "L",
+          "start": 2.393,
+          "end": 2.433
+        },
+        {
+          "text": "due",
+          "start": 2.533,
+          "end": 2.693
+        },
+        {
+          "text": "con",
+          "start": 2.813,
+          "end": 2.934
+        },
+        {
+          "text": "le",
+          "start": 2.974,
+          "end": 3.054
+        },
+        {
+          "text": "altre",
+          "start": 3.094,
+          "end": 3.334
+        },
+        {
+          "text": "forme",
+          "start": 3.374,
+          "end": 3.634
+        },
+        {
+          "text": "usate",
+          "start": 3.694,
+          "end": 3.954
+        },
+        {
+          "text": "in",
+          "start": 3.994,
+          "end": 4.054
+        },
+        {
+          "text": "pratica.",
+          "start": 4.074,
+          "end": 4.494
+        }
+      ]
+    },
+    {
+      "start": 5.654,
+      "end": 9.554,
+      "text": "La Ridge in norma L due penalizza il quadrato dei pesi e tende a ridurre",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.654,
+          "end": 5.734
+        },
+        {
+          "text": "Ridge",
+          "start": 5.794,
+          "end": 6.134
+        },
+        {
+          "text": "in",
+          "start": 6.274,
+          "end": 6.334
+        },
+        {
+          "text": "norma",
+          "start": 6.374,
+          "end": 6.574
+        },
+        {
+          "text": "L",
+          "start": 6.694,
+          "end": 6.734
+        },
+        {
+          "text": "due",
+          "start": 6.834,
+          "end": 7.014
+        },
+        {
+          "text": "penalizza",
+          "start": 7.154,
+          "end": 7.574
+        },
+        {
+          "text": "il",
+          "start": 7.594,
+          "end": 7.654
+        },
+        {
+          "text": "quadrato",
+          "start": 7.674,
+          "end": 8.034
+        },
+        {
+          "text": "dei",
+          "start": 8.074,
+          "end": 8.174
+        },
+        {
+          "text": "pesi",
+          "start": 8.194,
+          "end": 8.474
+        },
+        {
+          "text": "e",
+          "start": 8.814,
+          "end": 8.854
+        },
+        {
+          "text": "tende",
+          "start": 8.894,
+          "end": 9.094
+        },
+        {
+          "text": "a",
+          "start": 9.134,
+          "end": 9.174
+        },
+        {
+          "text": "ridurre",
+          "start": 9.214,
+          "end": 9.554
+        }
+      ]
+    },
+    {
+      "start": 9.654,
+      "end": 10.654,
+      "text": "tutti i pesi insieme.",
+      "words": [
+        {
+          "text": "tutti",
+          "start": 9.654,
+          "end": 9.894
+        },
+        {
+          "text": "i",
+          "start": 9.934,
+          "end": 9.974
+        },
+        {
+          "text": "pesi",
+          "start": 9.974,
+          "end": 10.194
+        },
+        {
+          "text": "insieme.",
+          "start": 10.234,
+          "end": 10.654
+        }
+      ]
+    },
+    {
+      "start": 11.714,
+      "end": 15.795,
+      "text": "Il Lasso in norma L uno usa invece la penalità lambda per la somma dei",
+      "words": [
+        {
+          "text": "Il",
+          "start": 11.714,
+          "end": 11.794
+        },
+        {
+          "text": "Lasso",
+          "start": 11.854,
+          "end": 12.254
+        },
+        {
+          "text": "in",
+          "start": 12.414,
+          "end": 12.475
+        },
+        {
+          "text": "norma",
+          "start": 12.515,
+          "end": 12.735
+        },
+        {
+          "text": "L",
+          "start": 12.875,
+          "end": 12.915
+        },
+        {
+          "text": "uno",
+          "start": 13.055,
+          "end": 13.215
+        },
+        {
+          "text": "usa",
+          "start": 13.375,
+          "end": 13.535
+        },
+        {
+          "text": "invece",
+          "start": 13.575,
+          "end": 13.895
+        },
+        {
+          "text": "la",
+          "start": 13.935,
+          "end": 13.995
+        },
+        {
+          "text": "penalità",
+          "start": 14.035,
+          "end": 14.435
+        },
+        {
+          "text": "lambda",
+          "start": 14.575,
+          "end": 14.955
+        },
+        {
+          "text": "per",
+          "start": 15.075,
+          "end": 15.215
+        },
+        {
+          "text": "la",
+          "start": 15.255,
+          "end": 15.335
+        },
+        {
+          "text": "somma",
+          "start": 15.395,
+          "end": 15.635
+        },
+        {
+          "text": "dei",
+          "start": 15.695,
+          "end": 15.795
+        }
+      ]
+    },
+    {
+      "start": 15.815,
+      "end": 17.595,
+      "text": "valori assoluti di w con j:",
+      "words": [
+        {
+          "text": "valori",
+          "start": 15.815,
+          "end": 16.075
+        },
+        {
+          "text": "assoluti",
+          "start": 16.115,
+          "end": 16.615
+        },
+        {
+          "text": "di",
+          "start": 16.815,
+          "end": 16.875
+        },
+        {
+          "text": "w",
+          "start": 17.215,
+          "end": 17.255
+        },
+        {
+          "text": "con",
+          "start": 17.355,
+          "end": 17.495
+        },
+        {
+          "text": "j:",
+          "start": 17.555,
+          "end": 17.595
+        }
+      ]
+    },
+    {
+      "start": 18.775,
+      "end": 22.416,
+      "text": "tende a portare esattamente a zero alcuni pesi lasciandone altri grandi,",
+      "words": [
+        {
+          "text": "tende",
+          "start": 18.775,
+          "end": 18.975
+        },
+        {
+          "text": "a",
+          "start": 19.015,
+          "end": 19.055
+        },
+        {
+          "text": "portare",
+          "start": 19.075,
+          "end": 19.435
+        },
+        {
+          "text": "esattamente",
+          "start": 19.495,
+          "end": 20.095
+        },
+        {
+          "text": "a",
+          "start": 20.135,
+          "end": 20.175
+        },
+        {
+          "text": "zero",
+          "start": 20.295,
+          "end": 20.555
+        },
+        {
+          "text": "alcuni",
+          "start": 20.595,
+          "end": 20.875
+        },
+        {
+          "text": "pesi",
+          "start": 20.935,
+          "end": 21.195
+        },
+        {
+          "text": "lasciandone",
+          "start": 21.235,
+          "end": 21.715
+        },
+        {
+          "text": "altri",
+          "start": 21.775,
+          "end": 21.995
+        },
+        {
+          "text": "grandi,",
+          "start": 22.055,
+          "end": 22.416
+        }
+      ]
+    },
+    {
+      "start": 22.696,
+      "end": 25.196,
+      "text": "agendo come una vera feature selection automatica.",
+      "words": [
+        {
+          "text": "agendo",
+          "start": 22.696,
+          "end": 23.016
+        },
+        {
+          "text": "come",
+          "start": 23.076,
+          "end": 23.256
+        },
+        {
+          "text": "una",
+          "start": 23.296,
+          "end": 23.436
+        },
+        {
+          "text": "vera",
+          "start": 23.516,
+          "end": 23.756
+        },
+        {
+          "text": "feature",
+          "start": 23.816,
+          "end": 24.136
+        },
+        {
+          "text": "selection",
+          "start": 24.176,
+          "end": 24.596
+        },
+        {
+          "text": "automatica.",
+          "start": 24.656,
+          "end": 25.196
+        }
+      ]
+    },
+    {
+      "start": 26.256,
+      "end": 29.056,
+      "text": "Poiché il valore assoluto non è differenziabile in zero,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 26.256,
+          "end": 26.476
+        },
+        {
+          "text": "il",
+          "start": 26.496,
+          "end": 26.556
+        },
+        {
+          "text": "valore",
+          "start": 26.556,
+          "end": 26.796
+        },
+        {
+          "text": "assoluto",
+          "start": 26.836,
+          "end": 27.296
+        },
+        {
+          "text": "non",
+          "start": 27.476,
+          "end": 27.616
+        },
+        {
+          "text": "è",
+          "start": 27.656,
+          "end": 27.696
+        },
+        {
+          "text": "differenziabile",
+          "start": 27.736,
+          "end": 28.596
+        },
+        {
+          "text": "in",
+          "start": 28.636,
+          "end": 28.716
+        },
+        {
+          "text": "zero,",
+          "start": 28.756,
+          "end": 29.056
+        }
+      ]
+    },
+    {
+      "start": 29.436,
+      "end": 32.937,
+      "text": "servono tecniche come il sub-gradiente o approssimazioni lisce.",
+      "words": [
+        {
+          "text": "servono",
+          "start": 29.436,
+          "end": 29.796
+        },
+        {
+          "text": "tecniche",
+          "start": 29.876,
+          "end": 30.316
+        },
+        {
+          "text": "come",
+          "start": 30.376,
+          "end": 30.576
+        },
+        {
+          "text": "il",
+          "start": 30.636,
+          "end": 30.696
+        },
+        {
+          "text": "sub-gradiente",
+          "start": 30.756,
+          "end": 31.536
+        },
+        {
+          "text": "o",
+          "start": 31.737,
+          "end": 31.777
+        },
+        {
+          "text": "approssimazioni",
+          "start": 31.897,
+          "end": 32.597
+        },
+        {
+          "text": "lisce.",
+          "start": 32.657,
+          "end": 32.937
+        }
+      ]
+    },
+    {
+      "start": 33.917,
+      "end": 36.057,
+      "text": "L'Elastic Net combina entrambe le norme.",
+      "words": [
+        {
+          "text": "L'Elastic",
+          "start": 33.917,
+          "end": 34.337
+        },
+        {
+          "text": "Net",
+          "start": 34.397,
+          "end": 34.597
+        },
+        {
+          "text": "combina",
+          "start": 34.797,
+          "end": 35.137
+        },
+        {
+          "text": "entrambe",
+          "start": 35.277,
+          "end": 35.617
+        },
+        {
+          "text": "le",
+          "start": 35.657,
+          "end": 35.717
+        },
+        {
+          "text": "norme.",
+          "start": 35.777,
+          "end": 36.057
+        }
+      ]
+    },
+    {
+      "start": 36.957,
+      "end": 40.277,
+      "text": "Perché L uno azzera esattamente i pesi mentre L due no?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 36.957,
+          "end": 37.257
+        },
+        {
+          "text": "L",
+          "start": 37.557,
+          "end": 37.597
+        },
+        {
+          "text": "uno",
+          "start": 37.797,
+          "end": 37.977
+        },
+        {
+          "text": "azzera",
+          "start": 38.037,
+          "end": 38.337
+        },
+        {
+          "text": "esattamente",
+          "start": 38.397,
+          "end": 38.897
+        },
+        {
+          "text": "i",
+          "start": 38.937,
+          "end": 38.977
+        },
+        {
+          "text": "pesi",
+          "start": 38.977,
+          "end": 39.237
+        },
+        {
+          "text": "mentre",
+          "start": 39.397,
+          "end": 39.717
+        },
+        {
+          "text": "L",
+          "start": 39.857,
+          "end": 39.897
+        },
+        {
+          "text": "due",
+          "start": 39.977,
+          "end": 40.137
+        },
+        {
+          "text": "no?",
+          "start": 40.197,
+          "end": 40.277
+        }
+      ]
+    },
+    {
+      "start": 41.197,
+      "end": 44.158,
+      "text": "Ci sono due spiegazioni, una algebrica e una geometrica.",
+      "words": [
+        {
+          "text": "Ci",
+          "start": 41.197,
+          "end": 41.297
+        },
+        {
+          "text": "sono",
+          "start": 41.337,
+          "end": 41.498
+        },
+        {
+          "text": "due",
+          "start": 41.538,
+          "end": 41.658
+        },
+        {
+          "text": "spiegazioni,",
+          "start": 41.678,
+          "end": 42.278
+        },
+        {
+          "text": "una",
+          "start": 42.478,
+          "end": 42.658
+        },
+        {
+          "text": "algebrica",
+          "start": 42.778,
+          "end": 43.298
+        },
+        {
+          "text": "e",
+          "start": 43.438,
+          "end": 43.478
+        },
+        {
+          "text": "una",
+          "start": 43.518,
+          "end": 43.638
+        },
+        {
+          "text": "geometrica.",
+          "start": 43.678,
+          "end": 44.158
+        }
+      ]
+    },
+    {
+      "start": 45.358,
+      "end": 49.258,
+      "text": "Algebricamente, il gradiente di lambda w quadro è due lambda w,",
+      "words": [
+        {
+          "text": "Algebricamente,",
+          "start": 45.358,
+          "end": 46.278
+        },
+        {
+          "text": "il",
+          "start": 46.338,
+          "end": 46.398
+        },
+        {
+          "text": "gradiente",
+          "start": 46.438,
+          "end": 46.978
+        },
+        {
+          "text": "di",
+          "start": 47.018,
+          "end": 47.078
+        },
+        {
+          "text": "lambda",
+          "start": 47.158,
+          "end": 47.458
+        },
+        {
+          "text": "w",
+          "start": 47.518,
+          "end": 47.558
+        },
+        {
+          "text": "quadro",
+          "start": 47.678,
+          "end": 48.098
+        },
+        {
+          "text": "è",
+          "start": 48.298,
+          "end": 48.338
+        },
+        {
+          "text": "due",
+          "start": 48.518,
+          "end": 48.758
+        },
+        {
+          "text": "lambda",
+          "start": 48.838,
+          "end": 49.138
+        },
+        {
+          "text": "w,",
+          "start": 49.218,
+          "end": 49.258
+        }
+      ]
+    },
+    {
+      "start": 49.778,
+      "end": 52.499,
+      "text": "che diventa minuscolo quando w si avvicina a zero:",
+      "words": [
+        {
+          "text": "che",
+          "start": 49.778,
+          "end": 49.858
+        },
+        {
+          "text": "diventa",
+          "start": 49.898,
+          "end": 50.198
+        },
+        {
+          "text": "minuscolo",
+          "start": 50.258,
+          "end": 50.838
+        },
+        {
+          "text": "quando",
+          "start": 50.898,
+          "end": 51.179
+        },
+        {
+          "text": "w",
+          "start": 51.299,
+          "end": 51.339
+        },
+        {
+          "text": "si",
+          "start": 51.539,
+          "end": 51.599
+        },
+        {
+          "text": "avvicina",
+          "start": 51.639,
+          "end": 52.039
+        },
+        {
+          "text": "a",
+          "start": 52.099,
+          "end": 52.139
+        },
+        {
+          "text": "zero:",
+          "start": 52.199,
+          "end": 52.499
+        }
+      ]
+    },
+    {
+      "start": 52.959,
+      "end": 56.139,
+      "text": "la spinta si attenua e il peso resta piccolo ma non nullo.",
+      "words": [
+        {
+          "text": "la",
+          "start": 52.959,
+          "end": 53.039
+        },
+        {
+          "text": "spinta",
+          "start": 53.079,
+          "end": 53.439
+        },
+        {
+          "text": "si",
+          "start": 53.519,
+          "end": 53.579
+        },
+        {
+          "text": "attenua",
+          "start": 53.639,
+          "end": 54.139
+        },
+        {
+          "text": "e",
+          "start": 54.299,
+          "end": 54.339
+        },
+        {
+          "text": "il",
+          "start": 54.379,
+          "end": 54.459
+        },
+        {
+          "text": "peso",
+          "start": 54.499,
+          "end": 54.739
+        },
+        {
+          "text": "resta",
+          "start": 54.799,
+          "end": 55.039
+        },
+        {
+          "text": "piccolo",
+          "start": 55.079,
+          "end": 55.459
+        },
+        {
+          "text": "ma",
+          "start": 55.539,
+          "end": 55.599
+        },
+        {
+          "text": "non",
+          "start": 55.659,
+          "end": 55.799
+        },
+        {
+          "text": "nullo.",
+          "start": 55.839,
+          "end": 56.139
+        }
+      ]
+    },
+    {
+      "start": 56.959,
+      "end": 61.18,
+      "text": "Il sub-gradiente di lambda modulo di w è invece lambda per il segno di w:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 56.959,
+          "end": 57.039
+        },
+        {
+          "text": "sub-gradiente",
+          "start": 57.119,
+          "end": 57.799
+        },
+        {
+          "text": "di",
+          "start": 57.859,
+          "end": 57.899
+        },
+        {
+          "text": "lambda",
+          "start": 57.959,
+          "end": 58.239
+        },
+        {
+          "text": "modulo",
+          "start": 58.319,
+          "end": 58.679
+        },
+        {
+          "text": "di",
+          "start": 58.759,
+          "end": 58.839
+        },
+        {
+          "text": "w",
+          "start": 58.919,
+          "end": 58.959
+        },
+        {
+          "text": "è",
+          "start": 59.279,
+          "end": 59.319
+        },
+        {
+          "text": "invece",
+          "start": 59.379,
+          "end": 59.679
+        },
+        {
+          "text": "lambda",
+          "start": 59.719,
+          "end": 60.099
+        },
+        {
+          "text": "per",
+          "start": 60.279,
+          "end": 60.419
+        },
+        {
+          "text": "il",
+          "start": 60.459,
+          "end": 60.559
+        },
+        {
+          "text": "segno",
+          "start": 60.64,
+          "end": 60.94
+        },
+        {
+          "text": "di",
+          "start": 61.0,
+          "end": 61.06
+        },
+        {
+          "text": "w:",
+          "start": 61.14,
+          "end": 61.18
+        }
+      ]
+    },
+    {
+      "start": 61.88,
+      "end": 64.98,
+      "text": "una spinta costante verso zero anche per pesi piccolissimi,",
+      "words": [
+        {
+          "text": "una",
+          "start": 61.88,
+          "end": 62.02
+        },
+        {
+          "text": "spinta",
+          "start": 62.08,
+          "end": 62.36
+        },
+        {
+          "text": "costante",
+          "start": 62.42,
+          "end": 62.78
+        },
+        {
+          "text": "verso",
+          "start": 62.82,
+          "end": 63.06
+        },
+        {
+          "text": "zero",
+          "start": 63.16,
+          "end": 63.46
+        },
+        {
+          "text": "anche",
+          "start": 63.6,
+          "end": 63.82
+        },
+        {
+          "text": "per",
+          "start": 63.88,
+          "end": 64.0
+        },
+        {
+          "text": "pesi",
+          "start": 64.04,
+          "end": 64.24
+        },
+        {
+          "text": "piccolissimi,",
+          "start": 64.28,
+          "end": 64.98
+        }
+      ]
+    },
+    {
+      "start": 65.32,
+      "end": 68.7,
+      "text": "che li porta a zero esatto se il termine d'errore non li difende.",
+      "words": [
+        {
+          "text": "che",
+          "start": 65.32,
+          "end": 65.4
+        },
+        {
+          "text": "li",
+          "start": 65.44,
+          "end": 65.5
+        },
+        {
+          "text": "porta",
+          "start": 65.54,
+          "end": 65.82
+        },
+        {
+          "text": "a",
+          "start": 65.86,
+          "end": 65.9
+        },
+        {
+          "text": "zero",
+          "start": 65.98,
+          "end": 66.24
+        },
+        {
+          "text": "esatto",
+          "start": 66.32,
+          "end": 66.8
+        },
+        {
+          "text": "se",
+          "start": 66.88,
+          "end": 66.94
+        },
+        {
+          "text": "il",
+          "start": 67.0,
+          "end": 67.06
+        },
+        {
+          "text": "termine",
+          "start": 67.1,
+          "end": 67.44
+        },
+        {
+          "text": "d'errore",
+          "start": 67.5,
+          "end": 67.9
+        },
+        {
+          "text": "non",
+          "start": 67.98,
+          "end": 68.1
+        },
+        {
+          "text": "li",
+          "start": 68.14,
+          "end": 68.2
+        },
+        {
+          "text": "difende.",
+          "start": 68.26,
+          "end": 68.7
+        }
+      ]
+    },
+    {
+      "start": 69.52,
+      "end": 75.141,
+      "text": "Geometricamente, guarda i due grafici a destra: la soluzione regolarizzata blu è il primo punto",
+      "words": [
+        {
+          "text": "Geometricamente,",
+          "start": 69.52,
+          "end": 70.261
+        },
+        {
+          "text": "guarda",
+          "start": 70.321,
+          "end": 70.601
+        },
+        {
+          "text": "i",
+          "start": 70.661,
+          "end": 70.70100000000001
+        },
+        {
+          "text": "due",
+          "start": 70.741,
+          "end": 70.881
+        },
+        {
+          "text": "grafici",
+          "start": 70.941,
+          "end": 71.341
+        },
+        {
+          "text": "a",
+          "start": 71.381,
+          "end": 71.421
+        },
+        {
+          "text": "destra:",
+          "start": 71.501,
+          "end": 71.901
+        },
+        {
+          "text": "la",
+          "start": 72.321,
+          "end": 72.401
+        },
+        {
+          "text": "soluzione",
+          "start": 72.561,
+          "end": 73.061
+        },
+        {
+          "text": "regolarizzata",
+          "start": 73.161,
+          "end": 73.881
+        },
+        {
+          "text": "blu",
+          "start": 73.981,
+          "end": 74.141
+        },
+        {
+          "text": "è",
+          "start": 74.421,
+          "end": 74.46100000000001
+        },
+        {
+          "text": "il",
+          "start": 74.521,
+          "end": 74.581
+        },
+        {
+          "text": "primo",
+          "start": 74.621,
+          "end": 74.841
+        },
+        {
+          "text": "punto",
+          "start": 74.901,
+          "end": 75.141
+        }
+      ]
+    },
+    {
+      "start": 75.201,
+      "end": 79.041,
+      "text": "in cui le ellissi rosse dell'errore toccano la regione grigia ammessa.",
+      "words": [
+        {
+          "text": "in",
+          "start": 75.201,
+          "end": 75.261
+        },
+        {
+          "text": "cui",
+          "start": 75.301,
+          "end": 75.461
+        },
+        {
+          "text": "le",
+          "start": 75.521,
+          "end": 75.601
+        },
+        {
+          "text": "ellissi",
+          "start": 75.641,
+          "end": 75.981
+        },
+        {
+          "text": "rosse",
+          "start": 76.041,
+          "end": 76.321
+        },
+        {
+          "text": "dell'errore",
+          "start": 76.361,
+          "end": 76.961
+        },
+        {
+          "text": "toccano",
+          "start": 77.301,
+          "end": 77.701
+        },
+        {
+          "text": "la",
+          "start": 77.761,
+          "end": 77.821
+        },
+        {
+          "text": "regione",
+          "start": 77.861,
+          "end": 78.181
+        },
+        {
+          "text": "grigia",
+          "start": 78.221,
+          "end": 78.501
+        },
+        {
+          "text": "ammessa.",
+          "start": 78.561,
+          "end": 79.041
+        }
+      ]
+    },
+    {
+      "start": 79.761,
+      "end": 83.742,
+      "text": "Nel caso L uno il vincolo è un rombo con spigoli sugli assi,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 79.761,
+          "end": 79.902
+        },
+        {
+          "text": "caso",
+          "start": 79.942,
+          "end": 80.222
+        },
+        {
+          "text": "L",
+          "start": 80.582,
+          "end": 80.622
+        },
+        {
+          "text": "uno",
+          "start": 80.862,
+          "end": 81.062
+        },
+        {
+          "text": "il",
+          "start": 81.142,
+          "end": 81.222
+        },
+        {
+          "text": "vincolo",
+          "start": 81.262,
+          "end": 81.722
+        },
+        {
+          "text": "è",
+          "start": 81.842,
+          "end": 81.882
+        },
+        {
+          "text": "un",
+          "start": 81.942,
+          "end": 82.042
+        },
+        {
+          "text": "rombo",
+          "start": 82.122,
+          "end": 82.442
+        },
+        {
+          "text": "con",
+          "start": 82.502,
+          "end": 82.642
+        },
+        {
+          "text": "spigoli",
+          "start": 82.702,
+          "end": 83.102
+        },
+        {
+          "text": "sugli",
+          "start": 83.142,
+          "end": 83.362
+        },
+        {
+          "text": "assi,",
+          "start": 83.442,
+          "end": 83.742
+        }
+      ]
+    },
+    {
+      "start": 84.082,
+      "end": 88.122,
+      "text": "per cui il contatto avviene quasi sempre su un vertice dove w uno vale zero.",
+      "words": [
+        {
+          "text": "per",
+          "start": 84.082,
+          "end": 84.202
+        },
+        {
+          "text": "cui",
+          "start": 84.222,
+          "end": 84.342
+        },
+        {
+          "text": "il",
+          "start": 84.362,
+          "end": 84.402
+        },
+        {
+          "text": "contatto",
+          "start": 84.442,
+          "end": 84.842
+        },
+        {
+          "text": "avviene",
+          "start": 84.862,
+          "end": 85.142
+        },
+        {
+          "text": "quasi",
+          "start": 85.242,
+          "end": 85.482
+        },
+        {
+          "text": "sempre",
+          "start": 85.542,
+          "end": 85.782
+        },
+        {
+          "text": "su",
+          "start": 85.822,
+          "end": 85.882
+        },
+        {
+          "text": "un",
+          "start": 85.942,
+          "end": 86.002
+        },
+        {
+          "text": "vertice",
+          "start": 86.042,
+          "end": 86.522
+        },
+        {
+          "text": "dove",
+          "start": 86.782,
+          "end": 86.982
+        },
+        {
+          "text": "w",
+          "start": 87.162,
+          "end": 87.20200000000001
+        },
+        {
+          "text": "uno",
+          "start": 87.222,
+          "end": 87.562
+        },
+        {
+          "text": "vale",
+          "start": 87.622,
+          "end": 87.802
+        },
+        {
+          "text": "zero.",
+          "start": 87.862,
+          "end": 88.122
+        }
+      ]
+    },
+    {
+      "start": 88.862,
+      "end": 92.723,
+      "text": "Nel caso L due il vincolo è un cerchio liscio e il contatto cade in",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 88.862,
+          "end": 89.002
+        },
+        {
+          "text": "caso",
+          "start": 89.042,
+          "end": 89.282
+        },
+        {
+          "text": "L",
+          "start": 89.643,
+          "end": 89.683
+        },
+        {
+          "text": "due",
+          "start": 89.823,
+          "end": 90.063
+        },
+        {
+          "text": "il",
+          "start": 90.243,
+          "end": 90.323
+        },
+        {
+          "text": "vincolo",
+          "start": 90.383,
+          "end": 90.743
+        },
+        {
+          "text": "è",
+          "start": 90.783,
+          "end": 90.82300000000001
+        },
+        {
+          "text": "un",
+          "start": 90.843,
+          "end": 90.903
+        },
+        {
+          "text": "cerchio",
+          "start": 90.943,
+          "end": 91.263
+        },
+        {
+          "text": "liscio",
+          "start": 91.303,
+          "end": 91.643
+        },
+        {
+          "text": "e",
+          "start": 91.803,
+          "end": 91.843
+        },
+        {
+          "text": "il",
+          "start": 91.883,
+          "end": 91.943
+        },
+        {
+          "text": "contatto",
+          "start": 91.983,
+          "end": 92.383
+        },
+        {
+          "text": "cade",
+          "start": 92.443,
+          "end": 92.643
+        },
+        {
+          "text": "in",
+          "start": 92.663,
+          "end": 92.723
+        }
+      ]
+    },
+    {
+      "start": 92.763,
+      "end": 95.283,
+      "text": "un punto generico con entrambi i pesi non nulli.",
+      "words": [
+        {
+          "text": "un",
+          "start": 92.763,
+          "end": 92.823
+        },
+        {
+          "text": "punto",
+          "start": 92.863,
+          "end": 93.103
+        },
+        {
+          "text": "generico",
+          "start": 93.163,
+          "end": 93.643
+        },
+        {
+          "text": "con",
+          "start": 93.743,
+          "end": 93.883
+        },
+        {
+          "text": "entrambi",
+          "start": 93.963,
+          "end": 94.363
+        },
+        {
+          "text": "i",
+          "start": 94.423,
+          "end": 94.46300000000001
+        },
+        {
+          "text": "pesi",
+          "start": 94.483,
+          "end": 94.743
+        },
+        {
+          "text": "non",
+          "start": 94.783,
+          "end": 94.923
+        },
+        {
+          "text": "nulli.",
+          "start": 94.963,
+          "end": 95.283
+        }
+      ]
+    },
+    {
+      "start": 96.243,
+      "end": 102.204,
+      "text": "Chiudiamo citando due tecniche opzionali: la data augmentation — aggiungere rumore agli input per rendere",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 96.243,
+          "end": 96.603
+        },
+        {
+          "text": "citando",
+          "start": 96.683,
+          "end": 97.043
+        },
+        {
+          "text": "due",
+          "start": 97.103,
+          "end": 97.223
+        },
+        {
+          "text": "tecniche",
+          "start": 97.263,
+          "end": 97.643
+        },
+        {
+          "text": "opzionali:",
+          "start": 97.683,
+          "end": 98.223
+        },
+        {
+          "text": "la",
+          "start": 98.763,
+          "end": 98.843
+        },
+        {
+          "text": "data",
+          "start": 98.903,
+          "end": 99.124
+        },
+        {
+          "text": "augmentation",
+          "start": 99.164,
+          "end": 99.924
+        },
+        {
+          "text": "—",
+          "start": 99.924,
+          "end": 100.074
+        },
+        {
+          "text": "aggiungere",
+          "start": 100.144,
+          "end": 100.624
+        },
+        {
+          "text": "rumore",
+          "start": 100.704,
+          "end": 101.044
+        },
+        {
+          "text": "agli",
+          "start": 101.084,
+          "end": 101.264
+        },
+        {
+          "text": "input",
+          "start": 101.324,
+          "end": 101.644
+        },
+        {
+          "text": "per",
+          "start": 101.764,
+          "end": 101.864
+        },
+        {
+          "text": "rendere",
+          "start": 101.924,
+          "end": 102.204
+        }
+      ]
+    },
+    {
+      "start": 102.224,
+      "end": 108.324,
+      "text": "il modello robusto, o fare oversampling su dataset sbilanciati — e gli input derivati tramite",
+      "words": [
+        {
+          "text": "il",
+          "start": 102.224,
+          "end": 102.284
+        },
+        {
+          "text": "modello",
+          "start": 102.304,
+          "end": 102.624
+        },
+        {
+          "text": "robusto,",
+          "start": 102.664,
+          "end": 103.124
+        },
+        {
+          "text": "o",
+          "start": 103.544,
+          "end": 103.584
+        },
+        {
+          "text": "fare",
+          "start": 103.624,
+          "end": 103.804
+        },
+        {
+          "text": "oversampling",
+          "start": 103.844,
+          "end": 104.624
+        },
+        {
+          "text": "su",
+          "start": 104.744,
+          "end": 104.824
+        },
+        {
+          "text": "dataset",
+          "start": 104.884,
+          "end": 105.344
+        },
+        {
+          "text": "sbilanciati",
+          "start": 105.404,
+          "end": 106.084
+        },
+        {
+          "text": "—",
+          "start": 106.084,
+          "end": 106.234
+        },
+        {
+          "text": "e",
+          "start": 106.704,
+          "end": 106.744
+        },
+        {
+          "text": "gli",
+          "start": 106.804,
+          "end": 106.924
+        },
+        {
+          "text": "input",
+          "start": 106.964,
+          "end": 107.224
+        },
+        {
+          "text": "derivati",
+          "start": 107.344,
+          "end": 107.864
+        },
+        {
+          "text": "tramite",
+          "start": 107.944,
+          "end": 108.324
+        }
+      ]
+    },
+    {
+      "start": 108.384,
+      "end": 113.165,
+      "text": "combinazioni lineari come Principal Component Regression e Partial Least Squares.",
+      "words": [
+        {
+          "text": "combinazioni",
+          "start": 108.384,
+          "end": 109.045
+        },
+        {
+          "text": "lineari",
+          "start": 109.105,
+          "end": 109.625
+        },
+        {
+          "text": "come",
+          "start": 109.685,
+          "end": 109.885
+        },
+        {
+          "text": "Principal",
+          "start": 109.965,
+          "end": 110.425
+        },
+        {
+          "text": "Component",
+          "start": 110.485,
+          "end": 111.045
+        },
+        {
+          "text": "Regression",
+          "start": 111.125,
+          "end": 111.665
+        },
+        {
+          "text": "e",
+          "start": 111.865,
+          "end": 111.905
+        },
+        {
+          "text": "Partial",
+          "start": 111.985,
+          "end": 112.365
+        },
+        {
+          "text": "Least",
+          "start": 112.405,
+          "end": 112.625
+        },
+        {
+          "text": "Squares.",
+          "start": 112.725,
+          "end": 113.165
+        }
+      ]
+    }
+  ]
+}

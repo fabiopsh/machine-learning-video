@@ -1,0 +1,1766 @@
+{
+  "duration": 123.368,
+  "segments": [
+    {
+      "start": 0.147,
+      "end": 3.627,
+      "text": "Confrontiamo le due modalità di aggiornamento della discesa del gradiente.",
+      "words": [
+        {
+          "text": "Confrontiamo",
+          "start": 0.147,
+          "end": 0.687
+        },
+        {
+          "text": "le",
+          "start": 0.767,
+          "end": 0.807
+        },
+        {
+          "text": "due",
+          "start": 0.847,
+          "end": 0.967
+        },
+        {
+          "text": "modalità",
+          "start": 1.007,
+          "end": 1.387
+        },
+        {
+          "text": "di",
+          "start": 1.447,
+          "end": 1.507
+        },
+        {
+          "text": "aggiornamento",
+          "start": 1.547,
+          "end": 2.227
+        },
+        {
+          "text": "della",
+          "start": 2.367,
+          "end": 2.567
+        },
+        {
+          "text": "discesa",
+          "start": 2.587,
+          "end": 2.907
+        },
+        {
+          "text": "del",
+          "start": 2.947,
+          "end": 3.067
+        },
+        {
+          "text": "gradiente.",
+          "start": 3.107,
+          "end": 3.627
+        }
+      ]
+    },
+    {
+      "start": 4.687,
+      "end": 9.188,
+      "text": "Nella modalità batch il gradiente somma su tutti gli l esempi e i pesi si",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 4.687,
+          "end": 4.867
+        },
+        {
+          "text": "modalità",
+          "start": 4.907,
+          "end": 5.287
+        },
+        {
+          "text": "batch",
+          "start": 5.367,
+          "end": 5.647
+        },
+        {
+          "text": "il",
+          "start": 5.907,
+          "end": 6.007
+        },
+        {
+          "text": "gradiente",
+          "start": 6.047,
+          "end": 6.567
+        },
+        {
+          "text": "somma",
+          "start": 6.687,
+          "end": 6.907
+        },
+        {
+          "text": "su",
+          "start": 6.967,
+          "end": 7.047
+        },
+        {
+          "text": "tutti",
+          "start": 7.207,
+          "end": 7.507
+        },
+        {
+          "text": "gli",
+          "start": 7.547,
+          "end": 7.667
+        },
+        {
+          "text": "l",
+          "start": 7.807,
+          "end": 7.847
+        },
+        {
+          "text": "esempi",
+          "start": 7.927,
+          "end": 8.348
+        },
+        {
+          "text": "e",
+          "start": 8.588,
+          "end": 8.628
+        },
+        {
+          "text": "i",
+          "start": 8.688,
+          "end": 8.728
+        },
+        {
+          "text": "pesi",
+          "start": 8.768,
+          "end": 9.068
+        },
+        {
+          "text": "si",
+          "start": 9.128,
+          "end": 9.188
+        }
+      ]
+    },
+    {
+      "start": 9.228,
+      "end": 13.788,
+      "text": "aggiornano una sola volta dopo aver visto tutto il training set — cioè dopo un'epoca",
+      "words": [
+        {
+          "text": "aggiornano",
+          "start": 9.228,
+          "end": 9.668
+        },
+        {
+          "text": "una",
+          "start": 9.828,
+          "end": 9.988
+        },
+        {
+          "text": "sola",
+          "start": 10.108,
+          "end": 10.308
+        },
+        {
+          "text": "volta",
+          "start": 10.348,
+          "end": 10.648
+        },
+        {
+          "text": "dopo",
+          "start": 10.708,
+          "end": 10.848
+        },
+        {
+          "text": "aver",
+          "start": 10.888,
+          "end": 11.048
+        },
+        {
+          "text": "visto",
+          "start": 11.088,
+          "end": 11.328
+        },
+        {
+          "text": "tutto",
+          "start": 11.448,
+          "end": 11.688
+        },
+        {
+          "text": "il",
+          "start": 11.708,
+          "end": 11.768
+        },
+        {
+          "text": "training",
+          "start": 11.788,
+          "end": 12.088
+        },
+        {
+          "text": "set",
+          "start": 12.168,
+          "end": 12.428
+        },
+        {
+          "text": "—",
+          "start": 12.428,
+          "end": 12.578
+        },
+        {
+          "text": "cioè",
+          "start": 12.788,
+          "end": 12.928
+        },
+        {
+          "text": "dopo",
+          "start": 13.068,
+          "end": 13.268
+        },
+        {
+          "text": "un'epoca",
+          "start": 13.328,
+          "end": 13.788
+        }
+      ]
+    },
+    {
+      "start": 13.788,
+      "end": 16.088,
+      "text": "— dando una stima del gradiente precisa.",
+      "words": [
+        {
+          "text": "—",
+          "start": 13.788,
+          "end": 13.938
+        },
+        {
+          "text": "dando",
+          "start": 14.208,
+          "end": 14.448
+        },
+        {
+          "text": "una",
+          "start": 14.588,
+          "end": 14.708
+        },
+        {
+          "text": "stima",
+          "start": 14.768,
+          "end": 14.988
+        },
+        {
+          "text": "del",
+          "start": 15.028,
+          "end": 15.128
+        },
+        {
+          "text": "gradiente",
+          "start": 15.168,
+          "end": 15.608
+        },
+        {
+          "text": "precisa.",
+          "start": 15.648,
+          "end": 16.088
+        }
+      ]
+    },
+    {
+      "start": 16.668,
+      "end": 20.389,
+      "text": "Nella modalità on-line o stocastica, SGD,",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 16.668,
+          "end": 16.868
+        },
+        {
+          "text": "modalità",
+          "start": 16.908,
+          "end": 17.328
+        },
+        {
+          "text": "on-line",
+          "start": 17.548,
+          "end": 18.268
+        },
+        {
+          "text": "o",
+          "start": 18.548,
+          "end": 18.588
+        },
+        {
+          "text": "stocastica,",
+          "start": 18.768,
+          "end": 19.489
+        },
+        {
+          "text": "SGD,",
+          "start": 19.949,
+          "end": 20.389
+        }
+      ]
+    },
+    {
+      "start": 21.329,
+      "end": 26.269,
+      "text": "i pesi si aggiornano dopo ogni singolo esempio con il gradiente locale Delta p w",
+      "words": [
+        {
+          "text": "i",
+          "start": 21.329,
+          "end": 21.369
+        },
+        {
+          "text": "pesi",
+          "start": 21.409,
+          "end": 21.649
+        },
+        {
+          "text": "si",
+          "start": 21.709,
+          "end": 21.769
+        },
+        {
+          "text": "aggiornano",
+          "start": 21.809,
+          "end": 22.269
+        },
+        {
+          "text": "dopo",
+          "start": 22.349,
+          "end": 22.549
+        },
+        {
+          "text": "ogni",
+          "start": 22.609,
+          "end": 22.789
+        },
+        {
+          "text": "singolo",
+          "start": 22.849,
+          "end": 23.169
+        },
+        {
+          "text": "esempio",
+          "start": 23.209,
+          "end": 23.609
+        },
+        {
+          "text": "con",
+          "start": 23.649,
+          "end": 23.769
+        },
+        {
+          "text": "il",
+          "start": 23.809,
+          "end": 23.889
+        },
+        {
+          "text": "gradiente",
+          "start": 23.929,
+          "end": 24.369
+        },
+        {
+          "text": "locale",
+          "start": 24.429,
+          "end": 24.869
+        },
+        {
+          "text": "Delta",
+          "start": 25.249,
+          "end": 25.589
+        },
+        {
+          "text": "p",
+          "start": 25.709,
+          "end": 25.749
+        },
+        {
+          "text": "w",
+          "start": 26.229,
+          "end": 26.269
+        }
+      ]
+    },
+    {
+      "start": 26.389,
+      "end": 31.91,
+      "text": "con j uguale due per d con p meno x con p trasposto w per",
+      "words": [
+        {
+          "text": "con",
+          "start": 26.389,
+          "end": 26.529
+        },
+        {
+          "text": "j",
+          "start": 26.609,
+          "end": 26.649
+        },
+        {
+          "text": "uguale",
+          "start": 27.069,
+          "end": 27.429
+        },
+        {
+          "text": "due",
+          "start": 27.549,
+          "end": 27.809
+        },
+        {
+          "text": "per",
+          "start": 28.349,
+          "end": 28.569
+        },
+        {
+          "text": "d",
+          "start": 28.789,
+          "end": 28.829
+        },
+        {
+          "text": "con",
+          "start": 28.969,
+          "end": 29.129
+        },
+        {
+          "text": "p",
+          "start": 29.209,
+          "end": 29.249
+        },
+        {
+          "text": "meno",
+          "start": 29.549,
+          "end": 29.729
+        },
+        {
+          "text": "x",
+          "start": 29.889,
+          "end": 29.929
+        },
+        {
+          "text": "con",
+          "start": 30.029,
+          "end": 30.17
+        },
+        {
+          "text": "p",
+          "start": 30.25,
+          "end": 30.29
+        },
+        {
+          "text": "trasposto",
+          "start": 30.41,
+          "end": 31.01
+        },
+        {
+          "text": "w",
+          "start": 31.41,
+          "end": 31.45
+        },
+        {
+          "text": "per",
+          "start": 31.77,
+          "end": 31.91
+        }
+      ]
+    },
+    {
+      "start": 32.03,
+      "end": 32.89,
+      "text": "x p virgola j:",
+      "words": [
+        {
+          "text": "x",
+          "start": 32.03,
+          "end": 32.07
+        },
+        {
+          "text": "p",
+          "start": 32.17,
+          "end": 32.21
+        },
+        {
+          "text": "virgola",
+          "start": 32.45,
+          "end": 32.77
+        },
+        {
+          "text": "j:",
+          "start": 32.85,
+          "end": 32.89
+        }
+      ]
+    },
+    {
+      "start": 33.93,
+      "end": 36.99,
+      "text": "l'uscita sul secondo esempio usa già i pesi aggiornati dal primo.",
+      "words": [
+        {
+          "text": "l'uscita",
+          "start": 33.93,
+          "end": 34.29
+        },
+        {
+          "text": "sul",
+          "start": 34.37,
+          "end": 34.49
+        },
+        {
+          "text": "secondo",
+          "start": 34.55,
+          "end": 34.85
+        },
+        {
+          "text": "esempio",
+          "start": 34.89,
+          "end": 35.23
+        },
+        {
+          "text": "usa",
+          "start": 35.29,
+          "end": 35.43
+        },
+        {
+          "text": "già",
+          "start": 35.51,
+          "end": 35.61
+        },
+        {
+          "text": "i",
+          "start": 35.71,
+          "end": 35.75
+        },
+        {
+          "text": "pesi",
+          "start": 35.77,
+          "end": 35.99
+        },
+        {
+          "text": "aggiornati",
+          "start": 36.05,
+          "end": 36.51
+        },
+        {
+          "text": "dal",
+          "start": 36.55,
+          "end": 36.67
+        },
+        {
+          "text": "primo.",
+          "start": 36.73,
+          "end": 36.99
+        }
+      ]
+    },
+    {
+      "start": 37.85,
+      "end": 40.81,
+      "text": "Può convergere più in fretta ma richiede un eta più piccolo.",
+      "words": [
+        {
+          "text": "Può",
+          "start": 37.85,
+          "end": 37.95
+        },
+        {
+          "text": "convergere",
+          "start": 38.01,
+          "end": 38.49
+        },
+        {
+          "text": "più",
+          "start": 38.51,
+          "end": 38.59
+        },
+        {
+          "text": "in",
+          "start": 38.63,
+          "end": 38.69
+        },
+        {
+          "text": "fretta",
+          "start": 38.73,
+          "end": 39.07
+        },
+        {
+          "text": "ma",
+          "start": 39.13,
+          "end": 39.19
+        },
+        {
+          "text": "richiede",
+          "start": 39.27,
+          "end": 39.65
+        },
+        {
+          "text": "un",
+          "start": 39.81,
+          "end": 39.91
+        },
+        {
+          "text": "eta",
+          "start": 40.01,
+          "end": 40.17
+        },
+        {
+          "text": "più",
+          "start": 40.23,
+          "end": 40.31
+        },
+        {
+          "text": "piccolo.",
+          "start": 40.37,
+          "end": 40.81
+        }
+      ]
+    },
+    {
+      "start": 41.591,
+      "end": 44.771,
+      "text": "Guarda a destra le curve di apprendimento al variare di eta:",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 41.591,
+          "end": 41.871
+        },
+        {
+          "text": "a",
+          "start": 41.891,
+          "end": 41.931
+        },
+        {
+          "text": "destra",
+          "start": 41.951,
+          "end": 42.311
+        },
+        {
+          "text": "le",
+          "start": 42.491,
+          "end": 42.571
+        },
+        {
+          "text": "curve",
+          "start": 42.631,
+          "end": 42.911
+        },
+        {
+          "text": "di",
+          "start": 42.971,
+          "end": 43.031
+        },
+        {
+          "text": "apprendimento",
+          "start": 43.071,
+          "end": 43.691
+        },
+        {
+          "text": "al",
+          "start": 43.731,
+          "end": 43.831
+        },
+        {
+          "text": "variare",
+          "start": 43.871,
+          "end": 44.311
+        },
+        {
+          "text": "di",
+          "start": 44.371,
+          "end": 44.431
+        },
+        {
+          "text": "eta:",
+          "start": 44.551,
+          "end": 44.771
+        }
+      ]
+    },
+    {
+      "start": 45.531,
+      "end": 50.871,
+      "text": "con eta troppo piccolo l'errore scende lentissimo; con eta troppo grande oscilla con picchi;",
+      "words": [
+        {
+          "text": "con",
+          "start": 45.531,
+          "end": 45.691
+        },
+        {
+          "text": "eta",
+          "start": 45.731,
+          "end": 45.871
+        },
+        {
+          "text": "troppo",
+          "start": 45.931,
+          "end": 46.171
+        },
+        {
+          "text": "piccolo",
+          "start": 46.211,
+          "end": 46.571
+        },
+        {
+          "text": "l'errore",
+          "start": 46.711,
+          "end": 47.071
+        },
+        {
+          "text": "scende",
+          "start": 47.131,
+          "end": 47.431
+        },
+        {
+          "text": "lentissimo;",
+          "start": 47.511,
+          "end": 48.211
+        },
+        {
+          "text": "con",
+          "start": 48.751,
+          "end": 48.871
+        },
+        {
+          "text": "eta",
+          "start": 48.911,
+          "end": 49.071
+        },
+        {
+          "text": "troppo",
+          "start": 49.111,
+          "end": 49.331
+        },
+        {
+          "text": "grande",
+          "start": 49.371,
+          "end": 49.751
+        },
+        {
+          "text": "oscilla",
+          "start": 49.911,
+          "end": 50.331
+        },
+        {
+          "text": "con",
+          "start": 50.371,
+          "end": 50.511
+        },
+        {
+          "text": "picchi;",
+          "start": 50.551,
+          "end": 50.871
+        }
+      ]
+    },
+    {
+      "start": 51.511,
+      "end": 53.952,
+      "text": "un eta ben scelto scende rapido e si stabilizza.",
+      "words": [
+        {
+          "text": "un",
+          "start": 51.511,
+          "end": 51.611
+        },
+        {
+          "text": "eta",
+          "start": 51.691,
+          "end": 51.831
+        },
+        {
+          "text": "ben",
+          "start": 51.891,
+          "end": 52.031
+        },
+        {
+          "text": "scelto",
+          "start": 52.071,
+          "end": 52.412
+        },
+        {
+          "text": "scende",
+          "start": 52.452,
+          "end": 52.752
+        },
+        {
+          "text": "rapido",
+          "start": 52.852,
+          "end": 53.172
+        },
+        {
+          "text": "e",
+          "start": 53.212,
+          "end": 53.252
+        },
+        {
+          "text": "si",
+          "start": 53.272,
+          "end": 53.352
+        },
+        {
+          "text": "stabilizza.",
+          "start": 53.412,
+          "end": 53.952
+        }
+      ]
+    },
+    {
+      "start": 55.052,
+      "end": 58.192,
+      "text": "La regola risultante è la celebre regola di Widrow-Hoff,",
+      "words": [
+        {
+          "text": "La",
+          "start": 55.052,
+          "end": 55.112
+        },
+        {
+          "text": "regola",
+          "start": 55.152,
+          "end": 55.412
+        },
+        {
+          "text": "risultante",
+          "start": 55.472,
+          "end": 56.072
+        },
+        {
+          "text": "è",
+          "start": 56.252,
+          "end": 56.292
+        },
+        {
+          "text": "la",
+          "start": 56.352,
+          "end": 56.412
+        },
+        {
+          "text": "celebre",
+          "start": 56.472,
+          "end": 56.832
+        },
+        {
+          "text": "regola",
+          "start": 56.892,
+          "end": 57.192
+        },
+        {
+          "text": "di",
+          "start": 57.252,
+          "end": 57.312
+        },
+        {
+          "text": "Widrow-Hoff,",
+          "start": 57.532,
+          "end": 58.192
+        }
+      ]
+    },
+    {
+      "start": 58.612,
+      "end": 64.313,
+      "text": "o delta rule: Delta w con j uguale somma di delta con p per x",
+      "words": [
+        {
+          "text": "o",
+          "start": 58.612,
+          "end": 58.652
+        },
+        {
+          "text": "delta",
+          "start": 58.852,
+          "end": 59.132
+        },
+        {
+          "text": "rule:",
+          "start": 59.192,
+          "end": 59.492
+        },
+        {
+          "text": "Delta",
+          "start": 60.292,
+          "end": 60.572
+        },
+        {
+          "text": "w",
+          "start": 60.912,
+          "end": 60.952
+        },
+        {
+          "text": "con",
+          "start": 61.052,
+          "end": 61.212
+        },
+        {
+          "text": "j",
+          "start": 61.272,
+          "end": 61.312
+        },
+        {
+          "text": "uguale",
+          "start": 61.732,
+          "end": 62.072
+        },
+        {
+          "text": "somma",
+          "start": 62.212,
+          "end": 62.612
+        },
+        {
+          "text": "di",
+          "start": 62.812,
+          "end": 62.892
+        },
+        {
+          "text": "delta",
+          "start": 63.012,
+          "end": 63.293
+        },
+        {
+          "text": "con",
+          "start": 63.353,
+          "end": 63.493
+        },
+        {
+          "text": "p",
+          "start": 63.573,
+          "end": 63.613
+        },
+        {
+          "text": "per",
+          "start": 64.033,
+          "end": 64.173
+        },
+        {
+          "text": "x",
+          "start": 64.273,
+          "end": 64.313
+        }
+      ]
+    },
+    {
+      "start": 64.413,
+      "end": 67.313,
+      "text": "p virgola j, assorbendo il fattore due in eta.",
+      "words": [
+        {
+          "text": "p",
+          "start": 64.413,
+          "end": 64.453
+        },
+        {
+          "text": "virgola",
+          "start": 64.673,
+          "end": 65.013
+        },
+        {
+          "text": "j,",
+          "start": 65.073,
+          "end": 65.113
+        },
+        {
+          "text": "assorbendo",
+          "start": 65.813,
+          "end": 66.313
+        },
+        {
+          "text": "il",
+          "start": 66.333,
+          "end": 66.393
+        },
+        {
+          "text": "fattore",
+          "start": 66.413,
+          "end": 66.713
+        },
+        {
+          "text": "due",
+          "start": 66.753,
+          "end": 66.913
+        },
+        {
+          "text": "in",
+          "start": 66.953,
+          "end": 67.033
+        },
+        {
+          "text": "eta.",
+          "start": 67.093,
+          "end": 67.313
+        }
+      ]
+    },
+    {
+      "start": 68.373,
+      "end": 73.653,
+      "text": "È una regola intuitiva di correzione dell'errore: se delta è zero non si cambia nulla;",
+      "words": [
+        {
+          "text": "È",
+          "start": 68.373,
+          "end": 68.41300000000001
+        },
+        {
+          "text": "una",
+          "start": 68.453,
+          "end": 68.553
+        },
+        {
+          "text": "regola",
+          "start": 68.613,
+          "end": 68.853
+        },
+        {
+          "text": "intuitiva",
+          "start": 68.913,
+          "end": 69.493
+        },
+        {
+          "text": "di",
+          "start": 69.553,
+          "end": 69.613
+        },
+        {
+          "text": "correzione",
+          "start": 69.653,
+          "end": 70.153
+        },
+        {
+          "text": "dell'errore:",
+          "start": 70.193,
+          "end": 70.773
+        },
+        {
+          "text": "se",
+          "start": 71.273,
+          "end": 71.353
+        },
+        {
+          "text": "delta",
+          "start": 71.493,
+          "end": 71.853
+        },
+        {
+          "text": "è",
+          "start": 71.913,
+          "end": 71.953
+        },
+        {
+          "text": "zero",
+          "start": 72.033,
+          "end": 72.353
+        },
+        {
+          "text": "non",
+          "start": 72.613,
+          "end": 72.773
+        },
+        {
+          "text": "si",
+          "start": 72.833,
+          "end": 72.933
+        },
+        {
+          "text": "cambia",
+          "start": 72.973,
+          "end": 73.273
+        },
+        {
+          "text": "nulla;",
+          "start": 73.333,
+          "end": 73.653
+        }
+      ]
+    },
+    {
+      "start": 74.254,
+      "end": 78.054,
+      "text": "con input positivo e uscita troppo bassa w con j aumenta;",
+      "words": [
+        {
+          "text": "con",
+          "start": 74.254,
+          "end": 74.394
+        },
+        {
+          "text": "input",
+          "start": 74.434,
+          "end": 74.654
+        },
+        {
+          "text": "positivo",
+          "start": 74.714,
+          "end": 75.194
+        },
+        {
+          "text": "e",
+          "start": 75.234,
+          "end": 75.274
+        },
+        {
+          "text": "uscita",
+          "start": 75.274,
+          "end": 75.554
+        },
+        {
+          "text": "troppo",
+          "start": 75.594,
+          "end": 75.834
+        },
+        {
+          "text": "bassa",
+          "start": 75.874,
+          "end": 76.214
+        },
+        {
+          "text": "w",
+          "start": 76.754,
+          "end": 76.79400000000001
+        },
+        {
+          "text": "con",
+          "start": 76.894,
+          "end": 77.034
+        },
+        {
+          "text": "j",
+          "start": 77.094,
+          "end": 77.134
+        },
+        {
+          "text": "aumenta;",
+          "start": 77.494,
+          "end": 78.054
+        }
+      ]
+    },
+    {
+      "start": 78.734,
+      "end": 84.094,
+      "text": "con uscita troppo alta w con j diminuisce; con input negativo i segni si invertono;",
+      "words": [
+        {
+          "text": "con",
+          "start": 78.734,
+          "end": 78.834
+        },
+        {
+          "text": "uscita",
+          "start": 78.854,
+          "end": 79.114
+        },
+        {
+          "text": "troppo",
+          "start": 79.174,
+          "end": 79.394
+        },
+        {
+          "text": "alta",
+          "start": 79.494,
+          "end": 79.714
+        },
+        {
+          "text": "w",
+          "start": 80.054,
+          "end": 80.09400000000001
+        },
+        {
+          "text": "con",
+          "start": 80.154,
+          "end": 80.294
+        },
+        {
+          "text": "j",
+          "start": 80.334,
+          "end": 80.37400000000001
+        },
+        {
+          "text": "diminuisce;",
+          "start": 80.534,
+          "end": 81.194
+        },
+        {
+          "text": "con",
+          "start": 81.734,
+          "end": 81.854
+        },
+        {
+          "text": "input",
+          "start": 81.894,
+          "end": 82.134
+        },
+        {
+          "text": "negativo",
+          "start": 82.234,
+          "end": 82.674
+        },
+        {
+          "text": "i",
+          "start": 82.734,
+          "end": 82.774
+        },
+        {
+          "text": "segni",
+          "start": 82.854,
+          "end": 83.134
+        },
+        {
+          "text": "si",
+          "start": 83.354,
+          "end": 83.434
+        },
+        {
+          "text": "invertono;",
+          "start": 83.514,
+          "end": 84.094
+        }
+      ]
+    },
+    {
+      "start": 84.474,
+      "end": 86.115,
+      "text": "con input zero il peso non cambia.",
+      "words": [
+        {
+          "text": "con",
+          "start": 84.474,
+          "end": 84.594
+        },
+        {
+          "text": "input",
+          "start": 84.614,
+          "end": 84.834
+        },
+        {
+          "text": "zero",
+          "start": 84.874,
+          "end": 85.095
+        },
+        {
+          "text": "il",
+          "start": 85.255,
+          "end": 85.335
+        },
+        {
+          "text": "peso",
+          "start": 85.375,
+          "end": 85.555
+        },
+        {
+          "text": "non",
+          "start": 85.595,
+          "end": 85.695
+        },
+        {
+          "text": "cambia.",
+          "start": 85.755,
+          "end": 86.115
+        }
+      ]
+    },
+    {
+      "start": 87.195,
+      "end": 91.975,
+      "text": "Nell'esempio numerico: input uno, zero, uno, pesi meno zero virgola due,",
+      "words": [
+        {
+          "text": "Nell'esempio",
+          "start": 87.195,
+          "end": 87.635
+        },
+        {
+          "text": "numerico:",
+          "start": 87.695,
+          "end": 88.175
+        },
+        {
+          "text": "input",
+          "start": 88.375,
+          "end": 88.715
+        },
+        {
+          "text": "uno,",
+          "start": 89.195,
+          "end": 89.395
+        },
+        {
+          "text": "zero,",
+          "start": 89.635,
+          "end": 89.875
+        },
+        {
+          "text": "uno,",
+          "start": 90.115,
+          "end": 90.315
+        },
+        {
+          "text": "pesi",
+          "start": 90.615,
+          "end": 90.875
+        },
+        {
+          "text": "meno",
+          "start": 90.975,
+          "end": 91.175
+        },
+        {
+          "text": "zero",
+          "start": 91.235,
+          "end": 91.395
+        },
+        {
+          "text": "virgola",
+          "start": 91.435,
+          "end": 91.715
+        },
+        {
+          "text": "due,",
+          "start": 91.775,
+          "end": 91.975
+        }
+      ]
+    },
+    {
+      "start": 92.175,
+      "end": 95.515,
+      "text": "zero virgola cinque, meno zero virgola due e target più uno:",
+      "words": [
+        {
+          "text": "zero",
+          "start": 92.175,
+          "end": 92.335
+        },
+        {
+          "text": "virgola",
+          "start": 92.355,
+          "end": 92.615
+        },
+        {
+          "text": "cinque,",
+          "start": 92.675,
+          "end": 93.035
+        },
+        {
+          "text": "meno",
+          "start": 93.115,
+          "end": 93.295
+        },
+        {
+          "text": "zero",
+          "start": 93.375,
+          "end": 93.535
+        },
+        {
+          "text": "virgola",
+          "start": 93.575,
+          "end": 93.855
+        },
+        {
+          "text": "due",
+          "start": 93.895,
+          "end": 94.055
+        },
+        {
+          "text": "e",
+          "start": 94.495,
+          "end": 94.53500000000001
+        },
+        {
+          "text": "target",
+          "start": 94.595,
+          "end": 95.015
+        },
+        {
+          "text": "più",
+          "start": 95.095,
+          "end": 95.195
+        },
+        {
+          "text": "uno:",
+          "start": 95.335,
+          "end": 95.515
+        }
+      ]
+    },
+    {
+      "start": 96.216,
+      "end": 101.236,
+      "text": "il prodotto scalare vale meno zero virgola quattro, quindi solo w uno e w tre",
+      "words": [
+        {
+          "text": "il",
+          "start": 96.216,
+          "end": 96.296
+        },
+        {
+          "text": "prodotto",
+          "start": 96.336,
+          "end": 96.696
+        },
+        {
+          "text": "scalare",
+          "start": 96.736,
+          "end": 97.116
+        },
+        {
+          "text": "vale",
+          "start": 97.156,
+          "end": 97.336
+        },
+        {
+          "text": "meno",
+          "start": 97.436,
+          "end": 97.636
+        },
+        {
+          "text": "zero",
+          "start": 97.736,
+          "end": 97.896
+        },
+        {
+          "text": "virgola",
+          "start": 97.936,
+          "end": 98.216
+        },
+        {
+          "text": "quattro,",
+          "start": 98.276,
+          "end": 98.716
+        },
+        {
+          "text": "quindi",
+          "start": 99.036,
+          "end": 99.296
+        },
+        {
+          "text": "solo",
+          "start": 99.356,
+          "end": 99.556
+        },
+        {
+          "text": "w",
+          "start": 100.076,
+          "end": 100.116
+        },
+        {
+          "text": "uno",
+          "start": 100.156,
+          "end": 100.416
+        },
+        {
+          "text": "e",
+          "start": 100.596,
+          "end": 100.63600000000001
+        },
+        {
+          "text": "w",
+          "start": 100.956,
+          "end": 100.99600000000001
+        },
+        {
+          "text": "tre",
+          "start": 101.116,
+          "end": 101.236
+        }
+      ]
+    },
+    {
+      "start": 101.536,
+      "end": 105.076,
+      "text": "crescono, mentre w due con input zero resta fermo;",
+      "words": [
+        {
+          "text": "crescono,",
+          "start": 101.536,
+          "end": 102.076
+        },
+        {
+          "text": "mentre",
+          "start": 102.456,
+          "end": 102.696
+        },
+        {
+          "text": "w",
+          "start": 102.996,
+          "end": 103.036
+        },
+        {
+          "text": "due",
+          "start": 103.136,
+          "end": 103.356
+        },
+        {
+          "text": "con",
+          "start": 103.516,
+          "end": 103.636
+        },
+        {
+          "text": "input",
+          "start": 103.696,
+          "end": 103.936
+        },
+        {
+          "text": "zero",
+          "start": 104.016,
+          "end": 104.236
+        },
+        {
+          "text": "resta",
+          "start": 104.436,
+          "end": 104.676
+        },
+        {
+          "text": "fermo;",
+          "start": 104.736,
+          "end": 105.076
+        }
+      ]
+    },
+    {
+      "start": 105.976,
+      "end": 110.337,
+      "text": "arrivati a più zero virgola uno, il prodotto scalare sale a più zero virgola due",
+      "words": [
+        {
+          "text": "arrivati",
+          "start": 105.976,
+          "end": 106.376
+        },
+        {
+          "text": "a",
+          "start": 106.436,
+          "end": 106.47600000000001
+        },
+        {
+          "text": "più",
+          "start": 106.536,
+          "end": 106.656
+        },
+        {
+          "text": "zero",
+          "start": 106.796,
+          "end": 106.976
+        },
+        {
+          "text": "virgola",
+          "start": 107.017,
+          "end": 107.317
+        },
+        {
+          "text": "uno,",
+          "start": 107.437,
+          "end": 107.617
+        },
+        {
+          "text": "il",
+          "start": 107.817,
+          "end": 107.917
+        },
+        {
+          "text": "prodotto",
+          "start": 107.957,
+          "end": 108.317
+        },
+        {
+          "text": "scalare",
+          "start": 108.357,
+          "end": 108.737
+        },
+        {
+          "text": "sale",
+          "start": 108.817,
+          "end": 109.037
+        },
+        {
+          "text": "a",
+          "start": 109.097,
+          "end": 109.137
+        },
+        {
+          "text": "più",
+          "start": 109.237,
+          "end": 109.357
+        },
+        {
+          "text": "zero",
+          "start": 109.577,
+          "end": 109.757
+        },
+        {
+          "text": "virgola",
+          "start": 109.797,
+          "end": 110.117
+        },
+        {
+          "text": "due",
+          "start": 110.157,
+          "end": 110.337
+        }
+      ]
+    },
+    {
+      "start": 110.757,
+      "end": 112.737,
+      "text": "e la classificazione diventa corretta.",
+      "words": [
+        {
+          "text": "e",
+          "start": 110.757,
+          "end": 110.79700000000001
+        },
+        {
+          "text": "la",
+          "start": 110.857,
+          "end": 110.917
+        },
+        {
+          "text": "classificazione",
+          "start": 110.937,
+          "end": 111.757
+        },
+        {
+          "text": "diventa",
+          "start": 111.877,
+          "end": 112.197
+        },
+        {
+          "text": "corretta.",
+          "start": 112.237,
+          "end": 112.737
+        }
+      ]
+    },
+    {
+      "start": 113.497,
+      "end": 116.457,
+      "text": "Questo stesso meccanismo — insieme a miglioramenti come Newton,",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 113.497,
+          "end": 113.717
+        },
+        {
+          "text": "stesso",
+          "start": 113.757,
+          "end": 113.997
+        },
+        {
+          "text": "meccanismo",
+          "start": 114.037,
+          "end": 114.617
+        },
+        {
+          "text": "—",
+          "start": 114.617,
+          "end": 114.767
+        },
+        {
+          "text": "insieme",
+          "start": 114.777,
+          "end": 115.117
+        },
+        {
+          "text": "a",
+          "start": 115.137,
+          "end": 115.177
+        },
+        {
+          "text": "miglioramenti",
+          "start": 115.197,
+          "end": 115.757
+        },
+        {
+          "text": "come",
+          "start": 115.797,
+          "end": 115.977
+        },
+        {
+          "text": "Newton,",
+          "start": 116.057,
+          "end": 116.457
+        }
+      ]
+    },
+    {
+      "start": 116.637,
+      "end": 123.118,
+      "text": "quasi-Newton e gradiente coniugato — vale per qualsiasi spazio H continuo con loss differenziabile.",
+      "words": [
+        {
+          "text": "quasi-Newton",
+          "start": 116.637,
+          "end": 117.377
+        },
+        {
+          "text": "e",
+          "start": 117.637,
+          "end": 117.677
+        },
+        {
+          "text": "gradiente",
+          "start": 117.777,
+          "end": 118.338
+        },
+        {
+          "text": "coniugato",
+          "start": 118.378,
+          "end": 118.978
+        },
+        {
+          "text": "—",
+          "start": 118.978,
+          "end": 119.128
+        },
+        {
+          "text": "vale",
+          "start": 119.478,
+          "end": 119.678
+        },
+        {
+          "text": "per",
+          "start": 119.718,
+          "end": 119.818
+        },
+        {
+          "text": "qualsiasi",
+          "start": 119.878,
+          "end": 120.258
+        },
+        {
+          "text": "spazio",
+          "start": 120.318,
+          "end": 120.658
+        },
+        {
+          "text": "H",
+          "start": 120.838,
+          "end": 120.878
+        },
+        {
+          "text": "continuo",
+          "start": 120.978,
+          "end": 121.458
+        },
+        {
+          "text": "con",
+          "start": 121.658,
+          "end": 121.798
+        },
+        {
+          "text": "loss",
+          "start": 121.858,
+          "end": 122.078
+        },
+        {
+          "text": "differenziabile.",
+          "start": 122.278,
+          "end": 123.118
+        }
+      ]
+    }
+  ]
+}

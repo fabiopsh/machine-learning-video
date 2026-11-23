@@ -1,0 +1,1079 @@
+{
+  "duration": 74.766,
+  "segments": [
+    {
+      "start": 0.607,
+      "end": 4.248,
+      "text": "Consideriamo un esempio classico: riconoscere cifre scritte a mano,",
+      "words": [
+        {
+          "text": "Consideriamo",
+          "start": 0.607,
+          "end": 1.147
+        },
+        {
+          "text": "un",
+          "start": 1.187,
+          "end": 1.247
+        },
+        {
+          "text": "esempio",
+          "start": 1.287,
+          "end": 1.628
+        },
+        {
+          "text": "classico:",
+          "start": 1.688,
+          "end": 2.228
+        },
+        {
+          "text": "riconoscere",
+          "start": 2.588,
+          "end": 3.148
+        },
+        {
+          "text": "cifre",
+          "start": 3.228,
+          "end": 3.528
+        },
+        {
+          "text": "scritte",
+          "start": 3.568,
+          "end": 3.868
+        },
+        {
+          "text": "a",
+          "start": 3.908,
+          "end": 3.948
+        },
+        {
+          "text": "mano,",
+          "start": 3.968,
+          "end": 4.248
+        }
+      ]
+    },
+    {
+      "start": 4.528,
+      "end": 7.508,
+      "text": "ciascuna rappresentata da un'immagine di otto per otto pixel.",
+      "words": [
+        {
+          "text": "ciascuna",
+          "start": 4.528,
+          "end": 4.868
+        },
+        {
+          "text": "rappresentata",
+          "start": 4.928,
+          "end": 5.528
+        },
+        {
+          "text": "da",
+          "start": 5.588,
+          "end": 5.648
+        },
+        {
+          "text": "un'immagine",
+          "start": 5.688,
+          "end": 6.248
+        },
+        {
+          "text": "di",
+          "start": 6.328,
+          "end": 6.408
+        },
+        {
+          "text": "otto",
+          "start": 6.508,
+          "end": 6.728
+        },
+        {
+          "text": "per",
+          "start": 6.748,
+          "end": 6.848
+        },
+        {
+          "text": "otto",
+          "start": 6.888,
+          "end": 7.048
+        },
+        {
+          "text": "pixel.",
+          "start": 7.088,
+          "end": 7.508
+        }
+      ]
+    },
+    {
+      "start": 8.128,
+      "end": 11.969,
+      "text": "Scrivere a mano le regole per distinguere un tre da un otto su tutte le",
+      "words": [
+        {
+          "text": "Scrivere",
+          "start": 8.128,
+          "end": 8.448
+        },
+        {
+          "text": "a",
+          "start": 8.488,
+          "end": 8.528
+        },
+        {
+          "text": "mano",
+          "start": 8.568,
+          "end": 8.768
+        },
+        {
+          "text": "le",
+          "start": 8.968,
+          "end": 9.028
+        },
+        {
+          "text": "regole",
+          "start": 9.108,
+          "end": 9.548
+        },
+        {
+          "text": "per",
+          "start": 9.608,
+          "end": 9.728
+        },
+        {
+          "text": "distinguere",
+          "start": 9.768,
+          "end": 10.269
+        },
+        {
+          "text": "un",
+          "start": 10.309,
+          "end": 10.389
+        },
+        {
+          "text": "tre",
+          "start": 10.429,
+          "end": 10.569
+        },
+        {
+          "text": "da",
+          "start": 10.709,
+          "end": 10.769
+        },
+        {
+          "text": "un",
+          "start": 10.849,
+          "end": 10.929
+        },
+        {
+          "text": "otto",
+          "start": 11.009,
+          "end": 11.349
+        },
+        {
+          "text": "su",
+          "start": 11.469,
+          "end": 11.549
+        },
+        {
+          "text": "tutte",
+          "start": 11.649,
+          "end": 11.869
+        },
+        {
+          "text": "le",
+          "start": 11.909,
+          "end": 11.969
+        }
+      ]
+    },
+    {
+      "start": 12.009,
+      "end": 16.109,
+      "text": "calligrafie è impossibile, ma raccogliere esempi etichettati è facilissimo:",
+      "words": [
+        {
+          "text": "calligrafie",
+          "start": 12.009,
+          "end": 12.569
+        },
+        {
+          "text": "è",
+          "start": 12.589,
+          "end": 12.629
+        },
+        {
+          "text": "impossibile,",
+          "start": 12.669,
+          "end": 13.389
+        },
+        {
+          "text": "ma",
+          "start": 13.769,
+          "end": 13.829
+        },
+        {
+          "text": "raccogliere",
+          "start": 13.929,
+          "end": 14.349
+        },
+        {
+          "text": "esempi",
+          "start": 14.409,
+          "end": 14.709
+        },
+        {
+          "text": "etichettati",
+          "start": 14.789,
+          "end": 15.389
+        },
+        {
+          "text": "è",
+          "start": 15.429,
+          "end": 15.469
+        },
+        {
+          "text": "facilissimo:",
+          "start": 15.489,
+          "end": 16.109
+        }
+      ]
+    },
+    {
+      "start": 16.469,
+      "end": 21.57,
+      "text": "lasciamo quindi che il sistema apprenda un classificatore f verso le dieci classi da zero",
+      "words": [
+        {
+          "text": "lasciamo",
+          "start": 16.469,
+          "end": 16.789
+        },
+        {
+          "text": "quindi",
+          "start": 16.849,
+          "end": 17.089
+        },
+        {
+          "text": "che",
+          "start": 17.149,
+          "end": 17.229
+        },
+        {
+          "text": "il",
+          "start": 17.289,
+          "end": 17.349
+        },
+        {
+          "text": "sistema",
+          "start": 17.389,
+          "end": 17.769
+        },
+        {
+          "text": "apprenda",
+          "start": 17.809,
+          "end": 18.169
+        },
+        {
+          "text": "un",
+          "start": 18.209,
+          "end": 18.269
+        },
+        {
+          "text": "classificatore",
+          "start": 18.309,
+          "end": 19.13
+        },
+        {
+          "text": "f",
+          "start": 19.53,
+          "end": 19.57
+        },
+        {
+          "text": "verso",
+          "start": 19.89,
+          "end": 20.13
+        },
+        {
+          "text": "le",
+          "start": 20.19,
+          "end": 20.25
+        },
+        {
+          "text": "dieci",
+          "start": 20.33,
+          "end": 20.61
+        },
+        {
+          "text": "classi",
+          "start": 20.65,
+          "end": 21.03
+        },
+        {
+          "text": "da",
+          "start": 21.19,
+          "end": 21.27
+        },
+        {
+          "text": "zero",
+          "start": 21.37,
+          "end": 21.57
+        }
+      ]
+    },
+    {
+      "start": 21.61,
+      "end": 21.95,
+      "text": "a nove.",
+      "words": [
+        {
+          "text": "a",
+          "start": 21.61,
+          "end": 21.65
+        },
+        {
+          "text": "nove.",
+          "start": 21.71,
+          "end": 21.95
+        }
+      ]
+    },
+    {
+      "start": 22.65,
+      "end": 26.61,
+      "text": "La tabella in alto mostra la varietà di funzioni che si possono inferire da un",
+      "words": [
+        {
+          "text": "La",
+          "start": 22.65,
+          "end": 22.71
+        },
+        {
+          "text": "tabella",
+          "start": 22.75,
+          "end": 23.11
+        },
+        {
+          "text": "in",
+          "start": 23.15,
+          "end": 23.23
+        },
+        {
+          "text": "alto",
+          "start": 23.31,
+          "end": 23.65
+        },
+        {
+          "text": "mostra",
+          "start": 23.77,
+          "end": 24.05
+        },
+        {
+          "text": "la",
+          "start": 24.13,
+          "end": 24.19
+        },
+        {
+          "text": "varietà",
+          "start": 24.21,
+          "end": 24.57
+        },
+        {
+          "text": "di",
+          "start": 24.63,
+          "end": 24.69
+        },
+        {
+          "text": "funzioni",
+          "start": 24.73,
+          "end": 25.13
+        },
+        {
+          "text": "che",
+          "start": 25.17,
+          "end": 25.25
+        },
+        {
+          "text": "si",
+          "start": 25.33,
+          "end": 25.41
+        },
+        {
+          "text": "possono",
+          "start": 25.45,
+          "end": 25.79
+        },
+        {
+          "text": "inferire",
+          "start": 25.83,
+          "end": 26.35
+        },
+        {
+          "text": "da",
+          "start": 26.41,
+          "end": 26.47
+        },
+        {
+          "text": "un",
+          "start": 26.53,
+          "end": 26.61
+        }
+      ]
+    },
+    {
+      "start": 26.65,
+      "end": 29.411,
+      "text": "training set di coppie x virgola f di x:",
+      "words": [
+        {
+          "text": "training",
+          "start": 26.65,
+          "end": 27.03
+        },
+        {
+          "text": "set",
+          "start": 27.13,
+          "end": 27.37
+        },
+        {
+          "text": "di",
+          "start": 27.47,
+          "end": 27.531
+        },
+        {
+          "text": "coppie",
+          "start": 27.611,
+          "end": 27.971
+        },
+        {
+          "text": "x",
+          "start": 28.271,
+          "end": 28.311
+        },
+        {
+          "text": "virgola",
+          "start": 28.511,
+          "end": 28.811
+        },
+        {
+          "text": "f",
+          "start": 28.991,
+          "end": 29.031
+        },
+        {
+          "text": "di",
+          "start": 29.131,
+          "end": 29.231
+        },
+        {
+          "text": "x:",
+          "start": 29.371,
+          "end": 29.411
+        }
+      ]
+    },
+    {
+      "start": 30.051,
+      "end": 33.731,
+      "text": "riconoscimento della scrittura, diagnosi medica da sintomi ed esami,",
+      "words": [
+        {
+          "text": "riconoscimento",
+          "start": 30.051,
+          "end": 30.631
+        },
+        {
+          "text": "della",
+          "start": 30.671,
+          "end": 30.811
+        },
+        {
+          "text": "scrittura,",
+          "start": 30.851,
+          "end": 31.371
+        },
+        {
+          "text": "diagnosi",
+          "start": 31.691,
+          "end": 32.131
+        },
+        {
+          "text": "medica",
+          "start": 32.191,
+          "end": 32.551
+        },
+        {
+          "text": "da",
+          "start": 32.611,
+          "end": 32.671
+        },
+        {
+          "text": "sintomi",
+          "start": 32.771,
+          "end": 33.171
+        },
+        {
+          "text": "ed",
+          "start": 33.211,
+          "end": 33.291
+        },
+        {
+          "text": "esami,",
+          "start": 33.311,
+          "end": 33.731
+        }
+      ]
+    },
+    {
+      "start": 34.111,
+      "end": 40.472,
+      "text": "riconoscimento facciale da bitmap, rilevamento di spam, fino a dati strutturati complessi come il protein",
+      "words": [
+        {
+          "text": "riconoscimento",
+          "start": 34.111,
+          "end": 34.751
+        },
+        {
+          "text": "facciale",
+          "start": 34.811,
+          "end": 35.251
+        },
+        {
+          "text": "da",
+          "start": 35.291,
+          "end": 35.351
+        },
+        {
+          "text": "bitmap,",
+          "start": 35.431,
+          "end": 35.891
+        },
+        {
+          "text": "rilevamento",
+          "start": 36.332,
+          "end": 36.872
+        },
+        {
+          "text": "di",
+          "start": 36.932,
+          "end": 36.992
+        },
+        {
+          "text": "spam,",
+          "start": 37.032,
+          "end": 37.452
+        },
+        {
+          "text": "fino",
+          "start": 37.892,
+          "end": 38.092
+        },
+        {
+          "text": "a",
+          "start": 38.132,
+          "end": 38.172
+        },
+        {
+          "text": "dati",
+          "start": 38.252,
+          "end": 38.472
+        },
+        {
+          "text": "strutturati",
+          "start": 38.532,
+          "end": 39.052
+        },
+        {
+          "text": "complessi",
+          "start": 39.092,
+          "end": 39.732
+        },
+        {
+          "text": "come",
+          "start": 39.792,
+          "end": 39.972
+        },
+        {
+          "text": "il",
+          "start": 40.012,
+          "end": 40.072
+        },
+        {
+          "text": "protein",
+          "start": 40.132,
+          "end": 40.472
+        }
+      ]
+    },
+    {
+      "start": 40.552,
+      "end": 45.913,
+      "text": "folding — da sequenza di amminoacidi a coordinate tridimensionali — e il drug design,",
+      "words": [
+        {
+          "text": "folding",
+          "start": 40.552,
+          "end": 41.032
+        },
+        {
+          "text": "—",
+          "start": 41.032,
+          "end": 41.182
+        },
+        {
+          "text": "da",
+          "start": 41.412,
+          "end": 41.472
+        },
+        {
+          "text": "sequenza",
+          "start": 41.552,
+          "end": 41.972
+        },
+        {
+          "text": "di",
+          "start": 42.012,
+          "end": 42.072
+        },
+        {
+          "text": "amminoacidi",
+          "start": 42.112,
+          "end": 42.772
+        },
+        {
+          "text": "a",
+          "start": 42.912,
+          "end": 42.952
+        },
+        {
+          "text": "coordinate",
+          "start": 43.052,
+          "end": 43.632
+        },
+        {
+          "text": "tridimensionali",
+          "start": 43.692,
+          "end": 44.552
+        },
+        {
+          "text": "—",
+          "start": 44.552,
+          "end": 44.702
+        },
+        {
+          "text": "e",
+          "start": 44.933,
+          "end": 44.973
+        },
+        {
+          "text": "il",
+          "start": 45.033,
+          "end": 45.113
+        },
+        {
+          "text": "drug",
+          "start": 45.153,
+          "end": 45.373
+        },
+        {
+          "text": "design,",
+          "start": 45.413,
+          "end": 45.913
+        }
+      ]
+    },
+    {
+      "start": 46.313,
+      "end": 50.033,
+      "text": "da grafo molecolare alla forza di legame con la proteasi dell'HIV.",
+      "words": [
+        {
+          "text": "da",
+          "start": 46.313,
+          "end": 46.393
+        },
+        {
+          "text": "grafo",
+          "start": 46.473,
+          "end": 46.773
+        },
+        {
+          "text": "molecolare",
+          "start": 46.813,
+          "end": 47.393
+        },
+        {
+          "text": "alla",
+          "start": 47.533,
+          "end": 47.693
+        },
+        {
+          "text": "forza",
+          "start": 47.733,
+          "end": 48.033
+        },
+        {
+          "text": "di",
+          "start": 48.073,
+          "end": 48.133
+        },
+        {
+          "text": "legame",
+          "start": 48.193,
+          "end": 48.573
+        },
+        {
+          "text": "con",
+          "start": 48.613,
+          "end": 48.713
+        },
+        {
+          "text": "la",
+          "start": 48.753,
+          "end": 48.813
+        },
+        {
+          "text": "proteasi",
+          "start": 48.853,
+          "end": 49.413
+        },
+        {
+          "text": "dell'HIV.",
+          "start": 49.513,
+          "end": 50.033
+        }
+      ]
+    },
+    {
+      "start": 51.013,
+      "end": 56.074,
+      "text": "Qualunque sistema di Machine Learning predittivo si descrive attraverso cinque ingredienti fondamentali,",
+      "words": [
+        {
+          "text": "Qualunque",
+          "start": 51.013,
+          "end": 51.313
+        },
+        {
+          "text": "sistema",
+          "start": 51.393,
+          "end": 51.673
+        },
+        {
+          "text": "di",
+          "start": 51.713,
+          "end": 51.773
+        },
+        {
+          "text": "Machine",
+          "start": 51.813,
+          "end": 52.093
+        },
+        {
+          "text": "Learning",
+          "start": 52.133,
+          "end": 52.473
+        },
+        {
+          "text": "predittivo",
+          "start": 52.513,
+          "end": 53.153
+        },
+        {
+          "text": "si",
+          "start": 53.313,
+          "end": 53.394
+        },
+        {
+          "text": "descrive",
+          "start": 53.434,
+          "end": 53.814
+        },
+        {
+          "text": "attraverso",
+          "start": 53.874,
+          "end": 54.294
+        },
+        {
+          "text": "cinque",
+          "start": 54.394,
+          "end": 54.734
+        },
+        {
+          "text": "ingredienti",
+          "start": 54.774,
+          "end": 55.294
+        },
+        {
+          "text": "fondamentali,",
+          "start": 55.354,
+          "end": 56.074
+        }
+      ]
+    },
+    {
+      "start": 56.394,
+      "end": 60.234,
+      "text": "illustrati nello schema in basso: i dati, cioè le osservazioni del mondo;",
+      "words": [
+        {
+          "text": "illustrati",
+          "start": 56.394,
+          "end": 56.914
+        },
+        {
+          "text": "nello",
+          "start": 56.994,
+          "end": 57.174
+        },
+        {
+          "text": "schema",
+          "start": 57.194,
+          "end": 57.414
+        },
+        {
+          "text": "in",
+          "start": 57.454,
+          "end": 57.494
+        },
+        {
+          "text": "basso:",
+          "start": 57.534,
+          "end": 57.874
+        },
+        {
+          "text": "i",
+          "start": 58.314,
+          "end": 58.354
+        },
+        {
+          "text": "dati,",
+          "start": 58.414,
+          "end": 58.714
+        },
+        {
+          "text": "cioè",
+          "start": 58.934,
+          "end": 59.054
+        },
+        {
+          "text": "le",
+          "start": 59.114,
+          "end": 59.174
+        },
+        {
+          "text": "osservazioni",
+          "start": 59.194,
+          "end": 59.714
+        },
+        {
+          "text": "del",
+          "start": 59.754,
+          "end": 59.874
+        },
+        {
+          "text": "mondo;",
+          "start": 59.914,
+          "end": 60.234
+        }
+      ]
+    },
+    {
+      "start": 60.714,
+      "end": 66.535,
+      "text": "il task, cioè lo scopo dell'applicazione; il modello, cioè l'ipotesi h costruita dai dati;",
+      "words": [
+        {
+          "text": "il",
+          "start": 60.714,
+          "end": 60.794
+        },
+        {
+          "text": "task,",
+          "start": 60.894,
+          "end": 61.254
+        },
+        {
+          "text": "cioè",
+          "start": 61.454,
+          "end": 61.594
+        },
+        {
+          "text": "lo",
+          "start": 61.674,
+          "end": 61.734
+        },
+        {
+          "text": "scopo",
+          "start": 61.774,
+          "end": 62.075
+        },
+        {
+          "text": "dell'applicazione;",
+          "start": 62.115,
+          "end": 62.975
+        },
+        {
+          "text": "il",
+          "start": 63.415,
+          "end": 63.515
+        },
+        {
+          "text": "modello,",
+          "start": 63.575,
+          "end": 64.055
+        },
+        {
+          "text": "cioè",
+          "start": 64.215,
+          "end": 64.335
+        },
+        {
+          "text": "l'ipotesi",
+          "start": 64.395,
+          "end": 64.975
+        },
+        {
+          "text": "h",
+          "start": 65.275,
+          "end": 65.31500000000001
+        },
+        {
+          "text": "costruita",
+          "start": 65.515,
+          "end": 65.995
+        },
+        {
+          "text": "dai",
+          "start": 66.035,
+          "end": 66.175
+        },
+        {
+          "text": "dati;",
+          "start": 66.215,
+          "end": 66.535
+        }
+      ]
+    },
+    {
+      "start": 67.055,
+      "end": 70.796,
+      "text": "l'algoritmo di apprendimento, che regola i parametri del modello sul problema;",
+      "words": [
+        {
+          "text": "l'algoritmo",
+          "start": 67.055,
+          "end": 67.595
+        },
+        {
+          "text": "di",
+          "start": 67.635,
+          "end": 67.695
+        },
+        {
+          "text": "apprendimento,",
+          "start": 67.735,
+          "end": 68.435
+        },
+        {
+          "text": "che",
+          "start": 68.615,
+          "end": 68.695
+        },
+        {
+          "text": "regola",
+          "start": 68.755,
+          "end": 69.055
+        },
+        {
+          "text": "i",
+          "start": 69.075,
+          "end": 69.11500000000001
+        },
+        {
+          "text": "parametri",
+          "start": 69.135,
+          "end": 69.635
+        },
+        {
+          "text": "del",
+          "start": 69.675,
+          "end": 69.795
+        },
+        {
+          "text": "modello",
+          "start": 69.815,
+          "end": 70.155
+        },
+        {
+          "text": "sul",
+          "start": 70.195,
+          "end": 70.335
+        },
+        {
+          "text": "problema;",
+          "start": 70.375,
+          "end": 70.796
+        }
+      ]
+    },
+    {
+      "start": 71.276,
+      "end": 74.516,
+      "text": "e la validazione, che misura la qualità del modello ottenuto.",
+      "words": [
+        {
+          "text": "e",
+          "start": 71.276,
+          "end": 71.316
+        },
+        {
+          "text": "la",
+          "start": 71.356,
+          "end": 71.436
+        },
+        {
+          "text": "validazione,",
+          "start": 71.476,
+          "end": 72.216
+        },
+        {
+          "text": "che",
+          "start": 72.496,
+          "end": 72.576
+        },
+        {
+          "text": "misura",
+          "start": 72.616,
+          "end": 72.856
+        },
+        {
+          "text": "la",
+          "start": 72.936,
+          "end": 72.996
+        },
+        {
+          "text": "qualità",
+          "start": 73.036,
+          "end": 73.376
+        },
+        {
+          "text": "del",
+          "start": 73.556,
+          "end": 73.676
+        },
+        {
+          "text": "modello",
+          "start": 73.716,
+          "end": 74.036
+        },
+        {
+          "text": "ottenuto.",
+          "start": 74.076,
+          "end": 74.516
+        }
+      ]
+    }
+  ]
+}

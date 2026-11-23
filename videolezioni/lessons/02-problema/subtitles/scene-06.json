@@ -1,0 +1,2081 @@
+{
+  "duration": 158.45,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.381,
+      "text": "Il terzo ingrediente è il modello, che definisce la classe di funzioni implementabili,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "terzo",
+          "start": 0.22,
+          "end": 0.5
+        },
+        {
+          "text": "ingrediente",
+          "start": 0.54,
+          "end": 1.14
+        },
+        {
+          "text": "è",
+          "start": 1.28,
+          "end": 1.32
+        },
+        {
+          "text": "il",
+          "start": 1.36,
+          "end": 1.44
+        },
+        {
+          "text": "modello,",
+          "start": 1.48,
+          "end": 1.94
+        },
+        {
+          "text": "che",
+          "start": 1.98,
+          "end": 2.06
+        },
+        {
+          "text": "definisce",
+          "start": 2.12,
+          "end": 2.5
+        },
+        {
+          "text": "la",
+          "start": 2.54,
+          "end": 2.6
+        },
+        {
+          "text": "classe",
+          "start": 2.62,
+          "end": 2.9
+        },
+        {
+          "text": "di",
+          "start": 2.94,
+          "end": 3.0
+        },
+        {
+          "text": "funzioni",
+          "start": 3.04,
+          "end": 3.46
+        },
+        {
+          "text": "implementabili,",
+          "start": 3.52,
+          "end": 4.381
+        }
+      ]
+    },
+    {
+      "start": 4.421,
+      "end": 6.441,
+      "text": "cioè lo spazio delle ipotesi H.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 4.421,
+          "end": 4.581
+        },
+        {
+          "text": "lo",
+          "start": 4.681,
+          "end": 4.761
+        },
+        {
+          "text": "spazio",
+          "start": 4.821,
+          "end": 5.301
+        },
+        {
+          "text": "delle",
+          "start": 5.341,
+          "end": 5.521
+        },
+        {
+          "text": "ipotesi",
+          "start": 5.581,
+          "end": 6.021
+        },
+        {
+          "text": "H.",
+          "start": 6.401,
+          "end": 6.441
+        }
+      ]
+    },
+    {
+      "start": 7.101,
+      "end": 12.662,
+      "text": "Fissiamo la terminologia: l'esempio di training è la coppia x virgola f di x più",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 7.101,
+          "end": 7.421
+        },
+        {
+          "text": "la",
+          "start": 7.481,
+          "end": 7.541
+        },
+        {
+          "text": "terminologia:",
+          "start": 7.581,
+          "end": 8.221
+        },
+        {
+          "text": "l'esempio",
+          "start": 9.101,
+          "end": 9.501
+        },
+        {
+          "text": "di",
+          "start": 9.541,
+          "end": 9.601
+        },
+        {
+          "text": "training",
+          "start": 9.641,
+          "end": 10.061
+        },
+        {
+          "text": "è",
+          "start": 10.161,
+          "end": 10.201
+        },
+        {
+          "text": "la",
+          "start": 10.241,
+          "end": 10.301
+        },
+        {
+          "text": "coppia",
+          "start": 10.381,
+          "end": 10.741
+        },
+        {
+          "text": "x",
+          "start": 11.061,
+          "end": 11.101
+        },
+        {
+          "text": "virgola",
+          "start": 11.401,
+          "end": 11.802
+        },
+        {
+          "text": "f",
+          "start": 12.062,
+          "end": 12.102
+        },
+        {
+          "text": "di",
+          "start": 12.202,
+          "end": 12.262
+        },
+        {
+          "text": "x",
+          "start": 12.382,
+          "end": 12.422
+        },
+        {
+          "text": "più",
+          "start": 12.542,
+          "end": 12.662
+        }
+      ]
+    },
+    {
+      "start": 12.742,
+      "end": 16.002,
+      "text": "rumore; f è la funzione target sconosciuta;",
+      "words": [
+        {
+          "text": "rumore;",
+          "start": 12.742,
+          "end": 13.082
+        },
+        {
+          "text": "f",
+          "start": 14.082,
+          "end": 14.122
+        },
+        {
+          "text": "è",
+          "start": 14.322,
+          "end": 14.362
+        },
+        {
+          "text": "la",
+          "start": 14.402,
+          "end": 14.462
+        },
+        {
+          "text": "funzione",
+          "start": 14.502,
+          "end": 14.862
+        },
+        {
+          "text": "target",
+          "start": 14.902,
+          "end": 15.282
+        },
+        {
+          "text": "sconosciuta;",
+          "start": 15.422,
+          "end": 16.002
+        }
+      ]
+    },
+    {
+      "start": 16.822,
+      "end": 19.803,
+      "text": "h è un'ipotesi proposta espressa in un dato linguaggio;",
+      "words": [
+        {
+          "text": "h",
+          "start": 16.822,
+          "end": 16.862
+        },
+        {
+          "text": "è",
+          "start": 17.082,
+          "end": 17.122
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 17.162,
+          "end": 17.742
+        },
+        {
+          "text": "proposta",
+          "start": 17.802,
+          "end": 18.262
+        },
+        {
+          "text": "espressa",
+          "start": 18.302,
+          "end": 18.782
+        },
+        {
+          "text": "in",
+          "start": 18.842,
+          "end": 18.902
+        },
+        {
+          "text": "un",
+          "start": 18.942,
+          "end": 19.002
+        },
+        {
+          "text": "dato",
+          "start": 19.042,
+          "end": 19.242
+        },
+        {
+          "text": "linguaggio;",
+          "start": 19.282,
+          "end": 19.803
+        }
+      ]
+    },
+    {
+      "start": 20.723,
+      "end": 23.983,
+      "text": "H è l'insieme di tutte le ipotesi producibili, ad esempio",
+      "words": [
+        {
+          "text": "H",
+          "start": 20.723,
+          "end": 20.763
+        },
+        {
+          "text": "è",
+          "start": 20.983,
+          "end": 21.023
+        },
+        {
+          "text": "l'insieme",
+          "start": 21.063,
+          "end": 21.483
+        },
+        {
+          "text": "di",
+          "start": 21.543,
+          "end": 21.623
+        },
+        {
+          "text": "tutte",
+          "start": 21.763,
+          "end": 22.103
+        },
+        {
+          "text": "le",
+          "start": 22.123,
+          "end": 22.183
+        },
+        {
+          "text": "ipotesi",
+          "start": 22.243,
+          "end": 22.643
+        },
+        {
+          "text": "producibili,",
+          "start": 22.683,
+          "end": 23.323
+        },
+        {
+          "text": "ad",
+          "start": 23.483,
+          "end": 23.583
+        },
+        {
+          "text": "esempio",
+          "start": 23.603,
+          "end": 23.983
+        }
+      ]
+    },
+    {
+      "start": 24.563,
+      "end": 25.463,
+      "text": "h di x e",
+      "words": [
+        {
+          "text": "h",
+          "start": 24.563,
+          "end": 24.603
+        },
+        {
+          "text": "di",
+          "start": 24.683,
+          "end": 24.823
+        },
+        {
+          "text": "x",
+          "start": 24.903,
+          "end": 24.943
+        },
+        {
+          "text": "e",
+          "start": 25.423,
+          "end": 25.463
+        }
+      ]
+    },
+    {
+      "start": 26.043,
+      "end": 27.383,
+      "text": "w al variare di w.",
+      "words": [
+        {
+          "text": "w",
+          "start": 26.043,
+          "end": 26.083
+        },
+        {
+          "text": "al",
+          "start": 26.363,
+          "end": 26.463
+        },
+        {
+          "text": "variare",
+          "start": 26.503,
+          "end": 26.883
+        },
+        {
+          "text": "di",
+          "start": 26.923,
+          "end": 26.983
+        },
+        {
+          "text": "w.",
+          "start": 27.343,
+          "end": 27.383
+        }
+      ]
+    },
+    {
+      "start": 28.504,
+      "end": 31.084,
+      "text": "Le rappresentazioni possibili sono molto diverse:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 28.504,
+          "end": 28.564
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 28.604,
+          "end": 29.244
+        },
+        {
+          "text": "possibili",
+          "start": 29.304,
+          "end": 29.724
+        },
+        {
+          "text": "sono",
+          "start": 29.804,
+          "end": 30.004
+        },
+        {
+          "text": "molto",
+          "start": 30.164,
+          "end": 30.544
+        },
+        {
+          "text": "diverse:",
+          "start": 30.584,
+          "end": 31.084
+        }
+      ]
+    },
+    {
+      "start": 31.644,
+      "end": 37.465,
+      "text": "nei modelli lineari H è continuo e ogni w è un'ipotesi come segno di w",
+      "words": [
+        {
+          "text": "nei",
+          "start": 31.644,
+          "end": 31.764
+        },
+        {
+          "text": "modelli",
+          "start": 31.784,
+          "end": 32.084
+        },
+        {
+          "text": "lineari",
+          "start": 32.144,
+          "end": 32.584
+        },
+        {
+          "text": "H",
+          "start": 32.904,
+          "end": 32.944
+        },
+        {
+          "text": "è",
+          "start": 32.984,
+          "end": 33.024
+        },
+        {
+          "text": "continuo",
+          "start": 33.064,
+          "end": 33.584
+        },
+        {
+          "text": "e",
+          "start": 33.764,
+          "end": 33.804
+        },
+        {
+          "text": "ogni",
+          "start": 34.024,
+          "end": 34.224
+        },
+        {
+          "text": "w",
+          "start": 34.624,
+          "end": 34.664
+        },
+        {
+          "text": "è",
+          "start": 34.904,
+          "end": 34.944
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 35.004,
+          "end": 35.565
+        },
+        {
+          "text": "come",
+          "start": 35.665,
+          "end": 35.845
+        },
+        {
+          "text": "segno",
+          "start": 36.365,
+          "end": 36.745
+        },
+        {
+          "text": "di",
+          "start": 36.925,
+          "end": 37.025
+        },
+        {
+          "text": "w",
+          "start": 37.425,
+          "end": 37.465
+        }
+      ]
+    },
+    {
+      "start": 37.565,
+      "end": 42.145,
+      "text": "trasposto x più w zero oppure due x più centocinquanta;",
+      "words": [
+        {
+          "text": "trasposto",
+          "start": 37.565,
+          "end": 38.085
+        },
+        {
+          "text": "x",
+          "start": 38.305,
+          "end": 38.345
+        },
+        {
+          "text": "più",
+          "start": 38.585,
+          "end": 38.705
+        },
+        {
+          "text": "w",
+          "start": 39.085,
+          "end": 39.125
+        },
+        {
+          "text": "zero",
+          "start": 39.265,
+          "end": 39.525
+        },
+        {
+          "text": "oppure",
+          "start": 39.665,
+          "end": 40.005
+        },
+        {
+          "text": "due",
+          "start": 40.385,
+          "end": 40.545
+        },
+        {
+          "text": "x",
+          "start": 40.725,
+          "end": 40.765
+        },
+        {
+          "text": "più",
+          "start": 41.105,
+          "end": 41.205
+        },
+        {
+          "text": "centocinquanta;",
+          "start": 41.305,
+          "end": 42.145
+        }
+      ]
+    },
+    {
+      "start": 42.745,
+      "end": 47.326,
+      "text": "nelle regole simboliche H è discreto, come se x uno è zero e x due",
+      "words": [
+        {
+          "text": "nelle",
+          "start": 42.745,
+          "end": 42.945
+        },
+        {
+          "text": "regole",
+          "start": 43.025,
+          "end": 43.305
+        },
+        {
+          "text": "simboliche",
+          "start": 43.385,
+          "end": 43.966
+        },
+        {
+          "text": "H",
+          "start": 44.346,
+          "end": 44.386
+        },
+        {
+          "text": "è",
+          "start": 44.446,
+          "end": 44.486
+        },
+        {
+          "text": "discreto,",
+          "start": 44.506,
+          "end": 45.006
+        },
+        {
+          "text": "come",
+          "start": 45.066,
+          "end": 45.306
+        },
+        {
+          "text": "se",
+          "start": 45.706,
+          "end": 45.806
+        },
+        {
+          "text": "x",
+          "start": 45.926,
+          "end": 45.966
+        },
+        {
+          "text": "uno",
+          "start": 46.106,
+          "end": 46.266
+        },
+        {
+          "text": "è",
+          "start": 46.326,
+          "end": 46.366
+        },
+        {
+          "text": "zero",
+          "start": 46.466,
+          "end": 46.766
+        },
+        {
+          "text": "e",
+          "start": 46.886,
+          "end": 46.926
+        },
+        {
+          "text": "x",
+          "start": 47.006,
+          "end": 47.046
+        },
+        {
+          "text": "due",
+          "start": 47.126,
+          "end": 47.326
+        }
+      ]
+    },
+    {
+      "start": 47.346,
+      "end": 49.386,
+      "text": "è uno allora uno altrimenti zero;",
+      "words": [
+        {
+          "text": "è",
+          "start": 47.346,
+          "end": 47.386
+        },
+        {
+          "text": "uno",
+          "start": 47.446,
+          "end": 47.606
+        },
+        {
+          "text": "allora",
+          "start": 47.786,
+          "end": 48.046
+        },
+        {
+          "text": "uno",
+          "start": 48.146,
+          "end": 48.306
+        },
+        {
+          "text": "altrimenti",
+          "start": 48.466,
+          "end": 49.006
+        },
+        {
+          "text": "zero;",
+          "start": 49.126,
+          "end": 49.386
+        }
+      ]
+    },
+    {
+      "start": 50.146,
+      "end": 53.687,
+      "text": "i modelli probabilistici stimano la densità congiunta p di x e d;",
+      "words": [
+        {
+          "text": "i",
+          "start": 50.146,
+          "end": 50.186
+        },
+        {
+          "text": "modelli",
+          "start": 50.246,
+          "end": 50.586
+        },
+        {
+          "text": "probabilistici",
+          "start": 50.626,
+          "end": 51.387
+        },
+        {
+          "text": "stimano",
+          "start": 51.447,
+          "end": 51.767
+        },
+        {
+          "text": "la",
+          "start": 51.827,
+          "end": 51.887
+        },
+        {
+          "text": "densità",
+          "start": 51.907,
+          "end": 52.247
+        },
+        {
+          "text": "congiunta",
+          "start": 52.327,
+          "end": 52.787
+        },
+        {
+          "text": "p",
+          "start": 52.927,
+          "end": 52.967
+        },
+        {
+          "text": "di",
+          "start": 53.187,
+          "end": 53.247
+        },
+        {
+          "text": "x",
+          "start": 53.387,
+          "end": 53.427
+        },
+        {
+          "text": "e",
+          "start": 53.527,
+          "end": 53.567
+        },
+        {
+          "text": "d;",
+          "start": 53.647,
+          "end": 53.687
+        }
+      ]
+    },
+    {
+      "start": 54.487,
+      "end": 57.767,
+      "text": "il K-nearest neighbors memorizza i dati e media i vicini;",
+      "words": [
+        {
+          "text": "il",
+          "start": 54.487,
+          "end": 54.567
+        },
+        {
+          "text": "K-nearest",
+          "start": 54.627,
+          "end": 55.167
+        },
+        {
+          "text": "neighbors",
+          "start": 55.307,
+          "end": 55.767
+        },
+        {
+          "text": "memorizza",
+          "start": 55.947,
+          "end": 56.427
+        },
+        {
+          "text": "i",
+          "start": 56.467,
+          "end": 56.507
+        },
+        {
+          "text": "dati",
+          "start": 56.507,
+          "end": 56.827
+        },
+        {
+          "text": "e",
+          "start": 56.947,
+          "end": 56.987
+        },
+        {
+          "text": "media",
+          "start": 57.047,
+          "end": 57.307
+        },
+        {
+          "text": "i",
+          "start": 57.327,
+          "end": 57.367
+        },
+        {
+          "text": "vicini;",
+          "start": 57.367,
+          "end": 57.767
+        }
+      ]
+    },
+    {
+      "start": 58.547,
+      "end": 61.868,
+      "text": "le reti neurali approssimano relazioni non lineari complesse.",
+      "words": [
+        {
+          "text": "le",
+          "start": 58.547,
+          "end": 58.627
+        },
+        {
+          "text": "reti",
+          "start": 58.687,
+          "end": 58.867
+        },
+        {
+          "text": "neurali",
+          "start": 58.907,
+          "end": 59.308
+        },
+        {
+          "text": "approssimano",
+          "start": 59.428,
+          "end": 60.008
+        },
+        {
+          "text": "relazioni",
+          "start": 60.068,
+          "end": 60.568
+        },
+        {
+          "text": "non",
+          "start": 60.708,
+          "end": 60.848
+        },
+        {
+          "text": "lineari",
+          "start": 60.888,
+          "end": 61.288
+        },
+        {
+          "text": "complesse.",
+          "start": 61.328,
+          "end": 61.868
+        }
+      ]
+    },
+    {
+      "start": 62.708,
+      "end": 64.768,
+      "text": "In tabella vedi i quattro grandi paradigmi:",
+      "words": [
+        {
+          "text": "In",
+          "start": 62.708,
+          "end": 62.788
+        },
+        {
+          "text": "tabella",
+          "start": 62.828,
+          "end": 63.168
+        },
+        {
+          "text": "vedi",
+          "start": 63.208,
+          "end": 63.428
+        },
+        {
+          "text": "i",
+          "start": 63.468,
+          "end": 63.508
+        },
+        {
+          "text": "quattro",
+          "start": 63.568,
+          "end": 63.928
+        },
+        {
+          "text": "grandi",
+          "start": 63.968,
+          "end": 64.248
+        },
+        {
+          "text": "paradigmi:",
+          "start": 64.288,
+          "end": 64.768
+        }
+      ]
+    },
+    {
+      "start": 65.448,
+      "end": 69.149,
+      "text": "simbolici a regole con H discreto — congiunzioni, alberi,",
+      "words": [
+        {
+          "text": "simbolici",
+          "start": 65.448,
+          "end": 66.108
+        },
+        {
+          "text": "a",
+          "start": 66.248,
+          "end": 66.28800000000001
+        },
+        {
+          "text": "regole",
+          "start": 66.368,
+          "end": 66.728
+        },
+        {
+          "text": "con",
+          "start": 66.768,
+          "end": 66.888
+        },
+        {
+          "text": "H",
+          "start": 67.048,
+          "end": 67.08800000000001
+        },
+        {
+          "text": "discreto",
+          "start": 67.148,
+          "end": 67.649
+        },
+        {
+          "text": "—",
+          "start": 67.649,
+          "end": 67.799
+        },
+        {
+          "text": "congiunzioni,",
+          "start": 67.889,
+          "end": 68.589
+        },
+        {
+          "text": "alberi,",
+          "start": 68.789,
+          "end": 69.149
+        }
+      ]
+    },
+    {
+      "start": 69.189,
+      "end": 71.449,
+      "text": "grammatiche induttive, evolutivi, ILP;",
+      "words": [
+        {
+          "text": "grammatiche",
+          "start": 69.189,
+          "end": 69.669
+        },
+        {
+          "text": "induttive,",
+          "start": 69.709,
+          "end": 70.269
+        },
+        {
+          "text": "evolutivi,",
+          "start": 70.369,
+          "end": 71.009
+        },
+        {
+          "text": "ILP;",
+          "start": 71.089,
+          "end": 71.449
+        }
+      ]
+    },
+    {
+      "start": 72.249,
+      "end": 77.13,
+      "text": "sub-simbolici con H continuo — regressione lineare, analisi discriminante lineare,",
+      "words": [
+        {
+          "text": "sub-simbolici",
+          "start": 72.249,
+          "end": 73.049
+        },
+        {
+          "text": "con",
+          "start": 73.109,
+          "end": 73.229
+        },
+        {
+          "text": "H",
+          "start": 73.369,
+          "end": 73.409
+        },
+        {
+          "text": "continuo",
+          "start": 73.469,
+          "end": 73.969
+        },
+        {
+          "text": "—",
+          "start": 73.969,
+          "end": 74.119
+        },
+        {
+          "text": "regressione",
+          "start": 74.349,
+          "end": 74.829
+        },
+        {
+          "text": "lineare,",
+          "start": 74.889,
+          "end": 75.37
+        },
+        {
+          "text": "analisi",
+          "start": 75.49,
+          "end": 75.91
+        },
+        {
+          "text": "discriminante",
+          "start": 75.95,
+          "end": 76.59
+        },
+        {
+          "text": "lineare,",
+          "start": 76.65,
+          "end": 77.13
+        }
+      ]
+    },
+    {
+      "start": 77.65,
+      "end": 80.81,
+      "text": "LTU, reti neurali, metodi kernel e SVM;",
+      "words": [
+        {
+          "text": "LTU,",
+          "start": 77.65,
+          "end": 78.03
+        },
+        {
+          "text": "reti",
+          "start": 78.33,
+          "end": 78.53
+        },
+        {
+          "text": "neurali,",
+          "start": 78.57,
+          "end": 79.01
+        },
+        {
+          "text": "metodi",
+          "start": 79.13,
+          "end": 79.51
+        },
+        {
+          "text": "kernel",
+          "start": 79.55,
+          "end": 79.95
+        },
+        {
+          "text": "e",
+          "start": 80.09,
+          "end": 80.13000000000001
+        },
+        {
+          "text": "SVM;",
+          "start": 80.35,
+          "end": 80.81
+        }
+      ]
+    },
+    {
+      "start": 81.61,
+      "end": 86.471,
+      "text": "probabilistici generativi — modelli parametrici, Naïve Bayes, reti bayesiane,",
+      "words": [
+        {
+          "text": "probabilistici",
+          "start": 81.61,
+          "end": 82.45
+        },
+        {
+          "text": "generativi",
+          "start": 82.51,
+          "end": 83.111
+        },
+        {
+          "text": "—",
+          "start": 83.111,
+          "end": 83.261
+        },
+        {
+          "text": "modelli",
+          "start": 83.311,
+          "end": 83.671
+        },
+        {
+          "text": "parametrici,",
+          "start": 83.731,
+          "end": 84.451
+        },
+        {
+          "text": "Naïve",
+          "start": 84.611,
+          "end": 84.911
+        },
+        {
+          "text": "Bayes,",
+          "start": 84.951,
+          "end": 85.411
+        },
+        {
+          "text": "reti",
+          "start": 85.611,
+          "end": 85.811
+        },
+        {
+          "text": "bayesiane,",
+          "start": 85.871,
+          "end": 86.471
+        }
+      ]
+    },
+    {
+      "start": 86.551,
+      "end": 91.412,
+      "text": "Markov, HMM; e instance-based come il K-nearest neighbors.",
+      "words": [
+        {
+          "text": "Markov,",
+          "start": 86.551,
+          "end": 87.031
+        },
+        {
+          "text": "HMM;",
+          "start": 87.411,
+          "end": 87.931
+        },
+        {
+          "text": "e",
+          "start": 88.611,
+          "end": 88.65100000000001
+        },
+        {
+          "text": "instance-based",
+          "start": 88.751,
+          "end": 89.611
+        },
+        {
+          "text": "come",
+          "start": 89.751,
+          "end": 89.991
+        },
+        {
+          "text": "il",
+          "start": 90.191,
+          "end": 90.311
+        },
+        {
+          "text": "K-nearest",
+          "start": 90.431,
+          "end": 90.972
+        },
+        {
+          "text": "neighbors.",
+          "start": 90.992,
+          "end": 91.412
+        }
+      ]
+    },
+    {
+      "start": 92.412,
+      "end": 97.252,
+      "text": "Vale il celebre teorema No Free Lunch: non esiste un metodo universalmente migliore su tutti",
+      "words": [
+        {
+          "text": "Vale",
+          "start": 92.412,
+          "end": 92.592
+        },
+        {
+          "text": "il",
+          "start": 92.632,
+          "end": 92.692
+        },
+        {
+          "text": "celebre",
+          "start": 92.712,
+          "end": 93.052
+        },
+        {
+          "text": "teorema",
+          "start": 93.112,
+          "end": 93.472
+        },
+        {
+          "text": "No",
+          "start": 93.712,
+          "end": 93.832
+        },
+        {
+          "text": "Free",
+          "start": 93.932,
+          "end": 94.112
+        },
+        {
+          "text": "Lunch:",
+          "start": 94.132,
+          "end": 94.452
+        },
+        {
+          "text": "non",
+          "start": 94.752,
+          "end": 94.872
+        },
+        {
+          "text": "esiste",
+          "start": 94.912,
+          "end": 95.212
+        },
+        {
+          "text": "un",
+          "start": 95.252,
+          "end": 95.312
+        },
+        {
+          "text": "metodo",
+          "start": 95.352,
+          "end": 95.672
+        },
+        {
+          "text": "universalmente",
+          "start": 95.732,
+          "end": 96.452
+        },
+        {
+          "text": "migliore",
+          "start": 96.492,
+          "end": 96.812
+        },
+        {
+          "text": "su",
+          "start": 96.872,
+          "end": 96.952
+        },
+        {
+          "text": "tutti",
+          "start": 97.012,
+          "end": 97.252
+        }
+      ]
+    },
+    {
+      "start": 97.292,
+      "end": 99.173,
+      "text": "i problemi senza conoscenza a priori;",
+      "words": [
+        {
+          "text": "i",
+          "start": 97.292,
+          "end": 97.33200000000001
+        },
+        {
+          "text": "problemi",
+          "start": 97.332,
+          "end": 97.832
+        },
+        {
+          "text": "senza",
+          "start": 98.012,
+          "end": 98.312
+        },
+        {
+          "text": "conoscenza",
+          "start": 98.352,
+          "end": 98.792
+        },
+        {
+          "text": "a",
+          "start": 98.812,
+          "end": 98.852
+        },
+        {
+          "text": "priori;",
+          "start": 98.832,
+          "end": 99.173
+        }
+      ]
+    },
+    {
+      "start": 99.813,
+      "end": 102.293,
+      "text": "ogni guadagno su certi problemi si paga su altri.",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 99.813,
+          "end": 100.033
+        },
+        {
+          "text": "guadagno",
+          "start": 100.093,
+          "end": 100.433
+        },
+        {
+          "text": "su",
+          "start": 100.473,
+          "end": 100.533
+        },
+        {
+          "text": "certi",
+          "start": 100.593,
+          "end": 100.813
+        },
+        {
+          "text": "problemi",
+          "start": 100.853,
+          "end": 101.253
+        },
+        {
+          "text": "si",
+          "start": 101.433,
+          "end": 101.513
+        },
+        {
+          "text": "paga",
+          "start": 101.573,
+          "end": 101.773
+        },
+        {
+          "text": "su",
+          "start": 101.833,
+          "end": 101.893
+        },
+        {
+          "text": "altri.",
+          "start": 102.013,
+          "end": 102.293
+        }
+      ]
+    },
+    {
+      "start": 102.913,
+      "end": 106.113,
+      "text": "Per questo servono più modelli e criteri critici per confrontarli:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 102.913,
+          "end": 103.013
+        },
+        {
+          "text": "questo",
+          "start": 103.033,
+          "end": 103.253
+        },
+        {
+          "text": "servono",
+          "start": 103.313,
+          "end": 103.633
+        },
+        {
+          "text": "più",
+          "start": 103.713,
+          "end": 103.833
+        },
+        {
+          "text": "modelli",
+          "start": 103.913,
+          "end": 104.313
+        },
+        {
+          "text": "e",
+          "start": 104.373,
+          "end": 104.41300000000001
+        },
+        {
+          "text": "criteri",
+          "start": 104.453,
+          "end": 104.793
+        },
+        {
+          "text": "critici",
+          "start": 104.853,
+          "end": 105.233
+        },
+        {
+          "text": "per",
+          "start": 105.273,
+          "end": 105.373
+        },
+        {
+          "text": "confrontarli:",
+          "start": 105.413,
+          "end": 106.113
+        }
+      ]
+    },
+    {
+      "start": 106.673,
+      "end": 110.094,
+      "text": "differiscono per flessibilità e strumenti di controllo della complessità.",
+      "words": [
+        {
+          "text": "differiscono",
+          "start": 106.673,
+          "end": 107.254
+        },
+        {
+          "text": "per",
+          "start": 107.294,
+          "end": 107.414
+        },
+        {
+          "text": "flessibilità",
+          "start": 107.474,
+          "end": 108.134
+        },
+        {
+          "text": "e",
+          "start": 108.314,
+          "end": 108.354
+        },
+        {
+          "text": "strumenti",
+          "start": 108.394,
+          "end": 108.794
+        },
+        {
+          "text": "di",
+          "start": 108.834,
+          "end": 108.894
+        },
+        {
+          "text": "controllo",
+          "start": 108.934,
+          "end": 109.334
+        },
+        {
+          "text": "della",
+          "start": 109.374,
+          "end": 109.534
+        },
+        {
+          "text": "complessità.",
+          "start": 109.574,
+          "end": 110.094
+        }
+      ]
+    },
+    {
+      "start": 110.854,
+      "end": 116.495,
+      "text": "Da qui nasce il filo conduttore del corso: modelli flessibili più principi per controllarne la",
+      "words": [
+        {
+          "text": "Da",
+          "start": 110.854,
+          "end": 110.914
+        },
+        {
+          "text": "qui",
+          "start": 110.974,
+          "end": 111.094
+        },
+        {
+          "text": "nasce",
+          "start": 111.134,
+          "end": 111.374
+        },
+        {
+          "text": "il",
+          "start": 111.414,
+          "end": 111.474
+        },
+        {
+          "text": "filo",
+          "start": 111.514,
+          "end": 111.694
+        },
+        {
+          "text": "conduttore",
+          "start": 111.734,
+          "end": 112.174
+        },
+        {
+          "text": "del",
+          "start": 112.194,
+          "end": 112.314
+        },
+        {
+          "text": "corso:",
+          "start": 112.374,
+          "end": 112.754
+        },
+        {
+          "text": "modelli",
+          "start": 113.174,
+          "end": 113.654
+        },
+        {
+          "text": "flessibili",
+          "start": 113.714,
+          "end": 114.374
+        },
+        {
+          "text": "più",
+          "start": 114.735,
+          "end": 114.855
+        },
+        {
+          "text": "principi",
+          "start": 114.955,
+          "end": 115.535
+        },
+        {
+          "text": "per",
+          "start": 115.575,
+          "end": 115.695
+        },
+        {
+          "text": "controllarne",
+          "start": 115.735,
+          "end": 116.355
+        },
+        {
+          "text": "la",
+          "start": 116.435,
+          "end": 116.495
+        }
+      ]
+    },
+    {
+      "start": 116.555,
+      "end": 119.455,
+      "text": "complessità, da cui dipende la generalizzazione.",
+      "words": [
+        {
+          "text": "complessità,",
+          "start": 116.555,
+          "end": 117.195
+        },
+        {
+          "text": "da",
+          "start": 117.575,
+          "end": 117.655
+        },
+        {
+          "text": "cui",
+          "start": 117.715,
+          "end": 117.835
+        },
+        {
+          "text": "dipende",
+          "start": 117.875,
+          "end": 118.275
+        },
+        {
+          "text": "la",
+          "start": 118.415,
+          "end": 118.495
+        },
+        {
+          "text": "generalizzazione.",
+          "start": 118.535,
+          "end": 119.455
+        }
+      ]
+    },
+    {
+      "start": 120.255,
+      "end": 126.85600000000001,
+      "text": "Il quarto ingrediente è l'algoritmo di apprendimento, che esegue una ricerca euristica nello spazio H",
+      "words": [
+        {
+          "text": "Il",
+          "start": 120.255,
+          "end": 120.335
+        },
+        {
+          "text": "quarto",
+          "start": 120.395,
+          "end": 120.695
+        },
+        {
+          "text": "ingrediente",
+          "start": 120.735,
+          "end": 121.355
+        },
+        {
+          "text": "è",
+          "start": 121.555,
+          "end": 121.59500000000001
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 121.655,
+          "end": 122.355
+        },
+        {
+          "text": "di",
+          "start": 122.475,
+          "end": 122.535
+        },
+        {
+          "text": "apprendimento,",
+          "start": 122.575,
+          "end": 123.336
+        },
+        {
+          "text": "che",
+          "start": 123.836,
+          "end": 123.916
+        },
+        {
+          "text": "esegue",
+          "start": 123.976,
+          "end": 124.316
+        },
+        {
+          "text": "una",
+          "start": 124.356,
+          "end": 124.456
+        },
+        {
+          "text": "ricerca",
+          "start": 124.516,
+          "end": 124.916
+        },
+        {
+          "text": "euristica",
+          "start": 124.976,
+          "end": 125.576
+        },
+        {
+          "text": "nello",
+          "start": 125.636,
+          "end": 125.816
+        },
+        {
+          "text": "spazio",
+          "start": 125.876,
+          "end": 126.316
+        },
+        {
+          "text": "H",
+          "start": 126.816,
+          "end": 126.85600000000001
+        }
+      ]
+    },
+    {
+      "start": 126.856,
+      "end": 132.577,
+      "text": "— spesso locale, come nel disegno a destra — dall'ipotesi iniziale verso l'ipotesi h stella",
+      "words": [
+        {
+          "text": "—",
+          "start": 126.856,
+          "end": 127.006
+        },
+        {
+          "text": "spesso",
+          "start": 127.176,
+          "end": 127.496
+        },
+        {
+          "text": "locale,",
+          "start": 127.536,
+          "end": 127.936
+        },
+        {
+          "text": "come",
+          "start": 128.036,
+          "end": 128.216
+        },
+        {
+          "text": "nel",
+          "start": 128.236,
+          "end": 128.356
+        },
+        {
+          "text": "disegno",
+          "start": 128.376,
+          "end": 128.696
+        },
+        {
+          "text": "a",
+          "start": 128.736,
+          "end": 128.776
+        },
+        {
+          "text": "destra",
+          "start": 128.796,
+          "end": 129.156
+        },
+        {
+          "text": "—",
+          "start": 129.156,
+          "end": 129.306
+        },
+        {
+          "text": "dall'ipotesi",
+          "start": 129.636,
+          "end": 130.216
+        },
+        {
+          "text": "iniziale",
+          "start": 130.276,
+          "end": 130.797
+        },
+        {
+          "text": "verso",
+          "start": 130.897,
+          "end": 131.177
+        },
+        {
+          "text": "l'ipotesi",
+          "start": 131.197,
+          "end": 131.717
+        },
+        {
+          "text": "h",
+          "start": 132.017,
+          "end": 132.057
+        },
+        {
+          "text": "stella",
+          "start": 132.177,
+          "end": 132.577
+        }
+      ]
+    },
+    {
+      "start": 132.877,
+      "end": 134.977,
+      "text": "compatibile con i dati a errore minimo,",
+      "words": [
+        {
+          "text": "compatibile",
+          "start": 132.877,
+          "end": 133.417
+        },
+        {
+          "text": "con",
+          "start": 133.457,
+          "end": 133.577
+        },
+        {
+          "text": "i",
+          "start": 133.617,
+          "end": 133.657
+        },
+        {
+          "text": "dati",
+          "start": 133.677,
+          "end": 133.937
+        },
+        {
+          "text": "a",
+          "start": 134.117,
+          "end": 134.157
+        },
+        {
+          "text": "errore",
+          "start": 134.277,
+          "end": 134.597
+        },
+        {
+          "text": "minimo,",
+          "start": 134.657,
+          "end": 134.977
+        }
+      ]
+    },
+    {
+      "start": 135.537,
+      "end": 137.537,
+      "text": "adattando i parametri liberi del modello.",
+      "words": [
+        {
+          "text": "adattando",
+          "start": 135.537,
+          "end": 135.937
+        },
+        {
+          "text": "i",
+          "start": 135.977,
+          "end": 136.017
+        },
+        {
+          "text": "parametri",
+          "start": 136.037,
+          "end": 136.477
+        },
+        {
+          "text": "liberi",
+          "start": 136.537,
+          "end": 136.877
+        },
+        {
+          "text": "del",
+          "start": 136.917,
+          "end": 137.057
+        },
+        {
+          "text": "modello.",
+          "start": 137.097,
+          "end": 137.537
+        }
+      ]
+    },
+    {
+      "start": 138.517,
+      "end": 144.238,
+      "text": "Nelle diverse discipline si chiama inferenza in statistica, abduzione o induzione in logica,",
+      "words": [
+        {
+          "text": "Nelle",
+          "start": 138.517,
+          "end": 138.697
+        },
+        {
+          "text": "diverse",
+          "start": 138.738,
+          "end": 139.058
+        },
+        {
+          "text": "discipline",
+          "start": 139.078,
+          "end": 139.538
+        },
+        {
+          "text": "si",
+          "start": 139.578,
+          "end": 139.658
+        },
+        {
+          "text": "chiama",
+          "start": 139.698,
+          "end": 139.958
+        },
+        {
+          "text": "inferenza",
+          "start": 140.198,
+          "end": 140.878
+        },
+        {
+          "text": "in",
+          "start": 141.058,
+          "end": 141.138
+        },
+        {
+          "text": "statistica,",
+          "start": 141.178,
+          "end": 141.798
+        },
+        {
+          "text": "abduzione",
+          "start": 142.198,
+          "end": 142.918
+        },
+        {
+          "text": "o",
+          "start": 143.078,
+          "end": 143.118
+        },
+        {
+          "text": "induzione",
+          "start": 143.198,
+          "end": 143.678
+        },
+        {
+          "text": "in",
+          "start": 143.718,
+          "end": 143.778
+        },
+        {
+          "text": "logica,",
+          "start": 143.818,
+          "end": 144.238
+        }
+      ]
+    },
+    {
+      "start": 144.638,
+      "end": 149.579,
+      "text": "adattamento in biologia, ottimizzazione in matematica, training nelle reti neurali.",
+      "words": [
+        {
+          "text": "adattamento",
+          "start": 144.638,
+          "end": 145.158
+        },
+        {
+          "text": "in",
+          "start": 145.178,
+          "end": 145.238
+        },
+        {
+          "text": "biologia,",
+          "start": 145.258,
+          "end": 145.758
+        },
+        {
+          "text": "ottimizzazione",
+          "start": 146.158,
+          "end": 146.879
+        },
+        {
+          "text": "in",
+          "start": 146.919,
+          "end": 146.979
+        },
+        {
+          "text": "matematica,",
+          "start": 146.999,
+          "end": 147.639
+        },
+        {
+          "text": "training",
+          "start": 147.979,
+          "end": 148.459
+        },
+        {
+          "text": "nelle",
+          "start": 148.659,
+          "end": 148.839
+        },
+        {
+          "text": "reti",
+          "start": 148.879,
+          "end": 149.079
+        },
+        {
+          "text": "neurali.",
+          "start": 149.119,
+          "end": 149.579
+        }
+      ]
+    },
+    {
+      "start": 150.279,
+      "end": 154.439,
+      "text": "Poiché H può non contenere tutto e la ricerca non può essere esaustiva,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 150.279,
+          "end": 150.559
+        },
+        {
+          "text": "H",
+          "start": 150.819,
+          "end": 150.859
+        },
+        {
+          "text": "può",
+          "start": 150.999,
+          "end": 151.099
+        },
+        {
+          "text": "non",
+          "start": 151.219,
+          "end": 151.339
+        },
+        {
+          "text": "contenere",
+          "start": 151.379,
+          "end": 151.859
+        },
+        {
+          "text": "tutto",
+          "start": 151.919,
+          "end": 152.279
+        },
+        {
+          "text": "e",
+          "start": 152.459,
+          "end": 152.499
+        },
+        {
+          "text": "la",
+          "start": 152.579,
+          "end": 152.639
+        },
+        {
+          "text": "ricerca",
+          "start": 152.679,
+          "end": 153.099
+        },
+        {
+          "text": "non",
+          "start": 153.179,
+          "end": 153.319
+        },
+        {
+          "text": "può",
+          "start": 153.359,
+          "end": 153.459
+        },
+        {
+          "text": "essere",
+          "start": 153.539,
+          "end": 153.819
+        },
+        {
+          "text": "esaustiva,",
+          "start": 153.859,
+          "end": 154.439
+        }
+      ]
+    },
+    {
+      "start": 154.86,
+      "end": 158.2,
+      "text": "servono assunzioni: è il ruolo del bias induttivo.",
+      "words": [
+        {
+          "text": "servono",
+          "start": 154.86,
+          "end": 155.16
+        },
+        {
+          "text": "assunzioni:",
+          "start": 155.2,
+          "end": 155.78
+        },
+        {
+          "text": "è",
+          "start": 156.28,
+          "end": 156.32
+        },
+        {
+          "text": "il",
+          "start": 156.38,
+          "end": 156.44
+        },
+        {
+          "text": "ruolo",
+          "start": 156.48,
+          "end": 156.8
+        },
+        {
+          "text": "del",
+          "start": 156.92,
+          "end": 157.06
+        },
+        {
+          "text": "bias",
+          "start": 157.12,
+          "end": 157.5
+        },
+        {
+          "text": "induttivo.",
+          "start": 157.64,
+          "end": 158.2
+        }
+      ]
+    }
+  ]
+}

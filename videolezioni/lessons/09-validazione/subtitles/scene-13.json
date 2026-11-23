@@ -1,0 +1,1321 @@
+{
+  "duration": 86.938,
+  "segments": [
+    {
+      "start": 0.619,
+      "end": 2.879,
+      "text": "Quale schema di cross-validation conviene scegliere?",
+      "words": [
+        {
+          "text": "Quale",
+          "start": 0.619,
+          "end": 0.839
+        },
+        {
+          "text": "schema",
+          "start": 0.899,
+          "end": 1.179
+        },
+        {
+          "text": "di",
+          "start": 1.219,
+          "end": 1.279
+        },
+        {
+          "text": "cross-validation",
+          "start": 1.319,
+          "end": 2.059
+        },
+        {
+          "text": "conviene",
+          "start": 2.099,
+          "end": 2.399
+        },
+        {
+          "text": "scegliere?",
+          "start": 2.459,
+          "end": 2.879
+        }
+      ]
+    },
+    {
+      "start": 3.319,
+      "end": 5.579,
+      "text": "Confrontiamo pro e contro nella tabella a sinistra.",
+      "words": [
+        {
+          "text": "Confrontiamo",
+          "start": 3.319,
+          "end": 3.859
+        },
+        {
+          "text": "pro",
+          "start": 3.939,
+          "end": 4.059
+        },
+        {
+          "text": "e",
+          "start": 4.119,
+          "end": 4.159
+        },
+        {
+          "text": "contro",
+          "start": 4.179,
+          "end": 4.499
+        },
+        {
+          "text": "nella",
+          "start": 4.559,
+          "end": 4.739
+        },
+        {
+          "text": "tabella",
+          "start": 4.779,
+          "end": 5.079
+        },
+        {
+          "text": "a",
+          "start": 5.099,
+          "end": 5.139
+        },
+        {
+          "text": "sinistra.",
+          "start": 5.159,
+          "end": 5.579
+        }
+      ]
+    },
+    {
+      "start": 6.399,
+      "end": 11.6,
+      "text": "L'hold-out è economico ma soffre di alta varianza: la stima può essere fortunata o sfortunata",
+      "words": [
+        {
+          "text": "L'hold-out",
+          "start": 6.399,
+          "end": 6.899
+        },
+        {
+          "text": "è",
+          "start": 7.079,
+          "end": 7.119
+        },
+        {
+          "text": "economico",
+          "start": 7.199,
+          "end": 7.759
+        },
+        {
+          "text": "ma",
+          "start": 7.799,
+          "end": 7.859
+        },
+        {
+          "text": "soffre",
+          "start": 7.919,
+          "end": 8.199
+        },
+        {
+          "text": "di",
+          "start": 8.239,
+          "end": 8.299
+        },
+        {
+          "text": "alta",
+          "start": 8.339,
+          "end": 8.52
+        },
+        {
+          "text": "varianza:",
+          "start": 8.56,
+          "end": 9.06
+        },
+        {
+          "text": "la",
+          "start": 9.44,
+          "end": 9.5
+        },
+        {
+          "text": "stima",
+          "start": 9.52,
+          "end": 9.74
+        },
+        {
+          "text": "può",
+          "start": 9.78,
+          "end": 9.86
+        },
+        {
+          "text": "essere",
+          "start": 9.92,
+          "end": 10.14
+        },
+        {
+          "text": "fortunata",
+          "start": 10.18,
+          "end": 10.7
+        },
+        {
+          "text": "o",
+          "start": 10.84,
+          "end": 10.88
+        },
+        {
+          "text": "sfortunata",
+          "start": 10.98,
+          "end": 11.6
+        }
+      ]
+    },
+    {
+      "start": 11.66,
+      "end": 12.56,
+      "text": "a seconda dello split.",
+      "words": [
+        {
+          "text": "a",
+          "start": 11.66,
+          "end": 11.7
+        },
+        {
+          "text": "seconda",
+          "start": 11.74,
+          "end": 12.02
+        },
+        {
+          "text": "dello",
+          "start": 12.06,
+          "end": 12.22
+        },
+        {
+          "text": "split.",
+          "start": 12.24,
+          "end": 12.56
+        }
+      ]
+    },
+    {
+      "start": 13.26,
+      "end": 17.54,
+      "text": "Il leave-one-out — cioè K-fold con K uguale a l — non spreca dati,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 13.26,
+          "end": 13.34
+        },
+        {
+          "text": "leave-one-out",
+          "start": 13.38,
+          "end": 14.1
+        },
+        {
+          "text": "—",
+          "start": 14.1,
+          "end": 14.25
+        },
+        {
+          "text": "cioè",
+          "start": 14.38,
+          "end": 14.54
+        },
+        {
+          "text": "K-fold",
+          "start": 14.66,
+          "end": 15.16
+        },
+        {
+          "text": "con",
+          "start": 15.26,
+          "end": 15.4
+        },
+        {
+          "text": "K",
+          "start": 15.48,
+          "end": 15.52
+        },
+        {
+          "text": "uguale",
+          "start": 15.82,
+          "end": 16.06
+        },
+        {
+          "text": "a",
+          "start": 16.14,
+          "end": 16.18
+        },
+        {
+          "text": "l",
+          "start": 16.26,
+          "end": 16.3
+        },
+        {
+          "text": "—",
+          "start": 16.3,
+          "end": 16.45
+        },
+        {
+          "text": "non",
+          "start": 16.78,
+          "end": 16.92
+        },
+        {
+          "text": "spreca",
+          "start": 16.94,
+          "end": 17.24
+        },
+        {
+          "text": "dati,",
+          "start": 17.28,
+          "end": 17.54
+        }
+      ]
+    },
+    {
+      "start": 17.64,
+      "end": 20.301,
+      "text": "ma è costosissimo e può avere comportamenti anomali.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 17.64,
+          "end": 17.7
+        },
+        {
+          "text": "è",
+          "start": 17.761,
+          "end": 17.801
+        },
+        {
+          "text": "costosissimo",
+          "start": 17.861,
+          "end": 18.661
+        },
+        {
+          "text": "e",
+          "start": 18.841,
+          "end": 18.881
+        },
+        {
+          "text": "può",
+          "start": 18.921,
+          "end": 19.001
+        },
+        {
+          "text": "avere",
+          "start": 19.041,
+          "end": 19.241
+        },
+        {
+          "text": "comportamenti",
+          "start": 19.281,
+          "end": 19.901
+        },
+        {
+          "text": "anomali.",
+          "start": 19.921,
+          "end": 20.301
+        }
+      ]
+    },
+    {
+      "start": 21.001,
+      "end": 25.321,
+      "text": "La tre-fold è leggermente meglio dell'hold-out ma spreca ancora un terzo dei dati.",
+      "words": [
+        {
+          "text": "La",
+          "start": 21.001,
+          "end": 21.081
+        },
+        {
+          "text": "tre-fold",
+          "start": 21.141,
+          "end": 21.661
+        },
+        {
+          "text": "è",
+          "start": 21.901,
+          "end": 21.941
+        },
+        {
+          "text": "leggermente",
+          "start": 22.041,
+          "end": 22.581
+        },
+        {
+          "text": "meglio",
+          "start": 22.621,
+          "end": 22.861
+        },
+        {
+          "text": "dell'hold-out",
+          "start": 22.901,
+          "end": 23.561
+        },
+        {
+          "text": "ma",
+          "start": 23.681,
+          "end": 23.741
+        },
+        {
+          "text": "spreca",
+          "start": 23.801,
+          "end": 24.061
+        },
+        {
+          "text": "ancora",
+          "start": 24.121,
+          "end": 24.401
+        },
+        {
+          "text": "un",
+          "start": 24.441,
+          "end": 24.501
+        },
+        {
+          "text": "terzo",
+          "start": 24.541,
+          "end": 24.841
+        },
+        {
+          "text": "dei",
+          "start": 24.881,
+          "end": 24.981
+        },
+        {
+          "text": "dati.",
+          "start": 25.021,
+          "end": 25.321
+        }
+      ]
+    },
+    {
+      "start": 25.821,
+      "end": 30.142,
+      "text": "La cinque-fold o dieci-fold CV spreca solo il dieci per cento dei dati e costa",
+      "words": [
+        {
+          "text": "La",
+          "start": 25.821,
+          "end": 25.901
+        },
+        {
+          "text": "cinque-fold",
+          "start": 25.981,
+          "end": 26.541
+        },
+        {
+          "text": "o",
+          "start": 26.561,
+          "end": 26.601
+        },
+        {
+          "text": "dieci-fold",
+          "start": 26.641,
+          "end": 27.122
+        },
+        {
+          "text": "CV",
+          "start": 27.242,
+          "end": 27.462
+        },
+        {
+          "text": "spreca",
+          "start": 28.002,
+          "end": 28.302
+        },
+        {
+          "text": "solo",
+          "start": 28.382,
+          "end": 28.562
+        },
+        {
+          "text": "il",
+          "start": 28.582,
+          "end": 28.642
+        },
+        {
+          "text": "dieci",
+          "start": 28.702,
+          "end": 28.942
+        },
+        {
+          "text": "per",
+          "start": 28.982,
+          "end": 29.102
+        },
+        {
+          "text": "cento",
+          "start": 29.142,
+          "end": 29.362
+        },
+        {
+          "text": "dei",
+          "start": 29.402,
+          "end": 29.502
+        },
+        {
+          "text": "dati",
+          "start": 29.542,
+          "end": 29.762
+        },
+        {
+          "text": "e",
+          "start": 29.822,
+          "end": 29.862
+        },
+        {
+          "text": "costa",
+          "start": 29.902,
+          "end": 30.142
+        }
+      ]
+    },
+    {
+      "start": 30.222,
+      "end": 35.382,
+      "text": "dieci volte invece di l volte: è il miglior compromesso tra bias e varianza della",
+      "words": [
+        {
+          "text": "dieci",
+          "start": 30.222,
+          "end": 30.522
+        },
+        {
+          "text": "volte",
+          "start": 30.562,
+          "end": 30.982
+        },
+        {
+          "text": "invece",
+          "start": 31.242,
+          "end": 31.542
+        },
+        {
+          "text": "di",
+          "start": 31.582,
+          "end": 31.642
+        },
+        {
+          "text": "l",
+          "start": 31.982,
+          "end": 32.022
+        },
+        {
+          "text": "volte:",
+          "start": 32.102,
+          "end": 32.482
+        },
+        {
+          "text": "è",
+          "start": 33.002,
+          "end": 33.042
+        },
+        {
+          "text": "il",
+          "start": 33.122,
+          "end": 33.182
+        },
+        {
+          "text": "miglior",
+          "start": 33.222,
+          "end": 33.482
+        },
+        {
+          "text": "compromesso",
+          "start": 33.542,
+          "end": 33.982
+        },
+        {
+          "text": "tra",
+          "start": 34.062,
+          "end": 34.182
+        },
+        {
+          "text": "bias",
+          "start": 34.282,
+          "end": 34.682
+        },
+        {
+          "text": "e",
+          "start": 34.722,
+          "end": 34.762
+        },
+        {
+          "text": "varianza",
+          "start": 34.802,
+          "end": 35.162
+        },
+        {
+          "text": "della",
+          "start": 35.202,
+          "end": 35.382
+        }
+      ]
+    },
+    {
+      "start": 35.442,
+      "end": 35.722,
+      "text": "stima.",
+      "words": [
+        {
+          "text": "stima.",
+          "start": 35.442,
+          "end": 35.722
+        }
+      ]
+    },
+    {
+      "start": 36.703,
+      "end": 39.783,
+      "text": "Vediamo tre esempi concreti di model selection a destra.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 36.703,
+          "end": 37.003
+        },
+        {
+          "text": "tre",
+          "start": 37.083,
+          "end": 37.183
+        },
+        {
+          "text": "esempi",
+          "start": 37.243,
+          "end": 37.583
+        },
+        {
+          "text": "concreti",
+          "start": 37.623,
+          "end": 38.103
+        },
+        {
+          "text": "di",
+          "start": 38.183,
+          "end": 38.243
+        },
+        {
+          "text": "model",
+          "start": 38.283,
+          "end": 38.503
+        },
+        {
+          "text": "selection",
+          "start": 38.563,
+          "end": 39.063
+        },
+        {
+          "text": "a",
+          "start": 39.303,
+          "end": 39.343
+        },
+        {
+          "text": "destra.",
+          "start": 39.423,
+          "end": 39.783
+        }
+      ]
+    },
+    {
+      "start": 40.303,
+      "end": 45.143,
+      "text": "Confronto tra modelli diversi: si sceglie la famiglia con il miglior errore di dieci-fold CV",
+      "words": [
+        {
+          "text": "Confronto",
+          "start": 40.303,
+          "end": 40.803
+        },
+        {
+          "text": "tra",
+          "start": 40.863,
+          "end": 40.963
+        },
+        {
+          "text": "modelli",
+          "start": 41.023,
+          "end": 41.283
+        },
+        {
+          "text": "diversi:",
+          "start": 41.323,
+          "end": 41.783
+        },
+        {
+          "text": "si",
+          "start": 42.243,
+          "end": 42.323
+        },
+        {
+          "text": "sceglie",
+          "start": 42.363,
+          "end": 42.643
+        },
+        {
+          "text": "la",
+          "start": 42.683,
+          "end": 42.743
+        },
+        {
+          "text": "famiglia",
+          "start": 42.783,
+          "end": 43.183
+        },
+        {
+          "text": "con",
+          "start": 43.263,
+          "end": 43.383
+        },
+        {
+          "text": "il",
+          "start": 43.443,
+          "end": 43.503
+        },
+        {
+          "text": "miglior",
+          "start": 43.543,
+          "end": 43.803
+        },
+        {
+          "text": "errore",
+          "start": 43.863,
+          "end": 44.163
+        },
+        {
+          "text": "di",
+          "start": 44.223,
+          "end": 44.283
+        },
+        {
+          "text": "dieci-fold",
+          "start": 44.363,
+          "end": 44.843
+        },
+        {
+          "text": "CV",
+          "start": 44.963,
+          "end": 45.143
+        }
+      ]
+    },
+    {
+      "start": 45.704,
+      "end": 49.924,
+      "text": "e la si riaddestra su tutti i dati — guardando solo l'errore di validazione,",
+      "words": [
+        {
+          "text": "e",
+          "start": 45.704,
+          "end": 45.744
+        },
+        {
+          "text": "la",
+          "start": 45.904,
+          "end": 45.984
+        },
+        {
+          "text": "si",
+          "start": 46.064,
+          "end": 46.144
+        },
+        {
+          "text": "riaddestra",
+          "start": 46.184,
+          "end": 46.724
+        },
+        {
+          "text": "su",
+          "start": 46.784,
+          "end": 46.864
+        },
+        {
+          "text": "tutti",
+          "start": 46.944,
+          "end": 47.164
+        },
+        {
+          "text": "i",
+          "start": 47.204,
+          "end": 47.244
+        },
+        {
+          "text": "dati",
+          "start": 47.244,
+          "end": 47.524
+        },
+        {
+          "text": "—",
+          "start": 47.524,
+          "end": 47.674
+        },
+        {
+          "text": "guardando",
+          "start": 48.004,
+          "end": 48.364
+        },
+        {
+          "text": "solo",
+          "start": 48.444,
+          "end": 48.624
+        },
+        {
+          "text": "l'errore",
+          "start": 48.664,
+          "end": 49.024
+        },
+        {
+          "text": "di",
+          "start": 49.064,
+          "end": 49.124
+        },
+        {
+          "text": "validazione,",
+          "start": 49.164,
+          "end": 49.924
+        }
+      ]
+    },
+    {
+      "start": 50.224,
+      "end": 52.544,
+      "text": "mai quello di training né una media tra i due.",
+      "words": [
+        {
+          "text": "mai",
+          "start": 50.224,
+          "end": 50.444
+        },
+        {
+          "text": "quello",
+          "start": 50.504,
+          "end": 50.724
+        },
+        {
+          "text": "di",
+          "start": 50.764,
+          "end": 50.824
+        },
+        {
+          "text": "training",
+          "start": 50.884,
+          "end": 51.364
+        },
+        {
+          "text": "né",
+          "start": 51.624,
+          "end": 51.724
+        },
+        {
+          "text": "una",
+          "start": 51.784,
+          "end": 51.904
+        },
+        {
+          "text": "media",
+          "start": 51.944,
+          "end": 52.164
+        },
+        {
+          "text": "tra",
+          "start": 52.184,
+          "end": 52.284
+        },
+        {
+          "text": "i",
+          "start": 52.324,
+          "end": 52.364
+        },
+        {
+          "text": "due.",
+          "start": 52.364,
+          "end": 52.544
+        }
+      ]
+    },
+    {
+      "start": 53.504,
+      "end": 55.105,
+      "text": "Numero di unità nascoste di una rete:",
+      "words": [
+        {
+          "text": "Numero",
+          "start": 53.504,
+          "end": 53.824
+        },
+        {
+          "text": "di",
+          "start": 53.864,
+          "end": 53.924
+        },
+        {
+          "text": "unità",
+          "start": 53.964,
+          "end": 54.204
+        },
+        {
+          "text": "nascoste",
+          "start": 54.244,
+          "end": 54.624
+        },
+        {
+          "text": "di",
+          "start": 54.644,
+          "end": 54.704
+        },
+        {
+          "text": "una",
+          "start": 54.745,
+          "end": 54.845
+        },
+        {
+          "text": "rete:",
+          "start": 54.885,
+          "end": 55.105
+        }
+      ]
+    },
+    {
+      "start": 55.785,
+      "end": 59.445,
+      "text": "l'errore di training decresce sempre, mentre l'errore di CV ha un minimo,",
+      "words": [
+        {
+          "text": "l'errore",
+          "start": 55.785,
+          "end": 56.105
+        },
+        {
+          "text": "di",
+          "start": 56.145,
+          "end": 56.205
+        },
+        {
+          "text": "training",
+          "start": 56.265,
+          "end": 56.665
+        },
+        {
+          "text": "decresce",
+          "start": 56.805,
+          "end": 57.165
+        },
+        {
+          "text": "sempre,",
+          "start": 57.245,
+          "end": 57.625
+        },
+        {
+          "text": "mentre",
+          "start": 57.685,
+          "end": 57.925
+        },
+        {
+          "text": "l'errore",
+          "start": 57.965,
+          "end": 58.325
+        },
+        {
+          "text": "di",
+          "start": 58.365,
+          "end": 58.425
+        },
+        {
+          "text": "CV",
+          "start": 58.485,
+          "end": 58.685
+        },
+        {
+          "text": "ha",
+          "start": 58.885,
+          "end": 58.925
+        },
+        {
+          "text": "un",
+          "start": 59.005,
+          "end": 59.085
+        },
+        {
+          "text": "minimo,",
+          "start": 59.125,
+          "end": 59.445
+        }
+      ]
+    },
+    {
+      "start": 59.945,
+      "end": 62.905,
+      "text": "tipicamente esplorato su valori come dieci, venti, trenta.",
+      "words": [
+        {
+          "text": "tipicamente",
+          "start": 59.945,
+          "end": 60.445
+        },
+        {
+          "text": "esplorato",
+          "start": 60.465,
+          "end": 60.945
+        },
+        {
+          "text": "su",
+          "start": 60.985,
+          "end": 61.045
+        },
+        {
+          "text": "valori",
+          "start": 61.105,
+          "end": 61.365
+        },
+        {
+          "text": "come",
+          "start": 61.405,
+          "end": 61.565
+        },
+        {
+          "text": "dieci,",
+          "start": 61.605,
+          "end": 61.965
+        },
+        {
+          "text": "venti,",
+          "start": 62.045,
+          "end": 62.405
+        },
+        {
+          "text": "trenta.",
+          "start": 62.525,
+          "end": 62.905
+        }
+      ]
+    },
+    {
+      "start": 63.725,
+      "end": 65.706,
+      "text": "Scelta di k nel K-NN:",
+      "words": [
+        {
+          "text": "Scelta",
+          "start": 63.725,
+          "end": 64.066
+        },
+        {
+          "text": "di",
+          "start": 64.126,
+          "end": 64.186
+        },
+        {
+          "text": "k",
+          "start": 64.246,
+          "end": 64.286
+        },
+        {
+          "text": "nel",
+          "start": 64.786,
+          "end": 64.926
+        },
+        {
+          "text": "K-NN:",
+          "start": 64.986,
+          "end": 65.706
+        }
+      ]
+    },
+    {
+      "start": 66.446,
+      "end": 71.346,
+      "text": "qui la leave-one-out è eccezionale, perché per un metodo non parametrico non c'è nulla da",
+      "words": [
+        {
+          "text": "qui",
+          "start": 66.446,
+          "end": 66.586
+        },
+        {
+          "text": "la",
+          "start": 66.866,
+          "end": 66.926
+        },
+        {
+          "text": "leave-one-out",
+          "start": 67.006,
+          "end": 67.766
+        },
+        {
+          "text": "è",
+          "start": 67.966,
+          "end": 68.006
+        },
+        {
+          "text": "eccezionale,",
+          "start": 68.046,
+          "end": 68.646
+        },
+        {
+          "text": "perché",
+          "start": 69.006,
+          "end": 69.226
+        },
+        {
+          "text": "per",
+          "start": 69.266,
+          "end": 69.366
+        },
+        {
+          "text": "un",
+          "start": 69.386,
+          "end": 69.446
+        },
+        {
+          "text": "metodo",
+          "start": 69.466,
+          "end": 69.766
+        },
+        {
+          "text": "non",
+          "start": 69.846,
+          "end": 69.966
+        },
+        {
+          "text": "parametrico",
+          "start": 70.006,
+          "end": 70.606
+        },
+        {
+          "text": "non",
+          "start": 70.686,
+          "end": 70.826
+        },
+        {
+          "text": "c'è",
+          "start": 70.866,
+          "end": 70.966
+        },
+        {
+          "text": "nulla",
+          "start": 71.026,
+          "end": 71.246
+        },
+        {
+          "text": "da",
+          "start": 71.286,
+          "end": 71.346
+        }
+      ]
+    },
+    {
+      "start": 71.366,
+      "end": 73.907,
+      "text": "addestrare e costa quanto una normale predizione.",
+      "words": [
+        {
+          "text": "addestrare",
+          "start": 71.366,
+          "end": 71.946
+        },
+        {
+          "text": "e",
+          "start": 72.066,
+          "end": 72.10600000000001
+        },
+        {
+          "text": "costa",
+          "start": 72.146,
+          "end": 72.386
+        },
+        {
+          "text": "quanto",
+          "start": 72.466,
+          "end": 72.786
+        },
+        {
+          "text": "una",
+          "start": 72.826,
+          "end": 72.926
+        },
+        {
+          "text": "normale",
+          "start": 72.966,
+          "end": 73.287
+        },
+        {
+          "text": "predizione.",
+          "start": 73.307,
+          "end": 73.907
+        }
+      ]
+    },
+    {
+      "start": 74.487,
+      "end": 79.827,
+      "text": "Attenzione però: la curva dell'errore LOOCV in funzione di k può essere irregolare con ottimi",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 74.487,
+          "end": 74.967
+        },
+        {
+          "text": "però:",
+          "start": 74.987,
+          "end": 75.127
+        },
+        {
+          "text": "la",
+          "start": 75.267,
+          "end": 75.347
+        },
+        {
+          "text": "curva",
+          "start": 75.407,
+          "end": 75.647
+        },
+        {
+          "text": "dell'errore",
+          "start": 75.687,
+          "end": 76.207
+        },
+        {
+          "text": "LOOCV",
+          "start": 76.507,
+          "end": 77.147
+        },
+        {
+          "text": "in",
+          "start": 77.287,
+          "end": 77.347
+        },
+        {
+          "text": "funzione",
+          "start": 77.387,
+          "end": 77.747
+        },
+        {
+          "text": "di",
+          "start": 77.787,
+          "end": 77.847
+        },
+        {
+          "text": "k",
+          "start": 77.887,
+          "end": 77.927
+        },
+        {
+          "text": "può",
+          "start": 78.307,
+          "end": 78.387
+        },
+        {
+          "text": "essere",
+          "start": 78.447,
+          "end": 78.687
+        },
+        {
+          "text": "irregolare",
+          "start": 78.747,
+          "end": 79.347
+        },
+        {
+          "text": "con",
+          "start": 79.387,
+          "end": 79.507
+        },
+        {
+          "text": "ottimi",
+          "start": 79.567,
+          "end": 79.827
+        }
+      ]
+    },
+    {
+      "start": 79.887,
+      "end": 83.628,
+      "text": "locali, perciò si esplorano scale esponenziali uno, due, quattro,",
+      "words": [
+        {
+          "text": "locali,",
+          "start": 79.887,
+          "end": 80.307
+        },
+        {
+          "text": "perciò",
+          "start": 80.627,
+          "end": 80.847
+        },
+        {
+          "text": "si",
+          "start": 80.907,
+          "end": 80.967
+        },
+        {
+          "text": "esplorano",
+          "start": 81.007,
+          "end": 81.447
+        },
+        {
+          "text": "scale",
+          "start": 81.507,
+          "end": 81.707
+        },
+        {
+          "text": "esponenziali",
+          "start": 81.747,
+          "end": 82.407
+        },
+        {
+          "text": "uno,",
+          "start": 82.608,
+          "end": 82.788
+        },
+        {
+          "text": "due,",
+          "start": 82.948,
+          "end": 83.168
+        },
+        {
+          "text": "quattro,",
+          "start": 83.268,
+          "end": 83.628
+        }
+      ]
+    },
+    {
+      "start": 83.788,
+      "end": 86.688,
+      "text": "otto, sedici o una ricerca hill-climbing.",
+      "words": [
+        {
+          "text": "otto,",
+          "start": 83.788,
+          "end": 84.088
+        },
+        {
+          "text": "sedici",
+          "start": 84.248,
+          "end": 84.688
+        },
+        {
+          "text": "o",
+          "start": 85.108,
+          "end": 85.14800000000001
+        },
+        {
+          "text": "una",
+          "start": 85.228,
+          "end": 85.348
+        },
+        {
+          "text": "ricerca",
+          "start": 85.408,
+          "end": 85.828
+        },
+        {
+          "text": "hill-climbing.",
+          "start": 85.928,
+          "end": 86.688
+        }
+      ]
+    }
+  ]
+}

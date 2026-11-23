@@ -1,0 +1,972 @@
+{
+  "duration": 68.47,
+  "segments": [
+    {
+      "start": 0.59,
+      "end": 5.331,
+      "text": "Per ottenere un bound analitico serve misurare la complessità di uno spazio delle ipotesi H,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 0.59,
+          "end": 0.69
+        },
+        {
+          "text": "ottenere",
+          "start": 0.731,
+          "end": 1.111
+        },
+        {
+          "text": "un",
+          "start": 1.151,
+          "end": 1.211
+        },
+        {
+          "text": "bound",
+          "start": 1.251,
+          "end": 1.511
+        },
+        {
+          "text": "analitico",
+          "start": 1.591,
+          "end": 2.131
+        },
+        {
+          "text": "serve",
+          "start": 2.351,
+          "end": 2.571
+        },
+        {
+          "text": "misurare",
+          "start": 2.631,
+          "end": 3.011
+        },
+        {
+          "text": "la",
+          "start": 3.091,
+          "end": 3.151
+        },
+        {
+          "text": "complessità",
+          "start": 3.191,
+          "end": 3.731
+        },
+        {
+          "text": "di",
+          "start": 3.791,
+          "end": 3.851
+        },
+        {
+          "text": "uno",
+          "start": 3.891,
+          "end": 3.991
+        },
+        {
+          "text": "spazio",
+          "start": 4.031,
+          "end": 4.331
+        },
+        {
+          "text": "delle",
+          "start": 4.371,
+          "end": 4.531
+        },
+        {
+          "text": "ipotesi",
+          "start": 4.591,
+          "end": 5.011
+        },
+        {
+          "text": "H,",
+          "start": 5.291,
+          "end": 5.331
+        }
+      ]
+    },
+    {
+      "start": 5.951,
+      "end": 10.452,
+      "text": "anche quando H contiene infinite funzioni, come i modelli lineari a pesi reali.",
+      "words": [
+        {
+          "text": "anche",
+          "start": 5.951,
+          "end": 6.131
+        },
+        {
+          "text": "quando",
+          "start": 6.171,
+          "end": 6.371
+        },
+        {
+          "text": "H",
+          "start": 6.551,
+          "end": 6.591
+        },
+        {
+          "text": "contiene",
+          "start": 6.671,
+          "end": 7.031
+        },
+        {
+          "text": "infinite",
+          "start": 7.112,
+          "end": 7.532
+        },
+        {
+          "text": "funzioni,",
+          "start": 7.572,
+          "end": 8.112
+        },
+        {
+          "text": "come",
+          "start": 8.472,
+          "end": 8.652
+        },
+        {
+          "text": "i",
+          "start": 8.692,
+          "end": 8.732
+        },
+        {
+          "text": "modelli",
+          "start": 8.772,
+          "end": 9.072
+        },
+        {
+          "text": "lineari",
+          "start": 9.132,
+          "end": 9.612
+        },
+        {
+          "text": "a",
+          "start": 9.732,
+          "end": 9.772
+        },
+        {
+          "text": "pesi",
+          "start": 9.832,
+          "end": 10.052
+        },
+        {
+          "text": "reali.",
+          "start": 10.112,
+          "end": 10.452
+        }
+      ]
+    },
+    {
+      "start": 11.152,
+      "end": 17.493,
+      "text": "L'idea di Vapnik e Chervonenkis è contare quanti punti distinti H riesce a discriminare completamente,",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 11.152,
+          "end": 11.412
+        },
+        {
+          "text": "di",
+          "start": 11.452,
+          "end": 11.512
+        },
+        {
+          "text": "Vapnik",
+          "start": 11.572,
+          "end": 12.032
+        },
+        {
+          "text": "e",
+          "start": 12.212,
+          "end": 12.252
+        },
+        {
+          "text": "Chervonenkis",
+          "start": 12.312,
+          "end": 12.992
+        },
+        {
+          "text": "è",
+          "start": 13.172,
+          "end": 13.212
+        },
+        {
+          "text": "contare",
+          "start": 13.272,
+          "end": 13.613
+        },
+        {
+          "text": "quanti",
+          "start": 13.693,
+          "end": 13.993
+        },
+        {
+          "text": "punti",
+          "start": 14.033,
+          "end": 14.273
+        },
+        {
+          "text": "distinti",
+          "start": 14.333,
+          "end": 14.853
+        },
+        {
+          "text": "H",
+          "start": 15.373,
+          "end": 15.413
+        },
+        {
+          "text": "riesce",
+          "start": 15.633,
+          "end": 15.973
+        },
+        {
+          "text": "a",
+          "start": 15.973,
+          "end": 16.013
+        },
+        {
+          "text": "discriminare",
+          "start": 16.053,
+          "end": 16.613
+        },
+        {
+          "text": "completamente,",
+          "start": 16.713,
+          "end": 17.493
+        }
+      ]
+    },
+    {
+      "start": 17.893,
+      "end": 19.533,
+      "text": "per ogni possibile etichettatura.",
+      "words": [
+        {
+          "text": "per",
+          "start": 17.893,
+          "end": 17.993
+        },
+        {
+          "text": "ogni",
+          "start": 18.033,
+          "end": 18.193
+        },
+        {
+          "text": "possibile",
+          "start": 18.273,
+          "end": 18.753
+        },
+        {
+          "text": "etichettatura.",
+          "start": 18.833,
+          "end": 19.533
+        }
+      ]
+    },
+    {
+      "start": 20.133,
+      "end": 24.933,
+      "text": "Presi m punti, con due classi esistono due alla m possibili dicotomie,",
+      "words": [
+        {
+          "text": "Presi",
+          "start": 20.133,
+          "end": 20.373
+        },
+        {
+          "text": "m",
+          "start": 20.753,
+          "end": 20.793
+        },
+        {
+          "text": "punti,",
+          "start": 20.913,
+          "end": 21.273
+        },
+        {
+          "text": "con",
+          "start": 21.533,
+          "end": 21.653
+        },
+        {
+          "text": "due",
+          "start": 21.693,
+          "end": 21.813
+        },
+        {
+          "text": "classi",
+          "start": 21.873,
+          "end": 22.193
+        },
+        {
+          "text": "esistono",
+          "start": 22.253,
+          "end": 22.673
+        },
+        {
+          "text": "due",
+          "start": 23.013,
+          "end": 23.213
+        },
+        {
+          "text": "alla",
+          "start": 23.293,
+          "end": 23.433
+        },
+        {
+          "text": "m",
+          "start": 23.633,
+          "end": 23.673
+        },
+        {
+          "text": "possibili",
+          "start": 23.773,
+          "end": 24.273
+        },
+        {
+          "text": "dicotomie,",
+          "start": 24.313,
+          "end": 24.933
+        }
+      ]
+    },
+    {
+      "start": 25.233,
+      "end": 27.294,
+      "text": "cioè assegnazioni di più uno o meno uno.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 25.233,
+          "end": 25.393
+        },
+        {
+          "text": "assegnazioni",
+          "start": 25.553,
+          "end": 26.093
+        },
+        {
+          "text": "di",
+          "start": 26.133,
+          "end": 26.213
+        },
+        {
+          "text": "più",
+          "start": 26.273,
+          "end": 26.373
+        },
+        {
+          "text": "uno",
+          "start": 26.474,
+          "end": 26.634
+        },
+        {
+          "text": "o",
+          "start": 26.814,
+          "end": 26.854
+        },
+        {
+          "text": "meno",
+          "start": 26.874,
+          "end": 27.054
+        },
+        {
+          "text": "uno.",
+          "start": 27.134,
+          "end": 27.294
+        }
+      ]
+    },
+    {
+      "start": 27.934,
+      "end": 32.834,
+      "text": "Diciamo che H frammenta — in inglese shatters — un insieme di punti se e",
+      "words": [
+        {
+          "text": "Diciamo",
+          "start": 27.934,
+          "end": 28.214
+        },
+        {
+          "text": "che",
+          "start": 28.254,
+          "end": 28.354
+        },
+        {
+          "text": "H",
+          "start": 28.714,
+          "end": 28.754
+        },
+        {
+          "text": "frammenta",
+          "start": 28.954,
+          "end": 29.634
+        },
+        {
+          "text": "—",
+          "start": 29.634,
+          "end": 29.784
+        },
+        {
+          "text": "in",
+          "start": 29.994,
+          "end": 30.054
+        },
+        {
+          "text": "inglese",
+          "start": 30.074,
+          "end": 30.414
+        },
+        {
+          "text": "shatters",
+          "start": 30.634,
+          "end": 31.074
+        },
+        {
+          "text": "—",
+          "start": 31.074,
+          "end": 31.224
+        },
+        {
+          "text": "un",
+          "start": 31.554,
+          "end": 31.634
+        },
+        {
+          "text": "insieme",
+          "start": 31.674,
+          "end": 31.974
+        },
+        {
+          "text": "di",
+          "start": 31.994,
+          "end": 32.074
+        },
+        {
+          "text": "punti",
+          "start": 32.114,
+          "end": 32.454
+        },
+        {
+          "text": "se",
+          "start": 32.634,
+          "end": 32.754
+        },
+        {
+          "text": "e",
+          "start": 32.794,
+          "end": 32.834
+        }
+      ]
+    },
+    {
+      "start": 32.875,
+      "end": 36.755,
+      "text": "solo se riesce a rappresentare tutte le sue dicotomie con errore zero.",
+      "words": [
+        {
+          "text": "solo",
+          "start": 32.875,
+          "end": 33.075
+        },
+        {
+          "text": "se",
+          "start": 33.135,
+          "end": 33.215
+        },
+        {
+          "text": "riesce",
+          "start": 33.475,
+          "end": 33.815
+        },
+        {
+          "text": "a",
+          "start": 33.815,
+          "end": 33.855
+        },
+        {
+          "text": "rappresentare",
+          "start": 33.895,
+          "end": 34.475
+        },
+        {
+          "text": "tutte",
+          "start": 34.615,
+          "end": 34.915
+        },
+        {
+          "text": "le",
+          "start": 34.955,
+          "end": 35.035
+        },
+        {
+          "text": "sue",
+          "start": 35.075,
+          "end": 35.215
+        },
+        {
+          "text": "dicotomie",
+          "start": 35.255,
+          "end": 35.795
+        },
+        {
+          "text": "con",
+          "start": 35.915,
+          "end": 36.055
+        },
+        {
+          "text": "errore",
+          "start": 36.115,
+          "end": 36.395
+        },
+        {
+          "text": "zero.",
+          "start": 36.495,
+          "end": 36.755
+        }
+      ]
+    },
+    {
+      "start": 37.655,
+      "end": 42.816,
+      "text": "La VC-dimension di H è allora la cardinalità massima di un insieme di punti che",
+      "words": [
+        {
+          "text": "La",
+          "start": 37.655,
+          "end": 37.735
+        },
+        {
+          "text": "VC-dimension",
+          "start": 37.835,
+          "end": 38.795
+        },
+        {
+          "text": "di",
+          "start": 38.855,
+          "end": 38.935
+        },
+        {
+          "text": "H",
+          "start": 39.235,
+          "end": 39.275
+        },
+        {
+          "text": "è",
+          "start": 39.476,
+          "end": 39.516
+        },
+        {
+          "text": "allora",
+          "start": 39.536,
+          "end": 39.836
+        },
+        {
+          "text": "la",
+          "start": 39.916,
+          "end": 39.976
+        },
+        {
+          "text": "cardinalità",
+          "start": 40.036,
+          "end": 40.636
+        },
+        {
+          "text": "massima",
+          "start": 40.796,
+          "end": 41.276
+        },
+        {
+          "text": "di",
+          "start": 41.496,
+          "end": 41.576
+        },
+        {
+          "text": "un",
+          "start": 41.636,
+          "end": 41.716
+        },
+        {
+          "text": "insieme",
+          "start": 41.756,
+          "end": 42.156
+        },
+        {
+          "text": "di",
+          "start": 42.196,
+          "end": 42.256
+        },
+        {
+          "text": "punti",
+          "start": 42.316,
+          "end": 42.676
+        },
+        {
+          "text": "che",
+          "start": 42.736,
+          "end": 42.816
+        }
+      ]
+    },
+    {
+      "start": 42.856,
+      "end": 44.296,
+      "text": "può essere frammentato da H.",
+      "words": [
+        {
+          "text": "può",
+          "start": 42.856,
+          "end": 42.936
+        },
+        {
+          "text": "essere",
+          "start": 42.996,
+          "end": 43.256
+        },
+        {
+          "text": "frammentato",
+          "start": 43.296,
+          "end": 43.876
+        },
+        {
+          "text": "da",
+          "start": 43.916,
+          "end": 43.976
+        },
+        {
+          "text": "H.",
+          "start": 44.256,
+          "end": 44.296
+        }
+      ]
+    },
+    {
+      "start": 45.156,
+      "end": 47.057,
+      "text": "Dire che la VC-dimension vale p",
+      "words": [
+        {
+          "text": "Dire",
+          "start": 45.156,
+          "end": 45.336
+        },
+        {
+          "text": "che",
+          "start": 45.376,
+          "end": 45.456
+        },
+        {
+          "text": "la",
+          "start": 45.516,
+          "end": 45.576
+        },
+        {
+          "text": "VC-dimension",
+          "start": 45.656,
+          "end": 46.577
+        },
+        {
+          "text": "vale",
+          "start": 46.657,
+          "end": 46.857
+        },
+        {
+          "text": "p",
+          "start": 47.017,
+          "end": 47.057
+        }
+      ]
+    },
+    {
+      "start": 47.677,
+      "end": 51.617,
+      "text": "significa due cose: H frammenta almeno un insieme di p punti,",
+      "words": [
+        {
+          "text": "significa",
+          "start": 47.677,
+          "end": 48.097
+        },
+        {
+          "text": "due",
+          "start": 48.137,
+          "end": 48.237
+        },
+        {
+          "text": "cose:",
+          "start": 48.277,
+          "end": 48.537
+        },
+        {
+          "text": "H",
+          "start": 49.257,
+          "end": 49.297
+        },
+        {
+          "text": "frammenta",
+          "start": 49.357,
+          "end": 49.737
+        },
+        {
+          "text": "almeno",
+          "start": 49.777,
+          "end": 50.037
+        },
+        {
+          "text": "un",
+          "start": 50.217,
+          "end": 50.317
+        },
+        {
+          "text": "insieme",
+          "start": 50.397,
+          "end": 50.877
+        },
+        {
+          "text": "di",
+          "start": 50.937,
+          "end": 51.017
+        },
+        {
+          "text": "p",
+          "start": 51.077,
+          "end": 51.117
+        },
+        {
+          "text": "punti,",
+          "start": 51.217,
+          "end": 51.617
+        }
+      ]
+    },
+    {
+      "start": 52.037,
+      "end": 55.158,
+      "text": "ma non frammenta nessun insieme di p più uno punti.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 52.037,
+          "end": 52.117
+        },
+        {
+          "text": "non",
+          "start": 52.238,
+          "end": 52.378
+        },
+        {
+          "text": "frammenta",
+          "start": 52.418,
+          "end": 52.878
+        },
+        {
+          "text": "nessun",
+          "start": 52.998,
+          "end": 53.338
+        },
+        {
+          "text": "insieme",
+          "start": 53.398,
+          "end": 53.858
+        },
+        {
+          "text": "di",
+          "start": 54.018,
+          "end": 54.098
+        },
+        {
+          "text": "p",
+          "start": 54.238,
+          "end": 54.278
+        },
+        {
+          "text": "più",
+          "start": 54.418,
+          "end": 54.538
+        },
+        {
+          "text": "uno",
+          "start": 54.598,
+          "end": 54.758
+        },
+        {
+          "text": "punti.",
+          "start": 54.798,
+          "end": 55.158
+        }
+      ]
+    },
+    {
+      "start": 56.058,
+      "end": 62.499,
+      "text": "Attenzione all'asimmetria della definizione: per il limite inferiore basta trovare una sola configurazione frammentabile;",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 56.058,
+          "end": 56.538
+        },
+        {
+          "text": "all'asimmetria",
+          "start": 56.578,
+          "end": 57.238
+        },
+        {
+          "text": "della",
+          "start": 57.298,
+          "end": 57.478
+        },
+        {
+          "text": "definizione:",
+          "start": 57.498,
+          "end": 58.158
+        },
+        {
+          "text": "per",
+          "start": 58.658,
+          "end": 58.778
+        },
+        {
+          "text": "il",
+          "start": 58.818,
+          "end": 58.878
+        },
+        {
+          "text": "limite",
+          "start": 58.939,
+          "end": 59.239
+        },
+        {
+          "text": "inferiore",
+          "start": 59.299,
+          "end": 59.799
+        },
+        {
+          "text": "basta",
+          "start": 59.879,
+          "end": 60.119
+        },
+        {
+          "text": "trovare",
+          "start": 60.159,
+          "end": 60.459
+        },
+        {
+          "text": "una",
+          "start": 60.599,
+          "end": 60.759
+        },
+        {
+          "text": "sola",
+          "start": 60.819,
+          "end": 61.019
+        },
+        {
+          "text": "configurazione",
+          "start": 61.059,
+          "end": 61.739
+        },
+        {
+          "text": "frammentabile;",
+          "start": 61.779,
+          "end": 62.499
+        }
+      ]
+    },
+    {
+      "start": 62.939,
+      "end": 68.1,
+      "text": "per il limite superiore bisogna dimostrare che nessuna configurazione di p più uno punti lo",
+      "words": [
+        {
+          "text": "per",
+          "start": 62.939,
+          "end": 63.059
+        },
+        {
+          "text": "il",
+          "start": 63.079,
+          "end": 63.159
+        },
+        {
+          "text": "limite",
+          "start": 63.199,
+          "end": 63.499
+        },
+        {
+          "text": "superiore",
+          "start": 63.599,
+          "end": 64.139
+        },
+        {
+          "text": "bisogna",
+          "start": 64.319,
+          "end": 64.639
+        },
+        {
+          "text": "dimostrare",
+          "start": 64.699,
+          "end": 65.239
+        },
+        {
+          "text": "che",
+          "start": 65.279,
+          "end": 65.38
+        },
+        {
+          "text": "nessuna",
+          "start": 65.46,
+          "end": 65.86
+        },
+        {
+          "text": "configurazione",
+          "start": 65.9,
+          "end": 66.64
+        },
+        {
+          "text": "di",
+          "start": 66.7,
+          "end": 66.78
+        },
+        {
+          "text": "p",
+          "start": 66.92,
+          "end": 66.96000000000001
+        },
+        {
+          "text": "più",
+          "start": 67.1,
+          "end": 67.24
+        },
+        {
+          "text": "uno",
+          "start": 67.32,
+          "end": 67.48
+        },
+        {
+          "text": "punti",
+          "start": 67.54,
+          "end": 67.88
+        },
+        {
+          "text": "lo",
+          "start": 68.02,
+          "end": 68.1
+        }
+      ]
+    },
+    {
+      "start": 68.18,
+      "end": 68.22000000000001,
+      "text": "è.",
+      "words": [
+        {
+          "text": "è.",
+          "start": 68.18,
+          "end": 68.22000000000001
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1378 @@
+{
+  "duration": 95.882,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.54,
+      "text": "Avendo già la soluzione diretta via SVD, perché ci serve una soluzione iterativa?",
+      "words": [
+        {
+          "text": "Avendo",
+          "start": 0.08,
+          "end": 0.38
+        },
+        {
+          "text": "già",
+          "start": 0.44,
+          "end": 0.52
+        },
+        {
+          "text": "la",
+          "start": 0.6,
+          "end": 0.64
+        },
+        {
+          "text": "soluzione",
+          "start": 0.7,
+          "end": 1.1
+        },
+        {
+          "text": "diretta",
+          "start": 1.16,
+          "end": 1.46
+        },
+        {
+          "text": "via",
+          "start": 1.52,
+          "end": 1.66
+        },
+        {
+          "text": "SVD,",
+          "start": 1.88,
+          "end": 2.16
+        },
+        {
+          "text": "perché",
+          "start": 2.48,
+          "end": 2.76
+        },
+        {
+          "text": "ci",
+          "start": 2.84,
+          "end": 2.92
+        },
+        {
+          "text": "serve",
+          "start": 2.98,
+          "end": 3.22
+        },
+        {
+          "text": "una",
+          "start": 3.28,
+          "end": 3.38
+        },
+        {
+          "text": "soluzione",
+          "start": 3.46,
+          "end": 3.94
+        },
+        {
+          "text": "iterativa?",
+          "start": 4.0,
+          "end": 4.54
+        }
+      ]
+    },
+    {
+      "start": 5.2,
+      "end": 6.621,
+      "text": "Per quattro ragioni decisive:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 5.2,
+          "end": 5.321
+        },
+        {
+          "text": "quattro",
+          "start": 5.401,
+          "end": 5.721
+        },
+        {
+          "text": "ragioni",
+          "start": 5.781,
+          "end": 6.081
+        },
+        {
+          "text": "decisive:",
+          "start": 6.141,
+          "end": 6.621
+        }
+      ]
+    },
+    {
+      "start": 7.341,
+      "end": 12.101,
+      "text": "primo, è più efficiente perché la soluzione diretta ha costo cubico nella dimensione della matrice;",
+      "words": [
+        {
+          "text": "primo,",
+          "start": 7.341,
+          "end": 7.641
+        },
+        {
+          "text": "è",
+          "start": 7.981,
+          "end": 8.021
+        },
+        {
+          "text": "più",
+          "start": 8.081,
+          "end": 8.201
+        },
+        {
+          "text": "efficiente",
+          "start": 8.281,
+          "end": 8.761
+        },
+        {
+          "text": "perché",
+          "start": 8.801,
+          "end": 9.021
+        },
+        {
+          "text": "la",
+          "start": 9.061,
+          "end": 9.121
+        },
+        {
+          "text": "soluzione",
+          "start": 9.161,
+          "end": 9.541
+        },
+        {
+          "text": "diretta",
+          "start": 9.581,
+          "end": 9.861
+        },
+        {
+          "text": "ha",
+          "start": 9.881,
+          "end": 9.921
+        },
+        {
+          "text": "costo",
+          "start": 9.981,
+          "end": 10.261
+        },
+        {
+          "text": "cubico",
+          "start": 10.321,
+          "end": 10.741
+        },
+        {
+          "text": "nella",
+          "start": 10.801,
+          "end": 10.961
+        },
+        {
+          "text": "dimensione",
+          "start": 11.001,
+          "end": 11.461
+        },
+        {
+          "text": "della",
+          "start": 11.501,
+          "end": 11.641
+        },
+        {
+          "text": "matrice;",
+          "start": 11.681,
+          "end": 12.101
+        }
+      ]
+    },
+    {
+      "start": 12.521,
+      "end": 15.461,
+      "text": "secondo, si combina facilmente con la regolarizzazione;",
+      "words": [
+        {
+          "text": "secondo,",
+          "start": 12.521,
+          "end": 13.021
+        },
+        {
+          "text": "si",
+          "start": 13.121,
+          "end": 13.201
+        },
+        {
+          "text": "combina",
+          "start": 13.261,
+          "end": 13.561
+        },
+        {
+          "text": "facilmente",
+          "start": 13.641,
+          "end": 14.221
+        },
+        {
+          "text": "con",
+          "start": 14.261,
+          "end": 14.381
+        },
+        {
+          "text": "la",
+          "start": 14.421,
+          "end": 14.481
+        },
+        {
+          "text": "regolarizzazione;",
+          "start": 14.521,
+          "end": 15.461
+        }
+      ]
+    },
+    {
+      "start": 16.021,
+      "end": 20.762,
+      "text": "terzo, con dati rumorosi permette di fermarsi prima del minimo per generalizzare meglio;",
+      "words": [
+        {
+          "text": "terzo,",
+          "start": 16.021,
+          "end": 16.442
+        },
+        {
+          "text": "con",
+          "start": 16.622,
+          "end": 16.762
+        },
+        {
+          "text": "dati",
+          "start": 16.822,
+          "end": 17.022
+        },
+        {
+          "text": "rumorosi",
+          "start": 17.062,
+          "end": 17.502
+        },
+        {
+          "text": "permette",
+          "start": 17.562,
+          "end": 17.902
+        },
+        {
+          "text": "di",
+          "start": 17.942,
+          "end": 18.002
+        },
+        {
+          "text": "fermarsi",
+          "start": 18.042,
+          "end": 18.462
+        },
+        {
+          "text": "prima",
+          "start": 18.562,
+          "end": 18.822
+        },
+        {
+          "text": "del",
+          "start": 18.882,
+          "end": 19.022
+        },
+        {
+          "text": "minimo",
+          "start": 19.082,
+          "end": 19.422
+        },
+        {
+          "text": "per",
+          "start": 19.562,
+          "end": 19.682
+        },
+        {
+          "text": "generalizzare",
+          "start": 19.742,
+          "end": 20.402
+        },
+        {
+          "text": "meglio;",
+          "start": 20.442,
+          "end": 20.762
+        }
+      ]
+    },
+    {
+      "start": 21.342,
+      "end": 27.002,
+      "text": "quarto, e soprattutto, si applica ai modelli non lineari ed è la base dell'addestramento delle",
+      "words": [
+        {
+          "text": "quarto,",
+          "start": 21.342,
+          "end": 21.822
+        },
+        {
+          "text": "e",
+          "start": 22.042,
+          "end": 22.082
+        },
+        {
+          "text": "soprattutto,",
+          "start": 22.142,
+          "end": 22.822
+        },
+        {
+          "text": "si",
+          "start": 23.262,
+          "end": 23.342
+        },
+        {
+          "text": "applica",
+          "start": 23.402,
+          "end": 23.722
+        },
+        {
+          "text": "ai",
+          "start": 23.742,
+          "end": 23.802
+        },
+        {
+          "text": "modelli",
+          "start": 23.862,
+          "end": 24.202
+        },
+        {
+          "text": "non",
+          "start": 24.302,
+          "end": 24.482
+        },
+        {
+          "text": "lineari",
+          "start": 24.542,
+          "end": 25.102
+        },
+        {
+          "text": "ed",
+          "start": 25.382,
+          "end": 25.462
+        },
+        {
+          "text": "è",
+          "start": 25.482,
+          "end": 25.522
+        },
+        {
+          "text": "la",
+          "start": 25.582,
+          "end": 25.642
+        },
+        {
+          "text": "base",
+          "start": 25.702,
+          "end": 25.922
+        },
+        {
+          "text": "dell'addestramento",
+          "start": 25.962,
+          "end": 26.802
+        },
+        {
+          "text": "delle",
+          "start": 26.842,
+          "end": 27.002
+        }
+      ]
+    },
+    {
+      "start": 27.042,
+      "end": 28.723,
+      "text": "reti neurali e del deep learning.",
+      "words": [
+        {
+          "text": "reti",
+          "start": 27.042,
+          "end": 27.222
+        },
+        {
+          "text": "neurali",
+          "start": 27.263,
+          "end": 27.743
+        },
+        {
+          "text": "e",
+          "start": 27.863,
+          "end": 27.903
+        },
+        {
+          "text": "del",
+          "start": 27.943,
+          "end": 28.063
+        },
+        {
+          "text": "deep",
+          "start": 28.103,
+          "end": 28.263
+        },
+        {
+          "text": "learning.",
+          "start": 28.323,
+          "end": 28.723
+        }
+      ]
+    },
+    {
+      "start": 29.443,
+      "end": 34.743,
+      "text": "L'idea della discesa del gradiente, steepest descent, è una ricerca locale nello spazio dei pesi:",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 29.443,
+          "end": 29.723
+        },
+        {
+          "text": "della",
+          "start": 29.763,
+          "end": 29.943
+        },
+        {
+          "text": "discesa",
+          "start": 29.983,
+          "end": 30.303
+        },
+        {
+          "text": "del",
+          "start": 30.343,
+          "end": 30.443
+        },
+        {
+          "text": "gradiente,",
+          "start": 30.483,
+          "end": 31.083
+        },
+        {
+          "text": "steepest",
+          "start": 31.243,
+          "end": 31.723
+        },
+        {
+          "text": "descent,",
+          "start": 31.763,
+          "end": 32.263
+        },
+        {
+          "text": "è",
+          "start": 32.783,
+          "end": 32.823
+        },
+        {
+          "text": "una",
+          "start": 32.863,
+          "end": 32.983
+        },
+        {
+          "text": "ricerca",
+          "start": 33.023,
+          "end": 33.343
+        },
+        {
+          "text": "locale",
+          "start": 33.403,
+          "end": 33.783
+        },
+        {
+          "text": "nello",
+          "start": 33.843,
+          "end": 34.003
+        },
+        {
+          "text": "spazio",
+          "start": 34.023,
+          "end": 34.303
+        },
+        {
+          "text": "dei",
+          "start": 34.343,
+          "end": 34.443
+        },
+        {
+          "text": "pesi:",
+          "start": 34.463,
+          "end": 34.743
+        }
+      ]
+    },
+    {
+      "start": 35.223,
+      "end": 38.103,
+      "text": "il gradiente indica la direzione di massima salita dell'errore,",
+      "words": [
+        {
+          "text": "il",
+          "start": 35.223,
+          "end": 35.303
+        },
+        {
+          "text": "gradiente",
+          "start": 35.343,
+          "end": 35.783
+        },
+        {
+          "text": "indica",
+          "start": 35.823,
+          "end": 36.103
+        },
+        {
+          "text": "la",
+          "start": 36.143,
+          "end": 36.203
+        },
+        {
+          "text": "direzione",
+          "start": 36.243,
+          "end": 36.643
+        },
+        {
+          "text": "di",
+          "start": 36.683,
+          "end": 36.743
+        },
+        {
+          "text": "massima",
+          "start": 36.803,
+          "end": 37.163
+        },
+        {
+          "text": "salita",
+          "start": 37.223,
+          "end": 37.523
+        },
+        {
+          "text": "dell'errore,",
+          "start": 37.563,
+          "end": 38.103
+        }
+      ]
+    },
+    {
+      "start": 38.163,
+      "end": 39.924,
+      "text": "quindi ci muoviamo nel verso opposto",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 38.163,
+          "end": 38.384
+        },
+        {
+          "text": "ci",
+          "start": 38.524,
+          "end": 38.624
+        },
+        {
+          "text": "muoviamo",
+          "start": 38.684,
+          "end": 39.004
+        },
+        {
+          "text": "nel",
+          "start": 39.044,
+          "end": 39.164
+        },
+        {
+          "text": "verso",
+          "start": 39.204,
+          "end": 39.484
+        },
+        {
+          "text": "opposto",
+          "start": 39.504,
+          "end": 39.924
+        }
+      ]
+    },
+    {
+      "start": 40.484,
+      "end": 43.464,
+      "text": "Delta w uguale meno gradiente di E di w,",
+      "words": [
+        {
+          "text": "Delta",
+          "start": 40.484,
+          "end": 40.744
+        },
+        {
+          "text": "w",
+          "start": 40.844,
+          "end": 40.884
+        },
+        {
+          "text": "uguale",
+          "start": 41.244,
+          "end": 41.624
+        },
+        {
+          "text": "meno",
+          "start": 41.944,
+          "end": 42.164
+        },
+        {
+          "text": "gradiente",
+          "start": 42.244,
+          "end": 42.764
+        },
+        {
+          "text": "di",
+          "start": 42.804,
+          "end": 42.884
+        },
+        {
+          "text": "E",
+          "start": 42.964,
+          "end": 43.004
+        },
+        {
+          "text": "di",
+          "start": 43.264,
+          "end": 43.344
+        },
+        {
+          "text": "w,",
+          "start": 43.424,
+          "end": 43.464
+        }
+      ]
+    },
+    {
+      "start": 43.904,
+      "end": 46.184,
+      "text": "componente per componente in qualunque dimensione.",
+      "words": [
+        {
+          "text": "componente",
+          "start": 43.904,
+          "end": 44.424
+        },
+        {
+          "text": "per",
+          "start": 44.464,
+          "end": 44.564
+        },
+        {
+          "text": "componente",
+          "start": 44.604,
+          "end": 45.144
+        },
+        {
+          "text": "in",
+          "start": 45.184,
+          "end": 45.224
+        },
+        {
+          "text": "qualunque",
+          "start": 45.264,
+          "end": 45.604
+        },
+        {
+          "text": "dimensione.",
+          "start": 45.624,
+          "end": 46.184
+        }
+      ]
+    },
+    {
+      "start": 47.244,
+      "end": 51.425,
+      "text": "Guarda i due grafici in basso: a sinistra in una dimensione il peso scende lungo",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 47.244,
+          "end": 47.484
+        },
+        {
+          "text": "i",
+          "start": 47.524,
+          "end": 47.564
+        },
+        {
+          "text": "due",
+          "start": 47.584,
+          "end": 47.664
+        },
+        {
+          "text": "grafici",
+          "start": 47.704,
+          "end": 48.004
+        },
+        {
+          "text": "in",
+          "start": 48.044,
+          "end": 48.104
+        },
+        {
+          "text": "basso:",
+          "start": 48.124,
+          "end": 48.484
+        },
+        {
+          "text": "a",
+          "start": 48.924,
+          "end": 48.964
+        },
+        {
+          "text": "sinistra",
+          "start": 49.024,
+          "end": 49.465
+        },
+        {
+          "text": "in",
+          "start": 49.625,
+          "end": 49.705
+        },
+        {
+          "text": "una",
+          "start": 49.725,
+          "end": 49.845
+        },
+        {
+          "text": "dimensione",
+          "start": 49.885,
+          "end": 50.385
+        },
+        {
+          "text": "il",
+          "start": 50.425,
+          "end": 50.485
+        },
+        {
+          "text": "peso",
+          "start": 50.525,
+          "end": 50.725
+        },
+        {
+          "text": "scende",
+          "start": 50.785,
+          "end": 51.105
+        },
+        {
+          "text": "lungo",
+          "start": 51.185,
+          "end": 51.425
+        }
+      ]
+    },
+    {
+      "start": 51.465,
+      "end": 53.245,
+      "text": "la parabola convessa verso il minimo;",
+      "words": [
+        {
+          "text": "la",
+          "start": 51.465,
+          "end": 51.525
+        },
+        {
+          "text": "parabola",
+          "start": 51.565,
+          "end": 51.925
+        },
+        {
+          "text": "convessa",
+          "start": 51.985,
+          "end": 52.445
+        },
+        {
+          "text": "verso",
+          "start": 52.525,
+          "end": 52.745
+        },
+        {
+          "text": "il",
+          "start": 52.785,
+          "end": 52.845
+        },
+        {
+          "text": "minimo;",
+          "start": 52.885,
+          "end": 53.245
+        }
+      ]
+    },
+    {
+      "start": 53.825,
+      "end": 58.505,
+      "text": "a destra con due pesi la superficie d'errore è un paraboloide rappresentato da curve di",
+      "words": [
+        {
+          "text": "a",
+          "start": 53.825,
+          "end": 53.865
+        },
+        {
+          "text": "destra",
+          "start": 53.925,
+          "end": 54.225
+        },
+        {
+          "text": "con",
+          "start": 54.265,
+          "end": 54.385
+        },
+        {
+          "text": "due",
+          "start": 54.425,
+          "end": 54.545
+        },
+        {
+          "text": "pesi",
+          "start": 54.585,
+          "end": 54.905
+        },
+        {
+          "text": "la",
+          "start": 55.105,
+          "end": 55.185
+        },
+        {
+          "text": "superficie",
+          "start": 55.225,
+          "end": 55.705
+        },
+        {
+          "text": "d'errore",
+          "start": 55.725,
+          "end": 56.145
+        },
+        {
+          "text": "è",
+          "start": 56.205,
+          "end": 56.245
+        },
+        {
+          "text": "un",
+          "start": 56.265,
+          "end": 56.345
+        },
+        {
+          "text": "paraboloide",
+          "start": 56.405,
+          "end": 57.205
+        },
+        {
+          "text": "rappresentato",
+          "start": 57.325,
+          "end": 57.885
+        },
+        {
+          "text": "da",
+          "start": 57.925,
+          "end": 57.985
+        },
+        {
+          "text": "curve",
+          "start": 58.065,
+          "end": 58.385
+        },
+        {
+          "text": "di",
+          "start": 58.445,
+          "end": 58.505
+        }
+      ]
+    },
+    {
+      "start": 58.565,
+      "end": 64.666,
+      "text": "livello ellittiche, dove ogni punto è un'ipotesi e la discesa batch blu procede regolare verso",
+      "words": [
+        {
+          "text": "livello",
+          "start": 58.565,
+          "end": 58.865
+        },
+        {
+          "text": "ellittiche,",
+          "start": 58.905,
+          "end": 59.445
+        },
+        {
+          "text": "dove",
+          "start": 59.845,
+          "end": 60.025
+        },
+        {
+          "text": "ogni",
+          "start": 60.165,
+          "end": 60.386
+        },
+        {
+          "text": "punto",
+          "start": 60.446,
+          "end": 60.806
+        },
+        {
+          "text": "è",
+          "start": 60.926,
+          "end": 60.966
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 61.006,
+          "end": 61.606
+        },
+        {
+          "text": "e",
+          "start": 62.066,
+          "end": 62.106
+        },
+        {
+          "text": "la",
+          "start": 62.146,
+          "end": 62.206
+        },
+        {
+          "text": "discesa",
+          "start": 62.266,
+          "end": 62.606
+        },
+        {
+          "text": "batch",
+          "start": 62.726,
+          "end": 63.006
+        },
+        {
+          "text": "blu",
+          "start": 63.206,
+          "end": 63.386
+        },
+        {
+          "text": "procede",
+          "start": 63.606,
+          "end": 63.966
+        },
+        {
+          "text": "regolare",
+          "start": 64.026,
+          "end": 64.406
+        },
+        {
+          "text": "verso",
+          "start": 64.446,
+          "end": 64.666
+        }
+      ]
+    },
+    {
+      "start": 64.706,
+      "end": 67.806,
+      "text": "il centro, mentre quella on-line rossa procede a zig-zag.",
+      "words": [
+        {
+          "text": "il",
+          "start": 64.706,
+          "end": 64.766
+        },
+        {
+          "text": "centro,",
+          "start": 64.806,
+          "end": 65.146
+        },
+        {
+          "text": "mentre",
+          "start": 65.186,
+          "end": 65.406
+        },
+        {
+          "text": "quella",
+          "start": 65.426,
+          "end": 65.666
+        },
+        {
+          "text": "on-line",
+          "start": 65.766,
+          "end": 66.286
+        },
+        {
+          "text": "rossa",
+          "start": 66.426,
+          "end": 66.766
+        },
+        {
+          "text": "procede",
+          "start": 66.926,
+          "end": 67.246
+        },
+        {
+          "text": "a",
+          "start": 67.266,
+          "end": 67.30600000000001
+        },
+        {
+          "text": "zig-zag.",
+          "start": 67.346,
+          "end": 67.806
+        }
+      ]
+    },
+    {
+      "start": 69.126,
+      "end": 71.70700000000001,
+      "text": "L'algoritmo è in quattro passi: inizializza w",
+      "words": [
+        {
+          "text": "L'algoritmo",
+          "start": 69.126,
+          "end": 69.646
+        },
+        {
+          "text": "è",
+          "start": 69.706,
+          "end": 69.74600000000001
+        },
+        {
+          "text": "in",
+          "start": 69.766,
+          "end": 69.826
+        },
+        {
+          "text": "quattro",
+          "start": 69.846,
+          "end": 70.086
+        },
+        {
+          "text": "passi:",
+          "start": 70.146,
+          "end": 70.486
+        },
+        {
+          "text": "inizializza",
+          "start": 70.926,
+          "end": 71.507
+        },
+        {
+          "text": "w",
+          "start": 71.667,
+          "end": 71.70700000000001
+        }
+      ]
+    },
+    {
+      "start": 72.307,
+      "end": 76.487,
+      "text": "con valori piccoli e fissa un learning rate eta tra zero e uno;",
+      "words": [
+        {
+          "text": "con",
+          "start": 72.307,
+          "end": 72.427
+        },
+        {
+          "text": "valori",
+          "start": 72.447,
+          "end": 72.727
+        },
+        {
+          "text": "piccoli",
+          "start": 72.807,
+          "end": 73.247
+        },
+        {
+          "text": "e",
+          "start": 73.367,
+          "end": 73.40700000000001
+        },
+        {
+          "text": "fissa",
+          "start": 73.447,
+          "end": 73.747
+        },
+        {
+          "text": "un",
+          "start": 73.867,
+          "end": 73.967
+        },
+        {
+          "text": "learning",
+          "start": 74.047,
+          "end": 74.427
+        },
+        {
+          "text": "rate",
+          "start": 74.487,
+          "end": 74.847
+        },
+        {
+          "text": "eta",
+          "start": 75.107,
+          "end": 75.367
+        },
+        {
+          "text": "tra",
+          "start": 75.687,
+          "end": 75.807
+        },
+        {
+          "text": "zero",
+          "start": 75.907,
+          "end": 76.127
+        },
+        {
+          "text": "e",
+          "start": 76.187,
+          "end": 76.227
+        },
+        {
+          "text": "uno;",
+          "start": 76.307,
+          "end": 76.487
+        }
+      ]
+    },
+    {
+      "start": 77.147,
+      "end": 80.06700000000001,
+      "text": "calcola Delta w uguale meno gradiente di E;",
+      "words": [
+        {
+          "text": "calcola",
+          "start": 77.147,
+          "end": 77.567
+        },
+        {
+          "text": "Delta",
+          "start": 77.747,
+          "end": 78.007
+        },
+        {
+          "text": "w",
+          "start": 78.067,
+          "end": 78.107
+        },
+        {
+          "text": "uguale",
+          "start": 78.647,
+          "end": 78.967
+        },
+        {
+          "text": "meno",
+          "start": 79.047,
+          "end": 79.227
+        },
+        {
+          "text": "gradiente",
+          "start": 79.307,
+          "end": 79.827
+        },
+        {
+          "text": "di",
+          "start": 79.867,
+          "end": 79.947
+        },
+        {
+          "text": "E;",
+          "start": 80.027,
+          "end": 80.06700000000001
+        }
+      ]
+    },
+    {
+      "start": 80.687,
+      "end": 84.50800000000001,
+      "text": "aggiorna w nuovo uguale w più eta Delta w;",
+      "words": [
+        {
+          "text": "aggiorna",
+          "start": 80.687,
+          "end": 81.127
+        },
+        {
+          "text": "w",
+          "start": 81.267,
+          "end": 81.307
+        },
+        {
+          "text": "nuovo",
+          "start": 81.687,
+          "end": 82.007
+        },
+        {
+          "text": "uguale",
+          "start": 82.208,
+          "end": 82.568
+        },
+        {
+          "text": "w",
+          "start": 82.768,
+          "end": 82.808
+        },
+        {
+          "text": "più",
+          "start": 83.328,
+          "end": 83.468
+        },
+        {
+          "text": "eta",
+          "start": 83.728,
+          "end": 83.968
+        },
+        {
+          "text": "Delta",
+          "start": 84.148,
+          "end": 84.408
+        },
+        {
+          "text": "w;",
+          "start": 84.468,
+          "end": 84.50800000000001
+        }
+      ]
+    },
+    {
+      "start": 85.448,
+      "end": 86.748,
+      "text": "ripeti fino a convergenza.",
+      "words": [
+        {
+          "text": "ripeti",
+          "start": 85.448,
+          "end": 85.768
+        },
+        {
+          "text": "fino",
+          "start": 85.808,
+          "end": 85.988
+        },
+        {
+          "text": "a",
+          "start": 86.028,
+          "end": 86.06800000000001
+        },
+        {
+          "text": "convergenza.",
+          "start": 86.088,
+          "end": 86.748
+        }
+      ]
+    },
+    {
+      "start": 87.608,
+      "end": 91.328,
+      "text": "Usare il gradiente medio Delta w diviso l è lo standard,",
+      "words": [
+        {
+          "text": "Usare",
+          "start": 87.608,
+          "end": 87.848
+        },
+        {
+          "text": "il",
+          "start": 87.888,
+          "end": 87.948
+        },
+        {
+          "text": "gradiente",
+          "start": 87.968,
+          "end": 88.448
+        },
+        {
+          "text": "medio",
+          "start": 88.528,
+          "end": 88.808
+        },
+        {
+          "text": "Delta",
+          "start": 88.928,
+          "end": 89.188
+        },
+        {
+          "text": "w",
+          "start": 89.228,
+          "end": 89.268
+        },
+        {
+          "text": "diviso",
+          "start": 89.768,
+          "end": 90.108
+        },
+        {
+          "text": "l",
+          "start": 90.428,
+          "end": 90.468
+        },
+        {
+          "text": "è",
+          "start": 90.648,
+          "end": 90.688
+        },
+        {
+          "text": "lo",
+          "start": 90.728,
+          "end": 90.788
+        },
+        {
+          "text": "standard,",
+          "start": 90.848,
+          "end": 91.328
+        }
+      ]
+    },
+    {
+      "start": 91.528,
+      "end": 95.389,
+      "text": "ed eta può decrescere gradualmente per evitare oscillazioni attorno al minimo.",
+      "words": [
+        {
+          "text": "ed",
+          "start": 91.528,
+          "end": 91.648
+        },
+        {
+          "text": "eta",
+          "start": 91.708,
+          "end": 91.888
+        },
+        {
+          "text": "può",
+          "start": 92.008,
+          "end": 92.108
+        },
+        {
+          "text": "decrescere",
+          "start": 92.208,
+          "end": 92.688
+        },
+        {
+          "text": "gradualmente",
+          "start": 92.728,
+          "end": 93.309
+        },
+        {
+          "text": "per",
+          "start": 93.349,
+          "end": 93.449
+        },
+        {
+          "text": "evitare",
+          "start": 93.489,
+          "end": 93.829
+        },
+        {
+          "text": "oscillazioni",
+          "start": 93.969,
+          "end": 94.589
+        },
+        {
+          "text": "attorno",
+          "start": 94.629,
+          "end": 94.949
+        },
+        {
+          "text": "al",
+          "start": 94.969,
+          "end": 95.029
+        },
+        {
+          "text": "minimo.",
+          "start": 95.069,
+          "end": 95.389
+        }
+      ]
+    }
+  ]
+}

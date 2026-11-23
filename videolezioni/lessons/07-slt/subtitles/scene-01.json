@@ -1,0 +1,816 @@
+{
+  "duration": 60.039,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.041,
+      "text": "La Statistical Learning Theory risponde formalmente alla domanda centrale del machine learning:",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "Statistical",
+          "start": 0.22,
+          "end": 0.84
+        },
+        {
+          "text": "Learning",
+          "start": 0.9,
+          "end": 1.26
+        },
+        {
+          "text": "Theory",
+          "start": 1.32,
+          "end": 1.68
+        },
+        {
+          "text": "risponde",
+          "start": 1.84,
+          "end": 2.28
+        },
+        {
+          "text": "formalmente",
+          "start": 2.34,
+          "end": 2.98
+        },
+        {
+          "text": "alla",
+          "start": 3.001,
+          "end": 3.141
+        },
+        {
+          "text": "domanda",
+          "start": 3.181,
+          "end": 3.481
+        },
+        {
+          "text": "centrale",
+          "start": 3.521,
+          "end": 4.001
+        },
+        {
+          "text": "del",
+          "start": 4.061,
+          "end": 4.181
+        },
+        {
+          "text": "machine",
+          "start": 4.201,
+          "end": 4.541
+        },
+        {
+          "text": "learning:",
+          "start": 4.601,
+          "end": 5.041
+        }
+      ]
+    },
+    {
+      "start": 5.681,
+      "end": 9.602,
+      "text": "quando l'errore sui dati di training è una buona stima dell'errore sui dati futuri?",
+      "words": [
+        {
+          "text": "quando",
+          "start": 5.681,
+          "end": 5.901
+        },
+        {
+          "text": "l'errore",
+          "start": 5.961,
+          "end": 6.301
+        },
+        {
+          "text": "sui",
+          "start": 6.421,
+          "end": 6.561
+        },
+        {
+          "text": "dati",
+          "start": 6.581,
+          "end": 6.801
+        },
+        {
+          "text": "di",
+          "start": 6.841,
+          "end": 6.901
+        },
+        {
+          "text": "training",
+          "start": 6.941,
+          "end": 7.341
+        },
+        {
+          "text": "è",
+          "start": 7.461,
+          "end": 7.501
+        },
+        {
+          "text": "una",
+          "start": 7.541,
+          "end": 7.641
+        },
+        {
+          "text": "buona",
+          "start": 7.701,
+          "end": 7.901
+        },
+        {
+          "text": "stima",
+          "start": 7.961,
+          "end": 8.221
+        },
+        {
+          "text": "dell'errore",
+          "start": 8.281,
+          "end": 8.781
+        },
+        {
+          "text": "sui",
+          "start": 8.861,
+          "end": 8.981
+        },
+        {
+          "text": "dati",
+          "start": 9.021,
+          "end": 9.221
+        },
+        {
+          "text": "futuri?",
+          "start": 9.281,
+          "end": 9.602
+        }
+      ]
+    },
+    {
+      "start": 10.402,
+      "end": 15.382,
+      "text": "Vogliamo approssimare una funzione sconosciuta f di x da target d affetti da rumore.",
+      "words": [
+        {
+          "text": "Vogliamo",
+          "start": 10.402,
+          "end": 10.682
+        },
+        {
+          "text": "approssimare",
+          "start": 10.702,
+          "end": 11.182
+        },
+        {
+          "text": "una",
+          "start": 11.222,
+          "end": 11.322
+        },
+        {
+          "text": "funzione",
+          "start": 11.362,
+          "end": 11.742
+        },
+        {
+          "text": "sconosciuta",
+          "start": 11.802,
+          "end": 12.322
+        },
+        {
+          "text": "f",
+          "start": 12.742,
+          "end": 12.782
+        },
+        {
+          "text": "di",
+          "start": 12.882,
+          "end": 12.942
+        },
+        {
+          "text": "x",
+          "start": 13.182,
+          "end": 13.222
+        },
+        {
+          "text": "da",
+          "start": 13.562,
+          "end": 13.622
+        },
+        {
+          "text": "target",
+          "start": 13.702,
+          "end": 14.042
+        },
+        {
+          "text": "d",
+          "start": 14.222,
+          "end": 14.262
+        },
+        {
+          "text": "affetti",
+          "start": 14.522,
+          "end": 14.882
+        },
+        {
+          "text": "da",
+          "start": 14.942,
+          "end": 15.002
+        },
+        {
+          "text": "rumore.",
+          "start": 15.042,
+          "end": 15.382
+        }
+      ]
+    },
+    {
+      "start": 16.083,
+      "end": 21.803,
+      "text": "Idealmente vorremmo minimizzare il rischio vero R: l'integrale della loss tra d e h di",
+      "words": [
+        {
+          "text": "Idealmente",
+          "start": 16.083,
+          "end": 16.523
+        },
+        {
+          "text": "vorremmo",
+          "start": 16.563,
+          "end": 16.883
+        },
+        {
+          "text": "minimizzare",
+          "start": 16.983,
+          "end": 17.583
+        },
+        {
+          "text": "il",
+          "start": 17.663,
+          "end": 17.743
+        },
+        {
+          "text": "rischio",
+          "start": 17.823,
+          "end": 18.163
+        },
+        {
+          "text": "vero",
+          "start": 18.223,
+          "end": 18.503
+        },
+        {
+          "text": "R:",
+          "start": 18.943,
+          "end": 18.983
+        },
+        {
+          "text": "l'integrale",
+          "start": 19.403,
+          "end": 19.943
+        },
+        {
+          "text": "della",
+          "start": 19.983,
+          "end": 20.163
+        },
+        {
+          "text": "loss",
+          "start": 20.203,
+          "end": 20.483
+        },
+        {
+          "text": "tra",
+          "start": 20.663,
+          "end": 20.783
+        },
+        {
+          "text": "d",
+          "start": 20.903,
+          "end": 20.943
+        },
+        {
+          "text": "e",
+          "start": 21.343,
+          "end": 21.383
+        },
+        {
+          "text": "h",
+          "start": 21.643,
+          "end": 21.683
+        },
+        {
+          "text": "di",
+          "start": 21.743,
+          "end": 21.803
+        }
+      ]
+    },
+    {
+      "start": 22.023,
+      "end": 25.824,
+      "text": "x su tutta la distribuzione sconosciuta P di x e d.",
+      "words": [
+        {
+          "text": "x",
+          "start": 22.023,
+          "end": 22.063
+        },
+        {
+          "text": "su",
+          "start": 22.624,
+          "end": 22.704
+        },
+        {
+          "text": "tutta",
+          "start": 22.824,
+          "end": 23.084
+        },
+        {
+          "text": "la",
+          "start": 23.124,
+          "end": 23.204
+        },
+        {
+          "text": "distribuzione",
+          "start": 23.244,
+          "end": 23.824
+        },
+        {
+          "text": "sconosciuta",
+          "start": 23.864,
+          "end": 24.444
+        },
+        {
+          "text": "P",
+          "start": 24.684,
+          "end": 24.724
+        },
+        {
+          "text": "di",
+          "start": 25.064,
+          "end": 25.144
+        },
+        {
+          "text": "x",
+          "start": 25.344,
+          "end": 25.384
+        },
+        {
+          "text": "e",
+          "start": 25.664,
+          "end": 25.704
+        },
+        {
+          "text": "d.",
+          "start": 25.784,
+          "end": 25.824
+        }
+      ]
+    },
+    {
+      "start": 26.624,
+      "end": 30.185,
+      "text": "In pratica però possediamo solo un dataset finito di l esempi.",
+      "words": [
+        {
+          "text": "In",
+          "start": 26.624,
+          "end": 26.684
+        },
+        {
+          "text": "pratica",
+          "start": 26.724,
+          "end": 27.064
+        },
+        {
+          "text": "però",
+          "start": 27.284,
+          "end": 27.444
+        },
+        {
+          "text": "possediamo",
+          "start": 27.484,
+          "end": 27.924
+        },
+        {
+          "text": "solo",
+          "start": 27.984,
+          "end": 28.164
+        },
+        {
+          "text": "un",
+          "start": 28.204,
+          "end": 28.264
+        },
+        {
+          "text": "dataset",
+          "start": 28.304,
+          "end": 28.765
+        },
+        {
+          "text": "finito",
+          "start": 28.865,
+          "end": 29.225
+        },
+        {
+          "text": "di",
+          "start": 29.285,
+          "end": 29.365
+        },
+        {
+          "text": "l",
+          "start": 29.585,
+          "end": 29.625
+        },
+        {
+          "text": "esempi.",
+          "start": 29.725,
+          "end": 30.185
+        }
+      ]
+    },
+    {
+      "start": 30.745,
+      "end": 35.646,
+      "text": "Minimizziamo quindi il rischio empirico R emp, cioè l'errore medio sul training set:",
+      "words": [
+        {
+          "text": "Minimizziamo",
+          "start": 30.745,
+          "end": 31.285
+        },
+        {
+          "text": "quindi",
+          "start": 31.345,
+          "end": 31.565
+        },
+        {
+          "text": "il",
+          "start": 31.585,
+          "end": 31.645
+        },
+        {
+          "text": "rischio",
+          "start": 31.685,
+          "end": 31.965
+        },
+        {
+          "text": "empirico",
+          "start": 32.025,
+          "end": 32.545
+        },
+        {
+          "text": "R",
+          "start": 32.945,
+          "end": 32.985
+        },
+        {
+          "text": "emp,",
+          "start": 33.005,
+          "end": 33.345
+        },
+        {
+          "text": "cioè",
+          "start": 33.765,
+          "end": 33.925
+        },
+        {
+          "text": "l'errore",
+          "start": 34.085,
+          "end": 34.445
+        },
+        {
+          "text": "medio",
+          "start": 34.505,
+          "end": 34.765
+        },
+        {
+          "text": "sul",
+          "start": 34.805,
+          "end": 34.965
+        },
+        {
+          "text": "training",
+          "start": 35.005,
+          "end": 35.326
+        },
+        {
+          "text": "set:",
+          "start": 35.386,
+          "end": 35.646
+        }
+      ]
+    },
+    {
+      "start": 36.166,
+      "end": 39.486,
+      "text": "è il principio di Empirical Risk Minimization, ERM.",
+      "words": [
+        {
+          "text": "è",
+          "start": 36.166,
+          "end": 36.206
+        },
+        {
+          "text": "il",
+          "start": 36.246,
+          "end": 36.326
+        },
+        {
+          "text": "principio",
+          "start": 36.346,
+          "end": 36.826
+        },
+        {
+          "text": "di",
+          "start": 36.866,
+          "end": 36.926
+        },
+        {
+          "text": "Empirical",
+          "start": 36.986,
+          "end": 37.586
+        },
+        {
+          "text": "Risk",
+          "start": 37.666,
+          "end": 37.906
+        },
+        {
+          "text": "Minimization,",
+          "start": 38.006,
+          "end": 38.706
+        },
+        {
+          "text": "ERM.",
+          "start": 38.966,
+          "end": 39.486
+        }
+      ]
+    },
+    {
+      "start": 40.386,
+      "end": 43.247,
+      "text": "Ma si può davvero usare R emp per approssimare R?",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 40.386,
+          "end": 40.446
+        },
+        {
+          "text": "si",
+          "start": 40.506,
+          "end": 40.566
+        },
+        {
+          "text": "può",
+          "start": 40.606,
+          "end": 40.706
+        },
+        {
+          "text": "davvero",
+          "start": 40.786,
+          "end": 41.186
+        },
+        {
+          "text": "usare",
+          "start": 41.246,
+          "end": 41.526
+        },
+        {
+          "text": "R",
+          "start": 41.727,
+          "end": 41.767
+        },
+        {
+          "text": "emp",
+          "start": 41.787,
+          "end": 42.067
+        },
+        {
+          "text": "per",
+          "start": 42.347,
+          "end": 42.467
+        },
+        {
+          "text": "approssimare",
+          "start": 42.507,
+          "end": 43.007
+        },
+        {
+          "text": "R?",
+          "start": 43.207,
+          "end": 43.247
+        }
+      ]
+    },
+    {
+      "start": 44.007,
+      "end": 46.847,
+      "text": "Per stimare l'errore atteso esistono due famiglie di metodi:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 44.007,
+          "end": 44.107
+        },
+        {
+          "text": "stimare",
+          "start": 44.167,
+          "end": 44.467
+        },
+        {
+          "text": "l'errore",
+          "start": 44.547,
+          "end": 44.907
+        },
+        {
+          "text": "atteso",
+          "start": 44.947,
+          "end": 45.307
+        },
+        {
+          "text": "esistono",
+          "start": 45.367,
+          "end": 45.767
+        },
+        {
+          "text": "due",
+          "start": 45.847,
+          "end": 45.967
+        },
+        {
+          "text": "famiglie",
+          "start": 46.007,
+          "end": 46.347
+        },
+        {
+          "text": "di",
+          "start": 46.387,
+          "end": 46.447
+        },
+        {
+          "text": "metodi:",
+          "start": 46.487,
+          "end": 46.847
+        }
+      ]
+    },
+    {
+      "start": 47.227,
+      "end": 48.968,
+      "text": "quelli analitici — come AIC,",
+      "words": [
+        {
+          "text": "quelli",
+          "start": 47.227,
+          "end": 47.447
+        },
+        {
+          "text": "analitici",
+          "start": 47.487,
+          "end": 48.008
+        },
+        {
+          "text": "—",
+          "start": 48.008,
+          "end": 48.158
+        },
+        {
+          "text": "come",
+          "start": 48.308,
+          "end": 48.508
+        },
+        {
+          "text": "AIC,",
+          "start": 48.688,
+          "end": 48.968
+        }
+      ]
+    },
+    {
+      "start": 49.528,
+      "end": 56.209,
+      "text": "BIC, Minimum Description Length e la Structural Risk Minimization basata sulla VC-dimension — e quelli",
+      "words": [
+        {
+          "text": "BIC,",
+          "start": 49.528,
+          "end": 49.808
+        },
+        {
+          "text": "Minimum",
+          "start": 50.268,
+          "end": 50.668
+        },
+        {
+          "text": "Description",
+          "start": 50.728,
+          "end": 51.268
+        },
+        {
+          "text": "Length",
+          "start": 51.368,
+          "end": 51.668
+        },
+        {
+          "text": "e",
+          "start": 52.068,
+          "end": 52.108
+        },
+        {
+          "text": "la",
+          "start": 52.168,
+          "end": 52.228
+        },
+        {
+          "text": "Structural",
+          "start": 52.288,
+          "end": 52.768
+        },
+        {
+          "text": "Risk",
+          "start": 52.808,
+          "end": 53.028
+        },
+        {
+          "text": "Minimization",
+          "start": 53.108,
+          "end": 53.728
+        },
+        {
+          "text": "basata",
+          "start": 53.788,
+          "end": 54.128
+        },
+        {
+          "text": "sulla",
+          "start": 54.188,
+          "end": 54.409
+        },
+        {
+          "text": "VC-dimension",
+          "start": 54.489,
+          "end": 55.309
+        },
+        {
+          "text": "—",
+          "start": 55.309,
+          "end": 55.459
+        },
+        {
+          "text": "e",
+          "start": 55.909,
+          "end": 55.949
+        },
+        {
+          "text": "quelli",
+          "start": 56.009,
+          "end": 56.209
+        }
+      ]
+    },
+    {
+      "start": 56.249,
+      "end": 59.909,
+      "text": "empirici per ricampionamento, come cross-validation e bootstrap.",
+      "words": [
+        {
+          "text": "empirici",
+          "start": 56.249,
+          "end": 56.769
+        },
+        {
+          "text": "per",
+          "start": 56.829,
+          "end": 56.949
+        },
+        {
+          "text": "ricampionamento,",
+          "start": 56.989,
+          "end": 57.789
+        },
+        {
+          "text": "come",
+          "start": 58.049,
+          "end": 58.249
+        },
+        {
+          "text": "cross-validation",
+          "start": 58.369,
+          "end": 59.189
+        },
+        {
+          "text": "e",
+          "start": 59.369,
+          "end": 59.409
+        },
+        {
+          "text": "bootstrap.",
+          "start": 59.449,
+          "end": 59.909
+        }
+      ]
+    }
+  ]
+}

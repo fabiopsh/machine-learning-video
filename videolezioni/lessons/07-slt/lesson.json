@@ -1,0 +1,429 @@
+{
+  "lesson_id": "07-slt",
+  "chapter": 7,
+  "part": "Parte III · Generalizzazione: teoria e stima",
+  "title": "Statistical Learning Theory",
+  "source_tex": "note_migliorate/capitoli/07-slt.tex",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "7.1 Rischio e rischio empirico",
+      "title": "Rischio vero, rischio empirico e principio ERM",
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "tts_text": "La Statistical Learning Theory risponde formalmente alla domanda centrale del machine learning: quando l'errore sui dati di training è una buona stima dell'errore sui dati futuri? [pause:0.8] Vogliamo approssimare una funzione sconosciuta f di x da target d affetti da rumore. Idealmente vorremmo minimizzare il rischio vero R: l'integrale della loss tra d e h di x su tutta la distribuzione sconosciuta P di x e d. [pause:0.8] In pratica però possediamo solo un dataset finito di l esempi. Minimizziamo quindi il rischio empirico R emp, cioè l'errore medio sul training set: è il principio di Empirical Risk Minimization, ERM. [pause:0.9] Ma si può davvero usare R emp per approssimare R? Per stimare l'errore atteso esistono due famiglie di metodi: quelli analitici — come AIC, BIC, Minimum Description Length e la Structural Risk Minimization basata sulla VC-dimension — e quelli empirici per ricampionamento, come cross-validation e bootstrap.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.1 · Rischio e rischio empirico</div>\n  <h2 class=\"slide-title\">Dal rischio vero \\(R\\) all'Empirical Risk Minimization</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Rischio vero (su tutti i dati)</div>\n      \\[\\htmlId{f-r}{R = \\int L\\big(d,\\, h(\\x)\\big)\\,dP(\\x, d)}\\]\n      <p class=\"math-note\">Distribuzione \\(P(\\x,d)\\) sconosciuta: \\(R\\) non si può calcolare direttamente.</p>\n    </div>\n    <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n      <div class=\"step-tag-inline\">Rischio empirico (ERM su \\(l\\) esempi)</div>\n      \\[\\htmlId{f-remp}{\\Remp(h, TR) = \\frac{1}{l}\\sum_{p=1}^{l}\\big(d_p - h(\\x_p)\\big)^2}\\]\n      <p class=\"math-note\">Domanda centrale: quanto \\(\\Remp\\) approssima \\(R\\)?</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Stime analitiche</div>\n      <p>AIC e BIC (solo modelli lineari nei parametri), MDL, <strong>SRM con VC-dimension</strong> (questo capitolo).</p>\n    </div>\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Stime per ricampionamento</div>\n      <p><strong>Cross-validation</strong> e <strong>bootstrap</strong> (Capitolo 9).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 16.86,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "minimizzare il rischio vero"
+        },
+        {
+          "at": 19.28,
+          "action": "highlight",
+          "target": "#f-r",
+          "anchor": "integrale della loss"
+        },
+        {
+          "at": 31.56,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "rischio empirico R emp"
+        },
+        {
+          "at": 33.97,
+          "action": "highlight",
+          "target": "#f-remp",
+          "anchor": "errore medio sul training"
+        },
+        {
+          "at": 45.73,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "due famiglie di metodi"
+        }
+      ],
+      "duration_sec": 60.04
+    },
+    {
+      "id": "scene-02",
+      "section": "7.2 La VC-dimension",
+      "title": "Dicotomie, shattering e definizione di VC-dimension",
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "tts_text": "Per ottenere un bound analitico serve misurare la complessità di uno spazio delle ipotesi H, anche quando H contiene infinite funzioni, come i modelli lineari a pesi reali. [pause:0.7] L'idea di Vapnik e Chervonenkis è contare quanti punti distinti H riesce a discriminare completamente, per ogni possibile etichettatura. [pause:0.6] Presi m punti, con due classi esistono due alla m possibili dicotomie, cioè assegnazioni di più uno o meno uno. Diciamo che H frammenta — in inglese shatters — un insieme di punti se e solo se riesce a rappresentare tutte le sue dicotomie con errore zero. [pause:0.9] La VC-dimension di H è allora la cardinalità massima di un insieme di punti che può essere frammentato da H. Dire che la VC-dimension vale p significa due cose: H frammenta almeno un insieme di p punti, ma non frammenta nessun insieme di p più uno punti. [pause:0.9] Attenzione all'asimmetria della definizione: per il limite inferiore basta trovare una sola configurazione frammentabile; per il limite superiore bisogna dimostrare che nessuna configurazione di p più uno punti lo è.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.2 · Misurare la complessità di H infinito</div>\n  <h2 class=\"slide-title\">Dicotomie, shattering e VC-dimension</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Shattering (frammentazione)</div>\n    <p>Su \\(m\\) punti esistono \\(2^m\\) <strong>dicotomie</strong> (etichettature in \\(\\{-1, +1\\}\\)). \\(H\\) <strong>frammenta</strong> l'insieme se e solo se rappresenta <strong>tutte</strong> le \\(2^m\\) dicotomie con errore zero.</p>\n  </div>\n  <div id=\"s2\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Definizione — VC-dimension</div>\n    <p>\\(\\VC(H) = p\\) è la <strong>cardinalità massima</strong> di un insieme di punti frammentabile da \\(H\\):</p>\n    <ul class=\"clean-list\" style=\"margin-top:6px;\">\n      <li id=\"vc-lo\">\\(H\\) frammenta <strong>almeno un</strong> insieme di \\(p\\) punti;</li>\n      <li id=\"vc-hi\">\\(H\\) <strong>non</strong> frammenta <strong>nessun</strong> insieme di \\(p + 1\\) punti (se illimitato, \\(\\VC(H) = \\infty\\)).</li>\n    </ul>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Asimmetria della definizione</div>\n    <p>Per \\(\\VC(H) \\ge p\\) basta <strong>una</strong> configurazione; per \\(\\VC(H) &lt; p + 1\\) va esclusa <strong>ogni</strong> configurazione di \\(p + 1\\) punti.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 22.13,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "esistono due alla m possibili dicotomie"
+        },
+        {
+          "at": 37.54,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La VC-dimension di H"
+        },
+        {
+          "at": 49.66,
+          "action": "highlight",
+          "target": "#vc-lo",
+          "anchor": "almeno un insieme di p punti"
+        },
+        {
+          "at": 52.88,
+          "action": "highlight",
+          "target": "#vc-hi",
+          "anchor": "nessun insieme di p più uno"
+        },
+        {
+          "at": 55.94,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Attenzione all'asimmetria"
+        }
+      ],
+      "duration_sec": 68.47
+    },
+    {
+      "id": "scene-03",
+      "section": "7.2.1 La VC-dimension delle rette nel piano",
+      "title": "Dimostrazione: VC-dimension delle rette nel piano uguale a 3",
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "tts_text": "Dimostriamo il teorema classico: per le rette nel piano, la VC-dimension è esattamente tre. [pause:0.6] Prima parte: VC maggiore o uguale a tre. Scegliamo tre punti non allineati. Le loro due alla terza, cioè otto, dicotomie sono tutte separabili da una retta, come vedi negli otto riquadri a sinistra: se tutti i punti hanno la stessa classe, una retta li lascia dallo stesso lato; altrimenti una retta isola facilmente l'unico vertice diverso. Tre punti allineati non funzionerebbero, ma per il limite inferiore basta una configurazione. [pause:0.9] Seconda parte: VC minore di quattro. Dati quattro punti qualsiasi, ci sono solo tre casi possibili, e in ognuno esiste un'etichettatura non separabile perché ogni semipiano è convesso. [pause:0.5] Primo caso: tre punti allineati, dando al centrale la classe opposta agli estremi. Secondo caso: un quadrilatero convesso, etichettando come uno XOR le due diagonali che si incrociano, mostrato a destra. Terzo caso: un punto interno al triangolo formato dagli altri tre, con classe opposta ai vertici. [pause:0.8] Nessun insieme di quattro punti è frammentato. In generale, in R alla n gli iperpiani hanno VC-dimension n più uno.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.2.1 · Teorema e dimostrazione</div>\n  <h2 class=\"slide-title\">Rette nel piano: \\(\\VC(H) = 3\\) (in \\(\\R^n\\): \\(n+1\\))</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:4px;\">\n      <div class=\"plot-title\">\\(\\VC \\ge 3\\): tutte le \\(2^3 = 8\\) dicotomie di 3 punti</div>\n      <svg viewBox=\"0 0 364 166\" class=\"diagram-svg\" aria-label=\"Le 8 dicotomie di 3 punti non allineati\">\n        <rect x=\"12\" y=\"10\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"20\" y1=\"73\" x2=\"82\" y2=\"73\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"30\" cy=\"64\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"72\" cy=\"64\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"51\" cy=\"28\" r=\"4.5\" class=\"pt-neg\"/><rect x=\"98\" y=\"10\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"134\" y1=\"75\" x2=\"106\" y2=\"42\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"116\" cy=\"64\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"158\" cy=\"64\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"137\" cy=\"28\" r=\"4.5\" class=\"pt-neg\"/><rect x=\"184\" y=\"10\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"226\" y1=\"75\" x2=\"254\" y2=\"42\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"202\" cy=\"64\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"244\" cy=\"64\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"223\" cy=\"28\" r=\"4.5\" class=\"pt-neg\"/><rect x=\"270\" y=\"10\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"278\" y1=\"44\" x2=\"340\" y2=\"44\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"288\" cy=\"64\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"330\" cy=\"64\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"309\" cy=\"28\" r=\"4.5\" class=\"pt-pos\"/><rect x=\"12\" y=\"88\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"20\" y1=\"122\" x2=\"82\" y2=\"122\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"30\" cy=\"142\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"72\" cy=\"142\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"51\" cy=\"106\" r=\"4.5\" class=\"pt-neg\"/><rect x=\"98\" y=\"88\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"140\" y1=\"153\" x2=\"168\" y2=\"120\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"116\" cy=\"142\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"158\" cy=\"142\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"137\" cy=\"106\" r=\"4.5\" class=\"pt-pos\"/><rect x=\"184\" y=\"88\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"220\" y1=\"153\" x2=\"192\" y2=\"120\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"202\" cy=\"142\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"244\" cy=\"142\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"223\" cy=\"106\" r=\"4.5\" class=\"pt-pos\"/><rect x=\"270\" y=\"88\" width=\"78\" height=\"68\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" rx=\"3\"/><line x1=\"278\" y1=\"151\" x2=\"340\" y2=\"151\" stroke=\"#1A1A1A\" stroke-width=\"1.6\"/><circle cx=\"288\" cy=\"142\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"330\" cy=\"142\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"309\" cy=\"106\" r=\"4.5\" class=\"pt-pos\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:4px;\">\n        <div class=\"plot-title\">\\(\\VC &lt; 4\\): convessità dei semipiani (es. XOR)</div>\n        <svg viewBox=\"0 0 260 118\" class=\"diagram-svg\" aria-label=\"4 punti in configurazione XOR non separabile\">\n          <line x1=\"55\" y1=\"95\" x2=\"205\" y2=\"22\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/>\n          <line x1=\"205\" y1=\"95\" x2=\"55\" y2=\"22\" stroke=\"#C0392B\" stroke-width=\"1.6\"/>\n          <path d=\"M 32,62 Q 105,60 130,36 T 228,55\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/>\n          <circle cx=\"55\" cy=\"95\" r=\"5\" class=\"pt-pos\"/>\n          <circle cx=\"205\" cy=\"22\" r=\"5\" class=\"pt-pos\"/>\n          <circle cx=\"205\" cy=\"95\" r=\"5\" class=\"pt-neg\"/>\n          <circle cx=\"55\" cy=\"22\" r=\"5\" class=\"pt-neg\"/>\n          <circle cx=\"130\" cy=\"58.5\" r=\"3\" fill=\"#1A1A1A\"/>\n          <text x=\"130\" y=\"112\" text-anchor=\"middle\" class=\"svg-caption\">i segmenti si incrociano → nessuna retta li separa</text>\n        </svg>\n      </div>\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">3 casi esaustivi su 4 punti</div>\n        <ul class=\"clean-list\" style=\"font-size:0.84rem;\">\n          <li><strong>3 allineati</strong>: centrale di classe opposta.</li>\n          <li><strong>Quadrilatero convesso</strong>: etichette XOR sulle diagonali.</li>\n          <li><strong>1 punto nel triangolo</strong>: interno di classe opposta.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema generale — Iperpiani in \\(\\R^n\\)</div>\n    <p>Per gli iperpiani separatori (LTU) in \\(\\R^n\\) vale \\(\\VC(H) = n + 1\\) (valore massimo; vincolando \\(\\norm{\\w}\\) può diminuire, come nelle SVM).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.54,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Prima parte: VC maggiore o uguale a tre"
+        },
+        {
+          "at": 29.77,
+          "action": "show",
+          "target": "#s2, #s3",
+          "anchor": "Seconda parte: VC minore di quattro"
+        },
+        {
+          "at": 46.49,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "quadrilatero convesso"
+        },
+        {
+          "at": 60.49,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "In generale, in R alla n"
+        }
+      ],
+      "duration_sec": 65.54
+    },
+    {
+      "id": "scene-04",
+      "section": "7.2.2 – 7.2.3 Altri esempi e rapporto col numero di parametri",
+      "title": "Esempi di VC-dimension e mito del numero di parametri",
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "tts_text": "Vediamo altri esempi significativi di VC-dimension. Soglie sulla retta reale e intervalli su R hanno VC-dimension due. [pause:0.6] Cerchi centrati nell'origine con il solo raggio b hanno VC-dimension uno: non riescono a etichettare positivo il punto più lontano e negativo il più vicino. Se aggiungiamo un parametro k per scambiare interno ed esterno, la VC-dimension sale a due. Cerchi nel piano con centro libero hanno VC-dimension tre, sia con raggio libero che con raggio fisso. [pause:0.9] Questo dimostra un fatto cruciale: la VC-dimension non coincide con il numero di parametri liberi. [pause:0.6] Classi con lo stesso numero di parametri hanno VC-dimension diverse, e si possono aggiungere parametri ridondanti senza cambiare nulla. Addirittura esistono modelli con un solo parametro e VC-dimension infinita, come il segno di seno di alfa x: aumentando la frequenza alfa si frammentano insiemi arbitrariamente grandi. Anche il 1-nearest neighbor ha VC-dimension infinita, perché classifica senza errori qualunque etichettatura del training set.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.2.2 – 7.2.3 · Esempi e parametri liberi</div>\n  <h2 class=\"slide-title\">VC-dimension non coincide con il numero di parametri</h2>\n  <div class=\"split-visual\">\n    <table id=\"s1\" class=\"acad-table cue-hidden\">\n      <thead><tr><th>Classe di ipotesi \\(H\\)</th><th>\\(\\VC(H)\\)</th></tr></thead>\n      <tbody>\n        <tr><td>Soglie su \\(\\R\\), \\(\\sign(w_1 x + w_0)\\)</td><td><strong>2</strong></td></tr>\n        <tr><td>Intervalli su \\(\\R\\)</td><td><strong>2</strong></td></tr>\n        <tr id=\"r-c1\"><td>Cerchi nell'origine \\(\\sign(\\x\\T\\x - b)\\)</td><td><strong>1</strong></td></tr>\n        <tr id=\"r-c2\"><td>Cerchi nell'origine \\(\\sign(k\\,\\x\\T\\x - b)\\)</td><td><strong>2</strong></td></tr>\n        <tr><td>Cerchi 2D (centro libero, raggio libero o fisso)</td><td><strong>3</strong></td></tr>\n      </tbody>\n    </table>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">1 parametro, VC infinita</div>\n        <p>\\(\\htmlId{f-sin}{h(x) = \\sign\\big(\\sin(\\alpha x)\\big)}\\): un solo parametro reale \\(\\alpha\\), ma scegliendo \\(\\alpha\\) grande frammenta insiemi arbitrariamente grandi (\\(\\VC = \\infty\\)).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Nearest Neighbor (1-NN)</div>\n        <p>\\(\\VC(\\text{1-NN}) = \\infty\\): classifica correttamente <strong>qualunque</strong> etichettatura del training set.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.35,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "altri esempi significativi"
+        },
+        {
+          "at": 9.64,
+          "action": "highlight",
+          "target": "#r-c1",
+          "anchor": "solo raggio b"
+        },
+        {
+          "at": 17.4,
+          "action": "highlight",
+          "target": "#r-c2",
+          "anchor": "parametro k per scambiare"
+        },
+        {
+          "at": 42.04,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "un solo parametro e VC-dimension infinita"
+        },
+        {
+          "at": 46.44,
+          "action": "highlight",
+          "target": "#f-sin",
+          "anchor": "segno di seno di alfa x"
+        },
+        {
+          "at": 55.72,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "1-nearest neighbor"
+        }
+      ],
+      "duration_sec": 63.15
+    },
+    {
+      "id": "scene-05",
+      "section": "7.3 Il bound sul rischio",
+      "title": "Il VC-bound e la VC-confidence",
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "tts_text": "Ecco il risultato centrale della Statistical Learning Theory: il VC-bound. [pause:0.6] Con probabilità almeno uno meno delta, per ogni ipotesi h in H con VC-dimension minore del numero di esempi l, vale che il rischio vero R di h è minore o uguale al rischio empirico R emp di h, più un termine epsilon chiamato VC-confidence. [pause:0.9] Per la loss zero uno, epsilon è la radice quadrata di VC per il logaritmo di due l su VC più uno, meno il logaritmo di delta quarti, il tutto diviso l. [pause:0.8] Delta rappresenta la confidenza: ad esempio con delta uguale a zero virgola zero uno il bound vale con probabilità novantanove per cento. Osserva il cuore della formula: a meno di fattori logaritmici, la VC-confidence dipende dal rapporto VC diviso l. Cresce con la complessità VC e decresce con il numero di dati l: raddoppiare gli esempi ha lo stesso effetto di dimezzare la complessità. E soprattutto epsilon si può calcolare prima ancora di addestrare il modello.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.3 · Teorema fondamentale della SLT</div>\n  <h2 class=\"slide-title\">Il VC-bound sul rischio vero</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — VC-bound (probabilità \\(\\ge 1 - \\delta\\), con \\(\\VC &lt; l\\))</div>\n    \\[\\boxed{\\;\\underbrace{\\htmlId{f-r5}{R[h]}}_{\\text{rischio vero}} \\;\\le\\; \\underbrace{\\htmlId{f-re5}{\\Remp[h]} + \\htmlId{f-eps5}{\\eps(\\VC, l, \\delta)}}_{\\text{rischio garantito}}\\;}\\]\n  </div>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">VC-confidence (per loss 0/1)</div>\n    \\[\\eps(\\VC, l, \\delta) = \\sqrt{\\frac{\\htmlId{f-vcratio}{\\VC}\\left(\\ln\\frac{2l}{\\VC} + 1\\right) - \\ln\\frac{\\delta}{4}}{\\htmlId{f-l5}{l}}}\\]\n    <p class=\"math-note\">Confidenza: \\(\\delta = 0{,}01 \\implies\\) probabilità \\(99\\%\\). A meno di logaritmi dipende dal rapporto \\(\\VC / l\\).</p>\n  </div>\n  <div id=\"s3\" class=\"props-grid cue-hidden\">\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>\\(\\eps\\) <strong>cresce</strong> con \\(\\VC\\) e <strong>decresce</strong> con \\(l\\)</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Raddoppiare \\(l \\approx\\) dimezzare la complessità \\(\\VC\\)</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Stima \\(R\\) usando solo \\(\\Remp\\) e \\(\\VC(H)\\)</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>\\(\\eps\\) è calcolabile <strong>prima</strong> dell'addestramento</div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.98,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Con probabilità almeno uno meno delta"
+        },
+        {
+          "at": 13.84,
+          "action": "highlight",
+          "target": "#f-r5",
+          "anchor": "rischio vero R di h"
+        },
+        {
+          "at": 17.14,
+          "action": "highlight",
+          "target": "#f-re5",
+          "anchor": "rischio empirico R emp"
+        },
+        {
+          "at": 19.8,
+          "action": "highlight",
+          "target": "#f-eps5",
+          "anchor": "termine epsilon chiamato VC-confidence"
+        },
+        {
+          "at": 23.06,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per la loss zero uno"
+        },
+        {
+          "at": 48.17,
+          "action": "highlight",
+          "target": "#f-vcratio, #f-l5",
+          "anchor": "rapporto VC diviso l"
+        },
+        {
+          "at": 50.49,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Cresce con la complessità"
+        }
+      ],
+      "duration_sec": 63.81
+    },
+    {
+      "id": "scene-06",
+      "section": "7.3 Il bound sul rischio",
+      "title": "Come il VC-bound spiega underfitting, overfitting e limiti pratici",
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "tts_text": "Il VC-bound offre la spiegazione più pulita di underfitting e overfitting a numero di dati l fissato. [pause:0.7] Guarda il grafico al variare della VC-dimension. La curva blu, il rischio empirico sul training, scende sempre all'aumentare della complessità. [pause:0.5] La curva rossa, la VC-confidence epsilon, invece cresce sempre. [pause:0.6] La loro somma — la curva viola del bound sul rischio vero — ha quindi un minimo nel punto di miglior compromesso. [pause:0.8] A sinistra del minimo il modello è troppo semplice: epsilon è piccolo ma R emp è alto, siamo in underfitting. A destra del minimo il modello è troppo complesso: R emp è bassissimo ma epsilon esplode, trascinando in alto il bound: è l'overfitting. Qui si ritrovano h e h primo: h ha training error più basso ma sta a destra del minimo con rischio peggiore di h primo. [pause:0.9] Due note essenziali: il bound è worst case e può essere centinaia di volte più largo dell'overfitting reale; ma poiché per molti modelli la VC-dimension è lineare nei parametri, giustifica la regola che serve un numero di esempi lineare nel numero di parametri.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.3 · Lettura del VC-bound</div>\n  <h2 class=\"slide-title\">Underfitting, overfitting e natura worst-case del bound</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 370 205\" class=\"diagram-svg\" aria-label=\"VC-bound: Remp, VC-confidence e somma\">\n        <defs>\n          <marker id=\"arr-vcb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"40\" y1=\"175\" x2=\"350\" y2=\"175\" class=\"svg-axis\" marker-end=\"url(#arr-vcb)\"/>\n        <line x1=\"40\" y1=\"175\" x2=\"40\" y2=\"14\" class=\"svg-axis\" marker-end=\"url(#arr-vcb)\"/>\n        <text x=\"195\" y=\"196\" text-anchor=\"middle\" class=\"svg-caption\">VC-dimension (complessità di H)</text>\n        <text x=\"15\" y=\"96\" transform=\"rotate(-90 15 96)\" text-anchor=\"middle\" class=\"svg-caption\">errore</text>\n        <path id=\"c-remp\" d=\"M 57.0,77.5 L 61.4,84.2 L 65.8,90.5 L 70.3,96.3 L 74.7,101.7 L 79.2,106.7 L 83.6,111.4 L 88.0,115.8 L 92.5,119.9 L 96.9,123.6 L 101.3,127.2 L 105.8,130.5 L 110.2,133.5 L 114.6,136.4 L 119.1,139.0 L 123.5,141.5 L 127.9,143.8 L 132.4,145.9 L 136.8,147.9 L 141.2,149.8 L 145.7,151.5 L 150.1,153.2 L 154.5,154.7 L 159.0,156.1 L 163.4,157.4 L 167.8,158.6 L 172.3,159.7 L 176.7,160.7 L 181.1,161.7 L 185.6,162.6 L 190.0,163.5 L 194.4,164.3 L 198.9,165.0 L 203.3,165.7 L 207.7,166.3 L 212.2,166.9 L 216.6,167.5 L 221.0,168.0 L 225.5,168.5 L 229.9,168.9 L 234.3,169.4 L 238.8,169.7 L 243.2,170.1 L 247.6,170.4 L 252.1,170.8 L 256.5,171.0 L 260.9,171.3 L 265.4,171.6 L 269.8,171.8 L 274.2,172.0 L 278.7,172.2 L 283.1,172.4 L 287.5,172.6 L 292.0,172.8 L 296.4,172.9 L 300.8,173.1 L 305.3,173.2 L 309.7,173.3 L 314.2,173.4 L 318.6,173.5 L 323.0,173.6\" class=\"svg-curve-blue\"/>\n        <path id=\"c-conf\" d=\"M 57.0,172.6 L 61.4,171.8 L 65.8,170.8 L 70.3,169.8 L 74.7,168.8 L 79.2,167.7 L 83.6,166.6 L 88.0,165.4 L 92.5,164.1 L 96.9,162.9 L 101.3,161.6 L 105.8,160.3 L 110.2,158.9 L 114.6,157.5 L 119.1,156.1 L 123.5,154.7 L 127.9,153.2 L 132.4,151.7 L 136.8,150.2 L 141.2,148.6 L 145.7,147.1 L 150.1,145.5 L 154.5,143.9 L 159.0,142.2 L 163.4,140.6 L 167.8,138.9 L 172.3,137.2 L 176.7,135.5 L 181.1,133.7 L 185.6,132.0 L 190.0,130.2 L 194.4,128.4 L 198.9,126.6 L 203.3,124.7 L 207.7,122.9 L 212.2,121.0 L 216.6,119.1 L 221.0,117.2 L 225.5,115.3 L 229.9,113.4 L 234.3,111.4 L 238.8,109.5 L 243.2,107.5 L 247.6,105.5 L 252.1,103.5 L 256.5,101.4 L 260.9,99.4 L 265.4,97.3 L 269.8,95.3 L 274.2,93.2 L 278.7,91.1 L 283.1,89.0 L 287.5,86.9 L 292.0,84.7 L 296.4,82.6 L 300.8,80.4 L 305.3,78.2 L 309.7,76.0 L 314.2,73.8 L 318.6,71.6 L 323.0,69.4\" class=\"svg-curve-red\"/>\n        <path id=\"c-sum\" d=\"M 57.0,75.2 L 61.4,81.0 L 65.8,86.3 L 70.3,91.1 L 74.7,95.5 L 79.2,99.4 L 83.6,103.0 L 88.0,106.2 L 92.5,109.0 L 96.9,111.5 L 101.3,113.8 L 105.8,115.7 L 110.2,117.4 L 114.6,118.9 L 119.1,120.2 L 123.5,121.2 L 127.9,122.0 L 132.4,122.7 L 136.8,123.1 L 141.2,123.4 L 145.7,123.6 L 150.1,123.6 L 154.5,123.5 L 159.0,123.3 L 163.4,122.9 L 167.8,122.4 L 172.3,121.9 L 176.7,121.2 L 181.1,120.4 L 185.6,119.6 L 190.0,118.7 L 194.4,117.7 L 198.9,116.6 L 203.3,115.4 L 207.7,114.2 L 212.2,113.0 L 216.6,111.6 L 221.0,110.2 L 225.5,108.8 L 229.9,107.3 L 234.3,105.8 L 238.8,104.2 L 243.2,102.6 L 247.6,100.9 L 252.1,99.2 L 256.5,97.5 L 260.9,95.7 L 265.4,93.9 L 269.8,92.1 L 274.2,90.2 L 278.7,88.3 L 283.1,86.4 L 287.5,84.5 L 292.0,82.5 L 296.4,80.5 L 300.8,78.5 L 305.3,76.4 L 309.7,74.4 L 314.2,72.3 L 318.6,70.2 L 323.0,68.0\" fill=\"none\" stroke=\"#6A3D9A\" stroke-width=\"2.7\" class=\"cue-hidden\"/>\n        <g id=\"c-min\" class=\"cue-hidden\">\n          <line x1=\"148.1\" y1=\"175\" x2=\"148.1\" y2=\"123.6\" stroke=\"#6E6E6E\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n          <circle cx=\"148.1\" cy=\"123.6\" r=\"4.5\" fill=\"#6A3D9A\"/>\n          <text x=\"148.1\" y=\"111.6\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"#6A3D9A\">minimo del bound</text>\n          <text x=\"82\" y=\"158\" text-anchor=\"middle\" class=\"svg-caption\">underfitting</text>\n          <text x=\"290\" y=\"148\" text-anchor=\"middle\" class=\"svg-caption\">overfitting</text>\n        </g>\n        <text x=\"242\" y=\"28\" class=\"svg-legend svg-blue\">— R_emp (training)</text>\n        <text x=\"242\" y=\"42\" class=\"svg-legend svg-red\">— VC-confidence ε</text>\n        <text x=\"242\" y=\"56\" class=\"svg-legend\" fill=\"#6A3D9A\">— bound su R</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Attenzione — Bound worst case</div>\n        <p>Deve valere per <em>tutte</em> le \\(h \\in H\\) e <em>tutti</em> i training set (salvo \\(\\delta\\)): può essere <strong>centinaia di volte</strong> più largo dell'overfitting osservato.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Conseguenza pratica</div>\n        <p>Quando \\(\\VC\\) è lineare nei parametri liberi, serve un numero di esempi \\(l\\) <strong>lineare nel numero di parametri</strong> (giustifica «almeno \\(k\\) esempi per parametro»).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 7.6,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Guarda il grafico"
+        },
+        {
+          "at": 10.62,
+          "action": "highlight",
+          "target": "#c-remp",
+          "anchor": "curva blu"
+        },
+        {
+          "at": 16.11,
+          "action": "highlight",
+          "target": "#c-conf",
+          "anchor": "curva rossa"
+        },
+        {
+          "at": 20.37,
+          "action": "show",
+          "target": "#c-sum, #c-min",
+          "anchor": "La loro somma"
+        },
+        {
+          "at": 52.65,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "il bound è worst case"
+        },
+        {
+          "at": 65.53,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "lineare nel numero di parametri"
+        }
+      ],
+      "duration_sec": 67.76
+    },
+    {
+      "section": "7.2 – 7.3 Convessità nella prova e forme generali del VC-bound",
+      "title": "Dettaglio della prova per convessità, m vs l e forme del bound",
+      "tts_text": "Approfondiamo due dettagli chiave prima di passare alla Structural Risk Minimization. [pause:0.6] Primo: nella dimostrazione che le rette nel piano hanno VC-dimension minore di quattro, il motore matematico che elimina tutti e tre i casi è la convessità dei semipiani: se un semipiano contiene due punti, deve contenere l'intero segmento che li unisce. [pause:0.6] Nel primo caso, il semipiano che contiene i due estremi allineati contiene forzatamente anche il punto centrale di classe opposta. Nel secondo caso, quello dello XOR su un quadrilatero convesso, i segmenti delle due classi si incrociano: il punto d'incrocio dovrebbe appartenere contemporaneamente a entrambi i semipiani, che però sono disgiunti — contraddizione. Nel terzo caso, ogni semipiano che racchiude i tre vertici del triangolo racchiude l'intero triangolo e dunque anche il punto interno. [pause:0.8] Secondo: nella definizione di VC-dimension fai attenzione a non confondere m, il numero di punti testati per lo shattering, con l, la dimensione del training set. Nel VC-bound generale — che per classi e task diversi si scrive anche come R minore o uguale di R emp più epsilon di uno su l, VC e uno su delta, oppure di VC su l e meno logaritmo di delta su l — all'aumentare del numero di dati l la VC-confidence epsilon cala verso zero e il rischio empirico diventa davvero una buona stima del rischio vero: si può apprendere bene purché si abbiano abbastanza dati e complessità adatta al problema.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.2 – 7.3 · Approfondimento dimostrazione e VC-bound</div>\n  <h2 class=\"slide-title\">Convessità dei semipiani (\\(m\\) vs \\(l\\)) e forme generali del bound</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Motore della prova \\(\\VC &lt; 4\\): convessità dei semipiani</div>\n    <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n      <li><strong>3 allineati</strong>: il semipiano con i due estremi contiene tutto il segmento → include il centrale.</li>\n      <li><strong>Quadrilatero (XOR)</strong>: i due segmenti si incrociano → il punto d'incrocio starebbe in due semipiani disgiunti (assurdo!).</li>\n      <li><strong>Punto nel triangolo</strong>: il semipiano con i 3 vertici contiene tutto il triangolo → include il punto interno.</li>\n    </ul>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Forme generali della VC-confidence</div>\n      \\[R \\le \\Remp + \\eps\\!\\left(\\frac{1}{l}, \\VC, \\frac{1}{\\delta}\\right) \\;\\equiv\\; \\Remp + \\eps\\!\\left(\\frac{\\VC}{l}, -\\frac{\\ln\\delta}{l}\\right)\\]\n      <p class=\"math-note\">Attenzione: \\(m\\) = punti per shattering \\(\\neq l\\) = dimensione del training set.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Effetto di molti dati (\\(l\\) alto)</div>\n      <p>Al crescere di \\(l\\), \\(\\eps \\to 0\\) e \\(\\Remp\\) approssima bene \\(R\\): adattarsi abbastanza per evitare underfitting, ma non troppo per evitare overfitting.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 13.64,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "convessità dei semipiani"
+        },
+        {
+          "at": 54.49,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "non confondere m"
+        },
+        {
+          "at": 80.01,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "aumentare del numero di dati l"
+        }
+      ],
+      "id": "scene-07",
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 94.71
+    },
+    {
+      "id": "scene-08",
+      "section": "7.4 Structural Risk Minimization",
+      "title": "SRM, strutture annidate e due realizzazioni pratiche",
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "tts_text": "Il VC-bound ispira un principio induttivo più forte dell'ERM: la Structural Risk Minimization, SRM. [pause:0.6] Invece di minimizzare solo R emp in uno spazio fisso, definiamo una struttura annidata di spazi delle ipotesi H uno contenuto in H due fino ad H n, con VC-dimension crescente, e scegliamo lo spazio e l'ipotesi che minimizzano il bound complessivo. [pause:0.8] Esempi concreti di strutture annidate sono polinomi di grado M crescente, reti con numero crescente di unità nascoste o di epoche, alberi con più nodi, e soprattutto il vincolo norma di w minore di c, cioè la regolarizzazione controllata da lambda. Gli iperparametri importanti sono proprio quelli che controllano la VC-dimension. [pause:0.9] In pratica il bound è troppo largo per fare model assessment, ma dà il fondamento teorico al machine learning, funziona bene per il ranking nella model selection, e porta a due grandi strategie. [pause:0.6] Prima strategia: fissare la complessità e minimizzare R emp — l'approccio di Tikhonov, early stopping e reti neurali. Seconda strategia: fissare R emp e minimizzare automaticamente la VC-confidence — l'idea delle Support Vector Machines. Nota finale: nelle reti profonde sovra-parametrizzate fenomeni come double descent e benign overfitting estenderanno questo quadro classico.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.4 · Structural Risk Minimization</div>\n  <h2 class=\"slide-title\">Strutture annidate e due approcci pratici alla SRM</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Structural Risk Minimization (SRM)</div>\n    <p>Su una struttura annidata \\(\\htmlId{f-nest}{H_1 \\subseteq H_2 \\subseteq \\dots \\subseteq H_n}\\) con \\(\\VC(H_1) \\le \\dots \\le \\VC(H_n)\\), si sceglie lo spazio e l'ipotesi con il <strong>minimo bound</strong> \\(\\Remp + \\eps\\).</p>\n  </div>\n  <div id=\"s2\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Strutture annidate tipiche:</span>\n    <span class=\"pill\">Polinomi grado \\(M\\)</span>\n    <span class=\"pill\">Unità nascoste / epoche</span>\n    <span class=\"pill pill-accent\">\\(\\norm{\\w} &lt; c\\) (regolarizzazione \\(\\lambda\\))</span>\n    <span class=\"pill\">Nodi di un albero</span>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Approccio 1 — Complessità fissa, minimizza \\(\\Remp\\)</div>\n      <p>Reti neurali: <strong>early stopping</strong> (SRM implicita) o <strong>regolarizzazione di Tikhonov</strong>.</p>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Approccio 2 — \\(\\Remp\\) fisso, minimizza \\(\\eps\\)</div>\n      <p>Minimizzazione automatica della VC-confidence tramite il margine: è il principio delle <strong>SVM</strong> (Cap. 13).</p>\n    </div>\n  </div>\n  <div id=\"s5\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Oltre il compromesso classico</div>\n    <p>Il bound è largo per il <em>model assessment</em> ma utile per il ranking. Le reti profonde mostrano anche <em>double descent</em> e <em>benign overfitting</em> (Cap. 15).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 13.04,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "struttura annidata di spazi"
+        },
+        {
+          "at": 16.08,
+          "action": "highlight",
+          "target": "#f-nest",
+          "anchor": "H uno contenuto in H due"
+        },
+        {
+          "at": 26.32,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Esempi concreti di strutture"
+        },
+        {
+          "at": 60.77,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Prima strategia"
+        },
+        {
+          "at": 68.93,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Seconda strategia"
+        },
+        {
+          "at": 81.85,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "double descent"
+        }
+      ],
+      "duration_sec": 86.99
+    },
+    {
+      "section": "7.4.1 A cosa serve davvero il VC-bound",
+      "title": "ML vs ottimizzazione pura e limiti del bound come stima",
+      "tts_text": "Prima di chiudere il capitolo fermiamoci su una domanda decisiva: se il VC-bound è spesso molto largo, a cosa serve concretamente nella teoria e nella pratica del Machine Learning? [pause:0.7] Primo: fornisce un fondamento teorico universale, indipendente dai dettagli del modello e dell'algoritmo, dimostrando che il rischio si può limitare analiticamente e chiarendo la differenza profonda tra Machine Learning e ottimizzazione pura. Nell'ottimizzazione pura l'obiettivo è minimizzare l'errore sui dati noti; nel Machine Learning l'obiettivo è minimizzare il rischio sui dati futuri, scegliendo la complessità ottima lungo la struttura annidata secondo il principio induttivo della SRM. [pause:0.8] Secondo: perché il bound è usato raramente come stima numerica dell'errore nel model assessment? Per quattro motivi precisi: può essere larghissimo — restando però utile nella model selection, dove conta solo l'ordinamento relativo, cioè il ranking tra modelli; è un upper bound probabilistico uniforme valido per tutte le funzioni della classe, il che legittima la ricerca dentro H; la VC-dimension di modelli non lineari è spesso difficilissima da calcolare in forma chiusa; e per valutazioni numeriche affidabili si studiano bound più stretti o si ricorre al ricampionamento empirico. [pause:0.7] Terzo: indica una via costruttiva per progettare nuovi modelli guidati direttamente dalla SRM — ed è esattamente da questa idea che nasceranno le Support Vector Machines.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.4.1 · Ruolo teorico e pratico del VC-bound</div>\n  <h2 class=\"slide-title\">ML vs ottimizzazione pura e i 4 motivi dei limiti come stima</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Fondamento teorico: Machine Learning ≠ Ottimizzazione pura</div>\n    <p>L'ottimizzazione minimizza l'errore sui dati noti (\\(\\Remp\\)); il ML minimizza il rischio sui <strong>dati futuri</strong> (\\(R\\)) tramite il principio induttivo della SRM, indipendentemente dal modello.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Perché si usa raramente per il model assessment (4 ragioni)</div>\n      <ol class=\"algo-list\" style=\"font-size:0.83rem;\">\n        <li>Spesso <strong>troppo largo</strong> (ma utile per il <strong>ranking</strong> in model selection).</li>\n        <li>È un upper bound <strong>uniforme</strong> su tutta \\(H\\) (legittima la ricerca in \\(H\\)).</li>\n        <li>\\(\\VC(H)\\) è difficile da calcolare per modelli non lineari.</li>\n        <li>Per stime accurate servono bound più stretti o validazione empirica.</li>\n      </ol>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Guida a nuovi modelli</div>\n      <p>Indica una direzione costruttiva per progettare algoritmi direttamente guidati dalla SRM: è la genesi teorica delle <strong>SVM</strong> (Cap. 13).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 14.21,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "fondamento teorico universale"
+        },
+        {
+          "at": 53.23,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per quattro motivi precisi"
+        },
+        {
+          "at": 82.83,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: indica una via costruttiva"
+        }
+      ],
+      "id": "scene-09",
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 93.2
+    },
+    {
+      "id": "scene-10",
+      "section": "Sintesi e verifica",
+      "title": "Punti chiave e domande di verifica (SLT)",
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "tts_text": "Chiudiamo la Statistical Learning Theory con i quattro punti essenziali. [pause:0.7] Primo: nell'ERM minimizziamo il rischio empirico al posto del rischio vero, e serve stimare quanto bene il primo approssimi il secondo. [pause:0.6] Secondo: la VC-dimension misura la capacità di H come massimo numero di punti frammentabili; vale n più uno per gli iperpiani in R alla n, e non coincide con il numero di parametri liberi. [pause:0.7] Terzo: il VC-bound limita il rischio con R emp più la VC-confidence, che cresce con la VC-dimension e decresce con il numero di dati l. [pause:0.7] Quarto: la SRM minimizza il bound su una struttura annidata di spazi, portando da un lato alla regolarizzazione di Tikhonov e dall'altro alle Support Vector Machines.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">Capitolo 7 · Chiusura</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>ERM</strong>: minimizza \\(\\Remp\\) al posto di \\(R\\).</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>VC-dimension</strong>: massimo numero di punti frammentabili; \\(n+1\\) per iperpiani in \\(\\R^n\\); diversa dal numero di parametri.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>VC-bound</strong>: \\(R \\le \\Remp + \\eps(\\VC, l, \\delta)\\), con \\(\\eps\\) crescente in \\(\\VC\\) e decrescente in \\(l\\).</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>SRM</strong>: minimo del bound su \\(H_1 \\subseteq H_2 \\subseteq \\dots\\) → Tikhonov / early stopping vs SVM.</li>\n      </ul>\n    </div>\n    <div id=\"s5\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Differenza tra rischio \\(R\\) e \\(\\Remp\\); cos'è il principio ERM?</li>\n        <li>Definire shattering e VC-dimension; dimostrare \\(\\VC(\\text{rette in }\\R^2) = 3\\).</li>\n        <li>La VC-dimension coincide col numero di parametri? Esempi.</li>\n        <li>Scrivere il VC-bound e spiegare underfitting e overfitting.</li>\n        <li>Cos'è la SRM? Esempi di strutture annidate e limiti del bound.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.48,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: nell'ERM"
+        },
+        {
+          "at": 13.95,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: la VC-dimension"
+        },
+        {
+          "at": 26.81,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: il VC-bound"
+        },
+        {
+          "at": 36.57,
+          "action": "show",
+          "target": "#s4, #s5",
+          "anchor": "Quarto: la SRM"
+        }
+      ],
+      "duration_sec": 47.84
+    }
+  ]
+}

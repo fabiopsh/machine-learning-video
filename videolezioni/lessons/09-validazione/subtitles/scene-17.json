@@ -1,0 +1,602 @@
+{
+  "duration": 42.47,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.742,
+      "text": "Chiudiamo il capitolo fissando i cinque punti fondamentali della validazione.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.08,
+          "end": 0.46
+        },
+        {
+          "text": "il",
+          "start": 0.5,
+          "end": 0.56
+        },
+        {
+          "text": "capitolo",
+          "start": 0.58,
+          "end": 1.021
+        },
+        {
+          "text": "fissando",
+          "start": 1.081,
+          "end": 1.521
+        },
+        {
+          "text": "i",
+          "start": 1.581,
+          "end": 1.621
+        },
+        {
+          "text": "cinque",
+          "start": 1.641,
+          "end": 1.941
+        },
+        {
+          "text": "punti",
+          "start": 1.981,
+          "end": 2.221
+        },
+        {
+          "text": "fondamentali",
+          "start": 2.241,
+          "end": 2.841
+        },
+        {
+          "text": "della",
+          "start": 2.901,
+          "end": 3.062
+        },
+        {
+          "text": "validazione.",
+          "start": 3.102,
+          "end": 3.742
+        }
+      ]
+    },
+    {
+      "start": 4.262,
+      "end": 9.184,
+      "text": "Primo: model selection restituisce un modello, model assessment restituisce una stima,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 4.262,
+          "end": 4.522
+        },
+        {
+          "text": "model",
+          "start": 5.042,
+          "end": 5.323
+        },
+        {
+          "text": "selection",
+          "start": 5.383,
+          "end": 5.883
+        },
+        {
+          "text": "restituisce",
+          "start": 6.023,
+          "end": 6.563
+        },
+        {
+          "text": "un",
+          "start": 6.603,
+          "end": 6.663
+        },
+        {
+          "text": "modello,",
+          "start": 6.703,
+          "end": 7.103
+        },
+        {
+          "text": "model",
+          "start": 7.324,
+          "end": 7.564
+        },
+        {
+          "text": "assessment",
+          "start": 7.604,
+          "end": 8.124
+        },
+        {
+          "text": "restituisce",
+          "start": 8.264,
+          "end": 8.744
+        },
+        {
+          "text": "una",
+          "start": 8.764,
+          "end": 8.884
+        },
+        {
+          "text": "stima,",
+          "start": 8.924,
+          "end": 9.184
+        }
+      ]
+    },
+    {
+      "start": 9.525,
+      "end": 11.305,
+      "text": "e vanno tenuti su insiemi separati.",
+      "words": [
+        {
+          "text": "e",
+          "start": 9.525,
+          "end": 9.565
+        },
+        {
+          "text": "vanno",
+          "start": 9.625,
+          "end": 9.845
+        },
+        {
+          "text": "tenuti",
+          "start": 9.905,
+          "end": 10.265
+        },
+        {
+          "text": "su",
+          "start": 10.345,
+          "end": 10.405
+        },
+        {
+          "text": "insiemi",
+          "start": 10.485,
+          "end": 10.805
+        },
+        {
+          "text": "separati.",
+          "start": 10.845,
+          "end": 11.305
+        }
+      ]
+    },
+    {
+      "start": 11.846,
+      "end": 17.388,
+      "text": "Secondo: l'errore sul training non stima il validation, e l'errore sul validation non stima il",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 11.846,
+          "end": 12.246
+        },
+        {
+          "text": "l'errore",
+          "start": 12.786,
+          "end": 13.186
+        },
+        {
+          "text": "sul",
+          "start": 13.226,
+          "end": 13.386
+        },
+        {
+          "text": "training",
+          "start": 13.426,
+          "end": 13.847
+        },
+        {
+          "text": "non",
+          "start": 14.067,
+          "end": 14.207
+        },
+        {
+          "text": "stima",
+          "start": 14.247,
+          "end": 14.527
+        },
+        {
+          "text": "il",
+          "start": 14.567,
+          "end": 14.627
+        },
+        {
+          "text": "validation,",
+          "start": 14.647,
+          "end": 15.207
+        },
+        {
+          "text": "e",
+          "start": 15.527,
+          "end": 15.567
+        },
+        {
+          "text": "l'errore",
+          "start": 15.627,
+          "end": 16.008
+        },
+        {
+          "text": "sul",
+          "start": 16.048,
+          "end": 16.168
+        },
+        {
+          "text": "validation",
+          "start": 16.188,
+          "end": 16.728
+        },
+        {
+          "text": "non",
+          "start": 16.928,
+          "end": 17.048
+        },
+        {
+          "text": "stima",
+          "start": 17.088,
+          "end": 17.288
+        },
+        {
+          "text": "il",
+          "start": 17.328,
+          "end": 17.388
+        }
+      ]
+    },
+    {
+      "start": 17.428,
+      "end": 17.708,
+      "text": "test.",
+      "words": [
+        {
+          "text": "test.",
+          "start": 17.428,
+          "end": 17.708
+        }
+      ]
+    },
+    {
+      "start": 18.349,
+      "end": 21.77,
+      "text": "Terzo: il test set va separato prima di ogni scelta,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 18.349,
+          "end": 18.729
+        },
+        {
+          "text": "il",
+          "start": 19.209,
+          "end": 19.309
+        },
+        {
+          "text": "test",
+          "start": 19.369,
+          "end": 19.569
+        },
+        {
+          "text": "set",
+          "start": 19.689,
+          "end": 19.929
+        },
+        {
+          "text": "va",
+          "start": 20.11,
+          "end": 20.17
+        },
+        {
+          "text": "separato",
+          "start": 20.23,
+          "end": 20.63
+        },
+        {
+          "text": "prima",
+          "start": 20.69,
+          "end": 20.95
+        },
+        {
+          "text": "di",
+          "start": 21.01,
+          "end": 21.09
+        },
+        {
+          "text": "ogni",
+          "start": 21.15,
+          "end": 21.33
+        },
+        {
+          "text": "scelta,",
+          "start": 21.37,
+          "end": 21.77
+        }
+      ]
+    },
+    {
+      "start": 22.11,
+      "end": 23.531,
+      "text": "inclusa la feature selection.",
+      "words": [
+        {
+          "text": "inclusa",
+          "start": 22.11,
+          "end": 22.551
+        },
+        {
+          "text": "la",
+          "start": 22.631,
+          "end": 22.691
+        },
+        {
+          "text": "feature",
+          "start": 22.751,
+          "end": 23.051
+        },
+        {
+          "text": "selection.",
+          "start": 23.091,
+          "end": 23.531
+        }
+      ]
+    },
+    {
+      "start": 24.111,
+      "end": 28.453,
+      "text": "Quarto: la K-fold CV riporta media più o meno deviazione standard,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 24.111,
+          "end": 24.512
+        },
+        {
+          "text": "la",
+          "start": 24.932,
+          "end": 25.012
+        },
+        {
+          "text": "K-fold",
+          "start": 25.112,
+          "end": 25.572
+        },
+        {
+          "text": "CV",
+          "start": 25.652,
+          "end": 25.852
+        },
+        {
+          "text": "riporta",
+          "start": 26.112,
+          "end": 26.492
+        },
+        {
+          "text": "media",
+          "start": 26.613,
+          "end": 26.953
+        },
+        {
+          "text": "più",
+          "start": 27.053,
+          "end": 27.153
+        },
+        {
+          "text": "o",
+          "start": 27.213,
+          "end": 27.253
+        },
+        {
+          "text": "meno",
+          "start": 27.313,
+          "end": 27.493
+        },
+        {
+          "text": "deviazione",
+          "start": 27.533,
+          "end": 27.973
+        },
+        {
+          "text": "standard,",
+          "start": 28.013,
+          "end": 28.453
+        }
+      ]
+    },
+    {
+      "start": 28.834,
+      "end": 30.795,
+      "text": "ripartendo da zero in ogni iterazione.",
+      "words": [
+        {
+          "text": "ripartendo",
+          "start": 28.834,
+          "end": 29.334
+        },
+        {
+          "text": "da",
+          "start": 29.374,
+          "end": 29.454
+        },
+        {
+          "text": "zero",
+          "start": 29.574,
+          "end": 29.814
+        },
+        {
+          "text": "in",
+          "start": 29.854,
+          "end": 29.934
+        },
+        {
+          "text": "ogni",
+          "start": 29.974,
+          "end": 30.154
+        },
+        {
+          "text": "iterazione.",
+          "start": 30.194,
+          "end": 30.795
+        }
+      ]
+    },
+    {
+      "start": 31.375,
+      "end": 37.097,
+      "text": "Quinto: gli schemi combinati come CV più test o double CV permettono di valutare onestamente",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 31.375,
+          "end": 31.735
+        },
+        {
+          "text": "gli",
+          "start": 32.215,
+          "end": 32.355
+        },
+        {
+          "text": "schemi",
+          "start": 32.415,
+          "end": 32.675
+        },
+        {
+          "text": "combinati",
+          "start": 32.715,
+          "end": 33.236
+        },
+        {
+          "text": "come",
+          "start": 33.276,
+          "end": 33.476
+        },
+        {
+          "text": "CV",
+          "start": 33.556,
+          "end": 33.756
+        },
+        {
+          "text": "più",
+          "start": 33.896,
+          "end": 33.996
+        },
+        {
+          "text": "test",
+          "start": 34.076,
+          "end": 34.376
+        },
+        {
+          "text": "o",
+          "start": 34.576,
+          "end": 34.616
+        },
+        {
+          "text": "double",
+          "start": 34.756,
+          "end": 35.077
+        },
+        {
+          "text": "CV",
+          "start": 35.097,
+          "end": 35.277
+        },
+        {
+          "text": "permettono",
+          "start": 35.637,
+          "end": 36.037
+        },
+        {
+          "text": "di",
+          "start": 36.057,
+          "end": 36.117
+        },
+        {
+          "text": "valutare",
+          "start": 36.137,
+          "end": 36.497
+        },
+        {
+          "text": "onestamente",
+          "start": 36.537,
+          "end": 37.097
+        }
+      ]
+    },
+    {
+      "start": 37.137,
+      "end": 42.22,
+      "text": "la procedura; la double CV stima il rischio della classe senza restituire un modello unico.",
+      "words": [
+        {
+          "text": "la",
+          "start": 37.137,
+          "end": 37.198
+        },
+        {
+          "text": "procedura;",
+          "start": 37.218,
+          "end": 37.698
+        },
+        {
+          "text": "la",
+          "start": 38.058,
+          "end": 38.138
+        },
+        {
+          "text": "double",
+          "start": 38.178,
+          "end": 38.418
+        },
+        {
+          "text": "CV",
+          "start": 38.438,
+          "end": 38.618
+        },
+        {
+          "text": "stima",
+          "start": 38.778,
+          "end": 39.058
+        },
+        {
+          "text": "il",
+          "start": 39.138,
+          "end": 39.198
+        },
+        {
+          "text": "rischio",
+          "start": 39.258,
+          "end": 39.579
+        },
+        {
+          "text": "della",
+          "start": 39.619,
+          "end": 39.779
+        },
+        {
+          "text": "classe",
+          "start": 39.819,
+          "end": 40.199
+        },
+        {
+          "text": "senza",
+          "start": 40.379,
+          "end": 40.719
+        },
+        {
+          "text": "restituire",
+          "start": 40.779,
+          "end": 41.319
+        },
+        {
+          "text": "un",
+          "start": 41.439,
+          "end": 41.52
+        },
+        {
+          "text": "modello",
+          "start": 41.56,
+          "end": 41.88
+        },
+        {
+          "text": "unico.",
+          "start": 41.96,
+          "end": 42.22
+        }
+      ]
+    }
+  ]
+}

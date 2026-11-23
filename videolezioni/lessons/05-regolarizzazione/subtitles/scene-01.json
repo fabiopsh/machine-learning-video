@@ -1,0 +1,1170 @@
+{
+  "duration": 74.182,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.581,
+      "text": "Un modello che si adatta perfettamente ai dati di training — arrivando persino a errore",
+      "words": [
+        {
+          "text": "Un",
+          "start": 0.08,
+          "end": 0.18
+        },
+        {
+          "text": "modello",
+          "start": 0.24,
+          "end": 0.62
+        },
+        {
+          "text": "che",
+          "start": 0.66,
+          "end": 0.72
+        },
+        {
+          "text": "si",
+          "start": 0.76,
+          "end": 0.82
+        },
+        {
+          "text": "adatta",
+          "start": 0.86,
+          "end": 1.16
+        },
+        {
+          "text": "perfettamente",
+          "start": 1.24,
+          "end": 1.94
+        },
+        {
+          "text": "ai",
+          "start": 1.98,
+          "end": 2.06
+        },
+        {
+          "text": "dati",
+          "start": 2.08,
+          "end": 2.3
+        },
+        {
+          "text": "di",
+          "start": 2.36,
+          "end": 2.42
+        },
+        {
+          "text": "training",
+          "start": 2.48,
+          "end": 3.04
+        },
+        {
+          "text": "—",
+          "start": 3.04,
+          "end": 3.19
+        },
+        {
+          "text": "arrivando",
+          "start": 3.34,
+          "end": 3.741
+        },
+        {
+          "text": "persino",
+          "start": 3.781,
+          "end": 4.141
+        },
+        {
+          "text": "a",
+          "start": 4.181,
+          "end": 4.221
+        },
+        {
+          "text": "errore",
+          "start": 4.261,
+          "end": 4.581
+        }
+      ]
+    },
+    {
+      "start": 4.701,
+      "end": 7.421,
+      "text": "zero — può predire in modo pessimo sui dati nuovi.",
+      "words": [
+        {
+          "text": "zero",
+          "start": 4.701,
+          "end": 5.021
+        },
+        {
+          "text": "—",
+          "start": 5.021,
+          "end": 5.171
+        },
+        {
+          "text": "può",
+          "start": 5.261,
+          "end": 5.361
+        },
+        {
+          "text": "predire",
+          "start": 5.421,
+          "end": 5.761
+        },
+        {
+          "text": "in",
+          "start": 5.781,
+          "end": 5.841
+        },
+        {
+          "text": "modo",
+          "start": 5.861,
+          "end": 6.041
+        },
+        {
+          "text": "pessimo",
+          "start": 6.141,
+          "end": 6.621
+        },
+        {
+          "text": "sui",
+          "start": 6.681,
+          "end": 6.801
+        },
+        {
+          "text": "dati",
+          "start": 6.841,
+          "end": 7.041
+        },
+        {
+          "text": "nuovi.",
+          "start": 7.101,
+          "end": 7.421
+        }
+      ]
+    },
+    {
+      "start": 7.901,
+      "end": 12.182,
+      "text": "Per capire formalmente questo fenomeno partiamo dall'ipotesi dell'apprendimento induttivo:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 7.901,
+          "end": 8.001
+        },
+        {
+          "text": "capire",
+          "start": 8.041,
+          "end": 8.321
+        },
+        {
+          "text": "formalmente",
+          "start": 8.381,
+          "end": 8.881
+        },
+        {
+          "text": "questo",
+          "start": 8.921,
+          "end": 9.121
+        },
+        {
+          "text": "fenomeno",
+          "start": 9.161,
+          "end": 9.561
+        },
+        {
+          "text": "partiamo",
+          "start": 9.621,
+          "end": 10.001
+        },
+        {
+          "text": "dall'ipotesi",
+          "start": 10.101,
+          "end": 10.801
+        },
+        {
+          "text": "dell'apprendimento",
+          "start": 10.861,
+          "end": 11.582
+        },
+        {
+          "text": "induttivo:",
+          "start": 11.642,
+          "end": 12.182
+        }
+      ]
+    },
+    {
+      "start": 12.682,
+      "end": 17.862,
+      "text": "qualsiasi ipotesi h che approssima bene f sugli esempi di training approssimerà bene f anche",
+      "words": [
+        {
+          "text": "qualsiasi",
+          "start": 12.682,
+          "end": 13.082
+        },
+        {
+          "text": "ipotesi",
+          "start": 13.162,
+          "end": 13.562
+        },
+        {
+          "text": "h",
+          "start": 13.862,
+          "end": 13.902
+        },
+        {
+          "text": "che",
+          "start": 13.982,
+          "end": 14.062
+        },
+        {
+          "text": "approssima",
+          "start": 14.082,
+          "end": 14.522
+        },
+        {
+          "text": "bene",
+          "start": 14.582,
+          "end": 14.782
+        },
+        {
+          "text": "f",
+          "start": 15.042,
+          "end": 15.082
+        },
+        {
+          "text": "sugli",
+          "start": 15.222,
+          "end": 15.422
+        },
+        {
+          "text": "esempi",
+          "start": 15.442,
+          "end": 15.722
+        },
+        {
+          "text": "di",
+          "start": 15.742,
+          "end": 15.802
+        },
+        {
+          "text": "training",
+          "start": 15.842,
+          "end": 16.282
+        },
+        {
+          "text": "approssimerà",
+          "start": 16.442,
+          "end": 16.962
+        },
+        {
+          "text": "bene",
+          "start": 17.022,
+          "end": 17.202
+        },
+        {
+          "text": "f",
+          "start": 17.502,
+          "end": 17.542
+        },
+        {
+          "text": "anche",
+          "start": 17.682,
+          "end": 17.862
+        }
+      ]
+    },
+    {
+      "start": 17.902,
+      "end": 19.443,
+      "text": "sulle istanze nuove mai viste.",
+      "words": [
+        {
+          "text": "sulle",
+          "start": 17.902,
+          "end": 18.082
+        },
+        {
+          "text": "istanze",
+          "start": 18.102,
+          "end": 18.422
+        },
+        {
+          "text": "nuove",
+          "start": 18.482,
+          "end": 18.702
+        },
+        {
+          "text": "mai",
+          "start": 18.822,
+          "end": 19.002
+        },
+        {
+          "text": "viste.",
+          "start": 19.062,
+          "end": 19.443
+        }
+      ]
+    },
+    {
+      "start": 20.243,
+      "end": 23.263,
+      "text": "Il punto cruciale è che questa ipotesi non è sempre vera,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 20.243,
+          "end": 20.323
+        },
+        {
+          "text": "punto",
+          "start": 20.343,
+          "end": 20.543
+        },
+        {
+          "text": "cruciale",
+          "start": 20.583,
+          "end": 20.983
+        },
+        {
+          "text": "è",
+          "start": 21.303,
+          "end": 21.343
+        },
+        {
+          "text": "che",
+          "start": 21.383,
+          "end": 21.463
+        },
+        {
+          "text": "questa",
+          "start": 21.503,
+          "end": 21.683
+        },
+        {
+          "text": "ipotesi",
+          "start": 21.723,
+          "end": 22.083
+        },
+        {
+          "text": "non",
+          "start": 22.203,
+          "end": 22.403
+        },
+        {
+          "text": "è",
+          "start": 22.483,
+          "end": 22.523
+        },
+        {
+          "text": "sempre",
+          "start": 22.663,
+          "end": 22.983
+        },
+        {
+          "text": "vera,",
+          "start": 23.023,
+          "end": 23.263
+        }
+      ]
+    },
+    {
+      "start": 23.543,
+      "end": 26.363,
+      "text": "ed è esattamente quando fallisce che nasce l'overfitting.",
+      "words": [
+        {
+          "text": "ed",
+          "start": 23.543,
+          "end": 23.623
+        },
+        {
+          "text": "è",
+          "start": 23.663,
+          "end": 23.703
+        },
+        {
+          "text": "esattamente",
+          "start": 23.743,
+          "end": 24.383
+        },
+        {
+          "text": "quando",
+          "start": 24.423,
+          "end": 24.643
+        },
+        {
+          "text": "fallisce",
+          "start": 24.683,
+          "end": 25.123
+        },
+        {
+          "text": "che",
+          "start": 25.243,
+          "end": 25.323
+        },
+        {
+          "text": "nasce",
+          "start": 25.403,
+          "end": 25.683
+        },
+        {
+          "text": "l'overfitting.",
+          "start": 25.703,
+          "end": 26.363
+        }
+      ]
+    },
+    {
+      "start": 27.144,
+      "end": 28.424,
+      "text": "Ecco la definizione formale:",
+      "words": [
+        {
+          "text": "Ecco",
+          "start": 27.144,
+          "end": 27.304
+        },
+        {
+          "text": "la",
+          "start": 27.364,
+          "end": 27.424
+        },
+        {
+          "text": "definizione",
+          "start": 27.444,
+          "end": 27.924
+        },
+        {
+          "text": "formale:",
+          "start": 27.984,
+          "end": 28.424
+        }
+      ]
+    },
+    {
+      "start": 29.024,
+      "end": 34.664,
+      "text": "un learner fa overfitting se restituisce un'ipotesi h in H con errore empirico di training",
+      "words": [
+        {
+          "text": "un",
+          "start": 29.024,
+          "end": 29.104
+        },
+        {
+          "text": "learner",
+          "start": 29.184,
+          "end": 29.564
+        },
+        {
+          "text": "fa",
+          "start": 29.644,
+          "end": 29.724
+        },
+        {
+          "text": "overfitting",
+          "start": 29.924,
+          "end": 30.664
+        },
+        {
+          "text": "se",
+          "start": 30.844,
+          "end": 30.904
+        },
+        {
+          "text": "restituisce",
+          "start": 30.984,
+          "end": 31.504
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 31.564,
+          "end": 32.124
+        },
+        {
+          "text": "h",
+          "start": 32.384,
+          "end": 32.424
+        },
+        {
+          "text": "in",
+          "start": 32.544,
+          "end": 32.624
+        },
+        {
+          "text": "H",
+          "start": 32.884,
+          "end": 32.924
+        },
+        {
+          "text": "con",
+          "start": 33.084,
+          "end": 33.204
+        },
+        {
+          "text": "errore",
+          "start": 33.264,
+          "end": 33.544
+        },
+        {
+          "text": "empirico",
+          "start": 33.604,
+          "end": 34.104
+        },
+        {
+          "text": "di",
+          "start": 34.164,
+          "end": 34.224
+        },
+        {
+          "text": "training",
+          "start": 34.264,
+          "end": 34.664
+        }
+      ]
+    },
+    {
+      "start": 34.825,
+      "end": 37.905,
+      "text": "E ed errore vero di generalizzazione, o rischio, R,",
+      "words": [
+        {
+          "text": "E",
+          "start": 34.825,
+          "end": 34.865
+        },
+        {
+          "text": "ed",
+          "start": 35.325,
+          "end": 35.405
+        },
+        {
+          "text": "errore",
+          "start": 35.445,
+          "end": 35.705
+        },
+        {
+          "text": "vero",
+          "start": 35.765,
+          "end": 35.945
+        },
+        {
+          "text": "di",
+          "start": 35.985,
+          "end": 36.045
+        },
+        {
+          "text": "generalizzazione,",
+          "start": 36.085,
+          "end": 36.945
+        },
+        {
+          "text": "o",
+          "start": 37.125,
+          "end": 37.165
+        },
+        {
+          "text": "rischio,",
+          "start": 37.305,
+          "end": 37.605
+        },
+        {
+          "text": "R,",
+          "start": 37.865,
+          "end": 37.905
+        }
+      ]
+    },
+    {
+      "start": 38.345,
+      "end": 42.766,
+      "text": "quando nello stesso spazio H esiste un'altra ipotesi h primo tale che E primo è",
+      "words": [
+        {
+          "text": "quando",
+          "start": 38.345,
+          "end": 38.605
+        },
+        {
+          "text": "nello",
+          "start": 38.645,
+          "end": 38.825
+        },
+        {
+          "text": "stesso",
+          "start": 38.865,
+          "end": 39.105
+        },
+        {
+          "text": "spazio",
+          "start": 39.145,
+          "end": 39.465
+        },
+        {
+          "text": "H",
+          "start": 39.685,
+          "end": 39.725
+        },
+        {
+          "text": "esiste",
+          "start": 39.885,
+          "end": 40.145
+        },
+        {
+          "text": "un'altra",
+          "start": 40.185,
+          "end": 40.425
+        },
+        {
+          "text": "ipotesi",
+          "start": 40.465,
+          "end": 40.805
+        },
+        {
+          "text": "h",
+          "start": 40.965,
+          "end": 41.005
+        },
+        {
+          "text": "primo",
+          "start": 41.065,
+          "end": 41.325
+        },
+        {
+          "text": "tale",
+          "start": 41.505,
+          "end": 41.685
+        },
+        {
+          "text": "che",
+          "start": 41.725,
+          "end": 41.825
+        },
+        {
+          "text": "E",
+          "start": 42.065,
+          "end": 42.105
+        },
+        {
+          "text": "primo",
+          "start": 42.245,
+          "end": 42.586
+        },
+        {
+          "text": "è",
+          "start": 42.726,
+          "end": 42.766
+        }
+      ]
+    },
+    {
+      "start": 42.806,
+      "end": 45.426,
+      "text": "maggiore di E, ma R primo è minore di R.",
+      "words": [
+        {
+          "text": "maggiore",
+          "start": 42.806,
+          "end": 43.106
+        },
+        {
+          "text": "di",
+          "start": 43.146,
+          "end": 43.206
+        },
+        {
+          "text": "E,",
+          "start": 43.286,
+          "end": 43.326
+        },
+        {
+          "text": "ma",
+          "start": 43.686,
+          "end": 43.746
+        },
+        {
+          "text": "R",
+          "start": 44.026,
+          "end": 44.066
+        },
+        {
+          "text": "primo",
+          "start": 44.206,
+          "end": 44.466
+        },
+        {
+          "text": "è",
+          "start": 44.686,
+          "end": 44.726
+        },
+        {
+          "text": "minore",
+          "start": 44.766,
+          "end": 45.046
+        },
+        {
+          "text": "di",
+          "start": 45.086,
+          "end": 45.146
+        },
+        {
+          "text": "R.",
+          "start": 45.386,
+          "end": 45.426
+        }
+      ]
+    },
+    {
+      "start": 46.226,
+      "end": 48.046,
+      "text": "Fermati un istante su questa disuguaglianza:",
+      "words": [
+        {
+          "text": "Fermati",
+          "start": 46.226,
+          "end": 46.506
+        },
+        {
+          "text": "un",
+          "start": 46.546,
+          "end": 46.606
+        },
+        {
+          "text": "istante",
+          "start": 46.626,
+          "end": 46.906
+        },
+        {
+          "text": "su",
+          "start": 46.946,
+          "end": 47.006
+        },
+        {
+          "text": "questa",
+          "start": 47.066,
+          "end": 47.266
+        },
+        {
+          "text": "disuguaglianza:",
+          "start": 47.306,
+          "end": 48.046
+        }
+      ]
+    },
+    {
+      "start": 48.746,
+      "end": 51.507,
+      "text": "h primo si adatta peggio ai dati di training rispetto ad h,",
+      "words": [
+        {
+          "text": "h",
+          "start": 48.746,
+          "end": 48.786
+        },
+        {
+          "text": "primo",
+          "start": 48.866,
+          "end": 49.126
+        },
+        {
+          "text": "si",
+          "start": 49.186,
+          "end": 49.246
+        },
+        {
+          "text": "adatta",
+          "start": 49.286,
+          "end": 49.546
+        },
+        {
+          "text": "peggio",
+          "start": 49.626,
+          "end": 49.926
+        },
+        {
+          "text": "ai",
+          "start": 49.966,
+          "end": 50.026
+        },
+        {
+          "text": "dati",
+          "start": 50.046,
+          "end": 50.226
+        },
+        {
+          "text": "di",
+          "start": 50.286,
+          "end": 50.347
+        },
+        {
+          "text": "training",
+          "start": 50.387,
+          "end": 50.747
+        },
+        {
+          "text": "rispetto",
+          "start": 50.847,
+          "end": 51.147
+        },
+        {
+          "text": "ad",
+          "start": 51.167,
+          "end": 51.247
+        },
+        {
+          "text": "h,",
+          "start": 51.467,
+          "end": 51.507
+        }
+      ]
+    },
+    {
+      "start": 51.747,
+      "end": 53.307,
+      "text": "ma è migliore sui dati nuovi.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 51.747,
+          "end": 51.807
+        },
+        {
+          "text": "è",
+          "start": 51.927,
+          "end": 51.967
+        },
+        {
+          "text": "migliore",
+          "start": 52.047,
+          "end": 52.547
+        },
+        {
+          "text": "sui",
+          "start": 52.587,
+          "end": 52.727
+        },
+        {
+          "text": "dati",
+          "start": 52.747,
+          "end": 52.927
+        },
+        {
+          "text": "nuovi.",
+          "start": 52.987,
+          "end": 53.307
+        }
+      ]
+    },
+    {
+      "start": 54.047,
+      "end": 59.508,
+      "text": "L'underfitting è invece la situazione opposta: il modello è troppo semplice per cogliere l'andamento della",
+      "words": [
+        {
+          "text": "L'underfitting",
+          "start": 54.047,
+          "end": 54.867
+        },
+        {
+          "text": "è",
+          "start": 54.927,
+          "end": 54.967
+        },
+        {
+          "text": "invece",
+          "start": 54.967,
+          "end": 55.207
+        },
+        {
+          "text": "la",
+          "start": 55.247,
+          "end": 55.307
+        },
+        {
+          "text": "situazione",
+          "start": 55.347,
+          "end": 55.787
+        },
+        {
+          "text": "opposta:",
+          "start": 55.967,
+          "end": 56.527
+        },
+        {
+          "text": "il",
+          "start": 56.867,
+          "end": 56.947
+        },
+        {
+          "text": "modello",
+          "start": 56.967,
+          "end": 57.247
+        },
+        {
+          "text": "è",
+          "start": 57.287,
+          "end": 57.327
+        },
+        {
+          "text": "troppo",
+          "start": 57.387,
+          "end": 57.727
+        },
+        {
+          "text": "semplice",
+          "start": 57.807,
+          "end": 58.248
+        },
+        {
+          "text": "per",
+          "start": 58.288,
+          "end": 58.408
+        },
+        {
+          "text": "cogliere",
+          "start": 58.448,
+          "end": 58.768
+        },
+        {
+          "text": "l'andamento",
+          "start": 58.808,
+          "end": 59.308
+        },
+        {
+          "text": "della",
+          "start": 59.348,
+          "end": 59.508
+        }
+      ]
+    },
+    {
+      "start": 59.528,
+      "end": 62.868,
+      "text": "funzione target, e l'errore è alto già sul training set.",
+      "words": [
+        {
+          "text": "funzione",
+          "start": 59.528,
+          "end": 59.888
+        },
+        {
+          "text": "target,",
+          "start": 59.928,
+          "end": 60.348
+        },
+        {
+          "text": "e",
+          "start": 60.808,
+          "end": 60.848
+        },
+        {
+          "text": "l'errore",
+          "start": 60.868,
+          "end": 61.288
+        },
+        {
+          "text": "è",
+          "start": 61.428,
+          "end": 61.468
+        },
+        {
+          "text": "alto",
+          "start": 61.528,
+          "end": 61.728
+        },
+        {
+          "text": "già",
+          "start": 61.848,
+          "end": 61.948
+        },
+        {
+          "text": "sul",
+          "start": 62.088,
+          "end": 62.228
+        },
+        {
+          "text": "training",
+          "start": 62.248,
+          "end": 62.588
+        },
+        {
+          "text": "set.",
+          "start": 62.648,
+          "end": 62.868
+        }
+      ]
+    },
+    {
+      "start": 63.568,
+      "end": 66.749,
+      "text": "Il punto critico diventa allora stimare l'accuratezza su dati futuri:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 63.568,
+          "end": 63.648
+        },
+        {
+          "text": "punto",
+          "start": 63.668,
+          "end": 63.888
+        },
+        {
+          "text": "critico",
+          "start": 63.928,
+          "end": 64.308
+        },
+        {
+          "text": "diventa",
+          "start": 64.408,
+          "end": 64.688
+        },
+        {
+          "text": "allora",
+          "start": 64.708,
+          "end": 64.988
+        },
+        {
+          "text": "stimare",
+          "start": 65.028,
+          "end": 65.388
+        },
+        {
+          "text": "l'accuratezza",
+          "start": 65.428,
+          "end": 65.989
+        },
+        {
+          "text": "su",
+          "start": 66.029,
+          "end": 66.089
+        },
+        {
+          "text": "dati",
+          "start": 66.149,
+          "end": 66.329
+        },
+        {
+          "text": "futuri:",
+          "start": 66.369,
+          "end": 66.749
+        }
+      ]
+    },
+    {
+      "start": 67.129,
+      "end": 70.129,
+      "text": "lo faremo sia in modo teorico con la Statistical Learning Theory,",
+      "words": [
+        {
+          "text": "lo",
+          "start": 67.129,
+          "end": 67.189
+        },
+        {
+          "text": "faremo",
+          "start": 67.229,
+          "end": 67.489
+        },
+        {
+          "text": "sia",
+          "start": 67.569,
+          "end": 67.709
+        },
+        {
+          "text": "in",
+          "start": 67.749,
+          "end": 67.789
+        },
+        {
+          "text": "modo",
+          "start": 67.829,
+          "end": 67.989
+        },
+        {
+          "text": "teorico",
+          "start": 68.049,
+          "end": 68.549
+        },
+        {
+          "text": "con",
+          "start": 68.649,
+          "end": 68.749
+        },
+        {
+          "text": "la",
+          "start": 68.769,
+          "end": 68.829
+        },
+        {
+          "text": "Statistical",
+          "start": 68.849,
+          "end": 69.409
+        },
+        {
+          "text": "Learning",
+          "start": 69.429,
+          "end": 69.769
+        },
+        {
+          "text": "Theory,",
+          "start": 69.809,
+          "end": 70.129
+        }
+      ]
+    },
+    {
+      "start": 70.369,
+      "end": 73.469,
+      "text": "sia in modo empirico con training, test e cross-validation.",
+      "words": [
+        {
+          "text": "sia",
+          "start": 70.369,
+          "end": 70.489
+        },
+        {
+          "text": "in",
+          "start": 70.529,
+          "end": 70.589
+        },
+        {
+          "text": "modo",
+          "start": 70.629,
+          "end": 70.769
+        },
+        {
+          "text": "empirico",
+          "start": 70.829,
+          "end": 71.349
+        },
+        {
+          "text": "con",
+          "start": 71.449,
+          "end": 71.609
+        },
+        {
+          "text": "training,",
+          "start": 71.669,
+          "end": 72.069
+        },
+        {
+          "text": "test",
+          "start": 72.169,
+          "end": 72.449
+        },
+        {
+          "text": "e",
+          "start": 72.649,
+          "end": 72.68900000000001
+        },
+        {
+          "text": "cross-validation.",
+          "start": 72.729,
+          "end": 73.469
+        }
+      ]
+    }
+  ]
+}

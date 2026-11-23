@@ -1,0 +1,738 @@
+{
+  "duration": 57.23,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.161,
+      "text": "Chiudiamo il capitolo fissando i cinque punti chiave.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "il",
+          "start": 0.54,
+          "end": 0.6
+        },
+        {
+          "text": "capitolo",
+          "start": 0.64,
+          "end": 1.16
+        },
+        {
+          "text": "fissando",
+          "start": 1.28,
+          "end": 1.781
+        },
+        {
+          "text": "i",
+          "start": 2.001,
+          "end": 2.041
+        },
+        {
+          "text": "cinque",
+          "start": 2.161,
+          "end": 2.501
+        },
+        {
+          "text": "punti",
+          "start": 2.541,
+          "end": 2.781
+        },
+        {
+          "text": "chiave.",
+          "start": 2.841,
+          "end": 3.161
+        }
+      ]
+    },
+    {
+      "start": 3.961,
+      "end": 9.923,
+      "text": "Primo: c'è overfitting quando esiste un'ipotesi h primo con errore di training più alto ma",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 3.961,
+          "end": 4.242
+        },
+        {
+          "text": "c'è",
+          "start": 4.882,
+          "end": 4.962
+        },
+        {
+          "text": "overfitting",
+          "start": 5.042,
+          "end": 5.722
+        },
+        {
+          "text": "quando",
+          "start": 5.882,
+          "end": 6.122
+        },
+        {
+          "text": "esiste",
+          "start": 6.142,
+          "end": 6.462
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 6.522,
+          "end": 7.062
+        },
+        {
+          "text": "h",
+          "start": 7.423,
+          "end": 7.463
+        },
+        {
+          "text": "primo",
+          "start": 7.543,
+          "end": 7.843
+        },
+        {
+          "text": "con",
+          "start": 7.983,
+          "end": 8.123
+        },
+        {
+          "text": "errore",
+          "start": 8.183,
+          "end": 8.483
+        },
+        {
+          "text": "di",
+          "start": 8.523,
+          "end": 8.603
+        },
+        {
+          "text": "training",
+          "start": 8.663,
+          "end": 9.043
+        },
+        {
+          "text": "più",
+          "start": 9.103,
+          "end": 9.223
+        },
+        {
+          "text": "alto",
+          "start": 9.343,
+          "end": 9.643
+        },
+        {
+          "text": "ma",
+          "start": 9.863,
+          "end": 9.923
+        }
+      ]
+    },
+    {
+      "start": 10.044,
+      "end": 11.124,
+      "text": "rischio vero più basso.",
+      "words": [
+        {
+          "text": "rischio",
+          "start": 10.044,
+          "end": 10.364
+        },
+        {
+          "text": "vero",
+          "start": 10.404,
+          "end": 10.584
+        },
+        {
+          "text": "più",
+          "start": 10.624,
+          "end": 10.724
+        },
+        {
+          "text": "basso.",
+          "start": 10.784,
+          "end": 11.124
+        }
+      ]
+    },
+    {
+      "start": 11.864,
+      "end": 16.626,
+      "text": "Secondo: nel fitting polinomiale l'errore di training cala sempre con M,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 11.864,
+          "end": 12.344
+        },
+        {
+          "text": "nel",
+          "start": 12.985,
+          "end": 13.125
+        },
+        {
+          "text": "fitting",
+          "start": 13.185,
+          "end": 13.545
+        },
+        {
+          "text": "polinomiale",
+          "start": 13.565,
+          "end": 14.285
+        },
+        {
+          "text": "l'errore",
+          "start": 14.445,
+          "end": 14.845
+        },
+        {
+          "text": "di",
+          "start": 14.885,
+          "end": 14.965
+        },
+        {
+          "text": "training",
+          "start": 15.005,
+          "end": 15.385
+        },
+        {
+          "text": "cala",
+          "start": 15.465,
+          "end": 15.685
+        },
+        {
+          "text": "sempre",
+          "start": 15.826,
+          "end": 16.186
+        },
+        {
+          "text": "con",
+          "start": 16.226,
+          "end": 16.366
+        },
+        {
+          "text": "M,",
+          "start": 16.586,
+          "end": 16.626
+        }
+      ]
+    },
+    {
+      "start": 16.926,
+      "end": 20.047,
+      "text": "quello di test ha forma a U e i pesi esplodono;",
+      "words": [
+        {
+          "text": "quello",
+          "start": 16.926,
+          "end": 17.146
+        },
+        {
+          "text": "di",
+          "start": 17.166,
+          "end": 17.246
+        },
+        {
+          "text": "test",
+          "start": 17.286,
+          "end": 17.566
+        },
+        {
+          "text": "ha",
+          "start": 17.766,
+          "end": 17.806
+        },
+        {
+          "text": "forma",
+          "start": 17.906,
+          "end": 18.186
+        },
+        {
+          "text": "a",
+          "start": 18.406,
+          "end": 18.446
+        },
+        {
+          "text": "U",
+          "start": 18.566,
+          "end": 18.606
+        },
+        {
+          "text": "e",
+          "start": 19.047,
+          "end": 19.087
+        },
+        {
+          "text": "i",
+          "start": 19.167,
+          "end": 19.207
+        },
+        {
+          "text": "pesi",
+          "start": 19.247,
+          "end": 19.427
+        },
+        {
+          "text": "esplodono;",
+          "start": 19.467,
+          "end": 20.047
+        }
+      ]
+    },
+    {
+      "start": 20.687,
+      "end": 22.788,
+      "text": "più dati sostengono modelli più complessi.",
+      "words": [
+        {
+          "text": "più",
+          "start": 20.687,
+          "end": 20.787
+        },
+        {
+          "text": "dati",
+          "start": 20.867,
+          "end": 21.167
+        },
+        {
+          "text": "sostengono",
+          "start": 21.227,
+          "end": 21.688
+        },
+        {
+          "text": "modelli",
+          "start": 21.748,
+          "end": 22.088
+        },
+        {
+          "text": "più",
+          "start": 22.108,
+          "end": 22.208
+        },
+        {
+          "text": "complessi.",
+          "start": 22.268,
+          "end": 22.788
+        }
+      ]
+    },
+    {
+      "start": 23.628,
+      "end": 28.83,
+      "text": "Terzo: la ridge regression minimizza l'errore più lambda norma quadra di w,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 23.628,
+          "end": 24.008
+        },
+        {
+          "text": "la",
+          "start": 24.549,
+          "end": 24.629
+        },
+        {
+          "text": "ridge",
+          "start": 24.749,
+          "end": 24.989
+        },
+        {
+          "text": "regression",
+          "start": 25.049,
+          "end": 25.589
+        },
+        {
+          "text": "minimizza",
+          "start": 25.769,
+          "end": 26.229
+        },
+        {
+          "text": "l'errore",
+          "start": 26.329,
+          "end": 26.769
+        },
+        {
+          "text": "più",
+          "start": 26.849,
+          "end": 26.989
+        },
+        {
+          "text": "lambda",
+          "start": 27.169,
+          "end": 27.53
+        },
+        {
+          "text": "norma",
+          "start": 27.67,
+          "end": 27.97
+        },
+        {
+          "text": "quadra",
+          "start": 28.03,
+          "end": 28.35
+        },
+        {
+          "text": "di",
+          "start": 28.39,
+          "end": 28.45
+        },
+        {
+          "text": "w,",
+          "start": 28.79,
+          "end": 28.83
+        }
+      ]
+    },
+    {
+      "start": 29.37,
+      "end": 33.992,
+      "text": "con soluzione diretta sempre invertibile e regola iterativa di weight decay.",
+      "words": [
+        {
+          "text": "con",
+          "start": 29.37,
+          "end": 29.49
+        },
+        {
+          "text": "soluzione",
+          "start": 29.55,
+          "end": 30.03
+        },
+        {
+          "text": "diretta",
+          "start": 30.07,
+          "end": 30.491
+        },
+        {
+          "text": "sempre",
+          "start": 30.671,
+          "end": 30.971
+        },
+        {
+          "text": "invertibile",
+          "start": 31.011,
+          "end": 31.711
+        },
+        {
+          "text": "e",
+          "start": 32.071,
+          "end": 32.111
+        },
+        {
+          "text": "regola",
+          "start": 32.211,
+          "end": 32.531
+        },
+        {
+          "text": "iterativa",
+          "start": 32.571,
+          "end": 33.092
+        },
+        {
+          "text": "di",
+          "start": 33.172,
+          "end": 33.232
+        },
+        {
+          "text": "weight",
+          "start": 33.372,
+          "end": 33.592
+        },
+        {
+          "text": "decay.",
+          "start": 33.652,
+          "end": 33.992
+        }
+      ]
+    },
+    {
+      "start": 34.972,
+      "end": 39.614,
+      "text": "Quarto: lambda piccolo porta a overfitting, lambda grande a underfitting;",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 34.972,
+          "end": 35.372
+        },
+        {
+          "text": "lambda",
+          "start": 35.933,
+          "end": 36.193
+        },
+        {
+          "text": "piccolo",
+          "start": 36.233,
+          "end": 36.573
+        },
+        {
+          "text": "porta",
+          "start": 36.633,
+          "end": 36.913
+        },
+        {
+          "text": "a",
+          "start": 37.053,
+          "end": 37.093
+        },
+        {
+          "text": "overfitting,",
+          "start": 37.153,
+          "end": 37.773
+        },
+        {
+          "text": "lambda",
+          "start": 38.053,
+          "end": 38.313
+        },
+        {
+          "text": "grande",
+          "start": 38.393,
+          "end": 38.734
+        },
+        {
+          "text": "a",
+          "start": 38.794,
+          "end": 38.834
+        },
+        {
+          "text": "underfitting;",
+          "start": 38.874,
+          "end": 39.614
+        }
+      ]
+    },
+    {
+      "start": 39.954,
+      "end": 42.735,
+      "text": "il valore ottimo si sceglie con la model selection.",
+      "words": [
+        {
+          "text": "il",
+          "start": 39.954,
+          "end": 40.034
+        },
+        {
+          "text": "valore",
+          "start": 40.074,
+          "end": 40.314
+        },
+        {
+          "text": "ottimo",
+          "start": 40.394,
+          "end": 40.714
+        },
+        {
+          "text": "si",
+          "start": 41.094,
+          "end": 41.174
+        },
+        {
+          "text": "sceglie",
+          "start": 41.234,
+          "end": 41.575
+        },
+        {
+          "text": "con",
+          "start": 41.635,
+          "end": 41.755
+        },
+        {
+          "text": "la",
+          "start": 41.775,
+          "end": 41.855
+        },
+        {
+          "text": "model",
+          "start": 41.935,
+          "end": 42.195
+        },
+        {
+          "text": "selection.",
+          "start": 42.255,
+          "end": 42.735
+        }
+      ]
+    },
+    {
+      "start": 43.575,
+      "end": 48.097,
+      "text": "Quinto: la norma L uno azzera alcuni pesi producendo sparsità,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 43.575,
+          "end": 43.975
+        },
+        {
+          "text": "la",
+          "start": 44.556,
+          "end": 44.636
+        },
+        {
+          "text": "norma",
+          "start": 44.696,
+          "end": 44.976
+        },
+        {
+          "text": "L",
+          "start": 45.316,
+          "end": 45.356
+        },
+        {
+          "text": "uno",
+          "start": 45.536,
+          "end": 45.716
+        },
+        {
+          "text": "azzera",
+          "start": 45.896,
+          "end": 46.236
+        },
+        {
+          "text": "alcuni",
+          "start": 46.276,
+          "end": 46.576
+        },
+        {
+          "text": "pesi",
+          "start": 46.636,
+          "end": 46.936
+        },
+        {
+          "text": "producendo",
+          "start": 47.056,
+          "end": 47.517
+        },
+        {
+          "text": "sparsità,",
+          "start": 47.617,
+          "end": 48.097
+        }
+      ]
+    },
+    {
+      "start": 48.577,
+      "end": 50.718,
+      "text": "la norma L due li riduce tutti insieme.",
+      "words": [
+        {
+          "text": "la",
+          "start": 48.577,
+          "end": 48.637
+        },
+        {
+          "text": "norma",
+          "start": 48.697,
+          "end": 48.917
+        },
+        {
+          "text": "L",
+          "start": 49.037,
+          "end": 49.077
+        },
+        {
+          "text": "due",
+          "start": 49.157,
+          "end": 49.317
+        },
+        {
+          "text": "li",
+          "start": 49.477,
+          "end": 49.557
+        },
+        {
+          "text": "riduce",
+          "start": 49.617,
+          "end": 49.937
+        },
+        {
+          "text": "tutti",
+          "start": 50.037,
+          "end": 50.278
+        },
+        {
+          "text": "insieme.",
+          "start": 50.318,
+          "end": 50.718
+        }
+      ]
+    },
+    {
+      "start": 51.558,
+      "end": 55.079,
+      "text": "Nel prossimo capitolo vedremo l'estremo opposto del modello lineare:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 51.558,
+          "end": 51.678
+        },
+        {
+          "text": "prossimo",
+          "start": 51.718,
+          "end": 52.038
+        },
+        {
+          "text": "capitolo",
+          "start": 52.098,
+          "end": 52.558
+        },
+        {
+          "text": "vedremo",
+          "start": 52.618,
+          "end": 52.958
+        },
+        {
+          "text": "l'estremo",
+          "start": 53.038,
+          "end": 53.559
+        },
+        {
+          "text": "opposto",
+          "start": 53.599,
+          "end": 54.059
+        },
+        {
+          "text": "del",
+          "start": 54.119,
+          "end": 54.239
+        },
+        {
+          "text": "modello",
+          "start": 54.279,
+          "end": 54.599
+        },
+        {
+          "text": "lineare:",
+          "start": 54.639,
+          "end": 55.079
+        }
+      ]
+    },
+    {
+      "start": 55.519,
+      "end": 56.98,
+      "text": "il K-nearest neighbors.",
+      "words": [
+        {
+          "text": "il",
+          "start": 55.519,
+          "end": 55.619
+        },
+        {
+          "text": "K-nearest",
+          "start": 55.719,
+          "end": 56.44
+        },
+        {
+          "text": "neighbors.",
+          "start": 56.54,
+          "end": 56.98
+        }
+      ]
+    }
+  ]
+}

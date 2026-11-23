@@ -1,0 +1,1181 @@
+{
+  "duration": 89.088,
+  "segments": [
+    {
+      "start": 0.628,
+      "end": 3.889,
+      "text": "Il secondo ingrediente è il task, che si divide in due famiglie:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.628,
+          "end": 0.708
+        },
+        {
+          "text": "secondo",
+          "start": 0.728,
+          "end": 1.028
+        },
+        {
+          "text": "ingrediente",
+          "start": 1.048,
+          "end": 1.608
+        },
+        {
+          "text": "è",
+          "start": 1.769,
+          "end": 1.809
+        },
+        {
+          "text": "il",
+          "start": 1.889,
+          "end": 1.969
+        },
+        {
+          "text": "task,",
+          "start": 2.029,
+          "end": 2.349
+        },
+        {
+          "text": "che",
+          "start": 2.729,
+          "end": 2.789
+        },
+        {
+          "text": "si",
+          "start": 2.849,
+          "end": 2.909
+        },
+        {
+          "text": "divide",
+          "start": 2.949,
+          "end": 3.189
+        },
+        {
+          "text": "in",
+          "start": 3.229,
+          "end": 3.289
+        },
+        {
+          "text": "due",
+          "start": 3.329,
+          "end": 3.449
+        },
+        {
+          "text": "famiglie:",
+          "start": 3.469,
+          "end": 3.889
+        }
+      ]
+    },
+    {
+      "start": 4.209,
+      "end": 9.469,
+      "text": "task predittivi — classificazione e regressione, fuoco del corso — e task descrittivi,",
+      "words": [
+        {
+          "text": "task",
+          "start": 4.209,
+          "end": 4.469
+        },
+        {
+          "text": "predittivi",
+          "start": 4.589,
+          "end": 5.169
+        },
+        {
+          "text": "—",
+          "start": 5.169,
+          "end": 5.319
+        },
+        {
+          "text": "classificazione",
+          "start": 5.429,
+          "end": 6.109
+        },
+        {
+          "text": "e",
+          "start": 6.129,
+          "end": 6.169
+        },
+        {
+          "text": "regressione,",
+          "start": 6.189,
+          "end": 6.769
+        },
+        {
+          "text": "fuoco",
+          "start": 6.989,
+          "end": 7.229
+        },
+        {
+          "text": "del",
+          "start": 7.269,
+          "end": 7.409
+        },
+        {
+          "text": "corso",
+          "start": 7.449,
+          "end": 7.809
+        },
+        {
+          "text": "—",
+          "start": 7.809,
+          "end": 7.959
+        },
+        {
+          "text": "e",
+          "start": 8.269,
+          "end": 8.309
+        },
+        {
+          "text": "task",
+          "start": 8.389,
+          "end": 8.629
+        },
+        {
+          "text": "descrittivi,",
+          "start": 8.769,
+          "end": 9.469
+        }
+      ]
+    },
+    {
+      "start": 9.689,
+      "end": 12.31,
+      "text": "come cluster analysis e regole di associazione.",
+      "words": [
+        {
+          "text": "come",
+          "start": 9.689,
+          "end": 9.869
+        },
+        {
+          "text": "cluster",
+          "start": 9.969,
+          "end": 10.289
+        },
+        {
+          "text": "analysis",
+          "start": 10.329,
+          "end": 10.849
+        },
+        {
+          "text": "e",
+          "start": 11.07,
+          "end": 11.11
+        },
+        {
+          "text": "regole",
+          "start": 11.21,
+          "end": 11.51
+        },
+        {
+          "text": "di",
+          "start": 11.55,
+          "end": 11.59
+        },
+        {
+          "text": "associazione.",
+          "start": 11.65,
+          "end": 12.31
+        }
+      ]
+    },
+    {
+      "start": 13.13,
+      "end": 17.45,
+      "text": "Nell'apprendimento supervisionato disponiamo di esempi etichettati x virgola d,",
+      "words": [
+        {
+          "text": "Nell'apprendimento",
+          "start": 13.13,
+          "end": 13.79
+        },
+        {
+          "text": "supervisionato",
+          "start": 13.85,
+          "end": 14.65
+        },
+        {
+          "text": "disponiamo",
+          "start": 14.81,
+          "end": 15.27
+        },
+        {
+          "text": "di",
+          "start": 15.31,
+          "end": 15.37
+        },
+        {
+          "text": "esempi",
+          "start": 15.43,
+          "end": 15.73
+        },
+        {
+          "text": "etichettati",
+          "start": 15.77,
+          "end": 16.39
+        },
+        {
+          "text": "x",
+          "start": 16.69,
+          "end": 16.73
+        },
+        {
+          "text": "virgola",
+          "start": 16.99,
+          "end": 17.35
+        },
+        {
+          "text": "d,",
+          "start": 17.41,
+          "end": 17.45
+        }
+      ]
+    },
+    {
+      "start": 17.99,
+      "end": 22.031,
+      "text": "dove il target d è fornito da un insegnante secondo una funzione sconosciuta f,",
+      "words": [
+        {
+          "text": "dove",
+          "start": 17.99,
+          "end": 18.13
+        },
+        {
+          "text": "il",
+          "start": 18.15,
+          "end": 18.21
+        },
+        {
+          "text": "target",
+          "start": 18.23,
+          "end": 18.55
+        },
+        {
+          "text": "d",
+          "start": 18.67,
+          "end": 18.71
+        },
+        {
+          "text": "è",
+          "start": 18.85,
+          "end": 18.89
+        },
+        {
+          "text": "fornito",
+          "start": 18.91,
+          "end": 19.31
+        },
+        {
+          "text": "da",
+          "start": 19.35,
+          "end": 19.41
+        },
+        {
+          "text": "un",
+          "start": 19.45,
+          "end": 19.51
+        },
+        {
+          "text": "insegnante",
+          "start": 19.55,
+          "end": 20.131
+        },
+        {
+          "text": "secondo",
+          "start": 20.191,
+          "end": 20.471
+        },
+        {
+          "text": "una",
+          "start": 20.511,
+          "end": 20.591
+        },
+        {
+          "text": "funzione",
+          "start": 20.651,
+          "end": 20.991
+        },
+        {
+          "text": "sconosciuta",
+          "start": 21.031,
+          "end": 21.591
+        },
+        {
+          "text": "f,",
+          "start": 21.991,
+          "end": 22.031
+        }
+      ]
+    },
+    {
+      "start": 22.571,
+      "end": 26.331,
+      "text": "e vogliamo un'ipotesi h che generalizzi su nuovi input x primo.",
+      "words": [
+        {
+          "text": "e",
+          "start": 22.571,
+          "end": 22.611
+        },
+        {
+          "text": "vogliamo",
+          "start": 22.651,
+          "end": 22.951
+        },
+        {
+          "text": "un'ipotesi",
+          "start": 22.971,
+          "end": 23.471
+        },
+        {
+          "text": "h",
+          "start": 23.791,
+          "end": 23.831
+        },
+        {
+          "text": "che",
+          "start": 24.071,
+          "end": 24.151
+        },
+        {
+          "text": "generalizzi",
+          "start": 24.211,
+          "end": 24.791
+        },
+        {
+          "text": "su",
+          "start": 24.851,
+          "end": 24.931
+        },
+        {
+          "text": "nuovi",
+          "start": 25.011,
+          "end": 25.211
+        },
+        {
+          "text": "input",
+          "start": 25.291,
+          "end": 25.611
+        },
+        {
+          "text": "x",
+          "start": 25.911,
+          "end": 25.951
+        },
+        {
+          "text": "primo.",
+          "start": 26.031,
+          "end": 26.331
+        }
+      ]
+    },
+    {
+      "start": 26.971,
+      "end": 32.512,
+      "text": "In statistica gli input si chiamano variabili indipendenti e gli output variabili dipendenti.",
+      "words": [
+        {
+          "text": "In",
+          "start": 26.971,
+          "end": 27.051
+        },
+        {
+          "text": "statistica",
+          "start": 27.091,
+          "end": 27.711
+        },
+        {
+          "text": "gli",
+          "start": 27.851,
+          "end": 27.971
+        },
+        {
+          "text": "input",
+          "start": 28.051,
+          "end": 28.351
+        },
+        {
+          "text": "si",
+          "start": 28.471,
+          "end": 28.551
+        },
+        {
+          "text": "chiamano",
+          "start": 28.591,
+          "end": 28.931
+        },
+        {
+          "text": "variabili",
+          "start": 29.031,
+          "end": 29.612
+        },
+        {
+          "text": "indipendenti",
+          "start": 29.672,
+          "end": 30.492
+        },
+        {
+          "text": "e",
+          "start": 30.752,
+          "end": 30.792
+        },
+        {
+          "text": "gli",
+          "start": 30.812,
+          "end": 30.912
+        },
+        {
+          "text": "output",
+          "start": 30.972,
+          "end": 31.332
+        },
+        {
+          "text": "variabili",
+          "start": 31.412,
+          "end": 31.852
+        },
+        {
+          "text": "dipendenti.",
+          "start": 31.912,
+          "end": 32.512
+        }
+      ]
+    },
+    {
+      "start": 33.172,
+      "end": 38.973,
+      "text": "Se il target è categorico parliamo di classificazione; se è numerico continuo parliamo di regressione.",
+      "words": [
+        {
+          "text": "Se",
+          "start": 33.172,
+          "end": 33.232
+        },
+        {
+          "text": "il",
+          "start": 33.292,
+          "end": 33.352
+        },
+        {
+          "text": "target",
+          "start": 33.412,
+          "end": 33.732
+        },
+        {
+          "text": "è",
+          "start": 33.792,
+          "end": 33.832
+        },
+        {
+          "text": "categorico",
+          "start": 33.872,
+          "end": 34.452
+        },
+        {
+          "text": "parliamo",
+          "start": 34.552,
+          "end": 34.892
+        },
+        {
+          "text": "di",
+          "start": 34.932,
+          "end": 34.992
+        },
+        {
+          "text": "classificazione;",
+          "start": 35.032,
+          "end": 35.872
+        },
+        {
+          "text": "se",
+          "start": 36.312,
+          "end": 36.372
+        },
+        {
+          "text": "è",
+          "start": 36.412,
+          "end": 36.452
+        },
+        {
+          "text": "numerico",
+          "start": 36.532,
+          "end": 36.972
+        },
+        {
+          "text": "continuo",
+          "start": 37.032,
+          "end": 37.532
+        },
+        {
+          "text": "parliamo",
+          "start": 37.672,
+          "end": 38.032
+        },
+        {
+          "text": "di",
+          "start": 38.072,
+          "end": 38.152
+        },
+        {
+          "text": "regressione.",
+          "start": 38.272,
+          "end": 38.973
+        }
+      ]
+    },
+    {
+      "start": 39.893,
+      "end": 45.353,
+      "text": "Nell'apprendimento non supervisionato non c'è insegnante: abbiamo solo input x non etichettati.",
+      "words": [
+        {
+          "text": "Nell'apprendimento",
+          "start": 39.893,
+          "end": 40.573
+        },
+        {
+          "text": "non",
+          "start": 40.713,
+          "end": 40.893
+        },
+        {
+          "text": "supervisionato",
+          "start": 40.973,
+          "end": 41.753
+        },
+        {
+          "text": "non",
+          "start": 41.813,
+          "end": 41.933
+        },
+        {
+          "text": "c'è",
+          "start": 41.973,
+          "end": 42.073
+        },
+        {
+          "text": "insegnante:",
+          "start": 42.113,
+          "end": 42.733
+        },
+        {
+          "text": "abbiamo",
+          "start": 42.953,
+          "end": 43.193
+        },
+        {
+          "text": "solo",
+          "start": 43.233,
+          "end": 43.413
+        },
+        {
+          "text": "input",
+          "start": 43.573,
+          "end": 43.953
+        },
+        {
+          "text": "x",
+          "start": 44.133,
+          "end": 44.173
+        },
+        {
+          "text": "non",
+          "start": 44.553,
+          "end": 44.693
+        },
+        {
+          "text": "etichettati.",
+          "start": 44.753,
+          "end": 45.353
+        }
+      ]
+    },
+    {
+      "start": 45.973,
+      "end": 51.054,
+      "text": "Gli obiettivi tipici sono il clustering — partizionare i dati in gruppi simili rappresentati da",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 45.973,
+          "end": 46.053
+        },
+        {
+          "text": "obiettivi",
+          "start": 46.093,
+          "end": 46.453
+        },
+        {
+          "text": "tipici",
+          "start": 46.493,
+          "end": 46.813
+        },
+        {
+          "text": "sono",
+          "start": 46.873,
+          "end": 47.073
+        },
+        {
+          "text": "il",
+          "start": 47.433,
+          "end": 47.533
+        },
+        {
+          "text": "clustering",
+          "start": 47.633,
+          "end": 48.254
+        },
+        {
+          "text": "—",
+          "start": 48.254,
+          "end": 48.404
+        },
+        {
+          "text": "partizionare",
+          "start": 48.554,
+          "end": 49.094
+        },
+        {
+          "text": "i",
+          "start": 49.134,
+          "end": 49.174
+        },
+        {
+          "text": "dati",
+          "start": 49.174,
+          "end": 49.374
+        },
+        {
+          "text": "in",
+          "start": 49.434,
+          "end": 49.494
+        },
+        {
+          "text": "gruppi",
+          "start": 49.534,
+          "end": 49.814
+        },
+        {
+          "text": "simili",
+          "start": 49.894,
+          "end": 50.274
+        },
+        {
+          "text": "rappresentati",
+          "start": 50.334,
+          "end": 50.894
+        },
+        {
+          "text": "da",
+          "start": 50.974,
+          "end": 51.054
+        }
+      ]
+    },
+    {
+      "start": 51.114,
+      "end": 57.175,
+      "text": "centroidi, come nello schema a sinistra — la riduzione di dimensionalità e la modellazione della",
+      "words": [
+        {
+          "text": "centroidi,",
+          "start": 51.114,
+          "end": 51.714
+        },
+        {
+          "text": "come",
+          "start": 52.014,
+          "end": 52.174
+        },
+        {
+          "text": "nello",
+          "start": 52.234,
+          "end": 52.414
+        },
+        {
+          "text": "schema",
+          "start": 52.434,
+          "end": 52.654
+        },
+        {
+          "text": "a",
+          "start": 52.674,
+          "end": 52.714
+        },
+        {
+          "text": "sinistra",
+          "start": 52.754,
+          "end": 53.134
+        },
+        {
+          "text": "—",
+          "start": 53.134,
+          "end": 53.284
+        },
+        {
+          "text": "la",
+          "start": 53.734,
+          "end": 53.794
+        },
+        {
+          "text": "riduzione",
+          "start": 53.874,
+          "end": 54.614
+        },
+        {
+          "text": "di",
+          "start": 54.654,
+          "end": 54.734
+        },
+        {
+          "text": "dimensionalità",
+          "start": 54.834,
+          "end": 55.674
+        },
+        {
+          "text": "e",
+          "start": 55.994,
+          "end": 56.034
+        },
+        {
+          "text": "la",
+          "start": 56.074,
+          "end": 56.154
+        },
+        {
+          "text": "modellazione",
+          "start": 56.214,
+          "end": 56.975
+        },
+        {
+          "text": "della",
+          "start": 57.015,
+          "end": 57.175
+        }
+      ]
+    },
+    {
+      "start": 57.215,
+      "end": 57.615,
+      "text": "densità.",
+      "words": [
+        {
+          "text": "densità.",
+          "start": 57.215,
+          "end": 57.615
+        }
+      ]
+    },
+    {
+      "start": 58.595,
+      "end": 63.995,
+      "text": "Guardando alla classificazione: con due classi f di x è una funzione booleana e parliamo",
+      "words": [
+        {
+          "text": "Guardando",
+          "start": 58.595,
+          "end": 58.955
+        },
+        {
+          "text": "alla",
+          "start": 58.975,
+          "end": 59.095
+        },
+        {
+          "text": "classificazione:",
+          "start": 59.135,
+          "end": 60.155
+        },
+        {
+          "text": "con",
+          "start": 60.435,
+          "end": 60.575
+        },
+        {
+          "text": "due",
+          "start": 60.635,
+          "end": 60.775
+        },
+        {
+          "text": "classi",
+          "start": 60.815,
+          "end": 61.235
+        },
+        {
+          "text": "f",
+          "start": 61.595,
+          "end": 61.635
+        },
+        {
+          "text": "di",
+          "start": 61.735,
+          "end": 61.855
+        },
+        {
+          "text": "x",
+          "start": 61.935,
+          "end": 61.975
+        },
+        {
+          "text": "è",
+          "start": 62.115,
+          "end": 62.155
+        },
+        {
+          "text": "una",
+          "start": 62.175,
+          "end": 62.275
+        },
+        {
+          "text": "funzione",
+          "start": 62.335,
+          "end": 62.715
+        },
+        {
+          "text": "booleana",
+          "start": 62.815,
+          "end": 63.255
+        },
+        {
+          "text": "e",
+          "start": 63.575,
+          "end": 63.615
+        },
+        {
+          "text": "parliamo",
+          "start": 63.655,
+          "end": 63.995
+        }
+      ]
+    },
+    {
+      "start": 64.055,
+      "end": 69.456,
+      "text": "di classificazione binaria o concept learning; con più classi di problema multi-classe.",
+      "words": [
+        {
+          "text": "di",
+          "start": 64.055,
+          "end": 64.115
+        },
+        {
+          "text": "classificazione",
+          "start": 64.155,
+          "end": 64.915
+        },
+        {
+          "text": "binaria",
+          "start": 65.015,
+          "end": 65.515
+        },
+        {
+          "text": "o",
+          "start": 65.695,
+          "end": 65.735
+        },
+        {
+          "text": "concept",
+          "start": 65.875,
+          "end": 66.336
+        },
+        {
+          "text": "learning;",
+          "start": 66.396,
+          "end": 66.816
+        },
+        {
+          "text": "con",
+          "start": 67.356,
+          "end": 67.476
+        },
+        {
+          "text": "più",
+          "start": 67.516,
+          "end": 67.596
+        },
+        {
+          "text": "classi",
+          "start": 67.656,
+          "end": 68.016
+        },
+        {
+          "text": "di",
+          "start": 68.236,
+          "end": 68.316
+        },
+        {
+          "text": "problema",
+          "start": 68.356,
+          "end": 68.716
+        },
+        {
+          "text": "multi-classe.",
+          "start": 68.776,
+          "end": 69.456
+        }
+      ]
+    },
+    {
+      "start": 70.396,
+      "end": 75.477,
+      "text": "Geometricamente classificare significa dividere lo spazio degli input in regioni di decisione:",
+      "words": [
+        {
+          "text": "Geometricamente",
+          "start": 70.396,
+          "end": 71.096
+        },
+        {
+          "text": "classificare",
+          "start": 71.136,
+          "end": 71.756
+        },
+        {
+          "text": "significa",
+          "start": 71.816,
+          "end": 72.256
+        },
+        {
+          "text": "dividere",
+          "start": 72.356,
+          "end": 72.796
+        },
+        {
+          "text": "lo",
+          "start": 72.856,
+          "end": 72.916
+        },
+        {
+          "text": "spazio",
+          "start": 72.956,
+          "end": 73.296
+        },
+        {
+          "text": "degli",
+          "start": 73.316,
+          "end": 73.516
+        },
+        {
+          "text": "input",
+          "start": 73.556,
+          "end": 73.856
+        },
+        {
+          "text": "in",
+          "start": 74.076,
+          "end": 74.176
+        },
+        {
+          "text": "regioni",
+          "start": 74.236,
+          "end": 74.636
+        },
+        {
+          "text": "di",
+          "start": 74.696,
+          "end": 74.776
+        },
+        {
+          "text": "decisione:",
+          "start": 74.836,
+          "end": 75.477
+        }
+      ]
+    },
+    {
+      "start": 75.977,
+      "end": 78.857,
+      "text": "l'esempio base a destra è il separatore lineare nel piano,",
+      "words": [
+        {
+          "text": "l'esempio",
+          "start": 75.977,
+          "end": 76.337
+        },
+        {
+          "text": "base",
+          "start": 76.397,
+          "end": 76.577
+        },
+        {
+          "text": "a",
+          "start": 76.617,
+          "end": 76.65700000000001
+        },
+        {
+          "text": "destra",
+          "start": 76.677,
+          "end": 76.997
+        },
+        {
+          "text": "è",
+          "start": 77.057,
+          "end": 77.09700000000001
+        },
+        {
+          "text": "il",
+          "start": 77.097,
+          "end": 77.157
+        },
+        {
+          "text": "separatore",
+          "start": 77.197,
+          "end": 77.677
+        },
+        {
+          "text": "lineare",
+          "start": 77.757,
+          "end": 78.257
+        },
+        {
+          "text": "nel",
+          "start": 78.317,
+          "end": 78.437
+        },
+        {
+          "text": "piano,",
+          "start": 78.517,
+          "end": 78.857
+        }
+      ]
+    },
+    {
+      "start": 79.257,
+      "end": 84.417,
+      "text": "w trasposto x più w zero uguale zero, cioè la Linear Threshold Unit,",
+      "words": [
+        {
+          "text": "w",
+          "start": 79.257,
+          "end": 79.29700000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 79.657,
+          "end": 80.117
+        },
+        {
+          "text": "x",
+          "start": 80.297,
+          "end": 80.337
+        },
+        {
+          "text": "più",
+          "start": 80.577,
+          "end": 80.677
+        },
+        {
+          "text": "w",
+          "start": 80.777,
+          "end": 80.81700000000001
+        },
+        {
+          "text": "zero",
+          "start": 81.237,
+          "end": 81.437
+        },
+        {
+          "text": "uguale",
+          "start": 81.437,
+          "end": 81.657
+        },
+        {
+          "text": "zero,",
+          "start": 81.757,
+          "end": 82.017
+        },
+        {
+          "text": "cioè",
+          "start": 82.537,
+          "end": 82.697
+        },
+        {
+          "text": "la",
+          "start": 82.857,
+          "end": 82.937
+        },
+        {
+          "text": "Linear",
+          "start": 83.057,
+          "end": 83.417
+        },
+        {
+          "text": "Threshold",
+          "start": 83.497,
+          "end": 83.957
+        },
+        {
+          "text": "Unit,",
+          "start": 84.117,
+          "end": 84.417
+        }
+      ]
+    },
+    {
+      "start": 84.758,
+      "end": 88.838,
+      "text": "LTU — una funzione indicatrice le cui partizioni si chiamano dicotomie.",
+      "words": [
+        {
+          "text": "LTU",
+          "start": 84.758,
+          "end": 85.078
+        },
+        {
+          "text": "—",
+          "start": 85.078,
+          "end": 85.228
+        },
+        {
+          "text": "una",
+          "start": 85.558,
+          "end": 85.658
+        },
+        {
+          "text": "funzione",
+          "start": 85.698,
+          "end": 86.018
+        },
+        {
+          "text": "indicatrice",
+          "start": 86.058,
+          "end": 86.658
+        },
+        {
+          "text": "le",
+          "start": 86.798,
+          "end": 86.858
+        },
+        {
+          "text": "cui",
+          "start": 86.898,
+          "end": 87.018
+        },
+        {
+          "text": "partizioni",
+          "start": 87.078,
+          "end": 87.598
+        },
+        {
+          "text": "si",
+          "start": 87.638,
+          "end": 87.718
+        },
+        {
+          "text": "chiamano",
+          "start": 87.758,
+          "end": 88.058
+        },
+        {
+          "text": "dicotomie.",
+          "start": 88.278,
+          "end": 88.838
+        }
+      ]
+    }
+  ]
+}

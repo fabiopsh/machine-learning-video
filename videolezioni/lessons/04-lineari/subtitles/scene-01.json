@@ -1,0 +1,1227 @@
+{
+  "duration": 87.295,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.781,
+      "text": "Il modello lineare è il nostro primo modello con uno spazio delle ipotesi continuo,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.08,
+          "end": 0.18
+        },
+        {
+          "text": "modello",
+          "start": 0.22,
+          "end": 0.58
+        },
+        {
+          "text": "lineare",
+          "start": 0.66,
+          "end": 1.22
+        },
+        {
+          "text": "è",
+          "start": 1.4,
+          "end": 1.44
+        },
+        {
+          "text": "il",
+          "start": 1.48,
+          "end": 1.54
+        },
+        {
+          "text": "nostro",
+          "start": 1.58,
+          "end": 1.86
+        },
+        {
+          "text": "primo",
+          "start": 1.94,
+          "end": 2.16
+        },
+        {
+          "text": "modello",
+          "start": 2.22,
+          "end": 2.6
+        },
+        {
+          "text": "con",
+          "start": 2.64,
+          "end": 2.76
+        },
+        {
+          "text": "uno",
+          "start": 2.8,
+          "end": 2.92
+        },
+        {
+          "text": "spazio",
+          "start": 2.96,
+          "end": 3.3
+        },
+        {
+          "text": "delle",
+          "start": 3.36,
+          "end": 3.56
+        },
+        {
+          "text": "ipotesi",
+          "start": 3.66,
+          "end": 4.14
+        },
+        {
+          "text": "continuo,",
+          "start": 4.2,
+          "end": 4.781
+        }
+      ]
+    },
+    {
+      "start": 5.121,
+      "end": 6.801,
+      "text": "parametrizzato da numeri reali.",
+      "words": [
+        {
+          "text": "parametrizzato",
+          "start": 5.121,
+          "end": 5.921
+        },
+        {
+          "text": "da",
+          "start": 5.961,
+          "end": 6.021
+        },
+        {
+          "text": "numeri",
+          "start": 6.101,
+          "end": 6.381
+        },
+        {
+          "text": "reali.",
+          "start": 6.421,
+          "end": 6.801
+        }
+      ]
+    },
+    {
+      "start": 7.241,
+      "end": 11.841,
+      "text": "Nel caso univariato — una sola variabile di input x e un target reale d",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 7.241,
+          "end": 7.361
+        },
+        {
+          "text": "caso",
+          "start": 7.401,
+          "end": 7.641
+        },
+        {
+          "text": "univariato",
+          "start": 7.821,
+          "end": 8.601
+        },
+        {
+          "text": "—",
+          "start": 8.601,
+          "end": 8.751
+        },
+        {
+          "text": "una",
+          "start": 8.921,
+          "end": 9.061
+        },
+        {
+          "text": "sola",
+          "start": 9.121,
+          "end": 9.321
+        },
+        {
+          "text": "variabile",
+          "start": 9.361,
+          "end": 9.801
+        },
+        {
+          "text": "di",
+          "start": 9.841,
+          "end": 9.921
+        },
+        {
+          "text": "input",
+          "start": 10.001,
+          "end": 10.281
+        },
+        {
+          "text": "x",
+          "start": 10.481,
+          "end": 10.521
+        },
+        {
+          "text": "e",
+          "start": 10.801,
+          "end": 10.841
+        },
+        {
+          "text": "un",
+          "start": 10.901,
+          "end": 10.981
+        },
+        {
+          "text": "target",
+          "start": 11.021,
+          "end": 11.361
+        },
+        {
+          "text": "reale",
+          "start": 11.421,
+          "end": 11.721
+        },
+        {
+          "text": "d",
+          "start": 11.801,
+          "end": 11.841
+        }
+      ]
+    },
+    {
+      "start": 11.841,
+      "end": 15.802,
+      "text": "— assumiamo il modello h con w di x uguale",
+      "words": [
+        {
+          "text": "—",
+          "start": 11.841,
+          "end": 11.991
+        },
+        {
+          "text": "assumiamo",
+          "start": 12.461,
+          "end": 12.881
+        },
+        {
+          "text": "il",
+          "start": 12.921,
+          "end": 12.981
+        },
+        {
+          "text": "modello",
+          "start": 13.001,
+          "end": 13.401
+        },
+        {
+          "text": "h",
+          "start": 13.901,
+          "end": 13.941
+        },
+        {
+          "text": "con",
+          "start": 14.041,
+          "end": 14.181
+        },
+        {
+          "text": "w",
+          "start": 14.581,
+          "end": 14.621
+        },
+        {
+          "text": "di",
+          "start": 14.741,
+          "end": 14.802
+        },
+        {
+          "text": "x",
+          "start": 15.042,
+          "end": 15.082
+        },
+        {
+          "text": "uguale",
+          "start": 15.402,
+          "end": 15.802
+        }
+      ]
+    },
+    {
+      "start": 16.602,
+      "end": 21.722,
+      "text": "w uno x più w zero, dove w zero e w uno sono i pesi,",
+      "words": [
+        {
+          "text": "w",
+          "start": 16.602,
+          "end": 16.642
+        },
+        {
+          "text": "uno",
+          "start": 16.682,
+          "end": 17.122
+        },
+        {
+          "text": "x",
+          "start": 17.442,
+          "end": 17.482
+        },
+        {
+          "text": "più",
+          "start": 17.742,
+          "end": 17.862
+        },
+        {
+          "text": "w",
+          "start": 18.362,
+          "end": 18.402
+        },
+        {
+          "text": "zero,",
+          "start": 18.562,
+          "end": 18.862
+        },
+        {
+          "text": "dove",
+          "start": 19.302,
+          "end": 19.462
+        },
+        {
+          "text": "w",
+          "start": 19.902,
+          "end": 19.942
+        },
+        {
+          "text": "zero",
+          "start": 20.082,
+          "end": 20.342
+        },
+        {
+          "text": "e",
+          "start": 20.362,
+          "end": 20.402
+        },
+        {
+          "text": "w",
+          "start": 20.722,
+          "end": 20.762
+        },
+        {
+          "text": "uno",
+          "start": 20.782,
+          "end": 21.082
+        },
+        {
+          "text": "sono",
+          "start": 21.142,
+          "end": 21.322
+        },
+        {
+          "text": "i",
+          "start": 21.342,
+          "end": 21.382
+        },
+        {
+          "text": "pesi,",
+          "start": 21.402,
+          "end": 21.722
+        }
+      ]
+    },
+    {
+      "start": 21.842,
+      "end": 23.502,
+      "text": "cioè i parametri liberi reali:",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 21.842,
+          "end": 21.982
+        },
+        {
+          "text": "i",
+          "start": 22.062,
+          "end": 22.102
+        },
+        {
+          "text": "parametri",
+          "start": 22.162,
+          "end": 22.662
+        },
+        {
+          "text": "liberi",
+          "start": 22.762,
+          "end": 23.082
+        },
+        {
+          "text": "reali:",
+          "start": 23.162,
+          "end": 23.502
+        }
+      ]
+    },
+    {
+      "start": 24.202,
+      "end": 27.963,
+      "text": "adattiamo ai dati una retta, in uno spazio H infinito.",
+      "words": [
+        {
+          "text": "adattiamo",
+          "start": 24.202,
+          "end": 24.662
+        },
+        {
+          "text": "ai",
+          "start": 24.702,
+          "end": 24.762
+        },
+        {
+          "text": "dati",
+          "start": 24.803,
+          "end": 25.003
+        },
+        {
+          "text": "una",
+          "start": 25.043,
+          "end": 25.183
+        },
+        {
+          "text": "retta,",
+          "start": 25.243,
+          "end": 25.603
+        },
+        {
+          "text": "in",
+          "start": 26.083,
+          "end": 26.163
+        },
+        {
+          "text": "uno",
+          "start": 26.203,
+          "end": 26.323
+        },
+        {
+          "text": "spazio",
+          "start": 26.383,
+          "end": 26.823
+        },
+        {
+          "text": "H",
+          "start": 27.203,
+          "end": 27.243
+        },
+        {
+          "text": "infinito.",
+          "start": 27.443,
+          "end": 27.963
+        }
+      ]
+    },
+    {
+      "start": 28.823,
+      "end": 34.543,
+      "text": "Addestrare il modello significa trovare il vettore w che minimizza l'errore empirico sul training set;",
+      "words": [
+        {
+          "text": "Addestrare",
+          "start": 28.823,
+          "end": 29.343
+        },
+        {
+          "text": "il",
+          "start": 29.383,
+          "end": 29.423
+        },
+        {
+          "text": "modello",
+          "start": 29.463,
+          "end": 29.843
+        },
+        {
+          "text": "significa",
+          "start": 29.923,
+          "end": 30.363
+        },
+        {
+          "text": "trovare",
+          "start": 30.403,
+          "end": 30.703
+        },
+        {
+          "text": "il",
+          "start": 30.743,
+          "end": 30.803
+        },
+        {
+          "text": "vettore",
+          "start": 30.823,
+          "end": 31.203
+        },
+        {
+          "text": "w",
+          "start": 31.643,
+          "end": 31.683
+        },
+        {
+          "text": "che",
+          "start": 31.803,
+          "end": 31.903
+        },
+        {
+          "text": "minimizza",
+          "start": 31.943,
+          "end": 32.403
+        },
+        {
+          "text": "l'errore",
+          "start": 32.463,
+          "end": 32.803
+        },
+        {
+          "text": "empirico",
+          "start": 32.943,
+          "end": 33.583
+        },
+        {
+          "text": "sul",
+          "start": 33.683,
+          "end": 33.823
+        },
+        {
+          "text": "training",
+          "start": 33.863,
+          "end": 34.203
+        },
+        {
+          "text": "set;",
+          "start": 34.263,
+          "end": 34.543
+        }
+      ]
+    },
+    {
+      "start": 34.984,
+      "end": 38.324,
+      "text": "il controllo della complessità verrà aggiunto nel capitolo successivo.",
+      "words": [
+        {
+          "text": "il",
+          "start": 34.984,
+          "end": 35.064
+        },
+        {
+          "text": "controllo",
+          "start": 35.104,
+          "end": 35.504
+        },
+        {
+          "text": "della",
+          "start": 35.524,
+          "end": 35.684
+        },
+        {
+          "text": "complessità",
+          "start": 35.724,
+          "end": 36.224
+        },
+        {
+          "text": "verrà",
+          "start": 36.304,
+          "end": 36.504
+        },
+        {
+          "text": "aggiunto",
+          "start": 36.544,
+          "end": 36.964
+        },
+        {
+          "text": "nel",
+          "start": 37.064,
+          "end": 37.204
+        },
+        {
+          "text": "capitolo",
+          "start": 37.244,
+          "end": 37.664
+        },
+        {
+          "text": "successivo.",
+          "start": 37.764,
+          "end": 38.324
+        }
+      ]
+    },
+    {
+      "start": 39.244,
+      "end": 43.004,
+      "text": "Dati l esempi x con p virgola d con p,",
+      "words": [
+        {
+          "text": "Dati",
+          "start": 39.244,
+          "end": 39.464
+        },
+        {
+          "text": "l",
+          "start": 39.724,
+          "end": 39.764
+        },
+        {
+          "text": "esempi",
+          "start": 40.084,
+          "end": 40.604
+        },
+        {
+          "text": "x",
+          "start": 41.124,
+          "end": 41.164
+        },
+        {
+          "text": "con",
+          "start": 41.284,
+          "end": 41.444
+        },
+        {
+          "text": "p",
+          "start": 41.564,
+          "end": 41.604
+        },
+        {
+          "text": "virgola",
+          "start": 42.004,
+          "end": 42.424
+        },
+        {
+          "text": "d",
+          "start": 42.544,
+          "end": 42.584
+        },
+        {
+          "text": "con",
+          "start": 42.704,
+          "end": 42.864
+        },
+        {
+          "text": "p,",
+          "start": 42.964,
+          "end": 43.004
+        }
+      ]
+    },
+    {
+      "start": 43.724,
+      "end": 46.045,
+      "text": "minimizziamo la somma dei quadrati dei residui:",
+      "words": [
+        {
+          "text": "minimizziamo",
+          "start": 43.724,
+          "end": 44.264
+        },
+        {
+          "text": "la",
+          "start": 44.324,
+          "end": 44.384
+        },
+        {
+          "text": "somma",
+          "start": 44.444,
+          "end": 44.664
+        },
+        {
+          "text": "dei",
+          "start": 44.724,
+          "end": 44.824
+        },
+        {
+          "text": "quadrati",
+          "start": 44.845,
+          "end": 45.265
+        },
+        {
+          "text": "dei",
+          "start": 45.325,
+          "end": 45.465
+        },
+        {
+          "text": "residui:",
+          "start": 45.505,
+          "end": 46.045
+        }
+      ]
+    },
+    {
+      "start": 47.265,
+      "end": 52.205,
+      "text": "E di w uguale somma da p uguale uno a l di d con p",
+      "words": [
+        {
+          "text": "E",
+          "start": 47.265,
+          "end": 47.305
+        },
+        {
+          "text": "di",
+          "start": 47.705,
+          "end": 47.785
+        },
+        {
+          "text": "w",
+          "start": 48.185,
+          "end": 48.225
+        },
+        {
+          "text": "uguale",
+          "start": 48.605,
+          "end": 49.005
+        },
+        {
+          "text": "somma",
+          "start": 49.145,
+          "end": 49.505
+        },
+        {
+          "text": "da",
+          "start": 49.605,
+          "end": 49.685
+        },
+        {
+          "text": "p",
+          "start": 49.865,
+          "end": 49.905
+        },
+        {
+          "text": "uguale",
+          "start": 50.105,
+          "end": 50.405
+        },
+        {
+          "text": "uno",
+          "start": 50.565,
+          "end": 50.745
+        },
+        {
+          "text": "a",
+          "start": 50.885,
+          "end": 50.925
+        },
+        {
+          "text": "l",
+          "start": 51.145,
+          "end": 51.185
+        },
+        {
+          "text": "di",
+          "start": 51.465,
+          "end": 51.545
+        },
+        {
+          "text": "d",
+          "start": 51.705,
+          "end": 51.745
+        },
+        {
+          "text": "con",
+          "start": 51.905,
+          "end": 52.085
+        },
+        {
+          "text": "p",
+          "start": 52.165,
+          "end": 52.205
+        }
+      ]
+    },
+    {
+      "start": 52.525,
+      "end": 55.826,
+      "text": "meno w uno x con p più w zero,",
+      "words": [
+        {
+          "text": "meno",
+          "start": 52.525,
+          "end": 52.785
+        },
+        {
+          "text": "w",
+          "start": 53.245,
+          "end": 53.285
+        },
+        {
+          "text": "uno",
+          "start": 53.305,
+          "end": 53.705
+        },
+        {
+          "text": "x",
+          "start": 54.065,
+          "end": 54.105
+        },
+        {
+          "text": "con",
+          "start": 54.265,
+          "end": 54.445
+        },
+        {
+          "text": "p",
+          "start": 54.545,
+          "end": 54.585
+        },
+        {
+          "text": "più",
+          "start": 54.845,
+          "end": 54.966
+        },
+        {
+          "text": "w",
+          "start": 55.366,
+          "end": 55.406
+        },
+        {
+          "text": "zero,",
+          "start": 55.546,
+          "end": 55.826
+        }
+      ]
+    },
+    {
+      "start": 56.146,
+      "end": 57.006,
+      "text": "tutto al quadrato.",
+      "words": [
+        {
+          "text": "tutto",
+          "start": 56.146,
+          "end": 56.386
+        },
+        {
+          "text": "al",
+          "start": 56.426,
+          "end": 56.486
+        },
+        {
+          "text": "quadrato.",
+          "start": 56.526,
+          "end": 57.006
+        }
+      ]
+    },
+    {
+      "start": 57.646,
+      "end": 61.526,
+      "text": "Dividendo per l si ottiene la media: è il criterio dei minimi quadrati,",
+      "words": [
+        {
+          "text": "Dividendo",
+          "start": 57.646,
+          "end": 58.046
+        },
+        {
+          "text": "per",
+          "start": 58.086,
+          "end": 58.206
+        },
+        {
+          "text": "l",
+          "start": 58.326,
+          "end": 58.366
+        },
+        {
+          "text": "si",
+          "start": 58.506,
+          "end": 58.566
+        },
+        {
+          "text": "ottiene",
+          "start": 58.606,
+          "end": 58.926
+        },
+        {
+          "text": "la",
+          "start": 59.046,
+          "end": 59.106
+        },
+        {
+          "text": "media:",
+          "start": 59.166,
+          "end": 59.486
+        },
+        {
+          "text": "è",
+          "start": 59.726,
+          "end": 59.766
+        },
+        {
+          "text": "il",
+          "start": 59.806,
+          "end": 59.866
+        },
+        {
+          "text": "criterio",
+          "start": 59.926,
+          "end": 60.366
+        },
+        {
+          "text": "dei",
+          "start": 60.406,
+          "end": 60.526
+        },
+        {
+          "text": "minimi",
+          "start": 60.606,
+          "end": 60.926
+        },
+        {
+          "text": "quadrati,",
+          "start": 61.006,
+          "end": 61.526
+        }
+      ]
+    },
+    {
+      "start": 61.926,
+      "end": 65.727,
+      "text": "Least Mean Squares, LMS, in norma L due.",
+      "words": [
+        {
+          "text": "Least",
+          "start": 61.926,
+          "end": 62.286
+        },
+        {
+          "text": "Mean",
+          "start": 62.426,
+          "end": 62.626
+        },
+        {
+          "text": "Squares,",
+          "start": 62.706,
+          "end": 63.286
+        },
+        {
+          "text": "LMS,",
+          "start": 63.646,
+          "end": 64.286
+        },
+        {
+          "text": "in",
+          "start": 64.546,
+          "end": 64.626
+        },
+        {
+          "text": "norma",
+          "start": 64.706,
+          "end": 65.047
+        },
+        {
+          "text": "L",
+          "start": 65.347,
+          "end": 65.387
+        },
+        {
+          "text": "due.",
+          "start": 65.527,
+          "end": 65.727
+        }
+      ]
+    },
+    {
+      "start": 66.607,
+      "end": 68.287,
+      "text": "Perché proprio i minimi quadrati?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 66.607,
+          "end": 66.827
+        },
+        {
+          "text": "proprio",
+          "start": 66.887,
+          "end": 67.167
+        },
+        {
+          "text": "i",
+          "start": 67.307,
+          "end": 67.34700000000001
+        },
+        {
+          "text": "minimi",
+          "start": 67.427,
+          "end": 67.707
+        },
+        {
+          "text": "quadrati?",
+          "start": 67.787,
+          "end": 68.287
+        }
+      ]
+    },
+    {
+      "start": 69.407,
+      "end": 74.567,
+      "text": "Ogni retta candidata produce dei residui, cioè le distanze verticali tra i punti e la",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 69.407,
+          "end": 69.567
+        },
+        {
+          "text": "retta",
+          "start": 69.607,
+          "end": 69.827
+        },
+        {
+          "text": "candidata",
+          "start": 69.867,
+          "end": 70.387
+        },
+        {
+          "text": "produce",
+          "start": 70.427,
+          "end": 70.787
+        },
+        {
+          "text": "dei",
+          "start": 70.847,
+          "end": 70.967
+        },
+        {
+          "text": "residui,",
+          "start": 71.007,
+          "end": 71.567
+        },
+        {
+          "text": "cioè",
+          "start": 71.927,
+          "end": 72.067
+        },
+        {
+          "text": "le",
+          "start": 72.147,
+          "end": 72.207
+        },
+        {
+          "text": "distanze",
+          "start": 72.247,
+          "end": 72.727
+        },
+        {
+          "text": "verticali",
+          "start": 72.787,
+          "end": 73.347
+        },
+        {
+          "text": "tra",
+          "start": 73.407,
+          "end": 73.507
+        },
+        {
+          "text": "i",
+          "start": 73.567,
+          "end": 73.607
+        },
+        {
+          "text": "punti",
+          "start": 73.667,
+          "end": 74.147
+        },
+        {
+          "text": "e",
+          "start": 74.387,
+          "end": 74.427
+        },
+        {
+          "text": "la",
+          "start": 74.487,
+          "end": 74.567
+        }
+      ]
+    },
+    {
+      "start": 74.607,
+      "end": 80.188,
+      "text": "retta; minimizzare la somma dei loro quadrati è il metodo standard per risolvere in modo",
+      "words": [
+        {
+          "text": "retta;",
+          "start": 74.607,
+          "end": 74.988
+        },
+        {
+          "text": "minimizzare",
+          "start": 75.588,
+          "end": 76.208
+        },
+        {
+          "text": "la",
+          "start": 76.248,
+          "end": 76.308
+        },
+        {
+          "text": "somma",
+          "start": 76.368,
+          "end": 76.568
+        },
+        {
+          "text": "dei",
+          "start": 76.608,
+          "end": 76.708
+        },
+        {
+          "text": "loro",
+          "start": 76.748,
+          "end": 76.948
+        },
+        {
+          "text": "quadrati",
+          "start": 77.008,
+          "end": 77.588
+        },
+        {
+          "text": "è",
+          "start": 77.788,
+          "end": 77.828
+        },
+        {
+          "text": "il",
+          "start": 77.908,
+          "end": 77.968
+        },
+        {
+          "text": "metodo",
+          "start": 78.008,
+          "end": 78.288
+        },
+        {
+          "text": "standard",
+          "start": 78.348,
+          "end": 78.808
+        },
+        {
+          "text": "per",
+          "start": 79.168,
+          "end": 79.288
+        },
+        {
+          "text": "risolvere",
+          "start": 79.348,
+          "end": 79.808
+        },
+        {
+          "text": "in",
+          "start": 79.848,
+          "end": 79.888
+        },
+        {
+          "text": "modo",
+          "start": 79.948,
+          "end": 80.188
+        }
+      ]
+    },
+    {
+      "start": 80.228,
+      "end": 85.749,
+      "text": "approssimato i sistemi sovradeterminati, dove ci sono molte più equazioni — gli esempi — che",
+      "words": [
+        {
+          "text": "approssimato",
+          "start": 80.228,
+          "end": 80.908
+        },
+        {
+          "text": "i",
+          "start": 80.948,
+          "end": 80.988
+        },
+        {
+          "text": "sistemi",
+          "start": 81.008,
+          "end": 81.388
+        },
+        {
+          "text": "sovradeterminati,",
+          "start": 81.448,
+          "end": 82.448
+        },
+        {
+          "text": "dove",
+          "start": 82.688,
+          "end": 82.848
+        },
+        {
+          "text": "ci",
+          "start": 82.888,
+          "end": 82.948
+        },
+        {
+          "text": "sono",
+          "start": 83.008,
+          "end": 83.208
+        },
+        {
+          "text": "molte",
+          "start": 83.268,
+          "end": 83.568
+        },
+        {
+          "text": "più",
+          "start": 83.628,
+          "end": 83.708
+        },
+        {
+          "text": "equazioni",
+          "start": 83.768,
+          "end": 84.388
+        },
+        {
+          "text": "—",
+          "start": 84.388,
+          "end": 84.538
+        },
+        {
+          "text": "gli",
+          "start": 84.708,
+          "end": 84.828
+        },
+        {
+          "text": "esempi",
+          "start": 84.868,
+          "end": 85.309
+        },
+        {
+          "text": "—",
+          "start": 85.309,
+          "end": 85.459
+        },
+        {
+          "text": "che",
+          "start": 85.649,
+          "end": 85.749
+        }
+      ]
+    },
+    {
+      "start": 85.829,
+      "end": 87.009,
+      "text": "incognite, i pesi.",
+      "words": [
+        {
+          "text": "incognite,",
+          "start": 85.829,
+          "end": 86.409
+        },
+        {
+          "text": "i",
+          "start": 86.689,
+          "end": 86.729
+        },
+        {
+          "text": "pesi.",
+          "start": 86.749,
+          "end": 87.009
+        }
+      ]
+    }
+  ]
+}

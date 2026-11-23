@@ -1,0 +1,1111 @@
+{
+  "duration": 72.345,
+  "segments": [
+    {
+      "start": 0.404,
+      "end": 3.445,
+      "text": "Formalizziamo il teorema per la regressione con loss quadratica.",
+      "words": [
+        {
+          "text": "Formalizziamo",
+          "start": 0.404,
+          "end": 0.944
+        },
+        {
+          "text": "il",
+          "start": 0.984,
+          "end": 1.044
+        },
+        {
+          "text": "teorema",
+          "start": 1.084,
+          "end": 1.444
+        },
+        {
+          "text": "per",
+          "start": 1.524,
+          "end": 1.644
+        },
+        {
+          "text": "la",
+          "start": 1.684,
+          "end": 1.744
+        },
+        {
+          "text": "regressione",
+          "start": 1.804,
+          "end": 2.465
+        },
+        {
+          "text": "con",
+          "start": 2.565,
+          "end": 2.705
+        },
+        {
+          "text": "loss",
+          "start": 2.725,
+          "end": 2.865
+        },
+        {
+          "text": "quadratica.",
+          "start": 2.905,
+          "end": 3.445
+        }
+      ]
+    },
+    {
+      "start": 4.285,
+      "end": 8.806,
+      "text": "Assumiamo dati estratti in modo indipendente e identicamente distribuito da una distribuzione P.",
+      "words": [
+        {
+          "text": "Assumiamo",
+          "start": 4.285,
+          "end": 4.725
+        },
+        {
+          "text": "dati",
+          "start": 4.765,
+          "end": 4.945
+        },
+        {
+          "text": "estratti",
+          "start": 5.005,
+          "end": 5.385
+        },
+        {
+          "text": "in",
+          "start": 5.425,
+          "end": 5.465
+        },
+        {
+          "text": "modo",
+          "start": 5.505,
+          "end": 5.665
+        },
+        {
+          "text": "indipendente",
+          "start": 5.705,
+          "end": 6.305
+        },
+        {
+          "text": "e",
+          "start": 6.325,
+          "end": 6.365
+        },
+        {
+          "text": "identicamente",
+          "start": 6.385,
+          "end": 7.025
+        },
+        {
+          "text": "distribuito",
+          "start": 7.085,
+          "end": 7.685
+        },
+        {
+          "text": "da",
+          "start": 7.765,
+          "end": 7.825
+        },
+        {
+          "text": "una",
+          "start": 7.885,
+          "end": 7.985
+        },
+        {
+          "text": "distribuzione",
+          "start": 8.045,
+          "end": 8.686
+        },
+        {
+          "text": "P.",
+          "start": 8.766,
+          "end": 8.806
+        }
+      ]
+    },
+    {
+      "start": 9.606,
+      "end": 12.766,
+      "text": "Il valore atteso su P media su due fonti indipendenti di casualità:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 9.606,
+          "end": 9.686
+        },
+        {
+          "text": "valore",
+          "start": 9.726,
+          "end": 10.006
+        },
+        {
+          "text": "atteso",
+          "start": 10.046,
+          "end": 10.346
+        },
+        {
+          "text": "su",
+          "start": 10.386,
+          "end": 10.466
+        },
+        {
+          "text": "P",
+          "start": 10.546,
+          "end": 10.586
+        },
+        {
+          "text": "media",
+          "start": 10.806,
+          "end": 11.026
+        },
+        {
+          "text": "su",
+          "start": 11.086,
+          "end": 11.146
+        },
+        {
+          "text": "due",
+          "start": 11.206,
+          "end": 11.326
+        },
+        {
+          "text": "fonti",
+          "start": 11.386,
+          "end": 11.606
+        },
+        {
+          "text": "indipendenti",
+          "start": 11.646,
+          "end": 12.166
+        },
+        {
+          "text": "di",
+          "start": 12.206,
+          "end": 12.266
+        },
+        {
+          "text": "casualità:",
+          "start": 12.306,
+          "end": 12.766
+        }
+      ]
+    },
+    {
+      "start": 13.366,
+      "end": 15.947,
+      "text": "la scelta del training set che produce l'ipotesi h,",
+      "words": [
+        {
+          "text": "la",
+          "start": 13.366,
+          "end": 13.446
+        },
+        {
+          "text": "scelta",
+          "start": 13.466,
+          "end": 13.766
+        },
+        {
+          "text": "del",
+          "start": 13.826,
+          "end": 13.946
+        },
+        {
+          "text": "training",
+          "start": 13.986,
+          "end": 14.326
+        },
+        {
+          "text": "set",
+          "start": 14.386,
+          "end": 14.566
+        },
+        {
+          "text": "che",
+          "start": 14.666,
+          "end": 14.746
+        },
+        {
+          "text": "produce",
+          "start": 14.806,
+          "end": 15.146
+        },
+        {
+          "text": "l'ipotesi",
+          "start": 15.186,
+          "end": 15.647
+        },
+        {
+          "text": "h,",
+          "start": 15.907,
+          "end": 15.947
+        }
+      ]
+    },
+    {
+      "start": 16.467,
+      "end": 18.867,
+      "text": "e il rumore del nuovo target d nel punto x.",
+      "words": [
+        {
+          "text": "e",
+          "start": 16.467,
+          "end": 16.507
+        },
+        {
+          "text": "il",
+          "start": 16.587,
+          "end": 16.667
+        },
+        {
+          "text": "rumore",
+          "start": 16.707,
+          "end": 16.987
+        },
+        {
+          "text": "del",
+          "start": 17.027,
+          "end": 17.147
+        },
+        {
+          "text": "nuovo",
+          "start": 17.187,
+          "end": 17.387
+        },
+        {
+          "text": "target",
+          "start": 17.467,
+          "end": 17.847
+        },
+        {
+          "text": "d",
+          "start": 17.987,
+          "end": 18.027
+        },
+        {
+          "text": "nel",
+          "start": 18.227,
+          "end": 18.347
+        },
+        {
+          "text": "punto",
+          "start": 18.407,
+          "end": 18.647
+        },
+        {
+          "text": "x.",
+          "start": 18.827,
+          "end": 18.867
+        }
+      ]
+    },
+    {
+      "start": 19.747,
+      "end": 23.468,
+      "text": "Definiamo h soprassegnato di x come la predizione media in x.",
+      "words": [
+        {
+          "text": "Definiamo",
+          "start": 19.747,
+          "end": 20.167
+        },
+        {
+          "text": "h",
+          "start": 20.567,
+          "end": 20.607
+        },
+        {
+          "text": "soprassegnato",
+          "start": 20.687,
+          "end": 21.327
+        },
+        {
+          "text": "di",
+          "start": 21.367,
+          "end": 21.427
+        },
+        {
+          "text": "x",
+          "start": 21.587,
+          "end": 21.627
+        },
+        {
+          "text": "come",
+          "start": 21.847,
+          "end": 22.048
+        },
+        {
+          "text": "la",
+          "start": 22.108,
+          "end": 22.168
+        },
+        {
+          "text": "predizione",
+          "start": 22.208,
+          "end": 22.688
+        },
+        {
+          "text": "media",
+          "start": 22.728,
+          "end": 22.988
+        },
+        {
+          "text": "in",
+          "start": 23.168,
+          "end": 23.268
+        },
+        {
+          "text": "x.",
+          "start": 23.428,
+          "end": 23.468
+        }
+      ]
+    },
+    {
+      "start": 24.388,
+      "end": 28.969,
+      "text": "Il teorema afferma che l'errore quadratico atteso è uguale a varianza più bias al quadrato",
+      "words": [
+        {
+          "text": "Il",
+          "start": 24.388,
+          "end": 24.488
+        },
+        {
+          "text": "teorema",
+          "start": 24.548,
+          "end": 24.888
+        },
+        {
+          "text": "afferma",
+          "start": 24.928,
+          "end": 25.248
+        },
+        {
+          "text": "che",
+          "start": 25.308,
+          "end": 25.388
+        },
+        {
+          "text": "l'errore",
+          "start": 25.428,
+          "end": 25.768
+        },
+        {
+          "text": "quadratico",
+          "start": 25.808,
+          "end": 26.248
+        },
+        {
+          "text": "atteso",
+          "start": 26.288,
+          "end": 26.648
+        },
+        {
+          "text": "è",
+          "start": 26.788,
+          "end": 26.828
+        },
+        {
+          "text": "uguale",
+          "start": 26.888,
+          "end": 27.188
+        },
+        {
+          "text": "a",
+          "start": 27.248,
+          "end": 27.288
+        },
+        {
+          "text": "varianza",
+          "start": 27.368,
+          "end": 27.828
+        },
+        {
+          "text": "più",
+          "start": 27.908,
+          "end": 28.008
+        },
+        {
+          "text": "bias",
+          "start": 28.048,
+          "end": 28.368
+        },
+        {
+          "text": "al",
+          "start": 28.428,
+          "end": 28.488
+        },
+        {
+          "text": "quadrato",
+          "start": 28.528,
+          "end": 28.969
+        }
+      ]
+    },
+    {
+      "start": 29.269,
+      "end": 31.009,
+      "text": "più varianza del rumore sigma quadro.",
+      "words": [
+        {
+          "text": "più",
+          "start": 29.269,
+          "end": 29.369
+        },
+        {
+          "text": "varianza",
+          "start": 29.429,
+          "end": 29.809
+        },
+        {
+          "text": "del",
+          "start": 29.849,
+          "end": 29.949
+        },
+        {
+          "text": "rumore",
+          "start": 29.989,
+          "end": 30.289
+        },
+        {
+          "text": "sigma",
+          "start": 30.389,
+          "end": 30.629
+        },
+        {
+          "text": "quadro.",
+          "start": 30.689,
+          "end": 31.009
+        }
+      ]
+    },
+    {
+      "start": 31.909,
+      "end": 33.849,
+      "text": "Seguiamo la dimostrazione in cinque passaggi.",
+      "words": [
+        {
+          "text": "Seguiamo",
+          "start": 31.909,
+          "end": 32.229
+        },
+        {
+          "text": "la",
+          "start": 32.269,
+          "end": 32.329
+        },
+        {
+          "text": "dimostrazione",
+          "start": 32.369,
+          "end": 32.929
+        },
+        {
+          "text": "in",
+          "start": 32.969,
+          "end": 33.029
+        },
+        {
+          "text": "cinque",
+          "start": 33.069,
+          "end": 33.309
+        },
+        {
+          "text": "passaggi.",
+          "start": 33.349,
+          "end": 33.849
+        }
+      ]
+    },
+    {
+      "start": 34.389,
+      "end": 38.73,
+      "text": "Primo: sviluppiamo il quadrato di d meno h e usiamo la linearità del valore atteso.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 34.389,
+          "end": 34.649
+        },
+        {
+          "text": "sviluppiamo",
+          "start": 34.909,
+          "end": 35.389
+        },
+        {
+          "text": "il",
+          "start": 35.429,
+          "end": 35.489
+        },
+        {
+          "text": "quadrato",
+          "start": 35.529,
+          "end": 35.91
+        },
+        {
+          "text": "di",
+          "start": 35.97,
+          "end": 36.05
+        },
+        {
+          "text": "d",
+          "start": 36.11,
+          "end": 36.15
+        },
+        {
+          "text": "meno",
+          "start": 36.23,
+          "end": 36.39
+        },
+        {
+          "text": "h",
+          "start": 36.67,
+          "end": 36.71
+        },
+        {
+          "text": "e",
+          "start": 36.89,
+          "end": 36.93
+        },
+        {
+          "text": "usiamo",
+          "start": 36.95,
+          "end": 37.21
+        },
+        {
+          "text": "la",
+          "start": 37.29,
+          "end": 37.35
+        },
+        {
+          "text": "linearità",
+          "start": 37.39,
+          "end": 37.87
+        },
+        {
+          "text": "del",
+          "start": 37.95,
+          "end": 38.05
+        },
+        {
+          "text": "valore",
+          "start": 38.09,
+          "end": 38.35
+        },
+        {
+          "text": "atteso.",
+          "start": 38.37,
+          "end": 38.73
+        }
+      ]
+    },
+    {
+      "start": 39.37,
+      "end": 44.171,
+      "text": "Secondo, il termine misto: poiché il dato nuovo d è indipendente dal training set da",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 39.37,
+          "end": 39.75
+        },
+        {
+          "text": "il",
+          "start": 40.09,
+          "end": 40.17
+        },
+        {
+          "text": "termine",
+          "start": 40.23,
+          "end": 40.57
+        },
+        {
+          "text": "misto:",
+          "start": 40.61,
+          "end": 40.89
+        },
+        {
+          "text": "poiché",
+          "start": 41.31,
+          "end": 41.59
+        },
+        {
+          "text": "il",
+          "start": 41.65,
+          "end": 41.71
+        },
+        {
+          "text": "dato",
+          "start": 41.75,
+          "end": 41.95
+        },
+        {
+          "text": "nuovo",
+          "start": 41.99,
+          "end": 42.21
+        },
+        {
+          "text": "d",
+          "start": 42.31,
+          "end": 42.35
+        },
+        {
+          "text": "è",
+          "start": 42.591,
+          "end": 42.631
+        },
+        {
+          "text": "indipendente",
+          "start": 42.691,
+          "end": 43.251
+        },
+        {
+          "text": "dal",
+          "start": 43.291,
+          "end": 43.431
+        },
+        {
+          "text": "training",
+          "start": 43.471,
+          "end": 43.791
+        },
+        {
+          "text": "set",
+          "start": 43.851,
+          "end": 44.031
+        },
+        {
+          "text": "da",
+          "start": 44.111,
+          "end": 44.171
+        }
+      ]
+    },
+    {
+      "start": 44.231,
+      "end": 48.411,
+      "text": "cui nasce h, il valore atteso del prodotto si fattorizza in f di x per",
+      "words": [
+        {
+          "text": "cui",
+          "start": 44.231,
+          "end": 44.331
+        },
+        {
+          "text": "nasce",
+          "start": 44.371,
+          "end": 44.651
+        },
+        {
+          "text": "h,",
+          "start": 44.931,
+          "end": 44.971
+        },
+        {
+          "text": "il",
+          "start": 45.491,
+          "end": 45.591
+        },
+        {
+          "text": "valore",
+          "start": 45.611,
+          "end": 45.871
+        },
+        {
+          "text": "atteso",
+          "start": 45.911,
+          "end": 46.171
+        },
+        {
+          "text": "del",
+          "start": 46.211,
+          "end": 46.331
+        },
+        {
+          "text": "prodotto",
+          "start": 46.351,
+          "end": 46.711
+        },
+        {
+          "text": "si",
+          "start": 46.771,
+          "end": 46.851
+        },
+        {
+          "text": "fattorizza",
+          "start": 46.891,
+          "end": 47.351
+        },
+        {
+          "text": "in",
+          "start": 47.411,
+          "end": 47.491
+        },
+        {
+          "text": "f",
+          "start": 47.651,
+          "end": 47.691
+        },
+        {
+          "text": "di",
+          "start": 47.791,
+          "end": 47.931
+        },
+        {
+          "text": "x",
+          "start": 47.991,
+          "end": 48.031
+        },
+        {
+          "text": "per",
+          "start": 48.291,
+          "end": 48.411
+        }
+      ]
+    },
+    {
+      "start": 48.591,
+      "end": 52.612,
+      "text": "h soprassegnato di x, dando meno due f per h soprassegnato.",
+      "words": [
+        {
+          "text": "h",
+          "start": 48.591,
+          "end": 48.631
+        },
+        {
+          "text": "soprassegnato",
+          "start": 48.711,
+          "end": 49.312
+        },
+        {
+          "text": "di",
+          "start": 49.352,
+          "end": 49.392
+        },
+        {
+          "text": "x,",
+          "start": 49.552,
+          "end": 49.592
+        },
+        {
+          "text": "dando",
+          "start": 50.132,
+          "end": 50.392
+        },
+        {
+          "text": "meno",
+          "start": 50.512,
+          "end": 50.712
+        },
+        {
+          "text": "due",
+          "start": 50.792,
+          "end": 50.972
+        },
+        {
+          "text": "f",
+          "start": 51.312,
+          "end": 51.352
+        },
+        {
+          "text": "per",
+          "start": 51.552,
+          "end": 51.672
+        },
+        {
+          "text": "h",
+          "start": 51.832,
+          "end": 51.872
+        },
+        {
+          "text": "soprassegnato.",
+          "start": 51.932,
+          "end": 52.612
+        }
+      ]
+    },
+    {
+      "start": 53.412,
+      "end": 57.413,
+      "text": "Terzo e quarto: applichiamo il lemma della varianza sia a h quadro sia a d",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 53.412,
+          "end": 53.712
+        },
+        {
+          "text": "e",
+          "start": 53.752,
+          "end": 53.792
+        },
+        {
+          "text": "quarto:",
+          "start": 53.832,
+          "end": 54.192
+        },
+        {
+          "text": "applichiamo",
+          "start": 54.632,
+          "end": 55.112
+        },
+        {
+          "text": "il",
+          "start": 55.172,
+          "end": 55.212
+        },
+        {
+          "text": "lemma",
+          "start": 55.252,
+          "end": 55.472
+        },
+        {
+          "text": "della",
+          "start": 55.512,
+          "end": 55.672
+        },
+        {
+          "text": "varianza",
+          "start": 55.693,
+          "end": 56.073
+        },
+        {
+          "text": "sia",
+          "start": 56.153,
+          "end": 56.273
+        },
+        {
+          "text": "a",
+          "start": 56.333,
+          "end": 56.373
+        },
+        {
+          "text": "h",
+          "start": 56.493,
+          "end": 56.533
+        },
+        {
+          "text": "quadro",
+          "start": 56.613,
+          "end": 56.933
+        },
+        {
+          "text": "sia",
+          "start": 57.113,
+          "end": 57.253
+        },
+        {
+          "text": "a",
+          "start": 57.273,
+          "end": 57.313
+        },
+        {
+          "text": "d",
+          "start": 57.373,
+          "end": 57.413
+        }
+      ]
+    },
+    {
+      "start": 57.513,
+      "end": 57.853,
+      "text": "quadro.",
+      "words": [
+        {
+          "text": "quadro.",
+          "start": 57.513,
+          "end": 57.853
+        }
+      ]
+    },
+    {
+      "start": 58.893,
+      "end": 66.094,
+      "text": "Quinto: raccogliendo i termini senza valore atteso emerge esattamente il quadrato di h soprassegnato meno",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 58.893,
+          "end": 59.293
+        },
+        {
+          "text": "raccogliendo",
+          "start": 59.713,
+          "end": 60.233
+        },
+        {
+          "text": "i",
+          "start": 60.293,
+          "end": 60.333
+        },
+        {
+          "text": "termini",
+          "start": 60.353,
+          "end": 60.793
+        },
+        {
+          "text": "senza",
+          "start": 60.853,
+          "end": 61.153
+        },
+        {
+          "text": "valore",
+          "start": 61.213,
+          "end": 61.533
+        },
+        {
+          "text": "atteso",
+          "start": 61.573,
+          "end": 62.013
+        },
+        {
+          "text": "emerge",
+          "start": 62.193,
+          "end": 62.574
+        },
+        {
+          "text": "esattamente",
+          "start": 62.634,
+          "end": 63.354
+        },
+        {
+          "text": "il",
+          "start": 63.414,
+          "end": 63.474
+        },
+        {
+          "text": "quadrato",
+          "start": 63.534,
+          "end": 64.034
+        },
+        {
+          "text": "di",
+          "start": 64.094,
+          "end": 64.174
+        },
+        {
+          "text": "h",
+          "start": 64.634,
+          "end": 64.674
+        },
+        {
+          "text": "soprassegnato",
+          "start": 64.814,
+          "end": 65.614
+        },
+        {
+          "text": "meno",
+          "start": 65.894,
+          "end": 66.094
+        }
+      ]
+    },
+    {
+      "start": 66.274,
+      "end": 70.995,
+      "text": "f di x, cioè il bias al quadrato, accanto alla varianza di h e alla",
+      "words": [
+        {
+          "text": "f",
+          "start": 66.274,
+          "end": 66.31400000000001
+        },
+        {
+          "text": "di",
+          "start": 66.434,
+          "end": 66.494
+        },
+        {
+          "text": "x,",
+          "start": 66.694,
+          "end": 66.73400000000001
+        },
+        {
+          "text": "cioè",
+          "start": 67.454,
+          "end": 67.634
+        },
+        {
+          "text": "il",
+          "start": 67.694,
+          "end": 67.774
+        },
+        {
+          "text": "bias",
+          "start": 67.814,
+          "end": 68.114
+        },
+        {
+          "text": "al",
+          "start": 68.154,
+          "end": 68.214
+        },
+        {
+          "text": "quadrato,",
+          "start": 68.254,
+          "end": 68.694
+        },
+        {
+          "text": "accanto",
+          "start": 69.135,
+          "end": 69.495
+        },
+        {
+          "text": "alla",
+          "start": 69.535,
+          "end": 69.675
+        },
+        {
+          "text": "varianza",
+          "start": 69.695,
+          "end": 70.095
+        },
+        {
+          "text": "di",
+          "start": 70.135,
+          "end": 70.215
+        },
+        {
+          "text": "h",
+          "start": 70.495,
+          "end": 70.53500000000001
+        },
+        {
+          "text": "e",
+          "start": 70.755,
+          "end": 70.795
+        },
+        {
+          "text": "alla",
+          "start": 70.835,
+          "end": 70.995
+        }
+      ]
+    },
+    {
+      "start": 71.055,
+      "end": 72.095,
+      "text": "varianza del rumore.",
+      "words": [
+        {
+          "text": "varianza",
+          "start": 71.055,
+          "end": 71.535
+        },
+        {
+          "text": "del",
+          "start": 71.595,
+          "end": 71.715
+        },
+        {
+          "text": "rumore.",
+          "start": 71.755,
+          "end": 72.095
+        }
+      ]
+    }
+  ]
+}

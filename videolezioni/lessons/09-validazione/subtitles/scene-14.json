@@ -1,0 +1,1054 @@
+{
+  "duration": 74.838,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.281,
+      "text": "La qualità di una validazione dipende moltissimo da come vengono campionati i dati,",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "qualità",
+          "start": 0.22,
+          "end": 0.58
+        },
+        {
+          "text": "di",
+          "start": 0.64,
+          "end": 0.7
+        },
+        {
+          "text": "una",
+          "start": 0.76,
+          "end": 0.88
+        },
+        {
+          "text": "validazione",
+          "start": 0.92,
+          "end": 1.6
+        },
+        {
+          "text": "dipende",
+          "start": 1.74,
+          "end": 2.06
+        },
+        {
+          "text": "moltissimo",
+          "start": 2.1,
+          "end": 2.66
+        },
+        {
+          "text": "da",
+          "start": 2.72,
+          "end": 2.78
+        },
+        {
+          "text": "come",
+          "start": 2.84,
+          "end": 2.98
+        },
+        {
+          "text": "vengono",
+          "start": 3.04,
+          "end": 3.34
+        },
+        {
+          "text": "campionati",
+          "start": 3.4,
+          "end": 3.96
+        },
+        {
+          "text": "i",
+          "start": 3.98,
+          "end": 4.02
+        },
+        {
+          "text": "dati,",
+          "start": 4.0,
+          "end": 4.281
+        }
+      ]
+    },
+    {
+      "start": 4.581,
+      "end": 6.381,
+      "text": "soprattutto quando il dataset è piccolo.",
+      "words": [
+        {
+          "text": "soprattutto",
+          "start": 4.581,
+          "end": 5.061
+        },
+        {
+          "text": "quando",
+          "start": 5.101,
+          "end": 5.321
+        },
+        {
+          "text": "il",
+          "start": 5.361,
+          "end": 5.421
+        },
+        {
+          "text": "dataset",
+          "start": 5.441,
+          "end": 5.881
+        },
+        {
+          "text": "è",
+          "start": 5.901,
+          "end": 5.941
+        },
+        {
+          "text": "piccolo.",
+          "start": 6.021,
+          "end": 6.381
+        }
+      ]
+    },
+    {
+      "start": 6.941,
+      "end": 12.041,
+      "text": "Prima buona pratica: la stratificazione, che garantisce che in ogni partizione — training,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 6.941,
+          "end": 7.181
+        },
+        {
+          "text": "buona",
+          "start": 7.261,
+          "end": 7.421
+        },
+        {
+          "text": "pratica:",
+          "start": 7.461,
+          "end": 7.841
+        },
+        {
+          "text": "la",
+          "start": 8.041,
+          "end": 8.101
+        },
+        {
+          "text": "stratificazione,",
+          "start": 8.141,
+          "end": 9.041
+        },
+        {
+          "text": "che",
+          "start": 9.361,
+          "end": 9.441
+        },
+        {
+          "text": "garantisce",
+          "start": 9.521,
+          "end": 10.021
+        },
+        {
+          "text": "che",
+          "start": 10.081,
+          "end": 10.161
+        },
+        {
+          "text": "in",
+          "start": 10.221,
+          "end": 10.301
+        },
+        {
+          "text": "ogni",
+          "start": 10.361,
+          "end": 10.581
+        },
+        {
+          "text": "partizione",
+          "start": 10.641,
+          "end": 11.361
+        },
+        {
+          "text": "—",
+          "start": 11.361,
+          "end": 11.511
+        },
+        {
+          "text": "training,",
+          "start": 11.601,
+          "end": 12.041
+        }
+      ]
+    },
+    {
+      "start": 12.161,
+      "end": 17.502,
+      "text": "test o singoli fold — tutte le classi siano rappresentate nelle stesse proporzioni del dataset",
+      "words": [
+        {
+          "text": "test",
+          "start": 12.161,
+          "end": 12.461
+        },
+        {
+          "text": "o",
+          "start": 12.581,
+          "end": 12.621
+        },
+        {
+          "text": "singoli",
+          "start": 12.701,
+          "end": 13.022
+        },
+        {
+          "text": "fold",
+          "start": 13.062,
+          "end": 13.342
+        },
+        {
+          "text": "—",
+          "start": 13.342,
+          "end": 13.492
+        },
+        {
+          "text": "tutte",
+          "start": 13.762,
+          "end": 14.042
+        },
+        {
+          "text": "le",
+          "start": 14.082,
+          "end": 14.162
+        },
+        {
+          "text": "classi",
+          "start": 14.202,
+          "end": 14.582
+        },
+        {
+          "text": "siano",
+          "start": 14.662,
+          "end": 14.882
+        },
+        {
+          "text": "rappresentate",
+          "start": 14.942,
+          "end": 15.582
+        },
+        {
+          "text": "nelle",
+          "start": 15.642,
+          "end": 15.842
+        },
+        {
+          "text": "stesse",
+          "start": 15.902,
+          "end": 16.262
+        },
+        {
+          "text": "proporzioni",
+          "start": 16.302,
+          "end": 16.902
+        },
+        {
+          "text": "del",
+          "start": 16.942,
+          "end": 17.062
+        },
+        {
+          "text": "dataset",
+          "start": 17.102,
+          "end": 17.502
+        }
+      ]
+    },
+    {
+      "start": 17.582,
+      "end": 18.062,
+      "text": "completo.",
+      "words": [
+        {
+          "text": "completo.",
+          "start": 17.582,
+          "end": 18.062
+        }
+      ]
+    },
+    {
+      "start": 18.682,
+      "end": 22.963,
+      "text": "Seconda: controllare sempre l'ordine originale dei dati prima di dividerli,",
+      "words": [
+        {
+          "text": "Seconda:",
+          "start": 18.682,
+          "end": 19.082
+        },
+        {
+          "text": "controllare",
+          "start": 19.362,
+          "end": 19.882
+        },
+        {
+          "text": "sempre",
+          "start": 19.982,
+          "end": 20.402
+        },
+        {
+          "text": "l'ordine",
+          "start": 20.482,
+          "end": 20.862
+        },
+        {
+          "text": "originale",
+          "start": 20.922,
+          "end": 21.382
+        },
+        {
+          "text": "dei",
+          "start": 21.422,
+          "end": 21.542
+        },
+        {
+          "text": "dati",
+          "start": 21.582,
+          "end": 21.863
+        },
+        {
+          "text": "prima",
+          "start": 21.983,
+          "end": 22.283
+        },
+        {
+          "text": "di",
+          "start": 22.343,
+          "end": 22.403
+        },
+        {
+          "text": "dividerli,",
+          "start": 22.443,
+          "end": 22.963
+        }
+      ]
+    },
+    {
+      "start": 23.323,
+      "end": 27.763,
+      "text": "perché i file sono spesso ordinati per classe o nel tempo e uno split ingenuo",
+      "words": [
+        {
+          "text": "perché",
+          "start": 23.323,
+          "end": 23.523
+        },
+        {
+          "text": "i",
+          "start": 23.563,
+          "end": 23.603
+        },
+        {
+          "text": "file",
+          "start": 23.623,
+          "end": 23.923
+        },
+        {
+          "text": "sono",
+          "start": 24.003,
+          "end": 24.163
+        },
+        {
+          "text": "spesso",
+          "start": 24.203,
+          "end": 24.443
+        },
+        {
+          "text": "ordinati",
+          "start": 24.483,
+          "end": 24.883
+        },
+        {
+          "text": "per",
+          "start": 24.923,
+          "end": 25.043
+        },
+        {
+          "text": "classe",
+          "start": 25.083,
+          "end": 25.503
+        },
+        {
+          "text": "o",
+          "start": 25.663,
+          "end": 25.703
+        },
+        {
+          "text": "nel",
+          "start": 25.783,
+          "end": 25.923
+        },
+        {
+          "text": "tempo",
+          "start": 26.003,
+          "end": 26.363
+        },
+        {
+          "text": "e",
+          "start": 26.743,
+          "end": 26.783
+        },
+        {
+          "text": "uno",
+          "start": 26.883,
+          "end": 27.003
+        },
+        {
+          "text": "split",
+          "start": 27.043,
+          "end": 27.303
+        },
+        {
+          "text": "ingenuo",
+          "start": 27.343,
+          "end": 27.763
+        }
+      ]
+    },
+    {
+      "start": 27.883,
+      "end": 31.524,
+      "text": "metterebbe una classe tutta nel training e un'altra tutta nel test.",
+      "words": [
+        {
+          "text": "metterebbe",
+          "start": 27.883,
+          "end": 28.283
+        },
+        {
+          "text": "una",
+          "start": 28.323,
+          "end": 28.443
+        },
+        {
+          "text": "classe",
+          "start": 28.483,
+          "end": 28.803
+        },
+        {
+          "text": "tutta",
+          "start": 28.923,
+          "end": 29.183
+        },
+        {
+          "text": "nel",
+          "start": 29.243,
+          "end": 29.363
+        },
+        {
+          "text": "training",
+          "start": 29.423,
+          "end": 29.843
+        },
+        {
+          "text": "e",
+          "start": 30.083,
+          "end": 30.123
+        },
+        {
+          "text": "un'altra",
+          "start": 30.223,
+          "end": 30.644
+        },
+        {
+          "text": "tutta",
+          "start": 30.764,
+          "end": 31.024
+        },
+        {
+          "text": "nel",
+          "start": 31.044,
+          "end": 31.184
+        },
+        {
+          "text": "test.",
+          "start": 31.244,
+          "end": 31.524
+        }
+      ]
+    },
+    {
+      "start": 32.144,
+      "end": 38.904,
+      "text": "Terza: ripetere l'hold-out o la cross-validation con campionamenti casuali diversi e mediarne i risultati,",
+      "words": [
+        {
+          "text": "Terza:",
+          "start": 32.144,
+          "end": 32.504
+        },
+        {
+          "text": "ripetere",
+          "start": 32.984,
+          "end": 33.444
+        },
+        {
+          "text": "l'hold-out",
+          "start": 33.544,
+          "end": 34.124
+        },
+        {
+          "text": "o",
+          "start": 34.364,
+          "end": 34.404
+        },
+        {
+          "text": "la",
+          "start": 34.464,
+          "end": 34.544
+        },
+        {
+          "text": "cross-validation",
+          "start": 34.604,
+          "end": 35.404
+        },
+        {
+          "text": "con",
+          "start": 35.564,
+          "end": 35.704
+        },
+        {
+          "text": "campionamenti",
+          "start": 35.764,
+          "end": 36.404
+        },
+        {
+          "text": "casuali",
+          "start": 36.444,
+          "end": 36.864
+        },
+        {
+          "text": "diversi",
+          "start": 36.904,
+          "end": 37.404
+        },
+        {
+          "text": "e",
+          "start": 37.764,
+          "end": 37.804
+        },
+        {
+          "text": "mediarne",
+          "start": 37.864,
+          "end": 38.264
+        },
+        {
+          "text": "i",
+          "start": 38.284,
+          "end": 38.324
+        },
+        {
+          "text": "risultati,",
+          "start": 38.344,
+          "end": 38.904
+        }
+      ]
+    },
+    {
+      "start": 39.225,
+      "end": 42.665,
+      "text": "pratica utilissima soprattutto quando si confrontano modelli diversi.",
+      "words": [
+        {
+          "text": "pratica",
+          "start": 39.225,
+          "end": 39.585
+        },
+        {
+          "text": "utilissima",
+          "start": 39.785,
+          "end": 40.405
+        },
+        {
+          "text": "soprattutto",
+          "start": 40.465,
+          "end": 40.965
+        },
+        {
+          "text": "quando",
+          "start": 41.005,
+          "end": 41.225
+        },
+        {
+          "text": "si",
+          "start": 41.285,
+          "end": 41.345
+        },
+        {
+          "text": "confrontano",
+          "start": 41.385,
+          "end": 41.865
+        },
+        {
+          "text": "modelli",
+          "start": 41.905,
+          "end": 42.185
+        },
+        {
+          "text": "diversi.",
+          "start": 42.225,
+          "end": 42.665
+        }
+      ]
+    },
+    {
+      "start": 43.365,
+      "end": 49.646,
+      "text": "Quarta: con pochissimi dati bisogna vigilare su trappole sottili — classi o feature assenti nel",
+      "words": [
+        {
+          "text": "Quarta:",
+          "start": 43.365,
+          "end": 43.725
+        },
+        {
+          "text": "con",
+          "start": 44.105,
+          "end": 44.225
+        },
+        {
+          "text": "pochissimi",
+          "start": 44.305,
+          "end": 44.885
+        },
+        {
+          "text": "dati",
+          "start": 44.945,
+          "end": 45.245
+        },
+        {
+          "text": "bisogna",
+          "start": 45.625,
+          "end": 45.925
+        },
+        {
+          "text": "vigilare",
+          "start": 46.045,
+          "end": 46.505
+        },
+        {
+          "text": "su",
+          "start": 46.565,
+          "end": 46.625
+        },
+        {
+          "text": "trappole",
+          "start": 46.725,
+          "end": 47.105
+        },
+        {
+          "text": "sottili",
+          "start": 47.145,
+          "end": 47.605
+        },
+        {
+          "text": "—",
+          "start": 47.605,
+          "end": 47.755
+        },
+        {
+          "text": "classi",
+          "start": 48.025,
+          "end": 48.446
+        },
+        {
+          "text": "o",
+          "start": 48.586,
+          "end": 48.626
+        },
+        {
+          "text": "feature",
+          "start": 48.726,
+          "end": 49.066
+        },
+        {
+          "text": "assenti",
+          "start": 49.106,
+          "end": 49.466
+        },
+        {
+          "text": "nel",
+          "start": 49.526,
+          "end": 49.646
+        }
+      ]
+    },
+    {
+      "start": 49.686,
+      "end": 54.786,
+      "text": "training, classi speciali non campionate, outlier che distorcono la media dell'errore,",
+      "words": [
+        {
+          "text": "training,",
+          "start": 49.686,
+          "end": 50.126
+        },
+        {
+          "text": "classi",
+          "start": 50.486,
+          "end": 50.826
+        },
+        {
+          "text": "speciali",
+          "start": 50.866,
+          "end": 51.326
+        },
+        {
+          "text": "non",
+          "start": 51.386,
+          "end": 51.506
+        },
+        {
+          "text": "campionate,",
+          "start": 51.546,
+          "end": 52.166
+        },
+        {
+          "text": "outlier",
+          "start": 52.566,
+          "end": 53.146
+        },
+        {
+          "text": "che",
+          "start": 53.226,
+          "end": 53.306
+        },
+        {
+          "text": "distorcono",
+          "start": 53.346,
+          "end": 53.906
+        },
+        {
+          "text": "la",
+          "start": 53.946,
+          "end": 54.006
+        },
+        {
+          "text": "media",
+          "start": 54.046,
+          "end": 54.226
+        },
+        {
+          "text": "dell'errore,",
+          "start": 54.266,
+          "end": 54.786
+        }
+      ]
+    },
+    {
+      "start": 55.146,
+      "end": 57.707,
+      "text": "o la selezione involontaria di soli casi facili.",
+      "words": [
+        {
+          "text": "o",
+          "start": 55.146,
+          "end": 55.186
+        },
+        {
+          "text": "la",
+          "start": 55.246,
+          "end": 55.326
+        },
+        {
+          "text": "selezione",
+          "start": 55.386,
+          "end": 55.886
+        },
+        {
+          "text": "involontaria",
+          "start": 55.926,
+          "end": 56.586
+        },
+        {
+          "text": "di",
+          "start": 56.666,
+          "end": 56.746
+        },
+        {
+          "text": "soli",
+          "start": 56.806,
+          "end": 57.027
+        },
+        {
+          "text": "casi",
+          "start": 57.067,
+          "end": 57.267
+        },
+        {
+          "text": "facili.",
+          "start": 57.307,
+          "end": 57.707
+        }
+      ]
+    },
+    {
+      "start": 58.507,
+      "end": 62.407,
+      "text": "Infine, ricorda che persino un blind test set può risultare fuorviante:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 58.507,
+          "end": 58.907
+        },
+        {
+          "text": "ricorda",
+          "start": 59.127,
+          "end": 59.507
+        },
+        {
+          "text": "che",
+          "start": 59.567,
+          "end": 59.647
+        },
+        {
+          "text": "persino",
+          "start": 59.687,
+          "end": 60.047
+        },
+        {
+          "text": "un",
+          "start": 60.067,
+          "end": 60.127
+        },
+        {
+          "text": "blind",
+          "start": 60.167,
+          "end": 60.447
+        },
+        {
+          "text": "test",
+          "start": 60.487,
+          "end": 60.727
+        },
+        {
+          "text": "set",
+          "start": 60.867,
+          "end": 61.127
+        },
+        {
+          "text": "può",
+          "start": 61.227,
+          "end": 61.307
+        },
+        {
+          "text": "risultare",
+          "start": 61.367,
+          "end": 61.787
+        },
+        {
+          "text": "fuorviante:",
+          "start": 61.807,
+          "end": 62.407
+        }
+      ]
+    },
+    {
+      "start": 62.867,
+      "end": 67.148,
+      "text": "accade se proviene da una distribuzione diversa, se ha scale o tolleranze differenti,",
+      "words": [
+        {
+          "text": "accade",
+          "start": 62.867,
+          "end": 63.227
+        },
+        {
+          "text": "se",
+          "start": 63.287,
+          "end": 63.367
+        },
+        {
+          "text": "proviene",
+          "start": 63.427,
+          "end": 63.767
+        },
+        {
+          "text": "da",
+          "start": 63.807,
+          "end": 63.867
+        },
+        {
+          "text": "una",
+          "start": 63.927,
+          "end": 64.027
+        },
+        {
+          "text": "distribuzione",
+          "start": 64.067,
+          "end": 64.667
+        },
+        {
+          "text": "diversa,",
+          "start": 64.707,
+          "end": 65.127
+        },
+        {
+          "text": "se",
+          "start": 65.507,
+          "end": 65.54700000000001
+        },
+        {
+          "text": "ha",
+          "start": 65.567,
+          "end": 65.607
+        },
+        {
+          "text": "scale",
+          "start": 65.667,
+          "end": 65.948
+        },
+        {
+          "text": "o",
+          "start": 65.988,
+          "end": 66.028
+        },
+        {
+          "text": "tolleranze",
+          "start": 66.068,
+          "end": 66.548
+        },
+        {
+          "text": "differenti,",
+          "start": 66.588,
+          "end": 67.148
+        }
+      ]
+    },
+    {
+      "start": 67.468,
+      "end": 71.728,
+      "text": "se non subisce lo stesso pre-processing del training, o se chiede al modello di fare",
+      "words": [
+        {
+          "text": "se",
+          "start": 67.468,
+          "end": 67.568
+        },
+        {
+          "text": "non",
+          "start": 67.648,
+          "end": 67.788
+        },
+        {
+          "text": "subisce",
+          "start": 67.848,
+          "end": 68.228
+        },
+        {
+          "text": "lo",
+          "start": 68.288,
+          "end": 68.348
+        },
+        {
+          "text": "stesso",
+          "start": 68.388,
+          "end": 68.668
+        },
+        {
+          "text": "pre-processing",
+          "start": 68.728,
+          "end": 69.468
+        },
+        {
+          "text": "del",
+          "start": 69.528,
+          "end": 69.648
+        },
+        {
+          "text": "training,",
+          "start": 69.708,
+          "end": 70.128
+        },
+        {
+          "text": "o",
+          "start": 70.488,
+          "end": 70.528
+        },
+        {
+          "text": "se",
+          "start": 70.568,
+          "end": 70.668
+        },
+        {
+          "text": "chiede",
+          "start": 70.708,
+          "end": 70.888
+        },
+        {
+          "text": "al",
+          "start": 70.928,
+          "end": 70.988
+        },
+        {
+          "text": "modello",
+          "start": 71.028,
+          "end": 71.368
+        },
+        {
+          "text": "di",
+          "start": 71.408,
+          "end": 71.468
+        },
+        {
+          "text": "fare",
+          "start": 71.508,
+          "end": 71.728
+        }
+      ]
+    },
+    {
+      "start": 71.948,
+      "end": 74.629,
+      "text": "estrapolazione su dati fuori dal range osservato.",
+      "words": [
+        {
+          "text": "estrapolazione",
+          "start": 71.948,
+          "end": 72.848
+        },
+        {
+          "text": "su",
+          "start": 72.908,
+          "end": 72.988
+        },
+        {
+          "text": "dati",
+          "start": 73.068,
+          "end": 73.308
+        },
+        {
+          "text": "fuori",
+          "start": 73.468,
+          "end": 73.708
+        },
+        {
+          "text": "dal",
+          "start": 73.748,
+          "end": 73.848
+        },
+        {
+          "text": "range",
+          "start": 73.888,
+          "end": 74.068
+        },
+        {
+          "text": "osservato.",
+          "start": 74.108,
+          "end": 74.629
+        }
+      ]
+    }
+  ]
+}

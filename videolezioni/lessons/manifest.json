@@ -71,7 +71,10 @@
       "title": "Il problema dell'apprendimento",
       "source_tex": "note_migliorate/capitoli/02-problema.tex",
       "summary": "Apprendimento supervisionato, funzioni di perdita, rischio empirico e generalizzazione.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 14,
+      "duration_min": 15
     },
     {
       "id": "03-bias-induttivo",
@@ -80,7 +83,10 @@
       "title": "Spazio delle ipotesi e bias induttivo",
       "source_tex": "note_migliorate/capitoli/03-bias-induttivo.tex",
       "summary": "Version space, necessità del bias induttivo e compromesso espressività-generalizzazione.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 6,
+      "estimated_minutes": 7,
+      "duration_min": 7
     },
     {
       "id": "04-lineari",
@@ -89,7 +95,10 @@
       "title": "Modelli lineari",
       "source_tex": "note_migliorate/capitoli/04-lineari.tex",
       "summary": "Regressione lineare, minimi quadrati, LMS, discesa del gradiente e classificazione lineare.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 10,
+      "estimated_minutes": 17,
+      "duration_min": 17
     },
     {
       "id": "05-regolarizzazione",
@@ -98,7 +107,10 @@
       "title": "Overfitting e regolarizzazione",
       "source_tex": "note_migliorate/capitoli/05-regolarizzazione.tex",
       "summary": "Condizionamento, Tikhonov / Ridge, Lasso e controllo della complessità dei pesi.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 13,
+      "duration_min": 13
     },
     {
       "id": "06-knn",
@@ -107,7 +119,10 @@
       "title": "K-nearest neighbors",
       "source_tex": "note_migliorate/capitoli/06-knn.tex",
       "summary": "Metodi basati su istanze, metriche, maledizione della dimensionalità e bias-varianza in k-NN.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 7,
+      "estimated_minutes": 10,
+      "duration_min": 10
     },
     {
       "id": "07-slt",
@@ -116,7 +131,10 @@
       "title": "Statistical Learning Theory",
       "source_tex": "note_migliorate/capitoli/07-slt.tex",
       "summary": "PAC learning, dimensione VC, disuguaglianze di concentrazione e minimizzazione del rischio strutturale.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 10,
+      "estimated_minutes": 12,
+      "duration_min": 12
     },
     {
       "id": "08-bias-varianza",
@@ -125,7 +143,10 @@
       "title": "Bias, varianza ed ensemble",
       "source_tex": "note_migliorate/capitoli/08-bias-varianza.tex",
       "summary": "Decomposizione dell'errore quadratico, bagging, boosting e combinazione di modelli.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 10,
+      "duration_min": 10
     },
     {
       "id": "09-validazione",
@@ -134,7 +155,10 @@
       "title": "Validazione",
       "source_tex": "note_migliorate/capitoli/09-validazione.tex",
       "summary": "Model selection, model assessment, hold-out, k-fold cross-validation e trappole metodologiche.",
-      "status": "planned"
+      "status": "ready",
+      "scenes_count": 17,
+      "estimated_minutes": 20,
+      "duration_min": 23
     },
     {
       "id": "10-perceptron",
@@ -145,7 +169,8 @@
       "summary": "Neurone artificiale, reti a soglia e XOR, algoritmo del Perceptron, teorema di convergenza, confronto con LMS e unità sigmoidali.",
       "status": "ready",
       "scenes_count": 19,
-      "estimated_minutes": 17
+      "estimated_minutes": 17,
+      "duration_min": 17
     },
     {
       "id": "11-mlp-backprop",
@@ -156,7 +181,8 @@
       "summary": "Architetture feedforward, approssimazione universale, credit assignment e derivazione della backpropagation.",
       "status": "ready",
       "scenes_count": 15,
-      "estimated_minutes": 16
+      "estimated_minutes": 16,
+      "duration_min": 16
     },
     {
       "id": "12-addestramento",
@@ -167,7 +193,8 @@
       "summary": "Ottimizzazione stocastica, momentum, inizializzazione, early stopping, weight decay e diagnostica.",
       "status": "ready",
       "scenes_count": 18,
-      "estimated_minutes": 19
+      "estimated_minutes": 19,
+      "duration_min": 19
     },
     {
       "id": "13-svm",

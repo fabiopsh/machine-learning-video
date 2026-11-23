@@ -1,0 +1,553 @@
+{
+  "duration": 41.55,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.281,
+      "text": "Fissiamo i tre punti chiave di questo capitolo.",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "i",
+          "start": 0.54,
+          "end": 0.5800000000000001
+        },
+        {
+          "text": "tre",
+          "start": 0.6,
+          "end": 0.7
+        },
+        {
+          "text": "punti",
+          "start": 0.78,
+          "end": 1.041
+        },
+        {
+          "text": "chiave",
+          "start": 1.101,
+          "end": 1.401
+        },
+        {
+          "text": "di",
+          "start": 1.441,
+          "end": 1.501
+        },
+        {
+          "text": "questo",
+          "start": 1.541,
+          "end": 1.801
+        },
+        {
+          "text": "capitolo.",
+          "start": 1.841,
+          "end": 2.281
+        }
+      ]
+    },
+    {
+      "start": 2.841,
+      "end": 7.604,
+      "text": "Primo: l'errore quadratico atteso si scompone in varianza, più bias al quadrato,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 2.841,
+          "end": 3.122
+        },
+        {
+          "text": "l'errore",
+          "start": 3.702,
+          "end": 4.022
+        },
+        {
+          "text": "quadratico",
+          "start": 4.062,
+          "end": 4.502
+        },
+        {
+          "text": "atteso",
+          "start": 4.562,
+          "end": 4.982
+        },
+        {
+          "text": "si",
+          "start": 5.103,
+          "end": 5.203
+        },
+        {
+          "text": "scompone",
+          "start": 5.243,
+          "end": 5.623
+        },
+        {
+          "text": "in",
+          "start": 5.663,
+          "end": 5.723
+        },
+        {
+          "text": "varianza,",
+          "start": 5.763,
+          "end": 6.323
+        },
+        {
+          "text": "più",
+          "start": 6.463,
+          "end": 6.563
+        },
+        {
+          "text": "bias",
+          "start": 6.623,
+          "end": 6.923
+        },
+        {
+          "text": "al",
+          "start": 6.983,
+          "end": 7.063
+        },
+        {
+          "text": "quadrato,",
+          "start": 7.104,
+          "end": 7.604
+        }
+      ]
+    },
+    {
+      "start": 7.884,
+      "end": 9.965,
+      "text": "più varianza del rumore, che è irriducibile.",
+      "words": [
+        {
+          "text": "più",
+          "start": 7.884,
+          "end": 7.984
+        },
+        {
+          "text": "varianza",
+          "start": 8.024,
+          "end": 8.424
+        },
+        {
+          "text": "del",
+          "start": 8.464,
+          "end": 8.564
+        },
+        {
+          "text": "rumore,",
+          "start": 8.604,
+          "end": 8.964
+        },
+        {
+          "text": "che",
+          "start": 9.064,
+          "end": 9.144
+        },
+        {
+          "text": "è",
+          "start": 9.184,
+          "end": 9.224
+        },
+        {
+          "text": "irriducibile.",
+          "start": 9.245,
+          "end": 9.965
+        }
+      ]
+    },
+    {
+      "start": 11.045,
+      "end": 16.308,
+      "text": "Secondo: modelli rigidi o molto regolarizzati hanno alto bias e bassa varianza;",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 11.045,
+          "end": 11.526
+        },
+        {
+          "text": "modelli",
+          "start": 11.966,
+          "end": 12.306
+        },
+        {
+          "text": "rigidi",
+          "start": 12.366,
+          "end": 12.726
+        },
+        {
+          "text": "o",
+          "start": 12.786,
+          "end": 12.826
+        },
+        {
+          "text": "molto",
+          "start": 12.886,
+          "end": 13.166
+        },
+        {
+          "text": "regolarizzati",
+          "start": 13.206,
+          "end": 13.987
+        },
+        {
+          "text": "hanno",
+          "start": 14.127,
+          "end": 14.367
+        },
+        {
+          "text": "alto",
+          "start": 14.427,
+          "end": 14.667
+        },
+        {
+          "text": "bias",
+          "start": 14.727,
+          "end": 15.127
+        },
+        {
+          "text": "e",
+          "start": 15.287,
+          "end": 15.327
+        },
+        {
+          "text": "bassa",
+          "start": 15.407,
+          "end": 15.708
+        },
+        {
+          "text": "varianza;",
+          "start": 15.748,
+          "end": 16.308
+        }
+      ]
+    },
+    {
+      "start": 16.788,
+      "end": 21.37,
+      "text": "modelli flessibili o poco regolarizzati hanno basso bias e alta varianza.",
+      "words": [
+        {
+          "text": "modelli",
+          "start": 16.788,
+          "end": 17.068
+        },
+        {
+          "text": "flessibili",
+          "start": 17.108,
+          "end": 17.689
+        },
+        {
+          "text": "o",
+          "start": 17.809,
+          "end": 17.849
+        },
+        {
+          "text": "poco",
+          "start": 17.929,
+          "end": 18.149
+        },
+        {
+          "text": "regolarizzati",
+          "start": 18.209,
+          "end": 18.949
+        },
+        {
+          "text": "hanno",
+          "start": 19.229,
+          "end": 19.469
+        },
+        {
+          "text": "basso",
+          "start": 19.589,
+          "end": 19.89
+        },
+        {
+          "text": "bias",
+          "start": 19.95,
+          "end": 20.33
+        },
+        {
+          "text": "e",
+          "start": 20.49,
+          "end": 20.53
+        },
+        {
+          "text": "alta",
+          "start": 20.59,
+          "end": 20.81
+        },
+        {
+          "text": "varianza.",
+          "start": 20.85,
+          "end": 21.37
+        }
+      ]
+    },
+    {
+      "start": 22.631,
+      "end": 26.973,
+      "text": "Terzo: per Jensen un comitato non è mai peggiore della media dei suoi membri;",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 22.631,
+          "end": 23.031
+        },
+        {
+          "text": "per",
+          "start": 23.591,
+          "end": 23.751
+        },
+        {
+          "text": "Jensen",
+          "start": 23.831,
+          "end": 24.272
+        },
+        {
+          "text": "un",
+          "start": 24.432,
+          "end": 24.532
+        },
+        {
+          "text": "comitato",
+          "start": 24.572,
+          "end": 24.992
+        },
+        {
+          "text": "non",
+          "start": 25.032,
+          "end": 25.152
+        },
+        {
+          "text": "è",
+          "start": 25.192,
+          "end": 25.232
+        },
+        {
+          "text": "mai",
+          "start": 25.272,
+          "end": 25.432
+        },
+        {
+          "text": "peggiore",
+          "start": 25.472,
+          "end": 25.812
+        },
+        {
+          "text": "della",
+          "start": 25.852,
+          "end": 26.013
+        },
+        {
+          "text": "media",
+          "start": 26.053,
+          "end": 26.273
+        },
+        {
+          "text": "dei",
+          "start": 26.313,
+          "end": 26.413
+        },
+        {
+          "text": "suoi",
+          "start": 26.453,
+          "end": 26.593
+        },
+        {
+          "text": "membri;",
+          "start": 26.633,
+          "end": 26.973
+        }
+      ]
+    },
+    {
+      "start": 27.673,
+      "end": 33.016,
+      "text": "il bagging media modelli ad alta varianza riducendola, mentre il boosting combina weak learner in",
+      "words": [
+        {
+          "text": "il",
+          "start": 27.673,
+          "end": 27.773
+        },
+        {
+          "text": "bagging",
+          "start": 27.833,
+          "end": 28.194
+        },
+        {
+          "text": "media",
+          "start": 28.294,
+          "end": 28.534
+        },
+        {
+          "text": "modelli",
+          "start": 28.614,
+          "end": 28.934
+        },
+        {
+          "text": "ad",
+          "start": 28.954,
+          "end": 29.034
+        },
+        {
+          "text": "alta",
+          "start": 29.054,
+          "end": 29.234
+        },
+        {
+          "text": "varianza",
+          "start": 29.274,
+          "end": 29.794
+        },
+        {
+          "text": "riducendola,",
+          "start": 29.974,
+          "end": 30.675
+        },
+        {
+          "text": "mentre",
+          "start": 31.035,
+          "end": 31.275
+        },
+        {
+          "text": "il",
+          "start": 31.335,
+          "end": 31.395
+        },
+        {
+          "text": "boosting",
+          "start": 31.435,
+          "end": 31.835
+        },
+        {
+          "text": "combina",
+          "start": 31.875,
+          "end": 32.256
+        },
+        {
+          "text": "weak",
+          "start": 32.336,
+          "end": 32.476
+        },
+        {
+          "text": "learner",
+          "start": 32.536,
+          "end": 32.876
+        },
+        {
+          "text": "in",
+          "start": 32.956,
+          "end": 33.016
+        }
+      ]
+    },
+    {
+      "start": 33.056,
+      "end": 34.777,
+      "text": "sequenza per ridurre il bias.",
+      "words": [
+        {
+          "text": "sequenza",
+          "start": 33.056,
+          "end": 33.556
+        },
+        {
+          "text": "per",
+          "start": 33.696,
+          "end": 33.816
+        },
+        {
+          "text": "ridurre",
+          "start": 33.856,
+          "end": 34.196
+        },
+        {
+          "text": "il",
+          "start": 34.236,
+          "end": 34.296
+        },
+        {
+          "text": "bias.",
+          "start": 34.337,
+          "end": 34.777
+        }
+      ]
+    },
+    {
+      "start": 35.917,
+      "end": 41.3,
+      "text": "Nel prossimo capitolo vedremo come stimare empiricamente l'errore di generalizzazione con la validazione.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 35.917,
+          "end": 36.037
+        },
+        {
+          "text": "prossimo",
+          "start": 36.077,
+          "end": 36.398
+        },
+        {
+          "text": "capitolo",
+          "start": 36.438,
+          "end": 36.878
+        },
+        {
+          "text": "vedremo",
+          "start": 37.038,
+          "end": 37.358
+        },
+        {
+          "text": "come",
+          "start": 37.418,
+          "end": 37.578
+        },
+        {
+          "text": "stimare",
+          "start": 37.638,
+          "end": 37.998
+        },
+        {
+          "text": "empiricamente",
+          "start": 38.058,
+          "end": 38.719
+        },
+        {
+          "text": "l'errore",
+          "start": 38.759,
+          "end": 39.119
+        },
+        {
+          "text": "di",
+          "start": 39.159,
+          "end": 39.239
+        },
+        {
+          "text": "generalizzazione",
+          "start": 39.279,
+          "end": 40.219
+        },
+        {
+          "text": "con",
+          "start": 40.319,
+          "end": 40.439
+        },
+        {
+          "text": "la",
+          "start": 40.479,
+          "end": 40.559
+        },
+        {
+          "text": "validazione.",
+          "start": 40.6,
+          "end": 41.3
+        }
+      ]
+    }
+  ]
+}

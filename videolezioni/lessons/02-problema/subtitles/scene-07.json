@@ -1,0 +1,1649 @@
+{
+  "duration": 109.479,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.061,
+      "text": "Per decidere se un'approssimazione è buona misuriamo la distanza tra l'uscita h con w di",
+      "words": [
+        {
+          "text": "Per",
+          "start": 0.08,
+          "end": 0.2
+        },
+        {
+          "text": "decidere",
+          "start": 0.24,
+          "end": 0.68
+        },
+        {
+          "text": "se",
+          "start": 0.74,
+          "end": 0.8
+        },
+        {
+          "text": "un'approssimazione",
+          "start": 0.84,
+          "end": 1.66
+        },
+        {
+          "text": "è",
+          "start": 1.68,
+          "end": 1.72
+        },
+        {
+          "text": "buona",
+          "start": 1.76,
+          "end": 2.1
+        },
+        {
+          "text": "misuriamo",
+          "start": 2.22,
+          "end": 2.66
+        },
+        {
+          "text": "la",
+          "start": 2.72,
+          "end": 2.78
+        },
+        {
+          "text": "distanza",
+          "start": 2.84,
+          "end": 3.32
+        },
+        {
+          "text": "tra",
+          "start": 3.38,
+          "end": 3.46
+        },
+        {
+          "text": "l'uscita",
+          "start": 3.52,
+          "end": 3.98
+        },
+        {
+          "text": "h",
+          "start": 4.28,
+          "end": 4.32
+        },
+        {
+          "text": "con",
+          "start": 4.4,
+          "end": 4.52
+        },
+        {
+          "text": "w",
+          "start": 4.82,
+          "end": 4.86
+        },
+        {
+          "text": "di",
+          "start": 4.98,
+          "end": 5.061
+        }
+      ]
+    },
+    {
+      "start": 5.261,
+      "end": 9.801,
+      "text": "x e il target d con una funzione di loss L sul singolo esempio.",
+      "words": [
+        {
+          "text": "x",
+          "start": 5.261,
+          "end": 5.301
+        },
+        {
+          "text": "e",
+          "start": 5.621,
+          "end": 5.6610000000000005
+        },
+        {
+          "text": "il",
+          "start": 5.701,
+          "end": 5.761
+        },
+        {
+          "text": "target",
+          "start": 5.841,
+          "end": 6.301
+        },
+        {
+          "text": "d",
+          "start": 6.481,
+          "end": 6.521
+        },
+        {
+          "text": "con",
+          "start": 7.041,
+          "end": 7.161
+        },
+        {
+          "text": "una",
+          "start": 7.201,
+          "end": 7.321
+        },
+        {
+          "text": "funzione",
+          "start": 7.361,
+          "end": 7.721
+        },
+        {
+          "text": "di",
+          "start": 7.801,
+          "end": 7.861
+        },
+        {
+          "text": "loss",
+          "start": 7.901,
+          "end": 8.101
+        },
+        {
+          "text": "L",
+          "start": 8.441,
+          "end": 8.481
+        },
+        {
+          "text": "sul",
+          "start": 8.821,
+          "end": 8.941
+        },
+        {
+          "text": "singolo",
+          "start": 9.001,
+          "end": 9.341
+        },
+        {
+          "text": "esempio.",
+          "start": 9.381,
+          "end": 9.801
+        }
+      ]
+    },
+    {
+      "start": 10.441,
+      "end": 14.181,
+      "text": "L'errore E di w è la media della loss sugli l esempi:",
+      "words": [
+        {
+          "text": "L'errore",
+          "start": 10.441,
+          "end": 10.881
+        },
+        {
+          "text": "E",
+          "start": 11.081,
+          "end": 11.121
+        },
+        {
+          "text": "di",
+          "start": 11.221,
+          "end": 11.301
+        },
+        {
+          "text": "w",
+          "start": 11.701,
+          "end": 11.741
+        },
+        {
+          "text": "è",
+          "start": 11.961,
+          "end": 12.001
+        },
+        {
+          "text": "la",
+          "start": 12.061,
+          "end": 12.141
+        },
+        {
+          "text": "media",
+          "start": 12.181,
+          "end": 12.421
+        },
+        {
+          "text": "della",
+          "start": 12.461,
+          "end": 12.681
+        },
+        {
+          "text": "loss",
+          "start": 12.721,
+          "end": 13.001
+        },
+        {
+          "text": "sugli",
+          "start": 13.181,
+          "end": 13.421
+        },
+        {
+          "text": "l",
+          "start": 13.641,
+          "end": 13.681
+        },
+        {
+          "text": "esempi:",
+          "start": 13.741,
+          "end": 14.181
+        }
+      ]
+    },
+    {
+      "start": 14.721,
+      "end": 18.682,
+      "text": "serve sia come funzione obiettivo nel training sia come misura in test.",
+      "words": [
+        {
+          "text": "serve",
+          "start": 14.721,
+          "end": 14.961
+        },
+        {
+          "text": "sia",
+          "start": 15.121,
+          "end": 15.322
+        },
+        {
+          "text": "come",
+          "start": 15.382,
+          "end": 15.542
+        },
+        {
+          "text": "funzione",
+          "start": 15.582,
+          "end": 15.922
+        },
+        {
+          "text": "obiettivo",
+          "start": 15.962,
+          "end": 16.402
+        },
+        {
+          "text": "nel",
+          "start": 16.442,
+          "end": 16.582
+        },
+        {
+          "text": "training",
+          "start": 16.642,
+          "end": 17.102
+        },
+        {
+          "text": "sia",
+          "start": 17.362,
+          "end": 17.582
+        },
+        {
+          "text": "come",
+          "start": 17.682,
+          "end": 17.862
+        },
+        {
+          "text": "misura",
+          "start": 17.922,
+          "end": 18.222
+        },
+        {
+          "text": "in",
+          "start": 18.262,
+          "end": 18.322
+        },
+        {
+          "text": "test.",
+          "start": 18.382,
+          "end": 18.682
+        }
+      ]
+    },
+    {
+      "start": 19.362,
+      "end": 24.142,
+      "text": "Dal capitolo cinque distingueremo tra loss complessiva con penalità ed errore sui dati.",
+      "words": [
+        {
+          "text": "Dal",
+          "start": 19.362,
+          "end": 19.482
+        },
+        {
+          "text": "capitolo",
+          "start": 19.502,
+          "end": 19.882
+        },
+        {
+          "text": "cinque",
+          "start": 19.942,
+          "end": 20.242
+        },
+        {
+          "text": "distingueremo",
+          "start": 20.282,
+          "end": 20.862
+        },
+        {
+          "text": "tra",
+          "start": 20.942,
+          "end": 21.042
+        },
+        {
+          "text": "loss",
+          "start": 21.162,
+          "end": 21.342
+        },
+        {
+          "text": "complessiva",
+          "start": 21.422,
+          "end": 22.042
+        },
+        {
+          "text": "con",
+          "start": 22.122,
+          "end": 22.242
+        },
+        {
+          "text": "penalità",
+          "start": 22.302,
+          "end": 22.762
+        },
+        {
+          "text": "ed",
+          "start": 23.142,
+          "end": 23.242
+        },
+        {
+          "text": "errore",
+          "start": 23.282,
+          "end": 23.582
+        },
+        {
+          "text": "sui",
+          "start": 23.642,
+          "end": 23.802
+        },
+        {
+          "text": "dati.",
+          "start": 23.822,
+          "end": 24.142
+        }
+      ]
+    },
+    {
+      "start": 24.942,
+      "end": 28.083,
+      "text": "Nel corso incontreremo quattro loss fondamentali, una per task.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 24.942,
+          "end": 25.062
+        },
+        {
+          "text": "corso",
+          "start": 25.102,
+          "end": 25.302
+        },
+        {
+          "text": "incontreremo",
+          "start": 25.342,
+          "end": 25.863
+        },
+        {
+          "text": "quattro",
+          "start": 25.943,
+          "end": 26.223
+        },
+        {
+          "text": "loss",
+          "start": 26.263,
+          "end": 26.403
+        },
+        {
+          "text": "fondamentali,",
+          "start": 26.463,
+          "end": 27.223
+        },
+        {
+          "text": "una",
+          "start": 27.363,
+          "end": 27.523
+        },
+        {
+          "text": "per",
+          "start": 27.563,
+          "end": 27.683
+        },
+        {
+          "text": "task.",
+          "start": 27.763,
+          "end": 28.083
+        }
+      ]
+    },
+    {
+      "start": 28.803,
+      "end": 34.083,
+      "text": "Prima, regressione: errore quadratico d con p meno h con w di x con p",
+      "words": [
+        {
+          "text": "Prima,",
+          "start": 28.803,
+          "end": 29.103
+        },
+        {
+          "text": "regressione:",
+          "start": 29.543,
+          "end": 30.163
+        },
+        {
+          "text": "errore",
+          "start": 30.703,
+          "end": 31.003
+        },
+        {
+          "text": "quadratico",
+          "start": 31.043,
+          "end": 31.563
+        },
+        {
+          "text": "d",
+          "start": 31.683,
+          "end": 31.723
+        },
+        {
+          "text": "con",
+          "start": 31.823,
+          "end": 31.983
+        },
+        {
+          "text": "p",
+          "start": 32.063,
+          "end": 32.103
+        },
+        {
+          "text": "meno",
+          "start": 32.303,
+          "end": 32.483
+        },
+        {
+          "text": "h",
+          "start": 32.663,
+          "end": 32.703
+        },
+        {
+          "text": "con",
+          "start": 32.783,
+          "end": 32.903
+        },
+        {
+          "text": "w",
+          "start": 33.283,
+          "end": 33.323
+        },
+        {
+          "text": "di",
+          "start": 33.483,
+          "end": 33.603
+        },
+        {
+          "text": "x",
+          "start": 33.663,
+          "end": 33.703
+        },
+        {
+          "text": "con",
+          "start": 33.803,
+          "end": 33.963
+        },
+        {
+          "text": "p",
+          "start": 34.043,
+          "end": 34.083
+        }
+      ]
+    },
+    {
+      "start": 34.363,
+      "end": 37.464,
+      "text": "al quadrato, la cui media è il Mean Squared Error,",
+      "words": [
+        {
+          "text": "al",
+          "start": 34.363,
+          "end": 34.463
+        },
+        {
+          "text": "quadrato,",
+          "start": 34.523,
+          "end": 34.983
+        },
+        {
+          "text": "la",
+          "start": 35.403,
+          "end": 35.463
+        },
+        {
+          "text": "cui",
+          "start": 35.503,
+          "end": 35.643
+        },
+        {
+          "text": "media",
+          "start": 35.703,
+          "end": 35.984
+        },
+        {
+          "text": "è",
+          "start": 36.124,
+          "end": 36.164
+        },
+        {
+          "text": "il",
+          "start": 36.204,
+          "end": 36.284
+        },
+        {
+          "text": "Mean",
+          "start": 36.324,
+          "end": 36.484
+        },
+        {
+          "text": "Squared",
+          "start": 36.564,
+          "end": 36.944
+        },
+        {
+          "text": "Error,",
+          "start": 37.124,
+          "end": 37.464
+        }
+      ]
+    },
+    {
+      "start": 37.984,
+      "end": 43.044,
+      "text": "MSE — la media dei quadrati dei segmenti verdi verticali tra punti e retta nel",
+      "words": [
+        {
+          "text": "MSE",
+          "start": 37.984,
+          "end": 38.404
+        },
+        {
+          "text": "—",
+          "start": 38.404,
+          "end": 38.554
+        },
+        {
+          "text": "la",
+          "start": 39.104,
+          "end": 39.184
+        },
+        {
+          "text": "media",
+          "start": 39.224,
+          "end": 39.444
+        },
+        {
+          "text": "dei",
+          "start": 39.484,
+          "end": 39.604
+        },
+        {
+          "text": "quadrati",
+          "start": 39.624,
+          "end": 40.044
+        },
+        {
+          "text": "dei",
+          "start": 40.104,
+          "end": 40.204
+        },
+        {
+          "text": "segmenti",
+          "start": 40.244,
+          "end": 40.724
+        },
+        {
+          "text": "verdi",
+          "start": 40.784,
+          "end": 41.084
+        },
+        {
+          "text": "verticali",
+          "start": 41.124,
+          "end": 41.704
+        },
+        {
+          "text": "tra",
+          "start": 41.744,
+          "end": 41.864
+        },
+        {
+          "text": "punti",
+          "start": 41.924,
+          "end": 42.304
+        },
+        {
+          "text": "e",
+          "start": 42.444,
+          "end": 42.484
+        },
+        {
+          "text": "retta",
+          "start": 42.544,
+          "end": 42.864
+        },
+        {
+          "text": "nel",
+          "start": 42.924,
+          "end": 43.044
+        }
+      ]
+    },
+    {
+      "start": 43.064,
+      "end": 43.864,
+      "text": "grafico a destra.",
+      "words": [
+        {
+          "text": "grafico",
+          "start": 43.064,
+          "end": 43.404
+        },
+        {
+          "text": "a",
+          "start": 43.444,
+          "end": 43.484
+        },
+        {
+          "text": "destra.",
+          "start": 43.524,
+          "end": 43.864
+        }
+      ]
+    },
+    {
+      "start": 44.604,
+      "end": 50.225,
+      "text": "Seconda, classificazione: loss zero uno, che vale zero se h di x con p coincide",
+      "words": [
+        {
+          "text": "Seconda,",
+          "start": 44.604,
+          "end": 45.024
+        },
+        {
+          "text": "classificazione:",
+          "start": 45.364,
+          "end": 46.265
+        },
+        {
+          "text": "loss",
+          "start": 46.745,
+          "end": 46.925
+        },
+        {
+          "text": "zero",
+          "start": 47.025,
+          "end": 47.225
+        },
+        {
+          "text": "uno,",
+          "start": 47.305,
+          "end": 47.485
+        },
+        {
+          "text": "che",
+          "start": 47.625,
+          "end": 47.705
+        },
+        {
+          "text": "vale",
+          "start": 47.765,
+          "end": 47.945
+        },
+        {
+          "text": "zero",
+          "start": 48.045,
+          "end": 48.305
+        },
+        {
+          "text": "se",
+          "start": 48.445,
+          "end": 48.525
+        },
+        {
+          "text": "h",
+          "start": 48.825,
+          "end": 48.865
+        },
+        {
+          "text": "di",
+          "start": 48.965,
+          "end": 49.105
+        },
+        {
+          "text": "x",
+          "start": 49.165,
+          "end": 49.205
+        },
+        {
+          "text": "con",
+          "start": 49.305,
+          "end": 49.465
+        },
+        {
+          "text": "p",
+          "start": 49.525,
+          "end": 49.565
+        },
+        {
+          "text": "coincide",
+          "start": 49.765,
+          "end": 50.225
+        }
+      ]
+    },
+    {
+      "start": 50.285,
+      "end": 52.245,
+      "text": "con d con p e uno altrimenti.",
+      "words": [
+        {
+          "text": "con",
+          "start": 50.285,
+          "end": 50.425
+        },
+        {
+          "text": "d",
+          "start": 50.465,
+          "end": 50.505
+        },
+        {
+          "text": "con",
+          "start": 50.605,
+          "end": 50.765
+        },
+        {
+          "text": "p",
+          "start": 50.825,
+          "end": 50.865
+        },
+        {
+          "text": "e",
+          "start": 51.365,
+          "end": 51.405
+        },
+        {
+          "text": "uno",
+          "start": 51.485,
+          "end": 51.605
+        },
+        {
+          "text": "altrimenti.",
+          "start": 51.645,
+          "end": 52.245
+        }
+      ]
+    },
+    {
+      "start": 52.805,
+      "end": 54.425,
+      "text": "La sua media è il tasso d'errore:",
+      "words": [
+        {
+          "text": "La",
+          "start": 52.805,
+          "end": 52.845
+        },
+        {
+          "text": "sua",
+          "start": 52.885,
+          "end": 53.005
+        },
+        {
+          "text": "media",
+          "start": 53.045,
+          "end": 53.325
+        },
+        {
+          "text": "è",
+          "start": 53.445,
+          "end": 53.485
+        },
+        {
+          "text": "il",
+          "start": 53.525,
+          "end": 53.605
+        },
+        {
+          "text": "tasso",
+          "start": 53.665,
+          "end": 53.945
+        },
+        {
+          "text": "d'errore:",
+          "start": 53.985,
+          "end": 54.425
+        }
+      ]
+    },
+    {
+      "start": 55.005,
+      "end": 58.106,
+      "text": "venti errori su cento esempi danno errore del venti per cento,",
+      "words": [
+        {
+          "text": "venti",
+          "start": 55.005,
+          "end": 55.265
+        },
+        {
+          "text": "errori",
+          "start": 55.305,
+          "end": 55.565
+        },
+        {
+          "text": "su",
+          "start": 55.625,
+          "end": 55.685
+        },
+        {
+          "text": "cento",
+          "start": 55.765,
+          "end": 56.025
+        },
+        {
+          "text": "esempi",
+          "start": 56.065,
+          "end": 56.486
+        },
+        {
+          "text": "danno",
+          "start": 56.586,
+          "end": 56.806
+        },
+        {
+          "text": "errore",
+          "start": 56.846,
+          "end": 57.126
+        },
+        {
+          "text": "del",
+          "start": 57.186,
+          "end": 57.286
+        },
+        {
+          "text": "venti",
+          "start": 57.346,
+          "end": 57.546
+        },
+        {
+          "text": "per",
+          "start": 57.586,
+          "end": 57.706
+        },
+        {
+          "text": "cento,",
+          "start": 57.766,
+          "end": 58.106
+        }
+      ]
+    },
+    {
+      "start": 58.366,
+      "end": 60.206,
+      "text": "cioè accuratezza dell'ottanta per cento.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 58.366,
+          "end": 58.506
+        },
+        {
+          "text": "accuratezza",
+          "start": 58.646,
+          "end": 59.226
+        },
+        {
+          "text": "dell'ottanta",
+          "start": 59.266,
+          "end": 59.706
+        },
+        {
+          "text": "per",
+          "start": 59.726,
+          "end": 59.846
+        },
+        {
+          "text": "cento.",
+          "start": 59.886,
+          "end": 60.206
+        }
+      ]
+    },
+    {
+      "start": 61.026,
+      "end": 63.746,
+      "text": "Terza, clustering e quantizzazione vettoriale:",
+      "words": [
+        {
+          "text": "Terza,",
+          "start": 61.026,
+          "end": 61.386
+        },
+        {
+          "text": "clustering",
+          "start": 61.766,
+          "end": 62.286
+        },
+        {
+          "text": "e",
+          "start": 62.326,
+          "end": 62.366
+        },
+        {
+          "text": "quantizzazione",
+          "start": 62.386,
+          "end": 63.106
+        },
+        {
+          "text": "vettoriale:",
+          "start": 63.146,
+          "end": 63.746
+        }
+      ]
+    },
+    {
+      "start": 64.366,
+      "end": 70.627,
+      "text": "l'obiettivo è partizionare una distribuzione sconosciuta in regioni approssimate ciascuna da un centro o prototipo;",
+      "words": [
+        {
+          "text": "l'obiettivo",
+          "start": 64.366,
+          "end": 64.866
+        },
+        {
+          "text": "è",
+          "start": 64.966,
+          "end": 65.006
+        },
+        {
+          "text": "partizionare",
+          "start": 65.066,
+          "end": 65.746
+        },
+        {
+          "text": "una",
+          "start": 65.786,
+          "end": 65.886
+        },
+        {
+          "text": "distribuzione",
+          "start": 65.946,
+          "end": 66.567
+        },
+        {
+          "text": "sconosciuta",
+          "start": 66.607,
+          "end": 67.187
+        },
+        {
+          "text": "in",
+          "start": 67.327,
+          "end": 67.407
+        },
+        {
+          "text": "regioni",
+          "start": 67.467,
+          "end": 67.827
+        },
+        {
+          "text": "approssimate",
+          "start": 67.867,
+          "end": 68.627
+        },
+        {
+          "text": "ciascuna",
+          "start": 68.687,
+          "end": 69.087
+        },
+        {
+          "text": "da",
+          "start": 69.127,
+          "end": 69.187
+        },
+        {
+          "text": "un",
+          "start": 69.247,
+          "end": 69.327
+        },
+        {
+          "text": "centro",
+          "start": 69.407,
+          "end": 69.807
+        },
+        {
+          "text": "o",
+          "start": 69.947,
+          "end": 69.98700000000001
+        },
+        {
+          "text": "prototipo;",
+          "start": 70.027,
+          "end": 70.627
+        }
+      ]
+    },
+    {
+      "start": 71.567,
+      "end": 76.287,
+      "text": "H è un insieme di vector quantizer che mappano lo spazio continuo in uno discreto",
+      "words": [
+        {
+          "text": "H",
+          "start": 71.567,
+          "end": 71.607
+        },
+        {
+          "text": "è",
+          "start": 71.807,
+          "end": 71.84700000000001
+        },
+        {
+          "text": "un",
+          "start": 71.887,
+          "end": 71.967
+        },
+        {
+          "text": "insieme",
+          "start": 72.007,
+          "end": 72.347
+        },
+        {
+          "text": "di",
+          "start": 72.407,
+          "end": 72.487
+        },
+        {
+          "text": "vector",
+          "start": 72.587,
+          "end": 72.967
+        },
+        {
+          "text": "quantizer",
+          "start": 73.027,
+          "end": 73.627
+        },
+        {
+          "text": "che",
+          "start": 73.687,
+          "end": 73.767
+        },
+        {
+          "text": "mappano",
+          "start": 73.867,
+          "end": 74.267
+        },
+        {
+          "text": "lo",
+          "start": 74.307,
+          "end": 74.387
+        },
+        {
+          "text": "spazio",
+          "start": 74.447,
+          "end": 74.807
+        },
+        {
+          "text": "continuo",
+          "start": 74.847,
+          "end": 75.367
+        },
+        {
+          "text": "in",
+          "start": 75.487,
+          "end": 75.567
+        },
+        {
+          "text": "uno",
+          "start": 75.587,
+          "end": 75.727
+        },
+        {
+          "text": "discreto",
+          "start": 75.767,
+          "end": 76.287
+        }
+      ]
+    },
+    {
+      "start": 76.768,
+      "end": 81.008,
+      "text": "e la loss è la distorsione quadratica, norma di x con p meno h di",
+      "words": [
+        {
+          "text": "e",
+          "start": 76.768,
+          "end": 76.808
+        },
+        {
+          "text": "la",
+          "start": 76.848,
+          "end": 76.908
+        },
+        {
+          "text": "loss",
+          "start": 76.948,
+          "end": 77.188
+        },
+        {
+          "text": "è",
+          "start": 77.308,
+          "end": 77.34800000000001
+        },
+        {
+          "text": "la",
+          "start": 77.388,
+          "end": 77.448
+        },
+        {
+          "text": "distorsione",
+          "start": 77.508,
+          "end": 78.128
+        },
+        {
+          "text": "quadratica,",
+          "start": 78.168,
+          "end": 78.748
+        },
+        {
+          "text": "norma",
+          "start": 79.208,
+          "end": 79.548
+        },
+        {
+          "text": "di",
+          "start": 79.608,
+          "end": 79.668
+        },
+        {
+          "text": "x",
+          "start": 79.808,
+          "end": 79.84800000000001
+        },
+        {
+          "text": "con",
+          "start": 79.948,
+          "end": 80.088
+        },
+        {
+          "text": "p",
+          "start": 80.168,
+          "end": 80.20800000000001
+        },
+        {
+          "text": "meno",
+          "start": 80.468,
+          "end": 80.648
+        },
+        {
+          "text": "h",
+          "start": 80.848,
+          "end": 80.888
+        },
+        {
+          "text": "di",
+          "start": 80.948,
+          "end": 81.008
+        }
+      ]
+    },
+    {
+      "start": 81.088,
+      "end": 82.268,
+      "text": "x con p al quadrato.",
+      "words": [
+        {
+          "text": "x",
+          "start": 81.088,
+          "end": 81.128
+        },
+        {
+          "text": "con",
+          "start": 81.208,
+          "end": 81.348
+        },
+        {
+          "text": "p",
+          "start": 81.408,
+          "end": 81.44800000000001
+        },
+        {
+          "text": "al",
+          "start": 81.668,
+          "end": 81.768
+        },
+        {
+          "text": "quadrato.",
+          "start": 81.828,
+          "end": 82.268
+        }
+      ]
+    },
+    {
+      "start": 82.908,
+      "end": 86.148,
+      "text": "Quarta, stima di densità parametrica nei metodi generativi,",
+      "words": [
+        {
+          "text": "Quarta,",
+          "start": 82.908,
+          "end": 83.248
+        },
+        {
+          "text": "stima",
+          "start": 83.488,
+          "end": 83.748
+        },
+        {
+          "text": "di",
+          "start": 83.788,
+          "end": 83.848
+        },
+        {
+          "text": "densità",
+          "start": 83.928,
+          "end": 84.288
+        },
+        {
+          "text": "parametrica",
+          "start": 84.348,
+          "end": 84.948
+        },
+        {
+          "text": "nei",
+          "start": 85.048,
+          "end": 85.148
+        },
+        {
+          "text": "metodi",
+          "start": 85.168,
+          "end": 85.508
+        },
+        {
+          "text": "generativi,",
+          "start": 85.568,
+          "end": 86.148
+        }
+      ]
+    },
+    {
+      "start": 86.768,
+      "end": 91.16900000000001,
+      "text": "ad esempio stimare media mu e varianza sigma quadro di una normale p di x",
+      "words": [
+        {
+          "text": "ad",
+          "start": 86.768,
+          "end": 86.868
+        },
+        {
+          "text": "esempio",
+          "start": 86.888,
+          "end": 87.189
+        },
+        {
+          "text": "stimare",
+          "start": 87.249,
+          "end": 87.649
+        },
+        {
+          "text": "media",
+          "start": 87.729,
+          "end": 88.049
+        },
+        {
+          "text": "mu",
+          "start": 88.109,
+          "end": 88.209
+        },
+        {
+          "text": "e",
+          "start": 88.409,
+          "end": 88.44900000000001
+        },
+        {
+          "text": "varianza",
+          "start": 88.489,
+          "end": 88.909
+        },
+        {
+          "text": "sigma",
+          "start": 88.989,
+          "end": 89.249
+        },
+        {
+          "text": "quadro",
+          "start": 89.309,
+          "end": 89.629
+        },
+        {
+          "text": "di",
+          "start": 89.689,
+          "end": 89.749
+        },
+        {
+          "text": "una",
+          "start": 89.789,
+          "end": 89.909
+        },
+        {
+          "text": "normale",
+          "start": 89.969,
+          "end": 90.509
+        },
+        {
+          "text": "p",
+          "start": 90.689,
+          "end": 90.729
+        },
+        {
+          "text": "di",
+          "start": 90.869,
+          "end": 91.069
+        },
+        {
+          "text": "x",
+          "start": 91.129,
+          "end": 91.16900000000001
+        }
+      ]
+    },
+    {
+      "start": 91.449,
+      "end": 95.989,
+      "text": "dato mu e sigma quadro: la loss è meno logaritmo naturale di h di x",
+      "words": [
+        {
+          "text": "dato",
+          "start": 91.449,
+          "end": 91.689
+        },
+        {
+          "text": "mu",
+          "start": 91.749,
+          "end": 91.829
+        },
+        {
+          "text": "e",
+          "start": 92.029,
+          "end": 92.069
+        },
+        {
+          "text": "sigma",
+          "start": 92.109,
+          "end": 92.349
+        },
+        {
+          "text": "quadro:",
+          "start": 92.429,
+          "end": 92.769
+        },
+        {
+          "text": "la",
+          "start": 93.209,
+          "end": 93.269
+        },
+        {
+          "text": "loss",
+          "start": 93.309,
+          "end": 93.529
+        },
+        {
+          "text": "è",
+          "start": 93.729,
+          "end": 93.769
+        },
+        {
+          "text": "meno",
+          "start": 93.889,
+          "end": 94.109
+        },
+        {
+          "text": "logaritmo",
+          "start": 94.149,
+          "end": 94.629
+        },
+        {
+          "text": "naturale",
+          "start": 94.689,
+          "end": 95.169
+        },
+        {
+          "text": "di",
+          "start": 95.289,
+          "end": 95.369
+        },
+        {
+          "text": "h",
+          "start": 95.669,
+          "end": 95.709
+        },
+        {
+          "text": "di",
+          "start": 95.789,
+          "end": 95.849
+        },
+        {
+          "text": "x",
+          "start": 95.949,
+          "end": 95.989
+        }
+      ]
+    },
+    {
+      "start": 96.089,
+      "end": 96.32900000000001,
+      "text": "con p.",
+      "words": [
+        {
+          "text": "con",
+          "start": 96.089,
+          "end": 96.229
+        },
+        {
+          "text": "p.",
+          "start": 96.289,
+          "end": 96.32900000000001
+        }
+      ]
+    },
+    {
+      "start": 97.049,
+      "end": 101.11,
+      "text": "Poiché meno la somma dei logaritmi è uguale a meno il logaritmo del prodotto delle",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 97.049,
+          "end": 97.37
+        },
+        {
+          "text": "meno",
+          "start": 97.51,
+          "end": 97.71
+        },
+        {
+          "text": "la",
+          "start": 97.77,
+          "end": 97.83
+        },
+        {
+          "text": "somma",
+          "start": 97.87,
+          "end": 98.09
+        },
+        {
+          "text": "dei",
+          "start": 98.13,
+          "end": 98.21
+        },
+        {
+          "text": "logaritmi",
+          "start": 98.23,
+          "end": 98.77
+        },
+        {
+          "text": "è",
+          "start": 98.93,
+          "end": 98.97000000000001
+        },
+        {
+          "text": "uguale",
+          "start": 99.03,
+          "end": 99.33
+        },
+        {
+          "text": "a",
+          "start": 99.37,
+          "end": 99.41000000000001
+        },
+        {
+          "text": "meno",
+          "start": 99.53,
+          "end": 99.75
+        },
+        {
+          "text": "il",
+          "start": 99.77,
+          "end": 99.83
+        },
+        {
+          "text": "logaritmo",
+          "start": 99.85,
+          "end": 100.31
+        },
+        {
+          "text": "del",
+          "start": 100.37,
+          "end": 100.47
+        },
+        {
+          "text": "prodotto",
+          "start": 100.51,
+          "end": 100.89
+        },
+        {
+          "text": "delle",
+          "start": 100.93,
+          "end": 101.11
+        }
+      ]
+    },
+    {
+      "start": 101.15,
+      "end": 108.251,
+      "text": "probabilità e il logaritmo è crescente, minimizzare questa loss equivale esattamente a massimizzare la log-verosimiglianza",
+      "words": [
+        {
+          "text": "probabilità",
+          "start": 101.15,
+          "end": 101.75
+        },
+        {
+          "text": "e",
+          "start": 102.19,
+          "end": 102.23
+        },
+        {
+          "text": "il",
+          "start": 102.27,
+          "end": 102.33
+        },
+        {
+          "text": "logaritmo",
+          "start": 102.35,
+          "end": 102.81
+        },
+        {
+          "text": "è",
+          "start": 102.87,
+          "end": 102.91000000000001
+        },
+        {
+          "text": "crescente,",
+          "start": 102.95,
+          "end": 103.55
+        },
+        {
+          "text": "minimizzare",
+          "start": 103.93,
+          "end": 104.51
+        },
+        {
+          "text": "questa",
+          "start": 104.53,
+          "end": 104.77
+        },
+        {
+          "text": "loss",
+          "start": 104.81,
+          "end": 105.03
+        },
+        {
+          "text": "equivale",
+          "start": 105.21,
+          "end": 105.61
+        },
+        {
+          "text": "esattamente",
+          "start": 105.65,
+          "end": 106.23
+        },
+        {
+          "text": "a",
+          "start": 106.27,
+          "end": 106.31
+        },
+        {
+          "text": "massimizzare",
+          "start": 106.35,
+          "end": 107.01
+        },
+        {
+          "text": "la",
+          "start": 107.07,
+          "end": 107.13
+        },
+        {
+          "text": "log-verosimiglianza",
+          "start": 107.21,
+          "end": 108.251
+        }
+      ]
+    },
+    {
+      "start": 108.311,
+      "end": 109.191,
+      "text": "dei dati osservati.",
+      "words": [
+        {
+          "text": "dei",
+          "start": 108.311,
+          "end": 108.431
+        },
+        {
+          "text": "dati",
+          "start": 108.451,
+          "end": 108.631
+        },
+        {
+          "text": "osservati.",
+          "start": 108.671,
+          "end": 109.191
+        }
+      ]
+    }
+  ]
+}

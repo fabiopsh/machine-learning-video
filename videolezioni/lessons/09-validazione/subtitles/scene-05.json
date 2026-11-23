@@ -1,0 +1,1181 @@
+{
+  "duration": 92.967,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 7.461,
+      "text": "Gli iperparametri sono i parametri non appresi direttamente dall'algoritmo di apprendimento e si fissano cercando",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 0.08,
+          "end": 0.18
+        },
+        {
+          "text": "iperparametri",
+          "start": 0.22,
+          "end": 1.16
+        },
+        {
+          "text": "sono",
+          "start": 1.38,
+          "end": 1.58
+        },
+        {
+          "text": "i",
+          "start": 1.66,
+          "end": 1.7
+        },
+        {
+          "text": "parametri",
+          "start": 1.76,
+          "end": 2.26
+        },
+        {
+          "text": "non",
+          "start": 2.46,
+          "end": 2.66
+        },
+        {
+          "text": "appresi",
+          "start": 2.72,
+          "end": 3.18
+        },
+        {
+          "text": "direttamente",
+          "start": 3.24,
+          "end": 4.0
+        },
+        {
+          "text": "dall'algoritmo",
+          "start": 4.181,
+          "end": 4.941
+        },
+        {
+          "text": "di",
+          "start": 4.981,
+          "end": 5.041
+        },
+        {
+          "text": "apprendimento",
+          "start": 5.061,
+          "end": 5.761
+        },
+        {
+          "text": "e",
+          "start": 6.281,
+          "end": 6.321
+        },
+        {
+          "text": "si",
+          "start": 6.381,
+          "end": 6.461
+        },
+        {
+          "text": "fissano",
+          "start": 6.521,
+          "end": 6.861
+        },
+        {
+          "text": "cercando",
+          "start": 6.961,
+          "end": 7.461
+        }
+      ]
+    },
+    {
+      "start": 7.501,
+      "end": 12.201,
+      "text": "nello spazio degli iperparametri tramite model selection su un validation set.",
+      "words": [
+        {
+          "text": "nello",
+          "start": 7.501,
+          "end": 7.701
+        },
+        {
+          "text": "spazio",
+          "start": 7.721,
+          "end": 8.121
+        },
+        {
+          "text": "degli",
+          "start": 8.181,
+          "end": 8.361
+        },
+        {
+          "text": "iperparametri",
+          "start": 8.381,
+          "end": 9.221
+        },
+        {
+          "text": "tramite",
+          "start": 9.401,
+          "end": 9.801
+        },
+        {
+          "text": "model",
+          "start": 9.981,
+          "end": 10.261
+        },
+        {
+          "text": "selection",
+          "start": 10.321,
+          "end": 10.841
+        },
+        {
+          "text": "su",
+          "start": 11.041,
+          "end": 11.101
+        },
+        {
+          "text": "un",
+          "start": 11.201,
+          "end": 11.261
+        },
+        {
+          "text": "validation",
+          "start": 11.301,
+          "end": 11.821
+        },
+        {
+          "text": "set.",
+          "start": 11.921,
+          "end": 12.201
+        }
+      ]
+    },
+    {
+      "start": 13.162,
+      "end": 16.702,
+      "text": "La tecnica più diretta è la grid search esaustiva,",
+      "words": [
+        {
+          "text": "La",
+          "start": 13.162,
+          "end": 13.242
+        },
+        {
+          "text": "tecnica",
+          "start": 13.322,
+          "end": 13.722
+        },
+        {
+          "text": "più",
+          "start": 13.782,
+          "end": 13.862
+        },
+        {
+          "text": "diretta",
+          "start": 13.922,
+          "end": 14.442
+        },
+        {
+          "text": "è",
+          "start": 14.682,
+          "end": 14.722
+        },
+        {
+          "text": "la",
+          "start": 14.822,
+          "end": 14.882
+        },
+        {
+          "text": "grid",
+          "start": 15.002,
+          "end": 15.282
+        },
+        {
+          "text": "search",
+          "start": 15.442,
+          "end": 15.802
+        },
+        {
+          "text": "esaustiva,",
+          "start": 15.982,
+          "end": 16.702
+        }
+      ]
+    },
+    {
+      "start": 17.062,
+      "end": 19.682,
+      "text": "che genera tutti i candidati di una griglia di valori.",
+      "words": [
+        {
+          "text": "che",
+          "start": 17.062,
+          "end": 17.142
+        },
+        {
+          "text": "genera",
+          "start": 17.202,
+          "end": 17.522
+        },
+        {
+          "text": "tutti",
+          "start": 17.682,
+          "end": 17.902
+        },
+        {
+          "text": "i",
+          "start": 17.922,
+          "end": 17.962
+        },
+        {
+          "text": "candidati",
+          "start": 17.962,
+          "end": 18.502
+        },
+        {
+          "text": "di",
+          "start": 18.582,
+          "end": 18.662
+        },
+        {
+          "text": "una",
+          "start": 18.702,
+          "end": 18.842
+        },
+        {
+          "text": "griglia",
+          "start": 18.902,
+          "end": 19.182
+        },
+        {
+          "text": "di",
+          "start": 19.242,
+          "end": 19.302
+        },
+        {
+          "text": "valori.",
+          "start": 19.342,
+          "end": 19.682
+        }
+      ]
+    },
+    {
+      "start": 20.342,
+      "end": 21.423,
+      "text": "Guarda l'esempio in tabella:",
+      "words": [
+        {
+          "text": "Guarda",
+          "start": 20.342,
+          "end": 20.582
+        },
+        {
+          "text": "l'esempio",
+          "start": 20.622,
+          "end": 20.943
+        },
+        {
+          "text": "in",
+          "start": 20.963,
+          "end": 21.003
+        },
+        {
+          "text": "tabella:",
+          "start": 21.023,
+          "end": 21.423
+        }
+      ]
+    },
+    {
+      "start": 22.063,
+      "end": 25.123,
+      "text": "tre valori per il numero di unità nascoste — uno,",
+      "words": [
+        {
+          "text": "tre",
+          "start": 22.063,
+          "end": 22.203
+        },
+        {
+          "text": "valori",
+          "start": 22.283,
+          "end": 22.623
+        },
+        {
+          "text": "per",
+          "start": 22.803,
+          "end": 22.923
+        },
+        {
+          "text": "il",
+          "start": 22.963,
+          "end": 23.023
+        },
+        {
+          "text": "numero",
+          "start": 23.083,
+          "end": 23.363
+        },
+        {
+          "text": "di",
+          "start": 23.403,
+          "end": 23.463
+        },
+        {
+          "text": "unità",
+          "start": 23.503,
+          "end": 23.743
+        },
+        {
+          "text": "nascoste",
+          "start": 23.823,
+          "end": 24.403
+        },
+        {
+          "text": "—",
+          "start": 24.403,
+          "end": 24.553
+        },
+        {
+          "text": "uno,",
+          "start": 24.883,
+          "end": 25.123
+        }
+      ]
+    },
+    {
+      "start": 25.443,
+      "end": 30.444,
+      "text": "dieci, cento — incrociati con tre valori di lambda — zero virgola uno,",
+      "words": [
+        {
+          "text": "dieci,",
+          "start": 25.443,
+          "end": 25.843
+        },
+        {
+          "text": "cento",
+          "start": 26.163,
+          "end": 26.563
+        },
+        {
+          "text": "—",
+          "start": 26.563,
+          "end": 26.713
+        },
+        {
+          "text": "incrociati",
+          "start": 27.083,
+          "end": 27.563
+        },
+        {
+          "text": "con",
+          "start": 27.643,
+          "end": 27.803
+        },
+        {
+          "text": "tre",
+          "start": 27.943,
+          "end": 28.103
+        },
+        {
+          "text": "valori",
+          "start": 28.223,
+          "end": 28.543
+        },
+        {
+          "text": "di",
+          "start": 28.583,
+          "end": 28.663
+        },
+        {
+          "text": "lambda",
+          "start": 28.703,
+          "end": 29.083
+        },
+        {
+          "text": "—",
+          "start": 29.083,
+          "end": 29.233
+        },
+        {
+          "text": "zero",
+          "start": 29.684,
+          "end": 29.844
+        },
+        {
+          "text": "virgola",
+          "start": 29.884,
+          "end": 30.164
+        },
+        {
+          "text": "uno,",
+          "start": 30.264,
+          "end": 30.444
+        }
+      ]
+    },
+    {
+      "start": 30.824,
+      "end": 35.824,
+      "text": "zero virgola zero uno, zero virgola zero zero uno — per nove configurazioni totali.",
+      "words": [
+        {
+          "text": "zero",
+          "start": 30.824,
+          "end": 30.984
+        },
+        {
+          "text": "virgola",
+          "start": 31.024,
+          "end": 31.344
+        },
+        {
+          "text": "zero",
+          "start": 31.444,
+          "end": 31.624
+        },
+        {
+          "text": "uno,",
+          "start": 31.764,
+          "end": 31.924
+        },
+        {
+          "text": "zero",
+          "start": 32.284,
+          "end": 32.504
+        },
+        {
+          "text": "virgola",
+          "start": 32.544,
+          "end": 32.864
+        },
+        {
+          "text": "zero",
+          "start": 33.024,
+          "end": 33.304
+        },
+        {
+          "text": "zero",
+          "start": 33.404,
+          "end": 33.604
+        },
+        {
+          "text": "uno",
+          "start": 33.724,
+          "end": 33.884
+        },
+        {
+          "text": "—",
+          "start": 33.884,
+          "end": 34.034
+        },
+        {
+          "text": "per",
+          "start": 34.264,
+          "end": 34.404
+        },
+        {
+          "text": "nove",
+          "start": 34.484,
+          "end": 34.684
+        },
+        {
+          "text": "configurazioni",
+          "start": 34.744,
+          "end": 35.424
+        },
+        {
+          "text": "totali.",
+          "start": 35.464,
+          "end": 35.824
+        }
+      ]
+    },
+    {
+      "start": 36.684,
+      "end": 40.065,
+      "text": "Se il miglior errore di validazione è il risultato Res tre,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 36.684,
+          "end": 36.744
+        },
+        {
+          "text": "il",
+          "start": 36.804,
+          "end": 36.864
+        },
+        {
+          "text": "miglior",
+          "start": 36.904,
+          "end": 37.184
+        },
+        {
+          "text": "errore",
+          "start": 37.224,
+          "end": 37.504
+        },
+        {
+          "text": "di",
+          "start": 37.544,
+          "end": 37.625
+        },
+        {
+          "text": "validazione",
+          "start": 37.645,
+          "end": 38.345
+        },
+        {
+          "text": "è",
+          "start": 38.505,
+          "end": 38.545
+        },
+        {
+          "text": "il",
+          "start": 38.605,
+          "end": 38.685
+        },
+        {
+          "text": "risultato",
+          "start": 38.725,
+          "end": 39.345
+        },
+        {
+          "text": "Res",
+          "start": 39.585,
+          "end": 39.825
+        },
+        {
+          "text": "tre,",
+          "start": 39.905,
+          "end": 40.065
+        }
+      ]
+    },
+    {
+      "start": 40.605,
+      "end": 44.985,
+      "text": "vince la configurazione cento unità con lambda uguale a zero virgola uno.",
+      "words": [
+        {
+          "text": "vince",
+          "start": 40.605,
+          "end": 40.825
+        },
+        {
+          "text": "la",
+          "start": 40.865,
+          "end": 40.925
+        },
+        {
+          "text": "configurazione",
+          "start": 40.945,
+          "end": 41.725
+        },
+        {
+          "text": "cento",
+          "start": 41.985,
+          "end": 42.345
+        },
+        {
+          "text": "unità",
+          "start": 42.425,
+          "end": 42.705
+        },
+        {
+          "text": "con",
+          "start": 42.985,
+          "end": 43.145
+        },
+        {
+          "text": "lambda",
+          "start": 43.245,
+          "end": 43.585
+        },
+        {
+          "text": "uguale",
+          "start": 43.645,
+          "end": 43.985
+        },
+        {
+          "text": "a",
+          "start": 44.105,
+          "end": 44.145
+        },
+        {
+          "text": "zero",
+          "start": 44.245,
+          "end": 44.405
+        },
+        {
+          "text": "virgola",
+          "start": 44.445,
+          "end": 44.745
+        },
+        {
+          "text": "uno.",
+          "start": 44.825,
+          "end": 44.985
+        }
+      ]
+    },
+    {
+      "start": 46.166,
+      "end": 51.106,
+      "text": "La grid search è preziosa perché permette di osservare il comportamento del modello al variare",
+      "words": [
+        {
+          "text": "La",
+          "start": 46.166,
+          "end": 46.246
+        },
+        {
+          "text": "grid",
+          "start": 46.306,
+          "end": 46.506
+        },
+        {
+          "text": "search",
+          "start": 46.626,
+          "end": 46.926
+        },
+        {
+          "text": "è",
+          "start": 46.986,
+          "end": 47.026
+        },
+        {
+          "text": "preziosa",
+          "start": 47.066,
+          "end": 47.466
+        },
+        {
+          "text": "perché",
+          "start": 47.486,
+          "end": 47.706
+        },
+        {
+          "text": "permette",
+          "start": 47.746,
+          "end": 48.146
+        },
+        {
+          "text": "di",
+          "start": 48.386,
+          "end": 48.446
+        },
+        {
+          "text": "osservare",
+          "start": 48.506,
+          "end": 48.966
+        },
+        {
+          "text": "il",
+          "start": 48.986,
+          "end": 49.046
+        },
+        {
+          "text": "comportamento",
+          "start": 49.086,
+          "end": 49.686
+        },
+        {
+          "text": "del",
+          "start": 49.706,
+          "end": 49.806
+        },
+        {
+          "text": "modello",
+          "start": 49.846,
+          "end": 50.226
+        },
+        {
+          "text": "al",
+          "start": 50.386,
+          "end": 50.526
+        },
+        {
+          "text": "variare",
+          "start": 50.586,
+          "end": 51.106
+        }
+      ]
+    },
+    {
+      "start": 51.166,
+      "end": 57.327,
+      "text": "degli iperparametri, si automatizza e si parallelizza facilmente perché le prove sono indipendenti.",
+      "words": [
+        {
+          "text": "degli",
+          "start": 51.166,
+          "end": 51.366
+        },
+        {
+          "text": "iperparametri,",
+          "start": 51.386,
+          "end": 52.166
+        },
+        {
+          "text": "si",
+          "start": 52.626,
+          "end": 52.686
+        },
+        {
+          "text": "automatizza",
+          "start": 52.726,
+          "end": 53.406
+        },
+        {
+          "text": "e",
+          "start": 53.586,
+          "end": 53.626
+        },
+        {
+          "text": "si",
+          "start": 53.746,
+          "end": 53.846
+        },
+        {
+          "text": "parallelizza",
+          "start": 53.946,
+          "end": 54.567
+        },
+        {
+          "text": "facilmente",
+          "start": 54.607,
+          "end": 55.267
+        },
+        {
+          "text": "perché",
+          "start": 55.587,
+          "end": 55.807
+        },
+        {
+          "text": "le",
+          "start": 55.867,
+          "end": 55.927
+        },
+        {
+          "text": "prove",
+          "start": 55.967,
+          "end": 56.187
+        },
+        {
+          "text": "sono",
+          "start": 56.247,
+          "end": 56.427
+        },
+        {
+          "text": "indipendenti.",
+          "start": 56.567,
+          "end": 57.327
+        }
+      ]
+    },
+    {
+      "start": 57.867,
+      "end": 63.648,
+      "text": "Tuttavia il costo è il prodotto cartesiano: numero di valori elevato al numero di iperparametri.",
+      "words": [
+        {
+          "text": "Tuttavia",
+          "start": 57.867,
+          "end": 58.227
+        },
+        {
+          "text": "il",
+          "start": 58.267,
+          "end": 58.327
+        },
+        {
+          "text": "costo",
+          "start": 58.367,
+          "end": 58.707
+        },
+        {
+          "text": "è",
+          "start": 58.887,
+          "end": 58.927
+        },
+        {
+          "text": "il",
+          "start": 59.027,
+          "end": 59.107
+        },
+        {
+          "text": "prodotto",
+          "start": 59.147,
+          "end": 59.487
+        },
+        {
+          "text": "cartesiano:",
+          "start": 59.527,
+          "end": 60.187
+        },
+        {
+          "text": "numero",
+          "start": 60.727,
+          "end": 61.047
+        },
+        {
+          "text": "di",
+          "start": 61.087,
+          "end": 61.147
+        },
+        {
+          "text": "valori",
+          "start": 61.187,
+          "end": 61.567
+        },
+        {
+          "text": "elevato",
+          "start": 61.707,
+          "end": 62.107
+        },
+        {
+          "text": "al",
+          "start": 62.147,
+          "end": 62.247
+        },
+        {
+          "text": "numero",
+          "start": 62.347,
+          "end": 62.707
+        },
+        {
+          "text": "di",
+          "start": 62.747,
+          "end": 62.828
+        },
+        {
+          "text": "iperparametri.",
+          "start": 62.888,
+          "end": 63.648
+        }
+      ]
+    },
+    {
+      "start": 64.268,
+      "end": 69.008,
+      "text": "Con cinque o sei iperparametri da dieci valori ciascuno diventa proibitivo.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 64.268,
+          "end": 64.408
+        },
+        {
+          "text": "cinque",
+          "start": 64.528,
+          "end": 64.908
+        },
+        {
+          "text": "o",
+          "start": 64.948,
+          "end": 64.988
+        },
+        {
+          "text": "sei",
+          "start": 65.088,
+          "end": 65.288
+        },
+        {
+          "text": "iperparametri",
+          "start": 65.368,
+          "end": 66.228
+        },
+        {
+          "text": "da",
+          "start": 66.308,
+          "end": 66.368
+        },
+        {
+          "text": "dieci",
+          "start": 66.448,
+          "end": 66.728
+        },
+        {
+          "text": "valori",
+          "start": 66.768,
+          "end": 67.028
+        },
+        {
+          "text": "ciascuno",
+          "start": 67.088,
+          "end": 67.528
+        },
+        {
+          "text": "diventa",
+          "start": 67.828,
+          "end": 68.248
+        },
+        {
+          "text": "proibitivo.",
+          "start": 68.308,
+          "end": 69.008
+        }
+      ]
+    },
+    {
+      "start": 69.808,
+      "end": 75.649,
+      "text": "Due rimedi pratici: fissare preliminarmente con molta cautela gli iperparametri meno influenti,",
+      "words": [
+        {
+          "text": "Due",
+          "start": 69.808,
+          "end": 69.928
+        },
+        {
+          "text": "rimedi",
+          "start": 69.948,
+          "end": 70.248
+        },
+        {
+          "text": "pratici:",
+          "start": 70.288,
+          "end": 70.748
+        },
+        {
+          "text": "fissare",
+          "start": 71.369,
+          "end": 71.749
+        },
+        {
+          "text": "preliminarmente",
+          "start": 71.869,
+          "end": 72.809
+        },
+        {
+          "text": "con",
+          "start": 72.909,
+          "end": 73.029
+        },
+        {
+          "text": "molta",
+          "start": 73.069,
+          "end": 73.349
+        },
+        {
+          "text": "cautela",
+          "start": 73.389,
+          "end": 73.829
+        },
+        {
+          "text": "gli",
+          "start": 73.889,
+          "end": 74.009
+        },
+        {
+          "text": "iperparametri",
+          "start": 74.029,
+          "end": 74.729
+        },
+        {
+          "text": "meno",
+          "start": 74.809,
+          "end": 74.989
+        },
+        {
+          "text": "influenti,",
+          "start": 75.029,
+          "end": 75.649
+        }
+      ]
+    },
+    {
+      "start": 76.189,
+      "end": 82.71,
+      "text": "e soprattutto usare griglie annidate — prima una ricerca grossolana con valori a crescita esponenziale",
+      "words": [
+        {
+          "text": "e",
+          "start": 76.189,
+          "end": 76.229
+        },
+        {
+          "text": "soprattutto",
+          "start": 76.289,
+          "end": 76.869
+        },
+        {
+          "text": "usare",
+          "start": 77.069,
+          "end": 77.469
+        },
+        {
+          "text": "griglie",
+          "start": 77.589,
+          "end": 78.009
+        },
+        {
+          "text": "annidate",
+          "start": 78.169,
+          "end": 78.789
+        },
+        {
+          "text": "—",
+          "start": 78.789,
+          "end": 78.939
+        },
+        {
+          "text": "prima",
+          "start": 79.409,
+          "end": 79.629
+        },
+        {
+          "text": "una",
+          "start": 79.71,
+          "end": 79.83
+        },
+        {
+          "text": "ricerca",
+          "start": 79.87,
+          "end": 80.23
+        },
+        {
+          "text": "grossolana",
+          "start": 80.29,
+          "end": 80.93
+        },
+        {
+          "text": "con",
+          "start": 81.09,
+          "end": 81.21
+        },
+        {
+          "text": "valori",
+          "start": 81.25,
+          "end": 81.51
+        },
+        {
+          "text": "a",
+          "start": 81.61,
+          "end": 81.65
+        },
+        {
+          "text": "crescita",
+          "start": 81.69,
+          "end": 82.01
+        },
+        {
+          "text": "esponenziale",
+          "start": 82.05,
+          "end": 82.71
+        }
+      ]
+    },
+    {
+      "start": 83.03,
+      "end": 88.471,
+      "text": "per individuare le regioni promettenti, poi ricerche sempre più fini su intervalli ristretti,",
+      "words": [
+        {
+          "text": "per",
+          "start": 83.03,
+          "end": 83.15
+        },
+        {
+          "text": "individuare",
+          "start": 83.21,
+          "end": 83.77
+        },
+        {
+          "text": "le",
+          "start": 83.83,
+          "end": 83.89
+        },
+        {
+          "text": "regioni",
+          "start": 83.95,
+          "end": 84.23
+        },
+        {
+          "text": "promettenti,",
+          "start": 84.27,
+          "end": 84.97
+        },
+        {
+          "text": "poi",
+          "start": 85.41,
+          "end": 85.61
+        },
+        {
+          "text": "ricerche",
+          "start": 85.69,
+          "end": 86.07
+        },
+        {
+          "text": "sempre",
+          "start": 86.17,
+          "end": 86.49
+        },
+        {
+          "text": "più",
+          "start": 86.55,
+          "end": 86.65
+        },
+        {
+          "text": "fini",
+          "start": 86.77,
+          "end": 87.05
+        },
+        {
+          "text": "su",
+          "start": 87.21,
+          "end": 87.27
+        },
+        {
+          "text": "intervalli",
+          "start": 87.33,
+          "end": 87.81
+        },
+        {
+          "text": "ristretti,",
+          "start": 87.87,
+          "end": 88.471
+        }
+      ]
+    },
+    {
+      "start": 88.911,
+      "end": 92.411,
+      "text": "tenendo sempre insieme tutti gli iperparametri significativi.",
+      "words": [
+        {
+          "text": "tenendo",
+          "start": 88.911,
+          "end": 89.231
+        },
+        {
+          "text": "sempre",
+          "start": 89.391,
+          "end": 89.731
+        },
+        {
+          "text": "insieme",
+          "start": 89.771,
+          "end": 90.211
+        },
+        {
+          "text": "tutti",
+          "start": 90.511,
+          "end": 90.811
+        },
+        {
+          "text": "gli",
+          "start": 90.851,
+          "end": 90.951
+        },
+        {
+          "text": "iperparametri",
+          "start": 90.971,
+          "end": 91.631
+        },
+        {
+          "text": "significativi.",
+          "start": 91.691,
+          "end": 92.411
+        }
+      ]
+    }
+  ]
+}

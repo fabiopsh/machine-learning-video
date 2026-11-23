@@ -1,0 +1,1026 @@
+{
+  "duration": 65.537,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.94,
+      "text": "Dimostriamo il teorema classico: per le rette nel piano,",
+      "words": [
+        {
+          "text": "Dimostriamo",
+          "start": 0.08,
+          "end": 0.56
+        },
+        {
+          "text": "il",
+          "start": 0.6,
+          "end": 0.68
+        },
+        {
+          "text": "teorema",
+          "start": 0.72,
+          "end": 1.06
+        },
+        {
+          "text": "classico:",
+          "start": 1.12,
+          "end": 1.64
+        },
+        {
+          "text": "per",
+          "start": 1.96,
+          "end": 2.08
+        },
+        {
+          "text": "le",
+          "start": 2.12,
+          "end": 2.18
+        },
+        {
+          "text": "rette",
+          "start": 2.22,
+          "end": 2.42
+        },
+        {
+          "text": "nel",
+          "start": 2.46,
+          "end": 2.58
+        },
+        {
+          "text": "piano,",
+          "start": 2.64,
+          "end": 2.94
+        }
+      ]
+    },
+    {
+      "start": 3.121,
+      "end": 5.101,
+      "text": "la VC-dimension è esattamente tre.",
+      "words": [
+        {
+          "text": "la",
+          "start": 3.121,
+          "end": 3.201
+        },
+        {
+          "text": "VC-dimension",
+          "start": 3.241,
+          "end": 4.081
+        },
+        {
+          "text": "è",
+          "start": 4.201,
+          "end": 4.241
+        },
+        {
+          "text": "esattamente",
+          "start": 4.321,
+          "end": 4.921
+        },
+        {
+          "text": "tre.",
+          "start": 4.981,
+          "end": 5.101
+        }
+      ]
+    },
+    {
+      "start": 5.661,
+      "end": 8.121,
+      "text": "Prima parte: VC maggiore o uguale a tre.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 5.661,
+          "end": 5.881
+        },
+        {
+          "text": "parte:",
+          "start": 5.921,
+          "end": 6.241
+        },
+        {
+          "text": "VC",
+          "start": 6.561,
+          "end": 6.741
+        },
+        {
+          "text": "maggiore",
+          "start": 6.981,
+          "end": 7.461
+        },
+        {
+          "text": "o",
+          "start": 7.581,
+          "end": 7.621
+        },
+        {
+          "text": "uguale",
+          "start": 7.661,
+          "end": 7.881
+        },
+        {
+          "text": "a",
+          "start": 7.901,
+          "end": 7.941
+        },
+        {
+          "text": "tre.",
+          "start": 8.001,
+          "end": 8.121
+        }
+      ]
+    },
+    {
+      "start": 8.721,
+      "end": 10.462,
+      "text": "Scegliamo tre punti non allineati.",
+      "words": [
+        {
+          "text": "Scegliamo",
+          "start": 8.721,
+          "end": 9.061
+        },
+        {
+          "text": "tre",
+          "start": 9.121,
+          "end": 9.221
+        },
+        {
+          "text": "punti",
+          "start": 9.301,
+          "end": 9.562
+        },
+        {
+          "text": "non",
+          "start": 9.642,
+          "end": 9.782
+        },
+        {
+          "text": "allineati.",
+          "start": 9.822,
+          "end": 10.462
+        }
+      ]
+    },
+    {
+      "start": 10.802,
+      "end": 15.162,
+      "text": "Le loro due alla terza, cioè otto, dicotomie sono tutte separabili da una retta,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 10.802,
+          "end": 10.882
+        },
+        {
+          "text": "loro",
+          "start": 10.922,
+          "end": 11.102
+        },
+        {
+          "text": "due",
+          "start": 11.282,
+          "end": 11.462
+        },
+        {
+          "text": "alla",
+          "start": 11.502,
+          "end": 11.642
+        },
+        {
+          "text": "terza,",
+          "start": 11.682,
+          "end": 12.062
+        },
+        {
+          "text": "cioè",
+          "start": 12.222,
+          "end": 12.362
+        },
+        {
+          "text": "otto,",
+          "start": 12.502,
+          "end": 12.802
+        },
+        {
+          "text": "dicotomie",
+          "start": 12.922,
+          "end": 13.462
+        },
+        {
+          "text": "sono",
+          "start": 13.582,
+          "end": 13.742
+        },
+        {
+          "text": "tutte",
+          "start": 13.802,
+          "end": 14.022
+        },
+        {
+          "text": "separabili",
+          "start": 14.062,
+          "end": 14.562
+        },
+        {
+          "text": "da",
+          "start": 14.602,
+          "end": 14.662
+        },
+        {
+          "text": "una",
+          "start": 14.722,
+          "end": 14.822
+        },
+        {
+          "text": "retta,",
+          "start": 14.862,
+          "end": 15.162
+        }
+      ]
+    },
+    {
+      "start": 15.282,
+      "end": 19.123,
+      "text": "come vedi negli otto riquadri a sinistra: se tutti i punti hanno la stessa classe,",
+      "words": [
+        {
+          "text": "come",
+          "start": 15.282,
+          "end": 15.442
+        },
+        {
+          "text": "vedi",
+          "start": 15.482,
+          "end": 15.642
+        },
+        {
+          "text": "negli",
+          "start": 15.682,
+          "end": 15.863
+        },
+        {
+          "text": "otto",
+          "start": 15.903,
+          "end": 16.063
+        },
+        {
+          "text": "riquadri",
+          "start": 16.103,
+          "end": 16.463
+        },
+        {
+          "text": "a",
+          "start": 16.483,
+          "end": 16.523
+        },
+        {
+          "text": "sinistra:",
+          "start": 16.563,
+          "end": 17.003
+        },
+        {
+          "text": "se",
+          "start": 17.503,
+          "end": 17.563
+        },
+        {
+          "text": "tutti",
+          "start": 17.623,
+          "end": 17.803
+        },
+        {
+          "text": "i",
+          "start": 17.823,
+          "end": 17.863
+        },
+        {
+          "text": "punti",
+          "start": 17.863,
+          "end": 18.123
+        },
+        {
+          "text": "hanno",
+          "start": 18.143,
+          "end": 18.303
+        },
+        {
+          "text": "la",
+          "start": 18.343,
+          "end": 18.403
+        },
+        {
+          "text": "stessa",
+          "start": 18.443,
+          "end": 18.683
+        },
+        {
+          "text": "classe,",
+          "start": 18.743,
+          "end": 19.123
+        }
+      ]
+    },
+    {
+      "start": 19.263,
+      "end": 24.284,
+      "text": "una retta li lascia dallo stesso lato; altrimenti una retta isola facilmente l'unico vertice diverso.",
+      "words": [
+        {
+          "text": "una",
+          "start": 19.263,
+          "end": 19.383
+        },
+        {
+          "text": "retta",
+          "start": 19.423,
+          "end": 19.623
+        },
+        {
+          "text": "li",
+          "start": 19.663,
+          "end": 19.743
+        },
+        {
+          "text": "lascia",
+          "start": 19.763,
+          "end": 19.983
+        },
+        {
+          "text": "dallo",
+          "start": 20.003,
+          "end": 20.183
+        },
+        {
+          "text": "stesso",
+          "start": 20.223,
+          "end": 20.503
+        },
+        {
+          "text": "lato;",
+          "start": 20.543,
+          "end": 20.783
+        },
+        {
+          "text": "altrimenti",
+          "start": 21.203,
+          "end": 21.723
+        },
+        {
+          "text": "una",
+          "start": 21.803,
+          "end": 21.923
+        },
+        {
+          "text": "retta",
+          "start": 21.963,
+          "end": 22.184
+        },
+        {
+          "text": "isola",
+          "start": 22.224,
+          "end": 22.444
+        },
+        {
+          "text": "facilmente",
+          "start": 22.504,
+          "end": 23.024
+        },
+        {
+          "text": "l'unico",
+          "start": 23.104,
+          "end": 23.384
+        },
+        {
+          "text": "vertice",
+          "start": 23.424,
+          "end": 23.784
+        },
+        {
+          "text": "diverso.",
+          "start": 23.824,
+          "end": 24.284
+        }
+      ]
+    },
+    {
+      "start": 24.764,
+      "end": 28.985,
+      "text": "Tre punti allineati non funzionerebbero, ma per il limite inferiore basta una configurazione.",
+      "words": [
+        {
+          "text": "Tre",
+          "start": 24.764,
+          "end": 24.864
+        },
+        {
+          "text": "punti",
+          "start": 24.924,
+          "end": 25.124
+        },
+        {
+          "text": "allineati",
+          "start": 25.164,
+          "end": 25.624
+        },
+        {
+          "text": "non",
+          "start": 25.664,
+          "end": 25.744
+        },
+        {
+          "text": "funzionerebbero,",
+          "start": 25.784,
+          "end": 26.484
+        },
+        {
+          "text": "ma",
+          "start": 26.624,
+          "end": 26.684
+        },
+        {
+          "text": "per",
+          "start": 26.784,
+          "end": 26.884
+        },
+        {
+          "text": "il",
+          "start": 26.924,
+          "end": 26.984
+        },
+        {
+          "text": "limite",
+          "start": 27.004,
+          "end": 27.244
+        },
+        {
+          "text": "inferiore",
+          "start": 27.284,
+          "end": 27.724
+        },
+        {
+          "text": "basta",
+          "start": 27.764,
+          "end": 28.024
+        },
+        {
+          "text": "una",
+          "start": 28.044,
+          "end": 28.144
+        },
+        {
+          "text": "configurazione.",
+          "start": 28.164,
+          "end": 28.985
+        }
+      ]
+    },
+    {
+      "start": 29.885,
+      "end": 32.185,
+      "text": "Seconda parte: VC minore di quattro.",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 29.885,
+          "end": 30.185
+        },
+        {
+          "text": "parte:",
+          "start": 30.225,
+          "end": 30.545
+        },
+        {
+          "text": "VC",
+          "start": 30.885,
+          "end": 31.065
+        },
+        {
+          "text": "minore",
+          "start": 31.285,
+          "end": 31.645
+        },
+        {
+          "text": "di",
+          "start": 31.685,
+          "end": 31.745
+        },
+        {
+          "text": "quattro.",
+          "start": 31.785,
+          "end": 32.185
+        }
+      ]
+    },
+    {
+      "start": 32.645,
+      "end": 35.606,
+      "text": "Dati quattro punti qualsiasi, ci sono solo tre casi possibili,",
+      "words": [
+        {
+          "text": "Dati",
+          "start": 32.645,
+          "end": 32.825
+        },
+        {
+          "text": "quattro",
+          "start": 32.885,
+          "end": 33.165
+        },
+        {
+          "text": "punti",
+          "start": 33.185,
+          "end": 33.425
+        },
+        {
+          "text": "qualsiasi,",
+          "start": 33.465,
+          "end": 34.005
+        },
+        {
+          "text": "ci",
+          "start": 34.125,
+          "end": 34.205
+        },
+        {
+          "text": "sono",
+          "start": 34.245,
+          "end": 34.425
+        },
+        {
+          "text": "solo",
+          "start": 34.485,
+          "end": 34.665
+        },
+        {
+          "text": "tre",
+          "start": 34.705,
+          "end": 34.805
+        },
+        {
+          "text": "casi",
+          "start": 34.845,
+          "end": 35.045
+        },
+        {
+          "text": "possibili,",
+          "start": 35.085,
+          "end": 35.606
+        }
+      ]
+    },
+    {
+      "start": 35.926,
+      "end": 40.726,
+      "text": "e in ognuno esiste un'etichettatura non separabile perché ogni semipiano è convesso.",
+      "words": [
+        {
+          "text": "e",
+          "start": 35.926,
+          "end": 35.966
+        },
+        {
+          "text": "in",
+          "start": 36.026,
+          "end": 36.106
+        },
+        {
+          "text": "ognuno",
+          "start": 36.146,
+          "end": 36.546
+        },
+        {
+          "text": "esiste",
+          "start": 36.666,
+          "end": 36.966
+        },
+        {
+          "text": "un'etichettatura",
+          "start": 37.006,
+          "end": 37.666
+        },
+        {
+          "text": "non",
+          "start": 37.846,
+          "end": 38.006
+        },
+        {
+          "text": "separabile",
+          "start": 38.126,
+          "end": 38.766
+        },
+        {
+          "text": "perché",
+          "start": 38.866,
+          "end": 39.106
+        },
+        {
+          "text": "ogni",
+          "start": 39.266,
+          "end": 39.446
+        },
+        {
+          "text": "semipiano",
+          "start": 39.506,
+          "end": 40.026
+        },
+        {
+          "text": "è",
+          "start": 40.146,
+          "end": 40.186
+        },
+        {
+          "text": "convesso.",
+          "start": 40.226,
+          "end": 40.726
+        }
+      ]
+    },
+    {
+      "start": 41.266,
+      "end": 45.287,
+      "text": "Primo caso: tre punti allineati, dando al centrale la classe opposta agli estremi.",
+      "words": [
+        {
+          "text": "Primo",
+          "start": 41.266,
+          "end": 41.466
+        },
+        {
+          "text": "caso:",
+          "start": 41.526,
+          "end": 41.807
+        },
+        {
+          "text": "tre",
+          "start": 42.047,
+          "end": 42.167
+        },
+        {
+          "text": "punti",
+          "start": 42.227,
+          "end": 42.447
+        },
+        {
+          "text": "allineati,",
+          "start": 42.467,
+          "end": 43.007
+        },
+        {
+          "text": "dando",
+          "start": 43.227,
+          "end": 43.427
+        },
+        {
+          "text": "al",
+          "start": 43.447,
+          "end": 43.527
+        },
+        {
+          "text": "centrale",
+          "start": 43.567,
+          "end": 43.967
+        },
+        {
+          "text": "la",
+          "start": 44.007,
+          "end": 44.067
+        },
+        {
+          "text": "classe",
+          "start": 44.087,
+          "end": 44.347
+        },
+        {
+          "text": "opposta",
+          "start": 44.387,
+          "end": 44.687
+        },
+        {
+          "text": "agli",
+          "start": 44.727,
+          "end": 44.847
+        },
+        {
+          "text": "estremi.",
+          "start": 44.867,
+          "end": 45.287
+        }
+      ]
+    },
+    {
+      "start": 45.787,
+      "end": 51.048,
+      "text": "Secondo caso: un quadrilatero convesso, etichettando come uno XOR le due diagonali che si incrociano,",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 45.787,
+          "end": 46.067
+        },
+        {
+          "text": "caso:",
+          "start": 46.107,
+          "end": 46.367
+        },
+        {
+          "text": "un",
+          "start": 46.487,
+          "end": 46.567
+        },
+        {
+          "text": "quadrilatero",
+          "start": 46.607,
+          "end": 47.207
+        },
+        {
+          "text": "convesso,",
+          "start": 47.247,
+          "end": 47.767
+        },
+        {
+          "text": "etichettando",
+          "start": 47.907,
+          "end": 48.488
+        },
+        {
+          "text": "come",
+          "start": 48.528,
+          "end": 48.688
+        },
+        {
+          "text": "uno",
+          "start": 48.768,
+          "end": 48.908
+        },
+        {
+          "text": "XOR",
+          "start": 49.048,
+          "end": 49.448
+        },
+        {
+          "text": "le",
+          "start": 49.608,
+          "end": 49.688
+        },
+        {
+          "text": "due",
+          "start": 49.728,
+          "end": 49.828
+        },
+        {
+          "text": "diagonali",
+          "start": 49.868,
+          "end": 50.268
+        },
+        {
+          "text": "che",
+          "start": 50.308,
+          "end": 50.368
+        },
+        {
+          "text": "si",
+          "start": 50.428,
+          "end": 50.488
+        },
+        {
+          "text": "incrociano,",
+          "start": 50.528,
+          "end": 51.048
+        }
+      ]
+    },
+    {
+      "start": 51.228,
+      "end": 52.028,
+      "text": "mostrato a destra.",
+      "words": [
+        {
+          "text": "mostrato",
+          "start": 51.228,
+          "end": 51.568
+        },
+        {
+          "text": "a",
+          "start": 51.588,
+          "end": 51.628
+        },
+        {
+          "text": "destra.",
+          "start": 51.668,
+          "end": 52.028
+        }
+      ]
+    },
+    {
+      "start": 52.428,
+      "end": 55.829,
+      "text": "Terzo caso: un punto interno al triangolo formato dagli altri tre,",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 52.428,
+          "end": 52.688
+        },
+        {
+          "text": "caso:",
+          "start": 52.748,
+          "end": 53.008
+        },
+        {
+          "text": "un",
+          "start": 53.388,
+          "end": 53.468
+        },
+        {
+          "text": "punto",
+          "start": 53.508,
+          "end": 53.788
+        },
+        {
+          "text": "interno",
+          "start": 53.908,
+          "end": 54.288
+        },
+        {
+          "text": "al",
+          "start": 54.308,
+          "end": 54.389
+        },
+        {
+          "text": "triangolo",
+          "start": 54.429,
+          "end": 54.829
+        },
+        {
+          "text": "formato",
+          "start": 54.869,
+          "end": 55.209
+        },
+        {
+          "text": "dagli",
+          "start": 55.249,
+          "end": 55.429
+        },
+        {
+          "text": "altri",
+          "start": 55.449,
+          "end": 55.649
+        },
+        {
+          "text": "tre,",
+          "start": 55.709,
+          "end": 55.829
+        }
+      ]
+    },
+    {
+      "start": 55.989,
+      "end": 57.369,
+      "text": "con classe opposta ai vertici.",
+      "words": [
+        {
+          "text": "con",
+          "start": 55.989,
+          "end": 56.129
+        },
+        {
+          "text": "classe",
+          "start": 56.149,
+          "end": 56.449
+        },
+        {
+          "text": "opposta",
+          "start": 56.489,
+          "end": 56.809
+        },
+        {
+          "text": "ai",
+          "start": 56.849,
+          "end": 56.889
+        },
+        {
+          "text": "vertici.",
+          "start": 56.909,
+          "end": 57.369
+        }
+      ]
+    },
+    {
+      "start": 58.169,
+      "end": 60.209,
+      "text": "Nessun insieme di quattro punti è frammentato.",
+      "words": [
+        {
+          "text": "Nessun",
+          "start": 58.169,
+          "end": 58.429
+        },
+        {
+          "text": "insieme",
+          "start": 58.489,
+          "end": 58.789
+        },
+        {
+          "text": "di",
+          "start": 58.849,
+          "end": 58.909
+        },
+        {
+          "text": "quattro",
+          "start": 58.949,
+          "end": 59.209
+        },
+        {
+          "text": "punti",
+          "start": 59.249,
+          "end": 59.469
+        },
+        {
+          "text": "è",
+          "start": 59.509,
+          "end": 59.549
+        },
+        {
+          "text": "frammentato.",
+          "start": 59.569,
+          "end": 60.209
+        }
+      ]
+    },
+    {
+      "start": 60.609,
+      "end": 64.87,
+      "text": "In generale, in R alla n gli iperpiani hanno VC-dimension n più uno.",
+      "words": [
+        {
+          "text": "In",
+          "start": 60.609,
+          "end": 60.669
+        },
+        {
+          "text": "generale,",
+          "start": 60.709,
+          "end": 61.15
+        },
+        {
+          "text": "in",
+          "start": 61.29,
+          "end": 61.41
+        },
+        {
+          "text": "R",
+          "start": 61.63,
+          "end": 61.67
+        },
+        {
+          "text": "alla",
+          "start": 61.73,
+          "end": 61.89
+        },
+        {
+          "text": "n",
+          "start": 62.13,
+          "end": 62.17
+        },
+        {
+          "text": "gli",
+          "start": 62.33,
+          "end": 62.43
+        },
+        {
+          "text": "iperpiani",
+          "start": 62.47,
+          "end": 63.07
+        },
+        {
+          "text": "hanno",
+          "start": 63.15,
+          "end": 63.33
+        },
+        {
+          "text": "VC-dimension",
+          "start": 63.37,
+          "end": 64.13
+        },
+        {
+          "text": "n",
+          "start": 64.39,
+          "end": 64.43
+        },
+        {
+          "text": "più",
+          "start": 64.51,
+          "end": 64.59
+        },
+        {
+          "text": "uno.",
+          "start": 64.71,
+          "end": 64.87
+        }
+      ]
+    }
+  ]
+}
