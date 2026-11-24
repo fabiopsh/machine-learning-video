@@ -406,7 +406,6 @@ def build_meta_tags(
     return "\n".join(
         [
             f'  <meta name="description" content="{e(description)}" />',
-            f'  <link rel="icon" type="image/svg+xml" href="{root_prefix}favicon.svg" />',
             f'  <link rel="canonical" href="{e(canonical_url)}" />',
             f'  <meta property="og:type" content="{e(og_type)}" />',
             '  <meta property="og:locale" content="it_IT" />',
@@ -463,7 +462,8 @@ def write_404_page(out_dir: Path, base_url: str, ready_ids: list[str]) -> None:
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pagina non trovata — Machine Learning (654AA)</title>
   <meta name="theme-color" content="#F6F6F3" />
-  <link rel="icon" type="image/svg+xml" href="{base_path}favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="{base_path}assets/favicon-lia.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{base_path}assets/apple-touch-icon.png" />
   <script>
     (function () {{
       var BASE = {json.dumps(base_path)};
@@ -580,6 +580,8 @@ def build_site(
     # Copy core static assets
     shutil.copytree(VIDEOLEZIONI_DIR / "css", out_dir / "css")
     shutil.copytree(VIDEOLEZIONI_DIR / "js", out_dir / "js")
+    if (VIDEOLEZIONI_DIR / "assets").is_dir():
+        shutil.copytree(VIDEOLEZIONI_DIR / "assets", out_dir / "assets")
     (out_dir / "lessons").mkdir(parents=True, exist_ok=True)
     shutil.copy2(manifest_path, out_dir / "lessons" / "manifest.json")
     write_favicon(out_dir)
@@ -695,9 +697,9 @@ def build_site(
         ),
         1,
     )
-    first_ready = ready_ids[0] if ready_ids else "02-problema"
+    first_ready = ready_ids[0] if ready_ids else "00-guida"
     index_html = index_html.replace(
-        'href="lesson.html?id=02-problema"',
+        'href="lesson.html?id=00-guida"',
         f'href="{first_ready}/"',
     )
     (out_dir / "index.html").write_text(index_html, encoding="utf-8")
@@ -777,6 +779,8 @@ def build_site(
         chap_html = (
             chap_html.replace('href="css/styles.css"', 'href="../css/styles.css"')
             .replace('href="css/themes.css"', 'href="../css/themes.css"')
+            .replace('href="assets/favicon-lia.png"', 'href="../assets/favicon-lia.png"')
+            .replace('href="assets/apple-touch-icon.png"', 'href="../assets/apple-touch-icon.png"')
             .replace('href="index.html"', 'href="../"')
             .replace('src="js/player.js"', 'src="../js/player.js"')
             .replace(

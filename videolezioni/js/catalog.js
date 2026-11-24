@@ -1,9 +1,11 @@
 // Dual-view Catalog Hub (Interactive Course Map + Editorial Bento Grid)
-// Features: live Theme Switcher, Resume Hero banner, local study progress, instant search & filters.
+// Features: live Theme Switcher, Author/Prof credits + GitHub Star count, Resume Hero, study hours progress, instant search.
 
 import { mountThemeSwitcher, loadProgress, chapterMiniSvg } from "./theme.js";
 
 const VIEW_KEY = "ml_videolezioni_catalog_view_v1";
+const STARS_CACHE_KEY = "ml_videolezioni_gh_stars_v1";
+const GITHUB_REPO = "fabiopsh/machine-learning-videolesson";
 const USE_CLEAN_URLS = document.documentElement.dataset.cleanUrls === "true";
 
 function lessonUrl(id, sceneIdx = 0) {
@@ -27,29 +29,103 @@ function getSavedView() {
 }
 
 function fmtHours(totalMin) {
-  if (!totalMin) return "0 min";
-  const h = Math.floor(totalMin / 60);
-  const m = Math.round(totalMin % 60);
+  const mins = Math.max(0, Math.round(totalMin || 0));
+  if (mins === 0) return "0 min";
+  const h = Math.floor(mins / 60);
+  const m = mins % 60;
   return h > 0 ? `${h}h ${String(m).padStart(2, "0")}m` : `${m} min`;
+}
+
+async function loadGitHubStars(badgeEl) {
+  if (!badgeEl) return;
+  try {
+    const cached = sessionStorage.getItem(STARS_CACHE_KEY);
+    if (cached !== null) {
+      badgeEl.textContent = cached;
+      badgeEl.hidden = false;
+      return;
+    }
+  } catch {}
+
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}`, {
+      headers: { Accept: "application/vnd.github+json" }
+    });
+    if (!res.ok) return;
+    const data = await res.json();
+    if (typeof data.stargazers_count === "number") {
+      const val = String(data.stargazers_count);
+      badgeEl.textContent = val;
+      badgeEl.hidden = false;
+      try { sessionStorage.setItem(STARS_CACHE_KEY, val); } catch {}
+    }
+  } catch {
+    // Offline or rate-limited: leave badge cleanly hidden
+  }
+}
+
+function mountHeroLia(cardEl, spriteEl) {
+  if (!spriteEl) return;
+  let hovered = false;
+  let welcomeUntil = performance.now() + 900;
+  let nextBlink = performance.now() + 2800 + Math.random() * 2000;
+  let blinkEnd = 0;
+
+  const setFrame = (idx) => {
+    spriteEl.style.backgroundPosition = `${idx * 20}% 0%`;
+  };
+
+  if (cardEl) {
+    cardEl.addEventListener("pointerenter", () => {
+      hovered = true;
+      setFrame(5); // Warm happy smile on hover
+    });
+    cardEl.addEventListener("pointerleave", () => {
+      hovered = false;
+      setFrame(0);
+    });
+  }
+
+  setFrame(5);
+  setInterval(() => {
+    const now = performance.now();
+    if (hovered || now < welcomeUntil) {
+      setFrame(5);
+      return;
+    }
+    if (now >= nextBlink && blinkEnd === 0) {
+      blinkEnd = now + 135;
+      nextBlink = now + 3200 + Math.random() * 2600;
+    }
+    if (now < blinkEnd) {
+      setFrame(1);
+    } else {
+      blinkEnd = 0;
+      setFrame(0);
+    }
+  }, 85);
 }
 
 async function initCatalog() {
   mountThemeSwitcher(document.getElementById("catalog-theme-switcher"));
+  loadGitHubStars(document.getElementById("github-stars-count"));
+  mountHeroLia(
+    document.getElementById("resume-card"),
+    document.getElementById("hero-lia-sprite")
+  );
 
   const root = document.getElementById("catalog-content");
-  const countEl = document.getElementById("ready-count");
-  const progressBar = document.getElementById("ready-progress");
-  const statReady = document.getElementById("stat-ready");
-  const statScenes = document.getElementById("stat-scenes");
   const statHours = document.getElementById("stat-hours");
-  const statWatched = document.getElementById("stat-watched");
+  const statCompletedHours = document.getElementById("stat-completed-hours");
+  const statCompletedPct = document.getElementById("stat-completed-pct");
+  const studyProgressLabel = document.getElementById("study-progress-label");
+  const studyProgressFill = document.getElementById("study-progress-fill");
   const resumeCard = document.getElementById("resume-card");
   const resumeKicker = document.getElementById("resume-kicker");
   const resumeTitle = document.getElementById("resume-title");
   const resumeMeta = document.getElementById("resume-meta");
   const resumeCta = document.getElementById("resume-cta");
   const searchInput = document.getElementById("catalog-search");
-  const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
   const viewButtons = Array.from(document.querySelectorAll(".view-btn"));
 
   let manifest;
@@ -64,18 +140,27 @@ async function initCatalog() {
 
   const progress = loadProgress();
   const readyLessons = manifest.lessons.filter((l) => l.status === "ready");
-  const readyCount = readyLessons.length;
-  const totalCount = manifest.lessons.length;
-  const totalScenes = readyLessons.reduce((acc, l) => acc + (l.scenes_count || 0), 0);
-  const totalMins = readyLessons.reduce((acc, l) => acc + (l.duration_min || l.estimated_minutes || 0), 0);
-  const watchedScenes = Object.values(progress.watched || {}).reduce((acc, arr) => acc + (Array.isArray(arr) ? arr.length : 0), 0);
 
-  countEl.textContent = `${readyCount} / ${totalCount} pronti`;
-  progressBar.style.width = `${Math.round((readyCount / totalCount) * 100)}%`;
-  statReady.textContent = `${readyCount}/${totalCount}`;
-  statScenes.textContent = String(totalScenes);
-  statHours.textContent = fmtHours(totalMins);
-  statWatched.textContent = String(watchedScenes);
+  // Compute total hours & completed hours (weighted by watched scenes ratio per chapter)
+  const totalMins = readyLessons.reduce(
+    (acc, l) => acc + (l.duration_min || l.estimated_minutes || 0),
+    0
+  );
+  const completedMins = readyLessons.reduce((acc, l) => {
+    const arr = progress.watched?.[l.id];
+    const totalSc = l.scenes_count || 0;
+    const dur = l.duration_min || l.estimated_minutes || 0;
+    if (!Array.isArray(arr) || !totalSc || !dur) return acc;
+    const ratio = Math.min(1, arr.length / totalSc);
+    return acc + dur * ratio;
+  }, 0);
+  const completedPct = totalMins > 0 ? Math.min(100, Math.round((completedMins / totalMins) * 100)) : 0;
+
+  if (statHours) statHours.textContent = fmtHours(totalMins);
+  if (statCompletedHours) statCompletedHours.textContent = fmtHours(completedMins);
+  if (statCompletedPct) statCompletedPct.textContent = `${completedPct}%`;
+  if (studyProgressLabel) studyProgressLabel.textContent = `${fmtHours(completedMins)} / ${fmtHours(totalMins)}`;
+  if (studyProgressFill) studyProgressFill.style.width = `${completedPct}%`;
 
   // Configure Resume Hero Card
   const lastLesson = progress.lastLessonId
@@ -88,28 +173,23 @@ async function initCatalog() {
     const chapNum = String(featured.chapter).padStart(2, "0");
     const dur = featured.duration_min || featured.estimated_minutes || 10;
     resumeCard.href = lessonUrl(featured.id, sceneIdx);
-    resumeKicker.textContent = isResuming ? `Riprendi · Cap. ${chapNum}` : `Consigliato · Cap. ${chapNum}`;
+    resumeKicker.textContent = isResuming ? `Riprendi · Cap. ${chapNum}` : `Inizia · Cap. ${chapNum}`;
     resumeTitle.textContent = featured.title;
     resumeMeta.textContent = isResuming
       ? `Scena ${sceneIdx + 1} di ${featured.scenes_count || "?"} · ~${dur} min`
-      : `${featured.scenes_count || ""} scene · ~${dur} min · Audio Kore sincronizzato`;
+      : `~${dur} min · Audio e formule sincronizzate`;
     resumeCta.innerHTML = `<span>${isResuming ? "Riprendi da qui" : "Avvia lezione"}</span>${ICON_CHEVRON}`;
   }
 
-  let activeFilter = "all";
   let activeView = getSavedView();
   let query = "";
 
   viewButtons.forEach((b) => b.classList.toggle("active", b.dataset.view === activeView));
 
-  function matchesFilter(lesson, part) {
-    if (activeFilter === "ready" && lesson.status !== "ready") return false;
-    if (activeFilter === "planned" && lesson.status === "ready") return false;
-    if (query) {
-      const hay = `${lesson.chapter} ${lesson.id} ${lesson.title} ${lesson.summary} ${part.title}`.toLowerCase();
-      if (!hay.includes(query)) return false;
-    }
-    return true;
+  function matchesSearch(lesson, part) {
+    if (!query) return true;
+    const hay = `${lesson.chapter} ${lesson.id} ${lesson.title} ${lesson.summary} ${part.title}`.toLowerCase();
+    return hay.includes(query);
   }
 
   function chapterProgressPct(lesson) {
@@ -124,11 +204,11 @@ async function initCatalog() {
     let renderedAny = false;
 
     for (const part of manifest.parts) {
-      const partLessons = manifest.lessons.filter((l) => l.part === part.id && matchesFilter(l, part));
+      const partLessons = manifest.lessons.filter((l) => l.part === part.id && matchesSearch(l, part));
       if (partLessons.length === 0) continue;
       renderedAny = true;
 
-      const readyInPart = partLessons.filter((l) => l.status === "ready").length;
+      const partMins = partLessons.reduce((acc, l) => acc + (l.duration_min || l.estimated_minutes || 0), 0);
       const stage = document.createElement("section");
       stage.className = "roadmap-stage";
       stage.innerHTML = `
@@ -137,16 +217,13 @@ async function initCatalog() {
             <div class="roadmap-part-pill">${part.label}</div>
             <h2 class="roadmap-part-title">${part.title}</h2>
           </div>
-          <span class="roadmap-part-count">${readyInPart} / ${partLessons.length} disponibili</span>
+          <span class="roadmap-part-count">${fmtHours(partMins)}</span>
         </div>
         <div class="roadmap-track"></div>
       `;
 
       const track = stage.querySelector(".roadmap-track");
       partLessons.forEach((lesson, idx) => {
-        const isReady = lesson.status === "ready";
-        const isScript = lesson.status === "script_ready";
-        const isOpenable = isReady || isScript;
         const chapLabel = `Cap. ${String(lesson.chapter).padStart(2, "0")}`;
         const dur = lesson.duration_min || lesson.estimated_minutes || 10;
         const pct = chapterProgressPct(lesson);
@@ -156,28 +233,25 @@ async function initCatalog() {
 
         if (idx > 0) {
           const conn = document.createElement("span");
-          conn.className = `map-connector ${isOpenable ? "active" : ""}`;
+          conn.className = "map-connector active";
           conn.setAttribute("aria-hidden", "true");
           conn.innerHTML = ICON_LINK;
           nodeWrap.appendChild(conn);
         }
 
-        const node = document.createElement(isOpenable ? "a" : "div");
-        node.className = `map-node ${isOpenable ? "ready" : "planned"}`;
-        if (isOpenable) node.href = lessonUrl(lesson.id);
+        const node = document.createElement("a");
+        node.className = "map-node ready";
+        node.href = lessonUrl(lesson.id);
 
-        const badgeLabel = isReady
-          ? (pct === 100 ? `${ICON_CHECK} Completato` : "Pronto")
-          : (isScript ? "Copione pronto" : "In preparazione");
+        const doneBadge = pct === 100
+          ? `<span class="status-pill-ready" style="margin-left:6px;">${ICON_CHECK} Completato</span>`
+          : "";
 
         node.innerHTML = `
           <div>
             <div class="map-node-top">
               <div>
-                <span class="chap-num">${chapLabel}</span>
-                <span class="${isReady ? "status-pill-ready" : "status-pill-planned"}" style="margin-left:6px;">
-                  ${badgeLabel}
-                </span>
+                <span class="chap-num">${chapLabel}</span>${doneBadge}
               </div>
               <div class="map-node-art">${chapterMiniSvg(lesson.chapter)}</div>
             </div>
@@ -187,8 +261,8 @@ async function initCatalog() {
           <div>
             ${pct > 0 ? `<div class="node-progress-bar"><div class="node-progress-fill" style="width:${pct}%"></div></div>` : ""}
             <div class="map-node-foot">
-              <span>${isOpenable ? `${lesson.scenes_count} scene · ~${dur} min${isScript ? " (anteprima)" : ""}` : lesson.source_tex.split("/").pop()}</span>
-              ${isOpenable ? `<span class="lesson-cta"><span>${isScript ? "Anteprima" : (pct > 0 && pct < 100 ? `${pct}%` : "Apri")}</span>${ICON_CHEVRON}</span>` : ""}
+              <span>~${dur} min</span>
+              <span class="lesson-cta"><span>${pct > 0 && pct < 100 ? `${pct}%` : "Apri"}</span>${ICON_CHEVRON}</span>
             </div>
           </div>
         `;
@@ -200,7 +274,7 @@ async function initCatalog() {
     }
 
     if (!renderedAny) {
-      root.innerHTML = `<div class="empty-state">Nessun capitolo trovato per «${query}». Prova con un altro termine o rimuovi i filtri.</div>`;
+      root.innerHTML = `<div class="empty-state">Nessun capitolo trovato per «${query}». Prova con un altro termine.</div>`;
     } else {
       root.innerHTML = "";
       root.appendChild(wrap);
@@ -212,47 +286,42 @@ async function initCatalog() {
     let renderedAny = false;
 
     for (const part of manifest.parts) {
-      const partLessons = manifest.lessons.filter((l) => l.part === part.id && matchesFilter(l, part));
+      const partLessons = manifest.lessons.filter((l) => l.part === part.id && matchesSearch(l, part));
       if (partLessons.length === 0) continue;
       renderedAny = true;
 
+      const partMins = partLessons.reduce((acc, l) => acc + (l.duration_min || l.estimated_minutes || 0), 0);
       const sec = document.createElement("section");
       sec.className = "part-section";
       sec.innerHTML = `
         <div class="part-header">
           <span class="part-label">${part.label}</span>
           <h2 class="part-title">${part.title}</h2>
+          <span class="roadmap-part-count" style="margin-left:auto;">${fmtHours(partMins)}</span>
         </div>
         <div class="bento-grid"></div>
       `;
       const grid = sec.querySelector(".bento-grid");
 
       for (const lesson of partLessons) {
-        const isReady = lesson.status === "ready";
-        const isScript = lesson.status === "script_ready";
-        const isOpenable = isReady || isScript;
         const chapLabel = `Cap. ${String(lesson.chapter).padStart(2, "0")}`;
         const dur = lesson.duration_min || lesson.estimated_minutes || 10;
         const pct = chapterProgressPct(lesson);
 
-        const card = document.createElement(isOpenable ? "a" : "div");
-        card.className = `bento-card ${isOpenable ? "ready" : "planned"}`;
-        if (isOpenable) card.href = lessonUrl(lesson.id);
+        const card = document.createElement("a");
+        card.className = "bento-card ready";
+        card.href = lessonUrl(lesson.id);
 
-        const badgeLabel = isReady
-          ? (pct === 100 ? `${ICON_CHECK} Completato` : "Disponibile")
-          : (isScript ? "Copione pronto" : "In preparazione");
+        const doneBadge = pct === 100
+          ? `<div style="margin-top:6px;"><span class="status-pill-ready">${ICON_CHECK} Completato</span></div>`
+          : "";
 
         card.innerHTML = `
           <div>
             <div class="bento-visual">
               <div>
                 <div class="chap-num">${chapLabel}</div>
-                <div style="margin-top:6px;">
-                  <span class="${isReady ? "status-pill-ready" : "status-pill-planned"}">
-                    ${badgeLabel}
-                  </span>
-                </div>
+                ${doneBadge}
               </div>
               ${chapterMiniSvg(lesson.chapter)}
             </div>
@@ -264,8 +333,8 @@ async function initCatalog() {
           <div>
             ${pct > 0 ? `<div class="node-progress-bar" style="margin:0 18px 4px;"><div class="node-progress-fill" style="width:${pct}%"></div></div>` : ""}
             <div class="bento-foot">
-              <span>${isOpenable ? `${lesson.scenes_count} scene · ~${dur} min${isScript ? " (anteprima)" : ""}` : `Sorgente: ${lesson.source_tex.split("/").pop()}`}</span>
-              ${isOpenable ? `<span class="lesson-cta"><span>${isScript ? "Anteprima" : "Avvia"}</span>${ICON_CHEVRON}</span>` : ""}
+              <span>~${dur} min</span>
+              <span class="lesson-cta"><span>${pct > 0 && pct < 100 ? `${pct}%` : "Avvia"}</span>${ICON_CHEVRON}</span>
             </div>
           </div>
         `;
@@ -282,14 +351,6 @@ async function initCatalog() {
   function render() {
     if (activeView === "map") renderMap();
     else renderBento();
-  }
-
-  for (const btn of filterButtons) {
-    btn.addEventListener("click", () => {
-      activeFilter = btn.dataset.filter;
-      filterButtons.forEach((b) => b.classList.toggle("active", b === btn));
-      render();
-    });
   }
 
   for (const btn of viewButtons) {

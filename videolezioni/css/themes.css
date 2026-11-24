@@ -1604,9 +1604,9 @@ body.theater-mode .control-bar {
 }
 
 .search-input {
-  width: 220px;
+  width: 280px;
   padding: 7px 12px 7px 32px;
-  border-radius: 8px;
+  border-radius: 999px;
   border: 1px solid var(--border-strong);
   background: var(--bg-paper);
   color: var(--ink);
@@ -1617,7 +1617,7 @@ body.theater-mode .control-bar {
 
 .search-input:focus {
   border-color: var(--blue);
-  width: 260px;
+  width: 320px;
 }
 
 .search-icon {
@@ -2491,6 +2491,10 @@ body.clean-mode .slide-frame {
   transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease, transform 140ms var(--ease-out), box-shadow 150ms ease;
 }
 
+.tb-icon-btn[hidden] {
+  display: none !important;
+}
+
 .tb-icon-btn svg {
   width: 16px;
   height: 16px;
@@ -2788,7 +2792,11 @@ body.clean-mode .slide-frame {
     height: 30px;
   }
 
-  .tb-icon-btn svg {
+  .tb-icon-btn[hidden] {
+  display: none !important;
+}
+
+.tb-icon-btn svg {
     width: 15px;
     height: 15px;
   }
@@ -3024,5 +3032,549 @@ body.clean-mode .slide-frame {
 
   .map-node-wrap {
     width: 100%;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   8. PIXEL-ART TUTOR AVATAR ("LIA") — DIALOG PORTRAIT & LIP-SYNC ANIMATION
+   -------------------------------------------------------------------------- */
+
+.subtitle-row {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subtitle-row .subtitle-box {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: none;
+}
+
+body.theater-mode .subtitle-row {
+  max-width: min(1240px, 92vw);
+}
+
+.avatar-card {
+  position: relative;
+  flex: 0 0 94px;
+  width: 94px;
+  height: 94px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 35%, #FFFFFF 0%, #ECECE6 100%);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(20, 20, 19, 0.05);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 180ms var(--ease-out), border-color 180ms ease, box-shadow 200ms ease, opacity 180ms ease;
+}
+
+.avatar-card:hover {
+  transform: translateY(-1px);
+  border-color: var(--blue);
+}
+
+.avatar-card.avatar-hidden {
+  display: none !important;
+}
+
+.avatar-sprite {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 600% 100%;
+  background-position: 0% 0%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform-origin: center bottom;
+  animation: lia-idle-breathe 3.6s ease-in-out infinite;
+}
+
+.avatar-card.is-speaking .avatar-sprite {
+  animation: lia-speak-bob 2.1s ease-in-out infinite;
+}
+
+.avatar-card.is-happy {
+  border-color: var(--orange);
+}
+
+/* Subtle active voice dot in corner */
+.avatar-live-dot {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 2px var(--bg-surface);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 140ms ease, transform 160ms var(--ease-out);
+}
+
+.avatar-card.is-speaking .avatar-live-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes lia-idle-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(1px); }
+}
+
+@keyframes lia-speak-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1px); }
+}
+
+/* Per-theme portrait framing */
+:root[data-theme="carbon"] .avatar-card {
+  background: radial-gradient(circle at 50% 35%, #222229 0%, #141418 100%);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+:root[data-theme="glass"] .avatar-card {
+  background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.85) 0%, rgba(226, 238, 252, 0.65) 100%);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 8px 22px rgba(30, 58, 108, 0.10);
+}
+
+:root[data-theme="arcade"] .avatar-card {
+  background: radial-gradient(circle at 50% 35%, #27376E 0%, #121830 100%);
+  border: 2px solid #E2E8FF;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #090C1A, 3px 3px 0 #060812;
+}
+
+:root[data-theme="arcade"] .avatar-live-dot {
+  border-radius: 0;
+  background: #FFD447;
+  box-shadow: 0 0 0 2px #0D1122;
+}
+
+/* When subtitles are OFF (C) but avatar is ON: hide subtitle box and float Lia neatly in the corner */
+.subtitle-dock.subs-off-avatar-only {
+  position: relative;
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.subtitle-dock.subs-off-avatar-only .subtitle-box {
+  display: none;
+}
+
+.avatar-card.avatar-floating {
+  position: fixed;
+  right: 22px;
+  bottom: 94px;
+  z-index: 38;
+  width: 82px;
+  height: 82px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+body.clean-mode .avatar-card.avatar-floating {
+  bottom: 22px;
+}
+
+body.theater-mode .avatar-card {
+  flex: 0 0 90px;
+  width: 90px;
+  height: 90px;
+}
+
+@media (max-width: 1024px) {
+  .avatar-card {
+    flex: 0 0 78px;
+    width: 78px;
+    height: 78px;
+  }
+}
+
+@media (max-width: 680px) {
+  .subtitle-row {
+    gap: 6px;
+  }
+
+  .avatar-card {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+  }
+
+  .avatar-live-dot {
+    width: 5px;
+    height: 5px;
+    right: 4px;
+    bottom: 4px;
+  }
+
+  .avatar-card.avatar-floating {
+    right: 12px;
+    bottom: 102px;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   9. HERO AUTHOR / PROFESSOR CREDITS & GITHUB STAR PILL (All 4 Themes)
+   -------------------------------------------------------------------------- */
+
+.hero-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero-left-col .hero-title {
+  margin: 0;
+}
+
+.hero-credits-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+}
+
+.hero-prof-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.credit-person {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: opacity 150ms ease, transform 150ms var(--ease-out);
+}
+
+.credit-person:hover {
+  opacity: 0.88;
+}
+
+.credit-person:hover .credit-name {
+  color: var(--blue);
+}
+
+.credit-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 1.5px solid var(--border-strong);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: var(--bg-subtle);
+}
+
+.credit-person-prof .credit-avatar {
+  width: 38px;
+  height: 38px;
+}
+
+.credit-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.24;
+  gap: 2px;
+}
+
+.credit-name {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition: color 150ms ease;
+}
+
+.credit-name-author {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.06rem;
+  letter-spacing: -0.01em;
+}
+
+.credit-sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.credit-gh-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  opacity: 0.82;
+}
+
+/* GitHub Star Pill — inspired by sleek rounded star badge */
+.github-star-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-subtle);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 150ms ease, background-color 150ms ease, transform 140ms var(--ease-out), box-shadow 150ms ease;
+}
+
+.github-star-pill:hover {
+  border-color: var(--blue);
+  background: var(--bg-surface);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.github-star-pill .star-icon {
+  width: 15px;
+  height: 15px;
+  color: #E11D74;
+  flex-shrink: 0;
+  transition: transform 160ms var(--ease-out);
+}
+
+.github-star-pill:hover .star-icon {
+  transform: scale(1.14);
+}
+
+.star-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: rgba(225, 29, 116, 0.11);
+  color: #BE185D;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.star-count-badge[hidden] {
+  display: none !important;
+}
+
+:root[data-theme="carbon"] .github-star-pill {
+  background: #17171B;
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #F4F4F5;
+}
+
+:root[data-theme="carbon"] .github-star-pill:hover {
+  background: #1F1F25;
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+:root[data-theme="carbon"] .github-star-pill .star-icon {
+  color: #F472B6;
+}
+
+:root[data-theme="carbon"] .star-count-badge {
+  background: rgba(244, 114, 182, 0.14);
+  color: #F9A8D4;
+}
+
+:root[data-theme="glass"] .github-star-pill {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border-color: rgba(255, 255, 255, 0.86);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.94), 0 4px 14px rgba(30, 58, 108, 0.06);
+}
+
+:root[data-theme="arcade"] .github-star-pill {
+  background: #1B254A;
+  border: 2px solid #5566A6;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 #070A14;
+  color: #F8FAFF;
+}
+
+:root[data-theme="arcade"] .github-star-pill:hover {
+  border-color: #FFD447;
+  background: #243162;
+}
+
+:root[data-theme="arcade"] .github-star-pill .star-icon {
+  color: #FFD447;
+}
+
+:root[data-theme="arcade"] .star-count-badge {
+  border-radius: 2px;
+  background: rgba(255, 212, 71, 0.18);
+  color: #FFD447;
+  font-family: var(--font-pixel);
+  font-size: 0.64rem;
+}
+
+:root[data-theme="arcade"] .credit-avatar {
+  border: 2px solid #E2E8FF;
+}
+
+@media (max-width: 680px) {
+  .hero-credits-row {
+    gap: 10px 12px;
+  }
+
+  .github-star-pill {
+    padding: 5px 8px 5px 11px;
+    font-size: 0.78rem;
+  }
+
+  .credit-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   10. EDITORIAL HERO EYEBROW (ANTI-SLOP) & LIA FRONT-AND-CENTER HERO STAGE
+   -------------------------------------------------------------------------- */
+
+.hero-eyebrow {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+  padding: 2px 0;
+}
+
+.hero-sep {
+  color: var(--border-strong);
+  font-weight: 400;
+  user-select: none;
+}
+
+:root[data-theme="arcade"] .hero-eyebrow {
+  font-family: var(--font-pixel);
+  font-size: 0.64rem;
+  color: #8E9CC9;
+}
+
+:root[data-theme="arcade"] .hero-sep {
+  color: #FFD447;
+}
+
+/* Integrated Lia Showcase inside the Hero Resume/Start Card */
+.resume-card.resume-card-with-lia {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 152px;
+  align-items: stretch;
+  gap: 12px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 176px;
+}
+
+.resume-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  padding: 20px 6px 20px 22px;
+  min-width: 0;
+}
+
+.hero-lia-stage {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: stretch;
+  padding: 12px 10px 0 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 60% 62%, var(--blue-soft) 0%, transparent 72%);
+}
+
+.hero-lia-sprite {
+  width: 148px;
+  height: 148px;
+  flex-shrink: 0;
+  background-image: url("../assets/lia-spritesheet.png");
+  background-repeat: no-repeat;
+  background-size: 600% 100%;
+  background-position: 0% 0%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform-origin: center bottom;
+  animation: lia-idle-breathe 3.8s ease-in-out infinite;
+  transition: transform 220ms var(--ease-out);
+}
+
+.resume-card.resume-card-with-lia:hover .hero-lia-sprite {
+  transform: translateY(-2px) scale(1.03);
+}
+
+:root[data-theme="carbon"] .hero-lia-stage {
+  background: radial-gradient(circle at 60% 62%, rgba(255, 255, 255, 0.05) 0%, transparent 72%);
+}
+
+:root[data-theme="glass"] .hero-lia-stage {
+  background: radial-gradient(circle at 60% 62%, rgba(0, 113, 227, 0.12) 0%, transparent 72%);
+}
+
+:root[data-theme="arcade"] .hero-lia-stage {
+  background: radial-gradient(circle at 60% 62%, rgba(255, 212, 71, 0.14) 0%, transparent 74%);
+  border-left: 2px dashed rgba(85, 102, 166, 0.45);
+}
+
+@media (max-width: 960px) {
+  .hero-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .resume-card.resume-card-with-lia {
+    grid-template-columns: minmax(0, 1fr) 114px;
+    min-height: 146px;
+  }
+
+  .resume-card-body {
+    padding: 16px 4px 16px 16px;
+    gap: 7px;
+  }
+
+  .hero-lia-stage {
+    padding: 8px 6px 0 0;
+  }
+
+  .hero-lia-sprite {
+    width: 112px;
+    height: 112px;
   }
 }

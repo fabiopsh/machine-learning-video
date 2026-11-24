@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#F6F6F3" />
   <title>Machine Learning (654AA) — Videolezioni Dinamiche</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-lia.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/themes.css" />
 </head>
@@ -15,30 +17,69 @@
   <main class="catalog-shell">
     <header class="catalog-hero">
       <div class="hero-top-row">
-        <span class="hero-badge">UNIPI 654AA · Prof. Alessio Micheli · 2026/27</span>
+        <div class="hero-eyebrow" aria-label="Corso Università di Pisa 654AA Laurea Magistrale 2026-27">
+          <span>Università di Pisa</span>
+          <span class="hero-sep" aria-hidden="true">/</span>
+          <span>654AA</span>
+          <span class="hero-sep" aria-hidden="true">/</span>
+          <span>Laurea Magistrale 2026–27</span>
+        </div>
         <div id="catalog-theme-switcher"></div>
       </div>
 
       <div class="hero-main-grid">
-        <div>
+        <div class="hero-left-col">
           <h1 class="hero-title">Machine Learning</h1>
-          <p class="hero-sub">Videolezioni interattive con formule KaTeX, grafici reali e sincronizzazione voce-slide in tempo reale dalle note di Fabio Piscitelli.</p>
+
+          <div class="hero-credits-row">
+            <a class="credit-person" href="https://github.com/fabiopsh/machine-learning-videolesson" target="_blank" rel="noopener noreferrer">
+              <img class="credit-avatar" src="assets/author-fabio.jpg" alt="Fabio Piscitelli" width="40" height="40" />
+              <span class="credit-text">
+                <span class="credit-name credit-name-author">Appunti di Fabio Piscitelli</span>
+                <span class="credit-sub">
+                  <svg class="credit-gh-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.85.09-.66.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.59.69.49A10.26 10.26 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                  <span>fabiopsh</span>
+                </span>
+              </span>
+            </a>
+
+            <a class="github-star-pill" href="https://github.com/fabiopsh/machine-learning-videolesson" target="_blank" rel="noopener noreferrer" title="Apri la repository su GitHub">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span>Lascia una stella su GitHub</span>
+              <span id="github-stars-count" class="star-count-badge" hidden></span>
+            </a>
+          </div>
+
+          <div class="hero-prof-row">
+            <a class="credit-person credit-person-prof" href="https://pages.di.unipi.it/micheli/" target="_blank" rel="noopener noreferrer">
+              <img class="credit-avatar" src="assets/prof-micheli.jpg" alt="Prof. Alessio Micheli" width="38" height="38" />
+              <span class="credit-text">
+                <span class="credit-name">Prof. Alessio Micheli</span>
+                <span class="credit-sub">Docente del corso · Dip. di Informatica, UNIPI</span>
+              </span>
+            </a>
+          </div>
+
           <div class="hero-stats">
-            <span class="stat-chip"><strong id="stat-ready">--</strong> capitoli pronti</span>
-            <span class="stat-chip"><strong id="stat-scenes">--</strong> scene interattive</span>
             <span class="stat-chip"><strong id="stat-hours">--</strong> di lezioni</span>
-            <span class="stat-chip"><strong id="stat-watched">0</strong> scene completate</span>
+            <span class="stat-chip"><strong id="stat-completed-hours">0 min</strong> completate</span>
+            <span class="stat-chip"><strong id="stat-completed-pct">0%</strong> del percorso</span>
           </div>
         </div>
 
-        <a id="resume-card" class="resume-card" href="lesson.html?id=02-problema">
-          <span id="resume-kicker" class="resume-kicker">Inizia il percorso</span>
-          <h2 id="resume-title" class="resume-title">Caricamento...</h2>
-          <span id="resume-meta" class="resume-meta">Seleziona un capitolo dalla mappa o dalla griglia</span>
-          <span id="resume-cta" class="resume-cta">
-            <span>Avvia lezione</span>
-            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-          </span>
+        <a id="resume-card" class="resume-card resume-card-with-lia" href="lesson.html?id=00-guida">
+          <div class="resume-card-body">
+            <span id="resume-kicker" class="resume-kicker">Inizia il percorso</span>
+            <h2 id="resume-title" class="resume-title">Caricamento...</h2>
+            <span id="resume-meta" class="resume-meta">Seleziona un capitolo dalla mappa o dalla griglia</span>
+            <span id="resume-cta" class="resume-cta">
+              <span>Avvia lezione</span>
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </span>
+          </div>
+          <div class="hero-lia-stage" aria-hidden="true">
+            <div id="hero-lia-sprite" class="hero-lia-sprite"></div>
+          </div>
         </a>
       </div>
     </header>
@@ -55,11 +96,6 @@
             <span>Griglia Bento</span>
           </button>
         </div>
-        <div class="filter-group" role="tablist" aria-label="Filtro capitoli">
-          <button class="filter-btn active" data-filter="all">Tutti</button>
-          <button class="filter-btn" data-filter="ready">Disponibili</button>
-          <button class="filter-btn" data-filter="planned">In preparazione</button>
-        </div>
       </div>
 
       <div class="toolbar-right">
@@ -68,8 +104,8 @@
           <input id="catalog-search" class="search-input" type="search" placeholder="Cerca capitolo o tema (es. ROC, VC, ridge)..." aria-label="Cerca capitoli" />
         </div>
         <div class="progress-summary">
-          <span id="ready-count">Caricamento...</span>
-          <div class="progress-track"><div id="ready-progress" class="progress-fill" style="width: 0%"></div></div>
+          <span id="study-progress-label">0 min / --</span>
+          <div class="progress-track"><div id="study-progress-fill" class="progress-fill" style="width: 0%"></div></div>
         </div>
       </div>
     </div>

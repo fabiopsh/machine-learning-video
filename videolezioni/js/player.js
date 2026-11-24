@@ -5,6 +5,7 @@
 import { renderSlideMath } from "./math.js";
 import { mountThemeSwitcher, saveSceneProgress, loadProgress } from "./theme.js";
 import { LiveSyncEngine } from "./live-sync.js";
+import { TutorAvatar, isAvatarAvailable, getSavedAvatarOn } from "./avatar.js";
 
 const params = new URLSearchParams(window.location.search);
 const rootEl = document.documentElement;
@@ -66,6 +67,8 @@ const dom = {
   stage: document.getElementById("slide-frame"),
   subtitleDock: document.getElementById("subtitle-dock"),
   subtitleBox: document.getElementById("subtitle-box"),
+  avatarCard: document.getElementById("tutor-avatar"),
+  avatarSprite: document.getElementById("tutor-avatar-sprite"),
   controlBar: document.getElementById("control-bar"),
   cleanExitBar: document.getElementById("clean-exit-bar"),
   btnExitClean: document.getElementById("btn-exit-clean"),
@@ -85,6 +88,7 @@ const dom = {
   speedSelect: document.getElementById("speed-select"),
   toggleSidebar: document.getElementById("toggle-sidebar"),
   toggleSubtitles: document.getElementById("toggle-subtitles"),
+  toggleAvatar: document.getElementById("toggle-avatar"),
   toggleRevealAll: document.getElementById("toggle-reveal-all"),
   toggleAutoAdvance: document.getElementById("toggle-auto-advance"),
   toggleClean: document.getElementById("toggle-clean"),
@@ -102,6 +106,8 @@ const liveSync = new LiveSyncEngine(dom.stage, (sec) => {
   if (!state.isPlaying) play();
 });
 dom.stage.__liveSync = liveSync;
+
+const tutorAvatar = new TutorAvatar(dom.avatarCard, dom.avatarSprite, ASSET_ROOT);
 
 const state = {
   lesson: null,
@@ -520,6 +526,7 @@ function updateFrame(t) {
   applyCuesAt(t);
   renderSubtitleAt(t);
   liveSync.update(t, state.revealAll);
+  tutorAvatar.update(t, state.subtitles, state.isPlaying);
 }
 
 function tick(now) {
@@ -581,6 +588,7 @@ function play() {
   state.isPlaying = true;
   updatePlayButton();
   scheduleCleanAutoHide();
+  tutorAvatar.onPlayStart(getCurrentTime());
 
   if (state.usingVirtualClock) {
     if (state.virtualTime >= state.duration - 0.05) state.virtualTime = 0;
@@ -618,6 +626,7 @@ function play() {
 function pause() {
   state.isPlaying = false;
   updatePlayButton();
+  tutorAvatar.onPause();
   if (state.rafId) {
     cancelAnimationFrame(state.rafId);
     state.rafId = null;
@@ -635,6 +644,7 @@ function togglePlay() {
 
 function onSceneEnded() {
   pause();
+  tutorAvatar.onSceneEnded();
   state.completedScenes.add(state.sceneIndex);
   saveSceneProgress(LESSON_ID, state.sceneIndex, true);
   updateSidebarActive();
@@ -797,12 +807,46 @@ function setupControls() {
     }
   });
 
+  function syncSubtitleAndAvatarDock() {
+    const subsOn = state.subtitlesOn;
+    const avOn = tutorAvatar.enabled;
+    dom.subtitleDock.classList.toggle("hidden", !subsOn && !avOn);
+    dom.subtitleDock.classList.toggle("subs-off-avatar-only", !subsOn && avOn);
+    tutorAvatar.setFloatingMode(!subsOn && avOn);
+    if (dom.toggleAvatar) {
+      dom.toggleAvatar.classList.toggle("active", avOn);
+    }
+  }
+
   dom.toggleSubtitles.addEventListener("click", () => {
     state.subtitlesOn = !state.subtitlesOn;
-    dom.subtitleDock.classList.toggle("hidden", !state.subtitlesOn);
     dom.toggleSubtitles.classList.toggle("active", state.subtitlesOn);
+    syncSubtitleAndAvatarDock();
     if (state.subtitlesOn) renderSubtitleAt(getCurrentTime());
   });
+
+  if (dom.toggleAvatar) {
+    dom.toggleAvatar.addEventListener("click", () => {
+      tutorAvatar.setEnabled(!tutorAvatar.enabled);
+      syncSubtitleAndAvatarDock();
+    });
+  }
+
+  if (dom.avatarCard) {
+    dom.avatarCard.addEventListener("click", () => {
+      tutorAvatar.triggerHappy(750);
+    });
+  }
+
+  const avatarAvailable = isAvatarAvailable(LESSON_ID);
+  if (avatarAvailable) {
+    if (dom.toggleAvatar) dom.toggleAvatar.hidden = false;
+    tutorAvatar.init(true, getSavedAvatarOn());
+    syncSubtitleAndAvatarDock();
+  } else {
+    if (dom.toggleAvatar) dom.toggleAvatar.hidden = true;
+    tutorAvatar.init(false, false);
+  }
 
   dom.toggleRevealAll.addEventListener("click", () => {
     state.revealAll = !state.revealAll;
@@ -1003,6 +1047,8 @@ function setupControls() {
       else if (state.sceneIndex > 0) loadScene(state.sceneIndex - 1, state.isPlaying);
     } else if (e.key.toLowerCase() === "c") {
       dom.toggleSubtitles.click();
+    } else if (e.key.toLowerCase() === "v" && dom.toggleAvatar && !dom.toggleAvatar.hidden) {
+      dom.toggleAvatar.click();
     } else if (e.key.toLowerCase() === "s") {
       dom.toggleSidebar.click();
     } else if (e.key.toLowerCase() === "a") {
