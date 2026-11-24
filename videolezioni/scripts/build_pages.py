@@ -406,7 +406,6 @@ def build_meta_tags(
     return "\n".join(
         [
             f'  <meta name="description" content="{e(description)}" />',
-            '  <meta name="theme-color" content="#090D16" />',
             f'  <link rel="icon" type="image/svg+xml" href="{root_prefix}favicon.svg" />',
             f'  <link rel="canonical" href="{e(canonical_url)}" />',
             f'  <meta property="og:type" content="{e(og_type)}" />',
@@ -458,12 +457,12 @@ def write_404_page(out_dir: Path, base_url: str, ready_ids: list[str]) -> None:
     base_path = parsed.path if parsed.path.endswith("/") else parsed.path + "/"
     ready_json = json.dumps(ready_ids)
     page = f"""<!DOCTYPE html>
-<html lang="it" data-theme="obsidian">
+<html lang="it" data-theme="studio">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pagina non trovata — Machine Learning (654AA)</title>
-  <meta name="theme-color" content="#090D16" />
+  <meta name="theme-color" content="#F6F6F3" />
   <link rel="icon" type="image/svg+xml" href="{base_path}favicon.svg" />
   <script>
     (function () {{
@@ -478,50 +477,50 @@ def write_404_page(out_dir: Path, base_url: str, ready_ids: list[str]) -> None:
     }})();
   </script>
   <style>
-    :root {{ color-scheme: dark; }}
+    :root {{ color-scheme: light; }}
     body {{
       margin: 0;
       min-height: 100vh;
       display: grid;
       place-items: center;
-      background: #090D16;
-      color: #F1F5F9;
+      background: #F6F6F3;
+      color: #141413;
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       padding: 24px;
     }}
     .card {{
       max-width: 520px;
       width: 100%;
-      background: #111827;
-      border: 1px solid rgba(148, 163, 184, 0.24);
+      background: #FFFFFF;
+      border: 1px solid #E5E5E0;
       border-radius: 20px;
       padding: 36px;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 1px 2px rgba(20, 20, 19, 0.04), 0 16px 40px rgba(20, 20, 19, 0.06);
     }}
     .badge {{
       display: inline-block;
-      padding: 6px 12px;
+      padding: 5px 12px;
       border-radius: 999px;
-      background: rgba(56, 189, 248, 0.14);
-      color: #7DD3FC;
-      font-size: 13px;
+      background: rgba(29, 78, 216, 0.08);
+      color: #1D4ED8;
+      font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.04em;
     }}
-    h1 {{ margin: 18px 0 10px; font-size: 28px; letter-spacing: -0.02em; }}
-    p {{ margin: 0 0 26px; color: #CBD5E1; line-height: 1.55; }}
+    h1 {{ margin: 18px 0 10px; font-size: 28px; letter-spacing: -0.025em; }}
+    p {{ margin: 0 0 26px; color: #464642; line-height: 1.55; }}
     a.btn {{
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 12px 20px;
-      border-radius: 12px;
-      background: #38BDF8;
-      color: #090D16;
+      padding: 11px 20px;
+      border-radius: 999px;
+      background: #141413;
+      color: #FFFFFF;
       font-weight: 600;
       text-decoration: none;
     }}
-    a.btn:hover {{ background: #7DD3FC; }}
+    a.btn:hover {{ background: #1D4ED8; }}
   </style>
 </head>
 <body>
@@ -678,8 +677,8 @@ def build_site(
     # Render Home index.html
     index_tpl = (VIDEOLEZIONI_DIR / "index.html").read_text(encoding="utf-8")
     index_html = index_tpl.replace(
-        '<html lang="it" data-theme="obsidian">',
-        '<html lang="it" data-theme="obsidian" data-clean-urls="true">',
+        '<html lang="it" data-theme="studio">',
+        '<html lang="it" data-theme="studio" data-clean-urls="true">',
         1,
     )
     index_html = index_html.replace(
@@ -757,8 +756,8 @@ def build_site(
         )
 
         chap_html = lesson_tpl.replace(
-            '<html lang="it" data-theme="obsidian">',
-            f'<html lang="it" data-theme="obsidian" data-lesson-id="{html.escape(lid, quote=True)}" data-root="..">',
+            '<html lang="it" data-theme="studio">',
+            f'<html lang="it" data-theme="studio" data-lesson-id="{html.escape(lid, quote=True)}" data-root="..">',
             1,
         )
         chap_html = chap_html.replace(

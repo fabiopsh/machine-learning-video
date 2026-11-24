@@ -1,27 +1,37 @@
 // Shared Theme Switcher + Local Study Progress + Mini Thematic SVG Art
-// Default theme: "obsidian" (3Blue1Brown-inspired dark chalkboard)
+// Default theme: "studio" (modern high-craft editorial light)
 
-const THEME_KEY = "ml_videolezioni_theme_v1";
+const THEME_KEY = "ml_videolezioni_theme_v2";
 const PROGRESS_KEY = "ml_videolezioni_progress_v1";
 
 export const THEMES = [
-  { id: "obsidian",  label: "Obsidian",  desc: "Lavagna scura stile 3Blue1Brown", swatches: ["#090D16", "#38BDF8", "#FBBF24"] },
-  { id: "editorial", label: "Editorial", desc: "Chiaro ad alto contrasto cobalto/vermiglio", swatches: ["#F9F8F5", "#1D4ED8", "#DC2626"] },
-  { id: "blueprint", label: "Blueprint", desc: "Laboratorio tecnico a griglia punteggiata", swatches: ["#EEF3F9", "#0284C7", "#0F172A"] },
-  { id: "classic",   label: "Classic",   desc: "Carta accademica LaTeX originale", swatches: ["#F7F6F2", "#1F5A9E", "#A3262A"] }
+  { id: "studio", label: "Studio",       desc: "Chiaro moderno, pulito ed editoriale",     swatches: ["#FFFFFF", "#141413", "#1D4ED8"], metaColor: "#F6F6F3" },
+  { id: "carbon", label: "Carbon",       desc: "Scuro minimale in grafite pura",           swatches: ["#121215", "#F4F4F5", "#7AA2F7"], metaColor: "#09090B" },
+  { id: "glass",  label: "Liquid Glass", desc: "Vetro satinato traslucido stile Apple",    swatches: ["#DCEBFC", "#0071E3", "#FFFFFF"], metaColor: "#E7EEF8" },
+  { id: "arcade", label: "16-bit",       desc: "Retro gaming console & JRPG a pixel",      swatches: ["#161E3A", "#FFD447", "#4FD1FF"], metaColor: "#0D1122" }
 ];
+
+const DEFAULT_THEME = "studio";
 
 export function getSavedTheme() {
   try {
     const saved = localStorage.getItem(THEME_KEY);
     if (saved && THEMES.some((t) => t.id === saved)) return saved;
   } catch {}
-  return "obsidian";
+  return DEFAULT_THEME;
 }
 
 export function applyTheme(themeId) {
-  const valid = THEMES.some((t) => t.id === themeId) ? themeId : "obsidian";
+  const themeObj = THEMES.find((t) => t.id === themeId) || THEMES[0];
+  const valid = themeObj.id;
   document.documentElement.setAttribute("data-theme", valid);
+  let metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (!metaTheme) {
+    metaTheme = document.createElement("meta");
+    metaTheme.name = "theme-color";
+    document.head.appendChild(metaTheme);
+  }
+  metaTheme.content = themeObj.metaColor;
   try {
     localStorage.setItem(THEME_KEY, valid);
   } catch {}
@@ -56,7 +66,7 @@ export function mountThemeSwitcher(container) {
     btn.addEventListener("click", () => {
       // On phones inside the compact player topbar, tapping the single active dot cycles themes cleanly
       if (container.classList.contains("player-theme-compact") && window.innerWidth <= 680) {
-        const cur = document.documentElement.getAttribute("data-theme") || "obsidian";
+        const cur = document.documentElement.getAttribute("data-theme") || DEFAULT_THEME;
         const idx = THEMES.findIndex((x) => x.id === cur);
         const next = THEMES[(idx + 1) % THEMES.length];
         applyTheme(next.id);
