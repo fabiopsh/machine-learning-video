@@ -1,0 +1,843 @@
+{
+  "lesson_id": "15-deep",
+  "chapter": 15,
+  "part": "Parte VI · Modelli avanzati",
+  "title": "Deep learning",
+  "source_tex": "note_migliorate/capitoli/15-deep.tex",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
+  },
+  "scenes": [
+    {
+      "section": "15.1 Che cos'è il deep learning",
+      "title": "Definizione, quadro generale e fattori del successo",
+      "tts_text": "In questo capitolo entriamo nel cuore del deep learning, il paradigma che utilizza reti con molti strati per apprendere rappresentazioni dei dati su più livelli di astrazione. [pause:0.8] Partiamo dalla definizione fondamentale: il deep learning permette a modelli computazionali composti da più strati di elaborazione di apprendere rappresentazioni dei dati con più livelli di astrazione. [pause:0.7] Non si tratta di un singolo algoritmo, ma di un quadro generale molto ampio. Comprende le reti profonde come i Multi-Layer Perceptron con molti strati, le reti convoluzionali, i modelli generativi come le deep belief network, e le reti ricorrenti e ricorsive. Questo paradigma si contrappone ai modelli shallow, cioè superficiali, che hanno ad esempio meno di tre strati. [pause:0.8] Nonostante la varietà delle architetture, tutti gli approcci di deep learning condividono tre aspetti essenziali. Primo: impiegano più strati di unità di elaborazione non lineari. Secondo: realizzano un apprendimento, supervisionato oppure non supervisionato, di rappresentazioni delle feature in ogni strato, organizzando gli strati in una gerarchia da feature di basso livello a feature di alto livello. Terzo: costruiscono quindi una rappresentazione gerarchica, sparsa e distribuita dei dati. [pause:0.8] Infine, perché il deep learning ha avuto un successo pratico così esplosivo negli ultimi anni? Per la convergenza di tre fattori concreti: la disponibilità di grandi dataset, la potenza di calcolo offerta dalle GPU, e nuove idee teoriche e algoritmiche che rendono davvero addestrabili le reti profonde.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.1 · Che cos'è il deep learning</div>\n  <h2 class=\"slide-title\">Definizione, quadro generale e fattori del successo</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Deep learning</div>\n    <p>Modelli computazionali composti da <strong>più strati di elaborazione</strong> che permettono di <strong>apprendere rappresentazioni dei dati con più livelli di astrazione</strong>.</p>\n  </div>\n  <div id=\"s2\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Quadro generale (vs modelli shallow, &lt; 3 strati):</span>\n    <span class=\"pill pill-accent\">MLP profondi</span>\n    <span class=\"pill\">CNN</span>\n    <span class=\"pill\">Deep Belief Network</span>\n    <span class=\"pill\">RNN e reti ricorsive</span>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Tre aspetti comuni</div>\n      <ul class=\"clean-list\">\n        <li><strong>Più strati</strong> di unità di elaborazione <strong>non lineari</strong>.</li>\n        <li>Apprendimento (supervisionato o non supervisionato) di una <strong>gerarchia di feature</strong> dal basso all'alto livello.</li>\n        <li>Rappresentazione <strong>gerarchica, sparsa e distribuita</strong> dei dati.</li>\n      </ul>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Tre fattori del successo pratico</div>\n      <ul class=\"clean-list\">\n        <li><strong>Grandi dataset</strong> disponibili.</li>\n        <li><strong>Potenza di calcolo</strong> (in particolare le <strong>GPU</strong>).</li>\n        <li><strong>Nuove idee</strong> per facilitare l'addestramento profondo.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Partiamo dalla definizione fondamentale",
+          "at": 11.8
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "quadro generale molto ampio",
+          "at": 27.6
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "condividono tre aspetti essenziali",
+          "at": 53.3
+        },
+        {
+          "action": "show",
+          "target": "#s4",
+          "anchor": "successo pratico così esplosivo",
+          "at": 80.2
+        }
+      ],
+      "duration_sec": 97.0,
+      "id": "scene-01",
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json"
+    },
+    {
+      "section": "15.1.1 Astrazione gerarchica",
+      "title": "Dal feature engineering al feature learning gerarchico",
+      "tts_text": "Come funziona concretamente l'astrazione su più livelli? [pause:0.6] Ricordiamo il problema dello XOR: già un solo strato nascosto creava una ri-rappresentazione dell'input che rendeva facile il compito dello strato successivo. Il deep learning estende questa composizione su molti livelli annidati. [pause:0.7] Cambia così radicalmente il modo di progettare i sistemi di Machine Learning: si passa dal feature engineering, dove le feature venivano estratte a mano per esperienza di dominio, al feature learning, dove si apprendono direttamente rappresentazioni dei dati, anche in modo non supervisionato o semi-supervisionato. [pause:0.8] Osserviamo la gerarchia crescente dei livelli di astrazione su un'immagine. In ingresso abbiamo il vettore di intensità dei pixel. Lo strato uno individua i bordi. Lo strato due combina i bordi in angoli e contorni, ovvero motivi elementari. Lo strato tre assembla i motivi in parti di oggetti, fino all'uscita che riconosce l'identità dell'oggetto. In breve: i bordi formano motivi, i motivi si assemblano in parti, le parti formano oggetti. [pause:0.8] Questo meccanismo funziona al meglio quando l'input possiede una struttura intrinseca, per esempio spaziale o temporale. Il deep learning risolve così una mappatura complicata scomponendola in una serie di mappature semplici annidate, rendendo lineare o molto più semplice la classificazione nell'ultimo strato. [pause:0.7] E da dove arrivano queste feature? Si apprendono automaticamente dagli esempi: con la backpropagation l'errore in uscita si propaga all'indietro attraverso gli strati, e le unità si specializzano nelle feature utili al task. Infatti i primi filtri di una rete per immagini estraggono tipicamente linee orizzontali o verticali, proprio come un semplice filtro convolutivo.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.1.1 · Astrazione gerarchica</div>\n  <h2 class=\"slide-title\">Scomporre mappature complesse in mappature semplici annidate</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-muted\">\n      <div class=\"box-label\">Feature engineering (classico)</div>\n      <p>Feature progettate <strong>a mano</strong> sulla base dell'esperienza sul dominio applicativo.</p>\n    </div>\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Feature learning (deep learning)</div>\n      <p>Si <strong>apprendono rappresentazioni</strong> direttamente dai dati (supervisionato, non supervisionato o semi-supervisionato), estendendo lo <strong>XOR</strong> su molti livelli.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 700 132\" class=\"diagram-svg\" aria-label=\"Astrazione gerarchica dai pixel all'identità dell'oggetto\">\n  <defs>\n    <marker id=\"arr-g15\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n    </marker>\n  </defs>\n  <g id=\"g-st0\">\n    <rect x=\"10\" y=\"20\" width=\"110\" height=\"66\" rx=\"7\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.5\"/>\n    <text x=\"65\" y=\"58\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">pixel</text>\n    <text x=\"65\" y=\"108\" text-anchor=\"middle\" class=\"svg-caption\">input</text>\n  </g>\n  <line x1=\"120\" y1=\"53\" x2=\"148\" y2=\"53\" stroke=\"#1F5A9E\" stroke-width=\"2\" marker-end=\"url(#arr-g15)\"/>\n  <g id=\"g-st1\">\n    <rect x=\"150\" y=\"20\" width=\"110\" height=\"66\" rx=\"7\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.5\"/>\n    <text x=\"205\" y=\"58\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">bordi</text>\n    <text x=\"205\" y=\"108\" text-anchor=\"middle\" class=\"svg-caption\">strato 1</text>\n  </g>\n  <line x1=\"260\" y1=\"53\" x2=\"288\" y2=\"53\" stroke=\"#1F5A9E\" stroke-width=\"2\" marker-end=\"url(#arr-g15)\"/>\n  <g id=\"g-st2\">\n    <rect x=\"290\" y=\"20\" width=\"114\" height=\"66\" rx=\"7\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.5\"/>\n    <text x=\"347\" y=\"49\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">angoli</text>\n    <text x=\"347\" y=\"66\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">e contorni</text>\n    <text x=\"347\" y=\"108\" text-anchor=\"middle\" class=\"svg-caption\">strato 2</text>\n  </g>\n  <line x1=\"404\" y1=\"53\" x2=\"432\" y2=\"53\" stroke=\"#1F5A9E\" stroke-width=\"2\" marker-end=\"url(#arr-g15)\"/>\n  <g id=\"g-st3\">\n    <rect x=\"434\" y=\"20\" width=\"110\" height=\"66\" rx=\"7\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.5\"/>\n    <text x=\"489\" y=\"49\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">parti</text>\n    <text x=\"489\" y=\"66\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">di oggetti</text>\n    <text x=\"489\" y=\"108\" text-anchor=\"middle\" class=\"svg-caption\">strato 3</text>\n  </g>\n  <line x1=\"544\" y1=\"53\" x2=\"572\" y2=\"53\" stroke=\"#1F5A9E\" stroke-width=\"2\" marker-end=\"url(#arr-g15)\"/>\n  <g id=\"g-st4\">\n    <rect x=\"574\" y=\"20\" width=\"116\" height=\"66\" rx=\"7\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"2.4\"/>\n    <text x=\"632\" y=\"49\" text-anchor=\"middle\" class=\"svg-legend svg-blue\" font-weight=\"700\">identità</text>\n    <text x=\"632\" y=\"66\" text-anchor=\"middle\" class=\"svg-legend svg-blue\" font-weight=\"700\">dell'oggetto</text>\n    <text x=\"632\" y=\"108\" text-anchor=\"middle\" class=\"svg-caption svg-blue\">uscita</text>\n  </g>\n</svg>\n  </div>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Struttura dell'input e specializzazione via backpropagation</div>\n    <p>Funziona al meglio su input con <strong>struttura</strong> (spaziale, temporale, …). Con la <strong>backpropagation</strong> l'errore si propaga attraverso gli strati e i primi filtri su immagini si specializzano spontaneamente in <strong>linee orizzontali o verticali</strong>, semplificando la classificazione finale.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "si passa dal feature engineering",
+          "at": 23.3
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "gerarchia crescente dei livelli di astrazione",
+          "at": 38.8
+        },
+        {
+          "action": "highlight",
+          "target": "#g-st1",
+          "anchor": "strato uno individua i bordi",
+          "at": 46.6
+        },
+        {
+          "action": "highlight",
+          "target": "#g-st2",
+          "anchor": "angoli e contorni",
+          "at": 51.5
+        },
+        {
+          "action": "highlight",
+          "target": "#g-st3",
+          "anchor": "parti di oggetti",
+          "at": 56.8
+        },
+        {
+          "action": "highlight",
+          "target": "#g-st4",
+          "anchor": "identità dell'oggetto",
+          "at": 60.5
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "input possiede una struttura intrinseca",
+          "at": 71.9
+        }
+      ],
+      "duration_sec": 111.3,
+      "id": "scene-02",
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json"
+    },
+    {
+      "section": "15.1.2 Combinare per generalizzare",
+      "title": "Riuso delle feature e aritmetica vettoriale",
+      "tts_text": "Perché apprendere feature astratte su più livelli aiuta così tanto la generalizzazione? [pause:0.6] Perché le feature astratte si riusano ai livelli superiori e si combinano tra loro per gestire casi mai osservati durante l'addestramento. [pause:0.7] Immaginiamo una rete addestrata su immagini di volti che abbia visto donne senza occhiali e uomini con occhiali, ma mai una donna con gli occhiali. Se la rete separa i fattori di variazione rilevanti, è comunque in grado di rappresentare correttamente una donna con gli occhiali. Questo emerge in modo sorprendente eseguendo semplici operazioni algebriche sui vettori delle rappresentazioni apprese: prendendo il vettore di uomo con occhiali, sottraendo il vettore di uomo e sommando quello di donna, si ottiene un vettore vicinissimo a donna con gli occhiali. [pause:0.8] Lo stesso fenomeno accade nel linguaggio naturale con le rappresentazioni vettoriali delle parole, i cosiddetti word embedding, che approfondiremo tra poco. [pause:0.6] Guardiamo due esempi celebri. Primo: la rappresentazione di re meno la rappresentazione di maschio più la rappresentazione di femmina è circa uguale alla rappresentazione di regina. Qui il vettore differenza tra re e maschio cattura geometricamente il concetto astratto di monarchia, che si trasferisce al genere femminile. [pause:0.7] Secondo: la rappresentazione di Parigi meno la rappresentazione di Francia più la rappresentazione di Polonia è circa uguale alla rappresentazione di Varsavia. In questo caso la differenza cattura la relazione semantica di capitale, permettendo al modello di combinare concetti appresi e generalizzare per analogia.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.1.2 · Combinare per generalizzare</div>\n  <h2 class=\"slide-title\">Riuso di feature astratte e algebra delle rappresentazioni</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Composizione su casi mai visti</div>\n    <p>Avendo visto <em>donne senza occhiali</em> e <em>uomini con occhiali</em>, la rete rappresenta anche una <em>donna con gli occhiali</em> tramite operazioni sui vettori appresi: <strong>uomo con occhiali − uomo + donna = donna con gli occhiali</strong>.</p>\n  </div>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Analogie nei word embedding</div>\n    \\[\\htmlId{f-king}{\\mathrm{Rep}(\\text{re}) - \\mathrm{Rep}(\\text{maschio}) + \\mathrm{Rep}(\\text{femmina}) \\approx \\mathrm{Rep}(\\text{regina})}\\]\n    \\[\\htmlId{f-paris}{\\mathrm{Rep}(\\text{Parigi}) - \\mathrm{Rep}(\\text{Francia}) + \\mathrm{Rep}(\\text{Polonia}) \\approx \\mathrm{Rep}(\\text{Varsavia})}\\]\n  </div>\n  <div id=\"s3\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 560 210\" class=\"diagram-svg\" aria-label=\"Aritmetica vettoriale nello spazio delle rappresentazioni\">\n  <defs>\n    <marker id=\"arr-eb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n    </marker>\n    <marker id=\"arr-er\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n    </marker>\n  </defs>\n  <!-- Left panel: Monarchia -->\n  <rect x=\"10\" y=\"12\" width=\"258\" height=\"186\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n  <text x=\"139\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"600\">Concetto di monarchia</text>\n  <line x1=\"64\" y1=\"158\" x2=\"64\" y2=\"74\" stroke=\"#1F5A9E\" stroke-width=\"2.2\" marker-end=\"url(#arr-eb)\"/>\n  <line x1=\"186\" y1=\"142\" x2=\"186\" y2=\"58\" stroke=\"#1F5A9E\" stroke-width=\"2.2\" marker-end=\"url(#arr-eb)\"/>\n  <line x1=\"64\" y1=\"158\" x2=\"180\" y2=\"143\" stroke=\"#C0392B\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-er)\"/>\n  <line x1=\"64\" y1=\"68\" x2=\"180\" y2=\"53\" stroke=\"#C0392B\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-er)\"/>\n  <circle cx=\"64\" cy=\"158\" r=\"4.5\" class=\"pt-pos\"/>\n  <circle cx=\"64\" cy=\"68\" r=\"4.5\" class=\"pt-pos\"/>\n  <circle cx=\"186\" cy=\"142\" r=\"4.5\" class=\"pt-pos\"/>\n  <circle cx=\"186\" cy=\"52\" r=\"5\" fill=\"#C0392B\"/>\n  <text x=\"64\" y=\"177\" text-anchor=\"middle\" class=\"svg-legend\">maschio</text>\n  <text x=\"64\" y=\"56\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">re</text>\n  <text x=\"186\" y=\"162\" text-anchor=\"middle\" class=\"svg-legend\">femmina</text>\n  <text x=\"186\" y=\"42\" text-anchor=\"middle\" class=\"svg-legend svg-red\" font-weight=\"700\">regina</text>\n  <text x=\"124\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption svg-blue\">+ monarchia</text>\n\n  <!-- Right panel: Capitale -->\n  <rect x=\"292\" y=\"12\" width=\"258\" height=\"186\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n  <text x=\"421\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"600\">Concetto di capitale</text>\n  <line x1=\"348\" y1=\"156\" x2=\"412\" y2=\"74\" stroke=\"#1F5A9E\" stroke-width=\"2.2\" marker-end=\"url(#arr-eb)\"/>\n  <line x1=\"436\" y1=\"164\" x2=\"500\" y2=\"82\" stroke=\"#1F5A9E\" stroke-width=\"2.2\" marker-end=\"url(#arr-eb)\"/>\n  <line x1=\"348\" y1=\"156\" x2=\"430\" y2=\"163\" stroke=\"#C0392B\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-er)\"/>\n  <line x1=\"416\" y1=\"68\" x2=\"498\" y2=\"75\" stroke=\"#C0392B\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-er)\"/>\n  <circle cx=\"348\" cy=\"156\" r=\"4.5\" class=\"pt-pos\"/>\n  <circle cx=\"416\" cy=\"68\" r=\"4.5\" class=\"pt-pos\"/>\n  <circle cx=\"436\" cy=\"164\" r=\"4.5\" class=\"pt-pos\"/>\n  <circle cx=\"504\" cy=\"76\" r=\"5\" fill=\"#C0392B\"/>\n  <text x=\"348\" y=\"176\" text-anchor=\"middle\" class=\"svg-legend\">Francia</text>\n  <text x=\"416\" y=\"56\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">Parigi</text>\n  <text x=\"444\" y=\"182\" text-anchor=\"middle\" class=\"svg-legend\">Polonia</text>\n  <text x=\"504\" y=\"64\" text-anchor=\"middle\" class=\"svg-legend svg-red\" font-weight=\"700\">Varsavia</text>\n  <text x=\"428\" y=\"122\" text-anchor=\"middle\" class=\"svg-caption svg-blue\">+ capitale</text>\n</svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "donne senza occhiali",
+          "at": 19.7
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "word embedding",
+          "at": 57.6
+        },
+        {
+          "action": "highlight",
+          "target": "#f-king",
+          "anchor": "rappresentazione di re meno",
+          "at": 63.1
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "cattura geometricamente il concetto",
+          "at": 74.5
+        },
+        {
+          "action": "highlight",
+          "target": "#f-paris",
+          "anchor": "rappresentazione di Parigi meno",
+          "at": 81.4
+        }
+      ],
+      "duration_sec": 99.3,
+      "id": "scene-03",
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json"
+    },
+    {
+      "section": "15.2 Servono davvero molti strati?",
+      "title": "No-flattening e l'esempio della funzione di parità",
+      "tts_text": "Dal teorema di approssimazione universale sappiamo che basta un solo strato nascosto. Allora servono davvero molti strati? [pause:0.7] Risponde l'idea di no-flattening: una funzione rappresentata in modo compatto da un'architettura profonda può richiedere un'architettura molto più grande con una rete insufficientemente profonda. [pause:0.7] Nei circuiti logici, due strati in forma normale disgiuntiva, con porte AND nel primo strato ed eventualmente input negati e una porta OR nel secondo, rappresentano qualsiasi funzione booleana, ma per la maggior parte delle funzioni servono esponenzialmente molte porte. [pause:0.7] Prendiamo la funzione di parità dispari, che estende lo XOR a n bit e vale uno se il numero di bit a uno è dispari, assumendo disponibili i NOT. [pause:0.6] Con due soli strati dobbiamo elencare tutte le configurazioni positive. Per tre input serve x uno x due x tre più x uno non x due non x tre più non x uno x due non x tre più non x uno non x due x tre, cioè 111, 100, 010 e 001: quattro AND e una OR, cinque porte. In generale le configurazioni dispari sono metà delle due alla n: servono due alla n meno uno AND più la OR finale, cioè due alla n meno uno più uno porte. Sono nove per n uguale a quattro e centoventinove per n uguale a otto: crescita esponenziale. [pause:0.8] Con un albero binario completo di XOR si fa molto meglio: profondità logaritmo in base due di n livelli di XOR, quindi due logaritmo in base due di n strati di porte AND e OR. I n meno uno nodi interni sono XOR da tre porte ciascuno: in totale tre per n meno uno porte, crescita polinomiale. Per n uguale a otto bastano ventuno porte contro centoventinove.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.2 · Servono davvero molti strati?</div>\n  <h2 class=\"slide-title\">No-flattening e funzione di parità su \\(n\\) bit</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea · No-flattening</div>\n    <p>Una funzione rappresentata in modo <strong>compatto</strong> da un'architettura profonda può richiedere un'architettura <strong>molto più grande</strong> (fino a esponenziale) con profondità insufficiente.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Parità con 2 strati (DNF: AND + OR)</div>\n      <p>Per \\(n=3\\): \\(x_1x_2x_3 + x_1\\bar{x}_2\\bar{x}_3 + \\bar{x}_1x_2\\bar{x}_3 + \\bar{x}_1\\bar{x}_2x_3\\) (4 AND + 1 OR).</p>\n      <p style=\"margin-top:6px;\">In generale \\(\\htmlId{f-exp}{2^{n-1}+1}\\) porte: <strong>9</strong> per \\(n=4\\), <strong>129</strong> per \\(n=8\\) (<strong>esponenziale</strong>).</p>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Parità con albero binario di XOR</div>\n      <p>Profondità \\(\\log_2 n\\) livelli di XOR \\(\\Rightarrow 2\\log_2 n\\) strati di porte. I \\(n-1\\) nodi interni usano 3 porte ciascuno:</p>\n      <p style=\"margin-top:6px;\">\\(\\htmlId{f-lin}{3(n-1)}\\) porte (<strong>polinomiale</strong>): <strong>21</strong> per \\(n=8\\) contro 129.</p>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 650 232\" class=\"diagram-svg\" aria-label=\"Albero binario di XOR per la parità di 8 bit\">\n<defs><marker id=\"arr-p15\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/></marker></defs>\n<line x1=\"46.0\" y1=\"192\" x2=\"73.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"100.0\" y1=\"192\" x2=\"73.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"154.0\" y1=\"192\" x2=\"181.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"208.0\" y1=\"192\" x2=\"181.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"262.0\" y1=\"192\" x2=\"289.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"316.0\" y1=\"192\" x2=\"289.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"370.0\" y1=\"192\" x2=\"397.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"424.0\" y1=\"192\" x2=\"397.0\" y2=\"166\" class=\"svg-edge\"/>\n<line x1=\"73.0\" y1=\"138\" x2=\"127.0\" y2=\"112\" class=\"svg-edge\"/>\n<line x1=\"181.0\" y1=\"138\" x2=\"127.0\" y2=\"112\" class=\"svg-edge\"/>\n<line x1=\"289.0\" y1=\"138\" x2=\"343.0\" y2=\"112\" class=\"svg-edge\"/>\n<line x1=\"397.0\" y1=\"138\" x2=\"343.0\" y2=\"112\" class=\"svg-edge\"/>\n<line x1=\"127.0\" y1=\"84\" x2=\"235.0\" y2=\"60\" class=\"svg-edge\"/>\n<line x1=\"343.0\" y1=\"84\" x2=\"235.0\" y2=\"60\" class=\"svg-edge\"/>\n<line x1=\"235.0\" y1=\"31\" x2=\"235.0\" y2=\"16\" stroke=\"#1F5A9E\" stroke-width=\"2\" marker-end=\"url(#arr-p15)\"/>\n<text x=\"245.0\" y=\"22\" class=\"svg-legend svg-blue\" font-weight=\"700\">parità</text>\n<text x=\"46.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n<text x=\"100.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<text x=\"154.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n<text x=\"208.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">4</tspan></text>\n<text x=\"262.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">5</tspan></text>\n<text x=\"316.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">6</tspan></text>\n<text x=\"370.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">7</tspan></text>\n<text x=\"424.0\" y=\"208\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">8</tspan></text>\n<circle cx=\"73.0\" cy=\"152\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"73.0\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">XOR</text>\n<circle cx=\"181.0\" cy=\"152\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"181.0\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">XOR</text>\n<circle cx=\"289.0\" cy=\"152\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"289.0\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">XOR</text>\n<circle cx=\"397.0\" cy=\"152\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"397.0\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">XOR</text>\n<circle cx=\"127.0\" cy=\"98\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"127.0\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">XOR</text>\n<circle cx=\"343.0\" cy=\"98\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"343.0\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">XOR</text>\n<circle cx=\"235.0\" cy=\"46\" r=\"16\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"2.2\"/>\n<text x=\"235.0\" y=\"50\" text-anchor=\"middle\" class=\"svg-tick svg-blue\" font-weight=\"700\">XOR</text>\n<rect x=\"462\" y=\"54\" width=\"176\" height=\"114\" rx=\"8\" fill=\"#EFEFEF\" stroke=\"#CCCCCC\" stroke-width=\"1.2\"/>\n<text x=\"476\" y=\"79\" class=\"svg-legend\" font-weight=\"600\">log<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan> 8 = 3 livelli di XOR</text>\n<text x=\"476\" y=\"101\" class=\"svg-caption\">2·log<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan> 8 = 6 strati di porte</text>\n<text x=\"476\" y=\"123\" class=\"svg-caption\">8 − 1 = 7 XOR × 3 porte</text>\n<text x=\"476\" y=\"149\" class=\"svg-legend svg-blue\" font-weight=\"700\">= 21 porte (contro 129)</text>\n</svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "idea di no-flattening",
+          "at": 8.5
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Con due soli strati dobbiamo elencare",
+          "at": 49.2
+        },
+        {
+          "action": "highlight",
+          "target": "#f-exp",
+          "anchor": "due alla n meno uno più uno porte",
+          "at": 83.1
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "albero binario completo di XOR",
+          "at": 94.5
+        },
+        {
+          "action": "highlight",
+          "target": "#f-lin",
+          "anchor": "tre per n meno uno porte",
+          "at": 113.7
+        },
+        {
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Per n uguale a otto bastano ventuno",
+          "at": 117.0
+        }
+      ],
+      "duration_sec": 121.9,
+      "id": "scene-04",
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json"
+    },
+    {
+      "section": "15.2 Risultati teorici sulle reti neurali",
+      "title": "Efficienza contro espressività: shallow vs reti profonde",
+      "tts_text": "Attenzione a non trarre conclusioni affrettate dall'esempio della parità. [pause:0.6] Il vantaggio esponenziale della profondità non vale per tutte le classi di funzioni. Caratterizzare matematicamente quali classi di funzioni traggano davvero un vantaggio esponenziale dalla profondità resta infatti un problema di ricerca aperto. [pause:0.8] Per le reti neurali disponiamo di due grandi famiglie di risultati teorici. È fondamentale sottolineare che entrambi riguardano l'efficienza di rappresentazione e non la pura espressività, perché per l'approssimazione universale basta già un singolo strato nascosto. [pause:0.8] Il primo tipo di risultati riguarda le reti shallow. Esistono casi in cui una rete con un solo strato nascosto richiede un numero esponenziale di unità rispetto alla dimensione n dell'input, oppure un numero esponenziale di pesi non nulli. Nel caso binario, su zero uno alla n esistono due alla due alla n funzioni booleane distinte; nel caso peggiore può servire un'unità dedicata per ogni singola configurazione di input da distinguere, esattamente come nella parità. Questo non è soltanto un problema di dimensione della rete: significa soprattutto che diventa difficilissimo apprendere con pochi esempi, ed è questo il punto più rilevante per il Machine Learning. [pause:0.8] Il secondo tipo di risultati riguarda il no-flattening delle reti profonde: esistono famiglie di funzioni approssimabili in modo efficiente con profondità strettamente maggiore di k, mentre le stesse funzioni richiedono modelli molto più grandi, fino a un fattore esponenziale, se la profondità è al più k. [pause:0.7] Tuttavia, non esiste alcuna garanzia a priori che un determinato task pratico possieda questa proprietà.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.2 · Teoria della profondità</div>\n  <h2 class=\"slide-title\">Efficienza rappresentazionale, non pura espressività</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Distinzione fondamentale</div>\n    <p>Per l'<strong>approssimazione universale</strong> basta 1 strato nascosto: i risultati teorici sulla profondità riguardano l'<strong>efficienza</strong> (numero di unità, pesi ed esempi necessari), non l'espressività. Caratterizzare le classi con vantaggio esponenziale è un <strong>problema aperto</strong>.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">1. Limiti delle reti shallow</div>\n      <p>Con 1 solo strato nascosto esistono funzioni che richiedono un numero <strong>esponenziale in \\(n\\)</strong> di unità o pesi non nulli (su \\(\\{0,1\\}^n\\) vi sono \\(2^{2^n}\\) funzioni: nel caso peggiore 1 unità per configurazione).</p>\n      <p style=\"margin-top:6px;\"><strong>Impatto sul ML:</strong> diventa difficile apprendere con <strong>pochi esempi</strong>.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">2. No-flattening delle reti profonde</div>\n      <p>Esistono famiglie di funzioni approssimabili in modo <strong>efficiente</strong> con profondità <strong>\\(\\gt k\\)</strong>, ma che richiedono modelli molto più grandi (fino a un fattore <strong>esponenziale</strong>) con profondità <strong>\\(\\le k\\)</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Cautela</div>\n    <p>Il vantaggio <strong>non vale per tutte le classi di funzioni</strong>: non vi è garanzia che uno specifico task applicativo goda di questa separazione.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "entrambi riguardano l'efficienza",
+          "at": 25.5
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "primo tipo di risultati riguarda le reti shallow",
+          "at": 35.7
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "secondo tipo di risultati riguarda il no-flattening",
+          "at": 80.1
+        },
+        {
+          "action": "show",
+          "target": "#s4",
+          "anchor": "non esiste alcuna garanzia a priori",
+          "at": 100.0
+        }
+      ],
+      "duration_sec": 106.5,
+      "id": "scene-05",
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json"
+    },
+    {
+      "section": "15.2.1 Composizionalità e bias induttivo",
+      "title": "Profondo non significa grande: il bias composizionale",
+      "tts_text": "Cerchiamo ora di capire l'intuizione statistica profonda dietro a questi teoremi: la composizionalità delle rappresentazioni interne. [pause:0.7] In una rete profonda, i concetti semplici estratti da uno strato vengono usati come primitive dallo strato successivo per costruire concetti più complessi. Si evita così di dover rappresentare e apprendere in modo esplicito e combinatorio tutte le possibili combinazioni: si imparano le singole parole o i sotto-pattern, non direttamente tutte le frasi o configurazioni possibili. [pause:0.8] Questo ci porta a sfatare un equivoco molto diffuso con un'idea chiave: profondo non significa grande. Le reti profonde non vanno viste come modelli enormi, bensì come modelli compatti rispetto a modelli superficiali potenzialmente esponenzialmente più grandi per lo stesso task. Avere meno unità e meno pesi aiuta direttamente l'apprendimento, permettendo di generalizzare bene con meno esempi: una piccola rete profonda può sostituire un'enorme rete superficiale. [pause:0.8] Dal punto di vista del bias induttivo, scegliere un modello profondo codifica una convinzione molto generale: che la funzione da apprendere sia una composizione di funzioni più semplici, o di fattori di variazione annidati. Quando il task rispecchia questo bias, la generalizzazione migliora proprio grazie ai molti strati. Infatti, a parità di numero di parametri, reti più profonde generalizzano meglio, mentre aumentare i parametri senza aumentare la profondità non porta lo stesso beneficio. [pause:0.7] Task tipicamente gerarchici sono le immagini, formate per composizione di parti, e il linguaggio naturale, ma non tutti i dati e non tutti i task hanno questa struttura. Si tratta comunque di un bias molto più generale rispetto a vincoli progettati ad hoc, come le funzioni phi scelte a mano in una Linear Basis Expansion o le feature ingegnerizzate; tuttavia, resta vero il principio fondamentale: nulla funziona senza assunzioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.2.1 · Composizionalità e bias induttivo</div>\n  <h2 class=\"slide-title\">Modelli compatti e assunzione di composizionalità</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Composizionalità delle rappresentazioni interne</div>\n    <p>I concetti semplici di uno strato diventano <strong>primitive</strong> per lo strato successivo: si evitano rappresentazione e apprendimento combinatori di tutte le combinazioni (si imparano parole o sotto-pattern, non tutte le combinazioni).</p>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea · Profondo non significa grande</div>\n    <p>Le reti profonde sono modelli <strong>compatti</strong> rispetto a modelli shallow potenzialmente esponenzialmente più grandi. <strong>Meno unità e meno pesi \\(\\Rightarrow\\) migliore generalizzazione con meno esempi</strong>: una piccola rete profonda sostituisce un'enorme rete superficiale.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Bias induttivo profondo</div>\n      <p>La funzione è una <strong>composizione di funzioni più semplici</strong> (fattori annidati). A parità di parametri, reti più profonde generalizzano meglio; aumentare i parametri senza profondità non aiuta.</p>\n    </div>\n    <div class=\"box box-warn\">\n      <div class=\"box-label\">Ambito e limiti</div>\n      <p>Ideale per <strong>immagini</strong> e <strong>linguaggio</strong>, ma non per ogni task. Bias molto più generale delle \\(\\phi\\) manuali di una LBE, ma <strong>nulla funziona senza assunzioni</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "concetti semplici estratti da uno strato",
+          "at": 9.7
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "profondo non significa grande",
+          "at": 37.0
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "punto di vista del bias induttivo",
+          "at": 61.1
+        }
+      ],
+      "duration_sec": 120.1,
+      "id": "scene-06",
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json"
+    },
+    {
+      "section": "15.2.2 Maledizione della dimensionalità e bias",
+      "title": "Approssimazioni locali, ipotesi del manifold e model selection",
+      "tts_text": "Colleghiamo ora il bias composizionale al problema classico della maledizione della dimensionalità. [pause:0.6] Molti algoritmi di apprendimento tradizionali si basano su approssimazioni locali, cioè su un prior di smoothness locale: pensiamo al K-NN, ai kernel locali o agli alberi di decisione. Per distinguere O grande di k regioni diverse dello spazio di input, questi metodi richiedono O grande di k esempi di addestramento. In alta dimensione, dove il volume cresce esponenzialmente, servirebbero quindi quantità proibitive di esempi per coprire lo spazio. [pause:0.8] Come si può invece distinguere un numero esponenziale di regioni in k disponendo soltanto di O grande di k esempi, realizzando cioè una generalizzazione non locale? Servono ipotesi strutturali aggiuntive sulla distribuzione dei dati, come vedremo in modo concreto anche con le rappresentazioni distribuite. [pause:0.7] Il deep learning sceglie esattamente un bias generale legato alla composizione di funzioni: assume che i dati siano generati dalla composizione di fattori su più livelli. Quando questa ipotesi è verificata, si ottiene un guadagno potenzialmente esponenziale nel rapporto tra numero di esempi necessari e numero di regioni distinguibili. [pause:0.8] A questo si collega l'osservazione geometrica sulla varietà, o manifold: la distribuzione delle immagini e dei testi reali sembra concentrata su una superficie di dimensione molto più bassa rispetto allo spazio ambiente, occupando solo una piccolissima frazione del volume di tutte le immagini o i testi teoricamente possibili. [pause:0.8] Nella pratica, quanti strati e quante unità dobbiamo scegliere? Non esiste una formula universale: è un problema di model selection. Le reti profonde usano spesso meno unità per strato, quindi meno parametri e meno dati per generalizzare, ma avere molti strati rende l'ottimizzazione più difficile. Con modelli così articolati, l'esperienza conta molto nello stabilire gli aspetti architetturali.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.2.2 · Maledizione della dimensionalità e bias</div>\n  <h2 class=\"slide-title\">Oltre le approssimazioni locali: composizione e varietà</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Learner locali (smoothness locale)</div>\n      <p><strong>K-NN</strong>, kernel locali, alberi di decisione: per distinguere \\(O(k)\\) regioni servono \\(O(k)\\) esempi. In alta dimensione soccombono alla <strong>maledizione della dimensionalità</strong>.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Generalizzazione non locale (DL)</div>\n      <p>Con il bias di <strong>composizione di fattori su più livelli</strong>, si può ottenere un guadagno <strong>potenzialmente esponenziale</strong> tra numero di esempi \\(O(k)\\) e regioni distinguibili.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Ipotesi della varietà (manifold)</div>\n    <p>Immagini e testi reali non riempiono lo spazio ambiente: sono concentrati su una <strong>varietà di dimensione molto più bassa</strong>, una piccolissima frazione di tutte le configurazioni possibili.</p>\n  </div>\n  <div id=\"s4\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Quanti strati e quante unità? → Model selection</div>\n    <p>Nessuna risposta generale: reti profonde usano spesso meno unità per strato (meno parametri/dati), ma sono <strong>più difficili da ottimizzare</strong>. L'esperienza architetturale resta decisiva.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "si basano su approssimazioni locali",
+          "at": 7.5
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "generalizzazione non locale",
+          "at": 43.8
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "osservazione geometrica sulla varietà",
+          "at": 76.0
+        },
+        {
+          "action": "show",
+          "target": "#s4",
+          "anchor": "quanti strati e quante unità",
+          "at": 95.5
+        }
+      ],
+      "duration_sec": 119.6,
+      "id": "scene-07",
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json"
+    },
+    {
+      "section": "15.3 Representation learning",
+      "title": "Apprendere automaticamente buone rappresentazioni",
+      "tts_text": "Passiamo ora a un pilastro concettuale che sottende l'intero deep learning: il representation learning. [pause:0.6] La definizione formale è chiara: il representation learning è l'insieme dei metodi che permettono a una macchina di ricevere dati grezzi e scoprire automaticamente le rappresentazioni necessarie per il rilevamento o la classificazione. [pause:0.7] I metodi di deep learning sono precisamente metodi di representation learning organizzati su più livelli di rappresentazione. Tuttavia il concetto vale più in generale per molte reti neurali, ed è particolarmente prezioso quando lavoriamo con dati grezzi come immagini o testo. [pause:0.8] Perché la rappresentazione è così decisiva? Perché moltissimi compiti risultano facili oppure difficilissimi a seconda di come l'informazione viene codificata. Nel Machine Learning una buona rappresentazione è esattamente quella che rende più facile il compito di apprendimento successivo. [pause:0.8] Confrontiamo due approcci. Progettare le feature a mano è laborioso ed equivale a fissare manualmente le funzioni base phi di x in una Linear Basis Expansion. Al contrario, l'addestramento supervisionato di un Multi-Layer Perceptron produce automaticamente una rappresentazione parametrica phi di x virgola w in ogni strato nascosto, appresa dai dati trovando il miglior vettore dei pesi w. [pause:0.8] Ma l'addestramento supervisionato end-to-end di MLP e CNN non è l'unica via. Le rappresentazioni nascoste si possono anche ottenere tramite apprendimento non supervisionato, con il pre-training, e si possono poi sfruttare e trasferire su compiti nuovi, con il transfer learning: li analizziamo subito nelle prossime scene.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.3 · Representation learning</div>\n  <h2 class=\"slide-title\">Scoprire rappresentazioni utili direttamente dai dati grezzi</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Representation learning</div>\n    <p>Insieme dei metodi che permettono a una macchina di ricevere <strong>dati grezzi</strong> (immagini, testo) e <strong>scoprire automaticamente le rappresentazioni</strong> necessarie per rilevamento o classificazione.</p>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Che cos'è una buona rappresentazione?</div>\n    <p>Molti compiti sono facili o difficilissimi a seconda della codifica: nel ML una <strong>buona rappresentazione</strong> è quella che <strong>rende più facile il compito di apprendimento successivo</strong>.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-muted\">\n      <div class=\"box-label\">Feature a mano (LBE)</div>\n      <p>Scelta manuale fissa di \\(\\htmlId{f-lbe}{\\phi(\\x)}\\): richiede forte conoscenza di dominio ed è fragile su dati grezzi.</p>\n    </div>\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Rappresentazione appresa (MLP / DL)</div>\n      <p>Ogni strato nascosto apprende \\(\\htmlId{f-mlp}{\\phi(\\x,\\w)}\\) ottimizzando \\(\\w\\) dai dati.</p>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"flow-chain cue-hidden\">\n    <div class=\"flow-node\"><strong>End-to-end</strong><span>MLP / CNN supervisionati</span></div>\n    <div class=\"flow-arrow\">·</div>\n    <div class=\"flow-node flow-node-accent\"><strong>Pre-training</strong><span>non supervisionato (autoencoder)</span></div>\n    <div class=\"flow-arrow\">·</div>\n    <div class=\"flow-node flow-node-accent\"><strong>Transfer learning</strong><span>riuso su nuovi task</span></div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "definizione formale è chiara",
+          "at": 7.1
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Perché la rappresentazione è così decisiva",
+          "at": 38.8
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Progettare le feature a mano",
+          "at": 56.8
+        },
+        {
+          "action": "highlight",
+          "target": "#f-lbe",
+          "anchor": "phi di x",
+          "at": 62.9
+        },
+        {
+          "action": "highlight",
+          "target": "#f-mlp",
+          "anchor": "phi di x virgola w",
+          "at": 72.3
+        },
+        {
+          "action": "show",
+          "target": "#s4",
+          "anchor": "ottenere tramite apprendimento non supervisionato",
+          "at": 89.8
+        }
+      ],
+      "duration_sec": 102.5,
+      "id": "scene-08",
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json"
+    },
+    {
+      "section": "15.3.1 Pre-training e autoencoder",
+      "title": "Autoencoder: undercomplete, overcomplete e denoising",
+      "tts_text": "Storicamente, il pre-training non supervisionato strato per strato è stato il primo approccio capace di rendere addestrabili le reti profonde, a parte le CNN e le RNN. L'idea era catturare la distribuzione dell'input uno strato alla volta per inizializzare la rete, invece di addestrarla subito end-to-end con la discesa del gradiente. [pause:0.8] Lo strumento protagonista di questa idea è l'autoencoder. Per definizione, un autoencoder è una rete neurale addestrata a copiare il proprio input in uscita. Possiede uno strato nascosto h che descrive un codice dell'input, ed è composto da due moduli: un encoder che calcola il codice h uguale a f di x, e un decoder che produce la ricostruzione r uguale a g di h, cercando di ottenere r circa uguale a x. Non servono etichette: è puro apprendimento non supervisionato. [pause:0.8] Per evitare che la rete impari la banale funzione identità senza estrarre nulla di utile, si usano tre varianti principali. [pause:0.6] Prima variante: autoencoder undercomplete. Lo strato nascosto h è più piccolo dell'input, come mostrato nel diagramma a collo di bottiglia. Questo vincolo architetturale forza la rete a catturare solo le feature più salienti per ricostruire x. Un collegamento notevole: se il decoder è lineare e la loss è quadratica, l'autoencoder undercomplete recupera esattamente la PCA, cioè la Principal Component Analysis, la classica proiezione lineare sulle direzioni di massima varianza. [pause:0.8] Seconda variante: autoencoder overcomplete. Qui lo strato nascosto è più grande dell'input, ma si aggiunge una regolarizzazione che impone sparsità, robustezza al rumore o altre proprietà strutturali, impedendo la copia banale. [pause:0.7] Terza variante: denoising autoencoder. La rete viene addestrata a ricostruire l'input pulito a partire da una sua versione corrotta da rumore: una buona rappresentazione si ottiene così in modo robusto dal segnale corrotto e permette di recuperare il dato pulito.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.3.1 · Pre-training e autoencoder</div>\n  <h2 class=\"slide-title\">Architettura dell'autoencoder e le tre varianti</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione · Autoencoder (non supervisionato)</div>\n        <p>Rete addestrata a <strong>copiare il proprio input</strong> in uscita tramite un codice nascosto \\(\\h\\):</p>\n        <p style=\"margin-top:5px;\">\\(\\htmlId{f-enc}{\\text{Encoder: }\\h = f(\\x)}, \\qquad \\htmlId{f-dec}{\\text{Decoder: }\\vv{r} = g(\\h) \\approx \\x}\\)</p>\n      </div>\n      <div id=\"s3\" class=\"box box-primary cue-hidden\">\n        <div class=\"box-label\">1. Undercomplete (\\(\\dim \\h \\lt \\dim \\x\\))</div>\n        <p>Il collo di bottiglia forza a estrarre le feature salienti. Con <strong>decoder lineare e loss quadratica</strong> si ottiene la <strong>PCA</strong> (direzioni di massima varianza).</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 430 226\" class=\"diagram-svg\" aria-label=\"Autoencoder undercomplete: encoder, codice compresso e decoder\">\n<line x1=\"79\" y1=\"36\" x2=\"205\" y2=\"78\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"36\" x2=\"205\" y2=\"106\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"36\" x2=\"205\" y2=\"134\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"64\" x2=\"205\" y2=\"78\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"64\" x2=\"205\" y2=\"106\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"64\" x2=\"205\" y2=\"134\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"92\" x2=\"205\" y2=\"78\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"92\" x2=\"205\" y2=\"106\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"92\" x2=\"205\" y2=\"134\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"120\" x2=\"205\" y2=\"78\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"120\" x2=\"205\" y2=\"106\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"120\" x2=\"205\" y2=\"134\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"148\" x2=\"205\" y2=\"78\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"148\" x2=\"205\" y2=\"106\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"148\" x2=\"205\" y2=\"134\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"176\" x2=\"205\" y2=\"78\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"176\" x2=\"205\" y2=\"106\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"79\" y1=\"176\" x2=\"205\" y2=\"134\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"78\" x2=\"351\" y2=\"36\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"78\" x2=\"351\" y2=\"64\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"78\" x2=\"351\" y2=\"92\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"78\" x2=\"351\" y2=\"120\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"78\" x2=\"351\" y2=\"148\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"78\" x2=\"351\" y2=\"176\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"106\" x2=\"351\" y2=\"36\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"106\" x2=\"351\" y2=\"64\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"106\" x2=\"351\" y2=\"92\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"106\" x2=\"351\" y2=\"120\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"106\" x2=\"351\" y2=\"148\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"106\" x2=\"351\" y2=\"176\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"134\" x2=\"351\" y2=\"36\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"134\" x2=\"351\" y2=\"64\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"134\" x2=\"351\" y2=\"92\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"134\" x2=\"351\" y2=\"120\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"134\" x2=\"351\" y2=\"148\" stroke=\"#999999\" stroke-width=\"1\"/>\n<line x1=\"225\" y1=\"134\" x2=\"351\" y2=\"176\" stroke=\"#999999\" stroke-width=\"1\"/>\n<circle cx=\"70\" cy=\"36\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"70\" cy=\"64\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"70\" cy=\"92\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"70\" cy=\"120\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"70\" cy=\"148\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"70\" cy=\"176\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"215\" cy=\"78\" r=\"10\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"2.2\"/>\n<circle cx=\"215\" cy=\"106\" r=\"10\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"2.2\"/>\n<circle cx=\"215\" cy=\"134\" r=\"10\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"2.2\"/>\n<circle cx=\"360\" cy=\"36\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"360\" cy=\"64\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"360\" cy=\"92\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"360\" cy=\"120\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"360\" cy=\"148\" r=\"9\" class=\"svg-node\"/>\n<circle cx=\"360\" cy=\"176\" r=\"9\" class=\"svg-node\"/>\n<text x=\"70\" y=\"18\" text-anchor=\"middle\" class=\"svg-math\" font-weight=\"700\">x</text>\n<text x=\"215\" y=\"54\" text-anchor=\"middle\" class=\"svg-math svg-blue\" font-weight=\"700\">h</text>\n<text x=\"215\" y=\"164\" text-anchor=\"middle\" class=\"svg-caption svg-blue\">collo di bottiglia</text>\n<text x=\"360\" y=\"18\" text-anchor=\"middle\" class=\"svg-math\" font-weight=\"700\">r ≈ x</text>\n<text x=\"142\" y=\"212\" text-anchor=\"middle\" class=\"svg-legend\">encoder f</text>\n<text x=\"288\" y=\"212\" text-anchor=\"middle\" class=\"svg-legend\">decoder g</text>\n</svg>\n    </div>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s4\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">2. Overcomplete (\\(\\dim \\h \\gt \\dim \\x\\))</div>\n      <p>Strato nascosto più grande dell'input, abbinato a <strong>regolarizzazione</strong> (sparsità, robustezza al rumore, …) per impedire la copia banale.</p>\n    </div>\n    <div id=\"s5\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">3. Denoising autoencoder</div>\n      <p>Addestrato a ricostruire l'<strong>input pulito</strong> da una versione <strong>corrotta</strong>: apprende rappresentazioni robuste al rumore.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Per definizione, un autoencoder",
+          "at": 27.3
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "composto da due moduli",
+          "at": 39.2
+        },
+        {
+          "action": "highlight",
+          "target": "#f-enc",
+          "anchor": "h uguale a f di x",
+          "at": 43.2
+        },
+        {
+          "action": "highlight",
+          "target": "#f-dec",
+          "anchor": "r uguale a g di h",
+          "at": 48.6
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Prima variante: autoencoder undercomplete",
+          "at": 67.1
+        },
+        {
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Seconda variante: autoencoder overcomplete",
+          "at": 96.9
+        },
+        {
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Terza variante: denoising autoencoder",
+          "at": 110.6
+        }
+      ],
+      "duration_sec": 128.2,
+      "id": "scene-09",
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json"
+    },
+    {
+      "section": "15.3.1 Pre-training strato per strato",
+      "title": "Algoritmo di pre-training, effetti e architetture moderne",
+      "tts_text": "Vediamo ora passo per passo l'algoritmo di pre-training strato per strato con gli autoencoder. [pause:0.6] Passo uno: si addestra il primo strato come autoassociatore, minimizzando l'errore di ricostruzione dell'input grezzo; per questa fase bastano esempi non etichettati. Passo due: si prendono le uscite delle unità nascoste del primo strato e le si usano come input di un secondo strato, addestrato anch'esso come autoassociatore. Passo tre: si ripete il procedimento impilando strati fino alla profondità desiderata. Passo quattro: si collega l'uscita dell'ultimo strato nascosto a uno strato finale supervisionato. Passo cinque: si esegue il fine-tuning di tutti i parametri dell'intera rete rispetto al criterio supervisionato. [pause:0.8] Perché questo procedimento funzionava così bene? Per due meccanismi distinti. Primo, agisce come inizializzazione: porta i parametri in una regione favorevole dello spazio dei pesi, da cui la discesa locale raggiunge un buon ottimo. Secondo, agisce come regolarizzazione: non nel senso di imporre un modello più semplice, ma vincolando le feature a catturare le regolarità della distribuzione degli input, riducendo inoltre la varianza della stima. [pause:0.8] Qual è il suo ruolo oggi? Per l'addestramento da zero il pre-training strato per strato è largamente abbandonato, perché le tecniche moderne bastano per un ottimo addestramento end-to-end. Resta però preziosissimo ovunque permetta di sfruttare enormi quantità di dati non etichettati, come nel Natural Language Processing. [pause:0.7] Da questa famiglia nascono inoltre architetture chiave del deep learning moderno: gli autoencoder variazionali, in cui lo spazio latente è una distribuzione di probabilità; le architetture encoder-decoder, usate per la traduzione automatica; e i transformer, impiegati con il solo encoder in modelli come BERT, oppure con il solo decoder per la generazione autoregressiva come in GPT.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.3.1 · Pre-training strato per strato</div>\n  <h2 class=\"slide-title\">Algoritmo, doppio effetto e sviluppi moderni</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo · Pre-training strato per strato</div>\n    <ol class=\"algo-list\">\n      <li id=\"pt1\">Addestrare il 1° strato come <strong>autoassociatore</strong> sull'input grezzo (solo dati non etichettati).</li>\n      <li id=\"pt2\">Usare le uscite nascoste come input dello strato successivo, anch'esso autoassociatore.</li>\n      <li id=\"pt3\">Ripetere fino al numero di strati desiderato.</li>\n      <li id=\"pt4\">Collegare l'ultimo strato nascosto a uno <strong>strato supervisionato</strong>.</li>\n      <li id=\"pt5\">Eseguire il <strong>fine-tuning</strong> di tutti i parametri rispetto al criterio supervisionato.</li>\n    </ol>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Due meccanismi d'azione</div>\n      <ul class=\"clean-list\">\n        <li><strong>Inizializzazione:</strong> porta i pesi in un bacino buono per la discesa locale.</li>\n        <li><strong>Regolarizzazione:</strong> feature legate alla distribuzione di \\(P(\\x)\\) e riduzione della <strong>varianza</strong>.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Oggi e architetture collegate</div>\n      <p>Abbandonato da zero (oggi basta l'end-to-end), ma vitale per grandi dati non etichettati (<strong>NLP</strong>). Famiglie derivate: <strong>VAE</strong> (latente = distribuzione), <strong>encoder-decoder</strong> (traduzione), <strong>Transformer</strong> (solo encoder: <strong>BERT</strong>; solo decoder autoregressivo: <strong>GPT</strong>).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "algoritmo di pre-training strato per strato",
+          "at": 2.4
+        },
+        {
+          "action": "highlight",
+          "target": "#pt1",
+          "anchor": "Passo uno",
+          "at": 7.1
+        },
+        {
+          "action": "highlight",
+          "target": "#pt2",
+          "anchor": "Passo due",
+          "at": 16.9
+        },
+        {
+          "action": "highlight",
+          "target": "#pt4",
+          "anchor": "Passo quattro",
+          "at": 32.8
+        },
+        {
+          "action": "highlight",
+          "target": "#pt5",
+          "anchor": "Passo cinque",
+          "at": 39.0
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per due meccanismi distinti",
+          "at": 49.6
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "ruolo oggi",
+          "at": 76.1
+        }
+      ],
+      "duration_sec": 119.6,
+      "id": "scene-10",
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json"
+    },
+    {
+      "section": "15.3.2 Transfer learning",
+      "title": "Trasferire rappresentazioni tra task e riusare CNN pre-addestrate",
+      "tts_text": "Una volta che una rete profonda ha appreso buone rappresentazioni, non siamo obbligati a buttarle via quando cambiamo problema: è il principio del transfer learning. [pause:0.7] Nel transfer learning si usa la rappresentazione appresa da un modello per migliorare le prestazioni di un altro modello. L'assunzione di fondo è che esistano feature utili e condivisibili tra contesti o task diversi. [pause:0.7] In pratica il transfer learning assume quattro forme principali. Prima: il passaggio da un autoencoder non supervisionato a un classificatore supervisionato. Seconda: il multi-task learning, in cui si condividono gli stessi input per predire target diversi; condividere le rappresentazioni interne agisce qui come una potente regolarizzazione implicita. Terza: la domain adaptation, in cui cambiano i domini di input ma esistono feature strutturali condivise. Quarta, oggi diffusissima: il riuso diretto di modelli pre-addestrati su dataset molto più grandi. [pause:0.8] Vediamo l'esempio emblematico del riuso di una rete convoluzionale pre-addestrata. Supponiamo di avere una CNN già addestrata su circa un milione e duecentomila immagini suddivise in mille categorie. Questa rete ha già appreso rappresentazioni visive ricchissime, con primitive di basso e medio livello condivise tra immagini di natura diversa. [pause:0.7] Per affrontare un nuovo task visivo con poche immagini etichettate, abbiamo due strategie: sostituire gli ultimi strati di classificazione e addestrare solo quelli tenendo fissa la parte iniziale, oppure procedere con il fine-tuning dell'intera rete per adattare leggermente anche le feature pre-esistenti.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.3.2 · Transfer learning</div>\n  <h2 class=\"slide-title\">Riusare rappresentazioni condivise tra task e domini</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Principio del transfer learning</div>\n    <p>Si utilizza la <strong>rappresentazione appresa da un modello</strong> per migliorarne un altro, assumendo che esistano <strong>feature utili condivise</strong> tra contesti o task diversi.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Quattro forme principali</div>\n      <ul class=\"clean-list\">\n        <li>Dall'<strong>autoencoder</strong> al classificatore.</li>\n        <li><strong>Multi-task learning</strong>: stessi input, target diversi (regolarizzazione implicita).</li>\n        <li><strong>Domain adaptation</strong>: domini diversi con feature condivise.</li>\n        <li>Riuso di <strong>modelli pre-addestrati</strong> su dataset più grandi.</li>\n      </ul>\n    </div>\n    <div class=\"box box-idea\">\n      <div class=\"box-label\">Esempio · CNN pre-addestrata</div>\n      <p>CNN addestrata su <strong>~1,2 milioni</strong> di immagini in <strong>1000 categorie</strong> \\(\\Rightarrow\\) primitive di basso livello condivise. Sul nuovo task con pochi dati: si <strong>sostituiscono gli ultimi strati</strong> addestrando solo quelli, oppure si fa <strong>fine-tuning</strong> di tutta la rete.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 660 156\" class=\"diagram-svg\" aria-label=\"Riuso di una CNN pre-addestrata per transfer learning\">\n  <defs>\n    <marker id=\"arr-tf\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n    </marker>\n    <marker id=\"arr-tfr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n    </marker>\n  </defs>\n  <!-- Pretrained backbone -->\n  <rect x=\"14\" y=\"18\" width=\"388\" height=\"104\" rx=\"10\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.8\" stroke-dasharray=\"6 4\"/>\n  <text x=\"208\" y=\"38\" text-anchor=\"middle\" class=\"svg-caption svg-blue\" font-weight=\"700\">Backbone CNN pre-addestrata (1,2M immagini · 1000 classi)</text>\n  <rect x=\"28\" y=\"50\" width=\"96\" height=\"54\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n  <text x=\"76\" y=\"74\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">Strati bassi</text>\n  <text x=\"76\" y=\"90\" text-anchor=\"middle\" class=\"svg-caption\">bordi, texture</text>\n  <line x1=\"124\" y1=\"77\" x2=\"152\" y2=\"77\" stroke=\"#1F5A9E\" stroke-width=\"1.8\" marker-end=\"url(#arr-tf)\"/>\n  <rect x=\"154\" y=\"50\" width=\"104\" height=\"54\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n  <text x=\"206\" y=\"74\" text-anchor=\"middle\" class=\"svg-legend\" font-weight=\"600\">Strati medi</text>\n  <text x=\"206\" y=\"90\" text-anchor=\"middle\" class=\"svg-caption\">motivi, parti</text>\n  <line x1=\"258\" y1=\"77\" x2=\"286\" y2=\"77\" stroke=\"#1F5A9E\" stroke-width=\"1.8\" marker-end=\"url(#arr-tf)\"/>\n  <rect x=\"288\" y=\"50\" width=\"100\" height=\"54\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"1.8\"/>\n  <text x=\"338\" y=\"74\" text-anchor=\"middle\" class=\"svg-legend svg-blue\" font-weight=\"600\">Feature h</text>\n  <text x=\"338\" y=\"90\" text-anchor=\"middle\" class=\"svg-caption\">condivise</text>\n\n  <!-- Replaced head -->\n  <line x1=\"402\" y1=\"77\" x2=\"438\" y2=\"77\" stroke=\"#C0392B\" stroke-width=\"2.2\" marker-end=\"url(#arr-tfr)\"/>\n  <rect x=\"440\" y=\"34\" width=\"206\" height=\"84\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"2.2\"/>\n  <text x=\"543\" y=\"61\" text-anchor=\"middle\" class=\"svg-legend svg-red\" font-weight=\"700\">Nuovi ultimi strati</text>\n  <text x=\"543\" y=\"81\" text-anchor=\"middle\" class=\"svg-caption\">addestrati su poche immagini</text>\n  <text x=\"543\" y=\"99\" text-anchor=\"middle\" class=\"svg-caption\">del nuovo task (+ ev. fine-tuning)</text>\n\n  <text x=\"208\" y=\"142\" text-anchor=\"middle\" class=\"svg-caption\">pesi congelati oppure aggiornati con fine-tuning globale</text>\n</svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Nel transfer learning si usa",
+          "at": 10.9
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "assume quattro forme principali",
+          "at": 27.9
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "esempio emblematico del riuso",
+          "at": 59.8
+        }
+      ],
+      "duration_sec": 99.6,
+      "id": "scene-11",
+      "audio_file": "audio/scene-11.wav",
+      "subtitle_file": "subtitles/scene-11.json"
+    },
+    {
+      "section": "15.4 Rappresentazioni distribuite",
+      "title": "Simbolica (one-hot) contro distribuita: contare la differenza",
+      "tts_text": "Veniamo a un altro concetto cardine del deep learning: le rappresentazioni distribuite. [pause:0.6] Per definizione, in una rappresentazione distribuita gli elementi, cioè le feature, non sono mutuamente esclusivi: le loro molte combinazioni di attivazione corrispondono alle variazioni osservate nei dati. [pause:0.7] Mettiamola a confronto con una rappresentazione simbolica, detta anche localista o one-hot. Nella codifica one-hot una sola unità vale uno e tutte le altre valgono zero: di conseguenza la distanza euclidea tra due concetti diversi qualsiasi è sempre radice quadrata di due, senza alcuna nozione di somiglianza. In una rappresentazione distribuita, invece, usiamo vettori densi di numeri reali: ogni concetto corrisponde all'insieme delle attivazioni di tutte le unità, la similarità si può condividere tra più di due concetti, si condividono feature apprese e la distanza nello spazio riflette il significato. [pause:0.8] Un punto metodologico importante: qui non stiamo classificando, stiamo rappresentando, e l'apprendimento agisce sulla rappresentazione interna. In ingresso si fornisce una rappresentazione distribuita solo se la conoscenza di dominio permette di fissarla correttamente, perché fissarla arbitrariamente può danneggiare il task. Di solito si passa un input one-hot e si lascia che il modello sviluppi internamente la propria rappresentazione distribuita. [pause:0.8] Contiamo ora la differenza in capacità espressiva. Consideriamo quattro concetti: auto blu, bici blu, auto rossa e bici rossa. In one-hot servono quattro unità; in una rappresentazione distribuita bastano due unità, due alla seconda concetti, una per il colore e una per il tipo, così l'unità del rosso impara il rosso sia dalle auto sia dalle bici. In generale, con n feature ciascuna a k valori, una rappresentazione distribuita descrive k alla n concetti contro i soli n di una one-hot: assegna quindi un codice a un numero esponenziale di regioni. [pause:0.7] Al contrario, diversi modelli classici non sono distribuiti: il K-NN usa uno o pochi prototipi per input, i kernel RBF stretti si riducono al K-NN, e lo stesso vale per le miscele di gaussiane e per gli alberi di decisione, dove si attiva una sola foglia per ogni esempio.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.4 · Rappresentazioni distribuite</div>\n  <h2 class=\"slide-title\">One-hot vs distribuita e guadagno esponenziale \\(k^n\\)</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Rappresentazione distribuita</div>\n    <p>Gli elementi (le feature) <strong>non sono mutuamente esclusivi</strong>: le loro molte configurazioni corrispondono alle variazioni osservate nei dati. Si lascia al modello apprenderla <strong>internamente</strong> (di solito da input one-hot).</p>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Simbolica (one-hot)</th><th>Distribuita</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"r-d1\"><td>Una sola unità vale \\(1\\), le altre \\(0\\).</td><td><strong>Vettori di numeri reali</strong> (densi).</td></tr>\n      <tr id=\"r-d2\"><td>Distanza sempre \\(\\sqrt{2}\\) tra concetti diversi.</td><td>Ogni concetto è l'insieme delle attivazioni di <strong>tutte</strong> le unità.</td></tr>\n      <tr id=\"r-d3\"><td>Nessuna condivisione tra concetti.</td><td>Similarità condivisa tra più concetti; la <strong>distanza riflette il significato</strong>.</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Contare la differenza</div>\n      <p>Auto/bici blu/rossa: <strong>4</strong> unità one-hot vs <strong>2</strong> distribuite (colore + tipo). Con \\(n\\) feature a \\(k\\) valori: \\(\\htmlId{f-kn}{k^n}\\) concetti contro \\(n\\).</p>\n    </div>\n    <div class=\"box box-warn\">\n      <div class=\"box-label\">Modelli NON distribuiti</div>\n      <p><strong>K-NN</strong> (pochi prototipi), <strong>kernel RBF stretti</strong>, <strong>miscele di gaussiane</strong> e <strong>alberi di decisione</strong> (si attiva una sola foglia).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Per definizione, in una rappresentazione distribuita",
+          "at": 5.5
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "rappresentazione simbolica",
+          "at": 19.3
+        },
+        {
+          "action": "highlight",
+          "target": "#r-d2",
+          "anchor": "radice quadrata di due",
+          "at": 33.5
+        },
+        {
+          "action": "highlight",
+          "target": "#r-d3",
+          "anchor": "distanza nello spazio riflette il significato",
+          "at": 52.7
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Contiamo ora la differenza",
+          "at": 81.7
+        },
+        {
+          "action": "highlight",
+          "target": "#f-kn",
+          "anchor": "k alla n concetti",
+          "at": 111.1
+        }
+      ],
+      "duration_sec": 142.4,
+      "id": "scene-12",
+      "audio_file": "audio/scene-12.wav",
+      "subtitle_file": "subtitles/scene-12.json"
+    },
+    {
+      "section": "15.4 Attributi condivisi e doppio vantaggio",
+      "title": "Disentangling, word embedding e i due vantaggi esponenziali",
+      "tts_text": "Perché condividere attributi in una rappresentazione distribuita cambia così radicalmente la capacità di generalizzare? [pause:0.6] Consideriamo l'idea degli attributi condivisi e del disentangling, cioè la separazione dei fattori di variazione. Se la rete separa internamente il concetto di colore e il concetto di tipo di veicolo, impara a distinguere auto da bici e rosso da blu senza aver bisogno di vedere esempi di tutte le combinazioni possibili. Così, avendo osservato auto rossa, bici rossa e auto blu, la rete tratta subito in modo naturale la bici blu, che per una rappresentazione one-hot sarebbe invece un concetto completamente nuovo e distante radice quadrata di due da tutti gli altri. [pause:0.8] Lo stesso meccanismo opera nel linguaggio naturale con il word embedding. In una rappresentazione distribuita in cui cane e gatto condividono molte feature latenti, le due parole vengono elaborate in modo simile: ciò che la rete impara dalle frasi con gatto informa automaticamente anche le frasi con cane. Il modello scopre da solo che sono simili perché compaiono in contesti simili. Mentre nello spazio one-hot ogni parola è a distanza radice quadrata di due da tutte le altre, nello spazio appreso parole di significato affine, come nomi di paesi o gli anni, diventano vicine tra loro. [pause:0.8] C'è però un rovescio della medaglia: l'interpretabilità. Una rappresentazione distribuita è molto meno immediata da interpretare per un essere umano rispetto a una rappresentazione localista, dove ogni unità corrisponde a un singolo concetto. [pause:0.7] Tirando le somme, il deep learning sfrutta rappresentazioni distribuite attraverso molti strati: la composizionalità aggiunge un ulteriore guadagno di efficienza statistica. Disponiamo quindi di due vantaggi potenzialmente esponenziali rispetto ai modelli non distribuiti e superficiali.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.4 · Attributi condivisi e word embedding</div>\n  <h2 class=\"slide-title\">Disentangling, generalizzazione combinatoria e doppio vantaggio</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 600 202\" class=\"diagram-svg\" aria-label=\"Confronto tra rappresentazione one-hot e attributi condivisi distribuiti\">\n  <!-- Left: One-hot -->\n  <rect x=\"10\" y=\"10\" width=\"268\" height=\"182\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n  <text x=\"144\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"700\">One-hot: 4 unità indipendenti</text>\n  <line x1=\"88\" y1=\"76\" x2=\"200\" y2=\"76\" stroke=\"#999999\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"88\" y1=\"146\" x2=\"200\" y2=\"146\" stroke=\"#999999\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"88\" y1=\"76\" x2=\"88\" y2=\"146\" stroke=\"#999999\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"200\" y1=\"76\" x2=\"200\" y2=\"146\" stroke=\"#999999\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"88\" y1=\"76\" x2=\"200\" y2=\"146\" stroke=\"#999999\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"200\" y1=\"76\" x2=\"88\" y2=\"146\" stroke=\"#999999\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <circle cx=\"88\" cy=\"76\" r=\"5\" class=\"pt-pos\"/>\n  <circle cx=\"200\" cy=\"76\" r=\"5\" class=\"pt-pos\"/>\n  <circle cx=\"88\" cy=\"146\" r=\"5\" class=\"pt-pos\"/>\n  <circle cx=\"200\" cy=\"146\" r=\"5.5\" class=\"pt-neg\"/>\n  <text x=\"88\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">auto rossa</text>\n  <text x=\"200\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">bici rossa</text>\n  <text x=\"88\" y=\"167\" text-anchor=\"middle\" class=\"svg-tick\">auto blu</text>\n  <text x=\"200\" y=\"167\" text-anchor=\"middle\" class=\"svg-tick svg-red\">bici blu (?)</text>\n  <text x=\"144\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">ogni coppia a distanza √2</text>\n\n  <!-- Right: Distributed disentangled -->\n  <rect x=\"306\" y=\"10\" width=\"284\" height=\"182\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"1.4\"/>\n  <text x=\"448\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption svg-blue\" font-weight=\"700\">Distribuita: 2 attributi condivisi</text>\n  <line x1=\"352\" y1=\"158\" x2=\"554\" y2=\"158\" class=\"svg-axis\"/>\n  <line x1=\"352\" y1=\"158\" x2=\"352\" y2=\"48\" class=\"svg-axis\"/>\n  <text x=\"556\" y=\"162\" class=\"svg-caption\">tipo</text>\n  <text x=\"352\" y=\"42\" text-anchor=\"middle\" class=\"svg-caption\">colore</text>\n  <text x=\"404\" y=\"176\" text-anchor=\"middle\" class=\"svg-tick\">auto</text>\n  <text x=\"504\" y=\"176\" text-anchor=\"middle\" class=\"svg-tick\">bici</text>\n  <text x=\"344\" y=\"132\" text-anchor=\"end\" class=\"svg-tick\">blu</text>\n  <text x=\"344\" y=\"76\" text-anchor=\"end\" class=\"svg-tick\">rosso</text>\n  <line x1=\"404\" y1=\"72\" x2=\"504\" y2=\"72\" stroke=\"#1F5A9E\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"404\" y1=\"128\" x2=\"504\" y2=\"128\" stroke=\"#2E7D32\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"404\" y1=\"72\" x2=\"404\" y2=\"128\" stroke=\"#1F5A9E\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"504\" y1=\"72\" x2=\"504\" y2=\"128\" stroke=\"#2E7D32\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/>\n  <circle cx=\"404\" cy=\"72\" r=\"5\" class=\"pt-pos\"/>\n  <circle cx=\"504\" cy=\"72\" r=\"5\" class=\"pt-pos\"/>\n  <circle cx=\"404\" cy=\"128\" r=\"5\" class=\"pt-pos\"/>\n  <circle cx=\"504\" cy=\"128\" r=\"6\" fill=\"#2E7D32\"/>\n  <text x=\"404\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">auto rossa</text>\n  <text x=\"504\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">bici rossa</text>\n  <text x=\"404\" y=\"145\" text-anchor=\"middle\" class=\"svg-tick\">auto blu</text>\n  <text x=\"504\" y=\"145\" text-anchor=\"middle\" class=\"svg-tick svg-green\" font-weight=\"700\">bici blu (nota!)</text>\n</svg>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea · Attributi condivisi e word embedding</div>\n    <p>Separando (<em>disentangling</em>) colore e tipo si riconosce la <strong>bici blu</strong> senza averla vista. Nei <strong>word embedding</strong>, «cane» e «gatto» condividono feature perché compaiono in contesti simili: dallo spazio one-hot (distanza \\(\\sqrt{2}\\)) si passa a uno spazio dove paesi, anni e concetti affini sono vicini.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-warn\">\n      <div class=\"box-label\">Rovescio della medaglia</div>\n      <p>Minore <strong>interpretabilità</strong> rispetto a una rappresentazione localista.</p>\n    </div>\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Due vantaggi potenzialmente esponenziali</div>\n      <p><strong>Rappresentazioni distribuite</strong> (\\(k^n\\)) + <strong>composizionalità su molti strati</strong> rispetto a modelli non distribuiti e shallow.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "disentangling",
+          "at": 9.6
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "word embedding",
+          "at": 49.6
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "rovescio della medaglia",
+          "at": 87.9
+        }
+      ],
+      "duration_sec": 116.4,
+      "id": "scene-13",
+      "audio_file": "audio/scene-13.wav",
+      "subtitle_file": "subtitles/scene-13.json"
+    },
+    {
+      "section": "15.5 Altri risultati recenti",
+      "title": "Smoothness implicita, double descent, ridondanza e lottery ticket",
+      "tts_text": "La teoria classica dell'apprendimento statistico non spiega ancora tutto ciò che osserviamo sperimentalmente nelle reti profonde moderne. Passiamo in rassegna cinque risultati recenti di grande rilievo. [pause:0.7] Primo: smoothness dalla struttura. A parità di numero di parametri, le reti più profonde impongono una maggiore smoothness rispetto a quelle superficiali, perché ogni strato lavora sulla superficie già liscia prodotta dallo strato precedente: sono vincoli impliciti nell'architettura, anziché espliciti. [pause:0.7] Secondo: il puzzle del non-overfitting. Reti fortemente sovra-parametrizzate riescono ad azzerare completamente l'errore di training perfino su etichette assegnate in modo puramente casuale; eppure sui dati reali generalizzano sorprendentemente bene. Una spiegazione importante è che la discesa del gradiente imponga una regolarizzazione implicita, convergendo verso soluzioni a margine massimo analoghe a quelle delle Support Vector Machine. [pause:0.8] Terzo: il fenomeno della double descent, illustrato nel grafico. Facendo crescere la dimensione del modello, oppure dei dati o del tempo di addestramento, l'errore di test segue dapprima la classica curva a U: scende e poi risale, raggiungendo un picco attorno alla soglia di interpolazione, proprio dove l'errore di training si azzera. Oltre quella soglia, nel regime sovra-parametrizzato, l'errore di test torna sorprendentemente a scendere. Questo effetto è spesso evitato con una regolarizzazione accurata, non è ancora pienamente compreso e non riguarda necessariamente i modelli piccoli. [pause:0.8] Quarto: la ridondanza. Nei modelli profondi una gran parte dei pesi può essere predetta dagli altri oppure eliminata tramite pruning e quantizzazione senza perdere accuratezza. [pause:0.7] Quinto: la lottery ticket hypothesis. Le ottime prestazioni dipenderebbero da un'inizializzazione fortunata di una o più sotto-reti, e le reti grandi ne contengono esponenzialmente di più. Se si pota la rete e la si riaddestra partendo dalla stessa inizializzazione fortunata, si ottengono prestazioni simili: questo ci apre direttamente al tema del ruolo della casualità nel prossimo capitolo.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.5 · Altri risultati recenti</div>\n  <h2 class=\"slide-title\">Oltre la curva a U classica: fenomeni delle reti profonde</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">1. Smoothness implicita &amp; 2. Non-overfitting</div>\n        <p>A parità di parametri, più strati impongono <strong>più smoothness</strong> (vincoli impliciti). Reti sovra-parametrizzate azzerano il training error anche su <strong>etichette casuali</strong>, ma generalizzano per <strong>regolarizzazione implicita</strong> della discesa del gradiente (soluzioni a <strong>margine massimo</strong>).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">4. Ridondanza &amp; 5. Lottery ticket hypothesis</div>\n        <p>Gran parte dei pesi è eliminabile (<strong>pruning, quantizzazione</strong>). Le buone prestazioni deriverebbero da <strong>sotto-reti con inizializzazione fortunata</strong> (esponenzialmente più numerose in reti grandi), riaddestrabili da sole dalla stessa inizializzazione.</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <div>\n        <div class=\"plot-title\">3. Double descent (andamento qualitativo)</div>\n        <svg viewBox=\"0 0 436 212\" class=\"diagram-svg\" aria-label=\"Curva di double descent per training e test\"><line x1=\"44\" y1=\"176\" x2=\"416\" y2=\"176\" class=\"svg-axis\"/><line x1=\"44\" y1=\"176\" x2=\"44\" y2=\"16\" class=\"svg-axis\"/><line x1=\"184.8\" y1=\"176.0\" x2=\"184.8\" y2=\"32.2\" stroke=\"#6E6E6E\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M 54.6,110.3 L 57.0,113.5 L 59.4,116.5 L 61.9,119.4 L 64.3,122.1 L 66.7,124.7 L 69.2,127.2 L 71.6,129.5 L 74.1,131.8 L 76.5,133.9 L 78.9,136.0 L 81.4,137.9 L 83.8,139.7 L 86.3,141.5 L 88.7,143.1 L 91.1,144.7 L 93.6,146.2 L 96.0,147.7 L 98.4,149.0 L 100.9,150.3 L 103.3,151.6 L 105.8,152.8 L 108.2,153.9 L 110.6,155.0 L 113.1,156.0 L 115.5,156.9 L 118.0,157.9 L 120.4,158.7 L 122.8,159.6 L 125.3,160.4 L 127.7,161.1 L 130.1,161.8 L 132.6,162.5 L 135.0,163.2 L 137.5,163.8 L 139.9,164.4 L 142.3,164.9 L 144.8,165.5 L 147.2,166.0 L 149.7,166.5 L 152.1,166.9 L 154.5,167.4 L 157.0,167.8 L 159.4,168.2 L 161.8,168.6 L 164.3,168.9 L 166.7,169.3 L 169.2,169.6 L 171.6,169.9 L 174.0,170.2 L 176.5,170.5 L 178.9,170.7 L 181.4,171.0 L 183.8,171.2 L 186.2,173.3 L 188.7,173.3 L 191.1,173.3 L 193.5,173.3 L 196.0,173.3 L 198.4,173.3 L 200.9,173.3 L 203.3,173.3 L 205.7,173.3 L 208.2,173.3 L 210.6,173.3 L 213.0,173.3 L 215.5,173.3 L 217.9,173.3 L 220.4,173.3 L 222.8,173.3 L 225.2,173.3 L 227.7,173.3 L 230.1,173.3 L 232.6,173.3 L 235.0,173.3 L 237.4,173.3 L 239.9,173.3 L 242.3,173.3 L 244.7,173.3 L 247.2,173.3 L 249.6,173.3 L 252.1,173.3 L 254.5,173.3 L 256.9,173.3 L 259.4,173.3 L 261.8,173.3 L 264.3,173.3 L 266.7,173.3 L 269.1,173.3 L 271.6,173.3 L 274.0,173.3 L 276.4,173.3 L 278.9,173.3 L 281.3,173.3 L 283.8,173.3 L 286.2,173.3 L 288.6,173.3 L 291.1,173.3 L 293.5,173.3 L 296.0,173.3 L 298.4,173.3 L 300.8,173.3 L 303.3,173.3 L 305.7,173.3 L 308.1,173.3 L 310.6,173.3 L 313.0,173.3 L 315.5,173.3 L 317.9,173.3 L 320.3,173.3 L 322.8,173.3 L 325.2,173.3 L 327.7,173.3 L 330.1,173.3 L 332.5,173.3 L 335.0,173.3 L 337.4,173.3 L 339.8,173.3 L 342.3,173.3 L 344.7,173.3 L 347.2,173.3 L 349.6,173.3 L 352.0,173.3 L 354.5,173.3 L 356.9,173.3 L 359.3,173.3 L 361.8,173.3 L 364.2,173.3 L 366.7,173.3 L 369.1,173.3 L 371.5,173.3 L 374.0,173.3 L 376.4,173.3 L 378.9,173.3 L 381.3,173.3 L 383.7,173.3 L 386.2,173.3 L 388.6,173.3 L 391.0,173.3 L 393.5,173.3 L 395.9,173.3\" class=\"svg-curve-blue\"/><path d=\"M 54.6,89.3 L 57.0,92.7 L 59.4,95.8 L 61.9,98.7 L 64.3,101.4 L 66.7,103.9 L 69.2,106.2 L 71.6,108.4 L 74.1,110.4 L 76.5,112.2 L 78.9,114.0 L 81.4,115.6 L 83.8,117.1 L 86.3,118.5 L 88.7,119.8 L 91.1,121.0 L 93.6,122.1 L 96.0,123.2 L 98.4,124.2 L 100.9,125.1 L 103.3,126.0 L 105.8,126.8 L 108.2,127.5 L 110.6,128.2 L 113.1,128.9 L 115.5,129.5 L 118.0,130.0 L 120.4,130.6 L 122.8,131.0 L 125.3,131.4 L 127.7,131.7 L 130.1,132.0 L 132.6,132.0 L 135.0,132.0 L 137.5,131.7 L 139.9,131.2 L 142.3,130.3 L 144.8,129.1 L 147.2,127.4 L 149.7,125.1 L 152.1,122.3 L 154.5,118.8 L 157.0,114.7 L 159.4,109.9 L 161.8,104.6 L 164.3,98.9 L 166.7,92.9 L 169.2,86.9 L 171.6,81.0 L 174.0,75.7 L 176.5,71.0 L 178.9,67.4 L 181.4,64.9 L 183.8,63.8 L 186.2,64.1 L 188.7,65.8 L 191.1,68.9 L 193.5,73.1 L 196.0,78.2 L 198.4,84.0 L 200.9,90.3 L 203.3,96.7 L 205.7,103.0 L 208.2,109.0 L 210.6,114.6 L 213.0,119.6 L 215.5,124.0 L 217.9,127.7 L 220.4,130.9 L 222.8,133.4 L 225.2,135.5 L 227.7,137.1 L 230.1,138.3 L 232.6,139.3 L 235.0,140.0 L 237.4,140.6 L 239.9,141.0 L 242.3,141.3 L 244.7,141.5 L 247.2,141.8 L 249.6,141.9 L 252.1,142.1 L 254.5,142.2 L 256.9,142.4 L 259.4,142.5 L 261.8,142.6 L 264.3,142.7 L 266.7,142.8 L 269.1,143.0 L 271.6,143.1 L 274.0,143.2 L 276.4,143.3 L 278.9,143.4 L 281.3,143.5 L 283.8,143.6 L 286.2,143.8 L 288.6,143.9 L 291.1,144.0 L 293.5,144.1 L 296.0,144.2 L 298.4,144.3 L 300.8,144.5 L 303.3,144.6 L 305.7,144.7 L 308.1,144.8 L 310.6,144.9 L 313.0,145.0 L 315.5,145.1 L 317.9,145.2 L 320.3,145.4 L 322.8,145.5 L 325.2,145.6 L 327.7,145.7 L 330.1,145.8 L 332.5,145.9 L 335.0,146.0 L 337.4,146.2 L 339.8,146.3 L 342.3,146.4 L 344.7,146.5 L 347.2,146.6 L 349.6,146.7 L 352.0,146.8 L 354.5,146.9 L 356.9,147.1 L 359.3,147.2 L 361.8,147.3 L 364.2,147.4 L 366.7,147.5 L 369.1,147.6 L 371.5,147.7 L 374.0,147.9 L 376.4,148.0 L 378.9,148.1 L 381.3,148.2 L 383.7,148.3 L 386.2,148.4 L 388.6,148.5 L 391.0,148.6 L 393.5,148.8 L 395.9,148.9\" class=\"svg-curve-red\"/><text x=\"110.9\" y=\"30.9\" text-anchor=\"middle\" class=\"svg-caption\">regime classico</text><text x=\"304.4\" y=\"36.3\" text-anchor=\"middle\" class=\"svg-caption\">regime sovra-parametrizzato</text><text x=\"184.8\" y=\"191\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">soglia di interpolazione</text><text x=\"230\" y=\"207\" text-anchor=\"middle\" class=\"svg-caption\">dimensione del modello</text><text x=\"16\" y=\"98\" text-anchor=\"middle\" class=\"svg-caption\" transform=\"rotate(-90 16 98)\">errore</text><line x1=\"296\" y1=\"54\" x2=\"320\" y2=\"54\" class=\"svg-curve-blue\"/><text x=\"326\" y=\"58\" class=\"svg-legend\">training</text><line x1=\"296\" y1=\"72\" x2=\"320\" y2=\"72\" class=\"svg-curve-red\"/><text x=\"326\" y=\"76\" class=\"svg-legend\">test</text></svg>\n        <p class=\"math-note\" style=\"text-align:center;\">Picco alla soglia di interpolazione, poi nuova discesa (spesso evitabile con regolarizzazione accurata).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: smoothness dalla struttura",
+          "at": 11.7
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "fenomeno della double descent",
+          "at": 54.9
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Quarto: la ridondanza",
+          "at": 91.6
+        }
+      ],
+      "duration_sec": 127.4,
+      "id": "scene-14",
+      "audio_file": "audio/scene-14.wav",
+      "subtitle_file": "subtitles/scene-14.json"
+    },
+    {
+      "section": "15.6 Tecniche di addestramento profondo",
+      "title": "I tre fronti, le tecniche chiave e vanishing/exploding gradient",
+      "tts_text": "Veniamo ora alla domanda pratica cruciale: molti strati possono essere molto difficili da ottimizzare; quali tecniche rendono davvero addestrabili le reti profonde? [pause:0.6] L'enfasi è su tre fronti complementari: migliorare la discesa del gradiente, regolarizzare modelli grandi con molti parametri, e sfruttare nel modo migliore i dati disponibili. [pause:0.7] Le tecniche chiave essenziali si riassumono in quattro pilastri. Primo: SGD con momentum in mini-batch e decadimento del learning rate eta, oppure l'ottimizzatore Adam. Secondo: funzioni di attivazione ReLU nelle unità nascoste. Terzo: loss di massima verosimiglianza, cioè cross-entropy abbinata a softmax in uscita, anche per evitare la saturazione e i gradienti troppo piccoli. Quarto: regolarizzazione mediante early stopping, weight decay, dropout e batch normalization. [pause:0.8] Per comprendere perché queste scelte siano decisive, analizziamo l'ostacolo storico dell'ottimizzazione profonda: il vanishing e l'exploding gradient. Quando retropropaghiamo il gradiente attraverso molti strati, se i pesi sono piccoli il gradiente si riduce esponenzialmente, fenomeno aggravato dalle derivate delle sigmoidi e della tangente iperbolica che cadono nell'intervallo zero uno chiuso a destra: è il vanishing gradient. Per raggiungere gli strati vicini all'input, la regola della catena moltiplica tanti fattori minori di uno quanti sono gli strati attraversati; il delta decresce esponenzialmente con la profondità e i primi strati si addestrano lentissimamente. [pause:0.7] Se invece i pesi sono grandi, il prodotto cresce esponenzialmente e il gradiente diverge: è l'exploding gradient.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.6 · Tecniche per reti profonde</div>\n  <h2 class=\"slide-title\">Tecniche chiave e il problema del gradiente in profondità</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea · Tecniche chiave (3 fronti: discesa del gradiente, regolarizzazione, dati)</div>\n    <ul class=\"clean-list\">\n      <li><strong>SGD con momentum</strong> (mini-batch, decadimento di \\(\\eta\\)) oppure <strong>Adam</strong>.</li>\n      <li>Attivazioni <strong>ReLU</strong> nelle unità nascoste.</li>\n      <li>Loss di massima verosimiglianza (<strong>cross-entropy</strong>) con <strong>softmax</strong> in uscita (evita saturazione e gradienti piccoli).</li>\n      <li>Regolarizzazione: early stopping, weight decay, <strong>dropout</strong>, <strong>batch normalization</strong>.</li>\n    </ul>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Vanishing gradient</div>\n      <p>Con pesi piccoli e derivate di sigmoidi/\\(\\tanh\\) in \\((0,1]\\), la regola della catena moltiplica molti fattori piccoli: il \\(\\delta\\) decresce <strong>esponenzialmente</strong> e gli strati vicini all'input si addestrano <strong>lentissimamente</strong>.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Exploding gradient</div>\n      <p>Con pesi grandi, il prodotto ripetuto attraverso molti strati fa crescere il gradiente <strong>esponenzialmente</strong>, destabilizzando gli aggiornamenti.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "tecniche chiave essenziali si riassumono",
+          "at": 21.3
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "vanishing gradient",
+          "at": 73.1
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "pesi sono grandi",
+          "at": 90.6
+        }
+      ],
+      "duration_sec": 97.5,
+      "id": "scene-15",
+      "audio_file": "audio/scene-15.wav",
+      "subtitle_file": "subtitles/scene-15.json"
+    },
+    {
+      "section": "15.6.1 Schizzo formale e gradient clipping",
+      "title": "Prodotto di Jacobiani e gradient clipping contro le scogliere",
+      "tts_text": "Formalizziamo ora il meccanismo di vanishing ed exploding gradient con uno schizzo matematico molto trasparente. [pause:0.6] Consideriamo una rete di M strati, in cui ogni strato trasforma l'attivazione precedente tramite h con i uguale a F con i di h con i meno uno, e l'intera rete è la composizione F uguale a F con M composto fino a F con uno. [pause:0.7] Applicando la regola della catena rispetto ai pesi w con l dello strato l, otteniamo che la derivata parziale di F rispetto a w con l è il prodotto della derivata di F con M rispetto ad h con M meno uno, fino alla derivata di F con l più uno rispetto ad h con l, moltiplicato per la derivata locale di F con l rispetto a w con l. [pause:0.8] Questo prodotto contiene esattamente M meno l fattori parziale F con i su parziale h con i meno uno, uno per ciascuno degli strati sopra lo strato l. Ogni fattore è lo Jacobiano dello strato i: la matrice delle derivate parziali di ogni uscita dello strato rispetto a ogni suo input. Geometricamente, la norma dello Jacobiano misura di quanto lo strato può allungare una piccola variazione del suo ingresso. [pause:0.8] Se ciascuno di questi M meno l Jacobiani ha norma circa uguale a ro, allora il modulo del gradiente rispetto a w con l scala proporzionalmente a ro alla M meno l. Così, con ro minore di uno il gradiente svanisce esponenzialmente; con ro maggiore di uno esplode esponenzialmente. [pause:0.8] Per affrontare questo fenomeno si impiegano diversi approcci: da R-prop alle connessioni shortcut, alle reti randomizzate, fino alle attivazioni ReLU. [pause:0.7] In particolare, contro l'exploding gradient: la moltiplicazione ripetuta può creare vere e proprie scogliere, dette cliff, nella funzione di costo, con derivate altissime che catapultano i pesi molto lontano. Il rimedio diretto è il gradient clipping: fissata una soglia v sulla norma, se la norma del gradiente g è maggiore di v, si riscala g ponendo g uguale a v per g diviso norma di g, limitando così la lunghezza del passo ma mantenendone intatta la direzione.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.6.1 · Schizzo formale e gradient clipping</div>\n  <h2 class=\"slide-title\">Prodotto di \\(M-l\\) Jacobiani e gestione delle scogliere</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Proprietà · Rete di \\(M\\) strati \\(\\h_i = F_i(\\h_{i-1}),\\; F = F_M\\circ\\dots\\circ F_1\\)</div>\n    \\[\\frac{\\partial F}{\\partial w_l} = \\htmlId{f-jac}{\\underbrace{\\frac{\\partial F_M}{\\partial \\h_{M-1}}\\cdots\\frac{\\partial F_{l+1}}{\\partial \\h_l}}_{M-l \\text{ Jacobiani}}}\\cdot\\frac{\\partial F_l}{\\partial w_l} \\quad\\Longrightarrow\\quad \\htmlId{f-rho}{\\abs{\\frac{\\partial F}{\\partial w_l}} \\propto \\rho^{M-l}}\\]\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Significato dello Jacobiano</div>\n      <p>Matrice \\(\\partial F_i/\\partial \\h_{i-1}\\) delle derivate parziali di ogni uscita rispetto a ogni input: la sua norma misura quanto lo strato «allunga» una piccola variazione (\\(\\rho\\lt 1\\) svanisce, \\(\\rho\\gt 1\\) esplode).</p>\n    </div>\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Approcci al problema</div>\n      <p><strong>R-prop</strong>, connessioni <strong>shortcut</strong> (residuali), <strong>reti randomizzate</strong> e attivazioni <strong>ReLU</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Gradient clipping (contro le «scogliere» / cliff)</div>\n    \\[\\htmlId{f-clip}{\\text{se } \\norm{\\vv{g}} \\gt v \\;\\text{ allora }\\; \\vv{g} \\leftarrow \\frac{v\\,\\vv{g}}{\\norm{\\vv{g}}}}\\]\n    <p class=\"math-note\">Limita la norma del gradiente alla soglia \\(v\\) <strong>preservandone la direzione</strong>, evitando di catapultare i pesi lontano.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "rete di M strati",
+          "at": 7.5
+        },
+        {
+          "action": "highlight",
+          "target": "#f-jac",
+          "anchor": "M meno l fattori",
+          "at": 58.0
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Ogni fattore è lo Jacobiano",
+          "at": 67.8
+        },
+        {
+          "action": "highlight",
+          "target": "#f-rho",
+          "anchor": "proporzionalmente a ro alla M meno l",
+          "at": 95.6
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "scogliere, dette cliff",
+          "at": 121.1
+        },
+        {
+          "action": "highlight",
+          "target": "#f-clip",
+          "anchor": "v per g diviso norma di g",
+          "at": 139.9
+        }
+      ],
+      "duration_sec": 148.1,
+      "id": "scene-16",
+      "audio_file": "audio/scene-16.wav",
+      "subtitle_file": "subtitles/scene-16.json"
+    },
+    {
+      "section": "15.6.2 ReLU e varianti",
+      "title": "ReLU, sparsità e varianti non saturanti",
+      "tts_text": "Analizziamo da vicino la funzione di attivazione che ha rivoluzionato l'addestramento delle reti profonde: la ReLU, Rectified Linear Unit. [pause:0.6] La sua definizione è semplicissima: f di x uguale al massimo tra zero e x, ovvero zero per x minore di zero e x per x maggiore o uguale a zero. [pause:0.7] Nonostante l'estrema semplicità, offre tre vantaggi decisivi. Primo: una propagazione del gradiente molto migliore attraverso molti strati, perché non satura mai sulla semiretta positiva, dove la derivata f primo di x vale esattamente uno per ogni net positivo. Secondo: induce attivazione sparsa; in una rete inizializzata a caso circa metà delle unità nascoste è attiva, mentre le altre producono esattamente zero. Terzo: calcolo molto efficiente, perché richiede solo confronti, somme e prodotti, senza esponenziali costosi. [pause:0.8] Qualche accortezza pratica: la ReLU non è differenziabile esattamente in zero, ma nelle librerie si assume per convenzione derivata zero oppure uno; è un'approssimazione sicura, perché in pratica è improbabile valutare esattamente f di zero. Conviene inoltre iniziare con net positivi, ad esempio usando piccoli bias positivi pari a zero virgola uno, in modo che le unità siano inizialmente attive e ricevano gradiente. [pause:0.8] Per evitare che le unità si spengano sulla parte negativa, e per ottenere un'attivazione media più vicina a zero, esistono varianti mostrate nel grafico: la Leaky ReLU, pari a zero virgola zero uno x per x negativo e disegnata con pendenza zero virgola uno per renderla ben visibile; la ELU, pari ad alfa per e alla x meno uno per x minore o uguale a zero e x per x positivo; e la softplus, logaritmo naturale di uno più e alla x, che fornisce un'approssimazione liscia e ovunque differenziabile della ReLU.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.6.2 · Funzione di attivazione ReLU</div>\n  <h2 class=\"slide-title\">ReLU, vantaggi computazionali e varianti non saturanti</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione · ReLU</div>\n        \\[\\htmlId{f-relu}{f(x) = \\max(0, x) = \\begin{cases} 0 & x \\lt 0 \\\\ x & x \\ge 0 \\end{cases}}\\]\n        <ul class=\"clean-list\" style=\"margin-top:6px;\">\n          <li><strong>Propagazione del gradiente:</strong> nessuna saturazione, \\(f'(x)=1\\) per \\(x \\gt 0\\).</li>\n          <li><strong>Attivazione sparsa:</strong> ~50% unità attive, le altre esattamente \\(0\\).</li>\n          <li><strong>Calcolo efficiente:</strong> solo confronti, somme e prodotti.</li>\n        </ul>\n      </div>\n      <div id=\"s2\" class=\"box box-primary cue-hidden\">\n        <div class=\"box-label\">Dettagli pratici e varianti (parte sinistra attiva)</div>\n        <p>Non differenziabile in \\(0\\) (si usa \\(0\\) o \\(1\\)); bias iniziali piccoli positivi (\\(0{,}1\\)). Attivazione media più vicina a \\(0\\): <strong>Leaky ReLU</strong> (\\(0{,}01x\\) per \\(x \\lt 0\\)), <strong>ELU</strong> (\\(\\alpha(e^x-1)\\) per \\(x \\le 0\\)), <strong>softplus</strong> (\\(\\ln(1+e^x)\\), liscia).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <div>\n        <div class=\"plot-title\">ReLU, Leaky ReLU (0,1), ELU (\\(\\alpha=1\\)) e softplus</div>\n        <svg viewBox=\"0 0 478 220\" class=\"diagram-svg\" aria-label=\"Funzione ReLU e varianti Leaky ReLU, ELU e softplus\"><line x1=\"44\" y1=\"146.3\" x2=\"344\" y2=\"146.3\" stroke=\"#CCCCCC\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"192.0\" y1=\"18\" x2=\"192.0\" y2=\"196\" stroke=\"#CCCCCC\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"44\" y1=\"196\" x2=\"344\" y2=\"196\" class=\"svg-axis\"/><line x1=\"44\" y1=\"196\" x2=\"44\" y2=\"16\" class=\"svg-axis\"/><line x1=\"93.3\" y1=\"193\" x2=\"93.3\" y2=\"199\" class=\"svg-axis\"/><text x=\"93.3\" y=\"211\" text-anchor=\"middle\" class=\"svg-tick\">-2</text><line x1=\"192.0\" y1=\"193\" x2=\"192.0\" y2=\"199\" class=\"svg-axis\"/><text x=\"192.0\" y=\"211\" text-anchor=\"middle\" class=\"svg-tick\">0</text><line x1=\"290.7\" y1=\"193\" x2=\"290.7\" y2=\"199\" class=\"svg-axis\"/><text x=\"290.7\" y=\"211\" text-anchor=\"middle\" class=\"svg-tick\">2</text><line x1=\"41\" y1=\"187.7\" x2=\"47\" y2=\"187.7\" class=\"svg-axis\"/><text x=\"35\" y=\"191.7\" text-anchor=\"end\" class=\"svg-tick\">-1</text><line x1=\"41\" y1=\"146.3\" x2=\"47\" y2=\"146.3\" class=\"svg-axis\"/><text x=\"35\" y=\"150.3\" text-anchor=\"end\" class=\"svg-tick\">0</text><line x1=\"41\" y1=\"104.9\" x2=\"47\" y2=\"104.9\" class=\"svg-axis\"/><text x=\"35\" y=\"108.9\" text-anchor=\"end\" class=\"svg-tick\">1</text><line x1=\"41\" y1=\"63.5\" x2=\"47\" y2=\"63.5\" class=\"svg-axis\"/><text x=\"35\" y=\"67.5\" text-anchor=\"end\" class=\"svg-tick\">2</text><line x1=\"41\" y1=\"22.1\" x2=\"47\" y2=\"22.1\" class=\"svg-axis\"/><text x=\"35\" y=\"26.1\" text-anchor=\"end\" class=\"svg-tick\">3</text><path d=\"M 44.0,144.3 L 46.5,144.2 L 48.9,144.1 L 51.4,144.0 L 53.9,143.9 L 56.3,143.8 L 58.8,143.6 L 61.3,143.5 L 63.7,143.4 L 66.2,143.2 L 68.7,143.1 L 71.1,142.9 L 73.6,142.7 L 76.1,142.6 L 78.5,142.4 L 81.0,142.2 L 83.5,142.0 L 85.9,141.8 L 88.4,141.5 L 90.9,141.3 L 93.3,141.1 L 95.8,140.8 L 98.3,140.6 L 100.7,140.3 L 103.2,140.0 L 105.7,139.7 L 108.1,139.4 L 110.6,139.1 L 113.1,138.7 L 115.5,138.4 L 118.0,138.0 L 120.5,137.6 L 122.9,137.2 L 125.4,136.8 L 127.9,136.3 L 130.3,135.9 L 132.8,135.4 L 135.3,134.9 L 137.7,134.4 L 140.2,133.9 L 142.7,133.4 L 145.1,132.8 L 147.6,132.2 L 150.1,131.6 L 152.5,131.0 L 155.0,130.3 L 157.5,129.6 L 159.9,128.9 L 162.4,128.2 L 164.9,127.5 L 167.3,126.7 L 169.8,125.9 L 172.3,125.1 L 174.7,124.2 L 177.2,123.4 L 179.7,122.5 L 182.1,121.6 L 184.6,120.6 L 187.1,119.7 L 189.5,118.7 L 192.0,117.6 L 194.5,116.6 L 196.9,115.5 L 199.4,114.4 L 201.9,113.3 L 204.3,112.1 L 206.8,111.0 L 209.3,109.8 L 211.7,108.5 L 214.2,107.3 L 216.7,106.0 L 219.1,104.7 L 221.6,103.4 L 224.1,102.0 L 226.5,100.7 L 229.0,99.3 L 231.5,97.8 L 233.9,96.4 L 236.4,94.9 L 238.9,93.5 L 241.3,92.0 L 243.8,90.4 L 246.3,88.9 L 248.7,87.3 L 251.2,85.8 L 253.7,84.2 L 256.1,82.5 L 258.6,80.9 L 261.1,79.2 L 263.5,77.6 L 266.0,75.9 L 268.5,74.2 L 270.9,72.5 L 273.4,70.8 L 275.9,69.0 L 278.3,67.3 L 280.8,65.5 L 283.3,63.7 L 285.7,61.9 L 288.2,60.1 L 290.7,58.3 L 293.1,56.5 L 295.6,54.6 L 298.1,52.8 L 300.5,50.9 L 303.0,49.0 L 305.5,47.2 L 307.9,45.3 L 310.4,43.4 L 312.9,41.5 L 315.3,39.6 L 317.8,37.7 L 320.3,35.7 L 322.7,33.8 L 325.2,31.9 L 327.7,29.9 L 330.1,28.0 L 332.6,26.0 L 335.1,24.1 L 337.5,22.1 L 340.0,20.1\" class=\"svg-curve-green\"/><path d=\"M 44.0,185.7 L 46.5,185.6 L 48.9,185.4 L 51.4,185.3 L 53.9,185.2 L 56.3,185.1 L 58.8,184.9 L 61.3,184.8 L 63.7,184.6 L 66.2,184.5 L 68.7,184.3 L 71.1,184.1 L 73.6,184.0 L 76.1,183.8 L 78.5,183.6 L 81.0,183.4 L 83.5,183.1 L 85.9,182.9 L 88.4,182.7 L 90.9,182.4 L 93.3,182.1 L 95.8,181.8 L 98.3,181.5 L 100.7,181.2 L 103.2,180.9 L 105.7,180.5 L 108.1,180.2 L 110.6,179.8 L 113.1,179.4 L 115.5,178.9 L 118.0,178.5 L 120.5,178.0 L 122.9,177.5 L 125.4,177.0 L 127.9,176.4 L 130.3,175.9 L 132.8,175.3 L 135.3,174.6 L 137.7,173.9 L 140.2,173.2 L 142.7,172.5 L 145.1,171.7 L 147.6,170.9 L 150.1,170.0 L 152.5,169.1 L 155.0,168.2 L 157.5,167.2 L 159.9,166.1 L 162.4,165.0 L 164.9,163.8 L 167.3,162.6 L 169.8,161.3 L 172.3,160.0 L 174.7,158.6 L 177.2,157.1 L 179.7,155.5 L 182.1,153.8 L 184.6,152.1 L 187.1,150.3 L 189.5,148.3 L 192.0,146.3 L 194.5,144.3 L 196.9,142.2 L 199.4,140.1 L 201.9,138.0 L 204.3,136.0 L 206.8,133.9 L 209.3,131.8 L 211.7,129.8 L 214.2,127.7 L 216.7,125.6 L 219.1,123.6 L 221.6,121.5 L 224.1,119.4 L 226.5,117.3 L 229.0,115.3 L 231.5,113.2 L 233.9,111.1 L 236.4,109.1 L 238.9,107.0 L 241.3,104.9 L 243.8,102.9 L 246.3,100.8 L 248.7,98.7 L 251.2,96.7 L 253.7,94.6 L 256.1,92.5 L 258.6,90.4 L 261.1,88.4 L 263.5,86.3 L 266.0,84.2 L 268.5,82.2 L 270.9,80.1 L 273.4,78.0 L 275.9,76.0 L 278.3,73.9 L 280.8,71.8 L 283.3,69.7 L 285.7,67.7 L 288.2,65.6 L 290.7,63.5 L 293.1,61.5 L 295.6,59.4 L 298.1,57.3 L 300.5,55.3 L 303.0,53.2 L 305.5,51.1 L 307.9,49.0 L 310.4,47.0 L 312.9,44.9 L 315.3,42.8 L 317.8,40.8 L 320.3,38.7 L 322.7,36.6 L 325.2,34.6 L 327.7,32.5 L 330.1,30.4 L 332.6,28.3 L 335.1,26.3 L 337.5,24.2 L 340.0,22.1\" class=\"svg-curve-blue\"/><path d=\"M 44.0,158.7 L 46.5,158.5 L 48.9,158.3 L 51.4,158.1 L 53.9,157.9 L 56.3,157.7 L 58.8,157.5 L 61.3,157.3 L 63.7,157.1 L 66.2,156.9 L 68.7,156.7 L 71.1,156.5 L 73.6,156.3 L 76.1,156.1 L 78.5,155.8 L 81.0,155.6 L 83.5,155.4 L 85.9,155.2 L 88.4,155.0 L 90.9,154.8 L 93.3,154.6 L 95.8,154.4 L 98.3,154.2 L 100.7,154.0 L 103.2,153.8 L 105.7,153.6 L 108.1,153.4 L 110.6,153.2 L 113.1,152.9 L 115.5,152.7 L 118.0,152.5 L 120.5,152.3 L 122.9,152.1 L 125.4,151.9 L 127.9,151.7 L 130.3,151.5 L 132.8,151.3 L 135.3,151.1 L 137.7,150.9 L 140.2,150.7 L 142.7,150.5 L 145.1,150.3 L 147.6,150.1 L 150.1,149.8 L 152.5,149.6 L 155.0,149.4 L 157.5,149.2 L 159.9,149.0 L 162.4,148.8 L 164.9,148.6 L 167.3,148.4 L 169.8,148.2 L 172.3,148.0 L 174.7,147.8 L 177.2,147.6 L 179.7,147.4 L 182.1,147.2 L 184.6,146.9 L 187.1,146.7 L 189.5,146.5 L 192.0,146.3 L 194.5,144.3 L 196.9,142.2 L 199.4,140.1 L 201.9,138.0 L 204.3,136.0 L 206.8,133.9 L 209.3,131.8 L 211.7,129.8 L 214.2,127.7 L 216.7,125.6 L 219.1,123.6 L 221.6,121.5 L 224.1,119.4 L 226.5,117.3 L 229.0,115.3 L 231.5,113.2 L 233.9,111.1 L 236.4,109.1 L 238.9,107.0 L 241.3,104.9 L 243.8,102.9 L 246.3,100.8 L 248.7,98.7 L 251.2,96.7 L 253.7,94.6 L 256.1,92.5 L 258.6,90.4 L 261.1,88.4 L 263.5,86.3 L 266.0,84.2 L 268.5,82.2 L 270.9,80.1 L 273.4,78.0 L 275.9,76.0 L 278.3,73.9 L 280.8,71.8 L 283.3,69.7 L 285.7,67.7 L 288.2,65.6 L 290.7,63.5 L 293.1,61.5 L 295.6,59.4 L 298.1,57.3 L 300.5,55.3 L 303.0,53.2 L 305.5,51.1 L 307.9,49.0 L 310.4,47.0 L 312.9,44.9 L 315.3,42.8 L 317.8,40.8 L 320.3,38.7 L 322.7,36.6 L 325.2,34.6 L 327.7,32.5 L 330.1,30.4 L 332.6,28.3 L 335.1,26.3 L 337.5,24.2 L 340.0,22.1\" class=\"svg-curve-red\" stroke-dasharray=\"5 3\"/><path d=\"M 44.0,146.3 L 46.5,146.3 L 48.9,146.3 L 51.4,146.3 L 53.9,146.3 L 56.3,146.3 L 58.8,146.3 L 61.3,146.3 L 63.7,146.3 L 66.2,146.3 L 68.7,146.3 L 71.1,146.3 L 73.6,146.3 L 76.1,146.3 L 78.5,146.3 L 81.0,146.3 L 83.5,146.3 L 85.9,146.3 L 88.4,146.3 L 90.9,146.3 L 93.3,146.3 L 95.8,146.3 L 98.3,146.3 L 100.7,146.3 L 103.2,146.3 L 105.7,146.3 L 108.1,146.3 L 110.6,146.3 L 113.1,146.3 L 115.5,146.3 L 118.0,146.3 L 120.5,146.3 L 122.9,146.3 L 125.4,146.3 L 127.9,146.3 L 130.3,146.3 L 132.8,146.3 L 135.3,146.3 L 137.7,146.3 L 140.2,146.3 L 142.7,146.3 L 145.1,146.3 L 147.6,146.3 L 150.1,146.3 L 152.5,146.3 L 155.0,146.3 L 157.5,146.3 L 159.9,146.3 L 162.4,146.3 L 164.9,146.3 L 167.3,146.3 L 169.8,146.3 L 172.3,146.3 L 174.7,146.3 L 177.2,146.3 L 179.7,146.3 L 182.1,146.3 L 184.6,146.3 L 187.1,146.3 L 189.5,146.3 L 192.0,146.3 L 194.5,144.3 L 196.9,142.2 L 199.4,140.1 L 201.9,138.0 L 204.3,136.0 L 206.8,133.9 L 209.3,131.8 L 211.7,129.8 L 214.2,127.7 L 216.7,125.6 L 219.1,123.6 L 221.6,121.5 L 224.1,119.4 L 226.5,117.3 L 229.0,115.3 L 231.5,113.2 L 233.9,111.1 L 236.4,109.1 L 238.9,107.0 L 241.3,104.9 L 243.8,102.9 L 246.3,100.8 L 248.7,98.7 L 251.2,96.7 L 253.7,94.6 L 256.1,92.5 L 258.6,90.4 L 261.1,88.4 L 263.5,86.3 L 266.0,84.2 L 268.5,82.2 L 270.9,80.1 L 273.4,78.0 L 275.9,76.0 L 278.3,73.9 L 280.8,71.8 L 283.3,69.7 L 285.7,67.7 L 288.2,65.6 L 290.7,63.5 L 293.1,61.5 L 295.6,59.4 L 298.1,57.3 L 300.5,55.3 L 303.0,53.2 L 305.5,51.1 L 307.9,49.0 L 310.4,47.0 L 312.9,44.9 L 315.3,42.8 L 317.8,40.8 L 320.3,38.7 L 322.7,36.6 L 325.2,34.6 L 327.7,32.5 L 330.1,30.4 L 332.6,28.3 L 335.1,26.3 L 337.5,24.2 L 340.0,22.1\" class=\"svg-curve-ink\" stroke-width=\"2.6\"/><text x=\"348\" y=\"200\" class=\"svg-math-sm\">x</text><line x1=\"358\" y1=\"42\" x2=\"384\" y2=\"42\" class=\"svg-curve-ink\" stroke-width=\"2.6\"/><text x=\"390\" y=\"46\" class=\"svg-legend\">ReLU</text><line x1=\"358\" y1=\"66\" x2=\"384\" y2=\"66\" class=\"svg-curve-red\" stroke-dasharray=\"5 3\"/><text x=\"390\" y=\"70\" class=\"svg-legend\">Leaky (0,1)</text><line x1=\"358\" y1=\"90\" x2=\"384\" y2=\"90\" class=\"svg-curve-blue\"/><text x=\"390\" y=\"94\" class=\"svg-legend\">ELU (α=1)</text><line x1=\"358\" y1=\"114\" x2=\"384\" y2=\"114\" class=\"svg-curve-green\"/><text x=\"390\" y=\"118\" class=\"svg-legend\">softplus</text></svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "La sua definizione è semplicissima",
+          "at": 8.8
+        },
+        {
+          "action": "highlight",
+          "target": "#f-relu",
+          "anchor": "massimo tra zero e x",
+          "at": 12.8
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Qualche accortezza pratica",
+          "at": 53.9
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "varianti mostrate nel grafico",
+          "at": 89.4
+        }
+      ],
+      "duration_sec": 119.6,
+      "id": "scene-17",
+      "audio_file": "audio/scene-17.wav",
+      "subtitle_file": "subtitles/scene-17.json"
+    },
+    {
+      "section": "15.6.3 – 15.6.4 Batch normalization e Dropout (ensemble)",
+      "title": "Batch normalization e il dropout come bagging esponenziale",
+      "tts_text": "Passiamo a due tecniche cardine che agiscono tanto sulla velocità di ottimizzazione quanto sulla regolarizzazione: la batch normalization e il dropout. [pause:0.7] La batch normalization normalizza, in ogni strato della rete, le attivazioni del mini-batch corrente portandole a media zero e varianza unitaria. Le statistiche di media e varianza sono calcolate direttamente sul mini-batch, e l'intera trasformazione di normalizzazione viene inclusa nella backpropagation, così il gradiente attraversa anche questa operazione. Normalizzare i dati di input era già una pratica standard; la batch normalization estende la stessa idea mantenendo ben normalizzati anche i dati che fluiscono attraverso tutti gli strati intermedi. Produce così due effetti sinergici: un apprendimento sensibilmente più rapido e un utile effetto di regolarizzazione, dovuto al rumore stocastico introdotto dalle statistiche calcolate su ciascun mini-batch. [pause:0.8] Veniamo ora al dropout, che seleziona casualmente una sotto-rete diversa a ogni passo di addestramento. [pause:0.6] Il dropout si spiega in modo cristallino attraverso due concetti noti del corso: l'ensemble e la regolarizzazione. Ricordiamo che il bagging media molti modelli ad alta varianza e basso bias. Il dropout sfrutta esattamente questo principio realizzando un bagging implicito ed economico di un numero esponenziale di sotto-reti, avendo però a test time una sola rete. [pause:0.7] Guardiamo il diagramma: per una rete minuscola con due input, due unità nascoste e un'uscita, rimuovendo tutti i possibili sottoinsiemi delle quattro unità non di uscita si ottengono esattamente sedici sotto-reti. Alcune non collegano più l'input all'uscita, ma nelle reti grandi questo evento è del tutto improbabile. Inoltre il dropout massimizza la diversità dell'ensemble, impedendo co-adattamenti rigidi tra le unità.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.6.3 – 15.6.4 · Batch normalization e Dropout</div>\n  <h2 class=\"slide-title\">Normalizzare gli strati intermedi e creare un ensemble esponenziale</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Batch normalization</div>\n    <p>Normalizza in ogni strato le attivazioni del <strong>mini-batch</strong> a <strong>media 0 e varianza 1</strong> (statistiche sul mini-batch, trasformazione inclusa nella backpropagation). Estende la normalizzazione dell'input agli strati intermedi \\(\\Rightarrow\\) <strong>apprendimento più rapido</strong> + <strong>regolarizzazione</strong> (rumore del mini-batch).</p>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Dropout · Ensemble (bagging implicito) + Regolarizzazione</div>\n    <p>Seleziona casualmente una sotto-rete a ogni passo: realizza un <strong>bagging implicito ed economico</strong> di un numero <strong>esponenziale</strong> di sotto-reti, con <strong>una sola rete a test time</strong>, massimizzando la diversità ed evitando co-adattamenti.</p>\n  </div>\n  <div id=\"s3\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <div>\n      <div class=\"plot-title\">Le \\(2^4 = 16\\) sotto-reti di una rete 2–2–1 (in reti grandi è improbabile perdere tutti i percorsi)</div>\n      <svg viewBox=\"0 0 640 162\" class=\"diagram-svg\" aria-label=\"Le 16 sotto-reti del dropout per una rete 2-2-1\">\n<line x1=\"22\" y1=\"68\" x2=\"22\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"22\" y1=\"68\" x2=\"56\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"56\" y1=\"68\" x2=\"22\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"56\" y1=\"68\" x2=\"56\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"22\" y1=\"42\" x2=\"39\" y2=\"16\" class=\"svg-edge\"/>\n<line x1=\"56\" y1=\"42\" x2=\"39\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"22\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"56\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"22\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"56\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"39\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"133\" y1=\"68\" x2=\"99\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"133\" y1=\"68\" x2=\"133\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"99\" y1=\"42\" x2=\"116\" y2=\"16\" class=\"svg-edge\"/>\n<line x1=\"133\" y1=\"42\" x2=\"116\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"99\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"133\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"99\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"133\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"116\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"176\" y1=\"68\" x2=\"176\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"176\" y1=\"68\" x2=\"210\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"176\" y1=\"42\" x2=\"193\" y2=\"16\" class=\"svg-edge\"/>\n<line x1=\"210\" y1=\"42\" x2=\"193\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"176\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"210\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"176\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"210\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"193\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"253\" y1=\"42\" x2=\"270\" y2=\"16\" class=\"svg-edge\"/>\n<line x1=\"287\" y1=\"42\" x2=\"270\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"253\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"287\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"253\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"287\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"270\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"330\" y1=\"68\" x2=\"364\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"364\" y1=\"68\" x2=\"364\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"364\" y1=\"42\" x2=\"347\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"330\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"364\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"330\" cy=\"42\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"364\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"347\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"441\" y1=\"68\" x2=\"441\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"441\" y1=\"42\" x2=\"424\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"407\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"441\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"407\" cy=\"42\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"441\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"424\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"484\" y1=\"68\" x2=\"518\" y2=\"42\" class=\"svg-edge\"/>\n<line x1=\"518\" y1=\"42\" x2=\"501\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"484\" cy=\"68\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"518\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"484\" cy=\"42\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"518\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"501\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"595\" y1=\"42\" x2=\"578\" y2=\"16\" class=\"svg-edge\"/>\n<circle cx=\"561\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"595\" cy=\"68\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"561\" cy=\"42\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"595\" cy=\"42\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"578\" cy=\"16\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"22\" y1=\"144\" x2=\"22\" y2=\"118\" class=\"svg-edge\"/>\n<line x1=\"56\" y1=\"144\" x2=\"22\" y2=\"118\" class=\"svg-edge\"/>\n<line x1=\"22\" y1=\"118\" x2=\"39\" y2=\"92\" class=\"svg-edge\"/>\n<circle cx=\"22\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"56\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"22\" cy=\"118\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"56\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"39\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"133\" y1=\"144\" x2=\"99\" y2=\"118\" class=\"svg-edge\"/>\n<line x1=\"99\" y1=\"118\" x2=\"116\" y2=\"92\" class=\"svg-edge\"/>\n<circle cx=\"99\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"133\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"99\" cy=\"118\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"133\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"116\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"176\" y1=\"144\" x2=\"176\" y2=\"118\" class=\"svg-edge\"/>\n<line x1=\"176\" y1=\"118\" x2=\"193\" y2=\"92\" class=\"svg-edge\"/>\n<circle cx=\"176\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"210\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"176\" cy=\"118\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"210\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"193\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<line x1=\"253\" y1=\"118\" x2=\"270\" y2=\"92\" class=\"svg-edge\"/>\n<circle cx=\"253\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"287\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"253\" cy=\"118\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"287\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"270\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<circle cx=\"330\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"364\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"330\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"364\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"347\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<circle cx=\"407\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"441\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"407\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"441\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"424\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<circle cx=\"484\" cy=\"144\" r=\"4.2\" class=\"svg-node\"/>\n<circle cx=\"518\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"484\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"518\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"501\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<circle cx=\"561\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"595\" cy=\"144\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"561\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"595\" cy=\"118\" r=\"4.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.1\" stroke-dasharray=\"2 2\"/>\n<circle cx=\"578\" cy=\"92\" r=\"4.4\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n</svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "batch normalization normalizza",
+          "at": 9.7
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Veniamo ora al dropout",
+          "at": 54.6
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Guardiamo il diagramma",
+          "at": 86.1
+        }
+      ],
+      "duration_sec": 113.8,
+      "id": "scene-18",
+      "audio_file": "audio/scene-18.wav",
+      "subtitle_file": "subtitles/scene-18.json"
+    },
+    {
+      "section": "15.6.4 Algoritmo del Dropout, L1 e GAN",
+      "title": "Algoritmo del dropout, weight scaling, regolarizzazione L1 e GAN",
+      "tts_text": "Vediamo ora nel dettaglio come si esegue l'algoritmo del dropout durante l'addestramento e a test time. [pause:0.6] Primo passo: ogni volta che si carica un esempio in un mini-batch, si campiona una maschera binaria per tutte le unità di input e nascoste, in modo indipendente per ogni unità. La probabilità di includere un'unità è un iperparametro, tipicamente zero virgola otto per gli ingressi e zero virgola cinque per le unità nascoste. Secondo passo: ogni unità viene moltiplicata per la sua maschera binaria; moltiplicare per zero equivale a rimuoverla, ottenendo la sotto-rete attiva. Terzo passo: forward, backpropagation e aggiornamento dei pesi procedono come al solito esclusivamente sulla sotto-rete. Quarto passo: le unità rimosse vengono poi reinserite con i loro pesi intatti per il passo successivo. [pause:0.8] In questo modo solo una piccolissima frazione delle sotto-reti viene effettivamente addestrata, ciascuna per un solo passo; tuttavia la condivisione dei parametri porta anche tutte le altre sotto-reti verso buoni pesi. A test time si approssima la media dell'ensemble con la weight scaling inference rule: si moltiplicano i pesi per la probabilità di inclusione, così che l'uscita attesa di ogni unità coincida con quella vista in addestramento. [pause:0.8] L'effetto regolarizzante del dropout agisce su più livelli: riduce le interazioni tra unità e le diversifica, abbassa la varianza esattamente come il bagging, inserisce rumore strutturato come dover riconoscere un volto senza l'unità che rileva il naso, e soprattutto spinge ogni unità a diventare una feature robusta e utile in molti contesti diversi. Nella regressione lineare si dimostra che equivale esattamente a un weight decay L due con un parametro lambda distinto per ciascun input. [pause:0.7] Completano il quadro del capitolo la regolarizzazione L uno, utile per eliminare feature irrilevanti, e tra gli sviluppi del deep learning le Generative Adversarial Network, o GAN: due reti in competizione, in cui una genera candidati sintetici e l'altra li valuta cercando di distinguerli dai dati veri.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.6.4 · Algoritmo del Dropout, L1 e GAN</div>\n  <h2 class=\"slide-title\">Maschere binarie, weight scaling ed effetto regolarizzante</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo · Dropout</div>\n    <ol class=\"algo-list\">\n      <li id=\"dr1\">Per ogni esempio del mini-batch si campiona una <strong>maschera binaria</strong> indipendente per input e unità nascoste (probabilità di inclusione tipica: <strong>0,8</strong> input, <strong>0,5</strong> nascoste).</li>\n      <li id=\"dr2\">Ogni unità è moltiplicata per la sua maschera (\\(0\\) = rimossa \\(\\Rightarrow\\) sotto-rete).</li>\n      <li id=\"dr3\">Forward, backpropagation e aggiornamento procedono sulla sotto-rete.</li>\n      <li id=\"dr4\">Le unità rimosse vengono reinserite con i loro pesi.</li>\n    </ol>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Condivisione pesi &amp; Test time</div>\n      <p>La <strong>condivisione dei parametri</strong> trasferisce l'apprendimento a tutte le sotto-reti. A test time, <strong>weight scaling inference rule</strong>: pesi moltiplicati per la probabilità di inclusione per preservare l'uscita attesa.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Effetto regolarizzante, \\(L^1\\) e GAN</div>\n      <p>Diversifica le unità, riduce la varianza, introduce <strong>rumore strutturato</strong> (es. volto senza naso), rende ogni unità utile in molti contesti (in regressione lineare \\(\\equiv L^2\\) con un \\(\\lambda\\) per input). <strong>\\(L^1\\)</strong> elimina feature; <strong>GAN</strong>: rete generatrice vs rete valutatrice in competizione.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "algoritmo del dropout",
+          "at": 3.3
+        },
+        {
+          "action": "highlight",
+          "target": "#dr1",
+          "anchor": "Primo passo: ogni volta",
+          "at": 7.9
+        },
+        {
+          "action": "highlight",
+          "target": "#dr2",
+          "anchor": "Secondo passo: ogni unità",
+          "at": 30.8
+        },
+        {
+          "action": "highlight",
+          "target": "#dr3",
+          "anchor": "Terzo passo: forward",
+          "at": 39.8
+        },
+        {
+          "action": "highlight",
+          "target": "#dr4",
+          "anchor": "Quarto passo: le unità",
+          "at": 46.3
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "condivisione dei parametri",
+          "at": 62.2
+        },
+        {
+          "action": "show",
+          "target": "#s3",
+          "anchor": "effetto regolarizzante del dropout",
+          "at": 84.2
+        }
+      ],
+      "duration_sec": 136.4,
+      "id": "scene-19",
+      "audio_file": "audio/scene-19.wav",
+      "subtitle_file": "subtitles/scene-19.json"
+    },
+    {
+      "section": "15.7 Punti chiave e domande di verifica",
+      "title": "Riepilogo del capitolo e domande d'esame",
+      "tts_text": "Raccogliamo ora in cinque punti chiave l'intero percorso di questo capitolo sul deep learning. [pause:0.7] Primo: il deep learning utilizza molti strati di unità non lineari per apprendere una gerarchia di rappresentazioni distribuite direttamente dai dati grezzi. [pause:0.6] Secondo: il principio di no-flattening mostra che funzioni compatte con molti strati possono richiedere modelli esponenzialmente grandi con pochi strati, come nella funzione di parità con due alla n meno uno più uno porte contro tre per n meno uno. [pause:0.6] Terzo: il bias induttivo dei modelli profondi assume che la funzione da apprendere sia una composizione di funzioni più semplici. [pause:0.6] Quarto: il representation learning comprende pre-training con autoencoder e transfer learning, mentre le rappresentazioni distribuite offrono k alla n configurazioni e attributi condivisi, sommando un secondo vantaggio esponenziale. [pause:0.6] Quinto: le tecniche che rendono davvero addestrabili le reti profonde sono ReLU, cross-entropy con softmax, SGD con momentum o Adam, gradient clipping, batch normalization e dropout come ensemble implicito di sotto-reti. [pause:0.9] Per verificare la tua preparazione in vista dell'esame, prova a rispondere ad alta voce alle sette domande di verifica sulla destra: che cos'è il deep learning e quali aspetti accomunano i suoi approcci; se servono davvero molti strati discutendo la parità e il no-flattening; qual è il bias induttivo dei modelli profondi; che cosa sono representation learning, pre-training, transfer learning e autoencoder; il confronto tra rappresentazioni simboliche e distribuite; che cos'è il vanishing gradient e come si affronta; infine come funziona il dropout e qual è il suo effetto regolarizzante. Nella prossima lezione esploreremo il ruolo sorprendente della casualità nelle reti neurali randomizzate.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.7 · Riepilogo e verifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Punti chiave del capitolo</div>\n      <ul class=\"clean-list\">\n        <li id=\"pk1\"><strong>DL:</strong> molti strati non lineari che apprendono una gerarchia di rappresentazioni distribuite.</li>\n        <li id=\"pk2\"><strong>No-flattening:</strong> funzioni compatte in profondità possono esplodere in modelli shallow (parità: \\(2^{n-1}+1\\) vs \\(3(n-1)\\) porte).</li>\n        <li id=\"pk3\"><strong>Bias induttivo:</strong> la funzione è una composizione di funzioni più semplici.</li>\n        <li id=\"pk4\"><strong>Representation learning:</strong> pre-training (autoencoder), transfer learning; rappresentazioni distribuite (\\(k^n\\), attributi condivisi).</li>\n        <li id=\"pk5\"><strong>Tecniche:</strong> ReLU, cross-entropy + softmax, SGD+momentum/Adam, gradient clipping, batch norm, dropout.</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Cosa si intende per deep learning? Aspetti comuni ai vari approcci?</li>\n        <li>Servono davvero molti strati? Parità e risultati di no-flattening.</li>\n        <li>Qual è il bias induttivo dei modelli profondi?</li>\n        <li>Cos'è il representation learning? Pre-training, transfer learning e autoencoder.</li>\n        <li>Rappresentazioni simboliche vs distribuite: vantaggi delle seconde.</li>\n        <li>Cos'è il vanishing gradient? Come si affronta?</li>\n        <li>Descrivere il dropout e spiegarne l'effetto regolarizzante.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "action": "show",
+          "target": "#s1",
+          "anchor": "cinque punti chiave",
+          "at": 1.2
+        },
+        {
+          "action": "highlight",
+          "target": "#pk1",
+          "anchor": "Primo: il deep learning utilizza",
+          "at": 6.8
+        },
+        {
+          "action": "highlight",
+          "target": "#pk2",
+          "anchor": "Secondo: il principio di no-flattening",
+          "at": 16.4
+        },
+        {
+          "action": "highlight",
+          "target": "#pk3",
+          "anchor": "Terzo: il bias induttivo",
+          "at": 33.7
+        },
+        {
+          "action": "highlight",
+          "target": "#pk4",
+          "anchor": "Quarto: il representation learning",
+          "at": 42.5
+        },
+        {
+          "action": "highlight",
+          "target": "#pk5",
+          "anchor": "Quinto: le tecniche",
+          "at": 54.9
+        },
+        {
+          "action": "show",
+          "target": "#s2",
+          "anchor": "sette domande di verifica",
+          "at": 75.8
+        }
+      ],
+      "duration_sec": 114.2,
+      "id": "scene-20",
+      "audio_file": "audio/scene-20.wav",
+      "subtitle_file": "subtitles/scene-20.json"
+    }
+  ]
+}

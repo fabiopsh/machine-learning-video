@@ -237,15 +237,22 @@ function tryParseSpokenNumber(words, cleaned, i) {
     const nextIsPuntoAfter = sep === "virgola" && pos + 2 < cleaned.length && cleaned[pos + 2] === "punto";
     if (!nextIsPuntoAfter && nextW !== "un") {
       if (nextW === "zero" && pos + 2 < cleaned.length) {
-        const d2 = parseSingleItalianInt(cleaned[pos + 2]);
-        if (d2 !== null && d2 >= 0 && d2 < 10) {
+        // Support multiple leading zeros after comma: "zero virgola zero zero uno" -> 0.001
+        let zCount = 0;
+        let zPos = pos + 1;
+        while (zPos < cleaned.length && cleaned[zPos] === "zero") {
+          zCount++;
+          zPos++;
+        }
+        const tailVal = zPos < cleaned.length ? parseSingleItalianInt(cleaned[zPos]) : null;
+        if (tailVal !== null && tailVal >= 0 && tailVal < 100) {
           isDecimal = true;
-          fracStr = `0${d2}`;
-          pos += 3;
+          fracStr = "0".repeat(zCount) + String(tailVal);
+          pos = zPos + 1;
         } else if (sep === "punto") {
           isDecimal = true;
-          fracStr = "0";
-          pos += 2;
+          fracStr = "0".repeat(zCount);
+          pos = zPos;
         }
       } else {
         const fracVal = parseSingleItalianInt(nextW);
@@ -348,10 +355,65 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:w_i"], rx: /^w\s*(?:con\s+)?i$/, spec: 10 },
   { keys: ["var:w_j"], rx: /^w\s*(?:con\s+)?j$/, spec: 10 },
   { keys: ["var:w_k"], rx: /^w\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:w_kj"], rx: /^w\s*(?:con\s+)?k\s+j$/, spec: 11 },
+  { keys: ["var:w_ji"], rx: /^w\s*(?:con\s+)?j\s+i$/, spec: 11 },
+  { keys: ["var:w_ij"], rx: /^w\s*(?:con\s+)?i\s+j$/, spec: 11 },
+  { keys: ["var:w_tu"], rx: /^w\s*(?:con\s+)?t\s+u$/, spec: 11 },
+  { keys: ["var:w_t0"], rx: /^w\s*(?:con\s+)?t\s+zero$/, spec: 11 },
+  { keys: ["var:w_ts"], rx: /^w\s*(?:con\s+)?t\s+s$/, spec: 11 },
+  { keys: ["var:w_hj"], rx: /^w\s*(?:con\s+)?h\s+j$/, spec: 11 },
+  { keys: ["var:w_i0"], rx: /^w\s*(?:con\s+)?i\s+zero$/, spec: 11 },
   { keys: ["var:w_star"], rx: /^w\s+stella$/, spec: 10 },
   { keys: ["var:w_new"], rx: /^w\s+nuovo$/, spec: 10 },
+  { keys: ["var:w_old"], rx: /^w\s+vecchio$/, spec: 10 },
+  { keys: ["var:w_i_prime"], rx: /^w\s+primo\s*(?:con\s+)?i$/, spec: 11 },
+  { keys: ["var:Delta_p_wtu", "var:Delta_w"], rx: /^delta\s*(?:con\s+)?p\s*(?:di\s+)?w\s*(?:con\s+)?t\s+u$/, spec: 11 },
+  { keys: ["var:Delta_wkj", "var:w_kj"], rx: /^delta\s+w\s*(?:con\s+)?k\s+j$/, spec: 11 },
+  { keys: ["var:Delta_wji", "var:w_ji"], rx: /^delta\s+w\s*(?:con\s+)?j\s+i$/, spec: 11 },
+  { keys: ["var:Delta_w_old", "var:Delta_w"], rx: /^delta\s+w\s+vecchio$/, spec: 11 },
+  { keys: ["var:Delta_w_new", "var:Delta_w"], rx: /^delta\s+w\s+nuovo$/, spec: 11 },
   { keys: ["var:d_p"], rx: /^d\s*(?:con\s+)?p$/, spec: 10 },
   { keys: ["var:d_i"], rx: /^d\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:d_k"], rx: /^d\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:d_r"], rx: /^d\s*(?:con\s+)?r$/, spec: 10 },
+  { keys: ["var:D_l", "var:D"], rx: /^d\s*(?:con\s+)?l$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_r", "var:D"], rx: /^d\s*(?:con\s+)?r$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_k", "var:D"], rx: /^d\s*(?:con\s+)?k$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_i", "var:D"], rx: /^d\s*(?:con\s+)?i$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_1", "var:D"], rx: /^d\s*(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:D_2", "var:D"], rx: /^d\s*(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:D_TR", "var:TR"], rx: /^d\s*(?:con\s+)?t\s*r$/, spec: 10 },
+  { keys: ["var:D_VL", "var:VL"], rx: /^d\s*(?:con\s+)?v\s*l$/, spec: 10 },
+  { keys: ["var:D_TS", "var:TS"], rx: /^d\s*(?:con\s+)?t\s*s$/, spec: 10 },
+  { keys: ["var:o_k"], rx: /^o\s+con\s+k$/, spec: 10 },
+  { keys: ["var:o_j"], rx: /^o\s+con\s+j$/, spec: 10 },
+  { keys: ["var:o_i"], rx: /^o\s+con\s+i$/, spec: 10 },
+  { keys: ["var:o_t"], rx: /^o\s+con\s+t$/, spec: 10 },
+  { keys: ["var:o_u"], rx: /^o\s+con\s+u$/, spec: 10 },
+  { keys: ["var:o_p"], rx: /^o\s+con\s+p$/, spec: 10 },
+  { keys: ["var:o_r"], rx: /^o\s+con\s+r$/, spec: 10 },
+  { keys: ["var:o_0"], rx: /^o\s+con\s+zero$/, spec: 10 },
+  { keys: ["bar:o"], rx: /^o\s+(?:medio|soprassegnat[oa])$/, spec: 10 },
+  { keys: ["var:e_i_sq", "var:e_i"], rx: /^e\s+con\s+i\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:e_i"], rx: /^e\s+con\s+i$/, spec: 10 },
+  { keys: ["var:y_i"], rx: /^y\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:y_t"], rx: /^y\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:h_t"], rx: /^h\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:c_t"], rx: /^c\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:x_t"], rx: /^x\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:x_q"], rx: /^x\s*(?:con\s+)?q$/, spec: 10 },
+  { keys: ["var:x_i_prime", "var:x_prime"], rx: /^x\s+primo\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:z_1"], rx: /^z\s*(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:z_l"], rx: /^z\s*(?:con\s+)?l$/, spec: 10 },
+  { keys: ["var:z_i"], rx: /^z\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:z_r"], rx: /^z\s*(?:con\s+)?r$/, spec: 10 },
+  { keys: ["var:N_k"], rx: /^n\s+con\s+k$/, spec: 10 },
+  { keys: ["var:N_0"], rx: /^n\s*(?:con\s+)?zero$/, spec: 10 },
+  { keys: ["var:H_1", "var:h_1"], rx: /^h\s*(?:con\s+)?uno$/, rawTest: (r) => /^H\b/.test(r), spec: 10 },
+  { keys: ["var:H_2", "var:h_2"], rx: /^h\s*(?:con\s+)?due$/, rawTest: (r) => /^H\b/.test(r), spec: 10 },
+  { keys: ["var:h_1", "var:H_1"], rx: /^h\s*(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:h_2", "var:H_2"], rx: /^h\s*(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:h_star", "var:h"], rx: /^h\s+stella$/, spec: 10 },
   { keys: ["var:h_prime"], rx: /^h\s+primo$/, spec: 10 },
   { keys: ["var:E_prime"], rx: /^e\s+primo$/, spec: 10 },
   { keys: ["var:R_prime"], rx: /^r\s+primo$/, spec: 10 },
@@ -360,20 +422,62 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["bar:h"], rx: /^h\s+soprassegnat[oa]$/, spec: 10 },
   { keys: ["bar:d"], rx: /^d\s+soprassegnat[oa]$/, spec: 10 },
   { keys: ["bar:x"], rx: /^x\s+soprassegnat[oa]$/, spec: 10 },
+  { keys: ["bar:D_k"], rx: /^d\s+soprassegnat[oa]\s+k$/, spec: 10 },
   { keys: ["var:h_w"], rx: /^h\s+con\s+w$/, spec: 10 },
-  { keys: ["var:phi_k", "sym:phi"], rx: /^phi\s*(?:con\s+)?k$/, spec: 10 },
-  { keys: ["var:phi_j", "sym:phi"], rx: /^phi\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:f_sigma_prime", "var:f_prime"], rx: /^f\s+primo\s+sigma$/, spec: 11 },
+  { keys: ["var:f_sigma"], rx: /^f\s+sigma$/, spec: 10 },
+  { keys: ["var:f_k_prime", "var:f_prime"], rx: /^f\s+primo\s*(?:con\s+)?k$/, spec: 11 },
+  { keys: ["var:f_j_prime", "var:f_prime"], rx: /^f\s+primo\s*(?:con\s+)?j$/, spec: 11 },
+  { keys: ["var:f_t_prime", "var:f_prime"], rx: /^f\s+primo\s*(?:con\s+)?t$/, spec: 11 },
+  { keys: ["var:f_prime"], rx: /^f\s+primo$/, spec: 10 },
+  { keys: ["var:f_k"], rx: /^f\s+con\s+k$/, spec: 10 },
+  { keys: ["var:f_j"], rx: /^f\s+con\s+j$/, spec: 10 },
+  { keys: ["var:f_t"], rx: /^f\s+con\s+t$/, spec: 10 },
+  { keys: ["var:net_i", "var:net"], rx: /^net\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:net_j", "var:net"], rx: /^net\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:net_k", "var:net"], rx: /^net\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:net_t", "var:net"], rx: /^net\s*(?:con\s+)?t$/, spec: 10 },
+  { keys: ["var:net"], rx: /^(?:net|input\s+netto)$/, spec: 10 },
+  { keys: ["var:phi_k", "sym:phi"], rx: /^(?:phi|fi)\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:phi_j", "sym:phi"], rx: /^(?:phi|fi)\s*(?:con\s+)?j$/, spec: 10 },
   { keys: ["var:delta_p", "var:delta"], rx: /^delta\s*(?:con\s+)?p$/, spec: 10 },
+  { keys: ["var:delta_k", "var:delta"], rx: /^delta\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:delta_j", "var:delta"], rx: /^delta\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:delta_t", "var:delta"], rx: /^delta\s*(?:con\s+)?t$/, spec: 10 },
+  { keys: ["var:delta_h", "var:delta"], rx: /^delta\s*(?:con\s+)?h$/, spec: 10 },
+  { keys: ["var:alpha_i", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:xi_i", "sym:xi"], rx: /^(?:csi|xi)\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:theta_m_star", "var:theta_m", "sym:theta"], rx: /^theta\s+stella(?:\s*(?:con\s+)?m)?$/, spec: 10 },
+  { keys: ["var:theta_m", "sym:theta"], rx: /^theta\s*(?:con\s+)?m$/, spec: 10 },
+  { keys: ["var:eta_0", "sym:eta"], rx: /^eta\s*(?:con\s+)?zero$/, spec: 10 },
+  { keys: ["var:eta_tau", "sym:eta"], rx: /^eta\s*(?:con\s+)?tau$/, spec: 10 },
+  { keys: ["var:E_tot", "var:E"], rx: /^e\s+tot$/, spec: 10 },
+  { keys: ["var:E_p", "var:E"], rx: /^e\s+con\s+p$/, spec: 10 },
+  { keys: ["var:E_pk", "var:E"], rx: /^e\s+con\s+p\s+k$/, spec: 10 },
   { keys: ["var:E_RMS"], rx: /^(?:e\s+rms|root\s+mean\s+square)$/, spec: 10 },
   { keys: ["var:R_emp"], rx: /^(?:r\s+emp|rischio\s+empirico)$/, spec: 10 },
+  { keys: ["var:R_sq"], rx: /^r\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["var:S_d_sq", "var:S_sq"], rx: /^s\s*(?:con\s+)?d\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["var:S_sq"], rx: /^s\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["pow:2^m"], rx: /^due\s+alla\s+m$/, spec: 10 },
+  { keys: ["pow:2^3"], rx: /^due\s+alla\s+terza$/, spec: 10 },
+  { keys: ["pow:alpha^2"], rx: /^al(?:fa|pha)\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["frac:1/k"], rx: /^uno\s+su\s+k$/, spec: 10 },
+  { keys: ["frac:1/r"], rx: /^uno\s+su\s+r$/, spec: 10 },
   { keys: ["var:VS"], rx: /^version\s+space$/, spec: 9 },
   { keys: ["var:TR"], rx: /^training\s+set$/, spec: 8 },
   { keys: ["var:P_X"], rx: /^insieme\s+delle\s+parti(?:\s+di\s+x)?$/, spec: 10 },
 
   // 4. Operators & Relations & Greek
-  { keys: ["op:sum"], rx: /^(?:somma(?:\s+su\s+p|\s+da\s+[ijkp]\s+uguale\s+(?:zero|uno)\s+a\s+[lnmk]|\s+per\s+[ijkp]\s+da\s+(?:zero|uno)\s+a\s+[lnmk]|\s+di)?|sommatoria)$/, spec: 10 },
+  { keys: ["op:sum"], rx: /^(?:somma(?:\s+su\s+[ijkp]|\s+da\s+[ijkp]\s+uguale\s+(?:zero|uno)\s+a\s+[lnmk]|\s+per\s+[ijkp]\s+da\s+(?:zero|uno)\s+a\s+[lnmk]|\s+di)?|sommatoria)$/, spec: 10 },
   { keys: ["op:prod"], rx: /^prodotto(?:\s+delle\s+probabilita)?$/, spec: 9 },
   { keys: ["op:int"], rx: /^integrale$/, spec: 10 },
+  { keys: ["op:E", "var:E"], rx: /^valore\s+atteso$/, spec: 10 },
+  { keys: ["op:argmin"], rx: /^arg\s*min$/, spec: 10 },
+  { keys: ["op:argmax"], rx: /^arg\s*max$/, spec: 10 },
+  { keys: ["op:max"], rx: /^massimo$/, spec: 9 },
+  { keys: ["op:min"], rx: /^minimo$/, spec: 9 },
+  { keys: ["op:tanh"], rx: /^tangente\s+iperbolica$/, spec: 10 },
   { keys: ["op:sqrt"], rx: /^(?:radice(?:\s+quadrata)?|radici)$/, spec: 10 },
   { keys: ["op:Cov"], rx: /^covarianza$/, spec: 10 },
   { keys: ["op:Var"], rx: /^varianza$/, spec: 10 },
@@ -388,20 +492,28 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["op:nabla"], rx: /^(?:sub\s+)?gradiente$/, spec: 9 },
   { keys: ["op:norm"], rx: /^norma(?:\s+quadra|\s+al\s+quadrato)?$/, spec: 10 },
   { keys: ["op:abs"], rx: /^(?:modulo|valore\s+assoluto|valori\s+assoluti|cardinalita)$/, spec: 9 },
+  { keys: ["op:pm"], rx: /^piu\s+o\s+meno$/, spec: 9 },
   { keys: ["var:false"], rx: /^falso$/, spec: 9 },
+  { keys: ["sym:alpha"], rx: /^al(?:fa|pha)$/, spec: 10 },
+  { keys: ["sym:beta"], rx: /^beta$/, spec: 10 },
+  { keys: ["sym:gamma"], rx: /^gamma$/, spec: 10 },
+  { keys: ["sym:tau"], rx: /^tau$/, spec: 10 },
+  { keys: ["sym:rho"], rx: /^(?:rho|ro)$/, spec: 10 },
+  { keys: ["sym:xi"], rx: /^(?:csi|xi)$/, spec: 10 },
+  { keys: ["sym:infty"], rx: /^infinit[ao]$/, spec: 9 },
   { keys: ["sym:lambda"], rx: /^lambda$/, spec: 10 },
   { keys: ["sym:eta"], rx: /^(?:eta|learning\s+rate)$/, spec: 10 },
   { keys: ["var:delta"], rx: /^delta$/, spec: 9 },
-  { keys: ["sym:sigma_sq", "sym:sigma"], rx: /^sigma\s+quadro$/, spec: 10 },
+  { keys: ["sym:sigma_sq", "sym:sigma"], rx: /^(?:sigma\s+quadro|varianza\s+del\s+rumore)$/, spec: 10 },
   { keys: ["sym:Sigma", "sym:sigma"], rx: /^sigma$/, rawTest: (r) => /^Sigma\b/.test(r), spec: 10 },
   { keys: ["sym:sigma", "sym:Sigma"], rx: /^sigma$/, spec: 10 },
   { keys: ["sym:theta"], rx: /^theta$/, spec: 10 },
-  { keys: ["sym:eps"], rx: /^epsilon$/, spec: 10 },
+  { keys: ["sym:eps"], rx: /^(?:epsilon|vc\s*confidence)$/, spec: 10 },
   { keys: ["sym:pi"], rx: /^pi\s+greco$/, spec: 10 },
-  { keys: ["sym:phi"], rx: /^phi$/, spec: 10 },
+  { keys: ["sym:phi"], rx: /^(?:phi|fi)$/, spec: 10 },
   { keys: ["sym:mu"], rx: /^mu$/, spec: 10 },
-  { keys: ["var:VC"], rx: /^(?:vc|vc\s+dimension)$/, spec: 10 },
-  { keys: ["rel:ge"], rx: /^maggiore\s+o\s+uguale$/, spec: 9 },
+  { keys: ["var:VC"], rx: /^(?:vc|vc\s*dimension)$/, spec: 10 },
+  { keys: ["rel:ge"], rx: /^(?:maggiore\s+o\s+uguale|almeno)$/, spec: 9 },
   { keys: ["rel:le"], rx: /^minore\s+o\s+uguale$/, spec: 9 },
   { keys: ["rel:gt"], rx: /^maggiore$/, spec: 8 },
   { keys: ["rel:lt"], rx: /^minore$/, spec: 8 },
@@ -461,7 +573,7 @@ function extractSpokenMathEvents(words) {
         const prevC = cleaned[i - 1] || "";
         let key = null;
 
-        if ("HXLRMKUV".includes(rl)) {
+        if ("HXLRMKUVDPNSOGW".includes(rl)) {
           key = `var:${rl}`;
         } else if (rl === "E") {
           if (!sentStart || nextC === "di" || nextC === "uguale" || prevC === "errore" || prevC === "derivata") {
@@ -475,10 +587,10 @@ function extractSpokenMathEvents(words) {
           if (!sentStart || nextC === "diventa" || nextC === "uguale") {
             key = `var:${rl}`;
           }
-        } else if ("xwdhflnpvjkmqt".includes(rl)) {
+        } else if ("xwdhflnpvjkmqtrzbcuy".includes(rl)) {
           key = `var:${rl}`;
         } else if (rl === "i") {
-          if (prevC === "da" || prevC === "per" || prevC === "componente" || prevC === "indice" || nextC === "uguale" || nextC === "da") {
+          if (prevC === "da" || prevC === "per" || prevC === "componente" || prevC === "indice" || nextC === "uguale" || nextC === "da" || nextC === "di") {
             key = "var:i";
           }
         }
@@ -849,6 +961,14 @@ function indexFormulaAtoms(slideCard, blocks) {
               addAtom(el, "frac:1/2", true, root);
               continue;
             }
+            if (numTxt === "1" && (denTxt === "k" || denTxt === "K")) {
+              addAtom(el, "frac:1/k", true, root);
+              continue;
+            }
+            if (numTxt === "1" && denTxt === "r") {
+              addAtom(el, "frac:1/r", true, root);
+              continue;
+            }
             // Non-atomic fraction: visit NUMERATOR first, DENOMINATOR second!
             visitChildren(parts.num);
             visitChildren(parts.den);
@@ -871,7 +991,11 @@ function indexFormulaAtoms(slideCard, blocks) {
           if (txt === "sin") { addAtom(el, "op:sin", true, root); continue; }
           if (txt === "cos") { addAtom(el, "op:cos", true, root); continue; }
           if (txt === "exp") { addAtom(el, "op:exp", true, root); continue; }
+          if (txt === "tanh") { addAtom(el, "op:tanh", true, root); continue; }
+          if (txt === "max") { addAtom(el, "op:max", true, root); continue; }
+          if (txt === "min") { addAtom(el, "op:min", true, root); continue; }
           if (/^argmin/i.test(txt)) { addAtom(el, "op:argmin", true, root); continue; }
+          if (/^argmax/i.test(txt)) { addAtom(el, "op:argmax", true, root); continue; }
         }
 
         // 3. Square roots
@@ -918,12 +1042,14 @@ function indexFormulaAtoms(slideCard, blocks) {
           continue;
         }
 
-        // 6. Accented bars (\bar d, \bar x, \bar h)
+        // 6. Accented bars (\bar d, \bar x, \bar h, \bar o, \bar D_k)
         if (el.classList.contains("accent") && el.classList.contains("mord")) {
           const txt = katexText(el);
           if (txt.includes("h")) { addAtom(el, "bar:h", true, root); continue; }
           if (txt.includes("d")) { addAtom(el, "bar:d", true, root); continue; }
           if (txt.includes("x")) { addAtom(el, "bar:x", true, root); continue; }
+          if (txt.includes("o")) { addAtom(el, "bar:o", true, root); continue; }
+          if (txt.includes("D")) { addAtom(el, ["bar:D_k", "var:D"], true, root); continue; }
         }
 
         // 7. Subscript/Superscript .mord
@@ -938,27 +1064,45 @@ function indexFormulaAtoms(slideCard, blocks) {
             else if (txt === "24") added = addAtom(el, "pow:2^4", true, root);
             else if (txt === "216") added = addAtom(el, "pow:2^16", true, root);
             else if (txt === "29") added = addAtom(el, "pow:2^9", true, root);
+            else if (txt === "2m") added = addAtom(el, "pow:2^m", true, root);
+            else if (txt === "23" && supOnly) added = addAtom(el, "pow:2^3", true, root);
             else if (txt === "3n") added = addAtom(el, "pow:3^n", true, root);
             else if (txt === "32" && supOnly) added = addAtom(el, ["pow:3^2", "num:9"], true, root);
+            else if (txt === "α2" && supOnly) added = addAtom(el, ["pow:alpha^2", "sym:alpha"], true, root);
             else if (txt === "L1") added = addAtom(el, "norm:L1", true, root);
             else if (txt === "L2") added = addAtom(el, "norm:L2", true, root);
             else if (txt === "Rn") added = addAtom(el, ["set:R^n", "set:R"], true, root);
             else if (txt === "RK") added = addAtom(el, ["set:R^K", "set:R"], true, root);
             else if (txt === "Rl×n") added = addAtom(el, ["dim:lxn", "set:R"], true, root);
+            else if (txt === "R2" && supOnly) added = addAtom(el, "var:R_sq", true, root);
+            else if (txt === "S2" && supOnly) added = addAtom(el, "var:S_sq", true, root);
+            else if (/^S(?:2d|d2)$/.test(txt)) added = addAtom(el, ["var:S_d_sq", "var:S_sq"], true, root);
             // Primes
             else if (txt === "h′") added = addAtom(el, "var:h_prime", true, root);
             else if (txt === "E′") added = addAtom(el, "var:E_prime", true, root);
             else if (txt === "R′") added = addAtom(el, "var:R_prime", true, root);
             else if (txt === "x′") added = addAtom(el, "var:x_prime", true, root);
             else if (txt === "d′") added = addAtom(el, "var:d_prime", true, root);
+            else if (txt === "f′") added = addAtom(el, "var:f_prime", true, root);
+            else if (/^f(?:′σ|σ′)$/.test(txt)) added = addAtom(el, ["var:f_sigma_prime", "var:f_prime"], true, root);
+            else if (/^f(?:′([jkt])|([jkt])′)$/.test(txt)) {
+              const idx = txt.replace(/[f′]/g, "");
+              added = addAtom(el, [`var:f_${idx}_prime`, "var:f_prime"], true, root);
+            }
+            else if (/^w(?:′i|i′)$/.test(txt)) added = addAtom(el, ["var:w_i_prime", "var:w_i"], true, root);
+            else if (/^x(?:′i|i′)$/.test(txt)) added = addAtom(el, ["var:x_i_prime", "var:x_prime"], true, root);
+            // Stars (handle both ASCII * and KaTeX Unicode ∗ \u2217!)
+            else if (/^w(?:[\*∗](\d)|(\d)[\*∗])$/.test(txt)) {
+              const d = txt.replace(/\D/g, "");
+              added = addAtom(el, [`var:w_${d}`, "var:w_star"], true, root);
+            } else if (/^w[\*∗]$/.test(txt)) added = addAtom(el, "var:w_star", true, root);
+            else if (/^h[\*∗]/.test(txt)) added = addAtom(el, ["var:h_star", "var:h"], true, root);
+            else if (/^θ(?:[\*∗]m|m[\*∗])$/.test(txt)) added = addAtom(el, ["var:theta_m_star", "var:theta_m", "sym:theta"], true, root);
             // Dual sub+sup
             else if (/^x(?:2p|p2)$/i.test(txt)) added = addAtom(el, ["var:x_p_sq", "var:x_p"], true, root);
             else if (/^x(?:Tp|pT)$/.test(txt)) added = addAtom(el, ["var:x_p_T", "var:x_p"], true, root);
             else if (/^w(?:2j|j2)$/i.test(txt)) added = addAtom(el, ["var:w_j_sq", "var:w_j"], true, root);
-            else if (/^w(?:\*(\d)|(\d)\*)$/.test(txt)) {
-              const d = txt.replace(/\D/g, "");
-              added = addAtom(el, [`var:w_${d}`, "var:w_star"], true, root);
-            } else if (txt === "w*") added = addAtom(el, "var:w_star", true, root);
+            else if (/^e(?:2i|i2)$/.test(txt)) added = addAtom(el, ["var:e_i_sq", "var:e_i"], true, root);
             // Transposes & pseudoinverses
             else if (txt === "XT") added = addAtom(el, "var:X_T", true, root);
             else if (txt === "X+") added = addAtom(el, "var:X_plus", true, root);
@@ -973,23 +1117,49 @@ function indexFormulaAtoms(slideCard, blocks) {
             else if (txt === "xj" && supOnly) added = addAtom(el, ["pow:x^j", "var:x"], true, root);
             else if (txt === "xM" && supOnly) added = addAtom(el, ["pow:x^M", "var:x"], true, root);
             else if (txt === "w2" && supOnly) added = addAtom(el, ["var:w_sq", "var:w"], true, root);
-            // Subscripted variables
+            // Expectation \E_P, \E_z, \E_i
+            else if (/^E/.test(txt) && el.querySelector(".mathbb")) added = addAtom(el, ["op:E", "var:E"], true, root);
+            // Subscripted weights (incl. double-indexed neural weights!)
+            else if (/^w(kj|ji|ij|tu|t0|ts|hj|i0)$/.test(txt)) added = addAtom(el, `var:w_${txt.slice(1)}`, true, root);
             else if (/^w(\d)$/.test(txt)) added = addAtom(el, `var:w_${txt[1]}`, true, root);
             else if (txt === "wnew") added = addAtom(el, "var:w_new", true, root);
+            else if (txt === "wold") added = addAtom(el, "var:w_old", true, root);
             else if (/^w([ijkm])$/.test(txt)) added = addAtom(el, `var:w_${txt[1]}`, true, root);
+            // Subscripted inputs, targets, outputs, errors, hidden states, datasets
             else if (txt === "xp,i") added = addAtom(el, ["var:x_pi", "var:x_p"], true, root);
             else if (txt === "xp,j") added = addAtom(el, ["var:x_pj", "var:x_p"], true, root);
             else if (txt === "xp") added = addAtom(el, "var:x_p", true, root);
-            else if (/^x([0-9abijk])$/.test(txt)) added = addAtom(el, `var:x_${txt[1]}`, true, root);
-            else if (/^d([pi])$/.test(txt)) added = addAtom(el, `var:d_${txt[1]}`, true, root);
-            else if (/^hw\*?$/.test(txt)) added = addAtom(el, ["var:h_w", "var:h"], true, root);
+            else if (/^x([0-9abijkqt])$/.test(txt)) added = addAtom(el, `var:x_${txt[1]}`, true, root);
+            else if (/^d([pikr])$/.test(txt)) added = addAtom(el, `var:d_${txt[1]}`, true, root);
+            else if (/^D(TR|VL|TS|[lrki12K])$/.test(txt)) added = addAtom(el, [`var:D_${txt.slice(1)}`, "var:D"], true, root);
+            else if (/^o([kjiturp0])$/.test(txt)) added = addAtom(el, `var:o_${txt[1]}`, true, root);
+            else if (txt === "ei") added = addAtom(el, "var:e_i", true, root);
+            else if (/^y([it])$/.test(txt)) added = addAtom(el, `var:y_${txt[1]}`, true, root);
+            else if (/^z([1lir])$/.test(txt)) added = addAtom(el, `var:z_${txt[1]}`, true, root);
+            else if (txt === "ht") added = addAtom(el, "var:h_t", true, root);
+            else if (txt === "ct") added = addAtom(el, "var:c_t", true, root);
+            else if (/^h([12])$/.test(txt)) added = addAtom(el, `var:h_${txt[1]}`, true, root);
+            else if (/^H([12n])$/.test(txt)) added = addAtom(el, [`var:H_${txt[1]}`, "var:H"], true, root);
+            else if (/^N([k0])$/.test(txt)) added = addAtom(el, `var:N_${txt[1]}`, true, root);
+            else if (txt === "fσ") added = addAtom(el, "var:f_sigma", true, root);
+            else if (/^f([jkt])$/.test(txt)) added = addAtom(el, `var:f_${txt[1]}`, true, root);
+            else if (/^net([ijkt])$/.test(txt)) added = addAtom(el, [`var:net_${txt.slice(3)}`, "var:net"], true, root);
+            else if (/^hw[\*∗]?$/.test(txt)) added = addAtom(el, ["var:h_w", "var:h"], true, root);
             else if (txt === "ERMS") added = addAtom(el, "var:E_RMS", true, root);
             else if (txt === "ETR") added = addAtom(el, "var:E_TR", true, root);
+            else if (txt === "Etot") added = addAtom(el, ["var:E_tot", "var:E"], true, root);
+            else if (txt === "Ep") added = addAtom(el, ["var:E_p", "var:E"], true, root);
+            else if (txt === "Ep,k") added = addAtom(el, ["var:E_pk", "var:E"], true, root);
             else if (txt === "Remp") added = addAtom(el, "var:R_emp", true, root);
             else if (txt.startsWith("VS")) added = addAtom(el, "var:VS", true, root);
-            else if (txt === "δp") added = addAtom(el, ["var:delta_p", "var:delta"], true, root);
+            else if (/^δ([pkjth])$/.test(txt)) added = addAtom(el, [`var:delta_${txt[1]}`, "var:delta"], true, root);
+            else if (txt === "αi") added = addAtom(el, ["var:alpha_i", "sym:alpha"], true, root);
+            else if (txt === "ξi") added = addAtom(el, ["var:xi_i", "sym:xi"], true, root);
+            else if (txt === "η0") added = addAtom(el, ["var:eta_0", "sym:eta"], true, root);
+            else if (txt === "ητ") added = addAtom(el, ["var:eta_tau", "sym:eta"], true, root);
             else if (txt === "σ2") added = addAtom(el, ["sym:sigma_sq", "sym:sigma"], true, root);
             else if (/^[φϕ]([kj])$/.test(txt)) added = addAtom(el, [`var:phi_${txt[1]}`, "sym:phi"], true, root);
+            else if (txt === "θm") added = addAtom(el, ["var:theta_m", "sym:theta"], true, root);
             else if (/^θ/.test(txt)) added = addAtom(el, "sym:theta", true, root);
             if (added) continue;
           }
@@ -997,6 +1167,14 @@ function indexFormulaAtoms(slideCard, blocks) {
           // 8. Leaf single-token symbols, variables, and integers
           if (!el.querySelector(".mord")) {
             if (/^\d+$/.test(txt)) { addAtom(el, canonicalNumKey(txt), true, root); continue; }
+            if (txt === "α") { addAtom(el, "sym:alpha", true, root); continue; }
+            if (txt === "β") { addAtom(el, "sym:beta", true, root); continue; }
+            if (txt === "γ") { addAtom(el, "sym:gamma", true, root); continue; }
+            if (txt === "τ") { addAtom(el, "sym:tau", true, root); continue; }
+            if (txt === "ρ") { addAtom(el, "sym:rho", true, root); continue; }
+            if (txt === "ξ") { addAtom(el, "sym:xi", true, root); continue; }
+            if (txt === "∞") { addAtom(el, "sym:infty", true, root); continue; }
+            if (txt === "±") { addAtom(el, "op:pm", true, root); continue; }
             if (txt === "λ") { addAtom(el, "sym:lambda", true, root); continue; }
             if (txt === "η") { addAtom(el, "sym:eta", true, root); continue; }
             if (txt === "δ" || txt === "Δ") { addAtom(el, "var:delta", true, root); continue; }
@@ -1008,10 +1186,12 @@ function indexFormulaAtoms(slideCard, blocks) {
             if (txt === "ϕ" || txt === "φ") { addAtom(el, "sym:phi", true, root); continue; }
             if (txt === "μ") { addAtom(el, "sym:mu", true, root); continue; }
             if (txt === "∇") { addAtom(el, "op:nabla", true, root); continue; }
+            if (txt === "net") { addAtom(el, "var:net", true, root); continue; }
             if (txt === "VC") { addAtom(el, "var:VC", true, root); continue; }
             if (txt === "TR") { addAtom(el, "var:TR", true, root); continue; }
             if (txt === "VS") { addAtom(el, "var:VS", true, root); continue; }
             if (txt === "false") { addAtom(el, "var:false", true, root); continue; }
+            if (txt === "E" && el.classList.contains("mathbb")) { addAtom(el, ["op:E", "var:E"], true, root); continue; }
             if (txt === "P" && el.classList.contains("mathcal")) { addAtom(el, ["var:P_X", "var:P"], true, root); continue; }
             if (txt === "R" && el.classList.contains("mathbb")) { addAtom(el, ["set:R", "var:R"], true, root); continue; }
             if (/^[A-Za-z]$/.test(txt)) { addAtom(el, `var:${txt}`, true, root); continue; }
@@ -1299,15 +1479,18 @@ export class LiveSyncEngine {
       hlRows.sort((a, b) => hlAtMap.get(a) - hlAtMap.get(b));
       for (let r = 0; r < hlRows.length; r++) {
         const tr = hlRows[r];
+        const parentTable = tr.closest("table");
+        const tableMeta = this.blocks.find((b) => b.el === parentTable);
+        const tableEnd = tableMeta ? tableMeta.activeEnd : totalDur;
         const parentShow = getShowAt(tr);
         const startHl = r === 0 ? Math.min(parentShow, hlAtMap.get(tr) - 8) : hlAtMap.get(tr);
-        const nextHl = r + 1 < hlRows.length ? hlAtMap.get(hlRows[r + 1]) : totalDur;
+        const nextHl = r + 1 < hlRows.length ? hlAtMap.get(hlRows[r + 1]) : tableEnd;
         mathBlocks.push({
           el: tr,
           showAt: parentShow,
           untilAt: totalDur,
           activeStart: Math.max(parentShow, startHl - 0.5),
-          activeEnd: nextHl,
+          activeEnd: Math.min(nextHl, tableEnd),
           isSpotlight: false
         });
       }

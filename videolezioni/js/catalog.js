@@ -145,6 +145,8 @@ async function initCatalog() {
       const track = stage.querySelector(".roadmap-track");
       partLessons.forEach((lesson, idx) => {
         const isReady = lesson.status === "ready";
+        const isScript = lesson.status === "script_ready";
+        const isOpenable = isReady || isScript;
         const chapLabel = `Cap. ${String(lesson.chapter).padStart(2, "0")}`;
         const dur = lesson.duration_min || lesson.estimated_minutes || 10;
         const pct = chapterProgressPct(lesson);
@@ -154,15 +156,19 @@ async function initCatalog() {
 
         if (idx > 0) {
           const conn = document.createElement("span");
-          conn.className = `map-connector ${isReady ? "active" : ""}`;
+          conn.className = `map-connector ${isOpenable ? "active" : ""}`;
           conn.setAttribute("aria-hidden", "true");
           conn.innerHTML = ICON_LINK;
           nodeWrap.appendChild(conn);
         }
 
-        const node = document.createElement(isReady ? "a" : "div");
-        node.className = `map-node ${isReady ? "ready" : "planned"}`;
-        if (isReady) node.href = lessonUrl(lesson.id);
+        const node = document.createElement(isOpenable ? "a" : "div");
+        node.className = `map-node ${isOpenable ? "ready" : "planned"}`;
+        if (isOpenable) node.href = lessonUrl(lesson.id);
+
+        const badgeLabel = isReady
+          ? (pct === 100 ? `${ICON_CHECK} Completato` : "Pronto")
+          : (isScript ? "Copione pronto" : "In preparazione");
 
         node.innerHTML = `
           <div>
@@ -170,7 +176,7 @@ async function initCatalog() {
               <div>
                 <span class="chap-num">${chapLabel}</span>
                 <span class="${isReady ? "status-pill-ready" : "status-pill-planned"}" style="margin-left:6px;">
-                  ${isReady ? (pct === 100 ? `${ICON_CHECK} Completato` : "Pronto") : "In preparazione"}
+                  ${badgeLabel}
                 </span>
               </div>
               <div class="map-node-art">${chapterMiniSvg(lesson.chapter)}</div>
@@ -181,8 +187,8 @@ async function initCatalog() {
           <div>
             ${pct > 0 ? `<div class="node-progress-bar"><div class="node-progress-fill" style="width:${pct}%"></div></div>` : ""}
             <div class="map-node-foot">
-              <span>${isReady ? `${lesson.scenes_count} scene · ~${dur} min` : lesson.source_tex.split("/").pop()}</span>
-              ${isReady ? `<span class="lesson-cta"><span>${pct > 0 && pct < 100 ? `${pct}%` : "Apri"}</span>${ICON_CHEVRON}</span>` : ""}
+              <span>${isOpenable ? `${lesson.scenes_count} scene · ~${dur} min${isScript ? " (anteprima)" : ""}` : lesson.source_tex.split("/").pop()}</span>
+              ${isOpenable ? `<span class="lesson-cta"><span>${isScript ? "Anteprima" : (pct > 0 && pct < 100 ? `${pct}%` : "Apri")}</span>${ICON_CHEVRON}</span>` : ""}
             </div>
           </div>
         `;
@@ -223,13 +229,19 @@ async function initCatalog() {
 
       for (const lesson of partLessons) {
         const isReady = lesson.status === "ready";
+        const isScript = lesson.status === "script_ready";
+        const isOpenable = isReady || isScript;
         const chapLabel = `Cap. ${String(lesson.chapter).padStart(2, "0")}`;
         const dur = lesson.duration_min || lesson.estimated_minutes || 10;
         const pct = chapterProgressPct(lesson);
 
-        const card = document.createElement(isReady ? "a" : "div");
-        card.className = `bento-card ${isReady ? "ready" : "planned"}`;
-        if (isReady) card.href = lessonUrl(lesson.id);
+        const card = document.createElement(isOpenable ? "a" : "div");
+        card.className = `bento-card ${isOpenable ? "ready" : "planned"}`;
+        if (isOpenable) card.href = lessonUrl(lesson.id);
+
+        const badgeLabel = isReady
+          ? (pct === 100 ? `${ICON_CHECK} Completato` : "Disponibile")
+          : (isScript ? "Copione pronto" : "In preparazione");
 
         card.innerHTML = `
           <div>
@@ -238,7 +250,7 @@ async function initCatalog() {
                 <div class="chap-num">${chapLabel}</div>
                 <div style="margin-top:6px;">
                   <span class="${isReady ? "status-pill-ready" : "status-pill-planned"}">
-                    ${isReady ? (pct === 100 ? `${ICON_CHECK} Completato` : "Disponibile") : "In preparazione"}
+                    ${badgeLabel}
                   </span>
                 </div>
               </div>
@@ -252,8 +264,8 @@ async function initCatalog() {
           <div>
             ${pct > 0 ? `<div class="node-progress-bar" style="margin:0 18px 4px;"><div class="node-progress-fill" style="width:${pct}%"></div></div>` : ""}
             <div class="bento-foot">
-              <span>${isReady ? `${lesson.scenes_count} scene · ~${dur} min` : `Sorgente: ${lesson.source_tex.split("/").pop()}`}</span>
-              ${isReady ? `<span class="lesson-cta"><span>Avvia</span>${ICON_CHEVRON}</span>` : ""}
+              <span>${isOpenable ? `${lesson.scenes_count} scene · ~${dur} min${isScript ? " (anteprima)" : ""}` : `Sorgente: ${lesson.source_tex.split("/").pop()}`}</span>
+              ${isOpenable ? `<span class="lesson-cta"><span>${isScript ? "Anteprima" : "Avvia"}</span>${ICON_CHEVRON}</span>` : ""}
             </div>
           </div>
         `;

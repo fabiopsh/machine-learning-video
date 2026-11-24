@@ -203,7 +203,9 @@
       "title": "Support Vector Machines e metodi kernel",
       "source_tex": "note_migliorate/capitoli/13-svm.tex",
       "summary": "Margine massimo, formulazione duale, variabili slack, kernel trick e SVR.",
-      "status": "planned"
+      "status": "script_ready",
+      "scenes_count": 23,
+      "estimated_minutes": 38
     },
     {
       "id": "14-cnn",
@@ -212,7 +214,9 @@
       "title": "Reti convoluzionali",
       "source_tex": "note_migliorate/capitoli/14-cnn.tex",
       "summary": "Campi recettivi locali, condivisione dei pesi, pooling e architetture convoluzionali.",
-      "status": "planned"
+      "status": "script_ready",
+      "scenes_count": 9,
+      "estimated_minutes": 14
     },
     {
       "id": "15-deep",
@@ -221,7 +225,9 @@
       "title": "Deep learning",
       "source_tex": "note_migliorate/capitoli/15-deep.tex",
       "summary": "Profondità e rappresentazioni gerarchiche, ReLU, normalizzazione, residui e autoencoder.",
-      "status": "planned"
+      "status": "script_ready",
+      "scenes_count": 20,
+      "estimated_minutes": 39
     },
     {
       "id": "16-randomizzate",
@@ -230,7 +236,9 @@
       "title": "Reti neurali randomizzate",
       "source_tex": "note_migliorate/capitoli/16-randomizzate.tex",
       "summary": "Proiezioni casuali, ELM, Reservoir Computing e reti con strati nascosti fissati.",
-      "status": "planned"
+      "status": "script_ready",
+      "scenes_count": 6,
+      "estimated_minutes": 9
     },
     {
       "id": "17-non-supervisionato",
@@ -239,7 +247,9 @@
       "title": "Apprendimento non supervisionato: K-means e SOM",
       "source_tex": "note_migliorate/capitoli/17-non-supervisionato.tex",
       "summary": "Clustering, algoritmo K-means, mappe auto-organizzanti di Kohonen e conservazione topologica.",
-      "status": "planned"
+      "status": "script_ready",
+      "scenes_count": 11,
+      "estimated_minutes": 20
     },
     {
       "id": "18-rnn",
@@ -248,7 +258,9 @@
       "title": "Reti neurali ricorrenti",
       "source_tex": "note_migliorate/capitoli/18-rnn.tex",
       "summary": "Apprendimento su sequenze, BPTT, vanishing gradient, LSTM, GRU ed Echo State Networks.",
-      "status": "planned"
+      "status": "script_ready",
+      "scenes_count": 10,
+      "estimated_minutes": 18
     },
     {
       "id": "19-grafi",
@@ -257,7 +269,9 @@
       "title": "Apprendimento su dati strutturati e grafi",
       "source_tex": "note_migliorate/capitoli/19-grafi.tex",
       "summary": "Reti neurali per alberi e grafi, message passing, GNN ed espressività strutturale.",
-      "status": "planned"
+      "status": "script_ready",
+      "scenes_count": 12,
+      "estimated_minutes": 22
     }
   ]
 }
