@@ -34,8 +34,13 @@ function normToken(raw) {
   let t = cleanWord(raw);
   if (!t || t.length <= 2) return "";
   if (STOPWORDS.has(t)) return "";
+  // Light Italian morphological stemmer so singular/plural & verb inflections match cleanly
+  // (e.g. epoche/epoca, errori/errore, pesi/peso, neuroni/neurone, vettori/vettore, classi/classe)
   if (t.length >= 6) {
-    t = t.replace(/(zioni|zione|menti|mento|abili|abile|ando|endo|are|ere|ire|ita)$/, "");
+    t = t.replace(/(azioni|azione|zioni|zione|menti|mento|abili|abile|ibili|ibile|ando|endo|iamo|ate|ete|ite|are|ere|ire|ita|iche|ichi|che|chi)$/, "");
+  }
+  if (t.length >= 4 && !/^\d+$/.test(t)) {
+    t = t.replace(/[aeiou]$/, "");
   }
   return t;
 }
@@ -329,6 +334,29 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:x_pi", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+virgola\s+i$/, spec: 11 },
   { keys: ["var:x_pj", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+virgola\s+j$/, spec: 11 },
   { keys: ["var:x_p_T", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+trasposto$/, spec: 11 },
+  { keys: ["var:x_i_T", "var:x_i"], rx: /^x\s*(?:con\s+)?i\s+trasposto$/, spec: 11 },
+  { keys: ["var:w_o_T", "var:w_o", "var:w_T"], rx: /^w\s*(?:con\s+)?(?:o|zero)\s+trasposto$/, spec: 11 },
+  { keys: ["var:w_o", "var:w_0"], rx: /^w\s*(?:con\s+)?o$/, spec: 10 },
+  { keys: ["var:b_o", "var:b_0"], rx: /^b\s*(?:con\s+)?(?:o|zero)$/, spec: 10 },
+  { keys: ["var:a_T"], rx: /^a\s+trasposto$/, spec: 10 },
+  { keys: ["var:x_1_sq", "var:x_1"], rx: /^x\s*(?:con\s+)?uno\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:x_2_sq", "var:x_2"], rx: /^x\s*(?:con\s+)?due\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:y_sq", "var:y"], rx: /^y\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["var:w_i_star", "var:w_star", "var:w_i"], rx: /^w\s*(?:con\s+)?i\s+stella$/, spec: 11 },
+  { keys: ["var:i_star"], rx: /^i\s+stella$/, spec: 10 },
+  { keys: ["var:alpha_i_prime", "var:alpha_i", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:primo\s*(?:con\s+)?i|(?:con\s+)?i\s+primo)$/, spec: 11 },
+  { keys: ["var:alpha_j", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:alpha_oi", "var:alpha_i", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:con\s+)?(?:o|zero)\s*(?:virgola\s+)?i$/, spec: 11 },
+  { keys: ["var:xi_i_prime", "var:xi_i", "sym:xi"], rx: /^(?:csi|xi)\s*(?:primo\s*(?:con\s+)?i|(?:con\s+)?i\s+primo)$/, spec: 11 },
+  { keys: ["var:gamma_i", "sym:gamma"], rx: /^gamma\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:d_j"], rx: /^d\s*(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:h_i"], rx: /^h\s*(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:h_v"], rx: /^h\s*(?:con\s+)?v$/, spec: 10 },
+  { keys: ["var:h_u"], rx: /^h\s*(?:con\s+)?u$/, spec: 10 },
+  { keys: ["var:k_1"], rx: /^k\s*(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:k_2"], rx: /^k\s*(?:con\s+)?due$/, spec: 10 },
+  { keys: ["set:R^3", "set:R"], rx: /^r\s+(?:alla\s+terza|al\s+cubo|tre)$/, spec: 11 },
+  { keys: ["set:R^2", "set:R"], rx: /^r\s+(?:alla\s+seconda|al\s+quadrato|quadro|due)$/, spec: 11 },
   { keys: ["var:x_p"], rx: /^x\s*(?:con\s+)?p$/, spec: 10 },
   { keys: ["var:x_0"], rx: /^x\s*(?:con\s+)?zero$/, spec: 10 },
   { keys: ["var:x_1"], rx: /^x\s*(?:con\s+)?uno$/, spec: 10 },
@@ -1011,15 +1039,27 @@ function indexFormulaAtoms(slideCard, blocks) {
           continue;
         }
 
-        // 4. Norms (∥), Absolute values (∣), Inverse superscript (^{-1}) on .mopen/.mclose
+        // 4. Norms (∥...∥) and Absolute values (∣...∣) — highlight BOTH paired delimiter bars (+ closing ^2) together!
         if (el.classList.contains("mopen") || el.classList.contains("mclose")) {
           const txt = katexText(el);
-          if (el.classList.contains("mopen") && txt === "∥") {
-            addAtom(el, "op:norm", true, root);
-            continue;
-          }
-          if (el.classList.contains("mopen") && txt === "∣") {
-            addAtom(el, "op:abs", true, root);
+          if (el.classList.contains("mopen") && (txt === "∥" || txt === "∣")) {
+            const pairKey = txt === "∥" ? "op:norm" : "op:abs";
+            // Find matching closing delimiter sibling at same nesting level
+            let depth = 1;
+            let closeEl = null;
+            for (let j = i + 1; j < kids.length; j++) {
+              const kt = katexText(kids[j]);
+              if (kids[j].classList.contains("mopen") && kt === txt) depth++;
+              else if (kids[j].classList.contains("mclose") && kt.startsWith(txt)) {
+                depth--;
+                if (depth === 0) {
+                  closeEl = kids[j];
+                  break;
+                }
+              }
+            }
+            const pairEls = closeEl ? [el, closeEl] : [el];
+            addAtom(pairEls, pairKey, true, root);
             continue;
           }
           if (el.classList.contains("mclose") && el.querySelector(":scope > .msupsub")) {
@@ -1042,14 +1082,19 @@ function indexFormulaAtoms(slideCard, blocks) {
           continue;
         }
 
-        // 6. Accented bars (\bar d, \bar x, \bar h, \bar o, \bar D_k)
+        // 6. Accented bars/hats/tildes (\bar d, \bar x, \bar h, \bar o, \bar D_k, \hat y, \tilde h, ...)
         if (el.classList.contains("accent") && el.classList.contains("mord")) {
           const txt = katexText(el);
-          if (txt.includes("h")) { addAtom(el, "bar:h", true, root); continue; }
-          if (txt.includes("d")) { addAtom(el, "bar:d", true, root); continue; }
-          if (txt.includes("x")) { addAtom(el, "bar:x", true, root); continue; }
-          if (txt.includes("o")) { addAtom(el, "bar:o", true, root); continue; }
+          if (txt.includes("h")) { addAtom(el, ["bar:h", "var:h"], true, root); continue; }
+          if (txt.includes("d")) { addAtom(el, ["bar:d", "var:d"], true, root); continue; }
+          if (txt.includes("x")) { addAtom(el, ["bar:x", "var:x"], true, root); continue; }
+          if (txt.includes("o")) { addAtom(el, ["bar:o", "var:o"], true, root); continue; }
           if (txt.includes("D")) { addAtom(el, ["bar:D_k", "var:D"], true, root); continue; }
+          const baseCh = txt.replace(/[^A-Za-zα-ωΑ-Ω]/g, "")[0];
+          if (baseCh) {
+            addAtom(el, [`bar:${baseCh}`, `var:${baseCh}`], true, root);
+            continue;
+          }
         }
 
         // 7. Subscript/Superscript .mord
@@ -1161,6 +1206,67 @@ function indexFormulaAtoms(slideCard, blocks) {
             else if (/^[φϕ]([kj])$/.test(txt)) added = addAtom(el, [`var:phi_${txt[1]}`, "sym:phi"], true, root);
             else if (txt === "θm") added = addAtom(el, ["var:theta_m", "sym:theta"], true, root);
             else if (/^θ/.test(txt)) added = addAtom(el, "sym:theta", true, root);
+            // Specific high-frequency Cap 13-19 & Cap 01-12 symbols
+            else if (/^w(?:oT|To)$/.test(txt)) added = addAtom(el, ["var:w_o_T", "var:w_o", "var:w_T", "var:w"], true, root);
+            else if (txt === "wo") added = addAtom(el, ["var:w_o", "var:w_0", "var:w"], true, root);
+            else if (/^x(?:iT|Ti)$/.test(txt)) added = addAtom(el, ["var:x_i_T", "var:x_i", "var:x_T", "var:x"], true, root);
+            else if (txt === "bo") added = addAtom(el, ["var:b_o", "var:b_0", "var:b"], true, root);
+            else if (txt === "aT") added = addAtom(el, ["var:a_T", "var:a"], true, root);
+            else if (/^x(?:12|21)$/.test(txt)) added = addAtom(el, ["var:x_1_sq", "var:x_1", "var:x"], true, root);
+            else if (txt === "x22") added = addAtom(el, ["var:x_2_sq", "var:x_2", "var:x"], true, root);
+            else if (txt === "y2" && supOnly) added = addAtom(el, ["var:y_sq", "var:y"], true, root);
+            else if (txt === "R2" && !supOnly) added = addAtom(el, ["set:R^2", "set:R"], true, root);
+            else if (txt === "R3") added = addAtom(el, ["set:R^3", "set:R"], true, root);
+            else if (/^w(?:i[\*∗]|[\*∗]i)/.test(txt)) added = addAtom(el, ["var:w_i_star", "var:w_star", "var:w_i", "var:w"], true, root);
+            else if (/^i[\*∗]$/.test(txt)) added = addAtom(el, ["var:i_star", "var:i"], true, root);
+            else if (/^α(?:i′|′i)$/.test(txt)) added = addAtom(el, ["var:alpha_i_prime", "var:alpha_i", "sym:alpha"], true, root);
+            else if (txt === "αj") added = addAtom(el, ["var:alpha_j", "sym:alpha"], true, root);
+            else if (txt === "αo,i") added = addAtom(el, ["var:alpha_oi", "var:alpha_i", "sym:alpha"], true, root);
+            else if (/^ξ(?:i′|′i)$/.test(txt)) added = addAtom(el, ["var:xi_i_prime", "var:xi_i", "sym:xi"], true, root);
+            else if (txt === "γi") added = addAtom(el, ["var:gamma_i", "sym:gamma"], true, root);
+            else if (txt === "dj") added = addAtom(el, ["var:d_j", "var:d"], true, root);
+            else if (/^h([ivu])$/.test(txt)) added = addAtom(el, [`var:h_${txt[1]}`, "var:h"], true, root);
+            else if (/^k([12])$/.test(txt)) added = addAtom(el, [`var:k_${txt[1]}`, "var:k"], true, root);
+            else if (txt === "Δp") added = addAtom(el, ["var:Delta_p", "var:delta_p", "var:delta"], true, root);
+            else if (/^hθ/.test(txt)) added = addAtom(el, ["var:theta_m_star", "var:theta_m", "var:h"], true, root);
+            else if (txt.includes("D") && txt.includes("ˉ")) added = addAtom(el, ["bar:D_k", "var:D"], true, root);
+            else if (!el.querySelector(".mfrac, .sqrt")) {
+              // Universal .msupsub catch-all: ALWAYS keep base + subscript/superscript together as ONE atom
+              // so a composite symbol NEVER highlights only 1 of its 2-4 characters!
+              const baseNode = Array.from(el.children).find((c) => !c.classList.contains("msupsub"));
+              const bTxt = katexText(baseNode || el);
+              const subNode = el.querySelector(":scope > .msupsub");
+              const sTxt = katexText(subNode);
+              const greekMap = {
+                "α": "sym:alpha", "β": "sym:beta", "γ": "sym:gamma", "δ": "var:delta", "Δ": "var:delta",
+                "ε": "sym:eps", "ϵ": "sym:eps", "η": "sym:eta", "θ": "sym:theta", "λ": "sym:lambda",
+                "μ": "sym:mu", "ξ": "sym:xi", "π": "sym:pi", "ρ": "sym:rho", "σ": "sym:sigma",
+                "Σ": "sym:Sigma", "τ": "sym:tau", "φ": "sym:phi", "ϕ": "sym:phi", "Φ": "sym:phi",
+                "Ψ": "sym:psi", "ψ": "sym:psi", "Ω": "sym:omega", "ω": "sym:omega"
+              };
+              const fbKeys = [];
+              if (bTxt && bTxt in greekMap) {
+                fbKeys.push(`${greekMap[bTxt]}_${sTxt}`, greekMap[bTxt]);
+              } else if (/^[A-Za-z]$/.test(bTxt)) {
+                const cleanSub = sTxt.replace(/[^A-Za-z0-9]/g, "");
+                if (cleanSub) fbKeys.push(`var:${bTxt}_${cleanSub}`);
+                if (sTxt.includes("T")) fbKeys.push(`var:${bTxt}_T`);
+                if (sTxt.includes("∗") || sTxt.includes("*")) fbKeys.push(`var:${bTxt}_star`);
+                if (sTxt.includes("′")) fbKeys.push(`var:${bTxt}_prime`);
+                fbKeys.push(`var:${bTxt}`);
+              } else if (/^[A-Za-z]{2,8}$/.test(bTxt)) {
+                const low = bTxt.toLowerCase();
+                if (low === "bias") fbKeys.push("op:Bias", "var:bias");
+                else if (low === "net") fbKeys.push("var:net");
+                else fbKeys.push(`var:${low}`);
+              } else if (bTxt && (bTxt.includes("ˉ") || bTxt.includes("^"))) {
+                const ch = bTxt.replace(/[^A-Za-z]/g, "")[0];
+                if (ch) fbKeys.push(`bar:${ch}`, `var:${ch}`);
+              }
+              if (fbKeys.length > 0) {
+                added = addAtom(el, fbKeys, true, root);
+              }
+            }
             if (added) continue;
           }
 
@@ -1183,7 +1289,9 @@ function indexFormulaAtoms(slideCard, blocks) {
             if (txt === "θ") { addAtom(el, "sym:theta", true, root); continue; }
             if (txt === "ε" || txt === "ϵ") { addAtom(el, "sym:eps", true, root); continue; }
             if (txt === "π") { addAtom(el, "sym:pi", true, root); continue; }
-            if (txt === "ϕ" || txt === "φ") { addAtom(el, "sym:phi", true, root); continue; }
+            if (txt === "ϕ" || txt === "φ" || txt === "Φ") { addAtom(el, "sym:phi", true, root); continue; }
+            if (txt === "Ψ" || txt === "ψ") { addAtom(el, "sym:psi", true, root); continue; }
+            if (txt === "Ω" || txt === "ω") { addAtom(el, "sym:omega", true, root); continue; }
             if (txt === "μ") { addAtom(el, "sym:mu", true, root); continue; }
             if (txt === "∇") { addAtom(el, "op:nabla", true, root); continue; }
             if (txt === "net") { addAtom(el, "var:net", true, root); continue; }
@@ -1514,7 +1622,13 @@ export class LiveSyncEngine {
       }
     }
 
-    // 4. Wrap prose clauses word-by-word & align monotonically
+    // 4. Wrap prose clauses word-by-word & align inside each block's active cue window (prevents cursor poisoning!)
+    const blockMetaMap = new Map();
+    for (const b of this.blocks) blockMetaMap.set(b.el, b);
+    for (const mb of mathBlocks) {
+      if (!blockMetaMap.has(mb.el)) blockMetaMap.set(mb.el, mb);
+    }
+
     const clauseCandidates = [];
     for (const b of this.blocks) {
       const bEl = b.el;
@@ -1523,6 +1637,9 @@ export class LiveSyncEngine {
       textTargets.forEach((tEl) => {
         if (tEl.closest(".katex")) return;
         const wrapped = wrapClausesWordByWord(tEl);
+        const ownerLi = tEl.tagName === "LI" ? blockMetaMap.get(tEl) : null;
+        const ownerTr = tEl.closest("tr") ? blockMetaMap.get(tEl.closest("tr")) : null;
+        const ownerMeta = ownerLi || ownerTr || b;
         for (const wObj of wrapped) {
           const toks = extractTokens(wObj.el.textContent || "");
           if (toks.length >= 2) {
@@ -1530,8 +1647,12 @@ export class LiveSyncEngine {
               el: wObj.el,
               wordEls: wObj.wordEls,
               block: bEl,
+              parentTarget: tEl,
               tokens: toks,
               showAt: getShowAt(tEl),
+              winStart: ownerMeta.activeStart ?? getShowAt(tEl),
+              winEnd: ownerMeta.activeEnd ?? totalDur,
+              isVerify: Boolean(tEl.closest(".verify-list")),
               start: -1,
               end: -1
             });
@@ -1541,32 +1662,29 @@ export class LiveSyncEngine {
     }
 
     if (this.words.length > 0 && clauseCandidates.length > 0) {
-      let monoWordCursor = 0;
-      for (const item of clauseCandidates) {
-        const cSet = new Set(item.tokens);
-        const minHits = item.tokens.length >= 4 ? 3 : 2;
-        const minRecall = 0.5;
-        const winSize = Math.min(28, Math.max(8, item.tokens.length * 3 + 4));
+      // Group clauses by owning block so one noisy match in block A can NEVER poison block B!
+      const clausesByBlock = new Map();
+      for (const c of clauseCandidates) {
+        if (!clausesByBlock.has(c.block)) clausesByBlock.set(c.block, []);
+        clausesByBlock.get(c.block).push(c);
+      }
 
-        let startIdx = monoWordCursor;
-        while (startIdx < this.words.length && this.words[startIdx].end < item.showAt - 0.6) {
-          startIdx++;
-        }
-        if (item.showAt > 0 && startIdx > 0 && this.words[Math.min(monoWordCursor, this.words.length - 1)].start < item.showAt - 1.0) {
-          let s2 = 0;
-          while (s2 < this.words.length && this.words[s2].end < item.showAt - 0.6) s2++;
-          startIdx = Math.max(startIdx, s2);
-        }
+      const alignClauseInRange = (item, startIdx, endIdx, strict) => {
+        const cSet = new Set(item.tokens);
+        const minHits = strict ? (item.tokens.length >= 4 ? 3 : 2) : (item.tokens.length >= 5 ? 2 : 2);
+        const minRecall = strict ? 0.45 : 0.34;
+        const minScore = strict ? 0.50 : 0.38;
+        const winSize = Math.min(32, Math.max(10, item.tokens.length * 3 + 6));
 
         let bestScore = 0;
         let bestRange = null;
-        for (let i = startIdx; i < this.words.length; i++) {
+        for (let i = startIdx; i < endIdx; i++) {
           const wTok = this.words[i].tok;
           if (!wTok || !cSet.has(wTok)) continue;
           const matched = new Set();
           let firstMatch = i;
           let lastMatch = i;
-          const endLim = Math.min(this.words.length, i + winSize);
+          const endLim = Math.min(endIdx, i + winSize);
           for (let j = i; j < endLim; j++) {
             const jt = this.words[j].tok;
             if (jt && cSet.has(jt)) {
@@ -1579,8 +1697,8 @@ export class LiveSyncEngine {
           if (hits >= minHits && recall >= minRecall) {
             const span = Math.max(1, lastMatch - firstMatch + 1);
             const density = hits / span;
-            const timeDist = Math.abs(this.words[firstMatch].start - item.showAt);
-            const proxBonus = item.showAt > 0 && timeDist < 22 ? 0.14 : 0;
+            const timeDist = Math.abs(this.words[firstMatch].start - item.winStart);
+            const proxBonus = timeDist < 18 ? 0.14 : 0;
             const score = recall * 0.68 + Math.min(1, density * 1.4) * 0.24 + proxBonus;
             if (score > bestScore) {
               bestScore = score;
@@ -1588,20 +1706,87 @@ export class LiveSyncEngine {
             }
           }
         }
+        return bestRange && bestScore >= minScore ? bestRange : null;
+      };
 
-        if (bestRange && bestScore >= 0.54) {
-          const [i0, i1] = bestRange;
-          const t0 = Math.max(0, this.words[i0].start - 0.08);
-          const t1 = Math.min(totalDur, this.words[i1].end + 0.18);
-          item.start = t0;
-          item.end = Math.max(t0 + 0.45, t1);
-          monoWordCursor = Math.min(this.words.length - 1, i0 + 1);
-          item.el.classList.add("voice-syncable");
-          item.el.title = `Vai a ${this._fmt(t0)}`;
-          item.el.addEventListener("click", (e) => {
-            e.stopPropagation();
-            if (typeof this.onSeek === "function") this.onSeek(t0);
-          });
+      const bindClauseTiming = (item, t0, t1) => {
+        item.start = Math.max(0, t0);
+        item.end = Math.min(totalDur, Math.max(item.start + 0.45, t1));
+        item.el.classList.add("voice-syncable");
+        item.el.title = `Vai a ${this._fmt(item.start)}`;
+        item.el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          if (typeof this.onSeek === "function") this.onSeek(item.start);
+        });
+      };
+
+      for (const [bEl, bClauses] of clausesByBlock.entries()) {
+        const bMeta = blockMetaMap.get(bEl) || { activeStart: 0, activeEnd: totalDur };
+        let bCursor = 0;
+
+        for (const item of bClauses) {
+          const searchStartTime = Math.max(0, item.winStart - 1.5);
+          const searchEndTime = Math.min(totalDur, item.winEnd + 3.0);
+
+          let wStart = bCursor;
+          while (wStart < this.words.length && this.words[wStart].end < searchStartTime) wStart++;
+          if (wStart > 0 && this.words[Math.min(bCursor, this.words.length - 1)].start > searchEndTime) {
+            // Reset cursor if an earlier clause landed outside this item's own window
+            wStart = 0;
+            while (wStart < this.words.length && this.words[wStart].end < searchStartTime) wStart++;
+          }
+          let wEnd = wStart;
+          while (wEnd < this.words.length && this.words[wEnd].start <= searchEndTime) wEnd++;
+
+          // Pass 1: search inside the block's exact cue window (high precision, gentle recall!)
+          let bestRange = wEnd > wStart ? alignClauseInRange(item, wStart, wEnd, false) : null;
+
+          // Pass 2: wider fallback across remaining scene (stricter threshold to avoid false jumps)
+          if (!bestRange && !item.isVerify) {
+            let fullStart = 0;
+            while (fullStart < this.words.length && this.words[fullStart].end < Math.max(0, item.showAt - 1.0)) fullStart++;
+            bestRange = alignClauseInRange(item, fullStart, this.words.length, true);
+          }
+
+          if (bestRange) {
+            const [i0, i1] = bestRange;
+            bindClauseTiming(item, this.words[i0].start - 0.08, this.words[i1].end + 0.18);
+            // Advance block cursor only when match lies inside the block's own window
+            if (this.words[i0].start <= searchEndTime) {
+              bCursor = Math.min(this.words.length - 1, i0 + 1);
+            }
+          }
+        }
+
+        // Pass 3: Clean sequential fallback for paraphrased clauses inside a cue-timed block
+        // (keeps paraphrased summary boxes & cue-revealed items softly illuminated in sync with their block!)
+        const unaligned = bClauses.filter((c) => c.start < 0 && !c.isVerify && (c.winEnd - c.winStart) >= 1.2);
+        if (unaligned.length > 0 && unaligned.length <= 6) {
+          // Group unaligned items by their exact [winStart, winEnd] window
+          const byWin = new Map();
+          for (const u of unaligned) {
+            const wk = `${u.winStart.toFixed(2)}:${u.winEnd.toFixed(2)}`;
+            if (!byWin.has(wk)) byWin.set(wk, []);
+            byWin.get(wk).push(u);
+          }
+          for (const group of byWin.values()) {
+            const w0 = group[0].winStart;
+            const w1 = group[0].winEnd;
+            // Only synthesize sequential slices if no already-matched clause already covers >60% of this window
+            const coveredDur = bClauses
+              .filter((c) => c.start >= 0 && c.end > w0 && c.start < w1)
+              .reduce((acc, c) => acc + Math.max(0, Math.min(w1, c.end) - Math.max(w0, c.start)), 0);
+            if (coveredDur < (w1 - w0) * 0.55) {
+              const totalWords = group.reduce((acc, c) => acc + Math.max(1, c.wordEls.length), 0);
+              let curT = w0;
+              for (const u of group) {
+                const frac = Math.max(1, u.wordEls.length) / totalWords;
+                const dur = Math.max(0.6, (w1 - w0) * frac);
+                bindClauseTiming(u, curT, Math.min(w1, curT + dur));
+                curT += dur;
+              }
+            }
+          }
         }
       }
     }
@@ -1770,26 +1955,7 @@ export class LiveSyncEngine {
       }
     }
 
-    // 3. Determine SINGLE active Spotlight block
-    let activeBlock = null;
-    const explicitHl = this.stage.querySelector(".cue-highlight");
-    if (explicitHl) {
-      activeBlock = explicitHl.closest(".box, .math-card, .proof-step, .svg-panel, .acad-table, .pill-strip, .props-grid, .metrics-row");
-    }
-    if (!activeBlock && bestClause) {
-      activeBlock = bestClause.block;
-    }
-    if (!activeBlock) {
-      let latestShow = -1;
-      for (const b of this.blocks) {
-        if (!b.el.classList.contains("cue-hidden") && t >= b.showAt && b.showAt >= latestShow) {
-          latestShow = b.showAt;
-          activeBlock = b.el;
-        }
-      }
-    }
-
-    // 4. STRICT SINGLE-ATOM FORMULA GLOW (at most ONE atom across entire slide at any instant t!)
+    // 3. STRICT SINGLE-ATOM FORMULA GLOW (computed BEFORE Spotlight so active formula lights its card!)
     let winnerAtom = null;
     let winnerStart = -Infinity;
     for (const atom of this.atoms) {
@@ -1811,6 +1977,39 @@ export class LiveSyncEngine {
         for (const el of winnerAtom.els) el.classList.add("math-live-glow");
       }
       this.activeAtom = winnerAtom;
+    }
+
+    // 4. Determine SINGLE active Spotlight block (explicit cue -> active clause -> active formula -> latest non-SVG content)
+    const spotlightSel = ".box, .math-card, .proof-step, .svg-panel, .acad-table, .pill-strip, .props-grid, .metrics-row, .gate-card, .plot-card";
+    let activeBlock = null;
+    const explicitHl = this.stage.querySelector(".cue-highlight");
+    if (explicitHl) {
+      activeBlock = explicitHl.closest(spotlightSel);
+    }
+    if (!activeBlock && bestClause) {
+      activeBlock = bestClause.block;
+    }
+    if (!activeBlock && winnerAtom && winnerAtom.els[0]) {
+      activeBlock = winnerAtom.els[0].closest(spotlightSel);
+    }
+    if (!activeBlock) {
+      let latestShow = -1;
+      for (const b of this.blocks) {
+        if (b.el.classList.contains("svg-panel")) continue;
+        if (!b.el.classList.contains("cue-hidden") && t >= b.showAt && b.showAt >= latestShow) {
+          latestShow = b.showAt;
+          activeBlock = b.el;
+        }
+      }
+    }
+    if (!activeBlock) {
+      let latestShow = -1;
+      for (const b of this.blocks) {
+        if (!b.el.classList.contains("cue-hidden") && t >= b.showAt && b.showAt >= latestShow) {
+          latestShow = b.showAt;
+          activeBlock = b.el;
+        }
+      }
     }
 
     // 5. Apply gentle Spotlight to active block
