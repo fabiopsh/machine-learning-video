@@ -1,0 +1,1606 @@
+{
+  "duration": 110.297,
+  "segments": [
+    {
+      "start": 0.146,
+      "end": 4.027,
+      "text": "Inquadriamo ora il clustering dal punto di vista della quantizzazione vettoriale,",
+      "words": [
+        {
+          "text": "Inquadriamo",
+          "start": 0.146,
+          "end": 0.586
+        },
+        {
+          "text": "ora",
+          "start": 0.606,
+          "end": 0.746
+        },
+        {
+          "text": "il",
+          "start": 0.806,
+          "end": 0.8460000000000001
+        },
+        {
+          "text": "clustering",
+          "start": 0.906,
+          "end": 1.467
+        },
+        {
+          "text": "dal",
+          "start": 1.527,
+          "end": 1.627
+        },
+        {
+          "text": "punto",
+          "start": 1.687,
+          "end": 1.967
+        },
+        {
+          "text": "di",
+          "start": 2.007,
+          "end": 2.067
+        },
+        {
+          "text": "vista",
+          "start": 2.107,
+          "end": 2.327
+        },
+        {
+          "text": "della",
+          "start": 2.367,
+          "end": 2.547
+        },
+        {
+          "text": "quantizzazione",
+          "start": 2.667,
+          "end": 3.407
+        },
+        {
+          "text": "vettoriale,",
+          "start": 3.447,
+          "end": 4.027
+        }
+      ]
+    },
+    {
+      "start": 4.367,
+      "end": 5.287,
+      "text": "abbreviata in VQ.",
+      "words": [
+        {
+          "text": "abbreviata",
+          "start": 4.367,
+          "end": 4.867
+        },
+        {
+          "text": "in",
+          "start": 4.947,
+          "end": 5.027
+        },
+        {
+          "text": "VQ.",
+          "start": 5.087,
+          "end": 5.287
+        }
+      ]
+    },
+    {
+      "start": 6.667,
+      "end": 11.568,
+      "text": "La quantizzazione vettoriale codifica un insieme di dati V contenuto in R alla n",
+      "words": [
+        {
+          "text": "La",
+          "start": 6.667,
+          "end": 6.727
+        },
+        {
+          "text": "quantizzazione",
+          "start": 6.767,
+          "end": 7.307
+        },
+        {
+          "text": "vettoriale",
+          "start": 7.347,
+          "end": 7.867
+        },
+        {
+          "text": "codifica",
+          "start": 7.987,
+          "end": 8.407
+        },
+        {
+          "text": "un",
+          "start": 8.447,
+          "end": 8.527
+        },
+        {
+          "text": "insieme",
+          "start": 8.567,
+          "end": 8.927
+        },
+        {
+          "text": "di",
+          "start": 8.987,
+          "end": 9.067
+        },
+        {
+          "text": "dati",
+          "start": 9.107,
+          "end": 9.447
+        },
+        {
+          "text": "V",
+          "start": 9.647,
+          "end": 9.687
+        },
+        {
+          "text": "contenuto",
+          "start": 10.227,
+          "end": 10.688
+        },
+        {
+          "text": "in",
+          "start": 10.828,
+          "end": 10.928
+        },
+        {
+          "text": "R",
+          "start": 11.068,
+          "end": 11.108
+        },
+        {
+          "text": "alla",
+          "start": 11.148,
+          "end": 11.308
+        },
+        {
+          "text": "n",
+          "start": 11.528,
+          "end": 11.568
+        }
+      ]
+    },
+    {
+      "start": 12.148,
+      "end": 16.248,
+      "text": "usando un insieme finito di vettori di riferimento, il codebook w",
+      "words": [
+        {
+          "text": "usando",
+          "start": 12.148,
+          "end": 12.408
+        },
+        {
+          "text": "un",
+          "start": 12.428,
+          "end": 12.488
+        },
+        {
+          "text": "insieme",
+          "start": 12.528,
+          "end": 12.808
+        },
+        {
+          "text": "finito",
+          "start": 12.868,
+          "end": 13.188
+        },
+        {
+          "text": "di",
+          "start": 13.228,
+          "end": 13.288
+        },
+        {
+          "text": "vettori",
+          "start": 13.368,
+          "end": 13.808
+        },
+        {
+          "text": "di",
+          "start": 13.848,
+          "end": 13.908
+        },
+        {
+          "text": "riferimento,",
+          "start": 13.948,
+          "end": 14.548
+        },
+        {
+          "text": "il",
+          "start": 15.068,
+          "end": 15.148
+        },
+        {
+          "text": "codebook",
+          "start": 15.228,
+          "end": 15.688
+        },
+        {
+          "text": "w",
+          "start": 16.208,
+          "end": 16.248
+        }
+      ]
+    },
+    {
+      "start": 16.808,
+      "end": 19.628,
+      "text": "formato dai prototipi w con uno fino a w con K,",
+      "words": [
+        {
+          "text": "formato",
+          "start": 16.808,
+          "end": 17.168
+        },
+        {
+          "text": "dai",
+          "start": 17.208,
+          "end": 17.328
+        },
+        {
+          "text": "prototipi",
+          "start": 17.348,
+          "end": 18.128
+        },
+        {
+          "text": "w",
+          "start": 18.228,
+          "end": 18.268
+        },
+        {
+          "text": "con",
+          "start": 18.368,
+          "end": 18.508
+        },
+        {
+          "text": "uno",
+          "start": 18.548,
+          "end": 18.688
+        },
+        {
+          "text": "fino",
+          "start": 18.748,
+          "end": 18.928
+        },
+        {
+          "text": "a",
+          "start": 19.208,
+          "end": 19.248
+        },
+        {
+          "text": "w",
+          "start": 19.288,
+          "end": 19.328
+        },
+        {
+          "text": "con",
+          "start": 19.388,
+          "end": 19.528
+        },
+        {
+          "text": "K,",
+          "start": 19.588,
+          "end": 19.628
+        }
+      ]
+    },
+    {
+      "start": 20.329,
+      "end": 21.749,
+      "text": "ciascuno in R alla n.",
+      "words": [
+        {
+          "text": "ciascuno",
+          "start": 20.329,
+          "end": 20.869
+        },
+        {
+          "text": "in",
+          "start": 21.049,
+          "end": 21.129
+        },
+        {
+          "text": "R",
+          "start": 21.289,
+          "end": 21.329
+        },
+        {
+          "text": "alla",
+          "start": 21.369,
+          "end": 21.509
+        },
+        {
+          "text": "n.",
+          "start": 21.709,
+          "end": 21.749
+        }
+      ]
+    },
+    {
+      "start": 22.529,
+      "end": 26.949,
+      "text": "Un vettore x in V viene descritto dal vettore di riferimento vincente,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 22.529,
+          "end": 22.609
+        },
+        {
+          "text": "vettore",
+          "start": 22.629,
+          "end": 22.929
+        },
+        {
+          "text": "x",
+          "start": 23.109,
+          "end": 23.149
+        },
+        {
+          "text": "in",
+          "start": 23.589,
+          "end": 23.689
+        },
+        {
+          "text": "V",
+          "start": 23.769,
+          "end": 23.809
+        },
+        {
+          "text": "viene",
+          "start": 24.229,
+          "end": 24.429
+        },
+        {
+          "text": "descritto",
+          "start": 24.469,
+          "end": 24.929
+        },
+        {
+          "text": "dal",
+          "start": 25.009,
+          "end": 25.129
+        },
+        {
+          "text": "vettore",
+          "start": 25.169,
+          "end": 25.569
+        },
+        {
+          "text": "di",
+          "start": 25.609,
+          "end": 25.669
+        },
+        {
+          "text": "riferimento",
+          "start": 25.729,
+          "end": 26.229
+        },
+        {
+          "text": "vincente,",
+          "start": 26.329,
+          "end": 26.949
+        }
+      ]
+    },
+    {
+      "start": 27.149,
+      "end": 30.77,
+      "text": "o best matching, indicato con w con i asterisco di x:",
+      "words": [
+        {
+          "text": "o",
+          "start": 27.149,
+          "end": 27.189
+        },
+        {
+          "text": "best",
+          "start": 27.289,
+          "end": 27.549
+        },
+        {
+          "text": "matching,",
+          "start": 27.629,
+          "end": 28.069
+        },
+        {
+          "text": "indicato",
+          "start": 28.549,
+          "end": 28.949
+        },
+        {
+          "text": "con",
+          "start": 28.989,
+          "end": 29.129
+        },
+        {
+          "text": "w",
+          "start": 29.51,
+          "end": 29.55
+        },
+        {
+          "text": "con",
+          "start": 29.65,
+          "end": 29.81
+        },
+        {
+          "text": "i",
+          "start": 29.83,
+          "end": 29.87
+        },
+        {
+          "text": "asterisco",
+          "start": 29.99,
+          "end": 30.49
+        },
+        {
+          "text": "di",
+          "start": 30.53,
+          "end": 30.59
+        },
+        {
+          "text": "x:",
+          "start": 30.73,
+          "end": 30.77
+        }
+      ]
+    },
+    {
+      "start": 31.69,
+      "end": 36.87,
+      "text": "è quello che minimizza la distorsione dist di x virgola w con i asterisco di",
+      "words": [
+        {
+          "text": "è",
+          "start": 31.69,
+          "end": 31.73
+        },
+        {
+          "text": "quello",
+          "start": 31.77,
+          "end": 31.97
+        },
+        {
+          "text": "che",
+          "start": 31.97,
+          "end": 32.05
+        },
+        {
+          "text": "minimizza",
+          "start": 32.11,
+          "end": 32.65
+        },
+        {
+          "text": "la",
+          "start": 32.77,
+          "end": 32.83
+        },
+        {
+          "text": "distorsione",
+          "start": 32.91,
+          "end": 33.61
+        },
+        {
+          "text": "dist",
+          "start": 33.95,
+          "end": 34.27
+        },
+        {
+          "text": "di",
+          "start": 34.41,
+          "end": 34.49
+        },
+        {
+          "text": "x",
+          "start": 34.77,
+          "end": 34.81
+        },
+        {
+          "text": "virgola",
+          "start": 35.17,
+          "end": 35.85
+        },
+        {
+          "text": "w",
+          "start": 35.91,
+          "end": 35.95
+        },
+        {
+          "text": "con",
+          "start": 36.05,
+          "end": 36.17
+        },
+        {
+          "text": "i",
+          "start": 36.21,
+          "end": 36.25
+        },
+        {
+          "text": "asterisco",
+          "start": 36.31,
+          "end": 36.75
+        },
+        {
+          "text": "di",
+          "start": 36.81,
+          "end": 36.87
+        }
+      ]
+    },
+    {
+      "start": 36.99,
+      "end": 37.03,
+      "text": "x.",
+      "words": [
+        {
+          "text": "x.",
+          "start": 36.99,
+          "end": 37.03
+        }
+      ]
+    },
+    {
+      "start": 38.17,
+      "end": 42.791,
+      "text": "Geometricamente, la quantizzazione vettoriale divide lo spazio nei poliedri di Voronoi:",
+      "words": [
+        {
+          "text": "Geometricamente,",
+          "start": 38.17,
+          "end": 39.051
+        },
+        {
+          "text": "la",
+          "start": 39.211,
+          "end": 39.271
+        },
+        {
+          "text": "quantizzazione",
+          "start": 39.311,
+          "end": 39.951
+        },
+        {
+          "text": "vettoriale",
+          "start": 39.991,
+          "end": 40.491
+        },
+        {
+          "text": "divide",
+          "start": 40.531,
+          "end": 40.791
+        },
+        {
+          "text": "lo",
+          "start": 40.831,
+          "end": 40.891
+        },
+        {
+          "text": "spazio",
+          "start": 40.931,
+          "end": 41.291
+        },
+        {
+          "text": "nei",
+          "start": 41.491,
+          "end": 41.651
+        },
+        {
+          "text": "poliedri",
+          "start": 41.691,
+          "end": 42.131
+        },
+        {
+          "text": "di",
+          "start": 42.191,
+          "end": 42.251
+        },
+        {
+          "text": "Voronoi:",
+          "start": 42.311,
+          "end": 42.791
+        }
+      ]
+    },
+    {
+      "start": 43.331,
+      "end": 47.271,
+      "text": "la cella V con i raccoglie tutti i punti x tali che la norma di",
+      "words": [
+        {
+          "text": "la",
+          "start": 43.331,
+          "end": 43.391
+        },
+        {
+          "text": "cella",
+          "start": 43.451,
+          "end": 43.691
+        },
+        {
+          "text": "V",
+          "start": 43.811,
+          "end": 43.851
+        },
+        {
+          "text": "con",
+          "start": 43.951,
+          "end": 44.111
+        },
+        {
+          "text": "i",
+          "start": 44.151,
+          "end": 44.191
+        },
+        {
+          "text": "raccoglie",
+          "start": 44.431,
+          "end": 44.791
+        },
+        {
+          "text": "tutti",
+          "start": 44.871,
+          "end": 45.111
+        },
+        {
+          "text": "i",
+          "start": 45.131,
+          "end": 45.171
+        },
+        {
+          "text": "punti",
+          "start": 45.191,
+          "end": 45.451
+        },
+        {
+          "text": "x",
+          "start": 45.611,
+          "end": 45.651
+        },
+        {
+          "text": "tali",
+          "start": 45.871,
+          "end": 46.071
+        },
+        {
+          "text": "che",
+          "start": 46.111,
+          "end": 46.211
+        },
+        {
+          "text": "la",
+          "start": 46.631,
+          "end": 46.711
+        },
+        {
+          "text": "norma",
+          "start": 46.771,
+          "end": 47.071
+        },
+        {
+          "text": "di",
+          "start": 47.131,
+          "end": 47.271
+        }
+      ]
+    },
+    {
+      "start": 47.311,
+      "end": 51.172,
+      "text": "x meno w con i è minore o uguale alla norma di x meno w",
+      "words": [
+        {
+          "text": "x",
+          "start": 47.311,
+          "end": 47.351
+        },
+        {
+          "text": "meno",
+          "start": 47.591,
+          "end": 47.751
+        },
+        {
+          "text": "w",
+          "start": 48.071,
+          "end": 48.111
+        },
+        {
+          "text": "con",
+          "start": 48.191,
+          "end": 48.331
+        },
+        {
+          "text": "i",
+          "start": 48.372,
+          "end": 48.412
+        },
+        {
+          "text": "è",
+          "start": 48.712,
+          "end": 48.752
+        },
+        {
+          "text": "minore",
+          "start": 48.852,
+          "end": 49.172
+        },
+        {
+          "text": "o",
+          "start": 49.192,
+          "end": 49.232
+        },
+        {
+          "text": "uguale",
+          "start": 49.212,
+          "end": 49.572
+        },
+        {
+          "text": "alla",
+          "start": 49.732,
+          "end": 49.872
+        },
+        {
+          "text": "norma",
+          "start": 49.912,
+          "end": 50.152
+        },
+        {
+          "text": "di",
+          "start": 50.192,
+          "end": 50.312
+        },
+        {
+          "text": "x",
+          "start": 50.372,
+          "end": 50.412
+        },
+        {
+          "text": "meno",
+          "start": 50.652,
+          "end": 50.812
+        },
+        {
+          "text": "w",
+          "start": 51.132,
+          "end": 51.172
+        }
+      ]
+    },
+    {
+      "start": 51.272,
+      "end": 52.512,
+      "text": "con j per ogni altro j.",
+      "words": [
+        {
+          "text": "con",
+          "start": 51.272,
+          "end": 51.412
+        },
+        {
+          "text": "j",
+          "start": 51.452,
+          "end": 51.492
+        },
+        {
+          "text": "per",
+          "start": 51.832,
+          "end": 51.952
+        },
+        {
+          "text": "ogni",
+          "start": 51.992,
+          "end": 52.132
+        },
+        {
+          "text": "altro",
+          "start": 52.192,
+          "end": 52.392
+        },
+        {
+          "text": "j.",
+          "start": 52.472,
+          "end": 52.512
+        }
+      ]
+    },
+    {
+      "start": 53.272,
+      "end": 57.512,
+      "text": "Ogni punto x viene quindi sostituito dal vettore di riferimento della propria cella.",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 53.272,
+          "end": 53.472
+        },
+        {
+          "text": "punto",
+          "start": 53.532,
+          "end": 53.792
+        },
+        {
+          "text": "x",
+          "start": 53.972,
+          "end": 54.012
+        },
+        {
+          "text": "viene",
+          "start": 54.192,
+          "end": 54.372
+        },
+        {
+          "text": "quindi",
+          "start": 54.432,
+          "end": 54.672
+        },
+        {
+          "text": "sostituito",
+          "start": 54.732,
+          "end": 55.312
+        },
+        {
+          "text": "dal",
+          "start": 55.352,
+          "end": 55.472
+        },
+        {
+          "text": "vettore",
+          "start": 55.512,
+          "end": 55.872
+        },
+        {
+          "text": "di",
+          "start": 55.912,
+          "end": 55.972
+        },
+        {
+          "text": "riferimento",
+          "start": 56.012,
+          "end": 56.592
+        },
+        {
+          "text": "della",
+          "start": 56.632,
+          "end": 56.772
+        },
+        {
+          "text": "propria",
+          "start": 56.812,
+          "end": 57.092
+        },
+        {
+          "text": "cella.",
+          "start": 57.172,
+          "end": 57.512
+        }
+      ]
+    },
+    {
+      "start": 58.312,
+      "end": 62.112,
+      "text": "Osserviamo l'esempio in una dimensione, tipico dell'elaborazione dei segnali:",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 58.312,
+          "end": 58.772
+        },
+        {
+          "text": "l'esempio",
+          "start": 58.812,
+          "end": 59.192
+        },
+        {
+          "text": "in",
+          "start": 59.232,
+          "end": 59.292
+        },
+        {
+          "text": "una",
+          "start": 59.312,
+          "end": 59.432
+        },
+        {
+          "text": "dimensione,",
+          "start": 59.472,
+          "end": 60.092
+        },
+        {
+          "text": "tipico",
+          "start": 60.252,
+          "end": 60.632
+        },
+        {
+          "text": "dell'elaborazione",
+          "start": 60.692,
+          "end": 61.432
+        },
+        {
+          "text": "dei",
+          "start": 61.472,
+          "end": 61.592
+        },
+        {
+          "text": "segnali:",
+          "start": 61.632,
+          "end": 62.112
+        }
+      ]
+    },
+    {
+      "start": 62.792,
+      "end": 66.072,
+      "text": "un intervallo continuo viene approssimato con pochi simboli discreti,",
+      "words": [
+        {
+          "text": "un",
+          "start": 62.792,
+          "end": 62.872
+        },
+        {
+          "text": "intervallo",
+          "start": 62.912,
+          "end": 63.332
+        },
+        {
+          "text": "continuo",
+          "start": 63.352,
+          "end": 63.812
+        },
+        {
+          "text": "viene",
+          "start": 63.852,
+          "end": 64.032
+        },
+        {
+          "text": "approssimato",
+          "start": 64.072,
+          "end": 64.652
+        },
+        {
+          "text": "con",
+          "start": 64.692,
+          "end": 64.812
+        },
+        {
+          "text": "pochi",
+          "start": 64.912,
+          "end": 65.132
+        },
+        {
+          "text": "simboli",
+          "start": 65.192,
+          "end": 65.532
+        },
+        {
+          "text": "discreti,",
+          "start": 65.572,
+          "end": 66.072
+        }
+      ]
+    },
+    {
+      "start": 66.472,
+      "end": 69.453,
+      "text": "e si commette un errore di quantizzazione, o distorsione,",
+      "words": [
+        {
+          "text": "e",
+          "start": 66.472,
+          "end": 66.512
+        },
+        {
+          "text": "si",
+          "start": 66.572,
+          "end": 66.652
+        },
+        {
+          "text": "commette",
+          "start": 66.692,
+          "end": 67.052
+        },
+        {
+          "text": "un",
+          "start": 67.092,
+          "end": 67.172
+        },
+        {
+          "text": "errore",
+          "start": 67.212,
+          "end": 67.492
+        },
+        {
+          "text": "di",
+          "start": 67.553,
+          "end": 67.613
+        },
+        {
+          "text": "quantizzazione,",
+          "start": 67.653,
+          "end": 68.513
+        },
+        {
+          "text": "o",
+          "start": 68.653,
+          "end": 68.69300000000001
+        },
+        {
+          "text": "distorsione,",
+          "start": 68.753,
+          "end": 69.453
+        }
+      ]
+    },
+    {
+      "start": 69.573,
+      "end": 72.573,
+      "text": "sostituendo ciascun valore con il centroide del suo intervallo.",
+      "words": [
+        {
+          "text": "sostituendo",
+          "start": 69.573,
+          "end": 70.153
+        },
+        {
+          "text": "ciascun",
+          "start": 70.193,
+          "end": 70.533
+        },
+        {
+          "text": "valore",
+          "start": 70.553,
+          "end": 70.853
+        },
+        {
+          "text": "con",
+          "start": 70.893,
+          "end": 70.993
+        },
+        {
+          "text": "il",
+          "start": 71.033,
+          "end": 71.113
+        },
+        {
+          "text": "centroide",
+          "start": 71.153,
+          "end": 71.673
+        },
+        {
+          "text": "del",
+          "start": 71.713,
+          "end": 71.813
+        },
+        {
+          "text": "suo",
+          "start": 71.853,
+          "end": 71.953
+        },
+        {
+          "text": "intervallo.",
+          "start": 72.013,
+          "end": 72.573
+        }
+      ]
+    },
+    {
+      "start": 73.373,
+      "end": 75.733,
+      "text": "Notiamo un confronto istruttivo col K-NN:",
+      "words": [
+        {
+          "text": "Notiamo",
+          "start": 73.373,
+          "end": 73.673
+        },
+        {
+          "text": "un",
+          "start": 73.713,
+          "end": 73.773
+        },
+        {
+          "text": "confronto",
+          "start": 73.793,
+          "end": 74.193
+        },
+        {
+          "text": "istruttivo",
+          "start": 74.233,
+          "end": 74.713
+        },
+        {
+          "text": "col",
+          "start": 74.773,
+          "end": 74.913
+        },
+        {
+          "text": "K-NN:",
+          "start": 74.993,
+          "end": 75.733
+        }
+      ]
+    },
+    {
+      "start": 76.373,
+      "end": 79.414,
+      "text": "il problema della VQ è l'inverso di quello del K-NN.",
+      "words": [
+        {
+          "text": "il",
+          "start": 76.373,
+          "end": 76.453
+        },
+        {
+          "text": "problema",
+          "start": 76.493,
+          "end": 76.833
+        },
+        {
+          "text": "della",
+          "start": 76.873,
+          "end": 77.033
+        },
+        {
+          "text": "VQ",
+          "start": 77.053,
+          "end": 77.254
+        },
+        {
+          "text": "è",
+          "start": 77.654,
+          "end": 77.694
+        },
+        {
+          "text": "l'inverso",
+          "start": 77.734,
+          "end": 78.194
+        },
+        {
+          "text": "di",
+          "start": 78.254,
+          "end": 78.29400000000001
+        },
+        {
+          "text": "quello",
+          "start": 78.334,
+          "end": 78.534
+        },
+        {
+          "text": "del",
+          "start": 78.574,
+          "end": 78.674
+        },
+        {
+          "text": "K-NN.",
+          "start": 78.734,
+          "end": 79.414
+        }
+      ]
+    },
+    {
+      "start": 80.154,
+      "end": 83.734,
+      "text": "Qui, dato il dataset, dobbiamo trovare i centri che minimizzano la loss;",
+      "words": [
+        {
+          "text": "Qui,",
+          "start": 80.154,
+          "end": 80.294
+        },
+        {
+          "text": "dato",
+          "start": 80.554,
+          "end": 80.754
+        },
+        {
+          "text": "il",
+          "start": 80.794,
+          "end": 80.854
+        },
+        {
+          "text": "dataset,",
+          "start": 80.874,
+          "end": 81.374
+        },
+        {
+          "text": "dobbiamo",
+          "start": 81.594,
+          "end": 81.874
+        },
+        {
+          "text": "trovare",
+          "start": 81.914,
+          "end": 82.194
+        },
+        {
+          "text": "i",
+          "start": 82.214,
+          "end": 82.254
+        },
+        {
+          "text": "centri",
+          "start": 82.294,
+          "end": 82.634
+        },
+        {
+          "text": "che",
+          "start": 82.654,
+          "end": 82.754
+        },
+        {
+          "text": "minimizzano",
+          "start": 82.794,
+          "end": 83.334
+        },
+        {
+          "text": "la",
+          "start": 83.394,
+          "end": 83.43400000000001
+        },
+        {
+          "text": "loss;",
+          "start": 83.494,
+          "end": 83.734
+        }
+      ]
+    },
+    {
+      "start": 84.334,
+      "end": 89.015,
+      "text": "in generale è un problema molto difficile, perché trovare il codebook ottimo è NP-completo.",
+      "words": [
+        {
+          "text": "in",
+          "start": 84.334,
+          "end": 84.414
+        },
+        {
+          "text": "generale",
+          "start": 84.454,
+          "end": 84.934
+        },
+        {
+          "text": "è",
+          "start": 84.954,
+          "end": 84.994
+        },
+        {
+          "text": "un",
+          "start": 84.994,
+          "end": 85.034
+        },
+        {
+          "text": "problema",
+          "start": 85.054,
+          "end": 85.394
+        },
+        {
+          "text": "molto",
+          "start": 85.454,
+          "end": 85.674
+        },
+        {
+          "text": "difficile,",
+          "start": 85.714,
+          "end": 86.234
+        },
+        {
+          "text": "perché",
+          "start": 86.534,
+          "end": 86.755
+        },
+        {
+          "text": "trovare",
+          "start": 86.795,
+          "end": 87.075
+        },
+        {
+          "text": "il",
+          "start": 87.115,
+          "end": 87.155
+        },
+        {
+          "text": "codebook",
+          "start": 87.215,
+          "end": 87.635
+        },
+        {
+          "text": "ottimo",
+          "start": 87.735,
+          "end": 88.055
+        },
+        {
+          "text": "è",
+          "start": 88.155,
+          "end": 88.19500000000001
+        },
+        {
+          "text": "NP-completo.",
+          "start": 88.255,
+          "end": 89.015
+        }
+      ]
+    },
+    {
+      "start": 89.715,
+      "end": 92.355,
+      "text": "Infine, una precisazione sul rapporto col clustering:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 89.715,
+          "end": 90.095
+        },
+        {
+          "text": "una",
+          "start": 90.135,
+          "end": 90.235
+        },
+        {
+          "text": "precisazione",
+          "start": 90.275,
+          "end": 90.935
+        },
+        {
+          "text": "sul",
+          "start": 90.975,
+          "end": 91.095
+        },
+        {
+          "text": "rapporto",
+          "start": 91.135,
+          "end": 91.535
+        },
+        {
+          "text": "col",
+          "start": 91.575,
+          "end": 91.695
+        },
+        {
+          "text": "clustering:",
+          "start": 91.755,
+          "end": 92.355
+        }
+      ]
+    },
+    {
+      "start": 93.115,
+      "end": 99.516,
+      "text": "il clustering ha un obiettivo più generale, cioè trovare raggruppamenti interessanti spesso definiti implicitamente dalla",
+      "words": [
+        {
+          "text": "il",
+          "start": 93.115,
+          "end": 93.215
+        },
+        {
+          "text": "clustering",
+          "start": 93.255,
+          "end": 93.735
+        },
+        {
+          "text": "ha",
+          "start": 93.775,
+          "end": 93.81500000000001
+        },
+        {
+          "text": "un",
+          "start": 93.835,
+          "end": 93.915
+        },
+        {
+          "text": "obiettivo",
+          "start": 93.935,
+          "end": 94.335
+        },
+        {
+          "text": "più",
+          "start": 94.395,
+          "end": 94.495
+        },
+        {
+          "text": "generale,",
+          "start": 94.575,
+          "end": 95.075
+        },
+        {
+          "text": "cioè",
+          "start": 95.415,
+          "end": 95.535
+        },
+        {
+          "text": "trovare",
+          "start": 95.675,
+          "end": 96.035
+        },
+        {
+          "text": "raggruppamenti",
+          "start": 96.095,
+          "end": 96.736
+        },
+        {
+          "text": "interessanti",
+          "start": 96.776,
+          "end": 97.476
+        },
+        {
+          "text": "spesso",
+          "start": 97.556,
+          "end": 97.836
+        },
+        {
+          "text": "definiti",
+          "start": 97.876,
+          "end": 98.316
+        },
+        {
+          "text": "implicitamente",
+          "start": 98.476,
+          "end": 99.296
+        },
+        {
+          "text": "dalla",
+          "start": 99.356,
+          "end": 99.516
+        }
+      ]
+    },
+    {
+      "start": 99.536,
+      "end": 102.876,
+      "text": "procedura stessa anziché dal minimo errore di quantizzazione;",
+      "words": [
+        {
+          "text": "procedura",
+          "start": 99.536,
+          "end": 99.976
+        },
+        {
+          "text": "stessa",
+          "start": 100.036,
+          "end": 100.416
+        },
+        {
+          "text": "anziché",
+          "start": 100.756,
+          "end": 101.116
+        },
+        {
+          "text": "dal",
+          "start": 101.156,
+          "end": 101.276
+        },
+        {
+          "text": "minimo",
+          "start": 101.336,
+          "end": 101.596
+        },
+        {
+          "text": "errore",
+          "start": 101.656,
+          "end": 101.936
+        },
+        {
+          "text": "di",
+          "start": 101.976,
+          "end": 102.036
+        },
+        {
+          "text": "quantizzazione;",
+          "start": 102.076,
+          "end": 102.876
+        }
+      ]
+    },
+    {
+      "start": 103.476,
+      "end": 108.377,
+      "text": "tuttavia la VQ offre un quadro matematico prezioso, e i suoi algoritmi sono lo standard",
+      "words": [
+        {
+          "text": "tuttavia",
+          "start": 103.476,
+          "end": 103.916
+        },
+        {
+          "text": "la",
+          "start": 104.116,
+          "end": 104.176
+        },
+        {
+          "text": "VQ",
+          "start": 104.236,
+          "end": 104.416
+        },
+        {
+          "text": "offre",
+          "start": 104.656,
+          "end": 104.896
+        },
+        {
+          "text": "un",
+          "start": 104.936,
+          "end": 104.996
+        },
+        {
+          "text": "quadro",
+          "start": 105.016,
+          "end": 105.256
+        },
+        {
+          "text": "matematico",
+          "start": 105.296,
+          "end": 105.797
+        },
+        {
+          "text": "prezioso,",
+          "start": 105.837,
+          "end": 106.357
+        },
+        {
+          "text": "e",
+          "start": 106.697,
+          "end": 106.73700000000001
+        },
+        {
+          "text": "i",
+          "start": 106.777,
+          "end": 106.81700000000001
+        },
+        {
+          "text": "suoi",
+          "start": 106.837,
+          "end": 106.997
+        },
+        {
+          "text": "algoritmi",
+          "start": 107.037,
+          "end": 107.517
+        },
+        {
+          "text": "sono",
+          "start": 107.577,
+          "end": 107.757
+        },
+        {
+          "text": "lo",
+          "start": 107.797,
+          "end": 107.877
+        },
+        {
+          "text": "standard",
+          "start": 107.917,
+          "end": 108.377
+        }
+      ]
+    },
+    {
+      "start": 108.477,
+      "end": 110.077,
+      "text": "per il clustering partizionale.",
+      "words": [
+        {
+          "text": "per",
+          "start": 108.477,
+          "end": 108.597
+        },
+        {
+          "text": "il",
+          "start": 108.617,
+          "end": 108.697
+        },
+        {
+          "text": "clustering",
+          "start": 108.737,
+          "end": 109.257
+        },
+        {
+          "text": "partizionale.",
+          "start": 109.357,
+          "end": 110.077
+        }
+      ]
+    }
+  ]
+}

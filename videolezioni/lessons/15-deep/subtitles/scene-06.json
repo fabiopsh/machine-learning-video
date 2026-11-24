@@ -1,0 +1,1601 @@
+{
+  "duration": 118.918,
+  "segments": [
+    {
+      "start": 0.477,
+      "end": 4.397,
+      "text": "Cerchiamo ora di capire l'intuizione statistica profonda dietro a questi teoremi:",
+      "words": [
+        {
+          "text": "Cerchiamo",
+          "start": 0.477,
+          "end": 0.837
+        },
+        {
+          "text": "ora",
+          "start": 0.877,
+          "end": 0.997
+        },
+        {
+          "text": "di",
+          "start": 1.037,
+          "end": 1.097
+        },
+        {
+          "text": "capire",
+          "start": 1.137,
+          "end": 1.417
+        },
+        {
+          "text": "l'intuizione",
+          "start": 1.497,
+          "end": 2.157
+        },
+        {
+          "text": "statistica",
+          "start": 2.237,
+          "end": 2.757
+        },
+        {
+          "text": "profonda",
+          "start": 2.817,
+          "end": 3.257
+        },
+        {
+          "text": "dietro",
+          "start": 3.397,
+          "end": 3.657
+        },
+        {
+          "text": "a",
+          "start": 3.677,
+          "end": 3.717
+        },
+        {
+          "text": "questi",
+          "start": 3.737,
+          "end": 3.977
+        },
+        {
+          "text": "teoremi:",
+          "start": 4.017,
+          "end": 4.397
+        }
+      ]
+    },
+    {
+      "start": 4.897,
+      "end": 7.478,
+      "text": "la composizionalità delle rappresentazioni interne.",
+      "words": [
+        {
+          "text": "la",
+          "start": 4.897,
+          "end": 4.957
+        },
+        {
+          "text": "composizionalità",
+          "start": 5.057,
+          "end": 5.938
+        },
+        {
+          "text": "delle",
+          "start": 6.018,
+          "end": 6.178
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 6.238,
+          "end": 6.998
+        },
+        {
+          "text": "interne.",
+          "start": 7.038,
+          "end": 7.478
+        }
+      ]
+    },
+    {
+      "start": 8.198,
+      "end": 13.358,
+      "text": "In una rete profonda, i concetti semplici estratti da uno strato vengono usati come primitive",
+      "words": [
+        {
+          "text": "In",
+          "start": 8.198,
+          "end": 8.298
+        },
+        {
+          "text": "una",
+          "start": 8.338,
+          "end": 8.458
+        },
+        {
+          "text": "rete",
+          "start": 8.498,
+          "end": 8.698
+        },
+        {
+          "text": "profonda,",
+          "start": 8.718,
+          "end": 9.238
+        },
+        {
+          "text": "i",
+          "start": 9.518,
+          "end": 9.558
+        },
+        {
+          "text": "concetti",
+          "start": 9.598,
+          "end": 9.958
+        },
+        {
+          "text": "semplici",
+          "start": 10.018,
+          "end": 10.458
+        },
+        {
+          "text": "estratti",
+          "start": 10.498,
+          "end": 10.878
+        },
+        {
+          "text": "da",
+          "start": 10.918,
+          "end": 10.958
+        },
+        {
+          "text": "uno",
+          "start": 11.018,
+          "end": 11.138
+        },
+        {
+          "text": "strato",
+          "start": 11.198,
+          "end": 11.598
+        },
+        {
+          "text": "vengono",
+          "start": 11.938,
+          "end": 12.198
+        },
+        {
+          "text": "usati",
+          "start": 12.238,
+          "end": 12.518
+        },
+        {
+          "text": "come",
+          "start": 12.558,
+          "end": 12.738
+        },
+        {
+          "text": "primitive",
+          "start": 12.818,
+          "end": 13.358
+        }
+      ]
+    },
+    {
+      "start": 13.498,
+      "end": 16.439,
+      "text": "dallo strato successivo per costruire concetti più complessi.",
+      "words": [
+        {
+          "text": "dallo",
+          "start": 13.498,
+          "end": 13.678
+        },
+        {
+          "text": "strato",
+          "start": 13.718,
+          "end": 13.998
+        },
+        {
+          "text": "successivo",
+          "start": 14.038,
+          "end": 14.618
+        },
+        {
+          "text": "per",
+          "start": 14.658,
+          "end": 14.778
+        },
+        {
+          "text": "costruire",
+          "start": 14.818,
+          "end": 15.238
+        },
+        {
+          "text": "concetti",
+          "start": 15.278,
+          "end": 15.698
+        },
+        {
+          "text": "più",
+          "start": 15.738,
+          "end": 15.818
+        },
+        {
+          "text": "complessi.",
+          "start": 15.878,
+          "end": 16.439
+        }
+      ]
+    },
+    {
+      "start": 16.939,
+      "end": 21.819,
+      "text": "Si evita così di dover rappresentare e apprendere in modo esplicito e combinatorio tutte le",
+      "words": [
+        {
+          "text": "Si",
+          "start": 16.939,
+          "end": 16.999
+        },
+        {
+          "text": "evita",
+          "start": 17.099,
+          "end": 17.359
+        },
+        {
+          "text": "così",
+          "start": 17.419,
+          "end": 17.639
+        },
+        {
+          "text": "di",
+          "start": 17.739,
+          "end": 17.819
+        },
+        {
+          "text": "dover",
+          "start": 17.859,
+          "end": 18.079
+        },
+        {
+          "text": "rappresentare",
+          "start": 18.119,
+          "end": 18.799
+        },
+        {
+          "text": "e",
+          "start": 18.839,
+          "end": 18.879
+        },
+        {
+          "text": "apprendere",
+          "start": 18.899,
+          "end": 19.399
+        },
+        {
+          "text": "in",
+          "start": 19.439,
+          "end": 19.499
+        },
+        {
+          "text": "modo",
+          "start": 19.539,
+          "end": 19.739
+        },
+        {
+          "text": "esplicito",
+          "start": 19.799,
+          "end": 20.299
+        },
+        {
+          "text": "e",
+          "start": 20.359,
+          "end": 20.399
+        },
+        {
+          "text": "combinatorio",
+          "start": 20.479,
+          "end": 21.239
+        },
+        {
+          "text": "tutte",
+          "start": 21.399,
+          "end": 21.699
+        },
+        {
+          "text": "le",
+          "start": 21.739,
+          "end": 21.819
+        }
+      ]
+    },
+    {
+      "start": 21.839,
+      "end": 26.479,
+      "text": "possibili combinazioni: si imparano le singole parole o i sotto-pattern,",
+      "words": [
+        {
+          "text": "possibili",
+          "start": 21.839,
+          "end": 22.299
+        },
+        {
+          "text": "combinazioni:",
+          "start": 22.339,
+          "end": 23.059
+        },
+        {
+          "text": "si",
+          "start": 23.859,
+          "end": 23.919
+        },
+        {
+          "text": "imparano",
+          "start": 23.959,
+          "end": 24.439
+        },
+        {
+          "text": "le",
+          "start": 24.499,
+          "end": 24.579
+        },
+        {
+          "text": "singole",
+          "start": 24.619,
+          "end": 24.959
+        },
+        {
+          "text": "parole",
+          "start": 24.999,
+          "end": 25.319
+        },
+        {
+          "text": "o",
+          "start": 25.559,
+          "end": 25.599
+        },
+        {
+          "text": "i",
+          "start": 25.639,
+          "end": 25.679
+        },
+        {
+          "text": "sotto-pattern,",
+          "start": 25.719,
+          "end": 26.479
+        }
+      ]
+    },
+    {
+      "start": 26.799,
+      "end": 29.88,
+      "text": "non direttamente tutte le frasi o configurazioni possibili.",
+      "words": [
+        {
+          "text": "non",
+          "start": 26.799,
+          "end": 26.979
+        },
+        {
+          "text": "direttamente",
+          "start": 27.039,
+          "end": 27.64
+        },
+        {
+          "text": "tutte",
+          "start": 27.74,
+          "end": 27.98
+        },
+        {
+          "text": "le",
+          "start": 28.0,
+          "end": 28.06
+        },
+        {
+          "text": "frasi",
+          "start": 28.1,
+          "end": 28.46
+        },
+        {
+          "text": "o",
+          "start": 28.52,
+          "end": 28.56
+        },
+        {
+          "text": "configurazioni",
+          "start": 28.62,
+          "end": 29.34
+        },
+        {
+          "text": "possibili.",
+          "start": 29.36,
+          "end": 29.88
+        }
+      ]
+    },
+    {
+      "start": 30.78,
+      "end": 34.32,
+      "text": "Questo ci porta a sfatare un equivoco molto diffuso con un'idea chiave:",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 30.78,
+          "end": 31.06
+        },
+        {
+          "text": "ci",
+          "start": 31.12,
+          "end": 31.18
+        },
+        {
+          "text": "porta",
+          "start": 31.24,
+          "end": 31.44
+        },
+        {
+          "text": "a",
+          "start": 31.48,
+          "end": 31.52
+        },
+        {
+          "text": "sfatare",
+          "start": 31.52,
+          "end": 31.88
+        },
+        {
+          "text": "un",
+          "start": 31.96,
+          "end": 32.04
+        },
+        {
+          "text": "equivoco",
+          "start": 32.08,
+          "end": 32.54
+        },
+        {
+          "text": "molto",
+          "start": 32.64,
+          "end": 32.94
+        },
+        {
+          "text": "diffuso",
+          "start": 32.98,
+          "end": 33.4
+        },
+        {
+          "text": "con",
+          "start": 33.44,
+          "end": 33.56
+        },
+        {
+          "text": "un'idea",
+          "start": 33.6,
+          "end": 33.92
+        },
+        {
+          "text": "chiave:",
+          "start": 33.98,
+          "end": 34.32
+        }
+      ]
+    },
+    {
+      "start": 34.94,
+      "end": 37.6,
+      "text": "profondo non significa grande.",
+      "words": [
+        {
+          "text": "profondo",
+          "start": 34.94,
+          "end": 35.62
+        },
+        {
+          "text": "non",
+          "start": 36.04,
+          "end": 36.22
+        },
+        {
+          "text": "significa",
+          "start": 36.32,
+          "end": 36.92
+        },
+        {
+          "text": "grande.",
+          "start": 37.18,
+          "end": 37.6
+        }
+      ]
+    },
+    {
+      "start": 38.621,
+      "end": 41.021,
+      "text": "Le reti profonde non vanno viste come modelli enormi,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 38.621,
+          "end": 38.681
+        },
+        {
+          "text": "reti",
+          "start": 38.721,
+          "end": 38.901
+        },
+        {
+          "text": "profonde",
+          "start": 38.941,
+          "end": 39.301
+        },
+        {
+          "text": "non",
+          "start": 39.321,
+          "end": 39.441
+        },
+        {
+          "text": "vanno",
+          "start": 39.481,
+          "end": 39.701
+        },
+        {
+          "text": "viste",
+          "start": 39.741,
+          "end": 39.981
+        },
+        {
+          "text": "come",
+          "start": 40.021,
+          "end": 40.161
+        },
+        {
+          "text": "modelli",
+          "start": 40.201,
+          "end": 40.521
+        },
+        {
+          "text": "enormi,",
+          "start": 40.581,
+          "end": 41.021
+        }
+      ]
+    },
+    {
+      "start": 41.381,
+      "end": 47.561,
+      "text": "bensì come modelli compatti rispetto a modelli superficiali potenzialmente esponenzialmente più grandi per lo stesso",
+      "words": [
+        {
+          "text": "bensì",
+          "start": 41.381,
+          "end": 41.641
+        },
+        {
+          "text": "come",
+          "start": 41.741,
+          "end": 41.901
+        },
+        {
+          "text": "modelli",
+          "start": 41.961,
+          "end": 42.281
+        },
+        {
+          "text": "compatti",
+          "start": 42.361,
+          "end": 42.941
+        },
+        {
+          "text": "rispetto",
+          "start": 43.221,
+          "end": 43.561
+        },
+        {
+          "text": "a",
+          "start": 43.581,
+          "end": 43.621
+        },
+        {
+          "text": "modelli",
+          "start": 43.661,
+          "end": 43.941
+        },
+        {
+          "text": "superficiali",
+          "start": 43.981,
+          "end": 44.581
+        },
+        {
+          "text": "potenzialmente",
+          "start": 44.681,
+          "end": 45.501
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 45.541,
+          "end": 46.321
+        },
+        {
+          "text": "più",
+          "start": 46.361,
+          "end": 46.461
+        },
+        {
+          "text": "grandi",
+          "start": 46.481,
+          "end": 46.861
+        },
+        {
+          "text": "per",
+          "start": 46.981,
+          "end": 47.101
+        },
+        {
+          "text": "lo",
+          "start": 47.161,
+          "end": 47.241
+        },
+        {
+          "text": "stesso",
+          "start": 47.281,
+          "end": 47.561
+        }
+      ]
+    },
+    {
+      "start": 47.621,
+      "end": 47.941,
+      "text": "task.",
+      "words": [
+        {
+          "text": "task.",
+          "start": 47.621,
+          "end": 47.941
+        }
+      ]
+    },
+    {
+      "start": 48.842,
+      "end": 53.222,
+      "text": "Avere meno unità e meno pesi aiuta direttamente l'apprendimento,",
+      "words": [
+        {
+          "text": "Avere",
+          "start": 48.842,
+          "end": 49.122
+        },
+        {
+          "text": "meno",
+          "start": 49.262,
+          "end": 49.542
+        },
+        {
+          "text": "unità",
+          "start": 49.642,
+          "end": 49.962
+        },
+        {
+          "text": "e",
+          "start": 50.222,
+          "end": 50.262
+        },
+        {
+          "text": "meno",
+          "start": 50.422,
+          "end": 50.662
+        },
+        {
+          "text": "pesi",
+          "start": 50.722,
+          "end": 51.082
+        },
+        {
+          "text": "aiuta",
+          "start": 51.342,
+          "end": 51.682
+        },
+        {
+          "text": "direttamente",
+          "start": 51.762,
+          "end": 52.442
+        },
+        {
+          "text": "l'apprendimento,",
+          "start": 52.482,
+          "end": 53.222
+        }
+      ]
+    },
+    {
+      "start": 53.622,
+      "end": 59.783,
+      "text": "permettendo di generalizzare bene con meno esempi: una piccola rete profonda può sostituire un'enorme rete",
+      "words": [
+        {
+          "text": "permettendo",
+          "start": 53.622,
+          "end": 54.142
+        },
+        {
+          "text": "di",
+          "start": 54.182,
+          "end": 54.242
+        },
+        {
+          "text": "generalizzare",
+          "start": 54.302,
+          "end": 54.942
+        },
+        {
+          "text": "bene",
+          "start": 55.002,
+          "end": 55.242
+        },
+        {
+          "text": "con",
+          "start": 55.342,
+          "end": 55.482
+        },
+        {
+          "text": "meno",
+          "start": 55.562,
+          "end": 55.782
+        },
+        {
+          "text": "esempi:",
+          "start": 55.842,
+          "end": 56.282
+        },
+        {
+          "text": "una",
+          "start": 56.682,
+          "end": 56.802
+        },
+        {
+          "text": "piccola",
+          "start": 56.842,
+          "end": 57.222
+        },
+        {
+          "text": "rete",
+          "start": 57.262,
+          "end": 57.442
+        },
+        {
+          "text": "profonda",
+          "start": 57.482,
+          "end": 57.942
+        },
+        {
+          "text": "può",
+          "start": 58.062,
+          "end": 58.182
+        },
+        {
+          "text": "sostituire",
+          "start": 58.262,
+          "end": 58.842
+        },
+        {
+          "text": "un'enorme",
+          "start": 58.942,
+          "end": 59.502
+        },
+        {
+          "text": "rete",
+          "start": 59.583,
+          "end": 59.783
+        }
+      ]
+    },
+    {
+      "start": 59.823,
+      "end": 60.523,
+      "text": "superficiale.",
+      "words": [
+        {
+          "text": "superficiale.",
+          "start": 59.823,
+          "end": 60.523
+        }
+      ]
+    },
+    {
+      "start": 61.623,
+      "end": 66.723,
+      "text": "Dal punto di vista del bias induttivo, scegliere un modello profondo codifica una convinzione molto",
+      "words": [
+        {
+          "text": "Dal",
+          "start": 61.623,
+          "end": 61.743
+        },
+        {
+          "text": "punto",
+          "start": 61.783,
+          "end": 62.003
+        },
+        {
+          "text": "di",
+          "start": 62.023,
+          "end": 62.083
+        },
+        {
+          "text": "vista",
+          "start": 62.103,
+          "end": 62.303
+        },
+        {
+          "text": "del",
+          "start": 62.343,
+          "end": 62.463
+        },
+        {
+          "text": "bias",
+          "start": 62.503,
+          "end": 62.783
+        },
+        {
+          "text": "induttivo,",
+          "start": 62.843,
+          "end": 63.343
+        },
+        {
+          "text": "scegliere",
+          "start": 63.663,
+          "end": 64.063
+        },
+        {
+          "text": "un",
+          "start": 64.103,
+          "end": 64.143
+        },
+        {
+          "text": "modello",
+          "start": 64.183,
+          "end": 64.483
+        },
+        {
+          "text": "profondo",
+          "start": 64.523,
+          "end": 64.943
+        },
+        {
+          "text": "codifica",
+          "start": 65.023,
+          "end": 65.503
+        },
+        {
+          "text": "una",
+          "start": 65.583,
+          "end": 65.703
+        },
+        {
+          "text": "convinzione",
+          "start": 65.743,
+          "end": 66.303
+        },
+        {
+          "text": "molto",
+          "start": 66.423,
+          "end": 66.723
+        }
+      ]
+    },
+    {
+      "start": 66.783,
+      "end": 71.304,
+      "text": "generale: che la funzione da apprendere sia una composizione di funzioni più semplici,",
+      "words": [
+        {
+          "text": "generale:",
+          "start": 66.783,
+          "end": 67.283
+        },
+        {
+          "text": "che",
+          "start": 67.803,
+          "end": 67.883
+        },
+        {
+          "text": "la",
+          "start": 67.923,
+          "end": 67.983
+        },
+        {
+          "text": "funzione",
+          "start": 68.023,
+          "end": 68.363
+        },
+        {
+          "text": "da",
+          "start": 68.403,
+          "end": 68.463
+        },
+        {
+          "text": "apprendere",
+          "start": 68.503,
+          "end": 68.983
+        },
+        {
+          "text": "sia",
+          "start": 69.043,
+          "end": 69.183
+        },
+        {
+          "text": "una",
+          "start": 69.243,
+          "end": 69.363
+        },
+        {
+          "text": "composizione",
+          "start": 69.423,
+          "end": 70.043
+        },
+        {
+          "text": "di",
+          "start": 70.083,
+          "end": 70.143
+        },
+        {
+          "text": "funzioni",
+          "start": 70.183,
+          "end": 70.544
+        },
+        {
+          "text": "più",
+          "start": 70.604,
+          "end": 70.684
+        },
+        {
+          "text": "semplici,",
+          "start": 70.784,
+          "end": 71.304
+        }
+      ]
+    },
+    {
+      "start": 71.724,
+      "end": 73.644,
+      "text": "o di fattori di variazione annidati.",
+      "words": [
+        {
+          "text": "o",
+          "start": 71.724,
+          "end": 71.76400000000001
+        },
+        {
+          "text": "di",
+          "start": 71.884,
+          "end": 71.964
+        },
+        {
+          "text": "fattori",
+          "start": 72.004,
+          "end": 72.364
+        },
+        {
+          "text": "di",
+          "start": 72.404,
+          "end": 72.464
+        },
+        {
+          "text": "variazione",
+          "start": 72.504,
+          "end": 73.024
+        },
+        {
+          "text": "annidati.",
+          "start": 73.084,
+          "end": 73.644
+        }
+      ]
+    },
+    {
+      "start": 74.484,
+      "end": 80.084,
+      "text": "Quando il task rispecchia questo bias, la generalizzazione migliora proprio grazie ai molti strati.",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 74.484,
+          "end": 74.744
+        },
+        {
+          "text": "il",
+          "start": 74.764,
+          "end": 74.824
+        },
+        {
+          "text": "task",
+          "start": 74.904,
+          "end": 75.244
+        },
+        {
+          "text": "rispecchia",
+          "start": 75.464,
+          "end": 75.924
+        },
+        {
+          "text": "questo",
+          "start": 75.964,
+          "end": 76.204
+        },
+        {
+          "text": "bias,",
+          "start": 76.244,
+          "end": 76.624
+        },
+        {
+          "text": "la",
+          "start": 76.904,
+          "end": 76.984
+        },
+        {
+          "text": "generalizzazione",
+          "start": 77.084,
+          "end": 77.944
+        },
+        {
+          "text": "migliora",
+          "start": 78.004,
+          "end": 78.384
+        },
+        {
+          "text": "proprio",
+          "start": 78.484,
+          "end": 78.924
+        },
+        {
+          "text": "grazie",
+          "start": 78.984,
+          "end": 79.304
+        },
+        {
+          "text": "ai",
+          "start": 79.324,
+          "end": 79.384
+        },
+        {
+          "text": "molti",
+          "start": 79.424,
+          "end": 79.664
+        },
+        {
+          "text": "strati.",
+          "start": 79.724,
+          "end": 80.084
+        }
+      ]
+    },
+    {
+      "start": 80.844,
+      "end": 85.645,
+      "text": "Infatti, a parità di numero di parametri, reti più profonde generalizzano meglio,",
+      "words": [
+        {
+          "text": "Infatti,",
+          "start": 80.844,
+          "end": 81.325
+        },
+        {
+          "text": "a",
+          "start": 81.545,
+          "end": 81.58500000000001
+        },
+        {
+          "text": "parità",
+          "start": 81.645,
+          "end": 81.965
+        },
+        {
+          "text": "di",
+          "start": 82.025,
+          "end": 82.105
+        },
+        {
+          "text": "numero",
+          "start": 82.165,
+          "end": 82.445
+        },
+        {
+          "text": "di",
+          "start": 82.485,
+          "end": 82.545
+        },
+        {
+          "text": "parametri,",
+          "start": 82.585,
+          "end": 83.085
+        },
+        {
+          "text": "reti",
+          "start": 83.545,
+          "end": 83.745
+        },
+        {
+          "text": "più",
+          "start": 83.785,
+          "end": 83.865
+        },
+        {
+          "text": "profonde",
+          "start": 83.925,
+          "end": 84.305
+        },
+        {
+          "text": "generalizzano",
+          "start": 84.365,
+          "end": 85.085
+        },
+        {
+          "text": "meglio,",
+          "start": 85.265,
+          "end": 85.645
+        }
+      ]
+    },
+    {
+      "start": 86.065,
+      "end": 90.245,
+      "text": "mentre aumentare i parametri senza aumentare la profondità non porta lo stesso beneficio.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 86.065,
+          "end": 86.325
+        },
+        {
+          "text": "aumentare",
+          "start": 86.385,
+          "end": 86.785
+        },
+        {
+          "text": "i",
+          "start": 86.825,
+          "end": 86.86500000000001
+        },
+        {
+          "text": "parametri",
+          "start": 86.845,
+          "end": 87.285
+        },
+        {
+          "text": "senza",
+          "start": 87.365,
+          "end": 87.585
+        },
+        {
+          "text": "aumentare",
+          "start": 87.645,
+          "end": 88.065
+        },
+        {
+          "text": "la",
+          "start": 88.105,
+          "end": 88.165
+        },
+        {
+          "text": "profondità",
+          "start": 88.205,
+          "end": 88.685
+        },
+        {
+          "text": "non",
+          "start": 88.905,
+          "end": 89.045
+        },
+        {
+          "text": "porta",
+          "start": 89.105,
+          "end": 89.365
+        },
+        {
+          "text": "lo",
+          "start": 89.445,
+          "end": 89.485
+        },
+        {
+          "text": "stesso",
+          "start": 89.505,
+          "end": 89.785
+        },
+        {
+          "text": "beneficio.",
+          "start": 89.805,
+          "end": 90.245
+        }
+      ]
+    },
+    {
+      "start": 91.305,
+      "end": 95.606,
+      "text": "Task tipicamente gerarchici sono le immagini, formate per composizione di parti,",
+      "words": [
+        {
+          "text": "Task",
+          "start": 91.305,
+          "end": 91.565
+        },
+        {
+          "text": "tipicamente",
+          "start": 91.685,
+          "end": 92.206
+        },
+        {
+          "text": "gerarchici",
+          "start": 92.266,
+          "end": 92.846
+        },
+        {
+          "text": "sono",
+          "start": 92.906,
+          "end": 93.086
+        },
+        {
+          "text": "le",
+          "start": 93.126,
+          "end": 93.186
+        },
+        {
+          "text": "immagini,",
+          "start": 93.226,
+          "end": 93.706
+        },
+        {
+          "text": "formate",
+          "start": 93.906,
+          "end": 94.286
+        },
+        {
+          "text": "per",
+          "start": 94.326,
+          "end": 94.446
+        },
+        {
+          "text": "composizione",
+          "start": 94.486,
+          "end": 95.086
+        },
+        {
+          "text": "di",
+          "start": 95.126,
+          "end": 95.186
+        },
+        {
+          "text": "parti,",
+          "start": 95.226,
+          "end": 95.606
+        }
+      ]
+    },
+    {
+      "start": 96.006,
+      "end": 100.346,
+      "text": "e il linguaggio naturale, ma non tutti i dati e non tutti i task hanno",
+      "words": [
+        {
+          "text": "e",
+          "start": 96.006,
+          "end": 96.046
+        },
+        {
+          "text": "il",
+          "start": 96.106,
+          "end": 96.166
+        },
+        {
+          "text": "linguaggio",
+          "start": 96.186,
+          "end": 96.646
+        },
+        {
+          "text": "naturale,",
+          "start": 96.686,
+          "end": 97.146
+        },
+        {
+          "text": "ma",
+          "start": 97.586,
+          "end": 97.666
+        },
+        {
+          "text": "non",
+          "start": 97.806,
+          "end": 97.966
+        },
+        {
+          "text": "tutti",
+          "start": 98.086,
+          "end": 98.426
+        },
+        {
+          "text": "i",
+          "start": 98.446,
+          "end": 98.486
+        },
+        {
+          "text": "dati",
+          "start": 98.486,
+          "end": 98.826
+        },
+        {
+          "text": "e",
+          "start": 99.006,
+          "end": 99.046
+        },
+        {
+          "text": "non",
+          "start": 99.126,
+          "end": 99.266
+        },
+        {
+          "text": "tutti",
+          "start": 99.326,
+          "end": 99.586
+        },
+        {
+          "text": "i",
+          "start": 99.606,
+          "end": 99.646
+        },
+        {
+          "text": "task",
+          "start": 99.646,
+          "end": 99.966
+        },
+        {
+          "text": "hanno",
+          "start": 100.126,
+          "end": 100.346
+        }
+      ]
+    },
+    {
+      "start": 100.386,
+      "end": 101.146,
+      "text": "questa struttura.",
+      "words": [
+        {
+          "text": "questa",
+          "start": 100.386,
+          "end": 100.626
+        },
+        {
+          "text": "struttura.",
+          "start": 100.666,
+          "end": 101.146
+        }
+      ]
+    },
+    {
+      "start": 102.126,
+      "end": 106.347,
+      "text": "Si tratta comunque di un bias molto più generale rispetto a vincoli progettati ad hoc,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 102.126,
+          "end": 102.186
+        },
+        {
+          "text": "tratta",
+          "start": 102.246,
+          "end": 102.486
+        },
+        {
+          "text": "comunque",
+          "start": 102.526,
+          "end": 102.847
+        },
+        {
+          "text": "di",
+          "start": 102.887,
+          "end": 102.947
+        },
+        {
+          "text": "un",
+          "start": 102.967,
+          "end": 103.027
+        },
+        {
+          "text": "bias",
+          "start": 103.067,
+          "end": 103.367
+        },
+        {
+          "text": "molto",
+          "start": 103.507,
+          "end": 103.807
+        },
+        {
+          "text": "più",
+          "start": 103.827,
+          "end": 103.947
+        },
+        {
+          "text": "generale",
+          "start": 103.987,
+          "end": 104.487
+        },
+        {
+          "text": "rispetto",
+          "start": 104.667,
+          "end": 104.987
+        },
+        {
+          "text": "a",
+          "start": 105.027,
+          "end": 105.06700000000001
+        },
+        {
+          "text": "vincoli",
+          "start": 105.087,
+          "end": 105.407
+        },
+        {
+          "text": "progettati",
+          "start": 105.447,
+          "end": 105.967
+        },
+        {
+          "text": "ad",
+          "start": 106.027,
+          "end": 106.107
+        },
+        {
+          "text": "hoc,",
+          "start": 106.147,
+          "end": 106.347
+        }
+      ]
+    },
+    {
+      "start": 106.827,
+      "end": 111.747,
+      "text": "come le funzioni phi scelte a mano in una Linear Basis Expansion o le feature",
+      "words": [
+        {
+          "text": "come",
+          "start": 106.827,
+          "end": 106.987
+        },
+        {
+          "text": "le",
+          "start": 107.047,
+          "end": 107.107
+        },
+        {
+          "text": "funzioni",
+          "start": 107.147,
+          "end": 107.547
+        },
+        {
+          "text": "phi",
+          "start": 107.767,
+          "end": 107.867
+        },
+        {
+          "text": "scelte",
+          "start": 108.027,
+          "end": 108.447
+        },
+        {
+          "text": "a",
+          "start": 108.507,
+          "end": 108.54700000000001
+        },
+        {
+          "text": "mano",
+          "start": 108.607,
+          "end": 108.907
+        },
+        {
+          "text": "in",
+          "start": 109.087,
+          "end": 109.167
+        },
+        {
+          "text": "una",
+          "start": 109.207,
+          "end": 109.327
+        },
+        {
+          "text": "Linear",
+          "start": 109.387,
+          "end": 109.667
+        },
+        {
+          "text": "Basis",
+          "start": 109.707,
+          "end": 110.067
+        },
+        {
+          "text": "Expansion",
+          "start": 110.127,
+          "end": 110.767
+        },
+        {
+          "text": "o",
+          "start": 111.187,
+          "end": 111.227
+        },
+        {
+          "text": "le",
+          "start": 111.287,
+          "end": 111.367
+        },
+        {
+          "text": "feature",
+          "start": 111.427,
+          "end": 111.747
+        }
+      ]
+    },
+    {
+      "start": 111.747,
+      "end": 116.108,
+      "text": "ingegnerizzate; tuttavia, resta vero il principio fondamentale:",
+      "words": [
+        {
+          "text": "ingegnerizzate;",
+          "start": 111.747,
+          "end": 112.547
+        },
+        {
+          "text": "tuttavia,",
+          "start": 113.187,
+          "end": 113.748
+        },
+        {
+          "text": "resta",
+          "start": 114.128,
+          "end": 114.348
+        },
+        {
+          "text": "vero",
+          "start": 114.408,
+          "end": 114.608
+        },
+        {
+          "text": "il",
+          "start": 114.648,
+          "end": 114.728
+        },
+        {
+          "text": "principio",
+          "start": 114.808,
+          "end": 115.348
+        },
+        {
+          "text": "fondamentale:",
+          "start": 115.368,
+          "end": 116.108
+        }
+      ]
+    },
+    {
+      "start": 116.708,
+      "end": 118.668,
+      "text": "nulla funziona senza assunzioni.",
+      "words": [
+        {
+          "text": "nulla",
+          "start": 116.708,
+          "end": 117.068
+        },
+        {
+          "text": "funziona",
+          "start": 117.328,
+          "end": 117.768
+        },
+        {
+          "text": "senza",
+          "start": 117.828,
+          "end": 118.068
+        },
+        {
+          "text": "assunzioni.",
+          "start": 118.108,
+          "end": 118.668
+        }
+      ]
+    }
+  ]
+}

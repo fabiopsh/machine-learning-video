@@ -1,0 +1,1316 @@
+{
+  "duration": 103.787,
+  "segments": [
+    {
+      "start": 0.288,
+      "end": 4.808,
+      "text": "Passiamo ora a un pilastro concettuale che sottende l'intero deep learning:",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.288,
+          "end": 0.748
+        },
+        {
+          "text": "ora",
+          "start": 0.868,
+          "end": 1.008
+        },
+        {
+          "text": "a",
+          "start": 1.048,
+          "end": 1.088
+        },
+        {
+          "text": "un",
+          "start": 1.108,
+          "end": 1.168
+        },
+        {
+          "text": "pilastro",
+          "start": 1.228,
+          "end": 1.728
+        },
+        {
+          "text": "concettuale",
+          "start": 1.768,
+          "end": 2.508
+        },
+        {
+          "text": "che",
+          "start": 2.568,
+          "end": 2.648
+        },
+        {
+          "text": "sottende",
+          "start": 2.728,
+          "end": 3.208
+        },
+        {
+          "text": "l'intero",
+          "start": 3.308,
+          "end": 3.928
+        },
+        {
+          "text": "deep",
+          "start": 4.008,
+          "end": 4.208
+        },
+        {
+          "text": "learning:",
+          "start": 4.328,
+          "end": 4.808
+        }
+      ]
+    },
+    {
+      "start": 5.368,
+      "end": 6.868,
+      "text": "il representation learning.",
+      "words": [
+        {
+          "text": "il",
+          "start": 5.368,
+          "end": 5.468
+        },
+        {
+          "text": "representation",
+          "start": 5.508,
+          "end": 6.308
+        },
+        {
+          "text": "learning.",
+          "start": 6.388,
+          "end": 6.868
+        }
+      ]
+    },
+    {
+      "start": 7.648,
+      "end": 13.169,
+      "text": "La definizione formale è chiara: il representation learning è l'insieme dei metodi che permettono a",
+      "words": [
+        {
+          "text": "La",
+          "start": 7.648,
+          "end": 7.728
+        },
+        {
+          "text": "definizione",
+          "start": 7.768,
+          "end": 8.228
+        },
+        {
+          "text": "formale",
+          "start": 8.248,
+          "end": 8.648
+        },
+        {
+          "text": "è",
+          "start": 8.688,
+          "end": 8.728
+        },
+        {
+          "text": "chiara:",
+          "start": 8.768,
+          "end": 9.128
+        },
+        {
+          "text": "il",
+          "start": 9.548,
+          "end": 9.628
+        },
+        {
+          "text": "representation",
+          "start": 9.668,
+          "end": 10.409
+        },
+        {
+          "text": "learning",
+          "start": 10.489,
+          "end": 10.929
+        },
+        {
+          "text": "è",
+          "start": 11.169,
+          "end": 11.209
+        },
+        {
+          "text": "l'insieme",
+          "start": 11.289,
+          "end": 11.849
+        },
+        {
+          "text": "dei",
+          "start": 11.909,
+          "end": 12.029
+        },
+        {
+          "text": "metodi",
+          "start": 12.069,
+          "end": 12.429
+        },
+        {
+          "text": "che",
+          "start": 12.469,
+          "end": 12.549
+        },
+        {
+          "text": "permettono",
+          "start": 12.629,
+          "end": 13.129
+        },
+        {
+          "text": "a",
+          "start": 13.129,
+          "end": 13.169
+        }
+      ]
+    },
+    {
+      "start": 13.209,
+      "end": 20.009,
+      "text": "una macchina di ricevere dati grezzi e scoprire automaticamente le rappresentazioni necessarie per il rilevamento",
+      "words": [
+        {
+          "text": "una",
+          "start": 13.209,
+          "end": 13.329
+        },
+        {
+          "text": "macchina",
+          "start": 13.369,
+          "end": 13.769
+        },
+        {
+          "text": "di",
+          "start": 13.829,
+          "end": 13.889
+        },
+        {
+          "text": "ricevere",
+          "start": 13.949,
+          "end": 14.369
+        },
+        {
+          "text": "dati",
+          "start": 14.449,
+          "end": 14.669
+        },
+        {
+          "text": "grezzi",
+          "start": 14.729,
+          "end": 15.109
+        },
+        {
+          "text": "e",
+          "start": 15.489,
+          "end": 15.529
+        },
+        {
+          "text": "scoprire",
+          "start": 15.549,
+          "end": 15.969
+        },
+        {
+          "text": "automaticamente",
+          "start": 16.209,
+          "end": 17.109
+        },
+        {
+          "text": "le",
+          "start": 17.169,
+          "end": 17.229
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 17.269,
+          "end": 18.069
+        },
+        {
+          "text": "necessarie",
+          "start": 18.189,
+          "end": 18.889
+        },
+        {
+          "text": "per",
+          "start": 19.029,
+          "end": 19.169
+        },
+        {
+          "text": "il",
+          "start": 19.249,
+          "end": 19.329
+        },
+        {
+          "text": "rilevamento",
+          "start": 19.369,
+          "end": 20.009
+        }
+      ]
+    },
+    {
+      "start": 20.189,
+      "end": 21.31,
+      "text": "o la classificazione.",
+      "words": [
+        {
+          "text": "o",
+          "start": 20.189,
+          "end": 20.229
+        },
+        {
+          "text": "la",
+          "start": 20.289,
+          "end": 20.369
+        },
+        {
+          "text": "classificazione.",
+          "start": 20.389,
+          "end": 21.31
+        }
+      ]
+    },
+    {
+      "start": 22.15,
+      "end": 28.23,
+      "text": "I metodi di deep learning sono precisamente metodi di representation learning organizzati su più livelli",
+      "words": [
+        {
+          "text": "I",
+          "start": 22.15,
+          "end": 22.19
+        },
+        {
+          "text": "metodi",
+          "start": 22.23,
+          "end": 22.55
+        },
+        {
+          "text": "di",
+          "start": 22.61,
+          "end": 22.69
+        },
+        {
+          "text": "deep",
+          "start": 22.75,
+          "end": 22.91
+        },
+        {
+          "text": "learning",
+          "start": 22.99,
+          "end": 23.41
+        },
+        {
+          "text": "sono",
+          "start": 23.61,
+          "end": 23.81
+        },
+        {
+          "text": "precisamente",
+          "start": 23.95,
+          "end": 24.67
+        },
+        {
+          "text": "metodi",
+          "start": 24.73,
+          "end": 25.07
+        },
+        {
+          "text": "di",
+          "start": 25.11,
+          "end": 25.19
+        },
+        {
+          "text": "representation",
+          "start": 25.23,
+          "end": 26.03
+        },
+        {
+          "text": "learning",
+          "start": 26.11,
+          "end": 26.55
+        },
+        {
+          "text": "organizzati",
+          "start": 26.85,
+          "end": 27.39
+        },
+        {
+          "text": "su",
+          "start": 27.49,
+          "end": 27.57
+        },
+        {
+          "text": "più",
+          "start": 27.69,
+          "end": 27.79
+        },
+        {
+          "text": "livelli",
+          "start": 27.89,
+          "end": 28.23
+        }
+      ]
+    },
+    {
+      "start": 28.27,
+      "end": 29.27,
+      "text": "di rappresentazione.",
+      "words": [
+        {
+          "text": "di",
+          "start": 28.27,
+          "end": 28.33
+        },
+        {
+          "text": "rappresentazione.",
+          "start": 28.39,
+          "end": 29.27
+        }
+      ]
+    },
+    {
+      "start": 29.79,
+      "end": 33.391,
+      "text": "Tuttavia il concetto vale più in generale per molte reti neurali,",
+      "words": [
+        {
+          "text": "Tuttavia",
+          "start": 29.79,
+          "end": 30.21
+        },
+        {
+          "text": "il",
+          "start": 30.57,
+          "end": 30.65
+        },
+        {
+          "text": "concetto",
+          "start": 30.69,
+          "end": 31.11
+        },
+        {
+          "text": "vale",
+          "start": 31.15,
+          "end": 31.35
+        },
+        {
+          "text": "più",
+          "start": 31.39,
+          "end": 31.47
+        },
+        {
+          "text": "in",
+          "start": 31.55,
+          "end": 31.61
+        },
+        {
+          "text": "generale",
+          "start": 31.63,
+          "end": 32.07
+        },
+        {
+          "text": "per",
+          "start": 32.13,
+          "end": 32.291
+        },
+        {
+          "text": "molte",
+          "start": 32.371,
+          "end": 32.671
+        },
+        {
+          "text": "reti",
+          "start": 32.711,
+          "end": 32.911
+        },
+        {
+          "text": "neurali,",
+          "start": 32.951,
+          "end": 33.391
+        }
+      ]
+    },
+    {
+      "start": 33.711,
+      "end": 38.591,
+      "text": "ed è particolarmente prezioso quando lavoriamo con dati grezzi come immagini o testo.",
+      "words": [
+        {
+          "text": "ed",
+          "start": 33.711,
+          "end": 33.791
+        },
+        {
+          "text": "è",
+          "start": 33.831,
+          "end": 33.871
+        },
+        {
+          "text": "particolarmente",
+          "start": 33.911,
+          "end": 34.671
+        },
+        {
+          "text": "prezioso",
+          "start": 34.711,
+          "end": 35.131
+        },
+        {
+          "text": "quando",
+          "start": 35.171,
+          "end": 35.391
+        },
+        {
+          "text": "lavoriamo",
+          "start": 35.451,
+          "end": 35.871
+        },
+        {
+          "text": "con",
+          "start": 35.911,
+          "end": 36.051
+        },
+        {
+          "text": "dati",
+          "start": 36.091,
+          "end": 36.311
+        },
+        {
+          "text": "grezzi",
+          "start": 36.371,
+          "end": 36.771
+        },
+        {
+          "text": "come",
+          "start": 37.071,
+          "end": 37.311
+        },
+        {
+          "text": "immagini",
+          "start": 37.371,
+          "end": 37.891
+        },
+        {
+          "text": "o",
+          "start": 38.091,
+          "end": 38.131
+        },
+        {
+          "text": "testo.",
+          "start": 38.231,
+          "end": 38.591
+        }
+      ]
+    },
+    {
+      "start": 39.331,
+      "end": 41.831,
+      "text": "Perché la rappresentazione è così decisiva?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 39.331,
+          "end": 39.671
+        },
+        {
+          "text": "la",
+          "start": 39.751,
+          "end": 39.811
+        },
+        {
+          "text": "rappresentazione",
+          "start": 39.851,
+          "end": 40.611
+        },
+        {
+          "text": "è",
+          "start": 40.671,
+          "end": 40.711
+        },
+        {
+          "text": "così",
+          "start": 40.811,
+          "end": 41.111
+        },
+        {
+          "text": "decisiva?",
+          "start": 41.231,
+          "end": 41.831
+        }
+      ]
+    },
+    {
+      "start": 42.491,
+      "end": 49.072,
+      "text": "Perché moltissimi compiti risultano facili oppure difficilissimi a seconda di come l'informazione viene codificata.",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 42.491,
+          "end": 42.711
+        },
+        {
+          "text": "moltissimi",
+          "start": 42.791,
+          "end": 43.372
+        },
+        {
+          "text": "compiti",
+          "start": 43.432,
+          "end": 43.832
+        },
+        {
+          "text": "risultano",
+          "start": 43.872,
+          "end": 44.332
+        },
+        {
+          "text": "facili",
+          "start": 44.392,
+          "end": 44.812
+        },
+        {
+          "text": "oppure",
+          "start": 45.052,
+          "end": 45.412
+        },
+        {
+          "text": "difficilissimi",
+          "start": 45.552,
+          "end": 46.492
+        },
+        {
+          "text": "a",
+          "start": 46.652,
+          "end": 46.692
+        },
+        {
+          "text": "seconda",
+          "start": 46.772,
+          "end": 47.132
+        },
+        {
+          "text": "di",
+          "start": 47.192,
+          "end": 47.252
+        },
+        {
+          "text": "come",
+          "start": 47.312,
+          "end": 47.492
+        },
+        {
+          "text": "l'informazione",
+          "start": 47.532,
+          "end": 48.212
+        },
+        {
+          "text": "viene",
+          "start": 48.252,
+          "end": 48.432
+        },
+        {
+          "text": "codificata.",
+          "start": 48.472,
+          "end": 49.072
+        }
+      ]
+    },
+    {
+      "start": 49.732,
+      "end": 55.593,
+      "text": "Nel Machine Learning una buona rappresentazione è esattamente quella che rende più facile il compito",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 49.732,
+          "end": 49.872
+        },
+        {
+          "text": "Machine",
+          "start": 49.912,
+          "end": 50.232
+        },
+        {
+          "text": "Learning",
+          "start": 50.272,
+          "end": 50.712
+        },
+        {
+          "text": "una",
+          "start": 50.892,
+          "end": 51.032
+        },
+        {
+          "text": "buona",
+          "start": 51.132,
+          "end": 51.412
+        },
+        {
+          "text": "rappresentazione",
+          "start": 51.452,
+          "end": 52.372
+        },
+        {
+          "text": "è",
+          "start": 52.692,
+          "end": 52.732
+        },
+        {
+          "text": "esattamente",
+          "start": 52.812,
+          "end": 53.412
+        },
+        {
+          "text": "quella",
+          "start": 53.472,
+          "end": 53.732
+        },
+        {
+          "text": "che",
+          "start": 53.792,
+          "end": 53.872
+        },
+        {
+          "text": "rende",
+          "start": 53.952,
+          "end": 54.232
+        },
+        {
+          "text": "più",
+          "start": 54.353,
+          "end": 54.513
+        },
+        {
+          "text": "facile",
+          "start": 54.653,
+          "end": 55.093
+        },
+        {
+          "text": "il",
+          "start": 55.133,
+          "end": 55.193
+        },
+        {
+          "text": "compito",
+          "start": 55.233,
+          "end": 55.593
+        }
+      ]
+    },
+    {
+      "start": 55.633,
+      "end": 56.913,
+      "text": "di apprendimento successivo.",
+      "words": [
+        {
+          "text": "di",
+          "start": 55.633,
+          "end": 55.673
+        },
+        {
+          "text": "apprendimento",
+          "start": 55.713,
+          "end": 56.273
+        },
+        {
+          "text": "successivo.",
+          "start": 56.333,
+          "end": 56.913
+        }
+      ]
+    },
+    {
+      "start": 57.753,
+      "end": 59.053,
+      "text": "Confrontiamo due approcci.",
+      "words": [
+        {
+          "text": "Confrontiamo",
+          "start": 57.753,
+          "end": 58.333
+        },
+        {
+          "text": "due",
+          "start": 58.393,
+          "end": 58.533
+        },
+        {
+          "text": "approcci.",
+          "start": 58.573,
+          "end": 59.053
+        }
+      ]
+    },
+    {
+      "start": 59.673,
+      "end": 64.953,
+      "text": "Progettare le feature a mano è laborioso ed equivale a fissare manualmente le funzioni base",
+      "words": [
+        {
+          "text": "Progettare",
+          "start": 59.673,
+          "end": 60.113
+        },
+        {
+          "text": "le",
+          "start": 60.153,
+          "end": 60.233
+        },
+        {
+          "text": "feature",
+          "start": 60.273,
+          "end": 60.593
+        },
+        {
+          "text": "a",
+          "start": 60.593,
+          "end": 60.633
+        },
+        {
+          "text": "mano",
+          "start": 60.713,
+          "end": 60.953
+        },
+        {
+          "text": "è",
+          "start": 61.113,
+          "end": 61.153
+        },
+        {
+          "text": "laborioso",
+          "start": 61.233,
+          "end": 61.833
+        },
+        {
+          "text": "ed",
+          "start": 62.113,
+          "end": 62.213
+        },
+        {
+          "text": "equivale",
+          "start": 62.233,
+          "end": 62.633
+        },
+        {
+          "text": "a",
+          "start": 62.673,
+          "end": 62.713
+        },
+        {
+          "text": "fissare",
+          "start": 62.753,
+          "end": 63.153
+        },
+        {
+          "text": "manualmente",
+          "start": 63.233,
+          "end": 63.933
+        },
+        {
+          "text": "le",
+          "start": 64.233,
+          "end": 64.293
+        },
+        {
+          "text": "funzioni",
+          "start": 64.333,
+          "end": 64.673
+        },
+        {
+          "text": "base",
+          "start": 64.733,
+          "end": 64.953
+        }
+      ]
+    },
+    {
+      "start": 65.013,
+      "end": 67.694,
+      "text": "phi di x in una Linear Basis Expansion.",
+      "words": [
+        {
+          "text": "phi",
+          "start": 65.013,
+          "end": 65.093
+        },
+        {
+          "text": "di",
+          "start": 65.153,
+          "end": 65.314
+        },
+        {
+          "text": "x",
+          "start": 65.394,
+          "end": 65.43400000000001
+        },
+        {
+          "text": "in",
+          "start": 65.734,
+          "end": 65.834
+        },
+        {
+          "text": "una",
+          "start": 65.894,
+          "end": 66.034
+        },
+        {
+          "text": "Linear",
+          "start": 66.154,
+          "end": 66.574
+        },
+        {
+          "text": "Basis",
+          "start": 66.634,
+          "end": 67.014
+        },
+        {
+          "text": "Expansion.",
+          "start": 67.074,
+          "end": 67.694
+        }
+      ]
+    },
+    {
+      "start": 68.394,
+      "end": 76.274,
+      "text": "Al contrario, l'addestramento supervisionato di un Multi-Layer Perceptron produce automaticamente una rappresentazione parametrica phi di",
+      "words": [
+        {
+          "text": "Al",
+          "start": 68.394,
+          "end": 68.494
+        },
+        {
+          "text": "contrario,",
+          "start": 68.534,
+          "end": 69.014
+        },
+        {
+          "text": "l'addestramento",
+          "start": 69.154,
+          "end": 69.814
+        },
+        {
+          "text": "supervisionato",
+          "start": 69.854,
+          "end": 70.634
+        },
+        {
+          "text": "di",
+          "start": 70.674,
+          "end": 70.734
+        },
+        {
+          "text": "un",
+          "start": 70.774,
+          "end": 70.834
+        },
+        {
+          "text": "Multi-Layer",
+          "start": 70.874,
+          "end": 71.494
+        },
+        {
+          "text": "Perceptron",
+          "start": 71.554,
+          "end": 72.174
+        },
+        {
+          "text": "produce",
+          "start": 72.554,
+          "end": 72.934
+        },
+        {
+          "text": "automaticamente",
+          "start": 73.134,
+          "end": 74.094
+        },
+        {
+          "text": "una",
+          "start": 74.134,
+          "end": 74.254
+        },
+        {
+          "text": "rappresentazione",
+          "start": 74.294,
+          "end": 75.094
+        },
+        {
+          "text": "parametrica",
+          "start": 75.134,
+          "end": 75.774
+        },
+        {
+          "text": "phi",
+          "start": 75.914,
+          "end": 76.014
+        },
+        {
+          "text": "di",
+          "start": 76.094,
+          "end": 76.274
+        }
+      ]
+    },
+    {
+      "start": 76.355,
+      "end": 82.235,
+      "text": "x virgola w in ogni strato nascosto, appresa dai dati trovando il miglior vettore dei",
+      "words": [
+        {
+          "text": "x",
+          "start": 76.355,
+          "end": 76.39500000000001
+        },
+        {
+          "text": "virgola",
+          "start": 76.575,
+          "end": 76.975
+        },
+        {
+          "text": "w",
+          "start": 77.335,
+          "end": 77.375
+        },
+        {
+          "text": "in",
+          "start": 77.875,
+          "end": 77.995
+        },
+        {
+          "text": "ogni",
+          "start": 78.055,
+          "end": 78.275
+        },
+        {
+          "text": "strato",
+          "start": 78.355,
+          "end": 78.655
+        },
+        {
+          "text": "nascosto,",
+          "start": 78.695,
+          "end": 79.255
+        },
+        {
+          "text": "appresa",
+          "start": 79.615,
+          "end": 80.015
+        },
+        {
+          "text": "dai",
+          "start": 80.115,
+          "end": 80.275
+        },
+        {
+          "text": "dati",
+          "start": 80.315,
+          "end": 80.635
+        },
+        {
+          "text": "trovando",
+          "start": 80.795,
+          "end": 81.155
+        },
+        {
+          "text": "il",
+          "start": 81.195,
+          "end": 81.255
+        },
+        {
+          "text": "miglior",
+          "start": 81.295,
+          "end": 81.635
+        },
+        {
+          "text": "vettore",
+          "start": 81.715,
+          "end": 82.075
+        },
+        {
+          "text": "dei",
+          "start": 82.135,
+          "end": 82.235
+        }
+      ]
+    },
+    {
+      "start": 82.275,
+      "end": 82.915,
+      "text": "pesi w.",
+      "words": [
+        {
+          "text": "pesi",
+          "start": 82.275,
+          "end": 82.495
+        },
+        {
+          "text": "w.",
+          "start": 82.875,
+          "end": 82.915
+        }
+      ]
+    },
+    {
+      "start": 83.795,
+      "end": 89.436,
+      "text": "Ma l'addestramento supervisionato end-to-end di MLP e CNN non è l'unica via.",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 83.795,
+          "end": 83.855
+        },
+        {
+          "text": "l'addestramento",
+          "start": 83.895,
+          "end": 84.495
+        },
+        {
+          "text": "supervisionato",
+          "start": 84.555,
+          "end": 85.335
+        },
+        {
+          "text": "end-to-end",
+          "start": 85.555,
+          "end": 86.215
+        },
+        {
+          "text": "di",
+          "start": 86.375,
+          "end": 86.455
+        },
+        {
+          "text": "MLP",
+          "start": 86.675,
+          "end": 87.055
+        },
+        {
+          "text": "e",
+          "start": 87.336,
+          "end": 87.376
+        },
+        {
+          "text": "CNN",
+          "start": 87.476,
+          "end": 88.076
+        },
+        {
+          "text": "non",
+          "start": 88.436,
+          "end": 88.596
+        },
+        {
+          "text": "è",
+          "start": 88.656,
+          "end": 88.69600000000001
+        },
+        {
+          "text": "l'unica",
+          "start": 88.796,
+          "end": 89.176
+        },
+        {
+          "text": "via.",
+          "start": 89.216,
+          "end": 89.436
+        }
+      ]
+    },
+    {
+      "start": 90.036,
+      "end": 94.716,
+      "text": "Le rappresentazioni nascoste si possono anche ottenere tramite apprendimento non supervisionato,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 90.036,
+          "end": 90.096
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 90.156,
+          "end": 90.836
+        },
+        {
+          "text": "nascoste",
+          "start": 90.876,
+          "end": 91.356
+        },
+        {
+          "text": "si",
+          "start": 91.416,
+          "end": 91.496
+        },
+        {
+          "text": "possono",
+          "start": 91.536,
+          "end": 91.816
+        },
+        {
+          "text": "anche",
+          "start": 91.856,
+          "end": 92.016
+        },
+        {
+          "text": "ottenere",
+          "start": 92.036,
+          "end": 92.416
+        },
+        {
+          "text": "tramite",
+          "start": 92.456,
+          "end": 92.776
+        },
+        {
+          "text": "apprendimento",
+          "start": 92.836,
+          "end": 93.536
+        },
+        {
+          "text": "non",
+          "start": 93.696,
+          "end": 93.856
+        },
+        {
+          "text": "supervisionato,",
+          "start": 93.916,
+          "end": 94.716
+        }
+      ]
+    },
+    {
+      "start": 95.036,
+      "end": 99.377,
+      "text": "con il pre-training, e si possono poi sfruttare e trasferire su compiti nuovi,",
+      "words": [
+        {
+          "text": "con",
+          "start": 95.036,
+          "end": 95.156
+        },
+        {
+          "text": "il",
+          "start": 95.196,
+          "end": 95.256
+        },
+        {
+          "text": "pre-training,",
+          "start": 95.296,
+          "end": 95.876
+        },
+        {
+          "text": "e",
+          "start": 96.296,
+          "end": 96.33600000000001
+        },
+        {
+          "text": "si",
+          "start": 96.356,
+          "end": 96.436
+        },
+        {
+          "text": "possono",
+          "start": 96.476,
+          "end": 96.756
+        },
+        {
+          "text": "poi",
+          "start": 96.796,
+          "end": 96.896
+        },
+        {
+          "text": "sfruttare",
+          "start": 96.936,
+          "end": 97.516
+        },
+        {
+          "text": "e",
+          "start": 97.656,
+          "end": 97.69600000000001
+        },
+        {
+          "text": "trasferire",
+          "start": 97.796,
+          "end": 98.437
+        },
+        {
+          "text": "su",
+          "start": 98.497,
+          "end": 98.577
+        },
+        {
+          "text": "compiti",
+          "start": 98.657,
+          "end": 99.037
+        },
+        {
+          "text": "nuovi,",
+          "start": 99.077,
+          "end": 99.377
+        }
+      ]
+    },
+    {
+      "start": 99.697,
+      "end": 103.537,
+      "text": "con il transfer learning: li analizziamo subito nelle prossime scene.",
+      "words": [
+        {
+          "text": "con",
+          "start": 99.697,
+          "end": 99.857
+        },
+        {
+          "text": "il",
+          "start": 99.897,
+          "end": 99.997
+        },
+        {
+          "text": "transfer",
+          "start": 100.057,
+          "end": 100.517
+        },
+        {
+          "text": "learning:",
+          "start": 100.617,
+          "end": 101.037
+        },
+        {
+          "text": "li",
+          "start": 101.457,
+          "end": 101.517
+        },
+        {
+          "text": "analizziamo",
+          "start": 101.557,
+          "end": 102.037
+        },
+        {
+          "text": "subito",
+          "start": 102.117,
+          "end": 102.437
+        },
+        {
+          "text": "nelle",
+          "start": 102.597,
+          "end": 102.797
+        },
+        {
+          "text": "prossime",
+          "start": 102.817,
+          "end": 103.177
+        },
+        {
+          "text": "scene.",
+          "start": 103.217,
+          "end": 103.537
+        }
+      ]
+    }
+  ]
+}

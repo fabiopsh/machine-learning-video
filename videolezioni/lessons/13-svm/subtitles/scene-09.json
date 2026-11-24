@@ -1,0 +1,1397 @@
+{
+  "duration": 106.336,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.84,
+      "text": "Perché massimizzare il margine migliora la generalizzazione?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "massimizzare",
+          "start": 0.62,
+          "end": 1.34
+        },
+        {
+          "text": "il",
+          "start": 1.38,
+          "end": 1.44
+        },
+        {
+          "text": "margine",
+          "start": 1.52,
+          "end": 2.0
+        },
+        {
+          "text": "migliora",
+          "start": 2.18,
+          "end": 2.66
+        },
+        {
+          "text": "la",
+          "start": 2.72,
+          "end": 2.78
+        },
+        {
+          "text": "generalizzazione?",
+          "start": 2.84,
+          "end": 3.84
+        }
+      ]
+    },
+    {
+      "start": 4.861,
+      "end": 8.301,
+      "text": "Su un problema separabile l'errore di training è fissato a zero:",
+      "words": [
+        {
+          "text": "Su",
+          "start": 4.861,
+          "end": 4.921
+        },
+        {
+          "text": "un",
+          "start": 4.981,
+          "end": 5.041
+        },
+        {
+          "text": "problema",
+          "start": 5.081,
+          "end": 5.441
+        },
+        {
+          "text": "separabile",
+          "start": 5.501,
+          "end": 6.121
+        },
+        {
+          "text": "l'errore",
+          "start": 6.421,
+          "end": 6.781
+        },
+        {
+          "text": "di",
+          "start": 6.821,
+          "end": 6.901
+        },
+        {
+          "text": "training",
+          "start": 6.961,
+          "end": 7.361
+        },
+        {
+          "text": "è",
+          "start": 7.461,
+          "end": 7.501
+        },
+        {
+          "text": "fissato",
+          "start": 7.561,
+          "end": 7.901
+        },
+        {
+          "text": "a",
+          "start": 7.941,
+          "end": 7.981
+        },
+        {
+          "text": "zero:",
+          "start": 8.041,
+          "end": 8.301
+        }
+      ]
+    },
+    {
+      "start": 8.981,
+      "end": 14.081,
+      "text": "minimizzare la norma di w equivale allora a minimizzare la VC-dimension,",
+      "words": [
+        {
+          "text": "minimizzare",
+          "start": 8.981,
+          "end": 9.821
+        },
+        {
+          "text": "la",
+          "start": 9.881,
+          "end": 9.941
+        },
+        {
+          "text": "norma",
+          "start": 10.021,
+          "end": 10.321
+        },
+        {
+          "text": "di",
+          "start": 10.361,
+          "end": 10.421
+        },
+        {
+          "text": "w",
+          "start": 10.801,
+          "end": 10.841
+        },
+        {
+          "text": "equivale",
+          "start": 11.381,
+          "end": 11.801
+        },
+        {
+          "text": "allora",
+          "start": 11.841,
+          "end": 12.121
+        },
+        {
+          "text": "a",
+          "start": 12.161,
+          "end": 12.201
+        },
+        {
+          "text": "minimizzare",
+          "start": 12.241,
+          "end": 12.881
+        },
+        {
+          "text": "la",
+          "start": 12.941,
+          "end": 13.041
+        },
+        {
+          "text": "VC-dimension,",
+          "start": 13.121,
+          "end": 14.081
+        }
+      ]
+    },
+    {
+      "start": 14.481,
+      "end": 16.802,
+      "text": "e quindi la VC-confidence nel bound",
+      "words": [
+        {
+          "text": "e",
+          "start": 14.481,
+          "end": 14.521
+        },
+        {
+          "text": "quindi",
+          "start": 14.581,
+          "end": 14.862
+        },
+        {
+          "text": "la",
+          "start": 15.062,
+          "end": 15.142
+        },
+        {
+          "text": "VC-confidence",
+          "start": 15.202,
+          "end": 16.142
+        },
+        {
+          "text": "nel",
+          "start": 16.262,
+          "end": 16.402
+        },
+        {
+          "text": "bound",
+          "start": 16.462,
+          "end": 16.802
+        }
+      ]
+    },
+    {
+      "start": 17.402,
+      "end": 23.062,
+      "text": "R minore o uguale di R empirico più epsilon di VC virgola l virgola delta.",
+      "words": [
+        {
+          "text": "R",
+          "start": 17.402,
+          "end": 17.442
+        },
+        {
+          "text": "minore",
+          "start": 17.722,
+          "end": 18.122
+        },
+        {
+          "text": "o",
+          "start": 18.182,
+          "end": 18.222
+        },
+        {
+          "text": "uguale",
+          "start": 18.202,
+          "end": 18.602
+        },
+        {
+          "text": "di",
+          "start": 18.642,
+          "end": 18.722
+        },
+        {
+          "text": "R",
+          "start": 18.922,
+          "end": 18.962
+        },
+        {
+          "text": "empirico",
+          "start": 18.982,
+          "end": 19.582
+        },
+        {
+          "text": "più",
+          "start": 19.962,
+          "end": 20.102
+        },
+        {
+          "text": "epsilon",
+          "start": 20.342,
+          "end": 20.842
+        },
+        {
+          "text": "di",
+          "start": 21.042,
+          "end": 21.122
+        },
+        {
+          "text": "VC",
+          "start": 21.242,
+          "end": 21.462
+        },
+        {
+          "text": "virgola",
+          "start": 21.722,
+          "end": 22.082
+        },
+        {
+          "text": "l",
+          "start": 22.282,
+          "end": 22.322
+        },
+        {
+          "text": "virgola",
+          "start": 22.402,
+          "end": 22.722
+        },
+        {
+          "text": "delta.",
+          "start": 22.762,
+          "end": 23.062
+        }
+      ]
+    },
+    {
+      "start": 24.262,
+      "end": 26.103,
+      "text": "Il teorema di Vapnik lo precisa:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 24.262,
+          "end": 24.362
+        },
+        {
+          "text": "teorema",
+          "start": 24.402,
+          "end": 24.763
+        },
+        {
+          "text": "di",
+          "start": 24.843,
+          "end": 24.903
+        },
+        {
+          "text": "Vapnik",
+          "start": 24.963,
+          "end": 25.423
+        },
+        {
+          "text": "lo",
+          "start": 25.523,
+          "end": 25.583
+        },
+        {
+          "text": "precisa:",
+          "start": 25.623,
+          "end": 26.103
+        }
+      ]
+    },
+    {
+      "start": 26.783,
+      "end": 30.983,
+      "text": "sia D il diametro della più piccola sfera che contiene i dati x con uno",
+      "words": [
+        {
+          "text": "sia",
+          "start": 26.783,
+          "end": 26.943
+        },
+        {
+          "text": "D",
+          "start": 27.083,
+          "end": 27.123
+        },
+        {
+          "text": "il",
+          "start": 27.543,
+          "end": 27.623
+        },
+        {
+          "text": "diametro",
+          "start": 27.663,
+          "end": 28.063
+        },
+        {
+          "text": "della",
+          "start": 28.103,
+          "end": 28.263
+        },
+        {
+          "text": "più",
+          "start": 28.303,
+          "end": 28.403
+        },
+        {
+          "text": "piccola",
+          "start": 28.483,
+          "end": 28.863
+        },
+        {
+          "text": "sfera",
+          "start": 28.923,
+          "end": 29.263
+        },
+        {
+          "text": "che",
+          "start": 29.323,
+          "end": 29.423
+        },
+        {
+          "text": "contiene",
+          "start": 29.483,
+          "end": 29.823
+        },
+        {
+          "text": "i",
+          "start": 29.863,
+          "end": 29.903
+        },
+        {
+          "text": "dati",
+          "start": 29.923,
+          "end": 30.203
+        },
+        {
+          "text": "x",
+          "start": 30.483,
+          "end": 30.523
+        },
+        {
+          "text": "con",
+          "start": 30.623,
+          "end": 30.763
+        },
+        {
+          "text": "uno",
+          "start": 30.823,
+          "end": 30.983
+        }
+      ]
+    },
+    {
+      "start": 31.063,
+      "end": 31.963,
+      "text": "fino a x con l.",
+      "words": [
+        {
+          "text": "fino",
+          "start": 31.063,
+          "end": 31.243
+        },
+        {
+          "text": "a",
+          "start": 31.283,
+          "end": 31.323
+        },
+        {
+          "text": "x",
+          "start": 31.443,
+          "end": 31.483
+        },
+        {
+          "text": "con",
+          "start": 31.583,
+          "end": 31.723
+        },
+        {
+          "text": "l.",
+          "start": 31.923,
+          "end": 31.963
+        }
+      ]
+    },
+    {
+      "start": 32.823,
+      "end": 36.904,
+      "text": "Per la classe degli iperpiani separatori con margine ro in dimensione n,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 32.823,
+          "end": 32.943
+        },
+        {
+          "text": "la",
+          "start": 32.963,
+          "end": 33.043
+        },
+        {
+          "text": "classe",
+          "start": 33.083,
+          "end": 33.403
+        },
+        {
+          "text": "degli",
+          "start": 33.463,
+          "end": 33.643
+        },
+        {
+          "text": "iperpiani",
+          "start": 33.663,
+          "end": 34.143
+        },
+        {
+          "text": "separatori",
+          "start": 34.183,
+          "end": 34.764
+        },
+        {
+          "text": "con",
+          "start": 34.864,
+          "end": 34.984
+        },
+        {
+          "text": "margine",
+          "start": 35.044,
+          "end": 35.444
+        },
+        {
+          "text": "ro",
+          "start": 35.524,
+          "end": 35.604
+        },
+        {
+          "text": "in",
+          "start": 35.984,
+          "end": 36.064
+        },
+        {
+          "text": "dimensione",
+          "start": 36.084,
+          "end": 36.624
+        },
+        {
+          "text": "n,",
+          "start": 36.864,
+          "end": 36.904
+        }
+      ]
+    },
+    {
+      "start": 37.404,
+      "end": 41.944,
+      "text": "la VC-dimension è al più il minimo tra la parte intera superiore di D quadro",
+      "words": [
+        {
+          "text": "la",
+          "start": 37.404,
+          "end": 37.484
+        },
+        {
+          "text": "VC-dimension",
+          "start": 37.544,
+          "end": 38.384
+        },
+        {
+          "text": "è",
+          "start": 38.564,
+          "end": 38.604
+        },
+        {
+          "text": "al",
+          "start": 38.644,
+          "end": 38.744
+        },
+        {
+          "text": "più",
+          "start": 38.824,
+          "end": 38.944
+        },
+        {
+          "text": "il",
+          "start": 39.044,
+          "end": 39.144
+        },
+        {
+          "text": "minimo",
+          "start": 39.204,
+          "end": 39.524
+        },
+        {
+          "text": "tra",
+          "start": 39.704,
+          "end": 39.824
+        },
+        {
+          "text": "la",
+          "start": 39.884,
+          "end": 39.944
+        },
+        {
+          "text": "parte",
+          "start": 39.984,
+          "end": 40.224
+        },
+        {
+          "text": "intera",
+          "start": 40.264,
+          "end": 40.584
+        },
+        {
+          "text": "superiore",
+          "start": 40.644,
+          "end": 41.184
+        },
+        {
+          "text": "di",
+          "start": 41.264,
+          "end": 41.344
+        },
+        {
+          "text": "D",
+          "start": 41.424,
+          "end": 41.464
+        },
+        {
+          "text": "quadro",
+          "start": 41.584,
+          "end": 41.944
+        }
+      ]
+    },
+    {
+      "start": 42.004,
+      "end": 44.524,
+      "text": "diviso ro quadro ed n, più uno.",
+      "words": [
+        {
+          "text": "diviso",
+          "start": 42.004,
+          "end": 42.364
+        },
+        {
+          "text": "ro",
+          "start": 42.444,
+          "end": 42.504
+        },
+        {
+          "text": "quadro",
+          "start": 42.604,
+          "end": 42.964
+        },
+        {
+          "text": "ed",
+          "start": 43.384,
+          "end": 43.504
+        },
+        {
+          "text": "n,",
+          "start": 43.624,
+          "end": 43.664
+        },
+        {
+          "text": "più",
+          "start": 44.104,
+          "end": 44.224
+        },
+        {
+          "text": "uno.",
+          "start": 44.344,
+          "end": 44.524
+        }
+      ]
+    },
+    {
+      "start": 45.625,
+      "end": 50.365,
+      "text": "Con raggio R con s uguale D mezzi e ro uguale due su norma di",
+      "words": [
+        {
+          "text": "Con",
+          "start": 45.625,
+          "end": 45.765
+        },
+        {
+          "text": "raggio",
+          "start": 45.805,
+          "end": 46.105
+        },
+        {
+          "text": "R",
+          "start": 46.445,
+          "end": 46.485
+        },
+        {
+          "text": "con",
+          "start": 46.565,
+          "end": 46.705
+        },
+        {
+          "text": "s",
+          "start": 46.905,
+          "end": 46.945
+        },
+        {
+          "text": "uguale",
+          "start": 47.025,
+          "end": 47.285
+        },
+        {
+          "text": "D",
+          "start": 47.325,
+          "end": 47.365
+        },
+        {
+          "text": "mezzi",
+          "start": 47.425,
+          "end": 47.825
+        },
+        {
+          "text": "e",
+          "start": 48.085,
+          "end": 48.125
+        },
+        {
+          "text": "ro",
+          "start": 48.305,
+          "end": 48.425
+        },
+        {
+          "text": "uguale",
+          "start": 48.705,
+          "end": 49.105
+        },
+        {
+          "text": "due",
+          "start": 49.265,
+          "end": 49.525
+        },
+        {
+          "text": "su",
+          "start": 49.785,
+          "end": 49.865
+        },
+        {
+          "text": "norma",
+          "start": 50.005,
+          "end": 50.245
+        },
+        {
+          "text": "di",
+          "start": 50.305,
+          "end": 50.365
+        }
+      ]
+    },
+    {
+      "start": 50.705,
+      "end": 55.646,
+      "text": "w, il rapporto D quadro su ro quadro diventa R con s quadro per norma",
+      "words": [
+        {
+          "text": "w,",
+          "start": 50.705,
+          "end": 50.745
+        },
+        {
+          "text": "il",
+          "start": 51.365,
+          "end": 51.445
+        },
+        {
+          "text": "rapporto",
+          "start": 51.525,
+          "end": 51.905
+        },
+        {
+          "text": "D",
+          "start": 51.965,
+          "end": 52.005
+        },
+        {
+          "text": "quadro",
+          "start": 52.085,
+          "end": 52.445
+        },
+        {
+          "text": "su",
+          "start": 52.525,
+          "end": 52.605
+        },
+        {
+          "text": "ro",
+          "start": 52.665,
+          "end": 52.725
+        },
+        {
+          "text": "quadro",
+          "start": 52.765,
+          "end": 53.125
+        },
+        {
+          "text": "diventa",
+          "start": 53.305,
+          "end": 53.725
+        },
+        {
+          "text": "R",
+          "start": 54.045,
+          "end": 54.085
+        },
+        {
+          "text": "con",
+          "start": 54.145,
+          "end": 54.285
+        },
+        {
+          "text": "s",
+          "start": 54.365,
+          "end": 54.405
+        },
+        {
+          "text": "quadro",
+          "start": 54.566,
+          "end": 54.946
+        },
+        {
+          "text": "per",
+          "start": 55.146,
+          "end": 55.286
+        },
+        {
+          "text": "norma",
+          "start": 55.386,
+          "end": 55.646
+        }
+      ]
+    },
+    {
+      "start": 55.706,
+      "end": 56.486,
+      "text": "quadra di w.",
+      "words": [
+        {
+          "text": "quadra",
+          "start": 55.706,
+          "end": 55.986
+        },
+        {
+          "text": "di",
+          "start": 56.046,
+          "end": 56.106
+        },
+        {
+          "text": "w.",
+          "start": 56.446,
+          "end": 56.486
+        }
+      ]
+    },
+    {
+      "start": 57.306,
+      "end": 60.746,
+      "text": "La VC-dimension può quindi scendere ben sotto n più uno:",
+      "words": [
+        {
+          "text": "La",
+          "start": 57.306,
+          "end": 57.386
+        },
+        {
+          "text": "VC-dimension",
+          "start": 57.426,
+          "end": 58.266
+        },
+        {
+          "text": "può",
+          "start": 58.446,
+          "end": 58.546
+        },
+        {
+          "text": "quindi",
+          "start": 58.626,
+          "end": 58.886
+        },
+        {
+          "text": "scendere",
+          "start": 58.966,
+          "end": 59.366
+        },
+        {
+          "text": "ben",
+          "start": 59.406,
+          "end": 59.546
+        },
+        {
+          "text": "sotto",
+          "start": 59.626,
+          "end": 59.986
+        },
+        {
+          "text": "n",
+          "start": 60.206,
+          "end": 60.246
+        },
+        {
+          "text": "più",
+          "start": 60.326,
+          "end": 60.426
+        },
+        {
+          "text": "uno:",
+          "start": 60.546,
+          "end": 60.746
+        }
+      ]
+    },
+    {
+      "start": 61.306,
+      "end": 64.366,
+      "text": "più il margine è grande, più la VC-dimension è piccola,",
+      "words": [
+        {
+          "text": "più",
+          "start": 61.306,
+          "end": 61.406
+        },
+        {
+          "text": "il",
+          "start": 61.486,
+          "end": 61.566
+        },
+        {
+          "text": "margine",
+          "start": 61.606,
+          "end": 61.986
+        },
+        {
+          "text": "è",
+          "start": 62.046,
+          "end": 62.086
+        },
+        {
+          "text": "grande,",
+          "start": 62.126,
+          "end": 62.546
+        },
+        {
+          "text": "più",
+          "start": 62.706,
+          "end": 62.826
+        },
+        {
+          "text": "la",
+          "start": 62.906,
+          "end": 62.986
+        },
+        {
+          "text": "VC-dimension",
+          "start": 63.046,
+          "end": 63.826
+        },
+        {
+          "text": "è",
+          "start": 63.886,
+          "end": 63.926
+        },
+        {
+          "text": "piccola,",
+          "start": 63.966,
+          "end": 64.366
+        }
+      ]
+    },
+    {
+      "start": 64.687,
+      "end": 67.107,
+      "text": "indipendentemente dalla dimensione dello spazio.",
+      "words": [
+        {
+          "text": "indipendentemente",
+          "start": 64.687,
+          "end": 65.707
+        },
+        {
+          "text": "dalla",
+          "start": 65.747,
+          "end": 65.947
+        },
+        {
+          "text": "dimensione",
+          "start": 65.967,
+          "end": 66.447
+        },
+        {
+          "text": "dello",
+          "start": 66.487,
+          "end": 66.667
+        },
+        {
+          "text": "spazio.",
+          "start": 66.707,
+          "end": 67.107
+        }
+      ]
+    },
+    {
+      "start": 68.167,
+      "end": 71.887,
+      "text": "L'iperpiano a margine massimo offre così quattro proprietà centrali.",
+      "words": [
+        {
+          "text": "L'iperpiano",
+          "start": 68.167,
+          "end": 68.687
+        },
+        {
+          "text": "a",
+          "start": 68.707,
+          "end": 68.747
+        },
+        {
+          "text": "margine",
+          "start": 68.787,
+          "end": 69.147
+        },
+        {
+          "text": "massimo",
+          "start": 69.187,
+          "end": 69.627
+        },
+        {
+          "text": "offre",
+          "start": 69.767,
+          "end": 70.007
+        },
+        {
+          "text": "così",
+          "start": 70.067,
+          "end": 70.267
+        },
+        {
+          "text": "quattro",
+          "start": 70.427,
+          "end": 70.847
+        },
+        {
+          "text": "proprietà",
+          "start": 70.887,
+          "end": 71.267
+        },
+        {
+          "text": "centrali.",
+          "start": 71.367,
+          "end": 71.887
+        }
+      ]
+    },
+    {
+      "start": 73.027,
+      "end": 77.368,
+      "text": "Uno: soluzione unica, a differenza del Perceptron, con zero errori,",
+      "words": [
+        {
+          "text": "Uno:",
+          "start": 73.027,
+          "end": 73.227
+        },
+        {
+          "text": "soluzione",
+          "start": 73.667,
+          "end": 74.127
+        },
+        {
+          "text": "unica,",
+          "start": 74.227,
+          "end": 74.528
+        },
+        {
+          "text": "a",
+          "start": 74.828,
+          "end": 74.86800000000001
+        },
+        {
+          "text": "differenza",
+          "start": 74.908,
+          "end": 75.408
+        },
+        {
+          "text": "del",
+          "start": 75.468,
+          "end": 75.588
+        },
+        {
+          "text": "Perceptron,",
+          "start": 75.628,
+          "end": 76.228
+        },
+        {
+          "text": "con",
+          "start": 76.468,
+          "end": 76.628
+        },
+        {
+          "text": "zero",
+          "start": 76.728,
+          "end": 76.928
+        },
+        {
+          "text": "errori,",
+          "start": 76.988,
+          "end": 77.368
+        }
+      ]
+    },
+    {
+      "start": 77.608,
+      "end": 79.108,
+      "text": "a differenza dell'LMS.",
+      "words": [
+        {
+          "text": "a",
+          "start": 77.608,
+          "end": 77.64800000000001
+        },
+        {
+          "text": "differenza",
+          "start": 77.668,
+          "end": 78.188
+        },
+        {
+          "text": "dell'LMS.",
+          "start": 78.248,
+          "end": 79.108
+        }
+      ]
+    },
+    {
+      "start": 80.028,
+      "end": 86.309,
+      "text": "Due: SRM automatica dentro l'ottimizzazione, senza iperparametri nel caso separabile.",
+      "words": [
+        {
+          "text": "Due:",
+          "start": 80.028,
+          "end": 80.248
+        },
+        {
+          "text": "SRM",
+          "start": 81.168,
+          "end": 81.668
+        },
+        {
+          "text": "automatica",
+          "start": 81.788,
+          "end": 82.388
+        },
+        {
+          "text": "dentro",
+          "start": 82.508,
+          "end": 82.808
+        },
+        {
+          "text": "l'ottimizzazione,",
+          "start": 82.868,
+          "end": 83.748
+        },
+        {
+          "text": "senza",
+          "start": 84.028,
+          "end": 84.329
+        },
+        {
+          "text": "iperparametri",
+          "start": 84.409,
+          "end": 85.169
+        },
+        {
+          "text": "nel",
+          "start": 85.289,
+          "end": 85.409
+        },
+        {
+          "text": "caso",
+          "start": 85.469,
+          "end": 85.689
+        },
+        {
+          "text": "separabile.",
+          "start": 85.749,
+          "end": 86.309
+        }
+      ]
+    },
+    {
+      "start": 87.029,
+      "end": 91.609,
+      "text": "Tre: programmazione quadratica vincolata invece di discesa del gradiente,",
+      "words": [
+        {
+          "text": "Tre:",
+          "start": 87.029,
+          "end": 87.189
+        },
+        {
+          "text": "programmazione",
+          "start": 87.869,
+          "end": 88.569
+        },
+        {
+          "text": "quadratica",
+          "start": 88.629,
+          "end": 89.189
+        },
+        {
+          "text": "vincolata",
+          "start": 89.249,
+          "end": 89.809
+        },
+        {
+          "text": "invece",
+          "start": 89.969,
+          "end": 90.369
+        },
+        {
+          "text": "di",
+          "start": 90.409,
+          "end": 90.489
+        },
+        {
+          "text": "discesa",
+          "start": 90.529,
+          "end": 90.889
+        },
+        {
+          "text": "del",
+          "start": 90.949,
+          "end": 91.049
+        },
+        {
+          "text": "gradiente,",
+          "start": 91.089,
+          "end": 91.609
+        }
+      ]
+    },
+    {
+      "start": 91.889,
+      "end": 95.19,
+      "text": "con duale basato su support vector e prodotti scalari.",
+      "words": [
+        {
+          "text": "con",
+          "start": 91.889,
+          "end": 92.049
+        },
+        {
+          "text": "duale",
+          "start": 92.089,
+          "end": 92.409
+        },
+        {
+          "text": "basato",
+          "start": 92.449,
+          "end": 92.829
+        },
+        {
+          "text": "su",
+          "start": 92.929,
+          "end": 93.009
+        },
+        {
+          "text": "support",
+          "start": 93.149,
+          "end": 93.549
+        },
+        {
+          "text": "vector",
+          "start": 93.629,
+          "end": 94.029
+        },
+        {
+          "text": "e",
+          "start": 94.17,
+          "end": 94.21000000000001
+        },
+        {
+          "text": "prodotti",
+          "start": 94.29,
+          "end": 94.69
+        },
+        {
+          "text": "scalari.",
+          "start": 94.75,
+          "end": 95.19
+        }
+      ]
+    },
+    {
+      "start": 95.95,
+      "end": 99.41,
+      "text": "Quattro: soluzione concentrata sui support vector:",
+      "words": [
+        {
+          "text": "Quattro:",
+          "start": 95.95,
+          "end": 96.37
+        },
+        {
+          "text": "soluzione",
+          "start": 97.03,
+          "end": 97.49
+        },
+        {
+          "text": "concentrata",
+          "start": 97.57,
+          "end": 98.27
+        },
+        {
+          "text": "sui",
+          "start": 98.35,
+          "end": 98.51
+        },
+        {
+          "text": "support",
+          "start": 98.57,
+          "end": 98.93
+        },
+        {
+          "text": "vector:",
+          "start": 99.01,
+          "end": 99.41
+        }
+      ]
+    },
+    {
+      "start": 100.01,
+      "end": 105.131,
+      "text": "pregio perché ignora i punti lontani, ma difetto perché i punti sul confine possono essere",
+      "words": [
+        {
+          "text": "pregio",
+          "start": 100.01,
+          "end": 100.41
+        },
+        {
+          "text": "perché",
+          "start": 100.53,
+          "end": 100.77
+        },
+        {
+          "text": "ignora",
+          "start": 100.81,
+          "end": 101.11
+        },
+        {
+          "text": "i",
+          "start": 101.15,
+          "end": 101.19000000000001
+        },
+        {
+          "text": "punti",
+          "start": 101.21,
+          "end": 101.45
+        },
+        {
+          "text": "lontani,",
+          "start": 101.49,
+          "end": 101.95
+        },
+        {
+          "text": "ma",
+          "start": 102.35,
+          "end": 102.41
+        },
+        {
+          "text": "difetto",
+          "start": 102.47,
+          "end": 102.81
+        },
+        {
+          "text": "perché",
+          "start": 102.85,
+          "end": 103.09
+        },
+        {
+          "text": "i",
+          "start": 103.15,
+          "end": 103.19000000000001
+        },
+        {
+          "text": "punti",
+          "start": 103.25,
+          "end": 103.57
+        },
+        {
+          "text": "sul",
+          "start": 103.61,
+          "end": 103.75
+        },
+        {
+          "text": "confine",
+          "start": 103.81,
+          "end": 104.291
+        },
+        {
+          "text": "possono",
+          "start": 104.431,
+          "end": 104.791
+        },
+        {
+          "text": "essere",
+          "start": 104.851,
+          "end": 105.131
+        }
+      ]
+    },
+    {
+      "start": 105.211,
+      "end": 106.031,
+      "text": "i più rumorosi.",
+      "words": [
+        {
+          "text": "i",
+          "start": 105.211,
+          "end": 105.251
+        },
+        {
+          "text": "più",
+          "start": 105.311,
+          "end": 105.431
+        },
+        {
+          "text": "rumorosi.",
+          "start": 105.551,
+          "end": 106.031
+        }
+      ]
+    }
+  ]
+}

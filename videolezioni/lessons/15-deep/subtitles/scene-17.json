@@ -1,0 +1,1610 @@
+{
+  "duration": 121.439,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.101,
+      "text": "Analizziamo da vicino la funzione di attivazione che ha rivoluzionato l'addestramento delle reti profonde:",
+      "words": [
+        {
+          "text": "Analizziamo",
+          "start": 0.08,
+          "end": 0.72
+        },
+        {
+          "text": "da",
+          "start": 0.82,
+          "end": 0.88
+        },
+        {
+          "text": "vicino",
+          "start": 0.94,
+          "end": 1.38
+        },
+        {
+          "text": "la",
+          "start": 1.48,
+          "end": 1.54
+        },
+        {
+          "text": "funzione",
+          "start": 1.6,
+          "end": 2.08
+        },
+        {
+          "text": "di",
+          "start": 2.14,
+          "end": 2.2
+        },
+        {
+          "text": "attivazione",
+          "start": 2.26,
+          "end": 2.96
+        },
+        {
+          "text": "che",
+          "start": 3.06,
+          "end": 3.14
+        },
+        {
+          "text": "ha",
+          "start": 3.18,
+          "end": 3.24
+        },
+        {
+          "text": "rivoluzionato",
+          "start": 3.32,
+          "end": 4.18
+        },
+        {
+          "text": "l'addestramento",
+          "start": 4.22,
+          "end": 4.98
+        },
+        {
+          "text": "delle",
+          "start": 5.04,
+          "end": 5.24
+        },
+        {
+          "text": "reti",
+          "start": 5.3,
+          "end": 5.52
+        },
+        {
+          "text": "profonde:",
+          "start": 5.56,
+          "end": 6.101
+        }
+      ]
+    },
+    {
+      "start": 6.921,
+      "end": 9.181,
+      "text": "la ReLU, Rectified Linear Unit.",
+      "words": [
+        {
+          "text": "la",
+          "start": 6.921,
+          "end": 7.001
+        },
+        {
+          "text": "ReLU,",
+          "start": 7.081,
+          "end": 7.321
+        },
+        {
+          "text": "Rectified",
+          "start": 7.781,
+          "end": 8.341
+        },
+        {
+          "text": "Linear",
+          "start": 8.421,
+          "end": 8.761
+        },
+        {
+          "text": "Unit.",
+          "start": 8.901,
+          "end": 9.181
+        }
+      ]
+    },
+    {
+      "start": 10.281,
+      "end": 11.981,
+      "text": "La sua definizione è semplicissima:",
+      "words": [
+        {
+          "text": "La",
+          "start": 10.281,
+          "end": 10.341
+        },
+        {
+          "text": "sua",
+          "start": 10.401,
+          "end": 10.521
+        },
+        {
+          "text": "definizione",
+          "start": 10.561,
+          "end": 11.081
+        },
+        {
+          "text": "è",
+          "start": 11.141,
+          "end": 11.181
+        },
+        {
+          "text": "semplicissima:",
+          "start": 11.221,
+          "end": 11.981
+        }
+      ]
+    },
+    {
+      "start": 12.741,
+      "end": 15.601,
+      "text": "f di x uguale al massimo tra zero e x,",
+      "words": [
+        {
+          "text": "f",
+          "start": 12.741,
+          "end": 12.781
+        },
+        {
+          "text": "di",
+          "start": 12.881,
+          "end": 12.981
+        },
+        {
+          "text": "x",
+          "start": 13.061,
+          "end": 13.101
+        },
+        {
+          "text": "uguale",
+          "start": 13.541,
+          "end": 13.861
+        },
+        {
+          "text": "al",
+          "start": 13.901,
+          "end": 14.001
+        },
+        {
+          "text": "massimo",
+          "start": 14.041,
+          "end": 14.441
+        },
+        {
+          "text": "tra",
+          "start": 14.541,
+          "end": 14.661
+        },
+        {
+          "text": "zero",
+          "start": 14.821,
+          "end": 15.081
+        },
+        {
+          "text": "e",
+          "start": 15.321,
+          "end": 15.361
+        },
+        {
+          "text": "x,",
+          "start": 15.561,
+          "end": 15.601
+        }
+      ]
+    },
+    {
+      "start": 16.241,
+      "end": 20.482,
+      "text": "ovvero zero per x minore di zero e x per x maggiore o uguale a",
+      "words": [
+        {
+          "text": "ovvero",
+          "start": 16.241,
+          "end": 16.521
+        },
+        {
+          "text": "zero",
+          "start": 16.721,
+          "end": 16.941
+        },
+        {
+          "text": "per",
+          "start": 16.981,
+          "end": 17.121
+        },
+        {
+          "text": "x",
+          "start": 17.261,
+          "end": 17.301
+        },
+        {
+          "text": "minore",
+          "start": 17.542,
+          "end": 17.862
+        },
+        {
+          "text": "di",
+          "start": 17.902,
+          "end": 17.962
+        },
+        {
+          "text": "zero",
+          "start": 18.062,
+          "end": 18.302
+        },
+        {
+          "text": "e",
+          "start": 18.462,
+          "end": 18.502
+        },
+        {
+          "text": "x",
+          "start": 18.762,
+          "end": 18.802
+        },
+        {
+          "text": "per",
+          "start": 19.042,
+          "end": 19.182
+        },
+        {
+          "text": "x",
+          "start": 19.342,
+          "end": 19.382
+        },
+        {
+          "text": "maggiore",
+          "start": 19.682,
+          "end": 20.042
+        },
+        {
+          "text": "o",
+          "start": 20.162,
+          "end": 20.202
+        },
+        {
+          "text": "uguale",
+          "start": 20.182,
+          "end": 20.422
+        },
+        {
+          "text": "a",
+          "start": 20.442,
+          "end": 20.482
+        }
+      ]
+    },
+    {
+      "start": 20.542,
+      "end": 20.742,
+      "text": "zero.",
+      "words": [
+        {
+          "text": "zero.",
+          "start": 20.542,
+          "end": 20.742
+        }
+      ]
+    },
+    {
+      "start": 21.682,
+      "end": 25.002,
+      "text": "Nonostante l'estrema semplicità, offre tre vantaggi decisivi.",
+      "words": [
+        {
+          "text": "Nonostante",
+          "start": 21.682,
+          "end": 22.122
+        },
+        {
+          "text": "l'estrema",
+          "start": 22.222,
+          "end": 22.662
+        },
+        {
+          "text": "semplicità,",
+          "start": 22.802,
+          "end": 23.362
+        },
+        {
+          "text": "offre",
+          "start": 23.542,
+          "end": 23.782
+        },
+        {
+          "text": "tre",
+          "start": 23.882,
+          "end": 23.982
+        },
+        {
+          "text": "vantaggi",
+          "start": 24.062,
+          "end": 24.482
+        },
+        {
+          "text": "decisivi.",
+          "start": 24.542,
+          "end": 25.002
+        }
+      ]
+    },
+    {
+      "start": 25.822,
+      "end": 30.783,
+      "text": "Primo: una propagazione del gradiente molto migliore attraverso molti strati,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 25.822,
+          "end": 26.082
+        },
+        {
+          "text": "una",
+          "start": 26.642,
+          "end": 26.822
+        },
+        {
+          "text": "propagazione",
+          "start": 26.922,
+          "end": 27.702
+        },
+        {
+          "text": "del",
+          "start": 27.762,
+          "end": 27.862
+        },
+        {
+          "text": "gradiente",
+          "start": 27.922,
+          "end": 28.402
+        },
+        {
+          "text": "molto",
+          "start": 28.502,
+          "end": 28.822
+        },
+        {
+          "text": "migliore",
+          "start": 28.862,
+          "end": 29.323
+        },
+        {
+          "text": "attraverso",
+          "start": 29.443,
+          "end": 29.943
+        },
+        {
+          "text": "molti",
+          "start": 30.063,
+          "end": 30.343
+        },
+        {
+          "text": "strati,",
+          "start": 30.403,
+          "end": 30.783
+        }
+      ]
+    },
+    {
+      "start": 31.283,
+      "end": 36.643,
+      "text": "perché non satura mai sulla semiretta positiva, dove la derivata f primo di x vale",
+      "words": [
+        {
+          "text": "perché",
+          "start": 31.283,
+          "end": 31.543
+        },
+        {
+          "text": "non",
+          "start": 31.663,
+          "end": 31.783
+        },
+        {
+          "text": "satura",
+          "start": 31.823,
+          "end": 32.123
+        },
+        {
+          "text": "mai",
+          "start": 32.183,
+          "end": 32.363
+        },
+        {
+          "text": "sulla",
+          "start": 32.423,
+          "end": 32.623
+        },
+        {
+          "text": "semiretta",
+          "start": 32.683,
+          "end": 33.103
+        },
+        {
+          "text": "positiva,",
+          "start": 33.143,
+          "end": 33.623
+        },
+        {
+          "text": "dove",
+          "start": 34.023,
+          "end": 34.203
+        },
+        {
+          "text": "la",
+          "start": 34.343,
+          "end": 34.423
+        },
+        {
+          "text": "derivata",
+          "start": 34.483,
+          "end": 34.963
+        },
+        {
+          "text": "f",
+          "start": 35.323,
+          "end": 35.363
+        },
+        {
+          "text": "primo",
+          "start": 35.503,
+          "end": 35.743
+        },
+        {
+          "text": "di",
+          "start": 35.783,
+          "end": 35.843
+        },
+        {
+          "text": "x",
+          "start": 36.023,
+          "end": 36.063
+        },
+        {
+          "text": "vale",
+          "start": 36.443,
+          "end": 36.643
+        }
+      ]
+    },
+    {
+      "start": 36.683,
+      "end": 39.063,
+      "text": "esattamente uno per ogni net positivo.",
+      "words": [
+        {
+          "text": "esattamente",
+          "start": 36.683,
+          "end": 37.223
+        },
+        {
+          "text": "uno",
+          "start": 37.303,
+          "end": 37.463
+        },
+        {
+          "text": "per",
+          "start": 37.603,
+          "end": 37.763
+        },
+        {
+          "text": "ogni",
+          "start": 37.863,
+          "end": 38.103
+        },
+        {
+          "text": "net",
+          "start": 38.203,
+          "end": 38.423
+        },
+        {
+          "text": "positivo.",
+          "start": 38.563,
+          "end": 39.063
+        }
+      ]
+    },
+    {
+      "start": 39.883,
+      "end": 42.464,
+      "text": "Secondo: induce attivazione sparsa;",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 39.883,
+          "end": 40.303
+        },
+        {
+          "text": "induce",
+          "start": 40.844,
+          "end": 41.264
+        },
+        {
+          "text": "attivazione",
+          "start": 41.344,
+          "end": 41.924
+        },
+        {
+          "text": "sparsa;",
+          "start": 42.004,
+          "end": 42.464
+        }
+      ]
+    },
+    {
+      "start": 43.084,
+      "end": 46.944,
+      "text": "in una rete inizializzata a caso circa metà delle unità nascoste è attiva,",
+      "words": [
+        {
+          "text": "in",
+          "start": 43.084,
+          "end": 43.164
+        },
+        {
+          "text": "una",
+          "start": 43.184,
+          "end": 43.324
+        },
+        {
+          "text": "rete",
+          "start": 43.364,
+          "end": 43.564
+        },
+        {
+          "text": "inizializzata",
+          "start": 43.604,
+          "end": 44.244
+        },
+        {
+          "text": "a",
+          "start": 44.284,
+          "end": 44.324
+        },
+        {
+          "text": "caso",
+          "start": 44.364,
+          "end": 44.644
+        },
+        {
+          "text": "circa",
+          "start": 44.824,
+          "end": 45.064
+        },
+        {
+          "text": "metà",
+          "start": 45.104,
+          "end": 45.304
+        },
+        {
+          "text": "delle",
+          "start": 45.384,
+          "end": 45.564
+        },
+        {
+          "text": "unità",
+          "start": 45.584,
+          "end": 45.824
+        },
+        {
+          "text": "nascoste",
+          "start": 45.924,
+          "end": 46.364
+        },
+        {
+          "text": "è",
+          "start": 46.484,
+          "end": 46.524
+        },
+        {
+          "text": "attiva,",
+          "start": 46.584,
+          "end": 46.944
+        }
+      ]
+    },
+    {
+      "start": 47.204,
+      "end": 49.704,
+      "text": "mentre le altre producono esattamente zero.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 47.204,
+          "end": 47.504
+        },
+        {
+          "text": "le",
+          "start": 47.564,
+          "end": 47.644
+        },
+        {
+          "text": "altre",
+          "start": 47.684,
+          "end": 47.944
+        },
+        {
+          "text": "producono",
+          "start": 48.044,
+          "end": 48.544
+        },
+        {
+          "text": "esattamente",
+          "start": 48.604,
+          "end": 49.284
+        },
+        {
+          "text": "zero.",
+          "start": 49.484,
+          "end": 49.704
+        }
+      ]
+    },
+    {
+      "start": 50.644,
+      "end": 55.345,
+      "text": "Terzo: calcolo molto efficiente, perché richiede solo confronti, somme e prodotti,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 50.644,
+          "end": 50.984
+        },
+        {
+          "text": "calcolo",
+          "start": 51.324,
+          "end": 51.704
+        },
+        {
+          "text": "molto",
+          "start": 51.864,
+          "end": 52.104
+        },
+        {
+          "text": "efficiente,",
+          "start": 52.144,
+          "end": 52.665
+        },
+        {
+          "text": "perché",
+          "start": 52.945,
+          "end": 53.145
+        },
+        {
+          "text": "richiede",
+          "start": 53.185,
+          "end": 53.505
+        },
+        {
+          "text": "solo",
+          "start": 53.565,
+          "end": 53.725
+        },
+        {
+          "text": "confronti,",
+          "start": 53.765,
+          "end": 54.325
+        },
+        {
+          "text": "somme",
+          "start": 54.385,
+          "end": 54.665
+        },
+        {
+          "text": "e",
+          "start": 54.785,
+          "end": 54.825
+        },
+        {
+          "text": "prodotti,",
+          "start": 54.865,
+          "end": 55.345
+        }
+      ]
+    },
+    {
+      "start": 55.705,
+      "end": 57.345,
+      "text": "senza esponenziali costosi.",
+      "words": [
+        {
+          "text": "senza",
+          "start": 55.705,
+          "end": 56.005
+        },
+        {
+          "text": "esponenziali",
+          "start": 56.145,
+          "end": 56.845
+        },
+        {
+          "text": "costosi.",
+          "start": 56.885,
+          "end": 57.345
+        }
+      ]
+    },
+    {
+      "start": 58.305,
+      "end": 63.045,
+      "text": "Qualche accortezza pratica: la ReLU non è differenziabile esattamente in zero,",
+      "words": [
+        {
+          "text": "Qualche",
+          "start": 58.305,
+          "end": 58.565
+        },
+        {
+          "text": "accortezza",
+          "start": 58.565,
+          "end": 58.985
+        },
+        {
+          "text": "pratica:",
+          "start": 59.025,
+          "end": 59.445
+        },
+        {
+          "text": "la",
+          "start": 60.225,
+          "end": 60.305
+        },
+        {
+          "text": "ReLU",
+          "start": 60.365,
+          "end": 60.585
+        },
+        {
+          "text": "non",
+          "start": 60.745,
+          "end": 60.905
+        },
+        {
+          "text": "è",
+          "start": 60.945,
+          "end": 60.985
+        },
+        {
+          "text": "differenziabile",
+          "start": 61.105,
+          "end": 61.965
+        },
+        {
+          "text": "esattamente",
+          "start": 62.025,
+          "end": 62.585
+        },
+        {
+          "text": "in",
+          "start": 62.645,
+          "end": 62.705
+        },
+        {
+          "text": "zero,",
+          "start": 62.785,
+          "end": 63.045
+        }
+      ]
+    },
+    {
+      "start": 63.345,
+      "end": 67.046,
+      "text": "ma nelle librerie si assume per convenzione derivata zero oppure uno;",
+      "words": [
+        {
+          "text": "ma",
+          "start": 63.345,
+          "end": 63.405
+        },
+        {
+          "text": "nelle",
+          "start": 63.525,
+          "end": 63.725
+        },
+        {
+          "text": "librerie",
+          "start": 63.765,
+          "end": 64.206
+        },
+        {
+          "text": "si",
+          "start": 64.266,
+          "end": 64.30600000000001
+        },
+        {
+          "text": "assume",
+          "start": 64.346,
+          "end": 64.646
+        },
+        {
+          "text": "per",
+          "start": 64.726,
+          "end": 64.826
+        },
+        {
+          "text": "convenzione",
+          "start": 64.886,
+          "end": 65.546
+        },
+        {
+          "text": "derivata",
+          "start": 65.666,
+          "end": 66.066
+        },
+        {
+          "text": "zero",
+          "start": 66.166,
+          "end": 66.386
+        },
+        {
+          "text": "oppure",
+          "start": 66.506,
+          "end": 66.806
+        },
+        {
+          "text": "uno;",
+          "start": 66.886,
+          "end": 67.046
+        }
+      ]
+    },
+    {
+      "start": 67.566,
+      "end": 72.446,
+      "text": "è un'approssimazione sicura, perché in pratica è improbabile valutare esattamente f di zero.",
+      "words": [
+        {
+          "text": "è",
+          "start": 67.566,
+          "end": 67.60600000000001
+        },
+        {
+          "text": "un'approssimazione",
+          "start": 67.666,
+          "end": 68.466
+        },
+        {
+          "text": "sicura,",
+          "start": 68.526,
+          "end": 68.886
+        },
+        {
+          "text": "perché",
+          "start": 69.086,
+          "end": 69.306
+        },
+        {
+          "text": "in",
+          "start": 69.346,
+          "end": 69.38600000000001
+        },
+        {
+          "text": "pratica",
+          "start": 69.406,
+          "end": 69.766
+        },
+        {
+          "text": "è",
+          "start": 69.826,
+          "end": 69.866
+        },
+        {
+          "text": "improbabile",
+          "start": 69.886,
+          "end": 70.446
+        },
+        {
+          "text": "valutare",
+          "start": 70.506,
+          "end": 70.886
+        },
+        {
+          "text": "esattamente",
+          "start": 70.926,
+          "end": 71.586
+        },
+        {
+          "text": "f",
+          "start": 71.906,
+          "end": 71.94600000000001
+        },
+        {
+          "text": "di",
+          "start": 72.046,
+          "end": 72.126
+        },
+        {
+          "text": "zero.",
+          "start": 72.206,
+          "end": 72.446
+        }
+      ]
+    },
+    {
+      "start": 73.346,
+      "end": 75.607,
+      "text": "Conviene inoltre iniziare con net positivi,",
+      "words": [
+        {
+          "text": "Conviene",
+          "start": 73.346,
+          "end": 73.686
+        },
+        {
+          "text": "inoltre",
+          "start": 73.706,
+          "end": 73.966
+        },
+        {
+          "text": "iniziare",
+          "start": 74.006,
+          "end": 74.386
+        },
+        {
+          "text": "con",
+          "start": 74.426,
+          "end": 74.566
+        },
+        {
+          "text": "net",
+          "start": 74.666,
+          "end": 74.866
+        },
+        {
+          "text": "positivi,",
+          "start": 74.966,
+          "end": 75.607
+        }
+      ]
+    },
+    {
+      "start": 76.307,
+      "end": 79.707,
+      "text": "ad esempio usando piccoli bias positivi pari a zero virgola uno,",
+      "words": [
+        {
+          "text": "ad",
+          "start": 76.307,
+          "end": 76.387
+        },
+        {
+          "text": "esempio",
+          "start": 76.427,
+          "end": 76.747
+        },
+        {
+          "text": "usando",
+          "start": 76.827,
+          "end": 77.147
+        },
+        {
+          "text": "piccoli",
+          "start": 77.307,
+          "end": 77.687
+        },
+        {
+          "text": "bias",
+          "start": 77.727,
+          "end": 78.107
+        },
+        {
+          "text": "positivi",
+          "start": 78.167,
+          "end": 78.607
+        },
+        {
+          "text": "pari",
+          "start": 78.667,
+          "end": 78.867
+        },
+        {
+          "text": "a",
+          "start": 78.907,
+          "end": 78.947
+        },
+        {
+          "text": "zero",
+          "start": 79.007,
+          "end": 79.167
+        },
+        {
+          "text": "virgola",
+          "start": 79.207,
+          "end": 79.467
+        },
+        {
+          "text": "uno,",
+          "start": 79.547,
+          "end": 79.707
+        }
+      ]
+    },
+    {
+      "start": 80.107,
+      "end": 83.927,
+      "text": "in modo che le unità siano inizialmente attive e ricevano gradiente.",
+      "words": [
+        {
+          "text": "in",
+          "start": 80.107,
+          "end": 80.167
+        },
+        {
+          "text": "modo",
+          "start": 80.207,
+          "end": 80.407
+        },
+        {
+          "text": "che",
+          "start": 80.467,
+          "end": 80.567
+        },
+        {
+          "text": "le",
+          "start": 80.607,
+          "end": 80.667
+        },
+        {
+          "text": "unità",
+          "start": 80.747,
+          "end": 81.067
+        },
+        {
+          "text": "siano",
+          "start": 81.287,
+          "end": 81.507
+        },
+        {
+          "text": "inizialmente",
+          "start": 81.667,
+          "end": 82.307
+        },
+        {
+          "text": "attive",
+          "start": 82.347,
+          "end": 82.687
+        },
+        {
+          "text": "e",
+          "start": 82.887,
+          "end": 82.927
+        },
+        {
+          "text": "ricevano",
+          "start": 83.007,
+          "end": 83.407
+        },
+        {
+          "text": "gradiente.",
+          "start": 83.447,
+          "end": 83.927
+        }
+      ]
+    },
+    {
+      "start": 84.787,
+      "end": 87.728,
+      "text": "Per evitare che le unità si spengano sulla parte negativa,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 84.787,
+          "end": 84.907
+        },
+        {
+          "text": "evitare",
+          "start": 84.947,
+          "end": 85.407
+        },
+        {
+          "text": "che",
+          "start": 85.427,
+          "end": 85.527
+        },
+        {
+          "text": "le",
+          "start": 85.547,
+          "end": 85.607
+        },
+        {
+          "text": "unità",
+          "start": 85.647,
+          "end": 85.887
+        },
+        {
+          "text": "si",
+          "start": 85.967,
+          "end": 86.047
+        },
+        {
+          "text": "spengano",
+          "start": 86.127,
+          "end": 86.567
+        },
+        {
+          "text": "sulla",
+          "start": 86.647,
+          "end": 86.847
+        },
+        {
+          "text": "parte",
+          "start": 86.887,
+          "end": 87.127
+        },
+        {
+          "text": "negativa,",
+          "start": 87.187,
+          "end": 87.728
+        }
+      ]
+    },
+    {
+      "start": 88.308,
+      "end": 91.068,
+      "text": "e per ottenere un'attivazione media più vicina a zero,",
+      "words": [
+        {
+          "text": "e",
+          "start": 88.308,
+          "end": 88.34800000000001
+        },
+        {
+          "text": "per",
+          "start": 88.388,
+          "end": 88.488
+        },
+        {
+          "text": "ottenere",
+          "start": 88.528,
+          "end": 88.888
+        },
+        {
+          "text": "un'attivazione",
+          "start": 88.908,
+          "end": 89.548
+        },
+        {
+          "text": "media",
+          "start": 89.748,
+          "end": 90.088
+        },
+        {
+          "text": "più",
+          "start": 90.148,
+          "end": 90.248
+        },
+        {
+          "text": "vicina",
+          "start": 90.308,
+          "end": 90.648
+        },
+        {
+          "text": "a",
+          "start": 90.688,
+          "end": 90.72800000000001
+        },
+        {
+          "text": "zero,",
+          "start": 90.788,
+          "end": 91.068
+        }
+      ]
+    },
+    {
+      "start": 91.588,
+      "end": 94.048,
+      "text": "esistono varianti mostrate nel grafico:",
+      "words": [
+        {
+          "text": "esistono",
+          "start": 91.588,
+          "end": 91.948
+        },
+        {
+          "text": "varianti",
+          "start": 92.008,
+          "end": 92.508
+        },
+        {
+          "text": "mostrate",
+          "start": 93.028,
+          "end": 93.428
+        },
+        {
+          "text": "nel",
+          "start": 93.488,
+          "end": 93.608
+        },
+        {
+          "text": "grafico:",
+          "start": 93.648,
+          "end": 94.048
+        }
+      ]
+    },
+    {
+      "start": 95.048,
+      "end": 100.449,
+      "text": "la Leaky ReLU, pari a zero virgola zero uno x per x negativo e disegnata",
+      "words": [
+        {
+          "text": "la",
+          "start": 95.048,
+          "end": 95.128
+        },
+        {
+          "text": "Leaky",
+          "start": 95.208,
+          "end": 95.448
+        },
+        {
+          "text": "ReLU,",
+          "start": 95.488,
+          "end": 95.748
+        },
+        {
+          "text": "pari",
+          "start": 96.288,
+          "end": 96.528
+        },
+        {
+          "text": "a",
+          "start": 96.668,
+          "end": 96.70800000000001
+        },
+        {
+          "text": "zero",
+          "start": 96.828,
+          "end": 97.008
+        },
+        {
+          "text": "virgola",
+          "start": 97.028,
+          "end": 97.308
+        },
+        {
+          "text": "zero",
+          "start": 97.388,
+          "end": 97.568
+        },
+        {
+          "text": "uno",
+          "start": 97.628,
+          "end": 97.768
+        },
+        {
+          "text": "x",
+          "start": 97.988,
+          "end": 98.028
+        },
+        {
+          "text": "per",
+          "start": 98.428,
+          "end": 98.568
+        },
+        {
+          "text": "x",
+          "start": 98.748,
+          "end": 98.78800000000001
+        },
+        {
+          "text": "negativo",
+          "start": 99.009,
+          "end": 99.549
+        },
+        {
+          "text": "e",
+          "start": 99.889,
+          "end": 99.929
+        },
+        {
+          "text": "disegnata",
+          "start": 99.969,
+          "end": 100.449
+        }
+      ]
+    },
+    {
+      "start": 100.509,
+      "end": 102.969,
+      "text": "con pendenza zero virgola uno per renderla ben visibile;",
+      "words": [
+        {
+          "text": "con",
+          "start": 100.509,
+          "end": 100.609
+        },
+        {
+          "text": "pendenza",
+          "start": 100.649,
+          "end": 101.029
+        },
+        {
+          "text": "zero",
+          "start": 101.129,
+          "end": 101.289
+        },
+        {
+          "text": "virgola",
+          "start": 101.329,
+          "end": 101.629
+        },
+        {
+          "text": "uno",
+          "start": 101.689,
+          "end": 101.829
+        },
+        {
+          "text": "per",
+          "start": 101.869,
+          "end": 101.969
+        },
+        {
+          "text": "renderla",
+          "start": 102.009,
+          "end": 102.329
+        },
+        {
+          "text": "ben",
+          "start": 102.389,
+          "end": 102.509
+        },
+        {
+          "text": "visibile;",
+          "start": 102.549,
+          "end": 102.969
+        }
+      ]
+    },
+    {
+      "start": 103.849,
+      "end": 108.82900000000001,
+      "text": "la ELU, pari ad alfa per e alla x meno uno per x minore o",
+      "words": [
+        {
+          "text": "la",
+          "start": 103.849,
+          "end": 103.929
+        },
+        {
+          "text": "ELU,",
+          "start": 104.129,
+          "end": 104.349
+        },
+        {
+          "text": "pari",
+          "start": 104.849,
+          "end": 105.109
+        },
+        {
+          "text": "ad",
+          "start": 105.269,
+          "end": 105.389
+        },
+        {
+          "text": "alfa",
+          "start": 105.449,
+          "end": 105.729
+        },
+        {
+          "text": "per",
+          "start": 105.809,
+          "end": 105.969
+        },
+        {
+          "text": "e",
+          "start": 106.149,
+          "end": 106.18900000000001
+        },
+        {
+          "text": "alla",
+          "start": 106.309,
+          "end": 106.489
+        },
+        {
+          "text": "x",
+          "start": 106.709,
+          "end": 106.74900000000001
+        },
+        {
+          "text": "meno",
+          "start": 106.949,
+          "end": 107.129
+        },
+        {
+          "text": "uno",
+          "start": 107.229,
+          "end": 107.409
+        },
+        {
+          "text": "per",
+          "start": 107.649,
+          "end": 107.789
+        },
+        {
+          "text": "x",
+          "start": 108.029,
+          "end": 108.069
+        },
+        {
+          "text": "minore",
+          "start": 108.269,
+          "end": 108.609
+        },
+        {
+          "text": "o",
+          "start": 108.789,
+          "end": 108.82900000000001
+        }
+      ]
+    },
+    {
+      "start": 108.909,
+      "end": 112.29,
+      "text": "uguale a zero e x per x positivo; e la softplus,",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 108.909,
+          "end": 109.229
+        },
+        {
+          "text": "a",
+          "start": 109.269,
+          "end": 109.30900000000001
+        },
+        {
+          "text": "zero",
+          "start": 109.409,
+          "end": 109.689
+        },
+        {
+          "text": "e",
+          "start": 109.909,
+          "end": 109.94900000000001
+        },
+        {
+          "text": "x",
+          "start": 110.109,
+          "end": 110.149
+        },
+        {
+          "text": "per",
+          "start": 110.309,
+          "end": 110.429
+        },
+        {
+          "text": "x",
+          "start": 110.509,
+          "end": 110.549
+        },
+        {
+          "text": "positivo;",
+          "start": 110.61,
+          "end": 111.07
+        },
+        {
+          "text": "e",
+          "start": 111.55,
+          "end": 111.59
+        },
+        {
+          "text": "la",
+          "start": 111.63,
+          "end": 111.69
+        },
+        {
+          "text": "softplus,",
+          "start": 111.75,
+          "end": 112.29
+        }
+      ]
+    },
+    {
+      "start": 112.73,
+      "end": 120.19,
+      "text": "logaritmo naturale di uno più e alla x, che fornisce un'approssimazione liscia e ovunque differenziabile",
+      "words": [
+        {
+          "text": "logaritmo",
+          "start": 112.73,
+          "end": 113.21
+        },
+        {
+          "text": "naturale",
+          "start": 113.39,
+          "end": 113.95
+        },
+        {
+          "text": "di",
+          "start": 114.31,
+          "end": 114.41
+        },
+        {
+          "text": "uno",
+          "start": 114.51,
+          "end": 114.69
+        },
+        {
+          "text": "più",
+          "start": 115.07,
+          "end": 115.19
+        },
+        {
+          "text": "e",
+          "start": 115.37,
+          "end": 115.41000000000001
+        },
+        {
+          "text": "alla",
+          "start": 115.65,
+          "end": 115.81
+        },
+        {
+          "text": "x,",
+          "start": 116.01,
+          "end": 116.05000000000001
+        },
+        {
+          "text": "che",
+          "start": 116.55,
+          "end": 116.63
+        },
+        {
+          "text": "fornisce",
+          "start": 116.69,
+          "end": 117.11
+        },
+        {
+          "text": "un'approssimazione",
+          "start": 117.29,
+          "end": 118.11
+        },
+        {
+          "text": "liscia",
+          "start": 118.23,
+          "end": 118.57
+        },
+        {
+          "text": "e",
+          "start": 118.91,
+          "end": 118.95
+        },
+        {
+          "text": "ovunque",
+          "start": 119.03,
+          "end": 119.35
+        },
+        {
+          "text": "differenziabile",
+          "start": 119.39,
+          "end": 120.19
+        }
+      ]
+    },
+    {
+      "start": 120.23,
+      "end": 120.69,
+      "text": "della ReLU.",
+      "words": [
+        {
+          "text": "della",
+          "start": 120.23,
+          "end": 120.43
+        },
+        {
+          "text": "ReLU.",
+          "start": 120.47,
+          "end": 120.69
+        }
+      ]
+    }
+  ]
+}

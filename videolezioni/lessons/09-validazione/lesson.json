@@ -256,25 +256,25 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.6.1 · Algoritmi formali di Model Selection</div>\n  <h2 class=\"slide-title\">Model selection: Hold-out vs K-fold CV</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Algoritmo 1 — Hold-out</div>\n      <ol class=\"algo-list\" style=\"font-size:0.81rem;\">\n        <li>Dividi \\(D_l\\) in \\(D_{TR}\\) e \\(D_{VL}\\) (\\(tr+vl=l\\)).</li>\n        <li>Per ogni \\(\\theta_m\\): addestra \\(h^*_{\\theta_m}(D_{TR}) = \\arg\\min_{H_{\\theta_m}}\\Remp(h, D_{TR})\\); calcola \\(\\Remp(h^*_{\\theta_m}, D_{VL})\\).</li>\n        <li>Scegli \\(\\theta^*_m = \\arg\\min_{\\theta_m} \\Remp(h^*_{\\theta_m}, D_{VL})\\).</li>\n        <li><strong>Riaddestra</strong> \\(h^*(D_l)\\) su tutti gli \\(l\\) dati.</li>\n      </ol>\n    </div>\n    <div id=\"s2\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Algoritmo 2 — K-fold CV</div>\n      <ol class=\"algo-list\" style=\"font-size:0.81rem;\">\n        <li>Dividi \\(D_l\\) in \\(K\\) fold \\(D_1, \\dots, D_K\\) (complementare \\(\\bar D_k\\)).</li>\n        <li>Per ogni \\(\\theta_m\\) e ogni \\(D_k\\): addestra \\(h^*_{\\theta_m}(\\bar D_k)\\) <strong>da zero</strong>; calcola \\(\\Remp(h^*_{\\theta_m}(\\bar D_k), D_k)\\); media sui \\(K\\) fold.</li>\n        <li>Scegli \\(\\theta^*_m\\) con migliore media VL.</li>\n        <li><strong>Riaddestra</strong> \\(h^*(D_l)\\) su tutto \\(D_l\\).</li>\n      </ol>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Due regole ferree</div>\n    <p style=\"font-size:0.85rem;\"><strong>1.</strong> Il minimo sul VL è ottimistico (errore 1: selezione del «fortunato»): non va mai restituito come stima di \\(R\\).<span id=\"s3b\" class=\"cue-hidden\"> · <strong>2.</strong> Ogni fold riparte <strong>da zero</strong> (altrimenti \\(D_2\\) usato in TR nello split 1 inquina il VL dello split 2).</span></p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 10.09,
+          "at": 9.88,
           "action": "show",
           "target": "#s1",
           "anchor": "Primo algoritmo: model selection con hold-out"
         },
         {
-          "at": 47.08,
+          "at": 49.05,
           "action": "show",
           "target": "#s3",
           "anchor": "Perché la stima sul validation"
         },
         {
-          "at": 72.38,
+          "at": 64.47,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo algoritmo: model selection con K-fold"
         },
         {
-          "at": 109.8,
+          "at": 97.6,
           "action": "show",
           "target": "#s3b",
           "anchor": "Regola ferrea: ogni iterazione"
@@ -283,7 +283,7 @@
       "id": "scene-08",
       "audio_file": "audio/scene-08.wav",
       "subtitle_file": "subtitles/scene-08.json",
-      "duration_sec": 121.65
+      "duration_sec": 110.47
     },
     {
       "section": "9.6.2 Algoritmi formali di Model Assessment",

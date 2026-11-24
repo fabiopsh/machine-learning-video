@@ -1,0 +1,1188 @@
+{
+  "duration": 86.962,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.361,
+      "text": "Entriamo ora nel cuore delle Deep Graph Networks definendo il problema delle trasduzioni su grafi.",
+      "words": [
+        {
+          "text": "Entriamo",
+          "start": 0.08,
+          "end": 0.5
+        },
+        {
+          "text": "ora",
+          "start": 0.62,
+          "end": 0.78
+        },
+        {
+          "text": "nel",
+          "start": 0.9,
+          "end": 1.06
+        },
+        {
+          "text": "cuore",
+          "start": 1.18,
+          "end": 1.58
+        },
+        {
+          "text": "delle",
+          "start": 1.76,
+          "end": 1.98
+        },
+        {
+          "text": "Deep",
+          "start": 2.06,
+          "end": 2.24
+        },
+        {
+          "text": "Graph",
+          "start": 2.32,
+          "end": 2.62
+        },
+        {
+          "text": "Networks",
+          "start": 2.7,
+          "end": 3.34
+        },
+        {
+          "text": "definendo",
+          "start": 3.84,
+          "end": 4.26
+        },
+        {
+          "text": "il",
+          "start": 4.3,
+          "end": 4.36
+        },
+        {
+          "text": "problema",
+          "start": 4.4,
+          "end": 4.881
+        },
+        {
+          "text": "delle",
+          "start": 4.961,
+          "end": 5.161
+        },
+        {
+          "text": "trasduzioni",
+          "start": 5.241,
+          "end": 5.861
+        },
+        {
+          "text": "su",
+          "start": 5.921,
+          "end": 5.981
+        },
+        {
+          "text": "grafi.",
+          "start": 6.041,
+          "end": 6.361
+        }
+      ]
+    },
+    {
+      "start": 7.121,
+      "end": 12.981,
+      "text": "Vogliamo apprendere una trasduzione T che mappa un dominio di grafi di dimensione variabile in",
+      "words": [
+        {
+          "text": "Vogliamo",
+          "start": 7.121,
+          "end": 7.421
+        },
+        {
+          "text": "apprendere",
+          "start": 7.441,
+          "end": 7.901
+        },
+        {
+          "text": "una",
+          "start": 7.961,
+          "end": 8.081
+        },
+        {
+          "text": "trasduzione",
+          "start": 8.181,
+          "end": 8.841
+        },
+        {
+          "text": "T",
+          "start": 9.021,
+          "end": 9.061
+        },
+        {
+          "text": "che",
+          "start": 9.501,
+          "end": 9.601
+        },
+        {
+          "text": "mappa",
+          "start": 9.661,
+          "end": 9.981
+        },
+        {
+          "text": "un",
+          "start": 10.201,
+          "end": 10.321
+        },
+        {
+          "text": "dominio",
+          "start": 10.381,
+          "end": 10.701
+        },
+        {
+          "text": "di",
+          "start": 10.741,
+          "end": 10.801
+        },
+        {
+          "text": "grafi",
+          "start": 10.841,
+          "end": 11.161
+        },
+        {
+          "text": "di",
+          "start": 11.221,
+          "end": 11.281
+        },
+        {
+          "text": "dimensione",
+          "start": 11.361,
+          "end": 11.881
+        },
+        {
+          "text": "variabile",
+          "start": 11.941,
+          "end": 12.481
+        },
+        {
+          "text": "in",
+          "start": 12.901,
+          "end": 12.981
+        }
+      ]
+    },
+    {
+      "start": 13.021,
+      "end": 18.462,
+      "text": "uno spazio di uscita discreto o continuo, a partire da coppie di addestramento grafo con",
+      "words": [
+        {
+          "text": "uno",
+          "start": 13.021,
+          "end": 13.141
+        },
+        {
+          "text": "spazio",
+          "start": 13.181,
+          "end": 13.541
+        },
+        {
+          "text": "di",
+          "start": 13.581,
+          "end": 13.641
+        },
+        {
+          "text": "uscita",
+          "start": 13.681,
+          "end": 14.001
+        },
+        {
+          "text": "discreto",
+          "start": 14.062,
+          "end": 14.542
+        },
+        {
+          "text": "o",
+          "start": 14.962,
+          "end": 15.002
+        },
+        {
+          "text": "continuo,",
+          "start": 15.042,
+          "end": 15.522
+        },
+        {
+          "text": "a",
+          "start": 15.862,
+          "end": 15.902
+        },
+        {
+          "text": "partire",
+          "start": 15.962,
+          "end": 16.282
+        },
+        {
+          "text": "da",
+          "start": 16.342,
+          "end": 16.402
+        },
+        {
+          "text": "coppie",
+          "start": 16.482,
+          "end": 16.802
+        },
+        {
+          "text": "di",
+          "start": 16.842,
+          "end": 16.922
+        },
+        {
+          "text": "addestramento",
+          "start": 16.982,
+          "end": 17.742
+        },
+        {
+          "text": "grafo",
+          "start": 17.962,
+          "end": 18.262
+        },
+        {
+          "text": "con",
+          "start": 18.322,
+          "end": 18.462
+        }
+      ]
+    },
+    {
+      "start": 18.502,
+      "end": 19.542,
+      "text": "i, target con i.",
+      "words": [
+        {
+          "text": "i,",
+          "start": 18.502,
+          "end": 18.542
+        },
+        {
+          "text": "target",
+          "start": 18.882,
+          "end": 19.262
+        },
+        {
+          "text": "con",
+          "start": 19.322,
+          "end": 19.462
+        },
+        {
+          "text": "i.",
+          "start": 19.502,
+          "end": 19.542
+        }
+      ]
+    },
+    {
+      "start": 20.422,
+      "end": 23.422,
+      "text": "Architetturalmente il processo si separa in due fasi.",
+      "words": [
+        {
+          "text": "Architetturalmente",
+          "start": 20.422,
+          "end": 21.482
+        },
+        {
+          "text": "il",
+          "start": 21.722,
+          "end": 21.802
+        },
+        {
+          "text": "processo",
+          "start": 21.842,
+          "end": 22.282
+        },
+        {
+          "text": "si",
+          "start": 22.342,
+          "end": 22.402
+        },
+        {
+          "text": "separa",
+          "start": 22.462,
+          "end": 22.762
+        },
+        {
+          "text": "in",
+          "start": 22.822,
+          "end": 22.882
+        },
+        {
+          "text": "due",
+          "start": 22.922,
+          "end": 23.042
+        },
+        {
+          "text": "fasi.",
+          "start": 23.082,
+          "end": 23.422
+        }
+      ]
+    },
+    {
+      "start": 23.963,
+      "end": 29.843,
+      "text": "Prima un encoder T enc calcola un embedding vettoriale h con v per ogni nodo",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 23.963,
+          "end": 24.243
+        },
+        {
+          "text": "un",
+          "start": 24.443,
+          "end": 24.523
+        },
+        {
+          "text": "encoder",
+          "start": 24.583,
+          "end": 25.083
+        },
+        {
+          "text": "T",
+          "start": 25.323,
+          "end": 25.363
+        },
+        {
+          "text": "enc",
+          "start": 25.683,
+          "end": 25.943
+        },
+        {
+          "text": "calcola",
+          "start": 26.443,
+          "end": 26.883
+        },
+        {
+          "text": "un",
+          "start": 26.923,
+          "end": 27.003
+        },
+        {
+          "text": "embedding",
+          "start": 27.043,
+          "end": 27.563
+        },
+        {
+          "text": "vettoriale",
+          "start": 27.583,
+          "end": 28.203
+        },
+        {
+          "text": "h",
+          "start": 28.603,
+          "end": 28.643
+        },
+        {
+          "text": "con",
+          "start": 28.743,
+          "end": 28.883
+        },
+        {
+          "text": "v",
+          "start": 28.943,
+          "end": 28.983
+        },
+        {
+          "text": "per",
+          "start": 29.203,
+          "end": 29.343
+        },
+        {
+          "text": "ogni",
+          "start": 29.403,
+          "end": 29.563
+        },
+        {
+          "text": "nodo",
+          "start": 29.603,
+          "end": 29.843
+        }
+      ]
+    },
+    {
+      "start": 29.883,
+      "end": 35.124,
+      "text": "del grafo, portando i nodi in uno spazio latente continuo che cattura sia le etichette",
+      "words": [
+        {
+          "text": "del",
+          "start": 29.883,
+          "end": 30.003
+        },
+        {
+          "text": "grafo,",
+          "start": 30.043,
+          "end": 30.403
+        },
+        {
+          "text": "portando",
+          "start": 30.823,
+          "end": 31.203
+        },
+        {
+          "text": "i",
+          "start": 31.243,
+          "end": 31.283
+        },
+        {
+          "text": "nodi",
+          "start": 31.303,
+          "end": 31.543
+        },
+        {
+          "text": "in",
+          "start": 31.583,
+          "end": 31.623
+        },
+        {
+          "text": "uno",
+          "start": 31.663,
+          "end": 31.783
+        },
+        {
+          "text": "spazio",
+          "start": 31.843,
+          "end": 32.203
+        },
+        {
+          "text": "latente",
+          "start": 32.283,
+          "end": 32.683
+        },
+        {
+          "text": "continuo",
+          "start": 32.743,
+          "end": 33.244
+        },
+        {
+          "text": "che",
+          "start": 33.544,
+          "end": 33.624
+        },
+        {
+          "text": "cattura",
+          "start": 33.684,
+          "end": 34.024
+        },
+        {
+          "text": "sia",
+          "start": 34.184,
+          "end": 34.364
+        },
+        {
+          "text": "le",
+          "start": 34.444,
+          "end": 34.504
+        },
+        {
+          "text": "etichette",
+          "start": 34.564,
+          "end": 35.124
+        }
+      ]
+    },
+    {
+      "start": 35.324,
+      "end": 36.684,
+      "text": "sia il contesto strutturale.",
+      "words": [
+        {
+          "text": "sia",
+          "start": 35.324,
+          "end": 35.464
+        },
+        {
+          "text": "il",
+          "start": 35.504,
+          "end": 35.564
+        },
+        {
+          "text": "contesto",
+          "start": 35.604,
+          "end": 36.044
+        },
+        {
+          "text": "strutturale.",
+          "start": 36.084,
+          "end": 36.684
+        }
+      ]
+    },
+    {
+      "start": 37.464,
+      "end": 41.344,
+      "text": "A partire da questi embedding dei nodi si aprono tre famiglie di compiti.",
+      "words": [
+        {
+          "text": "A",
+          "start": 37.464,
+          "end": 37.504
+        },
+        {
+          "text": "partire",
+          "start": 37.564,
+          "end": 37.864
+        },
+        {
+          "text": "da",
+          "start": 37.904,
+          "end": 37.964
+        },
+        {
+          "text": "questi",
+          "start": 38.004,
+          "end": 38.224
+        },
+        {
+          "text": "embedding",
+          "start": 38.284,
+          "end": 38.724
+        },
+        {
+          "text": "dei",
+          "start": 38.764,
+          "end": 38.904
+        },
+        {
+          "text": "nodi",
+          "start": 38.964,
+          "end": 39.244
+        },
+        {
+          "text": "si",
+          "start": 39.464,
+          "end": 39.524
+        },
+        {
+          "text": "aprono",
+          "start": 39.584,
+          "end": 39.904
+        },
+        {
+          "text": "tre",
+          "start": 40.064,
+          "end": 40.224
+        },
+        {
+          "text": "famiglie",
+          "start": 40.324,
+          "end": 40.724
+        },
+        {
+          "text": "di",
+          "start": 40.764,
+          "end": 40.824
+        },
+        {
+          "text": "compiti.",
+          "start": 40.884,
+          "end": 41.344
+        }
+      ]
+    },
+    {
+      "start": 41.944,
+      "end": 47.145,
+      "text": "Prima famiglia, i compiti a livello di nodo: produciamo un'uscita per ciascun nodo,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 41.944,
+          "end": 42.164
+        },
+        {
+          "text": "famiglia,",
+          "start": 42.224,
+          "end": 42.605
+        },
+        {
+          "text": "i",
+          "start": 43.085,
+          "end": 43.125
+        },
+        {
+          "text": "compiti",
+          "start": 43.165,
+          "end": 43.545
+        },
+        {
+          "text": "a",
+          "start": 43.685,
+          "end": 43.725
+        },
+        {
+          "text": "livello",
+          "start": 43.805,
+          "end": 44.125
+        },
+        {
+          "text": "di",
+          "start": 44.165,
+          "end": 44.225
+        },
+        {
+          "text": "nodo:",
+          "start": 44.285,
+          "end": 44.545
+        },
+        {
+          "text": "produciamo",
+          "start": 44.985,
+          "end": 45.505
+        },
+        {
+          "text": "un'uscita",
+          "start": 45.585,
+          "end": 46.065
+        },
+        {
+          "text": "per",
+          "start": 46.165,
+          "end": 46.305
+        },
+        {
+          "text": "ciascun",
+          "start": 46.385,
+          "end": 46.785
+        },
+        {
+          "text": "nodo,",
+          "start": 46.845,
+          "end": 47.145
+        }
+      ]
+    },
+    {
+      "start": 47.605,
+      "end": 54.286,
+      "text": "realizzando trasduzioni struttura-struttura isomorfe, come la classificazione dei nodi in una rete sociale o di",
+      "words": [
+        {
+          "text": "realizzando",
+          "start": 47.605,
+          "end": 48.125
+        },
+        {
+          "text": "trasduzioni",
+          "start": 48.225,
+          "end": 48.885
+        },
+        {
+          "text": "struttura-struttura",
+          "start": 48.985,
+          "end": 50.105
+        },
+        {
+          "text": "isomorfe,",
+          "start": 50.285,
+          "end": 50.905
+        },
+        {
+          "text": "come",
+          "start": 51.305,
+          "end": 51.485
+        },
+        {
+          "text": "la",
+          "start": 51.545,
+          "end": 51.605
+        },
+        {
+          "text": "classificazione",
+          "start": 51.645,
+          "end": 52.466
+        },
+        {
+          "text": "dei",
+          "start": 52.526,
+          "end": 52.646
+        },
+        {
+          "text": "nodi",
+          "start": 52.686,
+          "end": 52.906
+        },
+        {
+          "text": "in",
+          "start": 52.946,
+          "end": 53.006
+        },
+        {
+          "text": "una",
+          "start": 53.046,
+          "end": 53.166
+        },
+        {
+          "text": "rete",
+          "start": 53.206,
+          "end": 53.406
+        },
+        {
+          "text": "sociale",
+          "start": 53.466,
+          "end": 53.926
+        },
+        {
+          "text": "o",
+          "start": 54.086,
+          "end": 54.126
+        },
+        {
+          "text": "di",
+          "start": 54.226,
+          "end": 54.286
+        }
+      ]
+    },
+    {
+      "start": 54.346,
+      "end": 55.006,
+      "text": "citazioni.",
+      "words": [
+        {
+          "text": "citazioni.",
+          "start": 54.346,
+          "end": 55.006
+        }
+      ]
+    },
+    {
+      "start": 55.806,
+      "end": 58.486,
+      "text": "Seconda famiglia, i compiti a livello di grafo:",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 55.806,
+          "end": 56.146
+        },
+        {
+          "text": "famiglia,",
+          "start": 56.206,
+          "end": 56.606
+        },
+        {
+          "text": "i",
+          "start": 56.986,
+          "end": 57.026
+        },
+        {
+          "text": "compiti",
+          "start": 57.086,
+          "end": 57.486
+        },
+        {
+          "text": "a",
+          "start": 57.526,
+          "end": 57.566
+        },
+        {
+          "text": "livello",
+          "start": 57.626,
+          "end": 57.926
+        },
+        {
+          "text": "di",
+          "start": 57.986,
+          "end": 58.046
+        },
+        {
+          "text": "grafo:",
+          "start": 58.086,
+          "end": 58.486
+        }
+      ]
+    },
+    {
+      "start": 59.046,
+      "end": 64.067,
+      "text": "una funzione di readout — o global pooling — aggrega tutti gli embedding dei nodi",
+      "words": [
+        {
+          "text": "una",
+          "start": 59.046,
+          "end": 59.166
+        },
+        {
+          "text": "funzione",
+          "start": 59.226,
+          "end": 59.606
+        },
+        {
+          "text": "di",
+          "start": 59.786,
+          "end": 59.866
+        },
+        {
+          "text": "readout",
+          "start": 59.926,
+          "end": 60.446
+        },
+        {
+          "text": "—",
+          "start": 60.446,
+          "end": 60.596
+        },
+        {
+          "text": "o",
+          "start": 60.686,
+          "end": 60.726
+        },
+        {
+          "text": "global",
+          "start": 60.846,
+          "end": 61.186
+        },
+        {
+          "text": "pooling",
+          "start": 61.246,
+          "end": 61.667
+        },
+        {
+          "text": "—",
+          "start": 61.667,
+          "end": 61.817
+        },
+        {
+          "text": "aggrega",
+          "start": 62.107,
+          "end": 62.467
+        },
+        {
+          "text": "tutti",
+          "start": 62.627,
+          "end": 62.967
+        },
+        {
+          "text": "gli",
+          "start": 63.007,
+          "end": 63.087
+        },
+        {
+          "text": "embedding",
+          "start": 63.127,
+          "end": 63.567
+        },
+        {
+          "text": "dei",
+          "start": 63.607,
+          "end": 63.727
+        },
+        {
+          "text": "nodi",
+          "start": 63.767,
+          "end": 64.067
+        }
+      ]
+    },
+    {
+      "start": 64.247,
+      "end": 66.807,
+      "text": "in un singolo embedding del grafo h con g,",
+      "words": [
+        {
+          "text": "in",
+          "start": 64.247,
+          "end": 64.347
+        },
+        {
+          "text": "un",
+          "start": 64.387,
+          "end": 64.487
+        },
+        {
+          "text": "singolo",
+          "start": 64.587,
+          "end": 64.967
+        },
+        {
+          "text": "embedding",
+          "start": 65.007,
+          "end": 65.407
+        },
+        {
+          "text": "del",
+          "start": 65.427,
+          "end": 65.547
+        },
+        {
+          "text": "grafo",
+          "start": 65.587,
+          "end": 65.947
+        },
+        {
+          "text": "h",
+          "start": 66.407,
+          "end": 66.447
+        },
+        {
+          "text": "con",
+          "start": 66.527,
+          "end": 66.687
+        },
+        {
+          "text": "g,",
+          "start": 66.767,
+          "end": 66.807
+        }
+      ]
+    },
+    {
+      "start": 67.347,
+      "end": 72.068,
+      "text": "permettendo la regressione o la classificazione dell'intero grafo, come per le molecole.",
+      "words": [
+        {
+          "text": "permettendo",
+          "start": 67.347,
+          "end": 67.847
+        },
+        {
+          "text": "la",
+          "start": 67.927,
+          "end": 67.987
+        },
+        {
+          "text": "regressione",
+          "start": 68.047,
+          "end": 68.707
+        },
+        {
+          "text": "o",
+          "start": 68.847,
+          "end": 68.887
+        },
+        {
+          "text": "la",
+          "start": 68.927,
+          "end": 69.007
+        },
+        {
+          "text": "classificazione",
+          "start": 69.067,
+          "end": 69.887
+        },
+        {
+          "text": "dell'intero",
+          "start": 69.927,
+          "end": 70.387
+        },
+        {
+          "text": "grafo,",
+          "start": 70.427,
+          "end": 70.767
+        },
+        {
+          "text": "come",
+          "start": 71.148,
+          "end": 71.328
+        },
+        {
+          "text": "per",
+          "start": 71.368,
+          "end": 71.468
+        },
+        {
+          "text": "le",
+          "start": 71.508,
+          "end": 71.588
+        },
+        {
+          "text": "molecole.",
+          "start": 71.608,
+          "end": 72.068
+        }
+      ]
+    },
+    {
+      "start": 72.768,
+      "end": 79.408,
+      "text": "Terza famiglia: esistono inoltre trasduzioni non isomorfe e compiti definiti direttamente sugli archi,",
+      "words": [
+        {
+          "text": "Terza",
+          "start": 72.768,
+          "end": 73.048
+        },
+        {
+          "text": "famiglia:",
+          "start": 73.088,
+          "end": 73.508
+        },
+        {
+          "text": "esistono",
+          "start": 73.908,
+          "end": 74.328
+        },
+        {
+          "text": "inoltre",
+          "start": 74.368,
+          "end": 74.768
+        },
+        {
+          "text": "trasduzioni",
+          "start": 74.848,
+          "end": 75.528
+        },
+        {
+          "text": "non",
+          "start": 75.688,
+          "end": 75.848
+        },
+        {
+          "text": "isomorfe",
+          "start": 75.908,
+          "end": 76.548
+        },
+        {
+          "text": "e",
+          "start": 76.948,
+          "end": 76.988
+        },
+        {
+          "text": "compiti",
+          "start": 77.048,
+          "end": 77.468
+        },
+        {
+          "text": "definiti",
+          "start": 77.548,
+          "end": 77.988
+        },
+        {
+          "text": "direttamente",
+          "start": 78.068,
+          "end": 78.748
+        },
+        {
+          "text": "sugli",
+          "start": 78.828,
+          "end": 79.048
+        },
+        {
+          "text": "archi,",
+          "start": 79.128,
+          "end": 79.408
+        }
+      ]
+    },
+    {
+      "start": 79.868,
+      "end": 82.549,
+      "text": "il cui esempio più celebre è la link prediction,",
+      "words": [
+        {
+          "text": "il",
+          "start": 79.868,
+          "end": 79.948
+        },
+        {
+          "text": "cui",
+          "start": 79.988,
+          "end": 80.148
+        },
+        {
+          "text": "esempio",
+          "start": 80.188,
+          "end": 80.528
+        },
+        {
+          "text": "più",
+          "start": 80.588,
+          "end": 80.708
+        },
+        {
+          "text": "celebre",
+          "start": 80.809,
+          "end": 81.269
+        },
+        {
+          "text": "è",
+          "start": 81.449,
+          "end": 81.489
+        },
+        {
+          "text": "la",
+          "start": 81.549,
+          "end": 81.609
+        },
+        {
+          "text": "link",
+          "start": 81.689,
+          "end": 81.889
+        },
+        {
+          "text": "prediction,",
+          "start": 81.969,
+          "end": 82.549
+        }
+      ]
+    },
+    {
+      "start": 82.969,
+      "end": 86.789,
+      "text": "ossia prevedere se tra due nodi esista o nascerà una connessione.",
+      "words": [
+        {
+          "text": "ossia",
+          "start": 82.969,
+          "end": 83.229
+        },
+        {
+          "text": "prevedere",
+          "start": 83.289,
+          "end": 83.809
+        },
+        {
+          "text": "se",
+          "start": 83.969,
+          "end": 84.069
+        },
+        {
+          "text": "tra",
+          "start": 84.169,
+          "end": 84.269
+        },
+        {
+          "text": "due",
+          "start": 84.349,
+          "end": 84.469
+        },
+        {
+          "text": "nodi",
+          "start": 84.509,
+          "end": 84.749
+        },
+        {
+          "text": "esista",
+          "start": 84.809,
+          "end": 85.289
+        },
+        {
+          "text": "o",
+          "start": 85.489,
+          "end": 85.52900000000001
+        },
+        {
+          "text": "nascerà",
+          "start": 85.609,
+          "end": 85.929
+        },
+        {
+          "text": "una",
+          "start": 86.009,
+          "end": 86.129
+        },
+        {
+          "text": "connessione.",
+          "start": 86.169,
+          "end": 86.789
+        }
+      ]
+    }
+  ]
+}

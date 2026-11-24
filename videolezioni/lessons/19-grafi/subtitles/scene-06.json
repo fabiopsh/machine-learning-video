@@ -1,0 +1,1641 @@
+{
+  "duration": 111.954,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.48,
+      "text": "Le Deep Graph Networks si dividono in due grandi famiglie:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "Deep",
+          "start": 0.26,
+          "end": 0.44
+        },
+        {
+          "text": "Graph",
+          "start": 0.54,
+          "end": 0.86
+        },
+        {
+          "text": "Networks",
+          "start": 0.96,
+          "end": 1.56
+        },
+        {
+          "text": "si",
+          "start": 1.72,
+          "end": 1.8
+        },
+        {
+          "text": "dividono",
+          "start": 1.86,
+          "end": 2.24
+        },
+        {
+          "text": "in",
+          "start": 2.3,
+          "end": 2.36
+        },
+        {
+          "text": "due",
+          "start": 2.42,
+          "end": 2.62
+        },
+        {
+          "text": "grandi",
+          "start": 2.68,
+          "end": 2.98
+        },
+        {
+          "text": "famiglie:",
+          "start": 3.02,
+          "end": 3.48
+        }
+      ]
+    },
+    {
+      "start": 3.98,
+      "end": 6.101,
+      "text": "l'approccio a strati e l'approccio ricorsivo.",
+      "words": [
+        {
+          "text": "l'approccio",
+          "start": 3.98,
+          "end": 4.4
+        },
+        {
+          "text": "a",
+          "start": 4.44,
+          "end": 4.48
+        },
+        {
+          "text": "strati",
+          "start": 4.5,
+          "end": 4.86
+        },
+        {
+          "text": "e",
+          "start": 5.04,
+          "end": 5.08
+        },
+        {
+          "text": "l'approccio",
+          "start": 5.101,
+          "end": 5.501
+        },
+        {
+          "text": "ricorsivo.",
+          "start": 5.561,
+          "end": 6.101
+        }
+      ]
+    },
+    {
+      "start": 6.881,
+      "end": 11.301,
+      "text": "Iniziamo dall'approccio a strati, rappresentato da GCN e NN4G.",
+      "words": [
+        {
+          "text": "Iniziamo",
+          "start": 6.881,
+          "end": 7.301
+        },
+        {
+          "text": "dall'approccio",
+          "start": 7.341,
+          "end": 7.861
+        },
+        {
+          "text": "a",
+          "start": 7.881,
+          "end": 7.921
+        },
+        {
+          "text": "strati,",
+          "start": 7.941,
+          "end": 8.321
+        },
+        {
+          "text": "rappresentato",
+          "start": 8.361,
+          "end": 9.021
+        },
+        {
+          "text": "da",
+          "start": 9.121,
+          "end": 9.201
+        },
+        {
+          "text": "GCN",
+          "start": 9.401,
+          "end": 10.021
+        },
+        {
+          "text": "e",
+          "start": 10.281,
+          "end": 10.321
+        },
+        {
+          "text": "NN4G.",
+          "start": 10.601,
+          "end": 11.301
+        }
+      ]
+    },
+    {
+      "start": 12.021,
+      "end": 16.062,
+      "text": "Qui ogni iterazione del message passing corrisponde a un nuovo strato della rete,",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 12.021,
+          "end": 12.141
+        },
+        {
+          "text": "ogni",
+          "start": 12.321,
+          "end": 12.521
+        },
+        {
+          "text": "iterazione",
+          "start": 12.581,
+          "end": 13.121
+        },
+        {
+          "text": "del",
+          "start": 13.161,
+          "end": 13.261
+        },
+        {
+          "text": "message",
+          "start": 13.301,
+          "end": 13.641
+        },
+        {
+          "text": "passing",
+          "start": 13.661,
+          "end": 14.061
+        },
+        {
+          "text": "corrisponde",
+          "start": 14.201,
+          "end": 14.741
+        },
+        {
+          "text": "a",
+          "start": 14.781,
+          "end": 14.821
+        },
+        {
+          "text": "un",
+          "start": 14.821,
+          "end": 14.901
+        },
+        {
+          "text": "nuovo",
+          "start": 14.941,
+          "end": 15.201
+        },
+        {
+          "text": "strato",
+          "start": 15.261,
+          "end": 15.561
+        },
+        {
+          "text": "della",
+          "start": 15.602,
+          "end": 15.762
+        },
+        {
+          "text": "rete,",
+          "start": 15.822,
+          "end": 16.062
+        }
+      ]
+    },
+    {
+      "start": 16.342,
+      "end": 18.162,
+      "text": "dotato di pesi propri e distinti.",
+      "words": [
+        {
+          "text": "dotato",
+          "start": 16.342,
+          "end": 16.642
+        },
+        {
+          "text": "di",
+          "start": 16.682,
+          "end": 16.762
+        },
+        {
+          "text": "pesi",
+          "start": 16.802,
+          "end": 17.022
+        },
+        {
+          "text": "propri",
+          "start": 17.082,
+          "end": 17.382
+        },
+        {
+          "text": "e",
+          "start": 17.582,
+          "end": 17.622
+        },
+        {
+          "text": "distinti.",
+          "start": 17.662,
+          "end": 18.162
+        }
+      ]
+    },
+    {
+      "start": 18.782,
+      "end": 22.562,
+      "text": "Il contesto di ciascun nodo si compone progressivamente attraverso gli strati,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 18.782,
+          "end": 18.862
+        },
+        {
+          "text": "contesto",
+          "start": 18.922,
+          "end": 19.402
+        },
+        {
+          "text": "di",
+          "start": 19.462,
+          "end": 19.522
+        },
+        {
+          "text": "ciascun",
+          "start": 19.582,
+          "end": 19.942
+        },
+        {
+          "text": "nodo",
+          "start": 20.002,
+          "end": 20.262
+        },
+        {
+          "text": "si",
+          "start": 20.342,
+          "end": 20.402
+        },
+        {
+          "text": "compone",
+          "start": 20.462,
+          "end": 20.802
+        },
+        {
+          "text": "progressivamente",
+          "start": 20.862,
+          "end": 21.582
+        },
+        {
+          "text": "attraverso",
+          "start": 21.602,
+          "end": 22.022
+        },
+        {
+          "text": "gli",
+          "start": 22.042,
+          "end": 22.182
+        },
+        {
+          "text": "strati,",
+          "start": 22.222,
+          "end": 22.562
+        }
+      ]
+    },
+    {
+      "start": 22.902,
+      "end": 28.683,
+      "text": "estendendo il campo recettivo passo dopo passo, e addestrando il modello si impara direttamente come",
+      "words": [
+        {
+          "text": "estendendo",
+          "start": 22.902,
+          "end": 23.462
+        },
+        {
+          "text": "il",
+          "start": 23.502,
+          "end": 23.582
+        },
+        {
+          "text": "campo",
+          "start": 23.622,
+          "end": 23.902
+        },
+        {
+          "text": "recettivo",
+          "start": 23.942,
+          "end": 24.462
+        },
+        {
+          "text": "passo",
+          "start": 24.622,
+          "end": 25.002
+        },
+        {
+          "text": "dopo",
+          "start": 25.062,
+          "end": 25.242
+        },
+        {
+          "text": "passo,",
+          "start": 25.282,
+          "end": 25.642
+        },
+        {
+          "text": "e",
+          "start": 26.062,
+          "end": 26.102
+        },
+        {
+          "text": "addestrando",
+          "start": 26.163,
+          "end": 26.623
+        },
+        {
+          "text": "il",
+          "start": 26.643,
+          "end": 26.703
+        },
+        {
+          "text": "modello",
+          "start": 26.723,
+          "end": 27.043
+        },
+        {
+          "text": "si",
+          "start": 27.103,
+          "end": 27.163
+        },
+        {
+          "text": "impara",
+          "start": 27.203,
+          "end": 27.463
+        },
+        {
+          "text": "direttamente",
+          "start": 27.563,
+          "end": 28.323
+        },
+        {
+          "text": "come",
+          "start": 28.463,
+          "end": 28.683
+        }
+      ]
+    },
+    {
+      "start": 28.743,
+      "end": 29.703,
+      "text": "rappresentare il grafo.",
+      "words": [
+        {
+          "text": "rappresentare",
+          "start": 28.743,
+          "end": 29.283
+        },
+        {
+          "text": "il",
+          "start": 29.323,
+          "end": 29.363
+        },
+        {
+          "text": "grafo.",
+          "start": 29.403,
+          "end": 29.703
+        }
+      ]
+    },
+    {
+      "start": 30.503,
+      "end": 33.323,
+      "text": "C'è però una differenza chiave nella modalità di addestramento:",
+      "words": [
+        {
+          "text": "C'è",
+          "start": 30.503,
+          "end": 30.583
+        },
+        {
+          "text": "però",
+          "start": 30.623,
+          "end": 30.743
+        },
+        {
+          "text": "una",
+          "start": 30.803,
+          "end": 30.923
+        },
+        {
+          "text": "differenza",
+          "start": 30.963,
+          "end": 31.423
+        },
+        {
+          "text": "chiave",
+          "start": 31.483,
+          "end": 31.823
+        },
+        {
+          "text": "nella",
+          "start": 31.923,
+          "end": 32.103
+        },
+        {
+          "text": "modalità",
+          "start": 32.143,
+          "end": 32.503
+        },
+        {
+          "text": "di",
+          "start": 32.563,
+          "end": 32.623
+        },
+        {
+          "text": "addestramento:",
+          "start": 32.643,
+          "end": 33.323
+        }
+      ]
+    },
+    {
+      "start": 33.803,
+      "end": 38.824,
+      "text": "le GCN vengono addestrate end-to-end con backpropagation attraverso tutti gli strati,",
+      "words": [
+        {
+          "text": "le",
+          "start": 33.803,
+          "end": 33.883
+        },
+        {
+          "text": "GCN",
+          "start": 33.943,
+          "end": 34.403
+        },
+        {
+          "text": "vengono",
+          "start": 34.603,
+          "end": 34.863
+        },
+        {
+          "text": "addestrate",
+          "start": 34.903,
+          "end": 35.423
+        },
+        {
+          "text": "end-to-end",
+          "start": 35.583,
+          "end": 36.143
+        },
+        {
+          "text": "con",
+          "start": 36.263,
+          "end": 36.423
+        },
+        {
+          "text": "backpropagation",
+          "start": 36.483,
+          "end": 37.284
+        },
+        {
+          "text": "attraverso",
+          "start": 37.344,
+          "end": 37.784
+        },
+        {
+          "text": "tutti",
+          "start": 37.924,
+          "end": 38.204
+        },
+        {
+          "text": "gli",
+          "start": 38.244,
+          "end": 38.404
+        },
+        {
+          "text": "strati,",
+          "start": 38.464,
+          "end": 38.824
+        }
+      ]
+    },
+    {
+      "start": 39.264,
+      "end": 45.444,
+      "text": "mentre NN4G, Neural Network for Graphs, si costruisce strato per strato in modo incrementale.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 39.264,
+          "end": 39.544
+        },
+        {
+          "text": "NN4G,",
+          "start": 39.784,
+          "end": 40.424
+        },
+        {
+          "text": "Neural",
+          "start": 40.724,
+          "end": 41.044
+        },
+        {
+          "text": "Network",
+          "start": 41.084,
+          "end": 41.484
+        },
+        {
+          "text": "for",
+          "start": 41.544,
+          "end": 41.684
+        },
+        {
+          "text": "Graphs,",
+          "start": 41.724,
+          "end": 42.064
+        },
+        {
+          "text": "si",
+          "start": 42.504,
+          "end": 42.584
+        },
+        {
+          "text": "costruisce",
+          "start": 42.624,
+          "end": 43.144
+        },
+        {
+          "text": "strato",
+          "start": 43.284,
+          "end": 43.664
+        },
+        {
+          "text": "per",
+          "start": 43.724,
+          "end": 43.844
+        },
+        {
+          "text": "strato",
+          "start": 43.924,
+          "end": 44.304
+        },
+        {
+          "text": "in",
+          "start": 44.504,
+          "end": 44.564
+        },
+        {
+          "text": "modo",
+          "start": 44.624,
+          "end": 44.804
+        },
+        {
+          "text": "incrementale.",
+          "start": 44.824,
+          "end": 45.444
+        }
+      ]
+    },
+    {
+      "start": 46.344,
+      "end": 51.505,
+      "text": "Vediamo le equazioni di NN4G, che calcola uno stato scalare per ogni strato e ogni",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 46.344,
+          "end": 46.624
+        },
+        {
+          "text": "le",
+          "start": 46.744,
+          "end": 46.804
+        },
+        {
+          "text": "equazioni",
+          "start": 46.824,
+          "end": 47.325
+        },
+        {
+          "text": "di",
+          "start": 47.425,
+          "end": 47.505
+        },
+        {
+          "text": "NN4G,",
+          "start": 47.725,
+          "end": 48.325
+        },
+        {
+          "text": "che",
+          "start": 48.705,
+          "end": 48.785
+        },
+        {
+          "text": "calcola",
+          "start": 48.865,
+          "end": 49.205
+        },
+        {
+          "text": "uno",
+          "start": 49.285,
+          "end": 49.405
+        },
+        {
+          "text": "stato",
+          "start": 49.465,
+          "end": 49.725
+        },
+        {
+          "text": "scalare",
+          "start": 49.805,
+          "end": 50.185
+        },
+        {
+          "text": "per",
+          "start": 50.225,
+          "end": 50.345
+        },
+        {
+          "text": "ogni",
+          "start": 50.385,
+          "end": 50.545
+        },
+        {
+          "text": "strato",
+          "start": 50.625,
+          "end": 51.025
+        },
+        {
+          "text": "e",
+          "start": 51.185,
+          "end": 51.225
+        },
+        {
+          "text": "ogni",
+          "start": 51.305,
+          "end": 51.505
+        }
+      ]
+    },
+    {
+      "start": 51.585,
+      "end": 55.505,
+      "text": "nodo, ponendo x con v zero uguale uno per includere il bias.",
+      "words": [
+        {
+          "text": "nodo,",
+          "start": 51.585,
+          "end": 51.865
+        },
+        {
+          "text": "ponendo",
+          "start": 51.965,
+          "end": 52.345
+        },
+        {
+          "text": "x",
+          "start": 52.665,
+          "end": 52.705
+        },
+        {
+          "text": "con",
+          "start": 52.945,
+          "end": 53.105
+        },
+        {
+          "text": "v",
+          "start": 53.185,
+          "end": 53.225
+        },
+        {
+          "text": "zero",
+          "start": 53.445,
+          "end": 53.705
+        },
+        {
+          "text": "uguale",
+          "start": 53.825,
+          "end": 54.125
+        },
+        {
+          "text": "uno",
+          "start": 54.225,
+          "end": 54.405
+        },
+        {
+          "text": "per",
+          "start": 54.485,
+          "end": 54.605
+        },
+        {
+          "text": "includere",
+          "start": 54.625,
+          "end": 54.965
+        },
+        {
+          "text": "il",
+          "start": 55.005,
+          "end": 55.065
+        },
+        {
+          "text": "bias.",
+          "start": 55.105,
+          "end": 55.505
+        }
+      ]
+    },
+    {
+      "start": 56.545,
+      "end": 61.546,
+      "text": "Al primo strato: h con v all'apice uno uguale f della somma per j da",
+      "words": [
+        {
+          "text": "Al",
+          "start": 56.545,
+          "end": 56.625
+        },
+        {
+          "text": "primo",
+          "start": 56.645,
+          "end": 56.845
+        },
+        {
+          "text": "strato:",
+          "start": 56.905,
+          "end": 57.205
+        },
+        {
+          "text": "h",
+          "start": 57.946,
+          "end": 57.986
+        },
+        {
+          "text": "con",
+          "start": 58.086,
+          "end": 58.226
+        },
+        {
+          "text": "v",
+          "start": 58.266,
+          "end": 58.306
+        },
+        {
+          "text": "all'apice",
+          "start": 58.446,
+          "end": 58.946
+        },
+        {
+          "text": "uno",
+          "start": 59.046,
+          "end": 59.206
+        },
+        {
+          "text": "uguale",
+          "start": 59.306,
+          "end": 59.666
+        },
+        {
+          "text": "f",
+          "start": 60.146,
+          "end": 60.186
+        },
+        {
+          "text": "della",
+          "start": 60.426,
+          "end": 60.606
+        },
+        {
+          "text": "somma",
+          "start": 60.666,
+          "end": 60.926
+        },
+        {
+          "text": "per",
+          "start": 60.986,
+          "end": 61.126
+        },
+        {
+          "text": "j",
+          "start": 61.226,
+          "end": 61.266
+        },
+        {
+          "text": "da",
+          "start": 61.486,
+          "end": 61.546
+        }
+      ]
+    },
+    {
+      "start": 61.626,
+      "end": 65.406,
+      "text": "zero a n di w soprassegnato uno j per x con v j,",
+      "words": [
+        {
+          "text": "zero",
+          "start": 61.626,
+          "end": 61.826
+        },
+        {
+          "text": "a",
+          "start": 61.866,
+          "end": 61.906
+        },
+        {
+          "text": "n",
+          "start": 62.146,
+          "end": 62.186
+        },
+        {
+          "text": "di",
+          "start": 62.566,
+          "end": 62.766
+        },
+        {
+          "text": "w",
+          "start": 62.906,
+          "end": 62.946
+        },
+        {
+          "text": "soprassegnato",
+          "start": 63.066,
+          "end": 63.726
+        },
+        {
+          "text": "uno",
+          "start": 63.826,
+          "end": 63.946
+        },
+        {
+          "text": "j",
+          "start": 64.026,
+          "end": 64.066
+        },
+        {
+          "text": "per",
+          "start": 64.306,
+          "end": 64.446
+        },
+        {
+          "text": "x",
+          "start": 64.766,
+          "end": 64.80600000000001
+        },
+        {
+          "text": "con",
+          "start": 65.046,
+          "end": 65.186
+        },
+        {
+          "text": "v",
+          "start": 65.226,
+          "end": 65.266
+        },
+        {
+          "text": "j,",
+          "start": 65.366,
+          "end": 65.406
+        }
+      ]
+    },
+    {
+      "start": 65.986,
+      "end": 68.066,
+      "text": "usando quindi solo l'etichetta locale del nodo.",
+      "words": [
+        {
+          "text": "usando",
+          "start": 65.986,
+          "end": 66.266
+        },
+        {
+          "text": "quindi",
+          "start": 66.326,
+          "end": 66.546
+        },
+        {
+          "text": "solo",
+          "start": 66.646,
+          "end": 66.846
+        },
+        {
+          "text": "l'etichetta",
+          "start": 66.866,
+          "end": 67.306
+        },
+        {
+          "text": "locale",
+          "start": 67.346,
+          "end": 67.626
+        },
+        {
+          "text": "del",
+          "start": 67.666,
+          "end": 67.766
+        },
+        {
+          "text": "nodo.",
+          "start": 67.826,
+          "end": 68.066
+        }
+      ]
+    },
+    {
+      "start": 69.047,
+      "end": 70.387,
+      "text": "Dallo strato due fino a L:",
+      "words": [
+        {
+          "text": "Dallo",
+          "start": 69.047,
+          "end": 69.227
+        },
+        {
+          "text": "strato",
+          "start": 69.267,
+          "end": 69.507
+        },
+        {
+          "text": "due",
+          "start": 69.567,
+          "end": 69.727
+        },
+        {
+          "text": "fino",
+          "start": 69.887,
+          "end": 70.087
+        },
+        {
+          "text": "a",
+          "start": 70.127,
+          "end": 70.167
+        },
+        {
+          "text": "L:",
+          "start": 70.347,
+          "end": 70.387
+        }
+      ]
+    },
+    {
+      "start": 71.127,
+      "end": 75.367,
+      "text": "h con v all'apice l è uguale a f della somma dell'etichetta locale di v,",
+      "words": [
+        {
+          "text": "h",
+          "start": 71.127,
+          "end": 71.167
+        },
+        {
+          "text": "con",
+          "start": 71.247,
+          "end": 71.407
+        },
+        {
+          "text": "v",
+          "start": 71.467,
+          "end": 71.507
+        },
+        {
+          "text": "all'apice",
+          "start": 71.687,
+          "end": 72.147
+        },
+        {
+          "text": "l",
+          "start": 72.387,
+          "end": 72.427
+        },
+        {
+          "text": "è",
+          "start": 72.687,
+          "end": 72.727
+        },
+        {
+          "text": "uguale",
+          "start": 72.787,
+          "end": 73.087
+        },
+        {
+          "text": "a",
+          "start": 73.147,
+          "end": 73.18700000000001
+        },
+        {
+          "text": "f",
+          "start": 73.467,
+          "end": 73.507
+        },
+        {
+          "text": "della",
+          "start": 73.727,
+          "end": 73.907
+        },
+        {
+          "text": "somma",
+          "start": 73.967,
+          "end": 74.207
+        },
+        {
+          "text": "dell'etichetta",
+          "start": 74.247,
+          "end": 74.827
+        },
+        {
+          "text": "locale",
+          "start": 74.867,
+          "end": 75.127
+        },
+        {
+          "text": "di",
+          "start": 75.167,
+          "end": 75.247
+        },
+        {
+          "text": "v,",
+          "start": 75.327,
+          "end": 75.367
+        }
+      ]
+    },
+    {
+      "start": 75.887,
+      "end": 79.528,
+      "text": "più la somma su tutti gli strati precedenti i da uno a l meno uno",
+      "words": [
+        {
+          "text": "più",
+          "start": 75.887,
+          "end": 75.987
+        },
+        {
+          "text": "la",
+          "start": 76.047,
+          "end": 76.107
+        },
+        {
+          "text": "somma",
+          "start": 76.147,
+          "end": 76.387
+        },
+        {
+          "text": "su",
+          "start": 76.467,
+          "end": 76.547
+        },
+        {
+          "text": "tutti",
+          "start": 76.647,
+          "end": 76.887
+        },
+        {
+          "text": "gli",
+          "start": 76.907,
+          "end": 77.027
+        },
+        {
+          "text": "strati",
+          "start": 77.067,
+          "end": 77.347
+        },
+        {
+          "text": "precedenti",
+          "start": 77.387,
+          "end": 77.987
+        },
+        {
+          "text": "i",
+          "start": 78.207,
+          "end": 78.247
+        },
+        {
+          "text": "da",
+          "start": 78.447,
+          "end": 78.507
+        },
+        {
+          "text": "uno",
+          "start": 78.607,
+          "end": 78.767
+        },
+        {
+          "text": "a",
+          "start": 78.788,
+          "end": 78.828
+        },
+        {
+          "text": "l",
+          "start": 78.948,
+          "end": 78.988
+        },
+        {
+          "text": "meno",
+          "start": 79.068,
+          "end": 79.248
+        },
+        {
+          "text": "uno",
+          "start": 79.368,
+          "end": 79.528
+        }
+      ]
+    },
+    {
+      "start": 79.848,
+      "end": 84.56800000000001,
+      "text": "di w cappello l i per la somma degli stati h con u all'apice i",
+      "words": [
+        {
+          "text": "di",
+          "start": 79.848,
+          "end": 79.908
+        },
+        {
+          "text": "w",
+          "start": 80.248,
+          "end": 80.28800000000001
+        },
+        {
+          "text": "cappello",
+          "start": 80.368,
+          "end": 80.848
+        },
+        {
+          "text": "l",
+          "start": 81.188,
+          "end": 81.22800000000001
+        },
+        {
+          "text": "i",
+          "start": 81.468,
+          "end": 81.50800000000001
+        },
+        {
+          "text": "per",
+          "start": 81.968,
+          "end": 82.108
+        },
+        {
+          "text": "la",
+          "start": 82.168,
+          "end": 82.228
+        },
+        {
+          "text": "somma",
+          "start": 82.288,
+          "end": 82.528
+        },
+        {
+          "text": "degli",
+          "start": 82.568,
+          "end": 82.768
+        },
+        {
+          "text": "stati",
+          "start": 82.808,
+          "end": 83.108
+        },
+        {
+          "text": "h",
+          "start": 83.508,
+          "end": 83.548
+        },
+        {
+          "text": "con",
+          "start": 83.648,
+          "end": 83.788
+        },
+        {
+          "text": "u",
+          "start": 83.848,
+          "end": 83.888
+        },
+        {
+          "text": "all'apice",
+          "start": 84.008,
+          "end": 84.448
+        },
+        {
+          "text": "i",
+          "start": 84.528,
+          "end": 84.56800000000001
+        }
+      ]
+    },
+    {
+      "start": 84.788,
+      "end": 85.968,
+      "text": "dei vicini u di v.",
+      "words": [
+        {
+          "text": "dei",
+          "start": 84.788,
+          "end": 84.908
+        },
+        {
+          "text": "vicini",
+          "start": 84.928,
+          "end": 85.268
+        },
+        {
+          "text": "u",
+          "start": 85.488,
+          "end": 85.528
+        },
+        {
+          "text": "di",
+          "start": 85.768,
+          "end": 85.848
+        },
+        {
+          "text": "v.",
+          "start": 85.928,
+          "end": 85.968
+        }
+      ]
+    },
+    {
+      "start": 86.948,
+      "end": 88.348,
+      "text": "Notate la bellezza costruttiva:",
+      "words": [
+        {
+          "text": "Notate",
+          "start": 86.948,
+          "end": 87.268
+        },
+        {
+          "text": "la",
+          "start": 87.308,
+          "end": 87.368
+        },
+        {
+          "text": "bellezza",
+          "start": 87.388,
+          "end": 87.728
+        },
+        {
+          "text": "costruttiva:",
+          "start": 87.788,
+          "end": 88.348
+        }
+      ]
+    },
+    {
+      "start": 88.988,
+      "end": 94.729,
+      "text": "NN4G non è ricorsiva, perché ogni strato legge soltanto gli stati già fissati degli strati",
+      "words": [
+        {
+          "text": "NN4G",
+          "start": 88.988,
+          "end": 89.609
+        },
+        {
+          "text": "non",
+          "start": 89.909,
+          "end": 90.089
+        },
+        {
+          "text": "è",
+          "start": 90.129,
+          "end": 90.16900000000001
+        },
+        {
+          "text": "ricorsiva,",
+          "start": 90.249,
+          "end": 90.809
+        },
+        {
+          "text": "perché",
+          "start": 91.069,
+          "end": 91.289
+        },
+        {
+          "text": "ogni",
+          "start": 91.329,
+          "end": 91.489
+        },
+        {
+          "text": "strato",
+          "start": 91.569,
+          "end": 91.909
+        },
+        {
+          "text": "legge",
+          "start": 91.969,
+          "end": 92.209
+        },
+        {
+          "text": "soltanto",
+          "start": 92.269,
+          "end": 92.749
+        },
+        {
+          "text": "gli",
+          "start": 92.789,
+          "end": 92.909
+        },
+        {
+          "text": "stati",
+          "start": 92.969,
+          "end": 93.269
+        },
+        {
+          "text": "già",
+          "start": 93.409,
+          "end": 93.509
+        },
+        {
+          "text": "fissati",
+          "start": 93.649,
+          "end": 94.189
+        },
+        {
+          "text": "degli",
+          "start": 94.229,
+          "end": 94.429
+        },
+        {
+          "text": "strati",
+          "start": 94.469,
+          "end": 94.729
+        }
+      ]
+    },
+    {
+      "start": 94.769,
+      "end": 95.309,
+      "text": "precedenti.",
+      "words": [
+        {
+          "text": "precedenti.",
+          "start": 94.769,
+          "end": 95.309
+        }
+      ]
+    },
+    {
+      "start": 95.949,
+      "end": 99.669,
+      "text": "Le unità si aggiungono una alla volta in stile Cascade Correlation:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 95.949,
+          "end": 96.009
+        },
+        {
+          "text": "unità",
+          "start": 96.049,
+          "end": 96.289
+        },
+        {
+          "text": "si",
+          "start": 96.369,
+          "end": 96.429
+        },
+        {
+          "text": "aggiungono",
+          "start": 96.469,
+          "end": 96.949
+        },
+        {
+          "text": "una",
+          "start": 97.129,
+          "end": 97.289
+        },
+        {
+          "text": "alla",
+          "start": 97.329,
+          "end": 97.489
+        },
+        {
+          "text": "volta",
+          "start": 97.529,
+          "end": 97.869
+        },
+        {
+          "text": "in",
+          "start": 98.169,
+          "end": 98.249
+        },
+        {
+          "text": "stile",
+          "start": 98.289,
+          "end": 98.549
+        },
+        {
+          "text": "Cascade",
+          "start": 98.629,
+          "end": 99.069
+        },
+        {
+          "text": "Correlation:",
+          "start": 99.069,
+          "end": 99.669
+        }
+      ]
+    },
+    {
+      "start": 100.13,
+      "end": 103.31,
+      "text": "il numero di strati viene determinato automaticamente dal problema,",
+      "words": [
+        {
+          "text": "il",
+          "start": 100.13,
+          "end": 100.21
+        },
+        {
+          "text": "numero",
+          "start": 100.25,
+          "end": 100.51
+        },
+        {
+          "text": "di",
+          "start": 100.55,
+          "end": 100.61
+        },
+        {
+          "text": "strati",
+          "start": 100.65,
+          "end": 100.95
+        },
+        {
+          "text": "viene",
+          "start": 100.99,
+          "end": 101.19
+        },
+        {
+          "text": "determinato",
+          "start": 101.23,
+          "end": 101.79
+        },
+        {
+          "text": "automaticamente",
+          "start": 101.89,
+          "end": 102.67
+        },
+        {
+          "text": "dal",
+          "start": 102.73,
+          "end": 102.85
+        },
+        {
+          "text": "problema,",
+          "start": 102.89,
+          "end": 103.31
+        }
+      ]
+    },
+    {
+      "start": 103.71,
+      "end": 108.21,
+      "text": "non c'è vanishing gradient attraverso gli strati, e le uscite di tutti gli strati vengono",
+      "words": [
+        {
+          "text": "non",
+          "start": 103.71,
+          "end": 103.85
+        },
+        {
+          "text": "c'è",
+          "start": 103.89,
+          "end": 104.01
+        },
+        {
+          "text": "vanishing",
+          "start": 104.11,
+          "end": 104.53
+        },
+        {
+          "text": "gradient",
+          "start": 104.55,
+          "end": 104.95
+        },
+        {
+          "text": "attraverso",
+          "start": 105.01,
+          "end": 105.41
+        },
+        {
+          "text": "gli",
+          "start": 105.45,
+          "end": 105.57
+        },
+        {
+          "text": "strati,",
+          "start": 105.61,
+          "end": 105.97
+        },
+        {
+          "text": "e",
+          "start": 106.39,
+          "end": 106.43
+        },
+        {
+          "text": "le",
+          "start": 106.49,
+          "end": 106.55
+        },
+        {
+          "text": "uscite",
+          "start": 106.59,
+          "end": 106.91
+        },
+        {
+          "text": "di",
+          "start": 106.97,
+          "end": 107.05
+        },
+        {
+          "text": "tutti",
+          "start": 107.13,
+          "end": 107.37
+        },
+        {
+          "text": "gli",
+          "start": 107.41,
+          "end": 107.53
+        },
+        {
+          "text": "strati",
+          "start": 107.57,
+          "end": 107.91
+        },
+        {
+          "text": "vengono",
+          "start": 107.95,
+          "end": 108.21
+        }
+      ]
+    },
+    {
+      "start": 108.23,
+      "end": 110.991,
+      "text": "infine combinate per produrre il risultato sul grafo.",
+      "words": [
+        {
+          "text": "infine",
+          "start": 108.23,
+          "end": 108.49
+        },
+        {
+          "text": "combinate",
+          "start": 108.57,
+          "end": 109.17
+        },
+        {
+          "text": "per",
+          "start": 109.27,
+          "end": 109.39
+        },
+        {
+          "text": "produrre",
+          "start": 109.43,
+          "end": 109.81
+        },
+        {
+          "text": "il",
+          "start": 109.85,
+          "end": 109.91
+        },
+        {
+          "text": "risultato",
+          "start": 109.99,
+          "end": 110.471
+        },
+        {
+          "text": "sul",
+          "start": 110.531,
+          "end": 110.651
+        },
+        {
+          "text": "grafo.",
+          "start": 110.711,
+          "end": 110.991
+        }
+      ]
+    }
+  ]
+}

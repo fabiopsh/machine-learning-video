@@ -1,0 +1,1468 @@
+{
+  "duration": 96.547,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.34,
+      "text": "Estendiamo la convoluzione alle immagini bidimensionali.",
+      "words": [
+        {
+          "text": "Estendiamo",
+          "start": 0.08,
+          "end": 0.58
+        },
+        {
+          "text": "la",
+          "start": 0.66,
+          "end": 0.74
+        },
+        {
+          "text": "convoluzione",
+          "start": 0.84,
+          "end": 1.64
+        },
+        {
+          "text": "alle",
+          "start": 1.8,
+          "end": 1.96
+        },
+        {
+          "text": "immagini",
+          "start": 2.02,
+          "end": 2.42
+        },
+        {
+          "text": "bidimensionali.",
+          "start": 2.5,
+          "end": 3.34
+        }
+      ]
+    },
+    {
+      "start": 3.94,
+      "end": 6.881,
+      "text": "Prima una precisazione fondamentale sul termine kernel:",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 3.94,
+          "end": 4.2
+        },
+        {
+          "text": "una",
+          "start": 4.26,
+          "end": 4.38
+        },
+        {
+          "text": "precisazione",
+          "start": 4.44,
+          "end": 5.021
+        },
+        {
+          "text": "fondamentale",
+          "start": 5.061,
+          "end": 5.641
+        },
+        {
+          "text": "sul",
+          "start": 5.701,
+          "end": 5.821
+        },
+        {
+          "text": "termine",
+          "start": 5.881,
+          "end": 6.221
+        },
+        {
+          "text": "kernel:",
+          "start": 6.321,
+          "end": 6.881
+        }
+      ]
+    },
+    {
+      "start": 7.481,
+      "end": 12.761,
+      "text": "nelle CNN indica il filtro della convoluzione, cioè una piccola matrice di pesi,",
+      "words": [
+        {
+          "text": "nelle",
+          "start": 7.481,
+          "end": 7.721
+        },
+        {
+          "text": "CNN",
+          "start": 7.801,
+          "end": 8.421
+        },
+        {
+          "text": "indica",
+          "start": 8.761,
+          "end": 9.061
+        },
+        {
+          "text": "il",
+          "start": 9.141,
+          "end": 9.241
+        },
+        {
+          "text": "filtro",
+          "start": 9.341,
+          "end": 9.761
+        },
+        {
+          "text": "della",
+          "start": 9.821,
+          "end": 10.021
+        },
+        {
+          "text": "convoluzione,",
+          "start": 10.081,
+          "end": 10.901
+        },
+        {
+          "text": "cioè",
+          "start": 11.081,
+          "end": 11.201
+        },
+        {
+          "text": "una",
+          "start": 11.321,
+          "end": 11.441
+        },
+        {
+          "text": "piccola",
+          "start": 11.581,
+          "end": 11.941
+        },
+        {
+          "text": "matrice",
+          "start": 11.981,
+          "end": 12.321
+        },
+        {
+          "text": "di",
+          "start": 12.361,
+          "end": 12.421
+        },
+        {
+          "text": "pesi,",
+          "start": 12.481,
+          "end": 12.761
+        }
+      ]
+    },
+    {
+      "start": 13.261,
+      "end": 16.962,
+      "text": "e non ha nulla a che vedere con il kernel di similarità delle SVM.",
+      "words": [
+        {
+          "text": "e",
+          "start": 13.261,
+          "end": 13.301
+        },
+        {
+          "text": "non",
+          "start": 13.321,
+          "end": 13.441
+        },
+        {
+          "text": "ha",
+          "start": 13.461,
+          "end": 13.521
+        },
+        {
+          "text": "nulla",
+          "start": 13.601,
+          "end": 13.841
+        },
+        {
+          "text": "a",
+          "start": 13.861,
+          "end": 13.901
+        },
+        {
+          "text": "che",
+          "start": 13.921,
+          "end": 14.001
+        },
+        {
+          "text": "vedere",
+          "start": 14.041,
+          "end": 14.382
+        },
+        {
+          "text": "con",
+          "start": 14.422,
+          "end": 14.542
+        },
+        {
+          "text": "il",
+          "start": 14.582,
+          "end": 14.662
+        },
+        {
+          "text": "kernel",
+          "start": 14.702,
+          "end": 15.062
+        },
+        {
+          "text": "di",
+          "start": 15.142,
+          "end": 15.202
+        },
+        {
+          "text": "similarità",
+          "start": 15.282,
+          "end": 15.902
+        },
+        {
+          "text": "delle",
+          "start": 16.042,
+          "end": 16.262
+        },
+        {
+          "text": "SVM.",
+          "start": 16.462,
+          "end": 16.962
+        }
+      ]
+    },
+    {
+      "start": 17.802,
+      "end": 21.262,
+      "text": "Su un'immagine usiamo un kernel due D, ad esempio tre per tre,",
+      "words": [
+        {
+          "text": "Su",
+          "start": 17.802,
+          "end": 17.862
+        },
+        {
+          "text": "un'immagine",
+          "start": 17.902,
+          "end": 18.542
+        },
+        {
+          "text": "usiamo",
+          "start": 18.742,
+          "end": 19.022
+        },
+        {
+          "text": "un",
+          "start": 19.062,
+          "end": 19.142
+        },
+        {
+          "text": "kernel",
+          "start": 19.182,
+          "end": 19.522
+        },
+        {
+          "text": "due",
+          "start": 19.662,
+          "end": 19.822
+        },
+        {
+          "text": "D,",
+          "start": 19.902,
+          "end": 19.942
+        },
+        {
+          "text": "ad",
+          "start": 20.342,
+          "end": 20.442
+        },
+        {
+          "text": "esempio",
+          "start": 20.462,
+          "end": 20.762
+        },
+        {
+          "text": "tre",
+          "start": 20.822,
+          "end": 20.922
+        },
+        {
+          "text": "per",
+          "start": 20.982,
+          "end": 21.082
+        },
+        {
+          "text": "tre,",
+          "start": 21.142,
+          "end": 21.262
+        }
+      ]
+    },
+    {
+      "start": 21.642,
+      "end": 24.083,
+      "text": "che definisce il campo recettivo locale del neurone.",
+      "words": [
+        {
+          "text": "che",
+          "start": 21.642,
+          "end": 21.742
+        },
+        {
+          "text": "definisce",
+          "start": 21.782,
+          "end": 22.202
+        },
+        {
+          "text": "il",
+          "start": 22.242,
+          "end": 22.302
+        },
+        {
+          "text": "campo",
+          "start": 22.342,
+          "end": 22.602
+        },
+        {
+          "text": "recettivo",
+          "start": 22.642,
+          "end": 23.082
+        },
+        {
+          "text": "locale",
+          "start": 23.122,
+          "end": 23.462
+        },
+        {
+          "text": "del",
+          "start": 23.502,
+          "end": 23.602
+        },
+        {
+          "text": "neurone.",
+          "start": 23.642,
+          "end": 24.083
+        }
+      ]
+    },
+    {
+      "start": 24.463,
+      "end": 28.583,
+      "text": "Il kernel si sposta di un pixel alla volta — stride uno — e percorrendo",
+      "words": [
+        {
+          "text": "Il",
+          "start": 24.463,
+          "end": 24.563
+        },
+        {
+          "text": "kernel",
+          "start": 24.623,
+          "end": 25.023
+        },
+        {
+          "text": "si",
+          "start": 25.083,
+          "end": 25.163
+        },
+        {
+          "text": "sposta",
+          "start": 25.203,
+          "end": 25.503
+        },
+        {
+          "text": "di",
+          "start": 25.543,
+          "end": 25.603
+        },
+        {
+          "text": "un",
+          "start": 25.623,
+          "end": 25.703
+        },
+        {
+          "text": "pixel",
+          "start": 25.723,
+          "end": 26.063
+        },
+        {
+          "text": "alla",
+          "start": 26.083,
+          "end": 26.203
+        },
+        {
+          "text": "volta",
+          "start": 26.223,
+          "end": 26.563
+        },
+        {
+          "text": "—",
+          "start": 26.563,
+          "end": 26.713
+        },
+        {
+          "text": "stride",
+          "start": 26.943,
+          "end": 27.283
+        },
+        {
+          "text": "uno",
+          "start": 27.483,
+          "end": 27.663
+        },
+        {
+          "text": "—",
+          "start": 27.663,
+          "end": 27.813
+        },
+        {
+          "text": "e",
+          "start": 27.963,
+          "end": 28.003
+        },
+        {
+          "text": "percorrendo",
+          "start": 28.083,
+          "end": 28.583
+        }
+      ]
+    },
+    {
+      "start": 28.623,
+      "end": 32.943,
+      "text": "l'immagine produce una feature map, cioè le feature estratte da quel filtro.",
+      "words": [
+        {
+          "text": "l'immagine",
+          "start": 28.623,
+          "end": 29.103
+        },
+        {
+          "text": "produce",
+          "start": 29.163,
+          "end": 29.483
+        },
+        {
+          "text": "una",
+          "start": 29.523,
+          "end": 29.643
+        },
+        {
+          "text": "feature",
+          "start": 29.703,
+          "end": 30.003
+        },
+        {
+          "text": "map,",
+          "start": 30.043,
+          "end": 30.283
+        },
+        {
+          "text": "cioè",
+          "start": 30.683,
+          "end": 30.843
+        },
+        {
+          "text": "le",
+          "start": 31.023,
+          "end": 31.103
+        },
+        {
+          "text": "feature",
+          "start": 31.163,
+          "end": 31.503
+        },
+        {
+          "text": "estratte",
+          "start": 31.643,
+          "end": 32.223
+        },
+        {
+          "text": "da",
+          "start": 32.263,
+          "end": 32.343
+        },
+        {
+          "text": "quel",
+          "start": 32.403,
+          "end": 32.543
+        },
+        {
+          "text": "filtro.",
+          "start": 32.603,
+          "end": 32.943
+        }
+      ]
+    },
+    {
+      "start": 33.743,
+      "end": 38.123,
+      "text": "Osserviamo l'esempio visivo: un input tre per quattro con un kernel due per due di",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 33.743,
+          "end": 34.163
+        },
+        {
+          "text": "l'esempio",
+          "start": 34.183,
+          "end": 34.543
+        },
+        {
+          "text": "visivo:",
+          "start": 34.583,
+          "end": 34.903
+        },
+        {
+          "text": "un",
+          "start": 35.283,
+          "end": 35.363
+        },
+        {
+          "text": "input",
+          "start": 35.423,
+          "end": 35.723
+        },
+        {
+          "text": "tre",
+          "start": 35.883,
+          "end": 35.983
+        },
+        {
+          "text": "per",
+          "start": 36.063,
+          "end": 36.183
+        },
+        {
+          "text": "quattro",
+          "start": 36.243,
+          "end": 36.643
+        },
+        {
+          "text": "con",
+          "start": 36.703,
+          "end": 36.823
+        },
+        {
+          "text": "un",
+          "start": 36.863,
+          "end": 36.943
+        },
+        {
+          "text": "kernel",
+          "start": 36.983,
+          "end": 37.363
+        },
+        {
+          "text": "due",
+          "start": 37.523,
+          "end": 37.663
+        },
+        {
+          "text": "per",
+          "start": 37.703,
+          "end": 37.823
+        },
+        {
+          "text": "due",
+          "start": 37.883,
+          "end": 38.023
+        },
+        {
+          "text": "di",
+          "start": 38.063,
+          "end": 38.123
+        }
+      ]
+    },
+    {
+      "start": 38.163,
+      "end": 40.423,
+      "text": "pesi w, x, y e z,",
+      "words": [
+        {
+          "text": "pesi",
+          "start": 38.163,
+          "end": 38.403
+        },
+        {
+          "text": "w,",
+          "start": 38.483,
+          "end": 38.523
+        },
+        {
+          "text": "x,",
+          "start": 39.343,
+          "end": 39.383
+        },
+        {
+          "text": "y",
+          "start": 39.903,
+          "end": 39.943
+        },
+        {
+          "text": "e",
+          "start": 40.243,
+          "end": 40.283
+        },
+        {
+          "text": "z,",
+          "start": 40.383,
+          "end": 40.423
+        }
+      ]
+    },
+    {
+      "start": 41.043,
+      "end": 42.803,
+      "text": "stride uno e senza padding.",
+      "words": [
+        {
+          "text": "stride",
+          "start": 41.043,
+          "end": 41.443
+        },
+        {
+          "text": "uno",
+          "start": 41.643,
+          "end": 41.843
+        },
+        {
+          "text": "e",
+          "start": 42.043,
+          "end": 42.083
+        },
+        {
+          "text": "senza",
+          "start": 42.143,
+          "end": 42.383
+        },
+        {
+          "text": "padding.",
+          "start": 42.423,
+          "end": 42.803
+        }
+      ]
+    },
+    {
+      "start": 43.264,
+      "end": 47.984,
+      "text": "Nella prima posizione in blu calcoliamo a w più b x più e y più",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 43.264,
+          "end": 43.444
+        },
+        {
+          "text": "prima",
+          "start": 43.484,
+          "end": 43.684
+        },
+        {
+          "text": "posizione",
+          "start": 43.724,
+          "end": 44.224
+        },
+        {
+          "text": "in",
+          "start": 44.304,
+          "end": 44.364
+        },
+        {
+          "text": "blu",
+          "start": 44.404,
+          "end": 44.524
+        },
+        {
+          "text": "calcoliamo",
+          "start": 44.684,
+          "end": 45.264
+        },
+        {
+          "text": "a",
+          "start": 45.444,
+          "end": 45.484
+        },
+        {
+          "text": "w",
+          "start": 45.564,
+          "end": 45.604
+        },
+        {
+          "text": "più",
+          "start": 45.924,
+          "end": 46.244
+        },
+        {
+          "text": "b",
+          "start": 46.304,
+          "end": 46.344
+        },
+        {
+          "text": "x",
+          "start": 46.604,
+          "end": 46.644
+        },
+        {
+          "text": "più",
+          "start": 46.864,
+          "end": 46.984
+        },
+        {
+          "text": "e",
+          "start": 47.204,
+          "end": 47.244
+        },
+        {
+          "text": "y",
+          "start": 47.604,
+          "end": 47.644
+        },
+        {
+          "text": "più",
+          "start": 47.884,
+          "end": 47.984
+        }
+      ]
+    },
+    {
+      "start": 48.184,
+      "end": 52.845,
+      "text": "f z, e scorrendo su tutte le posizioni valide otteniamo una feature map due per",
+      "words": [
+        {
+          "text": "f",
+          "start": 48.184,
+          "end": 48.224
+        },
+        {
+          "text": "z,",
+          "start": 48.344,
+          "end": 48.384
+        },
+        {
+          "text": "e",
+          "start": 49.124,
+          "end": 49.164
+        },
+        {
+          "text": "scorrendo",
+          "start": 49.244,
+          "end": 49.804
+        },
+        {
+          "text": "su",
+          "start": 49.864,
+          "end": 49.924
+        },
+        {
+          "text": "tutte",
+          "start": 50.004,
+          "end": 50.184
+        },
+        {
+          "text": "le",
+          "start": 50.224,
+          "end": 50.284
+        },
+        {
+          "text": "posizioni",
+          "start": 50.304,
+          "end": 50.724
+        },
+        {
+          "text": "valide",
+          "start": 50.764,
+          "end": 51.084
+        },
+        {
+          "text": "otteniamo",
+          "start": 51.224,
+          "end": 51.624
+        },
+        {
+          "text": "una",
+          "start": 51.664,
+          "end": 51.764
+        },
+        {
+          "text": "feature",
+          "start": 51.824,
+          "end": 52.104
+        },
+        {
+          "text": "map",
+          "start": 52.124,
+          "end": 52.304
+        },
+        {
+          "text": "due",
+          "start": 52.504,
+          "end": 52.664
+        },
+        {
+          "text": "per",
+          "start": 52.704,
+          "end": 52.845
+        }
+      ]
+    },
+    {
+      "start": 52.905,
+      "end": 53.025,
+      "text": "tre.",
+      "words": [
+        {
+          "text": "tre.",
+          "start": 52.905,
+          "end": 53.025
+        }
+      ]
+    },
+    {
+      "start": 53.825,
+      "end": 58.565,
+      "text": "Ai bordi il kernel non può centrarsi sui pixel esterni perché uscirebbe dall'immagine:",
+      "words": [
+        {
+          "text": "Ai",
+          "start": 53.825,
+          "end": 53.925
+        },
+        {
+          "text": "bordi",
+          "start": 53.965,
+          "end": 54.265
+        },
+        {
+          "text": "il",
+          "start": 54.325,
+          "end": 54.385
+        },
+        {
+          "text": "kernel",
+          "start": 54.445,
+          "end": 54.885
+        },
+        {
+          "text": "non",
+          "start": 55.005,
+          "end": 55.125
+        },
+        {
+          "text": "può",
+          "start": 55.185,
+          "end": 55.305
+        },
+        {
+          "text": "centrarsi",
+          "start": 55.405,
+          "end": 55.925
+        },
+        {
+          "text": "sui",
+          "start": 56.005,
+          "end": 56.125
+        },
+        {
+          "text": "pixel",
+          "start": 56.165,
+          "end": 56.465
+        },
+        {
+          "text": "esterni",
+          "start": 56.525,
+          "end": 56.945
+        },
+        {
+          "text": "perché",
+          "start": 56.985,
+          "end": 57.225
+        },
+        {
+          "text": "uscirebbe",
+          "start": 57.325,
+          "end": 57.845
+        },
+        {
+          "text": "dall'immagine:",
+          "start": 57.885,
+          "end": 58.565
+        }
+      ]
+    },
+    {
+      "start": 59.025,
+      "end": 61.785,
+      "text": "il padding aggiunge una cornice di valori attorno all'input.",
+      "words": [
+        {
+          "text": "il",
+          "start": 59.025,
+          "end": 59.105
+        },
+        {
+          "text": "padding",
+          "start": 59.145,
+          "end": 59.505
+        },
+        {
+          "text": "aggiunge",
+          "start": 59.545,
+          "end": 59.905
+        },
+        {
+          "text": "una",
+          "start": 59.965,
+          "end": 60.085
+        },
+        {
+          "text": "cornice",
+          "start": 60.145,
+          "end": 60.525
+        },
+        {
+          "text": "di",
+          "start": 60.565,
+          "end": 60.625
+        },
+        {
+          "text": "valori",
+          "start": 60.665,
+          "end": 60.925
+        },
+        {
+          "text": "attorno",
+          "start": 60.965,
+          "end": 61.265
+        },
+        {
+          "text": "all'input.",
+          "start": 61.305,
+          "end": 61.785
+        }
+      ]
+    },
+    {
+      "start": 62.345,
+      "end": 67.126,
+      "text": "Senza padding e con stride uno, ogni dimensione si riduce della dimensione del kernel meno",
+      "words": [
+        {
+          "text": "Senza",
+          "start": 62.345,
+          "end": 62.606
+        },
+        {
+          "text": "padding",
+          "start": 62.666,
+          "end": 63.106
+        },
+        {
+          "text": "e",
+          "start": 63.166,
+          "end": 63.206
+        },
+        {
+          "text": "con",
+          "start": 63.246,
+          "end": 63.366
+        },
+        {
+          "text": "stride",
+          "start": 63.426,
+          "end": 63.726
+        },
+        {
+          "text": "uno,",
+          "start": 63.766,
+          "end": 63.946
+        },
+        {
+          "text": "ogni",
+          "start": 64.186,
+          "end": 64.386
+        },
+        {
+          "text": "dimensione",
+          "start": 64.426,
+          "end": 64.966
+        },
+        {
+          "text": "si",
+          "start": 65.066,
+          "end": 65.146
+        },
+        {
+          "text": "riduce",
+          "start": 65.186,
+          "end": 65.486
+        },
+        {
+          "text": "della",
+          "start": 65.546,
+          "end": 65.706
+        },
+        {
+          "text": "dimensione",
+          "start": 65.726,
+          "end": 66.166
+        },
+        {
+          "text": "del",
+          "start": 66.206,
+          "end": 66.326
+        },
+        {
+          "text": "kernel",
+          "start": 66.386,
+          "end": 66.746
+        },
+        {
+          "text": "meno",
+          "start": 66.906,
+          "end": 67.126
+        }
+      ]
+    },
+    {
+      "start": 67.226,
+      "end": 71.686,
+      "text": "uno: tre meno due più uno fa due, quattro meno due più uno fa tre.",
+      "words": [
+        {
+          "text": "uno:",
+          "start": 67.226,
+          "end": 67.386
+        },
+        {
+          "text": "tre",
+          "start": 67.846,
+          "end": 67.986
+        },
+        {
+          "text": "meno",
+          "start": 68.166,
+          "end": 68.346
+        },
+        {
+          "text": "due",
+          "start": 68.406,
+          "end": 68.606
+        },
+        {
+          "text": "più",
+          "start": 68.766,
+          "end": 68.886
+        },
+        {
+          "text": "uno",
+          "start": 69.006,
+          "end": 69.186
+        },
+        {
+          "text": "fa",
+          "start": 69.326,
+          "end": 69.426
+        },
+        {
+          "text": "due,",
+          "start": 69.486,
+          "end": 69.686
+        },
+        {
+          "text": "quattro",
+          "start": 70.086,
+          "end": 70.406
+        },
+        {
+          "text": "meno",
+          "start": 70.446,
+          "end": 70.606
+        },
+        {
+          "text": "due",
+          "start": 70.666,
+          "end": 70.826
+        },
+        {
+          "text": "più",
+          "start": 70.886,
+          "end": 70.986
+        },
+        {
+          "text": "uno",
+          "start": 71.086,
+          "end": 71.246
+        },
+        {
+          "text": "fa",
+          "start": 71.406,
+          "end": 71.486
+        },
+        {
+          "text": "tre.",
+          "start": 71.566,
+          "end": 71.686
+        }
+      ]
+    },
+    {
+      "start": 72.386,
+      "end": 75.286,
+      "text": "Con stride maggiore di uno il kernel salta pixel,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 72.386,
+          "end": 72.526
+        },
+        {
+          "text": "stride",
+          "start": 72.566,
+          "end": 72.906
+        },
+        {
+          "text": "maggiore",
+          "start": 73.006,
+          "end": 73.326
+        },
+        {
+          "text": "di",
+          "start": 73.366,
+          "end": 73.426
+        },
+        {
+          "text": "uno",
+          "start": 73.506,
+          "end": 73.666
+        },
+        {
+          "text": "il",
+          "start": 74.066,
+          "end": 74.146
+        },
+        {
+          "text": "kernel",
+          "start": 74.186,
+          "end": 74.526
+        },
+        {
+          "text": "salta",
+          "start": 74.586,
+          "end": 74.846
+        },
+        {
+          "text": "pixel,",
+          "start": 74.886,
+          "end": 75.286
+        }
+      ]
+    },
+    {
+      "start": 75.506,
+      "end": 78.586,
+      "text": "eseguendo un sotto-campionamento che restringe ulteriormente la mappa.",
+      "words": [
+        {
+          "text": "eseguendo",
+          "start": 75.506,
+          "end": 75.926
+        },
+        {
+          "text": "un",
+          "start": 75.986,
+          "end": 76.046
+        },
+        {
+          "text": "sotto-campionamento",
+          "start": 76.086,
+          "end": 76.906
+        },
+        {
+          "text": "che",
+          "start": 76.966,
+          "end": 77.046
+        },
+        {
+          "text": "restringe",
+          "start": 77.106,
+          "end": 77.506
+        },
+        {
+          "text": "ulteriormente",
+          "start": 77.546,
+          "end": 78.146
+        },
+        {
+          "text": "la",
+          "start": 78.186,
+          "end": 78.246
+        },
+        {
+          "text": "mappa.",
+          "start": 78.286,
+          "end": 78.586
+        }
+      ]
+    },
+    {
+      "start": 79.846,
+      "end": 84.987,
+      "text": "Nota formale: la vera convoluzione due D inverte gli indici del kernel come K di",
+      "words": [
+        {
+          "text": "Nota",
+          "start": 79.846,
+          "end": 80.046
+        },
+        {
+          "text": "formale:",
+          "start": 80.106,
+          "end": 80.546
+        },
+        {
+          "text": "la",
+          "start": 81.046,
+          "end": 81.106
+        },
+        {
+          "text": "vera",
+          "start": 81.146,
+          "end": 81.306
+        },
+        {
+          "text": "convoluzione",
+          "start": 81.366,
+          "end": 81.967
+        },
+        {
+          "text": "due",
+          "start": 82.047,
+          "end": 82.187
+        },
+        {
+          "text": "D",
+          "start": 82.267,
+          "end": 82.307
+        },
+        {
+          "text": "inverte",
+          "start": 82.587,
+          "end": 82.947
+        },
+        {
+          "text": "gli",
+          "start": 82.967,
+          "end": 83.067
+        },
+        {
+          "text": "indici",
+          "start": 83.087,
+          "end": 83.367
+        },
+        {
+          "text": "del",
+          "start": 83.407,
+          "end": 83.527
+        },
+        {
+          "text": "kernel",
+          "start": 83.587,
+          "end": 83.947
+        },
+        {
+          "text": "come",
+          "start": 84.007,
+          "end": 84.227
+        },
+        {
+          "text": "K",
+          "start": 84.407,
+          "end": 84.447
+        },
+        {
+          "text": "di",
+          "start": 84.907,
+          "end": 84.987
+        }
+      ]
+    },
+    {
+      "start": 85.187,
+      "end": 90.827,
+      "text": "i meno m e j meno n, mentre molte librerie implementano in realtà la cross-correlazione,",
+      "words": [
+        {
+          "text": "i",
+          "start": 85.187,
+          "end": 85.227
+        },
+        {
+          "text": "meno",
+          "start": 85.367,
+          "end": 85.587
+        },
+        {
+          "text": "m",
+          "start": 85.867,
+          "end": 85.90700000000001
+        },
+        {
+          "text": "e",
+          "start": 86.127,
+          "end": 86.167
+        },
+        {
+          "text": "j",
+          "start": 86.247,
+          "end": 86.287
+        },
+        {
+          "text": "meno",
+          "start": 86.487,
+          "end": 86.687
+        },
+        {
+          "text": "n,",
+          "start": 86.927,
+          "end": 86.96700000000001
+        },
+        {
+          "text": "mentre",
+          "start": 87.487,
+          "end": 87.747
+        },
+        {
+          "text": "molte",
+          "start": 87.867,
+          "end": 88.147
+        },
+        {
+          "text": "librerie",
+          "start": 88.187,
+          "end": 88.587
+        },
+        {
+          "text": "implementano",
+          "start": 88.647,
+          "end": 89.127
+        },
+        {
+          "text": "in",
+          "start": 89.167,
+          "end": 89.20700000000001
+        },
+        {
+          "text": "realtà",
+          "start": 89.247,
+          "end": 89.487
+        },
+        {
+          "text": "la",
+          "start": 89.607,
+          "end": 89.667
+        },
+        {
+          "text": "cross-correlazione,",
+          "start": 89.727,
+          "end": 90.827
+        }
+      ]
+    },
+    {
+      "start": 91.167,
+      "end": 95.768,
+      "text": "con I di i più m e j più n per K di m e",
+      "words": [
+        {
+          "text": "con",
+          "start": 91.167,
+          "end": 91.347
+        },
+        {
+          "text": "I",
+          "start": 91.608,
+          "end": 91.64800000000001
+        },
+        {
+          "text": "di",
+          "start": 91.948,
+          "end": 92.048
+        },
+        {
+          "text": "i",
+          "start": 92.328,
+          "end": 92.36800000000001
+        },
+        {
+          "text": "più",
+          "start": 92.508,
+          "end": 92.668
+        },
+        {
+          "text": "m",
+          "start": 93.008,
+          "end": 93.048
+        },
+        {
+          "text": "e",
+          "start": 93.308,
+          "end": 93.34800000000001
+        },
+        {
+          "text": "j",
+          "start": 93.408,
+          "end": 93.44800000000001
+        },
+        {
+          "text": "più",
+          "start": 93.628,
+          "end": 93.728
+        },
+        {
+          "text": "n",
+          "start": 94.028,
+          "end": 94.06800000000001
+        },
+        {
+          "text": "per",
+          "start": 94.388,
+          "end": 94.528
+        },
+        {
+          "text": "K",
+          "start": 94.648,
+          "end": 94.688
+        },
+        {
+          "text": "di",
+          "start": 95.148,
+          "end": 95.248
+        },
+        {
+          "text": "m",
+          "start": 95.488,
+          "end": 95.528
+        },
+        {
+          "text": "e",
+          "start": 95.728,
+          "end": 95.768
+        }
+      ]
+    },
+    {
+      "start": 95.988,
+      "end": 96.028,
+      "text": "n.",
+      "words": [
+        {
+          "text": "n.",
+          "start": 95.988,
+          "end": 96.028
+        }
+      ]
+    }
+  ]
+}

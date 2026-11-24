@@ -1,0 +1,1667 @@
+{
+  "duration": 107.368,
+  "segments": [
+    {
+      "start": 0.527,
+      "end": 5.828,
+      "text": "Spazi delle feature enormi rischiano però di essere computazionalmente infattibili e di causare overfitting.",
+      "words": [
+        {
+          "text": "Spazi",
+          "start": 0.527,
+          "end": 0.827
+        },
+        {
+          "text": "delle",
+          "start": 0.887,
+          "end": 1.047
+        },
+        {
+          "text": "feature",
+          "start": 1.087,
+          "end": 1.387
+        },
+        {
+          "text": "enormi",
+          "start": 1.467,
+          "end": 1.767
+        },
+        {
+          "text": "rischiano",
+          "start": 1.867,
+          "end": 2.147
+        },
+        {
+          "text": "però",
+          "start": 2.187,
+          "end": 2.327
+        },
+        {
+          "text": "di",
+          "start": 2.367,
+          "end": 2.427
+        },
+        {
+          "text": "essere",
+          "start": 2.487,
+          "end": 2.747
+        },
+        {
+          "text": "computazionalmente",
+          "start": 2.807,
+          "end": 3.727
+        },
+        {
+          "text": "infattibili",
+          "start": 3.767,
+          "end": 4.367
+        },
+        {
+          "text": "e",
+          "start": 4.487,
+          "end": 4.527
+        },
+        {
+          "text": "di",
+          "start": 4.587,
+          "end": 4.667
+        },
+        {
+          "text": "causare",
+          "start": 4.707,
+          "end": 5.088
+        },
+        {
+          "text": "overfitting.",
+          "start": 5.128,
+          "end": 5.828
+        }
+      ]
+    },
+    {
+      "start": 6.328,
+      "end": 9.968,
+      "text": "L'approccio kernel li gestisce implicitamente e in modo regolarizzato:",
+      "words": [
+        {
+          "text": "L'approccio",
+          "start": 6.328,
+          "end": 6.688
+        },
+        {
+          "text": "kernel",
+          "start": 6.728,
+          "end": 7.068
+        },
+        {
+          "text": "li",
+          "start": 7.208,
+          "end": 7.288
+        },
+        {
+          "text": "gestisce",
+          "start": 7.348,
+          "end": 7.748
+        },
+        {
+          "text": "implicitamente",
+          "start": 7.908,
+          "end": 8.688
+        },
+        {
+          "text": "e",
+          "start": 8.768,
+          "end": 8.808
+        },
+        {
+          "text": "in",
+          "start": 8.848,
+          "end": 8.908
+        },
+        {
+          "text": "modo",
+          "start": 8.948,
+          "end": 9.148
+        },
+        {
+          "text": "regolarizzato:",
+          "start": 9.248,
+          "end": 9.968
+        }
+      ]
+    },
+    {
+      "start": 10.748,
+      "end": 14.408,
+      "text": "la complessità è controllata dal margine, non dalla dimensione dello spazio.",
+      "words": [
+        {
+          "text": "la",
+          "start": 10.748,
+          "end": 10.808
+        },
+        {
+          "text": "complessità",
+          "start": 10.848,
+          "end": 11.288
+        },
+        {
+          "text": "è",
+          "start": 11.428,
+          "end": 11.468
+        },
+        {
+          "text": "controllata",
+          "start": 11.508,
+          "end": 12.008
+        },
+        {
+          "text": "dal",
+          "start": 12.048,
+          "end": 12.188
+        },
+        {
+          "text": "margine,",
+          "start": 12.248,
+          "end": 12.728
+        },
+        {
+          "text": "non",
+          "start": 12.928,
+          "end": 13.108
+        },
+        {
+          "text": "dalla",
+          "start": 13.148,
+          "end": 13.348
+        },
+        {
+          "text": "dimensione",
+          "start": 13.388,
+          "end": 13.788
+        },
+        {
+          "text": "dello",
+          "start": 13.808,
+          "end": 13.968
+        },
+        {
+          "text": "spazio.",
+          "start": 14.008,
+          "end": 14.408
+        }
+      ]
+    },
+    {
+      "start": 15.149,
+      "end": 19.749,
+      "text": "Con Fi da R alla n a R alla n con Fi e il bias",
+      "words": [
+        {
+          "text": "Con",
+          "start": 15.149,
+          "end": 15.329
+        },
+        {
+          "text": "Fi",
+          "start": 15.409,
+          "end": 15.529
+        },
+        {
+          "text": "da",
+          "start": 15.849,
+          "end": 15.929
+        },
+        {
+          "text": "R",
+          "start": 16.229,
+          "end": 16.269
+        },
+        {
+          "text": "alla",
+          "start": 16.349,
+          "end": 16.509
+        },
+        {
+          "text": "n",
+          "start": 16.809,
+          "end": 16.849
+        },
+        {
+          "text": "a",
+          "start": 17.289,
+          "end": 17.329
+        },
+        {
+          "text": "R",
+          "start": 17.609,
+          "end": 17.649
+        },
+        {
+          "text": "alla",
+          "start": 17.829,
+          "end": 17.989
+        },
+        {
+          "text": "n",
+          "start": 18.169,
+          "end": 18.209
+        },
+        {
+          "text": "con",
+          "start": 18.329,
+          "end": 18.469
+        },
+        {
+          "text": "Fi",
+          "start": 18.589,
+          "end": 18.689
+        },
+        {
+          "text": "e",
+          "start": 19.189,
+          "end": 19.229
+        },
+        {
+          "text": "il",
+          "start": 19.269,
+          "end": 19.329
+        },
+        {
+          "text": "bias",
+          "start": 19.369,
+          "end": 19.749
+        }
+      ]
+    },
+    {
+      "start": 19.869,
+      "end": 22.169,
+      "text": "incluso via fi con zero uguale uno, abbiamo",
+      "words": [
+        {
+          "text": "incluso",
+          "start": 19.869,
+          "end": 20.229
+        },
+        {
+          "text": "via",
+          "start": 20.289,
+          "end": 20.449
+        },
+        {
+          "text": "fi",
+          "start": 20.589,
+          "end": 20.669
+        },
+        {
+          "text": "con",
+          "start": 20.749,
+          "end": 20.869
+        },
+        {
+          "text": "zero",
+          "start": 20.929,
+          "end": 21.129
+        },
+        {
+          "text": "uguale",
+          "start": 21.149,
+          "end": 21.369
+        },
+        {
+          "text": "uno,",
+          "start": 21.449,
+          "end": 21.609
+        },
+        {
+          "text": "abbiamo",
+          "start": 21.809,
+          "end": 22.169
+        }
+      ]
+    },
+    {
+      "start": 22.789,
+      "end": 27.21,
+      "text": "w uguale somma di alfa con i d con i Fi di x con i,",
+      "words": [
+        {
+          "text": "w",
+          "start": 22.789,
+          "end": 22.829
+        },
+        {
+          "text": "uguale",
+          "start": 23.169,
+          "end": 23.629
+        },
+        {
+          "text": "somma",
+          "start": 24.129,
+          "end": 24.43
+        },
+        {
+          "text": "di",
+          "start": 24.51,
+          "end": 24.59
+        },
+        {
+          "text": "alfa",
+          "start": 24.65,
+          "end": 24.91
+        },
+        {
+          "text": "con",
+          "start": 24.97,
+          "end": 25.11
+        },
+        {
+          "text": "i",
+          "start": 25.15,
+          "end": 25.19
+        },
+        {
+          "text": "d",
+          "start": 25.47,
+          "end": 25.51
+        },
+        {
+          "text": "con",
+          "start": 25.63,
+          "end": 25.79
+        },
+        {
+          "text": "i",
+          "start": 25.85,
+          "end": 25.89
+        },
+        {
+          "text": "Fi",
+          "start": 26.31,
+          "end": 26.41
+        },
+        {
+          "text": "di",
+          "start": 26.63,
+          "end": 26.69
+        },
+        {
+          "text": "x",
+          "start": 26.83,
+          "end": 26.87
+        },
+        {
+          "text": "con",
+          "start": 26.97,
+          "end": 27.13
+        },
+        {
+          "text": "i,",
+          "start": 27.17,
+          "end": 27.21
+        }
+      ]
+    },
+    {
+      "start": 27.75,
+      "end": 32.11,
+      "text": "e l'iperpiano diventa somma di alfa con i d con i per il prodotto scalare",
+      "words": [
+        {
+          "text": "e",
+          "start": 27.75,
+          "end": 27.79
+        },
+        {
+          "text": "l'iperpiano",
+          "start": 27.83,
+          "end": 28.29
+        },
+        {
+          "text": "diventa",
+          "start": 28.33,
+          "end": 28.73
+        },
+        {
+          "text": "somma",
+          "start": 29.09,
+          "end": 29.35
+        },
+        {
+          "text": "di",
+          "start": 29.39,
+          "end": 29.47
+        },
+        {
+          "text": "alfa",
+          "start": 29.53,
+          "end": 29.77
+        },
+        {
+          "text": "con",
+          "start": 29.83,
+          "end": 29.97
+        },
+        {
+          "text": "i",
+          "start": 30.03,
+          "end": 30.07
+        },
+        {
+          "text": "d",
+          "start": 30.21,
+          "end": 30.25
+        },
+        {
+          "text": "con",
+          "start": 30.35,
+          "end": 30.51
+        },
+        {
+          "text": "i",
+          "start": 30.55,
+          "end": 30.59
+        },
+        {
+          "text": "per",
+          "start": 30.97,
+          "end": 31.09
+        },
+        {
+          "text": "il",
+          "start": 31.13,
+          "end": 31.19
+        },
+        {
+          "text": "prodotto",
+          "start": 31.23,
+          "end": 31.59
+        },
+        {
+          "text": "scalare",
+          "start": 31.65,
+          "end": 32.11
+        }
+      ]
+    },
+    {
+      "start": 32.39,
+      "end": 35.411,
+      "text": "Fi trasposto di x con i per Fi di x uguale zero.",
+      "words": [
+        {
+          "text": "Fi",
+          "start": 32.39,
+          "end": 32.49
+        },
+        {
+          "text": "trasposto",
+          "start": 32.57,
+          "end": 33.07
+        },
+        {
+          "text": "di",
+          "start": 33.11,
+          "end": 33.17
+        },
+        {
+          "text": "x",
+          "start": 33.31,
+          "end": 33.35
+        },
+        {
+          "text": "con",
+          "start": 33.43,
+          "end": 33.57
+        },
+        {
+          "text": "i",
+          "start": 33.63,
+          "end": 33.67
+        },
+        {
+          "text": "per",
+          "start": 33.87,
+          "end": 34.011
+        },
+        {
+          "text": "Fi",
+          "start": 34.091,
+          "end": 34.191
+        },
+        {
+          "text": "di",
+          "start": 34.251,
+          "end": 34.311
+        },
+        {
+          "text": "x",
+          "start": 34.511,
+          "end": 34.551
+        },
+        {
+          "text": "uguale",
+          "start": 34.831,
+          "end": 35.111
+        },
+        {
+          "text": "zero.",
+          "start": 35.191,
+          "end": 35.411
+        }
+      ]
+    },
+    {
+      "start": 36.111,
+      "end": 37.291,
+      "text": "Ecco il kernel trick:",
+      "words": [
+        {
+          "text": "Ecco",
+          "start": 36.111,
+          "end": 36.351
+        },
+        {
+          "text": "il",
+          "start": 36.431,
+          "end": 36.511
+        },
+        {
+          "text": "kernel",
+          "start": 36.571,
+          "end": 36.951
+        },
+        {
+          "text": "trick:",
+          "start": 37.011,
+          "end": 37.291
+        }
+      ]
+    },
+    {
+      "start": 38.051,
+      "end": 43.151,
+      "text": "sotto certe condizioni non serve calcolare Fi né conoscere lo spazio delle feature.",
+      "words": [
+        {
+          "text": "sotto",
+          "start": 38.051,
+          "end": 38.291
+        },
+        {
+          "text": "certe",
+          "start": 38.351,
+          "end": 38.591
+        },
+        {
+          "text": "condizioni",
+          "start": 38.651,
+          "end": 39.291
+        },
+        {
+          "text": "non",
+          "start": 39.531,
+          "end": 39.691
+        },
+        {
+          "text": "serve",
+          "start": 39.771,
+          "end": 40.111
+        },
+        {
+          "text": "calcolare",
+          "start": 40.171,
+          "end": 40.651
+        },
+        {
+          "text": "Fi",
+          "start": 40.791,
+          "end": 40.891
+        },
+        {
+          "text": "né",
+          "start": 41.211,
+          "end": 41.311
+        },
+        {
+          "text": "conoscere",
+          "start": 41.451,
+          "end": 42.011
+        },
+        {
+          "text": "lo",
+          "start": 42.071,
+          "end": 42.131
+        },
+        {
+          "text": "spazio",
+          "start": 42.171,
+          "end": 42.511
+        },
+        {
+          "text": "delle",
+          "start": 42.531,
+          "end": 42.711
+        },
+        {
+          "text": "feature.",
+          "start": 42.771,
+          "end": 43.151
+        }
+      ]
+    },
+    {
+      "start": 43.651,
+      "end": 49.372,
+      "text": "Basta un inner product kernel, una funzione simmetrica k di x con i virgola x",
+      "words": [
+        {
+          "text": "Basta",
+          "start": 43.651,
+          "end": 43.932
+        },
+        {
+          "text": "un",
+          "start": 44.032,
+          "end": 44.132
+        },
+        {
+          "text": "inner",
+          "start": 44.252,
+          "end": 44.512
+        },
+        {
+          "text": "product",
+          "start": 44.592,
+          "end": 45.012
+        },
+        {
+          "text": "kernel,",
+          "start": 45.092,
+          "end": 45.512
+        },
+        {
+          "text": "una",
+          "start": 45.912,
+          "end": 46.052
+        },
+        {
+          "text": "funzione",
+          "start": 46.092,
+          "end": 46.452
+        },
+        {
+          "text": "simmetrica",
+          "start": 46.512,
+          "end": 47.092
+        },
+        {
+          "text": "k",
+          "start": 47.292,
+          "end": 47.332
+        },
+        {
+          "text": "di",
+          "start": 47.872,
+          "end": 47.952
+        },
+        {
+          "text": "x",
+          "start": 48.292,
+          "end": 48.332
+        },
+        {
+          "text": "con",
+          "start": 48.432,
+          "end": 48.592
+        },
+        {
+          "text": "i",
+          "start": 48.632,
+          "end": 48.672
+        },
+        {
+          "text": "virgola",
+          "start": 48.832,
+          "end": 49.152
+        },
+        {
+          "text": "x",
+          "start": 49.332,
+          "end": 49.372
+        }
+      ]
+    },
+    {
+      "start": 49.732,
+      "end": 52.792,
+      "text": "uguale Fi trasposto di x con i per Fi di x.",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 49.732,
+          "end": 50.092
+        },
+        {
+          "text": "Fi",
+          "start": 50.332,
+          "end": 50.412
+        },
+        {
+          "text": "trasposto",
+          "start": 50.512,
+          "end": 51.012
+        },
+        {
+          "text": "di",
+          "start": 51.052,
+          "end": 51.112
+        },
+        {
+          "text": "x",
+          "start": 51.272,
+          "end": 51.312
+        },
+        {
+          "text": "con",
+          "start": 51.432,
+          "end": 51.592
+        },
+        {
+          "text": "i",
+          "start": 51.652,
+          "end": 51.692
+        },
+        {
+          "text": "per",
+          "start": 51.952,
+          "end": 52.092
+        },
+        {
+          "text": "Fi",
+          "start": 52.192,
+          "end": 52.292
+        },
+        {
+          "text": "di",
+          "start": 52.552,
+          "end": 52.612
+        },
+        {
+          "text": "x.",
+          "start": 52.752,
+          "end": 52.792
+        }
+      ]
+    },
+    {
+      "start": 53.773,
+      "end": 57.773,
+      "text": "Nel nostro esempio da due a tre dimensioni, Fi trasposto di x per Fi di",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 53.773,
+          "end": 53.893
+        },
+        {
+          "text": "nostro",
+          "start": 53.913,
+          "end": 54.133
+        },
+        {
+          "text": "esempio",
+          "start": 54.193,
+          "end": 54.633
+        },
+        {
+          "text": "da",
+          "start": 54.693,
+          "end": 54.753
+        },
+        {
+          "text": "due",
+          "start": 54.833,
+          "end": 54.973
+        },
+        {
+          "text": "a",
+          "start": 55.013,
+          "end": 55.053
+        },
+        {
+          "text": "tre",
+          "start": 55.073,
+          "end": 55.173
+        },
+        {
+          "text": "dimensioni,",
+          "start": 55.233,
+          "end": 55.813
+        },
+        {
+          "text": "Fi",
+          "start": 56.133,
+          "end": 56.213
+        },
+        {
+          "text": "trasposto",
+          "start": 56.293,
+          "end": 56.733
+        },
+        {
+          "text": "di",
+          "start": 56.773,
+          "end": 56.833
+        },
+        {
+          "text": "x",
+          "start": 56.973,
+          "end": 57.013
+        },
+        {
+          "text": "per",
+          "start": 57.293,
+          "end": 57.413
+        },
+        {
+          "text": "Fi",
+          "start": 57.473,
+          "end": 57.553
+        },
+        {
+          "text": "di",
+          "start": 57.613,
+          "end": 57.773
+        }
+      ]
+    },
+    {
+      "start": 57.953,
+      "end": 63.173,
+      "text": "y vale x con uno quadro y con uno quadro più due x con uno",
+      "words": [
+        {
+          "text": "y",
+          "start": 57.953,
+          "end": 57.993
+        },
+        {
+          "text": "vale",
+          "start": 58.213,
+          "end": 58.473
+        },
+        {
+          "text": "x",
+          "start": 59.213,
+          "end": 59.253
+        },
+        {
+          "text": "con",
+          "start": 59.353,
+          "end": 59.493
+        },
+        {
+          "text": "uno",
+          "start": 59.553,
+          "end": 59.693
+        },
+        {
+          "text": "quadro",
+          "start": 59.773,
+          "end": 60.193
+        },
+        {
+          "text": "y",
+          "start": 60.653,
+          "end": 60.693
+        },
+        {
+          "text": "con",
+          "start": 60.873,
+          "end": 60.993
+        },
+        {
+          "text": "uno",
+          "start": 61.013,
+          "end": 61.133
+        },
+        {
+          "text": "quadro",
+          "start": 61.193,
+          "end": 61.553
+        },
+        {
+          "text": "più",
+          "start": 61.793,
+          "end": 61.913
+        },
+        {
+          "text": "due",
+          "start": 62.033,
+          "end": 62.253
+        },
+        {
+          "text": "x",
+          "start": 62.673,
+          "end": 62.713
+        },
+        {
+          "text": "con",
+          "start": 62.813,
+          "end": 62.953
+        },
+        {
+          "text": "uno",
+          "start": 63.033,
+          "end": 63.173
+        }
+      ]
+    },
+    {
+      "start": 63.434,
+      "end": 68.194,
+      "text": "x con due y con uno y con due più x con due quadro y",
+      "words": [
+        {
+          "text": "x",
+          "start": 63.434,
+          "end": 63.474
+        },
+        {
+          "text": "con",
+          "start": 63.554,
+          "end": 63.694
+        },
+        {
+          "text": "due",
+          "start": 63.754,
+          "end": 63.994
+        },
+        {
+          "text": "y",
+          "start": 64.474,
+          "end": 64.51400000000001
+        },
+        {
+          "text": "con",
+          "start": 64.674,
+          "end": 64.794
+        },
+        {
+          "text": "uno",
+          "start": 64.874,
+          "end": 65.014
+        },
+        {
+          "text": "y",
+          "start": 65.434,
+          "end": 65.474
+        },
+        {
+          "text": "con",
+          "start": 65.634,
+          "end": 65.774
+        },
+        {
+          "text": "due",
+          "start": 65.814,
+          "end": 66.014
+        },
+        {
+          "text": "più",
+          "start": 66.494,
+          "end": 66.614
+        },
+        {
+          "text": "x",
+          "start": 66.934,
+          "end": 66.974
+        },
+        {
+          "text": "con",
+          "start": 67.074,
+          "end": 67.194
+        },
+        {
+          "text": "due",
+          "start": 67.214,
+          "end": 67.334
+        },
+        {
+          "text": "quadro",
+          "start": 67.394,
+          "end": 67.714
+        },
+        {
+          "text": "y",
+          "start": 68.154,
+          "end": 68.194
+        }
+      ]
+    },
+    {
+      "start": 68.354,
+      "end": 72.95400000000001,
+      "text": "con due quadro, cioè il quadrato del prodotto scalare x trasposto y:",
+      "words": [
+        {
+          "text": "con",
+          "start": 68.354,
+          "end": 68.474
+        },
+        {
+          "text": "due",
+          "start": 68.494,
+          "end": 68.594
+        },
+        {
+          "text": "quadro,",
+          "start": 68.634,
+          "end": 68.954
+        },
+        {
+          "text": "cioè",
+          "start": 69.254,
+          "end": 69.434
+        },
+        {
+          "text": "il",
+          "start": 69.634,
+          "end": 69.734
+        },
+        {
+          "text": "quadrato",
+          "start": 69.834,
+          "end": 70.354
+        },
+        {
+          "text": "del",
+          "start": 70.454,
+          "end": 70.574
+        },
+        {
+          "text": "prodotto",
+          "start": 70.634,
+          "end": 70.974
+        },
+        {
+          "text": "scalare",
+          "start": 71.034,
+          "end": 71.474
+        },
+        {
+          "text": "x",
+          "start": 71.894,
+          "end": 71.93400000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 72.114,
+          "end": 72.614
+        },
+        {
+          "text": "y:",
+          "start": 72.914,
+          "end": 72.95400000000001
+        }
+      ]
+    },
+    {
+      "start": 73.635,
+      "end": 76.375,
+      "text": "calcoliamo il prodotto in tre dimensioni restando in due.",
+      "words": [
+        {
+          "text": "calcoliamo",
+          "start": 73.635,
+          "end": 74.095
+        },
+        {
+          "text": "il",
+          "start": 74.135,
+          "end": 74.215
+        },
+        {
+          "text": "prodotto",
+          "start": 74.235,
+          "end": 74.615
+        },
+        {
+          "text": "in",
+          "start": 74.655,
+          "end": 74.715
+        },
+        {
+          "text": "tre",
+          "start": 74.755,
+          "end": 74.855
+        },
+        {
+          "text": "dimensioni",
+          "start": 74.915,
+          "end": 75.475
+        },
+        {
+          "text": "restando",
+          "start": 75.715,
+          "end": 76.075
+        },
+        {
+          "text": "in",
+          "start": 76.115,
+          "end": 76.175
+        },
+        {
+          "text": "due.",
+          "start": 76.195,
+          "end": 76.375
+        }
+      ]
+    },
+    {
+      "start": 77.175,
+      "end": 80.715,
+      "text": "I prodotti scalari tra gli esempi di training formano la matrice kernel,",
+      "words": [
+        {
+          "text": "I",
+          "start": 77.175,
+          "end": 77.215
+        },
+        {
+          "text": "prodotti",
+          "start": 77.235,
+          "end": 77.595
+        },
+        {
+          "text": "scalari",
+          "start": 77.655,
+          "end": 78.015
+        },
+        {
+          "text": "tra",
+          "start": 78.075,
+          "end": 78.175
+        },
+        {
+          "text": "gli",
+          "start": 78.195,
+          "end": 78.295
+        },
+        {
+          "text": "esempi",
+          "start": 78.335,
+          "end": 78.635
+        },
+        {
+          "text": "di",
+          "start": 78.675,
+          "end": 78.735
+        },
+        {
+          "text": "training",
+          "start": 78.775,
+          "end": 79.195
+        },
+        {
+          "text": "formano",
+          "start": 79.335,
+          "end": 79.715
+        },
+        {
+          "text": "la",
+          "start": 79.755,
+          "end": 79.815
+        },
+        {
+          "text": "matrice",
+          "start": 79.855,
+          "end": 80.215
+        },
+        {
+          "text": "kernel,",
+          "start": 80.275,
+          "end": 80.715
+        }
+      ]
+    },
+    {
+      "start": 80.895,
+      "end": 82.275,
+      "text": "o matrice di Gram, K",
+      "words": [
+        {
+          "text": "o",
+          "start": 80.895,
+          "end": 80.935
+        },
+        {
+          "text": "matrice",
+          "start": 81.035,
+          "end": 81.415
+        },
+        {
+          "text": "di",
+          "start": 81.455,
+          "end": 81.515
+        },
+        {
+          "text": "Gram,",
+          "start": 81.555,
+          "end": 81.835
+        },
+        {
+          "text": "K",
+          "start": 82.235,
+          "end": 82.275
+        }
+      ]
+    },
+    {
+      "start": 82.975,
+      "end": 85.276,
+      "text": "di taglia l per l, simmetrica.",
+      "words": [
+        {
+          "text": "di",
+          "start": 82.975,
+          "end": 83.036
+        },
+        {
+          "text": "taglia",
+          "start": 83.096,
+          "end": 83.416
+        },
+        {
+          "text": "l",
+          "start": 83.776,
+          "end": 83.816
+        },
+        {
+          "text": "per",
+          "start": 84.136,
+          "end": 84.256
+        },
+        {
+          "text": "l,",
+          "start": 84.376,
+          "end": 84.41600000000001
+        },
+        {
+          "text": "simmetrica.",
+          "start": 84.736,
+          "end": 85.276
+        }
+      ]
+    },
+    {
+      "start": 85.936,
+      "end": 90.476,
+      "text": "Per il teorema di Mercer una funzione corrisponde a un prodotto scalare valido se produce",
+      "words": [
+        {
+          "text": "Per",
+          "start": 85.936,
+          "end": 86.076
+        },
+        {
+          "text": "il",
+          "start": 86.116,
+          "end": 86.196
+        },
+        {
+          "text": "teorema",
+          "start": 86.236,
+          "end": 86.596
+        },
+        {
+          "text": "di",
+          "start": 86.636,
+          "end": 86.696
+        },
+        {
+          "text": "Mercer",
+          "start": 86.736,
+          "end": 87.156
+        },
+        {
+          "text": "una",
+          "start": 87.316,
+          "end": 87.436
+        },
+        {
+          "text": "funzione",
+          "start": 87.476,
+          "end": 87.876
+        },
+        {
+          "text": "corrisponde",
+          "start": 87.936,
+          "end": 88.476
+        },
+        {
+          "text": "a",
+          "start": 88.496,
+          "end": 88.536
+        },
+        {
+          "text": "un",
+          "start": 88.536,
+          "end": 88.596
+        },
+        {
+          "text": "prodotto",
+          "start": 88.616,
+          "end": 88.976
+        },
+        {
+          "text": "scalare",
+          "start": 89.036,
+          "end": 89.396
+        },
+        {
+          "text": "valido",
+          "start": 89.456,
+          "end": 89.816
+        },
+        {
+          "text": "se",
+          "start": 89.996,
+          "end": 90.076
+        },
+        {
+          "text": "produce",
+          "start": 90.136,
+          "end": 90.476
+        }
+      ]
+    },
+    {
+      "start": 90.556,
+      "end": 94.837,
+      "text": "matrici kernel semidefinite positive, cioè con autovalori non negativi.",
+      "words": [
+        {
+          "text": "matrici",
+          "start": 90.556,
+          "end": 90.916
+        },
+        {
+          "text": "kernel",
+          "start": 90.996,
+          "end": 91.376
+        },
+        {
+          "text": "semidefinite",
+          "start": 91.496,
+          "end": 92.156
+        },
+        {
+          "text": "positive,",
+          "start": 92.196,
+          "end": 92.716
+        },
+        {
+          "text": "cioè",
+          "start": 93.097,
+          "end": 93.237
+        },
+        {
+          "text": "con",
+          "start": 93.317,
+          "end": 93.457
+        },
+        {
+          "text": "autovalori",
+          "start": 93.517,
+          "end": 94.077
+        },
+        {
+          "text": "non",
+          "start": 94.177,
+          "end": 94.317
+        },
+        {
+          "text": "negativi.",
+          "start": 94.357,
+          "end": 94.837
+        }
+      ]
+    },
+    {
+      "start": 95.477,
+      "end": 98.497,
+      "text": "Inoltre, se k con uno e k con due sono kernel,",
+      "words": [
+        {
+          "text": "Inoltre,",
+          "start": 95.477,
+          "end": 95.857
+        },
+        {
+          "text": "se",
+          "start": 96.037,
+          "end": 96.117
+        },
+        {
+          "text": "k",
+          "start": 96.217,
+          "end": 96.257
+        },
+        {
+          "text": "con",
+          "start": 96.517,
+          "end": 96.657
+        },
+        {
+          "text": "uno",
+          "start": 96.737,
+          "end": 96.917
+        },
+        {
+          "text": "e",
+          "start": 97.077,
+          "end": 97.117
+        },
+        {
+          "text": "k",
+          "start": 97.177,
+          "end": 97.21700000000001
+        },
+        {
+          "text": "con",
+          "start": 97.457,
+          "end": 97.597
+        },
+        {
+          "text": "due",
+          "start": 97.637,
+          "end": 97.817
+        },
+        {
+          "text": "sono",
+          "start": 97.877,
+          "end": 98.037
+        },
+        {
+          "text": "kernel,",
+          "start": 98.097,
+          "end": 98.497
+        }
+      ]
+    },
+    {
+      "start": 98.857,
+      "end": 101.577,
+      "text": "lo sono anche la somma k con uno più k con due,",
+      "words": [
+        {
+          "text": "lo",
+          "start": 98.857,
+          "end": 98.937
+        },
+        {
+          "text": "sono",
+          "start": 98.977,
+          "end": 99.137
+        },
+        {
+          "text": "anche",
+          "start": 99.217,
+          "end": 99.397
+        },
+        {
+          "text": "la",
+          "start": 99.457,
+          "end": 99.497
+        },
+        {
+          "text": "somma",
+          "start": 99.557,
+          "end": 99.817
+        },
+        {
+          "text": "k",
+          "start": 99.997,
+          "end": 100.037
+        },
+        {
+          "text": "con",
+          "start": 100.297,
+          "end": 100.437
+        },
+        {
+          "text": "uno",
+          "start": 100.497,
+          "end": 100.657
+        },
+        {
+          "text": "più",
+          "start": 100.717,
+          "end": 100.817
+        },
+        {
+          "text": "k",
+          "start": 100.877,
+          "end": 100.917
+        },
+        {
+          "text": "con",
+          "start": 101.177,
+          "end": 101.317
+        },
+        {
+          "text": "due,",
+          "start": 101.377,
+          "end": 101.577
+        }
+      ]
+    },
+    {
+      "start": 102.157,
+      "end": 106.438,
+      "text": "c per k con uno con c positivo, e il prodotto k con uno per",
+      "words": [
+        {
+          "text": "c",
+          "start": 102.157,
+          "end": 102.197
+        },
+        {
+          "text": "per",
+          "start": 102.437,
+          "end": 102.558
+        },
+        {
+          "text": "k",
+          "start": 102.618,
+          "end": 102.658
+        },
+        {
+          "text": "con",
+          "start": 102.898,
+          "end": 103.038
+        },
+        {
+          "text": "uno",
+          "start": 103.118,
+          "end": 103.298
+        },
+        {
+          "text": "con",
+          "start": 103.438,
+          "end": 103.598
+        },
+        {
+          "text": "c",
+          "start": 103.678,
+          "end": 103.718
+        },
+        {
+          "text": "positivo,",
+          "start": 103.858,
+          "end": 104.378
+        },
+        {
+          "text": "e",
+          "start": 104.738,
+          "end": 104.778
+        },
+        {
+          "text": "il",
+          "start": 104.858,
+          "end": 104.918
+        },
+        {
+          "text": "prodotto",
+          "start": 104.958,
+          "end": 105.398
+        },
+        {
+          "text": "k",
+          "start": 105.518,
+          "end": 105.558
+        },
+        {
+          "text": "con",
+          "start": 105.838,
+          "end": 105.978
+        },
+        {
+          "text": "uno",
+          "start": 106.038,
+          "end": 106.198
+        },
+        {
+          "text": "per",
+          "start": 106.318,
+          "end": 106.438
+        }
+      ]
+    },
+    {
+      "start": 106.478,
+      "end": 107.118,
+      "text": "k con due.",
+      "words": [
+        {
+          "text": "k",
+          "start": 106.478,
+          "end": 106.518
+        },
+        {
+          "text": "con",
+          "start": 106.758,
+          "end": 106.878
+        },
+        {
+          "text": "due.",
+          "start": 106.938,
+          "end": 107.118
+        }
+      ]
+    }
+  ]
+}

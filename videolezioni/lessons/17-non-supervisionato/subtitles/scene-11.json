@@ -1,0 +1,1206 @@
+{
+  "duration": 86.189,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.761,
+      "text": "Raccogliamo i tre punti chiave di tutto il capitolo sull'apprendimento non supervisionato,",
+      "words": [
+        {
+          "text": "Raccogliamo",
+          "start": 0.08,
+          "end": 0.62
+        },
+        {
+          "text": "i",
+          "start": 0.7,
+          "end": 0.74
+        },
+        {
+          "text": "tre",
+          "start": 0.82,
+          "end": 0.98
+        },
+        {
+          "text": "punti",
+          "start": 1.08,
+          "end": 1.38
+        },
+        {
+          "text": "chiave",
+          "start": 1.44,
+          "end": 1.78
+        },
+        {
+          "text": "di",
+          "start": 1.92,
+          "end": 2.001
+        },
+        {
+          "text": "tutto",
+          "start": 2.061,
+          "end": 2.281
+        },
+        {
+          "text": "il",
+          "start": 2.321,
+          "end": 2.381
+        },
+        {
+          "text": "capitolo",
+          "start": 2.401,
+          "end": 2.841
+        },
+        {
+          "text": "sull'apprendimento",
+          "start": 2.881,
+          "end": 3.621
+        },
+        {
+          "text": "non",
+          "start": 3.721,
+          "end": 3.861
+        },
+        {
+          "text": "supervisionato,",
+          "start": 3.941,
+          "end": 4.761
+        }
+      ]
+    },
+    {
+      "start": 5.101,
+      "end": 6.301,
+      "text": "K-means e SOM.",
+      "words": [
+        {
+          "text": "K-means",
+          "start": 5.101,
+          "end": 5.661
+        },
+        {
+          "text": "e",
+          "start": 5.921,
+          "end": 5.961
+        },
+        {
+          "text": "SOM.",
+          "start": 6.061,
+          "end": 6.301
+        }
+      ]
+    },
+    {
+      "start": 7.042,
+      "end": 12.303,
+      "text": "Primo: la quantizzazione vettoriale codifica i dati tramite un codebook di prototipi,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 7.042,
+          "end": 7.322
+        },
+        {
+          "text": "la",
+          "start": 8.082,
+          "end": 8.162
+        },
+        {
+          "text": "quantizzazione",
+          "start": 8.222,
+          "end": 8.902
+        },
+        {
+          "text": "vettoriale",
+          "start": 8.922,
+          "end": 9.482
+        },
+        {
+          "text": "codifica",
+          "start": 9.602,
+          "end": 10.062
+        },
+        {
+          "text": "i",
+          "start": 10.122,
+          "end": 10.162
+        },
+        {
+          "text": "dati",
+          "start": 10.182,
+          "end": 10.442
+        },
+        {
+          "text": "tramite",
+          "start": 10.502,
+          "end": 10.863
+        },
+        {
+          "text": "un",
+          "start": 10.923,
+          "end": 10.983
+        },
+        {
+          "text": "codebook",
+          "start": 11.043,
+          "end": 11.523
+        },
+        {
+          "text": "di",
+          "start": 11.623,
+          "end": 11.683
+        },
+        {
+          "text": "prototipi,",
+          "start": 11.723,
+          "end": 12.303
+        }
+      ]
+    },
+    {
+      "start": 12.683,
+      "end": 18.304,
+      "text": "minimizzando la loss data dall'errore di quantizzazione, cioè la somma delle norme quadre tra ciascun",
+      "words": [
+        {
+          "text": "minimizzando",
+          "start": 12.683,
+          "end": 13.223
+        },
+        {
+          "text": "la",
+          "start": 13.283,
+          "end": 13.343
+        },
+        {
+          "text": "loss",
+          "start": 13.383,
+          "end": 13.623
+        },
+        {
+          "text": "data",
+          "start": 13.783,
+          "end": 14.003
+        },
+        {
+          "text": "dall'errore",
+          "start": 14.083,
+          "end": 14.663
+        },
+        {
+          "text": "di",
+          "start": 14.703,
+          "end": 14.763
+        },
+        {
+          "text": "quantizzazione,",
+          "start": 14.803,
+          "end": 15.624
+        },
+        {
+          "text": "cioè",
+          "start": 15.984,
+          "end": 16.124
+        },
+        {
+          "text": "la",
+          "start": 16.204,
+          "end": 16.264
+        },
+        {
+          "text": "somma",
+          "start": 16.404,
+          "end": 16.744
+        },
+        {
+          "text": "delle",
+          "start": 16.804,
+          "end": 17.004
+        },
+        {
+          "text": "norme",
+          "start": 17.024,
+          "end": 17.264
+        },
+        {
+          "text": "quadre",
+          "start": 17.344,
+          "end": 17.704
+        },
+        {
+          "text": "tra",
+          "start": 17.824,
+          "end": 17.924
+        },
+        {
+          "text": "ciascun",
+          "start": 18.004,
+          "end": 18.304
+        }
+      ]
+    },
+    {
+      "start": 18.344,
+      "end": 22.325,
+      "text": "esempio x con i e il suo vettore vincitore w con i asterisco;",
+      "words": [
+        {
+          "text": "esempio",
+          "start": 18.344,
+          "end": 18.724
+        },
+        {
+          "text": "x",
+          "start": 19.024,
+          "end": 19.064
+        },
+        {
+          "text": "con",
+          "start": 19.184,
+          "end": 19.325
+        },
+        {
+          "text": "i",
+          "start": 19.365,
+          "end": 19.405
+        },
+        {
+          "text": "e",
+          "start": 19.745,
+          "end": 19.785
+        },
+        {
+          "text": "il",
+          "start": 19.825,
+          "end": 19.885
+        },
+        {
+          "text": "suo",
+          "start": 19.925,
+          "end": 20.025
+        },
+        {
+          "text": "vettore",
+          "start": 20.065,
+          "end": 20.365
+        },
+        {
+          "text": "vincitore",
+          "start": 20.405,
+          "end": 20.965
+        },
+        {
+          "text": "w",
+          "start": 21.185,
+          "end": 21.225
+        },
+        {
+          "text": "con",
+          "start": 21.365,
+          "end": 21.505
+        },
+        {
+          "text": "i",
+          "start": 21.545,
+          "end": 21.585
+        },
+        {
+          "text": "asterisco;",
+          "start": 21.745,
+          "end": 22.325
+        }
+      ]
+    },
+    {
+      "start": 22.965,
+      "end": 27.206,
+      "text": "la metrica scelta determina la forma delle celle di Voronoi e quindi dei cluster.",
+      "words": [
+        {
+          "text": "la",
+          "start": 22.965,
+          "end": 23.025
+        },
+        {
+          "text": "metrica",
+          "start": 23.065,
+          "end": 23.405
+        },
+        {
+          "text": "scelta",
+          "start": 23.445,
+          "end": 23.786
+        },
+        {
+          "text": "determina",
+          "start": 23.846,
+          "end": 24.266
+        },
+        {
+          "text": "la",
+          "start": 24.326,
+          "end": 24.366
+        },
+        {
+          "text": "forma",
+          "start": 24.426,
+          "end": 24.646
+        },
+        {
+          "text": "delle",
+          "start": 24.706,
+          "end": 24.886
+        },
+        {
+          "text": "celle",
+          "start": 24.926,
+          "end": 25.186
+        },
+        {
+          "text": "di",
+          "start": 25.226,
+          "end": 25.286
+        },
+        {
+          "text": "Voronoi",
+          "start": 25.346,
+          "end": 25.806
+        },
+        {
+          "text": "e",
+          "start": 26.126,
+          "end": 26.166
+        },
+        {
+          "text": "quindi",
+          "start": 26.226,
+          "end": 26.486
+        },
+        {
+          "text": "dei",
+          "start": 26.626,
+          "end": 26.746
+        },
+        {
+          "text": "cluster.",
+          "start": 26.766,
+          "end": 27.206
+        }
+      ]
+    },
+    {
+      "start": 28.006,
+      "end": 35.807,
+      "text": "Secondo: applicando la discesa del gradiente stocastica localmente sull'errore di quantizzazione otteniamo il K-means on-line,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 28.006,
+          "end": 28.446
+        },
+        {
+          "text": "applicando",
+          "start": 29.026,
+          "end": 29.546
+        },
+        {
+          "text": "la",
+          "start": 29.586,
+          "end": 29.666
+        },
+        {
+          "text": "discesa",
+          "start": 29.706,
+          "end": 30.126
+        },
+        {
+          "text": "del",
+          "start": 30.166,
+          "end": 30.286
+        },
+        {
+          "text": "gradiente",
+          "start": 30.326,
+          "end": 30.806
+        },
+        {
+          "text": "stocastica",
+          "start": 30.866,
+          "end": 31.526
+        },
+        {
+          "text": "localmente",
+          "start": 31.626,
+          "end": 32.287
+        },
+        {
+          "text": "sull'errore",
+          "start": 32.387,
+          "end": 32.867
+        },
+        {
+          "text": "di",
+          "start": 32.907,
+          "end": 32.987
+        },
+        {
+          "text": "quantizzazione",
+          "start": 33.027,
+          "end": 33.847
+        },
+        {
+          "text": "otteniamo",
+          "start": 34.167,
+          "end": 34.587
+        },
+        {
+          "text": "il",
+          "start": 34.647,
+          "end": 34.687
+        },
+        {
+          "text": "K-means",
+          "start": 34.747,
+          "end": 35.187
+        },
+        {
+          "text": "on-line,",
+          "start": 35.307,
+          "end": 35.807
+        }
+      ]
+    },
+    {
+      "start": 36.247,
+      "end": 40.328,
+      "text": "delta w con i asterisco uguale a eta per x meno w con i asterisco,",
+      "words": [
+        {
+          "text": "delta",
+          "start": 36.247,
+          "end": 36.567
+        },
+        {
+          "text": "w",
+          "start": 36.648,
+          "end": 36.688
+        },
+        {
+          "text": "con",
+          "start": 36.828,
+          "end": 36.968
+        },
+        {
+          "text": "i",
+          "start": 37.008,
+          "end": 37.048
+        },
+        {
+          "text": "asterisco",
+          "start": 37.128,
+          "end": 37.648
+        },
+        {
+          "text": "uguale",
+          "start": 37.688,
+          "end": 37.988
+        },
+        {
+          "text": "a",
+          "start": 38.028,
+          "end": 38.068
+        },
+        {
+          "text": "eta",
+          "start": 38.168,
+          "end": 38.368
+        },
+        {
+          "text": "per",
+          "start": 38.488,
+          "end": 38.628
+        },
+        {
+          "text": "x",
+          "start": 38.748,
+          "end": 38.788
+        },
+        {
+          "text": "meno",
+          "start": 38.988,
+          "end": 39.208
+        },
+        {
+          "text": "w",
+          "start": 39.308,
+          "end": 39.348
+        },
+        {
+          "text": "con",
+          "start": 39.508,
+          "end": 39.648
+        },
+        {
+          "text": "i",
+          "start": 39.688,
+          "end": 39.728
+        },
+        {
+          "text": "asterisco,",
+          "start": 39.788,
+          "end": 40.328
+        }
+      ]
+    },
+    {
+      "start": 40.648,
+      "end": 41.889,
+      "text": "che sposta solo il vincitore;",
+      "words": [
+        {
+          "text": "che",
+          "start": 40.648,
+          "end": 40.728
+        },
+        {
+          "text": "sposta",
+          "start": 40.768,
+          "end": 41.029
+        },
+        {
+          "text": "solo",
+          "start": 41.109,
+          "end": 41.269
+        },
+        {
+          "text": "il",
+          "start": 41.309,
+          "end": 41.369
+        },
+        {
+          "text": "vincitore;",
+          "start": 41.389,
+          "end": 41.889
+        }
+      ]
+    },
+    {
+      "start": 42.469,
+      "end": 47.35,
+      "text": "fissando le assegnazioni e azzerando il gradiente di ogni cluster si passa al K-means batch,",
+      "words": [
+        {
+          "text": "fissando",
+          "start": 42.469,
+          "end": 42.829
+        },
+        {
+          "text": "le",
+          "start": 42.869,
+          "end": 42.929
+        },
+        {
+          "text": "assegnazioni",
+          "start": 42.949,
+          "end": 43.709
+        },
+        {
+          "text": "e",
+          "start": 43.869,
+          "end": 43.909
+        },
+        {
+          "text": "azzerando",
+          "start": 43.949,
+          "end": 44.369
+        },
+        {
+          "text": "il",
+          "start": 44.389,
+          "end": 44.449
+        },
+        {
+          "text": "gradiente",
+          "start": 44.489,
+          "end": 45.009
+        },
+        {
+          "text": "di",
+          "start": 45.069,
+          "end": 45.129
+        },
+        {
+          "text": "ogni",
+          "start": 45.149,
+          "end": 45.29
+        },
+        {
+          "text": "cluster",
+          "start": 45.35,
+          "end": 45.79
+        },
+        {
+          "text": "si",
+          "start": 46.03,
+          "end": 46.11
+        },
+        {
+          "text": "passa",
+          "start": 46.17,
+          "end": 46.41
+        },
+        {
+          "text": "al",
+          "start": 46.45,
+          "end": 46.53
+        },
+        {
+          "text": "K-means",
+          "start": 46.57,
+          "end": 46.97
+        },
+        {
+          "text": "batch,",
+          "start": 47.05,
+          "end": 47.35
+        }
+      ]
+    },
+    {
+      "start": 47.63,
+      "end": 51.211,
+      "text": "che alterna assegnazione al centro più vicino e ricalcolo della media.",
+      "words": [
+        {
+          "text": "che",
+          "start": 47.63,
+          "end": 47.71
+        },
+        {
+          "text": "alterna",
+          "start": 47.75,
+          "end": 48.11
+        },
+        {
+          "text": "assegnazione",
+          "start": 48.23,
+          "end": 49.05
+        },
+        {
+          "text": "al",
+          "start": 49.09,
+          "end": 49.15
+        },
+        {
+          "text": "centro",
+          "start": 49.19,
+          "end": 49.45
+        },
+        {
+          "text": "più",
+          "start": 49.49,
+          "end": 49.591
+        },
+        {
+          "text": "vicino",
+          "start": 49.651,
+          "end": 50.031
+        },
+        {
+          "text": "e",
+          "start": 50.191,
+          "end": 50.231
+        },
+        {
+          "text": "ricalcolo",
+          "start": 50.271,
+          "end": 50.711
+        },
+        {
+          "text": "della",
+          "start": 50.731,
+          "end": 50.891
+        },
+        {
+          "text": "media.",
+          "start": 50.931,
+          "end": 51.211
+        }
+      ]
+    },
+    {
+      "start": 52.011,
+      "end": 58.593,
+      "text": "Terzo: le Self-Organizing Map organizzano le unità su una griglia regolare bidimensionale e combinano fase",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 52.011,
+          "end": 52.391
+        },
+        {
+          "text": "le",
+          "start": 52.831,
+          "end": 52.911
+        },
+        {
+          "text": "Self-Organizing",
+          "start": 52.971,
+          "end": 53.731
+        },
+        {
+          "text": "Map",
+          "start": 53.751,
+          "end": 53.992
+        },
+        {
+          "text": "organizzano",
+          "start": 54.172,
+          "end": 54.712
+        },
+        {
+          "text": "le",
+          "start": 54.792,
+          "end": 54.852
+        },
+        {
+          "text": "unità",
+          "start": 54.892,
+          "end": 55.172
+        },
+        {
+          "text": "su",
+          "start": 55.312,
+          "end": 55.392
+        },
+        {
+          "text": "una",
+          "start": 55.452,
+          "end": 55.572
+        },
+        {
+          "text": "griglia",
+          "start": 55.612,
+          "end": 55.912
+        },
+        {
+          "text": "regolare",
+          "start": 55.992,
+          "end": 56.372
+        },
+        {
+          "text": "bidimensionale",
+          "start": 56.492,
+          "end": 57.352
+        },
+        {
+          "text": "e",
+          "start": 57.712,
+          "end": 57.752
+        },
+        {
+          "text": "combinano",
+          "start": 57.812,
+          "end": 58.253
+        },
+        {
+          "text": "fase",
+          "start": 58.353,
+          "end": 58.593
+        }
+      ]
+    },
+    {
+      "start": 58.633,
+      "end": 64.614,
+      "text": "competitiva, scelta del vincitore, e fase cooperativa, aggiornamento del vincitore e dei suoi vicini sulla",
+      "words": [
+        {
+          "text": "competitiva,",
+          "start": 58.633,
+          "end": 59.293
+        },
+        {
+          "text": "scelta",
+          "start": 59.593,
+          "end": 59.913
+        },
+        {
+          "text": "del",
+          "start": 59.953,
+          "end": 60.053
+        },
+        {
+          "text": "vincitore,",
+          "start": 60.093,
+          "end": 60.613
+        },
+        {
+          "text": "e",
+          "start": 60.893,
+          "end": 60.933
+        },
+        {
+          "text": "fase",
+          "start": 60.993,
+          "end": 61.213
+        },
+        {
+          "text": "cooperativa,",
+          "start": 61.313,
+          "end": 62.073
+        },
+        {
+          "text": "aggiornamento",
+          "start": 62.413,
+          "end": 62.974
+        },
+        {
+          "text": "del",
+          "start": 63.014,
+          "end": 63.114
+        },
+        {
+          "text": "vincitore",
+          "start": 63.154,
+          "end": 63.654
+        },
+        {
+          "text": "e",
+          "start": 63.694,
+          "end": 63.734
+        },
+        {
+          "text": "dei",
+          "start": 63.754,
+          "end": 63.874
+        },
+        {
+          "text": "suoi",
+          "start": 63.894,
+          "end": 64.054
+        },
+        {
+          "text": "vicini",
+          "start": 64.074,
+          "end": 64.374
+        },
+        {
+          "text": "sulla",
+          "start": 64.434,
+          "end": 64.614
+        }
+      ]
+    },
+    {
+      "start": 64.634,
+      "end": 68.875,
+      "text": "mappa tramite una funzione di vicinato gaussiana che si restringe nel tempo;",
+      "words": [
+        {
+          "text": "mappa",
+          "start": 64.634,
+          "end": 64.954
+        },
+        {
+          "text": "tramite",
+          "start": 65.234,
+          "end": 65.574
+        },
+        {
+          "text": "una",
+          "start": 65.634,
+          "end": 65.754
+        },
+        {
+          "text": "funzione",
+          "start": 65.814,
+          "end": 66.314
+        },
+        {
+          "text": "di",
+          "start": 66.354,
+          "end": 66.414
+        },
+        {
+          "text": "vicinato",
+          "start": 66.454,
+          "end": 66.895
+        },
+        {
+          "text": "gaussiana",
+          "start": 66.975,
+          "end": 67.495
+        },
+        {
+          "text": "che",
+          "start": 67.595,
+          "end": 67.675
+        },
+        {
+          "text": "si",
+          "start": 67.735,
+          "end": 67.815
+        },
+        {
+          "text": "restringe",
+          "start": 67.895,
+          "end": 68.295
+        },
+        {
+          "text": "nel",
+          "start": 68.355,
+          "end": 68.475
+        },
+        {
+          "text": "tempo;",
+          "start": 68.535,
+          "end": 68.875
+        }
+      ]
+    },
+    {
+      "start": 69.495,
+      "end": 75.637,
+      "text": "in questo modo preservano la topologia, attenuano i minimi locali e permettono la visualizzazione tramite",
+      "words": [
+        {
+          "text": "in",
+          "start": 69.495,
+          "end": 69.555
+        },
+        {
+          "text": "questo",
+          "start": 69.575,
+          "end": 69.795
+        },
+        {
+          "text": "modo",
+          "start": 69.835,
+          "end": 70.015
+        },
+        {
+          "text": "preservano",
+          "start": 70.055,
+          "end": 70.575
+        },
+        {
+          "text": "la",
+          "start": 70.615,
+          "end": 70.675
+        },
+        {
+          "text": "topologia,",
+          "start": 70.715,
+          "end": 71.296
+        },
+        {
+          "text": "attenuano",
+          "start": 71.696,
+          "end": 72.256
+        },
+        {
+          "text": "i",
+          "start": 72.356,
+          "end": 72.396
+        },
+        {
+          "text": "minimi",
+          "start": 72.436,
+          "end": 72.716
+        },
+        {
+          "text": "locali",
+          "start": 72.776,
+          "end": 73.176
+        },
+        {
+          "text": "e",
+          "start": 73.496,
+          "end": 73.536
+        },
+        {
+          "text": "permettono",
+          "start": 73.576,
+          "end": 74.076
+        },
+        {
+          "text": "la",
+          "start": 74.136,
+          "end": 74.216
+        },
+        {
+          "text": "visualizzazione",
+          "start": 74.296,
+          "end": 75.136
+        },
+        {
+          "text": "tramite",
+          "start": 75.276,
+          "end": 75.637
+        }
+      ]
+    },
+    {
+      "start": 75.717,
+      "end": 76.957,
+      "text": "densità e U-matrix.",
+      "words": [
+        {
+          "text": "densità",
+          "start": 75.717,
+          "end": 76.177
+        },
+        {
+          "text": "e",
+          "start": 76.377,
+          "end": 76.417
+        },
+        {
+          "text": "U-matrix.",
+          "start": 76.517,
+          "end": 76.957
+        }
+      ]
+    },
+    {
+      "start": 77.817,
+      "end": 82.598,
+      "text": "Prima di passare alle reti neurali ricorrenti, mettiti alla prova rispondendo a voce alta alle",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 77.817,
+          "end": 78.037
+        },
+        {
+          "text": "di",
+          "start": 78.077,
+          "end": 78.137
+        },
+        {
+          "text": "passare",
+          "start": 78.177,
+          "end": 78.517
+        },
+        {
+          "text": "alle",
+          "start": 78.537,
+          "end": 78.677
+        },
+        {
+          "text": "reti",
+          "start": 78.717,
+          "end": 78.877
+        },
+        {
+          "text": "neurali",
+          "start": 78.937,
+          "end": 79.297
+        },
+        {
+          "text": "ricorrenti,",
+          "start": 79.397,
+          "end": 79.998
+        },
+        {
+          "text": "mettiti",
+          "start": 80.158,
+          "end": 80.438
+        },
+        {
+          "text": "alla",
+          "start": 80.478,
+          "end": 80.618
+        },
+        {
+          "text": "prova",
+          "start": 80.638,
+          "end": 80.878
+        },
+        {
+          "text": "rispondendo",
+          "start": 80.938,
+          "end": 81.438
+        },
+        {
+          "text": "a",
+          "start": 81.478,
+          "end": 81.518
+        },
+        {
+          "text": "voce",
+          "start": 81.598,
+          "end": 81.878
+        },
+        {
+          "text": "alta",
+          "start": 81.998,
+          "end": 82.278
+        },
+        {
+          "text": "alle",
+          "start": 82.438,
+          "end": 82.598
+        }
+      ]
+    },
+    {
+      "start": 82.638,
+      "end": 85.939,
+      "text": "cinque domande di verifica sullo schermo, senza rileggere gli appunti.",
+      "words": [
+        {
+          "text": "cinque",
+          "start": 82.638,
+          "end": 82.898
+        },
+        {
+          "text": "domande",
+          "start": 82.938,
+          "end": 83.238
+        },
+        {
+          "text": "di",
+          "start": 83.278,
+          "end": 83.338
+        },
+        {
+          "text": "verifica",
+          "start": 83.378,
+          "end": 83.778
+        },
+        {
+          "text": "sullo",
+          "start": 83.838,
+          "end": 84.018
+        },
+        {
+          "text": "schermo,",
+          "start": 84.058,
+          "end": 84.439
+        },
+        {
+          "text": "senza",
+          "start": 84.719,
+          "end": 84.979
+        },
+        {
+          "text": "rileggere",
+          "start": 85.039,
+          "end": 85.419
+        },
+        {
+          "text": "gli",
+          "start": 85.439,
+          "end": 85.519
+        },
+        {
+          "text": "appunti.",
+          "start": 85.539,
+          "end": 85.939
+        }
+      ]
+    }
+  ]
+}

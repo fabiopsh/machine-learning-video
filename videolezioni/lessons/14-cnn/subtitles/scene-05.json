@@ -1,0 +1,1190 @@
+{
+  "duration": 80.045,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.741,
+      "text": "Accanto alla convoluzione, il secondo mattone fondamentale di una rete convoluzionale è il pooling.",
+      "words": [
+        {
+          "text": "Accanto",
+          "start": 0.08,
+          "end": 0.42
+        },
+        {
+          "text": "alla",
+          "start": 0.44,
+          "end": 0.56
+        },
+        {
+          "text": "convoluzione,",
+          "start": 0.6,
+          "end": 1.44
+        },
+        {
+          "text": "il",
+          "start": 1.78,
+          "end": 1.88
+        },
+        {
+          "text": "secondo",
+          "start": 1.96,
+          "end": 2.28
+        },
+        {
+          "text": "mattone",
+          "start": 2.32,
+          "end": 2.6
+        },
+        {
+          "text": "fondamentale",
+          "start": 2.64,
+          "end": 3.26
+        },
+        {
+          "text": "di",
+          "start": 3.3,
+          "end": 3.34
+        },
+        {
+          "text": "una",
+          "start": 3.38,
+          "end": 3.5
+        },
+        {
+          "text": "rete",
+          "start": 3.56,
+          "end": 3.78
+        },
+        {
+          "text": "convoluzionale",
+          "start": 3.84,
+          "end": 4.861
+        },
+        {
+          "text": "è",
+          "start": 5.021,
+          "end": 5.061
+        },
+        {
+          "text": "il",
+          "start": 5.161,
+          "end": 5.221
+        },
+        {
+          "text": "pooling.",
+          "start": 5.281,
+          "end": 5.741
+        }
+      ]
+    },
+    {
+      "start": 6.541,
+      "end": 10.121,
+      "text": "Il compito del pooling è ridurre la dimensione spaziale della feature map:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 6.541,
+          "end": 6.621
+        },
+        {
+          "text": "compito",
+          "start": 6.661,
+          "end": 7.021
+        },
+        {
+          "text": "del",
+          "start": 7.061,
+          "end": 7.161
+        },
+        {
+          "text": "pooling",
+          "start": 7.221,
+          "end": 7.521
+        },
+        {
+          "text": "è",
+          "start": 7.581,
+          "end": 7.621
+        },
+        {
+          "text": "ridurre",
+          "start": 7.681,
+          "end": 8.061
+        },
+        {
+          "text": "la",
+          "start": 8.101,
+          "end": 8.161
+        },
+        {
+          "text": "dimensione",
+          "start": 8.201,
+          "end": 8.621
+        },
+        {
+          "text": "spaziale",
+          "start": 8.681,
+          "end": 9.161
+        },
+        {
+          "text": "della",
+          "start": 9.201,
+          "end": 9.401
+        },
+        {
+          "text": "feature",
+          "start": 9.481,
+          "end": 9.801
+        },
+        {
+          "text": "map:",
+          "start": 9.841,
+          "end": 10.121
+        }
+      ]
+    },
+    {
+      "start": 10.721,
+      "end": 13.542,
+      "text": "invece di mantenere un valore per ogni singola posizione,",
+      "words": [
+        {
+          "text": "invece",
+          "start": 10.721,
+          "end": 11.021
+        },
+        {
+          "text": "di",
+          "start": 11.061,
+          "end": 11.101
+        },
+        {
+          "text": "mantenere",
+          "start": 11.161,
+          "end": 11.601
+        },
+        {
+          "text": "un",
+          "start": 11.641,
+          "end": 11.721
+        },
+        {
+          "text": "valore",
+          "start": 11.761,
+          "end": 12.061
+        },
+        {
+          "text": "per",
+          "start": 12.101,
+          "end": 12.221
+        },
+        {
+          "text": "ogni",
+          "start": 12.261,
+          "end": 12.421
+        },
+        {
+          "text": "singola",
+          "start": 12.521,
+          "end": 12.861
+        },
+        {
+          "text": "posizione,",
+          "start": 12.901,
+          "end": 13.542
+        }
+      ]
+    },
+    {
+      "start": 13.722,
+      "end": 17.722,
+      "text": "sintetizza un intero insieme rettangolare di posizioni in un unico numero.",
+      "words": [
+        {
+          "text": "sintetizza",
+          "start": 13.722,
+          "end": 14.402
+        },
+        {
+          "text": "un",
+          "start": 14.442,
+          "end": 14.522
+        },
+        {
+          "text": "intero",
+          "start": 14.562,
+          "end": 14.882
+        },
+        {
+          "text": "insieme",
+          "start": 14.922,
+          "end": 15.302
+        },
+        {
+          "text": "rettangolare",
+          "start": 15.342,
+          "end": 15.962
+        },
+        {
+          "text": "di",
+          "start": 15.982,
+          "end": 16.042
+        },
+        {
+          "text": "posizioni",
+          "start": 16.102,
+          "end": 16.722
+        },
+        {
+          "text": "in",
+          "start": 16.862,
+          "end": 16.962
+        },
+        {
+          "text": "un",
+          "start": 17.002,
+          "end": 17.062
+        },
+        {
+          "text": "unico",
+          "start": 17.102,
+          "end": 17.362
+        },
+        {
+          "text": "numero.",
+          "start": 17.422,
+          "end": 17.722
+        }
+      ]
+    },
+    {
+      "start": 18.442,
+      "end": 22.463,
+      "text": "Questa operazione esegue un sotto-campionamento usando uno stride maggiore di uno.",
+      "words": [
+        {
+          "text": "Questa",
+          "start": 18.442,
+          "end": 18.662
+        },
+        {
+          "text": "operazione",
+          "start": 18.702,
+          "end": 19.162
+        },
+        {
+          "text": "esegue",
+          "start": 19.182,
+          "end": 19.502
+        },
+        {
+          "text": "un",
+          "start": 19.562,
+          "end": 19.642
+        },
+        {
+          "text": "sotto-campionamento",
+          "start": 19.722,
+          "end": 20.682
+        },
+        {
+          "text": "usando",
+          "start": 20.742,
+          "end": 21.042
+        },
+        {
+          "text": "uno",
+          "start": 21.082,
+          "end": 21.202
+        },
+        {
+          "text": "stride",
+          "start": 21.262,
+          "end": 21.662
+        },
+        {
+          "text": "maggiore",
+          "start": 21.722,
+          "end": 22.082
+        },
+        {
+          "text": "di",
+          "start": 22.122,
+          "end": 22.202
+        },
+        {
+          "text": "uno.",
+          "start": 22.303,
+          "end": 22.463
+        }
+      ]
+    },
+    {
+      "start": 23.243,
+      "end": 24.803,
+      "text": "Come si aggregano i valori nel blocco?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 23.243,
+          "end": 23.403
+        },
+        {
+          "text": "si",
+          "start": 23.443,
+          "end": 23.503
+        },
+        {
+          "text": "aggregano",
+          "start": 23.523,
+          "end": 23.903
+        },
+        {
+          "text": "i",
+          "start": 23.923,
+          "end": 23.963
+        },
+        {
+          "text": "valori",
+          "start": 23.963,
+          "end": 24.243
+        },
+        {
+          "text": "nel",
+          "start": 24.303,
+          "end": 24.423
+        },
+        {
+          "text": "blocco?",
+          "start": 24.463,
+          "end": 24.803
+        }
+      ]
+    },
+    {
+      "start": 25.423,
+      "end": 30.763,
+      "text": "Si può calcolare una media, semplice o pesata — il cosiddetto average pooling — oppure,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 25.423,
+          "end": 25.503
+        },
+        {
+          "text": "può",
+          "start": 25.543,
+          "end": 25.643
+        },
+        {
+          "text": "calcolare",
+          "start": 25.763,
+          "end": 26.183
+        },
+        {
+          "text": "una",
+          "start": 26.223,
+          "end": 26.323
+        },
+        {
+          "text": "media,",
+          "start": 26.343,
+          "end": 26.723
+        },
+        {
+          "text": "semplice",
+          "start": 26.983,
+          "end": 27.403
+        },
+        {
+          "text": "o",
+          "start": 27.463,
+          "end": 27.503
+        },
+        {
+          "text": "pesata",
+          "start": 27.543,
+          "end": 28.003
+        },
+        {
+          "text": "—",
+          "start": 28.003,
+          "end": 28.153
+        },
+        {
+          "text": "il",
+          "start": 28.263,
+          "end": 28.343
+        },
+        {
+          "text": "cosiddetto",
+          "start": 28.363,
+          "end": 28.803
+        },
+        {
+          "text": "average",
+          "start": 28.983,
+          "end": 29.423
+        },
+        {
+          "text": "pooling",
+          "start": 29.463,
+          "end": 29.883
+        },
+        {
+          "text": "—",
+          "start": 29.883,
+          "end": 30.033
+        },
+        {
+          "text": "oppure,",
+          "start": 30.443,
+          "end": 30.763
+        }
+      ]
+    },
+    {
+      "start": 30.803,
+      "end": 33.764,
+      "text": "molto più comunemente nella pratica, prendere il valore massimo,",
+      "words": [
+        {
+          "text": "molto",
+          "start": 30.803,
+          "end": 31.043
+        },
+        {
+          "text": "più",
+          "start": 31.083,
+          "end": 31.183
+        },
+        {
+          "text": "comunemente",
+          "start": 31.223,
+          "end": 31.764
+        },
+        {
+          "text": "nella",
+          "start": 31.804,
+          "end": 31.964
+        },
+        {
+          "text": "pratica,",
+          "start": 32.004,
+          "end": 32.404
+        },
+        {
+          "text": "prendere",
+          "start": 32.464,
+          "end": 32.804
+        },
+        {
+          "text": "il",
+          "start": 32.844,
+          "end": 32.904
+        },
+        {
+          "text": "valore",
+          "start": 32.944,
+          "end": 33.224
+        },
+        {
+          "text": "massimo,",
+          "start": 33.264,
+          "end": 33.764
+        }
+      ]
+    },
+    {
+      "start": 34.204,
+      "end": 35.324,
+      "text": "cioè il max pooling.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 34.204,
+          "end": 34.404
+        },
+        {
+          "text": "il",
+          "start": 34.584,
+          "end": 34.684
+        },
+        {
+          "text": "max",
+          "start": 34.724,
+          "end": 34.864
+        },
+        {
+          "text": "pooling.",
+          "start": 34.964,
+          "end": 35.324
+        }
+      ]
+    },
+    {
+      "start": 36.124,
+      "end": 41.305,
+      "text": "Osserviamo l'esempio numerico sulla figura: partiamo da una feature map quattro per quattro suddivisa in",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 36.124,
+          "end": 36.564
+        },
+        {
+          "text": "l'esempio",
+          "start": 36.604,
+          "end": 36.904
+        },
+        {
+          "text": "numerico",
+          "start": 36.924,
+          "end": 37.304
+        },
+        {
+          "text": "sulla",
+          "start": 37.384,
+          "end": 37.584
+        },
+        {
+          "text": "figura:",
+          "start": 37.604,
+          "end": 37.984
+        },
+        {
+          "text": "partiamo",
+          "start": 38.364,
+          "end": 38.684
+        },
+        {
+          "text": "da",
+          "start": 38.744,
+          "end": 38.804
+        },
+        {
+          "text": "una",
+          "start": 38.864,
+          "end": 38.984
+        },
+        {
+          "text": "feature",
+          "start": 39.064,
+          "end": 39.424
+        },
+        {
+          "text": "map",
+          "start": 39.464,
+          "end": 39.684
+        },
+        {
+          "text": "quattro",
+          "start": 39.784,
+          "end": 40.044
+        },
+        {
+          "text": "per",
+          "start": 40.064,
+          "end": 40.184
+        },
+        {
+          "text": "quattro",
+          "start": 40.245,
+          "end": 40.685
+        },
+        {
+          "text": "suddivisa",
+          "start": 40.745,
+          "end": 41.185
+        },
+        {
+          "text": "in",
+          "start": 41.245,
+          "end": 41.305
+        }
+      ]
+    },
+    {
+      "start": 41.385,
+      "end": 43.345,
+      "text": "quattro quadranti colorati due per due,",
+      "words": [
+        {
+          "text": "quattro",
+          "start": 41.385,
+          "end": 41.685
+        },
+        {
+          "text": "quadranti",
+          "start": 41.725,
+          "end": 42.145
+        },
+        {
+          "text": "colorati",
+          "start": 42.205,
+          "end": 42.645
+        },
+        {
+          "text": "due",
+          "start": 42.745,
+          "end": 42.885
+        },
+        {
+          "text": "per",
+          "start": 42.945,
+          "end": 43.065
+        },
+        {
+          "text": "due,",
+          "start": 43.145,
+          "end": 43.345
+        }
+      ]
+    },
+    {
+      "start": 43.925,
+      "end": 46.605,
+      "text": "e applichiamo un max pooling due per due con stride due.",
+      "words": [
+        {
+          "text": "e",
+          "start": 43.925,
+          "end": 43.965
+        },
+        {
+          "text": "applichiamo",
+          "start": 43.985,
+          "end": 44.405
+        },
+        {
+          "text": "un",
+          "start": 44.445,
+          "end": 44.505
+        },
+        {
+          "text": "max",
+          "start": 44.545,
+          "end": 44.685
+        },
+        {
+          "text": "pooling",
+          "start": 44.785,
+          "end": 45.085
+        },
+        {
+          "text": "due",
+          "start": 45.165,
+          "end": 45.285
+        },
+        {
+          "text": "per",
+          "start": 45.325,
+          "end": 45.445
+        },
+        {
+          "text": "due",
+          "start": 45.525,
+          "end": 45.705
+        },
+        {
+          "text": "con",
+          "start": 45.805,
+          "end": 45.945
+        },
+        {
+          "text": "stride",
+          "start": 45.985,
+          "end": 46.325
+        },
+        {
+          "text": "due.",
+          "start": 46.385,
+          "end": 46.605
+        }
+      ]
+    },
+    {
+      "start": 47.825,
+      "end": 50.966,
+      "text": "Dal blocco blu in alto a sinistra estraiamo il massimo sei;",
+      "words": [
+        {
+          "text": "Dal",
+          "start": 47.825,
+          "end": 47.945
+        },
+        {
+          "text": "blocco",
+          "start": 47.965,
+          "end": 48.225
+        },
+        {
+          "text": "blu",
+          "start": 48.285,
+          "end": 48.385
+        },
+        {
+          "text": "in",
+          "start": 48.465,
+          "end": 48.525
+        },
+        {
+          "text": "alto",
+          "start": 48.565,
+          "end": 48.725
+        },
+        {
+          "text": "a",
+          "start": 48.745,
+          "end": 48.785
+        },
+        {
+          "text": "sinistra",
+          "start": 48.845,
+          "end": 49.286
+        },
+        {
+          "text": "estraiamo",
+          "start": 49.686,
+          "end": 50.126
+        },
+        {
+          "text": "il",
+          "start": 50.186,
+          "end": 50.246
+        },
+        {
+          "text": "massimo",
+          "start": 50.286,
+          "end": 50.626
+        },
+        {
+          "text": "sei;",
+          "start": 50.706,
+          "end": 50.966
+        }
+      ]
+    },
+    {
+      "start": 51.366,
+      "end": 55.066,
+      "text": "dal blocco rosso il massimo otto; dal blocco verde il massimo tre;",
+      "words": [
+        {
+          "text": "dal",
+          "start": 51.366,
+          "end": 51.486
+        },
+        {
+          "text": "blocco",
+          "start": 51.526,
+          "end": 51.806
+        },
+        {
+          "text": "rosso",
+          "start": 51.866,
+          "end": 52.106
+        },
+        {
+          "text": "il",
+          "start": 52.146,
+          "end": 52.206
+        },
+        {
+          "text": "massimo",
+          "start": 52.226,
+          "end": 52.566
+        },
+        {
+          "text": "otto;",
+          "start": 52.686,
+          "end": 52.926
+        },
+        {
+          "text": "dal",
+          "start": 53.406,
+          "end": 53.546
+        },
+        {
+          "text": "blocco",
+          "start": 53.586,
+          "end": 53.846
+        },
+        {
+          "text": "verde",
+          "start": 53.886,
+          "end": 54.246
+        },
+        {
+          "text": "il",
+          "start": 54.386,
+          "end": 54.466
+        },
+        {
+          "text": "massimo",
+          "start": 54.506,
+          "end": 54.866
+        },
+        {
+          "text": "tre;",
+          "start": 54.946,
+          "end": 55.066
+        }
+      ]
+    },
+    {
+      "start": 55.566,
+      "end": 57.386,
+      "text": "dal blocco arancio il massimo quattro.",
+      "words": [
+        {
+          "text": "dal",
+          "start": 55.566,
+          "end": 55.686
+        },
+        {
+          "text": "blocco",
+          "start": 55.726,
+          "end": 55.986
+        },
+        {
+          "text": "arancio",
+          "start": 56.026,
+          "end": 56.406
+        },
+        {
+          "text": "il",
+          "start": 56.526,
+          "end": 56.606
+        },
+        {
+          "text": "massimo",
+          "start": 56.646,
+          "end": 56.966
+        },
+        {
+          "text": "quattro.",
+          "start": 57.026,
+          "end": 57.386
+        }
+      ]
+    },
+    {
+      "start": 58.187,
+      "end": 61.087,
+      "text": "La mappa si dimezza su ogni lato diventando due per due.",
+      "words": [
+        {
+          "text": "La",
+          "start": 58.187,
+          "end": 58.267
+        },
+        {
+          "text": "mappa",
+          "start": 58.307,
+          "end": 58.547
+        },
+        {
+          "text": "si",
+          "start": 58.607,
+          "end": 58.687
+        },
+        {
+          "text": "dimezza",
+          "start": 58.727,
+          "end": 59.047
+        },
+        {
+          "text": "su",
+          "start": 59.107,
+          "end": 59.167
+        },
+        {
+          "text": "ogni",
+          "start": 59.227,
+          "end": 59.387
+        },
+        {
+          "text": "lato",
+          "start": 59.427,
+          "end": 59.667
+        },
+        {
+          "text": "diventando",
+          "start": 59.707,
+          "end": 60.227
+        },
+        {
+          "text": "due",
+          "start": 60.407,
+          "end": 60.587
+        },
+        {
+          "text": "per",
+          "start": 60.627,
+          "end": 60.767
+        },
+        {
+          "text": "due.",
+          "start": 60.867,
+          "end": 61.087
+        }
+      ]
+    },
+    {
+      "start": 62.227,
+      "end": 66.567,
+      "text": "Oltre a comprimere la rappresentazione, il pooling offre un beneficio cruciale:",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 62.227,
+          "end": 62.487
+        },
+        {
+          "text": "a",
+          "start": 62.547,
+          "end": 62.587
+        },
+        {
+          "text": "comprimere",
+          "start": 62.667,
+          "end": 63.327
+        },
+        {
+          "text": "la",
+          "start": 63.387,
+          "end": 63.447
+        },
+        {
+          "text": "rappresentazione,",
+          "start": 63.487,
+          "end": 64.467
+        },
+        {
+          "text": "il",
+          "start": 64.727,
+          "end": 64.807
+        },
+        {
+          "text": "pooling",
+          "start": 64.867,
+          "end": 65.187
+        },
+        {
+          "text": "offre",
+          "start": 65.247,
+          "end": 65.447
+        },
+        {
+          "text": "un",
+          "start": 65.487,
+          "end": 65.547
+        },
+        {
+          "text": "beneficio",
+          "start": 65.567,
+          "end": 66.007
+        },
+        {
+          "text": "cruciale:",
+          "start": 66.047,
+          "end": 66.567
+        }
+      ]
+    },
+    {
+      "start": 67.108,
+      "end": 71.248,
+      "text": "rende la rappresentazione approssimativamente invariante a piccole traslazioni.",
+      "words": [
+        {
+          "text": "rende",
+          "start": 67.108,
+          "end": 67.348
+        },
+        {
+          "text": "la",
+          "start": 67.388,
+          "end": 67.448
+        },
+        {
+          "text": "rappresentazione",
+          "start": 67.488,
+          "end": 68.228
+        },
+        {
+          "text": "approssimativamente",
+          "start": 68.268,
+          "end": 69.208
+        },
+        {
+          "text": "invariante",
+          "start": 69.248,
+          "end": 69.948
+        },
+        {
+          "text": "a",
+          "start": 70.068,
+          "end": 70.108
+        },
+        {
+          "text": "piccole",
+          "start": 70.188,
+          "end": 70.508
+        },
+        {
+          "text": "traslazioni.",
+          "start": 70.528,
+          "end": 71.248
+        }
+      ]
+    },
+    {
+      "start": 71.728,
+      "end": 75.008,
+      "text": "Infatti, se un tratto nell'input si sposta di uno o due pixel,",
+      "words": [
+        {
+          "text": "Infatti,",
+          "start": 71.728,
+          "end": 72.108
+        },
+        {
+          "text": "se",
+          "start": 72.428,
+          "end": 72.488
+        },
+        {
+          "text": "un",
+          "start": 72.548,
+          "end": 72.608
+        },
+        {
+          "text": "tratto",
+          "start": 72.648,
+          "end": 72.908
+        },
+        {
+          "text": "nell'input",
+          "start": 72.968,
+          "end": 73.428
+        },
+        {
+          "text": "si",
+          "start": 73.508,
+          "end": 73.588
+        },
+        {
+          "text": "sposta",
+          "start": 73.628,
+          "end": 73.948
+        },
+        {
+          "text": "di",
+          "start": 74.008,
+          "end": 74.068
+        },
+        {
+          "text": "uno",
+          "start": 74.168,
+          "end": 74.328
+        },
+        {
+          "text": "o",
+          "start": 74.348,
+          "end": 74.388
+        },
+        {
+          "text": "due",
+          "start": 74.428,
+          "end": 74.528
+        },
+        {
+          "text": "pixel,",
+          "start": 74.568,
+          "end": 75.008
+        }
+      ]
+    },
+    {
+      "start": 75.468,
+      "end": 79.489,
+      "text": "il massimo o la media della sua piccola regione cambia pochissimo o resta invariato.",
+      "words": [
+        {
+          "text": "il",
+          "start": 75.468,
+          "end": 75.568
+        },
+        {
+          "text": "massimo",
+          "start": 75.608,
+          "end": 76.008
+        },
+        {
+          "text": "o",
+          "start": 76.049,
+          "end": 76.08900000000001
+        },
+        {
+          "text": "la",
+          "start": 76.109,
+          "end": 76.169
+        },
+        {
+          "text": "media",
+          "start": 76.209,
+          "end": 76.449
+        },
+        {
+          "text": "della",
+          "start": 76.489,
+          "end": 76.649
+        },
+        {
+          "text": "sua",
+          "start": 76.689,
+          "end": 76.829
+        },
+        {
+          "text": "piccola",
+          "start": 76.849,
+          "end": 77.169
+        },
+        {
+          "text": "regione",
+          "start": 77.209,
+          "end": 77.549
+        },
+        {
+          "text": "cambia",
+          "start": 77.649,
+          "end": 77.909
+        },
+        {
+          "text": "pochissimo",
+          "start": 77.969,
+          "end": 78.529
+        },
+        {
+          "text": "o",
+          "start": 78.689,
+          "end": 78.729
+        },
+        {
+          "text": "resta",
+          "start": 78.749,
+          "end": 78.989
+        },
+        {
+          "text": "invariato.",
+          "start": 79.009,
+          "end": 79.489
+        }
+      ]
+    }
+  ]
+}

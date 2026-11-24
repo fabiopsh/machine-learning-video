@@ -1,0 +1,979 @@
+{
+  "duration": 79.822,
+  "segments": [
+    {
+      "start": 0.565,
+      "end": 5.485,
+      "text": "L'apprendimento su grafi è un campo vivissimo che si estende ben oltre la classificazione statica",
+      "words": [
+        {
+          "text": "L'apprendimento",
+          "start": 0.565,
+          "end": 1.185
+        },
+        {
+          "text": "su",
+          "start": 1.245,
+          "end": 1.305
+        },
+        {
+          "text": "grafi",
+          "start": 1.385,
+          "end": 1.625
+        },
+        {
+          "text": "è",
+          "start": 1.685,
+          "end": 1.725
+        },
+        {
+          "text": "un",
+          "start": 1.725,
+          "end": 1.785
+        },
+        {
+          "text": "campo",
+          "start": 1.825,
+          "end": 2.105
+        },
+        {
+          "text": "vivissimo",
+          "start": 2.185,
+          "end": 2.765
+        },
+        {
+          "text": "che",
+          "start": 2.825,
+          "end": 2.905
+        },
+        {
+          "text": "si",
+          "start": 2.945,
+          "end": 3.005
+        },
+        {
+          "text": "estende",
+          "start": 3.065,
+          "end": 3.425
+        },
+        {
+          "text": "ben",
+          "start": 3.505,
+          "end": 3.645
+        },
+        {
+          "text": "oltre",
+          "start": 3.725,
+          "end": 4.005
+        },
+        {
+          "text": "la",
+          "start": 4.085,
+          "end": 4.125
+        },
+        {
+          "text": "classificazione",
+          "start": 4.165,
+          "end": 4.925
+        },
+        {
+          "text": "statica",
+          "start": 5.005,
+          "end": 5.485
+        }
+      ]
+    },
+    {
+      "start": 5.525,
+      "end": 6.605,
+      "text": "di nodi e grafi.",
+      "words": [
+        {
+          "text": "di",
+          "start": 5.525,
+          "end": 5.585
+        },
+        {
+          "text": "nodi",
+          "start": 5.645,
+          "end": 5.925
+        },
+        {
+          "text": "e",
+          "start": 6.105,
+          "end": 6.1450000000000005
+        },
+        {
+          "text": "grafi.",
+          "start": 6.225,
+          "end": 6.605
+        }
+      ]
+    },
+    {
+      "start": 7.965,
+      "end": 11.146,
+      "text": "Vediamo le cinque direzioni principali richiamate nel capitolo.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 7.965,
+          "end": 8.285
+        },
+        {
+          "text": "le",
+          "start": 8.325,
+          "end": 8.405
+        },
+        {
+          "text": "cinque",
+          "start": 8.485,
+          "end": 8.785
+        },
+        {
+          "text": "direzioni",
+          "start": 8.825,
+          "end": 9.225
+        },
+        {
+          "text": "principali",
+          "start": 9.265,
+          "end": 9.865
+        },
+        {
+          "text": "richiamate",
+          "start": 10.045,
+          "end": 10.505
+        },
+        {
+          "text": "nel",
+          "start": 10.525,
+          "end": 10.645
+        },
+        {
+          "text": "capitolo.",
+          "start": 10.685,
+          "end": 11.146
+        }
+      ]
+    },
+    {
+      "start": 11.926,
+      "end": 18.046,
+      "text": "Prima estensione: i grafi dinamici, in cui nodi, archi o etichette evolvono nel tempo;",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 11.926,
+          "end": 12.186
+        },
+        {
+          "text": "estensione:",
+          "start": 12.226,
+          "end": 12.806
+        },
+        {
+          "text": "i",
+          "start": 13.246,
+          "end": 13.286
+        },
+        {
+          "text": "grafi",
+          "start": 13.346,
+          "end": 13.646
+        },
+        {
+          "text": "dinamici,",
+          "start": 13.686,
+          "end": 14.206
+        },
+        {
+          "text": "in",
+          "start": 14.466,
+          "end": 14.546
+        },
+        {
+          "text": "cui",
+          "start": 14.586,
+          "end": 14.726
+        },
+        {
+          "text": "nodi,",
+          "start": 14.906,
+          "end": 15.246
+        },
+        {
+          "text": "archi",
+          "start": 15.446,
+          "end": 15.766
+        },
+        {
+          "text": "o",
+          "start": 15.866,
+          "end": 15.906
+        },
+        {
+          "text": "etichette",
+          "start": 15.966,
+          "end": 16.506
+        },
+        {
+          "text": "evolvono",
+          "start": 16.926,
+          "end": 17.426
+        },
+        {
+          "text": "nel",
+          "start": 17.466,
+          "end": 17.606
+        },
+        {
+          "text": "tempo;",
+          "start": 17.686,
+          "end": 18.046
+        }
+      ]
+    },
+    {
+      "start": 18.566,
+      "end": 26.287,
+      "text": "possono essere trattati efficacemente, ad esempio, con architetture a reservoir multistrato che uniscono dinamica temporale",
+      "words": [
+        {
+          "text": "possono",
+          "start": 18.566,
+          "end": 18.846
+        },
+        {
+          "text": "essere",
+          "start": 18.886,
+          "end": 19.126
+        },
+        {
+          "text": "trattati",
+          "start": 19.166,
+          "end": 19.586
+        },
+        {
+          "text": "efficacemente,",
+          "start": 19.646,
+          "end": 20.426
+        },
+        {
+          "text": "ad",
+          "start": 20.486,
+          "end": 20.566
+        },
+        {
+          "text": "esempio,",
+          "start": 20.606,
+          "end": 20.986
+        },
+        {
+          "text": "con",
+          "start": 21.286,
+          "end": 21.466
+        },
+        {
+          "text": "architetture",
+          "start": 21.647,
+          "end": 22.467
+        },
+        {
+          "text": "a",
+          "start": 22.527,
+          "end": 22.567
+        },
+        {
+          "text": "reservoir",
+          "start": 22.647,
+          "end": 23.207
+        },
+        {
+          "text": "multistrato",
+          "start": 23.327,
+          "end": 24.147
+        },
+        {
+          "text": "che",
+          "start": 24.567,
+          "end": 24.647
+        },
+        {
+          "text": "uniscono",
+          "start": 24.707,
+          "end": 25.107
+        },
+        {
+          "text": "dinamica",
+          "start": 25.187,
+          "end": 25.667
+        },
+        {
+          "text": "temporale",
+          "start": 25.727,
+          "end": 26.287
+        }
+      ]
+    },
+    {
+      "start": 26.447,
+      "end": 27.207,
+      "text": "e topologia.",
+      "words": [
+        {
+          "text": "e",
+          "start": 26.447,
+          "end": 26.487
+        },
+        {
+          "text": "topologia.",
+          "start": 26.567,
+          "end": 27.207
+        }
+      ]
+    },
+    {
+      "start": 28.747,
+      "end": 31.187,
+      "text": "Seconda estensione: la generazione di grafi.",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 28.747,
+          "end": 29.047
+        },
+        {
+          "text": "estensione:",
+          "start": 29.087,
+          "end": 29.647
+        },
+        {
+          "text": "la",
+          "start": 30.067,
+          "end": 30.127
+        },
+        {
+          "text": "generazione",
+          "start": 30.187,
+          "end": 30.747
+        },
+        {
+          "text": "di",
+          "start": 30.787,
+          "end": 30.827
+        },
+        {
+          "text": "grafi.",
+          "start": 30.867,
+          "end": 31.187
+        }
+      ]
+    },
+    {
+      "start": 31.827,
+      "end": 34.588,
+      "text": "Invece di predire una proprietà a partire da un grafo,",
+      "words": [
+        {
+          "text": "Invece",
+          "start": 31.827,
+          "end": 32.148
+        },
+        {
+          "text": "di",
+          "start": 32.208,
+          "end": 32.268
+        },
+        {
+          "text": "predire",
+          "start": 32.348,
+          "end": 32.788
+        },
+        {
+          "text": "una",
+          "start": 32.848,
+          "end": 32.948
+        },
+        {
+          "text": "proprietà",
+          "start": 33.008,
+          "end": 33.448
+        },
+        {
+          "text": "a",
+          "start": 33.528,
+          "end": 33.568
+        },
+        {
+          "text": "partire",
+          "start": 33.628,
+          "end": 33.968
+        },
+        {
+          "text": "da",
+          "start": 34.028,
+          "end": 34.068
+        },
+        {
+          "text": "un",
+          "start": 34.128,
+          "end": 34.188
+        },
+        {
+          "text": "grafo,",
+          "start": 34.228,
+          "end": 34.588
+        }
+      ]
+    },
+    {
+      "start": 35.088,
+      "end": 40.588,
+      "text": "si apprende una distribuzione di probabilità p di G sui grafi per campionare nuove strutture",
+      "words": [
+        {
+          "text": "si",
+          "start": 35.088,
+          "end": 35.148
+        },
+        {
+          "text": "apprende",
+          "start": 35.208,
+          "end": 35.568
+        },
+        {
+          "text": "una",
+          "start": 35.608,
+          "end": 35.708
+        },
+        {
+          "text": "distribuzione",
+          "start": 35.748,
+          "end": 36.368
+        },
+        {
+          "text": "di",
+          "start": 36.408,
+          "end": 36.488
+        },
+        {
+          "text": "probabilità",
+          "start": 36.528,
+          "end": 37.128
+        },
+        {
+          "text": "p",
+          "start": 37.388,
+          "end": 37.428
+        },
+        {
+          "text": "di",
+          "start": 37.588,
+          "end": 37.668
+        },
+        {
+          "text": "G",
+          "start": 37.768,
+          "end": 37.808
+        },
+        {
+          "text": "sui",
+          "start": 38.228,
+          "end": 38.428
+        },
+        {
+          "text": "grafi",
+          "start": 38.468,
+          "end": 38.848
+        },
+        {
+          "text": "per",
+          "start": 39.228,
+          "end": 39.348
+        },
+        {
+          "text": "campionare",
+          "start": 39.368,
+          "end": 39.828
+        },
+        {
+          "text": "nuove",
+          "start": 39.888,
+          "end": 40.128
+        },
+        {
+          "text": "strutture",
+          "start": 40.188,
+          "end": 40.588
+        }
+      ]
+    },
+    {
+      "start": 40.648,
+      "end": 45.149,
+      "text": "plausibili, una tecnologia chiave nella scoperta di nuove molecole farmacologiche.",
+      "words": [
+        {
+          "text": "plausibili,",
+          "start": 40.648,
+          "end": 41.208
+        },
+        {
+          "text": "una",
+          "start": 41.628,
+          "end": 41.768
+        },
+        {
+          "text": "tecnologia",
+          "start": 41.808,
+          "end": 42.368
+        },
+        {
+          "text": "chiave",
+          "start": 42.448,
+          "end": 42.728
+        },
+        {
+          "text": "nella",
+          "start": 42.789,
+          "end": 42.949
+        },
+        {
+          "text": "scoperta",
+          "start": 42.989,
+          "end": 43.369
+        },
+        {
+          "text": "di",
+          "start": 43.429,
+          "end": 43.489
+        },
+        {
+          "text": "nuove",
+          "start": 43.549,
+          "end": 43.789
+        },
+        {
+          "text": "molecole",
+          "start": 43.869,
+          "end": 44.309
+        },
+        {
+          "text": "farmacologiche.",
+          "start": 44.349,
+          "end": 45.149
+        }
+      ]
+    },
+    {
+      "start": 46.129,
+      "end": 52.669,
+      "text": "Terza estensione: la spiegabilità, o explainability, il cui scopo è individuare quali sotto-strutture,",
+      "words": [
+        {
+          "text": "Terza",
+          "start": 46.129,
+          "end": 46.389
+        },
+        {
+          "text": "estensione:",
+          "start": 46.429,
+          "end": 46.989
+        },
+        {
+          "text": "la",
+          "start": 47.449,
+          "end": 47.509
+        },
+        {
+          "text": "spiegabilità,",
+          "start": 47.569,
+          "end": 48.289
+        },
+        {
+          "text": "o",
+          "start": 48.569,
+          "end": 48.609
+        },
+        {
+          "text": "explainability,",
+          "start": 48.769,
+          "end": 49.669
+        },
+        {
+          "text": "il",
+          "start": 50.149,
+          "end": 50.229
+        },
+        {
+          "text": "cui",
+          "start": 50.249,
+          "end": 50.369
+        },
+        {
+          "text": "scopo",
+          "start": 50.389,
+          "end": 50.649
+        },
+        {
+          "text": "è",
+          "start": 50.669,
+          "end": 50.709
+        },
+        {
+          "text": "individuare",
+          "start": 50.709,
+          "end": 51.249
+        },
+        {
+          "text": "quali",
+          "start": 51.349,
+          "end": 51.649
+        },
+        {
+          "text": "sotto-strutture,",
+          "start": 51.729,
+          "end": 52.669
+        }
+      ]
+    },
+    {
+      "start": 52.929,
+      "end": 57.29,
+      "text": "motivi o sottografi hanno determinato una specifica predizione della rete.",
+      "words": [
+        {
+          "text": "motivi",
+          "start": 52.929,
+          "end": 53.41
+        },
+        {
+          "text": "o",
+          "start": 53.59,
+          "end": 53.63
+        },
+        {
+          "text": "sottografi",
+          "start": 53.69,
+          "end": 54.31
+        },
+        {
+          "text": "hanno",
+          "start": 54.71,
+          "end": 54.91
+        },
+        {
+          "text": "determinato",
+          "start": 54.95,
+          "end": 55.51
+        },
+        {
+          "text": "una",
+          "start": 55.55,
+          "end": 55.65
+        },
+        {
+          "text": "specifica",
+          "start": 55.69,
+          "end": 56.19
+        },
+        {
+          "text": "predizione",
+          "start": 56.23,
+          "end": 56.75
+        },
+        {
+          "text": "della",
+          "start": 56.79,
+          "end": 56.99
+        },
+        {
+          "text": "rete.",
+          "start": 57.05,
+          "end": 57.29
+        }
+      ]
+    },
+    {
+      "start": 58.65,
+      "end": 64.131,
+      "text": "Quarta estensione: la network quantification, che non mira a etichettare il singolo nodo ma a",
+      "words": [
+        {
+          "text": "Quarta",
+          "start": 58.65,
+          "end": 58.89
+        },
+        {
+          "text": "estensione:",
+          "start": 58.93,
+          "end": 59.51
+        },
+        {
+          "text": "la",
+          "start": 59.91,
+          "end": 59.99
+        },
+        {
+          "text": "network",
+          "start": 60.11,
+          "end": 60.55
+        },
+        {
+          "text": "quantification,",
+          "start": 60.61,
+          "end": 61.47
+        },
+        {
+          "text": "che",
+          "start": 61.91,
+          "end": 62.01
+        },
+        {
+          "text": "non",
+          "start": 62.05,
+          "end": 62.15
+        },
+        {
+          "text": "mira",
+          "start": 62.19,
+          "end": 62.39
+        },
+        {
+          "text": "a",
+          "start": 62.41,
+          "end": 62.45
+        },
+        {
+          "text": "etichettare",
+          "start": 62.51,
+          "end": 63.03
+        },
+        {
+          "text": "il",
+          "start": 63.07,
+          "end": 63.13
+        },
+        {
+          "text": "singolo",
+          "start": 63.17,
+          "end": 63.51
+        },
+        {
+          "text": "nodo",
+          "start": 63.57,
+          "end": 63.81
+        },
+        {
+          "text": "ma",
+          "start": 63.95,
+          "end": 64.011
+        },
+        {
+          "text": "a",
+          "start": 64.091,
+          "end": 64.131
+        }
+      ]
+    },
+    {
+      "start": 64.191,
+      "end": 69.651,
+      "text": "stimare con precisione la prevalenza complessiva delle varie classi tra i nodi non etichettati di",
+      "words": [
+        {
+          "text": "stimare",
+          "start": 64.191,
+          "end": 64.731
+        },
+        {
+          "text": "con",
+          "start": 64.811,
+          "end": 64.951
+        },
+        {
+          "text": "precisione",
+          "start": 64.991,
+          "end": 65.611
+        },
+        {
+          "text": "la",
+          "start": 65.971,
+          "end": 66.051
+        },
+        {
+          "text": "prevalenza",
+          "start": 66.071,
+          "end": 66.551
+        },
+        {
+          "text": "complessiva",
+          "start": 66.611,
+          "end": 67.151
+        },
+        {
+          "text": "delle",
+          "start": 67.211,
+          "end": 67.391
+        },
+        {
+          "text": "varie",
+          "start": 67.411,
+          "end": 67.631
+        },
+        {
+          "text": "classi",
+          "start": 67.671,
+          "end": 68.051
+        },
+        {
+          "text": "tra",
+          "start": 68.171,
+          "end": 68.291
+        },
+        {
+          "text": "i",
+          "start": 68.331,
+          "end": 68.37100000000001
+        },
+        {
+          "text": "nodi",
+          "start": 68.411,
+          "end": 68.651
+        },
+        {
+          "text": "non",
+          "start": 68.731,
+          "end": 68.911
+        },
+        {
+          "text": "etichettati",
+          "start": 68.971,
+          "end": 69.551
+        },
+        {
+          "text": "di",
+          "start": 69.591,
+          "end": 69.651
+        }
+      ]
+    },
+    {
+      "start": 69.691,
+      "end": 70.111,
+      "text": "una rete.",
+      "words": [
+        {
+          "text": "una",
+          "start": 69.691,
+          "end": 69.811
+        },
+        {
+          "text": "rete.",
+          "start": 69.851,
+          "end": 70.111
+        }
+      ]
+    },
+    {
+      "start": 70.991,
+      "end": 78.692,
+      "text": "Quinta direzione: l'ampio spettro di applicazioni in bioinformatica, dalle interazioni proteina-proteina fino alle reti metaboliche",
+      "words": [
+        {
+          "text": "Quinta",
+          "start": 70.991,
+          "end": 71.251
+        },
+        {
+          "text": "direzione:",
+          "start": 71.311,
+          "end": 71.871
+        },
+        {
+          "text": "l'ampio",
+          "start": 72.291,
+          "end": 72.571
+        },
+        {
+          "text": "spettro",
+          "start": 72.611,
+          "end": 72.931
+        },
+        {
+          "text": "di",
+          "start": 72.971,
+          "end": 73.031
+        },
+        {
+          "text": "applicazioni",
+          "start": 73.051,
+          "end": 73.631
+        },
+        {
+          "text": "in",
+          "start": 73.691,
+          "end": 73.73100000000001
+        },
+        {
+          "text": "bioinformatica,",
+          "start": 73.771,
+          "end": 74.632
+        },
+        {
+          "text": "dalle",
+          "start": 75.052,
+          "end": 75.252
+        },
+        {
+          "text": "interazioni",
+          "start": 75.292,
+          "end": 75.832
+        },
+        {
+          "text": "proteina-proteina",
+          "start": 75.972,
+          "end": 77.032
+        },
+        {
+          "text": "fino",
+          "start": 77.392,
+          "end": 77.572
+        },
+        {
+          "text": "alle",
+          "start": 77.612,
+          "end": 77.772
+        },
+        {
+          "text": "reti",
+          "start": 77.832,
+          "end": 78.032
+        },
+        {
+          "text": "metaboliche",
+          "start": 78.072,
+          "end": 78.692
+        }
+      ]
+    },
+    {
+      "start": 78.892,
+      "end": 79.572,
+      "text": "e regolative.",
+      "words": [
+        {
+          "text": "e",
+          "start": 78.892,
+          "end": 78.932
+        },
+        {
+          "text": "regolative.",
+          "start": 79.012,
+          "end": 79.572
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1485 @@
+{
+  "duration": 103.386,
+  "segments": [
+    {
+      "start": 0.707,
+      "end": 3.448,
+      "text": "Come calcola gli embedding una Deep Graph Network?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.707,
+          "end": 0.867
+        },
+        {
+          "text": "calcola",
+          "start": 0.927,
+          "end": 1.287
+        },
+        {
+          "text": "gli",
+          "start": 1.307,
+          "end": 1.407
+        },
+        {
+          "text": "embedding",
+          "start": 1.447,
+          "end": 1.927
+        },
+        {
+          "text": "una",
+          "start": 2.107,
+          "end": 2.247
+        },
+        {
+          "text": "Deep",
+          "start": 2.347,
+          "end": 2.527
+        },
+        {
+          "text": "Graph",
+          "start": 2.607,
+          "end": 2.887
+        },
+        {
+          "text": "Network?",
+          "start": 2.967,
+          "end": 3.448
+        }
+      ]
+    },
+    {
+      "start": 4.008,
+      "end": 6.948,
+      "text": "Il meccanismo fondamentale si chiama message passing:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 4.008,
+          "end": 4.108
+        },
+        {
+          "text": "meccanismo",
+          "start": 4.148,
+          "end": 4.648
+        },
+        {
+          "text": "fondamentale",
+          "start": 4.748,
+          "end": 5.448
+        },
+        {
+          "text": "si",
+          "start": 5.508,
+          "end": 5.568
+        },
+        {
+          "text": "chiama",
+          "start": 5.608,
+          "end": 5.868
+        },
+        {
+          "text": "message",
+          "start": 6.068,
+          "end": 6.448
+        },
+        {
+          "text": "passing:",
+          "start": 6.488,
+          "end": 6.948
+        }
+      ]
+    },
+    {
+      "start": 7.608,
+      "end": 12.268,
+      "text": "i nodi si scambiano messaggi per diventare consapevoli della struttura che li circonda.",
+      "words": [
+        {
+          "text": "i",
+          "start": 7.608,
+          "end": 7.648
+        },
+        {
+          "text": "nodi",
+          "start": 7.688,
+          "end": 7.888
+        },
+        {
+          "text": "si",
+          "start": 8.028,
+          "end": 8.108
+        },
+        {
+          "text": "scambiano",
+          "start": 8.168,
+          "end": 8.548
+        },
+        {
+          "text": "messaggi",
+          "start": 8.608,
+          "end": 9.168
+        },
+        {
+          "text": "per",
+          "start": 9.288,
+          "end": 9.408
+        },
+        {
+          "text": "diventare",
+          "start": 9.448,
+          "end": 9.868
+        },
+        {
+          "text": "consapevoli",
+          "start": 9.968,
+          "end": 10.688
+        },
+        {
+          "text": "della",
+          "start": 10.728,
+          "end": 10.908
+        },
+        {
+          "text": "struttura",
+          "start": 10.968,
+          "end": 11.428
+        },
+        {
+          "text": "che",
+          "start": 11.488,
+          "end": 11.568
+        },
+        {
+          "text": "li",
+          "start": 11.608,
+          "end": 11.668
+        },
+        {
+          "text": "circonda.",
+          "start": 11.708,
+          "end": 12.268
+        }
+      ]
+    },
+    {
+      "start": 12.968,
+      "end": 17.428,
+      "text": "Osserviamo il nodo rosso v nello schema, circondato dai suoi vicini u uno,",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 12.968,
+          "end": 13.428
+        },
+        {
+          "text": "il",
+          "start": 13.488,
+          "end": 13.548
+        },
+        {
+          "text": "nodo",
+          "start": 13.588,
+          "end": 13.808
+        },
+        {
+          "text": "rosso",
+          "start": 13.848,
+          "end": 14.128
+        },
+        {
+          "text": "v",
+          "start": 14.208,
+          "end": 14.248
+        },
+        {
+          "text": "nello",
+          "start": 14.488,
+          "end": 14.708
+        },
+        {
+          "text": "schema,",
+          "start": 14.768,
+          "end": 15.088
+        },
+        {
+          "text": "circondato",
+          "start": 15.448,
+          "end": 15.988
+        },
+        {
+          "text": "dai",
+          "start": 16.048,
+          "end": 16.188
+        },
+        {
+          "text": "suoi",
+          "start": 16.228,
+          "end": 16.388
+        },
+        {
+          "text": "vicini",
+          "start": 16.408,
+          "end": 16.828
+        },
+        {
+          "text": "u",
+          "start": 17.088,
+          "end": 17.128
+        },
+        {
+          "text": "uno,",
+          "start": 17.128,
+          "end": 17.428
+        }
+      ]
+    },
+    {
+      "start": 17.708,
+      "end": 18.668,
+      "text": "u due e u tre.",
+      "words": [
+        {
+          "text": "u",
+          "start": 17.708,
+          "end": 17.748
+        },
+        {
+          "text": "due",
+          "start": 17.828,
+          "end": 18.068
+        },
+        {
+          "text": "e",
+          "start": 18.268,
+          "end": 18.308
+        },
+        {
+          "text": "u",
+          "start": 18.388,
+          "end": 18.428
+        },
+        {
+          "text": "tre.",
+          "start": 18.508,
+          "end": 18.668
+        }
+      ]
+    },
+    {
+      "start": 19.288,
+      "end": 22.028,
+      "text": "Il message passing si articola in tre passi precisi.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 19.288,
+          "end": 19.368
+        },
+        {
+          "text": "message",
+          "start": 19.408,
+          "end": 19.708
+        },
+        {
+          "text": "passing",
+          "start": 19.748,
+          "end": 20.148
+        },
+        {
+          "text": "si",
+          "start": 20.268,
+          "end": 20.308
+        },
+        {
+          "text": "articola",
+          "start": 20.368,
+          "end": 20.808
+        },
+        {
+          "text": "in",
+          "start": 20.888,
+          "end": 20.948
+        },
+        {
+          "text": "tre",
+          "start": 21.008,
+          "end": 21.128
+        },
+        {
+          "text": "passi",
+          "start": 21.228,
+          "end": 21.488
+        },
+        {
+          "text": "precisi.",
+          "start": 21.528,
+          "end": 22.028
+        }
+      ]
+    },
+    {
+      "start": 22.628,
+      "end": 28.868,
+      "text": "Passo uno: ogni nodo vicino u calcola un messaggio — funzione della propria etichetta,",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 22.628,
+          "end": 22.908
+        },
+        {
+          "text": "uno:",
+          "start": 23.028,
+          "end": 23.188
+        },
+        {
+          "text": "ogni",
+          "start": 23.848,
+          "end": 24.108
+        },
+        {
+          "text": "nodo",
+          "start": 24.188,
+          "end": 24.388
+        },
+        {
+          "text": "vicino",
+          "start": 24.428,
+          "end": 24.808
+        },
+        {
+          "text": "u",
+          "start": 25.028,
+          "end": 25.068
+        },
+        {
+          "text": "calcola",
+          "start": 25.468,
+          "end": 25.908
+        },
+        {
+          "text": "un",
+          "start": 26.068,
+          "end": 26.168
+        },
+        {
+          "text": "messaggio",
+          "start": 26.208,
+          "end": 26.828
+        },
+        {
+          "text": "—",
+          "start": 26.828,
+          "end": 26.978
+        },
+        {
+          "text": "funzione",
+          "start": 27.308,
+          "end": 27.728
+        },
+        {
+          "text": "della",
+          "start": 27.768,
+          "end": 27.928
+        },
+        {
+          "text": "propria",
+          "start": 27.968,
+          "end": 28.248
+        },
+        {
+          "text": "etichetta,",
+          "start": 28.308,
+          "end": 28.868
+        }
+      ]
+    },
+    {
+      "start": 29.068,
+      "end": 31.928,
+      "text": "dei vicini e degli archi — e lo invia verso v.",
+      "words": [
+        {
+          "text": "dei",
+          "start": 29.068,
+          "end": 29.188
+        },
+        {
+          "text": "vicini",
+          "start": 29.228,
+          "end": 29.708
+        },
+        {
+          "text": "e",
+          "start": 29.888,
+          "end": 29.928
+        },
+        {
+          "text": "degli",
+          "start": 29.988,
+          "end": 30.208
+        },
+        {
+          "text": "archi",
+          "start": 30.288,
+          "end": 30.568
+        },
+        {
+          "text": "—",
+          "start": 30.568,
+          "end": 30.718
+        },
+        {
+          "text": "e",
+          "start": 31.028,
+          "end": 31.068
+        },
+        {
+          "text": "lo",
+          "start": 31.108,
+          "end": 31.168
+        },
+        {
+          "text": "invia",
+          "start": 31.228,
+          "end": 31.488
+        },
+        {
+          "text": "verso",
+          "start": 31.548,
+          "end": 31.808
+        },
+        {
+          "text": "v.",
+          "start": 31.888,
+          "end": 31.928
+        }
+      ]
+    },
+    {
+      "start": 32.789,
+      "end": 38.629,
+      "text": "Passo due: il nodo v aggrega tutti i messaggi ricevuti usando una funzione invariante per",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 32.789,
+          "end": 33.069
+        },
+        {
+          "text": "due:",
+          "start": 33.129,
+          "end": 33.329
+        },
+        {
+          "text": "il",
+          "start": 33.789,
+          "end": 33.889
+        },
+        {
+          "text": "nodo",
+          "start": 33.929,
+          "end": 34.129
+        },
+        {
+          "text": "v",
+          "start": 34.209,
+          "end": 34.249
+        },
+        {
+          "text": "aggrega",
+          "start": 34.529,
+          "end": 34.889
+        },
+        {
+          "text": "tutti",
+          "start": 34.989,
+          "end": 35.249
+        },
+        {
+          "text": "i",
+          "start": 35.289,
+          "end": 35.329
+        },
+        {
+          "text": "messaggi",
+          "start": 35.349,
+          "end": 35.709
+        },
+        {
+          "text": "ricevuti",
+          "start": 35.769,
+          "end": 36.289
+        },
+        {
+          "text": "usando",
+          "start": 36.669,
+          "end": 36.949
+        },
+        {
+          "text": "una",
+          "start": 36.989,
+          "end": 37.069
+        },
+        {
+          "text": "funzione",
+          "start": 37.109,
+          "end": 37.509
+        },
+        {
+          "text": "invariante",
+          "start": 37.689,
+          "end": 38.449
+        },
+        {
+          "text": "per",
+          "start": 38.509,
+          "end": 38.629
+        }
+      ]
+    },
+    {
+      "start": 38.689,
+      "end": 43.57,
+      "text": "permutazione, come la somma o la media, in modo che l'ordine di arrivo dei vicini",
+      "words": [
+        {
+          "text": "permutazione,",
+          "start": 38.689,
+          "end": 39.529
+        },
+        {
+          "text": "come",
+          "start": 39.889,
+          "end": 40.049
+        },
+        {
+          "text": "la",
+          "start": 40.109,
+          "end": 40.169
+        },
+        {
+          "text": "somma",
+          "start": 40.229,
+          "end": 40.549
+        },
+        {
+          "text": "o",
+          "start": 40.729,
+          "end": 40.769
+        },
+        {
+          "text": "la",
+          "start": 40.809,
+          "end": 40.869
+        },
+        {
+          "text": "media,",
+          "start": 40.929,
+          "end": 41.229
+        },
+        {
+          "text": "in",
+          "start": 41.67,
+          "end": 41.73
+        },
+        {
+          "text": "modo",
+          "start": 41.77,
+          "end": 41.93
+        },
+        {
+          "text": "che",
+          "start": 41.97,
+          "end": 42.07
+        },
+        {
+          "text": "l'ordine",
+          "start": 42.15,
+          "end": 42.53
+        },
+        {
+          "text": "di",
+          "start": 42.59,
+          "end": 42.63
+        },
+        {
+          "text": "arrivo",
+          "start": 42.69,
+          "end": 42.97
+        },
+        {
+          "text": "dei",
+          "start": 43.03,
+          "end": 43.13
+        },
+        {
+          "text": "vicini",
+          "start": 43.15,
+          "end": 43.57
+        }
+      ]
+    },
+    {
+      "start": 43.73,
+      "end": 44.65,
+      "text": "non conti affatto.",
+      "words": [
+        {
+          "text": "non",
+          "start": 43.73,
+          "end": 43.87
+        },
+        {
+          "text": "conti",
+          "start": 43.91,
+          "end": 44.15
+        },
+        {
+          "text": "affatto.",
+          "start": 44.19,
+          "end": 44.65
+        }
+      ]
+    },
+    {
+      "start": 45.25,
+      "end": 50.99,
+      "text": "Passo tre: il nodo v aggiorna il proprio stato h con v combinando i messaggi",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 45.25,
+          "end": 45.57
+        },
+        {
+          "text": "tre:",
+          "start": 45.65,
+          "end": 45.79
+        },
+        {
+          "text": "il",
+          "start": 46.35,
+          "end": 46.45
+        },
+        {
+          "text": "nodo",
+          "start": 46.53,
+          "end": 46.79
+        },
+        {
+          "text": "v",
+          "start": 46.89,
+          "end": 46.93
+        },
+        {
+          "text": "aggiorna",
+          "start": 47.31,
+          "end": 47.73
+        },
+        {
+          "text": "il",
+          "start": 47.77,
+          "end": 47.83
+        },
+        {
+          "text": "proprio",
+          "start": 47.87,
+          "end": 48.17
+        },
+        {
+          "text": "stato",
+          "start": 48.23,
+          "end": 48.55
+        },
+        {
+          "text": "h",
+          "start": 49.01,
+          "end": 49.05
+        },
+        {
+          "text": "con",
+          "start": 49.21,
+          "end": 49.39
+        },
+        {
+          "text": "v",
+          "start": 49.47,
+          "end": 49.51
+        },
+        {
+          "text": "combinando",
+          "start": 49.95,
+          "end": 50.47
+        },
+        {
+          "text": "i",
+          "start": 50.53,
+          "end": 50.57
+        },
+        {
+          "text": "messaggi",
+          "start": 50.59,
+          "end": 50.99
+        }
+      ]
+    },
+    {
+      "start": 51.01,
+      "end": 53.491,
+      "text": "aggregati attraverso i parametri liberi W.",
+      "words": [
+        {
+          "text": "aggregati",
+          "start": 51.01,
+          "end": 51.491
+        },
+        {
+          "text": "attraverso",
+          "start": 51.531,
+          "end": 52.011
+        },
+        {
+          "text": "i",
+          "start": 52.051,
+          "end": 52.091
+        },
+        {
+          "text": "parametri",
+          "start": 52.131,
+          "end": 52.591
+        },
+        {
+          "text": "liberi",
+          "start": 52.671,
+          "end": 52.951
+        },
+        {
+          "text": "W.",
+          "start": 53.451,
+          "end": 53.491
+        }
+      ]
+    },
+    {
+      "start": 54.291,
+      "end": 60.311,
+      "text": "Iterando il message passing più volte, l'informazione si diffonde progressivamente da ciascun nodo verso il",
+      "words": [
+        {
+          "text": "Iterando",
+          "start": 54.291,
+          "end": 54.711
+        },
+        {
+          "text": "il",
+          "start": 54.751,
+          "end": 54.831
+        },
+        {
+          "text": "message",
+          "start": 54.911,
+          "end": 55.271
+        },
+        {
+          "text": "passing",
+          "start": 55.331,
+          "end": 55.791
+        },
+        {
+          "text": "più",
+          "start": 55.871,
+          "end": 55.971
+        },
+        {
+          "text": "volte,",
+          "start": 56.051,
+          "end": 56.431
+        },
+        {
+          "text": "l'informazione",
+          "start": 56.731,
+          "end": 57.351
+        },
+        {
+          "text": "si",
+          "start": 57.411,
+          "end": 57.491
+        },
+        {
+          "text": "diffonde",
+          "start": 57.551,
+          "end": 57.971
+        },
+        {
+          "text": "progressivamente",
+          "start": 58.031,
+          "end": 58.831
+        },
+        {
+          "text": "da",
+          "start": 58.891,
+          "end": 58.951
+        },
+        {
+          "text": "ciascun",
+          "start": 59.031,
+          "end": 59.431
+        },
+        {
+          "text": "nodo",
+          "start": 59.531,
+          "end": 59.831
+        },
+        {
+          "text": "verso",
+          "start": 59.991,
+          "end": 60.231
+        },
+        {
+          "text": "il",
+          "start": 60.271,
+          "end": 60.311
+        }
+      ]
+    },
+    {
+      "start": 60.351,
+      "end": 61.092,
+      "text": "resto del grafo.",
+      "words": [
+        {
+          "text": "resto",
+          "start": 60.351,
+          "end": 60.592
+        },
+        {
+          "text": "del",
+          "start": 60.632,
+          "end": 60.752
+        },
+        {
+          "text": "grafo.",
+          "start": 60.792,
+          "end": 61.092
+        }
+      ]
+    },
+    {
+      "start": 61.652,
+      "end": 64.472,
+      "text": "Al termine si emette un'uscita per ogni nodo oppure,",
+      "words": [
+        {
+          "text": "Al",
+          "start": 61.652,
+          "end": 61.732
+        },
+        {
+          "text": "termine",
+          "start": 61.792,
+          "end": 62.172
+        },
+        {
+          "text": "si",
+          "start": 62.332,
+          "end": 62.392
+        },
+        {
+          "text": "emette",
+          "start": 62.432,
+          "end": 62.712
+        },
+        {
+          "text": "un'uscita",
+          "start": 62.752,
+          "end": 63.172
+        },
+        {
+          "text": "per",
+          "start": 63.232,
+          "end": 63.332
+        },
+        {
+          "text": "ogni",
+          "start": 63.372,
+          "end": 63.552
+        },
+        {
+          "text": "nodo",
+          "start": 63.632,
+          "end": 63.892
+        },
+        {
+          "text": "oppure,",
+          "start": 64.072,
+          "end": 64.472
+        }
+      ]
+    },
+    {
+      "start": 64.572,
+      "end": 70.153,
+      "text": "per l'intero grafo, si applica un'aggregazione invariante per permutazione chiamata global pooling,",
+      "words": [
+        {
+          "text": "per",
+          "start": 64.572,
+          "end": 64.712
+        },
+        {
+          "text": "l'intero",
+          "start": 64.752,
+          "end": 65.132
+        },
+        {
+          "text": "grafo,",
+          "start": 65.172,
+          "end": 65.492
+        },
+        {
+          "text": "si",
+          "start": 65.812,
+          "end": 65.892
+        },
+        {
+          "text": "applica",
+          "start": 65.952,
+          "end": 66.292
+        },
+        {
+          "text": "un'aggregazione",
+          "start": 66.332,
+          "end": 67.032
+        },
+        {
+          "text": "invariante",
+          "start": 67.092,
+          "end": 67.692
+        },
+        {
+          "text": "per",
+          "start": 67.732,
+          "end": 67.852
+        },
+        {
+          "text": "permutazione",
+          "start": 67.892,
+          "end": 68.652
+        },
+        {
+          "text": "chiamata",
+          "start": 68.772,
+          "end": 69.172
+        },
+        {
+          "text": "global",
+          "start": 69.372,
+          "end": 69.712
+        },
+        {
+          "text": "pooling,",
+          "start": 69.772,
+          "end": 70.153
+        }
+      ]
+    },
+    {
+      "start": 70.473,
+      "end": 71.593,
+      "text": "come somma o media.",
+      "words": [
+        {
+          "text": "come",
+          "start": 70.473,
+          "end": 70.653
+        },
+        {
+          "text": "somma",
+          "start": 70.733,
+          "end": 70.993
+        },
+        {
+          "text": "o",
+          "start": 71.193,
+          "end": 71.233
+        },
+        {
+          "text": "media.",
+          "start": 71.313,
+          "end": 71.593
+        }
+      ]
+    },
+    {
+      "start": 72.393,
+      "end": 75.813,
+      "text": "È molto istruttivo cogliere il legame con le reti convoluzionali.",
+      "words": [
+        {
+          "text": "È",
+          "start": 72.393,
+          "end": 72.433
+        },
+        {
+          "text": "molto",
+          "start": 72.553,
+          "end": 72.853
+        },
+        {
+          "text": "istruttivo",
+          "start": 72.913,
+          "end": 73.513
+        },
+        {
+          "text": "cogliere",
+          "start": 73.613,
+          "end": 73.993
+        },
+        {
+          "text": "il",
+          "start": 74.033,
+          "end": 74.07300000000001
+        },
+        {
+          "text": "legame",
+          "start": 74.113,
+          "end": 74.453
+        },
+        {
+          "text": "con",
+          "start": 74.533,
+          "end": 74.633
+        },
+        {
+          "text": "le",
+          "start": 74.653,
+          "end": 74.713
+        },
+        {
+          "text": "reti",
+          "start": 74.753,
+          "end": 74.953
+        },
+        {
+          "text": "convoluzionali.",
+          "start": 75.013,
+          "end": 75.813
+        }
+      ]
+    },
+    {
+      "start": 76.333,
+      "end": 82.074,
+      "text": "Sia le CNN sia le reti convoluzionali per grafi visitano ogni posizione dei dati condividendo",
+      "words": [
+        {
+          "text": "Sia",
+          "start": 76.333,
+          "end": 76.453
+        },
+        {
+          "text": "le",
+          "start": 76.513,
+          "end": 76.55300000000001
+        },
+        {
+          "text": "CNN",
+          "start": 76.613,
+          "end": 77.153
+        },
+        {
+          "text": "sia",
+          "start": 77.353,
+          "end": 77.473
+        },
+        {
+          "text": "le",
+          "start": 77.533,
+          "end": 77.57300000000001
+        },
+        {
+          "text": "reti",
+          "start": 77.613,
+          "end": 77.813
+        },
+        {
+          "text": "convoluzionali",
+          "start": 77.853,
+          "end": 78.573
+        },
+        {
+          "text": "per",
+          "start": 78.593,
+          "end": 78.693
+        },
+        {
+          "text": "grafi",
+          "start": 78.753,
+          "end": 79.053
+        },
+        {
+          "text": "visitano",
+          "start": 79.333,
+          "end": 79.774
+        },
+        {
+          "text": "ogni",
+          "start": 79.914,
+          "end": 80.134
+        },
+        {
+          "text": "posizione",
+          "start": 80.214,
+          "end": 80.734
+        },
+        {
+          "text": "dei",
+          "start": 80.774,
+          "end": 80.914
+        },
+        {
+          "text": "dati",
+          "start": 80.954,
+          "end": 81.234
+        },
+        {
+          "text": "condividendo",
+          "start": 81.354,
+          "end": 82.074
+        }
+      ]
+    },
+    {
+      "start": 82.114,
+      "end": 82.914,
+      "text": "gli stessi pesi.",
+      "words": [
+        {
+          "text": "gli",
+          "start": 82.114,
+          "end": 82.254
+        },
+        {
+          "text": "stessi",
+          "start": 82.294,
+          "end": 82.614
+        },
+        {
+          "text": "pesi.",
+          "start": 82.654,
+          "end": 82.914
+        }
+      ]
+    },
+    {
+      "start": 83.474,
+      "end": 88.054,
+      "text": "Tuttavia in una griglia come un'immagine i vicini di un pixel sono ordinati e in",
+      "words": [
+        {
+          "text": "Tuttavia",
+          "start": 83.474,
+          "end": 83.894
+        },
+        {
+          "text": "in",
+          "start": 84.074,
+          "end": 84.154
+        },
+        {
+          "text": "una",
+          "start": 84.174,
+          "end": 84.294
+        },
+        {
+          "text": "griglia",
+          "start": 84.334,
+          "end": 84.714
+        },
+        {
+          "text": "come",
+          "start": 84.814,
+          "end": 84.994
+        },
+        {
+          "text": "un'immagine",
+          "start": 85.054,
+          "end": 85.654
+        },
+        {
+          "text": "i",
+          "start": 85.954,
+          "end": 85.994
+        },
+        {
+          "text": "vicini",
+          "start": 86.034,
+          "end": 86.354
+        },
+        {
+          "text": "di",
+          "start": 86.414,
+          "end": 86.45400000000001
+        },
+        {
+          "text": "un",
+          "start": 86.474,
+          "end": 86.554
+        },
+        {
+          "text": "pixel",
+          "start": 86.594,
+          "end": 86.974
+        },
+        {
+          "text": "sono",
+          "start": 87.034,
+          "end": 87.194
+        },
+        {
+          "text": "ordinati",
+          "start": 87.254,
+          "end": 87.754
+        },
+        {
+          "text": "e",
+          "start": 87.894,
+          "end": 87.93400000000001
+        },
+        {
+          "text": "in",
+          "start": 87.994,
+          "end": 88.054
+        }
+      ]
+    },
+    {
+      "start": 88.114,
+      "end": 92.815,
+      "text": "numero fisso, mentre in un grafo i vicini sono non ordinati e in numero variabile.",
+      "words": [
+        {
+          "text": "numero",
+          "start": 88.114,
+          "end": 88.354
+        },
+        {
+          "text": "fisso,",
+          "start": 88.394,
+          "end": 88.734
+        },
+        {
+          "text": "mentre",
+          "start": 89.094,
+          "end": 89.375
+        },
+        {
+          "text": "in",
+          "start": 89.415,
+          "end": 89.495
+        },
+        {
+          "text": "un",
+          "start": 89.535,
+          "end": 89.595
+        },
+        {
+          "text": "grafo",
+          "start": 89.635,
+          "end": 89.975
+        },
+        {
+          "text": "i",
+          "start": 90.155,
+          "end": 90.19500000000001
+        },
+        {
+          "text": "vicini",
+          "start": 90.215,
+          "end": 90.555
+        },
+        {
+          "text": "sono",
+          "start": 90.615,
+          "end": 90.815
+        },
+        {
+          "text": "non",
+          "start": 90.935,
+          "end": 91.095
+        },
+        {
+          "text": "ordinati",
+          "start": 91.155,
+          "end": 91.655
+        },
+        {
+          "text": "e",
+          "start": 91.815,
+          "end": 91.855
+        },
+        {
+          "text": "in",
+          "start": 91.915,
+          "end": 91.975
+        },
+        {
+          "text": "numero",
+          "start": 92.015,
+          "end": 92.275
+        },
+        {
+          "text": "variabile.",
+          "start": 92.315,
+          "end": 92.815
+        }
+      ]
+    },
+    {
+      "start": 93.335,
+      "end": 96.935,
+      "text": "Per questo sui grafi limitiamo il campo recettivo ai vicini immediati,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 93.335,
+          "end": 93.435
+        },
+        {
+          "text": "questo",
+          "start": 93.475,
+          "end": 93.755
+        },
+        {
+          "text": "sui",
+          "start": 93.815,
+          "end": 93.935
+        },
+        {
+          "text": "grafi",
+          "start": 93.975,
+          "end": 94.235
+        },
+        {
+          "text": "limitiamo",
+          "start": 94.295,
+          "end": 94.695
+        },
+        {
+          "text": "il",
+          "start": 94.755,
+          "end": 94.815
+        },
+        {
+          "text": "campo",
+          "start": 94.875,
+          "end": 95.135
+        },
+        {
+          "text": "recettivo",
+          "start": 95.175,
+          "end": 95.735
+        },
+        {
+          "text": "ai",
+          "start": 95.895,
+          "end": 96.015
+        },
+        {
+          "text": "vicini",
+          "start": 96.075,
+          "end": 96.395
+        },
+        {
+          "text": "immediati,",
+          "start": 96.455,
+          "end": 96.935
+        }
+      ]
+    },
+    {
+      "start": 97.295,
+      "end": 103.136,
+      "text": "condividiamo i pesi in modo invariante per permutazione e allarghiamo il vicinato tramite la stratificazione.",
+      "words": [
+        {
+          "text": "condividiamo",
+          "start": 97.295,
+          "end": 97.835
+        },
+        {
+          "text": "i",
+          "start": 97.895,
+          "end": 97.935
+        },
+        {
+          "text": "pesi",
+          "start": 97.955,
+          "end": 98.195
+        },
+        {
+          "text": "in",
+          "start": 98.215,
+          "end": 98.275
+        },
+        {
+          "text": "modo",
+          "start": 98.315,
+          "end": 98.495
+        },
+        {
+          "text": "invariante",
+          "start": 98.535,
+          "end": 99.136
+        },
+        {
+          "text": "per",
+          "start": 99.216,
+          "end": 99.356
+        },
+        {
+          "text": "permutazione",
+          "start": 99.416,
+          "end": 100.196
+        },
+        {
+          "text": "e",
+          "start": 100.476,
+          "end": 100.516
+        },
+        {
+          "text": "allarghiamo",
+          "start": 100.556,
+          "end": 101.076
+        },
+        {
+          "text": "il",
+          "start": 101.136,
+          "end": 101.196
+        },
+        {
+          "text": "vicinato",
+          "start": 101.216,
+          "end": 101.696
+        },
+        {
+          "text": "tramite",
+          "start": 101.796,
+          "end": 102.176
+        },
+        {
+          "text": "la",
+          "start": 102.236,
+          "end": 102.296
+        },
+        {
+          "text": "stratificazione.",
+          "start": 102.316,
+          "end": 103.136
+        }
+      ]
+    }
+  ]
+}

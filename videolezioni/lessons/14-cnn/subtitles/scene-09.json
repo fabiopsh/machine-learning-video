@@ -1,0 +1,843 @@
+{
+  "duration": 62.989,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.981,
+      "text": "Chiudiamo il capitolo fissando i quattro punti chiave delle reti convoluzionali.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.08,
+          "end": 0.46
+        },
+        {
+          "text": "il",
+          "start": 0.48,
+          "end": 0.54
+        },
+        {
+          "text": "capitolo",
+          "start": 0.58,
+          "end": 1.04
+        },
+        {
+          "text": "fissando",
+          "start": 1.1,
+          "end": 1.501
+        },
+        {
+          "text": "i",
+          "start": 1.541,
+          "end": 1.581
+        },
+        {
+          "text": "quattro",
+          "start": 1.641,
+          "end": 1.941
+        },
+        {
+          "text": "punti",
+          "start": 1.981,
+          "end": 2.241
+        },
+        {
+          "text": "chiave",
+          "start": 2.281,
+          "end": 2.561
+        },
+        {
+          "text": "delle",
+          "start": 2.621,
+          "end": 2.781
+        },
+        {
+          "text": "reti",
+          "start": 2.841,
+          "end": 3.041
+        },
+        {
+          "text": "convoluzionali.",
+          "start": 3.101,
+          "end": 3.981
+        }
+      ]
+    },
+    {
+      "start": 4.681,
+      "end": 8.983,
+      "text": "Primo: la convoluzione è la stessa unità neurale, cioè un filtro adattivo,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 4.681,
+          "end": 4.942
+        },
+        {
+          "text": "la",
+          "start": 5.182,
+          "end": 5.242
+        },
+        {
+          "text": "convoluzione",
+          "start": 5.282,
+          "end": 5.942
+        },
+        {
+          "text": "è",
+          "start": 6.102,
+          "end": 6.142
+        },
+        {
+          "text": "la",
+          "start": 6.202,
+          "end": 6.262
+        },
+        {
+          "text": "stessa",
+          "start": 6.302,
+          "end": 6.622
+        },
+        {
+          "text": "unità",
+          "start": 6.702,
+          "end": 6.962
+        },
+        {
+          "text": "neurale,",
+          "start": 7.062,
+          "end": 7.602
+        },
+        {
+          "text": "cioè",
+          "start": 7.682,
+          "end": 7.822
+        },
+        {
+          "text": "un",
+          "start": 7.922,
+          "end": 8.002
+        },
+        {
+          "text": "filtro",
+          "start": 8.103,
+          "end": 8.423
+        },
+        {
+          "text": "adattivo,",
+          "start": 8.463,
+          "end": 8.983
+        }
+      ]
+    },
+    {
+      "start": 9.423,
+      "end": 13.324,
+      "text": "che scorre sull'input combinando connessioni locali e pesi condivisi.",
+      "words": [
+        {
+          "text": "che",
+          "start": 9.423,
+          "end": 9.523
+        },
+        {
+          "text": "scorre",
+          "start": 9.563,
+          "end": 9.863
+        },
+        {
+          "text": "sull'input",
+          "start": 9.903,
+          "end": 10.463
+        },
+        {
+          "text": "combinando",
+          "start": 10.643,
+          "end": 11.123
+        },
+        {
+          "text": "connessioni",
+          "start": 11.184,
+          "end": 11.764
+        },
+        {
+          "text": "locali",
+          "start": 11.844,
+          "end": 12.244
+        },
+        {
+          "text": "e",
+          "start": 12.364,
+          "end": 12.404
+        },
+        {
+          "text": "pesi",
+          "start": 12.484,
+          "end": 12.724
+        },
+        {
+          "text": "condivisi.",
+          "start": 12.764,
+          "end": 13.324
+        }
+      ]
+    },
+    {
+      "start": 13.864,
+      "end": 19.746,
+      "text": "Secondo: i concetti operativi fondamentali sono kernel, stride, padding e feature map;",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 13.864,
+          "end": 14.264
+        },
+        {
+          "text": "i",
+          "start": 14.705,
+          "end": 14.745
+        },
+        {
+          "text": "concetti",
+          "start": 14.765,
+          "end": 15.125
+        },
+        {
+          "text": "operativi",
+          "start": 15.165,
+          "end": 15.605
+        },
+        {
+          "text": "fondamentali",
+          "start": 15.665,
+          "end": 16.285
+        },
+        {
+          "text": "sono",
+          "start": 16.365,
+          "end": 16.645
+        },
+        {
+          "text": "kernel,",
+          "start": 16.885,
+          "end": 17.325
+        },
+        {
+          "text": "stride,",
+          "start": 17.586,
+          "end": 18.146
+        },
+        {
+          "text": "padding",
+          "start": 18.466,
+          "end": 18.926
+        },
+        {
+          "text": "e",
+          "start": 19.126,
+          "end": 19.166
+        },
+        {
+          "text": "feature",
+          "start": 19.226,
+          "end": 19.526
+        },
+        {
+          "text": "map;",
+          "start": 19.546,
+          "end": 19.746
+        }
+      ]
+    },
+    {
+      "start": 20.326,
+      "end": 25.808,
+      "text": "il pooling, soprattutto il max pooling, riduce le dimensioni della mappa e fornisce invarianza a",
+      "words": [
+        {
+          "text": "il",
+          "start": 20.326,
+          "end": 20.426
+        },
+        {
+          "text": "pooling,",
+          "start": 20.486,
+          "end": 20.887
+        },
+        {
+          "text": "soprattutto",
+          "start": 21.047,
+          "end": 21.487
+        },
+        {
+          "text": "il",
+          "start": 21.527,
+          "end": 21.587
+        },
+        {
+          "text": "max",
+          "start": 21.627,
+          "end": 21.767
+        },
+        {
+          "text": "pooling,",
+          "start": 21.867,
+          "end": 22.247
+        },
+        {
+          "text": "riduce",
+          "start": 22.687,
+          "end": 23.007
+        },
+        {
+          "text": "le",
+          "start": 23.067,
+          "end": 23.147
+        },
+        {
+          "text": "dimensioni",
+          "start": 23.167,
+          "end": 23.687
+        },
+        {
+          "text": "della",
+          "start": 23.748,
+          "end": 23.928
+        },
+        {
+          "text": "mappa",
+          "start": 23.968,
+          "end": 24.288
+        },
+        {
+          "text": "e",
+          "start": 24.448,
+          "end": 24.488
+        },
+        {
+          "text": "fornisce",
+          "start": 24.548,
+          "end": 25.028
+        },
+        {
+          "text": "invarianza",
+          "start": 25.088,
+          "end": 25.688
+        },
+        {
+          "text": "a",
+          "start": 25.768,
+          "end": 25.808
+        }
+      ]
+    },
+    {
+      "start": 25.868,
+      "end": 26.869,
+      "text": "piccoli spostamenti.",
+      "words": [
+        {
+          "text": "piccoli",
+          "start": 25.868,
+          "end": 26.188
+        },
+        {
+          "text": "spostamenti.",
+          "start": 26.228,
+          "end": 26.869
+        }
+      ]
+    },
+    {
+      "start": 27.449,
+      "end": 33.09,
+      "text": "Terzo: la condivisione dei pesi riduce drasticamente il numero di parametri liberi pur mantenendo molte",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 27.449,
+          "end": 27.809
+        },
+        {
+          "text": "la",
+          "start": 28.169,
+          "end": 28.229
+        },
+        {
+          "text": "condivisione",
+          "start": 28.269,
+          "end": 28.769
+        },
+        {
+          "text": "dei",
+          "start": 28.809,
+          "end": 28.929
+        },
+        {
+          "text": "pesi",
+          "start": 28.969,
+          "end": 29.249
+        },
+        {
+          "text": "riduce",
+          "start": 29.389,
+          "end": 29.689
+        },
+        {
+          "text": "drasticamente",
+          "start": 29.769,
+          "end": 30.43
+        },
+        {
+          "text": "il",
+          "start": 30.47,
+          "end": 30.51
+        },
+        {
+          "text": "numero",
+          "start": 30.55,
+          "end": 30.79
+        },
+        {
+          "text": "di",
+          "start": 30.83,
+          "end": 30.89
+        },
+        {
+          "text": "parametri",
+          "start": 30.95,
+          "end": 31.41
+        },
+        {
+          "text": "liberi",
+          "start": 31.47,
+          "end": 31.77
+        },
+        {
+          "text": "pur",
+          "start": 31.87,
+          "end": 32.03
+        },
+        {
+          "text": "mantenendo",
+          "start": 32.09,
+          "end": 32.61
+        },
+        {
+          "text": "molte",
+          "start": 32.73,
+          "end": 33.09
+        }
+      ]
+    },
+    {
+      "start": 33.151,
+      "end": 37.132,
+      "text": "connessioni, agendo come una forma strutturale di regolarizzazione.",
+      "words": [
+        {
+          "text": "connessioni,",
+          "start": 33.151,
+          "end": 33.791
+        },
+        {
+          "text": "agendo",
+          "start": 34.191,
+          "end": 34.471
+        },
+        {
+          "text": "come",
+          "start": 34.511,
+          "end": 34.691
+        },
+        {
+          "text": "una",
+          "start": 34.751,
+          "end": 34.851
+        },
+        {
+          "text": "forma",
+          "start": 34.931,
+          "end": 35.211
+        },
+        {
+          "text": "strutturale",
+          "start": 35.291,
+          "end": 35.951
+        },
+        {
+          "text": "di",
+          "start": 36.051,
+          "end": 36.131
+        },
+        {
+          "text": "regolarizzazione.",
+          "start": 36.211,
+          "end": 37.132
+        }
+      ]
+    },
+    {
+      "start": 37.712,
+      "end": 44.174,
+      "text": "Quarto: impilando più strati il campo recettivo cresce progressivamente e le feature estratte diventano via",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 37.712,
+          "end": 38.092
+        },
+        {
+          "text": "impilando",
+          "start": 38.572,
+          "end": 39.052
+        },
+        {
+          "text": "più",
+          "start": 39.092,
+          "end": 39.192
+        },
+        {
+          "text": "strati",
+          "start": 39.252,
+          "end": 39.633
+        },
+        {
+          "text": "il",
+          "start": 39.813,
+          "end": 39.893
+        },
+        {
+          "text": "campo",
+          "start": 39.953,
+          "end": 40.213
+        },
+        {
+          "text": "recettivo",
+          "start": 40.253,
+          "end": 40.733
+        },
+        {
+          "text": "cresce",
+          "start": 40.813,
+          "end": 41.133
+        },
+        {
+          "text": "progressivamente",
+          "start": 41.193,
+          "end": 42.093
+        },
+        {
+          "text": "e",
+          "start": 42.453,
+          "end": 42.493
+        },
+        {
+          "text": "le",
+          "start": 42.534,
+          "end": 42.614
+        },
+        {
+          "text": "feature",
+          "start": 42.654,
+          "end": 42.974
+        },
+        {
+          "text": "estratte",
+          "start": 42.994,
+          "end": 43.434
+        },
+        {
+          "text": "diventano",
+          "start": 43.474,
+          "end": 43.934
+        },
+        {
+          "text": "via",
+          "start": 44.034,
+          "end": 44.174
+        }
+      ]
+    },
+    {
+      "start": 44.214,
+      "end": 45.094,
+      "text": "via più astratte.",
+      "words": [
+        {
+          "text": "via",
+          "start": 44.214,
+          "end": 44.354
+        },
+        {
+          "text": "più",
+          "start": 44.414,
+          "end": 44.514
+        },
+        {
+          "text": "astratte.",
+          "start": 44.574,
+          "end": 45.094
+        }
+      ]
+    },
+    {
+      "start": 45.894,
+      "end": 49.835,
+      "text": "Per verificare la tua preparazione, prova a rispondere alle cinque domande sulla destra:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 45.894,
+          "end": 46.014
+        },
+        {
+          "text": "verificare",
+          "start": 46.054,
+          "end": 46.594
+        },
+        {
+          "text": "la",
+          "start": 46.634,
+          "end": 46.694
+        },
+        {
+          "text": "tua",
+          "start": 46.734,
+          "end": 46.854
+        },
+        {
+          "text": "preparazione,",
+          "start": 46.894,
+          "end": 47.474
+        },
+        {
+          "text": "prova",
+          "start": 47.554,
+          "end": 47.754
+        },
+        {
+          "text": "a",
+          "start": 47.794,
+          "end": 47.834
+        },
+        {
+          "text": "rispondere",
+          "start": 47.854,
+          "end": 48.314
+        },
+        {
+          "text": "alle",
+          "start": 48.334,
+          "end": 48.494
+        },
+        {
+          "text": "cinque",
+          "start": 48.554,
+          "end": 48.874
+        },
+        {
+          "text": "domande",
+          "start": 48.914,
+          "end": 49.215
+        },
+        {
+          "text": "sulla",
+          "start": 49.255,
+          "end": 49.435
+        },
+        {
+          "text": "destra:",
+          "start": 49.475,
+          "end": 49.835
+        }
+      ]
+    },
+    {
+      "start": 50.355,
+      "end": 53.796,
+      "text": "le idee chiave delle CNN, il significato di kernel,",
+      "words": [
+        {
+          "text": "le",
+          "start": 50.355,
+          "end": 50.415
+        },
+        {
+          "text": "idee",
+          "start": 50.495,
+          "end": 50.755
+        },
+        {
+          "text": "chiave",
+          "start": 50.795,
+          "end": 51.135
+        },
+        {
+          "text": "delle",
+          "start": 51.255,
+          "end": 51.455
+        },
+        {
+          "text": "CNN,",
+          "start": 51.515,
+          "end": 52.095
+        },
+        {
+          "text": "il",
+          "start": 52.496,
+          "end": 52.576
+        },
+        {
+          "text": "significato",
+          "start": 52.636,
+          "end": 53.216
+        },
+        {
+          "text": "di",
+          "start": 53.256,
+          "end": 53.316
+        },
+        {
+          "text": "kernel,",
+          "start": 53.396,
+          "end": 53.796
+        }
+      ]
+    },
+    {
+      "start": 53.956,
+      "end": 57.657,
+      "text": "stride, padding e feature map, il ruolo del max pooling,",
+      "words": [
+        {
+          "text": "stride,",
+          "start": 53.956,
+          "end": 54.396
+        },
+        {
+          "text": "padding",
+          "start": 54.636,
+          "end": 55.076
+        },
+        {
+          "text": "e",
+          "start": 55.257,
+          "end": 55.297
+        },
+        {
+          "text": "feature",
+          "start": 55.357,
+          "end": 55.677
+        },
+        {
+          "text": "map,",
+          "start": 55.717,
+          "end": 55.937
+        },
+        {
+          "text": "il",
+          "start": 56.477,
+          "end": 56.577
+        },
+        {
+          "text": "ruolo",
+          "start": 56.617,
+          "end": 56.857
+        },
+        {
+          "text": "del",
+          "start": 56.897,
+          "end": 57.017
+        },
+        {
+          "text": "max",
+          "start": 57.057,
+          "end": 57.197
+        },
+        {
+          "text": "pooling,",
+          "start": 57.297,
+          "end": 57.657
+        }
+      ]
+    },
+    {
+      "start": 58.077,
+      "end": 62.739,
+      "text": "perché il weight sharing regolarizza e come cresce il campo recettivo con la profondità.",
+      "words": [
+        {
+          "text": "perché",
+          "start": 58.077,
+          "end": 58.337
+        },
+        {
+          "text": "il",
+          "start": 58.398,
+          "end": 58.458
+        },
+        {
+          "text": "weight",
+          "start": 58.518,
+          "end": 58.678
+        },
+        {
+          "text": "sharing",
+          "start": 58.778,
+          "end": 59.118
+        },
+        {
+          "text": "regolarizza",
+          "start": 59.258,
+          "end": 59.878
+        },
+        {
+          "text": "e",
+          "start": 60.158,
+          "end": 60.198
+        },
+        {
+          "text": "come",
+          "start": 60.278,
+          "end": 60.478
+        },
+        {
+          "text": "cresce",
+          "start": 60.518,
+          "end": 60.818
+        },
+        {
+          "text": "il",
+          "start": 60.838,
+          "end": 60.898
+        },
+        {
+          "text": "campo",
+          "start": 60.938,
+          "end": 61.198
+        },
+        {
+          "text": "recettivo",
+          "start": 61.258,
+          "end": 61.759
+        },
+        {
+          "text": "con",
+          "start": 61.939,
+          "end": 62.059
+        },
+        {
+          "text": "la",
+          "start": 62.099,
+          "end": 62.179
+        },
+        {
+          "text": "profondità.",
+          "start": 62.219,
+          "end": 62.739
+        }
+      ]
+    }
+  ]
+}

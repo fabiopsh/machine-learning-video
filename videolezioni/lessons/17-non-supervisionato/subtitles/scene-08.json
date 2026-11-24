@@ -1,0 +1,1391 @@
+{
+  "duration": 102.968,
+  "segments": [
+    {
+      "start": 0.369,
+      "end": 2.949,
+      "text": "Vediamo l'algoritmo della SOM in cinque passi.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.369,
+          "end": 0.709
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 0.769,
+          "end": 1.329
+        },
+        {
+          "text": "della",
+          "start": 1.369,
+          "end": 1.549
+        },
+        {
+          "text": "SOM",
+          "start": 1.609,
+          "end": 1.829
+        },
+        {
+          "text": "in",
+          "start": 2.049,
+          "end": 2.129
+        },
+        {
+          "text": "cinque",
+          "start": 2.229,
+          "end": 2.509
+        },
+        {
+          "text": "passi.",
+          "start": 2.569,
+          "end": 2.949
+        }
+      ]
+    },
+    {
+      "start": 3.789,
+      "end": 6.629,
+      "text": "Uno: si inizializzano casualmente i pesi della mappa;",
+      "words": [
+        {
+          "text": "Uno:",
+          "start": 3.789,
+          "end": 3.969
+        },
+        {
+          "text": "si",
+          "start": 4.389,
+          "end": 4.469
+        },
+        {
+          "text": "inizializzano",
+          "start": 4.509,
+          "end": 5.149
+        },
+        {
+          "text": "casualmente",
+          "start": 5.229,
+          "end": 5.749
+        },
+        {
+          "text": "i",
+          "start": 5.789,
+          "end": 5.829
+        },
+        {
+          "text": "pesi",
+          "start": 5.849,
+          "end": 6.049
+        },
+        {
+          "text": "della",
+          "start": 6.089,
+          "end": 6.269
+        },
+        {
+          "text": "mappa;",
+          "start": 6.309,
+          "end": 6.629
+        }
+      ]
+    },
+    {
+      "start": 7.189,
+      "end": 8.789,
+      "text": "due: si estrae un input x.",
+      "words": [
+        {
+          "text": "due:",
+          "start": 7.189,
+          "end": 7.389
+        },
+        {
+          "text": "si",
+          "start": 7.629,
+          "end": 7.689
+        },
+        {
+          "text": "estrae",
+          "start": 7.749,
+          "end": 8.109
+        },
+        {
+          "text": "un",
+          "start": 8.149,
+          "end": 8.229
+        },
+        {
+          "text": "input",
+          "start": 8.289,
+          "end": 8.549
+        },
+        {
+          "text": "x.",
+          "start": 8.749,
+          "end": 8.789
+        }
+      ]
+    },
+    {
+      "start": 9.569,
+      "end": 16.43,
+      "text": "Tre, fase competitiva winner-take-all: si trova il vincitore i asterisco di x che minimizza la",
+      "words": [
+        {
+          "text": "Tre,",
+          "start": 9.569,
+          "end": 9.749
+        },
+        {
+          "text": "fase",
+          "start": 10.109,
+          "end": 10.41
+        },
+        {
+          "text": "competitiva",
+          "start": 10.47,
+          "end": 11.13
+        },
+        {
+          "text": "winner-take-all:",
+          "start": 11.41,
+          "end": 12.39
+        },
+        {
+          "text": "si",
+          "start": 12.77,
+          "end": 12.85
+        },
+        {
+          "text": "trova",
+          "start": 12.89,
+          "end": 13.09
+        },
+        {
+          "text": "il",
+          "start": 13.13,
+          "end": 13.19
+        },
+        {
+          "text": "vincitore",
+          "start": 13.21,
+          "end": 13.77
+        },
+        {
+          "text": "i",
+          "start": 14.01,
+          "end": 14.05
+        },
+        {
+          "text": "asterisco",
+          "start": 14.17,
+          "end": 14.77
+        },
+        {
+          "text": "di",
+          "start": 14.83,
+          "end": 14.91
+        },
+        {
+          "text": "x",
+          "start": 15.15,
+          "end": 15.19
+        },
+        {
+          "text": "che",
+          "start": 15.55,
+          "end": 15.65
+        },
+        {
+          "text": "minimizza",
+          "start": 15.75,
+          "end": 16.29
+        },
+        {
+          "text": "la",
+          "start": 16.35,
+          "end": 16.43
+        }
+      ]
+    },
+    {
+      "start": 16.47,
+      "end": 18.49,
+      "text": "norma di x meno w con i.",
+      "words": [
+        {
+          "text": "norma",
+          "start": 16.47,
+          "end": 16.79
+        },
+        {
+          "text": "di",
+          "start": 16.85,
+          "end": 16.93
+        },
+        {
+          "text": "x",
+          "start": 17.15,
+          "end": 17.19
+        },
+        {
+          "text": "meno",
+          "start": 17.53,
+          "end": 17.75
+        },
+        {
+          "text": "w",
+          "start": 17.81,
+          "end": 17.85
+        },
+        {
+          "text": "con",
+          "start": 18.27,
+          "end": 18.41
+        },
+        {
+          "text": "i.",
+          "start": 18.45,
+          "end": 18.49
+        }
+      ]
+    },
+    {
+      "start": 19.29,
+      "end": 24.271,
+      "text": "Quattro, fase cooperativa: si aggiornano i pesi del vincitore e dei suoi vicini sulla mappa",
+      "words": [
+        {
+          "text": "Quattro,",
+          "start": 19.29,
+          "end": 19.71
+        },
+        {
+          "text": "fase",
+          "start": 19.93,
+          "end": 20.21
+        },
+        {
+          "text": "cooperativa:",
+          "start": 20.27,
+          "end": 20.93
+        },
+        {
+          "text": "si",
+          "start": 21.191,
+          "end": 21.251
+        },
+        {
+          "text": "aggiornano",
+          "start": 21.291,
+          "end": 21.711
+        },
+        {
+          "text": "i",
+          "start": 21.771,
+          "end": 21.811
+        },
+        {
+          "text": "pesi",
+          "start": 21.811,
+          "end": 22.051
+        },
+        {
+          "text": "del",
+          "start": 22.091,
+          "end": 22.191
+        },
+        {
+          "text": "vincitore",
+          "start": 22.231,
+          "end": 22.831
+        },
+        {
+          "text": "e",
+          "start": 22.931,
+          "end": 22.971
+        },
+        {
+          "text": "dei",
+          "start": 23.011,
+          "end": 23.111
+        },
+        {
+          "text": "suoi",
+          "start": 23.131,
+          "end": 23.271
+        },
+        {
+          "text": "vicini",
+          "start": 23.311,
+          "end": 23.651
+        },
+        {
+          "text": "sulla",
+          "start": 23.691,
+          "end": 23.891
+        },
+        {
+          "text": "mappa",
+          "start": 23.911,
+          "end": 24.271
+        }
+      ]
+    },
+    {
+      "start": 24.491,
+      "end": 29.351,
+      "text": "tramite w con i al tempo t più uno uguale a w con i al",
+      "words": [
+        {
+          "text": "tramite",
+          "start": 24.491,
+          "end": 24.971
+        },
+        {
+          "text": "w",
+          "start": 25.451,
+          "end": 25.491
+        },
+        {
+          "text": "con",
+          "start": 25.951,
+          "end": 26.091
+        },
+        {
+          "text": "i",
+          "start": 26.171,
+          "end": 26.211
+        },
+        {
+          "text": "al",
+          "start": 26.411,
+          "end": 26.491
+        },
+        {
+          "text": "tempo",
+          "start": 26.551,
+          "end": 26.811
+        },
+        {
+          "text": "t",
+          "start": 26.931,
+          "end": 26.971
+        },
+        {
+          "text": "più",
+          "start": 27.111,
+          "end": 27.231
+        },
+        {
+          "text": "uno",
+          "start": 27.391,
+          "end": 27.571
+        },
+        {
+          "text": "uguale",
+          "start": 27.751,
+          "end": 28.111
+        },
+        {
+          "text": "a",
+          "start": 28.171,
+          "end": 28.211
+        },
+        {
+          "text": "w",
+          "start": 28.271,
+          "end": 28.311
+        },
+        {
+          "text": "con",
+          "start": 28.751,
+          "end": 28.931
+        },
+        {
+          "text": "i",
+          "start": 28.991,
+          "end": 29.031
+        },
+        {
+          "text": "al",
+          "start": 29.251,
+          "end": 29.351
+        }
+      ]
+    },
+    {
+      "start": 29.391,
+      "end": 34.652,
+      "text": "tempo t più eta al tempo t per h di i virgola i asterisco al",
+      "words": [
+        {
+          "text": "tempo",
+          "start": 29.391,
+          "end": 29.651
+        },
+        {
+          "text": "t",
+          "start": 29.771,
+          "end": 29.811
+        },
+        {
+          "text": "più",
+          "start": 30.271,
+          "end": 30.411
+        },
+        {
+          "text": "eta",
+          "start": 30.751,
+          "end": 31.011
+        },
+        {
+          "text": "al",
+          "start": 31.171,
+          "end": 31.271
+        },
+        {
+          "text": "tempo",
+          "start": 31.311,
+          "end": 31.571
+        },
+        {
+          "text": "t",
+          "start": 31.671,
+          "end": 31.711
+        },
+        {
+          "text": "per",
+          "start": 31.992,
+          "end": 32.152
+        },
+        {
+          "text": "h",
+          "start": 32.492,
+          "end": 32.532
+        },
+        {
+          "text": "di",
+          "start": 32.872,
+          "end": 32.952
+        },
+        {
+          "text": "i",
+          "start": 33.232,
+          "end": 33.272
+        },
+        {
+          "text": "virgola",
+          "start": 33.372,
+          "end": 33.812
+        },
+        {
+          "text": "i",
+          "start": 33.972,
+          "end": 34.012
+        },
+        {
+          "text": "asterisco",
+          "start": 34.072,
+          "end": 34.552
+        },
+        {
+          "text": "al",
+          "start": 34.592,
+          "end": 34.652
+        }
+      ]
+    },
+    {
+      "start": 34.692,
+      "end": 38.052,
+      "text": "tempo t per x meno w con i al tempo t;",
+      "words": [
+        {
+          "text": "tempo",
+          "start": 34.692,
+          "end": 34.912
+        },
+        {
+          "text": "t",
+          "start": 35.012,
+          "end": 35.052
+        },
+        {
+          "text": "per",
+          "start": 35.512,
+          "end": 35.692
+        },
+        {
+          "text": "x",
+          "start": 36.032,
+          "end": 36.072
+        },
+        {
+          "text": "meno",
+          "start": 36.392,
+          "end": 36.592
+        },
+        {
+          "text": "w",
+          "start": 36.652,
+          "end": 36.692
+        },
+        {
+          "text": "con",
+          "start": 37.072,
+          "end": 37.212
+        },
+        {
+          "text": "i",
+          "start": 37.272,
+          "end": 37.312
+        },
+        {
+          "text": "al",
+          "start": 37.492,
+          "end": 37.592
+        },
+        {
+          "text": "tempo",
+          "start": 37.672,
+          "end": 37.912
+        },
+        {
+          "text": "t;",
+          "start": 38.012,
+          "end": 38.052
+        }
+      ]
+    },
+    {
+      "start": 38.692,
+      "end": 40.752,
+      "text": "cinque: si ripete fino a convergenza.",
+      "words": [
+        {
+          "text": "cinque:",
+          "start": 38.692,
+          "end": 39.052
+        },
+        {
+          "text": "si",
+          "start": 39.212,
+          "end": 39.272
+        },
+        {
+          "text": "ripete",
+          "start": 39.332,
+          "end": 39.632
+        },
+        {
+          "text": "fino",
+          "start": 39.692,
+          "end": 39.892
+        },
+        {
+          "text": "a",
+          "start": 39.932,
+          "end": 39.972
+        },
+        {
+          "text": "convergenza.",
+          "start": 40.012,
+          "end": 40.752
+        }
+      ]
+    },
+    {
+      "start": 41.732,
+      "end": 46.473,
+      "text": "La fase cooperativa è un aggiornamento hebbiano che avvicina i pesi all'input,",
+      "words": [
+        {
+          "text": "La",
+          "start": 41.732,
+          "end": 41.792
+        },
+        {
+          "text": "fase",
+          "start": 41.832,
+          "end": 42.052
+        },
+        {
+          "text": "cooperativa",
+          "start": 42.092,
+          "end": 42.712
+        },
+        {
+          "text": "è",
+          "start": 42.912,
+          "end": 42.953
+        },
+        {
+          "text": "un",
+          "start": 43.033,
+          "end": 43.113
+        },
+        {
+          "text": "aggiornamento",
+          "start": 43.133,
+          "end": 43.773
+        },
+        {
+          "text": "hebbiano",
+          "start": 44.013,
+          "end": 44.633
+        },
+        {
+          "text": "che",
+          "start": 44.813,
+          "end": 44.933
+        },
+        {
+          "text": "avvicina",
+          "start": 45.033,
+          "end": 45.513
+        },
+        {
+          "text": "i",
+          "start": 45.533,
+          "end": 45.573
+        },
+        {
+          "text": "pesi",
+          "start": 45.573,
+          "end": 45.813
+        },
+        {
+          "text": "all'input,",
+          "start": 45.873,
+          "end": 46.473
+        }
+      ]
+    },
+    {
+      "start": 46.773,
+      "end": 49.153,
+      "text": "modulato dalla funzione di vicinato h,",
+      "words": [
+        {
+          "text": "modulato",
+          "start": 46.773,
+          "end": 47.313
+        },
+        {
+          "text": "dalla",
+          "start": 47.413,
+          "end": 47.573
+        },
+        {
+          "text": "funzione",
+          "start": 47.613,
+          "end": 47.973
+        },
+        {
+          "text": "di",
+          "start": 48.013,
+          "end": 48.053
+        },
+        {
+          "text": "vicinato",
+          "start": 48.113,
+          "end": 48.633
+        },
+        {
+          "text": "h,",
+          "start": 49.113,
+          "end": 49.153
+        }
+      ]
+    },
+    {
+      "start": 49.733,
+      "end": 52.413,
+      "text": "decrescente con la distanza sulla mappa dal vincitore.",
+      "words": [
+        {
+          "text": "decrescente",
+          "start": 49.733,
+          "end": 50.413
+        },
+        {
+          "text": "con",
+          "start": 50.473,
+          "end": 50.573
+        },
+        {
+          "text": "la",
+          "start": 50.593,
+          "end": 50.653
+        },
+        {
+          "text": "distanza",
+          "start": 50.693,
+          "end": 51.133
+        },
+        {
+          "text": "sulla",
+          "start": 51.193,
+          "end": 51.373
+        },
+        {
+          "text": "mappa",
+          "start": 51.393,
+          "end": 51.613
+        },
+        {
+          "text": "dal",
+          "start": 51.673,
+          "end": 51.793
+        },
+        {
+          "text": "vincitore.",
+          "start": 51.833,
+          "end": 52.413
+        }
+      ]
+    },
+    {
+      "start": 52.993,
+      "end": 59.134,
+      "text": "La scelta classica è la gaussiana: esponenziale di meno la norma quadra di r con",
+      "words": [
+        {
+          "text": "La",
+          "start": 52.993,
+          "end": 53.053
+        },
+        {
+          "text": "scelta",
+          "start": 53.073,
+          "end": 53.353
+        },
+        {
+          "text": "classica",
+          "start": 53.393,
+          "end": 53.914
+        },
+        {
+          "text": "è",
+          "start": 54.114,
+          "end": 54.154
+        },
+        {
+          "text": "la",
+          "start": 54.194,
+          "end": 54.254
+        },
+        {
+          "text": "gaussiana:",
+          "start": 54.314,
+          "end": 54.974
+        },
+        {
+          "text": "esponenziale",
+          "start": 55.374,
+          "end": 56.174
+        },
+        {
+          "text": "di",
+          "start": 56.354,
+          "end": 56.414
+        },
+        {
+          "text": "meno",
+          "start": 56.494,
+          "end": 56.834
+        },
+        {
+          "text": "la",
+          "start": 57.054,
+          "end": 57.114
+        },
+        {
+          "text": "norma",
+          "start": 57.174,
+          "end": 57.434
+        },
+        {
+          "text": "quadra",
+          "start": 57.494,
+          "end": 57.874
+        },
+        {
+          "text": "di",
+          "start": 58.314,
+          "end": 58.394
+        },
+        {
+          "text": "r",
+          "start": 58.814,
+          "end": 58.854
+        },
+        {
+          "text": "con",
+          "start": 58.954,
+          "end": 59.134
+        }
+      ]
+    },
+    {
+      "start": 59.214,
+      "end": 63.414,
+      "text": "i meno r con i asterisco diviso due sigma quadro al tempo t,",
+      "words": [
+        {
+          "text": "i",
+          "start": 59.214,
+          "end": 59.254
+        },
+        {
+          "text": "meno",
+          "start": 59.474,
+          "end": 59.654
+        },
+        {
+          "text": "r",
+          "start": 59.994,
+          "end": 60.034
+        },
+        {
+          "text": "con",
+          "start": 60.134,
+          "end": 60.254
+        },
+        {
+          "text": "i",
+          "start": 60.294,
+          "end": 60.334
+        },
+        {
+          "text": "asterisco",
+          "start": 60.414,
+          "end": 60.994
+        },
+        {
+          "text": "diviso",
+          "start": 61.214,
+          "end": 61.594
+        },
+        {
+          "text": "due",
+          "start": 61.754,
+          "end": 61.914
+        },
+        {
+          "text": "sigma",
+          "start": 61.994,
+          "end": 62.294
+        },
+        {
+          "text": "quadro",
+          "start": 62.354,
+          "end": 62.694
+        },
+        {
+          "text": "al",
+          "start": 62.814,
+          "end": 62.914
+        },
+        {
+          "text": "tempo",
+          "start": 62.974,
+          "end": 63.254
+        },
+        {
+          "text": "t,",
+          "start": 63.374,
+          "end": 63.414
+        }
+      ]
+    },
+    {
+      "start": 64.094,
+      "end": 66.815,
+      "text": "dove sigma al tempo t è la larghezza del vicinato;",
+      "words": [
+        {
+          "text": "dove",
+          "start": 64.094,
+          "end": 64.254
+        },
+        {
+          "text": "sigma",
+          "start": 64.334,
+          "end": 64.654
+        },
+        {
+          "text": "al",
+          "start": 64.754,
+          "end": 64.855
+        },
+        {
+          "text": "tempo",
+          "start": 64.895,
+          "end": 65.115
+        },
+        {
+          "text": "t",
+          "start": 65.195,
+          "end": 65.235
+        },
+        {
+          "text": "è",
+          "start": 65.475,
+          "end": 65.515
+        },
+        {
+          "text": "la",
+          "start": 65.555,
+          "end": 65.635
+        },
+        {
+          "text": "larghezza",
+          "start": 65.695,
+          "end": 66.075
+        },
+        {
+          "text": "del",
+          "start": 66.135,
+          "end": 66.235
+        },
+        {
+          "text": "vicinato;",
+          "start": 66.275,
+          "end": 66.815
+        }
+      ]
+    },
+    {
+      "start": 67.615,
+      "end": 72.375,
+      "text": "in pratica si usano anche vicinati rettangolari o esagonali con un numero finito di unità.",
+      "words": [
+        {
+          "text": "in",
+          "start": 67.615,
+          "end": 67.675
+        },
+        {
+          "text": "pratica",
+          "start": 67.715,
+          "end": 68.115
+        },
+        {
+          "text": "si",
+          "start": 68.275,
+          "end": 68.355
+        },
+        {
+          "text": "usano",
+          "start": 68.435,
+          "end": 68.655
+        },
+        {
+          "text": "anche",
+          "start": 68.715,
+          "end": 68.875
+        },
+        {
+          "text": "vicinati",
+          "start": 68.935,
+          "end": 69.335
+        },
+        {
+          "text": "rettangolari",
+          "start": 69.395,
+          "end": 70.095
+        },
+        {
+          "text": "o",
+          "start": 70.155,
+          "end": 70.19500000000001
+        },
+        {
+          "text": "esagonali",
+          "start": 70.255,
+          "end": 70.855
+        },
+        {
+          "text": "con",
+          "start": 70.915,
+          "end": 71.035
+        },
+        {
+          "text": "un",
+          "start": 71.075,
+          "end": 71.155
+        },
+        {
+          "text": "numero",
+          "start": 71.195,
+          "end": 71.475
+        },
+        {
+          "text": "finito",
+          "start": 71.555,
+          "end": 71.915
+        },
+        {
+          "text": "di",
+          "start": 71.955,
+          "end": 72.035
+        },
+        {
+          "text": "unità.",
+          "start": 72.095,
+          "end": 72.375
+        }
+      ]
+    },
+    {
+      "start": 73.195,
+      "end": 77.376,
+      "text": "Learning rate eta e raggio sigma diminuiscono con le iterazioni:",
+      "words": [
+        {
+          "text": "Learning",
+          "start": 73.195,
+          "end": 73.535
+        },
+        {
+          "text": "rate",
+          "start": 73.575,
+          "end": 73.955
+        },
+        {
+          "text": "eta",
+          "start": 74.255,
+          "end": 74.535
+        },
+        {
+          "text": "e",
+          "start": 74.735,
+          "end": 74.775
+        },
+        {
+          "text": "raggio",
+          "start": 74.855,
+          "end": 75.075
+        },
+        {
+          "text": "sigma",
+          "start": 75.175,
+          "end": 75.555
+        },
+        {
+          "text": "diminuiscono",
+          "start": 75.816,
+          "end": 76.416
+        },
+        {
+          "text": "con",
+          "start": 76.456,
+          "end": 76.556
+        },
+        {
+          "text": "le",
+          "start": 76.596,
+          "end": 76.656
+        },
+        {
+          "text": "iterazioni:",
+          "start": 76.696,
+          "end": 77.376
+        }
+      ]
+    },
+    {
+      "start": 77.916,
+      "end": 84.376,
+      "text": "vicinato ampio all'inizio per l'ordinamento globale, poi sempre più stretto per convergenza e raffinamento locale.",
+      "words": [
+        {
+          "text": "vicinato",
+          "start": 77.916,
+          "end": 78.376
+        },
+        {
+          "text": "ampio",
+          "start": 78.476,
+          "end": 78.756
+        },
+        {
+          "text": "all'inizio",
+          "start": 78.796,
+          "end": 79.376
+        },
+        {
+          "text": "per",
+          "start": 79.556,
+          "end": 79.676
+        },
+        {
+          "text": "l'ordinamento",
+          "start": 79.716,
+          "end": 80.296
+        },
+        {
+          "text": "globale,",
+          "start": 80.336,
+          "end": 80.816
+        },
+        {
+          "text": "poi",
+          "start": 81.036,
+          "end": 81.256
+        },
+        {
+          "text": "sempre",
+          "start": 81.416,
+          "end": 81.696
+        },
+        {
+          "text": "più",
+          "start": 81.756,
+          "end": 81.856
+        },
+        {
+          "text": "stretto",
+          "start": 81.916,
+          "end": 82.256
+        },
+        {
+          "text": "per",
+          "start": 82.296,
+          "end": 82.396
+        },
+        {
+          "text": "convergenza",
+          "start": 82.436,
+          "end": 83.116
+        },
+        {
+          "text": "e",
+          "start": 83.156,
+          "end": 83.19600000000001
+        },
+        {
+          "text": "raffinamento",
+          "start": 83.256,
+          "end": 83.896
+        },
+        {
+          "text": "locale.",
+          "start": 83.956,
+          "end": 84.376
+        }
+      ]
+    },
+    {
+      "start": 85.236,
+      "end": 89.737,
+      "text": "Così emerge l'ordine topologico: i pesi non cambiano indipendentemente,",
+      "words": [
+        {
+          "text": "Così",
+          "start": 85.236,
+          "end": 85.436
+        },
+        {
+          "text": "emerge",
+          "start": 85.656,
+          "end": 86.016
+        },
+        {
+          "text": "l'ordine",
+          "start": 86.096,
+          "end": 86.496
+        },
+        {
+          "text": "topologico:",
+          "start": 86.536,
+          "end": 87.237
+        },
+        {
+          "text": "i",
+          "start": 87.617,
+          "end": 87.65700000000001
+        },
+        {
+          "text": "pesi",
+          "start": 87.697,
+          "end": 87.957
+        },
+        {
+          "text": "non",
+          "start": 88.077,
+          "end": 88.217
+        },
+        {
+          "text": "cambiano",
+          "start": 88.297,
+          "end": 88.697
+        },
+        {
+          "text": "indipendentemente,",
+          "start": 88.757,
+          "end": 89.737
+        }
+      ]
+    },
+    {
+      "start": 90.077,
+      "end": 96.437,
+      "text": "ma per sottoinsiemi legati sulla griglia, per cui unità vicine ricevono aggiornamenti simili e finiscono",
+      "words": [
+        {
+          "text": "ma",
+          "start": 90.077,
+          "end": 90.137
+        },
+        {
+          "text": "per",
+          "start": 90.197,
+          "end": 90.337
+        },
+        {
+          "text": "sottoinsiemi",
+          "start": 90.397,
+          "end": 91.097
+        },
+        {
+          "text": "legati",
+          "start": 91.157,
+          "end": 91.497
+        },
+        {
+          "text": "sulla",
+          "start": 91.557,
+          "end": 91.777
+        },
+        {
+          "text": "griglia,",
+          "start": 91.817,
+          "end": 92.197
+        },
+        {
+          "text": "per",
+          "start": 92.617,
+          "end": 92.737
+        },
+        {
+          "text": "cui",
+          "start": 92.777,
+          "end": 92.937
+        },
+        {
+          "text": "unità",
+          "start": 93.097,
+          "end": 93.377
+        },
+        {
+          "text": "vicine",
+          "start": 93.497,
+          "end": 93.937
+        },
+        {
+          "text": "ricevono",
+          "start": 94.237,
+          "end": 94.637
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 94.657,
+          "end": 95.237
+        },
+        {
+          "text": "simili",
+          "start": 95.337,
+          "end": 95.697
+        },
+        {
+          "text": "e",
+          "start": 95.897,
+          "end": 95.93700000000001
+        },
+        {
+          "text": "finiscono",
+          "start": 95.997,
+          "end": 96.437
+        }
+      ]
+    },
+    {
+      "start": 96.497,
+      "end": 98.078,
+      "text": "per rispondere a input simili;",
+      "words": [
+        {
+          "text": "per",
+          "start": 96.497,
+          "end": 96.597
+        },
+        {
+          "text": "rispondere",
+          "start": 96.637,
+          "end": 97.177
+        },
+        {
+          "text": "a",
+          "start": 97.197,
+          "end": 97.23700000000001
+        },
+        {
+          "text": "input",
+          "start": 97.317,
+          "end": 97.598
+        },
+        {
+          "text": "simili;",
+          "start": 97.698,
+          "end": 98.078
+        }
+      ]
+    },
+    {
+      "start": 99.038,
+      "end": 102.718,
+      "text": "una dimostrazione formale dell'ordinamento resta tuttavia difficile.",
+      "words": [
+        {
+          "text": "una",
+          "start": 99.038,
+          "end": 99.158
+        },
+        {
+          "text": "dimostrazione",
+          "start": 99.198,
+          "end": 99.818
+        },
+        {
+          "text": "formale",
+          "start": 99.878,
+          "end": 100.358
+        },
+        {
+          "text": "dell'ordinamento",
+          "start": 100.418,
+          "end": 101.218
+        },
+        {
+          "text": "resta",
+          "start": 101.458,
+          "end": 101.698
+        },
+        {
+          "text": "tuttavia",
+          "start": 101.758,
+          "end": 102.138
+        },
+        {
+          "text": "difficile.",
+          "start": 102.178,
+          "end": 102.718
+        }
+      ]
+    }
+  ]
+}

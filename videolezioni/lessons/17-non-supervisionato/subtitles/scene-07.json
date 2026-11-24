@@ -1,0 +1,1629 @@
+{
+  "duration": 115.542,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.04,
+      "text": "Entriamo ora nel cuore della seconda parte del capitolo:",
+      "words": [
+        {
+          "text": "Entriamo",
+          "start": 0.08,
+          "end": 0.52
+        },
+        {
+          "text": "ora",
+          "start": 0.54,
+          "end": 0.7
+        },
+        {
+          "text": "nel",
+          "start": 0.76,
+          "end": 0.94
+        },
+        {
+          "text": "cuore",
+          "start": 1.04,
+          "end": 1.36
+        },
+        {
+          "text": "della",
+          "start": 1.4,
+          "end": 1.56
+        },
+        {
+          "text": "seconda",
+          "start": 1.62,
+          "end": 1.98
+        },
+        {
+          "text": "parte",
+          "start": 2.02,
+          "end": 2.3
+        },
+        {
+          "text": "del",
+          "start": 2.34,
+          "end": 2.46
+        },
+        {
+          "text": "capitolo:",
+          "start": 2.52,
+          "end": 3.04
+        }
+      ]
+    },
+    {
+      "start": 3.54,
+      "end": 8.161,
+      "text": "le Self-Organizing Map, o SOM, introdotte da Teuvo Kohonen.",
+      "words": [
+        {
+          "text": "le",
+          "start": 3.54,
+          "end": 3.6
+        },
+        {
+          "text": "Self-Organizing",
+          "start": 3.74,
+          "end": 4.76
+        },
+        {
+          "text": "Map,",
+          "start": 4.8,
+          "end": 5.06
+        },
+        {
+          "text": "o",
+          "start": 5.32,
+          "end": 5.36
+        },
+        {
+          "text": "SOM,",
+          "start": 5.521,
+          "end": 5.801
+        },
+        {
+          "text": "introdotte",
+          "start": 6.301,
+          "end": 6.881
+        },
+        {
+          "text": "da",
+          "start": 6.941,
+          "end": 7.021
+        },
+        {
+          "text": "Teuvo",
+          "start": 7.161,
+          "end": 7.561
+        },
+        {
+          "text": "Kohonen.",
+          "start": 7.641,
+          "end": 8.161
+        }
+      ]
+    },
+    {
+      "start": 8.821,
+      "end": 13.501,
+      "text": "Una SOM è una rete di neuroni disposti su una griglia regolare a bassa dimensione,",
+      "words": [
+        {
+          "text": "Una",
+          "start": 8.821,
+          "end": 8.981
+        },
+        {
+          "text": "SOM",
+          "start": 9.101,
+          "end": 9.361
+        },
+        {
+          "text": "è",
+          "start": 9.641,
+          "end": 9.681
+        },
+        {
+          "text": "una",
+          "start": 9.781,
+          "end": 9.901
+        },
+        {
+          "text": "rete",
+          "start": 9.961,
+          "end": 10.201
+        },
+        {
+          "text": "di",
+          "start": 10.241,
+          "end": 10.301
+        },
+        {
+          "text": "neuroni",
+          "start": 10.361,
+          "end": 10.761
+        },
+        {
+          "text": "disposti",
+          "start": 10.821,
+          "end": 11.321
+        },
+        {
+          "text": "su",
+          "start": 11.381,
+          "end": 11.441
+        },
+        {
+          "text": "una",
+          "start": 11.481,
+          "end": 11.601
+        },
+        {
+          "text": "griglia",
+          "start": 11.641,
+          "end": 11.921
+        },
+        {
+          "text": "regolare",
+          "start": 11.981,
+          "end": 12.441
+        },
+        {
+          "text": "a",
+          "start": 12.481,
+          "end": 12.521
+        },
+        {
+          "text": "bassa",
+          "start": 12.581,
+          "end": 12.841
+        },
+        {
+          "text": "dimensione,",
+          "start": 12.881,
+          "end": 13.501
+        }
+      ]
+    },
+    {
+      "start": 13.821,
+      "end": 15.341,
+      "text": "tipicamente bidimensionale.",
+      "words": [
+        {
+          "text": "tipicamente",
+          "start": 13.821,
+          "end": 14.361
+        },
+        {
+          "text": "bidimensionale.",
+          "start": 14.461,
+          "end": 15.341
+        }
+      ]
+    },
+    {
+      "start": 15.941,
+      "end": 20.822,
+      "text": "Ogni unità della griglia è identificata dalle sue coordinate fisse r con i sulla mappa,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 15.941,
+          "end": 16.141
+        },
+        {
+          "text": "unità",
+          "start": 16.201,
+          "end": 16.462
+        },
+        {
+          "text": "della",
+          "start": 16.542,
+          "end": 16.702
+        },
+        {
+          "text": "griglia",
+          "start": 16.742,
+          "end": 17.102
+        },
+        {
+          "text": "è",
+          "start": 17.162,
+          "end": 17.202
+        },
+        {
+          "text": "identificata",
+          "start": 17.222,
+          "end": 17.902
+        },
+        {
+          "text": "dalle",
+          "start": 17.962,
+          "end": 18.162
+        },
+        {
+          "text": "sue",
+          "start": 18.202,
+          "end": 18.342
+        },
+        {
+          "text": "coordinate",
+          "start": 18.382,
+          "end": 18.882
+        },
+        {
+          "text": "fisse",
+          "start": 18.942,
+          "end": 19.302
+        },
+        {
+          "text": "r",
+          "start": 19.642,
+          "end": 19.682
+        },
+        {
+          "text": "con",
+          "start": 19.782,
+          "end": 19.922
+        },
+        {
+          "text": "i",
+          "start": 19.982,
+          "end": 20.022
+        },
+        {
+          "text": "sulla",
+          "start": 20.182,
+          "end": 20.442
+        },
+        {
+          "text": "mappa,",
+          "start": 20.482,
+          "end": 20.822
+        }
+      ]
+    },
+    {
+      "start": 21.342,
+      "end": 25.982,
+      "text": "riceve lo stesso vettore di input x e possiede un vettore di pesi w con",
+      "words": [
+        {
+          "text": "riceve",
+          "start": 21.342,
+          "end": 21.722
+        },
+        {
+          "text": "lo",
+          "start": 21.782,
+          "end": 21.842
+        },
+        {
+          "text": "stesso",
+          "start": 21.882,
+          "end": 22.142
+        },
+        {
+          "text": "vettore",
+          "start": 22.182,
+          "end": 22.522
+        },
+        {
+          "text": "di",
+          "start": 22.562,
+          "end": 22.622
+        },
+        {
+          "text": "input",
+          "start": 22.682,
+          "end": 22.942
+        },
+        {
+          "text": "x",
+          "start": 23.142,
+          "end": 23.182
+        },
+        {
+          "text": "e",
+          "start": 23.702,
+          "end": 23.742
+        },
+        {
+          "text": "possiede",
+          "start": 23.842,
+          "end": 24.242
+        },
+        {
+          "text": "un",
+          "start": 24.282,
+          "end": 24.342
+        },
+        {
+          "text": "vettore",
+          "start": 24.362,
+          "end": 24.682
+        },
+        {
+          "text": "di",
+          "start": 24.722,
+          "end": 24.802
+        },
+        {
+          "text": "pesi",
+          "start": 24.842,
+          "end": 25.182
+        },
+        {
+          "text": "w",
+          "start": 25.682,
+          "end": 25.722
+        },
+        {
+          "text": "con",
+          "start": 25.822,
+          "end": 25.982
+        }
+      ]
+    },
+    {
+      "start": 26.022,
+      "end": 28.783,
+      "text": "i della stessa dimensione n dello spazio di input.",
+      "words": [
+        {
+          "text": "i",
+          "start": 26.022,
+          "end": 26.062
+        },
+        {
+          "text": "della",
+          "start": 26.222,
+          "end": 26.442
+        },
+        {
+          "text": "stessa",
+          "start": 26.482,
+          "end": 26.782
+        },
+        {
+          "text": "dimensione",
+          "start": 26.822,
+          "end": 27.283
+        },
+        {
+          "text": "n",
+          "start": 27.483,
+          "end": 27.523
+        },
+        {
+          "text": "dello",
+          "start": 27.603,
+          "end": 27.823
+        },
+        {
+          "text": "spazio",
+          "start": 27.863,
+          "end": 28.223
+        },
+        {
+          "text": "di",
+          "start": 28.263,
+          "end": 28.323
+        },
+        {
+          "text": "input.",
+          "start": 28.423,
+          "end": 28.783
+        }
+      ]
+    },
+    {
+      "start": 29.463,
+      "end": 34.383,
+      "text": "Come mostra lo schema, per ogni input x si individua l'unità vincitrice sulla mappa,",
+      "words": [
+        {
+          "text": "Come",
+          "start": 29.463,
+          "end": 29.663
+        },
+        {
+          "text": "mostra",
+          "start": 29.723,
+          "end": 30.043
+        },
+        {
+          "text": "lo",
+          "start": 30.103,
+          "end": 30.163
+        },
+        {
+          "text": "schema,",
+          "start": 30.223,
+          "end": 30.603
+        },
+        {
+          "text": "per",
+          "start": 30.963,
+          "end": 31.103
+        },
+        {
+          "text": "ogni",
+          "start": 31.143,
+          "end": 31.303
+        },
+        {
+          "text": "input",
+          "start": 31.363,
+          "end": 31.643
+        },
+        {
+          "text": "x",
+          "start": 31.843,
+          "end": 31.883
+        },
+        {
+          "text": "si",
+          "start": 32.163,
+          "end": 32.223
+        },
+        {
+          "text": "individua",
+          "start": 32.303,
+          "end": 32.783
+        },
+        {
+          "text": "l'unità",
+          "start": 32.823,
+          "end": 33.103
+        },
+        {
+          "text": "vincitrice",
+          "start": 33.163,
+          "end": 33.743
+        },
+        {
+          "text": "sulla",
+          "start": 33.823,
+          "end": 34.023
+        },
+        {
+          "text": "mappa,",
+          "start": 34.043,
+          "end": 34.383
+        }
+      ]
+    },
+    {
+      "start": 34.503,
+      "end": 37.883,
+      "text": "cioè quella i cui pesi w con i sono più vicini a x;",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 34.503,
+          "end": 34.683
+        },
+        {
+          "text": "quella",
+          "start": 34.983,
+          "end": 35.243
+        },
+        {
+          "text": "i",
+          "start": 35.283,
+          "end": 35.323
+        },
+        {
+          "text": "cui",
+          "start": 35.343,
+          "end": 35.503
+        },
+        {
+          "text": "pesi",
+          "start": 35.583,
+          "end": 35.903
+        },
+        {
+          "text": "w",
+          "start": 36.263,
+          "end": 36.303
+        },
+        {
+          "text": "con",
+          "start": 36.383,
+          "end": 36.543
+        },
+        {
+          "text": "i",
+          "start": 36.583,
+          "end": 36.623
+        },
+        {
+          "text": "sono",
+          "start": 36.743,
+          "end": 36.943
+        },
+        {
+          "text": "più",
+          "start": 37.023,
+          "end": 37.123
+        },
+        {
+          "text": "vicini",
+          "start": 37.203,
+          "end": 37.563
+        },
+        {
+          "text": "a",
+          "start": 37.623,
+          "end": 37.663
+        },
+        {
+          "text": "x;",
+          "start": 37.843,
+          "end": 37.883
+        }
+      ]
+    },
+    {
+      "start": 38.484,
+      "end": 43.684,
+      "text": "ma, a differenza del K-means, insieme al vincitore vengono aggiornati anche i suoi vicini sulla",
+      "words": [
+        {
+          "text": "ma,",
+          "start": 38.484,
+          "end": 38.544
+        },
+        {
+          "text": "a",
+          "start": 38.664,
+          "end": 38.704
+        },
+        {
+          "text": "differenza",
+          "start": 38.764,
+          "end": 39.244
+        },
+        {
+          "text": "del",
+          "start": 39.284,
+          "end": 39.424
+        },
+        {
+          "text": "K-means,",
+          "start": 39.484,
+          "end": 40.124
+        },
+        {
+          "text": "insieme",
+          "start": 40.604,
+          "end": 41.024
+        },
+        {
+          "text": "al",
+          "start": 41.064,
+          "end": 41.144
+        },
+        {
+          "text": "vincitore",
+          "start": 41.164,
+          "end": 41.664
+        },
+        {
+          "text": "vengono",
+          "start": 41.704,
+          "end": 41.984
+        },
+        {
+          "text": "aggiornati",
+          "start": 42.004,
+          "end": 42.424
+        },
+        {
+          "text": "anche",
+          "start": 42.484,
+          "end": 42.684
+        },
+        {
+          "text": "i",
+          "start": 42.724,
+          "end": 42.764
+        },
+        {
+          "text": "suoi",
+          "start": 42.784,
+          "end": 42.984
+        },
+        {
+          "text": "vicini",
+          "start": 43.044,
+          "end": 43.404
+        },
+        {
+          "text": "sulla",
+          "start": 43.464,
+          "end": 43.684
+        }
+      ]
+    },
+    {
+      "start": 43.724,
+      "end": 44.064,
+      "text": "griglia.",
+      "words": [
+        {
+          "text": "griglia.",
+          "start": 43.724,
+          "end": 44.064
+        }
+      ]
+    },
+    {
+      "start": 44.864,
+      "end": 50.905,
+      "text": "Questo meccanismo porta alla proprietà distintiva della SOM: apprendere una mappa dallo spazio di input",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 44.864,
+          "end": 45.124
+        },
+        {
+          "text": "meccanismo",
+          "start": 45.184,
+          "end": 45.704
+        },
+        {
+          "text": "porta",
+          "start": 45.844,
+          "end": 46.144
+        },
+        {
+          "text": "alla",
+          "start": 46.184,
+          "end": 46.324
+        },
+        {
+          "text": "proprietà",
+          "start": 46.364,
+          "end": 46.744
+        },
+        {
+          "text": "distintiva",
+          "start": 46.804,
+          "end": 47.364
+        },
+        {
+          "text": "della",
+          "start": 47.424,
+          "end": 47.604
+        },
+        {
+          "text": "SOM:",
+          "start": 47.664,
+          "end": 47.904
+        },
+        {
+          "text": "apprendere",
+          "start": 48.444,
+          "end": 49.064
+        },
+        {
+          "text": "una",
+          "start": 49.104,
+          "end": 49.225
+        },
+        {
+          "text": "mappa",
+          "start": 49.285,
+          "end": 49.625
+        },
+        {
+          "text": "dallo",
+          "start": 49.705,
+          "end": 49.925
+        },
+        {
+          "text": "spazio",
+          "start": 49.985,
+          "end": 50.405
+        },
+        {
+          "text": "di",
+          "start": 50.445,
+          "end": 50.505
+        },
+        {
+          "text": "input",
+          "start": 50.605,
+          "end": 50.905
+        }
+      ]
+    },
+    {
+      "start": 50.965,
+      "end": 53.005,
+      "text": "alla griglia che preserva la topologia.",
+      "words": [
+        {
+          "text": "alla",
+          "start": 50.965,
+          "end": 51.125
+        },
+        {
+          "text": "griglia",
+          "start": 51.185,
+          "end": 51.545
+        },
+        {
+          "text": "che",
+          "start": 51.745,
+          "end": 51.825
+        },
+        {
+          "text": "preserva",
+          "start": 51.905,
+          "end": 52.305
+        },
+        {
+          "text": "la",
+          "start": 52.365,
+          "end": 52.425
+        },
+        {
+          "text": "topologia.",
+          "start": 52.465,
+          "end": 53.005
+        }
+      ]
+    },
+    {
+      "start": 53.865,
+      "end": 58.285,
+      "text": "Significa che unità vicine sulla mappa imparano a rispondere a input simili,",
+      "words": [
+        {
+          "text": "Significa",
+          "start": 53.865,
+          "end": 54.385
+        },
+        {
+          "text": "che",
+          "start": 54.485,
+          "end": 54.605
+        },
+        {
+          "text": "unità",
+          "start": 54.765,
+          "end": 55.065
+        },
+        {
+          "text": "vicine",
+          "start": 55.145,
+          "end": 55.485
+        },
+        {
+          "text": "sulla",
+          "start": 55.545,
+          "end": 55.725
+        },
+        {
+          "text": "mappa",
+          "start": 55.765,
+          "end": 56.085
+        },
+        {
+          "text": "imparano",
+          "start": 56.485,
+          "end": 56.865
+        },
+        {
+          "text": "a",
+          "start": 56.905,
+          "end": 56.945
+        },
+        {
+          "text": "rispondere",
+          "start": 56.965,
+          "end": 57.405
+        },
+        {
+          "text": "a",
+          "start": 57.445,
+          "end": 57.485
+        },
+        {
+          "text": "input",
+          "start": 57.545,
+          "end": 57.805
+        },
+        {
+          "text": "simili,",
+          "start": 57.905,
+          "end": 58.285
+        }
+      ]
+    },
+    {
+      "start": 58.445,
+      "end": 64.266,
+      "text": "e reciprocamente punti vicini nello spazio di input vengono mappati sulla stessa unità oppure su",
+      "words": [
+        {
+          "text": "e",
+          "start": 58.445,
+          "end": 58.485
+        },
+        {
+          "text": "reciprocamente",
+          "start": 58.605,
+          "end": 59.465
+        },
+        {
+          "text": "punti",
+          "start": 59.565,
+          "end": 59.885
+        },
+        {
+          "text": "vicini",
+          "start": 59.945,
+          "end": 60.326
+        },
+        {
+          "text": "nello",
+          "start": 60.386,
+          "end": 60.566
+        },
+        {
+          "text": "spazio",
+          "start": 60.606,
+          "end": 60.946
+        },
+        {
+          "text": "di",
+          "start": 60.966,
+          "end": 61.026
+        },
+        {
+          "text": "input",
+          "start": 61.126,
+          "end": 61.446
+        },
+        {
+          "text": "vengono",
+          "start": 61.926,
+          "end": 62.226
+        },
+        {
+          "text": "mappati",
+          "start": 62.266,
+          "end": 62.626
+        },
+        {
+          "text": "sulla",
+          "start": 62.666,
+          "end": 62.866
+        },
+        {
+          "text": "stessa",
+          "start": 62.906,
+          "end": 63.166
+        },
+        {
+          "text": "unità",
+          "start": 63.246,
+          "end": 63.506
+        },
+        {
+          "text": "oppure",
+          "start": 63.706,
+          "end": 64.086
+        },
+        {
+          "text": "su",
+          "start": 64.186,
+          "end": 64.266
+        }
+      ]
+    },
+    {
+      "start": 64.366,
+      "end": 65.266,
+      "text": "unità adiacenti.",
+      "words": [
+        {
+          "text": "unità",
+          "start": 64.366,
+          "end": 64.626
+        },
+        {
+          "text": "adiacenti.",
+          "start": 64.686,
+          "end": 65.266
+        }
+      ]
+    },
+    {
+      "start": 66.186,
+      "end": 70.046,
+      "text": "Grazie a questa struttura, una SOM si utilizza in quattro modi diversi:",
+      "words": [
+        {
+          "text": "Grazie",
+          "start": 66.186,
+          "end": 66.486
+        },
+        {
+          "text": "a",
+          "start": 66.506,
+          "end": 66.546
+        },
+        {
+          "text": "questa",
+          "start": 66.586,
+          "end": 66.826
+        },
+        {
+          "text": "struttura,",
+          "start": 66.866,
+          "end": 67.426
+        },
+        {
+          "text": "una",
+          "start": 67.846,
+          "end": 67.986
+        },
+        {
+          "text": "SOM",
+          "start": 68.046,
+          "end": 68.246
+        },
+        {
+          "text": "si",
+          "start": 68.346,
+          "end": 68.406
+        },
+        {
+          "text": "utilizza",
+          "start": 68.466,
+          "end": 68.826
+        },
+        {
+          "text": "in",
+          "start": 68.866,
+          "end": 68.926
+        },
+        {
+          "text": "quattro",
+          "start": 68.966,
+          "end": 69.266
+        },
+        {
+          "text": "modi",
+          "start": 69.306,
+          "end": 69.526
+        },
+        {
+          "text": "diversi:",
+          "start": 69.566,
+          "end": 70.046
+        }
+      ]
+    },
+    {
+      "start": 70.506,
+      "end": 74.227,
+      "text": "primo, per il clustering, individuando i gruppi direttamente sulla mappa;",
+      "words": [
+        {
+          "text": "primo,",
+          "start": 70.506,
+          "end": 70.786
+        },
+        {
+          "text": "per",
+          "start": 70.886,
+          "end": 70.986
+        },
+        {
+          "text": "il",
+          "start": 71.026,
+          "end": 71.107
+        },
+        {
+          "text": "clustering,",
+          "start": 71.147,
+          "end": 71.707
+        },
+        {
+          "text": "individuando",
+          "start": 72.087,
+          "end": 72.667
+        },
+        {
+          "text": "i",
+          "start": 72.707,
+          "end": 72.747
+        },
+        {
+          "text": "gruppi",
+          "start": 72.747,
+          "end": 73.047
+        },
+        {
+          "text": "direttamente",
+          "start": 73.087,
+          "end": 73.667
+        },
+        {
+          "text": "sulla",
+          "start": 73.707,
+          "end": 73.887
+        },
+        {
+          "text": "mappa;",
+          "start": 73.907,
+          "end": 74.227
+        }
+      ]
+    },
+    {
+      "start": 74.847,
+      "end": 80.167,
+      "text": "secondo, per la quantizzazione vettoriale, sostituendo l'input con il vettore dei pesi del vincitore;",
+      "words": [
+        {
+          "text": "secondo,",
+          "start": 74.847,
+          "end": 75.307
+        },
+        {
+          "text": "per",
+          "start": 75.387,
+          "end": 75.507
+        },
+        {
+          "text": "la",
+          "start": 75.547,
+          "end": 75.607
+        },
+        {
+          "text": "quantizzazione",
+          "start": 75.667,
+          "end": 76.367
+        },
+        {
+          "text": "vettoriale,",
+          "start": 76.387,
+          "end": 77.027
+        },
+        {
+          "text": "sostituendo",
+          "start": 77.187,
+          "end": 77.747
+        },
+        {
+          "text": "l'input",
+          "start": 77.787,
+          "end": 78.167
+        },
+        {
+          "text": "con",
+          "start": 78.267,
+          "end": 78.387
+        },
+        {
+          "text": "il",
+          "start": 78.447,
+          "end": 78.527
+        },
+        {
+          "text": "vettore",
+          "start": 78.547,
+          "end": 78.907
+        },
+        {
+          "text": "dei",
+          "start": 78.947,
+          "end": 79.087
+        },
+        {
+          "text": "pesi",
+          "start": 79.127,
+          "end": 79.367
+        },
+        {
+          "text": "del",
+          "start": 79.407,
+          "end": 79.527
+        },
+        {
+          "text": "vincitore;",
+          "start": 79.567,
+          "end": 80.167
+        }
+      ]
+    },
+    {
+      "start": 80.807,
+      "end": 85.848,
+      "text": "terzo, per la compressione, codificando l'input tramite il solo indice del vincitore;",
+      "words": [
+        {
+          "text": "terzo,",
+          "start": 80.807,
+          "end": 81.247
+        },
+        {
+          "text": "per",
+          "start": 81.367,
+          "end": 81.507
+        },
+        {
+          "text": "la",
+          "start": 81.547,
+          "end": 81.627
+        },
+        {
+          "text": "compressione,",
+          "start": 81.687,
+          "end": 82.468
+        },
+        {
+          "text": "codificando",
+          "start": 82.828,
+          "end": 83.368
+        },
+        {
+          "text": "l'input",
+          "start": 83.408,
+          "end": 83.788
+        },
+        {
+          "text": "tramite",
+          "start": 83.908,
+          "end": 84.248
+        },
+        {
+          "text": "il",
+          "start": 84.308,
+          "end": 84.368
+        },
+        {
+          "text": "solo",
+          "start": 84.448,
+          "end": 84.688
+        },
+        {
+          "text": "indice",
+          "start": 84.748,
+          "end": 85.088
+        },
+        {
+          "text": "del",
+          "start": 85.128,
+          "end": 85.228
+        },
+        {
+          "text": "vincitore;",
+          "start": 85.268,
+          "end": 85.848
+        }
+      ]
+    },
+    {
+      "start": 86.428,
+      "end": 90.648,
+      "text": "quarto, per la proiezione e l'esplorazione visiva dei dati in due dimensioni.",
+      "words": [
+        {
+          "text": "quarto,",
+          "start": 86.428,
+          "end": 86.868
+        },
+        {
+          "text": "per",
+          "start": 86.968,
+          "end": 87.088
+        },
+        {
+          "text": "la",
+          "start": 87.128,
+          "end": 87.188
+        },
+        {
+          "text": "proiezione",
+          "start": 87.228,
+          "end": 87.868
+        },
+        {
+          "text": "e",
+          "start": 88.008,
+          "end": 88.048
+        },
+        {
+          "text": "l'esplorazione",
+          "start": 88.108,
+          "end": 88.788
+        },
+        {
+          "text": "visiva",
+          "start": 88.828,
+          "end": 89.108
+        },
+        {
+          "text": "dei",
+          "start": 89.168,
+          "end": 89.288
+        },
+        {
+          "text": "dati",
+          "start": 89.328,
+          "end": 89.628
+        },
+        {
+          "text": "in",
+          "start": 89.788,
+          "end": 89.868
+        },
+        {
+          "text": "due",
+          "start": 89.888,
+          "end": 90.028
+        },
+        {
+          "text": "dimensioni.",
+          "start": 90.048,
+          "end": 90.648
+        }
+      ]
+    },
+    {
+      "start": 91.468,
+      "end": 95.169,
+      "text": "Dal punto di vista del paradigma, parliamo di apprendimento competitivo:",
+      "words": [
+        {
+          "text": "Dal",
+          "start": 91.468,
+          "end": 91.608
+        },
+        {
+          "text": "punto",
+          "start": 91.628,
+          "end": 91.868
+        },
+        {
+          "text": "di",
+          "start": 91.888,
+          "end": 91.948
+        },
+        {
+          "text": "vista",
+          "start": 91.988,
+          "end": 92.188
+        },
+        {
+          "text": "del",
+          "start": 92.228,
+          "end": 92.348
+        },
+        {
+          "text": "paradigma,",
+          "start": 92.368,
+          "end": 92.848
+        },
+        {
+          "text": "parliamo",
+          "start": 93.189,
+          "end": 93.609
+        },
+        {
+          "text": "di",
+          "start": 93.669,
+          "end": 93.729
+        },
+        {
+          "text": "apprendimento",
+          "start": 93.769,
+          "end": 94.369
+        },
+        {
+          "text": "competitivo:",
+          "start": 94.429,
+          "end": 95.169
+        }
+      ]
+    },
+    {
+      "start": 95.729,
+      "end": 100.869,
+      "text": "i neuroni competono per ogni input, il vincitore apprende di più e gradualmente le unità",
+      "words": [
+        {
+          "text": "i",
+          "start": 95.729,
+          "end": 95.769
+        },
+        {
+          "text": "neuroni",
+          "start": 95.809,
+          "end": 96.269
+        },
+        {
+          "text": "competono",
+          "start": 96.349,
+          "end": 96.849
+        },
+        {
+          "text": "per",
+          "start": 96.889,
+          "end": 96.989
+        },
+        {
+          "text": "ogni",
+          "start": 97.029,
+          "end": 97.209
+        },
+        {
+          "text": "input,",
+          "start": 97.309,
+          "end": 97.649
+        },
+        {
+          "text": "il",
+          "start": 98.069,
+          "end": 98.149
+        },
+        {
+          "text": "vincitore",
+          "start": 98.169,
+          "end": 98.589
+        },
+        {
+          "text": "apprende",
+          "start": 98.629,
+          "end": 98.949
+        },
+        {
+          "text": "di",
+          "start": 98.989,
+          "end": 99.069
+        },
+        {
+          "text": "più",
+          "start": 99.109,
+          "end": 99.229
+        },
+        {
+          "text": "e",
+          "start": 99.449,
+          "end": 99.489
+        },
+        {
+          "text": "gradualmente",
+          "start": 99.589,
+          "end": 100.349
+        },
+        {
+          "text": "le",
+          "start": 100.489,
+          "end": 100.569
+        },
+        {
+          "text": "unità",
+          "start": 100.609,
+          "end": 100.869
+        }
+      ]
+    },
+    {
+      "start": 100.949,
+      "end": 103.89,
+      "text": "si specializzano su porzioni diverse dello spazio degli input.",
+      "words": [
+        {
+          "text": "si",
+          "start": 100.949,
+          "end": 101.029
+        },
+        {
+          "text": "specializzano",
+          "start": 101.069,
+          "end": 101.669
+        },
+        {
+          "text": "su",
+          "start": 101.729,
+          "end": 101.809
+        },
+        {
+          "text": "porzioni",
+          "start": 101.869,
+          "end": 102.249
+        },
+        {
+          "text": "diverse",
+          "start": 102.289,
+          "end": 102.669
+        },
+        {
+          "text": "dello",
+          "start": 102.709,
+          "end": 102.889
+        },
+        {
+          "text": "spazio",
+          "start": 102.929,
+          "end": 103.249
+        },
+        {
+          "text": "degli",
+          "start": 103.289,
+          "end": 103.509
+        },
+        {
+          "text": "input.",
+          "start": 103.549,
+          "end": 103.89
+        }
+      ]
+    },
+    {
+      "start": 104.67,
+      "end": 108.63,
+      "text": "Un celebre analogo biologico è la corteccia somatosensoriale del cervello,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 104.67,
+          "end": 104.77
+        },
+        {
+          "text": "celebre",
+          "start": 104.85,
+          "end": 105.19
+        },
+        {
+          "text": "analogo",
+          "start": 105.25,
+          "end": 105.63
+        },
+        {
+          "text": "biologico",
+          "start": 105.67,
+          "end": 106.21
+        },
+        {
+          "text": "è",
+          "start": 106.25,
+          "end": 106.29
+        },
+        {
+          "text": "la",
+          "start": 106.31,
+          "end": 106.37
+        },
+        {
+          "text": "corteccia",
+          "start": 106.41,
+          "end": 106.83
+        },
+        {
+          "text": "somatosensoriale",
+          "start": 106.93,
+          "end": 107.89
+        },
+        {
+          "text": "del",
+          "start": 107.93,
+          "end": 108.05
+        },
+        {
+          "text": "cervello,",
+          "start": 108.09,
+          "end": 108.63
+        }
+      ]
+    },
+    {
+      "start": 109.11,
+      "end": 114.871,
+      "text": "una mappa topologicamente ordinata del corpo che associa neuroni adiacenti a parti del corpo fisicamente",
+      "words": [
+        {
+          "text": "una",
+          "start": 109.11,
+          "end": 109.25
+        },
+        {
+          "text": "mappa",
+          "start": 109.27,
+          "end": 109.53
+        },
+        {
+          "text": "topologicamente",
+          "start": 109.65,
+          "end": 110.43
+        },
+        {
+          "text": "ordinata",
+          "start": 110.47,
+          "end": 110.93
+        },
+        {
+          "text": "del",
+          "start": 110.97,
+          "end": 111.09
+        },
+        {
+          "text": "corpo",
+          "start": 111.15,
+          "end": 111.55
+        },
+        {
+          "text": "che",
+          "start": 111.71,
+          "end": 111.79
+        },
+        {
+          "text": "associa",
+          "start": 111.81,
+          "end": 112.15
+        },
+        {
+          "text": "neuroni",
+          "start": 112.19,
+          "end": 112.55
+        },
+        {
+          "text": "adiacenti",
+          "start": 112.59,
+          "end": 113.21
+        },
+        {
+          "text": "a",
+          "start": 113.37,
+          "end": 113.41000000000001
+        },
+        {
+          "text": "parti",
+          "start": 113.49,
+          "end": 113.73
+        },
+        {
+          "text": "del",
+          "start": 113.77,
+          "end": 113.89
+        },
+        {
+          "text": "corpo",
+          "start": 113.95,
+          "end": 114.23
+        },
+        {
+          "text": "fisicamente",
+          "start": 114.29,
+          "end": 114.871
+        }
+      ]
+    },
+    {
+      "start": 114.911,
+      "end": 115.311,
+      "text": "vicine.",
+      "words": [
+        {
+          "text": "vicine.",
+          "start": 114.911,
+          "end": 115.311
+        }
+      ]
+    }
+  ]
+}

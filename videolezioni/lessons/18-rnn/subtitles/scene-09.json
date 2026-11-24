@@ -1,0 +1,1256 @@
+{
+  "duration": 81.721,
+  "segments": [
+    {
+      "start": 1.263,
+      "end": 6.364,
+      "text": "Le sequenze sono catene lineari, ma molti dati reali hanno una struttura gerarchica ad albero,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 1.263,
+          "end": 1.343
+        },
+        {
+          "text": "sequenze",
+          "start": 1.383,
+          "end": 1.783
+        },
+        {
+          "text": "sono",
+          "start": 1.843,
+          "end": 2.023
+        },
+        {
+          "text": "catene",
+          "start": 2.123,
+          "end": 2.423
+        },
+        {
+          "text": "lineari,",
+          "start": 2.503,
+          "end": 2.963
+        },
+        {
+          "text": "ma",
+          "start": 3.363,
+          "end": 3.423
+        },
+        {
+          "text": "molti",
+          "start": 3.543,
+          "end": 3.803
+        },
+        {
+          "text": "dati",
+          "start": 3.863,
+          "end": 4.063
+        },
+        {
+          "text": "reali",
+          "start": 4.103,
+          "end": 4.383
+        },
+        {
+          "text": "hanno",
+          "start": 4.423,
+          "end": 4.603
+        },
+        {
+          "text": "una",
+          "start": 4.663,
+          "end": 4.763
+        },
+        {
+          "text": "struttura",
+          "start": 4.823,
+          "end": 5.223
+        },
+        {
+          "text": "gerarchica",
+          "start": 5.303,
+          "end": 5.843
+        },
+        {
+          "text": "ad",
+          "start": 5.904,
+          "end": 5.964
+        },
+        {
+          "text": "albero,",
+          "start": 6.044,
+          "end": 6.364
+        }
+      ]
+    },
+    {
+      "start": 6.684,
+      "end": 10.204,
+      "text": "come le espressioni aritmetiche o gli alberi sintattici del linguaggio.",
+      "words": [
+        {
+          "text": "come",
+          "start": 6.684,
+          "end": 6.844
+        },
+        {
+          "text": "le",
+          "start": 6.924,
+          "end": 6.964
+        },
+        {
+          "text": "espressioni",
+          "start": 7.004,
+          "end": 7.484
+        },
+        {
+          "text": "aritmetiche",
+          "start": 7.524,
+          "end": 8.184
+        },
+        {
+          "text": "o",
+          "start": 8.344,
+          "end": 8.384
+        },
+        {
+          "text": "gli",
+          "start": 8.444,
+          "end": 8.564
+        },
+        {
+          "text": "alberi",
+          "start": 8.604,
+          "end": 8.884
+        },
+        {
+          "text": "sintattici",
+          "start": 8.924,
+          "end": 9.544
+        },
+        {
+          "text": "del",
+          "start": 9.584,
+          "end": 9.684
+        },
+        {
+          "text": "linguaggio.",
+          "start": 9.724,
+          "end": 10.204
+        }
+      ]
+    },
+    {
+      "start": 10.944,
+      "end": 14.564,
+      "text": "L'approccio ricorrente si estende agli alberi con le reti neurali ricorsive,",
+      "words": [
+        {
+          "text": "L'approccio",
+          "start": 10.944,
+          "end": 11.344
+        },
+        {
+          "text": "ricorrente",
+          "start": 11.384,
+          "end": 11.924
+        },
+        {
+          "text": "si",
+          "start": 12.064,
+          "end": 12.124
+        },
+        {
+          "text": "estende",
+          "start": 12.164,
+          "end": 12.464
+        },
+        {
+          "text": "agli",
+          "start": 12.484,
+          "end": 12.644
+        },
+        {
+          "text": "alberi",
+          "start": 12.684,
+          "end": 12.964
+        },
+        {
+          "text": "con",
+          "start": 13.024,
+          "end": 13.144
+        },
+        {
+          "text": "le",
+          "start": 13.204,
+          "end": 13.264
+        },
+        {
+          "text": "reti",
+          "start": 13.324,
+          "end": 13.524
+        },
+        {
+          "text": "neurali",
+          "start": 13.564,
+          "end": 13.944
+        },
+        {
+          "text": "ricorsive,",
+          "start": 14.004,
+          "end": 14.564
+        }
+      ]
+    },
+    {
+      "start": 14.784,
+      "end": 16.065,
+      "text": "in breve RecNN.",
+      "words": [
+        {
+          "text": "in",
+          "start": 14.784,
+          "end": 14.864
+        },
+        {
+          "text": "breve",
+          "start": 14.904,
+          "end": 15.124
+        },
+        {
+          "text": "RecNN.",
+          "start": 15.384,
+          "end": 16.065
+        }
+      ]
+    },
+    {
+      "start": 16.905,
+      "end": 20.385,
+      "text": "In una RecNN la codifica procede dal basso verso l'alto,",
+      "words": [
+        {
+          "text": "In",
+          "start": 16.905,
+          "end": 16.985
+        },
+        {
+          "text": "una",
+          "start": 17.045,
+          "end": 17.185
+        },
+        {
+          "text": "RecNN",
+          "start": 17.445,
+          "end": 18.125
+        },
+        {
+          "text": "la",
+          "start": 18.345,
+          "end": 18.425
+        },
+        {
+          "text": "codifica",
+          "start": 18.465,
+          "end": 18.865
+        },
+        {
+          "text": "procede",
+          "start": 18.905,
+          "end": 19.225
+        },
+        {
+          "text": "dal",
+          "start": 19.265,
+          "end": 19.405
+        },
+        {
+          "text": "basso",
+          "start": 19.465,
+          "end": 19.725
+        },
+        {
+          "text": "verso",
+          "start": 19.765,
+          "end": 20.005
+        },
+        {
+          "text": "l'alto,",
+          "start": 20.045,
+          "end": 20.385
+        }
+      ]
+    },
+    {
+      "start": 20.605,
+      "end": 21.945,
+      "text": "dalle foglie fino alla radice.",
+      "words": [
+        {
+          "text": "dalle",
+          "start": 20.605,
+          "end": 20.765
+        },
+        {
+          "text": "foglie",
+          "start": 20.785,
+          "end": 21.065
+        },
+        {
+          "text": "fino",
+          "start": 21.225,
+          "end": 21.405
+        },
+        {
+          "text": "alla",
+          "start": 21.445,
+          "end": 21.565
+        },
+        {
+          "text": "radice.",
+          "start": 21.605,
+          "end": 21.945
+        }
+      ]
+    },
+    {
+      "start": 22.665,
+      "end": 24.145,
+      "text": "Osserviamo l'albero nello schema:",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 22.665,
+          "end": 23.105
+        },
+        {
+          "text": "l'albero",
+          "start": 23.185,
+          "end": 23.545
+        },
+        {
+          "text": "nello",
+          "start": 23.585,
+          "end": 23.765
+        },
+        {
+          "text": "schema:",
+          "start": 23.825,
+          "end": 24.145
+        }
+      ]
+    },
+    {
+      "start": 24.805,
+      "end": 27.766,
+      "text": "le foglie d, e, f vengono codificate per prime;",
+      "words": [
+        {
+          "text": "le",
+          "start": 24.805,
+          "end": 24.865
+        },
+        {
+          "text": "foglie",
+          "start": 24.905,
+          "end": 25.145
+        },
+        {
+          "text": "d,",
+          "start": 25.305,
+          "end": 25.345
+        },
+        {
+          "text": "e,",
+          "start": 25.645,
+          "end": 25.685
+        },
+        {
+          "text": "f",
+          "start": 26.226,
+          "end": 26.266
+        },
+        {
+          "text": "vengono",
+          "start": 26.526,
+          "end": 26.826
+        },
+        {
+          "text": "codificate",
+          "start": 26.866,
+          "end": 27.306
+        },
+        {
+          "text": "per",
+          "start": 27.346,
+          "end": 27.446
+        },
+        {
+          "text": "prime;",
+          "start": 27.506,
+          "end": 27.766
+        }
+      ]
+    },
+    {
+      "start": 28.186,
+      "end": 30.866,
+      "text": "poi i loro stati salgono ai nodi intermedi b e c;",
+      "words": [
+        {
+          "text": "poi",
+          "start": 28.186,
+          "end": 28.366
+        },
+        {
+          "text": "i",
+          "start": 28.566,
+          "end": 28.606
+        },
+        {
+          "text": "loro",
+          "start": 28.646,
+          "end": 28.786
+        },
+        {
+          "text": "stati",
+          "start": 28.846,
+          "end": 29.066
+        },
+        {
+          "text": "salgono",
+          "start": 29.146,
+          "end": 29.486
+        },
+        {
+          "text": "ai",
+          "start": 29.506,
+          "end": 29.586
+        },
+        {
+          "text": "nodi",
+          "start": 29.606,
+          "end": 29.786
+        },
+        {
+          "text": "intermedi",
+          "start": 29.826,
+          "end": 30.286
+        },
+        {
+          "text": "b",
+          "start": 30.366,
+          "end": 30.406
+        },
+        {
+          "text": "e",
+          "start": 30.666,
+          "end": 30.706
+        },
+        {
+          "text": "c;",
+          "start": 30.826,
+          "end": 30.866
+        }
+      ]
+    },
+    {
+      "start": 31.726,
+      "end": 36.166,
+      "text": "infine si calcola lo stato della radice a, da cui si emette l'uscita per l'intero",
+      "words": [
+        {
+          "text": "infine",
+          "start": 31.726,
+          "end": 32.186
+        },
+        {
+          "text": "si",
+          "start": 32.346,
+          "end": 32.426
+        },
+        {
+          "text": "calcola",
+          "start": 32.486,
+          "end": 32.806
+        },
+        {
+          "text": "lo",
+          "start": 32.866,
+          "end": 32.906
+        },
+        {
+          "text": "stato",
+          "start": 32.946,
+          "end": 33.166
+        },
+        {
+          "text": "della",
+          "start": 33.206,
+          "end": 33.366
+        },
+        {
+          "text": "radice",
+          "start": 33.406,
+          "end": 33.726
+        },
+        {
+          "text": "a,",
+          "start": 34.026,
+          "end": 34.066
+        },
+        {
+          "text": "da",
+          "start": 34.506,
+          "end": 34.566
+        },
+        {
+          "text": "cui",
+          "start": 34.626,
+          "end": 34.766
+        },
+        {
+          "text": "si",
+          "start": 34.826,
+          "end": 34.886
+        },
+        {
+          "text": "emette",
+          "start": 34.906,
+          "end": 35.166
+        },
+        {
+          "text": "l'uscita",
+          "start": 35.206,
+          "end": 35.606
+        },
+        {
+          "text": "per",
+          "start": 35.666,
+          "end": 35.786
+        },
+        {
+          "text": "l'intero",
+          "start": 35.826,
+          "end": 36.166
+        }
+      ]
+    },
+    {
+      "start": 36.227,
+      "end": 36.527,
+      "text": "albero.",
+      "words": [
+        {
+          "text": "albero.",
+          "start": 36.227,
+          "end": 36.527
+        }
+      ]
+    },
+    {
+      "start": 37.287,
+      "end": 41.987,
+      "text": "Formalmente, lo stato h di v di ogni nodo dipende dalla propria etichetta x di",
+      "words": [
+        {
+          "text": "Formalmente,",
+          "start": 37.287,
+          "end": 37.767
+        },
+        {
+          "text": "lo",
+          "start": 37.887,
+          "end": 37.967
+        },
+        {
+          "text": "stato",
+          "start": 38.007,
+          "end": 38.207
+        },
+        {
+          "text": "h",
+          "start": 38.687,
+          "end": 38.727
+        },
+        {
+          "text": "di",
+          "start": 38.807,
+          "end": 38.867
+        },
+        {
+          "text": "v",
+          "start": 38.947,
+          "end": 38.987
+        },
+        {
+          "text": "di",
+          "start": 39.247,
+          "end": 39.307
+        },
+        {
+          "text": "ogni",
+          "start": 39.367,
+          "end": 39.527
+        },
+        {
+          "text": "nodo",
+          "start": 39.607,
+          "end": 39.847
+        },
+        {
+          "text": "dipende",
+          "start": 40.167,
+          "end": 40.467
+        },
+        {
+          "text": "dalla",
+          "start": 40.527,
+          "end": 40.687
+        },
+        {
+          "text": "propria",
+          "start": 40.707,
+          "end": 40.947
+        },
+        {
+          "text": "etichetta",
+          "start": 40.987,
+          "end": 41.407
+        },
+        {
+          "text": "x",
+          "start": 41.667,
+          "end": 41.707
+        },
+        {
+          "text": "di",
+          "start": 41.907,
+          "end": 41.987
+        }
+      ]
+    },
+    {
+      "start": 42.067,
+      "end": 44.027,
+      "text": "v e dagli stati di tutti i suoi figli:",
+      "words": [
+        {
+          "text": "v",
+          "start": 42.067,
+          "end": 42.107
+        },
+        {
+          "text": "e",
+          "start": 42.407,
+          "end": 42.447
+        },
+        {
+          "text": "dagli",
+          "start": 42.527,
+          "end": 42.747
+        },
+        {
+          "text": "stati",
+          "start": 42.807,
+          "end": 43.087
+        },
+        {
+          "text": "di",
+          "start": 43.147,
+          "end": 43.187
+        },
+        {
+          "text": "tutti",
+          "start": 43.227,
+          "end": 43.447
+        },
+        {
+          "text": "i",
+          "start": 43.507,
+          "end": 43.547
+        },
+        {
+          "text": "suoi",
+          "start": 43.547,
+          "end": 43.687
+        },
+        {
+          "text": "figli:",
+          "start": 43.727,
+          "end": 44.027
+        }
+      ]
+    },
+    {
+      "start": 44.727,
+      "end": 48.168,
+      "text": "h di v uguale tau degli stati dei figli di v e di x di",
+      "words": [
+        {
+          "text": "h",
+          "start": 44.727,
+          "end": 44.767
+        },
+        {
+          "text": "di",
+          "start": 44.827,
+          "end": 44.887
+        },
+        {
+          "text": "v",
+          "start": 44.967,
+          "end": 45.007
+        },
+        {
+          "text": "uguale",
+          "start": 45.107,
+          "end": 45.367
+        },
+        {
+          "text": "tau",
+          "start": 45.467,
+          "end": 45.727
+        },
+        {
+          "text": "degli",
+          "start": 45.787,
+          "end": 45.987
+        },
+        {
+          "text": "stati",
+          "start": 46.047,
+          "end": 46.327
+        },
+        {
+          "text": "dei",
+          "start": 46.388,
+          "end": 46.528
+        },
+        {
+          "text": "figli",
+          "start": 46.608,
+          "end": 46.828
+        },
+        {
+          "text": "di",
+          "start": 46.868,
+          "end": 46.928
+        },
+        {
+          "text": "v",
+          "start": 47.028,
+          "end": 47.068
+        },
+        {
+          "text": "e",
+          "start": 47.528,
+          "end": 47.568
+        },
+        {
+          "text": "di",
+          "start": 47.668,
+          "end": 47.728
+        },
+        {
+          "text": "x",
+          "start": 47.908,
+          "end": 47.948
+        },
+        {
+          "text": "di",
+          "start": 48.108,
+          "end": 48.168
+        }
+      ]
+    },
+    {
+      "start": 48.228,
+      "end": 48.268,
+      "text": "v.",
+      "words": [
+        {
+          "text": "v.",
+          "start": 48.228,
+          "end": 48.268
+        }
+      ]
+    },
+    {
+      "start": 49.488,
+      "end": 54.428,
+      "text": "Rispetto a una RNN, quindi, la funzione di transizione tau riceve in ingresso più stati",
+      "words": [
+        {
+          "text": "Rispetto",
+          "start": 49.488,
+          "end": 49.788
+        },
+        {
+          "text": "a",
+          "start": 49.808,
+          "end": 49.848
+        },
+        {
+          "text": "una",
+          "start": 49.888,
+          "end": 50.028
+        },
+        {
+          "text": "RNN,",
+          "start": 50.288,
+          "end": 50.848
+        },
+        {
+          "text": "quindi,",
+          "start": 50.968,
+          "end": 51.288
+        },
+        {
+          "text": "la",
+          "start": 51.528,
+          "end": 51.628
+        },
+        {
+          "text": "funzione",
+          "start": 51.668,
+          "end": 52.028
+        },
+        {
+          "text": "di",
+          "start": 52.068,
+          "end": 52.108
+        },
+        {
+          "text": "transizione",
+          "start": 52.148,
+          "end": 52.628
+        },
+        {
+          "text": "tau",
+          "start": 52.688,
+          "end": 52.968
+        },
+        {
+          "text": "riceve",
+          "start": 53.128,
+          "end": 53.388
+        },
+        {
+          "text": "in",
+          "start": 53.408,
+          "end": 53.468
+        },
+        {
+          "text": "ingresso",
+          "start": 53.468,
+          "end": 53.848
+        },
+        {
+          "text": "più",
+          "start": 53.948,
+          "end": 54.068
+        },
+        {
+          "text": "stati",
+          "start": 54.168,
+          "end": 54.428
+        }
+      ]
+    },
+    {
+      "start": 54.468,
+      "end": 59.289,
+      "text": "contemporaneamente, e lo stato di ogni nodo codifica l'intero sottoalbero sottostante.",
+      "words": [
+        {
+          "text": "contemporaneamente,",
+          "start": 54.468,
+          "end": 55.328
+        },
+        {
+          "text": "e",
+          "start": 55.868,
+          "end": 55.908
+        },
+        {
+          "text": "lo",
+          "start": 55.968,
+          "end": 56.028
+        },
+        {
+          "text": "stato",
+          "start": 56.068,
+          "end": 56.268
+        },
+        {
+          "text": "di",
+          "start": 56.328,
+          "end": 56.388
+        },
+        {
+          "text": "ogni",
+          "start": 56.448,
+          "end": 56.629
+        },
+        {
+          "text": "nodo",
+          "start": 56.729,
+          "end": 56.989
+        },
+        {
+          "text": "codifica",
+          "start": 57.049,
+          "end": 57.429
+        },
+        {
+          "text": "l'intero",
+          "start": 57.509,
+          "end": 57.929
+        },
+        {
+          "text": "sottoalbero",
+          "start": 58.029,
+          "end": 58.629
+        },
+        {
+          "text": "sottostante.",
+          "start": 58.669,
+          "end": 59.289
+        }
+      ]
+    },
+    {
+      "start": 61.009,
+      "end": 65.169,
+      "text": "Esattamente come la stazionarietà nelle RNN, le unità sono le stesse per tutti i nodi",
+      "words": [
+        {
+          "text": "Esattamente",
+          "start": 61.009,
+          "end": 61.469
+        },
+        {
+          "text": "come",
+          "start": 61.489,
+          "end": 61.649
+        },
+        {
+          "text": "la",
+          "start": 61.689,
+          "end": 61.749
+        },
+        {
+          "text": "stazionarietà",
+          "start": 61.809,
+          "end": 62.409
+        },
+        {
+          "text": "nelle",
+          "start": 62.509,
+          "end": 62.709
+        },
+        {
+          "text": "RNN,",
+          "start": 62.849,
+          "end": 63.309
+        },
+        {
+          "text": "le",
+          "start": 63.629,
+          "end": 63.689
+        },
+        {
+          "text": "unità",
+          "start": 63.729,
+          "end": 63.949
+        },
+        {
+          "text": "sono",
+          "start": 64.009,
+          "end": 64.149
+        },
+        {
+          "text": "le",
+          "start": 64.209,
+          "end": 64.269
+        },
+        {
+          "text": "stesse",
+          "start": 64.289,
+          "end": 64.549
+        },
+        {
+          "text": "per",
+          "start": 64.589,
+          "end": 64.689
+        },
+        {
+          "text": "tutti",
+          "start": 64.709,
+          "end": 64.909
+        },
+        {
+          "text": "i",
+          "start": 64.949,
+          "end": 64.989
+        },
+        {
+          "text": "nodi",
+          "start": 64.989,
+          "end": 65.169
+        }
+      ]
+    },
+    {
+      "start": 65.209,
+      "end": 67.59,
+      "text": "di un albero e per tutti gli alberi del dataset,",
+      "words": [
+        {
+          "text": "di",
+          "start": 65.209,
+          "end": 65.269
+        },
+        {
+          "text": "un",
+          "start": 65.289,
+          "end": 65.349
+        },
+        {
+          "text": "albero",
+          "start": 65.409,
+          "end": 65.689
+        },
+        {
+          "text": "e",
+          "start": 66.009,
+          "end": 66.049
+        },
+        {
+          "text": "per",
+          "start": 66.149,
+          "end": 66.269
+        },
+        {
+          "text": "tutti",
+          "start": 66.329,
+          "end": 66.529
+        },
+        {
+          "text": "gli",
+          "start": 66.549,
+          "end": 66.65
+        },
+        {
+          "text": "alberi",
+          "start": 66.67,
+          "end": 66.93
+        },
+        {
+          "text": "del",
+          "start": 66.97,
+          "end": 67.09
+        },
+        {
+          "text": "dataset,",
+          "start": 67.13,
+          "end": 67.59
+        }
+      ]
+    },
+    {
+      "start": 67.93,
+      "end": 69.73,
+      "text": "grazie alla condivisione dei pesi.",
+      "words": [
+        {
+          "text": "grazie",
+          "start": 67.93,
+          "end": 68.35
+        },
+        {
+          "text": "alla",
+          "start": 68.45,
+          "end": 68.61
+        },
+        {
+          "text": "condivisione",
+          "start": 68.69,
+          "end": 69.29
+        },
+        {
+          "text": "dei",
+          "start": 69.31,
+          "end": 69.43
+        },
+        {
+          "text": "pesi.",
+          "start": 69.47,
+          "end": 69.73
+        }
+      ]
+    },
+    {
+      "start": 70.69,
+      "end": 74.73,
+      "text": "Se cambia la struttura dell'albero, la rete di codifica srotolata cambia di conseguenza.",
+      "words": [
+        {
+          "text": "Se",
+          "start": 70.69,
+          "end": 70.75
+        },
+        {
+          "text": "cambia",
+          "start": 70.79,
+          "end": 71.01
+        },
+        {
+          "text": "la",
+          "start": 71.05,
+          "end": 71.11
+        },
+        {
+          "text": "struttura",
+          "start": 71.13,
+          "end": 71.47
+        },
+        {
+          "text": "dell'albero,",
+          "start": 71.51,
+          "end": 71.99
+        },
+        {
+          "text": "la",
+          "start": 72.11,
+          "end": 72.17
+        },
+        {
+          "text": "rete",
+          "start": 72.23,
+          "end": 72.39
+        },
+        {
+          "text": "di",
+          "start": 72.43,
+          "end": 72.49
+        },
+        {
+          "text": "codifica",
+          "start": 72.53,
+          "end": 72.93
+        },
+        {
+          "text": "srotolata",
+          "start": 73.01,
+          "end": 73.55
+        },
+        {
+          "text": "cambia",
+          "start": 73.65,
+          "end": 73.95
+        },
+        {
+          "text": "di",
+          "start": 73.99,
+          "end": 74.05
+        },
+        {
+          "text": "conseguenza.",
+          "start": 74.09,
+          "end": 74.73
+        }
+      ]
+    },
+    {
+      "start": 75.73,
+      "end": 79.411,
+      "text": "L'estensione successiva, dagli alberi ai grafi generali con possibili cicli,",
+      "words": [
+        {
+          "text": "L'estensione",
+          "start": 75.73,
+          "end": 76.21
+        },
+        {
+          "text": "successiva,",
+          "start": 76.25,
+          "end": 76.791
+        },
+        {
+          "text": "dagli",
+          "start": 76.911,
+          "end": 77.091
+        },
+        {
+          "text": "alberi",
+          "start": 77.131,
+          "end": 77.431
+        },
+        {
+          "text": "ai",
+          "start": 77.531,
+          "end": 77.631
+        },
+        {
+          "text": "grafi",
+          "start": 77.671,
+          "end": 77.911
+        },
+        {
+          "text": "generali",
+          "start": 77.971,
+          "end": 78.451
+        },
+        {
+          "text": "con",
+          "start": 78.511,
+          "end": 78.631
+        },
+        {
+          "text": "possibili",
+          "start": 78.651,
+          "end": 79.051
+        },
+        {
+          "text": "cicli,",
+          "start": 79.111,
+          "end": 79.411
+        }
+      ]
+    },
+    {
+      "start": 79.531,
+      "end": 81.471,
+      "text": "sarà l'argomento del capitolo diciannove.",
+      "words": [
+        {
+          "text": "sarà",
+          "start": 79.531,
+          "end": 79.691
+        },
+        {
+          "text": "l'argomento",
+          "start": 79.791,
+          "end": 80.371
+        },
+        {
+          "text": "del",
+          "start": 80.411,
+          "end": 80.531
+        },
+        {
+          "text": "capitolo",
+          "start": 80.571,
+          "end": 80.951
+        },
+        {
+          "text": "diciannove.",
+          "start": 80.991,
+          "end": 81.471
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1347 @@
+{
+  "duration": 95.907,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.941,
+      "text": "Nessuna teoria garantisce alta accuratezza per una famiglia di SVM su un problema dato:",
+      "words": [
+        {
+          "text": "Nessuna",
+          "start": 0.08,
+          "end": 0.46
+        },
+        {
+          "text": "teoria",
+          "start": 0.5,
+          "end": 0.86
+        },
+        {
+          "text": "garantisce",
+          "start": 0.9,
+          "end": 1.46
+        },
+        {
+          "text": "alta",
+          "start": 1.54,
+          "end": 1.72
+        },
+        {
+          "text": "accuratezza",
+          "start": 1.76,
+          "end": 2.36
+        },
+        {
+          "text": "per",
+          "start": 2.44,
+          "end": 2.54
+        },
+        {
+          "text": "una",
+          "start": 2.58,
+          "end": 2.68
+        },
+        {
+          "text": "famiglia",
+          "start": 2.74,
+          "end": 3.1
+        },
+        {
+          "text": "di",
+          "start": 3.16,
+          "end": 3.24
+        },
+        {
+          "text": "SVM",
+          "start": 3.42,
+          "end": 3.84
+        },
+        {
+          "text": "su",
+          "start": 4.06,
+          "end": 4.12
+        },
+        {
+          "text": "un",
+          "start": 4.16,
+          "end": 4.22
+        },
+        {
+          "text": "problema",
+          "start": 4.24,
+          "end": 4.601
+        },
+        {
+          "text": "dato:",
+          "start": 4.661,
+          "end": 4.941
+        }
+      ]
+    },
+    {
+      "start": 5.581,
+      "end": 9.601,
+      "text": "le proprietà dell'hard margin non si estendono al soft margin e ai kernel,",
+      "words": [
+        {
+          "text": "le",
+          "start": 5.581,
+          "end": 5.641
+        },
+        {
+          "text": "proprietà",
+          "start": 5.681,
+          "end": 6.081
+        },
+        {
+          "text": "dell'hard",
+          "start": 6.181,
+          "end": 6.541
+        },
+        {
+          "text": "margin",
+          "start": 6.621,
+          "end": 7.061
+        },
+        {
+          "text": "non",
+          "start": 7.241,
+          "end": 7.381
+        },
+        {
+          "text": "si",
+          "start": 7.421,
+          "end": 7.481
+        },
+        {
+          "text": "estendono",
+          "start": 7.561,
+          "end": 8.001
+        },
+        {
+          "text": "al",
+          "start": 8.041,
+          "end": 8.101
+        },
+        {
+          "text": "soft",
+          "start": 8.141,
+          "end": 8.341
+        },
+        {
+          "text": "margin",
+          "start": 8.421,
+          "end": 8.821
+        },
+        {
+          "text": "e",
+          "start": 8.961,
+          "end": 9.001
+        },
+        {
+          "text": "ai",
+          "start": 9.021,
+          "end": 9.121
+        },
+        {
+          "text": "kernel,",
+          "start": 9.161,
+          "end": 9.601
+        }
+      ]
+    },
+    {
+      "start": 10.021,
+      "end": 12.761,
+      "text": "e la VC-dimension può diventare persino infinita.",
+      "words": [
+        {
+          "text": "e",
+          "start": 10.021,
+          "end": 10.061
+        },
+        {
+          "text": "la",
+          "start": 10.101,
+          "end": 10.181
+        },
+        {
+          "text": "VC-dimension",
+          "start": 10.221,
+          "end": 11.121
+        },
+        {
+          "text": "può",
+          "start": 11.281,
+          "end": 11.381
+        },
+        {
+          "text": "diventare",
+          "start": 11.441,
+          "end": 11.881
+        },
+        {
+          "text": "persino",
+          "start": 11.921,
+          "end": 12.261
+        },
+        {
+          "text": "infinita.",
+          "start": 12.301,
+          "end": 12.761
+        }
+      ]
+    },
+    {
+      "start": 13.541,
+      "end": 17.962,
+      "text": "Con un kernel RBF di larghezza sigma piccolissima, cioè gamma grande,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 13.541,
+          "end": 13.662
+        },
+        {
+          "text": "un",
+          "start": 13.682,
+          "end": 13.762
+        },
+        {
+          "text": "kernel",
+          "start": 13.802,
+          "end": 14.202
+        },
+        {
+          "text": "RBF",
+          "start": 14.482,
+          "end": 14.942
+        },
+        {
+          "text": "di",
+          "start": 15.062,
+          "end": 15.122
+        },
+        {
+          "text": "larghezza",
+          "start": 15.162,
+          "end": 15.582
+        },
+        {
+          "text": "sigma",
+          "start": 15.702,
+          "end": 16.022
+        },
+        {
+          "text": "piccolissima,",
+          "start": 16.142,
+          "end": 16.842
+        },
+        {
+          "text": "cioè",
+          "start": 17.002,
+          "end": 17.162
+        },
+        {
+          "text": "gamma",
+          "start": 17.282,
+          "end": 17.522
+        },
+        {
+          "text": "grande,",
+          "start": 17.602,
+          "end": 17.962
+        }
+      ]
+    },
+    {
+      "start": 18.442,
+      "end": 23.903,
+      "text": "contribuisce solo il support vector più vicino: la SVM classifica un numero arbitrario di punti",
+      "words": [
+        {
+          "text": "contribuisce",
+          "start": 18.442,
+          "end": 19.042
+        },
+        {
+          "text": "solo",
+          "start": 19.102,
+          "end": 19.262
+        },
+        {
+          "text": "il",
+          "start": 19.302,
+          "end": 19.362
+        },
+        {
+          "text": "support",
+          "start": 19.422,
+          "end": 19.782
+        },
+        {
+          "text": "vector",
+          "start": 19.842,
+          "end": 20.202
+        },
+        {
+          "text": "più",
+          "start": 20.262,
+          "end": 20.342
+        },
+        {
+          "text": "vicino:",
+          "start": 20.402,
+          "end": 20.782
+        },
+        {
+          "text": "la",
+          "start": 21.222,
+          "end": 21.282
+        },
+        {
+          "text": "SVM",
+          "start": 21.422,
+          "end": 21.802
+        },
+        {
+          "text": "classifica",
+          "start": 21.922,
+          "end": 22.422
+        },
+        {
+          "text": "un",
+          "start": 22.462,
+          "end": 22.542
+        },
+        {
+          "text": "numero",
+          "start": 22.582,
+          "end": 22.842
+        },
+        {
+          "text": "arbitrario",
+          "start": 22.882,
+          "end": 23.403
+        },
+        {
+          "text": "di",
+          "start": 23.443,
+          "end": 23.503
+        },
+        {
+          "text": "punti",
+          "start": 23.583,
+          "end": 23.903
+        }
+      ]
+    },
+    {
+      "start": 23.983,
+      "end": 29.263,
+      "text": "come il 1-NN, avendo VC-dimension infinita senza regolarizzazione.",
+      "words": [
+        {
+          "text": "come",
+          "start": 23.983,
+          "end": 24.203
+        },
+        {
+          "text": "il",
+          "start": 24.343,
+          "end": 24.443
+        },
+        {
+          "text": "1-NN,",
+          "start": 25.223,
+          "end": 25.583
+        },
+        {
+          "text": "avendo",
+          "start": 26.103,
+          "end": 26.403
+        },
+        {
+          "text": "VC-dimension",
+          "start": 26.483,
+          "end": 27.263
+        },
+        {
+          "text": "infinita",
+          "start": 27.363,
+          "end": 27.863
+        },
+        {
+          "text": "senza",
+          "start": 28.063,
+          "end": 28.323
+        },
+        {
+          "text": "regolarizzazione.",
+          "start": 28.383,
+          "end": 29.263
+        }
+      ]
+    },
+    {
+      "start": 29.823,
+      "end": 33.124,
+      "text": "Con sigma grande invece contribuiscono tutti i support vector,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 29.823,
+          "end": 29.983
+        },
+        {
+          "text": "sigma",
+          "start": 30.023,
+          "end": 30.263
+        },
+        {
+          "text": "grande",
+          "start": 30.323,
+          "end": 30.663
+        },
+        {
+          "text": "invece",
+          "start": 30.843,
+          "end": 31.123
+        },
+        {
+          "text": "contribuiscono",
+          "start": 31.163,
+          "end": 31.843
+        },
+        {
+          "text": "tutti",
+          "start": 31.943,
+          "end": 32.223
+        },
+        {
+          "text": "i",
+          "start": 32.264,
+          "end": 32.304
+        },
+        {
+          "text": "support",
+          "start": 32.304,
+          "end": 32.684
+        },
+        {
+          "text": "vector,",
+          "start": 32.744,
+          "end": 33.124
+        }
+      ]
+    },
+    {
+      "start": 33.544,
+      "end": 36.264,
+      "text": "ottenendo una media globale a bassa VC-dimension:",
+      "words": [
+        {
+          "text": "ottenendo",
+          "start": 33.544,
+          "end": 33.904
+        },
+        {
+          "text": "una",
+          "start": 33.944,
+          "end": 34.044
+        },
+        {
+          "text": "media",
+          "start": 34.064,
+          "end": 34.284
+        },
+        {
+          "text": "globale",
+          "start": 34.324,
+          "end": 34.744
+        },
+        {
+          "text": "a",
+          "start": 34.884,
+          "end": 34.924
+        },
+        {
+          "text": "bassa",
+          "start": 35.024,
+          "end": 35.364
+        },
+        {
+          "text": "VC-dimension:",
+          "start": 35.444,
+          "end": 36.264
+        }
+      ]
+    },
+    {
+      "start": 36.944,
+      "end": 40.224,
+      "text": "controllando la larghezza del kernel si controlla la VC-dimension.",
+      "words": [
+        {
+          "text": "controllando",
+          "start": 36.944,
+          "end": 37.464
+        },
+        {
+          "text": "la",
+          "start": 37.504,
+          "end": 37.564
+        },
+        {
+          "text": "larghezza",
+          "start": 37.604,
+          "end": 38.024
+        },
+        {
+          "text": "del",
+          "start": 38.084,
+          "end": 38.204
+        },
+        {
+          "text": "kernel",
+          "start": 38.264,
+          "end": 38.664
+        },
+        {
+          "text": "si",
+          "start": 38.784,
+          "end": 38.864
+        },
+        {
+          "text": "controlla",
+          "start": 38.904,
+          "end": 39.284
+        },
+        {
+          "text": "la",
+          "start": 39.344,
+          "end": 39.384
+        },
+        {
+          "text": "VC-dimension.",
+          "start": 39.444,
+          "end": 40.224
+        }
+      ]
+    },
+    {
+      "start": 41.044,
+      "end": 45.145,
+      "text": "Il grafico reale a sinistra mostra l'errore di test al variare di C in scala",
+      "words": [
+        {
+          "text": "Il",
+          "start": 41.044,
+          "end": 41.124
+        },
+        {
+          "text": "grafico",
+          "start": 41.164,
+          "end": 41.524
+        },
+        {
+          "text": "reale",
+          "start": 41.565,
+          "end": 41.785
+        },
+        {
+          "text": "a",
+          "start": 41.825,
+          "end": 41.865
+        },
+        {
+          "text": "sinistra",
+          "start": 41.905,
+          "end": 42.345
+        },
+        {
+          "text": "mostra",
+          "start": 42.465,
+          "end": 42.765
+        },
+        {
+          "text": "l'errore",
+          "start": 42.825,
+          "end": 43.185
+        },
+        {
+          "text": "di",
+          "start": 43.225,
+          "end": 43.285
+        },
+        {
+          "text": "test",
+          "start": 43.345,
+          "end": 43.625
+        },
+        {
+          "text": "al",
+          "start": 43.765,
+          "end": 43.865
+        },
+        {
+          "text": "variare",
+          "start": 43.905,
+          "end": 44.225
+        },
+        {
+          "text": "di",
+          "start": 44.265,
+          "end": 44.325
+        },
+        {
+          "text": "C",
+          "start": 44.425,
+          "end": 44.465
+        },
+        {
+          "text": "in",
+          "start": 44.765,
+          "end": 44.845
+        },
+        {
+          "text": "scala",
+          "start": 44.885,
+          "end": 45.145
+        }
+      ]
+    },
+    {
+      "start": 45.165,
+      "end": 47.425,
+      "text": "logaritmica per quattro valori di gamma.",
+      "words": [
+        {
+          "text": "logaritmica",
+          "start": 45.165,
+          "end": 45.805
+        },
+        {
+          "text": "per",
+          "start": 46.185,
+          "end": 46.305
+        },
+        {
+          "text": "quattro",
+          "start": 46.385,
+          "end": 46.685
+        },
+        {
+          "text": "valori",
+          "start": 46.725,
+          "end": 46.985
+        },
+        {
+          "text": "di",
+          "start": 47.025,
+          "end": 47.085
+        },
+        {
+          "text": "gamma.",
+          "start": 47.125,
+          "end": 47.425
+        }
+      ]
+    },
+    {
+      "start": 48.165,
+      "end": 53.126,
+      "text": "Il miglior valore di C cambia con gamma: con kernel stretti serve più regolarizzazione,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 48.165,
+          "end": 48.245
+        },
+        {
+          "text": "miglior",
+          "start": 48.285,
+          "end": 48.525
+        },
+        {
+          "text": "valore",
+          "start": 48.565,
+          "end": 48.825
+        },
+        {
+          "text": "di",
+          "start": 48.865,
+          "end": 48.925
+        },
+        {
+          "text": "C",
+          "start": 49.005,
+          "end": 49.045
+        },
+        {
+          "text": "cambia",
+          "start": 49.245,
+          "end": 49.525
+        },
+        {
+          "text": "con",
+          "start": 49.585,
+          "end": 49.705
+        },
+        {
+          "text": "gamma:",
+          "start": 49.745,
+          "end": 50.045
+        },
+        {
+          "text": "con",
+          "start": 50.525,
+          "end": 50.665
+        },
+        {
+          "text": "kernel",
+          "start": 50.705,
+          "end": 51.066
+        },
+        {
+          "text": "stretti",
+          "start": 51.146,
+          "end": 51.606
+        },
+        {
+          "text": "serve",
+          "start": 51.746,
+          "end": 51.986
+        },
+        {
+          "text": "più",
+          "start": 52.046,
+          "end": 52.146
+        },
+        {
+          "text": "regolarizzazione,",
+          "start": 52.226,
+          "end": 53.126
+        }
+      ]
+    },
+    {
+      "start": 53.606,
+      "end": 55.806,
+      "text": "e al variare di gamma l'ottimo si sposta.",
+      "words": [
+        {
+          "text": "e",
+          "start": 53.606,
+          "end": 53.646
+        },
+        {
+          "text": "al",
+          "start": 53.666,
+          "end": 53.746
+        },
+        {
+          "text": "variare",
+          "start": 53.786,
+          "end": 54.126
+        },
+        {
+          "text": "di",
+          "start": 54.166,
+          "end": 54.226
+        },
+        {
+          "text": "gamma",
+          "start": 54.286,
+          "end": 54.606
+        },
+        {
+          "text": "l'ottimo",
+          "start": 54.806,
+          "end": 55.206
+        },
+        {
+          "text": "si",
+          "start": 55.246,
+          "end": 55.326
+        },
+        {
+          "text": "sposta.",
+          "start": 55.386,
+          "end": 55.806
+        }
+      ]
+    },
+    {
+      "start": 56.526,
+      "end": 61.907,
+      "text": "Quindi C e parametri del kernel vanno selezionati insieme con grid search e validazione rigorosa,",
+      "words": [
+        {
+          "text": "Quindi",
+          "start": 56.526,
+          "end": 56.766
+        },
+        {
+          "text": "C",
+          "start": 56.846,
+          "end": 56.886
+        },
+        {
+          "text": "e",
+          "start": 57.146,
+          "end": 57.186
+        },
+        {
+          "text": "parametri",
+          "start": 57.226,
+          "end": 57.666
+        },
+        {
+          "text": "del",
+          "start": 57.726,
+          "end": 57.846
+        },
+        {
+          "text": "kernel",
+          "start": 57.906,
+          "end": 58.306
+        },
+        {
+          "text": "vanno",
+          "start": 58.426,
+          "end": 58.626
+        },
+        {
+          "text": "selezionati",
+          "start": 58.686,
+          "end": 59.206
+        },
+        {
+          "text": "insieme",
+          "start": 59.266,
+          "end": 59.666
+        },
+        {
+          "text": "con",
+          "start": 59.746,
+          "end": 59.886
+        },
+        {
+          "text": "grid",
+          "start": 59.946,
+          "end": 60.146
+        },
+        {
+          "text": "search",
+          "start": 60.247,
+          "end": 60.607
+        },
+        {
+          "text": "e",
+          "start": 60.747,
+          "end": 60.787
+        },
+        {
+          "text": "validazione",
+          "start": 60.807,
+          "end": 61.347
+        },
+        {
+          "text": "rigorosa,",
+          "start": 61.407,
+          "end": 61.907
+        }
+      ]
+    },
+    {
+      "start": 62.307,
+      "end": 66.307,
+      "text": "come validation più test o double CV, per evitare overfitting.",
+      "words": [
+        {
+          "text": "come",
+          "start": 62.307,
+          "end": 62.527
+        },
+        {
+          "text": "validation",
+          "start": 62.647,
+          "end": 63.247
+        },
+        {
+          "text": "più",
+          "start": 63.327,
+          "end": 63.427
+        },
+        {
+          "text": "test",
+          "start": 63.507,
+          "end": 63.827
+        },
+        {
+          "text": "o",
+          "start": 64.007,
+          "end": 64.04700000000001
+        },
+        {
+          "text": "double",
+          "start": 64.187,
+          "end": 64.527
+        },
+        {
+          "text": "CV,",
+          "start": 64.587,
+          "end": 64.767
+        },
+        {
+          "text": "per",
+          "start": 65.167,
+          "end": 65.287
+        },
+        {
+          "text": "evitare",
+          "start": 65.327,
+          "end": 65.667
+        },
+        {
+          "text": "overfitting.",
+          "start": 65.707,
+          "end": 66.307
+        }
+      ]
+    },
+    {
+      "start": 67.207,
+      "end": 68.987,
+      "text": "Sfatiamo infine quattro luoghi comuni.",
+      "words": [
+        {
+          "text": "Sfatiamo",
+          "start": 67.207,
+          "end": 67.587
+        },
+        {
+          "text": "infine",
+          "start": 67.627,
+          "end": 67.907
+        },
+        {
+          "text": "quattro",
+          "start": 68.007,
+          "end": 68.307
+        },
+        {
+          "text": "luoghi",
+          "start": 68.347,
+          "end": 68.587
+        },
+        {
+          "text": "comuni.",
+          "start": 68.627,
+          "end": 68.987
+        }
+      ]
+    },
+    {
+      "start": 69.508,
+      "end": 70.848,
+      "text": "Uno: valori di default?",
+      "words": [
+        {
+          "text": "Uno:",
+          "start": 69.508,
+          "end": 69.668
+        },
+        {
+          "text": "valori",
+          "start": 70.008,
+          "end": 70.268
+        },
+        {
+          "text": "di",
+          "start": 70.328,
+          "end": 70.388
+        },
+        {
+          "text": "default?",
+          "start": 70.408,
+          "end": 70.848
+        }
+      ]
+    },
+    {
+      "start": 71.108,
+      "end": 73.148,
+      "text": "No, C e kernel sono critici.",
+      "words": [
+        {
+          "text": "No,",
+          "start": 71.108,
+          "end": 71.208
+        },
+        {
+          "text": "C",
+          "start": 71.688,
+          "end": 71.72800000000001
+        },
+        {
+          "text": "e",
+          "start": 71.868,
+          "end": 71.908
+        },
+        {
+          "text": "kernel",
+          "start": 71.988,
+          "end": 72.388
+        },
+        {
+          "text": "sono",
+          "start": 72.508,
+          "end": 72.688
+        },
+        {
+          "text": "critici.",
+          "start": 72.728,
+          "end": 73.148
+        }
+      ]
+    },
+    {
+      "start": 73.768,
+      "end": 76.148,
+      "text": "Due: la SVM non va in overfitting?",
+      "words": [
+        {
+          "text": "Due:",
+          "start": 73.768,
+          "end": 73.968
+        },
+        {
+          "text": "la",
+          "start": 74.428,
+          "end": 74.508
+        },
+        {
+          "text": "SVM",
+          "start": 74.648,
+          "end": 75.048
+        },
+        {
+          "text": "non",
+          "start": 75.168,
+          "end": 75.288
+        },
+        {
+          "text": "va",
+          "start": 75.328,
+          "end": 75.388
+        },
+        {
+          "text": "in",
+          "start": 75.428,
+          "end": 75.488
+        },
+        {
+          "text": "overfitting?",
+          "start": 75.508,
+          "end": 76.148
+        }
+      ]
+    },
+    {
+      "start": 76.528,
+      "end": 79.149,
+      "text": "Falso, la VC-dimension può essere altissima.",
+      "words": [
+        {
+          "text": "Falso,",
+          "start": 76.528,
+          "end": 76.928
+        },
+        {
+          "text": "la",
+          "start": 77.268,
+          "end": 77.328
+        },
+        {
+          "text": "VC-dimension",
+          "start": 77.388,
+          "end": 78.128
+        },
+        {
+          "text": "può",
+          "start": 78.188,
+          "end": 78.268
+        },
+        {
+          "text": "essere",
+          "start": 78.308,
+          "end": 78.568
+        },
+        {
+          "text": "altissima.",
+          "start": 78.608,
+          "end": 79.149
+        }
+      ]
+    },
+    {
+      "start": 79.849,
+      "end": 82.489,
+      "text": "Tre: risolve la maledizione della dimensionalità?",
+      "words": [
+        {
+          "text": "Tre:",
+          "start": 79.849,
+          "end": 79.989
+        },
+        {
+          "text": "risolve",
+          "start": 80.529,
+          "end": 80.869
+        },
+        {
+          "text": "la",
+          "start": 80.909,
+          "end": 80.969
+        },
+        {
+          "text": "maledizione",
+          "start": 81.009,
+          "end": 81.549
+        },
+        {
+          "text": "della",
+          "start": 81.589,
+          "end": 81.749
+        },
+        {
+          "text": "dimensionalità?",
+          "start": 81.789,
+          "end": 82.489
+        }
+      ]
+    },
+    {
+      "start": 83.089,
+      "end": 86.329,
+      "text": "No, gestisce bene l'alta dimensione dello spazio delle feature,",
+      "words": [
+        {
+          "text": "No,",
+          "start": 83.089,
+          "end": 83.189
+        },
+        {
+          "text": "gestisce",
+          "start": 83.669,
+          "end": 84.069
+        },
+        {
+          "text": "bene",
+          "start": 84.129,
+          "end": 84.289
+        },
+        {
+          "text": "l'alta",
+          "start": 84.349,
+          "end": 84.609
+        },
+        {
+          "text": "dimensione",
+          "start": 84.649,
+          "end": 85.129
+        },
+        {
+          "text": "dello",
+          "start": 85.169,
+          "end": 85.329
+        },
+        {
+          "text": "spazio",
+          "start": 85.369,
+          "end": 85.709
+        },
+        {
+          "text": "delle",
+          "start": 85.729,
+          "end": 85.909
+        },
+        {
+          "text": "feature,",
+          "start": 85.949,
+          "end": 86.329
+        }
+      ]
+    },
+    {
+      "start": 86.549,
+      "end": 87.809,
+      "text": "non dello spazio di input.",
+      "words": [
+        {
+          "text": "non",
+          "start": 86.549,
+          "end": 86.709
+        },
+        {
+          "text": "dello",
+          "start": 86.749,
+          "end": 86.929
+        },
+        {
+          "text": "spazio",
+          "start": 86.969,
+          "end": 87.309
+        },
+        {
+          "text": "di",
+          "start": 87.349,
+          "end": 87.38900000000001
+        },
+        {
+          "text": "input.",
+          "start": 87.469,
+          "end": 87.809
+        }
+      ]
+    },
+    {
+      "start": 88.61,
+      "end": 90.73,
+      "text": "Quattro: trova da sola il numero di unità?",
+      "words": [
+        {
+          "text": "Quattro:",
+          "start": 88.61,
+          "end": 88.97
+        },
+        {
+          "text": "trova",
+          "start": 89.39,
+          "end": 89.59
+        },
+        {
+          "text": "da",
+          "start": 89.63,
+          "end": 89.69
+        },
+        {
+          "text": "sola",
+          "start": 89.75,
+          "end": 90.01
+        },
+        {
+          "text": "il",
+          "start": 90.01,
+          "end": 90.07
+        },
+        {
+          "text": "numero",
+          "start": 90.11,
+          "end": 90.35
+        },
+        {
+          "text": "di",
+          "start": 90.39,
+          "end": 90.43
+        },
+        {
+          "text": "unità?",
+          "start": 90.49,
+          "end": 90.73
+        }
+      ]
+    },
+    {
+      "start": 91.35,
+      "end": 94.19,
+      "text": "Il numero di support vector dipende da C e dal kernel,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 91.35,
+          "end": 91.43
+        },
+        {
+          "text": "numero",
+          "start": 91.47,
+          "end": 91.71
+        },
+        {
+          "text": "di",
+          "start": 91.73,
+          "end": 91.81
+        },
+        {
+          "text": "support",
+          "start": 91.85,
+          "end": 92.23
+        },
+        {
+          "text": "vector",
+          "start": 92.29,
+          "end": 92.67
+        },
+        {
+          "text": "dipende",
+          "start": 92.75,
+          "end": 93.11
+        },
+        {
+          "text": "da",
+          "start": 93.15,
+          "end": 93.23
+        },
+        {
+          "text": "C",
+          "start": 93.35,
+          "end": 93.39
+        },
+        {
+          "text": "e",
+          "start": 93.53,
+          "end": 93.57000000000001
+        },
+        {
+          "text": "dal",
+          "start": 93.59,
+          "end": 93.73
+        },
+        {
+          "text": "kernel,",
+          "start": 93.79,
+          "end": 94.19
+        }
+      ]
+    },
+    {
+      "start": 94.53,
+      "end": 95.39,
+      "text": "e può essere grande.",
+      "words": [
+        {
+          "text": "e",
+          "start": 94.53,
+          "end": 94.57000000000001
+        },
+        {
+          "text": "può",
+          "start": 94.61,
+          "end": 94.71
+        },
+        {
+          "text": "essere",
+          "start": 94.77,
+          "end": 95.03
+        },
+        {
+          "text": "grande.",
+          "start": 95.07,
+          "end": 95.39
+        }
+      ]
+    }
+  ]
+}

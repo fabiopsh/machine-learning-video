@@ -1,0 +1,1268 @@
+{
+  "duration": 91.364,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.881,
+      "text": "Le reti convoluzionali, o CNN, rappresentano un esempio paradigmatico di come progettare una rete feedforward",
+      "words": [
+        {
+          "text": "Le",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "reti",
+          "start": 0.2,
+          "end": 0.38
+        },
+        {
+          "text": "convoluzionali,",
+          "start": 0.44,
+          "end": 1.36
+        },
+        {
+          "text": "o",
+          "start": 1.58,
+          "end": 1.62
+        },
+        {
+          "text": "CNN,",
+          "start": 1.8,
+          "end": 2.42
+        },
+        {
+          "text": "rappresentano",
+          "start": 2.66,
+          "end": 3.26
+        },
+        {
+          "text": "un",
+          "start": 3.3,
+          "end": 3.36
+        },
+        {
+          "text": "esempio",
+          "start": 3.4,
+          "end": 3.74
+        },
+        {
+          "text": "paradigmatico",
+          "start": 3.78,
+          "end": 4.501
+        },
+        {
+          "text": "di",
+          "start": 4.541,
+          "end": 4.601
+        },
+        {
+          "text": "come",
+          "start": 4.641,
+          "end": 4.801
+        },
+        {
+          "text": "progettare",
+          "start": 4.861,
+          "end": 5.381
+        },
+        {
+          "text": "una",
+          "start": 5.441,
+          "end": 5.561
+        },
+        {
+          "text": "rete",
+          "start": 5.621,
+          "end": 5.861
+        },
+        {
+          "text": "feedforward",
+          "start": 6.141,
+          "end": 6.881
+        }
+      ]
+    },
+    {
+      "start": 7.021,
+      "end": 9.661,
+      "text": "non completamente connessa per un dominio specifico.",
+      "words": [
+        {
+          "text": "non",
+          "start": 7.021,
+          "end": 7.161
+        },
+        {
+          "text": "completamente",
+          "start": 7.221,
+          "end": 7.861
+        },
+        {
+          "text": "connessa",
+          "start": 7.921,
+          "end": 8.401
+        },
+        {
+          "text": "per",
+          "start": 8.441,
+          "end": 8.561
+        },
+        {
+          "text": "un",
+          "start": 8.601,
+          "end": 8.661
+        },
+        {
+          "text": "dominio",
+          "start": 8.701,
+          "end": 9.001
+        },
+        {
+          "text": "specifico.",
+          "start": 9.061,
+          "end": 9.661
+        }
+      ]
+    },
+    {
+      "start": 10.601,
+      "end": 15.662,
+      "text": "L'idea di fondo è inserire direttamente nell'architettura la conoscenza a priori sui dati,",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 10.601,
+          "end": 10.841
+        },
+        {
+          "text": "di",
+          "start": 10.881,
+          "end": 10.941
+        },
+        {
+          "text": "fondo",
+          "start": 10.981,
+          "end": 11.261
+        },
+        {
+          "text": "è",
+          "start": 11.381,
+          "end": 11.421
+        },
+        {
+          "text": "inserire",
+          "start": 11.461,
+          "end": 11.861
+        },
+        {
+          "text": "direttamente",
+          "start": 11.921,
+          "end": 12.561
+        },
+        {
+          "text": "nell'architettura",
+          "start": 12.621,
+          "end": 13.522
+        },
+        {
+          "text": "la",
+          "start": 13.642,
+          "end": 13.722
+        },
+        {
+          "text": "conoscenza",
+          "start": 13.822,
+          "end": 14.442
+        },
+        {
+          "text": "a",
+          "start": 14.482,
+          "end": 14.522
+        },
+        {
+          "text": "priori",
+          "start": 14.602,
+          "end": 15.002
+        },
+        {
+          "text": "sui",
+          "start": 15.062,
+          "end": 15.242
+        },
+        {
+          "text": "dati,",
+          "start": 15.282,
+          "end": 15.662
+        }
+      ]
+    },
+    {
+      "start": 15.762,
+      "end": 17.342,
+      "text": "in particolare sulle immagini.",
+      "words": [
+        {
+          "text": "in",
+          "start": 15.762,
+          "end": 15.842
+        },
+        {
+          "text": "particolare",
+          "start": 15.902,
+          "end": 16.442
+        },
+        {
+          "text": "sulle",
+          "start": 16.622,
+          "end": 16.802
+        },
+        {
+          "text": "immagini.",
+          "start": 16.862,
+          "end": 17.342
+        }
+      ]
+    },
+    {
+      "start": 18.182,
+      "end": 22.182,
+      "text": "Partiamo da un problema concreto: il riconoscimento di caratteri scritti a mano,",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 18.182,
+          "end": 18.502
+        },
+        {
+          "text": "da",
+          "start": 18.542,
+          "end": 18.602
+        },
+        {
+          "text": "un",
+          "start": 18.622,
+          "end": 18.682
+        },
+        {
+          "text": "problema",
+          "start": 18.702,
+          "end": 19.042
+        },
+        {
+          "text": "concreto:",
+          "start": 19.082,
+          "end": 19.602
+        },
+        {
+          "text": "il",
+          "start": 20.082,
+          "end": 20.162
+        },
+        {
+          "text": "riconoscimento",
+          "start": 20.202,
+          "end": 20.882
+        },
+        {
+          "text": "di",
+          "start": 20.922,
+          "end": 20.982
+        },
+        {
+          "text": "caratteri",
+          "start": 21.022,
+          "end": 21.462
+        },
+        {
+          "text": "scritti",
+          "start": 21.522,
+          "end": 21.802
+        },
+        {
+          "text": "a",
+          "start": 21.862,
+          "end": 21.902
+        },
+        {
+          "text": "mano,",
+          "start": 21.942,
+          "end": 22.182
+        }
+      ]
+    },
+    {
+      "start": 22.563,
+      "end": 25.063,
+      "text": "ad esempio immagini sedici per sedici in scala di grigi.",
+      "words": [
+        {
+          "text": "ad",
+          "start": 22.563,
+          "end": 22.643
+        },
+        {
+          "text": "esempio",
+          "start": 22.683,
+          "end": 22.963
+        },
+        {
+          "text": "immagini",
+          "start": 22.983,
+          "end": 23.343
+        },
+        {
+          "text": "sedici",
+          "start": 23.403,
+          "end": 23.703
+        },
+        {
+          "text": "per",
+          "start": 23.743,
+          "end": 23.863
+        },
+        {
+          "text": "sedici",
+          "start": 23.923,
+          "end": 24.263
+        },
+        {
+          "text": "in",
+          "start": 24.303,
+          "end": 24.363
+        },
+        {
+          "text": "scala",
+          "start": 24.383,
+          "end": 24.623
+        },
+        {
+          "text": "di",
+          "start": 24.663,
+          "end": 24.723
+        },
+        {
+          "text": "grigi.",
+          "start": 24.763,
+          "end": 25.063
+        }
+      ]
+    },
+    {
+      "start": 25.903,
+      "end": 32.004,
+      "text": "Un primo approccio diretto consiste nell'usare un Multi-Layer Perceptron standard con duecentocinquantasei input,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 25.903,
+          "end": 25.983
+        },
+        {
+          "text": "primo",
+          "start": 26.003,
+          "end": 26.203
+        },
+        {
+          "text": "approccio",
+          "start": 26.243,
+          "end": 26.603
+        },
+        {
+          "text": "diretto",
+          "start": 26.643,
+          "end": 26.983
+        },
+        {
+          "text": "consiste",
+          "start": 27.023,
+          "end": 27.403
+        },
+        {
+          "text": "nell'usare",
+          "start": 27.463,
+          "end": 27.943
+        },
+        {
+          "text": "un",
+          "start": 28.083,
+          "end": 28.183
+        },
+        {
+          "text": "Multi-Layer",
+          "start": 28.263,
+          "end": 28.843
+        },
+        {
+          "text": "Perceptron",
+          "start": 28.903,
+          "end": 29.463
+        },
+        {
+          "text": "standard",
+          "start": 29.523,
+          "end": 30.023
+        },
+        {
+          "text": "con",
+          "start": 30.423,
+          "end": 30.523
+        },
+        {
+          "text": "duecentocinquantasei",
+          "start": 30.563,
+          "end": 31.543
+        },
+        {
+          "text": "input,",
+          "start": 31.644,
+          "end": 32.004
+        }
+      ]
+    },
+    {
+      "start": 32.324,
+      "end": 33.544,
+      "text": "uno per ciascun pixel.",
+      "words": [
+        {
+          "text": "uno",
+          "start": 32.324,
+          "end": 32.504
+        },
+        {
+          "text": "per",
+          "start": 32.624,
+          "end": 32.744
+        },
+        {
+          "text": "ciascun",
+          "start": 32.784,
+          "end": 33.084
+        },
+        {
+          "text": "pixel.",
+          "start": 33.144,
+          "end": 33.544
+        }
+      ]
+    },
+    {
+      "start": 34.304,
+      "end": 38.184,
+      "text": "Su questo compito un MLP ottiene un errore compreso tra il cinque e il venti",
+      "words": [
+        {
+          "text": "Su",
+          "start": 34.304,
+          "end": 34.384
+        },
+        {
+          "text": "questo",
+          "start": 34.444,
+          "end": 34.684
+        },
+        {
+          "text": "compito",
+          "start": 34.724,
+          "end": 35.164
+        },
+        {
+          "text": "un",
+          "start": 35.404,
+          "end": 35.524
+        },
+        {
+          "text": "MLP",
+          "start": 35.644,
+          "end": 35.944
+        },
+        {
+          "text": "ottiene",
+          "start": 36.164,
+          "end": 36.464
+        },
+        {
+          "text": "un",
+          "start": 36.504,
+          "end": 36.564
+        },
+        {
+          "text": "errore",
+          "start": 36.604,
+          "end": 36.844
+        },
+        {
+          "text": "compreso",
+          "start": 36.884,
+          "end": 37.224
+        },
+        {
+          "text": "tra",
+          "start": 37.284,
+          "end": 37.364
+        },
+        {
+          "text": "il",
+          "start": 37.424,
+          "end": 37.484
+        },
+        {
+          "text": "cinque",
+          "start": 37.544,
+          "end": 37.844
+        },
+        {
+          "text": "e",
+          "start": 37.864,
+          "end": 37.904
+        },
+        {
+          "text": "il",
+          "start": 37.884,
+          "end": 37.924
+        },
+        {
+          "text": "venti",
+          "start": 37.964,
+          "end": 38.184
+        }
+      ]
+    },
+    {
+      "start": 38.224,
+      "end": 38.784,
+      "text": "per cento.",
+      "words": [
+        {
+          "text": "per",
+          "start": 38.224,
+          "end": 38.324
+        },
+        {
+          "text": "cento.",
+          "start": 38.404,
+          "end": 38.784
+        }
+      ]
+    },
+    {
+      "start": 39.584,
+      "end": 41.045,
+      "text": "Perché commette tanti errori?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 39.584,
+          "end": 39.904
+        },
+        {
+          "text": "commette",
+          "start": 39.984,
+          "end": 40.364
+        },
+        {
+          "text": "tanti",
+          "start": 40.424,
+          "end": 40.644
+        },
+        {
+          "text": "errori?",
+          "start": 40.704,
+          "end": 41.045
+        }
+      ]
+    },
+    {
+      "start": 41.725,
+      "end": 45.305,
+      "text": "La causa principale è la mancanza di invarianza a traslazioni,",
+      "words": [
+        {
+          "text": "La",
+          "start": 41.725,
+          "end": 41.805
+        },
+        {
+          "text": "causa",
+          "start": 41.845,
+          "end": 42.065
+        },
+        {
+          "text": "principale",
+          "start": 42.085,
+          "end": 42.685
+        },
+        {
+          "text": "è",
+          "start": 42.785,
+          "end": 42.825
+        },
+        {
+          "text": "la",
+          "start": 42.865,
+          "end": 42.925
+        },
+        {
+          "text": "mancanza",
+          "start": 42.985,
+          "end": 43.565
+        },
+        {
+          "text": "di",
+          "start": 43.625,
+          "end": 43.705
+        },
+        {
+          "text": "invarianza",
+          "start": 43.785,
+          "end": 44.385
+        },
+        {
+          "text": "a",
+          "start": 44.445,
+          "end": 44.485
+        },
+        {
+          "text": "traslazioni,",
+          "start": 44.525,
+          "end": 45.305
+        }
+      ]
+    },
+    {
+      "start": 45.505,
+      "end": 47.145,
+      "text": "rotazioni e deformazioni.",
+      "words": [
+        {
+          "text": "rotazioni",
+          "start": 45.505,
+          "end": 46.165
+        },
+        {
+          "text": "e",
+          "start": 46.305,
+          "end": 46.345
+        },
+        {
+          "text": "deformazioni.",
+          "start": 46.365,
+          "end": 47.145
+        }
+      ]
+    },
+    {
+      "start": 47.905,
+      "end": 51.906,
+      "text": "Una rete completamente connessa tratta ogni pixel come un input indipendente:",
+      "words": [
+        {
+          "text": "Una",
+          "start": 47.905,
+          "end": 48.025
+        },
+        {
+          "text": "rete",
+          "start": 48.045,
+          "end": 48.225
+        },
+        {
+          "text": "completamente",
+          "start": 48.265,
+          "end": 48.845
+        },
+        {
+          "text": "connessa",
+          "start": 48.885,
+          "end": 49.325
+        },
+        {
+          "text": "tratta",
+          "start": 49.385,
+          "end": 49.665
+        },
+        {
+          "text": "ogni",
+          "start": 49.745,
+          "end": 49.925
+        },
+        {
+          "text": "pixel",
+          "start": 50.005,
+          "end": 50.406
+        },
+        {
+          "text": "come",
+          "start": 50.466,
+          "end": 50.646
+        },
+        {
+          "text": "un",
+          "start": 50.706,
+          "end": 50.786
+        },
+        {
+          "text": "input",
+          "start": 50.826,
+          "end": 51.086
+        },
+        {
+          "text": "indipendente:",
+          "start": 51.126,
+          "end": 51.906
+        }
+      ]
+    },
+    {
+      "start": 52.366,
+      "end": 57.346,
+      "text": "non sa che pixel vicini sono fortemente correlati, né che uno stesso tratto può comparire",
+      "words": [
+        {
+          "text": "non",
+          "start": 52.366,
+          "end": 52.486
+        },
+        {
+          "text": "sa",
+          "start": 52.586,
+          "end": 52.666
+        },
+        {
+          "text": "che",
+          "start": 52.786,
+          "end": 52.886
+        },
+        {
+          "text": "pixel",
+          "start": 52.966,
+          "end": 53.346
+        },
+        {
+          "text": "vicini",
+          "start": 53.386,
+          "end": 53.746
+        },
+        {
+          "text": "sono",
+          "start": 53.866,
+          "end": 54.046
+        },
+        {
+          "text": "fortemente",
+          "start": 54.106,
+          "end": 54.606
+        },
+        {
+          "text": "correlati,",
+          "start": 54.666,
+          "end": 55.266
+        },
+        {
+          "text": "né",
+          "start": 55.686,
+          "end": 55.746
+        },
+        {
+          "text": "che",
+          "start": 55.826,
+          "end": 55.906
+        },
+        {
+          "text": "uno",
+          "start": 55.966,
+          "end": 56.066
+        },
+        {
+          "text": "stesso",
+          "start": 56.106,
+          "end": 56.346
+        },
+        {
+          "text": "tratto",
+          "start": 56.386,
+          "end": 56.686
+        },
+        {
+          "text": "può",
+          "start": 56.746,
+          "end": 56.846
+        },
+        {
+          "text": "comparire",
+          "start": 56.906,
+          "end": 57.346
+        }
+      ]
+    },
+    {
+      "start": 57.386,
+      "end": 58.866,
+      "text": "in posizioni diverse dell'immagine.",
+      "words": [
+        {
+          "text": "in",
+          "start": 57.386,
+          "end": 57.446
+        },
+        {
+          "text": "posizioni",
+          "start": 57.466,
+          "end": 57.886
+        },
+        {
+          "text": "diverse",
+          "start": 57.926,
+          "end": 58.226
+        },
+        {
+          "text": "dell'immagine.",
+          "start": 58.266,
+          "end": 58.866
+        }
+      ]
+    },
+    {
+      "start": 59.766,
+      "end": 63.386,
+      "text": "Le CNN risolvono il problema con due principi strutturali chiave.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 59.766,
+          "end": 59.826
+        },
+        {
+          "text": "CNN",
+          "start": 59.866,
+          "end": 60.366
+        },
+        {
+          "text": "risolvono",
+          "start": 60.586,
+          "end": 60.966
+        },
+        {
+          "text": "il",
+          "start": 61.006,
+          "end": 61.066
+        },
+        {
+          "text": "problema",
+          "start": 61.066,
+          "end": 61.406
+        },
+        {
+          "text": "con",
+          "start": 61.486,
+          "end": 61.626
+        },
+        {
+          "text": "due",
+          "start": 61.726,
+          "end": 61.926
+        },
+        {
+          "text": "principi",
+          "start": 61.966,
+          "end": 62.426
+        },
+        {
+          "text": "strutturali",
+          "start": 62.466,
+          "end": 62.986
+        },
+        {
+          "text": "chiave.",
+          "start": 63.046,
+          "end": 63.386
+        }
+      ]
+    },
+    {
+      "start": 64.066,
+      "end": 67.906,
+      "text": "Primo: le connessioni locali, dette anche campi recettivi locali.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 64.066,
+          "end": 64.326
+        },
+        {
+          "text": "le",
+          "start": 64.666,
+          "end": 64.726
+        },
+        {
+          "text": "connessioni",
+          "start": 64.766,
+          "end": 65.206
+        },
+        {
+          "text": "locali,",
+          "start": 65.246,
+          "end": 65.646
+        },
+        {
+          "text": "dette",
+          "start": 65.846,
+          "end": 66.046
+        },
+        {
+          "text": "anche",
+          "start": 66.106,
+          "end": 66.306
+        },
+        {
+          "text": "campi",
+          "start": 66.666,
+          "end": 66.946
+        },
+        {
+          "text": "recettivi",
+          "start": 66.986,
+          "end": 67.466
+        },
+        {
+          "text": "locali.",
+          "start": 67.526,
+          "end": 67.906
+        }
+      ]
+    },
+    {
+      "start": 68.567,
+      "end": 73.067,
+      "text": "Ogni unità osserva soltanto una piccola zona dell'immagine ed estrae feature locali.",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 68.567,
+          "end": 68.747
+        },
+        {
+          "text": "unità",
+          "start": 68.807,
+          "end": 69.047
+        },
+        {
+          "text": "osserva",
+          "start": 69.127,
+          "end": 69.467
+        },
+        {
+          "text": "soltanto",
+          "start": 69.507,
+          "end": 69.867
+        },
+        {
+          "text": "una",
+          "start": 69.907,
+          "end": 70.007
+        },
+        {
+          "text": "piccola",
+          "start": 70.087,
+          "end": 70.507
+        },
+        {
+          "text": "zona",
+          "start": 70.567,
+          "end": 70.767
+        },
+        {
+          "text": "dell'immagine",
+          "start": 70.807,
+          "end": 71.487
+        },
+        {
+          "text": "ed",
+          "start": 71.727,
+          "end": 71.847
+        },
+        {
+          "text": "estrae",
+          "start": 71.887,
+          "end": 72.227
+        },
+        {
+          "text": "feature",
+          "start": 72.307,
+          "end": 72.627
+        },
+        {
+          "text": "locali.",
+          "start": 72.667,
+          "end": 73.067
+        }
+      ]
+    },
+    {
+      "start": 74.107,
+      "end": 78.588,
+      "text": "Secondo: la condivisione dei pesi, o weight sharing, tra unità diverse.",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 74.107,
+          "end": 74.627
+        },
+        {
+          "text": "la",
+          "start": 74.947,
+          "end": 75.027
+        },
+        {
+          "text": "condivisione",
+          "start": 75.067,
+          "end": 75.587
+        },
+        {
+          "text": "dei",
+          "start": 75.627,
+          "end": 75.747
+        },
+        {
+          "text": "pesi,",
+          "start": 75.787,
+          "end": 76.127
+        },
+        {
+          "text": "o",
+          "start": 76.407,
+          "end": 76.447
+        },
+        {
+          "text": "weight",
+          "start": 76.627,
+          "end": 76.847
+        },
+        {
+          "text": "sharing,",
+          "start": 76.987,
+          "end": 77.448
+        },
+        {
+          "text": "tra",
+          "start": 77.668,
+          "end": 77.768
+        },
+        {
+          "text": "unità",
+          "start": 77.828,
+          "end": 78.048
+        },
+        {
+          "text": "diverse.",
+          "start": 78.108,
+          "end": 78.588
+        }
+      ]
+    },
+    {
+      "start": 79.188,
+      "end": 81.928,
+      "text": "La stessa operazione viene applicata a parti diverse dell'input,",
+      "words": [
+        {
+          "text": "La",
+          "start": 79.188,
+          "end": 79.248
+        },
+        {
+          "text": "stessa",
+          "start": 79.268,
+          "end": 79.468
+        },
+        {
+          "text": "operazione",
+          "start": 79.508,
+          "end": 79.948
+        },
+        {
+          "text": "viene",
+          "start": 79.988,
+          "end": 80.148
+        },
+        {
+          "text": "applicata",
+          "start": 80.168,
+          "end": 80.588
+        },
+        {
+          "text": "a",
+          "start": 80.628,
+          "end": 80.668
+        },
+        {
+          "text": "parti",
+          "start": 80.708,
+          "end": 80.948
+        },
+        {
+          "text": "diverse",
+          "start": 80.988,
+          "end": 81.308
+        },
+        {
+          "text": "dell'input,",
+          "start": 81.348,
+          "end": 81.928
+        }
+      ]
+    },
+    {
+      "start": 82.308,
+      "end": 84.788,
+      "text": "perché le feature di un carattere possono trovarsi ovunque.",
+      "words": [
+        {
+          "text": "perché",
+          "start": 82.308,
+          "end": 82.508
+        },
+        {
+          "text": "le",
+          "start": 82.608,
+          "end": 82.668
+        },
+        {
+          "text": "feature",
+          "start": 82.728,
+          "end": 83.028
+        },
+        {
+          "text": "di",
+          "start": 83.048,
+          "end": 83.08800000000001
+        },
+        {
+          "text": "un",
+          "start": 83.128,
+          "end": 83.188
+        },
+        {
+          "text": "carattere",
+          "start": 83.208,
+          "end": 83.648
+        },
+        {
+          "text": "possono",
+          "start": 83.688,
+          "end": 83.988
+        },
+        {
+          "text": "trovarsi",
+          "start": 84.028,
+          "end": 84.368
+        },
+        {
+          "text": "ovunque.",
+          "start": 84.408,
+          "end": 84.788
+        }
+      ]
+    },
+    {
+      "start": 85.468,
+      "end": 90.249,
+      "text": "In questo modo si riduce drasticamente il numero di parametri liberi pur mantenendo una connettività",
+      "words": [
+        {
+          "text": "In",
+          "start": 85.468,
+          "end": 85.528
+        },
+        {
+          "text": "questo",
+          "start": 85.548,
+          "end": 85.748
+        },
+        {
+          "text": "modo",
+          "start": 85.788,
+          "end": 85.968
+        },
+        {
+          "text": "si",
+          "start": 86.088,
+          "end": 86.168
+        },
+        {
+          "text": "riduce",
+          "start": 86.208,
+          "end": 86.549
+        },
+        {
+          "text": "drasticamente",
+          "start": 86.609,
+          "end": 87.249
+        },
+        {
+          "text": "il",
+          "start": 87.289,
+          "end": 87.349
+        },
+        {
+          "text": "numero",
+          "start": 87.389,
+          "end": 87.649
+        },
+        {
+          "text": "di",
+          "start": 87.689,
+          "end": 87.749
+        },
+        {
+          "text": "parametri",
+          "start": 87.809,
+          "end": 88.269
+        },
+        {
+          "text": "liberi",
+          "start": 88.329,
+          "end": 88.649
+        },
+        {
+          "text": "pur",
+          "start": 88.849,
+          "end": 89.009
+        },
+        {
+          "text": "mantenendo",
+          "start": 89.049,
+          "end": 89.449
+        },
+        {
+          "text": "una",
+          "start": 89.489,
+          "end": 89.589
+        },
+        {
+          "text": "connettività",
+          "start": 89.649,
+          "end": 90.249
+        }
+      ]
+    },
+    {
+      "start": 90.429,
+      "end": 91.089,
+      "text": "molto ricca.",
+      "words": [
+        {
+          "text": "molto",
+          "start": 90.429,
+          "end": 90.729
+        },
+        {
+          "text": "ricca.",
+          "start": 90.769,
+          "end": 91.089
+        }
+      ]
+    }
+  ]
+}

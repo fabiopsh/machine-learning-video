@@ -1,0 +1,1535 @@
+{
+  "duration": 111.07,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.421,
+      "text": "Perché condividere attributi in una rappresentazione distribuita cambia così radicalmente la capacità di generalizzare?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 0.08,
+          "end": 0.38
+        },
+        {
+          "text": "condividere",
+          "start": 0.46,
+          "end": 1.0
+        },
+        {
+          "text": "attributi",
+          "start": 1.06,
+          "end": 1.52
+        },
+        {
+          "text": "in",
+          "start": 1.56,
+          "end": 1.62
+        },
+        {
+          "text": "una",
+          "start": 1.66,
+          "end": 1.78
+        },
+        {
+          "text": "rappresentazione",
+          "start": 1.82,
+          "end": 2.621
+        },
+        {
+          "text": "distribuita",
+          "start": 2.681,
+          "end": 3.261
+        },
+        {
+          "text": "cambia",
+          "start": 3.341,
+          "end": 3.601
+        },
+        {
+          "text": "così",
+          "start": 3.681,
+          "end": 3.901
+        },
+        {
+          "text": "radicalmente",
+          "start": 4.041,
+          "end": 4.761
+        },
+        {
+          "text": "la",
+          "start": 4.821,
+          "end": 4.881
+        },
+        {
+          "text": "capacità",
+          "start": 4.921,
+          "end": 5.361
+        },
+        {
+          "text": "di",
+          "start": 5.441,
+          "end": 5.521
+        },
+        {
+          "text": "generalizzare?",
+          "start": 5.581,
+          "end": 6.421
+        }
+      ]
+    },
+    {
+      "start": 7.281,
+      "end": 13.702,
+      "text": "Consideriamo l'idea degli attributi condivisi e del disentangling, cioè la separazione dei fattori di variazione.",
+      "words": [
+        {
+          "text": "Consideriamo",
+          "start": 7.281,
+          "end": 7.861
+        },
+        {
+          "text": "l'idea",
+          "start": 7.901,
+          "end": 8.182
+        },
+        {
+          "text": "degli",
+          "start": 8.242,
+          "end": 8.422
+        },
+        {
+          "text": "attributi",
+          "start": 8.462,
+          "end": 8.862
+        },
+        {
+          "text": "condivisi",
+          "start": 8.922,
+          "end": 9.462
+        },
+        {
+          "text": "e",
+          "start": 9.702,
+          "end": 9.742
+        },
+        {
+          "text": "del",
+          "start": 9.922,
+          "end": 10.102
+        },
+        {
+          "text": "disentangling,",
+          "start": 10.182,
+          "end": 11.062
+        },
+        {
+          "text": "cioè",
+          "start": 11.522,
+          "end": 11.682
+        },
+        {
+          "text": "la",
+          "start": 11.842,
+          "end": 11.922
+        },
+        {
+          "text": "separazione",
+          "start": 11.962,
+          "end": 12.462
+        },
+        {
+          "text": "dei",
+          "start": 12.502,
+          "end": 12.582
+        },
+        {
+          "text": "fattori",
+          "start": 12.602,
+          "end": 12.922
+        },
+        {
+          "text": "di",
+          "start": 12.982,
+          "end": 13.022
+        },
+        {
+          "text": "variazione.",
+          "start": 13.062,
+          "end": 13.702
+        }
+      ]
+    },
+    {
+      "start": 14.543,
+      "end": 18.743,
+      "text": "Se la rete separa internamente il concetto di colore e il concetto di tipo di",
+      "words": [
+        {
+          "text": "Se",
+          "start": 14.543,
+          "end": 14.623
+        },
+        {
+          "text": "la",
+          "start": 14.683,
+          "end": 14.763
+        },
+        {
+          "text": "rete",
+          "start": 14.803,
+          "end": 15.023
+        },
+        {
+          "text": "separa",
+          "start": 15.083,
+          "end": 15.403
+        },
+        {
+          "text": "internamente",
+          "start": 15.463,
+          "end": 16.043
+        },
+        {
+          "text": "il",
+          "start": 16.063,
+          "end": 16.123
+        },
+        {
+          "text": "concetto",
+          "start": 16.163,
+          "end": 16.563
+        },
+        {
+          "text": "di",
+          "start": 16.603,
+          "end": 16.663
+        },
+        {
+          "text": "colore",
+          "start": 16.703,
+          "end": 17.083
+        },
+        {
+          "text": "e",
+          "start": 17.223,
+          "end": 17.263
+        },
+        {
+          "text": "il",
+          "start": 17.303,
+          "end": 17.363
+        },
+        {
+          "text": "concetto",
+          "start": 17.403,
+          "end": 17.863
+        },
+        {
+          "text": "di",
+          "start": 17.943,
+          "end": 18.043
+        },
+        {
+          "text": "tipo",
+          "start": 18.363,
+          "end": 18.623
+        },
+        {
+          "text": "di",
+          "start": 18.683,
+          "end": 18.743
+        }
+      ]
+    },
+    {
+      "start": 18.783,
+      "end": 23.744,
+      "text": "veicolo, impara a distinguere auto da bici e rosso da blu senza aver bisogno di",
+      "words": [
+        {
+          "text": "veicolo,",
+          "start": 18.783,
+          "end": 19.303
+        },
+        {
+          "text": "impara",
+          "start": 19.924,
+          "end": 20.284
+        },
+        {
+          "text": "a",
+          "start": 20.304,
+          "end": 20.344
+        },
+        {
+          "text": "distinguere",
+          "start": 20.364,
+          "end": 20.844
+        },
+        {
+          "text": "auto",
+          "start": 21.024,
+          "end": 21.244
+        },
+        {
+          "text": "da",
+          "start": 21.284,
+          "end": 21.344
+        },
+        {
+          "text": "bici",
+          "start": 21.404,
+          "end": 21.744
+        },
+        {
+          "text": "e",
+          "start": 21.944,
+          "end": 21.984
+        },
+        {
+          "text": "rosso",
+          "start": 22.164,
+          "end": 22.424
+        },
+        {
+          "text": "da",
+          "start": 22.464,
+          "end": 22.524
+        },
+        {
+          "text": "blu",
+          "start": 22.584,
+          "end": 22.704
+        },
+        {
+          "text": "senza",
+          "start": 22.844,
+          "end": 23.084
+        },
+        {
+          "text": "aver",
+          "start": 23.124,
+          "end": 23.284
+        },
+        {
+          "text": "bisogno",
+          "start": 23.324,
+          "end": 23.644
+        },
+        {
+          "text": "di",
+          "start": 23.684,
+          "end": 23.744
+        }
+      ]
+    },
+    {
+      "start": 23.764,
+      "end": 26.565,
+      "text": "vedere esempi di tutte le combinazioni possibili.",
+      "words": [
+        {
+          "text": "vedere",
+          "start": 23.764,
+          "end": 24.044
+        },
+        {
+          "text": "esempi",
+          "start": 24.104,
+          "end": 24.504
+        },
+        {
+          "text": "di",
+          "start": 24.664,
+          "end": 24.744
+        },
+        {
+          "text": "tutte",
+          "start": 24.925,
+          "end": 25.205
+        },
+        {
+          "text": "le",
+          "start": 25.245,
+          "end": 25.305
+        },
+        {
+          "text": "combinazioni",
+          "start": 25.345,
+          "end": 25.965
+        },
+        {
+          "text": "possibili.",
+          "start": 26.005,
+          "end": 26.565
+        }
+      ]
+    },
+    {
+      "start": 27.505,
+      "end": 31.086,
+      "text": "Così, avendo osservato auto rossa, bici rossa e auto blu,",
+      "words": [
+        {
+          "text": "Così,",
+          "start": 27.505,
+          "end": 27.745
+        },
+        {
+          "text": "avendo",
+          "start": 28.065,
+          "end": 28.345
+        },
+        {
+          "text": "osservato",
+          "start": 28.405,
+          "end": 28.825
+        },
+        {
+          "text": "auto",
+          "start": 28.905,
+          "end": 29.085
+        },
+        {
+          "text": "rossa,",
+          "start": 29.145,
+          "end": 29.525
+        },
+        {
+          "text": "bici",
+          "start": 29.605,
+          "end": 29.825
+        },
+        {
+          "text": "rossa",
+          "start": 29.885,
+          "end": 30.205
+        },
+        {
+          "text": "e",
+          "start": 30.506,
+          "end": 30.546
+        },
+        {
+          "text": "auto",
+          "start": 30.686,
+          "end": 30.906
+        },
+        {
+          "text": "blu,",
+          "start": 30.966,
+          "end": 31.086
+        }
+      ]
+    },
+    {
+      "start": 31.646,
+      "end": 33.866,
+      "text": "la rete tratta subito in modo naturale la bici blu,",
+      "words": [
+        {
+          "text": "la",
+          "start": 31.646,
+          "end": 31.706
+        },
+        {
+          "text": "rete",
+          "start": 31.746,
+          "end": 31.946
+        },
+        {
+          "text": "tratta",
+          "start": 32.026,
+          "end": 32.286
+        },
+        {
+          "text": "subito",
+          "start": 32.326,
+          "end": 32.606
+        },
+        {
+          "text": "in",
+          "start": 32.646,
+          "end": 32.686
+        },
+        {
+          "text": "modo",
+          "start": 32.726,
+          "end": 32.886
+        },
+        {
+          "text": "naturale",
+          "start": 32.946,
+          "end": 33.286
+        },
+        {
+          "text": "la",
+          "start": 33.366,
+          "end": 33.426
+        },
+        {
+          "text": "bici",
+          "start": 33.486,
+          "end": 33.686
+        },
+        {
+          "text": "blu,",
+          "start": 33.746,
+          "end": 33.866
+        }
+      ]
+    },
+    {
+      "start": 34.366,
+      "end": 40.267,
+      "text": "che per una rappresentazione one-hot sarebbe invece un concetto completamente nuovo e distante radice quadrata",
+      "words": [
+        {
+          "text": "che",
+          "start": 34.366,
+          "end": 34.446
+        },
+        {
+          "text": "per",
+          "start": 34.506,
+          "end": 34.626
+        },
+        {
+          "text": "una",
+          "start": 34.666,
+          "end": 34.786
+        },
+        {
+          "text": "rappresentazione",
+          "start": 34.826,
+          "end": 35.626
+        },
+        {
+          "text": "one-hot",
+          "start": 35.706,
+          "end": 36.047
+        },
+        {
+          "text": "sarebbe",
+          "start": 36.227,
+          "end": 36.507
+        },
+        {
+          "text": "invece",
+          "start": 36.547,
+          "end": 36.787
+        },
+        {
+          "text": "un",
+          "start": 36.827,
+          "end": 36.887
+        },
+        {
+          "text": "concetto",
+          "start": 36.907,
+          "end": 37.367
+        },
+        {
+          "text": "completamente",
+          "start": 37.447,
+          "end": 38.147
+        },
+        {
+          "text": "nuovo",
+          "start": 38.207,
+          "end": 38.467
+        },
+        {
+          "text": "e",
+          "start": 38.947,
+          "end": 38.987
+        },
+        {
+          "text": "distante",
+          "start": 39.027,
+          "end": 39.487
+        },
+        {
+          "text": "radice",
+          "start": 39.547,
+          "end": 39.847
+        },
+        {
+          "text": "quadrata",
+          "start": 39.907,
+          "end": 40.267
+        }
+      ]
+    },
+    {
+      "start": 40.327,
+      "end": 41.628,
+      "text": "di due da tutti gli altri.",
+      "words": [
+        {
+          "text": "di",
+          "start": 40.327,
+          "end": 40.387
+        },
+        {
+          "text": "due",
+          "start": 40.447,
+          "end": 40.647
+        },
+        {
+          "text": "da",
+          "start": 40.827,
+          "end": 40.887
+        },
+        {
+          "text": "tutti",
+          "start": 40.947,
+          "end": 41.187
+        },
+        {
+          "text": "gli",
+          "start": 41.207,
+          "end": 41.307
+        },
+        {
+          "text": "altri.",
+          "start": 41.347,
+          "end": 41.628
+        }
+      ]
+    },
+    {
+      "start": 42.388,
+      "end": 45.728,
+      "text": "Lo stesso meccanismo opera nel linguaggio naturale con il word embedding.",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 42.388,
+          "end": 42.468
+        },
+        {
+          "text": "stesso",
+          "start": 42.488,
+          "end": 42.748
+        },
+        {
+          "text": "meccanismo",
+          "start": 42.788,
+          "end": 43.268
+        },
+        {
+          "text": "opera",
+          "start": 43.328,
+          "end": 43.568
+        },
+        {
+          "text": "nel",
+          "start": 43.628,
+          "end": 43.708
+        },
+        {
+          "text": "linguaggio",
+          "start": 43.728,
+          "end": 44.108
+        },
+        {
+          "text": "naturale",
+          "start": 44.148,
+          "end": 44.588
+        },
+        {
+          "text": "con",
+          "start": 44.628,
+          "end": 44.768
+        },
+        {
+          "text": "il",
+          "start": 44.808,
+          "end": 44.888
+        },
+        {
+          "text": "word",
+          "start": 44.948,
+          "end": 45.168
+        },
+        {
+          "text": "embedding.",
+          "start": 45.188,
+          "end": 45.728
+        }
+      ]
+    },
+    {
+      "start": 46.528,
+      "end": 51.809,
+      "text": "In una rappresentazione distribuita in cui cane e gatto condividono molte feature latenti,",
+      "words": [
+        {
+          "text": "In",
+          "start": 46.528,
+          "end": 46.608
+        },
+        {
+          "text": "una",
+          "start": 46.648,
+          "end": 46.788
+        },
+        {
+          "text": "rappresentazione",
+          "start": 46.828,
+          "end": 47.569
+        },
+        {
+          "text": "distribuita",
+          "start": 47.629,
+          "end": 48.229
+        },
+        {
+          "text": "in",
+          "start": 48.429,
+          "end": 48.509
+        },
+        {
+          "text": "cui",
+          "start": 48.569,
+          "end": 48.729
+        },
+        {
+          "text": "cane",
+          "start": 48.809,
+          "end": 49.069
+        },
+        {
+          "text": "e",
+          "start": 49.089,
+          "end": 49.129
+        },
+        {
+          "text": "gatto",
+          "start": 49.169,
+          "end": 49.549
+        },
+        {
+          "text": "condividono",
+          "start": 49.929,
+          "end": 50.489
+        },
+        {
+          "text": "molte",
+          "start": 50.569,
+          "end": 50.869
+        },
+        {
+          "text": "feature",
+          "start": 50.929,
+          "end": 51.269
+        },
+        {
+          "text": "latenti,",
+          "start": 51.289,
+          "end": 51.809
+        }
+      ]
+    },
+    {
+      "start": 52.249,
+      "end": 54.33,
+      "text": "le due parole vengono elaborate in modo simile:",
+      "words": [
+        {
+          "text": "le",
+          "start": 52.249,
+          "end": 52.329
+        },
+        {
+          "text": "due",
+          "start": 52.369,
+          "end": 52.489
+        },
+        {
+          "text": "parole",
+          "start": 52.509,
+          "end": 52.77
+        },
+        {
+          "text": "vengono",
+          "start": 52.81,
+          "end": 53.09
+        },
+        {
+          "text": "elaborate",
+          "start": 53.13,
+          "end": 53.59
+        },
+        {
+          "text": "in",
+          "start": 53.63,
+          "end": 53.67
+        },
+        {
+          "text": "modo",
+          "start": 53.71,
+          "end": 53.89
+        },
+        {
+          "text": "simile:",
+          "start": 53.97,
+          "end": 54.33
+        }
+      ]
+    },
+    {
+      "start": 54.97,
+      "end": 59.611,
+      "text": "ciò che la rete impara dalle frasi con gatto informa automaticamente anche le frasi con",
+      "words": [
+        {
+          "text": "ciò",
+          "start": 54.97,
+          "end": 55.07
+        },
+        {
+          "text": "che",
+          "start": 55.15,
+          "end": 55.23
+        },
+        {
+          "text": "la",
+          "start": 55.25,
+          "end": 55.31
+        },
+        {
+          "text": "rete",
+          "start": 55.35,
+          "end": 55.55
+        },
+        {
+          "text": "impara",
+          "start": 55.61,
+          "end": 55.99
+        },
+        {
+          "text": "dalle",
+          "start": 56.07,
+          "end": 56.33
+        },
+        {
+          "text": "frasi",
+          "start": 56.37,
+          "end": 56.73
+        },
+        {
+          "text": "con",
+          "start": 56.83,
+          "end": 57.01
+        },
+        {
+          "text": "gatto",
+          "start": 57.07,
+          "end": 57.45
+        },
+        {
+          "text": "informa",
+          "start": 57.69,
+          "end": 58.07
+        },
+        {
+          "text": "automaticamente",
+          "start": 58.15,
+          "end": 58.891
+        },
+        {
+          "text": "anche",
+          "start": 58.931,
+          "end": 59.091
+        },
+        {
+          "text": "le",
+          "start": 59.131,
+          "end": 59.191
+        },
+        {
+          "text": "frasi",
+          "start": 59.211,
+          "end": 59.451
+        },
+        {
+          "text": "con",
+          "start": 59.491,
+          "end": 59.611
+        }
+      ]
+    },
+    {
+      "start": 59.671,
+      "end": 59.951,
+      "text": "cane.",
+      "words": [
+        {
+          "text": "cane.",
+          "start": 59.671,
+          "end": 59.951
+        }
+      ]
+    },
+    {
+      "start": 60.611,
+      "end": 64.492,
+      "text": "Il modello scopre da solo che sono simili perché compaiono in contesti simili.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 60.611,
+          "end": 60.691
+        },
+        {
+          "text": "modello",
+          "start": 60.731,
+          "end": 61.051
+        },
+        {
+          "text": "scopre",
+          "start": 61.091,
+          "end": 61.351
+        },
+        {
+          "text": "da",
+          "start": 61.391,
+          "end": 61.451
+        },
+        {
+          "text": "solo",
+          "start": 61.511,
+          "end": 61.711
+        },
+        {
+          "text": "che",
+          "start": 61.751,
+          "end": 61.811
+        },
+        {
+          "text": "sono",
+          "start": 61.871,
+          "end": 62.051
+        },
+        {
+          "text": "simili",
+          "start": 62.111,
+          "end": 62.431
+        },
+        {
+          "text": "perché",
+          "start": 62.471,
+          "end": 62.691
+        },
+        {
+          "text": "compaiono",
+          "start": 62.771,
+          "end": 63.271
+        },
+        {
+          "text": "in",
+          "start": 63.331,
+          "end": 63.411
+        },
+        {
+          "text": "contesti",
+          "start": 63.471,
+          "end": 64.052
+        },
+        {
+          "text": "simili.",
+          "start": 64.132,
+          "end": 64.492
+        }
+      ]
+    },
+    {
+      "start": 65.512,
+      "end": 70.373,
+      "text": "Mentre nello spazio one-hot ogni parola è a distanza radice quadrata di due da tutte",
+      "words": [
+        {
+          "text": "Mentre",
+          "start": 65.512,
+          "end": 65.792
+        },
+        {
+          "text": "nello",
+          "start": 65.852,
+          "end": 66.032
+        },
+        {
+          "text": "spazio",
+          "start": 66.052,
+          "end": 66.392
+        },
+        {
+          "text": "one-hot",
+          "start": 66.532,
+          "end": 66.852
+        },
+        {
+          "text": "ogni",
+          "start": 67.152,
+          "end": 67.352
+        },
+        {
+          "text": "parola",
+          "start": 67.412,
+          "end": 67.812
+        },
+        {
+          "text": "è",
+          "start": 67.952,
+          "end": 67.992
+        },
+        {
+          "text": "a",
+          "start": 68.032,
+          "end": 68.072
+        },
+        {
+          "text": "distanza",
+          "start": 68.132,
+          "end": 68.612
+        },
+        {
+          "text": "radice",
+          "start": 68.752,
+          "end": 69.092
+        },
+        {
+          "text": "quadrata",
+          "start": 69.132,
+          "end": 69.493
+        },
+        {
+          "text": "di",
+          "start": 69.553,
+          "end": 69.613
+        },
+        {
+          "text": "due",
+          "start": 69.673,
+          "end": 69.853
+        },
+        {
+          "text": "da",
+          "start": 69.953,
+          "end": 70.013
+        },
+        {
+          "text": "tutte",
+          "start": 70.133,
+          "end": 70.373
+        }
+      ]
+    },
+    {
+      "start": 70.413,
+      "end": 73.853,
+      "text": "le altre, nello spazio appreso parole di significato affine,",
+      "words": [
+        {
+          "text": "le",
+          "start": 70.413,
+          "end": 70.493
+        },
+        {
+          "text": "altre,",
+          "start": 70.573,
+          "end": 70.853
+        },
+        {
+          "text": "nello",
+          "start": 71.293,
+          "end": 71.473
+        },
+        {
+          "text": "spazio",
+          "start": 71.493,
+          "end": 71.793
+        },
+        {
+          "text": "appreso",
+          "start": 71.813,
+          "end": 72.233
+        },
+        {
+          "text": "parole",
+          "start": 72.373,
+          "end": 72.693
+        },
+        {
+          "text": "di",
+          "start": 72.733,
+          "end": 72.793
+        },
+        {
+          "text": "significato",
+          "start": 72.853,
+          "end": 73.413
+        },
+        {
+          "text": "affine,",
+          "start": 73.453,
+          "end": 73.853
+        }
+      ]
+    },
+    {
+      "start": 74.033,
+      "end": 77.334,
+      "text": "come nomi di paesi o gli anni, diventano vicine tra loro.",
+      "words": [
+        {
+          "text": "come",
+          "start": 74.033,
+          "end": 74.213
+        },
+        {
+          "text": "nomi",
+          "start": 74.333,
+          "end": 74.493
+        },
+        {
+          "text": "di",
+          "start": 74.553,
+          "end": 74.613
+        },
+        {
+          "text": "paesi",
+          "start": 74.653,
+          "end": 75.074
+        },
+        {
+          "text": "o",
+          "start": 75.154,
+          "end": 75.194
+        },
+        {
+          "text": "gli",
+          "start": 75.194,
+          "end": 75.314
+        },
+        {
+          "text": "anni,",
+          "start": 75.374,
+          "end": 75.614
+        },
+        {
+          "text": "diventano",
+          "start": 75.974,
+          "end": 76.414
+        },
+        {
+          "text": "vicine",
+          "start": 76.534,
+          "end": 76.874
+        },
+        {
+          "text": "tra",
+          "start": 76.914,
+          "end": 77.014
+        },
+        {
+          "text": "loro.",
+          "start": 77.114,
+          "end": 77.334
+        }
+      ]
+    },
+    {
+      "start": 78.294,
+      "end": 79.894,
+      "text": "C'è però un rovescio della medaglia:",
+      "words": [
+        {
+          "text": "C'è",
+          "start": 78.294,
+          "end": 78.394
+        },
+        {
+          "text": "però",
+          "start": 78.454,
+          "end": 78.614
+        },
+        {
+          "text": "un",
+          "start": 78.794,
+          "end": 78.874
+        },
+        {
+          "text": "rovescio",
+          "start": 78.914,
+          "end": 79.234
+        },
+        {
+          "text": "della",
+          "start": 79.274,
+          "end": 79.434
+        },
+        {
+          "text": "medaglia:",
+          "start": 79.474,
+          "end": 79.894
+        }
+      ]
+    },
+    {
+      "start": 80.554,
+      "end": 81.555,
+      "text": "l'interpretabilità.",
+      "words": [
+        {
+          "text": "l'interpretabilità.",
+          "start": 80.554,
+          "end": 81.555
+        }
+      ]
+    },
+    {
+      "start": 82.415,
+      "end": 87.816,
+      "text": "Una rappresentazione distribuita è molto meno immediata da interpretare per un essere umano rispetto a",
+      "words": [
+        {
+          "text": "Una",
+          "start": 82.415,
+          "end": 82.555
+        },
+        {
+          "text": "rappresentazione",
+          "start": 82.615,
+          "end": 83.355
+        },
+        {
+          "text": "distribuita",
+          "start": 83.415,
+          "end": 83.935
+        },
+        {
+          "text": "è",
+          "start": 83.995,
+          "end": 84.03500000000001
+        },
+        {
+          "text": "molto",
+          "start": 84.115,
+          "end": 84.435
+        },
+        {
+          "text": "meno",
+          "start": 84.475,
+          "end": 84.655
+        },
+        {
+          "text": "immediata",
+          "start": 84.695,
+          "end": 85.175
+        },
+        {
+          "text": "da",
+          "start": 85.215,
+          "end": 85.275
+        },
+        {
+          "text": "interpretare",
+          "start": 85.335,
+          "end": 85.955
+        },
+        {
+          "text": "per",
+          "start": 85.995,
+          "end": 86.115
+        },
+        {
+          "text": "un",
+          "start": 86.136,
+          "end": 86.216
+        },
+        {
+          "text": "essere",
+          "start": 86.256,
+          "end": 86.516
+        },
+        {
+          "text": "umano",
+          "start": 86.576,
+          "end": 86.876
+        },
+        {
+          "text": "rispetto",
+          "start": 87.276,
+          "end": 87.716
+        },
+        {
+          "text": "a",
+          "start": 87.776,
+          "end": 87.816
+        }
+      ]
+    },
+    {
+      "start": 87.856,
+      "end": 92.197,
+      "text": "una rappresentazione localista, dove ogni unità corrisponde a un singolo concetto.",
+      "words": [
+        {
+          "text": "una",
+          "start": 87.856,
+          "end": 87.976
+        },
+        {
+          "text": "rappresentazione",
+          "start": 88.016,
+          "end": 88.776
+        },
+        {
+          "text": "localista,",
+          "start": 88.836,
+          "end": 89.376
+        },
+        {
+          "text": "dove",
+          "start": 89.736,
+          "end": 89.896
+        },
+        {
+          "text": "ogni",
+          "start": 89.956,
+          "end": 90.076
+        },
+        {
+          "text": "unità",
+          "start": 90.136,
+          "end": 90.356
+        },
+        {
+          "text": "corrisponde",
+          "start": 90.436,
+          "end": 90.936
+        },
+        {
+          "text": "a",
+          "start": 90.976,
+          "end": 91.016
+        },
+        {
+          "text": "un",
+          "start": 91.056,
+          "end": 91.136
+        },
+        {
+          "text": "singolo",
+          "start": 91.196,
+          "end": 91.596
+        },
+        {
+          "text": "concetto.",
+          "start": 91.656,
+          "end": 92.197
+        }
+      ]
+    },
+    {
+      "start": 93.317,
+      "end": 98.658,
+      "text": "Tirando le somme, il deep learning sfrutta rappresentazioni distribuite attraverso molti strati:",
+      "words": [
+        {
+          "text": "Tirando",
+          "start": 93.317,
+          "end": 93.637
+        },
+        {
+          "text": "le",
+          "start": 93.677,
+          "end": 93.737
+        },
+        {
+          "text": "somme,",
+          "start": 93.797,
+          "end": 94.077
+        },
+        {
+          "text": "il",
+          "start": 94.337,
+          "end": 94.437
+        },
+        {
+          "text": "deep",
+          "start": 94.477,
+          "end": 94.617
+        },
+        {
+          "text": "learning",
+          "start": 94.717,
+          "end": 95.097
+        },
+        {
+          "text": "sfrutta",
+          "start": 95.277,
+          "end": 95.657
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 95.717,
+          "end": 96.497
+        },
+        {
+          "text": "distribuite",
+          "start": 96.557,
+          "end": 97.217
+        },
+        {
+          "text": "attraverso",
+          "start": 97.378,
+          "end": 97.898
+        },
+        {
+          "text": "molti",
+          "start": 97.958,
+          "end": 98.198
+        },
+        {
+          "text": "strati:",
+          "start": 98.258,
+          "end": 98.658
+        }
+      ]
+    },
+    {
+      "start": 99.278,
+      "end": 103.499,
+      "text": "la composizionalità aggiunge un ulteriore guadagno di efficienza statistica.",
+      "words": [
+        {
+          "text": "la",
+          "start": 99.278,
+          "end": 99.338
+        },
+        {
+          "text": "composizionalità",
+          "start": 99.418,
+          "end": 100.338
+        },
+        {
+          "text": "aggiunge",
+          "start": 100.578,
+          "end": 100.958
+        },
+        {
+          "text": "un",
+          "start": 101.038,
+          "end": 101.118
+        },
+        {
+          "text": "ulteriore",
+          "start": 101.178,
+          "end": 101.718
+        },
+        {
+          "text": "guadagno",
+          "start": 101.778,
+          "end": 102.178
+        },
+        {
+          "text": "di",
+          "start": 102.238,
+          "end": 102.278
+        },
+        {
+          "text": "efficienza",
+          "start": 102.318,
+          "end": 102.818
+        },
+        {
+          "text": "statistica.",
+          "start": 102.879,
+          "end": 103.499
+        }
+      ]
+    },
+    {
+      "start": 104.179,
+      "end": 110.82,
+      "text": "Disponiamo quindi di due vantaggi potenzialmente esponenziali rispetto ai modelli non distribuiti e superficiali.",
+      "words": [
+        {
+          "text": "Disponiamo",
+          "start": 104.179,
+          "end": 104.659
+        },
+        {
+          "text": "quindi",
+          "start": 104.719,
+          "end": 104.979
+        },
+        {
+          "text": "di",
+          "start": 105.019,
+          "end": 105.099
+        },
+        {
+          "text": "due",
+          "start": 105.219,
+          "end": 105.419
+        },
+        {
+          "text": "vantaggi",
+          "start": 105.459,
+          "end": 105.999
+        },
+        {
+          "text": "potenzialmente",
+          "start": 106.119,
+          "end": 106.799
+        },
+        {
+          "text": "esponenziali",
+          "start": 106.859,
+          "end": 107.639
+        },
+        {
+          "text": "rispetto",
+          "start": 107.959,
+          "end": 108.379
+        },
+        {
+          "text": "ai",
+          "start": 108.4,
+          "end": 108.46
+        },
+        {
+          "text": "modelli",
+          "start": 108.48,
+          "end": 108.88
+        },
+        {
+          "text": "non",
+          "start": 109.0,
+          "end": 109.16
+        },
+        {
+          "text": "distribuiti",
+          "start": 109.22,
+          "end": 109.84
+        },
+        {
+          "text": "e",
+          "start": 110.02,
+          "end": 110.06
+        },
+        {
+          "text": "superficiali.",
+          "start": 110.12,
+          "end": 110.82
+        }
+      ]
+    }
+  ]
+}

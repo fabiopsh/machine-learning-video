@@ -1,0 +1,1658 @@
+{
+  "duration": 131.727,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.84,
+      "text": "La teoria classica dell'apprendimento statistico non spiega ancora tutto ciò che osserviamo sperimentalmente nelle reti",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.08,
+          "end": 0.14
+        },
+        {
+          "text": "teoria",
+          "start": 0.2,
+          "end": 0.5
+        },
+        {
+          "text": "classica",
+          "start": 0.58,
+          "end": 1.08
+        },
+        {
+          "text": "dell'apprendimento",
+          "start": 1.12,
+          "end": 1.82
+        },
+        {
+          "text": "statistico",
+          "start": 1.88,
+          "end": 2.48
+        },
+        {
+          "text": "non",
+          "start": 2.66,
+          "end": 2.8
+        },
+        {
+          "text": "spiega",
+          "start": 2.82,
+          "end": 3.08
+        },
+        {
+          "text": "ancora",
+          "start": 3.14,
+          "end": 3.44
+        },
+        {
+          "text": "tutto",
+          "start": 3.5,
+          "end": 3.7
+        },
+        {
+          "text": "ciò",
+          "start": 3.76,
+          "end": 3.86
+        },
+        {
+          "text": "che",
+          "start": 3.92,
+          "end": 4.0
+        },
+        {
+          "text": "osserviamo",
+          "start": 4.04,
+          "end": 4.52
+        },
+        {
+          "text": "sperimentalmente",
+          "start": 4.6,
+          "end": 5.4
+        },
+        {
+          "text": "nelle",
+          "start": 5.44,
+          "end": 5.62
+        },
+        {
+          "text": "reti",
+          "start": 5.66,
+          "end": 5.84
+        }
+      ]
+    },
+    {
+      "start": 5.901,
+      "end": 6.821,
+      "text": "profonde moderne.",
+      "words": [
+        {
+          "text": "profonde",
+          "start": 5.901,
+          "end": 6.301
+        },
+        {
+          "text": "moderne.",
+          "start": 6.361,
+          "end": 6.821
+        }
+      ]
+    },
+    {
+      "start": 7.381,
+      "end": 10.581,
+      "text": "Passiamo in rassegna cinque risultati recenti di grande rilievo.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 7.381,
+          "end": 7.681
+        },
+        {
+          "text": "in",
+          "start": 7.701,
+          "end": 7.761
+        },
+        {
+          "text": "rassegna",
+          "start": 7.801,
+          "end": 8.221
+        },
+        {
+          "text": "cinque",
+          "start": 8.321,
+          "end": 8.601
+        },
+        {
+          "text": "risultati",
+          "start": 8.641,
+          "end": 9.081
+        },
+        {
+          "text": "recenti",
+          "start": 9.141,
+          "end": 9.541
+        },
+        {
+          "text": "di",
+          "start": 9.581,
+          "end": 9.661
+        },
+        {
+          "text": "grande",
+          "start": 9.721,
+          "end": 10.081
+        },
+        {
+          "text": "rilievo.",
+          "start": 10.141,
+          "end": 10.581
+        }
+      ]
+    },
+    {
+      "start": 11.281,
+      "end": 13.921,
+      "text": "Primo: smoothness dalla struttura.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 11.281,
+          "end": 11.541
+        },
+        {
+          "text": "smoothness",
+          "start": 12.281,
+          "end": 12.921
+        },
+        {
+          "text": "dalla",
+          "start": 13.101,
+          "end": 13.341
+        },
+        {
+          "text": "struttura.",
+          "start": 13.381,
+          "end": 13.921
+        }
+      ]
+    },
+    {
+      "start": 14.781,
+      "end": 19.822,
+      "text": "A parità di numero di parametri, le reti più profonde impongono una maggiore smoothness rispetto",
+      "words": [
+        {
+          "text": "A",
+          "start": 14.781,
+          "end": 14.821
+        },
+        {
+          "text": "parità",
+          "start": 14.881,
+          "end": 15.161
+        },
+        {
+          "text": "di",
+          "start": 15.241,
+          "end": 15.321
+        },
+        {
+          "text": "numero",
+          "start": 15.381,
+          "end": 15.621
+        },
+        {
+          "text": "di",
+          "start": 15.661,
+          "end": 15.721
+        },
+        {
+          "text": "parametri,",
+          "start": 15.781,
+          "end": 16.341
+        },
+        {
+          "text": "le",
+          "start": 16.701,
+          "end": 16.761
+        },
+        {
+          "text": "reti",
+          "start": 16.801,
+          "end": 17.001
+        },
+        {
+          "text": "più",
+          "start": 17.061,
+          "end": 17.161
+        },
+        {
+          "text": "profonde",
+          "start": 17.221,
+          "end": 17.621
+        },
+        {
+          "text": "impongono",
+          "start": 17.661,
+          "end": 18.142
+        },
+        {
+          "text": "una",
+          "start": 18.302,
+          "end": 18.442
+        },
+        {
+          "text": "maggiore",
+          "start": 18.462,
+          "end": 18.762
+        },
+        {
+          "text": "smoothness",
+          "start": 18.842,
+          "end": 19.382
+        },
+        {
+          "text": "rispetto",
+          "start": 19.502,
+          "end": 19.822
+        }
+      ]
+    },
+    {
+      "start": 19.842,
+      "end": 25.522,
+      "text": "a quelle superficiali, perché ogni strato lavora sulla superficie già liscia prodotta dallo strato precedente:",
+      "words": [
+        {
+          "text": "a",
+          "start": 19.842,
+          "end": 19.882
+        },
+        {
+          "text": "quelle",
+          "start": 19.902,
+          "end": 20.102
+        },
+        {
+          "text": "superficiali,",
+          "start": 20.142,
+          "end": 20.842
+        },
+        {
+          "text": "perché",
+          "start": 21.202,
+          "end": 21.422
+        },
+        {
+          "text": "ogni",
+          "start": 21.602,
+          "end": 21.842
+        },
+        {
+          "text": "strato",
+          "start": 21.922,
+          "end": 22.222
+        },
+        {
+          "text": "lavora",
+          "start": 22.282,
+          "end": 22.542
+        },
+        {
+          "text": "sulla",
+          "start": 22.582,
+          "end": 22.762
+        },
+        {
+          "text": "superficie",
+          "start": 22.802,
+          "end": 23.302
+        },
+        {
+          "text": "già",
+          "start": 23.422,
+          "end": 23.522
+        },
+        {
+          "text": "liscia",
+          "start": 23.602,
+          "end": 23.922
+        },
+        {
+          "text": "prodotta",
+          "start": 23.982,
+          "end": 24.362
+        },
+        {
+          "text": "dallo",
+          "start": 24.402,
+          "end": 24.582
+        },
+        {
+          "text": "strato",
+          "start": 24.622,
+          "end": 24.882
+        },
+        {
+          "text": "precedente:",
+          "start": 24.922,
+          "end": 25.522
+        }
+      ]
+    },
+    {
+      "start": 26.002,
+      "end": 29.462,
+      "text": "sono vincoli impliciti nell'architettura, anziché espliciti.",
+      "words": [
+        {
+          "text": "sono",
+          "start": 26.002,
+          "end": 26.182
+        },
+        {
+          "text": "vincoli",
+          "start": 26.302,
+          "end": 26.702
+        },
+        {
+          "text": "impliciti",
+          "start": 26.742,
+          "end": 27.282
+        },
+        {
+          "text": "nell'architettura,",
+          "start": 27.342,
+          "end": 28.162
+        },
+        {
+          "text": "anziché",
+          "start": 28.462,
+          "end": 28.822
+        },
+        {
+          "text": "espliciti.",
+          "start": 28.902,
+          "end": 29.462
+        }
+      ]
+    },
+    {
+      "start": 30.283,
+      "end": 33.363,
+      "text": "Secondo: il puzzle del non-overfitting.",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 30.283,
+          "end": 30.703
+        },
+        {
+          "text": "il",
+          "start": 31.443,
+          "end": 31.543
+        },
+        {
+          "text": "puzzle",
+          "start": 31.623,
+          "end": 32.043
+        },
+        {
+          "text": "del",
+          "start": 32.103,
+          "end": 32.263
+        },
+        {
+          "text": "non-overfitting.",
+          "start": 32.363,
+          "end": 33.363
+        }
+      ]
+    },
+    {
+      "start": 34.183,
+      "end": 40.863,
+      "text": "Reti fortemente sovra-parametrizzate riescono ad azzerare completamente l'errore di training perfino su etichette assegnate in",
+      "words": [
+        {
+          "text": "Reti",
+          "start": 34.183,
+          "end": 34.363
+        },
+        {
+          "text": "fortemente",
+          "start": 34.483,
+          "end": 34.983
+        },
+        {
+          "text": "sovra-parametrizzate",
+          "start": 35.103,
+          "end": 36.303
+        },
+        {
+          "text": "riescono",
+          "start": 36.343,
+          "end": 36.683
+        },
+        {
+          "text": "ad",
+          "start": 36.703,
+          "end": 36.783
+        },
+        {
+          "text": "azzerare",
+          "start": 36.803,
+          "end": 37.203
+        },
+        {
+          "text": "completamente",
+          "start": 37.243,
+          "end": 37.863
+        },
+        {
+          "text": "l'errore",
+          "start": 37.903,
+          "end": 38.243
+        },
+        {
+          "text": "di",
+          "start": 38.283,
+          "end": 38.363
+        },
+        {
+          "text": "training",
+          "start": 38.403,
+          "end": 38.843
+        },
+        {
+          "text": "perfino",
+          "start": 39.183,
+          "end": 39.563
+        },
+        {
+          "text": "su",
+          "start": 39.643,
+          "end": 39.703
+        },
+        {
+          "text": "etichette",
+          "start": 39.783,
+          "end": 40.223
+        },
+        {
+          "text": "assegnate",
+          "start": 40.263,
+          "end": 40.763
+        },
+        {
+          "text": "in",
+          "start": 40.803,
+          "end": 40.863
+        }
+      ]
+    },
+    {
+      "start": 40.923,
+      "end": 45.684,
+      "text": "modo puramente casuale; eppure sui dati reali generalizzano sorprendentemente bene.",
+      "words": [
+        {
+          "text": "modo",
+          "start": 40.923,
+          "end": 41.123
+        },
+        {
+          "text": "puramente",
+          "start": 41.223,
+          "end": 41.743
+        },
+        {
+          "text": "casuale;",
+          "start": 41.783,
+          "end": 42.283
+        },
+        {
+          "text": "eppure",
+          "start": 42.884,
+          "end": 43.284
+        },
+        {
+          "text": "sui",
+          "start": 43.344,
+          "end": 43.464
+        },
+        {
+          "text": "dati",
+          "start": 43.484,
+          "end": 43.664
+        },
+        {
+          "text": "reali",
+          "start": 43.704,
+          "end": 44.004
+        },
+        {
+          "text": "generalizzano",
+          "start": 44.064,
+          "end": 44.524
+        },
+        {
+          "text": "sorprendentemente",
+          "start": 44.544,
+          "end": 45.384
+        },
+        {
+          "text": "bene.",
+          "start": 45.424,
+          "end": 45.684
+        }
+      ]
+    },
+    {
+      "start": 46.604,
+      "end": 52.284,
+      "text": "Una spiegazione importante è che la discesa del gradiente imponga una regolarizzazione implicita,",
+      "words": [
+        {
+          "text": "Una",
+          "start": 46.604,
+          "end": 46.724
+        },
+        {
+          "text": "spiegazione",
+          "start": 46.744,
+          "end": 47.244
+        },
+        {
+          "text": "importante",
+          "start": 47.284,
+          "end": 47.964
+        },
+        {
+          "text": "è",
+          "start": 48.344,
+          "end": 48.384
+        },
+        {
+          "text": "che",
+          "start": 48.464,
+          "end": 48.564
+        },
+        {
+          "text": "la",
+          "start": 48.664,
+          "end": 48.724
+        },
+        {
+          "text": "discesa",
+          "start": 48.784,
+          "end": 49.164
+        },
+        {
+          "text": "del",
+          "start": 49.224,
+          "end": 49.344
+        },
+        {
+          "text": "gradiente",
+          "start": 49.384,
+          "end": 49.944
+        },
+        {
+          "text": "imponga",
+          "start": 50.104,
+          "end": 50.504
+        },
+        {
+          "text": "una",
+          "start": 50.584,
+          "end": 50.724
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 50.844,
+          "end": 51.664
+        },
+        {
+          "text": "implicita,",
+          "start": 51.724,
+          "end": 52.284
+        }
+      ]
+    },
+    {
+      "start": 52.604,
+      "end": 57.845,
+      "text": "convergendo verso soluzioni a margine massimo analoghe a quelle delle Support Vector Machine.",
+      "words": [
+        {
+          "text": "convergendo",
+          "start": 52.604,
+          "end": 53.184
+        },
+        {
+          "text": "verso",
+          "start": 53.224,
+          "end": 53.484
+        },
+        {
+          "text": "soluzioni",
+          "start": 53.544,
+          "end": 54.024
+        },
+        {
+          "text": "a",
+          "start": 54.084,
+          "end": 54.124
+        },
+        {
+          "text": "margine",
+          "start": 54.184,
+          "end": 54.525
+        },
+        {
+          "text": "massimo",
+          "start": 54.565,
+          "end": 54.985
+        },
+        {
+          "text": "analoghe",
+          "start": 55.065,
+          "end": 55.485
+        },
+        {
+          "text": "a",
+          "start": 55.805,
+          "end": 55.845
+        },
+        {
+          "text": "quelle",
+          "start": 55.885,
+          "end": 56.105
+        },
+        {
+          "text": "delle",
+          "start": 56.165,
+          "end": 56.365
+        },
+        {
+          "text": "Support",
+          "start": 56.465,
+          "end": 56.885
+        },
+        {
+          "text": "Vector",
+          "start": 56.985,
+          "end": 57.305
+        },
+        {
+          "text": "Machine.",
+          "start": 57.365,
+          "end": 57.845
+        }
+      ]
+    },
+    {
+      "start": 58.705,
+      "end": 62.845,
+      "text": "Terzo: il fenomeno della double descent, illustrato nel grafico.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 58.705,
+          "end": 59.085
+        },
+        {
+          "text": "il",
+          "start": 59.725,
+          "end": 59.825
+        },
+        {
+          "text": "fenomeno",
+          "start": 59.885,
+          "end": 60.325
+        },
+        {
+          "text": "della",
+          "start": 60.385,
+          "end": 60.585
+        },
+        {
+          "text": "double",
+          "start": 60.685,
+          "end": 60.985
+        },
+        {
+          "text": "descent,",
+          "start": 61.005,
+          "end": 61.485
+        },
+        {
+          "text": "illustrato",
+          "start": 61.785,
+          "end": 62.225
+        },
+        {
+          "text": "nel",
+          "start": 62.285,
+          "end": 62.405
+        },
+        {
+          "text": "grafico.",
+          "start": 62.445,
+          "end": 62.845
+        }
+      ]
+    },
+    {
+      "start": 63.745,
+      "end": 68.386,
+      "text": "Facendo crescere la dimensione del modello, oppure dei dati o del tempo di addestramento,",
+      "words": [
+        {
+          "text": "Facendo",
+          "start": 63.745,
+          "end": 64.065
+        },
+        {
+          "text": "crescere",
+          "start": 64.105,
+          "end": 64.465
+        },
+        {
+          "text": "la",
+          "start": 64.505,
+          "end": 64.545
+        },
+        {
+          "text": "dimensione",
+          "start": 64.585,
+          "end": 65.025
+        },
+        {
+          "text": "del",
+          "start": 65.065,
+          "end": 65.165
+        },
+        {
+          "text": "modello,",
+          "start": 65.205,
+          "end": 65.705
+        },
+        {
+          "text": "oppure",
+          "start": 65.885,
+          "end": 66.225
+        },
+        {
+          "text": "dei",
+          "start": 66.325,
+          "end": 66.445
+        },
+        {
+          "text": "dati",
+          "start": 66.485,
+          "end": 66.846
+        },
+        {
+          "text": "o",
+          "start": 67.006,
+          "end": 67.046
+        },
+        {
+          "text": "del",
+          "start": 67.126,
+          "end": 67.266
+        },
+        {
+          "text": "tempo",
+          "start": 67.306,
+          "end": 67.546
+        },
+        {
+          "text": "di",
+          "start": 67.586,
+          "end": 67.646
+        },
+        {
+          "text": "addestramento,",
+          "start": 67.686,
+          "end": 68.386
+        }
+      ]
+    },
+    {
+      "start": 68.846,
+      "end": 71.866,
+      "text": "l'errore di test segue dapprima la classica curva a U:",
+      "words": [
+        {
+          "text": "l'errore",
+          "start": 68.846,
+          "end": 69.146
+        },
+        {
+          "text": "di",
+          "start": 69.186,
+          "end": 69.266
+        },
+        {
+          "text": "test",
+          "start": 69.306,
+          "end": 69.526
+        },
+        {
+          "text": "segue",
+          "start": 69.666,
+          "end": 69.926
+        },
+        {
+          "text": "dapprima",
+          "start": 69.966,
+          "end": 70.366
+        },
+        {
+          "text": "la",
+          "start": 70.446,
+          "end": 70.486
+        },
+        {
+          "text": "classica",
+          "start": 70.526,
+          "end": 70.986
+        },
+        {
+          "text": "curva",
+          "start": 71.106,
+          "end": 71.466
+        },
+        {
+          "text": "a",
+          "start": 71.686,
+          "end": 71.72600000000001
+        },
+        {
+          "text": "U:",
+          "start": 71.826,
+          "end": 71.866
+        }
+      ]
+    },
+    {
+      "start": 72.386,
+      "end": 76.966,
+      "text": "scende e poi risale, raggiungendo un picco attorno alla soglia di interpolazione,",
+      "words": [
+        {
+          "text": "scende",
+          "start": 72.386,
+          "end": 72.846
+        },
+        {
+          "text": "e",
+          "start": 73.126,
+          "end": 73.16600000000001
+        },
+        {
+          "text": "poi",
+          "start": 73.226,
+          "end": 73.386
+        },
+        {
+          "text": "risale,",
+          "start": 73.446,
+          "end": 73.906
+        },
+        {
+          "text": "raggiungendo",
+          "start": 74.226,
+          "end": 74.706
+        },
+        {
+          "text": "un",
+          "start": 74.746,
+          "end": 74.806
+        },
+        {
+          "text": "picco",
+          "start": 74.866,
+          "end": 75.126
+        },
+        {
+          "text": "attorno",
+          "start": 75.166,
+          "end": 75.486
+        },
+        {
+          "text": "alla",
+          "start": 75.526,
+          "end": 75.666
+        },
+        {
+          "text": "soglia",
+          "start": 75.706,
+          "end": 75.966
+        },
+        {
+          "text": "di",
+          "start": 76.006,
+          "end": 76.046
+        },
+        {
+          "text": "interpolazione,",
+          "start": 76.086,
+          "end": 76.966
+        }
+      ]
+    },
+    {
+      "start": 77.266,
+      "end": 79.287,
+      "text": "proprio dove l'errore di training si azzera.",
+      "words": [
+        {
+          "text": "proprio",
+          "start": 77.266,
+          "end": 77.546
+        },
+        {
+          "text": "dove",
+          "start": 77.606,
+          "end": 77.766
+        },
+        {
+          "text": "l'errore",
+          "start": 77.806,
+          "end": 78.146
+        },
+        {
+          "text": "di",
+          "start": 78.186,
+          "end": 78.246
+        },
+        {
+          "text": "training",
+          "start": 78.306,
+          "end": 78.686
+        },
+        {
+          "text": "si",
+          "start": 78.787,
+          "end": 78.847
+        },
+        {
+          "text": "azzera.",
+          "start": 78.887,
+          "end": 79.287
+        }
+      ]
+    },
+    {
+      "start": 79.987,
+      "end": 85.807,
+      "text": "Oltre quella soglia, nel regime sovra-parametrizzato, l'errore di test torna sorprendentemente a scendere.",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 79.987,
+          "end": 80.227
+        },
+        {
+          "text": "quella",
+          "start": 80.267,
+          "end": 80.507
+        },
+        {
+          "text": "soglia,",
+          "start": 80.567,
+          "end": 80.967
+        },
+        {
+          "text": "nel",
+          "start": 81.127,
+          "end": 81.267
+        },
+        {
+          "text": "regime",
+          "start": 81.307,
+          "end": 81.647
+        },
+        {
+          "text": "sovra-parametrizzato,",
+          "start": 81.747,
+          "end": 82.867
+        },
+        {
+          "text": "l'errore",
+          "start": 83.187,
+          "end": 83.507
+        },
+        {
+          "text": "di",
+          "start": 83.527,
+          "end": 83.607
+        },
+        {
+          "text": "test",
+          "start": 83.647,
+          "end": 83.867
+        },
+        {
+          "text": "torna",
+          "start": 83.987,
+          "end": 84.227
+        },
+        {
+          "text": "sorprendentemente",
+          "start": 84.327,
+          "end": 85.227
+        },
+        {
+          "text": "a",
+          "start": 85.267,
+          "end": 85.307
+        },
+        {
+          "text": "scendere.",
+          "start": 85.347,
+          "end": 85.807
+        }
+      ]
+    },
+    {
+      "start": 86.667,
+      "end": 89.887,
+      "text": "Questo effetto è spesso evitato con una regolarizzazione accurata,",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 86.667,
+          "end": 86.847
+        },
+        {
+          "text": "effetto",
+          "start": 86.887,
+          "end": 87.207
+        },
+        {
+          "text": "è",
+          "start": 87.267,
+          "end": 87.307
+        },
+        {
+          "text": "spesso",
+          "start": 87.307,
+          "end": 87.607
+        },
+        {
+          "text": "evitato",
+          "start": 87.667,
+          "end": 88.067
+        },
+        {
+          "text": "con",
+          "start": 88.147,
+          "end": 88.287
+        },
+        {
+          "text": "una",
+          "start": 88.327,
+          "end": 88.447
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 88.527,
+          "end": 89.307
+        },
+        {
+          "text": "accurata,",
+          "start": 89.367,
+          "end": 89.887
+        }
+      ]
+    },
+    {
+      "start": 90.287,
+      "end": 94.308,
+      "text": "non è ancora pienamente compreso e non riguarda necessariamente i modelli piccoli.",
+      "words": [
+        {
+          "text": "non",
+          "start": 90.287,
+          "end": 90.427
+        },
+        {
+          "text": "è",
+          "start": 90.487,
+          "end": 90.527
+        },
+        {
+          "text": "ancora",
+          "start": 90.567,
+          "end": 90.847
+        },
+        {
+          "text": "pienamente",
+          "start": 90.908,
+          "end": 91.308
+        },
+        {
+          "text": "compreso",
+          "start": 91.348,
+          "end": 91.828
+        },
+        {
+          "text": "e",
+          "start": 92.128,
+          "end": 92.168
+        },
+        {
+          "text": "non",
+          "start": 92.228,
+          "end": 92.328
+        },
+        {
+          "text": "riguarda",
+          "start": 92.348,
+          "end": 92.688
+        },
+        {
+          "text": "necessariamente",
+          "start": 92.728,
+          "end": 93.428
+        },
+        {
+          "text": "i",
+          "start": 93.468,
+          "end": 93.50800000000001
+        },
+        {
+          "text": "modelli",
+          "start": 93.528,
+          "end": 93.848
+        },
+        {
+          "text": "piccoli.",
+          "start": 93.888,
+          "end": 94.308
+        }
+      ]
+    },
+    {
+      "start": 95.108,
+      "end": 96.948,
+      "text": "Quarto: la ridondanza.",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 95.108,
+          "end": 95.488
+        },
+        {
+          "text": "la",
+          "start": 96.128,
+          "end": 96.188
+        },
+        {
+          "text": "ridondanza.",
+          "start": 96.248,
+          "end": 96.948
+        }
+      ]
+    },
+    {
+      "start": 97.708,
+      "end": 102.428,
+      "text": "Nei modelli profondi una gran parte dei pesi può essere predetta dagli altri oppure eliminata",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 97.708,
+          "end": 97.828
+        },
+        {
+          "text": "modelli",
+          "start": 97.848,
+          "end": 98.128
+        },
+        {
+          "text": "profondi",
+          "start": 98.168,
+          "end": 98.548
+        },
+        {
+          "text": "una",
+          "start": 98.608,
+          "end": 98.708
+        },
+        {
+          "text": "gran",
+          "start": 98.768,
+          "end": 98.948
+        },
+        {
+          "text": "parte",
+          "start": 99.028,
+          "end": 99.368
+        },
+        {
+          "text": "dei",
+          "start": 99.408,
+          "end": 99.528
+        },
+        {
+          "text": "pesi",
+          "start": 99.588,
+          "end": 99.828
+        },
+        {
+          "text": "può",
+          "start": 99.868,
+          "end": 99.948
+        },
+        {
+          "text": "essere",
+          "start": 100.008,
+          "end": 100.268
+        },
+        {
+          "text": "predetta",
+          "start": 100.348,
+          "end": 100.768
+        },
+        {
+          "text": "dagli",
+          "start": 100.828,
+          "end": 101.068
+        },
+        {
+          "text": "altri",
+          "start": 101.128,
+          "end": 101.488
+        },
+        {
+          "text": "oppure",
+          "start": 101.648,
+          "end": 101.908
+        },
+        {
+          "text": "eliminata",
+          "start": 101.988,
+          "end": 102.428
+        }
+      ]
+    },
+    {
+      "start": 102.468,
+      "end": 105.969,
+      "text": "tramite pruning e quantizzazione senza perdere accuratezza.",
+      "words": [
+        {
+          "text": "tramite",
+          "start": 102.468,
+          "end": 102.828
+        },
+        {
+          "text": "pruning",
+          "start": 102.868,
+          "end": 103.269
+        },
+        {
+          "text": "e",
+          "start": 103.329,
+          "end": 103.369
+        },
+        {
+          "text": "quantizzazione",
+          "start": 103.429,
+          "end": 104.349
+        },
+        {
+          "text": "senza",
+          "start": 104.669,
+          "end": 104.909
+        },
+        {
+          "text": "perdere",
+          "start": 104.949,
+          "end": 105.289
+        },
+        {
+          "text": "accuratezza.",
+          "start": 105.329,
+          "end": 105.969
+        }
+      ]
+    },
+    {
+      "start": 106.849,
+      "end": 109.509,
+      "text": "Quinto: la lottery ticket hypothesis.",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 106.849,
+          "end": 107.229
+        },
+        {
+          "text": "la",
+          "start": 107.769,
+          "end": 107.849
+        },
+        {
+          "text": "lottery",
+          "start": 107.949,
+          "end": 108.349
+        },
+        {
+          "text": "ticket",
+          "start": 108.429,
+          "end": 108.789
+        },
+        {
+          "text": "hypothesis.",
+          "start": 108.809,
+          "end": 109.509
+        }
+      ]
+    },
+    {
+      "start": 110.369,
+      "end": 115.31,
+      "text": "Le ottime prestazioni dipenderebbero da un'inizializzazione fortunata di una o più sotto-reti,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 110.369,
+          "end": 110.449
+        },
+        {
+          "text": "ottime",
+          "start": 110.489,
+          "end": 110.749
+        },
+        {
+          "text": "prestazioni",
+          "start": 110.789,
+          "end": 111.329
+        },
+        {
+          "text": "dipenderebbero",
+          "start": 111.369,
+          "end": 112.009
+        },
+        {
+          "text": "da",
+          "start": 112.069,
+          "end": 112.129
+        },
+        {
+          "text": "un'inizializzazione",
+          "start": 112.209,
+          "end": 113.089
+        },
+        {
+          "text": "fortunata",
+          "start": 113.149,
+          "end": 113.709
+        },
+        {
+          "text": "di",
+          "start": 113.809,
+          "end": 113.889
+        },
+        {
+          "text": "una",
+          "start": 114.029,
+          "end": 114.209
+        },
+        {
+          "text": "o",
+          "start": 114.369,
+          "end": 114.409
+        },
+        {
+          "text": "più",
+          "start": 114.489,
+          "end": 114.589
+        },
+        {
+          "text": "sotto-reti,",
+          "start": 114.709,
+          "end": 115.31
+        }
+      ]
+    },
+    {
+      "start": 115.73,
+      "end": 118.43,
+      "text": "e le reti grandi ne contengono esponenzialmente di più.",
+      "words": [
+        {
+          "text": "e",
+          "start": 115.73,
+          "end": 115.77000000000001
+        },
+        {
+          "text": "le",
+          "start": 115.79,
+          "end": 115.85
+        },
+        {
+          "text": "reti",
+          "start": 115.89,
+          "end": 116.09
+        },
+        {
+          "text": "grandi",
+          "start": 116.15,
+          "end": 116.49
+        },
+        {
+          "text": "ne",
+          "start": 116.63,
+          "end": 116.69
+        },
+        {
+          "text": "contengono",
+          "start": 116.75,
+          "end": 117.25
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 117.37,
+          "end": 118.17
+        },
+        {
+          "text": "di",
+          "start": 118.21,
+          "end": 118.27
+        },
+        {
+          "text": "più.",
+          "start": 118.33,
+          "end": 118.43
+        }
+      ]
+    },
+    {
+      "start": 119.05,
+      "end": 124.57,
+      "text": "Se si pota la rete e la si riaddestra partendo dalla stessa inizializzazione fortunata,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 119.05,
+          "end": 119.13
+        },
+        {
+          "text": "si",
+          "start": 119.19,
+          "end": 119.27
+        },
+        {
+          "text": "pota",
+          "start": 119.33,
+          "end": 119.63
+        },
+        {
+          "text": "la",
+          "start": 119.69,
+          "end": 119.75
+        },
+        {
+          "text": "rete",
+          "start": 119.81,
+          "end": 120.17
+        },
+        {
+          "text": "e",
+          "start": 120.53,
+          "end": 120.57000000000001
+        },
+        {
+          "text": "la",
+          "start": 120.65,
+          "end": 120.73
+        },
+        {
+          "text": "si",
+          "start": 120.81,
+          "end": 120.91
+        },
+        {
+          "text": "riaddestra",
+          "start": 121.03,
+          "end": 121.67
+        },
+        {
+          "text": "partendo",
+          "start": 121.75,
+          "end": 122.17
+        },
+        {
+          "text": "dalla",
+          "start": 122.21,
+          "end": 122.39
+        },
+        {
+          "text": "stessa",
+          "start": 122.45,
+          "end": 122.77
+        },
+        {
+          "text": "inizializzazione",
+          "start": 122.99,
+          "end": 123.89
+        },
+        {
+          "text": "fortunata,",
+          "start": 123.95,
+          "end": 124.57
+        }
+      ]
+    },
+    {
+      "start": 125.07,
+      "end": 126.65,
+      "text": "si ottengono prestazioni simili:",
+      "words": [
+        {
+          "text": "si",
+          "start": 125.07,
+          "end": 125.13
+        },
+        {
+          "text": "ottengono",
+          "start": 125.17,
+          "end": 125.59
+        },
+        {
+          "text": "prestazioni",
+          "start": 125.63,
+          "end": 126.19
+        },
+        {
+          "text": "simili:",
+          "start": 126.27,
+          "end": 126.65
+        }
+      ]
+    },
+    {
+      "start": 127.411,
+      "end": 131.351,
+      "text": "questo ci apre direttamente al tema del ruolo della casualità nel prossimo capitolo.",
+      "words": [
+        {
+          "text": "questo",
+          "start": 127.411,
+          "end": 127.651
+        },
+        {
+          "text": "ci",
+          "start": 127.711,
+          "end": 127.771
+        },
+        {
+          "text": "apre",
+          "start": 127.831,
+          "end": 127.991
+        },
+        {
+          "text": "direttamente",
+          "start": 128.051,
+          "end": 128.551
+        },
+        {
+          "text": "al",
+          "start": 128.591,
+          "end": 128.651
+        },
+        {
+          "text": "tema",
+          "start": 128.691,
+          "end": 128.871
+        },
+        {
+          "text": "del",
+          "start": 128.931,
+          "end": 129.051
+        },
+        {
+          "text": "ruolo",
+          "start": 129.091,
+          "end": 129.351
+        },
+        {
+          "text": "della",
+          "start": 129.391,
+          "end": 129.571
+        },
+        {
+          "text": "casualità",
+          "start": 129.611,
+          "end": 130.091
+        },
+        {
+          "text": "nel",
+          "start": 130.291,
+          "end": 130.431
+        },
+        {
+          "text": "prossimo",
+          "start": 130.491,
+          "end": 130.851
+        },
+        {
+          "text": "capitolo.",
+          "start": 130.891,
+          "end": 131.351
+        }
+      ]
+    }
+  ]
+}

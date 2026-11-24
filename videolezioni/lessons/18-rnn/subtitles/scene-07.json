@@ -1,0 +1,1348 @@
+{
+  "duration": 99.719,
+  "segments": [
+    {
+      "start": 0.499,
+      "end": 4.519,
+      "text": "Oltre alle RNN esistono molti altri approcci ai dati sequenziali:",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 0.499,
+          "end": 0.739
+        },
+        {
+          "text": "alle",
+          "start": 0.799,
+          "end": 0.959
+        },
+        {
+          "text": "RNN",
+          "start": 1.119,
+          "end": 1.699
+        },
+        {
+          "text": "esistono",
+          "start": 1.999,
+          "end": 2.399
+        },
+        {
+          "text": "molti",
+          "start": 2.479,
+          "end": 2.799
+        },
+        {
+          "text": "altri",
+          "start": 2.839,
+          "end": 3.039
+        },
+        {
+          "text": "approcci",
+          "start": 3.079,
+          "end": 3.459
+        },
+        {
+          "text": "ai",
+          "start": 3.499,
+          "end": 3.579
+        },
+        {
+          "text": "dati",
+          "start": 3.599,
+          "end": 3.799
+        },
+        {
+          "text": "sequenziali:",
+          "start": 3.839,
+          "end": 4.519
+        }
+      ]
+    },
+    {
+      "start": 5.279,
+      "end": 10.4,
+      "text": "gli Hidden Markov Model, che modellano la distribuzione di probabilità delle transizioni di stato,",
+      "words": [
+        {
+          "text": "gli",
+          "start": 5.279,
+          "end": 5.359
+        },
+        {
+          "text": "Hidden",
+          "start": 5.379,
+          "end": 5.699
+        },
+        {
+          "text": "Markov",
+          "start": 5.799,
+          "end": 6.159
+        },
+        {
+          "text": "Model,",
+          "start": 6.239,
+          "end": 6.619
+        },
+        {
+          "text": "che",
+          "start": 6.98,
+          "end": 7.06
+        },
+        {
+          "text": "modellano",
+          "start": 7.1,
+          "end": 7.52
+        },
+        {
+          "text": "la",
+          "start": 7.56,
+          "end": 7.62
+        },
+        {
+          "text": "distribuzione",
+          "start": 7.66,
+          "end": 8.32
+        },
+        {
+          "text": "di",
+          "start": 8.38,
+          "end": 8.44
+        },
+        {
+          "text": "probabilità",
+          "start": 8.48,
+          "end": 9.04
+        },
+        {
+          "text": "delle",
+          "start": 9.12,
+          "end": 9.28
+        },
+        {
+          "text": "transizioni",
+          "start": 9.3,
+          "end": 9.84
+        },
+        {
+          "text": "di",
+          "start": 9.9,
+          "end": 9.96
+        },
+        {
+          "text": "stato,",
+          "start": 10.02,
+          "end": 10.4
+        }
+      ]
+    },
+    {
+      "start": 11.02,
+      "end": 12.3,
+      "text": "le SOM per sequenze,",
+      "words": [
+        {
+          "text": "le",
+          "start": 11.02,
+          "end": 11.1
+        },
+        {
+          "text": "SOM",
+          "start": 11.18,
+          "end": 11.42
+        },
+        {
+          "text": "per",
+          "start": 11.52,
+          "end": 11.66
+        },
+        {
+          "text": "sequenze,",
+          "start": 11.72,
+          "end": 12.3
+        }
+      ]
+    },
+    {
+      "start": 13.12,
+      "end": 16.02,
+      "text": "i modelli basati su distanze e i kernel per stringhe,",
+      "words": [
+        {
+          "text": "i",
+          "start": 13.12,
+          "end": 13.16
+        },
+        {
+          "text": "modelli",
+          "start": 13.2,
+          "end": 13.52
+        },
+        {
+          "text": "basati",
+          "start": 13.56,
+          "end": 13.92
+        },
+        {
+          "text": "su",
+          "start": 13.98,
+          "end": 14.04
+        },
+        {
+          "text": "distanze",
+          "start": 14.12,
+          "end": 14.66
+        },
+        {
+          "text": "e",
+          "start": 14.84,
+          "end": 14.88
+        },
+        {
+          "text": "i",
+          "start": 14.94,
+          "end": 14.98
+        },
+        {
+          "text": "kernel",
+          "start": 15.02,
+          "end": 15.4
+        },
+        {
+          "text": "per",
+          "start": 15.44,
+          "end": 15.56
+        },
+        {
+          "text": "stringhe,",
+          "start": 15.62,
+          "end": 16.02
+        }
+      ]
+    },
+    {
+      "start": 16.721,
+      "end": 19.461,
+      "text": "i transformer e le RNN randomizzate.",
+      "words": [
+        {
+          "text": "i",
+          "start": 16.721,
+          "end": 16.761
+        },
+        {
+          "text": "transformer",
+          "start": 16.801,
+          "end": 17.461
+        },
+        {
+          "text": "e",
+          "start": 17.841,
+          "end": 17.881
+        },
+        {
+          "text": "le",
+          "start": 17.941,
+          "end": 18.001
+        },
+        {
+          "text": "RNN",
+          "start": 18.181,
+          "end": 18.681
+        },
+        {
+          "text": "randomizzate.",
+          "start": 18.781,
+          "end": 19.461
+        }
+      ]
+    },
+    {
+      "start": 20.261,
+      "end": 25.321,
+      "text": "Esaminiamo da vicino il transformer: è un'architettura basata sul meccanismo di attenzione,",
+      "words": [
+        {
+          "text": "Esaminiamo",
+          "start": 20.261,
+          "end": 20.761
+        },
+        {
+          "text": "da",
+          "start": 20.801,
+          "end": 20.881
+        },
+        {
+          "text": "vicino",
+          "start": 20.921,
+          "end": 21.221
+        },
+        {
+          "text": "il",
+          "start": 21.261,
+          "end": 21.341
+        },
+        {
+          "text": "transformer:",
+          "start": 21.361,
+          "end": 22.121
+        },
+        {
+          "text": "è",
+          "start": 22.521,
+          "end": 22.561
+        },
+        {
+          "text": "un'architettura",
+          "start": 22.601,
+          "end": 23.241
+        },
+        {
+          "text": "basata",
+          "start": 23.301,
+          "end": 23.661
+        },
+        {
+          "text": "sul",
+          "start": 23.721,
+          "end": 23.861
+        },
+        {
+          "text": "meccanismo",
+          "start": 23.901,
+          "end": 24.421
+        },
+        {
+          "text": "di",
+          "start": 24.481,
+          "end": 24.521
+        },
+        {
+          "text": "attenzione,",
+          "start": 24.581,
+          "end": 25.321
+        }
+      ]
+    },
+    {
+      "start": 25.661,
+      "end": 29.422,
+      "text": "costruita combinando encoder, decoder e reti feedforward.",
+      "words": [
+        {
+          "text": "costruita",
+          "start": 25.661,
+          "end": 26.121
+        },
+        {
+          "text": "combinando",
+          "start": 26.241,
+          "end": 26.722
+        },
+        {
+          "text": "encoder,",
+          "start": 26.762,
+          "end": 27.322
+        },
+        {
+          "text": "decoder",
+          "start": 27.462,
+          "end": 27.982
+        },
+        {
+          "text": "e",
+          "start": 28.162,
+          "end": 28.202
+        },
+        {
+          "text": "reti",
+          "start": 28.302,
+          "end": 28.542
+        },
+        {
+          "text": "feedforward.",
+          "start": 28.622,
+          "end": 29.422
+        }
+      ]
+    },
+    {
+      "start": 30.102,
+      "end": 34.902,
+      "text": "La sua forza è che l'attenzione permette di accedere direttamente a qualunque punto della sequenza:",
+      "words": [
+        {
+          "text": "La",
+          "start": 30.102,
+          "end": 30.182
+        },
+        {
+          "text": "sua",
+          "start": 30.222,
+          "end": 30.322
+        },
+        {
+          "text": "forza",
+          "start": 30.382,
+          "end": 30.722
+        },
+        {
+          "text": "è",
+          "start": 30.862,
+          "end": 30.902
+        },
+        {
+          "text": "che",
+          "start": 30.962,
+          "end": 31.022
+        },
+        {
+          "text": "l'attenzione",
+          "start": 31.062,
+          "end": 31.542
+        },
+        {
+          "text": "permette",
+          "start": 31.602,
+          "end": 31.962
+        },
+        {
+          "text": "di",
+          "start": 32.002,
+          "end": 32.042
+        },
+        {
+          "text": "accedere",
+          "start": 32.102,
+          "end": 32.502
+        },
+        {
+          "text": "direttamente",
+          "start": 32.622,
+          "end": 33.282
+        },
+        {
+          "text": "a",
+          "start": 33.322,
+          "end": 33.362
+        },
+        {
+          "text": "qualunque",
+          "start": 33.402,
+          "end": 33.762
+        },
+        {
+          "text": "punto",
+          "start": 33.802,
+          "end": 34.082
+        },
+        {
+          "text": "della",
+          "start": 34.142,
+          "end": 34.342
+        },
+        {
+          "text": "sequenza:",
+          "start": 34.382,
+          "end": 34.902
+        }
+      ]
+    },
+    {
+      "start": 35.462,
+      "end": 39.623,
+      "text": "lo strato di attenzione pesa tutti gli stati secondo una rilevanza appresa,",
+      "words": [
+        {
+          "text": "lo",
+          "start": 35.462,
+          "end": 35.542
+        },
+        {
+          "text": "strato",
+          "start": 35.582,
+          "end": 35.862
+        },
+        {
+          "text": "di",
+          "start": 35.902,
+          "end": 35.942
+        },
+        {
+          "text": "attenzione",
+          "start": 36.002,
+          "end": 36.543
+        },
+        {
+          "text": "pesa",
+          "start": 36.603,
+          "end": 36.823
+        },
+        {
+          "text": "tutti",
+          "start": 36.923,
+          "end": 37.163
+        },
+        {
+          "text": "gli",
+          "start": 37.183,
+          "end": 37.323
+        },
+        {
+          "text": "stati",
+          "start": 37.363,
+          "end": 37.663
+        },
+        {
+          "text": "secondo",
+          "start": 37.743,
+          "end": 38.103
+        },
+        {
+          "text": "una",
+          "start": 38.183,
+          "end": 38.323
+        },
+        {
+          "text": "rilevanza",
+          "start": 38.383,
+          "end": 38.883
+        },
+        {
+          "text": "appresa,",
+          "start": 39.083,
+          "end": 39.623
+        }
+      ]
+    },
+    {
+      "start": 39.963,
+      "end": 42.723,
+      "text": "portando informazione anche da elementi molto lontani.",
+      "words": [
+        {
+          "text": "portando",
+          "start": 39.963,
+          "end": 40.323
+        },
+        {
+          "text": "informazione",
+          "start": 40.363,
+          "end": 40.943
+        },
+        {
+          "text": "anche",
+          "start": 41.103,
+          "end": 41.303
+        },
+        {
+          "text": "da",
+          "start": 41.343,
+          "end": 41.383
+        },
+        {
+          "text": "elementi",
+          "start": 41.443,
+          "end": 41.783
+        },
+        {
+          "text": "molto",
+          "start": 41.903,
+          "end": 42.203
+        },
+        {
+          "text": "lontani.",
+          "start": 42.243,
+          "end": 42.723
+        }
+      ]
+    },
+    {
+      "start": 43.543,
+      "end": 48.804,
+      "text": "Nella traduzione automatica, ad esempio, un contesto distante può determinare il significato esatto di una",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 43.543,
+          "end": 43.743
+        },
+        {
+          "text": "traduzione",
+          "start": 43.783,
+          "end": 44.283
+        },
+        {
+          "text": "automatica,",
+          "start": 44.323,
+          "end": 44.923
+        },
+        {
+          "text": "ad",
+          "start": 44.983,
+          "end": 45.043
+        },
+        {
+          "text": "esempio,",
+          "start": 45.083,
+          "end": 45.423
+        },
+        {
+          "text": "un",
+          "start": 45.483,
+          "end": 45.543
+        },
+        {
+          "text": "contesto",
+          "start": 45.583,
+          "end": 46.064
+        },
+        {
+          "text": "distante",
+          "start": 46.164,
+          "end": 46.724
+        },
+        {
+          "text": "può",
+          "start": 46.764,
+          "end": 46.864
+        },
+        {
+          "text": "determinare",
+          "start": 46.944,
+          "end": 47.484
+        },
+        {
+          "text": "il",
+          "start": 47.524,
+          "end": 47.584
+        },
+        {
+          "text": "significato",
+          "start": 47.604,
+          "end": 48.164
+        },
+        {
+          "text": "esatto",
+          "start": 48.204,
+          "end": 48.564
+        },
+        {
+          "text": "di",
+          "start": 48.604,
+          "end": 48.664
+        },
+        {
+          "text": "una",
+          "start": 48.684,
+          "end": 48.804
+        }
+      ]
+    },
+    {
+      "start": 48.864,
+      "end": 49.204,
+      "text": "parola.",
+      "words": [
+        {
+          "text": "parola.",
+          "start": 48.864,
+          "end": 49.204
+        }
+      ]
+    },
+    {
+      "start": 50.004,
+      "end": 52.424,
+      "text": "Il calcolo si articola in quattro passi chiave.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 50.004,
+          "end": 50.084
+        },
+        {
+          "text": "calcolo",
+          "start": 50.144,
+          "end": 50.544
+        },
+        {
+          "text": "si",
+          "start": 50.604,
+          "end": 50.644
+        },
+        {
+          "text": "articola",
+          "start": 50.704,
+          "end": 51.104
+        },
+        {
+          "text": "in",
+          "start": 51.224,
+          "end": 51.304
+        },
+        {
+          "text": "quattro",
+          "start": 51.404,
+          "end": 51.764
+        },
+        {
+          "text": "passi",
+          "start": 51.804,
+          "end": 52.064
+        },
+        {
+          "text": "chiave.",
+          "start": 52.124,
+          "end": 52.424
+        }
+      ]
+    },
+    {
+      "start": 52.824,
+      "end": 56.545,
+      "text": "Primo: tutti gli elementi della sequenza sono elaborati simultaneamente,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 52.824,
+          "end": 53.104
+        },
+        {
+          "text": "tutti",
+          "start": 53.564,
+          "end": 53.764
+        },
+        {
+          "text": "gli",
+          "start": 53.804,
+          "end": 53.904
+        },
+        {
+          "text": "elementi",
+          "start": 53.924,
+          "end": 54.264
+        },
+        {
+          "text": "della",
+          "start": 54.304,
+          "end": 54.464
+        },
+        {
+          "text": "sequenza",
+          "start": 54.504,
+          "end": 54.904
+        },
+        {
+          "text": "sono",
+          "start": 54.964,
+          "end": 55.124
+        },
+        {
+          "text": "elaborati",
+          "start": 55.164,
+          "end": 55.584
+        },
+        {
+          "text": "simultaneamente,",
+          "start": 55.664,
+          "end": 56.545
+        }
+      ]
+    },
+    {
+      "start": 56.845,
+      "end": 57.965,
+      "text": "non uno dopo l'altro.",
+      "words": [
+        {
+          "text": "non",
+          "start": 56.845,
+          "end": 57.085
+        },
+        {
+          "text": "uno",
+          "start": 57.165,
+          "end": 57.305
+        },
+        {
+          "text": "dopo",
+          "start": 57.365,
+          "end": 57.545
+        },
+        {
+          "text": "l'altro.",
+          "start": 57.585,
+          "end": 57.965
+        }
+      ]
+    },
+    {
+      "start": 58.565,
+      "end": 63.765,
+      "text": "Secondo: per ogni elemento si calcolano pesi verso tutti gli altri tramite un prodotto scalare",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 58.565,
+          "end": 59.045
+        },
+        {
+          "text": "per",
+          "start": 59.405,
+          "end": 59.525
+        },
+        {
+          "text": "ogni",
+          "start": 59.565,
+          "end": 59.705
+        },
+        {
+          "text": "elemento",
+          "start": 59.765,
+          "end": 60.125
+        },
+        {
+          "text": "si",
+          "start": 60.165,
+          "end": 60.245
+        },
+        {
+          "text": "calcolano",
+          "start": 60.285,
+          "end": 60.745
+        },
+        {
+          "text": "pesi",
+          "start": 60.805,
+          "end": 61.145
+        },
+        {
+          "text": "verso",
+          "start": 61.225,
+          "end": 61.465
+        },
+        {
+          "text": "tutti",
+          "start": 61.605,
+          "end": 61.905
+        },
+        {
+          "text": "gli",
+          "start": 61.945,
+          "end": 62.065
+        },
+        {
+          "text": "altri",
+          "start": 62.105,
+          "end": 62.405
+        },
+        {
+          "text": "tramite",
+          "start": 62.485,
+          "end": 62.845
+        },
+        {
+          "text": "un",
+          "start": 62.885,
+          "end": 62.945
+        },
+        {
+          "text": "prodotto",
+          "start": 62.965,
+          "end": 63.325
+        },
+        {
+          "text": "scalare",
+          "start": 63.385,
+          "end": 63.765
+        }
+      ]
+    },
+    {
+      "start": 63.825,
+      "end": 68.166,
+      "text": "scalato tra un vettore query dell'elemento e i vettori delle altre parole.",
+      "words": [
+        {
+          "text": "scalato",
+          "start": 63.825,
+          "end": 64.265
+        },
+        {
+          "text": "tra",
+          "start": 64.325,
+          "end": 64.405
+        },
+        {
+          "text": "un",
+          "start": 64.465,
+          "end": 64.525
+        },
+        {
+          "text": "vettore",
+          "start": 64.545,
+          "end": 64.905
+        },
+        {
+          "text": "query",
+          "start": 65.085,
+          "end": 65.425
+        },
+        {
+          "text": "dell'elemento",
+          "start": 65.565,
+          "end": 66.246
+        },
+        {
+          "text": "e",
+          "start": 66.666,
+          "end": 66.706
+        },
+        {
+          "text": "i",
+          "start": 66.746,
+          "end": 66.786
+        },
+        {
+          "text": "vettori",
+          "start": 66.806,
+          "end": 67.186
+        },
+        {
+          "text": "delle",
+          "start": 67.306,
+          "end": 67.506
+        },
+        {
+          "text": "altre",
+          "start": 67.546,
+          "end": 67.766
+        },
+        {
+          "text": "parole.",
+          "start": 67.806,
+          "end": 68.166
+        }
+      ]
+    },
+    {
+      "start": 68.906,
+      "end": 74.086,
+      "text": "Prodotti scalari alti segnalano forti correlazioni: nella frase inglese see that girl,",
+      "words": [
+        {
+          "text": "Prodotti",
+          "start": 68.906,
+          "end": 69.266
+        },
+        {
+          "text": "scalari",
+          "start": 69.326,
+          "end": 69.666
+        },
+        {
+          "text": "alti",
+          "start": 69.786,
+          "end": 70.066
+        },
+        {
+          "text": "segnalano",
+          "start": 70.186,
+          "end": 70.626
+        },
+        {
+          "text": "forti",
+          "start": 70.726,
+          "end": 71.006
+        },
+        {
+          "text": "correlazioni:",
+          "start": 71.066,
+          "end": 71.826
+        },
+        {
+          "text": "nella",
+          "start": 72.306,
+          "end": 72.466
+        },
+        {
+          "text": "frase",
+          "start": 72.506,
+          "end": 72.726
+        },
+        {
+          "text": "inglese",
+          "start": 72.766,
+          "end": 73.106
+        },
+        {
+          "text": "see",
+          "start": 73.386,
+          "end": 73.526
+        },
+        {
+          "text": "that",
+          "start": 73.546,
+          "end": 73.706
+        },
+        {
+          "text": "girl,",
+          "start": 73.806,
+          "end": 74.086
+        }
+      ]
+    },
+    {
+      "start": 74.426,
+      "end": 77.907,
+      "text": "il dimostrativo that viene associato con peso elevato a girl.",
+      "words": [
+        {
+          "text": "il",
+          "start": 74.426,
+          "end": 74.506
+        },
+        {
+          "text": "dimostrativo",
+          "start": 74.526,
+          "end": 75.126
+        },
+        {
+          "text": "that",
+          "start": 75.286,
+          "end": 75.567
+        },
+        {
+          "text": "viene",
+          "start": 75.687,
+          "end": 75.887
+        },
+        {
+          "text": "associato",
+          "start": 75.927,
+          "end": 76.367
+        },
+        {
+          "text": "con",
+          "start": 76.447,
+          "end": 76.607
+        },
+        {
+          "text": "peso",
+          "start": 76.687,
+          "end": 76.907
+        },
+        {
+          "text": "elevato",
+          "start": 76.967,
+          "end": 77.347
+        },
+        {
+          "text": "a",
+          "start": 77.507,
+          "end": 77.54700000000001
+        },
+        {
+          "text": "girl.",
+          "start": 77.627,
+          "end": 77.907
+        }
+      ]
+    },
+    {
+      "start": 78.607,
+      "end": 83.567,
+      "text": "Terzo: la nuova rappresentazione di ogni elemento combina gli altri secondo questi pesi,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 78.607,
+          "end": 78.967
+        },
+        {
+          "text": "la",
+          "start": 79.307,
+          "end": 79.367
+        },
+        {
+          "text": "nuova",
+          "start": 79.427,
+          "end": 79.687
+        },
+        {
+          "text": "rappresentazione",
+          "start": 79.727,
+          "end": 80.467
+        },
+        {
+          "text": "di",
+          "start": 80.527,
+          "end": 80.587
+        },
+        {
+          "text": "ogni",
+          "start": 80.667,
+          "end": 80.847
+        },
+        {
+          "text": "elemento",
+          "start": 80.907,
+          "end": 81.407
+        },
+        {
+          "text": "combina",
+          "start": 81.467,
+          "end": 81.867
+        },
+        {
+          "text": "gli",
+          "start": 81.867,
+          "end": 81.987
+        },
+        {
+          "text": "altri",
+          "start": 82.047,
+          "end": 82.347
+        },
+        {
+          "text": "secondo",
+          "start": 82.447,
+          "end": 82.847
+        },
+        {
+          "text": "questi",
+          "start": 82.927,
+          "end": 83.207
+        },
+        {
+          "text": "pesi,",
+          "start": 83.267,
+          "end": 83.567
+        }
+      ]
+    },
+    {
+      "start": 84.027,
+      "end": 86.208,
+      "text": "e l'operazione si ripete in strati successivi.",
+      "words": [
+        {
+          "text": "e",
+          "start": 84.027,
+          "end": 84.06700000000001
+        },
+        {
+          "text": "l'operazione",
+          "start": 84.087,
+          "end": 84.607
+        },
+        {
+          "text": "si",
+          "start": 84.647,
+          "end": 84.707
+        },
+        {
+          "text": "ripete",
+          "start": 84.747,
+          "end": 85.067
+        },
+        {
+          "text": "in",
+          "start": 85.127,
+          "end": 85.187
+        },
+        {
+          "text": "strati",
+          "start": 85.227,
+          "end": 85.508
+        },
+        {
+          "text": "successivi.",
+          "start": 85.568,
+          "end": 86.208
+        }
+      ]
+    },
+    {
+      "start": 86.868,
+      "end": 93.348,
+      "text": "Quarto: più meccanismi di attenzione lavorano in parallelo — la cosiddetta multi-head attention — ciascuno",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 86.868,
+          "end": 87.268
+        },
+        {
+          "text": "più",
+          "start": 87.728,
+          "end": 87.848
+        },
+        {
+          "text": "meccanismi",
+          "start": 87.928,
+          "end": 88.448
+        },
+        {
+          "text": "di",
+          "start": 88.508,
+          "end": 88.548
+        },
+        {
+          "text": "attenzione",
+          "start": 88.608,
+          "end": 89.148
+        },
+        {
+          "text": "lavorano",
+          "start": 89.248,
+          "end": 89.608
+        },
+        {
+          "text": "in",
+          "start": 89.648,
+          "end": 89.708
+        },
+        {
+          "text": "parallelo",
+          "start": 89.728,
+          "end": 90.268
+        },
+        {
+          "text": "—",
+          "start": 90.268,
+          "end": 90.418
+        },
+        {
+          "text": "la",
+          "start": 90.488,
+          "end": 90.548
+        },
+        {
+          "text": "cosiddetta",
+          "start": 90.588,
+          "end": 91.088
+        },
+        {
+          "text": "multi-head",
+          "start": 91.348,
+          "end": 91.948
+        },
+        {
+          "text": "attention",
+          "start": 92.028,
+          "end": 92.568
+        },
+        {
+          "text": "—",
+          "start": 92.568,
+          "end": 92.718
+        },
+        {
+          "text": "ciascuno",
+          "start": 92.948,
+          "end": 93.348
+        }
+      ]
+    },
+    {
+      "start": 93.448,
+      "end": 94.228,
+      "text": "con i propri pesi.",
+      "words": [
+        {
+          "text": "con",
+          "start": 93.448,
+          "end": 93.568
+        },
+        {
+          "text": "i",
+          "start": 93.608,
+          "end": 93.64800000000001
+        },
+        {
+          "text": "propri",
+          "start": 93.648,
+          "end": 93.908
+        },
+        {
+          "text": "pesi.",
+          "start": 93.948,
+          "end": 94.228
+        }
+      ]
+    },
+    {
+      "start": 94.728,
+      "end": 99.469,
+      "text": "La stessa architettura si applica anche a porzioni di immagini nei Vision Transformer.",
+      "words": [
+        {
+          "text": "La",
+          "start": 94.728,
+          "end": 94.808
+        },
+        {
+          "text": "stessa",
+          "start": 94.828,
+          "end": 95.069
+        },
+        {
+          "text": "architettura",
+          "start": 95.129,
+          "end": 95.689
+        },
+        {
+          "text": "si",
+          "start": 95.849,
+          "end": 95.909
+        },
+        {
+          "text": "applica",
+          "start": 95.969,
+          "end": 96.249
+        },
+        {
+          "text": "anche",
+          "start": 96.309,
+          "end": 96.509
+        },
+        {
+          "text": "a",
+          "start": 96.549,
+          "end": 96.58900000000001
+        },
+        {
+          "text": "porzioni",
+          "start": 96.669,
+          "end": 97.169
+        },
+        {
+          "text": "di",
+          "start": 97.229,
+          "end": 97.309
+        },
+        {
+          "text": "immagini",
+          "start": 97.369,
+          "end": 97.909
+        },
+        {
+          "text": "nei",
+          "start": 98.189,
+          "end": 98.349
+        },
+        {
+          "text": "Vision",
+          "start": 98.429,
+          "end": 98.729
+        },
+        {
+          "text": "Transformer.",
+          "start": 98.789,
+          "end": 99.469
+        }
+      ]
+    }
+  ]
+}

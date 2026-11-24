@@ -1,0 +1,1408 @@
+{
+  "duration": 89.743,
+  "segments": [
+    {
+      "start": 0.403,
+      "end": 3.064,
+      "text": "Chiudiamo allargando lo sguardo ai metodi kernel in generale.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.403,
+          "end": 0.743
+        },
+        {
+          "text": "allargando",
+          "start": 0.763,
+          "end": 1.143
+        },
+        {
+          "text": "lo",
+          "start": 1.183,
+          "end": 1.243
+        },
+        {
+          "text": "sguardo",
+          "start": 1.283,
+          "end": 1.564
+        },
+        {
+          "text": "ai",
+          "start": 1.604,
+          "end": 1.664
+        },
+        {
+          "text": "metodi",
+          "start": 1.704,
+          "end": 2.024
+        },
+        {
+          "text": "kernel",
+          "start": 2.084,
+          "end": 2.444
+        },
+        {
+          "text": "in",
+          "start": 2.504,
+          "end": 2.564
+        },
+        {
+          "text": "generale.",
+          "start": 2.584,
+          "end": 3.064
+        }
+      ]
+    },
+    {
+      "start": 3.664,
+      "end": 9.104,
+      "text": "Il kernel trick funziona anche senza SVM: si parla di kernelizzazione di approcci tradizionali.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 3.664,
+          "end": 3.744
+        },
+        {
+          "text": "kernel",
+          "start": 3.784,
+          "end": 4.124
+        },
+        {
+          "text": "trick",
+          "start": 4.164,
+          "end": 4.404
+        },
+        {
+          "text": "funziona",
+          "start": 4.544,
+          "end": 4.904
+        },
+        {
+          "text": "anche",
+          "start": 4.944,
+          "end": 5.104
+        },
+        {
+          "text": "senza",
+          "start": 5.164,
+          "end": 5.404
+        },
+        {
+          "text": "SVM:",
+          "start": 5.544,
+          "end": 5.984
+        },
+        {
+          "text": "si",
+          "start": 6.484,
+          "end": 6.544
+        },
+        {
+          "text": "parla",
+          "start": 6.604,
+          "end": 6.824
+        },
+        {
+          "text": "di",
+          "start": 6.884,
+          "end": 6.944
+        },
+        {
+          "text": "kernelizzazione",
+          "start": 7.004,
+          "end": 7.864
+        },
+        {
+          "text": "di",
+          "start": 7.924,
+          "end": 7.964
+        },
+        {
+          "text": "approcci",
+          "start": 8.004,
+          "end": 8.384
+        },
+        {
+          "text": "tradizionali.",
+          "start": 8.424,
+          "end": 9.104
+        }
+      ]
+    },
+    {
+      "start": 9.724,
+      "end": 14.345,
+      "text": "Ovunque compaia un prodotto scalare o una misura di similarità lo possiamo sostituire con un",
+      "words": [
+        {
+          "text": "Ovunque",
+          "start": 9.724,
+          "end": 10.064
+        },
+        {
+          "text": "compaia",
+          "start": 10.124,
+          "end": 10.564
+        },
+        {
+          "text": "un",
+          "start": 10.564,
+          "end": 10.624
+        },
+        {
+          "text": "prodotto",
+          "start": 10.644,
+          "end": 10.985
+        },
+        {
+          "text": "scalare",
+          "start": 11.025,
+          "end": 11.505
+        },
+        {
+          "text": "o",
+          "start": 11.645,
+          "end": 11.685
+        },
+        {
+          "text": "una",
+          "start": 11.725,
+          "end": 11.825
+        },
+        {
+          "text": "misura",
+          "start": 11.885,
+          "end": 12.185
+        },
+        {
+          "text": "di",
+          "start": 12.225,
+          "end": 12.285
+        },
+        {
+          "text": "similarità",
+          "start": 12.345,
+          "end": 12.865
+        },
+        {
+          "text": "lo",
+          "start": 13.005,
+          "end": 13.065
+        },
+        {
+          "text": "possiamo",
+          "start": 13.105,
+          "end": 13.445
+        },
+        {
+          "text": "sostituire",
+          "start": 13.525,
+          "end": 14.085
+        },
+        {
+          "text": "con",
+          "start": 14.125,
+          "end": 14.245
+        },
+        {
+          "text": "un",
+          "start": 14.265,
+          "end": 14.345
+        }
+      ]
+    },
+    {
+      "start": 14.385,
+      "end": 18.565,
+      "text": "kernel, ottenendo un'espansione in basi fissa, efficiente e modulare,",
+      "words": [
+        {
+          "text": "kernel,",
+          "start": 14.385,
+          "end": 14.785
+        },
+        {
+          "text": "ottenendo",
+          "start": 15.285,
+          "end": 15.705
+        },
+        {
+          "text": "un'espansione",
+          "start": 15.745,
+          "end": 16.345
+        },
+        {
+          "text": "in",
+          "start": 16.385,
+          "end": 16.445
+        },
+        {
+          "text": "basi",
+          "start": 16.485,
+          "end": 16.705
+        },
+        {
+          "text": "fissa,",
+          "start": 16.785,
+          "end": 17.145
+        },
+        {
+          "text": "efficiente",
+          "start": 17.305,
+          "end": 17.845
+        },
+        {
+          "text": "e",
+          "start": 17.985,
+          "end": 18.025
+        },
+        {
+          "text": "modulare,",
+          "start": 18.085,
+          "end": 18.565
+        }
+      ]
+    },
+    {
+      "start": 18.985,
+      "end": 22.266,
+      "text": "dove si cambia il kernel senza toccare la macchina di apprendimento,",
+      "words": [
+        {
+          "text": "dove",
+          "start": 18.985,
+          "end": 19.145
+        },
+        {
+          "text": "si",
+          "start": 19.205,
+          "end": 19.285
+        },
+        {
+          "text": "cambia",
+          "start": 19.345,
+          "end": 19.625
+        },
+        {
+          "text": "il",
+          "start": 19.645,
+          "end": 19.705
+        },
+        {
+          "text": "kernel",
+          "start": 19.765,
+          "end": 20.146
+        },
+        {
+          "text": "senza",
+          "start": 20.266,
+          "end": 20.506
+        },
+        {
+          "text": "toccare",
+          "start": 20.546,
+          "end": 20.866
+        },
+        {
+          "text": "la",
+          "start": 20.906,
+          "end": 20.986
+        },
+        {
+          "text": "macchina",
+          "start": 21.046,
+          "end": 21.406
+        },
+        {
+          "text": "di",
+          "start": 21.446,
+          "end": 21.506
+        },
+        {
+          "text": "apprendimento,",
+          "start": 21.546,
+          "end": 22.266
+        }
+      ]
+    },
+    {
+      "start": 22.686,
+      "end": 24.286,
+      "text": "in un quadro teorico unificato.",
+      "words": [
+        {
+          "text": "in",
+          "start": 22.686,
+          "end": 22.766
+        },
+        {
+          "text": "un",
+          "start": 22.786,
+          "end": 22.866
+        },
+        {
+          "text": "quadro",
+          "start": 22.906,
+          "end": 23.206
+        },
+        {
+          "text": "teorico",
+          "start": 23.266,
+          "end": 23.686
+        },
+        {
+          "text": "unificato.",
+          "start": 23.746,
+          "end": 24.286
+        }
+      ]
+    },
+    {
+      "start": 25.146,
+      "end": 28.046,
+      "text": "Ogni kernel induce una distanza nello spazio delle feature:",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 25.146,
+          "end": 25.306
+        },
+        {
+          "text": "kernel",
+          "start": 25.386,
+          "end": 25.766
+        },
+        {
+          "text": "induce",
+          "start": 25.866,
+          "end": 26.146
+        },
+        {
+          "text": "una",
+          "start": 26.206,
+          "end": 26.306
+        },
+        {
+          "text": "distanza",
+          "start": 26.346,
+          "end": 26.766
+        },
+        {
+          "text": "nello",
+          "start": 26.826,
+          "end": 27.026
+        },
+        {
+          "text": "spazio",
+          "start": 27.066,
+          "end": 27.366
+        },
+        {
+          "text": "delle",
+          "start": 27.406,
+          "end": 27.566
+        },
+        {
+          "text": "feature:",
+          "start": 27.626,
+          "end": 28.046
+        }
+      ]
+    },
+    {
+      "start": 28.666,
+      "end": 30.847,
+      "text": "il quadrato di d con k tra s e t",
+      "words": [
+        {
+          "text": "il",
+          "start": 28.666,
+          "end": 28.746
+        },
+        {
+          "text": "quadrato",
+          "start": 28.806,
+          "end": 29.226
+        },
+        {
+          "text": "di",
+          "start": 29.286,
+          "end": 29.367
+        },
+        {
+          "text": "d",
+          "start": 29.507,
+          "end": 29.547
+        },
+        {
+          "text": "con",
+          "start": 29.667,
+          "end": 29.807
+        },
+        {
+          "text": "k",
+          "start": 29.907,
+          "end": 29.947
+        },
+        {
+          "text": "tra",
+          "start": 30.227,
+          "end": 30.347
+        },
+        {
+          "text": "s",
+          "start": 30.547,
+          "end": 30.587
+        },
+        {
+          "text": "e",
+          "start": 30.627,
+          "end": 30.667
+        },
+        {
+          "text": "t",
+          "start": 30.807,
+          "end": 30.847
+        }
+      ]
+    },
+    {
+      "start": 31.507,
+      "end": 33.927,
+      "text": "è norma quadra di Fi di s meno Fi di t,",
+      "words": [
+        {
+          "text": "è",
+          "start": 31.507,
+          "end": 31.547
+        },
+        {
+          "text": "norma",
+          "start": 31.687,
+          "end": 31.967
+        },
+        {
+          "text": "quadra",
+          "start": 32.027,
+          "end": 32.347
+        },
+        {
+          "text": "di",
+          "start": 32.407,
+          "end": 32.487
+        },
+        {
+          "text": "Fi",
+          "start": 32.587,
+          "end": 32.687
+        },
+        {
+          "text": "di",
+          "start": 32.727,
+          "end": 32.807
+        },
+        {
+          "text": "s",
+          "start": 33.127,
+          "end": 33.167
+        },
+        {
+          "text": "meno",
+          "start": 33.267,
+          "end": 33.447
+        },
+        {
+          "text": "Fi",
+          "start": 33.527,
+          "end": 33.607
+        },
+        {
+          "text": "di",
+          "start": 33.667,
+          "end": 33.767
+        },
+        {
+          "text": "t,",
+          "start": 33.887,
+          "end": 33.927
+        }
+      ]
+    },
+    {
+      "start": 34.507,
+      "end": 38.768,
+      "text": "che sviluppata vale k di s virgola s meno due k di s virgola t",
+      "words": [
+        {
+          "text": "che",
+          "start": 34.507,
+          "end": 34.587
+        },
+        {
+          "text": "sviluppata",
+          "start": 34.647,
+          "end": 35.127
+        },
+        {
+          "text": "vale",
+          "start": 35.167,
+          "end": 35.387
+        },
+        {
+          "text": "k",
+          "start": 35.627,
+          "end": 35.667
+        },
+        {
+          "text": "di",
+          "start": 35.967,
+          "end": 36.027
+        },
+        {
+          "text": "s",
+          "start": 36.227,
+          "end": 36.267
+        },
+        {
+          "text": "virgola",
+          "start": 36.347,
+          "end": 36.627
+        },
+        {
+          "text": "s",
+          "start": 36.887,
+          "end": 36.927
+        },
+        {
+          "text": "meno",
+          "start": 37.127,
+          "end": 37.327
+        },
+        {
+          "text": "due",
+          "start": 37.387,
+          "end": 37.527
+        },
+        {
+          "text": "k",
+          "start": 37.607,
+          "end": 37.647
+        },
+        {
+          "text": "di",
+          "start": 37.927,
+          "end": 38.007
+        },
+        {
+          "text": "s",
+          "start": 38.207,
+          "end": 38.247
+        },
+        {
+          "text": "virgola",
+          "start": 38.347,
+          "end": 38.648
+        },
+        {
+          "text": "t",
+          "start": 38.728,
+          "end": 38.768
+        }
+      ]
+    },
+    {
+      "start": 38.988,
+      "end": 40.348,
+      "text": "più k di t virgola t.",
+      "words": [
+        {
+          "text": "più",
+          "start": 38.988,
+          "end": 39.108
+        },
+        {
+          "text": "k",
+          "start": 39.248,
+          "end": 39.288
+        },
+        {
+          "text": "di",
+          "start": 39.568,
+          "end": 39.648
+        },
+        {
+          "text": "t",
+          "start": 39.728,
+          "end": 39.768
+        },
+        {
+          "text": "virgola",
+          "start": 39.908,
+          "end": 40.248
+        },
+        {
+          "text": "t.",
+          "start": 40.308,
+          "end": 40.348
+        }
+      ]
+    },
+    {
+      "start": 41.728,
+      "end": 44.808,
+      "text": "Oggetti simili hanno distanza piccola e valore del kernel alto:",
+      "words": [
+        {
+          "text": "Oggetti",
+          "start": 41.728,
+          "end": 42.068
+        },
+        {
+          "text": "simili",
+          "start": 42.128,
+          "end": 42.388
+        },
+        {
+          "text": "hanno",
+          "start": 42.428,
+          "end": 42.588
+        },
+        {
+          "text": "distanza",
+          "start": 42.628,
+          "end": 43.048
+        },
+        {
+          "text": "piccola",
+          "start": 43.088,
+          "end": 43.468
+        },
+        {
+          "text": "e",
+          "start": 43.568,
+          "end": 43.608
+        },
+        {
+          "text": "valore",
+          "start": 43.628,
+          "end": 43.908
+        },
+        {
+          "text": "del",
+          "start": 43.948,
+          "end": 44.068
+        },
+        {
+          "text": "kernel",
+          "start": 44.108,
+          "end": 44.448
+        },
+        {
+          "text": "alto:",
+          "start": 44.528,
+          "end": 44.808
+        }
+      ]
+    },
+    {
+      "start": 45.368,
+      "end": 47.388,
+      "text": "il kernel è quindi una misura di similarità.",
+      "words": [
+        {
+          "text": "il",
+          "start": 45.368,
+          "end": 45.448
+        },
+        {
+          "text": "kernel",
+          "start": 45.488,
+          "end": 45.808
+        },
+        {
+          "text": "è",
+          "start": 45.868,
+          "end": 45.908
+        },
+        {
+          "text": "quindi",
+          "start": 45.928,
+          "end": 46.128
+        },
+        {
+          "text": "una",
+          "start": 46.168,
+          "end": 46.288
+        },
+        {
+          "text": "misura",
+          "start": 46.348,
+          "end": 46.688
+        },
+        {
+          "text": "di",
+          "start": 46.728,
+          "end": 46.788
+        },
+        {
+          "text": "similarità.",
+          "start": 46.868,
+          "end": 47.388
+        }
+      ]
+    },
+    {
+      "start": 48.209,
+      "end": 53.469,
+      "text": "L'idea dei kernel è concentrarsi sui confronti tra coppie di oggetti anziché sulla rappresentazione del",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 48.209,
+          "end": 48.489
+        },
+        {
+          "text": "dei",
+          "start": 48.529,
+          "end": 48.649
+        },
+        {
+          "text": "kernel",
+          "start": 48.689,
+          "end": 49.089
+        },
+        {
+          "text": "è",
+          "start": 49.149,
+          "end": 49.189
+        },
+        {
+          "text": "concentrarsi",
+          "start": 49.209,
+          "end": 49.869
+        },
+        {
+          "text": "sui",
+          "start": 49.929,
+          "end": 50.069
+        },
+        {
+          "text": "confronti",
+          "start": 50.109,
+          "end": 50.589
+        },
+        {
+          "text": "tra",
+          "start": 50.629,
+          "end": 50.729
+        },
+        {
+          "text": "coppie",
+          "start": 50.789,
+          "end": 51.049
+        },
+        {
+          "text": "di",
+          "start": 51.089,
+          "end": 51.129
+        },
+        {
+          "text": "oggetti",
+          "start": 51.189,
+          "end": 51.689
+        },
+        {
+          "text": "anziché",
+          "start": 51.869,
+          "end": 52.249
+        },
+        {
+          "text": "sulla",
+          "start": 52.329,
+          "end": 52.529
+        },
+        {
+          "text": "rappresentazione",
+          "start": 52.569,
+          "end": 53.309
+        },
+        {
+          "text": "del",
+          "start": 53.349,
+          "end": 53.469
+        }
+      ]
+    },
+    {
+      "start": 53.529,
+      "end": 58.73,
+      "text": "singolo oggetto: in molti domini è più facile confrontare due oggetti che progettare feature per",
+      "words": [
+        {
+          "text": "singolo",
+          "start": 53.529,
+          "end": 53.869
+        },
+        {
+          "text": "oggetto:",
+          "start": 53.909,
+          "end": 54.389
+        },
+        {
+          "text": "in",
+          "start": 55.069,
+          "end": 55.129
+        },
+        {
+          "text": "molti",
+          "start": 55.149,
+          "end": 55.369
+        },
+        {
+          "text": "domini",
+          "start": 55.409,
+          "end": 55.689
+        },
+        {
+          "text": "è",
+          "start": 55.829,
+          "end": 55.869
+        },
+        {
+          "text": "più",
+          "start": 55.889,
+          "end": 55.989
+        },
+        {
+          "text": "facile",
+          "start": 56.049,
+          "end": 56.349
+        },
+        {
+          "text": "confrontare",
+          "start": 56.389,
+          "end": 56.929
+        },
+        {
+          "text": "due",
+          "start": 56.969,
+          "end": 57.129
+        },
+        {
+          "text": "oggetti",
+          "start": 57.189,
+          "end": 57.59
+        },
+        {
+          "text": "che",
+          "start": 57.63,
+          "end": 57.71
+        },
+        {
+          "text": "progettare",
+          "start": 57.75,
+          "end": 58.21
+        },
+        {
+          "text": "feature",
+          "start": 58.27,
+          "end": 58.57
+        },
+        {
+          "text": "per",
+          "start": 58.61,
+          "end": 58.73
+        }
+      ]
+    },
+    {
+      "start": 58.77,
+      "end": 62.17,
+      "text": "uno solo, e la conoscenza di dominio sta tutta nel kernel,",
+      "words": [
+        {
+          "text": "uno",
+          "start": 58.77,
+          "end": 58.91
+        },
+        {
+          "text": "solo,",
+          "start": 58.97,
+          "end": 59.25
+        },
+        {
+          "text": "e",
+          "start": 59.87,
+          "end": 59.91
+        },
+        {
+          "text": "la",
+          "start": 59.95,
+          "end": 59.99
+        },
+        {
+          "text": "conoscenza",
+          "start": 60.03,
+          "end": 60.49
+        },
+        {
+          "text": "di",
+          "start": 60.53,
+          "end": 60.59
+        },
+        {
+          "text": "dominio",
+          "start": 60.65,
+          "end": 61.01
+        },
+        {
+          "text": "sta",
+          "start": 61.07,
+          "end": 61.19
+        },
+        {
+          "text": "tutta",
+          "start": 61.25,
+          "end": 61.51
+        },
+        {
+          "text": "nel",
+          "start": 61.55,
+          "end": 61.69
+        },
+        {
+          "text": "kernel,",
+          "start": 61.75,
+          "end": 62.17
+        }
+      ]
+    },
+    {
+      "start": 62.35,
+      "end": 63.59,
+      "text": "separata dal risolutore.",
+      "words": [
+        {
+          "text": "separata",
+          "start": 62.35,
+          "end": 62.77
+        },
+        {
+          "text": "dal",
+          "start": 62.81,
+          "end": 62.93
+        },
+        {
+          "text": "risolutore.",
+          "start": 62.97,
+          "end": 63.59
+        }
+      ]
+    },
+    {
+      "start": 64.43,
+      "end": 67.271,
+      "text": "Un kernel è buono quando raggruppa oggetti della stessa classe;",
+      "words": [
+        {
+          "text": "Un",
+          "start": 64.43,
+          "end": 64.49
+        },
+        {
+          "text": "kernel",
+          "start": 64.53,
+          "end": 64.85
+        },
+        {
+          "text": "è",
+          "start": 64.91,
+          "end": 64.95
+        },
+        {
+          "text": "buono",
+          "start": 64.97,
+          "end": 65.25
+        },
+        {
+          "text": "quando",
+          "start": 65.31,
+          "end": 65.53
+        },
+        {
+          "text": "raggruppa",
+          "start": 65.57,
+          "end": 65.93
+        },
+        {
+          "text": "oggetti",
+          "start": 65.99,
+          "end": 66.33
+        },
+        {
+          "text": "della",
+          "start": 66.37,
+          "end": 66.53
+        },
+        {
+          "text": "stessa",
+          "start": 66.571,
+          "end": 66.811
+        },
+        {
+          "text": "classe;",
+          "start": 66.871,
+          "end": 67.271
+        }
+      ]
+    },
+    {
+      "start": 67.711,
+      "end": 73.591,
+      "text": "è cattivo quando induce una similarità irrilevante, ad esempio rendendo tutti gli oggetti ugualmente simili",
+      "words": [
+        {
+          "text": "è",
+          "start": 67.711,
+          "end": 67.751
+        },
+        {
+          "text": "cattivo",
+          "start": 67.791,
+          "end": 68.171
+        },
+        {
+          "text": "quando",
+          "start": 68.231,
+          "end": 68.531
+        },
+        {
+          "text": "induce",
+          "start": 68.691,
+          "end": 69.131
+        },
+        {
+          "text": "una",
+          "start": 69.171,
+          "end": 69.291
+        },
+        {
+          "text": "similarità",
+          "start": 69.371,
+          "end": 69.871
+        },
+        {
+          "text": "irrilevante,",
+          "start": 69.971,
+          "end": 70.691
+        },
+        {
+          "text": "ad",
+          "start": 71.211,
+          "end": 71.291
+        },
+        {
+          "text": "esempio",
+          "start": 71.311,
+          "end": 71.611
+        },
+        {
+          "text": "rendendo",
+          "start": 71.651,
+          "end": 71.991
+        },
+        {
+          "text": "tutti",
+          "start": 72.071,
+          "end": 72.271
+        },
+        {
+          "text": "gli",
+          "start": 72.291,
+          "end": 72.371
+        },
+        {
+          "text": "oggetti",
+          "start": 72.391,
+          "end": 72.691
+        },
+        {
+          "text": "ugualmente",
+          "start": 72.751,
+          "end": 73.171
+        },
+        {
+          "text": "simili",
+          "start": 73.251,
+          "end": 73.591
+        }
+      ]
+    },
+    {
+      "start": 73.751,
+      "end": 74.751,
+      "text": "o ugualmente diversi.",
+      "words": [
+        {
+          "text": "o",
+          "start": 73.751,
+          "end": 73.79100000000001
+        },
+        {
+          "text": "ugualmente",
+          "start": 73.831,
+          "end": 74.251
+        },
+        {
+          "text": "diversi.",
+          "start": 74.291,
+          "end": 74.751
+        }
+      ]
+    },
+    {
+      "start": 75.471,
+      "end": 78.672,
+      "text": "Mentre nelle reti neurali le funzioni di base si adattano ai dati,",
+      "words": [
+        {
+          "text": "Mentre",
+          "start": 75.471,
+          "end": 75.751
+        },
+        {
+          "text": "nelle",
+          "start": 75.831,
+          "end": 76.052
+        },
+        {
+          "text": "reti",
+          "start": 76.112,
+          "end": 76.312
+        },
+        {
+          "text": "neurali",
+          "start": 76.352,
+          "end": 76.792
+        },
+        {
+          "text": "le",
+          "start": 76.832,
+          "end": 76.892
+        },
+        {
+          "text": "funzioni",
+          "start": 76.932,
+          "end": 77.312
+        },
+        {
+          "text": "di",
+          "start": 77.352,
+          "end": 77.412
+        },
+        {
+          "text": "base",
+          "start": 77.452,
+          "end": 77.712
+        },
+        {
+          "text": "si",
+          "start": 77.772,
+          "end": 77.81200000000001
+        },
+        {
+          "text": "adattano",
+          "start": 77.852,
+          "end": 78.212
+        },
+        {
+          "text": "ai",
+          "start": 78.252,
+          "end": 78.312
+        },
+        {
+          "text": "dati,",
+          "start": 78.352,
+          "end": 78.672
+        }
+      ]
+    },
+    {
+      "start": 79.072,
+      "end": 83.692,
+      "text": "una SVM è guidata dalla scelta del kernel, tema di ricerca anche sui kernel adattivi;",
+      "words": [
+        {
+          "text": "una",
+          "start": 79.072,
+          "end": 79.192
+        },
+        {
+          "text": "SVM",
+          "start": 79.332,
+          "end": 79.712
+        },
+        {
+          "text": "è",
+          "start": 79.792,
+          "end": 79.83200000000001
+        },
+        {
+          "text": "guidata",
+          "start": 79.852,
+          "end": 80.192
+        },
+        {
+          "text": "dalla",
+          "start": 80.232,
+          "end": 80.432
+        },
+        {
+          "text": "scelta",
+          "start": 80.472,
+          "end": 80.792
+        },
+        {
+          "text": "del",
+          "start": 80.832,
+          "end": 80.972
+        },
+        {
+          "text": "kernel,",
+          "start": 81.032,
+          "end": 81.432
+        },
+        {
+          "text": "tema",
+          "start": 81.772,
+          "end": 81.952
+        },
+        {
+          "text": "di",
+          "start": 81.992,
+          "end": 82.052
+        },
+        {
+          "text": "ricerca",
+          "start": 82.112,
+          "end": 82.432
+        },
+        {
+          "text": "anche",
+          "start": 82.492,
+          "end": 82.652
+        },
+        {
+          "text": "sui",
+          "start": 82.692,
+          "end": 82.812
+        },
+        {
+          "text": "kernel",
+          "start": 82.832,
+          "end": 83.172
+        },
+        {
+          "text": "adattivi;",
+          "start": 83.212,
+          "end": 83.692
+        }
+      ]
+    },
+    {
+      "start": 84.572,
+      "end": 88.453,
+      "text": "in più i kernel si estendono direttamente a strutture non vettoriali come stringhe,",
+      "words": [
+        {
+          "text": "in",
+          "start": 84.572,
+          "end": 84.652
+        },
+        {
+          "text": "più",
+          "start": 84.672,
+          "end": 84.752
+        },
+        {
+          "text": "i",
+          "start": 84.812,
+          "end": 84.852
+        },
+        {
+          "text": "kernel",
+          "start": 84.872,
+          "end": 85.233
+        },
+        {
+          "text": "si",
+          "start": 85.313,
+          "end": 85.373
+        },
+        {
+          "text": "estendono",
+          "start": 85.413,
+          "end": 85.813
+        },
+        {
+          "text": "direttamente",
+          "start": 85.853,
+          "end": 86.373
+        },
+        {
+          "text": "a",
+          "start": 86.413,
+          "end": 86.453
+        },
+        {
+          "text": "strutture",
+          "start": 86.473,
+          "end": 86.913
+        },
+        {
+          "text": "non",
+          "start": 86.973,
+          "end": 87.113
+        },
+        {
+          "text": "vettoriali",
+          "start": 87.153,
+          "end": 87.753
+        },
+        {
+          "text": "come",
+          "start": 87.813,
+          "end": 87.973
+        },
+        {
+          "text": "stringhe,",
+          "start": 88.073,
+          "end": 88.453
+        }
+      ]
+    },
+    {
+      "start": 88.653,
+      "end": 89.493,
+      "text": "alberi e grafi.",
+      "words": [
+        {
+          "text": "alberi",
+          "start": 88.653,
+          "end": 88.953
+        },
+        {
+          "text": "e",
+          "start": 89.133,
+          "end": 89.173
+        },
+        {
+          "text": "grafi.",
+          "start": 89.213,
+          "end": 89.493
+        }
+      ]
+    }
+  ]
+}

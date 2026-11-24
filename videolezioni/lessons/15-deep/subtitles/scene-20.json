@@ -1,0 +1,1456 @@
+{
+  "duration": 109.15,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.801,
+      "text": "Raccogliamo ora in cinque punti chiave l'intero percorso di questo capitolo sul deep learning.",
+      "words": [
+        {
+          "text": "Raccogliamo",
+          "start": 0.08,
+          "end": 0.62
+        },
+        {
+          "text": "ora",
+          "start": 0.7,
+          "end": 0.84
+        },
+        {
+          "text": "in",
+          "start": 0.9,
+          "end": 0.96
+        },
+        {
+          "text": "cinque",
+          "start": 1.02,
+          "end": 1.36
+        },
+        {
+          "text": "punti",
+          "start": 1.42,
+          "end": 1.68
+        },
+        {
+          "text": "chiave",
+          "start": 1.74,
+          "end": 2.08
+        },
+        {
+          "text": "l'intero",
+          "start": 2.14,
+          "end": 2.54
+        },
+        {
+          "text": "percorso",
+          "start": 2.581,
+          "end": 3.101
+        },
+        {
+          "text": "di",
+          "start": 3.141,
+          "end": 3.201
+        },
+        {
+          "text": "questo",
+          "start": 3.241,
+          "end": 3.481
+        },
+        {
+          "text": "capitolo",
+          "start": 3.521,
+          "end": 3.921
+        },
+        {
+          "text": "sul",
+          "start": 3.981,
+          "end": 4.121
+        },
+        {
+          "text": "deep",
+          "start": 4.161,
+          "end": 4.301
+        },
+        {
+          "text": "learning.",
+          "start": 4.361,
+          "end": 4.801
+        }
+      ]
+    },
+    {
+      "start": 5.581,
+      "end": 11.102,
+      "text": "Primo: il deep learning utilizza molti strati di unità non lineari per apprendere una gerarchia",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.581,
+          "end": 5.881
+        },
+        {
+          "text": "il",
+          "start": 6.321,
+          "end": 6.421
+        },
+        {
+          "text": "deep",
+          "start": 6.461,
+          "end": 6.581
+        },
+        {
+          "text": "learning",
+          "start": 6.641,
+          "end": 7.041
+        },
+        {
+          "text": "utilizza",
+          "start": 7.201,
+          "end": 7.621
+        },
+        {
+          "text": "molti",
+          "start": 7.721,
+          "end": 8.001
+        },
+        {
+          "text": "strati",
+          "start": 8.062,
+          "end": 8.402
+        },
+        {
+          "text": "di",
+          "start": 8.442,
+          "end": 8.482
+        },
+        {
+          "text": "unità",
+          "start": 8.522,
+          "end": 8.762
+        },
+        {
+          "text": "non",
+          "start": 8.942,
+          "end": 9.122
+        },
+        {
+          "text": "lineari",
+          "start": 9.162,
+          "end": 9.702
+        },
+        {
+          "text": "per",
+          "start": 9.842,
+          "end": 9.962
+        },
+        {
+          "text": "apprendere",
+          "start": 9.982,
+          "end": 10.442
+        },
+        {
+          "text": "una",
+          "start": 10.482,
+          "end": 10.582
+        },
+        {
+          "text": "gerarchia",
+          "start": 10.642,
+          "end": 11.102
+        }
+      ]
+    },
+    {
+      "start": 11.142,
+      "end": 14.343,
+      "text": "di rappresentazioni distribuite direttamente dai dati grezzi.",
+      "words": [
+        {
+          "text": "di",
+          "start": 11.142,
+          "end": 11.202
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 11.262,
+          "end": 12.042
+        },
+        {
+          "text": "distribuite",
+          "start": 12.122,
+          "end": 12.802
+        },
+        {
+          "text": "direttamente",
+          "start": 12.882,
+          "end": 13.543
+        },
+        {
+          "text": "dai",
+          "start": 13.583,
+          "end": 13.703
+        },
+        {
+          "text": "dati",
+          "start": 13.743,
+          "end": 13.943
+        },
+        {
+          "text": "grezzi.",
+          "start": 13.983,
+          "end": 14.343
+        }
+      ]
+    },
+    {
+      "start": 15.103,
+      "end": 21.724,
+      "text": "Secondo: il principio di no-flattening mostra che funzioni compatte con molti strati possono richiedere modelli",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 15.103,
+          "end": 15.583
+        },
+        {
+          "text": "il",
+          "start": 15.983,
+          "end": 16.063
+        },
+        {
+          "text": "principio",
+          "start": 16.123,
+          "end": 16.603
+        },
+        {
+          "text": "di",
+          "start": 16.643,
+          "end": 16.723
+        },
+        {
+          "text": "no-flattening",
+          "start": 16.823,
+          "end": 17.603
+        },
+        {
+          "text": "mostra",
+          "start": 17.723,
+          "end": 18.043
+        },
+        {
+          "text": "che",
+          "start": 18.083,
+          "end": 18.163
+        },
+        {
+          "text": "funzioni",
+          "start": 18.223,
+          "end": 18.643
+        },
+        {
+          "text": "compatte",
+          "start": 18.743,
+          "end": 19.324
+        },
+        {
+          "text": "con",
+          "start": 19.364,
+          "end": 19.464
+        },
+        {
+          "text": "molti",
+          "start": 19.504,
+          "end": 19.724
+        },
+        {
+          "text": "strati",
+          "start": 19.804,
+          "end": 20.184
+        },
+        {
+          "text": "possono",
+          "start": 20.544,
+          "end": 20.864
+        },
+        {
+          "text": "richiedere",
+          "start": 20.924,
+          "end": 21.324
+        },
+        {
+          "text": "modelli",
+          "start": 21.384,
+          "end": 21.724
+        }
+      ]
+    },
+    {
+      "start": 21.784,
+      "end": 27.205,
+      "text": "esponenzialmente grandi con pochi strati, come nella funzione di parità con due alla n meno",
+      "words": [
+        {
+          "text": "esponenzialmente",
+          "start": 21.784,
+          "end": 22.524
+        },
+        {
+          "text": "grandi",
+          "start": 22.564,
+          "end": 22.884
+        },
+        {
+          "text": "con",
+          "start": 22.964,
+          "end": 23.104
+        },
+        {
+          "text": "pochi",
+          "start": 23.164,
+          "end": 23.404
+        },
+        {
+          "text": "strati,",
+          "start": 23.444,
+          "end": 23.824
+        },
+        {
+          "text": "come",
+          "start": 24.204,
+          "end": 24.384
+        },
+        {
+          "text": "nella",
+          "start": 24.425,
+          "end": 24.605
+        },
+        {
+          "text": "funzione",
+          "start": 24.645,
+          "end": 25.085
+        },
+        {
+          "text": "di",
+          "start": 25.145,
+          "end": 25.205
+        },
+        {
+          "text": "parità",
+          "start": 25.265,
+          "end": 25.605
+        },
+        {
+          "text": "con",
+          "start": 25.785,
+          "end": 25.985
+        },
+        {
+          "text": "due",
+          "start": 26.125,
+          "end": 26.345
+        },
+        {
+          "text": "alla",
+          "start": 26.545,
+          "end": 26.705
+        },
+        {
+          "text": "n",
+          "start": 26.885,
+          "end": 26.925
+        },
+        {
+          "text": "meno",
+          "start": 27.025,
+          "end": 27.205
+        }
+      ]
+    },
+    {
+      "start": 27.305,
+      "end": 30.146,
+      "text": "uno più uno porte contro tre per n meno uno.",
+      "words": [
+        {
+          "text": "uno",
+          "start": 27.305,
+          "end": 27.465
+        },
+        {
+          "text": "più",
+          "start": 27.525,
+          "end": 27.645
+        },
+        {
+          "text": "uno",
+          "start": 27.725,
+          "end": 27.865
+        },
+        {
+          "text": "porte",
+          "start": 27.925,
+          "end": 28.305
+        },
+        {
+          "text": "contro",
+          "start": 28.605,
+          "end": 28.905
+        },
+        {
+          "text": "tre",
+          "start": 29.025,
+          "end": 29.185
+        },
+        {
+          "text": "per",
+          "start": 29.345,
+          "end": 29.485
+        },
+        {
+          "text": "n",
+          "start": 29.625,
+          "end": 29.665
+        },
+        {
+          "text": "meno",
+          "start": 29.725,
+          "end": 29.926
+        },
+        {
+          "text": "uno.",
+          "start": 29.986,
+          "end": 30.146
+        }
+      ]
+    },
+    {
+      "start": 30.806,
+      "end": 35.947,
+      "text": "Terzo: il bias induttivo dei modelli profondi assume che la funzione da apprendere sia una",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 30.806,
+          "end": 31.226
+        },
+        {
+          "text": "il",
+          "start": 31.526,
+          "end": 31.626
+        },
+        {
+          "text": "bias",
+          "start": 31.686,
+          "end": 32.026
+        },
+        {
+          "text": "induttivo",
+          "start": 32.146,
+          "end": 32.686
+        },
+        {
+          "text": "dei",
+          "start": 32.766,
+          "end": 32.886
+        },
+        {
+          "text": "modelli",
+          "start": 32.926,
+          "end": 33.266
+        },
+        {
+          "text": "profondi",
+          "start": 33.306,
+          "end": 33.806
+        },
+        {
+          "text": "assume",
+          "start": 33.886,
+          "end": 34.246
+        },
+        {
+          "text": "che",
+          "start": 34.306,
+          "end": 34.386
+        },
+        {
+          "text": "la",
+          "start": 34.446,
+          "end": 34.506
+        },
+        {
+          "text": "funzione",
+          "start": 34.546,
+          "end": 34.946
+        },
+        {
+          "text": "da",
+          "start": 34.986,
+          "end": 35.066
+        },
+        {
+          "text": "apprendere",
+          "start": 35.086,
+          "end": 35.507
+        },
+        {
+          "text": "sia",
+          "start": 35.587,
+          "end": 35.747
+        },
+        {
+          "text": "una",
+          "start": 35.827,
+          "end": 35.947
+        }
+      ]
+    },
+    {
+      "start": 36.007,
+      "end": 38.027,
+      "text": "composizione di funzioni più semplici.",
+      "words": [
+        {
+          "text": "composizione",
+          "start": 36.007,
+          "end": 36.687
+        },
+        {
+          "text": "di",
+          "start": 36.727,
+          "end": 36.787
+        },
+        {
+          "text": "funzioni",
+          "start": 36.827,
+          "end": 37.227
+        },
+        {
+          "text": "più",
+          "start": 37.287,
+          "end": 37.387
+        },
+        {
+          "text": "semplici.",
+          "start": 37.507,
+          "end": 38.027
+        }
+      ]
+    },
+    {
+      "start": 38.747,
+      "end": 44.408,
+      "text": "Quarto: il representation learning comprende pre-training con autoencoder e transfer learning,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 38.747,
+          "end": 39.167
+        },
+        {
+          "text": "il",
+          "start": 39.347,
+          "end": 39.427
+        },
+        {
+          "text": "representation",
+          "start": 39.487,
+          "end": 40.227
+        },
+        {
+          "text": "learning",
+          "start": 40.307,
+          "end": 40.747
+        },
+        {
+          "text": "comprende",
+          "start": 40.848,
+          "end": 41.348
+        },
+        {
+          "text": "pre-training",
+          "start": 41.428,
+          "end": 42.148
+        },
+        {
+          "text": "con",
+          "start": 42.288,
+          "end": 42.428
+        },
+        {
+          "text": "autoencoder",
+          "start": 42.488,
+          "end": 43.248
+        },
+        {
+          "text": "e",
+          "start": 43.368,
+          "end": 43.408
+        },
+        {
+          "text": "transfer",
+          "start": 43.468,
+          "end": 43.888
+        },
+        {
+          "text": "learning,",
+          "start": 43.968,
+          "end": 44.408
+        }
+      ]
+    },
+    {
+      "start": 44.848,
+      "end": 50.249,
+      "text": "mentre le rappresentazioni distribuite offrono k alla n configurazioni e attributi condivisi,",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 44.848,
+          "end": 45.128
+        },
+        {
+          "text": "le",
+          "start": 45.208,
+          "end": 45.268
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 45.328,
+          "end": 46.028
+        },
+        {
+          "text": "distribuite",
+          "start": 46.088,
+          "end": 46.649
+        },
+        {
+          "text": "offrono",
+          "start": 46.769,
+          "end": 47.129
+        },
+        {
+          "text": "k",
+          "start": 47.309,
+          "end": 47.349
+        },
+        {
+          "text": "alla",
+          "start": 47.389,
+          "end": 47.829
+        },
+        {
+          "text": "n",
+          "start": 48.009,
+          "end": 48.049
+        },
+        {
+          "text": "configurazioni",
+          "start": 48.149,
+          "end": 48.969
+        },
+        {
+          "text": "e",
+          "start": 49.109,
+          "end": 49.149
+        },
+        {
+          "text": "attributi",
+          "start": 49.209,
+          "end": 49.629
+        },
+        {
+          "text": "condivisi,",
+          "start": 49.689,
+          "end": 50.249
+        }
+      ]
+    },
+    {
+      "start": 50.689,
+      "end": 52.75,
+      "text": "sommando un secondo vantaggio esponenziale.",
+      "words": [
+        {
+          "text": "sommando",
+          "start": 50.689,
+          "end": 51.109
+        },
+        {
+          "text": "un",
+          "start": 51.189,
+          "end": 51.249
+        },
+        {
+          "text": "secondo",
+          "start": 51.309,
+          "end": 51.629
+        },
+        {
+          "text": "vantaggio",
+          "start": 51.669,
+          "end": 52.05
+        },
+        {
+          "text": "esponenziale.",
+          "start": 52.09,
+          "end": 52.75
+        }
+      ]
+    },
+    {
+      "start": 53.37,
+      "end": 57.531,
+      "text": "Quinto: le tecniche che rendono davvero addestrabili le reti profonde sono ReLU,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 53.37,
+          "end": 53.75
+        },
+        {
+          "text": "le",
+          "start": 53.93,
+          "end": 54.01
+        },
+        {
+          "text": "tecniche",
+          "start": 54.07,
+          "end": 54.49
+        },
+        {
+          "text": "che",
+          "start": 54.55,
+          "end": 54.61
+        },
+        {
+          "text": "rendono",
+          "start": 54.69,
+          "end": 54.99
+        },
+        {
+          "text": "davvero",
+          "start": 55.05,
+          "end": 55.31
+        },
+        {
+          "text": "addestrabili",
+          "start": 55.35,
+          "end": 56.01
+        },
+        {
+          "text": "le",
+          "start": 56.05,
+          "end": 56.11
+        },
+        {
+          "text": "reti",
+          "start": 56.17,
+          "end": 56.35
+        },
+        {
+          "text": "profonde",
+          "start": 56.39,
+          "end": 56.83
+        },
+        {
+          "text": "sono",
+          "start": 56.91,
+          "end": 57.13
+        },
+        {
+          "text": "ReLU,",
+          "start": 57.231,
+          "end": 57.531
+        }
+      ]
+    },
+    {
+      "start": 57.851,
+      "end": 63.312,
+      "text": "cross-entropy con softmax, SGD con momentum o Adam, gradient clipping,",
+      "words": [
+        {
+          "text": "cross-entropy",
+          "start": 57.851,
+          "end": 58.611
+        },
+        {
+          "text": "con",
+          "start": 58.711,
+          "end": 58.851
+        },
+        {
+          "text": "softmax,",
+          "start": 58.931,
+          "end": 59.411
+        },
+        {
+          "text": "SGD",
+          "start": 60.051,
+          "end": 60.411
+        },
+        {
+          "text": "con",
+          "start": 60.611,
+          "end": 60.771
+        },
+        {
+          "text": "momentum",
+          "start": 60.811,
+          "end": 61.331
+        },
+        {
+          "text": "o",
+          "start": 61.511,
+          "end": 61.551
+        },
+        {
+          "text": "Adam,",
+          "start": 61.691,
+          "end": 61.971
+        },
+        {
+          "text": "gradient",
+          "start": 62.371,
+          "end": 62.792
+        },
+        {
+          "text": "clipping,",
+          "start": 62.852,
+          "end": 63.312
+        }
+      ]
+    },
+    {
+      "start": 63.592,
+      "end": 68.173,
+      "text": "batch normalization e dropout come ensemble implicito di sotto-reti.",
+      "words": [
+        {
+          "text": "batch",
+          "start": 63.592,
+          "end": 63.832
+        },
+        {
+          "text": "normalization",
+          "start": 63.912,
+          "end": 64.672
+        },
+        {
+          "text": "e",
+          "start": 64.872,
+          "end": 64.912
+        },
+        {
+          "text": "dropout",
+          "start": 65.012,
+          "end": 65.552
+        },
+        {
+          "text": "come",
+          "start": 65.932,
+          "end": 66.152
+        },
+        {
+          "text": "ensemble",
+          "start": 66.312,
+          "end": 66.932
+        },
+        {
+          "text": "implicito",
+          "start": 66.972,
+          "end": 67.472
+        },
+        {
+          "text": "di",
+          "start": 67.512,
+          "end": 67.592
+        },
+        {
+          "text": "sotto-reti.",
+          "start": 67.632,
+          "end": 68.173
+        }
+      ]
+    },
+    {
+      "start": 69.073,
+      "end": 72.873,
+      "text": "Per verificare la tua preparazione in vista dell'esame, prova a rispondere ad alta voce alle",
+      "words": [
+        {
+          "text": "Per",
+          "start": 69.073,
+          "end": 69.173
+        },
+        {
+          "text": "verificare",
+          "start": 69.233,
+          "end": 69.693
+        },
+        {
+          "text": "la",
+          "start": 69.753,
+          "end": 69.793
+        },
+        {
+          "text": "tua",
+          "start": 69.833,
+          "end": 69.933
+        },
+        {
+          "text": "preparazione",
+          "start": 69.973,
+          "end": 70.533
+        },
+        {
+          "text": "in",
+          "start": 70.573,
+          "end": 70.613
+        },
+        {
+          "text": "vista",
+          "start": 70.653,
+          "end": 70.873
+        },
+        {
+          "text": "dell'esame,",
+          "start": 70.913,
+          "end": 71.373
+        },
+        {
+          "text": "prova",
+          "start": 71.493,
+          "end": 71.733
+        },
+        {
+          "text": "a",
+          "start": 71.753,
+          "end": 71.793
+        },
+        {
+          "text": "rispondere",
+          "start": 71.793,
+          "end": 72.173
+        },
+        {
+          "text": "ad",
+          "start": 72.193,
+          "end": 72.253
+        },
+        {
+          "text": "alta",
+          "start": 72.293,
+          "end": 72.453
+        },
+        {
+          "text": "voce",
+          "start": 72.493,
+          "end": 72.713
+        },
+        {
+          "text": "alle",
+          "start": 72.733,
+          "end": 72.873
+        }
+      ]
+    },
+    {
+      "start": 72.893,
+      "end": 74.614,
+      "text": "sette domande di verifica sulla destra:",
+      "words": [
+        {
+          "text": "sette",
+          "start": 72.893,
+          "end": 73.113
+        },
+        {
+          "text": "domande",
+          "start": 73.153,
+          "end": 73.453
+        },
+        {
+          "text": "di",
+          "start": 73.493,
+          "end": 73.553
+        },
+        {
+          "text": "verifica",
+          "start": 73.593,
+          "end": 73.974
+        },
+        {
+          "text": "sulla",
+          "start": 74.034,
+          "end": 74.234
+        },
+        {
+          "text": "destra:",
+          "start": 74.254,
+          "end": 74.614
+        }
+      ]
+    },
+    {
+      "start": 75.234,
+      "end": 78.734,
+      "text": "che cos'è il deep learning e quali aspetti accomunano i suoi approcci;",
+      "words": [
+        {
+          "text": "che",
+          "start": 75.234,
+          "end": 75.294
+        },
+        {
+          "text": "cos'è",
+          "start": 75.374,
+          "end": 75.554
+        },
+        {
+          "text": "il",
+          "start": 75.614,
+          "end": 75.674
+        },
+        {
+          "text": "deep",
+          "start": 75.714,
+          "end": 75.854
+        },
+        {
+          "text": "learning",
+          "start": 75.914,
+          "end": 76.334
+        },
+        {
+          "text": "e",
+          "start": 76.534,
+          "end": 76.57400000000001
+        },
+        {
+          "text": "quali",
+          "start": 76.674,
+          "end": 76.934
+        },
+        {
+          "text": "aspetti",
+          "start": 76.994,
+          "end": 77.394
+        },
+        {
+          "text": "accomunano",
+          "start": 77.414,
+          "end": 77.934
+        },
+        {
+          "text": "i",
+          "start": 77.974,
+          "end": 78.01400000000001
+        },
+        {
+          "text": "suoi",
+          "start": 78.054,
+          "end": 78.194
+        },
+        {
+          "text": "approcci;",
+          "start": 78.254,
+          "end": 78.734
+        }
+      ]
+    },
+    {
+      "start": 79.235,
+      "end": 82.935,
+      "text": "se servono davvero molti strati discutendo la parità e il no-flattening;",
+      "words": [
+        {
+          "text": "se",
+          "start": 79.235,
+          "end": 79.315
+        },
+        {
+          "text": "servono",
+          "start": 79.435,
+          "end": 79.755
+        },
+        {
+          "text": "davvero",
+          "start": 79.815,
+          "end": 80.055
+        },
+        {
+          "text": "molti",
+          "start": 80.115,
+          "end": 80.335
+        },
+        {
+          "text": "strati",
+          "start": 80.395,
+          "end": 80.735
+        },
+        {
+          "text": "discutendo",
+          "start": 80.835,
+          "end": 81.315
+        },
+        {
+          "text": "la",
+          "start": 81.335,
+          "end": 81.415
+        },
+        {
+          "text": "parità",
+          "start": 81.455,
+          "end": 81.755
+        },
+        {
+          "text": "e",
+          "start": 81.995,
+          "end": 82.03500000000001
+        },
+        {
+          "text": "il",
+          "start": 82.075,
+          "end": 82.135
+        },
+        {
+          "text": "no-flattening;",
+          "start": 82.195,
+          "end": 82.935
+        }
+      ]
+    },
+    {
+      "start": 83.595,
+      "end": 88.136,
+      "text": "qual è il bias induttivo dei modelli profondi; che cosa sono representation learning,",
+      "words": [
+        {
+          "text": "qual",
+          "start": 83.595,
+          "end": 83.735
+        },
+        {
+          "text": "è",
+          "start": 83.775,
+          "end": 83.81500000000001
+        },
+        {
+          "text": "il",
+          "start": 83.835,
+          "end": 83.915
+        },
+        {
+          "text": "bias",
+          "start": 83.935,
+          "end": 84.255
+        },
+        {
+          "text": "induttivo",
+          "start": 84.315,
+          "end": 84.736
+        },
+        {
+          "text": "dei",
+          "start": 84.796,
+          "end": 84.896
+        },
+        {
+          "text": "modelli",
+          "start": 84.916,
+          "end": 85.236
+        },
+        {
+          "text": "profondi;",
+          "start": 85.276,
+          "end": 85.736
+        },
+        {
+          "text": "che",
+          "start": 86.276,
+          "end": 86.356
+        },
+        {
+          "text": "cosa",
+          "start": 86.416,
+          "end": 86.596
+        },
+        {
+          "text": "sono",
+          "start": 86.656,
+          "end": 86.876
+        },
+        {
+          "text": "representation",
+          "start": 86.956,
+          "end": 87.636
+        },
+        {
+          "text": "learning,",
+          "start": 87.716,
+          "end": 88.136
+        }
+      ]
+    },
+    {
+      "start": 88.296,
+      "end": 91.157,
+      "text": "pre-training, transfer learning e autoencoder;",
+      "words": [
+        {
+          "text": "pre-training,",
+          "start": 88.296,
+          "end": 88.996
+        },
+        {
+          "text": "transfer",
+          "start": 89.176,
+          "end": 89.576
+        },
+        {
+          "text": "learning",
+          "start": 89.656,
+          "end": 90.076
+        },
+        {
+          "text": "e",
+          "start": 90.297,
+          "end": 90.337
+        },
+        {
+          "text": "autoencoder;",
+          "start": 90.437,
+          "end": 91.157
+        }
+      ]
+    },
+    {
+      "start": 91.797,
+      "end": 97.83800000000001,
+      "text": "il confronto tra rappresentazioni simboliche e distribuite; che cos'è il vanishing gradient e come si",
+      "words": [
+        {
+          "text": "il",
+          "start": 91.797,
+          "end": 91.877
+        },
+        {
+          "text": "confronto",
+          "start": 91.937,
+          "end": 92.477
+        },
+        {
+          "text": "tra",
+          "start": 92.557,
+          "end": 92.657
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 92.757,
+          "end": 93.497
+        },
+        {
+          "text": "simboliche",
+          "start": 93.617,
+          "end": 94.217
+        },
+        {
+          "text": "e",
+          "start": 94.377,
+          "end": 94.417
+        },
+        {
+          "text": "distribuite;",
+          "start": 94.477,
+          "end": 95.117
+        },
+        {
+          "text": "che",
+          "start": 95.658,
+          "end": 95.738
+        },
+        {
+          "text": "cos'è",
+          "start": 95.818,
+          "end": 96.038
+        },
+        {
+          "text": "il",
+          "start": 96.098,
+          "end": 96.198
+        },
+        {
+          "text": "vanishing",
+          "start": 96.258,
+          "end": 96.758
+        },
+        {
+          "text": "gradient",
+          "start": 96.798,
+          "end": 97.258
+        },
+        {
+          "text": "e",
+          "start": 97.438,
+          "end": 97.47800000000001
+        },
+        {
+          "text": "come",
+          "start": 97.558,
+          "end": 97.738
+        },
+        {
+          "text": "si",
+          "start": 97.798,
+          "end": 97.83800000000001
+        }
+      ]
+    },
+    {
+      "start": 97.878,
+      "end": 102.499,
+      "text": "affronta; infine come funziona il dropout e qual è il suo effetto regolarizzante.",
+      "words": [
+        {
+          "text": "affronta;",
+          "start": 97.878,
+          "end": 98.358
+        },
+        {
+          "text": "infine",
+          "start": 98.938,
+          "end": 99.318
+        },
+        {
+          "text": "come",
+          "start": 99.438,
+          "end": 99.618
+        },
+        {
+          "text": "funziona",
+          "start": 99.658,
+          "end": 100.018
+        },
+        {
+          "text": "il",
+          "start": 100.058,
+          "end": 100.09800000000001
+        },
+        {
+          "text": "dropout",
+          "start": 100.118,
+          "end": 100.598
+        },
+        {
+          "text": "e",
+          "start": 100.818,
+          "end": 100.858
+        },
+        {
+          "text": "qual",
+          "start": 100.898,
+          "end": 101.039
+        },
+        {
+          "text": "è",
+          "start": 101.059,
+          "end": 101.119
+        },
+        {
+          "text": "il",
+          "start": 101.159,
+          "end": 101.219
+        },
+        {
+          "text": "suo",
+          "start": 101.239,
+          "end": 101.339
+        },
+        {
+          "text": "effetto",
+          "start": 101.379,
+          "end": 101.679
+        },
+        {
+          "text": "regolarizzante.",
+          "start": 101.739,
+          "end": 102.499
+        }
+      ]
+    },
+    {
+      "start": 103.159,
+      "end": 108.9,
+      "text": "Nella prossima lezione esploreremo il ruolo sorprendente della casualità nelle reti neurali randomizzate.",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 103.159,
+          "end": 103.339
+        },
+        {
+          "text": "prossima",
+          "start": 103.379,
+          "end": 103.739
+        },
+        {
+          "text": "lezione",
+          "start": 103.779,
+          "end": 104.179
+        },
+        {
+          "text": "esploreremo",
+          "start": 104.339,
+          "end": 104.899
+        },
+        {
+          "text": "il",
+          "start": 104.939,
+          "end": 104.999
+        },
+        {
+          "text": "ruolo",
+          "start": 105.019,
+          "end": 105.259
+        },
+        {
+          "text": "sorprendente",
+          "start": 105.359,
+          "end": 106.039
+        },
+        {
+          "text": "della",
+          "start": 106.079,
+          "end": 106.259
+        },
+        {
+          "text": "casualità",
+          "start": 106.299,
+          "end": 106.78
+        },
+        {
+          "text": "nelle",
+          "start": 107.1,
+          "end": 107.3
+        },
+        {
+          "text": "reti",
+          "start": 107.36,
+          "end": 107.58
+        },
+        {
+          "text": "neurali",
+          "start": 107.64,
+          "end": 108.08
+        },
+        {
+          "text": "randomizzate.",
+          "start": 108.18,
+          "end": 108.9
+        }
+      ]
+    }
+  ]
+}

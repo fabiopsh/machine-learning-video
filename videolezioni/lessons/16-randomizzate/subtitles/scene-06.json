@@ -1,0 +1,927 @@
+{
+  "duration": 71.41,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.421,
+      "text": "Chiudiamo il capitolo ripassando i tre punti chiave delle reti neurali randomizzate.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "il",
+          "start": 0.52,
+          "end": 0.58
+        },
+        {
+          "text": "capitolo",
+          "start": 0.62,
+          "end": 1.12
+        },
+        {
+          "text": "ripassando",
+          "start": 1.18,
+          "end": 1.701
+        },
+        {
+          "text": "i",
+          "start": 1.761,
+          "end": 1.801
+        },
+        {
+          "text": "tre",
+          "start": 1.821,
+          "end": 1.941
+        },
+        {
+          "text": "punti",
+          "start": 2.021,
+          "end": 2.281
+        },
+        {
+          "text": "chiave",
+          "start": 2.341,
+          "end": 2.601
+        },
+        {
+          "text": "delle",
+          "start": 2.641,
+          "end": 2.821
+        },
+        {
+          "text": "reti",
+          "start": 2.881,
+          "end": 3.101
+        },
+        {
+          "text": "neurali",
+          "start": 3.141,
+          "end": 3.581
+        },
+        {
+          "text": "randomizzate.",
+          "start": 3.661,
+          "end": 4.421
+        }
+      ]
+    },
+    {
+      "start": 5.121,
+      "end": 10.903,
+      "text": "Primo: la casualità è una componente strutturale del Machine Learning e compare in cinque ambiti:",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.121,
+          "end": 5.381
+        },
+        {
+          "text": "la",
+          "start": 6.042,
+          "end": 6.122
+        },
+        {
+          "text": "casualità",
+          "start": 6.162,
+          "end": 6.642
+        },
+        {
+          "text": "è",
+          "start": 6.802,
+          "end": 6.842
+        },
+        {
+          "text": "una",
+          "start": 6.882,
+          "end": 7.002
+        },
+        {
+          "text": "componente",
+          "start": 7.042,
+          "end": 7.542
+        },
+        {
+          "text": "strutturale",
+          "start": 7.622,
+          "end": 8.262
+        },
+        {
+          "text": "del",
+          "start": 8.302,
+          "end": 8.422
+        },
+        {
+          "text": "Machine",
+          "start": 8.462,
+          "end": 8.822
+        },
+        {
+          "text": "Learning",
+          "start": 8.862,
+          "end": 9.283
+        },
+        {
+          "text": "e",
+          "start": 9.483,
+          "end": 9.523
+        },
+        {
+          "text": "compare",
+          "start": 9.563,
+          "end": 9.943
+        },
+        {
+          "text": "in",
+          "start": 10.003,
+          "end": 10.043
+        },
+        {
+          "text": "cinque",
+          "start": 10.103,
+          "end": 10.443
+        },
+        {
+          "text": "ambiti:",
+          "start": 10.543,
+          "end": 10.903
+        }
+      ]
+    },
+    {
+      "start": 11.343,
+      "end": 18.645,
+      "text": "dati, apprendimento, selezione degli iperparametri, ensemble e nel cuore stesso dei modelli come Random Forest,",
+      "words": [
+        {
+          "text": "dati,",
+          "start": 11.343,
+          "end": 11.663
+        },
+        {
+          "text": "apprendimento,",
+          "start": 11.963,
+          "end": 12.744
+        },
+        {
+          "text": "selezione",
+          "start": 13.144,
+          "end": 13.684
+        },
+        {
+          "text": "degli",
+          "start": 13.724,
+          "end": 13.904
+        },
+        {
+          "text": "iperparametri,",
+          "start": 13.924,
+          "end": 14.744
+        },
+        {
+          "text": "ensemble",
+          "start": 15.064,
+          "end": 15.744
+        },
+        {
+          "text": "e",
+          "start": 16.124,
+          "end": 16.164
+        },
+        {
+          "text": "nel",
+          "start": 16.224,
+          "end": 16.345
+        },
+        {
+          "text": "cuore",
+          "start": 16.385,
+          "end": 16.585
+        },
+        {
+          "text": "stesso",
+          "start": 16.625,
+          "end": 16.945
+        },
+        {
+          "text": "dei",
+          "start": 16.985,
+          "end": 17.085
+        },
+        {
+          "text": "modelli",
+          "start": 17.105,
+          "end": 17.525
+        },
+        {
+          "text": "come",
+          "start": 17.585,
+          "end": 17.765
+        },
+        {
+          "text": "Random",
+          "start": 17.845,
+          "end": 18.125
+        },
+        {
+          "text": "Forest,",
+          "start": 18.185,
+          "end": 18.645
+        }
+      ]
+    },
+    {
+      "start": 18.905,
+      "end": 20.366,
+      "text": "dropout e RBM.",
+      "words": [
+        {
+          "text": "dropout",
+          "start": 18.905,
+          "end": 19.465
+        },
+        {
+          "text": "e",
+          "start": 19.705,
+          "end": 19.745
+        },
+        {
+          "text": "RBM.",
+          "start": 19.906,
+          "end": 20.366
+        }
+      ]
+    },
+    {
+      "start": 21.286,
+      "end": 27.168,
+      "text": "Secondo: una rete randomizzata combina uno strato nascosto ampio con pesi casuali fissi e un",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 21.286,
+          "end": 21.726
+        },
+        {
+          "text": "una",
+          "start": 22.026,
+          "end": 22.166
+        },
+        {
+          "text": "rete",
+          "start": 22.206,
+          "end": 22.366
+        },
+        {
+          "text": "randomizzata",
+          "start": 22.426,
+          "end": 23.126
+        },
+        {
+          "text": "combina",
+          "start": 23.246,
+          "end": 23.667
+        },
+        {
+          "text": "uno",
+          "start": 23.727,
+          "end": 23.847
+        },
+        {
+          "text": "strato",
+          "start": 23.907,
+          "end": 24.227
+        },
+        {
+          "text": "nascosto",
+          "start": 24.267,
+          "end": 24.747
+        },
+        {
+          "text": "ampio",
+          "start": 24.887,
+          "end": 25.207
+        },
+        {
+          "text": "con",
+          "start": 25.327,
+          "end": 25.467
+        },
+        {
+          "text": "pesi",
+          "start": 25.507,
+          "end": 25.727
+        },
+        {
+          "text": "casuali",
+          "start": 25.767,
+          "end": 26.147
+        },
+        {
+          "text": "fissi",
+          "start": 26.187,
+          "end": 26.547
+        },
+        {
+          "text": "e",
+          "start": 26.988,
+          "end": 27.028
+        },
+        {
+          "text": "un",
+          "start": 27.088,
+          "end": 27.168
+        }
+      ]
+    },
+    {
+      "start": 27.228,
+      "end": 30.989,
+      "text": "readout lineare addestrato in forma chiusa tramite ridge regression:",
+      "words": [
+        {
+          "text": "readout",
+          "start": 27.228,
+          "end": 27.628
+        },
+        {
+          "text": "lineare",
+          "start": 27.748,
+          "end": 28.188
+        },
+        {
+          "text": "addestrato",
+          "start": 28.228,
+          "end": 28.768
+        },
+        {
+          "text": "in",
+          "start": 28.828,
+          "end": 28.888
+        },
+        {
+          "text": "forma",
+          "start": 28.928,
+          "end": 29.188
+        },
+        {
+          "text": "chiusa",
+          "start": 29.248,
+          "end": 29.568
+        },
+        {
+          "text": "tramite",
+          "start": 29.708,
+          "end": 30.088
+        },
+        {
+          "text": "ridge",
+          "start": 30.148,
+          "end": 30.368
+        },
+        {
+          "text": "regression:",
+          "start": 30.408,
+          "end": 30.989
+        }
+      ]
+    },
+    {
+      "start": 32.049,
+      "end": 37.891,
+      "text": "w out uguale H trasposto H più lambda I alla meno uno per H trasposto",
+      "words": [
+        {
+          "text": "w",
+          "start": 32.049,
+          "end": 32.089
+        },
+        {
+          "text": "out",
+          "start": 32.389,
+          "end": 32.709
+        },
+        {
+          "text": "uguale",
+          "start": 32.929,
+          "end": 33.309
+        },
+        {
+          "text": "H",
+          "start": 33.729,
+          "end": 33.769
+        },
+        {
+          "text": "trasposto",
+          "start": 33.849,
+          "end": 34.35
+        },
+        {
+          "text": "H",
+          "start": 34.67,
+          "end": 34.71
+        },
+        {
+          "text": "più",
+          "start": 35.09,
+          "end": 35.21
+        },
+        {
+          "text": "lambda",
+          "start": 35.33,
+          "end": 35.69
+        },
+        {
+          "text": "I",
+          "start": 35.81,
+          "end": 35.85
+        },
+        {
+          "text": "alla",
+          "start": 36.07,
+          "end": 36.23
+        },
+        {
+          "text": "meno",
+          "start": 36.27,
+          "end": 36.47
+        },
+        {
+          "text": "uno",
+          "start": 36.59,
+          "end": 36.77
+        },
+        {
+          "text": "per",
+          "start": 36.95,
+          "end": 37.09
+        },
+        {
+          "text": "H",
+          "start": 37.27,
+          "end": 37.31
+        },
+        {
+          "text": "trasposto",
+          "start": 37.39,
+          "end": 37.891
+        }
+      ]
+    },
+    {
+      "start": 37.991,
+      "end": 38.031,
+      "text": "d.",
+      "words": [
+        {
+          "text": "d.",
+          "start": 37.991,
+          "end": 38.031
+        }
+      ]
+    },
+    {
+      "start": 38.971,
+      "end": 42.292,
+      "text": "Terzo: il meccanismo funziona grazie al teorema di Cover,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 38.971,
+          "end": 39.391
+        },
+        {
+          "text": "il",
+          "start": 39.831,
+          "end": 39.891
+        },
+        {
+          "text": "meccanismo",
+          "start": 39.911,
+          "end": 40.451
+        },
+        {
+          "text": "funziona",
+          "start": 40.531,
+          "end": 40.931
+        },
+        {
+          "text": "grazie",
+          "start": 41.011,
+          "end": 41.272
+        },
+        {
+          "text": "al",
+          "start": 41.292,
+          "end": 41.372
+        },
+        {
+          "text": "teorema",
+          "start": 41.412,
+          "end": 41.752
+        },
+        {
+          "text": "di",
+          "start": 41.812,
+          "end": 41.892
+        },
+        {
+          "text": "Cover,",
+          "start": 41.932,
+          "end": 42.292
+        }
+      ]
+    },
+    {
+      "start": 42.692,
+      "end": 48.874,
+      "text": "perché un'espansione lineare in basi casuale ma molto ampia rende il problema quasi linearmente separabile",
+      "words": [
+        {
+          "text": "perché",
+          "start": 42.692,
+          "end": 42.912
+        },
+        {
+          "text": "un'espansione",
+          "start": 42.972,
+          "end": 43.652
+        },
+        {
+          "text": "lineare",
+          "start": 43.732,
+          "end": 44.272
+        },
+        {
+          "text": "in",
+          "start": 44.312,
+          "end": 44.372
+        },
+        {
+          "text": "basi",
+          "start": 44.412,
+          "end": 44.672
+        },
+        {
+          "text": "casuale",
+          "start": 44.712,
+          "end": 45.253
+        },
+        {
+          "text": "ma",
+          "start": 45.293,
+          "end": 45.353
+        },
+        {
+          "text": "molto",
+          "start": 45.473,
+          "end": 45.753
+        },
+        {
+          "text": "ampia",
+          "start": 45.873,
+          "end": 46.193
+        },
+        {
+          "text": "rende",
+          "start": 46.533,
+          "end": 46.713
+        },
+        {
+          "text": "il",
+          "start": 46.753,
+          "end": 46.813
+        },
+        {
+          "text": "problema",
+          "start": 46.833,
+          "end": 47.213
+        },
+        {
+          "text": "quasi",
+          "start": 47.273,
+          "end": 47.533
+        },
+        {
+          "text": "linearmente",
+          "start": 47.633,
+          "end": 48.233
+        },
+        {
+          "text": "separabile",
+          "start": 48.293,
+          "end": 48.874
+        }
+      ]
+    },
+    {
+      "start": 48.914,
+      "end": 50.014,
+      "text": "nello spazio nascosto.",
+      "words": [
+        {
+          "text": "nello",
+          "start": 48.914,
+          "end": 49.114
+        },
+        {
+          "text": "spazio",
+          "start": 49.154,
+          "end": 49.454
+        },
+        {
+          "text": "nascosto.",
+          "start": 49.494,
+          "end": 50.014
+        }
+      ]
+    },
+    {
+      "start": 50.954,
+      "end": 54.175,
+      "text": "Verifica la comprensione rispondendo alle quattro domande sulla destra:",
+      "words": [
+        {
+          "text": "Verifica",
+          "start": 50.954,
+          "end": 51.374
+        },
+        {
+          "text": "la",
+          "start": 51.414,
+          "end": 51.474
+        },
+        {
+          "text": "comprensione",
+          "start": 51.494,
+          "end": 52.095
+        },
+        {
+          "text": "rispondendo",
+          "start": 52.155,
+          "end": 52.655
+        },
+        {
+          "text": "alle",
+          "start": 52.675,
+          "end": 52.815
+        },
+        {
+          "text": "quattro",
+          "start": 52.835,
+          "end": 53.135
+        },
+        {
+          "text": "domande",
+          "start": 53.175,
+          "end": 53.535
+        },
+        {
+          "text": "sulla",
+          "start": 53.595,
+          "end": 53.775
+        },
+        {
+          "text": "destra:",
+          "start": 53.815,
+          "end": 54.175
+        }
+      ]
+    },
+    {
+      "start": 54.975,
+      "end": 57.256,
+      "text": "i livelli della casualità nel ML,",
+      "words": [
+        {
+          "text": "i",
+          "start": 54.975,
+          "end": 55.015
+        },
+        {
+          "text": "livelli",
+          "start": 55.055,
+          "end": 55.395
+        },
+        {
+          "text": "della",
+          "start": 55.415,
+          "end": 55.596
+        },
+        {
+          "text": "casualità",
+          "start": 55.636,
+          "end": 56.136
+        },
+        {
+          "text": "nel",
+          "start": 56.336,
+          "end": 56.436
+        },
+        {
+          "text": "ML,",
+          "start": 56.896,
+          "end": 57.256
+        }
+      ]
+    },
+    {
+      "start": 58.076,
+      "end": 62.277,
+      "text": "le tre fasi di costruzione, apprendimento e uso di una rete randomizzata,",
+      "words": [
+        {
+          "text": "le",
+          "start": 58.076,
+          "end": 58.156
+        },
+        {
+          "text": "tre",
+          "start": 58.216,
+          "end": 58.336
+        },
+        {
+          "text": "fasi",
+          "start": 58.416,
+          "end": 58.656
+        },
+        {
+          "text": "di",
+          "start": 58.696,
+          "end": 58.756
+        },
+        {
+          "text": "costruzione,",
+          "start": 58.796,
+          "end": 59.557
+        },
+        {
+          "text": "apprendimento",
+          "start": 59.757,
+          "end": 60.417
+        },
+        {
+          "text": "e",
+          "start": 60.477,
+          "end": 60.517
+        },
+        {
+          "text": "uso",
+          "start": 60.617,
+          "end": 60.857
+        },
+        {
+          "text": "di",
+          "start": 61.017,
+          "end": 61.077
+        },
+        {
+          "text": "una",
+          "start": 61.117,
+          "end": 61.237
+        },
+        {
+          "text": "rete",
+          "start": 61.297,
+          "end": 61.477
+        },
+        {
+          "text": "randomizzata,",
+          "start": 61.537,
+          "end": 62.277
+        }
+      ]
+    },
+    {
+      "start": 62.978,
+      "end": 67.559,
+      "text": "l'enunciato del teorema di Cover con il suo legame a kernel e reti randomizzate,",
+      "words": [
+        {
+          "text": "l'enunciato",
+          "start": 62.978,
+          "end": 63.598
+        },
+        {
+          "text": "del",
+          "start": 63.658,
+          "end": 63.778
+        },
+        {
+          "text": "teorema",
+          "start": 63.818,
+          "end": 64.178
+        },
+        {
+          "text": "di",
+          "start": 64.238,
+          "end": 64.298
+        },
+        {
+          "text": "Cover",
+          "start": 64.358,
+          "end": 64.718
+        },
+        {
+          "text": "con",
+          "start": 64.778,
+          "end": 64.918
+        },
+        {
+          "text": "il",
+          "start": 64.958,
+          "end": 65.038
+        },
+        {
+          "text": "suo",
+          "start": 65.078,
+          "end": 65.198
+        },
+        {
+          "text": "legame",
+          "start": 65.238,
+          "end": 65.558
+        },
+        {
+          "text": "a",
+          "start": 65.618,
+          "end": 65.658
+        },
+        {
+          "text": "kernel",
+          "start": 65.718,
+          "end": 66.239
+        },
+        {
+          "text": "e",
+          "start": 66.439,
+          "end": 66.479
+        },
+        {
+          "text": "reti",
+          "start": 66.559,
+          "end": 66.759
+        },
+        {
+          "text": "randomizzate,",
+          "start": 66.819,
+          "end": 67.559
+        }
+      ]
+    },
+    {
+      "start": 68.179,
+      "end": 71.16,
+      "text": "e il confronto tra feature casuali e feature apprese.",
+      "words": [
+        {
+          "text": "e",
+          "start": 68.179,
+          "end": 68.21900000000001
+        },
+        {
+          "text": "il",
+          "start": 68.259,
+          "end": 68.339
+        },
+        {
+          "text": "confronto",
+          "start": 68.379,
+          "end": 68.919
+        },
+        {
+          "text": "tra",
+          "start": 68.979,
+          "end": 69.079
+        },
+        {
+          "text": "feature",
+          "start": 69.199,
+          "end": 69.539
+        },
+        {
+          "text": "casuali",
+          "start": 69.559,
+          "end": 70.02
+        },
+        {
+          "text": "e",
+          "start": 70.26,
+          "end": 70.30000000000001
+        },
+        {
+          "text": "feature",
+          "start": 70.42,
+          "end": 70.74
+        },
+        {
+          "text": "apprese.",
+          "start": 70.74,
+          "end": 71.16
+        }
+      ]
+    }
+  ]
+}

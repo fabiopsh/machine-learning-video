@@ -1,0 +1,1294 @@
+{
+  "duration": 97.893,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.44,
+      "text": "In questo capitolo entriamo nel cuore del deep learning,",
+      "words": [
+        {
+          "text": "In",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "questo",
+          "start": 0.22,
+          "end": 0.52
+        },
+        {
+          "text": "capitolo",
+          "start": 0.56,
+          "end": 1.06
+        },
+        {
+          "text": "entriamo",
+          "start": 1.18,
+          "end": 1.62
+        },
+        {
+          "text": "nel",
+          "start": 1.7,
+          "end": 1.84
+        },
+        {
+          "text": "cuore",
+          "start": 1.94,
+          "end": 2.26
+        },
+        {
+          "text": "del",
+          "start": 2.34,
+          "end": 2.48
+        },
+        {
+          "text": "deep",
+          "start": 2.58,
+          "end": 2.76
+        },
+        {
+          "text": "learning,",
+          "start": 2.88,
+          "end": 3.44
+        }
+      ]
+    },
+    {
+      "start": 3.72,
+      "end": 9.061,
+      "text": "il paradigma che utilizza reti con molti strati per apprendere rappresentazioni dei dati su più",
+      "words": [
+        {
+          "text": "il",
+          "start": 3.72,
+          "end": 3.8
+        },
+        {
+          "text": "paradigma",
+          "start": 3.86,
+          "end": 4.32
+        },
+        {
+          "text": "che",
+          "start": 4.4,
+          "end": 4.48
+        },
+        {
+          "text": "utilizza",
+          "start": 4.56,
+          "end": 5.001
+        },
+        {
+          "text": "reti",
+          "start": 5.061,
+          "end": 5.321
+        },
+        {
+          "text": "con",
+          "start": 5.401,
+          "end": 5.561
+        },
+        {
+          "text": "molti",
+          "start": 5.641,
+          "end": 6.001
+        },
+        {
+          "text": "strati",
+          "start": 6.081,
+          "end": 6.521
+        },
+        {
+          "text": "per",
+          "start": 6.721,
+          "end": 6.841
+        },
+        {
+          "text": "apprendere",
+          "start": 6.861,
+          "end": 7.301
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 7.361,
+          "end": 8.161
+        },
+        {
+          "text": "dei",
+          "start": 8.221,
+          "end": 8.361
+        },
+        {
+          "text": "dati",
+          "start": 8.401,
+          "end": 8.681
+        },
+        {
+          "text": "su",
+          "start": 8.761,
+          "end": 8.841
+        },
+        {
+          "text": "più",
+          "start": 8.961,
+          "end": 9.061
+        }
+      ]
+    },
+    {
+      "start": 9.141,
+      "end": 10.241,
+      "text": "livelli di astrazione.",
+      "words": [
+        {
+          "text": "livelli",
+          "start": 9.141,
+          "end": 9.461
+        },
+        {
+          "text": "di",
+          "start": 9.501,
+          "end": 9.561
+        },
+        {
+          "text": "astrazione.",
+          "start": 9.601,
+          "end": 10.241
+        }
+      ]
+    },
+    {
+      "start": 11.021,
+      "end": 12.801,
+      "text": "Partiamo dalla definizione fondamentale:",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 11.021,
+          "end": 11.341
+        },
+        {
+          "text": "dalla",
+          "start": 11.381,
+          "end": 11.541
+        },
+        {
+          "text": "definizione",
+          "start": 11.581,
+          "end": 12.061
+        },
+        {
+          "text": "fondamentale:",
+          "start": 12.101,
+          "end": 12.801
+        }
+      ]
+    },
+    {
+      "start": 13.401,
+      "end": 18.802,
+      "text": "il deep learning permette a modelli computazionali composti da più strati di elaborazione di apprendere",
+      "words": [
+        {
+          "text": "il",
+          "start": 13.401,
+          "end": 13.481
+        },
+        {
+          "text": "deep",
+          "start": 13.521,
+          "end": 13.661
+        },
+        {
+          "text": "learning",
+          "start": 13.721,
+          "end": 14.141
+        },
+        {
+          "text": "permette",
+          "start": 14.261,
+          "end": 14.681
+        },
+        {
+          "text": "a",
+          "start": 14.721,
+          "end": 14.761
+        },
+        {
+          "text": "modelli",
+          "start": 14.801,
+          "end": 15.162
+        },
+        {
+          "text": "computazionali",
+          "start": 15.222,
+          "end": 16.082
+        },
+        {
+          "text": "composti",
+          "start": 16.122,
+          "end": 16.582
+        },
+        {
+          "text": "da",
+          "start": 16.622,
+          "end": 16.682
+        },
+        {
+          "text": "più",
+          "start": 16.762,
+          "end": 16.862
+        },
+        {
+          "text": "strati",
+          "start": 16.922,
+          "end": 17.242
+        },
+        {
+          "text": "di",
+          "start": 17.282,
+          "end": 17.322
+        },
+        {
+          "text": "elaborazione",
+          "start": 17.342,
+          "end": 18.062
+        },
+        {
+          "text": "di",
+          "start": 18.262,
+          "end": 18.322
+        },
+        {
+          "text": "apprendere",
+          "start": 18.362,
+          "end": 18.802
+        }
+      ]
+    },
+    {
+      "start": 18.882,
+      "end": 21.782,
+      "text": "rappresentazioni dei dati con più livelli di astrazione.",
+      "words": [
+        {
+          "text": "rappresentazioni",
+          "start": 18.882,
+          "end": 19.682
+        },
+        {
+          "text": "dei",
+          "start": 19.722,
+          "end": 19.862
+        },
+        {
+          "text": "dati",
+          "start": 19.882,
+          "end": 20.162
+        },
+        {
+          "text": "con",
+          "start": 20.242,
+          "end": 20.402
+        },
+        {
+          "text": "più",
+          "start": 20.462,
+          "end": 20.582
+        },
+        {
+          "text": "livelli",
+          "start": 20.642,
+          "end": 20.982
+        },
+        {
+          "text": "di",
+          "start": 21.022,
+          "end": 21.062
+        },
+        {
+          "text": "astrazione.",
+          "start": 21.122,
+          "end": 21.782
+        }
+      ]
+    },
+    {
+      "start": 22.522,
+      "end": 26.143,
+      "text": "Non si tratta di un singolo algoritmo, ma di un quadro generale molto ampio.",
+      "words": [
+        {
+          "text": "Non",
+          "start": 22.522,
+          "end": 22.622
+        },
+        {
+          "text": "si",
+          "start": 22.642,
+          "end": 22.722
+        },
+        {
+          "text": "tratta",
+          "start": 22.762,
+          "end": 23.022
+        },
+        {
+          "text": "di",
+          "start": 23.082,
+          "end": 23.142
+        },
+        {
+          "text": "un",
+          "start": 23.162,
+          "end": 23.242
+        },
+        {
+          "text": "singolo",
+          "start": 23.302,
+          "end": 23.582
+        },
+        {
+          "text": "algoritmo,",
+          "start": 23.622,
+          "end": 24.142
+        },
+        {
+          "text": "ma",
+          "start": 24.422,
+          "end": 24.482
+        },
+        {
+          "text": "di",
+          "start": 24.542,
+          "end": 24.602
+        },
+        {
+          "text": "un",
+          "start": 24.622,
+          "end": 24.682
+        },
+        {
+          "text": "quadro",
+          "start": 24.702,
+          "end": 24.942
+        },
+        {
+          "text": "generale",
+          "start": 25.002,
+          "end": 25.383
+        },
+        {
+          "text": "molto",
+          "start": 25.423,
+          "end": 25.683
+        },
+        {
+          "text": "ampio.",
+          "start": 25.803,
+          "end": 26.143
+        }
+      ]
+    },
+    {
+      "start": 26.643,
+      "end": 31.083,
+      "text": "Comprende le reti profonde come i Multi-Layer Perceptron con molti strati,",
+      "words": [
+        {
+          "text": "Comprende",
+          "start": 26.643,
+          "end": 27.063
+        },
+        {
+          "text": "le",
+          "start": 27.183,
+          "end": 27.263
+        },
+        {
+          "text": "reti",
+          "start": 27.303,
+          "end": 27.483
+        },
+        {
+          "text": "profonde",
+          "start": 27.543,
+          "end": 28.103
+        },
+        {
+          "text": "come",
+          "start": 28.203,
+          "end": 28.423
+        },
+        {
+          "text": "i",
+          "start": 28.483,
+          "end": 28.523
+        },
+        {
+          "text": "Multi-Layer",
+          "start": 28.563,
+          "end": 29.163
+        },
+        {
+          "text": "Perceptron",
+          "start": 29.223,
+          "end": 29.963
+        },
+        {
+          "text": "con",
+          "start": 30.103,
+          "end": 30.243
+        },
+        {
+          "text": "molti",
+          "start": 30.303,
+          "end": 30.563
+        },
+        {
+          "text": "strati,",
+          "start": 30.643,
+          "end": 31.083
+        }
+      ]
+    },
+    {
+      "start": 31.523,
+      "end": 36.064,
+      "text": "le reti convoluzionali, i modelli generativi come le deep belief network,",
+      "words": [
+        {
+          "text": "le",
+          "start": 31.523,
+          "end": 31.603
+        },
+        {
+          "text": "reti",
+          "start": 31.643,
+          "end": 31.883
+        },
+        {
+          "text": "convoluzionali,",
+          "start": 31.963,
+          "end": 32.923
+        },
+        {
+          "text": "i",
+          "start": 33.183,
+          "end": 33.223
+        },
+        {
+          "text": "modelli",
+          "start": 33.263,
+          "end": 33.603
+        },
+        {
+          "text": "generativi",
+          "start": 33.683,
+          "end": 34.383
+        },
+        {
+          "text": "come",
+          "start": 34.563,
+          "end": 34.763
+        },
+        {
+          "text": "le",
+          "start": 34.803,
+          "end": 34.883
+        },
+        {
+          "text": "deep",
+          "start": 34.923,
+          "end": 35.083
+        },
+        {
+          "text": "belief",
+          "start": 35.203,
+          "end": 35.464
+        },
+        {
+          "text": "network,",
+          "start": 35.584,
+          "end": 36.064
+        }
+      ]
+    },
+    {
+      "start": 36.564,
+      "end": 38.564,
+      "text": "e le reti ricorrenti e ricorsive.",
+      "words": [
+        {
+          "text": "e",
+          "start": 36.564,
+          "end": 36.604
+        },
+        {
+          "text": "le",
+          "start": 36.644,
+          "end": 36.704
+        },
+        {
+          "text": "reti",
+          "start": 36.764,
+          "end": 36.944
+        },
+        {
+          "text": "ricorrenti",
+          "start": 37.004,
+          "end": 37.664
+        },
+        {
+          "text": "e",
+          "start": 37.804,
+          "end": 37.844
+        },
+        {
+          "text": "ricorsive.",
+          "start": 37.944,
+          "end": 38.564
+        }
+      ]
+    },
+    {
+      "start": 39.324,
+      "end": 43.104,
+      "text": "Questo paradigma si contrappone ai modelli shallow, cioè superficiali,",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 39.324,
+          "end": 39.544
+        },
+        {
+          "text": "paradigma",
+          "start": 39.584,
+          "end": 40.004
+        },
+        {
+          "text": "si",
+          "start": 40.144,
+          "end": 40.224
+        },
+        {
+          "text": "contrappone",
+          "start": 40.264,
+          "end": 40.744
+        },
+        {
+          "text": "ai",
+          "start": 40.744,
+          "end": 40.804
+        },
+        {
+          "text": "modelli",
+          "start": 40.824,
+          "end": 41.204
+        },
+        {
+          "text": "shallow,",
+          "start": 41.444,
+          "end": 41.864
+        },
+        {
+          "text": "cioè",
+          "start": 42.124,
+          "end": 42.284
+        },
+        {
+          "text": "superficiali,",
+          "start": 42.424,
+          "end": 43.104
+        }
+      ]
+    },
+    {
+      "start": 43.484,
+      "end": 45.384,
+      "text": "che hanno ad esempio meno di tre strati.",
+      "words": [
+        {
+          "text": "che",
+          "start": 43.484,
+          "end": 43.564
+        },
+        {
+          "text": "hanno",
+          "start": 43.564,
+          "end": 43.704
+        },
+        {
+          "text": "ad",
+          "start": 43.724,
+          "end": 43.784
+        },
+        {
+          "text": "esempio",
+          "start": 43.824,
+          "end": 44.204
+        },
+        {
+          "text": "meno",
+          "start": 44.424,
+          "end": 44.644
+        },
+        {
+          "text": "di",
+          "start": 44.684,
+          "end": 44.744
+        },
+        {
+          "text": "tre",
+          "start": 44.804,
+          "end": 44.904
+        },
+        {
+          "text": "strati.",
+          "start": 45.004,
+          "end": 45.384
+        }
+      ]
+    },
+    {
+      "start": 46.184,
+      "end": 52.184,
+      "text": "Nonostante la varietà delle architetture, tutti gli approcci di deep learning condividono tre aspetti essenziali.",
+      "words": [
+        {
+          "text": "Nonostante",
+          "start": 46.184,
+          "end": 46.664
+        },
+        {
+          "text": "la",
+          "start": 46.704,
+          "end": 46.764
+        },
+        {
+          "text": "varietà",
+          "start": 46.804,
+          "end": 47.144
+        },
+        {
+          "text": "delle",
+          "start": 47.224,
+          "end": 47.404
+        },
+        {
+          "text": "architetture,",
+          "start": 47.444,
+          "end": 48.204
+        },
+        {
+          "text": "tutti",
+          "start": 48.624,
+          "end": 48.884
+        },
+        {
+          "text": "gli",
+          "start": 48.924,
+          "end": 49.024
+        },
+        {
+          "text": "approcci",
+          "start": 49.044,
+          "end": 49.364
+        },
+        {
+          "text": "di",
+          "start": 49.404,
+          "end": 49.464
+        },
+        {
+          "text": "deep",
+          "start": 49.504,
+          "end": 49.644
+        },
+        {
+          "text": "learning",
+          "start": 49.704,
+          "end": 50.104
+        },
+        {
+          "text": "condividono",
+          "start": 50.224,
+          "end": 50.784
+        },
+        {
+          "text": "tre",
+          "start": 50.924,
+          "end": 51.064
+        },
+        {
+          "text": "aspetti",
+          "start": 51.184,
+          "end": 51.544
+        },
+        {
+          "text": "essenziali.",
+          "start": 51.584,
+          "end": 52.184
+        }
+      ]
+    },
+    {
+      "start": 52.684,
+      "end": 57.005,
+      "text": "Primo: impiegano più strati di unità di elaborazione non lineari.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 52.684,
+          "end": 52.964
+        },
+        {
+          "text": "impiegano",
+          "start": 53.564,
+          "end": 54.024
+        },
+        {
+          "text": "più",
+          "start": 54.164,
+          "end": 54.304
+        },
+        {
+          "text": "strati",
+          "start": 54.424,
+          "end": 54.804
+        },
+        {
+          "text": "di",
+          "start": 54.844,
+          "end": 54.884
+        },
+        {
+          "text": "unità",
+          "start": 54.944,
+          "end": 55.184
+        },
+        {
+          "text": "di",
+          "start": 55.264,
+          "end": 55.304
+        },
+        {
+          "text": "elaborazione",
+          "start": 55.344,
+          "end": 55.965
+        },
+        {
+          "text": "non",
+          "start": 56.205,
+          "end": 56.385
+        },
+        {
+          "text": "lineari.",
+          "start": 56.465,
+          "end": 57.005
+        }
+      ]
+    },
+    {
+      "start": 57.605,
+      "end": 65.565,
+      "text": "Secondo: realizzano un apprendimento, supervisionato oppure non supervisionato, di rappresentazioni delle feature in ogni strato,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 57.605,
+          "end": 58.125
+        },
+        {
+          "text": "realizzano",
+          "start": 58.605,
+          "end": 59.065
+        },
+        {
+          "text": "un",
+          "start": 59.085,
+          "end": 59.145
+        },
+        {
+          "text": "apprendimento,",
+          "start": 59.185,
+          "end": 59.845
+        },
+        {
+          "text": "supervisionato",
+          "start": 60.105,
+          "end": 60.885
+        },
+        {
+          "text": "oppure",
+          "start": 60.905,
+          "end": 61.185
+        },
+        {
+          "text": "non",
+          "start": 61.265,
+          "end": 61.405
+        },
+        {
+          "text": "supervisionato,",
+          "start": 61.465,
+          "end": 62.225
+        },
+        {
+          "text": "di",
+          "start": 62.665,
+          "end": 62.745
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 62.805,
+          "end": 63.685
+        },
+        {
+          "text": "delle",
+          "start": 63.765,
+          "end": 64.005
+        },
+        {
+          "text": "feature",
+          "start": 64.085,
+          "end": 64.485
+        },
+        {
+          "text": "in",
+          "start": 64.645,
+          "end": 64.745
+        },
+        {
+          "text": "ogni",
+          "start": 64.825,
+          "end": 65.045
+        },
+        {
+          "text": "strato,",
+          "start": 65.125,
+          "end": 65.565
+        }
+      ]
+    },
+    {
+      "start": 65.965,
+      "end": 70.646,
+      "text": "organizzando gli strati in una gerarchia da feature di basso livello a feature di alto",
+      "words": [
+        {
+          "text": "organizzando",
+          "start": 65.965,
+          "end": 66.566
+        },
+        {
+          "text": "gli",
+          "start": 66.566,
+          "end": 66.706
+        },
+        {
+          "text": "strati",
+          "start": 66.746,
+          "end": 67.106
+        },
+        {
+          "text": "in",
+          "start": 67.286,
+          "end": 67.366
+        },
+        {
+          "text": "una",
+          "start": 67.426,
+          "end": 67.546
+        },
+        {
+          "text": "gerarchia",
+          "start": 67.626,
+          "end": 68.206
+        },
+        {
+          "text": "da",
+          "start": 68.306,
+          "end": 68.386
+        },
+        {
+          "text": "feature",
+          "start": 68.546,
+          "end": 68.886
+        },
+        {
+          "text": "di",
+          "start": 68.926,
+          "end": 68.986
+        },
+        {
+          "text": "basso",
+          "start": 69.046,
+          "end": 69.286
+        },
+        {
+          "text": "livello",
+          "start": 69.326,
+          "end": 69.706
+        },
+        {
+          "text": "a",
+          "start": 69.866,
+          "end": 69.906
+        },
+        {
+          "text": "feature",
+          "start": 69.986,
+          "end": 70.306
+        },
+        {
+          "text": "di",
+          "start": 70.326,
+          "end": 70.386
+        },
+        {
+          "text": "alto",
+          "start": 70.446,
+          "end": 70.646
+        }
+      ]
+    },
+    {
+      "start": 70.686,
+      "end": 71.066,
+      "text": "livello.",
+      "words": [
+        {
+          "text": "livello.",
+          "start": 70.686,
+          "end": 71.066
+        }
+      ]
+    },
+    {
+      "start": 71.806,
+      "end": 77.427,
+      "text": "Terzo: costruiscono quindi una rappresentazione gerarchica, sparsa e distribuita dei dati.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 71.806,
+          "end": 72.146
+        },
+        {
+          "text": "costruiscono",
+          "start": 72.726,
+          "end": 73.266
+        },
+        {
+          "text": "quindi",
+          "start": 73.306,
+          "end": 73.506
+        },
+        {
+          "text": "una",
+          "start": 73.546,
+          "end": 73.666
+        },
+        {
+          "text": "rappresentazione",
+          "start": 73.726,
+          "end": 74.446
+        },
+        {
+          "text": "gerarchica,",
+          "start": 74.606,
+          "end": 75.326
+        },
+        {
+          "text": "sparsa",
+          "start": 75.526,
+          "end": 76.026
+        },
+        {
+          "text": "e",
+          "start": 76.186,
+          "end": 76.22600000000001
+        },
+        {
+          "text": "distribuita",
+          "start": 76.307,
+          "end": 76.927
+        },
+        {
+          "text": "dei",
+          "start": 76.967,
+          "end": 77.107
+        },
+        {
+          "text": "dati.",
+          "start": 77.127,
+          "end": 77.427
+        }
+      ]
+    },
+    {
+      "start": 78.467,
+      "end": 83.927,
+      "text": "Infine, perché il deep learning ha avuto un successo pratico così esplosivo negli ultimi anni?",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 78.467,
+          "end": 78.867
+        },
+        {
+          "text": "perché",
+          "start": 79.387,
+          "end": 79.687
+        },
+        {
+          "text": "il",
+          "start": 79.767,
+          "end": 79.827
+        },
+        {
+          "text": "deep",
+          "start": 79.887,
+          "end": 80.047
+        },
+        {
+          "text": "learning",
+          "start": 80.147,
+          "end": 80.587
+        },
+        {
+          "text": "ha",
+          "start": 80.667,
+          "end": 80.727
+        },
+        {
+          "text": "avuto",
+          "start": 80.787,
+          "end": 81.007
+        },
+        {
+          "text": "un",
+          "start": 81.067,
+          "end": 81.127
+        },
+        {
+          "text": "successo",
+          "start": 81.207,
+          "end": 81.647
+        },
+        {
+          "text": "pratico",
+          "start": 81.687,
+          "end": 82.087
+        },
+        {
+          "text": "così",
+          "start": 82.227,
+          "end": 82.527
+        },
+        {
+          "text": "esplosivo",
+          "start": 82.607,
+          "end": 83.067
+        },
+        {
+          "text": "negli",
+          "start": 83.107,
+          "end": 83.287
+        },
+        {
+          "text": "ultimi",
+          "start": 83.307,
+          "end": 83.587
+        },
+        {
+          "text": "anni?",
+          "start": 83.687,
+          "end": 83.927
+        }
+      ]
+    },
+    {
+      "start": 84.647,
+      "end": 89.508,
+      "text": "Per la convergenza di tre fattori concreti: la disponibilità di grandi dataset,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 84.647,
+          "end": 84.747
+        },
+        {
+          "text": "la",
+          "start": 84.807,
+          "end": 84.867
+        },
+        {
+          "text": "convergenza",
+          "start": 84.907,
+          "end": 85.587
+        },
+        {
+          "text": "di",
+          "start": 85.747,
+          "end": 85.827
+        },
+        {
+          "text": "tre",
+          "start": 85.907,
+          "end": 86.027
+        },
+        {
+          "text": "fattori",
+          "start": 86.207,
+          "end": 86.608
+        },
+        {
+          "text": "concreti:",
+          "start": 86.668,
+          "end": 87.228
+        },
+        {
+          "text": "la",
+          "start": 87.748,
+          "end": 87.828
+        },
+        {
+          "text": "disponibilità",
+          "start": 87.868,
+          "end": 88.488
+        },
+        {
+          "text": "di",
+          "start": 88.568,
+          "end": 88.628
+        },
+        {
+          "text": "grandi",
+          "start": 88.668,
+          "end": 88.948
+        },
+        {
+          "text": "dataset,",
+          "start": 88.988,
+          "end": 89.508
+        }
+      ]
+    },
+    {
+      "start": 90.108,
+      "end": 95.548,
+      "text": "la potenza di calcolo offerta dalle GPU, e nuove idee teoriche e algoritmiche che rendono",
+      "words": [
+        {
+          "text": "la",
+          "start": 90.108,
+          "end": 90.168
+        },
+        {
+          "text": "potenza",
+          "start": 90.208,
+          "end": 90.588
+        },
+        {
+          "text": "di",
+          "start": 90.628,
+          "end": 90.688
+        },
+        {
+          "text": "calcolo",
+          "start": 90.728,
+          "end": 91.108
+        },
+        {
+          "text": "offerta",
+          "start": 91.148,
+          "end": 91.488
+        },
+        {
+          "text": "dalle",
+          "start": 91.528,
+          "end": 91.728
+        },
+        {
+          "text": "GPU,",
+          "start": 91.788,
+          "end": 92.088
+        },
+        {
+          "text": "e",
+          "start": 92.608,
+          "end": 92.64800000000001
+        },
+        {
+          "text": "nuove",
+          "start": 92.768,
+          "end": 93.108
+        },
+        {
+          "text": "idee",
+          "start": 93.168,
+          "end": 93.408
+        },
+        {
+          "text": "teoriche",
+          "start": 93.448,
+          "end": 94.008
+        },
+        {
+          "text": "e",
+          "start": 94.128,
+          "end": 94.168
+        },
+        {
+          "text": "algoritmiche",
+          "start": 94.228,
+          "end": 94.968
+        },
+        {
+          "text": "che",
+          "start": 95.128,
+          "end": 95.208
+        },
+        {
+          "text": "rendono",
+          "start": 95.248,
+          "end": 95.548
+        }
+      ]
+    },
+    {
+      "start": 95.588,
+      "end": 97.729,
+      "text": "davvero addestrabili le reti profonde.",
+      "words": [
+        {
+          "text": "davvero",
+          "start": 95.588,
+          "end": 95.928
+        },
+        {
+          "text": "addestrabili",
+          "start": 96.048,
+          "end": 96.789
+        },
+        {
+          "text": "le",
+          "start": 96.929,
+          "end": 96.989
+        },
+        {
+          "text": "reti",
+          "start": 97.029,
+          "end": 97.209
+        },
+        {
+          "text": "profonde.",
+          "start": 97.269,
+          "end": 97.729
+        }
+      ]
+    }
+  ]
+}

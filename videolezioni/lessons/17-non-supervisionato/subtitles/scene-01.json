@@ -1,0 +1,1085 @@
+{
+  "duration": 78.722,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.281,
+      "text": "Nell'apprendimento non supervisionato il training set contiene solo dati non etichettati x,",
+      "words": [
+        {
+          "text": "Nell'apprendimento",
+          "start": 0.08,
+          "end": 0.88
+        },
+        {
+          "text": "non",
+          "start": 0.98,
+          "end": 1.1
+        },
+        {
+          "text": "supervisionato",
+          "start": 1.16,
+          "end": 2.02
+        },
+        {
+          "text": "il",
+          "start": 2.42,
+          "end": 2.52
+        },
+        {
+          "text": "training",
+          "start": 2.58,
+          "end": 2.9
+        },
+        {
+          "text": "set",
+          "start": 2.96,
+          "end": 3.18
+        },
+        {
+          "text": "contiene",
+          "start": 3.3,
+          "end": 3.68
+        },
+        {
+          "text": "solo",
+          "start": 3.76,
+          "end": 3.94
+        },
+        {
+          "text": "dati",
+          "start": 4.0,
+          "end": 4.22
+        },
+        {
+          "text": "non",
+          "start": 4.34,
+          "end": 4.481
+        },
+        {
+          "text": "etichettati",
+          "start": 4.521,
+          "end": 5.041
+        },
+        {
+          "text": "x,",
+          "start": 5.241,
+          "end": 5.281
+        }
+      ]
+    },
+    {
+      "start": 5.901,
+      "end": 7.241,
+      "text": "e i task principali sono tre.",
+      "words": [
+        {
+          "text": "e",
+          "start": 5.901,
+          "end": 5.941
+        },
+        {
+          "text": "i",
+          "start": 5.981,
+          "end": 6.021
+        },
+        {
+          "text": "task",
+          "start": 6.061,
+          "end": 6.281
+        },
+        {
+          "text": "principali",
+          "start": 6.361,
+          "end": 6.861
+        },
+        {
+          "text": "sono",
+          "start": 6.901,
+          "end": 7.061
+        },
+        {
+          "text": "tre.",
+          "start": 7.121,
+          "end": 7.241
+        }
+      ]
+    },
+    {
+      "start": 8.041,
+      "end": 13.181,
+      "text": "Il primo è il clustering, su cui ci concentreremo attraverso K-means e Self-Organizing Map.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 8.041,
+          "end": 8.121
+        },
+        {
+          "text": "primo",
+          "start": 8.161,
+          "end": 8.381
+        },
+        {
+          "text": "è",
+          "start": 8.541,
+          "end": 8.581
+        },
+        {
+          "text": "il",
+          "start": 8.641,
+          "end": 8.701
+        },
+        {
+          "text": "clustering,",
+          "start": 8.741,
+          "end": 9.261
+        },
+        {
+          "text": "su",
+          "start": 9.541,
+          "end": 9.621
+        },
+        {
+          "text": "cui",
+          "start": 9.681,
+          "end": 9.821
+        },
+        {
+          "text": "ci",
+          "start": 9.881,
+          "end": 9.961
+        },
+        {
+          "text": "concentreremo",
+          "start": 10.021,
+          "end": 10.641
+        },
+        {
+          "text": "attraverso",
+          "start": 10.681,
+          "end": 11.161
+        },
+        {
+          "text": "K-means",
+          "start": 11.261,
+          "end": 11.821
+        },
+        {
+          "text": "e",
+          "start": 12.001,
+          "end": 12.041
+        },
+        {
+          "text": "Self-Organizing",
+          "start": 12.141,
+          "end": 12.941
+        },
+        {
+          "text": "Map.",
+          "start": 12.961,
+          "end": 13.181
+        }
+      ]
+    },
+    {
+      "start": 14.202,
+      "end": 18.822,
+      "text": "Il secondo è la riduzione di dimensionalità, per visualizzazione e pre-elaborazione:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 14.202,
+          "end": 14.282
+        },
+        {
+          "text": "secondo",
+          "start": 14.322,
+          "end": 14.702
+        },
+        {
+          "text": "è",
+          "start": 14.842,
+          "end": 14.882
+        },
+        {
+          "text": "la",
+          "start": 14.922,
+          "end": 14.982
+        },
+        {
+          "text": "riduzione",
+          "start": 15.062,
+          "end": 15.542
+        },
+        {
+          "text": "di",
+          "start": 15.582,
+          "end": 15.642
+        },
+        {
+          "text": "dimensionalità,",
+          "start": 15.682,
+          "end": 16.362
+        },
+        {
+          "text": "per",
+          "start": 16.802,
+          "end": 16.902
+        },
+        {
+          "text": "visualizzazione",
+          "start": 16.942,
+          "end": 17.702
+        },
+        {
+          "text": "e",
+          "start": 17.882,
+          "end": 17.922
+        },
+        {
+          "text": "pre-elaborazione:",
+          "start": 18.002,
+          "end": 18.822
+        }
+      ]
+    },
+    {
+      "start": 19.102,
+      "end": 23.242,
+      "text": "PCA, Multi-Dimensional Scaling e Independent Component Analysis.",
+      "words": [
+        {
+          "text": "PCA,",
+          "start": 19.102,
+          "end": 19.502
+        },
+        {
+          "text": "Multi-Dimensional",
+          "start": 19.982,
+          "end": 20.722
+        },
+        {
+          "text": "Scaling",
+          "start": 20.762,
+          "end": 21.202
+        },
+        {
+          "text": "e",
+          "start": 21.402,
+          "end": 21.442
+        },
+        {
+          "text": "Independent",
+          "start": 21.482,
+          "end": 22.002
+        },
+        {
+          "text": "Component",
+          "start": 22.102,
+          "end": 22.622
+        },
+        {
+          "text": "Analysis.",
+          "start": 22.682,
+          "end": 23.242
+        }
+      ]
+    },
+    {
+      "start": 24.123,
+      "end": 27.403,
+      "text": "Il terzo è la modellazione della densità, qui non trattata.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 24.123,
+          "end": 24.203
+        },
+        {
+          "text": "terzo",
+          "start": 24.263,
+          "end": 24.603
+        },
+        {
+          "text": "è",
+          "start": 24.743,
+          "end": 24.783
+        },
+        {
+          "text": "la",
+          "start": 24.843,
+          "end": 24.903
+        },
+        {
+          "text": "modellazione",
+          "start": 25.003,
+          "end": 25.623
+        },
+        {
+          "text": "della",
+          "start": 25.663,
+          "end": 25.823
+        },
+        {
+          "text": "densità,",
+          "start": 25.863,
+          "end": 26.263
+        },
+        {
+          "text": "qui",
+          "start": 26.643,
+          "end": 26.763
+        },
+        {
+          "text": "non",
+          "start": 26.823,
+          "end": 26.923
+        },
+        {
+          "text": "trattata.",
+          "start": 26.963,
+          "end": 27.403
+        }
+      ]
+    },
+    {
+      "start": 28.243,
+      "end": 33.784,
+      "text": "In pratica questo paradigma è cruciale perché i dati non etichettati costano molto meno di",
+      "words": [
+        {
+          "text": "In",
+          "start": 28.243,
+          "end": 28.303
+        },
+        {
+          "text": "pratica",
+          "start": 28.343,
+          "end": 28.723
+        },
+        {
+          "text": "questo",
+          "start": 28.903,
+          "end": 29.163
+        },
+        {
+          "text": "paradigma",
+          "start": 29.203,
+          "end": 29.683
+        },
+        {
+          "text": "è",
+          "start": 29.743,
+          "end": 29.783
+        },
+        {
+          "text": "cruciale",
+          "start": 29.863,
+          "end": 30.423
+        },
+        {
+          "text": "perché",
+          "start": 30.643,
+          "end": 30.883
+        },
+        {
+          "text": "i",
+          "start": 31.043,
+          "end": 31.083
+        },
+        {
+          "text": "dati",
+          "start": 31.143,
+          "end": 31.403
+        },
+        {
+          "text": "non",
+          "start": 31.523,
+          "end": 31.683
+        },
+        {
+          "text": "etichettati",
+          "start": 31.743,
+          "end": 32.383
+        },
+        {
+          "text": "costano",
+          "start": 32.683,
+          "end": 33.064
+        },
+        {
+          "text": "molto",
+          "start": 33.164,
+          "end": 33.464
+        },
+        {
+          "text": "meno",
+          "start": 33.524,
+          "end": 33.684
+        },
+        {
+          "text": "di",
+          "start": 33.724,
+          "end": 33.784
+        }
+      ]
+    },
+    {
+      "start": 33.804,
+      "end": 34.544,
+      "text": "quelli etichettati.",
+      "words": [
+        {
+          "text": "quelli",
+          "start": 33.804,
+          "end": 33.984
+        },
+        {
+          "text": "etichettati.",
+          "start": 34.024,
+          "end": 34.544
+        }
+      ]
+    },
+    {
+      "start": 35.804,
+      "end": 40.804,
+      "text": "Il clustering partiziona i dati in cluster, sottoinsiemi di esempi più simili tra loro che",
+      "words": [
+        {
+          "text": "Il",
+          "start": 35.804,
+          "end": 35.884
+        },
+        {
+          "text": "clustering",
+          "start": 35.964,
+          "end": 36.464
+        },
+        {
+          "text": "partiziona",
+          "start": 36.504,
+          "end": 37.004
+        },
+        {
+          "text": "i",
+          "start": 37.024,
+          "end": 37.064
+        },
+        {
+          "text": "dati",
+          "start": 37.084,
+          "end": 37.284
+        },
+        {
+          "text": "in",
+          "start": 37.324,
+          "end": 37.404
+        },
+        {
+          "text": "cluster,",
+          "start": 37.444,
+          "end": 37.884
+        },
+        {
+          "text": "sottoinsiemi",
+          "start": 38.204,
+          "end": 38.904
+        },
+        {
+          "text": "di",
+          "start": 38.964,
+          "end": 39.004
+        },
+        {
+          "text": "esempi",
+          "start": 39.064,
+          "end": 39.384
+        },
+        {
+          "text": "più",
+          "start": 39.484,
+          "end": 39.584
+        },
+        {
+          "text": "simili",
+          "start": 39.724,
+          "end": 40.044
+        },
+        {
+          "text": "tra",
+          "start": 40.084,
+          "end": 40.184
+        },
+        {
+          "text": "loro",
+          "start": 40.304,
+          "end": 40.524
+        },
+        {
+          "text": "che",
+          "start": 40.704,
+          "end": 40.804
+        }
+      ]
+    },
+    {
+      "start": 40.864,
+      "end": 42.165,
+      "text": "agli esempi di un altro cluster.",
+      "words": [
+        {
+          "text": "agli",
+          "start": 40.864,
+          "end": 41.024
+        },
+        {
+          "text": "esempi",
+          "start": 41.044,
+          "end": 41.344
+        },
+        {
+          "text": "di",
+          "start": 41.384,
+          "end": 41.444
+        },
+        {
+          "text": "un",
+          "start": 41.464,
+          "end": 41.524
+        },
+        {
+          "text": "altro",
+          "start": 41.564,
+          "end": 41.744
+        },
+        {
+          "text": "cluster.",
+          "start": 41.784,
+          "end": 42.165
+        }
+      ]
+    },
+    {
+      "start": 42.785,
+      "end": 46.685,
+      "text": "Ogni cluster è rappresentato da un centroide, detto anche prototipo,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 42.785,
+          "end": 42.945
+        },
+        {
+          "text": "cluster",
+          "start": 42.965,
+          "end": 43.325
+        },
+        {
+          "text": "è",
+          "start": 43.445,
+          "end": 43.485
+        },
+        {
+          "text": "rappresentato",
+          "start": 43.545,
+          "end": 44.145
+        },
+        {
+          "text": "da",
+          "start": 44.185,
+          "end": 44.245
+        },
+        {
+          "text": "un",
+          "start": 44.305,
+          "end": 44.385
+        },
+        {
+          "text": "centroide,",
+          "start": 44.445,
+          "end": 45.085
+        },
+        {
+          "text": "detto",
+          "start": 45.325,
+          "end": 45.525
+        },
+        {
+          "text": "anche",
+          "start": 45.585,
+          "end": 45.805
+        },
+        {
+          "text": "prototipo,",
+          "start": 45.965,
+          "end": 46.685
+        }
+      ]
+    },
+    {
+      "start": 46.825,
+      "end": 51.345,
+      "text": "vettore di riferimento o codevector; l'insieme dei centroidi è il codebook.",
+      "words": [
+        {
+          "text": "vettore",
+          "start": 46.825,
+          "end": 47.185
+        },
+        {
+          "text": "di",
+          "start": 47.245,
+          "end": 47.305
+        },
+        {
+          "text": "riferimento",
+          "start": 47.345,
+          "end": 48.005
+        },
+        {
+          "text": "o",
+          "start": 48.185,
+          "end": 48.225
+        },
+        {
+          "text": "codevector;",
+          "start": 48.345,
+          "end": 49.025
+        },
+        {
+          "text": "l'insieme",
+          "start": 49.565,
+          "end": 49.885
+        },
+        {
+          "text": "dei",
+          "start": 49.945,
+          "end": 50.025
+        },
+        {
+          "text": "centroidi",
+          "start": 50.045,
+          "end": 50.525
+        },
+        {
+          "text": "è",
+          "start": 50.665,
+          "end": 50.705
+        },
+        {
+          "text": "il",
+          "start": 50.765,
+          "end": 50.845
+        },
+        {
+          "text": "codebook.",
+          "start": 50.905,
+          "end": 51.345
+        }
+      ]
+    },
+    {
+      "start": 52.326,
+      "end": 54.026,
+      "text": "Attenzione: la metrica domina.",
+      "words": [
+        {
+          "text": "Attenzione:",
+          "start": 52.326,
+          "end": 52.826
+        },
+        {
+          "text": "la",
+          "start": 53.186,
+          "end": 53.246
+        },
+        {
+          "text": "metrica",
+          "start": 53.286,
+          "end": 53.646
+        },
+        {
+          "text": "domina.",
+          "start": 53.686,
+          "end": 54.026
+        }
+      ]
+    },
+    {
+      "start": 54.486,
+      "end": 59.306,
+      "text": "Come nel K-NN, è la distanza assunta a stabilire quali esempi siano simili,",
+      "words": [
+        {
+          "text": "Come",
+          "start": 54.486,
+          "end": 54.666
+        },
+        {
+          "text": "nel",
+          "start": 54.706,
+          "end": 54.826
+        },
+        {
+          "text": "K-NN,",
+          "start": 54.866,
+          "end": 55.606
+        },
+        {
+          "text": "è",
+          "start": 56.086,
+          "end": 56.126
+        },
+        {
+          "text": "la",
+          "start": 56.166,
+          "end": 56.226
+        },
+        {
+          "text": "distanza",
+          "start": 56.266,
+          "end": 56.806
+        },
+        {
+          "text": "assunta",
+          "start": 56.866,
+          "end": 57.286
+        },
+        {
+          "text": "a",
+          "start": 57.326,
+          "end": 57.366
+        },
+        {
+          "text": "stabilire",
+          "start": 57.386,
+          "end": 57.846
+        },
+        {
+          "text": "quali",
+          "start": 57.986,
+          "end": 58.266
+        },
+        {
+          "text": "esempi",
+          "start": 58.306,
+          "end": 58.626
+        },
+        {
+          "text": "siano",
+          "start": 58.686,
+          "end": 58.886
+        },
+        {
+          "text": "simili,",
+          "start": 58.946,
+          "end": 59.306
+        }
+      ]
+    },
+    {
+      "start": 59.626,
+      "end": 61.667,
+      "text": "e i raggruppamenti dipendono da quella scelta.",
+      "words": [
+        {
+          "text": "e",
+          "start": 59.626,
+          "end": 59.666
+        },
+        {
+          "text": "i",
+          "start": 59.726,
+          "end": 59.766
+        },
+        {
+          "text": "raggruppamenti",
+          "start": 59.806,
+          "end": 60.426
+        },
+        {
+          "text": "dipendono",
+          "start": 60.486,
+          "end": 60.926
+        },
+        {
+          "text": "da",
+          "start": 60.966,
+          "end": 61.026
+        },
+        {
+          "text": "quella",
+          "start": 61.067,
+          "end": 61.287
+        },
+        {
+          "text": "scelta.",
+          "start": 61.287,
+          "end": 61.667
+        }
+      ]
+    },
+    {
+      "start": 62.347,
+      "end": 65.267,
+      "text": "La distanza euclidea è popolare ma è solo una scelta,",
+      "words": [
+        {
+          "text": "La",
+          "start": 62.347,
+          "end": 62.407
+        },
+        {
+          "text": "distanza",
+          "start": 62.447,
+          "end": 62.807
+        },
+        {
+          "text": "euclidea",
+          "start": 62.847,
+          "end": 63.307
+        },
+        {
+          "text": "è",
+          "start": 63.487,
+          "end": 63.527
+        },
+        {
+          "text": "popolare",
+          "start": 63.587,
+          "end": 64.047
+        },
+        {
+          "text": "ma",
+          "start": 64.227,
+          "end": 64.287
+        },
+        {
+          "text": "è",
+          "start": 64.347,
+          "end": 64.387
+        },
+        {
+          "text": "solo",
+          "start": 64.467,
+          "end": 64.667
+        },
+        {
+          "text": "una",
+          "start": 64.687,
+          "end": 64.807
+        },
+        {
+          "text": "scelta,",
+          "start": 64.847,
+          "end": 65.267
+        }
+      ]
+    },
+    {
+      "start": 65.467,
+      "end": 66.667,
+      "text": "con implicazioni profonde.",
+      "words": [
+        {
+          "text": "con",
+          "start": 65.467,
+          "end": 65.607
+        },
+        {
+          "text": "implicazioni",
+          "start": 65.647,
+          "end": 66.187
+        },
+        {
+          "text": "profonde.",
+          "start": 66.227,
+          "end": 66.667
+        }
+      ]
+    },
+    {
+      "start": 67.227,
+      "end": 72.188,
+      "text": "Per pesare meno gli outlier possiamo usare uno meno una gaussiana centrata sul prototipo:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 67.227,
+          "end": 67.327
+        },
+        {
+          "text": "pesare",
+          "start": 67.367,
+          "end": 67.687
+        },
+        {
+          "text": "meno",
+          "start": 67.767,
+          "end": 67.967
+        },
+        {
+          "text": "gli",
+          "start": 67.987,
+          "end": 68.087
+        },
+        {
+          "text": "outlier",
+          "start": 68.107,
+          "end": 68.667
+        },
+        {
+          "text": "possiamo",
+          "start": 68.827,
+          "end": 69.107
+        },
+        {
+          "text": "usare",
+          "start": 69.147,
+          "end": 69.427
+        },
+        {
+          "text": "uno",
+          "start": 69.587,
+          "end": 69.807
+        },
+        {
+          "text": "meno",
+          "start": 69.887,
+          "end": 70.087
+        },
+        {
+          "text": "una",
+          "start": 70.107,
+          "end": 70.227
+        },
+        {
+          "text": "gaussiana",
+          "start": 70.287,
+          "end": 70.868
+        },
+        {
+          "text": "centrata",
+          "start": 70.988,
+          "end": 71.428
+        },
+        {
+          "text": "sul",
+          "start": 71.468,
+          "end": 71.608
+        },
+        {
+          "text": "prototipo:",
+          "start": 71.648,
+          "end": 72.188
+        }
+      ]
+    },
+    {
+      "start": 72.648,
+      "end": 76.668,
+      "text": "non supera mai uno, quindi un punto lontanissimo non pesa più di un punto appena",
+      "words": [
+        {
+          "text": "non",
+          "start": 72.648,
+          "end": 72.748
+        },
+        {
+          "text": "supera",
+          "start": 72.788,
+          "end": 73.008
+        },
+        {
+          "text": "mai",
+          "start": 73.068,
+          "end": 73.208
+        },
+        {
+          "text": "uno,",
+          "start": 73.288,
+          "end": 73.428
+        },
+        {
+          "text": "quindi",
+          "start": 73.688,
+          "end": 73.908
+        },
+        {
+          "text": "un",
+          "start": 74.008,
+          "end": 74.088
+        },
+        {
+          "text": "punto",
+          "start": 74.128,
+          "end": 74.388
+        },
+        {
+          "text": "lontanissimo",
+          "start": 74.428,
+          "end": 75.068
+        },
+        {
+          "text": "non",
+          "start": 75.188,
+          "end": 75.308
+        },
+        {
+          "text": "pesa",
+          "start": 75.368,
+          "end": 75.568
+        },
+        {
+          "text": "più",
+          "start": 75.628,
+          "end": 75.748
+        },
+        {
+          "text": "di",
+          "start": 75.908,
+          "end": 75.968
+        },
+        {
+          "text": "un",
+          "start": 76.008,
+          "end": 76.088
+        },
+        {
+          "text": "punto",
+          "start": 76.148,
+          "end": 76.408
+        },
+        {
+          "text": "appena",
+          "start": 76.448,
+          "end": 76.668
+        }
+      ]
+    },
+    {
+      "start": 76.708,
+      "end": 77.468,
+      "text": "fuori dal cluster.",
+      "words": [
+        {
+          "text": "fuori",
+          "start": 76.708,
+          "end": 76.888
+        },
+        {
+          "text": "dal",
+          "start": 76.928,
+          "end": 77.028
+        },
+        {
+          "text": "cluster.",
+          "start": 77.068,
+          "end": 77.468
+        }
+      ]
+    }
+  ]
+}

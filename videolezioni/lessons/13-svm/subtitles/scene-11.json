@@ -1,0 +1,1151 @@
+{
+  "duration": 77.705,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.301,
+      "text": "Come formuliamo il problema di ottimizzazione quando ammettiamo le variabili slack?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.08,
+          "end": 0.26
+        },
+        {
+          "text": "formuliamo",
+          "start": 0.32,
+          "end": 0.96
+        },
+        {
+          "text": "il",
+          "start": 1.0,
+          "end": 1.08
+        },
+        {
+          "text": "problema",
+          "start": 1.1,
+          "end": 1.48
+        },
+        {
+          "text": "di",
+          "start": 1.54,
+          "end": 1.6
+        },
+        {
+          "text": "ottimizzazione",
+          "start": 1.66,
+          "end": 2.46
+        },
+        {
+          "text": "quando",
+          "start": 2.52,
+          "end": 2.76
+        },
+        {
+          "text": "ammettiamo",
+          "start": 2.78,
+          "end": 3.24
+        },
+        {
+          "text": "le",
+          "start": 3.3,
+          "end": 3.36
+        },
+        {
+          "text": "variabili",
+          "start": 3.4,
+          "end": 3.9
+        },
+        {
+          "text": "slack?",
+          "start": 3.96,
+          "end": 4.301
+        }
+      ]
+    },
+    {
+      "start": 5.041,
+      "end": 7.781,
+      "text": "Nel problema primale soft margin cerchiamo w,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 5.041,
+          "end": 5.161
+        },
+        {
+          "text": "problema",
+          "start": 5.201,
+          "end": 5.581
+        },
+        {
+          "text": "primale",
+          "start": 5.661,
+          "end": 6.101
+        },
+        {
+          "text": "soft",
+          "start": 6.181,
+          "end": 6.381
+        },
+        {
+          "text": "margin",
+          "start": 6.481,
+          "end": 6.881
+        },
+        {
+          "text": "cerchiamo",
+          "start": 7.221,
+          "end": 7.661
+        },
+        {
+          "text": "w,",
+          "start": 7.741,
+          "end": 7.781
+        }
+      ]
+    },
+    {
+      "start": 8.561,
+      "end": 14.562,
+      "text": "b e le slack csi che minimizzano Psi di w virgola csi uguale uno mezzo",
+      "words": [
+        {
+          "text": "b",
+          "start": 8.561,
+          "end": 8.601
+        },
+        {
+          "text": "e",
+          "start": 9.081,
+          "end": 9.121
+        },
+        {
+          "text": "le",
+          "start": 9.181,
+          "end": 9.241
+        },
+        {
+          "text": "slack",
+          "start": 9.301,
+          "end": 9.621
+        },
+        {
+          "text": "csi",
+          "start": 9.861,
+          "end": 10.161
+        },
+        {
+          "text": "che",
+          "start": 10.701,
+          "end": 10.781
+        },
+        {
+          "text": "minimizzano",
+          "start": 10.841,
+          "end": 11.521
+        },
+        {
+          "text": "Psi",
+          "start": 11.681,
+          "end": 11.921
+        },
+        {
+          "text": "di",
+          "start": 12.001,
+          "end": 12.081
+        },
+        {
+          "text": "w",
+          "start": 12.121,
+          "end": 12.161
+        },
+        {
+          "text": "virgola",
+          "start": 12.642,
+          "end": 13.002
+        },
+        {
+          "text": "csi",
+          "start": 13.062,
+          "end": 13.262
+        },
+        {
+          "text": "uguale",
+          "start": 13.542,
+          "end": 13.942
+        },
+        {
+          "text": "uno",
+          "start": 14.122,
+          "end": 14.242
+        },
+        {
+          "text": "mezzo",
+          "start": 14.262,
+          "end": 14.562
+        }
+      ]
+    },
+    {
+      "start": 14.602,
+      "end": 19.362,
+      "text": "w trasposto w più C per la somma per i da uno a l di",
+      "words": [
+        {
+          "text": "w",
+          "start": 14.602,
+          "end": 14.642
+        },
+        {
+          "text": "trasposto",
+          "start": 15.082,
+          "end": 15.562
+        },
+        {
+          "text": "w",
+          "start": 15.622,
+          "end": 15.662
+        },
+        {
+          "text": "più",
+          "start": 15.962,
+          "end": 16.622
+        },
+        {
+          "text": "C",
+          "start": 16.842,
+          "end": 16.882
+        },
+        {
+          "text": "per",
+          "start": 17.362,
+          "end": 17.502
+        },
+        {
+          "text": "la",
+          "start": 17.562,
+          "end": 17.642
+        },
+        {
+          "text": "somma",
+          "start": 17.722,
+          "end": 17.982
+        },
+        {
+          "text": "per",
+          "start": 18.062,
+          "end": 18.182
+        },
+        {
+          "text": "i",
+          "start": 18.222,
+          "end": 18.262
+        },
+        {
+          "text": "da",
+          "start": 18.322,
+          "end": 18.382
+        },
+        {
+          "text": "uno",
+          "start": 18.482,
+          "end": 18.662
+        },
+        {
+          "text": "a",
+          "start": 18.722,
+          "end": 18.762
+        },
+        {
+          "text": "l",
+          "start": 19.002,
+          "end": 19.042
+        },
+        {
+          "text": "di",
+          "start": 19.282,
+          "end": 19.362
+        }
+      ]
+    },
+    {
+      "start": 19.462,
+      "end": 24.143,
+      "text": "csi con i, soggetto ai vincoli d con i per w trasposto x con i",
+      "words": [
+        {
+          "text": "csi",
+          "start": 19.462,
+          "end": 19.642
+        },
+        {
+          "text": "con",
+          "start": 19.702,
+          "end": 19.862
+        },
+        {
+          "text": "i,",
+          "start": 19.902,
+          "end": 19.942
+        },
+        {
+          "text": "soggetto",
+          "start": 20.522,
+          "end": 20.882
+        },
+        {
+          "text": "ai",
+          "start": 20.922,
+          "end": 20.982
+        },
+        {
+          "text": "vincoli",
+          "start": 21.022,
+          "end": 21.463
+        },
+        {
+          "text": "d",
+          "start": 21.663,
+          "end": 21.703
+        },
+        {
+          "text": "con",
+          "start": 21.863,
+          "end": 22.063
+        },
+        {
+          "text": "i",
+          "start": 22.103,
+          "end": 22.143
+        },
+        {
+          "text": "per",
+          "start": 22.303,
+          "end": 22.423
+        },
+        {
+          "text": "w",
+          "start": 22.483,
+          "end": 22.523
+        },
+        {
+          "text": "trasposto",
+          "start": 22.983,
+          "end": 23.643
+        },
+        {
+          "text": "x",
+          "start": 23.783,
+          "end": 23.823
+        },
+        {
+          "text": "con",
+          "start": 23.923,
+          "end": 24.063
+        },
+        {
+          "text": "i",
+          "start": 24.103,
+          "end": 24.143
+        }
+      ]
+    },
+    {
+      "start": 24.223,
+      "end": 26.763,
+      "text": "più b maggiore o uguale a uno meno csi con i,",
+      "words": [
+        {
+          "text": "più",
+          "start": 24.223,
+          "end": 24.343
+        },
+        {
+          "text": "b",
+          "start": 24.423,
+          "end": 24.463
+        },
+        {
+          "text": "maggiore",
+          "start": 24.883,
+          "end": 25.183
+        },
+        {
+          "text": "o",
+          "start": 25.203,
+          "end": 25.243
+        },
+        {
+          "text": "uguale",
+          "start": 25.223,
+          "end": 25.563
+        },
+        {
+          "text": "a",
+          "start": 25.703,
+          "end": 25.743
+        },
+        {
+          "text": "uno",
+          "start": 25.843,
+          "end": 26.023
+        },
+        {
+          "text": "meno",
+          "start": 26.083,
+          "end": 26.263
+        },
+        {
+          "text": "csi",
+          "start": 26.323,
+          "end": 26.503
+        },
+        {
+          "text": "con",
+          "start": 26.543,
+          "end": 26.683
+        },
+        {
+          "text": "i,",
+          "start": 26.723,
+          "end": 26.763
+        }
+      ]
+    },
+    {
+      "start": 27.423,
+      "end": 29.603,
+      "text": "e csi con i maggiore o uguale a zero per ogni i.",
+      "words": [
+        {
+          "text": "e",
+          "start": 27.423,
+          "end": 27.463
+        },
+        {
+          "text": "csi",
+          "start": 27.503,
+          "end": 27.683
+        },
+        {
+          "text": "con",
+          "start": 27.723,
+          "end": 27.863
+        },
+        {
+          "text": "i",
+          "start": 27.923,
+          "end": 27.963
+        },
+        {
+          "text": "maggiore",
+          "start": 28.023,
+          "end": 28.363
+        },
+        {
+          "text": "o",
+          "start": 28.383,
+          "end": 28.423
+        },
+        {
+          "text": "uguale",
+          "start": 28.403,
+          "end": 28.643
+        },
+        {
+          "text": "a",
+          "start": 28.663,
+          "end": 28.703
+        },
+        {
+          "text": "zero",
+          "start": 28.783,
+          "end": 29.043
+        },
+        {
+          "text": "per",
+          "start": 29.163,
+          "end": 29.283
+        },
+        {
+          "text": "ogni",
+          "start": 29.343,
+          "end": 29.543
+        },
+        {
+          "text": "i.",
+          "start": 29.563,
+          "end": 29.603
+        }
+      ]
+    },
+    {
+      "start": 30.544,
+      "end": 34.224,
+      "text": "Il parametro C è un vero iperparametro di regolarizzazione:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 30.544,
+          "end": 30.624
+        },
+        {
+          "text": "parametro",
+          "start": 30.664,
+          "end": 31.104
+        },
+        {
+          "text": "C",
+          "start": 31.204,
+          "end": 31.244
+        },
+        {
+          "text": "è",
+          "start": 31.524,
+          "end": 31.564
+        },
+        {
+          "text": "un",
+          "start": 31.644,
+          "end": 31.744
+        },
+        {
+          "text": "vero",
+          "start": 31.824,
+          "end": 32.064
+        },
+        {
+          "text": "iperparametro",
+          "start": 32.244,
+          "end": 33.044
+        },
+        {
+          "text": "di",
+          "start": 33.084,
+          "end": 33.164
+        },
+        {
+          "text": "regolarizzazione:",
+          "start": 33.224,
+          "end": 34.224
+        }
+      ]
+    },
+    {
+      "start": 34.824,
+      "end": 41.065,
+      "text": "questo significa che perdiamo la SRM completamente automatica del caso hard margin e dobbiamo scegliere",
+      "words": [
+        {
+          "text": "questo",
+          "start": 34.824,
+          "end": 35.064
+        },
+        {
+          "text": "significa",
+          "start": 35.104,
+          "end": 35.624
+        },
+        {
+          "text": "che",
+          "start": 35.764,
+          "end": 35.844
+        },
+        {
+          "text": "perdiamo",
+          "start": 35.904,
+          "end": 36.344
+        },
+        {
+          "text": "la",
+          "start": 36.424,
+          "end": 36.484
+        },
+        {
+          "text": "SRM",
+          "start": 36.644,
+          "end": 37.204
+        },
+        {
+          "text": "completamente",
+          "start": 37.364,
+          "end": 37.964
+        },
+        {
+          "text": "automatica",
+          "start": 38.004,
+          "end": 38.565
+        },
+        {
+          "text": "del",
+          "start": 38.605,
+          "end": 38.725
+        },
+        {
+          "text": "caso",
+          "start": 38.785,
+          "end": 38.985
+        },
+        {
+          "text": "hard",
+          "start": 39.065,
+          "end": 39.265
+        },
+        {
+          "text": "margin",
+          "start": 39.345,
+          "end": 39.765
+        },
+        {
+          "text": "e",
+          "start": 40.225,
+          "end": 40.265
+        },
+        {
+          "text": "dobbiamo",
+          "start": 40.305,
+          "end": 40.625
+        },
+        {
+          "text": "scegliere",
+          "start": 40.665,
+          "end": 41.065
+        }
+      ]
+    },
+    {
+      "start": 41.205,
+      "end": 46.285,
+      "text": "esplicitamente il compromesso tra minimizzazione del rischio empirico e termine di capacità.",
+      "words": [
+        {
+          "text": "esplicitamente",
+          "start": 41.205,
+          "end": 42.125
+        },
+        {
+          "text": "il",
+          "start": 42.165,
+          "end": 42.225
+        },
+        {
+          "text": "compromesso",
+          "start": 42.245,
+          "end": 42.825
+        },
+        {
+          "text": "tra",
+          "start": 42.885,
+          "end": 43.005
+        },
+        {
+          "text": "minimizzazione",
+          "start": 43.085,
+          "end": 43.825
+        },
+        {
+          "text": "del",
+          "start": 43.865,
+          "end": 43.985
+        },
+        {
+          "text": "rischio",
+          "start": 44.025,
+          "end": 44.285
+        },
+        {
+          "text": "empirico",
+          "start": 44.325,
+          "end": 44.825
+        },
+        {
+          "text": "e",
+          "start": 45.185,
+          "end": 45.225
+        },
+        {
+          "text": "termine",
+          "start": 45.265,
+          "end": 45.645
+        },
+        {
+          "text": "di",
+          "start": 45.685,
+          "end": 45.745
+        },
+        {
+          "text": "capacità.",
+          "start": 45.785,
+          "end": 46.285
+        }
+      ]
+    },
+    {
+      "start": 47.146,
+      "end": 48.646,
+      "text": "Vediamo i due regimi estremi di C.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 47.146,
+          "end": 47.446
+        },
+        {
+          "text": "i",
+          "start": 47.506,
+          "end": 47.546
+        },
+        {
+          "text": "due",
+          "start": 47.586,
+          "end": 47.686
+        },
+        {
+          "text": "regimi",
+          "start": 47.726,
+          "end": 48.026
+        },
+        {
+          "text": "estremi",
+          "start": 48.086,
+          "end": 48.406
+        },
+        {
+          "text": "di",
+          "start": 48.446,
+          "end": 48.526
+        },
+        {
+          "text": "C.",
+          "start": 48.606,
+          "end": 48.646
+        }
+      ]
+    },
+    {
+      "start": 49.346,
+      "end": 54.786,
+      "text": "Con C basso penalizziamo poco le violazioni: vengono ammessi molti errori sul training set,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 49.346,
+          "end": 49.486
+        },
+        {
+          "text": "C",
+          "start": 49.526,
+          "end": 49.566
+        },
+        {
+          "text": "basso",
+          "start": 49.706,
+          "end": 50.046
+        },
+        {
+          "text": "penalizziamo",
+          "start": 50.226,
+          "end": 50.846
+        },
+        {
+          "text": "poco",
+          "start": 50.946,
+          "end": 51.166
+        },
+        {
+          "text": "le",
+          "start": 51.226,
+          "end": 51.286
+        },
+        {
+          "text": "violazioni:",
+          "start": 51.326,
+          "end": 51.986
+        },
+        {
+          "text": "vengono",
+          "start": 52.466,
+          "end": 52.766
+        },
+        {
+          "text": "ammessi",
+          "start": 52.806,
+          "end": 53.146
+        },
+        {
+          "text": "molti",
+          "start": 53.246,
+          "end": 53.546
+        },
+        {
+          "text": "errori",
+          "start": 53.586,
+          "end": 53.906
+        },
+        {
+          "text": "sul",
+          "start": 53.946,
+          "end": 54.086
+        },
+        {
+          "text": "training",
+          "start": 54.106,
+          "end": 54.446
+        },
+        {
+          "text": "set,",
+          "start": 54.506,
+          "end": 54.786
+        }
+      ]
+    },
+    {
+      "start": 55.347,
+      "end": 57.967,
+      "text": "il margine resta ampio e il modello è più semplice,",
+      "words": [
+        {
+          "text": "il",
+          "start": 55.347,
+          "end": 55.427
+        },
+        {
+          "text": "margine",
+          "start": 55.467,
+          "end": 55.867
+        },
+        {
+          "text": "resta",
+          "start": 55.947,
+          "end": 56.187
+        },
+        {
+          "text": "ampio",
+          "start": 56.307,
+          "end": 56.607
+        },
+        {
+          "text": "e",
+          "start": 56.747,
+          "end": 56.787
+        },
+        {
+          "text": "il",
+          "start": 56.807,
+          "end": 56.887
+        },
+        {
+          "text": "modello",
+          "start": 56.907,
+          "end": 57.207
+        },
+        {
+          "text": "è",
+          "start": 57.247,
+          "end": 57.287
+        },
+        {
+          "text": "più",
+          "start": 57.307,
+          "end": 57.407
+        },
+        {
+          "text": "semplice,",
+          "start": 57.487,
+          "end": 57.967
+        }
+      ]
+    },
+    {
+      "start": 58.187,
+      "end": 59.767,
+      "text": "ma si rischia underfitting.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 58.187,
+          "end": 58.267
+        },
+        {
+          "text": "si",
+          "start": 58.347,
+          "end": 58.427
+        },
+        {
+          "text": "rischia",
+          "start": 58.487,
+          "end": 58.787
+        },
+        {
+          "text": "underfitting.",
+          "start": 58.967,
+          "end": 59.767
+        }
+      ]
+    },
+    {
+      "start": 60.487,
+      "end": 65.308,
+      "text": "Con C alto invece ogni violazione costa carissima: quasi nessun errore viene ammesso,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 60.487,
+          "end": 60.627
+        },
+        {
+          "text": "C",
+          "start": 60.687,
+          "end": 60.727
+        },
+        {
+          "text": "alto",
+          "start": 60.867,
+          "end": 61.047
+        },
+        {
+          "text": "invece",
+          "start": 61.087,
+          "end": 61.447
+        },
+        {
+          "text": "ogni",
+          "start": 61.607,
+          "end": 61.807
+        },
+        {
+          "text": "violazione",
+          "start": 61.847,
+          "end": 62.367
+        },
+        {
+          "text": "costa",
+          "start": 62.427,
+          "end": 62.687
+        },
+        {
+          "text": "carissima:",
+          "start": 62.747,
+          "end": 63.247
+        },
+        {
+          "text": "quasi",
+          "start": 63.687,
+          "end": 63.908
+        },
+        {
+          "text": "nessun",
+          "start": 63.968,
+          "end": 64.248
+        },
+        {
+          "text": "errore",
+          "start": 64.308,
+          "end": 64.588
+        },
+        {
+          "text": "viene",
+          "start": 64.628,
+          "end": 64.828
+        },
+        {
+          "text": "ammesso,",
+          "start": 64.868,
+          "end": 65.308
+        }
+      ]
+    },
+    {
+      "start": 65.528,
+      "end": 70.388,
+      "text": "il margine si restringe per inseguire anche i punti rumorosi e si rischia overfitting.",
+      "words": [
+        {
+          "text": "il",
+          "start": 65.528,
+          "end": 65.608
+        },
+        {
+          "text": "margine",
+          "start": 65.648,
+          "end": 66.028
+        },
+        {
+          "text": "si",
+          "start": 66.088,
+          "end": 66.168
+        },
+        {
+          "text": "restringe",
+          "start": 66.228,
+          "end": 66.688
+        },
+        {
+          "text": "per",
+          "start": 66.728,
+          "end": 66.828
+        },
+        {
+          "text": "inseguire",
+          "start": 66.868,
+          "end": 67.388
+        },
+        {
+          "text": "anche",
+          "start": 67.768,
+          "end": 67.968
+        },
+        {
+          "text": "i",
+          "start": 68.008,
+          "end": 68.048
+        },
+        {
+          "text": "punti",
+          "start": 68.068,
+          "end": 68.328
+        },
+        {
+          "text": "rumorosi",
+          "start": 68.368,
+          "end": 68.888
+        },
+        {
+          "text": "e",
+          "start": 69.008,
+          "end": 69.048
+        },
+        {
+          "text": "si",
+          "start": 69.108,
+          "end": 69.168
+        },
+        {
+          "text": "rischia",
+          "start": 69.228,
+          "end": 69.488
+        },
+        {
+          "text": "overfitting.",
+          "start": 69.648,
+          "end": 70.388
+        }
+      ]
+    },
+    {
+      "start": 71.168,
+      "end": 75.709,
+      "text": "Nel limite per C che tende a infinito, nessuna slack positiva è più tollerata e",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 71.168,
+          "end": 71.308
+        },
+        {
+          "text": "limite",
+          "start": 71.328,
+          "end": 71.648
+        },
+        {
+          "text": "per",
+          "start": 71.708,
+          "end": 71.828
+        },
+        {
+          "text": "C",
+          "start": 71.908,
+          "end": 71.94800000000001
+        },
+        {
+          "text": "che",
+          "start": 72.088,
+          "end": 72.168
+        },
+        {
+          "text": "tende",
+          "start": 72.228,
+          "end": 72.449
+        },
+        {
+          "text": "a",
+          "start": 72.489,
+          "end": 72.52900000000001
+        },
+        {
+          "text": "infinito,",
+          "start": 72.529,
+          "end": 73.009
+        },
+        {
+          "text": "nessuna",
+          "start": 73.209,
+          "end": 73.609
+        },
+        {
+          "text": "slack",
+          "start": 73.669,
+          "end": 73.949
+        },
+        {
+          "text": "positiva",
+          "start": 74.049,
+          "end": 74.509
+        },
+        {
+          "text": "è",
+          "start": 74.529,
+          "end": 74.569
+        },
+        {
+          "text": "più",
+          "start": 74.609,
+          "end": 74.689
+        },
+        {
+          "text": "tollerata",
+          "start": 74.769,
+          "end": 75.309
+        },
+        {
+          "text": "e",
+          "start": 75.669,
+          "end": 75.709
+        }
+      ]
+    },
+    {
+      "start": 75.749,
+      "end": 77.489,
+      "text": "si ritrova esattamente l'hard margin.",
+      "words": [
+        {
+          "text": "si",
+          "start": 75.749,
+          "end": 75.809
+        },
+        {
+          "text": "ritrova",
+          "start": 75.869,
+          "end": 76.169
+        },
+        {
+          "text": "esattamente",
+          "start": 76.209,
+          "end": 76.729
+        },
+        {
+          "text": "l'hard",
+          "start": 76.789,
+          "end": 76.989
+        },
+        {
+          "text": "margin.",
+          "start": 77.069,
+          "end": 77.489
+        }
+      ]
+    }
+  ]
+}

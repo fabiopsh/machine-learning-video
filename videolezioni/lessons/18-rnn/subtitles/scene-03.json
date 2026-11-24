@@ -1,0 +1,1390 @@
+{
+  "duration": 99.15,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.401,
+      "text": "Per superare la memoria finita introduciamo l'unità ricorrente, dotata di una connessione di feedback,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 0.08,
+          "end": 0.2
+        },
+        {
+          "text": "superare",
+          "start": 0.26,
+          "end": 0.76
+        },
+        {
+          "text": "la",
+          "start": 0.84,
+          "end": 0.9
+        },
+        {
+          "text": "memoria",
+          "start": 0.96,
+          "end": 1.34
+        },
+        {
+          "text": "finita",
+          "start": 1.42,
+          "end": 1.88
+        },
+        {
+          "text": "introduciamo",
+          "start": 2.18,
+          "end": 2.901
+        },
+        {
+          "text": "l'unità",
+          "start": 2.981,
+          "end": 3.301
+        },
+        {
+          "text": "ricorrente,",
+          "start": 3.381,
+          "end": 4.061
+        },
+        {
+          "text": "dotata",
+          "start": 4.561,
+          "end": 4.941
+        },
+        {
+          "text": "di",
+          "start": 5.001,
+          "end": 5.041
+        },
+        {
+          "text": "una",
+          "start": 5.081,
+          "end": 5.201
+        },
+        {
+          "text": "connessione",
+          "start": 5.261,
+          "end": 5.761
+        },
+        {
+          "text": "di",
+          "start": 5.801,
+          "end": 5.881
+        },
+        {
+          "text": "feedback,",
+          "start": 5.921,
+          "end": 6.401
+        }
+      ]
+    },
+    {
+      "start": 6.741,
+      "end": 7.742,
+      "text": "cioè un self-loop.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 6.741,
+          "end": 6.881
+        },
+        {
+          "text": "un",
+          "start": 7.041,
+          "end": 7.141
+        },
+        {
+          "text": "self-loop.",
+          "start": 7.221,
+          "end": 7.742
+        }
+      ]
+    },
+    {
+      "start": 8.622,
+      "end": 12.863,
+      "text": "L'unità riceve sia l'input corrente x di t pesato da w,",
+      "words": [
+        {
+          "text": "L'unità",
+          "start": 8.622,
+          "end": 8.962
+        },
+        {
+          "text": "riceve",
+          "start": 9.202,
+          "end": 9.542
+        },
+        {
+          "text": "sia",
+          "start": 9.662,
+          "end": 9.802
+        },
+        {
+          "text": "l'input",
+          "start": 9.862,
+          "end": 10.262
+        },
+        {
+          "text": "corrente",
+          "start": 10.342,
+          "end": 10.882
+        },
+        {
+          "text": "x",
+          "start": 11.182,
+          "end": 11.222
+        },
+        {
+          "text": "di",
+          "start": 11.382,
+          "end": 11.462
+        },
+        {
+          "text": "t",
+          "start": 11.542,
+          "end": 11.582
+        },
+        {
+          "text": "pesato",
+          "start": 11.922,
+          "end": 12.303
+        },
+        {
+          "text": "da",
+          "start": 12.343,
+          "end": 12.403
+        },
+        {
+          "text": "w,",
+          "start": 12.823,
+          "end": 12.863
+        }
+      ]
+    },
+    {
+      "start": 13.483,
+      "end": 16.543,
+      "text": "sia lo stato al passo precedente h di t meno uno,",
+      "words": [
+        {
+          "text": "sia",
+          "start": 13.483,
+          "end": 13.643
+        },
+        {
+          "text": "lo",
+          "start": 13.703,
+          "end": 13.803
+        },
+        {
+          "text": "stato",
+          "start": 13.883,
+          "end": 14.243
+        },
+        {
+          "text": "al",
+          "start": 14.283,
+          "end": 14.363
+        },
+        {
+          "text": "passo",
+          "start": 14.423,
+          "end": 14.683
+        },
+        {
+          "text": "precedente",
+          "start": 14.723,
+          "end": 15.343
+        },
+        {
+          "text": "h",
+          "start": 15.683,
+          "end": 15.723
+        },
+        {
+          "text": "di",
+          "start": 15.823,
+          "end": 15.883
+        },
+        {
+          "text": "t",
+          "start": 15.963,
+          "end": 16.003
+        },
+        {
+          "text": "meno",
+          "start": 16.103,
+          "end": 16.283
+        },
+        {
+          "text": "uno,",
+          "start": 16.383,
+          "end": 16.543
+        }
+      ]
+    },
+    {
+      "start": 16.943,
+      "end": 22.205,
+      "text": "restituito da un ritardo unitario q alla meno uno e moltiplicato per il peso ricorrente",
+      "words": [
+        {
+          "text": "restituito",
+          "start": 16.943,
+          "end": 17.524
+        },
+        {
+          "text": "da",
+          "start": 17.564,
+          "end": 17.624
+        },
+        {
+          "text": "un",
+          "start": 17.704,
+          "end": 17.784
+        },
+        {
+          "text": "ritardo",
+          "start": 17.824,
+          "end": 18.204
+        },
+        {
+          "text": "unitario",
+          "start": 18.284,
+          "end": 18.784
+        },
+        {
+          "text": "q",
+          "start": 18.944,
+          "end": 18.984
+        },
+        {
+          "text": "alla",
+          "start": 19.264,
+          "end": 19.444
+        },
+        {
+          "text": "meno",
+          "start": 19.504,
+          "end": 19.684
+        },
+        {
+          "text": "uno",
+          "start": 19.804,
+          "end": 19.964
+        },
+        {
+          "text": "e",
+          "start": 20.444,
+          "end": 20.484
+        },
+        {
+          "text": "moltiplicato",
+          "start": 20.524,
+          "end": 21.164
+        },
+        {
+          "text": "per",
+          "start": 21.224,
+          "end": 21.324
+        },
+        {
+          "text": "il",
+          "start": 21.364,
+          "end": 21.444
+        },
+        {
+          "text": "peso",
+          "start": 21.484,
+          "end": 21.664
+        },
+        {
+          "text": "ricorrente",
+          "start": 21.704,
+          "end": 22.205
+        }
+      ]
+    },
+    {
+      "start": 22.565,
+      "end": 23.185,
+      "text": "w cappello.",
+      "words": [
+        {
+          "text": "w",
+          "start": 22.565,
+          "end": 22.605
+        },
+        {
+          "text": "cappello.",
+          "start": 22.705,
+          "end": 23.185
+        }
+      ]
+    },
+    {
+      "start": 23.805,
+      "end": 25.405,
+      "text": "L'equazione è: h di t",
+      "words": [
+        {
+          "text": "L'equazione",
+          "start": 23.805,
+          "end": 24.305
+        },
+        {
+          "text": "è:",
+          "start": 24.385,
+          "end": 24.425
+        },
+        {
+          "text": "h",
+          "start": 25.045,
+          "end": 25.085
+        },
+        {
+          "text": "di",
+          "start": 25.185,
+          "end": 25.265
+        },
+        {
+          "text": "t",
+          "start": 25.365,
+          "end": 25.405
+        }
+      ]
+    },
+    {
+      "start": 25.965,
+      "end": 29.346,
+      "text": "uguale tau di h di t meno uno e x di t,",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 25.965,
+          "end": 26.325
+        },
+        {
+          "text": "tau",
+          "start": 26.505,
+          "end": 26.825
+        },
+        {
+          "text": "di",
+          "start": 27.206,
+          "end": 27.286
+        },
+        {
+          "text": "h",
+          "start": 27.626,
+          "end": 27.666
+        },
+        {
+          "text": "di",
+          "start": 27.746,
+          "end": 27.826
+        },
+        {
+          "text": "t",
+          "start": 27.906,
+          "end": 27.946
+        },
+        {
+          "text": "meno",
+          "start": 28.046,
+          "end": 28.226
+        },
+        {
+          "text": "uno",
+          "start": 28.346,
+          "end": 28.526
+        },
+        {
+          "text": "e",
+          "start": 28.786,
+          "end": 28.826
+        },
+        {
+          "text": "x",
+          "start": 28.986,
+          "end": 29.026
+        },
+        {
+          "text": "di",
+          "start": 29.126,
+          "end": 29.206
+        },
+        {
+          "text": "t,",
+          "start": 29.306,
+          "end": 29.346
+        }
+      ]
+    },
+    {
+      "start": 29.946,
+      "end": 33.847,
+      "text": "uguale a f di w trasposto x di t più",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 29.946,
+          "end": 30.326
+        },
+        {
+          "text": "a",
+          "start": 30.486,
+          "end": 30.526
+        },
+        {
+          "text": "f",
+          "start": 30.866,
+          "end": 30.906
+        },
+        {
+          "text": "di",
+          "start": 31.286,
+          "end": 31.606
+        },
+        {
+          "text": "w",
+          "start": 31.726,
+          "end": 31.766
+        },
+        {
+          "text": "trasposto",
+          "start": 31.846,
+          "end": 32.467
+        },
+        {
+          "text": "x",
+          "start": 32.787,
+          "end": 32.827
+        },
+        {
+          "text": "di",
+          "start": 32.987,
+          "end": 33.067
+        },
+        {
+          "text": "t",
+          "start": 33.147,
+          "end": 33.187
+        },
+        {
+          "text": "più",
+          "start": 33.727,
+          "end": 33.847
+        }
+      ]
+    },
+    {
+      "start": 34.407,
+      "end": 37.228,
+      "text": "w cappello per h di t meno uno più teta,",
+      "words": [
+        {
+          "text": "w",
+          "start": 34.407,
+          "end": 34.447
+        },
+        {
+          "text": "cappello",
+          "start": 34.547,
+          "end": 35.107
+        },
+        {
+          "text": "per",
+          "start": 35.267,
+          "end": 35.427
+        },
+        {
+          "text": "h",
+          "start": 35.627,
+          "end": 35.667
+        },
+        {
+          "text": "di",
+          "start": 35.727,
+          "end": 35.807
+        },
+        {
+          "text": "t",
+          "start": 35.887,
+          "end": 35.927
+        },
+        {
+          "text": "meno",
+          "start": 36.027,
+          "end": 36.247
+        },
+        {
+          "text": "uno",
+          "start": 36.347,
+          "end": 36.507
+        },
+        {
+          "text": "più",
+          "start": 36.687,
+          "end": 36.807
+        },
+        {
+          "text": "teta,",
+          "start": 36.907,
+          "end": 37.228
+        }
+      ]
+    },
+    {
+      "start": 37.668,
+      "end": 40.088,
+      "text": "con stato iniziale h di zero uguale zero.",
+      "words": [
+        {
+          "text": "con",
+          "start": 37.668,
+          "end": 37.788
+        },
+        {
+          "text": "stato",
+          "start": 37.808,
+          "end": 38.008
+        },
+        {
+          "text": "iniziale",
+          "start": 38.068,
+          "end": 38.548
+        },
+        {
+          "text": "h",
+          "start": 38.808,
+          "end": 38.848
+        },
+        {
+          "text": "di",
+          "start": 38.908,
+          "end": 38.968
+        },
+        {
+          "text": "zero",
+          "start": 39.068,
+          "end": 39.308
+        },
+        {
+          "text": "uguale",
+          "start": 39.448,
+          "end": 39.748
+        },
+        {
+          "text": "zero.",
+          "start": 39.848,
+          "end": 40.088
+        }
+      ]
+    },
+    {
+      "start": 41.008,
+      "end": 46.529,
+      "text": "La novità rispetto a un neurone standard è proprio il termine w cappello h di",
+      "words": [
+        {
+          "text": "La",
+          "start": 41.008,
+          "end": 41.068
+        },
+        {
+          "text": "novità",
+          "start": 41.108,
+          "end": 41.448
+        },
+        {
+          "text": "rispetto",
+          "start": 41.908,
+          "end": 42.289
+        },
+        {
+          "text": "a",
+          "start": 42.349,
+          "end": 42.389
+        },
+        {
+          "text": "un",
+          "start": 42.429,
+          "end": 42.509
+        },
+        {
+          "text": "neurone",
+          "start": 42.529,
+          "end": 42.929
+        },
+        {
+          "text": "standard",
+          "start": 42.989,
+          "end": 43.549
+        },
+        {
+          "text": "è",
+          "start": 44.009,
+          "end": 44.049
+        },
+        {
+          "text": "proprio",
+          "start": 44.129,
+          "end": 44.429
+        },
+        {
+          "text": "il",
+          "start": 44.469,
+          "end": 44.529
+        },
+        {
+          "text": "termine",
+          "start": 44.589,
+          "end": 45.009
+        },
+        {
+          "text": "w",
+          "start": 45.529,
+          "end": 45.569
+        },
+        {
+          "text": "cappello",
+          "start": 45.649,
+          "end": 46.109
+        },
+        {
+          "text": "h",
+          "start": 46.329,
+          "end": 46.369
+        },
+        {
+          "text": "di",
+          "start": 46.449,
+          "end": 46.529
+        }
+      ]
+    },
+    {
+      "start": 46.569,
+      "end": 47.15,
+      "text": "t meno uno.",
+      "words": [
+        {
+          "text": "t",
+          "start": 46.569,
+          "end": 46.609
+        },
+        {
+          "text": "meno",
+          "start": 46.709,
+          "end": 46.909
+        },
+        {
+          "text": "uno.",
+          "start": 46.989,
+          "end": 47.15
+        }
+      ]
+    },
+    {
+      "start": 47.97,
+      "end": 48.87,
+      "text": "Lo stato h di t",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 47.97,
+          "end": 48.05
+        },
+        {
+          "text": "stato",
+          "start": 48.09,
+          "end": 48.33
+        },
+        {
+          "text": "h",
+          "start": 48.53,
+          "end": 48.57
+        },
+        {
+          "text": "di",
+          "start": 48.65,
+          "end": 48.73
+        },
+        {
+          "text": "t",
+          "start": 48.83,
+          "end": 48.87
+        }
+      ]
+    },
+    {
+      "start": 49.43,
+      "end": 52.531,
+      "text": "riassume l'informazione passata, cioè il contesto,",
+      "words": [
+        {
+          "text": "riassume",
+          "start": 49.43,
+          "end": 49.81
+        },
+        {
+          "text": "l'informazione",
+          "start": 49.85,
+          "end": 50.47
+        },
+        {
+          "text": "passata,",
+          "start": 50.51,
+          "end": 51.01
+        },
+        {
+          "text": "cioè",
+          "start": 51.39,
+          "end": 51.57
+        },
+        {
+          "text": "il",
+          "start": 51.75,
+          "end": 51.83
+        },
+        {
+          "text": "contesto,",
+          "start": 51.91,
+          "end": 52.531
+        }
+      ]
+    },
+    {
+      "start": 53.211,
+      "end": 57.032,
+      "text": "e questa codifica del passato è adattiva perché dipende dai pesi appresi.",
+      "words": [
+        {
+          "text": "e",
+          "start": 53.211,
+          "end": 53.251
+        },
+        {
+          "text": "questa",
+          "start": 53.291,
+          "end": 53.531
+        },
+        {
+          "text": "codifica",
+          "start": 53.591,
+          "end": 54.091
+        },
+        {
+          "text": "del",
+          "start": 54.131,
+          "end": 54.251
+        },
+        {
+          "text": "passato",
+          "start": 54.291,
+          "end": 54.691
+        },
+        {
+          "text": "è",
+          "start": 54.751,
+          "end": 54.791
+        },
+        {
+          "text": "adattiva",
+          "start": 54.831,
+          "end": 55.331
+        },
+        {
+          "text": "perché",
+          "start": 55.611,
+          "end": 55.831
+        },
+        {
+          "text": "dipende",
+          "start": 55.871,
+          "end": 56.211
+        },
+        {
+          "text": "dai",
+          "start": 56.251,
+          "end": 56.371
+        },
+        {
+          "text": "pesi",
+          "start": 56.411,
+          "end": 56.591
+        },
+        {
+          "text": "appresi.",
+          "start": 56.631,
+          "end": 57.032
+        }
+      ]
+    },
+    {
+      "start": 58.032,
+      "end": 61.272,
+      "text": "Vediamo subito un esempio illuminante: contare gli uno.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 58.032,
+          "end": 58.332
+        },
+        {
+          "text": "subito",
+          "start": 58.432,
+          "end": 58.732
+        },
+        {
+          "text": "un",
+          "start": 58.772,
+          "end": 58.832
+        },
+        {
+          "text": "esempio",
+          "start": 58.872,
+          "end": 59.152
+        },
+        {
+          "text": "illuminante:",
+          "start": 59.192,
+          "end": 59.792
+        },
+        {
+          "text": "contare",
+          "start": 60.232,
+          "end": 60.732
+        },
+        {
+          "text": "gli",
+          "start": 60.792,
+          "end": 60.972
+        },
+        {
+          "text": "uno.",
+          "start": 61.072,
+          "end": 61.272
+        }
+      ]
+    },
+    {
+      "start": 62.093,
+      "end": 68.034,
+      "text": "Vogliamo una RNN con una sola unità che restituisca il numero di uno ricevuti finora",
+      "words": [
+        {
+          "text": "Vogliamo",
+          "start": 62.093,
+          "end": 62.473
+        },
+        {
+          "text": "una",
+          "start": 62.533,
+          "end": 62.693
+        },
+        {
+          "text": "RNN",
+          "start": 62.973,
+          "end": 63.673
+        },
+        {
+          "text": "con",
+          "start": 63.993,
+          "end": 64.113
+        },
+        {
+          "text": "una",
+          "start": 64.153,
+          "end": 64.293
+        },
+        {
+          "text": "sola",
+          "start": 64.353,
+          "end": 64.553
+        },
+        {
+          "text": "unità",
+          "start": 64.613,
+          "end": 64.893
+        },
+        {
+          "text": "che",
+          "start": 65.333,
+          "end": 65.393
+        },
+        {
+          "text": "restituisca",
+          "start": 65.453,
+          "end": 66.033
+        },
+        {
+          "text": "il",
+          "start": 66.073,
+          "end": 66.113
+        },
+        {
+          "text": "numero",
+          "start": 66.153,
+          "end": 66.413
+        },
+        {
+          "text": "di",
+          "start": 66.673,
+          "end": 66.773
+        },
+        {
+          "text": "uno",
+          "start": 66.914,
+          "end": 67.094
+        },
+        {
+          "text": "ricevuti",
+          "start": 67.154,
+          "end": 67.614
+        },
+        {
+          "text": "finora",
+          "start": 67.654,
+          "end": 68.034
+        }
+      ]
+    },
+    {
+      "start": 68.194,
+      "end": 69.374,
+      "text": "in una sequenza binaria.",
+      "words": [
+        {
+          "text": "in",
+          "start": 68.194,
+          "end": 68.274
+        },
+        {
+          "text": "una",
+          "start": 68.314,
+          "end": 68.434
+        },
+        {
+          "text": "sequenza",
+          "start": 68.494,
+          "end": 68.874
+        },
+        {
+          "text": "binaria.",
+          "start": 68.934,
+          "end": 69.374
+        }
+      ]
+    },
+    {
+      "start": 70.294,
+      "end": 76.435,
+      "text": "Basta un'unità lineare con w uguale uno, w cappello uguale uno e bias teta uguale",
+      "words": [
+        {
+          "text": "Basta",
+          "start": 70.294,
+          "end": 70.534
+        },
+        {
+          "text": "un'unità",
+          "start": 70.574,
+          "end": 70.934
+        },
+        {
+          "text": "lineare",
+          "start": 70.994,
+          "end": 71.494
+        },
+        {
+          "text": "con",
+          "start": 71.874,
+          "end": 72.015
+        },
+        {
+          "text": "w",
+          "start": 72.435,
+          "end": 72.47500000000001
+        },
+        {
+          "text": "uguale",
+          "start": 72.515,
+          "end": 72.855
+        },
+        {
+          "text": "uno,",
+          "start": 72.955,
+          "end": 73.695
+        },
+        {
+          "text": "w",
+          "start": 73.935,
+          "end": 73.97500000000001
+        },
+        {
+          "text": "cappello",
+          "start": 74.055,
+          "end": 74.495
+        },
+        {
+          "text": "uguale",
+          "start": 74.535,
+          "end": 74.795
+        },
+        {
+          "text": "uno",
+          "start": 74.895,
+          "end": 75.055
+        },
+        {
+          "text": "e",
+          "start": 75.395,
+          "end": 75.435
+        },
+        {
+          "text": "bias",
+          "start": 75.495,
+          "end": 75.875
+        },
+        {
+          "text": "teta",
+          "start": 75.915,
+          "end": 76.135
+        },
+        {
+          "text": "uguale",
+          "start": 76.175,
+          "end": 76.435
+        }
+      ]
+    },
+    {
+      "start": 76.515,
+      "end": 80.976,
+      "text": "zero, cioè h di t uguale x di t più h di t meno uno.",
+      "words": [
+        {
+          "text": "zero,",
+          "start": 76.515,
+          "end": 76.775
+        },
+        {
+          "text": "cioè",
+          "start": 77.096,
+          "end": 77.276
+        },
+        {
+          "text": "h",
+          "start": 77.696,
+          "end": 77.736
+        },
+        {
+          "text": "di",
+          "start": 77.816,
+          "end": 77.896
+        },
+        {
+          "text": "t",
+          "start": 77.956,
+          "end": 77.99600000000001
+        },
+        {
+          "text": "uguale",
+          "start": 78.396,
+          "end": 78.776
+        },
+        {
+          "text": "x",
+          "start": 79.036,
+          "end": 79.07600000000001
+        },
+        {
+          "text": "di",
+          "start": 79.176,
+          "end": 79.256
+        },
+        {
+          "text": "t",
+          "start": 79.336,
+          "end": 79.376
+        },
+        {
+          "text": "più",
+          "start": 79.716,
+          "end": 79.836
+        },
+        {
+          "text": "h",
+          "start": 80.176,
+          "end": 80.21600000000001
+        },
+        {
+          "text": "di",
+          "start": 80.296,
+          "end": 80.356
+        },
+        {
+          "text": "t",
+          "start": 80.416,
+          "end": 80.456
+        },
+        {
+          "text": "meno",
+          "start": 80.536,
+          "end": 80.716
+        },
+        {
+          "text": "uno.",
+          "start": 80.816,
+          "end": 80.976
+        }
+      ]
+    },
+    {
+      "start": 81.817,
+      "end": 86.197,
+      "text": "Sulla sequenza uno, zero, uno, uno, zero, uno, lo stato evolve in uno,",
+      "words": [
+        {
+          "text": "Sulla",
+          "start": 81.817,
+          "end": 82.037
+        },
+        {
+          "text": "sequenza",
+          "start": 82.077,
+          "end": 82.537
+        },
+        {
+          "text": "uno,",
+          "start": 82.757,
+          "end": 82.937
+        },
+        {
+          "text": "zero,",
+          "start": 83.077,
+          "end": 83.297
+        },
+        {
+          "text": "uno,",
+          "start": 83.437,
+          "end": 83.617
+        },
+        {
+          "text": "uno,",
+          "start": 83.697,
+          "end": 83.837
+        },
+        {
+          "text": "zero,",
+          "start": 83.957,
+          "end": 84.157
+        },
+        {
+          "text": "uno,",
+          "start": 84.277,
+          "end": 84.437
+        },
+        {
+          "text": "lo",
+          "start": 84.697,
+          "end": 84.777
+        },
+        {
+          "text": "stato",
+          "start": 84.837,
+          "end": 85.097
+        },
+        {
+          "text": "evolve",
+          "start": 85.137,
+          "end": 85.517
+        },
+        {
+          "text": "in",
+          "start": 85.597,
+          "end": 85.717
+        },
+        {
+          "text": "uno,",
+          "start": 85.997,
+          "end": 86.197
+        }
+      ]
+    },
+    {
+      "start": 86.597,
+      "end": 90.498,
+      "text": "uno, due, tre, tre, quattro: lo stato accumula la somma.",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 86.597,
+          "end": 86.798
+        },
+        {
+          "text": "due,",
+          "start": 87.038,
+          "end": 87.298
+        },
+        {
+          "text": "tre,",
+          "start": 87.498,
+          "end": 87.638
+        },
+        {
+          "text": "tre,",
+          "start": 87.878,
+          "end": 87.998
+        },
+        {
+          "text": "quattro:",
+          "start": 88.058,
+          "end": 88.498
+        },
+        {
+          "text": "lo",
+          "start": 88.998,
+          "end": 89.078
+        },
+        {
+          "text": "stato",
+          "start": 89.118,
+          "end": 89.398
+        },
+        {
+          "text": "accumula",
+          "start": 89.558,
+          "end": 89.998
+        },
+        {
+          "text": "la",
+          "start": 90.078,
+          "end": 90.138
+        },
+        {
+          "text": "somma.",
+          "start": 90.178,
+          "end": 90.498
+        }
+      ]
+    },
+    {
+      "start": 91.498,
+      "end": 96.359,
+      "text": "Una IDNN non può risolvere questo compito per sequenze di lunghezza arbitraria,",
+      "words": [
+        {
+          "text": "Una",
+          "start": 91.498,
+          "end": 91.638
+        },
+        {
+          "text": "IDNN",
+          "start": 91.738,
+          "end": 92.539
+        },
+        {
+          "text": "non",
+          "start": 93.179,
+          "end": 93.299
+        },
+        {
+          "text": "può",
+          "start": 93.339,
+          "end": 93.439
+        },
+        {
+          "text": "risolvere",
+          "start": 93.479,
+          "end": 93.919
+        },
+        {
+          "text": "questo",
+          "start": 93.939,
+          "end": 94.179
+        },
+        {
+          "text": "compito",
+          "start": 94.219,
+          "end": 94.599
+        },
+        {
+          "text": "per",
+          "start": 94.639,
+          "end": 94.759
+        },
+        {
+          "text": "sequenze",
+          "start": 94.799,
+          "end": 95.219
+        },
+        {
+          "text": "di",
+          "start": 95.259,
+          "end": 95.319
+        },
+        {
+          "text": "lunghezza",
+          "start": 95.379,
+          "end": 95.739
+        },
+        {
+          "text": "arbitraria,",
+          "start": 95.779,
+          "end": 96.359
+        }
+      ]
+    },
+    {
+      "start": 96.699,
+      "end": 98.9,
+      "text": "perché la sua memoria è confinata alla finestra.",
+      "words": [
+        {
+          "text": "perché",
+          "start": 96.699,
+          "end": 96.9
+        },
+        {
+          "text": "la",
+          "start": 96.94,
+          "end": 97.0
+        },
+        {
+          "text": "sua",
+          "start": 97.04,
+          "end": 97.16
+        },
+        {
+          "text": "memoria",
+          "start": 97.2,
+          "end": 97.54
+        },
+        {
+          "text": "è",
+          "start": 97.6,
+          "end": 97.64
+        },
+        {
+          "text": "confinata",
+          "start": 97.7,
+          "end": 98.24
+        },
+        {
+          "text": "alla",
+          "start": 98.28,
+          "end": 98.42
+        },
+        {
+          "text": "finestra.",
+          "start": 98.44,
+          "end": 98.9
+        }
+      ]
+    }
+  ]
+}

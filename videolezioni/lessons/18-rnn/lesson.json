@@ -18,49 +18,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.1 · Dati sequenziali e trasduzioni</div>\n  <h2 class=\"slide-title\">Notazione, domini sequenziali e tipi di trasduzione</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Notazione del capitolo</div>\n    <p>\\(\\x(t)\\): input al passo \\(t\\) · \\(\\h(t)\\): <strong>stato</strong> (strato nascosto) · \\(\\vv{o}(t)\\): uscita al passo \\(t\\).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Quando servono modelli per sequenze</div>\n      <ul class=\"clean-list\">\n        <li><strong>Storia degli input</strong>: processi dinamici, controllo, serie temporali.</li>\n        <li><strong>Lunghezza variabile</strong>: linguaggio, parlato, proteine, sensori.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Sequenze e trasduzioni</div>\n      <p>Sequenza \\(\\x(1), \\x(2), \\dots\\) con ordine seriale (es. \\(\\x(t) = [1, 0, 1, 0{,}7]\\)). Una <strong>trasduzione</strong> mappa una sequenza in un valore o in un'altra sequenza.</p>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 132\" class=\"diagram-svg\" aria-label=\"Tipi di trasduzione su sequenze\">\n      <defs>\n        <marker id=\"arr-t1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n        <marker id=\"arr-t1b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n        </marker>\n      </defs>\n      <!-- Panel 1: Classificazione di sequenze -->\n      <g id=\"g-tr1\">\n        <circle cx=\"30\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"72\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"114\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"156\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <line x1=\"40\" y1=\"82\" x2=\"60\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <line x1=\"82\" y1=\"82\" x2=\"102\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <line x1=\"124\" y1=\"82\" x2=\"144\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <circle cx=\"156\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <line x1=\"156\" y1=\"72\" x2=\"156\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <text x=\"93\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">Classificazione di sequenze</text>\n      </g>\n      <!-- Panel 2: Trasduzione isomorfa -->\n      <g id=\"g-tr2\">\n        <circle cx=\"242\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"284\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"326\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"368\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <line x1=\"252\" y1=\"82\" x2=\"272\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <line x1=\"294\" y1=\"82\" x2=\"314\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <line x1=\"336\" y1=\"82\" x2=\"356\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <circle cx=\"242\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <circle cx=\"284\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <circle cx=\"326\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <circle cx=\"368\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <line x1=\"242\" y1=\"72\" x2=\"242\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <line x1=\"284\" y1=\"72\" x2=\"284\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <line x1=\"326\" y1=\"72\" x2=\"326\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <line x1=\"368\" y1=\"72\" x2=\"368\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <text x=\"305\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">Trasduzione isomorfa</text>\n      </g>\n      <!-- Panel 3: Predizione del passo successivo -->\n      <g id=\"g-tr3\">\n        <circle cx=\"454\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"496\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"538\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <circle cx=\"580\" cy=\"82\" r=\"10\" class=\"svg-node\"/>\n        <line x1=\"464\" y1=\"82\" x2=\"484\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <line x1=\"506\" y1=\"82\" x2=\"526\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <line x1=\"548\" y1=\"82\" x2=\"568\" y2=\"82\" class=\"svg-edge\" marker-end=\"url(#arr-t1)\"/>\n        <circle cx=\"454\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <text x=\"454\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">2</text>\n        <circle cx=\"496\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <text x=\"496\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">3</text>\n        <circle cx=\"538\" cy=\"30\" r=\"11\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <text x=\"538\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">4</text>\n        <line x1=\"454\" y1=\"72\" x2=\"454\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <line x1=\"496\" y1=\"72\" x2=\"496\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <line x1=\"538\" y1=\"72\" x2=\"538\" y2=\"43\" class=\"svg-edge-accent\" marker-end=\"url(#arr-t1b)\"/>\n        <text x=\"517\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">Predizione passo successivo</text>\n      </g>\n    </svg>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 20.8,
+          "at": 23.1,
           "action": "show",
           "target": "#s1",
           "anchor": "fissiamo la notazione del capitolo"
         },
         {
-          "at": 38.74,
+          "at": 40.56,
           "action": "show",
           "target": "#s2",
           "anchor": "Perché servono modelli dedicati alle sequenze"
         },
         {
-          "at": 73.2,
+          "at": 75.35,
           "action": "show",
           "target": "#s3",
           "anchor": "Formalmente, i dati sono sequenze di vettori"
         },
         {
-          "at": 101.95,
+          "at": 101.09,
           "action": "show",
           "target": "#s4",
           "anchor": "Osserviamo nello schema i tipi principali"
         },
         {
-          "at": 104.81,
+          "at": 103.95,
           "action": "highlight",
           "target": "#g-tr1",
           "anchor": "classificazione di sequenze"
         },
         {
-          "at": 109.3,
+          "at": 108.05,
           "action": "highlight",
           "target": "#g-tr2",
           "anchor": "trasduzione isomorfa"
         },
         {
-          "at": 114.2,
+          "at": 112.47,
           "action": "highlight",
           "target": "#g-tr3",
           "anchor": "predizione del passo successivo"
         }
       ],
-      "duration_sec": 124.0,
+      "duration_sec": 121.27,
       "id": "scene-01",
       "audio_file": "audio/scene-01.wav",
       "subtitle_file": "subtitles/scene-01.json"
@@ -72,37 +72,37 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.2.1 · Memoria finita: le IDNN</div>\n  <h2 class=\"slide-title\">Approccio spaziale: finestra scorrevole e registro a scorrimento</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 360 215\" class=\"diagram-svg\" aria-label=\"Schema Input Delay Neural Network con finestra scorrevole\">\n        <defs>\n          <marker id=\"arr-idnn\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n          <marker id=\"arr-idnn-k\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <!-- Sequence cells -->\n        <rect x=\"14\" y=\"148\" width=\"54\" height=\"34\" rx=\"5\" fill=\"#F4F3EF\" stroke=\"#B5B2A8\" stroke-dasharray=\"4 3\"/>\n        <text x=\"41\" y=\"169\" text-anchor=\"middle\" class=\"svg-tick\">x(t−3)</text>\n        <!-- Sliding window highlight box -->\n        <g id=\"g-win\">\n          <rect x=\"76\" y=\"138\" width=\"212\" height=\"54\" rx=\"8\" fill=\"rgba(31,90,158,0.08)\" stroke=\"#1F5A9E\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\"/>\n          <rect x=\"86\" y=\"148\" width=\"58\" height=\"34\" rx=\"5\" class=\"svg-node\"/>\n          <text x=\"115\" y=\"169\" text-anchor=\"middle\" class=\"svg-math-sm\">x(t−2)</text>\n          <rect x=\"153\" y=\"148\" width=\"58\" height=\"34\" rx=\"5\" class=\"svg-node\"/>\n          <text x=\"182\" y=\"169\" text-anchor=\"middle\" class=\"svg-math-sm\">x(t−1)</text>\n          <rect x=\"220\" y=\"148\" width=\"58\" height=\"34\" rx=\"5\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n          <text x=\"249\" y=\"169\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">x(t)</text>\n          <text x=\"182\" y=\"206\" text-anchor=\"middle\" class=\"svg-caption\">Finestra scorrevole fissa (registro a scorrimento)</text>\n        </g>\n        <rect x=\"296\" y=\"148\" width=\"52\" height=\"34\" rx=\"5\" fill=\"#F4F3EF\" stroke=\"#B5B2A8\" stroke-dasharray=\"4 3\"/>\n        <text x=\"322\" y=\"169\" text-anchor=\"middle\" class=\"svg-tick\">x(t+1)</text>\n        <!-- Arrows to MLP -->\n        <line x1=\"115\" y1=\"148\" x2=\"152\" y2=\"96\" class=\"svg-edge-accent\" marker-end=\"url(#arr-idnn)\"/>\n        <line x1=\"182\" y1=\"148\" x2=\"182\" y2=\"96\" class=\"svg-edge-accent\" marker-end=\"url(#arr-idnn)\"/>\n        <line x1=\"249\" y1=\"148\" x2=\"212\" y2=\"96\" class=\"svg-edge-accent\" marker-end=\"url(#arr-idnn)\"/>\n        <!-- MLP block -->\n        <g id=\"g-mlp\">\n          <rect x=\"122\" y=\"50\" width=\"120\" height=\"44\" rx=\"8\" class=\"svg-node-fill\"/>\n          <text x=\"182\" y=\"77\" text-anchor=\"middle\" class=\"svg-math\">MLP standard</text>\n          <line x1=\"182\" y1=\"50\" x2=\"182\" y2=\"22\" class=\"svg-edge\" marker-end=\"url(#arr-idnn-k)\"/>\n          <text x=\"208\" y=\"24\" text-anchor=\"start\" class=\"svg-math-sm\">o(t)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">IDNN / Time-Delay NN</div>\n        <p>Se la finestra contiene abbastanza informazione, basta un <strong>normale addestramento di MLP</strong>. Le <strong>CNN</strong> estendono questa stessa idea alle immagini.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Due limiti strutturali</div>\n        <ul class=\"clean-list\">\n          <li>La dimensione della finestra va <strong>nota in anticipo</strong>.</li>\n          <li>Il <strong>numero di pesi</strong> dipende dalla finestra e il passato oltre il bordo viene perso.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 20.8,
+          "at": 22.13,
           "action": "show",
           "target": "#s1",
           "anchor": "finestra scorrevole di dimensione fissa"
         },
         {
-          "at": 27.74,
+          "at": 28.77,
           "action": "highlight",
           "target": "#g-win",
           "anchor": "raccoglie l'input corrente x di t"
         },
         {
-          "at": 42.43,
+          "at": 40.23,
           "action": "highlight",
           "target": "#g-mlp",
           "anchor": "normale Multi-Layer Perceptron"
         },
         {
-          "at": 49.46,
+          "at": 47.27,
           "action": "show",
           "target": "#s2",
           "anchor": "se la finestra contiene tutta l'informazione utile"
         },
         {
-          "at": 64.42,
+          "at": 61.61,
           "action": "show",
           "target": "#s3",
           "anchor": "Tuttavia i limiti strutturali sono evidenti"
         }
       ],
-      "duration_sec": 81.5,
+      "duration_sec": 75.72,
       "id": "scene-02",
       "audio_file": "audio/scene-02.wav",
       "subtitle_file": "subtitles/scene-02.json"
@@ -114,43 +114,43 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.2.2 · Unità ricorrente</div>\n  <h2 class=\"slide-title\">Connessione di feedback, ritardo unitario e accumulo di stato</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 340 185\" class=\"diagram-svg\" aria-label=\"Unità ricorrente con self-loop e ritardo unitario\">\n        <defs>\n          <marker id=\"arr-ur\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-urb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n        </defs>\n        <!-- Input arrow -->\n        <text x=\"26\" y=\"132\" text-anchor=\"middle\" class=\"svg-math\">x(t)</text>\n        <line x1=\"48\" y1=\"127\" x2=\"132\" y2=\"127\" class=\"svg-edge\" marker-end=\"url(#arr-ur)\"/>\n        <text x=\"90\" y=\"118\" text-anchor=\"middle\" class=\"svg-weight\">w</text>\n        <!-- Neuron circle -->\n        <circle cx=\"164\" cy=\"127\" r=\"28\" class=\"svg-neuron-main\"/>\n        <text x=\"164\" y=\"134\" text-anchor=\"middle\" class=\"svg-symbol\">f</text>\n        <!-- Output arrow -->\n        <line x1=\"192\" y1=\"127\" x2=\"294\" y2=\"127\" class=\"svg-edge\" style=\"stroke-width:2\" marker-end=\"url(#arr-ur)\"/>\n        <text x=\"315\" y=\"132\" text-anchor=\"middle\" class=\"svg-math\">h(t)</text>\n        <!-- Feedback loop with q^-1 -->\n        <g id=\"g-loop\">\n          <path d=\"M 244 127 L 244 44 L 194 44\" fill=\"none\" class=\"svg-edge-accent\" marker-end=\"url(#arr-urb)\"/>\n          <rect x=\"140\" y=\"26\" width=\"48\" height=\"36\" rx=\"6\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n          <text x=\"164\" y=\"49\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">q<tspan baseline-shift=\"super\" font-size=\"72%\">−1</tspan></text>\n          <line x1=\"164\" y1=\"62\" x2=\"164\" y2=\"96\" class=\"svg-edge-accent\" marker-end=\"url(#arr-urb)\"/>\n          <text x=\"148\" y=\"83\" text-anchor=\"end\" class=\"svg-math-sm svg-blue\">ŵ</text>\n          <text x=\"252\" y=\"84\" text-anchor=\"start\" class=\"svg-caption\">h(t−1)</text>\n        </g>\n        <text x=\"170\" y=\"175\" text-anchor=\"middle\" class=\"svg-caption\">Self-loop con ritardo unitario q<tspan baseline-shift=\"super\" font-size=\"72%\">−1</tspan></text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n        <div class=\"step-tag-inline\">Equazione dell'unità ricorrente</div>\n        \\[h(t) = \\tau\\big(h(t-1),\\x(t)\\big) = f\\!\\Big(\\w\\T\\x(t) + \\htmlId{f-what}{\\hat w\\,h(t-1)} + \\theta\\Big), \\quad h(0)=0\\]\n        <p class=\"math-note\">Lo stato \\(h(t)\\) riassume il <strong>contesto passato</strong> in modo <strong>adattivo</strong> tramite i pesi.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Esempio · Contare gli 1</div>\n        <p>Unità lineare con \\(w=1,\\ \\hat w=1,\\ \\theta=0 \\implies \\htmlId{f-cnt}{h(t) = x(t) + h(t-1)}\\).</p>\n        <p style=\"margin-top:6px\">Input: <code>1, 0, 1, 1, 0, 1</code> → Stato: <strong><code>1, 1, 2, 3, 3, 4</code></strong>. Una IDNN non può farlo per lunghezze arbitrarie.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.67,
+          "at": 4.44,
           "action": "show",
           "target": "#s1",
           "anchor": "dotata di una connessione di feedback"
         },
         {
-          "at": 19.48,
+          "at": 17.7,
           "action": "highlight",
           "target": "#g-loop",
           "anchor": "ritardo unitario q alla meno uno"
         },
         {
-          "at": 25.89,
+          "at": 23.68,
           "action": "show",
           "target": "#s2",
           "anchor": "L'equazione è: h di t uguale tau"
         },
         {
-          "at": 49.14,
+          "at": 44.35,
           "action": "highlight",
           "target": "#f-what",
           "anchor": "il termine w cappello h di t meno uno"
         },
         {
-          "at": 64.73,
+          "at": 58.75,
           "action": "show",
           "target": "#s3",
           "anchor": "esempio illuminante: contare gli uno"
         },
         {
-          "at": 82.48,
+          "at": 77.58,
           "action": "highlight",
           "target": "#f-cnt",
           "anchor": "h di t uguale x di t più h di t meno uno"
         }
       ],
-      "duration_sec": 107.2,
+      "duration_sec": 99.15,
       "id": "scene-03",
       "audio_file": "audio/scene-03.wav",
       "subtitle_file": "subtitles/scene-03.json"
@@ -162,43 +162,43 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.2.3–18.2.4 · Sistemi a transizione di stato e Simple RNN</div>\n  <h2 class=\"slide-title\">Modello dinamico continuo, rete di Elman e tre assunzioni</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Sistema a transizione di stato</div>\n      \\[\\begin{cases} \\h(t) = \\tau\\big(\\h(t-1), \\x(t)\\big) \\\\ \\vv{o}(t) = g\\big(\\h(t), \\x(t)\\big) \\end{cases} \\quad \\h(0) = \\vv{0}\\]\n      <p style=\"margin-top:6px\">\\(\\h(t)\\) è un <strong>embedding continuo</strong> della sotto-sequenza fino a \\(t\\) (diverso dagli stati discreti di automi e HMM).</p>\n    </div>\n    <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n      <div class=\"step-tag-inline\">Simple RNN (Elman)</div>\n      \\[h_i(t) = f\\!\\Big(\\sum_{j=1}^{n} w_{ij} x_j(t) + \\sum_{k} \\hat w_{ik} h_k(t-1) + \\theta_i\\Big)\\]\n      \\[\\htmlId{f-elman}{\\h(t) = f\\big(W\\x(t) + \\hat W\\h(t-1) + \\boldsymbol{\\theta}\\big)}\\]\n      <p class=\"math-note\"><strong>Approssimatore universale</strong> di sistemi dinamici non lineari e <strong>Turing-equivalente</strong>.</p>\n    </div>\n  </div>\n  <div class=\"grid-3\">\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">1. Causalità</div>\n      <p>L'uscita al tempo \\(t_0\\) dipende solo dagli input \\(t \\le t_0\\): necessaria e sufficiente per avere uno stato interno.</p>\n    </div>\n    <div id=\"s4\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Stazionarietà</div>\n      <p>La transizione \\(\\tau\\) è <strong>la stessa</strong> a ogni istante: sequenze di lunghezza variabile con modello di taglia fissa.</p>\n    </div>\n    <div id=\"s5\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">3. Adattività</div>\n      <p>Le funzioni di transizione sono reti neurali con pesi liberi, <strong>apprese direttamente dai dati</strong>.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 2.45,
+          "at": 2.46,
           "action": "show",
           "target": "#s1",
           "anchor": "sistema a transizione di stato"
         },
         {
-          "at": 59.34,
+          "at": 51.73,
           "action": "show",
           "target": "#s2",
           "anchor": "nasce la Simple RNN di Elman"
         },
         {
-          "at": 92.19,
+          "at": 79.17,
           "action": "highlight",
           "target": "#f-elman",
           "anchor": "in forma compatta, h di t uguale"
         },
         {
-          "at": 117.87,
+          "at": 103.77,
           "action": "show",
           "target": "#s3",
           "anchor": "la causalità, per cui l'uscita"
         },
         {
-          "at": 128.89,
+          "at": 113.71,
           "action": "show",
           "target": "#s4",
           "anchor": "la stazionarietà, per cui tau è identica"
         },
         {
-          "at": 138.28,
+          "at": 122.59,
           "action": "show",
           "target": "#s5",
           "anchor": "e l'adattività, perché le transizioni"
         }
       ],
-      "duration_sec": 145.6,
+      "duration_sec": 127.92,
       "id": "scene-04",
       "audio_file": "audio/scene-04.wav",
       "subtitle_file": "subtitles/scene-04.json"
@@ -210,37 +210,37 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.3 · Apprendimento: l'unfolding</div>\n  <h2 class=\"slide-title\">Dalla rete ricorrente alla rete feedforward profonda</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 165\" class=\"diagram-svg\" aria-label=\"Unfolding di una RNN su tre passi temporali\">\n      <defs>\n        <marker id=\"arr-uf\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n        <marker id=\"arr-ufb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n        </marker>\n      </defs>\n      <!-- Folded RNN -->\n      <g id=\"g-folded\">\n        <circle cx=\"56\" cy=\"76\" r=\"22\" class=\"svg-neuron-main\"/>\n        <text x=\"56\" y=\"82\" text-anchor=\"middle\" class=\"svg-math\">h</text>\n        <path d=\"M 44 56 C 24 14, 88 14, 68 56\" fill=\"none\" class=\"svg-edge-accent\" marker-end=\"url(#arr-ufb)\"/>\n        <text x=\"56\" y=\"18\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">Ŵ</text>\n        <text x=\"56\" y=\"148\" text-anchor=\"middle\" class=\"svg-math-sm\">x(t)</text>\n        <line x1=\"56\" y1=\"132\" x2=\"56\" y2=\"100\" class=\"svg-edge\" marker-end=\"url(#arr-uf)\"/>\n        <text x=\"72\" y=\"119\" text-anchor=\"start\" class=\"svg-weight\">W</text>\n      </g>\n      <!-- Double arrow -->\n      <text x=\"120\" y=\"82\" text-anchor=\"middle\" class=\"svg-symbol\">⇒</text>\n      <!-- Unfolded steps -->\n      <g id=\"g-unfolded\">\n        <text x=\"166\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">0</text>\n        <line x1=\"178\" y1=\"76\" x2=\"212\" y2=\"76\" class=\"svg-edge\" marker-end=\"url(#arr-uf)\"/>\n        <!-- Step 1 -->\n        <circle cx=\"240\" cy=\"76\" r=\"24\" class=\"svg-node-fill\"/>\n        <text x=\"240\" y=\"81\" text-anchor=\"middle\" class=\"svg-math-sm\">h(1)</text>\n        <text x=\"240\" y=\"148\" text-anchor=\"middle\" class=\"svg-math-sm\">x(1)</text>\n        <line x1=\"240\" y1=\"132\" x2=\"240\" y2=\"102\" class=\"svg-edge\" marker-end=\"url(#arr-uf)\"/>\n        <text x=\"252\" y=\"119\" text-anchor=\"start\" class=\"svg-weight\">W</text>\n        <!-- Step 1 -> 2 -->\n        <line x1=\"264\" y1=\"76\" x2=\"332\" y2=\"76\" class=\"svg-edge-accent\" marker-end=\"url(#arr-ufb)\"/>\n        <text x=\"298\" y=\"66\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">Ŵ</text>\n        <!-- Step 2 -->\n        <circle cx=\"360\" cy=\"76\" r=\"24\" class=\"svg-node-fill\"/>\n        <text x=\"360\" y=\"81\" text-anchor=\"middle\" class=\"svg-math-sm\">h(2)</text>\n        <text x=\"360\" y=\"148\" text-anchor=\"middle\" class=\"svg-math-sm\">x(2)</text>\n        <line x1=\"360\" y1=\"132\" x2=\"360\" y2=\"102\" class=\"svg-edge\" marker-end=\"url(#arr-uf)\"/>\n        <text x=\"372\" y=\"119\" text-anchor=\"start\" class=\"svg-weight\">W</text>\n        <!-- Step 2 -> 3 -->\n        <line x1=\"384\" y1=\"76\" x2=\"452\" y2=\"76\" class=\"svg-edge-accent\" marker-end=\"url(#arr-ufb)\"/>\n        <text x=\"418\" y=\"66\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">Ŵ</text>\n        <!-- Step 3 -->\n        <circle cx=\"480\" cy=\"76\" r=\"24\" class=\"svg-node-fill\"/>\n        <text x=\"480\" y=\"81\" text-anchor=\"middle\" class=\"svg-math-sm\">h(3)</text>\n        <text x=\"480\" y=\"148\" text-anchor=\"middle\" class=\"svg-math-sm\">x(3)</text>\n        <line x1=\"480\" y1=\"132\" x2=\"480\" y2=\"102\" class=\"svg-edge\" marker-end=\"url(#arr-uf)\"/>\n        <text x=\"492\" y=\"119\" text-anchor=\"start\" class=\"svg-weight\">W</text>\n        <!-- Output -->\n        <line x1=\"504\" y1=\"76\" x2=\"572\" y2=\"76\" class=\"svg-edge\" style=\"stroke-width:2\" marker-end=\"url(#arr-uf)\"/>\n        <text x=\"600\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">o(3)</text>\n      </g>\n    </svg>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Il punto chiave</div>\n      <p>Sulla <strong>rete di codifica</strong> srotolata si applica la <strong>backpropagation</strong>: una rete diversa per ogni sequenza, con tanti strati quanti i passi e <strong>pesi condivisi</strong> \\(W, \\hat W\\).</p>\n    </div>\n    <div id=\"s3\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Algoritmi di calcolo del gradiente</div>\n      <ul class=\"clean-list\">\n        <li><strong>BPTT</strong> (<em>Back-Propagation Through Time</em>): retropropagazione all'indietro lungo la sequenza srotolata.</li>\n        <li><strong>RTRL</strong> (<em>Real-Time Recurrent Learning</em>): calcolo in avanti del medesimo gradiente.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.12,
+          "at": 6.41,
           "action": "show",
           "target": "#s1",
           "anchor": "srotolamento nel tempo"
         },
         {
-          "at": 12.54,
+          "at": 11.67,
           "action": "highlight",
           "target": "#g-folded",
           "anchor": "rete compatta con il suo self-loop"
         },
         {
-          "at": 25.89,
+          "at": 25.07,
           "action": "highlight",
           "target": "#g-unfolded",
           "anchor": "srotolamento su tre passi"
         },
         {
-          "at": 55.24,
+          "at": 53.23,
           "action": "show",
           "target": "#s2",
           "anchor": "Ecco il punto chiave per l'apprendimento"
         },
         {
-          "at": 78.38,
+          "at": 75.58,
           "action": "show",
           "target": "#s3",
           "anchor": "Gli algoritmi storici BPTT"
         }
       ],
-      "duration_sec": 91.4,
+      "duration_sec": 90.85,
       "id": "scene-05",
       "audio_file": "audio/scene-05.wav",
       "subtitle_file": "subtitles/scene-05.json"
@@ -252,49 +252,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.3 · Dipendenze a lungo termine e architetture con gate</div>\n  <h2 class=\"slide-title\">Vanishing gradient, cella LSTM, GRU e bidirezionalità</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione · Dipendenze a lungo termine</div>\n    <p>La rete srotolata è <strong>molto profonda</strong>: il <strong>vanishing gradient</strong> impedisce ai segnali di errore di raggiungere input molto lontani nel passato.</p>\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 385 198\" class=\"diagram-svg\" aria-label=\"Schema dei gate di una cella LSTM\">\n        <defs>\n          <marker id=\"arr-ls\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-lsb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n        </defs>\n        <!-- Outer cell box -->\n        <rect x=\"46\" y=\"16\" width=\"290\" height=\"148\" rx=\"12\" fill=\"#FAF9F5\" stroke=\"#B5B2A8\" stroke-width=\"1.4\"/>\n        <!-- Cell state highway -->\n        <g id=\"g-cell\">\n          <text x=\"20\" y=\"42\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">c(t−1)</text>\n          <line x1=\"42\" y1=\"38\" x2=\"108\" y2=\"38\" class=\"svg-edge-accent\" marker-end=\"url(#arr-lsb)\"/>\n          <circle cx=\"122\" cy=\"38\" r=\"11\" class=\"svg-node\" style=\"stroke:#1F5A9E\"/>\n          <text x=\"122\" y=\"43\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">×</text>\n          <line x1=\"133\" y1=\"38\" x2=\"208\" y2=\"38\" class=\"svg-edge-accent\" marker-end=\"url(#arr-lsb)\"/>\n          <circle cx=\"222\" cy=\"38\" r=\"11\" class=\"svg-node\" style=\"stroke:#1F5A9E\"/>\n          <text x=\"222\" y=\"43\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">+</text>\n          <line x1=\"233\" y1=\"38\" x2=\"342\" y2=\"38\" class=\"svg-edge-accent\" marker-end=\"url(#arr-lsb)\"/>\n          <text x=\"364\" y=\"42\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">c(t)</text>\n        </g>\n        <!-- Forget gate -->\n        <g id=\"g-fg\">\n          <rect x=\"104\" y=\"96\" width=\"36\" height=\"24\" rx=\"5\" fill=\"#FCEAE8\" stroke=\"#C0392B\"/>\n          <text x=\"122\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\" style=\"fill:#C0392B;font-weight:600\">σ (f)</text>\n          <line x1=\"122\" y1=\"96\" x2=\"122\" y2=\"52\" stroke=\"#C0392B\" stroke-width=\"1.5\" marker-end=\"url(#arr-ls)\"/>\n        </g>\n        <!-- Input gate + candidate -->\n        <g id=\"g-ig\">\n          <rect x=\"164\" y=\"96\" width=\"36\" height=\"24\" rx=\"5\" fill=\"#E8F0FA\" stroke=\"#1F5A9E\"/>\n          <text x=\"182\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\" style=\"fill:#1F5A9E;font-weight:600\">σ (i)</text>\n          <rect x=\"206\" y=\"96\" width=\"36\" height=\"24\" rx=\"5\" class=\"svg-node-fill\"/>\n          <text x=\"224\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\">tanh</text>\n          <circle cx=\"222\" cy=\"72\" r=\"9\" class=\"svg-node\"/>\n          <text x=\"222\" y=\"76\" text-anchor=\"middle\" class=\"svg-tick\">×</text>\n          <path d=\"M 182 96 L 182 72 L 211 72\" fill=\"none\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n          <line x1=\"222\" y1=\"96\" x2=\"222\" y2=\"83\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n          <line x1=\"222\" y1=\"63\" x2=\"222\" y2=\"51\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n        </g>\n        <!-- Output gate -->\n        <g id=\"g-og\">\n          <rect x=\"262\" y=\"96\" width=\"36\" height=\"24\" rx=\"5\" fill=\"#E8F5EC\" stroke=\"#2D7A4F\"/>\n          <text x=\"280\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\" style=\"fill:#2D7A4F;font-weight:600\">σ (o)</text>\n          <rect x=\"288\" y=\"54\" width=\"34\" height=\"20\" rx=\"5\" class=\"svg-node-fill\"/>\n          <text x=\"305\" y=\"68\" text-anchor=\"middle\" class=\"svg-tick\">tanh</text>\n          <path d=\"M 305 38 L 305 52\" fill=\"none\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n          <circle cx=\"305\" cy=\"94\" r=\"9\" class=\"svg-node\"/>\n          <text x=\"305\" y=\"98\" text-anchor=\"middle\" class=\"svg-tick\">×</text>\n          <line x1=\"305\" y1=\"74\" x2=\"305\" y2=\"83\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n          <path d=\"M 280 96 L 280 94 L 294 94\" fill=\"none\" stroke=\"#2D7A4F\" stroke-width=\"1.4\" marker-end=\"url(#arr-ls)\"/>\n          <path d=\"M 305 103 L 305 142 L 342 142\" fill=\"none\" class=\"svg-edge\" style=\"stroke-width:1.8\" marker-end=\"url(#arr-ls)\"/>\n          <text x=\"364\" y=\"146\" text-anchor=\"middle\" class=\"svg-math-sm\">h(t)</text>\n        </g>\n        <!-- Bottom bus from h(t-1) and x(t) -->\n        <text x=\"20\" y=\"146\" text-anchor=\"middle\" class=\"svg-math-sm\">h(t−1)</text>\n        <path d=\"M 42 142 L 280 142 L 280 122\" fill=\"none\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n        <line x1=\"122\" y1=\"142\" x2=\"122\" y2=\"122\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n        <line x1=\"182\" y1=\"142\" x2=\"182\" y2=\"122\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n        <line x1=\"224\" y1=\"142\" x2=\"224\" y2=\"122\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n        <text x=\"80\" y=\"188\" text-anchor=\"middle\" class=\"svg-math-sm\">x(t)</text>\n        <line x1=\"80\" y1=\"172\" x2=\"80\" y2=\"144\" class=\"svg-edge\" marker-end=\"url(#arr-ls)\"/>\n        <text x=\"225\" y=\"188\" text-anchor=\"middle\" class=\"svg-caption\">LSTM: gate selezionano informazione e gradiente</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">LSTM (Long Short-Term Memory)</div>\n        <p>Unità <strong>gate</strong> regolano il flusso della memoria e del gradiente. Nata per <strong>dipendenze lunghe</strong>: non va usata acriticamente su serie brevi.</p>\n      </div>\n      <div id=\"s4\" class=\"box box-primary cue-hidden\">\n        <div class=\"box-label\">Varianti e composizioni</div>\n        <ul class=\"clean-list\">\n          <li><strong>GRU</strong> (<em>Gated Recurrent Units</em>): LSTM semplificate.</li>\n          <li><strong>RNN bidirezionali</strong>: integrano contesto a sinistra e a destra.</li>\n          <li>Spesso si combinano <strong>reti profonde e RNN</strong>.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.67,
+          "at": 4.54,
           "action": "show",
           "target": "#s1",
           "anchor": "la rete srotolata è molto profonda"
         },
         {
-          "at": 33.74,
+          "at": 28.1,
           "action": "show",
           "target": "#s2",
           "anchor": "Le LSTM, acronimo di Long Short-Term Memory"
         },
         {
-          "at": 49.14,
+          "at": 42.72,
           "action": "highlight",
           "target": "#g-fg",
           "anchor": "il forget gate decide"
         },
         {
-          "at": 52.4,
+          "at": 46.69,
           "action": "highlight",
           "target": "#g-ig",
           "anchor": "l'input gate filtra"
         },
         {
-          "at": 57.71,
+          "at": 51.47,
           "action": "highlight",
           "target": "#g-og",
           "anchor": "l'output gate modula"
         },
         {
-          "at": 71.98,
+          "at": 63.29,
           "action": "show",
           "target": "#s3",
           "anchor": "Un'avvertenza pratica importante"
         },
         {
-          "at": 83.7,
+          "at": 74.99,
           "action": "show",
           "target": "#s4",
           "anchor": "Esistono poi le GRU"
         }
       ],
-      "duration_sec": 106.5,
+      "duration_sec": 96.15,
       "id": "scene-06",
       "audio_file": "audio/scene-06.wav",
       "subtitle_file": "subtitles/scene-06.json"
@@ -306,49 +306,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.4.1 · Approcci collegati: Transformer e attenzione</div>\n  <h2 class=\"slide-title\">Accesso diretto all'intera sequenza e self-attention</h2>\n  <div id=\"s1\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Altri approcci alle sequenze:</span>\n    <span class=\"pill\">HMM (probabilità di transizione)</span>\n    <span class=\"pill\">SOM per sequenze</span>\n    <span class=\"pill\">Distanze e kernel per stringhe</span>\n    <span class=\"pill pill-accent\">Transformer</span>\n    <span class=\"pill pill-accent\">RNN randomizzate (ESN)</span>\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 360 175\" class=\"diagram-svg\" aria-label=\"Meccanismo di attenzione sulla frase see that girl\">\n        <!-- Tokens bottom -->\n        <rect x=\"26\" y=\"122\" width=\"76\" height=\"32\" rx=\"6\" class=\"svg-node\"/>\n        <text x=\"64\" y=\"142\" text-anchor=\"middle\" class=\"svg-math-sm\">see</text>\n        <rect x=\"142\" y=\"122\" width=\"76\" height=\"32\" rx=\"6\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <text x=\"180\" y=\"142\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">that</text>\n        <rect x=\"258\" y=\"122\" width=\"76\" height=\"32\" rx=\"6\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <text x=\"296\" y=\"142\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">girl</text>\n        <!-- Attention arcs -->\n        <path d=\"M 180 122 C 165 62, 79 62, 64 122\" fill=\"none\" stroke=\"#9A9890\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/>\n        <text x=\"115\" y=\"72\" text-anchor=\"middle\" class=\"svg-caption\">peso basso</text>\n        <g id=\"g-attn-hi\">\n          <path d=\"M 180 122 C 198 42, 278 42, 296 122\" fill=\"none\" stroke=\"#1F5A9E\" stroke-width=\"3.2\"/>\n          <text x=\"240\" y=\"54\" text-anchor=\"middle\" class=\"svg-caption\" style=\"fill:#1F5A9E;font-weight:700\">prodotto scalare alto</text>\n        </g>\n        <rect x=\"60\" y=\"12\" width=\"240\" height=\"24\" rx=\"5\" fill=\"#E8F0FA\" stroke=\"#1F5A9E\" stroke-width=\"1\"/>\n        <text x=\"180\" y=\"28\" text-anchor=\"middle\" class=\"svg-caption\" style=\"fill:#1F5A9E;font-weight:600\">Elaborazione simultanea · Multi-Head Attention</text>\n      </svg>\n    </div>\n    <div id=\"s3\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Come calcola uno strato di attenzione</div>\n      <ol class=\"algo-list\">\n        <li id=\"a1\">Tutti gli elementi sono elaborati <strong>simultaneamente</strong> (non sequenzialmente).</li>\n        <li id=\"a2\">Pesi da <strong>prodotto scalare scalato</strong> tra <em>query</em> dell'elemento e vettori delle altre parole.</li>\n        <li id=\"a3\">Combinazione pesata per la nuova rappresentazione, ripetuta in <strong>strati successivi</strong>.</li>\n        <li id=\"a4\"><strong>Multi-head</strong>: più attenzioni in parallelo con pesi propri (anche su patch di immagini nei <em>Vision Transformer</em>).</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 1.63,
+          "at": 2.36,
           "action": "show",
           "target": "#s1",
           "anchor": "molti altri approcci ai dati sequenziali"
         },
         {
-          "at": 18.76,
+          "at": 20.14,
           "action": "show",
           "target": "#s2",
           "anchor": "Esaminiamo da vicino il transformer"
         },
         {
-          "at": 49.24,
+          "at": 49.88,
           "action": "show",
           "target": "#s3",
           "anchor": "Il calcolo si articola in quattro passi"
         },
         {
-          "at": 52.91,
+          "at": 53.44,
           "action": "highlight",
           "target": "#a1",
           "anchor": "tutti gli elementi della sequenza sono elaborati simultaneamente"
         },
         {
-          "at": 64.12,
+          "at": 62.85,
           "action": "highlight",
           "target": "#a2, #g-attn-hi",
           "anchor": "prodotto scalare scalato"
         },
         {
-          "at": 80.33,
+          "at": 79.19,
           "action": "highlight",
           "target": "#a3",
           "anchor": "la nuova rappresentazione di ogni elemento"
         },
         {
-          "at": 93.18,
+          "at": 91.23,
           "action": "highlight",
           "target": "#a4",
           "anchor": "multi-head attention"
         }
       ],
-      "duration_sec": 103.0,
+      "duration_sec": 99.72,
       "id": "scene-07",
       "audio_file": "audio/scene-07.wav",
       "subtitle_file": "subtitles/scene-07.json"
@@ -360,37 +360,37 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.4.2 · Echo State Network e Reservoir Computing</div>\n  <h2 class=\"slide-title\">Reservoir casuale contrattivo, spazio markoviano e DeepESN</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 430 212\" class=\"diagram-svg\" aria-label=\"Architettura Echo State Network con reservoir casuale e readout addestrato\">\n        <defs>\n          <marker id=\"arr-esn\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-esn-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"4.5\" markerHeight=\"4.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#7A7974\"/>\n          </marker>\n          <marker id=\"arr-esn-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n        </defs>\n        <!-- Input -->\n        <text x=\"32\" y=\"107\" text-anchor=\"middle\" class=\"svg-math\">x(t)</text>\n        <line x1=\"56\" y1=\"102\" x2=\"148\" y2=\"102\" class=\"svg-edge\" marker-end=\"url(#arr-esn)\"/>\n        <text x=\"102\" y=\"92\" text-anchor=\"middle\" class=\"svg-weight\">W (fisso)</text>\n        <!-- Reservoir circle -->\n        <g id=\"g-res\">\n          <circle cx=\"225\" cy=\"102\" r=\"72\" fill=\"#EFECE4\" stroke=\"#6E6E6E\" stroke-width=\"1.8\"/>\n          <line x1=\"207.1\" y1=\"111.0\" x2=\"258.1\" y2=\"94.1\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"231.6\" y1=\"75.1\" x2=\"181.0\" y2=\"101.9\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"235.6\" y1=\"129.9\" x2=\"219.2\" y2=\"63.5\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"192.6\" y1=\"89.5\" x2=\"220.7\" y2=\"149.8\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"260.1\" y1=\"88.6\" x2=\"194.8\" y2=\"62.5\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"203.6\" y1=\"134.1\" x2=\"233.5\" y2=\"79.8\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"222.6\" y1=\"59.1\" x2=\"277.0\" y2=\"102.1\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"257.6\" y1=\"133.8\" x2=\"246.2\" y2=\"135.4\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"177.4\" y1=\"111.6\" x2=\"194.6\" y2=\"133.2\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"256.5\" y1=\"66.9\" x2=\"207.3\" y2=\"107.5\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"230.4\" y1=\"154.2\" x2=\"256.9\" y2=\"137.6\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"187.3\" y1=\"66.1\" x2=\"188.4\" y2=\"74.3\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <line x1=\"281.0\" y1=\"101.4\" x2=\"265.9\" y2=\"70.5\" stroke=\"#7A7974\" stroke-width=\"1.2\" marker-end=\"url(#arr-esn-g)\"/>\n        <circle cx=\"200.4\" cy=\"113.2\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"237.8\" cy=\"71.9\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"237.3\" cy=\"136.7\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"189.6\" cy=\"83.2\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"266.6\" cy=\"91.2\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"200.2\" cy=\"140.2\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"217.1\" cy=\"54.7\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"264.5\" cy=\"132.9\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"173.0\" cy=\"106.1\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"261.9\" cy=\"62.4\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"224.5\" cy=\"157.9\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"186.4\" cy=\"59.1\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n        <circle cx=\"284.1\" cy=\"107.7\" r=\"5.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.3\"/>\n          <text x=\"225\" y=\"194\" text-anchor=\"middle\" class=\"svg-caption\">Reservoir Ŵ (sparso, casuale, non addestrato)</text>\n        </g>\n        <!-- Readout -->\n        <g id=\"g-ro\">\n          <line x1=\"297\" y1=\"102\" x2=\"378\" y2=\"102\" class=\"svg-vec-red\" marker-end=\"url(#arr-esn-r)\"/>\n          <text x=\"338\" y=\"90\" text-anchor=\"middle\" class=\"svg-math-sm svg-red\">W<tspan baseline-shift=\"sub\" font-size=\"72%\">out</tspan></text>\n          <text x=\"342\" y=\"122\" text-anchor=\"middle\" class=\"svg-caption\" style=\"fill:#C0392B;font-weight:600\">readout lineare</text>\n          <text x=\"342\" y=\"136\" text-anchor=\"middle\" class=\"svg-caption\" style=\"fill:#C0392B\">(ridge regression)</text>\n          <text x=\"404\" y=\"107\" text-anchor=\"middle\" class=\"svg-math\">o(t)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-theorem cue-hidden\">\n        <div class=\"box-label\">Echo State Property (ESP)</div>\n        <p>Transizione <strong>contrattiva</strong> (controllando il <strong>raggio spettrale</strong> \\(\\rho(\\hat W)\\), max modulo degli autovalori): stabilità dinamica e dipendenza asintotica solo dalla storia degli input.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Organizzazione markoviana &amp; DeepESN</div>\n        <p>Stati più vicini per <strong>suffisso comune</strong> più lungo (es. <code>aaaaa</code> e <code>abbaa</code> condividono <code>aa</code>): bias architetturale valido anche per RNN addestrate.</p>\n        <p style=\"margin-top:6px\"><strong>DeepESN</strong>: più reservoir impilati → <strong>scale temporali multiple</strong> (strati alti = frequenze più basse / variazioni lente).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 17.94,
+          "at": 17.9,
           "action": "show",
           "target": "#s1",
           "anchor": "Il modello rappresentativo è la Echo State Network"
         },
         {
-          "at": 24.88,
+          "at": 25.66,
           "action": "highlight",
           "target": "#g-res",
           "anchor": "grande reservoir di unità ricorrenti"
         },
         {
-          "at": 35.69,
+          "at": 36.66,
           "action": "highlight",
           "target": "#g-ro",
           "anchor": "readout feedforward di unità lineari"
         },
         {
-          "at": 47.51,
+          "at": 48.85,
           "action": "show",
           "target": "#s2",
           "anchor": "Affinché il sistema funzioni serve la Echo State Property"
         },
         {
-          "at": 80.03,
+          "at": 81.05,
           "action": "show",
           "target": "#s3",
           "anchor": "organizzano lo spazio degli stati in modo markoviano"
         }
       ],
-      "duration_sec": 121.5,
+      "duration_sec": 120.55,
       "id": "scene-08",
       "audio_file": "audio/scene-08.wav",
       "subtitle_file": "subtitles/scene-08.json"
@@ -402,49 +402,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.4.3 · Verso gli alberi: le reti ricorsive (RecNN)</div>\n  <h2 class=\"slide-title\">Codifica bottom-up dalle foglie alla radice</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 360 225\" class=\"diagram-svg\" aria-label=\"Rete neurale ricorsiva srotolata su un albero\">\n        <defs>\n          <marker id=\"arr-rec\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-recb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n        </defs>\n        <!-- Output from root -->\n        <g id=\"g-root\">\n          <line x1=\"180\" y1=\"62\" x2=\"180\" y2=\"28\" class=\"svg-edge-accent\" marker-end=\"url(#arr-recb)\"/>\n          <text x=\"180\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption\" style=\"fill:#1F5A9E;font-weight:600\">uscita per l'albero</text>\n          <circle cx=\"180\" cy=\"80\" r=\"18\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n          <text x=\"180\" y=\"85\" text-anchor=\"middle\" class=\"svg-math svg-blue\">a</text>\n        </g>\n        <!-- Edges mid -> root -->\n        <line x1=\"120\" y1=\"126\" x2=\"165\" y2=\"93\" class=\"svg-edge\" style=\"stroke-width:1.8\" marker-end=\"url(#arr-rec)\"/>\n        <line x1=\"240\" y1=\"126\" x2=\"195\" y2=\"93\" class=\"svg-edge\" style=\"stroke-width:1.8\" marker-end=\"url(#arr-rec)\"/>\n        <!-- Mid nodes -->\n        <g id=\"g-mid\">\n          <circle cx=\"108\" cy=\"138\" r=\"18\" class=\"svg-node-fill\"/>\n          <text x=\"108\" y=\"143\" text-anchor=\"middle\" class=\"svg-math\">b</text>\n          <circle cx=\"252\" cy=\"138\" r=\"18\" class=\"svg-node-fill\"/>\n          <text x=\"252\" y=\"143\" text-anchor=\"middle\" class=\"svg-math\">c</text>\n        </g>\n        <!-- Edges leaves -> mid -->\n        <line x1=\"68\" y1=\"184\" x2=\"96\" y2=\"153\" class=\"svg-edge\" style=\"stroke-width:1.8\" marker-end=\"url(#arr-rec)\"/>\n        <line x1=\"148\" y1=\"184\" x2=\"120\" y2=\"153\" class=\"svg-edge\" style=\"stroke-width:1.8\" marker-end=\"url(#arr-rec)\"/>\n        <line x1=\"252\" y1=\"180\" x2=\"252\" y2=\"158\" class=\"svg-edge\" style=\"stroke-width:1.8\" marker-end=\"url(#arr-rec)\"/>\n        <!-- Leaf nodes -->\n        <g id=\"g-leaf\">\n          <circle cx=\"58\" cy=\"196\" r=\"17\" class=\"svg-node\"/>\n          <text x=\"58\" y=\"201\" text-anchor=\"middle\" class=\"svg-math\">d</text>\n          <circle cx=\"158\" cy=\"196\" r=\"17\" class=\"svg-node\"/>\n          <text x=\"158\" y=\"201\" text-anchor=\"middle\" class=\"svg-math\">e</text>\n          <circle cx=\"252\" cy=\"196\" r=\"17\" class=\"svg-node\"/>\n          <text x=\"252\" y=\"201\" text-anchor=\"middle\" class=\"svg-math\">f</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n        <div class=\"step-tag-inline\">Transizione su albero (RecNN)</div>\n        \\[\\htmlId{f-recnn}{\\h(v) = \\tau\\big(\\h(\\text{figli di } v),\\, \\x(v)\\big)}\\]\n        <p class=\"math-note\">Stati calcolati <strong>dalle foglie alla radice</strong>: ogni \\(\\h(v)\\) codifica l'intero sottoalbero radicato in \\(v\\).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Condivisione dei pesi e struttura variabile</div>\n        <p>Le stesse unità valgono per tutti i nodi e tutti gli alberi del dataset; la rete di codifica srotolata si adatta alla forma di ciascun albero. Prossimo passo: <strong>grafi generali</strong> (Cap. 19).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 24.26,
+          "at": 22.54,
           "action": "show",
           "target": "#s1",
           "anchor": "Osserviamo l'albero nello schema"
         },
         {
-          "at": 26.3,
+          "at": 24.68,
           "action": "highlight",
           "target": "#g-leaf",
           "anchor": "le foglie d, e, f"
         },
         {
-          "at": 32.42,
+          "at": 29.49,
           "action": "highlight",
           "target": "#g-mid",
           "anchor": "nodi intermedi b e c"
         },
         {
-          "at": 36.09,
+          "at": 32.83,
           "action": "highlight",
           "target": "#g-root",
           "anchor": "stato della radice a"
         },
         {
-          "at": 43.02,
+          "at": 37.77,
           "action": "show",
           "target": "#s2",
           "anchor": "lo stato h di v di ogni nodo"
         },
         {
-          "at": 52.4,
+          "at": 44.61,
           "action": "highlight",
           "target": "#f-recnn",
           "anchor": "h di v uguale tau degli stati dei figli"
         },
         {
-          "at": 73.2,
+          "at": 63.51,
           "action": "show",
           "target": "#s3",
           "anchor": "le unità sono le stesse per tutti i nodi"
         }
       ],
-      "duration_sec": 97.6,
+      "duration_sec": 81.72,
       "id": "scene-09",
       "audio_file": "audio/scene-09.wav",
       "subtitle_file": "subtitles/scene-09.json"
@@ -456,43 +456,43 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">18.5 · Chiusura del capitolo</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"pk1\"><strong>Unità ricorrente</strong>: \\(h(t) = f(\\w\\T\\x(t) + \\hat w\\,h(t-1) + \\theta)\\); lo stato codifica la sotto-sequenza passata.</li>\n        <li id=\"pk2\"><strong>Sistemi a transizione di stato</strong>: assunzioni di causalità, stazionarietà e adattività.</li>\n        <li id=\"pk3\"><strong>Unfolding + backprop</strong> (BPTT, RTRL): rete profonda con pesi condivisi, vanishing gradient sulle dipendenze lunghe (LSTM, GRU).</li>\n        <li id=\"pk4\"><strong>Approcci collegati</strong>: Transformer (attenzione globale), ESN (reservoir contrattivo + readout lineare), RecNN (alberi dalle foglie alla radice).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Perché servono modelli per dati sequenziali? Cos'è una trasduzione?</li>\n        <li>Differenza tra IDNN e RNN; perché una IDNN non può contare gli 1 in sequenze arbitrarie?</li>\n        <li>Scrivere l'equazione di un'unità ricorrente e di una Simple RNN.</li>\n        <li>Quali sono le assunzioni di causalità, stazionarietà e adattività?</li>\n        <li>Cos'è l'unfolding e come permette di usare la backpropagation?</li>\n        <li>Cos'è una Echo State Network e cos'è la Echo State Property?</li>\n        <li>Come si estendono le RNN agli alberi?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 0.82,
+          "at": 0.8,
           "action": "show",
           "target": "#s1",
           "anchor": "quattro punti chiave del capitolo"
         },
         {
-          "at": 5.09,
+          "at": 4.74,
           "action": "highlight",
           "target": "#pk1",
           "anchor": "Primo: l'unità ricorrente"
         },
         {
-          "at": 20.38,
+          "at": 19.6,
           "action": "highlight",
           "target": "#pk2",
           "anchor": "Secondo: i modelli ricorrenti"
         },
         {
-          "at": 27.51,
+          "at": 27.95,
           "action": "highlight",
           "target": "#pk3",
           "anchor": "Terzo: l'unfolding"
         },
         {
-          "at": 44.13,
+          "at": 49.23,
           "action": "highlight",
           "target": "#pk4",
           "anchor": "Quarto: abbiamo visto gli approcci collegati"
         },
         {
-          "at": 62.08,
+          "at": 67.19,
           "action": "show",
           "target": "#s2",
           "anchor": "rispondere a queste sette domande"
         }
       ],
-      "duration_sec": 98.4,
+      "duration_sec": 105.97,
       "id": "scene-10",
       "audio_file": "audio/scene-10.wav",
       "subtitle_file": "subtitles/scene-10.json"

@@ -1,0 +1,999 @@
+{
+  "duration": 66.871,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.381,
+      "text": "Ora possiamo formulare l'addestramento della SVM come problema di ottimizzazione vincolata.",
+      "words": [
+        {
+          "text": "Ora",
+          "start": 0.08,
+          "end": 0.22
+        },
+        {
+          "text": "possiamo",
+          "start": 0.26,
+          "end": 0.6
+        },
+        {
+          "text": "formulare",
+          "start": 0.68,
+          "end": 1.26
+        },
+        {
+          "text": "l'addestramento",
+          "start": 1.3,
+          "end": 2.0
+        },
+        {
+          "text": "della",
+          "start": 2.04,
+          "end": 2.24
+        },
+        {
+          "text": "SVM",
+          "start": 2.44,
+          "end": 2.92
+        },
+        {
+          "text": "come",
+          "start": 3.1,
+          "end": 3.28
+        },
+        {
+          "text": "problema",
+          "start": 3.36,
+          "end": 3.781
+        },
+        {
+          "text": "di",
+          "start": 3.841,
+          "end": 3.901
+        },
+        {
+          "text": "ottimizzazione",
+          "start": 3.961,
+          "end": 4.721
+        },
+        {
+          "text": "vincolata.",
+          "start": 4.761,
+          "end": 5.381
+        }
+      ]
+    },
+    {
+      "start": 6.081,
+      "end": 11.882,
+      "text": "Nel problema primale hard margin, dato T, cerchiamo w e b che minimizzano Psi di",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 6.081,
+          "end": 6.221
+        },
+        {
+          "text": "problema",
+          "start": 6.261,
+          "end": 6.641
+        },
+        {
+          "text": "primale",
+          "start": 6.701,
+          "end": 7.101
+        },
+        {
+          "text": "hard",
+          "start": 7.181,
+          "end": 7.361
+        },
+        {
+          "text": "margin,",
+          "start": 7.461,
+          "end": 7.961
+        },
+        {
+          "text": "dato",
+          "start": 8.201,
+          "end": 8.421
+        },
+        {
+          "text": "T,",
+          "start": 8.541,
+          "end": 8.581
+        },
+        {
+          "text": "cerchiamo",
+          "start": 9.061,
+          "end": 9.521
+        },
+        {
+          "text": "w",
+          "start": 9.641,
+          "end": 9.681
+        },
+        {
+          "text": "e",
+          "start": 10.221,
+          "end": 10.261
+        },
+        {
+          "text": "b",
+          "start": 10.341,
+          "end": 10.381
+        },
+        {
+          "text": "che",
+          "start": 10.601,
+          "end": 10.681
+        },
+        {
+          "text": "minimizzano",
+          "start": 10.741,
+          "end": 11.381
+        },
+        {
+          "text": "Psi",
+          "start": 11.462,
+          "end": 11.642
+        },
+        {
+          "text": "di",
+          "start": 11.802,
+          "end": 11.882
+        }
+      ]
+    },
+    {
+      "start": 12.002,
+      "end": 14.582,
+      "text": "w uguale uno mezzo w trasposto w,",
+      "words": [
+        {
+          "text": "w",
+          "start": 12.002,
+          "end": 12.042
+        },
+        {
+          "text": "uguale",
+          "start": 12.622,
+          "end": 12.982
+        },
+        {
+          "text": "uno",
+          "start": 13.042,
+          "end": 13.162
+        },
+        {
+          "text": "mezzo",
+          "start": 13.162,
+          "end": 13.502
+        },
+        {
+          "text": "w",
+          "start": 13.562,
+          "end": 13.602
+        },
+        {
+          "text": "trasposto",
+          "start": 13.962,
+          "end": 14.462
+        },
+        {
+          "text": "w,",
+          "start": 14.542,
+          "end": 14.582
+        }
+      ]
+    },
+    {
+      "start": 15.362,
+      "end": 19.263,
+      "text": "cioè minimizzano la norma di w in forma comoda e differenziabile,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 15.362,
+          "end": 15.482
+        },
+        {
+          "text": "minimizzano",
+          "start": 15.622,
+          "end": 16.262
+        },
+        {
+          "text": "la",
+          "start": 16.322,
+          "end": 16.402
+        },
+        {
+          "text": "norma",
+          "start": 16.462,
+          "end": 16.782
+        },
+        {
+          "text": "di",
+          "start": 16.822,
+          "end": 16.902
+        },
+        {
+          "text": "w",
+          "start": 16.942,
+          "end": 16.982
+        },
+        {
+          "text": "in",
+          "start": 17.462,
+          "end": 17.522
+        },
+        {
+          "text": "forma",
+          "start": 17.562,
+          "end": 17.822
+        },
+        {
+          "text": "comoda",
+          "start": 17.902,
+          "end": 18.262
+        },
+        {
+          "text": "e",
+          "start": 18.302,
+          "end": 18.342
+        },
+        {
+          "text": "differenziabile,",
+          "start": 18.382,
+          "end": 19.263
+        }
+      ]
+    },
+    {
+      "start": 19.643,
+      "end": 24.123,
+      "text": "soggetto agli l vincoli d con i per w trasposto x con i più b",
+      "words": [
+        {
+          "text": "soggetto",
+          "start": 19.643,
+          "end": 20.083
+        },
+        {
+          "text": "agli",
+          "start": 20.123,
+          "end": 20.263
+        },
+        {
+          "text": "l",
+          "start": 20.403,
+          "end": 20.443
+        },
+        {
+          "text": "vincoli",
+          "start": 20.523,
+          "end": 20.923
+        },
+        {
+          "text": "d",
+          "start": 21.083,
+          "end": 21.123
+        },
+        {
+          "text": "con",
+          "start": 21.243,
+          "end": 21.423
+        },
+        {
+          "text": "i",
+          "start": 21.483,
+          "end": 21.523
+        },
+        {
+          "text": "per",
+          "start": 21.723,
+          "end": 21.863
+        },
+        {
+          "text": "w",
+          "start": 21.943,
+          "end": 21.983
+        },
+        {
+          "text": "trasposto",
+          "start": 22.503,
+          "end": 23.083
+        },
+        {
+          "text": "x",
+          "start": 23.283,
+          "end": 23.323
+        },
+        {
+          "text": "con",
+          "start": 23.443,
+          "end": 23.603
+        },
+        {
+          "text": "i",
+          "start": 23.643,
+          "end": 23.683
+        },
+        {
+          "text": "più",
+          "start": 23.843,
+          "end": 23.963
+        },
+        {
+          "text": "b",
+          "start": 24.083,
+          "end": 24.123
+        }
+      ]
+    },
+    {
+      "start": 24.403,
+      "end": 27.864,
+      "text": "maggiore o uguale a uno, che impongono zero errori di classificazione.",
+      "words": [
+        {
+          "text": "maggiore",
+          "start": 24.403,
+          "end": 24.723
+        },
+        {
+          "text": "o",
+          "start": 24.743,
+          "end": 24.783
+        },
+        {
+          "text": "uguale",
+          "start": 24.763,
+          "end": 25.003
+        },
+        {
+          "text": "a",
+          "start": 25.043,
+          "end": 25.083
+        },
+        {
+          "text": "uno,",
+          "start": 25.163,
+          "end": 25.323
+        },
+        {
+          "text": "che",
+          "start": 25.623,
+          "end": 25.703
+        },
+        {
+          "text": "impongono",
+          "start": 25.763,
+          "end": 26.163
+        },
+        {
+          "text": "zero",
+          "start": 26.303,
+          "end": 26.523
+        },
+        {
+          "text": "errori",
+          "start": 26.543,
+          "end": 26.864
+        },
+        {
+          "text": "di",
+          "start": 26.904,
+          "end": 26.964
+        },
+        {
+          "text": "classificazione.",
+          "start": 27.004,
+          "end": 27.864
+        }
+      ]
+    },
+    {
+      "start": 28.904,
+      "end": 31.384,
+      "text": "La funzione obiettivo è quadratica e convessa in w,",
+      "words": [
+        {
+          "text": "La",
+          "start": 28.904,
+          "end": 28.964
+        },
+        {
+          "text": "funzione",
+          "start": 29.004,
+          "end": 29.364
+        },
+        {
+          "text": "obiettivo",
+          "start": 29.404,
+          "end": 29.824
+        },
+        {
+          "text": "è",
+          "start": 29.884,
+          "end": 29.924
+        },
+        {
+          "text": "quadratica",
+          "start": 29.984,
+          "end": 30.504
+        },
+        {
+          "text": "e",
+          "start": 30.604,
+          "end": 30.644
+        },
+        {
+          "text": "convessa",
+          "start": 30.724,
+          "end": 31.184
+        },
+        {
+          "text": "in",
+          "start": 31.244,
+          "end": 31.304
+        },
+        {
+          "text": "w,",
+          "start": 31.344,
+          "end": 31.384
+        }
+      ]
+    },
+    {
+      "start": 32.184,
+      "end": 34.325,
+      "text": "mentre i vincoli sono lineari in w e b.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 32.184,
+          "end": 32.424
+        },
+        {
+          "text": "i",
+          "start": 32.484,
+          "end": 32.524
+        },
+        {
+          "text": "vincoli",
+          "start": 32.524,
+          "end": 32.864
+        },
+        {
+          "text": "sono",
+          "start": 32.924,
+          "end": 33.084
+        },
+        {
+          "text": "lineari",
+          "start": 33.144,
+          "end": 33.644
+        },
+        {
+          "text": "in",
+          "start": 33.704,
+          "end": 33.764
+        },
+        {
+          "text": "w",
+          "start": 33.804,
+          "end": 33.844
+        },
+        {
+          "text": "e",
+          "start": 34.224,
+          "end": 34.264
+        },
+        {
+          "text": "b.",
+          "start": 34.285,
+          "end": 34.325
+        }
+      ]
+    },
+    {
+      "start": 35.005,
+      "end": 37.965,
+      "text": "È quindi un problema di programmazione quadratica, o QP,",
+      "words": [
+        {
+          "text": "È",
+          "start": 35.005,
+          "end": 35.045
+        },
+        {
+          "text": "quindi",
+          "start": 35.125,
+          "end": 35.385
+        },
+        {
+          "text": "un",
+          "start": 35.445,
+          "end": 35.525
+        },
+        {
+          "text": "problema",
+          "start": 35.545,
+          "end": 35.945
+        },
+        {
+          "text": "di",
+          "start": 35.985,
+          "end": 36.045
+        },
+        {
+          "text": "programmazione",
+          "start": 36.105,
+          "end": 36.725
+        },
+        {
+          "text": "quadratica,",
+          "start": 36.745,
+          "end": 37.325
+        },
+        {
+          "text": "o",
+          "start": 37.545,
+          "end": 37.585
+        },
+        {
+          "text": "QP,",
+          "start": 37.685,
+          "end": 37.965
+        }
+      ]
+    },
+    {
+      "start": 38.425,
+      "end": 43.746,
+      "text": "che garantisce l'assenza di minimi locali spuri e si considera risolto da pacchetti standard esistenti.",
+      "words": [
+        {
+          "text": "che",
+          "start": 38.425,
+          "end": 38.505
+        },
+        {
+          "text": "garantisce",
+          "start": 38.565,
+          "end": 39.065
+        },
+        {
+          "text": "l'assenza",
+          "start": 39.105,
+          "end": 39.545
+        },
+        {
+          "text": "di",
+          "start": 39.585,
+          "end": 39.645
+        },
+        {
+          "text": "minimi",
+          "start": 39.685,
+          "end": 39.985
+        },
+        {
+          "text": "locali",
+          "start": 40.045,
+          "end": 40.365
+        },
+        {
+          "text": "spuri",
+          "start": 40.405,
+          "end": 40.765
+        },
+        {
+          "text": "e",
+          "start": 40.905,
+          "end": 40.945
+        },
+        {
+          "text": "si",
+          "start": 41.005,
+          "end": 41.085
+        },
+        {
+          "text": "considera",
+          "start": 41.145,
+          "end": 41.585
+        },
+        {
+          "text": "risolto",
+          "start": 41.645,
+          "end": 42.066
+        },
+        {
+          "text": "da",
+          "start": 42.126,
+          "end": 42.186
+        },
+        {
+          "text": "pacchetti",
+          "start": 42.246,
+          "end": 42.606
+        },
+        {
+          "text": "standard",
+          "start": 42.666,
+          "end": 43.066
+        },
+        {
+          "text": "esistenti.",
+          "start": 43.126,
+          "end": 43.746
+        }
+      ]
+    },
+    {
+      "start": 44.546,
+      "end": 47.426,
+      "text": "Ciò che ci interessa capire a fondo è come è formulato,",
+      "words": [
+        {
+          "text": "Ciò",
+          "start": 44.546,
+          "end": 44.646
+        },
+        {
+          "text": "che",
+          "start": 44.686,
+          "end": 44.746
+        },
+        {
+          "text": "ci",
+          "start": 44.786,
+          "end": 44.846
+        },
+        {
+          "text": "interessa",
+          "start": 44.906,
+          "end": 45.266
+        },
+        {
+          "text": "capire",
+          "start": 45.326,
+          "end": 45.626
+        },
+        {
+          "text": "a",
+          "start": 45.666,
+          "end": 45.706
+        },
+        {
+          "text": "fondo",
+          "start": 45.766,
+          "end": 46.106
+        },
+        {
+          "text": "è",
+          "start": 46.266,
+          "end": 46.306
+        },
+        {
+          "text": "come",
+          "start": 46.426,
+          "end": 46.646
+        },
+        {
+          "text": "è",
+          "start": 46.686,
+          "end": 46.726
+        },
+        {
+          "text": "formulato,",
+          "start": 46.766,
+          "end": 47.426
+        }
+      ]
+    },
+    {
+      "start": 47.766,
+      "end": 51.107,
+      "text": "la relazione tra support vector e moltiplicatori di Lagrange,",
+      "words": [
+        {
+          "text": "la",
+          "start": 47.766,
+          "end": 47.826
+        },
+        {
+          "text": "relazione",
+          "start": 47.866,
+          "end": 48.366
+        },
+        {
+          "text": "tra",
+          "start": 48.426,
+          "end": 48.526
+        },
+        {
+          "text": "support",
+          "start": 48.626,
+          "end": 48.966
+        },
+        {
+          "text": "vector",
+          "start": 49.046,
+          "end": 49.486
+        },
+        {
+          "text": "e",
+          "start": 49.626,
+          "end": 49.666
+        },
+        {
+          "text": "moltiplicatori",
+          "start": 49.747,
+          "end": 50.467
+        },
+        {
+          "text": "di",
+          "start": 50.507,
+          "end": 50.567
+        },
+        {
+          "text": "Lagrange,",
+          "start": 50.607,
+          "end": 51.107
+        }
+      ]
+    },
+    {
+      "start": 51.427,
+      "end": 52.627,
+      "text": "e la forma della soluzione.",
+      "words": [
+        {
+          "text": "e",
+          "start": 51.427,
+          "end": 51.467
+        },
+        {
+          "text": "la",
+          "start": 51.507,
+          "end": 51.567
+        },
+        {
+          "text": "forma",
+          "start": 51.607,
+          "end": 51.827
+        },
+        {
+          "text": "della",
+          "start": 51.867,
+          "end": 52.027
+        },
+        {
+          "text": "soluzione.",
+          "start": 52.067,
+          "end": 52.627
+        }
+      ]
+    },
+    {
+      "start": 53.287,
+      "end": 57.888,
+      "text": "Un limite però è decisivo: risolvere il primale in questa forma scala con la dimensione",
+      "words": [
+        {
+          "text": "Un",
+          "start": 53.287,
+          "end": 53.347
+        },
+        {
+          "text": "limite",
+          "start": 53.387,
+          "end": 53.687
+        },
+        {
+          "text": "però",
+          "start": 53.727,
+          "end": 53.867
+        },
+        {
+          "text": "è",
+          "start": 53.947,
+          "end": 53.987
+        },
+        {
+          "text": "decisivo:",
+          "start": 54.047,
+          "end": 54.567
+        },
+        {
+          "text": "risolvere",
+          "start": 54.847,
+          "end": 55.307
+        },
+        {
+          "text": "il",
+          "start": 55.327,
+          "end": 55.387
+        },
+        {
+          "text": "primale",
+          "start": 55.427,
+          "end": 55.807
+        },
+        {
+          "text": "in",
+          "start": 55.867,
+          "end": 55.947
+        },
+        {
+          "text": "questa",
+          "start": 55.987,
+          "end": 56.267
+        },
+        {
+          "text": "forma",
+          "start": 56.307,
+          "end": 56.587
+        },
+        {
+          "text": "scala",
+          "start": 56.687,
+          "end": 57.067
+        },
+        {
+          "text": "con",
+          "start": 57.147,
+          "end": 57.288
+        },
+        {
+          "text": "la",
+          "start": 57.308,
+          "end": 57.368
+        },
+        {
+          "text": "dimensione",
+          "start": 57.408,
+          "end": 57.888
+        }
+      ]
+    },
+    {
+      "start": 58.088,
+      "end": 58.808,
+      "text": "n dell'input.",
+      "words": [
+        {
+          "text": "n",
+          "start": 58.088,
+          "end": 58.128
+        },
+        {
+          "text": "dell'input.",
+          "start": 58.208,
+          "end": 58.808
+        }
+      ]
+    },
+    {
+      "start": 59.268,
+      "end": 62.408,
+      "text": "Quando vorremo lavorare in spazi di feature enormi o infiniti,",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 59.268,
+          "end": 59.468
+        },
+        {
+          "text": "vorremo",
+          "start": 59.508,
+          "end": 59.808
+        },
+        {
+          "text": "lavorare",
+          "start": 59.848,
+          "end": 60.228
+        },
+        {
+          "text": "in",
+          "start": 60.288,
+          "end": 60.348
+        },
+        {
+          "text": "spazi",
+          "start": 60.368,
+          "end": 60.668
+        },
+        {
+          "text": "di",
+          "start": 60.748,
+          "end": 60.808
+        },
+        {
+          "text": "feature",
+          "start": 60.868,
+          "end": 61.228
+        },
+        {
+          "text": "enormi",
+          "start": 61.248,
+          "end": 61.648
+        },
+        {
+          "text": "o",
+          "start": 61.768,
+          "end": 61.808
+        },
+        {
+          "text": "infiniti,",
+          "start": 61.868,
+          "end": 62.408
+        }
+      ]
+    },
+    {
+      "start": 62.748,
+      "end": 66.629,
+      "text": "questa dipendenza sarà proibitiva: per questo passiamo ora al problema duale.",
+      "words": [
+        {
+          "text": "questa",
+          "start": 62.748,
+          "end": 62.968
+        },
+        {
+          "text": "dipendenza",
+          "start": 63.008,
+          "end": 63.468
+        },
+        {
+          "text": "sarà",
+          "start": 63.548,
+          "end": 63.708
+        },
+        {
+          "text": "proibitiva:",
+          "start": 63.808,
+          "end": 64.448
+        },
+        {
+          "text": "per",
+          "start": 64.788,
+          "end": 64.889
+        },
+        {
+          "text": "questo",
+          "start": 64.929,
+          "end": 65.169
+        },
+        {
+          "text": "passiamo",
+          "start": 65.209,
+          "end": 65.529
+        },
+        {
+          "text": "ora",
+          "start": 65.609,
+          "end": 65.709
+        },
+        {
+          "text": "al",
+          "start": 65.749,
+          "end": 65.809
+        },
+        {
+          "text": "problema",
+          "start": 65.829,
+          "end": 66.209
+        },
+        {
+          "text": "duale.",
+          "start": 66.269,
+          "end": 66.629
+        }
+      ]
+    }
+  ]
+}

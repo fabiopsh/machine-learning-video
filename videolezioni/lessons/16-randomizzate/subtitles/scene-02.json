@@ -1,0 +1,1061 @@
+{
+  "duration": 84.504,
+  "segments": [
+    {
+      "start": 0.245,
+      "end": 1.705,
+      "text": "Veniamo ora al cuore del capitolo:",
+      "words": [
+        {
+          "text": "Veniamo",
+          "start": 0.245,
+          "end": 0.565
+        },
+        {
+          "text": "ora",
+          "start": 0.645,
+          "end": 0.745
+        },
+        {
+          "text": "al",
+          "start": 0.785,
+          "end": 0.845
+        },
+        {
+          "text": "cuore",
+          "start": 0.885,
+          "end": 1.085
+        },
+        {
+          "text": "del",
+          "start": 1.125,
+          "end": 1.245
+        },
+        {
+          "text": "capitolo:",
+          "start": 1.265,
+          "end": 1.705
+        }
+      ]
+    },
+    {
+      "start": 2.385,
+      "end": 8.185,
+      "text": "possiamo sfruttare la potenza di un Multi-Layer Perceptron o di una rete ricorrente senza affrontare",
+      "words": [
+        {
+          "text": "possiamo",
+          "start": 2.385,
+          "end": 2.705
+        },
+        {
+          "text": "sfruttare",
+          "start": 2.765,
+          "end": 3.145
+        },
+        {
+          "text": "la",
+          "start": 3.185,
+          "end": 3.245
+        },
+        {
+          "text": "potenza",
+          "start": 3.285,
+          "end": 3.725
+        },
+        {
+          "text": "di",
+          "start": 3.805,
+          "end": 3.865
+        },
+        {
+          "text": "un",
+          "start": 3.905,
+          "end": 3.965
+        },
+        {
+          "text": "Multi-Layer",
+          "start": 4.005,
+          "end": 4.605
+        },
+        {
+          "text": "Perceptron",
+          "start": 4.665,
+          "end": 5.285
+        },
+        {
+          "text": "o",
+          "start": 5.565,
+          "end": 5.605
+        },
+        {
+          "text": "di",
+          "start": 5.665,
+          "end": 5.705
+        },
+        {
+          "text": "una",
+          "start": 5.745,
+          "end": 5.885
+        },
+        {
+          "text": "rete",
+          "start": 5.945,
+          "end": 6.145
+        },
+        {
+          "text": "ricorrente",
+          "start": 6.205,
+          "end": 6.785
+        },
+        {
+          "text": "senza",
+          "start": 7.265,
+          "end": 7.545
+        },
+        {
+          "text": "affrontare",
+          "start": 7.585,
+          "end": 8.185
+        }
+      ]
+    },
+    {
+      "start": 8.285,
+      "end": 11.326,
+      "text": "lunghi cicli iterativi di addestramento degli strati nascosti?",
+      "words": [
+        {
+          "text": "lunghi",
+          "start": 8.285,
+          "end": 8.565
+        },
+        {
+          "text": "cicli",
+          "start": 8.645,
+          "end": 8.966
+        },
+        {
+          "text": "iterativi",
+          "start": 9.006,
+          "end": 9.506
+        },
+        {
+          "text": "di",
+          "start": 9.566,
+          "end": 9.606
+        },
+        {
+          "text": "addestramento",
+          "start": 9.646,
+          "end": 10.266
+        },
+        {
+          "text": "degli",
+          "start": 10.306,
+          "end": 10.486
+        },
+        {
+          "text": "strati",
+          "start": 10.526,
+          "end": 10.826
+        },
+        {
+          "text": "nascosti?",
+          "start": 10.846,
+          "end": 11.326
+        }
+      ]
+    },
+    {
+      "start": 12.566,
+      "end": 15.026,
+      "text": "L'idea affonda in una lunga tradizione storica.",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 12.566,
+          "end": 12.826
+        },
+        {
+          "text": "affonda",
+          "start": 12.946,
+          "end": 13.326
+        },
+        {
+          "text": "in",
+          "start": 13.386,
+          "end": 13.446
+        },
+        {
+          "text": "una",
+          "start": 13.486,
+          "end": 13.606
+        },
+        {
+          "text": "lunga",
+          "start": 13.686,
+          "end": 13.986
+        },
+        {
+          "text": "tradizione",
+          "start": 14.026,
+          "end": 14.546
+        },
+        {
+          "text": "storica.",
+          "start": 14.606,
+          "end": 15.026
+        }
+      ]
+    },
+    {
+      "start": 15.786,
+      "end": 21.547,
+      "text": "Già nel Perceptron originale di Rosenblatt era presente un'area di proiezione connessa casualmente all'input,",
+      "words": [
+        {
+          "text": "Già",
+          "start": 15.786,
+          "end": 15.866
+        },
+        {
+          "text": "nel",
+          "start": 15.946,
+          "end": 16.066
+        },
+        {
+          "text": "Perceptron",
+          "start": 16.106,
+          "end": 16.606
+        },
+        {
+          "text": "originale",
+          "start": 16.666,
+          "end": 17.126
+        },
+        {
+          "text": "di",
+          "start": 17.166,
+          "end": 17.226
+        },
+        {
+          "text": "Rosenblatt",
+          "start": 17.266,
+          "end": 17.827
+        },
+        {
+          "text": "era",
+          "start": 18.027,
+          "end": 18.147
+        },
+        {
+          "text": "presente",
+          "start": 18.207,
+          "end": 18.567
+        },
+        {
+          "text": "un'area",
+          "start": 18.627,
+          "end": 19.027
+        },
+        {
+          "text": "di",
+          "start": 19.067,
+          "end": 19.147
+        },
+        {
+          "text": "proiezione",
+          "start": 19.187,
+          "end": 19.807
+        },
+        {
+          "text": "connessa",
+          "start": 19.867,
+          "end": 20.367
+        },
+        {
+          "text": "casualmente",
+          "start": 20.427,
+          "end": 20.967
+        },
+        {
+          "text": "all'input,",
+          "start": 21.007,
+          "end": 21.547
+        }
+      ]
+    },
+    {
+      "start": 22.127,
+      "end": 26.087,
+      "text": "mentre venivano apprese soltanto le connessioni verso le risposte finali.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 22.127,
+          "end": 22.367
+        },
+        {
+          "text": "venivano",
+          "start": 22.427,
+          "end": 22.767
+        },
+        {
+          "text": "apprese",
+          "start": 22.787,
+          "end": 23.167
+        },
+        {
+          "text": "soltanto",
+          "start": 23.227,
+          "end": 23.727
+        },
+        {
+          "text": "le",
+          "start": 23.927,
+          "end": 24.007
+        },
+        {
+          "text": "connessioni",
+          "start": 24.067,
+          "end": 24.807
+        },
+        {
+          "text": "verso",
+          "start": 24.867,
+          "end": 25.127
+        },
+        {
+          "text": "le",
+          "start": 25.167,
+          "end": 25.227
+        },
+        {
+          "text": "risposte",
+          "start": 25.267,
+          "end": 25.667
+        },
+        {
+          "text": "finali.",
+          "start": 25.707,
+          "end": 26.087
+        }
+      ]
+    },
+    {
+      "start": 27.548,
+      "end": 33.088,
+      "text": "Nella letteratura moderna queste architetture sono note principalmente con i nomi di RVFL,",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 27.548,
+          "end": 27.768
+        },
+        {
+          "text": "letteratura",
+          "start": 27.808,
+          "end": 28.368
+        },
+        {
+          "text": "moderna",
+          "start": 28.428,
+          "end": 28.948
+        },
+        {
+          "text": "queste",
+          "start": 29.088,
+          "end": 29.328
+        },
+        {
+          "text": "architetture",
+          "start": 29.368,
+          "end": 29.948
+        },
+        {
+          "text": "sono",
+          "start": 30.008,
+          "end": 30.168
+        },
+        {
+          "text": "note",
+          "start": 30.248,
+          "end": 30.468
+        },
+        {
+          "text": "principalmente",
+          "start": 30.508,
+          "end": 31.248
+        },
+        {
+          "text": "con",
+          "start": 31.288,
+          "end": 31.408
+        },
+        {
+          "text": "i",
+          "start": 31.448,
+          "end": 31.488
+        },
+        {
+          "text": "nomi",
+          "start": 31.528,
+          "end": 31.708
+        },
+        {
+          "text": "di",
+          "start": 31.768,
+          "end": 31.848
+        },
+        {
+          "text": "RVFL,",
+          "start": 32.268,
+          "end": 33.088
+        }
+      ]
+    },
+    {
+      "start": 33.508,
+      "end": 39.329,
+      "text": "cioè Random Vector Functional Link, di ELM, cioè Extreme Learning Machine,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 33.508,
+          "end": 33.668
+        },
+        {
+          "text": "Random",
+          "start": 33.968,
+          "end": 34.328
+        },
+        {
+          "text": "Vector",
+          "start": 34.428,
+          "end": 34.788
+        },
+        {
+          "text": "Functional",
+          "start": 34.868,
+          "end": 35.388
+        },
+        {
+          "text": "Link,",
+          "start": 35.448,
+          "end": 35.749
+        },
+        {
+          "text": "di",
+          "start": 36.229,
+          "end": 36.309
+        },
+        {
+          "text": "ELM,",
+          "start": 36.509,
+          "end": 37.249
+        },
+        {
+          "text": "cioè",
+          "start": 37.489,
+          "end": 37.689
+        },
+        {
+          "text": "Extreme",
+          "start": 37.909,
+          "end": 38.409
+        },
+        {
+          "text": "Learning",
+          "start": 38.469,
+          "end": 38.829
+        },
+        {
+          "text": "Machine,",
+          "start": 38.869,
+          "end": 39.329
+        }
+      ]
+    },
+    {
+      "start": 39.849,
+      "end": 43.909,
+      "text": "e comprendono anche le reti RBF con centri scelti casualmente.",
+      "words": [
+        {
+          "text": "e",
+          "start": 39.849,
+          "end": 39.889
+        },
+        {
+          "text": "comprendono",
+          "start": 39.929,
+          "end": 40.449
+        },
+        {
+          "text": "anche",
+          "start": 40.529,
+          "end": 40.729
+        },
+        {
+          "text": "le",
+          "start": 40.789,
+          "end": 40.849
+        },
+        {
+          "text": "reti",
+          "start": 40.909,
+          "end": 41.129
+        },
+        {
+          "text": "RBF",
+          "start": 41.329,
+          "end": 41.829
+        },
+        {
+          "text": "con",
+          "start": 42.109,
+          "end": 42.269
+        },
+        {
+          "text": "centri",
+          "start": 42.329,
+          "end": 42.709
+        },
+        {
+          "text": "scelti",
+          "start": 42.749,
+          "end": 43.109
+        },
+        {
+          "text": "casualmente.",
+          "start": 43.169,
+          "end": 43.909
+        }
+      ]
+    },
+    {
+      "start": 44.73,
+      "end": 49.29,
+      "text": "Diamo la definizione formale di rete randomizzata, osservandola nello schema a sinistra.",
+      "words": [
+        {
+          "text": "Diamo",
+          "start": 44.73,
+          "end": 44.93
+        },
+        {
+          "text": "la",
+          "start": 44.99,
+          "end": 45.05
+        },
+        {
+          "text": "definizione",
+          "start": 45.09,
+          "end": 45.63
+        },
+        {
+          "text": "formale",
+          "start": 45.71,
+          "end": 46.21
+        },
+        {
+          "text": "di",
+          "start": 46.27,
+          "end": 46.33
+        },
+        {
+          "text": "rete",
+          "start": 46.39,
+          "end": 46.57
+        },
+        {
+          "text": "randomizzata,",
+          "start": 46.63,
+          "end": 47.33
+        },
+        {
+          "text": "osservandola",
+          "start": 47.53,
+          "end": 48.15
+        },
+        {
+          "text": "nello",
+          "start": 48.19,
+          "end": 48.37
+        },
+        {
+          "text": "schema",
+          "start": 48.41,
+          "end": 48.65
+        },
+        {
+          "text": "a",
+          "start": 48.73,
+          "end": 48.77
+        },
+        {
+          "text": "sinistra.",
+          "start": 48.81,
+          "end": 49.29
+        }
+      ]
+    },
+    {
+      "start": 49.87,
+      "end": 54.711,
+      "text": "Primo: la rete possiede uno o più strati nascosti connessi casualmente.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 49.87,
+          "end": 50.15
+        },
+        {
+          "text": "la",
+          "start": 50.81,
+          "end": 50.89
+        },
+        {
+          "text": "rete",
+          "start": 50.93,
+          "end": 51.17
+        },
+        {
+          "text": "possiede",
+          "start": 51.21,
+          "end": 51.63
+        },
+        {
+          "text": "uno",
+          "start": 51.85,
+          "end": 52.07
+        },
+        {
+          "text": "o",
+          "start": 52.13,
+          "end": 52.17
+        },
+        {
+          "text": "più",
+          "start": 52.21,
+          "end": 52.31
+        },
+        {
+          "text": "strati",
+          "start": 52.39,
+          "end": 52.67
+        },
+        {
+          "text": "nascosti",
+          "start": 52.75,
+          "end": 53.29
+        },
+        {
+          "text": "connessi",
+          "start": 53.491,
+          "end": 53.951
+        },
+        {
+          "text": "casualmente.",
+          "start": 53.991,
+          "end": 54.711
+        }
+      ]
+    },
+    {
+      "start": 55.271,
+      "end": 61.471,
+      "text": "I pesi della matrice W, mostrati in grigio, vengono fissati subito dopo l'inizializzazione casuale e",
+      "words": [
+        {
+          "text": "I",
+          "start": 55.271,
+          "end": 55.311
+        },
+        {
+          "text": "pesi",
+          "start": 55.351,
+          "end": 55.611
+        },
+        {
+          "text": "della",
+          "start": 55.671,
+          "end": 55.831
+        },
+        {
+          "text": "matrice",
+          "start": 55.871,
+          "end": 56.211
+        },
+        {
+          "text": "W,",
+          "start": 56.571,
+          "end": 56.611
+        },
+        {
+          "text": "mostrati",
+          "start": 56.891,
+          "end": 57.291
+        },
+        {
+          "text": "in",
+          "start": 57.331,
+          "end": 57.391
+        },
+        {
+          "text": "grigio,",
+          "start": 57.431,
+          "end": 57.731
+        },
+        {
+          "text": "vengono",
+          "start": 58.151,
+          "end": 58.471
+        },
+        {
+          "text": "fissati",
+          "start": 58.571,
+          "end": 59.071
+        },
+        {
+          "text": "subito",
+          "start": 59.171,
+          "end": 59.491
+        },
+        {
+          "text": "dopo",
+          "start": 59.531,
+          "end": 59.751
+        },
+        {
+          "text": "l'inizializzazione",
+          "start": 59.791,
+          "end": 60.651
+        },
+        {
+          "text": "casuale",
+          "start": 60.711,
+          "end": 61.191
+        },
+        {
+          "text": "e",
+          "start": 61.431,
+          "end": 61.471
+        }
+      ]
+    },
+    {
+      "start": 61.551,
+      "end": 63.132,
+      "text": "non vengono mai addestrati.",
+      "words": [
+        {
+          "text": "non",
+          "start": 61.551,
+          "end": 61.691
+        },
+        {
+          "text": "vengono",
+          "start": 61.731,
+          "end": 62.091
+        },
+        {
+          "text": "mai",
+          "start": 62.191,
+          "end": 62.391
+        },
+        {
+          "text": "addestrati.",
+          "start": 62.532,
+          "end": 63.132
+        }
+      ]
+    },
+    {
+      "start": 64.052,
+      "end": 68.432,
+      "text": "Secondo: si addestra esclusivamente lo strato di uscita, chiamato readout,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 64.052,
+          "end": 64.472
+        },
+        {
+          "text": "si",
+          "start": 64.672,
+          "end": 64.732
+        },
+        {
+          "text": "addestra",
+          "start": 64.772,
+          "end": 65.112
+        },
+        {
+          "text": "esclusivamente",
+          "start": 65.172,
+          "end": 65.872
+        },
+        {
+          "text": "lo",
+          "start": 65.932,
+          "end": 65.992
+        },
+        {
+          "text": "strato",
+          "start": 66.052,
+          "end": 66.352
+        },
+        {
+          "text": "di",
+          "start": 66.412,
+          "end": 66.472
+        },
+        {
+          "text": "uscita,",
+          "start": 66.512,
+          "end": 66.952
+        },
+        {
+          "text": "chiamato",
+          "start": 67.312,
+          "end": 67.652
+        },
+        {
+          "text": "readout,",
+          "start": 67.852,
+          "end": 68.432
+        }
+      ]
+    },
+    {
+      "start": 68.712,
+      "end": 71.152,
+      "text": "mostrato in rosso con matrice W out.",
+      "words": [
+        {
+          "text": "mostrato",
+          "start": 68.712,
+          "end": 69.112
+        },
+        {
+          "text": "in",
+          "start": 69.152,
+          "end": 69.232
+        },
+        {
+          "text": "rosso",
+          "start": 69.272,
+          "end": 69.572
+        },
+        {
+          "text": "con",
+          "start": 69.712,
+          "end": 69.832
+        },
+        {
+          "text": "matrice",
+          "start": 69.872,
+          "end": 70.272
+        },
+        {
+          "text": "W",
+          "start": 70.692,
+          "end": 70.732
+        },
+        {
+          "text": "out.",
+          "start": 70.752,
+          "end": 71.152
+        }
+      ]
+    },
+    {
+      "start": 71.953,
+      "end": 76.753,
+      "text": "Poiché le attivazioni nascoste h uguale f di W x sono già fissate,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 71.953,
+          "end": 72.253
+        },
+        {
+          "text": "le",
+          "start": 72.313,
+          "end": 72.373
+        },
+        {
+          "text": "attivazioni",
+          "start": 72.413,
+          "end": 72.893
+        },
+        {
+          "text": "nascoste",
+          "start": 72.973,
+          "end": 73.393
+        },
+        {
+          "text": "h",
+          "start": 73.753,
+          "end": 73.793
+        },
+        {
+          "text": "uguale",
+          "start": 73.993,
+          "end": 74.313
+        },
+        {
+          "text": "f",
+          "start": 74.593,
+          "end": 74.63300000000001
+        },
+        {
+          "text": "di",
+          "start": 74.753,
+          "end": 74.833
+        },
+        {
+          "text": "W",
+          "start": 75.253,
+          "end": 75.293
+        },
+        {
+          "text": "x",
+          "start": 75.493,
+          "end": 75.533
+        },
+        {
+          "text": "sono",
+          "start": 75.813,
+          "end": 75.993
+        },
+        {
+          "text": "già",
+          "start": 76.053,
+          "end": 76.113
+        },
+        {
+          "text": "fissate,",
+          "start": 76.213,
+          "end": 76.753
+        }
+      ]
+    },
+    {
+      "start": 77.253,
+      "end": 82.814,
+      "text": "il readout è un semplice modello lineare, risolvibile in un solo colpo con la pseudoinversa",
+      "words": [
+        {
+          "text": "il",
+          "start": 77.253,
+          "end": 77.333
+        },
+        {
+          "text": "readout",
+          "start": 77.373,
+          "end": 77.833
+        },
+        {
+          "text": "è",
+          "start": 78.053,
+          "end": 78.093
+        },
+        {
+          "text": "un",
+          "start": 78.193,
+          "end": 78.273
+        },
+        {
+          "text": "semplice",
+          "start": 78.333,
+          "end": 78.733
+        },
+        {
+          "text": "modello",
+          "start": 78.773,
+          "end": 79.093
+        },
+        {
+          "text": "lineare,",
+          "start": 79.153,
+          "end": 79.633
+        },
+        {
+          "text": "risolvibile",
+          "start": 80.013,
+          "end": 80.614
+        },
+        {
+          "text": "in",
+          "start": 80.654,
+          "end": 80.714
+        },
+        {
+          "text": "un",
+          "start": 80.754,
+          "end": 80.834
+        },
+        {
+          "text": "solo",
+          "start": 80.914,
+          "end": 81.094
+        },
+        {
+          "text": "colpo",
+          "start": 81.134,
+          "end": 81.494
+        },
+        {
+          "text": "con",
+          "start": 81.634,
+          "end": 81.754
+        },
+        {
+          "text": "la",
+          "start": 81.794,
+          "end": 81.874
+        },
+        {
+          "text": "pseudoinversa",
+          "start": 81.914,
+          "end": 82.814
+        }
+      ]
+    },
+    {
+      "start": 83.014,
+      "end": 84.254,
+      "text": "o con la ridge regression.",
+      "words": [
+        {
+          "text": "o",
+          "start": 83.014,
+          "end": 83.054
+        },
+        {
+          "text": "con",
+          "start": 83.114,
+          "end": 83.234
+        },
+        {
+          "text": "la",
+          "start": 83.274,
+          "end": 83.354
+        },
+        {
+          "text": "ridge",
+          "start": 83.414,
+          "end": 83.634
+        },
+        {
+          "text": "regression.",
+          "start": 83.734,
+          "end": 84.254
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1269 @@
+{
+  "duration": 105.97,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.261,
+      "text": "Ricapitoliamo i quattro punti chiave del capitolo sulle reti neurali ricorrenti.",
+      "words": [
+        {
+          "text": "Ricapitoliamo",
+          "start": 0.08,
+          "end": 0.76
+        },
+        {
+          "text": "i",
+          "start": 0.84,
+          "end": 0.88
+        },
+        {
+          "text": "quattro",
+          "start": 0.92,
+          "end": 1.2
+        },
+        {
+          "text": "punti",
+          "start": 1.24,
+          "end": 1.5
+        },
+        {
+          "text": "chiave",
+          "start": 1.56,
+          "end": 1.82
+        },
+        {
+          "text": "del",
+          "start": 1.88,
+          "end": 2.0
+        },
+        {
+          "text": "capitolo",
+          "start": 2.04,
+          "end": 2.521
+        },
+        {
+          "text": "sulle",
+          "start": 2.601,
+          "end": 2.801
+        },
+        {
+          "text": "reti",
+          "start": 2.841,
+          "end": 3.081
+        },
+        {
+          "text": "neurali",
+          "start": 3.121,
+          "end": 3.541
+        },
+        {
+          "text": "ricorrenti.",
+          "start": 3.601,
+          "end": 4.261
+        }
+      ]
+    },
+    {
+      "start": 4.861,
+      "end": 10.922,
+      "text": "Primo: l'unità ricorrente calcola h di t uguale f di w trasposto x di t",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 4.861,
+          "end": 5.101
+        },
+        {
+          "text": "l'unità",
+          "start": 5.701,
+          "end": 6.001
+        },
+        {
+          "text": "ricorrente",
+          "start": 6.081,
+          "end": 6.641
+        },
+        {
+          "text": "calcola",
+          "start": 6.701,
+          "end": 7.141
+        },
+        {
+          "text": "h",
+          "start": 7.641,
+          "end": 7.681
+        },
+        {
+          "text": "di",
+          "start": 7.741,
+          "end": 7.821
+        },
+        {
+          "text": "t",
+          "start": 7.922,
+          "end": 7.962
+        },
+        {
+          "text": "uguale",
+          "start": 8.242,
+          "end": 8.562
+        },
+        {
+          "text": "f",
+          "start": 9.002,
+          "end": 9.042
+        },
+        {
+          "text": "di",
+          "start": 9.342,
+          "end": 9.442
+        },
+        {
+          "text": "w",
+          "start": 9.562,
+          "end": 9.602
+        },
+        {
+          "text": "trasposto",
+          "start": 9.802,
+          "end": 10.402
+        },
+        {
+          "text": "x",
+          "start": 10.582,
+          "end": 10.622
+        },
+        {
+          "text": "di",
+          "start": 10.702,
+          "end": 10.782
+        },
+        {
+          "text": "t",
+          "start": 10.882,
+          "end": 10.922
+        }
+      ]
+    },
+    {
+      "start": 11.502,
+      "end": 14.743,
+      "text": "più w cappello h di t meno uno più teta;",
+      "words": [
+        {
+          "text": "più",
+          "start": 11.502,
+          "end": 11.622
+        },
+        {
+          "text": "w",
+          "start": 11.802,
+          "end": 11.842
+        },
+        {
+          "text": "cappello",
+          "start": 12.262,
+          "end": 12.702
+        },
+        {
+          "text": "h",
+          "start": 13.082,
+          "end": 13.122
+        },
+        {
+          "text": "di",
+          "start": 13.202,
+          "end": 13.283
+        },
+        {
+          "text": "t",
+          "start": 13.363,
+          "end": 13.403
+        },
+        {
+          "text": "meno",
+          "start": 13.523,
+          "end": 13.703
+        },
+        {
+          "text": "uno",
+          "start": 13.803,
+          "end": 13.963
+        },
+        {
+          "text": "più",
+          "start": 14.123,
+          "end": 14.243
+        },
+        {
+          "text": "teta;",
+          "start": 14.403,
+          "end": 14.743
+        }
+      ]
+    },
+    {
+      "start": 15.263,
+      "end": 18.864,
+      "text": "lo stato funge da codifica continua della sotto-sequenza passata.",
+      "words": [
+        {
+          "text": "lo",
+          "start": 15.263,
+          "end": 15.343
+        },
+        {
+          "text": "stato",
+          "start": 15.403,
+          "end": 15.683
+        },
+        {
+          "text": "funge",
+          "start": 15.763,
+          "end": 16.043
+        },
+        {
+          "text": "da",
+          "start": 16.083,
+          "end": 16.143
+        },
+        {
+          "text": "codifica",
+          "start": 16.203,
+          "end": 16.663
+        },
+        {
+          "text": "continua",
+          "start": 16.743,
+          "end": 17.303
+        },
+        {
+          "text": "della",
+          "start": 17.403,
+          "end": 17.623
+        },
+        {
+          "text": "sotto-sequenza",
+          "start": 17.703,
+          "end": 18.363
+        },
+        {
+          "text": "passata.",
+          "start": 18.403,
+          "end": 18.864
+        }
+      ]
+    },
+    {
+      "start": 19.724,
+      "end": 24.925,
+      "text": "Secondo: i modelli ricorrenti sono sistemi a transizione di stato fondati su causalità,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 19.724,
+          "end": 20.144
+        },
+        {
+          "text": "i",
+          "start": 20.744,
+          "end": 20.784
+        },
+        {
+          "text": "modelli",
+          "start": 20.824,
+          "end": 21.144
+        },
+        {
+          "text": "ricorrenti",
+          "start": 21.204,
+          "end": 21.744
+        },
+        {
+          "text": "sono",
+          "start": 21.824,
+          "end": 22.004
+        },
+        {
+          "text": "sistemi",
+          "start": 22.064,
+          "end": 22.424
+        },
+        {
+          "text": "a",
+          "start": 22.484,
+          "end": 22.524
+        },
+        {
+          "text": "transizione",
+          "start": 22.544,
+          "end": 23.084
+        },
+        {
+          "text": "di",
+          "start": 23.144,
+          "end": 23.204
+        },
+        {
+          "text": "stato",
+          "start": 23.264,
+          "end": 23.544
+        },
+        {
+          "text": "fondati",
+          "start": 23.584,
+          "end": 24.005
+        },
+        {
+          "text": "su",
+          "start": 24.085,
+          "end": 24.165
+        },
+        {
+          "text": "causalità,",
+          "start": 24.305,
+          "end": 24.925
+        }
+      ]
+    },
+    {
+      "start": 25.345,
+      "end": 27.265,
+      "text": "stazionarietà e adattività.",
+      "words": [
+        {
+          "text": "stazionarietà",
+          "start": 25.345,
+          "end": 26.145
+        },
+        {
+          "text": "e",
+          "start": 26.625,
+          "end": 26.665
+        },
+        {
+          "text": "adattività.",
+          "start": 26.725,
+          "end": 27.265
+        }
+      ]
+    },
+    {
+      "start": 28.065,
+      "end": 35.487,
+      "text": "Terzo: l'unfolding trasforma la RNN in una rete feedforward profonda con pesi condivisi su cui",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 28.065,
+          "end": 28.445
+        },
+        {
+          "text": "l'unfolding",
+          "start": 29.085,
+          "end": 29.706
+        },
+        {
+          "text": "trasforma",
+          "start": 29.766,
+          "end": 30.226
+        },
+        {
+          "text": "la",
+          "start": 30.286,
+          "end": 30.346
+        },
+        {
+          "text": "RNN",
+          "start": 30.666,
+          "end": 31.346
+        },
+        {
+          "text": "in",
+          "start": 31.586,
+          "end": 31.666
+        },
+        {
+          "text": "una",
+          "start": 31.706,
+          "end": 31.826
+        },
+        {
+          "text": "rete",
+          "start": 31.886,
+          "end": 32.126
+        },
+        {
+          "text": "feedforward",
+          "start": 32.246,
+          "end": 32.926
+        },
+        {
+          "text": "profonda",
+          "start": 33.026,
+          "end": 33.606
+        },
+        {
+          "text": "con",
+          "start": 33.886,
+          "end": 34.026
+        },
+        {
+          "text": "pesi",
+          "start": 34.066,
+          "end": 34.286
+        },
+        {
+          "text": "condivisi",
+          "start": 34.326,
+          "end": 34.927
+        },
+        {
+          "text": "su",
+          "start": 35.227,
+          "end": 35.287
+        },
+        {
+          "text": "cui",
+          "start": 35.347,
+          "end": 35.487
+        }
+      ]
+    },
+    {
+      "start": 35.547,
+      "end": 40.228,
+      "text": "applicare la backpropagation tramite BPTT o RTRL;",
+      "words": [
+        {
+          "text": "applicare",
+          "start": 35.547,
+          "end": 36.027
+        },
+        {
+          "text": "la",
+          "start": 36.067,
+          "end": 36.127
+        },
+        {
+          "text": "backpropagation",
+          "start": 36.207,
+          "end": 37.107
+        },
+        {
+          "text": "tramite",
+          "start": 37.167,
+          "end": 37.567
+        },
+        {
+          "text": "BPTT",
+          "start": 37.747,
+          "end": 38.387
+        },
+        {
+          "text": "o",
+          "start": 38.847,
+          "end": 38.887
+        },
+        {
+          "text": "RTRL;",
+          "start": 39.247,
+          "end": 40.228
+        }
+      ]
+    },
+    {
+      "start": 41.048,
+      "end": 47.909,
+      "text": "il vanishing gradient ostacola le dipendenze lunghe e motiva architetture con gate come LSTM e",
+      "words": [
+        {
+          "text": "il",
+          "start": 41.048,
+          "end": 41.148
+        },
+        {
+          "text": "vanishing",
+          "start": 41.188,
+          "end": 41.648
+        },
+        {
+          "text": "gradient",
+          "start": 41.688,
+          "end": 42.128
+        },
+        {
+          "text": "ostacola",
+          "start": 42.308,
+          "end": 42.848
+        },
+        {
+          "text": "le",
+          "start": 42.888,
+          "end": 42.948
+        },
+        {
+          "text": "dipendenze",
+          "start": 42.988,
+          "end": 43.548
+        },
+        {
+          "text": "lunghe",
+          "start": 43.628,
+          "end": 43.948
+        },
+        {
+          "text": "e",
+          "start": 44.088,
+          "end": 44.128
+        },
+        {
+          "text": "motiva",
+          "start": 44.188,
+          "end": 44.488
+        },
+        {
+          "text": "architetture",
+          "start": 44.528,
+          "end": 45.169
+        },
+        {
+          "text": "con",
+          "start": 45.249,
+          "end": 45.409
+        },
+        {
+          "text": "gate",
+          "start": 45.489,
+          "end": 45.889
+        },
+        {
+          "text": "come",
+          "start": 46.229,
+          "end": 46.429
+        },
+        {
+          "text": "LSTM",
+          "start": 46.849,
+          "end": 47.629
+        },
+        {
+          "text": "e",
+          "start": 47.869,
+          "end": 47.909
+        }
+      ]
+    },
+    {
+      "start": 47.989,
+      "end": 48.429,
+      "text": "GRU.",
+      "words": [
+        {
+          "text": "GRU.",
+          "start": 47.989,
+          "end": 48.429
+        }
+      ]
+    },
+    {
+      "start": 49.349,
+      "end": 54.97,
+      "text": "Quarto: abbiamo visto gli approcci collegati: i transformer con attenzione su tutta la sequenza,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 49.349,
+          "end": 49.729
+        },
+        {
+          "text": "abbiamo",
+          "start": 50.309,
+          "end": 50.57
+        },
+        {
+          "text": "visto",
+          "start": 50.61,
+          "end": 50.83
+        },
+        {
+          "text": "gli",
+          "start": 50.85,
+          "end": 50.93
+        },
+        {
+          "text": "approcci",
+          "start": 50.95,
+          "end": 51.29
+        },
+        {
+          "text": "collegati:",
+          "start": 51.35,
+          "end": 51.91
+        },
+        {
+          "text": "i",
+          "start": 52.35,
+          "end": 52.39
+        },
+        {
+          "text": "transformer",
+          "start": 52.45,
+          "end": 53.11
+        },
+        {
+          "text": "con",
+          "start": 53.25,
+          "end": 53.39
+        },
+        {
+          "text": "attenzione",
+          "start": 53.43,
+          "end": 53.95
+        },
+        {
+          "text": "su",
+          "start": 53.99,
+          "end": 54.05
+        },
+        {
+          "text": "tutta",
+          "start": 54.11,
+          "end": 54.33
+        },
+        {
+          "text": "la",
+          "start": 54.37,
+          "end": 54.43
+        },
+        {
+          "text": "sequenza,",
+          "start": 54.47,
+          "end": 54.97
+        }
+      ]
+    },
+    {
+      "start": 55.55,
+      "end": 60.591,
+      "text": "le Echo State Network con reservoir casuale contrattivo e readout lineare,",
+      "words": [
+        {
+          "text": "le",
+          "start": 55.55,
+          "end": 55.63
+        },
+        {
+          "text": "Echo",
+          "start": 55.871,
+          "end": 56.091
+        },
+        {
+          "text": "State",
+          "start": 56.191,
+          "end": 56.511
+        },
+        {
+          "text": "Network",
+          "start": 56.571,
+          "end": 57.091
+        },
+        {
+          "text": "con",
+          "start": 57.271,
+          "end": 57.411
+        },
+        {
+          "text": "reservoir",
+          "start": 57.471,
+          "end": 57.951
+        },
+        {
+          "text": "casuale",
+          "start": 58.031,
+          "end": 58.491
+        },
+        {
+          "text": "contrattivo",
+          "start": 58.571,
+          "end": 59.291
+        },
+        {
+          "text": "e",
+          "start": 59.471,
+          "end": 59.511
+        },
+        {
+          "text": "readout",
+          "start": 59.611,
+          "end": 59.971
+        },
+        {
+          "text": "lineare,",
+          "start": 60.071,
+          "end": 60.591
+        }
+      ]
+    },
+    {
+      "start": 61.152,
+      "end": 64.772,
+      "text": "e le RecNN per la codifica bottom-up di alberi.",
+      "words": [
+        {
+          "text": "e",
+          "start": 61.152,
+          "end": 61.192
+        },
+        {
+          "text": "le",
+          "start": 61.252,
+          "end": 61.352
+        },
+        {
+          "text": "RecNN",
+          "start": 61.632,
+          "end": 62.472
+        },
+        {
+          "text": "per",
+          "start": 62.852,
+          "end": 62.972
+        },
+        {
+          "text": "la",
+          "start": 63.012,
+          "end": 63.072
+        },
+        {
+          "text": "codifica",
+          "start": 63.132,
+          "end": 63.572
+        },
+        {
+          "text": "bottom-up",
+          "start": 63.672,
+          "end": 64.192
+        },
+        {
+          "text": "di",
+          "start": 64.272,
+          "end": 64.332
+        },
+        {
+          "text": "alberi.",
+          "start": 64.432,
+          "end": 64.772
+        }
+      ]
+    },
+    {
+      "start": 65.532,
+      "end": 68.793,
+      "text": "Per verificare la tua preparazione prova a rispondere a queste sette domande:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 65.532,
+          "end": 65.652
+        },
+        {
+          "text": "verificare",
+          "start": 65.692,
+          "end": 66.172
+        },
+        {
+          "text": "la",
+          "start": 66.232,
+          "end": 66.272
+        },
+        {
+          "text": "tua",
+          "start": 66.312,
+          "end": 66.433
+        },
+        {
+          "text": "preparazione",
+          "start": 66.473,
+          "end": 67.033
+        },
+        {
+          "text": "prova",
+          "start": 67.073,
+          "end": 67.253
+        },
+        {
+          "text": "a",
+          "start": 67.273,
+          "end": 67.313
+        },
+        {
+          "text": "rispondere",
+          "start": 67.313,
+          "end": 67.713
+        },
+        {
+          "text": "a",
+          "start": 67.733,
+          "end": 67.77300000000001
+        },
+        {
+          "text": "queste",
+          "start": 67.793,
+          "end": 68.033
+        },
+        {
+          "text": "sette",
+          "start": 68.093,
+          "end": 68.333
+        },
+        {
+          "text": "domande:",
+          "start": 68.373,
+          "end": 68.793
+        }
+      ]
+    },
+    {
+      "start": 69.533,
+      "end": 73.354,
+      "text": "perché servono modelli per dati sequenziali e cos'è una trasduzione;",
+      "words": [
+        {
+          "text": "perché",
+          "start": 69.533,
+          "end": 69.793
+        },
+        {
+          "text": "servono",
+          "start": 69.873,
+          "end": 70.233
+        },
+        {
+          "text": "modelli",
+          "start": 70.293,
+          "end": 70.653
+        },
+        {
+          "text": "per",
+          "start": 70.693,
+          "end": 70.813
+        },
+        {
+          "text": "dati",
+          "start": 70.873,
+          "end": 71.093
+        },
+        {
+          "text": "sequenziali",
+          "start": 71.193,
+          "end": 71.914
+        },
+        {
+          "text": "e",
+          "start": 72.134,
+          "end": 72.174
+        },
+        {
+          "text": "cos'è",
+          "start": 72.214,
+          "end": 72.414
+        },
+        {
+          "text": "una",
+          "start": 72.494,
+          "end": 72.594
+        },
+        {
+          "text": "trasduzione;",
+          "start": 72.654,
+          "end": 73.354
+        }
+      ]
+    },
+    {
+      "start": 74.154,
+      "end": 80.855,
+      "text": "qual è la differenza tra IDNN e RNN e perché una IDNN non può contare",
+      "words": [
+        {
+          "text": "qual",
+          "start": 74.154,
+          "end": 74.294
+        },
+        {
+          "text": "è",
+          "start": 74.354,
+          "end": 74.394
+        },
+        {
+          "text": "la",
+          "start": 74.414,
+          "end": 74.474
+        },
+        {
+          "text": "differenza",
+          "start": 74.514,
+          "end": 75.054
+        },
+        {
+          "text": "tra",
+          "start": 75.114,
+          "end": 75.234
+        },
+        {
+          "text": "IDNN",
+          "start": 75.694,
+          "end": 76.514
+        },
+        {
+          "text": "e",
+          "start": 76.814,
+          "end": 76.854
+        },
+        {
+          "text": "RNN",
+          "start": 77.295,
+          "end": 77.935
+        },
+        {
+          "text": "e",
+          "start": 78.435,
+          "end": 78.47500000000001
+        },
+        {
+          "text": "perché",
+          "start": 78.515,
+          "end": 78.755
+        },
+        {
+          "text": "una",
+          "start": 78.835,
+          "end": 78.975
+        },
+        {
+          "text": "IDNN",
+          "start": 79.135,
+          "end": 79.835
+        },
+        {
+          "text": "non",
+          "start": 80.015,
+          "end": 80.155
+        },
+        {
+          "text": "può",
+          "start": 80.215,
+          "end": 80.335
+        },
+        {
+          "text": "contare",
+          "start": 80.435,
+          "end": 80.855
+        }
+      ]
+    },
+    {
+      "start": 80.915,
+      "end": 82.676,
+      "text": "gli uno in sequenze arbitrarie;",
+      "words": [
+        {
+          "text": "gli",
+          "start": 80.915,
+          "end": 81.055
+        },
+        {
+          "text": "uno",
+          "start": 81.175,
+          "end": 81.375
+        },
+        {
+          "text": "in",
+          "start": 81.515,
+          "end": 81.595
+        },
+        {
+          "text": "sequenze",
+          "start": 81.655,
+          "end": 82.075
+        },
+        {
+          "text": "arbitrarie;",
+          "start": 82.115,
+          "end": 82.676
+        }
+      ]
+    },
+    {
+      "start": 83.676,
+      "end": 88.177,
+      "text": "come si scrivono le equazioni di un'unità ricorrente e di una Simple RNN;",
+      "words": [
+        {
+          "text": "come",
+          "start": 83.676,
+          "end": 83.836
+        },
+        {
+          "text": "si",
+          "start": 83.896,
+          "end": 83.956
+        },
+        {
+          "text": "scrivono",
+          "start": 84.016,
+          "end": 84.416
+        },
+        {
+          "text": "le",
+          "start": 84.476,
+          "end": 84.536
+        },
+        {
+          "text": "equazioni",
+          "start": 84.596,
+          "end": 85.156
+        },
+        {
+          "text": "di",
+          "start": 85.196,
+          "end": 85.256
+        },
+        {
+          "text": "un'unità",
+          "start": 85.296,
+          "end": 85.656
+        },
+        {
+          "text": "ricorrente",
+          "start": 85.756,
+          "end": 86.416
+        },
+        {
+          "text": "e",
+          "start": 86.536,
+          "end": 86.57600000000001
+        },
+        {
+          "text": "di",
+          "start": 86.596,
+          "end": 86.656
+        },
+        {
+          "text": "una",
+          "start": 86.696,
+          "end": 86.816
+        },
+        {
+          "text": "Simple",
+          "start": 86.956,
+          "end": 87.376
+        },
+        {
+          "text": "RNN;",
+          "start": 87.597,
+          "end": 88.177
+        }
+      ]
+    },
+    {
+      "start": 89.297,
+      "end": 92.958,
+      "text": "cosa significano causalità, stazionarietà e adattività;",
+      "words": [
+        {
+          "text": "cosa",
+          "start": 89.297,
+          "end": 89.477
+        },
+        {
+          "text": "significano",
+          "start": 89.537,
+          "end": 90.097
+        },
+        {
+          "text": "causalità,",
+          "start": 90.197,
+          "end": 90.817
+        },
+        {
+          "text": "stazionarietà",
+          "start": 91.117,
+          "end": 91.957
+        },
+        {
+          "text": "e",
+          "start": 92.237,
+          "end": 92.277
+        },
+        {
+          "text": "adattività;",
+          "start": 92.337,
+          "end": 92.958
+        }
+      ]
+    },
+    {
+      "start": 93.858,
+      "end": 96.858,
+      "text": "cos'è l'unfolding e come abilita la backpropagation;",
+      "words": [
+        {
+          "text": "cos'è",
+          "start": 93.858,
+          "end": 94.078
+        },
+        {
+          "text": "l'unfolding",
+          "start": 94.138,
+          "end": 94.818
+        },
+        {
+          "text": "e",
+          "start": 95.018,
+          "end": 95.058
+        },
+        {
+          "text": "come",
+          "start": 95.138,
+          "end": 95.338
+        },
+        {
+          "text": "abilita",
+          "start": 95.398,
+          "end": 95.778
+        },
+        {
+          "text": "la",
+          "start": 95.878,
+          "end": 95.938
+        },
+        {
+          "text": "backpropagation;",
+          "start": 95.978,
+          "end": 96.858
+        }
+      ]
+    },
+    {
+      "start": 97.718,
+      "end": 101.739,
+      "text": "che cosa sono una Echo State Network e la Echo State Property;",
+      "words": [
+        {
+          "text": "che",
+          "start": 97.718,
+          "end": 97.798
+        },
+        {
+          "text": "cosa",
+          "start": 97.858,
+          "end": 98.078
+        },
+        {
+          "text": "sono",
+          "start": 98.118,
+          "end": 98.359
+        },
+        {
+          "text": "una",
+          "start": 98.399,
+          "end": 98.539
+        },
+        {
+          "text": "Echo",
+          "start": 98.719,
+          "end": 98.939
+        },
+        {
+          "text": "State",
+          "start": 99.039,
+          "end": 99.319
+        },
+        {
+          "text": "Network",
+          "start": 99.379,
+          "end": 99.839
+        },
+        {
+          "text": "e",
+          "start": 99.999,
+          "end": 100.039
+        },
+        {
+          "text": "la",
+          "start": 100.079,
+          "end": 100.159
+        },
+        {
+          "text": "Echo",
+          "start": 100.579,
+          "end": 100.779
+        },
+        {
+          "text": "State",
+          "start": 100.879,
+          "end": 101.199
+        },
+        {
+          "text": "Property;",
+          "start": 101.259,
+          "end": 101.739
+        }
+      ]
+    },
+    {
+      "start": 102.479,
+      "end": 105.72,
+      "text": "e infine come si estendono le RNN agli alberi.",
+      "words": [
+        {
+          "text": "e",
+          "start": 102.479,
+          "end": 102.519
+        },
+        {
+          "text": "infine",
+          "start": 102.559,
+          "end": 102.879
+        },
+        {
+          "text": "come",
+          "start": 103.019,
+          "end": 103.199
+        },
+        {
+          "text": "si",
+          "start": 103.259,
+          "end": 103.319
+        },
+        {
+          "text": "estendono",
+          "start": 103.379,
+          "end": 103.84
+        },
+        {
+          "text": "le",
+          "start": 103.9,
+          "end": 103.98
+        },
+        {
+          "text": "RNN",
+          "start": 104.34,
+          "end": 104.96
+        },
+        {
+          "text": "agli",
+          "start": 105.18,
+          "end": 105.36
+        },
+        {
+          "text": "alberi.",
+          "start": 105.42,
+          "end": 105.72
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1699 @@
+{
+  "duration": 119.13,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.581,
+      "text": "Possiamo racchiudere quasi tutte le Deep Graph Networks in un'unica formula generale di message passing:",
+      "words": [
+        {
+          "text": "Possiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "racchiudere",
+          "start": 0.52,
+          "end": 1.06
+        },
+        {
+          "text": "quasi",
+          "start": 1.2,
+          "end": 1.62
+        },
+        {
+          "text": "tutte",
+          "start": 1.72,
+          "end": 2.08
+        },
+        {
+          "text": "le",
+          "start": 2.12,
+          "end": 2.2
+        },
+        {
+          "text": "Deep",
+          "start": 2.28,
+          "end": 2.46
+        },
+        {
+          "text": "Graph",
+          "start": 2.56,
+          "end": 2.84
+        },
+        {
+          "text": "Networks",
+          "start": 2.921,
+          "end": 3.501
+        },
+        {
+          "text": "in",
+          "start": 3.701,
+          "end": 3.801
+        },
+        {
+          "text": "un'unica",
+          "start": 3.841,
+          "end": 4.261
+        },
+        {
+          "text": "formula",
+          "start": 4.341,
+          "end": 4.741
+        },
+        {
+          "text": "generale",
+          "start": 4.801,
+          "end": 5.301
+        },
+        {
+          "text": "di",
+          "start": 5.461,
+          "end": 5.541
+        },
+        {
+          "text": "message",
+          "start": 5.621,
+          "end": 6.041
+        },
+        {
+          "text": "passing:",
+          "start": 6.101,
+          "end": 6.581
+        }
+      ]
+    },
+    {
+      "start": 7.341,
+      "end": 9.582,
+      "text": "lo stato h con v allo strato l",
+      "words": [
+        {
+          "text": "lo",
+          "start": 7.341,
+          "end": 7.421
+        },
+        {
+          "text": "stato",
+          "start": 7.481,
+          "end": 7.761
+        },
+        {
+          "text": "h",
+          "start": 8.181,
+          "end": 8.221
+        },
+        {
+          "text": "con",
+          "start": 8.341,
+          "end": 8.481
+        },
+        {
+          "text": "v",
+          "start": 8.541,
+          "end": 8.581
+        },
+        {
+          "text": "allo",
+          "start": 8.821,
+          "end": 9.002
+        },
+        {
+          "text": "strato",
+          "start": 9.042,
+          "end": 9.342
+        },
+        {
+          "text": "l",
+          "start": 9.542,
+          "end": 9.582
+        }
+      ]
+    },
+    {
+      "start": 10.142,
+      "end": 14.042,
+      "text": "è uguale ad AGG parametrizzata da W allo strato l,",
+      "words": [
+        {
+          "text": "è",
+          "start": 10.142,
+          "end": 10.182
+        },
+        {
+          "text": "uguale",
+          "start": 10.242,
+          "end": 10.602
+        },
+        {
+          "text": "ad",
+          "start": 10.682,
+          "end": 10.822
+        },
+        {
+          "text": "AGG",
+          "start": 11.042,
+          "end": 11.382
+        },
+        {
+          "text": "parametrizzata",
+          "start": 11.682,
+          "end": 12.442
+        },
+        {
+          "text": "da",
+          "start": 12.542,
+          "end": 12.622
+        },
+        {
+          "text": "W",
+          "start": 13.082,
+          "end": 13.122
+        },
+        {
+          "text": "allo",
+          "start": 13.242,
+          "end": 13.402
+        },
+        {
+          "text": "strato",
+          "start": 13.442,
+          "end": 13.742
+        },
+        {
+          "text": "l,",
+          "start": 14.002,
+          "end": 14.042
+        }
+      ]
+    },
+    {
+      "start": 14.582,
+      "end": 19.903,
+      "text": "applicata all'etichetta x con v, allo stato precedente h con v allo strato l meno",
+      "words": [
+        {
+          "text": "applicata",
+          "start": 14.582,
+          "end": 15.083
+        },
+        {
+          "text": "all'etichetta",
+          "start": 15.103,
+          "end": 15.703
+        },
+        {
+          "text": "x",
+          "start": 15.963,
+          "end": 16.003
+        },
+        {
+          "text": "con",
+          "start": 16.103,
+          "end": 16.263
+        },
+        {
+          "text": "v,",
+          "start": 16.323,
+          "end": 16.363
+        },
+        {
+          "text": "allo",
+          "start": 16.823,
+          "end": 17.003
+        },
+        {
+          "text": "stato",
+          "start": 17.043,
+          "end": 17.283
+        },
+        {
+          "text": "precedente",
+          "start": 17.383,
+          "end": 18.143
+        },
+        {
+          "text": "h",
+          "start": 18.523,
+          "end": 18.563
+        },
+        {
+          "text": "con",
+          "start": 18.643,
+          "end": 18.783
+        },
+        {
+          "text": "v",
+          "start": 18.823,
+          "end": 18.863
+        },
+        {
+          "text": "allo",
+          "start": 18.963,
+          "end": 19.123
+        },
+        {
+          "text": "strato",
+          "start": 19.183,
+          "end": 19.463
+        },
+        {
+          "text": "l",
+          "start": 19.623,
+          "end": 19.663
+        },
+        {
+          "text": "meno",
+          "start": 19.723,
+          "end": 19.903
+        }
+      ]
+    },
+    {
+      "start": 20.003,
+      "end": 24.924,
+      "text": "uno, e al multi-insieme degli stati dei vicini h con u allo strato l meno",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 20.003,
+          "end": 20.163
+        },
+        {
+          "text": "e",
+          "start": 20.603,
+          "end": 20.643
+        },
+        {
+          "text": "al",
+          "start": 20.703,
+          "end": 20.784
+        },
+        {
+          "text": "multi-insieme",
+          "start": 20.844,
+          "end": 21.544
+        },
+        {
+          "text": "degli",
+          "start": 21.604,
+          "end": 21.804
+        },
+        {
+          "text": "stati",
+          "start": 21.844,
+          "end": 22.144
+        },
+        {
+          "text": "dei",
+          "start": 22.204,
+          "end": 22.304
+        },
+        {
+          "text": "vicini",
+          "start": 22.324,
+          "end": 22.804
+        },
+        {
+          "text": "h",
+          "start": 23.244,
+          "end": 23.284
+        },
+        {
+          "text": "con",
+          "start": 23.364,
+          "end": 23.524
+        },
+        {
+          "text": "u",
+          "start": 23.564,
+          "end": 23.604
+        },
+        {
+          "text": "allo",
+          "start": 23.724,
+          "end": 23.904
+        },
+        {
+          "text": "strato",
+          "start": 23.944,
+          "end": 24.264
+        },
+        {
+          "text": "l",
+          "start": 24.624,
+          "end": 24.664
+        },
+        {
+          "text": "meno",
+          "start": 24.744,
+          "end": 24.924
+        }
+      ]
+    },
+    {
+      "start": 25.044,
+      "end": 29.565,
+      "text": "uno per u appartenente a N di v, con l da uno a L.",
+      "words": [
+        {
+          "text": "uno",
+          "start": 25.044,
+          "end": 25.204
+        },
+        {
+          "text": "per",
+          "start": 25.544,
+          "end": 25.704
+        },
+        {
+          "text": "u",
+          "start": 25.924,
+          "end": 25.964
+        },
+        {
+          "text": "appartenente",
+          "start": 26.224,
+          "end": 26.945
+        },
+        {
+          "text": "a",
+          "start": 27.025,
+          "end": 27.065
+        },
+        {
+          "text": "N",
+          "start": 27.285,
+          "end": 27.325
+        },
+        {
+          "text": "di",
+          "start": 27.445,
+          "end": 27.525
+        },
+        {
+          "text": "v,",
+          "start": 27.585,
+          "end": 27.625
+        },
+        {
+          "text": "con",
+          "start": 28.145,
+          "end": 28.325
+        },
+        {
+          "text": "l",
+          "start": 28.465,
+          "end": 28.505
+        },
+        {
+          "text": "da",
+          "start": 28.825,
+          "end": 28.885
+        },
+        {
+          "text": "uno",
+          "start": 29.005,
+          "end": 29.205
+        },
+        {
+          "text": "a",
+          "start": 29.265,
+          "end": 29.305
+        },
+        {
+          "text": "L.",
+          "start": 29.525,
+          "end": 29.565
+        }
+      ]
+    },
+    {
+      "start": 30.365,
+      "end": 35.946,
+      "text": "L'operatore AGG aggrega i messaggi dei vicini in modo invariante per permutazione — tipicamente una",
+      "words": [
+        {
+          "text": "L'operatore",
+          "start": 30.365,
+          "end": 30.885
+        },
+        {
+          "text": "AGG",
+          "start": 31.025,
+          "end": 31.305
+        },
+        {
+          "text": "aggrega",
+          "start": 31.545,
+          "end": 31.905
+        },
+        {
+          "text": "i",
+          "start": 31.965,
+          "end": 32.005
+        },
+        {
+          "text": "messaggi",
+          "start": 32.025,
+          "end": 32.425
+        },
+        {
+          "text": "dei",
+          "start": 32.465,
+          "end": 32.565
+        },
+        {
+          "text": "vicini",
+          "start": 32.585,
+          "end": 32.946
+        },
+        {
+          "text": "in",
+          "start": 32.986,
+          "end": 33.026
+        },
+        {
+          "text": "modo",
+          "start": 33.066,
+          "end": 33.266
+        },
+        {
+          "text": "invariante",
+          "start": 33.406,
+          "end": 34.046
+        },
+        {
+          "text": "per",
+          "start": 34.126,
+          "end": 34.226
+        },
+        {
+          "text": "permutazione",
+          "start": 34.266,
+          "end": 35.026
+        },
+        {
+          "text": "—",
+          "start": 35.026,
+          "end": 35.176
+        },
+        {
+          "text": "tipicamente",
+          "start": 35.266,
+          "end": 35.786
+        },
+        {
+          "text": "una",
+          "start": 35.826,
+          "end": 35.946
+        }
+      ]
+    },
+    {
+      "start": 35.986,
+      "end": 39.627,
+      "text": "somma — usando i parametri liberi W allo strato l,",
+      "words": [
+        {
+          "text": "somma",
+          "start": 35.986,
+          "end": 36.306
+        },
+        {
+          "text": "—",
+          "start": 36.306,
+          "end": 36.456
+        },
+        {
+          "text": "usando",
+          "start": 36.706,
+          "end": 36.986
+        },
+        {
+          "text": "i",
+          "start": 37.046,
+          "end": 37.086
+        },
+        {
+          "text": "parametri",
+          "start": 37.126,
+          "end": 37.606
+        },
+        {
+          "text": "liberi",
+          "start": 37.666,
+          "end": 37.966
+        },
+        {
+          "text": "W",
+          "start": 38.486,
+          "end": 38.526
+        },
+        {
+          "text": "allo",
+          "start": 38.807,
+          "end": 38.967
+        },
+        {
+          "text": "strato",
+          "start": 39.027,
+          "end": 39.327
+        },
+        {
+          "text": "l,",
+          "start": 39.587,
+          "end": 39.627
+        }
+      ]
+    },
+    {
+      "start": 40.067,
+      "end": 44.187,
+      "text": "mentre il vicinato N è determinato dalla matrice di adiacenza.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 40.067,
+          "end": 40.327
+        },
+        {
+          "text": "il",
+          "start": 40.367,
+          "end": 40.427
+        },
+        {
+          "text": "vicinato",
+          "start": 40.447,
+          "end": 40.907
+        },
+        {
+          "text": "N",
+          "start": 41.347,
+          "end": 41.387
+        },
+        {
+          "text": "è",
+          "start": 41.927,
+          "end": 41.967
+        },
+        {
+          "text": "determinato",
+          "start": 42.047,
+          "end": 42.687
+        },
+        {
+          "text": "dalla",
+          "start": 42.747,
+          "end": 42.947
+        },
+        {
+          "text": "matrice",
+          "start": 42.987,
+          "end": 43.387
+        },
+        {
+          "text": "di",
+          "start": 43.447,
+          "end": 43.507
+        },
+        {
+          "text": "adiacenza.",
+          "start": 43.547,
+          "end": 44.187
+        }
+      ]
+    },
+    {
+      "start": 44.728,
+      "end": 49.608,
+      "text": "Applicare questa regola simultaneamente a tutti i nodi equivale a una visita parallela e non",
+      "words": [
+        {
+          "text": "Applicare",
+          "start": 44.728,
+          "end": 45.128
+        },
+        {
+          "text": "questa",
+          "start": 45.168,
+          "end": 45.388
+        },
+        {
+          "text": "regola",
+          "start": 45.448,
+          "end": 45.748
+        },
+        {
+          "text": "simultaneamente",
+          "start": 45.808,
+          "end": 46.528
+        },
+        {
+          "text": "a",
+          "start": 46.588,
+          "end": 46.628
+        },
+        {
+          "text": "tutti",
+          "start": 46.688,
+          "end": 46.928
+        },
+        {
+          "text": "i",
+          "start": 46.968,
+          "end": 47.008
+        },
+        {
+          "text": "nodi",
+          "start": 47.028,
+          "end": 47.308
+        },
+        {
+          "text": "equivale",
+          "start": 47.648,
+          "end": 48.088
+        },
+        {
+          "text": "a",
+          "start": 48.128,
+          "end": 48.168
+        },
+        {
+          "text": "una",
+          "start": 48.188,
+          "end": 48.328
+        },
+        {
+          "text": "visita",
+          "start": 48.368,
+          "end": 48.708
+        },
+        {
+          "text": "parallela",
+          "start": 48.768,
+          "end": 49.288
+        },
+        {
+          "text": "e",
+          "start": 49.368,
+          "end": 49.408
+        },
+        {
+          "text": "non",
+          "start": 49.448,
+          "end": 49.608
+        }
+      ]
+    },
+    {
+      "start": 49.668,
+      "end": 50.769,
+      "text": "ordinata del grafo.",
+      "words": [
+        {
+          "text": "ordinata",
+          "start": 49.668,
+          "end": 50.188
+        },
+        {
+          "text": "del",
+          "start": 50.248,
+          "end": 50.388
+        },
+        {
+          "text": "grafo.",
+          "start": 50.448,
+          "end": 50.769
+        }
+      ]
+    },
+    {
+      "start": 51.869,
+      "end": 55.789,
+      "text": "Raccogliendo gli stati dei nodi nelle righe della matrice H allo strato l,",
+      "words": [
+        {
+          "text": "Raccogliendo",
+          "start": 51.869,
+          "end": 52.329
+        },
+        {
+          "text": "gli",
+          "start": 52.349,
+          "end": 52.489
+        },
+        {
+          "text": "stati",
+          "start": 52.549,
+          "end": 52.809
+        },
+        {
+          "text": "dei",
+          "start": 52.849,
+          "end": 52.949
+        },
+        {
+          "text": "nodi",
+          "start": 52.989,
+          "end": 53.249
+        },
+        {
+          "text": "nelle",
+          "start": 53.309,
+          "end": 53.489
+        },
+        {
+          "text": "righe",
+          "start": 53.549,
+          "end": 53.729
+        },
+        {
+          "text": "della",
+          "start": 53.769,
+          "end": 53.929
+        },
+        {
+          "text": "matrice",
+          "start": 53.969,
+          "end": 54.409
+        },
+        {
+          "text": "H",
+          "start": 54.849,
+          "end": 54.889
+        },
+        {
+          "text": "allo",
+          "start": 54.969,
+          "end": 55.129
+        },
+        {
+          "text": "strato",
+          "start": 55.169,
+          "end": 55.469
+        },
+        {
+          "text": "l,",
+          "start": 55.749,
+          "end": 55.789
+        }
+      ]
+    },
+    {
+      "start": 56.369,
+      "end": 58.57,
+      "text": "otteniamo subito tre celebri varianti.",
+      "words": [
+        {
+          "text": "otteniamo",
+          "start": 56.369,
+          "end": 56.81
+        },
+        {
+          "text": "subito",
+          "start": 56.93,
+          "end": 57.31
+        },
+        {
+          "text": "tre",
+          "start": 57.39,
+          "end": 57.53
+        },
+        {
+          "text": "celebri",
+          "start": 57.63,
+          "end": 58.01
+        },
+        {
+          "text": "varianti.",
+          "start": 58.05,
+          "end": 58.57
+        }
+      ]
+    },
+    {
+      "start": 59.29,
+      "end": 65.331,
+      "text": "La GCN calcola H allo strato l uguale ReLU di A cappello per H allo",
+      "words": [
+        {
+          "text": "La",
+          "start": 59.29,
+          "end": 59.35
+        },
+        {
+          "text": "GCN",
+          "start": 59.41,
+          "end": 59.87
+        },
+        {
+          "text": "calcola",
+          "start": 60.05,
+          "end": 60.45
+        },
+        {
+          "text": "H",
+          "start": 60.93,
+          "end": 60.97
+        },
+        {
+          "text": "allo",
+          "start": 61.05,
+          "end": 61.21
+        },
+        {
+          "text": "strato",
+          "start": 61.25,
+          "end": 61.55
+        },
+        {
+          "text": "l",
+          "start": 61.79,
+          "end": 61.83
+        },
+        {
+          "text": "uguale",
+          "start": 62.11,
+          "end": 62.49
+        },
+        {
+          "text": "ReLU",
+          "start": 62.991,
+          "end": 63.271
+        },
+        {
+          "text": "di",
+          "start": 63.531,
+          "end": 63.611
+        },
+        {
+          "text": "A",
+          "start": 63.791,
+          "end": 63.831
+        },
+        {
+          "text": "cappello",
+          "start": 63.931,
+          "end": 64.451
+        },
+        {
+          "text": "per",
+          "start": 64.511,
+          "end": 64.671
+        },
+        {
+          "text": "H",
+          "start": 65.091,
+          "end": 65.131
+        },
+        {
+          "text": "allo",
+          "start": 65.191,
+          "end": 65.331
+        }
+      ]
+    },
+    {
+      "start": 65.371,
+      "end": 68.09100000000001,
+      "text": "strato l meno uno per W allo strato l,",
+      "words": [
+        {
+          "text": "strato",
+          "start": 65.371,
+          "end": 65.671
+        },
+        {
+          "text": "l",
+          "start": 65.831,
+          "end": 65.87100000000001
+        },
+        {
+          "text": "meno",
+          "start": 65.951,
+          "end": 66.111
+        },
+        {
+          "text": "uno",
+          "start": 66.231,
+          "end": 66.411
+        },
+        {
+          "text": "per",
+          "start": 66.531,
+          "end": 66.691
+        },
+        {
+          "text": "W",
+          "start": 67.151,
+          "end": 67.191
+        },
+        {
+          "text": "allo",
+          "start": 67.371,
+          "end": 67.531
+        },
+        {
+          "text": "strato",
+          "start": 67.591,
+          "end": 67.871
+        },
+        {
+          "text": "l,",
+          "start": 68.051,
+          "end": 68.09100000000001
+        }
+      ]
+    },
+    {
+      "start": 68.652,
+      "end": 72.312,
+      "text": "dove A cappello è la matrice di adiacenza normalizzata per grado.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 68.652,
+          "end": 68.832
+        },
+        {
+          "text": "A",
+          "start": 68.932,
+          "end": 68.97200000000001
+        },
+        {
+          "text": "cappello",
+          "start": 69.052,
+          "end": 69.572
+        },
+        {
+          "text": "è",
+          "start": 69.732,
+          "end": 69.772
+        },
+        {
+          "text": "la",
+          "start": 69.812,
+          "end": 69.872
+        },
+        {
+          "text": "matrice",
+          "start": 69.932,
+          "end": 70.352
+        },
+        {
+          "text": "di",
+          "start": 70.412,
+          "end": 70.472
+        },
+        {
+          "text": "adiacenza",
+          "start": 70.512,
+          "end": 71.072
+        },
+        {
+          "text": "normalizzata",
+          "start": 71.132,
+          "end": 71.772
+        },
+        {
+          "text": "per",
+          "start": 71.832,
+          "end": 71.952
+        },
+        {
+          "text": "grado.",
+          "start": 72.012,
+          "end": 72.312
+        }
+      ]
+    },
+    {
+      "start": 73.232,
+      "end": 76.693,
+      "text": "GraphConv separa il contributo proprio da quello dei vicini:",
+      "words": [
+        {
+          "text": "GraphConv",
+          "start": 73.232,
+          "end": 73.852
+        },
+        {
+          "text": "separa",
+          "start": 74.172,
+          "end": 74.493
+        },
+        {
+          "text": "il",
+          "start": 74.533,
+          "end": 74.593
+        },
+        {
+          "text": "contributo",
+          "start": 74.613,
+          "end": 75.133
+        },
+        {
+          "text": "proprio",
+          "start": 75.193,
+          "end": 75.633
+        },
+        {
+          "text": "da",
+          "start": 75.753,
+          "end": 75.813
+        },
+        {
+          "text": "quello",
+          "start": 75.893,
+          "end": 76.093
+        },
+        {
+          "text": "dei",
+          "start": 76.133,
+          "end": 76.253
+        },
+        {
+          "text": "vicini:",
+          "start": 76.273,
+          "end": 76.693
+        }
+      ]
+    },
+    {
+      "start": 77.453,
+      "end": 78.933,
+      "text": "H allo strato l uguale",
+      "words": [
+        {
+          "text": "H",
+          "start": 77.453,
+          "end": 77.49300000000001
+        },
+        {
+          "text": "allo",
+          "start": 77.533,
+          "end": 77.673
+        },
+        {
+          "text": "strato",
+          "start": 77.713,
+          "end": 78.013
+        },
+        {
+          "text": "l",
+          "start": 78.273,
+          "end": 78.313
+        },
+        {
+          "text": "uguale",
+          "start": 78.553,
+          "end": 78.933
+        }
+      ]
+    },
+    {
+      "start": 79.593,
+      "end": 82.574,
+      "text": "f di H allo strato l meno uno per W uno,",
+      "words": [
+        {
+          "text": "f",
+          "start": 79.593,
+          "end": 79.63300000000001
+        },
+        {
+          "text": "di",
+          "start": 79.773,
+          "end": 79.853
+        },
+        {
+          "text": "H",
+          "start": 80.133,
+          "end": 80.173
+        },
+        {
+          "text": "allo",
+          "start": 80.373,
+          "end": 80.534
+        },
+        {
+          "text": "strato",
+          "start": 80.594,
+          "end": 80.854
+        },
+        {
+          "text": "l",
+          "start": 80.994,
+          "end": 81.034
+        },
+        {
+          "text": "meno",
+          "start": 81.114,
+          "end": 81.274
+        },
+        {
+          "text": "uno",
+          "start": 81.354,
+          "end": 81.494
+        },
+        {
+          "text": "per",
+          "start": 81.574,
+          "end": 81.694
+        },
+        {
+          "text": "W",
+          "start": 82.154,
+          "end": 82.194
+        },
+        {
+          "text": "uno,",
+          "start": 82.234,
+          "end": 82.574
+        }
+      ]
+    },
+    {
+      "start": 82.934,
+      "end": 86.595,
+      "text": "più A per H allo strato l meno uno per W due.",
+      "words": [
+        {
+          "text": "più",
+          "start": 82.934,
+          "end": 83.094
+        },
+        {
+          "text": "A",
+          "start": 83.374,
+          "end": 83.414
+        },
+        {
+          "text": "per",
+          "start": 83.794,
+          "end": 83.954
+        },
+        {
+          "text": "H",
+          "start": 84.374,
+          "end": 84.414
+        },
+        {
+          "text": "allo",
+          "start": 84.454,
+          "end": 84.594
+        },
+        {
+          "text": "strato",
+          "start": 84.654,
+          "end": 84.934
+        },
+        {
+          "text": "l",
+          "start": 85.094,
+          "end": 85.134
+        },
+        {
+          "text": "meno",
+          "start": 85.194,
+          "end": 85.354
+        },
+        {
+          "text": "uno",
+          "start": 85.474,
+          "end": 85.634
+        },
+        {
+          "text": "per",
+          "start": 85.694,
+          "end": 85.814
+        },
+        {
+          "text": "W",
+          "start": 86.154,
+          "end": 86.194
+        },
+        {
+          "text": "due.",
+          "start": 86.354,
+          "end": 86.595
+        }
+      ]
+    },
+    {
+      "start": 87.295,
+      "end": 93.836,
+      "text": "La GAT utilizza infine un'aggregazione pesata basata sul meccanismo di attenzione visto nel capitolo diciotto.",
+      "words": [
+        {
+          "text": "La",
+          "start": 87.295,
+          "end": 87.375
+        },
+        {
+          "text": "GAT",
+          "start": 87.455,
+          "end": 87.715
+        },
+        {
+          "text": "utilizza",
+          "start": 87.955,
+          "end": 88.335
+        },
+        {
+          "text": "infine",
+          "start": 88.395,
+          "end": 88.715
+        },
+        {
+          "text": "un'aggregazione",
+          "start": 88.775,
+          "end": 89.655
+        },
+        {
+          "text": "pesata",
+          "start": 89.735,
+          "end": 90.235
+        },
+        {
+          "text": "basata",
+          "start": 90.575,
+          "end": 90.915
+        },
+        {
+          "text": "sul",
+          "start": 90.975,
+          "end": 91.135
+        },
+        {
+          "text": "meccanismo",
+          "start": 91.195,
+          "end": 91.735
+        },
+        {
+          "text": "di",
+          "start": 91.775,
+          "end": 91.835
+        },
+        {
+          "text": "attenzione",
+          "start": 91.875,
+          "end": 92.396
+        },
+        {
+          "text": "visto",
+          "start": 92.436,
+          "end": 92.676
+        },
+        {
+          "text": "nel",
+          "start": 92.736,
+          "end": 92.876
+        },
+        {
+          "text": "capitolo",
+          "start": 92.916,
+          "end": 93.336
+        },
+        {
+          "text": "diciotto.",
+          "start": 93.376,
+          "end": 93.836
+        }
+      ]
+    },
+    {
+      "start": 94.816,
+      "end": 99.357,
+      "text": "Cogliete ora un'idea centrale: le DGN sono intrinsecamente profonde.",
+      "words": [
+        {
+          "text": "Cogliete",
+          "start": 94.816,
+          "end": 95.196
+        },
+        {
+          "text": "ora",
+          "start": 95.276,
+          "end": 95.396
+        },
+        {
+          "text": "un'idea",
+          "start": 95.436,
+          "end": 95.776
+        },
+        {
+          "text": "centrale:",
+          "start": 95.816,
+          "end": 96.336
+        },
+        {
+          "text": "le",
+          "start": 96.816,
+          "end": 96.896
+        },
+        {
+          "text": "DGN",
+          "start": 96.976,
+          "end": 97.436
+        },
+        {
+          "text": "sono",
+          "start": 97.556,
+          "end": 97.736
+        },
+        {
+          "text": "intrinsecamente",
+          "start": 97.916,
+          "end": 98.817
+        },
+        {
+          "text": "profonde.",
+          "start": 98.857,
+          "end": 99.357
+        }
+      ]
+    },
+    {
+      "start": 99.897,
+      "end": 103.497,
+      "text": "Il processo non resta locale: come mostra la figura a tre pannelli,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 99.897,
+          "end": 99.997
+        },
+        {
+          "text": "processo",
+          "start": 100.037,
+          "end": 100.457
+        },
+        {
+          "text": "non",
+          "start": 100.537,
+          "end": 100.657
+        },
+        {
+          "text": "resta",
+          "start": 100.717,
+          "end": 100.977
+        },
+        {
+          "text": "locale:",
+          "start": 101.037,
+          "end": 101.417
+        },
+        {
+          "text": "come",
+          "start": 101.817,
+          "end": 101.977
+        },
+        {
+          "text": "mostra",
+          "start": 102.037,
+          "end": 102.297
+        },
+        {
+          "text": "la",
+          "start": 102.357,
+          "end": 102.397
+        },
+        {
+          "text": "figura",
+          "start": 102.437,
+          "end": 102.777
+        },
+        {
+          "text": "a",
+          "start": 102.817,
+          "end": 102.857
+        },
+        {
+          "text": "tre",
+          "start": 102.897,
+          "end": 102.997
+        },
+        {
+          "text": "pannelli,",
+          "start": 103.037,
+          "end": 103.497
+        }
+      ]
+    },
+    {
+      "start": 103.697,
+      "end": 107.918,
+      "text": "al primo strato lo stato del nodo rosso dipende solo dal nodo stesso con raggio",
+      "words": [
+        {
+          "text": "al",
+          "start": 103.697,
+          "end": 103.777
+        },
+        {
+          "text": "primo",
+          "start": 103.837,
+          "end": 104.037
+        },
+        {
+          "text": "strato",
+          "start": 104.097,
+          "end": 104.398
+        },
+        {
+          "text": "lo",
+          "start": 104.458,
+          "end": 104.538
+        },
+        {
+          "text": "stato",
+          "start": 104.578,
+          "end": 104.818
+        },
+        {
+          "text": "del",
+          "start": 104.858,
+          "end": 104.978
+        },
+        {
+          "text": "nodo",
+          "start": 105.038,
+          "end": 105.218
+        },
+        {
+          "text": "rosso",
+          "start": 105.278,
+          "end": 105.558
+        },
+        {
+          "text": "dipende",
+          "start": 105.598,
+          "end": 105.958
+        },
+        {
+          "text": "solo",
+          "start": 106.098,
+          "end": 106.378
+        },
+        {
+          "text": "dal",
+          "start": 106.418,
+          "end": 106.538
+        },
+        {
+          "text": "nodo",
+          "start": 106.578,
+          "end": 106.758
+        },
+        {
+          "text": "stesso",
+          "start": 106.818,
+          "end": 107.218
+        },
+        {
+          "text": "con",
+          "start": 107.518,
+          "end": 107.638
+        },
+        {
+          "text": "raggio",
+          "start": 107.698,
+          "end": 107.918
+        }
+      ]
+    },
+    {
+      "start": 108.038,
+      "end": 111.899,
+      "text": "zero; al secondo strato include i vicini diretti a raggio uno;",
+      "words": [
+        {
+          "text": "zero;",
+          "start": 108.038,
+          "end": 108.298
+        },
+        {
+          "text": "al",
+          "start": 108.758,
+          "end": 108.858
+        },
+        {
+          "text": "secondo",
+          "start": 108.898,
+          "end": 109.218
+        },
+        {
+          "text": "strato",
+          "start": 109.258,
+          "end": 109.498
+        },
+        {
+          "text": "include",
+          "start": 109.558,
+          "end": 109.898
+        },
+        {
+          "text": "i",
+          "start": 109.938,
+          "end": 109.97800000000001
+        },
+        {
+          "text": "vicini",
+          "start": 109.998,
+          "end": 110.319
+        },
+        {
+          "text": "diretti",
+          "start": 110.359,
+          "end": 110.839
+        },
+        {
+          "text": "a",
+          "start": 111.199,
+          "end": 111.239
+        },
+        {
+          "text": "raggio",
+          "start": 111.299,
+          "end": 111.579
+        },
+        {
+          "text": "uno;",
+          "start": 111.719,
+          "end": 111.899
+        }
+      ]
+    },
+    {
+      "start": 112.379,
+      "end": 115.319,
+      "text": "al terzo raggiunge i vicini dei vicini a raggio due.",
+      "words": [
+        {
+          "text": "al",
+          "start": 112.379,
+          "end": 112.479
+        },
+        {
+          "text": "terzo",
+          "start": 112.539,
+          "end": 112.839
+        },
+        {
+          "text": "raggiunge",
+          "start": 112.899,
+          "end": 113.279
+        },
+        {
+          "text": "i",
+          "start": 113.319,
+          "end": 113.35900000000001
+        },
+        {
+          "text": "vicini",
+          "start": 113.379,
+          "end": 113.819
+        },
+        {
+          "text": "dei",
+          "start": 113.859,
+          "end": 113.979
+        },
+        {
+          "text": "vicini",
+          "start": 113.999,
+          "end": 114.439
+        },
+        {
+          "text": "a",
+          "start": 114.639,
+          "end": 114.679
+        },
+        {
+          "text": "raggio",
+          "start": 114.779,
+          "end": 115.019
+        },
+        {
+          "text": "due.",
+          "start": 115.079,
+          "end": 115.319
+        }
+      ]
+    },
+    {
+      "start": 115.919,
+      "end": 118.88,
+      "text": "La profondità serve proprio a far crescere il contesto.",
+      "words": [
+        {
+          "text": "La",
+          "start": 115.919,
+          "end": 115.999
+        },
+        {
+          "text": "profondità",
+          "start": 116.039,
+          "end": 116.52
+        },
+        {
+          "text": "serve",
+          "start": 116.68,
+          "end": 116.98
+        },
+        {
+          "text": "proprio",
+          "start": 117.06,
+          "end": 117.5
+        },
+        {
+          "text": "a",
+          "start": 117.52,
+          "end": 117.56
+        },
+        {
+          "text": "far",
+          "start": 117.6,
+          "end": 117.74
+        },
+        {
+          "text": "crescere",
+          "start": 117.8,
+          "end": 118.2
+        },
+        {
+          "text": "il",
+          "start": 118.22,
+          "end": 118.28
+        },
+        {
+          "text": "contesto.",
+          "start": 118.32,
+          "end": 118.88
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1869 @@
+{
+  "duration": 131.51,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.74,
+      "text": "Veniamo a un altro concetto cardine del deep learning:",
+      "words": [
+        {
+          "text": "Veniamo",
+          "start": 0.08,
+          "end": 0.4
+        },
+        {
+          "text": "a",
+          "start": 0.44,
+          "end": 0.48
+        },
+        {
+          "text": "un",
+          "start": 0.52,
+          "end": 0.58
+        },
+        {
+          "text": "altro",
+          "start": 0.62,
+          "end": 0.82
+        },
+        {
+          "text": "concetto",
+          "start": 0.86,
+          "end": 1.28
+        },
+        {
+          "text": "cardine",
+          "start": 1.34,
+          "end": 1.72
+        },
+        {
+          "text": "del",
+          "start": 1.8,
+          "end": 1.92
+        },
+        {
+          "text": "deep",
+          "start": 2.0,
+          "end": 2.16
+        },
+        {
+          "text": "learning:",
+          "start": 2.26,
+          "end": 2.74
+        }
+      ]
+    },
+    {
+      "start": 3.1,
+      "end": 4.901,
+      "text": "le rappresentazioni distribuite.",
+      "words": [
+        {
+          "text": "le",
+          "start": 3.1,
+          "end": 3.181
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 3.241,
+          "end": 4.101
+        },
+        {
+          "text": "distribuite.",
+          "start": 4.181,
+          "end": 4.901
+        }
+      ]
+    },
+    {
+      "start": 5.461,
+      "end": 9.301,
+      "text": "Per definizione, in una rappresentazione distribuita gli elementi, cioè le feature,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 5.461,
+          "end": 5.581
+        },
+        {
+          "text": "definizione,",
+          "start": 5.621,
+          "end": 6.241
+        },
+        {
+          "text": "in",
+          "start": 6.301,
+          "end": 6.361
+        },
+        {
+          "text": "una",
+          "start": 6.381,
+          "end": 6.501
+        },
+        {
+          "text": "rappresentazione",
+          "start": 6.561,
+          "end": 7.281
+        },
+        {
+          "text": "distribuita",
+          "start": 7.321,
+          "end": 7.861
+        },
+        {
+          "text": "gli",
+          "start": 7.901,
+          "end": 8.021
+        },
+        {
+          "text": "elementi,",
+          "start": 8.041,
+          "end": 8.581
+        },
+        {
+          "text": "cioè",
+          "start": 8.641,
+          "end": 8.781
+        },
+        {
+          "text": "le",
+          "start": 8.821,
+          "end": 8.881
+        },
+        {
+          "text": "feature,",
+          "start": 8.941,
+          "end": 9.301
+        }
+      ]
+    },
+    {
+      "start": 9.481,
+      "end": 15.822,
+      "text": "non sono mutuamente esclusivi: le loro molte combinazioni di attivazione corrispondono alle variazioni osservate nei",
+      "words": [
+        {
+          "text": "non",
+          "start": 9.481,
+          "end": 9.621
+        },
+        {
+          "text": "sono",
+          "start": 9.701,
+          "end": 9.942
+        },
+        {
+          "text": "mutuamente",
+          "start": 10.002,
+          "end": 10.482
+        },
+        {
+          "text": "esclusivi:",
+          "start": 10.542,
+          "end": 11.042
+        },
+        {
+          "text": "le",
+          "start": 11.582,
+          "end": 11.642
+        },
+        {
+          "text": "loro",
+          "start": 11.702,
+          "end": 11.882
+        },
+        {
+          "text": "molte",
+          "start": 11.982,
+          "end": 12.302
+        },
+        {
+          "text": "combinazioni",
+          "start": 12.362,
+          "end": 12.922
+        },
+        {
+          "text": "di",
+          "start": 12.962,
+          "end": 13.022
+        },
+        {
+          "text": "attivazione",
+          "start": 13.082,
+          "end": 13.682
+        },
+        {
+          "text": "corrispondono",
+          "start": 13.742,
+          "end": 14.462
+        },
+        {
+          "text": "alle",
+          "start": 14.522,
+          "end": 14.662
+        },
+        {
+          "text": "variazioni",
+          "start": 14.702,
+          "end": 15.202
+        },
+        {
+          "text": "osservate",
+          "start": 15.242,
+          "end": 15.662
+        },
+        {
+          "text": "nei",
+          "start": 15.702,
+          "end": 15.822
+        }
+      ]
+    },
+    {
+      "start": 15.862,
+      "end": 16.122,
+      "text": "dati.",
+      "words": [
+        {
+          "text": "dati.",
+          "start": 15.862,
+          "end": 16.122
+        }
+      ]
+    },
+    {
+      "start": 16.783,
+      "end": 21.243,
+      "text": "Mettiamola a confronto con una rappresentazione simbolica, detta anche localista o one-hot.",
+      "words": [
+        {
+          "text": "Mettiamola",
+          "start": 16.783,
+          "end": 17.163
+        },
+        {
+          "text": "a",
+          "start": 17.183,
+          "end": 17.223
+        },
+        {
+          "text": "confronto",
+          "start": 17.263,
+          "end": 17.683
+        },
+        {
+          "text": "con",
+          "start": 17.723,
+          "end": 17.843
+        },
+        {
+          "text": "una",
+          "start": 17.883,
+          "end": 17.983
+        },
+        {
+          "text": "rappresentazione",
+          "start": 18.023,
+          "end": 18.763
+        },
+        {
+          "text": "simbolica,",
+          "start": 18.823,
+          "end": 19.483
+        },
+        {
+          "text": "detta",
+          "start": 19.603,
+          "end": 19.803
+        },
+        {
+          "text": "anche",
+          "start": 19.863,
+          "end": 20.043
+        },
+        {
+          "text": "localista",
+          "start": 20.103,
+          "end": 20.663
+        },
+        {
+          "text": "o",
+          "start": 20.743,
+          "end": 20.783
+        },
+        {
+          "text": "one-hot.",
+          "start": 20.843,
+          "end": 21.243
+        }
+      ]
+    },
+    {
+      "start": 21.743,
+      "end": 25.844,
+      "text": "Nella codifica one-hot una sola unità vale uno e tutte le altre valgono zero:",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 21.743,
+          "end": 21.923
+        },
+        {
+          "text": "codifica",
+          "start": 21.943,
+          "end": 22.343
+        },
+        {
+          "text": "one-hot",
+          "start": 22.463,
+          "end": 22.823
+        },
+        {
+          "text": "una",
+          "start": 23.064,
+          "end": 23.224
+        },
+        {
+          "text": "sola",
+          "start": 23.304,
+          "end": 23.484
+        },
+        {
+          "text": "unità",
+          "start": 23.524,
+          "end": 23.744
+        },
+        {
+          "text": "vale",
+          "start": 23.824,
+          "end": 24.004
+        },
+        {
+          "text": "uno",
+          "start": 24.104,
+          "end": 24.264
+        },
+        {
+          "text": "e",
+          "start": 24.624,
+          "end": 24.664
+        },
+        {
+          "text": "tutte",
+          "start": 24.704,
+          "end": 24.904
+        },
+        {
+          "text": "le",
+          "start": 24.924,
+          "end": 24.984
+        },
+        {
+          "text": "altre",
+          "start": 25.004,
+          "end": 25.184
+        },
+        {
+          "text": "valgono",
+          "start": 25.204,
+          "end": 25.524
+        },
+        {
+          "text": "zero:",
+          "start": 25.604,
+          "end": 25.844
+        }
+      ]
+    },
+    {
+      "start": 26.264,
+      "end": 31.245,
+      "text": "di conseguenza la distanza euclidea tra due concetti diversi qualsiasi è sempre radice quadrata di",
+      "words": [
+        {
+          "text": "di",
+          "start": 26.264,
+          "end": 26.324
+        },
+        {
+          "text": "conseguenza",
+          "start": 26.344,
+          "end": 26.864
+        },
+        {
+          "text": "la",
+          "start": 26.904,
+          "end": 26.944
+        },
+        {
+          "text": "distanza",
+          "start": 26.984,
+          "end": 27.364
+        },
+        {
+          "text": "euclidea",
+          "start": 27.424,
+          "end": 28.024
+        },
+        {
+          "text": "tra",
+          "start": 28.104,
+          "end": 28.204
+        },
+        {
+          "text": "due",
+          "start": 28.264,
+          "end": 28.364
+        },
+        {
+          "text": "concetti",
+          "start": 28.384,
+          "end": 28.744
+        },
+        {
+          "text": "diversi",
+          "start": 28.804,
+          "end": 29.124
+        },
+        {
+          "text": "qualsiasi",
+          "start": 29.184,
+          "end": 29.765
+        },
+        {
+          "text": "è",
+          "start": 29.825,
+          "end": 29.865
+        },
+        {
+          "text": "sempre",
+          "start": 30.005,
+          "end": 30.405
+        },
+        {
+          "text": "radice",
+          "start": 30.505,
+          "end": 30.765
+        },
+        {
+          "text": "quadrata",
+          "start": 30.805,
+          "end": 31.125
+        },
+        {
+          "text": "di",
+          "start": 31.185,
+          "end": 31.245
+        }
+      ]
+    },
+    {
+      "start": 31.305,
+      "end": 33.545,
+      "text": "due, senza alcuna nozione di somiglianza.",
+      "words": [
+        {
+          "text": "due,",
+          "start": 31.305,
+          "end": 31.505
+        },
+        {
+          "text": "senza",
+          "start": 31.905,
+          "end": 32.125
+        },
+        {
+          "text": "alcuna",
+          "start": 32.145,
+          "end": 32.405
+        },
+        {
+          "text": "nozione",
+          "start": 32.445,
+          "end": 32.765
+        },
+        {
+          "text": "di",
+          "start": 32.805,
+          "end": 32.865
+        },
+        {
+          "text": "somiglianza.",
+          "start": 32.905,
+          "end": 33.545
+        }
+      ]
+    },
+    {
+      "start": 34.205,
+      "end": 38.406,
+      "text": "In una rappresentazione distribuita, invece, usiamo vettori densi di numeri reali:",
+      "words": [
+        {
+          "text": "In",
+          "start": 34.205,
+          "end": 34.285
+        },
+        {
+          "text": "una",
+          "start": 34.305,
+          "end": 34.425
+        },
+        {
+          "text": "rappresentazione",
+          "start": 34.465,
+          "end": 35.165
+        },
+        {
+          "text": "distribuita,",
+          "start": 35.225,
+          "end": 35.805
+        },
+        {
+          "text": "invece,",
+          "start": 35.865,
+          "end": 36.146
+        },
+        {
+          "text": "usiamo",
+          "start": 36.206,
+          "end": 36.486
+        },
+        {
+          "text": "vettori",
+          "start": 36.606,
+          "end": 37.006
+        },
+        {
+          "text": "densi",
+          "start": 37.086,
+          "end": 37.446
+        },
+        {
+          "text": "di",
+          "start": 37.486,
+          "end": 37.546
+        },
+        {
+          "text": "numeri",
+          "start": 37.586,
+          "end": 37.866
+        },
+        {
+          "text": "reali:",
+          "start": 37.966,
+          "end": 38.406
+        }
+      ]
+    },
+    {
+      "start": 38.886,
+      "end": 42.106,
+      "text": "ogni concetto corrisponde all'insieme delle attivazioni di tutte le unità,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 38.886,
+          "end": 39.026
+        },
+        {
+          "text": "concetto",
+          "start": 39.066,
+          "end": 39.466
+        },
+        {
+          "text": "corrisponde",
+          "start": 39.506,
+          "end": 39.986
+        },
+        {
+          "text": "all'insieme",
+          "start": 40.006,
+          "end": 40.426
+        },
+        {
+          "text": "delle",
+          "start": 40.466,
+          "end": 40.626
+        },
+        {
+          "text": "attivazioni",
+          "start": 40.666,
+          "end": 41.186
+        },
+        {
+          "text": "di",
+          "start": 41.246,
+          "end": 41.306
+        },
+        {
+          "text": "tutte",
+          "start": 41.406,
+          "end": 41.686
+        },
+        {
+          "text": "le",
+          "start": 41.726,
+          "end": 41.786
+        },
+        {
+          "text": "unità,",
+          "start": 41.846,
+          "end": 42.106
+        }
+      ]
+    },
+    {
+      "start": 42.546,
+      "end": 45.467,
+      "text": "la similarità si può condividere tra più di due concetti,",
+      "words": [
+        {
+          "text": "la",
+          "start": 42.546,
+          "end": 42.607
+        },
+        {
+          "text": "similarità",
+          "start": 42.687,
+          "end": 43.287
+        },
+        {
+          "text": "si",
+          "start": 43.387,
+          "end": 43.467
+        },
+        {
+          "text": "può",
+          "start": 43.527,
+          "end": 43.627
+        },
+        {
+          "text": "condividere",
+          "start": 43.747,
+          "end": 44.367
+        },
+        {
+          "text": "tra",
+          "start": 44.427,
+          "end": 44.547
+        },
+        {
+          "text": "più",
+          "start": 44.607,
+          "end": 44.687
+        },
+        {
+          "text": "di",
+          "start": 44.727,
+          "end": 44.767
+        },
+        {
+          "text": "due",
+          "start": 44.807,
+          "end": 44.927
+        },
+        {
+          "text": "concetti,",
+          "start": 44.947,
+          "end": 45.467
+        }
+      ]
+    },
+    {
+      "start": 45.927,
+      "end": 50.288,
+      "text": "si condividono feature apprese e la distanza nello spazio riflette il significato.",
+      "words": [
+        {
+          "text": "si",
+          "start": 45.927,
+          "end": 45.987
+        },
+        {
+          "text": "condividono",
+          "start": 46.007,
+          "end": 46.487
+        },
+        {
+          "text": "feature",
+          "start": 46.567,
+          "end": 46.867
+        },
+        {
+          "text": "apprese",
+          "start": 46.867,
+          "end": 47.327
+        },
+        {
+          "text": "e",
+          "start": 47.487,
+          "end": 47.527
+        },
+        {
+          "text": "la",
+          "start": 47.587,
+          "end": 47.647
+        },
+        {
+          "text": "distanza",
+          "start": 47.687,
+          "end": 48.147
+        },
+        {
+          "text": "nello",
+          "start": 48.187,
+          "end": 48.367
+        },
+        {
+          "text": "spazio",
+          "start": 48.407,
+          "end": 48.847
+        },
+        {
+          "text": "riflette",
+          "start": 49.007,
+          "end": 49.448
+        },
+        {
+          "text": "il",
+          "start": 49.548,
+          "end": 49.608
+        },
+        {
+          "text": "significato.",
+          "start": 49.648,
+          "end": 50.288
+        }
+      ]
+    },
+    {
+      "start": 51.088,
+      "end": 55.628,
+      "text": "Un punto metodologico importante: qui non stiamo classificando, stiamo rappresentando,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 51.088,
+          "end": 51.168
+        },
+        {
+          "text": "punto",
+          "start": 51.188,
+          "end": 51.428
+        },
+        {
+          "text": "metodologico",
+          "start": 51.468,
+          "end": 52.048
+        },
+        {
+          "text": "importante:",
+          "start": 52.088,
+          "end": 52.788
+        },
+        {
+          "text": "qui",
+          "start": 53.048,
+          "end": 53.148
+        },
+        {
+          "text": "non",
+          "start": 53.208,
+          "end": 53.328
+        },
+        {
+          "text": "stiamo",
+          "start": 53.368,
+          "end": 53.628
+        },
+        {
+          "text": "classificando,",
+          "start": 53.688,
+          "end": 54.308
+        },
+        {
+          "text": "stiamo",
+          "start": 54.348,
+          "end": 54.568
+        },
+        {
+          "text": "rappresentando,",
+          "start": 54.648,
+          "end": 55.628
+        }
+      ]
+    },
+    {
+      "start": 55.989,
+      "end": 58.809,
+      "text": "e l'apprendimento agisce sulla rappresentazione interna.",
+      "words": [
+        {
+          "text": "e",
+          "start": 55.989,
+          "end": 56.029
+        },
+        {
+          "text": "l'apprendimento",
+          "start": 56.049,
+          "end": 56.709
+        },
+        {
+          "text": "agisce",
+          "start": 56.789,
+          "end": 57.149
+        },
+        {
+          "text": "sulla",
+          "start": 57.189,
+          "end": 57.469
+        },
+        {
+          "text": "rappresentazione",
+          "start": 57.589,
+          "end": 58.309
+        },
+        {
+          "text": "interna.",
+          "start": 58.349,
+          "end": 58.809
+        }
+      ]
+    },
+    {
+      "start": 59.349,
+      "end": 64.49000000000001,
+      "text": "In ingresso si fornisce una rappresentazione distribuita solo se la conoscenza di dominio permette di",
+      "words": [
+        {
+          "text": "In",
+          "start": 59.349,
+          "end": 59.429
+        },
+        {
+          "text": "ingresso",
+          "start": 59.449,
+          "end": 59.789
+        },
+        {
+          "text": "si",
+          "start": 59.849,
+          "end": 59.929
+        },
+        {
+          "text": "fornisce",
+          "start": 59.969,
+          "end": 60.329
+        },
+        {
+          "text": "una",
+          "start": 60.389,
+          "end": 60.489
+        },
+        {
+          "text": "rappresentazione",
+          "start": 60.529,
+          "end": 61.169
+        },
+        {
+          "text": "distribuita",
+          "start": 61.229,
+          "end": 61.769
+        },
+        {
+          "text": "solo",
+          "start": 61.889,
+          "end": 62.089
+        },
+        {
+          "text": "se",
+          "start": 62.149,
+          "end": 62.249
+        },
+        {
+          "text": "la",
+          "start": 62.47,
+          "end": 62.55
+        },
+        {
+          "text": "conoscenza",
+          "start": 62.63,
+          "end": 63.23
+        },
+        {
+          "text": "di",
+          "start": 63.27,
+          "end": 63.35
+        },
+        {
+          "text": "dominio",
+          "start": 63.39,
+          "end": 63.79
+        },
+        {
+          "text": "permette",
+          "start": 64.09,
+          "end": 64.41
+        },
+        {
+          "text": "di",
+          "start": 64.45,
+          "end": 64.49000000000001
+        }
+      ]
+    },
+    {
+      "start": 64.53,
+      "end": 68.61,
+      "text": "fissarla correttamente, perché fissarla arbitrariamente può danneggiare il task.",
+      "words": [
+        {
+          "text": "fissarla",
+          "start": 64.53,
+          "end": 64.91
+        },
+        {
+          "text": "correttamente,",
+          "start": 64.95,
+          "end": 65.67
+        },
+        {
+          "text": "perché",
+          "start": 66.03,
+          "end": 66.23
+        },
+        {
+          "text": "fissarla",
+          "start": 66.33,
+          "end": 66.71
+        },
+        {
+          "text": "arbitrariamente",
+          "start": 66.73,
+          "end": 67.53
+        },
+        {
+          "text": "può",
+          "start": 67.59,
+          "end": 67.67
+        },
+        {
+          "text": "danneggiare",
+          "start": 67.77,
+          "end": 68.23
+        },
+        {
+          "text": "il",
+          "start": 68.25,
+          "end": 68.31
+        },
+        {
+          "text": "task.",
+          "start": 68.35,
+          "end": 68.61
+        }
+      ]
+    },
+    {
+      "start": 69.271,
+      "end": 73.491,
+      "text": "Di solito si passa un input one-hot e si lascia che il modello sviluppi internamente",
+      "words": [
+        {
+          "text": "Di",
+          "start": 69.271,
+          "end": 69.331
+        },
+        {
+          "text": "solito",
+          "start": 69.371,
+          "end": 69.691
+        },
+        {
+          "text": "si",
+          "start": 69.811,
+          "end": 69.891
+        },
+        {
+          "text": "passa",
+          "start": 69.951,
+          "end": 70.171
+        },
+        {
+          "text": "un",
+          "start": 70.251,
+          "end": 70.311
+        },
+        {
+          "text": "input",
+          "start": 70.371,
+          "end": 70.671
+        },
+        {
+          "text": "one-hot",
+          "start": 70.691,
+          "end": 71.151
+        },
+        {
+          "text": "e",
+          "start": 71.351,
+          "end": 71.391
+        },
+        {
+          "text": "si",
+          "start": 71.451,
+          "end": 71.531
+        },
+        {
+          "text": "lascia",
+          "start": 71.571,
+          "end": 71.791
+        },
+        {
+          "text": "che",
+          "start": 71.851,
+          "end": 71.931
+        },
+        {
+          "text": "il",
+          "start": 71.971,
+          "end": 72.031
+        },
+        {
+          "text": "modello",
+          "start": 72.071,
+          "end": 72.391
+        },
+        {
+          "text": "sviluppi",
+          "start": 72.431,
+          "end": 72.811
+        },
+        {
+          "text": "internamente",
+          "start": 72.871,
+          "end": 73.491
+        }
+      ]
+    },
+    {
+      "start": 73.551,
+      "end": 75.331,
+      "text": "la propria rappresentazione distribuita.",
+      "words": [
+        {
+          "text": "la",
+          "start": 73.551,
+          "end": 73.59100000000001
+        },
+        {
+          "text": "propria",
+          "start": 73.631,
+          "end": 73.931
+        },
+        {
+          "text": "rappresentazione",
+          "start": 73.971,
+          "end": 74.671
+        },
+        {
+          "text": "distribuita.",
+          "start": 74.711,
+          "end": 75.331
+        }
+      ]
+    },
+    {
+      "start": 76.112,
+      "end": 78.692,
+      "text": "Contiamo ora la differenza in capacità espressiva.",
+      "words": [
+        {
+          "text": "Contiamo",
+          "start": 76.112,
+          "end": 76.552
+        },
+        {
+          "text": "ora",
+          "start": 76.612,
+          "end": 76.752
+        },
+        {
+          "text": "la",
+          "start": 76.832,
+          "end": 76.892
+        },
+        {
+          "text": "differenza",
+          "start": 76.932,
+          "end": 77.532
+        },
+        {
+          "text": "in",
+          "start": 77.572,
+          "end": 77.632
+        },
+        {
+          "text": "capacità",
+          "start": 77.652,
+          "end": 78.052
+        },
+        {
+          "text": "espressiva.",
+          "start": 78.112,
+          "end": 78.692
+        }
+      ]
+    },
+    {
+      "start": 79.232,
+      "end": 84.153,
+      "text": "Consideriamo quattro concetti: auto blu, bici blu, auto rossa e bici rossa.",
+      "words": [
+        {
+          "text": "Consideriamo",
+          "start": 79.232,
+          "end": 79.732
+        },
+        {
+          "text": "quattro",
+          "start": 79.792,
+          "end": 80.052
+        },
+        {
+          "text": "concetti:",
+          "start": 80.092,
+          "end": 80.632
+        },
+        {
+          "text": "auto",
+          "start": 80.992,
+          "end": 81.232
+        },
+        {
+          "text": "blu,",
+          "start": 81.292,
+          "end": 81.432
+        },
+        {
+          "text": "bici",
+          "start": 81.832,
+          "end": 82.092
+        },
+        {
+          "text": "blu,",
+          "start": 82.153,
+          "end": 82.273
+        },
+        {
+          "text": "auto",
+          "start": 82.693,
+          "end": 82.913
+        },
+        {
+          "text": "rossa",
+          "start": 82.953,
+          "end": 83.273
+        },
+        {
+          "text": "e",
+          "start": 83.513,
+          "end": 83.55300000000001
+        },
+        {
+          "text": "bici",
+          "start": 83.593,
+          "end": 83.793
+        },
+        {
+          "text": "rossa.",
+          "start": 83.853,
+          "end": 84.153
+        }
+      ]
+    },
+    {
+      "start": 84.653,
+      "end": 86.353,
+      "text": "In one-hot servono quattro unità;",
+      "words": [
+        {
+          "text": "In",
+          "start": 84.653,
+          "end": 84.733
+        },
+        {
+          "text": "one-hot",
+          "start": 84.793,
+          "end": 85.113
+        },
+        {
+          "text": "servono",
+          "start": 85.233,
+          "end": 85.553
+        },
+        {
+          "text": "quattro",
+          "start": 85.673,
+          "end": 86.033
+        },
+        {
+          "text": "unità;",
+          "start": 86.093,
+          "end": 86.353
+        }
+      ]
+    },
+    {
+      "start": 87.013,
+      "end": 91.374,
+      "text": "in una rappresentazione distribuita bastano due unità, due alla seconda concetti,",
+      "words": [
+        {
+          "text": "in",
+          "start": 87.013,
+          "end": 87.093
+        },
+        {
+          "text": "una",
+          "start": 87.113,
+          "end": 87.253
+        },
+        {
+          "text": "rappresentazione",
+          "start": 87.293,
+          "end": 87.973
+        },
+        {
+          "text": "distribuita",
+          "start": 88.033,
+          "end": 88.653
+        },
+        {
+          "text": "bastano",
+          "start": 88.734,
+          "end": 89.114
+        },
+        {
+          "text": "due",
+          "start": 89.234,
+          "end": 89.454
+        },
+        {
+          "text": "unità,",
+          "start": 89.534,
+          "end": 89.814
+        },
+        {
+          "text": "due",
+          "start": 90.074,
+          "end": 90.294
+        },
+        {
+          "text": "alla",
+          "start": 90.334,
+          "end": 90.474
+        },
+        {
+          "text": "seconda",
+          "start": 90.534,
+          "end": 90.814
+        },
+        {
+          "text": "concetti,",
+          "start": 90.854,
+          "end": 91.374
+        }
+      ]
+    },
+    {
+      "start": 91.794,
+      "end": 93.614,
+      "text": "una per il colore e una per il tipo,",
+      "words": [
+        {
+          "text": "una",
+          "start": 91.794,
+          "end": 91.954
+        },
+        {
+          "text": "per",
+          "start": 92.014,
+          "end": 92.114
+        },
+        {
+          "text": "il",
+          "start": 92.154,
+          "end": 92.214
+        },
+        {
+          "text": "colore",
+          "start": 92.274,
+          "end": 92.634
+        },
+        {
+          "text": "e",
+          "start": 92.794,
+          "end": 92.834
+        },
+        {
+          "text": "una",
+          "start": 92.914,
+          "end": 93.034
+        },
+        {
+          "text": "per",
+          "start": 93.074,
+          "end": 93.194
+        },
+        {
+          "text": "il",
+          "start": 93.214,
+          "end": 93.294
+        },
+        {
+          "text": "tipo,",
+          "start": 93.354,
+          "end": 93.614
+        }
+      ]
+    },
+    {
+      "start": 94.014,
+      "end": 97.435,
+      "text": "così l'unità del rosso impara il rosso sia dalle auto sia dalle bici.",
+      "words": [
+        {
+          "text": "così",
+          "start": 94.014,
+          "end": 94.214
+        },
+        {
+          "text": "l'unità",
+          "start": 94.374,
+          "end": 94.674
+        },
+        {
+          "text": "del",
+          "start": 94.734,
+          "end": 94.874
+        },
+        {
+          "text": "rosso",
+          "start": 94.934,
+          "end": 95.234
+        },
+        {
+          "text": "impara",
+          "start": 95.294,
+          "end": 95.575
+        },
+        {
+          "text": "il",
+          "start": 95.575,
+          "end": 95.635
+        },
+        {
+          "text": "rosso",
+          "start": 95.675,
+          "end": 95.935
+        },
+        {
+          "text": "sia",
+          "start": 96.015,
+          "end": 96.135
+        },
+        {
+          "text": "dalle",
+          "start": 96.195,
+          "end": 96.415
+        },
+        {
+          "text": "auto",
+          "start": 96.495,
+          "end": 96.715
+        },
+        {
+          "text": "sia",
+          "start": 96.815,
+          "end": 96.935
+        },
+        {
+          "text": "dalle",
+          "start": 96.975,
+          "end": 97.155
+        },
+        {
+          "text": "bici.",
+          "start": 97.175,
+          "end": 97.435
+        }
+      ]
+    },
+    {
+      "start": 98.055,
+      "end": 100.795,
+      "text": "In generale, con n feature ciascuna a k valori,",
+      "words": [
+        {
+          "text": "In",
+          "start": 98.055,
+          "end": 98.115
+        },
+        {
+          "text": "generale,",
+          "start": 98.155,
+          "end": 98.595
+        },
+        {
+          "text": "con",
+          "start": 98.675,
+          "end": 98.835
+        },
+        {
+          "text": "n",
+          "start": 99.055,
+          "end": 99.09500000000001
+        },
+        {
+          "text": "feature",
+          "start": 99.215,
+          "end": 99.595
+        },
+        {
+          "text": "ciascuna",
+          "start": 99.615,
+          "end": 99.995
+        },
+        {
+          "text": "a",
+          "start": 100.015,
+          "end": 100.055
+        },
+        {
+          "text": "k",
+          "start": 100.135,
+          "end": 100.17500000000001
+        },
+        {
+          "text": "valori,",
+          "start": 100.415,
+          "end": 100.795
+        }
+      ]
+    },
+    {
+      "start": 101.155,
+      "end": 106.916,
+      "text": "una rappresentazione distribuita descrive k alla n concetti contro i soli n di una one-hot:",
+      "words": [
+        {
+          "text": "una",
+          "start": 101.155,
+          "end": 101.275
+        },
+        {
+          "text": "rappresentazione",
+          "start": 101.315,
+          "end": 102.136
+        },
+        {
+          "text": "distribuita",
+          "start": 102.176,
+          "end": 102.796
+        },
+        {
+          "text": "descrive",
+          "start": 102.836,
+          "end": 103.236
+        },
+        {
+          "text": "k",
+          "start": 103.356,
+          "end": 103.396
+        },
+        {
+          "text": "alla",
+          "start": 103.456,
+          "end": 103.876
+        },
+        {
+          "text": "n",
+          "start": 104.076,
+          "end": 104.116
+        },
+        {
+          "text": "concetti",
+          "start": 104.196,
+          "end": 104.756
+        },
+        {
+          "text": "contro",
+          "start": 105.076,
+          "end": 105.396
+        },
+        {
+          "text": "i",
+          "start": 105.516,
+          "end": 105.55600000000001
+        },
+        {
+          "text": "soli",
+          "start": 105.616,
+          "end": 105.856
+        },
+        {
+          "text": "n",
+          "start": 106.096,
+          "end": 106.13600000000001
+        },
+        {
+          "text": "di",
+          "start": 106.236,
+          "end": 106.296
+        },
+        {
+          "text": "una",
+          "start": 106.336,
+          "end": 106.456
+        },
+        {
+          "text": "one-hot:",
+          "start": 106.596,
+          "end": 106.916
+        }
+      ]
+    },
+    {
+      "start": 107.356,
+      "end": 110.177,
+      "text": "assegna quindi un codice a un numero esponenziale di regioni.",
+      "words": [
+        {
+          "text": "assegna",
+          "start": 107.356,
+          "end": 107.696
+        },
+        {
+          "text": "quindi",
+          "start": 107.716,
+          "end": 107.936
+        },
+        {
+          "text": "un",
+          "start": 107.976,
+          "end": 108.056
+        },
+        {
+          "text": "codice",
+          "start": 108.116,
+          "end": 108.557
+        },
+        {
+          "text": "a",
+          "start": 108.597,
+          "end": 108.637
+        },
+        {
+          "text": "un",
+          "start": 108.657,
+          "end": 108.717
+        },
+        {
+          "text": "numero",
+          "start": 108.757,
+          "end": 108.997
+        },
+        {
+          "text": "esponenziale",
+          "start": 109.037,
+          "end": 109.637
+        },
+        {
+          "text": "di",
+          "start": 109.677,
+          "end": 109.737
+        },
+        {
+          "text": "regioni.",
+          "start": 109.797,
+          "end": 110.177
+        }
+      ]
+    },
+    {
+      "start": 110.877,
+      "end": 118.438,
+      "text": "Al contrario, diversi modelli classici non sono distribuiti: il K-NN usa uno o pochi prototipi",
+      "words": [
+        {
+          "text": "Al",
+          "start": 110.877,
+          "end": 110.977
+        },
+        {
+          "text": "contrario,",
+          "start": 111.017,
+          "end": 111.617
+        },
+        {
+          "text": "diversi",
+          "start": 111.917,
+          "end": 112.357
+        },
+        {
+          "text": "modelli",
+          "start": 112.417,
+          "end": 112.757
+        },
+        {
+          "text": "classici",
+          "start": 112.817,
+          "end": 113.417
+        },
+        {
+          "text": "non",
+          "start": 113.577,
+          "end": 113.717
+        },
+        {
+          "text": "sono",
+          "start": 113.777,
+          "end": 113.977
+        },
+        {
+          "text": "distribuiti:",
+          "start": 114.057,
+          "end": 114.757
+        },
+        {
+          "text": "il",
+          "start": 115.298,
+          "end": 115.438
+        },
+        {
+          "text": "K-NN",
+          "start": 115.518,
+          "end": 116.318
+        },
+        {
+          "text": "usa",
+          "start": 116.618,
+          "end": 116.798
+        },
+        {
+          "text": "uno",
+          "start": 116.958,
+          "end": 117.198
+        },
+        {
+          "text": "o",
+          "start": 117.378,
+          "end": 117.418
+        },
+        {
+          "text": "pochi",
+          "start": 117.578,
+          "end": 117.878
+        },
+        {
+          "text": "prototipi",
+          "start": 117.918,
+          "end": 118.438
+        }
+      ]
+    },
+    {
+      "start": 118.538,
+      "end": 123.179,
+      "text": "per input, i kernel RBF stretti si riducono al K-NN,",
+      "words": [
+        {
+          "text": "per",
+          "start": 118.538,
+          "end": 118.658
+        },
+        {
+          "text": "input,",
+          "start": 118.718,
+          "end": 119.098
+        },
+        {
+          "text": "i",
+          "start": 119.758,
+          "end": 119.798
+        },
+        {
+          "text": "kernel",
+          "start": 119.878,
+          "end": 120.338
+        },
+        {
+          "text": "RBF",
+          "start": 120.578,
+          "end": 121.038
+        },
+        {
+          "text": "stretti",
+          "start": 121.198,
+          "end": 121.618
+        },
+        {
+          "text": "si",
+          "start": 121.699,
+          "end": 121.799
+        },
+        {
+          "text": "riducono",
+          "start": 121.859,
+          "end": 122.279
+        },
+        {
+          "text": "al",
+          "start": 122.319,
+          "end": 122.399
+        },
+        {
+          "text": "K-NN,",
+          "start": 122.439,
+          "end": 123.179
+        }
+      ]
+    },
+    {
+      "start": 123.719,
+      "end": 128.34,
+      "text": "e lo stesso vale per le miscele di gaussiane e per gli alberi di decisione,",
+      "words": [
+        {
+          "text": "e",
+          "start": 123.719,
+          "end": 123.759
+        },
+        {
+          "text": "lo",
+          "start": 123.839,
+          "end": 123.919
+        },
+        {
+          "text": "stesso",
+          "start": 123.979,
+          "end": 124.379
+        },
+        {
+          "text": "vale",
+          "start": 124.419,
+          "end": 124.699
+        },
+        {
+          "text": "per",
+          "start": 124.759,
+          "end": 124.879
+        },
+        {
+          "text": "le",
+          "start": 124.939,
+          "end": 125.019
+        },
+        {
+          "text": "miscele",
+          "start": 125.059,
+          "end": 125.539
+        },
+        {
+          "text": "di",
+          "start": 125.599,
+          "end": 125.659
+        },
+        {
+          "text": "gaussiane",
+          "start": 125.719,
+          "end": 126.459
+        },
+        {
+          "text": "e",
+          "start": 126.639,
+          "end": 126.679
+        },
+        {
+          "text": "per",
+          "start": 126.759,
+          "end": 126.879
+        },
+        {
+          "text": "gli",
+          "start": 126.899,
+          "end": 126.999
+        },
+        {
+          "text": "alberi",
+          "start": 127.059,
+          "end": 127.399
+        },
+        {
+          "text": "di",
+          "start": 127.559,
+          "end": 127.639
+        },
+        {
+          "text": "decisione,",
+          "start": 127.739,
+          "end": 128.34
+        }
+      ]
+    },
+    {
+      "start": 128.8,
+      "end": 131.26,
+      "text": "dove si attiva una sola foglia per ogni esempio.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 128.8,
+          "end": 128.98
+        },
+        {
+          "text": "si",
+          "start": 129.02,
+          "end": 129.08
+        },
+        {
+          "text": "attiva",
+          "start": 129.14,
+          "end": 129.44
+        },
+        {
+          "text": "una",
+          "start": 129.56,
+          "end": 129.72
+        },
+        {
+          "text": "sola",
+          "start": 129.78,
+          "end": 129.98
+        },
+        {
+          "text": "foglia",
+          "start": 130.02,
+          "end": 130.38
+        },
+        {
+          "text": "per",
+          "start": 130.52,
+          "end": 130.64
+        },
+        {
+          "text": "ogni",
+          "start": 130.68,
+          "end": 130.8
+        },
+        {
+          "text": "esempio.",
+          "start": 130.86,
+          "end": 131.26
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1651 @@
+{
+  "duration": 121.269,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.841,
+      "text": "Le reti neurali viste finora sono reti feedforward e lavorano su vettori di dimensione fissa.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "reti",
+          "start": 0.2,
+          "end": 0.44
+        },
+        {
+          "text": "neurali",
+          "start": 0.5,
+          "end": 0.9
+        },
+        {
+          "text": "viste",
+          "start": 0.98,
+          "end": 1.24
+        },
+        {
+          "text": "finora",
+          "start": 1.28,
+          "end": 1.64
+        },
+        {
+          "text": "sono",
+          "start": 1.84,
+          "end": 2.04
+        },
+        {
+          "text": "reti",
+          "start": 2.08,
+          "end": 2.34
+        },
+        {
+          "text": "feedforward",
+          "start": 2.48,
+          "end": 3.28
+        },
+        {
+          "text": "e",
+          "start": 3.58,
+          "end": 3.62
+        },
+        {
+          "text": "lavorano",
+          "start": 3.68,
+          "end": 4.04
+        },
+        {
+          "text": "su",
+          "start": 4.1,
+          "end": 4.18
+        },
+        {
+          "text": "vettori",
+          "start": 4.28,
+          "end": 4.7
+        },
+        {
+          "text": "di",
+          "start": 4.781,
+          "end": 4.841
+        },
+        {
+          "text": "dimensione",
+          "start": 4.901,
+          "end": 5.421
+        },
+        {
+          "text": "fissa.",
+          "start": 5.481,
+          "end": 5.841
+        }
+      ]
+    },
+    {
+      "start": 6.621,
+      "end": 13.621,
+      "text": "Le reti neurali ricorrenti, in breve RNN, aggiungono connessioni di feedback che dotano la rete",
+      "words": [
+        {
+          "text": "Le",
+          "start": 6.621,
+          "end": 6.701
+        },
+        {
+          "text": "reti",
+          "start": 6.741,
+          "end": 6.941
+        },
+        {
+          "text": "neurali",
+          "start": 7.001,
+          "end": 7.401
+        },
+        {
+          "text": "ricorrenti,",
+          "start": 7.481,
+          "end": 8.241
+        },
+        {
+          "text": "in",
+          "start": 8.561,
+          "end": 8.641
+        },
+        {
+          "text": "breve",
+          "start": 8.701,
+          "end": 8.961
+        },
+        {
+          "text": "RNN,",
+          "start": 9.401,
+          "end": 10.121
+        },
+        {
+          "text": "aggiungono",
+          "start": 10.601,
+          "end": 11.041
+        },
+        {
+          "text": "connessioni",
+          "start": 11.141,
+          "end": 11.801
+        },
+        {
+          "text": "di",
+          "start": 11.861,
+          "end": 11.941
+        },
+        {
+          "text": "feedback",
+          "start": 12.001,
+          "end": 12.481
+        },
+        {
+          "text": "che",
+          "start": 12.721,
+          "end": 12.821
+        },
+        {
+          "text": "dotano",
+          "start": 12.901,
+          "end": 13.241
+        },
+        {
+          "text": "la",
+          "start": 13.301,
+          "end": 13.361
+        },
+        {
+          "text": "rete",
+          "start": 13.401,
+          "end": 13.621
+        }
+      ]
+    },
+    {
+      "start": 13.661,
+      "end": 17.622,
+      "text": "di uno stato, cioè una memoria delle computazioni passate,",
+      "words": [
+        {
+          "text": "di",
+          "start": 13.661,
+          "end": 13.721
+        },
+        {
+          "text": "uno",
+          "start": 13.781,
+          "end": 13.921
+        },
+        {
+          "text": "stato,",
+          "start": 14.021,
+          "end": 14.461
+        },
+        {
+          "text": "cioè",
+          "start": 14.922,
+          "end": 15.122
+        },
+        {
+          "text": "una",
+          "start": 15.402,
+          "end": 15.522
+        },
+        {
+          "text": "memoria",
+          "start": 15.562,
+          "end": 16.022
+        },
+        {
+          "text": "delle",
+          "start": 16.142,
+          "end": 16.342
+        },
+        {
+          "text": "computazioni",
+          "start": 16.382,
+          "end": 17.042
+        },
+        {
+          "text": "passate,",
+          "start": 17.082,
+          "end": 17.622
+        }
+      ]
+    },
+    {
+      "start": 18.102,
+      "end": 21.002,
+      "text": "permettendole di elaborare sequenze di lunghezza variabile.",
+      "words": [
+        {
+          "text": "permettendole",
+          "start": 18.102,
+          "end": 18.782
+        },
+        {
+          "text": "di",
+          "start": 18.822,
+          "end": 18.862
+        },
+        {
+          "text": "elaborare",
+          "start": 18.902,
+          "end": 19.322
+        },
+        {
+          "text": "sequenze",
+          "start": 19.382,
+          "end": 19.822
+        },
+        {
+          "text": "di",
+          "start": 19.862,
+          "end": 19.922
+        },
+        {
+          "text": "lunghezza",
+          "start": 19.962,
+          "end": 20.342
+        },
+        {
+          "text": "variabile.",
+          "start": 20.422,
+          "end": 21.002
+        }
+      ]
+    },
+    {
+      "start": 22.062,
+      "end": 24.923,
+      "text": "Prima di iniziare, fissiamo la notazione del capitolo:",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 22.062,
+          "end": 22.282
+        },
+        {
+          "text": "di",
+          "start": 22.342,
+          "end": 22.382
+        },
+        {
+          "text": "iniziare,",
+          "start": 22.402,
+          "end": 22.882
+        },
+        {
+          "text": "fissiamo",
+          "start": 23.222,
+          "end": 23.622
+        },
+        {
+          "text": "la",
+          "start": 23.682,
+          "end": 23.742
+        },
+        {
+          "text": "notazione",
+          "start": 23.782,
+          "end": 24.242
+        },
+        {
+          "text": "del",
+          "start": 24.302,
+          "end": 24.402
+        },
+        {
+          "text": "capitolo:",
+          "start": 24.462,
+          "end": 24.923
+        }
+      ]
+    },
+    {
+      "start": 25.743,
+      "end": 29.783,
+      "text": "x di t indica il vettore di input al passo t della sequenza,",
+      "words": [
+        {
+          "text": "x",
+          "start": 25.743,
+          "end": 25.783
+        },
+        {
+          "text": "di",
+          "start": 25.963,
+          "end": 26.043
+        },
+        {
+          "text": "t",
+          "start": 26.163,
+          "end": 26.203
+        },
+        {
+          "text": "indica",
+          "start": 26.623,
+          "end": 26.963
+        },
+        {
+          "text": "il",
+          "start": 27.003,
+          "end": 27.083
+        },
+        {
+          "text": "vettore",
+          "start": 27.123,
+          "end": 27.463
+        },
+        {
+          "text": "di",
+          "start": 27.503,
+          "end": 27.563
+        },
+        {
+          "text": "input",
+          "start": 27.643,
+          "end": 28.003
+        },
+        {
+          "text": "al",
+          "start": 28.203,
+          "end": 28.303
+        },
+        {
+          "text": "passo",
+          "start": 28.363,
+          "end": 28.663
+        },
+        {
+          "text": "t",
+          "start": 28.803,
+          "end": 28.843
+        },
+        {
+          "text": "della",
+          "start": 29.063,
+          "end": 29.243
+        },
+        {
+          "text": "sequenza,",
+          "start": 29.283,
+          "end": 29.783
+        }
+      ]
+    },
+    {
+      "start": 30.843,
+      "end": 35.604,
+      "text": "h di t indica lo stato della rete — analogo allo strato nascosto dei capitoli",
+      "words": [
+        {
+          "text": "h",
+          "start": 30.843,
+          "end": 30.883
+        },
+        {
+          "text": "di",
+          "start": 30.943,
+          "end": 31.023
+        },
+        {
+          "text": "t",
+          "start": 31.123,
+          "end": 31.163
+        },
+        {
+          "text": "indica",
+          "start": 31.603,
+          "end": 31.903
+        },
+        {
+          "text": "lo",
+          "start": 32.003,
+          "end": 32.063
+        },
+        {
+          "text": "stato",
+          "start": 32.103,
+          "end": 32.343
+        },
+        {
+          "text": "della",
+          "start": 32.383,
+          "end": 32.563
+        },
+        {
+          "text": "rete",
+          "start": 32.603,
+          "end": 32.863
+        },
+        {
+          "text": "—",
+          "start": 32.863,
+          "end": 33.013
+        },
+        {
+          "text": "analogo",
+          "start": 33.343,
+          "end": 33.763
+        },
+        {
+          "text": "allo",
+          "start": 33.923,
+          "end": 34.123
+        },
+        {
+          "text": "strato",
+          "start": 34.183,
+          "end": 34.484
+        },
+        {
+          "text": "nascosto",
+          "start": 34.524,
+          "end": 35.044
+        },
+        {
+          "text": "dei",
+          "start": 35.084,
+          "end": 35.184
+        },
+        {
+          "text": "capitoli",
+          "start": 35.224,
+          "end": 35.604
+        }
+      ]
+    },
+    {
+      "start": 35.644,
+      "end": 39.464,
+      "text": "precedenti — e o di t indica il vettore di uscita.",
+      "words": [
+        {
+          "text": "precedenti",
+          "start": 35.644,
+          "end": 36.284
+        },
+        {
+          "text": "—",
+          "start": 36.284,
+          "end": 36.434
+        },
+        {
+          "text": "e",
+          "start": 36.904,
+          "end": 36.944
+        },
+        {
+          "text": "o",
+          "start": 37.184,
+          "end": 37.224
+        },
+        {
+          "text": "di",
+          "start": 37.464,
+          "end": 37.544
+        },
+        {
+          "text": "t",
+          "start": 37.644,
+          "end": 37.684
+        },
+        {
+          "text": "indica",
+          "start": 38.104,
+          "end": 38.424
+        },
+        {
+          "text": "il",
+          "start": 38.544,
+          "end": 38.624
+        },
+        {
+          "text": "vettore",
+          "start": 38.644,
+          "end": 38.944
+        },
+        {
+          "text": "di",
+          "start": 38.984,
+          "end": 39.024
+        },
+        {
+          "text": "uscita.",
+          "start": 39.064,
+          "end": 39.464
+        }
+      ]
+    },
+    {
+      "start": 40.684,
+      "end": 43.304,
+      "text": "Perché servono modelli dedicati alle sequenze?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 40.684,
+          "end": 40.924
+        },
+        {
+          "text": "servono",
+          "start": 41.004,
+          "end": 41.384
+        },
+        {
+          "text": "modelli",
+          "start": 41.444,
+          "end": 41.824
+        },
+        {
+          "text": "dedicati",
+          "start": 41.904,
+          "end": 42.484
+        },
+        {
+          "text": "alle",
+          "start": 42.524,
+          "end": 42.664
+        },
+        {
+          "text": "sequenze?",
+          "start": 42.724,
+          "end": 43.304
+        }
+      ]
+    },
+    {
+      "start": 43.984,
+      "end": 45.525,
+      "text": "Principalmente in due situazioni.",
+      "words": [
+        {
+          "text": "Principalmente",
+          "start": 43.984,
+          "end": 44.625
+        },
+        {
+          "text": "in",
+          "start": 44.665,
+          "end": 44.725
+        },
+        {
+          "text": "due",
+          "start": 44.745,
+          "end": 44.825
+        },
+        {
+          "text": "situazioni.",
+          "start": 44.885,
+          "end": 45.525
+        }
+      ]
+    },
+    {
+      "start": 46.045,
+      "end": 49.285,
+      "text": "La prima è quando l'uscita dipende dalla storia degli input,",
+      "words": [
+        {
+          "text": "La",
+          "start": 46.045,
+          "end": 46.105
+        },
+        {
+          "text": "prima",
+          "start": 46.145,
+          "end": 46.385
+        },
+        {
+          "text": "è",
+          "start": 46.665,
+          "end": 46.705
+        },
+        {
+          "text": "quando",
+          "start": 46.745,
+          "end": 46.985
+        },
+        {
+          "text": "l'uscita",
+          "start": 47.025,
+          "end": 47.545
+        },
+        {
+          "text": "dipende",
+          "start": 47.725,
+          "end": 48.065
+        },
+        {
+          "text": "dalla",
+          "start": 48.085,
+          "end": 48.265
+        },
+        {
+          "text": "storia",
+          "start": 48.325,
+          "end": 48.605
+        },
+        {
+          "text": "degli",
+          "start": 48.645,
+          "end": 48.865
+        },
+        {
+          "text": "input,",
+          "start": 48.925,
+          "end": 49.285
+        }
+      ]
+    },
+    {
+      "start": 49.565,
+      "end": 54.066,
+      "text": "come nei processi dinamici, nei sistemi di controllo e nelle serie temporali.",
+      "words": [
+        {
+          "text": "come",
+          "start": 49.565,
+          "end": 49.765
+        },
+        {
+          "text": "nei",
+          "start": 49.825,
+          "end": 49.945
+        },
+        {
+          "text": "processi",
+          "start": 49.985,
+          "end": 50.465
+        },
+        {
+          "text": "dinamici,",
+          "start": 50.545,
+          "end": 51.085
+        },
+        {
+          "text": "nei",
+          "start": 51.225,
+          "end": 51.365
+        },
+        {
+          "text": "sistemi",
+          "start": 51.405,
+          "end": 51.765
+        },
+        {
+          "text": "di",
+          "start": 51.805,
+          "end": 51.865
+        },
+        {
+          "text": "controllo",
+          "start": 51.905,
+          "end": 52.465
+        },
+        {
+          "text": "e",
+          "start": 52.885,
+          "end": 52.925
+        },
+        {
+          "text": "nelle",
+          "start": 52.965,
+          "end": 53.125
+        },
+        {
+          "text": "serie",
+          "start": 53.165,
+          "end": 53.445
+        },
+        {
+          "text": "temporali.",
+          "start": 53.485,
+          "end": 54.066
+        }
+      ]
+    },
+    {
+      "start": 54.746,
+      "end": 58.746,
+      "text": "La seconda è quando il dominio stesso è composto da sequenze di lunghezza variabile:",
+      "words": [
+        {
+          "text": "La",
+          "start": 54.746,
+          "end": 54.806
+        },
+        {
+          "text": "seconda",
+          "start": 54.866,
+          "end": 55.286
+        },
+        {
+          "text": "è",
+          "start": 55.406,
+          "end": 55.446
+        },
+        {
+          "text": "quando",
+          "start": 55.486,
+          "end": 55.686
+        },
+        {
+          "text": "il",
+          "start": 55.706,
+          "end": 55.746
+        },
+        {
+          "text": "dominio",
+          "start": 55.786,
+          "end": 56.126
+        },
+        {
+          "text": "stesso",
+          "start": 56.186,
+          "end": 56.526
+        },
+        {
+          "text": "è",
+          "start": 56.566,
+          "end": 56.606
+        },
+        {
+          "text": "composto",
+          "start": 56.646,
+          "end": 57.086
+        },
+        {
+          "text": "da",
+          "start": 57.146,
+          "end": 57.206
+        },
+        {
+          "text": "sequenze",
+          "start": 57.266,
+          "end": 57.686
+        },
+        {
+          "text": "di",
+          "start": 57.746,
+          "end": 57.786
+        },
+        {
+          "text": "lunghezza",
+          "start": 57.846,
+          "end": 58.206
+        },
+        {
+          "text": "variabile:",
+          "start": 58.266,
+          "end": 58.746
+        }
+      ]
+    },
+    {
+      "start": 59.346,
+      "end": 63.886,
+      "text": "pensiamo al linguaggio e al parlato, alle sequenze biologiche come le proteine,",
+      "words": [
+        {
+          "text": "pensiamo",
+          "start": 59.346,
+          "end": 59.746
+        },
+        {
+          "text": "al",
+          "start": 59.786,
+          "end": 59.846
+        },
+        {
+          "text": "linguaggio",
+          "start": 59.886,
+          "end": 60.406
+        },
+        {
+          "text": "e",
+          "start": 60.506,
+          "end": 60.546
+        },
+        {
+          "text": "al",
+          "start": 60.566,
+          "end": 60.646
+        },
+        {
+          "text": "parlato,",
+          "start": 60.686,
+          "end": 61.206
+        },
+        {
+          "text": "alle",
+          "start": 61.646,
+          "end": 61.786
+        },
+        {
+          "text": "sequenze",
+          "start": 61.826,
+          "end": 62.266
+        },
+        {
+          "text": "biologiche",
+          "start": 62.326,
+          "end": 62.946
+        },
+        {
+          "text": "come",
+          "start": 63.106,
+          "end": 63.266
+        },
+        {
+          "text": "le",
+          "start": 63.306,
+          "end": 63.366
+        },
+        {
+          "text": "proteine,",
+          "start": 63.386,
+          "end": 63.886
+        }
+      ]
+    },
+    {
+      "start": 64.287,
+      "end": 66.907,
+      "text": "oppure ai flussi di dati provenienti da sensori.",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 64.287,
+          "end": 64.607
+        },
+        {
+          "text": "ai",
+          "start": 64.707,
+          "end": 64.827
+        },
+        {
+          "text": "flussi",
+          "start": 64.907,
+          "end": 65.247
+        },
+        {
+          "text": "di",
+          "start": 65.287,
+          "end": 65.347
+        },
+        {
+          "text": "dati",
+          "start": 65.387,
+          "end": 65.607
+        },
+        {
+          "text": "provenienti",
+          "start": 65.647,
+          "end": 66.187
+        },
+        {
+          "text": "da",
+          "start": 66.227,
+          "end": 66.287
+        },
+        {
+          "text": "sensori.",
+          "start": 66.367,
+          "end": 66.907
+        }
+      ]
+    },
+    {
+      "start": 67.987,
+      "end": 73.968,
+      "text": "I dati strutturati — sequenze, alberi e grafi — generalizzano così i dati piatti studiati",
+      "words": [
+        {
+          "text": "I",
+          "start": 67.987,
+          "end": 68.027
+        },
+        {
+          "text": "dati",
+          "start": 68.067,
+          "end": 68.267
+        },
+        {
+          "text": "strutturati",
+          "start": 68.327,
+          "end": 69.047
+        },
+        {
+          "text": "—",
+          "start": 69.047,
+          "end": 69.197
+        },
+        {
+          "text": "sequenze,",
+          "start": 69.367,
+          "end": 69.987
+        },
+        {
+          "text": "alberi",
+          "start": 70.147,
+          "end": 70.507
+        },
+        {
+          "text": "e",
+          "start": 70.647,
+          "end": 70.68700000000001
+        },
+        {
+          "text": "grafi",
+          "start": 70.767,
+          "end": 71.187
+        },
+        {
+          "text": "—",
+          "start": 71.187,
+          "end": 71.337
+        },
+        {
+          "text": "generalizzano",
+          "start": 71.607,
+          "end": 72.307
+        },
+        {
+          "text": "così",
+          "start": 72.347,
+          "end": 72.567
+        },
+        {
+          "text": "i",
+          "start": 72.627,
+          "end": 72.667
+        },
+        {
+          "text": "dati",
+          "start": 72.687,
+          "end": 72.927
+        },
+        {
+          "text": "piatti",
+          "start": 73.007,
+          "end": 73.427
+        },
+        {
+          "text": "studiati",
+          "start": 73.567,
+          "end": 73.968
+        }
+      ]
+    },
+    {
+      "start": 74.028,
+      "end": 74.388,
+      "text": "finora.",
+      "words": [
+        {
+          "text": "finora.",
+          "start": 74.028,
+          "end": 74.388
+        }
+      ]
+    },
+    {
+      "start": 75.468,
+      "end": 78.988,
+      "text": "Formalmente, i dati sono sequenze di vettori x di uno,",
+      "words": [
+        {
+          "text": "Formalmente,",
+          "start": 75.468,
+          "end": 76.068
+        },
+        {
+          "text": "i",
+          "start": 76.288,
+          "end": 76.328
+        },
+        {
+          "text": "dati",
+          "start": 76.368,
+          "end": 76.588
+        },
+        {
+          "text": "sono",
+          "start": 76.648,
+          "end": 76.828
+        },
+        {
+          "text": "sequenze",
+          "start": 76.868,
+          "end": 77.328
+        },
+        {
+          "text": "di",
+          "start": 77.388,
+          "end": 77.448
+        },
+        {
+          "text": "vettori",
+          "start": 77.488,
+          "end": 78.008
+        },
+        {
+          "text": "x",
+          "start": 78.388,
+          "end": 78.42800000000001
+        },
+        {
+          "text": "di",
+          "start": 78.588,
+          "end": 78.648
+        },
+        {
+          "text": "uno,",
+          "start": 78.788,
+          "end": 78.988
+        }
+      ]
+    },
+    {
+      "start": 79.388,
+      "end": 83.789,
+      "text": "x di due e così via, con un ordine seriale come il tempo e lunghezza",
+      "words": [
+        {
+          "text": "x",
+          "start": 79.388,
+          "end": 79.42800000000001
+        },
+        {
+          "text": "di",
+          "start": 79.568,
+          "end": 79.628
+        },
+        {
+          "text": "due",
+          "start": 79.708,
+          "end": 79.928
+        },
+        {
+          "text": "e",
+          "start": 80.088,
+          "end": 80.128
+        },
+        {
+          "text": "così",
+          "start": 80.188,
+          "end": 80.388
+        },
+        {
+          "text": "via,",
+          "start": 80.488,
+          "end": 80.688
+        },
+        {
+          "text": "con",
+          "start": 81.068,
+          "end": 81.188
+        },
+        {
+          "text": "un",
+          "start": 81.228,
+          "end": 81.288
+        },
+        {
+          "text": "ordine",
+          "start": 81.348,
+          "end": 81.628
+        },
+        {
+          "text": "seriale",
+          "start": 81.728,
+          "end": 82.248
+        },
+        {
+          "text": "come",
+          "start": 82.528,
+          "end": 82.668
+        },
+        {
+          "text": "il",
+          "start": 82.708,
+          "end": 82.788
+        },
+        {
+          "text": "tempo",
+          "start": 82.828,
+          "end": 83.208
+        },
+        {
+          "text": "e",
+          "start": 83.348,
+          "end": 83.388
+        },
+        {
+          "text": "lunghezza",
+          "start": 83.428,
+          "end": 83.789
+        }
+      ]
+    },
+    {
+      "start": 83.829,
+      "end": 87.629,
+      "text": "variabile; ogni elemento x di t è un vettore,",
+      "words": [
+        {
+          "text": "variabile;",
+          "start": 83.829,
+          "end": 84.349
+        },
+        {
+          "text": "ogni",
+          "start": 85.129,
+          "end": 85.289
+        },
+        {
+          "text": "elemento",
+          "start": 85.329,
+          "end": 85.809
+        },
+        {
+          "text": "x",
+          "start": 86.149,
+          "end": 86.18900000000001
+        },
+        {
+          "text": "di",
+          "start": 86.349,
+          "end": 86.429
+        },
+        {
+          "text": "t",
+          "start": 86.549,
+          "end": 86.58900000000001
+        },
+        {
+          "text": "è",
+          "start": 86.969,
+          "end": 87.009
+        },
+        {
+          "text": "un",
+          "start": 87.069,
+          "end": 87.129
+        },
+        {
+          "text": "vettore,",
+          "start": 87.169,
+          "end": 87.629
+        }
+      ]
+    },
+    {
+      "start": 88.049,
+      "end": 91.369,
+      "text": "ad esempio uno, zero, uno, zero virgola sette.",
+      "words": [
+        {
+          "text": "ad",
+          "start": 88.049,
+          "end": 88.129
+        },
+        {
+          "text": "esempio",
+          "start": 88.149,
+          "end": 88.569
+        },
+        {
+          "text": "uno,",
+          "start": 88.849,
+          "end": 89.069
+        },
+        {
+          "text": "zero,",
+          "start": 89.329,
+          "end": 89.649
+        },
+        {
+          "text": "uno,",
+          "start": 90.049,
+          "end": 90.249
+        },
+        {
+          "text": "zero",
+          "start": 90.489,
+          "end": 90.649
+        },
+        {
+          "text": "virgola",
+          "start": 90.689,
+          "end": 90.969
+        },
+        {
+          "text": "sette.",
+          "start": 91.029,
+          "end": 91.369
+        }
+      ]
+    },
+    {
+      "start": 92.289,
+      "end": 97.19,
+      "text": "Il compito di apprendimento è una trasduzione, ossia una mappatura da una sequenza di input",
+      "words": [
+        {
+          "text": "Il",
+          "start": 92.289,
+          "end": 92.389
+        },
+        {
+          "text": "compito",
+          "start": 92.429,
+          "end": 92.789
+        },
+        {
+          "text": "di",
+          "start": 92.809,
+          "end": 92.869
+        },
+        {
+          "text": "apprendimento",
+          "start": 92.909,
+          "end": 93.49
+        },
+        {
+          "text": "è",
+          "start": 93.51,
+          "end": 93.55000000000001
+        },
+        {
+          "text": "una",
+          "start": 93.57,
+          "end": 93.71
+        },
+        {
+          "text": "trasduzione,",
+          "start": 93.77,
+          "end": 94.65
+        },
+        {
+          "text": "ossia",
+          "start": 94.95,
+          "end": 95.19
+        },
+        {
+          "text": "una",
+          "start": 95.23,
+          "end": 95.35
+        },
+        {
+          "text": "mappatura",
+          "start": 95.41,
+          "end": 95.99
+        },
+        {
+          "text": "da",
+          "start": 96.05,
+          "end": 96.11
+        },
+        {
+          "text": "una",
+          "start": 96.17,
+          "end": 96.27
+        },
+        {
+          "text": "sequenza",
+          "start": 96.33,
+          "end": 96.69
+        },
+        {
+          "text": "di",
+          "start": 96.75,
+          "end": 96.79
+        },
+        {
+          "text": "input",
+          "start": 96.87,
+          "end": 97.19
+        }
+      ]
+    },
+    {
+      "start": 97.37,
+      "end": 100.05,
+      "text": "a un singolo valore oppure a una sequenza di output.",
+      "words": [
+        {
+          "text": "a",
+          "start": 97.37,
+          "end": 97.41000000000001
+        },
+        {
+          "text": "un",
+          "start": 97.47,
+          "end": 97.53
+        },
+        {
+          "text": "singolo",
+          "start": 97.59,
+          "end": 97.93
+        },
+        {
+          "text": "valore",
+          "start": 97.95,
+          "end": 98.29
+        },
+        {
+          "text": "oppure",
+          "start": 98.43,
+          "end": 98.71
+        },
+        {
+          "text": "a",
+          "start": 98.75,
+          "end": 98.79
+        },
+        {
+          "text": "una",
+          "start": 98.81,
+          "end": 98.93
+        },
+        {
+          "text": "sequenza",
+          "start": 98.99,
+          "end": 99.43
+        },
+        {
+          "text": "di",
+          "start": 99.47,
+          "end": 99.53
+        },
+        {
+          "text": "output.",
+          "start": 99.63,
+          "end": 100.05
+        }
+      ]
+    },
+    {
+      "start": 101.21,
+      "end": 105.551,
+      "text": "Osserviamo nello schema i tipi principali: la classificazione di sequenze,",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 101.21,
+          "end": 101.69
+        },
+        {
+          "text": "nello",
+          "start": 101.75,
+          "end": 101.93
+        },
+        {
+          "text": "schema",
+          "start": 101.97,
+          "end": 102.27
+        },
+        {
+          "text": "i",
+          "start": 102.47,
+          "end": 102.51
+        },
+        {
+          "text": "tipi",
+          "start": 102.55,
+          "end": 102.75
+        },
+        {
+          "text": "principali:",
+          "start": 102.81,
+          "end": 103.431
+        },
+        {
+          "text": "la",
+          "start": 103.951,
+          "end": 104.011
+        },
+        {
+          "text": "classificazione",
+          "start": 104.071,
+          "end": 104.831
+        },
+        {
+          "text": "di",
+          "start": 104.871,
+          "end": 104.931
+        },
+        {
+          "text": "sequenze,",
+          "start": 104.991,
+          "end": 105.551
+        }
+      ]
+    },
+    {
+      "start": 105.711,
+      "end": 107.351,
+      "text": "che emette un'unica uscita alla fine;",
+      "words": [
+        {
+          "text": "che",
+          "start": 105.711,
+          "end": 105.811
+        },
+        {
+          "text": "emette",
+          "start": 105.831,
+          "end": 106.131
+        },
+        {
+          "text": "un'unica",
+          "start": 106.171,
+          "end": 106.551
+        },
+        {
+          "text": "uscita",
+          "start": 106.591,
+          "end": 106.891
+        },
+        {
+          "text": "alla",
+          "start": 106.911,
+          "end": 107.031
+        },
+        {
+          "text": "fine;",
+          "start": 107.071,
+          "end": 107.351
+        }
+      ]
+    },
+    {
+      "start": 108.051,
+      "end": 111.871,
+      "text": "la trasduzione isomorfa, con un'uscita per ogni elemento di input;",
+      "words": [
+        {
+          "text": "la",
+          "start": 108.051,
+          "end": 108.111
+        },
+        {
+          "text": "trasduzione",
+          "start": 108.171,
+          "end": 108.891
+        },
+        {
+          "text": "isomorfa,",
+          "start": 109.051,
+          "end": 109.711
+        },
+        {
+          "text": "con",
+          "start": 109.951,
+          "end": 110.091
+        },
+        {
+          "text": "un'uscita",
+          "start": 110.131,
+          "end": 110.631
+        },
+        {
+          "text": "per",
+          "start": 110.671,
+          "end": 110.791
+        },
+        {
+          "text": "ogni",
+          "start": 110.831,
+          "end": 110.951
+        },
+        {
+          "text": "elemento",
+          "start": 110.991,
+          "end": 111.331
+        },
+        {
+          "text": "di",
+          "start": 111.371,
+          "end": 111.431
+        },
+        {
+          "text": "input;",
+          "start": 111.511,
+          "end": 111.871
+        }
+      ]
+    },
+    {
+      "start": 112.411,
+      "end": 117.472,
+      "text": "e la predizione del passo successivo, in cui a ogni istante si predice l'elemento futuro.",
+      "words": [
+        {
+          "text": "e",
+          "start": 112.411,
+          "end": 112.45100000000001
+        },
+        {
+          "text": "la",
+          "start": 112.511,
+          "end": 112.571
+        },
+        {
+          "text": "predizione",
+          "start": 112.591,
+          "end": 113.091
+        },
+        {
+          "text": "del",
+          "start": 113.131,
+          "end": 113.232
+        },
+        {
+          "text": "passo",
+          "start": 113.292,
+          "end": 113.532
+        },
+        {
+          "text": "successivo,",
+          "start": 113.572,
+          "end": 114.192
+        },
+        {
+          "text": "in",
+          "start": 114.592,
+          "end": 114.672
+        },
+        {
+          "text": "cui",
+          "start": 114.712,
+          "end": 114.892
+        },
+        {
+          "text": "a",
+          "start": 115.052,
+          "end": 115.09200000000001
+        },
+        {
+          "text": "ogni",
+          "start": 115.172,
+          "end": 115.332
+        },
+        {
+          "text": "istante",
+          "start": 115.392,
+          "end": 115.892
+        },
+        {
+          "text": "si",
+          "start": 116.072,
+          "end": 116.152
+        },
+        {
+          "text": "predice",
+          "start": 116.192,
+          "end": 116.572
+        },
+        {
+          "text": "l'elemento",
+          "start": 116.632,
+          "end": 117.052
+        },
+        {
+          "text": "futuro.",
+          "start": 117.092,
+          "end": 117.472
+        }
+      ]
+    },
+    {
+      "start": 118.292,
+      "end": 120.532,
+      "text": "Esiste infine anche la generazione di sequenze.",
+      "words": [
+        {
+          "text": "Esiste",
+          "start": 118.292,
+          "end": 118.572
+        },
+        {
+          "text": "infine",
+          "start": 118.612,
+          "end": 118.892
+        },
+        {
+          "text": "anche",
+          "start": 118.952,
+          "end": 119.132
+        },
+        {
+          "text": "la",
+          "start": 119.172,
+          "end": 119.232
+        },
+        {
+          "text": "generazione",
+          "start": 119.272,
+          "end": 119.852
+        },
+        {
+          "text": "di",
+          "start": 119.872,
+          "end": 119.932
+        },
+        {
+          "text": "sequenze.",
+          "start": 119.992,
+          "end": 120.532
+        }
+      ]
+    }
+  ]
+}

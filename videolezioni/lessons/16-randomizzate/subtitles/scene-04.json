@@ -1,0 +1,1195 @@
+{
+  "duration": 90.907,
+  "segments": [
+    {
+      "start": 0.289,
+      "end": 5.09,
+      "text": "Com'è possibile che uno strato nascosto scelto interamente a caso funzioni così bene?",
+      "words": [
+        {
+          "text": "Com'è",
+          "start": 0.289,
+          "end": 0.449
+        },
+        {
+          "text": "possibile",
+          "start": 0.529,
+          "end": 1.009
+        },
+        {
+          "text": "che",
+          "start": 1.049,
+          "end": 1.149
+        },
+        {
+          "text": "uno",
+          "start": 1.249,
+          "end": 1.389
+        },
+        {
+          "text": "strato",
+          "start": 1.449,
+          "end": 1.769
+        },
+        {
+          "text": "nascosto",
+          "start": 1.829,
+          "end": 2.369
+        },
+        {
+          "text": "scelto",
+          "start": 2.429,
+          "end": 2.749
+        },
+        {
+          "text": "interamente",
+          "start": 2.829,
+          "end": 3.469
+        },
+        {
+          "text": "a",
+          "start": 3.509,
+          "end": 3.549
+        },
+        {
+          "text": "caso",
+          "start": 3.589,
+          "end": 3.849
+        },
+        {
+          "text": "funzioni",
+          "start": 4.189,
+          "end": 4.57
+        },
+        {
+          "text": "così",
+          "start": 4.61,
+          "end": 4.79
+        },
+        {
+          "text": "bene?",
+          "start": 4.85,
+          "end": 5.09
+        }
+      ]
+    },
+    {
+      "start": 5.85,
+      "end": 9.59,
+      "text": "La spiegazione riunisce concetti fondamentali che abbiamo già studiato nel corso:",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.85,
+          "end": 5.91
+        },
+        {
+          "text": "spiegazione",
+          "start": 5.93,
+          "end": 6.47
+        },
+        {
+          "text": "riunisce",
+          "start": 6.53,
+          "end": 6.93
+        },
+        {
+          "text": "concetti",
+          "start": 7.01,
+          "end": 7.39
+        },
+        {
+          "text": "fondamentali",
+          "start": 7.43,
+          "end": 8.03
+        },
+        {
+          "text": "che",
+          "start": 8.07,
+          "end": 8.15
+        },
+        {
+          "text": "abbiamo",
+          "start": 8.19,
+          "end": 8.45
+        },
+        {
+          "text": "già",
+          "start": 8.51,
+          "end": 8.57
+        },
+        {
+          "text": "studiato",
+          "start": 8.63,
+          "end": 8.99
+        },
+        {
+          "text": "nel",
+          "start": 9.03,
+          "end": 9.15
+        },
+        {
+          "text": "corso:",
+          "start": 9.21,
+          "end": 9.59
+        }
+      ]
+    },
+    {
+      "start": 10.21,
+      "end": 14.791,
+      "text": "l'espansione lineare in basi, il teorema di Cover e la regolarizzazione.",
+      "words": [
+        {
+          "text": "l'espansione",
+          "start": 10.21,
+          "end": 10.81
+        },
+        {
+          "text": "lineare",
+          "start": 10.91,
+          "end": 11.35
+        },
+        {
+          "text": "in",
+          "start": 11.41,
+          "end": 11.47
+        },
+        {
+          "text": "basi,",
+          "start": 11.51,
+          "end": 11.83
+        },
+        {
+          "text": "il",
+          "start": 12.21,
+          "end": 12.29
+        },
+        {
+          "text": "teorema",
+          "start": 12.35,
+          "end": 12.71
+        },
+        {
+          "text": "di",
+          "start": 12.75,
+          "end": 12.81
+        },
+        {
+          "text": "Cover",
+          "start": 12.85,
+          "end": 13.21
+        },
+        {
+          "text": "e",
+          "start": 13.55,
+          "end": 13.59
+        },
+        {
+          "text": "la",
+          "start": 13.69,
+          "end": 13.77
+        },
+        {
+          "text": "regolarizzazione.",
+          "start": 13.89,
+          "end": 14.791
+        }
+      ]
+    },
+    {
+      "start": 15.791,
+      "end": 21.531,
+      "text": "In una rete neurale tradizionale lo strato nascosto realizza una Linear Basis Expansion adattiva,",
+      "words": [
+        {
+          "text": "In",
+          "start": 15.791,
+          "end": 15.871
+        },
+        {
+          "text": "una",
+          "start": 15.911,
+          "end": 16.011
+        },
+        {
+          "text": "rete",
+          "start": 16.051,
+          "end": 16.231
+        },
+        {
+          "text": "neurale",
+          "start": 16.311,
+          "end": 16.691
+        },
+        {
+          "text": "tradizionale",
+          "start": 16.751,
+          "end": 17.471
+        },
+        {
+          "text": "lo",
+          "start": 17.531,
+          "end": 17.591
+        },
+        {
+          "text": "strato",
+          "start": 17.631,
+          "end": 17.891
+        },
+        {
+          "text": "nascosto",
+          "start": 17.951,
+          "end": 18.391
+        },
+        {
+          "text": "realizza",
+          "start": 18.451,
+          "end": 18.871
+        },
+        {
+          "text": "una",
+          "start": 19.011,
+          "end": 19.171
+        },
+        {
+          "text": "Linear",
+          "start": 19.371,
+          "end": 19.731
+        },
+        {
+          "text": "Basis",
+          "start": 19.811,
+          "end": 20.191
+        },
+        {
+          "text": "Expansion",
+          "start": 20.251,
+          "end": 20.851
+        },
+        {
+          "text": "adattiva,",
+          "start": 21.031,
+          "end": 21.531
+        }
+      ]
+    },
+    {
+      "start": 21.971,
+      "end": 25.832,
+      "text": "cioè funzioni base fi con j di x virgola w",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 21.971,
+          "end": 22.091
+        },
+        {
+          "text": "funzioni",
+          "start": 22.231,
+          "end": 22.671
+        },
+        {
+          "text": "base",
+          "start": 22.731,
+          "end": 23.031
+        },
+        {
+          "text": "fi",
+          "start": 23.271,
+          "end": 23.371
+        },
+        {
+          "text": "con",
+          "start": 23.571,
+          "end": 23.731
+        },
+        {
+          "text": "j",
+          "start": 23.811,
+          "end": 23.851
+        },
+        {
+          "text": "di",
+          "start": 24.251,
+          "end": 24.351
+        },
+        {
+          "text": "x",
+          "start": 24.731,
+          "end": 24.771
+        },
+        {
+          "text": "virgola",
+          "start": 25.112,
+          "end": 25.752
+        },
+        {
+          "text": "w",
+          "start": 25.792,
+          "end": 25.832
+        }
+      ]
+    },
+    {
+      "start": 26.452,
+      "end": 30.292,
+      "text": "i cui pesi w vengono adattati sui dati tramite backpropagation.",
+      "words": [
+        {
+          "text": "i",
+          "start": 26.452,
+          "end": 26.492
+        },
+        {
+          "text": "cui",
+          "start": 26.532,
+          "end": 26.672
+        },
+        {
+          "text": "pesi",
+          "start": 26.732,
+          "end": 26.992
+        },
+        {
+          "text": "w",
+          "start": 27.372,
+          "end": 27.412
+        },
+        {
+          "text": "vengono",
+          "start": 27.532,
+          "end": 27.832
+        },
+        {
+          "text": "adattati",
+          "start": 27.872,
+          "end": 28.252
+        },
+        {
+          "text": "sui",
+          "start": 28.312,
+          "end": 28.472
+        },
+        {
+          "text": "dati",
+          "start": 28.512,
+          "end": 28.792
+        },
+        {
+          "text": "tramite",
+          "start": 28.852,
+          "end": 29.252
+        },
+        {
+          "text": "backpropagation.",
+          "start": 29.392,
+          "end": 30.292
+        }
+      ]
+    },
+    {
+      "start": 30.972,
+      "end": 37.353,
+      "text": "In una rete randomizzata, invece, lo strato nascosto non addestrato realizza una LBE con basi",
+      "words": [
+        {
+          "text": "In",
+          "start": 30.972,
+          "end": 31.072
+        },
+        {
+          "text": "una",
+          "start": 31.112,
+          "end": 31.252
+        },
+        {
+          "text": "rete",
+          "start": 31.292,
+          "end": 31.512
+        },
+        {
+          "text": "randomizzata,",
+          "start": 31.552,
+          "end": 32.332
+        },
+        {
+          "text": "invece,",
+          "start": 32.412,
+          "end": 32.872
+        },
+        {
+          "text": "lo",
+          "start": 33.052,
+          "end": 33.132
+        },
+        {
+          "text": "strato",
+          "start": 33.172,
+          "end": 33.452
+        },
+        {
+          "text": "nascosto",
+          "start": 33.512,
+          "end": 34.012
+        },
+        {
+          "text": "non",
+          "start": 34.092,
+          "end": 34.252
+        },
+        {
+          "text": "addestrato",
+          "start": 34.292,
+          "end": 34.993
+        },
+        {
+          "text": "realizza",
+          "start": 35.133,
+          "end": 35.633
+        },
+        {
+          "text": "una",
+          "start": 35.753,
+          "end": 35.893
+        },
+        {
+          "text": "LBE",
+          "start": 36.213,
+          "end": 36.633
+        },
+        {
+          "text": "con",
+          "start": 36.953,
+          "end": 37.073
+        },
+        {
+          "text": "basi",
+          "start": 37.133,
+          "end": 37.353
+        }
+      ]
+    },
+    {
+      "start": 37.413,
+      "end": 43.133,
+      "text": "casuali, ma molto ampia, proiettando in modo non lineare l'input in uno spazio delle feature",
+      "words": [
+        {
+          "text": "casuali,",
+          "start": 37.413,
+          "end": 37.873
+        },
+        {
+          "text": "ma",
+          "start": 37.993,
+          "end": 38.073
+        },
+        {
+          "text": "molto",
+          "start": 38.193,
+          "end": 38.473
+        },
+        {
+          "text": "ampia,",
+          "start": 38.573,
+          "end": 38.873
+        },
+        {
+          "text": "proiettando",
+          "start": 39.173,
+          "end": 39.753
+        },
+        {
+          "text": "in",
+          "start": 39.793,
+          "end": 39.853
+        },
+        {
+          "text": "modo",
+          "start": 39.893,
+          "end": 40.133
+        },
+        {
+          "text": "non",
+          "start": 40.293,
+          "end": 40.473
+        },
+        {
+          "text": "lineare",
+          "start": 40.513,
+          "end": 40.973
+        },
+        {
+          "text": "l'input",
+          "start": 41.073,
+          "end": 41.593
+        },
+        {
+          "text": "in",
+          "start": 41.813,
+          "end": 41.893
+        },
+        {
+          "text": "uno",
+          "start": 41.933,
+          "end": 42.073
+        },
+        {
+          "text": "spazio",
+          "start": 42.113,
+          "end": 42.513
+        },
+        {
+          "text": "delle",
+          "start": 42.553,
+          "end": 42.713
+        },
+        {
+          "text": "feature",
+          "start": 42.773,
+          "end": 43.133
+        }
+      ]
+    },
+    {
+      "start": 43.273,
+      "end": 44.413,
+      "text": "ad alta dimensione.",
+      "words": [
+        {
+          "text": "ad",
+          "start": 43.273,
+          "end": 43.393
+        },
+        {
+          "text": "alta",
+          "start": 43.453,
+          "end": 43.693
+        },
+        {
+          "text": "dimensione.",
+          "start": 43.753,
+          "end": 44.413
+        }
+      ]
+    },
+    {
+      "start": 45.213,
+      "end": 46.713,
+      "text": "Osserviamo il diagramma geometrico.",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 45.213,
+          "end": 45.613
+        },
+        {
+          "text": "il",
+          "start": 45.653,
+          "end": 45.713
+        },
+        {
+          "text": "diagramma",
+          "start": 45.713,
+          "end": 46.073
+        },
+        {
+          "text": "geometrico.",
+          "start": 46.133,
+          "end": 46.713
+        }
+      ]
+    },
+    {
+      "start": 47.173,
+      "end": 50.133,
+      "text": "A sinistra, nello spazio di input a bassa dimensione,",
+      "words": [
+        {
+          "text": "A",
+          "start": 47.173,
+          "end": 47.213
+        },
+        {
+          "text": "sinistra,",
+          "start": 47.253,
+          "end": 47.713
+        },
+        {
+          "text": "nello",
+          "start": 47.853,
+          "end": 48.033
+        },
+        {
+          "text": "spazio",
+          "start": 48.053,
+          "end": 48.373
+        },
+        {
+          "text": "di",
+          "start": 48.413,
+          "end": 48.473
+        },
+        {
+          "text": "input",
+          "start": 48.533,
+          "end": 48.873
+        },
+        {
+          "text": "a",
+          "start": 49.053,
+          "end": 49.093
+        },
+        {
+          "text": "bassa",
+          "start": 49.193,
+          "end": 49.473
+        },
+        {
+          "text": "dimensione,",
+          "start": 49.513,
+          "end": 50.133
+        }
+      ]
+    },
+    {
+      "start": 50.453,
+      "end": 54.033,
+      "text": "le classi blu e rosse non sono linearmente separabili.",
+      "words": [
+        {
+          "text": "le",
+          "start": 50.453,
+          "end": 50.533
+        },
+        {
+          "text": "classi",
+          "start": 50.573,
+          "end": 50.973
+        },
+        {
+          "text": "blu",
+          "start": 51.073,
+          "end": 51.213
+        },
+        {
+          "text": "e",
+          "start": 51.433,
+          "end": 51.473
+        },
+        {
+          "text": "rosse",
+          "start": 51.573,
+          "end": 51.933
+        },
+        {
+          "text": "non",
+          "start": 52.133,
+          "end": 52.273
+        },
+        {
+          "text": "sono",
+          "start": 52.373,
+          "end": 52.633
+        },
+        {
+          "text": "linearmente",
+          "start": 52.733,
+          "end": 53.373
+        },
+        {
+          "text": "separabili.",
+          "start": 53.433,
+          "end": 54.033
+        }
+      ]
+    },
+    {
+      "start": 54.733,
+      "end": 59.374,
+      "text": "Applicando la trasformazione non lineare casuale h uguale f di W",
+      "words": [
+        {
+          "text": "Applicando",
+          "start": 54.733,
+          "end": 55.173
+        },
+        {
+          "text": "la",
+          "start": 55.213,
+          "end": 55.274
+        },
+        {
+          "text": "trasformazione",
+          "start": 55.314,
+          "end": 56.014
+        },
+        {
+          "text": "non",
+          "start": 56.214,
+          "end": 56.414
+        },
+        {
+          "text": "lineare",
+          "start": 56.474,
+          "end": 56.954
+        },
+        {
+          "text": "casuale",
+          "start": 57.074,
+          "end": 57.674
+        },
+        {
+          "text": "h",
+          "start": 58.214,
+          "end": 58.254
+        },
+        {
+          "text": "uguale",
+          "start": 58.354,
+          "end": 58.694
+        },
+        {
+          "text": "f",
+          "start": 59.034,
+          "end": 59.074
+        },
+        {
+          "text": "di",
+          "start": 59.194,
+          "end": 59.254
+        },
+        {
+          "text": "W",
+          "start": 59.334,
+          "end": 59.374
+        }
+      ]
+    },
+    {
+      "start": 60.034,
+      "end": 63.914,
+      "text": "x verso uno spazio di dimensione n con h molto grande,",
+      "words": [
+        {
+          "text": "x",
+          "start": 60.034,
+          "end": 60.074
+        },
+        {
+          "text": "verso",
+          "start": 60.594,
+          "end": 60.794
+        },
+        {
+          "text": "uno",
+          "start": 60.834,
+          "end": 60.914
+        },
+        {
+          "text": "spazio",
+          "start": 60.954,
+          "end": 61.314
+        },
+        {
+          "text": "di",
+          "start": 61.354,
+          "end": 61.414
+        },
+        {
+          "text": "dimensione",
+          "start": 61.454,
+          "end": 61.954
+        },
+        {
+          "text": "n",
+          "start": 62.274,
+          "end": 62.314
+        },
+        {
+          "text": "con",
+          "start": 62.414,
+          "end": 62.554
+        },
+        {
+          "text": "h",
+          "start": 62.834,
+          "end": 62.874
+        },
+        {
+          "text": "molto",
+          "start": 63.134,
+          "end": 63.474
+        },
+        {
+          "text": "grande,",
+          "start": 63.514,
+          "end": 63.914
+        }
+      ]
+    },
+    {
+      "start": 64.414,
+      "end": 69.555,
+      "text": "entra in gioco il teorema di Cover: in alta dimensione cresce drasticamente la probabilità che",
+      "words": [
+        {
+          "text": "entra",
+          "start": 64.414,
+          "end": 64.634
+        },
+        {
+          "text": "in",
+          "start": 64.694,
+          "end": 64.73400000000001
+        },
+        {
+          "text": "gioco",
+          "start": 64.774,
+          "end": 64.994
+        },
+        {
+          "text": "il",
+          "start": 65.034,
+          "end": 65.07400000000001
+        },
+        {
+          "text": "teorema",
+          "start": 65.094,
+          "end": 65.394
+        },
+        {
+          "text": "di",
+          "start": 65.455,
+          "end": 65.535
+        },
+        {
+          "text": "Cover:",
+          "start": 65.595,
+          "end": 65.995
+        },
+        {
+          "text": "in",
+          "start": 66.395,
+          "end": 66.475
+        },
+        {
+          "text": "alta",
+          "start": 66.515,
+          "end": 66.695
+        },
+        {
+          "text": "dimensione",
+          "start": 66.735,
+          "end": 67.315
+        },
+        {
+          "text": "cresce",
+          "start": 67.515,
+          "end": 67.875
+        },
+        {
+          "text": "drasticamente",
+          "start": 67.935,
+          "end": 68.675
+        },
+        {
+          "text": "la",
+          "start": 68.735,
+          "end": 68.775
+        },
+        {
+          "text": "probabilità",
+          "start": 68.815,
+          "end": 69.355
+        },
+        {
+          "text": "che",
+          "start": 69.475,
+          "end": 69.555
+        }
+      ]
+    },
+    {
+      "start": 69.595,
+      "end": 72.895,
+      "text": "il problema diventi linearmente separabile, o quasi.",
+      "words": [
+        {
+          "text": "il",
+          "start": 69.595,
+          "end": 69.655
+        },
+        {
+          "text": "problema",
+          "start": 69.675,
+          "end": 70.115
+        },
+        {
+          "text": "diventi",
+          "start": 70.215,
+          "end": 70.595
+        },
+        {
+          "text": "linearmente",
+          "start": 70.755,
+          "end": 71.415
+        },
+        {
+          "text": "separabile,",
+          "start": 71.475,
+          "end": 72.115
+        },
+        {
+          "text": "o",
+          "start": 72.295,
+          "end": 72.33500000000001
+        },
+        {
+          "text": "quasi.",
+          "start": 72.455,
+          "end": 72.895
+        }
+      ]
+    },
+    {
+      "start": 73.695,
+      "end": 77.416,
+      "text": "È esattamente la stessa proprietà geometrica sfruttata dai metodi kernel.",
+      "words": [
+        {
+          "text": "È",
+          "start": 73.695,
+          "end": 73.735
+        },
+        {
+          "text": "esattamente",
+          "start": 73.815,
+          "end": 74.375
+        },
+        {
+          "text": "la",
+          "start": 74.415,
+          "end": 74.475
+        },
+        {
+          "text": "stessa",
+          "start": 74.495,
+          "end": 74.715
+        },
+        {
+          "text": "proprietà",
+          "start": 74.755,
+          "end": 75.055
+        },
+        {
+          "text": "geometrica",
+          "start": 75.155,
+          "end": 75.735
+        },
+        {
+          "text": "sfruttata",
+          "start": 75.816,
+          "end": 76.296
+        },
+        {
+          "text": "dai",
+          "start": 76.336,
+          "end": 76.476
+        },
+        {
+          "text": "metodi",
+          "start": 76.516,
+          "end": 76.856
+        },
+        {
+          "text": "kernel.",
+          "start": 76.916,
+          "end": 77.416
+        }
+      ]
+    },
+    {
+      "start": 78.096,
+      "end": 83.076,
+      "text": "A quel punto, nello spazio nascosto a destra, basta un semplice iperpiano lineare — il",
+      "words": [
+        {
+          "text": "A",
+          "start": 78.096,
+          "end": 78.13600000000001
+        },
+        {
+          "text": "quel",
+          "start": 78.176,
+          "end": 78.316
+        },
+        {
+          "text": "punto,",
+          "start": 78.376,
+          "end": 78.736
+        },
+        {
+          "text": "nello",
+          "start": 78.936,
+          "end": 79.096
+        },
+        {
+          "text": "spazio",
+          "start": 79.116,
+          "end": 79.396
+        },
+        {
+          "text": "nascosto",
+          "start": 79.436,
+          "end": 79.796
+        },
+        {
+          "text": "a",
+          "start": 79.836,
+          "end": 79.876
+        },
+        {
+          "text": "destra,",
+          "start": 79.916,
+          "end": 80.316
+        },
+        {
+          "text": "basta",
+          "start": 80.576,
+          "end": 80.816
+        },
+        {
+          "text": "un",
+          "start": 80.876,
+          "end": 80.936
+        },
+        {
+          "text": "semplice",
+          "start": 81.016,
+          "end": 81.496
+        },
+        {
+          "text": "iperpiano",
+          "start": 81.636,
+          "end": 82.216
+        },
+        {
+          "text": "lineare",
+          "start": 82.276,
+          "end": 82.776
+        },
+        {
+          "text": "—",
+          "start": 82.776,
+          "end": 82.926
+        },
+        {
+          "text": "il",
+          "start": 82.996,
+          "end": 83.076
+        }
+      ]
+    },
+    {
+      "start": 83.136,
+      "end": 89.177,
+      "text": "nostro readout w out — addestrabile in un solo passo al costo di una regressione",
+      "words": [
+        {
+          "text": "nostro",
+          "start": 83.136,
+          "end": 83.456
+        },
+        {
+          "text": "readout",
+          "start": 83.536,
+          "end": 84.076
+        },
+        {
+          "text": "w",
+          "start": 84.476,
+          "end": 84.516
+        },
+        {
+          "text": "out",
+          "start": 84.676,
+          "end": 85.336
+        },
+        {
+          "text": "—",
+          "start": 85.336,
+          "end": 85.486
+        },
+        {
+          "text": "addestrabile",
+          "start": 85.836,
+          "end": 86.537
+        },
+        {
+          "text": "in",
+          "start": 86.597,
+          "end": 86.677
+        },
+        {
+          "text": "un",
+          "start": 86.737,
+          "end": 86.817
+        },
+        {
+          "text": "solo",
+          "start": 86.937,
+          "end": 87.157
+        },
+        {
+          "text": "passo",
+          "start": 87.217,
+          "end": 87.597
+        },
+        {
+          "text": "al",
+          "start": 87.737,
+          "end": 87.837
+        },
+        {
+          "text": "costo",
+          "start": 87.917,
+          "end": 88.257
+        },
+        {
+          "text": "di",
+          "start": 88.377,
+          "end": 88.437
+        },
+        {
+          "text": "una",
+          "start": 88.477,
+          "end": 88.617
+        },
+        {
+          "text": "regressione",
+          "start": 88.697,
+          "end": 89.177
+        }
+      ]
+    },
+    {
+      "start": 89.257,
+      "end": 90.657,
+      "text": "lineare regolarizzata.",
+      "words": [
+        {
+          "text": "lineare",
+          "start": 89.257,
+          "end": 89.697
+        },
+        {
+          "text": "regolarizzata.",
+          "start": 89.877,
+          "end": 90.657
+        }
+      ]
+    }
+  ]
+}

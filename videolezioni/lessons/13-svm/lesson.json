@@ -22,46 +22,46 @@
           "action": "show",
           "target": "#s1",
           "anchor": "secondo approccio alla Structural Risk Minimization",
-          "at": 10.4
+          "at": 10.12
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "quattro passi naturali",
-          "at": 29.2
+          "at": 29.48
         },
         {
           "action": "highlight",
           "target": "#f1",
           "anchor": "Primo: la SVM lineare",
-          "at": 30.9
+          "at": 31.58
         },
         {
           "action": "highlight",
           "target": "#f2",
           "anchor": "Secondo: il soft margin",
-          "at": 37.6
+          "at": 38.01
         },
         {
           "action": "highlight",
           "target": "#f3",
           "anchor": "Terzo: il kernel trick",
-          "at": 42.9
+          "at": 43.65
         },
         {
           "action": "highlight",
           "target": "#f4",
           "anchor": "Quarto: le SVM per la regressione",
-          "at": 50.8
+          "at": 51.21
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "nota sulla notazione",
-          "at": 61.4
+          "at": 59.93
         }
       ],
-      "duration_sec": 85.4,
+      "duration_sec": 79.03,
       "audio_file": "audio/scene-01.wav",
       "subtitle_file": "subtitles/scene-01.json"
     },
@@ -76,40 +76,40 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Dato il training set T",
-          "at": 18.1
+          "at": 19.18
         },
         {
           "action": "highlight",
           "target": "#f-gx",
           "anchor": "funzione discriminante",
-          "at": 51.9
+          "at": 40.65
         },
         {
           "action": "highlight",
           "target": "#f-hx",
           "anchor": "l'ipotesi",
-          "at": 56.8
+          "at": 44.79
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "stessa distanza dal più vicino esempio positivo",
-          "at": 60.4
+          "at": 48.25
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "ro vale due diviso norma di w",
-          "at": 88.6
+          "at": 72.89
         },
         {
           "action": "highlight",
           "target": "#f-equiv",
           "anchor": "massimizzare ro equivale",
-          "at": 91.8
+          "at": 75.57
         }
       ],
-      "duration_sec": 97.1,
+      "duration_sec": 79.46,
       "audio_file": "audio/scene-02.wav",
       "subtitle_file": "subtitles/scene-02.json"
     },
@@ -124,40 +124,40 @@
           "action": "show",
           "target": "#s1",
           "anchor": "libertà di scala",
-          "at": 2.3
+          "at": 1.68
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "In forma compatta",
-          "at": 34.7
+          "at": 26.72
         },
         {
           "action": "highlight",
           "target": "#f-vincoli",
           "anchor": "d con i per w trasposto x con i più b maggiore o uguale a uno",
-          "at": 40.4
+          "at": 30.66
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Definiamo support vector",
-          "at": 47.8
+          "at": 35.01
         },
         {
           "action": "highlight",
           "target": "#f-sv",
           "anchor": "vincolo con l'uguaglianza",
-          "at": 52.3
+          "at": 38.61
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "Nel grafico reale a destra",
-          "at": 65.3
+          "at": 49.29
         }
       ],
-      "duration_sec": 83.6,
+      "duration_sec": 63.4,
       "audio_file": "audio/scene-03.wav",
       "subtitle_file": "subtitles/scene-03.json"
     },
@@ -172,52 +172,52 @@
           "action": "show",
           "target": "#s5",
           "anchor": "Seguiamo la costruzione geometrica",
-          "at": 22.5
+          "at": 17.62
         },
         {
           "action": "show",
           "target": "#s1",
           "anchor": "ogni punto x si scrive come",
-          "at": 28.2
+          "at": 23.1
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Valutiamo la funzione discriminante",
-          "at": 42.9
+          "at": 33.34
         },
         {
           "action": "highlight",
           "target": "#f-rnorm",
           "anchor": "lascia r per norma di w con o",
-          "at": 68.1
+          "at": 53.22
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Quindi r vale esattamente",
-          "at": 72.0
+          "at": 56.06
         },
         {
           "action": "highlight",
           "target": "#f-r",
           "anchor": "g di x diviso norma di w con o",
-          "at": 72.2
+          "at": 57.6
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "Per un support vector positivo",
-          "at": 78.0
+          "at": 60.44
         },
         {
           "action": "highlight",
           "target": "#f-rhofin",
           "anchor": "ro uguale due diviso norma di w con o",
-          "at": 93.5
+          "at": 76.64
         }
       ],
-      "duration_sec": 98.4,
+      "duration_sec": 80.13,
       "audio_file": "audio/scene-04.wav",
       "subtitle_file": "subtitles/scene-04.json"
     },
@@ -232,34 +232,34 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Nel problema primale hard margin",
-          "at": 5.4
+          "at": 5.96
         },
         {
           "action": "highlight",
           "target": "#f-psi",
           "anchor": "Psi di w uguale uno mezzo w trasposto w",
-          "at": 10.8
+          "at": 11.34
         },
         {
           "action": "highlight",
           "target": "#f-cstr",
           "anchor": "soggetto agli l vincoli",
-          "at": 18.9
+          "at": 19.52
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "funzione obiettivo è quadratica e convessa",
-          "at": 30.7
+          "at": 28.88
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Un limite però è decisivo",
-          "at": 59.6
+          "at": 53.17
         }
       ],
-      "duration_sec": 76.7,
+      "duration_sec": 66.87,
       "audio_file": "audio/scene-05.wav",
       "subtitle_file": "subtitles/scene-05.json"
     },
@@ -274,52 +274,52 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Costruiamo la lagrangiana",
-          "at": 5.8
+          "at": 4.98
         },
         {
           "action": "highlight",
           "target": "#f-lag",
           "anchor": "uno mezzo w trasposto w meno la somma",
-          "at": 10.2
+          "at": 9.92
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "due condizioni di ottimalità",
-          "at": 38.8
+          "at": 31.74
         },
         {
           "action": "highlight",
           "target": "#f-walfa",
           "anchor": "w uguale somma per i da uno a l",
-          "at": 42.9
+          "at": 36.14
         },
         {
           "action": "highlight",
           "target": "#f-salfa",
           "anchor": "Dalla derivata rispetto a b",
-          "at": 50.6
+          "at": 41.86
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "condizioni di Kuhn-Tucker",
-          "at": 63.3
+          "at": 50.1
         },
         {
           "action": "highlight",
           "target": "#f-kkt",
           "anchor": "alfa con i per d con i per w trasposto",
-          "at": 63.5
+          "at": 52.4
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "Ecco il risultato straordinario",
-          "at": 89.8
+          "at": 71.75
         }
       ],
-      "duration_sec": 104.0,
+      "duration_sec": 85.44,
       "audio_file": "audio/scene-06.wav",
       "subtitle_file": "subtitles/scene-06.json"
     },
@@ -334,28 +334,28 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Sviluppando J otteniamo",
-          "at": 5.8
+          "at": 5.54
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Nel problema duale hard margin",
-          "at": 57.9
+          "at": 52.33
         },
         {
           "action": "highlight",
           "target": "#f-dot",
           "anchor": "x con i trasposto x con j",
-          "at": 58.1
+          "at": 64.8
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "algoritmi dedicati più efficienti come SMO",
-          "at": 89.7
+          "at": 76.41
         }
       ],
-      "duration_sec": 110.4,
+      "duration_sec": 96.5,
       "audio_file": "audio/scene-07.wav",
       "subtitle_file": "subtitles/scene-07.json"
     },
@@ -370,46 +370,46 @@
           "action": "show",
           "target": "#s1",
           "anchor": "L'algoritmo procede in tre passi",
-          "at": 6.2
+          "at": 6.17
         },
         {
           "action": "highlight",
           "target": "#a1",
           "anchor": "Passo uno: risolvere il duale",
-          "at": 9.0
+          "at": 8.87
         },
         {
           "action": "highlight",
           "target": "#a2",
           "anchor": "Passo due",
-          "at": 15.2
+          "at": 14.43
         },
         {
           "action": "highlight",
           "target": "#a3",
           "anchor": "Passo tre: ricaviamo il bias",
-          "at": 31.8
+          "at": 26.19
         },
         {
           "action": "highlight",
           "target": "#f-bpos",
           "anchor": "scegliendo un support vector positivo",
-          "at": 57.5
+          "at": 46.3
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "non serve nemmeno calcolare esplicitamente w con o",
-          "at": 78.3
+          "at": 63.9
         },
         {
           "action": "highlight",
           "target": "#f-gdual",
           "anchor": "valuta g di x uguale somma",
-          "at": 84.0
+          "at": 69.46
         }
       ],
-      "duration_sec": 106.4,
+      "duration_sec": 84.79,
       "audio_file": "audio/scene-08.wav",
       "subtitle_file": "subtitles/scene-08.json"
     },
@@ -424,52 +424,52 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Il teorema di Vapnik lo precisa",
-          "at": 22.9
+          "at": 24.14
         },
         {
           "action": "highlight",
           "target": "#f-vapnik",
           "anchor": "minimo tra la parte intera superiore",
-          "at": 41.2
+          "at": 39.08
         },
         {
           "action": "highlight",
           "target": "#f-rsw",
           "anchor": "R con s quadro per norma quadra di w",
-          "at": 58.4
+          "at": 53.93
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "quattro proprietà centrali",
-          "at": 76.7
+          "at": 70.31
         },
         {
           "action": "highlight",
           "target": "#p1",
           "anchor": "Uno: soluzione unica",
-          "at": 78.0
+          "at": 72.91
         },
         {
           "action": "highlight",
           "target": "#p2",
           "anchor": "Due: SRM automatica",
-          "at": 83.7
+          "at": 79.91
         },
         {
           "action": "highlight",
           "target": "#p3",
           "anchor": "Tre: programmazione quadratica",
-          "at": 88.2
+          "at": 86.91
         },
         {
           "action": "highlight",
           "target": "#p4",
           "anchor": "Quattro: soluzione concentrata",
-          "at": 95.5
+          "at": 95.83
         }
       ],
-      "duration_sec": 106.4,
+      "duration_sec": 106.34,
       "audio_file": "audio/scene-09.wav",
       "subtitle_file": "subtitles/scene-09.json"
     },
@@ -484,58 +484,58 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Introduciamo allora le variabili slack",
-          "at": 22.6
+          "at": 21.46
         },
         {
           "action": "highlight",
           "target": "#f-slack",
           "anchor": "uno meno csi con i per ogni i",
-          "at": 35.7
+          "at": 32.16
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "quattro casi geometrici",
-          "at": 40.4
+          "at": 35.34
         },
         {
           "action": "highlight",
           "target": "#c1",
           "anchor": "Se csi con i è zero",
-          "at": 43.3
+          "at": 38.42
         },
         {
           "action": "highlight",
           "target": "#c2",
           "anchor": "sta tra zero e uno",
-          "at": 51.0
+          "at": 43.94
         },
         {
           "action": "highlight",
           "target": "#c3",
           "anchor": "Se csi con i vale uno",
-          "at": 55.9
+          "at": 49.08
         },
         {
           "action": "highlight",
           "target": "#c4",
           "anchor": "csi con i è maggiore di uno",
-          "at": 64.5
+          "at": 55.34
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "teorema di Vapnik non vale più",
-          "at": 80.8
+          "at": 70.02
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "Nel grafico reale a destra",
-          "at": 87.7
+          "at": 76.34
         }
       ],
-      "duration_sec": 105.6,
+      "duration_sec": 91.53,
       "audio_file": "audio/scene-10.wav",
       "subtitle_file": "subtitles/scene-10.json"
     },
@@ -550,34 +550,34 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Nel problema primale soft margin",
-          "at": 4.9
+          "at": 4.92
         },
         {
           "action": "highlight",
           "target": "#f-C",
           "anchor": "C per la somma",
-          "at": 15.6
+          "at": 16.72
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "vero iperparametro di regolarizzazione",
-          "at": 38.4
+          "at": 31.7
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Con C basso",
-          "at": 54.7
+          "at": 49.23
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "Con C alto invece",
-          "at": 66.8
+          "at": 60.37
         }
       ],
-      "duration_sec": 87.6,
+      "duration_sec": 77.7,
       "audio_file": "audio/scene-11.wav",
       "subtitle_file": "subtitles/scene-11.json"
     },
@@ -592,46 +592,46 @@
           "action": "show",
           "target": "#s1",
           "anchor": "La sorpresa è notevole",
-          "at": 3.7
+          "at": 3.36
         },
         {
           "action": "highlight",
           "target": "#f-box",
           "anchor": "vincolo superiore alfa con i minore o uguale a C",
-          "at": 19.2
+          "at": 17.45
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Le condizioni di Kuhn-Tucker diventano",
-          "at": 31.5
+          "at": 26.77
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "tre categorie di punti",
-          "at": 54.7
+          "at": 44.45
         },
         {
           "action": "highlight",
           "target": "#t1",
           "anchor": "Se alfa con i è zero",
-          "at": 56.3
+          "at": 46.35
         },
         {
           "action": "highlight",
           "target": "#t2",
           "anchor": "strettamente compreso tra zero e C",
-          "at": 65.7
+          "at": 53.11
         },
         {
           "action": "highlight",
           "target": "#t3",
           "anchor": "raggiunge il tetto C",
-          "at": 76.7
+          "at": 62.37
         }
       ],
-      "duration_sec": 117.9,
+      "duration_sec": 93.06,
       "audio_file": "audio/scene-12.wav",
       "subtitle_file": "subtitles/scene-12.json"
     },
@@ -646,28 +646,28 @@
           "action": "show",
           "target": "#s2",
           "anchor": "Vediamo l'esempio da R quadro a R cubo",
-          "at": 13.6
+          "at": 14.44
         },
         {
           "action": "highlight",
           "target": "#f-phi",
           "anchor": "x con uno quadro",
-          "at": 23.0
+          "at": 21.88
         },
         {
           "action": "show",
           "target": "#s1",
           "anchor": "Nello spazio di input a sinistra",
-          "at": 33.1
+          "at": 28.96
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "giustificato dal teorema di Cover",
-          "at": 82.3
+          "at": 67.57
         }
       ],
-      "duration_sec": 104.3,
+      "duration_sec": 88.2,
       "audio_file": "audio/scene-13.wav",
       "subtitle_file": "subtitles/scene-13.json"
     },
@@ -682,34 +682,34 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Con Fi da R alla n",
-          "at": 14.8
+          "at": 15.03
         },
         {
           "action": "highlight",
           "target": "#f-kdef",
           "anchor": "Basta un inner product kernel",
-          "at": 49.4
+          "at": 43.53
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Nel nostro esempio da due a tre dimensioni",
-          "at": 60.7
+          "at": 53.65
         },
         {
           "action": "highlight",
           "target": "#f-kex",
           "anchor": "quadrato del prodotto scalare",
-          "at": 81.1
+          "at": 69.71
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "matrice kernel, o matrice di Gram",
-          "at": 92.5
+          "at": 79.73
         }
       ],
-      "duration_sec": 125.5,
+      "duration_sec": 107.37,
       "audio_file": "audio/scene-14.wav",
       "subtitle_file": "subtitles/scene-14.json"
     },
@@ -724,28 +724,28 @@
           "action": "show",
           "target": "#s1",
           "anchor": "ma il duale resta gestibile",
-          "at": 5.6
+          "at": 5.86
         },
         {
           "action": "highlight",
           "target": "#f-kij",
           "anchor": "k di x con i virgola x con j",
-          "at": 19.4
+          "at": 17.36
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "L'algoritmo in cinque passi",
-          "at": 38.6
+          "at": 33.7
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Il diagramma a destra mostra",
-          "at": 70.0
+          "at": 63.23
         }
       ],
-      "duration_sec": 102.2,
+      "duration_sec": 88.41,
       "audio_file": "audio/scene-15.wav",
       "subtitle_file": "subtitles/scene-15.json"
     },
@@ -760,40 +760,40 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Esaminiamo le tre famiglie principali",
-          "at": 2.7
+          "at": 2.92
         },
         {
           "action": "highlight",
           "target": "#r1",
           "anchor": "Primo: il kernel polinomiale",
-          "at": 5.3
+          "at": 5.38
         },
         {
           "action": "highlight",
           "target": "#r2",
           "anchor": "Secondo: il kernel RBF",
-          "at": 17.1
+          "at": 15.76
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Con kernel molto stretti",
-          "at": 34.6
+          "at": 31.84
         },
         {
           "action": "highlight",
           "target": "#r3",
           "anchor": "Terzo: il kernel perceptron a due strati",
-          "at": 44.8
+          "at": 39.94
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Attenzione alla validità teorica",
-          "at": 58.7
+          "at": 51.43
         }
       ],
-      "duration_sec": 83.5,
+      "duration_sec": 77.74,
       "audio_file": "audio/scene-16.wav",
       "subtitle_file": "subtitles/scene-16.json"
     },
@@ -808,22 +808,22 @@
           "action": "show",
           "target": "#s1",
           "anchor": "stimiamo d con l'espansione lineare",
-          "at": 11.9
+          "at": 11.16
         },
         {
           "action": "highlight",
           "target": "#f-leps",
           "anchor": "usiamo la loss epsilon-insensitive",
-          "at": 45.7
+          "at": 40.87
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Come mostrano i due grafici in basso",
-          "at": 61.9
+          "at": 56.13
         }
       ],
-      "duration_sec": 82.3,
+      "duration_sec": 71.84,
       "audio_file": "audio/scene-17.wav",
       "subtitle_file": "subtitles/scene-17.json"
     },
@@ -838,34 +838,34 @@
           "action": "show",
           "target": "#s1",
           "anchor": "I vincoli di tubo si scrivono",
-          "at": 24.5
+          "at": 19.43
         },
         {
           "action": "highlight",
           "target": "#f-tubec",
           "anchor": "meno csi primo con i meno epsilon",
-          "at": 28.6
+          "at": 22.17
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Nel problema primale di regressione",
-          "at": 62.5
+          "at": 50.07
         },
         {
           "action": "highlight",
           "target": "#f-psivr",
           "anchor": "uno mezzo w trasposto w più C",
-          "at": 66.1
+          "at": 55.19
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "perfetto parallelismo",
-          "at": 80.8
+          "at": 67.75
         }
       ],
-      "duration_sec": 94.6,
+      "duration_sec": 82.37,
       "audio_file": "audio/scene-18.wav",
       "subtitle_file": "subtitles/scene-18.json"
     },
@@ -880,28 +880,28 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Massimizziamo la funzione quadratica",
-          "at": 22.8
+          "at": 20.04
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Ponendo gamma con i uguale",
-          "at": 55.4
+          "at": 45.43
         },
         {
           "action": "highlight",
           "target": "#f-svrpred",
           "anchor": "predizione finale h di x uguale somma",
-          "at": 68.5
+          "at": 56.43
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "La procedura operativa ripete",
-          "at": 83.9
+          "at": 70.03
         }
       ],
-      "duration_sec": 106.2,
+      "duration_sec": 88.49,
       "audio_file": "audio/scene-19.wav",
       "subtitle_file": "subtitles/scene-19.json"
     },
@@ -916,22 +916,22 @@
           "action": "show",
           "target": "#s1",
           "anchor": "I quattro pregi principali",
-          "at": 4.1
+          "at": 4.3
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Osserviamo l'esperimento reale",
-          "at": 45.7
+          "at": 45.27
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Attenzione però: la teoria immagina",
-          "at": 86.5
+          "at": 85.97
         }
       ],
-      "duration_sec": 96.7,
+      "duration_sec": 94.54,
       "audio_file": "audio/scene-20.wav",
       "subtitle_file": "subtitles/scene-20.json"
     },
@@ -946,40 +946,40 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Il grafico reale a sinistra",
-          "at": 41.8
+          "at": 40.92
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Sfatiamo infine quattro luoghi comuni",
-          "at": 71.1
+          "at": 67.09
         },
         {
           "action": "highlight",
           "target": "#m1",
           "anchor": "Uno: valori di default",
-          "at": 73.2
+          "at": 69.39
         },
         {
           "action": "highlight",
           "target": "#m2",
           "anchor": "Due: la SVM non va in overfitting",
-          "at": 77.3
+          "at": 73.65
         },
         {
           "action": "highlight",
           "target": "#m3",
           "anchor": "Tre: risolve la maledizione della dimensionalità",
-          "at": 83.0
+          "at": 79.73
         },
         {
           "action": "highlight",
           "target": "#m4",
           "anchor": "Quattro: trova da sola il numero di unità",
-          "at": 91.5
+          "at": 88.49
         }
       ],
-      "duration_sec": 102.1,
+      "duration_sec": 95.91,
       "audio_file": "audio/scene-21.wav",
       "subtitle_file": "subtitles/scene-21.json"
     },
@@ -994,28 +994,28 @@
           "action": "show",
           "target": "#s1",
           "anchor": "si parla di kernelizzazione",
-          "at": 6.4
+          "at": 6.36
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Ogni kernel induce una distanza",
-          "at": 26.8
+          "at": 25.03
         },
         {
           "action": "highlight",
           "target": "#f-dk",
           "anchor": "k di s virgola s meno due k di s virgola t",
-          "at": 40.2
+          "at": 35.51
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "L'idea dei kernel è concentrarsi",
-          "at": 55.7
+          "at": 48.09
         }
       ],
-      "duration_sec": 105.0,
+      "duration_sec": 89.74,
       "audio_file": "audio/scene-22.wav",
       "subtitle_file": "subtitles/scene-22.json"
     },
@@ -1030,52 +1030,52 @@
           "action": "show",
           "target": "#k1",
           "anchor": "Uno: nella forma canonica",
-          "at": 8.3
+          "at": 6.94
         },
         {
           "action": "show",
           "target": "#k2",
           "anchor": "Due: nel duale",
-          "at": 26.5
+          "at": 21.94
         },
         {
           "action": "show",
           "target": "#k3",
           "anchor": "Tre: per il teorema di Vapnik",
-          "at": 43.0
+          "at": 35.93
         },
         {
           "action": "show",
           "target": "#k4",
           "anchor": "Quattro: nel soft margin",
-          "at": 57.5
+          "at": 49.03
         },
         {
           "action": "show",
           "target": "#k5",
           "anchor": "Cinque: un kernel",
-          "at": 71.9
+          "at": 60.93
         },
         {
           "action": "show",
           "target": "#k6",
           "anchor": "Sei: nella regressione",
-          "at": 85.2
+          "at": 73.99
         },
         {
           "action": "show",
           "target": "#k7",
           "anchor": "Sette: C e i parametri",
-          "at": 96.4
+          "at": 83.3
         },
         {
           "action": "show",
           "target": "#k8",
           "anchor": "otto domande di verifica",
-          "at": 105.8
+          "at": 91.26
         }
       ],
-      "duration_sec": 114.3,
+      "duration_sec": 97.52,
       "audio_file": "audio/scene-23.wav",
       "subtitle_file": "subtitles/scene-23.json"
     }

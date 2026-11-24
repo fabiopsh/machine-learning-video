@@ -1,0 +1,1768 @@
+{
+  "duration": 128.37,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.561,
+      "text": "Vediamo ora nel dettaglio come si esegue l'algoritmo del dropout durante l'addestramento e a test",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.08,
+          "end": 0.36
+        },
+        {
+          "text": "ora",
+          "start": 0.44,
+          "end": 0.58
+        },
+        {
+          "text": "nel",
+          "start": 0.64,
+          "end": 0.8
+        },
+        {
+          "text": "dettaglio",
+          "start": 0.86,
+          "end": 1.48
+        },
+        {
+          "text": "come",
+          "start": 1.56,
+          "end": 1.78
+        },
+        {
+          "text": "si",
+          "start": 1.84,
+          "end": 1.9
+        },
+        {
+          "text": "esegue",
+          "start": 1.96,
+          "end": 2.26
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 2.32,
+          "end": 2.94
+        },
+        {
+          "text": "del",
+          "start": 3.001,
+          "end": 3.141
+        },
+        {
+          "text": "dropout",
+          "start": 3.181,
+          "end": 3.681
+        },
+        {
+          "text": "durante",
+          "start": 3.781,
+          "end": 4.121
+        },
+        {
+          "text": "l'addestramento",
+          "start": 4.161,
+          "end": 4.941
+        },
+        {
+          "text": "e",
+          "start": 5.101,
+          "end": 5.141
+        },
+        {
+          "text": "a",
+          "start": 5.221,
+          "end": 5.261
+        },
+        {
+          "text": "test",
+          "start": 5.321,
+          "end": 5.561
+        }
+      ]
+    },
+    {
+      "start": 5.641,
+      "end": 6.001,
+      "text": "time.",
+      "words": [
+        {
+          "text": "time.",
+          "start": 5.641,
+          "end": 6.001
+        }
+      ]
+    },
+    {
+      "start": 6.861,
+      "end": 10.762,
+      "text": "Primo passo: ogni volta che si carica un esempio in un mini-batch,",
+      "words": [
+        {
+          "text": "Primo",
+          "start": 6.861,
+          "end": 7.061
+        },
+        {
+          "text": "passo:",
+          "start": 7.101,
+          "end": 7.441
+        },
+        {
+          "text": "ogni",
+          "start": 8.121,
+          "end": 8.261
+        },
+        {
+          "text": "volta",
+          "start": 8.301,
+          "end": 8.521
+        },
+        {
+          "text": "che",
+          "start": 8.561,
+          "end": 8.641
+        },
+        {
+          "text": "si",
+          "start": 8.681,
+          "end": 8.761
+        },
+        {
+          "text": "carica",
+          "start": 8.801,
+          "end": 9.101
+        },
+        {
+          "text": "un",
+          "start": 9.161,
+          "end": 9.241
+        },
+        {
+          "text": "esempio",
+          "start": 9.281,
+          "end": 9.742
+        },
+        {
+          "text": "in",
+          "start": 9.902,
+          "end": 10.002
+        },
+        {
+          "text": "un",
+          "start": 10.042,
+          "end": 10.122
+        },
+        {
+          "text": "mini-batch,",
+          "start": 10.162,
+          "end": 10.762
+        }
+      ]
+    },
+    {
+      "start": 11.262,
+      "end": 15.242,
+      "text": "si campiona una maschera binaria per tutte le unità di input e nascoste,",
+      "words": [
+        {
+          "text": "si",
+          "start": 11.262,
+          "end": 11.342
+        },
+        {
+          "text": "campiona",
+          "start": 11.402,
+          "end": 11.862
+        },
+        {
+          "text": "una",
+          "start": 11.902,
+          "end": 12.022
+        },
+        {
+          "text": "maschera",
+          "start": 12.062,
+          "end": 12.422
+        },
+        {
+          "text": "binaria",
+          "start": 12.462,
+          "end": 12.842
+        },
+        {
+          "text": "per",
+          "start": 12.922,
+          "end": 13.042
+        },
+        {
+          "text": "tutte",
+          "start": 13.122,
+          "end": 13.342
+        },
+        {
+          "text": "le",
+          "start": 13.382,
+          "end": 13.442
+        },
+        {
+          "text": "unità",
+          "start": 13.502,
+          "end": 13.742
+        },
+        {
+          "text": "di",
+          "start": 13.842,
+          "end": 13.902
+        },
+        {
+          "text": "input",
+          "start": 13.942,
+          "end": 14.302
+        },
+        {
+          "text": "e",
+          "start": 14.502,
+          "end": 14.542
+        },
+        {
+          "text": "nascoste,",
+          "start": 14.602,
+          "end": 15.242
+        }
+      ]
+    },
+    {
+      "start": 15.382,
+      "end": 17.323,
+      "text": "in modo indipendente per ogni unità.",
+      "words": [
+        {
+          "text": "in",
+          "start": 15.382,
+          "end": 15.462
+        },
+        {
+          "text": "modo",
+          "start": 15.502,
+          "end": 15.702
+        },
+        {
+          "text": "indipendente",
+          "start": 15.883,
+          "end": 16.623
+        },
+        {
+          "text": "per",
+          "start": 16.663,
+          "end": 16.763
+        },
+        {
+          "text": "ogni",
+          "start": 16.823,
+          "end": 16.983
+        },
+        {
+          "text": "unità.",
+          "start": 17.063,
+          "end": 17.323
+        }
+      ]
+    },
+    {
+      "start": 18.103,
+      "end": 23.364,
+      "text": "La probabilità di includere un'unità è un iperparametro, tipicamente zero virgola otto per gli ingressi",
+      "words": [
+        {
+          "text": "La",
+          "start": 18.103,
+          "end": 18.163
+        },
+        {
+          "text": "probabilità",
+          "start": 18.223,
+          "end": 18.763
+        },
+        {
+          "text": "di",
+          "start": 18.823,
+          "end": 18.863
+        },
+        {
+          "text": "includere",
+          "start": 18.903,
+          "end": 19.303
+        },
+        {
+          "text": "un'unità",
+          "start": 19.363,
+          "end": 19.763
+        },
+        {
+          "text": "è",
+          "start": 19.963,
+          "end": 20.003
+        },
+        {
+          "text": "un",
+          "start": 20.063,
+          "end": 20.163
+        },
+        {
+          "text": "iperparametro,",
+          "start": 20.183,
+          "end": 20.963
+        },
+        {
+          "text": "tipicamente",
+          "start": 21.183,
+          "end": 21.743
+        },
+        {
+          "text": "zero",
+          "start": 21.903,
+          "end": 22.103
+        },
+        {
+          "text": "virgola",
+          "start": 22.123,
+          "end": 22.404
+        },
+        {
+          "text": "otto",
+          "start": 22.484,
+          "end": 22.684
+        },
+        {
+          "text": "per",
+          "start": 22.704,
+          "end": 22.804
+        },
+        {
+          "text": "gli",
+          "start": 22.824,
+          "end": 22.884
+        },
+        {
+          "text": "ingressi",
+          "start": 22.904,
+          "end": 23.364
+        }
+      ]
+    },
+    {
+      "start": 23.424,
+      "end": 25.644,
+      "text": "e zero virgola cinque per le unità nascoste.",
+      "words": [
+        {
+          "text": "e",
+          "start": 23.424,
+          "end": 23.464
+        },
+        {
+          "text": "zero",
+          "start": 23.524,
+          "end": 23.664
+        },
+        {
+          "text": "virgola",
+          "start": 23.704,
+          "end": 23.984
+        },
+        {
+          "text": "cinque",
+          "start": 24.024,
+          "end": 24.364
+        },
+        {
+          "text": "per",
+          "start": 24.464,
+          "end": 24.584
+        },
+        {
+          "text": "le",
+          "start": 24.624,
+          "end": 24.704
+        },
+        {
+          "text": "unità",
+          "start": 24.744,
+          "end": 24.984
+        },
+        {
+          "text": "nascoste.",
+          "start": 25.084,
+          "end": 25.644
+        }
+      ]
+    },
+    {
+      "start": 26.624,
+      "end": 30.745,
+      "text": "Secondo passo: ogni unità viene moltiplicata per la sua maschera binaria;",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 26.624,
+          "end": 26.924
+        },
+        {
+          "text": "passo:",
+          "start": 26.964,
+          "end": 27.324
+        },
+        {
+          "text": "ogni",
+          "start": 28.144,
+          "end": 28.304
+        },
+        {
+          "text": "unità",
+          "start": 28.364,
+          "end": 28.604
+        },
+        {
+          "text": "viene",
+          "start": 28.664,
+          "end": 28.865
+        },
+        {
+          "text": "moltiplicata",
+          "start": 28.925,
+          "end": 29.585
+        },
+        {
+          "text": "per",
+          "start": 29.625,
+          "end": 29.725
+        },
+        {
+          "text": "la",
+          "start": 29.765,
+          "end": 29.805
+        },
+        {
+          "text": "sua",
+          "start": 29.845,
+          "end": 29.945
+        },
+        {
+          "text": "maschera",
+          "start": 29.985,
+          "end": 30.285
+        },
+        {
+          "text": "binaria;",
+          "start": 30.325,
+          "end": 30.745
+        }
+      ]
+    },
+    {
+      "start": 31.065,
+      "end": 35.045,
+      "text": "moltiplicare per zero equivale a rimuoverla, ottenendo la sotto-rete attiva.",
+      "words": [
+        {
+          "text": "moltiplicare",
+          "start": 31.065,
+          "end": 31.585
+        },
+        {
+          "text": "per",
+          "start": 31.625,
+          "end": 31.725
+        },
+        {
+          "text": "zero",
+          "start": 31.785,
+          "end": 32.025
+        },
+        {
+          "text": "equivale",
+          "start": 32.145,
+          "end": 32.505
+        },
+        {
+          "text": "a",
+          "start": 32.525,
+          "end": 32.565
+        },
+        {
+          "text": "rimuoverla,",
+          "start": 32.625,
+          "end": 33.145
+        },
+        {
+          "text": "ottenendo",
+          "start": 33.385,
+          "end": 33.805
+        },
+        {
+          "text": "la",
+          "start": 33.865,
+          "end": 33.925
+        },
+        {
+          "text": "sotto-rete",
+          "start": 34.045,
+          "end": 34.625
+        },
+        {
+          "text": "attiva.",
+          "start": 34.665,
+          "end": 35.045
+        }
+      ]
+    },
+    {
+      "start": 35.806,
+      "end": 42.507,
+      "text": "Terzo passo: forward, backpropagation e aggiornamento dei pesi procedono come al solito esclusivamente sulla sotto-rete.",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 35.806,
+          "end": 36.066
+        },
+        {
+          "text": "passo:",
+          "start": 36.106,
+          "end": 36.446
+        },
+        {
+          "text": "forward,",
+          "start": 36.846,
+          "end": 37.286
+        },
+        {
+          "text": "backpropagation",
+          "start": 37.426,
+          "end": 38.266
+        },
+        {
+          "text": "e",
+          "start": 38.406,
+          "end": 38.446
+        },
+        {
+          "text": "aggiornamento",
+          "start": 38.506,
+          "end": 39.106
+        },
+        {
+          "text": "dei",
+          "start": 39.146,
+          "end": 39.246
+        },
+        {
+          "text": "pesi",
+          "start": 39.266,
+          "end": 39.506
+        },
+        {
+          "text": "procedono",
+          "start": 39.546,
+          "end": 40.006
+        },
+        {
+          "text": "come",
+          "start": 40.066,
+          "end": 40.266
+        },
+        {
+          "text": "al",
+          "start": 40.306,
+          "end": 40.386
+        },
+        {
+          "text": "solito",
+          "start": 40.466,
+          "end": 40.866
+        },
+        {
+          "text": "esclusivamente",
+          "start": 41.006,
+          "end": 41.727
+        },
+        {
+          "text": "sulla",
+          "start": 41.787,
+          "end": 41.947
+        },
+        {
+          "text": "sotto-rete.",
+          "start": 41.987,
+          "end": 42.507
+        }
+      ]
+    },
+    {
+      "start": 43.347,
+      "end": 47.887,
+      "text": "Quarto passo: le unità rimosse vengono poi reinserite con i loro pesi intatti per il",
+      "words": [
+        {
+          "text": "Quarto",
+          "start": 43.347,
+          "end": 43.607
+        },
+        {
+          "text": "passo:",
+          "start": 43.647,
+          "end": 44.027
+        },
+        {
+          "text": "le",
+          "start": 44.207,
+          "end": 44.267
+        },
+        {
+          "text": "unità",
+          "start": 44.327,
+          "end": 44.567
+        },
+        {
+          "text": "rimosse",
+          "start": 44.647,
+          "end": 45.027
+        },
+        {
+          "text": "vengono",
+          "start": 45.067,
+          "end": 45.347
+        },
+        {
+          "text": "poi",
+          "start": 45.387,
+          "end": 45.547
+        },
+        {
+          "text": "reinserite",
+          "start": 45.707,
+          "end": 46.387
+        },
+        {
+          "text": "con",
+          "start": 46.447,
+          "end": 46.567
+        },
+        {
+          "text": "i",
+          "start": 46.607,
+          "end": 46.647
+        },
+        {
+          "text": "loro",
+          "start": 46.687,
+          "end": 46.867
+        },
+        {
+          "text": "pesi",
+          "start": 46.907,
+          "end": 47.127
+        },
+        {
+          "text": "intatti",
+          "start": 47.167,
+          "end": 47.567
+        },
+        {
+          "text": "per",
+          "start": 47.667,
+          "end": 47.787
+        },
+        {
+          "text": "il",
+          "start": 47.827,
+          "end": 47.887
+        }
+      ]
+    },
+    {
+      "start": 47.927,
+      "end": 48.848,
+      "text": "passo successivo.",
+      "words": [
+        {
+          "text": "passo",
+          "start": 47.927,
+          "end": 48.168
+        },
+        {
+          "text": "successivo.",
+          "start": 48.228,
+          "end": 48.848
+        }
+      ]
+    },
+    {
+      "start": 49.648,
+      "end": 54.388,
+      "text": "In questo modo solo una piccolissima frazione delle sotto-reti viene effettivamente addestrata,",
+      "words": [
+        {
+          "text": "In",
+          "start": 49.648,
+          "end": 49.708
+        },
+        {
+          "text": "questo",
+          "start": 49.728,
+          "end": 49.948
+        },
+        {
+          "text": "modo",
+          "start": 49.988,
+          "end": 50.168
+        },
+        {
+          "text": "solo",
+          "start": 50.328,
+          "end": 50.548
+        },
+        {
+          "text": "una",
+          "start": 50.588,
+          "end": 50.708
+        },
+        {
+          "text": "piccolissima",
+          "start": 50.788,
+          "end": 51.408
+        },
+        {
+          "text": "frazione",
+          "start": 51.468,
+          "end": 51.868
+        },
+        {
+          "text": "delle",
+          "start": 51.908,
+          "end": 52.068
+        },
+        {
+          "text": "sotto-reti",
+          "start": 52.108,
+          "end": 52.588
+        },
+        {
+          "text": "viene",
+          "start": 52.628,
+          "end": 52.828
+        },
+        {
+          "text": "effettivamente",
+          "start": 52.988,
+          "end": 53.748
+        },
+        {
+          "text": "addestrata,",
+          "start": 53.768,
+          "end": 54.388
+        }
+      ]
+    },
+    {
+      "start": 54.709,
+      "end": 59.869,
+      "text": "ciascuna per un solo passo; tuttavia la condivisione dei parametri porta anche tutte le altre",
+      "words": [
+        {
+          "text": "ciascuna",
+          "start": 54.709,
+          "end": 55.169
+        },
+        {
+          "text": "per",
+          "start": 55.289,
+          "end": 55.409
+        },
+        {
+          "text": "un",
+          "start": 55.449,
+          "end": 55.529
+        },
+        {
+          "text": "solo",
+          "start": 55.569,
+          "end": 55.749
+        },
+        {
+          "text": "passo;",
+          "start": 55.789,
+          "end": 56.129
+        },
+        {
+          "text": "tuttavia",
+          "start": 56.629,
+          "end": 56.989
+        },
+        {
+          "text": "la",
+          "start": 57.029,
+          "end": 57.109
+        },
+        {
+          "text": "condivisione",
+          "start": 57.149,
+          "end": 57.729
+        },
+        {
+          "text": "dei",
+          "start": 57.769,
+          "end": 57.869
+        },
+        {
+          "text": "parametri",
+          "start": 57.909,
+          "end": 58.329
+        },
+        {
+          "text": "porta",
+          "start": 58.389,
+          "end": 58.649
+        },
+        {
+          "text": "anche",
+          "start": 58.849,
+          "end": 59.129
+        },
+        {
+          "text": "tutte",
+          "start": 59.229,
+          "end": 59.509
+        },
+        {
+          "text": "le",
+          "start": 59.549,
+          "end": 59.609
+        },
+        {
+          "text": "altre",
+          "start": 59.669,
+          "end": 59.869
+        }
+      ]
+    },
+    {
+      "start": 59.929,
+      "end": 61.41,
+      "text": "sotto-reti verso buoni pesi.",
+      "words": [
+        {
+          "text": "sotto-reti",
+          "start": 59.929,
+          "end": 60.409
+        },
+        {
+          "text": "verso",
+          "start": 60.529,
+          "end": 60.829
+        },
+        {
+          "text": "buoni",
+          "start": 60.89,
+          "end": 61.09
+        },
+        {
+          "text": "pesi.",
+          "start": 61.13,
+          "end": 61.41
+        }
+      ]
+    },
+    {
+      "start": 62.43,
+      "end": 67.13,
+      "text": "A test time si approssima la media dell'ensemble con la weight scaling inference rule:",
+      "words": [
+        {
+          "text": "A",
+          "start": 62.43,
+          "end": 62.47
+        },
+        {
+          "text": "test",
+          "start": 62.53,
+          "end": 62.71
+        },
+        {
+          "text": "time",
+          "start": 62.75,
+          "end": 63.09
+        },
+        {
+          "text": "si",
+          "start": 63.21,
+          "end": 63.27
+        },
+        {
+          "text": "approssima",
+          "start": 63.33,
+          "end": 63.79
+        },
+        {
+          "text": "la",
+          "start": 63.91,
+          "end": 63.97
+        },
+        {
+          "text": "media",
+          "start": 63.99,
+          "end": 64.23
+        },
+        {
+          "text": "dell'ensemble",
+          "start": 64.27,
+          "end": 65.01
+        },
+        {
+          "text": "con",
+          "start": 65.05,
+          "end": 65.17
+        },
+        {
+          "text": "la",
+          "start": 65.21,
+          "end": 65.27
+        },
+        {
+          "text": "weight",
+          "start": 65.45,
+          "end": 65.63
+        },
+        {
+          "text": "scaling",
+          "start": 65.73,
+          "end": 66.15
+        },
+        {
+          "text": "inference",
+          "start": 66.29,
+          "end": 66.79
+        },
+        {
+          "text": "rule:",
+          "start": 66.85,
+          "end": 67.13
+        }
+      ]
+    },
+    {
+      "start": 67.651,
+      "end": 70.431,
+      "text": "si moltiplicano i pesi per la probabilità di inclusione,",
+      "words": [
+        {
+          "text": "si",
+          "start": 67.651,
+          "end": 67.731
+        },
+        {
+          "text": "moltiplicano",
+          "start": 67.791,
+          "end": 68.351
+        },
+        {
+          "text": "i",
+          "start": 68.431,
+          "end": 68.471
+        },
+        {
+          "text": "pesi",
+          "start": 68.491,
+          "end": 68.751
+        },
+        {
+          "text": "per",
+          "start": 68.811,
+          "end": 68.931
+        },
+        {
+          "text": "la",
+          "start": 68.971,
+          "end": 69.051
+        },
+        {
+          "text": "probabilità",
+          "start": 69.111,
+          "end": 69.631
+        },
+        {
+          "text": "di",
+          "start": 69.711,
+          "end": 69.771
+        },
+        {
+          "text": "inclusione,",
+          "start": 69.791,
+          "end": 70.431
+        }
+      ]
+    },
+    {
+      "start": 70.851,
+      "end": 74.772,
+      "text": "così che l'uscita attesa di ogni unità coincida con quella vista in addestramento.",
+      "words": [
+        {
+          "text": "così",
+          "start": 70.851,
+          "end": 71.031
+        },
+        {
+          "text": "che",
+          "start": 71.111,
+          "end": 71.191
+        },
+        {
+          "text": "l'uscita",
+          "start": 71.231,
+          "end": 71.591
+        },
+        {
+          "text": "attesa",
+          "start": 71.651,
+          "end": 71.951
+        },
+        {
+          "text": "di",
+          "start": 72.011,
+          "end": 72.071
+        },
+        {
+          "text": "ogni",
+          "start": 72.131,
+          "end": 72.271
+        },
+        {
+          "text": "unità",
+          "start": 72.311,
+          "end": 72.551
+        },
+        {
+          "text": "coincida",
+          "start": 72.671,
+          "end": 73.231
+        },
+        {
+          "text": "con",
+          "start": 73.331,
+          "end": 73.471
+        },
+        {
+          "text": "quella",
+          "start": 73.511,
+          "end": 73.732
+        },
+        {
+          "text": "vista",
+          "start": 73.752,
+          "end": 73.972
+        },
+        {
+          "text": "in",
+          "start": 74.012,
+          "end": 74.072
+        },
+        {
+          "text": "addestramento.",
+          "start": 74.092,
+          "end": 74.772
+        }
+      ]
+    },
+    {
+      "start": 76.172,
+      "end": 82.053,
+      "text": "L'effetto regolarizzante del dropout agisce su più livelli: riduce le interazioni tra unità e le",
+      "words": [
+        {
+          "text": "L'effetto",
+          "start": 76.172,
+          "end": 76.572
+        },
+        {
+          "text": "regolarizzante",
+          "start": 76.692,
+          "end": 77.572
+        },
+        {
+          "text": "del",
+          "start": 77.632,
+          "end": 77.752
+        },
+        {
+          "text": "dropout",
+          "start": 77.792,
+          "end": 78.232
+        },
+        {
+          "text": "agisce",
+          "start": 78.292,
+          "end": 78.592
+        },
+        {
+          "text": "su",
+          "start": 78.652,
+          "end": 78.712
+        },
+        {
+          "text": "più",
+          "start": 78.772,
+          "end": 78.872
+        },
+        {
+          "text": "livelli:",
+          "start": 78.932,
+          "end": 79.332
+        },
+        {
+          "text": "riduce",
+          "start": 79.832,
+          "end": 80.213
+        },
+        {
+          "text": "le",
+          "start": 80.273,
+          "end": 80.313
+        },
+        {
+          "text": "interazioni",
+          "start": 80.353,
+          "end": 81.013
+        },
+        {
+          "text": "tra",
+          "start": 81.113,
+          "end": 81.213
+        },
+        {
+          "text": "unità",
+          "start": 81.333,
+          "end": 81.633
+        },
+        {
+          "text": "e",
+          "start": 81.893,
+          "end": 81.933
+        },
+        {
+          "text": "le",
+          "start": 81.973,
+          "end": 82.053
+        }
+      ]
+    },
+    {
+      "start": 82.073,
+      "end": 85.713,
+      "text": "diversifica, abbassa la varianza esattamente come il bagging,",
+      "words": [
+        {
+          "text": "diversifica,",
+          "start": 82.073,
+          "end": 82.753
+        },
+        {
+          "text": "abbassa",
+          "start": 83.393,
+          "end": 83.793
+        },
+        {
+          "text": "la",
+          "start": 83.853,
+          "end": 83.913
+        },
+        {
+          "text": "varianza",
+          "start": 83.933,
+          "end": 84.393
+        },
+        {
+          "text": "esattamente",
+          "start": 84.453,
+          "end": 84.953
+        },
+        {
+          "text": "come",
+          "start": 84.993,
+          "end": 85.153
+        },
+        {
+          "text": "il",
+          "start": 85.193,
+          "end": 85.253
+        },
+        {
+          "text": "bagging,",
+          "start": 85.293,
+          "end": 85.713
+        }
+      ]
+    },
+    {
+      "start": 86.293,
+      "end": 91.474,
+      "text": "inserisce rumore strutturato come dover riconoscere un volto senza l'unità che rileva il naso,",
+      "words": [
+        {
+          "text": "inserisce",
+          "start": 86.293,
+          "end": 86.754
+        },
+        {
+          "text": "rumore",
+          "start": 86.814,
+          "end": 87.134
+        },
+        {
+          "text": "strutturato",
+          "start": 87.194,
+          "end": 87.914
+        },
+        {
+          "text": "come",
+          "start": 88.234,
+          "end": 88.414
+        },
+        {
+          "text": "dover",
+          "start": 88.574,
+          "end": 88.814
+        },
+        {
+          "text": "riconoscere",
+          "start": 88.854,
+          "end": 89.394
+        },
+        {
+          "text": "un",
+          "start": 89.434,
+          "end": 89.494
+        },
+        {
+          "text": "volto",
+          "start": 89.534,
+          "end": 89.814
+        },
+        {
+          "text": "senza",
+          "start": 89.854,
+          "end": 90.114
+        },
+        {
+          "text": "l'unità",
+          "start": 90.154,
+          "end": 90.474
+        },
+        {
+          "text": "che",
+          "start": 90.634,
+          "end": 90.714
+        },
+        {
+          "text": "rileva",
+          "start": 90.774,
+          "end": 91.034
+        },
+        {
+          "text": "il",
+          "start": 91.094,
+          "end": 91.134
+        },
+        {
+          "text": "naso,",
+          "start": 91.194,
+          "end": 91.474
+        }
+      ]
+    },
+    {
+      "start": 92.054,
+      "end": 97.775,
+      "text": "e soprattutto spinge ogni unità a diventare una feature robusta e utile in molti contesti",
+      "words": [
+        {
+          "text": "e",
+          "start": 92.054,
+          "end": 92.09400000000001
+        },
+        {
+          "text": "soprattutto",
+          "start": 92.214,
+          "end": 92.714
+        },
+        {
+          "text": "spinge",
+          "start": 92.754,
+          "end": 93.155
+        },
+        {
+          "text": "ogni",
+          "start": 93.355,
+          "end": 93.575
+        },
+        {
+          "text": "unità",
+          "start": 93.655,
+          "end": 93.955
+        },
+        {
+          "text": "a",
+          "start": 94.255,
+          "end": 94.295
+        },
+        {
+          "text": "diventare",
+          "start": 94.355,
+          "end": 94.815
+        },
+        {
+          "text": "una",
+          "start": 94.875,
+          "end": 95.015
+        },
+        {
+          "text": "feature",
+          "start": 95.115,
+          "end": 95.455
+        },
+        {
+          "text": "robusta",
+          "start": 95.495,
+          "end": 95.995
+        },
+        {
+          "text": "e",
+          "start": 96.175,
+          "end": 96.215
+        },
+        {
+          "text": "utile",
+          "start": 96.335,
+          "end": 96.675
+        },
+        {
+          "text": "in",
+          "start": 96.875,
+          "end": 96.975
+        },
+        {
+          "text": "molti",
+          "start": 97.035,
+          "end": 97.315
+        },
+        {
+          "text": "contesti",
+          "start": 97.355,
+          "end": 97.775
+        }
+      ]
+    },
+    {
+      "start": 97.835,
+      "end": 98.275,
+      "text": "diversi.",
+      "words": [
+        {
+          "text": "diversi.",
+          "start": 97.835,
+          "end": 98.275
+        }
+      ]
+    },
+    {
+      "start": 99.255,
+      "end": 104.996,
+      "text": "Nella regressione lineare si dimostra che equivale esattamente a un weight decay L due con",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 99.255,
+          "end": 99.456
+        },
+        {
+          "text": "regressione",
+          "start": 99.516,
+          "end": 100.036
+        },
+        {
+          "text": "lineare",
+          "start": 100.096,
+          "end": 100.616
+        },
+        {
+          "text": "si",
+          "start": 100.696,
+          "end": 100.756
+        },
+        {
+          "text": "dimostra",
+          "start": 100.796,
+          "end": 101.196
+        },
+        {
+          "text": "che",
+          "start": 101.256,
+          "end": 101.356
+        },
+        {
+          "text": "equivale",
+          "start": 101.556,
+          "end": 102.036
+        },
+        {
+          "text": "esattamente",
+          "start": 102.096,
+          "end": 102.836
+        },
+        {
+          "text": "a",
+          "start": 102.996,
+          "end": 103.036
+        },
+        {
+          "text": "un",
+          "start": 103.076,
+          "end": 103.136
+        },
+        {
+          "text": "weight",
+          "start": 103.176,
+          "end": 103.356
+        },
+        {
+          "text": "decay",
+          "start": 103.476,
+          "end": 103.796
+        },
+        {
+          "text": "L",
+          "start": 104.116,
+          "end": 104.156
+        },
+        {
+          "text": "due",
+          "start": 104.256,
+          "end": 104.456
+        },
+        {
+          "text": "con",
+          "start": 104.876,
+          "end": 104.996
+        }
+      ]
+    },
+    {
+      "start": 105.036,
+      "end": 107.537,
+      "text": "un parametro lambda distinto per ciascun input.",
+      "words": [
+        {
+          "text": "un",
+          "start": 105.036,
+          "end": 105.116
+        },
+        {
+          "text": "parametro",
+          "start": 105.156,
+          "end": 105.636
+        },
+        {
+          "text": "lambda",
+          "start": 105.696,
+          "end": 106.037
+        },
+        {
+          "text": "distinto",
+          "start": 106.197,
+          "end": 106.677
+        },
+        {
+          "text": "per",
+          "start": 106.717,
+          "end": 106.817
+        },
+        {
+          "text": "ciascun",
+          "start": 106.857,
+          "end": 107.157
+        },
+        {
+          "text": "input.",
+          "start": 107.217,
+          "end": 107.537
+        }
+      ]
+    },
+    {
+      "start": 108.237,
+      "end": 111.877,
+      "text": "Completano il quadro del capitolo la regolarizzazione L uno,",
+      "words": [
+        {
+          "text": "Completano",
+          "start": 108.237,
+          "end": 108.797
+        },
+        {
+          "text": "il",
+          "start": 108.857,
+          "end": 108.937
+        },
+        {
+          "text": "quadro",
+          "start": 108.977,
+          "end": 109.277
+        },
+        {
+          "text": "del",
+          "start": 109.317,
+          "end": 109.437
+        },
+        {
+          "text": "capitolo",
+          "start": 109.477,
+          "end": 109.937
+        },
+        {
+          "text": "la",
+          "start": 110.097,
+          "end": 110.177
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 110.257,
+          "end": 111.177
+        },
+        {
+          "text": "L",
+          "start": 111.517,
+          "end": 111.557
+        },
+        {
+          "text": "uno,",
+          "start": 111.717,
+          "end": 111.877
+        }
+      ]
+    },
+    {
+      "start": 112.297,
+      "end": 118.919,
+      "text": "utile per eliminare feature irrilevanti, e tra gli sviluppi del deep learning le Generative Adversarial",
+      "words": [
+        {
+          "text": "utile",
+          "start": 112.297,
+          "end": 112.618
+        },
+        {
+          "text": "per",
+          "start": 112.678,
+          "end": 112.778
+        },
+        {
+          "text": "eliminare",
+          "start": 112.818,
+          "end": 113.338
+        },
+        {
+          "text": "feature",
+          "start": 113.418,
+          "end": 113.818
+        },
+        {
+          "text": "irrilevanti,",
+          "start": 113.818,
+          "end": 114.518
+        },
+        {
+          "text": "e",
+          "start": 115.038,
+          "end": 115.078
+        },
+        {
+          "text": "tra",
+          "start": 115.338,
+          "end": 115.438
+        },
+        {
+          "text": "gli",
+          "start": 115.458,
+          "end": 115.598
+        },
+        {
+          "text": "sviluppi",
+          "start": 115.638,
+          "end": 116.078
+        },
+        {
+          "text": "del",
+          "start": 116.118,
+          "end": 116.258
+        },
+        {
+          "text": "deep",
+          "start": 116.298,
+          "end": 116.438
+        },
+        {
+          "text": "learning",
+          "start": 116.498,
+          "end": 116.938
+        },
+        {
+          "text": "le",
+          "start": 117.358,
+          "end": 117.458
+        },
+        {
+          "text": "Generative",
+          "start": 117.638,
+          "end": 118.198
+        },
+        {
+          "text": "Adversarial",
+          "start": 118.238,
+          "end": 118.919
+        }
+      ]
+    },
+    {
+      "start": 118.979,
+      "end": 125.48,
+      "text": "Network, o GAN: due reti in competizione, in cui una genera candidati sintetici e l'altra",
+      "words": [
+        {
+          "text": "Network,",
+          "start": 118.979,
+          "end": 119.479
+        },
+        {
+          "text": "o",
+          "start": 119.899,
+          "end": 119.93900000000001
+        },
+        {
+          "text": "GAN:",
+          "start": 120.059,
+          "end": 120.299
+        },
+        {
+          "text": "due",
+          "start": 120.979,
+          "end": 121.139
+        },
+        {
+          "text": "reti",
+          "start": 121.179,
+          "end": 121.439
+        },
+        {
+          "text": "in",
+          "start": 121.499,
+          "end": 121.559
+        },
+        {
+          "text": "competizione,",
+          "start": 121.599,
+          "end": 122.379
+        },
+        {
+          "text": "in",
+          "start": 122.679,
+          "end": 122.759
+        },
+        {
+          "text": "cui",
+          "start": 122.799,
+          "end": 122.959
+        },
+        {
+          "text": "una",
+          "start": 123.119,
+          "end": 123.299
+        },
+        {
+          "text": "genera",
+          "start": 123.379,
+          "end": 123.679
+        },
+        {
+          "text": "candidati",
+          "start": 123.719,
+          "end": 124.179
+        },
+        {
+          "text": "sintetici",
+          "start": 124.239,
+          "end": 124.899
+        },
+        {
+          "text": "e",
+          "start": 125.079,
+          "end": 125.119
+        },
+        {
+          "text": "l'altra",
+          "start": 125.179,
+          "end": 125.48
+        }
+      ]
+    },
+    {
+      "start": 125.54,
+      "end": 128.12,
+      "text": "li valuta cercando di distinguerli dai dati veri.",
+      "words": [
+        {
+          "text": "li",
+          "start": 125.54,
+          "end": 125.62
+        },
+        {
+          "text": "valuta",
+          "start": 125.66,
+          "end": 126.04
+        },
+        {
+          "text": "cercando",
+          "start": 126.1,
+          "end": 126.54
+        },
+        {
+          "text": "di",
+          "start": 126.6,
+          "end": 126.68
+        },
+        {
+          "text": "distinguerli",
+          "start": 126.72,
+          "end": 127.38
+        },
+        {
+          "text": "dai",
+          "start": 127.42,
+          "end": 127.56
+        },
+        {
+          "text": "dati",
+          "start": 127.6,
+          "end": 127.8
+        },
+        {
+          "text": "veri.",
+          "start": 127.86,
+          "end": 128.12
+        }
+      ]
+    }
+  ]
+}

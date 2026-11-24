@@ -1,0 +1,1313 @@
+{
+  "duration": 98.965,
+  "segments": [
+    {
+      "start": 0.584,
+      "end": 3.904,
+      "text": "Mettiamo insieme tutti i pezzi per vedere la CNN nel suo complesso.",
+      "words": [
+        {
+          "text": "Mettiamo",
+          "start": 0.584,
+          "end": 0.844
+        },
+        {
+          "text": "insieme",
+          "start": 0.884,
+          "end": 1.144
+        },
+        {
+          "text": "tutti",
+          "start": 1.224,
+          "end": 1.444
+        },
+        {
+          "text": "i",
+          "start": 1.484,
+          "end": 1.524
+        },
+        {
+          "text": "pezzi",
+          "start": 1.524,
+          "end": 1.864
+        },
+        {
+          "text": "per",
+          "start": 1.924,
+          "end": 2.024
+        },
+        {
+          "text": "vedere",
+          "start": 2.084,
+          "end": 2.344
+        },
+        {
+          "text": "la",
+          "start": 2.384,
+          "end": 2.444
+        },
+        {
+          "text": "CNN",
+          "start": 2.524,
+          "end": 2.944
+        },
+        {
+          "text": "nel",
+          "start": 3.064,
+          "end": 3.184
+        },
+        {
+          "text": "suo",
+          "start": 3.224,
+          "end": 3.324
+        },
+        {
+          "text": "complesso.",
+          "start": 3.364,
+          "end": 3.904
+        }
+      ]
+    },
+    {
+      "start": 4.484,
+      "end": 10.065,
+      "text": "La rete estende alle immagini bidimensionali la finestra scorrevole con pesi condivisi e la ripete",
+      "words": [
+        {
+          "text": "La",
+          "start": 4.484,
+          "end": 4.544
+        },
+        {
+          "text": "rete",
+          "start": 4.584,
+          "end": 4.804
+        },
+        {
+          "text": "estende",
+          "start": 4.985,
+          "end": 5.405
+        },
+        {
+          "text": "alle",
+          "start": 5.445,
+          "end": 5.585
+        },
+        {
+          "text": "immagini",
+          "start": 5.625,
+          "end": 6.045
+        },
+        {
+          "text": "bidimensionali",
+          "start": 6.105,
+          "end": 6.925
+        },
+        {
+          "text": "la",
+          "start": 6.985,
+          "end": 7.045
+        },
+        {
+          "text": "finestra",
+          "start": 7.085,
+          "end": 7.445
+        },
+        {
+          "text": "scorrevole",
+          "start": 7.525,
+          "end": 8.085
+        },
+        {
+          "text": "con",
+          "start": 8.105,
+          "end": 8.245
+        },
+        {
+          "text": "pesi",
+          "start": 8.305,
+          "end": 8.505
+        },
+        {
+          "text": "condivisi",
+          "start": 8.545,
+          "end": 9.145
+        },
+        {
+          "text": "e",
+          "start": 9.545,
+          "end": 9.585
+        },
+        {
+          "text": "la",
+          "start": 9.625,
+          "end": 9.685
+        },
+        {
+          "text": "ripete",
+          "start": 9.725,
+          "end": 10.065
+        }
+      ]
+    },
+    {
+      "start": 10.125,
+      "end": 15.186,
+      "text": "su molti strati di feature map, alternati a operazioni di non linearità come ReLU e",
+      "words": [
+        {
+          "text": "su",
+          "start": 10.125,
+          "end": 10.205
+        },
+        {
+          "text": "molti",
+          "start": 10.305,
+          "end": 10.565
+        },
+        {
+          "text": "strati",
+          "start": 10.625,
+          "end": 10.945
+        },
+        {
+          "text": "di",
+          "start": 11.005,
+          "end": 11.065
+        },
+        {
+          "text": "feature",
+          "start": 11.145,
+          "end": 11.505
+        },
+        {
+          "text": "map,",
+          "start": 11.545,
+          "end": 11.805
+        },
+        {
+          "text": "alternati",
+          "start": 12.285,
+          "end": 12.745
+        },
+        {
+          "text": "a",
+          "start": 12.745,
+          "end": 12.785
+        },
+        {
+          "text": "operazioni",
+          "start": 12.805,
+          "end": 13.345
+        },
+        {
+          "text": "di",
+          "start": 13.405,
+          "end": 13.465
+        },
+        {
+          "text": "non",
+          "start": 13.565,
+          "end": 13.705
+        },
+        {
+          "text": "linearità",
+          "start": 13.745,
+          "end": 14.246
+        },
+        {
+          "text": "come",
+          "start": 14.406,
+          "end": 14.606
+        },
+        {
+          "text": "ReLU",
+          "start": 14.666,
+          "end": 14.926
+        },
+        {
+          "text": "e",
+          "start": 15.146,
+          "end": 15.186
+        }
+      ]
+    },
+    {
+      "start": 15.206,
+      "end": 15.686,
+      "text": "di pooling.",
+      "words": [
+        {
+          "text": "di",
+          "start": 15.206,
+          "end": 15.286
+        },
+        {
+          "text": "pooling.",
+          "start": 15.326,
+          "end": 15.686
+        }
+      ]
+    },
+    {
+      "start": 16.466,
+      "end": 17.726,
+      "text": "Osserviamo lo schema completo:",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 16.466,
+          "end": 16.886
+        },
+        {
+          "text": "lo",
+          "start": 16.926,
+          "end": 16.986
+        },
+        {
+          "text": "schema",
+          "start": 17.006,
+          "end": 17.226
+        },
+        {
+          "text": "completo:",
+          "start": 17.266,
+          "end": 17.726
+        }
+      ]
+    },
+    {
+      "start": 18.746,
+      "end": 20.326,
+      "text": "per un'immagine a colori RGB",
+      "words": [
+        {
+          "text": "per",
+          "start": 18.746,
+          "end": 18.846
+        },
+        {
+          "text": "un'immagine",
+          "start": 18.866,
+          "end": 19.306
+        },
+        {
+          "text": "a",
+          "start": 19.346,
+          "end": 19.386
+        },
+        {
+          "text": "colori",
+          "start": 19.426,
+          "end": 19.786
+        },
+        {
+          "text": "RGB",
+          "start": 20.046,
+          "end": 20.326
+        }
+      ]
+    },
+    {
+      "start": 20.906,
+      "end": 24.627,
+      "text": "l'input ha tre canali; salendo lungo la parte di feature learning,",
+      "words": [
+        {
+          "text": "l'input",
+          "start": 20.906,
+          "end": 21.286
+        },
+        {
+          "text": "ha",
+          "start": 21.446,
+          "end": 21.486
+        },
+        {
+          "text": "tre",
+          "start": 21.586,
+          "end": 21.706
+        },
+        {
+          "text": "canali;",
+          "start": 21.766,
+          "end": 22.166
+        },
+        {
+          "text": "salendo",
+          "start": 22.646,
+          "end": 22.987
+        },
+        {
+          "text": "lungo",
+          "start": 23.047,
+          "end": 23.247
+        },
+        {
+          "text": "la",
+          "start": 23.287,
+          "end": 23.347
+        },
+        {
+          "text": "parte",
+          "start": 23.367,
+          "end": 23.607
+        },
+        {
+          "text": "di",
+          "start": 23.667,
+          "end": 23.727
+        },
+        {
+          "text": "feature",
+          "start": 23.807,
+          "end": 24.147
+        },
+        {
+          "text": "learning,",
+          "start": 24.187,
+          "end": 24.627
+        }
+      ]
+    },
+    {
+      "start": 24.847,
+      "end": 28.767,
+      "text": "le feature map si rimpiccioliscono spazialmente ma aumentano di numero.",
+      "words": [
+        {
+          "text": "le",
+          "start": 24.847,
+          "end": 24.947
+        },
+        {
+          "text": "feature",
+          "start": 25.047,
+          "end": 25.387
+        },
+        {
+          "text": "map",
+          "start": 25.427,
+          "end": 25.627
+        },
+        {
+          "text": "si",
+          "start": 25.747,
+          "end": 25.807
+        },
+        {
+          "text": "rimpiccioliscono",
+          "start": 25.867,
+          "end": 26.567
+        },
+        {
+          "text": "spazialmente",
+          "start": 26.607,
+          "end": 27.407
+        },
+        {
+          "text": "ma",
+          "start": 27.747,
+          "end": 27.827
+        },
+        {
+          "text": "aumentano",
+          "start": 27.887,
+          "end": 28.307
+        },
+        {
+          "text": "di",
+          "start": 28.347,
+          "end": 28.427
+        },
+        {
+          "text": "numero.",
+          "start": 28.467,
+          "end": 28.767
+        }
+      ]
+    },
+    {
+      "start": 29.367,
+      "end": 33.428,
+      "text": "La cosiddetta profondità del volume di ogni strato è proprio il suo numero di feature",
+      "words": [
+        {
+          "text": "La",
+          "start": 29.367,
+          "end": 29.427
+        },
+        {
+          "text": "cosiddetta",
+          "start": 29.467,
+          "end": 29.927
+        },
+        {
+          "text": "profondità",
+          "start": 29.987,
+          "end": 30.527
+        },
+        {
+          "text": "del",
+          "start": 30.607,
+          "end": 30.747
+        },
+        {
+          "text": "volume",
+          "start": 30.787,
+          "end": 31.067
+        },
+        {
+          "text": "di",
+          "start": 31.107,
+          "end": 31.147
+        },
+        {
+          "text": "ogni",
+          "start": 31.187,
+          "end": 31.327
+        },
+        {
+          "text": "strato",
+          "start": 31.387,
+          "end": 31.747
+        },
+        {
+          "text": "è",
+          "start": 31.908,
+          "end": 31.948
+        },
+        {
+          "text": "proprio",
+          "start": 31.988,
+          "end": 32.288
+        },
+        {
+          "text": "il",
+          "start": 32.328,
+          "end": 32.408
+        },
+        {
+          "text": "suo",
+          "start": 32.488,
+          "end": 32.608
+        },
+        {
+          "text": "numero",
+          "start": 32.668,
+          "end": 32.968
+        },
+        {
+          "text": "di",
+          "start": 33.008,
+          "end": 33.068
+        },
+        {
+          "text": "feature",
+          "start": 33.108,
+          "end": 33.428
+        }
+      ]
+    },
+    {
+      "start": 33.468,
+      "end": 33.728,
+      "text": "map.",
+      "words": [
+        {
+          "text": "map.",
+          "start": 33.468,
+          "end": 33.728
+        }
+      ]
+    },
+    {
+      "start": 34.388,
+      "end": 39.888,
+      "text": "In cima troviamo poi la parte di classificazione: alcuni strati completamente connessi seguiti da una",
+      "words": [
+        {
+          "text": "In",
+          "start": 34.388,
+          "end": 34.488
+        },
+        {
+          "text": "cima",
+          "start": 34.548,
+          "end": 34.788
+        },
+        {
+          "text": "troviamo",
+          "start": 34.888,
+          "end": 35.228
+        },
+        {
+          "text": "poi",
+          "start": 35.328,
+          "end": 35.488
+        },
+        {
+          "text": "la",
+          "start": 35.548,
+          "end": 35.608
+        },
+        {
+          "text": "parte",
+          "start": 35.648,
+          "end": 35.928
+        },
+        {
+          "text": "di",
+          "start": 35.968,
+          "end": 36.028
+        },
+        {
+          "text": "classificazione:",
+          "start": 36.088,
+          "end": 37.068
+        },
+        {
+          "text": "alcuni",
+          "start": 37.408,
+          "end": 37.728
+        },
+        {
+          "text": "strati",
+          "start": 37.788,
+          "end": 38.088
+        },
+        {
+          "text": "completamente",
+          "start": 38.128,
+          "end": 38.688
+        },
+        {
+          "text": "connessi",
+          "start": 38.748,
+          "end": 39.208
+        },
+        {
+          "text": "seguiti",
+          "start": 39.268,
+          "end": 39.608
+        },
+        {
+          "text": "da",
+          "start": 39.648,
+          "end": 39.708
+        },
+        {
+          "text": "una",
+          "start": 39.768,
+          "end": 39.888
+        }
+      ]
+    },
+    {
+      "start": 39.968,
+      "end": 41.129,
+      "text": "softmax in uscita.",
+      "words": [
+        {
+          "text": "softmax",
+          "start": 39.968,
+          "end": 40.468
+        },
+        {
+          "text": "in",
+          "start": 40.588,
+          "end": 40.648
+        },
+        {
+          "text": "uscita.",
+          "start": 40.708,
+          "end": 41.129
+        }
+      ]
+    },
+    {
+      "start": 42.209,
+      "end": 45.809,
+      "text": "Riassumiamo i quattro ingredienti della CNN e i loro vantaggi.",
+      "words": [
+        {
+          "text": "Riassumiamo",
+          "start": 42.209,
+          "end": 42.789
+        },
+        {
+          "text": "i",
+          "start": 42.829,
+          "end": 42.869
+        },
+        {
+          "text": "quattro",
+          "start": 42.869,
+          "end": 43.109
+        },
+        {
+          "text": "ingredienti",
+          "start": 43.129,
+          "end": 43.669
+        },
+        {
+          "text": "della",
+          "start": 43.729,
+          "end": 43.949
+        },
+        {
+          "text": "CNN",
+          "start": 44.049,
+          "end": 44.609
+        },
+        {
+          "text": "e",
+          "start": 44.829,
+          "end": 44.869
+        },
+        {
+          "text": "i",
+          "start": 44.929,
+          "end": 44.969
+        },
+        {
+          "text": "loro",
+          "start": 45.029,
+          "end": 45.209
+        },
+        {
+          "text": "vantaggi.",
+          "start": 45.229,
+          "end": 45.809
+        }
+      ]
+    },
+    {
+      "start": 46.669,
+      "end": 52.93,
+      "text": "Uno e due: connessioni locali e pesi condivisi rilevano pattern locali in modo invariante alla",
+      "words": [
+        {
+          "text": "Uno",
+          "start": 46.669,
+          "end": 46.889
+        },
+        {
+          "text": "e",
+          "start": 47.109,
+          "end": 47.149
+        },
+        {
+          "text": "due:",
+          "start": 47.249,
+          "end": 47.489
+        },
+        {
+          "text": "connessioni",
+          "start": 48.129,
+          "end": 48.629
+        },
+        {
+          "text": "locali",
+          "start": 48.689,
+          "end": 49.089
+        },
+        {
+          "text": "e",
+          "start": 49.149,
+          "end": 49.189
+        },
+        {
+          "text": "pesi",
+          "start": 49.249,
+          "end": 49.469
+        },
+        {
+          "text": "condivisi",
+          "start": 49.509,
+          "end": 50.01
+        },
+        {
+          "text": "rilevano",
+          "start": 50.23,
+          "end": 50.69
+        },
+        {
+          "text": "pattern",
+          "start": 50.77,
+          "end": 51.13
+        },
+        {
+          "text": "locali",
+          "start": 51.19,
+          "end": 51.55
+        },
+        {
+          "text": "in",
+          "start": 51.61,
+          "end": 51.65
+        },
+        {
+          "text": "modo",
+          "start": 51.71,
+          "end": 51.95
+        },
+        {
+          "text": "invariante",
+          "start": 52.13,
+          "end": 52.75
+        },
+        {
+          "text": "alla",
+          "start": 52.79,
+          "end": 52.93
+        }
+      ]
+    },
+    {
+      "start": 52.97,
+      "end": 57.57,
+      "text": "traslazione e riducono i parametri liberi pur mantenendo molte connessioni,",
+      "words": [
+        {
+          "text": "traslazione",
+          "start": 52.97,
+          "end": 53.71
+        },
+        {
+          "text": "e",
+          "start": 54.11,
+          "end": 54.15
+        },
+        {
+          "text": "riducono",
+          "start": 54.19,
+          "end": 54.57
+        },
+        {
+          "text": "i",
+          "start": 54.61,
+          "end": 54.65
+        },
+        {
+          "text": "parametri",
+          "start": 54.67,
+          "end": 55.13
+        },
+        {
+          "text": "liberi",
+          "start": 55.21,
+          "end": 55.55
+        },
+        {
+          "text": "pur",
+          "start": 55.71,
+          "end": 55.87
+        },
+        {
+          "text": "mantenendo",
+          "start": 55.95,
+          "end": 56.47
+        },
+        {
+          "text": "molte",
+          "start": 56.59,
+          "end": 56.89
+        },
+        {
+          "text": "connessioni,",
+          "start": 56.93,
+          "end": 57.57
+        }
+      ]
+    },
+    {
+      "start": 57.89,
+      "end": 59.931,
+      "text": "svolgendo una vera regolarizzazione.",
+      "words": [
+        {
+          "text": "svolgendo",
+          "start": 57.89,
+          "end": 58.37
+        },
+        {
+          "text": "una",
+          "start": 58.41,
+          "end": 58.53
+        },
+        {
+          "text": "vera",
+          "start": 58.57,
+          "end": 58.791
+        },
+        {
+          "text": "regolarizzazione.",
+          "start": 58.931,
+          "end": 59.931
+        }
+      ]
+    },
+    {
+      "start": 60.811,
+      "end": 66.971,
+      "text": "Tre: il pooling riduce la dimensione a ogni strato creando una piramide e favorisce l'invarianza",
+      "words": [
+        {
+          "text": "Tre:",
+          "start": 60.811,
+          "end": 60.951
+        },
+        {
+          "text": "il",
+          "start": 61.691,
+          "end": 61.771
+        },
+        {
+          "text": "pooling",
+          "start": 61.871,
+          "end": 62.311
+        },
+        {
+          "text": "riduce",
+          "start": 62.551,
+          "end": 62.851
+        },
+        {
+          "text": "la",
+          "start": 62.911,
+          "end": 62.951
+        },
+        {
+          "text": "dimensione",
+          "start": 62.991,
+          "end": 63.491
+        },
+        {
+          "text": "a",
+          "start": 63.551,
+          "end": 63.591
+        },
+        {
+          "text": "ogni",
+          "start": 63.631,
+          "end": 63.791
+        },
+        {
+          "text": "strato",
+          "start": 63.871,
+          "end": 64.191
+        },
+        {
+          "text": "creando",
+          "start": 64.251,
+          "end": 64.571
+        },
+        {
+          "text": "una",
+          "start": 64.611,
+          "end": 64.711
+        },
+        {
+          "text": "piramide",
+          "start": 64.771,
+          "end": 65.271
+        },
+        {
+          "text": "e",
+          "start": 65.611,
+          "end": 65.65100000000001
+        },
+        {
+          "text": "favorisce",
+          "start": 65.731,
+          "end": 66.211
+        },
+        {
+          "text": "l'invarianza",
+          "start": 66.291,
+          "end": 66.971
+        }
+      ]
+    },
+    {
+      "start": 67.031,
+      "end": 69.252,
+      "text": "a piccoli spostamenti e distorsioni.",
+      "words": [
+        {
+          "text": "a",
+          "start": 67.031,
+          "end": 67.07100000000001
+        },
+        {
+          "text": "piccoli",
+          "start": 67.151,
+          "end": 67.571
+        },
+        {
+          "text": "spostamenti",
+          "start": 67.611,
+          "end": 68.292
+        },
+        {
+          "text": "e",
+          "start": 68.432,
+          "end": 68.47200000000001
+        },
+        {
+          "text": "distorsioni.",
+          "start": 68.552,
+          "end": 69.252
+        }
+      ]
+    },
+    {
+      "start": 70.052,
+      "end": 76.973,
+      "text": "Quattro: molti strati impilati producono un'astrazione progressiva; le primitive di basso livello sono apprese una",
+      "words": [
+        {
+          "text": "Quattro:",
+          "start": 70.052,
+          "end": 70.472
+        },
+        {
+          "text": "molti",
+          "start": 71.072,
+          "end": 71.352
+        },
+        {
+          "text": "strati",
+          "start": 71.432,
+          "end": 71.732
+        },
+        {
+          "text": "impilati",
+          "start": 71.792,
+          "end": 72.332
+        },
+        {
+          "text": "producono",
+          "start": 72.452,
+          "end": 72.912
+        },
+        {
+          "text": "un'astrazione",
+          "start": 72.972,
+          "end": 73.612
+        },
+        {
+          "text": "progressiva;",
+          "start": 73.672,
+          "end": 74.372
+        },
+        {
+          "text": "le",
+          "start": 74.832,
+          "end": 74.892
+        },
+        {
+          "text": "primitive",
+          "start": 74.932,
+          "end": 75.372
+        },
+        {
+          "text": "di",
+          "start": 75.412,
+          "end": 75.472
+        },
+        {
+          "text": "basso",
+          "start": 75.512,
+          "end": 75.772
+        },
+        {
+          "text": "livello",
+          "start": 75.812,
+          "end": 76.132
+        },
+        {
+          "text": "sono",
+          "start": 76.172,
+          "end": 76.332
+        },
+        {
+          "text": "apprese",
+          "start": 76.352,
+          "end": 76.673
+        },
+        {
+          "text": "una",
+          "start": 76.813,
+          "end": 76.973
+        }
+      ]
+    },
+    {
+      "start": 77.033,
+      "end": 82.153,
+      "text": "sola volta e ricomposte negli strati alti, dove i campi recettivi coprono ormai gran parte",
+      "words": [
+        {
+          "text": "sola",
+          "start": 77.033,
+          "end": 77.213
+        },
+        {
+          "text": "volta",
+          "start": 77.233,
+          "end": 77.553
+        },
+        {
+          "text": "e",
+          "start": 77.613,
+          "end": 77.653
+        },
+        {
+          "text": "ricomposte",
+          "start": 77.733,
+          "end": 78.313
+        },
+        {
+          "text": "negli",
+          "start": 78.353,
+          "end": 78.553
+        },
+        {
+          "text": "strati",
+          "start": 78.593,
+          "end": 78.873
+        },
+        {
+          "text": "alti,",
+          "start": 78.993,
+          "end": 79.293
+        },
+        {
+          "text": "dove",
+          "start": 79.653,
+          "end": 79.833
+        },
+        {
+          "text": "i",
+          "start": 79.893,
+          "end": 79.933
+        },
+        {
+          "text": "campi",
+          "start": 79.933,
+          "end": 80.213
+        },
+        {
+          "text": "recettivi",
+          "start": 80.273,
+          "end": 80.793
+        },
+        {
+          "text": "coprono",
+          "start": 80.853,
+          "end": 81.213
+        },
+        {
+          "text": "ormai",
+          "start": 81.253,
+          "end": 81.533
+        },
+        {
+          "text": "gran",
+          "start": 81.613,
+          "end": 81.813
+        },
+        {
+          "text": "parte",
+          "start": 81.873,
+          "end": 82.153
+        }
+      ]
+    },
+    {
+      "start": 82.213,
+      "end": 82.913,
+      "text": "dell'immagine.",
+      "words": [
+        {
+          "text": "dell'immagine.",
+          "start": 82.213,
+          "end": 82.913
+        }
+      ]
+    },
+    {
+      "start": 83.713,
+      "end": 89.714,
+      "text": "Infine l'addestramento avviene con backpropagation, con specializzazioni per pesi condivisi e pooling.",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 83.713,
+          "end": 84.173
+        },
+        {
+          "text": "l'addestramento",
+          "start": 84.393,
+          "end": 85.113
+        },
+        {
+          "text": "avviene",
+          "start": 85.133,
+          "end": 85.473
+        },
+        {
+          "text": "con",
+          "start": 85.533,
+          "end": 85.674
+        },
+        {
+          "text": "backpropagation,",
+          "start": 85.734,
+          "end": 86.614
+        },
+        {
+          "text": "con",
+          "start": 86.974,
+          "end": 87.094
+        },
+        {
+          "text": "specializzazioni",
+          "start": 87.134,
+          "end": 87.954
+        },
+        {
+          "text": "per",
+          "start": 87.994,
+          "end": 88.114
+        },
+        {
+          "text": "pesi",
+          "start": 88.194,
+          "end": 88.414
+        },
+        {
+          "text": "condivisi",
+          "start": 88.454,
+          "end": 89.014
+        },
+        {
+          "text": "e",
+          "start": 89.154,
+          "end": 89.194
+        },
+        {
+          "text": "pooling.",
+          "start": 89.294,
+          "end": 89.714
+        }
+      ]
+    },
+    {
+      "start": 90.334,
+      "end": 96.015,
+      "text": "Poiché reti e dataset sono molto grandi, molti iperparametri si fissano per esperienza,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 90.334,
+          "end": 90.614
+        },
+        {
+          "text": "reti",
+          "start": 90.814,
+          "end": 91.134
+        },
+        {
+          "text": "e",
+          "start": 91.194,
+          "end": 91.23400000000001
+        },
+        {
+          "text": "dataset",
+          "start": 91.314,
+          "end": 91.794
+        },
+        {
+          "text": "sono",
+          "start": 91.954,
+          "end": 92.134
+        },
+        {
+          "text": "molto",
+          "start": 92.234,
+          "end": 92.554
+        },
+        {
+          "text": "grandi,",
+          "start": 92.594,
+          "end": 93.014
+        },
+        {
+          "text": "molti",
+          "start": 93.434,
+          "end": 93.714
+        },
+        {
+          "text": "iperparametri",
+          "start": 93.774,
+          "end": 94.534
+        },
+        {
+          "text": "si",
+          "start": 94.695,
+          "end": 94.775
+        },
+        {
+          "text": "fissano",
+          "start": 94.835,
+          "end": 95.195
+        },
+        {
+          "text": "per",
+          "start": 95.235,
+          "end": 95.335
+        },
+        {
+          "text": "esperienza,",
+          "start": 95.395,
+          "end": 96.015
+        }
+      ]
+    },
+    {
+      "start": 96.275,
+      "end": 98.715,
+      "text": "evitando una cross-validation troppo costosa.",
+      "words": [
+        {
+          "text": "evitando",
+          "start": 96.275,
+          "end": 96.695
+        },
+        {
+          "text": "una",
+          "start": 96.755,
+          "end": 96.875
+        },
+        {
+          "text": "cross-validation",
+          "start": 96.955,
+          "end": 97.775
+        },
+        {
+          "text": "troppo",
+          "start": 97.895,
+          "end": 98.175
+        },
+        {
+          "text": "costosa.",
+          "start": 98.235,
+          "end": 98.715
+        }
+      ]
+    }
+  ]
+}

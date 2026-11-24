@@ -1,0 +1,1444 @@
+{
+  "duration": 106.235,
+  "segments": [
+    {
+      "start": 0.776,
+      "end": 3.596,
+      "text": "Come funziona concretamente l'astrazione su più livelli?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.776,
+          "end": 0.936
+        },
+        {
+          "text": "funziona",
+          "start": 0.976,
+          "end": 1.356
+        },
+        {
+          "text": "concretamente",
+          "start": 1.416,
+          "end": 2.116
+        },
+        {
+          "text": "l'astrazione",
+          "start": 2.196,
+          "end": 2.756
+        },
+        {
+          "text": "su",
+          "start": 2.816,
+          "end": 2.876
+        },
+        {
+          "text": "più",
+          "start": 2.956,
+          "end": 3.076
+        },
+        {
+          "text": "livelli?",
+          "start": 3.136,
+          "end": 3.596
+        }
+      ]
+    },
+    {
+      "start": 4.616,
+      "end": 11.557,
+      "text": "Ricordiamo il problema dello XOR: già un solo strato nascosto creava una ri-rappresentazione dell'input che",
+      "words": [
+        {
+          "text": "Ricordiamo",
+          "start": 4.616,
+          "end": 5.076
+        },
+        {
+          "text": "il",
+          "start": 5.136,
+          "end": 5.176
+        },
+        {
+          "text": "problema",
+          "start": 5.196,
+          "end": 5.596
+        },
+        {
+          "text": "dello",
+          "start": 5.736,
+          "end": 5.936
+        },
+        {
+          "text": "XOR:",
+          "start": 5.996,
+          "end": 6.376
+        },
+        {
+          "text": "già",
+          "start": 6.876,
+          "end": 6.976
+        },
+        {
+          "text": "un",
+          "start": 7.056,
+          "end": 7.136
+        },
+        {
+          "text": "solo",
+          "start": 7.196,
+          "end": 7.376
+        },
+        {
+          "text": "strato",
+          "start": 7.416,
+          "end": 7.676
+        },
+        {
+          "text": "nascosto",
+          "start": 7.716,
+          "end": 8.216
+        },
+        {
+          "text": "creava",
+          "start": 8.256,
+          "end": 8.596
+        },
+        {
+          "text": "una",
+          "start": 8.776,
+          "end": 8.957
+        },
+        {
+          "text": "ri-rappresentazione",
+          "start": 9.277,
+          "end": 10.397
+        },
+        {
+          "text": "dell'input",
+          "start": 10.457,
+          "end": 11.057
+        },
+        {
+          "text": "che",
+          "start": 11.497,
+          "end": 11.557
+        }
+      ]
+    },
+    {
+      "start": 11.597,
+      "end": 14.077,
+      "text": "rendeva facile il compito dello strato successivo.",
+      "words": [
+        {
+          "text": "rendeva",
+          "start": 11.597,
+          "end": 11.877
+        },
+        {
+          "text": "facile",
+          "start": 11.977,
+          "end": 12.377
+        },
+        {
+          "text": "il",
+          "start": 12.417,
+          "end": 12.477
+        },
+        {
+          "text": "compito",
+          "start": 12.517,
+          "end": 12.877
+        },
+        {
+          "text": "dello",
+          "start": 12.917,
+          "end": 13.077
+        },
+        {
+          "text": "strato",
+          "start": 13.117,
+          "end": 13.377
+        },
+        {
+          "text": "successivo.",
+          "start": 13.437,
+          "end": 14.077
+        }
+      ]
+    },
+    {
+      "start": 14.757,
+      "end": 18.837,
+      "text": "Il deep learning estende questa composizione su molti livelli annidati.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 14.757,
+          "end": 14.857
+        },
+        {
+          "text": "deep",
+          "start": 14.897,
+          "end": 15.057
+        },
+        {
+          "text": "learning",
+          "start": 15.137,
+          "end": 15.577
+        },
+        {
+          "text": "estende",
+          "start": 15.717,
+          "end": 16.057
+        },
+        {
+          "text": "questa",
+          "start": 16.117,
+          "end": 16.357
+        },
+        {
+          "text": "composizione",
+          "start": 16.437,
+          "end": 17.177
+        },
+        {
+          "text": "su",
+          "start": 17.277,
+          "end": 17.377
+        },
+        {
+          "text": "molti",
+          "start": 17.497,
+          "end": 17.817
+        },
+        {
+          "text": "livelli",
+          "start": 17.857,
+          "end": 18.217
+        },
+        {
+          "text": "annidati.",
+          "start": 18.257,
+          "end": 18.837
+        }
+      ]
+    },
+    {
+      "start": 19.537,
+      "end": 23.257,
+      "text": "Cambia così radicalmente il modo di progettare i sistemi di Machine Learning:",
+      "words": [
+        {
+          "text": "Cambia",
+          "start": 19.537,
+          "end": 19.837
+        },
+        {
+          "text": "così",
+          "start": 19.877,
+          "end": 20.077
+        },
+        {
+          "text": "radicalmente",
+          "start": 20.137,
+          "end": 20.737
+        },
+        {
+          "text": "il",
+          "start": 20.757,
+          "end": 20.817
+        },
+        {
+          "text": "modo",
+          "start": 20.857,
+          "end": 21.037
+        },
+        {
+          "text": "di",
+          "start": 21.077,
+          "end": 21.137
+        },
+        {
+          "text": "progettare",
+          "start": 21.177,
+          "end": 21.737
+        },
+        {
+          "text": "i",
+          "start": 21.777,
+          "end": 21.817
+        },
+        {
+          "text": "sistemi",
+          "start": 21.857,
+          "end": 22.257
+        },
+        {
+          "text": "di",
+          "start": 22.317,
+          "end": 22.397
+        },
+        {
+          "text": "Machine",
+          "start": 22.437,
+          "end": 22.757
+        },
+        {
+          "text": "Learning:",
+          "start": 22.837,
+          "end": 23.257
+        }
+      ]
+    },
+    {
+      "start": 23.757,
+      "end": 28.477,
+      "text": "si passa dal feature engineering, dove le feature venivano estratte a mano per esperienza di",
+      "words": [
+        {
+          "text": "si",
+          "start": 23.757,
+          "end": 23.817
+        },
+        {
+          "text": "passa",
+          "start": 23.877,
+          "end": 24.137
+        },
+        {
+          "text": "dal",
+          "start": 24.197,
+          "end": 24.337
+        },
+        {
+          "text": "feature",
+          "start": 24.397,
+          "end": 24.757
+        },
+        {
+          "text": "engineering,",
+          "start": 24.817,
+          "end": 25.457
+        },
+        {
+          "text": "dove",
+          "start": 25.637,
+          "end": 25.797
+        },
+        {
+          "text": "le",
+          "start": 25.837,
+          "end": 25.897
+        },
+        {
+          "text": "feature",
+          "start": 25.937,
+          "end": 26.257
+        },
+        {
+          "text": "venivano",
+          "start": 26.297,
+          "end": 26.657
+        },
+        {
+          "text": "estratte",
+          "start": 26.717,
+          "end": 27.137
+        },
+        {
+          "text": "a",
+          "start": 27.197,
+          "end": 27.237
+        },
+        {
+          "text": "mano",
+          "start": 27.297,
+          "end": 27.617
+        },
+        {
+          "text": "per",
+          "start": 27.737,
+          "end": 27.857
+        },
+        {
+          "text": "esperienza",
+          "start": 27.897,
+          "end": 28.357
+        },
+        {
+          "text": "di",
+          "start": 28.417,
+          "end": 28.477
+        }
+      ]
+    },
+    {
+      "start": 28.517,
+      "end": 33.478,
+      "text": "dominio, al feature learning, dove si apprendono direttamente rappresentazioni dei dati,",
+      "words": [
+        {
+          "text": "dominio,",
+          "start": 28.517,
+          "end": 28.917
+        },
+        {
+          "text": "al",
+          "start": 29.398,
+          "end": 29.518
+        },
+        {
+          "text": "feature",
+          "start": 29.578,
+          "end": 29.938
+        },
+        {
+          "text": "learning,",
+          "start": 29.978,
+          "end": 30.418
+        },
+        {
+          "text": "dove",
+          "start": 30.738,
+          "end": 30.898
+        },
+        {
+          "text": "si",
+          "start": 30.938,
+          "end": 30.998
+        },
+        {
+          "text": "apprendono",
+          "start": 31.038,
+          "end": 31.498
+        },
+        {
+          "text": "direttamente",
+          "start": 31.558,
+          "end": 32.098
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 32.158,
+          "end": 32.958
+        },
+        {
+          "text": "dei",
+          "start": 32.998,
+          "end": 33.138
+        },
+        {
+          "text": "dati,",
+          "start": 33.158,
+          "end": 33.478
+        }
+      ]
+    },
+    {
+      "start": 33.658,
+      "end": 36.558,
+      "text": "anche in modo non supervisionato o semi-supervisionato.",
+      "words": [
+        {
+          "text": "anche",
+          "start": 33.658,
+          "end": 33.878
+        },
+        {
+          "text": "in",
+          "start": 33.918,
+          "end": 33.978
+        },
+        {
+          "text": "modo",
+          "start": 34.018,
+          "end": 34.238
+        },
+        {
+          "text": "non",
+          "start": 34.338,
+          "end": 34.478
+        },
+        {
+          "text": "supervisionato",
+          "start": 34.538,
+          "end": 35.278
+        },
+        {
+          "text": "o",
+          "start": 35.318,
+          "end": 35.358
+        },
+        {
+          "text": "semi-supervisionato.",
+          "start": 35.458,
+          "end": 36.558
+        }
+      ]
+    },
+    {
+      "start": 37.358,
+      "end": 41.079,
+      "text": "Osserviamo la gerarchia crescente dei livelli di astrazione su un'immagine.",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 37.358,
+          "end": 37.818
+        },
+        {
+          "text": "la",
+          "start": 37.918,
+          "end": 37.978
+        },
+        {
+          "text": "gerarchia",
+          "start": 38.038,
+          "end": 38.558
+        },
+        {
+          "text": "crescente",
+          "start": 38.618,
+          "end": 39.178
+        },
+        {
+          "text": "dei",
+          "start": 39.218,
+          "end": 39.318
+        },
+        {
+          "text": "livelli",
+          "start": 39.358,
+          "end": 39.678
+        },
+        {
+          "text": "di",
+          "start": 39.718,
+          "end": 39.779
+        },
+        {
+          "text": "astrazione",
+          "start": 39.819,
+          "end": 40.319
+        },
+        {
+          "text": "su",
+          "start": 40.379,
+          "end": 40.419
+        },
+        {
+          "text": "un'immagine.",
+          "start": 40.479,
+          "end": 41.079
+        }
+      ]
+    },
+    {
+      "start": 41.519,
+      "end": 44.219,
+      "text": "In ingresso abbiamo il vettore di intensità dei pixel.",
+      "words": [
+        {
+          "text": "In",
+          "start": 41.519,
+          "end": 41.599
+        },
+        {
+          "text": "ingresso",
+          "start": 41.639,
+          "end": 42.139
+        },
+        {
+          "text": "abbiamo",
+          "start": 42.259,
+          "end": 42.519
+        },
+        {
+          "text": "il",
+          "start": 42.559,
+          "end": 42.619
+        },
+        {
+          "text": "vettore",
+          "start": 42.639,
+          "end": 42.979
+        },
+        {
+          "text": "di",
+          "start": 43.019,
+          "end": 43.079
+        },
+        {
+          "text": "intensità",
+          "start": 43.119,
+          "end": 43.599
+        },
+        {
+          "text": "dei",
+          "start": 43.659,
+          "end": 43.779
+        },
+        {
+          "text": "pixel.",
+          "start": 43.819,
+          "end": 44.219
+        }
+      ]
+    },
+    {
+      "start": 44.739,
+      "end": 46.359,
+      "text": "Lo strato uno individua i bordi.",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 44.739,
+          "end": 44.819
+        },
+        {
+          "text": "strato",
+          "start": 44.859,
+          "end": 45.119
+        },
+        {
+          "text": "uno",
+          "start": 45.199,
+          "end": 45.359
+        },
+        {
+          "text": "individua",
+          "start": 45.499,
+          "end": 45.919
+        },
+        {
+          "text": "i",
+          "start": 45.959,
+          "end": 45.999
+        },
+        {
+          "text": "bordi.",
+          "start": 46.019,
+          "end": 46.359
+        }
+      ]
+    },
+    {
+      "start": 46.859,
+      "end": 49.699,
+      "text": "Lo strato due combina i bordi in angoli e contorni,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 46.859,
+          "end": 46.939
+        },
+        {
+          "text": "strato",
+          "start": 46.979,
+          "end": 47.239
+        },
+        {
+          "text": "due",
+          "start": 47.279,
+          "end": 47.459
+        },
+        {
+          "text": "combina",
+          "start": 47.619,
+          "end": 47.959
+        },
+        {
+          "text": "i",
+          "start": 47.979,
+          "end": 48.019
+        },
+        {
+          "text": "bordi",
+          "start": 48.059,
+          "end": 48.359
+        },
+        {
+          "text": "in",
+          "start": 48.519,
+          "end": 48.619
+        },
+        {
+          "text": "angoli",
+          "start": 48.679,
+          "end": 49.019
+        },
+        {
+          "text": "e",
+          "start": 49.059,
+          "end": 49.099
+        },
+        {
+          "text": "contorni,",
+          "start": 49.139,
+          "end": 49.699
+        }
+      ]
+    },
+    {
+      "start": 50.02,
+      "end": 51.54,
+      "text": "ovvero motivi elementari.",
+      "words": [
+        {
+          "text": "ovvero",
+          "start": 50.02,
+          "end": 50.3
+        },
+        {
+          "text": "motivi",
+          "start": 50.48,
+          "end": 50.86
+        },
+        {
+          "text": "elementari.",
+          "start": 50.92,
+          "end": 51.54
+        }
+      ]
+    },
+    {
+      "start": 52.2,
+      "end": 55.08,
+      "text": "Lo strato tre assembla i motivi in parti di oggetti,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 52.2,
+          "end": 52.28
+        },
+        {
+          "text": "strato",
+          "start": 52.32,
+          "end": 52.6
+        },
+        {
+          "text": "tre",
+          "start": 52.66,
+          "end": 52.76
+        },
+        {
+          "text": "assembla",
+          "start": 52.96,
+          "end": 53.38
+        },
+        {
+          "text": "i",
+          "start": 53.38,
+          "end": 53.42
+        },
+        {
+          "text": "motivi",
+          "start": 53.44,
+          "end": 53.78
+        },
+        {
+          "text": "in",
+          "start": 53.98,
+          "end": 54.08
+        },
+        {
+          "text": "parti",
+          "start": 54.14,
+          "end": 54.46
+        },
+        {
+          "text": "di",
+          "start": 54.5,
+          "end": 54.54
+        },
+        {
+          "text": "oggetti,",
+          "start": 54.58,
+          "end": 55.08
+        }
+      ]
+    },
+    {
+      "start": 55.58,
+      "end": 58.3,
+      "text": "fino all'uscita che riconosce l'identità dell'oggetto.",
+      "words": [
+        {
+          "text": "fino",
+          "start": 55.58,
+          "end": 55.76
+        },
+        {
+          "text": "all'uscita",
+          "start": 55.8,
+          "end": 56.36
+        },
+        {
+          "text": "che",
+          "start": 56.5,
+          "end": 56.6
+        },
+        {
+          "text": "riconosce",
+          "start": 56.68,
+          "end": 57.12
+        },
+        {
+          "text": "l'identità",
+          "start": 57.16,
+          "end": 57.62
+        },
+        {
+          "text": "dell'oggetto.",
+          "start": 57.7,
+          "end": 58.3
+        }
+      ]
+    },
+    {
+      "start": 59.1,
+      "end": 63.301,
+      "text": "In breve: i bordi formano motivi, i motivi si assemblano in parti,",
+      "words": [
+        {
+          "text": "In",
+          "start": 59.1,
+          "end": 59.18
+        },
+        {
+          "text": "breve:",
+          "start": 59.2,
+          "end": 59.5
+        },
+        {
+          "text": "i",
+          "start": 60.04,
+          "end": 60.08
+        },
+        {
+          "text": "bordi",
+          "start": 60.121,
+          "end": 60.401
+        },
+        {
+          "text": "formano",
+          "start": 60.441,
+          "end": 60.801
+        },
+        {
+          "text": "motivi,",
+          "start": 60.841,
+          "end": 61.201
+        },
+        {
+          "text": "i",
+          "start": 61.641,
+          "end": 61.681
+        },
+        {
+          "text": "motivi",
+          "start": 61.721,
+          "end": 62.081
+        },
+        {
+          "text": "si",
+          "start": 62.221,
+          "end": 62.301
+        },
+        {
+          "text": "assemblano",
+          "start": 62.341,
+          "end": 62.801
+        },
+        {
+          "text": "in",
+          "start": 62.841,
+          "end": 62.901
+        },
+        {
+          "text": "parti,",
+          "start": 62.941,
+          "end": 63.301
+        }
+      ]
+    },
+    {
+      "start": 63.701,
+      "end": 64.901,
+      "text": "le parti formano oggetti.",
+      "words": [
+        {
+          "text": "le",
+          "start": 63.701,
+          "end": 63.781
+        },
+        {
+          "text": "parti",
+          "start": 63.821,
+          "end": 64.101
+        },
+        {
+          "text": "formano",
+          "start": 64.141,
+          "end": 64.461
+        },
+        {
+          "text": "oggetti.",
+          "start": 64.501,
+          "end": 64.901
+        }
+      ]
+    },
+    {
+      "start": 65.701,
+      "end": 69.881,
+      "text": "Questo meccanismo funziona al meglio quando l'input possiede una struttura intrinseca,",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 65.701,
+          "end": 65.941
+        },
+        {
+          "text": "meccanismo",
+          "start": 65.981,
+          "end": 66.541
+        },
+        {
+          "text": "funziona",
+          "start": 66.601,
+          "end": 66.961
+        },
+        {
+          "text": "al",
+          "start": 67.001,
+          "end": 67.04100000000001
+        },
+        {
+          "text": "meglio",
+          "start": 67.081,
+          "end": 67.301
+        },
+        {
+          "text": "quando",
+          "start": 67.341,
+          "end": 67.581
+        },
+        {
+          "text": "l'input",
+          "start": 67.621,
+          "end": 68.061
+        },
+        {
+          "text": "possiede",
+          "start": 68.221,
+          "end": 68.581
+        },
+        {
+          "text": "una",
+          "start": 68.621,
+          "end": 68.721
+        },
+        {
+          "text": "struttura",
+          "start": 68.761,
+          "end": 69.181
+        },
+        {
+          "text": "intrinseca,",
+          "start": 69.241,
+          "end": 69.881
+        }
+      ]
+    },
+    {
+      "start": 70.261,
+      "end": 72.222,
+      "text": "per esempio spaziale o temporale.",
+      "words": [
+        {
+          "text": "per",
+          "start": 70.261,
+          "end": 70.381
+        },
+        {
+          "text": "esempio",
+          "start": 70.401,
+          "end": 70.802
+        },
+        {
+          "text": "spaziale",
+          "start": 70.862,
+          "end": 71.442
+        },
+        {
+          "text": "o",
+          "start": 71.562,
+          "end": 71.602
+        },
+        {
+          "text": "temporale.",
+          "start": 71.662,
+          "end": 72.222
+        }
+      ]
+    },
+    {
+      "start": 72.722,
+      "end": 78.542,
+      "text": "Il deep learning risolve così una mappatura complicata scomponendola in una serie di mappature semplici",
+      "words": [
+        {
+          "text": "Il",
+          "start": 72.722,
+          "end": 72.802
+        },
+        {
+          "text": "deep",
+          "start": 72.862,
+          "end": 73.042
+        },
+        {
+          "text": "learning",
+          "start": 73.122,
+          "end": 73.542
+        },
+        {
+          "text": "risolve",
+          "start": 73.682,
+          "end": 74.022
+        },
+        {
+          "text": "così",
+          "start": 74.062,
+          "end": 74.262
+        },
+        {
+          "text": "una",
+          "start": 74.442,
+          "end": 74.582
+        },
+        {
+          "text": "mappatura",
+          "start": 74.622,
+          "end": 75.062
+        },
+        {
+          "text": "complicata",
+          "start": 75.162,
+          "end": 75.862
+        },
+        {
+          "text": "scomponendola",
+          "start": 76.182,
+          "end": 76.822
+        },
+        {
+          "text": "in",
+          "start": 76.862,
+          "end": 76.922
+        },
+        {
+          "text": "una",
+          "start": 76.962,
+          "end": 77.082
+        },
+        {
+          "text": "serie",
+          "start": 77.162,
+          "end": 77.422
+        },
+        {
+          "text": "di",
+          "start": 77.462,
+          "end": 77.522
+        },
+        {
+          "text": "mappature",
+          "start": 77.562,
+          "end": 77.982
+        },
+        {
+          "text": "semplici",
+          "start": 78.102,
+          "end": 78.542
+        }
+      ]
+    },
+    {
+      "start": 78.602,
+      "end": 84.143,
+      "text": "annidate, rendendo lineare o molto più semplice la classificazione nell'ultimo strato.",
+      "words": [
+        {
+          "text": "annidate,",
+          "start": 78.602,
+          "end": 79.122
+        },
+        {
+          "text": "rendendo",
+          "start": 79.602,
+          "end": 79.962
+        },
+        {
+          "text": "lineare",
+          "start": 80.042,
+          "end": 80.542
+        },
+        {
+          "text": "o",
+          "start": 80.803,
+          "end": 80.843
+        },
+        {
+          "text": "molto",
+          "start": 80.903,
+          "end": 81.163
+        },
+        {
+          "text": "più",
+          "start": 81.223,
+          "end": 81.303
+        },
+        {
+          "text": "semplice",
+          "start": 81.383,
+          "end": 81.863
+        },
+        {
+          "text": "la",
+          "start": 82.203,
+          "end": 82.283
+        },
+        {
+          "text": "classificazione",
+          "start": 82.323,
+          "end": 83.123
+        },
+        {
+          "text": "nell'ultimo",
+          "start": 83.183,
+          "end": 83.703
+        },
+        {
+          "text": "strato.",
+          "start": 83.783,
+          "end": 84.143
+        }
+      ]
+    },
+    {
+      "start": 84.843,
+      "end": 86.203,
+      "text": "E da dove arrivano queste feature?",
+      "words": [
+        {
+          "text": "E",
+          "start": 84.843,
+          "end": 84.88300000000001
+        },
+        {
+          "text": "da",
+          "start": 84.903,
+          "end": 84.983
+        },
+        {
+          "text": "dove",
+          "start": 85.023,
+          "end": 85.163
+        },
+        {
+          "text": "arrivano",
+          "start": 85.203,
+          "end": 85.543
+        },
+        {
+          "text": "queste",
+          "start": 85.583,
+          "end": 85.823
+        },
+        {
+          "text": "feature?",
+          "start": 85.863,
+          "end": 86.203
+        }
+      ]
+    },
+    {
+      "start": 86.923,
+      "end": 89.283,
+      "text": "Si apprendono automaticamente dagli esempi:",
+      "words": [
+        {
+          "text": "Si",
+          "start": 86.923,
+          "end": 86.983
+        },
+        {
+          "text": "apprendono",
+          "start": 87.043,
+          "end": 87.523
+        },
+        {
+          "text": "automaticamente",
+          "start": 87.743,
+          "end": 88.603
+        },
+        {
+          "text": "dagli",
+          "start": 88.663,
+          "end": 88.843
+        },
+        {
+          "text": "esempi:",
+          "start": 88.883,
+          "end": 89.283
+        }
+      ]
+    },
+    {
+      "start": 89.903,
+      "end": 94.164,
+      "text": "con la backpropagation l'errore in uscita si propaga all'indietro attraverso gli strati,",
+      "words": [
+        {
+          "text": "con",
+          "start": 89.903,
+          "end": 90.023
+        },
+        {
+          "text": "la",
+          "start": 90.063,
+          "end": 90.123
+        },
+        {
+          "text": "backpropagation",
+          "start": 90.183,
+          "end": 91.023
+        },
+        {
+          "text": "l'errore",
+          "start": 91.224,
+          "end": 91.564
+        },
+        {
+          "text": "in",
+          "start": 91.604,
+          "end": 91.664
+        },
+        {
+          "text": "uscita",
+          "start": 91.724,
+          "end": 92.024
+        },
+        {
+          "text": "si",
+          "start": 92.084,
+          "end": 92.164
+        },
+        {
+          "text": "propaga",
+          "start": 92.204,
+          "end": 92.524
+        },
+        {
+          "text": "all'indietro",
+          "start": 92.544,
+          "end": 93.084
+        },
+        {
+          "text": "attraverso",
+          "start": 93.124,
+          "end": 93.584
+        },
+        {
+          "text": "gli",
+          "start": 93.604,
+          "end": 93.744
+        },
+        {
+          "text": "strati,",
+          "start": 93.784,
+          "end": 94.164
+        }
+      ]
+    },
+    {
+      "start": 94.604,
+      "end": 97.564,
+      "text": "e le unità si specializzano nelle feature utili al task.",
+      "words": [
+        {
+          "text": "e",
+          "start": 94.604,
+          "end": 94.644
+        },
+        {
+          "text": "le",
+          "start": 94.684,
+          "end": 94.764
+        },
+        {
+          "text": "unità",
+          "start": 94.804,
+          "end": 95.064
+        },
+        {
+          "text": "si",
+          "start": 95.144,
+          "end": 95.224
+        },
+        {
+          "text": "specializzano",
+          "start": 95.264,
+          "end": 95.924
+        },
+        {
+          "text": "nelle",
+          "start": 96.064,
+          "end": 96.304
+        },
+        {
+          "text": "feature",
+          "start": 96.364,
+          "end": 96.684
+        },
+        {
+          "text": "utili",
+          "start": 96.824,
+          "end": 97.104
+        },
+        {
+          "text": "al",
+          "start": 97.144,
+          "end": 97.224
+        },
+        {
+          "text": "task.",
+          "start": 97.284,
+          "end": 97.564
+        }
+      ]
+    },
+    {
+      "start": 98.504,
+      "end": 103.525,
+      "text": "Infatti i primi filtri di una rete per immagini estraggono tipicamente linee orizzontali o verticali,",
+      "words": [
+        {
+          "text": "Infatti",
+          "start": 98.504,
+          "end": 98.824
+        },
+        {
+          "text": "i",
+          "start": 98.864,
+          "end": 98.90400000000001
+        },
+        {
+          "text": "primi",
+          "start": 98.904,
+          "end": 99.104
+        },
+        {
+          "text": "filtri",
+          "start": 99.144,
+          "end": 99.444
+        },
+        {
+          "text": "di",
+          "start": 99.504,
+          "end": 99.54400000000001
+        },
+        {
+          "text": "una",
+          "start": 99.584,
+          "end": 99.704
+        },
+        {
+          "text": "rete",
+          "start": 99.744,
+          "end": 99.964
+        },
+        {
+          "text": "per",
+          "start": 100.004,
+          "end": 100.104
+        },
+        {
+          "text": "immagini",
+          "start": 100.164,
+          "end": 100.584
+        },
+        {
+          "text": "estraggono",
+          "start": 100.624,
+          "end": 101.124
+        },
+        {
+          "text": "tipicamente",
+          "start": 101.225,
+          "end": 101.785
+        },
+        {
+          "text": "linee",
+          "start": 101.905,
+          "end": 102.125
+        },
+        {
+          "text": "orizzontali",
+          "start": 102.165,
+          "end": 102.805
+        },
+        {
+          "text": "o",
+          "start": 102.865,
+          "end": 102.905
+        },
+        {
+          "text": "verticali,",
+          "start": 102.945,
+          "end": 103.525
+        }
+      ]
+    },
+    {
+      "start": 103.925,
+      "end": 105.985,
+      "text": "proprio come un semplice filtro convolutivo.",
+      "words": [
+        {
+          "text": "proprio",
+          "start": 103.925,
+          "end": 104.205
+        },
+        {
+          "text": "come",
+          "start": 104.225,
+          "end": 104.385
+        },
+        {
+          "text": "un",
+          "start": 104.425,
+          "end": 104.505
+        },
+        {
+          "text": "semplice",
+          "start": 104.585,
+          "end": 104.985
+        },
+        {
+          "text": "filtro",
+          "start": 105.045,
+          "end": 105.325
+        },
+        {
+          "text": "convolutivo.",
+          "start": 105.365,
+          "end": 105.985
+        }
+      ]
+    }
+  ]
+}

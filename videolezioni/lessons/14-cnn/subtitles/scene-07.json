@@ -1,0 +1,1228 @@
+{
+  "duration": 98.42,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.34,
+      "text": "Quanto conta davvero la combinazione di connessioni locali e pesi condivisi?",
+      "words": [
+        {
+          "text": "Quanto",
+          "start": 0.08,
+          "end": 0.4
+        },
+        {
+          "text": "conta",
+          "start": 0.46,
+          "end": 0.78
+        },
+        {
+          "text": "davvero",
+          "start": 0.84,
+          "end": 1.24
+        },
+        {
+          "text": "la",
+          "start": 1.3,
+          "end": 1.38
+        },
+        {
+          "text": "combinazione",
+          "start": 1.42,
+          "end": 2.1
+        },
+        {
+          "text": "di",
+          "start": 2.14,
+          "end": 2.22
+        },
+        {
+          "text": "connessioni",
+          "start": 2.28,
+          "end": 2.84
+        },
+        {
+          "text": "locali",
+          "start": 2.9,
+          "end": 3.32
+        },
+        {
+          "text": "e",
+          "start": 3.48,
+          "end": 3.52
+        },
+        {
+          "text": "pesi",
+          "start": 3.58,
+          "end": 3.8
+        },
+        {
+          "text": "condivisi?",
+          "start": 3.84,
+          "end": 4.34
+        }
+      ]
+    },
+    {
+      "start": 5.121,
+      "end": 10.261,
+      "text": "Lo dimostra un esperimento storico di Yann LeCun su un problema di cifre manoscritte con",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 5.121,
+          "end": 5.181
+        },
+        {
+          "text": "dimostra",
+          "start": 5.241,
+          "end": 5.661
+        },
+        {
+          "text": "un",
+          "start": 5.701,
+          "end": 5.781
+        },
+        {
+          "text": "esperimento",
+          "start": 5.801,
+          "end": 6.341
+        },
+        {
+          "text": "storico",
+          "start": 6.461,
+          "end": 7.001
+        },
+        {
+          "text": "di",
+          "start": 7.141,
+          "end": 7.221
+        },
+        {
+          "text": "Yann",
+          "start": 7.301,
+          "end": 7.461
+        },
+        {
+          "text": "LeCun",
+          "start": 7.521,
+          "end": 7.881
+        },
+        {
+          "text": "su",
+          "start": 8.341,
+          "end": 8.401
+        },
+        {
+          "text": "un",
+          "start": 8.441,
+          "end": 8.501
+        },
+        {
+          "text": "problema",
+          "start": 8.541,
+          "end": 8.901
+        },
+        {
+          "text": "di",
+          "start": 8.961,
+          "end": 9.041
+        },
+        {
+          "text": "cifre",
+          "start": 9.101,
+          "end": 9.361
+        },
+        {
+          "text": "manoscritte",
+          "start": 9.421,
+          "end": 10.061
+        },
+        {
+          "text": "con",
+          "start": 10.141,
+          "end": 10.261
+        }
+      ]
+    },
+    {
+      "start": 10.321,
+      "end": 17.182,
+      "text": "circa trecento immagini di training, nel quale furono confrontate cinque architetture via via più strutturate.",
+      "words": [
+        {
+          "text": "circa",
+          "start": 10.321,
+          "end": 10.581
+        },
+        {
+          "text": "trecento",
+          "start": 10.721,
+          "end": 11.141
+        },
+        {
+          "text": "immagini",
+          "start": 11.181,
+          "end": 11.621
+        },
+        {
+          "text": "di",
+          "start": 11.661,
+          "end": 11.721
+        },
+        {
+          "text": "training,",
+          "start": 11.761,
+          "end": 12.201
+        },
+        {
+          "text": "nel",
+          "start": 12.721,
+          "end": 12.841
+        },
+        {
+          "text": "quale",
+          "start": 12.901,
+          "end": 13.201
+        },
+        {
+          "text": "furono",
+          "start": 13.301,
+          "end": 13.581
+        },
+        {
+          "text": "confrontate",
+          "start": 13.641,
+          "end": 14.241
+        },
+        {
+          "text": "cinque",
+          "start": 14.401,
+          "end": 14.821
+        },
+        {
+          "text": "architetture",
+          "start": 14.881,
+          "end": 15.622
+        },
+        {
+          "text": "via",
+          "start": 15.862,
+          "end": 16.062
+        },
+        {
+          "text": "via",
+          "start": 16.122,
+          "end": 16.302
+        },
+        {
+          "text": "più",
+          "start": 16.382,
+          "end": 16.502
+        },
+        {
+          "text": "strutturate.",
+          "start": 16.562,
+          "end": 17.182
+        }
+      ]
+    },
+    {
+      "start": 18.182,
+      "end": 24.402,
+      "text": "Net uno non ha alcuno strato nascosto: ha duemilacinquecentosettanta connessioni e altrettanti pesi liberi.",
+      "words": [
+        {
+          "text": "Net",
+          "start": 18.182,
+          "end": 18.402
+        },
+        {
+          "text": "uno",
+          "start": 18.622,
+          "end": 18.842
+        },
+        {
+          "text": "non",
+          "start": 19.022,
+          "end": 19.162
+        },
+        {
+          "text": "ha",
+          "start": 19.182,
+          "end": 19.242
+        },
+        {
+          "text": "alcuno",
+          "start": 19.302,
+          "end": 19.682
+        },
+        {
+          "text": "strato",
+          "start": 19.722,
+          "end": 19.982
+        },
+        {
+          "text": "nascosto:",
+          "start": 20.042,
+          "end": 20.522
+        },
+        {
+          "text": "ha",
+          "start": 20.982,
+          "end": 21.042
+        },
+        {
+          "text": "duemilacinquecentosettanta",
+          "start": 21.042,
+          "end": 22.502
+        },
+        {
+          "text": "connessioni",
+          "start": 22.502,
+          "end": 23.122
+        },
+        {
+          "text": "e",
+          "start": 23.222,
+          "end": 23.262
+        },
+        {
+          "text": "altrettanti",
+          "start": 23.302,
+          "end": 23.822
+        },
+        {
+          "text": "pesi",
+          "start": 23.862,
+          "end": 24.062
+        },
+        {
+          "text": "liberi.",
+          "start": 24.122,
+          "end": 24.402
+        }
+      ]
+    },
+    {
+      "start": 25.002,
+      "end": 29.343,
+      "text": "Net due è un MLP completamente connesso con uno strato nascosto:",
+      "words": [
+        {
+          "text": "Net",
+          "start": 25.002,
+          "end": 25.242
+        },
+        {
+          "text": "due",
+          "start": 25.422,
+          "end": 25.682
+        },
+        {
+          "text": "è",
+          "start": 25.943,
+          "end": 25.983
+        },
+        {
+          "text": "un",
+          "start": 26.103,
+          "end": 26.203
+        },
+        {
+          "text": "MLP",
+          "start": 26.203,
+          "end": 26.643
+        },
+        {
+          "text": "completamente",
+          "start": 26.883,
+          "end": 27.503
+        },
+        {
+          "text": "connesso",
+          "start": 27.543,
+          "end": 28.063
+        },
+        {
+          "text": "con",
+          "start": 28.123,
+          "end": 28.243
+        },
+        {
+          "text": "uno",
+          "start": 28.303,
+          "end": 28.423
+        },
+        {
+          "text": "strato",
+          "start": 28.483,
+          "end": 28.783
+        },
+        {
+          "text": "nascosto:",
+          "start": 28.823,
+          "end": 29.343
+        }
+      ]
+    },
+    {
+      "start": 29.863,
+      "end": 33.943,
+      "text": "tremiladuecentoquattordici connessioni e tremiladuecentoquattordici pesi.",
+      "words": [
+        {
+          "text": "tremiladuecentoquattordici",
+          "start": 29.863,
+          "end": 31.243
+        },
+        {
+          "text": "connessioni",
+          "start": 31.303,
+          "end": 31.903
+        },
+        {
+          "text": "e",
+          "start": 32.063,
+          "end": 32.103
+        },
+        {
+          "text": "tremiladuecentoquattordici",
+          "start": 32.203,
+          "end": 33.623
+        },
+        {
+          "text": "pesi.",
+          "start": 33.683,
+          "end": 33.943
+        }
+      ]
+    },
+    {
+      "start": 34.623,
+      "end": 42.284,
+      "text": "Net tre introduce connessioni locali tre per tre, scendendo a milleduecentoventisei connessioni e milleduecentoventisei pesi.",
+      "words": [
+        {
+          "text": "Net",
+          "start": 34.623,
+          "end": 34.863
+        },
+        {
+          "text": "tre",
+          "start": 35.003,
+          "end": 35.143
+        },
+        {
+          "text": "introduce",
+          "start": 35.443,
+          "end": 35.963
+        },
+        {
+          "text": "connessioni",
+          "start": 36.043,
+          "end": 36.564
+        },
+        {
+          "text": "locali",
+          "start": 36.604,
+          "end": 37.004
+        },
+        {
+          "text": "tre",
+          "start": 37.124,
+          "end": 37.284
+        },
+        {
+          "text": "per",
+          "start": 37.364,
+          "end": 37.484
+        },
+        {
+          "text": "tre,",
+          "start": 37.544,
+          "end": 37.684
+        },
+        {
+          "text": "scendendo",
+          "start": 38.044,
+          "end": 38.464
+        },
+        {
+          "text": "a",
+          "start": 38.524,
+          "end": 38.564
+        },
+        {
+          "text": "milleduecentoventisei",
+          "start": 38.624,
+          "end": 39.704
+        },
+        {
+          "text": "connessioni",
+          "start": 39.744,
+          "end": 40.404
+        },
+        {
+          "text": "e",
+          "start": 40.564,
+          "end": 40.604
+        },
+        {
+          "text": "milleduecentoventisei",
+          "start": 40.724,
+          "end": 41.944
+        },
+        {
+          "text": "pesi.",
+          "start": 42.004,
+          "end": 42.284
+        }
+      ]
+    },
+    {
+      "start": 43.184,
+      "end": 45.844,
+      "text": "La svolta arriva con Net quattro e Net cinque,",
+      "words": [
+        {
+          "text": "La",
+          "start": 43.184,
+          "end": 43.264
+        },
+        {
+          "text": "svolta",
+          "start": 43.304,
+          "end": 43.644
+        },
+        {
+          "text": "arriva",
+          "start": 43.784,
+          "end": 44.064
+        },
+        {
+          "text": "con",
+          "start": 44.124,
+          "end": 44.244
+        },
+        {
+          "text": "Net",
+          "start": 44.324,
+          "end": 44.484
+        },
+        {
+          "text": "quattro",
+          "start": 44.584,
+          "end": 44.964
+        },
+        {
+          "text": "e",
+          "start": 45.064,
+          "end": 45.104
+        },
+        {
+          "text": "Net",
+          "start": 45.184,
+          "end": 45.364
+        },
+        {
+          "text": "cinque,",
+          "start": 45.484,
+          "end": 45.844
+        }
+      ]
+    },
+    {
+      "start": 46.224,
+      "end": 49.305,
+      "text": "che combinano connessioni locali e condivisione dei pesi.",
+      "words": [
+        {
+          "text": "che",
+          "start": 46.224,
+          "end": 46.304
+        },
+        {
+          "text": "combinano",
+          "start": 46.364,
+          "end": 46.825
+        },
+        {
+          "text": "connessioni",
+          "start": 46.885,
+          "end": 47.405
+        },
+        {
+          "text": "locali",
+          "start": 47.465,
+          "end": 47.865
+        },
+        {
+          "text": "e",
+          "start": 48.005,
+          "end": 48.045
+        },
+        {
+          "text": "condivisione",
+          "start": 48.165,
+          "end": 48.805
+        },
+        {
+          "text": "dei",
+          "start": 48.845,
+          "end": 48.985
+        },
+        {
+          "text": "pesi.",
+          "start": 49.025,
+          "end": 49.305
+        }
+      ]
+    },
+    {
+      "start": 50.145,
+      "end": 55.345,
+      "text": "Net quattro ha duemiladuecentosessantasei connessioni ma solo millecentotrentadue pesi liberi.",
+      "words": [
+        {
+          "text": "Net",
+          "start": 50.145,
+          "end": 50.305
+        },
+        {
+          "text": "quattro",
+          "start": 50.385,
+          "end": 50.765
+        },
+        {
+          "text": "ha",
+          "start": 50.885,
+          "end": 50.945
+        },
+        {
+          "text": "duemiladuecentosessantasei",
+          "start": 51.065,
+          "end": 52.445
+        },
+        {
+          "text": "connessioni",
+          "start": 52.485,
+          "end": 53.145
+        },
+        {
+          "text": "ma",
+          "start": 53.305,
+          "end": 53.365
+        },
+        {
+          "text": "solo",
+          "start": 53.425,
+          "end": 53.625
+        },
+        {
+          "text": "millecentotrentadue",
+          "start": 53.725,
+          "end": 54.765
+        },
+        {
+          "text": "pesi",
+          "start": 54.805,
+          "end": 55.005
+        },
+        {
+          "text": "liberi.",
+          "start": 55.065,
+          "end": 55.345
+        }
+      ]
+    },
+    {
+      "start": 55.985,
+      "end": 62.026,
+      "text": "Net cinque arriva a cinquemilacentonovantaquattro connessioni usando appena millesessanta pesi liberi.",
+      "words": [
+        {
+          "text": "Net",
+          "start": 55.985,
+          "end": 56.165
+        },
+        {
+          "text": "cinque",
+          "start": 56.265,
+          "end": 56.645
+        },
+        {
+          "text": "arriva",
+          "start": 56.785,
+          "end": 57.045
+        },
+        {
+          "text": "a",
+          "start": 57.105,
+          "end": 57.145
+        },
+        {
+          "text": "cinquemilacentonovantaquattro",
+          "start": 57.185,
+          "end": 58.666
+        },
+        {
+          "text": "connessioni",
+          "start": 58.706,
+          "end": 59.326
+        },
+        {
+          "text": "usando",
+          "start": 59.706,
+          "end": 60.006
+        },
+        {
+          "text": "appena",
+          "start": 60.066,
+          "end": 60.366
+        },
+        {
+          "text": "millesessanta",
+          "start": 60.526,
+          "end": 61.406
+        },
+        {
+          "text": "pesi",
+          "start": 61.466,
+          "end": 61.666
+        },
+        {
+          "text": "liberi.",
+          "start": 61.726,
+          "end": 62.026
+        }
+      ]
+    },
+    {
+      "start": 62.926,
+      "end": 65.086,
+      "text": "Guardiamo i risultati di generalizzazione:",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 62.926,
+          "end": 63.286
+        },
+        {
+          "text": "i",
+          "start": 63.326,
+          "end": 63.366
+        },
+        {
+          "text": "risultati",
+          "start": 63.366,
+          "end": 63.846
+        },
+        {
+          "text": "di",
+          "start": 63.906,
+          "end": 64.006
+        },
+        {
+          "text": "generalizzazione:",
+          "start": 64.106,
+          "end": 65.086
+        }
+      ]
+    },
+    {
+      "start": 65.926,
+      "end": 69.507,
+      "text": "sul training set tutte e cinque le reti raggiungono errore nullo.",
+      "words": [
+        {
+          "text": "sul",
+          "start": 65.926,
+          "end": 66.066
+        },
+        {
+          "text": "training",
+          "start": 66.126,
+          "end": 66.466
+        },
+        {
+          "text": "set",
+          "start": 66.546,
+          "end": 66.786
+        },
+        {
+          "text": "tutte",
+          "start": 67.026,
+          "end": 67.326
+        },
+        {
+          "text": "e",
+          "start": 67.346,
+          "end": 67.38600000000001
+        },
+        {
+          "text": "cinque",
+          "start": 67.386,
+          "end": 67.666
+        },
+        {
+          "text": "le",
+          "start": 67.706,
+          "end": 67.766
+        },
+        {
+          "text": "reti",
+          "start": 67.807,
+          "end": 68.027
+        },
+        {
+          "text": "raggiungono",
+          "start": 68.167,
+          "end": 68.727
+        },
+        {
+          "text": "errore",
+          "start": 68.787,
+          "end": 69.147
+        },
+        {
+          "text": "nullo.",
+          "start": 69.207,
+          "end": 69.507
+        }
+      ]
+    },
+    {
+      "start": 70.147,
+      "end": 74.627,
+      "text": "Sul test set, invece, l'accuratezza passa da circa il settantadue per cento di Net uno",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 70.147,
+          "end": 70.287
+        },
+        {
+          "text": "test",
+          "start": 70.347,
+          "end": 70.547
+        },
+        {
+          "text": "set,",
+          "start": 70.667,
+          "end": 70.907
+        },
+        {
+          "text": "invece,",
+          "start": 71.007,
+          "end": 71.347
+        },
+        {
+          "text": "l'accuratezza",
+          "start": 71.487,
+          "end": 72.067
+        },
+        {
+          "text": "passa",
+          "start": 72.127,
+          "end": 72.347
+        },
+        {
+          "text": "da",
+          "start": 72.387,
+          "end": 72.447
+        },
+        {
+          "text": "circa",
+          "start": 72.507,
+          "end": 72.747
+        },
+        {
+          "text": "il",
+          "start": 72.807,
+          "end": 72.867
+        },
+        {
+          "text": "settantadue",
+          "start": 72.927,
+          "end": 73.487
+        },
+        {
+          "text": "per",
+          "start": 73.507,
+          "end": 73.607
+        },
+        {
+          "text": "cento",
+          "start": 73.667,
+          "end": 73.927
+        },
+        {
+          "text": "di",
+          "start": 73.987,
+          "end": 74.047
+        },
+        {
+          "text": "Net",
+          "start": 74.087,
+          "end": 74.247
+        },
+        {
+          "text": "uno",
+          "start": 74.447,
+          "end": 74.627
+        }
+      ]
+    },
+    {
+      "start": 75.047,
+      "end": 77.547,
+      "text": "e l'ottantotto per cento di Net due e Net tre,",
+      "words": [
+        {
+          "text": "e",
+          "start": 75.047,
+          "end": 75.087
+        },
+        {
+          "text": "l'ottantotto",
+          "start": 75.167,
+          "end": 75.767
+        },
+        {
+          "text": "per",
+          "start": 75.807,
+          "end": 75.927
+        },
+        {
+          "text": "cento",
+          "start": 75.967,
+          "end": 76.227
+        },
+        {
+          "text": "di",
+          "start": 76.287,
+          "end": 76.347
+        },
+        {
+          "text": "Net",
+          "start": 76.407,
+          "end": 76.567
+        },
+        {
+          "text": "due",
+          "start": 76.687,
+          "end": 76.907
+        },
+        {
+          "text": "e",
+          "start": 76.947,
+          "end": 76.98700000000001
+        },
+        {
+          "text": "Net",
+          "start": 77.087,
+          "end": 77.227
+        },
+        {
+          "text": "tre,",
+          "start": 77.247,
+          "end": 77.547
+        }
+      ]
+    },
+    {
+      "start": 77.967,
+      "end": 82.228,
+      "text": "fino al novantotto per cento di Net quattro e al novantotto virgola quattro per cento",
+      "words": [
+        {
+          "text": "fino",
+          "start": 77.967,
+          "end": 78.147
+        },
+        {
+          "text": "al",
+          "start": 78.207,
+          "end": 78.268
+        },
+        {
+          "text": "novantotto",
+          "start": 78.308,
+          "end": 78.808
+        },
+        {
+          "text": "per",
+          "start": 78.848,
+          "end": 78.968
+        },
+        {
+          "text": "cento",
+          "start": 79.028,
+          "end": 79.308
+        },
+        {
+          "text": "di",
+          "start": 79.368,
+          "end": 79.428
+        },
+        {
+          "text": "Net",
+          "start": 79.488,
+          "end": 79.688
+        },
+        {
+          "text": "quattro",
+          "start": 79.788,
+          "end": 80.168
+        },
+        {
+          "text": "e",
+          "start": 80.308,
+          "end": 80.34800000000001
+        },
+        {
+          "text": "al",
+          "start": 80.388,
+          "end": 80.468
+        },
+        {
+          "text": "novantotto",
+          "start": 80.488,
+          "end": 81.048
+        },
+        {
+          "text": "virgola",
+          "start": 81.088,
+          "end": 81.408
+        },
+        {
+          "text": "quattro",
+          "start": 81.448,
+          "end": 81.708
+        },
+        {
+          "text": "per",
+          "start": 81.728,
+          "end": 81.868
+        },
+        {
+          "text": "cento",
+          "start": 81.908,
+          "end": 82.228
+        }
+      ]
+    },
+    {
+      "start": 82.328,
+      "end": 85.828,
+      "text": "di Net cinque, pari a un errore dell'uno virgola sei per cento.",
+      "words": [
+        {
+          "text": "di",
+          "start": 82.328,
+          "end": 82.388
+        },
+        {
+          "text": "Net",
+          "start": 82.488,
+          "end": 82.668
+        },
+        {
+          "text": "cinque,",
+          "start": 82.808,
+          "end": 83.168
+        },
+        {
+          "text": "pari",
+          "start": 83.568,
+          "end": 83.748
+        },
+        {
+          "text": "a",
+          "start": 83.788,
+          "end": 83.828
+        },
+        {
+          "text": "un",
+          "start": 83.848,
+          "end": 83.908
+        },
+        {
+          "text": "errore",
+          "start": 83.968,
+          "end": 84.268
+        },
+        {
+          "text": "dell'uno",
+          "start": 84.368,
+          "end": 84.768
+        },
+        {
+          "text": "virgola",
+          "start": 84.828,
+          "end": 85.108
+        },
+        {
+          "text": "sei",
+          "start": 85.168,
+          "end": 85.308
+        },
+        {
+          "text": "per",
+          "start": 85.328,
+          "end": 85.448
+        },
+        {
+          "text": "cento.",
+          "start": 85.508,
+          "end": 85.828
+        }
+      ]
+    },
+    {
+      "start": 86.628,
+      "end": 92.369,
+      "text": "La lezione è cristallina: grazie al weight sharing le connessioni possono crescere mantenendo basso il",
+      "words": [
+        {
+          "text": "La",
+          "start": 86.628,
+          "end": 86.688
+        },
+        {
+          "text": "lezione",
+          "start": 86.748,
+          "end": 87.108
+        },
+        {
+          "text": "è",
+          "start": 87.148,
+          "end": 87.188
+        },
+        {
+          "text": "cristallina:",
+          "start": 87.228,
+          "end": 87.888
+        },
+        {
+          "text": "grazie",
+          "start": 88.408,
+          "end": 88.668
+        },
+        {
+          "text": "al",
+          "start": 88.688,
+          "end": 88.748
+        },
+        {
+          "text": "weight",
+          "start": 88.788,
+          "end": 88.969
+        },
+        {
+          "text": "sharing",
+          "start": 89.089,
+          "end": 89.509
+        },
+        {
+          "text": "le",
+          "start": 89.709,
+          "end": 89.789
+        },
+        {
+          "text": "connessioni",
+          "start": 89.809,
+          "end": 90.309
+        },
+        {
+          "text": "possono",
+          "start": 90.349,
+          "end": 90.669
+        },
+        {
+          "text": "crescere",
+          "start": 90.709,
+          "end": 91.069
+        },
+        {
+          "text": "mantenendo",
+          "start": 91.129,
+          "end": 91.689
+        },
+        {
+          "text": "basso",
+          "start": 91.749,
+          "end": 92.109
+        },
+        {
+          "text": "il",
+          "start": 92.289,
+          "end": 92.369
+        }
+      ]
+    },
+    {
+      "start": 92.429,
+      "end": 97.969,
+      "text": "numero di parametri liberi, controllando la complessità e potenziando la generalizzazione.",
+      "words": [
+        {
+          "text": "numero",
+          "start": 92.429,
+          "end": 92.709
+        },
+        {
+          "text": "di",
+          "start": 92.749,
+          "end": 92.809
+        },
+        {
+          "text": "parametri",
+          "start": 92.869,
+          "end": 93.309
+        },
+        {
+          "text": "liberi,",
+          "start": 93.369,
+          "end": 93.649
+        },
+        {
+          "text": "controllando",
+          "start": 94.089,
+          "end": 94.649
+        },
+        {
+          "text": "la",
+          "start": 94.709,
+          "end": 94.769
+        },
+        {
+          "text": "complessità",
+          "start": 94.809,
+          "end": 95.369
+        },
+        {
+          "text": "e",
+          "start": 95.789,
+          "end": 95.82900000000001
+        },
+        {
+          "text": "potenziando",
+          "start": 95.949,
+          "end": 96.629
+        },
+        {
+          "text": "la",
+          "start": 96.809,
+          "end": 96.889
+        },
+        {
+          "text": "generalizzazione.",
+          "start": 97.009,
+          "end": 97.969
+        }
+      ]
+    }
+  ]
+}

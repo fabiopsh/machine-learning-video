@@ -18,49 +18,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.1 · Perché i grafi</div>\n  <h2 class=\"slide-title\">Dai vettori alle strutture: domini relazionali e notazione</h2>\n  <div id=\"s1\" class=\"flow-chain cue-hidden\">\n    <div id=\"p1\" class=\"flow-node\"><strong>Vettori</strong><span>reti feedforward (MLP)</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"p2\" class=\"flow-node\"><strong>Sequenze</strong><span>reti ricorrenti (RNN)</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"p3\" class=\"flow-node flow-node-accent\"><strong>Strutture (Alberi e Grafi)</strong><span>Deep Graph Networks</span></div>\n  </div>\n  <div id=\"s2\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Domini relazionali:</span>\n    <span class=\"pill\">Scene &amp; immagini</span>\n    <span class=\"pill\">Social &amp; Knowledge Graph</span>\n    <span class=\"pill\">Alberi sintattici</span>\n    <span class=\"pill\">Reti di trasporto</span>\n    <span class=\"pill pill-accent\">Molecole (drug design)</span>\n    <span class=\"pill\">Reti biologiche e cerebrali</span>\n    <span class=\"pill\">Termini logici</span>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Notazione del capitolo</div>\n      <ul class=\"clean-list\">\n        <li>\\(\\x_v\\): etichetta (vettore di feature) del nodo \\(v\\).</li>\n        <li>\\(\\h_v^{(l)}\\): stato di \\(v\\) dopo \\(l\\) passi (\\(l = 1, \\dots, L\\)); matrice \\(H\\) con una riga per nodo.</li>\n        <li>\\(A\\): matrice di adiacenza (\\(A_{uv}=1\\) se arco tra \\(u\\) e \\(v\\), \\(0\\) altrimenti); \\(\\mathcal{N}(v)\\): vicini di \\(v\\).</li>\n      </ul>\n    </div>\n    <div id=\"s4\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Grafi etichettati e obiettivo</div>\n      <p>Nodi con etichette vettoriali (es. \\(\\x_v=[1, 0, 1, 0{,}7]\\)), archi eventualmente orientati ed etichettati, presenza di <strong>cicli</strong>. Obiettivo: modelli <strong>profondi ed efficienti</strong> (stratificazione + approcci randomizzati o incrementali).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 10.09,
+          "at": 7.64,
           "action": "show",
           "target": "#s1",
           "anchor": "progressione precisa nel dominio"
         },
         {
-          "at": 14.58,
+          "at": 11.46,
           "action": "highlight",
           "target": "#p1",
           "anchor": "vettori piatti"
         },
         {
-          "at": 18.25,
+          "at": 15.38,
           "action": "highlight",
           "target": "#p2",
           "anchor": "sequenze con le reti ricorrenti"
         },
         {
-          "at": 21.92,
+          "at": 18.38,
           "action": "highlight",
           "target": "#p3",
           "anchor": "strutture complesse come alberi e grafi"
         },
         {
-          "at": 29.66,
+          "at": 25.84,
           "action": "show",
           "target": "#s2",
           "anchor": "astrazioni di immagini"
         },
         {
-          "at": 61.06,
+          "at": 53.61,
           "action": "show",
           "target": "#s3",
           "anchor": "Fissiamo subito la notazione"
         },
         {
-          "at": 100.94,
+          "at": 85.31,
           "action": "show",
           "target": "#s4",
           "anchor": "consideriamo grafi etichettati"
         }
       ],
-      "duration_sec": 114.4,
+      "duration_sec": 97.16,
       "id": "scene-01",
       "audio_file": "audio/scene-01.wav",
       "subtitle_file": "subtitles/scene-01.json"
@@ -72,31 +72,31 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.1.2 · Il problema della rappresentazione</div>\n  <h2 class=\"slide-title\">Perché non appiattire i grafi: portare i modelli ai dati</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Limiti delle feature manuali</div>\n      <p>Incomplete o <strong>dipendenti dal task</strong> (es. gli indici topologici in chimica): manca un metodo sistematico generale.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">3 limiti dei vettori a taglia fissa (es. \\(A\\) piatta)</div>\n      <ul class=\"clean-list\">\n        <li><strong>Padding / perdita</strong>: sovra-dimensionamento o incompletezza.</li>\n        <li><strong>Allineamento</strong>: corrispondenza ambigua tra nodi di grafi diversi.</li>\n        <li><strong>Ordine dei nodi</strong>: dipendenza dalla numerazione che frena la generalizzazione.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Principio chiave · Portare i modelli ai dati</div>\n    <p>Invece di <strong>portare i dati ai modelli</strong> (trasformando grafi in vettori o alberi in sequenze), si <strong>portano i modelli ai dati</strong>, rispettandone la struttura relazionale.</p>\n  </div>\n  <div id=\"s4\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Esempio · Molecole (QSPR / QSAR)</div>\n    <p>\\(\\text{Proprietà} = T(\\text{Struttura})\\): predire un valore numerico (regressione) o «tossico sì/no» (classificazione) direttamente dal grafo molecolare di dimensione variabile.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 22.02,
+          "at": 22.16,
           "action": "show",
           "target": "#s1",
           "anchor": "feature scelte a mano"
         },
         {
-          "at": 32.93,
+          "at": 32.81,
           "action": "show",
           "target": "#s2",
           "anchor": "rappresentazioni di dimensione fissa"
         },
         {
-          "at": 62.68,
+          "at": 61.97,
           "action": "show",
           "target": "#s3",
           "anchor": "principio guida del capitolo"
         },
         {
-          "at": 78.18,
+          "at": 75.89,
           "action": "show",
           "target": "#s4",
           "anchor": "esempio emblematico viene dalle molecole"
         }
       ],
-      "duration_sec": 102.2,
+      "duration_sec": 100.11,
       "id": "scene-02",
       "audio_file": "audio/scene-02.wav",
       "subtitle_file": "subtitles/scene-02.json"
@@ -108,43 +108,43 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.2.1 · Trasduzioni su grafi</div>\n  <h2 class=\"slide-title\">Dall'encoder latente ai compiti su nodi, grafi e archi</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 168\" class=\"diagram-svg\" aria-label=\"Pipeline di trasduzione su grafi: encoder e tre livelli di task\">\n      <defs>\n        <marker id=\"arr-tr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n        </marker>\n      </defs>\n      <!-- Input graph -->\n      <rect x=\"14\" y=\"34\" width=\"118\" height=\"100\" rx=\"8\" fill=\"#FAF9F5\" stroke=\"#B5B2A8\"/>\n      <line x1=\"46\" y1=\"68\" x2=\"96\" y2=\"62\" stroke=\"#6E6E6E\" stroke-width=\"1.4\"/>\n      <line x1=\"46\" y1=\"68\" x2=\"62\" y2=\"108\" stroke=\"#6E6E6E\" stroke-width=\"1.4\"/>\n      <line x1=\"96\" y1=\"62\" x2=\"104\" y2=\"106\" stroke=\"#6E6E6E\" stroke-width=\"1.4\"/>\n      <line x1=\"62\" y1=\"108\" x2=\"104\" y2=\"106\" stroke=\"#6E6E6E\" stroke-width=\"1.4\"/>\n      <circle cx=\"46\" cy=\"68\" r=\"8\" class=\"svg-node\"/>\n      <circle cx=\"96\" cy=\"62\" r=\"8\" class=\"svg-node\"/>\n      <circle cx=\"62\" cy=\"108\" r=\"8\" class=\"svg-node\"/>\n      <circle cx=\"104\" cy=\"106\" r=\"8\" class=\"svg-node\"/>\n      <text x=\"73\" y=\"152\" text-anchor=\"middle\" class=\"svg-caption\">Grafo di input g</text>\n      <!-- Arrow to encoder -->\n      <line x1=\"132\" y1=\"84\" x2=\"178\" y2=\"84\" class=\"svg-edge-accent\" marker-end=\"url(#arr-tr)\"/>\n      <!-- Encoder box -->\n      <g id=\"g-enc\">\n        <rect x=\"182\" y=\"44\" width=\"142\" height=\"80\" rx=\"10\" fill=\"#E8F0FA\" stroke=\"#1F5A9E\" stroke-width=\"1.8\"/>\n        <text x=\"253\" y=\"76\" text-anchor=\"middle\" class=\"svg-math svg-blue\">T<tspan baseline-shift=\"sub\" font-size=\"72%\">enc</tspan></text>\n        <text x=\"253\" y=\"102\" text-anchor=\"middle\" class=\"svg-caption\" style=\"fill:#1F5A9E\">embedding nodi h<tspan baseline-shift=\"sub\" font-size=\"75%\">v</tspan></text>\n      </g>\n      <!-- Three branches -->\n      <line x1=\"324\" y1=\"62\" x2=\"392\" y2=\"34\" class=\"svg-edge-accent\" marker-end=\"url(#arr-tr)\"/>\n      <line x1=\"324\" y1=\"84\" x2=\"392\" y2=\"84\" class=\"svg-edge-accent\" marker-end=\"url(#arr-tr)\"/>\n      <line x1=\"324\" y1=\"106\" x2=\"392\" y2=\"134\" class=\"svg-edge-accent\" marker-end=\"url(#arr-tr)\"/>\n      <!-- Branch 1: Node level -->\n      <g id=\"g-t-node\">\n        <rect x=\"396\" y=\"12\" width=\"230\" height=\"40\" rx=\"7\" class=\"svg-node\"/>\n        <text x=\"511\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\" style=\"font-weight:700;fill:#1A1A1A\">Livello di nodo (isomorfa)</text>\n        <text x=\"511\" y=\"45\" text-anchor=\"middle\" class=\"svg-caption\">un'uscita per nodo · classificazione</text>\n      </g>\n      <!-- Branch 2: Graph level -->\n      <g id=\"g-t-graph\">\n        <rect x=\"396\" y=\"64\" width=\"230\" height=\"40\" rx=\"7\" class=\"svg-node-fill\" style=\"stroke:#1F5A9E\"/>\n        <text x=\"511\" y=\"82\" text-anchor=\"middle\" class=\"svg-caption\" style=\"font-weight:700;fill:#1F5A9E\">Livello di grafo (Readout → h<tspan baseline-shift=\"sub\" font-size=\"75%\">g</tspan>)</text>\n        <text x=\"511\" y=\"97\" text-anchor=\"middle\" class=\"svg-caption\">regressione o classificazione di grafi</text>\n      </g>\n      <!-- Branch 3: Edge level -->\n      <g id=\"g-t-edge\">\n        <rect x=\"396\" y=\"116\" width=\"230\" height=\"40\" rx=\"7\" class=\"svg-node\"/>\n        <text x=\"511\" y=\"134\" text-anchor=\"middle\" class=\"svg-caption\" style=\"font-weight:700;fill:#1A1A1A\">Livello di arco / non isomorfe</text>\n        <text x=\"511\" y=\"149\" text-anchor=\"middle\" class=\"svg-caption\">link prediction tra coppie (u, v)</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Formulazione generale</div>\n    <p>Dato un dataset \\((\\text{grafo}_i, \\text{target}_i)\\), l'encoder \\(T_{\\mathit{enc}}\\) calcola gli embedding \\(\\h_v\\) nello spazio latente; da essi un predittore locale o una funzione di <strong>readout</strong> \\(\\h_g\\) produce l'uscita richiesta.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 3.27,
+          "at": 3.72,
           "action": "show",
           "target": "#s1",
           "anchor": "definendo il problema delle trasduzioni su grafi"
         },
         {
-          "at": 24.67,
+          "at": 23.84,
           "action": "highlight",
           "target": "#g-enc",
           "anchor": "Prima un encoder T enc calcola"
         },
         {
-          "at": 46.47,
+          "at": 43.05,
           "action": "highlight",
           "target": "#g-t-node",
           "anchor": "compiti a livello di nodo"
         },
         {
-          "at": 59.83,
+          "at": 56.97,
           "action": "highlight",
           "target": "#g-t-graph",
           "anchor": "compiti a livello di grafo"
         },
         {
-          "at": 80.12,
+          "at": 76.93,
           "action": "highlight",
           "target": "#g-t-edge",
           "anchor": "compiti definiti direttamente sugli archi"
         },
         {
-          "at": 85.02,
+          "at": 81.57,
           "action": "show",
           "target": "#s2",
           "anchor": "link prediction"
         }
       ],
-      "duration_sec": 91.5,
+      "duration_sec": 86.96,
       "id": "scene-03",
       "audio_file": "audio/scene-03.wav",
       "subtitle_file": "subtitles/scene-03.json"
@@ -156,43 +156,43 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.2.2–19.2.3 · Il message passing e il legame con le CNN</div>\n  <h2 class=\"slide-title\">Scambio di messaggi sui vicini e invarianza per permutazione</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 340 218\" class=\"diagram-svg\" aria-label=\"Message passing sul nodo v dai vicini u1, u2, u3\">\n        <defs>\n          <marker id=\"arr-mp\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n        </defs>\n        <!-- Outer edges -->\n        <line x1=\"170\" y1=\"54\" x2=\"255\" y2=\"28\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/>\n        <line x1=\"170\" y1=\"54\" x2=\"54\" y2=\"78\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/>\n        <line x1=\"94\" y1=\"156\" x2=\"54\" y2=\"78\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/>\n        <!-- Outer 2-hop nodes -->\n        <circle cx=\"255\" cy=\"28\" r=\"11\" class=\"svg-node\"/>\n        <circle cx=\"54\" cy=\"78\" r=\"11\" class=\"svg-node\"/>\n        <!-- Red message arrows u_k -> v -->\n        <g id=\"g-msgs\">\n          <line x1=\"170\" y1=\"72\" x2=\"170\" y2=\"108\" class=\"svg-vec-red\" marker-end=\"url(#arr-mp)\"/>\n          <line x1=\"110\" y1=\"148\" x2=\"152\" y2=\"134\" class=\"svg-vec-red\" marker-end=\"url(#arr-mp)\"/>\n          <line x1=\"230\" y1=\"150\" x2=\"188\" y2=\"134\" class=\"svg-vec-red\" marker-end=\"url(#arr-mp)\"/>\n        </g>\n        <!-- Neighbor nodes -->\n        <circle cx=\"170\" cy=\"54\" r=\"16\" class=\"svg-node-fill\"/>\n        <text x=\"170\" y=\"59\" text-anchor=\"middle\" class=\"svg-math-sm\">u<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n        <circle cx=\"94\" cy=\"156\" r=\"16\" class=\"svg-node-fill\"/>\n        <text x=\"94\" y=\"161\" text-anchor=\"middle\" class=\"svg-math-sm\">u<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n        <circle cx=\"246\" cy=\"156\" r=\"16\" class=\"svg-node-fill\"/>\n        <text x=\"246\" y=\"161\" text-anchor=\"middle\" class=\"svg-math-sm\">u<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n        <!-- Target node v -->\n        <g id=\"g-v\">\n          <circle cx=\"170\" cy=\"128\" r=\"18\" fill=\"#F7D4D0\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n          <text x=\"170\" y=\"133\" text-anchor=\"middle\" class=\"svg-math svg-red\">v</text>\n        </g>\n        <text x=\"170\" y=\"204\" text-anchor=\"middle\" class=\"svg-caption\">Messaggi da u ∈ N(v) → aggregazione → stato h<tspan baseline-shift=\"sub\" font-size=\"75%\">v</tspan></text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-algo cue-hidden\">\n        <div class=\"box-label\">Tre passi del Message Passing</div>\n        <ol class=\"algo-list\">\n          <li id=\"m1\"><strong>Messaggio</strong>: ogni \\(u \\in \\mathcal{N}(v)\\) invia un messaggio (etichetta, vicini, archi).</li>\n          <li id=\"m2\"><strong>Aggregazione</strong>: \\(v\\) combina i messaggi con operatore <strong>invariante per permutazione</strong> (somma, media).</li>\n          <li id=\"m3\"><strong>Aggiornamento</strong>: \\(v\\) aggiorna \\(\\h_v\\) con i parametri liberi \\(W\\).</li>\n        </ol>\n      </div>\n      <div id=\"s3\" class=\"box box-primary cue-hidden\">\n        <div class=\"box-label\">CNN su griglia vs DGN su grafo</div>\n        <p>Griglia: vicini <strong>ordinati e in numero fisso</strong>. Grafo: vicini <strong>non ordinati e in numero variabile</strong> → pesi condivisi invarianti per permutazione + <strong>stratificazione</strong>.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 12.13,
+          "at": 12.85,
           "action": "show",
           "target": "#s1",
           "anchor": "Osserviamo il nodo rosso v nello schema"
         },
         {
-          "at": 20.7,
+          "at": 20.15,
           "action": "show",
           "target": "#s2",
           "anchor": "si articola in tre passi precisi"
         },
         {
-          "at": 23.75,
+          "at": 22.51,
           "action": "highlight",
           "target": "#m1, #g-msgs",
           "anchor": "Passo uno: ogni nodo vicino u"
         },
         {
-          "at": 33.74,
+          "at": 32.67,
           "action": "highlight",
           "target": "#m2",
           "anchor": "Passo due: il nodo v aggrega"
         },
         {
-          "at": 48.21,
+          "at": 45.13,
           "action": "highlight",
           "target": "#m3, #g-v",
           "anchor": "Passo tre: il nodo v aggiorna"
         },
         {
-          "at": 79.61,
+          "at": 73.99,
           "action": "show",
           "target": "#s3",
           "anchor": "legame con le reti convoluzionali"
         }
       ],
-      "duration_sec": 114.1,
+      "duration_sec": 103.39,
       "id": "scene-04",
       "audio_file": "audio/scene-04.wav",
       "subtitle_file": "subtitles/scene-04.json"
@@ -204,67 +204,67 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.2.4 · Formula generale e crescita del contesto</div>\n  <h2 class=\"slide-title\">Equazione del message passing, varianti matriciali e profondità</h2>\n  <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Formula generale di una DGN (visita parallela e non ordinata)</div>\n    \\[\\htmlId{f-dgn}{\\h_v^{(l)} = \\mathrm{AGG}_{W^{(l)}}\\!\\Big(\\x_v,\\; \\h_v^{(l-1)},\\; \\big\\{\\h_u^{(l-1)} : u \\in \\mathcal{N}(v)\\big\\}\\Big), \\qquad l = 1, \\dots, L}\\]\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"v-gcn\" class=\"box box-def\">\n      <div class=\"box-label\">GCN</div>\n      <p>\\(H^{(l)} = \\mathrm{ReLU}\\big(\\hat A\\, H^{(l-1)} W^{(l)}\\big)\\)</p>\n      <p class=\"math-note\">\\(\\hat A\\) adiacenza normalizzata per grado.</p>\n    </div>\n    <div id=\"v-gc\" class=\"box box-def\">\n      <div class=\"box-label\">GraphConv</div>\n      <p>\\(H^{(l)} = f\\big(H^{(l-1)} W_1^{(l)} + A\\, H^{(l-1)} W_2^{(l)}\\big)\\)</p>\n      <p class=\"math-note\">Pesi distinti per nodo e vicini.</p>\n    </div>\n    <div id=\"v-gat\" class=\"box box-def\">\n      <div class=\"box-label\">GAT</div>\n      <p>Aggregazione pesata tramite <strong>attenzione</strong> (Cap. 18) sui vicini \\(\\mathcal{N}(v)\\).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 138\" class=\"diagram-svg\" aria-label=\"Crescita del contesto del nodo rosso attraverso tre strati di message passing\">\n      <g id=\"g-ctx-0\"><line x1=\"92.0\" y1=\"62.0\" x2=\"124.4\" y2=\"48.5\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"92.0\" y1=\"62.0\" x2=\"62.3\" y2=\"43.1\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"92.0\" y1=\"62.0\" x2=\"97.4\" y2=\"91.7\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"124.4\" y1=\"48.5\" x2=\"156.8\" y2=\"59.3\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"62.3\" y1=\"43.1\" x2=\"32.6\" y2=\"59.3\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"97.4\" y1=\"91.7\" x2=\"129.8\" y2=\"99.8\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"156.8\" y1=\"59.3\" x2=\"181.1\" y2=\"37.7\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"156.8\" y1=\"59.3\" x2=\"129.8\" y2=\"99.8\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><circle cx=\"92.0\" cy=\"62.0\" r=\"6.5\" fill=\"#C0392B\" stroke=\"#8F251B\" stroke-width=\"1.5\"/><circle cx=\"124.4\" cy=\"48.5\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"62.3\" cy=\"43.1\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"97.4\" cy=\"91.7\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"156.8\" cy=\"59.3\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"32.6\" cy=\"59.3\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"129.8\" cy=\"99.8\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"181.1\" cy=\"37.7\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><text x=\"104.0\" y=\"128\" text-anchor=\"middle\" class=\"svg-caption\">Strato 1: raggio 0</text></g>\n      <g id=\"g-ctx-1\"><line x1=\"304.0\" y1=\"62.0\" x2=\"336.4\" y2=\"48.5\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"304.0\" y1=\"62.0\" x2=\"274.3\" y2=\"43.1\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"304.0\" y1=\"62.0\" x2=\"309.4\" y2=\"91.7\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"336.4\" y1=\"48.5\" x2=\"368.8\" y2=\"59.3\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"274.3\" y1=\"43.1\" x2=\"244.6\" y2=\"59.3\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"309.4\" y1=\"91.7\" x2=\"341.8\" y2=\"99.8\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"368.8\" y1=\"59.3\" x2=\"393.1\" y2=\"37.7\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"368.8\" y1=\"59.3\" x2=\"341.8\" y2=\"99.8\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><circle cx=\"304.0\" cy=\"62.0\" r=\"6.5\" fill=\"#C0392B\" stroke=\"#8F251B\" stroke-width=\"1.5\"/><circle cx=\"336.4\" cy=\"48.5\" r=\"6.5\" fill=\"#E89990\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"274.3\" cy=\"43.1\" r=\"6.5\" fill=\"#E89990\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"309.4\" cy=\"91.7\" r=\"6.5\" fill=\"#E89990\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"368.8\" cy=\"59.3\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"244.6\" cy=\"59.3\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"341.8\" cy=\"99.8\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><circle cx=\"393.1\" cy=\"37.7\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><text x=\"316.0\" y=\"128\" text-anchor=\"middle\" class=\"svg-caption\">Strato 2: raggio 1</text></g>\n      <g id=\"g-ctx-2\"><line x1=\"516.0\" y1=\"62.0\" x2=\"548.4\" y2=\"48.5\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"516.0\" y1=\"62.0\" x2=\"486.3\" y2=\"43.1\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"516.0\" y1=\"62.0\" x2=\"521.4\" y2=\"91.7\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"548.4\" y1=\"48.5\" x2=\"580.8\" y2=\"59.3\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"486.3\" y1=\"43.1\" x2=\"456.6\" y2=\"59.3\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"521.4\" y1=\"91.7\" x2=\"553.8\" y2=\"99.8\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"580.8\" y1=\"59.3\" x2=\"605.1\" y2=\"37.7\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><line x1=\"580.8\" y1=\"59.3\" x2=\"553.8\" y2=\"99.8\" stroke=\"#8E8C84\" stroke-width=\"1.3\"/><circle cx=\"516.0\" cy=\"62.0\" r=\"6.5\" fill=\"#C0392B\" stroke=\"#8F251B\" stroke-width=\"1.5\"/><circle cx=\"548.4\" cy=\"48.5\" r=\"6.5\" fill=\"#E89990\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"486.3\" cy=\"43.1\" r=\"6.5\" fill=\"#E89990\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"521.4\" cy=\"91.7\" r=\"6.5\" fill=\"#E89990\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"580.8\" cy=\"59.3\" r=\"6.5\" fill=\"#F7D4D0\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"456.6\" cy=\"59.3\" r=\"6.5\" fill=\"#F7D4D0\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"553.8\" cy=\"99.8\" r=\"6.5\" fill=\"#F7D4D0\" stroke=\"#C0392B\" stroke-width=\"1.5\"/><circle cx=\"605.1\" cy=\"37.7\" r=\"6.5\" fill=\"#FFFFFF\" stroke=\"#4A4945\" stroke-width=\"1.5\"/><text x=\"528.0\" y=\"128\" text-anchor=\"middle\" class=\"svg-caption\">Strato 3: raggio 2</text></g>\n    </svg>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.49,
+          "at": 4.22,
           "action": "show",
           "target": "#s1",
           "anchor": "formula generale di message passing"
         },
         {
-          "at": 6.53,
+          "at": 7.22,
           "action": "highlight",
           "target": "#f-dgn",
           "anchor": "lo stato h con v allo strato l"
         },
         {
-          "at": 61.6,
+          "at": 57.27,
           "action": "show",
           "target": "#s2",
           "anchor": "tre celebri varianti"
         },
         {
-          "at": 62.82,
+          "at": 59.17,
           "action": "highlight",
           "target": "#v-gcn",
           "anchor": "La GCN calcola"
         },
         {
-          "at": 77.71,
+          "at": 73.11,
           "action": "highlight",
           "target": "#v-gc",
           "anchor": "GraphConv separa"
         },
         {
-          "at": 93.41,
+          "at": 87.17,
           "action": "highlight",
           "target": "#v-gat",
           "anchor": "La GAT utilizza"
         },
         {
-          "at": 102.78,
+          "at": 96.7,
           "action": "show",
           "target": "#s3",
           "anchor": "le DGN sono intrinsecamente profonde"
         },
         {
-          "at": 115.44,
+          "at": 107.58,
           "action": "highlight",
           "target": "#g-ctx-0",
           "anchor": "raggio zero"
         },
         {
-          "at": 119.52,
+          "at": 111.18,
           "action": "highlight",
           "target": "#g-ctx-1",
           "anchor": "raggio uno"
         },
         {
-          "at": 123.6,
+          "at": 114.66,
           "action": "highlight",
           "target": "#g-ctx-2",
           "anchor": "raggio due"
         }
       ],
-      "duration_sec": 129.3,
+      "duration_sec": 119.13,
       "id": "scene-05",
       "audio_file": "audio/scene-05.wav",
       "subtitle_file": "subtitles/scene-05.json"
@@ -276,37 +276,37 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.2.5 · Approccio a strati: GCN e NN4G</div>\n  <h2 class=\"slide-title\">Ogni iterazione è un nuovo strato: end-to-end vs costruzione incrementale</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Famiglia a strati (GCN, NN4G)</div>\n    <p>Ogni passo di message passing è un <strong>nuovo strato con pesi propri</strong>: il campo recettivo si estende di strato in strato. <strong>GCN</strong>: addestramento end-to-end · <strong>NN4G</strong>: addestramento incrementale strato per strato.</p>\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Equazioni di NN4G (stato scalare per nodo, con \\(x_{v,0}=1\\))</div>\n    \\[\\begin{gathered}\n      \\htmlId{f-nn4g1}{h_v^{(1)} = f\\!\\Big(\\sum_{j=0}^{n} \\bar w_{1j}\\, x_{v,j}\\Big)}, \\\\\n      \\htmlId{f-nn4g2}{h_v^{(l)} = f\\!\\left(\\underbrace{\\sum_{j=0}^{n} \\bar w_{lj}\\, x_{v,j}}_{\\text{etichetta di } v} + \\underbrace{\\sum_{i=1}^{l-1} \\hat w_{li} \\sum_{u \\in \\mathcal{N}(v)} h_u^{(i)}}_{\\text{vicini, strati precedenti}}\\right)}, \\quad l = 2, \\dots, L\n    \\end{gathered}\\]\n  </div>\n  <div id=\"s3\" class=\"grid-3 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Non ricorsiva</div>\n      <p>Usa solo gli stati già calcolati degli strati <strong>precedenti</strong> \\(i < l\\).</p>\n    </div>\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Stile Cascade Correlation</div>\n      <p>Unità aggiunte una alla volta: <strong>profondità automatica</strong> e <strong>niente vanishing gradient</strong> tra gli strati.</p>\n    </div>\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Uscita combinata</div>\n      <p>Le rappresentazioni di tutti gli strati si combinano per la predizione finale sul grafo.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 8.16,
+          "at": 7.22,
           "action": "show",
           "target": "#s1",
           "anchor": "approccio a strati, rappresentato da GCN e NN4G"
         },
         {
-          "at": 48.42,
+          "at": 46.22,
           "action": "show",
           "target": "#s2",
           "anchor": "Vediamo le equazioni di NN4G"
         },
         {
-          "at": 59.44,
+          "at": 56.43,
           "action": "highlight",
           "target": "#f-nn4g1",
           "anchor": "Al primo strato: h con v all'apice uno"
         },
         {
-          "at": 75.24,
+          "at": 68.93,
           "action": "highlight",
           "target": "#f-nn4g2",
           "anchor": "Dallo strato due fino a L"
         },
         {
-          "at": 101.76,
+          "at": 88.87,
           "action": "show",
           "target": "#s3",
           "anchor": "NN4G non è ricorsiva"
         }
       ],
-      "duration_sec": 127.4,
+      "duration_sec": 111.95,
       "id": "scene-06",
       "audio_file": "audio/scene-06.wav",
       "subtitle_file": "subtitles/scene-06.json"
@@ -318,37 +318,37 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.2.6 · Approccio ricorsivo: GNN e GraphESN</div>\n  <h2 class=\"slide-title\">Sistema dinamico contrattivo, punto fisso e reservoir su grafi</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Dinamica ricorsiva e punto fisso</div>\n      <p>\\(l\\) conta le <strong>iterazioni sullo stesso strato</strong> (pesi condivisi). La dinamica deve essere <strong>contrattiva</strong> (cfr. ESP, Cap. 18) per garantire convergenza a un <strong>punto fisso</strong> (embedding).</p>\n    </div>\n    <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n      <div class=\"step-tag-inline\">GraphESN (reservoir casuale + readout lineare)</div>\n      \\[\\htmlId{f-gesn}{\\h_v^{(l)} = \\tanh\\!\\Big(W_{\\mathit{in}}\\,\\x_v + \\sum_{u \\in \\mathcal{N}(v)} \\hat W\\,\\h_u^{(l-1)}\\Big)}\\]\n      \\[\\htmlId{f-gro}{o(g) = W_{\\mathit{out}}\\,\\chi\\big(\\h(g)\\big)}\\]\n      <p class=\"math-note\">\\(W_{\\mathit{in}}, \\hat W\\) fisse; readout \\(W_{\\mathit{out}}\\) addestrato via pseudoinversa o ridge regression.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"cue-hidden\">\n    <table class=\"acad-table\">\n      <thead>\n        <tr>\n          <th>Famiglia</th>\n          <th>Ruolo di \\(l\\) e pesi</th>\n          <th>Modelli principali</th>\n          <th>Addestramento embedding</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr id=\"tr-lay\">\n          <td><strong>A strati</strong></td>\n          <td>Nuovo strato con pesi propri \\(W^{(l)}\\)</td>\n          <td>GCN · NN4G</td>\n          <td>End-to-end (GCN) · Incrementale (NN4G)</td>\n        </tr>\n        <tr id=\"tr-rec\" class=\"row-key\">\n          <td><strong>Ricorsiva</strong></td>\n          <td>Iterazioni stesso strato (pesi condivisi, contrattiva)</td>\n          <td>GNN · GraphESN</td>\n          <td>Addestrato (GNN) · Fisso casuale (GraphESN)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 15.39,
+          "at": 15.9,
           "action": "show",
           "target": "#s1",
           "anchor": "conta le iterazioni ripetute sullo stesso strato"
         },
         {
-          "at": 48.83,
+          "at": 46.9,
           "action": "show",
           "target": "#s2",
           "anchor": "Nella GraphESN, estensione ai grafi"
         },
         {
-          "at": 61.37,
+          "at": 58.64,
           "action": "highlight",
           "target": "#f-gesn",
           "anchor": "L'equazione iterativa della GraphESN"
         },
         {
-          "at": 95.94,
+          "at": 89.92,
           "action": "highlight",
           "target": "#f-gro",
           "anchor": "o di g uguale W out per chi"
         },
         {
-          "at": 101.54,
+          "at": 94.01,
           "action": "show",
           "target": "#s3",
           "anchor": "La tabella riassume il confronto"
         }
       ],
-      "duration_sec": 108.0,
+      "duration_sec": 98.44,
       "id": "scene-07",
       "audio_file": "audio/scene-07.wav",
       "subtitle_file": "subtitles/scene-07.json"
@@ -360,55 +360,55 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.3.1–19.3.2 · Efficienza e problemi della profondità</div>\n  <h2 class=\"slide-title\">Scalabilità, over-smoothing, over-squashing ed eterofilia</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Efficienza su grandi grafi</div>\n    <p><strong>GraphESN</strong>: accuratezza pari o superiore ai modelli end-to-end, accelerazione fino a <strong>10×</strong>, scala oltre <strong>100 000 nodi</strong>. <strong>NN4G+</strong>: crescita incrementale guidata dalla validazione (minuti anziché ore).</p>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"d1\" class=\"box box-warn\">\n      <div class=\"box-label\">Over-smoothing</div>\n      <p>Oltre 4–5 strati la diffusione fa <strong>collassare</strong> gli embedding dei nodi in rappresentazioni quasi identiche.</p>\n    </div>\n    <div id=\"d2\" class=\"box box-warn\">\n      <div class=\"box-label\">Over-squashing</div>\n      <p>Collo di bottiglia: campo recettivo <strong>esponenziale</strong> compresso in taglia fissa; sensibilità \\(\\partial\\h_v^{(L)}/\\partial\\x_u\\) decade esponenzialmente.</p>\n    </div>\n    <div id=\"d3\" class=\"box box-warn\">\n      <div class=\"box-label\">Effetti: under-reaching &amp; eterofilia</div>\n      <p>Difficile BP profonda → <strong>under-reaching</strong> sui nodi lontani e crollo sui grafi <strong>eterofili</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 150\" class=\"diagram-svg\" aria-label=\"Confronto tra grafo ad alta omofilia e grafo eterofilo\">\n      <g id=\"g-omo\"><line x1=\"28.0\" y1=\"72.0\" x2=\"74.0\" y2=\"35.2\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"28.0\" y1=\"72.0\" x2=\"83.2\" y2=\"99.6\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"74.0\" y1=\"35.2\" x2=\"83.2\" y2=\"99.6\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"74.0\" y1=\"35.2\" x2=\"129.2\" y2=\"62.8\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"83.2\" y1=\"99.6\" x2=\"129.2\" y2=\"62.8\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"129.2\" y1=\"62.8\" x2=\"184.4\" y2=\"53.6\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"184.4\" y1=\"53.6\" x2=\"225.8\" y2=\"26.0\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"184.4\" y1=\"53.6\" x2=\"230.4\" y2=\"90.4\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"225.8\" y1=\"26.0\" x2=\"271.8\" y2=\"58.2\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"230.4\" y1=\"90.4\" x2=\"271.8\" y2=\"58.2\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"225.8\" y1=\"26.0\" x2=\"230.4\" y2=\"90.4\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><circle cx=\"28.0\" cy=\"72.0\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><circle cx=\"74.0\" cy=\"35.2\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><circle cx=\"83.2\" cy=\"99.6\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><circle cx=\"129.2\" cy=\"62.8\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><circle cx=\"184.4\" cy=\"53.6\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><circle cx=\"225.8\" cy=\"26.0\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><circle cx=\"230.4\" cy=\"90.4\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><circle cx=\"271.8\" cy=\"58.2\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><text x=\"149.9\" y=\"138\" text-anchor=\"middle\" class=\"svg-caption\">Omofilia alta (vicini stessa classe)</text></g>\n      <g id=\"g-ete\"><line x1=\"345.0\" y1=\"72.0\" x2=\"391.0\" y2=\"35.2\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"345.0\" y1=\"72.0\" x2=\"400.2\" y2=\"99.6\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"391.0\" y1=\"35.2\" x2=\"400.2\" y2=\"99.6\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"391.0\" y1=\"35.2\" x2=\"446.2\" y2=\"62.8\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"400.2\" y1=\"99.6\" x2=\"446.2\" y2=\"62.8\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"446.2\" y1=\"62.8\" x2=\"501.4\" y2=\"53.6\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"501.4\" y1=\"53.6\" x2=\"542.8\" y2=\"26.0\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"501.4\" y1=\"53.6\" x2=\"547.4\" y2=\"90.4\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"542.8\" y1=\"26.0\" x2=\"588.8\" y2=\"58.2\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"547.4\" y1=\"90.4\" x2=\"588.8\" y2=\"58.2\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><line x1=\"542.8\" y1=\"26.0\" x2=\"547.4\" y2=\"90.4\" stroke=\"#8E8C84\" stroke-width=\"1.4\"/><circle cx=\"345.0\" cy=\"72.0\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><circle cx=\"391.0\" cy=\"35.2\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><circle cx=\"400.2\" cy=\"99.6\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><circle cx=\"446.2\" cy=\"62.8\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><circle cx=\"501.4\" cy=\"53.6\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><circle cx=\"542.8\" cy=\"26.0\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><circle cx=\"547.4\" cy=\"90.4\" r=\"8\" fill=\"#E07A70\" stroke=\"#C0392B\" stroke-width=\"1.6\"/><circle cx=\"588.8\" cy=\"58.2\" r=\"8\" fill=\"#5E90C8\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/><text x=\"466.9\" y=\"138\" text-anchor=\"middle\" class=\"svg-caption\">Omofilia bassa · Eterofilia</text></g>\n    </svg>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.08,
+          "at": 4.6,
           "action": "show",
           "target": "#s1",
           "anchor": "a partire dall'efficienza"
         },
         {
-          "at": 43.02,
+          "at": 44.75,
           "action": "show",
           "target": "#s2",
           "anchor": "problemi legati alla profondità"
         },
         {
-          "at": 46.28,
+          "at": 49.09,
           "action": "highlight",
           "target": "#d1",
           "anchor": "Primo, l'over-smoothing"
         },
         {
-          "at": 60.45,
+          "at": 63.15,
           "action": "highlight",
           "target": "#d2",
           "anchor": "Secondo, l'over-squashing"
         },
         {
-          "at": 90.11,
+          "at": 92.36,
           "action": "highlight",
           "target": "#d3",
           "anchor": "provoca due effetti: l'under-reaching"
         },
         {
-          "at": 99.5,
+          "at": 102.32,
           "action": "show",
           "target": "#s3",
           "anchor": "Osservate il confronto: nei grafi omofili"
         },
         {
-          "at": 101.13,
+          "at": 104.14,
           "action": "highlight",
           "target": "#g-omo",
           "anchor": "grafi omofili i nodi vicini"
         },
         {
-          "at": 106.44,
+          "at": 108.36,
           "action": "highlight",
           "target": "#g-ete",
           "anchor": "grafi eterofili i nodi della stessa classe"
         }
       ],
-      "duration_sec": 114.6,
+      "duration_sec": 115.03,
       "id": "scene-08",
       "audio_file": "audio/scene-08.wav",
       "subtitle_file": "subtitles/scene-08.json"
@@ -420,43 +420,43 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.3.3 · Strumenti di analisi teorica e spettrale</div>\n  <h2 class=\"slide-title\">Sensibilità Jacobiana, energia di Dirichlet e Laplaciano</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n      <div class=\"step-tag-inline\">1 · Limite superiore sullo Jacobiano (Lipschitz \\(\\norm{W}\\))</div>\n      \\[\\htmlId{f-jac}{\\left\\lVert \\frac{\\partial \\h_v^{(L)}}{\\partial \\x_u} \\right\\rVert \\le \\prod_{l=1}^{L} \\norm{W^{(l)}} \\cdot \\big(A^L\\big)_{u,v}}\\]\n      <p class=\"math-note\">Se \\(\\norm{W^{(l)}} < 1\\), la sensibilità è <strong>costretta</strong> a svanire esponenzialmente (over-squashing). Tensione diretta con la <strong>contrattività</strong> (\\(\\norm{W} < 1\\)) richiesta per il punto fisso.</p>\n    </div>\n    <div id=\"s2\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">2 · Analisi spettrale su grafo</div>\n      \\[\\htmlId{f-dir}{E(\\h) = \\sum_v \\sum_{u \\in \\mathcal{N}(v)} \\norm{\\h_v - \\h_u}^2}, \\qquad \\htmlId{f-lap}{\\mathcal{L} = D - A}\\]\n      <p class=\"math-note\"><strong>Energia di Dirichlet</strong> \\(E(\\h)\\): misura la variabilità tra vicini (segnale liscio = bassa energia). Autovettori del <strong>Laplaciano</strong> \\(\\mathcal{L}\\) → trasformata di Fourier su grafo.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Risultato su benchmark eterofilo (rete di pagine Wikipedia)</div>\n    <p>I task eterofili richiedono di <strong>preservare le alte frequenze</strong>: separando il message passing dal BP end-to-end, <strong>NN4G</strong> e <strong>GraphESN</strong> preservano l'energia di Dirichlet e mantengono l'accuratezza al crescere di \\(L\\), mentre GCN, GAT e GraphConv calano.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 19.58,
+          "at": 20.64,
           "action": "show",
           "target": "#s1",
           "anchor": "primo strumento teorico riguarda la norma spettrale"
         },
         {
-          "at": 31.82,
+          "at": 31.02,
           "action": "highlight",
           "target": "#f-jac",
           "anchor": "limite superiore fondamentale sullo Jacobiano"
         },
         {
-          "at": 91.67,
+          "at": 84.25,
           "action": "show",
           "target": "#s2",
           "anchor": "secondo strumento è l'analisi spettrale"
         },
         {
-          "at": 101.88,
+          "at": 91.65,
           "action": "highlight",
           "target": "#f-dir",
           "anchor": "energia di Dirichlet"
         },
         {
-          "at": 115.34,
+          "at": 102.83,
           "action": "highlight",
           "target": "#f-lap",
           "anchor": "Laplaciano L calligrafico uguale D meno A"
         },
         {
-          "at": 132.47,
+          "at": 117.79,
           "action": "show",
           "target": "#s3",
           "anchor": "benchmark eterofilo di pagine Wikipedia"
         }
       ],
-      "duration_sec": 144.7,
+      "duration_sec": 132.05,
       "id": "scene-09",
       "audio_file": "audio/scene-09.wav",
       "subtitle_file": "subtitles/scene-09.json"
@@ -468,37 +468,37 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.3.4 · Estensioni delle Deep Graph Networks</div>\n  <h2 class=\"slide-title\">Cinque frontiere di ricerca e applicazione</h2>\n  <div class=\"grid-3\">\n    <div id=\"e1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Grafi dinamici</div>\n      <p>Relazioni o valori che <strong>evolvono nel tempo</strong>, trattati ad esempio con <strong>reservoir multistrato</strong>.</p>\n    </div>\n    <div id=\"e2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Generazione di grafi</div>\n      <p>Apprendere la distribuzione \\(p(G)\\) per campionare nuove strutture (es. <strong>nuove molecole</strong>).</p>\n    </div>\n    <div id=\"e3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">3. Spiegabilità</div>\n      <p>Individuare le <strong>sotto-strutture</strong> del grafo che determinano una specifica predizione.</p>\n    </div>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"e4\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">4. Network quantification</div>\n      <p>Predire la <strong>prevalenza delle classi</strong> tra i nodi non etichettati della rete.</p>\n    </div>\n    <div id=\"e5\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">5. Bioinformatica</div>\n      <p>Analisi di molecole, proteine, reti biologiche e interazioni complesse direttamente sulla struttura.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 12.13,
+          "at": 11.81,
           "action": "show",
           "target": "#e1",
           "anchor": "Prima estensione: i grafi dinamici"
         },
         {
-          "at": 25.48,
+          "at": 28.63,
           "action": "show",
           "target": "#e2",
           "anchor": "Seconda estensione: la generazione di grafi"
         },
         {
-          "at": 42.92,
+          "at": 46.01,
           "action": "show",
           "target": "#e3",
           "anchor": "Terza estensione: la spiegabilità"
         },
         {
-          "at": 53.41,
+          "at": 58.53,
           "action": "show",
           "target": "#e4",
           "anchor": "Quarta estensione: la network quantification"
         },
         {
-          "at": 67.17,
+          "at": 70.87,
           "action": "show",
           "target": "#e5",
           "anchor": "Quinta direzione: l'ampio spettro di applicazioni in bioinformatica"
         }
       ],
-      "duration_sec": 76.1,
+      "duration_sec": 79.82,
       "id": "scene-10",
       "audio_file": "audio/scene-10.wav",
       "subtitle_file": "subtitles/scene-10.json"
@@ -510,49 +510,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.4 · Kernel per strutture e conclusione</div>\n  <h2 class=\"slide-title\">Similarità implicite su grafi, limiti e sintesi finale</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Kernel su oggetti strutturati (sequenze, alberi, grafi)</div>\n    \\[\\htmlId{f-kstr}{k(s, s') = \\langle \\phi(s),\\, \\phi(s') \\rangle}\\]\n    <p class=\"math-note\"><strong>Kernel marginalizzati</strong>: cammini comuni via <em>random walk</em> (costo tipicamente quadratico). <strong>Kernel di convoluzione</strong>: scomposizione in <strong>sotto-strutture</strong> e combinazione dei kernel sulle parti.</p>\n  </div>\n  <div id=\"s2\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione · Tre limiti dei kernel per strutture</div>\n    <ul class=\"clean-list\">\n      <li id=\"kl1\"><strong>Efficienza</strong>: la scomposizione in sotto-strutture rende il costo computazionale critico.</li>\n      <li id=\"kl2\"><strong>Adattività</strong>: similarità fissata prima dell'apprendimento (codifica non appresa, ma sfrutta conoscenza a priori).</li>\n      <li id=\"kl3\"><strong>Universalità &amp; completezza</strong>: scelta del kernel critica; un kernel <strong>completo</strong> su grafi è difficile almeno quanto l'<strong>isomorfismo di grafi</strong>.</li>\n    </ul>\n  </div>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Conclusione del capitolo</div>\n    <p>Se i dati hanno relazioni non conviene appiattirli. Il deep learning su grafi può essere <strong>efficiente</strong> senza addestramento tutto end-to-end; la profondità è necessaria per il contesto, ma genera sfide aperte (over-smoothing, over-squashing, addestramento).</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 12.94,
+          "at": 12.88,
           "action": "show",
           "target": "#s1",
           "anchor": "basta definire un prodotto scalare"
         },
         {
-          "at": 14.99,
+          "at": 14.66,
           "action": "highlight",
           "target": "#f-kstr",
           "anchor": "k di s, s primo uguale"
         },
         {
-          "at": 64.63,
+          "at": 61.16,
           "action": "show",
           "target": "#s2",
           "anchor": "tre limiti principali dei kernel per strutture"
         },
         {
-          "at": 67.49,
+          "at": 64.15,
           "action": "highlight",
           "target": "#kl1",
           "anchor": "Primo, l'efficienza"
         },
         {
-          "at": 73.4,
+          "at": 70.37,
           "action": "highlight",
           "target": "#kl2",
           "anchor": "Secondo, l'adattività"
         },
         {
-          "at": 87.47,
+          "at": 82.77,
           "action": "highlight",
           "target": "#kl3",
           "anchor": "Terzo, universalità e completezza"
         },
         {
-          "at": 103.06,
+          "at": 97.97,
           "action": "show",
           "target": "#s3",
           "anchor": "Chiudiamo con l'idea conclusiva"
         }
       ],
-      "duration_sec": 129.2,
+      "duration_sec": 121.02,
       "id": "scene-11",
       "audio_file": "audio/scene-11.wav",
       "subtitle_file": "subtitles/scene-11.json"
@@ -564,49 +564,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">19.5 · Chiusura del capitolo</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"pk1\"><strong>Trasduzioni su grafi</strong>: livello di nodo, di grafo (readout) e di arco.</li>\n        <li id=\"pk2\"><strong>Message passing</strong>: messaggio, aggregazione invariante per permutazione, aggiornamento: \\(\\h_v^{(l)} = \\mathrm{AGG}_{W^{(l)}}(\\x_v, \\h_v^{(l-1)}, \\{\\h_u^{(l-1)}\\}_{u \\in \\mathcal{N}(v)})\\).</li>\n        <li id=\"pk3\"><strong>Due famiglie</strong>: a strati (GCN, NN4G) vs ricorsive (GNN, GraphESN, iterazioni contrattive fino al punto fisso).</li>\n        <li id=\"pk4\"><strong>Sfide della profondità</strong>: over-smoothing, over-squashing, under-reaching ed eterofilia.</li>\n        <li id=\"pk5\"><strong>Kernel per strutture</strong>: marginalizzati e di convoluzione; similarità fissata a priori.</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Perché trattare i dati strutturati direttamente invece di trasformarli in vettori?</li>\n        <li>Quali trasduzioni si possono definire sui grafi?</li>\n        <li>Descrivere il message passing e la formula generale delle DGN.</li>\n        <li>Differenza tra approcci a strati (GCN, NN4G) e ricorsivi (GNN, GraphESN).</li>\n        <li>Cosa sono over-smoothing e over-squashing? Cos'è l'eterofilia?</li>\n        <li>Pro e contro dei kernel per strutture.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 0.82,
+          "at": 1.11,
           "action": "show",
           "target": "#s1",
           "anchor": "cinque punti chiave"
         },
         {
-          "at": 7.95,
+          "at": 7.21,
           "action": "highlight",
           "target": "#pk1",
           "anchor": "Primo: le trasduzioni su grafi"
         },
         {
-          "at": 17.53,
+          "at": 14.99,
           "action": "highlight",
           "target": "#pk2",
           "anchor": "Secondo: il message passing"
         },
         {
-          "at": 35.68,
+          "at": 32.08,
           "action": "highlight",
           "target": "#pk3",
           "anchor": "Terzo: abbiamo due famiglie principali"
         },
         {
-          "at": 50.97,
+          "at": 49.22,
           "action": "highlight",
           "target": "#pk4",
           "anchor": "Quarto: la profondità allarga il contesto"
         },
         {
-          "at": 62.59,
+          "at": 62.18,
           "action": "highlight",
           "target": "#pk5",
           "anchor": "Quinto: i kernel per strutture"
         },
         {
-          "at": 75.64,
+          "at": 75.98,
           "action": "show",
           "target": "#s2",
           "anchor": "rispondi a queste sei domande"
         }
       ],
-      "duration_sec": 107.4,
+      "duration_sec": 106.67,
       "id": "scene-12",
       "audio_file": "audio/scene-12.wav",
       "subtitle_file": "subtitles/scene-12.json"

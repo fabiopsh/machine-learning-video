@@ -1,0 +1,1609 @@
+{
+  "duration": 107.13,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.141,
+      "text": "Passiamo alla versione batch del K-means, articolata in quattro passi.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "alla",
+          "start": 0.5,
+          "end": 0.66
+        },
+        {
+          "text": "versione",
+          "start": 0.68,
+          "end": 1.06
+        },
+        {
+          "text": "batch",
+          "start": 1.16,
+          "end": 1.46
+        },
+        {
+          "text": "del",
+          "start": 1.56,
+          "end": 1.68
+        },
+        {
+          "text": "K-means,",
+          "start": 1.76,
+          "end": 2.46
+        },
+        {
+          "text": "articolata",
+          "start": 2.721,
+          "end": 3.321
+        },
+        {
+          "text": "in",
+          "start": 3.361,
+          "end": 3.421
+        },
+        {
+          "text": "quattro",
+          "start": 3.461,
+          "end": 3.701
+        },
+        {
+          "text": "passi.",
+          "start": 3.761,
+          "end": 4.141
+        }
+      ]
+    },
+    {
+      "start": 5.101,
+      "end": 11.362,
+      "text": "Uno: si scelgono K centri, estraendo K esempi a caso oppure K punti casuali nella",
+      "words": [
+        {
+          "text": "Uno:",
+          "start": 5.101,
+          "end": 5.301
+        },
+        {
+          "text": "si",
+          "start": 5.801,
+          "end": 5.881
+        },
+        {
+          "text": "scelgono",
+          "start": 5.921,
+          "end": 6.321
+        },
+        {
+          "text": "K",
+          "start": 6.421,
+          "end": 6.461
+        },
+        {
+          "text": "centri,",
+          "start": 6.761,
+          "end": 7.181
+        },
+        {
+          "text": "estraendo",
+          "start": 7.541,
+          "end": 8.082
+        },
+        {
+          "text": "K",
+          "start": 8.182,
+          "end": 8.222
+        },
+        {
+          "text": "esempi",
+          "start": 8.562,
+          "end": 8.882
+        },
+        {
+          "text": "a",
+          "start": 8.942,
+          "end": 8.982
+        },
+        {
+          "text": "caso",
+          "start": 9.042,
+          "end": 9.402
+        },
+        {
+          "text": "oppure",
+          "start": 9.542,
+          "end": 9.822
+        },
+        {
+          "text": "K",
+          "start": 9.882,
+          "end": 9.922
+        },
+        {
+          "text": "punti",
+          "start": 10.162,
+          "end": 10.422
+        },
+        {
+          "text": "casuali",
+          "start": 10.482,
+          "end": 11.022
+        },
+        {
+          "text": "nella",
+          "start": 11.162,
+          "end": 11.362
+        }
+      ]
+    },
+    {
+      "start": 11.402,
+      "end": 12.202,
+      "text": "regione dei dati.",
+      "words": [
+        {
+          "text": "regione",
+          "start": 11.402,
+          "end": 11.702
+        },
+        {
+          "text": "dei",
+          "start": 11.742,
+          "end": 11.862
+        },
+        {
+          "text": "dati.",
+          "start": 11.902,
+          "end": 12.202
+        }
+      ]
+    },
+    {
+      "start": 13.242,
+      "end": 16.463,
+      "text": "Due: si assegna ogni esempio al centro più vicino,",
+      "words": [
+        {
+          "text": "Due:",
+          "start": 13.242,
+          "end": 13.423
+        },
+        {
+          "text": "si",
+          "start": 14.183,
+          "end": 14.243
+        },
+        {
+          "text": "assegna",
+          "start": 14.283,
+          "end": 14.603
+        },
+        {
+          "text": "ogni",
+          "start": 14.663,
+          "end": 14.823
+        },
+        {
+          "text": "esempio",
+          "start": 14.883,
+          "end": 15.323
+        },
+        {
+          "text": "al",
+          "start": 15.443,
+          "end": 15.543
+        },
+        {
+          "text": "centro",
+          "start": 15.583,
+          "end": 15.863
+        },
+        {
+          "text": "più",
+          "start": 15.923,
+          "end": 16.003
+        },
+        {
+          "text": "vicino,",
+          "start": 16.063,
+          "end": 16.463
+        }
+      ]
+    },
+    {
+      "start": 16.743,
+      "end": 21.044,
+      "text": "cioè il vincitore i asterisco di x uguale all'arg min su i",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 16.743,
+          "end": 16.903
+        },
+        {
+          "text": "il",
+          "start": 16.943,
+          "end": 17.003
+        },
+        {
+          "text": "vincitore",
+          "start": 17.043,
+          "end": 17.623
+        },
+        {
+          "text": "i",
+          "start": 18.043,
+          "end": 18.083
+        },
+        {
+          "text": "asterisco",
+          "start": 18.283,
+          "end": 18.804
+        },
+        {
+          "text": "di",
+          "start": 18.864,
+          "end": 18.924
+        },
+        {
+          "text": "x",
+          "start": 19.124,
+          "end": 19.164
+        },
+        {
+          "text": "uguale",
+          "start": 19.404,
+          "end": 19.744
+        },
+        {
+          "text": "all'arg",
+          "start": 19.764,
+          "end": 20.064
+        },
+        {
+          "text": "min",
+          "start": 20.184,
+          "end": 20.464
+        },
+        {
+          "text": "su",
+          "start": 20.804,
+          "end": 20.884
+        },
+        {
+          "text": "i",
+          "start": 21.004,
+          "end": 21.044
+        }
+      ]
+    },
+    {
+      "start": 21.624,
+      "end": 24.205,
+      "text": "della norma quadra di x meno w con i,",
+      "words": [
+        {
+          "text": "della",
+          "start": 21.624,
+          "end": 21.844
+        },
+        {
+          "text": "norma",
+          "start": 21.904,
+          "end": 22.184
+        },
+        {
+          "text": "quadra",
+          "start": 22.264,
+          "end": 22.604
+        },
+        {
+          "text": "di",
+          "start": 22.664,
+          "end": 22.724
+        },
+        {
+          "text": "x",
+          "start": 22.904,
+          "end": 22.944
+        },
+        {
+          "text": "meno",
+          "start": 23.124,
+          "end": 23.304
+        },
+        {
+          "text": "w",
+          "start": 23.824,
+          "end": 23.864
+        },
+        {
+          "text": "con",
+          "start": 23.964,
+          "end": 24.125
+        },
+        {
+          "text": "i,",
+          "start": 24.165,
+          "end": 24.205
+        }
+      ]
+    },
+    {
+      "start": 24.765,
+      "end": 28.385,
+      "text": "somma per j da uno a n di x con j meno w con i",
+      "words": [
+        {
+          "text": "somma",
+          "start": 24.765,
+          "end": 25.005
+        },
+        {
+          "text": "per",
+          "start": 25.085,
+          "end": 25.185
+        },
+        {
+          "text": "j",
+          "start": 25.245,
+          "end": 25.285
+        },
+        {
+          "text": "da",
+          "start": 25.465,
+          "end": 25.505
+        },
+        {
+          "text": "uno",
+          "start": 25.585,
+          "end": 25.705
+        },
+        {
+          "text": "a",
+          "start": 25.765,
+          "end": 25.805
+        },
+        {
+          "text": "n",
+          "start": 26.025,
+          "end": 26.065
+        },
+        {
+          "text": "di",
+          "start": 26.305,
+          "end": 26.405
+        },
+        {
+          "text": "x",
+          "start": 26.685,
+          "end": 26.725
+        },
+        {
+          "text": "con",
+          "start": 26.845,
+          "end": 27.005
+        },
+        {
+          "text": "j",
+          "start": 27.085,
+          "end": 27.125
+        },
+        {
+          "text": "meno",
+          "start": 27.485,
+          "end": 27.665
+        },
+        {
+          "text": "w",
+          "start": 28.025,
+          "end": 28.065
+        },
+        {
+          "text": "con",
+          "start": 28.165,
+          "end": 28.305
+        },
+        {
+          "text": "i",
+          "start": 28.345,
+          "end": 28.385
+        }
+      ]
+    },
+    {
+      "start": 28.465,
+      "end": 29.446,
+      "text": "j al quadrato.",
+      "words": [
+        {
+          "text": "j",
+          "start": 28.465,
+          "end": 28.505
+        },
+        {
+          "text": "al",
+          "start": 28.845,
+          "end": 28.945
+        },
+        {
+          "text": "quadrato.",
+          "start": 29.005,
+          "end": 29.446
+        }
+      ]
+    },
+    {
+      "start": 30.606,
+      "end": 34.186,
+      "text": "Tre: si ricalcola ogni centro come media, o centroide,",
+      "words": [
+        {
+          "text": "Tre:",
+          "start": 30.606,
+          "end": 30.746
+        },
+        {
+          "text": "si",
+          "start": 31.426,
+          "end": 31.506
+        },
+        {
+          "text": "ricalcola",
+          "start": 31.546,
+          "end": 31.966
+        },
+        {
+          "text": "ogni",
+          "start": 32.026,
+          "end": 32.186
+        },
+        {
+          "text": "centro",
+          "start": 32.246,
+          "end": 32.526
+        },
+        {
+          "text": "come",
+          "start": 32.566,
+          "end": 32.746
+        },
+        {
+          "text": "media,",
+          "start": 32.826,
+          "end": 33.166
+        },
+        {
+          "text": "o",
+          "start": 33.306,
+          "end": 33.346
+        },
+        {
+          "text": "centroide,",
+          "start": 33.506,
+          "end": 34.186
+        }
+      ]
+    },
+    {
+      "start": 34.486,
+      "end": 35.827,
+      "text": "dei membri del suo cluster:",
+      "words": [
+        {
+          "text": "dei",
+          "start": 34.486,
+          "end": 34.626
+        },
+        {
+          "text": "membri",
+          "start": 34.666,
+          "end": 35.007
+        },
+        {
+          "text": "del",
+          "start": 35.047,
+          "end": 35.167
+        },
+        {
+          "text": "suo",
+          "start": 35.207,
+          "end": 35.327
+        },
+        {
+          "text": "cluster:",
+          "start": 35.367,
+          "end": 35.827
+        }
+      ]
+    },
+    {
+      "start": 37.087,
+      "end": 41.388,
+      "text": "w con i uguale a uno sul numero di elementi del cluster i per la",
+      "words": [
+        {
+          "text": "w",
+          "start": 37.087,
+          "end": 37.127
+        },
+        {
+          "text": "con",
+          "start": 37.207,
+          "end": 37.347
+        },
+        {
+          "text": "i",
+          "start": 37.387,
+          "end": 37.427
+        },
+        {
+          "text": "uguale",
+          "start": 37.607,
+          "end": 37.987
+        },
+        {
+          "text": "a",
+          "start": 38.147,
+          "end": 38.187
+        },
+        {
+          "text": "uno",
+          "start": 38.507,
+          "end": 38.767
+        },
+        {
+          "text": "sul",
+          "start": 38.927,
+          "end": 39.067
+        },
+        {
+          "text": "numero",
+          "start": 39.107,
+          "end": 39.367
+        },
+        {
+          "text": "di",
+          "start": 39.387,
+          "end": 39.447
+        },
+        {
+          "text": "elementi",
+          "start": 39.487,
+          "end": 39.847
+        },
+        {
+          "text": "del",
+          "start": 39.887,
+          "end": 39.987
+        },
+        {
+          "text": "cluster",
+          "start": 40.047,
+          "end": 40.468
+        },
+        {
+          "text": "i",
+          "start": 40.648,
+          "end": 40.688
+        },
+        {
+          "text": "per",
+          "start": 41.128,
+          "end": 41.268
+        },
+        {
+          "text": "la",
+          "start": 41.328,
+          "end": 41.388
+        }
+      ]
+    },
+    {
+      "start": 41.448,
+      "end": 43.628,
+      "text": "somma degli x con j in quel cluster.",
+      "words": [
+        {
+          "text": "somma",
+          "start": 41.448,
+          "end": 41.708
+        },
+        {
+          "text": "degli",
+          "start": 41.748,
+          "end": 41.968
+        },
+        {
+          "text": "x",
+          "start": 42.068,
+          "end": 42.108
+        },
+        {
+          "text": "con",
+          "start": 42.228,
+          "end": 42.388
+        },
+        {
+          "text": "j",
+          "start": 42.468,
+          "end": 42.508
+        },
+        {
+          "text": "in",
+          "start": 42.888,
+          "end": 42.968
+        },
+        {
+          "text": "quel",
+          "start": 43.008,
+          "end": 43.148
+        },
+        {
+          "text": "cluster.",
+          "start": 43.188,
+          "end": 43.628
+        }
+      ]
+    },
+    {
+      "start": 44.708,
+      "end": 50.169,
+      "text": "Quattro: finché il criterio di convergenza non è soddisfatto — nessuna o minima riassegnazione,",
+      "words": [
+        {
+          "text": "Quattro:",
+          "start": 44.708,
+          "end": 45.088
+        },
+        {
+          "text": "finché",
+          "start": 45.549,
+          "end": 45.789
+        },
+        {
+          "text": "il",
+          "start": 45.809,
+          "end": 45.869
+        },
+        {
+          "text": "criterio",
+          "start": 45.909,
+          "end": 46.269
+        },
+        {
+          "text": "di",
+          "start": 46.309,
+          "end": 46.369
+        },
+        {
+          "text": "convergenza",
+          "start": 46.409,
+          "end": 46.969
+        },
+        {
+          "text": "non",
+          "start": 47.009,
+          "end": 47.109
+        },
+        {
+          "text": "è",
+          "start": 47.149,
+          "end": 47.189
+        },
+        {
+          "text": "soddisfatto",
+          "start": 47.229,
+          "end": 47.909
+        },
+        {
+          "text": "—",
+          "start": 47.909,
+          "end": 48.059
+        },
+        {
+          "text": "nessuna",
+          "start": 48.189,
+          "end": 48.689
+        },
+        {
+          "text": "o",
+          "start": 48.749,
+          "end": 48.789
+        },
+        {
+          "text": "minima",
+          "start": 48.869,
+          "end": 49.189
+        },
+        {
+          "text": "riassegnazione,",
+          "start": 49.249,
+          "end": 50.169
+        }
+      ]
+    },
+    {
+      "start": 50.349,
+      "end": 54.25,
+      "text": "oppure minima diminuzione dell'errore quadratico — si torna al passo due.",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 50.349,
+          "end": 50.689
+        },
+        {
+          "text": "minima",
+          "start": 50.87,
+          "end": 51.19
+        },
+        {
+          "text": "diminuzione",
+          "start": 51.25,
+          "end": 51.79
+        },
+        {
+          "text": "dell'errore",
+          "start": 51.83,
+          "end": 52.23
+        },
+        {
+          "text": "quadratico",
+          "start": 52.27,
+          "end": 52.81
+        },
+        {
+          "text": "—",
+          "start": 52.81,
+          "end": 52.96
+        },
+        {
+          "text": "si",
+          "start": 53.19,
+          "end": 53.27
+        },
+        {
+          "text": "torna",
+          "start": 53.31,
+          "end": 53.59
+        },
+        {
+          "text": "al",
+          "start": 53.69,
+          "end": 53.79
+        },
+        {
+          "text": "passo",
+          "start": 53.81,
+          "end": 54.05
+        },
+        {
+          "text": "due.",
+          "start": 54.09,
+          "end": 54.25
+        }
+      ]
+    },
+    {
+      "start": 55.25,
+      "end": 58.071,
+      "text": "Dimostriamo come si passa dalla versione on-line alla batch.",
+      "words": [
+        {
+          "text": "Dimostriamo",
+          "start": 55.25,
+          "end": 55.73
+        },
+        {
+          "text": "come",
+          "start": 55.79,
+          "end": 55.95
+        },
+        {
+          "text": "si",
+          "start": 55.99,
+          "end": 56.07
+        },
+        {
+          "text": "passa",
+          "start": 56.11,
+          "end": 56.391
+        },
+        {
+          "text": "dalla",
+          "start": 56.431,
+          "end": 56.591
+        },
+        {
+          "text": "versione",
+          "start": 56.591,
+          "end": 56.911
+        },
+        {
+          "text": "on-line",
+          "start": 56.951,
+          "end": 57.411
+        },
+        {
+          "text": "alla",
+          "start": 57.551,
+          "end": 57.731
+        },
+        {
+          "text": "batch.",
+          "start": 57.771,
+          "end": 58.071
+        }
+      ]
+    },
+    {
+      "start": 58.931,
+      "end": 64.732,
+      "text": "Fissata l'assegnazione ai cluster, un cluster C con centro w contribuisce all'errore con E con",
+      "words": [
+        {
+          "text": "Fissata",
+          "start": 58.931,
+          "end": 59.331
+        },
+        {
+          "text": "l'assegnazione",
+          "start": 59.371,
+          "end": 59.991
+        },
+        {
+          "text": "ai",
+          "start": 60.011,
+          "end": 60.091
+        },
+        {
+          "text": "cluster,",
+          "start": 60.131,
+          "end": 60.611
+        },
+        {
+          "text": "un",
+          "start": 60.991,
+          "end": 61.071
+        },
+        {
+          "text": "cluster",
+          "start": 61.111,
+          "end": 61.511
+        },
+        {
+          "text": "C",
+          "start": 61.592,
+          "end": 61.632
+        },
+        {
+          "text": "con",
+          "start": 61.812,
+          "end": 61.952
+        },
+        {
+          "text": "centro",
+          "start": 62.012,
+          "end": 62.332
+        },
+        {
+          "text": "w",
+          "start": 62.692,
+          "end": 62.732
+        },
+        {
+          "text": "contribuisce",
+          "start": 62.872,
+          "end": 63.472
+        },
+        {
+          "text": "all'errore",
+          "start": 63.512,
+          "end": 63.992
+        },
+        {
+          "text": "con",
+          "start": 64.052,
+          "end": 64.192
+        },
+        {
+          "text": "E",
+          "start": 64.412,
+          "end": 64.45200000000001
+        },
+        {
+          "text": "con",
+          "start": 64.552,
+          "end": 64.732
+        }
+      ]
+    },
+    {
+      "start": 64.832,
+      "end": 69.453,
+      "text": "C uguale alla somma sugli x in C della norma quadra di x meno w.",
+      "words": [
+        {
+          "text": "C",
+          "start": 64.832,
+          "end": 64.872
+        },
+        {
+          "text": "uguale",
+          "start": 65.172,
+          "end": 65.492
+        },
+        {
+          "text": "alla",
+          "start": 65.532,
+          "end": 65.672
+        },
+        {
+          "text": "somma",
+          "start": 65.772,
+          "end": 66.132
+        },
+        {
+          "text": "sugli",
+          "start": 66.452,
+          "end": 66.712
+        },
+        {
+          "text": "x",
+          "start": 66.852,
+          "end": 66.89200000000001
+        },
+        {
+          "text": "in",
+          "start": 67.033,
+          "end": 67.113
+        },
+        {
+          "text": "C",
+          "start": 67.173,
+          "end": 67.21300000000001
+        },
+        {
+          "text": "della",
+          "start": 67.513,
+          "end": 67.713
+        },
+        {
+          "text": "norma",
+          "start": 67.813,
+          "end": 68.113
+        },
+        {
+          "text": "quadra",
+          "start": 68.173,
+          "end": 68.533
+        },
+        {
+          "text": "di",
+          "start": 68.593,
+          "end": 68.653
+        },
+        {
+          "text": "x",
+          "start": 68.773,
+          "end": 68.813
+        },
+        {
+          "text": "meno",
+          "start": 68.933,
+          "end": 69.073
+        },
+        {
+          "text": "w.",
+          "start": 69.413,
+          "end": 69.453
+        }
+      ]
+    },
+    {
+      "start": 70.233,
+      "end": 73.694,
+      "text": "La derivata rispetto a w è la somma dei gradienti on-line:",
+      "words": [
+        {
+          "text": "La",
+          "start": 70.233,
+          "end": 70.293
+        },
+        {
+          "text": "derivata",
+          "start": 70.353,
+          "end": 70.873
+        },
+        {
+          "text": "rispetto",
+          "start": 71.033,
+          "end": 71.413
+        },
+        {
+          "text": "a",
+          "start": 71.433,
+          "end": 71.47300000000001
+        },
+        {
+          "text": "w",
+          "start": 71.833,
+          "end": 71.873
+        },
+        {
+          "text": "è",
+          "start": 72.093,
+          "end": 72.13300000000001
+        },
+        {
+          "text": "la",
+          "start": 72.173,
+          "end": 72.233
+        },
+        {
+          "text": "somma",
+          "start": 72.273,
+          "end": 72.474
+        },
+        {
+          "text": "dei",
+          "start": 72.534,
+          "end": 72.634
+        },
+        {
+          "text": "gradienti",
+          "start": 72.654,
+          "end": 73.114
+        },
+        {
+          "text": "on-line:",
+          "start": 73.194,
+          "end": 73.694
+        }
+      ]
+    },
+    {
+      "start": 74.134,
+      "end": 76.634,
+      "text": "meno due per la somma di x meno w,",
+      "words": [
+        {
+          "text": "meno",
+          "start": 74.134,
+          "end": 74.314
+        },
+        {
+          "text": "due",
+          "start": 74.394,
+          "end": 74.614
+        },
+        {
+          "text": "per",
+          "start": 74.774,
+          "end": 74.914
+        },
+        {
+          "text": "la",
+          "start": 74.974,
+          "end": 75.054
+        },
+        {
+          "text": "somma",
+          "start": 75.174,
+          "end": 75.554
+        },
+        {
+          "text": "di",
+          "start": 75.694,
+          "end": 75.754
+        },
+        {
+          "text": "x",
+          "start": 75.914,
+          "end": 75.95400000000001
+        },
+        {
+          "text": "meno",
+          "start": 76.114,
+          "end": 76.354
+        },
+        {
+          "text": "w,",
+          "start": 76.594,
+          "end": 76.634
+        }
+      ]
+    },
+    {
+      "start": 77.254,
+      "end": 82.395,
+      "text": "cioè meno due che moltiplica la somma degli x in C meno la cardinalità di",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 77.254,
+          "end": 77.434
+        },
+        {
+          "text": "meno",
+          "start": 77.695,
+          "end": 77.915
+        },
+        {
+          "text": "due",
+          "start": 77.995,
+          "end": 78.215
+        },
+        {
+          "text": "che",
+          "start": 78.295,
+          "end": 78.395
+        },
+        {
+          "text": "moltiplica",
+          "start": 78.475,
+          "end": 79.075
+        },
+        {
+          "text": "la",
+          "start": 79.415,
+          "end": 79.475
+        },
+        {
+          "text": "somma",
+          "start": 79.595,
+          "end": 79.935
+        },
+        {
+          "text": "degli",
+          "start": 79.995,
+          "end": 80.215
+        },
+        {
+          "text": "x",
+          "start": 80.375,
+          "end": 80.415
+        },
+        {
+          "text": "in",
+          "start": 80.555,
+          "end": 80.635
+        },
+        {
+          "text": "C",
+          "start": 80.715,
+          "end": 80.75500000000001
+        },
+        {
+          "text": "meno",
+          "start": 81.295,
+          "end": 81.535
+        },
+        {
+          "text": "la",
+          "start": 81.595,
+          "end": 81.655
+        },
+        {
+          "text": "cardinalità",
+          "start": 81.695,
+          "end": 82.255
+        },
+        {
+          "text": "di",
+          "start": 82.315,
+          "end": 82.395
+        }
+      ]
+    },
+    {
+      "start": 82.475,
+      "end": 83.21600000000001,
+      "text": "C per w.",
+      "words": [
+        {
+          "text": "C",
+          "start": 82.475,
+          "end": 82.515
+        },
+        {
+          "text": "per",
+          "start": 82.655,
+          "end": 82.795
+        },
+        {
+          "text": "w.",
+          "start": 83.176,
+          "end": 83.21600000000001
+        }
+      ]
+    },
+    {
+      "start": 84.016,
+      "end": 86.136,
+      "text": "Ponendo la derivata uguale a zero si ottiene",
+      "words": [
+        {
+          "text": "Ponendo",
+          "start": 84.016,
+          "end": 84.396
+        },
+        {
+          "text": "la",
+          "start": 84.436,
+          "end": 84.496
+        },
+        {
+          "text": "derivata",
+          "start": 84.536,
+          "end": 84.956
+        },
+        {
+          "text": "uguale",
+          "start": 84.996,
+          "end": 85.216
+        },
+        {
+          "text": "a",
+          "start": 85.216,
+          "end": 85.256
+        },
+        {
+          "text": "zero",
+          "start": 85.336,
+          "end": 85.576
+        },
+        {
+          "text": "si",
+          "start": 85.636,
+          "end": 85.716
+        },
+        {
+          "text": "ottiene",
+          "start": 85.756,
+          "end": 86.136
+        }
+      ]
+    },
+    {
+      "start": 86.756,
+      "end": 90.29700000000001,
+      "text": "w uguale a uno su modulo di C per la somma degli x in C:",
+      "words": [
+        {
+          "text": "w",
+          "start": 86.756,
+          "end": 86.796
+        },
+        {
+          "text": "uguale",
+          "start": 87.076,
+          "end": 87.416
+        },
+        {
+          "text": "a",
+          "start": 87.456,
+          "end": 87.49600000000001
+        },
+        {
+          "text": "uno",
+          "start": 87.556,
+          "end": 87.736
+        },
+        {
+          "text": "su",
+          "start": 87.816,
+          "end": 87.896
+        },
+        {
+          "text": "modulo",
+          "start": 87.996,
+          "end": 88.316
+        },
+        {
+          "text": "di",
+          "start": 88.356,
+          "end": 88.437
+        },
+        {
+          "text": "C",
+          "start": 88.517,
+          "end": 88.557
+        },
+        {
+          "text": "per",
+          "start": 88.837,
+          "end": 88.957
+        },
+        {
+          "text": "la",
+          "start": 88.997,
+          "end": 89.057
+        },
+        {
+          "text": "somma",
+          "start": 89.117,
+          "end": 89.357
+        },
+        {
+          "text": "degli",
+          "start": 89.417,
+          "end": 89.637
+        },
+        {
+          "text": "x",
+          "start": 89.777,
+          "end": 89.81700000000001
+        },
+        {
+          "text": "in",
+          "start": 90.077,
+          "end": 90.177
+        },
+        {
+          "text": "C:",
+          "start": 90.257,
+          "end": 90.29700000000001
+        }
+      ]
+    },
+    {
+      "start": 90.797,
+      "end": 94.758,
+      "text": "proprio la media del cluster, centro ottimo per l'assegnazione fissata.",
+      "words": [
+        {
+          "text": "proprio",
+          "start": 90.797,
+          "end": 91.197
+        },
+        {
+          "text": "la",
+          "start": 91.337,
+          "end": 91.417
+        },
+        {
+          "text": "media",
+          "start": 91.457,
+          "end": 91.697
+        },
+        {
+          "text": "del",
+          "start": 91.737,
+          "end": 91.857
+        },
+        {
+          "text": "cluster,",
+          "start": 91.917,
+          "end": 92.377
+        },
+        {
+          "text": "centro",
+          "start": 92.697,
+          "end": 92.997
+        },
+        {
+          "text": "ottimo",
+          "start": 93.097,
+          "end": 93.437
+        },
+        {
+          "text": "per",
+          "start": 93.477,
+          "end": 93.577
+        },
+        {
+          "text": "l'assegnazione",
+          "start": 93.617,
+          "end": 94.218
+        },
+        {
+          "text": "fissata.",
+          "start": 94.258,
+          "end": 94.758
+        }
+      ]
+    },
+    {
+      "start": 95.638,
+      "end": 100.059,
+      "text": "Lo stesso punto si raggiunge con un solo passo di discesa batch da w old",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 95.638,
+          "end": 95.698
+        },
+        {
+          "text": "stesso",
+          "start": 95.718,
+          "end": 95.978
+        },
+        {
+          "text": "punto",
+          "start": 96.018,
+          "end": 96.258
+        },
+        {
+          "text": "si",
+          "start": 96.298,
+          "end": 96.378
+        },
+        {
+          "text": "raggiunge",
+          "start": 96.418,
+          "end": 96.798
+        },
+        {
+          "text": "con",
+          "start": 96.838,
+          "end": 96.978
+        },
+        {
+          "text": "un",
+          "start": 97.018,
+          "end": 97.098
+        },
+        {
+          "text": "solo",
+          "start": 97.198,
+          "end": 97.458
+        },
+        {
+          "text": "passo",
+          "start": 97.518,
+          "end": 97.818
+        },
+        {
+          "text": "di",
+          "start": 97.878,
+          "end": 97.938
+        },
+        {
+          "text": "discesa",
+          "start": 97.978,
+          "end": 98.358
+        },
+        {
+          "text": "batch",
+          "start": 98.418,
+          "end": 98.738
+        },
+        {
+          "text": "da",
+          "start": 99.138,
+          "end": 99.439
+        },
+        {
+          "text": "w",
+          "start": 99.519,
+          "end": 99.55900000000001
+        },
+        {
+          "text": "old",
+          "start": 99.799,
+          "end": 100.059
+        }
+      ]
+    },
+    {
+      "start": 100.519,
+      "end": 103.799,
+      "text": "usando eta uguale a uno su due volte modulo di C,",
+      "words": [
+        {
+          "text": "usando",
+          "start": 100.519,
+          "end": 100.879
+        },
+        {
+          "text": "eta",
+          "start": 100.979,
+          "end": 101.199
+        },
+        {
+          "text": "uguale",
+          "start": 101.359,
+          "end": 101.659
+        },
+        {
+          "text": "a",
+          "start": 101.699,
+          "end": 101.739
+        },
+        {
+          "text": "uno",
+          "start": 101.839,
+          "end": 102.059
+        },
+        {
+          "text": "su",
+          "start": 102.299,
+          "end": 102.379
+        },
+        {
+          "text": "due",
+          "start": 102.539,
+          "end": 102.719
+        },
+        {
+          "text": "volte",
+          "start": 102.779,
+          "end": 103.119
+        },
+        {
+          "text": "modulo",
+          "start": 103.179,
+          "end": 103.539
+        },
+        {
+          "text": "di",
+          "start": 103.579,
+          "end": 103.639
+        },
+        {
+          "text": "C,",
+          "start": 103.759,
+          "end": 103.799
+        }
+      ]
+    },
+    {
+      "start": 104.459,
+      "end": 106.88,
+      "text": "in cui w old si cancella lasciando la media.",
+      "words": [
+        {
+          "text": "in",
+          "start": 104.459,
+          "end": 104.54
+        },
+        {
+          "text": "cui",
+          "start": 104.58,
+          "end": 104.72
+        },
+        {
+          "text": "w",
+          "start": 104.98,
+          "end": 105.02000000000001
+        },
+        {
+          "text": "old",
+          "start": 105.16,
+          "end": 105.34
+        },
+        {
+          "text": "si",
+          "start": 105.48,
+          "end": 105.54
+        },
+        {
+          "text": "cancella",
+          "start": 105.6,
+          "end": 105.96
+        },
+        {
+          "text": "lasciando",
+          "start": 106.08,
+          "end": 106.44
+        },
+        {
+          "text": "la",
+          "start": 106.5,
+          "end": 106.54
+        },
+        {
+          "text": "media.",
+          "start": 106.58,
+          "end": 106.88
+        }
+      ]
+    }
+  ]
+}

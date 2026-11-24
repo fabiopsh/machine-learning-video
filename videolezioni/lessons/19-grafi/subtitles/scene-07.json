@@ -1,0 +1,1383 @@
+{
+  "duration": 98.436,
+  "segments": [
+    {
+      "start": 0.057,
+      "end": 3.637,
+      "text": "Passiamo ora alla seconda grande famiglia: gli approcci ricorsivi,",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.057,
+          "end": 0.397
+        },
+        {
+          "text": "ora",
+          "start": 0.497,
+          "end": 0.597
+        },
+        {
+          "text": "alla",
+          "start": 0.657,
+          "end": 0.777
+        },
+        {
+          "text": "seconda",
+          "start": 0.837,
+          "end": 1.177
+        },
+        {
+          "text": "grande",
+          "start": 1.217,
+          "end": 1.457
+        },
+        {
+          "text": "famiglia:",
+          "start": 1.517,
+          "end": 1.937
+        },
+        {
+          "text": "gli",
+          "start": 2.157,
+          "end": 2.257
+        },
+        {
+          "text": "approcci",
+          "start": 2.277,
+          "end": 2.717
+        },
+        {
+          "text": "ricorsivi,",
+          "start": 2.917,
+          "end": 3.637
+        }
+      ]
+    },
+    {
+      "start": 3.937,
+      "end": 7.897,
+      "text": "rappresentati dalla GNN di Scarselli e dalla GraphESN.",
+      "words": [
+        {
+          "text": "rappresentati",
+          "start": 3.937,
+          "end": 4.537
+        },
+        {
+          "text": "dalla",
+          "start": 4.597,
+          "end": 4.817
+        },
+        {
+          "text": "GNN",
+          "start": 4.917,
+          "end": 5.537
+        },
+        {
+          "text": "di",
+          "start": 5.657,
+          "end": 5.717
+        },
+        {
+          "text": "Scarselli",
+          "start": 5.777,
+          "end": 6.417
+        },
+        {
+          "text": "e",
+          "start": 6.537,
+          "end": 6.577
+        },
+        {
+          "text": "dalla",
+          "start": 6.637,
+          "end": 6.837
+        },
+        {
+          "text": "GraphESN.",
+          "start": 6.897,
+          "end": 7.897
+        }
+      ]
+    },
+    {
+      "start": 8.597,
+      "end": 11.578,
+      "text": "La diffusione dell'informazione sui vicini è simile a prima,",
+      "words": [
+        {
+          "text": "La",
+          "start": 8.597,
+          "end": 8.657
+        },
+        {
+          "text": "diffusione",
+          "start": 8.717,
+          "end": 9.218
+        },
+        {
+          "text": "dell'informazione",
+          "start": 9.278,
+          "end": 10.098
+        },
+        {
+          "text": "sui",
+          "start": 10.158,
+          "end": 10.298
+        },
+        {
+          "text": "vicini",
+          "start": 10.338,
+          "end": 10.698
+        },
+        {
+          "text": "è",
+          "start": 10.778,
+          "end": 10.818
+        },
+        {
+          "text": "simile",
+          "start": 10.918,
+          "end": 11.198
+        },
+        {
+          "text": "a",
+          "start": 11.218,
+          "end": 11.258
+        },
+        {
+          "text": "prima,",
+          "start": 11.318,
+          "end": 11.578
+        }
+      ]
+    },
+    {
+      "start": 12.218,
+      "end": 15.318,
+      "text": "ma qui l'indice l non indica strati distinti:",
+      "words": [
+        {
+          "text": "ma",
+          "start": 12.218,
+          "end": 12.278
+        },
+        {
+          "text": "qui",
+          "start": 12.378,
+          "end": 12.498
+        },
+        {
+          "text": "l'indice",
+          "start": 12.638,
+          "end": 13.098
+        },
+        {
+          "text": "l",
+          "start": 13.498,
+          "end": 13.538
+        },
+        {
+          "text": "non",
+          "start": 13.818,
+          "end": 13.958
+        },
+        {
+          "text": "indica",
+          "start": 14.018,
+          "end": 14.298
+        },
+        {
+          "text": "strati",
+          "start": 14.398,
+          "end": 14.698
+        },
+        {
+          "text": "distinti:",
+          "start": 14.738,
+          "end": 15.318
+        }
+      ]
+    },
+    {
+      "start": 16.018,
+      "end": 21.199,
+      "text": "conta le iterazioni ripetute sullo stesso strato, con pesi condivisi a ogni passo.",
+      "words": [
+        {
+          "text": "conta",
+          "start": 16.018,
+          "end": 16.338
+        },
+        {
+          "text": "le",
+          "start": 16.398,
+          "end": 16.458
+        },
+        {
+          "text": "iterazioni",
+          "start": 16.498,
+          "end": 17.058
+        },
+        {
+          "text": "ripetute",
+          "start": 17.118,
+          "end": 17.578
+        },
+        {
+          "text": "sullo",
+          "start": 17.658,
+          "end": 17.898
+        },
+        {
+          "text": "stesso",
+          "start": 17.958,
+          "end": 18.278
+        },
+        {
+          "text": "strato,",
+          "start": 18.338,
+          "end": 18.758
+        },
+        {
+          "text": "con",
+          "start": 19.118,
+          "end": 19.258
+        },
+        {
+          "text": "pesi",
+          "start": 19.318,
+          "end": 19.558
+        },
+        {
+          "text": "condivisi",
+          "start": 19.639,
+          "end": 20.339
+        },
+        {
+          "text": "a",
+          "start": 20.499,
+          "end": 20.539
+        },
+        {
+          "text": "ogni",
+          "start": 20.619,
+          "end": 20.799
+        },
+        {
+          "text": "passo.",
+          "start": 20.839,
+          "end": 21.199
+        }
+      ]
+    },
+    {
+      "start": 22.339,
+      "end": 25.099,
+      "text": "La rete diventa così un vero sistema dinamico sul grafo.",
+      "words": [
+        {
+          "text": "La",
+          "start": 22.339,
+          "end": 22.399
+        },
+        {
+          "text": "rete",
+          "start": 22.459,
+          "end": 22.659
+        },
+        {
+          "text": "diventa",
+          "start": 22.699,
+          "end": 23.019
+        },
+        {
+          "text": "così",
+          "start": 23.059,
+          "end": 23.239
+        },
+        {
+          "text": "un",
+          "start": 23.299,
+          "end": 23.379
+        },
+        {
+          "text": "vero",
+          "start": 23.459,
+          "end": 23.679
+        },
+        {
+          "text": "sistema",
+          "start": 23.719,
+          "end": 24.039
+        },
+        {
+          "text": "dinamico",
+          "start": 24.099,
+          "end": 24.519
+        },
+        {
+          "text": "sul",
+          "start": 24.579,
+          "end": 24.719
+        },
+        {
+          "text": "grafo.",
+          "start": 24.759,
+          "end": 25.099
+        }
+      ]
+    },
+    {
+      "start": 25.899,
+      "end": 29.519,
+      "text": "Perché il calcolo si stabilizzi, si richiede la convergenza a un punto fisso,",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 25.899,
+          "end": 26.139
+        },
+        {
+          "text": "il",
+          "start": 26.179,
+          "end": 26.239
+        },
+        {
+          "text": "calcolo",
+          "start": 26.279,
+          "end": 26.599
+        },
+        {
+          "text": "si",
+          "start": 26.639,
+          "end": 26.719
+        },
+        {
+          "text": "stabilizzi,",
+          "start": 26.759,
+          "end": 27.279
+        },
+        {
+          "text": "si",
+          "start": 27.419,
+          "end": 27.499
+        },
+        {
+          "text": "richiede",
+          "start": 27.559,
+          "end": 27.879
+        },
+        {
+          "text": "la",
+          "start": 27.939,
+          "end": 27.999
+        },
+        {
+          "text": "convergenza",
+          "start": 28.059,
+          "end": 28.719
+        },
+        {
+          "text": "a",
+          "start": 28.739,
+          "end": 28.779
+        },
+        {
+          "text": "un",
+          "start": 28.799,
+          "end": 28.859
+        },
+        {
+          "text": "punto",
+          "start": 28.879,
+          "end": 29.119
+        },
+        {
+          "text": "fisso,",
+          "start": 29.179,
+          "end": 29.519
+        }
+      ]
+    },
+    {
+      "start": 29.859,
+      "end": 32.3,
+      "text": "che viene poi usato come embedding del grafo.",
+      "words": [
+        {
+          "text": "che",
+          "start": 29.859,
+          "end": 29.939
+        },
+        {
+          "text": "viene",
+          "start": 29.979,
+          "end": 30.159
+        },
+        {
+          "text": "poi",
+          "start": 30.199,
+          "end": 30.32
+        },
+        {
+          "text": "usato",
+          "start": 30.38,
+          "end": 30.68
+        },
+        {
+          "text": "come",
+          "start": 30.72,
+          "end": 30.9
+        },
+        {
+          "text": "embedding",
+          "start": 31.06,
+          "end": 31.66
+        },
+        {
+          "text": "del",
+          "start": 31.82,
+          "end": 31.94
+        },
+        {
+          "text": "grafo.",
+          "start": 31.98,
+          "end": 32.3
+        }
+      ]
+    },
+    {
+      "start": 33.26,
+      "end": 35.92,
+      "text": "Proprio come la Echo State Property del capitolo diciotto,",
+      "words": [
+        {
+          "text": "Proprio",
+          "start": 33.26,
+          "end": 33.52
+        },
+        {
+          "text": "come",
+          "start": 33.56,
+          "end": 33.72
+        },
+        {
+          "text": "la",
+          "start": 33.76,
+          "end": 33.84
+        },
+        {
+          "text": "Echo",
+          "start": 33.98,
+          "end": 34.14
+        },
+        {
+          "text": "State",
+          "start": 34.22,
+          "end": 34.46
+        },
+        {
+          "text": "Property",
+          "start": 34.48,
+          "end": 34.9
+        },
+        {
+          "text": "del",
+          "start": 34.94,
+          "end": 35.04
+        },
+        {
+          "text": "capitolo",
+          "start": 35.08,
+          "end": 35.44
+        },
+        {
+          "text": "diciotto,",
+          "start": 35.46,
+          "end": 35.92
+        }
+      ]
+    },
+    {
+      "start": 36.38,
+      "end": 39.6,
+      "text": "ciò impone che la dinamica del message passing sia contrattiva.",
+      "words": [
+        {
+          "text": "ciò",
+          "start": 36.38,
+          "end": 36.46
+        },
+        {
+          "text": "impone",
+          "start": 36.52,
+          "end": 36.84
+        },
+        {
+          "text": "che",
+          "start": 36.9,
+          "end": 36.98
+        },
+        {
+          "text": "la",
+          "start": 37.02,
+          "end": 37.08
+        },
+        {
+          "text": "dinamica",
+          "start": 37.12,
+          "end": 37.52
+        },
+        {
+          "text": "del",
+          "start": 37.56,
+          "end": 37.68
+        },
+        {
+          "text": "message",
+          "start": 37.74,
+          "end": 38.12
+        },
+        {
+          "text": "passing",
+          "start": 38.18,
+          "end": 38.62
+        },
+        {
+          "text": "sia",
+          "start": 38.72,
+          "end": 38.86
+        },
+        {
+          "text": "contrattiva.",
+          "start": 38.94,
+          "end": 39.6
+        }
+      ]
+    },
+    {
+      "start": 40.741,
+      "end": 46.281,
+      "text": "Nella GNN classica i pesi della funzione di transizione vengono addestrati per ottimizzare l'embedding.",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 40.741,
+          "end": 40.921
+        },
+        {
+          "text": "GNN",
+          "start": 40.961,
+          "end": 41.401
+        },
+        {
+          "text": "classica",
+          "start": 41.501,
+          "end": 42.001
+        },
+        {
+          "text": "i",
+          "start": 42.281,
+          "end": 42.321
+        },
+        {
+          "text": "pesi",
+          "start": 42.361,
+          "end": 42.541
+        },
+        {
+          "text": "della",
+          "start": 42.581,
+          "end": 42.741
+        },
+        {
+          "text": "funzione",
+          "start": 42.761,
+          "end": 43.121
+        },
+        {
+          "text": "di",
+          "start": 43.161,
+          "end": 43.221
+        },
+        {
+          "text": "transizione",
+          "start": 43.261,
+          "end": 43.861
+        },
+        {
+          "text": "vengono",
+          "start": 43.921,
+          "end": 44.201
+        },
+        {
+          "text": "addestrati",
+          "start": 44.241,
+          "end": 44.841
+        },
+        {
+          "text": "per",
+          "start": 44.901,
+          "end": 45.021
+        },
+        {
+          "text": "ottimizzare",
+          "start": 45.061,
+          "end": 45.601
+        },
+        {
+          "text": "l'embedding.",
+          "start": 45.661,
+          "end": 46.281
+        }
+      ]
+    },
+    {
+      "start": 47.021,
+      "end": 50.861,
+      "text": "Nella GraphESN, estensione ai grafi delle Echo State Network,",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 47.021,
+          "end": 47.221
+        },
+        {
+          "text": "GraphESN,",
+          "start": 47.281,
+          "end": 47.921
+        },
+        {
+          "text": "estensione",
+          "start": 48.261,
+          "end": 48.841
+        },
+        {
+          "text": "ai",
+          "start": 48.881,
+          "end": 49.001
+        },
+        {
+          "text": "grafi",
+          "start": 49.041,
+          "end": 49.421
+        },
+        {
+          "text": "delle",
+          "start": 49.581,
+          "end": 49.741
+        },
+        {
+          "text": "Echo",
+          "start": 49.841,
+          "end": 50.021
+        },
+        {
+          "text": "State",
+          "start": 50.081,
+          "end": 50.341
+        },
+        {
+          "text": "Network,",
+          "start": 50.381,
+          "end": 50.861
+        }
+      ]
+    },
+    {
+      "start": 51.402,
+      "end": 54.002,
+      "text": "la funzione di message passing invece non è addestrata:",
+      "words": [
+        {
+          "text": "la",
+          "start": 51.402,
+          "end": 51.462
+        },
+        {
+          "text": "funzione",
+          "start": 51.502,
+          "end": 51.862
+        },
+        {
+          "text": "di",
+          "start": 51.902,
+          "end": 51.962
+        },
+        {
+          "text": "message",
+          "start": 52.002,
+          "end": 52.342
+        },
+        {
+          "text": "passing",
+          "start": 52.402,
+          "end": 52.822
+        },
+        {
+          "text": "invece",
+          "start": 52.882,
+          "end": 53.162
+        },
+        {
+          "text": "non",
+          "start": 53.222,
+          "end": 53.342
+        },
+        {
+          "text": "è",
+          "start": 53.362,
+          "end": 53.402
+        },
+        {
+          "text": "addestrata:",
+          "start": 53.422,
+          "end": 54.002
+        }
+      ]
+    },
+    {
+      "start": 54.462,
+      "end": 58.062,
+      "text": "è un reservoir casuale di cui si controllano i parametri dinamici.",
+      "words": [
+        {
+          "text": "è",
+          "start": 54.462,
+          "end": 54.502
+        },
+        {
+          "text": "un",
+          "start": 54.542,
+          "end": 54.622
+        },
+        {
+          "text": "reservoir",
+          "start": 54.642,
+          "end": 55.082
+        },
+        {
+          "text": "casuale",
+          "start": 55.182,
+          "end": 55.742
+        },
+        {
+          "text": "di",
+          "start": 56.142,
+          "end": 56.222
+        },
+        {
+          "text": "cui",
+          "start": 56.262,
+          "end": 56.382
+        },
+        {
+          "text": "si",
+          "start": 56.422,
+          "end": 56.502
+        },
+        {
+          "text": "controllano",
+          "start": 56.542,
+          "end": 57.062
+        },
+        {
+          "text": "i",
+          "start": 57.102,
+          "end": 57.142
+        },
+        {
+          "text": "parametri",
+          "start": 57.162,
+          "end": 57.562
+        },
+        {
+          "text": "dinamici.",
+          "start": 57.602,
+          "end": 58.062
+        }
+      ]
+    },
+    {
+      "start": 58.762,
+      "end": 60.782,
+      "text": "L'equazione iterativa della GraphESN è:",
+      "words": [
+        {
+          "text": "L'equazione",
+          "start": 58.762,
+          "end": 59.222
+        },
+        {
+          "text": "iterativa",
+          "start": 59.282,
+          "end": 59.742
+        },
+        {
+          "text": "della",
+          "start": 59.782,
+          "end": 59.922
+        },
+        {
+          "text": "GraphESN",
+          "start": 59.962,
+          "end": 60.482
+        },
+        {
+          "text": "è:",
+          "start": 60.742,
+          "end": 60.782
+        }
+      ]
+    },
+    {
+      "start": 61.582,
+      "end": 63.503,
+      "text": "h con v all'iterazione l",
+      "words": [
+        {
+          "text": "h",
+          "start": 61.582,
+          "end": 61.622
+        },
+        {
+          "text": "con",
+          "start": 61.742,
+          "end": 61.903
+        },
+        {
+          "text": "v",
+          "start": 62.003,
+          "end": 62.043
+        },
+        {
+          "text": "all'iterazione",
+          "start": 62.343,
+          "end": 63.083
+        },
+        {
+          "text": "l",
+          "start": 63.463,
+          "end": 63.503
+        }
+      ]
+    },
+    {
+      "start": 64.063,
+      "end": 67.363,
+      "text": "uguale tangente iperbolica di W in per x con v",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 64.063,
+          "end": 64.463
+        },
+        {
+          "text": "tangente",
+          "start": 64.743,
+          "end": 65.123
+        },
+        {
+          "text": "iperbolica",
+          "start": 65.163,
+          "end": 65.743
+        },
+        {
+          "text": "di",
+          "start": 65.943,
+          "end": 66.023
+        },
+        {
+          "text": "W",
+          "start": 66.083,
+          "end": 66.123
+        },
+        {
+          "text": "in",
+          "start": 66.303,
+          "end": 66.463
+        },
+        {
+          "text": "per",
+          "start": 66.703,
+          "end": 66.823
+        },
+        {
+          "text": "x",
+          "start": 66.963,
+          "end": 67.003
+        },
+        {
+          "text": "con",
+          "start": 67.123,
+          "end": 67.263
+        },
+        {
+          "text": "v",
+          "start": 67.323,
+          "end": 67.363
+        }
+      ]
+    },
+    {
+      "start": 67.923,
+      "end": 72.364,
+      "text": "più la somma sui vicini u di W cappello per h con u all'iterazione l",
+      "words": [
+        {
+          "text": "più",
+          "start": 67.923,
+          "end": 68.043
+        },
+        {
+          "text": "la",
+          "start": 68.263,
+          "end": 68.323
+        },
+        {
+          "text": "somma",
+          "start": 68.383,
+          "end": 68.603
+        },
+        {
+          "text": "sui",
+          "start": 68.643,
+          "end": 68.783
+        },
+        {
+          "text": "vicini",
+          "start": 68.803,
+          "end": 69.183
+        },
+        {
+          "text": "u",
+          "start": 69.243,
+          "end": 69.283
+        },
+        {
+          "text": "di",
+          "start": 69.543,
+          "end": 69.603
+        },
+        {
+          "text": "W",
+          "start": 69.643,
+          "end": 69.683
+        },
+        {
+          "text": "cappello",
+          "start": 69.783,
+          "end": 70.303
+        },
+        {
+          "text": "per",
+          "start": 70.463,
+          "end": 70.603
+        },
+        {
+          "text": "h",
+          "start": 70.783,
+          "end": 70.82300000000001
+        },
+        {
+          "text": "con",
+          "start": 70.883,
+          "end": 71.023
+        },
+        {
+          "text": "u",
+          "start": 71.063,
+          "end": 71.10300000000001
+        },
+        {
+          "text": "all'iterazione",
+          "start": 71.283,
+          "end": 72.063
+        },
+        {
+          "text": "l",
+          "start": 72.324,
+          "end": 72.364
+        }
+      ]
+    },
+    {
+      "start": 72.444,
+      "end": 76.364,
+      "text": "meno uno, con W in e W cappello identiche a ogni passo.",
+      "words": [
+        {
+          "text": "meno",
+          "start": 72.444,
+          "end": 72.584
+        },
+        {
+          "text": "uno,",
+          "start": 72.664,
+          "end": 72.824
+        },
+        {
+          "text": "con",
+          "start": 73.264,
+          "end": 73.444
+        },
+        {
+          "text": "W",
+          "start": 73.644,
+          "end": 73.68400000000001
+        },
+        {
+          "text": "in",
+          "start": 73.844,
+          "end": 73.984
+        },
+        {
+          "text": "e",
+          "start": 74.264,
+          "end": 74.304
+        },
+        {
+          "text": "W",
+          "start": 74.324,
+          "end": 74.364
+        },
+        {
+          "text": "cappello",
+          "start": 74.444,
+          "end": 74.944
+        },
+        {
+          "text": "identiche",
+          "start": 75.164,
+          "end": 75.704
+        },
+        {
+          "text": "a",
+          "start": 75.744,
+          "end": 75.784
+        },
+        {
+          "text": "ogni",
+          "start": 75.824,
+          "end": 75.984
+        },
+        {
+          "text": "passo.",
+          "start": 76.024,
+          "end": 76.364
+        }
+      ]
+    },
+    {
+      "start": 77.044,
+      "end": 78.364,
+      "text": "Si itera fino a convergenza;",
+      "words": [
+        {
+          "text": "Si",
+          "start": 77.044,
+          "end": 77.124
+        },
+        {
+          "text": "itera",
+          "start": 77.164,
+          "end": 77.384
+        },
+        {
+          "text": "fino",
+          "start": 77.424,
+          "end": 77.604
+        },
+        {
+          "text": "a",
+          "start": 77.624,
+          "end": 77.664
+        },
+        {
+          "text": "convergenza;",
+          "start": 77.684,
+          "end": 78.364
+        }
+      ]
+    },
+    {
+      "start": 79.284,
+      "end": 84.285,
+      "text": "dopodiché l'uscita per l'intero grafo g si ottiene applicando un global pooling chi e un",
+      "words": [
+        {
+          "text": "dopodiché",
+          "start": 79.284,
+          "end": 79.704
+        },
+        {
+          "text": "l'uscita",
+          "start": 79.904,
+          "end": 80.384
+        },
+        {
+          "text": "per",
+          "start": 80.424,
+          "end": 80.524
+        },
+        {
+          "text": "l'intero",
+          "start": 80.544,
+          "end": 80.844
+        },
+        {
+          "text": "grafo",
+          "start": 80.884,
+          "end": 81.124
+        },
+        {
+          "text": "g",
+          "start": 81.184,
+          "end": 81.224
+        },
+        {
+          "text": "si",
+          "start": 81.404,
+          "end": 81.484
+        },
+        {
+          "text": "ottiene",
+          "start": 81.524,
+          "end": 81.784
+        },
+        {
+          "text": "applicando",
+          "start": 81.844,
+          "end": 82.284
+        },
+        {
+          "text": "un",
+          "start": 82.324,
+          "end": 82.384
+        },
+        {
+          "text": "global",
+          "start": 82.444,
+          "end": 82.805
+        },
+        {
+          "text": "pooling",
+          "start": 82.905,
+          "end": 83.245
+        },
+        {
+          "text": "chi",
+          "start": 83.465,
+          "end": 83.585
+        },
+        {
+          "text": "e",
+          "start": 84.085,
+          "end": 84.125
+        },
+        {
+          "text": "un",
+          "start": 84.205,
+          "end": 84.285
+        }
+      ]
+    },
+    {
+      "start": 84.325,
+      "end": 89.285,
+      "text": "readout lineare W out, addestrato rapidamente con pseudoinversa o ridge regression:",
+      "words": [
+        {
+          "text": "readout",
+          "start": 84.325,
+          "end": 84.705
+        },
+        {
+          "text": "lineare",
+          "start": 84.785,
+          "end": 85.265
+        },
+        {
+          "text": "W",
+          "start": 85.405,
+          "end": 85.44500000000001
+        },
+        {
+          "text": "out,",
+          "start": 85.645,
+          "end": 85.885
+        },
+        {
+          "text": "addestrato",
+          "start": 86.365,
+          "end": 86.825
+        },
+        {
+          "text": "rapidamente",
+          "start": 86.865,
+          "end": 87.405
+        },
+        {
+          "text": "con",
+          "start": 87.445,
+          "end": 87.565
+        },
+        {
+          "text": "pseudoinversa",
+          "start": 87.585,
+          "end": 88.285
+        },
+        {
+          "text": "o",
+          "start": 88.445,
+          "end": 88.485
+        },
+        {
+          "text": "ridge",
+          "start": 88.545,
+          "end": 88.745
+        },
+        {
+          "text": "regression:",
+          "start": 88.785,
+          "end": 89.285
+        }
+      ]
+    },
+    {
+      "start": 90.045,
+      "end": 93.06500000000001,
+      "text": "o di g uguale W out per chi di h di g.",
+      "words": [
+        {
+          "text": "o",
+          "start": 90.045,
+          "end": 90.08500000000001
+        },
+        {
+          "text": "di",
+          "start": 90.145,
+          "end": 90.225
+        },
+        {
+          "text": "g",
+          "start": 90.285,
+          "end": 90.325
+        },
+        {
+          "text": "uguale",
+          "start": 90.665,
+          "end": 91.025
+        },
+        {
+          "text": "W",
+          "start": 91.085,
+          "end": 91.125
+        },
+        {
+          "text": "out",
+          "start": 91.325,
+          "end": 91.545
+        },
+        {
+          "text": "per",
+          "start": 91.825,
+          "end": 91.985
+        },
+        {
+          "text": "chi",
+          "start": 92.085,
+          "end": 92.205
+        },
+        {
+          "text": "di",
+          "start": 92.485,
+          "end": 92.565
+        },
+        {
+          "text": "h",
+          "start": 92.805,
+          "end": 92.84500000000001
+        },
+        {
+          "text": "di",
+          "start": 92.905,
+          "end": 92.985
+        },
+        {
+          "text": "g.",
+          "start": 93.025,
+          "end": 93.06500000000001
+        }
+      ]
+    },
+    {
+      "start": 94.126,
+      "end": 98.186,
+      "text": "La tabella riassume il confronto tra l'approccio a strati e quello ricorsivo.",
+      "words": [
+        {
+          "text": "La",
+          "start": 94.126,
+          "end": 94.206
+        },
+        {
+          "text": "tabella",
+          "start": 94.246,
+          "end": 94.606
+        },
+        {
+          "text": "riassume",
+          "start": 94.726,
+          "end": 95.146
+        },
+        {
+          "text": "il",
+          "start": 95.186,
+          "end": 95.246
+        },
+        {
+          "text": "confronto",
+          "start": 95.266,
+          "end": 95.746
+        },
+        {
+          "text": "tra",
+          "start": 95.826,
+          "end": 95.926
+        },
+        {
+          "text": "l'approccio",
+          "start": 95.986,
+          "end": 96.426
+        },
+        {
+          "text": "a",
+          "start": 96.466,
+          "end": 96.506
+        },
+        {
+          "text": "strati",
+          "start": 96.546,
+          "end": 96.906
+        },
+        {
+          "text": "e",
+          "start": 97.306,
+          "end": 97.346
+        },
+        {
+          "text": "quello",
+          "start": 97.386,
+          "end": 97.606
+        },
+        {
+          "text": "ricorsivo.",
+          "start": 97.646,
+          "end": 98.186
+        }
+      ]
+    }
+  ]
+}

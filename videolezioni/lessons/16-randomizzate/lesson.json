@@ -18,49 +18,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">16.1 · La casualità nel Machine Learning</div>\n  <h2 class=\"slide-title\">La casualità come strategia costruttiva su cinque livelli</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Approccio randomizzato</div>\n    <p>Usa un certo grado di <strong>casualità</strong> come parte della propria strategia costruttiva — una risorsa preziosa, non un difetto.</p>\n  </div>\n  <div id=\"s2\" class=\"flow-chain cue-hidden\">\n    <div id=\"l1\" class=\"flow-node\"><strong>1. Dati</strong><span>hold-out, K-fold CV, bootstrap, boosting</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"l2\" class=\"flow-node\"><strong>2. Training</strong><span>shuffling, pesi iniziali casuali</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"l3\" class=\"flow-node\"><strong>3. Iperparam.</strong><span>random search</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"l4\" class=\"flow-node\"><strong>4. Ensemble</strong><span>bagging, multi-init</span></div>\n  </div>\n  <div id=\"s3\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">5. Nel cuore del modello</div>\n    <ul class=\"clean-list\">\n      <li><strong>Neuroni stocastici</strong> (<em>Restricted Boltzmann Machine</em>) e <strong>dropout</strong>.</li>\n      <li><strong>Random Forest</strong>: ensemble di alberi di decisione costruiti su un campione casuale del training set con scelta casuale delle variabili di split nei nodi.</li>\n      <li><strong>Extremely Randomized Trees</strong>: variante ancora più casuale, che unisce i vantaggi di ensemble e casualità.</li>\n    </ul>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 18.8,
+          "at": 19.58,
           "action": "show",
           "target": "#s1",
           "anchor": "Un approccio randomizzato utilizza"
         },
         {
-          "at": 30.2,
+          "at": 29.66,
           "action": "show",
           "target": "#s2",
           "anchor": "cinque livelli diversi"
         },
         {
-          "at": 32.0,
+          "at": 32.08,
           "action": "highlight",
           "target": "#l1",
           "anchor": "Primo livello, elaborazione dei dati"
         },
         {
-          "at": 45.8,
+          "at": 46.3,
           "action": "highlight",
           "target": "#l2",
           "anchor": "Secondo livello, apprendimento"
         },
         {
-          "at": 53.5,
+          "at": 54.39,
           "action": "highlight",
           "target": "#l3",
           "anchor": "Terzo livello, selezione degli iperparametri"
         },
         {
-          "at": 57.8,
+          "at": 59.33,
           "action": "highlight",
           "target": "#l4",
           "anchor": "Quarto livello, gli ensemble"
         },
         {
-          "at": 66.0,
+          "at": 68.93,
           "action": "show",
           "target": "#s3",
           "anchor": "Quinto livello, direttamente nel cuore"
         }
       ],
-      "duration_sec": 90.7,
+      "duration_sec": 93.99,
       "id": "scene-01",
       "audio_file": "audio/scene-01.wav",
       "subtitle_file": "subtitles/scene-01.json"
@@ -72,31 +72,31 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">16.2 · Reti a pesi casuali</div>\n  <h2 class=\"slide-title\">Fissare lo strato nascosto e addestrare solo il readout</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 452 260\" class=\"diagram-svg\" aria-label=\"Rete feedforward randomizzata: W casuale fissa e readout W_out addestrato\">\n        <g id=\"rn-edges-w\">\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"34\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"61\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"88\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"115\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"142\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"169\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"196\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"72\" x2=\"216\" y2=\"223\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"34\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"61\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"88\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"115\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"142\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"169\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"196\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"128\" x2=\"216\" y2=\"223\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"34\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"61\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"88\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"115\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"142\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"169\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"196\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n<line x1=\"71\" y1=\"184\" x2=\"216\" y2=\"223\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1.05\"/>\n</g>\n<g id=\"rn-edges-out\">\n<line x1=\"236\" y1=\"34\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"34\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"61\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"61\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"88\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"88\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"115\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"115\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"142\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"142\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"169\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"169\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"196\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"196\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"223\" x2=\"381\" y2=\"98\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n<line x1=\"236\" y1=\"223\" x2=\"381\" y2=\"158\" stroke=\"#C0392B\" stroke-opacity=\"0.72\" stroke-width=\"1.35\"/>\n</g>\n<circle cx=\"56\" cy=\"72\" r=\"14\" class=\"svg-node\"/>\n<text x=\"56\" y=\"76\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n<circle cx=\"56\" cy=\"128\" r=\"14\" class=\"svg-node\"/>\n<text x=\"56\" y=\"132\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<circle cx=\"56\" cy=\"184\" r=\"14\" class=\"svg-node\"/>\n<text x=\"56\" y=\"188\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n<circle cx=\"226\" cy=\"34\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"226\" cy=\"61\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"226\" cy=\"88\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"226\" cy=\"115\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"226\" cy=\"142\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"226\" cy=\"169\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"226\" cy=\"196\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"226\" cy=\"223\" r=\"9.5\" class=\"svg-node-fill\"/>\n<circle cx=\"396\" cy=\"98\" r=\"14\" class=\"svg-node\" stroke=\"#C0392B\"/>\n<text x=\"396\" y=\"102\" text-anchor=\"middle\" class=\"svg-math-sm svg-red\">o<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n<circle cx=\"396\" cy=\"158\" r=\"14\" class=\"svg-node\" stroke=\"#C0392B\"/>\n<text x=\"396\" y=\"162\" text-anchor=\"middle\" class=\"svg-math-sm svg-red\">o<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<text x=\"226\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption svg-blue\" font-weight=\"600\">molte unità nascoste: h = f(W x)</text>\n<text x=\"140\" y=\"246\" text-anchor=\"middle\" class=\"svg-caption\">W casuale (fissa)</text>\n<text x=\"312\" y=\"246\" text-anchor=\"middle\" class=\"svg-caption svg-red\" font-weight=\"600\">W<tspan baseline-shift=\"super\" font-size=\"72%\">out</tspan> (addestrata)</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-muted cue-hidden\">\n        <div class=\"box-label\">Radici storiche e modelli di riferimento</div>\n        <p>Già nel <strong>Perceptron originale</strong> un'area di proiezione era connessa casualmente. Oggi: <strong>RVFL</strong> (<em>Random Vector Functional Link</em>), <strong>ELM</strong> (<em>Extreme Learning Machine</em>), <strong>RBF</strong> con centri casuali.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione — Rete randomizzata</div>\n        <ul class=\"clean-list\">\n          <li><strong>Strati nascosti casuali</strong>: pesi \\(\\mathbf{W}\\) fissati dopo l'inizializzazione casuale, <strong>mai addestrati</strong>.</li>\n          <li><strong>Readout lineare</strong>: si addestra <strong>solo lo strato di uscita</strong> \\(\\mathbf{W}^{\\mathit{out}}\\) con pseudoinversa o ridge regression.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 17.5,
+          "at": 15.99,
           "action": "show",
           "target": "#s2",
           "anchor": "Perceptron originale"
         },
         {
-          "at": 43.1,
+          "at": 44.97,
           "action": "show",
           "target": "#s1, #s3",
           "anchor": "definizione formale di rete randomizzata"
         },
         {
-          "at": 53.4,
+          "at": 55.75,
           "action": "highlight",
           "target": "#rn-edges-w",
           "anchor": "matrice W, mostrati in grigio"
         },
         {
-          "at": 65.3,
+          "at": 68.59,
           "action": "highlight",
           "target": "#rn-edges-out",
           "anchor": "mostrato in rosso con matrice W out"
         }
       ],
-      "duration_sec": 83.0,
+      "duration_sec": 84.5,
       "id": "scene-02",
       "audio_file": "audio/scene-02.wav",
       "subtitle_file": "subtitles/scene-02.json"
@@ -108,49 +108,49 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">16.2 · Algoritmo</div>\n  <h2 class=\"slide-title\">Rete feedforward randomizzata: 3 fasi in forma chiusa</h2>\n  <div class=\"proof-steps\">\n    <div id=\"s1\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">1 · Costruzione (pesi fissi)</span>\n      <div>\n        Riempire \\(\\mathbf{W} \\in \\R^{n_h \\times n}\\) con valori casuali (es. rumore gaussiano), usando <strong>molte unità \\(n_h\\)</strong>:\n        \\[\\htmlId{f-hid}{\\h = f(\\mathbf{W}\\x) \\in \\R^{n_h}}\\]\n      </div>\n    </div>\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">2 · Apprendimento del readout (metodo diretto)</span>\n      <div>\n        Costruire \\(\\mathbf{H} \\in \\R^{l \\times n_h}\\) con riga \\(p\\) uguale a \\(f(\\mathbf{W}\\x_p)\\T\\). Minimizzare l'errore quadratico:\n        \\[\\htmlId{f-pinv}{\\mathbf{w}^{\\mathit{out}} = \\mathbf{H}^{+}\\dd}, \\qquad \\htmlId{f-ridge}{\\mathbf{w}^{\\mathit{out}} = (\\mathbf{H}\\T\\mathbf{H} + \\lambda\\mathbf{I})^{-1}\\mathbf{H}\\T\\dd}\\]\n        <p class=\"math-note\">Regolarizzazione \\(L^2\\) (utile per \\(n_h\\) alto) o \\(L^1\\). Con più uscite: \\(\\dd\\) e \\(\\mathbf{W}^{\\mathit{out}}\\) diventano matrici (una colonna per uscita).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag step-tag-red\">3 · Uso (inferenza)</span>\n      <div>\n        \\[\\htmlId{f-infer}{o(\\x) = (\\mathbf{w}^{\\mathit{out}})\\T f(\\mathbf{W}\\x)}\\]\n        <p class=\"math-note\">Per la classificazione si applica eventualmente una soglia o una funzione non lineare.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.1,
+          "at": 5.94,
           "action": "show",
           "target": "#s1",
           "anchor": "Passo uno, costruzione"
         },
         {
-          "at": 26.0,
+          "at": 26.22,
           "action": "highlight",
           "target": "#f-hid",
           "anchor": "h uguale f di W x"
         },
         {
-          "at": 31.3,
+          "at": 31.52,
           "action": "show",
           "target": "#s2",
           "anchor": "Passo due, apprendimento del readout"
         },
         {
-          "at": 59.1,
+          "at": 59.75,
           "action": "highlight",
           "target": "#f-pinv",
           "anchor": "w out uguale H pseudoinversa"
         },
         {
-          "at": 72.2,
+          "at": 71.37,
           "action": "highlight",
           "target": "#f-ridge",
           "anchor": "formula della ridge regression"
         },
         {
-          "at": 99.2,
+          "at": 94.65,
           "action": "show",
           "target": "#s3",
           "anchor": "Passo tre, uso in inferenza"
         },
         {
-          "at": 106.3,
+          "at": 101.79,
           "action": "highlight",
           "target": "#f-infer",
           "anchor": "o di x uguale w out trasposto"
         }
       ],
-      "duration_sec": 117.5,
+      "duration_sec": 111.98,
       "id": "scene-03",
       "audio_file": "audio/scene-03.wav",
       "subtitle_file": "subtitles/scene-03.json"
@@ -162,31 +162,31 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">16.2 · Fondamento teorico</div>\n  <h2 class=\"slide-title\">Perché funziona: LBE casuale e teorema di Cover</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 548 182\" class=\"diagram-svg\" aria-label=\"Proiezione non lineare casuale ad alta dimensione secondo il teorema di Cover\">\n      <defs>\n  <marker id=\"arr-cov\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/></marker>\n</defs>\n<rect x=\"14\" y=\"24\" width=\"176\" height=\"148\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\" stroke-width=\"1.1\"/>\n<text x=\"102\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"600\">Spazio input (bassa dim.)</text>\n<circle cx=\"102\" cy=\"98\" r=\"31\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n<circle cx=\"84\" cy=\"88\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"116\" cy=\"84\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"96\" cy=\"114\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"120\" cy=\"108\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"100\" cy=\"96\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"86\" cy=\"110\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"46\" cy=\"64\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"156\" cy=\"62\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"44\" cy=\"126\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"158\" cy=\"130\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"102\" cy=\"46\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"106\" cy=\"150\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"60\" cy=\"52\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"148\" cy=\"142\" r=\"4.2\" class=\"pt-neg\"/>\n<text x=\"102\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick svg-red\">non linearmente separabile</text>\n<line x1=\"202\" y1=\"98\" x2=\"310\" y2=\"98\" stroke=\"#1F5A9E\" stroke-width=\"2.4\" marker-end=\"url(#arr-cov)\"/>\n<text x=\"256\" y=\"76\" text-anchor=\"middle\" class=\"svg-caption svg-blue\" font-weight=\"600\">LBE casuale</text>\n<text x=\"256\" y=\"91\" text-anchor=\"middle\" class=\"svg-math-sm\">h = f(W x)</text>\n<text x=\"256\" y=\"116\" text-anchor=\"middle\" class=\"svg-tick\">n<tspan baseline-shift=\"sub\" font-size=\"75%\">h</tspan> grande (Cover)</text>\n<g id=\"cov-right\">\n<rect x=\"322\" y=\"24\" width=\"210\" height=\"148\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<text x=\"427\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption svg-blue\" font-weight=\"600\">Spazio nascosto (alta dim.)</text>\n<polygon points=\"342,108 514,88 514,104 342,124\" fill=\"rgba(31,90,158,0.14)\" stroke=\"none\"/>\n<line id=\"cov-plane\" x1=\"340\" y1=\"114\" x2=\"516\" y2=\"92\" stroke=\"#1F5A9E\" stroke-width=\"2.4\"/>\n<circle cx=\"368\" cy=\"62\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"398\" cy=\"52\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"432\" cy=\"66\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"464\" cy=\"48\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"490\" cy=\"60\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"416\" cy=\"76\" r=\"4.2\" class=\"pt-pos\"/>\n<circle cx=\"362\" cy=\"134\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"394\" cy=\"142\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"424\" cy=\"128\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"456\" cy=\"138\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"488\" cy=\"124\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"504\" cy=\"138\" r=\"4.2\" class=\"pt-neg\"/>\n<circle cx=\"378\" cy=\"148\" r=\"4.2\" class=\"pt-neg\"/>\n<text x=\"427\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick svg-green\" font-weight=\"600\">readout lineare w<tspan baseline-shift=\"super\" font-size=\"72%\">out</tspan> separa</text>\n</g>\n    </svg>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">LBE adattiva vs LBE casuale ampia</div>\n      <p><strong>MLP classico</strong>: basi adattive \\(\\phi_j(\\x, \\w)\\) con pesi appresi.<br/><strong>Rete randomizzata</strong>: basi casuali fisse, ma <strong>molto numerose</strong> (\\(n_h \\gg n\\)).</p>\n    </div>\n    <div id=\"s3\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Teorema di Cover e costo computazionale</div>\n      <p>Come nei <strong>metodi kernel</strong>, l'immersione non lineare ad alta dimensione rende il problema (quasi) <strong>linearmente separabile</strong> → basta un readout lineare in <strong>un solo passo</strong> (costo di una ridge regression).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 20.8,
+          "at": 19.25,
           "action": "show",
           "target": "#s2",
           "anchor": "Linear Basis Expansion adattiva"
         },
         {
-          "at": 45.5,
+          "at": 45.09,
           "action": "show",
           "target": "#s1",
           "anchor": "Osserviamo il diagramma geometrico"
         },
         {
-          "at": 63.8,
+          "at": 64.29,
           "action": "show",
           "target": "#s3",
           "anchor": "entra in gioco il teorema di Cover"
         },
         {
-          "at": 81.2,
+          "at": 80.46,
           "action": "highlight",
           "target": "#cov-plane",
           "anchor": "basta un semplice iperpiano lineare"
         }
       ],
-      "duration_sec": 91.5,
+      "duration_sec": 90.91,
       "id": "scene-04",
       "audio_file": "audio/scene-04.wav",
       "subtitle_file": "subtitles/scene-04.json"
@@ -198,31 +198,31 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">16.2.1 · Bilancio e applicazioni</div>\n  <h2 class=\"slide-title\">Pro, contro e dove usare le reti randomizzate</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Pro</div>\n      <ul class=\"clean-list\">\n        <li>LBE <strong>sufficiente</strong> con garanzie teoriche (anche <strong>approssimazione universale</strong>).</li>\n        <li><strong>Estrema efficienza</strong>: si addestra solo l'ultimo strato.</li>\n        <li>Varianti: crescita incrementale (tipo <strong>Cascade Correlation</strong>) e <strong>pruning</strong>.</li>\n        <li>Estensione alle reti ricorrenti: <strong>Echo State Network (ESN)</strong>.</li>\n      </ul>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Contro e dibattito aperto</div>\n        <p>Modelli con meno unità adattive addestrate sul task restano <strong>più eleganti</strong>. Dibattito aperto tra <strong>feature casuali</strong> e <strong>feature apprese</strong>.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Quattro contesti applicativi</div>\n        <ul class=\"clean-list\">\n          <li><strong>Big data</strong>.</li>\n          <li>Dispositivi a risorse limitate: <strong>embedded, sensori, edge computing</strong>.</li>\n          <li><strong>Deep learning</strong>: pile di RVFL/ELM, <strong>CNN randomizzate</strong>.</li>\n          <li><strong>Reti ricorrenti</strong>: addestramento molto oneroso e solido bias dinamico.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Conclusione</div>\n    <p>La <strong>casualità non è un nemico</strong>: è un'alleata, se controllata. Ritornano gli stessi pilastri: <strong>teorema di Cover</strong>, <strong>LBE</strong>, <strong>regolarizzazione</strong>, rappresentazione delle feature.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.4,
+          "at": 5.7,
           "action": "show",
           "target": "#s1",
           "anchor": "quattro vantaggi principali"
         },
         {
-          "at": 43.7,
+          "at": 44.72,
           "action": "show",
           "target": "#s2",
           "anchor": "Qual è invece il contro"
         },
         {
-          "at": 64.2,
+          "at": 63.09,
           "action": "show",
           "target": "#s3",
           "anchor": "quattro scenari chiave"
         },
         {
-          "at": 90.1,
+          "at": 88.77,
           "action": "show",
           "target": "#s4",
           "anchor": "La conclusione unificante"
         }
       ],
-      "duration_sec": 98.5,
+      "duration_sec": 96.48,
       "id": "scene-05",
       "audio_file": "audio/scene-05.wav",
       "subtitle_file": "subtitles/scene-05.json"
@@ -234,31 +234,31 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">Capitolo 16 · Chiusura</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\">La <strong>casualità</strong> compare nei dati, nell'apprendimento, negli iperparametri, negli ensemble e nei modelli stessi.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Rete randomizzata</strong>: strato nascosto ampio con pesi casuali fissi + readout lineare \\(\\mathbf{w}^{\\mathit{out}} = (\\mathbf{H}\\T\\mathbf{H} + \\lambda\\mathbf{I})^{-1}\\mathbf{H}\\T\\dd\\).</li>\n        <li id=\"s3\" class=\"cue-hidden\">Funziona per il <strong>teorema di Cover</strong>: una LBE casuale molto ampia rende il problema quasi linearmente separabile.</li>\n      </ul>\n    </div>\n    <div id=\"s4\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>A quali livelli compare la casualità nel ML?</li>\n        <li>Descrivere una rete feedforward randomizzata: costruzione, addestramento del readout, uso.</li>\n        <li>Enunciare il teorema di Cover e spiegarne il legame con le reti randomizzate e con i kernel.</li>\n        <li>Pro e contro delle feature casuali rispetto alle feature apprese.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.7,
+          "at": 5.0,
           "action": "show",
           "target": "#s1",
           "anchor": "Primo: la casualità"
         },
         {
-          "at": 20.1,
+          "at": 21.17,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: una rete randomizzata"
         },
         {
-          "at": 37.3,
+          "at": 38.85,
           "action": "show",
           "target": "#s3",
           "anchor": "Terzo: il meccanismo funziona"
         },
         {
-          "at": 51.8,
+          "at": 52.72,
           "action": "show",
           "target": "#s4",
           "anchor": "quattro domande sulla destra"
         }
       ],
-      "duration_sec": 72.0,
+      "duration_sec": 71.41,
       "id": "scene-06",
       "audio_file": "audio/scene-06.wav",
       "subtitle_file": "subtitles/scene-06.json"

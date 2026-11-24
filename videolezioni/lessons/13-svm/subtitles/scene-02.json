@@ -1,0 +1,1265 @@
+{
+  "duration": 79.463,
+  "segments": [
+    {
+      "start": 0.923,
+      "end": 4.624,
+      "text": "Partiamo dalla SVM lineare nel caso iniziale, detto hard margin.",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 0.923,
+          "end": 1.243
+        },
+        {
+          "text": "dalla",
+          "start": 1.323,
+          "end": 1.503
+        },
+        {
+          "text": "SVM",
+          "start": 1.663,
+          "end": 2.003
+        },
+        {
+          "text": "lineare",
+          "start": 2.103,
+          "end": 2.503
+        },
+        {
+          "text": "nel",
+          "start": 2.563,
+          "end": 2.683
+        },
+        {
+          "text": "caso",
+          "start": 2.743,
+          "end": 2.943
+        },
+        {
+          "text": "iniziale,",
+          "start": 2.983,
+          "end": 3.503
+        },
+        {
+          "text": "detto",
+          "start": 3.543,
+          "end": 3.803
+        },
+        {
+          "text": "hard",
+          "start": 3.883,
+          "end": 4.124
+        },
+        {
+          "text": "margin.",
+          "start": 4.204,
+          "end": 4.624
+        }
+      ]
+    },
+    {
+      "start": 5.604,
+      "end": 8.564,
+      "text": "Una SVM è una macchina lineare, come una LTU,",
+      "words": [
+        {
+          "text": "Una",
+          "start": 5.604,
+          "end": 5.744
+        },
+        {
+          "text": "SVM",
+          "start": 5.884,
+          "end": 6.264
+        },
+        {
+          "text": "è",
+          "start": 6.424,
+          "end": 6.464
+        },
+        {
+          "text": "una",
+          "start": 6.504,
+          "end": 6.604
+        },
+        {
+          "text": "macchina",
+          "start": 6.644,
+          "end": 6.964
+        },
+        {
+          "text": "lineare,",
+          "start": 7.024,
+          "end": 7.524
+        },
+        {
+          "text": "come",
+          "start": 7.644,
+          "end": 7.844
+        },
+        {
+          "text": "una",
+          "start": 7.924,
+          "end": 8.064
+        },
+        {
+          "text": "LTU,",
+          "start": 8.244,
+          "end": 8.564
+        }
+      ]
+    },
+    {
+      "start": 8.824,
+      "end": 13.605,
+      "text": "che massimizza il margine di separazione realizzando così una Structural Risk Minimization.",
+      "words": [
+        {
+          "text": "che",
+          "start": 8.824,
+          "end": 8.904
+        },
+        {
+          "text": "massimizza",
+          "start": 8.944,
+          "end": 9.404
+        },
+        {
+          "text": "il",
+          "start": 9.444,
+          "end": 9.504
+        },
+        {
+          "text": "margine",
+          "start": 9.544,
+          "end": 9.924
+        },
+        {
+          "text": "di",
+          "start": 9.964,
+          "end": 10.024
+        },
+        {
+          "text": "separazione",
+          "start": 10.084,
+          "end": 10.764
+        },
+        {
+          "text": "realizzando",
+          "start": 10.904,
+          "end": 11.444
+        },
+        {
+          "text": "così",
+          "start": 11.504,
+          "end": 11.704
+        },
+        {
+          "text": "una",
+          "start": 11.764,
+          "end": 11.884
+        },
+        {
+          "text": "Structural",
+          "start": 11.944,
+          "end": 12.525
+        },
+        {
+          "text": "Risk",
+          "start": 12.605,
+          "end": 12.805
+        },
+        {
+          "text": "Minimization.",
+          "start": 12.905,
+          "end": 13.605
+        }
+      ]
+    },
+    {
+      "start": 14.645,
+      "end": 18.605,
+      "text": "Assumiamo dapprima un problema linearmente separabile e privo di errori nei dati.",
+      "words": [
+        {
+          "text": "Assumiamo",
+          "start": 14.645,
+          "end": 15.045
+        },
+        {
+          "text": "dapprima",
+          "start": 15.085,
+          "end": 15.445
+        },
+        {
+          "text": "un",
+          "start": 15.465,
+          "end": 15.525
+        },
+        {
+          "text": "problema",
+          "start": 15.545,
+          "end": 15.885
+        },
+        {
+          "text": "linearmente",
+          "start": 15.965,
+          "end": 16.485
+        },
+        {
+          "text": "separabile",
+          "start": 16.545,
+          "end": 17.125
+        },
+        {
+          "text": "e",
+          "start": 17.245,
+          "end": 17.285
+        },
+        {
+          "text": "privo",
+          "start": 17.365,
+          "end": 17.605
+        },
+        {
+          "text": "di",
+          "start": 17.665,
+          "end": 17.725
+        },
+        {
+          "text": "errori",
+          "start": 17.785,
+          "end": 18.065
+        },
+        {
+          "text": "nei",
+          "start": 18.125,
+          "end": 18.265
+        },
+        {
+          "text": "dati.",
+          "start": 18.305,
+          "end": 18.605
+        }
+      ]
+    },
+    {
+      "start": 19.305,
+      "end": 23.186,
+      "text": "Dato il training set T di coppie x con i virgola d con i per",
+      "words": [
+        {
+          "text": "Dato",
+          "start": 19.305,
+          "end": 19.525
+        },
+        {
+          "text": "il",
+          "start": 19.545,
+          "end": 19.605
+        },
+        {
+          "text": "training",
+          "start": 19.625,
+          "end": 19.965
+        },
+        {
+          "text": "set",
+          "start": 20.066,
+          "end": 20.266
+        },
+        {
+          "text": "T",
+          "start": 20.426,
+          "end": 20.466
+        },
+        {
+          "text": "di",
+          "start": 20.866,
+          "end": 20.946
+        },
+        {
+          "text": "coppie",
+          "start": 21.006,
+          "end": 21.366
+        },
+        {
+          "text": "x",
+          "start": 21.606,
+          "end": 21.646
+        },
+        {
+          "text": "con",
+          "start": 21.746,
+          "end": 21.906
+        },
+        {
+          "text": "i",
+          "start": 21.926,
+          "end": 21.966
+        },
+        {
+          "text": "virgola",
+          "start": 22.006,
+          "end": 22.326
+        },
+        {
+          "text": "d",
+          "start": 22.366,
+          "end": 22.406
+        },
+        {
+          "text": "con",
+          "start": 22.486,
+          "end": 22.646
+        },
+        {
+          "text": "i",
+          "start": 22.686,
+          "end": 22.726
+        },
+        {
+          "text": "per",
+          "start": 23.046,
+          "end": 23.186
+        }
+      ]
+    },
+    {
+      "start": 23.226,
+      "end": 26.446,
+      "text": "i da uno a l, con etichette d con i in meno uno e più",
+      "words": [
+        {
+          "text": "i",
+          "start": 23.226,
+          "end": 23.266
+        },
+        {
+          "text": "da",
+          "start": 23.346,
+          "end": 23.406
+        },
+        {
+          "text": "uno",
+          "start": 23.506,
+          "end": 23.666
+        },
+        {
+          "text": "a",
+          "start": 23.706,
+          "end": 23.746
+        },
+        {
+          "text": "l,",
+          "start": 23.966,
+          "end": 24.006
+        },
+        {
+          "text": "con",
+          "start": 24.346,
+          "end": 24.486
+        },
+        {
+          "text": "etichette",
+          "start": 24.526,
+          "end": 24.946
+        },
+        {
+          "text": "d",
+          "start": 25.026,
+          "end": 25.066
+        },
+        {
+          "text": "con",
+          "start": 25.186,
+          "end": 25.346
+        },
+        {
+          "text": "i",
+          "start": 25.386,
+          "end": 25.426
+        },
+        {
+          "text": "in",
+          "start": 25.646,
+          "end": 25.746
+        },
+        {
+          "text": "meno",
+          "start": 25.786,
+          "end": 25.966
+        },
+        {
+          "text": "uno",
+          "start": 26.066,
+          "end": 26.206
+        },
+        {
+          "text": "e",
+          "start": 26.266,
+          "end": 26.306
+        },
+        {
+          "text": "più",
+          "start": 26.346,
+          "end": 26.446
+        }
+      ]
+    },
+    {
+      "start": 26.566,
+      "end": 31.627,
+      "text": "uno, cerchiamo un iperpiano w trasposto x più b uguale zero con w trasposto x",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 26.566,
+          "end": 26.726
+        },
+        {
+          "text": "cerchiamo",
+          "start": 27.126,
+          "end": 27.506
+        },
+        {
+          "text": "un",
+          "start": 27.546,
+          "end": 27.606
+        },
+        {
+          "text": "iperpiano",
+          "start": 27.646,
+          "end": 28.107
+        },
+        {
+          "text": "w",
+          "start": 28.227,
+          "end": 28.267
+        },
+        {
+          "text": "trasposto",
+          "start": 28.387,
+          "end": 28.867
+        },
+        {
+          "text": "x",
+          "start": 29.007,
+          "end": 29.047
+        },
+        {
+          "text": "più",
+          "start": 29.127,
+          "end": 29.227
+        },
+        {
+          "text": "b",
+          "start": 29.327,
+          "end": 29.367
+        },
+        {
+          "text": "uguale",
+          "start": 29.567,
+          "end": 29.867
+        },
+        {
+          "text": "zero",
+          "start": 29.967,
+          "end": 30.247
+        },
+        {
+          "text": "con",
+          "start": 30.587,
+          "end": 30.727
+        },
+        {
+          "text": "w",
+          "start": 30.787,
+          "end": 30.827
+        },
+        {
+          "text": "trasposto",
+          "start": 30.947,
+          "end": 31.447
+        },
+        {
+          "text": "x",
+          "start": 31.587,
+          "end": 31.627
+        }
+      ]
+    },
+    {
+      "start": 31.707,
+      "end": 34.627,
+      "text": "con i più b maggiore o uguale a zero se d con i vale più",
+      "words": [
+        {
+          "text": "con",
+          "start": 31.707,
+          "end": 31.847
+        },
+        {
+          "text": "i",
+          "start": 31.887,
+          "end": 31.927
+        },
+        {
+          "text": "più",
+          "start": 31.987,
+          "end": 32.107
+        },
+        {
+          "text": "b",
+          "start": 32.207,
+          "end": 32.247
+        },
+        {
+          "text": "maggiore",
+          "start": 32.547,
+          "end": 32.947
+        },
+        {
+          "text": "o",
+          "start": 32.967,
+          "end": 33.007
+        },
+        {
+          "text": "uguale",
+          "start": 32.987,
+          "end": 33.247
+        },
+        {
+          "text": "a",
+          "start": 33.267,
+          "end": 33.307
+        },
+        {
+          "text": "zero",
+          "start": 33.387,
+          "end": 33.687
+        },
+        {
+          "text": "se",
+          "start": 33.767,
+          "end": 33.847
+        },
+        {
+          "text": "d",
+          "start": 33.887,
+          "end": 33.927
+        },
+        {
+          "text": "con",
+          "start": 34.007,
+          "end": 34.147
+        },
+        {
+          "text": "i",
+          "start": 34.187,
+          "end": 34.227
+        },
+        {
+          "text": "vale",
+          "start": 34.267,
+          "end": 34.467
+        },
+        {
+          "text": "più",
+          "start": 34.507,
+          "end": 34.627
+        }
+      ]
+    },
+    {
+      "start": 34.707,
+      "end": 37.028,
+      "text": "uno, e negativo se d con i vale meno uno.",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 34.707,
+          "end": 34.867
+        },
+        {
+          "text": "e",
+          "start": 35.267,
+          "end": 35.307
+        },
+        {
+          "text": "negativo",
+          "start": 35.347,
+          "end": 35.787
+        },
+        {
+          "text": "se",
+          "start": 35.868,
+          "end": 35.968
+        },
+        {
+          "text": "d",
+          "start": 35.988,
+          "end": 36.028
+        },
+        {
+          "text": "con",
+          "start": 36.108,
+          "end": 36.228
+        },
+        {
+          "text": "i",
+          "start": 36.268,
+          "end": 36.308
+        },
+        {
+          "text": "vale",
+          "start": 36.328,
+          "end": 36.508
+        },
+        {
+          "text": "meno",
+          "start": 36.568,
+          "end": 36.768
+        },
+        {
+          "text": "uno.",
+          "start": 36.868,
+          "end": 37.028
+        }
+      ]
+    },
+    {
+      "start": 37.768,
+      "end": 42.768,
+      "text": "Chiamiamo g di x uguale w trasposto x più b la funzione discriminante e h",
+      "words": [
+        {
+          "text": "Chiamiamo",
+          "start": 37.768,
+          "end": 38.168
+        },
+        {
+          "text": "g",
+          "start": 38.328,
+          "end": 38.368
+        },
+        {
+          "text": "di",
+          "start": 38.488,
+          "end": 38.568
+        },
+        {
+          "text": "x",
+          "start": 38.708,
+          "end": 38.748
+        },
+        {
+          "text": "uguale",
+          "start": 38.868,
+          "end": 39.168
+        },
+        {
+          "text": "w",
+          "start": 39.248,
+          "end": 39.288
+        },
+        {
+          "text": "trasposto",
+          "start": 39.408,
+          "end": 39.908
+        },
+        {
+          "text": "x",
+          "start": 40.048,
+          "end": 40.088
+        },
+        {
+          "text": "più",
+          "start": 40.168,
+          "end": 40.288
+        },
+        {
+          "text": "b",
+          "start": 40.368,
+          "end": 40.408
+        },
+        {
+          "text": "la",
+          "start": 40.648,
+          "end": 40.728
+        },
+        {
+          "text": "funzione",
+          "start": 40.768,
+          "end": 41.128
+        },
+        {
+          "text": "discriminante",
+          "start": 41.188,
+          "end": 41.988
+        },
+        {
+          "text": "e",
+          "start": 42.388,
+          "end": 42.428
+        },
+        {
+          "text": "h",
+          "start": 42.728,
+          "end": 42.768
+        }
+      ]
+    },
+    {
+      "start": 42.848,
+      "end": 45.429,
+      "text": "di x uguale segno di g di x l'ipotesi.",
+      "words": [
+        {
+          "text": "di",
+          "start": 42.848,
+          "end": 42.988
+        },
+        {
+          "text": "x",
+          "start": 43.028,
+          "end": 43.068
+        },
+        {
+          "text": "uguale",
+          "start": 43.168,
+          "end": 43.468
+        },
+        {
+          "text": "segno",
+          "start": 43.588,
+          "end": 43.969
+        },
+        {
+          "text": "di",
+          "start": 44.029,
+          "end": 44.109
+        },
+        {
+          "text": "g",
+          "start": 44.189,
+          "end": 44.229
+        },
+        {
+          "text": "di",
+          "start": 44.329,
+          "end": 44.509
+        },
+        {
+          "text": "x",
+          "start": 44.569,
+          "end": 44.609
+        },
+        {
+          "text": "l'ipotesi.",
+          "start": 44.909,
+          "end": 45.429
+        }
+      ]
+    },
+    {
+      "start": 46.229,
+      "end": 51.389,
+      "text": "Consideriamo un iperpiano posto alla stessa distanza dal più vicino esempio positivo e dal più",
+      "words": [
+        {
+          "text": "Consideriamo",
+          "start": 46.229,
+          "end": 46.929
+        },
+        {
+          "text": "un",
+          "start": 47.009,
+          "end": 47.089
+        },
+        {
+          "text": "iperpiano",
+          "start": 47.129,
+          "end": 47.749
+        },
+        {
+          "text": "posto",
+          "start": 47.829,
+          "end": 48.129
+        },
+        {
+          "text": "alla",
+          "start": 48.169,
+          "end": 48.309
+        },
+        {
+          "text": "stessa",
+          "start": 48.369,
+          "end": 48.649
+        },
+        {
+          "text": "distanza",
+          "start": 48.689,
+          "end": 49.229
+        },
+        {
+          "text": "dal",
+          "start": 49.289,
+          "end": 49.409
+        },
+        {
+          "text": "più",
+          "start": 49.489,
+          "end": 49.569
+        },
+        {
+          "text": "vicino",
+          "start": 49.629,
+          "end": 49.949
+        },
+        {
+          "text": "esempio",
+          "start": 49.989,
+          "end": 50.329
+        },
+        {
+          "text": "positivo",
+          "start": 50.369,
+          "end": 50.889
+        },
+        {
+          "text": "e",
+          "start": 51.069,
+          "end": 51.109
+        },
+        {
+          "text": "dal",
+          "start": 51.149,
+          "end": 51.269
+        },
+        {
+          "text": "più",
+          "start": 51.309,
+          "end": 51.389
+        }
+      ]
+    },
+    {
+      "start": 51.429,
+      "end": 52.27,
+      "text": "vicino negativo.",
+      "words": [
+        {
+          "text": "vicino",
+          "start": 51.429,
+          "end": 51.709
+        },
+        {
+          "text": "negativo.",
+          "start": 51.769,
+          "end": 52.27
+        }
+      ]
+    },
+    {
+      "start": 52.89,
+      "end": 57.67,
+      "text": "Il margine di separazione ro è il doppio della distanza tra l'iperpiano e il punto",
+      "words": [
+        {
+          "text": "Il",
+          "start": 52.89,
+          "end": 52.97
+        },
+        {
+          "text": "margine",
+          "start": 53.01,
+          "end": 53.35
+        },
+        {
+          "text": "di",
+          "start": 53.41,
+          "end": 53.47
+        },
+        {
+          "text": "separazione",
+          "start": 53.53,
+          "end": 54.23
+        },
+        {
+          "text": "ro",
+          "start": 54.31,
+          "end": 54.39
+        },
+        {
+          "text": "è",
+          "start": 54.83,
+          "end": 54.87
+        },
+        {
+          "text": "il",
+          "start": 54.91,
+          "end": 54.97
+        },
+        {
+          "text": "doppio",
+          "start": 55.01,
+          "end": 55.27
+        },
+        {
+          "text": "della",
+          "start": 55.31,
+          "end": 55.49
+        },
+        {
+          "text": "distanza",
+          "start": 55.53,
+          "end": 56.07
+        },
+        {
+          "text": "tra",
+          "start": 56.13,
+          "end": 56.25
+        },
+        {
+          "text": "l'iperpiano",
+          "start": 56.33,
+          "end": 57.07
+        },
+        {
+          "text": "e",
+          "start": 57.25,
+          "end": 57.29
+        },
+        {
+          "text": "il",
+          "start": 57.31,
+          "end": 57.39
+        },
+        {
+          "text": "punto",
+          "start": 57.43,
+          "end": 57.67
+        }
+      ]
+    },
+    {
+      "start": 57.71,
+      "end": 60.631,
+      "text": "più vicino: una zona di sicurezza attorno al confine.",
+      "words": [
+        {
+          "text": "più",
+          "start": 57.71,
+          "end": 57.81
+        },
+        {
+          "text": "vicino:",
+          "start": 57.87,
+          "end": 58.29
+        },
+        {
+          "text": "una",
+          "start": 58.61,
+          "end": 58.75
+        },
+        {
+          "text": "zona",
+          "start": 58.81,
+          "end": 59.01
+        },
+        {
+          "text": "di",
+          "start": 59.05,
+          "end": 59.11
+        },
+        {
+          "text": "sicurezza",
+          "start": 59.17,
+          "end": 59.63
+        },
+        {
+          "text": "attorno",
+          "start": 59.67,
+          "end": 59.991
+        },
+        {
+          "text": "al",
+          "start": 60.011,
+          "end": 60.091
+        },
+        {
+          "text": "confine.",
+          "start": 60.131,
+          "end": 60.631
+        }
+      ]
+    },
+    {
+      "start": 61.191,
+      "end": 66.531,
+      "text": "L'iperpiano ottimo w con o trasposto x più b con o uguale zero è quello",
+      "words": [
+        {
+          "text": "L'iperpiano",
+          "start": 61.191,
+          "end": 61.731
+        },
+        {
+          "text": "ottimo",
+          "start": 61.811,
+          "end": 62.191
+        },
+        {
+          "text": "w",
+          "start": 62.371,
+          "end": 62.411
+        },
+        {
+          "text": "con",
+          "start": 62.811,
+          "end": 62.951
+        },
+        {
+          "text": "o",
+          "start": 63.011,
+          "end": 63.051
+        },
+        {
+          "text": "trasposto",
+          "start": 63.171,
+          "end": 63.731
+        },
+        {
+          "text": "x",
+          "start": 63.971,
+          "end": 64.011
+        },
+        {
+          "text": "più",
+          "start": 64.271,
+          "end": 64.391
+        },
+        {
+          "text": "b",
+          "start": 64.511,
+          "end": 64.551
+        },
+        {
+          "text": "con",
+          "start": 64.671,
+          "end": 64.851
+        },
+        {
+          "text": "o",
+          "start": 64.911,
+          "end": 64.95100000000001
+        },
+        {
+          "text": "uguale",
+          "start": 65.171,
+          "end": 65.491
+        },
+        {
+          "text": "zero",
+          "start": 65.591,
+          "end": 65.871
+        },
+        {
+          "text": "è",
+          "start": 66.271,
+          "end": 66.311
+        },
+        {
+          "text": "quello",
+          "start": 66.351,
+          "end": 66.531
+        }
+      ]
+    },
+    {
+      "start": 66.571,
+      "end": 67.932,
+      "text": "che massimizza il margine.",
+      "words": [
+        {
+          "text": "che",
+          "start": 66.571,
+          "end": 66.651
+        },
+        {
+          "text": "massimizza",
+          "start": 66.731,
+          "end": 67.331
+        },
+        {
+          "text": "il",
+          "start": 67.371,
+          "end": 67.431
+        },
+        {
+          "text": "margine.",
+          "start": 67.471,
+          "end": 67.932
+        }
+      ]
+    },
+    {
+      "start": 68.732,
+      "end": 71.572,
+      "text": "Al variare dell'iperpiano separatore varia il margine:",
+      "words": [
+        {
+          "text": "Al",
+          "start": 68.732,
+          "end": 68.832
+        },
+        {
+          "text": "variare",
+          "start": 68.852,
+          "end": 69.192
+        },
+        {
+          "text": "dell'iperpiano",
+          "start": 69.232,
+          "end": 69.912
+        },
+        {
+          "text": "separatore",
+          "start": 69.972,
+          "end": 70.592
+        },
+        {
+          "text": "varia",
+          "start": 70.812,
+          "end": 71.012
+        },
+        {
+          "text": "il",
+          "start": 71.052,
+          "end": 71.112
+        },
+        {
+          "text": "margine:",
+          "start": 71.132,
+          "end": 71.572
+        }
+      ]
+    },
+    {
+      "start": 72.132,
+      "end": 74.67200000000001,
+      "text": "dimostreremo che ro vale due diviso norma di w,",
+      "words": [
+        {
+          "text": "dimostreremo",
+          "start": 72.132,
+          "end": 72.772
+        },
+        {
+          "text": "che",
+          "start": 72.852,
+          "end": 72.932
+        },
+        {
+          "text": "ro",
+          "start": 73.012,
+          "end": 73.092
+        },
+        {
+          "text": "vale",
+          "start": 73.272,
+          "end": 73.472
+        },
+        {
+          "text": "due",
+          "start": 73.572,
+          "end": 73.772
+        },
+        {
+          "text": "diviso",
+          "start": 73.832,
+          "end": 74.132
+        },
+        {
+          "text": "norma",
+          "start": 74.212,
+          "end": 74.472
+        },
+        {
+          "text": "di",
+          "start": 74.532,
+          "end": 74.592
+        },
+        {
+          "text": "w,",
+          "start": 74.632,
+          "end": 74.67200000000001
+        }
+      ]
+    },
+    {
+      "start": 75.352,
+      "end": 79.21300000000001,
+      "text": "quindi massimizzare ro equivale esattamente a minimizzare la norma di w.",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 75.352,
+          "end": 75.592
+        },
+        {
+          "text": "massimizzare",
+          "start": 75.692,
+          "end": 76.313
+        },
+        {
+          "text": "ro",
+          "start": 76.373,
+          "end": 76.433
+        },
+        {
+          "text": "equivale",
+          "start": 76.813,
+          "end": 77.193
+        },
+        {
+          "text": "esattamente",
+          "start": 77.253,
+          "end": 77.793
+        },
+        {
+          "text": "a",
+          "start": 77.813,
+          "end": 77.85300000000001
+        },
+        {
+          "text": "minimizzare",
+          "start": 77.893,
+          "end": 78.553
+        },
+        {
+          "text": "la",
+          "start": 78.653,
+          "end": 78.733
+        },
+        {
+          "text": "norma",
+          "start": 78.773,
+          "end": 79.013
+        },
+        {
+          "text": "di",
+          "start": 79.073,
+          "end": 79.133
+        },
+        {
+          "text": "w.",
+          "start": 79.173,
+          "end": 79.21300000000001
+        }
+      ]
+    }
+  ]
+}

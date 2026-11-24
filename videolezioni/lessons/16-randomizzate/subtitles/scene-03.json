@@ -1,0 +1,1560 @@
+{
+  "duration": 111.982,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.241,
+      "text": "Vediamo nel dettaglio i tre passi dell'algoritmo di una rete feedforward randomizzata.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.08,
+          "end": 0.4
+        },
+        {
+          "text": "nel",
+          "start": 0.44,
+          "end": 0.58
+        },
+        {
+          "text": "dettaglio",
+          "start": 0.62,
+          "end": 1.12
+        },
+        {
+          "text": "i",
+          "start": 1.26,
+          "end": 1.3
+        },
+        {
+          "text": "tre",
+          "start": 1.4,
+          "end": 1.54
+        },
+        {
+          "text": "passi",
+          "start": 1.68,
+          "end": 2.06
+        },
+        {
+          "text": "dell'algoritmo",
+          "start": 2.12,
+          "end": 2.84
+        },
+        {
+          "text": "di",
+          "start": 2.9,
+          "end": 2.94
+        },
+        {
+          "text": "una",
+          "start": 2.98,
+          "end": 3.1
+        },
+        {
+          "text": "rete",
+          "start": 3.16,
+          "end": 3.42
+        },
+        {
+          "text": "feedforward",
+          "start": 3.56,
+          "end": 4.32
+        },
+        {
+          "text": "randomizzata.",
+          "start": 4.48,
+          "end": 5.241
+        }
+      ]
+    },
+    {
+      "start": 6.061,
+      "end": 7.421,
+      "text": "Passo uno, costruzione.",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 6.061,
+          "end": 6.341
+        },
+        {
+          "text": "uno,",
+          "start": 6.421,
+          "end": 6.581
+        },
+        {
+          "text": "costruzione.",
+          "start": 6.701,
+          "end": 7.421
+        }
+      ]
+    },
+    {
+      "start": 7.941,
+      "end": 13.101,
+      "text": "Scegliamo un numero molto elevato n con h di unità nascoste e riempiamo la matrice",
+      "words": [
+        {
+          "text": "Scegliamo",
+          "start": 7.941,
+          "end": 8.281
+        },
+        {
+          "text": "un",
+          "start": 8.321,
+          "end": 8.381
+        },
+        {
+          "text": "numero",
+          "start": 8.421,
+          "end": 8.661
+        },
+        {
+          "text": "molto",
+          "start": 8.721,
+          "end": 8.981
+        },
+        {
+          "text": "elevato",
+          "start": 9.021,
+          "end": 9.521
+        },
+        {
+          "text": "n",
+          "start": 10.021,
+          "end": 10.061
+        },
+        {
+          "text": "con",
+          "start": 10.201,
+          "end": 10.361
+        },
+        {
+          "text": "h",
+          "start": 10.681,
+          "end": 10.721
+        },
+        {
+          "text": "di",
+          "start": 10.881,
+          "end": 10.921
+        },
+        {
+          "text": "unità",
+          "start": 10.981,
+          "end": 11.181
+        },
+        {
+          "text": "nascoste",
+          "start": 11.261,
+          "end": 11.841
+        },
+        {
+          "text": "e",
+          "start": 11.981,
+          "end": 12.021
+        },
+        {
+          "text": "riempiamo",
+          "start": 12.081,
+          "end": 12.561
+        },
+        {
+          "text": "la",
+          "start": 12.601,
+          "end": 12.661
+        },
+        {
+          "text": "matrice",
+          "start": 12.701,
+          "end": 13.101
+        }
+      ]
+    },
+    {
+      "start": 13.141,
+      "end": 14.701,
+      "text": "dei pesi nascosti W,",
+      "words": [
+        {
+          "text": "dei",
+          "start": 13.141,
+          "end": 13.281
+        },
+        {
+          "text": "pesi",
+          "start": 13.341,
+          "end": 13.581
+        },
+        {
+          "text": "nascosti",
+          "start": 13.661,
+          "end": 14.161
+        },
+        {
+          "text": "W,",
+          "start": 14.661,
+          "end": 14.701
+        }
+      ]
+    },
+    {
+      "start": 15.282,
+      "end": 17.422,
+      "text": "di dimensione n con h per n,",
+      "words": [
+        {
+          "text": "di",
+          "start": 15.282,
+          "end": 15.362
+        },
+        {
+          "text": "dimensione",
+          "start": 15.442,
+          "end": 16.002
+        },
+        {
+          "text": "n",
+          "start": 16.402,
+          "end": 16.442
+        },
+        {
+          "text": "con",
+          "start": 16.522,
+          "end": 16.642
+        },
+        {
+          "text": "h",
+          "start": 16.862,
+          "end": 16.902
+        },
+        {
+          "text": "per",
+          "start": 17.022,
+          "end": 17.162
+        },
+        {
+          "text": "n,",
+          "start": 17.382,
+          "end": 17.422
+        }
+      ]
+    },
+    {
+      "start": 18.042,
+      "end": 21.162,
+      "text": "con valori casuali, per esempio estratti da rumore gaussiano.",
+      "words": [
+        {
+          "text": "con",
+          "start": 18.042,
+          "end": 18.162
+        },
+        {
+          "text": "valori",
+          "start": 18.202,
+          "end": 18.422
+        },
+        {
+          "text": "casuali,",
+          "start": 18.462,
+          "end": 18.922
+        },
+        {
+          "text": "per",
+          "start": 19.202,
+          "end": 19.302
+        },
+        {
+          "text": "esempio",
+          "start": 19.322,
+          "end": 19.662
+        },
+        {
+          "text": "estratti",
+          "start": 19.722,
+          "end": 20.162
+        },
+        {
+          "text": "da",
+          "start": 20.202,
+          "end": 20.262
+        },
+        {
+          "text": "rumore",
+          "start": 20.322,
+          "end": 20.602
+        },
+        {
+          "text": "gaussiano.",
+          "start": 20.642,
+          "end": 21.162
+        }
+      ]
+    },
+    {
+      "start": 22.022,
+      "end": 23.082,
+      "text": "Dato un input x,",
+      "words": [
+        {
+          "text": "Dato",
+          "start": 22.022,
+          "end": 22.202
+        },
+        {
+          "text": "un",
+          "start": 22.242,
+          "end": 22.302
+        },
+        {
+          "text": "input",
+          "start": 22.342,
+          "end": 22.682
+        },
+        {
+          "text": "x,",
+          "start": 23.042,
+          "end": 23.082
+        }
+      ]
+    },
+    {
+      "start": 23.762,
+      "end": 28.583,
+      "text": "il vettore delle attivazioni nascoste è h uguale f di W x,",
+      "words": [
+        {
+          "text": "il",
+          "start": 23.762,
+          "end": 23.842
+        },
+        {
+          "text": "vettore",
+          "start": 23.882,
+          "end": 24.202
+        },
+        {
+          "text": "delle",
+          "start": 24.242,
+          "end": 24.422
+        },
+        {
+          "text": "attivazioni",
+          "start": 24.462,
+          "end": 24.982
+        },
+        {
+          "text": "nascoste",
+          "start": 25.082,
+          "end": 25.683
+        },
+        {
+          "text": "è",
+          "start": 25.823,
+          "end": 25.863
+        },
+        {
+          "text": "h",
+          "start": 26.343,
+          "end": 26.383
+        },
+        {
+          "text": "uguale",
+          "start": 26.603,
+          "end": 26.923
+        },
+        {
+          "text": "f",
+          "start": 27.263,
+          "end": 27.303
+        },
+        {
+          "text": "di",
+          "start": 27.603,
+          "end": 27.683
+        },
+        {
+          "text": "W",
+          "start": 28.163,
+          "end": 28.203
+        },
+        {
+          "text": "x,",
+          "start": 28.543,
+          "end": 28.583
+        }
+      ]
+    },
+    {
+      "start": 29.243,
+      "end": 30.783,
+      "text": "con n con h componenti.",
+      "words": [
+        {
+          "text": "con",
+          "start": 29.243,
+          "end": 29.703
+        },
+        {
+          "text": "n",
+          "start": 29.743,
+          "end": 29.783
+        },
+        {
+          "text": "con",
+          "start": 29.843,
+          "end": 29.963
+        },
+        {
+          "text": "h",
+          "start": 30.123,
+          "end": 30.163
+        },
+        {
+          "text": "componenti.",
+          "start": 30.223,
+          "end": 30.783
+        }
+      ]
+    },
+    {
+      "start": 31.643,
+      "end": 33.903,
+      "text": "Passo due, apprendimento del readout.",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 31.643,
+          "end": 31.923
+        },
+        {
+          "text": "due,",
+          "start": 31.963,
+          "end": 32.123
+        },
+        {
+          "text": "apprendimento",
+          "start": 32.563,
+          "end": 33.203
+        },
+        {
+          "text": "del",
+          "start": 33.263,
+          "end": 33.383
+        },
+        {
+          "text": "readout.",
+          "start": 33.443,
+          "end": 33.903
+        }
+      ]
+    },
+    {
+      "start": 34.683,
+      "end": 38.104,
+      "text": "Dati l esempi x con p virgola d con p,",
+      "words": [
+        {
+          "text": "Dati",
+          "start": 34.683,
+          "end": 34.943
+        },
+        {
+          "text": "l",
+          "start": 35.263,
+          "end": 35.303
+        },
+        {
+          "text": "esempi",
+          "start": 35.464,
+          "end": 35.924
+        },
+        {
+          "text": "x",
+          "start": 36.324,
+          "end": 36.364
+        },
+        {
+          "text": "con",
+          "start": 36.584,
+          "end": 36.724
+        },
+        {
+          "text": "p",
+          "start": 36.784,
+          "end": 36.824
+        },
+        {
+          "text": "virgola",
+          "start": 37.224,
+          "end": 37.584
+        },
+        {
+          "text": "d",
+          "start": 37.684,
+          "end": 37.724
+        },
+        {
+          "text": "con",
+          "start": 37.824,
+          "end": 37.984
+        },
+        {
+          "text": "p,",
+          "start": 38.064,
+          "end": 38.104
+        }
+      ]
+    },
+    {
+      "start": 38.764,
+      "end": 41.544,
+      "text": "raccogliamo tutte le attivazioni nascoste nella matrice",
+      "words": [
+        {
+          "text": "raccogliamo",
+          "start": 38.764,
+          "end": 39.224
+        },
+        {
+          "text": "tutte",
+          "start": 39.344,
+          "end": 39.624
+        },
+        {
+          "text": "le",
+          "start": 39.664,
+          "end": 39.724
+        },
+        {
+          "text": "attivazioni",
+          "start": 39.764,
+          "end": 40.324
+        },
+        {
+          "text": "nascoste",
+          "start": 40.404,
+          "end": 40.864
+        },
+        {
+          "text": "nella",
+          "start": 40.924,
+          "end": 41.104
+        },
+        {
+          "text": "matrice",
+          "start": 41.144,
+          "end": 41.544
+        }
+      ]
+    },
+    {
+      "start": 42.104,
+      "end": 47.285,
+      "text": "H, di dimensione l per n con h, la cui riga p è f di",
+      "words": [
+        {
+          "text": "H,",
+          "start": 42.104,
+          "end": 42.144
+        },
+        {
+          "text": "di",
+          "start": 42.624,
+          "end": 42.704
+        },
+        {
+          "text": "dimensione",
+          "start": 42.764,
+          "end": 43.364
+        },
+        {
+          "text": "l",
+          "start": 43.804,
+          "end": 43.844
+        },
+        {
+          "text": "per",
+          "start": 44.064,
+          "end": 44.224
+        },
+        {
+          "text": "n",
+          "start": 44.404,
+          "end": 44.444
+        },
+        {
+          "text": "con",
+          "start": 44.524,
+          "end": 44.664
+        },
+        {
+          "text": "h,",
+          "start": 44.944,
+          "end": 44.984
+        },
+        {
+          "text": "la",
+          "start": 45.424,
+          "end": 45.485
+        },
+        {
+          "text": "cui",
+          "start": 45.525,
+          "end": 45.665
+        },
+        {
+          "text": "riga",
+          "start": 45.725,
+          "end": 45.945
+        },
+        {
+          "text": "p",
+          "start": 46.045,
+          "end": 46.085
+        },
+        {
+          "text": "è",
+          "start": 46.565,
+          "end": 46.605
+        },
+        {
+          "text": "f",
+          "start": 46.985,
+          "end": 47.025
+        },
+        {
+          "text": "di",
+          "start": 47.205,
+          "end": 47.285
+        }
+      ]
+    },
+    {
+      "start": 47.705,
+      "end": 49.505,
+      "text": "W x con p trasposto.",
+      "words": [
+        {
+          "text": "W",
+          "start": 47.705,
+          "end": 47.745
+        },
+        {
+          "text": "x",
+          "start": 48.205,
+          "end": 48.245
+        },
+        {
+          "text": "con",
+          "start": 48.525,
+          "end": 48.665
+        },
+        {
+          "text": "p",
+          "start": 48.705,
+          "end": 48.745
+        },
+        {
+          "text": "trasposto.",
+          "start": 48.925,
+          "end": 49.505
+        }
+      ]
+    },
+    {
+      "start": 50.385,
+      "end": 55.105,
+      "text": "A questo punto minimizziamo l'errore quadratico con il metodo diretto delle equazioni normali,",
+      "words": [
+        {
+          "text": "A",
+          "start": 50.385,
+          "end": 50.425
+        },
+        {
+          "text": "questo",
+          "start": 50.465,
+          "end": 50.665
+        },
+        {
+          "text": "punto",
+          "start": 50.705,
+          "end": 50.985
+        },
+        {
+          "text": "minimizziamo",
+          "start": 51.125,
+          "end": 51.765
+        },
+        {
+          "text": "l'errore",
+          "start": 51.805,
+          "end": 52.105
+        },
+        {
+          "text": "quadratico",
+          "start": 52.125,
+          "end": 52.665
+        },
+        {
+          "text": "con",
+          "start": 52.725,
+          "end": 52.845
+        },
+        {
+          "text": "il",
+          "start": 52.865,
+          "end": 52.945
+        },
+        {
+          "text": "metodo",
+          "start": 52.985,
+          "end": 53.305
+        },
+        {
+          "text": "diretto",
+          "start": 53.405,
+          "end": 53.865
+        },
+        {
+          "text": "delle",
+          "start": 53.905,
+          "end": 54.105
+        },
+        {
+          "text": "equazioni",
+          "start": 54.145,
+          "end": 54.605
+        },
+        {
+          "text": "normali,",
+          "start": 54.665,
+          "end": 55.105
+        }
+      ]
+    },
+    {
+      "start": 55.565,
+      "end": 58.946,
+      "text": "esattamente come per un modello lineare con matrice di input H:",
+      "words": [
+        {
+          "text": "esattamente",
+          "start": 55.565,
+          "end": 56.046
+        },
+        {
+          "text": "come",
+          "start": 56.106,
+          "end": 56.286
+        },
+        {
+          "text": "per",
+          "start": 56.346,
+          "end": 56.466
+        },
+        {
+          "text": "un",
+          "start": 56.486,
+          "end": 56.546
+        },
+        {
+          "text": "modello",
+          "start": 56.566,
+          "end": 56.886
+        },
+        {
+          "text": "lineare",
+          "start": 56.926,
+          "end": 57.386
+        },
+        {
+          "text": "con",
+          "start": 57.426,
+          "end": 57.546
+        },
+        {
+          "text": "matrice",
+          "start": 57.586,
+          "end": 57.986
+        },
+        {
+          "text": "di",
+          "start": 58.126,
+          "end": 58.186
+        },
+        {
+          "text": "input",
+          "start": 58.246,
+          "end": 58.526
+        },
+        {
+          "text": "H:",
+          "start": 58.906,
+          "end": 58.946
+        }
+      ]
+    },
+    {
+      "start": 59.866,
+      "end": 62.566,
+      "text": "w out uguale H pseudoinversa per d.",
+      "words": [
+        {
+          "text": "w",
+          "start": 59.866,
+          "end": 59.906
+        },
+        {
+          "text": "out",
+          "start": 59.926,
+          "end": 60.306
+        },
+        {
+          "text": "uguale",
+          "start": 60.486,
+          "end": 60.886
+        },
+        {
+          "text": "H",
+          "start": 61.346,
+          "end": 61.386
+        },
+        {
+          "text": "pseudoinversa",
+          "start": 61.486,
+          "end": 62.246
+        },
+        {
+          "text": "per",
+          "start": 62.346,
+          "end": 62.466
+        },
+        {
+          "text": "d.",
+          "start": 62.526,
+          "end": 62.566
+        }
+      ]
+    },
+    {
+      "start": 63.526,
+      "end": 66.507,
+      "text": "Poiché il numero di unità nascoste n con h è alto,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 63.526,
+          "end": 63.826
+        },
+        {
+          "text": "il",
+          "start": 63.866,
+          "end": 63.946
+        },
+        {
+          "text": "numero",
+          "start": 63.966,
+          "end": 64.226
+        },
+        {
+          "text": "di",
+          "start": 64.266,
+          "end": 64.30600000000001
+        },
+        {
+          "text": "unità",
+          "start": 64.346,
+          "end": 64.586
+        },
+        {
+          "text": "nascoste",
+          "start": 64.666,
+          "end": 65.226
+        },
+        {
+          "text": "n",
+          "start": 65.486,
+          "end": 65.52600000000001
+        },
+        {
+          "text": "con",
+          "start": 65.606,
+          "end": 65.727
+        },
+        {
+          "text": "h",
+          "start": 65.927,
+          "end": 65.96700000000001
+        },
+        {
+          "text": "è",
+          "start": 66.067,
+          "end": 66.107
+        },
+        {
+          "text": "alto,",
+          "start": 66.207,
+          "end": 66.507
+        }
+      ]
+    },
+    {
+      "start": 66.727,
+      "end": 70.467,
+      "text": "è molto utile applicare la regolarizzazione elle due di Tikhonov,",
+      "words": [
+        {
+          "text": "è",
+          "start": 66.727,
+          "end": 66.76700000000001
+        },
+        {
+          "text": "molto",
+          "start": 66.887,
+          "end": 67.227
+        },
+        {
+          "text": "utile",
+          "start": 67.307,
+          "end": 67.527
+        },
+        {
+          "text": "applicare",
+          "start": 67.567,
+          "end": 67.967
+        },
+        {
+          "text": "la",
+          "start": 68.047,
+          "end": 68.107
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 68.167,
+          "end": 69.047
+        },
+        {
+          "text": "elle",
+          "start": 69.107,
+          "end": 69.307
+        },
+        {
+          "text": "due",
+          "start": 69.387,
+          "end": 69.607
+        },
+        {
+          "text": "di",
+          "start": 69.787,
+          "end": 69.887
+        },
+        {
+          "text": "Tikhonov,",
+          "start": 69.967,
+          "end": 70.467
+        }
+      ]
+    },
+    {
+      "start": 70.947,
+      "end": 72.947,
+      "text": "ottenendo la formula della ridge regression:",
+      "words": [
+        {
+          "text": "ottenendo",
+          "start": 70.947,
+          "end": 71.327
+        },
+        {
+          "text": "la",
+          "start": 71.367,
+          "end": 71.427
+        },
+        {
+          "text": "formula",
+          "start": 71.487,
+          "end": 71.847
+        },
+        {
+          "text": "della",
+          "start": 71.927,
+          "end": 72.087
+        },
+        {
+          "text": "ridge",
+          "start": 72.147,
+          "end": 72.347
+        },
+        {
+          "text": "regression:",
+          "start": 72.407,
+          "end": 72.947
+        }
+      ]
+    },
+    {
+      "start": 73.507,
+      "end": 79.248,
+      "text": "w out uguale parentesi H trasposto H più lambda I chiusa alla meno uno per",
+      "words": [
+        {
+          "text": "w",
+          "start": 73.507,
+          "end": 73.54700000000001
+        },
+        {
+          "text": "out",
+          "start": 73.727,
+          "end": 73.947
+        },
+        {
+          "text": "uguale",
+          "start": 74.107,
+          "end": 74.547
+        },
+        {
+          "text": "parentesi",
+          "start": 74.687,
+          "end": 75.247
+        },
+        {
+          "text": "H",
+          "start": 75.587,
+          "end": 75.62700000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 75.687,
+          "end": 76.228
+        },
+        {
+          "text": "H",
+          "start": 76.528,
+          "end": 76.56800000000001
+        },
+        {
+          "text": "più",
+          "start": 76.648,
+          "end": 76.748
+        },
+        {
+          "text": "lambda",
+          "start": 76.848,
+          "end": 77.148
+        },
+        {
+          "text": "I",
+          "start": 77.268,
+          "end": 77.308
+        },
+        {
+          "text": "chiusa",
+          "start": 77.668,
+          "end": 78.068
+        },
+        {
+          "text": "alla",
+          "start": 78.188,
+          "end": 78.348
+        },
+        {
+          "text": "meno",
+          "start": 78.388,
+          "end": 78.548
+        },
+        {
+          "text": "uno",
+          "start": 78.628,
+          "end": 78.788
+        },
+        {
+          "text": "per",
+          "start": 79.128,
+          "end": 79.248
+        }
+      ]
+    },
+    {
+      "start": 79.408,
+      "end": 80.108,
+      "text": "H trasposto d.",
+      "words": [
+        {
+          "text": "H",
+          "start": 79.408,
+          "end": 79.44800000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 79.508,
+          "end": 80.008
+        },
+        {
+          "text": "d.",
+          "start": 80.068,
+          "end": 80.108
+        }
+      ]
+    },
+    {
+      "start": 81.048,
+      "end": 83.728,
+      "text": "In alternativa si può usare la regolarizzazione elle uno.",
+      "words": [
+        {
+          "text": "In",
+          "start": 81.048,
+          "end": 81.148
+        },
+        {
+          "text": "alternativa",
+          "start": 81.188,
+          "end": 81.708
+        },
+        {
+          "text": "si",
+          "start": 81.768,
+          "end": 81.848
+        },
+        {
+          "text": "può",
+          "start": 81.888,
+          "end": 81.968
+        },
+        {
+          "text": "usare",
+          "start": 82.048,
+          "end": 82.328
+        },
+        {
+          "text": "la",
+          "start": 82.388,
+          "end": 82.448
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 82.528,
+          "end": 83.288
+        },
+        {
+          "text": "elle",
+          "start": 83.348,
+          "end": 83.488
+        },
+        {
+          "text": "uno.",
+          "start": 83.568,
+          "end": 83.728
+        }
+      ]
+    },
+    {
+      "start": 84.568,
+      "end": 88.189,
+      "text": "Se il problema ha più uscite, il vettore d diventa una matrice con una colonna",
+      "words": [
+        {
+          "text": "Se",
+          "start": 84.568,
+          "end": 84.628
+        },
+        {
+          "text": "il",
+          "start": 84.688,
+          "end": 84.748
+        },
+        {
+          "text": "problema",
+          "start": 84.768,
+          "end": 85.148
+        },
+        {
+          "text": "ha",
+          "start": 85.168,
+          "end": 85.20800000000001
+        },
+        {
+          "text": "più",
+          "start": 85.248,
+          "end": 85.348
+        },
+        {
+          "text": "uscite,",
+          "start": 85.408,
+          "end": 85.788
+        },
+        {
+          "text": "il",
+          "start": 85.828,
+          "end": 85.888
+        },
+        {
+          "text": "vettore",
+          "start": 85.908,
+          "end": 86.249
+        },
+        {
+          "text": "d",
+          "start": 86.309,
+          "end": 86.349
+        },
+        {
+          "text": "diventa",
+          "start": 86.529,
+          "end": 86.889
+        },
+        {
+          "text": "una",
+          "start": 86.929,
+          "end": 87.029
+        },
+        {
+          "text": "matrice",
+          "start": 87.069,
+          "end": 87.449
+        },
+        {
+          "text": "con",
+          "start": 87.489,
+          "end": 87.629
+        },
+        {
+          "text": "una",
+          "start": 87.649,
+          "end": 87.769
+        },
+        {
+          "text": "colonna",
+          "start": 87.829,
+          "end": 88.189
+        }
+      ]
+    },
+    {
+      "start": 88.229,
+      "end": 91.829,
+      "text": "per uscita, e w out diventa la matrice W out,",
+      "words": [
+        {
+          "text": "per",
+          "start": 88.229,
+          "end": 88.329
+        },
+        {
+          "text": "uscita,",
+          "start": 88.389,
+          "end": 88.809
+        },
+        {
+          "text": "e",
+          "start": 89.229,
+          "end": 89.269
+        },
+        {
+          "text": "w",
+          "start": 89.409,
+          "end": 89.44900000000001
+        },
+        {
+          "text": "out",
+          "start": 89.469,
+          "end": 89.829
+        },
+        {
+          "text": "diventa",
+          "start": 89.929,
+          "end": 90.249
+        },
+        {
+          "text": "la",
+          "start": 90.309,
+          "end": 90.369
+        },
+        {
+          "text": "matrice",
+          "start": 90.389,
+          "end": 90.809
+        },
+        {
+          "text": "W",
+          "start": 91.309,
+          "end": 91.349
+        },
+        {
+          "text": "out,",
+          "start": 91.589,
+          "end": 91.829
+        }
+      ]
+    },
+    {
+      "start": 92.269,
+      "end": 93.869,
+      "text": "anch'essa con una colonna per uscita.",
+      "words": [
+        {
+          "text": "anch'essa",
+          "start": 92.269,
+          "end": 92.649
+        },
+        {
+          "text": "con",
+          "start": 92.689,
+          "end": 92.809
+        },
+        {
+          "text": "una",
+          "start": 92.869,
+          "end": 92.969
+        },
+        {
+          "text": "colonna",
+          "start": 93.009,
+          "end": 93.329
+        },
+        {
+          "text": "per",
+          "start": 93.369,
+          "end": 93.469
+        },
+        {
+          "text": "uscita.",
+          "start": 93.529,
+          "end": 93.869
+        }
+      ]
+    },
+    {
+      "start": 94.769,
+      "end": 96.59,
+      "text": "Passo tre, uso in inferenza.",
+      "words": [
+        {
+          "text": "Passo",
+          "start": 94.769,
+          "end": 95.009
+        },
+        {
+          "text": "tre,",
+          "start": 95.069,
+          "end": 95.189
+        },
+        {
+          "text": "uso",
+          "start": 95.489,
+          "end": 95.709
+        },
+        {
+          "text": "in",
+          "start": 95.849,
+          "end": 95.949
+        },
+        {
+          "text": "inferenza.",
+          "start": 95.989,
+          "end": 96.59
+        }
+      ]
+    },
+    {
+      "start": 97.49,
+      "end": 103.23,
+      "text": "Su un nuovo dato x calcoliamo le attivazioni nascoste e l'uscita o di x uguale",
+      "words": [
+        {
+          "text": "Su",
+          "start": 97.49,
+          "end": 97.55
+        },
+        {
+          "text": "un",
+          "start": 97.59,
+          "end": 97.65
+        },
+        {
+          "text": "nuovo",
+          "start": 97.69,
+          "end": 97.91
+        },
+        {
+          "text": "dato",
+          "start": 97.97,
+          "end": 98.21
+        },
+        {
+          "text": "x",
+          "start": 98.55,
+          "end": 98.59
+        },
+        {
+          "text": "calcoliamo",
+          "start": 99.07,
+          "end": 99.59
+        },
+        {
+          "text": "le",
+          "start": 99.63,
+          "end": 99.69
+        },
+        {
+          "text": "attivazioni",
+          "start": 99.73,
+          "end": 100.25
+        },
+        {
+          "text": "nascoste",
+          "start": 100.33,
+          "end": 100.89
+        },
+        {
+          "text": "e",
+          "start": 101.05,
+          "end": 101.09
+        },
+        {
+          "text": "l'uscita",
+          "start": 101.15,
+          "end": 101.69
+        },
+        {
+          "text": "o",
+          "start": 101.91,
+          "end": 101.95
+        },
+        {
+          "text": "di",
+          "start": 102.11,
+          "end": 102.19
+        },
+        {
+          "text": "x",
+          "start": 102.45,
+          "end": 102.49000000000001
+        },
+        {
+          "text": "uguale",
+          "start": 102.87,
+          "end": 103.23
+        }
+      ]
+    },
+    {
+      "start": 103.41,
+      "end": 105.95,
+      "text": "w out trasposto per f di W x;",
+      "words": [
+        {
+          "text": "w",
+          "start": 103.41,
+          "end": 103.45
+        },
+        {
+          "text": "out",
+          "start": 103.65,
+          "end": 103.85
+        },
+        {
+          "text": "trasposto",
+          "start": 103.97,
+          "end": 104.61
+        },
+        {
+          "text": "per",
+          "start": 104.67,
+          "end": 104.79
+        },
+        {
+          "text": "f",
+          "start": 104.99,
+          "end": 105.03
+        },
+        {
+          "text": "di",
+          "start": 105.15,
+          "end": 105.21
+        },
+        {
+          "text": "W",
+          "start": 105.61,
+          "end": 105.65
+        },
+        {
+          "text": "x;",
+          "start": 105.91,
+          "end": 105.95
+        }
+      ]
+    },
+    {
+      "start": 106.911,
+      "end": 111.511,
+      "text": "per la classificazione applichiamo eventualmente una soglia o una funzione non lineare.",
+      "words": [
+        {
+          "text": "per",
+          "start": 106.911,
+          "end": 107.031
+        },
+        {
+          "text": "la",
+          "start": 107.051,
+          "end": 107.111
+        },
+        {
+          "text": "classificazione",
+          "start": 107.151,
+          "end": 107.911
+        },
+        {
+          "text": "applichiamo",
+          "start": 107.971,
+          "end": 108.391
+        },
+        {
+          "text": "eventualmente",
+          "start": 108.451,
+          "end": 109.031
+        },
+        {
+          "text": "una",
+          "start": 109.091,
+          "end": 109.211
+        },
+        {
+          "text": "soglia",
+          "start": 109.291,
+          "end": 109.691
+        },
+        {
+          "text": "o",
+          "start": 109.931,
+          "end": 109.971
+        },
+        {
+          "text": "una",
+          "start": 110.051,
+          "end": 110.191
+        },
+        {
+          "text": "funzione",
+          "start": 110.231,
+          "end": 110.691
+        },
+        {
+          "text": "non",
+          "start": 110.871,
+          "end": 111.011
+        },
+        {
+          "text": "lineare.",
+          "start": 111.071,
+          "end": 111.511
+        }
+      ]
+    }
+  ]
+}

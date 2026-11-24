@@ -1,0 +1,1665 @@
+{
+  "duration": 116.639,
+  "segments": [
+    {
+      "start": 1.037,
+      "end": 7.238,
+      "text": "Applichiamo subito l'idea delle derivate locali per ricavare la versione on-line dell'algoritmo K-means come discesa",
+      "words": [
+        {
+          "text": "Applichiamo",
+          "start": 1.037,
+          "end": 1.457
+        },
+        {
+          "text": "subito",
+          "start": 1.517,
+          "end": 1.797
+        },
+        {
+          "text": "l'idea",
+          "start": 1.817,
+          "end": 2.117
+        },
+        {
+          "text": "delle",
+          "start": 2.177,
+          "end": 2.377
+        },
+        {
+          "text": "derivate",
+          "start": 2.417,
+          "end": 2.797
+        },
+        {
+          "text": "locali",
+          "start": 2.837,
+          "end": 3.237
+        },
+        {
+          "text": "per",
+          "start": 3.277,
+          "end": 3.397
+        },
+        {
+          "text": "ricavare",
+          "start": 3.437,
+          "end": 3.837
+        },
+        {
+          "text": "la",
+          "start": 3.897,
+          "end": 3.938
+        },
+        {
+          "text": "versione",
+          "start": 3.978,
+          "end": 4.338
+        },
+        {
+          "text": "on-line",
+          "start": 4.398,
+          "end": 4.898
+        },
+        {
+          "text": "dell'algoritmo",
+          "start": 5.018,
+          "end": 5.678
+        },
+        {
+          "text": "K-means",
+          "start": 5.718,
+          "end": 6.218
+        },
+        {
+          "text": "come",
+          "start": 6.638,
+          "end": 6.818
+        },
+        {
+          "text": "discesa",
+          "start": 6.858,
+          "end": 7.238
+        }
+      ]
+    },
+    {
+      "start": 7.278,
+      "end": 10.198,
+      "text": "del gradiente stocastica sull'errore di quantizzazione.",
+      "words": [
+        {
+          "text": "del",
+          "start": 7.278,
+          "end": 7.398
+        },
+        {
+          "text": "gradiente",
+          "start": 7.438,
+          "end": 7.858
+        },
+        {
+          "text": "stocastica",
+          "start": 7.938,
+          "end": 8.538
+        },
+        {
+          "text": "sull'errore",
+          "start": 8.758,
+          "end": 9.258
+        },
+        {
+          "text": "di",
+          "start": 9.298,
+          "end": 9.358
+        },
+        {
+          "text": "quantizzazione.",
+          "start": 9.398,
+          "end": 10.198
+        }
+      ]
+    },
+    {
+      "start": 11.098,
+      "end": 16.239,
+      "text": "Enunciamo la proprietà: per ogni esempio x con i il cui prototipo vincitore è i",
+      "words": [
+        {
+          "text": "Enunciamo",
+          "start": 11.098,
+          "end": 11.518
+        },
+        {
+          "text": "la",
+          "start": 11.558,
+          "end": 11.638
+        },
+        {
+          "text": "proprietà:",
+          "start": 11.658,
+          "end": 12.018
+        },
+        {
+          "text": "per",
+          "start": 12.498,
+          "end": 12.598
+        },
+        {
+          "text": "ogni",
+          "start": 12.638,
+          "end": 12.778
+        },
+        {
+          "text": "esempio",
+          "start": 12.838,
+          "end": 13.318
+        },
+        {
+          "text": "x",
+          "start": 13.618,
+          "end": 13.658
+        },
+        {
+          "text": "con",
+          "start": 13.759,
+          "end": 13.919
+        },
+        {
+          "text": "i",
+          "start": 13.979,
+          "end": 14.019
+        },
+        {
+          "text": "il",
+          "start": 14.439,
+          "end": 14.519
+        },
+        {
+          "text": "cui",
+          "start": 14.559,
+          "end": 14.699
+        },
+        {
+          "text": "prototipo",
+          "start": 14.719,
+          "end": 15.219
+        },
+        {
+          "text": "vincitore",
+          "start": 15.279,
+          "end": 15.799
+        },
+        {
+          "text": "è",
+          "start": 15.959,
+          "end": 15.999
+        },
+        {
+          "text": "i",
+          "start": 16.199,
+          "end": 16.239
+        }
+      ]
+    },
+    {
+      "start": 16.359,
+      "end": 22.359,
+      "text": "asterisco, la regola di aggiornamento è delta w con i asterisco uguale a eta per",
+      "words": [
+        {
+          "text": "asterisco,",
+          "start": 16.359,
+          "end": 16.939
+        },
+        {
+          "text": "la",
+          "start": 17.519,
+          "end": 17.579
+        },
+        {
+          "text": "regola",
+          "start": 17.639,
+          "end": 17.899
+        },
+        {
+          "text": "di",
+          "start": 17.959,
+          "end": 17.999
+        },
+        {
+          "text": "aggiornamento",
+          "start": 18.039,
+          "end": 18.699
+        },
+        {
+          "text": "è",
+          "start": 18.759,
+          "end": 18.799
+        },
+        {
+          "text": "delta",
+          "start": 19.039,
+          "end": 19.379
+        },
+        {
+          "text": "w",
+          "start": 19.499,
+          "end": 19.539
+        },
+        {
+          "text": "con",
+          "start": 19.699,
+          "end": 19.859
+        },
+        {
+          "text": "i",
+          "start": 19.919,
+          "end": 19.959
+        },
+        {
+          "text": "asterisco",
+          "start": 20.039,
+          "end": 20.639
+        },
+        {
+          "text": "uguale",
+          "start": 20.859,
+          "end": 21.279
+        },
+        {
+          "text": "a",
+          "start": 21.339,
+          "end": 21.379
+        },
+        {
+          "text": "eta",
+          "start": 21.499,
+          "end": 21.739
+        },
+        {
+          "text": "per",
+          "start": 22.179,
+          "end": 22.359
+        }
+      ]
+    },
+    {
+      "start": 22.699,
+      "end": 24.86,
+      "text": "x con i meno w con i asterisco.",
+      "words": [
+        {
+          "text": "x",
+          "start": 22.699,
+          "end": 22.739
+        },
+        {
+          "text": "con",
+          "start": 22.899,
+          "end": 23.079
+        },
+        {
+          "text": "i",
+          "start": 23.119,
+          "end": 23.159
+        },
+        {
+          "text": "meno",
+          "start": 23.519,
+          "end": 23.78
+        },
+        {
+          "text": "w",
+          "start": 23.84,
+          "end": 23.88
+        },
+        {
+          "text": "con",
+          "start": 24.0,
+          "end": 24.16
+        },
+        {
+          "text": "i",
+          "start": 24.2,
+          "end": 24.24
+        },
+        {
+          "text": "asterisco.",
+          "start": 24.3,
+          "end": 24.86
+        }
+      ]
+    },
+    {
+      "start": 25.76,
+      "end": 28.98,
+      "text": "In altre parole, si sposta soltanto il prototipo vincitore,",
+      "words": [
+        {
+          "text": "In",
+          "start": 25.76,
+          "end": 25.84
+        },
+        {
+          "text": "altre",
+          "start": 25.88,
+          "end": 26.08
+        },
+        {
+          "text": "parole,",
+          "start": 26.12,
+          "end": 26.46
+        },
+        {
+          "text": "si",
+          "start": 26.62,
+          "end": 26.7
+        },
+        {
+          "text": "sposta",
+          "start": 26.76,
+          "end": 27.08
+        },
+        {
+          "text": "soltanto",
+          "start": 27.2,
+          "end": 27.74
+        },
+        {
+          "text": "il",
+          "start": 27.78,
+          "end": 27.84
+        },
+        {
+          "text": "prototipo",
+          "start": 27.86,
+          "end": 28.36
+        },
+        {
+          "text": "vincitore,",
+          "start": 28.4,
+          "end": 28.98
+        }
+      ]
+    },
+    {
+      "start": 29.34,
+      "end": 32.78,
+      "text": "e lo si sposta lungo la direzione che lo avvicina all'esempio x con i.",
+      "words": [
+        {
+          "text": "e",
+          "start": 29.34,
+          "end": 29.38
+        },
+        {
+          "text": "lo",
+          "start": 29.42,
+          "end": 29.48
+        },
+        {
+          "text": "si",
+          "start": 29.52,
+          "end": 29.6
+        },
+        {
+          "text": "sposta",
+          "start": 29.64,
+          "end": 29.94
+        },
+        {
+          "text": "lungo",
+          "start": 30.0,
+          "end": 30.22
+        },
+        {
+          "text": "la",
+          "start": 30.26,
+          "end": 30.32
+        },
+        {
+          "text": "direzione",
+          "start": 30.36,
+          "end": 30.92
+        },
+        {
+          "text": "che",
+          "start": 31.06,
+          "end": 31.16
+        },
+        {
+          "text": "lo",
+          "start": 31.2,
+          "end": 31.26
+        },
+        {
+          "text": "avvicina",
+          "start": 31.32,
+          "end": 31.8
+        },
+        {
+          "text": "all'esempio",
+          "start": 31.84,
+          "end": 32.3
+        },
+        {
+          "text": "x",
+          "start": 32.42,
+          "end": 32.46
+        },
+        {
+          "text": "con",
+          "start": 32.56,
+          "end": 32.7
+        },
+        {
+          "text": "i.",
+          "start": 32.74,
+          "end": 32.78
+        }
+      ]
+    },
+    {
+      "start": 33.681,
+      "end": 35.621,
+      "text": "Vediamo la dimostrazione passo per passo.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 33.681,
+          "end": 33.941
+        },
+        {
+          "text": "la",
+          "start": 34.001,
+          "end": 34.061
+        },
+        {
+          "text": "dimostrazione",
+          "start": 34.081,
+          "end": 34.741
+        },
+        {
+          "text": "passo",
+          "start": 34.821,
+          "end": 35.061
+        },
+        {
+          "text": "per",
+          "start": 35.101,
+          "end": 35.221
+        },
+        {
+          "text": "passo.",
+          "start": 35.281,
+          "end": 35.621
+        }
+      ]
+    },
+    {
+      "start": 36.401,
+      "end": 37.861,
+      "text": "Fissato un esempio x con i,",
+      "words": [
+        {
+          "text": "Fissato",
+          "start": 36.401,
+          "end": 36.761
+        },
+        {
+          "text": "un",
+          "start": 36.801,
+          "end": 36.861
+        },
+        {
+          "text": "esempio",
+          "start": 36.901,
+          "end": 37.241
+        },
+        {
+          "text": "x",
+          "start": 37.501,
+          "end": 37.541
+        },
+        {
+          "text": "con",
+          "start": 37.641,
+          "end": 37.781
+        },
+        {
+          "text": "i,",
+          "start": 37.821,
+          "end": 37.861
+        }
+      ]
+    },
+    {
+      "start": 38.421,
+      "end": 42.041,
+      "text": "l'unico termine della sommatoria di E che dipende dal prototipo w con j",
+      "words": [
+        {
+          "text": "l'unico",
+          "start": 38.421,
+          "end": 38.741
+        },
+        {
+          "text": "termine",
+          "start": 38.801,
+          "end": 39.261
+        },
+        {
+          "text": "della",
+          "start": 39.301,
+          "end": 39.461
+        },
+        {
+          "text": "sommatoria",
+          "start": 39.501,
+          "end": 39.961
+        },
+        {
+          "text": "di",
+          "start": 40.001,
+          "end": 40.081
+        },
+        {
+          "text": "E",
+          "start": 40.201,
+          "end": 40.241
+        },
+        {
+          "text": "che",
+          "start": 40.461,
+          "end": 40.541
+        },
+        {
+          "text": "dipende",
+          "start": 40.581,
+          "end": 40.921
+        },
+        {
+          "text": "dal",
+          "start": 40.961,
+          "end": 41.081
+        },
+        {
+          "text": "prototipo",
+          "start": 41.101,
+          "end": 41.581
+        },
+        {
+          "text": "w",
+          "start": 41.661,
+          "end": 41.701
+        },
+        {
+          "text": "con",
+          "start": 41.801,
+          "end": 41.961
+        },
+        {
+          "text": "j",
+          "start": 42.001,
+          "end": 42.041
+        }
+      ]
+    },
+    {
+      "start": 42.721,
+      "end": 45.402,
+      "text": "è la norma quadra di x con i meno w con j",
+      "words": [
+        {
+          "text": "è",
+          "start": 42.721,
+          "end": 42.761
+        },
+        {
+          "text": "la",
+          "start": 42.801,
+          "end": 42.861
+        },
+        {
+          "text": "norma",
+          "start": 42.901,
+          "end": 43.162
+        },
+        {
+          "text": "quadra",
+          "start": 43.242,
+          "end": 43.642
+        },
+        {
+          "text": "di",
+          "start": 43.702,
+          "end": 43.782
+        },
+        {
+          "text": "x",
+          "start": 44.062,
+          "end": 44.102
+        },
+        {
+          "text": "con",
+          "start": 44.222,
+          "end": 44.402
+        },
+        {
+          "text": "i",
+          "start": 44.442,
+          "end": 44.482
+        },
+        {
+          "text": "meno",
+          "start": 44.742,
+          "end": 44.962
+        },
+        {
+          "text": "w",
+          "start": 45.002,
+          "end": 45.042
+        },
+        {
+          "text": "con",
+          "start": 45.122,
+          "end": 45.282
+        },
+        {
+          "text": "j",
+          "start": 45.362,
+          "end": 45.402
+        }
+      ]
+    },
+    {
+      "start": 46.002,
+      "end": 48.522,
+      "text": "moltiplicata per delta winner di i virgola j.",
+      "words": [
+        {
+          "text": "moltiplicata",
+          "start": 46.002,
+          "end": 46.662
+        },
+        {
+          "text": "per",
+          "start": 46.722,
+          "end": 46.842
+        },
+        {
+          "text": "delta",
+          "start": 46.922,
+          "end": 47.202
+        },
+        {
+          "text": "winner",
+          "start": 47.302,
+          "end": 47.662
+        },
+        {
+          "text": "di",
+          "start": 47.822,
+          "end": 47.902
+        },
+        {
+          "text": "i",
+          "start": 47.982,
+          "end": 48.022
+        },
+        {
+          "text": "virgola",
+          "start": 48.062,
+          "end": 48.442
+        },
+        {
+          "text": "j.",
+          "start": 48.482,
+          "end": 48.522
+        }
+      ]
+    },
+    {
+      "start": 49.502,
+      "end": 54.503,
+      "text": "Esplicitando la norma quadra come somma sulle componenti t di x con i virgola t",
+      "words": [
+        {
+          "text": "Esplicitando",
+          "start": 49.502,
+          "end": 50.142
+        },
+        {
+          "text": "la",
+          "start": 50.182,
+          "end": 50.242
+        },
+        {
+          "text": "norma",
+          "start": 50.302,
+          "end": 50.542
+        },
+        {
+          "text": "quadra",
+          "start": 50.602,
+          "end": 50.902
+        },
+        {
+          "text": "come",
+          "start": 50.982,
+          "end": 51.162
+        },
+        {
+          "text": "somma",
+          "start": 51.262,
+          "end": 51.502
+        },
+        {
+          "text": "sulle",
+          "start": 51.562,
+          "end": 51.762
+        },
+        {
+          "text": "componenti",
+          "start": 51.802,
+          "end": 52.382
+        },
+        {
+          "text": "t",
+          "start": 52.522,
+          "end": 52.562
+        },
+        {
+          "text": "di",
+          "start": 52.902,
+          "end": 53.023
+        },
+        {
+          "text": "x",
+          "start": 53.403,
+          "end": 53.443
+        },
+        {
+          "text": "con",
+          "start": 53.543,
+          "end": 53.723
+        },
+        {
+          "text": "i",
+          "start": 53.763,
+          "end": 53.803
+        },
+        {
+          "text": "virgola",
+          "start": 54.003,
+          "end": 54.343
+        },
+        {
+          "text": "t",
+          "start": 54.463,
+          "end": 54.503
+        }
+      ]
+    },
+    {
+      "start": 54.823,
+      "end": 58.383,
+      "text": "meno w con j virgola t al quadrato,",
+      "words": [
+        {
+          "text": "meno",
+          "start": 54.823,
+          "end": 55.083
+        },
+        {
+          "text": "w",
+          "start": 55.503,
+          "end": 55.543
+        },
+        {
+          "text": "con",
+          "start": 56.203,
+          "end": 56.363
+        },
+        {
+          "text": "j",
+          "start": 56.443,
+          "end": 56.483
+        },
+        {
+          "text": "virgola",
+          "start": 56.863,
+          "end": 57.203
+        },
+        {
+          "text": "t",
+          "start": 57.303,
+          "end": 57.343
+        },
+        {
+          "text": "al",
+          "start": 57.763,
+          "end": 57.863
+        },
+        {
+          "text": "quadrato,",
+          "start": 57.903,
+          "end": 58.383
+        }
+      ]
+    },
+    {
+      "start": 59.043,
+      "end": 62.003,
+      "text": "la derivata parziale rispetto al vettore w con j",
+      "words": [
+        {
+          "text": "la",
+          "start": 59.043,
+          "end": 59.103
+        },
+        {
+          "text": "derivata",
+          "start": 59.143,
+          "end": 59.483
+        },
+        {
+          "text": "parziale",
+          "start": 59.523,
+          "end": 59.943
+        },
+        {
+          "text": "rispetto",
+          "start": 59.983,
+          "end": 60.343
+        },
+        {
+          "text": "al",
+          "start": 60.363,
+          "end": 60.443
+        },
+        {
+          "text": "vettore",
+          "start": 60.483,
+          "end": 60.883
+        },
+        {
+          "text": "w",
+          "start": 61.183,
+          "end": 61.223
+        },
+        {
+          "text": "con",
+          "start": 61.763,
+          "end": 61.903
+        },
+        {
+          "text": "j",
+          "start": 61.963,
+          "end": 62.003
+        }
+      ]
+    },
+    {
+      "start": 62.784,
+      "end": 66.244,
+      "text": "vale meno due per x con i meno w con j,",
+      "words": [
+        {
+          "text": "vale",
+          "start": 62.784,
+          "end": 63.064
+        },
+        {
+          "text": "meno",
+          "start": 63.324,
+          "end": 63.524
+        },
+        {
+          "text": "due",
+          "start": 63.604,
+          "end": 63.844
+        },
+        {
+          "text": "per",
+          "start": 63.924,
+          "end": 64.204
+        },
+        {
+          "text": "x",
+          "start": 64.704,
+          "end": 64.744
+        },
+        {
+          "text": "con",
+          "start": 64.844,
+          "end": 65.004
+        },
+        {
+          "text": "i",
+          "start": 65.064,
+          "end": 65.104
+        },
+        {
+          "text": "meno",
+          "start": 65.364,
+          "end": 65.584
+        },
+        {
+          "text": "w",
+          "start": 65.644,
+          "end": 65.68400000000001
+        },
+        {
+          "text": "con",
+          "start": 66.044,
+          "end": 66.164
+        },
+        {
+          "text": "j,",
+          "start": 66.204,
+          "end": 66.244
+        }
+      ]
+    },
+    {
+      "start": 67.064,
+      "end": 70.26400000000001,
+      "text": "ancora moltiplicata per delta winner di i virgola j.",
+      "words": [
+        {
+          "text": "ancora",
+          "start": 67.064,
+          "end": 67.344
+        },
+        {
+          "text": "moltiplicata",
+          "start": 67.384,
+          "end": 67.964
+        },
+        {
+          "text": "per",
+          "start": 68.044,
+          "end": 68.164
+        },
+        {
+          "text": "delta",
+          "start": 68.264,
+          "end": 68.644
+        },
+        {
+          "text": "winner",
+          "start": 68.764,
+          "end": 69.184
+        },
+        {
+          "text": "di",
+          "start": 69.284,
+          "end": 69.384
+        },
+        {
+          "text": "i",
+          "start": 69.624,
+          "end": 69.664
+        },
+        {
+          "text": "virgola",
+          "start": 69.844,
+          "end": 70.144
+        },
+        {
+          "text": "j.",
+          "start": 70.224,
+          "end": 70.26400000000001
+        }
+      ]
+    },
+    {
+      "start": 71.264,
+      "end": 75.485,
+      "text": "Questo gradiente è identicamente nullo per tutti i prototipi che non hanno vinto;",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 71.264,
+          "end": 71.504
+        },
+        {
+          "text": "gradiente",
+          "start": 71.544,
+          "end": 72.104
+        },
+        {
+          "text": "è",
+          "start": 72.264,
+          "end": 72.304
+        },
+        {
+          "text": "identicamente",
+          "start": 72.404,
+          "end": 73.105
+        },
+        {
+          "text": "nullo",
+          "start": 73.165,
+          "end": 73.445
+        },
+        {
+          "text": "per",
+          "start": 73.485,
+          "end": 73.625
+        },
+        {
+          "text": "tutti",
+          "start": 73.665,
+          "end": 73.905
+        },
+        {
+          "text": "i",
+          "start": 73.945,
+          "end": 73.985
+        },
+        {
+          "text": "prototipi",
+          "start": 74.005,
+          "end": 74.505
+        },
+        {
+          "text": "che",
+          "start": 74.565,
+          "end": 74.645
+        },
+        {
+          "text": "non",
+          "start": 74.705,
+          "end": 74.825
+        },
+        {
+          "text": "hanno",
+          "start": 74.845,
+          "end": 75.065
+        },
+        {
+          "text": "vinto;",
+          "start": 75.105,
+          "end": 75.485
+        }
+      ]
+    },
+    {
+      "start": 76.145,
+      "end": 79.605,
+      "text": "resta diverso da zero solo per il vincitore i asterisco,",
+      "words": [
+        {
+          "text": "resta",
+          "start": 76.145,
+          "end": 76.365
+        },
+        {
+          "text": "diverso",
+          "start": 76.405,
+          "end": 76.725
+        },
+        {
+          "text": "da",
+          "start": 76.785,
+          "end": 76.845
+        },
+        {
+          "text": "zero",
+          "start": 76.945,
+          "end": 77.205
+        },
+        {
+          "text": "solo",
+          "start": 77.345,
+          "end": 77.565
+        },
+        {
+          "text": "per",
+          "start": 77.605,
+          "end": 77.705
+        },
+        {
+          "text": "il",
+          "start": 77.745,
+          "end": 77.825
+        },
+        {
+          "text": "vincitore",
+          "start": 77.865,
+          "end": 78.465
+        },
+        {
+          "text": "i",
+          "start": 78.765,
+          "end": 78.805
+        },
+        {
+          "text": "asterisco,",
+          "start": 79.005,
+          "end": 79.605
+        }
+      ]
+    },
+    {
+      "start": 79.945,
+      "end": 81.245,
+      "text": "dove delta winner vale uno.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 79.945,
+          "end": 80.105
+        },
+        {
+          "text": "delta",
+          "start": 80.165,
+          "end": 80.405
+        },
+        {
+          "text": "winner",
+          "start": 80.465,
+          "end": 80.765
+        },
+        {
+          "text": "vale",
+          "start": 80.825,
+          "end": 81.005
+        },
+        {
+          "text": "uno.",
+          "start": 81.105,
+          "end": 81.245
+        }
+      ]
+    },
+    {
+      "start": 82.185,
+      "end": 86.326,
+      "text": "Muovendoci nel verso opposto al gradiente, quindi cambiando il segno meno in più,",
+      "words": [
+        {
+          "text": "Muovendoci",
+          "start": 82.185,
+          "end": 82.686
+        },
+        {
+          "text": "nel",
+          "start": 82.726,
+          "end": 82.846
+        },
+        {
+          "text": "verso",
+          "start": 82.886,
+          "end": 83.126
+        },
+        {
+          "text": "opposto",
+          "start": 83.186,
+          "end": 83.526
+        },
+        {
+          "text": "al",
+          "start": 83.546,
+          "end": 83.606
+        },
+        {
+          "text": "gradiente,",
+          "start": 83.646,
+          "end": 84.206
+        },
+        {
+          "text": "quindi",
+          "start": 84.366,
+          "end": 84.566
+        },
+        {
+          "text": "cambiando",
+          "start": 84.626,
+          "end": 85.186
+        },
+        {
+          "text": "il",
+          "start": 85.246,
+          "end": 85.306
+        },
+        {
+          "text": "segno",
+          "start": 85.366,
+          "end": 85.586
+        },
+        {
+          "text": "meno",
+          "start": 85.646,
+          "end": 85.866
+        },
+        {
+          "text": "in",
+          "start": 86.026,
+          "end": 86.106
+        },
+        {
+          "text": "più,",
+          "start": 86.186,
+          "end": 86.326
+        }
+      ]
+    },
+    {
+      "start": 87.026,
+      "end": 89.726,
+      "text": "e assorbendo la costante due nel learning rate eta,",
+      "words": [
+        {
+          "text": "e",
+          "start": 87.026,
+          "end": 87.066
+        },
+        {
+          "text": "assorbendo",
+          "start": 87.086,
+          "end": 87.566
+        },
+        {
+          "text": "la",
+          "start": 87.606,
+          "end": 87.666
+        },
+        {
+          "text": "costante",
+          "start": 87.706,
+          "end": 88.066
+        },
+        {
+          "text": "due",
+          "start": 88.126,
+          "end": 88.326
+        },
+        {
+          "text": "nel",
+          "start": 88.386,
+          "end": 88.506
+        },
+        {
+          "text": "learning",
+          "start": 88.546,
+          "end": 88.906
+        },
+        {
+          "text": "rate",
+          "start": 88.986,
+          "end": 89.306
+        },
+        {
+          "text": "eta,",
+          "start": 89.486,
+          "end": 89.726
+        }
+      ]
+    },
+    {
+      "start": 90.346,
+      "end": 91.906,
+      "text": "otteniamo esattamente delta w",
+      "words": [
+        {
+          "text": "otteniamo",
+          "start": 90.346,
+          "end": 90.746
+        },
+        {
+          "text": "esattamente",
+          "start": 90.786,
+          "end": 91.406
+        },
+        {
+          "text": "delta",
+          "start": 91.506,
+          "end": 91.806
+        },
+        {
+          "text": "w",
+          "start": 91.866,
+          "end": 91.906
+        }
+      ]
+    },
+    {
+      "start": 92.467,
+      "end": 96.727,
+      "text": "con i asterisco uguale a eta per x con i meno w",
+      "words": [
+        {
+          "text": "con",
+          "start": 92.467,
+          "end": 92.647
+        },
+        {
+          "text": "i",
+          "start": 92.707,
+          "end": 92.747
+        },
+        {
+          "text": "asterisco",
+          "start": 92.907,
+          "end": 93.527
+        },
+        {
+          "text": "uguale",
+          "start": 93.807,
+          "end": 94.127
+        },
+        {
+          "text": "a",
+          "start": 94.187,
+          "end": 94.227
+        },
+        {
+          "text": "eta",
+          "start": 94.447,
+          "end": 94.727
+        },
+        {
+          "text": "per",
+          "start": 94.887,
+          "end": 95.127
+        },
+        {
+          "text": "x",
+          "start": 95.527,
+          "end": 95.56700000000001
+        },
+        {
+          "text": "con",
+          "start": 95.667,
+          "end": 95.827
+        },
+        {
+          "text": "i",
+          "start": 95.867,
+          "end": 95.90700000000001
+        },
+        {
+          "text": "meno",
+          "start": 96.227,
+          "end": 96.507
+        },
+        {
+          "text": "w",
+          "start": 96.687,
+          "end": 96.727
+        }
+      ]
+    },
+    {
+      "start": 97.287,
+      "end": 98.187,
+      "text": "con i asterisco.",
+      "words": [
+        {
+          "text": "con",
+          "start": 97.287,
+          "end": 97.427
+        },
+        {
+          "text": "i",
+          "start": 97.467,
+          "end": 97.507
+        },
+        {
+          "text": "asterisco.",
+          "start": 97.667,
+          "end": 98.187
+        }
+      ]
+    },
+    {
+      "start": 99.167,
+      "end": 100.667,
+      "text": "Questo è il K-means on-line.",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 99.167,
+          "end": 99.487
+        },
+        {
+          "text": "è",
+          "start": 99.647,
+          "end": 99.68700000000001
+        },
+        {
+          "text": "il",
+          "start": 99.727,
+          "end": 99.787
+        },
+        {
+          "text": "K-means",
+          "start": 99.827,
+          "end": 100.187
+        },
+        {
+          "text": "on-line.",
+          "start": 100.227,
+          "end": 100.667
+        }
+      ]
+    },
+    {
+      "start": 101.307,
+      "end": 105.048,
+      "text": "Essendo una discesa del gradiente stocastica su una superficie non convessa,",
+      "words": [
+        {
+          "text": "Essendo",
+          "start": 101.307,
+          "end": 101.607
+        },
+        {
+          "text": "una",
+          "start": 101.647,
+          "end": 101.727
+        },
+        {
+          "text": "discesa",
+          "start": 101.767,
+          "end": 102.128
+        },
+        {
+          "text": "del",
+          "start": 102.168,
+          "end": 102.288
+        },
+        {
+          "text": "gradiente",
+          "start": 102.328,
+          "end": 102.748
+        },
+        {
+          "text": "stocastica",
+          "start": 102.808,
+          "end": 103.448
+        },
+        {
+          "text": "su",
+          "start": 103.568,
+          "end": 103.628
+        },
+        {
+          "text": "una",
+          "start": 103.688,
+          "end": 103.788
+        },
+        {
+          "text": "superficie",
+          "start": 103.828,
+          "end": 104.348
+        },
+        {
+          "text": "non",
+          "start": 104.388,
+          "end": 104.488
+        },
+        {
+          "text": "convessa,",
+          "start": 104.528,
+          "end": 105.048
+        }
+      ]
+    },
+    {
+      "start": 105.568,
+      "end": 107.428,
+      "text": "eredita tre caratteristiche tipiche:",
+      "words": [
+        {
+          "text": "eredita",
+          "start": 105.568,
+          "end": 105.988
+        },
+        {
+          "text": "tre",
+          "start": 106.128,
+          "end": 106.288
+        },
+        {
+          "text": "caratteristiche",
+          "start": 106.368,
+          "end": 107.028
+        },
+        {
+          "text": "tipiche:",
+          "start": 107.068,
+          "end": 107.428
+        }
+      ]
+    },
+    {
+      "start": 108.008,
+      "end": 112.729,
+      "text": "è soggetto a minimi locali, il risultato dipende dall'inizializzazione dei prototipi,",
+      "words": [
+        {
+          "text": "è",
+          "start": 108.008,
+          "end": 108.048
+        },
+        {
+          "text": "soggetto",
+          "start": 108.128,
+          "end": 108.548
+        },
+        {
+          "text": "a",
+          "start": 108.568,
+          "end": 108.608
+        },
+        {
+          "text": "minimi",
+          "start": 108.628,
+          "end": 108.888
+        },
+        {
+          "text": "locali,",
+          "start": 108.948,
+          "end": 109.348
+        },
+        {
+          "text": "il",
+          "start": 109.848,
+          "end": 109.928
+        },
+        {
+          "text": "risultato",
+          "start": 109.968,
+          "end": 110.428
+        },
+        {
+          "text": "dipende",
+          "start": 110.488,
+          "end": 110.848
+        },
+        {
+          "text": "dall'inizializzazione",
+          "start": 110.908,
+          "end": 111.989
+        },
+        {
+          "text": "dei",
+          "start": 112.029,
+          "end": 112.149
+        },
+        {
+          "text": "prototipi,",
+          "start": 112.169,
+          "end": 112.729
+        }
+      ]
+    },
+    {
+      "start": 113.329,
+      "end": 116.389,
+      "text": "e il numero K di cluster deve essere fornito in anticipo.",
+      "words": [
+        {
+          "text": "e",
+          "start": 113.329,
+          "end": 113.369
+        },
+        {
+          "text": "il",
+          "start": 113.409,
+          "end": 113.469
+        },
+        {
+          "text": "numero",
+          "start": 113.509,
+          "end": 113.749
+        },
+        {
+          "text": "K",
+          "start": 113.789,
+          "end": 113.82900000000001
+        },
+        {
+          "text": "di",
+          "start": 114.109,
+          "end": 114.169
+        },
+        {
+          "text": "cluster",
+          "start": 114.229,
+          "end": 114.729
+        },
+        {
+          "text": "deve",
+          "start": 114.889,
+          "end": 115.029
+        },
+        {
+          "text": "essere",
+          "start": 115.089,
+          "end": 115.309
+        },
+        {
+          "text": "fornito",
+          "start": 115.349,
+          "end": 115.729
+        },
+        {
+          "text": "in",
+          "start": 115.789,
+          "end": 115.869
+        },
+        {
+          "text": "anticipo.",
+          "start": 115.889,
+          "end": 116.389
+        }
+      ]
+    }
+  ]
+}

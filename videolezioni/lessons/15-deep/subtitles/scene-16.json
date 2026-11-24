@@ -1,0 +1,1945 @@
+{
+  "duration": 125.33,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.661,
+      "text": "Formalizziamo ora il meccanismo di vanishing ed exploding gradient con uno schizzo matematico molto trasparente.",
+      "words": [
+        {
+          "text": "Formalizziamo",
+          "start": 0.08,
+          "end": 0.8
+        },
+        {
+          "text": "ora",
+          "start": 0.92,
+          "end": 1.08
+        },
+        {
+          "text": "il",
+          "start": 1.14,
+          "end": 1.2
+        },
+        {
+          "text": "meccanismo",
+          "start": 1.24,
+          "end": 1.82
+        },
+        {
+          "text": "di",
+          "start": 1.92,
+          "end": 1.98
+        },
+        {
+          "text": "vanishing",
+          "start": 2.08,
+          "end": 2.68
+        },
+        {
+          "text": "ed",
+          "start": 2.84,
+          "end": 2.94
+        },
+        {
+          "text": "exploding",
+          "start": 2.98,
+          "end": 3.541
+        },
+        {
+          "text": "gradient",
+          "start": 3.581,
+          "end": 4.121
+        },
+        {
+          "text": "con",
+          "start": 4.261,
+          "end": 4.381
+        },
+        {
+          "text": "uno",
+          "start": 4.421,
+          "end": 4.561
+        },
+        {
+          "text": "schizzo",
+          "start": 4.621,
+          "end": 4.921
+        },
+        {
+          "text": "matematico",
+          "start": 4.961,
+          "end": 5.561
+        },
+        {
+          "text": "molto",
+          "start": 5.661,
+          "end": 5.921
+        },
+        {
+          "text": "trasparente.",
+          "start": 5.981,
+          "end": 6.661
+        }
+      ]
+    },
+    {
+      "start": 7.361,
+      "end": 13.422,
+      "text": "Consideriamo una rete di M strati, in cui ogni strato trasforma l'attivazione precedente tramite h",
+      "words": [
+        {
+          "text": "Consideriamo",
+          "start": 7.361,
+          "end": 7.861
+        },
+        {
+          "text": "una",
+          "start": 7.941,
+          "end": 8.061
+        },
+        {
+          "text": "rete",
+          "start": 8.121,
+          "end": 8.341
+        },
+        {
+          "text": "di",
+          "start": 8.421,
+          "end": 8.501
+        },
+        {
+          "text": "M",
+          "start": 8.701,
+          "end": 8.741
+        },
+        {
+          "text": "strati,",
+          "start": 8.881,
+          "end": 9.362
+        },
+        {
+          "text": "in",
+          "start": 9.622,
+          "end": 9.702
+        },
+        {
+          "text": "cui",
+          "start": 9.742,
+          "end": 9.902
+        },
+        {
+          "text": "ogni",
+          "start": 9.982,
+          "end": 10.182
+        },
+        {
+          "text": "strato",
+          "start": 10.262,
+          "end": 10.642
+        },
+        {
+          "text": "trasforma",
+          "start": 10.682,
+          "end": 11.142
+        },
+        {
+          "text": "l'attivazione",
+          "start": 11.262,
+          "end": 11.882
+        },
+        {
+          "text": "precedente",
+          "start": 11.922,
+          "end": 12.542
+        },
+        {
+          "text": "tramite",
+          "start": 12.642,
+          "end": 13.042
+        },
+        {
+          "text": "h",
+          "start": 13.382,
+          "end": 13.422
+        }
+      ]
+    },
+    {
+      "start": 13.502,
+      "end": 16.163,
+      "text": "con i uguale a F con i di h con i meno uno,",
+      "words": [
+        {
+          "text": "con",
+          "start": 13.502,
+          "end": 13.662
+        },
+        {
+          "text": "i",
+          "start": 13.702,
+          "end": 13.742
+        },
+        {
+          "text": "uguale",
+          "start": 13.942,
+          "end": 14.222
+        },
+        {
+          "text": "a",
+          "start": 14.262,
+          "end": 14.302
+        },
+        {
+          "text": "F",
+          "start": 14.542,
+          "end": 14.582
+        },
+        {
+          "text": "con",
+          "start": 14.702,
+          "end": 14.842
+        },
+        {
+          "text": "i",
+          "start": 14.882,
+          "end": 14.922
+        },
+        {
+          "text": "di",
+          "start": 15.022,
+          "end": 15.082
+        },
+        {
+          "text": "h",
+          "start": 15.342,
+          "end": 15.382
+        },
+        {
+          "text": "con",
+          "start": 15.442,
+          "end": 15.583
+        },
+        {
+          "text": "i",
+          "start": 15.623,
+          "end": 15.663
+        },
+        {
+          "text": "meno",
+          "start": 15.703,
+          "end": 15.883
+        },
+        {
+          "text": "uno,",
+          "start": 15.983,
+          "end": 16.163
+        }
+      ]
+    },
+    {
+      "start": 16.623,
+      "end": 21.383,
+      "text": "e l'intera rete è la composizione F uguale a F con M composto fino a",
+      "words": [
+        {
+          "text": "e",
+          "start": 16.623,
+          "end": 16.663
+        },
+        {
+          "text": "l'intera",
+          "start": 16.703,
+          "end": 17.043
+        },
+        {
+          "text": "rete",
+          "start": 17.103,
+          "end": 17.343
+        },
+        {
+          "text": "è",
+          "start": 17.483,
+          "end": 17.523
+        },
+        {
+          "text": "la",
+          "start": 17.563,
+          "end": 17.623
+        },
+        {
+          "text": "composizione",
+          "start": 17.663,
+          "end": 18.343
+        },
+        {
+          "text": "F",
+          "start": 18.743,
+          "end": 18.783
+        },
+        {
+          "text": "uguale",
+          "start": 19.023,
+          "end": 19.343
+        },
+        {
+          "text": "a",
+          "start": 19.403,
+          "end": 19.443
+        },
+        {
+          "text": "F",
+          "start": 19.743,
+          "end": 19.783
+        },
+        {
+          "text": "con",
+          "start": 19.883,
+          "end": 20.023
+        },
+        {
+          "text": "M",
+          "start": 20.223,
+          "end": 20.263
+        },
+        {
+          "text": "composto",
+          "start": 20.463,
+          "end": 20.963
+        },
+        {
+          "text": "fino",
+          "start": 21.043,
+          "end": 21.263
+        },
+        {
+          "text": "a",
+          "start": 21.343,
+          "end": 21.383
+        }
+      ]
+    },
+    {
+      "start": 21.583,
+      "end": 22.124,
+      "text": "F con uno.",
+      "words": [
+        {
+          "text": "F",
+          "start": 21.583,
+          "end": 21.623
+        },
+        {
+          "text": "con",
+          "start": 21.743,
+          "end": 21.864
+        },
+        {
+          "text": "uno.",
+          "start": 21.944,
+          "end": 22.124
+        }
+      ]
+    },
+    {
+      "start": 22.944,
+      "end": 27.164,
+      "text": "Applicando la regola della catena rispetto ai pesi w con l dello strato l,",
+      "words": [
+        {
+          "text": "Applicando",
+          "start": 22.944,
+          "end": 23.344
+        },
+        {
+          "text": "la",
+          "start": 23.404,
+          "end": 23.444
+        },
+        {
+          "text": "regola",
+          "start": 23.484,
+          "end": 23.724
+        },
+        {
+          "text": "della",
+          "start": 23.764,
+          "end": 23.904
+        },
+        {
+          "text": "catena",
+          "start": 23.944,
+          "end": 24.244
+        },
+        {
+          "text": "rispetto",
+          "start": 24.324,
+          "end": 24.704
+        },
+        {
+          "text": "ai",
+          "start": 24.764,
+          "end": 24.864
+        },
+        {
+          "text": "pesi",
+          "start": 24.924,
+          "end": 25.224
+        },
+        {
+          "text": "w",
+          "start": 25.284,
+          "end": 25.324
+        },
+        {
+          "text": "con",
+          "start": 25.764,
+          "end": 25.904
+        },
+        {
+          "text": "l",
+          "start": 26.064,
+          "end": 26.104
+        },
+        {
+          "text": "dello",
+          "start": 26.344,
+          "end": 26.524
+        },
+        {
+          "text": "strato",
+          "start": 26.584,
+          "end": 26.864
+        },
+        {
+          "text": "l,",
+          "start": 27.124,
+          "end": 27.164
+        }
+      ]
+    },
+    {
+      "start": 27.664,
+      "end": 31.945,
+      "text": "otteniamo che la derivata parziale di F rispetto a w con l è il prodotto",
+      "words": [
+        {
+          "text": "otteniamo",
+          "start": 27.664,
+          "end": 28.065
+        },
+        {
+          "text": "che",
+          "start": 28.105,
+          "end": 28.185
+        },
+        {
+          "text": "la",
+          "start": 28.225,
+          "end": 28.285
+        },
+        {
+          "text": "derivata",
+          "start": 28.325,
+          "end": 28.685
+        },
+        {
+          "text": "parziale",
+          "start": 28.725,
+          "end": 29.145
+        },
+        {
+          "text": "di",
+          "start": 29.205,
+          "end": 29.285
+        },
+        {
+          "text": "F",
+          "start": 29.585,
+          "end": 29.625
+        },
+        {
+          "text": "rispetto",
+          "start": 29.865,
+          "end": 30.225
+        },
+        {
+          "text": "a",
+          "start": 30.285,
+          "end": 30.325
+        },
+        {
+          "text": "w",
+          "start": 30.345,
+          "end": 30.385
+        },
+        {
+          "text": "con",
+          "start": 30.745,
+          "end": 30.865
+        },
+        {
+          "text": "l",
+          "start": 31.025,
+          "end": 31.065
+        },
+        {
+          "text": "è",
+          "start": 31.385,
+          "end": 31.425
+        },
+        {
+          "text": "il",
+          "start": 31.505,
+          "end": 31.565
+        },
+        {
+          "text": "prodotto",
+          "start": 31.605,
+          "end": 31.945
+        }
+      ]
+    },
+    {
+      "start": 31.985,
+      "end": 35.366,
+      "text": "della derivata di F con M rispetto ad h con M meno uno,",
+      "words": [
+        {
+          "text": "della",
+          "start": 31.985,
+          "end": 32.165
+        },
+        {
+          "text": "derivata",
+          "start": 32.205,
+          "end": 32.645
+        },
+        {
+          "text": "di",
+          "start": 32.705,
+          "end": 32.785
+        },
+        {
+          "text": "F",
+          "start": 32.985,
+          "end": 33.025
+        },
+        {
+          "text": "con",
+          "start": 33.125,
+          "end": 33.245
+        },
+        {
+          "text": "M",
+          "start": 33.485,
+          "end": 33.525
+        },
+        {
+          "text": "rispetto",
+          "start": 33.765,
+          "end": 34.105
+        },
+        {
+          "text": "ad",
+          "start": 34.125,
+          "end": 34.185
+        },
+        {
+          "text": "h",
+          "start": 34.346,
+          "end": 34.386
+        },
+        {
+          "text": "con",
+          "start": 34.466,
+          "end": 34.586
+        },
+        {
+          "text": "M",
+          "start": 34.746,
+          "end": 34.786
+        },
+        {
+          "text": "meno",
+          "start": 34.866,
+          "end": 35.046
+        },
+        {
+          "text": "uno,",
+          "start": 35.186,
+          "end": 35.366
+        }
+      ]
+    },
+    {
+      "start": 35.786,
+      "end": 39.286,
+      "text": "fino alla derivata di F con l più uno rispetto ad h con l,",
+      "words": [
+        {
+          "text": "fino",
+          "start": 35.786,
+          "end": 35.966
+        },
+        {
+          "text": "alla",
+          "start": 36.006,
+          "end": 36.146
+        },
+        {
+          "text": "derivata",
+          "start": 36.186,
+          "end": 36.666
+        },
+        {
+          "text": "di",
+          "start": 36.766,
+          "end": 36.846
+        },
+        {
+          "text": "F",
+          "start": 37.086,
+          "end": 37.126
+        },
+        {
+          "text": "con",
+          "start": 37.206,
+          "end": 37.346
+        },
+        {
+          "text": "l",
+          "start": 37.426,
+          "end": 37.466
+        },
+        {
+          "text": "più",
+          "start": 37.606,
+          "end": 37.726
+        },
+        {
+          "text": "uno",
+          "start": 37.846,
+          "end": 38.026
+        },
+        {
+          "text": "rispetto",
+          "start": 38.226,
+          "end": 38.566
+        },
+        {
+          "text": "ad",
+          "start": 38.586,
+          "end": 38.666
+        },
+        {
+          "text": "h",
+          "start": 38.826,
+          "end": 38.866
+        },
+        {
+          "text": "con",
+          "start": 38.946,
+          "end": 39.086
+        },
+        {
+          "text": "l,",
+          "start": 39.246,
+          "end": 39.286
+        }
+      ]
+    },
+    {
+      "start": 39.766,
+      "end": 43.667,
+      "text": "moltiplicato per la derivata locale di F con l rispetto a w con l.",
+      "words": [
+        {
+          "text": "moltiplicato",
+          "start": 39.766,
+          "end": 40.346
+        },
+        {
+          "text": "per",
+          "start": 40.386,
+          "end": 40.486
+        },
+        {
+          "text": "la",
+          "start": 40.526,
+          "end": 40.567
+        },
+        {
+          "text": "derivata",
+          "start": 40.607,
+          "end": 41.007
+        },
+        {
+          "text": "locale",
+          "start": 41.047,
+          "end": 41.407
+        },
+        {
+          "text": "di",
+          "start": 41.447,
+          "end": 41.527
+        },
+        {
+          "text": "F",
+          "start": 41.727,
+          "end": 41.767
+        },
+        {
+          "text": "con",
+          "start": 41.867,
+          "end": 42.007
+        },
+        {
+          "text": "l",
+          "start": 42.167,
+          "end": 42.207
+        },
+        {
+          "text": "rispetto",
+          "start": 42.507,
+          "end": 42.847
+        },
+        {
+          "text": "a",
+          "start": 42.887,
+          "end": 42.927
+        },
+        {
+          "text": "w",
+          "start": 42.947,
+          "end": 42.987
+        },
+        {
+          "text": "con",
+          "start": 43.347,
+          "end": 43.487
+        },
+        {
+          "text": "l.",
+          "start": 43.627,
+          "end": 43.667
+        }
+      ]
+    },
+    {
+      "start": 44.467,
+      "end": 49.888,
+      "text": "Questo prodotto contiene esattamente M meno l fattori parziale F con i su parziale h",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 44.467,
+          "end": 44.687
+        },
+        {
+          "text": "prodotto",
+          "start": 44.727,
+          "end": 45.107
+        },
+        {
+          "text": "contiene",
+          "start": 45.147,
+          "end": 45.487
+        },
+        {
+          "text": "esattamente",
+          "start": 45.527,
+          "end": 46.087
+        },
+        {
+          "text": "M",
+          "start": 46.427,
+          "end": 46.467
+        },
+        {
+          "text": "meno",
+          "start": 46.587,
+          "end": 46.787
+        },
+        {
+          "text": "l",
+          "start": 46.988,
+          "end": 47.028
+        },
+        {
+          "text": "fattori",
+          "start": 47.128,
+          "end": 47.608
+        },
+        {
+          "text": "parziale",
+          "start": 47.748,
+          "end": 48.228
+        },
+        {
+          "text": "F",
+          "start": 48.448,
+          "end": 48.488
+        },
+        {
+          "text": "con",
+          "start": 48.608,
+          "end": 48.748
+        },
+        {
+          "text": "i",
+          "start": 48.788,
+          "end": 48.828
+        },
+        {
+          "text": "su",
+          "start": 49.028,
+          "end": 49.108
+        },
+        {
+          "text": "parziale",
+          "start": 49.168,
+          "end": 49.608
+        },
+        {
+          "text": "h",
+          "start": 49.848,
+          "end": 49.888
+        }
+      ]
+    },
+    {
+      "start": 49.948,
+      "end": 53.509,
+      "text": "con i meno uno, uno per ciascuno degli strati sopra lo strato l.",
+      "words": [
+        {
+          "text": "con",
+          "start": 49.948,
+          "end": 50.068
+        },
+        {
+          "text": "i",
+          "start": 50.088,
+          "end": 50.128
+        },
+        {
+          "text": "meno",
+          "start": 50.168,
+          "end": 50.348
+        },
+        {
+          "text": "uno,",
+          "start": 50.468,
+          "end": 50.628
+        },
+        {
+          "text": "uno",
+          "start": 51.048,
+          "end": 51.208
+        },
+        {
+          "text": "per",
+          "start": 51.248,
+          "end": 51.348
+        },
+        {
+          "text": "ciascuno",
+          "start": 51.388,
+          "end": 51.768
+        },
+        {
+          "text": "degli",
+          "start": 51.808,
+          "end": 52.028
+        },
+        {
+          "text": "strati",
+          "start": 52.088,
+          "end": 52.468
+        },
+        {
+          "text": "sopra",
+          "start": 52.628,
+          "end": 52.848
+        },
+        {
+          "text": "lo",
+          "start": 52.928,
+          "end": 52.968
+        },
+        {
+          "text": "strato",
+          "start": 53.008,
+          "end": 53.289
+        },
+        {
+          "text": "l.",
+          "start": 53.469,
+          "end": 53.509
+        }
+      ]
+    },
+    {
+      "start": 54.309,
+      "end": 58.869,
+      "text": "Ogni fattore è lo Jacobiano dello strato i: la matrice delle derivate parziali di ogni",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 54.309,
+          "end": 54.489
+        },
+        {
+          "text": "fattore",
+          "start": 54.529,
+          "end": 54.969
+        },
+        {
+          "text": "è",
+          "start": 55.129,
+          "end": 55.169
+        },
+        {
+          "text": "lo",
+          "start": 55.229,
+          "end": 55.289
+        },
+        {
+          "text": "Jacobiano",
+          "start": 55.349,
+          "end": 55.809
+        },
+        {
+          "text": "dello",
+          "start": 55.849,
+          "end": 56.029
+        },
+        {
+          "text": "strato",
+          "start": 56.069,
+          "end": 56.329
+        },
+        {
+          "text": "i:",
+          "start": 56.429,
+          "end": 56.469
+        },
+        {
+          "text": "la",
+          "start": 56.789,
+          "end": 56.849
+        },
+        {
+          "text": "matrice",
+          "start": 56.889,
+          "end": 57.269
+        },
+        {
+          "text": "delle",
+          "start": 57.309,
+          "end": 57.489
+        },
+        {
+          "text": "derivate",
+          "start": 57.529,
+          "end": 57.889
+        },
+        {
+          "text": "parziali",
+          "start": 57.949,
+          "end": 58.449
+        },
+        {
+          "text": "di",
+          "start": 58.529,
+          "end": 58.609
+        },
+        {
+          "text": "ogni",
+          "start": 58.689,
+          "end": 58.869
+        }
+      ]
+    },
+    {
+      "start": 58.949,
+      "end": 61.55,
+      "text": "uscita dello strato rispetto a ogni suo input.",
+      "words": [
+        {
+          "text": "uscita",
+          "start": 58.949,
+          "end": 59.329
+        },
+        {
+          "text": "dello",
+          "start": 59.369,
+          "end": 59.57
+        },
+        {
+          "text": "strato",
+          "start": 59.63,
+          "end": 60.01
+        },
+        {
+          "text": "rispetto",
+          "start": 60.17,
+          "end": 60.55
+        },
+        {
+          "text": "a",
+          "start": 60.59,
+          "end": 60.63
+        },
+        {
+          "text": "ogni",
+          "start": 60.67,
+          "end": 60.87
+        },
+        {
+          "text": "suo",
+          "start": 60.93,
+          "end": 61.07
+        },
+        {
+          "text": "input.",
+          "start": 61.19,
+          "end": 61.55
+        }
+      ]
+    },
+    {
+      "start": 62.23,
+      "end": 67.591,
+      "text": "Geometricamente, la norma dello Jacobiano misura di quanto lo strato può allungare una piccola variazione",
+      "words": [
+        {
+          "text": "Geometricamente,",
+          "start": 62.23,
+          "end": 63.01
+        },
+        {
+          "text": "la",
+          "start": 63.25,
+          "end": 63.33
+        },
+        {
+          "text": "norma",
+          "start": 63.37,
+          "end": 63.59
+        },
+        {
+          "text": "dello",
+          "start": 63.63,
+          "end": 63.79
+        },
+        {
+          "text": "Jacobiano",
+          "start": 63.83,
+          "end": 64.39
+        },
+        {
+          "text": "misura",
+          "start": 64.57,
+          "end": 64.85
+        },
+        {
+          "text": "di",
+          "start": 64.93,
+          "end": 64.99
+        },
+        {
+          "text": "quanto",
+          "start": 65.05,
+          "end": 65.41
+        },
+        {
+          "text": "lo",
+          "start": 65.45,
+          "end": 65.51
+        },
+        {
+          "text": "strato",
+          "start": 65.57,
+          "end": 65.851
+        },
+        {
+          "text": "può",
+          "start": 65.911,
+          "end": 65.991
+        },
+        {
+          "text": "allungare",
+          "start": 66.031,
+          "end": 66.491
+        },
+        {
+          "text": "una",
+          "start": 66.551,
+          "end": 66.671
+        },
+        {
+          "text": "piccola",
+          "start": 66.711,
+          "end": 67.031
+        },
+        {
+          "text": "variazione",
+          "start": 67.071,
+          "end": 67.591
+        }
+      ]
+    },
+    {
+      "start": 67.651,
+      "end": 68.391,
+      "text": "del suo ingresso.",
+      "words": [
+        {
+          "text": "del",
+          "start": 67.651,
+          "end": 67.771
+        },
+        {
+          "text": "suo",
+          "start": 67.811,
+          "end": 67.911
+        },
+        {
+          "text": "ingresso.",
+          "start": 67.951,
+          "end": 68.391
+        }
+      ]
+    },
+    {
+      "start": 69.191,
+      "end": 72.972,
+      "text": "Se ciascuno di questi M meno l Jacobiani ha norma circa uguale a ro,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 69.191,
+          "end": 69.251
+        },
+        {
+          "text": "ciascuno",
+          "start": 69.311,
+          "end": 69.631
+        },
+        {
+          "text": "di",
+          "start": 69.671,
+          "end": 69.731
+        },
+        {
+          "text": "questi",
+          "start": 69.771,
+          "end": 70.071
+        },
+        {
+          "text": "M",
+          "start": 70.351,
+          "end": 70.391
+        },
+        {
+          "text": "meno",
+          "start": 70.511,
+          "end": 70.671
+        },
+        {
+          "text": "l",
+          "start": 70.811,
+          "end": 70.85100000000001
+        },
+        {
+          "text": "Jacobiani",
+          "start": 70.951,
+          "end": 71.491
+        },
+        {
+          "text": "ha",
+          "start": 71.631,
+          "end": 71.691
+        },
+        {
+          "text": "norma",
+          "start": 71.791,
+          "end": 72.051
+        },
+        {
+          "text": "circa",
+          "start": 72.151,
+          "end": 72.432
+        },
+        {
+          "text": "uguale",
+          "start": 72.472,
+          "end": 72.732
+        },
+        {
+          "text": "a",
+          "start": 72.772,
+          "end": 72.81200000000001
+        },
+        {
+          "text": "ro,",
+          "start": 72.892,
+          "end": 72.972
+        }
+      ]
+    },
+    {
+      "start": 73.532,
+      "end": 78.292,
+      "text": "allora il modulo del gradiente rispetto a w con l scala proporzionalmente a ro alla",
+      "words": [
+        {
+          "text": "allora",
+          "start": 73.532,
+          "end": 73.792
+        },
+        {
+          "text": "il",
+          "start": 73.832,
+          "end": 73.892
+        },
+        {
+          "text": "modulo",
+          "start": 73.912,
+          "end": 74.212
+        },
+        {
+          "text": "del",
+          "start": 74.252,
+          "end": 74.372
+        },
+        {
+          "text": "gradiente",
+          "start": 74.412,
+          "end": 74.852
+        },
+        {
+          "text": "rispetto",
+          "start": 74.932,
+          "end": 75.272
+        },
+        {
+          "text": "a",
+          "start": 75.332,
+          "end": 75.372
+        },
+        {
+          "text": "w",
+          "start": 75.392,
+          "end": 75.432
+        },
+        {
+          "text": "con",
+          "start": 75.772,
+          "end": 75.892
+        },
+        {
+          "text": "l",
+          "start": 76.032,
+          "end": 76.072
+        },
+        {
+          "text": "scala",
+          "start": 76.372,
+          "end": 76.652
+        },
+        {
+          "text": "proporzionalmente",
+          "start": 76.692,
+          "end": 77.532
+        },
+        {
+          "text": "a",
+          "start": 77.692,
+          "end": 77.732
+        },
+        {
+          "text": "ro",
+          "start": 77.852,
+          "end": 77.932
+        },
+        {
+          "text": "alla",
+          "start": 78.112,
+          "end": 78.292
+        }
+      ]
+    },
+    {
+      "start": 78.493,
+      "end": 79.093,
+      "text": "M meno l.",
+      "words": [
+        {
+          "text": "M",
+          "start": 78.493,
+          "end": 78.533
+        },
+        {
+          "text": "meno",
+          "start": 78.633,
+          "end": 78.813
+        },
+        {
+          "text": "l.",
+          "start": 79.053,
+          "end": 79.093
+        }
+      ]
+    },
+    {
+      "start": 79.773,
+      "end": 83.933,
+      "text": "Così, con ro minore di uno il gradiente svanisce esponenzialmente;",
+      "words": [
+        {
+          "text": "Così,",
+          "start": 79.773,
+          "end": 79.973
+        },
+        {
+          "text": "con",
+          "start": 80.193,
+          "end": 80.393
+        },
+        {
+          "text": "ro",
+          "start": 80.693,
+          "end": 80.793
+        },
+        {
+          "text": "minore",
+          "start": 80.933,
+          "end": 81.233
+        },
+        {
+          "text": "di",
+          "start": 81.273,
+          "end": 81.333
+        },
+        {
+          "text": "uno",
+          "start": 81.453,
+          "end": 81.613
+        },
+        {
+          "text": "il",
+          "start": 81.813,
+          "end": 81.893
+        },
+        {
+          "text": "gradiente",
+          "start": 81.913,
+          "end": 82.353
+        },
+        {
+          "text": "svanisce",
+          "start": 82.453,
+          "end": 82.953
+        },
+        {
+          "text": "esponenzialmente;",
+          "start": 83.013,
+          "end": 83.933
+        }
+      ]
+    },
+    {
+      "start": 84.393,
+      "end": 87.014,
+      "text": "con ro maggiore di uno esplode esponenzialmente.",
+      "words": [
+        {
+          "text": "con",
+          "start": 84.393,
+          "end": 84.513
+        },
+        {
+          "text": "ro",
+          "start": 84.573,
+          "end": 84.633
+        },
+        {
+          "text": "maggiore",
+          "start": 84.693,
+          "end": 85.014
+        },
+        {
+          "text": "di",
+          "start": 85.054,
+          "end": 85.114
+        },
+        {
+          "text": "uno",
+          "start": 85.194,
+          "end": 85.374
+        },
+        {
+          "text": "esplode",
+          "start": 85.614,
+          "end": 85.994
+        },
+        {
+          "text": "esponenzialmente.",
+          "start": 86.054,
+          "end": 87.014
+        }
+      ]
+    },
+    {
+      "start": 87.894,
+      "end": 93.575,
+      "text": "Per affrontare questo fenomeno si impiegano diversi approcci: da R-prop alle connessioni shortcut,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 87.894,
+          "end": 88.014
+        },
+        {
+          "text": "affrontare",
+          "start": 88.034,
+          "end": 88.454
+        },
+        {
+          "text": "questo",
+          "start": 88.494,
+          "end": 88.734
+        },
+        {
+          "text": "fenomeno",
+          "start": 88.774,
+          "end": 89.234
+        },
+        {
+          "text": "si",
+          "start": 89.414,
+          "end": 89.474
+        },
+        {
+          "text": "impiegano",
+          "start": 89.514,
+          "end": 89.914
+        },
+        {
+          "text": "diversi",
+          "start": 89.974,
+          "end": 90.274
+        },
+        {
+          "text": "approcci:",
+          "start": 90.294,
+          "end": 90.774
+        },
+        {
+          "text": "da",
+          "start": 91.155,
+          "end": 91.255
+        },
+        {
+          "text": "R-prop",
+          "start": 91.555,
+          "end": 91.995
+        },
+        {
+          "text": "alle",
+          "start": 92.295,
+          "end": 92.475
+        },
+        {
+          "text": "connessioni",
+          "start": 92.495,
+          "end": 92.935
+        },
+        {
+          "text": "shortcut,",
+          "start": 93.015,
+          "end": 93.575
+        }
+      ]
+    },
+    {
+      "start": 93.835,
+      "end": 96.675,
+      "text": "alle reti randomizzate, fino alle attivazioni ReLU.",
+      "words": [
+        {
+          "text": "alle",
+          "start": 93.835,
+          "end": 94.015
+        },
+        {
+          "text": "reti",
+          "start": 94.075,
+          "end": 94.255
+        },
+        {
+          "text": "randomizzate,",
+          "start": 94.355,
+          "end": 95.115
+        },
+        {
+          "text": "fino",
+          "start": 95.455,
+          "end": 95.635
+        },
+        {
+          "text": "alle",
+          "start": 95.675,
+          "end": 95.795
+        },
+        {
+          "text": "attivazioni",
+          "start": 95.815,
+          "end": 96.355
+        },
+        {
+          "text": "ReLU.",
+          "start": 96.455,
+          "end": 96.675
+        }
+      ]
+    },
+    {
+      "start": 97.356,
+      "end": 99.656,
+      "text": "In particolare, contro l'exploding gradient:",
+      "words": [
+        {
+          "text": "In",
+          "start": 97.356,
+          "end": 97.416
+        },
+        {
+          "text": "particolare,",
+          "start": 97.436,
+          "end": 98.056
+        },
+        {
+          "text": "contro",
+          "start": 98.216,
+          "end": 98.496
+        },
+        {
+          "text": "l'exploding",
+          "start": 98.556,
+          "end": 99.156
+        },
+        {
+          "text": "gradient:",
+          "start": 99.176,
+          "end": 99.656
+        }
+      ]
+    },
+    {
+      "start": 100.376,
+      "end": 103.597,
+      "text": "la moltiplicazione ripetuta può creare vere e proprie scogliere,",
+      "words": [
+        {
+          "text": "la",
+          "start": 100.376,
+          "end": 100.436
+        },
+        {
+          "text": "moltiplicazione",
+          "start": 100.476,
+          "end": 101.136
+        },
+        {
+          "text": "ripetuta",
+          "start": 101.176,
+          "end": 101.616
+        },
+        {
+          "text": "può",
+          "start": 101.736,
+          "end": 101.836
+        },
+        {
+          "text": "creare",
+          "start": 101.936,
+          "end": 102.236
+        },
+        {
+          "text": "vere",
+          "start": 102.336,
+          "end": 102.576
+        },
+        {
+          "text": "e",
+          "start": 102.596,
+          "end": 102.63600000000001
+        },
+        {
+          "text": "proprie",
+          "start": 102.656,
+          "end": 102.976
+        },
+        {
+          "text": "scogliere,",
+          "start": 103.016,
+          "end": 103.597
+        }
+      ]
+    },
+    {
+      "start": 103.797,
+      "end": 109.758,
+      "text": "dette cliff, nella funzione di costo, con derivate altissime che catapultano i pesi molto lontano.",
+      "words": [
+        {
+          "text": "dette",
+          "start": 103.797,
+          "end": 104.057
+        },
+        {
+          "text": "cliff,",
+          "start": 104.157,
+          "end": 104.477
+        },
+        {
+          "text": "nella",
+          "start": 104.777,
+          "end": 104.957
+        },
+        {
+          "text": "funzione",
+          "start": 104.977,
+          "end": 105.357
+        },
+        {
+          "text": "di",
+          "start": 105.397,
+          "end": 105.457
+        },
+        {
+          "text": "costo,",
+          "start": 105.497,
+          "end": 105.857
+        },
+        {
+          "text": "con",
+          "start": 106.277,
+          "end": 106.397
+        },
+        {
+          "text": "derivate",
+          "start": 106.417,
+          "end": 106.877
+        },
+        {
+          "text": "altissime",
+          "start": 106.937,
+          "end": 107.577
+        },
+        {
+          "text": "che",
+          "start": 107.677,
+          "end": 107.757
+        },
+        {
+          "text": "catapultano",
+          "start": 107.837,
+          "end": 108.397
+        },
+        {
+          "text": "i",
+          "start": 108.457,
+          "end": 108.497
+        },
+        {
+          "text": "pesi",
+          "start": 108.517,
+          "end": 108.777
+        },
+        {
+          "text": "molto",
+          "start": 108.937,
+          "end": 109.237
+        },
+        {
+          "text": "lontano.",
+          "start": 109.297,
+          "end": 109.758
+        }
+      ]
+    },
+    {
+      "start": 110.398,
+      "end": 114.478,
+      "text": "Il rimedio diretto è il gradient clipping: fissata una soglia v sulla norma,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 110.398,
+          "end": 110.478
+        },
+        {
+          "text": "rimedio",
+          "start": 110.518,
+          "end": 110.818
+        },
+        {
+          "text": "diretto",
+          "start": 110.858,
+          "end": 111.238
+        },
+        {
+          "text": "è",
+          "start": 111.378,
+          "end": 111.418
+        },
+        {
+          "text": "il",
+          "start": 111.458,
+          "end": 111.518
+        },
+        {
+          "text": "gradient",
+          "start": 111.558,
+          "end": 111.918
+        },
+        {
+          "text": "clipping:",
+          "start": 111.978,
+          "end": 112.418
+        },
+        {
+          "text": "fissata",
+          "start": 112.878,
+          "end": 113.218
+        },
+        {
+          "text": "una",
+          "start": 113.258,
+          "end": 113.358
+        },
+        {
+          "text": "soglia",
+          "start": 113.418,
+          "end": 113.658
+        },
+        {
+          "text": "v",
+          "start": 113.718,
+          "end": 113.75800000000001
+        },
+        {
+          "text": "sulla",
+          "start": 113.898,
+          "end": 114.118
+        },
+        {
+          "text": "norma,",
+          "start": 114.158,
+          "end": 114.478
+        }
+      ]
+    },
+    {
+      "start": 114.938,
+      "end": 116.93900000000001,
+      "text": "se la norma del gradiente g è maggiore di v,",
+      "words": [
+        {
+          "text": "se",
+          "start": 114.938,
+          "end": 115.018
+        },
+        {
+          "text": "la",
+          "start": 115.078,
+          "end": 115.11800000000001
+        },
+        {
+          "text": "norma",
+          "start": 115.178,
+          "end": 115.378
+        },
+        {
+          "text": "del",
+          "start": 115.418,
+          "end": 115.538
+        },
+        {
+          "text": "gradiente",
+          "start": 115.578,
+          "end": 115.978
+        },
+        {
+          "text": "g",
+          "start": 116.059,
+          "end": 116.099
+        },
+        {
+          "text": "è",
+          "start": 116.339,
+          "end": 116.379
+        },
+        {
+          "text": "maggiore",
+          "start": 116.459,
+          "end": 116.759
+        },
+        {
+          "text": "di",
+          "start": 116.799,
+          "end": 116.859
+        },
+        {
+          "text": "v,",
+          "start": 116.899,
+          "end": 116.93900000000001
+        }
+      ]
+    },
+    {
+      "start": 117.259,
+      "end": 120.879,
+      "text": "si riscala g ponendo g uguale a v per g diviso norma di g,",
+      "words": [
+        {
+          "text": "si",
+          "start": 117.259,
+          "end": 117.319
+        },
+        {
+          "text": "riscala",
+          "start": 117.359,
+          "end": 117.699
+        },
+        {
+          "text": "g",
+          "start": 117.779,
+          "end": 117.819
+        },
+        {
+          "text": "ponendo",
+          "start": 117.979,
+          "end": 118.319
+        },
+        {
+          "text": "g",
+          "start": 118.419,
+          "end": 118.459
+        },
+        {
+          "text": "uguale",
+          "start": 118.839,
+          "end": 119.139
+        },
+        {
+          "text": "a",
+          "start": 119.179,
+          "end": 119.21900000000001
+        },
+        {
+          "text": "v",
+          "start": 119.299,
+          "end": 119.33900000000001
+        },
+        {
+          "text": "per",
+          "start": 119.479,
+          "end": 119.639
+        },
+        {
+          "text": "g",
+          "start": 119.699,
+          "end": 119.739
+        },
+        {
+          "text": "diviso",
+          "start": 120.019,
+          "end": 120.319
+        },
+        {
+          "text": "norma",
+          "start": 120.399,
+          "end": 120.639
+        },
+        {
+          "text": "di",
+          "start": 120.679,
+          "end": 120.759
+        },
+        {
+          "text": "g,",
+          "start": 120.839,
+          "end": 120.879
+        }
+      ]
+    },
+    {
+      "start": 121.419,
+      "end": 125.08,
+      "text": "limitando così la lunghezza del passo ma mantenendone intatta la direzione.",
+      "words": [
+        {
+          "text": "limitando",
+          "start": 121.419,
+          "end": 121.819
+        },
+        {
+          "text": "così",
+          "start": 121.859,
+          "end": 122.039
+        },
+        {
+          "text": "la",
+          "start": 122.099,
+          "end": 122.159
+        },
+        {
+          "text": "lunghezza",
+          "start": 122.219,
+          "end": 122.58
+        },
+        {
+          "text": "del",
+          "start": 122.62,
+          "end": 122.74
+        },
+        {
+          "text": "passo",
+          "start": 122.8,
+          "end": 123.14
+        },
+        {
+          "text": "ma",
+          "start": 123.32,
+          "end": 123.4
+        },
+        {
+          "text": "mantenendone",
+          "start": 123.46,
+          "end": 124.0
+        },
+        {
+          "text": "intatta",
+          "start": 124.04,
+          "end": 124.4
+        },
+        {
+          "text": "la",
+          "start": 124.44,
+          "end": 124.5
+        },
+        {
+          "text": "direzione.",
+          "start": 124.52,
+          "end": 125.08
+        }
+      ]
+    }
+  ]
+}

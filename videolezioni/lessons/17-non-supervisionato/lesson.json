@@ -21,28 +21,28 @@
           "action": "show",
           "target": "#s1",
           "anchor": "i task principali sono tre",
-          "at": 5.79
+          "at": 5.86
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Il clustering partiziona i dati",
-          "at": 36.25
+          "at": 35.68
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "la metrica domina",
-          "at": 55.97
+          "at": 53.07
         },
         {
           "action": "highlight",
           "target": "#f-dgauss",
           "anchor": "uno meno una gaussiana",
-          "at": 75.31
+          "at": 69.47
         }
       ],
-      "duration_sec": 87.0,
+      "duration_sec": 78.72,
       "id": "scene-01",
       "audio_file": "audio/scene-01.wav",
       "subtitle_file": "subtitles/scene-01.json"
@@ -57,34 +57,34 @@
           "action": "show",
           "target": "#s1",
           "anchor": "La quantizzazione vettoriale codifica",
-          "at": 6.67
+          "at": 6.55
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "divide lo spazio nei poliedri di Voronoi",
-          "at": 42.7
+          "at": 40.41
         },
         {
           "action": "highlight",
           "target": "#f-vor",
           "anchor": "norma di x meno w con i è minore o uguale",
-          "at": 51.04
+          "at": 46.65
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "esempio in una dimensione",
-          "at": 67.71
+          "at": 58.69
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "l'inverso di quello del K-NN",
-          "at": 88.97
+          "at": 77.61
         }
       ],
-      "duration_sec": 126.1,
+      "duration_sec": 110.3,
       "id": "scene-02",
       "audio_file": "audio/scene-02.wav",
       "subtitle_file": "subtitles/scene-02.json"
@@ -99,34 +99,34 @@
           "action": "show",
           "target": "#s1",
           "anchor": "partizionare in modo ottimo",
-          "at": 5.86
+          "at": 5.88
         },
         {
           "action": "highlight",
           "target": "#f-econt",
           "anchor": "integrale della norma quadra",
-          "at": 28.42
+          "at": 26.54
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "versione discreta",
-          "at": 43.28
+          "at": 37.72
         },
         {
           "action": "highlight",
           "target": "#f-edisc",
           "anchor": "delta winner di i virgola j",
-          "at": 56.11
+          "at": 47.11
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "non è differenziabile con continuità",
-          "at": 73.76
+          "at": 61.67
         }
       ],
-      "duration_sec": 95.4,
+      "duration_sec": 79.25,
       "id": "scene-03",
       "audio_file": "audio/scene-03.wav",
       "subtitle_file": "subtitles/scene-03.json"
@@ -141,40 +141,40 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Enunciamo la proprietà",
-          "at": 11.49
+          "at": 10.98
         },
         {
           "action": "highlight",
           "target": "#f-kmon",
           "anchor": "delta w con i asterisco uguale a eta",
-          "at": 20.32
+          "at": 18.92
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Fissato un esempio x con i",
-          "at": 41.01
+          "at": 36.28
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "derivata parziale rispetto al vettore w con j",
-          "at": 68.07
+          "at": 59.02
         },
         {
           "action": "show",
           "target": "#s4, #s5",
           "anchor": "Muovendoci nel verso opposto al gradiente",
-          "at": 92.33
+          "at": 82.06
         },
         {
           "action": "show",
           "target": "#s6",
           "anchor": "tre caratteristiche tipiche",
-          "at": 118.3
+          "at": 106.01
         }
       ],
-      "duration_sec": 130.4,
+      "duration_sec": 116.64,
       "id": "scene-04",
       "audio_file": "audio/scene-04.wav",
       "subtitle_file": "subtitles/scene-04.json"
@@ -189,46 +189,46 @@
           "action": "show",
           "target": "#s1",
           "anchor": "articolata in quattro passi",
-          "at": 2.94
+          "at": 2.6
         },
         {
           "action": "highlight",
           "target": "#f-kmass",
           "anchor": "arg min su i della norma quadra",
-          "at": 20.74
+          "at": 19.64
         },
         {
           "action": "highlight",
           "target": "#f-kmmean",
           "anchor": "media, o centroide",
-          "at": 36.79
+          "at": 32.71
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "un cluster C con centro w",
-          "at": 67.38
+          "at": 60.87
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Ponendo la derivata uguale a zero",
-          "at": 95.44
+          "at": 83.9
         },
         {
           "action": "highlight",
           "target": "#f-optw",
           "anchor": "uno su modulo di C per la somma",
-          "at": 99.93
+          "at": 87.44
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "solo passo di discesa batch",
-          "at": 113.31
+          "at": 97.08
         }
       ],
-      "duration_sec": 126.0,
+      "duration_sec": 107.13,
       "id": "scene-05",
       "audio_file": "audio/scene-05.wav",
       "subtitle_file": "subtitles/scene-05.json"
@@ -243,40 +243,40 @@
           "action": "show",
           "target": "#km-p1",
           "anchor": "primo pannello vediamo l'inizializzazione",
-          "at": 10.17
+          "at": 8.02
         },
         {
           "action": "show",
           "target": "#km-p2",
           "anchor": "secondo pannello eseguiamo la prima assegnazione",
-          "at": 22.8
+          "at": 18.8
         },
         {
           "action": "show",
           "target": "#km-p3",
           "anchor": "terzo pannello ricalcoliamo i nuovi centri",
-          "at": 32.08
+          "at": 26.14
         },
         {
           "action": "show",
           "target": "#km-p4",
           "anchor": "quarto pannello ripetiamo l'assegnazione",
-          "at": 44.47
+          "at": 36.15
         },
         {
           "action": "show",
           "target": "#s1",
           "anchor": "bilancio dei pregi e dei difetti",
-          "at": 59.67
+          "at": 48.57
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "regola di tipo soft-max",
-          "at": 111.99
+          "at": 92.26
         }
       ],
-      "duration_sec": 135.6,
+      "duration_sec": 110.85,
       "id": "scene-06",
       "audio_file": "audio/scene-06.wav",
       "subtitle_file": "subtitles/scene-06.json"
@@ -291,22 +291,22 @@
           "action": "show",
           "target": "#s1",
           "anchor": "griglia regolare a bassa dimensione",
-          "at": 13.06
+          "at": 11.52
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "preserva la topologia",
-          "at": 60.43
+          "at": 51.79
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "apprendimento competitivo",
-          "at": 106.13
+          "at": 93.65
         }
       ],
-      "duration_sec": 129.1,
+      "duration_sec": 115.54,
       "id": "scene-07",
       "audio_file": "audio/scene-07.wav",
       "subtitle_file": "subtitles/scene-07.json"
@@ -321,34 +321,34 @@
           "action": "show",
           "target": "#s1",
           "anchor": "algoritmo della SOM in cinque passi",
-          "at": 0.82
+          "at": 0.65
         },
         {
           "action": "highlight",
           "target": "#f-somupd",
           "anchor": "w con i al tempo t più uno",
-          "at": 27.91
+          "at": 25.33
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "funzione di vicinato h",
-          "at": 54.12
+          "at": 47.49
         },
         {
           "action": "highlight",
           "target": "#f-gauss",
           "anchor": "esponenziale di meno la norma quadra",
-          "at": 61.91
+          "at": 55.25
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "emerge l'ordine topologico",
-          "at": 94.8
+          "at": 85.54
         }
       ],
-      "duration_sec": 111.6,
+      "duration_sec": 102.97,
       "id": "scene-08",
       "audio_file": "audio/scene-08.wav",
       "subtitle_file": "subtitles/scene-08.json"
@@ -363,58 +363,58 @@
           "action": "show",
           "target": "#som-s1",
           "anchor": "istante t uguale a zero",
-          "at": 18.69
+          "at": 16.94
         },
         {
           "action": "show",
           "target": "#som-s2",
           "anchor": "Nelle prime iterazioni",
-          "at": 28.63
+          "at": 26.22
         },
         {
           "action": "show",
           "target": "#som-s3",
           "anchor": "Tra t uguale cinquemila",
-          "at": 45.54
+          "at": 42.94
         },
         {
           "action": "show",
           "target": "#s1",
           "anchor": "quattro differenze chiave",
-          "at": 62.78
+          "at": 59.77
         },
         {
           "action": "highlight",
           "target": "#r1",
           "anchor": "Primo, sull'aggiornamento",
-          "at": 66.22
+          "at": 63.55
         },
         {
           "action": "highlight",
           "target": "#r2",
           "anchor": "Secondo, sull'ordine",
-          "at": 78.36
+          "at": 74.89
         },
         {
           "action": "highlight",
           "target": "#r3",
           "anchor": "Terzo, sulla visualizzazione",
-          "at": 88.87
+          "at": 85.07
         },
         {
           "action": "highlight",
           "target": "#r4",
           "anchor": "Quarto, sui minimi locali",
-          "at": 96.93
+          "at": 94.41
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "vicinato ha raggio zero",
-          "at": 109.76
+          "at": 107.01
         }
       ],
-      "duration_sec": 116.7,
+      "duration_sec": 112.8,
       "id": "scene-09",
       "audio_file": "audio/scene-09.wav",
       "subtitle_file": "subtitles/scene-09.json"
@@ -429,22 +429,22 @@
           "action": "show",
           "target": "#s1",
           "anchor": "due grandezze complementari",
-          "at": 2.04
+          "at": 3.03
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Come si valuta invece un clustering",
-          "at": 50.04
+          "at": 46.05
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "altri metodi non supervisionati",
-          "at": 85.4
+          "at": 78.26
         }
       ],
-      "duration_sec": 96.5,
+      "duration_sec": 91.41,
       "id": "scene-10",
       "audio_file": "audio/scene-10.wav",
       "subtitle_file": "subtitles/scene-10.json"
@@ -459,28 +459,28 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Primo: la quantizzazione vettoriale",
-          "at": 7.9
+          "at": 6.92
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: applicando la discesa",
-          "at": 31.85
+          "at": 27.89
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Terzo: le Self-Organizing Map",
-          "at": 59.96
+          "at": 51.89
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "cinque domande di verifica",
-          "at": 93.23
+          "at": 82.52
         }
       ],
-      "duration_sec": 98.6,
+      "duration_sec": 86.19,
       "id": "scene-11",
       "audio_file": "audio/scene-11.wav",
       "subtitle_file": "subtitles/scene-11.json"

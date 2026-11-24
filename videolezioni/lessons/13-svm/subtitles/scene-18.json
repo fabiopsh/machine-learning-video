@@ -1,0 +1,1260 @@
+{
+  "duration": 82.366,
+  "segments": [
+    {
+      "start": 0.205,
+      "end": 4.126,
+      "text": "Come traduciamo il tubo di tolleranza in un problema di programmazione quadratica?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.205,
+          "end": 0.365
+        },
+        {
+          "text": "traduciamo",
+          "start": 0.425,
+          "end": 0.985
+        },
+        {
+          "text": "il",
+          "start": 1.025,
+          "end": 1.085
+        },
+        {
+          "text": "tubo",
+          "start": 1.125,
+          "end": 1.305
+        },
+        {
+          "text": "di",
+          "start": 1.365,
+          "end": 1.425
+        },
+        {
+          "text": "tolleranza",
+          "start": 1.466,
+          "end": 2.046
+        },
+        {
+          "text": "in",
+          "start": 2.206,
+          "end": 2.286
+        },
+        {
+          "text": "un",
+          "start": 2.326,
+          "end": 2.386
+        },
+        {
+          "text": "problema",
+          "start": 2.406,
+          "end": 2.766
+        },
+        {
+          "text": "di",
+          "start": 2.806,
+          "end": 2.866
+        },
+        {
+          "text": "programmazione",
+          "start": 2.906,
+          "end": 3.546
+        },
+        {
+          "text": "quadratica?",
+          "start": 3.566,
+          "end": 4.126
+        }
+      ]
+    },
+    {
+      "start": 4.826,
+      "end": 8.966,
+      "text": "Poiché un punto di training può uscire dal tubo sia verso l'alto sia verso il",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 4.826,
+          "end": 5.086
+        },
+        {
+          "text": "un",
+          "start": 5.226,
+          "end": 5.326
+        },
+        {
+          "text": "punto",
+          "start": 5.386,
+          "end": 5.666
+        },
+        {
+          "text": "di",
+          "start": 5.686,
+          "end": 5.766
+        },
+        {
+          "text": "training",
+          "start": 5.826,
+          "end": 6.286
+        },
+        {
+          "text": "può",
+          "start": 6.366,
+          "end": 6.486
+        },
+        {
+          "text": "uscire",
+          "start": 6.546,
+          "end": 6.886
+        },
+        {
+          "text": "dal",
+          "start": 6.926,
+          "end": 7.066
+        },
+        {
+          "text": "tubo",
+          "start": 7.126,
+          "end": 7.386
+        },
+        {
+          "text": "sia",
+          "start": 7.486,
+          "end": 7.646
+        },
+        {
+          "text": "verso",
+          "start": 7.686,
+          "end": 7.946
+        },
+        {
+          "text": "l'alto",
+          "start": 7.986,
+          "end": 8.366
+        },
+        {
+          "text": "sia",
+          "start": 8.506,
+          "end": 8.626
+        },
+        {
+          "text": "verso",
+          "start": 8.666,
+          "end": 8.886
+        },
+        {
+          "text": "il",
+          "start": 8.926,
+          "end": 8.966
+        }
+      ]
+    },
+    {
+      "start": 9.006,
+      "end": 13.287,
+      "text": "basso, introduciamo due insiemi distinti di variabili slack non negative:",
+      "words": [
+        {
+          "text": "basso,",
+          "start": 9.006,
+          "end": 9.387
+        },
+        {
+          "text": "introduciamo",
+          "start": 9.807,
+          "end": 10.427
+        },
+        {
+          "text": "due",
+          "start": 10.507,
+          "end": 10.647
+        },
+        {
+          "text": "insiemi",
+          "start": 10.707,
+          "end": 11.027
+        },
+        {
+          "text": "distinti",
+          "start": 11.067,
+          "end": 11.467
+        },
+        {
+          "text": "di",
+          "start": 11.487,
+          "end": 11.547
+        },
+        {
+          "text": "variabili",
+          "start": 11.567,
+          "end": 12.007
+        },
+        {
+          "text": "slack",
+          "start": 12.087,
+          "end": 12.407
+        },
+        {
+          "text": "non",
+          "start": 12.607,
+          "end": 12.747
+        },
+        {
+          "text": "negative:",
+          "start": 12.807,
+          "end": 13.287
+        }
+      ]
+    },
+    {
+      "start": 13.807,
+      "end": 17.688,
+      "text": "csi con i per gli scostamenti sopra il tubo e csi primo con i per",
+      "words": [
+        {
+          "text": "csi",
+          "start": 13.807,
+          "end": 13.987
+        },
+        {
+          "text": "con",
+          "start": 14.087,
+          "end": 14.247
+        },
+        {
+          "text": "i",
+          "start": 14.287,
+          "end": 14.327
+        },
+        {
+          "text": "per",
+          "start": 14.567,
+          "end": 14.707
+        },
+        {
+          "text": "gli",
+          "start": 14.727,
+          "end": 14.847
+        },
+        {
+          "text": "scostamenti",
+          "start": 14.867,
+          "end": 15.407
+        },
+        {
+          "text": "sopra",
+          "start": 15.447,
+          "end": 15.627
+        },
+        {
+          "text": "il",
+          "start": 15.667,
+          "end": 15.727
+        },
+        {
+          "text": "tubo",
+          "start": 15.767,
+          "end": 16.027
+        },
+        {
+          "text": "e",
+          "start": 16.527,
+          "end": 16.567
+        },
+        {
+          "text": "csi",
+          "start": 16.627,
+          "end": 16.787
+        },
+        {
+          "text": "primo",
+          "start": 16.888,
+          "end": 17.128
+        },
+        {
+          "text": "con",
+          "start": 17.188,
+          "end": 17.328
+        },
+        {
+          "text": "i",
+          "start": 17.388,
+          "end": 17.428
+        },
+        {
+          "text": "per",
+          "start": 17.568,
+          "end": 17.688
+        }
+      ]
+    },
+    {
+      "start": 17.728,
+      "end": 18.748,
+      "text": "quelli sotto il tubo.",
+      "words": [
+        {
+          "text": "quelli",
+          "start": 17.728,
+          "end": 17.988
+        },
+        {
+          "text": "sotto",
+          "start": 18.088,
+          "end": 18.348
+        },
+        {
+          "text": "il",
+          "start": 18.368,
+          "end": 18.428
+        },
+        {
+          "text": "tubo.",
+          "start": 18.488,
+          "end": 18.748
+        }
+      ]
+    },
+    {
+      "start": 19.548,
+      "end": 23.648,
+      "text": "I vincoli di tubo si scrivono in forma compatta come meno csi primo con i",
+      "words": [
+        {
+          "text": "I",
+          "start": 19.548,
+          "end": 19.588
+        },
+        {
+          "text": "vincoli",
+          "start": 19.628,
+          "end": 19.968
+        },
+        {
+          "text": "di",
+          "start": 20.008,
+          "end": 20.068
+        },
+        {
+          "text": "tubo",
+          "start": 20.128,
+          "end": 20.348
+        },
+        {
+          "text": "si",
+          "start": 20.408,
+          "end": 20.488
+        },
+        {
+          "text": "scrivono",
+          "start": 20.548,
+          "end": 20.908
+        },
+        {
+          "text": "in",
+          "start": 20.928,
+          "end": 20.988
+        },
+        {
+          "text": "forma",
+          "start": 21.008,
+          "end": 21.228
+        },
+        {
+          "text": "compatta",
+          "start": 21.288,
+          "end": 21.768
+        },
+        {
+          "text": "come",
+          "start": 21.828,
+          "end": 22.048
+        },
+        {
+          "text": "meno",
+          "start": 22.288,
+          "end": 22.568
+        },
+        {
+          "text": "csi",
+          "start": 22.668,
+          "end": 22.888
+        },
+        {
+          "text": "primo",
+          "start": 23.008,
+          "end": 23.328
+        },
+        {
+          "text": "con",
+          "start": 23.388,
+          "end": 23.548
+        },
+        {
+          "text": "i",
+          "start": 23.608,
+          "end": 23.648
+        }
+      ]
+    },
+    {
+      "start": 23.888,
+      "end": 29.069,
+      "text": "meno epsilon minore o uguale a d con i meno w trasposto Fi di x",
+      "words": [
+        {
+          "text": "meno",
+          "start": 23.888,
+          "end": 24.088
+        },
+        {
+          "text": "epsilon",
+          "start": 24.208,
+          "end": 24.688
+        },
+        {
+          "text": "minore",
+          "start": 25.109,
+          "end": 25.529
+        },
+        {
+          "text": "o",
+          "start": 25.569,
+          "end": 25.609
+        },
+        {
+          "text": "uguale",
+          "start": 25.589,
+          "end": 25.989
+        },
+        {
+          "text": "a",
+          "start": 26.129,
+          "end": 26.169
+        },
+        {
+          "text": "d",
+          "start": 26.289,
+          "end": 26.329
+        },
+        {
+          "text": "con",
+          "start": 26.509,
+          "end": 26.669
+        },
+        {
+          "text": "i",
+          "start": 26.729,
+          "end": 26.769
+        },
+        {
+          "text": "meno",
+          "start": 27.149,
+          "end": 27.349
+        },
+        {
+          "text": "w",
+          "start": 27.409,
+          "end": 27.449
+        },
+        {
+          "text": "trasposto",
+          "start": 27.889,
+          "end": 28.469
+        },
+        {
+          "text": "Fi",
+          "start": 28.609,
+          "end": 28.709
+        },
+        {
+          "text": "di",
+          "start": 28.829,
+          "end": 28.889
+        },
+        {
+          "text": "x",
+          "start": 29.029,
+          "end": 29.069
+        }
+      ]
+    },
+    {
+      "start": 29.169,
+      "end": 32.329,
+      "text": "con i, minore o uguale a epsilon più csi con i.",
+      "words": [
+        {
+          "text": "con",
+          "start": 29.169,
+          "end": 29.329
+        },
+        {
+          "text": "i,",
+          "start": 29.369,
+          "end": 29.409
+        },
+        {
+          "text": "minore",
+          "start": 29.849,
+          "end": 30.249
+        },
+        {
+          "text": "o",
+          "start": 30.289,
+          "end": 30.329
+        },
+        {
+          "text": "uguale",
+          "start": 30.309,
+          "end": 30.689
+        },
+        {
+          "text": "a",
+          "start": 30.829,
+          "end": 30.869
+        },
+        {
+          "text": "epsilon",
+          "start": 31.009,
+          "end": 31.489
+        },
+        {
+          "text": "più",
+          "start": 31.609,
+          "end": 31.729
+        },
+        {
+          "text": "csi",
+          "start": 31.829,
+          "end": 32.009
+        },
+        {
+          "text": "con",
+          "start": 32.089,
+          "end": 32.249
+        },
+        {
+          "text": "i.",
+          "start": 32.289,
+          "end": 32.329
+        }
+      ]
+    },
+    {
+      "start": 32.91,
+      "end": 38.95,
+      "text": "Scomponendoli otteniamo due disequazioni lineari per ogni esempio: d con i meno w trasposto Fi",
+      "words": [
+        {
+          "text": "Scomponendoli",
+          "start": 32.91,
+          "end": 33.59
+        },
+        {
+          "text": "otteniamo",
+          "start": 33.73,
+          "end": 34.15
+        },
+        {
+          "text": "due",
+          "start": 34.21,
+          "end": 34.33
+        },
+        {
+          "text": "disequazioni",
+          "start": 34.35,
+          "end": 34.93
+        },
+        {
+          "text": "lineari",
+          "start": 34.99,
+          "end": 35.41
+        },
+        {
+          "text": "per",
+          "start": 35.47,
+          "end": 35.57
+        },
+        {
+          "text": "ogni",
+          "start": 35.61,
+          "end": 35.77
+        },
+        {
+          "text": "esempio:",
+          "start": 35.83,
+          "end": 36.25
+        },
+        {
+          "text": "d",
+          "start": 36.75,
+          "end": 36.79
+        },
+        {
+          "text": "con",
+          "start": 36.97,
+          "end": 37.13
+        },
+        {
+          "text": "i",
+          "start": 37.17,
+          "end": 37.21
+        },
+        {
+          "text": "meno",
+          "start": 37.47,
+          "end": 37.67
+        },
+        {
+          "text": "w",
+          "start": 37.73,
+          "end": 37.77
+        },
+        {
+          "text": "trasposto",
+          "start": 38.19,
+          "end": 38.73
+        },
+        {
+          "text": "Fi",
+          "start": 38.85,
+          "end": 38.95
+        }
+      ]
+    },
+    {
+      "start": 39.17,
+      "end": 42.491,
+      "text": "di x con i minore o uguale a epsilon più csi con i,",
+      "words": [
+        {
+          "text": "di",
+          "start": 39.17,
+          "end": 39.25
+        },
+        {
+          "text": "x",
+          "start": 39.43,
+          "end": 39.47
+        },
+        {
+          "text": "con",
+          "start": 39.57,
+          "end": 39.73
+        },
+        {
+          "text": "i",
+          "start": 39.77,
+          "end": 39.81
+        },
+        {
+          "text": "minore",
+          "start": 40.231,
+          "end": 40.651
+        },
+        {
+          "text": "o",
+          "start": 40.711,
+          "end": 40.751
+        },
+        {
+          "text": "uguale",
+          "start": 40.731,
+          "end": 41.071
+        },
+        {
+          "text": "a",
+          "start": 41.151,
+          "end": 41.191
+        },
+        {
+          "text": "epsilon",
+          "start": 41.271,
+          "end": 41.711
+        },
+        {
+          "text": "più",
+          "start": 41.791,
+          "end": 41.911
+        },
+        {
+          "text": "csi",
+          "start": 41.991,
+          "end": 42.171
+        },
+        {
+          "text": "con",
+          "start": 42.271,
+          "end": 42.411
+        },
+        {
+          "text": "i,",
+          "start": 42.451,
+          "end": 42.491
+        }
+      ]
+    },
+    {
+      "start": 43.131,
+      "end": 47.611,
+      "text": "e w trasposto Fi di x con i meno d con i minore o uguale",
+      "words": [
+        {
+          "text": "e",
+          "start": 43.131,
+          "end": 43.171
+        },
+        {
+          "text": "w",
+          "start": 43.271,
+          "end": 43.311
+        },
+        {
+          "text": "trasposto",
+          "start": 43.731,
+          "end": 44.271
+        },
+        {
+          "text": "Fi",
+          "start": 44.391,
+          "end": 44.511
+        },
+        {
+          "text": "di",
+          "start": 44.751,
+          "end": 44.831
+        },
+        {
+          "text": "x",
+          "start": 44.971,
+          "end": 45.011
+        },
+        {
+          "text": "con",
+          "start": 45.131,
+          "end": 45.271
+        },
+        {
+          "text": "i",
+          "start": 45.331,
+          "end": 45.371
+        },
+        {
+          "text": "meno",
+          "start": 45.671,
+          "end": 45.911
+        },
+        {
+          "text": "d",
+          "start": 45.971,
+          "end": 46.011
+        },
+        {
+          "text": "con",
+          "start": 46.171,
+          "end": 46.331
+        },
+        {
+          "text": "i",
+          "start": 46.371,
+          "end": 46.411
+        },
+        {
+          "text": "minore",
+          "start": 46.831,
+          "end": 47.211
+        },
+        {
+          "text": "o",
+          "start": 47.251,
+          "end": 47.291
+        },
+        {
+          "text": "uguale",
+          "start": 47.271,
+          "end": 47.611
+        }
+      ]
+    },
+    {
+      "start": 47.671,
+      "end": 49.392,
+      "text": "a epsilon più csi primo con i.",
+      "words": [
+        {
+          "text": "a",
+          "start": 47.671,
+          "end": 47.711
+        },
+        {
+          "text": "epsilon",
+          "start": 47.792,
+          "end": 48.212
+        },
+        {
+          "text": "più",
+          "start": 48.332,
+          "end": 48.452
+        },
+        {
+          "text": "csi",
+          "start": 48.552,
+          "end": 48.732
+        },
+        {
+          "text": "primo",
+          "start": 48.852,
+          "end": 49.112
+        },
+        {
+          "text": "con",
+          "start": 49.172,
+          "end": 49.312
+        },
+        {
+          "text": "i.",
+          "start": 49.352,
+          "end": 49.392
+        }
+      ]
+    },
+    {
+      "start": 50.192,
+      "end": 58.133,
+      "text": "Nel problema primale di regressione minimizziamo quindi Psi uguale uno mezzo w trasposto w più",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 50.192,
+          "end": 50.352
+        },
+        {
+          "text": "problema",
+          "start": 50.392,
+          "end": 50.872
+        },
+        {
+          "text": "primale",
+          "start": 50.992,
+          "end": 51.592
+        },
+        {
+          "text": "di",
+          "start": 51.672,
+          "end": 51.752
+        },
+        {
+          "text": "regressione",
+          "start": 51.812,
+          "end": 52.532
+        },
+        {
+          "text": "minimizziamo",
+          "start": 52.612,
+          "end": 53.332
+        },
+        {
+          "text": "quindi",
+          "start": 53.412,
+          "end": 53.872
+        },
+        {
+          "text": "Psi",
+          "start": 54.112,
+          "end": 54.352
+        },
+        {
+          "text": "uguale",
+          "start": 54.672,
+          "end": 55.132
+        },
+        {
+          "text": "uno",
+          "start": 55.312,
+          "end": 55.492
+        },
+        {
+          "text": "mezzo",
+          "start": 55.552,
+          "end": 55.913
+        },
+        {
+          "text": "w",
+          "start": 55.993,
+          "end": 56.033
+        },
+        {
+          "text": "trasposto",
+          "start": 56.473,
+          "end": 57.093
+        },
+        {
+          "text": "w",
+          "start": 57.153,
+          "end": 57.193
+        },
+        {
+          "text": "più",
+          "start": 57.513,
+          "end": 58.133
+        }
+      ]
+    },
+    {
+      "start": 58.273,
+      "end": 60.633,
+      "text": "C per la somma per i da uno a l",
+      "words": [
+        {
+          "text": "C",
+          "start": 58.273,
+          "end": 58.313
+        },
+        {
+          "text": "per",
+          "start": 58.633,
+          "end": 58.753
+        },
+        {
+          "text": "la",
+          "start": 58.793,
+          "end": 58.873
+        },
+        {
+          "text": "somma",
+          "start": 58.953,
+          "end": 59.313
+        },
+        {
+          "text": "per",
+          "start": 59.453,
+          "end": 59.633
+        },
+        {
+          "text": "i",
+          "start": 59.693,
+          "end": 59.733
+        },
+        {
+          "text": "da",
+          "start": 59.853,
+          "end": 59.933
+        },
+        {
+          "text": "uno",
+          "start": 60.073,
+          "end": 60.253
+        },
+        {
+          "text": "a",
+          "start": 60.313,
+          "end": 60.353
+        },
+        {
+          "text": "l",
+          "start": 60.593,
+          "end": 60.633
+        }
+      ]
+    },
+    {
+      "start": 61.233,
+      "end": 63.313,
+      "text": "di csi con i più csi primo con i,",
+      "words": [
+        {
+          "text": "di",
+          "start": 61.233,
+          "end": 61.313
+        },
+        {
+          "text": "csi",
+          "start": 61.413,
+          "end": 61.613
+        },
+        {
+          "text": "con",
+          "start": 61.693,
+          "end": 61.873
+        },
+        {
+          "text": "i",
+          "start": 61.933,
+          "end": 61.973
+        },
+        {
+          "text": "più",
+          "start": 62.173,
+          "end": 62.293
+        },
+        {
+          "text": "csi",
+          "start": 62.393,
+          "end": 62.573
+        },
+        {
+          "text": "primo",
+          "start": 62.673,
+          "end": 62.953
+        },
+        {
+          "text": "con",
+          "start": 63.053,
+          "end": 63.213
+        },
+        {
+          "text": "i,",
+          "start": 63.273,
+          "end": 63.313
+        }
+      ]
+    },
+    {
+      "start": 63.654,
+      "end": 66.234,
+      "text": "con tutte le slack maggiori o uguali a zero.",
+      "words": [
+        {
+          "text": "con",
+          "start": 63.654,
+          "end": 63.794
+        },
+        {
+          "text": "tutte",
+          "start": 63.874,
+          "end": 64.134
+        },
+        {
+          "text": "le",
+          "start": 64.154,
+          "end": 64.234
+        },
+        {
+          "text": "slack",
+          "start": 64.274,
+          "end": 64.594
+        },
+        {
+          "text": "maggiori",
+          "start": 64.754,
+          "end": 65.234
+        },
+        {
+          "text": "o",
+          "start": 65.374,
+          "end": 65.414
+        },
+        {
+          "text": "uguali",
+          "start": 65.454,
+          "end": 65.754
+        },
+        {
+          "text": "a",
+          "start": 65.814,
+          "end": 65.854
+        },
+        {
+          "text": "zero.",
+          "start": 65.934,
+          "end": 66.234
+        }
+      ]
+    },
+    {
+      "start": 67.174,
+      "end": 71.355,
+      "text": "Notate il perfetto parallelismo con la classificazione soft margin:",
+      "words": [
+        {
+          "text": "Notate",
+          "start": 67.174,
+          "end": 67.654
+        },
+        {
+          "text": "il",
+          "start": 67.734,
+          "end": 67.814
+        },
+        {
+          "text": "perfetto",
+          "start": 67.874,
+          "end": 68.374
+        },
+        {
+          "text": "parallelismo",
+          "start": 68.414,
+          "end": 69.074
+        },
+        {
+          "text": "con",
+          "start": 69.174,
+          "end": 69.354
+        },
+        {
+          "text": "la",
+          "start": 69.394,
+          "end": 69.474
+        },
+        {
+          "text": "classificazione",
+          "start": 69.514,
+          "end": 70.414
+        },
+        {
+          "text": "soft",
+          "start": 70.534,
+          "end": 70.774
+        },
+        {
+          "text": "margin:",
+          "start": 70.874,
+          "end": 71.355
+        }
+      ]
+    },
+    {
+      "start": 71.955,
+      "end": 73.67500000000001,
+      "text": "uno mezzo w trasposto w",
+      "words": [
+        {
+          "text": "uno",
+          "start": 71.955,
+          "end": 72.135
+        },
+        {
+          "text": "mezzo",
+          "start": 72.135,
+          "end": 72.515
+        },
+        {
+          "text": "w",
+          "start": 72.575,
+          "end": 72.61500000000001
+        },
+        {
+          "text": "trasposto",
+          "start": 73.055,
+          "end": 73.575
+        },
+        {
+          "text": "w",
+          "start": 73.635,
+          "end": 73.67500000000001
+        }
+      ]
+    },
+    {
+      "start": 74.395,
+      "end": 78.015,
+      "text": "controlla la regolarità della funzione nello spazio delle feature,",
+      "words": [
+        {
+          "text": "controlla",
+          "start": 74.395,
+          "end": 74.955
+        },
+        {
+          "text": "la",
+          "start": 75.035,
+          "end": 75.095
+        },
+        {
+          "text": "regolarità",
+          "start": 75.195,
+          "end": 75.735
+        },
+        {
+          "text": "della",
+          "start": 75.815,
+          "end": 75.995
+        },
+        {
+          "text": "funzione",
+          "start": 76.015,
+          "end": 76.455
+        },
+        {
+          "text": "nello",
+          "start": 76.575,
+          "end": 76.795
+        },
+        {
+          "text": "spazio",
+          "start": 76.855,
+          "end": 77.295
+        },
+        {
+          "text": "delle",
+          "start": 77.375,
+          "end": 77.555
+        },
+        {
+          "text": "feature,",
+          "start": 77.615,
+          "end": 78.015
+        }
+      ]
+    },
+    {
+      "start": 78.435,
+      "end": 82.116,
+      "text": "mentre C pesa il costo degli errori fuori dal tubo.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 78.435,
+          "end": 78.756
+        },
+        {
+          "text": "C",
+          "start": 78.856,
+          "end": 78.896
+        },
+        {
+          "text": "pesa",
+          "start": 79.456,
+          "end": 79.696
+        },
+        {
+          "text": "il",
+          "start": 79.776,
+          "end": 79.836
+        },
+        {
+          "text": "costo",
+          "start": 79.916,
+          "end": 80.316
+        },
+        {
+          "text": "degli",
+          "start": 80.376,
+          "end": 80.576
+        },
+        {
+          "text": "errori",
+          "start": 80.636,
+          "end": 81.016
+        },
+        {
+          "text": "fuori",
+          "start": 81.196,
+          "end": 81.516
+        },
+        {
+          "text": "dal",
+          "start": 81.576,
+          "end": 81.716
+        },
+        {
+          "text": "tubo.",
+          "start": 81.816,
+          "end": 82.116
+        }
+      ]
+    }
+  ]
+}

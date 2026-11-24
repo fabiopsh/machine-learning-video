@@ -1,0 +1,1195 @@
+{
+  "duration": 91.409,
+  "segments": [
+    {
+      "start": 0.89,
+      "end": 4.67,
+      "text": "Sulla mappa SOM possiamo visualizzare due grandezze complementari.",
+      "words": [
+        {
+          "text": "Sulla",
+          "start": 0.89,
+          "end": 1.13
+        },
+        {
+          "text": "mappa",
+          "start": 1.17,
+          "end": 1.41
+        },
+        {
+          "text": "SOM",
+          "start": 1.51,
+          "end": 1.79
+        },
+        {
+          "text": "possiamo",
+          "start": 2.05,
+          "end": 2.39
+        },
+        {
+          "text": "visualizzare",
+          "start": 2.45,
+          "end": 3.03
+        },
+        {
+          "text": "due",
+          "start": 3.15,
+          "end": 3.35
+        },
+        {
+          "text": "grandezze",
+          "start": 3.39,
+          "end": 3.85
+        },
+        {
+          "text": "complementari.",
+          "start": 3.89,
+          "end": 4.67
+        }
+      ]
+    },
+    {
+      "start": 5.371,
+      "end": 7.911,
+      "text": "La prima è la densità dei vettori di riferimento:",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.371,
+          "end": 5.431
+        },
+        {
+          "text": "prima",
+          "start": 5.491,
+          "end": 5.751
+        },
+        {
+          "text": "è",
+          "start": 6.031,
+          "end": 6.071
+        },
+        {
+          "text": "la",
+          "start": 6.111,
+          "end": 6.171
+        },
+        {
+          "text": "densità",
+          "start": 6.231,
+          "end": 6.631
+        },
+        {
+          "text": "dei",
+          "start": 6.691,
+          "end": 6.791
+        },
+        {
+          "text": "vettori",
+          "start": 6.831,
+          "end": 7.151
+        },
+        {
+          "text": "di",
+          "start": 7.191,
+          "end": 7.251
+        },
+        {
+          "text": "riferimento:",
+          "start": 7.291,
+          "end": 7.911
+        }
+      ]
+    },
+    {
+      "start": 8.491,
+      "end": 12.311,
+      "text": "il colore è proporzionale al numero di esempi assegnati a ogni unità.",
+      "words": [
+        {
+          "text": "il",
+          "start": 8.491,
+          "end": 8.591
+        },
+        {
+          "text": "colore",
+          "start": 8.651,
+          "end": 9.031
+        },
+        {
+          "text": "è",
+          "start": 9.211,
+          "end": 9.251
+        },
+        {
+          "text": "proporzionale",
+          "start": 9.311,
+          "end": 10.011
+        },
+        {
+          "text": "al",
+          "start": 10.051,
+          "end": 10.151
+        },
+        {
+          "text": "numero",
+          "start": 10.211,
+          "end": 10.491
+        },
+        {
+          "text": "di",
+          "start": 10.551,
+          "end": 10.591
+        },
+        {
+          "text": "esempi",
+          "start": 10.651,
+          "end": 11.011
+        },
+        {
+          "text": "assegnati",
+          "start": 11.071,
+          "end": 11.591
+        },
+        {
+          "text": "a",
+          "start": 11.651,
+          "end": 11.691
+        },
+        {
+          "text": "ogni",
+          "start": 11.751,
+          "end": 11.951
+        },
+        {
+          "text": "unità.",
+          "start": 12.031,
+          "end": 12.311
+        }
+      ]
+    },
+    {
+      "start": 12.971,
+      "end": 16.992,
+      "text": "La seconda sono le distanze tra i pesi di unità vicine sulla griglia,",
+      "words": [
+        {
+          "text": "La",
+          "start": 12.971,
+          "end": 13.051
+        },
+        {
+          "text": "seconda",
+          "start": 13.131,
+          "end": 13.631
+        },
+        {
+          "text": "sono",
+          "start": 13.891,
+          "end": 14.131
+        },
+        {
+          "text": "le",
+          "start": 14.231,
+          "end": 14.311
+        },
+        {
+          "text": "distanze",
+          "start": 14.351,
+          "end": 14.932
+        },
+        {
+          "text": "tra",
+          "start": 14.992,
+          "end": 15.092
+        },
+        {
+          "text": "i",
+          "start": 15.172,
+          "end": 15.212
+        },
+        {
+          "text": "pesi",
+          "start": 15.232,
+          "end": 15.472
+        },
+        {
+          "text": "di",
+          "start": 15.512,
+          "end": 15.572
+        },
+        {
+          "text": "unità",
+          "start": 15.632,
+          "end": 15.872
+        },
+        {
+          "text": "vicine",
+          "start": 15.952,
+          "end": 16.312
+        },
+        {
+          "text": "sulla",
+          "start": 16.372,
+          "end": 16.592
+        },
+        {
+          "text": "griglia,",
+          "start": 16.632,
+          "end": 16.992
+        }
+      ]
+    },
+    {
+      "start": 17.272,
+      "end": 22.512,
+      "text": "tramite la U-matrix: colori scuri indicano grandi distanze, cioè confini tra cluster,",
+      "words": [
+        {
+          "text": "tramite",
+          "start": 17.272,
+          "end": 17.652
+        },
+        {
+          "text": "la",
+          "start": 17.792,
+          "end": 17.872
+        },
+        {
+          "text": "U-matrix:",
+          "start": 18.012,
+          "end": 18.532
+        },
+        {
+          "text": "colori",
+          "start": 19.112,
+          "end": 19.372
+        },
+        {
+          "text": "scuri",
+          "start": 19.412,
+          "end": 19.712
+        },
+        {
+          "text": "indicano",
+          "start": 19.852,
+          "end": 20.252
+        },
+        {
+          "text": "grandi",
+          "start": 20.312,
+          "end": 20.592
+        },
+        {
+          "text": "distanze,",
+          "start": 20.632,
+          "end": 21.152
+        },
+        {
+          "text": "cioè",
+          "start": 21.232,
+          "end": 21.372
+        },
+        {
+          "text": "confini",
+          "start": 21.452,
+          "end": 21.852
+        },
+        {
+          "text": "tra",
+          "start": 21.912,
+          "end": 22.012
+        },
+        {
+          "text": "cluster,",
+          "start": 22.052,
+          "end": 22.512
+        }
+      ]
+    },
+    {
+      "start": 22.872,
+      "end": 26.953,
+      "text": "mentre colori chiari indicano piccole distanze, cioè unità dello stesso cluster.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 22.872,
+          "end": 23.132
+        },
+        {
+          "text": "colori",
+          "start": 23.212,
+          "end": 23.472
+        },
+        {
+          "text": "chiari",
+          "start": 23.512,
+          "end": 23.792
+        },
+        {
+          "text": "indicano",
+          "start": 23.892,
+          "end": 24.292
+        },
+        {
+          "text": "piccole",
+          "start": 24.352,
+          "end": 24.732
+        },
+        {
+          "text": "distanze,",
+          "start": 24.772,
+          "end": 25.273
+        },
+        {
+          "text": "cioè",
+          "start": 25.333,
+          "end": 25.473
+        },
+        {
+          "text": "unità",
+          "start": 25.633,
+          "end": 25.933
+        },
+        {
+          "text": "dello",
+          "start": 26.013,
+          "end": 26.193
+        },
+        {
+          "text": "stesso",
+          "start": 26.233,
+          "end": 26.473
+        },
+        {
+          "text": "cluster.",
+          "start": 26.513,
+          "end": 26.953
+        }
+      ]
+    },
+    {
+      "start": 27.573,
+      "end": 33.353,
+      "text": "Così la SOM diventa subito interpretabile: per esempio, addestrando una mappa tredici per nove su",
+      "words": [
+        {
+          "text": "Così",
+          "start": 27.573,
+          "end": 27.793
+        },
+        {
+          "text": "la",
+          "start": 27.953,
+          "end": 28.013
+        },
+        {
+          "text": "SOM",
+          "start": 28.113,
+          "end": 28.293
+        },
+        {
+          "text": "diventa",
+          "start": 28.373,
+          "end": 28.713
+        },
+        {
+          "text": "subito",
+          "start": 28.793,
+          "end": 29.093
+        },
+        {
+          "text": "interpretabile:",
+          "start": 29.233,
+          "end": 30.113
+        },
+        {
+          "text": "per",
+          "start": 30.533,
+          "end": 30.633
+        },
+        {
+          "text": "esempio,",
+          "start": 30.653,
+          "end": 31.013
+        },
+        {
+          "text": "addestrando",
+          "start": 31.233,
+          "end": 31.713
+        },
+        {
+          "text": "una",
+          "start": 31.753,
+          "end": 31.853
+        },
+        {
+          "text": "mappa",
+          "start": 31.893,
+          "end": 32.193
+        },
+        {
+          "text": "tredici",
+          "start": 32.313,
+          "end": 32.733
+        },
+        {
+          "text": "per",
+          "start": 32.773,
+          "end": 32.893
+        },
+        {
+          "text": "nove",
+          "start": 32.973,
+          "end": 33.213
+        },
+        {
+          "text": "su",
+          "start": 33.293,
+          "end": 33.353
+        }
+      ]
+    },
+    {
+      "start": 33.473,
+      "end": 36.594,
+      "text": "trentanove indicatori di benessere di settantasette paesi,",
+      "words": [
+        {
+          "text": "trentanove",
+          "start": 33.473,
+          "end": 34.033
+        },
+        {
+          "text": "indicatori",
+          "start": 34.093,
+          "end": 34.573
+        },
+        {
+          "text": "di",
+          "start": 34.613,
+          "end": 34.693
+        },
+        {
+          "text": "benessere",
+          "start": 34.733,
+          "end": 35.193
+        },
+        {
+          "text": "di",
+          "start": 35.233,
+          "end": 35.314
+        },
+        {
+          "text": "settantasette",
+          "start": 35.374,
+          "end": 36.134
+        },
+        {
+          "text": "paesi,",
+          "start": 36.194,
+          "end": 36.594
+        }
+      ]
+    },
+    {
+      "start": 37.174,
+      "end": 42.174,
+      "text": "le zone chiare della U-matrix raggruppano paesi simili e le zone scure separano i gruppi,",
+      "words": [
+        {
+          "text": "le",
+          "start": 37.174,
+          "end": 37.234
+        },
+        {
+          "text": "zone",
+          "start": 37.294,
+          "end": 37.474
+        },
+        {
+          "text": "chiare",
+          "start": 37.554,
+          "end": 37.894
+        },
+        {
+          "text": "della",
+          "start": 37.934,
+          "end": 38.094
+        },
+        {
+          "text": "U-matrix",
+          "start": 38.194,
+          "end": 38.614
+        },
+        {
+          "text": "raggruppano",
+          "start": 38.874,
+          "end": 39.374
+        },
+        {
+          "text": "paesi",
+          "start": 39.414,
+          "end": 39.654
+        },
+        {
+          "text": "simili",
+          "start": 39.734,
+          "end": 40.094
+        },
+        {
+          "text": "e",
+          "start": 40.454,
+          "end": 40.494
+        },
+        {
+          "text": "le",
+          "start": 40.554,
+          "end": 40.614
+        },
+        {
+          "text": "zone",
+          "start": 40.674,
+          "end": 40.854
+        },
+        {
+          "text": "scure",
+          "start": 40.914,
+          "end": 41.174
+        },
+        {
+          "text": "separano",
+          "start": 41.354,
+          "end": 41.754
+        },
+        {
+          "text": "i",
+          "start": 41.794,
+          "end": 41.834
+        },
+        {
+          "text": "gruppi,",
+          "start": 41.834,
+          "end": 42.174
+        }
+      ]
+    },
+    {
+      "start": 42.654,
+      "end": 45.334,
+      "text": "senza alcuna ipotesi a priori sulla forma dei cluster.",
+      "words": [
+        {
+          "text": "senza",
+          "start": 42.654,
+          "end": 42.874
+        },
+        {
+          "text": "alcuna",
+          "start": 42.914,
+          "end": 43.154
+        },
+        {
+          "text": "ipotesi",
+          "start": 43.194,
+          "end": 43.554
+        },
+        {
+          "text": "a",
+          "start": 43.594,
+          "end": 43.634
+        },
+        {
+          "text": "priori",
+          "start": 43.674,
+          "end": 44.074
+        },
+        {
+          "text": "sulla",
+          "start": 44.194,
+          "end": 44.374
+        },
+        {
+          "text": "forma",
+          "start": 44.414,
+          "end": 44.674
+        },
+        {
+          "text": "dei",
+          "start": 44.714,
+          "end": 44.854
+        },
+        {
+          "text": "cluster.",
+          "start": 44.894,
+          "end": 45.334
+        }
+      ]
+    },
+    {
+      "start": 46.175,
+      "end": 48.135,
+      "text": "Come si valuta invece un clustering?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 46.175,
+          "end": 46.335
+        },
+        {
+          "text": "si",
+          "start": 46.375,
+          "end": 46.435
+        },
+        {
+          "text": "valuta",
+          "start": 46.495,
+          "end": 46.835
+        },
+        {
+          "text": "invece",
+          "start": 46.975,
+          "end": 47.375
+        },
+        {
+          "text": "un",
+          "start": 47.415,
+          "end": 47.475
+        },
+        {
+          "text": "clustering?",
+          "start": 47.515,
+          "end": 48.135
+        }
+      ]
+    },
+    {
+      "start": 48.795,
+      "end": 54.335,
+      "text": "La valutazione è spesso soggettiva, con pochi riferimenti oggettivi salvo sotto-domini ben definiti.",
+      "words": [
+        {
+          "text": "La",
+          "start": 48.795,
+          "end": 48.875
+        },
+        {
+          "text": "valutazione",
+          "start": 48.915,
+          "end": 49.475
+        },
+        {
+          "text": "è",
+          "start": 49.515,
+          "end": 49.555
+        },
+        {
+          "text": "spesso",
+          "start": 49.575,
+          "end": 49.835
+        },
+        {
+          "text": "soggettiva,",
+          "start": 49.895,
+          "end": 50.475
+        },
+        {
+          "text": "con",
+          "start": 50.775,
+          "end": 50.915
+        },
+        {
+          "text": "pochi",
+          "start": 50.975,
+          "end": 51.215
+        },
+        {
+          "text": "riferimenti",
+          "start": 51.255,
+          "end": 51.775
+        },
+        {
+          "text": "oggettivi",
+          "start": 51.815,
+          "end": 52.355
+        },
+        {
+          "text": "salvo",
+          "start": 52.515,
+          "end": 52.835
+        },
+        {
+          "text": "sotto-domini",
+          "start": 52.935,
+          "end": 53.595
+        },
+        {
+          "text": "ben",
+          "start": 53.655,
+          "end": 53.775
+        },
+        {
+          "text": "definiti.",
+          "start": 53.815,
+          "end": 54.335
+        }
+      ]
+    },
+    {
+      "start": 55.095,
+      "end": 60.416,
+      "text": "Esistono misure oggettive come l'errore di quantizzazione, che però dipende dal numero di centroidi K.",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 55.095,
+          "end": 55.515
+        },
+        {
+          "text": "misure",
+          "start": 55.555,
+          "end": 55.796
+        },
+        {
+          "text": "oggettive",
+          "start": 55.836,
+          "end": 56.276
+        },
+        {
+          "text": "come",
+          "start": 56.356,
+          "end": 56.576
+        },
+        {
+          "text": "l'errore",
+          "start": 56.676,
+          "end": 57.036
+        },
+        {
+          "text": "di",
+          "start": 57.096,
+          "end": 57.176
+        },
+        {
+          "text": "quantizzazione,",
+          "start": 57.256,
+          "end": 58.116
+        },
+        {
+          "text": "che",
+          "start": 58.556,
+          "end": 58.636
+        },
+        {
+          "text": "però",
+          "start": 58.676,
+          "end": 58.816
+        },
+        {
+          "text": "dipende",
+          "start": 58.896,
+          "end": 59.236
+        },
+        {
+          "text": "dal",
+          "start": 59.276,
+          "end": 59.396
+        },
+        {
+          "text": "numero",
+          "start": 59.436,
+          "end": 59.696
+        },
+        {
+          "text": "di",
+          "start": 59.736,
+          "end": 59.796
+        },
+        {
+          "text": "centroidi",
+          "start": 59.856,
+          "end": 60.316
+        },
+        {
+          "text": "K.",
+          "start": 60.376,
+          "end": 60.416
+        }
+      ]
+    },
+    {
+      "start": 61.556,
+      "end": 65.876,
+      "text": "Inoltre non si usa semplicemente l'etichetta di un task di classificazione sottostante,",
+      "words": [
+        {
+          "text": "Inoltre",
+          "start": 61.556,
+          "end": 61.956
+        },
+        {
+          "text": "non",
+          "start": 62.016,
+          "end": 62.136
+        },
+        {
+          "text": "si",
+          "start": 62.176,
+          "end": 62.256
+        },
+        {
+          "text": "usa",
+          "start": 62.336,
+          "end": 62.476
+        },
+        {
+          "text": "semplicemente",
+          "start": 62.556,
+          "end": 63.116
+        },
+        {
+          "text": "l'etichetta",
+          "start": 63.196,
+          "end": 63.636
+        },
+        {
+          "text": "di",
+          "start": 63.696,
+          "end": 63.736
+        },
+        {
+          "text": "un",
+          "start": 63.776,
+          "end": 63.856
+        },
+        {
+          "text": "task",
+          "start": 63.896,
+          "end": 64.176
+        },
+        {
+          "text": "di",
+          "start": 64.276,
+          "end": 64.336
+        },
+        {
+          "text": "classificazione",
+          "start": 64.376,
+          "end": 65.096
+        },
+        {
+          "text": "sottostante,",
+          "start": 65.136,
+          "end": 65.876
+        }
+      ]
+    },
+    {
+      "start": 66.277,
+      "end": 70.697,
+      "text": "la cosiddetta purity: se si hanno le etichette, tanto vale usare un classificatore.",
+      "words": [
+        {
+          "text": "la",
+          "start": 66.277,
+          "end": 66.337
+        },
+        {
+          "text": "cosiddetta",
+          "start": 66.377,
+          "end": 66.837
+        },
+        {
+          "text": "purity:",
+          "start": 66.937,
+          "end": 67.357
+        },
+        {
+          "text": "se",
+          "start": 67.897,
+          "end": 67.977
+        },
+        {
+          "text": "si",
+          "start": 68.057,
+          "end": 68.117
+        },
+        {
+          "text": "hanno",
+          "start": 68.157,
+          "end": 68.317
+        },
+        {
+          "text": "le",
+          "start": 68.357,
+          "end": 68.437
+        },
+        {
+          "text": "etichette,",
+          "start": 68.497,
+          "end": 69.017
+        },
+        {
+          "text": "tanto",
+          "start": 69.217,
+          "end": 69.437
+        },
+        {
+          "text": "vale",
+          "start": 69.477,
+          "end": 69.637
+        },
+        {
+          "text": "usare",
+          "start": 69.677,
+          "end": 69.897
+        },
+        {
+          "text": "un",
+          "start": 69.897,
+          "end": 69.957
+        },
+        {
+          "text": "classificatore.",
+          "start": 69.977,
+          "end": 70.697
+        }
+      ]
+    },
+    {
+      "start": 71.477,
+      "end": 75.977,
+      "text": "Va sempre distinta la qualità del clustering in sé dalla qualità dei risultati per il",
+      "words": [
+        {
+          "text": "Va",
+          "start": 71.477,
+          "end": 71.557
+        },
+        {
+          "text": "sempre",
+          "start": 71.697,
+          "end": 72.017
+        },
+        {
+          "text": "distinta",
+          "start": 72.077,
+          "end": 72.597
+        },
+        {
+          "text": "la",
+          "start": 72.657,
+          "end": 72.717
+        },
+        {
+          "text": "qualità",
+          "start": 72.757,
+          "end": 73.077
+        },
+        {
+          "text": "del",
+          "start": 73.157,
+          "end": 73.277
+        },
+        {
+          "text": "clustering",
+          "start": 73.317,
+          "end": 73.817
+        },
+        {
+          "text": "in",
+          "start": 73.937,
+          "end": 74.057
+        },
+        {
+          "text": "sé",
+          "start": 74.217,
+          "end": 74.337
+        },
+        {
+          "text": "dalla",
+          "start": 74.577,
+          "end": 74.757
+        },
+        {
+          "text": "qualità",
+          "start": 74.817,
+          "end": 75.117
+        },
+        {
+          "text": "dei",
+          "start": 75.177,
+          "end": 75.277
+        },
+        {
+          "text": "risultati",
+          "start": 75.297,
+          "end": 75.737
+        },
+        {
+          "text": "per",
+          "start": 75.777,
+          "end": 75.877
+        },
+        {
+          "text": "il",
+          "start": 75.917,
+          "end": 75.977
+        }
+      ]
+    },
+    {
+      "start": 76.017,
+      "end": 76.398,
+      "text": "dominio.",
+      "words": [
+        {
+          "text": "dominio.",
+          "start": 76.017,
+          "end": 76.398
+        }
+      ]
+    },
+    {
+      "start": 77.358,
+      "end": 82.698,
+      "text": "Ricordiamo infine altri metodi non supervisionati: clustering gerarchico con dendrogrammi,",
+      "words": [
+        {
+          "text": "Ricordiamo",
+          "start": 77.358,
+          "end": 77.818
+        },
+        {
+          "text": "infine",
+          "start": 77.878,
+          "end": 78.278
+        },
+        {
+          "text": "altri",
+          "start": 78.378,
+          "end": 78.618
+        },
+        {
+          "text": "metodi",
+          "start": 78.678,
+          "end": 79.018
+        },
+        {
+          "text": "non",
+          "start": 79.118,
+          "end": 79.258
+        },
+        {
+          "text": "supervisionati:",
+          "start": 79.338,
+          "end": 80.178
+        },
+        {
+          "text": "clustering",
+          "start": 80.598,
+          "end": 81.138
+        },
+        {
+          "text": "gerarchico",
+          "start": 81.158,
+          "end": 81.778
+        },
+        {
+          "text": "con",
+          "start": 81.838,
+          "end": 81.998
+        },
+        {
+          "text": "dendrogrammi,",
+          "start": 82.038,
+          "end": 82.698
+        }
+      ]
+    },
+    {
+      "start": 83.158,
+      "end": 85.538,
+      "text": "analisi delle componenti principali o PCA,",
+      "words": [
+        {
+          "text": "analisi",
+          "start": 83.158,
+          "end": 83.558
+        },
+        {
+          "text": "delle",
+          "start": 83.618,
+          "end": 83.778
+        },
+        {
+          "text": "componenti",
+          "start": 83.798,
+          "end": 84.258
+        },
+        {
+          "text": "principali",
+          "start": 84.298,
+          "end": 84.978
+        },
+        {
+          "text": "o",
+          "start": 85.098,
+          "end": 85.138
+        },
+        {
+          "text": "PCA,",
+          "start": 85.178,
+          "end": 85.538
+        }
+      ]
+    },
+    {
+      "start": 86.138,
+      "end": 91.159,
+      "text": "regole di associazione, ICA, Multidimensional Scaling e t-SNE.",
+      "words": [
+        {
+          "text": "regole",
+          "start": 86.138,
+          "end": 86.459
+        },
+        {
+          "text": "di",
+          "start": 86.499,
+          "end": 86.539
+        },
+        {
+          "text": "associazione,",
+          "start": 86.579,
+          "end": 87.279
+        },
+        {
+          "text": "ICA,",
+          "start": 87.759,
+          "end": 88.079
+        },
+        {
+          "text": "Multidimensional",
+          "start": 88.599,
+          "end": 89.439
+        },
+        {
+          "text": "Scaling",
+          "start": 89.499,
+          "end": 89.919
+        },
+        {
+          "text": "e",
+          "start": 90.079,
+          "end": 90.119
+        },
+        {
+          "text": "t-SNE.",
+          "start": 90.239,
+          "end": 91.159
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1884 @@
+{
+  "duration": 132.048,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.86,
+      "text": "Come possiamo studiare con rigore questi fenomeni?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.08,
+          "end": 0.26
+        },
+        {
+          "text": "possiamo",
+          "start": 0.32,
+          "end": 0.74
+        },
+        {
+          "text": "studiare",
+          "start": 0.8,
+          "end": 1.22
+        },
+        {
+          "text": "con",
+          "start": 1.34,
+          "end": 1.48
+        },
+        {
+          "text": "rigore",
+          "start": 1.54,
+          "end": 1.98
+        },
+        {
+          "text": "questi",
+          "start": 2.06,
+          "end": 2.32
+        },
+        {
+          "text": "fenomeni?",
+          "start": 2.36,
+          "end": 2.86
+        }
+      ]
+    },
+    {
+      "start": 3.46,
+      "end": 10.501,
+      "text": "Modelli come NN4G e GraphESN sono strumenti preziosi perché separano il bias intrinseco del message",
+      "words": [
+        {
+          "text": "Modelli",
+          "start": 3.46,
+          "end": 3.8
+        },
+        {
+          "text": "come",
+          "start": 3.86,
+          "end": 4.1
+        },
+        {
+          "text": "NN4G",
+          "start": 4.4,
+          "end": 5.241
+        },
+        {
+          "text": "e",
+          "start": 5.701,
+          "end": 5.741
+        },
+        {
+          "text": "GraphESN",
+          "start": 5.841,
+          "end": 6.701
+        },
+        {
+          "text": "sono",
+          "start": 6.821,
+          "end": 6.981
+        },
+        {
+          "text": "strumenti",
+          "start": 7.021,
+          "end": 7.381
+        },
+        {
+          "text": "preziosi",
+          "start": 7.441,
+          "end": 7.941
+        },
+        {
+          "text": "perché",
+          "start": 7.981,
+          "end": 8.201
+        },
+        {
+          "text": "separano",
+          "start": 8.301,
+          "end": 8.721
+        },
+        {
+          "text": "il",
+          "start": 8.781,
+          "end": 8.861
+        },
+        {
+          "text": "bias",
+          "start": 8.941,
+          "end": 9.301
+        },
+        {
+          "text": "intrinseco",
+          "start": 9.361,
+          "end": 9.941
+        },
+        {
+          "text": "del",
+          "start": 10.001,
+          "end": 10.121
+        },
+        {
+          "text": "message",
+          "start": 10.161,
+          "end": 10.501
+        }
+      ]
+    },
+    {
+      "start": 10.541,
+      "end": 13.341,
+      "text": "passing dai problemi dell'addestramento end-to-end:",
+      "words": [
+        {
+          "text": "passing",
+          "start": 10.541,
+          "end": 11.001
+        },
+        {
+          "text": "dai",
+          "start": 11.421,
+          "end": 11.581
+        },
+        {
+          "text": "problemi",
+          "start": 11.621,
+          "end": 12.001
+        },
+        {
+          "text": "dell'addestramento",
+          "start": 12.041,
+          "end": 12.781
+        },
+        {
+          "text": "end-to-end:",
+          "start": 12.861,
+          "end": 13.341
+        }
+      ]
+    },
+    {
+      "start": 14.001,
+      "end": 19.662,
+      "text": "NN4G non propaga il gradiente tra gli strati, e GraphESN non addestra affatto l'embedding.",
+      "words": [
+        {
+          "text": "NN4G",
+          "start": 14.001,
+          "end": 14.581
+        },
+        {
+          "text": "non",
+          "start": 14.841,
+          "end": 14.961
+        },
+        {
+          "text": "propaga",
+          "start": 15.021,
+          "end": 15.341
+        },
+        {
+          "text": "il",
+          "start": 15.401,
+          "end": 15.461
+        },
+        {
+          "text": "gradiente",
+          "start": 15.502,
+          "end": 16.002
+        },
+        {
+          "text": "tra",
+          "start": 16.042,
+          "end": 16.142
+        },
+        {
+          "text": "gli",
+          "start": 16.182,
+          "end": 16.322
+        },
+        {
+          "text": "strati,",
+          "start": 16.382,
+          "end": 16.742
+        },
+        {
+          "text": "e",
+          "start": 17.222,
+          "end": 17.262
+        },
+        {
+          "text": "GraphESN",
+          "start": 17.302,
+          "end": 18.002
+        },
+        {
+          "text": "non",
+          "start": 18.142,
+          "end": 18.262
+        },
+        {
+          "text": "addestra",
+          "start": 18.302,
+          "end": 18.682
+        },
+        {
+          "text": "affatto",
+          "start": 18.742,
+          "end": 19.102
+        },
+        {
+          "text": "l'embedding.",
+          "start": 19.142,
+          "end": 19.662
+        }
+      ]
+    },
+    {
+      "start": 20.642,
+      "end": 23.722,
+      "text": "Il primo strumento teorico riguarda la norma spettrale di W,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 20.642,
+          "end": 20.722
+        },
+        {
+          "text": "primo",
+          "start": 20.762,
+          "end": 20.962
+        },
+        {
+          "text": "strumento",
+          "start": 21.022,
+          "end": 21.362
+        },
+        {
+          "text": "teorico",
+          "start": 21.402,
+          "end": 21.782
+        },
+        {
+          "text": "riguarda",
+          "start": 21.942,
+          "end": 22.262
+        },
+        {
+          "text": "la",
+          "start": 22.302,
+          "end": 22.362
+        },
+        {
+          "text": "norma",
+          "start": 22.402,
+          "end": 22.602
+        },
+        {
+          "text": "spettrale",
+          "start": 22.682,
+          "end": 23.182
+        },
+        {
+          "text": "di",
+          "start": 23.222,
+          "end": 23.282
+        },
+        {
+          "text": "W,",
+          "start": 23.682,
+          "end": 23.722
+        }
+      ]
+    },
+    {
+      "start": 24.022,
+      "end": 26.683,
+      "text": "cioè il massimo fattore di allungamento di un vettore,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 24.022,
+          "end": 24.162
+        },
+        {
+          "text": "il",
+          "start": 24.222,
+          "end": 24.302
+        },
+        {
+          "text": "massimo",
+          "start": 24.382,
+          "end": 24.822
+        },
+        {
+          "text": "fattore",
+          "start": 24.862,
+          "end": 25.202
+        },
+        {
+          "text": "di",
+          "start": 25.242,
+          "end": 25.302
+        },
+        {
+          "text": "allungamento",
+          "start": 25.342,
+          "end": 26.002
+        },
+        {
+          "text": "di",
+          "start": 26.042,
+          "end": 26.102
+        },
+        {
+          "text": "un",
+          "start": 26.143,
+          "end": 26.203
+        },
+        {
+          "text": "vettore,",
+          "start": 26.243,
+          "end": 26.683
+        }
+      ]
+    },
+    {
+      "start": 27.083,
+      "end": 30.183,
+      "text": "che coincide con la costante di Lipschitz del message passing.",
+      "words": [
+        {
+          "text": "che",
+          "start": 27.083,
+          "end": 27.163
+        },
+        {
+          "text": "coincide",
+          "start": 27.203,
+          "end": 27.603
+        },
+        {
+          "text": "con",
+          "start": 27.743,
+          "end": 27.883
+        },
+        {
+          "text": "la",
+          "start": 27.923,
+          "end": 28.003
+        },
+        {
+          "text": "costante",
+          "start": 28.043,
+          "end": 28.483
+        },
+        {
+          "text": "di",
+          "start": 28.523,
+          "end": 28.603
+        },
+        {
+          "text": "Lipschitz",
+          "start": 28.643,
+          "end": 29.063
+        },
+        {
+          "text": "del",
+          "start": 29.243,
+          "end": 29.363
+        },
+        {
+          "text": "message",
+          "start": 29.423,
+          "end": 29.723
+        },
+        {
+          "text": "passing.",
+          "start": 29.763,
+          "end": 30.183
+        }
+      ]
+    },
+    {
+      "start": 30.823,
+      "end": 35.723,
+      "text": "Vale un limite superiore fondamentale sullo Jacobiano: la norma della derivata di h con v",
+      "words": [
+        {
+          "text": "Vale",
+          "start": 30.823,
+          "end": 30.983
+        },
+        {
+          "text": "un",
+          "start": 31.043,
+          "end": 31.123
+        },
+        {
+          "text": "limite",
+          "start": 31.143,
+          "end": 31.423
+        },
+        {
+          "text": "superiore",
+          "start": 31.483,
+          "end": 31.863
+        },
+        {
+          "text": "fondamentale",
+          "start": 31.903,
+          "end": 32.563
+        },
+        {
+          "text": "sullo",
+          "start": 32.603,
+          "end": 32.783
+        },
+        {
+          "text": "Jacobiano:",
+          "start": 32.843,
+          "end": 33.363
+        },
+        {
+          "text": "la",
+          "start": 33.823,
+          "end": 33.883
+        },
+        {
+          "text": "norma",
+          "start": 33.943,
+          "end": 34.163
+        },
+        {
+          "text": "della",
+          "start": 34.223,
+          "end": 34.383
+        },
+        {
+          "text": "derivata",
+          "start": 34.423,
+          "end": 34.803
+        },
+        {
+          "text": "di",
+          "start": 34.863,
+          "end": 34.943
+        },
+        {
+          "text": "h",
+          "start": 35.263,
+          "end": 35.303
+        },
+        {
+          "text": "con",
+          "start": 35.443,
+          "end": 35.603
+        },
+        {
+          "text": "v",
+          "start": 35.683,
+          "end": 35.723
+        }
+      ]
+    },
+    {
+      "start": 35.943,
+      "end": 41.124,
+      "text": "allo strato L rispetto a x con u è minore o uguale al prodotto per",
+      "words": [
+        {
+          "text": "allo",
+          "start": 35.943,
+          "end": 36.123
+        },
+        {
+          "text": "strato",
+          "start": 36.183,
+          "end": 36.483
+        },
+        {
+          "text": "L",
+          "start": 36.683,
+          "end": 36.723
+        },
+        {
+          "text": "rispetto",
+          "start": 37.304,
+          "end": 37.684
+        },
+        {
+          "text": "a",
+          "start": 37.704,
+          "end": 37.744
+        },
+        {
+          "text": "x",
+          "start": 37.924,
+          "end": 37.964
+        },
+        {
+          "text": "con",
+          "start": 38.184,
+          "end": 38.344
+        },
+        {
+          "text": "u",
+          "start": 38.384,
+          "end": 38.424
+        },
+        {
+          "text": "è",
+          "start": 38.964,
+          "end": 39.004
+        },
+        {
+          "text": "minore",
+          "start": 39.104,
+          "end": 39.524
+        },
+        {
+          "text": "o",
+          "start": 39.604,
+          "end": 39.644
+        },
+        {
+          "text": "uguale",
+          "start": 39.684,
+          "end": 40.004
+        },
+        {
+          "text": "al",
+          "start": 40.044,
+          "end": 40.144
+        },
+        {
+          "text": "prodotto",
+          "start": 40.204,
+          "end": 40.724
+        },
+        {
+          "text": "per",
+          "start": 40.944,
+          "end": 41.124
+        }
+      ]
+    },
+    {
+      "start": 41.364,
+      "end": 42.324,
+      "text": "l da uno a L",
+      "words": [
+        {
+          "text": "l",
+          "start": 41.364,
+          "end": 41.404
+        },
+        {
+          "text": "da",
+          "start": 41.664,
+          "end": 41.724
+        },
+        {
+          "text": "uno",
+          "start": 41.824,
+          "end": 42.004
+        },
+        {
+          "text": "a",
+          "start": 42.044,
+          "end": 42.084
+        },
+        {
+          "text": "L",
+          "start": 42.284,
+          "end": 42.324
+        }
+      ]
+    },
+    {
+      "start": 43.024,
+      "end": 48.345,
+      "text": "delle norme di W allo strato l, moltiplicato per l'elemento u v di A alla",
+      "words": [
+        {
+          "text": "delle",
+          "start": 43.024,
+          "end": 43.224
+        },
+        {
+          "text": "norme",
+          "start": 43.284,
+          "end": 43.564
+        },
+        {
+          "text": "di",
+          "start": 43.604,
+          "end": 43.664
+        },
+        {
+          "text": "W",
+          "start": 44.044,
+          "end": 44.084
+        },
+        {
+          "text": "allo",
+          "start": 44.224,
+          "end": 44.364
+        },
+        {
+          "text": "strato",
+          "start": 44.424,
+          "end": 44.704
+        },
+        {
+          "text": "l,",
+          "start": 44.944,
+          "end": 44.984
+        },
+        {
+          "text": "moltiplicato",
+          "start": 45.504,
+          "end": 46.204
+        },
+        {
+          "text": "per",
+          "start": 46.264,
+          "end": 46.364
+        },
+        {
+          "text": "l'elemento",
+          "start": 46.404,
+          "end": 46.904
+        },
+        {
+          "text": "u",
+          "start": 47.124,
+          "end": 47.164
+        },
+        {
+          "text": "v",
+          "start": 47.485,
+          "end": 47.525
+        },
+        {
+          "text": "di",
+          "start": 47.885,
+          "end": 47.985
+        },
+        {
+          "text": "A",
+          "start": 48.085,
+          "end": 48.125
+        },
+        {
+          "text": "alla",
+          "start": 48.185,
+          "end": 48.345
+        }
+      ]
+    },
+    {
+      "start": 48.605,
+      "end": 48.645,
+      "text": "L.",
+      "words": [
+        {
+          "text": "L.",
+          "start": 48.605,
+          "end": 48.645
+        }
+      ]
+    },
+    {
+      "start": 49.725,
+      "end": 53.985,
+      "text": "Leggiamo bene questa disuguaglianza: se ogni norma di W è minore di uno,",
+      "words": [
+        {
+          "text": "Leggiamo",
+          "start": 49.725,
+          "end": 50.045
+        },
+        {
+          "text": "bene",
+          "start": 50.105,
+          "end": 50.285
+        },
+        {
+          "text": "questa",
+          "start": 50.325,
+          "end": 50.545
+        },
+        {
+          "text": "disuguaglianza:",
+          "start": 50.605,
+          "end": 51.305
+        },
+        {
+          "text": "se",
+          "start": 51.845,
+          "end": 51.905
+        },
+        {
+          "text": "ogni",
+          "start": 51.985,
+          "end": 52.125
+        },
+        {
+          "text": "norma",
+          "start": 52.185,
+          "end": 52.445
+        },
+        {
+          "text": "di",
+          "start": 52.505,
+          "end": 52.805
+        },
+        {
+          "text": "W",
+          "start": 52.905,
+          "end": 52.945
+        },
+        {
+          "text": "è",
+          "start": 53.125,
+          "end": 53.165
+        },
+        {
+          "text": "minore",
+          "start": 53.245,
+          "end": 53.605
+        },
+        {
+          "text": "di",
+          "start": 53.645,
+          "end": 53.705
+        },
+        {
+          "text": "uno,",
+          "start": 53.805,
+          "end": 53.985
+        }
+      ]
+    },
+    {
+      "start": 54.285,
+      "end": 59.166,
+      "text": "il prodotto decade esponenzialmente con L e la sensibilità ai nodi lontani è costretta a",
+      "words": [
+        {
+          "text": "il",
+          "start": 54.285,
+          "end": 54.365
+        },
+        {
+          "text": "prodotto",
+          "start": 54.405,
+          "end": 54.745
+        },
+        {
+          "text": "decade",
+          "start": 54.785,
+          "end": 55.045
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 55.105,
+          "end": 55.825
+        },
+        {
+          "text": "con",
+          "start": 55.865,
+          "end": 55.985
+        },
+        {
+          "text": "L",
+          "start": 56.105,
+          "end": 56.145
+        },
+        {
+          "text": "e",
+          "start": 56.665,
+          "end": 56.705
+        },
+        {
+          "text": "la",
+          "start": 56.725,
+          "end": 56.785
+        },
+        {
+          "text": "sensibilità",
+          "start": 56.845,
+          "end": 57.465
+        },
+        {
+          "text": "ai",
+          "start": 57.545,
+          "end": 57.645
+        },
+        {
+          "text": "nodi",
+          "start": 57.685,
+          "end": 57.885
+        },
+        {
+          "text": "lontani",
+          "start": 57.946,
+          "end": 58.366
+        },
+        {
+          "text": "è",
+          "start": 58.466,
+          "end": 58.506
+        },
+        {
+          "text": "costretta",
+          "start": 58.586,
+          "end": 59.086
+        },
+        {
+          "text": "a",
+          "start": 59.126,
+          "end": 59.166
+        }
+      ]
+    },
+    {
+      "start": 59.186,
+      "end": 62.066,
+      "text": "svanire — ecco la radice matematica dell'over-squashing.",
+      "words": [
+        {
+          "text": "svanire",
+          "start": 59.186,
+          "end": 59.586
+        },
+        {
+          "text": "—",
+          "start": 59.586,
+          "end": 59.736
+        },
+        {
+          "text": "ecco",
+          "start": 60.066,
+          "end": 60.226
+        },
+        {
+          "text": "la",
+          "start": 60.266,
+          "end": 60.326
+        },
+        {
+          "text": "radice",
+          "start": 60.366,
+          "end": 60.646
+        },
+        {
+          "text": "matematica",
+          "start": 60.706,
+          "end": 61.206
+        },
+        {
+          "text": "dell'over-squashing.",
+          "start": 61.246,
+          "end": 62.066
+        }
+      ]
+    },
+    {
+      "start": 62.826,
+      "end": 66.066,
+      "text": "Imporre norma di W maggiore di uno rimuove questo vincolo,",
+      "words": [
+        {
+          "text": "Imporre",
+          "start": 62.826,
+          "end": 63.166
+        },
+        {
+          "text": "norma",
+          "start": 63.286,
+          "end": 63.526
+        },
+        {
+          "text": "di",
+          "start": 63.646,
+          "end": 63.806
+        },
+        {
+          "text": "W",
+          "start": 63.906,
+          "end": 63.946
+        },
+        {
+          "text": "maggiore",
+          "start": 64.066,
+          "end": 64.466
+        },
+        {
+          "text": "di",
+          "start": 64.506,
+          "end": 64.586
+        },
+        {
+          "text": "uno",
+          "start": 64.666,
+          "end": 64.826
+        },
+        {
+          "text": "rimuove",
+          "start": 64.906,
+          "end": 65.326
+        },
+        {
+          "text": "questo",
+          "start": 65.386,
+          "end": 65.646
+        },
+        {
+          "text": "vincolo,",
+          "start": 65.686,
+          "end": 66.066
+        }
+      ]
+    },
+    {
+      "start": 66.466,
+      "end": 69.407,
+      "text": "pur non garantendo che la sensibilità non svanisca per altri motivi.",
+      "words": [
+        {
+          "text": "pur",
+          "start": 66.466,
+          "end": 66.566
+        },
+        {
+          "text": "non",
+          "start": 66.606,
+          "end": 66.706
+        },
+        {
+          "text": "garantendo",
+          "start": 66.746,
+          "end": 67.186
+        },
+        {
+          "text": "che",
+          "start": 67.246,
+          "end": 67.326
+        },
+        {
+          "text": "la",
+          "start": 67.346,
+          "end": 67.406
+        },
+        {
+          "text": "sensibilità",
+          "start": 67.446,
+          "end": 67.966
+        },
+        {
+          "text": "non",
+          "start": 68.066,
+          "end": 68.186
+        },
+        {
+          "text": "svanisca",
+          "start": 68.206,
+          "end": 68.647
+        },
+        {
+          "text": "per",
+          "start": 68.687,
+          "end": 68.787
+        },
+        {
+          "text": "altri",
+          "start": 68.827,
+          "end": 69.027
+        },
+        {
+          "text": "motivi.",
+          "start": 69.067,
+          "end": 69.407
+        }
+      ]
+    },
+    {
+      "start": 70.207,
+      "end": 72.627,
+      "text": "Emergono però una tensione profonda e un compromesso:",
+      "words": [
+        {
+          "text": "Emergono",
+          "start": 70.207,
+          "end": 70.567
+        },
+        {
+          "text": "però",
+          "start": 70.587,
+          "end": 70.727
+        },
+        {
+          "text": "una",
+          "start": 70.807,
+          "end": 70.907
+        },
+        {
+          "text": "tensione",
+          "start": 70.947,
+          "end": 71.307
+        },
+        {
+          "text": "profonda",
+          "start": 71.367,
+          "end": 71.787
+        },
+        {
+          "text": "e",
+          "start": 71.847,
+          "end": 71.887
+        },
+        {
+          "text": "un",
+          "start": 71.887,
+          "end": 71.967
+        },
+        {
+          "text": "compromesso:",
+          "start": 72.007,
+          "end": 72.627
+        }
+      ]
+    },
+    {
+      "start": 73.187,
+      "end": 79.168,
+      "text": "la contrattività richiesta nell'approccio ricorsivo per convergere al punto fisso vuole norma minore di uno,",
+      "words": [
+        {
+          "text": "la",
+          "start": 73.187,
+          "end": 73.247
+        },
+        {
+          "text": "contrattività",
+          "start": 73.307,
+          "end": 74.087
+        },
+        {
+          "text": "richiesta",
+          "start": 74.167,
+          "end": 74.607
+        },
+        {
+          "text": "nell'approccio",
+          "start": 74.667,
+          "end": 75.147
+        },
+        {
+          "text": "ricorsivo",
+          "start": 75.207,
+          "end": 75.787
+        },
+        {
+          "text": "per",
+          "start": 75.847,
+          "end": 75.967
+        },
+        {
+          "text": "convergere",
+          "start": 76.027,
+          "end": 76.587
+        },
+        {
+          "text": "al",
+          "start": 76.607,
+          "end": 76.687
+        },
+        {
+          "text": "punto",
+          "start": 76.727,
+          "end": 77.007
+        },
+        {
+          "text": "fisso",
+          "start": 77.067,
+          "end": 77.407
+        },
+        {
+          "text": "vuole",
+          "start": 77.847,
+          "end": 78.087
+        },
+        {
+          "text": "norma",
+          "start": 78.167,
+          "end": 78.447
+        },
+        {
+          "text": "minore",
+          "start": 78.507,
+          "end": 78.807
+        },
+        {
+          "text": "di",
+          "start": 78.847,
+          "end": 78.907
+        },
+        {
+          "text": "uno,",
+          "start": 79.027,
+          "end": 79.168
+        }
+      ]
+    },
+    {
+      "start": 79.668,
+      "end": 82.608,
+      "text": "esattamente la condizione che forza lo svanire della sensibilità.",
+      "words": [
+        {
+          "text": "esattamente",
+          "start": 79.668,
+          "end": 80.148
+        },
+        {
+          "text": "la",
+          "start": 80.188,
+          "end": 80.22800000000001
+        },
+        {
+          "text": "condizione",
+          "start": 80.268,
+          "end": 80.728
+        },
+        {
+          "text": "che",
+          "start": 80.768,
+          "end": 80.868
+        },
+        {
+          "text": "forza",
+          "start": 80.948,
+          "end": 81.268
+        },
+        {
+          "text": "lo",
+          "start": 81.308,
+          "end": 81.368
+        },
+        {
+          "text": "svanire",
+          "start": 81.408,
+          "end": 81.768
+        },
+        {
+          "text": "della",
+          "start": 81.808,
+          "end": 81.968
+        },
+        {
+          "text": "sensibilità.",
+          "start": 82.008,
+          "end": 82.608
+        }
+      ]
+    },
+    {
+      "start": 84.208,
+      "end": 86.708,
+      "text": "Il secondo strumento è l'analisi spettrale su grafo.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 84.208,
+          "end": 84.288
+        },
+        {
+          "text": "secondo",
+          "start": 84.368,
+          "end": 84.668
+        },
+        {
+          "text": "strumento",
+          "start": 84.688,
+          "end": 85.128
+        },
+        {
+          "text": "è",
+          "start": 85.248,
+          "end": 85.28800000000001
+        },
+        {
+          "text": "l'analisi",
+          "start": 85.328,
+          "end": 85.748
+        },
+        {
+          "text": "spettrale",
+          "start": 85.788,
+          "end": 86.228
+        },
+        {
+          "text": "su",
+          "start": 86.268,
+          "end": 86.328
+        },
+        {
+          "text": "grafo.",
+          "start": 86.388,
+          "end": 86.708
+        }
+      ]
+    },
+    {
+      "start": 87.288,
+      "end": 91.529,
+      "text": "La frequenza di un segnale corrisponde alla sua variabilità tra nodi vicini e si misura",
+      "words": [
+        {
+          "text": "La",
+          "start": 87.288,
+          "end": 87.348
+        },
+        {
+          "text": "frequenza",
+          "start": 87.368,
+          "end": 87.728
+        },
+        {
+          "text": "di",
+          "start": 87.768,
+          "end": 87.828
+        },
+        {
+          "text": "un",
+          "start": 87.848,
+          "end": 87.928
+        },
+        {
+          "text": "segnale",
+          "start": 87.968,
+          "end": 88.288
+        },
+        {
+          "text": "corrisponde",
+          "start": 88.328,
+          "end": 88.808
+        },
+        {
+          "text": "alla",
+          "start": 88.848,
+          "end": 88.968
+        },
+        {
+          "text": "sua",
+          "start": 89.008,
+          "end": 89.128
+        },
+        {
+          "text": "variabilità",
+          "start": 89.208,
+          "end": 89.769
+        },
+        {
+          "text": "tra",
+          "start": 89.869,
+          "end": 89.969
+        },
+        {
+          "text": "nodi",
+          "start": 90.049,
+          "end": 90.249
+        },
+        {
+          "text": "vicini",
+          "start": 90.289,
+          "end": 90.709
+        },
+        {
+          "text": "e",
+          "start": 91.069,
+          "end": 91.10900000000001
+        },
+        {
+          "text": "si",
+          "start": 91.149,
+          "end": 91.209
+        },
+        {
+          "text": "misura",
+          "start": 91.269,
+          "end": 91.529
+        }
+      ]
+    },
+    {
+      "start": 91.609,
+      "end": 92.849,
+      "text": "con l'energia di Dirichlet:",
+      "words": [
+        {
+          "text": "con",
+          "start": 91.609,
+          "end": 91.729
+        },
+        {
+          "text": "l'energia",
+          "start": 91.769,
+          "end": 92.229
+        },
+        {
+          "text": "di",
+          "start": 92.269,
+          "end": 92.329
+        },
+        {
+          "text": "Dirichlet:",
+          "start": 92.369,
+          "end": 92.849
+        }
+      ]
+    },
+    {
+      "start": 93.629,
+      "end": 97.909,
+      "text": "E di h uguale somma su v e sui vicini u di norma quadra di",
+      "words": [
+        {
+          "text": "E",
+          "start": 93.629,
+          "end": 93.66900000000001
+        },
+        {
+          "text": "di",
+          "start": 93.789,
+          "end": 93.869
+        },
+        {
+          "text": "h",
+          "start": 94.189,
+          "end": 94.229
+        },
+        {
+          "text": "uguale",
+          "start": 94.429,
+          "end": 94.729
+        },
+        {
+          "text": "somma",
+          "start": 94.829,
+          "end": 95.109
+        },
+        {
+          "text": "su",
+          "start": 95.189,
+          "end": 95.289
+        },
+        {
+          "text": "v",
+          "start": 95.389,
+          "end": 95.429
+        },
+        {
+          "text": "e",
+          "start": 95.729,
+          "end": 95.769
+        },
+        {
+          "text": "sui",
+          "start": 95.829,
+          "end": 95.969
+        },
+        {
+          "text": "vicini",
+          "start": 96.009,
+          "end": 96.389
+        },
+        {
+          "text": "u",
+          "start": 96.469,
+          "end": 96.509
+        },
+        {
+          "text": "di",
+          "start": 96.969,
+          "end": 97.029
+        },
+        {
+          "text": "norma",
+          "start": 97.069,
+          "end": 97.329
+        },
+        {
+          "text": "quadra",
+          "start": 97.409,
+          "end": 97.749
+        },
+        {
+          "text": "di",
+          "start": 97.849,
+          "end": 97.909
+        }
+      ]
+    },
+    {
+      "start": 98.109,
+      "end": 99.269,
+      "text": "h con v meno h con u.",
+      "words": [
+        {
+          "text": "h",
+          "start": 98.109,
+          "end": 98.149
+        },
+        {
+          "text": "con",
+          "start": 98.209,
+          "end": 98.349
+        },
+        {
+          "text": "v",
+          "start": 98.409,
+          "end": 98.44900000000001
+        },
+        {
+          "text": "meno",
+          "start": 98.629,
+          "end": 98.789
+        },
+        {
+          "text": "h",
+          "start": 98.969,
+          "end": 99.009
+        },
+        {
+          "text": "con",
+          "start": 99.069,
+          "end": 99.189
+        },
+        {
+          "text": "u.",
+          "start": 99.229,
+          "end": 99.269
+        }
+      ]
+    },
+    {
+      "start": 100.109,
+      "end": 101.75,
+      "text": "Un segnale liscio ha bassa energia.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 100.109,
+          "end": 100.189
+        },
+        {
+          "text": "segnale",
+          "start": 100.229,
+          "end": 100.55
+        },
+        {
+          "text": "liscio",
+          "start": 100.59,
+          "end": 100.87
+        },
+        {
+          "text": "ha",
+          "start": 100.97,
+          "end": 101.01
+        },
+        {
+          "text": "bassa",
+          "start": 101.07,
+          "end": 101.31
+        },
+        {
+          "text": "energia.",
+          "start": 101.35,
+          "end": 101.75
+        }
+      ]
+    },
+    {
+      "start": 102.55,
+      "end": 105.57000000000001,
+      "text": "Usando il Laplaciano L calligrafico uguale D meno A,",
+      "words": [
+        {
+          "text": "Usando",
+          "start": 102.55,
+          "end": 102.85
+        },
+        {
+          "text": "il",
+          "start": 102.89,
+          "end": 102.93
+        },
+        {
+          "text": "Laplaciano",
+          "start": 102.95,
+          "end": 103.47
+        },
+        {
+          "text": "L",
+          "start": 103.73,
+          "end": 103.77000000000001
+        },
+        {
+          "text": "calligrafico",
+          "start": 103.85,
+          "end": 104.55
+        },
+        {
+          "text": "uguale",
+          "start": 104.65,
+          "end": 104.95
+        },
+        {
+          "text": "D",
+          "start": 105.07,
+          "end": 105.11
+        },
+        {
+          "text": "meno",
+          "start": 105.25,
+          "end": 105.43
+        },
+        {
+          "text": "A,",
+          "start": 105.53,
+          "end": 105.57000000000001
+        }
+      ]
+    },
+    {
+      "start": 105.91,
+      "end": 110.79,
+      "text": "dove D è la matrice diagonale dei gradi, gli autovettori definiscono la trasformata di Fourier",
+      "words": [
+        {
+          "text": "dove",
+          "start": 105.91,
+          "end": 106.09
+        },
+        {
+          "text": "D",
+          "start": 106.19,
+          "end": 106.23
+        },
+        {
+          "text": "è",
+          "start": 106.37,
+          "end": 106.41000000000001
+        },
+        {
+          "text": "la",
+          "start": 106.47,
+          "end": 106.53
+        },
+        {
+          "text": "matrice",
+          "start": 106.57,
+          "end": 106.91
+        },
+        {
+          "text": "diagonale",
+          "start": 106.99,
+          "end": 107.49
+        },
+        {
+          "text": "dei",
+          "start": 107.53,
+          "end": 107.65
+        },
+        {
+          "text": "gradi,",
+          "start": 107.69,
+          "end": 107.99
+        },
+        {
+          "text": "gli",
+          "start": 108.47,
+          "end": 108.57
+        },
+        {
+          "text": "autovettori",
+          "start": 108.59,
+          "end": 109.07
+        },
+        {
+          "text": "definiscono",
+          "start": 109.13,
+          "end": 109.65
+        },
+        {
+          "text": "la",
+          "start": 109.71,
+          "end": 109.77
+        },
+        {
+          "text": "trasformata",
+          "start": 109.81,
+          "end": 110.35
+        },
+        {
+          "text": "di",
+          "start": 110.39,
+          "end": 110.45
+        },
+        {
+          "text": "Fourier",
+          "start": 110.51,
+          "end": 110.79
+        }
+      ]
+    },
+    {
+      "start": 110.81,
+      "end": 111.271,
+      "text": "su grafo.",
+      "words": [
+        {
+          "text": "su",
+          "start": 110.81,
+          "end": 110.89
+        },
+        {
+          "text": "grafo.",
+          "start": 110.95,
+          "end": 111.271
+        }
+      ]
+    },
+    {
+      "start": 112.071,
+      "end": 116.951,
+      "text": "I grafi eterofili hanno segnali ad alta frequenza e richiedono di preservare tali frequenze.",
+      "words": [
+        {
+          "text": "I",
+          "start": 112.071,
+          "end": 112.111
+        },
+        {
+          "text": "grafi",
+          "start": 112.131,
+          "end": 112.351
+        },
+        {
+          "text": "eterofili",
+          "start": 112.431,
+          "end": 112.931
+        },
+        {
+          "text": "hanno",
+          "start": 113.051,
+          "end": 113.251
+        },
+        {
+          "text": "segnali",
+          "start": 113.291,
+          "end": 113.691
+        },
+        {
+          "text": "ad",
+          "start": 113.771,
+          "end": 113.891
+        },
+        {
+          "text": "alta",
+          "start": 113.931,
+          "end": 114.151
+        },
+        {
+          "text": "frequenza",
+          "start": 114.211,
+          "end": 114.691
+        },
+        {
+          "text": "e",
+          "start": 115.031,
+          "end": 115.07100000000001
+        },
+        {
+          "text": "richiedono",
+          "start": 115.131,
+          "end": 115.591
+        },
+        {
+          "text": "di",
+          "start": 115.631,
+          "end": 115.691
+        },
+        {
+          "text": "preservare",
+          "start": 115.711,
+          "end": 116.191
+        },
+        {
+          "text": "tali",
+          "start": 116.291,
+          "end": 116.451
+        },
+        {
+          "text": "frequenze.",
+          "start": 116.491,
+          "end": 116.951
+        }
+      ]
+    },
+    {
+      "start": 117.611,
+      "end": 125.372,
+      "text": "Su un benchmark eterofilo di pagine Wikipedia, NN4G e GraphESN preservano meglio l'energia di Dirichlet",
+      "words": [
+        {
+          "text": "Su",
+          "start": 117.611,
+          "end": 117.691
+        },
+        {
+          "text": "un",
+          "start": 117.771,
+          "end": 117.851
+        },
+        {
+          "text": "benchmark",
+          "start": 117.911,
+          "end": 118.391
+        },
+        {
+          "text": "eterofilo",
+          "start": 118.451,
+          "end": 118.991
+        },
+        {
+          "text": "di",
+          "start": 119.051,
+          "end": 119.131
+        },
+        {
+          "text": "pagine",
+          "start": 119.191,
+          "end": 119.531
+        },
+        {
+          "text": "Wikipedia,",
+          "start": 119.571,
+          "end": 120.191
+        },
+        {
+          "text": "NN4G",
+          "start": 120.591,
+          "end": 121.451
+        },
+        {
+          "text": "e",
+          "start": 121.731,
+          "end": 121.771
+        },
+        {
+          "text": "GraphESN",
+          "start": 121.852,
+          "end": 122.752
+        },
+        {
+          "text": "preservano",
+          "start": 123.232,
+          "end": 123.772
+        },
+        {
+          "text": "meglio",
+          "start": 123.812,
+          "end": 124.052
+        },
+        {
+          "text": "l'energia",
+          "start": 124.092,
+          "end": 124.612
+        },
+        {
+          "text": "di",
+          "start": 124.672,
+          "end": 124.752
+        },
+        {
+          "text": "Dirichlet",
+          "start": 124.832,
+          "end": 125.372
+        }
+      ]
+    },
+    {
+      "start": 125.652,
+      "end": 131.572,
+      "text": "e mantengono l'accuratezza con la profondità, mentre GCN, GAT e GraphConv calano.",
+      "words": [
+        {
+          "text": "e",
+          "start": 125.652,
+          "end": 125.69200000000001
+        },
+        {
+          "text": "mantengono",
+          "start": 125.772,
+          "end": 126.312
+        },
+        {
+          "text": "l'accuratezza",
+          "start": 126.372,
+          "end": 127.012
+        },
+        {
+          "text": "con",
+          "start": 127.092,
+          "end": 127.192
+        },
+        {
+          "text": "la",
+          "start": 127.212,
+          "end": 127.272
+        },
+        {
+          "text": "profondità,",
+          "start": 127.312,
+          "end": 127.832
+        },
+        {
+          "text": "mentre",
+          "start": 128.332,
+          "end": 128.632
+        },
+        {
+          "text": "GCN,",
+          "start": 128.752,
+          "end": 129.372
+        },
+        {
+          "text": "GAT",
+          "start": 129.592,
+          "end": 129.972
+        },
+        {
+          "text": "e",
+          "start": 130.192,
+          "end": 130.232
+        },
+        {
+          "text": "GraphConv",
+          "start": 130.332,
+          "end": 130.952
+        },
+        {
+          "text": "calano.",
+          "start": 131.192,
+          "end": 131.572
+        }
+      ]
+    }
+  ]
+}

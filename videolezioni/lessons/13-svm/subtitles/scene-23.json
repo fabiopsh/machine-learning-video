@@ -1,0 +1,1461 @@
+{
+  "duration": 97.52,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.181,
+      "text": "Raccogliamo in una sintesi finale i sette punti chiave del capitolo sulle Support Vector Machines",
+      "words": [
+        {
+          "text": "Raccogliamo",
+          "start": 0.08,
+          "end": 0.6
+        },
+        {
+          "text": "in",
+          "start": 0.66,
+          "end": 0.74
+        },
+        {
+          "text": "una",
+          "start": 0.76,
+          "end": 0.88
+        },
+        {
+          "text": "sintesi",
+          "start": 0.94,
+          "end": 1.3
+        },
+        {
+          "text": "finale",
+          "start": 1.36,
+          "end": 1.74
+        },
+        {
+          "text": "i",
+          "start": 1.86,
+          "end": 1.9000000000000001
+        },
+        {
+          "text": "sette",
+          "start": 2.02,
+          "end": 2.3
+        },
+        {
+          "text": "punti",
+          "start": 2.341,
+          "end": 2.621
+        },
+        {
+          "text": "chiave",
+          "start": 2.681,
+          "end": 3.021
+        },
+        {
+          "text": "del",
+          "start": 3.081,
+          "end": 3.201
+        },
+        {
+          "text": "capitolo",
+          "start": 3.261,
+          "end": 3.681
+        },
+        {
+          "text": "sulle",
+          "start": 3.741,
+          "end": 3.921
+        },
+        {
+          "text": "Support",
+          "start": 3.981,
+          "end": 4.341
+        },
+        {
+          "text": "Vector",
+          "start": 4.421,
+          "end": 4.721
+        },
+        {
+          "text": "Machines",
+          "start": 4.761,
+          "end": 5.181
+        }
+      ]
+    },
+    {
+      "start": 5.341,
+      "end": 6.281,
+      "text": "e i metodi kernel.",
+      "words": [
+        {
+          "text": "e",
+          "start": 5.341,
+          "end": 5.381
+        },
+        {
+          "text": "i",
+          "start": 5.421,
+          "end": 5.461
+        },
+        {
+          "text": "metodi",
+          "start": 5.501,
+          "end": 5.801
+        },
+        {
+          "text": "kernel.",
+          "start": 5.841,
+          "end": 6.281
+        }
+      ]
+    },
+    {
+      "start": 7.061,
+      "end": 12.002,
+      "text": "Uno: nella forma canonica i vincoli sono d con i per w trasposto x con",
+      "words": [
+        {
+          "text": "Uno:",
+          "start": 7.061,
+          "end": 7.262
+        },
+        {
+          "text": "nella",
+          "start": 7.702,
+          "end": 7.862
+        },
+        {
+          "text": "forma",
+          "start": 7.882,
+          "end": 8.082
+        },
+        {
+          "text": "canonica",
+          "start": 8.142,
+          "end": 8.582
+        },
+        {
+          "text": "i",
+          "start": 8.642,
+          "end": 8.682
+        },
+        {
+          "text": "vincoli",
+          "start": 8.722,
+          "end": 9.082
+        },
+        {
+          "text": "sono",
+          "start": 9.142,
+          "end": 9.382
+        },
+        {
+          "text": "d",
+          "start": 9.522,
+          "end": 9.562
+        },
+        {
+          "text": "con",
+          "start": 9.682,
+          "end": 9.842
+        },
+        {
+          "text": "i",
+          "start": 9.902,
+          "end": 9.942
+        },
+        {
+          "text": "per",
+          "start": 10.262,
+          "end": 10.382
+        },
+        {
+          "text": "w",
+          "start": 10.422,
+          "end": 10.462
+        },
+        {
+          "text": "trasposto",
+          "start": 10.962,
+          "end": 11.522
+        },
+        {
+          "text": "x",
+          "start": 11.722,
+          "end": 11.762
+        },
+        {
+          "text": "con",
+          "start": 11.862,
+          "end": 12.002
+        }
+      ]
+    },
+    {
+      "start": 12.043,
+      "end": 16.083,
+      "text": "i più b maggiore o uguale a uno e il margine vale due su norma",
+      "words": [
+        {
+          "text": "i",
+          "start": 12.043,
+          "end": 12.083
+        },
+        {
+          "text": "più",
+          "start": 12.283,
+          "end": 12.403
+        },
+        {
+          "text": "b",
+          "start": 12.563,
+          "end": 12.603
+        },
+        {
+          "text": "maggiore",
+          "start": 12.963,
+          "end": 13.283
+        },
+        {
+          "text": "o",
+          "start": 13.303,
+          "end": 13.343
+        },
+        {
+          "text": "uguale",
+          "start": 13.323,
+          "end": 13.523
+        },
+        {
+          "text": "a",
+          "start": 13.563,
+          "end": 13.603
+        },
+        {
+          "text": "uno",
+          "start": 13.643,
+          "end": 13.783
+        },
+        {
+          "text": "e",
+          "start": 14.323,
+          "end": 14.363
+        },
+        {
+          "text": "il",
+          "start": 14.443,
+          "end": 14.523
+        },
+        {
+          "text": "margine",
+          "start": 14.583,
+          "end": 14.943
+        },
+        {
+          "text": "vale",
+          "start": 14.983,
+          "end": 15.183
+        },
+        {
+          "text": "due",
+          "start": 15.283,
+          "end": 15.503
+        },
+        {
+          "text": "su",
+          "start": 15.663,
+          "end": 15.723
+        },
+        {
+          "text": "norma",
+          "start": 15.843,
+          "end": 16.083
+        }
+      ]
+    },
+    {
+      "start": 16.143,
+      "end": 21.464,
+      "text": "di w; massimizzare il margine equivale a minimizzare uno mezzo w trasposto w.",
+      "words": [
+        {
+          "text": "di",
+          "start": 16.143,
+          "end": 16.203
+        },
+        {
+          "text": "w;",
+          "start": 16.263,
+          "end": 16.303
+        },
+        {
+          "text": "massimizzare",
+          "start": 17.244,
+          "end": 17.764
+        },
+        {
+          "text": "il",
+          "start": 17.804,
+          "end": 17.844
+        },
+        {
+          "text": "margine",
+          "start": 17.884,
+          "end": 18.264
+        },
+        {
+          "text": "equivale",
+          "start": 18.304,
+          "end": 18.704
+        },
+        {
+          "text": "a",
+          "start": 18.764,
+          "end": 18.804
+        },
+        {
+          "text": "minimizzare",
+          "start": 18.864,
+          "end": 19.504
+        },
+        {
+          "text": "uno",
+          "start": 19.644,
+          "end": 19.764
+        },
+        {
+          "text": "mezzo",
+          "start": 19.764,
+          "end": 20.064
+        },
+        {
+          "text": "w",
+          "start": 20.164,
+          "end": 20.204
+        },
+        {
+          "text": "trasposto",
+          "start": 20.684,
+          "end": 21.244
+        },
+        {
+          "text": "w.",
+          "start": 21.424,
+          "end": 21.464
+        }
+      ]
+    },
+    {
+      "start": 22.064,
+      "end": 27.206,
+      "text": "Due: nel duale si massimizza la somma di alfa con i meno uno mezzo la",
+      "words": [
+        {
+          "text": "Due:",
+          "start": 22.064,
+          "end": 23.485
+        },
+        {
+          "text": "nel",
+          "start": 23.985,
+          "end": 24.145
+        },
+        {
+          "text": "duale",
+          "start": 24.185,
+          "end": 24.525
+        },
+        {
+          "text": "si",
+          "start": 24.605,
+          "end": 24.665
+        },
+        {
+          "text": "massimizza",
+          "start": 24.705,
+          "end": 25.205
+        },
+        {
+          "text": "la",
+          "start": 25.245,
+          "end": 25.285
+        },
+        {
+          "text": "somma",
+          "start": 25.325,
+          "end": 25.565
+        },
+        {
+          "text": "di",
+          "start": 25.625,
+          "end": 25.685
+        },
+        {
+          "text": "alfa",
+          "start": 25.745,
+          "end": 25.965
+        },
+        {
+          "text": "con",
+          "start": 26.005,
+          "end": 26.145
+        },
+        {
+          "text": "i",
+          "start": 26.185,
+          "end": 26.225
+        },
+        {
+          "text": "meno",
+          "start": 26.405,
+          "end": 26.625
+        },
+        {
+          "text": "uno",
+          "start": 26.705,
+          "end": 26.805
+        },
+        {
+          "text": "mezzo",
+          "start": 26.825,
+          "end": 27.085
+        },
+        {
+          "text": "la",
+          "start": 27.146,
+          "end": 27.206
+        }
+      ]
+    },
+    {
+      "start": 27.226,
+      "end": 31.086,
+      "text": "forma quadratica sui prodotti scalari x con i trasposto x con j,",
+      "words": [
+        {
+          "text": "forma",
+          "start": 27.226,
+          "end": 27.466
+        },
+        {
+          "text": "quadratica",
+          "start": 27.506,
+          "end": 28.046
+        },
+        {
+          "text": "sui",
+          "start": 28.126,
+          "end": 28.246
+        },
+        {
+          "text": "prodotti",
+          "start": 28.286,
+          "end": 28.626
+        },
+        {
+          "text": "scalari",
+          "start": 28.666,
+          "end": 29.066
+        },
+        {
+          "text": "x",
+          "start": 29.526,
+          "end": 29.566
+        },
+        {
+          "text": "con",
+          "start": 29.666,
+          "end": 29.806
+        },
+        {
+          "text": "i",
+          "start": 29.846,
+          "end": 29.886
+        },
+        {
+          "text": "trasposto",
+          "start": 29.946,
+          "end": 30.466
+        },
+        {
+          "text": "x",
+          "start": 30.706,
+          "end": 30.746
+        },
+        {
+          "text": "con",
+          "start": 30.846,
+          "end": 30.986
+        },
+        {
+          "text": "j,",
+          "start": 31.046,
+          "end": 31.086
+        }
+      ]
+    },
+    {
+      "start": 31.786,
+      "end": 35.247,
+      "text": "e w dipende solo dai support vector con alfa con i positivo.",
+      "words": [
+        {
+          "text": "e",
+          "start": 31.786,
+          "end": 31.826
+        },
+        {
+          "text": "w",
+          "start": 31.886,
+          "end": 31.926
+        },
+        {
+          "text": "dipende",
+          "start": 32.307,
+          "end": 32.607
+        },
+        {
+          "text": "solo",
+          "start": 32.667,
+          "end": 32.867
+        },
+        {
+          "text": "dai",
+          "start": 32.887,
+          "end": 33.047
+        },
+        {
+          "text": "support",
+          "start": 33.107,
+          "end": 33.467
+        },
+        {
+          "text": "vector",
+          "start": 33.547,
+          "end": 33.887
+        },
+        {
+          "text": "con",
+          "start": 33.967,
+          "end": 34.127
+        },
+        {
+          "text": "alfa",
+          "start": 34.167,
+          "end": 34.407
+        },
+        {
+          "text": "con",
+          "start": 34.447,
+          "end": 34.567
+        },
+        {
+          "text": "i",
+          "start": 34.607,
+          "end": 34.647
+        },
+        {
+          "text": "positivo.",
+          "start": 34.727,
+          "end": 35.247
+        }
+      ]
+    },
+    {
+      "start": 36.047,
+      "end": 41.368,
+      "text": "Tre: per il teorema di Vapnik la VC-dimension è al più il minimo tra parte",
+      "words": [
+        {
+          "text": "Tre:",
+          "start": 36.047,
+          "end": 36.187
+        },
+        {
+          "text": "per",
+          "start": 36.647,
+          "end": 36.767
+        },
+        {
+          "text": "il",
+          "start": 36.807,
+          "end": 36.888
+        },
+        {
+          "text": "teorema",
+          "start": 36.928,
+          "end": 37.268
+        },
+        {
+          "text": "di",
+          "start": 37.308,
+          "end": 37.368
+        },
+        {
+          "text": "Vapnik",
+          "start": 37.408,
+          "end": 37.808
+        },
+        {
+          "text": "la",
+          "start": 37.888,
+          "end": 37.948
+        },
+        {
+          "text": "VC-dimension",
+          "start": 37.988,
+          "end": 38.908
+        },
+        {
+          "text": "è",
+          "start": 39.088,
+          "end": 39.128
+        },
+        {
+          "text": "al",
+          "start": 39.208,
+          "end": 39.308
+        },
+        {
+          "text": "più",
+          "start": 39.408,
+          "end": 39.528
+        },
+        {
+          "text": "il",
+          "start": 39.788,
+          "end": 39.888
+        },
+        {
+          "text": "minimo",
+          "start": 39.988,
+          "end": 40.388
+        },
+        {
+          "text": "tra",
+          "start": 40.568,
+          "end": 40.708
+        },
+        {
+          "text": "parte",
+          "start": 41.108,
+          "end": 41.368
+        }
+      ]
+    },
+    {
+      "start": 41.408,
+      "end": 44.509,
+      "text": "intera superiore di D quadro su ro quadro ed n,",
+      "words": [
+        {
+          "text": "intera",
+          "start": 41.408,
+          "end": 41.689
+        },
+        {
+          "text": "superiore",
+          "start": 41.749,
+          "end": 42.269
+        },
+        {
+          "text": "di",
+          "start": 42.369,
+          "end": 42.469
+        },
+        {
+          "text": "D",
+          "start": 42.569,
+          "end": 42.609
+        },
+        {
+          "text": "quadro",
+          "start": 42.709,
+          "end": 43.069
+        },
+        {
+          "text": "su",
+          "start": 43.129,
+          "end": 43.189
+        },
+        {
+          "text": "ro",
+          "start": 43.269,
+          "end": 43.329
+        },
+        {
+          "text": "quadro",
+          "start": 43.389,
+          "end": 43.749
+        },
+        {
+          "text": "ed",
+          "start": 44.149,
+          "end": 44.269
+        },
+        {
+          "text": "n,",
+          "start": 44.469,
+          "end": 44.509
+        }
+      ]
+    },
+    {
+      "start": 44.689,
+      "end": 48.29,
+      "text": "più uno: margine grande significa VC-dimension piccola.",
+      "words": [
+        {
+          "text": "più",
+          "start": 44.689,
+          "end": 44.809
+        },
+        {
+          "text": "uno:",
+          "start": 44.949,
+          "end": 45.129
+        },
+        {
+          "text": "margine",
+          "start": 45.629,
+          "end": 45.949
+        },
+        {
+          "text": "grande",
+          "start": 46.009,
+          "end": 46.349
+        },
+        {
+          "text": "significa",
+          "start": 46.489,
+          "end": 46.99
+        },
+        {
+          "text": "VC-dimension",
+          "start": 47.07,
+          "end": 47.85
+        },
+        {
+          "text": "piccola.",
+          "start": 47.91,
+          "end": 48.29
+        }
+      ]
+    },
+    {
+      "start": 49.15,
+      "end": 53.111,
+      "text": "Quattro: nel soft margin entrano le variabili slack csi con i,",
+      "words": [
+        {
+          "text": "Quattro:",
+          "start": 49.15,
+          "end": 49.53
+        },
+        {
+          "text": "nel",
+          "start": 49.95,
+          "end": 50.09
+        },
+        {
+          "text": "soft",
+          "start": 50.19,
+          "end": 50.43
+        },
+        {
+          "text": "margin",
+          "start": 50.53,
+          "end": 50.93
+        },
+        {
+          "text": "entrano",
+          "start": 51.13,
+          "end": 51.471
+        },
+        {
+          "text": "le",
+          "start": 51.531,
+          "end": 51.591
+        },
+        {
+          "text": "variabili",
+          "start": 51.631,
+          "end": 52.091
+        },
+        {
+          "text": "slack",
+          "start": 52.151,
+          "end": 52.471
+        },
+        {
+          "text": "csi",
+          "start": 52.651,
+          "end": 52.811
+        },
+        {
+          "text": "con",
+          "start": 52.871,
+          "end": 53.031
+        },
+        {
+          "text": "i,",
+          "start": 53.071,
+          "end": 53.111
+        }
+      ]
+    },
+    {
+      "start": 53.511,
+      "end": 56.652,
+      "text": "la penalità C per somma di csi con i nel primale,",
+      "words": [
+        {
+          "text": "la",
+          "start": 53.511,
+          "end": 53.571
+        },
+        {
+          "text": "penalità",
+          "start": 53.611,
+          "end": 54.091
+        },
+        {
+          "text": "C",
+          "start": 54.251,
+          "end": 54.291
+        },
+        {
+          "text": "per",
+          "start": 54.631,
+          "end": 54.791
+        },
+        {
+          "text": "somma",
+          "start": 54.911,
+          "end": 55.111
+        },
+        {
+          "text": "di",
+          "start": 55.171,
+          "end": 55.231
+        },
+        {
+          "text": "csi",
+          "start": 55.291,
+          "end": 55.451
+        },
+        {
+          "text": "con",
+          "start": 55.511,
+          "end": 55.671
+        },
+        {
+          "text": "i",
+          "start": 55.731,
+          "end": 55.771
+        },
+        {
+          "text": "nel",
+          "start": 55.971,
+          "end": 56.131
+        },
+        {
+          "text": "primale,",
+          "start": 56.191,
+          "end": 56.652
+        }
+      ]
+    },
+    {
+      "start": 57.132,
+      "end": 60.232,
+      "text": "e il vincolo alfa con i tra zero e C nel duale.",
+      "words": [
+        {
+          "text": "e",
+          "start": 57.132,
+          "end": 57.172
+        },
+        {
+          "text": "il",
+          "start": 57.232,
+          "end": 57.292
+        },
+        {
+          "text": "vincolo",
+          "start": 57.332,
+          "end": 57.732
+        },
+        {
+          "text": "alfa",
+          "start": 57.872,
+          "end": 58.092
+        },
+        {
+          "text": "con",
+          "start": 58.152,
+          "end": 58.292
+        },
+        {
+          "text": "i",
+          "start": 58.332,
+          "end": 58.372
+        },
+        {
+          "text": "tra",
+          "start": 58.492,
+          "end": 58.612
+        },
+        {
+          "text": "zero",
+          "start": 58.732,
+          "end": 58.972
+        },
+        {
+          "text": "e",
+          "start": 59.112,
+          "end": 59.152
+        },
+        {
+          "text": "C",
+          "start": 59.252,
+          "end": 59.292
+        },
+        {
+          "text": "nel",
+          "start": 59.652,
+          "end": 59.812
+        },
+        {
+          "text": "duale.",
+          "start": 59.852,
+          "end": 60.232
+        }
+      ]
+    },
+    {
+      "start": 61.052,
+      "end": 66.774,
+      "text": "Cinque: un kernel k di x virgola y uguale Fi trasposto di x per Fi",
+      "words": [
+        {
+          "text": "Cinque:",
+          "start": 61.052,
+          "end": 61.433
+        },
+        {
+          "text": "un",
+          "start": 61.793,
+          "end": 61.893
+        },
+        {
+          "text": "kernel",
+          "start": 61.953,
+          "end": 62.313
+        },
+        {
+          "text": "k",
+          "start": 62.433,
+          "end": 62.473
+        },
+        {
+          "text": "di",
+          "start": 62.953,
+          "end": 63.033
+        },
+        {
+          "text": "x",
+          "start": 63.253,
+          "end": 63.293
+        },
+        {
+          "text": "virgola",
+          "start": 63.493,
+          "end": 63.833
+        },
+        {
+          "text": "y",
+          "start": 64.153,
+          "end": 64.19300000000001
+        },
+        {
+          "text": "uguale",
+          "start": 64.473,
+          "end": 64.793
+        },
+        {
+          "text": "Fi",
+          "start": 64.933,
+          "end": 65.033
+        },
+        {
+          "text": "trasposto",
+          "start": 65.113,
+          "end": 65.653
+        },
+        {
+          "text": "di",
+          "start": 65.693,
+          "end": 65.753
+        },
+        {
+          "text": "x",
+          "start": 65.953,
+          "end": 65.99300000000001
+        },
+        {
+          "text": "per",
+          "start": 66.414,
+          "end": 66.554
+        },
+        {
+          "text": "Fi",
+          "start": 66.674,
+          "end": 66.774
+        }
+      ]
+    },
+    {
+      "start": 66.854,
+      "end": 71.215,
+      "text": "di y rispetta Mercer se la matrice kernel è semidefinita positiva;",
+      "words": [
+        {
+          "text": "di",
+          "start": 66.854,
+          "end": 67.034
+        },
+        {
+          "text": "y",
+          "start": 67.294,
+          "end": 67.334
+        },
+        {
+          "text": "rispetta",
+          "start": 67.934,
+          "end": 68.314
+        },
+        {
+          "text": "Mercer",
+          "start": 68.354,
+          "end": 68.754
+        },
+        {
+          "text": "se",
+          "start": 68.854,
+          "end": 68.934
+        },
+        {
+          "text": "la",
+          "start": 68.994,
+          "end": 69.034
+        },
+        {
+          "text": "matrice",
+          "start": 69.074,
+          "end": 69.434
+        },
+        {
+          "text": "kernel",
+          "start": 69.494,
+          "end": 69.874
+        },
+        {
+          "text": "è",
+          "start": 69.914,
+          "end": 69.95400000000001
+        },
+        {
+          "text": "semidefinita",
+          "start": 70.034,
+          "end": 70.674
+        },
+        {
+          "text": "positiva;",
+          "start": 70.734,
+          "end": 71.215
+        }
+      ]
+    },
+    {
+      "start": 71.695,
+      "end": 73.415,
+      "text": "l'RBF ha dimensione infinita.",
+      "words": [
+        {
+          "text": "l'RBF",
+          "start": 71.695,
+          "end": 72.215
+        },
+        {
+          "text": "ha",
+          "start": 72.295,
+          "end": 72.33500000000001
+        },
+        {
+          "text": "dimensione",
+          "start": 72.375,
+          "end": 72.835
+        },
+        {
+          "text": "infinita.",
+          "start": 72.915,
+          "end": 73.415
+        }
+      ]
+    },
+    {
+      "start": 74.115,
+      "end": 79.816,
+      "text": "Sei: nella regressione la loss epsilon-insensitive porta alla predizione h di x uguale somma di",
+      "words": [
+        {
+          "text": "Sei:",
+          "start": 74.115,
+          "end": 74.355
+        },
+        {
+          "text": "nella",
+          "start": 74.675,
+          "end": 74.875
+        },
+        {
+          "text": "regressione",
+          "start": 74.915,
+          "end": 75.455
+        },
+        {
+          "text": "la",
+          "start": 75.535,
+          "end": 75.595
+        },
+        {
+          "text": "loss",
+          "start": 75.635,
+          "end": 75.856
+        },
+        {
+          "text": "epsilon-insensitive",
+          "start": 76.056,
+          "end": 77.256
+        },
+        {
+          "text": "porta",
+          "start": 77.316,
+          "end": 77.556
+        },
+        {
+          "text": "alla",
+          "start": 77.596,
+          "end": 77.716
+        },
+        {
+          "text": "predizione",
+          "start": 77.756,
+          "end": 78.276
+        },
+        {
+          "text": "h",
+          "start": 78.596,
+          "end": 78.63600000000001
+        },
+        {
+          "text": "di",
+          "start": 78.696,
+          "end": 78.756
+        },
+        {
+          "text": "x",
+          "start": 78.916,
+          "end": 78.956
+        },
+        {
+          "text": "uguale",
+          "start": 79.096,
+          "end": 79.356
+        },
+        {
+          "text": "somma",
+          "start": 79.436,
+          "end": 79.696
+        },
+        {
+          "text": "di",
+          "start": 79.756,
+          "end": 79.816
+        }
+      ]
+    },
+    {
+      "start": 79.916,
+      "end": 82.57700000000001,
+      "text": "gamma con i k di x con i virgola x.",
+      "words": [
+        {
+          "text": "gamma",
+          "start": 79.916,
+          "end": 80.156
+        },
+        {
+          "text": "con",
+          "start": 80.236,
+          "end": 80.376
+        },
+        {
+          "text": "i",
+          "start": 80.416,
+          "end": 80.456
+        },
+        {
+          "text": "k",
+          "start": 80.677,
+          "end": 80.71700000000001
+        },
+        {
+          "text": "di",
+          "start": 81.037,
+          "end": 81.097
+        },
+        {
+          "text": "x",
+          "start": 81.277,
+          "end": 81.31700000000001
+        },
+        {
+          "text": "con",
+          "start": 81.437,
+          "end": 81.597
+        },
+        {
+          "text": "i",
+          "start": 81.657,
+          "end": 81.697
+        },
+        {
+          "text": "virgola",
+          "start": 81.937,
+          "end": 82.317
+        },
+        {
+          "text": "x.",
+          "start": 82.537,
+          "end": 82.57700000000001
+        }
+      ]
+    },
+    {
+      "start": 83.417,
+      "end": 86.998,
+      "text": "Sette: C e i parametri del kernel vanno selezionati insieme,",
+      "words": [
+        {
+          "text": "Sette:",
+          "start": 83.417,
+          "end": 83.777
+        },
+        {
+          "text": "C",
+          "start": 84.217,
+          "end": 84.257
+        },
+        {
+          "text": "e",
+          "start": 84.577,
+          "end": 84.617
+        },
+        {
+          "text": "i",
+          "start": 84.677,
+          "end": 84.71700000000001
+        },
+        {
+          "text": "parametri",
+          "start": 84.737,
+          "end": 85.177
+        },
+        {
+          "text": "del",
+          "start": 85.217,
+          "end": 85.337
+        },
+        {
+          "text": "kernel",
+          "start": 85.398,
+          "end": 85.778
+        },
+        {
+          "text": "vanno",
+          "start": 85.838,
+          "end": 86.038
+        },
+        {
+          "text": "selezionati",
+          "start": 86.078,
+          "end": 86.558
+        },
+        {
+          "text": "insieme,",
+          "start": 86.618,
+          "end": 86.998
+        }
+      ]
+    },
+    {
+      "start": 87.238,
+      "end": 89.598,
+      "text": "perché la VC-dimension può essere infinita.",
+      "words": [
+        {
+          "text": "perché",
+          "start": 87.238,
+          "end": 87.438
+        },
+        {
+          "text": "la",
+          "start": 87.498,
+          "end": 87.53800000000001
+        },
+        {
+          "text": "VC-dimension",
+          "start": 87.558,
+          "end": 88.298
+        },
+        {
+          "text": "può",
+          "start": 88.398,
+          "end": 88.498
+        },
+        {
+          "text": "essere",
+          "start": 88.558,
+          "end": 88.838
+        },
+        {
+          "text": "infinita.",
+          "start": 89.018,
+          "end": 89.598
+        }
+      ]
+    },
+    {
+      "start": 90.379,
+      "end": 93.039,
+      "text": "A destra trovate le otto domande di verifica del capitolo:",
+      "words": [
+        {
+          "text": "A",
+          "start": 90.379,
+          "end": 90.41900000000001
+        },
+        {
+          "text": "destra",
+          "start": 90.459,
+          "end": 90.779
+        },
+        {
+          "text": "trovate",
+          "start": 90.939,
+          "end": 91.239
+        },
+        {
+          "text": "le",
+          "start": 91.259,
+          "end": 91.319
+        },
+        {
+          "text": "otto",
+          "start": 91.379,
+          "end": 91.539
+        },
+        {
+          "text": "domande",
+          "start": 91.559,
+          "end": 91.859
+        },
+        {
+          "text": "di",
+          "start": 91.899,
+          "end": 91.93900000000001
+        },
+        {
+          "text": "verifica",
+          "start": 91.979,
+          "end": 92.379
+        },
+        {
+          "text": "del",
+          "start": 92.419,
+          "end": 92.539
+        },
+        {
+          "text": "capitolo:",
+          "start": 92.579,
+          "end": 93.039
+        }
+      ]
+    },
+    {
+      "start": 93.419,
+      "end": 97.3,
+      "text": "provate a rispondere con tutte le derivazioni per consolidare l'intero argomento.",
+      "words": [
+        {
+          "text": "provate",
+          "start": 93.419,
+          "end": 93.719
+        },
+        {
+          "text": "a",
+          "start": 93.739,
+          "end": 93.77900000000001
+        },
+        {
+          "text": "rispondere",
+          "start": 93.799,
+          "end": 94.259
+        },
+        {
+          "text": "con",
+          "start": 94.319,
+          "end": 94.459
+        },
+        {
+          "text": "tutte",
+          "start": 94.539,
+          "end": 94.799
+        },
+        {
+          "text": "le",
+          "start": 94.819,
+          "end": 94.899
+        },
+        {
+          "text": "derivazioni",
+          "start": 94.919,
+          "end": 95.5
+        },
+        {
+          "text": "per",
+          "start": 95.56,
+          "end": 95.66
+        },
+        {
+          "text": "consolidare",
+          "start": 95.7,
+          "end": 96.24
+        },
+        {
+          "text": "l'intero",
+          "start": 96.34,
+          "end": 96.78
+        },
+        {
+          "text": "argomento.",
+          "start": 96.82,
+          "end": 97.3
+        }
+      ]
+    }
+  ]
+}

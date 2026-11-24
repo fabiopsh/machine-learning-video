@@ -1,0 +1,1584 @@
+{
+  "duration": 116.403,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.98,
+      "text": "Colleghiamo ora il bias composizionale al problema classico della maledizione della dimensionalità.",
+      "words": [
+        {
+          "text": "Colleghiamo",
+          "start": 0.08,
+          "end": 0.54
+        },
+        {
+          "text": "ora",
+          "start": 0.6,
+          "end": 0.74
+        },
+        {
+          "text": "il",
+          "start": 0.8,
+          "end": 0.86
+        },
+        {
+          "text": "bias",
+          "start": 0.9,
+          "end": 1.2
+        },
+        {
+          "text": "composizionale",
+          "start": 1.26,
+          "end": 2.04
+        },
+        {
+          "text": "al",
+          "start": 2.08,
+          "end": 2.16
+        },
+        {
+          "text": "problema",
+          "start": 2.2,
+          "end": 2.54
+        },
+        {
+          "text": "classico",
+          "start": 2.6,
+          "end": 3.08
+        },
+        {
+          "text": "della",
+          "start": 3.14,
+          "end": 3.3
+        },
+        {
+          "text": "maledizione",
+          "start": 3.34,
+          "end": 3.98
+        },
+        {
+          "text": "della",
+          "start": 4.02,
+          "end": 4.2
+        },
+        {
+          "text": "dimensionalità.",
+          "start": 4.24,
+          "end": 4.98
+        }
+      ]
+    },
+    {
+      "start": 5.641,
+      "end": 9.961,
+      "text": "Molti algoritmi di apprendimento tradizionali si basano su approssimazioni locali,",
+      "words": [
+        {
+          "text": "Molti",
+          "start": 5.641,
+          "end": 5.861
+        },
+        {
+          "text": "algoritmi",
+          "start": 5.901,
+          "end": 6.381
+        },
+        {
+          "text": "di",
+          "start": 6.441,
+          "end": 6.481
+        },
+        {
+          "text": "apprendimento",
+          "start": 6.541,
+          "end": 7.121
+        },
+        {
+          "text": "tradizionali",
+          "start": 7.161,
+          "end": 7.881
+        },
+        {
+          "text": "si",
+          "start": 7.921,
+          "end": 8.001
+        },
+        {
+          "text": "basano",
+          "start": 8.041,
+          "end": 8.361
+        },
+        {
+          "text": "su",
+          "start": 8.441,
+          "end": 8.521
+        },
+        {
+          "text": "approssimazioni",
+          "start": 8.681,
+          "end": 9.441
+        },
+        {
+          "text": "locali,",
+          "start": 9.501,
+          "end": 9.961
+        }
+      ]
+    },
+    {
+      "start": 10.541,
+      "end": 14.781,
+      "text": "cioè su un prior di smoothness locale: pensiamo al K-NN,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 10.541,
+          "end": 10.721
+        },
+        {
+          "text": "su",
+          "start": 10.861,
+          "end": 10.941
+        },
+        {
+          "text": "un",
+          "start": 11.041,
+          "end": 11.101
+        },
+        {
+          "text": "prior",
+          "start": 11.181,
+          "end": 11.661
+        },
+        {
+          "text": "di",
+          "start": 11.741,
+          "end": 11.821
+        },
+        {
+          "text": "smoothness",
+          "start": 11.861,
+          "end": 12.361
+        },
+        {
+          "text": "locale:",
+          "start": 12.441,
+          "end": 12.881
+        },
+        {
+          "text": "pensiamo",
+          "start": 13.341,
+          "end": 13.721
+        },
+        {
+          "text": "al",
+          "start": 13.781,
+          "end": 13.881
+        },
+        {
+          "text": "K-NN,",
+          "start": 13.941,
+          "end": 14.781
+        }
+      ]
+    },
+    {
+      "start": 15.201,
+      "end": 17.622,
+      "text": "ai kernel locali o agli alberi di decisione.",
+      "words": [
+        {
+          "text": "ai",
+          "start": 15.201,
+          "end": 15.301
+        },
+        {
+          "text": "kernel",
+          "start": 15.361,
+          "end": 15.721
+        },
+        {
+          "text": "locali",
+          "start": 15.781,
+          "end": 16.201
+        },
+        {
+          "text": "o",
+          "start": 16.341,
+          "end": 16.381
+        },
+        {
+          "text": "agli",
+          "start": 16.422,
+          "end": 16.562
+        },
+        {
+          "text": "alberi",
+          "start": 16.602,
+          "end": 16.882
+        },
+        {
+          "text": "di",
+          "start": 16.942,
+          "end": 17.002
+        },
+        {
+          "text": "decisione.",
+          "start": 17.062,
+          "end": 17.622
+        }
+      ]
+    },
+    {
+      "start": 18.222,
+      "end": 22.002,
+      "text": "Per distinguere O grande di k regioni diverse dello spazio di input,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 18.222,
+          "end": 18.342
+        },
+        {
+          "text": "distinguere",
+          "start": 18.402,
+          "end": 18.962
+        },
+        {
+          "text": "O",
+          "start": 19.162,
+          "end": 19.202
+        },
+        {
+          "text": "grande",
+          "start": 19.302,
+          "end": 19.662
+        },
+        {
+          "text": "di",
+          "start": 19.702,
+          "end": 19.762
+        },
+        {
+          "text": "k",
+          "start": 19.822,
+          "end": 19.862
+        },
+        {
+          "text": "regioni",
+          "start": 20.102,
+          "end": 20.402
+        },
+        {
+          "text": "diverse",
+          "start": 20.442,
+          "end": 20.802
+        },
+        {
+          "text": "dello",
+          "start": 20.842,
+          "end": 21.022
+        },
+        {
+          "text": "spazio",
+          "start": 21.082,
+          "end": 21.422
+        },
+        {
+          "text": "di",
+          "start": 21.462,
+          "end": 21.522
+        },
+        {
+          "text": "input,",
+          "start": 21.642,
+          "end": 22.002
+        }
+      ]
+    },
+    {
+      "start": 22.102,
+      "end": 25.902,
+      "text": "questi metodi richiedono O grande di k esempi di addestramento.",
+      "words": [
+        {
+          "text": "questi",
+          "start": 22.102,
+          "end": 22.362
+        },
+        {
+          "text": "metodi",
+          "start": 22.402,
+          "end": 22.742
+        },
+        {
+          "text": "richiedono",
+          "start": 22.802,
+          "end": 23.242
+        },
+        {
+          "text": "O",
+          "start": 23.422,
+          "end": 23.462
+        },
+        {
+          "text": "grande",
+          "start": 23.562,
+          "end": 23.902
+        },
+        {
+          "text": "di",
+          "start": 23.942,
+          "end": 24.022
+        },
+        {
+          "text": "k",
+          "start": 24.082,
+          "end": 24.122
+        },
+        {
+          "text": "esempi",
+          "start": 24.602,
+          "end": 25.022
+        },
+        {
+          "text": "di",
+          "start": 25.062,
+          "end": 25.122
+        },
+        {
+          "text": "addestramento.",
+          "start": 25.162,
+          "end": 25.902
+        }
+      ]
+    },
+    {
+      "start": 26.662,
+      "end": 32.783,
+      "text": "In alta dimensione, dove il volume cresce esponenzialmente, servirebbero quindi quantità proibitive di esempi per",
+      "words": [
+        {
+          "text": "In",
+          "start": 26.662,
+          "end": 26.742
+        },
+        {
+          "text": "alta",
+          "start": 26.782,
+          "end": 26.962
+        },
+        {
+          "text": "dimensione,",
+          "start": 27.002,
+          "end": 27.503
+        },
+        {
+          "text": "dove",
+          "start": 27.543,
+          "end": 27.703
+        },
+        {
+          "text": "il",
+          "start": 27.743,
+          "end": 27.783
+        },
+        {
+          "text": "volume",
+          "start": 27.823,
+          "end": 28.083
+        },
+        {
+          "text": "cresce",
+          "start": 28.183,
+          "end": 28.503
+        },
+        {
+          "text": "esponenzialmente,",
+          "start": 28.683,
+          "end": 29.683
+        },
+        {
+          "text": "servirebbero",
+          "start": 30.003,
+          "end": 30.543
+        },
+        {
+          "text": "quindi",
+          "start": 30.563,
+          "end": 30.803
+        },
+        {
+          "text": "quantità",
+          "start": 30.863,
+          "end": 31.223
+        },
+        {
+          "text": "proibitive",
+          "start": 31.323,
+          "end": 32.043
+        },
+        {
+          "text": "di",
+          "start": 32.123,
+          "end": 32.183
+        },
+        {
+          "text": "esempi",
+          "start": 32.243,
+          "end": 32.623
+        },
+        {
+          "text": "per",
+          "start": 32.663,
+          "end": 32.783
+        }
+      ]
+    },
+    {
+      "start": 32.823,
+      "end": 33.803,
+      "text": "coprire lo spazio.",
+      "words": [
+        {
+          "text": "coprire",
+          "start": 32.823,
+          "end": 33.163
+        },
+        {
+          "text": "lo",
+          "start": 33.203,
+          "end": 33.263
+        },
+        {
+          "text": "spazio.",
+          "start": 33.323,
+          "end": 33.803
+        }
+      ]
+    },
+    {
+      "start": 34.603,
+      "end": 38.263,
+      "text": "Come si può invece distinguere un numero esponenziale di regioni in k",
+      "words": [
+        {
+          "text": "Come",
+          "start": 34.603,
+          "end": 34.763
+        },
+        {
+          "text": "si",
+          "start": 34.803,
+          "end": 34.883
+        },
+        {
+          "text": "può",
+          "start": 34.923,
+          "end": 35.003
+        },
+        {
+          "text": "invece",
+          "start": 35.083,
+          "end": 35.363
+        },
+        {
+          "text": "distinguere",
+          "start": 35.423,
+          "end": 35.903
+        },
+        {
+          "text": "un",
+          "start": 36.063,
+          "end": 36.143
+        },
+        {
+          "text": "numero",
+          "start": 36.203,
+          "end": 36.503
+        },
+        {
+          "text": "esponenziale",
+          "start": 36.643,
+          "end": 37.503
+        },
+        {
+          "text": "di",
+          "start": 37.563,
+          "end": 37.623
+        },
+        {
+          "text": "regioni",
+          "start": 37.663,
+          "end": 38.003
+        },
+        {
+          "text": "in",
+          "start": 38.063,
+          "end": 38.123
+        },
+        {
+          "text": "k",
+          "start": 38.223,
+          "end": 38.263
+        }
+      ]
+    },
+    {
+      "start": 39.004,
+      "end": 44.644,
+      "text": "disponendo soltanto di O grande di k esempi, realizzando cioè una generalizzazione non locale?",
+      "words": [
+        {
+          "text": "disponendo",
+          "start": 39.004,
+          "end": 39.464
+        },
+        {
+          "text": "soltanto",
+          "start": 39.504,
+          "end": 39.884
+        },
+        {
+          "text": "di",
+          "start": 39.944,
+          "end": 40.024
+        },
+        {
+          "text": "O",
+          "start": 40.204,
+          "end": 40.244
+        },
+        {
+          "text": "grande",
+          "start": 40.324,
+          "end": 40.624
+        },
+        {
+          "text": "di",
+          "start": 40.664,
+          "end": 40.724
+        },
+        {
+          "text": "k",
+          "start": 40.764,
+          "end": 40.804
+        },
+        {
+          "text": "esempi,",
+          "start": 41.104,
+          "end": 41.524
+        },
+        {
+          "text": "realizzando",
+          "start": 41.944,
+          "end": 42.424
+        },
+        {
+          "text": "cioè",
+          "start": 42.484,
+          "end": 42.644
+        },
+        {
+          "text": "una",
+          "start": 42.784,
+          "end": 42.924
+        },
+        {
+          "text": "generalizzazione",
+          "start": 43.024,
+          "end": 43.904
+        },
+        {
+          "text": "non",
+          "start": 44.004,
+          "end": 44.144
+        },
+        {
+          "text": "locale?",
+          "start": 44.184,
+          "end": 44.644
+        }
+      ]
+    },
+    {
+      "start": 45.444,
+      "end": 51.285,
+      "text": "Servono ipotesi strutturali aggiuntive sulla distribuzione dei dati, come vedremo in modo concreto anche con",
+      "words": [
+        {
+          "text": "Servono",
+          "start": 45.444,
+          "end": 45.884
+        },
+        {
+          "text": "ipotesi",
+          "start": 45.944,
+          "end": 46.404
+        },
+        {
+          "text": "strutturali",
+          "start": 46.484,
+          "end": 47.044
+        },
+        {
+          "text": "aggiuntive",
+          "start": 47.104,
+          "end": 47.664
+        },
+        {
+          "text": "sulla",
+          "start": 47.724,
+          "end": 47.924
+        },
+        {
+          "text": "distribuzione",
+          "start": 47.964,
+          "end": 48.664
+        },
+        {
+          "text": "dei",
+          "start": 48.724,
+          "end": 48.864
+        },
+        {
+          "text": "dati,",
+          "start": 48.924,
+          "end": 49.244
+        },
+        {
+          "text": "come",
+          "start": 49.584,
+          "end": 49.745
+        },
+        {
+          "text": "vedremo",
+          "start": 49.785,
+          "end": 50.085
+        },
+        {
+          "text": "in",
+          "start": 50.125,
+          "end": 50.185
+        },
+        {
+          "text": "modo",
+          "start": 50.225,
+          "end": 50.385
+        },
+        {
+          "text": "concreto",
+          "start": 50.445,
+          "end": 50.885
+        },
+        {
+          "text": "anche",
+          "start": 50.945,
+          "end": 51.125
+        },
+        {
+          "text": "con",
+          "start": 51.165,
+          "end": 51.285
+        }
+      ]
+    },
+    {
+      "start": 51.325,
+      "end": 52.945,
+      "text": "le rappresentazioni distribuite.",
+      "words": [
+        {
+          "text": "le",
+          "start": 51.325,
+          "end": 51.385
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 51.445,
+          "end": 52.225
+        },
+        {
+          "text": "distribuite.",
+          "start": 52.265,
+          "end": 52.945
+        }
+      ]
+    },
+    {
+      "start": 53.625,
+      "end": 58.485,
+      "text": "Il deep learning sceglie esattamente un bias generale legato alla composizione di funzioni:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 53.625,
+          "end": 53.745
+        },
+        {
+          "text": "deep",
+          "start": 53.805,
+          "end": 53.965
+        },
+        {
+          "text": "learning",
+          "start": 54.045,
+          "end": 54.445
+        },
+        {
+          "text": "sceglie",
+          "start": 54.565,
+          "end": 54.865
+        },
+        {
+          "text": "esattamente",
+          "start": 54.905,
+          "end": 55.505
+        },
+        {
+          "text": "un",
+          "start": 55.565,
+          "end": 55.625
+        },
+        {
+          "text": "bias",
+          "start": 55.665,
+          "end": 55.985
+        },
+        {
+          "text": "generale",
+          "start": 56.065,
+          "end": 56.525
+        },
+        {
+          "text": "legato",
+          "start": 56.585,
+          "end": 56.885
+        },
+        {
+          "text": "alla",
+          "start": 56.925,
+          "end": 57.065
+        },
+        {
+          "text": "composizione",
+          "start": 57.105,
+          "end": 57.785
+        },
+        {
+          "text": "di",
+          "start": 57.825,
+          "end": 57.885
+        },
+        {
+          "text": "funzioni:",
+          "start": 57.925,
+          "end": 58.485
+        }
+      ]
+    },
+    {
+      "start": 58.985,
+      "end": 62.746,
+      "text": "assume che i dati siano generati dalla composizione di fattori su più livelli.",
+      "words": [
+        {
+          "text": "assume",
+          "start": 58.985,
+          "end": 59.265
+        },
+        {
+          "text": "che",
+          "start": 59.325,
+          "end": 59.405
+        },
+        {
+          "text": "i",
+          "start": 59.465,
+          "end": 59.505
+        },
+        {
+          "text": "dati",
+          "start": 59.525,
+          "end": 59.785
+        },
+        {
+          "text": "siano",
+          "start": 59.845,
+          "end": 60.045
+        },
+        {
+          "text": "generati",
+          "start": 60.085,
+          "end": 60.525
+        },
+        {
+          "text": "dalla",
+          "start": 60.565,
+          "end": 60.786
+        },
+        {
+          "text": "composizione",
+          "start": 60.826,
+          "end": 61.446
+        },
+        {
+          "text": "di",
+          "start": 61.486,
+          "end": 61.546
+        },
+        {
+          "text": "fattori",
+          "start": 61.586,
+          "end": 61.966
+        },
+        {
+          "text": "su",
+          "start": 62.026,
+          "end": 62.086
+        },
+        {
+          "text": "più",
+          "start": 62.166,
+          "end": 62.246
+        },
+        {
+          "text": "livelli.",
+          "start": 62.326,
+          "end": 62.746
+        }
+      ]
+    },
+    {
+      "start": 63.326,
+      "end": 69.466,
+      "text": "Quando questa ipotesi è verificata, si ottiene un guadagno potenzialmente esponenziale nel rapporto tra numero",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 63.326,
+          "end": 63.546
+        },
+        {
+          "text": "questa",
+          "start": 63.606,
+          "end": 63.826
+        },
+        {
+          "text": "ipotesi",
+          "start": 63.886,
+          "end": 64.226
+        },
+        {
+          "text": "è",
+          "start": 64.266,
+          "end": 64.30600000000001
+        },
+        {
+          "text": "verificata,",
+          "start": 64.346,
+          "end": 65.006
+        },
+        {
+          "text": "si",
+          "start": 65.146,
+          "end": 65.206
+        },
+        {
+          "text": "ottiene",
+          "start": 65.246,
+          "end": 65.526
+        },
+        {
+          "text": "un",
+          "start": 65.586,
+          "end": 65.646
+        },
+        {
+          "text": "guadagno",
+          "start": 65.686,
+          "end": 66.126
+        },
+        {
+          "text": "potenzialmente",
+          "start": 66.166,
+          "end": 66.846
+        },
+        {
+          "text": "esponenziale",
+          "start": 67.046,
+          "end": 67.926
+        },
+        {
+          "text": "nel",
+          "start": 68.266,
+          "end": 68.386
+        },
+        {
+          "text": "rapporto",
+          "start": 68.406,
+          "end": 68.786
+        },
+        {
+          "text": "tra",
+          "start": 68.846,
+          "end": 68.946
+        },
+        {
+          "text": "numero",
+          "start": 69.106,
+          "end": 69.466
+        }
+      ]
+    },
+    {
+      "start": 69.506,
+      "end": 72.607,
+      "text": "di esempi necessari e numero di regioni distinguibili.",
+      "words": [
+        {
+          "text": "di",
+          "start": 69.506,
+          "end": 69.566
+        },
+        {
+          "text": "esempi",
+          "start": 69.606,
+          "end": 69.906
+        },
+        {
+          "text": "necessari",
+          "start": 69.966,
+          "end": 70.566
+        },
+        {
+          "text": "e",
+          "start": 70.926,
+          "end": 70.96600000000001
+        },
+        {
+          "text": "numero",
+          "start": 71.066,
+          "end": 71.386
+        },
+        {
+          "text": "di",
+          "start": 71.426,
+          "end": 71.486
+        },
+        {
+          "text": "regioni",
+          "start": 71.546,
+          "end": 71.867
+        },
+        {
+          "text": "distinguibili.",
+          "start": 71.927,
+          "end": 72.607
+        }
+      ]
+    },
+    {
+      "start": 73.347,
+      "end": 77.367,
+      "text": "A questo si collega l'osservazione geometrica sulla varietà, o manifold:",
+      "words": [
+        {
+          "text": "A",
+          "start": 73.347,
+          "end": 73.387
+        },
+        {
+          "text": "questo",
+          "start": 73.427,
+          "end": 73.687
+        },
+        {
+          "text": "si",
+          "start": 73.807,
+          "end": 73.887
+        },
+        {
+          "text": "collega",
+          "start": 73.947,
+          "end": 74.267
+        },
+        {
+          "text": "l'osservazione",
+          "start": 74.287,
+          "end": 74.907
+        },
+        {
+          "text": "geometrica",
+          "start": 75.007,
+          "end": 75.647
+        },
+        {
+          "text": "sulla",
+          "start": 75.727,
+          "end": 75.967
+        },
+        {
+          "text": "varietà,",
+          "start": 75.987,
+          "end": 76.367
+        },
+        {
+          "text": "o",
+          "start": 76.667,
+          "end": 76.70700000000001
+        },
+        {
+          "text": "manifold:",
+          "start": 76.807,
+          "end": 77.367
+        }
+      ]
+    },
+    {
+      "start": 77.987,
+      "end": 83.208,
+      "text": "la distribuzione delle immagini e dei testi reali sembra concentrata su una superficie di dimensione",
+      "words": [
+        {
+          "text": "la",
+          "start": 77.987,
+          "end": 78.047
+        },
+        {
+          "text": "distribuzione",
+          "start": 78.107,
+          "end": 78.727
+        },
+        {
+          "text": "delle",
+          "start": 78.767,
+          "end": 78.987
+        },
+        {
+          "text": "immagini",
+          "start": 79.047,
+          "end": 79.607
+        },
+        {
+          "text": "e",
+          "start": 79.767,
+          "end": 79.807
+        },
+        {
+          "text": "dei",
+          "start": 79.847,
+          "end": 79.967
+        },
+        {
+          "text": "testi",
+          "start": 79.987,
+          "end": 80.247
+        },
+        {
+          "text": "reali",
+          "start": 80.307,
+          "end": 80.707
+        },
+        {
+          "text": "sembra",
+          "start": 80.787,
+          "end": 81.027
+        },
+        {
+          "text": "concentrata",
+          "start": 81.107,
+          "end": 81.727
+        },
+        {
+          "text": "su",
+          "start": 81.787,
+          "end": 81.847
+        },
+        {
+          "text": "una",
+          "start": 81.887,
+          "end": 81.987
+        },
+        {
+          "text": "superficie",
+          "start": 82.047,
+          "end": 82.587
+        },
+        {
+          "text": "di",
+          "start": 82.628,
+          "end": 82.688
+        },
+        {
+          "text": "dimensione",
+          "start": 82.748,
+          "end": 83.208
+        }
+      ]
+    },
+    {
+      "start": 83.348,
+      "end": 88.948,
+      "text": "molto più bassa rispetto allo spazio ambiente, occupando solo una piccolissima frazione del volume di",
+      "words": [
+        {
+          "text": "molto",
+          "start": 83.348,
+          "end": 83.748
+        },
+        {
+          "text": "più",
+          "start": 83.788,
+          "end": 83.888
+        },
+        {
+          "text": "bassa",
+          "start": 83.948,
+          "end": 84.328
+        },
+        {
+          "text": "rispetto",
+          "start": 84.688,
+          "end": 85.028
+        },
+        {
+          "text": "allo",
+          "start": 85.048,
+          "end": 85.168
+        },
+        {
+          "text": "spazio",
+          "start": 85.208,
+          "end": 85.488
+        },
+        {
+          "text": "ambiente,",
+          "start": 85.528,
+          "end": 86.008
+        },
+        {
+          "text": "occupando",
+          "start": 86.388,
+          "end": 86.788
+        },
+        {
+          "text": "solo",
+          "start": 86.828,
+          "end": 86.988
+        },
+        {
+          "text": "una",
+          "start": 87.028,
+          "end": 87.108
+        },
+        {
+          "text": "piccolissima",
+          "start": 87.188,
+          "end": 87.868
+        },
+        {
+          "text": "frazione",
+          "start": 87.908,
+          "end": 88.308
+        },
+        {
+          "text": "del",
+          "start": 88.348,
+          "end": 88.468
+        },
+        {
+          "text": "volume",
+          "start": 88.508,
+          "end": 88.828
+        },
+        {
+          "text": "di",
+          "start": 88.868,
+          "end": 88.948
+        }
+      ]
+    },
+    {
+      "start": 89.068,
+      "end": 92.028,
+      "text": "tutte le immagini o i testi teoricamente possibili.",
+      "words": [
+        {
+          "text": "tutte",
+          "start": 89.068,
+          "end": 89.368
+        },
+        {
+          "text": "le",
+          "start": 89.408,
+          "end": 89.488
+        },
+        {
+          "text": "immagini",
+          "start": 89.528,
+          "end": 90.028
+        },
+        {
+          "text": "o",
+          "start": 90.308,
+          "end": 90.34800000000001
+        },
+        {
+          "text": "i",
+          "start": 90.408,
+          "end": 90.44800000000001
+        },
+        {
+          "text": "testi",
+          "start": 90.488,
+          "end": 90.768
+        },
+        {
+          "text": "teoricamente",
+          "start": 90.808,
+          "end": 91.448
+        },
+        {
+          "text": "possibili.",
+          "start": 91.488,
+          "end": 92.028
+        }
+      ]
+    },
+    {
+      "start": 92.808,
+      "end": 96.249,
+      "text": "Nella pratica, quanti strati e quante unità dobbiamo scegliere?",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 92.808,
+          "end": 92.968
+        },
+        {
+          "text": "pratica,",
+          "start": 93.008,
+          "end": 93.468
+        },
+        {
+          "text": "quanti",
+          "start": 93.629,
+          "end": 93.869
+        },
+        {
+          "text": "strati",
+          "start": 93.929,
+          "end": 94.229
+        },
+        {
+          "text": "e",
+          "start": 94.349,
+          "end": 94.38900000000001
+        },
+        {
+          "text": "quante",
+          "start": 94.449,
+          "end": 94.729
+        },
+        {
+          "text": "unità",
+          "start": 94.829,
+          "end": 95.129
+        },
+        {
+          "text": "dobbiamo",
+          "start": 95.449,
+          "end": 95.749
+        },
+        {
+          "text": "scegliere?",
+          "start": 95.829,
+          "end": 96.249
+        }
+      ]
+    },
+    {
+      "start": 96.829,
+      "end": 98.709,
+      "text": "Non esiste una formula universale:",
+      "words": [
+        {
+          "text": "Non",
+          "start": 96.829,
+          "end": 96.989
+        },
+        {
+          "text": "esiste",
+          "start": 97.029,
+          "end": 97.409
+        },
+        {
+          "text": "una",
+          "start": 97.469,
+          "end": 97.609
+        },
+        {
+          "text": "formula",
+          "start": 97.649,
+          "end": 98.009
+        },
+        {
+          "text": "universale:",
+          "start": 98.049,
+          "end": 98.709
+        }
+      ]
+    },
+    {
+      "start": 99.349,
+      "end": 101.049,
+      "text": "è un problema di model selection.",
+      "words": [
+        {
+          "text": "è",
+          "start": 99.349,
+          "end": 99.38900000000001
+        },
+        {
+          "text": "un",
+          "start": 99.429,
+          "end": 99.489
+        },
+        {
+          "text": "problema",
+          "start": 99.509,
+          "end": 99.929
+        },
+        {
+          "text": "di",
+          "start": 99.989,
+          "end": 100.069
+        },
+        {
+          "text": "model",
+          "start": 100.169,
+          "end": 100.449
+        },
+        {
+          "text": "selection.",
+          "start": 100.529,
+          "end": 101.049
+        }
+      ]
+    },
+    {
+      "start": 101.549,
+      "end": 104.249,
+      "text": "Le reti profonde usano spesso meno unità per strato,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 101.549,
+          "end": 101.609
+        },
+        {
+          "text": "reti",
+          "start": 101.649,
+          "end": 101.849
+        },
+        {
+          "text": "profonde",
+          "start": 101.889,
+          "end": 102.269
+        },
+        {
+          "text": "usano",
+          "start": 102.309,
+          "end": 102.549
+        },
+        {
+          "text": "spesso",
+          "start": 102.569,
+          "end": 102.949
+        },
+        {
+          "text": "meno",
+          "start": 103.049,
+          "end": 103.229
+        },
+        {
+          "text": "unità",
+          "start": 103.269,
+          "end": 103.569
+        },
+        {
+          "text": "per",
+          "start": 103.669,
+          "end": 103.809
+        },
+        {
+          "text": "strato,",
+          "start": 103.869,
+          "end": 104.249
+        }
+      ]
+    },
+    {
+      "start": 104.449,
+      "end": 109.79,
+      "text": "quindi meno parametri e meno dati per generalizzare, ma avere molti strati rende l'ottimizzazione più",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 104.449,
+          "end": 104.67
+        },
+        {
+          "text": "meno",
+          "start": 104.79,
+          "end": 104.97
+        },
+        {
+          "text": "parametri",
+          "start": 105.01,
+          "end": 105.51
+        },
+        {
+          "text": "e",
+          "start": 105.55,
+          "end": 105.59
+        },
+        {
+          "text": "meno",
+          "start": 105.61,
+          "end": 105.77
+        },
+        {
+          "text": "dati",
+          "start": 105.83,
+          "end": 106.09
+        },
+        {
+          "text": "per",
+          "start": 106.15,
+          "end": 106.27
+        },
+        {
+          "text": "generalizzare,",
+          "start": 106.31,
+          "end": 107.05
+        },
+        {
+          "text": "ma",
+          "start": 107.49,
+          "end": 107.55
+        },
+        {
+          "text": "avere",
+          "start": 107.59,
+          "end": 107.79
+        },
+        {
+          "text": "molti",
+          "start": 107.85,
+          "end": 108.09
+        },
+        {
+          "text": "strati",
+          "start": 108.17,
+          "end": 108.49
+        },
+        {
+          "text": "rende",
+          "start": 108.55,
+          "end": 108.79
+        },
+        {
+          "text": "l'ottimizzazione",
+          "start": 108.87,
+          "end": 109.63
+        },
+        {
+          "text": "più",
+          "start": 109.69,
+          "end": 109.79
+        }
+      ]
+    },
+    {
+      "start": 109.87,
+      "end": 110.49,
+      "text": "difficile.",
+      "words": [
+        {
+          "text": "difficile.",
+          "start": 109.87,
+          "end": 110.49
+        }
+      ]
+    },
+    {
+      "start": 111.19,
+      "end": 116.151,
+      "text": "Con modelli così articolati, l'esperienza conta molto nello stabilire gli aspetti architetturali.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 111.19,
+          "end": 111.29
+        },
+        {
+          "text": "modelli",
+          "start": 111.33,
+          "end": 111.63
+        },
+        {
+          "text": "così",
+          "start": 111.69,
+          "end": 111.87
+        },
+        {
+          "text": "articolati,",
+          "start": 111.93,
+          "end": 112.55
+        },
+        {
+          "text": "l'esperienza",
+          "start": 112.91,
+          "end": 113.45
+        },
+        {
+          "text": "conta",
+          "start": 113.51,
+          "end": 113.77
+        },
+        {
+          "text": "molto",
+          "start": 113.83,
+          "end": 114.19
+        },
+        {
+          "text": "nello",
+          "start": 114.23,
+          "end": 114.41
+        },
+        {
+          "text": "stabilire",
+          "start": 114.45,
+          "end": 114.89
+        },
+        {
+          "text": "gli",
+          "start": 114.91,
+          "end": 115.01
+        },
+        {
+          "text": "aspetti",
+          "start": 115.05,
+          "end": 115.39
+        },
+        {
+          "text": "architetturali.",
+          "start": 115.43,
+          "end": 116.151
+        }
+      ]
+    }
+  ]
+}

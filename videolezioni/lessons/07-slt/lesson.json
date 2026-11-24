@@ -378,19 +378,19 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.4.1 · Ruolo teorico e pratico del VC-bound</div>\n  <h2 class=\"slide-title\">ML vs ottimizzazione pura e i 4 motivi dei limiti come stima</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Fondamento teorico: Machine Learning ≠ Ottimizzazione pura</div>\n    <p>L'ottimizzazione minimizza l'errore sui dati noti (\\(\\Remp\\)); il ML minimizza il rischio sui <strong>dati futuri</strong> (\\(R\\)) tramite il principio induttivo della SRM, indipendentemente dal modello.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Perché si usa raramente per il model assessment (4 ragioni)</div>\n      <ol class=\"algo-list\" style=\"font-size:0.83rem;\">\n        <li>Spesso <strong>troppo largo</strong> (ma utile per il <strong>ranking</strong> in model selection).</li>\n        <li>È un upper bound <strong>uniforme</strong> su tutta \\(H\\) (legittima la ricerca in \\(H\\)).</li>\n        <li>\\(\\VC(H)\\) è difficile da calcolare per modelli non lineari.</li>\n        <li>Per stime accurate servono bound più stretti o validazione empirica.</li>\n      </ol>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Guida a nuovi modelli</div>\n      <p>Indica una direzione costruttiva per progettare algoritmi direttamente guidati dalla SRM: è la genesi teorica delle <strong>SVM</strong> (Cap. 13).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 14.21,
+          "at": 13.2,
           "action": "show",
           "target": "#s1",
           "anchor": "fondamento teorico universale"
         },
         {
-          "at": 53.23,
+          "at": 49.39,
           "action": "show",
           "target": "#s2",
           "anchor": "Per quattro motivi precisi"
         },
         {
-          "at": 82.83,
+          "at": 79.6,
           "action": "show",
           "target": "#s3",
           "anchor": "Terzo: indica una via costruttiva"
@@ -399,7 +399,7 @@
       "id": "scene-09",
       "audio_file": "audio/scene-09.wav",
       "subtitle_file": "subtitles/scene-09.json",
-      "duration_sec": 93.2
+      "duration_sec": 90.58
     },
     {
       "id": "scene-10",

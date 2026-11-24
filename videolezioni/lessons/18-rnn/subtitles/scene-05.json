@@ -1,0 +1,1170 @@
+{
+  "duration": 90.847,
+  "segments": [
+    {
+      "start": 0.749,
+      "end": 3.149,
+      "text": "Come si addestra una rete con connessioni cicliche?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.749,
+          "end": 0.929
+        },
+        {
+          "text": "si",
+          "start": 0.969,
+          "end": 1.029
+        },
+        {
+          "text": "addestra",
+          "start": 1.069,
+          "end": 1.469
+        },
+        {
+          "text": "una",
+          "start": 1.549,
+          "end": 1.669
+        },
+        {
+          "text": "rete",
+          "start": 1.709,
+          "end": 1.969
+        },
+        {
+          "text": "con",
+          "start": 2.029,
+          "end": 2.169
+        },
+        {
+          "text": "connessioni",
+          "start": 2.229,
+          "end": 2.669
+        },
+        {
+          "text": "cicliche?",
+          "start": 2.729,
+          "end": 3.149
+        }
+      ]
+    },
+    {
+      "start": 4.029,
+      "end": 9.77,
+      "text": "La chiave è l'unfolding, cioè lo srotolamento nel tempo dello stesso modello lungo la sequenza",
+      "words": [
+        {
+          "text": "La",
+          "start": 4.029,
+          "end": 4.089
+        },
+        {
+          "text": "chiave",
+          "start": 4.149,
+          "end": 4.449
+        },
+        {
+          "text": "è",
+          "start": 4.629,
+          "end": 4.669
+        },
+        {
+          "text": "l'unfolding,",
+          "start": 4.789,
+          "end": 5.609
+        },
+        {
+          "text": "cioè",
+          "start": 6.029,
+          "end": 6.189
+        },
+        {
+          "text": "lo",
+          "start": 6.369,
+          "end": 6.469
+        },
+        {
+          "text": "srotolamento",
+          "start": 6.529,
+          "end": 7.249
+        },
+        {
+          "text": "nel",
+          "start": 7.309,
+          "end": 7.449
+        },
+        {
+          "text": "tempo",
+          "start": 7.509,
+          "end": 7.849
+        },
+        {
+          "text": "dello",
+          "start": 8.009,
+          "end": 8.189
+        },
+        {
+          "text": "stesso",
+          "start": 8.229,
+          "end": 8.509
+        },
+        {
+          "text": "modello",
+          "start": 8.549,
+          "end": 8.93
+        },
+        {
+          "text": "lungo",
+          "start": 9.03,
+          "end": 9.25
+        },
+        {
+          "text": "la",
+          "start": 9.31,
+          "end": 9.37
+        },
+        {
+          "text": "sequenza",
+          "start": 9.39,
+          "end": 9.77
+        }
+      ]
+    },
+    {
+      "start": 9.81,
+      "end": 10.29,
+      "text": "di input.",
+      "words": [
+        {
+          "text": "di",
+          "start": 9.81,
+          "end": 9.87
+        },
+        {
+          "text": "input.",
+          "start": 9.95,
+          "end": 10.29
+        }
+      ]
+    },
+    {
+      "start": 11.01,
+      "end": 14.91,
+      "text": "A partire dalla rete compatta con il suo self-loop W cappello,",
+      "words": [
+        {
+          "text": "A",
+          "start": 11.01,
+          "end": 11.05
+        },
+        {
+          "text": "partire",
+          "start": 11.13,
+          "end": 11.51
+        },
+        {
+          "text": "dalla",
+          "start": 11.57,
+          "end": 11.75
+        },
+        {
+          "text": "rete",
+          "start": 11.79,
+          "end": 11.97
+        },
+        {
+          "text": "compatta",
+          "start": 12.01,
+          "end": 12.51
+        },
+        {
+          "text": "con",
+          "start": 12.59,
+          "end": 12.71
+        },
+        {
+          "text": "il",
+          "start": 12.75,
+          "end": 12.83
+        },
+        {
+          "text": "suo",
+          "start": 12.89,
+          "end": 13.03
+        },
+        {
+          "text": "self-loop",
+          "start": 13.17,
+          "end": 13.75
+        },
+        {
+          "text": "W",
+          "start": 13.89,
+          "end": 13.93
+        },
+        {
+          "text": "cappello,",
+          "start": 14.37,
+          "end": 14.91
+        }
+      ]
+    },
+    {
+      "start": 15.33,
+      "end": 21.291,
+      "text": "costruiamo una rete feedforward equivalente — chiamata rete di codifica — creando una replica del",
+      "words": [
+        {
+          "text": "costruiamo",
+          "start": 15.33,
+          "end": 15.83
+        },
+        {
+          "text": "una",
+          "start": 15.89,
+          "end": 16.01
+        },
+        {
+          "text": "rete",
+          "start": 16.05,
+          "end": 16.25
+        },
+        {
+          "text": "feedforward",
+          "start": 16.43,
+          "end": 17.17
+        },
+        {
+          "text": "equivalente",
+          "start": 17.23,
+          "end": 17.91
+        },
+        {
+          "text": "—",
+          "start": 17.91,
+          "end": 18.06
+        },
+        {
+          "text": "chiamata",
+          "start": 18.23,
+          "end": 18.61
+        },
+        {
+          "text": "rete",
+          "start": 18.71,
+          "end": 18.95
+        },
+        {
+          "text": "di",
+          "start": 19.01,
+          "end": 19.07
+        },
+        {
+          "text": "codifica",
+          "start": 19.11,
+          "end": 19.65
+        },
+        {
+          "text": "—",
+          "start": 19.65,
+          "end": 19.8
+        },
+        {
+          "text": "creando",
+          "start": 20.071,
+          "end": 20.451
+        },
+        {
+          "text": "una",
+          "start": 20.531,
+          "end": 20.671
+        },
+        {
+          "text": "replica",
+          "start": 20.731,
+          "end": 21.131
+        },
+        {
+          "text": "del",
+          "start": 21.171,
+          "end": 21.291
+        }
+      ]
+    },
+    {
+      "start": 21.351,
+      "end": 23.251,
+      "text": "modello per ciascun passo temporale.",
+      "words": [
+        {
+          "text": "modello",
+          "start": 21.351,
+          "end": 21.771
+        },
+        {
+          "text": "per",
+          "start": 21.891,
+          "end": 22.011
+        },
+        {
+          "text": "ciascun",
+          "start": 22.051,
+          "end": 22.371
+        },
+        {
+          "text": "passo",
+          "start": 22.411,
+          "end": 22.651
+        },
+        {
+          "text": "temporale.",
+          "start": 22.711,
+          "end": 23.251
+        }
+      ]
+    },
+    {
+      "start": 24.111,
+      "end": 29.951,
+      "text": "Nel diagramma vediamo lo srotolamento su tre passi: si parte dallo stato iniziale nullo zero,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 24.111,
+          "end": 24.231
+        },
+        {
+          "text": "diagramma",
+          "start": 24.251,
+          "end": 24.711
+        },
+        {
+          "text": "vediamo",
+          "start": 24.731,
+          "end": 25.011
+        },
+        {
+          "text": "lo",
+          "start": 25.071,
+          "end": 25.151
+        },
+        {
+          "text": "srotolamento",
+          "start": 25.191,
+          "end": 25.791
+        },
+        {
+          "text": "su",
+          "start": 25.871,
+          "end": 25.931
+        },
+        {
+          "text": "tre",
+          "start": 26.031,
+          "end": 26.131
+        },
+        {
+          "text": "passi:",
+          "start": 26.231,
+          "end": 26.631
+        },
+        {
+          "text": "si",
+          "start": 27.111,
+          "end": 27.191
+        },
+        {
+          "text": "parte",
+          "start": 27.231,
+          "end": 27.531
+        },
+        {
+          "text": "dallo",
+          "start": 27.591,
+          "end": 27.791
+        },
+        {
+          "text": "stato",
+          "start": 27.811,
+          "end": 28.031
+        },
+        {
+          "text": "iniziale",
+          "start": 28.091,
+          "end": 28.571
+        },
+        {
+          "text": "nullo",
+          "start": 28.951,
+          "end": 29.371
+        },
+        {
+          "text": "zero,",
+          "start": 29.651,
+          "end": 29.951
+        }
+      ]
+    },
+    {
+      "start": 30.451,
+      "end": 34.352,
+      "text": "si calcola h di uno ricevendo x di uno tramite W,",
+      "words": [
+        {
+          "text": "si",
+          "start": 30.451,
+          "end": 30.531
+        },
+        {
+          "text": "calcola",
+          "start": 30.591,
+          "end": 30.992
+        },
+        {
+          "text": "h",
+          "start": 31.472,
+          "end": 31.512
+        },
+        {
+          "text": "di",
+          "start": 31.592,
+          "end": 31.672
+        },
+        {
+          "text": "uno",
+          "start": 31.832,
+          "end": 32.032
+        },
+        {
+          "text": "ricevendo",
+          "start": 32.292,
+          "end": 32.792
+        },
+        {
+          "text": "x",
+          "start": 33.112,
+          "end": 33.152
+        },
+        {
+          "text": "di",
+          "start": 33.392,
+          "end": 33.452
+        },
+        {
+          "text": "uno",
+          "start": 33.572,
+          "end": 33.772
+        },
+        {
+          "text": "tramite",
+          "start": 33.812,
+          "end": 34.212
+        },
+        {
+          "text": "W,",
+          "start": 34.312,
+          "end": 34.352
+        }
+      ]
+    },
+    {
+      "start": 35.392,
+      "end": 40.852,
+      "text": "poi h di due ricevendo x di due e lo stato precedente tramite W cappello,",
+      "words": [
+        {
+          "text": "poi",
+          "start": 35.392,
+          "end": 35.592
+        },
+        {
+          "text": "h",
+          "start": 36.032,
+          "end": 36.072
+        },
+        {
+          "text": "di",
+          "start": 36.152,
+          "end": 36.232
+        },
+        {
+          "text": "due",
+          "start": 36.292,
+          "end": 36.552
+        },
+        {
+          "text": "ricevendo",
+          "start": 36.772,
+          "end": 37.212
+        },
+        {
+          "text": "x",
+          "start": 37.512,
+          "end": 37.552
+        },
+        {
+          "text": "di",
+          "start": 37.772,
+          "end": 37.852
+        },
+        {
+          "text": "due",
+          "start": 37.912,
+          "end": 38.152
+        },
+        {
+          "text": "e",
+          "start": 38.352,
+          "end": 38.392
+        },
+        {
+          "text": "lo",
+          "start": 38.432,
+          "end": 38.512
+        },
+        {
+          "text": "stato",
+          "start": 38.572,
+          "end": 38.792
+        },
+        {
+          "text": "precedente",
+          "start": 38.832,
+          "end": 39.372
+        },
+        {
+          "text": "tramite",
+          "start": 39.412,
+          "end": 39.772
+        },
+        {
+          "text": "W",
+          "start": 39.872,
+          "end": 39.912
+        },
+        {
+          "text": "cappello,",
+          "start": 40.312,
+          "end": 40.852
+        }
+      ]
+    },
+    {
+      "start": 41.332,
+      "end": 44.313,
+      "text": "e infine h di tre che genera l'uscita o di tre.",
+      "words": [
+        {
+          "text": "e",
+          "start": 41.332,
+          "end": 41.372
+        },
+        {
+          "text": "infine",
+          "start": 41.432,
+          "end": 41.753
+        },
+        {
+          "text": "h",
+          "start": 42.073,
+          "end": 42.113
+        },
+        {
+          "text": "di",
+          "start": 42.173,
+          "end": 42.233
+        },
+        {
+          "text": "tre",
+          "start": 42.293,
+          "end": 42.433
+        },
+        {
+          "text": "che",
+          "start": 42.753,
+          "end": 42.833
+        },
+        {
+          "text": "genera",
+          "start": 42.913,
+          "end": 43.213
+        },
+        {
+          "text": "l'uscita",
+          "start": 43.253,
+          "end": 43.673
+        },
+        {
+          "text": "o",
+          "start": 43.893,
+          "end": 43.933
+        },
+        {
+          "text": "di",
+          "start": 44.013,
+          "end": 44.093
+        },
+        {
+          "text": "tre.",
+          "start": 44.173,
+          "end": 44.313
+        }
+      ]
+    },
+    {
+      "start": 45.073,
+      "end": 50.793,
+      "text": "Grazie all'assunzione di stazionarietà, tutte le repliche condividono esattamente le stesse matrici di pesi W",
+      "words": [
+        {
+          "text": "Grazie",
+          "start": 45.073,
+          "end": 45.373
+        },
+        {
+          "text": "all'assunzione",
+          "start": 45.393,
+          "end": 46.053
+        },
+        {
+          "text": "di",
+          "start": 46.113,
+          "end": 46.173
+        },
+        {
+          "text": "stazionarietà,",
+          "start": 46.233,
+          "end": 46.933
+        },
+        {
+          "text": "tutte",
+          "start": 47.193,
+          "end": 47.453
+        },
+        {
+          "text": "le",
+          "start": 47.513,
+          "end": 47.573
+        },
+        {
+          "text": "repliche",
+          "start": 47.633,
+          "end": 48.033
+        },
+        {
+          "text": "condividono",
+          "start": 48.093,
+          "end": 48.653
+        },
+        {
+          "text": "esattamente",
+          "start": 48.713,
+          "end": 49.273
+        },
+        {
+          "text": "le",
+          "start": 49.333,
+          "end": 49.413
+        },
+        {
+          "text": "stesse",
+          "start": 49.453,
+          "end": 49.733
+        },
+        {
+          "text": "matrici",
+          "start": 49.773,
+          "end": 50.133
+        },
+        {
+          "text": "di",
+          "start": 50.173,
+          "end": 50.233
+        },
+        {
+          "text": "pesi",
+          "start": 50.293,
+          "end": 50.573
+        },
+        {
+          "text": "W",
+          "start": 50.753,
+          "end": 50.793
+        }
+      ]
+    },
+    {
+      "start": 51.433,
+      "end": 52.473,
+      "text": "e W cappello.",
+      "words": [
+        {
+          "text": "e",
+          "start": 51.433,
+          "end": 51.473
+        },
+        {
+          "text": "W",
+          "start": 51.533,
+          "end": 51.573
+        },
+        {
+          "text": "cappello.",
+          "start": 51.953,
+          "end": 52.473
+        }
+      ]
+    },
+    {
+      "start": 53.354,
+      "end": 55.034,
+      "text": "Ecco il punto chiave per l'apprendimento:",
+      "words": [
+        {
+          "text": "Ecco",
+          "start": 53.354,
+          "end": 53.534
+        },
+        {
+          "text": "il",
+          "start": 53.554,
+          "end": 53.614
+        },
+        {
+          "text": "punto",
+          "start": 53.654,
+          "end": 53.854
+        },
+        {
+          "text": "chiave",
+          "start": 53.894,
+          "end": 54.114
+        },
+        {
+          "text": "per",
+          "start": 54.154,
+          "end": 54.274
+        },
+        {
+          "text": "l'apprendimento:",
+          "start": 54.314,
+          "end": 55.034
+        }
+      ]
+    },
+    {
+      "start": 55.734,
+      "end": 61.094,
+      "text": "sulla rete srotolata, ormai aciclica, possiamo applicare la backpropagation standard.",
+      "words": [
+        {
+          "text": "sulla",
+          "start": 55.734,
+          "end": 55.954
+        },
+        {
+          "text": "rete",
+          "start": 55.994,
+          "end": 56.174
+        },
+        {
+          "text": "srotolata,",
+          "start": 56.274,
+          "end": 56.914
+        },
+        {
+          "text": "ormai",
+          "start": 57.214,
+          "end": 57.494
+        },
+        {
+          "text": "aciclica,",
+          "start": 57.574,
+          "end": 58.194
+        },
+        {
+          "text": "possiamo",
+          "start": 58.574,
+          "end": 58.874
+        },
+        {
+          "text": "applicare",
+          "start": 58.894,
+          "end": 59.374
+        },
+        {
+          "text": "la",
+          "start": 59.434,
+          "end": 59.494
+        },
+        {
+          "text": "backpropagation",
+          "start": 59.594,
+          "end": 60.454
+        },
+        {
+          "text": "standard.",
+          "start": 60.554,
+          "end": 61.094
+        }
+      ]
+    },
+    {
+      "start": 61.854,
+      "end": 66.835,
+      "text": "Osservate però una particolarità: si ottiene una rete di codifica diversa per ogni sequenza,",
+      "words": [
+        {
+          "text": "Osservate",
+          "start": 61.854,
+          "end": 62.314
+        },
+        {
+          "text": "però",
+          "start": 62.354,
+          "end": 62.514
+        },
+        {
+          "text": "una",
+          "start": 62.574,
+          "end": 62.694
+        },
+        {
+          "text": "particolarità:",
+          "start": 62.754,
+          "end": 63.414
+        },
+        {
+          "text": "si",
+          "start": 63.955,
+          "end": 64.015
+        },
+        {
+          "text": "ottiene",
+          "start": 64.055,
+          "end": 64.335
+        },
+        {
+          "text": "una",
+          "start": 64.375,
+          "end": 64.495
+        },
+        {
+          "text": "rete",
+          "start": 64.535,
+          "end": 64.755
+        },
+        {
+          "text": "di",
+          "start": 64.815,
+          "end": 64.875
+        },
+        {
+          "text": "codifica",
+          "start": 64.935,
+          "end": 65.395
+        },
+        {
+          "text": "diversa",
+          "start": 65.455,
+          "end": 65.875
+        },
+        {
+          "text": "per",
+          "start": 65.935,
+          "end": 66.055
+        },
+        {
+          "text": "ogni",
+          "start": 66.095,
+          "end": 66.255
+        },
+        {
+          "text": "sequenza,",
+          "start": 66.335,
+          "end": 66.835
+        }
+      ]
+    },
+    {
+      "start": 67.235,
+      "end": 69.575,
+      "text": "con tanti strati quanti sono i passi temporali.",
+      "words": [
+        {
+          "text": "con",
+          "start": 67.235,
+          "end": 67.395
+        },
+        {
+          "text": "tanti",
+          "start": 67.455,
+          "end": 67.715
+        },
+        {
+          "text": "strati",
+          "start": 67.775,
+          "end": 68.075
+        },
+        {
+          "text": "quanti",
+          "start": 68.135,
+          "end": 68.395
+        },
+        {
+          "text": "sono",
+          "start": 68.455,
+          "end": 68.595
+        },
+        {
+          "text": "i",
+          "start": 68.635,
+          "end": 68.67500000000001
+        },
+        {
+          "text": "passi",
+          "start": 68.695,
+          "end": 68.955
+        },
+        {
+          "text": "temporali.",
+          "start": 68.995,
+          "end": 69.575
+        }
+      ]
+    },
+    {
+      "start": 70.295,
+      "end": 74.896,
+      "text": "Di fatto è una rete neurale profonda con pesi condivisi tra tutti gli strati.",
+      "words": [
+        {
+          "text": "Di",
+          "start": 70.295,
+          "end": 70.375
+        },
+        {
+          "text": "fatto",
+          "start": 70.435,
+          "end": 70.775
+        },
+        {
+          "text": "è",
+          "start": 70.955,
+          "end": 70.995
+        },
+        {
+          "text": "una",
+          "start": 71.075,
+          "end": 71.215
+        },
+        {
+          "text": "rete",
+          "start": 71.255,
+          "end": 71.475
+        },
+        {
+          "text": "neurale",
+          "start": 71.535,
+          "end": 71.995
+        },
+        {
+          "text": "profonda",
+          "start": 72.035,
+          "end": 72.515
+        },
+        {
+          "text": "con",
+          "start": 72.635,
+          "end": 72.775
+        },
+        {
+          "text": "pesi",
+          "start": 72.815,
+          "end": 73.055
+        },
+        {
+          "text": "condivisi",
+          "start": 73.095,
+          "end": 73.615
+        },
+        {
+          "text": "tra",
+          "start": 73.655,
+          "end": 73.775
+        },
+        {
+          "text": "tutti",
+          "start": 73.915,
+          "end": 74.235
+        },
+        {
+          "text": "gli",
+          "start": 74.255,
+          "end": 74.416
+        },
+        {
+          "text": "strati.",
+          "start": 74.476,
+          "end": 74.896
+        }
+      ]
+    },
+    {
+      "start": 75.696,
+      "end": 82.176,
+      "text": "Gli algoritmi storici BPTT, ovvero Back-Propagation Through Time, e RTRL,",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 75.696,
+          "end": 75.796
+        },
+        {
+          "text": "algoritmi",
+          "start": 75.816,
+          "end": 76.256
+        },
+        {
+          "text": "storici",
+          "start": 76.336,
+          "end": 76.776
+        },
+        {
+          "text": "BPTT,",
+          "start": 77.016,
+          "end": 77.776
+        },
+        {
+          "text": "ovvero",
+          "start": 78.276,
+          "end": 78.556
+        },
+        {
+          "text": "Back-Propagation",
+          "start": 78.676,
+          "end": 79.556
+        },
+        {
+          "text": "Through",
+          "start": 79.636,
+          "end": 79.836
+        },
+        {
+          "text": "Time,",
+          "start": 79.856,
+          "end": 80.236
+        },
+        {
+          "text": "e",
+          "start": 80.736,
+          "end": 80.77600000000001
+        },
+        {
+          "text": "RTRL,",
+          "start": 81.216,
+          "end": 82.176
+        }
+      ]
+    },
+    {
+      "start": 82.416,
+      "end": 89.697,
+      "text": "ovvero Real-Time Recurrent Learning, calcolano in modi computazionalmente diversi esattamente lo stesso gradiente su questa",
+      "words": [
+        {
+          "text": "ovvero",
+          "start": 82.416,
+          "end": 82.696
+        },
+        {
+          "text": "Real-Time",
+          "start": 82.896,
+          "end": 83.516
+        },
+        {
+          "text": "Recurrent",
+          "start": 83.596,
+          "end": 84.036
+        },
+        {
+          "text": "Learning,",
+          "start": 84.136,
+          "end": 84.516
+        },
+        {
+          "text": "calcolano",
+          "start": 84.956,
+          "end": 85.436
+        },
+        {
+          "text": "in",
+          "start": 85.617,
+          "end": 85.677
+        },
+        {
+          "text": "modi",
+          "start": 85.717,
+          "end": 85.937
+        },
+        {
+          "text": "computazionalmente",
+          "start": 86.017,
+          "end": 86.917
+        },
+        {
+          "text": "diversi",
+          "start": 86.957,
+          "end": 87.397
+        },
+        {
+          "text": "esattamente",
+          "start": 87.637,
+          "end": 88.237
+        },
+        {
+          "text": "lo",
+          "start": 88.277,
+          "end": 88.337
+        },
+        {
+          "text": "stesso",
+          "start": 88.377,
+          "end": 88.657
+        },
+        {
+          "text": "gradiente",
+          "start": 88.697,
+          "end": 89.177
+        },
+        {
+          "text": "su",
+          "start": 89.337,
+          "end": 89.397
+        },
+        {
+          "text": "questa",
+          "start": 89.477,
+          "end": 89.697
+        }
+      ]
+    },
+    {
+      "start": 89.757,
+      "end": 90.597,
+      "text": "rete srotolata.",
+      "words": [
+        {
+          "text": "rete",
+          "start": 89.757,
+          "end": 89.937
+        },
+        {
+          "text": "srotolata.",
+          "start": 90.017,
+          "end": 90.597
+        }
+      ]
+    }
+  ]
+}

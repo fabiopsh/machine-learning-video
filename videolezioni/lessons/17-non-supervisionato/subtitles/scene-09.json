@@ -1,0 +1,1415 @@
+{
+  "duration": 112.801,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.221,
+      "text": "Guardiamo ora l'evoluzione reale di una SOM con griglia dieci per dieci addestrata su dati",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 0.08,
+          "end": 0.46
+        },
+        {
+          "text": "ora",
+          "start": 0.54,
+          "end": 0.66
+        },
+        {
+          "text": "l'evoluzione",
+          "start": 0.72,
+          "end": 1.3
+        },
+        {
+          "text": "reale",
+          "start": 1.36,
+          "end": 1.68
+        },
+        {
+          "text": "di",
+          "start": 1.74,
+          "end": 1.78
+        },
+        {
+          "text": "una",
+          "start": 1.82,
+          "end": 1.94
+        },
+        {
+          "text": "SOM",
+          "start": 2.04,
+          "end": 2.28
+        },
+        {
+          "text": "con",
+          "start": 2.4,
+          "end": 2.54
+        },
+        {
+          "text": "griglia",
+          "start": 2.58,
+          "end": 2.88
+        },
+        {
+          "text": "dieci",
+          "start": 2.96,
+          "end": 3.2
+        },
+        {
+          "text": "per",
+          "start": 3.28,
+          "end": 3.4
+        },
+        {
+          "text": "dieci",
+          "start": 3.46,
+          "end": 3.82
+        },
+        {
+          "text": "addestrata",
+          "start": 4.2,
+          "end": 4.7
+        },
+        {
+          "text": "su",
+          "start": 4.78,
+          "end": 4.86
+        },
+        {
+          "text": "dati",
+          "start": 4.961,
+          "end": 5.221
+        }
+      ]
+    },
+    {
+      "start": 5.281,
+      "end": 8.161,
+      "text": "distribuiti uniformemente nel quadrato unitario.",
+      "words": [
+        {
+          "text": "distribuiti",
+          "start": 5.281,
+          "end": 5.921
+        },
+        {
+          "text": "uniformemente",
+          "start": 6.021,
+          "end": 6.861
+        },
+        {
+          "text": "nel",
+          "start": 7.001,
+          "end": 7.141
+        },
+        {
+          "text": "quadrato",
+          "start": 7.181,
+          "end": 7.621
+        },
+        {
+          "text": "unitario.",
+          "start": 7.661,
+          "end": 8.161
+        }
+      ]
+    },
+    {
+      "start": 8.881,
+      "end": 13.641,
+      "text": "Ogni vertice disegnato è il vettore dei pesi w con i nello spazio bidimensionale,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 8.881,
+          "end": 9.061
+        },
+        {
+          "text": "vertice",
+          "start": 9.101,
+          "end": 9.481
+        },
+        {
+          "text": "disegnato",
+          "start": 9.541,
+          "end": 10.081
+        },
+        {
+          "text": "è",
+          "start": 10.241,
+          "end": 10.281
+        },
+        {
+          "text": "il",
+          "start": 10.341,
+          "end": 10.421
+        },
+        {
+          "text": "vettore",
+          "start": 10.461,
+          "end": 10.841
+        },
+        {
+          "text": "dei",
+          "start": 10.881,
+          "end": 11.001
+        },
+        {
+          "text": "pesi",
+          "start": 11.041,
+          "end": 11.321
+        },
+        {
+          "text": "w",
+          "start": 11.381,
+          "end": 11.421
+        },
+        {
+          "text": "con",
+          "start": 11.581,
+          "end": 11.741
+        },
+        {
+          "text": "i",
+          "start": 11.801,
+          "end": 11.841
+        },
+        {
+          "text": "nello",
+          "start": 12.201,
+          "end": 12.381
+        },
+        {
+          "text": "spazio",
+          "start": 12.421,
+          "end": 12.781
+        },
+        {
+          "text": "bidimensionale,",
+          "start": 12.821,
+          "end": 13.641
+        }
+      ]
+    },
+    {
+      "start": 13.981,
+      "end": 16.182,
+      "text": "collegato ai suoi quattro vicini sulla griglia.",
+      "words": [
+        {
+          "text": "collegato",
+          "start": 13.981,
+          "end": 14.481
+        },
+        {
+          "text": "ai",
+          "start": 14.541,
+          "end": 14.621
+        },
+        {
+          "text": "suoi",
+          "start": 14.681,
+          "end": 14.841
+        },
+        {
+          "text": "quattro",
+          "start": 14.881,
+          "end": 15.182
+        },
+        {
+          "text": "vicini",
+          "start": 15.222,
+          "end": 15.542
+        },
+        {
+          "text": "sulla",
+          "start": 15.582,
+          "end": 15.782
+        },
+        {
+          "text": "griglia.",
+          "start": 15.822,
+          "end": 16.182
+        }
+      ]
+    },
+    {
+      "start": 17.062,
+      "end": 22.382,
+      "text": "All'istante t uguale a zero i cento vettori di peso partono tutti aggrovigliati vicino al",
+      "words": [
+        {
+          "text": "All'istante",
+          "start": 17.062,
+          "end": 17.622
+        },
+        {
+          "text": "t",
+          "start": 17.802,
+          "end": 17.842
+        },
+        {
+          "text": "uguale",
+          "start": 17.982,
+          "end": 18.322
+        },
+        {
+          "text": "a",
+          "start": 18.362,
+          "end": 18.402
+        },
+        {
+          "text": "zero",
+          "start": 18.502,
+          "end": 18.842
+        },
+        {
+          "text": "i",
+          "start": 19.342,
+          "end": 19.382
+        },
+        {
+          "text": "cento",
+          "start": 19.422,
+          "end": 19.722
+        },
+        {
+          "text": "vettori",
+          "start": 19.762,
+          "end": 20.102
+        },
+        {
+          "text": "di",
+          "start": 20.162,
+          "end": 20.222
+        },
+        {
+          "text": "peso",
+          "start": 20.262,
+          "end": 20.502
+        },
+        {
+          "text": "partono",
+          "start": 20.602,
+          "end": 20.962
+        },
+        {
+          "text": "tutti",
+          "start": 21.082,
+          "end": 21.302
+        },
+        {
+          "text": "aggrovigliati",
+          "start": 21.342,
+          "end": 21.962
+        },
+        {
+          "text": "vicino",
+          "start": 22.002,
+          "end": 22.282
+        },
+        {
+          "text": "al",
+          "start": 22.322,
+          "end": 22.382
+        }
+      ]
+    },
+    {
+      "start": 22.422,
+      "end": 25.643,
+      "text": "centro del quadrato, frutto dell'inizializzazione casuale.",
+      "words": [
+        {
+          "text": "centro",
+          "start": 22.422,
+          "end": 22.722
+        },
+        {
+          "text": "del",
+          "start": 22.762,
+          "end": 22.882
+        },
+        {
+          "text": "quadrato,",
+          "start": 22.922,
+          "end": 23.402
+        },
+        {
+          "text": "frutto",
+          "start": 23.782,
+          "end": 24.082
+        },
+        {
+          "text": "dell'inizializzazione",
+          "start": 24.142,
+          "end": 25.122
+        },
+        {
+          "text": "casuale.",
+          "start": 25.182,
+          "end": 25.643
+        }
+      ]
+    },
+    {
+      "start": 26.343,
+      "end": 31.983,
+      "text": "Nelle prime iterazioni — a t uguale venti, cento e mille — il raggio di",
+      "words": [
+        {
+          "text": "Nelle",
+          "start": 26.343,
+          "end": 26.583
+        },
+        {
+          "text": "prime",
+          "start": 26.623,
+          "end": 26.843
+        },
+        {
+          "text": "iterazioni",
+          "start": 26.883,
+          "end": 27.563
+        },
+        {
+          "text": "—",
+          "start": 27.563,
+          "end": 27.713
+        },
+        {
+          "text": "a",
+          "start": 28.063,
+          "end": 28.103
+        },
+        {
+          "text": "t",
+          "start": 28.263,
+          "end": 28.303
+        },
+        {
+          "text": "uguale",
+          "start": 28.623,
+          "end": 29.003
+        },
+        {
+          "text": "venti,",
+          "start": 29.103,
+          "end": 29.523
+        },
+        {
+          "text": "cento",
+          "start": 29.803,
+          "end": 30.283
+        },
+        {
+          "text": "e",
+          "start": 30.563,
+          "end": 30.603
+        },
+        {
+          "text": "mille",
+          "start": 30.723,
+          "end": 31.083
+        },
+        {
+          "text": "—",
+          "start": 31.083,
+          "end": 31.233
+        },
+        {
+          "text": "il",
+          "start": 31.503,
+          "end": 31.603
+        },
+        {
+          "text": "raggio",
+          "start": 31.643,
+          "end": 31.883
+        },
+        {
+          "text": "di",
+          "start": 31.923,
+          "end": 31.983
+        }
+      ]
+    },
+    {
+      "start": 32.023,
+      "end": 33.263,
+      "text": "vicinato è ancora ampio:",
+      "words": [
+        {
+          "text": "vicinato",
+          "start": 32.023,
+          "end": 32.423
+        },
+        {
+          "text": "è",
+          "start": 32.483,
+          "end": 32.523
+        },
+        {
+          "text": "ancora",
+          "start": 32.583,
+          "end": 32.863
+        },
+        {
+          "text": "ampio:",
+          "start": 32.963,
+          "end": 33.263
+        }
+      ]
+    },
+    {
+      "start": 33.983,
+      "end": 39.624,
+      "text": "la rete si srotola, elimina gli incroci topologici e inizia a espandersi verso i bordi,",
+      "words": [
+        {
+          "text": "la",
+          "start": 33.983,
+          "end": 34.043
+        },
+        {
+          "text": "rete",
+          "start": 34.103,
+          "end": 34.363
+        },
+        {
+          "text": "si",
+          "start": 34.443,
+          "end": 34.523
+        },
+        {
+          "text": "srotola,",
+          "start": 34.623,
+          "end": 35.183
+        },
+        {
+          "text": "elimina",
+          "start": 35.663,
+          "end": 36.104
+        },
+        {
+          "text": "gli",
+          "start": 36.144,
+          "end": 36.264
+        },
+        {
+          "text": "incroci",
+          "start": 36.304,
+          "end": 36.724
+        },
+        {
+          "text": "topologici",
+          "start": 36.784,
+          "end": 37.504
+        },
+        {
+          "text": "e",
+          "start": 37.684,
+          "end": 37.724
+        },
+        {
+          "text": "inizia",
+          "start": 37.784,
+          "end": 38.124
+        },
+        {
+          "text": "a",
+          "start": 38.144,
+          "end": 38.184
+        },
+        {
+          "text": "espandersi",
+          "start": 38.224,
+          "end": 38.864
+        },
+        {
+          "text": "verso",
+          "start": 38.904,
+          "end": 39.164
+        },
+        {
+          "text": "i",
+          "start": 39.204,
+          "end": 39.244
+        },
+        {
+          "text": "bordi,",
+          "start": 39.284,
+          "end": 39.624
+        }
+      ]
+    },
+    {
+      "start": 40.064,
+      "end": 42.124,
+      "text": "organizzando l'ordine globale della mappa.",
+      "words": [
+        {
+          "text": "organizzando",
+          "start": 40.064,
+          "end": 40.684
+        },
+        {
+          "text": "l'ordine",
+          "start": 40.784,
+          "end": 41.164
+        },
+        {
+          "text": "globale",
+          "start": 41.224,
+          "end": 41.584
+        },
+        {
+          "text": "della",
+          "start": 41.604,
+          "end": 41.764
+        },
+        {
+          "text": "mappa.",
+          "start": 41.804,
+          "end": 42.124
+        }
+      ]
+    },
+    {
+      "start": 43.064,
+      "end": 48.765,
+      "text": "Tra t uguale cinquemila e t uguale ventimila, quando il raggio sigma e il learning",
+      "words": [
+        {
+          "text": "Tra",
+          "start": 43.064,
+          "end": 43.204
+        },
+        {
+          "text": "t",
+          "start": 43.324,
+          "end": 43.364
+        },
+        {
+          "text": "uguale",
+          "start": 43.524,
+          "end": 43.844
+        },
+        {
+          "text": "cinquemila",
+          "start": 43.944,
+          "end": 44.624
+        },
+        {
+          "text": "e",
+          "start": 44.984,
+          "end": 45.024
+        },
+        {
+          "text": "t",
+          "start": 45.164,
+          "end": 45.204
+        },
+        {
+          "text": "uguale",
+          "start": 45.364,
+          "end": 45.684
+        },
+        {
+          "text": "ventimila,",
+          "start": 45.784,
+          "end": 46.425
+        },
+        {
+          "text": "quando",
+          "start": 46.865,
+          "end": 47.105
+        },
+        {
+          "text": "il",
+          "start": 47.145,
+          "end": 47.205
+        },
+        {
+          "text": "raggio",
+          "start": 47.245,
+          "end": 47.485
+        },
+        {
+          "text": "sigma",
+          "start": 47.585,
+          "end": 47.985
+        },
+        {
+          "text": "e",
+          "start": 48.245,
+          "end": 48.285
+        },
+        {
+          "text": "il",
+          "start": 48.325,
+          "end": 48.385
+        },
+        {
+          "text": "learning",
+          "start": 48.425,
+          "end": 48.765
+        }
+      ]
+    },
+    {
+      "start": 48.845,
+      "end": 54.805,
+      "text": "rate si restringono, i pesi si distribuiscono in modo regolare e uniforme sull'intero quadrato,",
+      "words": [
+        {
+          "text": "rate",
+          "start": 48.845,
+          "end": 49.165
+        },
+        {
+          "text": "si",
+          "start": 49.245,
+          "end": 49.325
+        },
+        {
+          "text": "restringono,",
+          "start": 49.385,
+          "end": 50.025
+        },
+        {
+          "text": "i",
+          "start": 50.585,
+          "end": 50.625
+        },
+        {
+          "text": "pesi",
+          "start": 50.685,
+          "end": 50.965
+        },
+        {
+          "text": "si",
+          "start": 51.005,
+          "end": 51.085
+        },
+        {
+          "text": "distribuiscono",
+          "start": 51.145,
+          "end": 51.845
+        },
+        {
+          "text": "in",
+          "start": 51.905,
+          "end": 51.965
+        },
+        {
+          "text": "modo",
+          "start": 52.025,
+          "end": 52.245
+        },
+        {
+          "text": "regolare",
+          "start": 52.365,
+          "end": 52.905
+        },
+        {
+          "text": "e",
+          "start": 53.045,
+          "end": 53.085
+        },
+        {
+          "text": "uniforme",
+          "start": 53.165,
+          "end": 53.665
+        },
+        {
+          "text": "sull'intero",
+          "start": 53.725,
+          "end": 54.285
+        },
+        {
+          "text": "quadrato,",
+          "start": 54.325,
+          "end": 54.805
+        }
+      ]
+    },
+    {
+      "start": 55.305,
+      "end": 58.026,
+      "text": "riproducendo fedelmente la densità dei dati.",
+      "words": [
+        {
+          "text": "riproducendo",
+          "start": 55.305,
+          "end": 55.985
+        },
+        {
+          "text": "fedelmente",
+          "start": 56.106,
+          "end": 56.826
+        },
+        {
+          "text": "la",
+          "start": 56.866,
+          "end": 56.946
+        },
+        {
+          "text": "densità",
+          "start": 57.026,
+          "end": 57.446
+        },
+        {
+          "text": "dei",
+          "start": 57.546,
+          "end": 57.686
+        },
+        {
+          "text": "dati.",
+          "start": 57.706,
+          "end": 58.026
+        }
+      ]
+    },
+    {
+      "start": 58.926,
+      "end": 62.606,
+      "text": "Riassumiamo allora le quattro differenze chiave tra K-means e SOM.",
+      "words": [
+        {
+          "text": "Riassumiamo",
+          "start": 58.926,
+          "end": 59.446
+        },
+        {
+          "text": "allora",
+          "start": 59.486,
+          "end": 59.726
+        },
+        {
+          "text": "le",
+          "start": 59.786,
+          "end": 59.846
+        },
+        {
+          "text": "quattro",
+          "start": 59.886,
+          "end": 60.186
+        },
+        {
+          "text": "differenze",
+          "start": 60.226,
+          "end": 60.706
+        },
+        {
+          "text": "chiave",
+          "start": 60.766,
+          "end": 61.026
+        },
+        {
+          "text": "tra",
+          "start": 61.106,
+          "end": 61.206
+        },
+        {
+          "text": "K-means",
+          "start": 61.326,
+          "end": 61.926
+        },
+        {
+          "text": "e",
+          "start": 62.166,
+          "end": 62.206
+        },
+        {
+          "text": "SOM.",
+          "start": 62.326,
+          "end": 62.606
+        }
+      ]
+    },
+    {
+      "start": 63.666,
+      "end": 70.787,
+      "text": "Primo, sull'aggiornamento: il K-means modifica solo il vincitore; la SOM aggiorna il vincitore e i",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 63.666,
+          "end": 63.946
+        },
+        {
+          "text": "sull'aggiornamento:",
+          "start": 64.246,
+          "end": 65.126
+        },
+        {
+          "text": "il",
+          "start": 65.646,
+          "end": 65.726
+        },
+        {
+          "text": "K-means",
+          "start": 65.786,
+          "end": 66.306
+        },
+        {
+          "text": "modifica",
+          "start": 66.547,
+          "end": 66.987
+        },
+        {
+          "text": "solo",
+          "start": 67.127,
+          "end": 67.327
+        },
+        {
+          "text": "il",
+          "start": 67.367,
+          "end": 67.427
+        },
+        {
+          "text": "vincitore;",
+          "start": 67.447,
+          "end": 68.007
+        },
+        {
+          "text": "la",
+          "start": 68.527,
+          "end": 68.607
+        },
+        {
+          "text": "SOM",
+          "start": 68.667,
+          "end": 68.927
+        },
+        {
+          "text": "aggiorna",
+          "start": 69.327,
+          "end": 69.687
+        },
+        {
+          "text": "il",
+          "start": 69.747,
+          "end": 69.827
+        },
+        {
+          "text": "vincitore",
+          "start": 69.867,
+          "end": 70.487
+        },
+        {
+          "text": "e",
+          "start": 70.647,
+          "end": 70.68700000000001
+        },
+        {
+          "text": "i",
+          "start": 70.747,
+          "end": 70.787
+        }
+      ]
+    },
+    {
+      "start": 70.827,
+      "end": 74.047,
+      "text": "suoi vicini sulla griglia con un vicinato che si restringe.",
+      "words": [
+        {
+          "text": "suoi",
+          "start": 70.827,
+          "end": 71.027
+        },
+        {
+          "text": "vicini",
+          "start": 71.087,
+          "end": 71.467
+        },
+        {
+          "text": "sulla",
+          "start": 71.527,
+          "end": 71.747
+        },
+        {
+          "text": "griglia",
+          "start": 71.807,
+          "end": 72.167
+        },
+        {
+          "text": "con",
+          "start": 72.487,
+          "end": 72.607
+        },
+        {
+          "text": "un",
+          "start": 72.647,
+          "end": 72.727
+        },
+        {
+          "text": "vicinato",
+          "start": 72.767,
+          "end": 73.227
+        },
+        {
+          "text": "che",
+          "start": 73.267,
+          "end": 73.347
+        },
+        {
+          "text": "si",
+          "start": 73.387,
+          "end": 73.467
+        },
+        {
+          "text": "restringe.",
+          "start": 73.527,
+          "end": 74.047
+        }
+      ]
+    },
+    {
+      "start": 75.007,
+      "end": 79.768,
+      "text": "Secondo, sull'ordine: nel K-means i prototipi non hanno alcun ordine;",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 75.007,
+          "end": 75.447
+        },
+        {
+          "text": "sull'ordine:",
+          "start": 75.727,
+          "end": 76.347
+        },
+        {
+          "text": "nel",
+          "start": 77.068,
+          "end": 77.208
+        },
+        {
+          "text": "K-means",
+          "start": 77.248,
+          "end": 77.828
+        },
+        {
+          "text": "i",
+          "start": 78.048,
+          "end": 78.08800000000001
+        },
+        {
+          "text": "prototipi",
+          "start": 78.128,
+          "end": 78.628
+        },
+        {
+          "text": "non",
+          "start": 78.768,
+          "end": 78.888
+        },
+        {
+          "text": "hanno",
+          "start": 78.908,
+          "end": 79.088
+        },
+        {
+          "text": "alcun",
+          "start": 79.128,
+          "end": 79.368
+        },
+        {
+          "text": "ordine;",
+          "start": 79.428,
+          "end": 79.768
+        }
+      ]
+    },
+    {
+      "start": 80.268,
+      "end": 84.068,
+      "text": "nella SOM stanno su una mappa ordinata che preserva la topologia.",
+      "words": [
+        {
+          "text": "nella",
+          "start": 80.268,
+          "end": 80.488
+        },
+        {
+          "text": "SOM",
+          "start": 80.568,
+          "end": 80.808
+        },
+        {
+          "text": "stanno",
+          "start": 81.068,
+          "end": 81.328
+        },
+        {
+          "text": "su",
+          "start": 81.408,
+          "end": 81.488
+        },
+        {
+          "text": "una",
+          "start": 81.528,
+          "end": 81.648
+        },
+        {
+          "text": "mappa",
+          "start": 81.728,
+          "end": 81.968
+        },
+        {
+          "text": "ordinata",
+          "start": 82.028,
+          "end": 82.548
+        },
+        {
+          "text": "che",
+          "start": 82.608,
+          "end": 82.708
+        },
+        {
+          "text": "preserva",
+          "start": 82.768,
+          "end": 83.208
+        },
+        {
+          "text": "la",
+          "start": 83.288,
+          "end": 83.368
+        },
+        {
+          "text": "topologia.",
+          "start": 83.428,
+          "end": 84.068
+        }
+      ]
+    },
+    {
+      "start": 85.188,
+      "end": 89.409,
+      "text": "Terzo, sulla visualizzazione: il K-means non visualizza i dati;",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 85.188,
+          "end": 85.548
+        },
+        {
+          "text": "sulla",
+          "start": 85.688,
+          "end": 85.908
+        },
+        {
+          "text": "visualizzazione:",
+          "start": 85.968,
+          "end": 86.869
+        },
+        {
+          "text": "il",
+          "start": 87.509,
+          "end": 87.589
+        },
+        {
+          "text": "K-means",
+          "start": 87.649,
+          "end": 88.149
+        },
+        {
+          "text": "non",
+          "start": 88.349,
+          "end": 88.469
+        },
+        {
+          "text": "visualizza",
+          "start": 88.509,
+          "end": 88.989
+        },
+        {
+          "text": "i",
+          "start": 89.049,
+          "end": 89.08900000000001
+        },
+        {
+          "text": "dati;",
+          "start": 89.089,
+          "end": 89.409
+        }
+      ]
+    },
+    {
+      "start": 89.869,
+      "end": 93.529,
+      "text": "la SOM fornisce una visualizzazione bidimensionale diretta.",
+      "words": [
+        {
+          "text": "la",
+          "start": 89.869,
+          "end": 89.929
+        },
+        {
+          "text": "SOM",
+          "start": 90.009,
+          "end": 90.249
+        },
+        {
+          "text": "fornisce",
+          "start": 90.489,
+          "end": 90.969
+        },
+        {
+          "text": "una",
+          "start": 91.069,
+          "end": 91.209
+        },
+        {
+          "text": "visualizzazione",
+          "start": 91.289,
+          "end": 92.129
+        },
+        {
+          "text": "bidimensionale",
+          "start": 92.229,
+          "end": 93.029
+        },
+        {
+          "text": "diretta.",
+          "start": 93.089,
+          "end": 93.529
+        }
+      ]
+    },
+    {
+      "start": 94.529,
+      "end": 96.229,
+      "text": "Quarto, sui minimi locali:",
+      "words": [
+        {
+          "text": "Quarto,",
+          "start": 94.529,
+          "end": 94.929
+        },
+        {
+          "text": "sui",
+          "start": 95.149,
+          "end": 95.349
+        },
+        {
+          "text": "minimi",
+          "start": 95.389,
+          "end": 95.709
+        },
+        {
+          "text": "locali:",
+          "start": 95.769,
+          "end": 96.229
+        }
+      ]
+    },
+    {
+      "start": 96.849,
+      "end": 102.75,
+      "text": "il K-means ne è fortemente sensibile, mentre nella SOM il vicinato ampio iniziale aiuta a",
+      "words": [
+        {
+          "text": "il",
+          "start": 96.849,
+          "end": 96.949
+        },
+        {
+          "text": "K-means",
+          "start": 96.989,
+          "end": 97.51
+        },
+        {
+          "text": "ne",
+          "start": 97.71,
+          "end": 97.77
+        },
+        {
+          "text": "è",
+          "start": 97.81,
+          "end": 97.85000000000001
+        },
+        {
+          "text": "fortemente",
+          "start": 97.91,
+          "end": 98.45
+        },
+        {
+          "text": "sensibile,",
+          "start": 98.51,
+          "end": 99.11
+        },
+        {
+          "text": "mentre",
+          "start": 99.49,
+          "end": 99.77
+        },
+        {
+          "text": "nella",
+          "start": 99.83,
+          "end": 99.99
+        },
+        {
+          "text": "SOM",
+          "start": 100.05,
+          "end": 100.29
+        },
+        {
+          "text": "il",
+          "start": 100.69,
+          "end": 100.77
+        },
+        {
+          "text": "vicinato",
+          "start": 100.83,
+          "end": 101.31
+        },
+        {
+          "text": "ampio",
+          "start": 101.39,
+          "end": 101.65
+        },
+        {
+          "text": "iniziale",
+          "start": 101.69,
+          "end": 102.21
+        },
+        {
+          "text": "aiuta",
+          "start": 102.39,
+          "end": 102.69
+        },
+        {
+          "text": "a",
+          "start": 102.71,
+          "end": 102.75
+        }
+      ]
+    },
+    {
+      "start": 102.77,
+      "end": 103.29,
+      "text": "evitarli.",
+      "words": [
+        {
+          "text": "evitarli.",
+          "start": 102.77,
+          "end": 103.29
+        }
+      ]
+    },
+    {
+      "start": 104.23,
+      "end": 106.09,
+      "text": "E fissiamo questo legame unificante:",
+      "words": [
+        {
+          "text": "E",
+          "start": 104.23,
+          "end": 104.27000000000001
+        },
+        {
+          "text": "fissiamo",
+          "start": 104.35,
+          "end": 104.73
+        },
+        {
+          "text": "questo",
+          "start": 104.83,
+          "end": 105.13
+        },
+        {
+          "text": "legame",
+          "start": 105.15,
+          "end": 105.41
+        },
+        {
+          "text": "unificante:",
+          "start": 105.45,
+          "end": 106.09
+        }
+      ]
+    },
+    {
+      "start": 106.75,
+      "end": 112.551,
+      "text": "quando il vicinato ha raggio zero, la SOM si riduce esattamente al K-means on-line.",
+      "words": [
+        {
+          "text": "quando",
+          "start": 106.75,
+          "end": 106.99
+        },
+        {
+          "text": "il",
+          "start": 107.03,
+          "end": 107.09
+        },
+        {
+          "text": "vicinato",
+          "start": 107.13,
+          "end": 107.591
+        },
+        {
+          "text": "ha",
+          "start": 107.611,
+          "end": 107.65100000000001
+        },
+        {
+          "text": "raggio",
+          "start": 107.731,
+          "end": 108.011
+        },
+        {
+          "text": "zero,",
+          "start": 108.151,
+          "end": 108.471
+        },
+        {
+          "text": "la",
+          "start": 109.011,
+          "end": 109.091
+        },
+        {
+          "text": "SOM",
+          "start": 109.171,
+          "end": 109.411
+        },
+        {
+          "text": "si",
+          "start": 109.691,
+          "end": 109.771
+        },
+        {
+          "text": "riduce",
+          "start": 109.831,
+          "end": 110.171
+        },
+        {
+          "text": "esattamente",
+          "start": 110.231,
+          "end": 110.971
+        },
+        {
+          "text": "al",
+          "start": 111.131,
+          "end": 111.231
+        },
+        {
+          "text": "K-means",
+          "start": 111.311,
+          "end": 111.871
+        },
+        {
+          "text": "on-line.",
+          "start": 112.091,
+          "end": 112.551
+        }
+      ]
+    }
+  ]
+}

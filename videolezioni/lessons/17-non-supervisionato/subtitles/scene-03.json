@@ -1,0 +1,1196 @@
+{
+  "duration": 79.251,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.861,
+      "text": "Formalizziamo ora la loss della quantizzazione vettoriale: l'errore di quantizzazione.",
+      "words": [
+        {
+          "text": "Formalizziamo",
+          "start": 0.08,
+          "end": 0.74
+        },
+        {
+          "text": "ora",
+          "start": 0.84,
+          "end": 1.0
+        },
+        {
+          "text": "la",
+          "start": 1.06,
+          "end": 1.12
+        },
+        {
+          "text": "loss",
+          "start": 1.2,
+          "end": 1.5
+        },
+        {
+          "text": "della",
+          "start": 1.72,
+          "end": 1.88
+        },
+        {
+          "text": "quantizzazione",
+          "start": 1.94,
+          "end": 2.56
+        },
+        {
+          "text": "vettoriale:",
+          "start": 2.6,
+          "end": 3.16
+        },
+        {
+          "text": "l'errore",
+          "start": 3.54,
+          "end": 3.94
+        },
+        {
+          "text": "di",
+          "start": 3.98,
+          "end": 4.04
+        },
+        {
+          "text": "quantizzazione.",
+          "start": 4.08,
+          "end": 4.861
+        }
+      ]
+    },
+    {
+      "start": 5.601,
+      "end": 11.141,
+      "text": "Vogliamo partizionare in modo ottimo una distribuzione sconosciuta con un quantizzatore che mappa ogni x",
+      "words": [
+        {
+          "text": "Vogliamo",
+          "start": 5.601,
+          "end": 5.941
+        },
+        {
+          "text": "partizionare",
+          "start": 6.001,
+          "end": 6.641
+        },
+        {
+          "text": "in",
+          "start": 6.681,
+          "end": 6.741
+        },
+        {
+          "text": "modo",
+          "start": 6.781,
+          "end": 7.001
+        },
+        {
+          "text": "ottimo",
+          "start": 7.181,
+          "end": 7.661
+        },
+        {
+          "text": "una",
+          "start": 7.761,
+          "end": 7.901
+        },
+        {
+          "text": "distribuzione",
+          "start": 7.961,
+          "end": 8.581
+        },
+        {
+          "text": "sconosciuta",
+          "start": 8.621,
+          "end": 9.161
+        },
+        {
+          "text": "con",
+          "start": 9.201,
+          "end": 9.321
+        },
+        {
+          "text": "un",
+          "start": 9.361,
+          "end": 9.421
+        },
+        {
+          "text": "quantizzatore",
+          "start": 9.441,
+          "end": 10.141
+        },
+        {
+          "text": "che",
+          "start": 10.201,
+          "end": 10.281
+        },
+        {
+          "text": "mappa",
+          "start": 10.341,
+          "end": 10.581
+        },
+        {
+          "text": "ogni",
+          "start": 10.701,
+          "end": 10.941
+        },
+        {
+          "text": "x",
+          "start": 11.101,
+          "end": 11.141
+        }
+      ]
+    },
+    {
+      "start": 11.321,
+      "end": 16.562,
+      "text": "continuo al prototipo discreto c di x uguale a w con i asterisco di x.",
+      "words": [
+        {
+          "text": "continuo",
+          "start": 11.321,
+          "end": 11.861
+        },
+        {
+          "text": "al",
+          "start": 12.221,
+          "end": 12.341
+        },
+        {
+          "text": "prototipo",
+          "start": 12.401,
+          "end": 12.881
+        },
+        {
+          "text": "discreto",
+          "start": 12.941,
+          "end": 13.421
+        },
+        {
+          "text": "c",
+          "start": 13.541,
+          "end": 13.581
+        },
+        {
+          "text": "di",
+          "start": 13.761,
+          "end": 13.941
+        },
+        {
+          "text": "x",
+          "start": 14.041,
+          "end": 14.081
+        },
+        {
+          "text": "uguale",
+          "start": 14.401,
+          "end": 14.802
+        },
+        {
+          "text": "a",
+          "start": 14.842,
+          "end": 14.882
+        },
+        {
+          "text": "w",
+          "start": 15.082,
+          "end": 15.122
+        },
+        {
+          "text": "con",
+          "start": 15.262,
+          "end": 15.462
+        },
+        {
+          "text": "i",
+          "start": 15.502,
+          "end": 15.542
+        },
+        {
+          "text": "asterisco",
+          "start": 15.722,
+          "end": 16.242
+        },
+        {
+          "text": "di",
+          "start": 16.302,
+          "end": 16.442
+        },
+        {
+          "text": "x.",
+          "start": 16.522,
+          "end": 16.562
+        }
+      ]
+    },
+    {
+      "start": 17.502,
+      "end": 21.202,
+      "text": "Usando la distorsione quadratica norma quadra di x meno c di x,",
+      "words": [
+        {
+          "text": "Usando",
+          "start": 17.502,
+          "end": 17.822
+        },
+        {
+          "text": "la",
+          "start": 17.862,
+          "end": 17.922
+        },
+        {
+          "text": "distorsione",
+          "start": 17.962,
+          "end": 18.462
+        },
+        {
+          "text": "quadratica",
+          "start": 18.502,
+          "end": 19.002
+        },
+        {
+          "text": "norma",
+          "start": 19.162,
+          "end": 19.442
+        },
+        {
+          "text": "quadra",
+          "start": 19.502,
+          "end": 19.882
+        },
+        {
+          "text": "di",
+          "start": 19.982,
+          "end": 20.062
+        },
+        {
+          "text": "x",
+          "start": 20.282,
+          "end": 20.322
+        },
+        {
+          "text": "meno",
+          "start": 20.522,
+          "end": 20.702
+        },
+        {
+          "text": "c",
+          "start": 20.762,
+          "end": 20.802
+        },
+        {
+          "text": "di",
+          "start": 20.902,
+          "end": 21.082
+        },
+        {
+          "text": "x,",
+          "start": 21.162,
+          "end": 21.202
+        }
+      ]
+    },
+    {
+      "start": 21.682,
+      "end": 25.223,
+      "text": "la loss è la distorsione attesa, o errore di ricostruzione:",
+      "words": [
+        {
+          "text": "la",
+          "start": 21.682,
+          "end": 21.742
+        },
+        {
+          "text": "loss",
+          "start": 21.802,
+          "end": 22.042
+        },
+        {
+          "text": "è",
+          "start": 22.202,
+          "end": 22.242
+        },
+        {
+          "text": "la",
+          "start": 22.302,
+          "end": 22.362
+        },
+        {
+          "text": "distorsione",
+          "start": 22.402,
+          "end": 22.902
+        },
+        {
+          "text": "attesa,",
+          "start": 22.922,
+          "end": 23.282
+        },
+        {
+          "text": "o",
+          "start": 23.742,
+          "end": 23.782
+        },
+        {
+          "text": "errore",
+          "start": 23.942,
+          "end": 24.282
+        },
+        {
+          "text": "di",
+          "start": 24.342,
+          "end": 24.403
+        },
+        {
+          "text": "ricostruzione:",
+          "start": 24.443,
+          "end": 25.223
+        }
+      ]
+    },
+    {
+      "start": 25.723,
+      "end": 30.723,
+      "text": "E uguale all'integrale della norma quadra di x meno w con i asterisco di x",
+      "words": [
+        {
+          "text": "E",
+          "start": 25.723,
+          "end": 25.763
+        },
+        {
+          "text": "uguale",
+          "start": 26.323,
+          "end": 26.623
+        },
+        {
+          "text": "all'integrale",
+          "start": 26.663,
+          "end": 27.323
+        },
+        {
+          "text": "della",
+          "start": 27.363,
+          "end": 27.523
+        },
+        {
+          "text": "norma",
+          "start": 27.603,
+          "end": 27.843
+        },
+        {
+          "text": "quadra",
+          "start": 27.923,
+          "end": 28.323
+        },
+        {
+          "text": "di",
+          "start": 28.403,
+          "end": 28.483
+        },
+        {
+          "text": "x",
+          "start": 28.683,
+          "end": 28.723
+        },
+        {
+          "text": "meno",
+          "start": 29.023,
+          "end": 29.223
+        },
+        {
+          "text": "w",
+          "start": 29.323,
+          "end": 29.363
+        },
+        {
+          "text": "con",
+          "start": 29.523,
+          "end": 29.703
+        },
+        {
+          "text": "i",
+          "start": 29.763,
+          "end": 29.803
+        },
+        {
+          "text": "asterisco",
+          "start": 29.903,
+          "end": 30.383
+        },
+        {
+          "text": "di",
+          "start": 30.423,
+          "end": 30.483
+        },
+        {
+          "text": "x",
+          "start": 30.683,
+          "end": 30.723
+        }
+      ]
+    },
+    {
+      "start": 31.163,
+      "end": 33.423,
+      "text": "per la densità p di x in d x.",
+      "words": [
+        {
+          "text": "per",
+          "start": 31.163,
+          "end": 31.303
+        },
+        {
+          "text": "la",
+          "start": 31.363,
+          "end": 31.423
+        },
+        {
+          "text": "densità",
+          "start": 31.463,
+          "end": 31.883
+        },
+        {
+          "text": "p",
+          "start": 32.123,
+          "end": 32.163
+        },
+        {
+          "text": "di",
+          "start": 32.283,
+          "end": 32.483
+        },
+        {
+          "text": "x",
+          "start": 32.543,
+          "end": 32.583
+        },
+        {
+          "text": "in",
+          "start": 32.983,
+          "end": 33.063
+        },
+        {
+          "text": "d",
+          "start": 33.123,
+          "end": 33.163
+        },
+        {
+          "text": "x.",
+          "start": 33.383,
+          "end": 33.423
+        }
+      ]
+    },
+    {
+      "start": 34.544,
+      "end": 38.684,
+      "text": "Su un dataset finito di l esempi e K prototipi passiamo alla versione discreta:",
+      "words": [
+        {
+          "text": "Su",
+          "start": 34.544,
+          "end": 34.604
+        },
+        {
+          "text": "un",
+          "start": 34.664,
+          "end": 34.724
+        },
+        {
+          "text": "dataset",
+          "start": 34.744,
+          "end": 35.144
+        },
+        {
+          "text": "finito",
+          "start": 35.224,
+          "end": 35.504
+        },
+        {
+          "text": "di",
+          "start": 35.544,
+          "end": 35.604
+        },
+        {
+          "text": "l",
+          "start": 35.744,
+          "end": 35.784
+        },
+        {
+          "text": "esempi",
+          "start": 35.844,
+          "end": 36.204
+        },
+        {
+          "text": "e",
+          "start": 36.264,
+          "end": 36.304
+        },
+        {
+          "text": "K",
+          "start": 36.344,
+          "end": 36.384
+        },
+        {
+          "text": "prototipi",
+          "start": 36.604,
+          "end": 37.124
+        },
+        {
+          "text": "passiamo",
+          "start": 37.284,
+          "end": 37.684
+        },
+        {
+          "text": "alla",
+          "start": 37.704,
+          "end": 37.824
+        },
+        {
+          "text": "versione",
+          "start": 37.844,
+          "end": 38.164
+        },
+        {
+          "text": "discreta:",
+          "start": 38.204,
+          "end": 38.684
+        }
+      ]
+    },
+    {
+      "start": 39.084,
+      "end": 42.204,
+      "text": "E è la somma per i da uno a l e j da uno a",
+      "words": [
+        {
+          "text": "E",
+          "start": 39.084,
+          "end": 39.124
+        },
+        {
+          "text": "è",
+          "start": 39.644,
+          "end": 39.684
+        },
+        {
+          "text": "la",
+          "start": 39.744,
+          "end": 39.804
+        },
+        {
+          "text": "somma",
+          "start": 39.864,
+          "end": 40.124
+        },
+        {
+          "text": "per",
+          "start": 40.184,
+          "end": 40.304
+        },
+        {
+          "text": "i",
+          "start": 40.364,
+          "end": 40.404
+        },
+        {
+          "text": "da",
+          "start": 40.484,
+          "end": 40.544
+        },
+        {
+          "text": "uno",
+          "start": 40.664,
+          "end": 40.824
+        },
+        {
+          "text": "a",
+          "start": 40.884,
+          "end": 40.924
+        },
+        {
+          "text": "l",
+          "start": 41.164,
+          "end": 41.204
+        },
+        {
+          "text": "e",
+          "start": 41.464,
+          "end": 41.504
+        },
+        {
+          "text": "j",
+          "start": 41.604,
+          "end": 41.644
+        },
+        {
+          "text": "da",
+          "start": 41.844,
+          "end": 41.924
+        },
+        {
+          "text": "uno",
+          "start": 42.004,
+          "end": 42.124
+        },
+        {
+          "text": "a",
+          "start": 42.164,
+          "end": 42.204
+        }
+      ]
+    },
+    {
+      "start": 42.284,
+      "end": 45.625,
+      "text": "K della norma quadra di x con i meno w con j",
+      "words": [
+        {
+          "text": "K",
+          "start": 42.284,
+          "end": 42.324
+        },
+        {
+          "text": "della",
+          "start": 43.064,
+          "end": 43.244
+        },
+        {
+          "text": "norma",
+          "start": 43.284,
+          "end": 43.504
+        },
+        {
+          "text": "quadra",
+          "start": 43.564,
+          "end": 43.904
+        },
+        {
+          "text": "di",
+          "start": 43.985,
+          "end": 44.045
+        },
+        {
+          "text": "x",
+          "start": 44.345,
+          "end": 44.385
+        },
+        {
+          "text": "con",
+          "start": 44.505,
+          "end": 44.665
+        },
+        {
+          "text": "i",
+          "start": 44.705,
+          "end": 44.745
+        },
+        {
+          "text": "meno",
+          "start": 44.985,
+          "end": 45.165
+        },
+        {
+          "text": "w",
+          "start": 45.225,
+          "end": 45.265
+        },
+        {
+          "text": "con",
+          "start": 45.365,
+          "end": 45.505
+        },
+        {
+          "text": "j",
+          "start": 45.585,
+          "end": 45.625
+        }
+      ]
+    },
+    {
+      "start": 46.185,
+      "end": 49.365,
+      "text": "moltiplicata per delta winner di i virgola j,",
+      "words": [
+        {
+          "text": "moltiplicata",
+          "start": 46.185,
+          "end": 46.885
+        },
+        {
+          "text": "per",
+          "start": 46.985,
+          "end": 47.125
+        },
+        {
+          "text": "delta",
+          "start": 47.225,
+          "end": 47.565
+        },
+        {
+          "text": "winner",
+          "start": 47.685,
+          "end": 48.105
+        },
+        {
+          "text": "di",
+          "start": 48.285,
+          "end": 48.365
+        },
+        {
+          "text": "i",
+          "start": 48.565,
+          "end": 48.605
+        },
+        {
+          "text": "virgola",
+          "start": 48.865,
+          "end": 49.245
+        },
+        {
+          "text": "j,",
+          "start": 49.325,
+          "end": 49.365
+        }
+      ]
+    },
+    {
+      "start": 50.005,
+      "end": 53.846,
+      "text": "che vale uno se j è il vincitore per x con i e zero altrimenti.",
+      "words": [
+        {
+          "text": "che",
+          "start": 50.005,
+          "end": 50.085
+        },
+        {
+          "text": "vale",
+          "start": 50.125,
+          "end": 50.325
+        },
+        {
+          "text": "uno",
+          "start": 50.405,
+          "end": 50.605
+        },
+        {
+          "text": "se",
+          "start": 50.805,
+          "end": 50.905
+        },
+        {
+          "text": "j",
+          "start": 50.985,
+          "end": 51.025
+        },
+        {
+          "text": "è",
+          "start": 51.245,
+          "end": 51.285
+        },
+        {
+          "text": "il",
+          "start": 51.305,
+          "end": 51.365
+        },
+        {
+          "text": "vincitore",
+          "start": 51.385,
+          "end": 51.825
+        },
+        {
+          "text": "per",
+          "start": 51.865,
+          "end": 51.965
+        },
+        {
+          "text": "x",
+          "start": 52.085,
+          "end": 52.125
+        },
+        {
+          "text": "con",
+          "start": 52.205,
+          "end": 52.345
+        },
+        {
+          "text": "i",
+          "start": 52.385,
+          "end": 52.425
+        },
+        {
+          "text": "e",
+          "start": 52.945,
+          "end": 52.985
+        },
+        {
+          "text": "zero",
+          "start": 53.085,
+          "end": 53.285
+        },
+        {
+          "text": "altrimenti.",
+          "start": 53.305,
+          "end": 53.846
+        }
+      ]
+    },
+    {
+      "start": 54.626,
+      "end": 58.126,
+      "text": "Minimizzare E rispetto ai prototipi w è il problema della VQ.",
+      "words": [
+        {
+          "text": "Minimizzare",
+          "start": 54.626,
+          "end": 55.206
+        },
+        {
+          "text": "E",
+          "start": 55.386,
+          "end": 55.426
+        },
+        {
+          "text": "rispetto",
+          "start": 55.746,
+          "end": 56.106
+        },
+        {
+          "text": "ai",
+          "start": 56.126,
+          "end": 56.206
+        },
+        {
+          "text": "prototipi",
+          "start": 56.226,
+          "end": 56.706
+        },
+        {
+          "text": "w",
+          "start": 56.766,
+          "end": 56.806
+        },
+        {
+          "text": "è",
+          "start": 57.146,
+          "end": 57.186
+        },
+        {
+          "text": "il",
+          "start": 57.226,
+          "end": 57.286
+        },
+        {
+          "text": "problema",
+          "start": 57.326,
+          "end": 57.706
+        },
+        {
+          "text": "della",
+          "start": 57.766,
+          "end": 57.926
+        },
+        {
+          "text": "VQ.",
+          "start": 57.966,
+          "end": 58.126
+        }
+      ]
+    },
+    {
+      "start": 58.866,
+      "end": 60.446,
+      "text": "C'è però una sottigliezza cruciale:",
+      "words": [
+        {
+          "text": "C'è",
+          "start": 58.866,
+          "end": 58.986
+        },
+        {
+          "text": "però",
+          "start": 59.026,
+          "end": 59.166
+        },
+        {
+          "text": "una",
+          "start": 59.226,
+          "end": 59.346
+        },
+        {
+          "text": "sottigliezza",
+          "start": 59.386,
+          "end": 59.886
+        },
+        {
+          "text": "cruciale:",
+          "start": 59.946,
+          "end": 60.446
+        }
+      ]
+    },
+    {
+      "start": 61.006,
+      "end": 67.147,
+      "text": "l'integrando non è differenziabile con continuità, perché il vincitore cambia in modo discreto attraversando un",
+      "words": [
+        {
+          "text": "l'integrando",
+          "start": 61.006,
+          "end": 61.726
+        },
+        {
+          "text": "non",
+          "start": 61.786,
+          "end": 61.906
+        },
+        {
+          "text": "è",
+          "start": 61.966,
+          "end": 62.006
+        },
+        {
+          "text": "differenziabile",
+          "start": 62.066,
+          "end": 62.946
+        },
+        {
+          "text": "con",
+          "start": 63.046,
+          "end": 63.206
+        },
+        {
+          "text": "continuità,",
+          "start": 63.246,
+          "end": 63.767
+        },
+        {
+          "text": "perché",
+          "start": 64.147,
+          "end": 64.367
+        },
+        {
+          "text": "il",
+          "start": 64.407,
+          "end": 64.467
+        },
+        {
+          "text": "vincitore",
+          "start": 64.487,
+          "end": 65.007
+        },
+        {
+          "text": "cambia",
+          "start": 65.067,
+          "end": 65.327
+        },
+        {
+          "text": "in",
+          "start": 65.367,
+          "end": 65.40700000000001
+        },
+        {
+          "text": "modo",
+          "start": 65.447,
+          "end": 65.647
+        },
+        {
+          "text": "discreto",
+          "start": 65.747,
+          "end": 66.287
+        },
+        {
+          "text": "attraversando",
+          "start": 66.447,
+          "end": 67.047
+        },
+        {
+          "text": "un",
+          "start": 67.087,
+          "end": 67.147
+        }
+      ]
+    },
+    {
+      "start": 67.187,
+      "end": 68.047,
+      "text": "bordo di Voronoi.",
+      "words": [
+        {
+          "text": "bordo",
+          "start": 67.187,
+          "end": 67.447
+        },
+        {
+          "text": "di",
+          "start": 67.487,
+          "end": 67.547
+        },
+        {
+          "text": "Voronoi.",
+          "start": 67.587,
+          "end": 68.047
+        }
+      ]
+    },
+    {
+      "start": 68.787,
+      "end": 74.188,
+      "text": "Tuttavia le derivate si calcolano localmente, fissando ogni x dentro la sua cella di Voronoi:",
+      "words": [
+        {
+          "text": "Tuttavia",
+          "start": 68.787,
+          "end": 69.207
+        },
+        {
+          "text": "le",
+          "start": 69.247,
+          "end": 69.307
+        },
+        {
+          "text": "derivate",
+          "start": 69.367,
+          "end": 69.807
+        },
+        {
+          "text": "si",
+          "start": 69.887,
+          "end": 69.947
+        },
+        {
+          "text": "calcolano",
+          "start": 70.007,
+          "end": 70.487
+        },
+        {
+          "text": "localmente,",
+          "start": 70.547,
+          "end": 71.227
+        },
+        {
+          "text": "fissando",
+          "start": 71.467,
+          "end": 71.887
+        },
+        {
+          "text": "ogni",
+          "start": 72.087,
+          "end": 72.427
+        },
+        {
+          "text": "x",
+          "start": 72.507,
+          "end": 72.54700000000001
+        },
+        {
+          "text": "dentro",
+          "start": 72.827,
+          "end": 73.107
+        },
+        {
+          "text": "la",
+          "start": 73.147,
+          "end": 73.207
+        },
+        {
+          "text": "sua",
+          "start": 73.247,
+          "end": 73.367
+        },
+        {
+          "text": "cella",
+          "start": 73.408,
+          "end": 73.648
+        },
+        {
+          "text": "di",
+          "start": 73.668,
+          "end": 73.728
+        },
+        {
+          "text": "Voronoi:",
+          "start": 73.768,
+          "end": 74.188
+        }
+      ]
+    },
+    {
+      "start": 74.728,
+      "end": 78.888,
+      "text": "lì la funzione è quadratica e liscia, e ci permette di derivare il K-means.",
+      "words": [
+        {
+          "text": "lì",
+          "start": 74.728,
+          "end": 74.828
+        },
+        {
+          "text": "la",
+          "start": 75.008,
+          "end": 75.068
+        },
+        {
+          "text": "funzione",
+          "start": 75.108,
+          "end": 75.488
+        },
+        {
+          "text": "è",
+          "start": 75.508,
+          "end": 75.548
+        },
+        {
+          "text": "quadratica",
+          "start": 75.568,
+          "end": 76.108
+        },
+        {
+          "text": "e",
+          "start": 76.288,
+          "end": 76.328
+        },
+        {
+          "text": "liscia,",
+          "start": 76.368,
+          "end": 76.708
+        },
+        {
+          "text": "e",
+          "start": 76.988,
+          "end": 77.028
+        },
+        {
+          "text": "ci",
+          "start": 77.088,
+          "end": 77.168
+        },
+        {
+          "text": "permette",
+          "start": 77.208,
+          "end": 77.628
+        },
+        {
+          "text": "di",
+          "start": 77.668,
+          "end": 77.748
+        },
+        {
+          "text": "derivare",
+          "start": 77.788,
+          "end": 78.208
+        },
+        {
+          "text": "il",
+          "start": 78.248,
+          "end": 78.308
+        },
+        {
+          "text": "K-means.",
+          "start": 78.368,
+          "end": 78.888
+        }
+      ]
+    }
+  ]
+}

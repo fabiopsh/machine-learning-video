@@ -1,0 +1,1644 @@
+{
+  "duration": 110.85,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.6610000000000005,
+      "text": "Osserviamo ora il K-means batch all'opera su un dataset reale bidimensionale con settantacinque punti e",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 0.08,
+          "end": 0.64
+        },
+        {
+          "text": "ora",
+          "start": 0.7,
+          "end": 0.84
+        },
+        {
+          "text": "il",
+          "start": 0.88,
+          "end": 0.94
+        },
+        {
+          "text": "K-means",
+          "start": 1.0,
+          "end": 1.48
+        },
+        {
+          "text": "batch",
+          "start": 1.56,
+          "end": 1.86
+        },
+        {
+          "text": "all'opera",
+          "start": 1.9,
+          "end": 2.34
+        },
+        {
+          "text": "su",
+          "start": 2.4,
+          "end": 2.46
+        },
+        {
+          "text": "un",
+          "start": 2.48,
+          "end": 2.54
+        },
+        {
+          "text": "dataset",
+          "start": 2.56,
+          "end": 2.981
+        },
+        {
+          "text": "reale",
+          "start": 3.061,
+          "end": 3.361
+        },
+        {
+          "text": "bidimensionale",
+          "start": 3.401,
+          "end": 4.201
+        },
+        {
+          "text": "con",
+          "start": 4.241,
+          "end": 4.361
+        },
+        {
+          "text": "settantacinque",
+          "start": 4.401,
+          "end": 5.061
+        },
+        {
+          "text": "punti",
+          "start": 5.121,
+          "end": 5.481
+        },
+        {
+          "text": "e",
+          "start": 5.621,
+          "end": 5.6610000000000005
+        }
+      ]
+    },
+    {
+      "start": 5.761,
+      "end": 7.341,
+      "text": "K uguale a tre cluster.",
+      "words": [
+        {
+          "text": "K",
+          "start": 5.761,
+          "end": 5.801
+        },
+        {
+          "text": "uguale",
+          "start": 6.241,
+          "end": 6.541
+        },
+        {
+          "text": "a",
+          "start": 6.621,
+          "end": 6.6610000000000005
+        },
+        {
+          "text": "tre",
+          "start": 6.721,
+          "end": 6.841
+        },
+        {
+          "text": "cluster.",
+          "start": 6.901,
+          "end": 7.341
+        }
+      ]
+    },
+    {
+      "start": 7.941,
+      "end": 10.122,
+      "text": "Nel primo pannello vediamo l'inizializzazione:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 7.941,
+          "end": 8.081
+        },
+        {
+          "text": "primo",
+          "start": 8.141,
+          "end": 8.342
+        },
+        {
+          "text": "pannello",
+          "start": 8.402,
+          "end": 8.802
+        },
+        {
+          "text": "vediamo",
+          "start": 8.822,
+          "end": 9.102
+        },
+        {
+          "text": "l'inizializzazione:",
+          "start": 9.162,
+          "end": 10.122
+        }
+      ]
+    },
+    {
+      "start": 10.742,
+      "end": 15.723,
+      "text": "i tre centri iniziali, indicati dalle croci, sono partiti tutti nella parte alta del piano,",
+      "words": [
+        {
+          "text": "i",
+          "start": 10.742,
+          "end": 10.782
+        },
+        {
+          "text": "tre",
+          "start": 10.822,
+          "end": 10.942
+        },
+        {
+          "text": "centri",
+          "start": 11.022,
+          "end": 11.302
+        },
+        {
+          "text": "iniziali,",
+          "start": 11.342,
+          "end": 11.882
+        },
+        {
+          "text": "indicati",
+          "start": 12.022,
+          "end": 12.482
+        },
+        {
+          "text": "dalle",
+          "start": 12.522,
+          "end": 12.702
+        },
+        {
+          "text": "croci,",
+          "start": 12.722,
+          "end": 13.082
+        },
+        {
+          "text": "sono",
+          "start": 13.442,
+          "end": 13.582
+        },
+        {
+          "text": "partiti",
+          "start": 13.622,
+          "end": 13.963
+        },
+        {
+          "text": "tutti",
+          "start": 14.123,
+          "end": 14.423
+        },
+        {
+          "text": "nella",
+          "start": 14.483,
+          "end": 14.663
+        },
+        {
+          "text": "parte",
+          "start": 14.703,
+          "end": 14.943
+        },
+        {
+          "text": "alta",
+          "start": 15.003,
+          "end": 15.203
+        },
+        {
+          "text": "del",
+          "start": 15.243,
+          "end": 15.363
+        },
+        {
+          "text": "piano,",
+          "start": 15.403,
+          "end": 15.723
+        }
+      ]
+    },
+    {
+      "start": 15.843,
+      "end": 18.183,
+      "text": "lontano dai veri baricentri dei tre gruppi.",
+      "words": [
+        {
+          "text": "lontano",
+          "start": 15.843,
+          "end": 16.443
+        },
+        {
+          "text": "dai",
+          "start": 16.563,
+          "end": 16.703
+        },
+        {
+          "text": "veri",
+          "start": 16.723,
+          "end": 16.903
+        },
+        {
+          "text": "baricentri",
+          "start": 16.943,
+          "end": 17.503
+        },
+        {
+          "text": "dei",
+          "start": 17.543,
+          "end": 17.663
+        },
+        {
+          "text": "tre",
+          "start": 17.703,
+          "end": 17.803
+        },
+        {
+          "text": "gruppi.",
+          "start": 17.843,
+          "end": 18.183
+        }
+      ]
+    },
+    {
+      "start": 18.783,
+      "end": 23.444,
+      "text": "Nel secondo pannello eseguiamo la prima assegnazione: ogni esempio prende il colore del centro più",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 18.783,
+          "end": 18.903
+        },
+        {
+          "text": "secondo",
+          "start": 18.923,
+          "end": 19.203
+        },
+        {
+          "text": "pannello",
+          "start": 19.243,
+          "end": 19.644
+        },
+        {
+          "text": "eseguiamo",
+          "start": 19.744,
+          "end": 20.184
+        },
+        {
+          "text": "la",
+          "start": 20.244,
+          "end": 20.304
+        },
+        {
+          "text": "prima",
+          "start": 20.324,
+          "end": 20.524
+        },
+        {
+          "text": "assegnazione:",
+          "start": 20.544,
+          "end": 21.184
+        },
+        {
+          "text": "ogni",
+          "start": 21.564,
+          "end": 21.704
+        },
+        {
+          "text": "esempio",
+          "start": 21.764,
+          "end": 22.144
+        },
+        {
+          "text": "prende",
+          "start": 22.224,
+          "end": 22.464
+        },
+        {
+          "text": "il",
+          "start": 22.504,
+          "end": 22.564
+        },
+        {
+          "text": "colore",
+          "start": 22.604,
+          "end": 22.884
+        },
+        {
+          "text": "del",
+          "start": 22.924,
+          "end": 23.024
+        },
+        {
+          "text": "centro",
+          "start": 23.064,
+          "end": 23.324
+        },
+        {
+          "text": "più",
+          "start": 23.344,
+          "end": 23.444
+        }
+      ]
+    },
+    {
+      "start": 23.504,
+      "end": 25.465,
+      "text": "vicino, rosso, blu oppure verde.",
+      "words": [
+        {
+          "text": "vicino,",
+          "start": 23.504,
+          "end": 23.844
+        },
+        {
+          "text": "rosso,",
+          "start": 24.124,
+          "end": 24.424
+        },
+        {
+          "text": "blu",
+          "start": 24.564,
+          "end": 24.664
+        },
+        {
+          "text": "oppure",
+          "start": 24.904,
+          "end": 25.165
+        },
+        {
+          "text": "verde.",
+          "start": 25.185,
+          "end": 25.465
+        }
+      ]
+    },
+    {
+      "start": 26.085,
+      "end": 30.826,
+      "text": "Nel terzo pannello ricalcoliamo i nuovi centri come medie dei tre gruppi appena formati:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 26.085,
+          "end": 26.205
+        },
+        {
+          "text": "terzo",
+          "start": 26.265,
+          "end": 26.525
+        },
+        {
+          "text": "pannello",
+          "start": 26.565,
+          "end": 27.025
+        },
+        {
+          "text": "ricalcoliamo",
+          "start": 27.205,
+          "end": 27.985
+        },
+        {
+          "text": "i",
+          "start": 28.045,
+          "end": 28.085
+        },
+        {
+          "text": "nuovi",
+          "start": 28.085,
+          "end": 28.305
+        },
+        {
+          "text": "centri",
+          "start": 28.345,
+          "end": 28.725
+        },
+        {
+          "text": "come",
+          "start": 28.785,
+          "end": 28.965
+        },
+        {
+          "text": "medie",
+          "start": 29.085,
+          "end": 29.405
+        },
+        {
+          "text": "dei",
+          "start": 29.445,
+          "end": 29.565
+        },
+        {
+          "text": "tre",
+          "start": 29.605,
+          "end": 29.725
+        },
+        {
+          "text": "gruppi",
+          "start": 29.765,
+          "end": 30.025
+        },
+        {
+          "text": "appena",
+          "start": 30.065,
+          "end": 30.285
+        },
+        {
+          "text": "formati:",
+          "start": 30.345,
+          "end": 30.826
+        }
+      ]
+    },
+    {
+      "start": 31.346,
+      "end": 35.506,
+      "text": "le linee tratteggiate mostrano il forte salto verso l'interno delle nuvole di punti.",
+      "words": [
+        {
+          "text": "le",
+          "start": 31.346,
+          "end": 31.406
+        },
+        {
+          "text": "linee",
+          "start": 31.446,
+          "end": 31.686
+        },
+        {
+          "text": "tratteggiate",
+          "start": 31.726,
+          "end": 32.306
+        },
+        {
+          "text": "mostrano",
+          "start": 32.366,
+          "end": 32.766
+        },
+        {
+          "text": "il",
+          "start": 32.806,
+          "end": 32.866
+        },
+        {
+          "text": "forte",
+          "start": 32.926,
+          "end": 33.246
+        },
+        {
+          "text": "salto",
+          "start": 33.326,
+          "end": 33.686
+        },
+        {
+          "text": "verso",
+          "start": 33.726,
+          "end": 33.986
+        },
+        {
+          "text": "l'interno",
+          "start": 34.026,
+          "end": 34.546
+        },
+        {
+          "text": "delle",
+          "start": 34.586,
+          "end": 34.746
+        },
+        {
+          "text": "nuvole",
+          "start": 34.766,
+          "end": 35.026
+        },
+        {
+          "text": "di",
+          "start": 35.046,
+          "end": 35.106
+        },
+        {
+          "text": "punti.",
+          "start": 35.166,
+          "end": 35.506
+        }
+      ]
+    },
+    {
+      "start": 36.106,
+      "end": 39.227,
+      "text": "Nel quarto pannello ripetiamo l'assegnazione con i nuovi centri:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 36.106,
+          "end": 36.227
+        },
+        {
+          "text": "quarto",
+          "start": 36.267,
+          "end": 36.507
+        },
+        {
+          "text": "pannello",
+          "start": 36.547,
+          "end": 36.987
+        },
+        {
+          "text": "ripetiamo",
+          "start": 37.147,
+          "end": 37.607
+        },
+        {
+          "text": "l'assegnazione",
+          "start": 37.647,
+          "end": 38.287
+        },
+        {
+          "text": "con",
+          "start": 38.327,
+          "end": 38.447
+        },
+        {
+          "text": "i",
+          "start": 38.487,
+          "end": 38.527
+        },
+        {
+          "text": "nuovi",
+          "start": 38.547,
+          "end": 38.767
+        },
+        {
+          "text": "centri:",
+          "start": 38.827,
+          "end": 39.227
+        }
+      ]
+    },
+    {
+      "start": 39.627,
+      "end": 43.748,
+      "text": "i tre cluster si separano già in venticinque, venticinque e venticinque punti,",
+      "words": [
+        {
+          "text": "i",
+          "start": 39.627,
+          "end": 39.667
+        },
+        {
+          "text": "tre",
+          "start": 39.687,
+          "end": 39.787
+        },
+        {
+          "text": "cluster",
+          "start": 39.827,
+          "end": 40.247
+        },
+        {
+          "text": "si",
+          "start": 40.367,
+          "end": 40.447
+        },
+        {
+          "text": "separano",
+          "start": 40.507,
+          "end": 40.867
+        },
+        {
+          "text": "già",
+          "start": 40.947,
+          "end": 41.027
+        },
+        {
+          "text": "in",
+          "start": 41.147,
+          "end": 41.207
+        },
+        {
+          "text": "venticinque,",
+          "start": 41.247,
+          "end": 41.908
+        },
+        {
+          "text": "venticinque",
+          "start": 42.028,
+          "end": 42.608
+        },
+        {
+          "text": "e",
+          "start": 42.728,
+          "end": 42.768
+        },
+        {
+          "text": "venticinque",
+          "start": 42.828,
+          "end": 43.348
+        },
+        {
+          "text": "punti,",
+          "start": 43.388,
+          "end": 43.748
+        }
+      ]
+    },
+    {
+      "start": 44.228,
+      "end": 47.209,
+      "text": "e i cerchi arancioni segnano i centroidi finali a convergenza.",
+      "words": [
+        {
+          "text": "e",
+          "start": 44.228,
+          "end": 44.268
+        },
+        {
+          "text": "i",
+          "start": 44.308,
+          "end": 44.348
+        },
+        {
+          "text": "cerchi",
+          "start": 44.388,
+          "end": 44.608
+        },
+        {
+          "text": "arancioni",
+          "start": 44.628,
+          "end": 45.088
+        },
+        {
+          "text": "segnano",
+          "start": 45.208,
+          "end": 45.488
+        },
+        {
+          "text": "i",
+          "start": 45.528,
+          "end": 45.568
+        },
+        {
+          "text": "centroidi",
+          "start": 45.588,
+          "end": 46.088
+        },
+        {
+          "text": "finali",
+          "start": 46.128,
+          "end": 46.428
+        },
+        {
+          "text": "a",
+          "start": 46.468,
+          "end": 46.508
+        },
+        {
+          "text": "convergenza.",
+          "start": 46.528,
+          "end": 47.209
+        }
+      ]
+    },
+    {
+      "start": 48.069,
+      "end": 51.089,
+      "text": "Facciamo allora un bilancio dei pregi e dei difetti del K-means.",
+      "words": [
+        {
+          "text": "Facciamo",
+          "start": 48.069,
+          "end": 48.349
+        },
+        {
+          "text": "allora",
+          "start": 48.369,
+          "end": 48.569
+        },
+        {
+          "text": "un",
+          "start": 48.609,
+          "end": 48.649
+        },
+        {
+          "text": "bilancio",
+          "start": 48.689,
+          "end": 49.109
+        },
+        {
+          "text": "dei",
+          "start": 49.149,
+          "end": 49.269
+        },
+        {
+          "text": "pregi",
+          "start": 49.309,
+          "end": 49.629
+        },
+        {
+          "text": "e",
+          "start": 49.749,
+          "end": 49.789
+        },
+        {
+          "text": "dei",
+          "start": 49.829,
+          "end": 49.929
+        },
+        {
+          "text": "difetti",
+          "start": 49.949,
+          "end": 50.329
+        },
+        {
+          "text": "del",
+          "start": 50.349,
+          "end": 50.469
+        },
+        {
+          "text": "K-means.",
+          "start": 50.509,
+          "end": 51.089
+        }
+      ]
+    },
+    {
+      "start": 51.629,
+      "end": 55.93,
+      "text": "Tra i pregi: è l'algoritmo più semplice e più usato basato sull'errore quadratico,",
+      "words": [
+        {
+          "text": "Tra",
+          "start": 51.629,
+          "end": 51.729
+        },
+        {
+          "text": "i",
+          "start": 51.789,
+          "end": 51.829
+        },
+        {
+          "text": "pregi:",
+          "start": 51.849,
+          "end": 52.189
+        },
+        {
+          "text": "è",
+          "start": 52.489,
+          "end": 52.529
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 52.569,
+          "end": 53.09
+        },
+        {
+          "text": "più",
+          "start": 53.19,
+          "end": 53.29
+        },
+        {
+          "text": "semplice",
+          "start": 53.43,
+          "end": 53.91
+        },
+        {
+          "text": "e",
+          "start": 53.93,
+          "end": 53.97
+        },
+        {
+          "text": "più",
+          "start": 54.01,
+          "end": 54.11
+        },
+        {
+          "text": "usato",
+          "start": 54.17,
+          "end": 54.53
+        },
+        {
+          "text": "basato",
+          "start": 54.57,
+          "end": 54.89
+        },
+        {
+          "text": "sull'errore",
+          "start": 54.95,
+          "end": 55.37
+        },
+        {
+          "text": "quadratico,",
+          "start": 55.41,
+          "end": 55.93
+        }
+      ]
+    },
+    {
+      "start": 56.27,
+      "end": 59.631,
+      "text": "facilissimo da implementare e molto efficiente computazionalmente.",
+      "words": [
+        {
+          "text": "facilissimo",
+          "start": 56.27,
+          "end": 56.81
+        },
+        {
+          "text": "da",
+          "start": 56.85,
+          "end": 56.89
+        },
+        {
+          "text": "implementare",
+          "start": 56.95,
+          "end": 57.59
+        },
+        {
+          "text": "e",
+          "start": 57.71,
+          "end": 57.75
+        },
+        {
+          "text": "molto",
+          "start": 57.83,
+          "end": 58.09
+        },
+        {
+          "text": "efficiente",
+          "start": 58.13,
+          "end": 58.591
+        },
+        {
+          "text": "computazionalmente.",
+          "start": 58.631,
+          "end": 59.631
+        }
+      ]
+    },
+    {
+      "start": 60.331,
+      "end": 64.112,
+      "text": "Tra i limiti principali: il numero K di cluster va fornito a priori;",
+      "words": [
+        {
+          "text": "Tra",
+          "start": 60.331,
+          "end": 60.431
+        },
+        {
+          "text": "i",
+          "start": 60.491,
+          "end": 60.531
+        },
+        {
+          "text": "limiti",
+          "start": 60.571,
+          "end": 60.851
+        },
+        {
+          "text": "principali:",
+          "start": 60.891,
+          "end": 61.491
+        },
+        {
+          "text": "il",
+          "start": 61.771,
+          "end": 61.851
+        },
+        {
+          "text": "numero",
+          "start": 61.891,
+          "end": 62.151
+        },
+        {
+          "text": "K",
+          "start": 62.191,
+          "end": 62.231
+        },
+        {
+          "text": "di",
+          "start": 62.471,
+          "end": 62.531
+        },
+        {
+          "text": "cluster",
+          "start": 62.571,
+          "end": 63.011
+        },
+        {
+          "text": "va",
+          "start": 63.131,
+          "end": 63.191
+        },
+        {
+          "text": "fornito",
+          "start": 63.251,
+          "end": 63.631
+        },
+        {
+          "text": "a",
+          "start": 63.671,
+          "end": 63.711
+        },
+        {
+          "text": "priori;",
+          "start": 63.751,
+          "end": 64.112
+        }
+      ]
+    },
+    {
+      "start": 64.732,
+      "end": 69.092,
+      "text": "i minimi locali dell'errore E rendono il risultato dipendente dall'inizializzazione,",
+      "words": [
+        {
+          "text": "i",
+          "start": 64.732,
+          "end": 64.772
+        },
+        {
+          "text": "minimi",
+          "start": 64.832,
+          "end": 65.112
+        },
+        {
+          "text": "locali",
+          "start": 65.172,
+          "end": 65.532
+        },
+        {
+          "text": "dell'errore",
+          "start": 65.572,
+          "end": 66.012
+        },
+        {
+          "text": "E",
+          "start": 66.192,
+          "end": 66.232
+        },
+        {
+          "text": "rendono",
+          "start": 66.492,
+          "end": 66.832
+        },
+        {
+          "text": "il",
+          "start": 66.872,
+          "end": 66.932
+        },
+        {
+          "text": "risultato",
+          "start": 66.972,
+          "end": 67.432
+        },
+        {
+          "text": "dipendente",
+          "start": 67.472,
+          "end": 68.052
+        },
+        {
+          "text": "dall'inizializzazione,",
+          "start": 68.092,
+          "end": 69.092
+        }
+      ]
+    },
+    {
+      "start": 69.393,
+      "end": 71.733,
+      "text": "portando spesso a prototipi solo sub-ottimi;",
+      "words": [
+        {
+          "text": "portando",
+          "start": 69.393,
+          "end": 69.733
+        },
+        {
+          "text": "spesso",
+          "start": 69.773,
+          "end": 70.073
+        },
+        {
+          "text": "a",
+          "start": 70.113,
+          "end": 70.153
+        },
+        {
+          "text": "prototipi",
+          "start": 70.173,
+          "end": 70.673
+        },
+        {
+          "text": "solo",
+          "start": 70.793,
+          "end": 70.973
+        },
+        {
+          "text": "sub-ottimi;",
+          "start": 71.113,
+          "end": 71.733
+        }
+      ]
+    },
+    {
+      "start": 72.353,
+      "end": 77.614,
+      "text": "funziona molto bene per cluster compatti e ipersferici, ma fallisce su forme non convesse come",
+      "words": [
+        {
+          "text": "funziona",
+          "start": 72.353,
+          "end": 72.713
+        },
+        {
+          "text": "molto",
+          "start": 72.833,
+          "end": 73.113
+        },
+        {
+          "text": "bene",
+          "start": 73.153,
+          "end": 73.393
+        },
+        {
+          "text": "per",
+          "start": 73.413,
+          "end": 73.513
+        },
+        {
+          "text": "cluster",
+          "start": 73.553,
+          "end": 73.913
+        },
+        {
+          "text": "compatti",
+          "start": 73.973,
+          "end": 74.513
+        },
+        {
+          "text": "e",
+          "start": 74.613,
+          "end": 74.653
+        },
+        {
+          "text": "ipersferici,",
+          "start": 74.693,
+          "end": 75.354
+        },
+        {
+          "text": "ma",
+          "start": 75.474,
+          "end": 75.534
+        },
+        {
+          "text": "fallisce",
+          "start": 75.634,
+          "end": 76.074
+        },
+        {
+          "text": "su",
+          "start": 76.134,
+          "end": 76.214
+        },
+        {
+          "text": "forme",
+          "start": 76.274,
+          "end": 76.534
+        },
+        {
+          "text": "non",
+          "start": 76.654,
+          "end": 76.834
+        },
+        {
+          "text": "convesse",
+          "start": 76.894,
+          "end": 77.414
+        },
+        {
+          "text": "come",
+          "start": 77.454,
+          "end": 77.614
+        }
+      ]
+    },
+    {
+      "start": 77.674,
+      "end": 83.135,
+      "text": "due spirali intrecciate; infine non offre alcuna visualizzazione, perché non proietta i dati in uno",
+      "words": [
+        {
+          "text": "due",
+          "start": 77.674,
+          "end": 77.794
+        },
+        {
+          "text": "spirali",
+          "start": 77.834,
+          "end": 78.194
+        },
+        {
+          "text": "intrecciate;",
+          "start": 78.234,
+          "end": 78.754
+        },
+        {
+          "text": "infine",
+          "start": 79.334,
+          "end": 79.634
+        },
+        {
+          "text": "non",
+          "start": 79.714,
+          "end": 79.834
+        },
+        {
+          "text": "offre",
+          "start": 79.874,
+          "end": 80.054
+        },
+        {
+          "text": "alcuna",
+          "start": 80.094,
+          "end": 80.414
+        },
+        {
+          "text": "visualizzazione,",
+          "start": 80.475,
+          "end": 81.315
+        },
+        {
+          "text": "perché",
+          "start": 81.575,
+          "end": 81.795
+        },
+        {
+          "text": "non",
+          "start": 81.915,
+          "end": 82.075
+        },
+        {
+          "text": "proietta",
+          "start": 82.115,
+          "end": 82.555
+        },
+        {
+          "text": "i",
+          "start": 82.595,
+          "end": 82.635
+        },
+        {
+          "text": "dati",
+          "start": 82.635,
+          "end": 82.895
+        },
+        {
+          "text": "in",
+          "start": 82.935,
+          "end": 82.995
+        },
+        {
+          "text": "uno",
+          "start": 83.015,
+          "end": 83.135
+        }
+      ]
+    },
+    {
+      "start": 83.175,
+      "end": 88.396,
+      "text": "spazio a dimensione minore e l'indicizzazione dei prototipi è del tutto arbitraria e non ordinata.",
+      "words": [
+        {
+          "text": "spazio",
+          "start": 83.175,
+          "end": 83.475
+        },
+        {
+          "text": "a",
+          "start": 83.495,
+          "end": 83.53500000000001
+        },
+        {
+          "text": "dimensione",
+          "start": 83.555,
+          "end": 83.975
+        },
+        {
+          "text": "minore",
+          "start": 84.015,
+          "end": 84.375
+        },
+        {
+          "text": "e",
+          "start": 84.715,
+          "end": 84.75500000000001
+        },
+        {
+          "text": "l'indicizzazione",
+          "start": 84.815,
+          "end": 85.635
+        },
+        {
+          "text": "dei",
+          "start": 85.655,
+          "end": 85.775
+        },
+        {
+          "text": "prototipi",
+          "start": 85.795,
+          "end": 86.316
+        },
+        {
+          "text": "è",
+          "start": 86.456,
+          "end": 86.49600000000001
+        },
+        {
+          "text": "del",
+          "start": 86.536,
+          "end": 86.676
+        },
+        {
+          "text": "tutto",
+          "start": 86.716,
+          "end": 86.916
+        },
+        {
+          "text": "arbitraria",
+          "start": 86.956,
+          "end": 87.476
+        },
+        {
+          "text": "e",
+          "start": 87.676,
+          "end": 87.71600000000001
+        },
+        {
+          "text": "non",
+          "start": 87.756,
+          "end": 87.896
+        },
+        {
+          "text": "ordinata.",
+          "start": 87.936,
+          "end": 88.396
+        }
+      ]
+    },
+    {
+      "start": 89.236,
+      "end": 91.156,
+      "text": "Come ridurre il problema dei minimi locali?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 89.236,
+          "end": 89.376
+        },
+        {
+          "text": "ridurre",
+          "start": 89.416,
+          "end": 89.756
+        },
+        {
+          "text": "il",
+          "start": 89.796,
+          "end": 89.856
+        },
+        {
+          "text": "problema",
+          "start": 89.896,
+          "end": 90.276
+        },
+        {
+          "text": "dei",
+          "start": 90.336,
+          "end": 90.436
+        },
+        {
+          "text": "minimi",
+          "start": 90.476,
+          "end": 90.716
+        },
+        {
+          "text": "locali?",
+          "start": 90.776,
+          "end": 91.156
+        }
+      ]
+    },
+    {
+      "start": 91.777,
+      "end": 96.177,
+      "text": "Si può usare una regola di tipo soft-max, in cui si modificano tutti i centri",
+      "words": [
+        {
+          "text": "Si",
+          "start": 91.777,
+          "end": 91.837
+        },
+        {
+          "text": "può",
+          "start": 91.877,
+          "end": 91.937
+        },
+        {
+          "text": "usare",
+          "start": 91.997,
+          "end": 92.197
+        },
+        {
+          "text": "una",
+          "start": 92.217,
+          "end": 92.317
+        },
+        {
+          "text": "regola",
+          "start": 92.377,
+          "end": 92.637
+        },
+        {
+          "text": "di",
+          "start": 92.677,
+          "end": 92.757
+        },
+        {
+          "text": "tipo",
+          "start": 92.797,
+          "end": 93.017
+        },
+        {
+          "text": "soft-max,",
+          "start": 93.117,
+          "end": 93.697
+        },
+        {
+          "text": "in",
+          "start": 94.237,
+          "end": 94.317
+        },
+        {
+          "text": "cui",
+          "start": 94.357,
+          "end": 94.477
+        },
+        {
+          "text": "si",
+          "start": 94.537,
+          "end": 94.597
+        },
+        {
+          "text": "modificano",
+          "start": 94.657,
+          "end": 95.157
+        },
+        {
+          "text": "tutti",
+          "start": 95.317,
+          "end": 95.617
+        },
+        {
+          "text": "i",
+          "start": 95.677,
+          "end": 95.71700000000001
+        },
+        {
+          "text": "centri",
+          "start": 95.757,
+          "end": 96.177
+        }
+      ]
+    },
+    {
+      "start": 96.277,
+      "end": 99.738,
+      "text": "con un passo che decresce al crescere della loro distanza dall'input x,",
+      "words": [
+        {
+          "text": "con",
+          "start": 96.277,
+          "end": 96.397
+        },
+        {
+          "text": "un",
+          "start": 96.417,
+          "end": 96.497
+        },
+        {
+          "text": "passo",
+          "start": 96.537,
+          "end": 96.797
+        },
+        {
+          "text": "che",
+          "start": 96.837,
+          "end": 96.937
+        },
+        {
+          "text": "decresce",
+          "start": 97.058,
+          "end": 97.498
+        },
+        {
+          "text": "al",
+          "start": 97.518,
+          "end": 97.598
+        },
+        {
+          "text": "crescere",
+          "start": 97.638,
+          "end": 98.018
+        },
+        {
+          "text": "della",
+          "start": 98.038,
+          "end": 98.198
+        },
+        {
+          "text": "loro",
+          "start": 98.238,
+          "end": 98.418
+        },
+        {
+          "text": "distanza",
+          "start": 98.458,
+          "end": 98.898
+        },
+        {
+          "text": "dall'input",
+          "start": 98.938,
+          "end": 99.418
+        },
+        {
+          "text": "x,",
+          "start": 99.698,
+          "end": 99.738
+        }
+      ]
+    },
+    {
+      "start": 100.278,
+      "end": 102.218,
+      "text": "come nel maximum-entropy clustering.",
+      "words": [
+        {
+          "text": "come",
+          "start": 100.278,
+          "end": 100.478
+        },
+        {
+          "text": "nel",
+          "start": 100.598,
+          "end": 100.738
+        },
+        {
+          "text": "maximum-entropy",
+          "start": 100.778,
+          "end": 101.638
+        },
+        {
+          "text": "clustering.",
+          "start": 101.678,
+          "end": 102.218
+        }
+      ]
+    },
+    {
+      "start": 103.099,
+      "end": 106.419,
+      "text": "Le Self-Organizing Map sono proprio un'istanza di questa strategia,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 103.099,
+          "end": 103.179
+        },
+        {
+          "text": "Self-Organizing",
+          "start": 103.259,
+          "end": 104.039
+        },
+        {
+          "text": "Map",
+          "start": 104.079,
+          "end": 104.319
+        },
+        {
+          "text": "sono",
+          "start": 104.499,
+          "end": 104.659
+        },
+        {
+          "text": "proprio",
+          "start": 104.699,
+          "end": 104.959
+        },
+        {
+          "text": "un'istanza",
+          "start": 104.999,
+          "end": 105.479
+        },
+        {
+          "text": "di",
+          "start": 105.519,
+          "end": 105.579
+        },
+        {
+          "text": "questa",
+          "start": 105.599,
+          "end": 105.839
+        },
+        {
+          "text": "strategia,",
+          "start": 105.879,
+          "end": 106.419
+        }
+      ]
+    },
+    {
+      "start": 106.779,
+      "end": 110.6,
+      "text": "in cui però la vicinanza tra prototipi viene definita su una mappa ordinata.",
+      "words": [
+        {
+          "text": "in",
+          "start": 106.779,
+          "end": 106.839
+        },
+        {
+          "text": "cui",
+          "start": 106.879,
+          "end": 106.999
+        },
+        {
+          "text": "però",
+          "start": 107.039,
+          "end": 107.199
+        },
+        {
+          "text": "la",
+          "start": 107.339,
+          "end": 107.399
+        },
+        {
+          "text": "vicinanza",
+          "start": 107.439,
+          "end": 107.919
+        },
+        {
+          "text": "tra",
+          "start": 107.979,
+          "end": 108.079
+        },
+        {
+          "text": "prototipi",
+          "start": 108.14,
+          "end": 108.68
+        },
+        {
+          "text": "viene",
+          "start": 108.86,
+          "end": 109.06
+        },
+        {
+          "text": "definita",
+          "start": 109.14,
+          "end": 109.58
+        },
+        {
+          "text": "su",
+          "start": 109.64,
+          "end": 109.7
+        },
+        {
+          "text": "una",
+          "start": 109.74,
+          "end": 109.86
+        },
+        {
+          "text": "mappa",
+          "start": 109.88,
+          "end": 110.1
+        },
+        {
+          "text": "ordinata.",
+          "start": 110.14,
+          "end": 110.6
+        }
+      ]
+    }
+  ]
+}

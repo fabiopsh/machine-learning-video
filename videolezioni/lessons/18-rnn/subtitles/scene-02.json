@@ -1,0 +1,1060 @@
+{
+  "duration": 75.721,
+  "segments": [
+    {
+      "start": 0.883,
+      "end": 3.844,
+      "text": "Come possiamo dotare di memoria una rete neurale?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.883,
+          "end": 1.063
+        },
+        {
+          "text": "possiamo",
+          "start": 1.123,
+          "end": 1.443
+        },
+        {
+          "text": "dotare",
+          "start": 1.503,
+          "end": 1.864
+        },
+        {
+          "text": "di",
+          "start": 1.964,
+          "end": 2.064
+        },
+        {
+          "text": "memoria",
+          "start": 2.144,
+          "end": 2.704
+        },
+        {
+          "text": "una",
+          "start": 2.884,
+          "end": 3.024
+        },
+        {
+          "text": "rete",
+          "start": 3.064,
+          "end": 3.264
+        },
+        {
+          "text": "neurale?",
+          "start": 3.324,
+          "end": 3.844
+        }
+      ]
+    },
+    {
+      "start": 4.424,
+      "end": 9.164,
+      "text": "Un primo approccio, di natura spaziale, consiste nell'usare una memoria finita:",
+      "words": [
+        {
+          "text": "Un",
+          "start": 4.424,
+          "end": 4.504
+        },
+        {
+          "text": "primo",
+          "start": 4.544,
+          "end": 4.784
+        },
+        {
+          "text": "approccio,",
+          "start": 4.824,
+          "end": 5.424
+        },
+        {
+          "text": "di",
+          "start": 5.664,
+          "end": 5.744
+        },
+        {
+          "text": "natura",
+          "start": 5.784,
+          "end": 6.064
+        },
+        {
+          "text": "spaziale,",
+          "start": 6.104,
+          "end": 6.804
+        },
+        {
+          "text": "consiste",
+          "start": 7.264,
+          "end": 7.724
+        },
+        {
+          "text": "nell'usare",
+          "start": 7.784,
+          "end": 8.224
+        },
+        {
+          "text": "una",
+          "start": 8.324,
+          "end": 8.424
+        },
+        {
+          "text": "memoria",
+          "start": 8.484,
+          "end": 8.784
+        },
+        {
+          "text": "finita:",
+          "start": 8.824,
+          "end": 9.164
+        }
+      ]
+    },
+    {
+      "start": 9.644,
+      "end": 14.105,
+      "text": "sono le Input Delay Neural Network, in breve IDNN,",
+      "words": [
+        {
+          "text": "sono",
+          "start": 9.644,
+          "end": 9.804
+        },
+        {
+          "text": "le",
+          "start": 9.864,
+          "end": 9.944
+        },
+        {
+          "text": "Input",
+          "start": 10.264,
+          "end": 10.684
+        },
+        {
+          "text": "Delay",
+          "start": 10.884,
+          "end": 11.304
+        },
+        {
+          "text": "Neural",
+          "start": 11.544,
+          "end": 11.885
+        },
+        {
+          "text": "Network,",
+          "start": 11.925,
+          "end": 12.345
+        },
+        {
+          "text": "in",
+          "start": 12.405,
+          "end": 12.465
+        },
+        {
+          "text": "breve",
+          "start": 12.465,
+          "end": 12.685
+        },
+        {
+          "text": "IDNN,",
+          "start": 13.185,
+          "end": 14.105
+        }
+      ]
+    },
+    {
+      "start": 14.605,
+      "end": 17.985,
+      "text": "appartenenti alla classe delle Time-Delay Neural Network.",
+      "words": [
+        {
+          "text": "appartenenti",
+          "start": 14.605,
+          "end": 15.085
+        },
+        {
+          "text": "alla",
+          "start": 15.105,
+          "end": 15.245
+        },
+        {
+          "text": "classe",
+          "start": 15.265,
+          "end": 15.545
+        },
+        {
+          "text": "delle",
+          "start": 15.585,
+          "end": 15.825
+        },
+        {
+          "text": "Time-Delay",
+          "start": 16.005,
+          "end": 16.845
+        },
+        {
+          "text": "Neural",
+          "start": 17.125,
+          "end": 17.485
+        },
+        {
+          "text": "Network.",
+          "start": 17.545,
+          "end": 17.985
+        }
+      ]
+    },
+    {
+      "start": 18.865,
+      "end": 23.826,
+      "text": "L'idea è molto concreta: si fa scorrere lungo la sequenza una finestra scorrevole di dimensione",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 18.865,
+          "end": 19.125
+        },
+        {
+          "text": "è",
+          "start": 19.165,
+          "end": 19.205
+        },
+        {
+          "text": "molto",
+          "start": 19.225,
+          "end": 19.465
+        },
+        {
+          "text": "concreta:",
+          "start": 19.505,
+          "end": 19.945
+        },
+        {
+          "text": "si",
+          "start": 20.445,
+          "end": 20.525
+        },
+        {
+          "text": "fa",
+          "start": 20.585,
+          "end": 20.645
+        },
+        {
+          "text": "scorrere",
+          "start": 20.725,
+          "end": 21.145
+        },
+        {
+          "text": "lungo",
+          "start": 21.205,
+          "end": 21.385
+        },
+        {
+          "text": "la",
+          "start": 21.425,
+          "end": 21.466
+        },
+        {
+          "text": "sequenza",
+          "start": 21.506,
+          "end": 21.946
+        },
+        {
+          "text": "una",
+          "start": 22.086,
+          "end": 22.206
+        },
+        {
+          "text": "finestra",
+          "start": 22.246,
+          "end": 22.626
+        },
+        {
+          "text": "scorrevole",
+          "start": 22.686,
+          "end": 23.226
+        },
+        {
+          "text": "di",
+          "start": 23.346,
+          "end": 23.406
+        },
+        {
+          "text": "dimensione",
+          "start": 23.446,
+          "end": 23.826
+        }
+      ]
+    },
+    {
+      "start": 23.886,
+      "end": 26.286,
+      "text": "fissa, proprio come un registro a scorrimento.",
+      "words": [
+        {
+          "text": "fissa,",
+          "start": 23.886,
+          "end": 24.186
+        },
+        {
+          "text": "proprio",
+          "start": 24.246,
+          "end": 24.486
+        },
+        {
+          "text": "come",
+          "start": 24.886,
+          "end": 25.066
+        },
+        {
+          "text": "un",
+          "start": 25.146,
+          "end": 25.226
+        },
+        {
+          "text": "registro",
+          "start": 25.266,
+          "end": 25.606
+        },
+        {
+          "text": "a",
+          "start": 25.626,
+          "end": 25.666
+        },
+        {
+          "text": "scorrimento.",
+          "start": 25.686,
+          "end": 26.286
+        }
+      ]
+    },
+    {
+      "start": 27.006,
+      "end": 27.806,
+      "text": "A ogni passo t,",
+      "words": [
+        {
+          "text": "A",
+          "start": 27.006,
+          "end": 27.046
+        },
+        {
+          "text": "ogni",
+          "start": 27.106,
+          "end": 27.246
+        },
+        {
+          "text": "passo",
+          "start": 27.326,
+          "end": 27.606
+        },
+        {
+          "text": "t,",
+          "start": 27.766,
+          "end": 27.806
+        }
+      ]
+    },
+    {
+      "start": 28.366,
+      "end": 31.086,
+      "text": "la finestra raccoglie l'input corrente x di t",
+      "words": [
+        {
+          "text": "la",
+          "start": 28.366,
+          "end": 28.406
+        },
+        {
+          "text": "finestra",
+          "start": 28.446,
+          "end": 28.826
+        },
+        {
+          "text": "raccoglie",
+          "start": 28.886,
+          "end": 29.246
+        },
+        {
+          "text": "l'input",
+          "start": 29.286,
+          "end": 29.626
+        },
+        {
+          "text": "corrente",
+          "start": 29.726,
+          "end": 30.226
+        },
+        {
+          "text": "x",
+          "start": 30.526,
+          "end": 30.566
+        },
+        {
+          "text": "di",
+          "start": 30.846,
+          "end": 30.946
+        },
+        {
+          "text": "t",
+          "start": 31.046,
+          "end": 31.086
+        }
+      ]
+    },
+    {
+      "start": 31.647,
+      "end": 36.047,
+      "text": "insieme a un numero prefissato di campioni passati, come x di t meno uno e",
+      "words": [
+        {
+          "text": "insieme",
+          "start": 31.647,
+          "end": 31.927
+        },
+        {
+          "text": "a",
+          "start": 31.967,
+          "end": 32.007
+        },
+        {
+          "text": "un",
+          "start": 32.007,
+          "end": 32.067
+        },
+        {
+          "text": "numero",
+          "start": 32.107,
+          "end": 32.327
+        },
+        {
+          "text": "prefissato",
+          "start": 32.367,
+          "end": 32.807
+        },
+        {
+          "text": "di",
+          "start": 32.847,
+          "end": 32.927
+        },
+        {
+          "text": "campioni",
+          "start": 32.947,
+          "end": 33.267
+        },
+        {
+          "text": "passati,",
+          "start": 33.307,
+          "end": 33.747
+        },
+        {
+          "text": "come",
+          "start": 34.127,
+          "end": 34.267
+        },
+        {
+          "text": "x",
+          "start": 34.767,
+          "end": 34.807
+        },
+        {
+          "text": "di",
+          "start": 35.087,
+          "end": 35.147
+        },
+        {
+          "text": "t",
+          "start": 35.247,
+          "end": 35.287
+        },
+        {
+          "text": "meno",
+          "start": 35.407,
+          "end": 35.587
+        },
+        {
+          "text": "uno",
+          "start": 35.687,
+          "end": 35.847
+        },
+        {
+          "text": "e",
+          "start": 36.007,
+          "end": 36.047
+        }
+      ]
+    },
+    {
+      "start": 36.287,
+      "end": 37.107,
+      "text": "x di t meno due,",
+      "words": [
+        {
+          "text": "x",
+          "start": 36.287,
+          "end": 36.327
+        },
+        {
+          "text": "di",
+          "start": 36.527,
+          "end": 36.587
+        },
+        {
+          "text": "t",
+          "start": 36.627,
+          "end": 36.667
+        },
+        {
+          "text": "meno",
+          "start": 36.747,
+          "end": 36.887
+        },
+        {
+          "text": "due,",
+          "start": 36.947,
+          "end": 37.107
+        }
+      ]
+    },
+    {
+      "start": 37.767,
+      "end": 42.328,
+      "text": "e fornisce questo blocco concatenato in ingresso a un normale Multi-Layer Perceptron.",
+      "words": [
+        {
+          "text": "e",
+          "start": 37.767,
+          "end": 37.807
+        },
+        {
+          "text": "fornisce",
+          "start": 37.847,
+          "end": 38.227
+        },
+        {
+          "text": "questo",
+          "start": 38.267,
+          "end": 38.487
+        },
+        {
+          "text": "blocco",
+          "start": 38.547,
+          "end": 38.847
+        },
+        {
+          "text": "concatenato",
+          "start": 38.907,
+          "end": 39.487
+        },
+        {
+          "text": "in",
+          "start": 39.547,
+          "end": 39.607
+        },
+        {
+          "text": "ingresso",
+          "start": 39.627,
+          "end": 40.007
+        },
+        {
+          "text": "a",
+          "start": 40.127,
+          "end": 40.167
+        },
+        {
+          "text": "un",
+          "start": 40.227,
+          "end": 40.287
+        },
+        {
+          "text": "normale",
+          "start": 40.347,
+          "end": 40.727
+        },
+        {
+          "text": "Multi-Layer",
+          "start": 40.907,
+          "end": 41.628
+        },
+        {
+          "text": "Perceptron.",
+          "start": 41.688,
+          "end": 42.328
+        }
+      ]
+    },
+    {
+      "start": 43.328,
+      "end": 46.928,
+      "text": "Questo approccio funziona bene quando la memoria realmente necessaria è limitata:",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 43.328,
+          "end": 43.508
+        },
+        {
+          "text": "approccio",
+          "start": 43.548,
+          "end": 43.868
+        },
+        {
+          "text": "funziona",
+          "start": 43.908,
+          "end": 44.208
+        },
+        {
+          "text": "bene",
+          "start": 44.268,
+          "end": 44.488
+        },
+        {
+          "text": "quando",
+          "start": 44.928,
+          "end": 45.108
+        },
+        {
+          "text": "la",
+          "start": 45.148,
+          "end": 45.208
+        },
+        {
+          "text": "memoria",
+          "start": 45.228,
+          "end": 45.508
+        },
+        {
+          "text": "realmente",
+          "start": 45.588,
+          "end": 45.948
+        },
+        {
+          "text": "necessaria",
+          "start": 45.988,
+          "end": 46.408
+        },
+        {
+          "text": "è",
+          "start": 46.428,
+          "end": 46.468
+        },
+        {
+          "text": "limitata:",
+          "start": 46.508,
+          "end": 46.928
+        }
+      ]
+    },
+    {
+      "start": 47.388,
+      "end": 50.188,
+      "text": "se la finestra contiene tutta l'informazione utile per decidere,",
+      "words": [
+        {
+          "text": "se",
+          "start": 47.388,
+          "end": 47.468
+        },
+        {
+          "text": "la",
+          "start": 47.488,
+          "end": 47.548
+        },
+        {
+          "text": "finestra",
+          "start": 47.568,
+          "end": 47.908
+        },
+        {
+          "text": "contiene",
+          "start": 47.948,
+          "end": 48.268
+        },
+        {
+          "text": "tutta",
+          "start": 48.408,
+          "end": 48.708
+        },
+        {
+          "text": "l'informazione",
+          "start": 48.728,
+          "end": 49.308
+        },
+        {
+          "text": "utile",
+          "start": 49.368,
+          "end": 49.608
+        },
+        {
+          "text": "per",
+          "start": 49.648,
+          "end": 49.748
+        },
+        {
+          "text": "decidere,",
+          "start": 49.788,
+          "end": 50.188
+        }
+      ]
+    },
+    {
+      "start": 50.268,
+      "end": 52.469,
+      "text": "basta il normale addestramento di un MLP,",
+      "words": [
+        {
+          "text": "basta",
+          "start": 50.268,
+          "end": 50.508
+        },
+        {
+          "text": "il",
+          "start": 50.548,
+          "end": 50.588
+        },
+        {
+          "text": "normale",
+          "start": 50.628,
+          "end": 50.948
+        },
+        {
+          "text": "addestramento",
+          "start": 50.988,
+          "end": 51.609
+        },
+        {
+          "text": "di",
+          "start": 51.749,
+          "end": 51.809
+        },
+        {
+          "text": "un",
+          "start": 51.849,
+          "end": 51.929
+        },
+        {
+          "text": "MLP,",
+          "start": 52.089,
+          "end": 52.469
+        }
+      ]
+    },
+    {
+      "start": 53.189,
+      "end": 54.509,
+      "text": "senza architetture ricorrenti.",
+      "words": [
+        {
+          "text": "senza",
+          "start": 53.189,
+          "end": 53.409
+        },
+        {
+          "text": "architetture",
+          "start": 53.469,
+          "end": 53.929
+        },
+        {
+          "text": "ricorrenti.",
+          "start": 53.969,
+          "end": 54.509
+        }
+      ]
+    },
+    {
+      "start": 55.349,
+      "end": 60.93,
+      "text": "Le reti convoluzionali estendono esattamente questa stessa idea alle griglie bidimensionali delle immagini.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 55.349,
+          "end": 55.409
+        },
+        {
+          "text": "reti",
+          "start": 55.429,
+          "end": 55.629
+        },
+        {
+          "text": "convoluzionali",
+          "start": 55.709,
+          "end": 56.529
+        },
+        {
+          "text": "estendono",
+          "start": 56.629,
+          "end": 57.029
+        },
+        {
+          "text": "esattamente",
+          "start": 57.069,
+          "end": 57.609
+        },
+        {
+          "text": "questa",
+          "start": 57.669,
+          "end": 57.889
+        },
+        {
+          "text": "stessa",
+          "start": 57.929,
+          "end": 58.189
+        },
+        {
+          "text": "idea",
+          "start": 58.249,
+          "end": 58.489
+        },
+        {
+          "text": "alle",
+          "start": 58.829,
+          "end": 59.009
+        },
+        {
+          "text": "griglie",
+          "start": 59.069,
+          "end": 59.409
+        },
+        {
+          "text": "bidimensionali",
+          "start": 59.529,
+          "end": 60.229
+        },
+        {
+          "text": "delle",
+          "start": 60.269,
+          "end": 60.449
+        },
+        {
+          "text": "immagini.",
+          "start": 60.509,
+          "end": 60.93
+        }
+      ]
+    },
+    {
+      "start": 61.73,
+      "end": 63.57,
+      "text": "Tuttavia i limiti strutturali sono evidenti:",
+      "words": [
+        {
+          "text": "Tuttavia",
+          "start": 61.73,
+          "end": 62.05
+        },
+        {
+          "text": "i",
+          "start": 62.11,
+          "end": 62.15
+        },
+        {
+          "text": "limiti",
+          "start": 62.17,
+          "end": 62.43
+        },
+        {
+          "text": "strutturali",
+          "start": 62.49,
+          "end": 62.95
+        },
+        {
+          "text": "sono",
+          "start": 62.97,
+          "end": 63.11
+        },
+        {
+          "text": "evidenti:",
+          "start": 63.13,
+          "end": 63.57
+        }
+      ]
+    },
+    {
+      "start": 64.21,
+      "end": 67.27,
+      "text": "la dimensione della finestra va fissata e conosciuta in anticipo,",
+      "words": [
+        {
+          "text": "la",
+          "start": 64.21,
+          "end": 64.25
+        },
+        {
+          "text": "dimensione",
+          "start": 64.29,
+          "end": 64.71
+        },
+        {
+          "text": "della",
+          "start": 64.73,
+          "end": 64.89
+        },
+        {
+          "text": "finestra",
+          "start": 64.91,
+          "end": 65.27
+        },
+        {
+          "text": "va",
+          "start": 65.33,
+          "end": 65.39
+        },
+        {
+          "text": "fissata",
+          "start": 65.49,
+          "end": 65.99
+        },
+        {
+          "text": "e",
+          "start": 66.13,
+          "end": 66.17
+        },
+        {
+          "text": "conosciuta",
+          "start": 66.27,
+          "end": 66.67
+        },
+        {
+          "text": "in",
+          "start": 66.71,
+          "end": 66.77
+        },
+        {
+          "text": "anticipo,",
+          "start": 66.79,
+          "end": 67.27
+        }
+      ]
+    },
+    {
+      "start": 67.91,
+      "end": 70.81,
+      "text": "il numero di pesi della rete cresce direttamente con la sua ampiezza,",
+      "words": [
+        {
+          "text": "il",
+          "start": 67.91,
+          "end": 67.97
+        },
+        {
+          "text": "numero",
+          "start": 68.01,
+          "end": 68.21
+        },
+        {
+          "text": "di",
+          "start": 68.25,
+          "end": 68.29
+        },
+        {
+          "text": "pesi",
+          "start": 68.33,
+          "end": 68.53
+        },
+        {
+          "text": "della",
+          "start": 68.57,
+          "end": 68.73
+        },
+        {
+          "text": "rete",
+          "start": 68.75,
+          "end": 68.93
+        },
+        {
+          "text": "cresce",
+          "start": 68.99,
+          "end": 69.31
+        },
+        {
+          "text": "direttamente",
+          "start": 69.39,
+          "end": 70.01
+        },
+        {
+          "text": "con",
+          "start": 70.05,
+          "end": 70.13
+        },
+        {
+          "text": "la",
+          "start": 70.17,
+          "end": 70.23
+        },
+        {
+          "text": "sua",
+          "start": 70.23,
+          "end": 70.33
+        },
+        {
+          "text": "ampiezza,",
+          "start": 70.37,
+          "end": 70.81
+        }
+      ]
+    },
+    {
+      "start": 71.471,
+      "end": 75.471,
+      "text": "e tutto ciò che cade fuori dalla finestra viene completamente dimenticato.",
+      "words": [
+        {
+          "text": "e",
+          "start": 71.471,
+          "end": 71.51100000000001
+        },
+        {
+          "text": "tutto",
+          "start": 71.611,
+          "end": 71.891
+        },
+        {
+          "text": "ciò",
+          "start": 71.951,
+          "end": 72.071
+        },
+        {
+          "text": "che",
+          "start": 72.131,
+          "end": 72.211
+        },
+        {
+          "text": "cade",
+          "start": 72.251,
+          "end": 72.451
+        },
+        {
+          "text": "fuori",
+          "start": 72.531,
+          "end": 72.871
+        },
+        {
+          "text": "dalla",
+          "start": 72.911,
+          "end": 73.091
+        },
+        {
+          "text": "finestra",
+          "start": 73.111,
+          "end": 73.551
+        },
+        {
+          "text": "viene",
+          "start": 73.771,
+          "end": 73.971
+        },
+        {
+          "text": "completamente",
+          "start": 74.151,
+          "end": 74.871
+        },
+        {
+          "text": "dimenticato.",
+          "start": 74.911,
+          "end": 75.471
+        }
+      ]
+    }
+  ]
+}

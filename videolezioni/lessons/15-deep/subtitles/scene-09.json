@@ -1,0 +1,1668 @@
+{
+  "duration": 119.69,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.601,
+      "text": "Storicamente, il pre-training non supervisionato strato per strato è stato il primo approccio capace di",
+      "words": [
+        {
+          "text": "Storicamente,",
+          "start": 0.08,
+          "end": 0.84
+        },
+        {
+          "text": "il",
+          "start": 1.12,
+          "end": 1.22
+        },
+        {
+          "text": "pre-training",
+          "start": 1.26,
+          "end": 1.82
+        },
+        {
+          "text": "non",
+          "start": 1.9,
+          "end": 2.02
+        },
+        {
+          "text": "supervisionato",
+          "start": 2.08,
+          "end": 2.8
+        },
+        {
+          "text": "strato",
+          "start": 2.88,
+          "end": 3.241
+        },
+        {
+          "text": "per",
+          "start": 3.281,
+          "end": 3.401
+        },
+        {
+          "text": "strato",
+          "start": 3.461,
+          "end": 3.861
+        },
+        {
+          "text": "è",
+          "start": 3.981,
+          "end": 4.021
+        },
+        {
+          "text": "stato",
+          "start": 4.041,
+          "end": 4.261
+        },
+        {
+          "text": "il",
+          "start": 4.301,
+          "end": 4.361
+        },
+        {
+          "text": "primo",
+          "start": 4.441,
+          "end": 4.661
+        },
+        {
+          "text": "approccio",
+          "start": 4.701,
+          "end": 5.101
+        },
+        {
+          "text": "capace",
+          "start": 5.161,
+          "end": 5.501
+        },
+        {
+          "text": "di",
+          "start": 5.541,
+          "end": 5.601
+        }
+      ]
+    },
+    {
+      "start": 5.641,
+      "end": 10.162,
+      "text": "rendere addestrabili le reti profonde, a parte le CNN e le RNN.",
+      "words": [
+        {
+          "text": "rendere",
+          "start": 5.641,
+          "end": 5.921
+        },
+        {
+          "text": "addestrabili",
+          "start": 5.961,
+          "end": 6.701
+        },
+        {
+          "text": "le",
+          "start": 6.761,
+          "end": 6.821
+        },
+        {
+          "text": "reti",
+          "start": 6.881,
+          "end": 7.101
+        },
+        {
+          "text": "profonde,",
+          "start": 7.141,
+          "end": 7.661
+        },
+        {
+          "text": "a",
+          "start": 8.061,
+          "end": 8.101
+        },
+        {
+          "text": "parte",
+          "start": 8.141,
+          "end": 8.381
+        },
+        {
+          "text": "le",
+          "start": 8.441,
+          "end": 8.501
+        },
+        {
+          "text": "CNN",
+          "start": 8.541,
+          "end": 9.022
+        },
+        {
+          "text": "e",
+          "start": 9.202,
+          "end": 9.242
+        },
+        {
+          "text": "le",
+          "start": 9.322,
+          "end": 9.382
+        },
+        {
+          "text": "RNN.",
+          "start": 9.582,
+          "end": 10.162
+        }
+      ]
+    },
+    {
+      "start": 10.702,
+      "end": 15.483,
+      "text": "L'idea era catturare la distribuzione dell'input uno strato alla volta per inizializzare la rete,",
+      "words": [
+        {
+          "text": "L'idea",
+          "start": 10.702,
+          "end": 11.002
+        },
+        {
+          "text": "era",
+          "start": 11.042,
+          "end": 11.142
+        },
+        {
+          "text": "catturare",
+          "start": 11.202,
+          "end": 11.642
+        },
+        {
+          "text": "la",
+          "start": 11.722,
+          "end": 11.782
+        },
+        {
+          "text": "distribuzione",
+          "start": 11.862,
+          "end": 12.522
+        },
+        {
+          "text": "dell'input",
+          "start": 12.562,
+          "end": 13.042
+        },
+        {
+          "text": "uno",
+          "start": 13.102,
+          "end": 13.222
+        },
+        {
+          "text": "strato",
+          "start": 13.302,
+          "end": 13.582
+        },
+        {
+          "text": "alla",
+          "start": 13.622,
+          "end": 13.782
+        },
+        {
+          "text": "volta",
+          "start": 13.822,
+          "end": 14.162
+        },
+        {
+          "text": "per",
+          "start": 14.222,
+          "end": 14.362
+        },
+        {
+          "text": "inizializzare",
+          "start": 14.402,
+          "end": 15.043
+        },
+        {
+          "text": "la",
+          "start": 15.103,
+          "end": 15.163
+        },
+        {
+          "text": "rete,",
+          "start": 15.223,
+          "end": 15.483
+        }
+      ]
+    },
+    {
+      "start": 15.843,
+      "end": 19.663,
+      "text": "invece di addestrarla subito end-to-end con la discesa del gradiente.",
+      "words": [
+        {
+          "text": "invece",
+          "start": 15.843,
+          "end": 16.123
+        },
+        {
+          "text": "di",
+          "start": 16.163,
+          "end": 16.223
+        },
+        {
+          "text": "addestrarla",
+          "start": 16.263,
+          "end": 16.883
+        },
+        {
+          "text": "subito",
+          "start": 16.923,
+          "end": 17.263
+        },
+        {
+          "text": "end-to-end",
+          "start": 17.463,
+          "end": 18.063
+        },
+        {
+          "text": "con",
+          "start": 18.183,
+          "end": 18.343
+        },
+        {
+          "text": "la",
+          "start": 18.403,
+          "end": 18.483
+        },
+        {
+          "text": "discesa",
+          "start": 18.523,
+          "end": 18.903
+        },
+        {
+          "text": "del",
+          "start": 18.963,
+          "end": 19.083
+        },
+        {
+          "text": "gradiente.",
+          "start": 19.123,
+          "end": 19.663
+        }
+      ]
+    },
+    {
+      "start": 20.463,
+      "end": 23.564,
+      "text": "Lo strumento protagonista di questa idea è l'autoencoder.",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 20.463,
+          "end": 20.523
+        },
+        {
+          "text": "strumento",
+          "start": 20.543,
+          "end": 20.903
+        },
+        {
+          "text": "protagonista",
+          "start": 20.923,
+          "end": 21.504
+        },
+        {
+          "text": "di",
+          "start": 21.544,
+          "end": 21.604
+        },
+        {
+          "text": "questa",
+          "start": 21.644,
+          "end": 21.864
+        },
+        {
+          "text": "idea",
+          "start": 21.924,
+          "end": 22.144
+        },
+        {
+          "text": "è",
+          "start": 22.364,
+          "end": 22.404
+        },
+        {
+          "text": "l'autoencoder.",
+          "start": 22.664,
+          "end": 23.564
+        }
+      ]
+    },
+    {
+      "start": 24.184,
+      "end": 29.125,
+      "text": "Per definizione, un autoencoder è una rete neurale addestrata a copiare il proprio input in",
+      "words": [
+        {
+          "text": "Per",
+          "start": 24.184,
+          "end": 24.304
+        },
+        {
+          "text": "definizione,",
+          "start": 24.364,
+          "end": 24.924
+        },
+        {
+          "text": "un",
+          "start": 25.124,
+          "end": 25.204
+        },
+        {
+          "text": "autoencoder",
+          "start": 25.264,
+          "end": 25.844
+        },
+        {
+          "text": "è",
+          "start": 25.904,
+          "end": 25.944
+        },
+        {
+          "text": "una",
+          "start": 25.984,
+          "end": 26.084
+        },
+        {
+          "text": "rete",
+          "start": 26.124,
+          "end": 26.324
+        },
+        {
+          "text": "neurale",
+          "start": 26.364,
+          "end": 26.764
+        },
+        {
+          "text": "addestrata",
+          "start": 26.804,
+          "end": 27.405
+        },
+        {
+          "text": "a",
+          "start": 27.465,
+          "end": 27.505
+        },
+        {
+          "text": "copiare",
+          "start": 27.545,
+          "end": 28.005
+        },
+        {
+          "text": "il",
+          "start": 28.045,
+          "end": 28.105
+        },
+        {
+          "text": "proprio",
+          "start": 28.185,
+          "end": 28.565
+        },
+        {
+          "text": "input",
+          "start": 28.665,
+          "end": 29.005
+        },
+        {
+          "text": "in",
+          "start": 29.065,
+          "end": 29.125
+        }
+      ]
+    },
+    {
+      "start": 29.165,
+      "end": 29.585,
+      "text": "uscita.",
+      "words": [
+        {
+          "text": "uscita.",
+          "start": 29.165,
+          "end": 29.585
+        }
+      ]
+    },
+    {
+      "start": 30.225,
+      "end": 34.186,
+      "text": "Possiede uno strato nascosto h che descrive un codice dell'input,",
+      "words": [
+        {
+          "text": "Possiede",
+          "start": 30.225,
+          "end": 30.565
+        },
+        {
+          "text": "uno",
+          "start": 30.605,
+          "end": 30.725
+        },
+        {
+          "text": "strato",
+          "start": 30.765,
+          "end": 31.045
+        },
+        {
+          "text": "nascosto",
+          "start": 31.085,
+          "end": 31.565
+        },
+        {
+          "text": "h",
+          "start": 32.005,
+          "end": 32.045
+        },
+        {
+          "text": "che",
+          "start": 32.245,
+          "end": 32.325
+        },
+        {
+          "text": "descrive",
+          "start": 32.425,
+          "end": 32.905
+        },
+        {
+          "text": "un",
+          "start": 32.966,
+          "end": 33.046
+        },
+        {
+          "text": "codice",
+          "start": 33.106,
+          "end": 33.506
+        },
+        {
+          "text": "dell'input,",
+          "start": 33.566,
+          "end": 34.186
+        }
+      ]
+    },
+    {
+      "start": 34.726,
+      "end": 38.766,
+      "text": "ed è composto da due moduli: un encoder che calcola il codice h uguale a",
+      "words": [
+        {
+          "text": "ed",
+          "start": 34.726,
+          "end": 34.806
+        },
+        {
+          "text": "è",
+          "start": 34.846,
+          "end": 34.886
+        },
+        {
+          "text": "composto",
+          "start": 34.926,
+          "end": 35.326
+        },
+        {
+          "text": "da",
+          "start": 35.366,
+          "end": 35.426
+        },
+        {
+          "text": "due",
+          "start": 35.486,
+          "end": 35.606
+        },
+        {
+          "text": "moduli:",
+          "start": 35.666,
+          "end": 36.046
+        },
+        {
+          "text": "un",
+          "start": 36.426,
+          "end": 36.506
+        },
+        {
+          "text": "encoder",
+          "start": 36.566,
+          "end": 37.046
+        },
+        {
+          "text": "che",
+          "start": 37.146,
+          "end": 37.226
+        },
+        {
+          "text": "calcola",
+          "start": 37.306,
+          "end": 37.646
+        },
+        {
+          "text": "il",
+          "start": 37.686,
+          "end": 37.746
+        },
+        {
+          "text": "codice",
+          "start": 37.766,
+          "end": 38.086
+        },
+        {
+          "text": "h",
+          "start": 38.306,
+          "end": 38.346
+        },
+        {
+          "text": "uguale",
+          "start": 38.426,
+          "end": 38.686
+        },
+        {
+          "text": "a",
+          "start": 38.726,
+          "end": 38.766
+        }
+      ]
+    },
+    {
+      "start": 38.907,
+      "end": 43.427,
+      "text": "f di x, e un decoder che produce la ricostruzione r uguale a g di",
+      "words": [
+        {
+          "text": "f",
+          "start": 38.907,
+          "end": 38.947
+        },
+        {
+          "text": "di",
+          "start": 39.047,
+          "end": 39.187
+        },
+        {
+          "text": "x,",
+          "start": 39.267,
+          "end": 39.307
+        },
+        {
+          "text": "e",
+          "start": 39.947,
+          "end": 39.987
+        },
+        {
+          "text": "un",
+          "start": 40.047,
+          "end": 40.127
+        },
+        {
+          "text": "decoder",
+          "start": 40.147,
+          "end": 40.627
+        },
+        {
+          "text": "che",
+          "start": 40.707,
+          "end": 40.787
+        },
+        {
+          "text": "produce",
+          "start": 40.847,
+          "end": 41.207
+        },
+        {
+          "text": "la",
+          "start": 41.267,
+          "end": 41.327
+        },
+        {
+          "text": "ricostruzione",
+          "start": 41.367,
+          "end": 42.067
+        },
+        {
+          "text": "r",
+          "start": 42.487,
+          "end": 42.527
+        },
+        {
+          "text": "uguale",
+          "start": 42.707,
+          "end": 43.027
+        },
+        {
+          "text": "a",
+          "start": 43.067,
+          "end": 43.107
+        },
+        {
+          "text": "g",
+          "start": 43.187,
+          "end": 43.227
+        },
+        {
+          "text": "di",
+          "start": 43.347,
+          "end": 43.427
+        }
+      ]
+    },
+    {
+      "start": 43.767,
+      "end": 46.788,
+      "text": "h, cercando di ottenere r circa uguale a x.",
+      "words": [
+        {
+          "text": "h,",
+          "start": 43.767,
+          "end": 43.807
+        },
+        {
+          "text": "cercando",
+          "start": 44.207,
+          "end": 44.567
+        },
+        {
+          "text": "di",
+          "start": 44.607,
+          "end": 44.647
+        },
+        {
+          "text": "ottenere",
+          "start": 44.687,
+          "end": 45.028
+        },
+        {
+          "text": "r",
+          "start": 45.468,
+          "end": 45.508
+        },
+        {
+          "text": "circa",
+          "start": 45.728,
+          "end": 46.008
+        },
+        {
+          "text": "uguale",
+          "start": 46.048,
+          "end": 46.348
+        },
+        {
+          "text": "a",
+          "start": 46.468,
+          "end": 46.508
+        },
+        {
+          "text": "x.",
+          "start": 46.748,
+          "end": 46.788
+        }
+      ]
+    },
+    {
+      "start": 47.548,
+      "end": 51.149,
+      "text": "Non servono etichette: è puro apprendimento non supervisionato.",
+      "words": [
+        {
+          "text": "Non",
+          "start": 47.548,
+          "end": 47.668
+        },
+        {
+          "text": "servono",
+          "start": 47.728,
+          "end": 48.048
+        },
+        {
+          "text": "etichette:",
+          "start": 48.088,
+          "end": 48.588
+        },
+        {
+          "text": "è",
+          "start": 48.868,
+          "end": 48.908
+        },
+        {
+          "text": "puro",
+          "start": 49.068,
+          "end": 49.308
+        },
+        {
+          "text": "apprendimento",
+          "start": 49.348,
+          "end": 50.028
+        },
+        {
+          "text": "non",
+          "start": 50.168,
+          "end": 50.328
+        },
+        {
+          "text": "supervisionato.",
+          "start": 50.388,
+          "end": 51.149
+        }
+      ]
+    },
+    {
+      "start": 52.229,
+      "end": 56.93,
+      "text": "Per evitare che la rete impari la banale funzione identità senza estrarre nulla di utile,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 52.229,
+          "end": 52.329
+        },
+        {
+          "text": "evitare",
+          "start": 52.369,
+          "end": 52.709
+        },
+        {
+          "text": "che",
+          "start": 52.749,
+          "end": 52.829
+        },
+        {
+          "text": "la",
+          "start": 52.869,
+          "end": 52.929
+        },
+        {
+          "text": "rete",
+          "start": 52.969,
+          "end": 53.149
+        },
+        {
+          "text": "impari",
+          "start": 53.209,
+          "end": 53.669
+        },
+        {
+          "text": "la",
+          "start": 53.729,
+          "end": 53.789
+        },
+        {
+          "text": "banale",
+          "start": 53.849,
+          "end": 54.149
+        },
+        {
+          "text": "funzione",
+          "start": 54.189,
+          "end": 54.529
+        },
+        {
+          "text": "identità",
+          "start": 54.569,
+          "end": 55.029
+        },
+        {
+          "text": "senza",
+          "start": 55.409,
+          "end": 55.669
+        },
+        {
+          "text": "estrarre",
+          "start": 55.709,
+          "end": 56.109
+        },
+        {
+          "text": "nulla",
+          "start": 56.169,
+          "end": 56.409
+        },
+        {
+          "text": "di",
+          "start": 56.449,
+          "end": 56.529
+        },
+        {
+          "text": "utile,",
+          "start": 56.629,
+          "end": 56.93
+        }
+      ]
+    },
+    {
+      "start": 57.25,
+      "end": 59.15,
+      "text": "si usano tre varianti principali.",
+      "words": [
+        {
+          "text": "si",
+          "start": 57.25,
+          "end": 57.31
+        },
+        {
+          "text": "usano",
+          "start": 57.35,
+          "end": 57.59
+        },
+        {
+          "text": "tre",
+          "start": 57.69,
+          "end": 57.83
+        },
+        {
+          "text": "varianti",
+          "start": 57.91,
+          "end": 58.33
+        },
+        {
+          "text": "principali.",
+          "start": 58.45,
+          "end": 59.15
+        }
+      ]
+    },
+    {
+      "start": 59.75,
+      "end": 62.23,
+      "text": "Prima variante: autoencoder undercomplete.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 59.75,
+          "end": 59.97
+        },
+        {
+          "text": "variante:",
+          "start": 60.01,
+          "end": 60.45
+        },
+        {
+          "text": "autoencoder",
+          "start": 60.67,
+          "end": 61.33
+        },
+        {
+          "text": "undercomplete.",
+          "start": 61.49,
+          "end": 62.23
+        }
+      ]
+    },
+    {
+      "start": 62.65,
+      "end": 67.151,
+      "text": "Lo strato nascosto h è più piccolo dell'input, come mostrato nel diagramma a collo di",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 62.65,
+          "end": 62.73
+        },
+        {
+          "text": "strato",
+          "start": 62.79,
+          "end": 63.071
+        },
+        {
+          "text": "nascosto",
+          "start": 63.111,
+          "end": 63.511
+        },
+        {
+          "text": "h",
+          "start": 63.791,
+          "end": 63.831
+        },
+        {
+          "text": "è",
+          "start": 63.951,
+          "end": 63.991
+        },
+        {
+          "text": "più",
+          "start": 64.071,
+          "end": 64.171
+        },
+        {
+          "text": "piccolo",
+          "start": 64.311,
+          "end": 64.691
+        },
+        {
+          "text": "dell'input,",
+          "start": 64.731,
+          "end": 65.271
+        },
+        {
+          "text": "come",
+          "start": 65.371,
+          "end": 65.531
+        },
+        {
+          "text": "mostrato",
+          "start": 65.591,
+          "end": 66.011
+        },
+        {
+          "text": "nel",
+          "start": 66.071,
+          "end": 66.191
+        },
+        {
+          "text": "diagramma",
+          "start": 66.211,
+          "end": 66.631
+        },
+        {
+          "text": "a",
+          "start": 66.691,
+          "end": 66.73100000000001
+        },
+        {
+          "text": "collo",
+          "start": 66.791,
+          "end": 67.031
+        },
+        {
+          "text": "di",
+          "start": 67.071,
+          "end": 67.151
+        }
+      ]
+    },
+    {
+      "start": 67.191,
+      "end": 67.711,
+      "text": "bottiglia.",
+      "words": [
+        {
+          "text": "bottiglia.",
+          "start": 67.191,
+          "end": 67.711
+        }
+      ]
+    },
+    {
+      "start": 68.311,
+      "end": 73.232,
+      "text": "Questo vincolo architetturale forza la rete a catturare solo le feature più salienti per ricostruire",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 68.311,
+          "end": 68.551
+        },
+        {
+          "text": "vincolo",
+          "start": 68.671,
+          "end": 69.052
+        },
+        {
+          "text": "architetturale",
+          "start": 69.092,
+          "end": 69.772
+        },
+        {
+          "text": "forza",
+          "start": 69.832,
+          "end": 70.112
+        },
+        {
+          "text": "la",
+          "start": 70.152,
+          "end": 70.212
+        },
+        {
+          "text": "rete",
+          "start": 70.252,
+          "end": 70.432
+        },
+        {
+          "text": "a",
+          "start": 70.472,
+          "end": 70.512
+        },
+        {
+          "text": "catturare",
+          "start": 70.552,
+          "end": 70.992
+        },
+        {
+          "text": "solo",
+          "start": 71.052,
+          "end": 71.232
+        },
+        {
+          "text": "le",
+          "start": 71.272,
+          "end": 71.352
+        },
+        {
+          "text": "feature",
+          "start": 71.432,
+          "end": 71.772
+        },
+        {
+          "text": "più",
+          "start": 71.812,
+          "end": 71.892
+        },
+        {
+          "text": "salienti",
+          "start": 71.972,
+          "end": 72.452
+        },
+        {
+          "text": "per",
+          "start": 72.512,
+          "end": 72.632
+        },
+        {
+          "text": "ricostruire",
+          "start": 72.672,
+          "end": 73.232
+        }
+      ]
+    },
+    {
+      "start": 73.432,
+      "end": 73.47200000000001,
+      "text": "x.",
+      "words": [
+        {
+          "text": "x.",
+          "start": 73.432,
+          "end": 73.47200000000001
+        }
+      ]
+    },
+    {
+      "start": 74.292,
+      "end": 78.433,
+      "text": "Un collegamento notevole: se il decoder è lineare e la loss è quadratica,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 74.292,
+          "end": 74.372
+        },
+        {
+          "text": "collegamento",
+          "start": 74.432,
+          "end": 75.053
+        },
+        {
+          "text": "notevole:",
+          "start": 75.113,
+          "end": 75.593
+        },
+        {
+          "text": "se",
+          "start": 76.153,
+          "end": 76.233
+        },
+        {
+          "text": "il",
+          "start": 76.293,
+          "end": 76.353
+        },
+        {
+          "text": "decoder",
+          "start": 76.393,
+          "end": 76.733
+        },
+        {
+          "text": "è",
+          "start": 76.773,
+          "end": 76.813
+        },
+        {
+          "text": "lineare",
+          "start": 76.873,
+          "end": 77.353
+        },
+        {
+          "text": "e",
+          "start": 77.373,
+          "end": 77.41300000000001
+        },
+        {
+          "text": "la",
+          "start": 77.393,
+          "end": 77.453
+        },
+        {
+          "text": "loss",
+          "start": 77.513,
+          "end": 77.693
+        },
+        {
+          "text": "è",
+          "start": 77.753,
+          "end": 77.793
+        },
+        {
+          "text": "quadratica,",
+          "start": 77.833,
+          "end": 78.433
+        }
+      ]
+    },
+    {
+      "start": 78.853,
+      "end": 84.334,
+      "text": "l'autoencoder undercomplete recupera esattamente la PCA, cioè la Principal Component Analysis,",
+      "words": [
+        {
+          "text": "l'autoencoder",
+          "start": 78.853,
+          "end": 79.553
+        },
+        {
+          "text": "undercomplete",
+          "start": 79.593,
+          "end": 80.353
+        },
+        {
+          "text": "recupera",
+          "start": 80.533,
+          "end": 80.954
+        },
+        {
+          "text": "esattamente",
+          "start": 81.134,
+          "end": 81.794
+        },
+        {
+          "text": "la",
+          "start": 81.894,
+          "end": 81.954
+        },
+        {
+          "text": "PCA,",
+          "start": 82.014,
+          "end": 82.394
+        },
+        {
+          "text": "cioè",
+          "start": 82.514,
+          "end": 82.654
+        },
+        {
+          "text": "la",
+          "start": 82.694,
+          "end": 82.754
+        },
+        {
+          "text": "Principal",
+          "start": 82.794,
+          "end": 83.234
+        },
+        {
+          "text": "Component",
+          "start": 83.274,
+          "end": 83.714
+        },
+        {
+          "text": "Analysis,",
+          "start": 83.774,
+          "end": 84.334
+        }
+      ]
+    },
+    {
+      "start": 84.774,
+      "end": 88.215,
+      "text": "la classica proiezione lineare sulle direzioni di massima varianza.",
+      "words": [
+        {
+          "text": "la",
+          "start": 84.774,
+          "end": 84.854
+        },
+        {
+          "text": "classica",
+          "start": 84.894,
+          "end": 85.314
+        },
+        {
+          "text": "proiezione",
+          "start": 85.394,
+          "end": 85.854
+        },
+        {
+          "text": "lineare",
+          "start": 85.934,
+          "end": 86.334
+        },
+        {
+          "text": "sulle",
+          "start": 86.374,
+          "end": 86.594
+        },
+        {
+          "text": "direzioni",
+          "start": 86.614,
+          "end": 87.175
+        },
+        {
+          "text": "di",
+          "start": 87.235,
+          "end": 87.295
+        },
+        {
+          "text": "massima",
+          "start": 87.335,
+          "end": 87.675
+        },
+        {
+          "text": "varianza.",
+          "start": 87.715,
+          "end": 88.215
+        }
+      ]
+    },
+    {
+      "start": 89.055,
+      "end": 91.895,
+      "text": "Seconda variante: autoencoder overcomplete.",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 89.055,
+          "end": 89.375
+        },
+        {
+          "text": "variante:",
+          "start": 89.415,
+          "end": 89.895
+        },
+        {
+          "text": "autoencoder",
+          "start": 90.135,
+          "end": 90.855
+        },
+        {
+          "text": "overcomplete.",
+          "start": 91.075,
+          "end": 91.895
+        }
+      ]
+    },
+    {
+      "start": 92.475,
+      "end": 97.936,
+      "text": "Qui lo strato nascosto è più grande dell'input, ma si aggiunge una regolarizzazione che impone",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 92.475,
+          "end": 92.575
+        },
+        {
+          "text": "lo",
+          "start": 92.956,
+          "end": 93.036
+        },
+        {
+          "text": "strato",
+          "start": 93.096,
+          "end": 93.376
+        },
+        {
+          "text": "nascosto",
+          "start": 93.416,
+          "end": 93.816
+        },
+        {
+          "text": "è",
+          "start": 93.896,
+          "end": 93.936
+        },
+        {
+          "text": "più",
+          "start": 93.996,
+          "end": 94.116
+        },
+        {
+          "text": "grande",
+          "start": 94.216,
+          "end": 94.616
+        },
+        {
+          "text": "dell'input,",
+          "start": 94.676,
+          "end": 95.316
+        },
+        {
+          "text": "ma",
+          "start": 95.856,
+          "end": 95.916
+        },
+        {
+          "text": "si",
+          "start": 96.056,
+          "end": 96.116
+        },
+        {
+          "text": "aggiunge",
+          "start": 96.136,
+          "end": 96.436
+        },
+        {
+          "text": "una",
+          "start": 96.496,
+          "end": 96.596
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 96.676,
+          "end": 97.516
+        },
+        {
+          "text": "che",
+          "start": 97.576,
+          "end": 97.636
+        },
+        {
+          "text": "impone",
+          "start": 97.676,
+          "end": 97.936
+        }
+      ]
+    },
+    {
+      "start": 97.996,
+      "end": 103.557,
+      "text": "sparsità, robustezza al rumore o altre proprietà strutturali, impedendo la copia banale.",
+      "words": [
+        {
+          "text": "sparsità,",
+          "start": 97.996,
+          "end": 98.516
+        },
+        {
+          "text": "robustezza",
+          "start": 98.917,
+          "end": 99.477
+        },
+        {
+          "text": "al",
+          "start": 99.497,
+          "end": 99.537
+        },
+        {
+          "text": "rumore",
+          "start": 99.577,
+          "end": 99.937
+        },
+        {
+          "text": "o",
+          "start": 100.037,
+          "end": 100.07700000000001
+        },
+        {
+          "text": "altre",
+          "start": 100.197,
+          "end": 100.477
+        },
+        {
+          "text": "proprietà",
+          "start": 100.617,
+          "end": 100.977
+        },
+        {
+          "text": "strutturali,",
+          "start": 101.057,
+          "end": 101.677
+        },
+        {
+          "text": "impedendo",
+          "start": 102.097,
+          "end": 102.637
+        },
+        {
+          "text": "la",
+          "start": 102.777,
+          "end": 102.857
+        },
+        {
+          "text": "copia",
+          "start": 102.917,
+          "end": 103.157
+        },
+        {
+          "text": "banale.",
+          "start": 103.197,
+          "end": 103.557
+        }
+      ]
+    },
+    {
+      "start": 104.357,
+      "end": 107.118,
+      "text": "Terza variante: denoising autoencoder.",
+      "words": [
+        {
+          "text": "Terza",
+          "start": 104.357,
+          "end": 104.617
+        },
+        {
+          "text": "variante:",
+          "start": 104.657,
+          "end": 105.118
+        },
+        {
+          "text": "denoising",
+          "start": 105.578,
+          "end": 106.158
+        },
+        {
+          "text": "autoencoder.",
+          "start": 106.358,
+          "end": 107.118
+        }
+      ]
+    },
+    {
+      "start": 107.658,
+      "end": 112.139,
+      "text": "La rete viene addestrata a ricostruire l'input pulito a partire da una sua versione corrotta",
+      "words": [
+        {
+          "text": "La",
+          "start": 107.658,
+          "end": 107.718
+        },
+        {
+          "text": "rete",
+          "start": 107.758,
+          "end": 107.978
+        },
+        {
+          "text": "viene",
+          "start": 108.138,
+          "end": 108.318
+        },
+        {
+          "text": "addestrata",
+          "start": 108.338,
+          "end": 108.778
+        },
+        {
+          "text": "a",
+          "start": 108.798,
+          "end": 108.83800000000001
+        },
+        {
+          "text": "ricostruire",
+          "start": 108.858,
+          "end": 109.418
+        },
+        {
+          "text": "l'input",
+          "start": 109.518,
+          "end": 109.978
+        },
+        {
+          "text": "pulito",
+          "start": 110.058,
+          "end": 110.378
+        },
+        {
+          "text": "a",
+          "start": 110.418,
+          "end": 110.45800000000001
+        },
+        {
+          "text": "partire",
+          "start": 110.498,
+          "end": 110.859
+        },
+        {
+          "text": "da",
+          "start": 110.899,
+          "end": 110.93900000000001
+        },
+        {
+          "text": "una",
+          "start": 110.999,
+          "end": 111.119
+        },
+        {
+          "text": "sua",
+          "start": 111.179,
+          "end": 111.319
+        },
+        {
+          "text": "versione",
+          "start": 111.359,
+          "end": 111.719
+        },
+        {
+          "text": "corrotta",
+          "start": 111.779,
+          "end": 112.139
+        }
+      ]
+    },
+    {
+      "start": 112.179,
+      "end": 117.56,
+      "text": "da rumore: una buona rappresentazione si ottiene così in modo robusto dal segnale corrotto e",
+      "words": [
+        {
+          "text": "da",
+          "start": 112.179,
+          "end": 112.239
+        },
+        {
+          "text": "rumore:",
+          "start": 112.299,
+          "end": 112.659
+        },
+        {
+          "text": "una",
+          "start": 113.379,
+          "end": 113.519
+        },
+        {
+          "text": "buona",
+          "start": 113.559,
+          "end": 113.779
+        },
+        {
+          "text": "rappresentazione",
+          "start": 113.819,
+          "end": 114.599
+        },
+        {
+          "text": "si",
+          "start": 114.639,
+          "end": 114.699
+        },
+        {
+          "text": "ottiene",
+          "start": 114.719,
+          "end": 114.999
+        },
+        {
+          "text": "così",
+          "start": 115.039,
+          "end": 115.219
+        },
+        {
+          "text": "in",
+          "start": 115.279,
+          "end": 115.319
+        },
+        {
+          "text": "modo",
+          "start": 115.359,
+          "end": 115.539
+        },
+        {
+          "text": "robusto",
+          "start": 115.619,
+          "end": 116.039
+        },
+        {
+          "text": "dal",
+          "start": 116.079,
+          "end": 116.219
+        },
+        {
+          "text": "segnale",
+          "start": 116.259,
+          "end": 116.579
+        },
+        {
+          "text": "corrotto",
+          "start": 116.619,
+          "end": 117.12
+        },
+        {
+          "text": "e",
+          "start": 117.52,
+          "end": 117.56
+        }
+      ]
+    },
+    {
+      "start": 117.6,
+      "end": 119.44,
+      "text": "permette di recuperare il dato pulito.",
+      "words": [
+        {
+          "text": "permette",
+          "start": 117.6,
+          "end": 117.96
+        },
+        {
+          "text": "di",
+          "start": 118.0,
+          "end": 118.06
+        },
+        {
+          "text": "recuperare",
+          "start": 118.1,
+          "end": 118.6
+        },
+        {
+          "text": "il",
+          "start": 118.72,
+          "end": 118.8
+        },
+        {
+          "text": "dato",
+          "start": 118.84,
+          "end": 119.04
+        },
+        {
+          "text": "pulito.",
+          "start": 119.08,
+          "end": 119.44
+        }
+      ]
+    }
+  ]
+}

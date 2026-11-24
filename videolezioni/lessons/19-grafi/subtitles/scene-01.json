@@ -1,0 +1,1500 @@
+{
+  "duration": 97.158,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.821,
+      "text": "In quest'ultimo capitolo estendiamo l'apprendimento automatico dai vettori e dalle sequenze fino ai grafi generali.",
+      "words": [
+        {
+          "text": "In",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "quest'ultimo",
+          "start": 0.2,
+          "end": 0.74
+        },
+        {
+          "text": "capitolo",
+          "start": 0.8,
+          "end": 1.26
+        },
+        {
+          "text": "estendiamo",
+          "start": 1.42,
+          "end": 1.94
+        },
+        {
+          "text": "l'apprendimento",
+          "start": 1.98,
+          "end": 2.6
+        },
+        {
+          "text": "automatico",
+          "start": 2.64,
+          "end": 3.22
+        },
+        {
+          "text": "dai",
+          "start": 3.28,
+          "end": 3.42
+        },
+        {
+          "text": "vettori",
+          "start": 3.46,
+          "end": 3.88
+        },
+        {
+          "text": "e",
+          "start": 3.92,
+          "end": 3.96
+        },
+        {
+          "text": "dalle",
+          "start": 3.96,
+          "end": 4.14
+        },
+        {
+          "text": "sequenze",
+          "start": 4.18,
+          "end": 4.68
+        },
+        {
+          "text": "fino",
+          "start": 4.72,
+          "end": 4.9
+        },
+        {
+          "text": "ai",
+          "start": 4.94,
+          "end": 5.0
+        },
+        {
+          "text": "grafi",
+          "start": 5.04,
+          "end": 5.28
+        },
+        {
+          "text": "generali.",
+          "start": 5.321,
+          "end": 5.821
+        }
+      ]
+    },
+    {
+      "start": 6.521,
+      "end": 10.261,
+      "text": "Il nostro corso ha seguito una progressione precisa nel dominio dei dati di input:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 6.521,
+          "end": 6.601
+        },
+        {
+          "text": "nostro",
+          "start": 6.641,
+          "end": 6.901
+        },
+        {
+          "text": "corso",
+          "start": 6.941,
+          "end": 7.181
+        },
+        {
+          "text": "ha",
+          "start": 7.201,
+          "end": 7.241
+        },
+        {
+          "text": "seguito",
+          "start": 7.281,
+          "end": 7.581
+        },
+        {
+          "text": "una",
+          "start": 7.621,
+          "end": 7.721
+        },
+        {
+          "text": "progressione",
+          "start": 7.761,
+          "end": 8.301
+        },
+        {
+          "text": "precisa",
+          "start": 8.341,
+          "end": 8.781
+        },
+        {
+          "text": "nel",
+          "start": 8.841,
+          "end": 8.961
+        },
+        {
+          "text": "dominio",
+          "start": 8.981,
+          "end": 9.321
+        },
+        {
+          "text": "dei",
+          "start": 9.381,
+          "end": 9.501
+        },
+        {
+          "text": "dati",
+          "start": 9.541,
+          "end": 9.761
+        },
+        {
+          "text": "di",
+          "start": 9.801,
+          "end": 9.861
+        },
+        {
+          "text": "input:",
+          "start": 9.901,
+          "end": 10.261
+        }
+      ]
+    },
+    {
+      "start": 10.761,
+      "end": 14.201,
+      "text": "siamo partiti dai vettori piatti elaborati dalle reti feedforward,",
+      "words": [
+        {
+          "text": "siamo",
+          "start": 10.761,
+          "end": 10.941
+        },
+        {
+          "text": "partiti",
+          "start": 11.001,
+          "end": 11.361
+        },
+        {
+          "text": "dai",
+          "start": 11.421,
+          "end": 11.541
+        },
+        {
+          "text": "vettori",
+          "start": 11.581,
+          "end": 11.901
+        },
+        {
+          "text": "piatti",
+          "start": 11.981,
+          "end": 12.341
+        },
+        {
+          "text": "elaborati",
+          "start": 12.381,
+          "end": 12.841
+        },
+        {
+          "text": "dalle",
+          "start": 12.881,
+          "end": 13.081
+        },
+        {
+          "text": "reti",
+          "start": 13.121,
+          "end": 13.361
+        },
+        {
+          "text": "feedforward,",
+          "start": 13.441,
+          "end": 14.201
+        }
+      ]
+    },
+    {
+      "start": 14.641,
+      "end": 19.682,
+      "text": "siamo passati alle sequenze con le reti ricorrenti, e arriviamo ora alle strutture complesse come",
+      "words": [
+        {
+          "text": "siamo",
+          "start": 14.641,
+          "end": 14.821
+        },
+        {
+          "text": "passati",
+          "start": 14.881,
+          "end": 15.241
+        },
+        {
+          "text": "alle",
+          "start": 15.281,
+          "end": 15.441
+        },
+        {
+          "text": "sequenze",
+          "start": 15.501,
+          "end": 16.101
+        },
+        {
+          "text": "con",
+          "start": 16.241,
+          "end": 16.361
+        },
+        {
+          "text": "le",
+          "start": 16.381,
+          "end": 16.442
+        },
+        {
+          "text": "reti",
+          "start": 16.482,
+          "end": 16.662
+        },
+        {
+          "text": "ricorrenti,",
+          "start": 16.702,
+          "end": 17.342
+        },
+        {
+          "text": "e",
+          "start": 17.682,
+          "end": 17.722
+        },
+        {
+          "text": "arriviamo",
+          "start": 17.762,
+          "end": 18.102
+        },
+        {
+          "text": "ora",
+          "start": 18.162,
+          "end": 18.302
+        },
+        {
+          "text": "alle",
+          "start": 18.322,
+          "end": 18.462
+        },
+        {
+          "text": "strutture",
+          "start": 18.502,
+          "end": 18.902
+        },
+        {
+          "text": "complesse",
+          "start": 18.962,
+          "end": 19.482
+        },
+        {
+          "text": "come",
+          "start": 19.522,
+          "end": 19.682
+        }
+      ]
+    },
+    {
+      "start": 19.802,
+      "end": 20.582,
+      "text": "alberi e grafi.",
+      "words": [
+        {
+          "text": "alberi",
+          "start": 19.802,
+          "end": 20.102
+        },
+        {
+          "text": "e",
+          "start": 20.142,
+          "end": 20.182
+        },
+        {
+          "text": "grafi.",
+          "start": 20.222,
+          "end": 20.582
+        }
+      ]
+    },
+    {
+      "start": 21.402,
+      "end": 24.862,
+      "text": "I dati reali possiedono infatti quasi sempre relazioni esplicite:",
+      "words": [
+        {
+          "text": "I",
+          "start": 21.402,
+          "end": 21.442
+        },
+        {
+          "text": "dati",
+          "start": 21.482,
+          "end": 21.682
+        },
+        {
+          "text": "reali",
+          "start": 21.742,
+          "end": 22.062
+        },
+        {
+          "text": "possiedono",
+          "start": 22.102,
+          "end": 22.502
+        },
+        {
+          "text": "infatti",
+          "start": 22.542,
+          "end": 22.842
+        },
+        {
+          "text": "quasi",
+          "start": 22.942,
+          "end": 23.242
+        },
+        {
+          "text": "sempre",
+          "start": 23.302,
+          "end": 23.682
+        },
+        {
+          "text": "relazioni",
+          "start": 23.762,
+          "end": 24.242
+        },
+        {
+          "text": "esplicite:",
+          "start": 24.302,
+          "end": 24.862
+        }
+      ]
+    },
+    {
+      "start": 25.322,
+      "end": 28.283,
+      "text": "pensiamo alle astrazioni di immagini e alla comprensione di scene,",
+      "words": [
+        {
+          "text": "pensiamo",
+          "start": 25.322,
+          "end": 25.682
+        },
+        {
+          "text": "alle",
+          "start": 25.742,
+          "end": 25.902
+        },
+        {
+          "text": "astrazioni",
+          "start": 25.962,
+          "end": 26.482
+        },
+        {
+          "text": "di",
+          "start": 26.522,
+          "end": 26.582
+        },
+        {
+          "text": "immagini",
+          "start": 26.602,
+          "end": 27.082
+        },
+        {
+          "text": "e",
+          "start": 27.082,
+          "end": 27.122
+        },
+        {
+          "text": "alla",
+          "start": 27.122,
+          "end": 27.262
+        },
+        {
+          "text": "comprensione",
+          "start": 27.302,
+          "end": 27.803
+        },
+        {
+          "text": "di",
+          "start": 27.843,
+          "end": 27.903
+        },
+        {
+          "text": "scene,",
+          "start": 27.943,
+          "end": 28.283
+        }
+      ]
+    },
+    {
+      "start": 28.663,
+      "end": 33.443,
+      "text": "ai social network e ai knowledge graph, agli alberi sintattici del linguaggio naturale,",
+      "words": [
+        {
+          "text": "ai",
+          "start": 28.663,
+          "end": 28.783
+        },
+        {
+          "text": "social",
+          "start": 28.823,
+          "end": 29.103
+        },
+        {
+          "text": "network",
+          "start": 29.143,
+          "end": 29.603
+        },
+        {
+          "text": "e",
+          "start": 29.843,
+          "end": 29.883
+        },
+        {
+          "text": "ai",
+          "start": 29.923,
+          "end": 30.063
+        },
+        {
+          "text": "knowledge",
+          "start": 30.123,
+          "end": 30.503
+        },
+        {
+          "text": "graph,",
+          "start": 30.543,
+          "end": 30.863
+        },
+        {
+          "text": "agli",
+          "start": 31.363,
+          "end": 31.503
+        },
+        {
+          "text": "alberi",
+          "start": 31.523,
+          "end": 31.763
+        },
+        {
+          "text": "sintattici",
+          "start": 31.803,
+          "end": 32.443
+        },
+        {
+          "text": "del",
+          "start": 32.483,
+          "end": 32.563
+        },
+        {
+          "text": "linguaggio",
+          "start": 32.603,
+          "end": 32.943
+        },
+        {
+          "text": "naturale,",
+          "start": 32.983,
+          "end": 33.443
+        }
+      ]
+    },
+    {
+      "start": 33.783,
+      "end": 38.584,
+      "text": "alle reti di trasporto, alle piccole molecole per il drug design e alle reti biologiche,",
+      "words": [
+        {
+          "text": "alle",
+          "start": 33.783,
+          "end": 33.923
+        },
+        {
+          "text": "reti",
+          "start": 33.963,
+          "end": 34.123
+        },
+        {
+          "text": "di",
+          "start": 34.163,
+          "end": 34.223
+        },
+        {
+          "text": "trasporto,",
+          "start": 34.263,
+          "end": 34.883
+        },
+        {
+          "text": "alle",
+          "start": 35.263,
+          "end": 35.443
+        },
+        {
+          "text": "piccole",
+          "start": 35.503,
+          "end": 35.883
+        },
+        {
+          "text": "molecole",
+          "start": 35.943,
+          "end": 36.403
+        },
+        {
+          "text": "per",
+          "start": 36.523,
+          "end": 36.623
+        },
+        {
+          "text": "il",
+          "start": 36.663,
+          "end": 36.743
+        },
+        {
+          "text": "drug",
+          "start": 36.783,
+          "end": 36.963
+        },
+        {
+          "text": "design",
+          "start": 37.023,
+          "end": 37.463
+        },
+        {
+          "text": "e",
+          "start": 37.583,
+          "end": 37.623
+        },
+        {
+          "text": "alle",
+          "start": 37.643,
+          "end": 37.783
+        },
+        {
+          "text": "reti",
+          "start": 37.823,
+          "end": 38.003
+        },
+        {
+          "text": "biologiche,",
+          "start": 38.043,
+          "end": 38.584
+        }
+      ]
+    },
+    {
+      "start": 38.964,
+      "end": 41.204,
+      "text": "fino ai termini logici e alle reti cerebrali.",
+      "words": [
+        {
+          "text": "fino",
+          "start": 38.964,
+          "end": 39.124
+        },
+        {
+          "text": "ai",
+          "start": 39.164,
+          "end": 39.244
+        },
+        {
+          "text": "termini",
+          "start": 39.264,
+          "end": 39.584
+        },
+        {
+          "text": "logici",
+          "start": 39.624,
+          "end": 40.024
+        },
+        {
+          "text": "e",
+          "start": 40.164,
+          "end": 40.204
+        },
+        {
+          "text": "alle",
+          "start": 40.244,
+          "end": 40.384
+        },
+        {
+          "text": "reti",
+          "start": 40.424,
+          "end": 40.584
+        },
+        {
+          "text": "cerebrali.",
+          "start": 40.644,
+          "end": 41.204
+        }
+      ]
+    },
+    {
+      "start": 41.984,
+      "end": 46.004,
+      "text": "Il nostro obiettivo è costruire modelli profondi ed efficienti per dati strutturati,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 41.984,
+          "end": 42.064
+        },
+        {
+          "text": "nostro",
+          "start": 42.084,
+          "end": 42.304
+        },
+        {
+          "text": "obiettivo",
+          "start": 42.324,
+          "end": 42.724
+        },
+        {
+          "text": "è",
+          "start": 42.764,
+          "end": 42.804
+        },
+        {
+          "text": "costruire",
+          "start": 42.844,
+          "end": 43.304
+        },
+        {
+          "text": "modelli",
+          "start": 43.364,
+          "end": 43.684
+        },
+        {
+          "text": "profondi",
+          "start": 43.724,
+          "end": 44.204
+        },
+        {
+          "text": "ed",
+          "start": 44.244,
+          "end": 44.324
+        },
+        {
+          "text": "efficienti",
+          "start": 44.344,
+          "end": 44.924
+        },
+        {
+          "text": "per",
+          "start": 44.964,
+          "end": 45.084
+        },
+        {
+          "text": "dati",
+          "start": 45.124,
+          "end": 45.324
+        },
+        {
+          "text": "strutturati,",
+          "start": 45.384,
+          "end": 46.004
+        }
+      ]
+    },
+    {
+      "start": 46.404,
+      "end": 51.105,
+      "text": "combinando la stratificazione — che crea più livelli di astrazione — con l'efficienza degli approcci",
+      "words": [
+        {
+          "text": "combinando",
+          "start": 46.404,
+          "end": 46.804
+        },
+        {
+          "text": "la",
+          "start": 46.844,
+          "end": 46.904
+        },
+        {
+          "text": "stratificazione",
+          "start": 46.944,
+          "end": 47.904
+        },
+        {
+          "text": "—",
+          "start": 47.904,
+          "end": 48.054
+        },
+        {
+          "text": "che",
+          "start": 48.004,
+          "end": 48.084
+        },
+        {
+          "text": "crea",
+          "start": 48.124,
+          "end": 48.324
+        },
+        {
+          "text": "più",
+          "start": 48.384,
+          "end": 48.484
+        },
+        {
+          "text": "livelli",
+          "start": 48.524,
+          "end": 48.824
+        },
+        {
+          "text": "di",
+          "start": 48.844,
+          "end": 48.904
+        },
+        {
+          "text": "astrazione",
+          "start": 48.924,
+          "end": 49.504
+        },
+        {
+          "text": "—",
+          "start": 49.504,
+          "end": 49.654
+        },
+        {
+          "text": "con",
+          "start": 49.865,
+          "end": 49.985
+        },
+        {
+          "text": "l'efficienza",
+          "start": 50.005,
+          "end": 50.545
+        },
+        {
+          "text": "degli",
+          "start": 50.565,
+          "end": 50.725
+        },
+        {
+          "text": "approcci",
+          "start": 50.745,
+          "end": 51.105
+        }
+      ]
+    },
+    {
+      "start": 51.165,
+      "end": 52.825,
+      "text": "randomizzati o incrementali.",
+      "words": [
+        {
+          "text": "randomizzati",
+          "start": 51.165,
+          "end": 51.885
+        },
+        {
+          "text": "o",
+          "start": 52.025,
+          "end": 52.065
+        },
+        {
+          "text": "incrementali.",
+          "start": 52.125,
+          "end": 52.825
+        }
+      ]
+    },
+    {
+      "start": 53.725,
+      "end": 55.565,
+      "text": "Fissiamo subito la notazione del capitolo:",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 53.725,
+          "end": 54.005
+        },
+        {
+          "text": "subito",
+          "start": 54.065,
+          "end": 54.325
+        },
+        {
+          "text": "la",
+          "start": 54.385,
+          "end": 54.445
+        },
+        {
+          "text": "notazione",
+          "start": 54.485,
+          "end": 54.925
+        },
+        {
+          "text": "del",
+          "start": 54.965,
+          "end": 55.065
+        },
+        {
+          "text": "capitolo:",
+          "start": 55.105,
+          "end": 55.565
+        }
+      ]
+    },
+    {
+      "start": 56.325,
+      "end": 60.005,
+      "text": "x con v è l'etichetta, cioè il vettore delle feature del nodo v;",
+      "words": [
+        {
+          "text": "x",
+          "start": 56.325,
+          "end": 56.365
+        },
+        {
+          "text": "con",
+          "start": 56.685,
+          "end": 56.845
+        },
+        {
+          "text": "v",
+          "start": 56.945,
+          "end": 56.985
+        },
+        {
+          "text": "è",
+          "start": 57.345,
+          "end": 57.385
+        },
+        {
+          "text": "l'etichetta,",
+          "start": 57.425,
+          "end": 58.045
+        },
+        {
+          "text": "cioè",
+          "start": 58.125,
+          "end": 58.285
+        },
+        {
+          "text": "il",
+          "start": 58.365,
+          "end": 58.425
+        },
+        {
+          "text": "vettore",
+          "start": 58.465,
+          "end": 58.845
+        },
+        {
+          "text": "delle",
+          "start": 58.885,
+          "end": 59.085
+        },
+        {
+          "text": "feature",
+          "start": 59.125,
+          "end": 59.525
+        },
+        {
+          "text": "del",
+          "start": 59.545,
+          "end": 59.645
+        },
+        {
+          "text": "nodo",
+          "start": 59.705,
+          "end": 59.885
+        },
+        {
+          "text": "v;",
+          "start": 59.965,
+          "end": 60.005
+        }
+      ]
+    },
+    {
+      "start": 61.066,
+      "end": 65.026,
+      "text": "h con v all'apice l è lo stato del nodo v dopo l passi di",
+      "words": [
+        {
+          "text": "h",
+          "start": 61.066,
+          "end": 61.106
+        },
+        {
+          "text": "con",
+          "start": 61.206,
+          "end": 61.346
+        },
+        {
+          "text": "v",
+          "start": 61.446,
+          "end": 61.486
+        },
+        {
+          "text": "all'apice",
+          "start": 61.826,
+          "end": 62.406
+        },
+        {
+          "text": "l",
+          "start": 62.546,
+          "end": 62.586
+        },
+        {
+          "text": "è",
+          "start": 62.806,
+          "end": 62.846
+        },
+        {
+          "text": "lo",
+          "start": 62.906,
+          "end": 62.966
+        },
+        {
+          "text": "stato",
+          "start": 63.026,
+          "end": 63.286
+        },
+        {
+          "text": "del",
+          "start": 63.346,
+          "end": 63.446
+        },
+        {
+          "text": "nodo",
+          "start": 63.506,
+          "end": 63.706
+        },
+        {
+          "text": "v",
+          "start": 63.826,
+          "end": 63.866
+        },
+        {
+          "text": "dopo",
+          "start": 64.026,
+          "end": 64.266
+        },
+        {
+          "text": "l",
+          "start": 64.466,
+          "end": 64.506
+        },
+        {
+          "text": "passi",
+          "start": 64.586,
+          "end": 64.906
+        },
+        {
+          "text": "di",
+          "start": 64.946,
+          "end": 65.026
+        }
+      ]
+    },
+    {
+      "start": 65.106,
+      "end": 68.166,
+      "text": "message passing, con l da uno a L maiuscolo;",
+      "words": [
+        {
+          "text": "message",
+          "start": 65.106,
+          "end": 65.506
+        },
+        {
+          "text": "passing,",
+          "start": 65.546,
+          "end": 66.046
+        },
+        {
+          "text": "con",
+          "start": 66.426,
+          "end": 66.566
+        },
+        {
+          "text": "l",
+          "start": 66.666,
+          "end": 66.706
+        },
+        {
+          "text": "da",
+          "start": 66.846,
+          "end": 66.906
+        },
+        {
+          "text": "uno",
+          "start": 66.986,
+          "end": 67.146
+        },
+        {
+          "text": "a",
+          "start": 67.286,
+          "end": 67.32600000000001
+        },
+        {
+          "text": "L",
+          "start": 67.486,
+          "end": 67.52600000000001
+        },
+        {
+          "text": "maiuscolo;",
+          "start": 67.606,
+          "end": 68.166
+        }
+      ]
+    },
+    {
+      "start": 68.826,
+      "end": 72.967,
+      "text": "A è la matrice di adiacenza, dove A con u v vale uno se esiste",
+      "words": [
+        {
+          "text": "A",
+          "start": 68.826,
+          "end": 68.866
+        },
+        {
+          "text": "è",
+          "start": 69.086,
+          "end": 69.126
+        },
+        {
+          "text": "la",
+          "start": 69.166,
+          "end": 69.226
+        },
+        {
+          "text": "matrice",
+          "start": 69.266,
+          "end": 69.626
+        },
+        {
+          "text": "di",
+          "start": 69.666,
+          "end": 69.726
+        },
+        {
+          "text": "adiacenza,",
+          "start": 69.766,
+          "end": 70.366
+        },
+        {
+          "text": "dove",
+          "start": 70.746,
+          "end": 70.946
+        },
+        {
+          "text": "A",
+          "start": 71.166,
+          "end": 71.206
+        },
+        {
+          "text": "con",
+          "start": 71.386,
+          "end": 71.546
+        },
+        {
+          "text": "u",
+          "start": 71.607,
+          "end": 71.647
+        },
+        {
+          "text": "v",
+          "start": 71.747,
+          "end": 71.787
+        },
+        {
+          "text": "vale",
+          "start": 71.967,
+          "end": 72.187
+        },
+        {
+          "text": "uno",
+          "start": 72.307,
+          "end": 72.507
+        },
+        {
+          "text": "se",
+          "start": 72.587,
+          "end": 72.647
+        },
+        {
+          "text": "esiste",
+          "start": 72.687,
+          "end": 72.967
+        }
+      ]
+    },
+    {
+      "start": 73.007,
+      "end": 75.187,
+      "text": "un arco tra u e v e zero altrimenti;",
+      "words": [
+        {
+          "text": "un",
+          "start": 73.007,
+          "end": 73.087
+        },
+        {
+          "text": "arco",
+          "start": 73.127,
+          "end": 73.327
+        },
+        {
+          "text": "tra",
+          "start": 73.387,
+          "end": 73.507
+        },
+        {
+          "text": "u",
+          "start": 73.607,
+          "end": 73.647
+        },
+        {
+          "text": "e",
+          "start": 73.807,
+          "end": 73.84700000000001
+        },
+        {
+          "text": "v",
+          "start": 73.947,
+          "end": 73.98700000000001
+        },
+        {
+          "text": "e",
+          "start": 74.267,
+          "end": 74.307
+        },
+        {
+          "text": "zero",
+          "start": 74.407,
+          "end": 74.587
+        },
+        {
+          "text": "altrimenti;",
+          "start": 74.607,
+          "end": 75.187
+        }
+      ]
+    },
+    {
+      "start": 76.027,
+      "end": 78.667,
+      "text": "N di v indica l'insieme dei vicini di v;",
+      "words": [
+        {
+          "text": "N",
+          "start": 76.027,
+          "end": 76.06700000000001
+        },
+        {
+          "text": "di",
+          "start": 76.147,
+          "end": 76.227
+        },
+        {
+          "text": "v",
+          "start": 76.287,
+          "end": 76.32700000000001
+        },
+        {
+          "text": "indica",
+          "start": 76.627,
+          "end": 76.947
+        },
+        {
+          "text": "l'insieme",
+          "start": 76.987,
+          "end": 77.447
+        },
+        {
+          "text": "dei",
+          "start": 77.507,
+          "end": 77.647
+        },
+        {
+          "text": "vicini",
+          "start": 77.707,
+          "end": 78.187
+        },
+        {
+          "text": "di",
+          "start": 78.407,
+          "end": 78.507
+        },
+        {
+          "text": "v;",
+          "start": 78.627,
+          "end": 78.667
+        }
+      ]
+    },
+    {
+      "start": 79.327,
+      "end": 81.607,
+      "text": "e quando scriviamo una formula con la matrice H,",
+      "words": [
+        {
+          "text": "e",
+          "start": 79.327,
+          "end": 79.367
+        },
+        {
+          "text": "quando",
+          "start": 79.387,
+          "end": 79.587
+        },
+        {
+          "text": "scriviamo",
+          "start": 79.627,
+          "end": 79.967
+        },
+        {
+          "text": "una",
+          "start": 80.007,
+          "end": 80.107
+        },
+        {
+          "text": "formula",
+          "start": 80.167,
+          "end": 80.587
+        },
+        {
+          "text": "con",
+          "start": 80.647,
+          "end": 80.727
+        },
+        {
+          "text": "la",
+          "start": 80.767,
+          "end": 80.827
+        },
+        {
+          "text": "matrice",
+          "start": 80.847,
+          "end": 81.247
+        },
+        {
+          "text": "H,",
+          "start": 81.567,
+          "end": 81.607
+        }
+      ]
+    },
+    {
+      "start": 81.987,
+      "end": 83.908,
+      "text": "ciascuna riga corrisponde a un nodo.",
+      "words": [
+        {
+          "text": "ciascuna",
+          "start": 81.987,
+          "end": 82.327
+        },
+        {
+          "text": "riga",
+          "start": 82.367,
+          "end": 82.587
+        },
+        {
+          "text": "corrisponde",
+          "start": 82.648,
+          "end": 83.248
+        },
+        {
+          "text": "a",
+          "start": 83.388,
+          "end": 83.42800000000001
+        },
+        {
+          "text": "un",
+          "start": 83.508,
+          "end": 83.568
+        },
+        {
+          "text": "nodo.",
+          "start": 83.628,
+          "end": 83.908
+        }
+      ]
+    },
+    {
+      "start": 84.808,
+      "end": 90.028,
+      "text": "In generale consideriamo grafi etichettati in cui ogni nodo porta un vettore come uno,",
+      "words": [
+        {
+          "text": "In",
+          "start": 84.808,
+          "end": 84.868
+        },
+        {
+          "text": "generale",
+          "start": 84.908,
+          "end": 85.388
+        },
+        {
+          "text": "consideriamo",
+          "start": 85.428,
+          "end": 85.948
+        },
+        {
+          "text": "grafi",
+          "start": 86.008,
+          "end": 86.248
+        },
+        {
+          "text": "etichettati",
+          "start": 86.328,
+          "end": 86.988
+        },
+        {
+          "text": "in",
+          "start": 87.048,
+          "end": 87.08800000000001
+        },
+        {
+          "text": "cui",
+          "start": 87.148,
+          "end": 87.308
+        },
+        {
+          "text": "ogni",
+          "start": 87.428,
+          "end": 87.668
+        },
+        {
+          "text": "nodo",
+          "start": 87.768,
+          "end": 88.068
+        },
+        {
+          "text": "porta",
+          "start": 88.128,
+          "end": 88.408
+        },
+        {
+          "text": "un",
+          "start": 88.488,
+          "end": 88.548
+        },
+        {
+          "text": "vettore",
+          "start": 88.588,
+          "end": 89.068
+        },
+        {
+          "text": "come",
+          "start": 89.308,
+          "end": 89.508
+        },
+        {
+          "text": "uno,",
+          "start": 89.848,
+          "end": 90.028
+        }
+      ]
+    },
+    {
+      "start": 90.208,
+      "end": 91.788,
+      "text": "zero, uno, zero virgola sette;",
+      "words": [
+        {
+          "text": "zero,",
+          "start": 90.208,
+          "end": 90.448
+        },
+        {
+          "text": "uno,",
+          "start": 90.608,
+          "end": 90.788
+        },
+        {
+          "text": "zero",
+          "start": 90.968,
+          "end": 91.128
+        },
+        {
+          "text": "virgola",
+          "start": 91.148,
+          "end": 91.428
+        },
+        {
+          "text": "sette;",
+          "start": 91.468,
+          "end": 91.788
+        }
+      ]
+    },
+    {
+      "start": 92.428,
+      "end": 96.929,
+      "text": "gli archi possono essere etichettati e orientati, e il grafo può contenere cicli.",
+      "words": [
+        {
+          "text": "gli",
+          "start": 92.428,
+          "end": 92.528
+        },
+        {
+          "text": "archi",
+          "start": 92.568,
+          "end": 92.768
+        },
+        {
+          "text": "possono",
+          "start": 92.808,
+          "end": 93.088
+        },
+        {
+          "text": "essere",
+          "start": 93.148,
+          "end": 93.368
+        },
+        {
+          "text": "etichettati",
+          "start": 93.408,
+          "end": 93.989
+        },
+        {
+          "text": "e",
+          "start": 94.149,
+          "end": 94.18900000000001
+        },
+        {
+          "text": "orientati,",
+          "start": 94.269,
+          "end": 94.909
+        },
+        {
+          "text": "e",
+          "start": 95.309,
+          "end": 95.349
+        },
+        {
+          "text": "il",
+          "start": 95.369,
+          "end": 95.449
+        },
+        {
+          "text": "grafo",
+          "start": 95.489,
+          "end": 95.829
+        },
+        {
+          "text": "può",
+          "start": 95.929,
+          "end": 96.029
+        },
+        {
+          "text": "contenere",
+          "start": 96.109,
+          "end": 96.549
+        },
+        {
+          "text": "cicli.",
+          "start": 96.609,
+          "end": 96.929
+        }
+      ]
+    }
+  ]
+}

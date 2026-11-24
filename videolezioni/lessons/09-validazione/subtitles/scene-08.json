@@ -1,1486 +1,1500 @@
 {
-  "duration": 121.652,
+  "duration": 110.47,
   "segments": [
     {
-      "start": 1.01,
-      "end": 6.231,
+      "start": 0.08,
+      "end": 6.281,
       "text": "Esaminiamo i due algoritmi formali di model selection, che hanno l'obiettivo di restituire il miglior",
       "words": [
         {
           "text": "Esaminiamo",
-          "start": 1.01,
-          "end": 1.57
+          "start": 0.08,
+          "end": 0.72
         },
         {
           "text": "i",
-          "start": 1.63,
-          "end": 1.67
+          "start": 0.82,
+          "end": 0.86
         },
         {
           "text": "due",
-          "start": 1.67,
-          "end": 1.79
+          "start": 0.92,
+          "end": 1.1
         },
         {
           "text": "algoritmi",
-          "start": 1.83,
-          "end": 2.31
+          "start": 1.2,
+          "end": 1.8
         },
         {
           "text": "formali",
-          "start": 2.37,
-          "end": 2.81
+          "start": 1.88,
+          "end": 2.42
         },
         {
           "text": "di",
-          "start": 2.85,
-          "end": 2.91
+          "start": 2.561,
+          "end": 2.641
         },
         {
           "text": "model",
-          "start": 2.97,
-          "end": 3.251
+          "start": 2.741,
+          "end": 3.041
         },
         {
           "text": "selection,",
-          "start": 3.311,
-          "end": 3.911
+          "start": 3.101,
+          "end": 3.661
         },
         {
           "text": "che",
-          "start": 4.151,
-          "end": 4.231
+          "start": 4.081,
+          "end": 4.161
         },
         {
           "text": "hanno",
-          "start": 4.251,
-          "end": 4.431
+          "start": 4.181,
+          "end": 4.361
         },
         {
           "text": "l'obiettivo",
-          "start": 4.491,
-          "end": 4.991
+          "start": 4.401,
+          "end": 4.921
         },
         {
           "text": "di",
-          "start": 5.051,
-          "end": 5.111
+          "start": 4.981,
+          "end": 5.061
         },
         {
           "text": "restituire",
-          "start": 5.151,
-          "end": 5.691
+          "start": 5.121,
+          "end": 5.681
         },
         {
           "text": "il",
-          "start": 5.731,
-          "end": 5.791
+          "start": 5.741,
+          "end": 5.821
         },
         {
           "text": "miglior",
-          "start": 5.851,
-          "end": 6.231
+          "start": 5.881,
+          "end": 6.281
         }
       ]
     },
     {
-      "start": 6.311,
-      "end": 9.251,
+      "start": 6.341,
+      "end": 9.082,
       "text": "modello ottenibile dal dataset D con l.",
       "words": [
         {
           "text": "modello",
-          "start": 6.311,
-          "end": 6.751
+          "start": 6.341,
+          "end": 6.741
         },
         {
           "text": "ottenibile",
-          "start": 6.871,
-          "end": 7.531
+          "start": 6.801,
+          "end": 7.381
         },
         {
           "text": "dal",
-          "start": 7.891,
-          "end": 8.031
+          "start": 7.441,
+          "end": 7.581
         },
         {
           "text": "dataset",
-          "start": 8.091,
-          "end": 8.611
+          "start": 7.641,
+          "end": 8.182
         },
         {
           "text": "D",
-          "start": 8.751,
-          "end": 8.791
+          "start": 8.442,
+          "end": 8.482
         },
         {
           "text": "con",
-          "start": 8.911,
-          "end": 9.071
+          "start": 8.702,
+          "end": 8.882
         },
         {
           "text": "l.",
-          "start": 9.211,
-          "end": 9.251
+          "start": 9.042,
+          "end": 9.082
         }
       ]
     },
     {
-      "start": 10.211,
-      "end": 13.251,
+      "start": 10.002,
+      "end": 13.142,
       "text": "Primo algoritmo: model selection con hold-out.",
       "words": [
         {
           "text": "Primo",
-          "start": 10.211,
-          "end": 10.451
+          "start": 10.002,
+          "end": 10.242
         },
         {
           "text": "algoritmo:",
-          "start": 10.491,
-          "end": 11.051
+          "start": 10.282,
+          "end": 10.802
         },
         {
           "text": "model",
-          "start": 11.291,
-          "end": 11.611
+          "start": 11.282,
+          "end": 11.602
         },
         {
           "text": "selection",
-          "start": 11.691,
-          "end": 12.191
+          "start": 11.662,
+          "end": 12.142
         },
         {
           "text": "con",
-          "start": 12.311,
-          "end": 12.451
+          "start": 12.222,
+          "end": 12.382
         },
         {
           "text": "hold-out.",
-          "start": 12.611,
-          "end": 13.251
+          "start": 12.502,
+          "end": 13.142
         }
       ]
     },
     {
-      "start": 14.032,
-      "end": 18.652,
+      "start": 14.463,
+      "end": 19.464,
       "text": "Uno: si fissa la famiglia di spazi parametrica in theta e si divide D con",
       "words": [
         {
           "text": "Uno:",
-          "start": 14.032,
-          "end": 14.212
+          "start": 14.463,
+          "end": 14.663
         },
         {
           "text": "si",
-          "start": 14.832,
-          "end": 14.912
+          "start": 15.043,
+          "end": 15.123
         },
         {
           "text": "fissa",
-          "start": 14.952,
-          "end": 15.212
+          "start": 15.183,
+          "end": 15.463
         },
         {
           "text": "la",
-          "start": 15.252,
-          "end": 15.312
+          "start": 15.523,
+          "end": 15.583
         },
         {
           "text": "famiglia",
-          "start": 15.332,
-          "end": 15.652
+          "start": 15.603,
+          "end": 15.943
         },
         {
           "text": "di",
-          "start": 15.692,
-          "end": 15.752
+          "start": 15.983,
+          "end": 16.043
         },
         {
           "text": "spazi",
-          "start": 15.792,
-          "end": 16.112
+          "start": 16.103,
+          "end": 16.483
         },
         {
           "text": "parametrica",
-          "start": 16.152,
-          "end": 16.752
+          "start": 16.543,
+          "end": 17.243
         },
         {
           "text": "in",
-          "start": 16.832,
-          "end": 16.912
+          "start": 17.443,
+          "end": 17.543
         },
         {
           "text": "theta",
-          "start": 16.972,
-          "end": 17.332
+          "start": 17.683,
+          "end": 18.023
         },
         {
           "text": "e",
-          "start": 17.532,
-          "end": 17.572
+          "start": 18.343,
+          "end": 18.383
         },
         {
           "text": "si",
-          "start": 17.672,
-          "end": 17.752
+          "start": 18.443,
+          "end": 18.543
         },
         {
           "text": "divide",
-          "start": 17.792,
-          "end": 18.132
+          "start": 18.603,
+          "end": 18.983
         },
         {
           "text": "D",
-          "start": 18.272,
-          "end": 18.312
+          "start": 19.184,
+          "end": 19.224
         },
         {
           "text": "con",
-          "start": 18.472,
-          "end": 18.652
+          "start": 19.324,
+          "end": 19.464
         }
       ]
     },
     {
-      "start": 18.912,
-      "end": 21.452,
+      "start": 19.624,
+      "end": 22.224,
       "text": "l in D TR e D VL.",
       "words": [
         {
           "text": "l",
-          "start": 18.912,
-          "end": 18.952
+          "start": 19.624,
+          "end": 19.664
         },
         {
           "text": "in",
-          "start": 19.252,
-          "end": 19.412
+          "start": 20.224,
+          "end": 20.404
         },
         {
           "text": "D",
-          "start": 19.732,
-          "end": 19.772
+          "start": 20.664,
+          "end": 20.704
         },
         {
           "text": "TR",
-          "start": 19.952,
-          "end": 20.372
+          "start": 20.844,
+          "end": 21.244
         },
         {
           "text": "e",
-          "start": 20.632,
-          "end": 20.672
+          "start": 21.484,
+          "end": 21.524
         },
         {
           "text": "D",
-          "start": 20.792,
-          "end": 20.832
+          "start": 21.624,
+          "end": 21.664
         },
         {
           "text": "VL.",
-          "start": 21.112,
-          "end": 21.452
+          "start": 21.924,
+          "end": 22.224
         }
       ]
     },
     {
-      "start": 22.452,
-      "end": 27.833,
+      "start": 23.044,
+      "end": 29.085,
       "text": "Due: per ogni candidato theta con m della griglia si addestra l'ipotesi h stella di",
       "words": [
         {
           "text": "Due:",
-          "start": 22.452,
-          "end": 22.652
+          "start": 23.044,
+          "end": 23.224
         },
         {
           "text": "per",
-          "start": 23.152,
-          "end": 23.252
+          "start": 23.784,
+          "end": 23.904
         },
         {
           "text": "ogni",
-          "start": 23.292,
-          "end": 23.452
+          "start": 23.964,
+          "end": 24.144
         },
         {
           "text": "candidato",
-          "start": 23.512,
-          "end": 23.993
+          "start": 24.224,
+          "end": 24.845
         },
         {
           "text": "theta",
-          "start": 24.113,
-          "end": 24.353
+          "start": 25.045,
+          "end": 25.305
         },
         {
           "text": "con",
-          "start": 24.433,
-          "end": 24.573
+          "start": 25.365,
+          "end": 25.485
         },
         {
           "text": "m",
-          "start": 24.813,
-          "end": 24.853
+          "start": 25.725,
+          "end": 25.765
         },
         {
           "text": "della",
-          "start": 24.953,
-          "end": 25.133
+          "start": 25.885,
+          "end": 26.065
         },
         {
           "text": "griglia",
-          "start": 25.193,
-          "end": 25.553
+          "start": 26.105,
+          "end": 26.525
         },
         {
           "text": "si",
-          "start": 25.733,
-          "end": 25.793
+          "start": 26.945,
+          "end": 27.005
         },
         {
           "text": "addestra",
-          "start": 25.853,
-          "end": 26.213
+          "start": 27.045,
+          "end": 27.485
         },
         {
           "text": "l'ipotesi",
-          "start": 26.273,
-          "end": 26.793
+          "start": 27.545,
+          "end": 28.125
         },
         {
           "text": "h",
-          "start": 27.193,
-          "end": 27.233
+          "start": 28.305,
+          "end": 28.345
         },
         {
           "text": "stella",
-          "start": 27.333,
-          "end": 27.713
+          "start": 28.585,
+          "end": 28.925
         },
         {
           "text": "di",
-          "start": 27.753,
-          "end": 27.833
+          "start": 29.025,
+          "end": 29.085
         }
       ]
     },
     {
-      "start": 27.893,
-      "end": 31.213,
+      "start": 29.165,
+      "end": 32.626,
       "text": "theta m minimizzando R emp su D TR,",
       "words": [
         {
           "text": "theta",
-          "start": 27.893,
-          "end": 28.153
+          "start": 29.165,
+          "end": 29.385
         },
         {
           "text": "m",
-          "start": 28.433,
-          "end": 28.473
+          "start": 29.665,
+          "end": 29.705
         },
         {
           "text": "minimizzando",
-          "start": 28.973,
-          "end": 29.613
+          "start": 30.045,
+          "end": 30.866
         },
         {
           "text": "R",
-          "start": 29.913,
-          "end": 29.953
+          "start": 31.266,
+          "end": 31.306
         },
         {
           "text": "emp",
-          "start": 29.993,
-          "end": 30.313
+          "start": 31.346,
+          "end": 31.726
         },
         {
           "text": "su",
-          "start": 30.473,
-          "end": 30.553
+          "start": 31.906,
+          "end": 31.986
         },
         {
           "text": "D",
-          "start": 30.633,
-          "end": 30.673
+          "start": 32.086,
+          "end": 32.126
         },
         {
           "text": "TR,",
-          "start": 30.813,
-          "end": 31.213
+          "start": 32.246,
+          "end": 32.626
         }
       ]
     },
     {
-      "start": 31.773,
-      "end": 34.574,
-      "text": "e si stima il suo rischio con R emp su D VL.",
+      "start": 33.186,
+      "end": 34.586,
+      "text": "e si stima il suo rischio con",
       "words": [
         {
           "text": "e",
-          "start": 31.773,
-          "end": 31.813
+          "start": 33.186,
+          "end": 33.226
         },
         {
           "text": "si",
-          "start": 31.873,
-          "end": 31.973
+          "start": 33.286,
+          "end": 33.346
         },
         {
           "text": "stima",
-          "start": 32.033,
-          "end": 32.253
+          "start": 33.406,
+          "end": 33.646
         },
         {
           "text": "il",
-          "start": 32.313,
-          "end": 32.373
+          "start": 33.686,
+          "end": 33.766
         },
         {
           "text": "suo",
-          "start": 32.413,
-          "end": 32.513
+          "start": 33.786,
+          "end": 33.886
         },
         {
           "text": "rischio",
-          "start": 32.573,
-          "end": 32.933
+          "start": 33.926,
+          "end": 34.266
         },
         {
           "text": "con",
-          "start": 32.993,
-          "end": 33.133
-        },
-        {
-          "text": "R",
-          "start": 33.293,
-          "end": 33.333
-        },
-        {
-          "text": "emp",
-          "start": 33.373,
-          "end": 33.693
-        },
-        {
-          "text": "su",
-          "start": 33.873,
-          "end": 33.974
-        },
-        {
-          "text": "D",
-          "start": 34.034,
-          "end": 34.074
-        },
-        {
-          "text": "VL.",
-          "start": 34.174,
-          "end": 34.574
+          "start": 34.366,
+          "end": 34.586
         }
       ]
     },
     {
-      "start": 35.534,
-      "end": 40.094,
+      "start": 35.186,
+      "end": 36.847,
+      "text": "R emp su D VL.",
+      "words": [
+        {
+          "text": "R",
+          "start": 35.186,
+          "end": 35.226
+        },
+        {
+          "text": "emp",
+          "start": 35.266,
+          "end": 35.586
+        },
+        {
+          "text": "su",
+          "start": 35.827,
+          "end": 35.927
+        },
+        {
+          "text": "D",
+          "start": 36.227,
+          "end": 36.267
+        },
+        {
+          "text": "VL.",
+          "start": 36.487,
+          "end": 36.847
+        }
+      ]
+    },
+    {
+      "start": 37.687,
+      "end": 42.008,
       "text": "Tre: si sceglie il theta stella con il miglior risultato sul validation set.",
       "words": [
         {
           "text": "Tre:",
-          "start": 35.534,
-          "end": 35.694
+          "start": 37.687,
+          "end": 37.807
         },
         {
           "text": "si",
-          "start": 36.274,
-          "end": 36.334
+          "start": 38.447,
+          "end": 38.527
         },
         {
           "text": "sceglie",
-          "start": 36.374,
-          "end": 36.714
+          "start": 38.587,
+          "end": 38.887
         },
         {
           "text": "il",
-          "start": 36.854,
-          "end": 36.954
+          "start": 38.947,
+          "end": 38.987
         },
         {
           "text": "theta",
-          "start": 37.034,
-          "end": 37.254
+          "start": 39.047,
+          "end": 39.267
         },
         {
           "text": "stella",
-          "start": 37.354,
-          "end": 37.754
+          "start": 39.327,
+          "end": 39.647
         },
         {
           "text": "con",
-          "start": 37.874,
-          "end": 38.014
+          "start": 39.707,
+          "end": 39.847
         },
         {
           "text": "il",
-          "start": 38.054,
-          "end": 38.134
+          "start": 39.887,
+          "end": 39.967
         },
         {
           "text": "miglior",
-          "start": 38.154,
-          "end": 38.434
+          "start": 40.007,
+          "end": 40.327
         },
         {
           "text": "risultato",
-          "start": 38.474,
-          "end": 38.974
+          "start": 40.367,
+          "end": 40.887
         },
         {
           "text": "sul",
-          "start": 39.014,
-          "end": 39.154
+          "start": 40.947,
+          "end": 41.087
         },
         {
           "text": "validation",
-          "start": 39.194,
-          "end": 39.734
+          "start": 41.127,
+          "end": 41.648
         },
         {
           "text": "set.",
-          "start": 39.814,
-          "end": 40.094
+          "start": 41.748,
+          "end": 42.008
         }
       ]
     },
     {
-      "start": 40.914,
-      "end": 46.015,
+      "start": 42.528,
+      "end": 48.249,
       "text": "Quattro: si riaddestra il modello finale h stella sull'intero insieme D con l.",
       "words": [
         {
           "text": "Quattro:",
-          "start": 40.914,
-          "end": 41.334
+          "start": 42.528,
+          "end": 42.888
         },
         {
           "text": "si",
-          "start": 41.814,
-          "end": 41.894
+          "start": 43.368,
+          "end": 43.428
         },
         {
           "text": "riaddestra",
-          "start": 41.974,
-          "end": 42.454
+          "start": 43.488,
+          "end": 43.988
         },
         {
           "text": "il",
-          "start": 42.494,
-          "end": 42.554
+          "start": 44.028,
+          "end": 44.108
         },
         {
           "text": "modello",
-          "start": 42.574,
-          "end": 42.894
+          "start": 44.128,
+          "end": 44.428
         },
         {
           "text": "finale",
-          "start": 42.934,
-          "end": 43.314
+          "start": 44.468,
+          "end": 44.868
         },
         {
           "text": "h",
-          "start": 43.654,
-          "end": 43.694
+          "start": 45.248,
+          "end": 45.288
         },
         {
           "text": "stella",
-          "start": 43.794,
-          "end": 44.215
+          "start": 45.408,
+          "end": 45.768
         },
         {
           "text": "sull'intero",
-          "start": 44.375,
-          "end": 44.895
+          "start": 46.108,
+          "end": 46.869
         },
         {
           "text": "insieme",
-          "start": 44.955,
-          "end": 45.395
+          "start": 46.949,
+          "end": 47.389
         },
         {
           "text": "D",
-          "start": 45.495,
-          "end": 45.535
+          "start": 47.649,
+          "end": 47.689
         },
         {
           "text": "con",
-          "start": 45.675,
-          "end": 45.835
+          "start": 47.849,
+          "end": 48.009
         },
         {
           "text": "l.",
-          "start": 45.975,
-          "end": 46.015
+          "start": 48.209,
+          "end": 48.249
         }
       ]
     },
     {
-      "start": 47.195,
-      "end": 51.035,
+      "start": 49.169,
+      "end": 53.09,
       "text": "Perché la stima sul validation non viene restituita come stima del rischio?",
       "words": [
         {
           "text": "Perché",
-          "start": 47.195,
-          "end": 47.415
+          "start": 49.169,
+          "end": 49.429
         },
         {
           "text": "la",
-          "start": 47.455,
-          "end": 47.515
+          "start": 49.469,
+          "end": 49.529
         },
         {
           "text": "stima",
-          "start": 47.555,
-          "end": 47.775
+          "start": 49.569,
+          "end": 49.829
         },
         {
           "text": "sul",
-          "start": 47.855,
-          "end": 47.995
+          "start": 49.989,
+          "end": 50.129
         },
         {
           "text": "validation",
-          "start": 48.055,
-          "end": 48.715
+          "start": 50.189,
+          "end": 50.749
         },
         {
           "text": "non",
-          "start": 48.815,
-          "end": 48.935
+          "start": 50.849,
+          "end": 50.969
         },
         {
           "text": "viene",
-          "start": 48.975,
-          "end": 49.195
+          "start": 51.029,
+          "end": 51.309
         },
         {
           "text": "restituita",
-          "start": 49.255,
-          "end": 49.775
+          "start": 51.349,
+          "end": 51.969
         },
         {
           "text": "come",
-          "start": 49.855,
-          "end": 50.035
+          "start": 52.029,
+          "end": 52.189
         },
         {
           "text": "stima",
-          "start": 50.135,
-          "end": 50.415
+          "start": 52.269,
+          "end": 52.49
         },
         {
           "text": "del",
-          "start": 50.455,
-          "end": 50.595
+          "start": 52.55,
+          "end": 52.65
         },
         {
           "text": "rischio?",
-          "start": 50.655,
-          "end": 51.035
+          "start": 52.71,
+          "end": 53.09
         }
       ]
     },
     {
-      "start": 51.715,
-      "end": 56.756,
+      "start": 53.91,
+      "end": 59.031,
       "text": "Perché ogni errore di validazione contiene rumore, e scegliendo il minimo tra molte prove si",
       "words": [
         {
           "text": "Perché",
-          "start": 51.715,
-          "end": 51.915
+          "start": 53.91,
+          "end": 54.15
         },
         {
           "text": "ogni",
-          "start": 52.075,
-          "end": 52.255
+          "start": 54.21,
+          "end": 54.35
         },
         {
           "text": "errore",
-          "start": 52.295,
-          "end": 52.575
+          "start": 54.41,
+          "end": 54.77
         },
         {
           "text": "di",
-          "start": 52.635,
-          "end": 52.695
+          "start": 54.83,
+          "end": 54.89
         },
         {
           "text": "validazione",
-          "start": 52.755,
-          "end": 53.495
+          "start": 54.91,
+          "end": 55.59
         },
         {
           "text": "contiene",
-          "start": 53.555,
-          "end": 53.915
+          "start": 55.65,
+          "end": 56.05
         },
         {
           "text": "rumore,",
-          "start": 53.975,
-          "end": 54.355
+          "start": 56.11,
+          "end": 56.45
         },
         {
           "text": "e",
-          "start": 54.796,
-          "end": 54.836
+          "start": 56.95,
+          "end": 56.99
         },
         {
           "text": "scegliendo",
-          "start": 54.856,
-          "end": 55.276
+          "start": 57.03,
+          "end": 57.51
         },
         {
           "text": "il",
-          "start": 55.316,
-          "end": 55.376
+          "start": 57.55,
+          "end": 57.61
         },
         {
           "text": "minimo",
-          "start": 55.416,
-          "end": 55.716
+          "start": 57.65,
+          "end": 57.971
         },
         {
           "text": "tra",
-          "start": 55.756,
-          "end": 55.856
+          "start": 58.071,
+          "end": 58.171
         },
         {
           "text": "molte",
-          "start": 55.956,
-          "end": 56.236
+          "start": 58.231,
+          "end": 58.471
         },
         {
           "text": "prove",
-          "start": 56.296,
-          "end": 56.616
+          "start": 58.511,
+          "end": 58.831
         },
         {
           "text": "si",
-          "start": 56.676,
-          "end": 56.756
+          "start": 58.951,
+          "end": 59.031
         }
       ]
     },
     {
-      "start": 56.796,
-      "end": 71.697,
+      "start": 59.091,
+      "end": 63.612,
       "text": "pesca proprio quella fortunata: sarebbe l'errore uno del controesempio.",
       "words": [
         {
           "text": "pesca",
-          "start": 56.796,
-          "end": 57.036
+          "start": 59.091,
+          "end": 59.371
         },
         {
           "text": "proprio",
-          "start": 57.096,
-          "end": 57.376
+          "start": 59.511,
+          "end": 59.871
         },
         {
           "text": "quella",
-          "start": 57.416,
-          "end": 57.596
+          "start": 59.911,
+          "end": 60.111
         },
         {
           "text": "fortunata:",
-          "start": 57.616,
-          "end": 58.196
+          "start": 60.151,
+          "end": 60.691
         },
         {
           "text": "sarebbe",
-          "start": 58.676,
-          "end": 58.996
+          "start": 61.231,
+          "end": 61.551
         },
         {
           "text": "l'errore",
-          "start": 59.156,
-          "end": 64.076
+          "start": 61.691,
+          "end": 62.091
         },
         {
           "text": "uno",
-          "start": 64.116,
-          "end": 64.516
+          "start": 62.331,
+          "end": 62.571
         },
         {
           "text": "del",
-          "start": 64.917,
-          "end": 65.017
+          "start": 62.731,
+          "end": 62.871
         },
         {
           "text": "controesempio.",
-          "start": 65.297,
-          "end": 71.697
+          "start": 62.911,
+          "end": 63.612
         }
       ]
     },
     {
-      "start": 72.497,
-      "end": 85.558,
+      "start": 64.592,
+      "end": 68.492,
       "text": "Secondo algoritmo: model selection con K-fold CV.",
       "words": [
         {
           "text": "Secondo",
-          "start": 72.497,
-          "end": 73.997
+          "start": 64.592,
+          "end": 64.932
         },
         {
           "text": "algoritmo:",
-          "start": 74.457,
-          "end": 76.938
+          "start": 64.972,
+          "end": 65.472
         },
         {
           "text": "model",
-          "start": 77.498,
-          "end": 80.918
+          "start": 65.952,
+          "end": 66.272
         },
         {
           "text": "selection",
-          "start": 84.058,
-          "end": 84.478
+          "start": 66.352,
+          "end": 66.852
         },
         {
           "text": "con",
-          "start": 84.578,
-          "end": 84.738
+          "start": 66.972,
+          "end": 67.112
         },
         {
           "text": "K-fold",
-          "start": 84.798,
-          "end": 85.258
+          "start": 67.292,
+          "end": 68.012
         },
         {
           "text": "CV.",
-          "start": 85.378,
-          "end": 85.558
+          "start": 68.252,
+          "end": 68.492
         }
       ]
     },
     {
-      "start": 86.439,
-      "end": 89.959,
+      "start": 69.793,
+      "end": 73.77300000000001,
       "text": "Si divide D con l in K fold D uno fino a D con K,",
       "words": [
         {
           "text": "Si",
-          "start": 86.439,
-          "end": 86.519
+          "start": 69.793,
+          "end": 69.873
         },
         {
           "text": "divide",
-          "start": 86.579,
-          "end": 86.879
+          "start": 69.933,
+          "end": 70.253
         },
         {
           "text": "D",
-          "start": 86.939,
-          "end": 86.979
+          "start": 70.313,
+          "end": 70.35300000000001
         },
         {
           "text": "con",
-          "start": 87.059,
-          "end": 87.199
+          "start": 70.453,
+          "end": 70.613
         },
         {
           "text": "l",
-          "start": 87.379,
-          "end": 87.41900000000001
+          "start": 70.773,
+          "end": 70.813
         },
         {
           "text": "in",
-          "start": 87.599,
-          "end": 87.699
+          "start": 71.093,
+          "end": 71.193
         },
         {
           "text": "K",
-          "start": 87.779,
-          "end": 87.819
+          "start": 71.273,
+          "end": 71.313
         },
         {
           "text": "fold",
-          "start": 88.079,
-          "end": 88.359
+          "start": 71.633,
+          "end": 71.973
         },
         {
           "text": "D",
-          "start": 88.539,
-          "end": 88.57900000000001
+          "start": 72.473,
+          "end": 72.513
         },
         {
           "text": "uno",
-          "start": 88.939,
-          "end": 89.119
+          "start": 72.673,
+          "end": 72.853
         },
         {
           "text": "fino",
-          "start": 89.239,
-          "end": 89.459
+          "start": 72.953,
+          "end": 73.193
         },
         {
           "text": "a",
-          "start": 89.499,
-          "end": 89.539
+          "start": 73.233,
+          "end": 73.27300000000001
         },
         {
           "text": "D",
-          "start": 89.599,
-          "end": 89.63900000000001
+          "start": 73.353,
+          "end": 73.393
         },
         {
           "text": "con",
-          "start": 89.719,
-          "end": 89.859
+          "start": 73.513,
+          "end": 73.673
         },
         {
           "text": "K,",
-          "start": 89.919,
-          "end": 89.959
+          "start": 73.733,
+          "end": 73.77300000000001
         }
       ]
     },
     {
-      "start": 90.679,
-      "end": 94.179,
+      "start": 74.554,
+      "end": 79.07400000000001,
       "text": "indicando con D soprassegnato k il complementare di D con k.",
       "words": [
         {
           "text": "indicando",
-          "start": 90.679,
-          "end": 91.219
+          "start": 74.554,
+          "end": 75.134
         },
         {
           "text": "con",
-          "start": 91.279,
-          "end": 91.439
+          "start": 75.214,
+          "end": 75.434
         },
         {
           "text": "D",
-          "start": 91.519,
-          "end": 91.55900000000001
+          "start": 75.774,
+          "end": 75.81400000000001
         },
         {
           "text": "soprassegnato",
-          "start": 91.679,
-          "end": 92.279
+          "start": 76.114,
+          "end": 76.754
         },
         {
           "text": "k",
-          "start": 92.319,
-          "end": 92.35900000000001
+          "start": 76.814,
+          "end": 76.854
         },
         {
           "text": "il",
-          "start": 92.819,
-          "end": 92.899
+          "start": 77.314,
+          "end": 77.414
         },
         {
           "text": "complementare",
-          "start": 92.959,
-          "end": 93.639
+          "start": 77.494,
+          "end": 78.394
         },
         {
           "text": "di",
-          "start": 93.699,
-          "end": 93.759
+          "start": 78.554,
+          "end": 78.614
         },
         {
           "text": "D",
-          "start": 93.819,
-          "end": 93.85900000000001
+          "start": 78.674,
+          "end": 78.71400000000001
         },
         {
           "text": "con",
-          "start": 93.939,
-          "end": 94.079
+          "start": 78.814,
+          "end": 78.974
         },
         {
           "text": "k.",
-          "start": 94.139,
-          "end": 94.179
+          "start": 79.034,
+          "end": 79.07400000000001
         }
       ]
     },
     {
-      "start": 95.199,
-      "end": 98.82,
-      "text": "Per ogni theta con m e per ogni fold D con k si addestra da",
+      "start": 80.495,
+      "end": 83.655,
+      "text": "Per ogni theta con m e per ogni fold D con k",
       "words": [
         {
           "text": "Per",
-          "start": 95.199,
-          "end": 95.319
+          "start": 80.495,
+          "end": 80.635
         },
         {
           "text": "ogni",
-          "start": 95.379,
-          "end": 95.559
+          "start": 80.695,
+          "end": 80.935
         },
         {
           "text": "theta",
-          "start": 95.599,
-          "end": 95.799
+          "start": 81.155,
+          "end": 81.415
         },
         {
           "text": "con",
-          "start": 95.839,
-          "end": 95.98
+          "start": 81.455,
+          "end": 81.595
         },
         {
           "text": "m",
-          "start": 96.2,
-          "end": 96.24000000000001
+          "start": 81.775,
+          "end": 81.81500000000001
         },
         {
           "text": "e",
-          "start": 96.44,
-          "end": 96.48
+          "start": 82.155,
+          "end": 82.19500000000001
         },
         {
           "text": "per",
-          "start": 96.52,
-          "end": 96.66
+          "start": 82.215,
+          "end": 82.335
         },
         {
           "text": "ogni",
-          "start": 96.7,
-          "end": 96.86
+          "start": 82.395,
+          "end": 82.575
         },
         {
           "text": "fold",
-          "start": 96.94,
-          "end": 97.22
+          "start": 82.635,
+          "end": 82.955
         },
         {
           "text": "D",
-          "start": 97.42,
-          "end": 97.46000000000001
+          "start": 83.215,
+          "end": 83.25500000000001
         },
         {
           "text": "con",
-          "start": 97.56,
-          "end": 97.7
+          "start": 83.395,
+          "end": 83.555
         },
         {
           "text": "k",
-          "start": 97.76,
-          "end": 97.80000000000001
-        },
+          "start": 83.615,
+          "end": 83.655
+        }
+      ]
+    },
+    {
+      "start": 84.515,
+      "end": 86.77600000000001,
+      "text": "si addestra da zero su D soprassegnato k,",
+      "words": [
         {
           "text": "si",
-          "start": 98.24,
-          "end": 98.3
+          "start": 84.515,
+          "end": 84.575
         },
         {
           "text": "addestra",
-          "start": 98.34,
-          "end": 98.68
+          "start": 84.615,
+          "end": 84.995
         },
         {
           "text": "da",
-          "start": 98.74,
-          "end": 98.82
-        }
-      ]
-    },
-    {
-      "start": 98.92,
-      "end": 100.54,
-      "text": "zero su D soprassegnato k,",
-      "words": [
+          "start": 85.075,
+          "end": 85.135
+        },
         {
           "text": "zero",
-          "start": 98.92,
-          "end": 99.18
+          "start": 85.235,
+          "end": 85.495
         },
         {
           "text": "su",
-          "start": 99.3,
-          "end": 99.4
+          "start": 85.575,
+          "end": 85.676
         },
         {
           "text": "D",
-          "start": 99.7,
-          "end": 99.74000000000001
+          "start": 85.916,
+          "end": 85.956
         },
         {
           "text": "soprassegnato",
-          "start": 99.9,
-          "end": 100.46
+          "start": 86.096,
+          "end": 86.696
         },
         {
           "text": "k,",
-          "start": 100.5,
-          "end": 100.54
+          "start": 86.736,
+          "end": 86.77600000000001
         }
       ]
     },
     {
-      "start": 101.3,
-      "end": 104.42,
-      "text": "si valuta su D con k, e si media sui K fold.",
+      "start": 87.576,
+      "end": 88.85600000000001,
+      "text": "si valuta su D con k,",
       "words": [
         {
           "text": "si",
-          "start": 101.3,
-          "end": 101.36
+          "start": 87.576,
+          "end": 87.676
         },
         {
           "text": "valuta",
-          "start": 101.42,
-          "end": 101.74
+          "start": 87.736,
+          "end": 88.136
         },
         {
           "text": "su",
-          "start": 101.92,
-          "end": 102.0
+          "start": 88.236,
+          "end": 88.316
         },
         {
           "text": "D",
-          "start": 102.18,
-          "end": 102.22000000000001
+          "start": 88.436,
+          "end": 88.47600000000001
         },
         {
           "text": "con",
-          "start": 102.34,
-          "end": 102.5
+          "start": 88.596,
+          "end": 88.756
         },
         {
           "text": "k,",
-          "start": 102.56,
-          "end": 102.60000000000001
-        },
-        {
-          "text": "e",
-          "start": 103.1,
-          "end": 103.14
-        },
-        {
-          "text": "si",
-          "start": 103.24,
-          "end": 103.32
-        },
-        {
-          "text": "media",
-          "start": 103.38,
-          "end": 103.64
-        },
-        {
-          "text": "sui",
-          "start": 103.7,
-          "end": 103.82
-        },
-        {
-          "text": "K",
-          "start": 103.86,
-          "end": 103.9
-        },
-        {
-          "text": "fold.",
-          "start": 104.14,
-          "end": 104.42
+          "start": 88.816,
+          "end": 88.85600000000001
         }
       ]
     },
     {
-      "start": 105.3,
-      "end": 108.741,
+      "start": 89.776,
+      "end": 91.257,
+      "text": "e si media sui K fold.",
+      "words": [
+        {
+          "text": "e",
+          "start": 89.776,
+          "end": 89.816
+        },
+        {
+          "text": "si",
+          "start": 89.916,
+          "end": 89.996
+        },
+        {
+          "text": "media",
+          "start": 90.056,
+          "end": 90.376
+        },
+        {
+          "text": "sui",
+          "start": 90.536,
+          "end": 90.676
+        },
+        {
+          "text": "K",
+          "start": 90.716,
+          "end": 90.756
+        },
+        {
+          "text": "fold.",
+          "start": 90.976,
+          "end": 91.257
+        }
+      ]
+    },
+    {
+      "start": 91.997,
+      "end": 96.417,
       "text": "Si sceglie il theta stella con la migliore media e si riaddestra su tutto D",
       "words": [
         {
           "text": "Si",
-          "start": 105.3,
-          "end": 105.38
+          "start": 91.997,
+          "end": 92.077
         },
         {
           "text": "sceglie",
-          "start": 105.42,
-          "end": 105.72
+          "start": 92.117,
+          "end": 92.477
         },
         {
           "text": "il",
-          "start": 105.76,
-          "end": 105.80000000000001
+          "start": 92.537,
+          "end": 92.617
         },
         {
           "text": "theta",
-          "start": 105.84,
-          "end": 106.02
+          "start": 92.677,
+          "end": 92.877
         },
         {
           "text": "stella",
-          "start": 106.08,
-          "end": 106.381
+          "start": 92.957,
+          "end": 93.317
         },
         {
           "text": "con",
-          "start": 106.421,
-          "end": 106.521
+          "start": 93.377,
+          "end": 93.497
         },
         {
           "text": "la",
-          "start": 106.561,
-          "end": 106.621
+          "start": 93.517,
+          "end": 93.577
         },
         {
           "text": "migliore",
-          "start": 106.641,
-          "end": 106.961
+          "start": 93.637,
+          "end": 93.957
         },
         {
           "text": "media",
-          "start": 107.001,
-          "end": 107.301
+          "start": 93.997,
+          "end": 94.337
         },
         {
           "text": "e",
-          "start": 107.481,
-          "end": 107.521
+          "start": 94.537,
+          "end": 94.57700000000001
         },
         {
           "text": "si",
-          "start": 107.601,
-          "end": 107.661
+          "start": 94.697,
+          "end": 94.797
         },
         {
           "text": "riaddestra",
-          "start": 107.721,
-          "end": 108.161
+          "start": 94.917,
+          "end": 95.577
         },
         {
           "text": "su",
-          "start": 108.221,
-          "end": 108.281
+          "start": 95.837,
+          "end": 95.897
         },
         {
           "text": "tutto",
-          "start": 108.401,
-          "end": 108.641
+          "start": 95.997,
+          "end": 96.297
         },
         {
           "text": "D",
-          "start": 108.701,
-          "end": 108.741
+          "start": 96.377,
+          "end": 96.417
         }
       ]
     },
     {
-      "start": 108.801,
-      "end": 109.18100000000001,
+      "start": 96.517,
+      "end": 96.81800000000001,
       "text": "con l.",
       "words": [
         {
           "text": "con",
-          "start": 108.801,
-          "end": 108.941
+          "start": 96.517,
+          "end": 96.637
         },
         {
           "text": "l.",
-          "start": 109.141,
-          "end": 109.18100000000001
+          "start": 96.778,
+          "end": 96.81800000000001
         }
       ]
     },
     {
-      "start": 109.921,
-      "end": 114.141,
+      "start": 97.718,
+      "end": 101.898,
       "text": "Regola ferrea: ogni iterazione sui fold deve ripartire da zero.",
       "words": [
         {
           "text": "Regola",
-          "start": 109.921,
-          "end": 110.201
+          "start": 97.718,
+          "end": 97.978
         },
         {
           "text": "ferrea:",
-          "start": 110.261,
-          "end": 110.601
+          "start": 98.038,
+          "end": 98.398
         },
         {
           "text": "ogni",
-          "start": 111.321,
-          "end": 111.501
+          "start": 98.958,
+          "end": 99.258
         },
         {
           "text": "iterazione",
-          "start": 111.521,
-          "end": 112.001
+          "start": 99.278,
+          "end": 99.818
         },
         {
           "text": "sui",
-          "start": 112.061,
-          "end": 112.181
+          "start": 99.858,
+          "end": 99.998
         },
         {
           "text": "fold",
-          "start": 112.241,
-          "end": 112.501
+          "start": 100.038,
+          "end": 100.318
         },
         {
           "text": "deve",
-          "start": 112.621,
-          "end": 112.821
+          "start": 100.518,
+          "end": 100.718
         },
         {
           "text": "ripartire",
-          "start": 112.941,
-          "end": 113.581
+          "start": 100.778,
+          "end": 101.378
         },
         {
           "text": "da",
-          "start": 113.621,
-          "end": 113.701
+          "start": 101.418,
+          "end": 101.498
         },
         {
           "text": "zero.",
-          "start": 113.821,
-          "end": 114.141
+          "start": 101.618,
+          "end": 101.898
         }
       ]
     },
     {
-      "start": 114.661,
-      "end": 117.262,
+      "start": 102.439,
+      "end": 105.719,
       "text": "Se riutilizzassi i pesi dello split uno nello split due,",
       "words": [
         {
           "text": "Se",
-          "start": 114.661,
-          "end": 114.741
+          "start": 102.439,
+          "end": 102.499
         },
         {
           "text": "riutilizzassi",
-          "start": 114.781,
-          "end": 115.361
+          "start": 102.559,
+          "end": 103.179
         },
         {
           "text": "i",
-          "start": 115.401,
-          "end": 115.441
+          "start": 103.219,
+          "end": 103.259
         },
         {
           "text": "pesi",
-          "start": 115.441,
-          "end": 115.661
+          "start": 103.259,
+          "end": 103.479
         },
         {
           "text": "dello",
-          "start": 115.681,
-          "end": 115.841
+          "start": 103.519,
+          "end": 103.679
         },
         {
           "text": "split",
-          "start": 115.861,
-          "end": 116.121
+          "start": 103.739,
+          "end": 104.039
         },
         {
           "text": "uno",
-          "start": 116.181,
-          "end": 116.361
+          "start": 104.319,
+          "end": 104.579
         },
         {
           "text": "nello",
-          "start": 116.501,
-          "end": 116.682
+          "start": 104.859,
+          "end": 105.039
         },
         {
           "text": "split",
-          "start": 116.722,
-          "end": 116.962
+          "start": 105.079,
+          "end": 105.359
         },
         {
           "text": "due,",
-          "start": 117.062,
-          "end": 117.262
+          "start": 105.479,
+          "end": 105.719
         }
       ]
     },
     {
-      "start": 117.602,
-      "end": 121.402,
+      "start": 106.119,
+      "end": 110.22,
       "text": "staresti validando su D due che era già entrato nel training dello split uno.",
       "words": [
         {
           "text": "staresti",
-          "start": 117.602,
-          "end": 117.982
+          "start": 106.119,
+          "end": 106.479
         },
         {
           "text": "validando",
-          "start": 118.042,
-          "end": 118.562
+          "start": 106.519,
+          "end": 106.979
         },
         {
           "text": "su",
-          "start": 118.682,
-          "end": 118.762
+          "start": 107.059,
+          "end": 107.119
         },
         {
           "text": "D",
-          "start": 118.842,
-          "end": 118.882
+          "start": 107.199,
+          "end": 107.239
         },
         {
           "text": "due",
-          "start": 118.962,
-          "end": 119.182
+          "start": 107.339,
+          "end": 107.579
         },
         {
           "text": "che",
-          "start": 119.282,
-          "end": 119.362
+          "start": 107.86,
+          "end": 107.94
         },
         {
           "text": "era",
-          "start": 119.422,
-          "end": 119.542
+          "start": 108.0,
+          "end": 108.12
         },
         {
           "text": "già",
-          "start": 119.602,
-          "end": 119.682
+          "start": 108.22,
+          "end": 108.3
         },
         {
           "text": "entrato",
-          "start": 119.742,
-          "end": 120.022
+          "start": 108.38,
+          "end": 108.72
         },
         {
           "text": "nel",
-          "start": 120.062,
-          "end": 120.182
+          "start": 108.76,
+          "end": 108.88
         },
         {
           "text": "training",
-          "start": 120.222,
-          "end": 120.542
+          "start": 108.92,
+          "end": 109.32
         },
         {
           "text": "dello",
-          "start": 120.742,
-          "end": 120.902
+          "start": 109.42,
+          "end": 109.58
         },
         {
           "text": "split",
-          "start": 120.942,
-          "end": 121.202
+          "start": 109.62,
+          "end": 109.88
         },
         {
           "text": "uno.",
-          "start": 121.262,
-          "end": 121.402
+          "start": 110.04,
+          "end": 110.22
         }
       ]
     }

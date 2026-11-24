@@ -1,0 +1,1332 @@
+{
+  "duration": 100.11,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.481,
+      "text": "Perché non possiamo semplicemente trasformare un grafo in un vettore e usare un modello standard?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 0.08,
+          "end": 0.5
+        },
+        {
+          "text": "non",
+          "start": 0.58,
+          "end": 0.72
+        },
+        {
+          "text": "possiamo",
+          "start": 0.76,
+          "end": 1.2
+        },
+        {
+          "text": "semplicemente",
+          "start": 1.3,
+          "end": 2.04
+        },
+        {
+          "text": "trasformare",
+          "start": 2.1,
+          "end": 2.681
+        },
+        {
+          "text": "un",
+          "start": 2.721,
+          "end": 2.781
+        },
+        {
+          "text": "grafo",
+          "start": 2.821,
+          "end": 3.101
+        },
+        {
+          "text": "in",
+          "start": 3.161,
+          "end": 3.221
+        },
+        {
+          "text": "un",
+          "start": 3.281,
+          "end": 3.361
+        },
+        {
+          "text": "vettore",
+          "start": 3.401,
+          "end": 3.961
+        },
+        {
+          "text": "e",
+          "start": 4.201,
+          "end": 4.241
+        },
+        {
+          "text": "usare",
+          "start": 4.321,
+          "end": 4.601
+        },
+        {
+          "text": "un",
+          "start": 4.621,
+          "end": 4.6610000000000005
+        },
+        {
+          "text": "modello",
+          "start": 4.701,
+          "end": 4.981
+        },
+        {
+          "text": "standard?",
+          "start": 5.021,
+          "end": 5.481
+        }
+      ]
+    },
+    {
+      "start": 6.361,
+      "end": 9.562,
+      "text": "Il cuore della questione è il problema della rappresentazione,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 6.361,
+          "end": 6.441
+        },
+        {
+          "text": "cuore",
+          "start": 6.501,
+          "end": 6.761
+        },
+        {
+          "text": "della",
+          "start": 6.801,
+          "end": 6.941
+        },
+        {
+          "text": "questione",
+          "start": 6.981,
+          "end": 7.401
+        },
+        {
+          "text": "è",
+          "start": 7.622,
+          "end": 7.662
+        },
+        {
+          "text": "il",
+          "start": 7.782,
+          "end": 7.862
+        },
+        {
+          "text": "problema",
+          "start": 7.922,
+          "end": 8.342
+        },
+        {
+          "text": "della",
+          "start": 8.402,
+          "end": 8.582
+        },
+        {
+          "text": "rappresentazione,",
+          "start": 8.622,
+          "end": 9.562
+        }
+      ]
+    },
+    {
+      "start": 9.802,
+      "end": 16.543,
+      "text": "ovvero estendere il representation learning ai domini strutturati, dove non esisteva un modo sistematico e",
+      "words": [
+        {
+          "text": "ovvero",
+          "start": 9.802,
+          "end": 10.062
+        },
+        {
+          "text": "estendere",
+          "start": 10.482,
+          "end": 10.962
+        },
+        {
+          "text": "il",
+          "start": 11.142,
+          "end": 11.242
+        },
+        {
+          "text": "representation",
+          "start": 11.402,
+          "end": 12.122
+        },
+        {
+          "text": "learning",
+          "start": 12.182,
+          "end": 12.563
+        },
+        {
+          "text": "ai",
+          "start": 12.683,
+          "end": 12.803
+        },
+        {
+          "text": "domini",
+          "start": 12.863,
+          "end": 13.243
+        },
+        {
+          "text": "strutturati,",
+          "start": 13.343,
+          "end": 14.143
+        },
+        {
+          "text": "dove",
+          "start": 14.563,
+          "end": 14.723
+        },
+        {
+          "text": "non",
+          "start": 14.763,
+          "end": 14.863
+        },
+        {
+          "text": "esisteva",
+          "start": 14.903,
+          "end": 15.303
+        },
+        {
+          "text": "un",
+          "start": 15.343,
+          "end": 15.403
+        },
+        {
+          "text": "modo",
+          "start": 15.423,
+          "end": 15.603
+        },
+        {
+          "text": "sistematico",
+          "start": 15.663,
+          "end": 16.323
+        },
+        {
+          "text": "e",
+          "start": 16.503,
+          "end": 16.543
+        }
+      ]
+    },
+    {
+      "start": 16.683,
+      "end": 19.564,
+      "text": "indipendente dal compito per estrarre feature.",
+      "words": [
+        {
+          "text": "indipendente",
+          "start": 16.683,
+          "end": 17.484
+        },
+        {
+          "text": "dal",
+          "start": 17.524,
+          "end": 17.664
+        },
+        {
+          "text": "compito",
+          "start": 17.744,
+          "end": 18.204
+        },
+        {
+          "text": "per",
+          "start": 18.504,
+          "end": 18.644
+        },
+        {
+          "text": "estrarre",
+          "start": 18.684,
+          "end": 19.124
+        },
+        {
+          "text": "feature.",
+          "start": 19.184,
+          "end": 19.564
+        }
+      ]
+    },
+    {
+      "start": 20.364,
+      "end": 25.905,
+      "text": "Da un lato, le rappresentazioni basate su feature scelte a mano risultano incomplete o fortemente",
+      "words": [
+        {
+          "text": "Da",
+          "start": 20.364,
+          "end": 20.424
+        },
+        {
+          "text": "un",
+          "start": 20.464,
+          "end": 20.504
+        },
+        {
+          "text": "lato,",
+          "start": 20.544,
+          "end": 20.724
+        },
+        {
+          "text": "le",
+          "start": 20.864,
+          "end": 20.924
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 20.964,
+          "end": 21.684
+        },
+        {
+          "text": "basate",
+          "start": 21.744,
+          "end": 22.084
+        },
+        {
+          "text": "su",
+          "start": 22.124,
+          "end": 22.184
+        },
+        {
+          "text": "feature",
+          "start": 22.284,
+          "end": 22.625
+        },
+        {
+          "text": "scelte",
+          "start": 22.645,
+          "end": 22.945
+        },
+        {
+          "text": "a",
+          "start": 23.005,
+          "end": 23.045
+        },
+        {
+          "text": "mano",
+          "start": 23.125,
+          "end": 23.425
+        },
+        {
+          "text": "risultano",
+          "start": 23.605,
+          "end": 24.045
+        },
+        {
+          "text": "incomplete",
+          "start": 24.205,
+          "end": 24.905
+        },
+        {
+          "text": "o",
+          "start": 25.325,
+          "end": 25.365
+        },
+        {
+          "text": "fortemente",
+          "start": 25.425,
+          "end": 25.905
+        }
+      ]
+    },
+    {
+      "start": 25.945,
+      "end": 31.166,
+      "text": "dipendenti dal singolo task, come accade con gli indici topologici usati tradizionalmente in chimica.",
+      "words": [
+        {
+          "text": "dipendenti",
+          "start": 25.945,
+          "end": 26.445
+        },
+        {
+          "text": "dal",
+          "start": 26.505,
+          "end": 26.625
+        },
+        {
+          "text": "singolo",
+          "start": 26.685,
+          "end": 26.985
+        },
+        {
+          "text": "task,",
+          "start": 27.025,
+          "end": 27.325
+        },
+        {
+          "text": "come",
+          "start": 27.646,
+          "end": 27.786
+        },
+        {
+          "text": "accade",
+          "start": 27.846,
+          "end": 28.146
+        },
+        {
+          "text": "con",
+          "start": 28.206,
+          "end": 28.306
+        },
+        {
+          "text": "gli",
+          "start": 28.326,
+          "end": 28.426
+        },
+        {
+          "text": "indici",
+          "start": 28.446,
+          "end": 28.746
+        },
+        {
+          "text": "topologici",
+          "start": 28.806,
+          "end": 29.426
+        },
+        {
+          "text": "usati",
+          "start": 29.486,
+          "end": 29.786
+        },
+        {
+          "text": "tradizionalmente",
+          "start": 29.846,
+          "end": 30.646
+        },
+        {
+          "text": "in",
+          "start": 30.686,
+          "end": 30.746
+        },
+        {
+          "text": "chimica.",
+          "start": 30.786,
+          "end": 31.166
+        }
+      ]
+    },
+    {
+      "start": 31.866,
+      "end": 37.147,
+      "text": "Dall'altro, le rappresentazioni di dimensione fissa — come appiattire la matrice di adiacenza in un",
+      "words": [
+        {
+          "text": "Dall'altro,",
+          "start": 31.866,
+          "end": 32.426
+        },
+        {
+          "text": "le",
+          "start": 32.827,
+          "end": 32.887
+        },
+        {
+          "text": "rappresentazioni",
+          "start": 32.927,
+          "end": 33.667
+        },
+        {
+          "text": "di",
+          "start": 33.727,
+          "end": 33.787
+        },
+        {
+          "text": "dimensione",
+          "start": 33.827,
+          "end": 34.307
+        },
+        {
+          "text": "fissa",
+          "start": 34.367,
+          "end": 34.747
+        },
+        {
+          "text": "—",
+          "start": 34.747,
+          "end": 34.897
+        },
+        {
+          "text": "come",
+          "start": 35.067,
+          "end": 35.207
+        },
+        {
+          "text": "appiattire",
+          "start": 35.287,
+          "end": 35.747
+        },
+        {
+          "text": "la",
+          "start": 35.787,
+          "end": 35.847
+        },
+        {
+          "text": "matrice",
+          "start": 35.887,
+          "end": 36.227
+        },
+        {
+          "text": "di",
+          "start": 36.267,
+          "end": 36.327
+        },
+        {
+          "text": "adiacenza",
+          "start": 36.367,
+          "end": 36.907
+        },
+        {
+          "text": "in",
+          "start": 36.967,
+          "end": 37.027
+        },
+        {
+          "text": "un",
+          "start": 37.067,
+          "end": 37.147
+        }
+      ]
+    },
+    {
+      "start": 37.227,
+      "end": 40.028,
+      "text": "lungo vettore — soffrono di tre difetti gravi.",
+      "words": [
+        {
+          "text": "lungo",
+          "start": 37.227,
+          "end": 37.487
+        },
+        {
+          "text": "vettore",
+          "start": 37.527,
+          "end": 38.008
+        },
+        {
+          "text": "—",
+          "start": 38.008,
+          "end": 38.158
+        },
+        {
+          "text": "soffrono",
+          "start": 38.428,
+          "end": 38.828
+        },
+        {
+          "text": "di",
+          "start": 38.888,
+          "end": 38.968
+        },
+        {
+          "text": "tre",
+          "start": 39.068,
+          "end": 39.248
+        },
+        {
+          "text": "difetti",
+          "start": 39.328,
+          "end": 39.688
+        },
+        {
+          "text": "gravi.",
+          "start": 39.748,
+          "end": 40.028
+        }
+      ]
+    },
+    {
+      "start": 40.688,
+      "end": 46.569,
+      "text": "Primo: sovra-dimensionamento con spreco di padding, oppure incompletezza e perdita di informazione.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 40.688,
+          "end": 40.948
+        },
+        {
+          "text": "sovra-dimensionamento",
+          "start": 41.408,
+          "end": 42.488
+        },
+        {
+          "text": "con",
+          "start": 42.709,
+          "end": 42.829
+        },
+        {
+          "text": "spreco",
+          "start": 42.849,
+          "end": 43.189
+        },
+        {
+          "text": "di",
+          "start": 43.249,
+          "end": 43.329
+        },
+        {
+          "text": "padding,",
+          "start": 43.449,
+          "end": 43.949
+        },
+        {
+          "text": "oppure",
+          "start": 44.029,
+          "end": 44.309
+        },
+        {
+          "text": "incompletezza",
+          "start": 44.349,
+          "end": 45.129
+        },
+        {
+          "text": "e",
+          "start": 45.209,
+          "end": 45.249
+        },
+        {
+          "text": "perdita",
+          "start": 45.329,
+          "end": 45.729
+        },
+        {
+          "text": "di",
+          "start": 45.769,
+          "end": 45.829
+        },
+        {
+          "text": "informazione.",
+          "start": 45.869,
+          "end": 46.569
+        }
+      ]
+    },
+    {
+      "start": 47.189,
+      "end": 52.35,
+      "text": "Secondo: il problema dell'allineamento tra grafi diversi — quale nodo del primo grafo corrisponde a",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 47.189,
+          "end": 47.59
+        },
+        {
+          "text": "il",
+          "start": 47.77,
+          "end": 47.87
+        },
+        {
+          "text": "problema",
+          "start": 47.93,
+          "end": 48.31
+        },
+        {
+          "text": "dell'allineamento",
+          "start": 48.37,
+          "end": 49.11
+        },
+        {
+          "text": "tra",
+          "start": 49.17,
+          "end": 49.27
+        },
+        {
+          "text": "grafi",
+          "start": 49.37,
+          "end": 49.61
+        },
+        {
+          "text": "diversi",
+          "start": 49.65,
+          "end": 50.13
+        },
+        {
+          "text": "—",
+          "start": 50.13,
+          "end": 50.28
+        },
+        {
+          "text": "quale",
+          "start": 50.55,
+          "end": 50.75
+        },
+        {
+          "text": "nodo",
+          "start": 50.79,
+          "end": 50.97
+        },
+        {
+          "text": "del",
+          "start": 51.01,
+          "end": 51.11
+        },
+        {
+          "text": "primo",
+          "start": 51.15,
+          "end": 51.33
+        },
+        {
+          "text": "grafo",
+          "start": 51.35,
+          "end": 51.59
+        },
+        {
+          "text": "corrisponde",
+          "start": 51.65,
+          "end": 52.27
+        },
+        {
+          "text": "a",
+          "start": 52.31,
+          "end": 52.35
+        }
+      ]
+    },
+    {
+      "start": 52.43,
+      "end": 53.591,
+      "text": "quale nodo del secondo?",
+      "words": [
+        {
+          "text": "quale",
+          "start": 52.43,
+          "end": 52.671
+        },
+        {
+          "text": "nodo",
+          "start": 52.711,
+          "end": 52.931
+        },
+        {
+          "text": "del",
+          "start": 52.971,
+          "end": 53.111
+        },
+        {
+          "text": "secondo?",
+          "start": 53.171,
+          "end": 53.591
+        }
+      ]
+    },
+    {
+      "start": 54.271,
+      "end": 60.392,
+      "text": "Terzo: la dipendenza dall'ordinamento arbitrario dei nodi, che ostacola pesantemente la generalizzazione.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 54.271,
+          "end": 54.671
+        },
+        {
+          "text": "la",
+          "start": 55.111,
+          "end": 55.171
+        },
+        {
+          "text": "dipendenza",
+          "start": 55.231,
+          "end": 55.771
+        },
+        {
+          "text": "dall'ordinamento",
+          "start": 55.831,
+          "end": 56.491
+        },
+        {
+          "text": "arbitrario",
+          "start": 56.531,
+          "end": 57.111
+        },
+        {
+          "text": "dei",
+          "start": 57.171,
+          "end": 57.311
+        },
+        {
+          "text": "nodi,",
+          "start": 57.351,
+          "end": 57.632
+        },
+        {
+          "text": "che",
+          "start": 57.912,
+          "end": 57.992
+        },
+        {
+          "text": "ostacola",
+          "start": 58.032,
+          "end": 58.432
+        },
+        {
+          "text": "pesantemente",
+          "start": 58.512,
+          "end": 59.312
+        },
+        {
+          "text": "la",
+          "start": 59.372,
+          "end": 59.412
+        },
+        {
+          "text": "generalizzazione.",
+          "start": 59.472,
+          "end": 60.392
+        }
+      ]
+    },
+    {
+      "start": 61.192,
+      "end": 63.373,
+      "text": "Da qui nasce il principio guida del capitolo:",
+      "words": [
+        {
+          "text": "Da",
+          "start": 61.192,
+          "end": 61.272
+        },
+        {
+          "text": "qui",
+          "start": 61.332,
+          "end": 61.452
+        },
+        {
+          "text": "nasce",
+          "start": 61.692,
+          "end": 61.952
+        },
+        {
+          "text": "il",
+          "start": 61.992,
+          "end": 62.052
+        },
+        {
+          "text": "principio",
+          "start": 62.092,
+          "end": 62.532
+        },
+        {
+          "text": "guida",
+          "start": 62.572,
+          "end": 62.773
+        },
+        {
+          "text": "del",
+          "start": 62.813,
+          "end": 62.913
+        },
+        {
+          "text": "capitolo:",
+          "start": 62.953,
+          "end": 63.373
+        }
+      ]
+    },
+    {
+      "start": 64.033,
+      "end": 67.373,
+      "text": "trattare la natura propria dei dati di input è decisivo.",
+      "words": [
+        {
+          "text": "trattare",
+          "start": 64.033,
+          "end": 64.613
+        },
+        {
+          "text": "la",
+          "start": 64.693,
+          "end": 64.753
+        },
+        {
+          "text": "natura",
+          "start": 64.793,
+          "end": 65.073
+        },
+        {
+          "text": "propria",
+          "start": 65.113,
+          "end": 65.493
+        },
+        {
+          "text": "dei",
+          "start": 65.533,
+          "end": 65.673
+        },
+        {
+          "text": "dati",
+          "start": 65.713,
+          "end": 65.953
+        },
+        {
+          "text": "di",
+          "start": 65.993,
+          "end": 66.053
+        },
+        {
+          "text": "input",
+          "start": 66.153,
+          "end": 66.453
+        },
+        {
+          "text": "è",
+          "start": 66.613,
+          "end": 66.653
+        },
+        {
+          "text": "decisivo.",
+          "start": 66.793,
+          "end": 67.373
+        }
+      ]
+    },
+    {
+      "start": 68.194,
+      "end": 72.454,
+      "text": "Invece di portare i dati ai modelli, forzando grafi in vettori o alberi in sequenze,",
+      "words": [
+        {
+          "text": "Invece",
+          "start": 68.194,
+          "end": 68.474
+        },
+        {
+          "text": "di",
+          "start": 68.514,
+          "end": 68.574
+        },
+        {
+          "text": "portare",
+          "start": 68.594,
+          "end": 68.914
+        },
+        {
+          "text": "i",
+          "start": 68.934,
+          "end": 68.974
+        },
+        {
+          "text": "dati",
+          "start": 68.974,
+          "end": 69.174
+        },
+        {
+          "text": "ai",
+          "start": 69.234,
+          "end": 69.314
+        },
+        {
+          "text": "modelli,",
+          "start": 69.374,
+          "end": 69.874
+        },
+        {
+          "text": "forzando",
+          "start": 69.974,
+          "end": 70.394
+        },
+        {
+          "text": "grafi",
+          "start": 70.474,
+          "end": 70.734
+        },
+        {
+          "text": "in",
+          "start": 70.814,
+          "end": 70.854
+        },
+        {
+          "text": "vettori",
+          "start": 70.894,
+          "end": 71.354
+        },
+        {
+          "text": "o",
+          "start": 71.414,
+          "end": 71.45400000000001
+        },
+        {
+          "text": "alberi",
+          "start": 71.514,
+          "end": 71.814
+        },
+        {
+          "text": "in",
+          "start": 71.834,
+          "end": 71.894
+        },
+        {
+          "text": "sequenze,",
+          "start": 71.954,
+          "end": 72.454
+        }
+      ]
+    },
+    {
+      "start": 72.675,
+      "end": 75.095,
+      "text": "dobbiamo portare i modelli ai dati.",
+      "words": [
+        {
+          "text": "dobbiamo",
+          "start": 72.675,
+          "end": 73.115
+        },
+        {
+          "text": "portare",
+          "start": 73.195,
+          "end": 73.715
+        },
+        {
+          "text": "i",
+          "start": 73.915,
+          "end": 73.95500000000001
+        },
+        {
+          "text": "modelli",
+          "start": 74.015,
+          "end": 74.455
+        },
+        {
+          "text": "ai",
+          "start": 74.615,
+          "end": 74.755
+        },
+        {
+          "text": "dati.",
+          "start": 74.795,
+          "end": 75.095
+        }
+      ]
+    },
+    {
+      "start": 75.895,
+      "end": 80.836,
+      "text": "Un esempio emblematico viene dalle molecole, nei problemi QSPR e QSAR:",
+      "words": [
+        {
+          "text": "Un",
+          "start": 75.895,
+          "end": 75.995
+        },
+        {
+          "text": "esempio",
+          "start": 76.015,
+          "end": 76.295
+        },
+        {
+          "text": "emblematico",
+          "start": 76.335,
+          "end": 76.875
+        },
+        {
+          "text": "viene",
+          "start": 76.935,
+          "end": 77.135
+        },
+        {
+          "text": "dalle",
+          "start": 77.175,
+          "end": 77.375
+        },
+        {
+          "text": "molecole,",
+          "start": 77.415,
+          "end": 77.836
+        },
+        {
+          "text": "nei",
+          "start": 78.156,
+          "end": 78.256
+        },
+        {
+          "text": "problemi",
+          "start": 78.276,
+          "end": 78.636
+        },
+        {
+          "text": "QSPR",
+          "start": 78.816,
+          "end": 79.596
+        },
+        {
+          "text": "e",
+          "start": 79.796,
+          "end": 79.83600000000001
+        },
+        {
+          "text": "QSAR:",
+          "start": 79.916,
+          "end": 80.836
+        }
+      ]
+    },
+    {
+      "start": 81.376,
+      "end": 86.957,
+      "text": "vogliamo correlare la struttura chimica con una proprietà, scrivendo Proprietà uguale T di Struttura.",
+      "words": [
+        {
+          "text": "vogliamo",
+          "start": 81.376,
+          "end": 81.636
+        },
+        {
+          "text": "correlare",
+          "start": 81.696,
+          "end": 82.136
+        },
+        {
+          "text": "la",
+          "start": 82.196,
+          "end": 82.256
+        },
+        {
+          "text": "struttura",
+          "start": 82.296,
+          "end": 82.636
+        },
+        {
+          "text": "chimica",
+          "start": 82.696,
+          "end": 83.097
+        },
+        {
+          "text": "con",
+          "start": 83.217,
+          "end": 83.357
+        },
+        {
+          "text": "una",
+          "start": 83.397,
+          "end": 83.517
+        },
+        {
+          "text": "proprietà,",
+          "start": 83.577,
+          "end": 83.977
+        },
+        {
+          "text": "scrivendo",
+          "start": 84.297,
+          "end": 84.637
+        },
+        {
+          "text": "Proprietà",
+          "start": 85.057,
+          "end": 85.437
+        },
+        {
+          "text": "uguale",
+          "start": 85.657,
+          "end": 85.957
+        },
+        {
+          "text": "T",
+          "start": 86.077,
+          "end": 86.117
+        },
+        {
+          "text": "di",
+          "start": 86.397,
+          "end": 86.457
+        },
+        {
+          "text": "Struttura.",
+          "start": 86.517,
+          "end": 86.957
+        }
+      ]
+    },
+    {
+      "start": 87.677,
+      "end": 92.698,
+      "text": "La proprietà può essere un valore numerico in regressione oppure una classe come tossico sì",
+      "words": [
+        {
+          "text": "La",
+          "start": 87.677,
+          "end": 87.738
+        },
+        {
+          "text": "proprietà",
+          "start": 87.818,
+          "end": 88.178
+        },
+        {
+          "text": "può",
+          "start": 88.238,
+          "end": 88.318
+        },
+        {
+          "text": "essere",
+          "start": 88.378,
+          "end": 88.578
+        },
+        {
+          "text": "un",
+          "start": 88.598,
+          "end": 88.658
+        },
+        {
+          "text": "valore",
+          "start": 88.678,
+          "end": 88.918
+        },
+        {
+          "text": "numerico",
+          "start": 88.958,
+          "end": 89.458
+        },
+        {
+          "text": "in",
+          "start": 89.538,
+          "end": 89.598
+        },
+        {
+          "text": "regressione",
+          "start": 89.638,
+          "end": 90.198
+        },
+        {
+          "text": "oppure",
+          "start": 90.478,
+          "end": 90.718
+        },
+        {
+          "text": "una",
+          "start": 90.778,
+          "end": 90.918
+        },
+        {
+          "text": "classe",
+          "start": 90.958,
+          "end": 91.438
+        },
+        {
+          "text": "come",
+          "start": 91.538,
+          "end": 91.718
+        },
+        {
+          "text": "tossico",
+          "start": 91.938,
+          "end": 92.398
+        },
+        {
+          "text": "sì",
+          "start": 92.598,
+          "end": 92.698
+        }
+      ]
+    },
+    {
+      "start": 92.959,
+      "end": 99.12,
+      "text": "o no: le molecole sono naturalmente grafi di dimensione variabile e vogliamo predire direttamente dalla",
+      "words": [
+        {
+          "text": "o",
+          "start": 92.959,
+          "end": 92.99900000000001
+        },
+        {
+          "text": "no:",
+          "start": 93.059,
+          "end": 93.139
+        },
+        {
+          "text": "le",
+          "start": 93.839,
+          "end": 93.899
+        },
+        {
+          "text": "molecole",
+          "start": 93.939,
+          "end": 94.319
+        },
+        {
+          "text": "sono",
+          "start": 94.439,
+          "end": 94.619
+        },
+        {
+          "text": "naturalmente",
+          "start": 94.699,
+          "end": 95.319
+        },
+        {
+          "text": "grafi",
+          "start": 95.379,
+          "end": 95.639
+        },
+        {
+          "text": "di",
+          "start": 95.699,
+          "end": 95.779
+        },
+        {
+          "text": "dimensione",
+          "start": 95.819,
+          "end": 96.299
+        },
+        {
+          "text": "variabile",
+          "start": 96.339,
+          "end": 96.859
+        },
+        {
+          "text": "e",
+          "start": 97.179,
+          "end": 97.21900000000001
+        },
+        {
+          "text": "vogliamo",
+          "start": 97.239,
+          "end": 97.519
+        },
+        {
+          "text": "predire",
+          "start": 97.599,
+          "end": 98.0
+        },
+        {
+          "text": "direttamente",
+          "start": 98.12,
+          "end": 98.88
+        },
+        {
+          "text": "dalla",
+          "start": 98.92,
+          "end": 99.12
+        }
+      ]
+    },
+    {
+      "start": 99.16,
+      "end": 99.86,
+      "text": "loro struttura.",
+      "words": [
+        {
+          "text": "loro",
+          "start": 99.16,
+          "end": 99.34
+        },
+        {
+          "text": "struttura.",
+          "start": 99.4,
+          "end": 99.86
+        }
+      ]
+    }
+  ]
+}

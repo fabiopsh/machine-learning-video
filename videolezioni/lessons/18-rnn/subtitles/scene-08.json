@@ -1,0 +1,1637 @@
+{
+  "duration": 120.549,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.301,
+      "text": "Possiamo sfruttare la macchina a stati per codificare le sequenze anche mantenendo i pesi ricorrenti",
+      "words": [
+        {
+          "text": "Possiamo",
+          "start": 0.08,
+          "end": 0.42
+        },
+        {
+          "text": "sfruttare",
+          "start": 0.48,
+          "end": 0.94
+        },
+        {
+          "text": "la",
+          "start": 1.0,
+          "end": 1.06
+        },
+        {
+          "text": "macchina",
+          "start": 1.1,
+          "end": 1.48
+        },
+        {
+          "text": "a",
+          "start": 1.52,
+          "end": 1.56
+        },
+        {
+          "text": "stati",
+          "start": 1.6,
+          "end": 1.92
+        },
+        {
+          "text": "per",
+          "start": 2.02,
+          "end": 2.16
+        },
+        {
+          "text": "codificare",
+          "start": 2.24,
+          "end": 2.82
+        },
+        {
+          "text": "le",
+          "start": 2.88,
+          "end": 2.94
+        },
+        {
+          "text": "sequenze",
+          "start": 2.98,
+          "end": 3.4
+        },
+        {
+          "text": "anche",
+          "start": 3.46,
+          "end": 3.68
+        },
+        {
+          "text": "mantenendo",
+          "start": 3.8,
+          "end": 4.4
+        },
+        {
+          "text": "i",
+          "start": 4.44,
+          "end": 4.48
+        },
+        {
+          "text": "pesi",
+          "start": 4.5,
+          "end": 4.7
+        },
+        {
+          "text": "ricorrenti",
+          "start": 4.74,
+          "end": 5.301
+        }
+      ]
+    },
+    {
+      "start": 5.381,
+      "end": 8.941,
+      "text": "casuali e fissi, addestrando soltanto la mappatura di uscita.",
+      "words": [
+        {
+          "text": "casuali",
+          "start": 5.381,
+          "end": 5.781
+        },
+        {
+          "text": "e",
+          "start": 5.821,
+          "end": 5.861
+        },
+        {
+          "text": "fissi,",
+          "start": 5.941,
+          "end": 6.301
+        },
+        {
+          "text": "addestrando",
+          "start": 6.761,
+          "end": 7.301
+        },
+        {
+          "text": "soltanto",
+          "start": 7.361,
+          "end": 7.801
+        },
+        {
+          "text": "la",
+          "start": 7.861,
+          "end": 7.921
+        },
+        {
+          "text": "mappatura",
+          "start": 7.981,
+          "end": 8.421
+        },
+        {
+          "text": "di",
+          "start": 8.481,
+          "end": 8.521
+        },
+        {
+          "text": "uscita.",
+          "start": 8.561,
+          "end": 8.941
+        }
+      ]
+    },
+    {
+      "start": 9.521,
+      "end": 16.102,
+      "text": "Questo paradigma si chiama Reservoir Computing ed estende alle reti ricorrenti le reti neurali randomizzate",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 9.521,
+          "end": 9.741
+        },
+        {
+          "text": "paradigma",
+          "start": 9.781,
+          "end": 10.261
+        },
+        {
+          "text": "si",
+          "start": 10.341,
+          "end": 10.421
+        },
+        {
+          "text": "chiama",
+          "start": 10.481,
+          "end": 10.741
+        },
+        {
+          "text": "Reservoir",
+          "start": 11.001,
+          "end": 11.621
+        },
+        {
+          "text": "Computing",
+          "start": 11.861,
+          "end": 12.501
+        },
+        {
+          "text": "ed",
+          "start": 12.941,
+          "end": 13.041
+        },
+        {
+          "text": "estende",
+          "start": 13.061,
+          "end": 13.461
+        },
+        {
+          "text": "alle",
+          "start": 13.521,
+          "end": 13.681
+        },
+        {
+          "text": "reti",
+          "start": 13.721,
+          "end": 13.921
+        },
+        {
+          "text": "ricorrenti",
+          "start": 13.961,
+          "end": 14.501
+        },
+        {
+          "text": "le",
+          "start": 14.661,
+          "end": 14.741
+        },
+        {
+          "text": "reti",
+          "start": 14.801,
+          "end": 14.981
+        },
+        {
+          "text": "neurali",
+          "start": 15.022,
+          "end": 15.402
+        },
+        {
+          "text": "randomizzate",
+          "start": 15.482,
+          "end": 16.102
+        }
+      ]
+    },
+    {
+      "start": 16.142,
+      "end": 17.082,
+      "text": "del capitolo sedici.",
+      "words": [
+        {
+          "text": "del",
+          "start": 16.142,
+          "end": 16.242
+        },
+        {
+          "text": "capitolo",
+          "start": 16.282,
+          "end": 16.662
+        },
+        {
+          "text": "sedici.",
+          "start": 16.722,
+          "end": 17.082
+        }
+      ]
+    },
+    {
+      "start": 18.022,
+      "end": 22.542,
+      "text": "Il modello rappresentativo è la Echo State Network, in breve ESN,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 18.022,
+          "end": 18.102
+        },
+        {
+          "text": "modello",
+          "start": 18.142,
+          "end": 18.462
+        },
+        {
+          "text": "rappresentativo",
+          "start": 18.462,
+          "end": 19.222
+        },
+        {
+          "text": "è",
+          "start": 19.342,
+          "end": 19.382
+        },
+        {
+          "text": "la",
+          "start": 19.442,
+          "end": 19.502
+        },
+        {
+          "text": "Echo",
+          "start": 19.662,
+          "end": 19.882
+        },
+        {
+          "text": "State",
+          "start": 19.982,
+          "end": 20.302
+        },
+        {
+          "text": "Network,",
+          "start": 20.362,
+          "end": 20.842
+        },
+        {
+          "text": "in",
+          "start": 21.222,
+          "end": 21.282
+        },
+        {
+          "text": "breve",
+          "start": 21.322,
+          "end": 21.542
+        },
+        {
+          "text": "ESN,",
+          "start": 21.862,
+          "end": 22.542
+        }
+      ]
+    },
+    {
+      "start": 23.122,
+      "end": 24.302,
+      "text": "composta da due blocchi.",
+      "words": [
+        {
+          "text": "composta",
+          "start": 23.122,
+          "end": 23.502
+        },
+        {
+          "text": "da",
+          "start": 23.542,
+          "end": 23.622
+        },
+        {
+          "text": "due",
+          "start": 23.702,
+          "end": 23.862
+        },
+        {
+          "text": "blocchi.",
+          "start": 23.942,
+          "end": 24.302
+        }
+      ]
+    },
+    {
+      "start": 24.782,
+      "end": 29.163,
+      "text": "Primo: un grande reservoir di unità ricorrenti connesse in modo sparso,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 24.782,
+          "end": 25.022
+        },
+        {
+          "text": "un",
+          "start": 25.683,
+          "end": 25.743
+        },
+        {
+          "text": "grande",
+          "start": 25.783,
+          "end": 26.063
+        },
+        {
+          "text": "reservoir",
+          "start": 26.163,
+          "end": 26.763
+        },
+        {
+          "text": "di",
+          "start": 26.823,
+          "end": 26.883
+        },
+        {
+          "text": "unità",
+          "start": 26.923,
+          "end": 27.123
+        },
+        {
+          "text": "ricorrenti",
+          "start": 27.203,
+          "end": 27.783
+        },
+        {
+          "text": "connesse",
+          "start": 27.823,
+          "end": 28.303
+        },
+        {
+          "text": "in",
+          "start": 28.363,
+          "end": 28.403
+        },
+        {
+          "text": "modo",
+          "start": 28.443,
+          "end": 28.603
+        },
+        {
+          "text": "sparso,",
+          "start": 28.663,
+          "end": 29.163
+        }
+      ]
+    },
+    {
+      "start": 29.463,
+      "end": 30.243,
+      "text": "i cui pesi W",
+      "words": [
+        {
+          "text": "i",
+          "start": 29.463,
+          "end": 29.503
+        },
+        {
+          "text": "cui",
+          "start": 29.543,
+          "end": 29.703
+        },
+        {
+          "text": "pesi",
+          "start": 29.723,
+          "end": 30.003
+        },
+        {
+          "text": "W",
+          "start": 30.203,
+          "end": 30.243
+        }
+      ]
+    },
+    {
+      "start": 30.943,
+      "end": 34.783,
+      "text": "e W cappello non vengono addestrati dopo l'inizializzazione casuale.",
+      "words": [
+        {
+          "text": "e",
+          "start": 30.943,
+          "end": 30.983
+        },
+        {
+          "text": "W",
+          "start": 31.023,
+          "end": 31.063
+        },
+        {
+          "text": "cappello",
+          "start": 31.363,
+          "end": 31.763
+        },
+        {
+          "text": "non",
+          "start": 31.863,
+          "end": 32.003
+        },
+        {
+          "text": "vengono",
+          "start": 32.043,
+          "end": 32.363
+        },
+        {
+          "text": "addestrati",
+          "start": 32.403,
+          "end": 32.963
+        },
+        {
+          "text": "dopo",
+          "start": 33.143,
+          "end": 33.363
+        },
+        {
+          "text": "l'inizializzazione",
+          "start": 33.423,
+          "end": 34.263
+        },
+        {
+          "text": "casuale.",
+          "start": 34.303,
+          "end": 34.783
+        }
+      ]
+    },
+    {
+      "start": 35.524,
+      "end": 40.064,
+      "text": "Secondo: un readout feedforward di unità lineari W out,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 35.524,
+          "end": 36.004
+        },
+        {
+          "text": "un",
+          "start": 36.504,
+          "end": 36.604
+        },
+        {
+          "text": "readout",
+          "start": 36.784,
+          "end": 37.204
+        },
+        {
+          "text": "feedforward",
+          "start": 37.284,
+          "end": 38.064
+        },
+        {
+          "text": "di",
+          "start": 38.264,
+          "end": 38.324
+        },
+        {
+          "text": "unità",
+          "start": 38.384,
+          "end": 38.584
+        },
+        {
+          "text": "lineari",
+          "start": 38.684,
+          "end": 39.124
+        },
+        {
+          "text": "W",
+          "start": 39.264,
+          "end": 39.304
+        },
+        {
+          "text": "out,",
+          "start": 39.444,
+          "end": 40.064
+        }
+      ]
+    },
+    {
+      "start": 40.304,
+      "end": 43.964,
+      "text": "addestrato con metodi lineari efficientissimi come la ridge regression,",
+      "words": [
+        {
+          "text": "addestrato",
+          "start": 40.304,
+          "end": 40.884
+        },
+        {
+          "text": "con",
+          "start": 40.924,
+          "end": 41.044
+        },
+        {
+          "text": "metodi",
+          "start": 41.064,
+          "end": 41.404
+        },
+        {
+          "text": "lineari",
+          "start": 41.464,
+          "end": 41.824
+        },
+        {
+          "text": "efficientissimi",
+          "start": 41.864,
+          "end": 42.624
+        },
+        {
+          "text": "come",
+          "start": 42.684,
+          "end": 42.864
+        },
+        {
+          "text": "la",
+          "start": 42.904,
+          "end": 42.964
+        },
+        {
+          "text": "ridge",
+          "start": 43.064,
+          "end": 43.324
+        },
+        {
+          "text": "regression,",
+          "start": 43.384,
+          "end": 43.964
+        }
+      ]
+    },
+    {
+      "start": 44.204,
+      "end": 47.745,
+      "text": "usando gli stati h di t al posto delle attivazioni nascoste.",
+      "words": [
+        {
+          "text": "usando",
+          "start": 44.204,
+          "end": 44.504
+        },
+        {
+          "text": "gli",
+          "start": 44.524,
+          "end": 44.664
+        },
+        {
+          "text": "stati",
+          "start": 44.724,
+          "end": 45.064
+        },
+        {
+          "text": "h",
+          "start": 45.465,
+          "end": 45.505
+        },
+        {
+          "text": "di",
+          "start": 45.545,
+          "end": 45.625
+        },
+        {
+          "text": "t",
+          "start": 45.705,
+          "end": 45.745
+        },
+        {
+          "text": "al",
+          "start": 46.025,
+          "end": 46.125
+        },
+        {
+          "text": "posto",
+          "start": 46.205,
+          "end": 46.465
+        },
+        {
+          "text": "delle",
+          "start": 46.505,
+          "end": 46.665
+        },
+        {
+          "text": "attivazioni",
+          "start": 46.685,
+          "end": 47.165
+        },
+        {
+          "text": "nascoste.",
+          "start": 47.245,
+          "end": 47.745
+        }
+      ]
+    },
+    {
+      "start": 48.965,
+      "end": 51.785,
+      "text": "Affinché il sistema funzioni serve la Echo State Property:",
+      "words": [
+        {
+          "text": "Affinché",
+          "start": 48.965,
+          "end": 49.285
+        },
+        {
+          "text": "il",
+          "start": 49.305,
+          "end": 49.365
+        },
+        {
+          "text": "sistema",
+          "start": 49.405,
+          "end": 49.705
+        },
+        {
+          "text": "funzioni",
+          "start": 49.765,
+          "end": 50.165
+        },
+        {
+          "text": "serve",
+          "start": 50.225,
+          "end": 50.465
+        },
+        {
+          "text": "la",
+          "start": 50.505,
+          "end": 50.585
+        },
+        {
+          "text": "Echo",
+          "start": 50.725,
+          "end": 50.925
+        },
+        {
+          "text": "State",
+          "start": 51.005,
+          "end": 51.325
+        },
+        {
+          "text": "Property:",
+          "start": 51.345,
+          "end": 51.785
+        }
+      ]
+    },
+    {
+      "start": 52.345,
+      "end": 55.445,
+      "text": "la funzione di transizione di stato deve essere contrattiva,",
+      "words": [
+        {
+          "text": "la",
+          "start": 52.345,
+          "end": 52.405
+        },
+        {
+          "text": "funzione",
+          "start": 52.445,
+          "end": 52.865
+        },
+        {
+          "text": "di",
+          "start": 52.905,
+          "end": 52.985
+        },
+        {
+          "text": "transizione",
+          "start": 53.025,
+          "end": 53.625
+        },
+        {
+          "text": "di",
+          "start": 53.665,
+          "end": 53.745
+        },
+        {
+          "text": "stato",
+          "start": 53.805,
+          "end": 54.105
+        },
+        {
+          "text": "deve",
+          "start": 54.145,
+          "end": 54.285
+        },
+        {
+          "text": "essere",
+          "start": 54.345,
+          "end": 54.625
+        },
+        {
+          "text": "contrattiva,",
+          "start": 54.705,
+          "end": 55.445
+        }
+      ]
+    },
+    {
+      "start": 55.926,
+      "end": 59.106,
+      "text": "cioè deve avvicinare sempre qualsiasi coppia di stati.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 55.926,
+          "end": 56.046
+        },
+        {
+          "text": "deve",
+          "start": 56.166,
+          "end": 56.346
+        },
+        {
+          "text": "avvicinare",
+          "start": 56.406,
+          "end": 56.926
+        },
+        {
+          "text": "sempre",
+          "start": 57.046,
+          "end": 57.446
+        },
+        {
+          "text": "qualsiasi",
+          "start": 57.606,
+          "end": 58.246
+        },
+        {
+          "text": "coppia",
+          "start": 58.326,
+          "end": 58.626
+        },
+        {
+          "text": "di",
+          "start": 58.666,
+          "end": 58.726
+        },
+        {
+          "text": "stati.",
+          "start": 58.786,
+          "end": 59.106
+        }
+      ]
+    },
+    {
+      "start": 59.866,
+      "end": 64.726,
+      "text": "In pratica la si garantisce limitando il raggio spettrale dei pesi del reservoir — il",
+      "words": [
+        {
+          "text": "In",
+          "start": 59.866,
+          "end": 59.946
+        },
+        {
+          "text": "pratica",
+          "start": 59.966,
+          "end": 60.346
+        },
+        {
+          "text": "la",
+          "start": 60.526,
+          "end": 60.606
+        },
+        {
+          "text": "si",
+          "start": 60.666,
+          "end": 60.726
+        },
+        {
+          "text": "garantisce",
+          "start": 60.786,
+          "end": 61.246
+        },
+        {
+          "text": "limitando",
+          "start": 61.306,
+          "end": 61.726
+        },
+        {
+          "text": "il",
+          "start": 61.766,
+          "end": 61.806
+        },
+        {
+          "text": "raggio",
+          "start": 61.846,
+          "end": 62.086
+        },
+        {
+          "text": "spettrale",
+          "start": 62.146,
+          "end": 62.746
+        },
+        {
+          "text": "dei",
+          "start": 62.846,
+          "end": 62.986
+        },
+        {
+          "text": "pesi",
+          "start": 63.026,
+          "end": 63.246
+        },
+        {
+          "text": "del",
+          "start": 63.286,
+          "end": 63.386
+        },
+        {
+          "text": "reservoir",
+          "start": 63.426,
+          "end": 64.026
+        },
+        {
+          "text": "—",
+          "start": 64.026,
+          "end": 64.176
+        },
+        {
+          "text": "il",
+          "start": 64.646,
+          "end": 64.726
+        }
+      ]
+    },
+    {
+      "start": 64.766,
+      "end": 67.007,
+      "text": "massimo valore assoluto degli autovalori di W",
+      "words": [
+        {
+          "text": "massimo",
+          "start": 64.766,
+          "end": 65.126
+        },
+        {
+          "text": "valore",
+          "start": 65.186,
+          "end": 65.426
+        },
+        {
+          "text": "assoluto",
+          "start": 65.466,
+          "end": 65.867
+        },
+        {
+          "text": "degli",
+          "start": 65.907,
+          "end": 66.107
+        },
+        {
+          "text": "autovalori",
+          "start": 66.167,
+          "end": 66.687
+        },
+        {
+          "text": "di",
+          "start": 66.747,
+          "end": 66.807
+        },
+        {
+          "text": "W",
+          "start": 66.967,
+          "end": 67.007
+        }
+      ]
+    },
+    {
+      "start": 67.567,
+      "end": 68.067,
+      "text": "cappello.",
+      "words": [
+        {
+          "text": "cappello.",
+          "start": 67.567,
+          "end": 68.067
+        }
+      ]
+    },
+    {
+      "start": 68.827,
+      "end": 73.887,
+      "text": "Ciò assicura stabilità dinamica: lo stato dipende asintoticamente, proprio come un'eco,",
+      "words": [
+        {
+          "text": "Ciò",
+          "start": 68.827,
+          "end": 68.927
+        },
+        {
+          "text": "assicura",
+          "start": 68.987,
+          "end": 69.387
+        },
+        {
+          "text": "stabilità",
+          "start": 69.447,
+          "end": 69.867
+        },
+        {
+          "text": "dinamica:",
+          "start": 69.927,
+          "end": 70.387
+        },
+        {
+          "text": "lo",
+          "start": 70.887,
+          "end": 70.967
+        },
+        {
+          "text": "stato",
+          "start": 70.987,
+          "end": 71.227
+        },
+        {
+          "text": "dipende",
+          "start": 71.267,
+          "end": 71.627
+        },
+        {
+          "text": "asintoticamente,",
+          "start": 71.767,
+          "end": 72.807
+        },
+        {
+          "text": "proprio",
+          "start": 72.987,
+          "end": 73.267
+        },
+        {
+          "text": "come",
+          "start": 73.327,
+          "end": 73.507
+        },
+        {
+          "text": "un'eco,",
+          "start": 73.567,
+          "end": 73.887
+        }
+      ]
+    },
+    {
+      "start": 74.107,
+      "end": 77.308,
+      "text": "solo dalla storia degli input e non dalle condizioni iniziali.",
+      "words": [
+        {
+          "text": "solo",
+          "start": 74.107,
+          "end": 74.347
+        },
+        {
+          "text": "dalla",
+          "start": 74.387,
+          "end": 74.587
+        },
+        {
+          "text": "storia",
+          "start": 74.627,
+          "end": 74.887
+        },
+        {
+          "text": "degli",
+          "start": 74.927,
+          "end": 75.107
+        },
+        {
+          "text": "input",
+          "start": 75.127,
+          "end": 75.467
+        },
+        {
+          "text": "e",
+          "start": 75.707,
+          "end": 75.747
+        },
+        {
+          "text": "non",
+          "start": 75.868,
+          "end": 76.048
+        },
+        {
+          "text": "dalle",
+          "start": 76.088,
+          "end": 76.288
+        },
+        {
+          "text": "condizioni",
+          "start": 76.308,
+          "end": 76.768
+        },
+        {
+          "text": "iniziali.",
+          "start": 76.828,
+          "end": 77.308
+        }
+      ]
+    },
+    {
+      "start": 78.448,
+      "end": 84.048,
+      "text": "Le ESN sono estremamente efficienti e organizzano lo spazio degli stati in modo markoviano.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 78.448,
+          "end": 78.508
+        },
+        {
+          "text": "ESN",
+          "start": 78.588,
+          "end": 79.028
+        },
+        {
+          "text": "sono",
+          "start": 79.168,
+          "end": 79.348
+        },
+        {
+          "text": "estremamente",
+          "start": 79.488,
+          "end": 80.088
+        },
+        {
+          "text": "efficienti",
+          "start": 80.128,
+          "end": 80.708
+        },
+        {
+          "text": "e",
+          "start": 81.088,
+          "end": 81.128
+        },
+        {
+          "text": "organizzano",
+          "start": 81.168,
+          "end": 81.688
+        },
+        {
+          "text": "lo",
+          "start": 81.748,
+          "end": 81.808
+        },
+        {
+          "text": "spazio",
+          "start": 81.848,
+          "end": 82.228
+        },
+        {
+          "text": "degli",
+          "start": 82.268,
+          "end": 82.508
+        },
+        {
+          "text": "stati",
+          "start": 82.548,
+          "end": 82.808
+        },
+        {
+          "text": "in",
+          "start": 82.848,
+          "end": 82.888
+        },
+        {
+          "text": "modo",
+          "start": 82.928,
+          "end": 83.128
+        },
+        {
+          "text": "markoviano.",
+          "start": 83.348,
+          "end": 84.048
+        }
+      ]
+    },
+    {
+      "start": 84.588,
+      "end": 87.349,
+      "text": "Per la contrattività gli input recenti contano di più:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 84.588,
+          "end": 84.708
+        },
+        {
+          "text": "la",
+          "start": 84.748,
+          "end": 84.808
+        },
+        {
+          "text": "contrattività",
+          "start": 84.848,
+          "end": 85.488
+        },
+        {
+          "text": "gli",
+          "start": 85.668,
+          "end": 85.788
+        },
+        {
+          "text": "input",
+          "start": 85.848,
+          "end": 86.109
+        },
+        {
+          "text": "recenti",
+          "start": 86.209,
+          "end": 86.629
+        },
+        {
+          "text": "contano",
+          "start": 86.689,
+          "end": 87.049
+        },
+        {
+          "text": "di",
+          "start": 87.109,
+          "end": 87.169
+        },
+        {
+          "text": "più:",
+          "start": 87.229,
+          "end": 87.349
+        }
+      ]
+    },
+    {
+      "start": 87.989,
+      "end": 92.149,
+      "text": "gli stati di due sequenze risultano tanto più vicini quanto più è lungo il loro",
+      "words": [
+        {
+          "text": "gli",
+          "start": 87.989,
+          "end": 88.109
+        },
+        {
+          "text": "stati",
+          "start": 88.169,
+          "end": 88.529
+        },
+        {
+          "text": "di",
+          "start": 88.609,
+          "end": 88.669
+        },
+        {
+          "text": "due",
+          "start": 88.729,
+          "end": 88.849
+        },
+        {
+          "text": "sequenze",
+          "start": 88.909,
+          "end": 89.369
+        },
+        {
+          "text": "risultano",
+          "start": 89.409,
+          "end": 89.889
+        },
+        {
+          "text": "tanto",
+          "start": 89.989,
+          "end": 90.269
+        },
+        {
+          "text": "più",
+          "start": 90.329,
+          "end": 90.429
+        },
+        {
+          "text": "vicini",
+          "start": 90.509,
+          "end": 90.849
+        },
+        {
+          "text": "quanto",
+          "start": 90.909,
+          "end": 91.209
+        },
+        {
+          "text": "più",
+          "start": 91.289,
+          "end": 91.389
+        },
+        {
+          "text": "è",
+          "start": 91.449,
+          "end": 91.489
+        },
+        {
+          "text": "lungo",
+          "start": 91.569,
+          "end": 91.829
+        },
+        {
+          "text": "il",
+          "start": 91.869,
+          "end": 91.909
+        },
+        {
+          "text": "loro",
+          "start": 91.969,
+          "end": 92.149
+        }
+      ]
+    },
+    {
+      "start": 92.209,
+      "end": 93.029,
+      "text": "suffisso comune.",
+      "words": [
+        {
+          "text": "suffisso",
+          "start": 92.209,
+          "end": 92.629
+        },
+        {
+          "text": "comune.",
+          "start": 92.669,
+          "end": 93.029
+        }
+      ]
+    },
+    {
+      "start": 93.589,
+      "end": 96.41000000000001,
+      "text": "Ad esempio, le stringhe a a a a a",
+      "words": [
+        {
+          "text": "Ad",
+          "start": 93.589,
+          "end": 93.669
+        },
+        {
+          "text": "esempio,",
+          "start": 93.689,
+          "end": 94.029
+        },
+        {
+          "text": "le",
+          "start": 94.409,
+          "end": 94.469
+        },
+        {
+          "text": "stringhe",
+          "start": 94.509,
+          "end": 94.849
+        },
+        {
+          "text": "a",
+          "start": 95.189,
+          "end": 95.229
+        },
+        {
+          "text": "a",
+          "start": 95.509,
+          "end": 95.549
+        },
+        {
+          "text": "a",
+          "start": 95.809,
+          "end": 95.849
+        },
+        {
+          "text": "a",
+          "start": 96.13,
+          "end": 96.17
+        },
+        {
+          "text": "a",
+          "start": 96.37,
+          "end": 96.41000000000001
+        }
+      ]
+    },
+    {
+      "start": 97.05,
+      "end": 98.77000000000001,
+      "text": "e a b b a a",
+      "words": [
+        {
+          "text": "e",
+          "start": 97.05,
+          "end": 97.09
+        },
+        {
+          "text": "a",
+          "start": 97.55,
+          "end": 97.59
+        },
+        {
+          "text": "b",
+          "start": 97.81,
+          "end": 97.85000000000001
+        },
+        {
+          "text": "b",
+          "start": 98.03,
+          "end": 98.07000000000001
+        },
+        {
+          "text": "a",
+          "start": 98.49,
+          "end": 98.53
+        },
+        {
+          "text": "a",
+          "start": 98.73,
+          "end": 98.77000000000001
+        }
+      ]
+    },
+    {
+      "start": 99.35,
+      "end": 102.89,
+      "text": "terminano entrambe con a a e generano stati vicini.",
+      "words": [
+        {
+          "text": "terminano",
+          "start": 99.35,
+          "end": 99.83
+        },
+        {
+          "text": "entrambe",
+          "start": 100.01,
+          "end": 100.45
+        },
+        {
+          "text": "con",
+          "start": 100.53,
+          "end": 100.67
+        },
+        {
+          "text": "a",
+          "start": 100.89,
+          "end": 100.93
+        },
+        {
+          "text": "a",
+          "start": 101.15,
+          "end": 101.19000000000001
+        },
+        {
+          "text": "e",
+          "start": 101.69,
+          "end": 101.73
+        },
+        {
+          "text": "generano",
+          "start": 101.81,
+          "end": 102.23
+        },
+        {
+          "text": "stati",
+          "start": 102.27,
+          "end": 102.49
+        },
+        {
+          "text": "vicini.",
+          "start": 102.55,
+          "end": 102.89
+        }
+      ]
+    },
+    {
+      "start": 103.65,
+      "end": 108.751,
+      "text": "Questo è un bias architetturale potente, valido anche per le RNN addestrate.",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 103.65,
+          "end": 103.85
+        },
+        {
+          "text": "è",
+          "start": 103.91,
+          "end": 103.95
+        },
+        {
+          "text": "un",
+          "start": 103.97,
+          "end": 104.05
+        },
+        {
+          "text": "bias",
+          "start": 104.11,
+          "end": 104.49
+        },
+        {
+          "text": "architetturale",
+          "start": 104.67,
+          "end": 105.31
+        },
+        {
+          "text": "potente,",
+          "start": 105.35,
+          "end": 105.85
+        },
+        {
+          "text": "valido",
+          "start": 106.11,
+          "end": 106.431
+        },
+        {
+          "text": "anche",
+          "start": 106.611,
+          "end": 106.831
+        },
+        {
+          "text": "per",
+          "start": 106.891,
+          "end": 107.011
+        },
+        {
+          "text": "le",
+          "start": 107.051,
+          "end": 107.131
+        },
+        {
+          "text": "RNN",
+          "start": 107.331,
+          "end": 107.891
+        },
+        {
+          "text": "addestrate.",
+          "start": 108.131,
+          "end": 108.751
+        }
+      ]
+    },
+    {
+      "start": 109.571,
+      "end": 115.171,
+      "text": "Infine, impilando più reservoir nasce la DeepESN, che induce scale temporali multiple:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 109.571,
+          "end": 109.931
+        },
+        {
+          "text": "impilando",
+          "start": 110.091,
+          "end": 110.551
+        },
+        {
+          "text": "più",
+          "start": 110.611,
+          "end": 110.711
+        },
+        {
+          "text": "reservoir",
+          "start": 110.771,
+          "end": 111.251
+        },
+        {
+          "text": "nasce",
+          "start": 111.311,
+          "end": 111.611
+        },
+        {
+          "text": "la",
+          "start": 111.651,
+          "end": 111.731
+        },
+        {
+          "text": "DeepESN,",
+          "start": 111.911,
+          "end": 113.091
+        },
+        {
+          "text": "che",
+          "start": 113.511,
+          "end": 113.571
+        },
+        {
+          "text": "induce",
+          "start": 113.611,
+          "end": 113.931
+        },
+        {
+          "text": "scale",
+          "start": 113.991,
+          "end": 114.251
+        },
+        {
+          "text": "temporali",
+          "start": 114.291,
+          "end": 114.711
+        },
+        {
+          "text": "multiple:",
+          "start": 114.751,
+          "end": 115.171
+        }
+      ]
+    },
+    {
+      "start": 115.531,
+      "end": 118.312,
+      "text": "gli strati più alti si concentrano sulle frequenze più basse,",
+      "words": [
+        {
+          "text": "gli",
+          "start": 115.531,
+          "end": 115.651
+        },
+        {
+          "text": "strati",
+          "start": 115.671,
+          "end": 115.931
+        },
+        {
+          "text": "più",
+          "start": 116.011,
+          "end": 116.111
+        },
+        {
+          "text": "alti",
+          "start": 116.171,
+          "end": 116.372
+        },
+        {
+          "text": "si",
+          "start": 116.432,
+          "end": 116.512
+        },
+        {
+          "text": "concentrano",
+          "start": 116.552,
+          "end": 117.092
+        },
+        {
+          "text": "sulle",
+          "start": 117.132,
+          "end": 117.332
+        },
+        {
+          "text": "frequenze",
+          "start": 117.372,
+          "end": 117.752
+        },
+        {
+          "text": "più",
+          "start": 117.792,
+          "end": 117.892
+        },
+        {
+          "text": "basse,",
+          "start": 117.952,
+          "end": 118.312
+        }
+      ]
+    },
+    {
+      "start": 118.452,
+      "end": 120.152,
+      "text": "cioè sulle variazioni più lente.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 118.452,
+          "end": 118.652
+        },
+        {
+          "text": "sulle",
+          "start": 118.812,
+          "end": 119.032
+        },
+        {
+          "text": "variazioni",
+          "start": 119.072,
+          "end": 119.592
+        },
+        {
+          "text": "più",
+          "start": 119.652,
+          "end": 119.732
+        },
+        {
+          "text": "lente.",
+          "start": 119.812,
+          "end": 120.152
+        }
+      ]
+    }
+  ]
+}

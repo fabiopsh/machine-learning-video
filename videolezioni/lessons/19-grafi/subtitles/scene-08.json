@@ -1,0 +1,1417 @@
+{
+  "duration": 115.03,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.281,
+      "text": "Affrontiamo ora i grandi problemi aperti delle Deep Graph Networks,",
+      "words": [
+        {
+          "text": "Affrontiamo",
+          "start": 0.08,
+          "end": 0.7
+        },
+        {
+          "text": "ora",
+          "start": 0.82,
+          "end": 0.98
+        },
+        {
+          "text": "i",
+          "start": 1.2,
+          "end": 1.24
+        },
+        {
+          "text": "grandi",
+          "start": 1.32,
+          "end": 1.7
+        },
+        {
+          "text": "problemi",
+          "start": 1.74,
+          "end": 2.18
+        },
+        {
+          "text": "aperti",
+          "start": 2.24,
+          "end": 2.68
+        },
+        {
+          "text": "delle",
+          "start": 2.801,
+          "end": 3.041
+        },
+        {
+          "text": "Deep",
+          "start": 3.121,
+          "end": 3.301
+        },
+        {
+          "text": "Graph",
+          "start": 3.401,
+          "end": 3.681
+        },
+        {
+          "text": "Networks,",
+          "start": 3.761,
+          "end": 4.281
+        }
+      ]
+    },
+    {
+      "start": 4.721,
+      "end": 6.001,
+      "text": "a partire dall'efficienza.",
+      "words": [
+        {
+          "text": "a",
+          "start": 4.721,
+          "end": 4.761
+        },
+        {
+          "text": "partire",
+          "start": 4.861,
+          "end": 5.241
+        },
+        {
+          "text": "dall'efficienza.",
+          "start": 5.281,
+          "end": 6.001
+        }
+      ]
+    },
+    {
+      "start": 6.741,
+      "end": 11.962,
+      "text": "L'addestramento end-to-end con backpropagation diventa molto costoso su grafi grandi.",
+      "words": [
+        {
+          "text": "L'addestramento",
+          "start": 6.741,
+          "end": 7.401
+        },
+        {
+          "text": "end-to-end",
+          "start": 7.601,
+          "end": 8.261
+        },
+        {
+          "text": "con",
+          "start": 8.421,
+          "end": 8.562
+        },
+        {
+          "text": "backpropagation",
+          "start": 8.642,
+          "end": 9.462
+        },
+        {
+          "text": "diventa",
+          "start": 9.642,
+          "end": 10.082
+        },
+        {
+          "text": "molto",
+          "start": 10.242,
+          "end": 10.562
+        },
+        {
+          "text": "costoso",
+          "start": 10.622,
+          "end": 11.122
+        },
+        {
+          "text": "su",
+          "start": 11.162,
+          "end": 11.242
+        },
+        {
+          "text": "grafi",
+          "start": 11.302,
+          "end": 11.562
+        },
+        {
+          "text": "grandi.",
+          "start": 11.602,
+          "end": 11.962
+        }
+      ]
+    },
+    {
+      "start": 12.642,
+      "end": 14.022,
+      "text": "Nella classificazione di nodi,",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 12.642,
+          "end": 12.822
+        },
+        {
+          "text": "classificazione",
+          "start": 12.862,
+          "end": 13.582
+        },
+        {
+          "text": "di",
+          "start": 13.642,
+          "end": 13.702
+        },
+        {
+          "text": "nodi,",
+          "start": 13.742,
+          "end": 14.022
+        }
+      ]
+    },
+    {
+      "start": 14.623,
+      "end": 21.564,
+      "text": "la GraphESN raggiunge accuratezze pari o superiori a molti modelli end-to-end con un'accelerazione fino a",
+      "words": [
+        {
+          "text": "la",
+          "start": 14.623,
+          "end": 14.703
+        },
+        {
+          "text": "GraphESN",
+          "start": 14.763,
+          "end": 15.623
+        },
+        {
+          "text": "raggiunge",
+          "start": 15.843,
+          "end": 16.263
+        },
+        {
+          "text": "accuratezze",
+          "start": 16.283,
+          "end": 16.883
+        },
+        {
+          "text": "pari",
+          "start": 17.063,
+          "end": 17.363
+        },
+        {
+          "text": "o",
+          "start": 17.503,
+          "end": 17.543
+        },
+        {
+          "text": "superiori",
+          "start": 17.643,
+          "end": 18.203
+        },
+        {
+          "text": "a",
+          "start": 18.263,
+          "end": 18.303
+        },
+        {
+          "text": "molti",
+          "start": 18.443,
+          "end": 18.763
+        },
+        {
+          "text": "modelli",
+          "start": 18.823,
+          "end": 19.183
+        },
+        {
+          "text": "end-to-end",
+          "start": 19.243,
+          "end": 19.723
+        },
+        {
+          "text": "con",
+          "start": 20.244,
+          "end": 20.384
+        },
+        {
+          "text": "un'accelerazione",
+          "start": 20.404,
+          "end": 21.204
+        },
+        {
+          "text": "fino",
+          "start": 21.284,
+          "end": 21.484
+        },
+        {
+          "text": "a",
+          "start": 21.524,
+          "end": 21.564
+        }
+      ]
+    },
+    {
+      "start": 21.644,
+      "end": 24.464,
+      "text": "dieci volte, scalando oltre centomila nodi.",
+      "words": [
+        {
+          "text": "dieci",
+          "start": 21.644,
+          "end": 22.004
+        },
+        {
+          "text": "volte,",
+          "start": 22.044,
+          "end": 22.404
+        },
+        {
+          "text": "scalando",
+          "start": 22.744,
+          "end": 23.204
+        },
+        {
+          "text": "oltre",
+          "start": 23.364,
+          "end": 23.664
+        },
+        {
+          "text": "centomila",
+          "start": 23.704,
+          "end": 24.164
+        },
+        {
+          "text": "nodi.",
+          "start": 24.204,
+          "end": 24.464
+        }
+      ]
+    },
+    {
+      "start": 25.184,
+      "end": 30.005,
+      "text": "Allo stesso modo, NN4G plus costruisce la rete incrementalmente,",
+      "words": [
+        {
+          "text": "Allo",
+          "start": 25.184,
+          "end": 25.344
+        },
+        {
+          "text": "stesso",
+          "start": 25.364,
+          "end": 25.624
+        },
+        {
+          "text": "modo,",
+          "start": 25.684,
+          "end": 25.925
+        },
+        {
+          "text": "NN4G",
+          "start": 26.525,
+          "end": 27.305
+        },
+        {
+          "text": "plus",
+          "start": 27.485,
+          "end": 27.785
+        },
+        {
+          "text": "costruisce",
+          "start": 27.965,
+          "end": 28.565
+        },
+        {
+          "text": "la",
+          "start": 28.605,
+          "end": 28.665
+        },
+        {
+          "text": "rete",
+          "start": 28.705,
+          "end": 28.925
+        },
+        {
+          "text": "incrementalmente,",
+          "start": 29.005,
+          "end": 30.005
+        }
+      ]
+    },
+    {
+      "start": 30.425,
+      "end": 36.846,
+      "text": "un'unità alla volta: uno strato si espande finché l'accuratezza di validazione migliora e si aggiungono",
+      "words": [
+        {
+          "text": "un'unità",
+          "start": 30.425,
+          "end": 30.865
+        },
+        {
+          "text": "alla",
+          "start": 31.065,
+          "end": 31.225
+        },
+        {
+          "text": "volta:",
+          "start": 31.265,
+          "end": 31.606
+        },
+        {
+          "text": "uno",
+          "start": 32.306,
+          "end": 32.446
+        },
+        {
+          "text": "strato",
+          "start": 32.506,
+          "end": 32.806
+        },
+        {
+          "text": "si",
+          "start": 32.866,
+          "end": 32.926
+        },
+        {
+          "text": "espande",
+          "start": 32.986,
+          "end": 33.466
+        },
+        {
+          "text": "finché",
+          "start": 33.586,
+          "end": 33.846
+        },
+        {
+          "text": "l'accuratezza",
+          "start": 33.906,
+          "end": 34.506
+        },
+        {
+          "text": "di",
+          "start": 34.586,
+          "end": 34.646
+        },
+        {
+          "text": "validazione",
+          "start": 34.706,
+          "end": 35.306
+        },
+        {
+          "text": "migliora",
+          "start": 35.386,
+          "end": 35.826
+        },
+        {
+          "text": "e",
+          "start": 36.226,
+          "end": 36.266
+        },
+        {
+          "text": "si",
+          "start": 36.306,
+          "end": 36.366
+        },
+        {
+          "text": "aggiungono",
+          "start": 36.426,
+          "end": 36.846
+        }
+      ]
+    },
+    {
+      "start": 36.946,
+      "end": 42.347,
+      "text": "nuovi strati finché migliora, progettando architetture adatte al task in minuti anziché ore.",
+      "words": [
+        {
+          "text": "nuovi",
+          "start": 36.946,
+          "end": 37.206
+        },
+        {
+          "text": "strati",
+          "start": 37.267,
+          "end": 37.627
+        },
+        {
+          "text": "finché",
+          "start": 37.667,
+          "end": 37.947
+        },
+        {
+          "text": "migliora,",
+          "start": 38.007,
+          "end": 38.387
+        },
+        {
+          "text": "progettando",
+          "start": 38.747,
+          "end": 39.327
+        },
+        {
+          "text": "architetture",
+          "start": 39.367,
+          "end": 39.987
+        },
+        {
+          "text": "adatte",
+          "start": 40.027,
+          "end": 40.327
+        },
+        {
+          "text": "al",
+          "start": 40.367,
+          "end": 40.447
+        },
+        {
+          "text": "task",
+          "start": 40.487,
+          "end": 40.767
+        },
+        {
+          "text": "in",
+          "start": 41.027,
+          "end": 41.107
+        },
+        {
+          "text": "minuti",
+          "start": 41.167,
+          "end": 41.567
+        },
+        {
+          "text": "anziché",
+          "start": 41.747,
+          "end": 42.087
+        },
+        {
+          "text": "ore.",
+          "start": 42.187,
+          "end": 42.347
+        }
+      ]
+    },
+    {
+      "start": 43.168,
+      "end": 46.388,
+      "text": "Il secondo nodo critico riguarda i problemi legati alla profondità,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 43.168,
+          "end": 43.268
+        },
+        {
+          "text": "secondo",
+          "start": 43.328,
+          "end": 43.668
+        },
+        {
+          "text": "nodo",
+          "start": 43.708,
+          "end": 43.888
+        },
+        {
+          "text": "critico",
+          "start": 43.928,
+          "end": 44.308
+        },
+        {
+          "text": "riguarda",
+          "start": 44.368,
+          "end": 44.728
+        },
+        {
+          "text": "i",
+          "start": 44.808,
+          "end": 44.848
+        },
+        {
+          "text": "problemi",
+          "start": 44.868,
+          "end": 45.268
+        },
+        {
+          "text": "legati",
+          "start": 45.348,
+          "end": 45.688
+        },
+        {
+          "text": "alla",
+          "start": 45.728,
+          "end": 45.848
+        },
+        {
+          "text": "profondità,",
+          "start": 45.888,
+          "end": 46.388
+        }
+      ]
+    },
+    {
+      "start": 46.868,
+      "end": 48.608,
+      "text": "riassumibili in tre meccanismi.",
+      "words": [
+        {
+          "text": "riassumibili",
+          "start": 46.868,
+          "end": 47.528
+        },
+        {
+          "text": "in",
+          "start": 47.688,
+          "end": 47.768
+        },
+        {
+          "text": "tre",
+          "start": 47.848,
+          "end": 47.968
+        },
+        {
+          "text": "meccanismi.",
+          "start": 48.048,
+          "end": 48.608
+        }
+      ]
+    },
+    {
+      "start": 49.209,
+      "end": 55.01,
+      "text": "Primo, l'over-smoothing: oltre quattro o cinque strati l'accuratezza tipicamente crolla,",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 49.209,
+          "end": 49.489
+        },
+        {
+          "text": "l'over-smoothing:",
+          "start": 50.049,
+          "end": 50.809
+        },
+        {
+          "text": "oltre",
+          "start": 51.389,
+          "end": 51.629
+        },
+        {
+          "text": "quattro",
+          "start": 51.689,
+          "end": 52.069
+        },
+        {
+          "text": "o",
+          "start": 52.109,
+          "end": 52.149
+        },
+        {
+          "text": "cinque",
+          "start": 52.189,
+          "end": 52.429
+        },
+        {
+          "text": "strati",
+          "start": 52.469,
+          "end": 52.829
+        },
+        {
+          "text": "l'accuratezza",
+          "start": 53.209,
+          "end": 53.829
+        },
+        {
+          "text": "tipicamente",
+          "start": 53.969,
+          "end": 54.61
+        },
+        {
+          "text": "crolla,",
+          "start": 54.65,
+          "end": 55.01
+        }
+      ]
+    },
+    {
+      "start": 55.43,
+      "end": 60.671,
+      "text": "perché il message passing agisce come una diffusione e fa collassare gli embedding dei nodi",
+      "words": [
+        {
+          "text": "perché",
+          "start": 55.43,
+          "end": 55.67
+        },
+        {
+          "text": "il",
+          "start": 55.73,
+          "end": 55.81
+        },
+        {
+          "text": "message",
+          "start": 55.87,
+          "end": 56.25
+        },
+        {
+          "text": "passing",
+          "start": 56.31,
+          "end": 56.71
+        },
+        {
+          "text": "agisce",
+          "start": 56.85,
+          "end": 57.23
+        },
+        {
+          "text": "come",
+          "start": 57.29,
+          "end": 57.47
+        },
+        {
+          "text": "una",
+          "start": 57.53,
+          "end": 57.67
+        },
+        {
+          "text": "diffusione",
+          "start": 57.73,
+          "end": 58.33
+        },
+        {
+          "text": "e",
+          "start": 58.77,
+          "end": 58.81
+        },
+        {
+          "text": "fa",
+          "start": 58.87,
+          "end": 58.95
+        },
+        {
+          "text": "collassare",
+          "start": 59.05,
+          "end": 59.59
+        },
+        {
+          "text": "gli",
+          "start": 59.63,
+          "end": 59.73
+        },
+        {
+          "text": "embedding",
+          "start": 59.77,
+          "end": 60.211
+        },
+        {
+          "text": "dei",
+          "start": 60.291,
+          "end": 60.391
+        },
+        {
+          "text": "nodi",
+          "start": 60.431,
+          "end": 60.671
+        }
+      ]
+    },
+    {
+      "start": 60.731,
+      "end": 62.451,
+      "text": "rendendoli tutti simili tra loro.",
+      "words": [
+        {
+          "text": "rendendoli",
+          "start": 60.731,
+          "end": 61.211
+        },
+        {
+          "text": "tutti",
+          "start": 61.311,
+          "end": 61.591
+        },
+        {
+          "text": "simili",
+          "start": 61.671,
+          "end": 61.971
+        },
+        {
+          "text": "tra",
+          "start": 62.011,
+          "end": 62.111
+        },
+        {
+          "text": "loro.",
+          "start": 62.211,
+          "end": 62.451
+        }
+      ]
+    },
+    {
+      "start": 63.271,
+      "end": 66.472,
+      "text": "Secondo, l'over-squashing: un vero collo di bottiglia.",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 63.271,
+          "end": 63.711
+        },
+        {
+          "text": "l'over-squashing:",
+          "start": 63.871,
+          "end": 64.711
+        },
+        {
+          "text": "un",
+          "start": 65.151,
+          "end": 65.251
+        },
+        {
+          "text": "vero",
+          "start": 65.331,
+          "end": 65.571
+        },
+        {
+          "text": "collo",
+          "start": 65.631,
+          "end": 65.871
+        },
+        {
+          "text": "di",
+          "start": 65.911,
+          "end": 65.972
+        },
+        {
+          "text": "bottiglia.",
+          "start": 66.012,
+          "end": 66.472
+        }
+      ]
+    },
+    {
+      "start": 67.152,
+      "end": 70.152,
+      "text": "Il campo recettivo cresce esponenzialmente con la profondità,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 67.152,
+          "end": 67.232
+        },
+        {
+          "text": "campo",
+          "start": 67.292,
+          "end": 67.532
+        },
+        {
+          "text": "recettivo",
+          "start": 67.572,
+          "end": 68.032
+        },
+        {
+          "text": "cresce",
+          "start": 68.092,
+          "end": 68.392
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 68.452,
+          "end": 69.372
+        },
+        {
+          "text": "con",
+          "start": 69.412,
+          "end": 69.532
+        },
+        {
+          "text": "la",
+          "start": 69.572,
+          "end": 69.632
+        },
+        {
+          "text": "profondità,",
+          "start": 69.672,
+          "end": 70.152
+        }
+      ]
+    },
+    {
+      "start": 70.992,
+      "end": 75.033,
+      "text": "ma tutta questa informazione va compressa in un vettore di dimensione fissa;",
+      "words": [
+        {
+          "text": "ma",
+          "start": 70.992,
+          "end": 71.052
+        },
+        {
+          "text": "tutta",
+          "start": 71.292,
+          "end": 71.632
+        },
+        {
+          "text": "questa",
+          "start": 71.693,
+          "end": 71.933
+        },
+        {
+          "text": "informazione",
+          "start": 71.993,
+          "end": 72.693
+        },
+        {
+          "text": "va",
+          "start": 72.773,
+          "end": 72.833
+        },
+        {
+          "text": "compressa",
+          "start": 72.933,
+          "end": 73.373
+        },
+        {
+          "text": "in",
+          "start": 73.413,
+          "end": 73.473
+        },
+        {
+          "text": "un",
+          "start": 73.513,
+          "end": 73.593
+        },
+        {
+          "text": "vettore",
+          "start": 73.633,
+          "end": 74.053
+        },
+        {
+          "text": "di",
+          "start": 74.093,
+          "end": 74.153
+        },
+        {
+          "text": "dimensione",
+          "start": 74.213,
+          "end": 74.653
+        },
+        {
+          "text": "fissa;",
+          "start": 74.693,
+          "end": 75.033
+        }
+      ]
+    },
+    {
+      "start": 75.933,
+      "end": 79.994,
+      "text": "la sensibilità di h con v allo strato L rispetto a un nodo lontano x",
+      "words": [
+        {
+          "text": "la",
+          "start": 75.933,
+          "end": 76.013
+        },
+        {
+          "text": "sensibilità",
+          "start": 76.073,
+          "end": 76.673
+        },
+        {
+          "text": "di",
+          "start": 76.773,
+          "end": 76.833
+        },
+        {
+          "text": "h",
+          "start": 77.033,
+          "end": 77.07300000000001
+        },
+        {
+          "text": "con",
+          "start": 77.173,
+          "end": 77.293
+        },
+        {
+          "text": "v",
+          "start": 77.353,
+          "end": 77.393
+        },
+        {
+          "text": "allo",
+          "start": 77.594,
+          "end": 77.734
+        },
+        {
+          "text": "strato",
+          "start": 77.774,
+          "end": 78.054
+        },
+        {
+          "text": "L",
+          "start": 78.314,
+          "end": 78.354
+        },
+        {
+          "text": "rispetto",
+          "start": 78.534,
+          "end": 78.894
+        },
+        {
+          "text": "a",
+          "start": 78.934,
+          "end": 78.974
+        },
+        {
+          "text": "un",
+          "start": 79.034,
+          "end": 79.114
+        },
+        {
+          "text": "nodo",
+          "start": 79.154,
+          "end": 79.374
+        },
+        {
+          "text": "lontano",
+          "start": 79.414,
+          "end": 79.814
+        },
+        {
+          "text": "x",
+          "start": 79.954,
+          "end": 79.994
+        }
+      ]
+    },
+    {
+      "start": 80.094,
+      "end": 84.295,
+      "text": "con u, misurata dallo Jacobiano, decade esponenzialmente con L.",
+      "words": [
+        {
+          "text": "con",
+          "start": 80.094,
+          "end": 80.234
+        },
+        {
+          "text": "u,",
+          "start": 80.294,
+          "end": 80.334
+        },
+        {
+          "text": "misurata",
+          "start": 80.794,
+          "end": 81.254
+        },
+        {
+          "text": "dallo",
+          "start": 81.314,
+          "end": 81.494
+        },
+        {
+          "text": "Jacobiano,",
+          "start": 81.554,
+          "end": 82.094
+        },
+        {
+          "text": "decade",
+          "start": 82.574,
+          "end": 82.914
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 82.974,
+          "end": 83.955
+        },
+        {
+          "text": "con",
+          "start": 84.015,
+          "end": 84.135
+        },
+        {
+          "text": "L.",
+          "start": 84.255,
+          "end": 84.295
+        }
+      ]
+    },
+    {
+      "start": 85.235,
+      "end": 91.096,
+      "text": "Terzo, nell'addestramento end-to-end è difficile retropropagare il gradiente attraverso molti strati.",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 85.235,
+          "end": 85.595
+        },
+        {
+          "text": "nell'addestramento",
+          "start": 85.815,
+          "end": 86.575
+        },
+        {
+          "text": "end-to-end",
+          "start": 86.695,
+          "end": 87.235
+        },
+        {
+          "text": "è",
+          "start": 87.675,
+          "end": 87.715
+        },
+        {
+          "text": "difficile",
+          "start": 87.795,
+          "end": 88.395
+        },
+        {
+          "text": "retropropagare",
+          "start": 88.495,
+          "end": 89.256
+        },
+        {
+          "text": "il",
+          "start": 89.296,
+          "end": 89.356
+        },
+        {
+          "text": "gradiente",
+          "start": 89.396,
+          "end": 89.876
+        },
+        {
+          "text": "attraverso",
+          "start": 89.916,
+          "end": 90.396
+        },
+        {
+          "text": "molti",
+          "start": 90.436,
+          "end": 90.656
+        },
+        {
+          "text": "strati.",
+          "start": 90.716,
+          "end": 91.096
+        }
+      ]
+    },
+    {
+      "start": 91.896,
+      "end": 93.676,
+      "text": "Tutto ciò provoca due effetti:",
+      "words": [
+        {
+          "text": "Tutto",
+          "start": 91.896,
+          "end": 92.176
+        },
+        {
+          "text": "ciò",
+          "start": 92.256,
+          "end": 92.376
+        },
+        {
+          "text": "provoca",
+          "start": 92.476,
+          "end": 92.876
+        },
+        {
+          "text": "due",
+          "start": 92.996,
+          "end": 93.156
+        },
+        {
+          "text": "effetti:",
+          "start": 93.196,
+          "end": 93.676
+        }
+      ]
+    },
+    {
+      "start": 94.276,
+      "end": 99.317,
+      "text": "l'under-reaching, cioè l'incapacità di raggiungere nodi lontani per catturarne le interazioni,",
+      "words": [
+        {
+          "text": "l'under-reaching,",
+          "start": 94.276,
+          "end": 95.057
+        },
+        {
+          "text": "cioè",
+          "start": 95.577,
+          "end": 95.737
+        },
+        {
+          "text": "l'incapacità",
+          "start": 95.777,
+          "end": 96.357
+        },
+        {
+          "text": "di",
+          "start": 96.437,
+          "end": 96.497
+        },
+        {
+          "text": "raggiungere",
+          "start": 96.557,
+          "end": 97.017
+        },
+        {
+          "text": "nodi",
+          "start": 97.077,
+          "end": 97.257
+        },
+        {
+          "text": "lontani",
+          "start": 97.317,
+          "end": 97.757
+        },
+        {
+          "text": "per",
+          "start": 97.817,
+          "end": 97.937
+        },
+        {
+          "text": "catturarne",
+          "start": 97.997,
+          "end": 98.517
+        },
+        {
+          "text": "le",
+          "start": 98.517,
+          "end": 98.637
+        },
+        {
+          "text": "interazioni,",
+          "start": 98.657,
+          "end": 99.317
+        }
+      ]
+    },
+    {
+      "start": 99.977,
+      "end": 101.738,
+      "text": "e la difficoltà con l'eterofilia.",
+      "words": [
+        {
+          "text": "e",
+          "start": 99.977,
+          "end": 100.01700000000001
+        },
+        {
+          "text": "la",
+          "start": 100.057,
+          "end": 100.117
+        },
+        {
+          "text": "difficoltà",
+          "start": 100.157,
+          "end": 100.698
+        },
+        {
+          "text": "con",
+          "start": 100.898,
+          "end": 101.038
+        },
+        {
+          "text": "l'eterofilia.",
+          "start": 101.078,
+          "end": 101.738
+        }
+      ]
+    },
+    {
+      "start": 102.438,
+      "end": 107.359,
+      "text": "Osservate il confronto: nei grafi omofili i nodi vicini appartengono per lo più alla stessa",
+      "words": [
+        {
+          "text": "Osservate",
+          "start": 102.438,
+          "end": 102.898
+        },
+        {
+          "text": "il",
+          "start": 102.938,
+          "end": 102.998
+        },
+        {
+          "text": "confronto:",
+          "start": 103.038,
+          "end": 103.538
+        },
+        {
+          "text": "nei",
+          "start": 104.078,
+          "end": 104.218
+        },
+        {
+          "text": "grafi",
+          "start": 104.258,
+          "end": 104.478
+        },
+        {
+          "text": "omofili",
+          "start": 104.538,
+          "end": 104.958
+        },
+        {
+          "text": "i",
+          "start": 105.098,
+          "end": 105.138
+        },
+        {
+          "text": "nodi",
+          "start": 105.178,
+          "end": 105.378
+        },
+        {
+          "text": "vicini",
+          "start": 105.418,
+          "end": 105.758
+        },
+        {
+          "text": "appartengono",
+          "start": 105.798,
+          "end": 106.378
+        },
+        {
+          "text": "per",
+          "start": 106.439,
+          "end": 106.559
+        },
+        {
+          "text": "lo",
+          "start": 106.619,
+          "end": 106.699
+        },
+        {
+          "text": "più",
+          "start": 106.759,
+          "end": 106.859
+        },
+        {
+          "text": "alla",
+          "start": 106.919,
+          "end": 107.079
+        },
+        {
+          "text": "stessa",
+          "start": 107.119,
+          "end": 107.359
+        }
+      ]
+    },
+    {
+      "start": 107.419,
+      "end": 111.559,
+      "text": "classe; nei grafi eterofili i nodi della stessa classe sono distanti,",
+      "words": [
+        {
+          "text": "classe;",
+          "start": 107.419,
+          "end": 107.799
+        },
+        {
+          "text": "nei",
+          "start": 108.339,
+          "end": 108.459
+        },
+        {
+          "text": "grafi",
+          "start": 108.479,
+          "end": 108.719
+        },
+        {
+          "text": "eterofili",
+          "start": 108.799,
+          "end": 109.339
+        },
+        {
+          "text": "i",
+          "start": 109.559,
+          "end": 109.599
+        },
+        {
+          "text": "nodi",
+          "start": 109.659,
+          "end": 109.879
+        },
+        {
+          "text": "della",
+          "start": 109.919,
+          "end": 110.099
+        },
+        {
+          "text": "stessa",
+          "start": 110.139,
+          "end": 110.379
+        },
+        {
+          "text": "classe",
+          "start": 110.419,
+          "end": 110.719
+        },
+        {
+          "text": "sono",
+          "start": 110.759,
+          "end": 110.919
+        },
+        {
+          "text": "distanti,",
+          "start": 110.979,
+          "end": 111.559
+        }
+      ]
+    },
+    {
+      "start": 111.979,
+      "end": 114.78,
+      "text": "per cui aggregare i vicini immediati diventa fuorviante.",
+      "words": [
+        {
+          "text": "per",
+          "start": 111.979,
+          "end": 112.079
+        },
+        {
+          "text": "cui",
+          "start": 112.119,
+          "end": 112.26
+        },
+        {
+          "text": "aggregare",
+          "start": 112.32,
+          "end": 112.72
+        },
+        {
+          "text": "i",
+          "start": 112.74,
+          "end": 112.78
+        },
+        {
+          "text": "vicini",
+          "start": 112.8,
+          "end": 113.14
+        },
+        {
+          "text": "immediati",
+          "start": 113.18,
+          "end": 113.68
+        },
+        {
+          "text": "diventa",
+          "start": 113.84,
+          "end": 114.18
+        },
+        {
+          "text": "fuorviante.",
+          "start": 114.22,
+          "end": 114.78
+        }
+      ]
+    }
+  ]
+}

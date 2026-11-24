@@ -1,0 +1,1390 @@
+{
+  "duration": 88.411,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.28,
+      "text": "Inseriamo il kernel nella SVM.",
+      "words": [
+        {
+          "text": "Inseriamo",
+          "start": 0.08,
+          "end": 0.64
+        },
+        {
+          "text": "il",
+          "start": 0.7,
+          "end": 0.76
+        },
+        {
+          "text": "kernel",
+          "start": 0.82,
+          "end": 1.26
+        },
+        {
+          "text": "nella",
+          "start": 1.36,
+          "end": 1.58
+        },
+        {
+          "text": "SVM.",
+          "start": 1.8,
+          "end": 2.28
+        }
+      ]
+    },
+    {
+      "start": 2.8,
+      "end": 5.901,
+      "text": "Il primale nello spazio delle feature può essere intrattabile,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 2.8,
+          "end": 2.9
+        },
+        {
+          "text": "primale",
+          "start": 2.96,
+          "end": 3.38
+        },
+        {
+          "text": "nello",
+          "start": 3.44,
+          "end": 3.62
+        },
+        {
+          "text": "spazio",
+          "start": 3.68,
+          "end": 4.001
+        },
+        {
+          "text": "delle",
+          "start": 4.041,
+          "end": 4.221
+        },
+        {
+          "text": "feature",
+          "start": 4.261,
+          "end": 4.641
+        },
+        {
+          "text": "può",
+          "start": 4.721,
+          "end": 4.821
+        },
+        {
+          "text": "essere",
+          "start": 4.881,
+          "end": 5.161
+        },
+        {
+          "text": "intrattabile,",
+          "start": 5.201,
+          "end": 5.901
+        }
+      ]
+    },
+    {
+      "start": 5.981,
+      "end": 7.581,
+      "text": "ma il duale resta gestibile:",
+      "words": [
+        {
+          "text": "ma",
+          "start": 5.981,
+          "end": 6.041
+        },
+        {
+          "text": "il",
+          "start": 6.121,
+          "end": 6.201
+        },
+        {
+          "text": "duale",
+          "start": 6.241,
+          "end": 6.601
+        },
+        {
+          "text": "resta",
+          "start": 6.761,
+          "end": 7.001
+        },
+        {
+          "text": "gestibile:",
+          "start": 7.061,
+          "end": 7.581
+        }
+      ]
+    },
+    {
+      "start": 8.281,
+      "end": 13.542,
+      "text": "massimizziamo Q di alfa uguale somma di alfa con i meno uno mezzo somma doppia",
+      "words": [
+        {
+          "text": "massimizziamo",
+          "start": 8.281,
+          "end": 8.901
+        },
+        {
+          "text": "Q",
+          "start": 9.041,
+          "end": 9.081
+        },
+        {
+          "text": "di",
+          "start": 9.301,
+          "end": 9.381
+        },
+        {
+          "text": "alfa",
+          "start": 9.481,
+          "end": 9.801
+        },
+        {
+          "text": "uguale",
+          "start": 9.901,
+          "end": 10.301
+        },
+        {
+          "text": "somma",
+          "start": 10.421,
+          "end": 10.761
+        },
+        {
+          "text": "di",
+          "start": 10.841,
+          "end": 10.921
+        },
+        {
+          "text": "alfa",
+          "start": 11.101,
+          "end": 11.361
+        },
+        {
+          "text": "con",
+          "start": 11.421,
+          "end": 11.561
+        },
+        {
+          "text": "i",
+          "start": 11.621,
+          "end": 11.661
+        },
+        {
+          "text": "meno",
+          "start": 12.121,
+          "end": 12.362
+        },
+        {
+          "text": "uno",
+          "start": 12.422,
+          "end": 12.542
+        },
+        {
+          "text": "mezzo",
+          "start": 12.562,
+          "end": 12.862
+        },
+        {
+          "text": "somma",
+          "start": 12.942,
+          "end": 13.202
+        },
+        {
+          "text": "doppia",
+          "start": 13.262,
+          "end": 13.542
+        }
+      ]
+    },
+    {
+      "start": 13.602,
+      "end": 15.082,
+      "text": "di alfa con i alfa con j",
+      "words": [
+        {
+          "text": "di",
+          "start": 13.602,
+          "end": 13.682
+        },
+        {
+          "text": "alfa",
+          "start": 13.862,
+          "end": 14.102
+        },
+        {
+          "text": "con",
+          "start": 14.182,
+          "end": 14.302
+        },
+        {
+          "text": "i",
+          "start": 14.342,
+          "end": 14.382
+        },
+        {
+          "text": "alfa",
+          "start": 14.562,
+          "end": 14.782
+        },
+        {
+          "text": "con",
+          "start": 14.842,
+          "end": 14.982
+        },
+        {
+          "text": "j",
+          "start": 15.042,
+          "end": 15.082
+        }
+      ]
+    },
+    {
+      "start": 15.702,
+      "end": 19.582,
+      "text": "d con i d con j per k di x con i virgola x con",
+      "words": [
+        {
+          "text": "d",
+          "start": 15.702,
+          "end": 15.742
+        },
+        {
+          "text": "con",
+          "start": 15.882,
+          "end": 16.062
+        },
+        {
+          "text": "i",
+          "start": 16.122,
+          "end": 16.162
+        },
+        {
+          "text": "d",
+          "start": 16.482,
+          "end": 16.522
+        },
+        {
+          "text": "con",
+          "start": 16.642,
+          "end": 16.802
+        },
+        {
+          "text": "j",
+          "start": 16.862,
+          "end": 16.902
+        },
+        {
+          "text": "per",
+          "start": 17.182,
+          "end": 17.342
+        },
+        {
+          "text": "k",
+          "start": 17.482,
+          "end": 17.522
+        },
+        {
+          "text": "di",
+          "start": 17.882,
+          "end": 17.942
+        },
+        {
+          "text": "x",
+          "start": 18.202,
+          "end": 18.242
+        },
+        {
+          "text": "con",
+          "start": 18.342,
+          "end": 18.482
+        },
+        {
+          "text": "i",
+          "start": 18.522,
+          "end": 18.562
+        },
+        {
+          "text": "virgola",
+          "start": 18.782,
+          "end": 19.142
+        },
+        {
+          "text": "x",
+          "start": 19.342,
+          "end": 19.382
+        },
+        {
+          "text": "con",
+          "start": 19.462,
+          "end": 19.582
+        }
+      ]
+    },
+    {
+      "start": 19.642,
+      "end": 24.783,
+      "text": "j, con somma di alfa con i d con i uguale zero e alfa con",
+      "words": [
+        {
+          "text": "j,",
+          "start": 19.642,
+          "end": 19.682
+        },
+        {
+          "text": "con",
+          "start": 20.502,
+          "end": 20.743
+        },
+        {
+          "text": "somma",
+          "start": 21.123,
+          "end": 21.483
+        },
+        {
+          "text": "di",
+          "start": 21.563,
+          "end": 21.643
+        },
+        {
+          "text": "alfa",
+          "start": 21.843,
+          "end": 22.083
+        },
+        {
+          "text": "con",
+          "start": 22.163,
+          "end": 22.283
+        },
+        {
+          "text": "i",
+          "start": 22.343,
+          "end": 22.383
+        },
+        {
+          "text": "d",
+          "start": 22.483,
+          "end": 22.523
+        },
+        {
+          "text": "con",
+          "start": 22.623,
+          "end": 22.783
+        },
+        {
+          "text": "i",
+          "start": 22.823,
+          "end": 22.863
+        },
+        {
+          "text": "uguale",
+          "start": 23.083,
+          "end": 23.403
+        },
+        {
+          "text": "zero",
+          "start": 23.503,
+          "end": 23.783
+        },
+        {
+          "text": "e",
+          "start": 24.143,
+          "end": 24.183
+        },
+        {
+          "text": "alfa",
+          "start": 24.343,
+          "end": 24.583
+        },
+        {
+          "text": "con",
+          "start": 24.643,
+          "end": 24.783
+        }
+      ]
+    },
+    {
+      "start": 24.823,
+      "end": 25.903,
+      "text": "i tra zero e C.",
+      "words": [
+        {
+          "text": "i",
+          "start": 24.823,
+          "end": 24.863
+        },
+        {
+          "text": "tra",
+          "start": 24.983,
+          "end": 25.103
+        },
+        {
+          "text": "zero",
+          "start": 25.303,
+          "end": 25.583
+        },
+        {
+          "text": "e",
+          "start": 25.743,
+          "end": 25.783
+        },
+        {
+          "text": "C.",
+          "start": 25.863,
+          "end": 25.903
+        }
+      ]
+    },
+    {
+      "start": 26.763,
+      "end": 31.464,
+      "text": "La dipendenza da l anziché dalla dimensione dello spazio diventa un vantaggio enorme,",
+      "words": [
+        {
+          "text": "La",
+          "start": 26.763,
+          "end": 26.823
+        },
+        {
+          "text": "dipendenza",
+          "start": 26.863,
+          "end": 27.343
+        },
+        {
+          "text": "da",
+          "start": 27.403,
+          "end": 27.463
+        },
+        {
+          "text": "l",
+          "start": 27.863,
+          "end": 27.903
+        },
+        {
+          "text": "anziché",
+          "start": 28.163,
+          "end": 28.523
+        },
+        {
+          "text": "dalla",
+          "start": 28.623,
+          "end": 28.803
+        },
+        {
+          "text": "dimensione",
+          "start": 28.844,
+          "end": 29.324
+        },
+        {
+          "text": "dello",
+          "start": 29.364,
+          "end": 29.544
+        },
+        {
+          "text": "spazio",
+          "start": 29.584,
+          "end": 29.964
+        },
+        {
+          "text": "diventa",
+          "start": 30.104,
+          "end": 30.444
+        },
+        {
+          "text": "un",
+          "start": 30.484,
+          "end": 30.544
+        },
+        {
+          "text": "vantaggio",
+          "start": 30.584,
+          "end": 31.024
+        },
+        {
+          "text": "enorme,",
+          "start": 31.064,
+          "end": 31.464
+        }
+      ]
+    },
+    {
+      "start": 31.724,
+      "end": 33.024,
+      "text": "persino in spazi infiniti.",
+      "words": [
+        {
+          "text": "persino",
+          "start": 31.724,
+          "end": 32.084
+        },
+        {
+          "text": "in",
+          "start": 32.144,
+          "end": 32.184
+        },
+        {
+          "text": "spazi",
+          "start": 32.204,
+          "end": 32.504
+        },
+        {
+          "text": "infiniti.",
+          "start": 32.544,
+          "end": 33.024
+        }
+      ]
+    },
+    {
+      "start": 33.824,
+      "end": 37.044,
+      "text": "L'algoritmo in cinque passi è diretto: scegliere C e k;",
+      "words": [
+        {
+          "text": "L'algoritmo",
+          "start": 33.824,
+          "end": 34.364
+        },
+        {
+          "text": "in",
+          "start": 34.424,
+          "end": 34.484
+        },
+        {
+          "text": "cinque",
+          "start": 34.524,
+          "end": 34.784
+        },
+        {
+          "text": "passi",
+          "start": 34.824,
+          "end": 35.104
+        },
+        {
+          "text": "è",
+          "start": 35.224,
+          "end": 35.264
+        },
+        {
+          "text": "diretto:",
+          "start": 35.304,
+          "end": 35.744
+        },
+        {
+          "text": "scegliere",
+          "start": 36.124,
+          "end": 36.504
+        },
+        {
+          "text": "C",
+          "start": 36.564,
+          "end": 36.604
+        },
+        {
+          "text": "e",
+          "start": 36.904,
+          "end": 36.944
+        },
+        {
+          "text": "k;",
+          "start": 37.004,
+          "end": 37.044
+        }
+      ]
+    },
+    {
+      "start": 37.745,
+      "end": 38.825,
+      "text": "calcolare la matrice K;",
+      "words": [
+        {
+          "text": "calcolare",
+          "start": 37.745,
+          "end": 38.205
+        },
+        {
+          "text": "la",
+          "start": 38.265,
+          "end": 38.305
+        },
+        {
+          "text": "matrice",
+          "start": 38.325,
+          "end": 38.685
+        },
+        {
+          "text": "K;",
+          "start": 38.785,
+          "end": 38.825
+        }
+      ]
+    },
+    {
+      "start": 39.585,
+      "end": 43.345,
+      "text": "risolvere il QP trovando gli alfa; calcolare il bias b;",
+      "words": [
+        {
+          "text": "risolvere",
+          "start": 39.585,
+          "end": 40.045
+        },
+        {
+          "text": "il",
+          "start": 40.085,
+          "end": 40.145
+        },
+        {
+          "text": "QP",
+          "start": 40.205,
+          "end": 40.405
+        },
+        {
+          "text": "trovando",
+          "start": 40.725,
+          "end": 41.125
+        },
+        {
+          "text": "gli",
+          "start": 41.165,
+          "end": 41.265
+        },
+        {
+          "text": "alfa;",
+          "start": 41.325,
+          "end": 41.585
+        },
+        {
+          "text": "calcolare",
+          "start": 42.025,
+          "end": 42.545
+        },
+        {
+          "text": "il",
+          "start": 42.585,
+          "end": 42.645
+        },
+        {
+          "text": "bias",
+          "start": 42.685,
+          "end": 43.065
+        },
+        {
+          "text": "b;",
+          "start": 43.305,
+          "end": 43.345
+        }
+      ]
+    },
+    {
+      "start": 43.925,
+      "end": 48.126,
+      "text": "e per un nuovo pattern x valutare somma di alfa con i d con i",
+      "words": [
+        {
+          "text": "e",
+          "start": 43.925,
+          "end": 43.965
+        },
+        {
+          "text": "per",
+          "start": 44.025,
+          "end": 44.165
+        },
+        {
+          "text": "un",
+          "start": 44.185,
+          "end": 44.265
+        },
+        {
+          "text": "nuovo",
+          "start": 44.305,
+          "end": 44.525
+        },
+        {
+          "text": "pattern",
+          "start": 44.625,
+          "end": 45.065
+        },
+        {
+          "text": "x",
+          "start": 45.405,
+          "end": 45.445
+        },
+        {
+          "text": "valutare",
+          "start": 45.726,
+          "end": 46.206
+        },
+        {
+          "text": "somma",
+          "start": 46.386,
+          "end": 46.706
+        },
+        {
+          "text": "di",
+          "start": 46.786,
+          "end": 46.866
+        },
+        {
+          "text": "alfa",
+          "start": 47.026,
+          "end": 47.266
+        },
+        {
+          "text": "con",
+          "start": 47.346,
+          "end": 47.486
+        },
+        {
+          "text": "i",
+          "start": 47.526,
+          "end": 47.566
+        },
+        {
+          "text": "d",
+          "start": 47.766,
+          "end": 47.806
+        },
+        {
+          "text": "con",
+          "start": 47.906,
+          "end": 48.046
+        },
+        {
+          "text": "i",
+          "start": 48.086,
+          "end": 48.126
+        }
+      ]
+    },
+    {
+      "start": 48.386,
+      "end": 52.526,
+      "text": "k di x virgola x con i più b senza mai calcolare w,",
+      "words": [
+        {
+          "text": "k",
+          "start": 48.386,
+          "end": 48.426
+        },
+        {
+          "text": "di",
+          "start": 48.826,
+          "end": 48.906
+        },
+        {
+          "text": "x",
+          "start": 49.226,
+          "end": 49.266
+        },
+        {
+          "text": "virgola",
+          "start": 49.526,
+          "end": 49.886
+        },
+        {
+          "text": "x",
+          "start": 50.146,
+          "end": 50.186
+        },
+        {
+          "text": "con",
+          "start": 50.306,
+          "end": 50.466
+        },
+        {
+          "text": "i",
+          "start": 50.506,
+          "end": 50.546
+        },
+        {
+          "text": "più",
+          "start": 50.926,
+          "end": 51.066
+        },
+        {
+          "text": "b",
+          "start": 51.246,
+          "end": 51.286
+        },
+        {
+          "text": "senza",
+          "start": 51.566,
+          "end": 51.826
+        },
+        {
+          "text": "mai",
+          "start": 51.866,
+          "end": 51.986
+        },
+        {
+          "text": "calcolare",
+          "start": 52.026,
+          "end": 52.446
+        },
+        {
+          "text": "w,",
+          "start": 52.486,
+          "end": 52.526
+        }
+      ]
+    },
+    {
+      "start": 53.286,
+      "end": 54.707,
+      "text": "classificando con il segno.",
+      "words": [
+        {
+          "text": "classificando",
+          "start": 53.286,
+          "end": 54.007
+        },
+        {
+          "text": "con",
+          "start": 54.107,
+          "end": 54.227
+        },
+        {
+          "text": "il",
+          "start": 54.267,
+          "end": 54.347
+        },
+        {
+          "text": "segno.",
+          "start": 54.407,
+          "end": 54.707
+        }
+      ]
+    },
+    {
+      "start": 56.147,
+      "end": 60.567,
+      "text": "La soluzione è sparsa negli alfa: in test si memorizzano solo i support vector,",
+      "words": [
+        {
+          "text": "La",
+          "start": 56.147,
+          "end": 56.227
+        },
+        {
+          "text": "soluzione",
+          "start": 56.267,
+          "end": 56.687
+        },
+        {
+          "text": "è",
+          "start": 56.727,
+          "end": 56.767
+        },
+        {
+          "text": "sparsa",
+          "start": 56.787,
+          "end": 57.187
+        },
+        {
+          "text": "negli",
+          "start": 57.227,
+          "end": 57.427
+        },
+        {
+          "text": "alfa:",
+          "start": 57.467,
+          "end": 57.747
+        },
+        {
+          "text": "in",
+          "start": 58.127,
+          "end": 58.207
+        },
+        {
+          "text": "test",
+          "start": 58.247,
+          "end": 58.507
+        },
+        {
+          "text": "si",
+          "start": 58.647,
+          "end": 58.707
+        },
+        {
+          "text": "memorizzano",
+          "start": 58.767,
+          "end": 59.287
+        },
+        {
+          "text": "solo",
+          "start": 59.407,
+          "end": 59.607
+        },
+        {
+          "text": "i",
+          "start": 59.647,
+          "end": 59.687
+        },
+        {
+          "text": "support",
+          "start": 59.747,
+          "end": 60.107
+        },
+        {
+          "text": "vector,",
+          "start": 60.187,
+          "end": 60.567
+        }
+      ]
+    },
+    {
+      "start": 60.767,
+      "end": 62.428,
+      "text": "ricordando il K-NN.",
+      "words": [
+        {
+          "text": "ricordando",
+          "start": 60.767,
+          "end": 61.347
+        },
+        {
+          "text": "il",
+          "start": 61.467,
+          "end": 61.567
+        },
+        {
+          "text": "K-NN.",
+          "start": 61.667,
+          "end": 62.428
+        }
+      ]
+    },
+    {
+      "start": 63.348,
+      "end": 66.428,
+      "text": "Il diagramma a destra mostra una vista architetturale della SVM:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 63.348,
+          "end": 63.448
+        },
+        {
+          "text": "diagramma",
+          "start": 63.468,
+          "end": 63.848
+        },
+        {
+          "text": "a",
+          "start": 63.868,
+          "end": 63.908
+        },
+        {
+          "text": "destra",
+          "start": 63.908,
+          "end": 64.168
+        },
+        {
+          "text": "mostra",
+          "start": 64.228,
+          "end": 64.508
+        },
+        {
+          "text": "una",
+          "start": 64.548,
+          "end": 64.648
+        },
+        {
+          "text": "vista",
+          "start": 64.688,
+          "end": 64.888
+        },
+        {
+          "text": "architetturale",
+          "start": 64.928,
+          "end": 65.608
+        },
+        {
+          "text": "della",
+          "start": 65.648,
+          "end": 65.828
+        },
+        {
+          "text": "SVM:",
+          "start": 66.008,
+          "end": 66.428
+        }
+      ]
+    },
+    {
+      "start": 67.028,
+      "end": 72.52900000000001,
+      "text": "tante unità nascoste quanti sono i support vector, ciascuna calcola k di x virgola x",
+      "words": [
+        {
+          "text": "tante",
+          "start": 67.028,
+          "end": 67.288
+        },
+        {
+          "text": "unità",
+          "start": 67.328,
+          "end": 67.548
+        },
+        {
+          "text": "nascoste",
+          "start": 67.628,
+          "end": 68.048
+        },
+        {
+          "text": "quanti",
+          "start": 68.108,
+          "end": 68.368
+        },
+        {
+          "text": "sono",
+          "start": 68.408,
+          "end": 68.608
+        },
+        {
+          "text": "i",
+          "start": 68.648,
+          "end": 68.688
+        },
+        {
+          "text": "support",
+          "start": 68.728,
+          "end": 69.068
+        },
+        {
+          "text": "vector,",
+          "start": 69.148,
+          "end": 69.528
+        },
+        {
+          "text": "ciascuna",
+          "start": 69.828,
+          "end": 70.328
+        },
+        {
+          "text": "calcola",
+          "start": 70.408,
+          "end": 70.809
+        },
+        {
+          "text": "k",
+          "start": 70.929,
+          "end": 70.96900000000001
+        },
+        {
+          "text": "di",
+          "start": 71.349,
+          "end": 71.429
+        },
+        {
+          "text": "x",
+          "start": 71.689,
+          "end": 71.729
+        },
+        {
+          "text": "virgola",
+          "start": 71.929,
+          "end": 72.309
+        },
+        {
+          "text": "x",
+          "start": 72.489,
+          "end": 72.52900000000001
+        }
+      ]
+    },
+    {
+      "start": 72.629,
+      "end": 77.169,
+      "text": "con s, pesata da alfa con s d con s verso una somma con bias",
+      "words": [
+        {
+          "text": "con",
+          "start": 72.629,
+          "end": 72.769
+        },
+        {
+          "text": "s,",
+          "start": 72.929,
+          "end": 72.96900000000001
+        },
+        {
+          "text": "pesata",
+          "start": 73.469,
+          "end": 73.849
+        },
+        {
+          "text": "da",
+          "start": 73.929,
+          "end": 74.009
+        },
+        {
+          "text": "alfa",
+          "start": 74.189,
+          "end": 74.429
+        },
+        {
+          "text": "con",
+          "start": 74.489,
+          "end": 74.609
+        },
+        {
+          "text": "s",
+          "start": 74.789,
+          "end": 74.82900000000001
+        },
+        {
+          "text": "d",
+          "start": 74.909,
+          "end": 74.94900000000001
+        },
+        {
+          "text": "con",
+          "start": 75.029,
+          "end": 75.149
+        },
+        {
+          "text": "s",
+          "start": 75.309,
+          "end": 75.349
+        },
+        {
+          "text": "verso",
+          "start": 75.629,
+          "end": 75.949
+        },
+        {
+          "text": "una",
+          "start": 76.109,
+          "end": 76.249
+        },
+        {
+          "text": "somma",
+          "start": 76.309,
+          "end": 76.589
+        },
+        {
+          "text": "con",
+          "start": 76.689,
+          "end": 76.809
+        },
+        {
+          "text": "bias",
+          "start": 76.849,
+          "end": 77.169
+        }
+      ]
+    },
+    {
+      "start": 77.269,
+      "end": 78.329,
+      "text": "b e segno finale.",
+      "words": [
+        {
+          "text": "b",
+          "start": 77.269,
+          "end": 77.30900000000001
+        },
+        {
+          "text": "e",
+          "start": 77.569,
+          "end": 77.60900000000001
+        },
+        {
+          "text": "segno",
+          "start": 77.669,
+          "end": 77.889
+        },
+        {
+          "text": "finale.",
+          "start": 77.949,
+          "end": 78.329
+        }
+      ]
+    },
+    {
+      "start": 78.85,
+      "end": 83.09,
+      "text": "Ma non è una rete neurale: nelle reti i parametri delle unità nascoste si adattano",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 78.85,
+          "end": 78.91
+        },
+        {
+          "text": "non",
+          "start": 78.97,
+          "end": 79.09
+        },
+        {
+          "text": "è",
+          "start": 79.11,
+          "end": 79.15
+        },
+        {
+          "text": "una",
+          "start": 79.27,
+          "end": 79.39
+        },
+        {
+          "text": "rete",
+          "start": 79.43,
+          "end": 79.63
+        },
+        {
+          "text": "neurale:",
+          "start": 79.67,
+          "end": 80.13
+        },
+        {
+          "text": "nelle",
+          "start": 80.55,
+          "end": 80.73
+        },
+        {
+          "text": "reti",
+          "start": 80.77,
+          "end": 80.95
+        },
+        {
+          "text": "i",
+          "start": 80.99,
+          "end": 81.03
+        },
+        {
+          "text": "parametri",
+          "start": 81.05,
+          "end": 81.55
+        },
+        {
+          "text": "delle",
+          "start": 81.61,
+          "end": 81.81
+        },
+        {
+          "text": "unità",
+          "start": 81.85,
+          "end": 82.09
+        },
+        {
+          "text": "nascoste",
+          "start": 82.17,
+          "end": 82.57
+        },
+        {
+          "text": "si",
+          "start": 82.61,
+          "end": 82.67
+        },
+        {
+          "text": "adattano",
+          "start": 82.73,
+          "end": 83.09
+        }
+      ]
+    },
+    {
+      "start": 83.13,
+      "end": 87.551,
+      "text": "ai dati; qui i centri sono i support vector stessi e la funzione è fissata",
+      "words": [
+        {
+          "text": "ai",
+          "start": 83.13,
+          "end": 83.19
+        },
+        {
+          "text": "dati;",
+          "start": 83.21,
+          "end": 83.49
+        },
+        {
+          "text": "qui",
+          "start": 83.87,
+          "end": 83.99
+        },
+        {
+          "text": "i",
+          "start": 84.13,
+          "end": 84.17
+        },
+        {
+          "text": "centri",
+          "start": 84.21,
+          "end": 84.51
+        },
+        {
+          "text": "sono",
+          "start": 84.57,
+          "end": 84.75
+        },
+        {
+          "text": "i",
+          "start": 84.79,
+          "end": 84.83000000000001
+        },
+        {
+          "text": "support",
+          "start": 84.89,
+          "end": 85.21
+        },
+        {
+          "text": "vector",
+          "start": 85.25,
+          "end": 85.57
+        },
+        {
+          "text": "stessi",
+          "start": 85.63,
+          "end": 86.01
+        },
+        {
+          "text": "e",
+          "start": 86.33,
+          "end": 86.37
+        },
+        {
+          "text": "la",
+          "start": 86.41,
+          "end": 86.47
+        },
+        {
+          "text": "funzione",
+          "start": 86.51,
+          "end": 86.93
+        },
+        {
+          "text": "è",
+          "start": 87.09,
+          "end": 87.13000000000001
+        },
+        {
+          "text": "fissata",
+          "start": 87.171,
+          "end": 87.551
+        }
+      ]
+    },
+    {
+      "start": 87.591,
+      "end": 88.151,
+      "text": "dal kernel.",
+      "words": [
+        {
+          "text": "dal",
+          "start": 87.591,
+          "end": 87.711
+        },
+        {
+          "text": "kernel.",
+          "start": 87.771,
+          "end": 88.151
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1414 @@
+{
+  "duration": 88.49,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.68,
+      "text": "Passiamo ora al problema duale della Support Vector Regression.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "ora",
+          "start": 0.58,
+          "end": 0.72
+        },
+        {
+          "text": "al",
+          "start": 0.76,
+          "end": 0.84
+        },
+        {
+          "text": "problema",
+          "start": 0.88,
+          "end": 1.28
+        },
+        {
+          "text": "duale",
+          "start": 1.34,
+          "end": 1.64
+        },
+        {
+          "text": "della",
+          "start": 1.68,
+          "end": 1.86
+        },
+        {
+          "text": "Support",
+          "start": 1.94,
+          "end": 2.28
+        },
+        {
+          "text": "Vector",
+          "start": 2.36,
+          "end": 2.82
+        },
+        {
+          "text": "Regression.",
+          "start": 3.0,
+          "end": 3.68
+        }
+      ]
+    },
+    {
+      "start": 4.28,
+      "end": 9.381,
+      "text": "Ai due insiemi di vincoli del tubo corrispondono due insiemi di moltiplicatori di Lagrange,",
+      "words": [
+        {
+          "text": "Ai",
+          "start": 4.28,
+          "end": 4.4
+        },
+        {
+          "text": "due",
+          "start": 4.5,
+          "end": 4.661
+        },
+        {
+          "text": "insiemi",
+          "start": 4.701,
+          "end": 5.101
+        },
+        {
+          "text": "di",
+          "start": 5.161,
+          "end": 5.201
+        },
+        {
+          "text": "vincoli",
+          "start": 5.261,
+          "end": 5.641
+        },
+        {
+          "text": "del",
+          "start": 5.701,
+          "end": 5.841
+        },
+        {
+          "text": "tubo",
+          "start": 5.981,
+          "end": 6.281
+        },
+        {
+          "text": "corrispondono",
+          "start": 6.461,
+          "end": 7.101
+        },
+        {
+          "text": "due",
+          "start": 7.221,
+          "end": 7.381
+        },
+        {
+          "text": "insiemi",
+          "start": 7.441,
+          "end": 7.801
+        },
+        {
+          "text": "di",
+          "start": 7.861,
+          "end": 7.921
+        },
+        {
+          "text": "moltiplicatori",
+          "start": 7.961,
+          "end": 8.661
+        },
+        {
+          "text": "di",
+          "start": 8.701,
+          "end": 8.781
+        },
+        {
+          "text": "Lagrange,",
+          "start": 8.841,
+          "end": 9.381
+        }
+      ]
+    },
+    {
+      "start": 9.821,
+      "end": 14.262,
+      "text": "alfa con i e alfa primo con i, entrambi compresi tra zero e C e",
+      "words": [
+        {
+          "text": "alfa",
+          "start": 9.821,
+          "end": 10.061
+        },
+        {
+          "text": "con",
+          "start": 10.121,
+          "end": 10.281
+        },
+        {
+          "text": "i",
+          "start": 10.321,
+          "end": 10.361
+        },
+        {
+          "text": "e",
+          "start": 10.601,
+          "end": 10.641
+        },
+        {
+          "text": "alfa",
+          "start": 10.701,
+          "end": 10.921
+        },
+        {
+          "text": "primo",
+          "start": 10.981,
+          "end": 11.221
+        },
+        {
+          "text": "con",
+          "start": 11.301,
+          "end": 11.441
+        },
+        {
+          "text": "i,",
+          "start": 11.501,
+          "end": 11.541
+        },
+        {
+          "text": "entrambi",
+          "start": 12.041,
+          "end": 12.401
+        },
+        {
+          "text": "compresi",
+          "start": 12.441,
+          "end": 12.821
+        },
+        {
+          "text": "tra",
+          "start": 12.901,
+          "end": 13.001
+        },
+        {
+          "text": "zero",
+          "start": 13.121,
+          "end": 13.401
+        },
+        {
+          "text": "e",
+          "start": 13.561,
+          "end": 13.601
+        },
+        {
+          "text": "C",
+          "start": 13.722,
+          "end": 13.762
+        },
+        {
+          "text": "e",
+          "start": 14.222,
+          "end": 14.262
+        }
+      ]
+    },
+    {
+      "start": 14.342,
+      "end": 19.122,
+      "text": "soggetti al vincolo somma di alfa con i meno alfa primo con i uguale zero.",
+      "words": [
+        {
+          "text": "soggetti",
+          "start": 14.342,
+          "end": 14.722
+        },
+        {
+          "text": "al",
+          "start": 14.762,
+          "end": 14.842
+        },
+        {
+          "text": "vincolo",
+          "start": 14.882,
+          "end": 15.302
+        },
+        {
+          "text": "somma",
+          "start": 15.762,
+          "end": 16.122
+        },
+        {
+          "text": "di",
+          "start": 16.202,
+          "end": 16.262
+        },
+        {
+          "text": "alfa",
+          "start": 16.322,
+          "end": 16.562
+        },
+        {
+          "text": "con",
+          "start": 16.642,
+          "end": 16.782
+        },
+        {
+          "text": "i",
+          "start": 16.842,
+          "end": 16.882
+        },
+        {
+          "text": "meno",
+          "start": 17.162,
+          "end": 17.362
+        },
+        {
+          "text": "alfa",
+          "start": 17.442,
+          "end": 17.682
+        },
+        {
+          "text": "primo",
+          "start": 17.742,
+          "end": 17.962
+        },
+        {
+          "text": "con",
+          "start": 18.022,
+          "end": 18.162
+        },
+        {
+          "text": "i",
+          "start": 18.202,
+          "end": 18.242
+        },
+        {
+          "text": "uguale",
+          "start": 18.442,
+          "end": 18.722
+        },
+        {
+          "text": "zero.",
+          "start": 18.842,
+          "end": 19.122
+        }
+      ]
+    },
+    {
+      "start": 20.162,
+      "end": 25.743,
+      "text": "Massimizziamo la funzione quadratica Q di alfa virgola alfa primo uguale somma di d con",
+      "words": [
+        {
+          "text": "Massimizziamo",
+          "start": 20.162,
+          "end": 20.722
+        },
+        {
+          "text": "la",
+          "start": 20.782,
+          "end": 20.842
+        },
+        {
+          "text": "funzione",
+          "start": 20.862,
+          "end": 21.202
+        },
+        {
+          "text": "quadratica",
+          "start": 21.242,
+          "end": 21.802
+        },
+        {
+          "text": "Q",
+          "start": 22.142,
+          "end": 22.182
+        },
+        {
+          "text": "di",
+          "start": 22.522,
+          "end": 22.602
+        },
+        {
+          "text": "alfa",
+          "start": 22.682,
+          "end": 22.963
+        },
+        {
+          "text": "virgola",
+          "start": 23.023,
+          "end": 23.303
+        },
+        {
+          "text": "alfa",
+          "start": 23.343,
+          "end": 23.563
+        },
+        {
+          "text": "primo",
+          "start": 23.643,
+          "end": 23.923
+        },
+        {
+          "text": "uguale",
+          "start": 24.183,
+          "end": 24.523
+        },
+        {
+          "text": "somma",
+          "start": 24.943,
+          "end": 25.223
+        },
+        {
+          "text": "di",
+          "start": 25.283,
+          "end": 25.363
+        },
+        {
+          "text": "d",
+          "start": 25.443,
+          "end": 25.483
+        },
+        {
+          "text": "con",
+          "start": 25.583,
+          "end": 25.743
+        }
+      ]
+    },
+    {
+      "start": 25.803,
+      "end": 28.243,
+      "text": "i per alfa con i meno alfa primo con i,",
+      "words": [
+        {
+          "text": "i",
+          "start": 25.803,
+          "end": 25.843
+        },
+        {
+          "text": "per",
+          "start": 26.183,
+          "end": 26.323
+        },
+        {
+          "text": "alfa",
+          "start": 26.483,
+          "end": 26.763
+        },
+        {
+          "text": "con",
+          "start": 26.843,
+          "end": 26.983
+        },
+        {
+          "text": "i",
+          "start": 27.043,
+          "end": 27.083
+        },
+        {
+          "text": "meno",
+          "start": 27.263,
+          "end": 27.443
+        },
+        {
+          "text": "alfa",
+          "start": 27.503,
+          "end": 27.703
+        },
+        {
+          "text": "primo",
+          "start": 27.763,
+          "end": 27.943
+        },
+        {
+          "text": "con",
+          "start": 28.003,
+          "end": 28.143
+        },
+        {
+          "text": "i,",
+          "start": 28.203,
+          "end": 28.243
+        }
+      ]
+    },
+    {
+      "start": 28.923,
+      "end": 32.344,
+      "text": "meno epsilon per la somma di alfa con i più alfa primo con i,",
+      "words": [
+        {
+          "text": "meno",
+          "start": 28.923,
+          "end": 29.103
+        },
+        {
+          "text": "epsilon",
+          "start": 29.183,
+          "end": 29.663
+        },
+        {
+          "text": "per",
+          "start": 29.783,
+          "end": 29.903
+        },
+        {
+          "text": "la",
+          "start": 29.943,
+          "end": 30.003
+        },
+        {
+          "text": "somma",
+          "start": 30.063,
+          "end": 30.323
+        },
+        {
+          "text": "di",
+          "start": 30.403,
+          "end": 30.463
+        },
+        {
+          "text": "alfa",
+          "start": 30.523,
+          "end": 30.743
+        },
+        {
+          "text": "con",
+          "start": 30.803,
+          "end": 30.963
+        },
+        {
+          "text": "i",
+          "start": 31.003,
+          "end": 31.043
+        },
+        {
+          "text": "più",
+          "start": 31.363,
+          "end": 31.463
+        },
+        {
+          "text": "alfa",
+          "start": 31.543,
+          "end": 31.783
+        },
+        {
+          "text": "primo",
+          "start": 31.843,
+          "end": 32.064
+        },
+        {
+          "text": "con",
+          "start": 32.104,
+          "end": 32.244
+        },
+        {
+          "text": "i,",
+          "start": 32.304,
+          "end": 32.344
+        }
+      ]
+    },
+    {
+      "start": 32.884,
+      "end": 37.344,
+      "text": "meno uno mezzo somma doppia su i e j di alfa con i meno alfa",
+      "words": [
+        {
+          "text": "meno",
+          "start": 32.884,
+          "end": 33.104
+        },
+        {
+          "text": "uno",
+          "start": 33.204,
+          "end": 33.344
+        },
+        {
+          "text": "mezzo",
+          "start": 33.344,
+          "end": 33.744
+        },
+        {
+          "text": "somma",
+          "start": 33.884,
+          "end": 34.164
+        },
+        {
+          "text": "doppia",
+          "start": 34.244,
+          "end": 34.604
+        },
+        {
+          "text": "su",
+          "start": 34.724,
+          "end": 34.804
+        },
+        {
+          "text": "i",
+          "start": 34.944,
+          "end": 34.984
+        },
+        {
+          "text": "e",
+          "start": 35.084,
+          "end": 35.124
+        },
+        {
+          "text": "j",
+          "start": 35.244,
+          "end": 35.284
+        },
+        {
+          "text": "di",
+          "start": 35.704,
+          "end": 35.784
+        },
+        {
+          "text": "alfa",
+          "start": 35.884,
+          "end": 36.164
+        },
+        {
+          "text": "con",
+          "start": 36.244,
+          "end": 36.404
+        },
+        {
+          "text": "i",
+          "start": 36.464,
+          "end": 36.504
+        },
+        {
+          "text": "meno",
+          "start": 36.804,
+          "end": 37.024
+        },
+        {
+          "text": "alfa",
+          "start": 37.104,
+          "end": 37.344
+        }
+      ]
+    },
+    {
+      "start": 37.384,
+      "end": 41.745,
+      "text": "primo con i per alfa con j meno alfa primo con j per il kernel",
+      "words": [
+        {
+          "text": "primo",
+          "start": 37.384,
+          "end": 37.624
+        },
+        {
+          "text": "con",
+          "start": 37.664,
+          "end": 37.784
+        },
+        {
+          "text": "i",
+          "start": 37.844,
+          "end": 37.884
+        },
+        {
+          "text": "per",
+          "start": 38.384,
+          "end": 38.524
+        },
+        {
+          "text": "alfa",
+          "start": 38.604,
+          "end": 38.864
+        },
+        {
+          "text": "con",
+          "start": 38.924,
+          "end": 39.064
+        },
+        {
+          "text": "j",
+          "start": 39.144,
+          "end": 39.184
+        },
+        {
+          "text": "meno",
+          "start": 39.544,
+          "end": 39.724
+        },
+        {
+          "text": "alfa",
+          "start": 39.784,
+          "end": 40.004
+        },
+        {
+          "text": "primo",
+          "start": 40.044,
+          "end": 40.244
+        },
+        {
+          "text": "con",
+          "start": 40.304,
+          "end": 40.444
+        },
+        {
+          "text": "j",
+          "start": 40.504,
+          "end": 40.544
+        },
+        {
+          "text": "per",
+          "start": 40.964,
+          "end": 41.124
+        },
+        {
+          "text": "il",
+          "start": 41.165,
+          "end": 41.245
+        },
+        {
+          "text": "kernel",
+          "start": 41.305,
+          "end": 41.745
+        }
+      ]
+    },
+    {
+      "start": 41.865,
+      "end": 44.365,
+      "text": "k di x con i virgola x con j.",
+      "words": [
+        {
+          "text": "k",
+          "start": 41.865,
+          "end": 41.905
+        },
+        {
+          "text": "di",
+          "start": 42.485,
+          "end": 42.565
+        },
+        {
+          "text": "x",
+          "start": 42.705,
+          "end": 42.745
+        },
+        {
+          "text": "con",
+          "start": 42.845,
+          "end": 43.005
+        },
+        {
+          "text": "i",
+          "start": 43.045,
+          "end": 43.085
+        },
+        {
+          "text": "virgola",
+          "start": 43.425,
+          "end": 43.785
+        },
+        {
+          "text": "x",
+          "start": 44.025,
+          "end": 44.065
+        },
+        {
+          "text": "con",
+          "start": 44.145,
+          "end": 44.265
+        },
+        {
+          "text": "j.",
+          "start": 44.325,
+          "end": 44.365
+        }
+      ]
+    },
+    {
+      "start": 45.545,
+      "end": 49.025,
+      "text": "Ponendo gamma con i uguale alfa con i meno alfa primo con i,",
+      "words": [
+        {
+          "text": "Ponendo",
+          "start": 45.545,
+          "end": 45.925
+        },
+        {
+          "text": "gamma",
+          "start": 46.045,
+          "end": 46.325
+        },
+        {
+          "text": "con",
+          "start": 46.385,
+          "end": 46.525
+        },
+        {
+          "text": "i",
+          "start": 46.565,
+          "end": 46.605
+        },
+        {
+          "text": "uguale",
+          "start": 46.685,
+          "end": 47.005
+        },
+        {
+          "text": "alfa",
+          "start": 47.165,
+          "end": 47.465
+        },
+        {
+          "text": "con",
+          "start": 47.525,
+          "end": 47.705
+        },
+        {
+          "text": "i",
+          "start": 47.745,
+          "end": 47.785
+        },
+        {
+          "text": "meno",
+          "start": 48.045,
+          "end": 48.225
+        },
+        {
+          "text": "alfa",
+          "start": 48.305,
+          "end": 48.505
+        },
+        {
+          "text": "primo",
+          "start": 48.565,
+          "end": 48.765
+        },
+        {
+          "text": "con",
+          "start": 48.805,
+          "end": 48.945
+        },
+        {
+          "text": "i,",
+          "start": 48.985,
+          "end": 49.025
+        }
+      ]
+    },
+    {
+      "start": 49.485,
+      "end": 51.506,
+      "text": "dalla soluzione duale ricaviamo w",
+      "words": [
+        {
+          "text": "dalla",
+          "start": 49.485,
+          "end": 49.685
+        },
+        {
+          "text": "soluzione",
+          "start": 49.745,
+          "end": 50.165
+        },
+        {
+          "text": "duale",
+          "start": 50.205,
+          "end": 50.486
+        },
+        {
+          "text": "ricaviamo",
+          "start": 50.546,
+          "end": 51.026
+        },
+        {
+          "text": "w",
+          "start": 51.466,
+          "end": 51.506
+        }
+      ]
+    },
+    {
+      "start": 52.366,
+      "end": 53.846,
+      "text": "uguale somma di gamma con i",
+      "words": [
+        {
+          "text": "uguale",
+          "start": 52.366,
+          "end": 52.686
+        },
+        {
+          "text": "somma",
+          "start": 52.806,
+          "end": 53.126
+        },
+        {
+          "text": "di",
+          "start": 53.186,
+          "end": 53.266
+        },
+        {
+          "text": "gamma",
+          "start": 53.326,
+          "end": 53.566
+        },
+        {
+          "text": "con",
+          "start": 53.626,
+          "end": 53.766
+        },
+        {
+          "text": "i",
+          "start": 53.806,
+          "end": 53.846
+        }
+      ]
+    },
+    {
+      "start": 54.446,
+      "end": 55.466,
+      "text": "Fi di x con i,",
+      "words": [
+        {
+          "text": "Fi",
+          "start": 54.446,
+          "end": 54.566
+        },
+        {
+          "text": "di",
+          "start": 54.866,
+          "end": 54.926
+        },
+        {
+          "text": "x",
+          "start": 55.086,
+          "end": 55.126
+        },
+        {
+          "text": "con",
+          "start": 55.246,
+          "end": 55.386
+        },
+        {
+          "text": "i,",
+          "start": 55.426,
+          "end": 55.466
+        }
+      ]
+    },
+    {
+      "start": 56.086,
+      "end": 60.787,
+      "text": "e quindi la predizione finale h di x uguale somma per i da uno a",
+      "words": [
+        {
+          "text": "e",
+          "start": 56.086,
+          "end": 56.126
+        },
+        {
+          "text": "quindi",
+          "start": 56.166,
+          "end": 56.406
+        },
+        {
+          "text": "la",
+          "start": 56.466,
+          "end": 56.506
+        },
+        {
+          "text": "predizione",
+          "start": 56.546,
+          "end": 56.986
+        },
+        {
+          "text": "finale",
+          "start": 57.026,
+          "end": 57.406
+        },
+        {
+          "text": "h",
+          "start": 57.866,
+          "end": 57.906
+        },
+        {
+          "text": "di",
+          "start": 58.006,
+          "end": 58.166
+        },
+        {
+          "text": "x",
+          "start": 58.246,
+          "end": 58.286
+        },
+        {
+          "text": "uguale",
+          "start": 58.646,
+          "end": 59.026
+        },
+        {
+          "text": "somma",
+          "start": 59.467,
+          "end": 59.827
+        },
+        {
+          "text": "per",
+          "start": 59.947,
+          "end": 60.107
+        },
+        {
+          "text": "i",
+          "start": 60.147,
+          "end": 60.187
+        },
+        {
+          "text": "da",
+          "start": 60.407,
+          "end": 60.467
+        },
+        {
+          "text": "uno",
+          "start": 60.567,
+          "end": 60.707
+        },
+        {
+          "text": "a",
+          "start": 60.747,
+          "end": 60.787
+        }
+      ]
+    },
+    {
+      "start": 61.007,
+      "end": 64.807,
+      "text": "l di gamma con i per k di x con i virgola x.",
+      "words": [
+        {
+          "text": "l",
+          "start": 61.007,
+          "end": 61.047
+        },
+        {
+          "text": "di",
+          "start": 61.367,
+          "end": 61.447
+        },
+        {
+          "text": "gamma",
+          "start": 61.507,
+          "end": 61.767
+        },
+        {
+          "text": "con",
+          "start": 61.827,
+          "end": 61.967
+        },
+        {
+          "text": "i",
+          "start": 62.007,
+          "end": 62.047
+        },
+        {
+          "text": "per",
+          "start": 62.547,
+          "end": 62.687
+        },
+        {
+          "text": "k",
+          "start": 62.767,
+          "end": 62.807
+        },
+        {
+          "text": "di",
+          "start": 63.187,
+          "end": 63.247
+        },
+        {
+          "text": "x",
+          "start": 63.367,
+          "end": 63.407
+        },
+        {
+          "text": "con",
+          "start": 63.507,
+          "end": 63.647
+        },
+        {
+          "text": "i",
+          "start": 63.687,
+          "end": 63.727
+        },
+        {
+          "text": "virgola",
+          "start": 64.007,
+          "end": 64.427
+        },
+        {
+          "text": "x.",
+          "start": 64.767,
+          "end": 64.807
+        }
+      ]
+    },
+    {
+      "start": 65.587,
+      "end": 69.228,
+      "text": "I support vector corrispondono esattamente ai gamma con i non nulli.",
+      "words": [
+        {
+          "text": "I",
+          "start": 65.587,
+          "end": 65.62700000000001
+        },
+        {
+          "text": "support",
+          "start": 65.707,
+          "end": 66.047
+        },
+        {
+          "text": "vector",
+          "start": 66.107,
+          "end": 66.487
+        },
+        {
+          "text": "corrispondono",
+          "start": 66.547,
+          "end": 67.047
+        },
+        {
+          "text": "esattamente",
+          "start": 67.087,
+          "end": 67.667
+        },
+        {
+          "text": "ai",
+          "start": 67.707,
+          "end": 67.787
+        },
+        {
+          "text": "gamma",
+          "start": 67.827,
+          "end": 68.067
+        },
+        {
+          "text": "con",
+          "start": 68.127,
+          "end": 68.267
+        },
+        {
+          "text": "i",
+          "start": 68.307,
+          "end": 68.34700000000001
+        },
+        {
+          "text": "non",
+          "start": 68.648,
+          "end": 68.828
+        },
+        {
+          "text": "nulli.",
+          "start": 68.888,
+          "end": 69.228
+        }
+      ]
+    },
+    {
+      "start": 70.148,
+      "end": 73.348,
+      "text": "La procedura operativa ripete la stessa ricetta della classificazione:",
+      "words": [
+        {
+          "text": "La",
+          "start": 70.148,
+          "end": 70.208
+        },
+        {
+          "text": "procedura",
+          "start": 70.228,
+          "end": 70.588
+        },
+        {
+          "text": "operativa",
+          "start": 70.628,
+          "end": 71.048
+        },
+        {
+          "text": "ripete",
+          "start": 71.088,
+          "end": 71.348
+        },
+        {
+          "text": "la",
+          "start": 71.408,
+          "end": 71.468
+        },
+        {
+          "text": "stessa",
+          "start": 71.508,
+          "end": 71.768
+        },
+        {
+          "text": "ricetta",
+          "start": 71.808,
+          "end": 72.168
+        },
+        {
+          "text": "della",
+          "start": 72.208,
+          "end": 72.368
+        },
+        {
+          "text": "classificazione:",
+          "start": 72.408,
+          "end": 73.348
+        }
+      ]
+    },
+    {
+      "start": 73.628,
+      "end": 76.828,
+      "text": "si scelgono C, epsilon e il kernel; si calcola K;",
+      "words": [
+        {
+          "text": "si",
+          "start": 73.628,
+          "end": 73.708
+        },
+        {
+          "text": "scelgono",
+          "start": 73.748,
+          "end": 74.128
+        },
+        {
+          "text": "C,",
+          "start": 74.268,
+          "end": 74.308
+        },
+        {
+          "text": "epsilon",
+          "start": 74.708,
+          "end": 75.188
+        },
+        {
+          "text": "e",
+          "start": 75.248,
+          "end": 75.28800000000001
+        },
+        {
+          "text": "il",
+          "start": 75.328,
+          "end": 75.408
+        },
+        {
+          "text": "kernel;",
+          "start": 75.468,
+          "end": 75.928
+        },
+        {
+          "text": "si",
+          "start": 76.248,
+          "end": 76.308
+        },
+        {
+          "text": "calcola",
+          "start": 76.368,
+          "end": 76.708
+        },
+        {
+          "text": "K;",
+          "start": 76.788,
+          "end": 76.828
+        }
+      ]
+    },
+    {
+      "start": 77.388,
+      "end": 80.82900000000001,
+      "text": "si risolve il duale; si ricava il bias se tenuto fuori da w.",
+      "words": [
+        {
+          "text": "si",
+          "start": 77.388,
+          "end": 77.468
+        },
+        {
+          "text": "risolve",
+          "start": 77.528,
+          "end": 77.869
+        },
+        {
+          "text": "il",
+          "start": 77.929,
+          "end": 78.009
+        },
+        {
+          "text": "duale;",
+          "start": 78.069,
+          "end": 78.529
+        },
+        {
+          "text": "si",
+          "start": 78.849,
+          "end": 78.909
+        },
+        {
+          "text": "ricava",
+          "start": 78.969,
+          "end": 79.249
+        },
+        {
+          "text": "il",
+          "start": 79.309,
+          "end": 79.389
+        },
+        {
+          "text": "bias",
+          "start": 79.469,
+          "end": 79.869
+        },
+        {
+          "text": "se",
+          "start": 79.989,
+          "end": 80.089
+        },
+        {
+          "text": "tenuto",
+          "start": 80.129,
+          "end": 80.389
+        },
+        {
+          "text": "fuori",
+          "start": 80.429,
+          "end": 80.649
+        },
+        {
+          "text": "da",
+          "start": 80.689,
+          "end": 80.749
+        },
+        {
+          "text": "w.",
+          "start": 80.789,
+          "end": 80.82900000000001
+        }
+      ]
+    },
+    {
+      "start": 82.069,
+      "end": 86.569,
+      "text": "La funzione stimata è una combinazione lineare di prodotti scalari in uno spazio delle feature",
+      "words": [
+        {
+          "text": "La",
+          "start": 82.069,
+          "end": 82.129
+        },
+        {
+          "text": "funzione",
+          "start": 82.149,
+          "end": 82.449
+        },
+        {
+          "text": "stimata",
+          "start": 82.489,
+          "end": 82.849
+        },
+        {
+          "text": "è",
+          "start": 82.869,
+          "end": 82.909
+        },
+        {
+          "text": "una",
+          "start": 82.929,
+          "end": 83.029
+        },
+        {
+          "text": "combinazione",
+          "start": 83.089,
+          "end": 83.729
+        },
+        {
+          "text": "lineare",
+          "start": 83.789,
+          "end": 84.209
+        },
+        {
+          "text": "di",
+          "start": 84.269,
+          "end": 84.329
+        },
+        {
+          "text": "prodotti",
+          "start": 84.389,
+          "end": 84.769
+        },
+        {
+          "text": "scalari",
+          "start": 84.809,
+          "end": 85.169
+        },
+        {
+          "text": "in",
+          "start": 85.209,
+          "end": 85.289
+        },
+        {
+          "text": "uno",
+          "start": 85.329,
+          "end": 85.449
+        },
+        {
+          "text": "spazio",
+          "start": 85.549,
+          "end": 85.949
+        },
+        {
+          "text": "delle",
+          "start": 85.969,
+          "end": 86.149
+        },
+        {
+          "text": "feature",
+          "start": 86.189,
+          "end": 86.569
+        }
+      ]
+    },
+    {
+      "start": 86.809,
+      "end": 88.13,
+      "text": "che non serve mai conoscere.",
+      "words": [
+        {
+          "text": "che",
+          "start": 86.809,
+          "end": 86.89
+        },
+        {
+          "text": "non",
+          "start": 86.97,
+          "end": 87.11
+        },
+        {
+          "text": "serve",
+          "start": 87.17,
+          "end": 87.43
+        },
+        {
+          "text": "mai",
+          "start": 87.47,
+          "end": 87.59
+        },
+        {
+          "text": "conoscere.",
+          "start": 87.63,
+          "end": 88.13
+        }
+      ]
+    }
+  ]
+}

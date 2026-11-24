@@ -1,0 +1,1465 @@
+{
+  "duration": 111.211,
+  "segments": [
+    {
+      "start": 1.492,
+      "end": 7.372,
+      "text": "Passiamo a due tecniche cardine che agiscono tanto sulla velocità di ottimizzazione quanto sulla regolarizzazione:",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 1.492,
+          "end": 1.812
+        },
+        {
+          "text": "a",
+          "start": 1.932,
+          "end": 1.972
+        },
+        {
+          "text": "due",
+          "start": 2.012,
+          "end": 2.152
+        },
+        {
+          "text": "tecniche",
+          "start": 2.212,
+          "end": 2.592
+        },
+        {
+          "text": "cardine",
+          "start": 2.632,
+          "end": 3.032
+        },
+        {
+          "text": "che",
+          "start": 3.092,
+          "end": 3.192
+        },
+        {
+          "text": "agiscono",
+          "start": 3.232,
+          "end": 3.692
+        },
+        {
+          "text": "tanto",
+          "start": 3.772,
+          "end": 4.032
+        },
+        {
+          "text": "sulla",
+          "start": 4.092,
+          "end": 4.272
+        },
+        {
+          "text": "velocità",
+          "start": 4.312,
+          "end": 4.692
+        },
+        {
+          "text": "di",
+          "start": 4.772,
+          "end": 4.812
+        },
+        {
+          "text": "ottimizzazione",
+          "start": 4.872,
+          "end": 5.612
+        },
+        {
+          "text": "quanto",
+          "start": 5.712,
+          "end": 6.072
+        },
+        {
+          "text": "sulla",
+          "start": 6.152,
+          "end": 6.392
+        },
+        {
+          "text": "regolarizzazione:",
+          "start": 6.472,
+          "end": 7.372
+        }
+      ]
+    },
+    {
+      "start": 7.872,
+      "end": 9.932,
+      "text": "la batch normalization e il dropout.",
+      "words": [
+        {
+          "text": "la",
+          "start": 7.872,
+          "end": 7.952
+        },
+        {
+          "text": "batch",
+          "start": 8.052,
+          "end": 8.272
+        },
+        {
+          "text": "normalization",
+          "start": 8.352,
+          "end": 9.032
+        },
+        {
+          "text": "e",
+          "start": 9.192,
+          "end": 9.232
+        },
+        {
+          "text": "il",
+          "start": 9.292,
+          "end": 9.372
+        },
+        {
+          "text": "dropout.",
+          "start": 9.412,
+          "end": 9.932
+        }
+      ]
+    },
+    {
+      "start": 10.812,
+      "end": 14.113,
+      "text": "La batch normalization normalizza, in ogni strato della rete,",
+      "words": [
+        {
+          "text": "La",
+          "start": 10.812,
+          "end": 10.892
+        },
+        {
+          "text": "batch",
+          "start": 10.972,
+          "end": 11.192
+        },
+        {
+          "text": "normalization",
+          "start": 11.312,
+          "end": 12.132
+        },
+        {
+          "text": "normalizza,",
+          "start": 12.212,
+          "end": 12.733
+        },
+        {
+          "text": "in",
+          "start": 12.893,
+          "end": 13.013
+        },
+        {
+          "text": "ogni",
+          "start": 13.053,
+          "end": 13.253
+        },
+        {
+          "text": "strato",
+          "start": 13.333,
+          "end": 13.653
+        },
+        {
+          "text": "della",
+          "start": 13.693,
+          "end": 13.853
+        },
+        {
+          "text": "rete,",
+          "start": 13.893,
+          "end": 14.113
+        }
+      ]
+    },
+    {
+      "start": 14.153,
+      "end": 18.453,
+      "text": "le attivazioni del mini-batch corrente portandole a media zero e varianza unitaria.",
+      "words": [
+        {
+          "text": "le",
+          "start": 14.153,
+          "end": 14.213
+        },
+        {
+          "text": "attivazioni",
+          "start": 14.253,
+          "end": 14.833
+        },
+        {
+          "text": "del",
+          "start": 14.873,
+          "end": 14.993
+        },
+        {
+          "text": "mini-batch",
+          "start": 15.033,
+          "end": 15.513
+        },
+        {
+          "text": "corrente",
+          "start": 15.573,
+          "end": 16.113
+        },
+        {
+          "text": "portandole",
+          "start": 16.233,
+          "end": 16.733
+        },
+        {
+          "text": "a",
+          "start": 16.773,
+          "end": 16.813
+        },
+        {
+          "text": "media",
+          "start": 16.853,
+          "end": 17.093
+        },
+        {
+          "text": "zero",
+          "start": 17.193,
+          "end": 17.393
+        },
+        {
+          "text": "e",
+          "start": 17.433,
+          "end": 17.473
+        },
+        {
+          "text": "varianza",
+          "start": 17.493,
+          "end": 17.913
+        },
+        {
+          "text": "unitaria.",
+          "start": 17.953,
+          "end": 18.453
+        }
+      ]
+    },
+    {
+      "start": 19.293,
+      "end": 23.033,
+      "text": "Le statistiche di media e varianza sono calcolate direttamente sul mini-batch,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 19.293,
+          "end": 19.373
+        },
+        {
+          "text": "statistiche",
+          "start": 19.393,
+          "end": 19.913
+        },
+        {
+          "text": "di",
+          "start": 19.933,
+          "end": 20.013
+        },
+        {
+          "text": "media",
+          "start": 20.073,
+          "end": 20.313
+        },
+        {
+          "text": "e",
+          "start": 20.313,
+          "end": 20.353
+        },
+        {
+          "text": "varianza",
+          "start": 20.373,
+          "end": 20.793
+        },
+        {
+          "text": "sono",
+          "start": 20.873,
+          "end": 21.053
+        },
+        {
+          "text": "calcolate",
+          "start": 21.093,
+          "end": 21.573
+        },
+        {
+          "text": "direttamente",
+          "start": 21.613,
+          "end": 22.213
+        },
+        {
+          "text": "sul",
+          "start": 22.273,
+          "end": 22.433
+        },
+        {
+          "text": "mini-batch,",
+          "start": 22.473,
+          "end": 23.033
+        }
+      ]
+    },
+    {
+      "start": 23.613,
+      "end": 27.854,
+      "text": "e l'intera trasformazione di normalizzazione viene inclusa nella backpropagation,",
+      "words": [
+        {
+          "text": "e",
+          "start": 23.613,
+          "end": 23.653
+        },
+        {
+          "text": "l'intera",
+          "start": 23.693,
+          "end": 24.054
+        },
+        {
+          "text": "trasformazione",
+          "start": 24.094,
+          "end": 24.814
+        },
+        {
+          "text": "di",
+          "start": 24.854,
+          "end": 24.934
+        },
+        {
+          "text": "normalizzazione",
+          "start": 24.974,
+          "end": 25.734
+        },
+        {
+          "text": "viene",
+          "start": 25.794,
+          "end": 26.034
+        },
+        {
+          "text": "inclusa",
+          "start": 26.094,
+          "end": 26.634
+        },
+        {
+          "text": "nella",
+          "start": 26.694,
+          "end": 26.894
+        },
+        {
+          "text": "backpropagation,",
+          "start": 26.954,
+          "end": 27.854
+        }
+      ]
+    },
+    {
+      "start": 28.274,
+      "end": 30.834,
+      "text": "così il gradiente attraversa anche questa operazione.",
+      "words": [
+        {
+          "text": "così",
+          "start": 28.274,
+          "end": 28.434
+        },
+        {
+          "text": "il",
+          "start": 28.474,
+          "end": 28.534
+        },
+        {
+          "text": "gradiente",
+          "start": 28.574,
+          "end": 28.974
+        },
+        {
+          "text": "attraversa",
+          "start": 29.014,
+          "end": 29.494
+        },
+        {
+          "text": "anche",
+          "start": 29.674,
+          "end": 29.914
+        },
+        {
+          "text": "questa",
+          "start": 29.954,
+          "end": 30.174
+        },
+        {
+          "text": "operazione.",
+          "start": 30.214,
+          "end": 30.834
+        }
+      ]
+    },
+    {
+      "start": 31.614,
+      "end": 34.294,
+      "text": "Normalizzare i dati di input era già una pratica standard;",
+      "words": [
+        {
+          "text": "Normalizzare",
+          "start": 31.614,
+          "end": 32.134
+        },
+        {
+          "text": "i",
+          "start": 32.154,
+          "end": 32.194
+        },
+        {
+          "text": "dati",
+          "start": 32.214,
+          "end": 32.394
+        },
+        {
+          "text": "di",
+          "start": 32.434,
+          "end": 32.494
+        },
+        {
+          "text": "input",
+          "start": 32.574,
+          "end": 32.854
+        },
+        {
+          "text": "era",
+          "start": 32.914,
+          "end": 33.014
+        },
+        {
+          "text": "già",
+          "start": 33.074,
+          "end": 33.154
+        },
+        {
+          "text": "una",
+          "start": 33.194,
+          "end": 33.314
+        },
+        {
+          "text": "pratica",
+          "start": 33.334,
+          "end": 33.654
+        },
+        {
+          "text": "standard;",
+          "start": 33.734,
+          "end": 34.294
+        }
+      ]
+    },
+    {
+      "start": 34.594,
+      "end": 40.355,
+      "text": "la batch normalization estende la stessa idea mantenendo ben normalizzati anche i dati che fluiscono",
+      "words": [
+        {
+          "text": "la",
+          "start": 34.594,
+          "end": 34.654
+        },
+        {
+          "text": "batch",
+          "start": 34.694,
+          "end": 34.894
+        },
+        {
+          "text": "normalization",
+          "start": 34.974,
+          "end": 35.715
+        },
+        {
+          "text": "estende",
+          "start": 35.895,
+          "end": 36.355
+        },
+        {
+          "text": "la",
+          "start": 36.415,
+          "end": 36.475
+        },
+        {
+          "text": "stessa",
+          "start": 36.515,
+          "end": 36.775
+        },
+        {
+          "text": "idea",
+          "start": 36.835,
+          "end": 37.095
+        },
+        {
+          "text": "mantenendo",
+          "start": 37.535,
+          "end": 38.035
+        },
+        {
+          "text": "ben",
+          "start": 38.095,
+          "end": 38.235
+        },
+        {
+          "text": "normalizzati",
+          "start": 38.295,
+          "end": 38.995
+        },
+        {
+          "text": "anche",
+          "start": 39.075,
+          "end": 39.275
+        },
+        {
+          "text": "i",
+          "start": 39.315,
+          "end": 39.355
+        },
+        {
+          "text": "dati",
+          "start": 39.375,
+          "end": 39.635
+        },
+        {
+          "text": "che",
+          "start": 39.675,
+          "end": 39.755
+        },
+        {
+          "text": "fluiscono",
+          "start": 39.835,
+          "end": 40.355
+        }
+      ]
+    },
+    {
+      "start": 40.455,
+      "end": 42.555,
+      "text": "attraverso tutti gli strati intermedi.",
+      "words": [
+        {
+          "text": "attraverso",
+          "start": 40.455,
+          "end": 41.015
+        },
+        {
+          "text": "tutti",
+          "start": 41.115,
+          "end": 41.395
+        },
+        {
+          "text": "gli",
+          "start": 41.435,
+          "end": 41.555
+        },
+        {
+          "text": "strati",
+          "start": 41.595,
+          "end": 41.915
+        },
+        {
+          "text": "intermedi.",
+          "start": 41.975,
+          "end": 42.555
+        }
+      ]
+    },
+    {
+      "start": 43.335,
+      "end": 49.336,
+      "text": "Produce così due effetti sinergici: un apprendimento sensibilmente più rapido e un utile effetto di",
+      "words": [
+        {
+          "text": "Produce",
+          "start": 43.335,
+          "end": 43.695
+        },
+        {
+          "text": "così",
+          "start": 43.755,
+          "end": 43.955
+        },
+        {
+          "text": "due",
+          "start": 44.035,
+          "end": 44.155
+        },
+        {
+          "text": "effetti",
+          "start": 44.195,
+          "end": 44.535
+        },
+        {
+          "text": "sinergici:",
+          "start": 44.595,
+          "end": 45.255
+        },
+        {
+          "text": "un",
+          "start": 45.615,
+          "end": 45.715
+        },
+        {
+          "text": "apprendimento",
+          "start": 45.735,
+          "end": 46.355
+        },
+        {
+          "text": "sensibilmente",
+          "start": 46.475,
+          "end": 47.316
+        },
+        {
+          "text": "più",
+          "start": 47.356,
+          "end": 47.456
+        },
+        {
+          "text": "rapido",
+          "start": 47.556,
+          "end": 47.956
+        },
+        {
+          "text": "e",
+          "start": 48.456,
+          "end": 48.496
+        },
+        {
+          "text": "un",
+          "start": 48.536,
+          "end": 48.616
+        },
+        {
+          "text": "utile",
+          "start": 48.656,
+          "end": 48.876
+        },
+        {
+          "text": "effetto",
+          "start": 48.896,
+          "end": 49.216
+        },
+        {
+          "text": "di",
+          "start": 49.256,
+          "end": 49.336
+        }
+      ]
+    },
+    {
+      "start": 49.396,
+      "end": 55.236,
+      "text": "regolarizzazione, dovuto al rumore stocastico introdotto dalle statistiche calcolate su ciascun mini-batch.",
+      "words": [
+        {
+          "text": "regolarizzazione,",
+          "start": 49.396,
+          "end": 50.396
+        },
+        {
+          "text": "dovuto",
+          "start": 50.576,
+          "end": 50.856
+        },
+        {
+          "text": "al",
+          "start": 50.896,
+          "end": 50.996
+        },
+        {
+          "text": "rumore",
+          "start": 51.076,
+          "end": 51.356
+        },
+        {
+          "text": "stocastico",
+          "start": 51.436,
+          "end": 52.136
+        },
+        {
+          "text": "introdotto",
+          "start": 52.196,
+          "end": 52.696
+        },
+        {
+          "text": "dalle",
+          "start": 52.756,
+          "end": 52.976
+        },
+        {
+          "text": "statistiche",
+          "start": 53.036,
+          "end": 53.536
+        },
+        {
+          "text": "calcolate",
+          "start": 53.576,
+          "end": 54.076
+        },
+        {
+          "text": "su",
+          "start": 54.136,
+          "end": 54.196
+        },
+        {
+          "text": "ciascun",
+          "start": 54.296,
+          "end": 54.656
+        },
+        {
+          "text": "mini-batch.",
+          "start": 54.696,
+          "end": 55.236
+        }
+      ]
+    },
+    {
+      "start": 57.316,
+      "end": 58.676,
+      "text": "Veniamo ora al dropout,",
+      "words": [
+        {
+          "text": "Veniamo",
+          "start": 57.316,
+          "end": 57.636
+        },
+        {
+          "text": "ora",
+          "start": 57.736,
+          "end": 57.856
+        },
+        {
+          "text": "al",
+          "start": 58.036,
+          "end": 58.116
+        },
+        {
+          "text": "dropout,",
+          "start": 58.156,
+          "end": 58.676
+        }
+      ]
+    },
+    {
+      "start": 59.257,
+      "end": 63.217,
+      "text": "che seleziona casualmente una sotto-rete diversa a ogni passo di addestramento.",
+      "words": [
+        {
+          "text": "che",
+          "start": 59.257,
+          "end": 59.337
+        },
+        {
+          "text": "seleziona",
+          "start": 59.397,
+          "end": 59.857
+        },
+        {
+          "text": "casualmente",
+          "start": 59.937,
+          "end": 60.437
+        },
+        {
+          "text": "una",
+          "start": 60.477,
+          "end": 60.577
+        },
+        {
+          "text": "sotto-rete",
+          "start": 60.657,
+          "end": 61.197
+        },
+        {
+          "text": "diversa",
+          "start": 61.237,
+          "end": 61.677
+        },
+        {
+          "text": "a",
+          "start": 61.797,
+          "end": 61.837
+        },
+        {
+          "text": "ogni",
+          "start": 61.897,
+          "end": 62.077
+        },
+        {
+          "text": "passo",
+          "start": 62.117,
+          "end": 62.377
+        },
+        {
+          "text": "di",
+          "start": 62.417,
+          "end": 62.477
+        },
+        {
+          "text": "addestramento.",
+          "start": 62.497,
+          "end": 63.217
+        }
+      ]
+    },
+    {
+      "start": 63.917,
+      "end": 67.797,
+      "text": "Il dropout si spiega in modo cristallino attraverso due concetti noti del corso:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 63.917,
+          "end": 63.997
+        },
+        {
+          "text": "dropout",
+          "start": 64.017,
+          "end": 64.417
+        },
+        {
+          "text": "si",
+          "start": 64.517,
+          "end": 64.597
+        },
+        {
+          "text": "spiega",
+          "start": 64.637,
+          "end": 64.897
+        },
+        {
+          "text": "in",
+          "start": 64.917,
+          "end": 64.95700000000001
+        },
+        {
+          "text": "modo",
+          "start": 64.997,
+          "end": 65.157
+        },
+        {
+          "text": "cristallino",
+          "start": 65.217,
+          "end": 65.737
+        },
+        {
+          "text": "attraverso",
+          "start": 65.777,
+          "end": 66.237
+        },
+        {
+          "text": "due",
+          "start": 66.277,
+          "end": 66.397
+        },
+        {
+          "text": "concetti",
+          "start": 66.437,
+          "end": 66.877
+        },
+        {
+          "text": "noti",
+          "start": 66.937,
+          "end": 67.177
+        },
+        {
+          "text": "del",
+          "start": 67.217,
+          "end": 67.337
+        },
+        {
+          "text": "corso:",
+          "start": 67.417,
+          "end": 67.797
+        }
+      ]
+    },
+    {
+      "start": 68.257,
+      "end": 70.257,
+      "text": "l'ensemble e la regolarizzazione.",
+      "words": [
+        {
+          "text": "l'ensemble",
+          "start": 68.257,
+          "end": 68.997
+        },
+        {
+          "text": "e",
+          "start": 69.237,
+          "end": 69.277
+        },
+        {
+          "text": "la",
+          "start": 69.317,
+          "end": 69.377
+        },
+        {
+          "text": "regolarizzazione.",
+          "start": 69.437,
+          "end": 70.257
+        }
+      ]
+    },
+    {
+      "start": 71.098,
+      "end": 75.538,
+      "text": "Ricordiamo che il bagging media molti modelli ad alta varianza e basso bias.",
+      "words": [
+        {
+          "text": "Ricordiamo",
+          "start": 71.098,
+          "end": 71.518
+        },
+        {
+          "text": "che",
+          "start": 71.598,
+          "end": 71.678
+        },
+        {
+          "text": "il",
+          "start": 71.738,
+          "end": 71.798
+        },
+        {
+          "text": "bagging",
+          "start": 71.858,
+          "end": 72.338
+        },
+        {
+          "text": "media",
+          "start": 72.538,
+          "end": 72.798
+        },
+        {
+          "text": "molti",
+          "start": 72.898,
+          "end": 73.218
+        },
+        {
+          "text": "modelli",
+          "start": 73.258,
+          "end": 73.618
+        },
+        {
+          "text": "ad",
+          "start": 73.658,
+          "end": 73.718
+        },
+        {
+          "text": "alta",
+          "start": 73.758,
+          "end": 73.958
+        },
+        {
+          "text": "varianza",
+          "start": 73.998,
+          "end": 74.538
+        },
+        {
+          "text": "e",
+          "start": 74.658,
+          "end": 74.69800000000001
+        },
+        {
+          "text": "basso",
+          "start": 74.758,
+          "end": 75.038
+        },
+        {
+          "text": "bias.",
+          "start": 75.098,
+          "end": 75.538
+        }
+      ]
+    },
+    {
+      "start": 75.998,
+      "end": 81.478,
+      "text": "Il dropout sfrutta esattamente questo principio realizzando un bagging implicito ed economico di un numero",
+      "words": [
+        {
+          "text": "Il",
+          "start": 75.998,
+          "end": 76.078
+        },
+        {
+          "text": "dropout",
+          "start": 76.118,
+          "end": 76.538
+        },
+        {
+          "text": "sfrutta",
+          "start": 76.638,
+          "end": 76.958
+        },
+        {
+          "text": "esattamente",
+          "start": 77.038,
+          "end": 77.618
+        },
+        {
+          "text": "questo",
+          "start": 77.658,
+          "end": 77.878
+        },
+        {
+          "text": "principio",
+          "start": 77.918,
+          "end": 78.378
+        },
+        {
+          "text": "realizzando",
+          "start": 78.438,
+          "end": 78.958
+        },
+        {
+          "text": "un",
+          "start": 79.018,
+          "end": 79.078
+        },
+        {
+          "text": "bagging",
+          "start": 79.118,
+          "end": 79.478
+        },
+        {
+          "text": "implicito",
+          "start": 79.578,
+          "end": 80.258
+        },
+        {
+          "text": "ed",
+          "start": 80.358,
+          "end": 80.438
+        },
+        {
+          "text": "economico",
+          "start": 80.478,
+          "end": 81.018
+        },
+        {
+          "text": "di",
+          "start": 81.058,
+          "end": 81.118
+        },
+        {
+          "text": "un",
+          "start": 81.138,
+          "end": 81.198
+        },
+        {
+          "text": "numero",
+          "start": 81.238,
+          "end": 81.478
+        }
+      ]
+    },
+    {
+      "start": 81.518,
+      "end": 86.059,
+      "text": "esponenziale di sotto-reti, avendo però a test time una sola rete.",
+      "words": [
+        {
+          "text": "esponenziale",
+          "start": 81.518,
+          "end": 82.239
+        },
+        {
+          "text": "di",
+          "start": 82.299,
+          "end": 82.359
+        },
+        {
+          "text": "sotto-reti,",
+          "start": 82.399,
+          "end": 82.999
+        },
+        {
+          "text": "avendo",
+          "start": 83.519,
+          "end": 83.779
+        },
+        {
+          "text": "però",
+          "start": 83.819,
+          "end": 83.939
+        },
+        {
+          "text": "a",
+          "start": 83.999,
+          "end": 84.039
+        },
+        {
+          "text": "test",
+          "start": 84.079,
+          "end": 84.279
+        },
+        {
+          "text": "time",
+          "start": 84.319,
+          "end": 84.739
+        },
+        {
+          "text": "una",
+          "start": 85.019,
+          "end": 85.219
+        },
+        {
+          "text": "sola",
+          "start": 85.419,
+          "end": 85.679
+        },
+        {
+          "text": "rete.",
+          "start": 85.799,
+          "end": 86.059
+        }
+      ]
+    },
+    {
+      "start": 86.819,
+      "end": 90.159,
+      "text": "Guardiamo il diagramma: per una rete minuscola con due input,",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 86.819,
+          "end": 87.119
+        },
+        {
+          "text": "il",
+          "start": 87.139,
+          "end": 87.179
+        },
+        {
+          "text": "diagramma:",
+          "start": 87.199,
+          "end": 87.659
+        },
+        {
+          "text": "per",
+          "start": 88.419,
+          "end": 88.519
+        },
+        {
+          "text": "una",
+          "start": 88.559,
+          "end": 88.679
+        },
+        {
+          "text": "rete",
+          "start": 88.719,
+          "end": 88.899
+        },
+        {
+          "text": "minuscola",
+          "start": 88.939,
+          "end": 89.419
+        },
+        {
+          "text": "con",
+          "start": 89.459,
+          "end": 89.599
+        },
+        {
+          "text": "due",
+          "start": 89.619,
+          "end": 89.739
+        },
+        {
+          "text": "input,",
+          "start": 89.819,
+          "end": 90.159
+        }
+      ]
+    },
+    {
+      "start": 90.359,
+      "end": 96.0,
+      "text": "due unità nascoste e un'uscita, rimuovendo tutti i possibili sottoinsiemi delle quattro unità non di",
+      "words": [
+        {
+          "text": "due",
+          "start": 90.359,
+          "end": 90.499
+        },
+        {
+          "text": "unità",
+          "start": 90.559,
+          "end": 90.819
+        },
+        {
+          "text": "nascoste",
+          "start": 90.899,
+          "end": 91.379
+        },
+        {
+          "text": "e",
+          "start": 91.419,
+          "end": 91.459
+        },
+        {
+          "text": "un'uscita,",
+          "start": 91.479,
+          "end": 92.059
+        },
+        {
+          "text": "rimuovendo",
+          "start": 92.499,
+          "end": 92.939
+        },
+        {
+          "text": "tutti",
+          "start": 93.059,
+          "end": 93.339
+        },
+        {
+          "text": "i",
+          "start": 93.379,
+          "end": 93.41900000000001
+        },
+        {
+          "text": "possibili",
+          "start": 93.419,
+          "end": 93.9
+        },
+        {
+          "text": "sottoinsiemi",
+          "start": 93.96,
+          "end": 94.64
+        },
+        {
+          "text": "delle",
+          "start": 94.7,
+          "end": 94.88
+        },
+        {
+          "text": "quattro",
+          "start": 94.94,
+          "end": 95.34
+        },
+        {
+          "text": "unità",
+          "start": 95.4,
+          "end": 95.64
+        },
+        {
+          "text": "non",
+          "start": 95.76,
+          "end": 95.9
+        },
+        {
+          "text": "di",
+          "start": 95.94,
+          "end": 96.0
+        }
+      ]
+    },
+    {
+      "start": 96.04,
+      "end": 98.66,
+      "text": "uscita si ottengono esattamente sedici sotto-reti.",
+      "words": [
+        {
+          "text": "uscita",
+          "start": 96.04,
+          "end": 96.38
+        },
+        {
+          "text": "si",
+          "start": 96.44,
+          "end": 96.5
+        },
+        {
+          "text": "ottengono",
+          "start": 96.54,
+          "end": 96.92
+        },
+        {
+          "text": "esattamente",
+          "start": 97.04,
+          "end": 97.6
+        },
+        {
+          "text": "sedici",
+          "start": 97.68,
+          "end": 98.02
+        },
+        {
+          "text": "sotto-reti.",
+          "start": 98.08,
+          "end": 98.66
+        }
+      ]
+    },
+    {
+      "start": 99.38,
+      "end": 103.68,
+      "text": "Alcune non collegano più l'input all'uscita, ma nelle reti grandi questo evento è del tutto",
+      "words": [
+        {
+          "text": "Alcune",
+          "start": 99.38,
+          "end": 99.68
+        },
+        {
+          "text": "non",
+          "start": 99.7,
+          "end": 99.8
+        },
+        {
+          "text": "collegano",
+          "start": 99.84,
+          "end": 100.24
+        },
+        {
+          "text": "più",
+          "start": 100.3,
+          "end": 100.42
+        },
+        {
+          "text": "l'input",
+          "start": 100.48,
+          "end": 100.86
+        },
+        {
+          "text": "all'uscita,",
+          "start": 100.92,
+          "end": 101.48
+        },
+        {
+          "text": "ma",
+          "start": 101.96,
+          "end": 102.02
+        },
+        {
+          "text": "nelle",
+          "start": 102.08,
+          "end": 102.26
+        },
+        {
+          "text": "reti",
+          "start": 102.3,
+          "end": 102.48
+        },
+        {
+          "text": "grandi",
+          "start": 102.52,
+          "end": 102.8
+        },
+        {
+          "text": "questo",
+          "start": 102.84,
+          "end": 103.02
+        },
+        {
+          "text": "evento",
+          "start": 103.06,
+          "end": 103.26
+        },
+        {
+          "text": "è",
+          "start": 103.28,
+          "end": 103.32000000000001
+        },
+        {
+          "text": "del",
+          "start": 103.32,
+          "end": 103.44
+        },
+        {
+          "text": "tutto",
+          "start": 103.48,
+          "end": 103.68
+        }
+      ]
+    },
+    {
+      "start": 103.7,
+      "end": 104.26,
+      "text": "improbabile.",
+      "words": [
+        {
+          "text": "improbabile.",
+          "start": 103.7,
+          "end": 104.26
+        }
+      ]
+    },
+    {
+      "start": 105.0,
+      "end": 110.961,
+      "text": "Inoltre il dropout massimizza la diversità dell'ensemble, impedendo co-adattamenti rigidi tra le unità.",
+      "words": [
+        {
+          "text": "Inoltre",
+          "start": 105.0,
+          "end": 105.4
+        },
+        {
+          "text": "il",
+          "start": 105.581,
+          "end": 105.661
+        },
+        {
+          "text": "dropout",
+          "start": 105.681,
+          "end": 106.141
+        },
+        {
+          "text": "massimizza",
+          "start": 106.221,
+          "end": 106.721
+        },
+        {
+          "text": "la",
+          "start": 106.781,
+          "end": 106.82100000000001
+        },
+        {
+          "text": "diversità",
+          "start": 106.861,
+          "end": 107.341
+        },
+        {
+          "text": "dell'ensemble,",
+          "start": 107.441,
+          "end": 108.281
+        },
+        {
+          "text": "impedendo",
+          "start": 108.621,
+          "end": 109.101
+        },
+        {
+          "text": "co-adattamenti",
+          "start": 109.221,
+          "end": 109.981
+        },
+        {
+          "text": "rigidi",
+          "start": 110.041,
+          "end": 110.361
+        },
+        {
+          "text": "tra",
+          "start": 110.421,
+          "end": 110.541
+        },
+        {
+          "text": "le",
+          "start": 110.601,
+          "end": 110.661
+        },
+        {
+          "text": "unità.",
+          "start": 110.721,
+          "end": 110.961
+        }
+      ]
+    }
+  ]
+}

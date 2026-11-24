@@ -1,0 +1,1376 @@
+{
+  "duration": 106.672,
+  "segments": [
+    {
+      "start": 0.453,
+      "end": 5.573,
+      "text": "Ripercorriamo i cinque punti chiave che chiudono questo capitolo e l'intero percorso del corso sui",
+      "words": [
+        {
+          "text": "Ripercorriamo",
+          "start": 0.453,
+          "end": 1.053
+        },
+        {
+          "text": "i",
+          "start": 1.133,
+          "end": 1.173
+        },
+        {
+          "text": "cinque",
+          "start": 1.233,
+          "end": 1.573
+        },
+        {
+          "text": "punti",
+          "start": 1.653,
+          "end": 1.933
+        },
+        {
+          "text": "chiave",
+          "start": 2.013,
+          "end": 2.393
+        },
+        {
+          "text": "che",
+          "start": 2.493,
+          "end": 2.573
+        },
+        {
+          "text": "chiudono",
+          "start": 2.633,
+          "end": 2.953
+        },
+        {
+          "text": "questo",
+          "start": 3.013,
+          "end": 3.233
+        },
+        {
+          "text": "capitolo",
+          "start": 3.273,
+          "end": 3.733
+        },
+        {
+          "text": "e",
+          "start": 3.913,
+          "end": 3.953
+        },
+        {
+          "text": "l'intero",
+          "start": 3.973,
+          "end": 4.373
+        },
+        {
+          "text": "percorso",
+          "start": 4.413,
+          "end": 4.873
+        },
+        {
+          "text": "del",
+          "start": 4.913,
+          "end": 5.033
+        },
+        {
+          "text": "corso",
+          "start": 5.093,
+          "end": 5.413
+        },
+        {
+          "text": "sui",
+          "start": 5.453,
+          "end": 5.573
+        }
+      ]
+    },
+    {
+      "start": 5.613,
+      "end": 6.473,
+      "text": "modelli avanzati.",
+      "words": [
+        {
+          "text": "modelli",
+          "start": 5.613,
+          "end": 5.873
+        },
+        {
+          "text": "avanzati.",
+          "start": 5.913,
+          "end": 6.473
+        }
+      ]
+    },
+    {
+      "start": 7.333,
+      "end": 10.914,
+      "text": "Primo: le trasduzioni su grafi si articolano a livello di nodo,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 7.333,
+          "end": 7.593
+        },
+        {
+          "text": "le",
+          "start": 8.093,
+          "end": 8.173
+        },
+        {
+          "text": "trasduzioni",
+          "start": 8.213,
+          "end": 8.793
+        },
+        {
+          "text": "su",
+          "start": 8.853,
+          "end": 8.933
+        },
+        {
+          "text": "grafi",
+          "start": 8.993,
+          "end": 9.333
+        },
+        {
+          "text": "si",
+          "start": 9.393,
+          "end": 9.453
+        },
+        {
+          "text": "articolano",
+          "start": 9.513,
+          "end": 10.074
+        },
+        {
+          "text": "a",
+          "start": 10.114,
+          "end": 10.154
+        },
+        {
+          "text": "livello",
+          "start": 10.194,
+          "end": 10.494
+        },
+        {
+          "text": "di",
+          "start": 10.534,
+          "end": 10.574
+        },
+        {
+          "text": "nodo,",
+          "start": 10.634,
+          "end": 10.914
+        }
+      ]
+    },
+    {
+      "start": 11.254,
+      "end": 14.274,
+      "text": "a livello di grafo tramite readout e a livello di arco.",
+      "words": [
+        {
+          "text": "a",
+          "start": 11.254,
+          "end": 11.294
+        },
+        {
+          "text": "livello",
+          "start": 11.354,
+          "end": 11.614
+        },
+        {
+          "text": "di",
+          "start": 11.654,
+          "end": 11.694
+        },
+        {
+          "text": "grafo",
+          "start": 11.734,
+          "end": 12.114
+        },
+        {
+          "text": "tramite",
+          "start": 12.254,
+          "end": 12.614
+        },
+        {
+          "text": "readout",
+          "start": 12.734,
+          "end": 13.194
+        },
+        {
+          "text": "e",
+          "start": 13.374,
+          "end": 13.414
+        },
+        {
+          "text": "a",
+          "start": 13.454,
+          "end": 13.494
+        },
+        {
+          "text": "livello",
+          "start": 13.534,
+          "end": 13.814
+        },
+        {
+          "text": "di",
+          "start": 13.854,
+          "end": 13.914
+        },
+        {
+          "text": "arco.",
+          "start": 13.994,
+          "end": 14.274
+        }
+      ]
+    },
+    {
+      "start": 15.114,
+      "end": 21.555,
+      "text": "Secondo: il message passing si fonda su messaggio, aggregazione invariante per permutazione e aggiornamento,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 15.114,
+          "end": 15.574
+        },
+        {
+          "text": "il",
+          "start": 16.034,
+          "end": 16.114
+        },
+        {
+          "text": "message",
+          "start": 16.154,
+          "end": 16.514
+        },
+        {
+          "text": "passing",
+          "start": 16.534,
+          "end": 16.974
+        },
+        {
+          "text": "si",
+          "start": 17.134,
+          "end": 17.214
+        },
+        {
+          "text": "fonda",
+          "start": 17.274,
+          "end": 17.514
+        },
+        {
+          "text": "su",
+          "start": 17.574,
+          "end": 17.654
+        },
+        {
+          "text": "messaggio,",
+          "start": 17.734,
+          "end": 18.294
+        },
+        {
+          "text": "aggregazione",
+          "start": 18.474,
+          "end": 19.034
+        },
+        {
+          "text": "invariante",
+          "start": 19.074,
+          "end": 19.614
+        },
+        {
+          "text": "per",
+          "start": 19.654,
+          "end": 19.774
+        },
+        {
+          "text": "permutazione",
+          "start": 19.814,
+          "end": 20.554
+        },
+        {
+          "text": "e",
+          "start": 20.734,
+          "end": 20.774
+        },
+        {
+          "text": "aggiornamento,",
+          "start": 20.814,
+          "end": 21.555
+        }
+      ]
+    },
+    {
+      "start": 21.975,
+      "end": 23.535,
+      "text": "espresso dalla formula generale",
+      "words": [
+        {
+          "text": "espresso",
+          "start": 21.975,
+          "end": 22.375
+        },
+        {
+          "text": "dalla",
+          "start": 22.435,
+          "end": 22.595
+        },
+        {
+          "text": "formula",
+          "start": 22.615,
+          "end": 22.995
+        },
+        {
+          "text": "generale",
+          "start": 23.035,
+          "end": 23.535
+        }
+      ]
+    },
+    {
+      "start": 24.095,
+      "end": 27.875,
+      "text": "h con v allo strato l uguale AGG di x con v,",
+      "words": [
+        {
+          "text": "h",
+          "start": 24.095,
+          "end": 24.135
+        },
+        {
+          "text": "con",
+          "start": 24.235,
+          "end": 24.395
+        },
+        {
+          "text": "v",
+          "start": 24.435,
+          "end": 24.475
+        },
+        {
+          "text": "allo",
+          "start": 24.715,
+          "end": 24.875
+        },
+        {
+          "text": "strato",
+          "start": 24.895,
+          "end": 25.175
+        },
+        {
+          "text": "l",
+          "start": 25.435,
+          "end": 25.475
+        },
+        {
+          "text": "uguale",
+          "start": 25.715,
+          "end": 26.095
+        },
+        {
+          "text": "AGG",
+          "start": 26.275,
+          "end": 26.655
+        },
+        {
+          "text": "di",
+          "start": 26.935,
+          "end": 27.035
+        },
+        {
+          "text": "x",
+          "start": 27.455,
+          "end": 27.495
+        },
+        {
+          "text": "con",
+          "start": 27.595,
+          "end": 27.755
+        },
+        {
+          "text": "v,",
+          "start": 27.835,
+          "end": 27.875
+        }
+      ]
+    },
+    {
+      "start": 28.515,
+      "end": 31.555,
+      "text": "h con v allo strato l meno uno e gli stati dei vicini.",
+      "words": [
+        {
+          "text": "h",
+          "start": 28.515,
+          "end": 28.555
+        },
+        {
+          "text": "con",
+          "start": 28.635,
+          "end": 28.775
+        },
+        {
+          "text": "v",
+          "start": 28.835,
+          "end": 28.875
+        },
+        {
+          "text": "allo",
+          "start": 29.095,
+          "end": 29.255
+        },
+        {
+          "text": "strato",
+          "start": 29.315,
+          "end": 29.595
+        },
+        {
+          "text": "l",
+          "start": 29.755,
+          "end": 29.795
+        },
+        {
+          "text": "meno",
+          "start": 29.875,
+          "end": 30.055
+        },
+        {
+          "text": "uno",
+          "start": 30.155,
+          "end": 30.315
+        },
+        {
+          "text": "e",
+          "start": 30.475,
+          "end": 30.515
+        },
+        {
+          "text": "gli",
+          "start": 30.535,
+          "end": 30.655
+        },
+        {
+          "text": "stati",
+          "start": 30.715,
+          "end": 30.955
+        },
+        {
+          "text": "dei",
+          "start": 30.995,
+          "end": 31.115
+        },
+        {
+          "text": "vicini.",
+          "start": 31.155,
+          "end": 31.555
+        }
+      ]
+    },
+    {
+      "start": 32.195,
+      "end": 34.686,
+      "text": "Terzo: abbiamo due famiglie principali —",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 32.195,
+          "end": 32.555
+        },
+        {
+          "text": "abbiamo",
+          "start": 33.056,
+          "end": 33.336
+        },
+        {
+          "text": "due",
+          "start": 33.416,
+          "end": 33.556
+        },
+        {
+          "text": "famiglie",
+          "start": 33.596,
+          "end": 33.916
+        },
+        {
+          "text": "principali",
+          "start": 33.936,
+          "end": 34.536
+        },
+        {
+          "text": "—",
+          "start": 34.536,
+          "end": 34.686
+        }
+      ]
+    },
+    {
+      "start": 35.496,
+      "end": 41.356,
+      "text": "l'approccio a strati con GCN e NN4G, dove ogni iterazione è un nuovo strato,",
+      "words": [
+        {
+          "text": "l'approccio",
+          "start": 35.496,
+          "end": 35.896
+        },
+        {
+          "text": "a",
+          "start": 35.936,
+          "end": 35.976
+        },
+        {
+          "text": "strati",
+          "start": 35.996,
+          "end": 36.356
+        },
+        {
+          "text": "con",
+          "start": 36.456,
+          "end": 36.636
+        },
+        {
+          "text": "GCN",
+          "start": 36.836,
+          "end": 37.416
+        },
+        {
+          "text": "e",
+          "start": 37.656,
+          "end": 37.696
+        },
+        {
+          "text": "NN4G,",
+          "start": 37.956,
+          "end": 38.756
+        },
+        {
+          "text": "dove",
+          "start": 39.256,
+          "end": 39.456
+        },
+        {
+          "text": "ogni",
+          "start": 39.656,
+          "end": 39.876
+        },
+        {
+          "text": "iterazione",
+          "start": 39.916,
+          "end": 40.496
+        },
+        {
+          "text": "è",
+          "start": 40.536,
+          "end": 40.576
+        },
+        {
+          "text": "un",
+          "start": 40.596,
+          "end": 40.656
+        },
+        {
+          "text": "nuovo",
+          "start": 40.676,
+          "end": 40.896
+        },
+        {
+          "text": "strato,",
+          "start": 40.976,
+          "end": 41.356
+        }
+      ]
+    },
+    {
+      "start": 41.776,
+      "end": 48.477,
+      "text": "e l'approccio ricorsivo con GNN e GraphESN, basato su iterazioni contrattive fino al punto fisso.",
+      "words": [
+        {
+          "text": "e",
+          "start": 41.776,
+          "end": 41.816
+        },
+        {
+          "text": "l'approccio",
+          "start": 41.856,
+          "end": 42.236
+        },
+        {
+          "text": "ricorsivo",
+          "start": 42.256,
+          "end": 42.796
+        },
+        {
+          "text": "con",
+          "start": 42.876,
+          "end": 43.036
+        },
+        {
+          "text": "GNN",
+          "start": 43.276,
+          "end": 43.916
+        },
+        {
+          "text": "e",
+          "start": 44.177,
+          "end": 44.217
+        },
+        {
+          "text": "GraphESN,",
+          "start": 44.277,
+          "end": 45.197
+        },
+        {
+          "text": "basato",
+          "start": 45.637,
+          "end": 45.957
+        },
+        {
+          "text": "su",
+          "start": 46.017,
+          "end": 46.077
+        },
+        {
+          "text": "iterazioni",
+          "start": 46.137,
+          "end": 46.657
+        },
+        {
+          "text": "contrattive",
+          "start": 46.717,
+          "end": 47.357
+        },
+        {
+          "text": "fino",
+          "start": 47.497,
+          "end": 47.677
+        },
+        {
+          "text": "al",
+          "start": 47.717,
+          "end": 47.797
+        },
+        {
+          "text": "punto",
+          "start": 47.837,
+          "end": 48.077
+        },
+        {
+          "text": "fisso.",
+          "start": 48.137,
+          "end": 48.477
+        }
+      ]
+    },
+    {
+      "start": 49.337,
+      "end": 53.717,
+      "text": "Quarto: la profondità allarga il contesto ma introduce over-smoothing,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 49.337,
+          "end": 49.717
+        },
+        {
+          "text": "la",
+          "start": 50.197,
+          "end": 50.277
+        },
+        {
+          "text": "profondità",
+          "start": 50.317,
+          "end": 50.817
+        },
+        {
+          "text": "allarga",
+          "start": 50.997,
+          "end": 51.397
+        },
+        {
+          "text": "il",
+          "start": 51.437,
+          "end": 51.497
+        },
+        {
+          "text": "contesto",
+          "start": 51.537,
+          "end": 52.097
+        },
+        {
+          "text": "ma",
+          "start": 52.217,
+          "end": 52.277
+        },
+        {
+          "text": "introduce",
+          "start": 52.357,
+          "end": 52.857
+        },
+        {
+          "text": "over-smoothing,",
+          "start": 53.017,
+          "end": 53.717
+        }
+      ]
+    },
+    {
+      "start": 54.037,
+      "end": 61.458,
+      "text": "over-squashing, under-reaching e difficoltà con l'eterofilia, analizzabili via limite Jacobiano ed energia di Dirichlet.",
+      "words": [
+        {
+          "text": "over-squashing,",
+          "start": 54.037,
+          "end": 54.817
+        },
+        {
+          "text": "under-reaching",
+          "start": 55.197,
+          "end": 55.878
+        },
+        {
+          "text": "e",
+          "start": 56.038,
+          "end": 56.078
+        },
+        {
+          "text": "difficoltà",
+          "start": 56.138,
+          "end": 56.678
+        },
+        {
+          "text": "con",
+          "start": 56.838,
+          "end": 56.938
+        },
+        {
+          "text": "l'eterofilia,",
+          "start": 56.978,
+          "end": 57.618
+        },
+        {
+          "text": "analizzabili",
+          "start": 58.018,
+          "end": 58.758
+        },
+        {
+          "text": "via",
+          "start": 58.838,
+          "end": 58.978
+        },
+        {
+          "text": "limite",
+          "start": 59.018,
+          "end": 59.398
+        },
+        {
+          "text": "Jacobiano",
+          "start": 59.518,
+          "end": 60.178
+        },
+        {
+          "text": "ed",
+          "start": 60.378,
+          "end": 60.478
+        },
+        {
+          "text": "energia",
+          "start": 60.518,
+          "end": 60.938
+        },
+        {
+          "text": "di",
+          "start": 60.998,
+          "end": 61.058
+        },
+        {
+          "text": "Dirichlet.",
+          "start": 61.098,
+          "end": 61.458
+        }
+      ]
+    },
+    {
+      "start": 62.298,
+      "end": 66.538,
+      "text": "Quinto: i kernel per strutture, marginalizzati e di convoluzione,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 62.298,
+          "end": 62.658
+        },
+        {
+          "text": "i",
+          "start": 63.078,
+          "end": 63.118
+        },
+        {
+          "text": "kernel",
+          "start": 63.158,
+          "end": 63.518
+        },
+        {
+          "text": "per",
+          "start": 63.558,
+          "end": 63.658
+        },
+        {
+          "text": "strutture,",
+          "start": 63.718,
+          "end": 64.278
+        },
+        {
+          "text": "marginalizzati",
+          "start": 64.498,
+          "end": 65.438
+        },
+        {
+          "text": "e",
+          "start": 65.618,
+          "end": 65.658
+        },
+        {
+          "text": "di",
+          "start": 65.698,
+          "end": 65.778
+        },
+        {
+          "text": "convoluzione,",
+          "start": 65.818,
+          "end": 66.538
+        }
+      ]
+    },
+    {
+      "start": 66.919,
+      "end": 73.499,
+      "text": "offrono similarità fissate a priori ma non adattive e legate alla complessità dell'isomorfismo di grafi.",
+      "words": [
+        {
+          "text": "offrono",
+          "start": 66.919,
+          "end": 67.259
+        },
+        {
+          "text": "similarità",
+          "start": 67.379,
+          "end": 67.899
+        },
+        {
+          "text": "fissate",
+          "start": 67.979,
+          "end": 68.419
+        },
+        {
+          "text": "a",
+          "start": 68.539,
+          "end": 68.57900000000001
+        },
+        {
+          "text": "priori",
+          "start": 68.639,
+          "end": 69.099
+        },
+        {
+          "text": "ma",
+          "start": 69.339,
+          "end": 69.419
+        },
+        {
+          "text": "non",
+          "start": 69.539,
+          "end": 69.719
+        },
+        {
+          "text": "adattive",
+          "start": 69.759,
+          "end": 70.299
+        },
+        {
+          "text": "e",
+          "start": 70.679,
+          "end": 70.71900000000001
+        },
+        {
+          "text": "legate",
+          "start": 70.779,
+          "end": 71.079
+        },
+        {
+          "text": "alla",
+          "start": 71.099,
+          "end": 71.239
+        },
+        {
+          "text": "complessità",
+          "start": 71.299,
+          "end": 71.839
+        },
+        {
+          "text": "dell'isomorfismo",
+          "start": 72.059,
+          "end": 72.979
+        },
+        {
+          "text": "di",
+          "start": 73.039,
+          "end": 73.099
+        },
+        {
+          "text": "grafi.",
+          "start": 73.139,
+          "end": 73.499
+        }
+      ]
+    },
+    {
+      "start": 74.419,
+      "end": 77.379,
+      "text": "Per verificare la tua padronanza, rispondi a queste sei domande:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 74.419,
+          "end": 74.539
+        },
+        {
+          "text": "verificare",
+          "start": 74.579,
+          "end": 75.079
+        },
+        {
+          "text": "la",
+          "start": 75.139,
+          "end": 75.179
+        },
+        {
+          "text": "tua",
+          "start": 75.219,
+          "end": 75.319
+        },
+        {
+          "text": "padronanza,",
+          "start": 75.359,
+          "end": 75.939
+        },
+        {
+          "text": "rispondi",
+          "start": 76.099,
+          "end": 76.459
+        },
+        {
+          "text": "a",
+          "start": 76.499,
+          "end": 76.539
+        },
+        {
+          "text": "queste",
+          "start": 76.559,
+          "end": 76.759
+        },
+        {
+          "text": "sei",
+          "start": 76.819,
+          "end": 76.939
+        },
+        {
+          "text": "domande:",
+          "start": 76.959,
+          "end": 77.379
+        }
+      ]
+    },
+    {
+      "start": 78.059,
+      "end": 82.32,
+      "text": "perché trattare i dati strutturati direttamente invece di trasformarli in vettori;",
+      "words": [
+        {
+          "text": "perché",
+          "start": 78.059,
+          "end": 78.32
+        },
+        {
+          "text": "trattare",
+          "start": 78.4,
+          "end": 78.76
+        },
+        {
+          "text": "i",
+          "start": 78.82,
+          "end": 78.86
+        },
+        {
+          "text": "dati",
+          "start": 78.86,
+          "end": 79.08
+        },
+        {
+          "text": "strutturati",
+          "start": 79.14,
+          "end": 79.72
+        },
+        {
+          "text": "direttamente",
+          "start": 79.78,
+          "end": 80.48
+        },
+        {
+          "text": "invece",
+          "start": 80.68,
+          "end": 80.98
+        },
+        {
+          "text": "di",
+          "start": 81.02,
+          "end": 81.08
+        },
+        {
+          "text": "trasformarli",
+          "start": 81.12,
+          "end": 81.74
+        },
+        {
+          "text": "in",
+          "start": 81.76,
+          "end": 81.82
+        },
+        {
+          "text": "vettori;",
+          "start": 81.86,
+          "end": 82.32
+        }
+      ]
+    },
+    {
+      "start": 83.0,
+      "end": 85.5,
+      "text": "quali trasduzioni si possono definire sui grafi;",
+      "words": [
+        {
+          "text": "quali",
+          "start": 83.0,
+          "end": 83.22
+        },
+        {
+          "text": "trasduzioni",
+          "start": 83.24,
+          "end": 83.94
+        },
+        {
+          "text": "si",
+          "start": 84.0,
+          "end": 84.08
+        },
+        {
+          "text": "possono",
+          "start": 84.12,
+          "end": 84.46
+        },
+        {
+          "text": "definire",
+          "start": 84.52,
+          "end": 84.92
+        },
+        {
+          "text": "sui",
+          "start": 84.96,
+          "end": 85.12
+        },
+        {
+          "text": "grafi;",
+          "start": 85.14,
+          "end": 85.5
+        }
+      ]
+    },
+    {
+      "start": 86.06,
+      "end": 89.801,
+      "text": "come funzionano il message passing e la formula generale delle DGN;",
+      "words": [
+        {
+          "text": "come",
+          "start": 86.06,
+          "end": 86.22
+        },
+        {
+          "text": "funzionano",
+          "start": 86.28,
+          "end": 86.82
+        },
+        {
+          "text": "il",
+          "start": 86.86,
+          "end": 86.92
+        },
+        {
+          "text": "message",
+          "start": 86.94,
+          "end": 87.32
+        },
+        {
+          "text": "passing",
+          "start": 87.36,
+          "end": 87.8
+        },
+        {
+          "text": "e",
+          "start": 87.96,
+          "end": 88.0
+        },
+        {
+          "text": "la",
+          "start": 88.04,
+          "end": 88.1
+        },
+        {
+          "text": "formula",
+          "start": 88.16,
+          "end": 88.5
+        },
+        {
+          "text": "generale",
+          "start": 88.56,
+          "end": 88.98
+        },
+        {
+          "text": "delle",
+          "start": 89.02,
+          "end": 89.22
+        },
+        {
+          "text": "DGN;",
+          "start": 89.3,
+          "end": 89.801
+        }
+      ]
+    },
+    {
+      "start": 90.581,
+      "end": 96.361,
+      "text": "qual è la differenza tra approcci a strati come GCN e NN4G e approcci ricorsivi",
+      "words": [
+        {
+          "text": "qual",
+          "start": 90.581,
+          "end": 90.721
+        },
+        {
+          "text": "è",
+          "start": 90.741,
+          "end": 90.781
+        },
+        {
+          "text": "la",
+          "start": 90.821,
+          "end": 90.881
+        },
+        {
+          "text": "differenza",
+          "start": 90.901,
+          "end": 91.481
+        },
+        {
+          "text": "tra",
+          "start": 91.541,
+          "end": 91.641
+        },
+        {
+          "text": "approcci",
+          "start": 91.681,
+          "end": 92.021
+        },
+        {
+          "text": "a",
+          "start": 92.081,
+          "end": 92.12100000000001
+        },
+        {
+          "text": "strati",
+          "start": 92.141,
+          "end": 92.541
+        },
+        {
+          "text": "come",
+          "start": 92.621,
+          "end": 92.781
+        },
+        {
+          "text": "GCN",
+          "start": 92.881,
+          "end": 93.481
+        },
+        {
+          "text": "e",
+          "start": 93.721,
+          "end": 93.76100000000001
+        },
+        {
+          "text": "NN4G",
+          "start": 94.061,
+          "end": 94.801
+        },
+        {
+          "text": "e",
+          "start": 95.261,
+          "end": 95.301
+        },
+        {
+          "text": "approcci",
+          "start": 95.321,
+          "end": 95.621
+        },
+        {
+          "text": "ricorsivi",
+          "start": 95.681,
+          "end": 96.361
+        }
+      ]
+    },
+    {
+      "start": 96.441,
+      "end": 98.501,
+      "text": "come GNN e GraphESN;",
+      "words": [
+        {
+          "text": "come",
+          "start": 96.441,
+          "end": 96.621
+        },
+        {
+          "text": "GNN",
+          "start": 96.721,
+          "end": 97.301
+        },
+        {
+          "text": "e",
+          "start": 97.501,
+          "end": 97.54100000000001
+        },
+        {
+          "text": "GraphESN;",
+          "start": 97.601,
+          "end": 98.501
+        }
+      ]
+    },
+    {
+      "start": 99.161,
+      "end": 102.602,
+      "text": "che cosa sono over-smoothing, over-squashing ed eterofilia;",
+      "words": [
+        {
+          "text": "che",
+          "start": 99.161,
+          "end": 99.241
+        },
+        {
+          "text": "cosa",
+          "start": 99.321,
+          "end": 99.521
+        },
+        {
+          "text": "sono",
+          "start": 99.601,
+          "end": 99.861
+        },
+        {
+          "text": "over-smoothing,",
+          "start": 100.021,
+          "end": 100.781
+        },
+        {
+          "text": "over-squashing",
+          "start": 100.941,
+          "end": 101.742
+        },
+        {
+          "text": "ed",
+          "start": 101.862,
+          "end": 101.962
+        },
+        {
+          "text": "eterofilia;",
+          "start": 102.002,
+          "end": 102.602
+        }
+      ]
+    },
+    {
+      "start": 103.262,
+      "end": 106.422,
+      "text": "e infine quali sono i pro e i contro dei kernel per strutture.",
+      "words": [
+        {
+          "text": "e",
+          "start": 103.262,
+          "end": 103.302
+        },
+        {
+          "text": "infine",
+          "start": 103.362,
+          "end": 103.682
+        },
+        {
+          "text": "quali",
+          "start": 103.822,
+          "end": 104.002
+        },
+        {
+          "text": "sono",
+          "start": 104.042,
+          "end": 104.222
+        },
+        {
+          "text": "i",
+          "start": 104.262,
+          "end": 104.302
+        },
+        {
+          "text": "pro",
+          "start": 104.322,
+          "end": 104.462
+        },
+        {
+          "text": "e",
+          "start": 104.542,
+          "end": 104.58200000000001
+        },
+        {
+          "text": "i",
+          "start": 104.582,
+          "end": 104.622
+        },
+        {
+          "text": "contro",
+          "start": 104.662,
+          "end": 105.022
+        },
+        {
+          "text": "dei",
+          "start": 105.162,
+          "end": 105.302
+        },
+        {
+          "text": "kernel",
+          "start": 105.362,
+          "end": 105.722
+        },
+        {
+          "text": "per",
+          "start": 105.762,
+          "end": 105.862
+        },
+        {
+          "text": "strutture.",
+          "start": 105.922,
+          "end": 106.422
+        }
+      ]
+    }
+  ]
+}
