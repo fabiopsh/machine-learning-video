@@ -948,8 +948,19 @@ function setupControls() {
     });
   }
 
+  const syncMobileViewportHeight = () => {
+    if (isDrawerViewport()) {
+      const vh = (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+      document.documentElement.style.setProperty("--app-h", `${Math.round(vh)}px`);
+    } else {
+      document.documentElement.style.removeProperty("--app-h");
+    }
+  };
+  syncMobileViewportHeight();
+
   let resizeRaf = null;
   const scheduleFit = () => {
+    syncMobileViewportHeight();
     if (resizeRaf) cancelAnimationFrame(resizeRaf);
     resizeRaf = requestAnimationFrame(() => {
       resizeRaf = null;
@@ -957,6 +968,9 @@ function setupControls() {
     });
   };
   window.addEventListener("resize", scheduleFit);
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", scheduleFit);
+  }
   if (typeof ResizeObserver !== "undefined") {
     let lastW = 0;
     let lastH = 0;

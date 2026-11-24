@@ -2015,8 +2015,19 @@ body.clean-mode .slide-frame {
 
 /* ---------- TABLET MODE (<= 1024px) — ZERO DESKTOP IMPACT ---------- */
 @media (max-width: 1024px) {
-  .player-body {
+  html:has(body.player-body),
+  body.player-body {
+    height: 100vh;
     height: 100dvh;
+    height: var(--app-h, 100dvh);
+    max-height: var(--app-h, 100dvh);
+  }
+
+  body.player-body {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    overflow: hidden;
   }
 
   .topbar {
@@ -2027,6 +2038,16 @@ body.clean-mode .slide-frame {
 
   .player-workspace {
     position: relative;
+    flex: 1 1 0%;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .stage-column {
+    flex: 1 1 0%;
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
   }
 
   /* Overlay slide-over sidebar drawer (never pushes or shrinks the slide) */
@@ -2053,10 +2074,15 @@ body.clean-mode .slide-frame {
   }
 
   .stage-viewport {
+    flex: 1 1 0%;
+    min-height: 0;
     padding: 10px 14px 6px;
   }
 
   .slide-frame {
+    min-height: 0;
+    height: 100%;
+    max-height: 100%;
     padding: 16px 22px;
   }
 
@@ -2136,7 +2162,7 @@ body.clean-mode .slide-frame {
   }
 
   .topbar-actions {
-    gap: 5px;
+    gap: 4px;
     flex-shrink: 0;
   }
 
@@ -2155,18 +2181,23 @@ body.clean-mode .slide-frame {
   }
 
   .player-theme-compact .theme-pill.active {
+    width: 28px;
+    height: 28px;
+  }
+
+  .topbar-icon-group {
+    padding: 2px;
+    gap: 1px;
+  }
+
+  .tb-icon-btn {
     width: 30px;
     height: 30px;
   }
 
-  .tb-icon-btn {
-    width: 34px;
-    height: 34px;
-  }
-
   .tb-icon-btn svg {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
   }
 
   /* Phone Slide Stage: readable 1.0x single-column with smooth vertical touch scroll */
@@ -2254,24 +2285,27 @@ body.clean-mode .slide-frame {
     display: none;
   }
 
-  /* 2-row Spotify Mobile Player Bar (scrubber top, badge + transport + speed bottom) */
+  /* 2-row Spotify Mobile Player Bar — ZERO display:contents (100% iOS Safari safe!) */
   .control-bar.spotify-bar {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-      "prog prog prog"
-      "left trans right";
-    align-items: center;
-    gap: 6px 8px;
-    padding: 7px 12px calc(9px + env(safe-area-inset-bottom, 0px));
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px 12px calc(10px + env(safe-area-inset-bottom, 0px));
   }
 
   .spotify-center {
-    display: contents;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 6px;
   }
 
   .spotify-progress {
-    grid-area: prog;
+    width: 100%;
     gap: 8px;
   }
 
@@ -2284,9 +2318,19 @@ body.clean-mode .slide-frame {
     transform: translate(-50%, -50%) scale(1);
   }
 
+  .spotify-transport {
+    width: 100%;
+    justify-content: center;
+    padding: 0 74px;
+    gap: 8px;
+  }
+
   .spotify-left {
     display: flex !important;
-    grid-area: left;
+    position: absolute;
+    left: 12px;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    z-index: 2;
   }
 
   .spotify-scene-title,
@@ -2294,14 +2338,9 @@ body.clean-mode .slide-frame {
     display: none;
   }
 
-  .spotify-transport {
-    grid-area: trans;
-    gap: 10px;
-  }
-
   .sp-btn {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
   }
 
   .sp-btn-play {
@@ -2310,7 +2349,10 @@ body.clean-mode .slide-frame {
   }
 
   .spotify-right {
-    grid-area: right;
+    position: absolute;
+    right: 12px;
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    z-index: 2;
   }
 
   .speed-pill {
