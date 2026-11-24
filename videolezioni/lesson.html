@@ -16,9 +16,9 @@
 <body class="player-body">
   <header class="topbar">
     <div class="topbar-left">
-      <a class="back-link" href="index.html">
-        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-        <span>Capitoli</span>
+      <a class="back-link" href="index.html" title="Torna al catalogo dei capitoli" aria-label="Torna ai capitoli">
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        <span class="back-link-label">Capitoli</span>
       </a>
       <div class="lesson-heading">
         <span id="lesson-chap-tag" class="lesson-chap-tag">Cap. --</span>
@@ -26,14 +26,30 @@
       </div>
     </div>
     <div class="topbar-actions">
-      <div id="player-theme-switcher"></div>
-      <button id="toggle-theater" class="icon-toggle" title="Schermo intero interno — slide ampia (T)">Teatro</button>
-      <button id="toggle-sidebar" class="icon-toggle active" title="Mostra/nascondi indice scene (S)">Indice</button>
-      <button id="toggle-subtitles" class="icon-toggle active" title="Sottotitoli sincronizzati (C)">CC</button>
-      <button id="toggle-reveal-all" class="icon-toggle" title="Mostra tutta la slide per studio statico (A)">Mostra tutto</button>
-      <button id="toggle-auto-advance" class="icon-toggle active" title="Passa automaticamente alla scena successiva">Auto-avanza</button>
-      <button id="toggle-clean" class="icon-toggle" title="Modalità pulita — muovi il mouse per i controlli, Esc per uscire">Pulita</button>
-      <button id="btn-share" class="icon-toggle" type="button" title="Copia il link diretto a questa lezione">Condividi</button>
+      <div id="player-theme-switcher" class="player-theme-compact"></div>
+      <div class="topbar-icon-group" role="toolbar" aria-label="Strumenti lezione">
+        <button id="toggle-sidebar" class="tb-icon-btn active" type="button" title="Indice scene (S)" aria-label="Mostra o nascondi indice scene" data-tip="Indice (S)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><line x1="9" y1="4" x2="9" y2="20"/></svg>
+        </button>
+        <button id="toggle-subtitles" class="tb-icon-btn active" type="button" title="Sottotitoli sincronizzati (C)" aria-label="Attiva o disattiva sottotitoli" data-tip="Sottotitoli (C)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="M9.8 10.2a2.2 2.2 0 1 0 0 3.6"/><path d="M16.2 10.2a2.2 2.2 0 1 0 0 3.6"/></svg>
+        </button>
+        <button id="toggle-reveal-all" class="tb-icon-btn" type="button" title="Mostra tutta la slide (A)" aria-label="Mostra tutta la slide" data-tip="Mostra tutto (A)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></svg>
+        </button>
+        <button id="toggle-auto-advance" class="tb-icon-btn active" type="button" title="Auto-avanza alla scena successiva" aria-label="Auto-avanza scena" data-tip="Auto-avanza">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 6 13 12 5 18 5 6"/><line x1="16.5" y1="6" x2="16.5" y2="18"/><polyline points="19.5 9 22 12 19.5 15"/></svg>
+        </button>
+        <button id="toggle-theater" class="tb-icon-btn tb-desktop-only" type="button" title="Modalità teatro (T)" aria-label="Modalità teatro" data-tip="Teatro (T)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M6.5 9.5h11v5h-11z" opacity="0.45"/></svg>
+        </button>
+        <button id="toggle-clean" class="tb-icon-btn tb-desktop-only" type="button" title="Modalità pulita (Esc per uscire)" aria-label="Modalità pulita" data-tip="Pulita">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+        </button>
+        <button id="btn-share" class="tb-icon-btn" type="button" title="Copia link diretto" aria-label="Condividi lezione" data-tip="Condividi">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l2.5-2.5a5 5 0 0 0-7.07-7.07l-1.42 1.42"/><path d="M14 11a5 5 0 0 0-7.54-.54l-2.5 2.5a5 5 0 0 0 7.07 7.07l1.42-1.42"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 

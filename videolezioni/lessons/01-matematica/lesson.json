@@ -1,0 +1,399 @@
+{
+  "lesson_id": "01-matematica",
+  "chapter": 1,
+  "part": "parte-1",
+  "title": "Strumenti matematici",
+  "source_tex": "note_migliorate/capitoli/01-matematica.tex",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa"
+  },
+  "scenes": [
+    {
+      "section": "1.1 Vettori e prodotto scalare",
+      "title": "Prodotto scalare, allineamento ed esempio guidato",
+      "tts_text": "Questo capitolo raccoglie gli strumenti usati in tutto il corso: prodotto scalare e norme, derivate parziali e gradiente, regole di derivazione per funzioni composte e richiami di probabilità. [pause:0.7] Notazione: x è uno scalare, x in grassetto un vettore colonna, X una matrice. [pause:0.5] Dati due vettori a e b in R alla n, il prodotto scalare, detto inner o dot product, è la somma per i da uno a n di a con i per b con i, pari al prodotto delle norme per il coseno dell'angolo teta tra i due vettori. Notazioni equivalenti: a punto b, a trasposto b con T maiuscola o minuscola, parentesi angolari a virgola b, o solo a b quando chiaro. [pause:0.7] La forma con il coseno dà la lettura geometrica: misura quanto due vettori puntano nella stessa direzione. È massimo se paralleli e concordi, nullo se ortogonali, negativo se opposti. Nei modelli lineari, w trasposto x misura l'allineamento tra input x e pesi w. [pause:0.7] Vediamo un esempio numerico guidato con w uguale a due virgola uno. [pause:0.5] Con x con uno uguale a tre virgola uno: due per tre più uno per uno fa più sette, positivo, vettori concordi. [pause:0.5] Con x con due uguale a meno uno virgola due: meno due più due fa zero, perfettamente ortogonali a novanta gradi. [pause:0.5] Con x con tre uguale a meno due virgola meno uno: meno quattro meno uno fa meno cinque, negativo, versi opposti.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.1 · Vettori, prodotto scalare e norme</div>\n  <h2 class=\"slide-title\">Prodotto scalare e lettura geometrica</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Prodotto scalare (inner / dot product) · \\(x\\) scalare, \\(\\x\\) vettore colonna, \\(X\\) matrice</div>\n    \\[\\htmlId{f-dot}{\\vv{a}\\cdot\\vv{b} = a_1 b_1 + \\dots + a_n b_n = \\sum_{i=1}^{n} a_i b_i = \\norm{\\vv{a}}\\,\\norm{\\vv{b}}\\cos\\theta}\\]\n    <p class=\"math-note\">Notazioni equivalenti: \\(\\vv{a}\\cdot\\vv{b} = \\vv{a}\\T\\vv{b} = \\vv{a}^t\\vv{b} = \\langle\\vv{a},\\vv{b}\\rangle\\) (o \\(\\vv{a}\\vv{b}\\)). Nei modelli lineari, \\(\\w\\T\\x\\) misura l'<strong>allineamento</strong> tra \\(\\x\\) e \\(\\w\\).</p>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div class=\"formula-col\">\n      <div class=\"box box-primary\">\n        <div class=\"box-label\">Esempio numerico guidato · \\(\\w = (2,\\,1)\\)</div>\n        <ul class=\"clean-list\" style=\"font-size:0.86rem;\">\n          <li id=\"ex-1\">\\(\\x_1=(3,1)\\): \\(\\w\\T\\x_1 = 2\\cdot 3 + 1\\cdot 1 = \\mathbf{+7} > 0\\) (concordi)</li>\n          <li id=\"ex-2\">\\(\\x_2=(-1,2)\\): \\(\\w\\T\\x_2 = 2(-1) + 1\\cdot 2 = \\mathbf{0}\\) (ortogonali, \\(90^\\circ\\))</li>\n          <li id=\"ex-3\">\\(\\x_3=(-2,-1)\\): \\(\\w\\T\\x_3 = 2(-2) + 1(-1) = \\mathbf{-5} < 0\\) (opposti)</li>\n        </ul>\n      </div>\n    </div>\n    <div class=\"svg-panel\">\n      <svg class=\"diagram-svg\" viewBox=\"0 0 340 242\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Esempio geometrico di prodotto scalare in due dimensioni\"><defs><marker id=\"ab-b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#1F5A9E\"/></marker><marker id=\"ab-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#2E7D32\"/></marker><marker id=\"ab-o\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#D97706\"/></marker><marker id=\"ab-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#C0392B\"/></marker><marker id=\"ab-ax\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#6E6E6E\"/></marker></defs><line x1=\"40.0\" y1=\"22\" x2=\"40.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"86.0\" y1=\"22\" x2=\"86.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"132.0\" y1=\"22\" x2=\"132.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"178.0\" y1=\"22\" x2=\"178.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"224.0\" y1=\"22\" x2=\"224.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"270.0\" y1=\"22\" x2=\"270.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"192.0\" x2=\"322\" y2=\"192.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"146.0\" x2=\"322\" y2=\"146.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"100.0\" x2=\"322\" y2=\"100.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"54.0\" x2=\"322\" y2=\"54.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"146.0\" x2=\"324\" y2=\"146.0\" class=\"svg-axis\" marker-end=\"url(#ab-ax)\"/><line x1=\"132.0\" y1=\"228\" x2=\"132.0\" y2=\"18\" class=\"svg-axis\" marker-end=\"url(#ab-ax)\"/><text x=\"327\" y=\"150.0\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text><text x=\"138.0\" y=\"19\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text><path d=\"M 143.5,140.2 L 137.8,128.7 L 126.2,134.5\" fill=\"none\" stroke=\"#D97706\" stroke-width=\"1.3\"/><g id=\"vg-x1\"><line x1=\"132.0\" y1=\"146.0\" x2=\"270.0\" y2=\"100.0\" stroke=\"#2E7D32\" stroke-width=\"2.4\" marker-end=\"url(#ab-g)\"/><text x=\"332\" y=\"90.0\" text-anchor=\"end\" class=\"svg-green\" font-size=\"11.5\" font-weight=\"700\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>=(3,1) · +7</text></g><g id=\"vg-w\"><line x1=\"132.0\" y1=\"146.0\" x2=\"224.0\" y2=\"100.0\" stroke=\"#1F5A9E\" stroke-width=\"3.0\" marker-end=\"url(#ab-b)\"/><text x=\"192.0\" y=\"122.0\" class=\"svg-blue\" font-size=\"12\" font-weight=\"700\">w=(2,1)</text></g><g id=\"vg-x2\"><line x1=\"132.0\" y1=\"146.0\" x2=\"86.0\" y2=\"54.0\" stroke=\"#D97706\" stroke-width=\"2.4\" marker-end=\"url(#ab-o)\"/><text x=\"12\" y=\"44.0\" fill=\"#D97706\" font-size=\"11.5\" font-weight=\"700\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>=(-1,2) · 0</text></g><g id=\"vg-x3\"><line x1=\"132.0\" y1=\"146.0\" x2=\"40.0\" y2=\"192.0\" stroke=\"#C0392B\" stroke-width=\"2.4\" marker-end=\"url(#ab-r)\"/><text x=\"12\" y=\"210.0\" class=\"svg-red\" font-size=\"11.5\" font-weight=\"700\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan>=(-2,-1) · -5</text></g><circle cx=\"132.0\" cy=\"146.0\" r=\"2.8\" fill=\"#1A1A1A\"/></svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 19.78,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Dati due vettori a e b"
+        },
+        {
+          "at": 33.12,
+          "action": "highlight",
+          "target": "#f-dot",
+          "anchor": "coseno dell'angolo teta"
+        },
+        {
+          "at": 68.45,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "esempio numerico guidato"
+        },
+        {
+          "at": 72.73,
+          "action": "highlight",
+          "target": "#ex-1, #vg-x1",
+          "anchor": "Con x con uno uguale a tre virgola uno"
+        },
+        {
+          "at": 81.21,
+          "action": "highlight",
+          "target": "#ex-2, #vg-x2",
+          "anchor": "Con x con due uguale a meno uno virgola due"
+        },
+        {
+          "at": 88.91,
+          "action": "highlight",
+          "target": "#ex-3, #vg-x3",
+          "anchor": "con x con tre uguale a meno due virgola meno uno"
+        }
+      ],
+      "duration_sec": 96.77,
+      "id": "scene-01",
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json"
+    },
+    {
+      "section": "1.1 Norme, Cauchy-Schwarz e tensori",
+      "title": "Norme vettoriali, Cauchy-Schwarz e tensori",
+      "tts_text": "Dal prodotto scalare nasce la lunghezza di un vettore. [pause:0.5] La norma euclidea di x, o L due, è la radice di x trasposto x, cioè radice della somma dei quadrati, pari alla distanza dall'origine; spesso scritta norma di x o modulo di x. Altre norme utili sono la norma L uno, somma dei valori assoluti, e la norma del massimo L infinito, il massimo valore assoluto delle componenti. [pause:0.6] Calcoliamole su un esempio: per x uguale tre virgola meno quattro, la norma L due è radice di nove più sedici uguale cinque; la norma L uno è tre più quattro uguale sette; la norma L infinito è quattro. [pause:0.7] Più in generale, un prodotto interno su uno spazio vettoriale V è una forma bilineare simmetrica con simmetria, additività e omogeneità rispetto a k. [pause:0.6] Vale il Teorema di Cauchy-Schwarz: il valore assoluto del prodotto interno tra x e y è minore o uguale al prodotto delle norme, ovvero al quadrato norma di x quadro per norma di y quadro è maggiore o uguale del prodotto interno al quadrato, usato nella convergenza del Perceptron. Verifica sui nostri numeri: tra w uguale due virgola uno e x uguale tre virgola meno quattro, il prodotto scalare è due, mentre il prodotto delle norme è cinque radice di cinque, circa undici virgola diciotto. [pause:0.7] Utile spesso è lo sviluppo del quadrato della norma: norma di a più b al quadrato uguale norma di a quadro più due a trasposto b più norma di b quadro. [pause:0.6] Infine, il tensore: nel ML è un array multidimensionale su griglia regolare, con zero assi per scalare, uno per vettore, due per matrice, tre indici per X con i virgola j virgola k; comodità di notazione per GPU, mentre in matematica ha proprietà legate ai cambi di base.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.1 · Norme, prodotto interno e tensori</div>\n  <h2 class=\"slide-title\">Norme \\(L^2, L^1, L^\\infty\\), Cauchy-Schwarz e tensori</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Definizione — Norme</div>\n      <p>\\(\\norm{\\x}_2 = \\sqrt{\\x\\T\\x} = \\sqrt{\\sum_i x_i^2} = d(\\x,\\vv{0})\\) &nbsp;(o \\(\\norm{\\x},\\,\\abs{\\x}\\))</p>\n      <p style=\"margin-top:4px;\">\\(\\norm{\\x}_1 = \\sum_i \\abs{x_i}, \\qquad \\norm{\\x}_\\infty = \\max_i \\abs{x_i}\\)</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Esempio guidato · \\(\\x = (3,\\,-4)\\)</div>\n      <p>\\(\\norm{\\x}_2 = \\sqrt{3^2+(-4)^2} = \\sqrt{25} = \\mathbf{5}\\)</p>\n      <p style=\"margin-top:4px;\">\\(\\norm{\\x}_1 = \\abs{3}+\\abs{-4} = \\mathbf{7}, \\qquad \\norm{\\x}_\\infty = \\max(3,4) = \\mathbf{4}\\)</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Prodotto interno e Teorema di Cauchy-Schwarz</div>\n    <p style=\"font-size:0.86rem;\">Bilineare simmetrico su \\(V\\): \\(\\langle v,w\\rangle = \\langle w,v\\rangle,\\;\\; \\langle v+w,u\\rangle = \\langle v,u\\rangle+\\langle w,u\\rangle,\\;\\; \\langle kv,w\\rangle = k\\langle v,w\\rangle\\).</p>\n    \\[\\htmlId{f-cs}{\\abs{\\langle x,y\\rangle} \\le \\norm{x}\\cdot\\norm{y}} \\quad\\Longleftrightarrow\\quad \\norm{x}^2\\norm{y}^2 \\ge \\langle x,y\\rangle^2\\]\n    <p class=\"math-note\">Verifica con \\(\\w=(2,1)\\) e \\(\\x=(3,-4)\\): \\(\\abs{\\langle\\w,\\x\\rangle} = \\abs{6-4} = \\mathbf{2} \\le \\sqrt{5}\\cdot 5 \\approx \\mathbf{11{,}18}\\) (usata nella convergenza del Perceptron).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s4\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Sviluppo del quadrato di una norma</div>\n      \\[\\norm{\\vv{a}+\\vv{b}}^2 = (\\vv{a}+\\vv{b})\\T(\\vv{a}+\\vv{b}) = \\norm{\\vv{a}}^2 + 2\\vv{a}\\T\\vv{b} + \\norm{\\vv{b}}^2\\]\n    </div>\n    <div id=\"s5\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Definizione — Tensore</div>\n      <p style=\"font-size:0.85rem;\">Array multidimensionale su griglia regolare: <strong>0</strong> assi (scalare), <strong>1</strong> (vettore), <strong>2</strong> (matrice), <strong>3</strong> (\\(X_{i,j,k}\\)). Comodità ML per calcolo su <strong>GPU</strong> (in matematica: proprietà legate ai cambi di base).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.78,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "La norma euclidea di x"
+        },
+        {
+          "at": 27.08,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Calcoliamole su un esempio"
+        },
+        {
+          "at": 43.74,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "un prodotto interno su uno spazio vettoriale"
+        },
+        {
+          "at": 52.78,
+          "action": "highlight",
+          "target": "#f-cs",
+          "anchor": "Teorema di Cauchy-Schwarz"
+        },
+        {
+          "at": 84.03,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "sviluppo del quadrato della norma"
+        },
+        {
+          "at": 92.55,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Infine, il tensore"
+        }
+      ],
+      "duration_sec": 110.5,
+      "id": "scene-02",
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json"
+    },
+    {
+      "section": "1.2 Derivate parziali e gradiente",
+      "title": "Calcolare il gradiente ed eseguire un passo di discesa",
+      "tts_text": "Passiamo alle derivate in più variabili, base dell'ottimizzazione. [pause:0.5] La derivata parziale generalizza la derivata derivando rispetto a una sola variabile, tenendo fisse tutte le altre; per f di x uno, x due e x tre si calcolano le tre derivate parziali. [pause:0.6] Raccogliendole in un vettore otteniamo il gradiente di f, nabla f o grad f: il vettore delle derivate parziali, equivalente alla somma di d f su d x con i per i versori coordinati ortogonali e con i. [pause:0.7] Eseguiamo un esercizio numerico guidato su f di x uno e x due uguale x uno quadro più due x due quadro. [pause:0.5] Deriviamo rispetto a x uno tenendo x due fissa: due x due quadro è costante, quindi otteniamo due x uno. Deriviamo rispetto a x due tenendo x uno fissa: otteniamo quattro x due. Il gradiente è quindi due x uno virgola quattro x due. [pause:0.6] Valutiamo in P uguale uno virgola uno: f vale uno più due uguale tre, e il gradiente vale due virgola quattro. [pause:0.6] Facciamo ora un passo di discesa del gradiente lungo meno nabla f con eta uguale zero virgola uno: uno virgola uno meno zero virgola uno per due virgola quattro dà zero virgola otto e zero virgola sei. Qui f vale zero virgola sessantaquattro più zero virgola settantadue, cioè uno virgola trentasei: in un solo passo scende da tre a uno virgola trentasei.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.2 · Derivate parziali e gradiente</div>\n  <h2 class=\"slide-title\">Definizione di gradiente ed esercizio guidato</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Derivate parziali e Gradiente (\\(f:\\R^n\\to\\R\\))</div>\n    \\[\\htmlId{f-grad}{\\nabla f = \\operatorname{grad} f = \\left(\\frac{\\partial f}{\\partial x_1},\\dots,\\frac{\\partial f}{\\partial x_n}\\right) = \\sum_{i=1}^{n}\\frac{\\partial f}{\\partial x_i}\\,\\vv{e}_i}\\]\n    <p class=\"math-note\">Si deriva rispetto a una sola variabile tenendo fisse tutte le altre (es. per \\(f(x_1,x_2,x_3)\\): \\(\\partial f/\\partial x_1, \\partial f/\\partial x_2, \\partial f/\\partial x_3\\)); gli \\(\\vv{e}_i\\) sono i versori coordinati ortogonali.</p>\n  </div>\n  <div id=\"s2\" class=\"proof-steps cue-hidden\">\n    <div id=\"st1\" class=\"proof-step\">\n      <span class=\"step-tag step-tag-blue\">Esercizio · \\(f(x_1, x_2) = x_1^2 + 2x_2^2\\)</span>\n      <div>\\(\\dfrac{\\partial f}{\\partial x_1} = 2x_1 \\quad (x_2 \\text{ fissa}), \\qquad \\dfrac{\\partial f}{\\partial x_2} = 4x_2 \\quad (x_1 \\text{ fissa}) \\implies \\nabla f(x_1,x_2) = (2x_1,\\, 4x_2)\\)</div>\n    </div>\n    <div id=\"st2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Valutazione in \\(P = (1,\\,1)\\)</span>\n      <div>\\(f(1,1) = 1^2 + 2\\cdot 1^2 = \\mathbf{3}, \\qquad \\nabla f(1,1) = \\mathbf{(2,\\,4)}\\)</div>\n    </div>\n    <div id=\"st3\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">Un passo di discesa (\\(\\eta = 0{,}1\\))</span>\n      <div>\\(\\x_{\\text{nuovo}} = (1,1) - 0{,}1\\cdot(2,4) = (0{,}8;\\,0{,}6) \\implies f(0{,}8;\\,0{,}6) = 0{,}64 + 0{,}72 = \\mathbf{1{,}36} \\;(\\text{da } 3 \\text{ a } 1{,}36)\\)</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.3,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "La derivata parziale generalizza"
+        },
+        {
+          "at": 18.8,
+          "action": "highlight",
+          "target": "#f-grad",
+          "anchor": "otteniamo il gradiente di f"
+        },
+        {
+          "at": 32.32,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "esercizio numerico guidato"
+        },
+        {
+          "at": 56.91,
+          "action": "show",
+          "target": "#st2",
+          "anchor": "Valutiamo in P uguale uno virgola uno"
+        },
+        {
+          "at": 64.95,
+          "action": "show",
+          "target": "#st3",
+          "anchor": "Facciamo ora un passo di discesa"
+        }
+      ],
+      "duration_sec": 87.4,
+      "id": "scene-03",
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json"
+    },
+    {
+      "section": "1.2 Significato geometrico e punti stazionari",
+      "title": "Derivata direzionale, curve di livello e punti stazionari",
+      "tts_text": "Perché muoversi lungo meno nabla f ha fatto scendere subito f? L'idea geometrica è chiave: in un punto, il gradiente punta nella direzione di massima crescita di f, e la sua norma dice quanto è ripida la pendenza; il suo opposto meno nabla f indica la direzione di decrescita più rapida, base della discesa del gradiente che addestra quasi tutti i modelli del corso. [pause:0.7] La prova usa il prodotto scalare. Lungo una direzione unitaria u, la variazione di f è la derivata direzionale D lungo u di f, uguale a nabla f scalare u, cioè norma di nabla f per coseno di teta. [pause:0.6] Osserviamolo sulle ellissi di livello di x uno quadro più due x due quadro. [pause:0.5] Per teta uguale zero, lungo nabla f in rosso, il coseno vale uno: crescita massima. Per teta uguale pi greco, lungo meno nabla f in verde, vale meno uno: decrescita più rapida, verso il minimo nell'origine. Per teta uguale pi greco mezzi vale zero: lungo le curve di livello f non cambia, quindi il gradiente è perpendicolare a esse. [pause:0.7] Un punto dove nabla f è nullo si chiama punto stazionario. Attenzione: il gradiente nullo da solo non basta a dire se è un minimo locale, un massimo locale o un punto di sella. Per esempio, g di x e y uguale x quadro meno y quadro ha gradiente nullo in zero virgola zero, ma sale a più uno lungo x e scende a meno uno lungo y.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.2 · Significato geometrico del gradiente</div>\n  <h2 class=\"slide-title\">Derivata direzionale, curve di livello e punti stazionari</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea — Significato geometrico</div>\n    <p>\\(\\nabla f\\) punta nella direzione di <strong>massima crescita</strong> (norma = ripidità); \\(-\\nabla f\\) indica la <strong>decrescita più rapida</strong> (base della <em>discesa del gradiente</em>).</p>\n  </div>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Derivata direzionale (\\(\\norm{\\vv{u}}=1\\))</div>\n        \\[\\htmlId{f-dir}{D_{\\vv{u}}f = \\nabla f \\cdot \\vv{u} = \\norm{\\nabla f}\\,\\norm{\\vv{u}}\\cos\\theta = \\norm{\\nabla f}\\cos\\theta}\\]\n        <ul class=\"clean-list\" style=\"font-size:0.82rem;\">\n          <li>\\(\\theta = 0\\) (\\(\\nabla f\\)): massimo \\(+\\norm{\\nabla f}\\)</li>\n          <li>\\(\\theta = \\pi\\) (\\(-\\nabla f\\)): minimo \\(-\\norm{\\nabla f}\\)</li>\n          <li>\\(\\theta = \\pi/2\\): \\(D_{\\vv{u}}f = 0 \\implies \\nabla f \\perp\\) <em>curve di livello</em></li>\n        </ul>\n      </div>\n      <div id=\"s4\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione — Punto stazionario (\\(\\nabla f = \\vv{0}\\))</div>\n        <p style=\"font-size:0.84rem;\">Può essere <strong>minimo locale</strong>, <strong>massimo locale</strong> o <strong>punto di sella</strong> (da solo \\(\\nabla f=\\vv{0}\\) non basta). Es. sella: \\(g(x,y)=x^2-y^2\\) in \\((0,0)\\): \\(g(1,0)=+1\\), \\(g(0,1)=-1\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg class=\"diagram-svg\" viewBox=\"0 0 360 248\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Curve di livello di f(x1,x2)=x1^2+2x2^2 e vettori gradiente e antigradiente\"><defs><marker id=\"gr-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#C0392B\"/></marker><marker id=\"gr-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#2E7D32\"/></marker><marker id=\"gr-ax\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#6E6E6E\"/></marker></defs><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"26.5\" ry=\"18.7\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"53.0\" ry=\"37.5\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"79.5\" ry=\"56.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"106.0\" ry=\"75.0\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.5\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"132.5\" ry=\"93.7\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><line x1=\"22\" y1=\"136.0\" x2=\"342\" y2=\"136.0\" class=\"svg-axis\" marker-end=\"url(#gr-ax)\"/><line x1=\"180.0\" y1=\"238\" x2=\"180.0\" y2=\"16\" class=\"svg-axis\" marker-end=\"url(#gr-ax)\"/><text x=\"345\" y=\"140.0\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text><text x=\"187.0\" y=\"19\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text><line x1=\"277.3\" y1=\"93.9\" x2=\"209.9\" y2=\"58.2\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 247.6,68.5 L 240.1,64.6 L 236.1,72.1\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.1\"/><circle cx=\"180.0\" cy=\"136.0\" r=\"3.6\" class=\"pt-pos\"/><text x=\"112.0\" y=\"127.0\" class=\"svg-blue\" font-size=\"11\" font-weight=\"600\">minimo (0,0)</text><g id=\"gv-plus\"><line x1=\"243.6\" y1=\"76.0\" x2=\"266.4\" y2=\"33.0\" stroke=\"#C0392B\" stroke-width=\"2.6\" marker-end=\"url(#gr-r)\"/><text x=\"273.4\" y=\"37.0\" class=\"svg-red\" font-size=\"12.5\" font-weight=\"700\">∇f</text></g><g id=\"gv-minus\"><line x1=\"243.6\" y1=\"76.0\" x2=\"220.8\" y2=\"119.1\" stroke=\"#2E7D32\" stroke-width=\"2.6\" marker-end=\"url(#gr-g)\"/><text x=\"226.8\" y=\"129.1\" class=\"svg-green\" font-size=\"12.5\" font-weight=\"700\">−∇f</text></g><circle cx=\"243.6\" cy=\"76.0\" r=\"3.2\" fill=\"#1A1A1A\"/><text x=\"252.6\" y=\"88.0\" class=\"svg-caption\">P</text><text x=\"14\" y=\"24\" class=\"svg-caption\">f(x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>,x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>) = x<tspan baseline-shift=\"sub\" font-size=\"72%\">1</tspan><tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan> + 2x<tspan baseline-shift=\"sub\" font-size=\"72%\">2</tspan><tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan> = c<tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan></text></svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.58,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "L'idea geometrica è chiave"
+        },
+        {
+          "at": 23.89,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La prova usa il prodotto scalare"
+        },
+        {
+          "at": 29.97,
+          "action": "highlight",
+          "target": "#f-dir",
+          "anchor": "derivata direzionale D lungo u"
+        },
+        {
+          "at": 39.27,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "sulle ellissi di livello"
+        },
+        {
+          "at": 44.79,
+          "action": "highlight",
+          "target": "#gv-plus",
+          "anchor": "lungo nabla f in rosso"
+        },
+        {
+          "at": 50.81,
+          "action": "highlight",
+          "target": "#gv-minus",
+          "anchor": "lungo meno nabla f in verde"
+        },
+        {
+          "at": 67.63,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "si chiama punto stazionario"
+        }
+      ],
+      "duration_sec": 87.19,
+      "id": "scene-04",
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json"
+    },
+    {
+      "section": "1.2.1 Regole di derivazione",
+      "title": "Regole di derivazione e regola della catena su una loss",
+      "tts_text": "Il calcolo dei gradienti delle funzioni di errore usa sempre sei regole di derivazione. [pause:0.5] Derivata di una costante k: zero. Derivata di w rispetto a w: uno. Derivata del quadrato di f di w: due f di w per la derivata di f. Derivata della somma: somma delle derivate. [pause:0.6] Quinta, fondamentale: la regola della catena per le funzioni composte. d f su d x è uguale a d f su d g per d g su d x, cioè D di f di g di x uguale f primo di g di x per g primo di x. Sesta: la regola del prodotto, D di f per g uguale f primo g più f g primo. [pause:0.7] La regola della catena è la più importante: scompone la derivata di una funzione composta in fattori semplici, ciascuno calcolabile localmente, ed è la base della backpropagation. [pause:0.7] Esempio in stile ML: deriviamo E di w uguale cinque meno due w al quadrato. [pause:0.5] Poniamo g di w uguale cinque meno due w ed f di g uguale g quadro. Le derivate locali sono d f su d g uguale due g e d g su d w uguale meno due. Per la catena, E primo di w è due per cinque meno due w per meno due, cioè meno quattro per cinque meno due w. [pause:0.6] Valutiamo in w uguale uno: E vale nove e E primo vale meno dodici, negativo. Muovendoci lungo meno E primo, il peso w cresce verso il minimo esatto w star uguale due virgola cinque, dove E primo ed E si annullano.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.2.1 · Regole di derivazione</div>\n  <h2 class=\"slide-title\">Le sei regole essenziali e la regola della catena</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Regole di base per i gradienti delle funzioni di errore</div>\n    \\[\\frac{\\partial k}{\\partial w} = 0, \\qquad \\frac{\\partial w}{\\partial w} = 1, \\qquad \\frac{\\partial\\, f(w)^2}{\\partial w} = 2f(w)\\frac{\\partial f(w)}{\\partial w}, \\qquad \\frac{\\partial}{\\partial w}\\sum_i f_i = \\sum_i \\frac{\\partial f_i}{\\partial w}\\]\n    \\[\\htmlId{f-chain}{\\frac{\\partial f}{\\partial x} = \\frac{\\partial f}{\\partial g}\\cdot\\frac{\\partial g}{\\partial x}} \\;\\;\\text{(catena)}, \\qquad D[f(g(x))] = f'(g(x))\\,g'(x), \\qquad D[f\\cdot g] = f'g + fg'\\]\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Perché la regola della catena è la più importante</div>\n    <p><strong>Scompone</strong> la derivata di una funzione composta in fattori semplici, ciascuno calcolabile <strong>localmente</strong>: è la base della <strong>backpropagation</strong>.</p>\n  </div>\n  <div id=\"s3\" class=\"proof-steps cue-hidden\">\n    <div class=\"proof-step\">\n      <span class=\"step-tag step-tag-blue\">Esempio ML · \\(E(w) = (5 - 2w)^2\\)</span>\n      <div>\\(g(w) = 5 - 2w,\\;\\; f(g) = g^2 \\implies \\dfrac{\\partial f}{\\partial g} = 2g,\\;\\; \\dfrac{\\partial g}{\\partial w} = -2 \\implies \\htmlId{f-exchain}{E'(w) = 2(5-2w)(-2) = -4(5-2w)}\\)</div>\n    </div>\n    <div id=\"s4\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">Valutazione in \\(w = 1\\)</span>\n      <div>\\(E(1) = 9, \\;\\; E'(1) = -4(3) = \\mathbf{-12 < 0} \\implies -E'(1) > 0\\): \\(w\\) cresce verso il minimo \\(w^* = \\mathbf{2{,}5}\\) (\\(E'(2{,}5)=0\\)).</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.02,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "sei regole di derivazione"
+        },
+        {
+          "at": 24.28,
+          "action": "highlight",
+          "target": "#f-chain",
+          "anchor": "la regola della catena per le funzioni composte"
+        },
+        {
+          "at": 46.75,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La regola della catena è la più importante"
+        },
+        {
+          "at": 58.21,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Esempio in stile ML"
+        },
+        {
+          "at": 83.61,
+          "action": "highlight",
+          "target": "#f-exchain",
+          "anchor": "meno quattro per cinque meno due w"
+        },
+        {
+          "at": 86.67,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Valutiamo in w uguale uno"
+        }
+      ],
+      "duration_sec": 102.76,
+      "id": "scene-05",
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json"
+    },
+    {
+      "section": "1.3 Probabilità",
+      "title": "Valore atteso, varianza, proprietà e campione i.i.d.",
+      "tts_text": "Passiamo alla probabilità, chiave per modellare rumore e generalizzazione. [pause:0.5] Per una variabile aleatoria discreta Z che assume valori z con i con probabilità P di z con i, il valore atteso Z soprassegnato, o E secondo P di Z, è somma di z con i per P di z con i. La varianza di Z misura la dispersione attorno alla media ed è E di Z meno Z soprassegnato al quadrato. [pause:0.6] Su un campione di l valori usiamo: la media x soprassegnato uguale uno su l per la somma di x con p; la varianza, uno su l per la somma degli scarti al quadrato; e la covarianza tra x e y, uno su l per la somma dei prodotti degli scarti di x e y dalle rispettive medie. [pause:0.7] Tre proprietà ricorrono in tutto il corso. Il valore atteso è sempre lineare: E di a X più b Y uguale a E di X più b E di Y. Se X e Y sono indipendenti, E di X Y uguale E di X per E di Y. Un campione si dice i i d, indipendente e identicamente distribuito, quando gli elementi sono estratti indipendentemente dalla stessa distribuzione. [pause:0.7] Esempio numerico sul campione x uguale due, quattro, sei, otto, con l uguale quattro. La media è venti diviso quattro, cioè cinque. Gli scarti sono meno tre, meno uno, più uno, più tre. I loro quadrati sono nove, uno, uno, nove, somma venti: diviso quattro dà varianza uguale cinque.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.3 · Probabilità</div>\n  <h2 class=\"slide-title\">Valore atteso, varianza, covarianza e campione i.i.d.</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Valore atteso e varianza (variabile discreta \\(Z\\) e campione di \\(l\\) valori)</div>\n    \\[\\htmlId{f-ev}{\\bar{Z} = \\E_P[Z] = \\sum_i z_i\\,P(z_i), \\qquad \\Var[Z] = \\E\\big[(Z-\\bar{Z})^2\\big]}\\]\n    <p class=\"math-note\" style=\"text-align:center;\">Campione: \\(\\;\\bar{x} = \\dfrac{1}{l}\\sum_p x_p, \\quad \\Var[x] = \\dfrac{1}{l}\\sum_p (x_p-\\bar{x})^2, \\quad \\Cov[x,y] = \\dfrac{1}{l}\\sum_p (x_p-\\bar{x})(y_p-\\bar{y})\\)</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Proprietà fondamentali &amp; i.i.d.</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li><strong>Linearità</strong> (sempre): \\(\\E[aX+bY] = a\\E[X] + b\\E[Y]\\)</li>\n        <li><strong>Indipendenza</strong>: \\(X \\perp Y \\implies \\E[XY] = \\E[X]\\,\\E[Y]\\)</li>\n        <li><strong>Campione i.i.d.</strong>: elementi estratti <em>indipendentemente</em> dalla <em>stessa distribuzione</em>.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Esempio guidato · \\(x = (2,\\,4,\\,6,\\,8)\\), \\(l = 4\\)</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li>Media: \\(\\bar{x} = \\dfrac{2+4+6+8}{4} = \\dfrac{20}{4} = \\mathbf{5}\\)</li>\n        <li>Scarti \\((x_p - \\bar{x})\\): \\(-3,\\; -1,\\; +1,\\; +3\\)</li>\n        <li>Quadrati: \\(9,\\; 1,\\; 1,\\; 9 \\implies \\Var[x] = \\dfrac{20}{4} = \\mathbf{5}\\)</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.75,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Per una variabile aleatoria discreta Z"
+        },
+        {
+          "at": 20.39,
+          "action": "highlight",
+          "target": "#f-ev",
+          "anchor": "La varianza di Z misura"
+        },
+        {
+          "at": 47.73,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Tre proprietà ricorrono"
+        },
+        {
+          "at": 75.6,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Esempio numerico sul campione"
+        }
+      ],
+      "duration_sec": 91.79,
+      "id": "scene-06",
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json"
+    },
+    {
+      "section": "1.3 Lemma della varianza e distribuzione normale",
+      "title": "Lemma della varianza (dimostrazione) e gaussiana",
+      "tts_text": "Ecco il Lemma della varianza: la varianza di Z è uguale a E di Z al quadrato meno Z soprassegnato al quadrato, ovvero E di Z al quadrato è uguale a Z soprassegnato al quadrato più varianza di Z. [pause:0.6] Dimostriamolo sviluppando il quadrato e usando somma delle probabilità uguale uno: somma di z con i meno Z soprassegnato al quadrato per P di z con i diventa somma di z con i quadro P di z con i, meno due Z soprassegnato per somma di z con i P di z con i, più Z soprassegnato quadro per somma di P di z con i; cioè E di Z quadro meno due Z soprassegnato quadro più Z soprassegnato quadro, uguale E di Z quadro meno Z soprassegnato quadro. [pause:0.6] Verifica su due, quattro, sei, otto: i quadrati sono quattro, sedici, trentasei, sessantaquattro, media trenta; meno venticinque fa esattamente cinque. Questo lemma è lo strumento chiave della decomposizione bias-varianza. [pause:0.7] Chiudiamo con la distribuzione normale, o gaussiana, di media mu e varianza sigma quadro: densità f di x uguale uno su sigma radice di due pi greco, per e elevato a meno x meno mu al quadrato su due sigma quadro. Con mu uguale zero e sigma quadro uguale uno si ottiene la normale standard. Come mostra il grafico, l'area della coda a sinistra di meno uno virgola novantasei vale il due virgola cinque percento.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.3 · Lemma della varianza e distribuzione normale</div>\n  <h2 class=\"slide-title\">Lemma della varianza e curva gaussiana</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Lemma della varianza (chiave della decomposizione bias-varianza)</div>\n    \\[\\htmlId{f-lem}{\\Var[Z] = \\E[Z^2] - \\bar{Z}^2 \\qquad\\Longleftrightarrow\\qquad \\E[Z^2] = \\bar{Z}^2 + \\Var[Z]}\\]\n    <p id=\"s2\" class=\"math-note cue-hidden\" style=\"font-size:0.82rem;\"><strong>Dimostrazione:</strong> \\(\\Var[Z] = \\sum_i (z_i-\\bar{Z})^2 P(z_i) = \\sum_i z_i^2 P(z_i) - 2\\bar{Z}\\sum_i z_i P(z_i) + \\bar{Z}^2\\underbrace{\\sum_i P(z_i)}_{=1} = \\E[Z^2] - 2\\bar{Z}^2 + \\bar{Z}^2 = \\E[Z^2] - \\bar{Z}^2\\).<br/>\n    <strong>Verifica su \\((2,4,6,8)\\):</strong> \\(\\E[x^2] = \\frac{4+16+36+64}{4} = 30\\), \\(\\bar{x}^2 = 25 \\implies 30 - 25 = \\mathbf{5} = \\Var[x]\\).</p>\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Definizione — Distribuzione normale (gaussiana)</div>\n      \\[\\htmlId{f-gauss}{f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}\\,e^{-(x-\\mu)^2 / (2\\sigma^2)}}\\]\n      <p class=\"math-note\">Media \\(\\mu\\), varianza \\(\\sigma^2\\). Con \\(\\mu=0\\) e \\(\\sigma^2=1\\) si ottiene la <strong>normale standard</strong>: la coda sinistra per \\(x \\le -1{,}96\\) racchiude il \\(2{,}5\\%\\) dell'area.</p>\n    </div>\n    <div id=\"s4\" class=\"svg-panel cue-hidden\">\n      <svg class=\"diagram-svg\" viewBox=\"0 0 420 212\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Densità della normale standard con coda sinistra del 2,5 percento a sinistra di meno 1,96\"><line x1=\"46.0\" y1=\"176.0\" x2=\"402.0\" y2=\"176.0\" class=\"svg-axis\"/><line x1=\"46.0\" y1=\"176.0\" x2=\"46.0\" y2=\"22.0\" class=\"svg-axis\"/><line x1=\"221.0\" y1=\"176.0\" x2=\"221.0\" y2=\"39.5\" stroke=\"#999999\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M 46.0,176.0 L 46.0,175.8 L 48.2,175.8 L 50.4,175.7 L 52.6,175.7 L 54.9,175.6 L 57.1,175.5 L 59.3,175.5 L 61.5,175.4 L 63.7,175.3 L 65.9,175.2 L 68.1,175.0 L 70.4,174.9 L 72.6,174.7 L 74.8,174.5 L 77.0,174.3 L 79.2,174.1 L 81.4,173.8 L 83.6,173.5 L 85.9,173.1 L 88.1,172.8 L 90.3,172.3 L 92.5,171.9 L 94.7,171.3 L 96.9,170.7 L 99.1,170.1 L 101.4,169.4 L 103.6,168.6 L 105.8,167.8 L 108.0,166.8 L 110.2,165.8 L 112.4,164.7 L 114.6,163.5 L 116.9,162.2 L 119.1,160.8 L 121.3,159.3 L 123.5,157.7 L 125.7,156.0 L 125.7,176.0 Z\" fill=\"#C0392B\" fill-opacity=\"0.26\" stroke=\"none\"/><line x1=\"125.7\" y1=\"176.0\" x2=\"125.7\" y2=\"156.0\" stroke=\"#C0392B\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><path d=\"M 46.0,175.8 L 48.9,175.7 L 51.8,175.7 L 54.8,175.6 L 57.7,175.5 L 60.6,175.4 L 63.5,175.3 L 66.4,175.1 L 69.3,174.9 L 72.2,174.7 L 75.2,174.5 L 78.1,174.2 L 81.0,173.8 L 83.9,173.4 L 86.8,173.0 L 89.8,172.4 L 92.7,171.8 L 95.6,171.1 L 98.5,170.3 L 101.4,169.4 L 104.3,168.3 L 107.2,167.2 L 110.2,165.9 L 113.1,164.4 L 116.0,162.8 L 118.9,160.9 L 121.8,159.0 L 124.7,156.8 L 127.7,154.4 L 130.6,151.8 L 133.5,149.0 L 136.4,146.0 L 139.3,142.7 L 142.2,139.2 L 145.2,135.6 L 148.1,131.7 L 151.0,127.6 L 153.9,123.3 L 156.8,118.9 L 159.8,114.3 L 162.7,109.5 L 165.6,104.7 L 168.5,99.8 L 171.4,94.8 L 174.3,89.9 L 177.2,84.9 L 180.2,80.1 L 183.1,75.3 L 186.0,70.6 L 188.9,66.2 L 191.8,62.0 L 194.8,58.0 L 197.7,54.3 L 200.6,51.0 L 203.5,48.0 L 206.4,45.5 L 209.3,43.3 L 212.2,41.7 L 215.2,40.5 L 218.1,39.7 L 221.0,39.5 L 223.9,39.7 L 226.8,40.5 L 229.7,41.7 L 232.7,43.3 L 235.6,45.5 L 238.5,48.0 L 241.4,51.0 L 244.3,54.3 L 247.2,58.0 L 250.2,62.0 L 253.1,66.2 L 256.0,70.6 L 258.9,75.3 L 261.8,80.1 L 264.8,84.9 L 267.7,89.9 L 270.6,94.8 L 273.5,99.8 L 276.4,104.7 L 279.3,109.5 L 282.2,114.3 L 285.2,118.9 L 288.1,123.3 L 291.0,127.6 L 293.9,131.7 L 296.8,135.6 L 299.8,139.2 L 302.7,142.7 L 305.6,146.0 L 308.5,149.0 L 311.4,151.8 L 314.3,154.4 L 317.2,156.8 L 320.2,159.0 L 323.1,160.9 L 326.0,162.8 L 328.9,164.4 L 331.8,165.9 L 334.8,167.2 L 337.7,168.3 L 340.6,169.4 L 343.5,170.3 L 346.4,171.1 L 349.3,171.8 L 352.2,172.4 L 355.2,173.0 L 358.1,173.4 L 361.0,173.8 L 363.9,174.2 L 366.8,174.5 L 369.8,174.7 L 372.7,174.9 L 375.6,175.1 L 378.5,175.3 L 381.4,175.4 L 384.3,175.5 L 387.2,175.6 L 390.2,175.7 L 393.1,175.7 L 396.0,175.8\" class=\"svg-curve-blue\" stroke-width=\"2.4\"/><line x1=\"93.9\" y1=\"142.4\" x2=\"106.8\" y2=\"169.8\" stroke=\"#C0392B\" stroke-width=\"1.2\"/><text x=\"85.9\" y=\"126.4\" text-anchor=\"middle\" class=\"svg-red\" font-size=\"11\" font-weight=\"700\">area</text><text x=\"85.9\" y=\"139.4\" text-anchor=\"middle\" class=\"svg-red\" font-size=\"11\" font-weight=\"700\">2,5%</text><line x1=\"75.2\" y1=\"176.0\" x2=\"75.2\" y2=\"180.0\" class=\"svg-axis\"/><text x=\"75.2\" y=\"190.0\" text-anchor=\"middle\" class=\"svg-tick\" font-size=\"10.5\">-3</text><line x1=\"125.7\" y1=\"176.0\" x2=\"125.7\" y2=\"180.0\" class=\"svg-axis\"/><text x=\"125.7\" y=\"198.0\" text-anchor=\"middle\" class=\"svg-red\" font-size=\"10.5\" font-weight=\"700\">-1,96</text><line x1=\"172.4\" y1=\"176.0\" x2=\"172.4\" y2=\"180.0\" class=\"svg-axis\"/><text x=\"172.4\" y=\"190.0\" text-anchor=\"middle\" class=\"svg-tick\" font-size=\"10.5\">-1</text><line x1=\"221.0\" y1=\"176.0\" x2=\"221.0\" y2=\"180.0\" class=\"svg-axis\"/><text x=\"221.0\" y=\"190.0\" text-anchor=\"middle\" class=\"svg-tick\" font-size=\"10.5\">0</text><line x1=\"269.6\" y1=\"176.0\" x2=\"269.6\" y2=\"180.0\" class=\"svg-axis\"/><text x=\"269.6\" y=\"190.0\" text-anchor=\"middle\" class=\"svg-tick\" font-size=\"10.5\">1</text><line x1=\"318.2\" y1=\"176.0\" x2=\"318.2\" y2=\"180.0\" class=\"svg-axis\"/><text x=\"318.2\" y=\"190.0\" text-anchor=\"middle\" class=\"svg-tick\" font-size=\"10.5\">2</text><line x1=\"366.8\" y1=\"176.0\" x2=\"366.8\" y2=\"180.0\" class=\"svg-axis\"/><text x=\"366.8\" y=\"190.0\" text-anchor=\"middle\" class=\"svg-tick\" font-size=\"10.5\">3</text><line x1=\"42.0\" y1=\"141.8\" x2=\"46.0\" y2=\"141.8\" class=\"svg-axis\"/><text x=\"39.0\" y=\"145.3\" text-anchor=\"end\" class=\"svg-tick\" font-size=\"10\">0,1</text><line x1=\"42.0\" y1=\"107.6\" x2=\"46.0\" y2=\"107.6\" class=\"svg-axis\"/><text x=\"39.0\" y=\"111.1\" text-anchor=\"end\" class=\"svg-tick\" font-size=\"10\">0,2</text><line x1=\"42.0\" y1=\"73.3\" x2=\"46.0\" y2=\"73.3\" class=\"svg-axis\"/><text x=\"39.0\" y=\"76.8\" text-anchor=\"end\" class=\"svg-tick\" font-size=\"10\">0,3</text><line x1=\"42.0\" y1=\"39.1\" x2=\"46.0\" y2=\"39.1\" class=\"svg-axis\"/><text x=\"39.0\" y=\"42.6\" text-anchor=\"end\" class=\"svg-tick\" font-size=\"10\">0,4</text><text x=\"406.0\" y=\"180.0\" class=\"svg-math-sm\">x</text><text x=\"40.0\" y=\"15\" text-anchor=\"middle\" class=\"svg-math-sm\">f(x)</text><text x=\"310.9\" y=\"52.8\" class=\"svg-caption\">μ = 0, σ = 1</text></svg>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.22,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "il Lemma della varianza"
+        },
+        {
+          "at": 8.42,
+          "action": "highlight",
+          "target": "#f-lem",
+          "anchor": "E di Z al quadrato è uguale"
+        },
+        {
+          "at": 13.58,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Dimostriamolo sviluppando"
+        },
+        {
+          "at": 62.19,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "distribuzione normale, o gaussiana"
+        },
+        {
+          "at": 69.85,
+          "action": "highlight",
+          "target": "#f-gauss",
+          "anchor": "uno su sigma radice di due pi greco"
+        },
+        {
+          "at": 82.57,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Come mostra il grafico"
+        }
+      ],
+      "duration_sec": 89.72,
+      "id": "scene-07",
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json"
+    },
+    {
+      "section": "1.4 Riepilogo",
+      "title": "Punti chiave e domande di verifica",
+      "tts_text": "Riepiloghiamo i quattro punti chiave di questo capitolo. [pause:0.5] Primo: a trasposto b uguale norma di a per norma di b per coseno di teta; il prodotto scalare misura l'allineamento. [pause:0.5] Secondo: nabla f indica la crescita più rapida e meno nabla f la decrescita più rapida; nabla f uguale zero individua i punti stazionari, che possono essere minimi, massimi o selle. [pause:0.5] Terzo: la regola della catena scompone le derivate di funzioni composte in fattori locali. [pause:0.5] Quarto: il lemma della varianza, E di Z quadro uguale Z soprassegnato quadro più varianza di Z. [pause:0.7] Chiudiamo con le due domande di verifica. Prima domanda: che cos'è il gradiente e perché meno nabla f indica la direzione di massima decrescita? Usiamo le derivate parziali e la derivata direzionale con coseno uguale meno uno. [pause:0.6] Seconda domanda: che cos'è un punto stazionario, ed è sempre un minimo? È un punto con gradiente nullo, ma non è sempre un minimo: può essere anche un massimo o una sella, come x quadro meno y quadro nell'origine.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.4 · Chiusura del capitolo</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Punti chiave</div>\n    <ul class=\"clean-list\">\n      <li id=\"pk1\">\\(\\vv{a}\\T\\vv{b} = \\norm{\\vv{a}}\\norm{\\vv{b}}\\cos\\theta\\): il prodotto scalare misura l'<strong>allineamento</strong>.</li>\n      <li id=\"pk2\">\\(\\nabla f\\) indica la crescita più rapida, \\(-\\nabla f\\) la decrescita più rapida; \\(\\nabla f = \\vv{0}\\) individua i <strong>punti stazionari</strong> (minimi, massimi o selle).</li>\n      <li id=\"pk3\">La <strong>regola della catena</strong> scompone le derivate di funzioni composte in fattori locali.</li>\n      <li id=\"pk4\"><strong>Lemma della varianza</strong>: \\(\\E[Z^2] = \\bar{Z}^2 + \\Var[Z]\\).</li>\n    </ul>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Domande di verifica (stile esame)</div>\n    <ol class=\"verify-list\">\n      <li id=\"q1\">Che cos'è il gradiente e perché \\(-\\nabla f\\) indica la direzione di massima decrescita?</li>\n      <li id=\"q2\">Che cos'è un punto stazionario? È sempre un minimo?</li>\n    </ol>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.29,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "quattro punti chiave"
+        },
+        {
+          "at": 3.63,
+          "action": "highlight",
+          "target": "#pk1",
+          "anchor": "Primo: a trasposto b"
+        },
+        {
+          "at": 12.21,
+          "action": "highlight",
+          "target": "#pk2",
+          "anchor": "Secondo: nabla f indica"
+        },
+        {
+          "at": 25.46,
+          "action": "highlight",
+          "target": "#pk3",
+          "anchor": "Terzo: la regola della catena"
+        },
+        {
+          "at": 31.4,
+          "action": "highlight",
+          "target": "#pk4",
+          "anchor": "Quarto: il lemma della varianza"
+        },
+        {
+          "at": 39.06,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "due domande di verifica"
+        },
+        {
+          "at": 41.0,
+          "action": "highlight",
+          "target": "#q1",
+          "anchor": "Prima domanda"
+        },
+        {
+          "at": 54.02,
+          "action": "highlight",
+          "target": "#q2",
+          "anchor": "Seconda domanda"
+        }
+      ],
+      "duration_sec": 67.59,
+      "id": "scene-08",
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json"
+    }
+  ]
+}

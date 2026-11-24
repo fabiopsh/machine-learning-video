@@ -1,0 +1,1537 @@
+{
+  "duration": 112.69,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.061,
+      "text": "Chiudiamo la guida con la notazione unificata del corso:",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "la",
+          "start": 0.54,
+          "end": 0.6
+        },
+        {
+          "text": "guida",
+          "start": 0.66,
+          "end": 0.92
+        },
+        {
+          "text": "con",
+          "start": 1.04,
+          "end": 1.18
+        },
+        {
+          "text": "la",
+          "start": 1.22,
+          "end": 1.28
+        },
+        {
+          "text": "notazione",
+          "start": 1.34,
+          "end": 1.88
+        },
+        {
+          "text": "unificata",
+          "start": 1.92,
+          "end": 2.44
+        },
+        {
+          "text": "del",
+          "start": 2.48,
+          "end": 2.62
+        },
+        {
+          "text": "corso:",
+          "start": 2.681,
+          "end": 3.061
+        }
+      ]
+    },
+    {
+      "start": 3.821,
+      "end": 7.161,
+      "text": "sedici simboli coerenti dal primo all'ultimo capitolo.",
+      "words": [
+        {
+          "text": "sedici",
+          "start": 3.821,
+          "end": 4.221
+        },
+        {
+          "text": "simboli",
+          "start": 4.301,
+          "end": 4.681
+        },
+        {
+          "text": "coerenti",
+          "start": 4.721,
+          "end": 5.281
+        },
+        {
+          "text": "dal",
+          "start": 5.441,
+          "end": 5.581
+        },
+        {
+          "text": "primo",
+          "start": 5.701,
+          "end": 6.001
+        },
+        {
+          "text": "all'ultimo",
+          "start": 6.141,
+          "end": 6.641
+        },
+        {
+          "text": "capitolo.",
+          "start": 6.701,
+          "end": 7.161
+        }
+      ]
+    },
+    {
+      "start": 7.941,
+      "end": 9.522,
+      "text": "Partiamo da vettori e dataset.",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 7.941,
+          "end": 8.322
+        },
+        {
+          "text": "da",
+          "start": 8.382,
+          "end": 8.442
+        },
+        {
+          "text": "vettori",
+          "start": 8.502,
+          "end": 8.842
+        },
+        {
+          "text": "e",
+          "start": 8.902,
+          "end": 8.942
+        },
+        {
+          "text": "dataset.",
+          "start": 8.982,
+          "end": 9.522
+        }
+      ]
+    },
+    {
+      "start": 10.262,
+      "end": 11.362,
+      "text": "x è uno scalare,",
+      "words": [
+        {
+          "text": "x",
+          "start": 10.262,
+          "end": 10.302
+        },
+        {
+          "text": "è",
+          "start": 10.622,
+          "end": 10.662
+        },
+        {
+          "text": "uno",
+          "start": 10.722,
+          "end": 10.842
+        },
+        {
+          "text": "scalare,",
+          "start": 10.902,
+          "end": 11.362
+        }
+      ]
+    },
+    {
+      "start": 11.982,
+      "end": 13.662,
+      "text": "x in grassetto un vettore colonna,",
+      "words": [
+        {
+          "text": "x",
+          "start": 11.982,
+          "end": 12.022
+        },
+        {
+          "text": "in",
+          "start": 12.122,
+          "end": 12.182
+        },
+        {
+          "text": "grassetto",
+          "start": 12.202,
+          "end": 12.742
+        },
+        {
+          "text": "un",
+          "start": 12.782,
+          "end": 12.842
+        },
+        {
+          "text": "vettore",
+          "start": 12.882,
+          "end": 13.182
+        },
+        {
+          "text": "colonna,",
+          "start": 13.222,
+          "end": 13.662
+        }
+      ]
+    },
+    {
+      "start": 14.323,
+      "end": 15.243,
+      "text": "X una matrice.",
+      "words": [
+        {
+          "text": "X",
+          "start": 14.323,
+          "end": 14.363
+        },
+        {
+          "text": "una",
+          "start": 14.643,
+          "end": 14.763
+        },
+        {
+          "text": "matrice.",
+          "start": 14.803,
+          "end": 15.243
+        }
+      ]
+    },
+    {
+      "start": 16.103,
+      "end": 20.024,
+      "text": "x trasposto y è il prodotto scalare, con T per la trasposta.",
+      "words": [
+        {
+          "text": "x",
+          "start": 16.103,
+          "end": 16.143
+        },
+        {
+          "text": "trasposto",
+          "start": 16.283,
+          "end": 16.823
+        },
+        {
+          "text": "y",
+          "start": 17.143,
+          "end": 17.183
+        },
+        {
+          "text": "è",
+          "start": 17.463,
+          "end": 17.503
+        },
+        {
+          "text": "il",
+          "start": 17.543,
+          "end": 17.623
+        },
+        {
+          "text": "prodotto",
+          "start": 17.663,
+          "end": 18.023
+        },
+        {
+          "text": "scalare,",
+          "start": 18.063,
+          "end": 18.523
+        },
+        {
+          "text": "con",
+          "start": 18.783,
+          "end": 18.943
+        },
+        {
+          "text": "T",
+          "start": 19.003,
+          "end": 19.043
+        },
+        {
+          "text": "per",
+          "start": 19.163,
+          "end": 19.283
+        },
+        {
+          "text": "la",
+          "start": 19.343,
+          "end": 19.403
+        },
+        {
+          "text": "trasposta.",
+          "start": 19.443,
+          "end": 20.024
+        }
+      ]
+    },
+    {
+      "start": 21.004,
+      "end": 24.284,
+      "text": "l è sempre il numero di esempi del dataset in tutti i capitoli,",
+      "words": [
+        {
+          "text": "l",
+          "start": 21.004,
+          "end": 21.044
+        },
+        {
+          "text": "è",
+          "start": 21.224,
+          "end": 21.264
+        },
+        {
+          "text": "sempre",
+          "start": 21.364,
+          "end": 21.644
+        },
+        {
+          "text": "il",
+          "start": 21.664,
+          "end": 21.744
+        },
+        {
+          "text": "numero",
+          "start": 21.784,
+          "end": 22.044
+        },
+        {
+          "text": "di",
+          "start": 22.084,
+          "end": 22.144
+        },
+        {
+          "text": "esempi",
+          "start": 22.204,
+          "end": 22.524
+        },
+        {
+          "text": "del",
+          "start": 22.564,
+          "end": 22.684
+        },
+        {
+          "text": "dataset",
+          "start": 22.724,
+          "end": 23.224
+        },
+        {
+          "text": "in",
+          "start": 23.364,
+          "end": 23.444
+        },
+        {
+          "text": "tutti",
+          "start": 23.484,
+          "end": 23.704
+        },
+        {
+          "text": "i",
+          "start": 23.764,
+          "end": 23.804
+        },
+        {
+          "text": "capitoli,",
+          "start": 23.784,
+          "end": 24.284
+        }
+      ]
+    },
+    {
+      "start": 24.724,
+      "end": 28.145,
+      "text": "ed n la dimensione dell'input, cioè il numero di feature.",
+      "words": [
+        {
+          "text": "ed",
+          "start": 24.724,
+          "end": 24.844
+        },
+        {
+          "text": "n",
+          "start": 25.064,
+          "end": 25.104
+        },
+        {
+          "text": "la",
+          "start": 25.325,
+          "end": 25.385
+        },
+        {
+          "text": "dimensione",
+          "start": 25.425,
+          "end": 25.905
+        },
+        {
+          "text": "dell'input,",
+          "start": 25.945,
+          "end": 26.545
+        },
+        {
+          "text": "cioè",
+          "start": 26.945,
+          "end": 27.125
+        },
+        {
+          "text": "il",
+          "start": 27.245,
+          "end": 27.325
+        },
+        {
+          "text": "numero",
+          "start": 27.385,
+          "end": 27.625
+        },
+        {
+          "text": "di",
+          "start": 27.665,
+          "end": 27.725
+        },
+        {
+          "text": "feature.",
+          "start": 27.765,
+          "end": 28.145
+        }
+      ]
+    },
+    {
+      "start": 28.865,
+      "end": 30.765,
+      "text": "Passiamo agli esempi e alle uscite.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 28.865,
+          "end": 29.225
+        },
+        {
+          "text": "agli",
+          "start": 29.265,
+          "end": 29.405
+        },
+        {
+          "text": "esempi",
+          "start": 29.445,
+          "end": 29.885
+        },
+        {
+          "text": "e",
+          "start": 30.045,
+          "end": 30.085
+        },
+        {
+          "text": "alle",
+          "start": 30.145,
+          "end": 30.305
+        },
+        {
+          "text": "uscite.",
+          "start": 30.345,
+          "end": 30.765
+        }
+      ]
+    },
+    {
+      "start": 31.766,
+      "end": 35.466,
+      "text": "x con indice p è il p-esimo esempio, riga del dataset,",
+      "words": [
+        {
+          "text": "x",
+          "start": 31.766,
+          "end": 31.806
+        },
+        {
+          "text": "con",
+          "start": 31.926,
+          "end": 32.046
+        },
+        {
+          "text": "indice",
+          "start": 32.106,
+          "end": 32.426
+        },
+        {
+          "text": "p",
+          "start": 32.526,
+          "end": 32.566
+        },
+        {
+          "text": "è",
+          "start": 33.026,
+          "end": 33.066
+        },
+        {
+          "text": "il",
+          "start": 33.126,
+          "end": 33.206
+        },
+        {
+          "text": "p-esimo",
+          "start": 33.266,
+          "end": 33.686
+        },
+        {
+          "text": "esempio,",
+          "start": 33.746,
+          "end": 34.206
+        },
+        {
+          "text": "riga",
+          "start": 34.486,
+          "end": 34.686
+        },
+        {
+          "text": "del",
+          "start": 34.726,
+          "end": 34.866
+        },
+        {
+          "text": "dataset,",
+          "start": 34.906,
+          "end": 35.466
+        }
+      ]
+    },
+    {
+      "start": 35.986,
+      "end": 38.407,
+      "text": "e x con p virgola i la sua componente i.",
+      "words": [
+        {
+          "text": "e",
+          "start": 35.986,
+          "end": 36.026
+        },
+        {
+          "text": "x",
+          "start": 36.186,
+          "end": 36.226
+        },
+        {
+          "text": "con",
+          "start": 36.366,
+          "end": 36.506
+        },
+        {
+          "text": "p",
+          "start": 36.547,
+          "end": 36.587
+        },
+        {
+          "text": "virgola",
+          "start": 36.687,
+          "end": 37.067
+        },
+        {
+          "text": "i",
+          "start": 37.127,
+          "end": 37.167
+        },
+        {
+          "text": "la",
+          "start": 37.387,
+          "end": 37.447
+        },
+        {
+          "text": "sua",
+          "start": 37.507,
+          "end": 37.627
+        },
+        {
+          "text": "componente",
+          "start": 37.667,
+          "end": 38.247
+        },
+        {
+          "text": "i.",
+          "start": 38.367,
+          "end": 38.407
+        }
+      ]
+    },
+    {
+      "start": 39.247,
+      "end": 43.168,
+      "text": "d con p è il target, da desired, la risposta desiderata.",
+      "words": [
+        {
+          "text": "d",
+          "start": 39.247,
+          "end": 39.287
+        },
+        {
+          "text": "con",
+          "start": 39.387,
+          "end": 39.547
+        },
+        {
+          "text": "p",
+          "start": 39.607,
+          "end": 39.647
+        },
+        {
+          "text": "è",
+          "start": 39.887,
+          "end": 39.927
+        },
+        {
+          "text": "il",
+          "start": 40.027,
+          "end": 40.107
+        },
+        {
+          "text": "target,",
+          "start": 40.187,
+          "end": 40.687
+        },
+        {
+          "text": "da",
+          "start": 40.927,
+          "end": 41.007
+        },
+        {
+          "text": "desired,",
+          "start": 41.167,
+          "end": 41.707
+        },
+        {
+          "text": "la",
+          "start": 42.007,
+          "end": 42.067
+        },
+        {
+          "text": "risposta",
+          "start": 42.107,
+          "end": 42.508
+        },
+        {
+          "text": "desiderata.",
+          "start": 42.568,
+          "end": 43.168
+        }
+      ]
+    },
+    {
+      "start": 44.028,
+      "end": 46.308,
+      "text": "o è l'uscita di un'unità o della rete;",
+      "words": [
+        {
+          "text": "o",
+          "start": 44.028,
+          "end": 44.068
+        },
+        {
+          "text": "è",
+          "start": 44.328,
+          "end": 44.368
+        },
+        {
+          "text": "l'uscita",
+          "start": 44.448,
+          "end": 44.908
+        },
+        {
+          "text": "di",
+          "start": 44.968,
+          "end": 45.028
+        },
+        {
+          "text": "un'unità",
+          "start": 45.068,
+          "end": 45.488
+        },
+        {
+          "text": "o",
+          "start": 45.688,
+          "end": 45.728
+        },
+        {
+          "text": "della",
+          "start": 45.768,
+          "end": 45.988
+        },
+        {
+          "text": "rete;",
+          "start": 46.028,
+          "end": 46.308
+        }
+      ]
+    },
+    {
+      "start": 47.328,
+      "end": 50.549,
+      "text": "h ed H sono l'ipotesi e lo spazio delle ipotesi.",
+      "words": [
+        {
+          "text": "h",
+          "start": 47.328,
+          "end": 47.368
+        },
+        {
+          "text": "ed",
+          "start": 47.588,
+          "end": 47.688
+        },
+        {
+          "text": "H",
+          "start": 48.009,
+          "end": 48.049
+        },
+        {
+          "text": "sono",
+          "start": 48.269,
+          "end": 48.489
+        },
+        {
+          "text": "l'ipotesi",
+          "start": 48.529,
+          "end": 49.089
+        },
+        {
+          "text": "e",
+          "start": 49.269,
+          "end": 49.309
+        },
+        {
+          "text": "lo",
+          "start": 49.349,
+          "end": 49.409
+        },
+        {
+          "text": "spazio",
+          "start": 49.469,
+          "end": 49.829
+        },
+        {
+          "text": "delle",
+          "start": 49.869,
+          "end": 50.049
+        },
+        {
+          "text": "ipotesi.",
+          "start": 50.109,
+          "end": 50.549
+        }
+      ]
+    },
+    {
+      "start": 51.569,
+      "end": 54.03,
+      "text": "Vediamo ora stato, funzioni e pesi.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 51.569,
+          "end": 51.869
+        },
+        {
+          "text": "ora",
+          "start": 51.929,
+          "end": 52.069
+        },
+        {
+          "text": "stato,",
+          "start": 52.209,
+          "end": 52.589
+        },
+        {
+          "text": "funzioni",
+          "start": 52.769,
+          "end": 53.369
+        },
+        {
+          "text": "e",
+          "start": 53.59,
+          "end": 53.63
+        },
+        {
+          "text": "pesi.",
+          "start": 53.69,
+          "end": 54.03
+        }
+      ]
+    },
+    {
+      "start": 55.13,
+      "end": 57.03,
+      "text": "h in grassetto è uno stato nascosto:",
+      "words": [
+        {
+          "text": "h",
+          "start": 55.13,
+          "end": 55.17
+        },
+        {
+          "text": "in",
+          "start": 55.21,
+          "end": 55.27
+        },
+        {
+          "text": "grassetto",
+          "start": 55.31,
+          "end": 55.81
+        },
+        {
+          "text": "è",
+          "start": 55.95,
+          "end": 55.99
+        },
+        {
+          "text": "uno",
+          "start": 56.03,
+          "end": 56.15
+        },
+        {
+          "text": "stato",
+          "start": 56.21,
+          "end": 56.45
+        },
+        {
+          "text": "nascosto:",
+          "start": 56.49,
+          "end": 57.03
+        }
+      ]
+    },
+    {
+      "start": 57.63,
+      "end": 61.371,
+      "text": "strato nascosto, stato di una rete ricorrente o nodo di un grafo.",
+      "words": [
+        {
+          "text": "strato",
+          "start": 57.63,
+          "end": 57.97
+        },
+        {
+          "text": "nascosto,",
+          "start": 58.03,
+          "end": 58.61
+        },
+        {
+          "text": "stato",
+          "start": 58.81,
+          "end": 59.13
+        },
+        {
+          "text": "di",
+          "start": 59.171,
+          "end": 59.211
+        },
+        {
+          "text": "una",
+          "start": 59.231,
+          "end": 59.351
+        },
+        {
+          "text": "rete",
+          "start": 59.391,
+          "end": 59.571
+        },
+        {
+          "text": "ricorrente",
+          "start": 59.611,
+          "end": 60.271
+        },
+        {
+          "text": "o",
+          "start": 60.451,
+          "end": 60.491
+        },
+        {
+          "text": "nodo",
+          "start": 60.571,
+          "end": 60.791
+        },
+        {
+          "text": "di",
+          "start": 60.851,
+          "end": 60.891
+        },
+        {
+          "text": "un",
+          "start": 60.931,
+          "end": 60.991
+        },
+        {
+          "text": "grafo.",
+          "start": 61.031,
+          "end": 61.371
+        }
+      ]
+    },
+    {
+      "start": 62.331,
+      "end": 64.251,
+      "text": "f è la funzione target sconosciuta,",
+      "words": [
+        {
+          "text": "f",
+          "start": 62.331,
+          "end": 62.371
+        },
+        {
+          "text": "è",
+          "start": 62.591,
+          "end": 62.631
+        },
+        {
+          "text": "la",
+          "start": 62.671,
+          "end": 62.731
+        },
+        {
+          "text": "funzione",
+          "start": 62.771,
+          "end": 63.171
+        },
+        {
+          "text": "target",
+          "start": 63.211,
+          "end": 63.531
+        },
+        {
+          "text": "sconosciuta,",
+          "start": 63.591,
+          "end": 64.251
+        }
+      ]
+    },
+    {
+      "start": 64.832,
+      "end": 67.132,
+      "text": "e nelle reti la funzione di attivazione.",
+      "words": [
+        {
+          "text": "e",
+          "start": 64.832,
+          "end": 64.872
+        },
+        {
+          "text": "nelle",
+          "start": 65.152,
+          "end": 65.372
+        },
+        {
+          "text": "reti",
+          "start": 65.412,
+          "end": 65.712
+        },
+        {
+          "text": "la",
+          "start": 65.852,
+          "end": 65.932
+        },
+        {
+          "text": "funzione",
+          "start": 65.972,
+          "end": 66.352
+        },
+        {
+          "text": "di",
+          "start": 66.392,
+          "end": 66.432
+        },
+        {
+          "text": "attivazione.",
+          "start": 66.472,
+          "end": 67.132
+        }
+      ]
+    },
+    {
+      "start": 67.952,
+      "end": 69.312,
+      "text": "w sono i pesi",
+      "words": [
+        {
+          "text": "w",
+          "start": 67.952,
+          "end": 67.992
+        },
+        {
+          "text": "sono",
+          "start": 68.672,
+          "end": 68.852
+        },
+        {
+          "text": "i",
+          "start": 68.912,
+          "end": 68.95200000000001
+        },
+        {
+          "text": "pesi",
+          "start": 68.992,
+          "end": 69.312
+        }
+      ]
+    },
+    {
+      "start": 69.912,
+      "end": 72.893,
+      "text": "e w con zero il bias, indicato anche con b.",
+      "words": [
+        {
+          "text": "e",
+          "start": 69.912,
+          "end": 69.95200000000001
+        },
+        {
+          "text": "w",
+          "start": 70.032,
+          "end": 70.072
+        },
+        {
+          "text": "con",
+          "start": 70.473,
+          "end": 70.613
+        },
+        {
+          "text": "zero",
+          "start": 70.673,
+          "end": 70.913
+        },
+        {
+          "text": "il",
+          "start": 71.113,
+          "end": 71.213
+        },
+        {
+          "text": "bias,",
+          "start": 71.293,
+          "end": 71.773
+        },
+        {
+          "text": "indicato",
+          "start": 71.973,
+          "end": 72.393
+        },
+        {
+          "text": "anche",
+          "start": 72.453,
+          "end": 72.633
+        },
+        {
+          "text": "con",
+          "start": 72.673,
+          "end": 72.813
+        },
+        {
+          "text": "b.",
+          "start": 72.853,
+          "end": 72.893
+        }
+      ]
+    },
+    {
+      "start": 74.053,
+      "end": 77.294,
+      "text": "L è la loss sul singolo esempio ed E l'errore,",
+      "words": [
+        {
+          "text": "L",
+          "start": 74.053,
+          "end": 74.093
+        },
+        {
+          "text": "è",
+          "start": 74.293,
+          "end": 74.33300000000001
+        },
+        {
+          "text": "la",
+          "start": 74.373,
+          "end": 74.453
+        },
+        {
+          "text": "loss",
+          "start": 74.513,
+          "end": 74.793
+        },
+        {
+          "text": "sul",
+          "start": 74.913,
+          "end": 75.053
+        },
+        {
+          "text": "singolo",
+          "start": 75.133,
+          "end": 75.473
+        },
+        {
+          "text": "esempio",
+          "start": 75.513,
+          "end": 75.973
+        },
+        {
+          "text": "ed",
+          "start": 76.414,
+          "end": 76.514
+        },
+        {
+          "text": "E",
+          "start": 76.574,
+          "end": 76.614
+        },
+        {
+          "text": "l'errore,",
+          "start": 76.794,
+          "end": 77.294
+        }
+      ]
+    },
+    {
+      "start": 77.674,
+      "end": 82.475,
+      "text": "somma o media caso per caso, con il fattore un mezzo nella backpropagation.",
+      "words": [
+        {
+          "text": "somma",
+          "start": 77.674,
+          "end": 78.034
+        },
+        {
+          "text": "o",
+          "start": 78.214,
+          "end": 78.254
+        },
+        {
+          "text": "media",
+          "start": 78.314,
+          "end": 78.634
+        },
+        {
+          "text": "caso",
+          "start": 78.714,
+          "end": 78.914
+        },
+        {
+          "text": "per",
+          "start": 78.954,
+          "end": 79.074
+        },
+        {
+          "text": "caso,",
+          "start": 79.134,
+          "end": 79.414
+        },
+        {
+          "text": "con",
+          "start": 79.834,
+          "end": 79.974
+        },
+        {
+          "text": "il",
+          "start": 80.014,
+          "end": 80.094
+        },
+        {
+          "text": "fattore",
+          "start": 80.134,
+          "end": 80.594
+        },
+        {
+          "text": "un",
+          "start": 80.774,
+          "end": 80.854
+        },
+        {
+          "text": "mezzo",
+          "start": 80.914,
+          "end": 81.274
+        },
+        {
+          "text": "nella",
+          "start": 81.414,
+          "end": 81.614
+        },
+        {
+          "text": "backpropagation.",
+          "start": 81.654,
+          "end": 82.475
+        }
+      ]
+    },
+    {
+      "start": 83.315,
+      "end": 87.355,
+      "text": "Infine: R ed R empirico sono rischio vero e rischio empirico.",
+      "words": [
+        {
+          "text": "Infine:",
+          "start": 83.315,
+          "end": 83.775
+        },
+        {
+          "text": "R",
+          "start": 84.155,
+          "end": 84.19500000000001
+        },
+        {
+          "text": "ed",
+          "start": 84.375,
+          "end": 84.475
+        },
+        {
+          "text": "R",
+          "start": 84.635,
+          "end": 84.67500000000001
+        },
+        {
+          "text": "empirico",
+          "start": 84.695,
+          "end": 85.215
+        },
+        {
+          "text": "sono",
+          "start": 85.375,
+          "end": 85.555
+        },
+        {
+          "text": "rischio",
+          "start": 85.655,
+          "end": 86.015
+        },
+        {
+          "text": "vero",
+          "start": 86.055,
+          "end": 86.335
+        },
+        {
+          "text": "e",
+          "start": 86.435,
+          "end": 86.47500000000001
+        },
+        {
+          "text": "rischio",
+          "start": 86.575,
+          "end": 86.835
+        },
+        {
+          "text": "empirico.",
+          "start": 86.875,
+          "end": 87.355
+        }
+      ]
+    },
+    {
+      "start": 88.076,
+      "end": 90.976,
+      "text": "K maiuscolo è il numero di gruppi, tra fold,",
+      "words": [
+        {
+          "text": "K",
+          "start": 88.076,
+          "end": 88.116
+        },
+        {
+          "text": "maiuscolo",
+          "start": 88.376,
+          "end": 88.916
+        },
+        {
+          "text": "è",
+          "start": 89.016,
+          "end": 89.05600000000001
+        },
+        {
+          "text": "il",
+          "start": 89.096,
+          "end": 89.176
+        },
+        {
+          "text": "numero",
+          "start": 89.216,
+          "end": 89.456
+        },
+        {
+          "text": "di",
+          "start": 89.496,
+          "end": 89.556
+        },
+        {
+          "text": "gruppi,",
+          "start": 89.596,
+          "end": 89.976
+        },
+        {
+          "text": "tra",
+          "start": 90.276,
+          "end": 90.416
+        },
+        {
+          "text": "fold,",
+          "start": 90.596,
+          "end": 90.976
+        }
+      ]
+    },
+    {
+      "start": 91.116,
+      "end": 92.876,
+      "text": "cluster, classi o comitati;",
+      "words": [
+        {
+          "text": "cluster,",
+          "start": 91.116,
+          "end": 91.656
+        },
+        {
+          "text": "classi",
+          "start": 91.736,
+          "end": 92.176
+        },
+        {
+          "text": "o",
+          "start": 92.276,
+          "end": 92.316
+        },
+        {
+          "text": "comitati;",
+          "start": 92.356,
+          "end": 92.876
+        }
+      ]
+    },
+    {
+      "start": 93.537,
+      "end": 96.317,
+      "text": "k minuscolo i vicini nel K-NN.",
+      "words": [
+        {
+          "text": "k",
+          "start": 93.537,
+          "end": 93.57700000000001
+        },
+        {
+          "text": "minuscolo",
+          "start": 93.837,
+          "end": 94.337
+        },
+        {
+          "text": "i",
+          "start": 94.517,
+          "end": 94.557
+        },
+        {
+          "text": "vicini",
+          "start": 94.617,
+          "end": 95.117
+        },
+        {
+          "text": "nel",
+          "start": 95.297,
+          "end": 95.437
+        },
+        {
+          "text": "K-NN.",
+          "start": 95.517,
+          "end": 96.317
+        }
+      ]
+    },
+    {
+      "start": 97.337,
+      "end": 102.218,
+      "text": "eta, lambda e alfa sono learning rate, regolarizzazione e momentum,",
+      "words": [
+        {
+          "text": "eta,",
+          "start": 97.337,
+          "end": 97.617
+        },
+        {
+          "text": "lambda",
+          "start": 97.917,
+          "end": 98.277
+        },
+        {
+          "text": "e",
+          "start": 98.437,
+          "end": 98.477
+        },
+        {
+          "text": "alfa",
+          "start": 98.577,
+          "end": 98.898
+        },
+        {
+          "text": "sono",
+          "start": 99.098,
+          "end": 99.318
+        },
+        {
+          "text": "learning",
+          "start": 99.418,
+          "end": 99.778
+        },
+        {
+          "text": "rate,",
+          "start": 99.858,
+          "end": 100.238
+        },
+        {
+          "text": "regolarizzazione",
+          "start": 100.498,
+          "end": 101.478
+        },
+        {
+          "text": "e",
+          "start": 101.618,
+          "end": 101.658
+        },
+        {
+          "text": "momentum,",
+          "start": 101.718,
+          "end": 102.218
+        }
+      ]
+    },
+    {
+      "start": 102.758,
+      "end": 106.459,
+      "text": "mentre nelle SVM alfa con i sono i moltiplicatori di Lagrange.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 102.758,
+          "end": 103.058
+        },
+        {
+          "text": "nelle",
+          "start": 103.118,
+          "end": 103.318
+        },
+        {
+          "text": "SVM",
+          "start": 103.498,
+          "end": 103.918
+        },
+        {
+          "text": "alfa",
+          "start": 104.138,
+          "end": 104.399
+        },
+        {
+          "text": "con",
+          "start": 104.439,
+          "end": 104.599
+        },
+        {
+          "text": "i",
+          "start": 104.639,
+          "end": 104.679
+        },
+        {
+          "text": "sono",
+          "start": 104.839,
+          "end": 104.999
+        },
+        {
+          "text": "i",
+          "start": 105.039,
+          "end": 105.07900000000001
+        },
+        {
+          "text": "moltiplicatori",
+          "start": 105.119,
+          "end": 105.819
+        },
+        {
+          "text": "di",
+          "start": 105.859,
+          "end": 105.919
+        },
+        {
+          "text": "Lagrange.",
+          "start": 105.979,
+          "end": 106.459
+        }
+      ]
+    },
+    {
+      "start": 107.159,
+      "end": 112.44,
+      "text": "TR, VL e TS indicano training set, validation set e test set.",
+      "words": [
+        {
+          "text": "TR,",
+          "start": 107.159,
+          "end": 107.559
+        },
+        {
+          "text": "VL",
+          "start": 107.819,
+          "end": 108.159
+        },
+        {
+          "text": "e",
+          "start": 108.379,
+          "end": 108.41900000000001
+        },
+        {
+          "text": "TS",
+          "start": 108.459,
+          "end": 108.839
+        },
+        {
+          "text": "indicano",
+          "start": 109.119,
+          "end": 109.539
+        },
+        {
+          "text": "training",
+          "start": 109.679,
+          "end": 110.04
+        },
+        {
+          "text": "set,",
+          "start": 110.1,
+          "end": 110.36
+        },
+        {
+          "text": "validation",
+          "start": 110.58,
+          "end": 111.1
+        },
+        {
+          "text": "set",
+          "start": 111.18,
+          "end": 111.44
+        },
+        {
+          "text": "e",
+          "start": 111.76,
+          "end": 111.80000000000001
+        },
+        {
+          "text": "test",
+          "start": 111.86,
+          "end": 112.08
+        },
+        {
+          "text": "set.",
+          "start": 112.2,
+          "end": 112.44
+        }
+      ]
+    }
+  ]
+}

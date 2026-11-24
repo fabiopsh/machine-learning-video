@@ -53,7 +53,17 @@ export function mountThemeSwitcher(container) {
       </span>
       <span class="theme-pill-label">${t.label}</span>
     `;
-    btn.addEventListener("click", () => applyTheme(t.id));
+    btn.addEventListener("click", () => {
+      // On phones inside the compact player topbar, tapping the single active dot cycles themes cleanly
+      if (container.classList.contains("player-theme-compact") && window.innerWidth <= 680) {
+        const cur = document.documentElement.getAttribute("data-theme") || "obsidian";
+        const idx = THEMES.findIndex((x) => x.id === cur);
+        const next = THEMES[(idx + 1) % THEMES.length];
+        applyTheme(next.id);
+        return;
+      }
+      applyTheme(t.id);
+    });
     container.appendChild(btn);
   }
 }

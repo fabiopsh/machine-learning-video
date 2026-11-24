@@ -1,0 +1,1350 @@
+{
+  "duration": 96.771,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.38,
+      "text": "Questo capitolo raccoglie gli strumenti usati in tutto il corso:",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 0.08,
+          "end": 0.32
+        },
+        {
+          "text": "capitolo",
+          "start": 0.38,
+          "end": 0.82
+        },
+        {
+          "text": "raccoglie",
+          "start": 0.98,
+          "end": 1.38
+        },
+        {
+          "text": "gli",
+          "start": 1.4,
+          "end": 1.54
+        },
+        {
+          "text": "strumenti",
+          "start": 1.58,
+          "end": 2.0
+        },
+        {
+          "text": "usati",
+          "start": 2.06,
+          "end": 2.4
+        },
+        {
+          "text": "in",
+          "start": 2.44,
+          "end": 2.52
+        },
+        {
+          "text": "tutto",
+          "start": 2.6,
+          "end": 2.84
+        },
+        {
+          "text": "il",
+          "start": 2.88,
+          "end": 2.94
+        },
+        {
+          "text": "corso:",
+          "start": 3.0,
+          "end": 3.38
+        }
+      ]
+    },
+    {
+      "start": 3.74,
+      "end": 10.521,
+      "text": "prodotto scalare e norme, derivate parziali e gradiente, regole di derivazione per funzioni composte e",
+      "words": [
+        {
+          "text": "prodotto",
+          "start": 3.74,
+          "end": 4.16
+        },
+        {
+          "text": "scalare",
+          "start": 4.2,
+          "end": 4.6
+        },
+        {
+          "text": "e",
+          "start": 4.62,
+          "end": 4.66
+        },
+        {
+          "text": "norme,",
+          "start": 4.68,
+          "end": 5.06
+        },
+        {
+          "text": "derivate",
+          "start": 5.361,
+          "end": 5.741
+        },
+        {
+          "text": "parziali",
+          "start": 5.781,
+          "end": 6.241
+        },
+        {
+          "text": "e",
+          "start": 6.281,
+          "end": 6.321
+        },
+        {
+          "text": "gradiente,",
+          "start": 6.361,
+          "end": 6.981
+        },
+        {
+          "text": "regole",
+          "start": 7.481,
+          "end": 7.821
+        },
+        {
+          "text": "di",
+          "start": 7.881,
+          "end": 7.941
+        },
+        {
+          "text": "derivazione",
+          "start": 7.981,
+          "end": 8.681
+        },
+        {
+          "text": "per",
+          "start": 8.781,
+          "end": 8.921
+        },
+        {
+          "text": "funzioni",
+          "start": 8.981,
+          "end": 9.421
+        },
+        {
+          "text": "composte",
+          "start": 9.481,
+          "end": 10.041
+        },
+        {
+          "text": "e",
+          "start": 10.481,
+          "end": 10.521
+        }
+      ]
+    },
+    {
+      "start": 10.561,
+      "end": 11.721,
+      "text": "richiami di probabilità.",
+      "words": [
+        {
+          "text": "richiami",
+          "start": 10.561,
+          "end": 10.941
+        },
+        {
+          "text": "di",
+          "start": 11.001,
+          "end": 11.061
+        },
+        {
+          "text": "probabilità.",
+          "start": 11.121,
+          "end": 11.721
+        }
+      ]
+    },
+    {
+      "start": 12.541,
+      "end": 15.141,
+      "text": "Notazione: x è uno scalare,",
+      "words": [
+        {
+          "text": "Notazione:",
+          "start": 12.541,
+          "end": 13.141
+        },
+        {
+          "text": "x",
+          "start": 14.041,
+          "end": 14.081
+        },
+        {
+          "text": "è",
+          "start": 14.361,
+          "end": 14.401
+        },
+        {
+          "text": "uno",
+          "start": 14.481,
+          "end": 14.621
+        },
+        {
+          "text": "scalare,",
+          "start": 14.681,
+          "end": 15.141
+        }
+      ]
+    },
+    {
+      "start": 15.722,
+      "end": 19.022,
+      "text": "x in grassetto un vettore colonna, X una matrice.",
+      "words": [
+        {
+          "text": "x",
+          "start": 15.722,
+          "end": 15.762
+        },
+        {
+          "text": "in",
+          "start": 15.902,
+          "end": 15.942
+        },
+        {
+          "text": "grassetto",
+          "start": 15.982,
+          "end": 16.502
+        },
+        {
+          "text": "un",
+          "start": 16.582,
+          "end": 16.662
+        },
+        {
+          "text": "vettore",
+          "start": 16.722,
+          "end": 17.102
+        },
+        {
+          "text": "colonna,",
+          "start": 17.142,
+          "end": 17.642
+        },
+        {
+          "text": "X",
+          "start": 18.142,
+          "end": 18.182
+        },
+        {
+          "text": "una",
+          "start": 18.482,
+          "end": 18.602
+        },
+        {
+          "text": "matrice.",
+          "start": 18.642,
+          "end": 19.022
+        }
+      ]
+    },
+    {
+      "start": 19.902,
+      "end": 22.582,
+      "text": "Dati due vettori a e b in R alla n,",
+      "words": [
+        {
+          "text": "Dati",
+          "start": 19.902,
+          "end": 20.122
+        },
+        {
+          "text": "due",
+          "start": 20.222,
+          "end": 20.362
+        },
+        {
+          "text": "vettori",
+          "start": 20.402,
+          "end": 20.802
+        },
+        {
+          "text": "a",
+          "start": 20.982,
+          "end": 21.022
+        },
+        {
+          "text": "e",
+          "start": 21.242,
+          "end": 21.282
+        },
+        {
+          "text": "b",
+          "start": 21.402,
+          "end": 21.442
+        },
+        {
+          "text": "in",
+          "start": 21.722,
+          "end": 21.822
+        },
+        {
+          "text": "R",
+          "start": 22.022,
+          "end": 22.062
+        },
+        {
+          "text": "alla",
+          "start": 22.122,
+          "end": 22.282
+        },
+        {
+          "text": "n,",
+          "start": 22.542,
+          "end": 22.582
+        }
+      ]
+    },
+    {
+      "start": 23.002,
+      "end": 28.483,
+      "text": "il prodotto scalare, detto inner o dot product, è la somma per i da uno",
+      "words": [
+        {
+          "text": "il",
+          "start": 23.002,
+          "end": 23.082
+        },
+        {
+          "text": "prodotto",
+          "start": 23.122,
+          "end": 23.482
+        },
+        {
+          "text": "scalare,",
+          "start": 23.522,
+          "end": 24.002
+        },
+        {
+          "text": "detto",
+          "start": 24.142,
+          "end": 24.422
+        },
+        {
+          "text": "inner",
+          "start": 24.662,
+          "end": 25.002
+        },
+        {
+          "text": "o",
+          "start": 25.162,
+          "end": 25.202
+        },
+        {
+          "text": "dot",
+          "start": 25.442,
+          "end": 25.662
+        },
+        {
+          "text": "product,",
+          "start": 25.802,
+          "end": 26.263
+        },
+        {
+          "text": "è",
+          "start": 26.803,
+          "end": 26.843
+        },
+        {
+          "text": "la",
+          "start": 26.903,
+          "end": 26.963
+        },
+        {
+          "text": "somma",
+          "start": 27.023,
+          "end": 27.263
+        },
+        {
+          "text": "per",
+          "start": 27.323,
+          "end": 27.463
+        },
+        {
+          "text": "i",
+          "start": 27.683,
+          "end": 27.723
+        },
+        {
+          "text": "da",
+          "start": 28.043,
+          "end": 28.123
+        },
+        {
+          "text": "uno",
+          "start": 28.263,
+          "end": 28.483
+        }
+      ]
+    },
+    {
+      "start": 28.643,
+      "end": 30.963,
+      "text": "a n di a con i per b con i,",
+      "words": [
+        {
+          "text": "a",
+          "start": 28.643,
+          "end": 28.683
+        },
+        {
+          "text": "n",
+          "start": 29.003,
+          "end": 29.043
+        },
+        {
+          "text": "di",
+          "start": 29.423,
+          "end": 29.503
+        },
+        {
+          "text": "a",
+          "start": 29.703,
+          "end": 29.743
+        },
+        {
+          "text": "con",
+          "start": 29.843,
+          "end": 30.003
+        },
+        {
+          "text": "i",
+          "start": 30.043,
+          "end": 30.083
+        },
+        {
+          "text": "per",
+          "start": 30.303,
+          "end": 30.443
+        },
+        {
+          "text": "b",
+          "start": 30.543,
+          "end": 30.583
+        },
+        {
+          "text": "con",
+          "start": 30.703,
+          "end": 30.863
+        },
+        {
+          "text": "i,",
+          "start": 30.923,
+          "end": 30.963
+        }
+      ]
+    },
+    {
+      "start": 31.523,
+      "end": 35.443,
+      "text": "pari al prodotto delle norme per il coseno dell'angolo teta tra i due vettori.",
+      "words": [
+        {
+          "text": "pari",
+          "start": 31.523,
+          "end": 31.743
+        },
+        {
+          "text": "al",
+          "start": 31.803,
+          "end": 31.903
+        },
+        {
+          "text": "prodotto",
+          "start": 31.943,
+          "end": 32.343
+        },
+        {
+          "text": "delle",
+          "start": 32.383,
+          "end": 32.543
+        },
+        {
+          "text": "norme",
+          "start": 32.603,
+          "end": 32.903
+        },
+        {
+          "text": "per",
+          "start": 32.983,
+          "end": 33.083
+        },
+        {
+          "text": "il",
+          "start": 33.123,
+          "end": 33.203
+        },
+        {
+          "text": "coseno",
+          "start": 33.243,
+          "end": 33.623
+        },
+        {
+          "text": "dell'angolo",
+          "start": 33.663,
+          "end": 34.183
+        },
+        {
+          "text": "teta",
+          "start": 34.223,
+          "end": 34.503
+        },
+        {
+          "text": "tra",
+          "start": 34.643,
+          "end": 34.743
+        },
+        {
+          "text": "i",
+          "start": 34.803,
+          "end": 34.843
+        },
+        {
+          "text": "due",
+          "start": 34.863,
+          "end": 34.983
+        },
+        {
+          "text": "vettori.",
+          "start": 35.003,
+          "end": 35.443
+        }
+      ]
+    },
+    {
+      "start": 36.183,
+      "end": 38.484,
+      "text": "Notazioni equivalenti: a punto b,",
+      "words": [
+        {
+          "text": "Notazioni",
+          "start": 36.183,
+          "end": 36.664
+        },
+        {
+          "text": "equivalenti:",
+          "start": 36.704,
+          "end": 37.364
+        },
+        {
+          "text": "a",
+          "start": 37.784,
+          "end": 37.824
+        },
+        {
+          "text": "punto",
+          "start": 38.064,
+          "end": 38.364
+        },
+        {
+          "text": "b,",
+          "start": 38.444,
+          "end": 38.484
+        }
+      ]
+    },
+    {
+      "start": 39.184,
+      "end": 42.144,
+      "text": "a trasposto b con T maiuscola o minuscola,",
+      "words": [
+        {
+          "text": "a",
+          "start": 39.184,
+          "end": 39.224
+        },
+        {
+          "text": "trasposto",
+          "start": 39.324,
+          "end": 39.864
+        },
+        {
+          "text": "b",
+          "start": 39.944,
+          "end": 39.984
+        },
+        {
+          "text": "con",
+          "start": 40.404,
+          "end": 40.544
+        },
+        {
+          "text": "T",
+          "start": 40.624,
+          "end": 40.664
+        },
+        {
+          "text": "maiuscola",
+          "start": 40.804,
+          "end": 41.364
+        },
+        {
+          "text": "o",
+          "start": 41.504,
+          "end": 41.544
+        },
+        {
+          "text": "minuscola,",
+          "start": 41.624,
+          "end": 42.144
+        }
+      ]
+    },
+    {
+      "start": 42.784,
+      "end": 47.205,
+      "text": "parentesi angolari a virgola b, o solo a b quando chiaro.",
+      "words": [
+        {
+          "text": "parentesi",
+          "start": 42.784,
+          "end": 43.344
+        },
+        {
+          "text": "angolari",
+          "start": 43.404,
+          "end": 43.944
+        },
+        {
+          "text": "a",
+          "start": 44.204,
+          "end": 44.244
+        },
+        {
+          "text": "virgola",
+          "start": 44.464,
+          "end": 44.844
+        },
+        {
+          "text": "b,",
+          "start": 44.924,
+          "end": 44.964
+        },
+        {
+          "text": "o",
+          "start": 45.384,
+          "end": 45.424
+        },
+        {
+          "text": "solo",
+          "start": 45.544,
+          "end": 45.804
+        },
+        {
+          "text": "a",
+          "start": 46.044,
+          "end": 46.084
+        },
+        {
+          "text": "b",
+          "start": 46.164,
+          "end": 46.204
+        },
+        {
+          "text": "quando",
+          "start": 46.625,
+          "end": 46.865
+        },
+        {
+          "text": "chiaro.",
+          "start": 46.925,
+          "end": 47.205
+        }
+      ]
+    },
+    {
+      "start": 48.245,
+      "end": 50.865,
+      "text": "La forma con il coseno dà la lettura geometrica:",
+      "words": [
+        {
+          "text": "La",
+          "start": 48.245,
+          "end": 48.305
+        },
+        {
+          "text": "forma",
+          "start": 48.345,
+          "end": 48.585
+        },
+        {
+          "text": "con",
+          "start": 48.645,
+          "end": 48.745
+        },
+        {
+          "text": "il",
+          "start": 48.785,
+          "end": 48.885
+        },
+        {
+          "text": "coseno",
+          "start": 48.925,
+          "end": 49.405
+        },
+        {
+          "text": "dà",
+          "start": 49.625,
+          "end": 49.705
+        },
+        {
+          "text": "la",
+          "start": 49.785,
+          "end": 49.845
+        },
+        {
+          "text": "lettura",
+          "start": 49.905,
+          "end": 50.225
+        },
+        {
+          "text": "geometrica:",
+          "start": 50.285,
+          "end": 50.865
+        }
+      ]
+    },
+    {
+      "start": 51.345,
+      "end": 54.365,
+      "text": "misura quanto due vettori puntano nella stessa direzione.",
+      "words": [
+        {
+          "text": "misura",
+          "start": 51.345,
+          "end": 51.625
+        },
+        {
+          "text": "quanto",
+          "start": 51.725,
+          "end": 52.025
+        },
+        {
+          "text": "due",
+          "start": 52.125,
+          "end": 52.285
+        },
+        {
+          "text": "vettori",
+          "start": 52.305,
+          "end": 52.685
+        },
+        {
+          "text": "puntano",
+          "start": 52.745,
+          "end": 53.125
+        },
+        {
+          "text": "nella",
+          "start": 53.185,
+          "end": 53.405
+        },
+        {
+          "text": "stessa",
+          "start": 53.465,
+          "end": 53.745
+        },
+        {
+          "text": "direzione.",
+          "start": 53.785,
+          "end": 54.365
+        }
+      ]
+    },
+    {
+      "start": 54.965,
+      "end": 58.986,
+      "text": "È massimo se paralleli e concordi, nullo se ortogonali,",
+      "words": [
+        {
+          "text": "È",
+          "start": 54.965,
+          "end": 55.005
+        },
+        {
+          "text": "massimo",
+          "start": 55.145,
+          "end": 55.625
+        },
+        {
+          "text": "se",
+          "start": 55.785,
+          "end": 55.865
+        },
+        {
+          "text": "paralleli",
+          "start": 55.945,
+          "end": 56.405
+        },
+        {
+          "text": "e",
+          "start": 56.445,
+          "end": 56.485
+        },
+        {
+          "text": "concordi,",
+          "start": 56.545,
+          "end": 57.166
+        },
+        {
+          "text": "nullo",
+          "start": 57.686,
+          "end": 58.066
+        },
+        {
+          "text": "se",
+          "start": 58.226,
+          "end": 58.286
+        },
+        {
+          "text": "ortogonali,",
+          "start": 58.346,
+          "end": 58.986
+        }
+      ]
+    },
+    {
+      "start": 59.266,
+      "end": 60.326,
+      "text": "negativo se opposti.",
+      "words": [
+        {
+          "text": "negativo",
+          "start": 59.266,
+          "end": 59.686
+        },
+        {
+          "text": "se",
+          "start": 59.746,
+          "end": 59.826
+        },
+        {
+          "text": "opposti.",
+          "start": 59.866,
+          "end": 60.326
+        }
+      ]
+    },
+    {
+      "start": 61.226,
+      "end": 67.16600000000001,
+      "text": "Nei modelli lineari, w trasposto x misura l'allineamento tra input x e pesi w.",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 61.226,
+          "end": 61.386
+        },
+        {
+          "text": "modelli",
+          "start": 61.446,
+          "end": 61.806
+        },
+        {
+          "text": "lineari,",
+          "start": 61.886,
+          "end": 62.386
+        },
+        {
+          "text": "w",
+          "start": 62.726,
+          "end": 62.766
+        },
+        {
+          "text": "trasposto",
+          "start": 62.926,
+          "end": 63.486
+        },
+        {
+          "text": "x",
+          "start": 63.706,
+          "end": 63.746
+        },
+        {
+          "text": "misura",
+          "start": 64.086,
+          "end": 64.406
+        },
+        {
+          "text": "l'allineamento",
+          "start": 64.526,
+          "end": 65.226
+        },
+        {
+          "text": "tra",
+          "start": 65.266,
+          "end": 65.386
+        },
+        {
+          "text": "input",
+          "start": 65.566,
+          "end": 65.906
+        },
+        {
+          "text": "x",
+          "start": 66.206,
+          "end": 66.24600000000001
+        },
+        {
+          "text": "e",
+          "start": 66.646,
+          "end": 66.686
+        },
+        {
+          "text": "pesi",
+          "start": 66.806,
+          "end": 67.046
+        },
+        {
+          "text": "w.",
+          "start": 67.126,
+          "end": 67.16600000000001
+        }
+      ]
+    },
+    {
+      "start": 68.147,
+      "end": 72.227,
+      "text": "Vediamo un esempio numerico guidato con w uguale a due virgola uno.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 68.147,
+          "end": 68.427
+        },
+        {
+          "text": "un",
+          "start": 68.467,
+          "end": 68.527
+        },
+        {
+          "text": "esempio",
+          "start": 68.567,
+          "end": 68.867
+        },
+        {
+          "text": "numerico",
+          "start": 68.907,
+          "end": 69.307
+        },
+        {
+          "text": "guidato",
+          "start": 69.367,
+          "end": 69.847
+        },
+        {
+          "text": "con",
+          "start": 69.907,
+          "end": 70.087
+        },
+        {
+          "text": "w",
+          "start": 70.407,
+          "end": 70.447
+        },
+        {
+          "text": "uguale",
+          "start": 70.667,
+          "end": 71.027
+        },
+        {
+          "text": "a",
+          "start": 71.087,
+          "end": 71.12700000000001
+        },
+        {
+          "text": "due",
+          "start": 71.247,
+          "end": 71.467
+        },
+        {
+          "text": "virgola",
+          "start": 71.607,
+          "end": 71.967
+        },
+        {
+          "text": "uno.",
+          "start": 72.047,
+          "end": 72.227
+        }
+      ]
+    },
+    {
+      "start": 72.847,
+      "end": 75.207,
+      "text": "Con x con uno uguale a tre virgola uno:",
+      "words": [
+        {
+          "text": "Con",
+          "start": 72.847,
+          "end": 72.967
+        },
+        {
+          "text": "x",
+          "start": 73.107,
+          "end": 73.147
+        },
+        {
+          "text": "con",
+          "start": 73.247,
+          "end": 73.367
+        },
+        {
+          "text": "uno",
+          "start": 73.427,
+          "end": 73.607
+        },
+        {
+          "text": "uguale",
+          "start": 73.727,
+          "end": 74.027
+        },
+        {
+          "text": "a",
+          "start": 74.087,
+          "end": 74.12700000000001
+        },
+        {
+          "text": "tre",
+          "start": 74.227,
+          "end": 74.367
+        },
+        {
+          "text": "virgola",
+          "start": 74.587,
+          "end": 74.927
+        },
+        {
+          "text": "uno:",
+          "start": 75.027,
+          "end": 75.207
+        }
+      ]
+    },
+    {
+      "start": 75.827,
+      "end": 78.528,
+      "text": "due per tre più uno per uno fa più sette,",
+      "words": [
+        {
+          "text": "due",
+          "start": 75.827,
+          "end": 75.987
+        },
+        {
+          "text": "per",
+          "start": 76.047,
+          "end": 76.187
+        },
+        {
+          "text": "tre",
+          "start": 76.267,
+          "end": 76.407
+        },
+        {
+          "text": "più",
+          "start": 76.687,
+          "end": 76.807
+        },
+        {
+          "text": "uno",
+          "start": 77.007,
+          "end": 77.187
+        },
+        {
+          "text": "per",
+          "start": 77.227,
+          "end": 77.367
+        },
+        {
+          "text": "uno",
+          "start": 77.427,
+          "end": 77.607
+        },
+        {
+          "text": "fa",
+          "start": 77.788,
+          "end": 77.868
+        },
+        {
+          "text": "più",
+          "start": 77.948,
+          "end": 78.048
+        },
+        {
+          "text": "sette,",
+          "start": 78.168,
+          "end": 78.528
+        }
+      ]
+    },
+    {
+      "start": 78.768,
+      "end": 80.648,
+      "text": "positivo, vettori concordi.",
+      "words": [
+        {
+          "text": "positivo,",
+          "start": 78.768,
+          "end": 79.308
+        },
+        {
+          "text": "vettori",
+          "start": 79.628,
+          "end": 79.968
+        },
+        {
+          "text": "concordi.",
+          "start": 80.068,
+          "end": 80.648
+        }
+      ]
+    },
+    {
+      "start": 81.328,
+      "end": 84.108,
+      "text": "Con x con due uguale a meno uno virgola due:",
+      "words": [
+        {
+          "text": "Con",
+          "start": 81.328,
+          "end": 81.448
+        },
+        {
+          "text": "x",
+          "start": 81.568,
+          "end": 81.608
+        },
+        {
+          "text": "con",
+          "start": 81.688,
+          "end": 81.828
+        },
+        {
+          "text": "due",
+          "start": 81.888,
+          "end": 82.088
+        },
+        {
+          "text": "uguale",
+          "start": 82.268,
+          "end": 82.608
+        },
+        {
+          "text": "a",
+          "start": 82.668,
+          "end": 82.70800000000001
+        },
+        {
+          "text": "meno",
+          "start": 82.808,
+          "end": 83.028
+        },
+        {
+          "text": "uno",
+          "start": 83.148,
+          "end": 83.348
+        },
+        {
+          "text": "virgola",
+          "start": 83.448,
+          "end": 83.808
+        },
+        {
+          "text": "due:",
+          "start": 83.888,
+          "end": 84.108
+        }
+      ]
+    },
+    {
+      "start": 84.648,
+      "end": 88.449,
+      "text": "meno due più due fa zero, perfettamente ortogonali a novanta gradi.",
+      "words": [
+        {
+          "text": "meno",
+          "start": 84.648,
+          "end": 84.828
+        },
+        {
+          "text": "due",
+          "start": 84.888,
+          "end": 85.048
+        },
+        {
+          "text": "più",
+          "start": 85.108,
+          "end": 85.208
+        },
+        {
+          "text": "due",
+          "start": 85.268,
+          "end": 85.428
+        },
+        {
+          "text": "fa",
+          "start": 85.488,
+          "end": 85.548
+        },
+        {
+          "text": "zero,",
+          "start": 85.668,
+          "end": 85.928
+        },
+        {
+          "text": "perfettamente",
+          "start": 86.208,
+          "end": 86.868
+        },
+        {
+          "text": "ortogonali",
+          "start": 86.908,
+          "end": 87.508
+        },
+        {
+          "text": "a",
+          "start": 87.628,
+          "end": 87.668
+        },
+        {
+          "text": "novanta",
+          "start": 87.748,
+          "end": 88.109
+        },
+        {
+          "text": "gradi.",
+          "start": 88.169,
+          "end": 88.449
+        }
+      ]
+    },
+    {
+      "start": 89.029,
+      "end": 92.169,
+      "text": "Con x con tre uguale a meno due virgola meno uno:",
+      "words": [
+        {
+          "text": "Con",
+          "start": 89.029,
+          "end": 89.149
+        },
+        {
+          "text": "x",
+          "start": 89.289,
+          "end": 89.32900000000001
+        },
+        {
+          "text": "con",
+          "start": 89.409,
+          "end": 89.529
+        },
+        {
+          "text": "tre",
+          "start": 89.569,
+          "end": 89.709
+        },
+        {
+          "text": "uguale",
+          "start": 89.909,
+          "end": 90.249
+        },
+        {
+          "text": "a",
+          "start": 90.289,
+          "end": 90.32900000000001
+        },
+        {
+          "text": "meno",
+          "start": 90.429,
+          "end": 90.649
+        },
+        {
+          "text": "due",
+          "start": 90.729,
+          "end": 90.929
+        },
+        {
+          "text": "virgola",
+          "start": 91.109,
+          "end": 91.509
+        },
+        {
+          "text": "meno",
+          "start": 91.629,
+          "end": 91.849
+        },
+        {
+          "text": "uno:",
+          "start": 91.989,
+          "end": 92.169
+        }
+      ]
+    },
+    {
+      "start": 92.709,
+      "end": 96.589,
+      "text": "meno quattro meno uno fa meno cinque, negativo, versi opposti.",
+      "words": [
+        {
+          "text": "meno",
+          "start": 92.709,
+          "end": 92.869
+        },
+        {
+          "text": "quattro",
+          "start": 92.929,
+          "end": 93.329
+        },
+        {
+          "text": "meno",
+          "start": 93.509,
+          "end": 93.669
+        },
+        {
+          "text": "uno",
+          "start": 93.769,
+          "end": 93.909
+        },
+        {
+          "text": "fa",
+          "start": 93.949,
+          "end": 94.029
+        },
+        {
+          "text": "meno",
+          "start": 94.089,
+          "end": 94.229
+        },
+        {
+          "text": "cinque,",
+          "start": 94.289,
+          "end": 94.669
+        },
+        {
+          "text": "negativo,",
+          "start": 94.909,
+          "end": 95.409
+        },
+        {
+          "text": "versi",
+          "start": 95.649,
+          "end": 95.949
+        },
+        {
+          "text": "opposti.",
+          "start": 96.089,
+          "end": 96.589
+        }
+      ]
+    }
+  ]
+}

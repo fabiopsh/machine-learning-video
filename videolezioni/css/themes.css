@@ -1826,3 +1826,556 @@ body.clean-mode .slide-frame {
   justify-content: center;
   overflow: hidden !important;
 }
+
+/* --------------------------------------------------------------------------
+   7. MODERN ROUNDED ICON TOPBAR (SPOTIFY-ALIGNED) + TABLET & MOBILE RESPONSIVE
+   -------------------------------------------------------------------------- */
+
+.topbar {
+  gap: 12px;
+  z-index: 45;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px 5px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, transform 140ms var(--ease-out);
+}
+
+.back-link:hover {
+  transform: translateY(-0.5px);
+}
+
+.lesson-chap-tag {
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+/* Compact rounded swatch pill inside player topbar */
+.player-theme-compact.theme-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 5px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.player-theme-compact .theme-pill {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  justify-content: center;
+  border: 1.5px solid transparent;
+  background: transparent;
+}
+
+.player-theme-compact .theme-pill-label {
+  display: none;
+}
+
+.player-theme-compact .theme-pill.active {
+  background: var(--bg-surface);
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px var(--blue-soft);
+}
+
+.player-theme-compact .theme-pill:hover:not(.active) {
+  transform: scale(1.1);
+}
+
+/* Rounded Spotify-style icon button dock in topbar */
+.topbar-icon-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+:root[data-theme="obsidian"] .player-theme-compact.theme-switcher,
+:root[data-theme="obsidian"] .topbar-icon-group {
+  background: rgba(22, 31, 51, 0.88);
+  border-color: rgba(148, 163, 184, 0.22);
+}
+
+.tb-icon-btn {
+  position: relative;
+  width: 31px;
+  height: 31px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-soft);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease, transform 140ms var(--ease-out), box-shadow 150ms ease;
+}
+
+.tb-icon-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.tb-icon-btn:hover {
+  background: var(--bg-surface);
+  color: var(--ink);
+  transform: scale(1.06);
+}
+
+.tb-icon-btn.active {
+  background: var(--blue-soft);
+  border-color: rgba(31, 90, 158, 0.32);
+  color: var(--blue);
+}
+
+:root[data-theme="obsidian"] .tb-icon-btn {
+  color: #94A3B8;
+}
+
+:root[data-theme="obsidian"] .tb-icon-btn:hover {
+  background: rgba(30, 41, 59, 0.95);
+  color: #F8FAFC;
+}
+
+:root[data-theme="obsidian"] .tb-icon-btn.active {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: rgba(56, 189, 248, 0.5);
+  color: #7DD3FC;
+}
+
+/* Crisp hover tooltip pill on desktop pointers */
+@media (hover: hover) and (pointer: fine) {
+  .tb-icon-btn[data-tip]::after {
+    content: attr(data-tip);
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-3px);
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: #0F172A;
+    color: #F8FAFC;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+    font-size: 0.72rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 90;
+    transition: opacity 150ms ease, transform 150ms var(--ease-out);
+  }
+  .tb-icon-btn[data-tip]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .tb-icon-btn:last-child[data-tip]::after {
+    left: auto;
+    right: 0;
+    transform: translateY(-3px);
+  }
+  .tb-icon-btn:last-child[data-tip]:hover::after {
+    transform: translateY(0);
+  }
+}
+
+/* Consistently rounded pill controls across Catalog Homepage */
+.view-switcher,
+.filter-group,
+.search-box,
+.theme-switcher {
+  border-radius: 999px;
+}
+
+.view-btn,
+.filter-btn,
+.theme-pill,
+.resume-cta,
+.stat-chip {
+  border-radius: 999px;
+}
+
+.spotify-scene-badge {
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+
+/* ---------- TABLET MODE (<= 1024px) — ZERO DESKTOP IMPACT ---------- */
+@media (max-width: 1024px) {
+  .player-body {
+    height: 100dvh;
+  }
+
+  .topbar {
+    height: 50px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .player-workspace {
+    position: relative;
+  }
+
+  /* Overlay slide-over sidebar drawer (never pushes or shrinks the slide) */
+  .scene-sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    width: min(300px, 84vw);
+    margin-left: 0 !important;
+    box-shadow: 14px 0 36px rgba(0, 0, 0, 0.34);
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: transform 240ms var(--ease-out), opacity 180ms ease;
+  }
+
+  .scene-sidebar.collapsed {
+    margin-left: 0 !important;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .stage-viewport {
+    padding: 10px 14px 6px;
+  }
+
+  .slide-frame {
+    padding: 16px 22px;
+  }
+
+  .subtitle-dock {
+    padding: 2px 14px 6px;
+  }
+
+  .subtitle-box {
+    height: 78px;
+    min-height: 78px;
+    max-height: 78px;
+    padding: 8px 16px;
+  }
+
+  .sub-current {
+    font-size: 0.96rem;
+  }
+
+  .sub-next {
+    font-size: 0.82rem;
+  }
+
+  .control-bar.spotify-bar {
+    grid-template-columns: minmax(90px, 0.75fr) minmax(240px, 1.85fr) auto;
+    gap: 12px;
+    padding: 9px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Catalog tablet adjustments */
+  .catalog-shell {
+    padding: 20px 18px 64px;
+  }
+
+  .bento-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- PHONE MODE (<= 680px) — CRISP TOUCH UX ---------- */
+@media (max-width: 680px) {
+  .topbar {
+    height: 48px;
+    padding: 0 8px;
+    gap: 6px;
+  }
+
+  .topbar-left {
+    gap: 6px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .back-link {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .back-link-label {
+    display: none;
+  }
+
+  .lesson-heading {
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .lesson-chap-tag {
+    font-size: 0.68rem;
+    padding: 2px 7px;
+  }
+
+  .lesson-title-bar {
+    font-size: 0.86rem;
+  }
+
+  .topbar-actions {
+    gap: 5px;
+    flex-shrink: 0;
+  }
+
+  /* Hide desktop-only Theater/Clean buttons on phones (already full-bleed) */
+  .tb-desktop-only {
+    display: none !important;
+  }
+
+  /* Compact single-dot theme cycler on phones */
+  .player-theme-compact.theme-switcher {
+    padding: 2px;
+  }
+
+  .player-theme-compact .theme-pill:not(.active) {
+    display: none;
+  }
+
+  .player-theme-compact .theme-pill.active {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tb-icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .tb-icon-btn svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  /* Phone Slide Stage: readable 1.0x single-column with smooth vertical touch scroll */
+  .stage-viewport {
+    padding: 6px 8px 4px;
+  }
+
+  .slide-frame {
+    padding: 14px 14px 20px;
+    border-radius: 12px;
+    justify-content: flex-start;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slide-card {
+    gap: 10px;
+  }
+
+  .slide-title {
+    font-size: 1.18rem;
+    line-height: 1.24;
+  }
+
+  .slide-kicker {
+    font-size: 0.68rem;
+  }
+
+  .split-visual,
+  .split-2,
+  .grid-2,
+  .grid-3,
+  .props-grid,
+  .proof-step {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+
+  .flow-chain {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    padding: 4px 0;
+    font-size: 0.92em;
+  }
+
+  .acad-table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.82rem;
+  }
+
+  .diagram-svg {
+    max-height: 230px;
+  }
+
+  /* Compact phone subtitle bar */
+  .subtitle-dock {
+    padding: 2px 8px 4px;
+  }
+
+  .subtitle-box {
+    height: 58px;
+    min-height: 58px;
+    max-height: 58px;
+    padding: 6px 12px;
+    border-radius: 10px;
+  }
+
+  .sub-current {
+    font-size: 0.86rem;
+    line-height: 1.28;
+  }
+
+  .sub-next {
+    display: none;
+  }
+
+  /* 2-row Spotify Mobile Player Bar (scrubber top, badge + transport + speed bottom) */
+  .control-bar.spotify-bar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "prog prog prog"
+      "left trans right";
+    align-items: center;
+    gap: 6px 8px;
+    padding: 7px 12px calc(9px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .spotify-center {
+    display: contents;
+  }
+
+  .spotify-progress {
+    grid-area: prog;
+    gap: 8px;
+  }
+
+  .spotify-progress .scrubber-wrap {
+    height: 22px;
+  }
+
+  .spotify-progress .scrubber-thumb {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .spotify-left {
+    display: flex !important;
+    grid-area: left;
+  }
+
+  .spotify-scene-title,
+  .audio-notice {
+    display: none;
+  }
+
+  .spotify-transport {
+    grid-area: trans;
+    gap: 10px;
+  }
+
+  .sp-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sp-btn-play {
+    width: 42px;
+    height: 42px;
+  }
+
+  .spotify-right {
+    grid-area: right;
+  }
+
+  .speed-pill {
+    padding: 2px 6px;
+  }
+
+  /* Catalog Phone Layout */
+  .catalog-shell {
+    padding: 14px 12px 52px;
+  }
+
+  .catalog-hero {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .hero-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #catalog-theme-switcher.theme-switcher {
+    flex-wrap: wrap;
+    max-width: 100%;
+    border-radius: 16px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  #catalog-theme-switcher .theme-pill {
+    padding: 4px 8px;
+    font-size: 0.72rem;
+  }
+
+  .catalog-toolbar-v2 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .toolbar-left,
+  .toolbar-right {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-track {
+    flex-direction: column;
+  }
+
+  .map-node-wrap {
+    width: 100%;
+  }
+}

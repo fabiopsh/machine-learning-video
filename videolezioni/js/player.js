@@ -252,7 +252,7 @@ function renderSidebar() {
     `;
     btn.addEventListener("click", () => {
       loadScene(idx, true);
-      if (document.body.classList.contains("theater-mode")) {
+      if (document.body.classList.contains("theater-mode") || isDrawerViewport()) {
         dom.sidebar.classList.add("collapsed");
         dom.toggleSidebar.classList.remove("active");
       }
@@ -302,13 +302,19 @@ function applyCuesAt(t) {
     }
   }
 
+  let newlyRevealedEl = null;
   for (const [selector, ranges] of showRanges.entries()) {
     const els = dom.stage.querySelectorAll(selector);
     const visible = state.revealAll || ranges.some((r) => t >= r.start && t < r.end);
     els.forEach((el) => {
+      const wasHidden = el.classList.contains("cue-hidden");
       el.classList.toggle("cue-visible", visible);
       el.classList.toggle("cue-hidden", !visible);
+      if (visible && wasHidden && !state.revealAll) newlyRevealedEl = el;
     });
+  }
+  if (newlyRevealedEl && isPhoneViewport()) {
+    newlyRevealedEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
   const hlCues = cues.filter((c) => c.action === "highlight").sort((a, b) => a.at - b.at);
@@ -387,9 +393,31 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;");
 }
 
+function isPhoneViewport() {
+  return window.innerWidth <= 680;
+}
+
+function isDrawerViewport() {
+  return window.innerWidth <= 1024;
+}
+
 function fitSlideScale() {
   const card = dom.stage.querySelector(".slide-card");
   if (!card) return 1;
+
+  // On phones (<= 680px), keep crisp 1.0x single-column typography with smooth touch scroll
+  if (isPhoneViewport()) {
+    card.style.zoom = "";
+    state.slideZoom = 1;
+    const hdr = card.querySelector(".slide-header-group");
+    if (hdr) {
+      const frameRect = dom.stage.getBoundingClientRect();
+      const hdrRect = hdr.getBoundingClientRect();
+      const shiftY = Math.max(0, Math.round((frameRect.height - hdrRect.height) / 2 - (hdrRect.top - frameRect.top)));
+      card.style.setProperty("--intro-y", `${Math.min(shiftY, 130)}px`);
+    }
+    return 1;
+  }
 
   // Freeze transitions & animations during synchronous measurement so intro-stage transform never distorts bounds
   dom.stage.classList.add("measuring-fit");
@@ -408,9 +436,10 @@ function fitSlideScale() {
   const availW = Math.max(300, dom.stage.clientWidth - padX);
   const availH = vp ? Math.max(340, vp.clientHeight - vpPadY - padY - 12) : Math.max(340, dom.stage.clientHeight - padY - 12);
 
-  // Never narrow logical layout below 660px (keeps 2-col grids, tables & display equations comfortable)
-  const maxByWidth = Math.max(1, availW / 660);
-  const hiCap = Math.min(1.65, maxByWidth);
+  // Never narrow logical layout below 660px on desktop (580px on tablet)
+  const minLogicalW = window.innerWidth <= 1024 ? 580 : 660;
+  const maxByWidth = Math.max(1, availW / minLogicalW);
+  const hiCap = Math.min(window.innerWidth <= 1024 ? 1.35 : 1.65, maxByWidth);
   const overflowWatchEls = Array.from(card.querySelectorAll(".katex-display, .acad-table, .box, .math-card"));
 
   const fitsAt = (z) => {
@@ -832,11 +861,17 @@ function setupControls() {
   }
 
   dom.stage.closest(".stage-column")?.addEventListener("pointerdown", () => {
-    if (document.body.classList.contains("theater-mode") && !dom.sidebar.classList.contains("collapsed")) {
+    if ((document.body.classList.contains("theater-mode") || isDrawerViewport()) && !dom.sidebar.classList.contains("collapsed")) {
       dom.sidebar.classList.add("collapsed");
       dom.toggleSidebar.classList.remove("active");
     }
   });
+
+  // Start with sidebar collapsed on tablets and phones so slides use full width immediately
+  if (isDrawerViewport()) {
+    dom.sidebar.classList.add("collapsed");
+    dom.toggleSidebar.classList.remove("active");
+  }
 
   dom.toggleAutoAdvance.addEventListener("click", () => {
     state.autoAdvance = !state.autoAdvance;
@@ -853,12 +888,19 @@ function setupControls() {
 
   if (dom.btnShare) {
     let shareResetTimer = null;
+    const origShareHtml = dom.btnShare.innerHTML;
+    const origShareTip = dom.btnShare.dataset.tip || "Condividi";
+    const ICON_CHECK_SHARE = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>`;
     const flashCopied = (label) => {
-      dom.btnShare.textContent = label;
+      dom.btnShare.innerHTML = ICON_CHECK_SHARE;
+      dom.btnShare.dataset.tip = label;
+      dom.btnShare.title = label;
       dom.btnShare.classList.add("active");
       if (shareResetTimer) clearTimeout(shareResetTimer);
       shareResetTimer = setTimeout(() => {
-        dom.btnShare.textContent = "Condividi";
+        dom.btnShare.innerHTML = origShareHtml;
+        dom.btnShare.dataset.tip = origShareTip;
+        dom.btnShare.title = "Copia link diretto";
         dom.btnShare.classList.remove("active");
       }, 1800);
     };

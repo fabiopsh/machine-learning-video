@@ -1,0 +1,1424 @@
+{
+  "duration": 91.789,
+  "segments": [
+    {
+      "start": 0.63,
+      "end": 5.09,
+      "text": "Passiamo alla probabilità, chiave per modellare rumore e generalizzazione.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.63,
+          "end": 0.91
+        },
+        {
+          "text": "alla",
+          "start": 0.93,
+          "end": 1.07
+        },
+        {
+          "text": "probabilità,",
+          "start": 1.09,
+          "end": 1.65
+        },
+        {
+          "text": "chiave",
+          "start": 2.15,
+          "end": 2.49
+        },
+        {
+          "text": "per",
+          "start": 2.65,
+          "end": 2.77
+        },
+        {
+          "text": "modellare",
+          "start": 2.83,
+          "end": 3.35
+        },
+        {
+          "text": "rumore",
+          "start": 3.43,
+          "end": 3.87
+        },
+        {
+          "text": "e",
+          "start": 4.01,
+          "end": 4.05
+        },
+        {
+          "text": "generalizzazione.",
+          "start": 4.11,
+          "end": 5.09
+        }
+      ]
+    },
+    {
+      "start": 5.87,
+      "end": 11.091,
+      "text": "Per una variabile aleatoria discreta Z che assume valori z con i con probabilità P",
+      "words": [
+        {
+          "text": "Per",
+          "start": 5.87,
+          "end": 5.99
+        },
+        {
+          "text": "una",
+          "start": 6.01,
+          "end": 6.15
+        },
+        {
+          "text": "variabile",
+          "start": 6.19,
+          "end": 6.67
+        },
+        {
+          "text": "aleatoria",
+          "start": 6.71,
+          "end": 7.23
+        },
+        {
+          "text": "discreta",
+          "start": 7.29,
+          "end": 7.75
+        },
+        {
+          "text": "Z",
+          "start": 7.87,
+          "end": 7.91
+        },
+        {
+          "text": "che",
+          "start": 8.45,
+          "end": 8.51
+        },
+        {
+          "text": "assume",
+          "start": 8.55,
+          "end": 8.83
+        },
+        {
+          "text": "valori",
+          "start": 8.87,
+          "end": 9.171
+        },
+        {
+          "text": "z",
+          "start": 9.231,
+          "end": 9.271
+        },
+        {
+          "text": "con",
+          "start": 9.491,
+          "end": 9.631
+        },
+        {
+          "text": "i",
+          "start": 9.671,
+          "end": 9.711
+        },
+        {
+          "text": "con",
+          "start": 10.071,
+          "end": 10.211
+        },
+        {
+          "text": "probabilità",
+          "start": 10.231,
+          "end": 10.811
+        },
+        {
+          "text": "P",
+          "start": 11.051,
+          "end": 11.091
+        }
+      ]
+    },
+    {
+      "start": 11.251,
+      "end": 14.431,
+      "text": "di z con i, il valore atteso Z soprassegnato,",
+      "words": [
+        {
+          "text": "di",
+          "start": 11.251,
+          "end": 11.331
+        },
+        {
+          "text": "z",
+          "start": 11.411,
+          "end": 11.451
+        },
+        {
+          "text": "con",
+          "start": 11.671,
+          "end": 11.811
+        },
+        {
+          "text": "i,",
+          "start": 11.851,
+          "end": 11.891
+        },
+        {
+          "text": "il",
+          "start": 12.391,
+          "end": 12.491
+        },
+        {
+          "text": "valore",
+          "start": 12.531,
+          "end": 12.811
+        },
+        {
+          "text": "atteso",
+          "start": 12.851,
+          "end": 13.251
+        },
+        {
+          "text": "Z",
+          "start": 13.371,
+          "end": 13.411
+        },
+        {
+          "text": "soprassegnato,",
+          "start": 13.651,
+          "end": 14.431
+        }
+      ]
+    },
+    {
+      "start": 14.771,
+      "end": 16.291,
+      "text": "o E secondo P di Z,",
+      "words": [
+        {
+          "text": "o",
+          "start": 14.771,
+          "end": 14.811
+        },
+        {
+          "text": "E",
+          "start": 15.011,
+          "end": 15.051
+        },
+        {
+          "text": "secondo",
+          "start": 15.371,
+          "end": 15.831
+        },
+        {
+          "text": "P",
+          "start": 15.931,
+          "end": 15.971
+        },
+        {
+          "text": "di",
+          "start": 16.071,
+          "end": 16.151
+        },
+        {
+          "text": "Z,",
+          "start": 16.251,
+          "end": 16.291
+        }
+      ]
+    },
+    {
+      "start": 17.131,
+      "end": 19.592,
+      "text": "è somma di z con i per P di z con i.",
+      "words": [
+        {
+          "text": "è",
+          "start": 17.131,
+          "end": 17.171
+        },
+        {
+          "text": "somma",
+          "start": 17.371,
+          "end": 17.711
+        },
+        {
+          "text": "di",
+          "start": 17.771,
+          "end": 17.851
+        },
+        {
+          "text": "z",
+          "start": 17.931,
+          "end": 17.971
+        },
+        {
+          "text": "con",
+          "start": 18.211,
+          "end": 18.351
+        },
+        {
+          "text": "i",
+          "start": 18.411,
+          "end": 18.451
+        },
+        {
+          "text": "per",
+          "start": 18.591,
+          "end": 18.731
+        },
+        {
+          "text": "P",
+          "start": 18.812,
+          "end": 18.852
+        },
+        {
+          "text": "di",
+          "start": 18.972,
+          "end": 19.032
+        },
+        {
+          "text": "z",
+          "start": 19.112,
+          "end": 19.152
+        },
+        {
+          "text": "con",
+          "start": 19.372,
+          "end": 19.512
+        },
+        {
+          "text": "i.",
+          "start": 19.552,
+          "end": 19.592
+        }
+      ]
+    },
+    {
+      "start": 20.512,
+      "end": 25.072,
+      "text": "La varianza di Z misura la dispersione attorno alla media ed è E di Z",
+      "words": [
+        {
+          "text": "La",
+          "start": 20.512,
+          "end": 20.572
+        },
+        {
+          "text": "varianza",
+          "start": 20.632,
+          "end": 21.012
+        },
+        {
+          "text": "di",
+          "start": 21.072,
+          "end": 21.152
+        },
+        {
+          "text": "Z",
+          "start": 21.232,
+          "end": 21.272
+        },
+        {
+          "text": "misura",
+          "start": 21.692,
+          "end": 22.032
+        },
+        {
+          "text": "la",
+          "start": 22.112,
+          "end": 22.172
+        },
+        {
+          "text": "dispersione",
+          "start": 22.212,
+          "end": 22.912
+        },
+        {
+          "text": "attorno",
+          "start": 22.952,
+          "end": 23.312
+        },
+        {
+          "text": "alla",
+          "start": 23.332,
+          "end": 23.472
+        },
+        {
+          "text": "media",
+          "start": 23.512,
+          "end": 23.832
+        },
+        {
+          "text": "ed",
+          "start": 24.172,
+          "end": 24.292
+        },
+        {
+          "text": "è",
+          "start": 24.352,
+          "end": 24.392
+        },
+        {
+          "text": "E",
+          "start": 24.692,
+          "end": 24.732
+        },
+        {
+          "text": "di",
+          "start": 24.832,
+          "end": 24.912
+        },
+        {
+          "text": "Z",
+          "start": 25.032,
+          "end": 25.072
+        }
+      ]
+    },
+    {
+      "start": 25.532,
+      "end": 27.632,
+      "text": "meno Z soprassegnato al quadrato.",
+      "words": [
+        {
+          "text": "meno",
+          "start": 25.532,
+          "end": 25.752
+        },
+        {
+          "text": "Z",
+          "start": 25.872,
+          "end": 25.912
+        },
+        {
+          "text": "soprassegnato",
+          "start": 26.132,
+          "end": 26.872
+        },
+        {
+          "text": "al",
+          "start": 27.012,
+          "end": 27.132
+        },
+        {
+          "text": "quadrato.",
+          "start": 27.172,
+          "end": 27.632
+        }
+      ]
+    },
+    {
+      "start": 28.392,
+      "end": 33.833,
+      "text": "Su un campione di l valori usiamo: la media x soprassegnato uguale uno su l",
+      "words": [
+        {
+          "text": "Su",
+          "start": 28.392,
+          "end": 28.452
+        },
+        {
+          "text": "un",
+          "start": 28.492,
+          "end": 28.573
+        },
+        {
+          "text": "campione",
+          "start": 28.593,
+          "end": 29.013
+        },
+        {
+          "text": "di",
+          "start": 29.053,
+          "end": 29.113
+        },
+        {
+          "text": "l",
+          "start": 29.253,
+          "end": 29.293
+        },
+        {
+          "text": "valori",
+          "start": 29.353,
+          "end": 29.673
+        },
+        {
+          "text": "usiamo:",
+          "start": 29.953,
+          "end": 30.333
+        },
+        {
+          "text": "la",
+          "start": 30.673,
+          "end": 30.753
+        },
+        {
+          "text": "media",
+          "start": 30.793,
+          "end": 31.133
+        },
+        {
+          "text": "x",
+          "start": 31.433,
+          "end": 31.473
+        },
+        {
+          "text": "soprassegnato",
+          "start": 31.673,
+          "end": 32.493
+        },
+        {
+          "text": "uguale",
+          "start": 32.693,
+          "end": 33.053
+        },
+        {
+          "text": "uno",
+          "start": 33.213,
+          "end": 33.373
+        },
+        {
+          "text": "su",
+          "start": 33.453,
+          "end": 33.533
+        },
+        {
+          "text": "l",
+          "start": 33.793,
+          "end": 33.833
+        }
+      ]
+    },
+    {
+      "start": 33.993,
+      "end": 35.093,
+      "text": "per la somma di x con p;",
+      "words": [
+        {
+          "text": "per",
+          "start": 33.993,
+          "end": 34.113
+        },
+        {
+          "text": "la",
+          "start": 34.173,
+          "end": 34.233
+        },
+        {
+          "text": "somma",
+          "start": 34.293,
+          "end": 34.533
+        },
+        {
+          "text": "di",
+          "start": 34.593,
+          "end": 34.653
+        },
+        {
+          "text": "x",
+          "start": 34.733,
+          "end": 34.773
+        },
+        {
+          "text": "con",
+          "start": 34.853,
+          "end": 34.993
+        },
+        {
+          "text": "p;",
+          "start": 35.053,
+          "end": 35.093
+        }
+      ]
+    },
+    {
+      "start": 35.853,
+      "end": 39.454,
+      "text": "la varianza, uno su l per la somma degli scarti al quadrato;",
+      "words": [
+        {
+          "text": "la",
+          "start": 35.853,
+          "end": 35.913
+        },
+        {
+          "text": "varianza,",
+          "start": 35.953,
+          "end": 36.453
+        },
+        {
+          "text": "uno",
+          "start": 36.813,
+          "end": 36.973
+        },
+        {
+          "text": "su",
+          "start": 37.053,
+          "end": 37.153
+        },
+        {
+          "text": "l",
+          "start": 37.413,
+          "end": 37.453
+        },
+        {
+          "text": "per",
+          "start": 37.633,
+          "end": 37.773
+        },
+        {
+          "text": "la",
+          "start": 37.833,
+          "end": 37.893
+        },
+        {
+          "text": "somma",
+          "start": 37.993,
+          "end": 38.233
+        },
+        {
+          "text": "degli",
+          "start": 38.294,
+          "end": 38.494
+        },
+        {
+          "text": "scarti",
+          "start": 38.554,
+          "end": 38.874
+        },
+        {
+          "text": "al",
+          "start": 38.894,
+          "end": 38.974
+        },
+        {
+          "text": "quadrato;",
+          "start": 38.994,
+          "end": 39.454
+        }
+      ]
+    },
+    {
+      "start": 39.974,
+      "end": 41.634,
+      "text": "e la covarianza tra x e y,",
+      "words": [
+        {
+          "text": "e",
+          "start": 39.974,
+          "end": 40.014
+        },
+        {
+          "text": "la",
+          "start": 40.074,
+          "end": 40.134
+        },
+        {
+          "text": "covarianza",
+          "start": 40.174,
+          "end": 40.774
+        },
+        {
+          "text": "tra",
+          "start": 40.894,
+          "end": 41.014
+        },
+        {
+          "text": "x",
+          "start": 41.154,
+          "end": 41.194
+        },
+        {
+          "text": "e",
+          "start": 41.294,
+          "end": 41.334
+        },
+        {
+          "text": "y,",
+          "start": 41.594,
+          "end": 41.634
+        }
+      ]
+    },
+    {
+      "start": 42.314,
+      "end": 46.254,
+      "text": "uno su l per la somma dei prodotti degli scarti di x e y dalle",
+      "words": [
+        {
+          "text": "uno",
+          "start": 42.314,
+          "end": 42.474
+        },
+        {
+          "text": "su",
+          "start": 42.554,
+          "end": 42.634
+        },
+        {
+          "text": "l",
+          "start": 42.894,
+          "end": 42.934
+        },
+        {
+          "text": "per",
+          "start": 43.154,
+          "end": 43.294
+        },
+        {
+          "text": "la",
+          "start": 43.334,
+          "end": 43.414
+        },
+        {
+          "text": "somma",
+          "start": 43.474,
+          "end": 43.714
+        },
+        {
+          "text": "dei",
+          "start": 43.754,
+          "end": 43.894
+        },
+        {
+          "text": "prodotti",
+          "start": 43.934,
+          "end": 44.314
+        },
+        {
+          "text": "degli",
+          "start": 44.354,
+          "end": 44.574
+        },
+        {
+          "text": "scarti",
+          "start": 44.614,
+          "end": 45.034
+        },
+        {
+          "text": "di",
+          "start": 45.114,
+          "end": 45.174
+        },
+        {
+          "text": "x",
+          "start": 45.274,
+          "end": 45.314
+        },
+        {
+          "text": "e",
+          "start": 45.414,
+          "end": 45.454
+        },
+        {
+          "text": "y",
+          "start": 45.734,
+          "end": 45.774
+        },
+        {
+          "text": "dalle",
+          "start": 46.014,
+          "end": 46.254
+        }
+      ]
+    },
+    {
+      "start": 46.294,
+      "end": 47.074,
+      "text": "rispettive medie.",
+      "words": [
+        {
+          "text": "rispettive",
+          "start": 46.294,
+          "end": 46.754
+        },
+        {
+          "text": "medie.",
+          "start": 46.794,
+          "end": 47.074
+        }
+      ]
+    },
+    {
+      "start": 47.854,
+      "end": 50.375,
+      "text": "Tre proprietà ricorrono in tutto il corso.",
+      "words": [
+        {
+          "text": "Tre",
+          "start": 47.854,
+          "end": 47.974
+        },
+        {
+          "text": "proprietà",
+          "start": 48.014,
+          "end": 48.435
+        },
+        {
+          "text": "ricorrono",
+          "start": 48.675,
+          "end": 49.175
+        },
+        {
+          "text": "in",
+          "start": 49.375,
+          "end": 49.475
+        },
+        {
+          "text": "tutto",
+          "start": 49.555,
+          "end": 49.855
+        },
+        {
+          "text": "il",
+          "start": 49.875,
+          "end": 49.915
+        },
+        {
+          "text": "corso.",
+          "start": 49.995,
+          "end": 50.375
+        }
+      ]
+    },
+    {
+      "start": 51.035,
+      "end": 56.095,
+      "text": "Il valore atteso è sempre lineare: E di a X più b Y uguale a",
+      "words": [
+        {
+          "text": "Il",
+          "start": 51.035,
+          "end": 51.115
+        },
+        {
+          "text": "valore",
+          "start": 51.175,
+          "end": 51.475
+        },
+        {
+          "text": "atteso",
+          "start": 51.515,
+          "end": 51.835
+        },
+        {
+          "text": "è",
+          "start": 51.895,
+          "end": 51.935
+        },
+        {
+          "text": "sempre",
+          "start": 51.995,
+          "end": 52.315
+        },
+        {
+          "text": "lineare:",
+          "start": 52.395,
+          "end": 52.895
+        },
+        {
+          "text": "E",
+          "start": 53.415,
+          "end": 53.455
+        },
+        {
+          "text": "di",
+          "start": 53.715,
+          "end": 53.815
+        },
+        {
+          "text": "a",
+          "start": 54.115,
+          "end": 54.155
+        },
+        {
+          "text": "X",
+          "start": 54.395,
+          "end": 54.435
+        },
+        {
+          "text": "più",
+          "start": 54.635,
+          "end": 54.755
+        },
+        {
+          "text": "b",
+          "start": 55.055,
+          "end": 55.095
+        },
+        {
+          "text": "Y",
+          "start": 55.215,
+          "end": 55.255
+        },
+        {
+          "text": "uguale",
+          "start": 55.475,
+          "end": 55.835
+        },
+        {
+          "text": "a",
+          "start": 56.055,
+          "end": 56.095
+        }
+      ]
+    },
+    {
+      "start": 56.295,
+      "end": 58.576,
+      "text": "E di X più b E di Y.",
+      "words": [
+        {
+          "text": "E",
+          "start": 56.295,
+          "end": 56.335
+        },
+        {
+          "text": "di",
+          "start": 56.495,
+          "end": 56.735
+        },
+        {
+          "text": "X",
+          "start": 56.835,
+          "end": 56.875
+        },
+        {
+          "text": "più",
+          "start": 57.155,
+          "end": 57.295
+        },
+        {
+          "text": "b",
+          "start": 57.555,
+          "end": 57.595
+        },
+        {
+          "text": "E",
+          "start": 57.936,
+          "end": 57.976
+        },
+        {
+          "text": "di",
+          "start": 58.076,
+          "end": 58.296
+        },
+        {
+          "text": "Y.",
+          "start": 58.536,
+          "end": 58.576
+        }
+      ]
+    },
+    {
+      "start": 59.376,
+      "end": 64.036,
+      "text": "Se X e Y sono indipendenti, E di X Y uguale E di X per",
+      "words": [
+        {
+          "text": "Se",
+          "start": 59.376,
+          "end": 59.436
+        },
+        {
+          "text": "X",
+          "start": 59.636,
+          "end": 59.676
+        },
+        {
+          "text": "e",
+          "start": 59.776,
+          "end": 59.816
+        },
+        {
+          "text": "Y",
+          "start": 60.136,
+          "end": 60.176
+        },
+        {
+          "text": "sono",
+          "start": 60.416,
+          "end": 60.596
+        },
+        {
+          "text": "indipendenti,",
+          "start": 60.656,
+          "end": 61.376
+        },
+        {
+          "text": "E",
+          "start": 61.596,
+          "end": 61.636
+        },
+        {
+          "text": "di",
+          "start": 61.756,
+          "end": 61.856
+        },
+        {
+          "text": "X",
+          "start": 62.036,
+          "end": 62.076
+        },
+        {
+          "text": "Y",
+          "start": 62.436,
+          "end": 62.476
+        },
+        {
+          "text": "uguale",
+          "start": 62.656,
+          "end": 62.996
+        },
+        {
+          "text": "E",
+          "start": 63.196,
+          "end": 63.236
+        },
+        {
+          "text": "di",
+          "start": 63.296,
+          "end": 63.376
+        },
+        {
+          "text": "X",
+          "start": 63.556,
+          "end": 63.596
+        },
+        {
+          "text": "per",
+          "start": 63.856,
+          "end": 64.036
+        }
+      ]
+    },
+    {
+      "start": 64.236,
+      "end": 64.83600000000001,
+      "text": "E di Y.",
+      "words": [
+        {
+          "text": "E",
+          "start": 64.236,
+          "end": 64.27600000000001
+        },
+        {
+          "text": "di",
+          "start": 64.356,
+          "end": 64.576
+        },
+        {
+          "text": "Y.",
+          "start": 64.796,
+          "end": 64.83600000000001
+        }
+      ]
+    },
+    {
+      "start": 65.836,
+      "end": 70.517,
+      "text": "Un campione si dice i i d, indipendente e identicamente distribuito,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 65.836,
+          "end": 65.936
+        },
+        {
+          "text": "campione",
+          "start": 65.996,
+          "end": 66.416
+        },
+        {
+          "text": "si",
+          "start": 66.476,
+          "end": 66.536
+        },
+        {
+          "text": "dice",
+          "start": 66.596,
+          "end": 66.816
+        },
+        {
+          "text": "i",
+          "start": 67.096,
+          "end": 67.13600000000001
+        },
+        {
+          "text": "i",
+          "start": 67.376,
+          "end": 67.41600000000001
+        },
+        {
+          "text": "d,",
+          "start": 67.517,
+          "end": 67.557
+        },
+        {
+          "text": "indipendente",
+          "start": 68.057,
+          "end": 68.857
+        },
+        {
+          "text": "e",
+          "start": 69.017,
+          "end": 69.057
+        },
+        {
+          "text": "identicamente",
+          "start": 69.177,
+          "end": 69.857
+        },
+        {
+          "text": "distribuito,",
+          "start": 69.917,
+          "end": 70.517
+        }
+      ]
+    },
+    {
+      "start": 70.877,
+      "end": 75.057,
+      "text": "quando gli elementi sono estratti indipendentemente dalla stessa distribuzione.",
+      "words": [
+        {
+          "text": "quando",
+          "start": 70.877,
+          "end": 71.117
+        },
+        {
+          "text": "gli",
+          "start": 71.137,
+          "end": 71.237
+        },
+        {
+          "text": "elementi",
+          "start": 71.277,
+          "end": 71.637
+        },
+        {
+          "text": "sono",
+          "start": 71.717,
+          "end": 71.877
+        },
+        {
+          "text": "estratti",
+          "start": 71.937,
+          "end": 72.337
+        },
+        {
+          "text": "indipendentemente",
+          "start": 72.537,
+          "end": 73.697
+        },
+        {
+          "text": "dalla",
+          "start": 73.817,
+          "end": 73.997
+        },
+        {
+          "text": "stessa",
+          "start": 74.037,
+          "end": 74.317
+        },
+        {
+          "text": "distribuzione.",
+          "start": 74.357,
+          "end": 75.057
+        }
+      ]
+    },
+    {
+      "start": 75.717,
+      "end": 78.638,
+      "text": "Esempio numerico sul campione x uguale due, quattro, sei,",
+      "words": [
+        {
+          "text": "Esempio",
+          "start": 75.717,
+          "end": 76.037
+        },
+        {
+          "text": "numerico",
+          "start": 76.077,
+          "end": 76.457
+        },
+        {
+          "text": "sul",
+          "start": 76.517,
+          "end": 76.657
+        },
+        {
+          "text": "campione",
+          "start": 76.697,
+          "end": 77.077
+        },
+        {
+          "text": "x",
+          "start": 77.378,
+          "end": 77.418
+        },
+        {
+          "text": "uguale",
+          "start": 77.538,
+          "end": 77.858
+        },
+        {
+          "text": "due,",
+          "start": 77.978,
+          "end": 78.118
+        },
+        {
+          "text": "quattro,",
+          "start": 78.178,
+          "end": 78.438
+        },
+        {
+          "text": "sei,",
+          "start": 78.498,
+          "end": 78.638
+        }
+      ]
+    },
+    {
+      "start": 78.738,
+      "end": 80.058,
+      "text": "otto, con l uguale quattro.",
+      "words": [
+        {
+          "text": "otto,",
+          "start": 78.738,
+          "end": 78.998
+        },
+        {
+          "text": "con",
+          "start": 79.098,
+          "end": 79.238
+        },
+        {
+          "text": "l",
+          "start": 79.318,
+          "end": 79.358
+        },
+        {
+          "text": "uguale",
+          "start": 79.458,
+          "end": 79.658
+        },
+        {
+          "text": "quattro.",
+          "start": 79.718,
+          "end": 80.058
+        }
+      ]
+    },
+    {
+      "start": 80.618,
+      "end": 82.898,
+      "text": "La media è venti diviso quattro, cioè cinque.",
+      "words": [
+        {
+          "text": "La",
+          "start": 80.618,
+          "end": 80.678
+        },
+        {
+          "text": "media",
+          "start": 80.718,
+          "end": 80.958
+        },
+        {
+          "text": "è",
+          "start": 81.138,
+          "end": 81.17800000000001
+        },
+        {
+          "text": "venti",
+          "start": 81.278,
+          "end": 81.558
+        },
+        {
+          "text": "diviso",
+          "start": 81.598,
+          "end": 81.838
+        },
+        {
+          "text": "quattro,",
+          "start": 81.878,
+          "end": 82.238
+        },
+        {
+          "text": "cioè",
+          "start": 82.338,
+          "end": 82.458
+        },
+        {
+          "text": "cinque.",
+          "start": 82.538,
+          "end": 82.898
+        }
+      ]
+    },
+    {
+      "start": 83.238,
+      "end": 85.278,
+      "text": "Gli scarti sono meno tre, meno uno, più uno,",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 83.238,
+          "end": 83.358
+        },
+        {
+          "text": "scarti",
+          "start": 83.398,
+          "end": 83.698
+        },
+        {
+          "text": "sono",
+          "start": 83.758,
+          "end": 83.958
+        },
+        {
+          "text": "meno",
+          "start": 84.058,
+          "end": 84.218
+        },
+        {
+          "text": "tre,",
+          "start": 84.258,
+          "end": 84.378
+        },
+        {
+          "text": "meno",
+          "start": 84.478,
+          "end": 84.638
+        },
+        {
+          "text": "uno,",
+          "start": 84.758,
+          "end": 84.898
+        },
+        {
+          "text": "più",
+          "start": 84.958,
+          "end": 85.058
+        },
+        {
+          "text": "uno,",
+          "start": 85.118,
+          "end": 85.278
+        }
+      ]
+    },
+    {
+      "start": 85.318,
+      "end": 85.618,
+      "text": "più tre.",
+      "words": [
+        {
+          "text": "più",
+          "start": 85.318,
+          "end": 85.418
+        },
+        {
+          "text": "tre.",
+          "start": 85.498,
+          "end": 85.618
+        }
+      ]
+    },
+    {
+      "start": 85.998,
+      "end": 89.199,
+      "text": "I loro quadrati sono nove, uno, uno, nove, somma venti:",
+      "words": [
+        {
+          "text": "I",
+          "start": 85.998,
+          "end": 86.03800000000001
+        },
+        {
+          "text": "loro",
+          "start": 86.078,
+          "end": 86.218
+        },
+        {
+          "text": "quadrati",
+          "start": 86.258,
+          "end": 86.638
+        },
+        {
+          "text": "sono",
+          "start": 86.718,
+          "end": 86.918
+        },
+        {
+          "text": "nove,",
+          "start": 87.039,
+          "end": 87.379
+        },
+        {
+          "text": "uno,",
+          "start": 87.519,
+          "end": 87.699
+        },
+        {
+          "text": "uno,",
+          "start": 87.839,
+          "end": 87.999
+        },
+        {
+          "text": "nove,",
+          "start": 88.099,
+          "end": 88.419
+        },
+        {
+          "text": "somma",
+          "start": 88.519,
+          "end": 88.779
+        },
+        {
+          "text": "venti:",
+          "start": 88.839,
+          "end": 89.199
+        }
+      ]
+    },
+    {
+      "start": 89.639,
+      "end": 91.539,
+      "text": "diviso quattro dà varianza uguale cinque.",
+      "words": [
+        {
+          "text": "diviso",
+          "start": 89.639,
+          "end": 89.959
+        },
+        {
+          "text": "quattro",
+          "start": 89.999,
+          "end": 90.359
+        },
+        {
+          "text": "dà",
+          "start": 90.459,
+          "end": 90.519
+        },
+        {
+          "text": "varianza",
+          "start": 90.559,
+          "end": 90.919
+        },
+        {
+          "text": "uguale",
+          "start": 90.939,
+          "end": 91.179
+        },
+        {
+          "text": "cinque.",
+          "start": 91.219,
+          "end": 91.539
+        }
+      ]
+    }
+  ]
+}
