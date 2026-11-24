@@ -40,13 +40,13 @@ OG_WIDTH = 1200
 OG_HEIGHT = 630
 
 PART_ACCENTS: dict[str, tuple[str, str]] = {
-    "frontmatter": ("#38BDF8", "#818CF8"),
-    "parte-1": ("#38BDF8", "#34D399"),
-    "parte-2": ("#60A5FA", "#38BDF8"),
-    "parte-3": ("#FBBF24", "#FB7185"),
-    "parte-4": ("#FB7185", "#A78BFA"),
-    "parte-5": ("#34D399", "#38BDF8"),
-    "parte-6": ("#A78BFA", "#38BDF8"),
+    "frontmatter": ("#1D4ED8", "#15803D"),
+    "parte-1": ("#1D4ED8", "#0F766E"),
+    "parte-2": ("#1D4ED8", "#C82829"),
+    "parte-3": ("#B45309", "#C82829"),
+    "parte-4": ("#C82829", "#1D4ED8"),
+    "parte-5": ("#15803D", "#1D4ED8"),
+    "parte-6": ("#6D28D9", "#1D4ED8"),
 }
 
 
@@ -168,56 +168,409 @@ def blend_hex(fg: str, bg: str, ratio: float) -> tuple[int, int, int, int]:
     )
 
 
-def draw_decorative_network(img: Any, card_mask: Any, accent_a: str, accent_b: str, seed: int) -> Any:
-    """Draw a smooth blurred ambient glow and crisp neural graph clipped inside the card."""
-    glow = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(glow, "RGBA")
-    cx, cy = 995, 295
-    gd.ellipse([cx - 190, cy - 190, cx + 190, cy + 190], fill=hex_to_rgba(accent_a, 58))
-    gd.ellipse([160 - 150, 520 - 150, 160 + 150, 520 + 150], fill=hex_to_rgba(accent_b, 42))
-    glow = glow.filter(ImageFilter.GaussianBlur(radius=62))
-    clipped_glow = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
-    clipped_glow.paste(glow, (0, 0), card_mask)
-    img = Image.alpha_composite(img, clipped_glow)
+def load_lia_frame(frame_idx: int = 5, size: int = 240) -> Any | None:
+    """Load a crisp pixel-art frame of Lia from assets/lia-spritesheet.png."""
+    sheet_path = VIDEOLEZIONI_DIR / "assets" / "lia-spritesheet.png"
+    if not sheet_path.is_file():
+        return None
+    sheet = Image.open(sheet_path).convert("RGBA")
+    fw = sheet.width // 6
+    idx = max(0, min(5, frame_idx))
+    frame = sheet.crop((idx * fw, 0, (idx + 1) * fw, sheet.height))
+    return frame.resize((size, size), Image.NEAREST)
 
-    net = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
-    d = ImageDraw.Draw(net, "RGBA")
 
-    cols = [885, 995, 1100]
-    layers = [
-        [(cols[0], 175), (cols[0], 250), (cols[0], 325), (cols[0], 400)],
-        [(cols[1], 205), (cols[1], 290), (cols[1], 375)],
-        [(cols[2], 248), (cols[2], 332)],
+def load_circle_photo(filename: str, size: int = 48, border_color: str = "#CECEC7") -> Any | None:
+    """Load a circular portrait from videolezioni/assets/ with crisp border."""
+    p = VIDEOLEZIONI_DIR / "assets" / filename
+    if not p.is_file():
+        return None
+    im = Image.open(p).convert("RGBA").resize((size, size), Image.LANCZOS)
+    mask = Image.new("L", (size, size), 0)
+    ImageDraw.Draw(mask).ellipse([1, 1, size - 2, size - 2], fill=255)
+    out = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    out.paste(im, (0, 0), mask)
+    ImageDraw.Draw(out, "RGBA").ellipse([1, 1, size - 2, size - 2], outline=hex_to_rgba(border_color, 255), width=2)
+    return out
+
+
+def _draw_dashed_line(d: Any, p1: tuple[float, float], p2: tuple[float, float], fill: Any, width: int = 4, dash: int = 16, gap: int = 12) -> None:
+    x1, y1 = p1
+    x2, y2 = p2
+    dist = math.hypot(x2 - x1, y2 - y1)
+    if dist < 1:
+        return
+    ux, uy = (x2 - x1) / dist, (y2 - y1) / dist
+    cur = 0.0
+    while cur < dist:
+        nxt = min(dist, cur + dash)
+        d.line([(x1 + ux * cur, y1 + uy * cur), (x1 + ux * nxt, y1 + uy * nxt)], fill=fill, width=width)
+        cur = nxt + gap
+
+
+def _draw_arrow(d: Any, p1: tuple[float, float], p2: tuple[float, float], fill: Any, width: int = 5, head: int = 18) -> None:
+    x1, y1 = p1
+    x2, y2 = p2
+    d.line([(x1, y1), (x2, y2)], fill=fill, width=width)
+    ang = math.atan2(y2 - y1, x2 - x1)
+    a1 = ang + math.pi * 0.82
+    a2 = ang - math.pi * 0.82
+    pts = [
+        (x2, y2),
+        (x2 + head * math.cos(a1), y2 + head * math.sin(a1)),
+        (x2 + head * math.cos(a2), y2 + head * math.sin(a2)),
     ]
+    d.polygon(pts, fill=fill)
 
-    for li in range(len(layers) - 1):
-        for i, p1 in enumerate(layers[li]):
-            for j, p2 in enumerate(layers[li + 1]):
-                is_highlight = ((i + j + seed) % 3) == 0
-                color = hex_to_rgba(accent_a, 120) if is_highlight else hex_to_rgba("#94A3B8", 44)
-                width = 3 if is_highlight else 2
-                d.line([p1, p2], fill=color, width=width)
 
-    for li, pts in enumerate(layers):
-        for idx, (nx, ny) in enumerate(pts):
-            is_accent = ((li + idx + seed) % 2) == 0
-            ring_color = hex_to_rgba(accent_a if is_accent else accent_b, 235)
-            fill_color = hex_to_rgba("#090D16", 248)
-            r = 14 if li == 1 else 12
-            d.ellipse([nx - r, ny - r, nx + r, ny + r], fill=fill_color, outline=ring_color, width=3)
-            d.ellipse([nx - 4, ny - 4, nx + 4, ny + 4], fill=ring_color)
+def _draw_axes(d: Any, ox: int, oy: int, w: int, h: int, ink: Any) -> None:
+    _draw_arrow(d, (ox, oy), (ox + w, oy), ink, width=4, head=14)
+    _draw_arrow(d, (ox, oy), (ox, oy - h), ink, width=4, head=14)
 
-    curve_pts = []
-    for step in range(42):
-        px = 855 + step * 6.5
-        t = (step / 41.0) * math.pi * 2.0 + seed * 0.6
-        py = 446 + int(16 * math.sin(t))
-        curve_pts.append((px, py))
-    d.line(curve_pts, fill=hex_to_rgba(accent_b, 120), width=3)
 
-    clipped_net = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
-    clipped_net.paste(net, (0, 0), card_mask)
-    return Image.alpha_composite(img, clipped_net)
+def draw_chapter_visual(chapter: int, width: int = 380, height: int = 350) -> Any:
+    """Render a crisp 2x-supersampled topic-specific ML visual diagram for chapter 0..19."""
+    S = 2
+    W, H = width * S, height * S
+    canvas = Image.new("RGBA", (W, H), hex_to_rgba("#FAFAF7", 255))
+    d = ImageDraw.Draw(canvas, "RGBA")
+
+    # Subtle architectural graph-paper grid
+    grid_c = hex_to_rgba("#E8E8E1", 170)
+    for gx in range(44, W, 44):
+        d.line([(gx, 16), (gx, H - 16)], fill=grid_c, width=2)
+    for gy in range(44, H, 44):
+        d.line([(16, gy), (W - 16, gy)], fill=grid_c, width=2)
+
+    INK = hex_to_rgba("#141413", 255)
+    SOFT = hex_to_rgba("#57564F", 220)
+    MUTED = hex_to_rgba("#9A9990", 210)
+    BLUE = hex_to_rgba("#1D4ED8", 255)
+    BLUE_S = blend_hex("#1D4ED8", "#FAFAF7", 0.13)
+    RED = hex_to_rgba("#C82829", 255)
+    RED_S = blend_hex("#C82829", "#FAFAF7", 0.13)
+    GREEN = hex_to_rgba("#15803D", 255)
+    GREEN_S = blend_hex("#15803D", "#FAFAF7", 0.14)
+    AMBER = hex_to_rgba("#D97706", 255)
+    AMBER_S = blend_hex("#D97706", "#FAFAF7", 0.15)
+    PURPLE = hex_to_rgba("#6D28D9", 255)
+    PURPLE_S = blend_hex("#6D28D9", "#FAFAF7", 0.15)
+    WHITE = hex_to_rgba("#FFFFFF", 255)
+
+    f_lbl = load_font(28, bold=True)
+    f_sm = load_font(22, bold=False)
+
+    if chapter == 0:
+        # 6-Part Course Roadmap
+        pts = [(110, 520), (210, 390), (340, 440), (455, 290), (575, 330), (660, 175)]
+        d.line(pts, fill=BLUE, width=7)
+        cols = [BLUE, GREEN, AMBER, RED, PURPLE, BLUE]
+        for i, (px, py) in enumerate(pts):
+            d.ellipse([px - 34, py - 34, px + 34, py + 34], fill=WHITE, outline=cols[i], width=6)
+            lbl = f"P{i + 1}"
+            bb = d.textbbox((0, 0), lbl, font=f_lbl)
+            d.text((px - (bb[2] - bb[0]) // 2, py - (bb[3] - bb[1]) // 2 - bb[1]), lbl, font=f_lbl, fill=cols[i])
+        d.text((76, 84), "Mappa del percorso", font=f_lbl, fill=INK)
+
+    elif chapter == 1:
+        # Gradient & elliptical contour lines
+        cx, cy = 410, 355
+        for rx, ry in [(260, 175), (195, 130), (130, 86), (65, 43)]:
+            d.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], outline=BLUE, width=4)
+        d.ellipse([cx - 10, cy - 10, cx + 10, cy + 10], fill=GREEN)
+        # Gradient arrow pointing outward orthogonal to contour
+        p1 = (cx - 155, cy - 102)
+        p2 = (cx - 255, cy - 200)
+        _draw_arrow(d, p1, p2, RED, width=7, head=22)
+        d.ellipse([p1[0] - 10, p1[1] - 10, p1[0] + 10, p1[1] + 10], fill=INK)
+        d.text((p2[0] - 20, p2[1] - 48), "∇f(x)", font=f_lbl, fill=RED)
+        d.text((cx + 22, cy - 14), "min", font=f_sm, fill=GREEN)
+
+    elif chapter == 2:
+        # ML Pipeline: X -> h(x) -> y with loss feedback
+        boxes = [(70, 260, 225, 410, "X", MUTED, WHITE), (295, 240, 465, 430, "h(x)", BLUE, BLUE_S), (535, 260, 690, 410, "y", GREEN, GREEN_S)]
+        for x0, y0, x1, y1, txt, col, bg in boxes:
+            d.rounded_rectangle([x0, y0, x1, y1], radius=24, fill=bg, outline=col, width=6)
+            bb = d.textbbox((0, 0), txt, font=load_font(42, bold=True))
+            d.text(((x0 + x1 - (bb[2] - bb[0])) // 2, (y0 + y1 - (bb[3] - bb[1])) // 2 - bb[1]), txt, font=load_font(42, bold=True), fill=INK)
+        _draw_arrow(d, (232, 335), (288, 335), INK, width=6, head=18)
+        _draw_arrow(d, (472, 335), (528, 335), INK, width=6, head=18)
+        # Loss feedback arc
+        d.line([(612, 420), (612, 520), (380, 520)], fill=AMBER, width=6)
+        _draw_arrow(d, (380, 520), (380, 438), AMBER, width=6, head=18)
+        d.text((435, 536), "Loss L(y, d)", font=f_sm, fill=AMBER)
+
+    elif chapter == 3:
+        # Hypothesis Space H, Version Space VS, target h*
+        d.ellipse([75, 110, 685, 575], fill=BLUE_S, outline=BLUE, width=5)
+        d.ellipse([240, 215, 610, 485], fill=AMBER_S, outline=AMBER, width=5)
+        d.ellipse([435, 315, 463, 343], fill=RED, outline=WHITE, width=3)
+        d.text((135, 160), "Spazio ipotesi H", font=f_lbl, fill=BLUE)
+        d.text((285, 245), "Version Space", font=f_sm, fill=AMBER)
+        d.text((476, 312), "h*", font=f_lbl, fill=RED)
+
+    elif chapter == 4:
+        # Linear Regression with vertical residuals
+        _draw_axes(d, 90, 585, 590, 490, SOFT)
+        pts = [(145, 485), (225, 415), (305, 435), (390, 325), (470, 345), (555, 225), (625, 250)]
+        # Line y = 525 - 0.56*(x - 110)
+        p_a = (115, 522)
+        p_b = (660, 216)
+        for px, py in pts:
+            ly = 522 - (522 - 216) * (px - 115) / (660 - 115)
+            d.line([(px, py), (px, ly)], fill=GREEN, width=5)
+        d.line([p_a, p_b], fill=RED, width=7)
+        for px, py in pts:
+            d.ellipse([px - 11, py - 11, px + 11, py + 11], fill=BLUE, outline=WHITE, width=3)
+        d.text((465, 145), "y = wᵀx + b", font=f_lbl, fill=RED)
+
+    elif chapter == 5:
+        # Under/Optimal vs Overfitting polynomial
+        _draw_axes(d, 90, 585, 590, 490, SOFT)
+        # Smooth true curve (green)
+        g_pts = [(120 + i * 18, 370 - int(110 * math.sin(i * 0.14))) for i in range(31)]
+        d.line(g_pts, fill=GREEN, width=7)
+        # Wiggly overfit curve (red)
+        r_pts = [(120 + i * 18, 370 - int(110 * math.sin(i * 0.14) + 58 * math.sin(i * 1.15))) for i in range(31)]
+        d.line(r_pts, fill=RED, width=5)
+        for i in range(2, 30, 4):
+            px, py = r_pts[i]
+            d.ellipse([px - 10, py - 10, px + 10, py + 10], fill=BLUE, outline=WHITE, width=3)
+        d.text((455, 110), "Overfitting", font=f_sm, fill=RED)
+        d.text((130, 120), "Modello ottimo", font=f_sm, fill=GREEN)
+
+    elif chapter == 6:
+        # k-NN query point & neighborhood circle
+        qx, qy = 380, 345
+        d.ellipse([qx - 155, qy - 155, qx + 155, qy + 155], fill=BLUE_S, outline=BLUE, width=5)
+        reds = [(315, 290), (425, 265), (345, 425), (210, 210), (175, 420)]
+        blues = [(455, 375), (335, 345), (565, 225), (585, 460), (480, 535)]
+        for px, py in reds:
+            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=RED, outline=WHITE, width=3)
+        for px, py in blues:
+            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=BLUE, outline=WHITE, width=3)
+        # Query star/dot
+        d.ellipse([qx - 15, qy - 15, qx + 15, qy + 15], fill=INK, outline=AMBER, width=5)
+        d.text((qx + 18, qy - 46), "x_q (k=5)", font=f_lbl, fill=INK)
+
+    elif chapter == 7:
+        # Structural Risk Minimization (VC complexity U-curve)
+        _draw_axes(d, 90, 585, 590, 490, SOFT)
+        emp = [(120 + i * 18, int(200 + 330 * (1 - math.exp(-i * 0.14)))) for i in range(31)]
+        pen = [(120 + i * 18, int(555 - 320 * (i / 30.0) ** 2.2)) for i in range(31)]
+        tot = [(120 + i * 18, int(195 + 220 * (1 - math.exp(-i * 0.18)) - 220 * (i / 30.0) ** 2.4 + 45)) for i in range(31)]
+        # Recompute clean U-shape for total risk
+        tot = [(120 + i * 18, int(230 + 230 * (1 - ((i - 14) / 14.5) ** 2) * (-0.55) + 125)) for i in range(31)]
+        d.line(emp, fill=BLUE, width=6)
+        d.line(pen, fill=RED, width=6)
+        d.line(tot, fill=AMBER, width=8)
+        mx, my = tot[14]
+        d.ellipse([mx - 14, my - 14, mx + 14, my + 14], fill=GREEN, outline=WHITE, width=4)
+        d.text((485, 480), "R_emp", font=f_sm, fill=BLUE)
+        d.text((495, 185), "VC bound", font=f_sm, fill=RED)
+        d.text((mx - 42, my - 56), "h* ottimo", font=f_sm, fill=GREEN)
+
+    elif chapter == 8:
+        # Bias-Variance 2 targets
+        for idx, (cx, label, pts) in enumerate([
+            (215, "Basso Bias · Bassa Var", [(206, 330), (222, 342), (212, 352), (226, 326), (204, 346)]),
+            (545, "Alto Bias · Alta Var", [(595, 255), (625, 290), (575, 305), (635, 240), (605, 275)]),
+        ]):
+            cy = 340
+            for r, col in [(138, BLUE_S), (92, WHITE), (46, RED_S)]:
+                d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=col, outline=SOFT, width=3)
+            d.ellipse([cx - 10, cy - 10, cx + 10, cy + 10], fill=RED)
+            for px, py in pts:
+                d.ellipse([px - 9, py - 9, px + 9, py + 9], fill=BLUE, outline=WHITE, width=2)
+            bb = d.textbbox((0, 0), label, font=f_sm)
+            d.text((cx - (bb[2] - bb[0]) // 2, 512), label, font=f_sm, fill=INK)
+
+    elif chapter == 9:
+        # ROC curve + AUC fill
+        _draw_axes(d, 100, 575, 560, 470, SOFT)
+        _draw_dashed_line(d, (100, 575), (620, 135), MUTED, width=4)
+        roc = [(100, 575)]
+        for i in range(1, 31):
+            t = i / 30.0
+            px = int(100 + t * 520)
+            py = int(575 - (1 - (1 - t) ** 4.2) * 440)
+            roc.append((px, py))
+        poly = roc + [(620, 575)]
+        d.polygon(poly, fill=RED_S)
+        d.line(roc, fill=RED, width=8)
+        d.text((310, 385), "AUC", font=load_font(44, bold=True), fill=RED)
+        d.text((130, 100), "TPR", font=f_sm, fill=SOFT)
+        d.text((575, 592), "FPR", font=f_sm, fill=SOFT)
+
+    elif chapter == 10:
+        # Single Perceptron / Artificial Neuron
+        inputs = [(115, 200), (115, 345), (115, 490)]
+        cx, cy = 395, 345
+        for idx, (ix, iy) in enumerate(inputs):
+            d.line([(ix + 26, iy), (cx - 64, cy)], fill=BLUE, width=5)
+            d.ellipse([ix - 26, iy - 26, ix + 26, iy + 26], fill=WHITE, outline=INK, width=5)
+            d.text((ix - 12, iy - 14), f"x{idx + 1}", font=f_sm, fill=INK)
+        d.ellipse([cx - 64, cy - 64, cx + 64, cy + 64], fill=BLUE_S, outline=BLUE, width=6)
+        d.text((cx - 18, cy - 22), "Σ", font=load_font(44, bold=True), fill=BLUE)
+        _draw_arrow(d, (cx + 68, cy), (645, cy), AMBER, width=7, head=20)
+        d.text((535, cy - 52), "f(net)", font=f_lbl, fill=AMBER)
+
+    elif chapter == 11:
+        # MLP + Backprop feedback arrow
+        layers = [
+            [(145, 210), (145, 340), (145, 470)],
+            [(380, 155), (380, 275), (380, 395), (380, 515)],
+            [(615, 265), (615, 415)],
+        ]
+        for l_idx in range(len(layers) - 1):
+            for p1 in layers[l_idx]:
+                for p2 in layers[l_idx + 1]:
+                    d.line([p1, p2], fill=hex_to_rgba("#1D4ED8", 110), width=4)
+        for l_idx, pts in enumerate(layers):
+            col = SOFT if l_idx == 0 else (BLUE if l_idx == 1 else AMBER)
+            bg = WHITE if l_idx == 0 else (BLUE_S if l_idx == 1 else AMBER_S)
+            for px, py in pts:
+                d.ellipse([px - 24, py - 24, px + 24, py + 24], fill=bg, outline=col, width=5)
+        _draw_arrow(d, (595, 585), (175, 585), RED, width=7, head=20)
+        d.text((285, 600), "Backpropagation δ", font=f_sm, fill=RED)
+
+    elif chapter == 12:
+        # Gradient descent trajectory into loss valley
+        curve = [(90 + i * 20, int(190 + 310 * math.exp(-((i - 16) / 8.5) ** 2) + 45 * math.sin(i * 0.38))) for i in range(30)]
+        d.line(curve, fill=INK, width=6)
+        hops = [curve[4], curve[7], curve[10], curve[13], curve[16]]
+        d.line(hops, fill=RED, width=6)
+        for i, (px, py) in enumerate(hops):
+            col = GREEN if i == len(hops) - 1 else RED
+            d.ellipse([px - 12, py - 12, px + 12, py + 12], fill=col, outline=WHITE, width=3)
+        d.text((hops[-1][0] - 42, hops[-1][1] + 24), "w* min", font=f_lbl, fill=GREEN)
+
+    elif chapter == 13:
+        # SVM Maximum-Margin Hyperplane + Support Vectors
+        d.line([(135, 560), (625, 145)], fill=BLUE, width=8)
+        _draw_dashed_line(d, (80, 480), (545, 85), MUTED, width=4)
+        _draw_dashed_line(d, (190, 640), (680, 225), MUTED, width=4)
+        blues = [(175, 225), (265, 195), (225, 315), (345, 255)]
+        reds = [(515, 425), (465, 515), (595, 465), (415, 445)]
+        svs = [(225, 315), (345, 255), (415, 445)]
+        for px, py in blues:
+            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=BLUE, outline=WHITE, width=3)
+        for px, py in reds:
+            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=RED, outline=WHITE, width=3)
+        for sx, sy in svs:
+            d.ellipse([sx - 26, sy - 26, sx + 26, sy + 26], outline=AMBER, width=5)
+        d.text((310, 92), "Margine max", font=f_sm, fill=BLUE)
+
+    elif chapter == 14:
+        # CNN 2D grid + 3x3 kernel -> feature map
+        cell = 52
+        ox, oy = 85, 175
+        for r in range(6):
+            for c in range(6):
+                fill = BLUE_S if (1 <= r <= 3 and 1 <= c <= 3) else WHITE
+                col = BLUE if (1 <= r <= 3 and 1 <= c <= 3) else MUTED
+                d.rectangle([ox + c * cell, oy + r * cell, ox + (c + 1) * cell, oy + (r + 1) * cell], fill=fill, outline=col, width=3)
+        d.rectangle([ox + cell, oy + cell, ox + 4 * cell, oy + 4 * cell], outline=BLUE, width=7)
+        # Projection lines
+        fx, fy = 515, 250
+        d.line([(ox + 4 * cell, oy + cell), (fx, fy)], fill=AMBER, width=4)
+        d.line([(ox + 4 * cell, oy + 4 * cell), (fx, fy + 64)], fill=AMBER, width=4)
+        for r in range(3):
+            for c in range(3):
+                fill = AMBER_S if (r == 0 and c == 0) else WHITE
+                col = AMBER if (r == 0 and c == 0) else SOFT
+                d.rectangle([fx + c * 58, fy + r * 58, fx + (c + 1) * 58, fy + (r + 1) * 58], fill=fill, outline=col, width=4)
+        d.text((135, 515), "Kernel 3×3", font=f_sm, fill=BLUE)
+        d.text((510, 455), "Feature map", font=f_sm, fill=AMBER)
+
+    elif chapter == 15:
+        # Deep Residual Block with Skip Connection
+        bx0, bx1 = 235, 515
+        for y0, lbl, bg, col in [(155, "Layer Conv / Linear", BLUE_S, BLUE), (315, "ReLU + Norm", GREEN_S, GREEN), (475, "Layer Conv / Linear", BLUE_S, BLUE)]:
+            d.rounded_rectangle([bx0, y0, bx1, y0 + 95], radius=18, fill=bg, outline=col, width=5)
+            bb = d.textbbox((0, 0), lbl, font=f_sm)
+            d.text(((bx0 + bx1 - (bb[2] - bb[0])) // 2, y0 + 30), lbl, font=f_sm, fill=INK)
+        _draw_arrow(d, (375, 250), (375, 312), INK, width=5, head=14)
+        _draw_arrow(d, (375, 410), (375, 472), INK, width=5, head=14)
+        # Skip connection arc on the right
+        d.line([(375, 110), (375, 152)], fill=INK, width=5)
+        d.line([(375, 118), (615, 118), (615, 610)], fill=AMBER, width=7)
+        _draw_arrow(d, (615, 610), (415, 610), AMBER, width=7, head=18)
+        d.ellipse([348, 583, 402, 637], fill=AMBER_S, outline=AMBER, width=5)
+        d.text((366, 592), "+", font=f_lbl, fill=AMBER)
+        d.text((530, 82), "Skip + x", font=f_sm, fill=AMBER)
+
+    elif chapter == 16:
+        # Reservoir Computing (sparse recurrent cloud -> linear readout)
+        d.ellipse([95, 165, 465, 520], fill=BLUE_S, outline=BLUE, width=5)
+        nodes = [(190, 270), (295, 230), (380, 315), (210, 410), (330, 435), (275, 330)]
+        edges = [(0, 1), (1, 2), (2, 4), (4, 3), (3, 0), (0, 5), (5, 2), (5, 4), (1, 5)]
+        for a, b in edges:
+            d.line([nodes[a], nodes[b]], fill=hex_to_rgba("#1D4ED8", 130), width=4)
+        for nx, ny in nodes:
+            d.ellipse([nx - 16, ny - 16, nx + 16, ny + 16], fill=WHITE, outline=BLUE, width=5)
+        # Readout node
+        rx, ry = 625, 345
+        for nx, ny in [nodes[1], nodes[2], nodes[4]]:
+            d.line([(nx + 16, ny), (rx - 36, ry)], fill=AMBER, width=5)
+        d.ellipse([rx - 36, ry - 36, rx + 36, ry + 36], fill=AMBER_S, outline=AMBER, width=6)
+        d.text((175, 545), "Reservoir fisso", font=f_sm, fill=BLUE)
+        d.text((535, 402), "Readout", font=f_sm, fill=AMBER)
+
+    elif chapter == 17:
+        # K-means 3 clusters + centroids
+        clusters = [
+            (210, 235, BLUE, BLUE_S, [(155, 200), (245, 185), (175, 285), (265, 265), (200, 235)]),
+            (535, 235, RED, RED_S, [(485, 195), (575, 190), (505, 290), (595, 265), (545, 235)]),
+            (375, 475, GREEN, GREEN_S, [(315, 445), (425, 435), (345, 535), (435, 515), (380, 480)]),
+        ]
+        for cx, cy, col, soft, pts in clusters:
+            d.ellipse([cx - 108, cy - 95, cx + 108, cy + 95], fill=soft, outline=col, width=4)
+            for px, py in pts:
+                d.ellipse([px - 10, py - 10, px + 10, py + 10], fill=col, outline=WHITE, width=2)
+            # Centroid
+            d.ellipse([cx - 17, cy - 17, cx + 17, cy + 17], fill=WHITE, outline=INK, width=5)
+            d.ellipse([cx - 6, cy - 6, cx + 6, cy + 6], fill=col)
+
+    elif chapter == 18:
+        # Unrolled RNN cells h_{t-1} -> h_t -> h_{t+1}
+        xs = [155, 380, 605]
+        cy = 345
+        for i, cx in enumerate(xs):
+            d.rounded_rectangle([cx - 64, cy - 58, cx + 64, cy + 58], radius=20, fill=BLUE_S, outline=BLUE, width=6)
+            lbl = ["h(t-1)", "h(t)", "h(t+1)"][i]
+            bb = d.textbbox((0, 0), lbl, font=f_sm)
+            d.text((cx - (bb[2] - bb[0]) // 2, cy - 14), lbl, font=f_sm, fill=INK)
+            _draw_arrow(d, (cx, 530), (cx, cy + 64), SOFT, width=5, head=14)
+            _draw_arrow(d, (cx, cy - 64), (cx, 170), GREEN, width=5, head=14)
+            d.text((cx - 16, 545), f"x{i + 1}", font=f_sm, fill=SOFT)
+            d.text((cx - 16, 130), f"y{i + 1}", font=f_sm, fill=GREEN)
+            if i < 2:
+                _draw_arrow(d, (cx + 68, cy), (xs[i + 1] - 68, cy), AMBER, width=7, head=18)
+
+    else:
+        # Chapter 19: Graph Neural Networks & Message Passing
+        nodes = [(380, 340), (205, 195), (565, 200), (165, 445), (595, 455), (375, 555)]
+        edges = [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 3), (2, 4), (3, 5), (4, 5)]
+        for a, b in edges:
+            col = AMBER if a == 0 else MUTED
+            w = 6 if a == 0 else 4
+            d.line([nodes[a], nodes[b]], fill=col, width=w)
+            if a == 0:
+                # Message arrow toward target node 0
+                x1, y1 = nodes[b]
+                x2, y2 = nodes[0]
+                mx, my = x1 + (x2 - x1) * 0.68, y1 + (y2 - y1) * 0.68
+                _draw_arrow(d, (x1 + (x2 - x1) * 0.25, y1 + (y2 - y1) * 0.25), (mx, my), AMBER, width=6, head=16)
+        for i, (nx, ny) in enumerate(nodes):
+            if i == 0:
+                d.ellipse([nx - 38, ny - 38, nx + 38, ny + 38], fill=PURPLE_S, outline=PURPLE, width=7)
+                d.text((nx - 10, ny - 16), "v", font=f_lbl, fill=PURPLE)
+            else:
+                d.ellipse([nx - 24, ny - 24, nx + 24, ny + 24], fill=WHITE, outline=BLUE, width=5)
+        d.text((175, 84), "Message Passing", font=f_lbl, fill=PURPLE)
+
+    return canvas.resize((width, height), Image.LANCZOS)
 
 
 def generate_og_card(
@@ -228,144 +581,199 @@ def generate_og_card(
     description: str,
     chips: list[str],
     footer_right: str,
-    accent_a: str = "#38BDF8",
-    accent_b: str = "#FB7185",
+    accent_a: str = "#1D4ED8",
+    accent_b: str = "#15803D",
     seed: int = 0,
+    chapter: int | None = None,
+    is_home: bool = False,
 ) -> None:
     if Image is None:
         raise RuntimeError("Pillow non installato: installa `pillow` per generare le immagini Open Graph.")
 
-    img = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), hex_to_rgba("#090D16", 255))
+    # Clean Studio Light canvas (matches website default theme, zero AI slop)
+    img = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), hex_to_rgba("#F6F6F3", 255))
 
-    # Subtle dot grid background
-    grid_layer = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(grid_layer, "RGBA")
-    dot_color = hex_to_rgba("#94A3B8", 28)
-    for gx in range(28, OG_WIDTH, 32):
-        for gy in range(28, OG_HEIGHT, 32):
-            gd.ellipse([gx - 1, gy - 1, gx + 1, gy + 1], fill=dot_color)
-    img = Image.alpha_composite(img, grid_layer)
-
-    # Card frame & rounded clip mask
-    card_layer = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
-    cd = ImageDraw.Draw(card_layer, "RGBA")
-    margin = 36
+    margin = 34
     card_box = [margin, margin, OG_WIDTH - margin, OG_HEIGHT - margin]
-    cd.rounded_rectangle(
+
+    # Soft realistic card elevation shadow
+    shadow = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow, "RGBA").rounded_rectangle(
+        [margin, margin + 8, OG_WIDTH - margin, OG_HEIGHT - margin + 10],
+        radius=26,
+        fill=(20, 20, 19, 18),
+    )
+    shadow = shadow.filter(ImageFilter.GaussianBlur(radius=16))
+    img = Image.alpha_composite(img, shadow)
+
+    # Pure white editorial card surface
+    card_layer = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
+    ImageDraw.Draw(card_layer, "RGBA").rounded_rectangle(
         card_box,
-        radius=28,
-        fill=hex_to_rgba("#111827", 238),
-        outline=hex_to_rgba("#94A3B8", 70),
+        radius=26,
+        fill=hex_to_rgba("#FFFFFF", 255),
+        outline=hex_to_rgba("#E5E5E0", 255),
         width=2,
     )
     img = Image.alpha_composite(img, card_layer)
-
-    card_mask = Image.new("L", (OG_WIDTH, OG_HEIGHT), 0)
-    ImageDraw.Draw(card_mask).rounded_rectangle(card_box, radius=28, fill=255)
-    img = draw_decorative_network(img, card_mask, accent_a, accent_b, seed)
-
-    # Top accent bar & crisp card border on top
-    accent_bar = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
-    abd = ImageDraw.Draw(accent_bar, "RGBA")
-    abd.rounded_rectangle(card_box, radius=28, fill=None, outline=hex_to_rgba("#94A3B8", 75), width=2)
-    abd.rounded_rectangle(
-        [margin + 40, margin, margin + 290, margin + 6],
-        radius=3,
-        fill=hex_to_rgba(accent_a, 245),
-    )
-    img = Image.alpha_composite(img, accent_bar)
-
     draw = ImageDraw.Draw(img, "RGBA")
 
-    f_badge = load_font(20, bold=True)
-    f_eyebrow = load_font(24, bold=True)
-    f_title = load_font(54, bold=True)
-    f_desc = load_font(25, bold=False)
-    f_chip = load_font(20, bold=True)
-    f_foot = load_font(19, bold=False)
+    f_eyebrow = load_font(21, bold=False)
+    f_kicker = load_font(22, bold=True)
+    f_title = load_font(54 if is_home else 50, bold=True)
+    f_desc = load_font(24, bold=False)
+    f_chip = load_font(19, bold=True)
+    f_foot = load_font(18, bold=False)
+    f_name = load_font(21, bold=True)
+    f_sub = load_font(17, bold=False)
 
     left = margin + 46
-    top = margin + 42
+    top = margin + 38
+    right_edge = OG_WIDTH - margin - 46
 
-    # Top badges (pre-blended dark tinted pill for high contrast)
-    next_x = draw_pill(
-        draw,
-        left,
-        top,
-        "UNIPI 654AA · MACHINE LEARNING",
-        f_badge,
-        fill=blend_hex(accent_a, "#111827", 0.22),
-        outline=blend_hex(accent_a, "#111827", 0.72),
-        text_color=blend_hex(accent_a, "#FFFFFF", 0.35),
+    # Clean editorial eyebrow (no neon SaaS pills!)
+    eyebrow_line = "Università di Pisa  /  654AA  /  Laurea Magistrale 2026–27" if is_home else (
+        f"Università di Pisa  /  654AA  /  {part_label}" if part_label else "Università di Pisa  /  654AA"
     )
-    if part_label:
-        draw_pill(
-            draw,
-            next_x + 14,
-            top,
-            part_label.upper(),
-            f_badge,
-            fill=hex_to_rgba("#1E293B", 255),
-            outline=hex_to_rgba("#475569", 255),
-            text_color=hex_to_rgba("#CBD5E1", 255),
+    draw.text((left, top), eyebrow_line, font=f_eyebrow, fill=hex_to_rgba("#73736D", 255))
+
+    # Right-hand visual panel (Lia hero showcase on Home, topic-specific ML visual on chapters!)
+    panel_w, panel_h = 376, 344
+    panel_x = right_edge - panel_w
+    panel_y = top + 46
+    panel_box = [panel_x, panel_y, panel_x + panel_w, panel_y + panel_h]
+
+    if is_home:
+        # Warm Studio stage featuring Lia front-and-center
+        draw.rounded_rectangle(
+            panel_box,
+            radius=22,
+            fill=hex_to_rgba("#F6F6F3", 255),
+            outline=hex_to_rgba("#E5E5E0", 255),
+            width=2,
         )
+        lia_big = load_lia_frame(frame_idx=5, size=310)
+        if lia_big is not None:
+            lx = panel_x + (panel_w - 310) // 2
+            ly = panel_y + panel_h - 306
+            # Clip Lia cleanly inside rounded panel
+            pmask = Image.new("L", (OG_WIDTH, OG_HEIGHT), 0)
+            ImageDraw.Draw(pmask).rounded_rectangle(panel_box, radius=22, fill=255)
+            lia_layer = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
+            lia_layer.paste(lia_big, (lx, ly), lia_big)
+            clipped_lia = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), (0, 0, 0, 0))
+            clipped_lia.paste(lia_layer, (0, 0), pmask)
+            img = Image.alpha_composite(img, clipped_lia)
+            draw = ImageDraw.Draw(img, "RGBA")
+    else:
+        visual = draw_chapter_visual(chapter if chapter is not None else 0, width=panel_w, height=panel_h)
+        pmask = Image.new("L", (panel_w, panel_h), 0)
+        ImageDraw.Draw(pmask).rounded_rectangle([0, 0, panel_w - 1, panel_h - 1], radius=20, fill=255)
+        img.paste(visual, (panel_x, panel_y), pmask)
+        draw = ImageDraw.Draw(img, "RGBA")
+        draw.rounded_rectangle(panel_box, radius=20, fill=None, outline=hex_to_rgba("#E5E5E0", 255), width=2)
 
-    # Eyebrow
-    y = top + 66
-    if eyebrow:
-        draw.text((left, y), eyebrow.upper(), font=f_eyebrow, fill=hex_to_rgba(accent_a, 255))
-        y += 40
+    # Left column typography
+    max_text_w = panel_x - left - 36
+    y = top + 52
 
-    # Title (constrained to left ~735 px to stay clear of motif)
-    max_text_w = 735
+    if eyebrow and not is_home:
+        draw.text((left, y), eyebrow.upper(), font=f_kicker, fill=hex_to_rgba(accent_a, 255))
+        y += 38
+
     title_lines = wrap_text(draw, title, f_title, max_text_w, max_lines=2)
-    if len(title_lines) == 2 and len(title) > 46:
-        f_title = load_font(46, bold=True)
+    if len(title_lines) == 2 and len(title) > 36:
+        f_title = load_font(44, bold=True)
         title_lines = wrap_text(draw, title, f_title, max_text_w, max_lines=2)
-    line_step = 64 if f_title.size >= 50 else 56
+    line_step = 62 if f_title.size >= 50 else 54
     for line in title_lines:
-        draw.text((left, y), line, font=f_title, fill=hex_to_rgba("#F8FAFC", 255))
+        draw.text((left, y), line, font=f_title, fill=hex_to_rgba("#141413", 255))
         y += line_step
 
-    # Description
-    y += 12
-    desc_lines = wrap_text(draw, description, f_desc, max_text_w, max_lines=3)
-    for line in desc_lines:
-        draw.text((left, y), line, font=f_desc, fill=hex_to_rgba("#CBD5E1", 240))
-        y += 35
+    if is_home:
+        # Credits row with Fabio + Prof. Alessio Micheli photos (matching live Homepage!)
+        y += 18
+        fabio = load_circle_photo("author-fabio.jpg", size=52)
+        if fabio is not None:
+            img.alpha_composite(fabio, (left, y))
+        tx = left + (66 if fabio else 0)
+        draw.text((tx, y + 3), "Appunti di Fabio Piscitelli", font=f_name, fill=hex_to_rgba("#141413", 255))
+        draw.text((tx, y + 29), "github.com/fabiopsh", font=f_sub, fill=hex_to_rgba("#73736D", 255))
 
-    # Bottom divider & chips
-    div_y = OG_HEIGHT - margin - 102
-    draw.line(
-        [(left, div_y), (OG_WIDTH - margin - 46, div_y)],
-        fill=hex_to_rgba("#94A3B8", 48),
-        width=2,
-    )
+        y += 68
+        prof = load_circle_photo("prof-micheli.jpg", size=52)
+        if prof is not None:
+            img.alpha_composite(prof, (left, y))
+        tx = left + (66 if prof else 0)
+        draw.text((tx, y + 3), "Prof. Alessio Micheli", font=f_name, fill=hex_to_rgba("#141413", 255))
+        draw.text((tx, y + 29), "Docente del corso · Dip. Informatica UNIPI", font=f_sub, fill=hex_to_rgba("#73736D", 255))
 
-    chip_x = left
-    chip_y = div_y + 24
-    for chip in chips:
-        chip_x = draw_pill(
-            draw,
-            chip_x,
-            chip_y,
-            chip,
-            f_chip,
-            fill=hex_to_rgba("#161F33", 240),
-            outline=hex_to_rgba("#94A3B8", 80),
-            text_color=hex_to_rgba("#F1F5F9", 255),
-            pad_x=16,
-            pad_y=8,
-        ) + 12
+        # Clean summary pills below credits
+        y += 74
+        cx_chip = left
+        for chip in chips:
+            cx_chip = draw_pill(
+                draw,
+                cx_chip,
+                y,
+                chip,
+                f_chip,
+                fill=hex_to_rgba("#EFEFEC", 255),
+                outline=hex_to_rgba("#E5E5E0", 255),
+                text_color=hex_to_rgba("#141413", 255),
+                pad_x=16,
+                pad_y=8,
+            ) + 12
+    else:
+        y += 12
+        desc_lines = wrap_text(draw, description, f_desc, max_text_w, max_lines=3)
+        for line in desc_lines:
+            draw.text((left, y), line, font=f_desc, fill=hex_to_rgba("#464642", 255))
+            y += 35
 
-    # Footer right
+        # Subtle duration/topic chips
+        y += 18
+        cx_chip = left
+        for chip in chips:
+            cx_chip = draw_pill(
+                draw,
+                cx_chip,
+                y,
+                chip,
+                f_chip,
+                fill=hex_to_rgba("#EFEFEC", 255),
+                outline=hex_to_rgba("#E5E5E0", 255),
+                text_color=hex_to_rgba("#141413", 255),
+                pad_x=15,
+                pad_y=7,
+            ) + 10
+
+    # Bottom hairline divider + Natural Lia Tutor signature & domain
+    div_y = OG_HEIGHT - margin - 94
+    draw.line([(left, div_y), (right_edge, div_y)], fill=hex_to_rgba("#E5E5E0", 255), width=2)
+
+    foot_y = div_y + 18
+    if not is_home:
+        lia_mini = load_lia_frame(frame_idx=5, size=56)
+        if lia_mini is not None:
+            badge_box = [left, foot_y, left + 56, foot_y + 56]
+            draw.rounded_rectangle(badge_box, radius=14, fill=hex_to_rgba("#F6F6F3", 255), outline=hex_to_rgba("#E5E5E0", 255), width=2)
+            bmask = Image.new("L", (56, 56), 0)
+            ImageDraw.Draw(bmask).rounded_rectangle([1, 1, 54, 54], radius=13, fill=255)
+            img.paste(lia_mini, (left, foot_y), bmask)
+            draw = ImageDraw.Draw(img, "RGBA")
+            draw.text((left + 70, foot_y + 6), "Lia · Videolezione guidata", font=load_font(19, bold=True), fill=hex_to_rgba("#141413", 255))
+            draw.text((left + 70, foot_y + 31), "Appunti di Fabio Piscitelli · Prof. Alessio Micheli", font=f_sub, fill=hex_to_rgba("#73736D", 255))
+    else:
+        draw.text((left, foot_y + 16), "Videolezioni sincronizzate con formule KaTeX e grafici reali", font=f_foot, fill=hex_to_rgba("#73736D", 255))
+
     fbbox = draw.textbbox((0, 0), footer_right, font=f_foot)
     fw = fbbox[2] - fbbox[0]
     draw.text(
-        (OG_WIDTH - margin - 46 - fw, chip_y + 10),
+        (right_edge - fw, foot_y + 16),
         footer_right,
         font=f_foot,
-        fill=hex_to_rgba("#94A3B8", 230),
+        fill=hex_to_rgba("#73736D", 255),
     )
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -655,25 +1063,25 @@ def build_site(
 
     home_title = f"{course.get('title', 'Machine Learning')} ({course.get('code', '654AA')}) — Videolezioni Interattive"
     home_desc = (
-        f"Videolezioni interattive di Machine Learning ({course.get('university', 'UNIPI')}, "
-        f"{course.get('professor', 'Prof. Alessio Micheli')}): {len(ready_lessons)} capitoli pronti, "
-        f"{total_scenes} scene con formule KaTeX, grafici e voce sincronizzata."
+        f"Videolezioni di Machine Learning ({course.get('university', 'UNIPI')}, "
+        f"{course.get('professor', 'Prof. Alessio Micheli')}): {format_hours(total_mins)} di lezioni "
+        f"con formule KaTeX, grafici e voce sincronizzata dagli appunti di Fabio Piscitelli."
     )
     generate_og_card(
         og_dir / "home.png",
-        eyebrow="CORSO INTERATTIVO · LAUREA MAGISTRALE",
+        eyebrow="",
         part_label=course.get("academic_year", "2026/27"),
         title="Machine Learning",
-        description="Videolezioni dinamiche con formule KaTeX, grafici interattivi e voce sincronizzata dalle note di Fabio Piscitelli.",
+        description="",
         chips=[
-            f"{len(ready_lessons)}/{len(lessons)} capitoli",
-            f"{total_scenes} scene",
-            format_hours(total_mins),
+            f"{format_hours(total_mins)} di lezioni",
+            f"{len(ready_lessons)} capitoli",
         ],
         footer_right=display_host,
-        accent_a="#38BDF8",
-        accent_b="#FB7185",
+        accent_a="#1D4ED8",
+        accent_b="#15803D",
         seed=0,
+        is_home=True,
     )
 
     # Render Home index.html
@@ -736,7 +1144,7 @@ def build_site(
 
         page_title = f"Cap. {chap_str} · {lesson['title']} — Machine Learning (654AA)"
         og_title = f"Cap. {chap_str} · {lesson['title']}"
-        og_desc = f"{summary} ({scenes_count} scene · ~{dur_min} min · Voce e formule sincronizzate)"
+        og_desc = f"{summary} (~{dur_min} min · Videolezione sincronizzata UNIPI 654AA)"
         canonical = f"{base_url}{lid}/"
         og_img_url = f"{base_url}og/{lid}.png"
 
@@ -747,14 +1155,15 @@ def build_site(
             title=lesson["title"],
             description=summary,
             chips=[
-                f"{scenes_count} scene",
                 f"~{dur_min} min",
-                "Audio + KaTeX",
+                "Voce + KaTeX",
             ],
             footer_right=display_host,
             accent_a=accent_a,
             accent_b=accent_b,
             seed=chap_num + 1,
+            chapter=chap_num,
+            is_home=False,
         )
 
         chap_html = lesson_tpl.replace(
