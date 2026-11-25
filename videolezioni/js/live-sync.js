@@ -331,43 +331,50 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:Delta_w", "var:w"], rx: /^delta\s+w$/, spec: 10 },
   { keys: ["var:neg_xi", "var:x_i"], rx: /^non\s+x\s*(?:con\s+)?i$/, spec: 11 },
   { keys: ["var:neg_x1", "var:x_1"], rx: /^non\s+x\s*(?:con\s+)?uno$/, spec: 11 },
-  { keys: ["var:x_pi", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+virgola\s+i$/, spec: 11 },
-  { keys: ["var:x_pj", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+virgola\s+j$/, spec: 11 },
-  { keys: ["var:x_p_T", "var:x_p"], rx: /^x\s*(?:con\s+)?p\s+trasposto$/, spec: 11 },
-  { keys: ["var:x_i_T", "var:x_i"], rx: /^x\s*(?:con\s+)?i\s+trasposto$/, spec: 11 },
-  { keys: ["var:w_o_T", "var:w_o", "var:w_T"], rx: /^w\s*(?:con\s+)?(?:o|zero)\s+trasposto$/, spec: 11 },
-  { keys: ["var:w_o", "var:w_0"], rx: /^w\s*(?:con\s+)?o$/, spec: 10 },
-  { keys: ["var:b_o", "var:b_0"], rx: /^b\s*(?:con\s+)?(?:o|zero)$/, spec: 10 },
+  { keys: ["var:x_pi"], rx: /^x\s+(?:con\s+)?p\s+virgola\s+i$/, spec: 11 },
+  { keys: ["var:x_pj"], rx: /^x\s+(?:con\s+)?p\s+virgola\s+j$/, spec: 11 },
+  { keys: ["var:x_p_T"], rx: /^x\s+(?:con\s+)?p\s+trasposto$/, spec: 11 },
+  { keys: ["var:x_i_T"], rx: /^x\s+(?:con\s+)?i\s+trasposto$/, spec: 11 },
+  { keys: ["var:w_o_T", "var:w_o"], rx: /^w\s+(?:con\s+)?(?:o|zero)\s+trasposto$/, spec: 11 },
+  { keys: ["var:w_o", "var:w_0"], rx: /^w\s+(?:con\s+)?o$/, spec: 10 },
+  { keys: ["var:b_o", "var:b_0"], rx: /^b\s+(?:con\s+)?(?:o|zero)$/, spec: 10 },
   { keys: ["var:a_T"], rx: /^a\s+trasposto$/, spec: 10 },
-  { keys: ["var:x_1_sq", "var:x_1"], rx: /^x\s*(?:con\s+)?uno\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
-  { keys: ["var:x_2_sq", "var:x_2"], rx: /^x\s*(?:con\s+)?due\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
-  { keys: ["var:y_sq", "var:y"], rx: /^y\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
-  { keys: ["var:w_i_star", "var:w_star", "var:w_i"], rx: /^w\s*(?:con\s+)?i\s+stella$/, spec: 11 },
+  { keys: ["var:x_1_sq"], rx: /^x\s+(?:con\s+)?uno\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:x_2_sq"], rx: /^x\s+(?:con\s+)?due\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:y_sq"], rx: /^y\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["var:w_i_star"], rx: /^w\s+(?:con\s+)?i\s+stella$/, spec: 11 },
   { keys: ["var:i_star"], rx: /^i\s+stella$/, spec: 10 },
-  { keys: ["var:alpha_i_prime", "var:alpha_i", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:primo\s*(?:con\s+)?i|(?:con\s+)?i\s+primo)$/, spec: 11 },
-  { keys: ["var:alpha_j", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:con\s+)?j$/, spec: 10 },
-  { keys: ["var:alpha_oi", "var:alpha_i", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:con\s+)?(?:o|zero)\s*(?:virgola\s+)?i$/, spec: 11 },
-  { keys: ["var:xi_i_prime", "var:xi_i", "sym:xi"], rx: /^(?:csi|xi)\s*(?:primo\s*(?:con\s+)?i|(?:con\s+)?i\s+primo)$/, spec: 11 },
-  { keys: ["var:gamma_i", "sym:gamma"], rx: /^gamma\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:d_j"], rx: /^d\s*(?:con\s+)?j$/, spec: 10 },
-  { keys: ["var:h_i"], rx: /^h\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:h_v"], rx: /^h\s*(?:con\s+)?v$/, spec: 10 },
-  { keys: ["var:h_u"], rx: /^h\s*(?:con\s+)?u$/, spec: 10 },
-  { keys: ["var:k_1"], rx: /^k\s*(?:con\s+)?uno$/, spec: 10 },
-  { keys: ["var:k_2"], rx: /^k\s*(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:alpha_i_prime"], rx: /^al(?:fa|pha)\s+(?:primo\s+(?:con\s+)?i|(?:con\s+)?i\s+primo)$/, spec: 11 },
+  { keys: ["var:alpha_j"], rx: /^al(?:fa|pha)\s+(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:alpha_oi"], rx: /^al(?:fa|pha)\s+(?:con\s+)?(?:o|zero)\s+(?:virgola\s+)?i$/, spec: 11 },
+  { keys: ["var:xi_i_prime"], rx: /^(?:csi|xi)\s+(?:primo\s+(?:con\s+)?i|(?:con\s+)?i\s+primo)$/, spec: 11 },
+  { keys: ["var:gamma_i"], rx: /^gamma\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:d_j"], rx: /^d\s+(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:h_i"], rx: /^h\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:h_v"], rx: /^h\s+(?:con\s+)?v$/, spec: 10 },
+  { keys: ["var:h_u"], rx: /^h\s+(?:con\s+)?u$/, spec: 10 },
+  { keys: ["var:k_1"], rx: /^k\s+(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:k_2"], rx: /^k\s+(?:con\s+)?due$/, spec: 10 },
   { keys: ["set:R^3", "set:R"], rx: /^r\s+(?:alla\s+terza|al\s+cubo|tre)$/, spec: 11 },
-  { keys: ["set:R^2", "set:R"], rx: /^r\s+(?:alla\s+seconda|al\s+quadrato|quadro|due)$/, spec: 11 },
-  { keys: ["var:x_p"], rx: /^x\s*(?:con\s+)?p$/, spec: 10 },
-  { keys: ["var:x_0"], rx: /^x\s*(?:con\s+)?zero$/, spec: 10 },
-  { keys: ["var:x_1"], rx: /^x\s*(?:con\s+)?uno$/, spec: 10 },
-  { keys: ["var:x_2"], rx: /^x\s*(?:con\s+)?due$/, spec: 10 },
-  { keys: ["var:x_3"], rx: /^x\s*(?:con\s+)?tre$/, spec: 10 },
-  { keys: ["var:x_4"], rx: /^x\s*(?:con\s+)?quattro$/, spec: 10 },
-  { keys: ["var:x_a"], rx: /^x\s*(?:con\s+)?a$/, spec: 10 },
-  { keys: ["var:x_b"], rx: /^x\s*(?:con\s+)?b$/, spec: 10 },
-  { keys: ["var:x_i"], rx: /^x\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:x_j"], rx: /^x\s*(?:con\s+)?j$/, spec: 10 },
-  { keys: ["var:x_k"], rx: /^x\s*(?:con\s+)?k$/, spec: 10 },
+  { keys: ["set:R^2", "var:R_sq", "set:R"], rx: /^r\s+(?:alla\s+seconda|al\s+quadrato|quadro|due)$/, spec: 11 },
+  { keys: ["frac:0/1"], rx: /^zero\s+(?:slash\s+|barra\s+|su\s+)?uno$/, spec: 11 },
+  { keys: ["var:TP"], rx: /^t\s*p$/, spec: 10 },
+  { keys: ["var:TN"], rx: /^t\s*n$/, spec: 10 },
+  { keys: ["var:FP"], rx: /^f\s*p$/, spec: 10 },
+  { keys: ["var:FN"], rx: /^f\s*n$/, spec: 10 },
+  { keys: ["var:VL"], rx: /^v\s*l$/, spec: 10 },
+  { keys: ["var:TS"], rx: /^t\s*s$/, spec: 10 },
+  { keys: ["var:x_p"], rx: /^x\s+(?:con\s+)?p$/, spec: 10 },
+  { keys: ["var:x_0"], rx: /^x\s+(?:con\s+)?zero$/, spec: 10 },
+  { keys: ["var:x_1"], rx: /^x\s+(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:x_2"], rx: /^x\s+(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:x_3"], rx: /^x\s+(?:con\s+)?tre$/, spec: 10 },
+  { keys: ["var:x_4"], rx: /^x\s+(?:con\s+)?quattro$/, spec: 10 },
+  { keys: ["var:x_a"], rx: /^x\s+(?:con\s+)?a$/, spec: 10 },
+  { keys: ["var:x_b"], rx: /^x\s+(?:con\s+)?b$/, spec: 10 },
+  { keys: ["var:x_i"], rx: /^x\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:x_j"], rx: /^x\s+(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:x_k"], rx: /^x\s+(?:con\s+)?k$/, spec: 10 },
   { keys: ["var:X_T", "var:x_T"], rx: /^x\s+trasposto$/, rawTest: (r) => /^X\b/.test(r), spec: 10 },
   { keys: ["var:x_T", "var:X_T"], rx: /^x\s+trasposto$/, spec: 10 },
   { keys: ["var:X_plus"], rx: /^(?:x\s+piu|pseudoinversa)$/, spec: 10 },
@@ -376,43 +383,43 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:v_T", "var:V_T"], rx: /^v\s+trasposto$/, spec: 10 },
   { keys: ["var:U_T"], rx: /^u\s+trasposto$/, spec: 10 },
   { keys: ["var:w_T"], rx: /^w\s+trasposto$/, spec: 10 },
-  { keys: ["var:w_0"], rx: /^w\s*(?:con\s+)?zero$/, spec: 10 },
-  { keys: ["var:w_1"], rx: /^w\s*(?:con\s+)?uno$/, spec: 10 },
-  { keys: ["var:w_2"], rx: /^w\s*(?:con\s+)?due$/, spec: 10 },
-  { keys: ["var:w_3"], rx: /^w\s*(?:con\s+)?tre$/, spec: 10 },
-  { keys: ["var:w_i"], rx: /^w\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:w_j"], rx: /^w\s*(?:con\s+)?j$/, spec: 10 },
-  { keys: ["var:w_k"], rx: /^w\s*(?:con\s+)?k$/, spec: 10 },
-  { keys: ["var:w_kj"], rx: /^w\s*(?:con\s+)?k\s+j$/, spec: 11 },
-  { keys: ["var:w_ji"], rx: /^w\s*(?:con\s+)?j\s+i$/, spec: 11 },
-  { keys: ["var:w_ij"], rx: /^w\s*(?:con\s+)?i\s+j$/, spec: 11 },
-  { keys: ["var:w_tu"], rx: /^w\s*(?:con\s+)?t\s+u$/, spec: 11 },
-  { keys: ["var:w_t0"], rx: /^w\s*(?:con\s+)?t\s+zero$/, spec: 11 },
-  { keys: ["var:w_ts"], rx: /^w\s*(?:con\s+)?t\s+s$/, spec: 11 },
-  { keys: ["var:w_hj"], rx: /^w\s*(?:con\s+)?h\s+j$/, spec: 11 },
-  { keys: ["var:w_i0"], rx: /^w\s*(?:con\s+)?i\s+zero$/, spec: 11 },
+  { keys: ["var:w_0"], rx: /^w\s+(?:con\s+)?zero$/, spec: 10 },
+  { keys: ["var:w_1"], rx: /^w\s+(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:w_2"], rx: /^w\s+(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:w_3"], rx: /^w\s+(?:con\s+)?tre$/, spec: 10 },
+  { keys: ["var:w_i"], rx: /^w\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:w_j"], rx: /^w\s+(?:con\s+)?j$/, spec: 10 },
+  { keys: ["var:w_k"], rx: /^w\s+(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:w_kj"], rx: /^w\s+(?:con\s+)?k\s+j$/, spec: 11 },
+  { keys: ["var:w_ji"], rx: /^w\s+(?:con\s+)?j\s+i$/, spec: 11 },
+  { keys: ["var:w_ij"], rx: /^w\s+(?:con\s+)?i\s+j$/, spec: 11 },
+  { keys: ["var:w_tu"], rx: /^w\s+(?:con\s+)?t\s+u$/, spec: 11 },
+  { keys: ["var:w_t0"], rx: /^w\s+(?:con\s+)?t\s+zero$/, spec: 11 },
+  { keys: ["var:w_ts"], rx: /^w\s+(?:con\s+)?t\s+s$/, spec: 11 },
+  { keys: ["var:w_hj"], rx: /^w\s+(?:con\s+)?h\s+j$/, spec: 11 },
+  { keys: ["var:w_i0"], rx: /^w\s+(?:con\s+)?i\s+zero$/, spec: 11 },
   { keys: ["var:w_star"], rx: /^w\s+stella$/, spec: 10 },
   { keys: ["var:w_new"], rx: /^w\s+nuovo$/, spec: 10 },
   { keys: ["var:w_old"], rx: /^w\s+vecchio$/, spec: 10 },
-  { keys: ["var:w_i_prime"], rx: /^w\s+primo\s*(?:con\s+)?i$/, spec: 11 },
-  { keys: ["var:Delta_p_wtu", "var:Delta_w"], rx: /^delta\s*(?:con\s+)?p\s*(?:di\s+)?w\s*(?:con\s+)?t\s+u$/, spec: 11 },
-  { keys: ["var:Delta_wkj", "var:w_kj"], rx: /^delta\s+w\s*(?:con\s+)?k\s+j$/, spec: 11 },
-  { keys: ["var:Delta_wji", "var:w_ji"], rx: /^delta\s+w\s*(?:con\s+)?j\s+i$/, spec: 11 },
+  { keys: ["var:w_i_prime"], rx: /^w\s+primo\s+(?:con\s+)?i$/, spec: 11 },
+  { keys: ["var:Delta_p_wtu", "var:Delta_w"], rx: /^delta\s+(?:con\s+)?p\s+(?:di\s+)?w\s+(?:con\s+)?t\s+u$/, spec: 11 },
+  { keys: ["var:Delta_wkj", "var:w_kj"], rx: /^delta\s+w\s+(?:con\s+)?k\s+j$/, spec: 11 },
+  { keys: ["var:Delta_wji", "var:w_ji"], rx: /^delta\s+w\s+(?:con\s+)?j\s+i$/, spec: 11 },
   { keys: ["var:Delta_w_old", "var:Delta_w"], rx: /^delta\s+w\s+vecchio$/, spec: 11 },
   { keys: ["var:Delta_w_new", "var:Delta_w"], rx: /^delta\s+w\s+nuovo$/, spec: 11 },
-  { keys: ["var:d_p"], rx: /^d\s*(?:con\s+)?p$/, spec: 10 },
-  { keys: ["var:d_i"], rx: /^d\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:d_k"], rx: /^d\s*(?:con\s+)?k$/, spec: 10 },
-  { keys: ["var:d_r"], rx: /^d\s*(?:con\s+)?r$/, spec: 10 },
-  { keys: ["var:D_l", "var:D"], rx: /^d\s*(?:con\s+)?l$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
-  { keys: ["var:D_r", "var:D"], rx: /^d\s*(?:con\s+)?r$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
-  { keys: ["var:D_k", "var:D"], rx: /^d\s*(?:con\s+)?k$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
-  { keys: ["var:D_i", "var:D"], rx: /^d\s*(?:con\s+)?i$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
-  { keys: ["var:D_1", "var:D"], rx: /^d\s*(?:con\s+)?uno$/, spec: 10 },
-  { keys: ["var:D_2", "var:D"], rx: /^d\s*(?:con\s+)?due$/, spec: 10 },
-  { keys: ["var:D_TR", "var:TR"], rx: /^d\s*(?:con\s+)?t\s*r$/, spec: 10 },
-  { keys: ["var:D_VL", "var:VL"], rx: /^d\s*(?:con\s+)?v\s*l$/, spec: 10 },
-  { keys: ["var:D_TS", "var:TS"], rx: /^d\s*(?:con\s+)?t\s*s$/, spec: 10 },
+  { keys: ["var:d_p"], rx: /^d\s+(?:con\s+)?p$/, spec: 10 },
+  { keys: ["var:d_i"], rx: /^d\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:d_k"], rx: /^d\s+(?:con\s+)?k$/, spec: 10 },
+  { keys: ["var:d_r"], rx: /^d\s+(?:con\s+)?r$/, spec: 10 },
+  { keys: ["var:D_l"], rx: /^d\s+(?:con\s+)?l$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_r"], rx: /^d\s+(?:con\s+)?r$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_k"], rx: /^d\s+(?:con\s+)?k$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_i"], rx: /^d\s+(?:con\s+)?i$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["var:D_1"], rx: /^d\s+(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:D_2"], rx: /^d\s+(?:con\s+)?due$/, spec: 10 },
+  { keys: ["var:D_TR", "var:TR"], rx: /^d\s+(?:con\s+)?t\s*r$/, spec: 10 },
+  { keys: ["var:D_VL", "var:VL"], rx: /^d\s+(?:con\s+)?v\s*l$/, spec: 10 },
+  { keys: ["var:D_TS", "var:TS"], rx: /^d\s+(?:con\s+)?t\s*s$/, spec: 10 },
   { keys: ["var:o_k"], rx: /^o\s+con\s+k$/, spec: 10 },
   { keys: ["var:o_j"], rx: /^o\s+con\s+j$/, spec: 10 },
   { keys: ["var:o_i"], rx: /^o\s+con\s+i$/, spec: 10 },
@@ -422,19 +429,19 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:o_r"], rx: /^o\s+con\s+r$/, spec: 10 },
   { keys: ["var:o_0"], rx: /^o\s+con\s+zero$/, spec: 10 },
   { keys: ["bar:o"], rx: /^o\s+(?:medio|soprassegnat[oa])$/, spec: 10 },
-  { keys: ["var:e_i_sq", "var:e_i"], rx: /^e\s+con\s+i\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:e_i_sq"], rx: /^e\s+con\s+i\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
   { keys: ["var:e_i"], rx: /^e\s+con\s+i$/, spec: 10 },
-  { keys: ["var:y_i"], rx: /^y\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:y_t"], rx: /^y\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
-  { keys: ["var:h_t"], rx: /^h\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
-  { keys: ["var:c_t"], rx: /^c\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
-  { keys: ["var:x_t"], rx: /^x\s*(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
-  { keys: ["var:x_q"], rx: /^x\s*(?:con\s+)?q$/, spec: 10 },
-  { keys: ["var:x_i_prime", "var:x_prime"], rx: /^x\s+primo\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:z_1"], rx: /^z\s*(?:con\s+)?uno$/, spec: 10 },
-  { keys: ["var:z_l"], rx: /^z\s*(?:con\s+)?l$/, spec: 10 },
-  { keys: ["var:z_i"], rx: /^z\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:z_r"], rx: /^z\s*(?:con\s+)?r$/, spec: 10 },
+  { keys: ["var:y_i"], rx: /^y\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:y_t"], rx: /^y\s+(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:h_t"], rx: /^h\s+(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:c_t"], rx: /^c\s+(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:x_t"], rx: /^x\s+(?:con\s+|al\s+tempo\s+)?t$/, spec: 10 },
+  { keys: ["var:x_q"], rx: /^x\s+(?:con\s+)?q$/, spec: 10 },
+  { keys: ["var:x_i_prime", "var:x_prime"], rx: /^x\s+primo\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:z_1"], rx: /^z\s+(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:z_l"], rx: /^z\s+(?:con\s+)?l$/, spec: 10 },
+  { keys: ["var:z_i"], rx: /^z\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:z_r"], rx: /^z\s+(?:con\s+)?r$/, spec: 10 },
   { keys: ["var:N_k"], rx: /^n\s+con\s+k$/, spec: 10 },
   { keys: ["var:N_0"], rx: /^n\s*(?:con\s+)?zero$/, spec: 10 },
   { keys: ["var:H_1", "var:h_1"], rx: /^h\s*(?:con\s+)?uno$/, rawTest: (r) => /^H\b/.test(r), spec: 10 },
@@ -475,17 +482,17 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:delta_h", "var:delta"], rx: /^delta\s*(?:con\s+)?h$/, spec: 10 },
   { keys: ["var:alpha_i", "sym:alpha"], rx: /^al(?:fa|pha)\s*(?:con\s+)?i$/, spec: 10 },
   { keys: ["var:xi_i", "sym:xi"], rx: /^(?:csi|xi)\s*(?:con\s+)?i$/, spec: 10 },
-  { keys: ["var:theta_m_star", "var:theta_m", "sym:theta"], rx: /^theta\s+stella(?:\s*(?:con\s+)?m)?$/, spec: 10 },
-  { keys: ["var:theta_m", "sym:theta"], rx: /^theta\s*(?:con\s+)?m$/, spec: 10 },
-  { keys: ["var:eta_0", "sym:eta"], rx: /^eta\s*(?:con\s+)?zero$/, spec: 10 },
-  { keys: ["var:eta_tau", "sym:eta"], rx: /^eta\s*(?:con\s+)?tau$/, spec: 10 },
+  { keys: ["var:theta_m_star", "var:theta_m", "sym:theta"], rx: /^theta\s+stella(?:\s+(?:con\s+)?m)?$/, spec: 10 },
+  { keys: ["var:theta_m", "sym:theta"], rx: /^theta\s+(?:con\s+)?m$/, spec: 10 },
+  { keys: ["var:eta_0", "sym:eta"], rx: /^eta\s+(?:con\s+)?zero$/, spec: 10 },
+  { keys: ["var:eta_tau", "sym:eta"], rx: /^eta\s+(?:con\s+)?tau$/, spec: 10 },
   { keys: ["var:E_tot", "var:E"], rx: /^e\s+tot$/, spec: 10 },
   { keys: ["var:E_p", "var:E"], rx: /^e\s+con\s+p$/, spec: 10 },
   { keys: ["var:E_pk", "var:E"], rx: /^e\s+con\s+p\s+k$/, spec: 10 },
   { keys: ["var:E_RMS"], rx: /^(?:e\s+rms|root\s+mean\s+square)$/, spec: 10 },
   { keys: ["var:R_emp"], rx: /^(?:r\s+emp|rischio\s+empirico)$/, spec: 10 },
   { keys: ["var:R_sq"], rx: /^r\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
-  { keys: ["var:S_d_sq", "var:S_sq"], rx: /^s\s*(?:con\s+)?d\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["var:S_d_sq", "var:S_sq"], rx: /^s\s+(?:con\s+)?d\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
   { keys: ["var:S_sq"], rx: /^s\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
   { keys: ["pow:2^m"], rx: /^due\s+alla\s+m$/, spec: 10 },
   { keys: ["pow:2^3"], rx: /^due\s+alla\s+terza$/, spec: 10 },
@@ -894,14 +901,20 @@ function indexFormulaAtoms(slideCard, blocks) {
             }
           }
 
-          // 0d. Adjacent T R -> var:TR, V S -> var:VS
-          if (t0 === "T" && katexText(kids[i + 1]) === "R" && !isCovered(kids[i + 1])) {
-            addAtom([el, kids[i + 1]], "var:TR", true, root);
-            i += 1;
+          // 0d. Adjacent 2-letter uppercase tokens (TR, VL, TS, TP, TN, FP, FN, VS) & 0/1
+          if (t0 === "0" && i + 2 < kids.length && katexText(kids[i + 1]) === "/" && katexText(kids[i + 2]) === "1") {
+            addAtom(kids.slice(i, i + 3), "frac:0/1", true, root);
+            i += 2;
             continue;
           }
-          if (t0 === "V" && katexText(kids[i + 1]) === "S" && !isCovered(kids[i + 1])) {
-            addAtom([el, kids[i + 1]], "var:VS", true, root);
+          const t1Next = katexText(kids[i + 1]);
+          const pair2 = t0 + t1Next;
+          if (
+            !isCovered(kids[i + 1]) &&
+            (pair2 === "TR" || pair2 === "VL" || pair2 === "TS" || pair2 === "VS" ||
+             pair2 === "TP" || pair2 === "TN" || pair2 === "FP" || pair2 === "FN")
+          ) {
+            addAtom([el, kids[i + 1]], `var:${pair2}`, true, root);
             i += 1;
             continue;
           }
@@ -1026,15 +1039,15 @@ function indexFormulaAtoms(slideCard, blocks) {
           if (/^argmax/i.test(txt)) { addAtom(el, "op:argmax", true, root); continue; }
         }
 
-        // 3. Square roots
+        // 3. Square roots (never attach to empty .hide-tail; let inner radicand atoms glow cleanly)
         if (el.classList.contains("sqrt")) {
           const txt = katexText(el);
           if (txt === "√2") {
             addAtom(el, ["sqrt:2", "op:sqrt"], true, root);
             continue;
           }
-          const signChild = el.querySelector(".sqrt-sign, .hide-tail") || el;
-          addAtom(signChild, "op:sqrt", false, root);
+          const signChild = el.querySelector(".sqrt-sign");
+          if (signChild) addAtom(signChild, "op:sqrt", false, root);
           visitChildren(el);
           continue;
         }
@@ -1143,11 +1156,11 @@ function indexFormulaAtoms(slideCard, blocks) {
             } else if (/^w[\*∗]$/.test(txt)) added = addAtom(el, "var:w_star", true, root);
             else if (/^h[\*∗]/.test(txt)) added = addAtom(el, ["var:h_star", "var:h"], true, root);
             else if (/^θ(?:[\*∗]m|m[\*∗])$/.test(txt)) added = addAtom(el, ["var:theta_m_star", "var:theta_m", "sym:theta"], true, root);
-            // Dual sub+sup
-            else if (/^x(?:2p|p2)$/i.test(txt)) added = addAtom(el, ["var:x_p_sq", "var:x_p"], true, root);
-            else if (/^x(?:Tp|pT)$/.test(txt)) added = addAtom(el, ["var:x_p_T", "var:x_p"], true, root);
-            else if (/^w(?:2j|j2)$/i.test(txt)) added = addAtom(el, ["var:w_j_sq", "var:w_j"], true, root);
-            else if (/^e(?:2i|i2)$/.test(txt)) added = addAtom(el, ["var:e_i_sq", "var:e_i"], true, root);
+            // Dual sub+sup (strict keys so e_i^2 doesn't steal bare e_i!)
+            else if (/^x(?:2p|p2)$/i.test(txt)) added = addAtom(el, "var:x_p_sq", true, root);
+            else if (/^x(?:Tp|pT)$/.test(txt)) added = addAtom(el, "var:x_p_T", true, root);
+            else if (/^w(?:2j|j2)$/i.test(txt)) added = addAtom(el, "var:w_j_sq", true, root);
+            else if (/^e(?:2i|i2)$/.test(txt)) added = addAtom(el, "var:e_i_sq", true, root);
             // Transposes & pseudoinverses
             else if (txt === "XT") added = addAtom(el, "var:X_T", true, root);
             else if (txt === "X+") added = addAtom(el, "var:X_plus", true, root);
@@ -1176,7 +1189,7 @@ function indexFormulaAtoms(slideCard, blocks) {
             else if (txt === "xp") added = addAtom(el, "var:x_p", true, root);
             else if (/^x([0-9abijkqt])$/.test(txt)) added = addAtom(el, `var:x_${txt[1]}`, true, root);
             else if (/^d([pikr])$/.test(txt)) added = addAtom(el, `var:d_${txt[1]}`, true, root);
-            else if (/^D(TR|VL|TS|[lrki12K])$/.test(txt)) added = addAtom(el, [`var:D_${txt.slice(1)}`, "var:D"], true, root);
+            else if (/^D(TR|VL|TS|[lrki12K])$/.test(txt)) added = addAtom(el, `var:D_${txt.slice(1)}`, true, root);
             else if (/^o([kjiturp0])$/.test(txt)) added = addAtom(el, `var:o_${txt[1]}`, true, root);
             else if (txt === "ei") added = addAtom(el, "var:e_i", true, root);
             else if (/^y([it])$/.test(txt)) added = addAtom(el, `var:y_${txt[1]}`, true, root);
@@ -1273,6 +1286,9 @@ function indexFormulaAtoms(slideCard, blocks) {
           // 8. Leaf single-token symbols, variables, and integers
           if (!el.querySelector(".mord")) {
             if (/^\d+$/.test(txt)) { addAtom(el, canonicalNumKey(txt), true, root); continue; }
+            if (txt === "TP" || txt === "TN" || txt === "FP" || txt === "FN" || txt === "TR" || txt === "VL" || txt === "TS" || txt === "VS") {
+              addAtom(el, `var:${txt}`, true, root); continue;
+            }
             if (txt === "α") { addAtom(el, "sym:alpha", true, root); continue; }
             if (txt === "β") { addAtom(el, "sym:beta", true, root); continue; }
             if (txt === "γ") { addAtom(el, "sym:gamma", true, root); continue; }
@@ -1483,6 +1499,7 @@ export class LiveSyncEngine {
     const showAtMap = new Map();
     const untilMap = new Map();
     const hlAtMap = new Map();
+    const hlWinMap = new Map();
     for (const cue of scene.cues || []) {
       if (cue.action === "show") {
         this.stage.querySelectorAll(cue.target).forEach((el) => {
@@ -1494,6 +1511,11 @@ export class LiveSyncEngine {
         this.stage.querySelectorAll(cue.target).forEach((el) => {
           const prev = hlAtMap.get(el);
           if (prev === undefined || cue.at < prev) hlAtMap.set(el, cue.at);
+          if (typeof cue.duration === "number" && cue.duration > 0) {
+            const win = { start: cue.at, end: cue.at + cue.duration };
+            if (!hlWinMap.has(el)) hlWinMap.set(el, []);
+            hlWinMap.get(el).push(win);
+          }
         });
       }
     }
@@ -1565,11 +1587,43 @@ export class LiveSyncEngine {
       this.blocks.push({ el: bEl, showAt, untilAt, activeStart: showAt, activeEnd, isSpotlight: true });
     }
 
+    // Track nested show targets (e.g. #s1b inside #s1, #s3b inside #s3) so revealing them re-activates their card & atoms!
+    const allShowEvents = [];
+    for (const [el, sAt] of showAtMap.entries()) {
+      allShowEvents.push({ el, showAt: sAt });
+    }
+    allShowEvents.sort((a, b) => a.showAt - b.showAt);
+    this.nestedShowEvents = allShowEvents;
+
+    // Extend any outermost block's activeEnd when a nested child inside it is revealed later!
+    const nestedShowBlocks = [];
+    for (const ev of allShowEvents) {
+      if (this.blocks.some((b) => b.el === ev.el)) continue;
+      const parentBlk = this.blocks.find((b) => b.el.contains(ev.el));
+      if (!parentBlk) continue;
+      let nextShowAfter = totalDur;
+      for (const other of allShowEvents) {
+        if (other.showAt > ev.showAt + 0.4) {
+          nextShowAfter = other.showAt;
+          break;
+        }
+      }
+      nestedShowBlocks.push({
+        el: ev.el,
+        showAt: ev.showAt,
+        untilAt: getUntilAt(ev.el) ?? totalDur,
+        activeStart: ev.showAt,
+        activeEnd: nextShowAfter,
+        isSpotlight: false
+      });
+    }
+
     // Also create fine-grained math-owner sub-blocks for:
+    //  - nested show blocks (#s1b, #s3b, ...)
     //  - .slide-title containing KaTeX math
     //  - table rows (tr) targeted by highlight cues (e.g. 02-problema/scene-07 4 loss rows)
     //  - list items (li) targeted by show cues (e.g. closing recap slides)
-    const mathBlocks = [...this.blocks];
+    const mathBlocks = [...this.blocks, ...nestedShowBlocks];
     const titleEl = slideCard.querySelector(".slide-title");
     if (titleEl && titleEl.querySelector(".katex")) {
       mathBlocks.push({
@@ -1591,16 +1645,29 @@ export class LiveSyncEngine {
         const tableMeta = this.blocks.find((b) => b.el === parentTable);
         const tableEnd = tableMeta ? tableMeta.activeEnd : totalDur;
         const parentShow = getShowAt(tr);
-        const startHl = r === 0 ? Math.min(parentShow, hlAtMap.get(tr) - 8) : hlAtMap.get(tr);
-        const nextHl = r + 1 < hlRows.length ? hlAtMap.get(hlRows[r + 1]) : tableEnd;
-        mathBlocks.push({
-          el: tr,
-          showAt: parentShow,
-          untilAt: totalDur,
-          activeStart: Math.max(parentShow, startHl - 0.5),
-          activeEnd: Math.min(nextHl, tableEnd),
-          isSpotlight: false
-        });
+        const explicitWins = hlWinMap.get(tr);
+        if (explicitWins && explicitWins.length > 0) {
+          const w0 = explicitWins[0];
+          mathBlocks.push({
+            el: tr,
+            showAt: parentShow,
+            untilAt: totalDur,
+            activeStart: Math.max(parentShow, w0.start - 0.3),
+            activeEnd: Math.min(totalDur, w0.end + 0.3),
+            isSpotlight: false
+          });
+        } else {
+          const startHl = r === 0 ? Math.min(parentShow, hlAtMap.get(tr) - 8) : hlAtMap.get(tr);
+          const nextHl = r + 1 < hlRows.length ? hlAtMap.get(hlRows[r + 1]) : tableEnd;
+          mathBlocks.push({
+            el: tr,
+            showAt: parentShow,
+            untilAt: totalDur,
+            activeStart: Math.max(parentShow, startHl - 0.5),
+            activeEnd: Math.min(nextHl, tableEnd),
+            isSpotlight: false
+          });
+        }
       }
     }
 
@@ -1611,15 +1678,36 @@ export class LiveSyncEngine {
         const li = showLis[k];
         const sAt = showAtMap.get(li);
         const nextAt = k + 1 < showLis.length ? showAtMap.get(showLis[k + 1]) : totalDur;
+        const explicitWins = hlWinMap.get(li);
         mathBlocks.push({
           el: li,
           showAt: sAt,
           untilAt: totalDur,
-          activeStart: sAt,
-          activeEnd: nextAt,
+          activeStart: explicitWins ? Math.max(sAt, explicitWins[0].start - 0.3) : sAt,
+          activeEnd: explicitWins ? Math.min(totalDur, explicitWins[0].end + 0.3) : nextAt,
           isSpotlight: false
         });
       }
+    }
+
+    // Fine-grained math & clause scoping for explicitly highlighted <li> steps and .metric-pill spans!
+    const hlGranular = Array.from(slideCard.querySelectorAll("li, .metric-pill")).filter(
+      (el) => hlWinMap.has(el) && !showAtMap.has(el)
+    );
+    for (const el of hlGranular) {
+      const parentShow = getShowAt(el);
+      const wins = hlWinMap.get(el);
+      const minStart = Math.min(...wins.map((w) => w.start));
+      const maxEnd = Math.max(...wins.map((w) => w.end));
+      mathBlocks.push({
+        el,
+        showAt: parentShow,
+        untilAt: totalDur,
+        activeStart: Math.max(parentShow, minStart - 0.3),
+        activeEnd: Math.min(totalDur, maxEnd + 0.3),
+        activeWindows: wins,
+        isSpotlight: false
+      });
     }
 
     // 4. Wrap prose clauses word-by-word & align inside each block's active cue window (prevents cursor poisoning!)
@@ -1639,7 +1727,15 @@ export class LiveSyncEngine {
         const wrapped = wrapClausesWordByWord(tEl);
         const ownerLi = tEl.tagName === "LI" ? blockMetaMap.get(tEl) : null;
         const ownerTr = tEl.closest("tr") ? blockMetaMap.get(tEl.closest("tr")) : null;
-        const ownerMeta = ownerLi || ownerTr || b;
+        // Check if inside a nested show sub-block (#s1b, #s3b, etc.)
+        let ownerNested = null;
+        for (const nb of nestedShowBlocks) {
+          if (nb.el === tEl || nb.el.contains(tEl)) {
+            ownerNested = nb;
+            break;
+          }
+        }
+        const ownerMeta = ownerLi || ownerTr || ownerNested || b;
         for (const wObj of wrapped) {
           const toks = extractTokens(wObj.el.textContent || "");
           if (toks.length >= 2) {
@@ -1741,49 +1837,28 @@ export class LiveSyncEngine {
           // Pass 1: search inside the block's exact cue window (high precision, gentle recall!)
           let bestRange = wEnd > wStart ? alignClauseInRange(item, wStart, wEnd, false) : null;
 
-          // Pass 2: wider fallback across remaining scene (stricter threshold to avoid false jumps)
+          // Pass 2: wider fallback strictly within this block's own window [showAt-1s .. winEnd+3s]
+          // (recovers skipped cursor without EVER bleeding into a subsequent block!)
           if (!bestRange && !item.isVerify) {
             let fullStart = 0;
             while (fullStart < this.words.length && this.words[fullStart].end < Math.max(0, item.showAt - 1.0)) fullStart++;
-            bestRange = alignClauseInRange(item, fullStart, this.words.length, true);
+            let fullEnd = fullStart;
+            while (fullEnd < this.words.length && this.words[fullEnd].start <= searchEndTime) fullEnd++;
+            if (fullEnd > fullStart) {
+              bestRange = alignClauseInRange(item, fullStart, fullEnd, true);
+            }
           }
 
           if (bestRange) {
             const [i0, i1] = bestRange;
-            bindClauseTiming(item, this.words[i0].start - 0.08, this.words[i1].end + 0.18);
-            // Advance block cursor only when match lies inside the block's own window
-            if (this.words[i0].start <= searchEndTime) {
-              bCursor = Math.min(this.words.length - 1, i0 + 1);
-            }
-          }
-        }
-
-        // Pass 3: Clean sequential fallback for paraphrased clauses inside a cue-timed block
-        // (keeps paraphrased summary boxes & cue-revealed items softly illuminated in sync with their block!)
-        const unaligned = bClauses.filter((c) => c.start < 0 && !c.isVerify && (c.winEnd - c.winStart) >= 1.2);
-        if (unaligned.length > 0 && unaligned.length <= 6) {
-          // Group unaligned items by their exact [winStart, winEnd] window
-          const byWin = new Map();
-          for (const u of unaligned) {
-            const wk = `${u.winStart.toFixed(2)}:${u.winEnd.toFixed(2)}`;
-            if (!byWin.has(wk)) byWin.set(wk, []);
-            byWin.get(wk).push(u);
-          }
-          for (const group of byWin.values()) {
-            const w0 = group[0].winStart;
-            const w1 = group[0].winEnd;
-            // Only synthesize sequential slices if no already-matched clause already covers >60% of this window
-            const coveredDur = bClauses
-              .filter((c) => c.start >= 0 && c.end > w0 && c.start < w1)
-              .reduce((acc, c) => acc + Math.max(0, Math.min(w1, c.end) - Math.max(w0, c.start)), 0);
-            if (coveredDur < (w1 - w0) * 0.55) {
-              const totalWords = group.reduce((acc, c) => acc + Math.max(1, c.wordEls.length), 0);
-              let curT = w0;
-              for (const u of group) {
-                const frac = Math.max(1, u.wordEls.length) / totalWords;
-                const dur = Math.max(0.6, (w1 - w0) * frac);
-                bindClauseTiming(u, curT, Math.min(w1, curT + dur));
-                curT += dur;
+            const rawT0 = this.words[i0].start - 0.08;
+            const rawT1 = this.words[i1].end + 0.18;
+            // Guard against smeared multi-sentence matches: cap clause duration cleanly
+            const maxClauseDur = Math.min(14, Math.max(4.5, item.tokens.length * 1.45));
+            if (rawT1 - rawT0 <= maxClauseDur) {
+              bindClauseTiming(item, rawT0, rawT1);
+              if (this.words[i0].start <= searchEndTime) {
+                bCursor = Math.min(this.words.length - 1, i0 + 1);
               }
             }
           }
@@ -1831,11 +1906,13 @@ export class LiveSyncEngine {
           const meta = blockMetaByEl.get(bEl) || { showAt: 0, untilAt: totalDur, activeStart: 0, activeEnd: totalDur };
           if (ev.end < meta.showAt - 0.35 || ev.start > meta.untilAt + 0.15) continue;
 
-          const inPrimary = ev.start >= meta.activeStart - 0.35 && ev.start <= meta.activeEnd + 0.35;
+          const inPrimary = Array.isArray(meta.activeWindows)
+            ? meta.activeWindows.some((w) => ev.start >= w.start - 0.35 && ev.start <= w.end + 0.35)
+            : (ev.start >= meta.activeStart - 0.35 && ev.start <= meta.activeEnd + 0.35);
           // Strictly require inPrimary so past table rows / proof steps / boxes never flash retroactively!
           if (!inPrimary) continue;
 
-          const isFineRow = bEl.tagName === "TR" || bEl.tagName === "LI";
+          const isFineRow = bEl.tagName === "TR" || bEl.tagName === "LI" || bEl.classList.contains("metric-pill");
           const isTitle = bEl.classList.contains("slide-title");
           const isSvg = bEl.classList.contains("svg-panel");
 
@@ -1922,11 +1999,21 @@ export class LiveSyncEngine {
       return;
     }
 
-    // 2. Word-by-word sequential clause highlighting
+    // 2. Word-by-word sequential clause highlighting (NEVER underline inside a dimmed/non-highlighted box!)
+    const spotlightSel = ".box, .math-card, .proof-step, .svg-panel, .acad-table, .pill-strip, .props-grid, .metrics-row, .gate-card, .plot-card";
+    const explicitHl = this.stage.querySelector(".cue-highlight");
+    const hlBlock = explicitHl ? explicitHl.closest(spotlightSel) : null;
+    const hlIsFine = Boolean(
+      explicitHl &&
+      (explicitHl.tagName === "LI" || explicitHl.tagName === "TR" || explicitHl.tagName === "TD" || explicitHl.classList.contains("metric-pill"))
+    );
+
     let bestClause = null;
     for (const c of this.clauses) {
-      const isVisible = !c.block.classList.contains("cue-hidden");
-      if (isVisible && t >= c.start && t <= c.end) {
+      if (c.block.classList.contains("cue-hidden") || c.el.closest(".cue-hidden")) continue;
+      if (hlBlock && c.block !== hlBlock) continue;
+      if (hlIsFine && !explicitHl.contains(c.el)) continue;
+      if (t >= c.start && t <= c.end) {
         if (!bestClause || c.start > bestClause.start) {
           bestClause = c;
         }
@@ -1979,26 +2066,23 @@ export class LiveSyncEngine {
       this.activeAtom = winnerAtom;
     }
 
-    // 4. Determine SINGLE active Spotlight block (explicit cue -> active clause -> active formula -> latest non-SVG content)
-    const spotlightSel = ".box, .math-card, .proof-step, .svg-panel, .acad-table, .pill-strip, .props-grid, .metrics-row, .gate-card, .plot-card";
-    let activeBlock = null;
-    const explicitHl = this.stage.querySelector(".cue-highlight");
-    if (explicitHl) {
-      activeBlock = explicitHl.closest(spotlightSel);
-    }
+    // 4. Determine SINGLE active Spotlight block (explicit cue -> active clause -> active formula -> latest revealed block/nested cue)
+    let activeBlock = hlBlock;
     if (!activeBlock && bestClause) {
       activeBlock = bestClause.block;
     }
     if (!activeBlock && winnerAtom && winnerAtom.els[0]) {
       activeBlock = winnerAtom.els[0].closest(spotlightSel);
     }
-    if (!activeBlock) {
+    if (!activeBlock && Array.isArray(this.nestedShowEvents)) {
       let latestShow = -1;
-      for (const b of this.blocks) {
-        if (b.el.classList.contains("svg-panel")) continue;
-        if (!b.el.classList.contains("cue-hidden") && t >= b.showAt && b.showAt >= latestShow) {
-          latestShow = b.showAt;
-          activeBlock = b.el;
+      for (const ev of this.nestedShowEvents) {
+        if (ev.el.classList.contains("cue-hidden") || ev.el.closest(".cue-hidden")) continue;
+        const owner = ev.el.closest(spotlightSel);
+        if (!owner || owner.classList.contains("svg-panel")) continue;
+        if (t >= ev.showAt && ev.showAt >= latestShow) {
+          latestShow = ev.showAt;
+          activeBlock = owner;
         }
       }
     }
@@ -2012,19 +2096,22 @@ export class LiveSyncEngine {
       }
     }
 
-    // 5. Apply gentle Spotlight to active block
+    // 5. Apply Spotlight to active block (highlight even when 1 block is visible; dim others only when >= 2)
     const visibleBlocks = this.blocks.filter((b) => !b.el.classList.contains("cue-hidden"));
+    const shouldHighlight = visibleBlocks.length >= 1 && Boolean(activeBlock) && t > 0.25;
     const shouldDim = visibleBlocks.length >= 2 && Boolean(activeBlock) && t > 0.25;
 
     for (const b of this.blocks) {
-      if (!shouldDim) {
+      if (!shouldHighlight) {
         b.el.classList.remove("spotlight-active", "spotlight-dim");
       } else if (b.el === activeBlock) {
         b.el.classList.add("spotlight-active");
         b.el.classList.remove("spotlight-dim");
-      } else if (!b.el.classList.contains("cue-hidden")) {
+      } else if (shouldDim && !b.el.classList.contains("cue-hidden")) {
         b.el.classList.remove("spotlight-active");
         b.el.classList.add("spotlight-dim");
+      } else {
+        b.el.classList.remove("spotlight-active", "spotlight-dim");
       }
     }
   }
