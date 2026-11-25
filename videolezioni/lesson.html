@@ -52,8 +52,14 @@
         <button id="toggle-clean" class="tb-icon-btn tb-desktop-only" type="button" title="Modalità pulita (Esc per uscire)" aria-label="Modalità pulita" data-tip="Pulita">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
         </button>
+        <button id="btn-search" class="tb-icon-btn" type="button" title="Cerca nel corso (Ctrl+K)" aria-label="Cerca nel corso" data-tip="Cerca (Ctrl+K)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
         <button id="btn-share" class="tb-icon-btn" type="button" title="Copia link diretto" aria-label="Condividi lezione" data-tip="Condividi">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l2.5-2.5a5 5 0 0 0-7.07-7.07l-1.42 1.42"/><path d="M14 11a5 5 0 0 0-7.54-.54l-2.5 2.5a5 5 0 0 0 7.07 7.07l1.42-1.42"/></svg>
+        </button>
+        <button id="btn-report-error" class="tb-icon-btn" type="button" title="Segnala un errore in questa scena" aria-label="Segnala errore" data-tip="Segnala errore">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5"/><path d="M4 5h12l-2 4.5L16 14H4"/></svg>
         </button>
       </div>
     </div>
@@ -80,6 +86,21 @@
     <main class="stage-column">
       <div class="stage-viewport">
         <article id="slide-frame" class="slide-frame"></article>
+        <div id="chapter-next-banner" class="chapter-next-banner" aria-hidden="true">
+          <div class="chapter-next-info">
+            <span id="chapter-next-kicker" class="chapter-next-kicker">Capitolo completato</span>
+            <strong id="chapter-next-title" class="chapter-next-title">Capitolo successivo</strong>
+          </div>
+          <div class="chapter-next-actions">
+            <a id="chapter-next-link" class="chapter-next-btn" href="index.html">
+              <span id="chapter-next-cta">Vai al successivo</span>
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </a>
+            <button id="chapter-next-dismiss" class="chapter-next-close" type="button" title="Chiudi" aria-label="Chiudi banner">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
 
       <div id="subtitle-dock" class="subtitle-dock">

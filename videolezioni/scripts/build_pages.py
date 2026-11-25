@@ -17,6 +17,7 @@ import json
 import math
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -959,6 +960,48 @@ def write_seo_files(out_dir: Path, base_url: str, ready_ids: list[str]) -> None:
     (out_dir / ".nojekyll").write_text("", encoding="utf-8")
 
 
+def _clean_searchable_text(slide_html: str, tts_text: str) -> str:
+    """Extract clean plain text from slide HTML (minus SVGs/tags) + spoken narration for Ctrl+K search."""
+    no_svg = re.sub(r"<svg\b[\s\S]*?</svg>", " ", slide_html or "", flags=re.IGNORECASE)
+    no_tags = re.sub(r"<[^>]+>", " ", no_svg)
+    no_tags = html.unescape(no_tags)
+    no_tex_cmds = re.sub(
+        r"\\(?:htmlId\{[^}]*\}|text|mathrm|mathbf|mathcal|mathbb|operatorname|boxed|underbrace|frac|sum|prod|int|sqrt|left|right|big|Big|quad|qquad|dots|cdots|ldots|cdot|times|to|rightarrow|leftrightarrow|le|ge|neq|approx|sim|in|subset|setminus|cup|cap|bar|hat|tilde|norm|abs|Var|Bias|Cov|Remp)",
+        " ",
+        no_tags,
+    )
+    no_tex_braces = re.sub(r"[\\{}\[\]()$^_~]+", " ", no_tex_cmds)
+    clean_tts = re.sub(r"\[[^\]]+\]", " ", tts_text or "")
+    combined = f"{no_tex_braces} {clean_tts}"
+    return re.sub(r"\s+", " ", combined).strip()
+
+
+def build_search_index(ready_lessons: list[dict[str, Any]], lessons_root: Path) -> dict[str, Any]:
+    """Build compact static global search index across all ready chapters and scenes."""
+    index_lessons: list[dict[str, Any]] = []
+    index_scenes: list[dict[str, Any]] = []
+    for l_idx, lesson in enumerate(ready_lessons):
+        lid = lesson["id"]
+        index_lessons.append({
+            "id": lid,
+            "ch": int(lesson.get("chapter", 0)),
+            "t": lesson.get("title", ""),
+        })
+        src_json = lessons_root / lid / "lesson.json"
+        if not src_json.is_file():
+            continue
+        ldata = json.loads(src_json.read_text(encoding="utf-8"))
+        for s_idx, scene in enumerate(ldata.get("scenes", [])):
+            index_scenes.append({
+                "l": l_idx,
+                "i": s_idx,
+                "sec": scene.get("section", ""),
+                "t": scene.get("title", ""),
+                "txt": _clean_searchable_text(scene.get("slide_html", ""), scene.get("tts_text", "")),
+            })
+    return {"lessons": index_lessons, "scenes": index_scenes}
+
+
 def build_site(
     out_dir: Path,
     base_url: str,
@@ -992,6 +1035,10 @@ def build_site(
         shutil.copytree(VIDEOLEZIONI_DIR / "assets", out_dir / "assets")
     (out_dir / "lessons").mkdir(parents=True, exist_ok=True)
     shutil.copy2(manifest_path, out_dir / "lessons" / "manifest.json")
+    search_index = build_search_index(ready_lessons, VIDEOLEZIONI_DIR / "lessons")
+    search_index_str = json.dumps(search_index, ensure_ascii=False, separators=(",", ":"))
+    (VIDEOLEZIONI_DIR / "lessons" / "search-index.json").write_text(search_index_str, encoding="utf-8")
+    (out_dir / "lessons" / "search-index.json").write_text(search_index_str, encoding="utf-8")
     write_favicon(out_dir)
 
     # Copy lesson JSONs, subtitles, and collect audio tasks

@@ -6,6 +6,9 @@ import { renderSlideMath } from "./math.js";
 import { mountThemeSwitcher, saveSceneProgress, loadProgress } from "./theme.js";
 import { LiveSyncEngine } from "./live-sync.js";
 import { TutorAvatar, isAvatarAvailable, getSavedAvatarOn } from "./avatar.js";
+import { initGlobalSearch, buildLessonSceneUrl } from "./search.js";
+
+const GITHUB_ISSUES_URL = "https://github.com/fabiopsh/machine-learning-videolesson/issues/new";
 
 const params = new URLSearchParams(window.location.search);
 const rootEl = document.documentElement;
@@ -93,7 +96,15 @@ const dom = {
   toggleAutoAdvance: document.getElementById("toggle-auto-advance"),
   toggleClean: document.getElementById("toggle-clean"),
   toggleTheater: document.getElementById("toggle-theater"),
+  btnSearch: document.getElementById("btn-search"),
   btnShare: document.getElementById("btn-share"),
+  btnReportError: document.getElementById("btn-report-error"),
+  chapterNextBanner: document.getElementById("chapter-next-banner"),
+  chapterNextKicker: document.getElementById("chapter-next-kicker"),
+  chapterNextTitle: document.getElementById("chapter-next-title"),
+  chapterNextLink: document.getElementById("chapter-next-link"),
+  chapterNextCta: document.getElementById("chapter-next-cta"),
+  chapterNextDismiss: document.getElementById("chapter-next-dismiss"),
   themeSwitcher: document.getElementById("player-theme-switcher"),
   audioNotice: document.getElementById("audio-notice")
 };
@@ -130,6 +141,10 @@ const state = {
   sidebarOpenBeforeTheater: true,
   cleanHideTimer: null,
   cleanPointerHoveringUi: false,
+  nextLesson: null,
+  isLastChapter: false,
+  nextBannerDismissed: false,
+  globalSearch: null,
   rafId: null
 };
 
@@ -265,7 +280,42 @@ function renderSidebar() {
     });
     dom.sceneList.appendChild(btn);
   });
+  if (state.nextLesson) {
+    const nextHref = buildLessonSceneUrl(state.nextLesson.id, 0, ASSET_ROOT, IS_CLEAN_PAGE);
+    const chapNum = String(state.nextLesson.chapter).padStart(2, "0");
+    const foot = document.createElement("a");
+    foot.className = "sidebar-next-chap";
+    foot.href = nextHref;
+    foot.innerHTML = `
+      <span class="sidebar-next-kicker">Capitolo successivo</span>
+      <span class="sidebar-next-title">Cap. ${chapNum} · ${escapeHtml(state.nextLesson.title)} →</span>
+    `;
+    dom.sceneList.appendChild(foot);
+  }
   updateSidebarActive();
+}
+
+function setChapterNextBannerVisible(show) {
+  if (!dom.chapterNextBanner) return;
+  const visible = Boolean(show && !state.nextBannerDismissed && (state.nextLesson || state.isLastChapter));
+  dom.chapterNextBanner.classList.toggle("visible", visible);
+  dom.chapterNextBanner.setAttribute("aria-hidden", visible ? "false" : "true");
+}
+
+function configureChapterNextBanner() {
+  if (!dom.chapterNextBanner) return;
+  if (state.nextLesson) {
+    const chapNum = String(state.nextLesson.chapter).padStart(2, "0");
+    if (dom.chapterNextKicker) dom.chapterNextKicker.textContent = `Capitolo ${String(state.lesson.chapter).padStart(2, "0")} completato`;
+    if (dom.chapterNextTitle) dom.chapterNextTitle.textContent = `Cap. ${chapNum} · ${state.nextLesson.title}`;
+    if (dom.chapterNextCta) dom.chapterNextCta.textContent = "Capitolo successivo";
+    if (dom.chapterNextLink) dom.chapterNextLink.href = buildLessonSceneUrl(state.nextLesson.id, 0, ASSET_ROOT, IS_CLEAN_PAGE);
+  } else if (state.isLastChapter) {
+    if (dom.chapterNextKicker) dom.chapterNextKicker.textContent = "Percorso completato ✓";
+    if (dom.chapterNextTitle) dom.chapterNextTitle.textContent = "Hai completato tutti i 20 capitoli!";
+    if (dom.chapterNextCta) dom.chapterNextCta.textContent = "Torna al catalogo";
+    if (dom.chapterNextLink) dom.chapterNextLink.href = CATALOG_HREF;
+  }
 }
 
 function updateSidebarActive() {
@@ -527,6 +577,12 @@ function updateFrame(t) {
   renderSubtitleAt(t);
   liveSync.update(t, state.revealAll);
   tutorAvatar.update(t, state.subtitles, state.isPlaying);
+  const isLastScene = state.lesson && state.sceneIndex === state.lesson.scenes.length - 1;
+  if (isLastScene && t >= dur - 2.2) {
+    setChapterNextBannerVisible(true);
+  } else if (!isLastScene || t < dur - 3.5) {
+    setChapterNextBannerVisible(false);
+  }
 }
 
 function tick(now) {
@@ -652,11 +708,16 @@ function onSceneEnded() {
     setTimeout(() => {
       loadScene(state.sceneIndex + 1, true);
     }, 550);
+  } else if (state.sceneIndex === state.lesson.scenes.length - 1) {
+    state.nextBannerDismissed = false;
+    setChapterNextBannerVisible(true);
   }
 }
 
 async function loadScene(index, autoplay = false) {
   pause();
+  state.nextBannerDismissed = false;
+  setChapterNextBannerVisible(false);
   const total = state.lesson.scenes.length;
   state.sceneIndex = Math.max(0, Math.min(total - 1, index));
   const scene = state.lesson.scenes[state.sceneIndex];
@@ -978,6 +1039,49 @@ function setupControls() {
     });
   }
 
+  if (dom.btnReportError) {
+    dom.btnReportError.addEventListener("click", () => {
+      if (!state.lesson) return;
+      syncSceneUrl(state.sceneIndex);
+      const scene = state.lesson.scenes[state.sceneIndex];
+      const chapStr = String(state.lesson.chapter).padStart(2, "0");
+      const sceneNum = state.sceneIndex + 1;
+      const totalScenes = state.lesson.scenes.length;
+      const ts = fmtTime(getCurrentTime());
+      const theme = document.documentElement.dataset.theme || "studio";
+      const pageUrl = window.location.href;
+      const title = `[Segnalazione] Cap. ${chapStr} · Scena ${sceneNum}/${totalScenes} — ${scene.title} (@ ${ts})`;
+      const body = [
+        "### Contesto rilevato automaticamente",
+        `- **Capitolo**: Cap. ${chapStr} — ${state.lesson.title} (\`${LESSON_ID}\`)`,
+        `- **Scena**: ${sceneNum} / ${totalScenes} — ${scene.title}`,
+        scene.section ? `- **Sezione**: ${scene.section}` : null,
+        `- **Timestamp**: \`${ts}\``,
+        `- **Tema attivo**: \`${theme}\``,
+        `- **Link diretto**: ${pageUrl}`,
+        "",
+        "### Tipo di problema",
+        "- [ ] Formula / errore matematico",
+        "- [ ] Sincronizzazione highlight / sottotitoli",
+        "- [ ] Audio / pronuncia",
+        "- [ ] Grafico / layout / altro",
+        "",
+        "### Descrizione",
+        "<!-- Descrivi brevemente cosa hai notato -->",
+        ""
+      ].filter((line) => line !== null).join("\n");
+      const issueUrl = `${GITHUB_ISSUES_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+      window.open(issueUrl, "_blank", "noopener,noreferrer");
+    });
+  }
+
+  if (dom.chapterNextDismiss) {
+    dom.chapterNextDismiss.addEventListener("click", () => {
+      state.nextBannerDismissed = true;
+      setChapterNextBannerVisible(false);
+    });
+  }
+
   // Reveal floating controls on pointer movement in Clean Mode
   document.addEventListener("pointermove", revealCleanUiTemporarily, { passive: true });
   for (const el of [dom.controlBar, dom.cleanExitBar]) {
@@ -1033,6 +1137,7 @@ function setupControls() {
   }
 
   document.addEventListener("keydown", (e) => {
+    if (state.globalSearch && state.globalSearch.isOpen()) return;
     if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;
     if (e.code === "Space") {
       e.preventDefault();
@@ -1083,6 +1188,32 @@ async function initPlayer() {
   document.title = `Cap. ${state.lesson.chapter} · ${state.lesson.title} — Machine Learning`;
   dom.chapTag.textContent = `Cap. ${String(state.lesson.chapter).padStart(2, "0")}`;
   dom.titleBar.textContent = state.lesson.title;
+
+  // Load manifest to resolve next chapter for end-of-chapter button & sidebar footer
+  try {
+    const mRes = await fetch(`${ASSET_ROOT}/lessons/manifest.json`, { cache: "no-store" });
+    if (mRes.ok) {
+      const mData = await mRes.json();
+      const ready = (mData.lessons || []).filter((l) => l.status === "ready");
+      const curIdx = ready.findIndex((l) => l.id === LESSON_ID);
+      if (curIdx >= 0 && curIdx + 1 < ready.length) {
+        state.nextLesson = ready[curIdx + 1];
+      } else if (curIdx === ready.length - 1 && ready.length > 0) {
+        state.isLastChapter = true;
+      }
+    }
+  } catch {
+    // Non-blocking fallback
+  }
+  configureChapterNextBanner();
+
+  state.globalSearch = initGlobalSearch({
+    assetRoot: ASSET_ROOT,
+    useCleanUrls: IS_CLEAN_PAGE,
+    currentLessonId: LESSON_ID,
+    onSameLessonJump: (idx) => loadScene(idx, false),
+    triggerEls: [dom.btnSearch]
+  });
 
   renderSidebar();
   setupScrubber();

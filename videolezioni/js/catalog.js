@@ -2,6 +2,7 @@
 // Features: live Theme Switcher, Author/Prof credits + GitHub Star count, Resume Hero, study hours progress, instant search.
 
 import { mountThemeSwitcher, loadProgress, chapterMiniSvg } from "./theme.js";
+import { initGlobalSearch } from "./search.js";
 
 const VIEW_KEY = "ml_videolezioni_catalog_view_v1";
 const STARS_CACHE_KEY = "ml_videolezioni_gh_stars_v1";
@@ -109,6 +110,11 @@ function mountHeroLia(cardEl, spriteEl) {
 async function initCatalog() {
   mountThemeSwitcher(document.getElementById("catalog-theme-switcher"));
   loadGitHubStars(document.getElementById("github-stars-count"));
+  initGlobalSearch({
+    assetRoot: ".",
+    useCleanUrls: USE_CLEAN_URLS,
+    triggerEls: [document.getElementById("btn-global-search-home")]
+  });
   mountHeroLia(
     document.getElementById("resume-card"),
     document.getElementById("hero-lia-sprite")
