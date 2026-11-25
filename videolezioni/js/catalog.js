@@ -6,7 +6,7 @@ import { initGlobalSearch } from "./search.js";
 
 const VIEW_KEY = "ml_videolezioni_catalog_view_v1";
 const STARS_CACHE_KEY = "ml_videolezioni_gh_stars_v1";
-const GITHUB_REPO = "fabiopsh/machine-learning-videolesson";
+const GITHUB_REPO = "fabiopsh/machine-learning-video";
 const USE_CLEAN_URLS = document.documentElement.dataset.cleanUrls === "true";
 
 function lessonUrl(id, sceneIdx = 0) {

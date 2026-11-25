@@ -35,7 +35,7 @@ except ImportError:  # pragma: no cover
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 VIDEOLEZIONI_DIR = SCRIPT_DIR.parent
-DEFAULT_BASE_URL = "https://fabiopsh.github.io/machine-learning-videolesson/"
+DEFAULT_BASE_URL = "https://fabiopsh.github.io/machine-learning-video/"
 
 OG_WIDTH = 1200
 OG_HEIGHT = 630

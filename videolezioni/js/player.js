@@ -8,7 +8,7 @@ import { LiveSyncEngine } from "./live-sync.js";
 import { TutorAvatar, isAvatarAvailable, getSavedAvatarOn } from "./avatar.js";
 import { initGlobalSearch, buildLessonSceneUrl } from "./search.js";
 
-const GITHUB_ISSUES_URL = "https://github.com/fabiopsh/machine-learning-videolesson/issues/new";
+const GITHUB_ISSUES_URL = "https://github.com/fabiopsh/machine-learning-video/issues/new";
 
 const params = new URLSearchParams(window.location.search);
 const rootEl = document.documentElement;
