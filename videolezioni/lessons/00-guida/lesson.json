@@ -18,7 +18,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">0.1 · Organizzazione del corso</div>\n  <h2 class=\"slide-title\">Un percorso progressivo in sei parti</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Principio guida</div>\n    <p>Ogni concetto è <strong>definito una sola volta</strong>, nel punto in cui serve per la prima volta, e poi soltanto richiamato.</p>\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    \n<svg class=\"diagram-svg\" viewBox=\"0 0 760 158\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Mappa delle sei parti del corso di Machine Learning\">\n  <defs>\n    <marker id=\"arr-g0\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 1 1 L 9 5 L 1 9 z\" fill=\"#6E6E6E\"/>\n    </marker>\n  </defs>\n  <!-- Connecting arrows row 1 -->\n  <line x1=\"232\" y1=\"42\" x2=\"262\" y2=\"42\" class=\"svg-axis\" stroke-width=\"1.8\" marker-end=\"url(#arr-g0)\"/>\n  <line x1=\"494\" y1=\"42\" x2=\"524\" y2=\"42\" class=\"svg-axis\" stroke-width=\"1.8\" marker-end=\"url(#arr-g0)\"/>\n  <!-- Step down connector III -> IV -->\n  <path d=\"M 642 74 L 642 88 L 118 88 L 118 98\" fill=\"none\" class=\"svg-axis\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" marker-end=\"url(#arr-g0)\"/>\n  <!-- Connecting arrows row 2 -->\n  <line x1=\"232\" y1=\"126\" x2=\"262\" y2=\"126\" class=\"svg-axis\" stroke-width=\"1.8\" marker-end=\"url(#arr-g0)\"/>\n  <line x1=\"494\" y1=\"126\" x2=\"524\" y2=\"126\" class=\"svg-axis\" stroke-width=\"1.8\" marker-end=\"url(#arr-g0)\"/>\n\n  <!-- Part I -->\n  <g id=\"mp1\">\n    <rect x=\"6\" y=\"10\" width=\"224\" height=\"62\" rx=\"8\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.8\"/>\n    <text x=\"18\" y=\"29\" class=\"svg-blue\" font-size=\"11\" font-weight=\"700\">PARTE I · FONDAMENTI</text>\n    <text x=\"18\" y=\"46\" class=\"svg-legend\" font-size=\"10.5\">Matematica, dati, task, modello,</text>\n    <text x=\"18\" y=\"61\" class=\"svg-legend\" font-size=\"10.5\">algoritmo, loss, bias induttivo</text>\n  </g>\n  <!-- Part II -->\n  <g id=\"mp2\">\n    <rect x=\"268\" y=\"10\" width=\"224\" height=\"62\" rx=\"8\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/>\n    <text x=\"280\" y=\"29\" class=\"svg-blue\" font-size=\"11\" font-weight=\"700\">PARTE II · PRIMI MODELLI</text>\n    <text x=\"280\" y=\"46\" class=\"svg-legend\" font-size=\"10.5\">Lineari (GD), overfitting e</text>\n    <text x=\"280\" y=\"61\" class=\"svg-legend\" font-size=\"10.5\">regolarizzazione, K-NN (rigido/fless.)</text>\n  </g>\n  <!-- Part III -->\n  <g id=\"mp3\">\n    <rect x=\"530\" y=\"10\" width=\"224\" height=\"62\" rx=\"8\" fill=\"#EFEFEF\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/>\n    <text x=\"542\" y=\"29\" class=\"svg-blue\" font-size=\"11\" font-weight=\"700\">PARTE III · GENERALIZZAZIONE</text>\n    <text x=\"542\" y=\"46\" class=\"svg-legend\" font-size=\"10.5\">VC-dim, bound, SRM, bias-varianza</text>\n    <text x=\"542\" y=\"61\" class=\"svg-legend\" font-size=\"10.5\">ed ensemble, validazione empirica</text>\n  </g>\n  <!-- Part IV -->\n  <g id=\"mp4\">\n    <rect x=\"6\" y=\"96\" width=\"224\" height=\"58\" rx=\"8\" fill=\"#EFEFEF\" stroke=\"#2E7D32\" stroke-width=\"1.6\"/>\n    <text x=\"18\" y=\"115\" class=\"svg-green\" font-size=\"11\" font-weight=\"700\">PARTE IV · RETI NEURALI</text>\n    <text x=\"18\" y=\"132\" class=\"svg-legend\" font-size=\"10.5\">Perceptron, MLP, backpropagation</text>\n    <text x=\"18\" y=\"146\" class=\"svg-legend\" font-size=\"10.5\">e addestramento in pratica</text>\n  </g>\n  <!-- Part V -->\n  <g id=\"mp5\">\n    <rect x=\"268\" y=\"96\" width=\"224\" height=\"58\" rx=\"8\" fill=\"#EFEFEF\" stroke=\"#C0392B\" stroke-width=\"1.6\"/>\n    <text x=\"280\" y=\"115\" class=\"svg-red\" font-size=\"11\" font-weight=\"700\">PARTE V · SVM</text>\n    <text x=\"280\" y=\"132\" class=\"svg-legend\" font-size=\"10.5\">Margine massimo, soft margin,</text>\n    <text x=\"280\" y=\"146\" class=\"svg-legend\" font-size=\"10.5\">kernel, regressione, metodi kernel</text>\n  </g>\n  <!-- Part VI -->\n  <g id=\"mp6\">\n    <rect x=\"530\" y=\"96\" width=\"224\" height=\"58\" rx=\"8\" fill=\"#EFEFEF\" stroke=\"#6A3D9A\" stroke-width=\"1.6\"/>\n    <text x=\"542\" y=\"115\" fill=\"#6A3D9A\" font-size=\"11\" font-weight=\"700\">PARTE VI · MODELLI AVANZATI</text>\n    <text x=\"542\" y=\"132\" class=\"svg-legend\" font-size=\"10.5\">CNN, deep learning, randomizzate,</text>\n    <text x=\"542\" y=\"146\" class=\"svg-legend\" font-size=\"10.5\">non supervisionato, RNN, grafi</text>\n  </g>\n</svg>\n\n  </div>\n  <div id=\"s3\" class=\"flow-chain cue-hidden\">\n    <div class=\"flow-node\"><strong>Apertura capitolo</strong><span>breve riquadro introduttivo</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div class=\"flow-node\"><strong>Sviluppo teorico</strong><span>definizioni, teoremi, esempi</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div class=\"flow-node flow-node-accent\"><strong>Chiusura capitolo</strong><span><em>punti chiave</em> e <em>domande di verifica</em> d'esame</span></div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 7.38,
+          "at": 3.82,
           "action": "show",
           "target": "#s1",
           "anchor": "ogni concetto viene definito una sola volta"
@@ -33,37 +33,43 @@
           "at": 17.46,
           "action": "highlight",
           "target": "#mp1",
-          "anchor": "La Parte Prima"
+          "anchor": "La Parte Prima",
+          "duration": 10.17
         },
         {
           "at": 27.78,
           "action": "highlight",
           "target": "#mp2",
-          "anchor": "La Parte Seconda"
+          "anchor": "La Parte Seconda",
+          "duration": 11.61
         },
         {
           "at": 39.54,
           "action": "highlight",
           "target": "#mp3",
-          "anchor": "La Parte Terza"
+          "anchor": "La Parte Terza",
+          "duration": 11.2
         },
         {
           "at": 50.89,
           "action": "highlight",
           "target": "#mp4",
-          "anchor": "La Parte Quarta"
+          "anchor": "La Parte Quarta",
+          "duration": 7.19
         },
         {
           "at": 58.23,
           "action": "highlight",
           "target": "#mp5",
-          "anchor": "La Parte Quinta"
+          "anchor": "La Parte Quinta",
+          "duration": 7.47
         },
         {
           "at": 65.85,
           "action": "highlight",
           "target": "#mp6",
-          "anchor": "La Parte Sesta"
+          "anchor": "La Parte Sesta",
+          "duration": 9.81
         },
         {
           "at": 75.81,
@@ -84,7 +90,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">0.2 · Convenzioni grafiche</div>\n  <h2 class=\"slide-title\">Riquadri didattici e tipografia del testo</h2>\n  <div class=\"grid-3\">\n    <div id=\"b1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Definizione [nome]</div>\n      <p>Definizioni formali dei concetti.</p>\n    </div>\n    <div id=\"b2\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Teorema [nome]</div>\n      <p>Enunciati di teoremi e risultati; la dimostrazione segue subito dopo.</p>\n    </div>\n    <div id=\"b3\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Algoritmo [nome]</div>\n      <p>Procedure passo per passo.</p>\n    </div>\n    <div id=\"b4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Idea</div>\n      <p>Il concetto che bisogna aver capito di una sezione.</p>\n    </div>\n    <div id=\"b5\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Attenzione (unico riquadro colorato)</div>\n      <p>Errori frequenti e affermazioni da non fraintendere.</p>\n    </div>\n    <div id=\"b6\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Esempio</div>\n      <p>Esempi ed esercizi svolti.</p>\n    </div>\n  </div>\n  <div id=\"s7\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Tipografia:</span>\n    <span id=\"p1\" class=\"pill\"><strong>grassetto</strong> = termine nuovo</span>\n    <span id=\"p2\" class=\"pill\"><em>corsivo</em> = inglese / enfasi</span>\n    <span id=\"p3\" class=\"pill\"><u>sottolineato</u> = alla lettera</span>\n    <span id=\"p4\" class=\"pill pill-accent\">formule riquadrate = a memoria</span>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 8.06,
+          "at": 4.1,
           "action": "show",
           "target": "#b1",
           "anchor": "Il riquadro Definizione"
@@ -96,16 +102,34 @@
           "anchor": "Il riquadro Teorema"
         },
         {
+          "at": 12.4,
+          "action": "highlight",
+          "target": "#b2",
+          "duration": 7.5
+        },
+        {
           "at": 20.1,
           "action": "show",
           "target": "#b3",
           "anchor": "Il riquadro Algoritmo"
         },
         {
+          "at": 20.2,
+          "action": "highlight",
+          "target": "#b3",
+          "duration": 3.3
+        },
+        {
           "at": 23.7,
           "action": "show",
           "target": "#b4",
           "anchor": "Il riquadro Idea"
+        },
+        {
+          "at": 23.8,
+          "action": "highlight",
+          "target": "#b4",
+          "duration": 5.12
         },
         {
           "at": 29.12,
@@ -117,13 +141,20 @@
           "at": 35.56,
           "action": "highlight",
           "target": "#b5",
-          "anchor": "unico riquadro colorato"
+          "anchor": "unico riquadro colorato",
+          "duration": 5.09
         },
         {
           "at": 40.8,
           "action": "show",
           "target": "#b6",
           "anchor": "il riquadro Esempio"
+        },
+        {
+          "at": 40.9,
+          "action": "highlight",
+          "target": "#b6",
+          "duration": 4.32
         },
         {
           "at": 45.42,
@@ -135,25 +166,29 @@
           "at": 49.02,
           "action": "highlight",
           "target": "#p1",
-          "anchor": "Il grassetto segnala"
+          "anchor": "Il grassetto segnala",
+          "duration": 3.55
         },
         {
           "at": 52.72,
           "action": "highlight",
           "target": "#p2",
-          "anchor": "Il corsivo indica"
+          "anchor": "Il corsivo indica",
+          "duration": 3.17
         },
         {
           "at": 56.04,
           "action": "highlight",
           "target": "#p3",
-          "anchor": "Il sottolineato evidenzia"
+          "anchor": "Il sottolineato evidenzia",
+          "duration": 4.97
         },
         {
           "at": 61.16,
           "action": "highlight",
           "target": "#p4",
-          "anchor": "le formule riquadrate"
+          "anchor": "le formule riquadrate",
+          "duration": 4.71
         }
       ],
       "duration_sec": 66.07,
@@ -168,7 +203,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">0.3 · Notazione del corso</div>\n  <h2 class=\"slide-title\">Tavola completa dei simboli (16 convenzioni)</h2>\n  <div class=\"grid-2\">\n    <div id=\"p-left\" class=\"cue-hidden\">\n      <table class=\"acad-table\" style=\"font-size:0.79rem;\">\n        <thead><tr><th style=\"width:27%;\">Simbolo</th><th>Dati, algebra e ipotesi</th></tr></thead>\n        <tbody id=\"tb1\">\n          <tr><td>\\(x,\\;\\x,\\;X\\)</td><td>scalare, vettore (colonna, grassetto), matrice</td></tr>\n          <tr><td>\\(\\x\\T\\y\\)</td><td>prodotto scalare; \\(\\T\\) indica la trasposta</td></tr>\n          <tr><td>\\(l\\)</td><td>numero di esempi del dataset (in tutti i capitoli)</td></tr>\n          <tr><td>\\(n\\)</td><td>dimensione dell'input, cioè numero di feature</td></tr>\n        </tbody>\n        <tbody id=\"tb2\" class=\"cue-hidden\">\n          <tr><td>\\(\\x_p,\\;x_{p,i}\\)</td><td>\\(p\\)-esimo esempio (riga del dataset), componente \\(i\\)</td></tr>\n          <tr><td>\\(d_p\\)</td><td>target dell'esempio \\(p\\) (da <em>desired</em>, risposta desiderata)</td></tr>\n          <tr><td>\\(o\\)</td><td>uscita di un'unità o della rete</td></tr>\n          <tr><td>\\(h,\\;H\\)</td><td>ipotesi, spazio delle ipotesi</td></tr>\n        </tbody>\n      </table>\n    </div>\n    <div id=\"p-right\" class=\"cue-hidden\">\n      <table class=\"acad-table\" style=\"font-size:0.79rem;\">\n        <thead><tr><th style=\"width:27%;\">Simbolo</th><th>Modello, errore e iperparametri</th></tr></thead>\n        <tbody id=\"tb3\">\n          <tr><td>\\(\\h\\)</td><td>stato nascosto (strato, stato RNN o nodo di un grafo)</td></tr>\n          <tr><td>\\(f\\)</td><td>funzione target (sconosciuta); nelle reti: attivazione</td></tr>\n          <tr><td>\\(\\w,\\;w_0\\)</td><td>pesi (parametri liberi), bias (indicato anche con \\(b\\))</td></tr>\n          <tr><td>\\(L,\\;E\\)</td><td>loss sul singolo esempio; errore (somma/media; con \\(\\frac{1}{2}\\) in backprop)</td></tr>\n        </tbody>\n        <tbody id=\"tb4\" class=\"cue-hidden\">\n          <tr><td>\\(R,\\;\\Remp\\)</td><td>rischio (errore vero), rischio empirico</td></tr>\n          <tr><td>\\(K,\\;k\\)</td><td>numero di gruppi (fold, cluster, classi, comitato); vicini nel K-NN</td></tr>\n          <tr><td>\\(\\eta,\\;\\lambda,\\;\\alpha\\)</td><td>learning rate, regolarizzazione, momentum (SVM: \\(\\alpha_i\\) Lagrange)</td></tr>\n          <tr><td>\\(\\mathrm{TR, VL, TS}\\)</td><td>training set, validation set, test set</td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 7.82,
+          "at": 3.74,
           "action": "show",
           "target": "#p-left",
           "anchor": "Partiamo da vettori e dataset"

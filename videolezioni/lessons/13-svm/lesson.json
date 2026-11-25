@@ -22,7 +22,7 @@
           "action": "show",
           "target": "#s1",
           "anchor": "secondo approccio alla Structural Risk Minimization",
-          "at": 10.12
+          "at": 4.1
         },
         {
           "action": "show",
@@ -34,31 +34,41 @@
           "action": "highlight",
           "target": "#f1",
           "anchor": "Primo: la SVM lineare",
-          "at": 31.58
+          "at": 31.58,
+          "duration": 6.28
         },
         {
           "action": "highlight",
           "target": "#f2",
           "anchor": "Secondo: il soft margin",
-          "at": 38.01
+          "at": 38.01,
+          "duration": 5.49
         },
         {
           "action": "highlight",
           "target": "#f3",
           "anchor": "Terzo: il kernel trick",
-          "at": 43.65
+          "at": 43.65,
+          "duration": 7.41
         },
         {
           "action": "highlight",
           "target": "#f4",
           "anchor": "Quarto: le SVM per la regressione",
-          "at": 51.21
+          "at": 51.21,
+          "duration": 8.57
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "nota sulla notazione",
           "at": 59.93
+        },
+        {
+          "at": 60.03,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 18.65
         }
       ],
       "duration_sec": 79.03,
@@ -76,19 +86,21 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Dato il training set T",
-          "at": 19.18
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-gx",
           "anchor": "funzione discriminante",
-          "at": 40.65
+          "at": 40.65,
+          "duration": 3.99
         },
         {
           "action": "highlight",
           "target": "#f-hx",
           "anchor": "l'ipotesi",
-          "at": 44.79
+          "at": 44.79,
+          "duration": 3.31
         },
         {
           "action": "show",
@@ -97,16 +109,29 @@
           "at": 48.25
         },
         {
+          "at": 48.35,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 24.34
+        },
+        {
           "action": "show",
           "target": "#s3",
           "anchor": "ro vale due diviso norma di w",
           "at": 72.89
         },
         {
+          "at": 72.99,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 2.46
+        },
+        {
           "action": "highlight",
           "target": "#f-equiv",
           "anchor": "massimizzare ro equivale",
-          "at": 75.57
+          "at": 75.57,
+          "duration": 3.69
         }
       ],
       "duration_sec": 79.46,
@@ -133,10 +158,17 @@
           "at": 26.72
         },
         {
+          "at": 26.82,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 3.72
+        },
+        {
           "action": "highlight",
           "target": "#f-vincoli",
           "anchor": "d con i per w trasposto x con i più b maggiore o uguale a uno",
-          "at": 30.66
+          "at": 30.66,
+          "duration": 4.2
         },
         {
           "action": "show",
@@ -145,10 +177,17 @@
           "at": 35.01
         },
         {
+          "at": 35.11,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 3.38
+        },
+        {
           "action": "highlight",
           "target": "#f-sv",
           "anchor": "vincolo con l'uguaglianza",
-          "at": 38.61
+          "at": 38.61,
+          "duration": 10.53
         },
         {
           "action": "show",
@@ -172,7 +211,7 @@
           "action": "show",
           "target": "#s5",
           "anchor": "Seguiamo la costruzione geometrica",
-          "at": 17.62
+          "at": 4.1
         },
         {
           "action": "show",
@@ -181,16 +220,29 @@
           "at": 23.1
         },
         {
+          "at": 23.2,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9.94
+        },
+        {
           "action": "show",
           "target": "#s2",
           "anchor": "Valutiamo la funzione discriminante",
           "at": 33.34
         },
         {
+          "at": 33.44,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 19.66
+        },
+        {
           "action": "highlight",
           "target": "#f-rnorm",
           "anchor": "lascia r per norma di w con o",
-          "at": 53.22
+          "at": 53.22,
+          "duration": 2.69
         },
         {
           "action": "show",
@@ -199,10 +251,17 @@
           "at": 56.06
         },
         {
+          "at": 56.16,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 1.32
+        },
+        {
           "action": "highlight",
           "target": "#f-r",
           "anchor": "g di x diviso norma di w con o",
-          "at": 57.6
+          "at": 57.6,
+          "duration": 2.69
         },
         {
           "action": "show",
@@ -211,10 +270,17 @@
           "at": 60.44
         },
         {
+          "at": 60.54,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 15.98
+        },
+        {
           "action": "highlight",
           "target": "#f-rhofin",
           "anchor": "ro uguale due diviso norma di w con o",
-          "at": 76.64
+          "at": 76.64,
+          "duration": 3.3
         }
       ],
       "duration_sec": 80.13,
@@ -226,25 +292,27 @@
       "section": "13.1.3 Il problema di ottimizzazione",
       "title": "Problema primale hard margin e programmazione quadratica",
       "tts_text": "Ora possiamo formulare l'addestramento della SVM come problema di ottimizzazione vincolata. [pause:0.7] Nel problema primale hard margin, dato T, cerchiamo w e b che minimizzano Psi di w uguale uno mezzo w trasposto w, cioè minimizzano la norma di w in forma comoda e differenziabile, soggetto agli l vincoli d con i per w trasposto x con i più b maggiore o uguale a uno, che impongono zero errori di classificazione. [pause:0.8] La funzione obiettivo è quadratica e convessa in w, mentre i vincoli sono lineari in w e b. È quindi un problema di programmazione quadratica, o QP, che garantisce l'assenza di minimi locali spuri e si considera risolto da pacchetti standard esistenti. [pause:0.8] Ciò che ci interessa capire a fondo è come è formulato, la relazione tra support vector e moltiplicatori di Lagrange, e la forma della soluzione. [pause:0.7] Un limite però è decisivo: risolvere il primale in questa forma scala con la dimensione n dell'input. Quando vorremo lavorare in spazi di feature enormi o infiniti, questa dipendenza sarà proibitiva: per questo passiamo ora al problema duale.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.1.3 · Il problema di ottimizzazione</div>\n  <h2 class=\"slide-title\">Formulazione primale e programmazione quadratica (QP)</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Problema primale — hard margin</div>\n    <p>Dato \\(T = \\{(\\x_i, d_i)\\}_{i=1}^{l}\\), trovare \\(\\w\\) e \\(b\\) che minimizzano</p>\n    \\[\\htmlId{f-psi}{\\Psi(\\w) = \\frac{1}{2}\\,\\w\\T\\w} \\qquad (\\text{equivale a minimizzare } \\norm{\\w})\\]\n    <p>soggetto ai vincoli di zero errori: \\(\\;\\htmlId{f-cstr}{d_i\\,(\\w\\T\\x_i + b) \\ge 1}\\quad \\forall i = 1,\\dots,l\\).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Struttura: Programmazione Quadratica (QP)</div>\n      <ul class=\"clean-list\">\n        <li>Obiettivo <strong>quadratico e convesso</strong> in \\(\\w\\) (nessun minimo locale).</li>\n        <li>Vincoli <strong>lineari</strong> in \\(\\w\\) e \\(b\\).</li>\n        <li>Risolto da pacchetti QP esistenti: conta capire <strong>support vector</strong>, moltiplicatori e forma della soluzione.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Scalabilità del primale</div>\n      <p>Risolvere il primale scala con la <strong>dimensione dell'input \\(n\\)</strong>.</p>\n      <p style=\"margin-top:6px;\">Diventa un ostacolo in spazi di feature ad altissima dimensione → passiamo ai <strong>moltiplicatori di Lagrange</strong> e al <strong>duale</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.1.3 · Il problema di ottimizzazione</div>\n  <h2 class=\"slide-title\">Formulazione primale e programmazione quadratica (QP)</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Problema primale — hard margin</div>\n    <p>Dato \\(T = \\{(\\x_i, d_i)\\}_{i=1}^{l}\\), trovare \\(\\w\\) e \\(b\\) che minimizzano</p>\n    \\[\\htmlId{f-psi}{\\Psi(\\w) = \\frac{1}{2}\\,\\w\\T\\w} \\qquad (\\text{equivale a minimizzare } \\norm{\\w})\\]\n    <p>soggetto ai vincoli di zero errori: \\(\\;\\htmlId{f-cstr}{d_i\\,(\\w\\T\\x_i + b) \\ge 1}\\quad \\forall i = 1,\\dots,l\\).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Struttura: Programmazione Quadratica (QP)</div>\n      <ul class=\"clean-list\">\n        <li id=\"li5-1\">Obiettivo <strong>quadratico e convesso</strong> in \\(\\w\\) (nessun minimo locale).</li>\n        <li id=\"li5-2\">Vincoli <strong>lineari</strong> in \\(\\w\\) e \\(b\\).</li>\n        <li id=\"li5-3\">Risolto da pacchetti QP esistenti: conta capire <strong>support vector</strong>, moltiplicatori e forma della soluzione.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Scalabilità del primale</div>\n      <p>Risolvere il primale scala con la <strong>dimensione dell'input \\(n\\)</strong>.</p>\n      <p style=\"margin-top:6px;\">Diventa un ostacolo in spazi di feature ad altissima dimensione → passiamo ai <strong>moltiplicatori di Lagrange</strong> e al <strong>duale</strong>.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "action": "show",
           "target": "#s1",
           "anchor": "Nel problema primale hard margin",
-          "at": 5.96
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-psi",
           "anchor": "Psi di w uguale uno mezzo w trasposto w",
-          "at": 11.34
+          "at": 11.34,
+          "duration": 8.03
         },
         {
           "action": "highlight",
           "target": "#f-cstr",
           "anchor": "soggetto agli l vincoli",
-          "at": 19.52
+          "at": 19.52,
+          "duration": 9.21
         },
         {
           "action": "show",
@@ -253,10 +321,34 @@
           "at": 28.88
         },
         {
+          "at": 28.93,
+          "action": "highlight",
+          "target": "#li5-1",
+          "duration": 3.1
+        },
+        {
+          "at": 32.13,
+          "action": "highlight",
+          "target": "#li5-2",
+          "duration": 15.48
+        },
+        {
+          "at": 47.72,
+          "action": "highlight",
+          "target": "#li5-3",
+          "duration": 5.11
+        },
+        {
           "action": "show",
           "target": "#s3",
           "anchor": "Un limite però è decisivo",
           "at": 53.17
+        },
+        {
+          "at": 53.27,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 13.25
         }
       ],
       "duration_sec": 66.87,
@@ -274,13 +366,14 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Costruiamo la lagrangiana",
-          "at": 4.98
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-lag",
           "anchor": "uno mezzo w trasposto w meno la somma",
-          "at": 9.92
+          "at": 9.92,
+          "duration": 18
         },
         {
           "action": "show",
@@ -292,13 +385,15 @@
           "action": "highlight",
           "target": "#f-walfa",
           "anchor": "w uguale somma per i da uno a l",
-          "at": 36.14
+          "at": 36.14,
+          "duration": 5.57
         },
         {
           "action": "highlight",
           "target": "#f-salfa",
           "anchor": "Dalla derivata rispetto a b",
-          "at": 41.86
+          "at": 41.86,
+          "duration": 8.09
         },
         {
           "action": "show",
@@ -307,16 +402,29 @@
           "at": 50.1
         },
         {
+          "at": 50.2,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 2.08
+        },
+        {
           "action": "highlight",
           "target": "#f-kkt",
           "anchor": "alfa con i per d con i per w trasposto",
-          "at": 52.4
+          "at": 52.4,
+          "duration": 18
         },
         {
           "action": "show",
           "target": "#s4",
           "anchor": "Ecco il risultato straordinario",
           "at": 71.75
+        },
+        {
+          "at": 71.85,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 13.24
         }
       ],
       "duration_sec": 85.44,
@@ -334,7 +442,7 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Sviluppando J otteniamo",
-          "at": 5.54
+          "at": 4.1
         },
         {
           "action": "show",
@@ -343,16 +451,29 @@
           "at": 52.33
         },
         {
+          "at": 52.43,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.25
+        },
+        {
           "action": "highlight",
           "target": "#f-dot",
           "anchor": "x con i trasposto x con j",
-          "at": 64.8
+          "at": 64.8,
+          "duration": 11.46
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "algoritmi dedicati più efficienti come SMO",
           "at": 76.41
+        },
+        {
+          "at": 76.51,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 19.64
         }
       ],
       "duration_sec": 96.5,
@@ -370,31 +491,35 @@
           "action": "show",
           "target": "#s1",
           "anchor": "L'algoritmo procede in tre passi",
-          "at": 6.17
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#a1",
           "anchor": "Passo uno: risolvere il duale",
-          "at": 8.87
+          "at": 8.87,
+          "duration": 5.41
         },
         {
           "action": "highlight",
           "target": "#a2",
           "anchor": "Passo due",
-          "at": 14.43
+          "at": 14.43,
+          "duration": 11.61
         },
         {
           "action": "highlight",
           "target": "#a3",
           "anchor": "Passo tre: ricaviamo il bias",
-          "at": 26.19
+          "at": 26.19,
+          "duration": 18
         },
         {
           "action": "highlight",
           "target": "#f-bpos",
           "anchor": "scegliendo un support vector positivo",
-          "at": 46.3
+          "at": 46.3,
+          "duration": 17.45
         },
         {
           "action": "show",
@@ -403,10 +528,17 @@
           "at": 63.9
         },
         {
+          "at": 64,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 5.34
+        },
+        {
           "action": "highlight",
           "target": "#f-gdual",
           "anchor": "valuta g di x uguale somma",
-          "at": 69.46
+          "at": 69.46,
+          "duration": 15.13
         }
       ],
       "duration_sec": 84.79,
@@ -424,19 +556,21 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Il teorema di Vapnik lo precisa",
-          "at": 24.14
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-vapnik",
           "anchor": "minimo tra la parte intera superiore",
-          "at": 39.08
+          "at": 39.08,
+          "duration": 14.7
         },
         {
           "action": "highlight",
           "target": "#f-rsw",
           "anchor": "R con s quadro per norma quadra di w",
-          "at": 53.93
+          "at": 53.93,
+          "duration": 16.23
         },
         {
           "action": "show",
@@ -448,25 +582,29 @@
           "action": "highlight",
           "target": "#p1",
           "anchor": "Uno: soluzione unica",
-          "at": 72.91
+          "at": 72.91,
+          "duration": 6.85
         },
         {
           "action": "highlight",
           "target": "#p2",
           "anchor": "Due: SRM automatica",
-          "at": 79.91
+          "at": 79.91,
+          "duration": 6.85
         },
         {
           "action": "highlight",
           "target": "#p3",
           "anchor": "Tre: programmazione quadratica",
-          "at": 86.91
+          "at": 86.91,
+          "duration": 8.77
         },
         {
           "action": "highlight",
           "target": "#p4",
           "anchor": "Quattro: soluzione concentrata",
-          "at": 95.83
+          "at": 95.83,
+          "duration": 10.31
         }
       ],
       "duration_sec": 106.34,
@@ -484,13 +622,14 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Introduciamo allora le variabili slack",
-          "at": 21.46
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-slack",
           "anchor": "uno meno csi con i per ogni i",
-          "at": 32.16
+          "at": 32.16,
+          "duration": 3.03
         },
         {
           "action": "show",
@@ -502,31 +641,41 @@
           "action": "highlight",
           "target": "#c1",
           "anchor": "Se csi con i è zero",
-          "at": 38.42
+          "at": 38.42,
+          "duration": 5.37
         },
         {
           "action": "highlight",
           "target": "#c2",
           "anchor": "sta tra zero e uno",
-          "at": 43.94
+          "at": 43.94,
+          "duration": 4.99
         },
         {
           "action": "highlight",
           "target": "#c3",
           "anchor": "Se csi con i vale uno",
-          "at": 49.08
+          "at": 49.08,
+          "duration": 6.11
         },
         {
           "action": "highlight",
           "target": "#c4",
           "anchor": "csi con i è maggiore di uno",
-          "at": 55.34
+          "at": 55.34,
+          "duration": 14.53
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "teorema di Vapnik non vale più",
           "at": 70.02
+        },
+        {
+          "at": 70.12,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 6.02
         },
         {
           "action": "show",
@@ -550,13 +699,14 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Nel problema primale soft margin",
-          "at": 4.92
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-C",
           "anchor": "C per la somma",
-          "at": 16.72
+          "at": 16.72,
+          "duration": 14.83
         },
         {
           "action": "show",
@@ -565,16 +715,34 @@
           "at": 31.7
         },
         {
+          "at": 31.8,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 17.23
+        },
+        {
           "action": "show",
           "target": "#s3",
           "anchor": "Con C basso",
           "at": 49.23
         },
         {
+          "at": 49.33,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10.84
+        },
+        {
           "action": "show",
           "target": "#s4",
           "anchor": "Con C alto invece",
           "at": 60.37
+        },
+        {
+          "at": 60.47,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 16.88
         }
       ],
       "duration_sec": 77.7,
@@ -598,13 +766,20 @@
           "action": "highlight",
           "target": "#f-box",
           "anchor": "vincolo superiore alfa con i minore o uguale a C",
-          "at": 17.45
+          "at": 17.45,
+          "duration": 9.17
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "Le condizioni di Kuhn-Tucker diventano",
           "at": 26.77
+        },
+        {
+          "at": 26.87,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 17.38
         },
         {
           "action": "show",
@@ -616,19 +791,22 @@
           "action": "highlight",
           "target": "#t1",
           "anchor": "Se alfa con i è zero",
-          "at": 46.35
+          "at": 46.35,
+          "duration": 6.61
         },
         {
           "action": "highlight",
           "target": "#t2",
           "anchor": "strettamente compreso tra zero e C",
-          "at": 53.11
+          "at": 53.11,
+          "duration": 9.11
         },
         {
           "action": "highlight",
           "target": "#t3",
           "anchor": "raggiunge il tetto C",
-          "at": 62.37
+          "at": 62.37,
+          "duration": 18
         }
       ],
       "duration_sec": 93.06,
@@ -646,13 +824,14 @@
           "action": "show",
           "target": "#s2",
           "anchor": "Vediamo l'esempio da R quadro a R cubo",
-          "at": 14.44
+          "at": 4.28
         },
         {
           "action": "highlight",
           "target": "#f-phi",
           "anchor": "x con uno quadro",
-          "at": 21.88
+          "at": 21.88,
+          "duration": 6.93
         },
         {
           "action": "show",
@@ -665,6 +844,12 @@
           "target": "#s3",
           "anchor": "giustificato dal teorema di Cover",
           "at": 67.57
+        },
+        {
+          "at": 67.67,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 20.18
         }
       ],
       "duration_sec": 88.2,
@@ -676,19 +861,20 @@
       "section": "13.3.2 Il kernel trick",
       "title": "Prodotti scalari impliciti, matrice di Gram e teorema di Mercer",
       "tts_text": "Spazi delle feature enormi rischiano però di essere computazionalmente infattibili e di causare overfitting. L'approccio kernel li gestisce implicitamente e in modo regolarizzato: la complessità è controllata dal margine, non dalla dimensione dello spazio. [pause:0.7] Con Fi da R alla n a R alla n con Fi e il bias incluso via fi con zero uguale uno, abbiamo w uguale somma di alfa con i d con i Fi di x con i, e l'iperpiano diventa somma di alfa con i d con i per il prodotto scalare Fi trasposto di x con i per Fi di x uguale zero. [pause:0.7] Ecco il kernel trick: sotto certe condizioni non serve calcolare Fi né conoscere lo spazio delle feature. Basta un inner product kernel, una funzione simmetrica k di x con i virgola x uguale Fi trasposto di x con i per Fi di x. [pause:0.7] Nel nostro esempio da due a tre dimensioni, Fi trasposto di x per Fi di y vale x con uno quadro y con uno quadro più due x con uno x con due y con uno y con due più x con due quadro y con due quadro, cioè il quadrato del prodotto scalare x trasposto y: calcoliamo il prodotto in tre dimensioni restando in due. [pause:0.8] I prodotti scalari tra gli esempi di training formano la matrice kernel, o matrice di Gram, K di taglia l per l, simmetrica. Per il teorema di Mercer una funzione corrisponde a un prodotto scalare valido se produce matrici kernel semidefinite positive, cioè con autovalori non negativi. Inoltre, se k con uno e k con due sono kernel, lo sono anche la somma k con uno più k con due, c per k con uno con c positivo, e il prodotto k con uno per k con due.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.3.2 · Il kernel trick</div>\n  <h2 class=\"slide-title\">Inner product kernel, matrice di Gram e teorema di Mercer</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Iperpiano nello spazio delle feature (\\(\\w = \\sum_i \\alpha_i d_i \\Phi(\\x_i)\\))</div>\n    \\[\\sum_{i=1}^{l}\\alpha_i\\,d_i\\,\\underbrace{\\Phi\\T(\\x_i)\\,\\Phi(\\x)}_{\\text{prodotto scalare}} = 0 \\qquad \\longrightarrow \\qquad \\htmlId{f-kdef}{k(\\x_i,\\x) = \\Phi\\T(\\x_i)\\,\\Phi(\\x) = k(\\x,\\x_i)}\\]\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Esempio · Il kernel della mappa \\(\\Phi(\\x)=(x_1^2,\\sqrt{2}\\,x_1 x_2,x_2^2)\\T\\)</div>\n    \\[\\Phi\\T(\\x)\\,\\Phi(\\y) = x_1^2 y_1^2 + 2 x_1 x_2 y_1 y_2 + x_2^2 y_2^2 = (x_1 y_1 + x_2 y_2)^2 = \\htmlId{f-kex}{(\\x\\T\\y)^2 = k(\\x,\\y)}\\]\n    <p class=\"math-note\">Il prodotto scalare in \\(\\R^3\\) si calcola direttamente in \\(\\R^2\\), senza mai costruire \\(\\Phi\\).</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-theorem\">\n      <div class=\"box-label\">Matrice di Gram e Teorema di Mercer</div>\n      <p>La <strong>matrice kernel</strong> \\(K \\in \\R^{l\\times l}\\), \\(K_{ij} = k(\\x_i,\\x_j)\\), è simmetrica. Per il <strong>teorema di Mercer</strong> \\(k\\) è valido se \\(K\\) è <strong>semidefinita positiva</strong> (autovalori \\(\\ge 0\\)).</p>\n    </div>\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Chiusura algebrica dei kernel</div>\n      <p>Se \\(k_1\\) e \\(k_2\\) sono kernel validi, lo sono anche:</p>\n      <p style=\"margin-top:6px;text-align:center;\">\\(k_1 + k_2,\\qquad c\\,k_1 \\;(c>0),\\qquad k_1\\cdot k_2\\).</p>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.3.2 · Il kernel trick</div>\n  <h2 class=\"slide-title\">Inner product kernel, matrice di Gram e teorema di Mercer</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Iperpiano nello spazio delle feature (\\(\\w = \\sum_i \\alpha_i d_i \\Phi(\\x_i)\\))</div>\n    \\[\\sum_{i=1}^{l}\\alpha_i\\,d_i\\,\\underbrace{\\Phi\\T(\\x_i)\\,\\Phi(\\x)}_{\\text{prodotto scalare}} = 0 \\qquad \\longrightarrow \\qquad \\htmlId{f-kdef}{k(\\x_i,\\x) = \\Phi\\T(\\x_i)\\,\\Phi(\\x) = k(\\x,\\x_i)}\\]\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Esempio · Il kernel della mappa \\(\\Phi(\\x)=(x_1^2,\\sqrt{2}\\,x_1 x_2,x_2^2)\\T\\)</div>\n    \\[\\Phi\\T(\\x)\\,\\Phi(\\y) = x_1^2 y_1^2 + 2 x_1 x_2 y_1 y_2 + x_2^2 y_2^2 = (x_1 y_1 + x_2 y_2)^2 = \\htmlId{f-kex}{(\\x\\T\\y)^2 = k(\\x,\\y)}\\]\n    <p class=\"math-note\">Il prodotto scalare in \\(\\R^3\\) si calcola direttamente in \\(\\R^2\\), senza mai costruire \\(\\Phi\\).</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div id=\"gb14-1\" class=\"box box-theorem\">\n      <div class=\"box-label\">Matrice di Gram e Teorema di Mercer</div>\n      <p>La <strong>matrice kernel</strong> \\(K \\in \\R^{l\\times l}\\), \\(K_{ij} = k(\\x_i,\\x_j)\\), è simmetrica. Per il <strong>teorema di Mercer</strong> \\(k\\) è valido se \\(K\\) è <strong>semidefinita positiva</strong> (autovalori \\(\\ge 0\\)).</p>\n    </div>\n    <div id=\"gb14-2\" class=\"box box-def\">\n      <div class=\"box-label\">Chiusura algebrica dei kernel</div>\n      <p>Se \\(k_1\\) e \\(k_2\\) sono kernel validi, lo sono anche:</p>\n      <p style=\"margin-top:6px;text-align:center;\">\\(k_1 + k_2,\\qquad c\\,k_1 \\;(c>0),\\qquad k_1\\cdot k_2\\).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "action": "show",
           "target": "#s1",
           "anchor": "Con Fi da R alla n",
-          "at": 15.03
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-kdef",
           "anchor": "Basta un inner product kernel",
-          "at": 43.53
+          "at": 43.53,
+          "duration": 9.97
         },
         {
           "action": "show",
@@ -697,16 +883,35 @@
           "at": 53.65
         },
         {
+          "at": 53.75,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 15.84
+        },
+        {
           "action": "highlight",
           "target": "#f-kex",
           "anchor": "quadrato del prodotto scalare",
-          "at": 69.71
+          "at": 69.71,
+          "duration": 9.87
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "matrice kernel, o matrice di Gram",
           "at": 79.73
+        },
+        {
+          "at": 85.89,
+          "action": "highlight",
+          "target": "#gb14-1",
+          "duration": 4.52
+        },
+        {
+          "at": 90.51,
+          "action": "highlight",
+          "target": "#gb14-2",
+          "duration": 16.56
         }
       ],
       "duration_sec": 107.37,
@@ -718,25 +923,56 @@
       "section": "13.3.3 SVM con kernel",
       "title": "Duale nello spazio delle feature, algoritmo e vista architetturale",
       "tts_text": "Inseriamo il kernel nella SVM. Il primale nello spazio delle feature può essere intrattabile, ma il duale resta gestibile: massimizziamo Q di alfa uguale somma di alfa con i meno uno mezzo somma doppia di alfa con i alfa con j d con i d con j per k di x con i virgola x con j, con somma di alfa con i d con i uguale zero e alfa con i tra zero e C. La dipendenza da l anziché dalla dimensione dello spazio diventa un vantaggio enorme, persino in spazi infiniti. [pause:0.8] L'algoritmo in cinque passi è diretto: scegliere C e k; calcolare la matrice K; risolvere il QP trovando gli alfa; calcolare il bias b; e per un nuovo pattern x valutare somma di alfa con i d con i k di x virgola x con i più b senza mai calcolare w, classificando con il segno. La soluzione è sparsa negli alfa: in test si memorizzano solo i support vector, ricordando il K-NN. [pause:0.8] Il diagramma a destra mostra una vista architetturale della SVM: tante unità nascoste quanti sono i support vector, ciascuna calcola k di x virgola x con s, pesata da alfa con s d con s verso una somma con bias b e segno finale. Ma non è una rete neurale: nelle reti i parametri delle unità nascoste si adattano ai dati; qui i centri sono i support vector stessi e la funzione è fissata dal kernel.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.3.3 · SVM con kernel</div>\n  <h2 class=\"slide-title\">Duale kernelizzato, algoritmo e vista architetturale</h2>\n  <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Problema duale nello spazio delle feature</div>\n    \\[\\max_{\\boldsymbol{\\alpha}}\\; Q(\\boldsymbol{\\alpha}) = \\sum_{i=1}^{l}\\alpha_i - \\frac{1}{2}\\sum_{i,j=1}^{l}\\alpha_i\\alpha_j\\,d_i d_j\\,\\htmlId{f-kij}{\\underbrace{k(\\x_i,\\x_j)}_{K_{ij}}}, \\qquad \\sum_i\\alpha_i d_i = 0,\\;\\; 0\\le\\alpha_i\\le C\\]\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s2\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Algoritmo · SVM con kernel</div>\n      <ol class=\"algo-list\">\n        <li>Scegliere \\(C\\) e la funzione kernel \\(k\\).</li>\n        <li>Calcolare la matrice kernel \\(K\\) (\\(l \\times l\\)).</li>\n        <li>Risolvere il QP duale → \\(\\{\\alpha_i\\}\\).</li>\n        <li>Calcolare il bias \\(b\\) da \\(\\{\\alpha_i\\}\\) e \\(K\\).</li>\n        <li>Test: \\(h(\\x) = \\sign\\!\\big(\\sum_i \\alpha_i d_i\\,k(\\x,\\x_i) + b\\big)\\) (senza mai calcolare \\(\\w\\); si memorizzano solo gli SV).</li>\n      </ol>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 330 226\" class=\"diagram-svg\" aria-label=\"Vista architetturale di una SVM\">\n        <defs>\n          <marker id=\"arr-arch\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <g stroke=\"#B0AEA8\" stroke-width=\"1\">\n          <line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"186\"/>\n          <line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"186\"/>\n          <line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"186\"/>\n          <line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"186\"/>\n        </g>\n        <circle cx=\"28\" cy=\"48\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"52\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n        <circle cx=\"28\" cy=\"88\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"92\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n        <circle cx=\"28\" cy=\"128\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"132\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n        <circle cx=\"28\" cy=\"168\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"172\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">4</tspan></text>\n        <rect x=\"96\" y=\"16\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"34\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>)</text>\n        <rect x=\"96\" y=\"68\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"86\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>)</text>\n        <rect x=\"96\" y=\"120\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"138\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan>)</text>\n        <rect x=\"96\" y=\"172\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"190\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">4</tspan>)</text>\n        <line x1=\"162\" y1=\"30\" x2=\"232\" y2=\"96\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <line x1=\"162\" y1=\"82\" x2=\"228\" y2=\"104\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <line x1=\"162\" y1=\"134\" x2=\"228\" y2=\"112\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <line x1=\"162\" y1=\"186\" x2=\"232\" y2=\"120\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <text x=\"195\" y=\"53\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">1</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">1</tspan></text>\n        <text x=\"187\" y=\"88\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">2</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">2</tspan></text>\n        <text x=\"187\" y=\"134\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">3</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">3</tspan></text>\n        <text x=\"195\" y=\"168\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">4</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">4</tspan></text>\n        <circle cx=\"246\" cy=\"108\" r=\"18\" class=\"svg-neuron-main\"/><text x=\"246\" y=\"114\" text-anchor=\"middle\" class=\"svg-symbol\">Σ</text>\n        <line x1=\"246\" y1=\"48\" x2=\"246\" y2=\"87\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <text x=\"246\" y=\"40\" text-anchor=\"middle\" class=\"svg-math-sm\">b</text>\n        <line x1=\"264\" y1=\"108\" x2=\"290\" y2=\"108\" stroke=\"#1A1A1A\" stroke-width=\"1.8\" marker-end=\"url(#arr-arch)\"/>\n        <text x=\"311\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">sign(·)</text>\n        <text x=\"129\" y=\"218\" text-anchor=\"middle\" class=\"svg-caption\">una \"unità\" per support vector (fissa, non adattiva)</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.3.3 · SVM con kernel</div>\n  <h2 class=\"slide-title\">Duale kernelizzato, algoritmo e vista architetturale</h2>\n  <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Problema duale nello spazio delle feature</div>\n    \\[\\max_{\\boldsymbol{\\alpha}}\\; Q(\\boldsymbol{\\alpha}) = \\sum_{i=1}^{l}\\alpha_i - \\frac{1}{2}\\sum_{i,j=1}^{l}\\alpha_i\\alpha_j\\,d_i d_j\\,\\htmlId{f-kij}{\\underbrace{k(\\x_i,\\x_j)}_{K_{ij}}}, \\qquad \\sum_i\\alpha_i d_i = 0,\\;\\; 0\\le\\alpha_i\\le C\\]\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s2\" class=\"box box-algo cue-hidden\">\n      <div class=\"box-label\">Algoritmo · SVM con kernel</div>\n      <ol class=\"algo-list\">\n        <li id=\"li15-1\">Scegliere \\(C\\) e la funzione kernel \\(k\\).</li>\n        <li id=\"li15-2\">Calcolare la matrice kernel \\(K\\) (\\(l \\times l\\)).</li>\n        <li id=\"li15-3\">Risolvere il QP duale → \\(\\{\\alpha_i\\}\\).</li>\n        <li id=\"li15-4\">Calcolare il bias \\(b\\) da \\(\\{\\alpha_i\\}\\) e \\(K\\).</li>\n        <li id=\"li15-5\">Test: \\(h(\\x) = \\sign\\!\\big(\\sum_i \\alpha_i d_i\\,k(\\x,\\x_i) + b\\big)\\) (senza mai calcolare \\(\\w\\); si memorizzano solo gli SV).</li>\n      </ol>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 330 226\" class=\"diagram-svg\" aria-label=\"Vista architetturale di una SVM\">\n        <defs>\n          <marker id=\"arr-arch\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <g stroke=\"#B0AEA8\" stroke-width=\"1\">\n          <line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"48\" x2=\"96\" y2=\"186\"/>\n          <line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"88\" x2=\"96\" y2=\"186\"/>\n          <line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"128\" x2=\"96\" y2=\"186\"/>\n          <line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"30\"/><line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"82\"/><line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"134\"/><line x1=\"40\" y1=\"168\" x2=\"96\" y2=\"186\"/>\n        </g>\n        <circle cx=\"28\" cy=\"48\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"52\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n        <circle cx=\"28\" cy=\"88\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"92\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n        <circle cx=\"28\" cy=\"128\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"132\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n        <circle cx=\"28\" cy=\"168\" r=\"12\" class=\"svg-node\"/><text x=\"28\" y=\"172\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">4</tspan></text>\n        <rect x=\"96\" y=\"16\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"34\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>)</text>\n        <rect x=\"96\" y=\"68\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"86\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>)</text>\n        <rect x=\"96\" y=\"120\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"138\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan>)</text>\n        <rect x=\"96\" y=\"172\" width=\"66\" height=\"28\" rx=\"4\" class=\"svg-node-fill\"/><text x=\"129\" y=\"190\" text-anchor=\"middle\" class=\"svg-math-sm\">k(x, x<tspan baseline-shift=\"sub\" font-size=\"75%\">4</tspan>)</text>\n        <line x1=\"162\" y1=\"30\" x2=\"232\" y2=\"96\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <line x1=\"162\" y1=\"82\" x2=\"228\" y2=\"104\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <line x1=\"162\" y1=\"134\" x2=\"228\" y2=\"112\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <line x1=\"162\" y1=\"186\" x2=\"232\" y2=\"120\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <text x=\"195\" y=\"53\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">1</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">1</tspan></text>\n        <text x=\"187\" y=\"88\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">2</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">2</tspan></text>\n        <text x=\"187\" y=\"134\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">3</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">3</tspan></text>\n        <text x=\"195\" y=\"168\" class=\"svg-tick svg-blue\">α<tspan baseline-shift=\"sub\" font-size=\"72%\">4</tspan>d<tspan baseline-shift=\"sub\" font-size=\"72%\">4</tspan></text>\n        <circle cx=\"246\" cy=\"108\" r=\"18\" class=\"svg-neuron-main\"/><text x=\"246\" y=\"114\" text-anchor=\"middle\" class=\"svg-symbol\">Σ</text>\n        <line x1=\"246\" y1=\"48\" x2=\"246\" y2=\"87\" stroke=\"#1A1A1A\" stroke-width=\"1.3\" marker-end=\"url(#arr-arch)\"/>\n        <text x=\"246\" y=\"40\" text-anchor=\"middle\" class=\"svg-math-sm\">b</text>\n        <line x1=\"264\" y1=\"108\" x2=\"290\" y2=\"108\" stroke=\"#1A1A1A\" stroke-width=\"1.8\" marker-end=\"url(#arr-arch)\"/>\n        <text x=\"311\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">sign(·)</text>\n        <text x=\"129\" y=\"218\" text-anchor=\"middle\" class=\"svg-caption\">una \"unità\" per support vector (fissa, non adattiva)</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "action": "show",
           "target": "#s1",
           "anchor": "ma il duale resta gestibile",
-          "at": 5.86
+          "at": 2.72
         },
         {
           "action": "highlight",
           "target": "#f-kij",
           "anchor": "k di x con i virgola x con j",
-          "at": 17.36
+          "at": 17.36,
+          "duration": 16.19
         },
         {
           "action": "show",
           "target": "#s2",
           "anchor": "L'algoritmo in cinque passi",
           "at": 33.7
+        },
+        {
+          "at": 33.77,
+          "action": "highlight",
+          "target": "#li15-1",
+          "duration": 3.82
+        },
+        {
+          "at": 37.7,
+          "action": "highlight",
+          "target": "#li15-2",
+          "duration": 1.72
+        },
+        {
+          "at": 39.54,
+          "action": "highlight",
+          "target": "#li15-3",
+          "duration": 8.7
+        },
+        {
+          "at": 48.34,
+          "action": "highlight",
+          "target": "#li15-4",
+          "duration": 7.66
+        },
+        {
+          "at": 56.1,
+          "action": "highlight",
+          "target": "#li15-5",
+          "duration": 6.53
         },
         {
           "action": "show",
@@ -766,13 +1002,15 @@
           "action": "highlight",
           "target": "#r1",
           "anchor": "Primo: il kernel polinomiale",
-          "at": 5.38
+          "at": 5.38,
+          "duration": 10.23
         },
         {
           "action": "highlight",
           "target": "#r2",
           "anchor": "Secondo: il kernel RBF",
-          "at": 15.76
+          "at": 15.76,
+          "duration": 15.93
         },
         {
           "action": "show",
@@ -781,16 +1019,29 @@
           "at": 31.84
         },
         {
+          "at": 31.94,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 7.88
+        },
+        {
           "action": "highlight",
           "target": "#r3",
           "anchor": "Terzo: il kernel perceptron a due strati",
-          "at": 39.94
+          "at": 39.94,
+          "duration": 11.34
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "Attenzione alla validità teorica",
           "at": 51.43
+        },
+        {
+          "at": 51.53,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 25.86
         }
       ],
       "duration_sec": 77.74,
@@ -808,13 +1059,14 @@
           "action": "show",
           "target": "#s1",
           "anchor": "stimiamo d con l'espansione lineare",
-          "at": 11.16
+          "at": 4.2
         },
         {
           "action": "highlight",
           "target": "#f-leps",
           "anchor": "usiamo la loss epsilon-insensitive",
-          "at": 40.87
+          "at": 40.87,
+          "duration": 15.11
         },
         {
           "action": "show",
@@ -838,13 +1090,14 @@
           "action": "show",
           "target": "#s1",
           "anchor": "I vincoli di tubo si scrivono",
-          "at": 19.43
+          "at": 4.1
         },
         {
           "action": "highlight",
           "target": "#f-tubec",
           "anchor": "meno csi primo con i meno epsilon",
-          "at": 22.17
+          "at": 22.17,
+          "duration": 18
         },
         {
           "action": "show",
@@ -853,16 +1106,29 @@
           "at": 50.07
         },
         {
+          "at": 50.17,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 4.9
+        },
+        {
           "action": "highlight",
           "target": "#f-psivr",
           "anchor": "uno mezzo w trasposto w più C",
-          "at": 55.19
+          "at": 55.19,
+          "duration": 12.41
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "perfetto parallelismo",
           "at": 67.75
+        },
+        {
+          "at": 67.85,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 14.17
         }
       ],
       "duration_sec": 82.37,
@@ -880,7 +1146,7 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Massimizziamo la funzione quadratica",
-          "at": 20.04
+          "at": 4.2
         },
         {
           "action": "show",
@@ -889,10 +1155,17 @@
           "at": 45.43
         },
         {
+          "at": 45.53,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.78
+        },
+        {
           "action": "highlight",
           "target": "#f-svrpred",
           "anchor": "predizione finale h di x uguale somma",
-          "at": 56.43
+          "at": 56.43,
+          "duration": 13.45
         },
         {
           "action": "show",
@@ -910,13 +1183,25 @@
       "section": "13.5 Le SVM nella pratica",
       "title": "Pregi, difetti ed esperimento: Polinomiale vs RBF",
       "tts_text": "Tiriamo ora un bilancio concreto delle SVM nella pratica. [pause:0.6] I quattro pregi principali sono chiari: regolarizzazione incorporata tramite il margine e approssimazione della SRM; problema convesso, che trova sempre il minimo globale a differenza delle reti neurali; modello lineare compatto ma ricco via LBE implicita, in cui la VC-dimension dipende da margine, kernel e C; infine estendibilità del kernel trick ad altri modelli. [pause:0.8] I tre difetti: occorre scegliere kernel e parametri; l'algoritmo è batch; la matrice kernel è l per l, per cui oltre circa ventimila esempi la risoluzione esatta standard diventava difficile, anche se oggi esistono approcci scalabili basati persino sulla discesa del gradiente. [pause:0.8] Osserviamo l'esperimento reale sul problema a due classi con C uguale uno, confrontando confine nero e margini tratteggiati con il confine di Bayes viola, che ha errore zero virgola duecentosedici. Il polinomiale di grado quattro ottiene errore di training zero virgola centosettantacinque, test zero virgola duecentotrentasette e quarantasei per cento di support vector. Il kernel RBF con gamma uguale uno ottiene training zero virgola centottanta, test zero virgola duecentoventidue e cinquantacinque per cento di support vector. [pause:0.8] L'RBF è migliore perché i dati vengono da miscele di gaussiane, comportandosi in modo simile alla rete con weight decay. Attenzione però: la teoria immagina pochi support vector, ma qui sono circa metà del dataset. La sparsità in pratica non è garantita.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.5 · Le SVM nella pratica</div>\n  <h2 class=\"slide-title\">Pregi, limiti ed esperimento su dati reali (\\(C = 1\\))</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-idea\">\n      <div class=\"box-label\">Pregi</div>\n      <ul class=\"clean-list\">\n        <li><strong>Regolarizzazione incorporata</strong> (margine / SRM).</li>\n        <li><strong>Problema convesso</strong> → sempre <strong>minimo globale</strong> (vs NN).</li>\n        <li><strong>LBE implicita efficiente</strong>; estendibile ad altri metodi kernel.</li>\n      </ul>\n    </div>\n    <div class=\"box box-warn\">\n      <div class=\"box-label\">Difetti</div>\n      <ul class=\"clean-list\">\n        <li>Bisogna <strong>scegliere kernel e parametri</strong>; algoritmo <strong>batch</strong>.</li>\n        <li>Matrice \\(K\\) di taglia \\(l \\times l\\): oltre ~20 000 esempi servono metodi scalabili (anche gradient-based).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"plot-card\">\n      <div class=\"plot-title\">Polinomiale (grado 4) · Tr 0,175 · <strong>Te 0,237</strong> · SV 46%</div>\n      <svg viewBox=\"0 0 240 202\" class=\"diagram-svg\" aria-label=\"SVM polinomiale su dati reali\">\n        <rect x=\"12\" y=\"14\" width=\"216\" height=\"178\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1\"/>\n        <circle cx=\"181.1\" cy=\"69.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"174.6\" cy=\"69.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"145.5\" cy=\"81.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.4\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.3\" cy=\"77.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.9\" cy=\"137.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"132.6\" cy=\"132.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.4\" cy=\"160.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.8\" cy=\"116.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.2\" cy=\"153.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.9\" cy=\"76.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.6\" cy=\"120.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.4\" cy=\"136.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"172.8\" cy=\"63.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"180.1\" cy=\"70.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.5\" cy=\"93.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.8\" cy=\"76.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.0\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"92.1\" cy=\"111.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.4\" cy=\"69.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"75.6\" cy=\"120.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.1\" cy=\"127.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"179.0\" cy=\"57.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.0\" cy=\"143.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"85.7\" cy=\"119.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"146.5\" cy=\"38.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.1\" cy=\"117.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.9\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"113.8\" cy=\"109.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"168.7\" cy=\"66.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.1\" cy=\"87.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"156.7\" cy=\"78.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.8\" cy=\"121.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"169.7\" cy=\"60.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"140.5\" cy=\"121.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.9\" cy=\"70.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.1\" cy=\"110.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.5\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.7\" cy=\"85.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.3\" cy=\"68.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.4\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.3\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.0\" cy=\"81.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.6\" cy=\"157.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.2\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"129.0\" cy=\"101.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"93.9\" cy=\"134.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"151.5\" cy=\"66.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"135.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"71.3\" cy=\"125.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.8\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.3\" cy=\"151.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.3\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.4\" cy=\"71.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"44.6\" cy=\"65.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"90.0\" cy=\"77.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"55.9\" cy=\"42.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.7\" cy=\"175.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"142.1\" cy=\"110.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.2\" cy=\"39.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.3\" cy=\"30.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"98.3\" cy=\"45.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"35.4\" cy=\"77.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"17.9\" cy=\"113.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.6\" cy=\"45.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"47.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.2\" cy=\"46.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.5\" cy=\"56.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"99.2\" cy=\"44.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.6\" cy=\"72.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"71.9\" cy=\"30.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.1\" cy=\"53.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.3\" cy=\"38.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.6\" cy=\"36.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"30.1\" cy=\"132.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"66.9\" cy=\"28.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"108.3\" cy=\"67.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.9\" cy=\"48.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"54.5\" cy=\"74.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"59.7\" cy=\"55.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"111.2\" cy=\"32.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"65.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"19.5\" cy=\"114.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.4\" cy=\"39.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.9\" cy=\"51.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.5\" cy=\"36.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"16.7\" cy=\"112.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.2\" cy=\"128.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"101.7\" cy=\"55.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.4\" cy=\"137.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"61.9\" cy=\"48.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.4\" cy=\"37.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"50.4\" cy=\"41.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"53.7\" cy=\"33.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"83.6\" cy=\"16.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"95.1\" cy=\"27.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"69.1\" cy=\"27.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.1\" cy=\"73.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"45.6\" cy=\"38.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"106.3\" cy=\"68.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"103.1\" cy=\"60.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.9\" cy=\"17.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"37.0\" cy=\"39.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.3\" cy=\"118.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"58.0\" cy=\"48.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.8\" cy=\"22.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.1\" cy=\"24.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/>\n        <circle cx=\"142.1\" cy=\"110.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"21.1\" cy=\"110.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"132.6\" cy=\"132.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"129.0\" cy=\"101.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"1.2\" fill=\"#1A1A1A\"/>\n        <path d=\"M 60.6,192.0 L 61.7,186.6 L 62.7,181.1 L 63.4,175.7 L 60.1,173.3 L 55.4,175.3 L 51.1,177.2 L 46.2,179.6 L 42.0,181.6 L 37.9,183.6 L 33.3,185.8 L 28.7,188.0 L 24.5,190.0 L 20.3,192.0 M 134.8,14.0 L 133.8,19.4 L 132.9,24.2 L 132.0,29.5 L 131.2,35.0 L 130.5,41.2 L 130.0,46.6 L 129.7,52.9 L 129.7,59.1 L 130.2,65.3 L 131.1,70.7 L 132.3,75.4 L 134.1,80.1 L 136.3,84.0 L 139.5,87.8 L 142.9,90.5 L 147.1,92.5 L 152.9,94.1 L 157.9,94.9 L 163.8,95.7 L 169.6,96.6 L 175.4,97.9 L 179.6,99.7 L 183.2,102.6 L 184.9,107.3 L 185.7,112.7 L 187.9,117.4 L 190.8,120.5 L 194.6,123.6 L 198.2,125.9 L 202.2,128.3 L 206.4,130.6 L 211.0,132.9 L 215.5,135.1 L 219.7,137.0 L 224.3,139.1 L 228.0,140.8 M 67.9,166.9 L 72.9,165.6 L 77.9,163.3 L 82.1,161.2 L 86.2,159.1 L 90.4,157.0 L 94.8,154.7 L 99.2,152.4 L 103.5,150.0 L 107.8,147.7 L 112.0,145.4 L 116.1,143.0 L 120.0,140.7 L 123.9,138.4 L 127.9,135.8 L 132.1,133.1 L 135.6,130.6 L 139.5,127.5 L 142.8,124.4 L 145.4,120.8 L 146.6,115.8 L 144.6,111.3 L 141.4,108.1 L 137.7,105.7 L 132.9,104.0 L 127.1,103.0 L 120.4,102.9 L 113.7,103.3 L 107.9,104.0 L 102.2,104.9 L 97.1,106.0 L 92.1,107.3 L 87.1,108.9 L 82.1,111.1 L 78.3,113.5 L 75.0,116.6 L 72.6,120.5 L 71.1,125.2 L 70.2,130.6 L 69.5,136.5 L 69.1,142.3 L 68.5,147.7 L 67.9,153.9 L 67.3,159.4 L 66.9,164.8 L 67.9,166.9 M 71.2,192.0 L 73.7,188.7 L 77.0,185.0 L 80.1,181.9 L 83.5,178.8 L 87.1,176.0 L 90.6,173.3 L 94.6,170.6 L 98.7,168.0 L 102.8,165.6 L 106.9,163.2 L 111.2,160.9 L 115.4,158.7 L 119.6,156.6 L 123.8,154.6 L 128.7,152.4 L 132.9,150.5 L 137.8,148.5 L 142.1,146.8 L 147.1,145.0 L 152.1,143.3 L 157.1,141.8 L 162.1,140.5 L 168.0,139.3 L 173.8,138.4 L 179.6,137.9 L 186.3,137.7 L 193.0,138.1 L 198.8,138.7 L 204.6,139.6 L 209.9,140.7 L 215.5,142.0 L 220.5,143.3 L 225.5,144.7 L 228.0,145.5 M 12.0,106.6 L 17.0,108.2 L 21.6,110.4 L 25.4,112.7 L 29.4,115.8 L 32.7,118.9 L 35.4,122.0 L 38.3,125.9 L 40.5,129.8 L 42.5,134.5 L 43.8,139.1 L 44.5,145.1 L 44.4,150.0 L 43.6,155.5 L 42.0,160.6 L 40.1,164.8 L 37.8,168.7 L 34.8,172.6 L 32.0,175.7 L 28.7,178.9 L 25.1,181.9 L 21.2,184.9 L 17.7,187.3 L 13.7,190.0 L 12.0,191.1 M 132.7,14.0 L 131.3,19.4 L 130.0,24.1 L 128.8,28.8 L 127.2,34.2 L 125.9,38.9 L 124.5,43.5 L 122.9,48.2 L 121.1,52.9 L 119.1,57.5 L 117.0,61.4 L 114.4,65.3 L 111.2,69.2 L 108.0,72.3 L 104.6,74.9 L 100.4,77.5 L 96.2,79.7 L 91.8,81.6 L 87.1,83.4 L 82.1,85.1 L 77.1,86.5 L 71.9,87.8 L 66.2,89.2 L 61.2,90.2 L 55.4,91.4 L 49.5,92.4 L 43.7,93.3 L 37.9,94.0 L 32.0,94.6 L 26.2,94.9 L 20.3,94.7 L 14.5,93.9 L 12.0,93.4\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"0.95\" stroke-dasharray=\"4 3\" opacity=\"0.75\"/>\n        <path d=\"M 66.4,192.0 L 67.9,189.3 L 69.5,186.7 L 71.2,184.3 L 72.9,182.1 L 74.5,180.2 L 76.6,178.0 L 78.7,176.0 L 80.9,174.1 L 82.9,172.5 L 85.4,170.6 L 87.9,168.9 L 90.4,167.2 L 92.9,165.6 L 95.4,164.0 L 97.9,162.5 L 100.4,161.1 L 102.9,159.6 L 105.4,158.2 L 107.9,156.9 L 110.5,155.5 L 113.5,153.9 L 116.2,152.5 L 118.7,151.2 L 121.3,150.0 L 124.3,148.5 L 127.1,147.1 L 129.6,145.9 L 132.5,144.6 L 135.4,143.3 L 137.9,142.2 L 141.3,140.7 L 143.8,139.7 L 147.1,138.4 L 149.6,137.4 L 152.9,136.3 L 156.1,135.3 L 158.8,134.5 L 162.1,133.6 L 165.5,132.9 L 169.6,132.1 L 173.0,131.7 L 177.1,131.5 L 181.3,131.5 L 185.5,131.8 L 188.8,132.2 L 193.0,132.9 L 196.3,133.5 L 199.6,134.3 L 203.0,135.2 L 206.0,136.0 L 208.8,136.9 L 212.2,137.9 L 215.5,139.0 L 218.3,139.9 L 221.3,141.0 L 224.7,142.1 L 227.2,143.0 L 228.0,143.3 M 133.8,14.0 L 132.9,17.6 L 132.2,21.0 L 131.5,24.1 L 130.8,27.2 L 130.1,30.3 L 129.4,33.4 L 128.8,36.7 L 128.0,40.4 L 127.3,43.5 L 126.7,46.6 L 126.0,49.8 L 125.4,52.9 L 124.6,56.3 L 123.8,59.6 L 122.9,62.7 L 122.1,65.4 L 121.0,68.4 L 119.6,71.5 L 118.3,73.9 L 116.8,76.2 L 114.8,78.5 L 112.9,80.4 L 110.4,82.4 L 108.0,84.0 L 105.4,85.4 L 102.9,86.7 L 100.3,87.8 L 97.1,89.1 L 94.1,90.2 L 91.2,91.1 L 87.9,92.2 L 84.6,93.2 L 81.4,94.1 L 78.6,94.8 L 75.4,95.7 L 72.0,96.7 L 68.7,97.6 L 65.4,98.6 L 62.4,99.5 L 59.5,100.5 L 56.2,101.8 L 53.7,103.0 L 51.2,104.6 L 49.1,106.5 L 47.9,109.0 L 47.7,112.7 L 48.4,115.8 L 49.4,118.9 L 50.4,121.8 L 51.2,124.4 L 52.2,127.5 L 52.9,130.6 L 53.7,134.5 L 54.1,137.6 L 54.3,141.5 L 54.3,145.4 L 53.9,149.2 L 53.4,152.4 L 52.7,155.5 L 51.7,158.6 L 50.4,161.7 L 49.2,164.0 L 47.8,166.3 L 46.1,168.7 L 44.2,171.0 L 42.0,173.3 L 40.4,174.9 L 37.9,177.1 L 35.7,178.8 L 33.7,180.3 L 31.2,182.1 L 28.7,183.8 L 26.2,185.4 L 23.7,186.9 L 21.2,188.4 L 18.7,189.9 L 16.2,191.3 L 14.9,192.0\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.9\"/>\n        <path d=\"M 156.2,14.0 L 154.4,17.1 L 152.5,20.2 L 150.6,23.3 L 148.8,26.0 L 146.9,28.8 L 144.7,31.9 L 142.9,34.3 L 140.7,37.3 L 138.8,39.8 L 136.5,42.8 L 134.6,45.2 L 132.4,48.2 L 130.4,51.3 L 128.8,54.4 L 127.6,57.5 L 126.7,61.4 L 126.4,66.1 L 126.4,70.7 L 126.2,74.6 L 125.4,78.5 L 123.8,81.7 L 121.3,84.4 L 118.7,86.3 L 115.4,88.5 L 112.8,90.2 L 109.6,92.3 L 107.1,94.1 L 103.8,96.4 L 101.2,98.0 L 97.9,99.6 L 93.7,100.7 L 88.7,100.9 L 84.6,100.2 L 80.4,98.9 L 77.1,97.8 L 72.9,96.9 L 67.9,96.8 L 63.7,97.3 L 59.5,98.1 L 55.4,99.3 L 52.0,100.9 L 49.5,102.9 L 47.9,106.1 L 47.2,110.4 L 47.1,115.0 L 47.3,119.7 L 47.5,124.4 L 47.8,129.0 L 48.1,132.9 L 48.7,137.3 L 49.6,140.7 L 51.4,143.8 L 54.5,145.6 L 59.5,146.0 L 64.5,145.7 L 69.5,145.9 L 73.2,146.9 L 76.0,149.2 L 77.1,152.4 L 76.5,156.2 L 75.1,159.4 L 73.2,162.5 L 71.2,165.3 L 69.2,167.9 L 67.0,170.8 L 65.0,173.3 L 62.9,176.0 L 60.5,178.8 L 58.6,181.1 L 56.2,184.1 L 54.1,186.6 L 52.0,189.2 L 49.7,192.0 M 145.4,122.2 L 142.9,120.0 L 141.3,116.6 L 140.5,112.7 L 140.7,108.1 L 141.9,104.2 L 143.7,101.1 L 146.3,98.9 L 149.6,97.6 L 154.6,97.6 L 158.6,98.7 L 161.5,100.3 L 163.8,102.7 L 163.8,107.3 L 162.1,110.2 L 160.1,112.7 L 157.9,115.1 L 155.4,117.6 L 152.9,119.7 L 149.6,121.9 L 145.4,122.2\" fill=\"none\" stroke=\"#7D3C98\" stroke-width=\"1.6\" stroke-dasharray=\"2 3\"/>\n      </svg>\n    </div>\n    <div class=\"plot-card\">\n      <div class=\"plot-title\">RBF (\\(\\gamma=1\\)) · Tr 0,180 · <strong>Te 0,222</strong> · SV 55% (Bayes 0,216)</div>\n      <svg viewBox=\"0 0 240 202\" class=\"diagram-svg\" aria-label=\"SVM RBF su dati reali\">\n        <rect x=\"12\" y=\"14\" width=\"216\" height=\"178\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1\"/>\n        <circle cx=\"181.1\" cy=\"69.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"174.6\" cy=\"69.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"145.5\" cy=\"81.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.4\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.3\" cy=\"77.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.9\" cy=\"137.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"132.6\" cy=\"132.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.4\" cy=\"160.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.8\" cy=\"116.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.2\" cy=\"153.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.9\" cy=\"76.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.6\" cy=\"120.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.4\" cy=\"136.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"172.8\" cy=\"63.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"180.1\" cy=\"70.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.5\" cy=\"93.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.8\" cy=\"76.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.0\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"92.1\" cy=\"111.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.4\" cy=\"69.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"75.6\" cy=\"120.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.1\" cy=\"127.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"179.0\" cy=\"57.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.0\" cy=\"143.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"85.7\" cy=\"119.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"146.5\" cy=\"38.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.1\" cy=\"117.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.9\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"113.8\" cy=\"109.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"168.7\" cy=\"66.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.1\" cy=\"87.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"156.7\" cy=\"78.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.8\" cy=\"121.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"169.7\" cy=\"60.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"140.5\" cy=\"121.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.9\" cy=\"70.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.1\" cy=\"110.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.5\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.7\" cy=\"85.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.3\" cy=\"68.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.4\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.3\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.0\" cy=\"81.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.6\" cy=\"157.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.2\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"129.0\" cy=\"101.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"93.9\" cy=\"134.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"151.5\" cy=\"66.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"135.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"71.3\" cy=\"125.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.8\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.3\" cy=\"151.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.3\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.4\" cy=\"71.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"44.6\" cy=\"65.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"90.0\" cy=\"77.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"55.9\" cy=\"42.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.7\" cy=\"175.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"142.1\" cy=\"110.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.2\" cy=\"39.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.3\" cy=\"30.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"98.3\" cy=\"45.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"35.4\" cy=\"77.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"17.9\" cy=\"113.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.6\" cy=\"45.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"47.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.2\" cy=\"46.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.5\" cy=\"56.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"99.2\" cy=\"44.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.6\" cy=\"72.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"71.9\" cy=\"30.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.1\" cy=\"53.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.3\" cy=\"38.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.6\" cy=\"36.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"30.1\" cy=\"132.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"66.9\" cy=\"28.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"108.3\" cy=\"67.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.9\" cy=\"48.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"54.5\" cy=\"74.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"59.7\" cy=\"55.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"111.2\" cy=\"32.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"65.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"19.5\" cy=\"114.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.4\" cy=\"39.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.9\" cy=\"51.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.5\" cy=\"36.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"16.7\" cy=\"112.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.2\" cy=\"128.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"101.7\" cy=\"55.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.4\" cy=\"137.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"61.9\" cy=\"48.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.4\" cy=\"37.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"50.4\" cy=\"41.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"53.7\" cy=\"33.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"83.6\" cy=\"16.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"95.1\" cy=\"27.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"69.1\" cy=\"27.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.1\" cy=\"73.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"45.6\" cy=\"38.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"106.3\" cy=\"68.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"103.1\" cy=\"60.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.9\" cy=\"17.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"37.0\" cy=\"39.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.3\" cy=\"118.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"58.0\" cy=\"48.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.8\" cy=\"22.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.1\" cy=\"24.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/>\n        <circle cx=\"88.7\" cy=\"175.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"142.1\" cy=\"110.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"24.3\" cy=\"30.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"35.4\" cy=\"77.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"31.5\" cy=\"56.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"108.3\" cy=\"67.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"63.9\" cy=\"48.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"111.2\" cy=\"32.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.7\" cy=\"65.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"112.9\" cy=\"51.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"83.6\" cy=\"16.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"91.9\" cy=\"17.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"63.8\" cy=\"22.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"181.1\" cy=\"69.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"81.4\" cy=\"160.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"164.5\" cy=\"93.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"92.1\" cy=\"111.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"179.0\" cy=\"57.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"146.5\" cy=\"38.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"78.1\" cy=\"117.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"140.5\" cy=\"121.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"74.6\" cy=\"157.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"1.2\" fill=\"#1A1A1A\"/>\n        <path d=\"M 73.7,157.2 L 80.4,157.1 L 85.4,156.1 L 91.2,154.8 L 96.9,153.9 L 102.7,153.1 L 107.9,152.2 L 112.9,150.6 L 117.4,148.5 L 121.3,146.0 L 125.0,143.0 L 128.2,139.9 L 131.3,136.3 L 133.8,132.7 L 136.1,128.3 L 137.9,123.8 L 139.4,118.9 L 140.5,114.3 L 141.5,108.8 L 142.6,103.4 L 144.7,99.5 L 148.8,96.8 L 153.8,94.9 L 158.8,93.6 L 164.6,93.3 L 169.0,94.8 L 172.1,98.4 L 174.2,102.6 L 176.3,106.7 L 178.8,110.8 L 181.7,114.3 L 185.5,117.0 L 191.3,117.8 L 195.2,115.0 L 196.6,110.4 L 195.5,104.9 L 193.6,101.1 L 190.8,97.2 L 188.0,93.9 L 184.6,90.3 L 182.1,87.0 L 180.5,81.7 L 180.5,77.0 L 181.0,70.7 L 180.9,64.5 L 179.6,59.1 L 178.0,55.2 L 175.5,51.0 L 172.8,47.4 L 169.6,44.2 L 165.7,41.2 L 161.3,39.3 L 155.2,39.7 L 151.3,42.2 L 148.3,45.9 L 145.9,49.8 L 143.8,54.2 L 142.1,58.4 L 140.4,63.7 L 139.5,68.4 L 139.0,74.6 L 139.0,80.8 L 139.2,87.1 L 138.7,92.5 L 136.3,96.4 L 131.8,98.7 L 127.0,100.3 L 121.3,101.8 L 116.2,103.1 L 111.2,104.4 L 106.2,106.0 L 101.2,107.8 L 97.0,109.6 L 92.1,111.8 L 87.9,113.7 L 82.9,115.7 L 78.3,117.4 L 73.7,119.6 L 70.5,122.8 L 69.2,127.5 L 69.4,133.7 L 69.7,139.1 L 69.0,144.6 L 68.1,150.0 L 69.5,155.1 L 73.7,157.2 M 12.0,113.0 L 15.9,110.4 L 20.3,108.7 L 26.2,109.0 L 30.3,111.9 L 32.8,115.6 L 34.5,120.2 L 34.9,125.9 L 33.6,130.6 L 30.8,134.5 L 27.0,137.1 L 22.0,138.7 L 15.3,138.4 L 12.0,137.2 M 65.4,87.9 L 59.5,87.3 L 53.7,86.4 L 48.7,85.4 L 43.7,83.9 L 39.2,81.6 L 36.1,78.5 L 33.8,73.9 L 32.8,69.2 L 32.4,63.0 L 31.9,57.5 L 30.3,52.8 L 27.8,48.2 L 25.5,44.3 L 23.7,40.2 L 23.0,34.2 L 25.3,29.5 L 28.7,27.2 L 34.5,25.8 L 41.2,25.9 L 47.0,26.5 L 53.7,26.5 L 58.7,25.1 L 62.9,22.9 L 67.0,20.5 L 71.2,18.4 L 76.2,16.7 L 82.1,16.0 L 87.9,16.7 L 92.9,18.2 L 97.4,20.2 L 101.5,22.6 L 105.4,25.3 L 108.7,28.6 L 111.2,32.1 L 113.1,36.5 L 114.0,42.0 L 113.7,47.4 L 112.7,52.9 L 111.3,58.3 L 109.8,63.0 L 108.0,67.6 L 106.0,71.5 L 103.0,75.4 L 99.6,78.3 L 95.4,80.8 L 91.2,82.8 L 86.2,84.7 L 81.2,86.3 L 76.2,87.3 L 70.4,87.9 L 65.4,87.9 M 64.5,49.2 L 68.3,46.6 L 63.7,44.5 L 62.8,48.2 L 64.5,49.2\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"0.95\" stroke-dasharray=\"4 3\" opacity=\"0.75\"/>\n        <path d=\"M 72.8,192.0 L 75.4,190.5 L 77.9,189.2 L 80.4,188.0 L 83.4,186.6 L 86.2,185.4 L 89.6,184.2 L 92.3,183.4 L 95.9,182.7 L 99.6,182.2 L 103.7,182.0 L 107.9,182.3 L 111.2,182.7 L 114.9,183.4 L 117.9,184.3 L 121.3,185.4 L 124.4,186.6 L 127.1,187.7 L 129.6,188.9 L 132.4,190.4 L 134.8,192.0 M 166.6,192.0 L 163.8,190.8 L 161.5,188.9 L 160.0,186.6 L 159.2,183.4 L 159.1,179.6 L 159.6,175.8 L 160.4,172.6 L 161.3,170.0 L 162.6,167.1 L 163.9,164.8 L 165.7,162.5 L 168.0,160.5 L 170.5,159.2 L 173.8,158.4 L 177.1,158.6 L 180.5,159.4 L 183.8,160.7 L 186.3,161.9 L 188.8,163.4 L 191.3,165.1 L 193.8,167.1 L 195.5,168.7 L 197.3,171.0 L 198.8,174.1 L 199.2,177.2 L 198.4,180.3 L 197.1,182.7 L 195.0,185.0 L 193.0,186.8 L 190.5,188.4 L 188.0,189.7 L 184.6,191.1 L 181.6,192.0 M 133.1,14.0 L 133.0,17.9 L 132.9,21.6 L 132.8,24.9 L 132.6,28.8 L 132.2,32.7 L 131.9,35.8 L 131.3,39.5 L 130.6,42.8 L 129.9,45.9 L 129.1,49.0 L 128.2,52.1 L 127.3,55.2 L 126.4,58.3 L 125.5,61.4 L 124.7,64.5 L 123.8,67.6 L 123.0,70.7 L 122.1,73.9 L 121.3,76.3 L 120.0,79.3 L 118.7,81.6 L 117.0,84.0 L 114.7,86.3 L 112.8,87.8 L 110.4,89.5 L 107.8,91.0 L 104.6,92.5 L 102.1,93.5 L 98.7,94.8 L 96.2,95.7 L 92.9,96.9 L 89.8,97.9 L 87.1,98.8 L 83.7,99.7 L 80.4,100.5 L 77.1,101.1 L 72.9,101.7 L 69.5,102.2 L 66.2,102.7 L 62.6,103.4 L 59.5,104.3 L 56.4,105.7 L 54.3,107.3 L 52.4,109.6 L 51.2,112.1 L 50.4,115.5 L 50.0,118.9 L 49.7,122.8 L 49.5,126.4 L 49.2,129.8 L 48.6,132.9 L 47.7,136.0 L 46.4,139.1 L 45.1,141.5 L 43.5,143.8 L 41.7,146.1 L 39.5,148.4 L 37.8,150.0 L 35.4,152.1 L 33.0,153.9 L 30.8,155.5 L 28.4,157.0 L 26.0,158.6 L 23.4,160.1 L 20.8,161.7 L 18.2,163.2 L 15.6,164.8 L 13.1,166.3 L 12.0,167.0\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.9\"/>\n        <path d=\"M 156.2,14.0 L 154.4,17.1 L 152.5,20.2 L 150.6,23.3 L 148.8,26.0 L 146.9,28.8 L 144.7,31.9 L 142.9,34.3 L 140.7,37.3 L 138.8,39.8 L 136.5,42.8 L 134.6,45.2 L 132.4,48.2 L 130.4,51.3 L 128.8,54.4 L 127.6,57.5 L 126.7,61.4 L 126.4,66.1 L 126.4,70.7 L 126.2,74.6 L 125.4,78.5 L 123.8,81.7 L 121.3,84.4 L 118.7,86.3 L 115.4,88.5 L 112.8,90.2 L 109.6,92.3 L 107.1,94.1 L 103.8,96.4 L 101.2,98.0 L 97.9,99.6 L 93.7,100.7 L 88.7,100.9 L 84.6,100.2 L 80.4,98.9 L 77.1,97.8 L 72.9,96.9 L 67.9,96.8 L 63.7,97.3 L 59.5,98.1 L 55.4,99.3 L 52.0,100.9 L 49.5,102.9 L 47.9,106.1 L 47.2,110.4 L 47.1,115.0 L 47.3,119.7 L 47.5,124.4 L 47.8,129.0 L 48.1,132.9 L 48.7,137.3 L 49.6,140.7 L 51.4,143.8 L 54.5,145.6 L 59.5,146.0 L 64.5,145.7 L 69.5,145.9 L 73.2,146.9 L 76.0,149.2 L 77.1,152.4 L 76.5,156.2 L 75.1,159.4 L 73.2,162.5 L 71.2,165.3 L 69.2,167.9 L 67.0,170.8 L 65.0,173.3 L 62.9,176.0 L 60.5,178.8 L 58.6,181.1 L 56.2,184.1 L 54.1,186.6 L 52.0,189.2 L 49.7,192.0 M 145.4,122.2 L 142.9,120.0 L 141.3,116.6 L 140.5,112.7 L 140.7,108.1 L 141.9,104.2 L 143.7,101.1 L 146.3,98.9 L 149.6,97.6 L 154.6,97.6 L 158.6,98.7 L 161.5,100.3 L 163.8,102.7 L 163.8,107.3 L 162.1,110.2 L 160.1,112.7 L 157.9,115.1 L 155.4,117.6 L 152.9,119.7 L 149.6,121.9 L 145.4,122.2\" fill=\"none\" stroke=\"#7D3C98\" stroke-width=\"1.6\" stroke-dasharray=\"2 3\"/>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione · I support vector possono essere tanti</div>\n    <p>Confine (nero), margini \\(g(\\x)=\\pm 1\\) (tratteggio), Bayes (viola), SV (punto nero interno): qui gli SV sono il <strong>46%–55%</strong> dei dati. La sparsità teorica <strong>non è garantita</strong>.</p>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.5 · Le SVM nella pratica</div>\n  <h2 class=\"slide-title\">Pregi, limiti ed esperimento su dati reali (\\(C = 1\\))</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"gb20-1\" class=\"box box-idea\">\n      <div class=\"box-label\">Pregi</div>\n      <ul class=\"clean-list\">\n        <li><strong>Regolarizzazione incorporata</strong> (margine / SRM).</li>\n        <li><strong>Problema convesso</strong> → sempre <strong>minimo globale</strong> (vs NN).</li>\n        <li><strong>LBE implicita efficiente</strong>; estendibile ad altri metodi kernel.</li>\n      </ul>\n    </div>\n    <div id=\"gb20-2\" class=\"box box-warn\">\n      <div class=\"box-label\">Difetti</div>\n      <ul class=\"clean-list\">\n        <li>Bisogna <strong>scegliere kernel e parametri</strong>; algoritmo <strong>batch</strong>.</li>\n        <li>Matrice \\(K\\) di taglia \\(l \\times l\\): oltre ~20 000 esempi servono metodi scalabili (anche gradient-based).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"plot-card\">\n      <div class=\"plot-title\">Polinomiale (grado 4) · Tr 0,175 · <strong>Te 0,237</strong> · SV 46%</div>\n      <svg viewBox=\"0 0 240 202\" class=\"diagram-svg\" aria-label=\"SVM polinomiale su dati reali\">\n        <rect x=\"12\" y=\"14\" width=\"216\" height=\"178\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1\"/>\n        <circle cx=\"181.1\" cy=\"69.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"174.6\" cy=\"69.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"145.5\" cy=\"81.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.4\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.3\" cy=\"77.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.9\" cy=\"137.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"132.6\" cy=\"132.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.4\" cy=\"160.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.8\" cy=\"116.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.2\" cy=\"153.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.9\" cy=\"76.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.6\" cy=\"120.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.4\" cy=\"136.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"172.8\" cy=\"63.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"180.1\" cy=\"70.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.5\" cy=\"93.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.8\" cy=\"76.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.0\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"92.1\" cy=\"111.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.4\" cy=\"69.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"75.6\" cy=\"120.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.1\" cy=\"127.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"179.0\" cy=\"57.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.0\" cy=\"143.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"85.7\" cy=\"119.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"146.5\" cy=\"38.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.1\" cy=\"117.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.9\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"113.8\" cy=\"109.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"168.7\" cy=\"66.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.1\" cy=\"87.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"156.7\" cy=\"78.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.8\" cy=\"121.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"169.7\" cy=\"60.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"140.5\" cy=\"121.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.9\" cy=\"70.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.1\" cy=\"110.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.5\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.7\" cy=\"85.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.3\" cy=\"68.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.4\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.3\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.0\" cy=\"81.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.6\" cy=\"157.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.2\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"129.0\" cy=\"101.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"93.9\" cy=\"134.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"151.5\" cy=\"66.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"135.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"71.3\" cy=\"125.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.8\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.3\" cy=\"151.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.3\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.4\" cy=\"71.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"44.6\" cy=\"65.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"90.0\" cy=\"77.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"55.9\" cy=\"42.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.7\" cy=\"175.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"142.1\" cy=\"110.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.2\" cy=\"39.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.3\" cy=\"30.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"98.3\" cy=\"45.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"35.4\" cy=\"77.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"17.9\" cy=\"113.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.6\" cy=\"45.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"47.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.2\" cy=\"46.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.5\" cy=\"56.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"99.2\" cy=\"44.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.6\" cy=\"72.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"71.9\" cy=\"30.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.1\" cy=\"53.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.3\" cy=\"38.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.6\" cy=\"36.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"30.1\" cy=\"132.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"66.9\" cy=\"28.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"108.3\" cy=\"67.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.9\" cy=\"48.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"54.5\" cy=\"74.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"59.7\" cy=\"55.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"111.2\" cy=\"32.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"65.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"19.5\" cy=\"114.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.4\" cy=\"39.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.9\" cy=\"51.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.5\" cy=\"36.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"16.7\" cy=\"112.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.2\" cy=\"128.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"101.7\" cy=\"55.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.4\" cy=\"137.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"61.9\" cy=\"48.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.4\" cy=\"37.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"50.4\" cy=\"41.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"53.7\" cy=\"33.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"83.6\" cy=\"16.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"95.1\" cy=\"27.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"69.1\" cy=\"27.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.1\" cy=\"73.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"45.6\" cy=\"38.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"106.3\" cy=\"68.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"103.1\" cy=\"60.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.9\" cy=\"17.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"37.0\" cy=\"39.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.3\" cy=\"118.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"58.0\" cy=\"48.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.8\" cy=\"22.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.1\" cy=\"24.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/>\n        <circle cx=\"142.1\" cy=\"110.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"21.1\" cy=\"110.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"132.6\" cy=\"132.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"129.0\" cy=\"101.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"1.2\" fill=\"#1A1A1A\"/>\n        <path d=\"M 60.6,192.0 L 61.7,186.6 L 62.7,181.1 L 63.4,175.7 L 60.1,173.3 L 55.4,175.3 L 51.1,177.2 L 46.2,179.6 L 42.0,181.6 L 37.9,183.6 L 33.3,185.8 L 28.7,188.0 L 24.5,190.0 L 20.3,192.0 M 134.8,14.0 L 133.8,19.4 L 132.9,24.2 L 132.0,29.5 L 131.2,35.0 L 130.5,41.2 L 130.0,46.6 L 129.7,52.9 L 129.7,59.1 L 130.2,65.3 L 131.1,70.7 L 132.3,75.4 L 134.1,80.1 L 136.3,84.0 L 139.5,87.8 L 142.9,90.5 L 147.1,92.5 L 152.9,94.1 L 157.9,94.9 L 163.8,95.7 L 169.6,96.6 L 175.4,97.9 L 179.6,99.7 L 183.2,102.6 L 184.9,107.3 L 185.7,112.7 L 187.9,117.4 L 190.8,120.5 L 194.6,123.6 L 198.2,125.9 L 202.2,128.3 L 206.4,130.6 L 211.0,132.9 L 215.5,135.1 L 219.7,137.0 L 224.3,139.1 L 228.0,140.8 M 67.9,166.9 L 72.9,165.6 L 77.9,163.3 L 82.1,161.2 L 86.2,159.1 L 90.4,157.0 L 94.8,154.7 L 99.2,152.4 L 103.5,150.0 L 107.8,147.7 L 112.0,145.4 L 116.1,143.0 L 120.0,140.7 L 123.9,138.4 L 127.9,135.8 L 132.1,133.1 L 135.6,130.6 L 139.5,127.5 L 142.8,124.4 L 145.4,120.8 L 146.6,115.8 L 144.6,111.3 L 141.4,108.1 L 137.7,105.7 L 132.9,104.0 L 127.1,103.0 L 120.4,102.9 L 113.7,103.3 L 107.9,104.0 L 102.2,104.9 L 97.1,106.0 L 92.1,107.3 L 87.1,108.9 L 82.1,111.1 L 78.3,113.5 L 75.0,116.6 L 72.6,120.5 L 71.1,125.2 L 70.2,130.6 L 69.5,136.5 L 69.1,142.3 L 68.5,147.7 L 67.9,153.9 L 67.3,159.4 L 66.9,164.8 L 67.9,166.9 M 71.2,192.0 L 73.7,188.7 L 77.0,185.0 L 80.1,181.9 L 83.5,178.8 L 87.1,176.0 L 90.6,173.3 L 94.6,170.6 L 98.7,168.0 L 102.8,165.6 L 106.9,163.2 L 111.2,160.9 L 115.4,158.7 L 119.6,156.6 L 123.8,154.6 L 128.7,152.4 L 132.9,150.5 L 137.8,148.5 L 142.1,146.8 L 147.1,145.0 L 152.1,143.3 L 157.1,141.8 L 162.1,140.5 L 168.0,139.3 L 173.8,138.4 L 179.6,137.9 L 186.3,137.7 L 193.0,138.1 L 198.8,138.7 L 204.6,139.6 L 209.9,140.7 L 215.5,142.0 L 220.5,143.3 L 225.5,144.7 L 228.0,145.5 M 12.0,106.6 L 17.0,108.2 L 21.6,110.4 L 25.4,112.7 L 29.4,115.8 L 32.7,118.9 L 35.4,122.0 L 38.3,125.9 L 40.5,129.8 L 42.5,134.5 L 43.8,139.1 L 44.5,145.1 L 44.4,150.0 L 43.6,155.5 L 42.0,160.6 L 40.1,164.8 L 37.8,168.7 L 34.8,172.6 L 32.0,175.7 L 28.7,178.9 L 25.1,181.9 L 21.2,184.9 L 17.7,187.3 L 13.7,190.0 L 12.0,191.1 M 132.7,14.0 L 131.3,19.4 L 130.0,24.1 L 128.8,28.8 L 127.2,34.2 L 125.9,38.9 L 124.5,43.5 L 122.9,48.2 L 121.1,52.9 L 119.1,57.5 L 117.0,61.4 L 114.4,65.3 L 111.2,69.2 L 108.0,72.3 L 104.6,74.9 L 100.4,77.5 L 96.2,79.7 L 91.8,81.6 L 87.1,83.4 L 82.1,85.1 L 77.1,86.5 L 71.9,87.8 L 66.2,89.2 L 61.2,90.2 L 55.4,91.4 L 49.5,92.4 L 43.7,93.3 L 37.9,94.0 L 32.0,94.6 L 26.2,94.9 L 20.3,94.7 L 14.5,93.9 L 12.0,93.4\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"0.95\" stroke-dasharray=\"4 3\" opacity=\"0.75\"/>\n        <path d=\"M 66.4,192.0 L 67.9,189.3 L 69.5,186.7 L 71.2,184.3 L 72.9,182.1 L 74.5,180.2 L 76.6,178.0 L 78.7,176.0 L 80.9,174.1 L 82.9,172.5 L 85.4,170.6 L 87.9,168.9 L 90.4,167.2 L 92.9,165.6 L 95.4,164.0 L 97.9,162.5 L 100.4,161.1 L 102.9,159.6 L 105.4,158.2 L 107.9,156.9 L 110.5,155.5 L 113.5,153.9 L 116.2,152.5 L 118.7,151.2 L 121.3,150.0 L 124.3,148.5 L 127.1,147.1 L 129.6,145.9 L 132.5,144.6 L 135.4,143.3 L 137.9,142.2 L 141.3,140.7 L 143.8,139.7 L 147.1,138.4 L 149.6,137.4 L 152.9,136.3 L 156.1,135.3 L 158.8,134.5 L 162.1,133.6 L 165.5,132.9 L 169.6,132.1 L 173.0,131.7 L 177.1,131.5 L 181.3,131.5 L 185.5,131.8 L 188.8,132.2 L 193.0,132.9 L 196.3,133.5 L 199.6,134.3 L 203.0,135.2 L 206.0,136.0 L 208.8,136.9 L 212.2,137.9 L 215.5,139.0 L 218.3,139.9 L 221.3,141.0 L 224.7,142.1 L 227.2,143.0 L 228.0,143.3 M 133.8,14.0 L 132.9,17.6 L 132.2,21.0 L 131.5,24.1 L 130.8,27.2 L 130.1,30.3 L 129.4,33.4 L 128.8,36.7 L 128.0,40.4 L 127.3,43.5 L 126.7,46.6 L 126.0,49.8 L 125.4,52.9 L 124.6,56.3 L 123.8,59.6 L 122.9,62.7 L 122.1,65.4 L 121.0,68.4 L 119.6,71.5 L 118.3,73.9 L 116.8,76.2 L 114.8,78.5 L 112.9,80.4 L 110.4,82.4 L 108.0,84.0 L 105.4,85.4 L 102.9,86.7 L 100.3,87.8 L 97.1,89.1 L 94.1,90.2 L 91.2,91.1 L 87.9,92.2 L 84.6,93.2 L 81.4,94.1 L 78.6,94.8 L 75.4,95.7 L 72.0,96.7 L 68.7,97.6 L 65.4,98.6 L 62.4,99.5 L 59.5,100.5 L 56.2,101.8 L 53.7,103.0 L 51.2,104.6 L 49.1,106.5 L 47.9,109.0 L 47.7,112.7 L 48.4,115.8 L 49.4,118.9 L 50.4,121.8 L 51.2,124.4 L 52.2,127.5 L 52.9,130.6 L 53.7,134.5 L 54.1,137.6 L 54.3,141.5 L 54.3,145.4 L 53.9,149.2 L 53.4,152.4 L 52.7,155.5 L 51.7,158.6 L 50.4,161.7 L 49.2,164.0 L 47.8,166.3 L 46.1,168.7 L 44.2,171.0 L 42.0,173.3 L 40.4,174.9 L 37.9,177.1 L 35.7,178.8 L 33.7,180.3 L 31.2,182.1 L 28.7,183.8 L 26.2,185.4 L 23.7,186.9 L 21.2,188.4 L 18.7,189.9 L 16.2,191.3 L 14.9,192.0\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.9\"/>\n        <path d=\"M 156.2,14.0 L 154.4,17.1 L 152.5,20.2 L 150.6,23.3 L 148.8,26.0 L 146.9,28.8 L 144.7,31.9 L 142.9,34.3 L 140.7,37.3 L 138.8,39.8 L 136.5,42.8 L 134.6,45.2 L 132.4,48.2 L 130.4,51.3 L 128.8,54.4 L 127.6,57.5 L 126.7,61.4 L 126.4,66.1 L 126.4,70.7 L 126.2,74.6 L 125.4,78.5 L 123.8,81.7 L 121.3,84.4 L 118.7,86.3 L 115.4,88.5 L 112.8,90.2 L 109.6,92.3 L 107.1,94.1 L 103.8,96.4 L 101.2,98.0 L 97.9,99.6 L 93.7,100.7 L 88.7,100.9 L 84.6,100.2 L 80.4,98.9 L 77.1,97.8 L 72.9,96.9 L 67.9,96.8 L 63.7,97.3 L 59.5,98.1 L 55.4,99.3 L 52.0,100.9 L 49.5,102.9 L 47.9,106.1 L 47.2,110.4 L 47.1,115.0 L 47.3,119.7 L 47.5,124.4 L 47.8,129.0 L 48.1,132.9 L 48.7,137.3 L 49.6,140.7 L 51.4,143.8 L 54.5,145.6 L 59.5,146.0 L 64.5,145.7 L 69.5,145.9 L 73.2,146.9 L 76.0,149.2 L 77.1,152.4 L 76.5,156.2 L 75.1,159.4 L 73.2,162.5 L 71.2,165.3 L 69.2,167.9 L 67.0,170.8 L 65.0,173.3 L 62.9,176.0 L 60.5,178.8 L 58.6,181.1 L 56.2,184.1 L 54.1,186.6 L 52.0,189.2 L 49.7,192.0 M 145.4,122.2 L 142.9,120.0 L 141.3,116.6 L 140.5,112.7 L 140.7,108.1 L 141.9,104.2 L 143.7,101.1 L 146.3,98.9 L 149.6,97.6 L 154.6,97.6 L 158.6,98.7 L 161.5,100.3 L 163.8,102.7 L 163.8,107.3 L 162.1,110.2 L 160.1,112.7 L 157.9,115.1 L 155.4,117.6 L 152.9,119.7 L 149.6,121.9 L 145.4,122.2\" fill=\"none\" stroke=\"#7D3C98\" stroke-width=\"1.6\" stroke-dasharray=\"2 3\"/>\n      </svg>\n    </div>\n    <div class=\"plot-card\">\n      <div class=\"plot-title\">RBF (\\(\\gamma=1\\)) · Tr 0,180 · <strong>Te 0,222</strong> · SV 55% (Bayes 0,216)</div>\n      <svg viewBox=\"0 0 240 202\" class=\"diagram-svg\" aria-label=\"SVM RBF su dati reali\">\n        <rect x=\"12\" y=\"14\" width=\"216\" height=\"178\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1\"/>\n        <circle cx=\"181.1\" cy=\"69.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"174.6\" cy=\"69.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"145.5\" cy=\"81.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"96.4\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.3\" cy=\"77.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.9\" cy=\"137.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"132.6\" cy=\"132.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.4\" cy=\"160.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.8\" cy=\"116.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"86.2\" cy=\"153.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"166.9\" cy=\"76.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.6\" cy=\"120.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"116.4\" cy=\"136.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"172.8\" cy=\"63.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"180.1\" cy=\"70.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.5\" cy=\"93.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.8\" cy=\"76.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.0\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"92.1\" cy=\"111.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"164.4\" cy=\"69.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"75.6\" cy=\"120.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"108.1\" cy=\"127.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"179.0\" cy=\"57.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.0\" cy=\"143.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"85.7\" cy=\"119.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"146.5\" cy=\"38.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"78.1\" cy=\"117.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.9\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"120.0\" cy=\"129.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"113.8\" cy=\"109.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"168.7\" cy=\"66.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"109.2\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.1\" cy=\"87.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"156.7\" cy=\"78.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"95.8\" cy=\"121.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"169.7\" cy=\"60.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"140.5\" cy=\"121.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"167.9\" cy=\"70.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"111.1\" cy=\"110.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"121.5\" cy=\"106.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"171.7\" cy=\"85.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"144.3\" cy=\"68.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.4\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"94.3\" cy=\"134.6\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"143.0\" cy=\"81.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"74.6\" cy=\"157.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"163.2\" cy=\"76.3\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"129.0\" cy=\"101.0\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"93.9\" cy=\"134.1\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"151.5\" cy=\"66.7\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"79.6\" cy=\"135.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"71.3\" cy=\"125.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"83.8\" cy=\"118.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"81.3\" cy=\"151.8\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"161.3\" cy=\"65.9\" r=\"2.2\" class=\"pt-pos\"/><circle cx=\"54.4\" cy=\"71.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"44.6\" cy=\"65.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"90.0\" cy=\"77.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"55.9\" cy=\"42.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.7\" cy=\"175.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"142.1\" cy=\"110.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.2\" cy=\"39.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.3\" cy=\"30.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"98.3\" cy=\"45.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"35.4\" cy=\"77.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"17.9\" cy=\"113.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"88.6\" cy=\"45.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"70.0\" cy=\"47.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.2\" cy=\"46.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.5\" cy=\"56.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"99.2\" cy=\"44.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.6\" cy=\"72.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"71.9\" cy=\"30.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.1\" cy=\"53.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.3\" cy=\"38.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.6\" cy=\"36.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"30.1\" cy=\"132.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"66.9\" cy=\"28.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"108.3\" cy=\"67.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.9\" cy=\"48.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"54.5\" cy=\"74.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"59.7\" cy=\"55.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"111.2\" cy=\"32.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"109.7\" cy=\"65.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"19.5\" cy=\"114.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.4\" cy=\"39.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.9\" cy=\"51.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.5\" cy=\"36.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"16.7\" cy=\"112.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"21.2\" cy=\"128.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"101.7\" cy=\"55.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"24.4\" cy=\"137.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"61.9\" cy=\"48.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"62.4\" cy=\"37.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"50.4\" cy=\"41.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"53.7\" cy=\"33.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"83.6\" cy=\"16.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"95.1\" cy=\"27.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"69.1\" cy=\"27.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"49.1\" cy=\"73.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"45.6\" cy=\"38.6\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"106.3\" cy=\"68.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"103.1\" cy=\"60.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"91.9\" cy=\"17.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"37.0\" cy=\"39.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"31.3\" cy=\"118.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"58.0\" cy=\"48.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"63.8\" cy=\"22.3\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"93.1\" cy=\"24.4\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"2.3\" class=\"pt-neg\" stroke-width=\"1.15\"/>\n        <circle cx=\"88.7\" cy=\"175.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"142.1\" cy=\"110.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"115.1\" cy=\"90.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.4\" cy=\"74.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.8\" cy=\"86.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.2\" cy=\"122.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"24.3\" cy=\"30.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.7\" cy=\"122.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.6\" cy=\"119.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"35.4\" cy=\"77.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.2\" cy=\"119.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"40.1\" cy=\"120.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"128.9\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"70.0\" cy=\"149.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.4\" cy=\"121.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"84.5\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"31.5\" cy=\"56.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.7\" cy=\"89.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"143.7\" cy=\"113.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.5\" cy=\"139.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"96.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"108.3\" cy=\"67.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"91.7\" cy=\"165.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.9\" cy=\"84.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"63.9\" cy=\"48.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"111.2\" cy=\"32.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"74.2\" cy=\"92.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.7\" cy=\"65.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.4\" cy=\"90.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.4\" cy=\"62.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"112.9\" cy=\"51.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"129.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.1\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.6\" cy=\"99.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.4\" cy=\"116.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"72.0\" cy=\"87.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"112.3\" cy=\"88.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"43.3\" cy=\"130.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"83.6\" cy=\"16.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"159.3\" cy=\"113.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"165.1\" cy=\"110.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"64.3\" cy=\"166.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"41.6\" cy=\"93.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.1\" cy=\"162.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"91.9\" cy=\"17.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"39.1\" cy=\"127.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"102.7\" cy=\"81.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.7\" cy=\"90.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.8\" cy=\"79.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"43.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"63.8\" cy=\"22.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"154.8\" cy=\"121.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"160.6\" cy=\"108.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"164.7\" cy=\"139.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"122.1\" cy=\"77.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"181.1\" cy=\"69.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"144.9\" cy=\"104.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"130.1\" cy=\"64.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"116.0\" cy=\"103.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"81.4\" cy=\"160.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.3\" cy=\"93.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"49.8\" cy=\"125.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"162.2\" cy=\"95.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"108.6\" cy=\"97.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.3\" cy=\"73.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"171.9\" cy=\"104.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"106.7\" cy=\"87.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"111.2\" cy=\"85.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"120.0\" cy=\"76.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.1\" cy=\"151.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.2\" cy=\"117.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"79.6\" cy=\"165.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"164.5\" cy=\"93.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"68.4\" cy=\"142.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"48.6\" cy=\"108.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"109.2\" cy=\"96.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"121.9\" cy=\"98.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"92.1\" cy=\"111.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"179.0\" cy=\"57.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"188.3\" cy=\"117.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"110.7\" cy=\"90.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"95.9\" cy=\"154.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"94.0\" cy=\"79.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"147.8\" cy=\"106.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"146.5\" cy=\"38.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"78.1\" cy=\"117.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"167.4\" cy=\"118.8\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"163.5\" cy=\"131.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"104.5\" cy=\"155.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"69.6\" cy=\"135.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"35.2\" cy=\"120.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"134.3\" cy=\"80.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"140.5\" cy=\"121.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"57.2\" cy=\"122.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.3\" cy=\"132.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"153.3\" cy=\"112.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"54.5\" cy=\"119.3\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"126.1\" cy=\"75.6\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"45.3\" cy=\"154.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"124.4\" cy=\"86.1\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"100.3\" cy=\"72.0\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"51.8\" cy=\"124.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"74.6\" cy=\"157.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"155.4\" cy=\"118.2\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"158.7\" cy=\"115.7\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"117.6\" cy=\"61.9\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"73.9\" cy=\"169.5\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"42.8\" cy=\"96.4\" r=\"1.2\" fill=\"#1A1A1A\"/><circle cx=\"141.6\" cy=\"108.2\" r=\"1.2\" fill=\"#1A1A1A\"/>\n        <path d=\"M 73.7,157.2 L 80.4,157.1 L 85.4,156.1 L 91.2,154.8 L 96.9,153.9 L 102.7,153.1 L 107.9,152.2 L 112.9,150.6 L 117.4,148.5 L 121.3,146.0 L 125.0,143.0 L 128.2,139.9 L 131.3,136.3 L 133.8,132.7 L 136.1,128.3 L 137.9,123.8 L 139.4,118.9 L 140.5,114.3 L 141.5,108.8 L 142.6,103.4 L 144.7,99.5 L 148.8,96.8 L 153.8,94.9 L 158.8,93.6 L 164.6,93.3 L 169.0,94.8 L 172.1,98.4 L 174.2,102.6 L 176.3,106.7 L 178.8,110.8 L 181.7,114.3 L 185.5,117.0 L 191.3,117.8 L 195.2,115.0 L 196.6,110.4 L 195.5,104.9 L 193.6,101.1 L 190.8,97.2 L 188.0,93.9 L 184.6,90.3 L 182.1,87.0 L 180.5,81.7 L 180.5,77.0 L 181.0,70.7 L 180.9,64.5 L 179.6,59.1 L 178.0,55.2 L 175.5,51.0 L 172.8,47.4 L 169.6,44.2 L 165.7,41.2 L 161.3,39.3 L 155.2,39.7 L 151.3,42.2 L 148.3,45.9 L 145.9,49.8 L 143.8,54.2 L 142.1,58.4 L 140.4,63.7 L 139.5,68.4 L 139.0,74.6 L 139.0,80.8 L 139.2,87.1 L 138.7,92.5 L 136.3,96.4 L 131.8,98.7 L 127.0,100.3 L 121.3,101.8 L 116.2,103.1 L 111.2,104.4 L 106.2,106.0 L 101.2,107.8 L 97.0,109.6 L 92.1,111.8 L 87.9,113.7 L 82.9,115.7 L 78.3,117.4 L 73.7,119.6 L 70.5,122.8 L 69.2,127.5 L 69.4,133.7 L 69.7,139.1 L 69.0,144.6 L 68.1,150.0 L 69.5,155.1 L 73.7,157.2 M 12.0,113.0 L 15.9,110.4 L 20.3,108.7 L 26.2,109.0 L 30.3,111.9 L 32.8,115.6 L 34.5,120.2 L 34.9,125.9 L 33.6,130.6 L 30.8,134.5 L 27.0,137.1 L 22.0,138.7 L 15.3,138.4 L 12.0,137.2 M 65.4,87.9 L 59.5,87.3 L 53.7,86.4 L 48.7,85.4 L 43.7,83.9 L 39.2,81.6 L 36.1,78.5 L 33.8,73.9 L 32.8,69.2 L 32.4,63.0 L 31.9,57.5 L 30.3,52.8 L 27.8,48.2 L 25.5,44.3 L 23.7,40.2 L 23.0,34.2 L 25.3,29.5 L 28.7,27.2 L 34.5,25.8 L 41.2,25.9 L 47.0,26.5 L 53.7,26.5 L 58.7,25.1 L 62.9,22.9 L 67.0,20.5 L 71.2,18.4 L 76.2,16.7 L 82.1,16.0 L 87.9,16.7 L 92.9,18.2 L 97.4,20.2 L 101.5,22.6 L 105.4,25.3 L 108.7,28.6 L 111.2,32.1 L 113.1,36.5 L 114.0,42.0 L 113.7,47.4 L 112.7,52.9 L 111.3,58.3 L 109.8,63.0 L 108.0,67.6 L 106.0,71.5 L 103.0,75.4 L 99.6,78.3 L 95.4,80.8 L 91.2,82.8 L 86.2,84.7 L 81.2,86.3 L 76.2,87.3 L 70.4,87.9 L 65.4,87.9 M 64.5,49.2 L 68.3,46.6 L 63.7,44.5 L 62.8,48.2 L 64.5,49.2\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"0.95\" stroke-dasharray=\"4 3\" opacity=\"0.75\"/>\n        <path d=\"M 72.8,192.0 L 75.4,190.5 L 77.9,189.2 L 80.4,188.0 L 83.4,186.6 L 86.2,185.4 L 89.6,184.2 L 92.3,183.4 L 95.9,182.7 L 99.6,182.2 L 103.7,182.0 L 107.9,182.3 L 111.2,182.7 L 114.9,183.4 L 117.9,184.3 L 121.3,185.4 L 124.4,186.6 L 127.1,187.7 L 129.6,188.9 L 132.4,190.4 L 134.8,192.0 M 166.6,192.0 L 163.8,190.8 L 161.5,188.9 L 160.0,186.6 L 159.2,183.4 L 159.1,179.6 L 159.6,175.8 L 160.4,172.6 L 161.3,170.0 L 162.6,167.1 L 163.9,164.8 L 165.7,162.5 L 168.0,160.5 L 170.5,159.2 L 173.8,158.4 L 177.1,158.6 L 180.5,159.4 L 183.8,160.7 L 186.3,161.9 L 188.8,163.4 L 191.3,165.1 L 193.8,167.1 L 195.5,168.7 L 197.3,171.0 L 198.8,174.1 L 199.2,177.2 L 198.4,180.3 L 197.1,182.7 L 195.0,185.0 L 193.0,186.8 L 190.5,188.4 L 188.0,189.7 L 184.6,191.1 L 181.6,192.0 M 133.1,14.0 L 133.0,17.9 L 132.9,21.6 L 132.8,24.9 L 132.6,28.8 L 132.2,32.7 L 131.9,35.8 L 131.3,39.5 L 130.6,42.8 L 129.9,45.9 L 129.1,49.0 L 128.2,52.1 L 127.3,55.2 L 126.4,58.3 L 125.5,61.4 L 124.7,64.5 L 123.8,67.6 L 123.0,70.7 L 122.1,73.9 L 121.3,76.3 L 120.0,79.3 L 118.7,81.6 L 117.0,84.0 L 114.7,86.3 L 112.8,87.8 L 110.4,89.5 L 107.8,91.0 L 104.6,92.5 L 102.1,93.5 L 98.7,94.8 L 96.2,95.7 L 92.9,96.9 L 89.8,97.9 L 87.1,98.8 L 83.7,99.7 L 80.4,100.5 L 77.1,101.1 L 72.9,101.7 L 69.5,102.2 L 66.2,102.7 L 62.6,103.4 L 59.5,104.3 L 56.4,105.7 L 54.3,107.3 L 52.4,109.6 L 51.2,112.1 L 50.4,115.5 L 50.0,118.9 L 49.7,122.8 L 49.5,126.4 L 49.2,129.8 L 48.6,132.9 L 47.7,136.0 L 46.4,139.1 L 45.1,141.5 L 43.5,143.8 L 41.7,146.1 L 39.5,148.4 L 37.8,150.0 L 35.4,152.1 L 33.0,153.9 L 30.8,155.5 L 28.4,157.0 L 26.0,158.6 L 23.4,160.1 L 20.8,161.7 L 18.2,163.2 L 15.6,164.8 L 13.1,166.3 L 12.0,167.0\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.9\"/>\n        <path d=\"M 156.2,14.0 L 154.4,17.1 L 152.5,20.2 L 150.6,23.3 L 148.8,26.0 L 146.9,28.8 L 144.7,31.9 L 142.9,34.3 L 140.7,37.3 L 138.8,39.8 L 136.5,42.8 L 134.6,45.2 L 132.4,48.2 L 130.4,51.3 L 128.8,54.4 L 127.6,57.5 L 126.7,61.4 L 126.4,66.1 L 126.4,70.7 L 126.2,74.6 L 125.4,78.5 L 123.8,81.7 L 121.3,84.4 L 118.7,86.3 L 115.4,88.5 L 112.8,90.2 L 109.6,92.3 L 107.1,94.1 L 103.8,96.4 L 101.2,98.0 L 97.9,99.6 L 93.7,100.7 L 88.7,100.9 L 84.6,100.2 L 80.4,98.9 L 77.1,97.8 L 72.9,96.9 L 67.9,96.8 L 63.7,97.3 L 59.5,98.1 L 55.4,99.3 L 52.0,100.9 L 49.5,102.9 L 47.9,106.1 L 47.2,110.4 L 47.1,115.0 L 47.3,119.7 L 47.5,124.4 L 47.8,129.0 L 48.1,132.9 L 48.7,137.3 L 49.6,140.7 L 51.4,143.8 L 54.5,145.6 L 59.5,146.0 L 64.5,145.7 L 69.5,145.9 L 73.2,146.9 L 76.0,149.2 L 77.1,152.4 L 76.5,156.2 L 75.1,159.4 L 73.2,162.5 L 71.2,165.3 L 69.2,167.9 L 67.0,170.8 L 65.0,173.3 L 62.9,176.0 L 60.5,178.8 L 58.6,181.1 L 56.2,184.1 L 54.1,186.6 L 52.0,189.2 L 49.7,192.0 M 145.4,122.2 L 142.9,120.0 L 141.3,116.6 L 140.5,112.7 L 140.7,108.1 L 141.9,104.2 L 143.7,101.1 L 146.3,98.9 L 149.6,97.6 L 154.6,97.6 L 158.6,98.7 L 161.5,100.3 L 163.8,102.7 L 163.8,107.3 L 162.1,110.2 L 160.1,112.7 L 157.9,115.1 L 155.4,117.6 L 152.9,119.7 L 149.6,121.9 L 145.4,122.2\" fill=\"none\" stroke=\"#7D3C98\" stroke-width=\"1.6\" stroke-dasharray=\"2 3\"/>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione · I support vector possono essere tanti</div>\n    <p>Confine (nero), margini \\(g(\\x)=\\pm 1\\) (tratteggio), Bayes (viola), SV (punto nero interno): qui gli SV sono il <strong>46%–55%</strong> dei dati. La sparsità teorica <strong>non è garantita</strong>.</p>\n  </div>\n</div>\n",
       "cues": [
         {
           "action": "show",
           "target": "#s1",
           "anchor": "I quattro pregi principali",
           "at": 4.3
+        },
+        {
+          "at": 4.37,
+          "action": "highlight",
+          "target": "#gb20-1",
+          "duration": 23.92
+        },
+        {
+          "at": 28.41,
+          "action": "highlight",
+          "target": "#gb20-2",
+          "duration": 16.37
         },
         {
           "action": "show",
@@ -929,6 +1214,12 @@
           "target": "#s3",
           "anchor": "Attenzione però: la teoria immagina",
           "at": 85.97
+        },
+        {
+          "at": 86.07,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.12
         }
       ],
       "duration_sec": 94.54,
@@ -946,7 +1237,7 @@
           "action": "show",
           "target": "#s1",
           "anchor": "Il grafico reale a sinistra",
-          "at": 40.92
+          "at": 4.1
         },
         {
           "action": "show",
@@ -958,25 +1249,29 @@
           "action": "highlight",
           "target": "#m1",
           "anchor": "Uno: valori di default",
-          "at": 69.39
+          "at": 69.39,
+          "duration": 4.11
         },
         {
           "action": "highlight",
           "target": "#m2",
           "anchor": "Due: la SVM non va in overfitting",
-          "at": 73.65
+          "at": 73.65,
+          "duration": 5.93
         },
         {
           "action": "highlight",
           "target": "#m3",
           "anchor": "Tre: risolve la maledizione della dimensionalità",
-          "at": 79.73
+          "at": 79.73,
+          "duration": 8.61
         },
         {
           "action": "highlight",
           "target": "#m4",
           "anchor": "Quattro: trova da sola il numero di unità",
-          "at": 88.49
+          "at": 88.49,
+          "duration": 7.22
         }
       ],
       "duration_sec": 95.91,
@@ -988,13 +1283,13 @@
       "section": "13.6 Metodi kernel",
       "title": "Kernelizzazione, distanza indotta, similarità e confronto con le reti",
       "tts_text": "Chiudiamo allargando lo sguardo ai metodi kernel in generale. Il kernel trick funziona anche senza SVM: si parla di kernelizzazione di approcci tradizionali. Ovunque compaia un prodotto scalare o una misura di similarità lo possiamo sostituire con un kernel, ottenendo un'espansione in basi fissa, efficiente e modulare, dove si cambia il kernel senza toccare la macchina di apprendimento, in un quadro teorico unificato. [pause:0.8] Ogni kernel induce una distanza nello spazio delle feature: il quadrato di d con k tra s e t è norma quadra di Fi di s meno Fi di t, che sviluppata vale k di s virgola s meno due k di s virgola t più k di t virgola t. Oggetti simili hanno distanza piccola e valore del kernel alto: il kernel è quindi una misura di similarità. [pause:0.8] L'idea dei kernel è concentrarsi sui confronti tra coppie di oggetti anziché sulla rappresentazione del singolo oggetto: in molti domini è più facile confrontare due oggetti che progettare feature per uno solo, e la conoscenza di dominio sta tutta nel kernel, separata dal risolutore. [pause:0.8] Un kernel è buono quando raggruppa oggetti della stessa classe; è cattivo quando induce una similarità irrilevante, ad esempio rendendo tutti gli oggetti ugualmente simili o ugualmente diversi. Mentre nelle reti neurali le funzioni di base si adattano ai dati, una SVM è guidata dalla scelta del kernel, tema di ricerca anche sui kernel adattivi; in più i kernel si estendono direttamente a strutture non vettoriali come stringhe, alberi e grafi.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.6 · Metodi kernel</div>\n  <h2 class=\"slide-title\">Kernelizzazione, distanza indotta e confronto con le reti neurali</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Kernelizzazione modulare</div>\n    <p>Ovunque compaia un <strong>prodotto scalare</strong> o una <strong>misura di similarità</strong> si può sostituire un kernel: LBE fissa ma efficiente, <strong>modulare</strong> (si cambia \\(k\\) senza cambiare il risolutore) e con quadro teorico unificato.</p>\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Proprietà &amp; dimostrazione · Kernel e distanza indotta</div>\n    \\[\\htmlId{f-dk}{d_k(\\vv{s},\\vv{t})^2 = \\norm{\\Phi(\\vv{s}) - \\Phi(\\vv{t})}^2 = \\Phi(\\vv{s})\\T\\Phi(\\vv{s}) - 2\\Phi(\\vv{s})\\T\\Phi(\\vv{t}) + \\Phi(\\vv{t})\\T\\Phi(\\vv{t}) = k(\\vv{s},\\vv{s}) - 2k(\\vv{s},\\vv{t}) + k(\\vv{t},\\vv{t})}\\]\n    <p class=\"math-note\">Distanza piccola \\(\\iff\\) valore alto di \\(k(\\vv{s},\\vv{t})\\): il kernel è una <strong>misura di similarità</strong>.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-idea\">\n      <div class=\"box-label\">Idea · Confronti tra coppie e domini strutturati</div>\n      <p>Conoscenza di dominio tutta nel kernel, <strong>separata dal risolutore</strong>. Si estende a oggetti non vettoriali: <strong>stringhe, alberi e grafi</strong>.</p>\n    </div>\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Kernel buono vs cattivo · SVM vs Reti Neurali</div>\n      <p><strong>Buono</strong>: raggruppa stessa classe; <strong>cattivo</strong>: similarità irrilevante. Nelle SVM le basi sono <strong>fissate</strong> (ricerca: kernel adattivi); nelle NN si <strong>adattano ai dati</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.6 · Metodi kernel</div>\n  <h2 class=\"slide-title\">Kernelizzazione, distanza indotta e confronto con le reti neurali</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Kernelizzazione modulare</div>\n    <p>Ovunque compaia un <strong>prodotto scalare</strong> o una <strong>misura di similarità</strong> si può sostituire un kernel: LBE fissa ma efficiente, <strong>modulare</strong> (si cambia \\(k\\) senza cambiare il risolutore) e con quadro teorico unificato.</p>\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Proprietà &amp; dimostrazione · Kernel e distanza indotta</div>\n    \\[\\htmlId{f-dk}{d_k(\\vv{s},\\vv{t})^2 = \\norm{\\Phi(\\vv{s}) - \\Phi(\\vv{t})}^2 = \\Phi(\\vv{s})\\T\\Phi(\\vv{s}) - 2\\Phi(\\vv{s})\\T\\Phi(\\vv{t}) + \\Phi(\\vv{t})\\T\\Phi(\\vv{t}) = k(\\vv{s},\\vv{s}) - 2k(\\vv{s},\\vv{t}) + k(\\vv{t},\\vv{t})}\\]\n    <p class=\"math-note\">Distanza piccola \\(\\iff\\) valore alto di \\(k(\\vv{s},\\vv{t})\\): il kernel è una <strong>misura di similarità</strong>.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div id=\"gb22-1\" class=\"box box-idea\">\n      <div class=\"box-label\">Idea · Confronti tra coppie e domini strutturati</div>\n      <p>Conoscenza di dominio tutta nel kernel, <strong>separata dal risolutore</strong>. Si estende a oggetti non vettoriali: <strong>stringhe, alberi e grafi</strong>.</p>\n    </div>\n    <div id=\"gb22-2\" class=\"box box-def\">\n      <div class=\"box-label\">Kernel buono vs cattivo · SVM vs Reti Neurali</div>\n      <p><strong>Buono</strong>: raggruppa stessa classe; <strong>cattivo</strong>: similarità irrilevante. Nelle SVM le basi sono <strong>fissate</strong> (ricerca: kernel adattivi); nelle NN si <strong>adattano ai dati</strong>.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "action": "show",
           "target": "#s1",
           "anchor": "si parla di kernelizzazione",
-          "at": 6.36
+          "at": 3.58
         },
         {
           "action": "show",
@@ -1003,16 +1298,35 @@
           "at": 25.03
         },
         {
+          "at": 25.13,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.26
+        },
+        {
           "action": "highlight",
           "target": "#f-dk",
           "anchor": "k di s virgola s meno due k di s virgola t",
-          "at": 35.51
+          "at": 35.51,
+          "duration": 12.43
         },
         {
           "action": "show",
           "target": "#s3",
           "anchor": "L'idea dei kernel è concentrarsi",
           "at": 48.09
+        },
+        {
+          "at": 48.16,
+          "action": "highlight",
+          "target": "#gb22-1",
+          "duration": 27.16
+        },
+        {
+          "at": 75.42,
+          "action": "highlight",
+          "target": "#gb22-2",
+          "duration": 14.02
         }
       ],
       "duration_sec": 89.74,
@@ -1033,10 +1347,22 @@
           "at": 6.94
         },
         {
+          "at": 7.02,
+          "action": "highlight",
+          "target": "#k1",
+          "duration": 14.75
+        },
+        {
           "action": "show",
           "target": "#k2",
           "anchor": "Due: nel duale",
           "at": 21.94
+        },
+        {
+          "at": 22.02,
+          "action": "highlight",
+          "target": "#k2",
+          "duration": 13.74
         },
         {
           "action": "show",
@@ -1045,10 +1371,22 @@
           "at": 35.93
         },
         {
+          "at": 36.01,
+          "action": "highlight",
+          "target": "#k3",
+          "duration": 12.85
+        },
+        {
           "action": "show",
           "target": "#k4",
           "anchor": "Quattro: nel soft margin",
           "at": 49.03
+        },
+        {
+          "at": 49.11,
+          "action": "highlight",
+          "target": "#k4",
+          "duration": 11.65
         },
         {
           "action": "show",
@@ -1057,16 +1395,34 @@
           "at": 60.93
         },
         {
+          "at": 61.01,
+          "action": "highlight",
+          "target": "#k5",
+          "duration": 12.81
+        },
+        {
           "action": "show",
           "target": "#k6",
           "anchor": "Sei: nella regressione",
           "at": 73.99
         },
         {
+          "at": 74.07,
+          "action": "highlight",
+          "target": "#k6",
+          "duration": 9.06
+        },
+        {
           "action": "show",
           "target": "#k7",
           "anchor": "Sette: C e i parametri",
           "at": 83.3
+        },
+        {
+          "at": 83.38,
+          "action": "highlight",
+          "target": "#k7",
+          "duration": 13.82
         },
         {
           "action": "show",

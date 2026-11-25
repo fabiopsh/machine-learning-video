@@ -30,7 +30,8 @@
           "at": 14.86,
           "action": "highlight",
           "target": "#svg-in",
-          "anchor": "Lo strato di input"
+          "anchor": "Lo strato di input",
+          "duration": 8.95
         },
         {
           "at": 23.96,
@@ -42,7 +43,8 @@
           "at": 27.88,
           "action": "highlight",
           "target": "#svg-wji, #svg-hid",
-          "anchor": "pesi w con j i"
+          "anchor": "pesi w con j i",
+          "duration": 4
         },
         {
           "at": 32.03,
@@ -54,7 +56,8 @@
           "at": 34.79,
           "action": "highlight",
           "target": "#svg-wkj, #svg-out",
-          "anchor": "pesi w con k j"
+          "anchor": "pesi w con k j",
+          "duration": 5.19
         },
         {
           "at": 40.13,
@@ -63,22 +66,36 @@
           "anchor": "Seconda vista"
         },
         {
+          "at": 40.23,
+          "action": "highlight",
+          "target": "#s-eq",
+          "duration": 5.36
+        },
+        {
           "at": 45.71,
           "action": "highlight",
           "target": "#f-inner",
-          "anchor": "Internamente ogni unità nascosta"
+          "anchor": "Internamente ogni unità nascosta",
+          "duration": 9.69
         },
         {
           "at": 55.55,
           "action": "highlight",
           "target": "#f-outer",
-          "anchor": "Esternamente l'unità di uscita"
+          "anchor": "Esternamente l'unità di uscita",
+          "duration": 8.01
         },
         {
           "at": 63.71,
           "action": "show",
           "target": "#s-tri",
           "anchor": "tre elementi"
+        },
+        {
+          "at": 63.81,
+          "action": "highlight",
+          "target": "#s-tri",
+          "duration": 4.85
         }
       ],
       "duration_sec": 69.01
@@ -93,7 +110,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.1.1 – 11.1.2 · Notazione e calcolo in avanti</div>\n  <h2 class=\"slide-title\">Notazione uniforme e flusso feedforward</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\net_{\\htmlId{f-t}{t}}(\\x) = \\sum_{\\htmlId{f-u}{u}} \\htmlId{f-wtu}{w_{tu}}\\,\\htmlId{f-ou}{o_u}, \\qquad o_t(\\x) = f_t\\big(\\net_t(\\x)\\big)\\]\n    <p class=\"math-note\">Valida per ogni unità \\(t\\) (nascosta \\(j\\) o uscita \\(k\\)) e sorgente \\(u\\) (input \\(i\\) o nascosta \\(j\\)).</p>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"c-in\" class=\"gate-card\">\n      <div class=\"gate-name\">Input → Nascosta</div>\n      <div class=\"gate-params\">\\(w_{ji}\\) con \\(o_i = x_i\\)</div>\n      <p class=\"gate-desc\">\\(o_j = f_j\\big(\\sum_i w_{ji} x_i\\big)\\)</p>\n    </div>\n    <div id=\"c-out\" class=\"gate-card\">\n      <div class=\"gate-name\">Nascosta → Uscita</div>\n      <div class=\"gate-params\">\\(w_{kj}\\) con ingresso \\(o_j\\)</div>\n      <p class=\"gate-desc\">\\(o_k = f_k\\big(\\sum_j w_{kj} o_j\\big)\\)</p>\n    </div>\n    <div id=\"c-bias\" class=\"gate-card\">\n      <div class=\"gate-name\">Bias di ogni unità</div>\n      <div class=\"gate-params\">\\(w_{t0}\\) con \\(o_0 = 1\\)</div>\n      <p class=\"gate-desc\">Trattato come un peso ordinario.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"flow-chain cue-hidden\">\n    <div id=\"ff1\" class=\"flow-node\"><strong>1. Input \\(\\x\\)</strong><span>carica pattern</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"ff2\" class=\"flow-node\"><strong>2. Nascosti</strong><span>strato per strato</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"ff3\" class=\"flow-node\"><strong>3. Uscita \\(h(\\x)\\)</strong><span>risposta rete</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"ff4\" class=\"flow-node flow-node-accent\"><strong>4. Errore \\(\\delta\\)</strong><span>confronto con \\(\\dd\\)</span></div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.66,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "notazione uniforme"
@@ -102,7 +119,8 @@
           "at": 15.26,
           "action": "highlight",
           "target": "#f-u, #f-wtu, #f-ou",
-          "anchor": "somma su u di w con t u"
+          "anchor": "somma su u di w con t u",
+          "duration": 7.95
         },
         {
           "at": 23.36,
@@ -114,19 +132,22 @@
           "at": 28.26,
           "action": "highlight",
           "target": "#c-in",
-          "anchor": "pesi w con j i"
+          "anchor": "pesi w con j i",
+          "duration": 4.37
         },
         {
           "at": 32.78,
           "action": "highlight",
           "target": "#c-out",
-          "anchor": "pesi w con k j"
+          "anchor": "pesi w con k j",
+          "duration": 3.37
         },
         {
           "at": 36.3,
           "action": "highlight",
           "target": "#c-bias",
-          "anchor": "bias w con t zero"
+          "anchor": "bias w con t zero",
+          "duration": 4.62
         },
         {
           "at": 41.07,
@@ -138,25 +159,29 @@
           "at": 46.87,
           "action": "highlight",
           "target": "#ff1",
-          "anchor": "carica il pattern"
+          "anchor": "carica il pattern",
+          "duration": 2.51
         },
         {
           "at": 49.53,
           "action": "highlight",
           "target": "#ff2",
-          "anchor": "strati nascosti"
+          "anchor": "strati nascosti",
+          "duration": 2.35
         },
         {
           "at": 52.03,
           "action": "highlight",
           "target": "#ff3",
-          "anchor": "strato di uscita"
+          "anchor": "strato di uscita",
+          "duration": 2.03
         },
         {
           "at": 54.21,
           "action": "highlight",
           "target": "#ff4",
-          "anchor": "infine l'errore"
+          "anchor": "infine l'errore",
+          "duration": 6.51
         }
       ],
       "duration_sec": 60.92
@@ -171,7 +196,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.2.1 – 11.2.2 · Espansione in basi adattiva</div>\n  <h2 class=\"slide-title\">Dalla LBE fissa alle basi adattive dell'MLP</h2>\n  <div id=\"s1\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Scelta dello strato di uscita:</span>\n    <span class=\"pill\">Sigmoidale → <strong>Classificazione</strong></span>\n    <span class=\"pill\">Lineare → <strong>Regressione</strong></span>\n    <span class=\"pill pill-accent\">Multi-uscita → Multi-classe (es. \\(0{,}2;\\, 0{,}7;\\, 0{,}1\\))</span>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">LBE classica (basi fissate)</div>\n      <p>\\[h(\\x) = f\\!\\left(\\sum_j w_j\\,\\htmlId{f-lbe}{\\phi_j(\\x)}\\right)\\]</p>\n      <p>Le \\(\\phi_j\\) sono scelte <strong>a priori</strong>: modello <strong>lineare nei parametri</strong>.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Rete neurale (basi adattive)</div>\n      <p>\\[h(\\x) = f_k\\!\\left(\\sum_j w_{kj}\\,\\htmlId{f-nn}{\\phi_j(\\x, \\w)}\\right)\\]</p>\n      <p>Con \\(\\phi_j(\\x, \\w) = f_j(\\sum_i w_{ji} x_i)\\): le basi <strong>si apprendono dai dati</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea chiave — Basi adattive</div>\n    <p>Ogni unità nascosta calcola una <strong>feature derivata non lineare</strong> appresa dai dati: lo strato nascosto costruisce la <strong>rappresentazione interna</strong> estraendo statistiche di ordine superiore utili per il task.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 7.0,
+          "at": 4.2,
           "action": "show",
           "target": "#s1",
           "anchor": "Cambiando lo strato di uscita"
@@ -183,10 +208,17 @@
           "anchor": "Linear Basis Expansion classica"
         },
         {
+          "at": 33.19,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 1.98
+        },
+        {
           "at": 35.29,
           "action": "highlight",
           "target": "#f-lbe",
-          "anchor": "basi fi con j di x sono fissate"
+          "anchor": "basi fi con j di x sono fissate",
+          "duration": 5.67
         },
         {
           "at": 41.11,
@@ -195,16 +227,29 @@
           "anchor": "In una rete neurale, invece"
         },
         {
+          "at": 41.21,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 2.54
+        },
+        {
           "at": 43.87,
           "action": "highlight",
           "target": "#f-nn",
-          "anchor": "dipendono dai pesi w"
+          "anchor": "dipendono dai pesi w",
+          "duration": 6.39
         },
         {
           "at": 50.41,
           "action": "show",
           "target": "#s4",
           "anchor": "nuova feature non lineare"
+        },
+        {
+          "at": 50.51,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 6.93
         }
       ],
       "duration_sec": 57.79
@@ -231,22 +276,41 @@
           "anchor": "Scriviamo h di x"
         },
         {
+          "at": 17.5,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 7.7
+        },
+        {
           "at": 25.4,
           "action": "show",
           "target": "#s3",
           "anchor": "Scambiando l'ordine"
         },
         {
+          "at": 25.5,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 4.75
+        },
+        {
           "at": 30.37,
           "action": "highlight",
           "target": "#f-collapse, #f-wprime",
-          "anchor": "singolo coefficiente w primo"
+          "anchor": "singolo coefficiente w primo",
+          "duration": 16.21
         },
         {
           "at": 46.73,
           "action": "show",
           "target": "#s4",
           "anchor": "ha un prezzo preciso"
+        },
+        {
+          "at": 46.83,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 7.08
         }
       ],
       "duration_sec": 54.26
@@ -258,7 +322,7 @@
       "audio_file": "audio/scene-05.wav",
       "subtitle_file": "subtitles/scene-05.json",
       "tts_text": "Quanto è espressivo un MLP? Il teorema di approssimazione universale afferma che una rete con un solo strato nascosto di unità logistiche e uscita lineare può approssimare arbitrariamente bene qualsiasi funzione continua su un ipercubo, purché disponga di abbastanza unità nascoste. [pause:0.9] Attenzione però: è un teorema di esistenza. Non ci dice né l'algoritmo per trovare i pesi, né quante unità servano. Inoltre esistono funzioni che con un solo strato richiederebbero un numero esponenziale di unità, mentre con più strati ne bastano molte meno. [pause:0.9] Quanto alla VC-dimension, dipende dal numero di parametri ma anche dal valore dei pesi: con pesi nulli o piccoli le sigmoidi lavorano nella zona lineare e la VC-dimension è bassa; man mano che i pesi crescono durante il training, cresce anche la VC-dimension effettiva. La rete è uno spazio delle ipotesi di dimensione variabile, principio alla base dell'early stopping. [pause:0.8] Infine, il bias induttivo della backpropagation è la smoothness: piccole variazioni dell'input producono piccole variazioni dell'uscita.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.2.3 – 11.2.5 · Teoria dell'espressività</div>\n  <h2 class=\"slide-title\">Approssimazione universale, VC-dimension e smoothness</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Approssimazione universale</div>\n    <p>Un MLP con <strong>un solo strato nascosto</strong> (logistico) e uscita lineare approssima arbitrariamente bene ogni funzione continua \\(f\\) su un ipercubo: per ogni \\(\\eps \\gt 0\\) esiste \\(h\\) con \\(\\abs{f(\\x) - h(\\x)} \\lt \\eps\\), purché con abbastanza unità nascoste.</p>\n  </div>\n  <div id=\"s2\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Teorema di esistenza</div>\n    <p>Non fornisce né l'<strong>algoritmo</strong> né il <strong>numero di unità</strong> (che con un solo strato può essere esponenziale rispetto a reti più profonde).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">VC-dimension variabile durante il training</div>\n      <ul class=\"clean-list\">\n        <li><strong>Pesi nulli / piccoli</strong>: zona lineare → VC-dim bassa.</li>\n        <li><strong>Pesi grandi</strong>: non linearità piena → VC-dim alta.</li>\n        <li>Spazio di <strong>dimensione variabile</strong> (base dell'<em>early stopping</em>).</li>\n      </ul>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Bias induttivo: Smoothness</div>\n      <p>Piccole variazioni dell'input producono <strong>piccole variazioni dell'output</strong> (funzioni localmente lisce; altrimenti generalizzare è impossibile).</p>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.2.3 – 11.2.5 · Teoria dell'espressività</div>\n  <h2 class=\"slide-title\">Approssimazione universale, VC-dimension e smoothness</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Approssimazione universale</div>\n    <p>Un MLP con <strong>un solo strato nascosto</strong> (logistico) e uscita lineare approssima arbitrariamente bene ogni funzione continua \\(f\\) su un ipercubo: per ogni \\(\\eps \\gt 0\\) esiste \\(h\\) con \\(\\abs{f(\\x) - h(\\x)} \\lt \\eps\\), purché con abbastanza unità nascoste.</p>\n  </div>\n  <div id=\"s2\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Teorema di esistenza</div>\n    <p>Non fornisce né l'<strong>algoritmo</strong> né il <strong>numero di unità</strong> (che con un solo strato può essere esponenziale rispetto a reti più profonde).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">VC-dimension variabile durante il training</div>\n      <ul class=\"clean-list\">\n        <li id=\"li5-1\"><strong>Pesi nulli / piccoli</strong>: zona lineare → VC-dim bassa.</li>\n        <li id=\"li5-2\"><strong>Pesi grandi</strong>: non linearità piena → VC-dim alta.</li>\n        <li id=\"li5-3\">Spazio di <strong>dimensione variabile</strong> (base dell'<em>early stopping</em>).</li>\n      </ul>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Bias induttivo: Smoothness</div>\n      <p>Piccole variazioni dell'input producono <strong>piccole variazioni dell'output</strong> (funzioni localmente lisce; altrimenti generalizzare è impossibile).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "at": 2.8,
@@ -273,16 +337,46 @@
           "anchor": "Attenzione però: è un teorema di esistenza"
         },
         {
+          "at": 18.64,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 15.03
+        },
+        {
           "at": 33.87,
           "action": "show",
           "target": "#s3",
           "anchor": "Quanto alla VC-dimension"
         },
         {
+          "at": 39.34,
+          "action": "highlight",
+          "target": "#li5-1",
+          "duration": 5.3
+        },
+        {
+          "at": 44.76,
+          "action": "highlight",
+          "target": "#li5-2",
+          "duration": 6.6
+        },
+        {
+          "at": 51.46,
+          "action": "highlight",
+          "target": "#li5-3",
+          "duration": 6.92
+        },
+        {
           "at": 58.53,
           "action": "show",
           "target": "#s4",
           "anchor": "bias induttivo della backpropagation"
+        },
+        {
+          "at": 58.63,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 7.88
         }
       ],
       "duration_sec": 66.86
@@ -309,6 +403,12 @@
           "anchor": "loading problem"
         },
         {
+          "at": 25.95,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 31.25
+        },
+        {
           "at": 38.21,
           "action": "show",
           "target": "#s3",
@@ -318,7 +418,8 @@
           "at": 57.32,
           "action": "highlight",
           "target": "#p-eff",
-          "anchor": "lineare nel numero dei pesi"
+          "anchor": "lineare nel numero dei pesi",
+          "duration": 5.35
         }
       ],
       "duration_sec": 62.87
@@ -333,7 +434,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.1 · Impostazione della backpropagation</div>\n  <h2 class=\"slide-title\">Errore totale e superficie non convessa</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s3\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Attenzione — Come studiare la derivazione</div>\n        <p>Saperla <strong>rifare</strong> (non memorizzare), così da adattarla a loss, attivazioni o architetture diverse.</p>\n      </div>\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        \\[E_{\\mathrm{tot}} = \\sum_p E_p, \\qquad E_p = \\htmlId{f-half}{\\frac{1}{2}}\\sum_{k=1}^{K} (d_k - o_k)^2\\]\n        <p class=\"math-note\">Indice \\(p\\) omesso nel seguito; il fattore \\(\\tfrac{1}{2}\\) semplifica la derivata.</p>\n      </div>\n      <div id=\"s2\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione — Generalized Delta Rule</div>\n        <p>Calcolare per ogni peso \\(w\\) della rete \\(\\partial E_{\\mathrm{tot}} / \\partial w\\), stimando il contributo delle unità nascoste all'errore in uscita.</p>\n      </div>\n    </div>\n    <div id=\"s4\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 390 215\" class=\"diagram-svg\" aria-label=\"Superficie d'errore non convessa con più minimi locali\">\n        <line x1=\"30\" y1=\"182\" x2=\"372\" y2=\"182\" class=\"svg-axis\"/>\n        <line x1=\"35\" y1=\"186\" x2=\"35\" y2=\"16\" class=\"svg-axis\"/>\n        <path d=\"M 35.0,11.5 L 37.7,13.6 L 40.5,15.8 L 43.2,18.1 L 46.0,20.4 L 48.8,22.8 L 51.5,25.3 L 54.2,28.0 L 57.0,30.8 L 59.8,33.8 L 62.5,37.0 L 65.2,40.5 L 68.0,44.1 L 70.8,48.0 L 73.5,52.1 L 76.2,56.5 L 79.0,61.0 L 81.8,65.8 L 84.5,70.7 L 87.2,75.8 L 90.0,80.9 L 92.8,86.1 L 95.5,91.1 L 98.2,96.0 L 101.0,100.7 L 103.8,105.1 L 106.5,109.1 L 109.2,112.7 L 112.0,115.7 L 114.8,118.2 L 117.5,120.1 L 120.3,121.4 L 123.0,122.0 L 125.7,122.0 L 128.5,121.4 L 131.2,120.3 L 134.0,118.7 L 136.8,116.7 L 139.5,114.4 L 142.2,111.8 L 145.0,109.1 L 147.8,106.5 L 150.5,103.8 L 153.2,101.4 L 156.0,99.2 L 158.8,97.3 L 161.5,95.9 L 164.2,94.9 L 167.0,94.3 L 169.8,94.3 L 172.5,94.7 L 175.2,95.6 L 178.0,96.9 L 180.8,98.6 L 183.5,100.6 L 186.2,102.7 L 189.0,105.1 L 191.8,107.4 L 194.5,109.8 L 197.2,112.1 L 200.0,114.3 L 202.8,116.3 L 205.5,118.3 L 208.2,120.1 L 211.0,121.8 L 213.8,123.5 L 216.5,125.2 L 219.2,127.0 L 222.0,128.9 L 224.8,130.9 L 227.5,133.1 L 230.2,135.4 L 233.0,137.8 L 235.7,140.4 L 238.5,142.9 L 241.2,145.4 L 244.0,147.6 L 246.8,149.7 L 249.5,151.3 L 252.2,152.4 L 255.0,153.0 L 257.8,152.9 L 260.5,152.1 L 263.2,150.6 L 266.0,148.3 L 268.8,145.3 L 271.5,141.6 L 274.2,137.3 L 277.0,132.4 L 279.8,127.0 L 282.5,121.2 L 285.2,115.2 L 288.0,109.0 L 290.8,102.7 L 293.5,96.4 L 296.2,90.3 L 299.0,84.3 L 301.7,78.5 L 304.5,73.0 L 307.2,67.9 L 310.0,63.0 L 312.8,58.5 L 315.5,54.4 L 318.2,50.5 L 321.0,47.0 L 323.8,43.7 L 326.5,40.7 L 329.2,37.9 L 332.0,35.3 L 334.8,32.9 L 337.5,30.6 L 340.2,28.4 L 343.0,26.3 L 345.8,24.3 L 348.5,22.3 L 351.2,20.4 L 354.0,18.4 L 356.8,16.5 L 359.5,14.6 L 362.2,12.7 L 365.0,10.8\" class=\"svg-curve-blue\"/>\n        <circle cx=\"124.3\" cy=\"122.0\" r=\"4.5\" fill=\"#D9822B\"/>\n        <text x=\"124.3\" y=\"110\" text-anchor=\"middle\" class=\"svg-caption\">minimo locale</text>\n        <circle cx=\"255.5\" cy=\"153.0\" r=\"5\" fill=\"#C0392B\"/>\n        <text x=\"255.5\" y=\"170\" text-anchor=\"middle\" class=\"svg-caption svg-red\">minimo più profondo</text>\n        <text x=\"200\" y=\"203\" text-anchor=\"middle\" class=\"svg-caption\">spazio dei pesi w</text>\n        <text x=\"16\" y=\"100\" transform=\"rotate(-90 16 100)\" text-anchor=\"middle\" class=\"svg-caption\">E(w)</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.2,
+          "at": 3.56,
           "action": "show",
           "target": "#s3",
           "anchor": "non va imparata a memoria"
@@ -345,16 +446,29 @@
           "anchor": "errore totale E tot"
         },
         {
+          "at": 23.46,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 15.27
+        },
+        {
           "at": 38.85,
           "action": "highlight",
           "target": "#f-half",
-          "anchor": "fattore un mezzo"
+          "anchor": "fattore un mezzo",
+          "duration": 5.93
         },
         {
           "at": 44.93,
           "action": "show",
           "target": "#s2",
           "anchor": "regola delta generalizzata"
+        },
+        {
+          "at": 45.03,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.44
         },
         {
           "at": 55.67,
@@ -375,7 +489,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.1 · Schema iterativo</div>\n  <h2 class=\"slide-title\">Backpropagation (gradiente) contro regola di aggiornamento</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo — Backpropagation (schema iterativo)</div>\n    <p style=\"margin-bottom:8px;\">Inizializzare \\(\\w\\) e \\(\\eta\\); calcolare uscite ed \\(E_{\\mathrm{tot}}\\). Finché \\(E_{\\mathrm{tot}} \\gt \\epsilon\\) (o altro criterio di arresto):</p>\n    <ol class=\"algo-list\">\n      <li id=\"a1\"><strong>Passo 1 (calcolo del gradiente — Backpropagation)</strong>: \\(\\Delta w = -\\dfrac{\\partial E_{\\mathrm{tot}}}{\\partial w} = \\sum_p \\Delta_p w\\)</li>\n      <li id=\"a2\"><strong>Passo 2 (regola di aggiornamento)</strong>: \\(w_{\\mathit{new}} = w + \\eta\\,\\Delta w\\ (+\\text{ momentum, weight decay, ecc.})\\)</li>\n      <li id=\"a3\"><strong>Passo 3</strong>: ricalcolare tutte le uscite ed \\(E_{\\mathrm{tot}}\\).</li>\n    </ol>\n  </div>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    \\[\\Delta w = -\\frac{\\partial E_{\\mathrm{tot}}}{\\partial w} = -\\sum_p \\frac{\\partial E_p}{\\partial w} \\;\\overset{\\mathrm{def}}{=}\\; \\sum_p \\htmlId{f-dpw}{\\Delta_p w}\\]\n    <p class=\"math-note\">Per linearità della derivata, basta sapere calcolare \\(\\Delta_p w\\) per un singolo esempio \\(p\\).</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.69,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "inizializzano i pesi"
@@ -384,7 +498,8 @@
           "at": 14.36,
           "action": "highlight",
           "target": "#a1",
-          "anchor": "Passo uno: per ogni peso"
+          "anchor": "Passo uno: per ogni peso",
+          "duration": 9.21
         },
         {
           "at": 23.72,
@@ -393,22 +508,31 @@
           "anchor": "somma sui singoli esempi"
         },
         {
+          "at": 23.82,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 3.56
+        },
+        {
           "at": 27.5,
           "action": "highlight",
           "target": "#f-dpw",
-          "anchor": "calcolo del gradiente"
+          "anchor": "calcolo del gradiente",
+          "duration": 4.21
         },
         {
           "at": 31.86,
           "action": "highlight",
           "target": "#a2",
-          "anchor": "Passo due: si aggiornano"
+          "anchor": "Passo due: si aggiornano",
+          "duration": 16.15
         },
         {
           "at": 48.16,
           "action": "highlight",
           "target": "#a3",
-          "anchor": "Passo tre: si ricalcolano"
+          "anchor": "Passo tre: si ricalcolano",
+          "duration": 3.69
         }
       ],
       "duration_sec": 52.05
@@ -426,10 +550,11 @@
           "at": 1.66,
           "action": "highlight",
           "target": "#f-h-t, #f-h-u",
-          "anchor": "peso generico w con t u"
+          "anchor": "peso generico w con t u",
+          "duration": 2.07
         },
         {
-          "at": 16.88,
+          "at": 3.88,
           "action": "show",
           "target": "#s1",
           "anchor": "regola della catena passando per"
@@ -438,19 +563,22 @@
           "at": 22.7,
           "action": "highlight",
           "target": "#f-dt",
-          "anchor": "Il primo fattore è meno"
+          "anchor": "Il primo fattore è meno",
+          "duration": 8.69
         },
         {
           "at": 31.54,
           "action": "highlight",
           "target": "#f-ou",
-          "anchor": "Il secondo fattore è la derivata"
+          "anchor": "Il secondo fattore è la derivata",
+          "duration": 18
         },
         {
           "at": 51.71,
           "action": "highlight",
           "target": "#f-prod",
-          "anchor": "semplicemente delta con t per o con u"
+          "anchor": "semplicemente delta con t per o con u",
+          "duration": 3.09
         },
         {
           "at": 54.95,
@@ -459,16 +587,24 @@
           "anchor": "Espandendo ora delta con t"
         },
         {
+          "at": 55.05,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 6.28
+        },
+        {
           "at": 61.45,
           "action": "highlight",
           "target": "#f-deo, #f-deo2",
-          "anchor": "meno la derivata di E con p rispetto a o"
+          "anchor": "meno la derivata di E con p rispetto a o",
+          "duration": 3.61
         },
         {
           "at": 65.21,
           "action": "highlight",
           "target": "#f-fp, #f-fp2",
-          "anchor": "f primo con t di net con t"
+          "anchor": "f primo con t di net con t",
+          "duration": 5.51
         }
       ],
       "duration_sec": 70.92
@@ -483,7 +619,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.2 · Derivazione — Caso 1</div>\n  <h2 class=\"slide-title\">Unità di uscita (\\(t = k\\)): errore direttamente misurabile</h2>\n  <div class=\"proof-steps\">\n    <div id=\"s1\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag step-tag-blue\">Derivata diretta su \\(E_p\\)</span>\n      <div>\n        \\[\\begin{aligned} -\\frac{\\partial E_p}{\\partial o_k} &= -\\frac{\\partial}{\\partial o_k}\\left(\\frac{1}{2}\\sum_{r=1}^{K}(d_r - o_r)^2\\right) \\\\ &= -\\frac{1}{2}\\cdot 2\\,(d_k - o_k)\\cdot(-1) = \\htmlId{f-dkok}{(d_k - o_k)} \\end{aligned}\\]\n        <p class=\"math-note\">Nella somma sopravvive solo il termine con \\(r = k\\).</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Delta di uscita</span>\n      <div>\n        \\[\\boxed{\\;\\htmlId{f-deltak}{\\delta_k = (d_k - o_k)\\,f'_k(\\net_k)}\\;}\\]\n        <p class=\"math-note\">Coincide con il delta della singola unità sigmoidale (Capitolo 10): qui il target \\(d_k\\) è noto.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.39,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "l'uscita o con k compare direttamente"
@@ -492,7 +628,8 @@
           "at": 35.61,
           "action": "highlight",
           "target": "#f-dkok",
-          "anchor": "lasciando esattamente d con k meno o con k"
+          "anchor": "lasciando esattamente d con k meno o con k",
+          "duration": 3.43
         },
         {
           "at": 39.19,
@@ -501,10 +638,17 @@
           "anchor": "Sostituendo nella formula di delta"
         },
         {
+          "at": 39.29,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 2.38
+        },
+        {
           "at": 41.79,
           "action": "highlight",
           "target": "#f-deltak",
-          "anchor": "delta con k uguale a d con k"
+          "anchor": "delta con k uguale a d con k",
+          "duration": 16.6
         }
       ],
       "duration_sec": 58.59
@@ -528,7 +672,8 @@
           "at": 14.28,
           "action": "highlight",
           "target": "#svg-fw, #svg-ks",
-          "anchor": "attraverso tutte le unità di uscita"
+          "anchor": "attraverso tutte le unità di uscita",
+          "duration": 9.09
         },
         {
           "at": 23.52,
@@ -537,16 +682,24 @@
           "anchor": "regola della catena multivariata"
         },
         {
+          "at": 23.62,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 17.65
+        },
+        {
           "at": 41.39,
           "action": "highlight",
           "target": "#f-dk2",
-          "anchor": "già stato calcolato"
+          "anchor": "già stato calcolato",
+          "duration": 7.63
         },
         {
           "at": 49.17,
           "action": "highlight",
           "target": "#f-wkj2, #svg-fw",
-          "anchor": "esattamente il peso w con k j"
+          "anchor": "esattamente il peso w con k j",
+          "duration": 4.23
         },
         {
           "at": 53.55,
@@ -555,10 +708,17 @@
           "anchor": "formula del delta nascosto"
         },
         {
+          "at": 53.65,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 1.8
+        },
+        {
           "at": 55.57,
           "action": "highlight",
           "target": "#f-deltaj",
-          "anchor": "delta con j è la somma"
+          "anchor": "delta con j è la somma",
+          "duration": 12.05
         },
         {
           "at": 67.77,
@@ -570,7 +730,8 @@
           "at": 67.77,
           "action": "highlight",
           "target": "#svg-back, #svg-j",
-          "anchor": "risalgono la rete all'indietro"
+          "anchor": "risalgono la rete all'indietro",
+          "duration": 8.23
         }
       ],
       "duration_sec": 76.2
@@ -594,13 +755,15 @@
           "at": 13.37,
           "action": "highlight",
           "target": "#r-out",
-          "anchor": "pesi verso l'uscita"
+          "anchor": "pesi verso l'uscita",
+          "duration": 8.65
         },
         {
           "at": 22.17,
           "action": "highlight",
           "target": "#r-hid",
-          "anchor": "pesi verso lo strato nascosto"
+          "anchor": "pesi verso lo strato nascosto",
+          "duration": 12.34
         },
         {
           "at": 34.66,
@@ -609,10 +772,22 @@
           "anchor": "qualsiasi numero di strati nascosti"
         },
         {
+          "at": 34.76,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 13.08
+        },
+        {
           "at": 48.04,
           "action": "show",
           "target": "#s3",
           "anchor": "ciclo completo procede"
+        },
+        {
+          "at": 48.14,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 14.26
         },
         {
           "at": 62.6,
@@ -621,10 +796,17 @@
           "anchor": "non dimenticare i bias"
         },
         {
+          "at": 62.7,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 7.48
+        },
+        {
           "at": 70.3,
           "action": "highlight",
           "target": "#f-bias",
-          "anchor": "semplicemente delta con t"
+          "anchor": "semplicemente delta con t",
+          "duration": 1.53
         }
       ],
       "duration_sec": 72.03
@@ -639,7 +821,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4.4 · Proprietà e interpretazione</div>\n  <h2 class=\"slide-title\">Calcoli locali, costo \\(O(\\#W)\\) e terminologia</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Località e diffusione</div>\n      <p>Ogni unità usa solo dati locali dei vicini (genitori/figli), ma l'aggiornamento di ogni \\(w_{tu}\\) ha un <strong>effetto globale</strong> sull'errore.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Fattorizzazione dei delta: \\(O(\\#W)\\)</div>\n      <p>\\(\\delta_t\\) si calcola <strong>una sola volta</strong> e si riusa per tutti i pesi \\(w_{tu}\\). Con \\(10^9\\) pesi: \\(10^9\\) operazioni invece di \\(10^{18}\\).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Tre livelli di lettura</div>\n    <p><strong>1.</strong> I singoli passaggi matematici · <strong>2.</strong> Le derivate parziali come variazioni locali · <strong>3.</strong> Il quadro generale: scomporre l'errore <em>sulla rete</em>.</p>\n  </div>\n  <div id=\"s4\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Terminologia</div>\n    <p>Non si dice «rete backprop»: la <strong>rete neurale</strong> è il modello, la <strong>backpropagation</strong> è l'algoritmo di addestramento basato sul gradiente.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.46,
+          "at": 3.08,
           "action": "show",
           "target": "#s1",
           "anchor": "Primo, calcoli solo locali"
@@ -654,7 +836,8 @@
           "at": 32.37,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "un miliardo di pesi"
+          "anchor": "un miliardo di pesi",
+          "duration": 8.17
         },
         {
           "at": 40.69,
@@ -663,10 +846,22 @@
           "anchor": "tre livelli"
         },
         {
+          "at": 40.79,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 11.66
+        },
+        {
           "at": 52.65,
           "action": "show",
           "target": "#s4",
           "anchor": "nota di terminologia"
+        },
+        {
+          "at": 52.75,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 9.25
         }
       ],
       "duration_sec": 62.35
@@ -687,10 +882,17 @@
           "anchor": "Fase forward"
         },
         {
+          "at": 23.7,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 1.4
+        },
+        {
           "at": 25.22,
           "action": "highlight",
           "target": "#ex-j, #ex-k",
-          "anchor": "L'input netto di j"
+          "anchor": "L'input netto di j",
+          "duration": 10.46
         },
         {
           "at": 35.83,
@@ -705,16 +907,24 @@
           "anchor": "Fase backward"
         },
         {
+          "at": 40.27,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 4.52
+        },
+        {
           "at": 44.91,
           "action": "highlight",
           "target": "#f-ex-dk, #ex-k",
-          "anchor": "delta con k è uno meno"
+          "anchor": "delta con k è uno meno",
+          "duration": 6.85
         },
         {
           "at": 51.91,
           "action": "highlight",
           "target": "#f-ex-dj, #ex-j",
-          "anchor": "Retropropagando su j"
+          "anchor": "Retropropagando su j",
+          "duration": 12.25
         },
         {
           "at": 64.31,
@@ -723,10 +933,17 @@
           "anchor": "Aggiornamenti finali"
         },
         {
+          "at": 64.41,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 11.16
+        },
+        {
           "at": 75.69,
           "action": "highlight",
           "target": "#ex-e2, #ex-e1",
-          "anchor": "Entrambi i pesi crescono"
+          "anchor": "Entrambi i pesi crescono",
+          "duration": 3.81
         }
       ],
       "duration_sec": 79.7
@@ -747,10 +964,22 @@
           "anchor": "Primo: l'MLP compone"
         },
         {
+          "at": 3.72,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 10.14
+        },
+        {
           "at": 14.03,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: le unità nascoste"
+        },
+        {
+          "at": 14.11,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.95
         },
         {
           "at": 26.23,
@@ -759,13 +988,25 @@
           "anchor": "Terzo: la VC-dimension"
         },
         {
+          "at": 26.31,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.21
+        },
+        {
           "at": 34.69,
           "action": "show",
           "target": "#s4",
           "anchor": "Quarto: la backpropagation"
         },
         {
-          "at": 46.0,
+          "at": 34.77,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 16.72
+        },
+        {
+          "at": 46,
           "action": "show",
           "target": "#s5",
           "anchor": "prossimo capitolo"

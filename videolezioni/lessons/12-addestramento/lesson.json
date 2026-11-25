@@ -21,7 +21,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.1 · L'addestramento come percorso</div>\n  <h2 class=\"slide-title\">Controllare la ricerca nello spazio dei pesi</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Interpretazione chiave</div>\n    <p>La backpropagation traccia un <strong>percorso nello spazio dei pesi</strong> sulla superficie della loss: è un vero <strong>controllo della ricerca</strong> nello spazio delle ipotesi.</p>\n  </div>\n  <div id=\"s2\" class=\"flow-chain cue-hidden\">\n    <div id=\"f1\" class=\"flow-node\"><strong>Punto di partenza</strong><span>pesi iniziali \\(\\w(0)\\)</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"f2\" class=\"flow-node\"><strong>Velocità e passo</strong><span>batch, \\(\\eta\\), momentum</span></div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"f3\" class=\"flow-node flow-node-accent\"><strong>Punto finale</strong><span>arresto e regolarizzazione</span></div>\n  </div>\n  <div id=\"s3\" class=\"grid-2\">\n    <div id=\"s3a\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Perché servono gli iperparametri</div>\n      <p>Modello spesso <strong>sovra-parametrizzato</strong>, ottimizzazione <strong>non convessa</strong> e potenzialmente instabile.</p>\n    </div>\n    <div id=\"s3b\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Metodo rigoroso vs regole empiriche</div>\n      <p>Le tecniche marcate <strong>(!)</strong> vanno usate sempre in pratica; evitare euristiche trovate in rete prive di fondamento o verifica sperimentale.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 14.3,
+          "at": 4.36,
           "action": "show",
           "target": "#s1",
           "anchor": "percorso nello spazio dei pesi"
@@ -36,19 +36,22 @@
           "at": 23.8,
           "action": "highlight",
           "target": "#f1",
-          "anchor": "punto di partenza"
+          "anchor": "punto di partenza",
+          "duration": 3.05
         },
         {
-          "at": 27.0,
+          "at": 27,
           "action": "highlight",
           "target": "#f2",
-          "anchor": "velocità di convergenza"
+          "anchor": "velocità di convergenza",
+          "duration": 2.03
         },
         {
           "at": 29.18,
           "action": "highlight",
           "target": "#f3",
-          "anchor": "punto finale"
+          "anchor": "punto finale",
+          "duration": 7.48
         },
         {
           "at": 36.81,
@@ -57,10 +60,22 @@
           "anchor": "spesso sovra-parametrizzato"
         },
         {
+          "at": 36.91,
+          "action": "highlight",
+          "target": "#s3a",
+          "duration": 7.68
+        },
+        {
           "at": 44.79,
           "action": "show",
           "target": "#s3b",
           "anchor": "Nelle slide le tecniche"
+        },
+        {
+          "at": 44.89,
+          "action": "highlight",
+          "target": "#s3b",
+          "duration": 11.36
         }
       ],
       "duration_sec": 56.6
@@ -90,7 +105,8 @@
           "at": 15.07,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "Primo: pesi tutti nulli"
+          "anchor": "Primo: pesi tutti nulli",
+          "duration": 9.57
         },
         {
           "at": 24.79,
@@ -102,7 +118,8 @@
           "at": 24.79,
           "action": "highlight",
           "target": "#s3",
-          "anchor": "Secondo: pesi grandi"
+          "anchor": "Secondo: pesi grandi",
+          "duration": 7.37
         },
         {
           "at": 32.31,
@@ -114,7 +131,8 @@
           "at": 32.31,
           "action": "highlight",
           "target": "#s4",
-          "anchor": "Terzo: pesi tutti uguali"
+          "anchor": "Terzo: pesi tutti uguali",
+          "duration": 13.37
         },
         {
           "at": 45.83,
@@ -123,10 +141,17 @@
           "anchor": "base al fan-in"
         },
         {
+          "at": 45.93,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 11.97
+        },
+        {
           "at": 58.02,
           "action": "highlight",
           "target": "#f-glorot",
-          "anchor": "radice quadrata del fan-in"
+          "anchor": "radice quadrata del fan-in",
+          "duration": 3.53
         }
       ],
       "duration_sec": 61.75
@@ -141,7 +166,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.2.1 · Minimi multipli</div>\n  <h2 class=\"slide-title\">Più inizializzazioni e perché non cerchiamo il minimo globale</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">(!) Più inizializzazioni (multi-trial)</div>\n    <p>Provare <strong>5–10 o più configurazioni iniziali casuali</strong> e riportare <strong>media e varianza</strong> dei risultati (oppure combinarli in un <strong>comitato / ensemble</strong>).</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. L'obiettivo è \\(R\\), non \\(\\Remp\\)</div>\n      <p>Nel ML non cerchiamo né il minimo locale né quello globale di \\(\\Remp\\), ma il minimo del rischio vero \\(R\\) (spesso in un punto a gradiente non nullo).</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">2. Rischio di overtraining</div>\n      <p>Scendendo verso il minimo di training i pesi crescono, la <strong>VC-dimension effettiva</strong> aumenta e la rete va in overfitting: bisogna fermarsi <strong>prima</strong>.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 9.0,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "provare più inizializzazioni"
@@ -156,7 +181,8 @@
           "at": 39.21,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "Prima ragione"
+          "anchor": "Prima ragione",
+          "duration": 9.29
         },
         {
           "at": 48.65,
@@ -168,7 +194,8 @@
           "at": 48.65,
           "action": "highlight",
           "target": "#s3",
-          "anchor": "Seconda ragione"
+          "anchor": "Seconda ragione",
+          "duration": 11.44
         }
       ],
       "duration_sec": 60.29
@@ -183,7 +210,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.3 · On-line, batch e mini-batch</div>\n  <h2 class=\"slide-title\">Tre regimi di aggiornamento e ruolo dello shuffling</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\htmlId{f-batch}{\\text{Batch: } -\\frac{\\partial E}{\\partial w_{tu}} = \\sum_{p=1}^{l}\\delta_{p,t}\\,o_{p,u}}, \\qquad \\htmlId{f-online}{\\text{Online: } -\\frac{\\partial E_p}{\\partial w_{tu}} = \\delta_{p,t}\\,o_{p,u}}\\]\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 112\" class=\"diagram-svg\" aria-label=\"Epoca divisa in 4 mini-batch\">\n      <defs>\n        <marker id=\"arr-mb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n        </marker>\n      </defs>\n      <rect x=\"40\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <rect x=\"175\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <rect x=\"310\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <rect x=\"445\" y=\"42\" width=\"135\" height=\"36\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <text x=\"107\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₁</text>\n      <text x=\"242\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₂</text>\n      <text x=\"377\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₃</text>\n      <text x=\"512\" y=\"65\" text-anchor=\"middle\" class=\"svg-math-sm\">mb₄</text>\n      <line x1=\"175\" y1=\"38\" x2=\"175\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <line x1=\"310\" y1=\"38\" x2=\"310\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <line x1=\"445\" y1=\"38\" x2=\"445\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <line x1=\"580\" y1=\"38\" x2=\"580\" y2=\"16\" stroke=\"#C0392B\" stroke-width=\"1.8\" marker-end=\"url(#arr-mb)\"/>\n      <text x=\"175\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <text x=\"310\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <text x=\"445\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <text x=\"580\" y=\"11\" text-anchor=\"middle\" class=\"svg-tick svg-red\">update</text>\n      <path d=\"M 40,84 L 40,90 L 580,90 L 580,84\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.2\"/>\n      <text x=\"310\" y=\"106\" text-anchor=\"middle\" class=\"svg-caption\">un'epoca completa: tutti gli l esempi (con shuffling)</text>\n    </svg>\n  </div>\n  <div id=\"s3\" class=\"grid-3\">\n    <div id=\"c-batch\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Batch</div>\n      <p>Stima più accurata del gradiente, ma aspetta tutti gli \\(l\\) esempi a ogni passo.</p>\n    </div>\n    <div id=\"c-online\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">Online (SGD)</div>\n      <p>Niente parallelismo, più instabile, ma il rumore aiuta a sfuggire ai minimi locali. <strong>(!) Shuffling</strong> obbligatorio.</p>\n    </div>\n    <div id=\"c-mb\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Mini-batch (SGD)</div>\n      <p>Compromesso ideale: sfrutta la <strong>GPU</strong>, costo dipendente da \\(mb\\) (non da \\(l\\)), scala a milioni di esempi.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.08,
+          "at": 3.28,
           "action": "show",
           "target": "#s1, #c-batch",
           "anchor": "Nel batch sommiamo"
@@ -192,7 +219,8 @@
           "at": 5.08,
           "action": "highlight",
           "target": "#f-batch",
-          "anchor": "Nel batch sommiamo"
+          "anchor": "Nel batch sommiamo",
+          "duration": 11.83
         },
         {
           "at": 17.06,
@@ -204,13 +232,15 @@
           "at": 17.06,
           "action": "highlight",
           "target": "#f-online",
-          "anchor": "Nell'online aggiorniamo"
+          "anchor": "Nell'online aggiorniamo",
+          "duration": 16.04
         },
         {
           "at": 33.25,
           "action": "highlight",
           "target": "#c-online",
-          "anchor": "fare sempre shuffling"
+          "anchor": "fare sempre shuffling",
+          "duration": 7.05
         },
         {
           "at": 40.45,
@@ -223,6 +253,12 @@
           "action": "show",
           "target": "#c-mb",
           "anchor": "Sfrutta la memoria"
+        },
+        {
+          "at": 48.63,
+          "action": "highlight",
+          "target": "#c-mb",
+          "duration": 10.62
         }
       ],
       "duration_sec": 59.6
@@ -249,40 +285,57 @@
           "anchor": "guardare sempre la curva"
         },
         {
+          "at": 16.56,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 8.8
+        },
+        {
           "at": 25.48,
           "action": "highlight",
           "target": "#c-vh",
-          "anchor": "la curva viola diverge"
+          "anchor": "la curva viola diverge",
+          "duration": 2.67
         },
         {
           "at": 28.3,
           "action": "highlight",
           "target": "#c-vl",
-          "anchor": "la curva verde resta"
+          "anchor": "la curva verde resta",
+          "duration": 2.69
         },
         {
           "at": 31.14,
           "action": "highlight",
           "target": "#c-lo",
-          "anchor": "la curva blu scende"
+          "anchor": "la curva blu scende",
+          "duration": 3.1
         },
         {
           "at": 34.39,
           "action": "highlight",
           "target": "#c-hi",
-          "anchor": "la curva arancione"
+          "anchor": "la curva arancione",
+          "duration": 5.79
         },
         {
           "at": 40.33,
           "action": "highlight",
           "target": "#c-gd",
-          "anchor": "produce la curva rossa"
+          "anchor": "produce la curva rossa",
+          "duration": 6.91
         },
         {
           "at": 47.39,
           "action": "show",
           "target": "#s3",
           "anchor": "media dei gradienti"
+        },
+        {
+          "at": 47.49,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.67
         }
       ],
       "duration_sec": 56.51
@@ -294,10 +347,10 @@
       "audio_file": "audio/scene-06.wav",
       "subtitle_file": "subtitles/scene-06.json",
       "tts_text": "Una tecnica essenziale in pratica è il momentum, detto anche metodo della palla pesante. [pause:0.6] La variazione dei pesi delta w nuovo somma al passo del gradiente meno eta per il gradiente di E una frazione alfa dello spostamento precedente delta w vecchio, con alfa tra zero e uno, tipicamente tra zero virgola cinque e zero virgola nove. [pause:0.9] Questa inerzia produce tre vantaggi immediati. Accelera nei plateau piatti, dove il gradiente mantiene lo stesso segno e i passi si sommano. [pause:0.5] Smorza le oscillazioni nelle valli strette mal condizionate, dove il gradiente cambia segno e i rimbalzi si compensano: guarda nel grafico come la traiettoria rossa scende fluida rispetto allo zig-zag nero. [pause:0.6] E permette di usare learning rate più alti. [pause:0.9] Nota: nell'online o mini-batch il momentum diventa una media mobile dei gradienti stocastici passati. Infine il momentum di Nesterov applica prima lo spostamento di inerzia, calcola il gradiente nel punto intermedio, e poi aggiorna: accelera nel batch, non nel caso stocastico.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.4.1 · Momentum (!)</div>\n  <h2 class=\"slide-title\">Inerzia nella discesa e smorzamento delle oscillazioni</h2>\n  <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n    \\[\\boxed{\\;\\Delta\\w_{\\mathit{new}} = -\\eta\\,\\frac{\\partial E(\\w)}{\\partial\\w} + \\htmlId{f-mom}{\\alpha\\,\\Delta\\w_{\\mathit{old}}}, \\qquad \\w_{\\mathit{new}} = \\w + \\Delta\\w_{\\mathit{new}}\\;}\\]\n    <p class=\"math-note\">\\(0 \\lt \\alpha \\lt 1\\) (tipicamente \\(0{,}5\\text{--}0{,}9\\)). Dopo ogni passo si salva \\(\\Delta\\w_{\\mathit{old}} = \\Delta\\w_{\\mathit{new}}\\).</p>\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 380 155\" class=\"diagram-svg\" aria-label=\"Valle stretta: zig-zag senza momentum vs discesa fluida con momentum\">\n        <defs>\n          <marker id=\"arr-mk\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-mr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n        </defs>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"40\" ry=\"9\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"85\" ry=\"19\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"135\" ry=\"30\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"190\" ry=\"42\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"250\" ry=\"54\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <circle cx=\"290\" cy=\"78\" r=\"3.5\" fill=\"#1A1A1A\"/>\n        <polyline id=\"svg-zig\" points=\"32,48 56,108 90,54 118,100 152,61 180,93 214,68 242,85\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.8\" marker-end=\"url(#arr-mk)\"/>\n        <path id=\"svg-mom\" d=\"M 32,48 Q 105,86 282,78\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"2.8\" marker-end=\"url(#arr-mr)\" class=\"cue-hidden\"/>\n        <text x=\"140\" y=\"142\" text-anchor=\"middle\" class=\"svg-caption\">senza momentum: zig-zag tra le pareti</text>\n        <text x=\"175\" y=\"34\" text-anchor=\"middle\" class=\"svg-caption svg-red\">con momentum</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Tre effetti + caso stocastico</div>\n        <ul class=\"clean-list\">\n          <li><strong>Accelera nei plateau</strong> (segni concordi si sommano).</li>\n          <li><strong>Smorza oscillazioni</strong> (segni opposti si cancellano).</li>\n          <li>Consente \\(\\eta\\) più alti; in SGD fa da <strong>media mobile</strong> dei gradienti.</li>\n        </ul>\n      </div>\n      <div id=\"s4\" class=\"box box-muted cue-hidden\">\n        <div class=\"box-label\">Momentum di Nesterov</div>\n        <p>Applica prima \\(\\alpha\\Delta\\w_{\\mathit{old}}\\), valuta il gradiente nel punto intermedio e poi aggiorna: migliora nel batch, non nello SGD.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.4.1 · Momentum (!)</div>\n  <h2 class=\"slide-title\">Inerzia nella discesa e smorzamento delle oscillazioni</h2>\n  <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n    \\[\\boxed{\\;\\Delta\\w_{\\mathit{new}} = -\\eta\\,\\frac{\\partial E(\\w)}{\\partial\\w} + \\htmlId{f-mom}{\\alpha\\,\\Delta\\w_{\\mathit{old}}}, \\qquad \\w_{\\mathit{new}} = \\w + \\Delta\\w_{\\mathit{new}}\\;}\\]\n    <p class=\"math-note\">\\(0 \\lt \\alpha \\lt 1\\) (tipicamente \\(0{,}5\\text{--}0{,}9\\)). Dopo ogni passo si salva \\(\\Delta\\w_{\\mathit{old}} = \\Delta\\w_{\\mathit{new}}\\).</p>\n  </div>\n  <div class=\"split-visual\">\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 380 155\" class=\"diagram-svg\" aria-label=\"Valle stretta: zig-zag senza momentum vs discesa fluida con momentum\">\n        <defs>\n          <marker id=\"arr-mk\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n          <marker id=\"arr-mr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n        </defs>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"40\" ry=\"9\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"85\" ry=\"19\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"135\" ry=\"30\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"190\" ry=\"42\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <ellipse cx=\"290\" cy=\"78\" rx=\"250\" ry=\"54\" fill=\"none\" stroke=\"#CCCCCC\" stroke-width=\"1\"/>\n        <circle cx=\"290\" cy=\"78\" r=\"3.5\" fill=\"#1A1A1A\"/>\n        <polyline id=\"svg-zig\" points=\"32,48 56,108 90,54 118,100 152,61 180,93 214,68 242,85\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"1.8\" marker-end=\"url(#arr-mk)\"/>\n        <path id=\"svg-mom\" d=\"M 32,48 Q 105,86 282,78\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"2.8\" marker-end=\"url(#arr-mr)\" class=\"cue-hidden\"/>\n        <text x=\"140\" y=\"142\" text-anchor=\"middle\" class=\"svg-caption\">senza momentum: zig-zag tra le pareti</text>\n        <text x=\"175\" y=\"34\" text-anchor=\"middle\" class=\"svg-caption svg-red\">con momentum</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s3\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Tre effetti + caso stocastico</div>\n        <ul class=\"clean-list\">\n          <li id=\"li6-1\"><strong>Accelera nei plateau</strong> (segni concordi si sommano).</li>\n          <li id=\"li6-2\"><strong>Smorza oscillazioni</strong> (segni opposti si cancellano).</li>\n          <li id=\"li6-3\">Consente \\(\\eta\\) più alti; in SGD fa da <strong>media mobile</strong> dei gradienti.</li>\n        </ul>\n      </div>\n      <div id=\"s4\" class=\"box box-muted cue-hidden\">\n        <div class=\"box-label\">Momentum di Nesterov</div>\n        <p>Applica prima \\(\\alpha\\Delta\\w_{\\mathit{old}}\\), valuta il gradiente nel punto intermedio e poi aggiorna: migliora nel batch, non nello SGD.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.6,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "variazione dei pesi delta w nuovo"
@@ -306,13 +359,26 @@
           "at": 12.18,
           "action": "highlight",
           "target": "#f-mom",
-          "anchor": "frazione alfa dello spostamento"
+          "anchor": "frazione alfa dello spostamento",
+          "duration": 9.75
         },
         {
           "at": 22.08,
           "action": "show",
           "target": "#s2, #s3",
           "anchor": "tre vantaggi immediati"
+        },
+        {
+          "at": 23.76,
+          "action": "highlight",
+          "target": "#li6-1",
+          "duration": 5.32
+        },
+        {
+          "at": 29.2,
+          "action": "highlight",
+          "target": "#li6-2",
+          "duration": 8.09
         },
         {
           "at": 37.41,
@@ -324,13 +390,26 @@
           "at": 37.41,
           "action": "highlight",
           "target": "#svg-mom",
-          "anchor": "traiettoria rossa scende fluida"
+          "anchor": "traiettoria rossa scende fluida",
+          "duration": 6.59
+        },
+        {
+          "at": 44.12,
+          "action": "highlight",
+          "target": "#li6-3",
+          "duration": 7.06
         },
         {
           "at": 51.33,
           "action": "show",
           "target": "#s4",
           "anchor": "momentum di Nesterov"
+        },
+        {
+          "at": 51.43,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 9.1
         }
       ],
       "duration_sec": 60.88
@@ -345,7 +424,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.4.2 – 12.4.3 · Learning rate variabile e secondo ordine</div>\n  <h2 class=\"slide-title\">Decadimento di \\(\\eta\\), Adam e trappola dei punti di sella</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    \\[\\eta_s = \\left(1 - \\frac{s}{\\tau}\\right)\\eta_0 + \\frac{s}{\\tau}\\,\\eta_\\tau \\quad (s \\le \\tau), \\qquad \\eta_\\tau \\approx 1\\%\\,\\eta_0\\]\n    <p class=\"math-note\">In mini-batch il rumore impedisce al gradiente di annullarsi: \\(\\eta\\) va ridotto gradualmente.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2\">\n    <div id=\"s2a\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Adattivi per parametro</div>\n      <p><strong>AdaGrad</strong>, <strong>RMSProp</strong>, <strong>Adam</strong> (combinati con momentum; usare con cautela).</p>\n    </div>\n    <div id=\"s2b\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">Euristiche e 2° ordine</div>\n      <p><strong>Quickprop</strong> (parabola), <strong>R-prop</strong> (solo segno), <strong>Newton / Gauss-Newton / BFGS</strong> (Hessiana costosa).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Punti di sella in alta dimensione</div>\n    <p>Sono esponenzialmente più numerosi dei minimi locali. Newton è attratto dai punti a gradiente nullo; lo <strong>SGD con momentum</strong> vi sfugge empiricamente. <strong>La validazione conta più dell'ottimizzazione sul training.</strong></p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 9.28,
+          "at": 3.96,
           "action": "show",
           "target": "#s1",
           "anchor": "decrescere eta linearmente"
@@ -357,16 +436,34 @@
           "anchor": "algoritmi adattivi"
         },
         {
+          "at": 17.92,
+          "action": "highlight",
+          "target": "#s2a",
+          "duration": 14.95
+        },
+        {
           "at": 33.07,
           "action": "show",
           "target": "#s2b",
           "anchor": "metodi oltre lo SGD"
         },
         {
+          "at": 33.17,
+          "action": "highlight",
+          "target": "#s2b",
+          "duration": 19.06
+        },
+        {
           "at": 52.43,
           "action": "show",
           "target": "#s3",
           "anchor": "Attenzione però ai punti di sella"
+        },
+        {
+          "at": 52.53,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 23.58
         }
       ],
       "duration_sec": 76.46
@@ -381,7 +478,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.5 · Criteri di arresto</div>\n  <h2 class=\"slide-title\">Soglie di errore, criteri interni e patience</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Soglia sull'errore (\\(\\lt \\epsilon\\))</div>\n      <p>Errore medio, errore massimo o numero di errori. Ideale solo se la tolleranza dei dati è nota a priori.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">2. Criteri interni + Patience</div>\n      <p>Pesi fermi, \\(\\norm{\\nabla E} \\lt \\epsilon\\), o calo \\(\\lt 0{,}1\\%\\)/epoca. Rischio arresto prematuro → osservare per \\(k\\) epoche (<strong>patience</strong>).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">(!) Tetto massimo di sicurezza vs numero fisso arbitrario</div>\n    <p>Fermarsi comunque dopo un numero <em>eccessivo</em> di epoche contro stalli lenti, ma <strong>mai</strong> fissare un numero arbitrario di epoche come regola di arresto.</p>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Ponte verso la generalizzazione</div>\n    <p>Scendere troppo sull'errore di training non è l'obiettivo: occorre controllare la complessità per evitare l'<strong>overfitting</strong>.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.93,
+          "at": 3.23,
           "action": "show",
           "target": "#s1",
           "anchor": "criterio di base è la soglia"
@@ -393,16 +490,34 @@
           "anchor": "criteri interni guardano"
         },
         {
+          "at": 20.21,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 23.28
+        },
+        {
           "at": 43.69,
           "action": "show",
           "target": "#s3",
           "anchor": "limite massimo di sicurezza"
         },
         {
+          "at": 43.79,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 9.46
+        },
+        {
           "at": 53.45,
           "action": "show",
           "target": "#s4",
           "anchor": "errore di training molto basso"
+        },
+        {
+          "at": 53.55,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 7.22
         }
       ],
       "duration_sec": 61.13
@@ -417,7 +532,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.6.1 · Overfitting ed early stopping</div>\n  <h2 class=\"slide-title\">Complessità crescente lungo le epoche ed early stopping</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 375 205\" class=\"diagram-svg\" aria-label=\"Curva di training e validazione con zona di arresto\">\n        <defs>\n          <marker id=\"arr-es\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5.5\" markerHeight=\"5.5\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"38\" y1=\"175\" x2=\"352\" y2=\"175\" class=\"svg-axis\" marker-end=\"url(#arr-es)\"/>\n        <line x1=\"38\" y1=\"175\" x2=\"38\" y2=\"14\" class=\"svg-axis\" marker-end=\"url(#arr-es)\"/>\n        <text x=\"195\" y=\"196\" text-anchor=\"middle\" class=\"svg-caption\">epoche</text>\n        <text x=\"15\" y=\"96\" transform=\"rotate(-90 15 96)\" text-anchor=\"middle\" class=\"svg-caption\">errore</text>\n        <path id=\"es-tr\" d=\"M 38.0,34.8 L 43.9,48.7 L 49.8,61.2 L 55.8,72.4 L 61.7,82.4 L 67.6,91.4 L 73.5,99.4 L 79.5,106.6 L 85.4,113.0 L 91.3,118.7 L 97.2,123.9 L 103.1,128.5 L 109.1,132.6 L 115.0,136.3 L 120.9,139.6 L 126.8,142.5 L 132.7,145.2 L 138.7,147.5 L 144.6,149.6 L 150.5,151.5 L 156.4,153.2 L 162.4,154.7 L 168.3,156.1 L 174.2,157.3 L 180.1,158.4 L 186.0,159.4 L 192.0,160.2 L 197.9,161.0 L 203.8,161.7 L 209.7,162.3 L 215.6,162.9 L 221.6,163.4 L 227.5,163.8 L 233.4,164.2 L 239.3,164.6 L 245.3,164.9 L 251.2,165.2 L 257.1,165.4 L 263.0,165.7 L 268.9,165.9 L 274.9,166.1 L 280.8,166.2 L 286.7,166.4 L 292.6,166.5 L 298.5,166.6 L 304.5,166.7 L 310.4,166.8 L 316.3,166.9 L 322.2,167.0 L 328.2,167.0 L 334.1,167.1\" class=\"svg-curve-blue\"/>\n        <path id=\"es-vl\" d=\"M 38.0,34.8 L 43.9,48.5 L 49.8,60.4 L 55.8,70.8 L 61.7,79.7 L 67.6,87.5 L 73.5,94.2 L 79.5,100.1 L 85.4,105.1 L 91.3,109.5 L 97.2,113.3 L 103.1,116.6 L 109.1,119.5 L 115.0,122.0 L 120.9,124.1 L 126.8,126.0 L 132.7,126.6 L 138.7,126.9 L 144.6,127.1 L 150.5,127.1 L 156.4,127.0 L 162.4,126.8 L 168.3,126.4 L 174.2,126.0 L 180.1,125.4 L 186.0,124.9 L 192.0,124.2 L 197.9,123.5 L 203.8,122.8 L 209.7,122.0 L 215.6,121.2 L 221.6,120.3 L 227.5,119.5 L 233.4,118.6 L 239.3,117.7 L 245.3,116.7 L 251.2,115.8 L 257.1,114.8 L 263.0,113.9 L 268.9,112.9 L 274.9,111.9 L 280.8,110.9 L 286.7,109.9 L 292.6,108.9 L 298.5,107.9 L 304.5,106.9 L 310.4,105.9 L 316.3,104.9 L 322.2,103.9 L 328.2,102.9 L 334.1,101.8\" class=\"svg-curve-red\"/>\n        <g id=\"es-zone\" class=\"cue-hidden\">\n          <line x1=\"148\" y1=\"175\" x2=\"148\" y2=\"127.1\" stroke=\"#6E6E6E\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n          <circle cx=\"148\" cy=\"127.1\" r=\"4.5\" fill=\"#C0392B\"/>\n          <text x=\"154\" y=\"116\" class=\"svg-caption\">zona in cui fermarsi</text>\n          <text x=\"285\" y=\"88\" text-anchor=\"middle\" class=\"svg-caption svg-red\">overtraining</text>\n        </g>\n        <text x=\"285\" y=\"34\" class=\"svg-legend svg-blue\">— training</text>\n        <text x=\"285\" y=\"49\" class=\"svg-legend svg-red\">— validazione</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Evoluzione della VC-dimension</div>\n        <p>Pesi piccoli → zona lineare (bassa complessità). Epoche avanzate → saturazione e non linearità (alta VC-dim).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Tre strumenti contro l'overfitting</div>\n        <ol class=\"clean-list\">\n          <li><strong>Early stopping</strong> (con validation set, patience e backtracking).</li>\n          <li><strong>Regolarizzazione</strong> nella loss (strumento principale).</li>\n          <li><strong>Pruning</strong> (rimozione di pesi o unità).</li>\n        </ol>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 11.46,
+          "at": 4.1,
           "action": "show",
           "target": "#s2",
           "anchor": "Come nasce l'overfitting"
@@ -439,6 +554,12 @@
           "action": "show",
           "target": "#s3",
           "anchor": "Abbiamo tre rimedi"
+        },
+        {
+          "at": 39.93,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 17.7
         }
       ],
       "duration_sec": 57.98
@@ -462,7 +583,8 @@
           "at": 8.93,
           "action": "highlight",
           "target": "#f-wd",
-          "anchor": "lambda per la norma quadra"
+          "anchor": "lambda per la norma quadra",
+          "duration": 18
         },
         {
           "at": 31.44,
@@ -474,19 +596,27 @@
           "at": 35.88,
           "action": "highlight",
           "target": "#p-nowd",
-          "anchor": "A sinistra, senza weight decay"
+          "anchor": "A sinistra, senza weight decay",
+          "duration": 8.75
         },
         {
           "at": 44.78,
           "action": "highlight",
           "target": "#p-wd",
-          "anchor": "A destra, con weight decay"
+          "anchor": "A destra, con weight decay",
+          "duration": 9.75
         },
         {
           "at": 54.68,
           "action": "show",
           "target": "#s3",
           "anchor": "Attenzione a un malinteso"
+        },
+        {
+          "at": 54.78,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 11.44
         }
       ],
       "duration_sec": 66.57
@@ -498,10 +628,10 @@
       "audio_file": "audio/scene-11.wav",
       "subtitle_file": "subtitles/scene-11.json",
       "tts_text": "Meglio early stopping o regolarizzazione? L'early stopping è empirico e sacrifica dati per il validation set; la regolarizzazione nella loss è fondata e, se lambda è ben scelto, fa seguire alla curva di validazione quella di training senza bisogno di fermarsi prima. Si possono comunque combinare. [pause:0.8] Tre dettagli pratici importanti. Il bias w con zero va in genere escluso dalla penalità, altrimenti il modello dipende da traslazioni del target. Nel mini-batch la penalità scatta più volte per epoca, quindi per confrontarla col batch andrebbe scalata per m b diviso l. Esiste inoltre il dropout, che vedremo nel deep learning. [pause:0.9] Come si combinano momentum e weight decay? Prima cosa: non moltiplicare lambda per eta, così cambiando il learning rate non si altera la regolarizzazione. [pause:0.7] Ancora meglio, per rendere indipendenti tutti e tre gli iperparametri eta, alfa e lambda, si calcola il passo con momentum solo sul gradiente dell'errore e si sottrae lambda w con t u direttamente nell'aggiornamento finale dei pesi.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.6.2 – 12.6.3 · Dettagli e formula combinata</div>\n  <h2 class=\"slide-title\">Early stopping vs regolarizzazione e momentum + weight decay</h2>\n  <div id=\"s1\" class=\"grid-2\">\n    <div id=\"s1a\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Early stopping o regolarizzazione?</div>\n      <p><strong>Early stopping</strong>: empirico, sacrifica dati per il VL. <strong>Regolarizzazione</strong>: fondata, permette di fermarsi a convergenza (combinabili).</p>\n    </div>\n    <div id=\"s1b\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Dettagli pratici</div>\n      <ul class=\"clean-list\">\n        <li><strong>Bias \\(w_0\\) escluso</strong> dalla penalità (invarianza a traslazioni).</li>\n        <li>In mini-batch: scala equivalente \\(\\lambda \\cdot mb/l\\).</li>\n        <li>Altra tecnica: <strong>dropout</strong> (Cap. 15).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Separa \\(\\eta\\) da \\(\\lambda\\)</div>\n    \\[\\Delta w_{tu} = \\eta\\,\\delta_t\\,o_u - \\lambda\\,w_{tu} + \\alpha\\,\\Delta w_{tu}^{\\mathit{old}}, \\qquad w_{tu}^{\\mathit{new}} = w_{tu} + \\Delta w_{tu}\\]\n  </div>\n  <div id=\"s3\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Tre iperparametri completamente indipendenti (\\(\\eta, \\alpha, \\lambda\\))</div>\n    \\[\\Delta w_{tu} = \\htmlId{f-m1}{\\eta\\,\\delta_t\\,o_u + \\alpha\\,\\Delta w_{tu}^{\\mathit{old}}}, \\qquad w_{tu}^{\\mathit{new}} = w_{tu} + \\Delta w_{tu} - \\htmlId{f-m2}{\\lambda\\,w_{tu}}\\]\n    <p class=\"math-note\">Si divide per \\(l\\) solo il gradiente dell'errore \\(E\\), dove compare la somma sugli esempi.</p>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.6.2 – 12.6.3 · Dettagli e formula combinata</div>\n  <h2 class=\"slide-title\">Early stopping vs regolarizzazione e momentum + weight decay</h2>\n  <div id=\"s1\" class=\"grid-2\">\n    <div id=\"s1a\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Early stopping o regolarizzazione?</div>\n      <p><strong>Early stopping</strong>: empirico, sacrifica dati per il VL. <strong>Regolarizzazione</strong>: fondata, permette di fermarsi a convergenza (combinabili).</p>\n    </div>\n    <div id=\"s1b\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Dettagli pratici</div>\n      <ul class=\"clean-list\">\n        <li id=\"li11-1\"><strong>Bias \\(w_0\\) escluso</strong> dalla penalità (invarianza a traslazioni).</li>\n        <li id=\"li11-2\">In mini-batch: scala equivalente \\(\\lambda \\cdot mb/l\\).</li>\n        <li id=\"li11-3\">Altra tecnica: <strong>dropout</strong> (Cap. 15).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Separa \\(\\eta\\) da \\(\\lambda\\)</div>\n    \\[\\Delta w_{tu} = \\eta\\,\\delta_t\\,o_u - \\lambda\\,w_{tu} + \\alpha\\,\\Delta w_{tu}^{\\mathit{old}}, \\qquad w_{tu}^{\\mathit{new}} = w_{tu} + \\Delta w_{tu}\\]\n  </div>\n  <div id=\"s3\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Tre iperparametri completamente indipendenti (\\(\\eta, \\alpha, \\lambda\\))</div>\n    \\[\\Delta w_{tu} = \\htmlId{f-m1}{\\eta\\,\\delta_t\\,o_u + \\alpha\\,\\Delta w_{tu}^{\\mathit{old}}}, \\qquad w_{tu}^{\\mathit{new}} = w_{tu} + \\Delta w_{tu} - \\htmlId{f-m2}{\\lambda\\,w_{tu}}\\]\n    <p class=\"math-note\">Si divide per \\(l\\) solo il gradiente dell'errore \\(E\\), dove compare la somma sugli esempi.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 0.0,
+          "at": 0,
           "action": "show",
           "target": "#s1a",
           "anchor": "Meglio early stopping"
@@ -513,10 +643,34 @@
           "anchor": "Tre dettagli pratici"
         },
         {
+          "at": 20.73,
+          "action": "highlight",
+          "target": "#li11-1",
+          "duration": 6.62
+        },
+        {
+          "at": 27.46,
+          "action": "highlight",
+          "target": "#li11-2",
+          "duration": 7.58
+        },
+        {
+          "at": 35.14,
+          "action": "highlight",
+          "target": "#li11-3",
+          "duration": 2.91
+        },
+        {
           "at": 38.63,
           "action": "show",
           "target": "#s2",
           "anchor": "Come si combinano momentum"
+        },
+        {
+          "at": 38.73,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 9.9
         },
         {
           "at": 48.83,
@@ -525,16 +679,24 @@
           "anchor": "rendere indipendenti tutti e tre"
         },
         {
+          "at": 48.93,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 6.4
+        },
+        {
           "at": 55.45,
           "action": "highlight",
           "target": "#f-m1",
-          "anchor": "solo sul gradiente dell'errore"
+          "anchor": "solo sul gradiente dell'errore",
+          "duration": 2.01
         },
         {
           "at": 57.61,
           "action": "highlight",
           "target": "#f-m2",
-          "anchor": "sottrae lambda w con t u"
+          "anchor": "sottrae lambda w con t u",
+          "duration": 5.21
         }
       ],
       "duration_sec": 63.02
@@ -570,13 +732,15 @@
           "at": 38.86,
           "action": "highlight",
           "target": "#cc2",
-          "anchor": "massimizzare la correlazione"
+          "anchor": "massimizzare la correlazione",
+          "duration": 3.59
         },
         {
           "at": 42.6,
           "action": "highlight",
           "target": "#cc3",
-          "anchor": "pesi in ingresso vengono congelati"
+          "anchor": "pesi in ingresso vengono congelati",
+          "duration": 7.17
         },
         {
           "at": 49.92,
@@ -588,7 +752,8 @@
           "at": 58.04,
           "action": "highlight",
           "target": "#cc4",
-          "anchor": "formando una cascata"
+          "anchor": "formando una cascata",
+          "duration": 1.2
         }
       ],
       "duration_sec": 59.43
@@ -603,7 +768,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.7.1 · Matematica del Cascade Correlation</div>\n  <h2 class=\"slide-title\">Covarianza \\(S\\) con l'errore residuo e ascesa del gradiente</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Obiettivo da massimizzare (covarianza con \\(E_{p,k} = o_{p,k} - d_{p,k}\\))</div>\n    \\[S = \\sum_k \\left|\\sum_p \\big(o_p - \\bar o\\big)\\big(E_{p,k} - \\bar E_k\\big)\\right|\\]\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Gradiente (ascesa del gradiente)</div>\n    \\[\\frac{\\partial S}{\\partial w_j} = \\sum_k \\htmlId{f-sgn}{\\sign(S_k)} \\sum_p \\big(E_{p,k} - \\bar E_k\\big)\\,f'(\\net_{p,h})\\,I_{p,j}\\]\n    <p class=\"math-note\">Si usa \\(\\frac{d\\abs{f}}{dx} = \\sign(f)\\,\\frac{df}{dx}\\), trascurando la dipendenza delle medie da \\(o_p\\).</p>\n  </div>\n  <div id=\"s3\" class=\"props-grid cue-hidden\">\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Ogni unità diventa un <strong>rilevatore di feature permanente</strong></div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span><strong>Pool di candidate</strong>: si sceglie la migliore tra più massimi di \\(S\\)</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>Algoritmo <strong>greedy</strong>: converge facilmente ma può andare in overfitting</div>\n    <div class=\"prop-item\"><span class=\"prop-dot\"></span>In regressione si può anche sostituire \\(\\max S\\) con LMS</div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 9.56,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "massimizzare la covarianza S"
@@ -612,7 +777,8 @@
           "at": 17.9,
           "action": "highlight",
           "target": "#s1",
-          "anchor": "funzione obiettivo S"
+          "anchor": "funzione obiettivo S",
+          "duration": 10.05
         },
         {
           "at": 28.1,
@@ -621,10 +787,17 @@
           "anchor": "Derivando rispetto al peso"
         },
         {
+          "at": 28.2,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 5.45
+        },
+        {
           "at": 33.77,
           "action": "highlight",
           "target": "#f-sgn",
-          "anchor": "segno di S con k"
+          "anchor": "segno di S con k",
+          "duration": 16.33
         },
         {
           "at": 50.25,
@@ -642,13 +815,37 @@
       "audio_file": "audio/scene-14.wav",
       "subtitle_file": "subtitles/scene-14.json",
       "tts_text": "Il modo in cui codifichiamo input e output ha un impatto enorme sulle prestazioni. [pause:0.6] Sugli input sono fondamentali la standardizzazione a media zero e deviazione standard uno, il rescaling tra zero e uno, e la codifica one-hot uno su K per le variabili categoriche. Attenzione ai dati mancanti: inserire zero non significa nessun ingresso se lo zero fa parte del dominio dei valori. [pause:0.9] Sulle uscite: per la regressione servono sempre unità lineari. Per la classificazione si usa un'uscita binaria o one-hot multi-classe, spesso con tangente iperbolica che converge più in fretta, usando target come zero virgola nove o meno zero virgola nove per evitare la saturazione asintotica. [pause:0.9] Per target multi-classe zero uno si usa spesso la Softmax: o con k è uguale a e elevato a net con k, diviso la somma su j di e elevato a net con j. Le uscite sommano a uno e si leggono come probabilità di classe. [pause:0.8] In alternativa all'errore quadratico, per la classificazione si usa la loss di cross-entropy, corrispondente alla stima di massima verosimiglianza.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.8 · Rappresentazione di input e output</div>\n  <h2 class=\"slide-title\">Pre-processing, Softmax e Cross-Entropy</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Input (pre-processing)</div>\n      <ul class=\"clean-list\">\n        <li><strong>Standardizzazione</strong>: \\((v - \\mu)/\\sigma\\) (media 0, dev. std 1).</li>\n        <li><strong>Rescaling</strong> in \\([0,1]\\): \\((v-\\min)/(\\max-\\min)\\).</li>\n        <li>Categorici: codifica <strong>1-of-\\(K\\)</strong> (one-hot).</li>\n        <li>Mancanti: <strong>0 non significa assenza</strong> se 0 è nel range.</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Output</div>\n      <ul class=\"clean-list\">\n        <li><strong>(!) Regressione</strong>: unità di uscita <strong>lineari</strong>.</li>\n        <li><strong>Classificazione</strong>: binaria o 1-of-\\(K\\) (vince la più alta).</li>\n        <li><strong>tanh</strong> spesso più rapida; target \\(0{,}9 / -0{,}9\\) evita saturazione asintotica.</li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Softmax (probabilità multi-classe)</div>\n      \\[o_k(\\x) = \\frac{e^{\\net_k}}{\\sum_{j=1}^{K} e^{\\net_j}}\\]\n      <p class=\"math-note\">Le uscite sommano a \\(1\\): \\(o_k(\\x) = p(\\text{classe}=k \\mid \\x)\\).</p>\n    </div>\n    <div id=\"s4\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Loss Cross-Entropy (binaria, MLE)</div>\n      \\[\\begin{gathered} -\\sum_{p=1}^{l}\\Big\\{ d_p\\log o_p \\\\ + (1-d_p)\\log(1-o_p)\\Big\\} \\end{gathered}\\]\n      <p class=\"math-note\">Con \\(o_p = \\out(\\x_p)\\) uscita probabilistica in \\((0,1)\\).</p>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.8 · Rappresentazione di input e output</div>\n  <h2 class=\"slide-title\">Pre-processing, Softmax e Cross-Entropy</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Input (pre-processing)</div>\n      <ul class=\"clean-list\">\n        <li id=\"li14-1\"><strong>Standardizzazione</strong>: \\((v - \\mu)/\\sigma\\) (media 0, dev. std 1).</li>\n        <li id=\"li14-2\"><strong>Rescaling</strong> in \\([0,1]\\): \\((v-\\min)/(\\max-\\min)\\).</li>\n        <li id=\"li14-3\">Categorici: codifica <strong>1-of-\\(K\\)</strong> (one-hot).</li>\n        <li id=\"li14-4\">Mancanti: <strong>0 non significa assenza</strong> se 0 è nel range.</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Output</div>\n      <ul class=\"clean-list\">\n        <li id=\"li14-5\"><strong>(!) Regressione</strong>: unità di uscita <strong>lineari</strong>.</li>\n        <li id=\"li14-6\"><strong>Classificazione</strong>: binaria o 1-of-\\(K\\) (vince la più alta).</li>\n        <li id=\"li14-7\"><strong>tanh</strong> spesso più rapida; target \\(0{,}9 / -0{,}9\\) evita saturazione asintotica.</li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Softmax (probabilità multi-classe)</div>\n      \\[o_k(\\x) = \\frac{e^{\\net_k}}{\\sum_{j=1}^{K} e^{\\net_j}}\\]\n      <p class=\"math-note\">Le uscite sommano a \\(1\\): \\(o_k(\\x) = p(\\text{classe}=k \\mid \\x)\\).</p>\n    </div>\n    <div id=\"s4\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Loss Cross-Entropy (binaria, MLE)</div>\n      \\[\\begin{gathered} -\\sum_{p=1}^{l}\\Big\\{ d_p\\log o_p \\\\ + (1-d_p)\\log(1-o_p)\\Big\\} \\end{gathered}\\]\n      <p class=\"math-note\">Con \\(o_p = \\out(\\x_p)\\) uscita probabilistica in \\((0,1)\\).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.96,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Sugli input sono fondamentali"
+        },
+        {
+          "at": 4.15,
+          "action": "highlight",
+          "target": "#li14-1",
+          "duration": 0.8
+        },
+        {
+          "at": 5.03,
+          "action": "highlight",
+          "target": "#li14-2",
+          "duration": 4.78
+        },
+        {
+          "at": 9.91,
+          "action": "highlight",
+          "target": "#li14-3",
+          "duration": 5.7
+        },
+        {
+          "at": 15.71,
+          "action": "highlight",
+          "target": "#li14-4",
+          "duration": 6.75
         },
         {
           "at": 23.04,
@@ -657,6 +854,24 @@
           "anchor": "Sulle uscite: per la regressione"
         },
         {
+          "at": 23.11,
+          "action": "highlight",
+          "target": "#li14-5",
+          "duration": 3.32
+        },
+        {
+          "at": 26.53,
+          "action": "highlight",
+          "target": "#li14-6",
+          "duration": 6.68
+        },
+        {
+          "at": 33.31,
+          "action": "highlight",
+          "target": "#li14-7",
+          "duration": 7.76
+        },
+        {
           "at": 41.22,
           "action": "show",
           "target": "#s3",
@@ -666,7 +881,8 @@
           "at": 41.22,
           "action": "highlight",
           "target": "#s3",
-          "anchor": "spesso la Softmax"
+          "anchor": "spesso la Softmax",
+          "duration": 17.03
         },
         {
           "at": 58.4,
@@ -678,7 +894,8 @@
           "at": 58.4,
           "action": "highlight",
           "target": "#s4",
-          "anchor": "loss di cross-entropy"
+          "anchor": "loss di cross-entropy",
+          "duration": 4.83
         }
       ],
       "duration_sec": 63.43
@@ -690,10 +907,10 @@
       "audio_file": "audio/scene-15.wav",
       "subtitle_file": "subtitles/scene-15.json",
       "tts_text": "Nella validazione di una rete neurale ci sono tre questioni specifiche da non sbagliare. [pause:0.6] Prima regola: evitare di fermare l'addestramento a un numero fisso e arbitrario di epoche. Se è piccolo dà underfitting e favorisce learning rate alti; se è grande dà overfitting; non può valere per tutte le configurazioni e i fold della cross-validation; e non si saprebbe quale numero usare nel riaddestramento finale. [pause:0.9] Seconda questione: early stopping e K-fold cross-validation. L'early stopping fa parte della model selection e non tocca mai il test set. Nel riaddestramento finale, fare la media delle epoche sui fold è rischioso perché con più dati il punto ottimo cambia. Molto meglio prendere la media dell'errore di training al miglior punto di validazione e usarla come soglia di arresto, oppure tenere un validation set anche nel riaddestramento, oppure affidarsi a modelli ben regolarizzati. [pause:0.9] Terza questione: tra più inizializzazioni diverse, riportare sempre media e varianza; oppure usare un ensemble; se si sceglie un singolo modello serve un validation set, prendendo il migliore o la mediana, dichiarando sempre la scelta.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.9 · Validazione specifica per le reti</div>\n  <h2 class=\"slide-title\">Epoche, early stopping in CV e selezione tra inizializzazioni</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Mai fissare un numero arbitrario di epoche</div>\n    <p>Troppo piccolo → underfitting (favorisce \\(\\eta\\) alti) · Troppo grande → overfitting · Non valido per tutti i fold/configurazioni · Incerto nel riaddestramento finale.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Early stopping + K-fold CV (riaddestramento)</div>\n      <ul class=\"clean-list\">\n        <li>✗ <strong>Media delle epoche</strong> sui fold: rischiosa (con più dati cambia il numero di aggiornamenti).</li>\n        <li>✓ <strong>Media dell'errore di training</strong> al miglior punto di VL come soglia finale.</li>\n        <li>✓ Oppure VL dedicato o <strong>regolarizzazione</strong> a convergenza.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Scelta tra più inizializzazioni (da dichiarare)</div>\n      <ul class=\"clean-list\">\n        <li>Riportare <strong>media e varianza</strong> sulle prove.</li>\n        <li>Usare tutti i modelli in <strong>ensemble</strong> (media / voto).</li>\n        <li>Sceglierne uno sul <strong>VL</strong> (migliore o mediana); scartare fallimenti guardando solo il training.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.9 · Validazione specifica per le reti</div>\n  <h2 class=\"slide-title\">Epoche, early stopping in CV e selezione tra inizializzazioni</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione — Mai fissare un numero arbitrario di epoche</div>\n    <p>Troppo piccolo → underfitting (favorisce \\(\\eta\\) alti) · Troppo grande → overfitting · Non valido per tutti i fold/configurazioni · Incerto nel riaddestramento finale.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Early stopping + K-fold CV (riaddestramento)</div>\n      <ul class=\"clean-list\">\n        <li>✗ <strong>Media delle epoche</strong> sui fold: rischiosa (con più dati cambia il numero di aggiornamenti).</li>\n        <li>✓ <strong>Media dell'errore di training</strong> al miglior punto di VL come soglia finale.</li>\n        <li>✓ Oppure VL dedicato o <strong>regolarizzazione</strong> a convergenza.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Scelta tra più inizializzazioni (da dichiarare)</div>\n      <ul class=\"clean-list\">\n        <li id=\"li15-1\">Riportare <strong>media e varianza</strong> sulle prove.</li>\n        <li id=\"li15-2\">Usare tutti i modelli in <strong>ensemble</strong> (media / voto).</li>\n        <li id=\"li15-3\">Sceglierne uno sul <strong>VL</strong> (migliore o mediana); scartare fallimenti guardando solo il training.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 8.24,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "numero fisso e arbitrario"
@@ -708,13 +925,32 @@
           "at": 42.85,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "media dell'errore di training"
+          "anchor": "media dell'errore di training",
+          "duration": 11.79
         },
         {
           "at": 54.79,
           "action": "show",
           "target": "#s3",
           "anchor": "Terza questione"
+        },
+        {
+          "at": 54.86,
+          "action": "highlight",
+          "target": "#li15-1",
+          "duration": 6.18
+        },
+        {
+          "at": 61.14,
+          "action": "highlight",
+          "target": "#li15-2",
+          "duration": 5.14
+        },
+        {
+          "at": 66.38,
+          "action": "highlight",
+          "target": "#li15-3",
+          "duration": 3.46
         }
       ],
       "duration_sec": 70.14
@@ -726,13 +962,37 @@
       "audio_file": "audio/scene-16.wav",
       "subtitle_file": "subtitles/scene-16.json",
       "tts_text": "Tiriamo le somme su pregi e punti critici delle reti neurali. [pause:0.6] Tra i pregi: costruiscono un'ipotesi esplicita in uno spazio continuo e differenziabile, sono approssimatori universali robusti al rumore e gestiscono dati continui e discreti. Hanno una rappresentazione distribuita compatta in matrici di pesi, tolleranza ai guasti e capacità di adattamento online, il continual learning con il relativo dilemma stabilità-plasticità. [pause:0.9] Tra i punti critici spicca il problema black box: è difficile interpretare ciò che la rete ha appreso, tema dell'explainable AI, affrontato con proiezioni interne, analisi di sensitività, Layer-wise Relevance Propagation per mappe di calore sugli input, ed estrazione di regole. Inoltre progettare l'architettura è oneroso, il risultato dipende dagli iperparametri e i dati mancanti richiedono imputazione o rimozione. [pause:0.8] Sono quindi ideali quando abbiamo input ad alta dimensione, dati rumorosi, forma della funzione sconosciuta, tempo di training non critico, ma inferenza veloce e bassa necessità di interpretabilità.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.10 · Bilancio delle reti neurali</div>\n  <h2 class=\"slide-title\">Pregi, punti critici e profilo dei task ideali</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Pregi principali</div>\n      <ul class=\"clean-list\">\n        <li><strong>Ipotesi esplicita</strong> (diversamente dal K-NN), spazio continuo e differenziabile.</li>\n        <li>Approssimatori universali, degrado graduale con rumore.</li>\n        <li><strong>Rappresentazione distribuita</strong> compatta, tolleranza ai guasti.</li>\n        <li>Adattamento online (<em>continual learning</em>, dilemma stabilità-plasticità).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Punti critici</div>\n      <ul class=\"clean-list\">\n        <li><strong>Black box</strong> → <em>Explainable AI</em> (clustering interno, sensitività, LRP, estrazione regole).</li>\n        <li>Progettazione dell'<strong>architettura</strong> e sensibilità agli iperparametri.</li>\n        <li>Non ideali con <strong>dati mancanti</strong> (imputazione / rimozione).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Quando usarle:</span>\n    <span class=\"pill\">Input alta dimensione</span>\n    <span class=\"pill\">Dati rumorosi</span>\n    <span class=\"pill\">Target sconosciuto</span>\n    <span class=\"pill pill-accent\">Inferenza veloce · leggibilità non critica</span>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.10 · Bilancio delle reti neurali</div>\n  <h2 class=\"slide-title\">Pregi, punti critici e profilo dei task ideali</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Pregi principali</div>\n      <ul class=\"clean-list\">\n        <li id=\"li16-1\"><strong>Ipotesi esplicita</strong> (diversamente dal K-NN), spazio continuo e differenziabile.</li>\n        <li id=\"li16-2\">Approssimatori universali, degrado graduale con rumore.</li>\n        <li id=\"li16-3\"><strong>Rappresentazione distribuita</strong> compatta, tolleranza ai guasti.</li>\n        <li id=\"li16-4\">Adattamento online (<em>continual learning</em>, dilemma stabilità-plasticità).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Punti critici</div>\n      <ul class=\"clean-list\">\n        <li id=\"li16-5\"><strong>Black box</strong> → <em>Explainable AI</em> (clustering interno, sensitività, LRP, estrazione regole).</li>\n        <li id=\"li16-6\">Progettazione dell'<strong>architettura</strong> e sensibilità agli iperparametri.</li>\n        <li id=\"li16-7\">Non ideali con <strong>dati mancanti</strong> (imputazione / rimozione).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Quando usarle:</span>\n    <span class=\"pill\">Input alta dimensione</span>\n    <span class=\"pill\">Dati rumorosi</span>\n    <span class=\"pill\">Target sconosciuto</span>\n    <span class=\"pill pill-accent\">Inferenza veloce · leggibilità non critica</span>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.03,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Tra i pregi"
+        },
+        {
+          "at": 5.1,
+          "action": "highlight",
+          "target": "#li16-1",
+          "duration": 5.44
+        },
+        {
+          "at": 10.64,
+          "action": "highlight",
+          "target": "#li16-2",
+          "duration": 5.26
+        },
+        {
+          "at": 16,
+          "action": "highlight",
+          "target": "#li16-3",
+          "duration": 3.76
+        },
+        {
+          "at": 19.86,
+          "action": "highlight",
+          "target": "#li16-4",
+          "duration": 7.59
         },
         {
           "at": 27.99,
@@ -741,10 +1001,34 @@
           "anchor": "Tra i punti critici"
         },
         {
+          "at": 34.16,
+          "action": "highlight",
+          "target": "#li16-5",
+          "duration": 11.44
+        },
+        {
+          "at": 45.7,
+          "action": "highlight",
+          "target": "#li16-6",
+          "duration": 6.94
+        },
+        {
+          "at": 52.74,
+          "action": "highlight",
+          "target": "#li16-7",
+          "duration": 1.83
+        },
+        {
           "at": 55.05,
           "action": "show",
           "target": "#s3",
           "anchor": "Sono quindi ideali"
+        },
+        {
+          "at": 55.15,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 12.49
         }
       ],
       "duration_sec": 67.99
@@ -756,13 +1040,31 @@
       "audio_file": "audio/scene-17.wav",
       "subtitle_file": "subtitles/scene-17.json",
       "tts_text": "Verificare se una propria implementazione di backpropagation è corretta è sorprendentemente difficile: una rete con piccoli bug spesso impara comunque qualcosa, anche se male. [pause:0.7] Il primo banco di prova classico è il benchmark MONK: tre task di classificazione binaria artificiali e veloci, con sei variabili categoriche da due, tre o quattro valori ciascuna, che in codifica one-hot diventano esattamente diciassette unità di input. I primi due task raggiungono il cento per cento facilmente; MONK tre contiene etichette rumorose e mette alla prova l'overfitting. [pause:0.9] Cinque consigli pratici per le prime prove: una sola uscita coerente con i target, non dimenticare mai la codifica one-hot, usare batch con gradiente medio, partire da due a cinque unità nascoste con pesi piccoli, e attivare lo shuffling nell'online perché gli esempi sono ordinati per classe. [pause:0.8] Ricorda: buoni risultati su MONK non garantiscono l'assenza di bug, ma risultati cattivi segnalano sicuramente un errore nel codice. Controlla la forma liscia delle curve e confronta i numeri su un esempio svolto o con una libreria affidabile.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.11 · Debug e collaudo</div>\n  <h2 class=\"slide-title\">Il benchmark MONK per verificare la backpropagation</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Struttura del benchmark MONK</div>\n      <ul class=\"clean-list\">\n        <li><strong>3 task binari</strong> piccoli (fino al 100% di accuratezza su MONK1–2).</li>\n        <li>6 variabili categoriche → <strong>codifica 1-of-\\(k\\) = 17 input</strong>.</li>\n        <li><strong>MONK3</strong> ha etichette rumorose (testa l'overfitting).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">5 consigli per le prime prove</div>\n      <ul class=\"clean-list\">\n        <li>1 uscita coerente con i target (\\(0/1\\) o \\(-1/+1\\) con tanh).</li>\n        <li><strong>Codifica one-hot</strong> (dimenticarla è l'errore più frequente).</li>\n        <li>Batch con gradiente medio; <strong>2–5 unità nascoste</strong>, pesi piccoli.</li>\n        <li><strong>Shuffling</strong> in online (gli esempi sono ordinati per classe).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Regola di debug</div>\n    <p>Buoni risultati su MONK <strong>non garantiscono</strong> correttezza; risultati cattivi indicano <strong>sicuramente</strong> un bug. Guardare la <strong>forma liscia</strong> delle curve e confrontare con un esempio svolto (con bias) o una libreria affidabile.</p>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.11 · Debug e collaudo</div>\n  <h2 class=\"slide-title\">Il benchmark MONK per verificare la backpropagation</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Struttura del benchmark MONK</div>\n      <ul class=\"clean-list\">\n        <li id=\"li17-1\"><strong>3 task binari</strong> piccoli (fino al 100% di accuratezza su MONK1–2).</li>\n        <li id=\"li17-2\">6 variabili categoriche → <strong>codifica 1-of-\\(k\\) = 17 input</strong>.</li>\n        <li id=\"li17-3\"><strong>MONK3</strong> ha etichette rumorose (testa l'overfitting).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">5 consigli per le prime prove</div>\n      <ul class=\"clean-list\">\n        <li id=\"li17-4\">1 uscita coerente con i target (\\(0/1\\) o \\(-1/+1\\) con tanh).</li>\n        <li id=\"li17-5\"><strong>Codifica one-hot</strong> (dimenticarla è l'errore più frequente).</li>\n        <li id=\"li17-6\">Batch con gradiente medio; <strong>2–5 unità nascoste</strong>, pesi piccoli.</li>\n        <li id=\"li17-7\"><strong>Shuffling</strong> in online (gli esempi sono ordinati per classe).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Regola di debug</div>\n    <p>Buoni risultati su MONK <strong>non garantiscono</strong> correttezza; risultati cattivi indicano <strong>sicuramente</strong> un bug. Guardare la <strong>forma liscia</strong> delle curve e confrontare con un esempio svolto (con bias) o una libreria affidabile.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 11.8,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "benchmark MONK"
+        },
+        {
+          "at": 5.77,
+          "action": "highlight",
+          "target": "#li17-1",
+          "duration": 7.32
+        },
+        {
+          "at": 13.19,
+          "action": "highlight",
+          "target": "#li17-2",
+          "duration": 15.3
+        },
+        {
+          "at": 28.6,
+          "action": "highlight",
+          "target": "#li17-3",
+          "duration": 3.75
         },
         {
           "at": 33.01,
@@ -771,10 +1073,40 @@
           "anchor": "Cinque consigli pratici"
         },
         {
+          "at": 35.88,
+          "action": "highlight",
+          "target": "#li17-4",
+          "duration": 2.4
+        },
+        {
+          "at": 38.38,
+          "action": "highlight",
+          "target": "#li17-5",
+          "duration": 2.86
+        },
+        {
+          "at": 41.36,
+          "action": "highlight",
+          "target": "#li17-6",
+          "duration": 5.58
+        },
+        {
+          "at": 47.04,
+          "action": "highlight",
+          "target": "#li17-7",
+          "duration": 5.96
+        },
+        {
           "at": 53.15,
           "action": "show",
           "target": "#s3",
           "anchor": "buoni risultati su MONK"
+        },
+        {
+          "at": 53.25,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 13.29
         }
       ],
       "duration_sec": 66.9
@@ -795,10 +1127,22 @@
           "anchor": "Primo: pesi iniziali"
         },
         {
+          "at": 5.9,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8.97
+        },
+        {
           "at": 15.04,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: online"
+        },
+        {
+          "at": 15.12,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 9.27
         },
         {
           "at": 24.56,
@@ -807,10 +1151,22 @@
           "anchor": "Terzo: momentum"
         },
         {
+          "at": 24.64,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 5.95
+        },
+        {
           "at": 30.76,
           "action": "show",
           "target": "#s4",
           "anchor": "Quarto: la VC-dimension"
+        },
+        {
+          "at": 30.84,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 9.43
         },
         {
           "at": 40.44,
@@ -819,10 +1175,22 @@
           "anchor": "Quinto: uscite lineari"
         },
         {
+          "at": 40.52,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 7.55
+        },
+        {
           "at": 48.24,
           "action": "show",
           "target": "#s6, #s7",
           "anchor": "Sesto: mai fissare"
+        },
+        {
+          "at": 48.32,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 6.77
         }
       ],
       "duration_sec": 55.41

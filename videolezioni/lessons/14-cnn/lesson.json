@@ -18,7 +18,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.1 · Il problema e l'idea</div>\n  <h2 class=\"slide-title\">Perché un MLP non basta sulle immagini</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Limite dell'MLP standard su caratteri \\(16\\times 16\\)</div>\n    <p>Con \\(256\\) input (uno per pixel) l'MLP ha errore del <strong>5–20%</strong>: <strong>manca invarianza</strong> a traslazioni, rotazioni e deformazioni e ignora la correlazione spaziale tra pixel vicini.</p>\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 476 144\" class=\"diagram-svg\" aria-label=\"Confronto MLP completamente connesso vs CNN con campi recettivi locali e pesi condivisi\">\n      <text x=\"112\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"600\">MLP completamente connesso</text>\n<rect x=\"34\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"54\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"74\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"94\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"34\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"54\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"74\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"94\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"34\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"54\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"74\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"94\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"34\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"54\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"74\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"94\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"44\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"44\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"44\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"44\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"44\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"44\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"44\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"44\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"44\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"44\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"44\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"44\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"64\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"64\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"64\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"64\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"64\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"64\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"64\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"64\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"64\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"64\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"64\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"64\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"84\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"84\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"84\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"84\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"84\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"84\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"84\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"84\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"84\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"84\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"84\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"84\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"104\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"104\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"52\" y1=\"104\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"104\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"104\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"72\" y1=\"104\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"104\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"104\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"92\" y1=\"104\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"104\" x2=\"171\" y2=\"46\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"104\" x2=\"171\" y2=\"74\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<line x1=\"112\" y1=\"104\" x2=\"171\" y2=\"102\" stroke=\"#C0392B\" stroke-opacity=\"0.22\" stroke-width=\"0.9\"/>\n<circle cx=\"182\" cy=\"46\" r=\"11\" class=\"svg-node\"/>\n<text x=\"182\" y=\"50\" text-anchor=\"middle\" class=\"svg-tick\">h<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n<circle cx=\"182\" cy=\"74\" r=\"11\" class=\"svg-node\"/>\n<text x=\"182\" y=\"78\" text-anchor=\"middle\" class=\"svg-tick\">h<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<circle cx=\"182\" cy=\"102\" r=\"11\" class=\"svg-node\"/>\n<text x=\"182\" y=\"106\" text-anchor=\"middle\" class=\"svg-tick\">h<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n<text x=\"112\" y=\"132\" text-anchor=\"middle\" class=\"svg-caption svg-red\">pixel indipendenti, troppi pesi</text>\n<line x1=\"224\" y1=\"16\" x2=\"224\" y2=\"138\" stroke=\"#CCCCCC\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/>\n<text x=\"352\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption svg-blue\" font-weight=\"600\">CNN: campi locali + pesi condivisi</text>\n<rect x=\"250\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"270\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"290\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"310\" y=\"34\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"250\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"270\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"290\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"310\" y=\"54\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"250\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"270\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"290\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"310\" y=\"74\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"250\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"270\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"290\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"310\" y=\"94\" width=\"20\" height=\"20\" fill=\"#EFEFEF\" stroke=\"#6E6E6E\" stroke-width=\"0.9\"/>\n<rect x=\"250\" y=\"34\" width=\"40\" height=\"40\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1F5A9E\" stroke-width=\"2\"/>\n<rect x=\"290\" y=\"74\" width=\"40\" height=\"40\" fill=\"rgba(46,125,50,0.18)\" stroke=\"#2E7D32\" stroke-width=\"2\"/>\n<line x1=\"290\" y1=\"46\" x2=\"392\" y2=\"52\" stroke=\"#1F5A9E\" stroke-width=\"1.8\"/>\n<line x1=\"290\" y1=\"66\" x2=\"392\" y2=\"52\" stroke=\"#1F5A9E\" stroke-width=\"1.8\"/>\n<circle cx=\"404\" cy=\"52\" r=\"12\" class=\"svg-node-fill\"/>\n<text x=\"404\" y=\"56\" text-anchor=\"middle\" class=\"svg-tick svg-blue\">u<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n<line x1=\"330\" y1=\"84\" x2=\"392\" y2=\"96\" stroke=\"#2E7D32\" stroke-width=\"1.8\"/>\n<line x1=\"330\" y1=\"106\" x2=\"392\" y2=\"96\" stroke=\"#2E7D32\" stroke-width=\"1.8\"/>\n<circle cx=\"404\" cy=\"96\" r=\"12\" class=\"svg-node-fill\"/>\n<text x=\"404\" y=\"100\" text-anchor=\"middle\" class=\"svg-tick svg-green\">u<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<text x=\"366\" y=\"77\" text-anchor=\"middle\" class=\"svg-tick\" font-weight=\"600\">stessi pesi W</text>\n<text x=\"352\" y=\"132\" text-anchor=\"middle\" class=\"svg-caption svg-blue\">stesso filtro ovunque sull'immagine</text>\n    </svg>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">1. Connessioni locali (campi recettivi)</div>\n      <p>Ogni unità vede solo una piccola zona dell'immagine ed estrae <strong>feature locali</strong>.</p>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">2. Condivisione dei pesi (weight sharing)</div>\n      <p>La <strong>stessa operazione</strong> scorre su tutta l'immagine: le feature possono comparire ovunque e i <strong>parametri liberi</strong> diminuiscono pur mantenendo ricca connettività.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 22.86,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "immagini sedici per sedici"
@@ -36,10 +36,22 @@
           "anchor": "Primo: le connessioni locali"
         },
         {
+          "at": 64.05,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 9.74
+        },
+        {
           "at": 73.99,
           "action": "show",
           "target": "#s4",
           "anchor": "Secondo: la condivisione dei pesi"
+        },
+        {
+          "at": 74.09,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 16.92
         }
       ],
       "duration_sec": 91.36,
@@ -54,7 +66,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.2 – 14.2.1 · La convoluzione</div>\n  <h2 class=\"slide-title\">Finestra scorrevole: caso continuo e convoluzione 1D</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"math-card cue-hidden\">\n      <div class=\"step-tag-inline\">Operatore continuo (finestra scorrevole)</div>\n      \\[\\htmlId{f-conv-cont}{(f * g)(t) = \\int_{-\\infty}^{\\infty} f(\\tau)\\,g(t-\\tau)\\,d\\tau}\\]\n      <p class=\"math-note\">Media pesata di \\(f\\) con pesi dati da \\(g\\), non nulla solo su un intervallo limitato.</p>\n    </div>\n    <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n      <div class=\"step-tag-inline\">Convoluzione 1D (3 pesi condivisi)</div>\n      \\[\\htmlId{f-conv-1d}{\\out_t = \\sum_{i=1}^{3} w_i\\,x_{t+i-2}}\\]\n      <p class=\"math-note\">Es.: \\(o_2 = w_1 x_1 + w_2 x_2 + w_3 x_3\\), \\(\\; o_3 = w_1 x_2 + w_2 x_3 + w_3 x_4\\).</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 584 162\" class=\"diagram-svg\" aria-label=\"Convoluzione 1D con finestra scorrevole di ampiezza 3\">\n      <defs>\n  <marker id=\"arr-c1-b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\"><path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/></marker>\n  <marker id=\"arr-c1-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\"><path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/></marker>\n  <marker id=\"arr-c1-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\"><path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#2E7D32\"/></marker>\n</defs>\n<g id=\"c1-g2\">\n<line x1=\"48\" y1=\"116\" x2=\"115\" y2=\"51\" stroke=\"#1F5A9E\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-b)\"/>\n<line x1=\"122\" y1=\"116\" x2=\"122\" y2=\"51\" stroke=\"#1F5A9E\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-b)\"/>\n<line x1=\"196\" y1=\"116\" x2=\"129\" y2=\"51\" stroke=\"#1F5A9E\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-b)\"/>\n</g>\n<g id=\"c1-g3\">\n<line x1=\"122\" y1=\"116\" x2=\"189\" y2=\"51\" stroke=\"#C0392B\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-r)\"/>\n<line x1=\"196\" y1=\"116\" x2=\"196\" y2=\"51\" stroke=\"#C0392B\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-r)\"/>\n<line x1=\"270\" y1=\"116\" x2=\"203\" y2=\"51\" stroke=\"#C0392B\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-r)\"/>\n</g>\n<g id=\"c1-g4\">\n<line x1=\"196\" y1=\"116\" x2=\"263\" y2=\"51\" stroke=\"#2E7D32\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-g)\"/>\n<line x1=\"270\" y1=\"116\" x2=\"270\" y2=\"51\" stroke=\"#2E7D32\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-g)\"/>\n<line x1=\"344\" y1=\"116\" x2=\"277\" y2=\"51\" stroke=\"#2E7D32\" stroke-width=\"1.9\" marker-end=\"url(#arr-c1-g)\"/>\n</g>\n<text x=\"72\" y=\"84\" text-anchor=\"middle\" class=\"svg-weight svg-blue\">w<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n<text x=\"112\" y=\"84\" text-anchor=\"middle\" class=\"svg-weight svg-blue\">w<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<text x=\"167\" y=\"102\" text-anchor=\"middle\" class=\"svg-weight svg-blue\">w<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n<circle cx=\"48\" cy=\"132\" r=\"15\" class=\"svg-node\"/>\n<text x=\"48\" y=\"137\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text>\n<circle cx=\"122\" cy=\"132\" r=\"15\" class=\"svg-node\"/>\n<text x=\"122\" y=\"137\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<circle cx=\"196\" cy=\"132\" r=\"15\" class=\"svg-node\"/>\n<text x=\"196\" y=\"137\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n<circle cx=\"270\" cy=\"132\" r=\"15\" class=\"svg-node\"/>\n<text x=\"270\" y=\"137\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">4</tspan></text>\n<circle cx=\"344\" cy=\"132\" r=\"15\" class=\"svg-node\"/>\n<text x=\"344\" y=\"137\" text-anchor=\"middle\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">5</tspan></text>\n<circle cx=\"122\" cy=\"34\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"122\" y=\"39\" text-anchor=\"middle\" class=\"svg-math-sm\">o<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text>\n<circle cx=\"196\" cy=\"34\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"196\" y=\"39\" text-anchor=\"middle\" class=\"svg-math-sm\">o<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan></text>\n<circle cx=\"270\" cy=\"34\" r=\"15\" class=\"svg-node-fill\"/>\n<text x=\"270\" y=\"39\" text-anchor=\"middle\" class=\"svg-math-sm\">o<tspan baseline-shift=\"sub\" font-size=\"75%\">4</tspan></text>\n<text x=\"415\" y=\"64\" class=\"svg-caption\" font-weight=\"600\">Stessa unità, stessi pesi</text>\n<text x=\"415\" y=\"82\" class=\"svg-math-sm\">(w<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>, w<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>, w<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan>)</text>\n<text x=\"415\" y=\"100\" class=\"svg-caption\">spostata di un passo</text>\n<text x=\"415\" y=\"116\" class=\"svg-caption\">alla volta (TDNN)</text>\n    </svg>\n  </div>\n  <div id=\"s4\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Filtro adattivo, banco di filtri e TDNN</div>\n    <p>I pesi condivisi si apprendono normalmente: ogni unità è un <strong>filtro adattivo</strong>, più unità diverse formano un <strong>banco di filtri</strong>. L'architettura 1D è nota anche come <strong>Time-Delay Neural Network (TDNN)</strong>.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.19,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Nel caso continuo"
@@ -63,7 +75,8 @@
           "at": 11.95,
           "action": "highlight",
           "target": "#f-conv-cont",
-          "anchor": "integrale da meno infinito"
+          "anchor": "integrale da meno infinito",
+          "duration": 18
         },
         {
           "at": 33.31,
@@ -72,10 +85,17 @@
           "anchor": "convoluzione uno D"
         },
         {
+          "at": 33.41,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.42
+        },
+        {
           "at": 45.95,
           "action": "highlight",
           "target": "#f-conv-1d",
-          "anchor": "uscita out con t"
+          "anchor": "uscita out con t",
+          "duration": 8.47
         },
         {
           "at": 54.57,
@@ -87,25 +107,34 @@
           "at": 61.47,
           "action": "highlight",
           "target": "#c1-g2",
-          "anchor": "evidenziata in blu"
+          "anchor": "evidenziata in blu",
+          "duration": 8.71
         },
         {
           "at": 70.33,
           "action": "highlight",
           "target": "#c1-g3",
-          "anchor": "in rosso"
+          "anchor": "in rosso",
+          "duration": 3.43
         },
         {
           "at": 73.91,
           "action": "highlight",
           "target": "#c1-g4",
-          "anchor": "in verde"
+          "anchor": "in verde",
+          "duration": 8.91
         },
         {
           "at": 82.97,
           "action": "show",
           "target": "#s4",
           "anchor": "filtro adattivo"
+        },
+        {
+          "at": 83.07,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 7.83
         }
       ],
       "duration_sec": 91.25,
@@ -135,7 +164,8 @@
           "at": 43.36,
           "action": "highlight",
           "target": "#c2-win, #c2-out0",
-          "anchor": "prima posizione in blu"
+          "anchor": "prima posizione in blu",
+          "duration": 15.4
         },
         {
           "at": 58.91,
@@ -144,22 +174,36 @@
           "anchor": "il padding aggiunge una cornice"
         },
         {
+          "at": 59.01,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 21.82
+        },
+        {
           "at": 81.03,
           "action": "show",
           "target": "#s4",
           "anchor": "vera convoluzione due D"
         },
         {
+          "at": 81.13,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 1.22
+        },
+        {
           "at": 82.47,
           "action": "highlight",
           "target": "#f-conv2d",
-          "anchor": "inverte gli indici del kernel"
+          "anchor": "inverte gli indici del kernel",
+          "duration": 5.91
         },
         {
           "at": 88.53,
           "action": "highlight",
           "target": "#f-xcorr",
-          "anchor": "implementano in realtà la cross-correlazione"
+          "anchor": "implementano in realtà la cross-correlazione",
+          "duration": 7.82
         }
       ],
       "duration_sec": 96.55,
@@ -174,7 +218,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.2.3 · Una rete di filtri</div>\n  <h2 class=\"slide-title\">Quattro scelte di progetto e crescita del campo recettivo</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"formula-col cue-hidden\">\n      <div class=\"box box-def\">\n        <div class=\"box-label\">Principi della rete di filtri</div>\n        <ul class=\"clean-list\">\n          <li id=\"p1\"><strong>Campo recettivo piccolo e locale</strong>: risponde a pattern spazialmente locali.</li>\n          <li id=\"p2\"><strong>Stesso filtro ovunque</strong>: rilevamento indipendente dalla posizione → <strong>invarianza per traslazione</strong>.</li>\n          <li id=\"p3\"><strong>Filtri appresi</strong> dai dati (non progettati a mano come nel processing classico).</li>\n          <li id=\"p4\"><strong>Molti strati impilati</strong>: aree coperte via via più grandi.</li>\n        </ul>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 460 206\" class=\"diagram-svg\" aria-label=\"Crescita del campo recettivo in 3 strati 1D con kernel 3\">\n        <polygon points=\"179,28 84,174 274,174\" fill=\"rgba(192,57,43,0.08)\" stroke=\"none\"/>\n<line x1=\"179\" y1=\"28\" x2=\"86\" y2=\"172\" stroke=\"#C0392B\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n<line x1=\"179\" y1=\"28\" x2=\"272\" y2=\"172\" stroke=\"#C0392B\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n<line x1=\"179\" y1=\"28\" x2=\"150\" y2=\"74\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n<line x1=\"179\" y1=\"28\" x2=\"179\" y2=\"74\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n<line x1=\"179\" y1=\"28\" x2=\"208\" y2=\"74\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n<circle cx=\"34\" cy=\"166\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"63\" cy=\"166\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"92\" cy=\"166\" r=\"8\" fill=\"rgba(192,57,43,0.20)\" stroke=\"#C0392B\" stroke-width=\"1.3\"/>\n<circle cx=\"121\" cy=\"166\" r=\"8\" fill=\"rgba(192,57,43,0.20)\" stroke=\"#C0392B\" stroke-width=\"1.3\"/>\n<circle cx=\"150\" cy=\"166\" r=\"8\" fill=\"rgba(192,57,43,0.20)\" stroke=\"#C0392B\" stroke-width=\"1.3\"/>\n<circle cx=\"179\" cy=\"166\" r=\"8\" fill=\"rgba(192,57,43,0.20)\" stroke=\"#C0392B\" stroke-width=\"1.3\"/>\n<circle cx=\"208\" cy=\"166\" r=\"8\" fill=\"rgba(192,57,43,0.20)\" stroke=\"#C0392B\" stroke-width=\"1.3\"/>\n<circle cx=\"237\" cy=\"166\" r=\"8\" fill=\"rgba(192,57,43,0.20)\" stroke=\"#C0392B\" stroke-width=\"1.3\"/>\n<circle cx=\"266\" cy=\"166\" r=\"8\" fill=\"rgba(192,57,43,0.20)\" stroke=\"#C0392B\" stroke-width=\"1.3\"/>\n<circle cx=\"295\" cy=\"166\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"324\" cy=\"166\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"63\" cy=\"120\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"92\" cy=\"120\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"121\" cy=\"120\" r=\"8\" fill=\"rgba(192,57,43,0.34)\" stroke=\"#C0392B\" stroke-width=\"1.4\"/>\n<circle cx=\"150\" cy=\"120\" r=\"8\" fill=\"rgba(192,57,43,0.34)\" stroke=\"#C0392B\" stroke-width=\"1.4\"/>\n<circle cx=\"179\" cy=\"120\" r=\"8\" fill=\"rgba(192,57,43,0.34)\" stroke=\"#C0392B\" stroke-width=\"1.4\"/>\n<circle cx=\"208\" cy=\"120\" r=\"8\" fill=\"rgba(192,57,43,0.34)\" stroke=\"#C0392B\" stroke-width=\"1.4\"/>\n<circle cx=\"237\" cy=\"120\" r=\"8\" fill=\"rgba(192,57,43,0.34)\" stroke=\"#C0392B\" stroke-width=\"1.4\"/>\n<circle cx=\"266\" cy=\"120\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"295\" cy=\"120\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"92\" cy=\"74\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"121\" cy=\"74\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"150\" cy=\"74\" r=\"8\" fill=\"rgba(192,57,43,0.55)\" stroke=\"#C0392B\" stroke-width=\"1.6\"/>\n<circle cx=\"179\" cy=\"74\" r=\"8\" fill=\"rgba(192,57,43,0.55)\" stroke=\"#C0392B\" stroke-width=\"1.6\"/>\n<circle cx=\"208\" cy=\"74\" r=\"8\" fill=\"rgba(192,57,43,0.55)\" stroke=\"#C0392B\" stroke-width=\"1.6\"/>\n<circle cx=\"237\" cy=\"74\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"266\" cy=\"74\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"121\" cy=\"28\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"150\" cy=\"28\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"179\" cy=\"28\" r=\"8\" fill=\"#C0392B\" stroke=\"#C0392B\" stroke-width=\"2.0\"/>\n<circle cx=\"208\" cy=\"28\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<circle cx=\"237\" cy=\"28\" r=\"8\" fill=\"#FFFFFF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n<text x=\"355\" y=\"170\" class=\"svg-caption\">input (7 visti)</text>\n<text x=\"355\" y=\"124\" class=\"svg-caption\">strato 1 (5)</text>\n<text x=\"355\" y=\"78\" class=\"svg-caption\">strato 2 (3)</text>\n<text x=\"355\" y=\"32\" class=\"svg-caption svg-red\">strato 3 (1)</text>\n<text x=\"195\" y=\"196\" text-anchor=\"middle\" class=\"svg-caption\">kernel ampiezza 3 → campo recettivo = 7 input allo strato 3</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 10.3,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "quattro scelte architetturali"
@@ -183,25 +227,29 @@
           "at": 13.08,
           "action": "highlight",
           "target": "#p1",
-          "anchor": "Primo: un campo recettivo piccolo"
+          "anchor": "Primo: un campo recettivo piccolo",
+          "duration": 10.56
         },
         {
           "at": 23.79,
           "action": "highlight",
           "target": "#p2",
-          "anchor": "Secondo: lo stesso filtro"
+          "anchor": "Secondo: lo stesso filtro",
+          "duration": 11.39
         },
         {
           "at": 35.33,
           "action": "highlight",
           "target": "#p3",
-          "anchor": "Terzo: i filtri sono appresi"
+          "anchor": "Terzo: i filtri sono appresi",
+          "duration": 13.17
         },
         {
           "at": 48.65,
           "action": "highlight",
           "target": "#p4",
-          "anchor": "Quarto: impiliamo molti strati"
+          "anchor": "Quarto: impiliamo molti strati",
+          "duration": 8.73
         },
         {
           "at": 57.53,
@@ -219,16 +267,28 @@
       "section": "14.3 Pooling",
       "title": "Pooling e invarianza locale: media e max pooling",
       "tts_text": "Accanto alla convoluzione, il secondo mattone fondamentale di una rete convoluzionale è il pooling. [pause:0.7] Il compito del pooling è ridurre la dimensione spaziale della feature map: invece di mantenere un valore per ogni singola posizione, sintetizza un intero insieme rettangolare di posizioni in un unico numero. [pause:0.7] Questa operazione esegue un sotto-campionamento usando uno stride maggiore di uno. Come si aggregano i valori nel blocco? Si può calcolare una media, semplice o pesata — il cosiddetto average pooling — oppure, molto più comunemente nella pratica, prendere il valore massimo, cioè il max pooling. [pause:0.8] Osserviamo l'esempio numerico sulla figura: partiamo da una feature map quattro per quattro suddivisa in quattro quadranti colorati due per due, e applichiamo un max pooling due per due con stride due. Dal blocco blu in alto a sinistra estraiamo il massimo sei; dal blocco rosso il massimo otto; dal blocco verde il massimo tre; dal blocco arancio il massimo quattro. La mappa si dimezza su ogni lato diventando due per due. [pause:0.8] Oltre a comprimere la rappresentazione, il pooling offre un beneficio cruciale: rende la rappresentazione approssimativamente invariante a piccole traslazioni. Infatti, se un tratto nell'input si sposta di uno o due pixel, il massimo o la media della sua piccola regione cambia pochissimo o resta invariato.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.3 · Pooling</div>\n  <h2 class=\"slide-title\">Riduzione della feature map e invarianza a piccole traslazioni</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 380 190\" class=\"diagram-svg\" aria-label=\"Max pooling 2x2 con stride 2 da feature map 4x4 a 2x2\">\n        <defs>\n  <marker id=\"arr-mp\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/></marker>\n</defs>\n<rect x=\"22\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"56\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"90\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">2</text>\n<rect x=\"124\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">4</text>\n<rect x=\"22\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\">5</text>\n<rect x=\"56\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">6</text>\n<rect x=\"90\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\">7</text>\n<rect x=\"124\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">8</text>\n<rect x=\"22\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">3</text>\n<rect x=\"56\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\">2</text>\n<rect x=\"90\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"124\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\">0</text>\n<rect x=\"22\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"56\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\">2</text>\n<rect x=\"90\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\">3</text>\n<rect x=\"124\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">4</text>\n<text x=\"90\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">feature map 4×4</text>\n<line x1=\"176\" y1=\"92\" x2=\"262\" y2=\"92\" stroke=\"#1A1A1A\" stroke-width=\"2\" marker-end=\"url(#arr-mp)\"/>\n<text x=\"219\" y=\"76\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"600\">max pooling</text>\n<text x=\"219\" y=\"110\" text-anchor=\"middle\" class=\"svg-tick\">2×2, stride 2</text>\n<rect x=\"280\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"297.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">6</text>\n<rect x=\"314\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"331.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">8</text>\n<rect x=\"280\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"297.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">3</text>\n<rect x=\"314\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"331.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">4</text>\n<text x=\"314\" y=\"148\" text-anchor=\"middle\" class=\"svg-caption\">mappa ridotta 2×2</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Che cos'è il pooling</div>\n        <p>Sostituisce un <strong>insieme rettangolare</strong> di posizioni con un solo valore tramite sotto-campionamento (<strong>stride &gt; 1</strong>):</p>\n        <ul class=\"clean-list\" style=\"margin-top:6px;\">\n          <li><strong>Average pooling</strong>: media semplice o pesata.</li>\n          <li><strong>Max pooling</strong> (più comune): valore massimo del blocco.</li>\n        </ul>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Invarianza approssimata</div>\n        <p>Rende la rappresentazione <strong>approssimativamente invariante a piccole traslazioni</strong>: se l'input si sposta di poco, il massimo (o la media) di una zona cambia poco.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.3 · Pooling</div>\n  <h2 class=\"slide-title\">Riduzione della feature map e invarianza a piccole traslazioni</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 380 190\" class=\"diagram-svg\" aria-label=\"Max pooling 2x2 con stride 2 da feature map 4x4 a 2x2\">\n        <defs>\n  <marker id=\"arr-mp\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/></marker>\n</defs>\n<rect x=\"22\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"56\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"90\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">2</text>\n<rect x=\"124\" y=\"24\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"46.0\" text-anchor=\"middle\" class=\"svg-math-sm\">4</text>\n<rect x=\"22\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\">5</text>\n<rect x=\"56\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">6</text>\n<rect x=\"90\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\">7</text>\n<rect x=\"124\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">8</text>\n<rect x=\"22\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">3</text>\n<rect x=\"56\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\">2</text>\n<rect x=\"90\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"124\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\">0</text>\n<rect x=\"22\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"39.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\">1</text>\n<rect x=\"56\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"73.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\">2</text>\n<rect x=\"90\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"107.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\">3</text>\n<rect x=\"124\" y=\"126\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"141.0\" y=\"148.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">4</text>\n<text x=\"90\" y=\"178\" text-anchor=\"middle\" class=\"svg-caption\">feature map 4×4</text>\n<line x1=\"176\" y1=\"92\" x2=\"262\" y2=\"92\" stroke=\"#1A1A1A\" stroke-width=\"2\" marker-end=\"url(#arr-mp)\"/>\n<text x=\"219\" y=\"76\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"600\">max pooling</text>\n<text x=\"219\" y=\"110\" text-anchor=\"middle\" class=\"svg-tick\">2×2, stride 2</text>\n<rect x=\"280\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(31,90,158,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"297.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">6</text>\n<rect x=\"314\" y=\"58\" width=\"34\" height=\"34\" fill=\"rgba(192,57,43,0.18)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"331.0\" y=\"80.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">8</text>\n<rect x=\"280\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(46,125,50,0.20)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"297.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">3</text>\n<rect x=\"314\" y=\"92\" width=\"34\" height=\"34\" fill=\"rgba(217,130,43,0.22)\" stroke=\"#1A1A1A\" stroke-width=\"1.4\"/>\n<text x=\"331.0\" y=\"114.0\" text-anchor=\"middle\" class=\"svg-math-sm\" font-weight=\"700\">4</text>\n<text x=\"314\" y=\"148\" text-anchor=\"middle\" class=\"svg-caption\">mappa ridotta 2×2</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Che cos'è il pooling</div>\n        <p>Sostituisce un <strong>insieme rettangolare</strong> di posizioni con un solo valore tramite sotto-campionamento (<strong>stride &gt; 1</strong>):</p>\n        <ul class=\"clean-list\" style=\"margin-top:6px;\">\n          <li id=\"li5-1\"><strong>Average pooling</strong>: media semplice o pesata.</li>\n          <li id=\"li5-2\"><strong>Max pooling</strong> (più comune): valore massimo del blocco.</li>\n        </ul>\n      </div>\n      <div id=\"s3\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Invarianza approssimata</div>\n        <p>Rende la rappresentazione <strong>approssimativamente invariante a piccole traslazioni</strong>: se l'input si sposta di poco, il massimo (o la media) di una zona cambia poco.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 7.56,
+          "at": 4.1,
           "action": "show",
           "target": "#s2",
           "anchor": "ridurre la dimensione spaziale"
         },
         {
-          "at": 36.0,
+          "at": 25.37,
+          "action": "highlight",
+          "target": "#li5-1",
+          "duration": 5.26
+        },
+        {
+          "at": 30.75,
+          "action": "highlight",
+          "target": "#li5-2",
+          "duration": 4.77
+        },
+        {
+          "at": 36,
           "action": "show",
           "target": "#s1",
           "anchor": "Osserviamo l'esempio numerico"
@@ -238,6 +298,12 @@
           "action": "show",
           "target": "#s3",
           "anchor": "approssimativamente invariante a piccole traslazioni"
+        },
+        {
+          "at": 68.25,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 11.44
         }
       ],
       "duration_sec": 80.05,
@@ -252,7 +318,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.4 · La CNN nel complesso</div>\n  <h2 class=\"slide-title\">Pipeline gerarchica, quattro ingredienti e addestramento</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 584 180\" class=\"diagram-svg\" aria-label=\"Schema completo di una CNN: feature learning e classificazione\">\n      <g id=\"cnn-in\">\n<rect x=\"20\" y=\"78\" width=\"58\" height=\"58\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<rect x=\"25\" y=\"73\" width=\"58\" height=\"58\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<rect x=\"30\" y=\"68\" width=\"58\" height=\"58\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.2\"/>\n<text x=\"54\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick\">input</text>\n<text x=\"54\" y=\"170\" text-anchor=\"middle\" class=\"svg-caption\">(es. RGB)</text>\n</g>\n<g id=\"cnn-c1\">\n<rect x=\"114\" y=\"88\" width=\"48\" height=\"48\" fill=\"rgba(31,90,158,0.14)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"119\" y=\"83\" width=\"48\" height=\"48\" fill=\"rgba(31,90,158,0.14)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"124\" y=\"78\" width=\"48\" height=\"48\" fill=\"rgba(31,90,158,0.14)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"129\" y=\"73\" width=\"48\" height=\"48\" fill=\"rgba(31,90,158,0.14)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<text x=\"146\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick svg-blue\">conv</text>\n<text x=\"146\" y=\"170\" text-anchor=\"middle\" class=\"svg-caption\">(+ReLU)</text>\n</g>\n<g id=\"cnn-p1\">\n<rect x=\"208\" y=\"94\" width=\"32\" height=\"32\" fill=\"rgba(46,125,50,0.14)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"213\" y=\"89\" width=\"32\" height=\"32\" fill=\"rgba(46,125,50,0.14)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"218\" y=\"84\" width=\"32\" height=\"32\" fill=\"rgba(46,125,50,0.14)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"223\" y=\"79\" width=\"32\" height=\"32\" fill=\"rgba(46,125,50,0.14)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<text x=\"232\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick svg-green\">pooling</text>\n</g>\n<g id=\"cnn-c2\">\n<rect x=\"286.0\" y=\"98.0\" width=\"28\" height=\"28\" fill=\"rgba(31,90,158,0.16)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"290.2\" y=\"93.8\" width=\"28\" height=\"28\" fill=\"rgba(31,90,158,0.16)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"294.4\" y=\"89.6\" width=\"28\" height=\"28\" fill=\"rgba(31,90,158,0.16)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"298.6\" y=\"85.4\" width=\"28\" height=\"28\" fill=\"rgba(31,90,158,0.16)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"302.8\" y=\"81.2\" width=\"28\" height=\"28\" fill=\"rgba(31,90,158,0.16)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"307.0\" y=\"77.0\" width=\"28\" height=\"28\" fill=\"rgba(31,90,158,0.16)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<rect x=\"311.2\" y=\"72.8\" width=\"28\" height=\"28\" fill=\"rgba(31,90,158,0.16)\" stroke=\"#1F5A9E\" stroke-width=\"1.2\"/>\n<text x=\"313\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick svg-blue\">conv</text>\n</g>\n<g id=\"cnn-p2\">\n<rect x=\"374.0\" y=\"100.0\" width=\"18\" height=\"18\" fill=\"rgba(46,125,50,0.16)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"378.2\" y=\"95.8\" width=\"18\" height=\"18\" fill=\"rgba(46,125,50,0.16)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"382.4\" y=\"91.6\" width=\"18\" height=\"18\" fill=\"rgba(46,125,50,0.16)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"386.6\" y=\"87.4\" width=\"18\" height=\"18\" fill=\"rgba(46,125,50,0.16)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"390.8\" y=\"83.2\" width=\"18\" height=\"18\" fill=\"rgba(46,125,50,0.16)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"395.0\" y=\"79.0\" width=\"18\" height=\"18\" fill=\"rgba(46,125,50,0.16)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<rect x=\"399.2\" y=\"74.8\" width=\"18\" height=\"18\" fill=\"rgba(46,125,50,0.16)\" stroke=\"#2E7D32\" stroke-width=\"1.2\"/>\n<text x=\"396\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick svg-green\">pooling</text>\n</g>\n<g id=\"cnn-fc\">\n<circle cx=\"472\" cy=\"60\" r=\"4\" fill=\"#1A1A1A\"/>\n<circle cx=\"472\" cy=\"74\" r=\"4\" fill=\"#1A1A1A\"/>\n<circle cx=\"472\" cy=\"88\" r=\"4\" fill=\"#1A1A1A\"/>\n<circle cx=\"472\" cy=\"102\" r=\"4\" fill=\"#1A1A1A\"/>\n<circle cx=\"472\" cy=\"116\" r=\"4\" fill=\"#1A1A1A\"/>\n<circle cx=\"472\" cy=\"130\" r=\"4\" fill=\"#1A1A1A\"/>\n<circle cx=\"546\" cy=\"76\" r=\"6\" class=\"svg-node-fill\"/>\n<line x1=\"476\" y1=\"60\" x2=\"540\" y2=\"76\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"74\" x2=\"540\" y2=\"76\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"88\" x2=\"540\" y2=\"76\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"102\" x2=\"540\" y2=\"76\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"116\" x2=\"540\" y2=\"76\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"130\" x2=\"540\" y2=\"76\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<circle cx=\"546\" cy=\"94\" r=\"6\" class=\"svg-node-fill\"/>\n<line x1=\"476\" y1=\"60\" x2=\"540\" y2=\"94\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"74\" x2=\"540\" y2=\"94\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"88\" x2=\"540\" y2=\"94\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"102\" x2=\"540\" y2=\"94\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"116\" x2=\"540\" y2=\"94\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"130\" x2=\"540\" y2=\"94\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<circle cx=\"546\" cy=\"112\" r=\"6\" class=\"svg-node-fill\"/>\n<line x1=\"476\" y1=\"60\" x2=\"540\" y2=\"112\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"74\" x2=\"540\" y2=\"112\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"88\" x2=\"540\" y2=\"112\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"102\" x2=\"540\" y2=\"112\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"116\" x2=\"540\" y2=\"112\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<line x1=\"476\" y1=\"130\" x2=\"540\" y2=\"112\" stroke=\"#6E6E6E\" stroke-opacity=\"0.45\" stroke-width=\"1\"/>\n<text x=\"472\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick\">strati</text>\n<text x=\"472\" y=\"170\" text-anchor=\"middle\" class=\"svg-tick\">densi</text>\n<text x=\"546\" y=\"156\" text-anchor=\"middle\" class=\"svg-tick svg-red\">uscita</text>\n<text x=\"546\" y=\"170\" text-anchor=\"middle\" class=\"svg-caption\">(softmax)</text>\n</g>\n<path d=\"M 114,34 L 114,26 L 422,26 L 422,34\" fill=\"none\" stroke=\"#1F5A9E\" stroke-width=\"1.5\"/>\n<text x=\"268\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption svg-blue\" font-weight=\"600\">feature learning (piramide gerarchica)</text>\n<path d=\"M 454,34 L 454,26 L 566,26 L 566,34\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"1.5\"/>\n<text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption svg-red\" font-weight=\"600\">classificazione</text>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">I quattro ingredienti e i loro vantaggi</div>\n    <ol class=\"clean-list\">\n      <li><strong>Connessioni locali</strong> e <strong>(2) pesi condivisi</strong>: invarianza alla traslazione e riduzione dei parametri liberi → <strong>regolarizzazione</strong>.</li>\n      <li><strong>Pooling</strong>: «piramide» di strati sempre più piccoli + invarianza a piccoli spostamenti e distorsioni.</li>\n      <li><strong>Molti strati</strong>: <strong>astrazione progressiva</strong> (primitive di basso livello composte in feature di alto livello con campo recettivo ampio).</li>\n    </ol>\n  </div>\n  <div id=\"s3\" class=\"box box-muted cue-hidden\">\n    <div class=\"box-label\">Addestramento</div>\n    <p><strong>Backpropagation</strong> con specializzazioni (pesi condivisi, pooling). Reti e dati grandi → molti iperparametri si fissano <strong>per esperienza</strong> (cross-validation estesa troppo costosa).</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 16.35,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Osserviamo lo schema completo"
@@ -261,13 +327,15 @@
           "at": 23.25,
           "action": "highlight",
           "target": "#cnn-in, #cnn-c1, #cnn-p1, #cnn-c2, #cnn-p2",
-          "anchor": "parte di feature learning"
+          "anchor": "parte di feature learning",
+          "duration": 12.13
         },
         {
           "at": 35.53,
           "action": "highlight",
           "target": "#cnn-fc",
-          "anchor": "parte di classificazione"
+          "anchor": "parte di classificazione",
+          "duration": 7.07
         },
         {
           "at": 42.75,
@@ -276,10 +344,22 @@
           "anchor": "quattro ingredienti della CNN"
         },
         {
+          "at": 42.85,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 41.22
+        },
+        {
           "at": 84.27,
           "action": "show",
           "target": "#s3",
           "anchor": "addestramento avviene con backpropagation"
+        },
+        {
+          "at": 84.37,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 14.25
         }
       ],
       "duration_sec": 98.96,
@@ -294,7 +374,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.5.1 · Risultati classici (LeCun)</div>\n  <h2 class=\"slide-title\">Connessioni locali e pesi condivisi su cifre manoscritte (~300 training)</h2>\n  <div class=\"split-visual\">\n    <div id=\"s1\" class=\"formula-col cue-hidden\">\n      <table class=\"acad-table acad-table-compact\">\n        <thead>\n          <tr><th>Rete</th><th>Architettura</th><th>Connessioni</th><th>Pesi</th><th>Acc. test</th></tr>\n        </thead>\n        <tbody>\n          <tr id=\"r1\"><td>Net-1</td><td>nessun hidden</td><td>2570</td><td>2570</td><td>~72%</td></tr>\n          <tr id=\"r2\"><td>Net-2</td><td>FC, 1 hidden</td><td>3214</td><td>3214</td><td>~88%</td></tr>\n          <tr id=\"r3\"><td>Net-3</td><td>locali \\(3\\times 3\\)</td><td>1226</td><td>1226</td><td>~88%</td></tr>\n          <tr id=\"r4\" class=\"row-key\"><td><strong>Net-4</strong></td><td>locali + condivisi</td><td>2266</td><td><strong>1132</strong></td><td><strong>~98%</strong></td></tr>\n          <tr id=\"r5\" class=\"row-key\"><td><strong>Net-5</strong></td><td>locali + condivisi</td><td><strong>5194</strong></td><td><strong>1060</strong></td><td><strong>98,4%</strong></td></tr>\n        </tbody>\n      </table>\n      <div id=\"s3\" class=\"box box-primary cue-hidden\">\n        <div class=\"box-label\">Effetto regolarizzante del weight sharing</div>\n        <p>Errore di training <strong>nullo per tutte</strong>; sul test Net-5 raggiunge <strong>98,4%</strong> (errore <strong>1,6%</strong>): molte connessioni ma pochi parametri liberi.</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 330 214\" class=\"diagram-svg\" aria-label=\"Grafico a barre connessioni vs pesi liberi nell'esperimento di LeCun\">\n        <text x=\"165\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\" font-weight=\"600\">Connessioni vs Pesi liberi (LeCun)</text>\n<text x=\"48\" y=\"47\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">Net-1</text>\n<rect x=\"56\" y=\"32\" width=\"91.1\" height=\"10\" rx=\"2\" fill=\"rgba(31,90,158,0.68)\"/>\n<rect x=\"56\" y=\"44\" width=\"91.1\" height=\"10\" rx=\"2\" fill=\"#C0392B\"/>\n<text x=\"318\" y=\"47\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">72%</text>\n<text x=\"48\" y=\"79\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">Net-2</text>\n<rect x=\"56\" y=\"64\" width=\"114.0\" height=\"10\" rx=\"2\" fill=\"rgba(31,90,158,0.68)\"/>\n<rect x=\"56\" y=\"76\" width=\"114.0\" height=\"10\" rx=\"2\" fill=\"#C0392B\"/>\n<text x=\"318\" y=\"79\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">88%</text>\n<text x=\"48\" y=\"111\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">Net-3</text>\n<rect x=\"56\" y=\"96\" width=\"43.5\" height=\"10\" rx=\"2\" fill=\"rgba(31,90,158,0.68)\"/>\n<rect x=\"56\" y=\"108\" width=\"43.5\" height=\"10\" rx=\"2\" fill=\"#C0392B\"/>\n<text x=\"318\" y=\"111\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">88%</text>\n<text x=\"48\" y=\"143\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">Net-4</text>\n<rect x=\"56\" y=\"128\" width=\"80.3\" height=\"10\" rx=\"2\" fill=\"rgba(31,90,158,0.68)\"/>\n<rect x=\"56\" y=\"140\" width=\"40.1\" height=\"10\" rx=\"2\" fill=\"#C0392B\"/>\n<text x=\"318\" y=\"143\" text-anchor=\"end\" class=\"svg-tick svg-green\" font-weight=\"600\">98%</text>\n<text x=\"48\" y=\"175\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"600\">Net-5</text>\n<rect x=\"56\" y=\"160\" width=\"184.2\" height=\"10\" rx=\"2\" fill=\"rgba(31,90,158,0.68)\"/>\n<rect x=\"56\" y=\"172\" width=\"37.6\" height=\"10\" rx=\"2\" fill=\"#C0392B\"/>\n<text x=\"318\" y=\"175\" text-anchor=\"end\" class=\"svg-tick svg-green\" font-weight=\"600\">98,4%</text>\n<rect x=\"56\" y=\"196\" width=\"12\" height=\"8\" rx=\"1.5\" fill=\"rgba(31,90,158,0.68)\"/>\n<text x=\"72\" y=\"203\" class=\"svg-legend\">connessioni</text>\n<rect x=\"148\" y=\"196\" width=\"12\" height=\"8\" rx=\"1.5\" fill=\"#C0392B\"/>\n<text x=\"164\" y=\"203\" class=\"svg-legend\">pesi liberi</text>\n<text x=\"318\" y=\"203\" text-anchor=\"end\" class=\"svg-legend svg-green\">acc. test</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.68,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "esperimento storico di Yann LeCun"
@@ -303,19 +383,22 @@
           "at": 18.06,
           "action": "highlight",
           "target": "#r1",
-          "anchor": "Net uno non ha alcuno strato"
+          "anchor": "Net uno non ha alcuno strato",
+          "duration": 6.67
         },
         {
           "at": 24.88,
           "action": "highlight",
           "target": "#r2",
-          "anchor": "Net due è un MLP"
+          "anchor": "Net due è un MLP",
+          "duration": 9.47
         },
         {
           "at": 34.5,
           "action": "highlight",
           "target": "#r3",
-          "anchor": "Net tre introduce connessioni locali"
+          "anchor": "Net tre introduce connessioni locali",
+          "duration": 8.53
         },
         {
           "at": 43.18,
@@ -327,13 +410,20 @@
           "at": 43.18,
           "action": "highlight",
           "target": "#r4, #r5",
-          "anchor": "svolta arriva con Net quattro"
+          "anchor": "svolta arriva con Net quattro",
+          "duration": 18
         },
         {
           "at": 62.81,
           "action": "show",
           "target": "#s3",
           "anchor": "Guardiamo i risultati di generalizzazione"
+        },
+        {
+          "at": 62.91,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 35.16
         }
       ],
       "duration_sec": 98.42,
@@ -348,7 +438,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.5.2 · Altri risultati e architetture moderne</div>\n  <h2 class=\"slide-title\">MNIST, AlexNet, GPU a tensori e Capsule Network</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">MNIST (60 000 train · 10 000 test)</div>\n      <p>Errori di pochi decimi di punto %. Anche MLP profondi arrivano lì, ma serve <strong>data augmentation</strong> (molte immagini deformate).</p>\n      <p style=\"margin-top:6px;color:var(--accent);font-size:0.84rem;\"><strong>Attenzione:</strong> il test set MNIST è stato riusato così tanto da diventare di fatto un <strong>validation set</strong> (Δ 0,1% non più significativi).</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">AlexNet su ImageNet (~60 M parametri)</div>\n      <p><strong>5 strati conv</strong> (+ max pooling) + strati densi con <strong>softmax a 1000 classi</strong>. Accelerazione con unità non saturanti (<strong>ReLU</strong>) e <strong>GPU</strong>; regolarizzazione degli strati densi con <strong>dropout</strong>.</p>\n    </div>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s3\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">Transfer learning e calcolo su GPU</div>\n      <p>Riuso di reti <strong>pre-addestrate</strong>. Le <strong>GPU</strong> sfruttano <strong>tensori</strong> e moltiplicazioni fra <strong>matrici a blocchi</strong> per parallelizzare le convoluzioni.</p>\n    </div>\n    <div id=\"s4\" class=\"box box-idea cue-hidden\">\n      <div class=\"box-label\">Capsule Network (alternativa al max pooling)</div>\n      <p>Una <strong>capsula</strong> (gruppo di neuroni) produce: (1) presenza dell'entità, (2) vettore di <strong>parametri di posa</strong> (posizione, orientamento). Un meccanismo di <strong>routing</strong> sostituisce il pooling.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.09,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Sul celebre dataset MNIST"
@@ -360,16 +450,34 @@
           "anchor": "Il vero spartiacque su immagini naturali"
         },
         {
+          "at": 44.79,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 28.75
+        },
+        {
           "at": 73.74,
           "action": "show",
           "target": "#s3",
           "anchor": "riusare le feature di reti pre-addestrate"
         },
         {
+          "at": 73.84,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 18.62
+        },
+        {
           "at": 92.66,
           "action": "show",
           "target": "#s4",
           "anchor": "alternativa elegante al max pooling"
+        },
+        {
+          "at": 92.76,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 17.6
         }
       ],
       "duration_sec": 110.71,
@@ -390,10 +498,22 @@
           "anchor": "Primo: la convoluzione"
         },
         {
+          "at": 4.64,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8.93
+        },
+        {
           "at": 13.74,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: i concetti operativi"
+        },
+        {
+          "at": 13.82,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 13.34
         },
         {
           "at": 27.33,
@@ -402,10 +522,22 @@
           "anchor": "Terzo: la condivisione dei pesi"
         },
         {
+          "at": 27.41,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10.01
+        },
+        {
           "at": 37.59,
           "action": "show",
           "target": "#s4",
           "anchor": "Quarto: impilando più strati"
+        },
+        {
+          "at": 37.67,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 25
         },
         {
           "at": 48.43,

@@ -18,7 +18,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.1 · Vettori, prodotto scalare e norme</div>\n  <h2 class=\"slide-title\">Prodotto scalare e lettura geometrica</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Prodotto scalare (inner / dot product) · \\(x\\) scalare, \\(\\x\\) vettore colonna, \\(X\\) matrice</div>\n    \\[\\htmlId{f-dot}{\\vv{a}\\cdot\\vv{b} = a_1 b_1 + \\dots + a_n b_n = \\sum_{i=1}^{n} a_i b_i = \\norm{\\vv{a}}\\,\\norm{\\vv{b}}\\cos\\theta}\\]\n    <p class=\"math-note\">Notazioni equivalenti: \\(\\vv{a}\\cdot\\vv{b} = \\vv{a}\\T\\vv{b} = \\vv{a}^t\\vv{b} = \\langle\\vv{a},\\vv{b}\\rangle\\) (o \\(\\vv{a}\\vv{b}\\)). Nei modelli lineari, \\(\\w\\T\\x\\) misura l'<strong>allineamento</strong> tra \\(\\x\\) e \\(\\w\\).</p>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div class=\"formula-col\">\n      <div class=\"box box-primary\">\n        <div class=\"box-label\">Esempio numerico guidato · \\(\\w = (2,\\,1)\\)</div>\n        <ul class=\"clean-list\" style=\"font-size:0.86rem;\">\n          <li id=\"ex-1\">\\(\\x_1=(3,1)\\): \\(\\w\\T\\x_1 = 2\\cdot 3 + 1\\cdot 1 = \\mathbf{+7} > 0\\) (concordi)</li>\n          <li id=\"ex-2\">\\(\\x_2=(-1,2)\\): \\(\\w\\T\\x_2 = 2(-1) + 1\\cdot 2 = \\mathbf{0}\\) (ortogonali, \\(90^\\circ\\))</li>\n          <li id=\"ex-3\">\\(\\x_3=(-2,-1)\\): \\(\\w\\T\\x_3 = 2(-2) + 1(-1) = \\mathbf{-5} < 0\\) (opposti)</li>\n        </ul>\n      </div>\n    </div>\n    <div class=\"svg-panel\">\n      <svg class=\"diagram-svg\" viewBox=\"0 0 340 242\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Esempio geometrico di prodotto scalare in due dimensioni\"><defs><marker id=\"ab-b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#1F5A9E\"/></marker><marker id=\"ab-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#2E7D32\"/></marker><marker id=\"ab-o\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#D97706\"/></marker><marker id=\"ab-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#C0392B\"/></marker><marker id=\"ab-ax\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#6E6E6E\"/></marker></defs><line x1=\"40.0\" y1=\"22\" x2=\"40.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"86.0\" y1=\"22\" x2=\"86.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"132.0\" y1=\"22\" x2=\"132.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"178.0\" y1=\"22\" x2=\"178.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"224.0\" y1=\"22\" x2=\"224.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"270.0\" y1=\"22\" x2=\"270.0\" y2=\"226\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"192.0\" x2=\"322\" y2=\"192.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"146.0\" x2=\"322\" y2=\"146.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"100.0\" x2=\"322\" y2=\"100.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"54.0\" x2=\"322\" y2=\"54.0\" stroke=\"#CCCCCC\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/><line x1=\"16\" y1=\"146.0\" x2=\"324\" y2=\"146.0\" class=\"svg-axis\" marker-end=\"url(#ab-ax)\"/><line x1=\"132.0\" y1=\"228\" x2=\"132.0\" y2=\"18\" class=\"svg-axis\" marker-end=\"url(#ab-ax)\"/><text x=\"327\" y=\"150.0\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text><text x=\"138.0\" y=\"19\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text><path d=\"M 143.5,140.2 L 137.8,128.7 L 126.2,134.5\" fill=\"none\" stroke=\"#D97706\" stroke-width=\"1.3\"/><g id=\"vg-x1\"><line x1=\"132.0\" y1=\"146.0\" x2=\"270.0\" y2=\"100.0\" stroke=\"#2E7D32\" stroke-width=\"2.4\" marker-end=\"url(#ab-g)\"/><text x=\"332\" y=\"90.0\" text-anchor=\"end\" class=\"svg-green\" font-size=\"11.5\" font-weight=\"700\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>=(3,1) · +7</text></g><g id=\"vg-w\"><line x1=\"132.0\" y1=\"146.0\" x2=\"224.0\" y2=\"100.0\" stroke=\"#1F5A9E\" stroke-width=\"3.0\" marker-end=\"url(#ab-b)\"/><text x=\"192.0\" y=\"122.0\" class=\"svg-blue\" font-size=\"12\" font-weight=\"700\">w=(2,1)</text></g><g id=\"vg-x2\"><line x1=\"132.0\" y1=\"146.0\" x2=\"86.0\" y2=\"54.0\" stroke=\"#D97706\" stroke-width=\"2.4\" marker-end=\"url(#ab-o)\"/><text x=\"12\" y=\"44.0\" fill=\"#D97706\" font-size=\"11.5\" font-weight=\"700\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>=(-1,2) · 0</text></g><g id=\"vg-x3\"><line x1=\"132.0\" y1=\"146.0\" x2=\"40.0\" y2=\"192.0\" stroke=\"#C0392B\" stroke-width=\"2.4\" marker-end=\"url(#ab-r)\"/><text x=\"12\" y=\"210.0\" class=\"svg-red\" font-size=\"11.5\" font-weight=\"700\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">3</tspan>=(-2,-1) · -5</text></g><circle cx=\"132.0\" cy=\"146.0\" r=\"2.8\" fill=\"#1A1A1A\"/></svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 19.78,
+          "at": 3.66,
           "action": "show",
           "target": "#s1",
           "anchor": "Dati due vettori a e b"
@@ -27,7 +27,8 @@
           "at": 33.12,
           "action": "highlight",
           "target": "#f-dot",
-          "anchor": "coseno dell'angolo teta"
+          "anchor": "coseno dell'angolo teta",
+          "duration": 18
         },
         {
           "at": 68.45,
@@ -39,19 +40,22 @@
           "at": 72.73,
           "action": "highlight",
           "target": "#ex-1, #vg-x1",
-          "anchor": "Con x con uno uguale a tre virgola uno"
+          "anchor": "Con x con uno uguale a tre virgola uno",
+          "duration": 8.33
         },
         {
           "at": 81.21,
           "action": "highlight",
           "target": "#ex-2, #vg-x2",
-          "anchor": "Con x con due uguale a meno uno virgola due"
+          "anchor": "Con x con due uguale a meno uno virgola due",
+          "duration": 7.55
         },
         {
           "at": 88.91,
           "action": "highlight",
           "target": "#ex-3, #vg-x3",
-          "anchor": "con x con tre uguale a meno due virgola meno uno"
+          "anchor": "con x con tre uguale a meno due virgola meno uno",
+          "duration": 7.66
         }
       ],
       "duration_sec": 96.77,
@@ -78,16 +82,29 @@
           "anchor": "Calcoliamole su un esempio"
         },
         {
+          "at": 27.18,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 16.36
+        },
+        {
           "at": 43.74,
           "action": "show",
           "target": "#s3",
           "anchor": "un prodotto interno su uno spazio vettoriale"
         },
         {
+          "at": 43.84,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.82
+        },
+        {
           "at": 52.78,
           "action": "highlight",
           "target": "#f-cs",
-          "anchor": "Teorema di Cauchy-Schwarz"
+          "anchor": "Teorema di Cauchy-Schwarz",
+          "duration": 18
         },
         {
           "at": 84.03,
@@ -96,10 +113,22 @@
           "anchor": "sviluppo del quadrato della norma"
         },
         {
+          "at": 84.13,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 8.22
+        },
+        {
           "at": 92.55,
           "action": "show",
           "target": "#s5",
           "anchor": "Infine, il tensore"
+        },
+        {
+          "at": 92.65,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 17.5
         }
       ],
       "duration_sec": 110.5,
@@ -123,7 +152,8 @@
           "at": 18.8,
           "action": "highlight",
           "target": "#f-grad",
-          "anchor": "otteniamo il gradiente di f"
+          "anchor": "otteniamo il gradiente di f",
+          "duration": 13.37
         },
         {
           "at": 32.32,
@@ -132,16 +162,34 @@
           "anchor": "esercizio numerico guidato"
         },
         {
+          "at": 32.42,
+          "action": "highlight",
+          "target": "#st1",
+          "duration": 24.29
+        },
+        {
           "at": 56.91,
           "action": "show",
           "target": "#st2",
           "anchor": "Valutiamo in P uguale uno virgola uno"
         },
         {
+          "at": 57.01,
+          "action": "highlight",
+          "target": "#st2",
+          "duration": 7.74
+        },
+        {
           "at": 64.95,
           "action": "show",
           "target": "#st3",
           "anchor": "Facciamo ora un passo di discesa"
+        },
+        {
+          "at": 65.05,
+          "action": "highlight",
+          "target": "#st3",
+          "duration": 22
         }
       ],
       "duration_sec": 87.4,
@@ -153,7 +201,7 @@
       "section": "1.2 Significato geometrico e punti stazionari",
       "title": "Derivata direzionale, curve di livello e punti stazionari",
       "tts_text": "Perché muoversi lungo meno nabla f ha fatto scendere subito f? L'idea geometrica è chiave: in un punto, il gradiente punta nella direzione di massima crescita di f, e la sua norma dice quanto è ripida la pendenza; il suo opposto meno nabla f indica la direzione di decrescita più rapida, base della discesa del gradiente che addestra quasi tutti i modelli del corso. [pause:0.7] La prova usa il prodotto scalare. Lungo una direzione unitaria u, la variazione di f è la derivata direzionale D lungo u di f, uguale a nabla f scalare u, cioè norma di nabla f per coseno di teta. [pause:0.6] Osserviamolo sulle ellissi di livello di x uno quadro più due x due quadro. [pause:0.5] Per teta uguale zero, lungo nabla f in rosso, il coseno vale uno: crescita massima. Per teta uguale pi greco, lungo meno nabla f in verde, vale meno uno: decrescita più rapida, verso il minimo nell'origine. Per teta uguale pi greco mezzi vale zero: lungo le curve di livello f non cambia, quindi il gradiente è perpendicolare a esse. [pause:0.7] Un punto dove nabla f è nullo si chiama punto stazionario. Attenzione: il gradiente nullo da solo non basta a dire se è un minimo locale, un massimo locale o un punto di sella. Per esempio, g di x e y uguale x quadro meno y quadro ha gradiente nullo in zero virgola zero, ma sale a più uno lungo x e scende a meno uno lungo y.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.2 · Significato geometrico del gradiente</div>\n  <h2 class=\"slide-title\">Derivata direzionale, curve di livello e punti stazionari</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea — Significato geometrico</div>\n    <p>\\(\\nabla f\\) punta nella direzione di <strong>massima crescita</strong> (norma = ripidità); \\(-\\nabla f\\) indica la <strong>decrescita più rapida</strong> (base della <em>discesa del gradiente</em>).</p>\n  </div>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Derivata direzionale (\\(\\norm{\\vv{u}}=1\\))</div>\n        \\[\\htmlId{f-dir}{D_{\\vv{u}}f = \\nabla f \\cdot \\vv{u} = \\norm{\\nabla f}\\,\\norm{\\vv{u}}\\cos\\theta = \\norm{\\nabla f}\\cos\\theta}\\]\n        <ul class=\"clean-list\" style=\"font-size:0.82rem;\">\n          <li>\\(\\theta = 0\\) (\\(\\nabla f\\)): massimo \\(+\\norm{\\nabla f}\\)</li>\n          <li>\\(\\theta = \\pi\\) (\\(-\\nabla f\\)): minimo \\(-\\norm{\\nabla f}\\)</li>\n          <li>\\(\\theta = \\pi/2\\): \\(D_{\\vv{u}}f = 0 \\implies \\nabla f \\perp\\) <em>curve di livello</em></li>\n        </ul>\n      </div>\n      <div id=\"s4\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione — Punto stazionario (\\(\\nabla f = \\vv{0}\\))</div>\n        <p style=\"font-size:0.84rem;\">Può essere <strong>minimo locale</strong>, <strong>massimo locale</strong> o <strong>punto di sella</strong> (da solo \\(\\nabla f=\\vv{0}\\) non basta). Es. sella: \\(g(x,y)=x^2-y^2\\) in \\((0,0)\\): \\(g(1,0)=+1\\), \\(g(0,1)=-1\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg class=\"diagram-svg\" viewBox=\"0 0 360 248\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Curve di livello di f(x1,x2)=x1^2+2x2^2 e vettori gradiente e antigradiente\"><defs><marker id=\"gr-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#C0392B\"/></marker><marker id=\"gr-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#2E7D32\"/></marker><marker id=\"gr-ax\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#6E6E6E\"/></marker></defs><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"26.5\" ry=\"18.7\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"53.0\" ry=\"37.5\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"79.5\" ry=\"56.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"106.0\" ry=\"75.0\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.5\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"132.5\" ry=\"93.7\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><line x1=\"22\" y1=\"136.0\" x2=\"342\" y2=\"136.0\" class=\"svg-axis\" marker-end=\"url(#gr-ax)\"/><line x1=\"180.0\" y1=\"238\" x2=\"180.0\" y2=\"16\" class=\"svg-axis\" marker-end=\"url(#gr-ax)\"/><text x=\"345\" y=\"140.0\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text><text x=\"187.0\" y=\"19\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text><line x1=\"277.3\" y1=\"93.9\" x2=\"209.9\" y2=\"58.2\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 247.6,68.5 L 240.1,64.6 L 236.1,72.1\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.1\"/><circle cx=\"180.0\" cy=\"136.0\" r=\"3.6\" class=\"pt-pos\"/><text x=\"112.0\" y=\"127.0\" class=\"svg-blue\" font-size=\"11\" font-weight=\"600\">minimo (0,0)</text><g id=\"gv-plus\"><line x1=\"243.6\" y1=\"76.0\" x2=\"266.4\" y2=\"33.0\" stroke=\"#C0392B\" stroke-width=\"2.6\" marker-end=\"url(#gr-r)\"/><text x=\"273.4\" y=\"37.0\" class=\"svg-red\" font-size=\"12.5\" font-weight=\"700\">∇f</text></g><g id=\"gv-minus\"><line x1=\"243.6\" y1=\"76.0\" x2=\"220.8\" y2=\"119.1\" stroke=\"#2E7D32\" stroke-width=\"2.6\" marker-end=\"url(#gr-g)\"/><text x=\"226.8\" y=\"129.1\" class=\"svg-green\" font-size=\"12.5\" font-weight=\"700\">−∇f</text></g><circle cx=\"243.6\" cy=\"76.0\" r=\"3.2\" fill=\"#1A1A1A\"/><text x=\"252.6\" y=\"88.0\" class=\"svg-caption\">P</text><text x=\"14\" y=\"24\" class=\"svg-caption\">f(x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>,x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>) = x<tspan baseline-shift=\"sub\" font-size=\"72%\">1</tspan><tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan> + 2x<tspan baseline-shift=\"sub\" font-size=\"72%\">2</tspan><tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan> = c<tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan></text></svg>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.2 · Significato geometrico del gradiente</div>\n  <h2 class=\"slide-title\">Derivata direzionale, curve di livello e punti stazionari</h2>\n  <div id=\"s1\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Idea — Significato geometrico</div>\n    <p>\\(\\nabla f\\) punta nella direzione di <strong>massima crescita</strong> (norma = ripidità); \\(-\\nabla f\\) indica la <strong>decrescita più rapida</strong> (base della <em>discesa del gradiente</em>).</p>\n  </div>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Derivata direzionale (\\(\\norm{\\vv{u}}=1\\))</div>\n        \\[\\htmlId{f-dir}{D_{\\vv{u}}f = \\nabla f \\cdot \\vv{u} = \\norm{\\nabla f}\\,\\norm{\\vv{u}}\\cos\\theta = \\norm{\\nabla f}\\cos\\theta}\\]\n        <ul class=\"clean-list\" style=\"font-size:0.82rem;\">\n          <li id=\"li4-1\">\\(\\theta = 0\\) (\\(\\nabla f\\)): massimo \\(+\\norm{\\nabla f}\\)</li>\n          <li id=\"li4-2\">\\(\\theta = \\pi\\) (\\(-\\nabla f\\)): minimo \\(-\\norm{\\nabla f}\\)</li>\n          <li id=\"li4-3\">\\(\\theta = \\pi/2\\): \\(D_{\\vv{u}}f = 0 \\implies \\nabla f \\perp\\) <em>curve di livello</em></li>\n        </ul>\n      </div>\n      <div id=\"s4\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Definizione — Punto stazionario (\\(\\nabla f = \\vv{0}\\))</div>\n        <p style=\"font-size:0.84rem;\">Può essere <strong>minimo locale</strong>, <strong>massimo locale</strong> o <strong>punto di sella</strong> (da solo \\(\\nabla f=\\vv{0}\\) non basta). Es. sella: \\(g(x,y)=x^2-y^2\\) in \\((0,0)\\): \\(g(1,0)=+1\\), \\(g(0,1)=-1\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg class=\"diagram-svg\" viewBox=\"0 0 360 248\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Curve di livello di f(x1,x2)=x1^2+2x2^2 e vettori gradiente e antigradiente\"><defs><marker id=\"gr-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#C0392B\"/></marker><marker id=\"gr-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#2E7D32\"/></marker><marker id=\"gr-ax\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M1 1 L9 5 L1 9 z\" fill=\"#6E6E6E\"/></marker></defs><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"26.5\" ry=\"18.7\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"53.0\" ry=\"37.5\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"79.5\" ry=\"56.2\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"106.0\" ry=\"75.0\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.5\"/><ellipse cx=\"180.0\" cy=\"136.0\" rx=\"132.5\" ry=\"93.7\" fill=\"none\" stroke=\"#999999\" stroke-width=\"1.0\"/><line x1=\"22\" y1=\"136.0\" x2=\"342\" y2=\"136.0\" class=\"svg-axis\" marker-end=\"url(#gr-ax)\"/><line x1=\"180.0\" y1=\"238\" x2=\"180.0\" y2=\"16\" class=\"svg-axis\" marker-end=\"url(#gr-ax)\"/><text x=\"345\" y=\"140.0\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan></text><text x=\"187.0\" y=\"19\" class=\"svg-math-sm\">x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan></text><line x1=\"277.3\" y1=\"93.9\" x2=\"209.9\" y2=\"58.2\" stroke=\"#6E6E6E\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 247.6,68.5 L 240.1,64.6 L 236.1,72.1\" fill=\"none\" stroke=\"#6E6E6E\" stroke-width=\"1.1\"/><circle cx=\"180.0\" cy=\"136.0\" r=\"3.6\" class=\"pt-pos\"/><text x=\"112.0\" y=\"127.0\" class=\"svg-blue\" font-size=\"11\" font-weight=\"600\">minimo (0,0)</text><g id=\"gv-plus\"><line x1=\"243.6\" y1=\"76.0\" x2=\"266.4\" y2=\"33.0\" stroke=\"#C0392B\" stroke-width=\"2.6\" marker-end=\"url(#gr-r)\"/><text x=\"273.4\" y=\"37.0\" class=\"svg-red\" font-size=\"12.5\" font-weight=\"700\">∇f</text></g><g id=\"gv-minus\"><line x1=\"243.6\" y1=\"76.0\" x2=\"220.8\" y2=\"119.1\" stroke=\"#2E7D32\" stroke-width=\"2.6\" marker-end=\"url(#gr-g)\"/><text x=\"226.8\" y=\"129.1\" class=\"svg-green\" font-size=\"12.5\" font-weight=\"700\">−∇f</text></g><circle cx=\"243.6\" cy=\"76.0\" r=\"3.2\" fill=\"#1A1A1A\"/><text x=\"252.6\" y=\"88.0\" class=\"svg-caption\">P</text><text x=\"14\" y=\"24\" class=\"svg-caption\">f(x<tspan baseline-shift=\"sub\" font-size=\"75%\">1</tspan>,x<tspan baseline-shift=\"sub\" font-size=\"75%\">2</tspan>) = x<tspan baseline-shift=\"sub\" font-size=\"72%\">1</tspan><tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan> + 2x<tspan baseline-shift=\"sub\" font-size=\"72%\">2</tspan><tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan> = c<tspan baseline-shift=\"super\" font-size=\"72%\">2</tspan></text></svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "at": 4.58,
@@ -171,7 +219,26 @@
           "at": 29.97,
           "action": "highlight",
           "target": "#f-dir",
-          "anchor": "derivata direzionale D lungo u"
+          "anchor": "derivata direzionale D lungo u",
+          "duration": 1.91
+        },
+        {
+          "at": 32,
+          "action": "highlight",
+          "target": "#li4-1",
+          "duration": 2.9
+        },
+        {
+          "at": 35,
+          "action": "highlight",
+          "target": "#li4-2",
+          "duration": 3.6
+        },
+        {
+          "at": 38.7,
+          "action": "highlight",
+          "target": "#li4-3",
+          "duration": 1.5
         },
         {
           "at": 39.27,
@@ -183,19 +250,27 @@
           "at": 44.79,
           "action": "highlight",
           "target": "#gv-plus",
-          "anchor": "lungo nabla f in rosso"
+          "anchor": "lungo nabla f in rosso",
+          "duration": 5.87
         },
         {
           "at": 50.81,
           "action": "highlight",
           "target": "#gv-minus",
-          "anchor": "lungo meno nabla f in verde"
+          "anchor": "lungo meno nabla f in verde",
+          "duration": 16.67
         },
         {
           "at": 67.63,
           "action": "show",
           "target": "#s4",
           "anchor": "si chiama punto stazionario"
+        },
+        {
+          "at": 67.73,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 19.11
         }
       ],
       "duration_sec": 87.19,
@@ -219,13 +294,20 @@
           "at": 24.28,
           "action": "highlight",
           "target": "#f-chain",
-          "anchor": "la regola della catena per le funzioni composte"
+          "anchor": "la regola della catena per le funzioni composte",
+          "duration": 18
         },
         {
           "at": 46.75,
           "action": "show",
           "target": "#s2",
           "anchor": "La regola della catena è la più importante"
+        },
+        {
+          "at": 46.85,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.16
         },
         {
           "at": 58.21,
@@ -237,13 +319,20 @@
           "at": 83.61,
           "action": "highlight",
           "target": "#f-exchain",
-          "anchor": "meno quattro per cinque meno due w"
+          "anchor": "meno quattro per cinque meno due w",
+          "duration": 2.91
         },
         {
           "at": 86.67,
           "action": "show",
           "target": "#s4",
           "anchor": "Valutiamo in w uguale uno"
+        },
+        {
+          "at": 86.77,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 15.64
         }
       ],
       "duration_sec": 102.76,
@@ -255,10 +344,10 @@
       "section": "1.3 Probabilità",
       "title": "Valore atteso, varianza, proprietà e campione i.i.d.",
       "tts_text": "Passiamo alla probabilità, chiave per modellare rumore e generalizzazione. [pause:0.5] Per una variabile aleatoria discreta Z che assume valori z con i con probabilità P di z con i, il valore atteso Z soprassegnato, o E secondo P di Z, è somma di z con i per P di z con i. La varianza di Z misura la dispersione attorno alla media ed è E di Z meno Z soprassegnato al quadrato. [pause:0.6] Su un campione di l valori usiamo: la media x soprassegnato uguale uno su l per la somma di x con p; la varianza, uno su l per la somma degli scarti al quadrato; e la covarianza tra x e y, uno su l per la somma dei prodotti degli scarti di x e y dalle rispettive medie. [pause:0.7] Tre proprietà ricorrono in tutto il corso. Il valore atteso è sempre lineare: E di a X più b Y uguale a E di X più b E di Y. Se X e Y sono indipendenti, E di X Y uguale E di X per E di Y. Un campione si dice i i d, indipendente e identicamente distribuito, quando gli elementi sono estratti indipendentemente dalla stessa distribuzione. [pause:0.7] Esempio numerico sul campione x uguale due, quattro, sei, otto, con l uguale quattro. La media è venti diviso quattro, cioè cinque. Gli scarti sono meno tre, meno uno, più uno, più tre. I loro quadrati sono nove, uno, uno, nove, somma venti: diviso quattro dà varianza uguale cinque.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.3 · Probabilità</div>\n  <h2 class=\"slide-title\">Valore atteso, varianza, covarianza e campione i.i.d.</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Valore atteso e varianza (variabile discreta \\(Z\\) e campione di \\(l\\) valori)</div>\n    \\[\\htmlId{f-ev}{\\bar{Z} = \\E_P[Z] = \\sum_i z_i\\,P(z_i), \\qquad \\Var[Z] = \\E\\big[(Z-\\bar{Z})^2\\big]}\\]\n    <p class=\"math-note\" style=\"text-align:center;\">Campione: \\(\\;\\bar{x} = \\dfrac{1}{l}\\sum_p x_p, \\quad \\Var[x] = \\dfrac{1}{l}\\sum_p (x_p-\\bar{x})^2, \\quad \\Cov[x,y] = \\dfrac{1}{l}\\sum_p (x_p-\\bar{x})(y_p-\\bar{y})\\)</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Proprietà fondamentali &amp; i.i.d.</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li><strong>Linearità</strong> (sempre): \\(\\E[aX+bY] = a\\E[X] + b\\E[Y]\\)</li>\n        <li><strong>Indipendenza</strong>: \\(X \\perp Y \\implies \\E[XY] = \\E[X]\\,\\E[Y]\\)</li>\n        <li><strong>Campione i.i.d.</strong>: elementi estratti <em>indipendentemente</em> dalla <em>stessa distribuzione</em>.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Esempio guidato · \\(x = (2,\\,4,\\,6,\\,8)\\), \\(l = 4\\)</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li>Media: \\(\\bar{x} = \\dfrac{2+4+6+8}{4} = \\dfrac{20}{4} = \\mathbf{5}\\)</li>\n        <li>Scarti \\((x_p - \\bar{x})\\): \\(-3,\\; -1,\\; +1,\\; +3\\)</li>\n        <li>Quadrati: \\(9,\\; 1,\\; 1,\\; 9 \\implies \\Var[x] = \\dfrac{20}{4} = \\mathbf{5}\\)</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.3 · Probabilità</div>\n  <h2 class=\"slide-title\">Valore atteso, varianza, covarianza e campione i.i.d.</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Valore atteso e varianza (variabile discreta \\(Z\\) e campione di \\(l\\) valori)</div>\n    \\[\\htmlId{f-ev}{\\bar{Z} = \\E_P[Z] = \\sum_i z_i\\,P(z_i), \\qquad \\Var[Z] = \\E\\big[(Z-\\bar{Z})^2\\big]}\\]\n    <p class=\"math-note\" style=\"text-align:center;\">Campione: \\(\\;\\bar{x} = \\dfrac{1}{l}\\sum_p x_p, \\quad \\Var[x] = \\dfrac{1}{l}\\sum_p (x_p-\\bar{x})^2, \\quad \\Cov[x,y] = \\dfrac{1}{l}\\sum_p (x_p-\\bar{x})(y_p-\\bar{y})\\)</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Proprietà fondamentali &amp; i.i.d.</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li id=\"li6-1\"><strong>Linearità</strong> (sempre): \\(\\E[aX+bY] = a\\E[X] + b\\E[Y]\\)</li>\n        <li id=\"li6-2\"><strong>Indipendenza</strong>: \\(X \\perp Y \\implies \\E[XY] = \\E[X]\\,\\E[Y]\\)</li>\n        <li id=\"li6-3\"><strong>Campione i.i.d.</strong>: elementi estratti <em>indipendentemente</em> dalla <em>stessa distribuzione</em>.</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">Esempio guidato · \\(x = (2,\\,4,\\,6,\\,8)\\), \\(l = 4\\)</div>\n      <ul class=\"clean-list\" style=\"font-size:0.85rem;\">\n        <li>Media: \\(\\bar{x} = \\dfrac{2+4+6+8}{4} = \\dfrac{20}{4} = \\mathbf{5}\\)</li>\n        <li>Scarti \\((x_p - \\bar{x})\\): \\(-3,\\; -1,\\; +1,\\; +3\\)</li>\n        <li>Quadrati: \\(9,\\; 1,\\; 1,\\; 9 \\implies \\Var[x] = \\dfrac{20}{4} = \\mathbf{5}\\)</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.75,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Per una variabile aleatoria discreta Z"
@@ -267,7 +356,8 @@
           "at": 20.39,
           "action": "highlight",
           "target": "#f-ev",
-          "anchor": "La varianza di Z misura"
+          "anchor": "La varianza di Z misura",
+          "duration": 18
         },
         {
           "at": 47.73,
@@ -276,10 +366,34 @@
           "anchor": "Tre proprietà ricorrono"
         },
         {
+          "at": 50.99,
+          "action": "highlight",
+          "target": "#li6-1",
+          "duration": 5.14
+        },
+        {
+          "at": 56.25,
+          "action": "highlight",
+          "target": "#li6-2",
+          "duration": 14.48
+        },
+        {
+          "at": 70.83,
+          "action": "highlight",
+          "target": "#li6-3",
+          "duration": 4.43
+        },
+        {
           "at": 75.6,
           "action": "show",
           "target": "#s3",
           "anchor": "Esempio numerico sul campione"
+        },
+        {
+          "at": 75.7,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 15.74
         }
       ],
       "duration_sec": 91.79,
@@ -303,7 +417,8 @@
           "at": 8.42,
           "action": "highlight",
           "target": "#f-lem",
-          "anchor": "E di Z al quadrato è uguale"
+          "anchor": "E di Z al quadrato è uguale",
+          "duration": 5.01
         },
         {
           "at": 13.58,
@@ -318,10 +433,17 @@
           "anchor": "distribuzione normale, o gaussiana"
         },
         {
+          "at": 62.29,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 7.44
+        },
+        {
           "at": 69.85,
           "action": "highlight",
           "target": "#f-gauss",
-          "anchor": "uno su sigma radice di due pi greco"
+          "anchor": "uno su sigma radice di due pi greco",
+          "duration": 12.57
         },
         {
           "at": 82.57,
@@ -351,25 +473,29 @@
           "at": 3.63,
           "action": "highlight",
           "target": "#pk1",
-          "anchor": "Primo: a trasposto b"
+          "anchor": "Primo: a trasposto b",
+          "duration": 8.43
         },
         {
           "at": 12.21,
           "action": "highlight",
           "target": "#pk2",
-          "anchor": "Secondo: nabla f indica"
+          "anchor": "Secondo: nabla f indica",
+          "duration": 13.1
         },
         {
           "at": 25.46,
           "action": "highlight",
           "target": "#pk3",
-          "anchor": "Terzo: la regola della catena"
+          "anchor": "Terzo: la regola della catena",
+          "duration": 5.79
         },
         {
           "at": 31.4,
           "action": "highlight",
           "target": "#pk4",
-          "anchor": "Quarto: il lemma della varianza"
+          "anchor": "Quarto: il lemma della varianza",
+          "duration": 7.51
         },
         {
           "at": 39.06,
@@ -378,16 +504,18 @@
           "anchor": "due domande di verifica"
         },
         {
-          "at": 41.0,
+          "at": 41,
           "action": "highlight",
           "target": "#q1",
-          "anchor": "Prima domanda"
+          "anchor": "Prima domanda",
+          "duration": 12.87
         },
         {
           "at": 54.02,
           "action": "highlight",
           "target": "#q2",
-          "anchor": "Seconda domanda"
+          "anchor": "Seconda domanda",
+          "duration": 13.37
         }
       ],
       "duration_sec": 67.59,

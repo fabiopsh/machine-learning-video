@@ -18,7 +18,7 @@
       "audio_file": "audio/scene-01.wav",
       "subtitle_file": "subtitles/scene-01.json",
       "tts_text": "Inferire una funzione generale a partire da un numero finito di esempi è un problema inverso mal posto: può violare esistenza, unicità o stabilità. Soprattutto la soluzione non è unica, e senza assunzioni gli esempi noti non dicono assolutamente nulla sui casi non ancora visti. [pause:0.8] Per questo ogni modello restringe il campo e si studia ponendosi due domande in ordine: primo, cosa si può rappresentare nello spazio delle ipotesi H? Perché una funzione fuori da H non potrà mai essere appresa. Secondo, cosa si può effettivamente apprendere? [pause:0.9] L'insieme delle assunzioni fatte sulla funzione target per poter generalizzare si chiama bias induttivo. Può assumere due forme, spesso combinate: il language bias, che vincola il modello limitando quali ipotesi H può esprimere; e il search bias, che vincola l'algoritmo di apprendimento tramite le preferenze della sua strategia di ricerca dentro H.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.1 · Un problema mal posto</div>\n  <h2 class=\"slide-title\">Perché servono assunzioni: il bias induttivo</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Problema inverso mal posto</div>\n    <p>Da dati finiti possono mancare <strong>esistenza</strong>, <strong>unicità</strong> o <strong>stabilità</strong>. Due domande per ogni modello: <strong>(1)</strong> cosa può <em>rappresentare</em> \\(H\\)? <strong>(2)</strong> cosa può <em>apprendere</em> l'algoritmo?</p>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Bias induttivo</div>\n    <p>L'insieme delle <strong>assunzioni sulla funzione target</strong> necessarie per generalizzare oltre gli esempi osservati.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Language bias</div>\n      <p>Vincoli sul <strong>modello</strong>: restringe quali ipotesi lo spazio \\(H\\) può esprimere.</p>\n    </div>\n    <div class=\"box box-idea\">\n      <div class=\"box-label\">Search bias</div>\n      <p>Preferenze dell'<strong>algoritmo</strong>: guida la strategia di ricerca all'interno di \\(H\\).</p>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.1 · Un problema mal posto</div>\n  <h2 class=\"slide-title\">Perché servono assunzioni: il bias induttivo</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Problema inverso mal posto</div>\n    <p>Da dati finiti possono mancare <strong>esistenza</strong>, <strong>unicità</strong> o <strong>stabilità</strong>. Due domande per ogni modello: <strong>(1)</strong> cosa può <em>rappresentare</em> \\(H\\)? <strong>(2)</strong> cosa può <em>apprendere</em> l'algoritmo?</p>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione — Bias induttivo</div>\n    <p>L'insieme delle <strong>assunzioni sulla funzione target</strong> necessarie per generalizzare oltre gli esempi osservati.</p>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div id=\"gb1-1\" class=\"box box-primary\">\n      <div class=\"box-label\">Language bias</div>\n      <p>Vincoli sul <strong>modello</strong>: restringe quali ipotesi lo spazio \\(H\\) può esprimere.</p>\n    </div>\n    <div id=\"gb1-2\" class=\"box box-idea\">\n      <div class=\"box-label\">Search bias</div>\n      <p>Preferenze dell'<strong>algoritmo</strong>: guida la strategia di ricerca all'interno di \\(H\\).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
           "at": 3.78,
@@ -33,10 +33,28 @@
           "anchor": "si chiama bias induttivo"
         },
         {
+          "at": 35.67,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 4.12
+        },
+        {
           "at": 39.99,
           "action": "show",
           "target": "#s3",
           "anchor": "il language bias"
+        },
+        {
+          "at": 41.36,
+          "action": "highlight",
+          "target": "#gb1-1",
+          "duration": 3.68
+        },
+        {
+          "at": 45.16,
+          "action": "highlight",
+          "target": "#gb1-2",
+          "duration": 6.37
         }
       ],
       "duration_sec": 51.83
@@ -51,7 +69,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.2 · Imparare un concetto booleano</div>\n  <h2 class=\"slide-title\">\\(2^{2^n}\\) funzioni possibili e la lookup table</h2>\n  <div class=\"split-visual\">\n    <table id=\"s1\" class=\"acad-table acad-table-compact cue-hidden\" style=\"font-size:0.84rem;\">\n      <thead><tr><th>Es.</th><th>\\(x_1\\)</th><th>\\(x_2\\)</th><th>\\(x_3\\)</th><th>\\(x_4\\)</th><th>\\(d\\)</th></tr></thead>\n      <tbody>\n        <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>\n        <tr><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>\n        <tr><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td><strong>1</strong></td></tr>\n        <tr><td>4</td><td>1</td><td>0</td><td>0</td><td>1</td><td><strong>1</strong></td></tr>\n        <tr><td>5</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>\n        <tr><td>6</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>\n        <tr><td>7</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>\n      </tbody>\n    </table>\n    <div class=\"formula-col\">\n      <div id=\"s2\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Cardinalità di tutte le funzioni booleane</div>\n        \\[\\htmlId{f-bool}{\\abs{H} = 2^{\\#\\text{istanze}} = 2^{2^n}}\\]\n        <p class=\"math-note\">Per \\(n=4\\): \\(2^4 = 16\\) istanze → \\(2^{16} = 65\\,536\\) funzioni. Dopo 7 esempi ne restano \\(2^9 = 512\\) compatibili.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Lookup table (rote learner)</div>\n        <p>Memorizza gli esempi e non risponde sui casi nuovi: <strong>nessun bias induttivo ⇒ nessuna generalizzazione</strong>.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 8.48,
+          "at": 3.74,
           "action": "show",
           "target": "#s1",
           "anchor": "sette esempi nella tabella"
@@ -63,16 +81,29 @@
           "anchor": "combinazioni di input distinte"
         },
         {
+          "at": 15.68,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 28.61
+        },
+        {
           "at": 44.41,
           "action": "highlight",
           "target": "#f-bool",
-          "anchor": "due elevato a due alla n"
+          "anchor": "due elevato a due alla n",
+          "duration": 3.95
         },
         {
           "at": 48.51,
           "action": "show",
           "target": "#s3",
           "anchor": "semplice lookup table"
+        },
+        {
+          "at": 48.61,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 9.58
         }
       ],
       "duration_sec": 58.54
@@ -87,7 +118,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.3 · Language bias su H discreto</div>\n  <h2 class=\"slide-title\">Regole congiuntive (\\(3^n + 1\\)) e Version Space</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Proprietà — Numero di regole congiuntive</div>\n    <p>Con \\(n\\) variabili binarie le congiunzioni semanticamente distinte sono \\(\\htmlId{f-3n}{3^n + 1}\\):</p>\n    <p class=\"math-note\">Ogni variabile ha 3 scelte (\\(x_i\\), \\(\\neg x_i\\), assente) \\(\\Rightarrow 3^n\\); più 1 sola ipotesi \\(\\mathit{false}\\) (tutte le contraddizioni). Per \\(n=4\\): da \\(65\\,536\\) a <strong>82</strong> ipotesi.</p>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">Definizione — Consistenza &amp; Version Space</div>\n      <p>\\(h\\) è <strong>consistente</strong> se \\(h(\\x) = d(\\x)\\) per ogni esempio in \\(TR\\). Il <strong>version space</strong> \\(VS_{H,TR}\\) è il sottoinsieme di \\(H\\) delle ipotesi consistenti con tutti i dati.</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Rischio del language bias troppo forte</div>\n      <p>Se il concetto target non è una congiunzione (es. \\(x_1 \\vee x_2\\)), sta <strong>fuori da \\(H\\)</strong> e non può mai essere rappresentato né appreso.</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 17.22,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Esattamente tre alla n più uno"
@@ -96,7 +127,8 @@
           "at": 18.02,
           "action": "highlight",
           "target": "#f-3n",
-          "anchor": "tre alla n più uno"
+          "anchor": "tre alla n più uno",
+          "duration": 18
         },
         {
           "at": 52.13,
@@ -105,10 +137,22 @@
           "anchor": "ipotesi consistente"
         },
         {
+          "at": 52.23,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 15.97
+        },
+        {
           "at": 68.4,
           "action": "show",
           "target": "#s3",
           "anchor": "prezzo del language bias"
+        },
+        {
+          "at": 68.5,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.88
         }
       ],
       "duration_sec": 77.73
@@ -123,7 +167,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.4 · Teorema dell'unbiased learner</div>\n  <h2 class=\"slide-title\">Un learner senza bias non può generalizzare</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Futilità dell'apprendimento senza bias (\\(H = \\mathcal{P}(X)\\))</div>\n    <p>Le uniche istanze classificate in modo non ambiguo dal version space sono gli <strong>esempi di training stessi</strong> (lookup table).</p>\n  </div>\n  <div class=\"proof-steps\">\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Passi 1–2 · Funzione gemella \\(h'\\)</span>\n      <div>Data \\(x_i \\notin TR\\) e \\(h \\in VS\\), definiamo \\(\\htmlId{f-hp}{h'}\\) identica ad \\(h\\) ovunque tranne \\(h'(x_i) \\neq h(x_i)\\). Poiché \\(H = \\mathcal{P}(X)\\), \\(h' \\in H\\).</div>\n    </div>\n    <div id=\"s3\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Passi 3–4 · Accoppiamento 50% / 50%</span>\n      <div>\\(h\\) e \\(h'\\) coincidono su tutto \\(TR \\implies \\htmlId{f-vs}{h' \\in VS}\\). Ogni \\(h\\) che vota \\(1\\) su \\(x_i\\) si accoppia con \\(h'\\) che vota \\(0\\): pareggio esatto \\(\\blacksquare\\)</div>\n    </div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Esempio (\\(n=1\\))</div>\n    <p>\\(H = \\{x, \\neg x, 0, 1\\}\\), \\(TR = \\{0 \\mapsto 0\\} \\implies VS = \\{x, 0\\}\\). Sul test \\(x=1\\): \\(x \\mapsto 1\\) e \\(0 \\mapsto 0\\), impossibile decidere!</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 21.76,
+          "at": 2.3,
           "action": "show",
           "target": "#s1",
           "anchor": "Dimostriamo il teorema fondamentale"
@@ -135,10 +179,17 @@
           "anchor": "Costruiamo la funzione h primo"
         },
         {
+          "at": 41.47,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 0.8
+        },
+        {
           "at": 41.98,
           "action": "highlight",
           "target": "#f-hp",
-          "anchor": "funzione h primo identica"
+          "anchor": "funzione h primo identica",
+          "duration": 18
         },
         {
           "at": 62.45,
@@ -147,16 +198,29 @@
           "anchor": "anche h primo sta nel version space"
         },
         {
+          "at": 62.55,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 0.8
+        },
+        {
           "at": 63.19,
           "action": "highlight",
           "target": "#f-vs",
-          "anchor": "sta nel version space"
+          "anchor": "sta nel version space",
+          "duration": 13.21
         },
         {
           "at": 76.55,
           "action": "show",
           "target": "#s4",
           "anchor": "esempio a una variabile"
+        },
+        {
+          "at": 76.65,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 17.95
         }
       ],
       "duration_sec": 94.95
@@ -171,7 +235,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.5 – 3.6 · Equivalenza deduttiva e ML moderno</div>\n  <h2 class=\"slide-title\">Sistema induttivo ≈ deduttivo + bias; preferenza per il search bias</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 650 156\" class=\"diagram-svg\" aria-label=\"Equivalenza sistema induttivo e deduttivo\">\n      <defs>\n        <marker id=\"arr-id\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n          <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n        </marker>\n      </defs>\n      <!-- Induttivo -->\n      <text x=\"155\" y=\"24\" text-anchor=\"end\" class=\"svg-tick\">esempi di training</text>\n      <text x=\"155\" y=\"48\" text-anchor=\"end\" class=\"svg-tick\">nuova istanza</text>\n      <line x1=\"164\" y1=\"20\" x2=\"218\" y2=\"20\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <line x1=\"164\" y1=\"44\" x2=\"218\" y2=\"44\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <rect x=\"222\" y=\"8\" width=\"215\" height=\"48\" rx=\"4\" fill=\"#EFEFEF\" stroke=\"#1A1A1A\" stroke-width=\"1.3\"/>\n      <text x=\"330\" y=\"28\" text-anchor=\"middle\" class=\"svg-math-sm\">Sistema induttivo</text>\n      <text x=\"330\" y=\"45\" text-anchor=\"middle\" class=\"svg-caption\">algoritmo su spazio H</text>\n      <line x1=\"437\" y1=\"32\" x2=\"495\" y2=\"32\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <text x=\"504\" y=\"36\" class=\"svg-tick\">classificazione / «non so»</text>\n      <!-- Deduttivo -->\n      <text x=\"155\" y=\"96\" text-anchor=\"end\" class=\"svg-tick\">esempi di training</text>\n      <text x=\"155\" y=\"118\" text-anchor=\"end\" class=\"svg-tick\">nuova istanza</text>\n      <text x=\"155\" y=\"140\" text-anchor=\"end\" class=\"svg-tick svg-blue\" font-weight=\"700\">+ bias induttivo</text>\n      <line x1=\"164\" y1=\"92\" x2=\"218\" y2=\"92\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <line x1=\"164\" y1=\"114\" x2=\"218\" y2=\"114\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <line x1=\"164\" y1=\"136\" x2=\"218\" y2=\"136\" stroke=\"#1F5A9E\" stroke-width=\"1.8\" marker-end=\"url(#arr-id)\"/>\n      <rect x=\"222\" y=\"82\" width=\"215\" height=\"64\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#1F5A9E\" stroke-width=\"1.6\"/>\n      <text x=\"330\" y=\"110\" text-anchor=\"middle\" class=\"svg-math-sm svg-blue\">Sistema deduttivo</text>\n      <text x=\"330\" y=\"128\" text-anchor=\"middle\" class=\"svg-caption\">dimostratore di teoremi</text>\n      <line x1=\"437\" y1=\"114\" x2=\"495\" y2=\"114\" class=\"svg-edge\" marker-end=\"url(#arr-id)\"/>\n      <text x=\"504\" y=\"118\" class=\"svg-tick\">stessa classificazione</text>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Nel ML moderno: preferenza per il search bias</div>\n    <p>Spazi \\(H\\) <strong>molto espressivi</strong> (reti neurali, alberi: approssimazione universale, senza escludere \\(f\\) a priori) + <strong>ricerca incompleta</strong> che privilegia le ipotesi migliori.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 13.36,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Guarda lo schema"
@@ -181,6 +245,12 @@
           "action": "show",
           "target": "#s2",
           "anchor": "In genere si preferisce il search bias"
+        },
+        {
+          "at": 46.97,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 19.3
         }
       ],
       "duration_sec": 66.62
@@ -201,10 +271,22 @@
           "anchor": "Primo: su n input binari"
         },
         {
+          "at": 3.02,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9.2
+        },
+        {
           "at": 12.39,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: il version space"
+        },
+        {
+          "at": 12.47,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 6.89
         },
         {
           "at": 19.53,
@@ -213,10 +295,22 @@
           "anchor": "Terzo: un unbiased learner"
         },
         {
+          "at": 19.61,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10.87
+        },
+        {
           "at": 30.65,
           "action": "show",
           "target": "#s4, #s5",
           "anchor": "Quarto: ogni approccio"
+        },
+        {
+          "at": 30.73,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 15.06
         }
       ],
       "duration_sec": 46.11

@@ -21,7 +21,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.1 · Le reti neurali come strumento di ML</div>\n  <h2 class=\"slide-title\">Due obiettivi, un paradigma sub-simbolico</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-muted cue-hidden\">\n      <div class=\"box-label\">1. Neuroscienze</div>\n      <p>Modellare sistemi biologici e processi cognitivi: conta il <strong>realismo biologico</strong>.</p>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Machine Learning (focus del corso)</div>\n      <p>Costruire modelli \\(h(\\x)\\) efficaci: contano le <strong>proprietà computazionali e algoritmiche</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"props-grid cue-hidden\">\n    <div id=\"p1\" class=\"prop-item\"><span class=\"prop-dot\"></span>Apprendono da esempi</div>\n    <div id=\"p2\" class=\"prop-item\"><span class=\"prop-dot\"></span><strong>Approssimatori universali</strong> (anche non lineari)</div>\n    <div id=\"p3\" class=\"prop-item\"><span class=\"prop-dot\"></span>Rumore e dati incompleti: <strong>degradazione graduale</strong></div>\n    <div id=\"p4\" class=\"prop-item\"><span class=\"prop-dot\"></span>Dati reali o discreti, regressione e classificazione</div>\n  </div>\n  <div id=\"s4\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Connessionismo</div>\n    <p>Non un singolo modello, ma un <strong>paradigma sub-simbolico</strong>: comportamenti complessi <em>emergono</em> dall'interazione di molte unità computazionali semplici interconnesse.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 11.08,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "modellare sistemi biologici"
@@ -36,7 +36,8 @@
           "at": 22.5,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "proprietà computazionali"
+          "anchor": "proprietà computazionali",
+          "duration": 4.46
         },
         {
           "at": 27.11,
@@ -48,19 +49,27 @@
           "at": 30.8,
           "action": "highlight",
           "target": "#p2",
-          "anchor": "approssima funzioni arbitrarie"
+          "anchor": "approssima funzioni arbitrarie",
+          "duration": 2.84
         },
         {
           "at": 33.79,
           "action": "highlight",
           "target": "#p3",
-          "anchor": "gestisce rumore"
+          "anchor": "gestisce rumore",
+          "duration": 8.59
         },
         {
           "at": 42.53,
           "action": "show",
           "target": "#s4",
           "anchor": "paradigma sub-simbolico"
+        },
+        {
+          "at": 42.63,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 6.77
         }
       ],
       "duration_sec": 49.75
@@ -84,7 +93,8 @@
           "at": 13.92,
           "action": "highlight",
           "target": "#m4",
-          "anchor": "un decimo di secondo"
+          "anchor": "un decimo di secondo",
+          "duration": 8.42
         },
         {
           "at": 22.49,
@@ -96,37 +106,48 @@
           "at": 22.49,
           "action": "highlight",
           "target": "#n1",
-          "anchor": "entrano dai dendriti"
+          "anchor": "entrano dai dendriti",
+          "duration": 2.65
         },
         {
           "at": 25.29,
           "action": "highlight",
           "target": "#n2",
-          "anchor": "Superata una soglia"
+          "anchor": "Superata una soglia",
+          "duration": 2.93
         },
         {
           "at": 28.37,
           "action": "highlight",
           "target": "#n3",
-          "anchor": "lungo l'assone"
+          "anchor": "lungo l'assone",
+          "duration": 0.8
         },
         {
           "at": 29.05,
           "action": "highlight",
           "target": "#n4",
-          "anchor": "fino alle sinapsi"
+          "anchor": "fino alle sinapsi",
+          "duration": 7.94
         },
         {
           "at": 37.11,
           "action": "highlight",
           "target": "#n4",
-          "anchor": "diventa un peso"
+          "anchor": "diventa un peso",
+          "duration": 2.57
         },
         {
           "at": 39.83,
           "action": "show",
           "target": "#s4",
           "anchor": "apprendimento hebbiano"
+        },
+        {
+          "at": 39.93,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 7.94
         }
       ],
       "duration_sec": 48.22
@@ -156,7 +177,8 @@
           "at": 15.14,
           "action": "highlight",
           "target": "#s-bias",
-          "anchor": "ingresso costante x con zero"
+          "anchor": "ingresso costante x con zero",
+          "duration": 8.03
         },
         {
           "at": 23.32,
@@ -168,7 +190,8 @@
           "at": 23.32,
           "action": "highlight",
           "target": "#s-weights",
-          "anchor": "Ogni connessione porta un peso"
+          "anchor": "Ogni connessione porta un peso",
+          "duration": 7.79
         },
         {
           "at": 31.26,
@@ -177,16 +200,24 @@
           "anchor": "Osserva la formula a destra"
         },
         {
+          "at": 31.36,
+          "action": "highlight",
+          "target": "#s-eq",
+          "duration": 3.74
+        },
+        {
           "at": 35.22,
           "action": "highlight",
           "target": "#f-net, #svg-sum",
-          "anchor": "calcola prima l'input netto"
+          "anchor": "calcola prima l'input netto",
+          "duration": 4.55
         },
         {
           "at": 39.92,
           "action": "highlight",
           "target": "#f-sum, #svg-sum",
-          "anchor": "somma pesata di tutti i prodotti"
+          "anchor": "somma pesata di tutti i prodotti",
+          "duration": 6.09
         },
         {
           "at": 46.16,
@@ -198,13 +229,15 @@
           "at": 46.85,
           "action": "highlight",
           "target": "#f-act, #svg-act",
-          "anchor": "funzione di attivazione f"
+          "anchor": "funzione di attivazione f",
+          "duration": 4.35
         },
         {
           "at": 51.35,
           "action": "highlight",
           "target": "#f-out, #s-out",
-          "anchor": "uscita finale o con i"
+          "anchor": "uscita finale o con i",
+          "duration": 3.29
         },
         {
           "at": 54.79,
@@ -213,22 +246,31 @@
           "anchor": "Fai molta attenzione alla convenzione"
         },
         {
+          "at": 54.89,
+          "action": "highlight",
+          "target": "#s-warn",
+          "duration": 2.72
+        },
+        {
           "at": 57.73,
           "action": "highlight",
           "target": "#f-wij",
-          "anchor": "peso w, i, j"
+          "anchor": "peso w, i, j",
+          "duration": 2.43
         },
         {
           "at": 60.31,
           "action": "highlight",
           "target": "#f-i, #w-i, #w-i2, #svg-node-i",
-          "anchor": "Il primo indice, i"
+          "anchor": "Il primo indice, i",
+          "duration": 5.19
         },
         {
           "at": 65.65,
           "action": "highlight",
           "target": "#f-j, #w-j, #w-j2, #svg-xs",
-          "anchor": "Il secondo indice, j"
+          "anchor": "Il secondo indice, j",
+          "duration": 6.64
         }
       ],
       "duration_sec": 72.49
@@ -243,7 +285,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.2 · Funzioni di attivazione</div>\n  <h2 class=\"slide-title\">Tre attivazioni classiche a confronto</h2>\n  <div class=\"grid-3\">\n    <div id=\"s1\" class=\"plot-card cue-hidden\">\n      <div class=\"plot-title\">Lineare (identità)</div>\n      <svg viewBox=\"0 0 180 135\" class=\"diagram-svg\">\n        <line x1=\"20\" y1=\"65\" x2=\"165\" y2=\"65\" class=\"svg-axis\"/>\n        <line x1=\"90\" y1=\"120\" x2=\"90\" y2=\"12\" class=\"svg-axis\"/>\n        <line x1=\"30\" y1=\"115\" x2=\"150\" y2=\"15\" class=\"svg-curve-blue\"/>\n        <text x=\"160\" y=\"78\" class=\"svg-tick\">net</text>\n        <text x=\"95\" y=\"78\" class=\"svg-tick\">0</text>\n      </svg>\n      <div class=\"plot-eq\">\\(h(\\x) = \\sum_i w_i x_i\\)</div>\n    </div>\n    <div id=\"s2\" class=\"plot-card cue-hidden\">\n      <div class=\"plot-title\">A soglia (Perceptron / LTU)</div>\n      <svg viewBox=\"0 0 180 135\" class=\"diagram-svg\">\n        <line x1=\"20\" y1=\"65\" x2=\"165\" y2=\"65\" class=\"svg-axis\"/>\n        <line x1=\"90\" y1=\"120\" x2=\"90\" y2=\"12\" class=\"svg-axis\"/>\n        <path d=\"M 22,105 L 90,105 L 90,25 L 158,25\" class=\"svg-curve-blue\"/>\n        <text x=\"77\" y=\"29\" class=\"svg-tick\">+1</text>\n        <text x=\"74\" y=\"109\" class=\"svg-tick\">-1</text>\n        <text x=\"160\" y=\"78\" class=\"svg-tick\">net</text>\n      </svg>\n      <div class=\"plot-eq\">\\(o = \\sign(\\net)\\)</div>\n    </div>\n    <div id=\"s3\" class=\"plot-card cue-hidden\">\n      <div class=\"plot-title\">Logistica (sigmoide)</div>\n      <svg viewBox=\"0 0 180 135\" class=\"diagram-svg\">\n        <line x1=\"20\" y1=\"110\" x2=\"165\" y2=\"110\" class=\"svg-axis\"/>\n        <line x1=\"90\" y1=\"120\" x2=\"90\" y2=\"12\" class=\"svg-axis\"/>\n        <line x1=\"86\" y1=\"65\" x2=\"94\" y2=\"65\" class=\"svg-axis\"/>\n        <line x1=\"86\" y1=\"20\" x2=\"94\" y2=\"20\" class=\"svg-axis\"/>\n        <path d=\"M 20.0,108.4 L 24.4,107.9 L 28.8,107.4 L 33.1,106.6 L 37.5,105.7 L 41.9,104.6 L 46.2,103.2 L 50.6,101.4 L 55.0,99.3 L 59.4,96.7 L 63.8,93.6 L 68.1,90.0 L 72.5,85.8 L 76.9,81.1 L 81.2,76.0 L 85.6,70.6 L 90.0,65.0 L 94.4,59.4 L 98.8,54.0 L 103.1,48.9 L 107.5,44.2 L 111.9,40.0 L 116.2,36.4 L 120.6,33.3 L 125.0,30.7 L 129.4,28.6 L 133.8,26.8 L 138.1,25.4 L 142.5,24.3 L 146.9,23.4 L 151.2,22.6 L 155.6,22.1 L 160.0,21.6\" class=\"svg-curve-blue\"/>\n        <text x=\"72\" y=\"24\" class=\"svg-tick\">1</text>\n        <text x=\"64\" y=\"69\" class=\"svg-tick\">0,5</text>\n        <text x=\"160\" y=\"123\" class=\"svg-tick\">net</text>\n      </svg>\n      <div class=\"plot-eq\">\\(f_\\sigma(x) = \\frac{1}{1+e^{-ax}}\\)</div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 8.04,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "La prima è la funzione lineare"
@@ -252,7 +294,8 @@
           "at": 8.04,
           "action": "highlight",
           "target": "#s1",
-          "anchor": "La prima è la funzione lineare"
+          "anchor": "La prima è la funzione lineare",
+          "duration": 7.85
         },
         {
           "at": 16.04,
@@ -264,7 +307,8 @@
           "at": 16.04,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "La seconda è la funzione a soglia"
+          "anchor": "La seconda è la funzione a soglia",
+          "duration": 9.99
         },
         {
           "at": 26.18,
@@ -276,7 +320,8 @@
           "at": 26.18,
           "action": "highlight",
           "target": "#s3",
-          "anchor": "La terza è la funzione logistica"
+          "anchor": "La terza è la funzione logistica",
+          "duration": 8.81
         }
       ],
       "duration_sec": 35.19
@@ -300,19 +345,22 @@
           "at": 9.32,
           "action": "highlight",
           "target": "#s1-note",
-          "anchor": "connessioni eccitatorie"
+          "anchor": "connessioni eccitatorie",
+          "duration": 6.29
         },
         {
           "at": 15.76,
           "action": "highlight",
           "target": "#f-net5",
-          "anchor": "prodotto scalare tra w e x"
+          "anchor": "prodotto scalare tra w e x",
+          "duration": 2.03
         },
         {
           "at": 17.94,
           "action": "highlight",
           "target": "#f-step5",
-          "anchor": "supera zero"
+          "anchor": "supera zero",
+          "duration": 8.83
         },
         {
           "at": 26.92,
@@ -324,7 +372,8 @@
           "at": 30.92,
           "action": "highlight",
           "target": "#s2, #g-and-b",
-          "anchor": "bias meno uno virgola cinque"
+          "anchor": "bias meno uno virgola cinque",
+          "duration": 5.79
         },
         {
           "at": 36.86,
@@ -336,7 +385,8 @@
           "at": 38.76,
           "action": "highlight",
           "target": "#s3, #g-or-b",
-          "anchor": "meno zero virgola cinque"
+          "anchor": "meno zero virgola cinque",
+          "duration": 4.03
         },
         {
           "at": 42.94,
@@ -348,7 +398,8 @@
           "at": 44.04,
           "action": "highlight",
           "target": "#s4, #g-not-w",
-          "anchor": "peso meno uno"
+          "anchor": "peso meno uno",
+          "duration": 5.08
         }
       ],
       "duration_sec": 49.32
@@ -363,7 +414,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3.1 · Lo XOR con due strati</div>\n  <h2 class=\"slide-title\">Scomporre lo XOR in funzioni separabili</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Proprietà — XOR come composizione di AND e OR</div>\n    <p>Posti \\(a = x_1\\), \\(b = x_2\\), \\(\\htmlId{f-h1}{h_1 = a \\wedge b}\\) (AND) e \\(\\htmlId{f-h2}{h_2 = a \\vee b}\\) (OR), vale \\(\\htmlId{f-xor}{\\bar h_1 \\wedge h_2 = a \\oplus b}\\).</p>\n  </div>\n  <div class=\"proof-steps\">\n    <div id=\"s2\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">De Morgan</span>\n      <div>\\[\\bar h_1 = \\overline{a \\wedge b} = \\htmlId{f-dm}{\\bar a \\vee \\bar b}\\]</div>\n    </div>\n    <div id=\"s3\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Distributività</span>\n      <div>\\[\\bar h_1 \\wedge h_2 = (\\bar a \\vee \\bar b) \\wedge (a \\vee b) = \\htmlId{f-false1}{(\\bar a \\wedge a)} \\vee (\\bar a \\wedge b) \\vee (\\bar b \\wedge a) \\vee \\htmlId{f-false2}{(\\bar b \\wedge b)}\\]</div>\n    </div>\n    <div id=\"s4\" class=\"proof-step proof-step-final cue-hidden\">\n      <span class=\"step-tag\">Risultato</span>\n      <div>\\[\\bar h_1 \\wedge h_2 = (\\bar a \\wedge b) \\vee (a \\wedge \\bar b) = a \\oplus b \\qquad \\blacksquare\\]</div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 7.32,
+          "at": 3.58,
           "action": "show",
           "target": "#s1",
           "anchor": "scomporlo in funzioni"
@@ -372,19 +423,22 @@
           "at": 12.5,
           "action": "highlight",
           "target": "#f-h1",
-          "anchor": "h uno calcola l'AND"
+          "anchor": "h uno calcola l'AND",
+          "duration": 2.81
         },
         {
           "at": 15.46,
           "action": "highlight",
           "target": "#f-h2",
-          "anchor": "h due calcola l'OR"
+          "anchor": "h due calcola l'OR",
+          "duration": 3.17
         },
         {
           "at": 18.78,
           "action": "highlight",
           "target": "#f-xor",
-          "anchor": "non h uno, AND h due"
+          "anchor": "non h uno, AND h due",
+          "duration": 4.65
         },
         {
           "at": 23.58,
@@ -393,10 +447,17 @@
           "anchor": "leggi di De Morgan"
         },
         {
+          "at": 23.68,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 3.18
+        },
+        {
           "at": 26.98,
           "action": "highlight",
           "target": "#f-dm",
-          "anchor": "non a OR non b"
+          "anchor": "non a OR non b",
+          "duration": 2.09
         },
         {
           "at": 29.22,
@@ -405,22 +466,36 @@
           "anchor": "Distribuendo il prodotto logico"
         },
         {
+          "at": 29.32,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 2.92
+        },
+        {
           "at": 32.36,
           "action": "highlight",
           "target": "#f-false1",
-          "anchor": "Il primo termine"
+          "anchor": "Il primo termine",
+          "duration": 3.92
         },
         {
           "at": 36.43,
           "action": "highlight",
           "target": "#f-false1, #f-false2",
-          "anchor": "sono sempre falsi"
+          "anchor": "sono sempre falsi",
+          "duration": 2.25
         },
         {
           "at": 38.83,
           "action": "show",
           "target": "#s4",
           "anchor": "Restano esattamente"
+        },
+        {
+          "at": 38.93,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 6.88
         }
       ],
       "duration_sec": 46.16
@@ -444,13 +519,15 @@
           "at": 5.04,
           "action": "highlight",
           "target": "#xor-hidden",
-          "anchor": "due unità nascoste"
+          "anchor": "due unità nascoste",
+          "duration": 5.63
         },
         {
           "at": 10.82,
           "action": "highlight",
           "target": "#xor-out-edges",
-          "anchor": "unità di uscita combina"
+          "anchor": "unità di uscita combina",
+          "duration": 11.65
         },
         {
           "at": 22.62,
@@ -468,7 +545,8 @@
           "at": 35.33,
           "action": "highlight",
           "target": "#xor-double",
-          "anchor": "collassano sullo stesso punto"
+          "anchor": "collassano sullo stesso punto",
+          "duration": 4.99
         },
         {
           "at": 40.47,
@@ -480,13 +558,20 @@
           "at": 40.47,
           "action": "highlight",
           "target": "#s4",
-          "anchor": "la retta rossa"
+          "anchor": "la retta rossa",
+          "duration": 9.03
         },
         {
           "at": 49.65,
           "action": "show",
           "target": "#s5",
           "anchor": "representation learning"
+        },
+        {
+          "at": 49.75,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 12.16
         }
       ],
       "duration_sec": 62.26
@@ -501,7 +586,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4 · Apprendere con una singola unità</div>\n  <h2 class=\"slide-title\">Due approcci all'addestramento</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\">\n      <div class=\"box-label\">1. Adaline (Adaptive Linear Neuron)</div>\n      <ul class=\"clean-list\">\n        <li>Durante il training l'unità è <strong>lineare</strong>.</li>\n        <li>Usa <strong>LMS</strong> (forma diretta o discesa del gradiente).</li>\n        <li>Regressione e, con soglia a valle, classificazione.</li>\n        <li><strong>Si estende agli MLP</strong> (reti multistrato).</li>\n      </ul>\n    </div>\n    <div id=\"s2\" class=\"box box-primary cue-hidden\">\n      <div class=\"box-label\">2. Perceptron</div>\n      <ul class=\"clean-list\">\n        <li>Durante il training l'unità è <strong>non lineare</strong> (con soglia).</li>\n        <li>Usa la regola online del Perceptron.</li>\n        <li><strong>Solo classificazione</strong> binaria.</li>\n        <li>Garanzia finita di convergenza su dati separabili.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Classificatori lineari visti fin qui:</span>\n    <span class=\"pill\">LMS diretto</span>\n    <span class=\"pill\">LMS a gradiente</span>\n    <span class=\"pill pill-accent\">Algoritmo del Perceptron</span>\n    <span class=\"pill pill-muted\">→ poi SVM</span>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 9.33,
+          "at": 3.17,
           "action": "show",
           "target": "#s1",
           "anchor": "La prima è Adaline"
@@ -510,25 +595,33 @@
           "at": 9.33,
           "action": "highlight",
           "target": "#s1",
-          "anchor": "La prima è Adaline"
+          "anchor": "La prima è Adaline",
+          "duration": 18
         },
         {
-          "at": 31.0,
+          "at": 31,
           "action": "show",
           "target": "#s2",
           "anchor": "La seconda famiglia è il Perceptron"
         },
         {
-          "at": 31.0,
+          "at": 31,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "La seconda famiglia è il Perceptron"
+          "anchor": "La seconda famiglia è il Perceptron",
+          "duration": 12.55
         },
         {
           "at": 43.7,
           "action": "show",
           "target": "#s3",
           "anchor": "tre algoritmi"
+        },
+        {
+          "at": 43.8,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 6.2
         }
       ],
       "duration_sec": 50.35
@@ -543,7 +636,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4.1 · L'algoritmo del Perceptron</div>\n  <h2 class=\"slide-title\">Perceptron Learning Algorithm (online)</h2>\n  <div id=\"s1\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Algoritmo</div>\n    <ol class=\"algo-list\">\n      <li id=\"a1\">Inizializzare \\(\\w\\) (a \\(\\vv 0\\) o piccoli valori casuali); scegliere \\(\\eta \\in (0, 1)\\).</li>\n      <li id=\"a2\">Ripetere finché un'epoca intera passa <strong>senza errori</strong>, per ogni \\((\\x, d)\\) con \\(d \\in \\{+1, -1\\}\\):\n        <ul>\n          <li>calcolare \\(\\out = \\sign(\\w\\T\\x)\\);</li>\n          <li id=\"a3\">se \\(\\out = d\\), <strong>non modificare</strong> i pesi;</li>\n          <li id=\"a4\">se \\(\\out \\neq d\\), aggiornare \\(\\htmlId{f-upd}{\\w_{\\mathit{new}} = \\w + \\eta\\,d\\,\\x}\\).</li>\n        </ul>\n      </li>\n    </ol>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"box box-warn cue-hidden\">\n      <div class=\"box-label\">Attenzione — Caso \\(\\w\\T\\x = 0\\)</div>\n      <p>Un punto <em>sul</em> confine conta <strong>sempre come errore</strong>: classificazione corretta solo se \\(\\htmlId{f-strict}{d\\,\\w\\T\\x \\gt 0}\\).</p>\n    </div>\n    <div id=\"s3\" class=\"math-card cue-hidden\">\n      \\[\\w_{\\mathit{new}} = \\w + \\tfrac{1}{2}\\eta\\,\\htmlId{f-diff}{(d - \\out)}\\,\\x\\]\n      <p class=\"math-note\">\\(d - \\out = 0\\) se corretto, \\(\\pm 2\\) se sbagliato (con \\(\\out = \\sign(\\w\\T\\x)\\), diverso dall'LMS).</p>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 13.16,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "Passo uno: si inizializzano"
@@ -552,25 +645,29 @@
           "at": 13.16,
           "action": "highlight",
           "target": "#a1",
-          "anchor": "Passo uno: si inizializzano"
+          "anchor": "Passo uno: si inizializzano",
+          "duration": 7.67
         },
         {
           "at": 20.98,
           "action": "highlight",
           "target": "#a2",
-          "anchor": "Passo due: si scorrono"
+          "anchor": "Passo due: si scorrono",
+          "duration": 6.45
         },
         {
           "at": 27.58,
           "action": "highlight",
           "target": "#a3",
-          "anchor": "i pesi non cambiano"
+          "anchor": "i pesi non cambiano",
+          "duration": 2.56
         },
         {
           "at": 30.29,
           "action": "highlight",
           "target": "#a4, #f-upd",
-          "anchor": "si aggiorna w aggiungendo"
+          "anchor": "si aggiorna w aggiungendo",
+          "duration": 3.87
         },
         {
           "at": 34.31,
@@ -579,10 +676,17 @@
           "anchor": "Attenzione al caso sul confine"
         },
         {
+          "at": 34.41,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 9.84
+        },
+        {
           "at": 44.37,
           "action": "highlight",
           "target": "#f-strict",
-          "anchor": "strettamente positivo"
+          "anchor": "strettamente positivo",
+          "duration": 1.93
         },
         {
           "at": 46.45,
@@ -591,10 +695,17 @@
           "anchor": "stessa regola si riscrive"
         },
         {
+          "at": 46.55,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 3.54
+        },
+        {
           "at": 50.21,
           "action": "highlight",
           "target": "#f-diff",
-          "anchor": "differenza tra d e l'uscita"
+          "anchor": "differenza tra d e l'uscita",
+          "duration": 2.58
         }
       ],
       "duration_sec": 52.99
@@ -609,7 +720,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4.1 · Interpretazione geometrica</div>\n  <h2 class=\"slide-title\">Rotazione del confine e due letture della regola</h2>\n  <div class=\"split-visual\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 270\" class=\"diagram-svg\" aria-label=\"Geometria dell'aggiornamento del Perceptron\">\n        <defs>\n          <marker id=\"arr-red\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#C0392B\"/>\n          </marker>\n          <marker id=\"arr-b2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1F5A9E\"/>\n          </marker>\n          <marker id=\"arr-i2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M 0 1.5 L 9 5 L 0 8.5 z\" fill=\"#1A1A1A\"/>\n          </marker>\n        </defs>\n        <line x1=\"25\" y1=\"175\" x2=\"335\" y2=\"175\" class=\"svg-axis\"/>\n        <line x1=\"150\" y1=\"255\" x2=\"150\" y2=\"18\" class=\"svg-axis\"/>\n        <g id=\"s1\" class=\"cue-hidden\">\n          <line x1=\"118\" y1=\"45\" x2=\"178\" y2=\"255\" class=\"svg-bound-red\"/>\n          <text x=\"124\" y=\"36\" class=\"svg-caption svg-red\">confine prima</text>\n          <line x1=\"150\" y1=\"175\" x2=\"262\" y2=\"147\" class=\"svg-vec-red\" marker-end=\"url(#arr-red)\"/>\n          <text x=\"272\" y=\"154\" class=\"svg-math svg-red\">w</text>\n        </g>\n        <g id=\"s2\" class=\"cue-hidden\">\n          <line x1=\"150\" y1=\"175\" x2=\"115\" y2=\"63\" stroke=\"#9A9A9A\" stroke-width=\"1.3\"/>\n          <circle cx=\"115\" cy=\"63\" r=\"5\" fill=\"#1A1A1A\"/>\n          <text x=\"104\" y=\"54\" text-anchor=\"end\" class=\"svg-math-sm\">p₁ (d = +1)</text>\n        </g>\n        <g id=\"s3-corr\" class=\"cue-hidden\">\n          <line x1=\"262\" y1=\"147\" x2=\"241\" y2=\"80\" class=\"svg-vec-ink\" marker-end=\"url(#arr-i2)\"/>\n          <text x=\"260\" y=\"114\" class=\"svg-math-sm\">η d x</text>\n        </g>\n        <g id=\"s3-new\" class=\"cue-hidden\">\n          <line x1=\"150\" y1=\"175\" x2=\"241\" y2=\"80\" class=\"svg-vec-blue\" marker-end=\"url(#arr-b2)\"/>\n          <text x=\"246\" y=\"68\" class=\"svg-math svg-blue\">wₙₑw</text>\n          <line x1=\"40\" y1=\"70\" x2=\"242\" y2=\"260\" class=\"svg-bound-blue\"/>\n          <text x=\"248\" y=\"254\" class=\"svg-caption svg-blue\">confine dopo</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"s4\" class=\"box box-def cue-hidden\">\n        <div class=\"box-label\">Lettura 1 — Hebbiana</div>\n        <p>\\(\\htmlId{f-hebb}{\\w_{\\mathit{new}} = \\w + \\eta\\,d\\,\\x}\\): il vettore dei pesi si muove verso \\(\\x\\) (se \\(d=+1\\)) o si allontana (se \\(d=-1\\)).</p>\n      </div>\n      <div id=\"s5\" class=\"box box-idea cue-hidden\">\n        <div class=\"box-label\">Lettura 2 — Delta rule</div>\n        <p>\\(\\w_{\\mathit{new}} = \\w + \\eta'\\,\\htmlId{f-delta10}{\\delta}\\,\\x\\) con \\(\\delta = d - \\out\\), \\(\\eta' = \\eta/2\\): correzione proporzionale a <strong>errore × ingresso</strong>. Qui \\(\\delta\\) è direttamente misurabile.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.0,
+          "at": 4,
           "action": "show",
           "target": "#s1",
           "anchor": "vettore dei pesi w punta"
@@ -624,7 +735,8 @@
           "at": 10.86,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "esempio p uno abbia target"
+          "anchor": "esempio p uno abbia target",
+          "duration": 4.35
         },
         {
           "at": 15.36,
@@ -636,7 +748,8 @@
           "at": 15.36,
           "action": "highlight",
           "target": "#s3-corr",
-          "anchor": "Sommando il vettore eta"
+          "anchor": "Sommando il vettore eta",
+          "duration": 2.83
         },
         {
           "at": 18.34,
@@ -654,7 +767,8 @@
           "at": 32.75,
           "action": "highlight",
           "target": "#f-hebb",
-          "anchor": "apprendimento hebbiano"
+          "anchor": "apprendimento hebbiano",
+          "duration": 1.61
         },
         {
           "at": 34.51,
@@ -663,10 +777,17 @@
           "anchor": "Riscritta con delta uguale"
         },
         {
+          "at": 34.61,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 5.34
+        },
+        {
           "at": 40.07,
           "action": "highlight",
           "target": "#f-delta10",
-          "anchor": "delta rule"
+          "anchor": "delta rule",
+          "duration": 10.15
         }
       ],
       "duration_sec": 50.42
@@ -681,7 +802,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Teorema di convergenza del Perceptron</div>\n  <h2 class=\"slide-title\">Enunciato e riduzione a soli esempi positivi</h2>\n  <div id=\"s1\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Teorema — Convergenza del Perceptron</div>\n    <p>Se il problema è <strong>linearmente separabile</strong>, l'algoritmo converge in un <strong>numero finito di passi</strong> classificando bene tutti gli esempi (qualunque sia \\(\\w(0)\\); soluzione non unica). Se non è separabile, può sviluppare <strong>cicli</strong>.</p>\n  </div>\n  <div id=\"s2\" class=\"proof-steps cue-hidden\">\n    <div class=\"proof-step\">\n      <span class=\"step-tag\">Passo 1 · Margine</span>\n      <div>\n        <p>Esiste \\(\\w^*\\) tale che \\(\\htmlId{f-alpha}{d_i\\,(\\w^*\\x_i) \\ge \\alpha}\\), con \\(\\alpha = \\min_i d_i\\,(\\w^*\\x_i) \\gt 0\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"proof-step cue-hidden\">\n      <span class=\"step-tag\">Ribaltamento</span>\n      <div>\n        <p>Poniamo \\(\\htmlId{f-xprime}{\\x'_i = d_i \\x_i}\\). Poiché \\(\\htmlId{f-d2}{d_i^2 = 1}\\), \\(\\w^*\\) risolve \\((\\x_i, d_i)\\) se e solo se risolve \\((\\x'_i, +1)\\).</p>\n        <p id=\"s3-eq\" class=\"math-note\">Errore: \\(d_i(\\w\\x_i) \\le 0 \\iff \\w\\x'_i \\le 0\\). Aggiornamento: \\(\\w + \\eta d_i\\x_i = \\w + \\eta \\x'_i\\).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 6.1,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "teorema di convergenza"
@@ -696,7 +817,8 @@
           "at": 35.51,
           "action": "highlight",
           "target": "#f-alpha",
-          "anchor": "margine minimo alfa"
+          "anchor": "margine minimo alfa",
+          "duration": 2.91
         },
         {
           "at": 38.57,
@@ -708,19 +830,22 @@
           "at": 39.57,
           "action": "highlight",
           "target": "#f-xprime",
-          "anchor": "x primo con i"
+          "anchor": "x primo con i",
+          "duration": 5.53
         },
         {
           "at": 45.25,
           "action": "highlight",
           "target": "#f-d2",
-          "anchor": "d con i al quadrato vale uno"
+          "anchor": "d con i al quadrato vale uno",
+          "duration": 3.91
         },
         {
           "at": 49.31,
           "action": "highlight",
           "target": "#s3-eq",
-          "anchor": "condizione di errore"
+          "anchor": "condizione di errore",
+          "duration": 7.05
         }
       ],
       "duration_sec": 56.56
@@ -744,19 +869,22 @@
           "at": 2.61,
           "action": "highlight",
           "target": "#f-w0",
-          "anchor": "w di zero uguale al vettore nullo"
+          "anchor": "w di zero uguale al vettore nullo",
+          "duration": 2.89
         },
         {
           "at": 5.65,
           "action": "highlight",
           "target": "#f-eta",
-          "anchor": "eta uguale a uno"
+          "anchor": "eta uguale a uno",
+          "duration": 1.39
         },
         {
           "at": 7.19,
           "action": "highlight",
           "target": "#f-beta",
-          "anchor": "definiamo beta come il massimo"
+          "anchor": "definiamo beta come il massimo",
+          "duration": 18
         },
         {
           "at": 30.55,
@@ -765,10 +893,17 @@
           "anchor": "dopo q errori"
         },
         {
+          "at": 30.65,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 1.14
+        },
+        {
           "at": 31.91,
           "action": "highlight",
           "target": "#f-wq",
-          "anchor": "vettore w di q"
+          "anchor": "vettore w di q",
+          "duration": 4.77
         },
         {
           "at": 36.83,
@@ -798,7 +933,8 @@
           "at": 54.88,
           "action": "highlight",
           "target": "#s6",
-          "anchor": "oltre q massimo"
+          "anchor": "oltre q massimo",
+          "duration": 5.63
         }
       ],
       "duration_sec": 60.71
@@ -822,13 +958,15 @@
           "at": 3.72,
           "action": "highlight",
           "target": "#f-dot",
-          "anchor": "moltiplichiamo w stella"
+          "anchor": "moltiplichiamo w stella",
+          "duration": 9.15
         },
         {
           "at": 13.02,
           "action": "highlight",
           "target": "#f-low",
-          "anchor": "Cauchy-Schwarz"
+          "anchor": "Cauchy-Schwarz",
+          "duration": 10.25
         },
         {
           "at": 23.42,
@@ -837,16 +975,24 @@
           "anchor": "Nel Passo quattro"
         },
         {
+          "at": 23.52,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.23
+        },
+        {
           "at": 33.87,
           "action": "highlight",
           "target": "#f-cross",
-          "anchor": "doppio prodotto centrale"
+          "anchor": "doppio prodotto centrale",
+          "duration": 8.63
         },
         {
           "at": 42.65,
           "action": "highlight",
           "target": "#f-high",
-          "anchor": "minore o uguale a q per beta"
+          "anchor": "minore o uguale a q per beta",
+          "duration": 2.49
         },
         {
           "at": 45.29,
@@ -855,16 +1001,24 @@
           "anchor": "Nel Passo cinque"
         },
         {
+          "at": 45.39,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 2.6
+        },
+        {
           "at": 48.11,
           "action": "highlight",
           "target": "#f-b-beta",
-          "anchor": "limitato da beta"
+          "anchor": "limitato da beta",
+          "duration": 2.99
         },
         {
           "at": 51.25,
           "action": "highlight",
           "target": "#f-b-alpha",
-          "anchor": "diviso alfa al quadrato"
+          "anchor": "diviso alfa al quadrato",
+          "duration": 6.57
         },
         {
           "at": 57.97,
@@ -873,10 +1027,17 @@
           "anchor": "Il bound ha un significato"
         },
         {
+          "at": 58.07,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 4
+        },
+        {
           "at": 62.19,
           "action": "highlight",
           "target": "#f-b-alpha",
-          "anchor": "più alfa è piccolo"
+          "anchor": "più alfa è piccolo",
+          "duration": 5.25
         }
       ],
       "duration_sec": 67.64
@@ -900,19 +1061,27 @@
           "at": 6.89,
           "action": "highlight",
           "target": "#l-lms",
-          "anchor": "nell'LMS il segnale delta"
+          "anchor": "nell'LMS il segnale delta",
+          "duration": 5.09
         },
         {
           "at": 12.13,
           "action": "highlight",
           "target": "#l-perc",
-          "anchor": "nel Perceptron usa l'uscita"
+          "anchor": "nel Perceptron usa l'uscita",
+          "duration": 7.68
         },
         {
           "at": 19.96,
           "action": "show",
           "target": "#s2",
           "anchor": "classificare male anche problemi"
+        },
+        {
+          "at": 20.06,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 3.3
         },
         {
           "at": 23.56,
@@ -924,7 +1093,8 @@
           "at": 27.06,
           "action": "highlight",
           "target": "#s4",
-          "anchor": "gruppo di punti positivi blu"
+          "anchor": "gruppo di punti positivi blu",
+          "duration": 11.21
         },
         {
           "at": 38.42,
@@ -936,7 +1106,8 @@
           "at": 38.42,
           "action": "highlight",
           "target": "#s5",
-          "anchor": "tira verso l'alto la retta arancione"
+          "anchor": "tira verso l'alto la retta arancione",
+          "duration": 5.77
         },
         {
           "at": 44.34,
@@ -966,7 +1137,8 @@
           "at": 5.04,
           "action": "highlight",
           "target": "#s1",
-          "anchor": "Primo, l'obiettivo"
+          "anchor": "Primo, l'obiettivo",
+          "duration": 9.59
         },
         {
           "at": 14.78,
@@ -978,19 +1150,21 @@
           "at": 14.78,
           "action": "highlight",
           "target": "#s2",
-          "anchor": "Secondo, sui problemi separabili"
+          "anchor": "Secondo, sui problemi separabili",
+          "duration": 9.07
         },
         {
-          "at": 24.0,
+          "at": 24,
           "action": "show",
           "target": "#s3",
           "anchor": "Terzo, sui problemi non separabili"
         },
         {
-          "at": 24.0,
+          "at": 24,
           "action": "highlight",
           "target": "#s3",
-          "anchor": "Terzo, sui problemi non separabili"
+          "anchor": "Terzo, sui problemi non separabili",
+          "duration": 9.5
         },
         {
           "at": 33.65,
@@ -1002,13 +1176,20 @@
           "at": 33.65,
           "action": "highlight",
           "target": "#s4",
-          "anchor": "Quarto punto, il più decisivo"
+          "anchor": "Quarto punto, il più decisivo",
+          "duration": 11.91
         },
         {
           "at": 45.71,
           "action": "show",
           "target": "#s5",
           "anchor": "funzioni di attivazione differenziabili"
+        },
+        {
+          "at": 45.81,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 2.18
         }
       ],
       "duration_sec": 48.34
@@ -1032,7 +1213,8 @@
           "at": 12.75,
           "action": "highlight",
           "target": "#f-slope",
-          "anchor": "dove a è la pendenza"
+          "anchor": "dove a è la pendenza",
+          "duration": 2.27
         },
         {
           "at": 15.17,
@@ -1044,13 +1226,15 @@
           "at": 18.05,
           "action": "highlight",
           "target": "#c-a05",
-          "anchor": "per a che tende a zero"
+          "anchor": "per a che tende a zero",
+          "duration": 3.07
         },
         {
           "at": 21.27,
           "action": "highlight",
           "target": "#c-a20",
-          "anchor": "per a che tende a infinito"
+          "anchor": "per a che tende a infinito",
+          "duration": 5.45
         },
         {
           "at": 26.87,
@@ -1062,7 +1246,8 @@
           "at": 29.39,
           "action": "highlight",
           "target": "#eq-tanh, #s3",
-          "anchor": "tangente iperbolica"
+          "anchor": "tangente iperbolica",
+          "duration": 18
         },
         {
           "at": 47.6,
@@ -1074,7 +1259,8 @@
           "at": 54.46,
           "action": "highlight",
           "target": "#p-relu",
-          "anchor": "la ReLU massimo tra zero e x"
+          "anchor": "la ReLU massimo tra zero e x",
+          "duration": 6.59
         }
       ],
       "duration_sec": 61.25
@@ -1089,7 +1275,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7.1 · Derivate delle attivazioni</div>\n  <h2 class=\"slide-title\">La derivata si esprime tramite la funzione stessa</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\">\n        <div class=\"step-tag-inline\">Derivazione (per \\(a=1\\))</div>\n        \\[f'_\\sigma(x) = \\frac{e^{-x}}{(1+e^{-x})^2} = \\htmlId{f-d1}{\\frac{1}{1+e^{-x}}} \\cdot \\htmlId{f-d2}{\\frac{e^{-x}}{1+e^{-x}}}\\]\n      </div>\n      <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n        \\[\\boxed{\\;\\htmlId{f-sigd}{\\frac{df_\\sigma}{dx} = f_\\sigma(x)\\big(1 - f_\\sigma(x)\\big)}, \\qquad \\htmlId{f-tanhd}{\\frac{d\\tanh(x)}{dx} = 1 - \\tanh^2(x)}\\;}\\]\n        <p class=\"math-note\">Con pendenza \\(a\\) generica: \\(f'_\\sigma(x) = a\\,f_\\sigma(x)(1 - f_\\sigma(x))\\).</p>\n      </div>\n    </div>\n    <div id=\"s3\" class=\"svg-panel cue-hidden\">\n      <svg viewBox=\"0 0 385 200\" class=\"diagram-svg\" aria-label=\"Logistica, derivata prima e derivata seconda\">\n        <line x1=\"45\" y1=\"155.6\" x2=\"365\" y2=\"155.6\" class=\"svg-axis\"/>\n        <line x1=\"200\" y1=\"180\" x2=\"200\" y2=\"16\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"123.3\" x2=\"204\" y2=\"123.3\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"91.0\" x2=\"204\" y2=\"91.0\" class=\"svg-axis\"/>\n        <line x1=\"196\" y1=\"26.5\" x2=\"204\" y2=\"26.5\" class=\"svg-axis\"/>\n        <path d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.1 L 60.5,155.0 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.3 L 86.3,154.1 L 91.5,153.7 L 96.7,153.3 L 101.8,152.8 L 107.0,152.2 L 112.2,151.5 L 117.3,150.6 L 122.5,149.5 L 127.7,148.2 L 132.8,146.7 L 138.0,144.9 L 143.2,142.7 L 148.3,140.2 L 153.5,137.3 L 158.7,133.9 L 163.8,130.1 L 169.0,125.7 L 174.2,120.9 L 179.3,115.6 L 184.5,109.9 L 189.7,103.8 L 194.8,97.5 L 200.0,91.0 L 205.2,84.6 L 210.3,78.3 L 215.5,72.2 L 220.7,66.5 L 225.8,61.2 L 231.0,56.4 L 236.2,52.0 L 241.3,48.2 L 246.5,44.8 L 251.7,41.9 L 256.8,39.3 L 262.0,37.2 L 267.2,35.4 L 272.3,33.9 L 277.5,32.6 L 282.7,31.5 L 287.8,30.6 L 293.0,29.9 L 298.2,29.3 L 303.3,28.8 L 308.5,28.4 L 313.7,28.0 L 318.8,27.7 L 324.0,27.5 L 329.2,27.3 L 334.3,27.2 L 339.5,27.0 L 344.7,26.9 L 349.8,26.8 L 355.0,26.8\" class=\"svg-curve-ink\"/>\n        <path id=\"s4\" d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.2 L 60.5,155.0 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.4 L 86.3,154.1 L 91.5,153.7 L 96.7,153.3 L 101.8,152.9 L 107.0,152.3 L 112.2,151.6 L 117.3,150.8 L 122.5,149.8 L 127.7,148.6 L 132.8,147.3 L 138.0,145.8 L 143.2,144.0 L 148.3,142.1 L 153.5,139.9 L 158.7,137.6 L 163.8,135.1 L 169.0,132.6 L 174.2,130.2 L 179.3,128.0 L 184.5,126.1 L 189.7,124.6 L 194.8,123.7 L 200.0,123.3 L 205.2,123.7 L 210.3,124.6 L 215.5,126.1 L 220.7,128.0 L 225.8,130.2 L 231.0,132.6 L 236.2,135.1 L 241.3,137.6 L 246.5,139.9 L 251.7,142.1 L 256.8,144.0 L 262.0,145.8 L 267.2,147.3 L 272.3,148.6 L 277.5,149.8 L 282.7,150.8 L 287.8,151.6 L 293.0,152.3 L 298.2,152.9 L 303.3,153.3 L 308.5,153.7 L 313.7,154.1 L 318.8,154.4 L 324.0,154.6 L 329.2,154.8 L 334.3,154.9 L 339.5,155.0 L 344.7,155.2 L 349.8,155.2 L 355.0,155.3\" class=\"svg-curve-red\"/>\n        <path d=\"M 45.0,155.3 L 50.2,155.2 L 55.3,155.2 L 60.5,155.1 L 65.7,154.9 L 70.8,154.8 L 76.0,154.6 L 81.2,154.4 L 86.3,154.1 L 91.5,153.8 L 96.7,153.4 L 101.8,153.0 L 107.0,152.5 L 112.2,151.8 L 117.3,151.1 L 122.5,150.3 L 127.7,149.4 L 132.8,148.5 L 138.0,147.4 L 143.2,146.3 L 148.3,145.3 L 153.5,144.4 L 158.7,143.6 L 163.8,143.2 L 169.0,143.3 L 174.2,143.9 L 179.3,145.1 L 184.5,147.0 L 189.7,149.5 L 194.8,152.4 L 200.0,155.6 L 205.2,158.8 L 210.3,161.8 L 215.5,164.2 L 220.7,166.1 L 225.8,167.4 L 231.0,168.0 L 236.2,168.0 L 241.3,167.6 L 246.5,166.9 L 251.7,166.0 L 256.8,164.9 L 262.0,163.8 L 267.2,162.8 L 272.3,161.8 L 277.5,160.9 L 282.7,160.1 L 287.8,159.4 L 293.0,158.8 L 298.2,158.3 L 303.3,157.8 L 308.5,157.4 L 313.7,157.1 L 318.8,156.9 L 324.0,156.7 L 329.2,156.5 L 334.3,156.3 L 339.5,156.2 L 344.7,156.1 L 349.8,156.0 L 355.0,155.9\" class=\"svg-curve-green\"/>\n        <circle id=\"s4-pk\" cx=\"200\" cy=\"123.3\" r=\"4.5\" fill=\"#C0392B\"/>\n        <text x=\"188\" y=\"30\" text-anchor=\"end\" class=\"svg-tick\">1</text>\n        <text x=\"188\" y=\"94\" text-anchor=\"end\" class=\"svg-tick\">0,5</text>\n        <text x=\"188\" y=\"127\" text-anchor=\"end\" class=\"svg-tick svg-red\">0,25</text>\n        <text x=\"274\" y=\"42\" class=\"svg-legend\">— fσ</text>\n        <text x=\"274\" y=\"57\" class=\"svg-legend svg-red\">— f'σ (max 0,25)</text>\n        <text x=\"274\" y=\"72\" class=\"svg-legend svg-green\">— f''σ</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 13.02,
+          "at": 4,
           "action": "show",
           "target": "#s1",
           "anchor": "Scrivendo la logistica"
@@ -1098,13 +1284,15 @@
           "at": 28.92,
           "action": "highlight",
           "target": "#f-d1",
-          "anchor": "il primo è f sigma"
+          "anchor": "il primo è f sigma",
+          "duration": 2.11
         },
         {
           "at": 31.18,
           "action": "highlight",
           "target": "#f-d2",
-          "anchor": "il secondo è uno meno"
+          "anchor": "il secondo è uno meno",
+          "duration": 3.22
         },
         {
           "at": 34.55,
@@ -1116,13 +1304,21 @@
           "at": 34.55,
           "action": "highlight",
           "target": "#f-sigd",
-          "anchor": "Quindi f primo sigma"
+          "anchor": "Quindi f primo sigma",
+          "duration": 10.55
+        },
+        {
+          "at": 34.65,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.48
         },
         {
           "at": 45.25,
           "action": "highlight",
           "target": "#f-tanhd",
-          "anchor": "derivata della tangente iperbolica"
+          "anchor": "derivata della tangente iperbolica",
+          "duration": 8.71
         },
         {
           "at": 54.11,
@@ -1134,7 +1330,8 @@
           "at": 56.53,
           "action": "highlight",
           "target": "#s4, #s4-pk",
-          "anchor": "massimo in zero"
+          "anchor": "massimo in zero",
+          "duration": 5.52
         }
       ],
       "duration_sec": 62.25
@@ -1158,7 +1355,8 @@
           "at": 3.88,
           "action": "highlight",
           "target": "#f-err",
-          "anchor": "errore quadratico"
+          "anchor": "errore quadratico",
+          "duration": 6.25
         },
         {
           "at": 10.28,
@@ -1170,19 +1368,22 @@
           "at": 16.82,
           "action": "highlight",
           "target": "#f-c1, #f-v1",
-          "anchor": "Primo: derivata di E"
+          "anchor": "Primo: derivata di E",
+          "duration": 5.25
         },
         {
           "at": 22.22,
           "action": "highlight",
           "target": "#f-c2, #f-v2",
-          "anchor": "Secondo: derivata di o"
+          "anchor": "Secondo: derivata di o",
+          "duration": 5.77
         },
         {
           "at": 28.14,
           "action": "highlight",
           "target": "#f-c3, #f-v3",
-          "anchor": "Terzo: derivata dell'input netto"
+          "anchor": "Terzo: derivata dell'input netto",
+          "duration": 13.28
         },
         {
           "at": 41.57,
@@ -1191,10 +1392,17 @@
           "anchor": "regola di aggiornamento mantiene"
         },
         {
+          "at": 41.67,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 3.74
+        },
+        {
           "at": 45.53,
           "action": "highlight",
           "target": "#f-deltap",
-          "anchor": "un nuovo delta"
+          "anchor": "un nuovo delta",
+          "duration": 6.03
         },
         {
           "at": 51.71,
@@ -1203,10 +1411,22 @@
           "anchor": "Vicino a zero f primo"
         },
         {
+          "at": 51.81,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 15.78
+        },
+        {
           "at": 67.79,
           "action": "show",
           "target": "#s4",
           "anchor": "ponte naturale tra LMS e Perceptron"
+        },
+        {
+          "at": 67.89,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 3.24
         }
       ],
       "duration_sec": 71.48
@@ -1227,10 +1447,22 @@
           "anchor": "Primo: il neurone"
         },
         {
+          "at": 3.4,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 7.03
+        },
+        {
           "at": 10.6,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: una singola unità"
+        },
+        {
+          "at": 10.68,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.2
         },
         {
           "at": 22.05,
@@ -1239,16 +1471,34 @@
           "anchor": "Terzo: il Perceptron"
         },
         {
+          "at": 22.13,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 11.55
+        },
+        {
           "at": 33.85,
           "action": "show",
           "target": "#s4",
           "anchor": "Quarto: l'LMS"
         },
         {
+          "at": 33.93,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 6.68
+        },
+        {
           "at": 40.78,
           "action": "show",
           "target": "#s5",
           "anchor": "Quinto: la sigmoide"
+        },
+        {
+          "at": 40.86,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 12.01
         },
         {
           "at": 49.16,

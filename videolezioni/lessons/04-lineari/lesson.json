@@ -18,7 +18,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.1.1 · Regressione lineare univariata</div>\n  <h2 class=\"slide-title\">Spazio delle ipotesi continuo e criterio dei minimi quadrati (LMS)</h2>\n  <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Modello univariato e somma dei quadrati dei residui</div>\n    \\[h_\\w(x) = w_1 x + w_0, \\qquad \\htmlId{f-lms}{E(\\w) = \\sum_{p=1}^{l}\\big(d_p - (w_1 x_p + w_0)\\big)^2}\\]\n    <p class=\"math-note\">Pesi reali \\(w_0, w_1 \\in \\R \\implies\\) spazio \\(H\\) <strong>infinito e continuo</strong>; \\(\\arg\\min_\\w E(\\w)\\) in norma \\(L^2\\).</p>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Perché i minimi quadrati?</div>\n    <p>Ogni retta produce dei <strong>residui</strong> (distanze verticali tra punti e retta). I minimi quadrati sono il metodo standard per risolvere in modo approssimato <strong>sistemi sovradeterminati</strong> (molti più esempi che parametri).</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 12.34,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "assumiamo il modello h con w"
@@ -27,13 +27,20 @@
           "at": 44.32,
           "action": "highlight",
           "target": "#f-lms",
-          "anchor": "somma dei quadrati dei residui"
+          "anchor": "somma dei quadrati dei residui",
+          "duration": 18
         },
         {
           "at": 66.49,
           "action": "show",
           "target": "#s2",
           "anchor": "Perché proprio i minimi quadrati"
+        },
+        {
+          "at": 66.59,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 20.36
         }
       ],
       "id": "scene-01",
@@ -48,7 +55,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.1.2 · Teorema e dimostrazione in 5 passi</div>\n  <h2 class=\"slide-title\">Derivazione in forma chiusa della retta LMS</h2>\n  <div class=\"proof-steps\" style=\"gap:7px;\">\n    <div id=\"s1\" class=\"proof-step cue-hidden\" style=\"padding:7px 14px;\">\n      <span class=\"step-tag\">Passo 1 · \\(\\partial E/\\partial w_0 = 0\\)</span>\n      <div>\\(-2\\sum_p (d_p - w_1 x_p - w_0) = 0 \\implies \\boxed{\\htmlId{f-pw0}{w_0 = \\bar d - w_1 \\bar x}}\\)</div>\n    </div>\n    <div id=\"s2\" class=\"proof-step cue-hidden\" style=\"padding:7px 14px;\">\n      <span class=\"step-tag\">Passo 2 · \\(\\partial E/\\partial w_1 = 0\\)</span>\n      <div>\\(-2\\sum_p (d_p - w_1 x_p - w_0)\\,x_p = 0 \\implies \\sum_p x_p d_p - w_1 \\sum_p x_p^2 - w_0 \\sum_p x_p = 0\\)</div>\n    </div>\n    <div id=\"s2b\" class=\"proof-step cue-hidden\" style=\"padding:7px 14px;\">\n      <span class=\"step-tag\">Passi 3–4 · Sostituzione \\(w_0\\) e raccolta \\(w_1\\)</span>\n      <div>\\(\\sum_p x_p d_p - w_1 \\sum_p x_p^2 - (\\bar d - w_1 \\bar x)\\sum_p x_p = 0, \\quad \\bar d\\sum_p x_p = \\frac{1}{l}\\sum_p x_p \\sum_p d_p\\)</div>\n    </div>\n    <div id=\"s3\" class=\"proof-step proof-step-final cue-hidden\" style=\"padding:7px 14px;\">\n      <span class=\"step-tag\">Passo 5 · Dividi per \\(l\\) (lemma della varianza)</span>\n      <div>\\[\\htmlId{f-pw1}{w_1 = \\frac{\\sum_p x_p d_p - \\frac{1}{l}\\sum_p x_p \\sum_p d_p}{\\sum_p x_p^2 - \\frac{1}{l}(\\sum_p x_p)^2} = \\frac{\\Cov[x,d]}{\\Var[x]}} \\qquad \\blacksquare\\]</div>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 24.72,
+          "at": 2.18,
           "action": "show",
           "target": "#s1",
           "anchor": "Passo uno, derivata rispetto a w zero"
@@ -57,7 +64,8 @@
           "at": 36.61,
           "action": "highlight",
           "target": "#f-pw0",
-          "anchor": "w zero uguale d soprassegnato"
+          "anchor": "w zero uguale d soprassegnato",
+          "duration": 8.33
         },
         {
           "at": 45.09,
@@ -66,10 +74,22 @@
           "anchor": "Passo due, derivata rispetto a w uno"
         },
         {
+          "at": 45.19,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 18.74
+        },
+        {
           "at": 64.13,
           "action": "show",
           "target": "#s2b",
           "anchor": "Passo tre e quattro"
+        },
+        {
+          "at": 64.23,
+          "action": "highlight",
+          "target": "#s2b",
+          "duration": 14.51
         },
         {
           "at": 78.94,
@@ -78,10 +98,17 @@
           "anchor": "Passo cinque: dividendo numeratore"
         },
         {
+          "at": 79.04,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 12.08
+        },
+        {
           "at": 91.24,
           "action": "highlight",
           "target": "#f-pw1",
-          "anchor": "covarianza di x e d diviso varianza"
+          "anchor": "covarianza di x e d diviso varianza",
+          "duration": 10.97
         }
       ],
       "id": "scene-02",
@@ -96,7 +123,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.1.2 – 4.1.3 · Esercizio numerico e gradiente singolo</div>\n  <h2 class=\"slide-title\">Esercizio svolto sui 5 punti e gradiente sul singolo esempio</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Esercizio svolto: \\((1;2{,}1),\\ (2;3{,}9),\\ (3;6{,}1),\\ (4;8{,}4),\\ (5;9{,}8)\\)</div>\n    <p style=\"font-size:0.86rem;\">\\(l=5,\\ \\bar x = 3,\\ \\bar d = 6{,}06,\\ \\sum x_p d_p = 110{,}8,\\ \\sum x_p^2 = 55\\):</p>\n    \\[w_1 = \\frac{110{,}8 - 5\\cdot 3\\cdot 6{,}06}{55 - 5\\cdot 3^2} = \\frac{19{,}9}{10} = \\mathbf{1{,}99}, \\qquad w_0 = 6{,}06 - 1{,}99\\cdot 3 = \\mathbf{0{,}09}\\]\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Gradiente su un singolo esempio \\((x, d)\\) con \\(\\delta = d - h_\\w(x)\\)</div>\n    \\[\\htmlId{f-g1}{\\frac{\\partial E}{\\partial w_0} = -2\\big(d - h_\\w(x)\\big) = -2\\delta, \\qquad \\frac{\\partial E}{\\partial w_1} = -2\\big(d - h_\\w(x)\\big)\\,x = -2\\delta x}\\]\n    <p class=\"math-note\">\\(\\delta = d - h(x)\\) è l'errore sull'esempio; con \\(l\\) esempi si somma su \\(p = 1, \\dots, l\\).</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 0.0,
+          "at": 0,
           "action": "show",
           "target": "#s1",
           "anchor": "Applichiamo subito le formule"
@@ -108,10 +135,17 @@
           "anchor": "gradiente su un singolo esempio"
         },
         {
+          "at": 63.81,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 6.47
+        },
+        {
           "at": 70.4,
           "action": "highlight",
           "target": "#f-g1",
-          "anchor": "Derivando rispetto a w zero"
+          "anchor": "Derivando rispetto a w zero",
+          "duration": 18
         }
       ],
       "id": "scene-03",
@@ -126,7 +160,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.2 – 4.3 · Caso multidimensionale e soluzione diretta</div>\n  <h2 class=\"slide-title\">Trucco \\(x_0=1\\), gradiente LMS, equazioni normali e SVD</h2>\n  <div id=\"s1\" class=\"math-card cue-hidden\">\n    <div class=\"step-tag-inline\">Bias incluso in \\(\\w\\) ed errore in forma matriciale</div>\n    \\[\\x\\T = [1, x_1, \\dots, x_n], \\quad h(\\x_p) = \\x_p\\T\\w, \\quad E(\\w) = \\norm{\\dd - X\\w}^2\\]\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Gradiente (errore dell'esempio × input del peso)</div>\n    \\[\\htmlId{f-gr4}{\\frac{\\partial E(\\w)}{\\partial w_j} = -2\\sum_{p=1}^{l}\\underbrace{\\big(d_p - \\x_p\\T\\w\\big)}_{\\delta_p}\\,x_{p,j}}, \\qquad \\nabla E(\\w) = -2X\\T(\\dd - X\\w)\\]\n  </div>\n  <div id=\"s3\" class=\"box box-theorem cue-hidden\">\n    <div class=\"box-label\">Equazioni normali, pseudoinversa e SVD</div>\n    \\[\\boxed{\\;(X\\T X)\\,\\w = X\\T \\dd\\;} \\implies \\htmlId{f-svd4}{\\w = (X\\T X)^{-1}X\\T\\dd = X^+\\dd}\\]\n    <p class=\"math-note\">Via <strong>SVD</strong> (\\(X = U\\Sigma V\\T \\implies X^+ = V\\Sigma^+ U\\T\\)): se \\(X\\T X\\) è singolare restituisce direttamente la soluzione a <strong>norma minima</strong>.</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 0.0,
+          "at": 0,
           "action": "show",
           "target": "#s1",
           "anchor": "Estendiamo ora il modello"
@@ -138,10 +172,17 @@
           "anchor": "Derivando rispetto al singolo peso"
         },
         {
+          "at": 49.61,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 18.52
+        },
+        {
           "at": 68.25,
           "action": "highlight",
           "target": "#f-gr4",
-          "anchor": "meno due somma su p di delta"
+          "anchor": "meno due somma su p di delta",
+          "duration": 16.97
         },
         {
           "at": 85.37,
@@ -150,10 +191,17 @@
           "anchor": "ricaviamo le equazioni normali"
         },
         {
+          "at": 85.47,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 17.47
+        },
+        {
           "at": 103.06,
           "action": "highlight",
           "target": "#f-svd4",
-          "anchor": "pseudoinversa di Moore-Penrose"
+          "anchor": "pseudoinversa di Moore-Penrose",
+          "duration": 18
         }
       ],
       "id": "scene-04",
@@ -165,13 +213,31 @@
       "section": "4.4.1 – 4.4.2 Discesa del gradiente: motivazione e algoritmo",
       "title": "Perché una soluzione iterativa, steepest descent e algoritmo GD",
       "tts_text": "Avendo già la soluzione diretta via SVD, perché ci serve una soluzione iterativa? Per quattro ragioni decisive: primo, è più efficiente perché la soluzione diretta ha costo cubico nella dimensione della matrice; secondo, si combina facilmente con la regolarizzazione; terzo, con dati rumorosi permette di fermarsi prima del minimo per generalizzare meglio; quarto, e soprattutto, si applica ai modelli non lineari ed è la base dell'addestramento delle reti neurali e del deep learning. [pause:0.8] L'idea della discesa del gradiente, steepest descent, è una ricerca locale nello spazio dei pesi: il gradiente indica la direzione di massima salita dell'errore, quindi ci muoviamo nel verso opposto Delta w uguale meno gradiente di E di w, componente per componente in qualunque dimensione. [pause:0.7] Guarda i due grafici in basso: a sinistra in una dimensione il peso scende lungo la parabola convessa verso il minimo; a destra con due pesi la superficie d'errore è un paraboloide rappresentato da curve di livello ellittiche, dove ogni punto è un'ipotesi e la discesa batch blu procede regolare verso il centro, mentre quella on-line rossa procede a zig-zag. [pause:0.8] L'algoritmo è in quattro passi: inizializza w con valori piccoli e fissa un learning rate eta tra zero e uno; calcola Delta w uguale meno gradiente di E; aggiorna w nuovo uguale w più eta Delta w; ripeti fino a convergenza. Usare il gradiente medio Delta w diviso l è lo standard, ed eta può decrescere gradualmente per evitare oscillazioni attorno al minimo.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.4.1 – 4.4.2 · Discesa del gradiente (steepest descent)</div>\n  <h2 class=\"slide-title\">Perché iterativa, algoritmo GD e geometria 1D / 2D</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">4 motivi per il metodo iterativo</div>\n      <ul class=\"clean-list\" style=\"font-size:0.81rem;\">\n        <li><strong>Efficienza</strong> (soluzione diretta = costo cubico).</li>\n        <li>Facile <strong>regolarizzazione</strong> &amp; arresto anticipato sul rumore.</li>\n        <li>Estendibile ai <strong>modelli non lineari</strong> (reti neurali!).</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-algo cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">Algoritmo — Discesa del gradiente</div>\n      <ol class=\"algo-list\" style=\"font-size:0.81rem;\">\n        <li>Inizializza \\(\\w\\) piccolo; fissa \\(0 &lt; \\eta &lt; 1\\).</li>\n        <li>\\(\\Delta\\w = -\\nabla E(\\w)\\) (standard: gradiente medio \\(\\Delta\\w/l\\)).</li>\n        <li>\\(\\w_{\\mathit{new}} = \\w + \\eta\\,\\Delta\\w\\); ripeti fino a convergenza.</li>\n      </ol>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"svg-panel\" style=\"flex-direction:column;gap:2px;padding:5px;\">\n      <div class=\"plot-title\" style=\"font-size:0.78rem;\">Discesa 1D su \\(E(w)\\) convessa</div>\n      <svg viewBox=\"0 0 245 158\" class=\"diagram-svg\" style=\"max-height:132px;\" aria-label=\"Discesa del gradiente su parabola 1D\">\n        <line x1=\"26\" y1=\"146\" x2=\"232\" y2=\"146\" class=\"svg-axis\"/>\n        <line x1=\"26\" y1=\"146\" x2=\"26\" y2=\"14\" class=\"svg-axis\"/>\n        <path d=\"M 26.0,9.1 L 30.0,16.1 L 33.9,23.0 L 37.9,29.7 L 41.8,36.2 L 45.8,42.4 L 49.8,48.5 L 53.7,54.4 L 57.7,60.0 L 61.6,65.5 L 65.6,70.7 L 69.6,75.8 L 73.5,80.6 L 77.5,85.3 L 81.4,89.7 L 85.4,94.0 L 89.4,98.0 L 93.3,101.8 L 97.3,105.5 L 101.2,108.9 L 105.2,112.1 L 109.2,115.2 L 113.1,118.0 L 117.1,120.6 L 121.0,123.0 L 125.0,125.2 L 129.0,127.2 L 132.9,129.0 L 136.9,130.6 L 140.8,132.0 L 144.8,133.2 L 148.8,134.2 L 152.7,135.0 L 156.7,135.6 L 160.6,136.0 L 164.6,136.2 L 168.6,136.2 L 172.5,136.0 L 176.5,135.5 L 180.4,134.9 L 184.4,134.1 L 188.4,133.1 L 192.3,131.8 L 196.3,130.4 L 200.2,128.8 L 204.2,126.9 L 208.2,124.9 L 212.1,122.6 L 216.1,120.2 L 220.0,117.5 L 224.0,114.7\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"2\"/>\n        <line x1=\"42.5\" y1=\"37.2\" x2=\"92.0\" y2=\"100.6\" stroke=\"#C0392B\" stroke-width=\"2\"/><line x1=\"92.0\" y1=\"100.6\" x2=\"127.5\" y2=\"126.5\" stroke=\"#C0392B\" stroke-width=\"2\"/><line x1=\"127.5\" y1=\"126.5\" x2=\"148.9\" y2=\"134.3\" stroke=\"#C0392B\" stroke-width=\"2\"/> <circle cx=\"42.5\" cy=\"37.2\" r=\"3.2\" fill=\"#1A1A1A\"/><circle cx=\"92.0\" cy=\"100.6\" r=\"3.2\" fill=\"#1A1A1A\"/><circle cx=\"127.5\" cy=\"126.5\" r=\"3.2\" fill=\"#1A1A1A\"/><circle cx=\"148.9\" cy=\"134.3\" r=\"3.2\" fill=\"#1A1A1A\"/>\n        <circle cx=\"166.2\" cy=\"136.2\" r=\"4\" fill=\"#1F5A9E\"/>\n        <text x=\"166.2\" y=\"156\" text-anchor=\"middle\" class=\"svg-caption svg-blue\">minimo</text>\n      </svg>\n    </div>\n    <div class=\"svg-panel\" style=\"flex-direction:column;gap:2px;padding:5px;\">\n      <div class=\"plot-title\" style=\"font-size:0.78rem;\">Curve di livello \\((w_0, w_1)\\): batch vs on-line</div>\n      <svg viewBox=\"0 0 245 158\" class=\"diagram-svg\" style=\"max-height:132px;\" aria-label=\"Ellissi di livello con traiettoria batch e online\">\n        <ellipse cx=\"130\" cy=\"80\" rx=\"22\" ry=\"11\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"44\" ry=\"22\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"66\" ry=\"33\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"88\" ry=\"44\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"108\" ry=\"54\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <circle cx=\"130\" cy=\"80\" r=\"3\" fill=\"#1A1A1A\"/>\n        <path d=\"M 28,36 Q 68,56 126,79\" fill=\"none\" stroke=\"#1F5A9E\" stroke-width=\"2.2\"/>\n        <path d=\"M 28,36 L 44,58 L 54,44 L 74,67 L 82,53 L 102,75 L 108,64 L 122,84 L 128,78\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"1.8\"/>\n        <text x=\"86\" y=\"34\" class=\"svg-legend svg-blue\">batch</text>\n        <text x=\"48\" y=\"102\" class=\"svg-legend svg-red\">on-line (zig-zag)</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.4.1 – 4.4.2 · Discesa del gradiente (steepest descent)</div>\n  <h2 class=\"slide-title\">Perché iterativa, algoritmo GD e geometria 1D / 2D</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"box box-def cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">4 motivi per il metodo iterativo</div>\n      <ul class=\"clean-list\" style=\"font-size:0.81rem;\">\n        <li id=\"li5-1\"><strong>Efficienza</strong> (soluzione diretta = costo cubico).</li>\n        <li id=\"li5-2\">Facile <strong>regolarizzazione</strong> &amp; arresto anticipato sul rumore.</li>\n        <li id=\"li5-3\">Estendibile ai <strong>modelli non lineari</strong> (reti neurali!).</li>\n      </ul>\n    </div>\n    <div id=\"s3\" class=\"box box-algo cue-hidden\" style=\"padding:8px 11px;\">\n      <div class=\"box-label\">Algoritmo — Discesa del gradiente</div>\n      <ol class=\"algo-list\" style=\"font-size:0.81rem;\">\n        <li id=\"li5-4\">Inizializza \\(\\w\\) piccolo; fissa \\(0 &lt; \\eta &lt; 1\\).</li>\n        <li id=\"li5-5\">\\(\\Delta\\w = -\\nabla E(\\w)\\) (standard: gradiente medio \\(\\Delta\\w/l\\)).</li>\n        <li id=\"li5-6\">\\(\\w_{\\mathit{new}} = \\w + \\eta\\,\\Delta\\w\\); ripeti fino a convergenza.</li>\n      </ol>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"gb5-1\" class=\"svg-panel\" style=\"flex-direction:column;gap:2px;padding:5px;\">\n      <div class=\"plot-title\" style=\"font-size:0.78rem;\">Discesa 1D su \\(E(w)\\) convessa</div>\n      <svg viewBox=\"0 0 245 158\" class=\"diagram-svg\" style=\"max-height:132px;\" aria-label=\"Discesa del gradiente su parabola 1D\">\n        <line x1=\"26\" y1=\"146\" x2=\"232\" y2=\"146\" class=\"svg-axis\"/>\n        <line x1=\"26\" y1=\"146\" x2=\"26\" y2=\"14\" class=\"svg-axis\"/>\n        <path d=\"M 26.0,9.1 L 30.0,16.1 L 33.9,23.0 L 37.9,29.7 L 41.8,36.2 L 45.8,42.4 L 49.8,48.5 L 53.7,54.4 L 57.7,60.0 L 61.6,65.5 L 65.6,70.7 L 69.6,75.8 L 73.5,80.6 L 77.5,85.3 L 81.4,89.7 L 85.4,94.0 L 89.4,98.0 L 93.3,101.8 L 97.3,105.5 L 101.2,108.9 L 105.2,112.1 L 109.2,115.2 L 113.1,118.0 L 117.1,120.6 L 121.0,123.0 L 125.0,125.2 L 129.0,127.2 L 132.9,129.0 L 136.9,130.6 L 140.8,132.0 L 144.8,133.2 L 148.8,134.2 L 152.7,135.0 L 156.7,135.6 L 160.6,136.0 L 164.6,136.2 L 168.6,136.2 L 172.5,136.0 L 176.5,135.5 L 180.4,134.9 L 184.4,134.1 L 188.4,133.1 L 192.3,131.8 L 196.3,130.4 L 200.2,128.8 L 204.2,126.9 L 208.2,124.9 L 212.1,122.6 L 216.1,120.2 L 220.0,117.5 L 224.0,114.7\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"2\"/>\n        <line x1=\"42.5\" y1=\"37.2\" x2=\"92.0\" y2=\"100.6\" stroke=\"#C0392B\" stroke-width=\"2\"/><line x1=\"92.0\" y1=\"100.6\" x2=\"127.5\" y2=\"126.5\" stroke=\"#C0392B\" stroke-width=\"2\"/><line x1=\"127.5\" y1=\"126.5\" x2=\"148.9\" y2=\"134.3\" stroke=\"#C0392B\" stroke-width=\"2\"/> <circle cx=\"42.5\" cy=\"37.2\" r=\"3.2\" fill=\"#1A1A1A\"/><circle cx=\"92.0\" cy=\"100.6\" r=\"3.2\" fill=\"#1A1A1A\"/><circle cx=\"127.5\" cy=\"126.5\" r=\"3.2\" fill=\"#1A1A1A\"/><circle cx=\"148.9\" cy=\"134.3\" r=\"3.2\" fill=\"#1A1A1A\"/>\n        <circle cx=\"166.2\" cy=\"136.2\" r=\"4\" fill=\"#1F5A9E\"/>\n        <text x=\"166.2\" y=\"156\" text-anchor=\"middle\" class=\"svg-caption svg-blue\">minimo</text>\n      </svg>\n    </div>\n    <div id=\"gb5-2\" class=\"svg-panel\" style=\"flex-direction:column;gap:2px;padding:5px;\">\n      <div class=\"plot-title\" style=\"font-size:0.78rem;\">Curve di livello \\((w_0, w_1)\\): batch vs on-line</div>\n      <svg viewBox=\"0 0 245 158\" class=\"diagram-svg\" style=\"max-height:132px;\" aria-label=\"Ellissi di livello con traiettoria batch e online\">\n        <ellipse cx=\"130\" cy=\"80\" rx=\"22\" ry=\"11\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"44\" ry=\"22\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"66\" ry=\"33\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"88\" ry=\"44\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <ellipse cx=\"130\" cy=\"80\" rx=\"108\" ry=\"54\" fill=\"none\" stroke=\"#BDBDBD\"/>\n        <circle cx=\"130\" cy=\"80\" r=\"3\" fill=\"#1A1A1A\"/>\n        <path d=\"M 28,36 Q 68,56 126,79\" fill=\"none\" stroke=\"#1F5A9E\" stroke-width=\"2.2\"/>\n        <path d=\"M 28,36 L 44,58 L 54,44 L 74,67 L 82,53 L 102,75 L 108,64 L 122,84 L 128,78\" fill=\"none\" stroke=\"#C0392B\" stroke-width=\"1.8\"/>\n        <text x=\"86\" y=\"34\" class=\"svg-legend svg-blue\">batch</text>\n        <text x=\"48\" y=\"102\" class=\"svg-legend svg-red\">on-line (zig-zag)</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 5.28,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "quattro ragioni decisive"
+        },
+        {
+          "at": 7.29,
+          "action": "highlight",
+          "target": "#li5-1",
+          "duration": 5.08
+        },
+        {
+          "at": 12.47,
+          "action": "highlight",
+          "target": "#li5-2",
+          "duration": 8.7
+        },
+        {
+          "at": 21.29,
+          "action": "highlight",
+          "target": "#li5-3",
+          "duration": 25.09
         },
         {
           "at": 47.12,
@@ -180,10 +246,40 @@
           "anchor": "Guarda i due grafici in basso"
         },
         {
+          "at": 51.42,
+          "action": "highlight",
+          "target": "#gb5-1",
+          "duration": 7
+        },
+        {
+          "at": 58.52,
+          "action": "highlight",
+          "target": "#gb5-2",
+          "duration": 9.49
+        },
+        {
           "at": 69.01,
           "action": "show",
           "target": "#s3",
           "anchor": "algoritmo è in quattro passi"
+        },
+        {
+          "at": 72.26,
+          "action": "highlight",
+          "target": "#li5-4",
+          "duration": 4.74
+        },
+        {
+          "at": 77.1,
+          "action": "highlight",
+          "target": "#li5-5",
+          "duration": 8.2
+        },
+        {
+          "at": 85.4,
+          "action": "highlight",
+          "target": "#li5-6",
+          "duration": 10.18
         }
       ],
       "id": "scene-05",
@@ -198,7 +294,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.4.3 – 4.4.4 · Batch vs On-line e Delta Rule</div>\n  <h2 class=\"slide-title\">Curve di apprendimento (\\(\\eta\\)) e regola di Widrow-Hoff</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\" style=\"gap:8px;\">\n      <div id=\"s0\" class=\"box box-def cue-hidden\" style=\"padding:7px 11px;\">\n        <div class=\"box-label\">Aggiornamento: Batch vs On-line (SGD)</div>\n        <p style=\"font-size:0.80rem;\"><strong>Batch</strong>: somma sugli \\(l\\) esempi → 1 update/epoca (gradiente preciso). <strong>On-line (SGD)</strong>: \\(\\Delta_p w_j = 2(d_p - \\x_p\\T\\w)x_{p,j}\\) → 1 update/esempio (più rapido, \\(\\eta\\) minore).</p>\n      </div>\n      <div id=\"s1\" class=\"math-card math-card-accent cue-hidden\" style=\"padding:7px 11px;\">\n        <div class=\"step-tag-inline\">Delta rule (Widrow-Hoff)</div>\n        \\[\\Delta w_j = \\sum_{p=1}^{l}\\underbrace{\\htmlId{f-del4}{(d_p - \\x_p\\T\\w)}}_{\\delta_p}\\,\\htmlId{f-in4}{x_{p,j}}, \\quad \\w_{\\mathit{new}} = \\w + \\eta\\,\\Delta\\w\\]\n        <p class=\"math-note\">Correzione intuitiva: \\(\\delta=0 \\implies\\) fermo; input \\(0 \\implies w_j\\) fermo; segno segue \\(\\delta_p \\cdot x_{p,j}\\).</p>\n      </div>\n      <div id=\"s3\" class=\"box box-primary cue-hidden\" style=\"padding:7px 11px;\">\n        <div class=\"box-label\">Esempio delta rule (\\(\\x=(1,0,1),\\ d=+1\\))</div>\n        <p style=\"font-size:0.80rem;\">\\(\\w=(-0{,}2;\\,0{,}5;\\,-0{,}2) \\implies \\w\\T\\x = -0{,}4\\) (errato). Crescono solo \\(w_1, w_3\\) (input \\(1\\)); \\(w_2\\) (input \\(0\\)) resta \\(0{,}5\\). Con \\(w_1=w_3=+0{,}1\\): \\(\\w\\T\\x=+0{,}2 &gt; 0\\) ✓</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:4px;\">\n      <div class=\"plot-title\">Curve di apprendimento al variare di \\(\\eta\\)</div>\n      <svg viewBox=\"0 0 272 162\" class=\"diagram-svg\" aria-label=\"Curve di apprendimento per eta piccolo, buono e grande\">\n        <line x1=\"34\" y1=\"140\" x2=\"258\" y2=\"140\" class=\"svg-axis\"/>\n        <line x1=\"34\" y1=\"140\" x2=\"34\" y2=\"14\" class=\"svg-axis\"/>\n        <path d=\"M 34.0,32.2 L 38.4,33.5 L 42.8,34.8 L 47.2,36.1 L 51.6,37.4 L 56.0,38.6 L 60.4,39.9 L 64.8,41.1 L 69.2,42.3 L 73.6,43.4 L 78.0,44.6 L 82.4,45.7 L 86.8,46.8 L 91.2,47.9 L 95.6,49.0 L 100.0,50.1 L 104.4,51.1 L 108.8,52.1 L 113.2,53.1 L 117.6,54.1 L 122.0,55.1 L 126.4,56.1 L 130.8,57.0 L 135.2,57.9 L 139.6,58.8 L 144.0,59.7 L 148.4,60.6 L 152.8,61.5 L 157.2,62.3 L 161.6,63.2 L 166.0,64.0 L 170.4,64.8 L 174.8,65.6 L 179.2,66.4 L 183.6,67.2 L 188.0,67.9 L 192.4,68.7 L 196.8,69.4 L 201.2,70.1 L 205.6,70.8 L 210.0,71.5 L 214.4,72.2 L 218.8,72.9 L 223.2,73.5 L 227.6,74.2 L 232.0,74.8 L 236.4,75.5 L 240.8,76.1 L 245.2,76.7 L 249.6,77.3 L 254.0,77.9\" class=\"svg-curve-green\"/>\n        <path d=\"M 34.0,32.2 L 36.2,24.6 L 38.4,25.1 L 40.6,41.4 L 42.8,47.9 L 45.0,41.5 L 47.2,47.4 L 49.4,65.0 L 51.6,59.5 L 53.8,56.3 L 56.0,67.1 L 58.2,74.0 L 60.4,68.9 L 62.6,70.0 L 64.8,83.1 L 67.0,80.8 L 69.2,77.4 L 71.4,82.7 L 73.6,88.2 L 75.8,86.5 L 78.0,85.5 L 80.2,93.2 L 82.4,92.5 L 84.6,91.7 L 86.8,93.4 L 89.0,95.5 L 91.2,96.6 L 93.4,96.9 L 95.6,99.7 L 97.8,98.1 L 100.0,100.7 L 102.2,101.9 L 104.4,99.7 L 106.6,101.4 L 108.8,104.8 L 111.0,105.2 L 113.2,100.7 L 115.4,105.2 L 117.6,108.5 L 119.8,103.3 L 122.0,103.0 L 124.2,109.1 L 126.4,110.2 L 128.6,102.7 L 130.8,106.3 L 133.0,112.7 L 135.2,107.4 L 137.4,103.6 L 139.6,110.3 L 141.8,114.2 L 144.0,105.4 L 146.2,106.0 L 148.4,114.3 L 150.6,111.4 L 152.8,105.0 L 155.0,109.6 L 157.2,116.2 L 159.4,109.0 L 161.6,106.1 L 163.8,113.6 L 166.0,114.3 L 168.2,107.7 L 170.4,108.5 L 172.6,115.9 L 174.8,112.4 L 177.0,107.5 L 179.2,111.8 L 181.4,115.1 L 183.6,111.1 L 185.8,108.6 L 188.0,114.0 L 190.2,114.4 L 192.4,110.3 L 194.6,110.7 L 196.8,114.0 L 199.0,113.8 L 201.2,110.4 L 203.4,111.9 L 205.6,114.3 L 207.8,113.4 L 210.0,111.1 L 212.2,111.9 L 214.4,114.8 L 216.6,113.2 L 218.8,111.1 L 221.0,112.6 L 223.2,115.4 L 225.4,113.2 L 227.6,110.3 L 229.8,113.9 L 232.0,115.7 L 234.2,112.1 L 236.4,110.6 L 238.6,115.4 L 240.8,115.8 L 243.0,110.4 L 245.2,111.8 L 247.4,116.8 L 249.6,114.5 L 251.8,109.7 L 254.0,113.7\" class=\"svg-curve-blue\"/>\n        <path d=\"M 34.0,32.2 L 38.4,51.1 L 42.8,66.2 L 47.2,78.3 L 51.6,88.1 L 56.0,95.8 L 60.4,102.0 L 64.8,107.0 L 69.2,111.0 L 73.6,114.2 L 78.0,116.8 L 82.4,118.8 L 86.8,120.5 L 91.2,121.8 L 95.6,122.8 L 100.0,123.7 L 104.4,124.4 L 108.8,124.9 L 113.2,125.3 L 117.6,125.7 L 122.0,125.9 L 126.4,126.2 L 130.8,126.3 L 135.2,126.5 L 139.6,126.6 L 144.0,126.7 L 148.4,126.8 L 152.8,126.8 L 157.2,126.9 L 161.6,126.9 L 166.0,126.9 L 170.4,127.0 L 174.8,127.0 L 179.2,127.0 L 183.6,127.0 L 188.0,127.0 L 192.4,127.0 L 196.8,127.0 L 201.2,127.0 L 205.6,127.0 L 210.0,127.0 L 214.4,127.1 L 218.8,127.1 L 223.2,127.1 L 227.6,127.1 L 232.0,127.1 L 236.4,127.1 L 240.8,127.1 L 245.2,127.1 L 249.6,127.1 L 254.0,127.1\" class=\"svg-curve-red\"/>\n        <text x=\"146\" y=\"156\" text-anchor=\"middle\" class=\"svg-caption\">iterazioni (epoche)</text>\n        <text x=\"150\" y=\"26\" class=\"svg-legend svg-green\">— η troppo piccolo</text>\n        <text x=\"150\" y=\"40\" class=\"svg-legend svg-blue\">— η troppo grande</text>\n        <text x=\"150\" y=\"54\" class=\"svg-legend svg-red\">— buona</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 4.65,
+          "at": 4.1,
           "action": "show",
           "target": "#s0",
           "anchor": "Nella modalità batch"
@@ -216,16 +312,29 @@
           "anchor": "regola di Widrow-Hoff"
         },
         {
+          "at": 56.87,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 0.8
+        },
+        {
           "at": 57.5,
           "action": "highlight",
           "target": "#f-del4, #f-in4",
-          "anchor": "regola di Widrow-Hoff"
+          "anchor": "regola di Widrow-Hoff",
+          "duration": 18
         },
         {
           "at": 87.07,
           "action": "show",
           "target": "#s3",
           "anchor": "Nell'esempio numerico"
+        },
+        {
+          "at": 87.17,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 35.85
         }
       ],
       "id": "scene-06",
@@ -240,7 +349,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.5.1 · Classificazione lineare (LTU)</div>\n  <h2 class=\"slide-title\">Iperpiano separatore, ortogonalità di \\(\\w\\) ed esempi concreti</h2>\n  <div class=\"split-visual\">\n    <div class=\"formula-col\">\n      <div id=\"s1\" class=\"math-card cue-hidden\" style=\"padding:8px 11px;\">\n        <div class=\"step-tag-inline\">Linear Threshold Unit (LTU)</div>\n        \\[h(\\x) = \\sign(\\w\\T\\x + w_0) \\;\\iff\\; \\w\\T\\x \\ge -w_0\\]\n        <p class=\"math-note\">In 2D: \\(x_2 = -(w_1/w_2)x_1 - w_0/w_2\\). <strong>Ortogonalità</strong>: \\(\\w\\T(\\x_a - \\x_b) = 0\\). <strong>Libertà di scala</strong>: \\(K\\w\\) (\\(K&gt;0\\)). Se separabile, <strong>infiniti</strong> iperpiani.</p>\n      </div>\n      <div id=\"s3\" class=\"box box-def cue-hidden\" style=\"padding:8px 11px;\">\n        <div class=\"box-label\">Esempio — Filtro antispam (bag of words)</div>\n        <p style=\"font-size:0.82rem;\">\\(h_\\w(\\x) = \\sign\\!\\big(\\sum_k w_k \\phi_k(\\x)\\big)\\): peso positivo per «free money», negativo per «.edu».</p>\n      </div>\n    </div>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:4px;\">\n      <div class=\"plot-title\">Esempio sismico: \\(-4{,}9 + 1{,}7x_1 - x_2 = 0\\)</div>\n      <svg viewBox=\"0 0 240 162\" class=\"diagram-svg\" aria-label=\"Confine lineare tra terremoti ed esplosioni nucleari\">\n        <polygon points=\"30.0,121.4 214.3,20.2 214.3,140.0 30.0,140.0\" fill=\"#EFEFEF\"/>\n        <line x1=\"30\" y1=\"140\" x2=\"226\" y2=\"140\" class=\"svg-axis\"/>\n        <line x1=\"30\" y1=\"140\" x2=\"30\" y2=\"14\" class=\"svg-axis\"/>\n        <path d=\"M 30.0,121.4 L 214.3,20.2\" class=\"svg-curve-red\"/>\n        <circle cx=\"145.2\" cy=\"115.2\" r=\"4.5\" fill=\"#1A1A1A\"/>\n        <text x=\"145.2\" y=\"106\" text-anchor=\"middle\" class=\"svg-caption\">(6, 3) → +2,3</text>\n        <text x=\"172\" y=\"88\" text-anchor=\"middle\" class=\"svg-caption\">esplosioni (+1)</text>\n        <text x=\"82\" y=\"44\" text-anchor=\"middle\" class=\"svg-caption\">terremoti (−1)</text>\n        <text x=\"128\" y=\"156\" text-anchor=\"middle\" class=\"svg-caption\">x₁ (onde di volume)</text>\n      </svg>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 0.0,
+          "at": 0,
           "action": "show",
           "target": "#s1",
           "anchor": "Passiamo alla classificazione"
@@ -256,6 +365,12 @@
           "action": "show",
           "target": "#s3",
           "anchor": "filtro antispam"
+        },
+        {
+          "at": 88.85,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 9.45
         }
       ],
       "id": "scene-07",
@@ -270,7 +385,7 @@
       "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.5.2 – 4.5.5 · Addestramento, dati 2D e multi-classe</div>\n  <h2 class=\"slide-title\">Loss liscia, scenario 1 vs 2, massima verosimiglianza e multi-classe</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:3px;padding:5px;\">\n      <div class=\"plot-title\">Loss 0/1 vs quadratica su \\(\\w\\T\\x\\) (\\(d=1\\))</div>\n      <svg viewBox=\"0 0 280 172\" class=\"diagram-svg\" style=\"max-height:152px;\" aria-label=\"Confronto loss 0/1 e loss quadratica\">\n        <line x1=\"32\" y1=\"105.2\" x2=\"264\" y2=\"105.2\" stroke=\"#CCCCCC\" stroke-width=\"0.7\" stroke-dasharray=\"3 3\"/>\n        <line x1=\"32\" y1=\"144\" x2=\"264\" y2=\"144\" class=\"svg-axis\"/>\n        <line x1=\"126.5\" y1=\"144\" x2=\"126.5\" y2=\"14\" class=\"svg-axis\"/>\n        <line x1=\"123\" y1=\"105.2\" x2=\"126.5\" y2=\"105.2\" class=\"svg-axis\"/>\n        <line x1=\"123\" y1=\"66.4\" x2=\"126.5\" y2=\"66.4\" class=\"svg-axis\"/>\n        <line x1=\"123\" y1=\"27.6\" x2=\"126.5\" y2=\"27.6\" class=\"svg-axis\"/>\n        <text x=\"120\" y=\"108.5\" text-anchor=\"end\" class=\"svg-tick\">1</text>\n        <text x=\"120\" y=\"69.7\" text-anchor=\"end\" class=\"svg-tick\">2</text>\n        <text x=\"120\" y=\"30.9\" text-anchor=\"end\" class=\"svg-tick\">3</text>\n        <line x1=\"169.5\" y1=\"144\" x2=\"169.5\" y2=\"148\" class=\"svg-axis\"/>\n        <line x1=\"212.4\" y1=\"144\" x2=\"212.4\" y2=\"148\" class=\"svg-axis\"/>\n        <text x=\"126.5\" y=\"158\" text-anchor=\"middle\" class=\"svg-tick\">0</text>\n        <text x=\"169.5\" y=\"158\" text-anchor=\"middle\" class=\"svg-tick\">1</text>\n        <text x=\"212.4\" y=\"158\" text-anchor=\"middle\" class=\"svg-tick\">2</text>\n        <text x=\"256\" y=\"169\" text-anchor=\"end\" class=\"svg-caption\">wᵀx</text>\n        <path d=\"M 91.4,16.0 L 94.8,26.7 L 98.1,36.9 L 101.4,46.6 L 104.7,55.9 L 108.0,64.7 L 111.4,73.0 L 114.7,80.9 L 118.0,88.3 L 121.3,95.3 L 124.6,101.8 L 128.0,107.8 L 131.3,113.3 L 134.6,118.4 L 137.9,123.1 L 141.3,127.3 L 144.6,131.0 L 147.9,134.2 L 151.2,137.0 L 154.5,139.3 L 157.9,141.2 L 161.2,142.6 L 164.5,143.5 L 167.8,143.9 L 171.1,143.9 L 174.5,143.5 L 177.8,142.6 L 181.1,141.2 L 184.4,139.3 L 187.7,137.0 L 191.1,134.2 L 194.4,131.0 L 197.7,127.3 L 201.0,123.1 L 204.4,118.4 L 207.7,113.3 L 211.0,107.8 L 214.3,101.8 L 217.6,95.3 L 221.0,88.3 L 224.3,80.9 L 227.6,73.0 L 230.9,64.7 L 234.2,55.9 L 237.6,46.6 L 240.9,36.9 L 244.2,26.7 L 247.5,16.0\" class=\"svg-curve-red\"/>\n        <path d=\"M 32.0,105.2 L 126.5,105.2 L 126.5,144.0 L 264.0,144.0\" class=\"svg-curve-blue\"/>\n        <text x=\"136\" y=\"30\" class=\"svg-legend svg-red\">— (1 − wᵀx)²</text>\n        <text x=\"136\" y=\"45\" class=\"svg-legend svg-blue\">— loss 0/1</text>\n      </svg>\n    </div>\n    <div id=\"s2\" class=\"svg-panel cue-hidden\" style=\"flex-direction:column;gap:3px;padding:5px;\">\n      <div class=\"plot-title\">Dati reali 2D (scenario 2: 10 gaussiane) + \\(\\x\\T\\w=0{,}5\\)</div>\n      <svg viewBox=\"0 0 240 162\" class=\"diagram-svg\" style=\"max-height:142px;\" aria-label=\"200 punti reali di due classi e confine lineare LMS\">\n        <rect x=\"18\" y=\"10\" width=\"204\" height=\"142\" fill=\"#FFFFFF\" stroke=\"#6E6E6E\" stroke-width=\"1\"/>\n        <circle cx=\"177.7\" cy=\"58.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"143.5\" cy=\"87.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"129.5\" cy=\"54.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"171.6\" cy=\"59.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"144.1\" cy=\"68.9\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"116.2\" cy=\"86.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"97.7\" cy=\"107.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"156.2\" cy=\"64.9\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"82.2\" cy=\"113.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"131.9\" cy=\"110.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"83.5\" cy=\"132.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"121.3\" cy=\"78.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"53.7\" cy=\"104.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"124.6\" cy=\"97.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"159.8\" cy=\"79.9\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"88.1\" cy=\"126.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"109.2\" cy=\"81.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"124.0\" cy=\"62.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"164.3\" cy=\"64.9\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"169.0\" cy=\"87.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"107.4\" cy=\"73.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"111.7\" cy=\"71.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"80.9\" cy=\"100.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"120.0\" cy=\"64.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"116.6\" cy=\"113.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"71.0\" cy=\"125.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"169.9\" cy=\"54.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"46.5\" cy=\"97.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"81.9\" cy=\"136.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"176.8\" cy=\"59.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"162.1\" cy=\"78.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"162.3\" cy=\"64.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"71.2\" cy=\"117.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"52.6\" cy=\"90.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"109.8\" cy=\"81.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"142.7\" cy=\"56.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"121.8\" cy=\"82.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"93.7\" cy=\"92.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"161.9\" cy=\"59.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"78.0\" cy=\"100.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"108.7\" cy=\"105.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"175.7\" cy=\"49.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"101.1\" cy=\"119.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"184.5\" cy=\"98.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"111.2\" cy=\"76.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"97.3\" cy=\"127.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"87.6\" cy=\"99.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"95.4\" cy=\"67.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"146.2\" cy=\"88.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"145.0\" cy=\"33.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"80.4\" cy=\"97.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"85.9\" cy=\"109.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"120.0\" cy=\"107.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"164.8\" cy=\"98.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"114.1\" cy=\"91.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"161.1\" cy=\"108.9\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"105.4\" cy=\"128.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"166.0\" cy=\"56.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"109.8\" cy=\"98.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"72.4\" cy=\"112.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"158.8\" cy=\"73.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"154.6\" cy=\"66.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"97.1\" cy=\"101.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"39.9\" cy=\"100.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"133.5\" cy=\"67.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"166.9\" cy=\"52.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"139.4\" cy=\"100.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"60.7\" cy=\"101.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"165.3\" cy=\"59.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"111.6\" cy=\"92.1\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"153.3\" cy=\"109.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"121.4\" cy=\"88.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"168.9\" cy=\"72.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"151.4\" cy=\"93.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"58.2\" cy=\"99.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"142.9\" cy=\"57.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"125.7\" cy=\"63.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"49.5\" cy=\"127.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"124.2\" cy=\"72.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"76.0\" cy=\"111.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"95.7\" cy=\"111.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"141.7\" cy=\"68.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"101.4\" cy=\"60.9\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"55.6\" cy=\"103.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"77.2\" cy=\"130.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"153.5\" cy=\"98.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"160.8\" cy=\"64.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"156.5\" cy=\"96.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"128.5\" cy=\"84.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"95.3\" cy=\"111.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"149.7\" cy=\"56.6\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"81.8\" cy=\"112.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"74.0\" cy=\"104.4\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"85.8\" cy=\"98.3\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"117.8\" cy=\"52.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"76.4\" cy=\"139.8\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"83.5\" cy=\"125.5\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"47.1\" cy=\"80.7\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"140.4\" cy=\"90.2\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"159.0\" cy=\"56.0\" r=\"2.1\" fill=\"#1F5A9E\"/><circle cx=\"58.0\" cy=\"60.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"48.8\" cy=\"55.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"91.7\" cy=\"65.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"59.5\" cy=\"36.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"90.5\" cy=\"144.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"140.9\" cy=\"91.9\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"92.8\" cy=\"35.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"115.4\" cy=\"76.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"110.0\" cy=\"63.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"160.5\" cy=\"72.9\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"45.6\" cy=\"101.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"29.6\" cy=\"27.6\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"99.5\" cy=\"39.6\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"161.2\" cy=\"102.1\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"157.4\" cy=\"99.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"40.1\" cy=\"65.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"47.5\" cy=\"99.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"44.5\" cy=\"99.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"23.5\" cy=\"94.1\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"128.4\" cy=\"80.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"90.3\" cy=\"39.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"72.7\" cy=\"123.9\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"53.4\" cy=\"101.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"86.5\" cy=\"115.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"72.8\" cy=\"41.1\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"94.7\" cy=\"40.6\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"36.4\" cy=\"48.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"110.3\" cy=\"75.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"100.4\" cy=\"39.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"142.4\" cy=\"94.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"75.2\" cy=\"115.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"103.6\" cy=\"61.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"74.5\" cy=\"27.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"65.3\" cy=\"45.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"74.9\" cy=\"33.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"111.3\" cy=\"80.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"46.9\" cy=\"32.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"35.0\" cy=\"109.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"26.6\" cy=\"91.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"69.9\" cy=\"25.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"108.9\" cy=\"57.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"93.3\" cy=\"136.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"126.5\" cy=\"70.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"67.0\" cy=\"42.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"58.1\" cy=\"62.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"63.0\" cy=\"47.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"111.7\" cy=\"28.6\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"76.7\" cy=\"77.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"110.3\" cy=\"55.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"25.1\" cy=\"95.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"112.8\" cy=\"34.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"116.6\" cy=\"76.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"117.6\" cy=\"53.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"113.3\" cy=\"44.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"129.2\" cy=\"66.6\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"151.3\" cy=\"94.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"95.0\" cy=\"31.9\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"22.4\" cy=\"93.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"26.6\" cy=\"106.3\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"130.0\" cy=\"83.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"46.7\" cy=\"97.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"74.7\" cy=\"73.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"102.7\" cy=\"47.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"29.7\" cy=\"113.9\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"65.1\" cy=\"42.1\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"65.6\" cy=\"33.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"54.3\" cy=\"36.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"112.7\" cy=\"74.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"47.5\" cy=\"107.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"57.4\" cy=\"29.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"85.7\" cy=\"15.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"157.1\" cy=\"94.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"162.6\" cy=\"91.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"67.4\" cy=\"137.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"96.5\" cy=\"24.9\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"72.0\" cy=\"25.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"53.1\" cy=\"62.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"45.9\" cy=\"78.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"49.7\" cy=\"33.9\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"75.7\" cy=\"133.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"107.1\" cy=\"57.6\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"104.0\" cy=\"51.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"93.5\" cy=\"17.1\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"43.6\" cy=\"105.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"103.6\" cy=\"68.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"101.8\" cy=\"75.8\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"41.6\" cy=\"34.4\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"36.2\" cy=\"98.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"61.4\" cy=\"41.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"111.3\" cy=\"66.6\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"124.2\" cy=\"38.0\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"66.9\" cy=\"20.7\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"152.9\" cy=\"101.1\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"94.6\" cy=\"22.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"158.4\" cy=\"90.5\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"162.2\" cy=\"115.2\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/><circle cx=\"122.0\" cy=\"65.1\" r=\"2.3\" fill=\"#FFFFFF\" stroke=\"#C0392B\" stroke-width=\"1\"/>\n        <path d=\"M 18.0,149.7 L 177.4,14.0\" fill=\"none\" stroke=\"#1A1A1A\" stroke-width=\"2.2\"/>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-def cue-hidden\" style=\"padding:8px 12px;\">\n    <div class=\"box-label\">Proprietà, bias e multi-classe (\\(K &gt; 2\\))</div>\n    <p style=\"font-size:0.82rem;\"><strong>LMS = massima verosimiglianza</strong> con errori normali. <em>Bias</em>: lineare (language) + LMS (search). <strong>Multi-classe</strong>: 1-of-\\(K\\), <strong>OVA</strong> (\\(K\\) modelli), <strong>AVA</strong> (\\(K(K-1)/2\\) coppie) · rischio <strong>mascheramento</strong> · alternative: LDA, regressione logistica (\\(P(d\\mid\\x)\\)).</p>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 14.45,
+          "at": 3.44,
           "action": "show",
           "target": "#s1",
           "anchor": "sostituire la loss con una funzione liscia"
@@ -286,6 +401,12 @@
           "action": "show",
           "target": "#s3",
           "anchor": "Ricorda tre proprietà finali"
+        },
+        {
+          "at": 74.09,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 27.16
         }
       ],
       "id": "scene-08",
@@ -297,10 +418,10 @@
       "section": "4.6 – 4.7 Separabilità lineare e Linear Basis Expansion",
       "title": "Limiti (congiunzioni vs XOR) ed espansione in basi lineare (LBE)",
       "tts_text": "Il limite strutturale della classificazione lineare è la separabilità lineare: due insiemi di punti in R alla n sono linearmente separabili se esiste un iperpiano che li separa completamente. Il modello lineare sa realizzare le congiunzioni booleane: ad esempio x uno e x due e x quattro si ottiene con x uno più x due più x quattro maggiore o uguale a due virgola cinque, e l'AND di due variabili con x uno più x due maggiore o uguale a uno virgola cinque. [pause:0.7] Ma non tutto è separabile: tre punti non allineati lo sono sempre, mentre tre punti allineati con il centrale di classe opposta non lo sono; e su quattro punti lo XOR — positivi su una diagonale, negativi sull'altra — non è separabile da nessuna retta. Contare quante etichettature si separano sarà proprio l'idea della VC-dimension. [pause:0.9] Per superare la linearità nell'input senza cambiare algoritmo introduciamo la Linear Basis Expansion, LBE: h con w di x uguale somma per k da zero a K di w con k per phi con k di x, dove le phi con k sono trasformazioni fissate dell'input — come monomi polinomiali, logaritmi, radici, prodotti incrociati x i per x j, norma di x o spline. Il modello è lineare nei parametri w, non nell'input x: quindi equazioni normali e discesa del gradiente funzionano identici per regressione e classificazione. [pause:0.8] Attenzione però ai tre limiti della LBE: con molte basi scatta l'overfitting, serve controllo della complessità; lo spazio cresce con la maledizione della dimensionalità; e le phi vanno fissate prima di vedere i dati — a differenza delle reti neurali che apprendono basi adattive e delle SVM che usano i kernel.",
-      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.6 – 4.7 · Separabilità lineare e LBE</div>\n  <h2 class=\"slide-title\">Congiunzioni, limite dello XOR e Linear Basis Expansion</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\" style=\"padding:6px;\">\n    <svg viewBox=\"0 0 650 106\" class=\"diagram-svg\" style=\"max-height:118px;\" aria-label=\"AND separabile, XOR non separabile, 3 allineati e 3 non allineati\">\n      <rect x=\"12\" y=\"6\" width=\"142\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\"/>\n      <line x1=\"48\" y1=\"64\" x2=\"112\" y2=\"18\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n      <circle cx=\"48\" cy=\"66\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"104\" cy=\"66\" r=\"4.5\" class=\"pt-neg\"/>\n      <circle cx=\"48\" cy=\"24\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"104\" cy=\"24\" r=\"4.5\" class=\"pt-pos\"/>\n      <text x=\"83\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption\">AND: x₁+x₂ ≥ 1,5</text>\n      <rect x=\"172\" y=\"6\" width=\"142\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#C0392B\"/>\n      <circle cx=\"208\" cy=\"66\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"264\" cy=\"66\" r=\"4.5\" class=\"pt-pos\"/>\n      <circle cx=\"208\" cy=\"24\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"264\" cy=\"24\" r=\"4.5\" class=\"pt-neg\"/>\n      <text x=\"243\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption svg-red\">XOR: non separabile</text>\n      <rect x=\"332\" y=\"6\" width=\"142\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\"/>\n      <line x1=\"352\" y1=\"46\" x2=\"454\" y2=\"46\" stroke=\"#6E6E6E\" stroke-dasharray=\"3 3\"/>\n      <circle cx=\"364\" cy=\"46\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"403\" cy=\"46\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"442\" cy=\"46\" r=\"4.5\" class=\"pt-pos\"/>\n      <text x=\"403\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption\">3 allineati: no</text>\n      <rect x=\"492\" y=\"6\" width=\"146\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\"/>\n      <line x1=\"564\" y1=\"14\" x2=\"594\" y2=\"76\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n      <circle cx=\"528\" cy=\"64\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"606\" cy=\"52\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"552\" cy=\"24\" r=\"4.5\" class=\"pt-pos\"/>\n      <text x=\"565\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption\">3 non allineati: sì</text>\n    </svg>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\" style=\"padding:8px 12px;\">\n      <div class=\"step-tag-inline\">Linear Basis Expansion (LBE)</div>\n      \\[\\htmlId{f-lbe4}{h_\\w(\\x) = \\sum_{k=0}^{K} w_k\\,\\phi_k(\\x)}\\]\n      <p class=\"math-note\">Lineare nei <strong>parametri \\(\\w\\)</strong>; \\(\\phi_k\\) fissate (polinomi, \\(\\log x_j\\), \\(\\sqrt{x_j}\\), \\(x_i x_j\\), \\(\\norm{\\x}\\), spline; spesso \\(K &gt; n\\)).</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\" style=\"padding:8px 12px;\">\n      <div class=\"box-label\">3 contro della LBE</div>\n      <ul class=\"clean-list\" style=\"font-size:0.82rem;\">\n        <li><strong>Overfitting</strong> con molte basi (serve controllo della complessità).</li>\n        <li><strong>Maledizione della dimensionalità</strong>.</li>\n        <li>\\(\\phi_k\\) <strong>fissate prima</strong> dei dati (vs reti neurali adattive e SVM kernel).</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.6 – 4.7 · Separabilità lineare e LBE</div>\n  <h2 class=\"slide-title\">Congiunzioni, limite dello XOR e Linear Basis Expansion</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\" style=\"padding:6px;\">\n    <svg viewBox=\"0 0 650 106\" class=\"diagram-svg\" style=\"max-height:118px;\" aria-label=\"AND separabile, XOR non separabile, 3 allineati e 3 non allineati\">\n      <rect x=\"12\" y=\"6\" width=\"142\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\"/>\n      <line x1=\"48\" y1=\"64\" x2=\"112\" y2=\"18\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n      <circle cx=\"48\" cy=\"66\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"104\" cy=\"66\" r=\"4.5\" class=\"pt-neg\"/>\n      <circle cx=\"48\" cy=\"24\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"104\" cy=\"24\" r=\"4.5\" class=\"pt-pos\"/>\n      <text x=\"83\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption\">AND: x₁+x₂ ≥ 1,5</text>\n      <rect x=\"172\" y=\"6\" width=\"142\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#C0392B\"/>\n      <circle cx=\"208\" cy=\"66\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"264\" cy=\"66\" r=\"4.5\" class=\"pt-pos\"/>\n      <circle cx=\"208\" cy=\"24\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"264\" cy=\"24\" r=\"4.5\" class=\"pt-neg\"/>\n      <text x=\"243\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption svg-red\">XOR: non separabile</text>\n      <rect x=\"332\" y=\"6\" width=\"142\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\"/>\n      <line x1=\"352\" y1=\"46\" x2=\"454\" y2=\"46\" stroke=\"#6E6E6E\" stroke-dasharray=\"3 3\"/>\n      <circle cx=\"364\" cy=\"46\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"403\" cy=\"46\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"442\" cy=\"46\" r=\"4.5\" class=\"pt-pos\"/>\n      <text x=\"403\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption\">3 allineati: no</text>\n      <rect x=\"492\" y=\"6\" width=\"146\" height=\"94\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#CCCCCC\"/>\n      <line x1=\"564\" y1=\"14\" x2=\"594\" y2=\"76\" stroke=\"#C0392B\" stroke-width=\"2\"/>\n      <circle cx=\"528\" cy=\"64\" r=\"4.5\" class=\"pt-pos\"/><circle cx=\"606\" cy=\"52\" r=\"4.5\" class=\"pt-neg\"/><circle cx=\"552\" cy=\"24\" r=\"4.5\" class=\"pt-pos\"/>\n      <text x=\"565\" y=\"92\" text-anchor=\"middle\" class=\"svg-caption\">3 non allineati: sì</text>\n    </svg>\n  </div>\n  <div class=\"grid-2\">\n    <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\" style=\"padding:8px 12px;\">\n      <div class=\"step-tag-inline\">Linear Basis Expansion (LBE)</div>\n      \\[\\htmlId{f-lbe4}{h_\\w(\\x) = \\sum_{k=0}^{K} w_k\\,\\phi_k(\\x)}\\]\n      <p class=\"math-note\">Lineare nei <strong>parametri \\(\\w\\)</strong>; \\(\\phi_k\\) fissate (polinomi, \\(\\log x_j\\), \\(\\sqrt{x_j}\\), \\(x_i x_j\\), \\(\\norm{\\x}\\), spline; spesso \\(K &gt; n\\)).</p>\n    </div>\n    <div id=\"s3\" class=\"box box-warn cue-hidden\" style=\"padding:8px 12px;\">\n      <div class=\"box-label\">3 contro della LBE</div>\n      <ul class=\"clean-list\" style=\"font-size:0.82rem;\">\n        <li id=\"li9-1\"><strong>Overfitting</strong> con molte basi (serve controllo della complessità).</li>\n        <li id=\"li9-2\"><strong>Maledizione della dimensionalità</strong>.</li>\n        <li id=\"li9-3\">\\(\\phi_k\\) <strong>fissate prima</strong> dei dati (vs reti neurali adattive e SVM kernel).</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
       "cues": [
         {
-          "at": 12.96,
+          "at": 4.1,
           "action": "show",
           "target": "#s1",
           "anchor": "realizzare le congiunzioni booleane"
@@ -312,16 +433,41 @@
           "anchor": "Linear Basis Expansion"
         },
         {
+          "at": 55.45,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 8.5
+        },
+        {
           "at": 64.07,
           "action": "highlight",
           "target": "#f-lbe4",
-          "anchor": "w con k per phi con k"
+          "anchor": "w con k per phi con k",
+          "duration": 18
         },
         {
           "at": 91.77,
           "action": "show",
           "target": "#s3",
           "anchor": "tre limiti della LBE"
+        },
+        {
+          "at": 93.8,
+          "action": "highlight",
+          "target": "#li9-1",
+          "duration": 4.34
+        },
+        {
+          "at": 98.24,
+          "action": "highlight",
+          "target": "#li9-2",
+          "duration": 3.4
+        },
+        {
+          "at": 101.74,
+          "action": "highlight",
+          "target": "#li9-3",
+          "duration": 7.97
         }
       ],
       "id": "scene-09",
@@ -342,10 +488,22 @@
           "anchor": "Primo: nei minimi quadrati"
         },
         {
+          "at": 5.16,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 11.31
+        },
+        {
           "at": 16.64,
           "action": "show",
           "target": "#s2",
           "anchor": "Secondo: la soluzione diretta"
+        },
+        {
+          "at": 16.72,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.23
         },
         {
           "at": 28.12,
@@ -354,16 +512,34 @@
           "anchor": "Terzo: in classificazione"
         },
         {
+          "at": 28.2,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 6.48
+        },
+        {
           "at": 34.85,
           "action": "show",
           "target": "#s4",
           "anchor": "Quarto: solo problemi"
         },
         {
+          "at": 34.93,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 6.41
+        },
+        {
           "at": 41.51,
           "action": "show",
           "target": "#s5, #s6",
           "anchor": "Quinto: l'espansione in basi"
+        },
+        {
+          "at": 41.59,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 9.33
         }
       ],
       "id": "scene-10",
