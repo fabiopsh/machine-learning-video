@@ -1277,7 +1277,8 @@ td.cue-highlight {
   color: var(--blue);
   background: transparent;
   box-shadow: none;
-  font-weight: 600;
+  font-weight: inherit;
+  text-shadow: 0 0 0.35px currentColor;
   opacity: 1;
 }
 

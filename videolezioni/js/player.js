@@ -135,6 +135,9 @@ const state = {
   subtitlesOn: true,
   subtitles: null,
   subtitleCache: new Map(),
+  lastSubSegIdx: -1,
+  lastSubWordSpans: null,
+  autoAdvanceTimer: null,
   completedScenes: new Set(),
   firstCueAt: 0,
   slideZoom: 1,
@@ -233,7 +236,15 @@ function applyAudioSeek(target) {
   return false;
 }
 
+function clearAutoAdvanceTimer() {
+  if (state.autoAdvanceTimer) {
+    clearTimeout(state.autoAdvanceTimer);
+    state.autoAdvanceTimer = null;
+  }
+}
+
 function setCurrentTime(t) {
+  clearAutoAdvanceTimer();
   const clamped = Math.max(0, Math.min(state.duration, t));
   if (state.usingVirtualClock) {
     state.virtualTime = clamped;
@@ -400,7 +411,11 @@ function renderSubtitleAt(t) {
   if (!state.subtitlesOn || !state.subtitles) return;
   const segs = state.subtitles.segments;
   if (!segs || segs.length === 0) {
-    dom.subtitleBox.innerHTML = "";
+    if (state.lastSubSegIdx !== -2) {
+      dom.subtitleBox.innerHTML = "";
+      state.lastSubSegIdx = -2;
+      state.lastSubWordSpans = null;
+    }
     return;
   }
 
@@ -419,27 +434,49 @@ function renderSubtitleAt(t) {
   if (activeIdx < 0) return;
 
   const active = segs[activeIdx];
-  const nextSeg = activeIdx + 1 < segs.length ? segs[activeIdx + 1] : null;
+  const hasWords = Array.isArray(active.words) && active.words.length > 0;
 
-  let curHtml = "";
-  if (Array.isArray(active.words) && active.words.length > 0) {
-    curHtml = active.words
-      .map((w) => {
-        let cls = "upcoming";
-        if (t >= w.end) cls = "past";
-        else if (t >= w.start - 0.04) cls = "current";
-        return `<span class="subtitle-word ${cls}">${escapeHtml(w.text)}</span>`;
-      })
-      .join(" ");
-  } else {
-    curHtml = escapeHtml(active.text);
+  if (activeIdx !== state.lastSubSegIdx) {
+    const nextSeg = activeIdx + 1 < segs.length ? segs[activeIdx + 1] : null;
+
+    let curHtml = "";
+    if (hasWords) {
+      curHtml = active.words
+        .map((w) => {
+          let cls = "upcoming";
+          if (t >= w.end) cls = "past";
+          else if (t >= w.start - 0.04) cls = "current";
+          return `<span class="subtitle-word ${cls}">${escapeHtml(w.text)}</span>`;
+        })
+        .join(" ");
+    } else {
+      curHtml = escapeHtml(active.text);
+    }
+
+    const nextHtml = nextSeg
+      ? `<div class="sub-line sub-next">${escapeHtml(nextSeg.text)}</div>`
+      : `<div class="sub-line sub-next sub-empty"></div>`;
+
+    dom.subtitleBox.innerHTML = `<div class="sub-line sub-current">${curHtml}</div>${nextHtml}`;
+    state.lastSubSegIdx = activeIdx;
+    state.lastSubWordSpans = hasWords ? dom.subtitleBox.querySelectorAll(".sub-current .subtitle-word") : null;
+    return;
   }
 
-  const nextHtml = nextSeg
-    ? `<div class="sub-line sub-next">${escapeHtml(nextSeg.text)}</div>`
-    : `<div class="sub-line sub-next sub-empty"></div>`;
-
-  dom.subtitleBox.innerHTML = `<div class="sub-line sub-current">${curHtml}</div>${nextHtml}`;
+  if (hasWords && state.lastSubWordSpans) {
+    const words = active.words;
+    const spans = state.lastSubWordSpans;
+    const n = Math.min(words.length, spans.length);
+    for (let i = 0; i < n; i++) {
+      const w = words[i];
+      let cls = "subtitle-word upcoming";
+      if (t >= w.end) cls = "subtitle-word past";
+      else if (t >= w.start - 0.04) cls = "subtitle-word current";
+      if (spans[i].className !== cls) {
+        spans[i].className = cls;
+      }
+    }
+  }
 }
 
 function escapeHtml(str) {
@@ -640,6 +677,7 @@ function revealCleanUiTemporarily() {
 }
 
 function play() {
+  clearAutoAdvanceTimer();
   if (state.isPlaying) return;
   state.isPlaying = true;
   updatePlayButton();
@@ -680,6 +718,7 @@ function play() {
 }
 
 function pause() {
+  clearAutoAdvanceTimer();
   state.isPlaying = false;
   updatePlayButton();
   tutorAvatar.onPause();
@@ -705,9 +744,13 @@ function onSceneEnded() {
   saveSceneProgress(LESSON_ID, state.sceneIndex, true);
   updateSidebarActive();
   if (state.autoAdvance && state.sceneIndex < state.lesson.scenes.length - 1) {
-    setTimeout(() => {
-      loadScene(state.sceneIndex + 1, true);
-    }, 550);
+    const endedScene = state.sceneIndex;
+    state.autoAdvanceTimer = setTimeout(() => {
+      state.autoAdvanceTimer = null;
+      if (state.autoAdvance && state.sceneIndex === endedScene && !state.isPlaying) {
+        loadScene(state.sceneIndex + 1, true);
+      }
+    }, 2400);
   } else if (state.sceneIndex === state.lesson.scenes.length - 1) {
     state.nextBannerDismissed = false;
     setChapterNextBannerVisible(true);
@@ -716,6 +759,8 @@ function onSceneEnded() {
 
 async function loadScene(index, autoplay = false) {
   pause();
+  state.lastSubSegIdx = -1;
+  state.lastSubWordSpans = null;
   state.nextBannerDismissed = false;
   setChapterNextBannerVisible(false);
   const total = state.lesson.scenes.length;
@@ -883,7 +928,10 @@ function setupControls() {
     state.subtitlesOn = !state.subtitlesOn;
     dom.toggleSubtitles.classList.toggle("active", state.subtitlesOn);
     syncSubtitleAndAvatarDock();
-    if (state.subtitlesOn) renderSubtitleAt(getCurrentTime());
+    if (state.subtitlesOn) {
+      state.lastSubSegIdx = -1;
+      renderSubtitleAt(getCurrentTime());
+    }
   });
 
   if (dom.toggleAvatar) {
@@ -981,6 +1029,7 @@ function setupControls() {
   dom.toggleAutoAdvance.addEventListener("click", () => {
     state.autoAdvance = !state.autoAdvance;
     dom.toggleAutoAdvance.classList.toggle("active", state.autoAdvance);
+    if (!state.autoAdvance) clearAutoAdvanceTimer();
   });
 
   dom.toggleClean.addEventListener("click", () => {

@@ -341,7 +341,20 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:a_T"], rx: /^a\s+trasposto$/, spec: 10 },
   { keys: ["var:x_1_sq"], rx: /^x\s+(?:con\s+)?uno\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
   { keys: ["var:x_2_sq"], rx: /^x\s+(?:con\s+)?due\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:y_1_sq"], rx: /^y\s+(?:con\s+)?uno\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:y_2_sq"], rx: /^y\s+(?:con\s+)?due\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:y_1"], rx: /^y\s+(?:con\s+)?uno$/, spec: 10 },
+  { keys: ["var:y_2"], rx: /^y\s+(?:con\s+)?due$/, spec: 10 },
   { keys: ["var:y_sq"], rx: /^y\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
+  { keys: ["var:x_s", "var:x"], rx: /^x\s+con\s+s$/, spec: 10 },
+  { keys: ["var:d_s", "var:d"], rx: /^d\s+con\s+s$/, spec: 10 },
+  { keys: ["var:mu_i", "sym:mu"], rx: /^mu\s+(?:con\s+)?i$/, spec: 10 },
+  { keys: ["var:Phi_T", "sym:phi"], rx: /^(?:phi|fi)\s+trasposto$/, spec: 11 },
+  { keys: ["var:n_phi"], rx: /^n\s+con\s+(?:phi|fi)$/, spec: 11 },
+  { keys: ["var:R_s_sq", "var:R_s"], rx: /^r\s+con\s+s\s+(?:al\s+quadrato|quadro)$/, spec: 11 },
+  { keys: ["var:R_s"], rx: /^r\s+con\s+s$/, spec: 10 },
+  { keys: ["var:D_sq", "var:D"], rx: /^d\s+(?:al\s+quadrato|quadro)$/, rawTest: (r) => /^D\b/.test(r), spec: 10 },
+  { keys: ["sym:rho_sq", "sym:rho"], rx: /^(?:rho|ro)\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
   { keys: ["var:w_i_star"], rx: /^w\s+(?:con\s+)?i\s+stella$/, spec: 11 },
   { keys: ["var:i_star"], rx: /^i\s+stella$/, spec: 10 },
   { keys: ["var:alpha_i_prime"], rx: /^al(?:fa|pha)\s+(?:primo\s+(?:con\s+)?i|(?:con\s+)?i\s+primo)$/, spec: 11 },
@@ -473,6 +486,7 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:net_k", "var:net"], rx: /^net\s*(?:con\s+)?k$/, spec: 10 },
   { keys: ["var:net_t", "var:net"], rx: /^net\s*(?:con\s+)?t$/, spec: 10 },
   { keys: ["var:net"], rx: /^(?:net|input\s+netto)$/, spec: 10 },
+  { keys: ["var:phi_0", "sym:phi"], rx: /^(?:phi|fi)\s*(?:con\s+)?zero$/, spec: 10 },
   { keys: ["var:phi_k", "sym:phi"], rx: /^(?:phi|fi)\s*(?:con\s+)?k$/, spec: 10 },
   { keys: ["var:phi_j", "sym:phi"], rx: /^(?:phi|fi)\s*(?:con\s+)?j$/, spec: 10 },
   { keys: ["var:delta_p", "var:delta"], rx: /^delta\s*(?:con\s+)?p$/, spec: 10 },
@@ -490,7 +504,7 @@ const SPOKEN_MATH_GRAMMAR = [
   { keys: ["var:E_p", "var:E"], rx: /^e\s+con\s+p$/, spec: 10 },
   { keys: ["var:E_pk", "var:E"], rx: /^e\s+con\s+p\s+k$/, spec: 10 },
   { keys: ["var:E_RMS"], rx: /^(?:e\s+rms|root\s+mean\s+square)$/, spec: 10 },
-  { keys: ["var:R_emp"], rx: /^(?:r\s+emp|rischio\s+empirico)$/, spec: 10 },
+  { keys: ["var:R_emp"], rx: /^(?:r\s+emp|r\s+empirico|rischio\s+empirico)$/, spec: 10 },
   { keys: ["var:R_sq"], rx: /^r\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
   { keys: ["var:S_d_sq", "var:S_sq"], rx: /^s\s+(?:con\s+)?d\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
   { keys: ["var:S_sq"], rx: /^s\s+(?:al\s+quadrato|quadro)$/, spec: 10 },
@@ -622,7 +636,7 @@ function extractSpokenMathEvents(words) {
           if (!sentStart || nextC === "diventa" || nextC === "uguale") {
             key = `var:${rl}`;
           }
-        } else if ("xwdhflnpvjkmqtrzbcuy".includes(rl)) {
+        } else if ("xwdhflnpvjkmqtrzbcuyg".includes(rl)) {
           key = `var:${rl}`;
         } else if (rl === "i") {
           if (prevC === "da" || prevC === "per" || prevC === "componente" || prevC === "indice" || nextC === "uguale" || nextC === "da" || nextC === "di") {
@@ -1216,7 +1230,7 @@ function indexFormulaAtoms(slideCard, blocks) {
             else if (txt === "η0") added = addAtom(el, ["var:eta_0", "sym:eta"], true, root);
             else if (txt === "ητ") added = addAtom(el, ["var:eta_tau", "sym:eta"], true, root);
             else if (txt === "σ2") added = addAtom(el, ["sym:sigma_sq", "sym:sigma"], true, root);
-            else if (/^[φϕ]([kj])$/.test(txt)) added = addAtom(el, [`var:phi_${txt[1]}`, "sym:phi"], true, root);
+            else if (/^[φϕ]([0kj])$/.test(txt)) added = addAtom(el, [`var:phi_${txt[1]}`, "sym:phi"], true, root);
             else if (txt === "θm") added = addAtom(el, ["var:theta_m", "sym:theta"], true, root);
             else if (/^θ/.test(txt)) added = addAtom(el, "sym:theta", true, root);
             // Specific high-frequency Cap 13-19 & Cap 01-12 symbols
@@ -1227,7 +1241,20 @@ function indexFormulaAtoms(slideCard, blocks) {
             else if (txt === "aT") added = addAtom(el, ["var:a_T", "var:a"], true, root);
             else if (/^x(?:12|21)$/.test(txt)) added = addAtom(el, ["var:x_1_sq", "var:x_1", "var:x"], true, root);
             else if (txt === "x22") added = addAtom(el, ["var:x_2_sq", "var:x_2", "var:x"], true, root);
+            else if (/^y(?:12|21)$/.test(txt)) added = addAtom(el, ["var:y_1_sq", "var:y_1", "var:y"], true, root);
+            else if (txt === "y22") added = addAtom(el, ["var:y_2_sq", "var:y_2", "var:y"], true, root);
+            else if (txt === "y1") added = addAtom(el, ["var:y_1", "var:y"], true, root);
+            else if (txt === "y2" && !supOnly) added = addAtom(el, ["var:y_2", "var:y"], true, root);
             else if (txt === "y2" && supOnly) added = addAtom(el, ["var:y_sq", "var:y"], true, root);
+            else if (txt === "x(s)") added = addAtom(el, ["var:x_s", "var:x"], true, root);
+            else if (txt === "d(s)") added = addAtom(el, ["var:d_s", "var:d"], true, root);
+            else if (txt === "μi") added = addAtom(el, ["var:mu_i", "sym:mu"], true, root);
+            else if (/^[Φφϕ]T$/.test(txt) && supOnly) added = addAtom(el, ["var:Phi_T", "sym:phi"], true, root);
+            else if (/^n[Φφϕ]$/.test(txt)) added = addAtom(el, ["var:n_phi", "var:n"], true, root);
+            else if (/^R(?:2s|s2)$/.test(txt)) added = addAtom(el, ["var:R_s_sq", "var:R_s", "var:R"], true, root);
+            else if (txt === "Rs") added = addAtom(el, ["var:R_s", "var:R"], true, root);
+            else if (txt === "D2" && supOnly) added = addAtom(el, ["var:D_sq", "var:D"], true, root);
+            else if (txt === "ρ2" && supOnly) added = addAtom(el, ["sym:rho_sq", "sym:rho"], true, root);
             else if (txt === "R2" && !supOnly) added = addAtom(el, ["set:R^2", "set:R"], true, root);
             else if (txt === "R3") added = addAtom(el, ["set:R^3", "set:R"], true, root);
             else if (/^w(?:i[\*∗]|[\*∗]i)/.test(txt)) added = addAtom(el, ["var:w_i_star", "var:w_star", "var:w_i", "var:w"], true, root);
@@ -1587,6 +1614,46 @@ export class LiveSyncEngine {
       this.blocks.push({ el: bEl, showAt, untilAt, activeStart: showAt, activeEnd, isSpotlight: true });
     }
 
+    // Scope sibling blocks that share the exact same showAt (e.g. .grid-2 / .grid-3 cards) to their explicit highlight windows
+    const blocksByShowAt = new Map();
+    for (const b of this.blocks) {
+      const key = b.showAt.toFixed(2);
+      if (!blocksByShowAt.has(key)) blocksByShowAt.set(key, []);
+      blocksByShowAt.get(key).push(b);
+    }
+    for (const group of blocksByShowAt.values()) {
+      if (group.length < 2) continue;
+      for (const b of group) {
+        const wins = hlWinMap.get(b.el);
+        if (wins && wins.length > 0) {
+          b.activeWindows = wins;
+          b.activeStart = Math.max(b.showAt, Math.min(...wins.map((w) => w.start)) - 0.3);
+          b.activeEnd = Math.min(totalDur, Math.max(...wins.map((w) => w.end)) + 0.3);
+        }
+      }
+    }
+
+    // Collect explicit highlight intervals mapped to their owning outermost block (mirrors player.js applyCuesAt)
+    const explicitHlIntervals = [];
+    const sortedHlCues = (scene.cues || []).filter((c) => c.action === "highlight").sort((a, b) => a.at - b.at);
+    for (let i = 0; i < sortedHlCues.length; i++) {
+      const cue = sortedHlCues[i];
+      const next = sortedHlCues[i + 1];
+      let endAt;
+      if (typeof cue.duration === "number" && cue.duration > 0) {
+        endAt = cue.at + cue.duration;
+      } else if (next) {
+        const gap = next.at - cue.at;
+        endAt = gap > 1.2 ? cue.at + Math.min(4.2, gap - 0.08) : cue.at + 2.4;
+      } else {
+        endAt = cue.at + 4.2;
+      }
+      this.stage.querySelectorAll(cue.target).forEach((el) => {
+        const owner = el.closest(blockSelectors);
+        if (owner) explicitHlIntervals.push({ block: owner, start: cue.at, end: endAt });
+      });
+    }
+
     // Track nested show targets (e.g. #s1b inside #s1, #s3b inside #s3) so revealing them re-activates their card & atoms!
     const allShowEvents = [];
     for (const [el, sAt] of showAtMap.entries()) {
@@ -1895,14 +1962,26 @@ export class LiveSyncEngine {
         return ev.keys.some((k) => ks.has(k));
       };
 
-      // Route each spoken math event ONLY to a block active at ev.start (never bleed into past rows/steps!)
+      // Route each spoken math event ONLY to a block active at ev.start (never bleed into past rows/steps or non-highlighted siblings!)
       const eventsByBlock = new Map();
       for (const ev of mathEvents) {
+        let activeHlBlocks = null;
+        for (const iv of explicitHlIntervals) {
+          if (ev.start >= iv.start - 0.15 && ev.start <= iv.end + 0.15) {
+            if (!activeHlBlocks) activeHlBlocks = new Set();
+            activeHlBlocks.add(iv.block);
+          }
+        }
+
         let bestBlock = null;
         let bestRank = -Infinity;
 
         for (const [bEl, bAtoms] of atomsByBlock.entries()) {
           if (bAtoms.length === 0 || !blockHasEventKey(bEl, ev)) continue;
+          if (activeHlBlocks) {
+            const outer = bEl.closest(blockSelectors) || bEl;
+            if (!activeHlBlocks.has(outer)) continue;
+          }
           const meta = blockMetaByEl.get(bEl) || { showAt: 0, untilAt: totalDur, activeStart: 0, activeEnd: totalDur };
           if (ev.end < meta.showAt - 0.35 || ev.start > meta.untilAt + 0.15) continue;
 
@@ -2048,6 +2127,10 @@ export class LiveSyncEngine {
     for (const atom of this.atoms) {
       if (atom.windows.length === 0) continue;
       if (atom.els[0].closest(".cue-hidden")) continue;
+      if (hlBlock) {
+        const atomBlock = atom.els[0].closest(spotlightSel);
+        if (atomBlock && atomBlock !== hlBlock) continue;
+      }
       for (const w of atom.windows) {
         if (t >= w.start && t <= w.end && w.start >= winnerStart) {
           winnerAtom = atom;
@@ -2075,15 +2158,30 @@ export class LiveSyncEngine {
       activeBlock = winnerAtom.els[0].closest(spotlightSel);
     }
     if (!activeBlock && Array.isArray(this.nestedShowEvents)) {
-      let latestShow = -1;
+      let latestTextShow = -1;
+      let latestTextBlock = null;
+      let latestSvgShow = -1;
+      let latestSvgBlock = null;
       for (const ev of this.nestedShowEvents) {
         if (ev.el.classList.contains("cue-hidden") || ev.el.closest(".cue-hidden")) continue;
         const owner = ev.el.closest(spotlightSel);
-        if (!owner || owner.classList.contains("svg-panel")) continue;
-        if (t >= ev.showAt && ev.showAt >= latestShow) {
-          latestShow = ev.showAt;
-          activeBlock = owner;
+        if (!owner) continue;
+        if (owner.classList.contains("svg-panel")) {
+          if (t >= ev.showAt && ev.showAt >= latestSvgShow) {
+            latestSvgShow = ev.showAt;
+            latestSvgBlock = owner;
+          }
+          continue;
         }
+        if (t >= ev.showAt && ev.showAt >= latestTextShow) {
+          latestTextShow = ev.showAt;
+          latestTextBlock = owner;
+        }
+      }
+      if (latestSvgBlock && latestSvgShow > latestTextShow + 0.4) {
+        activeBlock = latestSvgBlock;
+      } else if (latestTextBlock) {
+        activeBlock = latestTextBlock;
       }
     }
     if (!activeBlock) {
