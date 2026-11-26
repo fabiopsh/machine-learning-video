@@ -414,18 +414,86 @@ body, .slide-frame, .topbar, .scene-sidebar, .control-bar, .subtitle-dock, .box,
 }
 
 /* Zero-layout-shift granular cue highlights for list steps, table rows/cells, metric pills & SVG groups */
+/* Render list markers INSIDE <li> with inline-block baseline alignment so markers never spill outside box or highlight borders at any zoom/mode */
+ol.algo-list,
+ol.clean-list,
+ol.verify-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: li-num;
+}
+
+ul.clean-list,
+.algo-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.algo-list ul {
+  margin-top: 5px;
+  padding-left: 2px;
+}
+
 .algo-list li,
 .clean-list li {
   border-radius: 6px;
-  padding: 2px 7px;
-  margin-left: -7px;
-  margin-right: -7px;
+  padding: 3px 9px 3px 26px;
+  margin-left: 0;
+  margin-right: 0;
   transition: background-color 220ms ease, box-shadow 220ms ease;
+}
+
+ol.algo-list > li,
+ol.clean-list > li {
+  counter-increment: li-num;
+  padding-left: 31px;
+}
+
+ol.algo-list > li::before,
+ol.clean-list > li::before {
+  content: counter(li-num) ".";
+  display: inline-block;
+  width: 21px;
+  margin-left: -21px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+ul.clean-list > li::before,
+.algo-list ul > li::before {
+  content: "•";
+  display: inline-block;
+  width: 15px;
+  margin-left: -15px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+ol.verify-list > li {
+  counter-increment: li-num;
+  padding-left: 22px;
+}
+
+ol.verify-list > li::before {
+  content: counter(li-num) ".";
+  display: inline-block;
+  width: 20px;
+  margin-left: -20px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
 }
 
 li.cue-highlight {
   box-shadow: inset 3px 0 0 var(--blue), 0 0 0 1px var(--spotlight-ring) !important;
   background-color: var(--blue-soft) !important;
+}
+
+ol.algo-list > li.cue-highlight::before,
+ol.clean-list > li.cue-highlight::before,
+ul.clean-list > li.cue-highlight::before,
+.algo-list ul > li.cue-highlight::before {
+  color: var(--blue);
 }
 
 tr.cue-highlight td {
@@ -475,6 +543,10 @@ td.cue-highlight {
   background-color: rgba(245, 185, 66, 0.11) !important;
 }
 
+:root[data-theme="carbon"] li.cue-highlight::before {
+  color: #F5B942;
+}
+
 :root[data-theme="carbon"] tr.cue-highlight td {
   background-color: rgba(245, 185, 66, 0.10) !important;
 }
@@ -504,6 +576,10 @@ td.cue-highlight {
   box-shadow: inset 3px 0 0 #FFD447, 0 0 0 1.5px #FFD447 !important;
   background-color: rgba(255, 212, 71, 0.14) !important;
   border-radius: 2px;
+}
+
+:root[data-theme="arcade"] li.cue-highlight::before {
+  color: #FFD447;
 }
 
 :root[data-theme="arcade"] tr.cue-highlight td {
