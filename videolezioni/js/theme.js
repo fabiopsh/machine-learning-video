@@ -36,8 +36,19 @@ export function applyTheme(themeId) {
     localStorage.setItem(THEME_KEY, valid);
   } catch {}
   document.querySelectorAll(".theme-pill").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.theme === valid);
-    btn.setAttribute("aria-pressed", String(btn.dataset.theme === valid));
+    const isAct = btn.dataset.theme === valid;
+    btn.classList.toggle("active", isAct);
+    btn.setAttribute("aria-pressed", String(isAct));
+    const isCompact = btn.closest(".player-theme-compact");
+    const tObj = THEMES.find((x) => x.id === btn.dataset.theme);
+    if (tObj) {
+      btn.setAttribute(
+        "aria-label",
+        isCompact && isAct
+          ? `Tema attivo: ${tObj.label} — tocca per cambiare`
+          : `${tObj.label} — ${tObj.desc}`
+      );
+    }
   });
   return valid;
 }

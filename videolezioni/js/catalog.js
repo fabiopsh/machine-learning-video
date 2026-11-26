@@ -89,6 +89,7 @@ function mountHeroLia(cardEl, spriteEl) {
 
   setFrame(5);
   setInterval(() => {
+    if (document.hidden) return;
     const now = performance.now();
     if (hovered || now < welcomeUntil) {
       setFrame(5);
@@ -105,6 +106,14 @@ function mountHeroLia(cardEl, spriteEl) {
       setFrame(0);
     }
   }, 85);
+}
+
+function escapeHtml(str) {
+  return String(str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 async function initCatalog() {
@@ -190,7 +199,11 @@ async function initCatalog() {
   let activeView = getSavedView();
   let query = "";
 
-  viewButtons.forEach((b) => b.classList.toggle("active", b.dataset.view === activeView));
+  viewButtons.forEach((b) => {
+    const isAct = b.dataset.view === activeView;
+    b.classList.toggle("active", isAct);
+    b.setAttribute("aria-selected", String(isAct));
+  });
 
   function matchesSearch(lesson, part) {
     if (!query) return true;
@@ -246,7 +259,7 @@ async function initCatalog() {
         }
 
         const node = document.createElement("a");
-        node.className = "map-node ready";
+        node.className = `map-node ${lesson.status === "ready" ? "ready" : "planned"}`;
         node.href = lessonUrl(lesson.id);
 
         const doneBadge = pct === 100
@@ -280,7 +293,7 @@ async function initCatalog() {
     }
 
     if (!renderedAny) {
-      root.innerHTML = `<div class="empty-state">Nessun capitolo trovato per «${query}». Prova con un altro termine.</div>`;
+      root.innerHTML = `<div class="empty-state">Nessun capitolo trovato per «${escapeHtml(query)}». Prova con un altro termine.</div>`;
     } else {
       root.innerHTML = "";
       root.appendChild(wrap);
@@ -315,7 +328,7 @@ async function initCatalog() {
         const pct = chapterProgressPct(lesson);
 
         const card = document.createElement("a");
-        card.className = "bento-card ready";
+        card.className = `bento-card ${lesson.status === "ready" ? "ready" : "planned"}`;
         card.href = lessonUrl(lesson.id);
 
         const doneBadge = pct === 100
@@ -350,7 +363,7 @@ async function initCatalog() {
     }
 
     if (!renderedAny) {
-      root.innerHTML = `<div class="empty-state">Nessun capitolo trovato per «${query}». Prova con un altro termine.</div>`;
+      root.innerHTML = `<div class="empty-state">Nessun capitolo trovato per «${escapeHtml(query)}». Prova con un altro termine.</div>`;
     }
   }
 
@@ -362,7 +375,10 @@ async function initCatalog() {
   for (const btn of viewButtons) {
     btn.addEventListener("click", () => {
       activeView = btn.dataset.view;
-      viewButtons.forEach((b) => b.classList.toggle("active", b === btn));
+      viewButtons.forEach((b) => {
+        b.classList.toggle("active", b === btn);
+        b.setAttribute("aria-selected", String(b === btn));
+      });
       try { localStorage.setItem(VIEW_KEY, activeView); } catch {}
       render();
     });

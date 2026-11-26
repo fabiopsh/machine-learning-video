@@ -1108,6 +1108,12 @@ body.player-body {
   margin-bottom: 4px;
 }
 
+/* Never let uppercase headers/tags mutate mathematical KaTeX case (e.g. w -> W, \alpha_i -> A_I) */
+.katex {
+  text-transform: none !important;
+  letter-spacing: normal;
+}
+
 .clean-list, .algo-list, .verify-list {
   margin: 0;
   padding-left: 20px;
@@ -1387,5 +1393,14 @@ body.clean-mode .stage-viewport {
     left: 0;
     z-index: 30;
     box-shadow: 8px 0 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

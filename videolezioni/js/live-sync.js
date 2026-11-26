@@ -1339,8 +1339,6 @@ function indexFormulaAtoms(slideCard, blocks) {
             if (txt === "∇") { addAtom(el, "op:nabla", true, root); continue; }
             if (txt === "net") { addAtom(el, "var:net", true, root); continue; }
             if (txt === "VC") { addAtom(el, "var:VC", true, root); continue; }
-            if (txt === "TR") { addAtom(el, "var:TR", true, root); continue; }
-            if (txt === "VS") { addAtom(el, "var:VS", true, root); continue; }
             if (txt === "false") { addAtom(el, "var:false", true, root); continue; }
             if (txt === "E" && el.classList.contains("mathbb")) { addAtom(el, ["op:E", "var:E"], true, root); continue; }
             if (txt === "P" && el.classList.contains("mathcal")) { addAtom(el, ["var:P_X", "var:P"], true, root); continue; }
@@ -1834,7 +1832,7 @@ export class LiveSyncEngine {
 
       const alignClauseInRange = (item, startIdx, endIdx, strict) => {
         const cSet = new Set(item.tokens);
-        const minHits = strict ? (item.tokens.length >= 4 ? 3 : 2) : (item.tokens.length >= 5 ? 2 : 2);
+        const minHits = strict ? (item.tokens.length >= 4 ? 3 : 2) : 2;
         const minRecall = strict ? 0.45 : 0.34;
         const minScore = strict ? 0.50 : 0.38;
         const winSize = Math.min(32, Math.max(10, item.tokens.length * 3 + 6));

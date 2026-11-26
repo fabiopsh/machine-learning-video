@@ -171,7 +171,10 @@ export function initGlobalSearch({
           indexData = { lessons: lessonsByIdx, scenes: prepared };
           return indexData;
         })
-        .catch(() => null);
+        .catch(() => {
+          indexLoading = null;
+          return null;
+        });
     }
     return indexLoading;
   }
@@ -228,8 +231,14 @@ export function initGlobalSearch({
     }
     if (!indexData) {
       resultsEl.innerHTML = `<div class="gsearch-empty"><div class="gsearch-empty-title">Caricamento indice di ricerca…</div></div>`;
-      ensureIndex().then(() => {
-        if (isOpen) runSearch(inputEl.value);
+      ensureIndex().then((data) => {
+        if (!isOpen) return;
+        if (data) {
+          runSearch(inputEl.value);
+        } else {
+          countEl.textContent = "Indice non disponibile";
+          resultsEl.innerHTML = `<div class="gsearch-empty"><div class="gsearch-empty-title">Impossibile caricare l'indice di ricerca</div><div class="gsearch-empty-sub">Controlla la connessione e riprova.</div></div>`;
+        }
       });
       return;
     }
@@ -316,12 +325,15 @@ export function initGlobalSearch({
     });
   }
 
+  let lastFocusedEl = null;
+
   function open(initialQuery = "") {
     if (isOpen) {
       inputEl.focus();
       inputEl.select();
       return;
     }
+    lastFocusedEl = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     isOpen = true;
     backdrop.classList.add("open");
     backdrop.setAttribute("aria-hidden", "false");
@@ -347,6 +359,10 @@ export function initGlobalSearch({
     backdrop.classList.remove("open");
     backdrop.setAttribute("aria-hidden", "true");
     document.body.classList.remove("gsearch-open");
+    if (lastFocusedEl && typeof lastFocusedEl.focus === "function") {
+      try { lastFocusedEl.focus(); } catch {}
+    }
+    lastFocusedEl = null;
   }
 
   inputEl.addEventListener("input", () => runSearch(inputEl.value));
@@ -384,6 +400,21 @@ export function initGlobalSearch({
       if (currentResults.length > 0 && currentResults[activeIdx]) {
         e.preventDefault();
         navigateToResult(currentResults[activeIdx]);
+      }
+    } else if (e.key === "Tab") {
+      const focusable = Array.from(
+        backdrop.querySelectorAll('button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])')
+      ).filter((el) => el.offsetParent !== null);
+      if (focusable.length > 0) {
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     }
   });

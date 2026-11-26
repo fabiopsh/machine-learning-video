@@ -128,7 +128,7 @@ export class TutorAvatar {
     this.available = Boolean(available);
     this.enabled = this.available && Boolean(initiallyOn);
     this._syncVisibility();
-    this._startIdleLoop();
+    if (this.enabled) this._startIdleLoop();
   }
 
   setEnabled(on) {
@@ -138,6 +138,7 @@ export class TutorAvatar {
     this._syncVisibility();
     if (this.enabled) {
       this.triggerHappy(420);
+      this._startIdleLoop();
     }
   }
 
@@ -268,7 +269,11 @@ export class TutorAvatar {
   _startIdleLoop() {
     if (this.idleTimerId) return;
     const step = () => {
-      if (this.enabled && !this.isPlaying) {
+      if (!this.enabled) {
+        this.idleTimerId = null;
+        return;
+      }
+      if (!document.hidden && !this.isPlaying) {
         const now = performance.now();
         if (now >= this.nextBlinkTs && this.blinkEndTs === 0) {
           this.blinkEndTs = now + 135;
@@ -280,7 +285,7 @@ export class TutorAvatar {
         if (this.cardEl) this.cardEl.classList.toggle("is-happy", happy);
         this._setFrame(happy ? FRAME_HAPPY : (blinking ? FRAME_BLINK : FRAME_IDLE), true);
       }
-      this.idleTimerId = setTimeout(step, 90);
+      this.idleTimerId = setTimeout(step, document.hidden ? 600 : 90);
     };
     this.idleTimerId = setTimeout(step, 120);
   }

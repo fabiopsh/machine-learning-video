@@ -965,14 +965,85 @@ def _clean_searchable_text(slide_html: str, tts_text: str) -> str:
     no_svg = re.sub(r"<svg\b[\s\S]*?</svg>", " ", slide_html or "", flags=re.IGNORECASE)
     no_tags = re.sub(r"<[^>]+>", " ", no_svg)
     no_tags = html.unescape(no_tags)
-    no_tex_cmds = re.sub(
-        r"\\(?:htmlId\{[^}]*\}|text|mathrm|mathbf|mathcal|mathbb|operatorname|boxed|underbrace|frac|sum|prod|int|sqrt|left|right|big|Big|quad|qquad|dots|cdots|ldots|cdot|times|to|rightarrow|leftrightarrow|le|ge|neq|approx|sim|in|subset|setminus|cup|cap|bar|hat|tilde|norm|abs|Var|Bias|Cov|Remp)",
-        " ",
-        no_tags,
+    # Strip \htmlId{id}{content} / \htmlClass{cls}{content} keeping content
+    s = re.sub(r"\\html(?:Id|Class)\{[^}]*\}", " ", no_tags)
+    # Map common LaTeX symbols & custom math.js macros to readable Unicode
+    symbol_map = (
+        (r"\\implies\b|\\Longrightarrow\b", "⇒"),
+        (r"\\iff\b|\\Longleftrightarrow\b", "⇔"),
+        (r"\\longrightarrow\b|\\rightarrow\b|\\to\b", "→"),
+        (r"\\leftarrow\b", "←"),
+        (r"\\leftrightarrow\b", "↔"),
+        (r"\\mapsto\b", "↦"),
+        (r"\\le\b|\\leq\b", "≤"),
+        (r"\\ge\b|\\geq\b", "≥"),
+        (r"\\neq\b|\\ne\b", "≠"),
+        (r"\\approx\b", "≈"),
+        (r"\\equiv\b", "≡"),
+        (r"\\sim\b", "~"),
+        (r"\\in\b", "∈"),
+        (r"\\notin\b", "∉"),
+        (r"\\subset\b|\\subseteq\b", "⊆"),
+        (r"\\forall\b", "∀"),
+        (r"\\exists\b", "∃"),
+        (r"\\times\b", "×"),
+        (r"\\cdot\b", "·"),
+        (r"\\pm\b", "±"),
+        (r"\\infty\b", "∞"),
+        (r"\\nabla\b", "∇"),
+        (r"\\partial\b", "∂"),
+        (r"\\sum\b", "∑"),
+        (r"\\prod\b", "∏"),
+        (r"\\int\b", "∫"),
+        (r"\\sqrt\b", "√"),
+        (r"\\alpha\b", "α"),
+        (r"\\beta\b", "β"),
+        (r"\\gamma\b", "γ"),
+        (r"\\delta\b", "δ"),
+        (r"\\Delta\b", "Δ"),
+        (r"\\eps\b|\\varepsilon\b|\\epsilon\b", "ε"),
+        (r"\\eta\b", "η"),
+        (r"\\theta\b", "θ"),
+        (r"\\lambda\b", "λ"),
+        (r"\\mu\b", "μ"),
+        (r"\\xi\b", "ξ"),
+        (r"\\pi\b", "π"),
+        (r"\\rho\b", "ρ"),
+        (r"\\sigma\b", "σ"),
+        (r"\\Sigma\b", "Σ"),
+        (r"\\tau\b", "τ"),
+        (r"\\phi\b|\\varphi\b", "φ"),
+        (r"\\Phi\b", "Φ"),
+        (r"\\psi\b", "ψ"),
+        (r"\\Psi\b", "Ψ"),
+        (r"\\omega\b", "ω"),
+        (r"\\Omega\b", "Ω"),
+        (r"\\R\b", "ℝ"),
+        (r"\\E\b", "𝔼"),
+        (r"\\Remp\b", "R_emp"),
+        (r"\\VC\b", "VC"),
+        (r"\\Var\b", "Var"),
+        (r"\\Cov\b", "Cov"),
+        (r"\\Bias\b", "Bias"),
+        (r"\\sign\b", "sign"),
+        (r"\\net\b", "net"),
+        (r"\\out\b", "out"),
+        (r"\\T\b", "ᵀ"),
+        (r"\\x\b", "x"),
+        (r"\\w\b", "w"),
+        (r"\\y\b", "y"),
+        (r"\\dd\b", "d"),
+        (r"\\h\b", "h"),
     )
-    no_tex_braces = re.sub(r"[\\{}\[\]()$^_~]+", " ", no_tex_cmds)
+    for pat, rep in symbol_map:
+        s = re.sub(pat, f" {rep} ", s)
+    # Remove remaining TeX formatting/spacing commands & environments
+    s = re.sub(r"\\(?:begin|end)\{[^}]*\}", " ", s)
+    s = re.sub(r"\\[,;:!\s]", " ", s)
+    s = re.sub(r"\\[A-Za-z]+", " ", s)
+    s = re.sub(r"[\\{}\[\]$^_~]+", " ", s)
     clean_tts = re.sub(r"\[[^\]]+\]", " ", tts_text or "")
-    combined = f"{no_tex_braces} {clean_tts}"
+    combined = f"{s} {clean_tts}"
     return re.sub(r"\s+", " ", combined).strip()
 
 
